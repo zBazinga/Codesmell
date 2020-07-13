@@ -1,0 +1,46 @@
+Class:HiveRelMdParallelism
+Field:maxSplitSize
+Method-name:HiveRelMdParallelism
+Method-returnType:null
+Method-parameters:[Double maxSplitSize]
+FieldAccess:maxSplitSize
+Method-name:getMetadataProvider
+Method-returnType:RelMetadataProvider
+Method-parameters:[]
+MethodInvocation:reflectiveSource
+Method-name:isPhaseTransition
+Method-returnType:Boolean
+Method-parameters:[HiveJoin join, RelMetadataQuery mq]
+MethodInvocation:isPhaseTransition
+Method-name:isPhaseTransition
+Method-returnType:Boolean
+Method-parameters:[HiveSortLimit sort, RelMetadataQuery mq]
+Method-name:splitCount
+Method-returnType:Integer
+Method-parameters:[HiveJoin join, RelMetadataQuery mq]
+MethodInvocation:getSplitCount
+Method-name:splitCount
+Method-returnType:Integer
+Method-parameters:[HiveTableScan scan, RelMetadataQuery mq]
+MethodInvocation:getTable
+MethodInvocation:getBucketCols
+MethodInvocation:getHiveTableMD
+MethodInvocation:isEmpty
+MethodInvocation:getNumBuckets
+MethodInvocation:getHiveTableMD
+MethodInvocation:splitCountRepartition
+MethodInvocation:getQualifiedName
+MethodInvocation:getTable
+Method-name:splitCount
+Method-returnType:Integer
+Method-parameters:[RelNode rel, RelMetadataQuery mq]
+MethodInvocation:isPhaseTransition
+MethodInvocation:splitCountRepartition
+MethodInvocation:getInputs
+MethodInvocation:splitCount
+Method-name:splitCountRepartition
+Method-returnType:Integer
+Method-parameters:[RelNode rel, RelMetadataQuery mq]
+MethodInvocation:getAverageRowSize
+MethodInvocation:getRowCount
+MethodInvocation:intValue

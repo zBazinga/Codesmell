@@ -1,0 +1,333 @@
+Class:SettingsModule
+Field:STORAGE_PREFIX
+Field:KEY_SOUND_EFFECTS
+Field:KEY_CHAT_SEND_BY_ENTER
+Field:KEY_NOTIFICATION_ENABLED
+Field:KEY_NOTIFICATION_SOUND
+Field:KEY_NOTIFICATION_SOUND_ENABLED
+Field:KEY_NOTIFICATION_VIBRATION
+Field:KEY_NOTIFICATION_IN_APP_ENABLED
+Field:KEY_NOTIFICATION_IN_APP_SOUND
+Field:KEY_NOTIFICATION_IN_APP_VIBRATION
+Field:KEY_NOTIFICATION_TEXT
+Field:KEY_NOTIFICATION_CHAT_PREFIX
+Field:KEY_NOTIFICATION_GROUP_ENABLED
+Field:KEY_NOTIFICATION_GROUP_ONLY_MENTIONS
+Field:KEY_MARKDOWN_ENABLED
+Field:KEY_RENAME_HINT_SHOWN
+Field:KEY_WALLPAPPER
+Field:KEY_PRIVACY
+Field:KEY_CHAT_TEXT_SIZE
+Field:KEY_ANIMATION_AUTO_PLAY
+Field:KEY_DOC_AUTO_DOWNLOAD
+Field:KEY_IMAGE_AUTO_DOWNLOAD
+Field:KEY_VIDEO_AUTO_DOWNLOAD
+Field:KEY_ANIMATION_AUTO_DOWNLOAD
+Field:KEY_AUDIO_AUTO_DOWNLOAD
+Field:KEY_NOTIFICATION_PEER_SOUND
+Field:settingsSync
+Field:eventBus
+Method-name:SettingsModule
+Method-returnType:null
+Method-parameters:[ModuleContext context]
+MethodInvocation:getEvents
+MethodInvocation:getPlatformType
+MethodInvocation:getConfiguration
+MethodInvocation:getDeviceCategory
+MethodInvocation:getConfiguration
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:actorOf
+MethodInvocation:system
+MethodInvocation:context
+Method-name:isConversationTonesEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:changeConversationTonesEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setBooleanValue
+Method-name:isNotificationsEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:changeNotificationsEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setBooleanValue
+Method-name:isNotificationSoundEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:changeNotificationSoundEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setBooleanValue
+Method-name:getNotificationSound
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:readValue
+Method-name:changeNotificationSound
+Method-returnType:void
+Method-parameters:[String sound]
+MethodInvocation:setStringValue
+Method-name:getNotificationPeerSound
+Method-returnType:String
+Method-parameters:[Peer peer]
+MethodInvocation:readValue
+MethodInvocation:getChatKey
+Method-name:changeNotificationPeerSound
+Method-returnType:void
+Method-parameters:[Peer peer, String sound]
+MethodInvocation:setStringValue
+MethodInvocation:getChatKey
+Method-name:isVibrationEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:changeNotificationVibrationEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setBooleanValue
+Method-name:isShowNotificationsText
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:changeShowNotificationTextEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setBooleanValue
+Method-name:isGroupNotificationsEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:changeGroupNotificationsEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setBooleanValue
+Method-name:isGroupNotificationsOnlyMentionsEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:changeGroupNotificationsOnlyMentionsEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setBooleanValue
+Method-name:isInAppEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:changeInAppEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setBooleanValue
+Method-name:isInAppSoundEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:changeInAppSoundEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setBooleanValue
+Method-name:isInAppVibrationEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:changeInAppVibrationEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setBooleanValue
+Method-name:isSendByEnterEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:changeSendByEnter
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setBooleanValue
+Method-name:isMarkdownEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:changeMarkdown
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setBooleanValue
+Method-name:getTextSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getInt
+Method-name:changeTextSize
+Method-returnType:void
+Method-parameters:[int textSize]
+MethodInvocation:setInt
+Method-name:isImageAutoDownloadEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:setImageAutoDownloadEnabled
+Method-returnType:void
+Method-parameters:[boolean enabled]
+MethodInvocation:setBooleanValue
+Method-name:isAnimationAutoDownloadEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:setAnimationAutoDownloadEnabled
+Method-returnType:void
+Method-parameters:[boolean enabled]
+MethodInvocation:setBooleanValue
+Method-name:isVideoAutoDownloadEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:setVideoAutoDownloadEnabled
+Method-returnType:void
+Method-parameters:[boolean enabled]
+MethodInvocation:setBooleanValue
+Method-name:isDocAutoDownloadEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:setDocAutoDownloadEnabled
+Method-returnType:void
+Method-parameters:[boolean enabled]
+MethodInvocation:setBooleanValue
+Method-name:isAudioAutoDownloadEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:setAudioAutoDownloadEnabled
+Method-returnType:void
+Method-parameters:[boolean enabled]
+MethodInvocation:setBooleanValue
+Method-name:isNotificationsEnabled
+Method-returnType:boolean
+Method-parameters:[Peer peer]
+MethodInvocation:getBooleanValue
+MethodInvocation:getChatKey
+Method-name:changeNotificationsEnabled
+Method-returnType:void
+Method-parameters:[Peer peer, boolean val]
+MethodInvocation:setBooleanValue
+MethodInvocation:getChatKey
+Method-name:getNotificationSound
+Method-returnType:String
+Method-parameters:[Peer peer]
+MethodInvocation:readValue
+MethodInvocation:getChatKey
+Method-name:changeNotificationSound
+Method-returnType:void
+Method-parameters:[Peer peer, String sound]
+MethodInvocation:setStringValue
+MethodInvocation:getChatKey
+Method-name:isRenameHintShown
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+MethodInvocation:setBooleanValue
+Method-name:getSelectedWallpapper
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:readValue
+Method-name:changeSelectedWallpapper
+Method-returnType:void
+Method-parameters:[String uri]
+MethodInvocation:changeValue
+Method-name:getPrivacy
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:readValue
+Method-name:setPrivacy
+Method-returnType:void
+Method-parameters:[String privacy]
+MethodInvocation:changeValue
+Method-name:isAnimationAutoPlayEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanValue
+Method-name:setAnimationAutoPlayEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setBooleanValue
+Method-name:getBooleanValue
+Method-returnType:boolean
+Method-parameters:[String key, boolean defaultVal]
+MethodInvocation:readValue
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:getBooleanValue
+Method-returnType:boolean
+Method-parameters:[String key]
+MethodInvocation:getBooleanValue
+Method-name:setBooleanValue
+Method-returnType:void
+Method-parameters:[String key, boolean val]
+MethodInvocation:changeValue
+Method-name:getStringValue
+Method-returnType:String
+Method-parameters:[String key, String defaultVal]
+MethodInvocation:readValue
+Method-name:setInt
+Method-returnType:void
+Method-parameters:[String key, int val]
+MethodInvocation:changeValue
+MethodInvocation:toString
+Method-name:getInt
+Method-returnType:int
+Method-parameters:[String key, int defaultVal]
+MethodInvocation:readValue
+MethodInvocation:parseInt
+MethodInvocation:printStackTrace
+Method-name:getBytes
+Method-returnType:byte[]
+Method-parameters:[String key]
+MethodInvocation:getBytes
+MethodInvocation:preferences
+Method-name:setBytes
+Method-returnType:void
+Method-parameters:[String key, byte[] val]
+MethodInvocation:putBytes
+MethodInvocation:preferences
+Method-name:getStringValue
+Method-returnType:String
+Method-parameters:[String key]
+MethodInvocation:getStringValue
+Method-name:setStringValue
+Method-returnType:void
+Method-parameters:[String key, String val]
+MethodInvocation:changeValue
+Method-name:changeValue
+Method-returnType:void
+Method-parameters:[String key, String val]
+MethodInvocation:readValue
+MethodInvocation:equals
+MethodInvocation:send
+MethodInvocation:onUpdatedSetting
+MethodInvocation:notifySettingsChanged
+Method-name:readValue
+Method-returnType:String
+Method-parameters:[String key]
+MethodInvocation:getString
+MethodInvocation:preferences
+Method-name:onUpdatedSetting
+Method-returnType:void
+Method-parameters:[String key, String value]
+MethodInvocation:putString
+MethodInvocation:preferences
+Method-name:notifySettingsChanged
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:post
+Method-name:getChatKey
+Method-returnType:String
+Method-parameters:[Peer peer]
+MethodInvocation:getPeerType
+MethodInvocation:getPeerId
+MethodInvocation:getPeerType
+MethodInvocation:getPeerId
+Method-name:resetModule
+Method-returnType:void
+Method-parameters:[]

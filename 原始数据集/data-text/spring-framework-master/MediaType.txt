@@ -1,0 +1,217 @@
+Class:MediaType
+Field:serialVersionUID
+Field:ALL
+Field:ALL_VALUE
+Field:APPLICATION_ATOM_XML
+Field:APPLICATION_ATOM_XML_VALUE
+Field:APPLICATION_CBOR
+Field:APPLICATION_CBOR_VALUE
+Field:APPLICATION_FORM_URLENCODED
+Field:APPLICATION_FORM_URLENCODED_VALUE
+Field:APPLICATION_JSON
+Field:APPLICATION_JSON_VALUE
+Field:APPLICATION_JSON_UTF8
+Field:APPLICATION_JSON_UTF8_VALUE
+Field:APPLICATION_OCTET_STREAM
+Field:APPLICATION_OCTET_STREAM_VALUE
+Field:APPLICATION_PDF
+Field:APPLICATION_PDF_VALUE
+Field:APPLICATION_PROBLEM_JSON
+Field:APPLICATION_PROBLEM_JSON_VALUE
+Field:APPLICATION_PROBLEM_JSON_UTF8
+Field:APPLICATION_PROBLEM_JSON_UTF8_VALUE
+Field:APPLICATION_PROBLEM_XML
+Field:APPLICATION_PROBLEM_XML_VALUE
+Field:APPLICATION_RSS_XML
+Field:APPLICATION_RSS_XML_VALUE
+Field:APPLICATION_STREAM_JSON
+Field:APPLICATION_STREAM_JSON_VALUE
+Field:APPLICATION_XHTML_XML
+Field:APPLICATION_XHTML_XML_VALUE
+Field:APPLICATION_XML
+Field:APPLICATION_XML_VALUE
+Field:IMAGE_GIF
+Field:IMAGE_GIF_VALUE
+Field:IMAGE_JPEG
+Field:IMAGE_JPEG_VALUE
+Field:IMAGE_PNG
+Field:IMAGE_PNG_VALUE
+Field:MULTIPART_FORM_DATA
+Field:MULTIPART_FORM_DATA_VALUE
+Field:MULTIPART_MIXED
+Field:MULTIPART_MIXED_VALUE
+Field:MULTIPART_RELATED
+Field:MULTIPART_RELATED_VALUE
+Field:TEXT_EVENT_STREAM
+Field:TEXT_EVENT_STREAM_VALUE
+Field:TEXT_HTML
+Field:TEXT_HTML_VALUE
+Field:TEXT_MARKDOWN
+Field:TEXT_MARKDOWN_VALUE
+Field:TEXT_PLAIN
+Field:TEXT_PLAIN_VALUE
+Field:TEXT_XML
+Field:TEXT_XML_VALUE
+Field:PARAM_QUALITY_FACTOR
+Method-name:MediaType
+Method-returnType:null
+Method-parameters:[String type]
+Method-name:MediaType
+Method-returnType:null
+Method-parameters:[String type, String subtype]
+MethodInvocation:emptyMap
+Method-name:MediaType
+Method-returnType:null
+Method-parameters:[String type, String subtype, Charset charset]
+Method-name:MediaType
+Method-returnType:null
+Method-parameters:[String type, String subtype, double qualityValue]
+MethodInvocation:singletonMap
+MethodInvocation:toString
+Method-name:MediaType
+Method-returnType:null
+Method-parameters:[MediaType other, Charset charset]
+Method-name:MediaType
+Method-returnType:null
+Method-parameters:[MediaType other, @Nullable Map<String,String> parameters]
+MethodInvocation:getType
+MethodInvocation:getSubtype
+Method-name:MediaType
+Method-returnType:null
+Method-parameters:[String type, String subtype, @Nullable Map<String,String> parameters]
+Method-name:checkParameters
+Method-returnType:void
+Method-parameters:[String attribute, String value]
+MethodInvocation:equals
+MethodInvocation:unquote
+MethodInvocation:parseDouble
+MethodInvocation:isTrue
+Method-name:getQualityValue
+Method-returnType:double
+Method-parameters:[]
+MethodInvocation:getParameter
+MethodInvocation:parseDouble
+MethodInvocation:unquote
+Method-name:includes
+Method-returnType:boolean
+Method-parameters:[@Nullable MediaType other]
+Method-name:isCompatibleWith
+Method-returnType:boolean
+Method-parameters:[@Nullable MediaType other]
+Method-name:copyQualityValue
+Method-returnType:MediaType
+Method-parameters:[MediaType mediaType]
+MethodInvocation:containsKey
+MethodInvocation:getParameters
+MethodInvocation:getParameters
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:getParameters
+Method-name:removeQualityValue
+Method-returnType:MediaType
+Method-parameters:[]
+MethodInvocation:containsKey
+MethodInvocation:getParameters
+MethodInvocation:getParameters
+MethodInvocation:remove
+Method-name:valueOf
+Method-returnType:MediaType
+Method-parameters:[String value]
+MethodInvocation:parseMediaType
+Method-name:parseMediaType
+Method-returnType:MediaType
+Method-parameters:[String mediaType]
+MethodInvocation:parseMimeType
+MethodInvocation:getType
+MethodInvocation:getSubtype
+MethodInvocation:getParameters
+MethodInvocation:getMessage
+Method-name:parseMediaTypes
+Method-returnType:List<MediaType>
+Method-parameters:[@Nullable String mediaTypes]
+MethodInvocation:hasLength
+MethodInvocation:emptyList
+MethodInvocation:tokenize
+MethodInvocation:size
+MethodInvocation:hasText
+MethodInvocation:add
+MethodInvocation:parseMediaType
+Method-name:parseMediaTypes
+Method-returnType:List<MediaType>
+Method-parameters:[@Nullable List<String> mediaTypes]
+MethodInvocation:isEmpty
+MethodInvocation:emptyList
+MethodInvocation:size
+MethodInvocation:parseMediaTypes
+MethodInvocation:get
+MethodInvocation:addAll
+MethodInvocation:parseMediaTypes
+Method-name:asMediaTypes
+Method-returnType:List<MediaType>
+Method-parameters:[List<MimeType> mimeTypes]
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:asMediaType
+Method-name:asMediaType
+Method-returnType:MediaType
+Method-parameters:[MimeType mimeType]
+MethodInvocation:getType
+MethodInvocation:getSubtype
+MethodInvocation:getParameters
+Method-name:toString
+Method-returnType:String
+Method-parameters:[Collection<MediaType> mediaTypes]
+MethodInvocation:toString
+Method-name:sortBySpecificity
+Method-returnType:void
+Method-parameters:[List<MediaType> mediaTypes]
+MethodInvocation:notNull
+MethodInvocation:size
+MethodInvocation:sort
+Method-name:sortByQualityValue
+Method-returnType:void
+Method-parameters:[List<MediaType> mediaTypes]
+MethodInvocation:notNull
+MethodInvocation:size
+MethodInvocation:sort
+Method-name:sortBySpecificityAndQuality
+Method-returnType:void
+Method-parameters:[List<MediaType> mediaTypes]
+MethodInvocation:notNull
+MethodInvocation:size
+MethodInvocation:sort
+MethodInvocation:thenComparing
+Field:QUALITY_VALUE_COMPARATOR
+MethodInvocation:getQualityValue
+MethodInvocation:getQualityValue
+MethodInvocation:compare
+MethodInvocation:isWildcardType
+MethodInvocation:isWildcardType
+MethodInvocation:isWildcardType
+MethodInvocation:isWildcardType
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:getType
+MethodInvocation:isWildcardSubtype
+MethodInvocation:isWildcardSubtype
+MethodInvocation:isWildcardSubtype
+MethodInvocation:isWildcardSubtype
+MethodInvocation:equals
+MethodInvocation:getSubtype
+MethodInvocation:getSubtype
+MethodInvocation:size
+MethodInvocation:getParameters
+MethodInvocation:size
+MethodInvocation:getParameters
+MethodInvocation:compare
+Field:SPECIFICITY_COMPARATOR
+Method-name:compareParameters
+Method-returnType:int
+Method-parameters:[MediaType mediaType1, MediaType mediaType2]
+MethodInvocation:getQualityValue
+MethodInvocation:getQualityValue
+MethodInvocation:compare
+Method-name:setDefaultContentType
+Method-returnType:void
+Method-parameters:[ContentNegotiationManagerFactoryBean contentNegotiationManagerFactoryBean]
+MethodInvocation:setDefaultContentTypeStrategy

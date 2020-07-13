@@ -1,0 +1,105 @@
+Class:ArtifactRoot
+Field:INTERNER
+MethodInvocation:newWeakInterner
+Field:root
+Field:execPath
+Field:rootType
+Field:components
+Method-name:ArtifactRoot
+Method-returnType:null
+Method-parameters:[Root root, PathFragment execPath, RootType rootType, ImmutableList<PathFragment> components]
+FieldAccess:root
+MethodInvocation:checkNotNull
+FieldAccess:execPath
+FieldAccess:rootType
+FieldAccess:components
+Method-name:ArtifactRoot
+Method-returnType:null
+Method-parameters:[Root root, PathFragment execPath, RootType rootType]
+Method-name:asSourceRoot
+Method-returnType:ArtifactRoot
+Method-parameters:[Root root]
+Method-name:asExternalSourceRoot
+Method-returnType:ArtifactRoot
+Method-parameters:[Root root]
+Method-name:asDerivedRoot
+Method-returnType:ArtifactRoot
+Method-parameters:[Path execRoot, PathFragment... prefixes]
+MethodInvocation:getRelative
+MethodInvocation:checkArgument
+MethodInvocation:startsWith
+MethodInvocation:checkArgument
+MethodInvocation:equals
+MethodInvocation:relativeTo
+MethodInvocation:intern
+MethodInvocation:fromPath
+MethodInvocation:copyOf
+Method-name:asDerivedRoot
+Method-returnType:ArtifactRoot
+Method-parameters:[Path execRoot, Path root]
+MethodInvocation:asDerivedRoot
+MethodInvocation:relativeTo
+Method-name:middlemanRoot
+Method-returnType:ArtifactRoot
+Method-parameters:[Path execRoot, Path outputDir]
+MethodInvocation:getRelative
+MethodInvocation:checkArgument
+MethodInvocation:startsWith
+MethodInvocation:checkArgument
+MethodInvocation:equals
+MethodInvocation:relativeTo
+MethodInvocation:intern
+MethodInvocation:fromPath
+Method-name:createForSerialization
+Method-returnType:ArtifactRoot
+Method-parameters:[Root root, PathFragment execPath, RootType rootType, ImmutableList<PathFragment> components]
+MethodInvocation:intern
+Method-name:createArtifact
+Method-returnType:Artifact
+Method-parameters:[PathFragment execPath, ArtifactOwner owner, @Nullable Artifact.SpecialArtifactType type, boolean contentBasedPath, ArtifactFactory artifactFactory]
+MethodInvocation:checkNotNull
+MethodInvocation:isSourceRoot
+Method-name:getRoot
+Method-returnType:Root
+Method-parameters:[]
+Method-name:getExecPath
+Method-returnType:PathFragment
+Method-parameters:[]
+Method-name:getExecPathString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPathString
+MethodInvocation:getExecPath
+Method-name:getComponents
+Method-returnType:ImmutableList<PathFragment>
+Method-parameters:[]
+Method-name:isSourceRoot
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isMiddlemanRoot
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[ArtifactRoot o]
+MethodInvocation:compareTo
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isSourceRoot
+Method-name:repr
+Method-returnType:void
+Method-parameters:[Printer printer]
+MethodInvocation:append
+MethodInvocation:isSourceRoot
+Field:RootType

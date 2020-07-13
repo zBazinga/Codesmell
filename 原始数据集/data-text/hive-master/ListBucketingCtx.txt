@@ -1,0 +1,107 @@
+Class:ListBucketingCtx
+Field:serialVersionUID
+Field:skewedColNames
+Field:skewedColValues
+Field:lbLocationMap
+Field:rowSkewedIndex
+Field:isStoredAsSubDirectories
+Field:defaultKey
+Field:defaultDirName
+Field:skewedValuesDirNames
+Method-name:ListBucketingCtx
+Method-returnType:null
+Method-parameters:[]
+Method-name:getSkewedColNames
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setSkewedColNames
+Method-returnType:void
+Method-parameters:[List<String> skewedColNames]
+FieldAccess:skewedColNames
+Method-name:getSkewedColValues
+Method-returnType:List<List<String>>
+Method-parameters:[]
+Method-name:setSkewedColValues
+Method-returnType:void
+Method-parameters:[List<List<String>> skewedColValues]
+FieldAccess:skewedColValues
+Method-name:getLbLocationMap
+Method-returnType:Map<List<String>,String>
+Method-parameters:[]
+Method-name:setLbLocationMap
+Method-returnType:void
+Method-parameters:[Map<List<String>,String> lbLocationMap]
+FieldAccess:lbLocationMap
+Method-name:processRowSkewedIndex
+Method-returnType:void
+Method-parameters:[RowSchema rowSch]
+Method-name:calculateSkewedValueSubDirList
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isSkewedStoredAsDir
+FieldAccess:skewedColValues
+MethodInvocation:add
+MethodInvocation:makeListBucketingDirName
+FieldAccess:skewedColNames
+MethodInvocation:add
+MethodInvocation:makeDefaultListBucketingDirName
+FieldAccess:skewedColNames
+Method-name:isStoredAsSubDirectories
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setStoredAsSubDirectories
+Method-returnType:void
+Method-parameters:[boolean isStoredAsSubDirectories]
+FieldAccess:isStoredAsSubDirectories
+Method-name:getDefaultKey
+Method-returnType:String
+Method-parameters:[]
+Method-name:setDefaultKey
+Method-returnType:void
+Method-parameters:[String defaultKey]
+FieldAccess:defaultKey
+Method-name:getDefaultDirName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setDefaultDirName
+Method-returnType:void
+Method-parameters:[String defaultDirName]
+FieldAccess:defaultDirName
+Method-name:isSkewedStoredAsDir
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getSkewedColNames
+MethodInvocation:size
+MethodInvocation:getSkewedColNames
+MethodInvocation:getSkewedColValues
+MethodInvocation:size
+MethodInvocation:getSkewedColValues
+MethodInvocation:isStoredAsSubDirectories
+Method-name:calculateListBucketingLevel
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSkewedStoredAsDir
+MethodInvocation:size
+MethodInvocation:getSkewedColNames
+Method-name:getSkewedValuesDirNames
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setSkewedValuesDirNames
+Method-returnType:void
+Method-parameters:[List<String> skewedValuesDirNames]
+FieldAccess:skewedValuesDirNames
+Method-name:getRowSkewedIndex
+Method-returnType:List<SkewedColumnPositionPair>
+Method-parameters:[]
+Method-name:setRowSkewedIndex
+Method-returnType:void
+Method-parameters:[List<SkewedColumnPositionPair> rowSkewedIndex]
+FieldAccess:rowSkewedIndex
+Method-name:createMergeTask
+Method-returnType:Task<?>
+Method-parameters:[TableName tableName, Table table, Map<String,String> partitionSpec, Path oldLocation, Class<? extends InputFormat> inputFormatClass, Path queryTmpDir, AlterTableConcatenateAnalyzer alterTableConcatenateAnalyzer]
+MethodInvocation:getTableDesc
+MethodInvocation:getInputs
+MethodInvocation:getOutputs
+MethodInvocation:setNeedLock
+MethodInvocation:get

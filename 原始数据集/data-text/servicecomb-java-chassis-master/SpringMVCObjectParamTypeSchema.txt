@@ -1,0 +1,54 @@
+Class:SpringMVCObjectParamTypeSchema
+Method-name:testFlattenObjectParam
+Method-returnType:FlattenObjectResponse
+Method-parameters:[@RequestBody FlattenObjectRequest request]
+MethodInvocation:convertValue
+MethodInvocation:getRestObjectMapper
+Method-name:testFluentSetterFlattenObjectParam
+Method-returnType:FluentSetterFlattenObjectResponse
+Method-parameters:[@RequestBody FluentSetterFlattenObjectRequest request]
+MethodInvocation:convertValue
+MethodInvocation:getRestObjectMapper
+Method-name:testMultiLayerObjectParam
+Method-returnType:MultiLayerObjectParam
+Method-parameters:[@RequestBody(required=false) MultiLayerObjectParam request]
+Method-name:testRecursiveObjectParam
+Method-returnType:RecursiveObjectParam
+Method-parameters:[@RequestBody RecursiveObjectParam request]
+Method-name:testListObjectParam
+Method-returnType:List<GenericObjectParam<List<RecursiveObjectParam>>>
+Method-parameters:[@RequestBody List<GenericObjectParam<List<RecursiveObjectParam>>> request]
+Method-name:testMapObjectParam
+Method-returnType:Map<String,GenericObjectParam<Map<String,GenericObjectParam<RecursiveObjectParam>>>>
+Method-parameters:[@RequestBody Map<String,GenericObjectParam<Map<String,GenericObjectParam<RecursiveObjectParam>>>> request]
+Method-name:testFluentSetterQueryObjectParam
+Method-returnType:FluentSetterFlattenObjectRequest
+Method-parameters:[FluentSetterFlattenObjectRequest request]
+Method-name:testQueryObjectWithHeader
+Method-returnType:String
+Method-parameters:[@RequestHeader("prefix") String prefix, QueryObjectModel QueryObjectModel]
+MethodInvocation:toString
+Method-name:testQueryObjectWithHeaderName
+Method-returnType:String
+Method-parameters:[@RequestHeader(name="prefix") String prefix, QueryObjectModel QueryObjectModel]
+MethodInvocation:toString
+Method-name:testQueryObjectWithHeaderValue
+Method-returnType:String
+Method-parameters:[@RequestHeader(value="prefix") String prefix, QueryObjectModel QueryObjectModel]
+MethodInvocation:toString
+Method-name:testQueryObjectWithHeaderValueAndName
+Method-returnType:String
+Method-parameters:[@RequestHeader(name="prefix") String prefix, @RequestHeader(value="suffix") String suffix, QueryObjectModel QueryObjectModel]
+MethodInvocation:toString
+Method-name:testQueryObjectWithParam
+Method-returnType:String
+Method-parameters:[@RequestParam("prefix") String prefix, QueryObjectModel QueryObjectModel]
+MethodInvocation:toString
+Method-name:testQueryObjectWithParamName
+Method-returnType:String
+Method-parameters:[@RequestParam(name="prefix") String prefix, QueryObjectModel QueryObjectModel]
+MethodInvocation:toString
+Method-name:testQueryObjectWithParamValue
+Method-returnType:String
+Method-parameters:[@RequestParam(value="prefix") String prefix, QueryObjectModel QueryObjectModel]
+MethodInvocation:toString

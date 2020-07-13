@@ -1,0 +1,296 @@
+Class:AllocationService
+Field:logger
+MethodInvocation:getLogger
+Field:allocationDeciders
+Field:existingShardsAllocators
+Field:shardsAllocator
+Field:clusterInfoService
+Method-name:AllocationService
+Method-returnType:null
+Method-parameters:[AllocationDeciders allocationDeciders, GatewayAllocator gatewayAllocator, ShardsAllocator shardsAllocator, ClusterInfoService clusterInfoService]
+MethodInvocation:setExistingShardsAllocators
+MethodInvocation:singletonMap
+Method-name:AllocationService
+Method-returnType:null
+Method-parameters:[AllocationDeciders allocationDeciders, ShardsAllocator shardsAllocator, ClusterInfoService clusterInfoService]
+FieldAccess:allocationDeciders
+FieldAccess:shardsAllocator
+FieldAccess:clusterInfoService
+Method-name:setExistingShardsAllocators
+Method-returnType:void
+Method-parameters:[Map<String,ExistingShardsAllocator> existingShardsAllocators]
+Method-name:applyStartedShards
+Method-returnType:ClusterState
+Method-parameters:[ClusterState clusterState, List<ShardRouting> startedShards]
+Method-name:buildResultAndLogHealthChange
+Method-returnType:ClusterState
+Method-parameters:[ClusterState oldState, RoutingAllocation allocation, String reason]
+MethodInvocation:buildResult
+MethodInvocation:logClusterHealthStateChange
+Method-name:buildResult
+Method-returnType:ClusterState
+Method-parameters:[ClusterState oldState, RoutingAllocation allocation]
+Method-name:applyFailedShard
+Method-returnType:ClusterState
+Method-parameters:[ClusterState clusterState, ShardRouting failedShard, boolean markAsStale]
+MethodInvocation:applyFailedShards
+MethodInvocation:singletonList
+MethodInvocation:emptyList
+Method-name:applyFailedShards
+Method-returnType:ClusterState
+Method-parameters:[ClusterState clusterState, List<FailedShard> failedShards]
+MethodInvocation:applyFailedShards
+MethodInvocation:emptyList
+Method-name:applyFailedShards
+Method-returnType:ClusterState
+Method-parameters:[final ClusterState clusterState, final List<FailedShard> failedShards, final List<StaleShard> staleShards]
+Method-name:disassociateDeadNodes
+Method-returnType:ClusterState
+Method-parameters:[ClusterState clusterState, boolean reroute, String reason]
+MethodInvocation:getMutableRoutingNodes
+MethodInvocation:shuffle
+MethodInvocation:unassigned
+MethodInvocation:getClusterInfo
+MethodInvocation:currentNanoTime
+MethodInvocation:disassociateDeadNodes
+MethodInvocation:routingNodesChanged
+MethodInvocation:buildResult
+MethodInvocation:reroute
+Method-name:adaptAutoExpandReplicas
+Method-returnType:ClusterState
+Method-parameters:[ClusterState clusterState]
+Method-name:removeDelayMarkers
+Method-returnType:void
+Method-parameters:[RoutingAllocation allocation]
+MethodInvocation:iterator
+MethodInvocation:unassigned
+MethodInvocation:routingNodes
+MethodInvocation:metadata
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:unassignedInfo
+MethodInvocation:isDelayed
+MethodInvocation:getRemainingDelay
+MethodInvocation:getCurrentNanoTime
+MethodInvocation:getSettings
+MethodInvocation:getIndexSafe
+MethodInvocation:index
+MethodInvocation:updateUnassigned
+MethodInvocation:getReason
+MethodInvocation:getMessage
+MethodInvocation:getFailure
+MethodInvocation:getNumFailedAllocations
+MethodInvocation:getUnassignedTimeInNanos
+MethodInvocation:getUnassignedTimeInMillis
+MethodInvocation:getLastAllocationStatus
+MethodInvocation:getFailedNodeIds
+MethodInvocation:recoverySource
+MethodInvocation:changes
+Method-name:resetFailedAllocationCounter
+Method-returnType:void
+Method-parameters:[RoutingAllocation allocation]
+MethodInvocation:iterator
+MethodInvocation:unassigned
+MethodInvocation:routingNodes
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:unassignedInfo
+MethodInvocation:updateUnassigned
+MethodInvocation:getNumFailedAllocations
+MethodInvocation:getReason
+MethodInvocation:getMessage
+MethodInvocation:getFailure
+MethodInvocation:getUnassignedTimeInNanos
+MethodInvocation:getUnassignedTimeInMillis
+MethodInvocation:isDelayed
+MethodInvocation:getLastAllocationStatus
+MethodInvocation:emptySet
+MethodInvocation:recoverySource
+MethodInvocation:changes
+Method-name:firstListElementsToCommaDelimitedString
+Method-returnType:String
+Method-parameters:[List<T> elements, Function<T,String> formatter, boolean isDebugEnabled]
+MethodInvocation:size
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:joining
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:limit
+MethodInvocation:stream
+MethodInvocation:joining
+MethodInvocation:size
+Method-name:reroute
+Method-returnType:CommandsResult
+Method-parameters:[final ClusterState clusterState, AllocationCommands commands, boolean explain, boolean retryFailed]
+MethodInvocation:getMutableRoutingNodes
+MethodInvocation:getClusterInfo
+MethodInvocation:currentNanoTime
+MethodInvocation:debugDecision
+MethodInvocation:ignoreDisable
+MethodInvocation:resetFailedAllocationCounter
+MethodInvocation:execute
+MethodInvocation:ignoreDisable
+MethodInvocation:reroute
+MethodInvocation:buildResultAndLogHealthChange
+Method-name:reroute
+Method-returnType:ClusterState
+Method-parameters:[ClusterState clusterState, String reason]
+MethodInvocation:adaptAutoExpandReplicas
+MethodInvocation:getMutableRoutingNodes
+MethodInvocation:shuffle
+MethodInvocation:unassigned
+MethodInvocation:getClusterInfo
+MethodInvocation:currentNanoTime
+MethodInvocation:reroute
+MethodInvocation:routingNodesChanged
+MethodInvocation:buildResultAndLogHealthChange
+Method-name:logClusterHealthStateChange
+Method-returnType:void
+Method-parameters:[ClusterStateHealth previousStateHealth, ClusterStateHealth newStateHealth, String reason]
+MethodInvocation:getStatus
+MethodInvocation:getStatus
+MethodInvocation:equals
+MethodInvocation:info
+MethodInvocation:argAndField
+MethodInvocation:argAndField
+MethodInvocation:argAndField
+Method-name:hasDeadNodes
+Method-returnType:boolean
+Method-parameters:[RoutingAllocation allocation]
+MethodInvocation:routingNodes
+MethodInvocation:containsKey
+MethodInvocation:getDataNodes
+MethodInvocation:nodes
+MethodInvocation:nodeId
+Method-name:reroute
+Method-returnType:void
+Method-parameters:[RoutingAllocation allocation]
+Method-name:allocateExistingUnassignedShards
+Method-returnType:void
+Method-parameters:[RoutingAllocation allocation]
+MethodInvocation:sort
+MethodInvocation:unassigned
+MethodInvocation:routingNodes
+MethodInvocation:getAllocationComparator
+MethodInvocation:values
+MethodInvocation:beforeAllocation
+MethodInvocation:iterator
+MethodInvocation:unassigned
+MethodInvocation:routingNodes
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:primary
+MethodInvocation:allocateUnassigned
+MethodInvocation:getAllocatorForShard
+MethodInvocation:values
+MethodInvocation:afterPrimariesBeforeReplicas
+MethodInvocation:iterator
+MethodInvocation:unassigned
+MethodInvocation:routingNodes
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:primary
+MethodInvocation:allocateUnassigned
+MethodInvocation:getAllocatorForShard
+Method-name:disassociateDeadNodes
+Method-returnType:void
+Method-parameters:[RoutingAllocation allocation]
+MethodInvocation:mutableIterator
+MethodInvocation:routingNodes
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:containsKey
+MethodInvocation:getDataNodes
+MethodInvocation:nodes
+MethodInvocation:nodeId
+MethodInvocation:copyShards
+MethodInvocation:getIndexSafe
+MethodInvocation:metadata
+MethodInvocation:index
+MethodInvocation:nanos
+MethodInvocation:get
+MethodInvocation:getSettings
+MethodInvocation:nodeId
+MethodInvocation:getCurrentNanoTime
+MethodInvocation:currentTimeMillis
+MethodInvocation:emptySet
+MethodInvocation:failShard
+MethodInvocation:routingNodes
+MethodInvocation:changes
+MethodInvocation:remove
+Method-name:applyStartedShards
+Method-returnType:void
+Method-parameters:[RoutingAllocation routingAllocation, List<ShardRouting> startedShardEntries]
+Method-name:getMutableRoutingNodes
+Method-returnType:RoutingNodes
+Method-parameters:[ClusterState clusterState]
+Method-name:currentNanoTime
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:nanoTime
+Method-name:cleanCaches
+Method-returnType:void
+Method-parameters:[]
+Method-name:getNumberOfInFlightFetches
+Method-returnType:int
+Method-parameters:[]
+Method-name:explainShardAllocation
+Method-returnType:ShardAllocationDecision
+Method-parameters:[ShardRouting shardRouting, RoutingAllocation allocation]
+Method-name:explainUnassignedShardAllocation
+Method-returnType:AllocateUnassignedDecision
+Method-parameters:[ShardRouting shardRouting, RoutingAllocation routingAllocation]
+Method-name:getAllocatorForShard
+Method-returnType:ExistingShardsAllocator
+Method-parameters:[ShardRouting shardRouting, RoutingAllocation routingAllocation]
+Method-name:assertInitialized
+Method-returnType:boolean
+Method-parameters:[]
+Class:NotFoundAllocator
+Field:allocatorName
+Method-name:NotFoundAllocator
+Method-returnType:null
+Method-parameters:[String allocatorName]
+FieldAccess:allocatorName
+Method-name:beforeAllocation
+Method-returnType:void
+Method-parameters:[RoutingAllocation allocation]
+Method-name:afterPrimariesBeforeReplicas
+Method-returnType:void
+Method-parameters:[RoutingAllocation allocation]
+Method-name:allocateUnassigned
+Method-returnType:void
+Method-parameters:[ShardRouting shardRouting, RoutingAllocation allocation, UnassignedAllocationHandler unassignedAllocationHandler]
+MethodInvocation:removeAndIgnore
+MethodInvocation:changes
+Method-name:explainUnassignedShardAllocation
+Method-returnType:AllocateUnassignedDecision
+Method-parameters:[ShardRouting unassignedShard, RoutingAllocation allocation]
+Method-name:cleanCaches
+Method-returnType:void
+Method-parameters:[]
+Method-name:applyStartedShards
+Method-returnType:void
+Method-parameters:[List<ShardRouting> startedShards, RoutingAllocation allocation]
+Method-name:applyFailedShards
+Method-returnType:void
+Method-parameters:[List<FailedShard> failedShards, RoutingAllocation allocation]
+Method-name:getNumberOfInFlightFetches
+Method-returnType:int
+Method-parameters:[]
+Class:CommandsResult
+Field:explanations
+Field:clusterState
+Method-name:CommandsResult
+Method-returnType:null
+Method-parameters:[RoutingExplanations explanations, ClusterState clusterState]
+FieldAccess:clusterState
+FieldAccess:explanations
+Method-name:explanations
+Method-returnType:RoutingExplanations
+Method-parameters:[]
+Method-name:getClusterState
+Method-returnType:ClusterState
+Method-parameters:[]

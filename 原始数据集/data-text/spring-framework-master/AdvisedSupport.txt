@@ -1,0 +1,338 @@
+Class:AdvisedSupport
+Field:serialVersionUID
+Field:EMPTY_TARGET_SOURCE
+Field:targetSource
+Field:preFiltered
+Field:advisorChainFactory
+Field:methodCache
+Field:interfaces
+Field:advisors
+Field:advisorArray
+Method-name:AdvisedSupport
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:methodCache
+Method-name:AdvisedSupport
+Method-returnType:null
+Method-parameters:[Class<?>... interfaces]
+MethodInvocation:setInterfaces
+Method-name:setTarget
+Method-returnType:void
+Method-parameters:[Object target]
+MethodInvocation:setTargetSource
+Method-name:setTargetSource
+Method-returnType:void
+Method-parameters:[@Nullable TargetSource targetSource]
+FieldAccess:targetSource
+Method-name:getTargetSource
+Method-returnType:TargetSource
+Method-parameters:[]
+FieldAccess:targetSource
+Method-name:setTargetClass
+Method-returnType:void
+Method-parameters:[@Nullable Class<?> targetClass]
+FieldAccess:targetSource
+MethodInvocation:forClass
+Method-name:getTargetClass
+Method-returnType:Class<?>
+Method-parameters:[]
+MethodInvocation:getTargetClass
+FieldAccess:targetSource
+Method-name:setPreFiltered
+Method-returnType:void
+Method-parameters:[boolean preFiltered]
+FieldAccess:preFiltered
+Method-name:isPreFiltered
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:preFiltered
+Method-name:setAdvisorChainFactory
+Method-returnType:void
+Method-parameters:[AdvisorChainFactory advisorChainFactory]
+MethodInvocation:notNull
+FieldAccess:advisorChainFactory
+Method-name:getAdvisorChainFactory
+Method-returnType:AdvisorChainFactory
+Method-parameters:[]
+FieldAccess:advisorChainFactory
+Method-name:setInterfaces
+Method-returnType:void
+Method-parameters:[Class<?>... interfaces]
+MethodInvocation:notNull
+MethodInvocation:clear
+FieldAccess:interfaces
+MethodInvocation:addInterface
+Method-name:addInterface
+Method-returnType:void
+Method-parameters:[Class<?> intf]
+MethodInvocation:notNull
+MethodInvocation:isInterface
+MethodInvocation:getName
+MethodInvocation:contains
+FieldAccess:interfaces
+MethodInvocation:add
+FieldAccess:interfaces
+MethodInvocation:adviceChanged
+Method-name:removeInterface
+Method-returnType:boolean
+Method-parameters:[Class<?> intf]
+MethodInvocation:remove
+FieldAccess:interfaces
+Method-name:getProxiedInterfaces
+Method-returnType:Class<?>[]
+Method-parameters:[]
+MethodInvocation:toClassArray
+FieldAccess:interfaces
+Method-name:isInterfaceProxied
+Method-returnType:boolean
+Method-parameters:[Class<?> intf]
+FieldAccess:interfaces
+MethodInvocation:isAssignableFrom
+Method-name:getAdvisors
+Method-returnType:Advisor[]
+Method-parameters:[]
+FieldAccess:advisorArray
+Method-name:addAdvisor
+Method-returnType:void
+Method-parameters:[Advisor advisor]
+MethodInvocation:size
+FieldAccess:advisors
+MethodInvocation:addAdvisor
+Method-name:addAdvisor
+Method-returnType:void
+Method-parameters:[int pos, Advisor advisor]
+MethodInvocation:validateIntroductionAdvisor
+MethodInvocation:addAdvisorInternal
+Method-name:removeAdvisor
+Method-returnType:boolean
+Method-parameters:[Advisor advisor]
+MethodInvocation:indexOf
+MethodInvocation:removeAdvisor
+Method-name:removeAdvisor
+Method-returnType:void
+Method-parameters:[int index]
+MethodInvocation:isFrozen
+MethodInvocation:size
+FieldAccess:advisors
+MethodInvocation:size
+FieldAccess:advisors
+MethodInvocation:remove
+FieldAccess:advisors
+MethodInvocation:getInterfaces
+MethodInvocation:removeInterface
+MethodInvocation:updateAdvisorArray
+MethodInvocation:adviceChanged
+Method-name:indexOf
+Method-returnType:int
+Method-parameters:[Advisor advisor]
+MethodInvocation:notNull
+MethodInvocation:indexOf
+FieldAccess:advisors
+Method-name:replaceAdvisor
+Method-returnType:boolean
+Method-parameters:[Advisor a, Advisor b]
+MethodInvocation:notNull
+MethodInvocation:notNull
+MethodInvocation:indexOf
+MethodInvocation:removeAdvisor
+MethodInvocation:addAdvisor
+Method-name:addAdvisors
+Method-returnType:void
+Method-parameters:[Advisor... advisors]
+MethodInvocation:addAdvisors
+MethodInvocation:asList
+Method-name:addAdvisors
+Method-returnType:void
+Method-parameters:[Collection<Advisor> advisors]
+MethodInvocation:isFrozen
+MethodInvocation:isEmpty
+MethodInvocation:validateIntroductionAdvisor
+MethodInvocation:notNull
+MethodInvocation:add
+FieldAccess:advisors
+MethodInvocation:updateAdvisorArray
+MethodInvocation:adviceChanged
+Method-name:validateIntroductionAdvisor
+Method-returnType:void
+Method-parameters:[IntroductionAdvisor advisor]
+MethodInvocation:validateInterfaces
+MethodInvocation:getInterfaces
+MethodInvocation:addInterface
+Method-name:addAdvisorInternal
+Method-returnType:void
+Method-parameters:[int pos, Advisor advisor]
+MethodInvocation:notNull
+MethodInvocation:isFrozen
+MethodInvocation:size
+FieldAccess:advisors
+MethodInvocation:size
+FieldAccess:advisors
+MethodInvocation:add
+FieldAccess:advisors
+MethodInvocation:updateAdvisorArray
+MethodInvocation:adviceChanged
+Method-name:updateAdvisorArray
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:advisorArray
+MethodInvocation:toArray
+FieldAccess:advisors
+Method-name:getAdvisorsInternal
+Method-returnType:List<Advisor>
+Method-parameters:[]
+FieldAccess:advisors
+Method-name:addAdvice
+Method-returnType:void
+Method-parameters:[Advice advice]
+MethodInvocation:size
+FieldAccess:advisors
+MethodInvocation:addAdvice
+Method-name:addAdvice
+Method-returnType:void
+Method-parameters:[int pos, Advice advice]
+MethodInvocation:notNull
+MethodInvocation:addAdvisor
+MethodInvocation:addAdvisor
+Method-name:removeAdvice
+Method-returnType:boolean
+Method-parameters:[Advice advice]
+MethodInvocation:indexOf
+MethodInvocation:removeAdvisor
+Method-name:indexOf
+Method-returnType:int
+Method-parameters:[Advice advice]
+MethodInvocation:notNull
+MethodInvocation:size
+FieldAccess:advisors
+MethodInvocation:get
+FieldAccess:advisors
+MethodInvocation:getAdvice
+Method-name:adviceIncluded
+Method-returnType:boolean
+Method-parameters:[@Nullable Advice advice]
+FieldAccess:advisors
+MethodInvocation:getAdvice
+Method-name:countAdvicesOfType
+Method-returnType:int
+Method-parameters:[@Nullable Class<?> adviceClass]
+FieldAccess:advisors
+MethodInvocation:isInstance
+MethodInvocation:getAdvice
+Method-name:getInterceptorsAndDynamicInterceptionAdvice
+Method-returnType:List<Object>
+Method-parameters:[Method method, @Nullable Class<?> targetClass]
+MethodInvocation:get
+FieldAccess:methodCache
+MethodInvocation:getInterceptorsAndDynamicInterceptionAdvice
+FieldAccess:advisorChainFactory
+MethodInvocation:put
+FieldAccess:methodCache
+Method-name:adviceChanged
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+FieldAccess:methodCache
+Method-name:copyConfigurationFrom
+Method-returnType:void
+Method-parameters:[AdvisedSupport other]
+MethodInvocation:copyConfigurationFrom
+Method-name:copyConfigurationFrom
+Method-returnType:void
+Method-parameters:[AdvisedSupport other, TargetSource targetSource, List<Advisor> advisors]
+MethodInvocation:copyFrom
+FieldAccess:targetSource
+FieldAccess:advisorChainFactory
+FieldAccess:interfaces
+MethodInvocation:validateIntroductionAdvisor
+MethodInvocation:notNull
+MethodInvocation:add
+FieldAccess:advisors
+MethodInvocation:updateAdvisorArray
+MethodInvocation:adviceChanged
+Method-name:getConfigurationOnlyCopy
+Method-returnType:AdvisedSupport
+Method-parameters:[]
+MethodInvocation:copyFrom
+MethodInvocation:forClass
+MethodInvocation:getTargetClass
+MethodInvocation:isStatic
+MethodInvocation:getTargetSource
+FieldAccess:advisorChainFactory
+FieldAccess:interfaces
+FieldAccess:advisors
+MethodInvocation:updateAdvisorArray
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[ObjectInputStream ois]
+MethodInvocation:defaultReadObject
+FieldAccess:methodCache
+Method-name:toProxyConfigString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:size
+FieldAccess:interfaces
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:classNamesToString
+FieldAccess:interfaces
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:size
+FieldAccess:advisors
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:advisors
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:targetSource
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:hasNoUserSuppliedProxyInterfaces
+Method-returnType:boolean
+Method-parameters:[DefaultAopProxyFactory defaultAopProxyFactory]
+MethodInvocation:getProxiedInterfaces
+MethodInvocation:isAssignableFrom
+Class:MethodCacheKey
+Field:method
+Field:hashCode
+Method-name:MethodCacheKey
+Method-returnType:null
+Method-parameters:[Method method]
+FieldAccess:method
+FieldAccess:hashCode
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object other]
+FieldAccess:method
+FieldAccess:method
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+FieldAccess:method
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[MethodCacheKey other]
+MethodInvocation:compareTo
+MethodInvocation:getName
+FieldAccess:method
+MethodInvocation:getName
+MethodInvocation:compareTo
+MethodInvocation:toString
+FieldAccess:method
+MethodInvocation:toString

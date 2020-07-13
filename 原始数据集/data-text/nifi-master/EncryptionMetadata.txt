@@ -1,0 +1,21 @@
+Class:EncryptionMetadata
+Method-name:EncryptionMetadata
+Method-returnType:null
+Method-parameters:[]
+Method-name:EncryptionMetadata
+Method-returnType:null
+Method-parameters:[String keyId, String algorithm, byte[] ivBytes, String version, int cipherByteLength]
+FieldAccess:keyId
+FieldAccess:ivBytes
+FieldAccess:algorithm
+FieldAccess:version
+FieldAccess:cipherByteLength
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:serializeEncryptionMetadata
+Method-returnType:byte[]
+Method-parameters:[AESProvenanceEventEncryptor aesProvenanceEventEncryptor]
+MethodInvocation:writeObject
+MethodInvocation:close
+MethodInvocation:toByteArray

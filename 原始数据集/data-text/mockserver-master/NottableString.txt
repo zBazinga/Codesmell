@@ -1,0 +1,174 @@
+Class:NottableString
+Field:NOT_CHAR
+Field:value
+Field:isBlank
+Field:not
+Field:hashCode
+Field:json
+Field:pattern
+Field:lowercasePattern
+Method-name:NottableString
+Method-returnType:null
+Method-parameters:[String value, Boolean not]
+FieldAccess:value
+FieldAccess:isBlank
+MethodInvocation:isBlank
+FieldAccess:not
+FieldAccess:not
+FieldAccess:hashCode
+MethodInvocation:hash
+FieldAccess:value
+FieldAccess:not
+FieldAccess:not
+FieldAccess:json
+FieldAccess:value
+FieldAccess:json
+FieldAccess:value
+Method-name:NottableString
+Method-returnType:null
+Method-parameters:[String value]
+FieldAccess:isBlank
+MethodInvocation:isBlank
+FieldAccess:isBlank
+MethodInvocation:charAt
+FieldAccess:value
+MethodInvocation:substring
+FieldAccess:not
+FieldAccess:value
+FieldAccess:not
+FieldAccess:hashCode
+MethodInvocation:hash
+FieldAccess:value
+FieldAccess:not
+FieldAccess:not
+FieldAccess:json
+FieldAccess:value
+FieldAccess:json
+FieldAccess:value
+Method-name:deserializeNottableStrings
+Method-returnType:List<NottableString>
+Method-parameters:[String... strings]
+MethodInvocation:add
+MethodInvocation:string
+Method-name:deserializeNottableStrings
+Method-returnType:List<NottableString>
+Method-parameters:[List<String> strings]
+MethodInvocation:add
+MethodInvocation:string
+Method-name:serialiseNottableString
+Method-returnType:String
+Method-parameters:[NottableString nottableString]
+MethodInvocation:toString
+Method-name:serialiseNottableString
+Method-returnType:List<String>
+Method-parameters:[Collection<NottableString> nottableStrings]
+MethodInvocation:add
+MethodInvocation:toString
+Method-name:string
+Method-returnType:NottableString
+Method-parameters:[String value, Boolean not]
+Method-name:string
+Method-returnType:NottableString
+Method-parameters:[String value]
+Method-name:not
+Method-returnType:NottableString
+Method-parameters:[String value]
+Method-name:strings
+Method-returnType:List<NottableString>
+Method-parameters:[String... values]
+MethodInvocation:add
+MethodInvocation:string
+Method-name:strings
+Method-returnType:List<NottableString>
+Method-parameters:[Collection<String> values]
+MethodInvocation:add
+MethodInvocation:string
+Method-name:getValue
+Method-returnType:String
+Method-parameters:[]
+Method-name:isNot
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:capitalize
+Method-returnType:NottableString
+Method-parameters:[]
+MethodInvocation:split
+MethodInvocation:capitalize
+MethodInvocation:substringBeforeLast
+MethodInvocation:join
+MethodInvocation:on
+Method-name:lowercase
+Method-returnType:NottableString
+Method-parameters:[]
+MethodInvocation:toLowerCase
+Method-name:equalsIgnoreCase
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other, boolean ignoreCase]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equals
+MethodInvocation:getValue
+FieldAccess:not
+FieldAccess:not
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:getValue
+Method-name:isBlank
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:matches
+Method-returnType:boolean
+Method-parameters:[String input]
+MethodInvocation:compile
+MethodInvocation:getValue
+MethodInvocation:matches
+MethodInvocation:matcher
+Method-name:matchesIgnoreCase
+Method-returnType:boolean
+Method-parameters:[String input]
+MethodInvocation:compile
+MethodInvocation:toLowerCase
+MethodInvocation:getValue
+MethodInvocation:matches
+MethodInvocation:matcher
+MethodInvocation:toLowerCase
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+MethodInvocation:getValue
+FieldAccess:value
+FieldAccess:not
+FieldAccess:not
+MethodInvocation:equals
+MethodInvocation:getValue
+FieldAccess:value
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[NottableString other]
+MethodInvocation:compareTo
+MethodInvocation:getValue
+MethodInvocation:getValue
+Method-name:matchesOther
+Method-returnType:boolean
+Method-parameters:[NottableString matched, boolean ignoreCase, RegexStringMatcher regexStringMatcher]
+MethodInvocation:isNot
+MethodInvocation:isNot
+MethodInvocation:matches
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:isNot
+MethodInvocation:isNot
+MethodInvocation:matches
+MethodInvocation:getValue
+MethodInvocation:getValue

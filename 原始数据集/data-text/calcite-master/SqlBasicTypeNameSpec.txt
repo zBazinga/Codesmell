@@ -1,0 +1,77 @@
+Class:SqlBasicTypeNameSpec
+Field:sqlTypeName
+Field:precision
+Field:scale
+Field:charSetName
+Method-name:SqlBasicTypeNameSpec
+Method-returnType:null
+Method-parameters:[SqlTypeName typeName, int precision, int scale, @Nullable String charSetName, SqlParserPos pos]
+MethodInvocation:name
+FieldAccess:sqlTypeName
+FieldAccess:precision
+FieldAccess:scale
+FieldAccess:charSetName
+Method-name:SqlBasicTypeNameSpec
+Method-returnType:null
+Method-parameters:[SqlTypeName typeName, SqlParserPos pos]
+Method-name:SqlBasicTypeNameSpec
+Method-returnType:null
+Method-parameters:[SqlTypeName typeName, int precision, SqlParserPos pos]
+Method-name:SqlBasicTypeNameSpec
+Method-returnType:null
+Method-parameters:[SqlTypeName typeName, int precision, String charSetName, SqlParserPos pos]
+Method-name:SqlBasicTypeNameSpec
+Method-returnType:null
+Method-parameters:[SqlTypeName typeName, int precision, int scale, SqlParserPos pos]
+Method-name:getScale
+Method-returnType:int
+Method-parameters:[]
+Method-name:getPrecision
+Method-returnType:int
+Method-parameters:[]
+Method-name:getCharSetName
+Method-returnType:String
+Method-parameters:[]
+Method-name:equalsDeep
+Method-returnType:boolean
+Method-parameters:[SqlTypeNameSpec node, Litmus litmus]
+MethodInvocation:fail
+FieldAccess:sqlTypeName
+MethodInvocation:fail
+FieldAccess:precision
+MethodInvocation:fail
+FieldAccess:scale
+MethodInvocation:fail
+MethodInvocation:equals
+FieldAccess:charSetName
+MethodInvocation:fail
+MethodInvocation:succeed
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, int leftPrec, int rightPrec]
+MethodInvocation:isWithLocalTimeZoneDef
+MethodInvocation:keyword
+MethodInvocation:name
+MethodInvocation:stripLocalTimeZoneDef
+MethodInvocation:keyword
+MethodInvocation:getSimple
+MethodInvocation:getTypeName
+MethodInvocation:allowsPrec
+MethodInvocation:startList
+MethodInvocation:print
+MethodInvocation:allowsScale
+MethodInvocation:sep
+MethodInvocation:print
+MethodInvocation:endList
+MethodInvocation:keyword
+MethodInvocation:keyword
+MethodInvocation:identifier
+Method-name:deriveType
+Method-returnType:RelDataType
+Method-parameters:[SqlValidator validator]
+Method-name:isWithLocalTimeZoneDef
+Method-returnType:boolean
+Method-parameters:[SqlTypeName typeName]
+Method-name:stripLocalTimeZoneDef
+Method-returnType:SqlTypeName
+Method-parameters:[SqlTypeName typeName]

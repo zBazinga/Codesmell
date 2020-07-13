@@ -1,0 +1,61 @@
+Class:OpenSessionInViewFilter
+Field:DEFAULT_SESSION_FACTORY_BEAN_NAME
+Field:sessionFactoryBeanName
+Method-name:setSessionFactoryBeanName
+Method-returnType:void
+Method-parameters:[String sessionFactoryBeanName]
+FieldAccess:sessionFactoryBeanName
+Method-name:getSessionFactoryBeanName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:sessionFactoryBeanName
+Method-name:shouldNotFilterAsyncDispatch
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:shouldNotFilterErrorDispatch
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:doFilterInternal
+Method-returnType:void
+Method-parameters:[HttpServletRequest request, HttpServletResponse response, FilterChain filterChain]
+MethodInvocation:lookupSessionFactory
+MethodInvocation:getAsyncManager
+MethodInvocation:getAlreadyFilteredAttributeName
+MethodInvocation:hasResource
+MethodInvocation:isAsyncDispatch
+MethodInvocation:applySessionBindingInterceptor
+MethodInvocation:debug
+MethodInvocation:openSession
+MethodInvocation:bindResource
+MethodInvocation:registerCallableInterceptor
+MethodInvocation:registerDeferredResultInterceptor
+MethodInvocation:doFilter
+MethodInvocation:unbindResource
+MethodInvocation:isAsyncStarted
+MethodInvocation:debug
+MethodInvocation:closeSession
+MethodInvocation:getSession
+Method-name:lookupSessionFactory
+Method-returnType:SessionFactory
+Method-parameters:[HttpServletRequest request]
+MethodInvocation:lookupSessionFactory
+Method-name:lookupSessionFactory
+Method-returnType:SessionFactory
+Method-parameters:[]
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getSessionFactoryBeanName
+MethodInvocation:getRequiredWebApplicationContext
+MethodInvocation:getServletContext
+MethodInvocation:getBean
+MethodInvocation:getSessionFactoryBeanName
+Method-name:openSession
+Method-returnType:Session
+Method-parameters:[SessionFactory sessionFactory]
+MethodInvocation:openSession
+MethodInvocation:setFlushMode
+Method-name:applySessionBindingInterceptor
+Method-returnType:boolean
+Method-parameters:[WebAsyncManager asyncManager, String key]
+MethodInvocation:getCallableInterceptor
+MethodInvocation:bindSession

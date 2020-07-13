@@ -1,0 +1,23 @@
+Class:AvoidSoqlInLoopsRule
+Method-name:AvoidSoqlInLoopsRule
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:setProperty
+MethodInvocation:setProperty
+MethodInvocation:setProperty
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTSoqlExpression node, Object data]
+MethodInvocation:insideLoop
+MethodInvocation:parentNotReturn
+MethodInvocation:parentNotForEach
+MethodInvocation:addViolation
+Method-name:parentNotForEach
+Method-returnType:boolean
+Method-parameters:[ASTSoqlExpression node]
+MethodInvocation:getParent
+Method-name:insideLoop
+Method-returnType:boolean
+Method-parameters:[ASTSoqlExpression node]
+MethodInvocation:getParent
+MethodInvocation:getParent

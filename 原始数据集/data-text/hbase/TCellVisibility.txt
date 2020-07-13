@@ -1,0 +1,212 @@
+Class:TCellVisibility
+Field:STRUCT_DESC
+Field:EXPRESSION_FIELD_DESC
+Field:STANDARD_SCHEME_FACTORY
+Field:TUPLE_SCHEME_FACTORY
+Field:expression
+Field:_Fields
+MethodInvocation:EXPRESSION
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[java.lang.String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, java.lang.String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:java.lang.String
+Method-parameters:[]
+Field:optionals
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:TCellVisibility
+Method-returnType:null
+Method-parameters:[]
+Method-name:TCellVisibility
+Method-returnType:null
+Method-parameters:[TCellVisibility other]
+MethodInvocation:isSetExpression
+FieldAccess:expression
+Method-name:deepCopy
+Method-returnType:TCellVisibility
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:expression
+Method-name:getExpression
+Method-returnType:java.lang.String
+Method-parameters:[]
+FieldAccess:expression
+Method-name:setExpression
+Method-returnType:TCellVisibility
+Method-parameters:[@org.apache.thrift.annotation.Nullable java.lang.String expression]
+FieldAccess:expression
+Method-name:unsetExpression
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:expression
+Method-name:isSetExpression
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:expression
+Method-name:setExpressionIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:expression
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, @org.apache.thrift.annotation.Nullable java.lang.Object value]
+MethodInvocation:unsetExpression
+MethodInvocation:setExpression
+Method-name:getFieldValue
+Method-returnType:java.lang.Object
+Method-parameters:[_Fields field]
+MethodInvocation:getExpression
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:isSetExpression
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[java.lang.Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[TCellVisibility that]
+MethodInvocation:isSetExpression
+MethodInvocation:isSetExpression
+MethodInvocation:equals
+FieldAccess:expression
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSetExpression
+MethodInvocation:isSetExpression
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[TCellVisibility other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetExpression
+MethodInvocation:isSetExpression
+MethodInvocation:isSetExpression
+MethodInvocation:compareTo
+FieldAccess:expression
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:scheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:scheme
+Method-name:toString
+Method-returnType:java.lang.String
+Method-parameters:[]
+MethodInvocation:isSetExpression
+MethodInvocation:append
+FieldAccess:expression
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:expression
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:TCellVisibilityStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:TCellVisibilityStandardScheme
+Method-parameters:[]
+Class:TCellVisibilityStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, TCellVisibility struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readString
+MethodInvocation:setExpressionIsSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, TCellVisibility struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:isSetExpression
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeString
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:TCellVisibilityTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:TCellVisibilityTupleScheme
+Method-parameters:[]
+Class:TCellVisibilityTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, TCellVisibility struct]
+MethodInvocation:isSetExpression
+MethodInvocation:set
+MethodInvocation:writeBitSet
+MethodInvocation:isSetExpression
+MethodInvocation:writeString
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, TCellVisibility struct]
+MethodInvocation:readBitSet
+MethodInvocation:get
+MethodInvocation:readString
+MethodInvocation:setExpressionIsSet
+Method-name:scheme
+Method-returnType:S
+Method-parameters:[org.apache.thrift.protocol.TProtocol proto]
+MethodInvocation:getScheme
+MethodInvocation:equals
+MethodInvocation:getScheme

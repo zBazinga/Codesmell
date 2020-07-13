@@ -1,0 +1,143 @@
+Class:VectorHashKeyWrapperBase
+Method-name:getWritableKeyValue
+Method-returnType:Object
+Method-parameters:[int keyIndex, VectorExpressionWriter keyOutputWriter, VectorHashKeyWrapperBatch vectorHashKeyWrapperBatch]
+MethodInvocation:isNull
+MethodInvocation:writeValue
+MethodInvocation:getLongValue
+MethodInvocation:writeValue
+MethodInvocation:getDoubleValue
+MethodInvocation:writeValue
+MethodInvocation:getBytes
+MethodInvocation:getByteStart
+MethodInvocation:getByteLength
+MethodInvocation:writeValue
+MethodInvocation:getDecimal
+MethodInvocation:writeValue
+MethodInvocation:getTimestamp
+MethodInvocation:writeValue
+MethodInvocation:getIntervalDayTime
+Class:HashContext
+Field:bytesHash
+Method-name:getBytesHash
+Method-returnType:Murmur3.IncrementalHash32
+Method-parameters:[HashContext ctx]
+Field:hashcode
+Method-name:VectorHashKeyWrapperBase
+Method-returnType:null
+Method-parameters:[]
+Method-name:getNewKey
+Method-returnType:void
+Method-parameters:[Object row, ObjectInspector rowInspector]
+Method-name:setHashKey
+Method-returnType:void
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object that]
+Method-name:clone
+Method-returnType:Object
+Method-parameters:[]
+Method-name:copyKey
+Method-returnType:KeyWrapper
+Method-parameters:[]
+MethodInvocation:clone
+Method-name:copyKey
+Method-returnType:void
+Method-parameters:[KeyWrapper oldWrapper]
+Method-name:getKeyArray
+Method-returnType:Object[]
+Method-parameters:[]
+Method-name:assignLong
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, long v]
+Method-name:assignLong
+Method-returnType:void
+Method-parameters:[int index, long v]
+Method-name:assignNullLong
+Method-returnType:void
+Method-parameters:[int keyIndex, int index]
+Method-name:assignDouble
+Method-returnType:void
+Method-parameters:[int index, double d]
+Method-name:assignNullDouble
+Method-returnType:void
+Method-parameters:[int keyIndex, int index]
+Method-name:assignString
+Method-returnType:void
+Method-parameters:[int index, byte[] bytes, int start, int length]
+Method-name:assignNullString
+Method-returnType:void
+Method-parameters:[int keyIndex, int index]
+Method-name:assignDecimal
+Method-returnType:void
+Method-parameters:[int index, HiveDecimalWritable value]
+Method-name:assignNullDecimal
+Method-returnType:void
+Method-parameters:[int keyIndex, int index]
+Method-name:assignTimestamp
+Method-returnType:void
+Method-parameters:[int index, Timestamp value]
+Method-name:assignTimestamp
+Method-returnType:void
+Method-parameters:[int index, TimestampColumnVector colVector, int elementNum]
+Method-name:assignNullTimestamp
+Method-returnType:void
+Method-parameters:[int keyIndex, int index]
+Method-name:assignIntervalDayTime
+Method-returnType:void
+Method-parameters:[int index, HiveIntervalDayTime value]
+Method-name:assignIntervalDayTime
+Method-returnType:void
+Method-parameters:[int index, IntervalDayTimeColumnVector colVector, int elementNum]
+Method-name:assignNullIntervalDayTime
+Method-returnType:void
+Method-parameters:[int keyIndex, int index]
+Method-name:stringifyKeys
+Method-returnType:String
+Method-parameters:[VectorColumnSetInfo columnSetInfo]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getLongValue
+Method-returnType:long
+Method-parameters:[int i]
+Method-name:getDoubleValue
+Method-returnType:double
+Method-parameters:[int i]
+Method-name:getBytes
+Method-returnType:byte[]
+Method-parameters:[int i]
+Method-name:getByteStart
+Method-returnType:int
+Method-parameters:[int i]
+Method-name:getByteLength
+Method-returnType:int
+Method-parameters:[int i]
+Method-name:getDecimal
+Method-returnType:HiveDecimalWritable
+Method-parameters:[int i]
+Method-name:getTimestamp
+Method-returnType:Timestamp
+Method-parameters:[int i]
+Method-name:getIntervalDayTime
+Method-returnType:HiveIntervalDayTime
+Method-parameters:[int i]
+Method-name:getVariableSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:clearIsNull
+Method-returnType:void
+Method-parameters:[]
+Method-name:setNull
+Method-returnType:void
+Method-parameters:[]
+Method-name:isNull
+Method-returnType:boolean
+Method-parameters:[int keyIndex]
+Method-name:isCopy
+Method-returnType:boolean
+Method-parameters:[]

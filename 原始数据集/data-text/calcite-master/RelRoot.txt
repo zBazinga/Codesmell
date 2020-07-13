@@ -1,0 +1,83 @@
+Class:RelRoot
+Field:rel
+Field:validatedRowType
+Field:kind
+Field:fields
+Field:collation
+Field:hints
+Method-name:RelRoot
+Method-returnType:null
+Method-parameters:[RelNode rel, RelDataType validatedRowType, SqlKind kind, List<Pair<Integer,String>> fields, RelCollation collation, List<RelHint> hints]
+FieldAccess:rel
+FieldAccess:validatedRowType
+FieldAccess:kind
+FieldAccess:fields
+MethodInvocation:copyOf
+FieldAccess:collation
+MethodInvocation:requireNonNull
+FieldAccess:hints
+MethodInvocation:copyOf
+Method-name:of
+Method-returnType:RelRoot
+Method-parameters:[RelNode rel, SqlKind kind]
+MethodInvocation:of
+MethodInvocation:getRowType
+Method-name:of
+Method-returnType:RelRoot
+Method-parameters:[RelNode rel, RelDataType rowType, SqlKind kind]
+MethodInvocation:identity
+MethodInvocation:getFieldCount
+MethodInvocation:getFieldNames
+MethodInvocation:zip
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:withRel
+Method-returnType:RelRoot
+Method-parameters:[RelNode rel]
+FieldAccess:rel
+Method-name:withCollation
+Method-returnType:RelRoot
+Method-parameters:[RelCollation collation]
+Method-name:withHints
+Method-returnType:RelRoot
+Method-parameters:[List<RelHint> hints]
+Method-name:project
+Method-returnType:RelNode
+Method-parameters:[]
+MethodInvocation:project
+Method-name:project
+Method-returnType:RelNode
+Method-parameters:[boolean force]
+MethodInvocation:isRefTrivial
+MethodInvocation:contains
+MethodInvocation:size
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:add
+MethodInvocation:makeInputRef
+MethodInvocation:create
+MethodInvocation:right
+Method-name:isNameTrivial
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getRowType
+MethodInvocation:equals
+MethodInvocation:right
+MethodInvocation:getFieldNames
+Method-name:isRefTrivial
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:contains
+MethodInvocation:getRowType
+MethodInvocation:isIdentity
+MethodInvocation:left
+MethodInvocation:getFieldCount
+Method-name:isCollationTrivial
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getTraits
+MethodInvocation:getTraitSet
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:get

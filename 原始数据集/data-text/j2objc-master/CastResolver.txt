@@ -1,0 +1,284 @@
+Class:CastResolver
+Field:narrowingMap
+Method-name:CastResolver
+Method-returnType:null
+Method-parameters:[CompilationUnit unit]
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[CastExpression node]
+Method-name:rewriteFloatToIntegralCast
+Method-returnType:Expression
+Method-parameters:[TypeMirror castType, Expression expr, String funcName, TypeMirror funcReturnType]
+MethodInvocation:addParameters
+MethodInvocation:getDouble
+MethodInvocation:addArgument
+MethodInvocation:remove
+MethodInvocation:isSameType
+Method-name:isObjectArray
+Method-returnType:boolean
+Method-parameters:[TypeMirror type]
+MethodInvocation:isArray
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:getComponentType
+Method-name:createCastCheck
+Method-returnType:FunctionInvocation
+Method-parameters:[TypeMirror type, Expression expr]
+MethodInvocation:erasure
+MethodInvocation:isInterface
+MethodInvocation:isObjectArray
+MethodInvocation:addParameters
+MethodInvocation:asType
+MethodInvocation:addArgument
+MethodInvocation:remove
+MethodInvocation:addArgument
+MethodInvocation:isArray
+MethodInvocation:isDeclaredType
+MethodInvocation:needsCastChk
+MethodInvocation:getObjcClass
+MethodInvocation:addParameters
+MethodInvocation:addArgument
+MethodInvocation:remove
+MethodInvocation:addModifiers
+MethodInvocation:newMethodWithSelector
+MethodInvocation:addArgument
+Method-name:addCast
+Method-returnType:void
+Method-parameters:[Expression expr]
+MethodInvocation:getTypeMirror
+MethodInvocation:replaceWith
+MethodInvocation:parenthesize
+MethodInvocation:setExpression
+Method-name:maybeAddCast
+Method-returnType:void
+Method-parameters:[Expression expr, TypeMirror expectedType, boolean shouldCastFromId]
+MethodInvocation:maybeAddCast
+MethodInvocation:getThenExpression
+MethodInvocation:maybeAddCast
+MethodInvocation:getElseExpression
+MethodInvocation:needsCast
+MethodInvocation:addCast
+Method-name:needsCast
+Method-returnType:boolean
+Method-parameters:[Expression expr, TypeMirror expectedType, boolean shouldCastFromId]
+MethodInvocation:getDeclaredType
+MethodInvocation:getTypeMirror
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:isDeclaredAsId
+MethodInvocation:isObjcAssignable
+MethodInvocation:isObjcAssignable
+Method-name:getDeclaredType
+Method-returnType:TypeMirror
+Method-parameters:[Expression expr]
+MethodInvocation:getVariableElement
+MethodInvocation:asType
+MethodInvocation:getKind
+MethodInvocation:getReturnType
+MethodInvocation:getFunctionElement
+MethodInvocation:getExecutableElement
+MethodInvocation:getExpression
+MethodInvocation:getTypeMirror
+MethodInvocation:asType
+MethodInvocation:getDeclaringClass
+MethodInvocation:getDeclaredReturnType
+MethodInvocation:getDeclaredType
+MethodInvocation:getExpression
+MethodInvocation:getDeclaredReturnType
+MethodInvocation:getExecutableElement
+MethodInvocation:getSuperclass
+MethodInvocation:getEnclosingTypeElement
+Method-name:getDeclaredReturnType
+Method-returnType:TypeMirror
+Method-parameters:[ExecutableElement method, TypeMirror receiverType]
+MethodInvocation:equals
+MethodInvocation:getDeclaringClass
+MethodInvocation:asTypeElement
+MethodInvocation:getReturnType
+MethodInvocation:asType
+MethodInvocation:getMethodSelector
+MethodInvocation:getUpperBounds
+MethodInvocation:isDeclaredType
+MethodInvocation:asType
+MethodInvocation:asElement
+MethodInvocation:getObjcOrderedInheritedTypes
+MethodInvocation:asElement
+MethodInvocation:getMethods
+MethodInvocation:asMemberOf
+MethodInvocation:isSubsignature
+MethodInvocation:equals
+MethodInvocation:getMethodSelector
+MethodInvocation:erasure
+MethodInvocation:getReturnType
+MethodInvocation:isSubtype
+MethodInvocation:getReturnType
+Method-name:returnValueNeedsIntCast
+Method-returnType:boolean
+Method-parameters:[Expression arg]
+Method-name:maybeCastArguments
+Method-returnType:void
+Method-parameters:[List<Expression> args, Iterable<? extends TypeMirror> paramTypes]
+MethodInvocation:iterator
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:maybeAddCast
+MethodInvocation:next
+MethodInvocation:next
+Method-name:maybeCastArguments
+Method-returnType:void
+Method-parameters:[List<Expression> args, ExecutableElement method]
+MethodInvocation:maybeCastArguments
+MethodInvocation:asTypes
+MethodInvocation:getParameters
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[ClassInstanceCreation node]
+MethodInvocation:maybeCastArguments
+MethodInvocation:getArguments
+MethodInvocation:getExecutableElement
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[ConstructorInvocation node]
+MethodInvocation:maybeCastArguments
+MethodInvocation:getArguments
+MethodInvocation:getExecutableElement
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[EnumConstantDeclaration node]
+MethodInvocation:maybeCastArguments
+MethodInvocation:getArguments
+MethodInvocation:getExecutableElement
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[FieldAccess node]
+MethodInvocation:maybeAddCast
+MethodInvocation:getExpression
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[FunctionInvocation node]
+MethodInvocation:maybeCastArguments
+MethodInvocation:getArguments
+MethodInvocation:getParameterTypes
+MethodInvocation:getFunctionElement
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[MethodInvocation node]
+MethodInvocation:getExpression
+MethodInvocation:isStatic
+MethodInvocation:getExecutableElement
+MethodInvocation:maybeAddCast
+MethodInvocation:maybeCastArguments
+MethodInvocation:getArguments
+MethodInvocation:getExecutableElement
+MethodInvocation:returnValueNeedsIntCast
+MethodInvocation:addCast
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[ReturnStatement node]
+MethodInvocation:getExpression
+MethodInvocation:maybeAddCast
+MethodInvocation:getOwningReturnType
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[SuperConstructorInvocation node]
+MethodInvocation:maybeCastArguments
+MethodInvocation:getArguments
+MethodInvocation:getExecutableElement
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[SuperMethodInvocation node]
+MethodInvocation:maybeCastArguments
+MethodInvocation:getArguments
+MethodInvocation:getExecutableElement
+MethodInvocation:returnValueNeedsIntCast
+MethodInvocation:addCast
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[Assignment node]
+MethodInvocation:maybeAddCast
+MethodInvocation:getRightHandSide
+MethodInvocation:getTypeMirror
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[VariableDeclarationFragment node]
+MethodInvocation:getInitializer
+MethodInvocation:maybeAddCast
+MethodInvocation:asType
+MethodInvocation:getVariableElement
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[MethodDeclaration node]
+MethodInvocation:getExecutableElement
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getBody
+MethodInvocation:findSupertype
+MethodInvocation:asType
+MethodInvocation:getDeclaringClass
+MethodInvocation:getTypeArguments
+MethodInvocation:getParameters
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:asType
+MethodInvocation:get
+MethodInvocation:getVariableElement
+MethodInvocation:getParameter
+MethodInvocation:createCastCheck
+MethodInvocation:get
+MethodInvocation:addStatement
+MethodInvocation:getBody
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[InfixExpression node]
+MethodInvocation:getOperator
+MethodInvocation:getOperands
+MethodInvocation:incompatibleTypes
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:remove
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[ConditionalExpression node]
+MethodInvocation:getThenExpression
+MethodInvocation:getElseExpression
+MethodInvocation:incompatibleTypes
+MethodInvocation:setElseExpression
+MethodInvocation:remove
+Method-name:incompatibleTypes
+Method-returnType:boolean
+Method-parameters:[Expression a, Expression b]
+MethodInvocation:getTypeMirror
+MethodInvocation:getTypeMirror
+MethodInvocation:isReferenceType
+MethodInvocation:isReferenceType
+MethodInvocation:isObjcAssignable
+MethodInvocation:isObjcAssignable
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[IfStatement node]
+MethodInvocation:getExpression
+MethodInvocation:getInstanceofVar
+MethodInvocation:getTypeMirror
+MethodInvocation:getRightOperand
+MethodInvocation:put
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[IfStatement node]
+MethodInvocation:getInstanceofVar
+MethodInvocation:getExpression
+MethodInvocation:remove
+Method-name:getInstanceofVar
+Method-returnType:VariableElement
+Method-parameters:[Expression expr]
+MethodInvocation:getKind
+MethodInvocation:getVariableElement
+MethodInvocation:getLeftOperand
+Method-name:needsCastChk
+Method-returnType:boolean
+Method-parameters:[Expression expr, TypeMirror type]
+MethodInvocation:getVariableElement
+MethodInvocation:get
+MethodInvocation:isSubtype

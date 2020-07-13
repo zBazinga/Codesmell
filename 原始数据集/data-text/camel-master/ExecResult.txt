@@ -1,0 +1,34 @@
+Class:ExecResult
+Field:serialVersionUID
+Field:command
+Field:exitValue
+Field:stdout
+Field:stderr
+Method-name:ExecResult
+Method-returnType:null
+Method-parameters:[ExecCommand command, InputStream stdout, InputStream stderr, int exitValue]
+MethodInvocation:notNull
+FieldAccess:command
+FieldAccess:stdout
+FieldAccess:stderr
+FieldAccess:exitValue
+Method-name:getCommand
+Method-returnType:ExecCommand
+Method-parameters:[]
+Method-name:getExitValue
+Method-returnType:int
+Method-parameters:[]
+Method-name:getStdout
+Method-returnType:InputStream
+Method-parameters:[]
+Method-name:getStderr
+Method-returnType:InputStream
+Method-parameters:[]
+Method-name:writeOutputInMessage
+Method-returnType:void
+Method-parameters:[Message message, DefaultExecBinding defaultExecBinding]
+MethodInvocation:setHeader
+MethodInvocation:getStderr
+MethodInvocation:setHeader
+MethodInvocation:getExitValue
+MethodInvocation:setBody

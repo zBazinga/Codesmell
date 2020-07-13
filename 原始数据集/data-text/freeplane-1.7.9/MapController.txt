@@ -1,0 +1,787 @@
+Class:MapController
+Method-name:pasteXML
+Method-returnType:void
+Method-parameters:[final String pasted, final NodeModel target, EncryptionModel encryptionModel]
+MethodInvocation:createNodeTreeFromXml
+MethodInvocation:getMapReader
+MethodInvocation:getMap
+MethodInvocation:insertNodeIntoWithoutUndo
+MethodInvocation:getChildCount
+MethodInvocation:severe
+Field:Direction
+Method-name:hasValidSelection
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getSelection
+MethodInvocation:getCurrentController
+MethodInvocation:getSelected
+Class:ActionEnablerOnChange
+Field:actions
+Field:runner
+Method-name:ActionEnablerOnChange
+Method-returnType:null
+Method-parameters:[final ModeController modeController]
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getCurrentModeController
+MethodInvocation:setActionsEnabledNow
+Method-name:nodeChanged
+Method-returnType:void
+Method-parameters:[final NodeChangeEvent event]
+MethodInvocation:setActionEnabled
+Method-name:onDeselect
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+Method-name:onSelect
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:runLater
+Method-name:setActionsEnabledNow
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:hasValidSelection
+MethodInvocation:setEnabled
+Method-name:mapChanged
+Method-returnType:void
+Method-parameters:[MapChangeEvent event]
+MethodInvocation:setActionEnabled
+Method-name:onNodeDeleted
+Method-returnType:void
+Method-parameters:[NodeDeletionEvent nodeDeletionEvent]
+MethodInvocation:setActionEnabled
+Method-name:onNodeInserted
+Method-returnType:void
+Method-parameters:[NodeModel parent, NodeModel child, int newIndex]
+MethodInvocation:setActionEnabled
+Method-name:onNodeMoved
+Method-returnType:void
+Method-parameters:[NodeMoveEvent nodeMoveEvent]
+MethodInvocation:setActionEnabled
+Method-name:onPreNodeMoved
+Method-returnType:void
+Method-parameters:[NodeMoveEvent nodeMoveEvent]
+Method-name:onPreNodeDelete
+Method-returnType:void
+Method-parameters:[NodeDeletionEvent nodeDeletionEvent]
+MethodInvocation:setActionEnabled
+Method-name:setActionEnabled
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:hasValidSelection
+MethodInvocation:runLater
+Method-name:add
+Method-returnType:void
+Method-parameters:[AFreeplaneAction action]
+MethodInvocation:add
+Method-name:remove
+Method-returnType:void
+Method-parameters:[AFreeplaneAction action]
+MethodInvocation:remove
+Class:ActionSelectorOnChange
+Field:actions
+Field:runner
+Method-name:ActionSelectorOnChange
+Method-returnType:null
+Method-parameters:[final ModeController modeController]
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getCurrentModeController
+MethodInvocation:setActionsSelectedNow
+Method-name:nodeChanged
+Method-returnType:void
+Method-parameters:[final NodeChangeEvent event]
+MethodInvocation:equals
+MethodInvocation:getProperty
+MethodInvocation:setActionsSelected
+Method-name:setActionsSelected
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:hasValidSelection
+MethodInvocation:runLater
+Method-name:setActionsSelectedNow
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:hasValidSelection
+MethodInvocation:setSelected
+Method-name:onDeselect
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+Method-name:onSelect
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:setActionsSelected
+Method-name:mapChanged
+Method-returnType:void
+Method-parameters:[final MapChangeEvent event]
+MethodInvocation:setActionsSelected
+Method-name:onNodeDeleted
+Method-returnType:void
+Method-parameters:[NodeDeletionEvent nodeDeletionEvent]
+MethodInvocation:setActionsSelected
+Method-name:onNodeInserted
+Method-returnType:void
+Method-parameters:[final NodeModel parent, final NodeModel child, final int newIndex]
+MethodInvocation:setActionsSelected
+Method-name:onNodeMoved
+Method-returnType:void
+Method-parameters:[NodeMoveEvent nodeMoveEvent]
+MethodInvocation:setActionsSelected
+Method-name:onPreNodeDelete
+Method-returnType:void
+Method-parameters:[NodeDeletionEvent nodeDeletionEvent]
+MethodInvocation:setActionsSelected
+Method-name:onPreNodeMoved
+Method-returnType:void
+Method-parameters:[NodeMoveEvent nodeMoveEvent]
+MethodInvocation:setActionsSelected
+Method-name:add
+Method-returnType:void
+Method-parameters:[AFreeplaneAction action]
+MethodInvocation:add
+Method-name:remove
+Method-returnType:void
+Method-parameters:[AFreeplaneAction action]
+MethodInvocation:remove
+Method-name:install
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getConditionFactory
+MethodInvocation:getCurrentFilterController
+MethodInvocation:addConditionController
+MethodInvocation:addConditionController
+Method-name:addListenerForAction
+Method-returnType:void
+Method-parameters:[final AFreeplaneAction action]
+MethodInvocation:checkEnabledOnChange
+MethodInvocation:add
+MethodInvocation:checkSelectionOnChange
+MethodInvocation:add
+Method-name:removeListenerForAction
+Method-returnType:void
+Method-parameters:[final AFreeplaneAction action]
+MethodInvocation:checkEnabledOnChange
+MethodInvocation:remove
+MethodInvocation:checkSelectionOnChange
+MethodInvocation:remove
+Class:NodesDepthComparator
+Method-name:NodesDepthComparator
+Method-returnType:null
+Method-parameters:[]
+Method-name:compare
+Method-returnType:int
+Method-parameters:[final NodeModel n1, final NodeModel n2]
+MethodInvocation:getPathToRoot
+MethodInvocation:getPathToRoot
+MethodInvocation:isRoot
+MethodInvocation:getIndex
+MethodInvocation:getParentNode
+MethodInvocation:getIndex
+MethodInvocation:getParentNode
+Field:mapChangeListeners
+Field:mapLifeCycleListeners
+Field:mapReader
+Field:mapWriter
+Field:modeController
+Field:nodeChangeListeners
+Field:readManager
+Field:writeManager
+Method-name:MapController
+Method-returnType:null
+Method-parameters:[ModeController modeController]
+MethodInvocation:setMapController
+FieldAccess:modeController
+MethodInvocation:addMapLifeCycleListener
+MethodInvocation:getController
+MethodInvocation:addElementHandler
+MethodInvocation:addAttributeHandler
+Method-name:setAttribute
+Method-returnType:void
+Method-parameters:[final Object node, final String value]
+MethodInvocation:addAttributeHandler
+Method-name:setAttribute
+Method-returnType:void
+Method-parameters:[final Object node, final String value]
+MethodInvocation:addElementWriter
+MethodInvocation:addAttributeWriter
+MethodInvocation:addExtensionAttributeWriter
+MethodInvocation:addExtensionElementWriter
+MethodInvocation:addNodeSelectionListener
+MethodInvocation:addNodeChangeListener
+MethodInvocation:addMapChangeListener
+MethodInvocation:addNodeSelectionListener
+MethodInvocation:addNodeChangeListener
+MethodInvocation:addMapChangeListener
+MethodInvocation:createMapClipboardController
+MethodInvocation:addExtension
+MethodInvocation:createActions
+Method-name:createMapClipboardController
+Method-returnType:MapClipboardController
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getExtension
+Method-name:unfoldAndScroll
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:canBeUnfoldedOnCurrentView
+MethodInvocation:unfold
+MethodInvocation:getBooleanProperty
+MethodInvocation:getResourceController
+MethodInvocation:invokeLater
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:scrollNodeTreeToVisible
+MethodInvocation:getSelection
+MethodInvocation:getCurrentController
+Method-name:setFolded
+Method-returnType:void
+Method-parameters:[final NodeModel node, final boolean fold]
+MethodInvocation:isRoot
+MethodInvocation:unfold
+MethodInvocation:fold
+Method-name:toggleFolded
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:canBeUnfoldedOnCurrentView
+MethodInvocation:unfold
+MethodInvocation:fold
+Method-name:toggleFoldedAndScroll
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:canBeUnfoldedOnCurrentView
+MethodInvocation:unfoldAndScroll
+MethodInvocation:fold
+Method-name:unfold
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:getChildCount
+MethodInvocation:unfoldHiddenChildren
+MethodInvocation:canBeUnfoldedOnCurrentView
+MethodInvocation:unfoldUpToVisibleChild
+MethodInvocation:isFolded
+MethodInvocation:setFoldingState
+MethodInvocation:fireFoldingChanged
+MethodInvocation:fireNodeUnfold
+Method-name:fold
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:getChildCount
+MethodInvocation:isRoot
+MethodInvocation:unfoldHiddenChildren
+MethodInvocation:isFolded
+MethodInvocation:setFoldingState
+MethodInvocation:fireFoldingChanged
+MethodInvocation:fireNodeUnfold
+Method-name:setFoldingState
+Method-returnType:void
+Method-parameters:[final NodeModel node, final boolean folded]
+MethodInvocation:setFolded
+Method-name:showNextChild
+Method-returnType:boolean
+Method-parameters:[final NodeModel node]
+MethodInvocation:getChildCount
+MethodInvocation:getMapViewManager
+MethodInvocation:getCurrentController
+MethodInvocation:isFoldedOnCurrentView
+MethodInvocation:hideChildren
+MethodInvocation:setFoldingState
+MethodInvocation:getChildren
+MethodInvocation:showHiddenNode
+MethodInvocation:hasVisibleContent
+MethodInvocation:canBeUnfoldedOnCurrentView
+MethodInvocation:unfoldUpToVisibleChild
+MethodInvocation:fireNodeUnfold
+Method-name:fireNodeUnfold
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:fireNodeChanged
+Method-name:fireFoldingChanged
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:isFoldingPersistentAlways
+MethodInvocation:getMap
+MethodInvocation:setSaved
+Method-name:isFoldingPersistentAlways
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getResourceController
+MethodInvocation:equals
+MethodInvocation:getProperty
+Method-name:unfoldHiddenChildren
+Method-returnType:boolean
+Method-parameters:[NodeModel node]
+MethodInvocation:getMapViewManager
+MethodInvocation:getCurrentController
+MethodInvocation:isFoldedOnCurrentView
+MethodInvocation:unfoldHiddenChildren
+Method-name:canBeUnfoldedOnCurrentView
+Method-returnType:boolean
+Method-parameters:[final NodeModel node]
+MethodInvocation:getMapViewManager
+MethodInvocation:getCurrentController
+MethodInvocation:isFoldedOnCurrentView
+MethodInvocation:hasHiddenChildren
+MethodInvocation:getChildCount
+MethodInvocation:getChildAt
+MethodInvocation:hasVisibleContent
+MethodInvocation:isAncestor
+MethodInvocation:getFilterInfo
+MethodInvocation:canBeUnfoldedOnCurrentView
+Method-name:unfoldUpToVisibleChild
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:getChildCount
+MethodInvocation:getChildAt
+MethodInvocation:hasVisibleContent
+MethodInvocation:canBeUnfoldedOnCurrentView
+MethodInvocation:unfoldUpToVisibleChild
+MethodInvocation:setFoldingState
+Method-name:addMapChangeListener
+Method-returnType:void
+Method-parameters:[final IMapChangeListener listener]
+MethodInvocation:add
+Method-name:addMapLifeCycleListener
+Method-returnType:void
+Method-parameters:[final IMapLifeCycleListener listener]
+MethodInvocation:add
+Method-name:addNodeChangeListener
+Method-returnType:void
+Method-parameters:[final INodeChangeListener listener]
+MethodInvocation:add
+Method-name:centerNode
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:centerNode
+MethodInvocation:getSelection
+MethodInvocation:getCurrentController
+Method-name:childrenFolded
+Method-returnType:List<NodeModel>
+Method-parameters:[final NodeModel node]
+MethodInvocation:isFolded
+MethodInvocation:emptyList
+MethodInvocation:getChildren
+Method-name:closeWithoutSaving
+Method-returnType:void
+Method-parameters:[final MapModel map]
+MethodInvocation:fireMapRemoved
+MethodInvocation:releaseResources
+Method-name:createActions
+Method-returnType:void
+Method-parameters:[ModeController modeController]
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addAction
+Method-name:displayNode
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:displayNode
+Method-name:displayNode
+Method-returnType:void
+Method-parameters:[final NodeModel node, final ArrayList<NodeModel> nodesUnfoldedByDisplay]
+MethodInvocation:hasVisibleContent
+MethodInvocation:reset
+MethodInvocation:getFilterInfo
+MethodInvocation:nodeRefresh
+MethodInvocation:getPathToRoot
+MethodInvocation:isFolded
+MethodInvocation:add
+MethodInvocation:displayOnCurrentView
+MethodInvocation:getMapViewManager
+MethodInvocation:getController
+Method-name:fireMapChanged
+Method-returnType:void
+Method-parameters:[final MapChangeEvent event]
+MethodInvocation:getMap
+MethodInvocation:setsDirtyFlag
+MethodInvocation:setSaved
+MethodInvocation:toArray
+MethodInvocation:mapChanged
+MethodInvocation:fireMapChangeEvent
+Method-name:fireMapCreated
+Method-returnType:void
+Method-parameters:[final MapModel map]
+MethodInvocation:toArray
+MethodInvocation:onCreate
+Method-name:fireMapRemoved
+Method-returnType:void
+Method-parameters:[final MapModel map]
+MethodInvocation:toArray
+MethodInvocation:onRemove
+Method-name:fireNodeChanged
+Method-returnType:void
+Method-parameters:[final NodeModel node, final NodeChangeEvent nodeChangeEvent]
+MethodInvocation:toArray
+FieldAccess:nodeChangeListeners
+MethodInvocation:fireNodeChanged
+Method-name:fireNodeDeleted
+Method-returnType:void
+Method-parameters:[final NodeDeletionEvent nodeDeletionEvent]
+MethodInvocation:toArray
+MethodInvocation:onNodeDeleted
+MethodInvocation:unregistryNodes
+MethodInvocation:getMap
+Method-name:fireNodeInserted
+Method-returnType:void
+Method-parameters:[final NodeModel parent, final NodeModel child, final int index]
+MethodInvocation:registryNodeRecursive
+MethodInvocation:getMap
+MethodInvocation:toArray
+MethodInvocation:onNodeInserted
+Method-name:fireNodeMoved
+Method-returnType:void
+Method-parameters:[final NodeMoveEvent nodeMoveEvent]
+MethodInvocation:toArray
+MethodInvocation:onNodeMoved
+Method-name:firePreNodeMoved
+Method-returnType:void
+Method-parameters:[final NodeMoveEvent nodeMoveEvent]
+MethodInvocation:toArray
+MethodInvocation:onPreNodeMoved
+Method-name:firePreNodeDelete
+Method-returnType:void
+Method-parameters:[final NodeDeletionEvent nodeDeletionEvent]
+MethodInvocation:toArray
+MethodInvocation:onPreNodeDelete
+Method-name:getFilteredXml
+Method-returnType:void
+Method-parameters:[final MapModel map, final Writer fileout, final Mode mode, final boolean forceFormat]
+MethodInvocation:writeMapAsXml
+MethodInvocation:getMapWriter
+Method-name:getFilteredXml
+Method-returnType:void
+Method-parameters:[Collection<NodeModel> nodes, final Writer fileout, final Mode mode, final boolean forceFormat]
+MethodInvocation:writeNodeAsXml
+MethodInvocation:getMapWriter
+Method-name:getMapReader
+Method-returnType:MapReader
+Method-parameters:[]
+Method-name:getMapWriter
+Method-returnType:MapWriter
+Method-parameters:[]
+Method-name:getNodeFromID_
+Method-returnType:NodeModel
+Method-parameters:[final String nodeID]
+MethodInvocation:getMap
+MethodInvocation:getCurrentController
+MethodInvocation:getNodeForID
+Method-name:getNodeID
+Method-returnType:String
+Method-parameters:[final NodeModel selected]
+MethodInvocation:createID
+Method-name:getReadManager
+Method-returnType:ReadManager
+Method-parameters:[]
+Method-name:getRootNode
+Method-returnType:NodeModel
+Method-parameters:[]
+MethodInvocation:getMap
+MethodInvocation:getCurrentController
+MethodInvocation:getRootNode
+Method-name:getSelectedNode
+Method-returnType:NodeModel
+Method-parameters:[]
+MethodInvocation:getSelection
+MethodInvocation:getCurrentController
+MethodInvocation:getSelected
+Method-name:getSelectedNodes
+Method-returnType:List<NodeModel>
+Method-parameters:[]
+MethodInvocation:getSelection
+MethodInvocation:getCurrentController
+MethodInvocation:emptyList
+MethodInvocation:getOrderedSelection
+Method-name:getWriteManager
+Method-returnType:WriteManager
+Method-parameters:[]
+Method-name:hasFoldedStrictDescendant
+Method-returnType:boolean
+Method-parameters:[final NodeModel node]
+MethodInvocation:getChildren
+MethodInvocation:isFolded
+MethodInvocation:hasFoldedStrictDescendant
+Method-name:insertNodeIntoWithoutUndo
+Method-returnType:void
+Method-parameters:[final NodeModel newChild, final NodeModel parent]
+MethodInvocation:insertNodeIntoWithoutUndo
+MethodInvocation:getChildCount
+Method-name:insertNodeIntoWithoutUndo
+Method-returnType:void
+Method-parameters:[final NodeModel newNode, final NodeModel parent, final int index]
+MethodInvocation:getParentNode
+MethodInvocation:setLeft
+MethodInvocation:isLeft
+MethodInvocation:insert
+MethodInvocation:fireNodeInserted
+Method-name:isFolded
+Method-returnType:boolean
+Method-parameters:[final NodeModel node]
+MethodInvocation:isFolded
+Method-name:openMap
+Method-returnType:void
+Method-parameters:[final URL url]
+MethodInvocation:installIfAppropriate
+MethodInvocation:getController
+MethodInvocation:getMapViewManager
+MethodInvocation:getCurrentController
+MethodInvocation:tryToChangeToMapView
+MethodInvocation:setWaitingCursor
+MethodInvocation:getViewController
+MethodInvocation:getCurrentController
+MethodInvocation:loadCatchExceptions
+MethodInvocation:getController
+MethodInvocation:setReadOnly
+MethodInvocation:setSaved
+MethodInvocation:fireMapCreated
+MethodInvocation:createMapView
+MethodInvocation:setWaitingCursor
+MethodInvocation:getViewController
+MethodInvocation:getCurrentController
+Method-name:openMapSelectReferencedNode
+Method-returnType:void
+Method-parameters:[final URL url]
+MethodInvocation:getRef
+MethodInvocation:openMap
+MethodInvocation:getProtocol
+MethodInvocation:getHost
+MethodInvocation:getPort
+MethodInvocation:getPath
+MethodInvocation:getNodeAt
+MethodInvocation:select
+MethodInvocation:openMap
+Method-name:getNodeAt
+Method-returnType:NodeModel
+Method-parameters:[String nodeReference]
+MethodInvocation:getNodeAt
+MethodInvocation:getExtension
+MethodInvocation:getRootNode
+Method-name:createMapView
+Method-returnType:void
+Method-parameters:[final MapModel mapModel]
+MethodInvocation:newMapView
+MethodInvocation:getMapViewManager
+MethodInvocation:getCurrentController
+MethodInvocation:getCurrentModeController
+Method-name:newMap
+Method-returnType:MapModel
+Method-parameters:[]
+MethodInvocation:createNewRoot
+MethodInvocation:fireMapCreated
+MethodInvocation:createMapView
+Method-name:newNode
+Method-returnType:NodeModel
+Method-parameters:[final Object userObject, final MapModel map]
+Method-name:nodeChanged
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:nodeChanged
+Method-name:nodeChanged
+Method-returnType:void
+Method-parameters:[final NodeModel node, final Object property, final Object oldValue, final Object newValue]
+MethodInvocation:nodeRefresh
+Method-name:nodeRefresh
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:nodeRefresh
+Method-name:nodeRefresh
+Method-returnType:void
+Method-parameters:[final NodeModel node, final Object property, final Object oldValue, final Object newValue]
+MethodInvocation:nodeRefresh
+Method-name:nodeRefresh
+Method-returnType:void
+Method-parameters:[final NodeChangeEvent nodeChangeEvent]
+MethodInvocation:isMapLoadingInProcess
+MethodInvocation:getNode
+MethodInvocation:setsDirtyFlag
+MethodInvocation:setSaved
+MethodInvocation:getMap
+MethodInvocation:updatesModificationTime
+MethodInvocation:isUndoAction
+MethodInvocation:getCurrentModeController
+MethodInvocation:getHistoryInformation
+Field:lastModifiedAt
+MethodInvocation:getLastModifiedAt
+Field:now
+Method-name:undo
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setDate
+Method-name:setDate
+Method-returnType:void
+Method-parameters:[final HistoryInformationModel historyInformation, final Date lastModifiedAt]
+MethodInvocation:getLastModifiedAt
+MethodInvocation:setLastModifiedAt
+MethodInvocation:fireNodeChanged
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:act
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setDate
+MethodInvocation:execute
+MethodInvocation:getCurrentModeController
+MethodInvocation:getMap
+MethodInvocation:fireNodeChanged
+Field:actionEnablerOnChange
+Field:actionSelectorOnChange
+Field:refresher
+Class:NodeRefreshKey
+Field:node
+Field:property
+Method-name:NodeRefreshKey
+Method-returnType:null
+Method-parameters:[NodeModel node, Object property]
+FieldAccess:node
+FieldAccess:property
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:propertyHash
+Method-name:propertyHash
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+Class:NodeRefreshValue
+Field:controller
+Field:oldValue
+Field:newValue
+Method-name:NodeRefreshValue
+Method-returnType:null
+Method-parameters:[ModeController controller, Object oldValue, Object newValue]
+FieldAccess:controller
+FieldAccess:oldValue
+FieldAccess:newValue
+Class:Refresher
+Field:nodesToRefresh
+Field:refreshRunning
+Method-name:delayedNodeRefresh
+Method-returnType:void
+Method-parameters:[final NodeModel node, final Object property, final Object oldValue, final Object newValue]
+MethodInvocation:isEmpty
+MethodInvocation:getCurrentModeController
+MethodInvocation:put
+MethodInvocation:put
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getCurrentModeController
+MethodInvocation:toArray
+MethodInvocation:entrySet
+MethodInvocation:clear
+MethodInvocation:getValue
+MethodInvocation:getKey
+MethodInvocation:nodeRefresh
+MethodInvocation:getMapController
+MethodInvocation:invokeLater
+Method-name:delayedNodeRefresh
+Method-returnType:void
+Method-parameters:[final NodeModel node, final Object property, final Object oldValue, final Object newValue]
+MethodInvocation:delayedNodeRefresh
+Method-name:removeMapChangeListener
+Method-returnType:void
+Method-parameters:[final IMapChangeListener listener]
+MethodInvocation:remove
+Method-name:removeMapLifeCycleListener
+Method-returnType:void
+Method-parameters:[final IMapLifeCycleListener listener]
+MethodInvocation:remove
+Method-name:removeNodeChangeListener
+Method-returnType:void
+Method-parameters:[final Class<? extends IActionOnChange> clazz, final Action action]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getAction
+MethodInvocation:remove
+Method-name:removeMapChangeListener
+Method-returnType:void
+Method-parameters:[final Class<? extends IActionOnChange> clazz, final Action action]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getAction
+MethodInvocation:remove
+Method-name:removeNodeChangeListener
+Method-returnType:void
+Method-parameters:[final INodeChangeListener listener]
+MethodInvocation:remove
+Method-name:removeNodeSelectionListener
+Method-returnType:void
+Method-parameters:[final Class<? extends IActionOnChange> clazz, final Action action]
+MethodInvocation:iterator
+MethodInvocation:getNodeSelectionListeners
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getAction
+MethodInvocation:remove
+Method-name:getMapChangeListeners
+Method-returnType:Collection<IMapChangeListener>
+Method-parameters:[]
+MethodInvocation:unmodifiableCollection
+Method-name:getMapLifeCycleListeners
+Method-returnType:Collection<IMapLifeCycleListener>
+Method-parameters:[]
+MethodInvocation:unmodifiableCollection
+Method-name:getNodeChangeListeners
+Method-returnType:Collection<INodeChangeListener>
+Method-parameters:[]
+MethodInvocation:unmodifiableCollection
+Method-name:select
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:getMap
+MethodInvocation:getCurrentController
+MethodInvocation:equals
+MethodInvocation:getMap
+MethodInvocation:changeToMap
+MethodInvocation:getMapViewManager
+MethodInvocation:displayNode
+MethodInvocation:selectAsTheOnlyOneSelected
+MethodInvocation:getSelection
+Method-name:selectMultipleNodes
+Method-returnType:void
+Method-parameters:[final NodeModel focussed, final Collection<NodeModel> selecteds]
+MethodInvocation:displayNode
+MethodInvocation:select
+MethodInvocation:makeTheSelected
+MethodInvocation:getSelection
+MethodInvocation:getCurrentController
+Method-name:setSaved
+Method-returnType:void
+Method-parameters:[final MapModel mapModel, final boolean saved]
+MethodInvocation:setSaved
+Method-name:sortNodesByDepth
+Method-returnType:void
+Method-parameters:[final List<NodeModel> collection]
+MethodInvocation:sort
+Method-name:toggleFolded
+Method-returnType:void
+Method-parameters:[final Collection<NodeModel> collection]
+MethodInvocation:canBeUnfoldedOnCurrentView
+MethodInvocation:toArray
+MethodInvocation:setFolded
+Method-name:canBeUnfoldedOnCurrentView
+Method-returnType:boolean
+Method-parameters:[Collection<NodeModel> collection]
+MethodInvocation:isRoot
+MethodInvocation:canBeUnfoldedOnCurrentView
+Method-name:getModeController
+Method-returnType:ModeController
+Method-parameters:[]
+Method-name:select
+Method-returnType:void
+Method-parameters:[String nodeReference]
+MethodInvocation:select
+MethodInvocation:getNodeFromID_

@@ -1,0 +1,55 @@
+Class:QuerySpaceHelper
+Field:INSTANCE
+Method-name:QuerySpaceHelper
+Method-returnType:null
+Method-parameters:[]
+Method-name:makeEntityQuerySpace
+Method-returnType:ExpandingEntityQuerySpace
+Method-parameters:[ExpandingQuerySpace lhsQuerySpace, EntityPersister fetchedPersister, String attributeName, EntityType attributeType, String querySpaceUid, boolean required, boolean shouldIncludeJoin]
+MethodInvocation:makeEntityQuerySpace
+MethodInvocation:getExpandingQuerySpaces
+MethodInvocation:createEntityJoin
+MethodInvocation:getFactory
+MethodInvocation:addJoin
+Method-name:makeCompositeQuerySpace
+Method-returnType:ExpandingCompositeQuerySpace
+Method-parameters:[ExpandingQuerySpace lhsQuerySpace, AttributeDefinition attributeDefinition, String querySpaceUid, boolean shouldIncludeJoin]
+MethodInvocation:canJoinsBeRequired
+MethodInvocation:isNullable
+MethodInvocation:makeCompositeQuerySpace
+MethodInvocation:getType
+MethodInvocation:getPropertyMapping
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:getType
+Method-name:makeCompositeQuerySpace
+Method-returnType:ExpandingCompositeQuerySpace
+Method-parameters:[ExpandingQuerySpace lhsQuerySpace, CompositePropertyMapping compositePropertyMapping, String attributeName, CompositeType attributeType, String querySpaceUid, boolean required, boolean shouldIncludeJoin]
+MethodInvocation:makeCompositeQuerySpace
+MethodInvocation:getExpandingQuerySpaces
+MethodInvocation:createCompositeJoin
+MethodInvocation:addJoin
+Method-name:makeCollectionQuerySpace
+Method-returnType:ExpandingCollectionQuerySpace
+Method-parameters:[ExpandingQuerySpace lhsQuerySpace, AssociationAttributeDefinition attributeDefinition, String querySpaceUid, FetchStrategy fetchStrategy]
+MethodInvocation:getType
+MethodInvocation:getCollectionPersister
+MethodInvocation:toCollectionDefinition
+MethodInvocation:format
+MethodInvocation:getRole
+MethodInvocation:getName
+MethodInvocation:canJoinsBeRequired
+MethodInvocation:isNullable
+MethodInvocation:makeCollectionQuerySpace
+MethodInvocation:getExpandingQuerySpaces
+MethodInvocation:shouldIncludeJoin
+MethodInvocation:createCollectionJoin
+MethodInvocation:getName
+MethodInvocation:getType
+MethodInvocation:getFactory
+MethodInvocation:addJoin
+Method-name:shouldIncludeJoin
+Method-returnType:boolean
+Method-parameters:[FetchStrategy fetchStrategy]
+MethodInvocation:getTiming
+MethodInvocation:getStyle

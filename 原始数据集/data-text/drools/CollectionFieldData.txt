@@ -1,0 +1,25 @@
+Class:CollectionFieldData
+Field:name
+Field:collectionFieldList
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setName
+Method-returnType:void
+Method-parameters:[final String name]
+FieldAccess:name
+Method-name:getCollectionFieldList
+Method-returnType:List<FieldData>
+Method-parameters:[]
+Method-name:setCollectionFieldList
+Method-returnType:void
+Method-parameters:[final List<FieldData> collectionFieldList]
+FieldAccess:collectionFieldList
+Method-name:createExpression
+Method-returnType:String
+Method-parameters:[CollectionFieldPopulator collectionFieldPopulator]
+MethodInvocation:getCollectionFieldList
+MethodInvocation:replace
+MethodInvocation:getValue
+MethodInvocation:size
+MethodInvocation:getCollectionFieldList

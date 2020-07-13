@@ -1,0 +1,254 @@
+Class:Controller
+Field:extensionContainer
+Field:modeController
+Field:modeController4build
+Field:modeControllers
+Field:viewController
+Field:resourceController
+Field:optionValidators
+Field:optionPanelController
+Field:mapViewManager
+Field:applicationLifecycleListeners
+Field:mapLifeCycleListeners
+Method-name:Controller
+Method-returnType:null
+Method-parameters:[ResourceController resourceController]
+FieldAccess:resourceController
+FieldAccess:optionPanelController
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addAction
+Method-name:addExtension
+Method-returnType:void
+Method-parameters:[final Class<? extends IExtension> clazz, final IExtension extension]
+MethodInvocation:addExtension
+Method-name:addModeController
+Method-returnType:void
+Method-parameters:[final ModeController modeController]
+MethodInvocation:put
+MethodInvocation:getModeName
+Method-name:addMapLifeCycleListener
+Method-returnType:void
+Method-parameters:[final IMapLifeCycleListener listener]
+MethodInvocation:add
+Method-name:removeMapLifeCycleListener
+Method-returnType:void
+Method-parameters:[final IMapLifeCycleListener listener]
+MethodInvocation:remove
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+MethodInvocation:getMapViewManager
+Method-name:getExtension
+Method-returnType:T
+Method-parameters:[final Class<T> clazz]
+MethodInvocation:getExtension
+Method-name:getMap
+Method-returnType:MapModel
+Method-parameters:[]
+MethodInvocation:getModel
+MethodInvocation:getMapViewManager
+Method-name:getMapViewManager
+Method-returnType:IMapViewManager
+Method-parameters:[]
+Method-name:setMapViewManager
+Method-returnType:void
+Method-parameters:[IMapViewManager mapViewManager]
+FieldAccess:mapViewManager
+Method-name:getModeController
+Method-returnType:ModeController
+Method-parameters:[]
+Method-name:getModeController
+Method-returnType:ModeController
+Method-parameters:[final String modeName]
+MethodInvocation:get
+Method-name:getModes
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getSelection
+Method-returnType:IMapSelection
+Method-parameters:[]
+MethodInvocation:getMapSelection
+MethodInvocation:getMapViewManager
+Method-name:getViewController
+Method-returnType:ViewController
+Method-parameters:[]
+Method-name:quit
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:shutdown
+MethodInvocation:exit
+Method-name:quit
+Method-returnType:void
+Method-parameters:[final ActionEvent actionEvent]
+MethodInvocation:actionPerformed
+MethodInvocation:get
+MethodInvocation:getActions
+Method-name:selectMode
+Method-returnType:void
+Method-parameters:[ModeController newModeController]
+MethodInvocation:shutdown
+MethodInvocation:info
+MethodInvocation:getModeName
+MethodInvocation:selectMode
+MethodInvocation:changeToMode
+MethodInvocation:getMapViewManager
+MethodInvocation:getModeName
+MethodInvocation:startup
+Method-name:selectMode
+Method-returnType:void
+Method-parameters:[final String modeName]
+MethodInvocation:get
+MethodInvocation:selectMode
+Method-name:setViewController
+Method-returnType:void
+Method-parameters:[final ViewController viewController]
+FieldAccess:viewController
+Method-name:shutdown
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:saveProperties
+MethodInvocation:getViewController
+MethodInvocation:quit
+MethodInvocation:getViewController
+MethodInvocation:saveProperties
+MethodInvocation:getResourceController
+MethodInvocation:clear
+MethodInvocation:getExtensions
+Method-name:exec
+Method-returnType:void
+Method-parameters:[final String string]
+MethodInvocation:exec
+Method-name:exec
+Method-returnType:void
+Method-parameters:[final String string, boolean waitFor]
+MethodInvocation:getExtension
+MethodInvocation:getCurrentController
+MethodInvocation:getDefaultExecuter
+MethodInvocation:getCurrentController
+MethodInvocation:exec
+Method-name:exec
+Method-returnType:void
+Method-parameters:[final String[] command]
+MethodInvocation:exec
+Method-name:exec
+Method-returnType:void
+Method-parameters:[final String[] command, boolean waitFor]
+MethodInvocation:getExtension
+MethodInvocation:getCurrentController
+MethodInvocation:getDefaultExecuter
+MethodInvocation:getCurrentController
+MethodInvocation:exec
+Method-name:getDefaultExecuter
+Method-returnType:IControllerExecuteExtension
+Method-parameters:[]
+Method-name:exec
+Method-returnType:void
+Method-parameters:[String[] command, boolean waitFor]
+MethodInvocation:info
+MethodInvocation:toString
+MethodInvocation:exec
+MethodInvocation:getRuntime
+MethodInvocation:waiting
+Method-name:exec
+Method-returnType:void
+Method-parameters:[String string, boolean waitFor]
+MethodInvocation:info
+MethodInvocation:exec
+MethodInvocation:getRuntime
+MethodInvocation:waiting
+Method-name:waiting
+Method-returnType:void
+Method-parameters:[boolean waitFor, Process proc]
+MethodInvocation:waitFor
+Field:threadController
+Field:currentController
+Method-name:getCurrentController
+Method-returnType:Controller
+Method-parameters:[]
+MethodInvocation:get
+Method-name:setCurrentController
+Method-returnType:void
+Method-parameters:[final Controller controller]
+Method-name:getCurrentModeController
+Method-returnType:ModeController
+Method-parameters:[]
+MethodInvocation:getModeController
+MethodInvocation:getCurrentController
+Method-name:selectModeForBuild
+Method-returnType:void
+Method-parameters:[ModeController modeController4build]
+FieldAccess:modeController4build
+Method-name:getResourceController
+Method-returnType:ResourceController
+Method-parameters:[]
+Method-name:addOptionValidator
+Method-returnType:void
+Method-parameters:[IValidator validator]
+MethodInvocation:add
+Method-name:getOptionValidators
+Method-returnType:List<IValidator>
+Method-parameters:[]
+Method-name:getOptionPanelController
+Method-returnType:OptionPanelController
+Method-parameters:[]
+Method-name:addApplicationLifecycleListener
+Method-returnType:void
+Method-parameters:[ApplicationLifecycleListener applicationLifecycleListener]
+MethodInvocation:add
+FieldAccess:applicationLifecycleListeners
+Method-name:fireMapCreated
+Method-returnType:void
+Method-parameters:[final MapModel map]
+MethodInvocation:toArray
+MethodInvocation:onCreate
+Method-name:fireMapRemoved
+Method-returnType:void
+Method-parameters:[final MapModel map]
+MethodInvocation:toArray
+MethodInvocation:onRemove
+Method-name:onCreate
+Method-returnType:void
+Method-parameters:[MapModel map]
+MethodInvocation:fireMapCreated
+Method-name:onRemove
+Method-returnType:void
+Method-parameters:[MapModel map]
+MethodInvocation:fireMapRemoved
+Method-name:fireStartupFinished
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onStartupFinished
+Method-name:fireApplicationStopped
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onApplicationStopped
+Method-name:closeAllMaps
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:closeAllMaps
+Method-name:closeAllMaps
+Method-returnType:boolean
+Method-parameters:[MapModel mapToKeepOpen]
+MethodInvocation:getMap
+MethodInvocation:getMap
+MethodInvocation:close
+MethodInvocation:values
+MethodInvocation:getMaps
+MethodInvocation:getMapViewManager
+MethodInvocation:remove
+MethodInvocation:remove
+MethodInvocation:getMap
+MethodInvocation:close
+Method-name:buildMenus
+Method-returnType:void
+Method-parameters:[final Set<String> plugins, String mode, String xml, FreeplaneGUIStarter freeplaneGUIStarter]
+MethodInvocation:getModeController
+MethodInvocation:selectModeForBuild
+MethodInvocation:updateMenus
+MethodInvocation:selectModeForBuild

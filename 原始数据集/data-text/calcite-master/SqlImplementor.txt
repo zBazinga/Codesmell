@@ -1,0 +1,710 @@
+Class:SqlImplementor
+Field:POS
+Field:dialect
+Field:aliasSet
+Field:correlTableMap
+Method-name:SqlImplementor
+Method-returnType:null
+Method-parameters:[SqlDialect dialect]
+FieldAccess:dialect
+MethodInvocation:requireNonNull
+Method-name:visitChild
+Method-returnType:Result
+Method-parameters:[int i, RelNode e]
+MethodInvocation:visitChild
+MethodInvocation:isAnon
+Method-name:visitChild
+Method-returnType:Result
+Method-parameters:[int i, RelNode e, boolean anon]
+Method-name:addSelect
+Method-returnType:void
+Method-parameters:[List<SqlNode> selectList, SqlNode node, RelDataType rowType]
+MethodInvocation:get
+MethodInvocation:getFieldNames
+MethodInvocation:size
+MethodInvocation:getAlias
+MethodInvocation:equals
+MethodInvocation:as
+MethodInvocation:add
+Method-name:isStar
+Method-returnType:boolean
+Method-parameters:[List<RexNode> exps, RelDataType inputRowType, RelDataType projectRowType]
+Method-name:isStar
+Method-returnType:boolean
+Method-parameters:[RexProgram program]
+MethodInvocation:getProjectList
+MethodInvocation:getIndex
+MethodInvocation:getFieldCount
+MethodInvocation:getInputRowType
+Method-name:setOpToSql
+Method-returnType:Result
+Method-parameters:[SqlSetOperator operator, RelNode rel]
+MethodInvocation:zip
+MethodInvocation:getInputs
+MethodInvocation:visitChild
+MethodInvocation:asSelect
+MethodInvocation:createCall
+MethodInvocation:asSelect
+MethodInvocation:list
+MethodInvocation:result
+Method-name:convertConditionToSqlNode
+Method-returnType:SqlNode
+Method-parameters:[RexNode node, Context leftContext, Context rightContext, int leftFieldCount, SqlDialect dialect]
+MethodInvocation:isAlwaysTrue
+MethodInvocation:createBoolean
+MethodInvocation:isAlwaysFalse
+MethodInvocation:createBoolean
+MethodInvocation:joinContext
+MethodInvocation:implementor
+MethodInvocation:toSql
+MethodInvocation:getKind
+MethodInvocation:getOperands
+MethodInvocation:getOperator
+MethodInvocation:convertConditionToSqlNode
+MethodInvocation:createCall
+MethodInvocation:stripCastFromString
+MethodInvocation:getOperands
+MethodInvocation:getOperator
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+MethodInvocation:getIndex
+MethodInvocation:createCall
+MethodInvocation:field
+MethodInvocation:getIndex
+MethodInvocation:field
+MethodInvocation:getIndex
+MethodInvocation:getIndex
+MethodInvocation:getIndex
+MethodInvocation:createCall
+MethodInvocation:reverseOperatorDirection
+MethodInvocation:field
+MethodInvocation:getIndex
+MethodInvocation:field
+MethodInvocation:getIndex
+MethodInvocation:joinContext
+MethodInvocation:implementor
+MethodInvocation:toSql
+MethodInvocation:getOperands
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getOperator
+MethodInvocation:get
+MethodInvocation:getIndex
+MethodInvocation:createCall
+MethodInvocation:field
+MethodInvocation:getIndex
+MethodInvocation:createCall
+MethodInvocation:field
+MethodInvocation:getIndex
+MethodInvocation:joinContext
+MethodInvocation:implementor
+MethodInvocation:toSql
+Method-name:stripCastFromString
+Method-returnType:RexNode
+Method-parameters:[RexNode node, SqlDialect dialect]
+MethodInvocation:getKind
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getKind
+MethodInvocation:getKind
+MethodInvocation:supportsImplicitTypeCoercion
+MethodInvocation:get
+MethodInvocation:getOperands
+MethodInvocation:clone
+MethodInvocation:getType
+MethodInvocation:of
+MethodInvocation:getKind
+MethodInvocation:getKind
+MethodInvocation:supportsImplicitTypeCoercion
+MethodInvocation:get
+MethodInvocation:getOperands
+MethodInvocation:clone
+MethodInvocation:getType
+MethodInvocation:of
+Method-name:reverseOperatorDirection
+Method-returnType:SqlOperator
+Method-parameters:[SqlOperator op]
+Method-name:joinType
+Method-returnType:JoinType
+Method-parameters:[JoinRelType joinType]
+Method-name:result
+Method-returnType:Result
+Method-parameters:[SqlNode node, Collection<Clause> clauses, RelNode rel, Map<String,RelDataType> aliases]
+Method-name:adjustedRowType
+Method-returnType:RelDataType
+Method-parameters:[RelNode rel, SqlNode node]
+MethodInvocation:getRowType
+MethodInvocation:getKind
+MethodInvocation:adjustedRowType
+MethodInvocation:get
+MethodInvocation:getOperandList
+MethodInvocation:getSelectList
+MethodInvocation:builder
+MethodInvocation:getTypeFactory
+MethodInvocation:getCluster
+MethodInvocation:forEach
+MethodInvocation:getFieldList
+MethodInvocation:add
+MethodInvocation:first
+MethodInvocation:getAlias
+MethodInvocation:getName
+MethodInvocation:getType
+MethodInvocation:build
+MethodInvocation:getOperandList
+MethodInvocation:size
+MethodInvocation:builder
+MethodInvocation:getTypeFactory
+MethodInvocation:getCluster
+MethodInvocation:forEach
+MethodInvocation:skip
+MethodInvocation:getFieldList
+MethodInvocation:add
+MethodInvocation:toString
+MethodInvocation:getType
+MethodInvocation:build
+Method-name:result
+Method-returnType:Result
+Method-parameters:[SqlNode join, Result leftResult, Result rightResult]
+MethodInvocation:builder
+MethodInvocation:getKind
+MethodInvocation:collectAliases
+MethodInvocation:iterator
+MethodInvocation:concat
+MethodInvocation:values
+MethodInvocation:values
+MethodInvocation:list
+MethodInvocation:build
+MethodInvocation:list
+Method-name:collectAliases
+Method-returnType:void
+Method-parameters:[ImmutableMap.Builder<String,RelDataType> builder, SqlNode node, Iterator<RelDataType> aliases]
+Method-name:isAnon
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:wrapSelect
+Method-returnType:SqlSelect
+Method-parameters:[SqlNode node]
+Method-name:requiresAlias
+Method-returnType:boolean
+Method-parameters:[SqlNode node]
+MethodInvocation:requiresAliasForFromItems
+MethodInvocation:getKind
+MethodInvocation:hasImplicitTableAlias
+Class:Context
+Field:dialect
+Field:fieldCount
+Field:ignoreCast
+Method-name:Context
+Method-returnType:null
+Method-parameters:[SqlDialect dialect, int fieldCount]
+Method-name:Context
+Method-returnType:null
+Method-parameters:[SqlDialect dialect, int fieldCount, boolean ignoreCast]
+FieldAccess:dialect
+FieldAccess:fieldCount
+FieldAccess:ignoreCast
+Method-name:field
+Method-returnType:SqlNode
+Method-parameters:[int ordinal]
+Method-name:orderField
+Method-returnType:SqlNode
+Method-parameters:[int ordinal]
+MethodInvocation:field
+Method-name:toSql
+Method-returnType:SqlNode
+Method-parameters:[RexProgram program, RexNode rex]
+Method-name:toSql
+Method-returnType:SqlNode
+Method-parameters:[RexWindowBound rexWindowBound]
+Method-name:toSql
+Method-returnType:List<SqlNode>
+Method-parameters:[Window.Group group, ImmutableList<RexLiteral> constants, int inputFieldCount]
+MethodInvocation:add
+MethodInvocation:field
+MethodInvocation:getFieldCollations
+MethodInvocation:addOrderItem
+MethodInvocation:createBoolean
+MethodInvocation:getOperator
+MethodInvocation:create
+MethodInvocation:allowsFraming
+MethodInvocation:createSqlWindowBound
+MethodInvocation:createSqlWindowBound
+MethodInvocation:setLowerBound
+MethodInvocation:setUpperBound
+Method-name:visitInputRef
+Method-returnType:RexNode
+Method-parameters:[RexInputRef inputRef]
+MethodInvocation:getIndex
+MethodInvocation:get
+MethodInvocation:accept
+MethodInvocation:toSql
+MethodInvocation:add
+MethodInvocation:createOverCall
+Method-name:getAliasContext
+Method-returnType:Context
+Method-parameters:[RexCorrelVariable variable]
+Method-name:toSql
+Method-returnType:SqlCall
+Method-parameters:[RexProgram program, RexOver rexOver]
+MethodInvocation:getWindow
+MethodInvocation:toSql
+MethodInvocation:list
+MethodInvocation:addOrderItem
+MethodInvocation:createBoolean
+MethodInvocation:isRows
+MethodInvocation:getAggOperator
+MethodInvocation:allowsFraming
+MethodInvocation:createSqlWindowBound
+MethodInvocation:getLowerBound
+MethodInvocation:createSqlWindowBound
+MethodInvocation:getUpperBound
+MethodInvocation:create
+MethodInvocation:toSql
+MethodInvocation:getOperands
+MethodInvocation:createOverCall
+Method-name:createOverCall
+Method-returnType:SqlCall
+Method-parameters:[SqlAggFunction op, List<SqlNode> operands, SqlWindow window]
+MethodInvocation:createOverCall
+MethodInvocation:createCall
+MethodInvocation:createExactNumeric
+MethodInvocation:createCall
+MethodInvocation:createCall
+Method-name:toSql
+Method-returnType:SqlNode
+Method-parameters:[RexProgram program, RexFieldCollation rfc]
+MethodInvocation:toSql
+MethodInvocation:getDirection
+MethodInvocation:createCall
+MethodInvocation:getNullDirection
+MethodInvocation:defaultNullDirection
+MethodInvocation:getDirection
+MethodInvocation:getNullDirection
+MethodInvocation:createCall
+MethodInvocation:createCall
+Method-name:createSqlWindowBound
+Method-returnType:SqlNode
+Method-parameters:[RexWindowBound rexWindowBound]
+MethodInvocation:isCurrentRow
+MethodInvocation:createCurrentRow
+MethodInvocation:isPreceding
+MethodInvocation:isUnbounded
+MethodInvocation:createUnboundedPreceding
+MethodInvocation:toSql
+MethodInvocation:getOffset
+MethodInvocation:createPreceding
+MethodInvocation:isFollowing
+MethodInvocation:isUnbounded
+MethodInvocation:createUnboundedFollowing
+MethodInvocation:toSql
+MethodInvocation:getOffset
+MethodInvocation:createFollowing
+Method-name:createLeftCall
+Method-returnType:SqlNode
+Method-parameters:[SqlOperator op, List<SqlNode> nodeList]
+MethodInvocation:createCall
+MethodInvocation:subList
+MethodInvocation:size
+MethodInvocation:createCall
+MethodInvocation:of
+MethodInvocation:get
+Method-name:createBalancedCall
+Method-returnType:SqlNode
+Method-parameters:[SqlOperator op, List<SqlNode> nodeList, int start, int end]
+Method-name:toSql
+Method-returnType:List<SqlNode>
+Method-parameters:[RexProgram program, List<RexNode> operandList]
+MethodInvocation:add
+MethodInvocation:toSql
+Method-name:fieldList
+Method-returnType:List<SqlNode>
+Method-parameters:[]
+Method-name:get
+Method-returnType:SqlNode
+Method-parameters:[int index]
+MethodInvocation:field
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+Method-name:addOrderItem
+Method-returnType:void
+Method-parameters:[List<SqlNode> orderByList, RelFieldCollation field]
+MethodInvocation:emulateNullDirection
+MethodInvocation:field
+MethodInvocation:getFieldIndex
+MethodInvocation:isDescending
+MethodInvocation:add
+MethodInvocation:getFieldIndex
+MethodInvocation:getDirection
+MethodInvocation:add
+MethodInvocation:toSql
+Method-name:addOrderItem
+Method-returnType:void
+Method-parameters:[List<SqlNode> orderByList, RexProgram program, RexFieldCollation field]
+MethodInvocation:toSql
+MethodInvocation:getNullDirection
+MethodInvocation:getNullDirection
+MethodInvocation:emulateNullDirection
+MethodInvocation:isDescending
+MethodInvocation:getDirection
+MethodInvocation:add
+MethodInvocation:getDirection
+MethodInvocation:createCall
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:toSql
+Method-name:toSql
+Method-returnType:SqlNode
+Method-parameters:[AggregateCall aggCall]
+MethodInvocation:getAggregation
+MethodInvocation:list
+MethodInvocation:getArgList
+MethodInvocation:add
+MethodInvocation:field
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:isDistinct
+MethodInvocation:symbol
+MethodInvocation:toArray
+MethodInvocation:list
+MethodInvocation:getFieldCollations
+MethodInvocation:addOrderItem
+MethodInvocation:withOrder
+MethodInvocation:createCall
+MethodInvocation:createCall
+MethodInvocation:createExactNumeric
+MethodInvocation:withOrder
+MethodInvocation:createCall
+Method-name:withOrder
+Method-returnType:SqlNode
+Method-parameters:[SqlCall call, SqlNodeList orderList]
+MethodInvocation:size
+MethodInvocation:createCall
+Method-name:toSql
+Method-returnType:SqlNode
+Method-parameters:[RelFieldCollation collation]
+MethodInvocation:orderField
+MethodInvocation:getFieldIndex
+MethodInvocation:getDirection
+MethodInvocation:createCall
+MethodInvocation:defaultNullDirection
+MethodInvocation:createCall
+MethodInvocation:createCall
+Method-name:implementor
+Method-returnType:SqlImplementor
+Method-parameters:[]
+Class:SimpleContext
+Field:field
+Method-name:SimpleContext
+Method-returnType:null
+Method-parameters:[SqlDialect dialect, IntFunction<SqlNode> field]
+FieldAccess:field
+Method-name:field
+Method-returnType:SqlNode
+Method-parameters:[int ordinal]
+MethodInvocation:apply
+Class:BaseContext
+Method-name:BaseContext
+Method-returnType:null
+Method-parameters:[SqlDialect dialect, int fieldCount]
+Method-name:getAliasContext
+Method-returnType:Context
+Method-parameters:[RexCorrelVariable variable]
+MethodInvocation:get
+Method-name:implementor
+Method-returnType:SqlImplementor
+Method-parameters:[]
+Method-name:computeFieldCount
+Method-returnType:int
+Method-parameters:[Map<String,RelDataType> aliases]
+MethodInvocation:values
+MethodInvocation:getFieldCount
+Method-name:aliasContext
+Method-returnType:Context
+Method-parameters:[Map<String,RelDataType> aliases, boolean qualified]
+Method-name:joinContext
+Method-returnType:Context
+Method-parameters:[Context leftContext, Context rightContext]
+Method-name:matchRecognizeContext
+Method-returnType:Context
+Method-parameters:[Context context]
+FieldAccess:aliases
+Method-name:tableFunctionScanContext
+Method-returnType:Context
+Method-parameters:[List<SqlNode> inputSqlNodes]
+Class:MatchRecognizeContext
+Method-name:MatchRecognizeContext
+Method-returnType:null
+Method-parameters:[SqlDialect dialect, Map<String,RelDataType> aliases]
+Method-name:toSql
+Method-returnType:SqlNode
+Method-parameters:[RexProgram program, RexNode rex]
+MethodInvocation:getKind
+MethodInvocation:getFamily
+MethodInvocation:getTypeName
+MethodInvocation:stringValue
+Class:AliasContext
+Field:qualified
+Field:aliases
+Method-name:AliasContext
+Method-returnType:null
+Method-parameters:[SqlDialect dialect, Map<String,RelDataType> aliases, boolean qualified]
+MethodInvocation:computeFieldCount
+FieldAccess:aliases
+FieldAccess:qualified
+Method-name:field
+Method-returnType:SqlNode
+Method-parameters:[int ordinal]
+MethodInvocation:entrySet
+MethodInvocation:getFieldList
+MethodInvocation:getValue
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:of
+MethodInvocation:getName
+MethodInvocation:of
+MethodInvocation:getKey
+MethodInvocation:getName
+MethodInvocation:size
+Class:JoinContext
+Field:leftContext
+Field:rightContext
+Method-name:JoinContext
+Method-returnType:null
+Method-parameters:[SqlDialect dialect, Context leftContext, Context rightContext]
+FieldAccess:leftContext
+FieldAccess:rightContext
+Method-name:field
+Method-returnType:SqlNode
+Method-parameters:[int ordinal]
+MethodInvocation:field
+MethodInvocation:field
+Class:TableFunctionScanContext
+Field:inputSqlNodes
+Method-name:TableFunctionScanContext
+Method-returnType:null
+Method-parameters:[SqlDialect dialect, List<SqlNode> inputSqlNodes]
+MethodInvocation:size
+FieldAccess:inputSqlNodes
+Method-name:field
+Method-returnType:SqlNode
+Method-parameters:[int ordinal]
+MethodInvocation:get
+Class:Result
+Field:node
+Field:neededAlias
+Field:neededType
+Field:aliases
+Field:clauses
+Field:anon
+Method-name:Result
+Method-returnType:null
+Method-parameters:[SqlNode node, Collection<Clause> clauses, String neededAlias, RelDataType neededType, Map<String,RelDataType> aliases]
+Method-name:Result
+Method-returnType:null
+Method-parameters:[SqlNode node, Collection<Clause> clauses, String neededAlias, RelDataType neededType, Map<String,RelDataType> aliases, boolean anon]
+FieldAccess:node
+FieldAccess:neededAlias
+FieldAccess:neededType
+FieldAccess:aliases
+FieldAccess:clauses
+MethodInvocation:list
+FieldAccess:anon
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[RelNode rel, Clause... clauses]
+MethodInvocation:needNewSubQuery
+MethodInvocation:list
+MethodInvocation:subSelect
+MethodInvocation:asSelect
+MethodInvocation:addAll
+FieldAccess:clauses
+MethodInvocation:appendAll
+MethodInvocation:getSelectList
+MethodInvocation:size
+Method-name:field
+Method-returnType:SqlNode
+Method-parameters:[int ordinal]
+MethodInvocation:get
+MethodInvocation:getKind
+MethodInvocation:operand
+Method-name:orderField
+Method-returnType:SqlNode
+Method-parameters:[int ordinal]
+MethodInvocation:field
+MethodInvocation:isSimple
+MethodInvocation:getSimple
+MethodInvocation:zip
+MethodInvocation:getAlias
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:createExactNumeric
+MethodInvocation:toString
+MethodInvocation:hasImplicitTableAlias
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:containsKey
+MethodInvocation:of
+MethodInvocation:getRowType
+MethodInvocation:getInput
+MethodInvocation:aliasContext
+MethodInvocation:aliasContext
+MethodInvocation:isAnon
+Method-name:needNewSubQuery
+Method-returnType:boolean
+Method-parameters:[RelNode rel, Clause[] clauses]
+MethodInvocation:maxClause
+MethodInvocation:of
+MethodInvocation:ordinal
+MethodInvocation:ordinal
+MethodInvocation:contains
+MethodInvocation:contains
+FieldAccess:clauses
+MethodInvocation:isHavingAlias
+MethodInvocation:getConformance
+MethodInvocation:containsOver
+MethodInvocation:getProjects
+MethodInvocation:hasNestedAggregations
+MethodInvocation:supportsNestedAggregations
+MethodInvocation:contains
+FieldAccess:clauses
+MethodInvocation:isNotGrandTotal
+Method-name:hasNestedAggregations
+Method-returnType:boolean
+Method-parameters:[Aggregate rel]
+MethodInvocation:getSelectList
+MethodInvocation:getAggCallList
+MethodInvocation:addAll
+MethodInvocation:getArgList
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getOperands
+MethodInvocation:getOperator
+Method-name:maxClause
+Method-returnType:Clause
+Method-parameters:[]
+Method-name:asFrom
+Method-returnType:SqlNode
+Method-parameters:[]
+MethodInvocation:getKind
+MethodInvocation:toArray
+MethodInvocation:getOperandList
+MethodInvocation:createCall
+MethodInvocation:createCall
+Method-name:subSelect
+Method-returnType:SqlSelect
+Method-parameters:[]
+MethodInvocation:wrapSelect
+MethodInvocation:asFrom
+Method-name:asSelect
+Method-returnType:SqlSelect
+Method-parameters:[]
+MethodInvocation:hasImplicitTableAlias
+MethodInvocation:wrapSelect
+MethodInvocation:asFrom
+MethodInvocation:wrapSelect
+Method-name:stripTrivialAliases
+Method-returnType:void
+Method-parameters:[SqlNode node]
+MethodInvocation:getKind
+MethodInvocation:getSelectList
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getKind
+MethodInvocation:operand
+MethodInvocation:startsWith
+MethodInvocation:toLowerCase
+MethodInvocation:getSimple
+MethodInvocation:set
+MethodInvocation:operand
+MethodInvocation:getOperandList
+MethodInvocation:stripTrivialAliases
+Method-name:maybeStrip
+Method-returnType:SqlNode
+Method-parameters:[SqlNode node]
+MethodInvocation:stripTrivialAliases
+Method-name:asStatement
+Method-returnType:SqlNode
+Method-parameters:[]
+MethodInvocation:getKind
+MethodInvocation:maybeStrip
+MethodInvocation:maybeStrip
+MethodInvocation:asSelect
+Method-name:asQueryOrValues
+Method-returnType:SqlNode
+Method-parameters:[]
+MethodInvocation:getKind
+MethodInvocation:maybeStrip
+MethodInvocation:maybeStrip
+MethodInvocation:asSelect
+Method-name:qualifiedContext
+Method-returnType:Context
+Method-parameters:[]
+MethodInvocation:aliasContext
+Method-name:resetAlias
+Method-returnType:Result
+Method-parameters:[]
+MethodInvocation:of
+Method-name:resetAlias
+Method-returnType:Result
+Method-parameters:[String alias, RelDataType type]
+MethodInvocation:of
+Method-name:withAnon
+Method-returnType:Result
+Method-parameters:[boolean anon]
+FieldAccess:anon
+Class:Builder
+Field:rel
+Field:clauses
+Field:select
+Field:context
+Field:anon
+Field:aliases
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[RelNode rel, List<Clause> clauses, SqlSelect select, Context context, boolean anon, @Nullable Map<String,RelDataType> aliases]
+FieldAccess:rel
+MethodInvocation:requireNonNull
+FieldAccess:clauses
+MethodInvocation:requireNonNull
+FieldAccess:select
+MethodInvocation:requireNonNull
+FieldAccess:context
+MethodInvocation:requireNonNull
+FieldAccess:anon
+FieldAccess:aliases
+Method-name:setSelect
+Method-returnType:void
+Method-parameters:[SqlNodeList nodeList]
+MethodInvocation:setSelectList
+Method-name:setWhere
+Method-returnType:void
+Method-parameters:[SqlNode node]
+Method-name:setGroupBy
+Method-returnType:void
+Method-parameters:[SqlNodeList nodeList]
+Method-name:setHaving
+Method-returnType:void
+Method-parameters:[SqlNode node]
+Method-name:setOrderBy
+Method-returnType:void
+Method-parameters:[SqlNodeList nodeList]
+Method-name:setFetch
+Method-returnType:void
+Method-parameters:[SqlNode fetch]
+Method-name:setOffset
+Method-returnType:void
+Method-parameters:[SqlNode offset]
+Method-name:addOrderItem
+Method-returnType:void
+Method-parameters:[List<SqlNode> orderByList, RelFieldCollation field]
+MethodInvocation:addOrderItem
+Method-name:result
+Method-returnType:Result
+Method-parameters:[]
+MethodInvocation:withAnon
+MethodInvocation:result
+Field:Clause

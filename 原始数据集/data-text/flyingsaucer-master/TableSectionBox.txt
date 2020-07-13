@@ -1,0 +1,233 @@
+Class:TableSectionBox
+Field:_grid
+Field:_needCellWidthCalc
+Field:_needCellRecalc
+Field:_footer
+Field:_header
+Field:_capturedOriginalAbsY
+Field:_originalAbsY
+Method-name:TableSectionBox
+Method-returnType:null
+Method-parameters:[]
+Method-name:copyOf
+Method-returnType:BlockBox
+Method-parameters:[]
+MethodInvocation:setStyle
+MethodInvocation:getStyle
+MethodInvocation:setElement
+MethodInvocation:getElement
+Method-name:getGrid
+Method-returnType:List
+Method-parameters:[]
+Method-name:setGrid
+Method-returnType:void
+Method-parameters:[List grid]
+Method-name:extendGridToColumnCount
+Method-returnType:void
+Method-parameters:[int columnCount]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:extendToColumnCount
+Method-name:splitColumn
+Method-returnType:void
+Method-parameters:[int pos]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:splitColumn
+Method-name:recalcCells
+Method-returnType:void
+Method-parameters:[LayoutContext c]
+MethodInvocation:clear
+MethodInvocation:ensureChildren
+MethodInvocation:getChildIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:ensureChildren
+MethodInvocation:getChildIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:addCell
+Method-name:calcBorders
+Method-returnType:void
+Method-parameters:[LayoutContext c]
+MethodInvocation:ensureChildren
+MethodInvocation:getChildIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:ensureChildren
+MethodInvocation:getChildIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:calcCollapsedBorder
+Method-name:cellAt
+Method-returnType:TableCellBox
+Method-parameters:[int row, int col]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:getRow
+MethodInvocation:get
+MethodInvocation:getRow
+Method-name:setCellAt
+Method-returnType:void
+Method-parameters:[int row, int col, TableCellBox cell]
+MethodInvocation:set
+MethodInvocation:getRow
+MethodInvocation:get
+Method-name:ensureRows
+Method-returnType:void
+Method-parameters:[int numRows]
+MethodInvocation:size
+MethodInvocation:numEffCols
+MethodInvocation:getTable
+MethodInvocation:extendToColumnCount
+MethodInvocation:add
+Method-name:getTable
+Method-returnType:TableBox
+Method-parameters:[]
+MethodInvocation:getParent
+Method-name:layoutChildren
+Method-returnType:void
+Method-parameters:[LayoutContext c, int contentStart]
+MethodInvocation:isNeedCellRecalc
+MethodInvocation:recalcCells
+MethodInvocation:setNeedCellRecalc
+MethodInvocation:isNeedCellWidthCalc
+MethodInvocation:setCellWidths
+MethodInvocation:setNeedCellWidthCalc
+Method-name:addCell
+Method-returnType:void
+Method-parameters:[TableRowBox row, TableCellBox cell, int cRow]
+MethodInvocation:getRowSpan
+MethodInvocation:getStyle
+MethodInvocation:getColSpan
+MethodInvocation:getStyle
+MethodInvocation:getColumns
+MethodInvocation:getTable
+MethodInvocation:size
+MethodInvocation:ensureRows
+MethodInvocation:cellAt
+MethodInvocation:size
+MethodInvocation:getColumns
+MethodInvocation:getTable
+MethodInvocation:appendColumn
+MethodInvocation:getTable
+MethodInvocation:get
+MethodInvocation:getSpan
+MethodInvocation:splitColumn
+MethodInvocation:getTable
+MethodInvocation:get
+MethodInvocation:getSpan
+MethodInvocation:cellAt
+MethodInvocation:setCellAt
+MethodInvocation:setRow
+MethodInvocation:setCol
+MethodInvocation:effColToCol
+MethodInvocation:getTable
+Method-name:reset
+Method-returnType:void
+Method-parameters:[LayoutContext c]
+MethodInvocation:clear
+MethodInvocation:setNeedCellWidthCalc
+MethodInvocation:setNeedCellRecalc
+MethodInvocation:setCapturedOriginalAbsY
+Method-name:setCellWidths
+Method-returnType:void
+Method-parameters:[LayoutContext c]
+MethodInvocation:getColumnPos
+MethodInvocation:getTable
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getRow
+MethodInvocation:getBorderHSpacing
+MethodInvocation:getStyle
+MethodInvocation:getTable
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getColSpan
+MethodInvocation:getStyle
+MethodInvocation:size
+MethodInvocation:spanOfEffCol
+MethodInvocation:getTable
+MethodInvocation:setLayoutWidth
+MethodInvocation:setX
+Method-name:isAutoHeight
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:numRows
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:isSkipWhenCollapsingMargins
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:paintBorder
+Method-returnType:void
+Method-parameters:[RenderingContext c]
+Method-name:paintBackground
+Method-returnType:void
+Method-parameters:[RenderingContext c]
+Method-name:getLastRow
+Method-returnType:TableRowBox
+Method-parameters:[]
+MethodInvocation:getChildCount
+MethodInvocation:getChild
+MethodInvocation:getChildCount
+Method-name:isNeedCellWidthCalc
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setNeedCellWidthCalc
+Method-returnType:void
+Method-parameters:[boolean needCellWidthCalc]
+Method-name:isNeedCellRecalc
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setNeedCellRecalc
+Method-returnType:void
+Method-parameters:[boolean needCellRecalc]
+Method-name:layout
+Method-returnType:void
+Method-parameters:[LayoutContext c, int contentStart]
+MethodInvocation:isPrint
+MethodInvocation:isHeader
+MethodInvocation:isFooter
+MethodInvocation:isPaginateTable
+MethodInvocation:getStyle
+MethodInvocation:getTable
+MethodInvocation:setNoPageBreak
+MethodInvocation:getNoPageBreak
+MethodInvocation:setNoPageBreak
+MethodInvocation:getNoPageBreak
+Method-name:isFooter
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setFooter
+Method-returnType:void
+Method-parameters:[boolean footer]
+Method-name:isHeader
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setHeader
+Method-returnType:void
+Method-parameters:[boolean header]
+Method-name:isCapturedOriginalAbsY
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setCapturedOriginalAbsY
+Method-returnType:void
+Method-parameters:[boolean capturedOriginalAbsY]
+Method-name:getOriginalAbsY
+Method-returnType:int
+Method-parameters:[]
+Method-name:setOriginalAbsY
+Method-returnType:void
+Method-parameters:[int originalAbsY]
+Method-name:sectionAbove
+Method-returnType:TableSectionBox
+Method-parameters:[boolean skipEmptySections, TableBox tableBox]
+MethodInvocation:getPreviousSibling
+MethodInvocation:numRows
+MethodInvocation:getPreviousSibling

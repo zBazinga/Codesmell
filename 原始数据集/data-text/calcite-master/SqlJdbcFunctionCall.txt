@@ -1,0 +1,160 @@
+Class:SqlJdbcFunctionCall
+Field:NUMERIC_FUNCTIONS
+MethodInvocation:constructFuncList
+Field:STRING_FUNCTIONS
+MethodInvocation:constructFuncList
+Field:TIME_DATE_FUNCTIONS
+MethodInvocation:constructFuncList
+Field:SYSTEM_FUNCTIONS
+MethodInvocation:constructFuncList
+Field:jdbcName
+Field:lookupMakeCallObj
+Field:lookupCall
+Field:thisOperands
+Method-name:SqlJdbcFunctionCall
+Method-returnType:null
+Method-parameters:[String name]
+MethodInvocation:lookup
+Method-name:constructFuncList
+Method-returnType:String
+Method-parameters:[String... functionNames]
+MethodInvocation:lookup
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:createCall
+Method-returnType:SqlCall
+Method-parameters:[SqlLiteral functionQualifier, SqlParserPos pos, SqlNode... operands]
+Method-name:rewriteCall
+Method-returnType:SqlNode
+Method-parameters:[SqlValidator validator, SqlCall call]
+MethodInvocation:newValidationError
+MethodInvocation:functionUndefined
+MethodInvocation:getName
+MethodInvocation:rewriteCall
+MethodInvocation:getOperator
+Method-name:getLookupCall
+Method-returnType:SqlCall
+Method-parameters:[]
+MethodInvocation:createCall
+Method-name:getAllowedSignatures
+Method-returnType:String
+Method-parameters:[String name]
+MethodInvocation:getAllowedSignatures
+MethodInvocation:getOperator
+Method-name:deriveType
+Method-returnType:RelDataType
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope, SqlCall call]
+MethodInvocation:getOperandList
+MethodInvocation:deriveType
+MethodInvocation:setValidatedNodeType
+MethodInvocation:validateOperands
+Method-name:inferReturnType
+Method-returnType:RelDataType
+Method-parameters:[SqlOperatorBinding opBinding]
+MethodInvocation:newValidationError
+MethodInvocation:functionUndefined
+MethodInvocation:getName
+MethodInvocation:isValidArgCount
+MethodInvocation:newValidationError
+MethodInvocation:wrongNumberOfParam
+MethodInvocation:getName
+MethodInvocation:getLookupCall
+MethodInvocation:getValidator
+MethodInvocation:getScope
+MethodInvocation:getOperator
+MethodInvocation:checkOperandTypes
+MethodInvocation:newValidationSignatureError
+MethodInvocation:validateOperands
+MethodInvocation:getValidator
+MethodInvocation:getScope
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlCall call, int leftPrec, int rightPrec]
+MethodInvocation:print
+MethodInvocation:print
+MethodInvocation:startList
+MethodInvocation:getOperandList
+MethodInvocation:sep
+MethodInvocation:unparse
+MethodInvocation:endList
+MethodInvocation:print
+Method-name:getNumericFunctions
+Method-returnType:String
+Method-parameters:[]
+Method-name:getStringFunctions
+Method-returnType:String
+Method-parameters:[]
+Method-name:getTimeDateFunctions
+Method-returnType:String
+Method-parameters:[]
+Method-name:getSystemFunctions
+Method-returnType:String
+Method-parameters:[]
+Method-name:createCall
+Method-returnType:SqlCall
+Method-parameters:[SqlParserPos pos, SqlNode... operands]
+Method-name:getOperator
+Method-returnType:SqlOperator
+Method-parameters:[]
+Method-name:isValidArgCount
+Method-returnType:String
+Method-parameters:[SqlCallBinding binding]
+Class:SimpleMakeCall
+Field:operator
+Method-name:SimpleMakeCall
+Method-returnType:null
+Method-parameters:[SqlOperator operator]
+FieldAccess:operator
+Method-name:getOperator
+Method-returnType:SqlOperator
+Method-parameters:[]
+Method-name:createCall
+Method-returnType:SqlCall
+Method-parameters:[SqlParserPos pos, SqlNode... operands]
+MethodInvocation:createCall
+Method-name:isValidArgCount
+Method-returnType:String
+Method-parameters:[SqlCallBinding binding]
+Class:PermutingMakeCall
+Field:order
+Method-name:PermutingMakeCall
+Method-returnType:null
+Method-parameters:[SqlOperator operator, int[] order]
+FieldAccess:order
+MethodInvocation:requireNonNull
+Method-name:createCall
+Method-returnType:SqlCall
+Method-parameters:[SqlParserPos pos, SqlNode... operands]
+MethodInvocation:reorder
+Method-name:isValidArgCount
+Method-returnType:String
+Method-parameters:[SqlCallBinding binding]
+MethodInvocation:getOperandCount
+MethodInvocation:getArgCountMismatchMsg
+Method-name:getArgCountMismatchMsg
+Method-returnType:String
+Method-parameters:[int... possible]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:reorder
+Method-returnType:SqlNode[]
+Method-parameters:[SqlNode[] operands]
+Class:JdbcToInternalLookupTable
+Field:INSTANCE
+Field:map
+Method-name:JdbcToInternalLookupTable
+Method-returnType:null
+Method-parameters:[]
+Method-name:trim
+Method-returnType:MakeCall
+Method-parameters:[SqlTrimFunction.Flag flag]
+Method-name:simple
+Method-returnType:MakeCall
+Method-parameters:[SqlOperator operator]
+Method-name:lookup
+Method-returnType:MakeCall
+Method-parameters:[String name]
+MethodInvocation:get

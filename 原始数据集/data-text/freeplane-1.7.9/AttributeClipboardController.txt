@@ -1,0 +1,47 @@
+Class:AttributeClipboardController
+Field:PRIORITY
+Method-name:canCopy
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:getAttributeSelection
+Method-name:copy
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getAttributeSelection
+MethodInvocation:copy
+MethodInvocation:setClipboardContents
+MethodInvocation:getController
+Method-name:getPriority
+Method-returnType:int
+Method-parameters:[]
+Method-name:copy
+Method-returnType:Transferable
+Method-parameters:[final AttributeSelection selection]
+MethodInvocation:toAttributesContent
+MethodInvocation:toStringContent
+Method-name:toStringContent
+Method-returnType:String
+Method-parameters:[AttributeSelection selection]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:nodeAttributeStream
+MethodInvocation:joining
+Method-name:toAttributesContent
+Method-returnType:String
+Method-parameters:[AttributeSelection selection]
+MethodInvocation:forEach
+MethodInvocation:map
+MethodInvocation:nodeAttributeStream
+MethodInvocation:write
+MethodInvocation:toString
+Method-name:toAttributesContent
+Method-returnType:XMLElement
+Method-parameters:[NodeAttribute attribute]
+MethodInvocation:setAttribute
+MethodInvocation:name
+MethodInvocation:setAttribute
+MethodInvocation:name
+MethodInvocation:value
+MethodInvocation:toSpec
+MethodInvocation:setAttribute

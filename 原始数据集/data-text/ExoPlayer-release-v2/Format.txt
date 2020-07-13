@@ -1,0 +1,373 @@
+Class:Format
+Field:NO_VALUE
+Field:OFFSET_SAMPLE_RELATIVE
+Field:id
+Field:label
+Field:selectionFlags
+Field:roleFlags
+Field:bitrate
+Field:codecs
+Field:metadata
+Field:containerMimeType
+Field:sampleMimeType
+Field:maxInputSize
+Field:initializationData
+Field:drmInitData
+Field:subsampleOffsetUs
+Field:width
+Field:height
+Field:frameRate
+Field:rotationDegrees
+Field:pixelWidthHeightRatio
+Field:stereoMode
+Field:projectionData
+Field:colorInfo
+Field:channelCount
+Field:sampleRate
+Field:pcmEncoding
+Field:encoderDelay
+Field:encoderPadding
+Field:language
+Field:accessibilityChannel
+Field:exoMediaCryptoType
+Field:hashCode
+Method-name:createVideoContainerFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String containerMimeType, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, int width, int height, float frameRate, @Nullable List<byte[]> initializationData, @C.SelectionFlags int selectionFlags]
+MethodInvocation:createVideoContainerFormat
+Method-name:createVideoContainerFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String label, @Nullable String containerMimeType, @Nullable String sampleMimeType, @Nullable String codecs, @Nullable Metadata metadata, int bitrate, int width, int height, float frameRate, @Nullable List<byte[]> initializationData, @C.SelectionFlags int selectionFlags, @C.RoleFlags int roleFlags]
+Method-name:createVideoSampleFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, int maxInputSize, int width, int height, float frameRate, @Nullable List<byte[]> initializationData, @Nullable DrmInitData drmInitData]
+MethodInvocation:createVideoSampleFormat
+Method-name:createVideoSampleFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, int maxInputSize, int width, int height, float frameRate, @Nullable List<byte[]> initializationData, int rotationDegrees, float pixelWidthHeightRatio, @Nullable DrmInitData drmInitData]
+MethodInvocation:createVideoSampleFormat
+Method-name:createVideoSampleFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, int maxInputSize, int width, int height, float frameRate, @Nullable List<byte[]> initializationData, int rotationDegrees, float pixelWidthHeightRatio, @Nullable byte[] projectionData, @C.StereoMode int stereoMode, @Nullable ColorInfo colorInfo, @Nullable DrmInitData drmInitData]
+Method-name:createAudioContainerFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String containerMimeType, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, int channelCount, int sampleRate, @Nullable List<byte[]> initializationData, @C.SelectionFlags int selectionFlags, @Nullable String language]
+MethodInvocation:createAudioContainerFormat
+Method-name:createAudioContainerFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String label, @Nullable String containerMimeType, @Nullable String sampleMimeType, @Nullable String codecs, @Nullable Metadata metadata, int bitrate, int channelCount, int sampleRate, @Nullable List<byte[]> initializationData, @C.SelectionFlags int selectionFlags, @C.RoleFlags int roleFlags, @Nullable String language]
+Method-name:createAudioSampleFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, int maxInputSize, int channelCount, int sampleRate, @Nullable List<byte[]> initializationData, @Nullable DrmInitData drmInitData, @C.SelectionFlags int selectionFlags, @Nullable String language]
+MethodInvocation:createAudioSampleFormat
+Method-name:createAudioSampleFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, int maxInputSize, int channelCount, int sampleRate, @C.PcmEncoding int pcmEncoding, @Nullable List<byte[]> initializationData, @Nullable DrmInitData drmInitData, @C.SelectionFlags int selectionFlags, @Nullable String language]
+MethodInvocation:createAudioSampleFormat
+Method-name:createAudioSampleFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, int maxInputSize, int channelCount, int sampleRate, @C.PcmEncoding int pcmEncoding, int encoderDelay, int encoderPadding, @Nullable List<byte[]> initializationData, @Nullable DrmInitData drmInitData, @C.SelectionFlags int selectionFlags, @Nullable String language, @Nullable Metadata metadata]
+Method-name:createTextContainerFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String label, @Nullable String containerMimeType, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, @C.SelectionFlags int selectionFlags, @C.RoleFlags int roleFlags, @Nullable String language]
+MethodInvocation:createTextContainerFormat
+Method-name:createTextContainerFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String label, @Nullable String containerMimeType, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, @C.SelectionFlags int selectionFlags, @C.RoleFlags int roleFlags, @Nullable String language, int accessibilityChannel]
+Method-name:createTextSampleFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String sampleMimeType, @C.SelectionFlags int selectionFlags, @Nullable String language]
+MethodInvocation:createTextSampleFormat
+Method-name:createTextSampleFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String sampleMimeType, @C.SelectionFlags int selectionFlags, @Nullable String language, @Nullable DrmInitData drmInitData]
+MethodInvocation:createTextSampleFormat
+MethodInvocation:emptyList
+Method-name:createTextSampleFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, @C.SelectionFlags int selectionFlags, @Nullable String language, int accessibilityChannel, @Nullable DrmInitData drmInitData]
+MethodInvocation:createTextSampleFormat
+MethodInvocation:emptyList
+Method-name:createTextSampleFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, @C.SelectionFlags int selectionFlags, @Nullable String language, @Nullable DrmInitData drmInitData, long subsampleOffsetUs]
+MethodInvocation:createTextSampleFormat
+MethodInvocation:emptyList
+Method-name:createTextSampleFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, @C.SelectionFlags int selectionFlags, @Nullable String language, int accessibilityChannel, @Nullable DrmInitData drmInitData, long subsampleOffsetUs, @Nullable List<byte[]> initializationData]
+Method-name:createImageSampleFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, @C.SelectionFlags int selectionFlags, @Nullable List<byte[]> initializationData, @Nullable String language, @Nullable DrmInitData drmInitData]
+Method-name:createContainerFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String containerMimeType, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, @C.SelectionFlags int selectionFlags, @Nullable String language]
+MethodInvocation:createContainerFormat
+Method-name:createContainerFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String label, @Nullable String containerMimeType, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, @C.SelectionFlags int selectionFlags, @C.RoleFlags int roleFlags, @Nullable String language]
+Method-name:createSampleFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String sampleMimeType, long subsampleOffsetUs]
+Method-name:createSampleFormat
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String sampleMimeType, @Nullable String codecs, int bitrate, @Nullable DrmInitData drmInitData]
+Method-name:Format
+Method-returnType:null
+Method-parameters:[@Nullable String id, @Nullable String label, @C.SelectionFlags int selectionFlags, @C.RoleFlags int roleFlags, int bitrate, @Nullable String codecs, @Nullable Metadata metadata, @Nullable String containerMimeType, @Nullable String sampleMimeType, int maxInputSize, @Nullable List<byte[]> initializationData, @Nullable DrmInitData drmInitData, long subsampleOffsetUs, int width, int height, float frameRate, int rotationDegrees, float pixelWidthHeightRatio, @Nullable byte[] projectionData, @C.StereoMode int stereoMode, @Nullable ColorInfo colorInfo, int channelCount, int sampleRate, @C.PcmEncoding int pcmEncoding, int encoderDelay, int encoderPadding, @Nullable String language, int accessibilityChannel, @Nullable Class<? extends ExoMediaCrypto> exoMediaCryptoType]
+FieldAccess:id
+FieldAccess:label
+FieldAccess:selectionFlags
+FieldAccess:roleFlags
+FieldAccess:bitrate
+FieldAccess:codecs
+FieldAccess:metadata
+FieldAccess:containerMimeType
+FieldAccess:sampleMimeType
+FieldAccess:maxInputSize
+FieldAccess:initializationData
+MethodInvocation:emptyList
+FieldAccess:drmInitData
+FieldAccess:subsampleOffsetUs
+FieldAccess:width
+FieldAccess:height
+FieldAccess:frameRate
+FieldAccess:rotationDegrees
+FieldAccess:pixelWidthHeightRatio
+FieldAccess:projectionData
+FieldAccess:stereoMode
+FieldAccess:colorInfo
+FieldAccess:channelCount
+FieldAccess:sampleRate
+FieldAccess:pcmEncoding
+FieldAccess:encoderDelay
+FieldAccess:encoderPadding
+FieldAccess:language
+MethodInvocation:normalizeLanguageCode
+FieldAccess:accessibilityChannel
+FieldAccess:exoMediaCryptoType
+Method-name:Format
+Method-returnType:null
+Method-parameters:[Parcel in]
+MethodInvocation:readString
+MethodInvocation:readString
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:readString
+MethodInvocation:readParcelable
+MethodInvocation:getClassLoader
+MethodInvocation:readString
+MethodInvocation:readString
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:add
+MethodInvocation:createByteArray
+MethodInvocation:readParcelable
+MethodInvocation:getClassLoader
+MethodInvocation:readLong
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:readFloat
+MethodInvocation:readInt
+MethodInvocation:readFloat
+MethodInvocation:readBoolean
+MethodInvocation:createByteArray
+MethodInvocation:readInt
+MethodInvocation:readParcelable
+MethodInvocation:getClassLoader
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:readString
+MethodInvocation:readInt
+Method-name:copyWithMaxInputSize
+Method-returnType:Format
+Method-parameters:[int maxInputSize]
+Method-name:copyWithSubsampleOffsetUs
+Method-returnType:Format
+Method-parameters:[long subsampleOffsetUs]
+Method-name:copyWithLabel
+Method-returnType:Format
+Method-parameters:[@Nullable String label]
+Method-name:copyWithContainerInfo
+Method-returnType:Format
+Method-parameters:[@Nullable String id, @Nullable String label, @Nullable String sampleMimeType, @Nullable String codecs, @Nullable Metadata metadata, int bitrate, int width, int height, int channelCount, @C.SelectionFlags int selectionFlags, @Nullable String language]
+FieldAccess:metadata
+MethodInvocation:copyWithAppendedEntriesFrom
+FieldAccess:metadata
+Method-name:copyWithManifestFormatInfo
+Method-returnType:Format
+Method-parameters:[Format manifestFormat]
+MethodInvocation:getTrackType
+FieldAccess:label
+FieldAccess:language
+FieldAccess:bitrate
+FieldAccess:bitrate
+FieldAccess:codecs
+MethodInvocation:getCodecsOfType
+FieldAccess:length
+MethodInvocation:splitCodecs
+FieldAccess:metadata
+MethodInvocation:copyWithAppendedEntriesFrom
+FieldAccess:metadata
+FieldAccess:frameRate
+FieldAccess:selectionFlags
+FieldAccess:roleFlags
+MethodInvocation:createSessionCreationData
+FieldAccess:drmInitData
+Method-name:copyWithGaplessInfo
+Method-returnType:Format
+Method-parameters:[int encoderDelay, int encoderPadding]
+Method-name:copyWithFrameRate
+Method-returnType:Format
+Method-parameters:[float frameRate]
+Method-name:copyWithDrmInitData
+Method-returnType:Format
+Method-parameters:[@Nullable DrmInitData drmInitData]
+MethodInvocation:copyWithAdjustments
+Method-name:copyWithMetadata
+Method-returnType:Format
+Method-parameters:[@Nullable Metadata metadata]
+MethodInvocation:copyWithAdjustments
+Method-name:copyWithAdjustments
+Method-returnType:Format
+Method-parameters:[@Nullable DrmInitData drmInitData, @Nullable Metadata metadata]
+FieldAccess:drmInitData
+FieldAccess:metadata
+Method-name:copyWithRotationDegrees
+Method-returnType:Format
+Method-parameters:[int rotationDegrees]
+Method-name:copyWithBitrate
+Method-returnType:Format
+Method-parameters:[int bitrate]
+Method-name:copyWithVideoSize
+Method-returnType:Format
+Method-parameters:[int width, int height]
+Method-name:copyWithExoMediaCryptoType
+Method-returnType:Format
+Method-parameters:[@Nullable Class<? extends ExoMediaCrypto> exoMediaCryptoType]
+Method-name:getPixelCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:areEqual
+MethodInvocation:areEqual
+MethodInvocation:areEqual
+MethodInvocation:areEqual
+MethodInvocation:areEqual
+MethodInvocation:areEqual
+MethodInvocation:areEqual
+MethodInvocation:equals
+MethodInvocation:areEqual
+MethodInvocation:areEqual
+MethodInvocation:areEqual
+MethodInvocation:initializationDataEquals
+Method-name:initializationDataEquals
+Method-returnType:boolean
+Method-parameters:[Format other]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:get
+Method-name:toLogString
+Method-returnType:String
+Method-parameters:[@Nullable Format format]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:describeContents
+Method-returnType:int
+Method-parameters:[]
+Method-name:writeToParcel
+Method-returnType:void
+Method-parameters:[Parcel dest, int flags]
+MethodInvocation:writeString
+MethodInvocation:writeString
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeString
+MethodInvocation:writeParcelable
+MethodInvocation:writeString
+MethodInvocation:writeString
+MethodInvocation:writeInt
+MethodInvocation:size
+MethodInvocation:writeInt
+MethodInvocation:writeByteArray
+MethodInvocation:get
+MethodInvocation:writeParcelable
+MethodInvocation:writeLong
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeFloat
+MethodInvocation:writeInt
+MethodInvocation:writeFloat
+MethodInvocation:writeBoolean
+MethodInvocation:writeByteArray
+MethodInvocation:writeInt
+MethodInvocation:writeParcelable
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeString
+MethodInvocation:writeInt
+Field:CREATOR
+Method-name:createFromParcel
+Method-returnType:Format
+Method-parameters:[Parcel in]
+Method-name:newArray
+Method-returnType:Format[]
+Method-parameters:[int size]
+Method-name:buildLabelString
+Method-returnType:String
+Method-parameters:[DefaultTrackNameProvider defaultTrackNameProvider]
+MethodInvocation:isEmpty

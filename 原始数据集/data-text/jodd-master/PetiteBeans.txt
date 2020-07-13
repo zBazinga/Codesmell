@@ -1,0 +1,282 @@
+Class:PetiteBeans
+Field:log
+MethodInvocation:getLogger
+Field:beans
+Field:beansAlt
+Field:scopes
+MethodInvocation:createDefault
+Field:providers
+Field:beanCollections
+MethodInvocation:createDefault
+Field:externalsCache
+MethodInvocation:get
+MethodInvocation:noCache
+MethodInvocation:create
+Method-name:setExternalsCache
+Method-returnType:void
+Method-parameters:[final TypeCache<BeanDefinition> typeCacheImplementation]
+FieldAccess:externalsCache
+Field:petiteConfig
+Field:referencesResolver
+Field:petiteResolvers
+Field:paramManager
+Field:annotationResolver
+Method-name:PetiteBeans
+Method-returnType:null
+Method-parameters:[final PetiteConfig petiteConfig]
+FieldAccess:petiteConfig
+FieldAccess:referencesResolver
+FieldAccess:petiteResolvers
+FieldAccess:paramManager
+FieldAccess:annotationResolver
+Method-name:paramManager
+Method-returnType:ParamManager
+Method-parameters:[]
+Method-name:config
+Method-returnType:PetiteConfig
+Method-parameters:[]
+Method-name:resolveScope
+Method-returnType:S
+Method-parameters:[final Class<S> scopeType]
+MethodInvocation:get
+MethodInvocation:newInternalInstanceOther
+MethodInvocation:getName
+MethodInvocation:registerScope
+MethodInvocation:put
+Method-name:registerScope
+Method-returnType:void
+Method-parameters:[final Class<? extends Scope> scopeType, final Scope scope]
+MethodInvocation:put
+Method-name:lookupBeanDefinition
+Method-returnType:BeanDefinition
+Method-parameters:[final String name]
+MethodInvocation:get
+MethodInvocation:isUseAltBeanNames
+MethodInvocation:get
+Method-name:lookupBeanDefinitions
+Method-returnType:BeanDefinition
+Method-parameters:[final BeanReferences beanReferences]
+MethodInvocation:size
+MethodInvocation:name
+MethodInvocation:lookupBeanDefinition
+Method-name:lookupExistingBeanDefinition
+Method-returnType:BeanDefinition
+Method-parameters:[final String name]
+MethodInvocation:lookupBeanDefinition
+Method-name:isBeanNameRegistered
+Method-returnType:boolean
+Method-parameters:[final String name]
+MethodInvocation:lookupBeanDefinition
+Method-name:resolveBeanName
+Method-returnType:String
+Method-parameters:[final Class type]
+MethodInvocation:resolveBeanName
+MethodInvocation:getUseFullTypeNames
+Method-name:createBeanDefinitionForRegistration
+Method-returnType:BeanDefinition
+Method-parameters:[final String name, final Class<T> type, final Scope scope, final WiringMode wiringMode, final Consumer<T> consumer]
+Method-name:createBeandDefinitionForExternalBeans
+Method-returnType:BeanDefinition
+Method-parameters:[final Class<T> type, final WiringMode wiringMode]
+MethodInvocation:resolveBeanName
+Method-name:registerPetiteBean
+Method-returnType:BeanDefinition
+Method-parameters:[final Class type]
+MethodInvocation:registerPetiteBean
+Method-name:registerPetiteBean
+Method-returnType:BeanDefinition<T>
+Method-parameters:[final Class<T> type, final Consumer<T> consumer]
+MethodInvocation:registerPetiteBean
+Method-name:registerPetiteBean
+Method-returnType:BeanDefinition<T>
+Method-parameters:[final Class<T> type, String name, Class<? extends Scope> scopeType, WiringMode wiringMode, final boolean define, final Consumer<T> consumer]
+MethodInvocation:resolveBeanName
+MethodInvocation:resolveBeanWiringMode
+MethodInvocation:getDefaultWiringMode
+MethodInvocation:resolveBeanScopeType
+MethodInvocation:removeBean
+MethodInvocation:getDetectDuplicatedBeanNames
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:isInterface
+MethodInvocation:getName
+MethodInvocation:isDebugEnabled
+MethodInvocation:info
+MethodInvocation:getName
+MethodInvocation:getSimpleName
+MethodInvocation:toString
+MethodInvocation:resolveScope
+MethodInvocation:createBeanDefinitionForRegistration
+MethodInvocation:registerBean
+MethodInvocation:resolveProviderDefinitions
+MethodInvocation:put
+MethodInvocation:resolveCtorInjectionPoint
+MethodInvocation:type
+Method-name:registerBean
+Method-returnType:void
+Method-parameters:[final String name, final BeanDefinition beanDefinition]
+MethodInvocation:put
+MethodInvocation:isUseAltBeanNames
+MethodInvocation:type
+MethodInvocation:beanHasAnnotationName
+MethodInvocation:resolveAllInterfaces
+MethodInvocation:resolveBeanName
+MethodInvocation:getUseFullTypeNames
+MethodInvocation:equals
+MethodInvocation:containsKey
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+Method-name:removeBean
+Method-returnType:void
+Method-parameters:[final Class type]
+MethodInvocation:values
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:removeBean
+Method-name:removeBean
+Method-returnType:BeanDefinition
+Method-parameters:[final String name]
+MethodInvocation:remove
+MethodInvocation:scopeRemove
+Method-name:resolveBeanNamesForType
+Method-returnType:String[]
+Method-parameters:[final Class type]
+MethodInvocation:get
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:isTypeOf
+MethodInvocation:getKey
+MethodInvocation:add
+MethodInvocation:isEmpty
+MethodInvocation:toArray
+MethodInvocation:put
+Method-name:registerPetiteCtorInjectionPoint
+Method-returnType:void
+Method-parameters:[final String beanName, final Class[] paramTypes, final String[] references]
+MethodInvocation:lookupExistingBeanDefinition
+MethodInvocation:lookup
+MethodInvocation:get
+MethodInvocation:getAllCtorDescriptors
+MethodInvocation:getName
+MethodInvocation:getConstructor
+MethodInvocation:getCtorDescriptor
+MethodInvocation:getConstructor
+MethodInvocation:getName
+MethodInvocation:resolveReferenceFromValues
+Method-name:registerPetitePropertyInjectionPoint
+Method-returnType:void
+Method-parameters:[final String beanName, final String property, final String reference]
+MethodInvocation:lookupExistingBeanDefinition
+MethodInvocation:lookup
+MethodInvocation:get
+MethodInvocation:getPropertyDescriptor
+MethodInvocation:getName
+MethodInvocation:resolveReferenceFromValue
+MethodInvocation:addPropertyInjectionPoint
+Method-name:registerPetiteSetInjectionPoint
+Method-returnType:void
+Method-parameters:[final String beanName, final String property]
+MethodInvocation:lookupExistingBeanDefinition
+MethodInvocation:lookup
+MethodInvocation:get
+MethodInvocation:getPropertyDescriptor
+MethodInvocation:getName
+MethodInvocation:addSetInjectionPoint
+Method-name:registerPetiteMethodInjectionPoint
+Method-returnType:void
+Method-parameters:[final String beanName, final String methodName, final Class[] arguments, final String[] references]
+MethodInvocation:lookupExistingBeanDefinition
+MethodInvocation:lookup
+MethodInvocation:get
+MethodInvocation:getAllMethodDescriptors
+MethodInvocation:getName
+MethodInvocation:getMethod
+MethodInvocation:getMethodDescriptor
+MethodInvocation:getMethod
+MethodInvocation:getName
+MethodInvocation:resolveReferenceFromValues
+MethodInvocation:addMethodInjectionPoint
+Method-name:registerPetiteInitMethods
+Method-returnType:void
+Method-parameters:[final String beanName, final InitMethodInvocationStrategy invocationStrategy, String... initMethodNames]
+MethodInvocation:lookupExistingBeanDefinition
+MethodInvocation:lookup
+MethodInvocation:get
+MethodInvocation:getMethodDescriptor
+MethodInvocation:getName
+MethodInvocation:getMethod
+MethodInvocation:addInitMethodPoints
+Method-name:registerPetiteDestroyMethods
+Method-returnType:void
+Method-parameters:[final String beanName, String... destroyMethodNames]
+MethodInvocation:lookupExistingBeanDefinition
+MethodInvocation:lookup
+MethodInvocation:get
+MethodInvocation:getMethodDescriptor
+MethodInvocation:getName
+MethodInvocation:getMethod
+MethodInvocation:addDestroyMethodPoints
+Method-name:registerPetiteProvider
+Method-returnType:void
+Method-parameters:[final String providerName, final String beanName, final String methodName, final Class[] arguments]
+MethodInvocation:lookupBeanDefinition
+MethodInvocation:lookup
+MethodInvocation:get
+MethodInvocation:getMethodDescriptor
+MethodInvocation:getMethod
+MethodInvocation:put
+Method-name:registerPetiteProvider
+Method-returnType:void
+Method-parameters:[final String providerName, final Class type, final String staticMethodName, final Class[] arguments]
+MethodInvocation:lookup
+MethodInvocation:get
+MethodInvocation:getMethodDescriptor
+MethodInvocation:getMethod
+MethodInvocation:put
+Method-name:beansCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:scopesCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:beanNames
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:forEachBean
+Method-returnType:void
+Method-parameters:[final Consumer<BeanDefinition> beanDefinitionConsumer]
+MethodInvocation:beanNames
+MethodInvocation:lookupBeanDefinition
+MethodInvocation:accept
+Method-name:forEachBeanType
+Method-returnType:void
+Method-parameters:[final Class type, final Consumer<String> beanNameConsumer]
+MethodInvocation:forEachBean
+MethodInvocation:isTypeOf
+MethodInvocation:accept
+Method-name:defineParameter
+Method-returnType:void
+Method-parameters:[final String name, final Object value]
+MethodInvocation:put
+Method-name:getParameter
+Method-returnType:Object
+Method-parameters:[final String name]
+MethodInvocation:get
+Method-name:defineParameters
+Method-returnType:void
+Method-parameters:[final Map<?,?> properties]
+MethodInvocation:entrySet
+MethodInvocation:defineParameter
+MethodInvocation:toString
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:defineParameters
+Method-returnType:void
+Method-parameters:[final Props props]
+MethodInvocation:extractProps
+MethodInvocation:defineParameters

@@ -1,0 +1,161 @@
+Class:CometdEndpoint
+Field:component
+Field:uri
+Field:host
+Field:port
+Field:channelName
+Field:baseResource
+Field:timeout
+Field:interval
+Field:maxInterval
+Field:multiFrameInterval
+Field:jsonCommented
+Field:sessionHeadersEnabled
+Field:logLevel
+Field:crossOriginFilterOn
+Field:allowedOrigins
+Field:filterPath
+Field:disconnectLocalSession
+Method-name:CometdEndpoint
+Method-returnType:null
+Method-parameters:[CometdComponent component, String uri, String remaining, Map<String,Object> parameters]
+FieldAccess:component
+FieldAccess:uri
+FieldAccess:host
+MethodInvocation:getHost
+FieldAccess:uri
+FieldAccess:port
+MethodInvocation:getPort
+FieldAccess:uri
+FieldAccess:channelName
+Method-name:createProducer
+Method-returnType:Producer
+Method-parameters:[]
+MethodInvocation:notNull
+Method-name:createConsumer
+Method-returnType:Consumer
+Method-parameters:[Processor processor]
+MethodInvocation:notNull
+MethodInvocation:configureConsumer
+Method-name:connect
+Method-returnType:void
+Method-parameters:[CometdProducerConsumer prodcons]
+MethodInvocation:connect
+Method-name:disconnect
+Method-returnType:void
+Method-parameters:[CometdProducerConsumer prodcons]
+MethodInvocation:disconnect
+Method-name:getComponent
+Method-returnType:CometdComponent
+Method-parameters:[]
+Method-name:getPath
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPath
+Method-name:getPort
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getPort
+MethodInvocation:equals
+MethodInvocation:getProtocol
+MethodInvocation:getPort
+Method-name:getProtocol
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getScheme
+Method-name:getUri
+Method-returnType:URI
+Method-parameters:[]
+Method-name:getBaseResource
+Method-returnType:String
+Method-parameters:[]
+Method-name:setBaseResource
+Method-returnType:void
+Method-parameters:[String baseResource]
+FieldAccess:baseResource
+Method-name:getTimeout
+Method-returnType:int
+Method-parameters:[]
+Method-name:setTimeout
+Method-returnType:void
+Method-parameters:[int timeout]
+FieldAccess:timeout
+Method-name:getInterval
+Method-returnType:int
+Method-parameters:[]
+Method-name:setInterval
+Method-returnType:void
+Method-parameters:[int interval]
+FieldAccess:interval
+Method-name:getMaxInterval
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxInterval
+Method-returnType:void
+Method-parameters:[int maxInterval]
+FieldAccess:maxInterval
+Method-name:getMultiFrameInterval
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMultiFrameInterval
+Method-returnType:void
+Method-parameters:[int multiFrameInterval]
+FieldAccess:multiFrameInterval
+Method-name:isJsonCommented
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setJsonCommented
+Method-returnType:void
+Method-parameters:[boolean commented]
+Method-name:setSessionHeadersEnabled
+Method-returnType:void
+Method-parameters:[boolean enable]
+FieldAccess:sessionHeadersEnabled
+Method-name:isSessionHeadersEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getLogLevel
+Method-returnType:int
+Method-parameters:[]
+Method-name:setLogLevel
+Method-returnType:void
+Method-parameters:[int logLevel]
+FieldAccess:logLevel
+Method-name:getAllowedOrigins
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAllowedOrigins
+Method-returnType:void
+Method-parameters:[String allowedOrigins]
+FieldAccess:allowedOrigins
+Method-name:isCrossOriginFilterOn
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setCrossOriginFilterOn
+Method-returnType:void
+Method-parameters:[boolean crossOriginFilterOn]
+FieldAccess:crossOriginFilterOn
+Method-name:getFilterPath
+Method-returnType:String
+Method-parameters:[]
+Method-name:setFilterPath
+Method-returnType:void
+Method-parameters:[String filterPath]
+FieldAccess:filterPath
+Method-name:isDisconnectLocalSession
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDisconnectLocalSession
+Method-returnType:void
+Method-parameters:[boolean disconnectLocalSession]
+FieldAccess:disconnectLocalSession
+Method-name:applyCrossOriginFiltering
+Method-returnType:void
+Method-parameters:[ServletContextHandler context, CometdComponent cometdComponent]
+MethodInvocation:isCrossOriginFilterOn
+MethodInvocation:setFilter
+MethodInvocation:setInitParameter
+MethodInvocation:getAllowedOrigins
+MethodInvocation:addFilter
+MethodInvocation:getFilterPath
+MethodInvocation:allOf

@@ -1,0 +1,216 @@
+Class:RelMdColumnUniqueness
+Field:SOURCE
+MethodInvocation:reflectiveSource
+Method-name:RelMdColumnUniqueness
+Method-returnType:null
+Method-parameters:[]
+Method-name:getDef
+Method-returnType:MetadataDef<BuiltInMetadata.ColumnUniqueness>
+Method-parameters:[]
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[TableScan rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:isKey
+MethodInvocation:getTable
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[Filter rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:areColumnsUnique
+MethodInvocation:getInput
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[RelNode rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[SetOp rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:nextClearBit
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[Intersect rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:areColumnsUnique
+MethodInvocation:getInputs
+MethodInvocation:areColumnsUnique
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[Minus rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:areColumnsUnique
+MethodInvocation:areColumnsUnique
+MethodInvocation:getInput
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[Sort rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:areColumnsUnique
+MethodInvocation:getInput
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[TableModify rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:areColumnsUnique
+MethodInvocation:getInput
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[Exchange rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:areColumnsUnique
+MethodInvocation:getInput
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[Correlate rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:getJoinType
+MethodInvocation:areColumnsUnique
+MethodInvocation:getLeft
+MethodInvocation:splitLeftAndRightColumns
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getLeft
+MethodInvocation:getLeft
+MethodInvocation:getRight
+MethodInvocation:cardinality
+MethodInvocation:cardinality
+MethodInvocation:areColumnsUnique
+MethodInvocation:areColumnsUnique
+MethodInvocation:getJoinType
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[Project rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:areProjectColumnsUnique
+MethodInvocation:getProjects
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[Calc rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:getProgram
+MethodInvocation:areProjectColumnsUnique
+MethodInvocation:transform
+MethodInvocation:getProjectList
+Method-name:areProjectColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[SingleRel rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls, List<RexNode> projExprs]
+MethodInvocation:getTypeFactory
+MethodInvocation:getCluster
+MethodInvocation:builder
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:getIndex
+MethodInvocation:getOperator
+MethodInvocation:get
+MethodInvocation:getOperands
+MethodInvocation:createTypeWithNullability
+MethodInvocation:getType
+MethodInvocation:createTypeWithNullability
+MethodInvocation:getType
+MethodInvocation:equals
+MethodInvocation:set
+MethodInvocation:getIndex
+MethodInvocation:cardinality
+MethodInvocation:areColumnsUnique
+MethodInvocation:getInput
+MethodInvocation:build
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[Join rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:cardinality
+MethodInvocation:getLeft
+MethodInvocation:getRight
+MethodInvocation:projectsRight
+MethodInvocation:getJoinType
+MethodInvocation:areColumnsUnique
+MethodInvocation:splitLeftAndRightColumns
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getLeft
+MethodInvocation:getJoinType
+MethodInvocation:cardinality
+MethodInvocation:cardinality
+MethodInvocation:areColumnsUnique
+MethodInvocation:areColumnsUnique
+MethodInvocation:cardinality
+MethodInvocation:cardinality
+MethodInvocation:analyzeCondition
+MethodInvocation:cardinality
+MethodInvocation:generatesNullsOnLeft
+MethodInvocation:getJoinType
+MethodInvocation:areColumnsUnique
+MethodInvocation:rightSet
+MethodInvocation:cardinality
+MethodInvocation:generatesNullsOnRight
+MethodInvocation:getJoinType
+MethodInvocation:areColumnsUnique
+MethodInvocation:leftSet
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[Aggregate rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:range
+MethodInvocation:getGroupCount
+MethodInvocation:contains
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[Values rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:isNull
+MethodInvocation:getValueAs
+MethodInvocation:add
+MethodInvocation:copyOf
+MethodInvocation:clear
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[Converter rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:areColumnsUnique
+MethodInvocation:getInput
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[HepRelVertex rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:areColumnsUnique
+MethodInvocation:getCurrentRel
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[RelSubset rel, RelMetadataQuery mq, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:decorateWithConstantColumnsFromPredicates
+MethodInvocation:getRels
+MethodInvocation:simplyProjects
+MethodInvocation:areColumnsUnique
+Method-name:simplyProjects
+Method-returnType:boolean
+Method-parameters:[RelNode rel, ImmutableBitSet columns]
+MethodInvocation:getProjects
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:splitLeftAndRightColumns
+Method-returnType:Pair<ImmutableBitSet,ImmutableBitSet>
+Method-parameters:[int leftCount, final ImmutableBitSet columns]
+MethodInvocation:builder
+MethodInvocation:builder
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:of
+MethodInvocation:build
+MethodInvocation:build
+Method-name:decorateWithConstantColumnsFromPredicates
+Method-returnType:ImmutableBitSet
+Method-parameters:[ImmutableBitSet checkingColumns, RelNode rel, RelMetadataQuery mq]
+MethodInvocation:getPulledUpPredicates
+MethodInvocation:forEach
+MethodInvocation:keySet
+MethodInvocation:add
+MethodInvocation:getIndex
+MethodInvocation:isEmpty
+MethodInvocation:union
+MethodInvocation:of

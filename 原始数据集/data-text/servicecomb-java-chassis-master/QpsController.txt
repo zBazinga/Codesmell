@@ -1,0 +1,33 @@
+Class:QpsController
+Field:key
+Field:qpsLimit
+Field:msCycleBegin
+Field:requestCount
+Field:lastRequestCount
+Field:CYCLE_LENGTH
+Method-name:QpsController
+Method-returnType:null
+Method-parameters:[String key, Integer qpsLimit]
+FieldAccess:key
+FieldAccess:qpsLimit
+FieldAccess:msCycleBegin
+MethodInvocation:currentTimeMillis
+Method-name:getKey
+Method-returnType:String
+Method-parameters:[]
+Method-name:getQpsLimit
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setQpsLimit
+Method-returnType:void
+Method-parameters:[Integer qpsLimit]
+FieldAccess:qpsLimit
+Method-name:isLimitNewRequest
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:incrementAndGet
+MethodInvocation:currentTimeMillis
+Method-name:isValidQpsController
+Method-returnType:boolean
+Method-parameters:[QpsControllerManager qpsControllerManager]
+MethodInvocation:getQpsLimit

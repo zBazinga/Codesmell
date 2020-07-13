@@ -1,0 +1,22 @@
+Class:MatchedPersonCandidate
+Field:myCandidatePersonPid
+Field:myEmpiMatchResult
+Method-name:MatchedPersonCandidate
+Method-returnType:null
+Method-parameters:[ResourcePersistentId theCandidate, EmpiMatchResultEnum theEmpiMatchResult]
+Method-name:getCandidatePersonPid
+Method-returnType:ResourcePersistentId
+Method-parameters:[]
+Method-name:getMatchResult
+Method-returnType:EmpiMatchResultEnum
+Method-parameters:[]
+Method-name:isMatch
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:candidateIsSameAsEmpiLinkPerson
+Method-returnType:boolean
+Method-parameters:[EmpiLink theExistingMatchLink, EmpiEidUpdateService empiEidUpdateService]
+MethodInvocation:equals
+MethodInvocation:getPersonPid
+MethodInvocation:getIdAsLong
+MethodInvocation:getCandidatePersonPid

@@ -1,0 +1,153 @@
+Class:LoadEvent
+Field:DEFAULT_LOCK_MODE
+Field:DEFAULT_LOCK_OPTIONS
+Method-name:setLockMode
+Method-returnType:LockOptions
+Method-parameters:[LockMode lockMode]
+Method-name:setAliasSpecificLockMode
+Method-returnType:LockOptions
+Method-parameters:[String alias, LockMode lockMode]
+Method-name:setTimeOut
+Method-returnType:LockOptions
+Method-parameters:[int timeout]
+Method-name:setScope
+Method-returnType:LockOptions
+Method-parameters:[boolean scope]
+Field:entityId
+Field:entityClassName
+Field:instanceToLoad
+Field:lockOptions
+Field:isAssociationFetch
+Field:result
+Field:postLoadEvent
+Field:readOnly
+Method-name:LoadEvent
+Method-returnType:null
+Method-parameters:[Serializable entityId, Object instanceToLoad, EventSource source, Boolean readOnly]
+Method-name:LoadEvent
+Method-returnType:null
+Method-parameters:[Serializable entityId, String entityClassName, LockMode lockMode, EventSource source, Boolean readOnly]
+Method-name:LoadEvent
+Method-returnType:null
+Method-parameters:[Serializable entityId, String entityClassName, LockOptions lockOptions, EventSource source, Boolean readOnly]
+Method-name:LoadEvent
+Method-returnType:null
+Method-parameters:[Serializable entityId, String entityClassName, boolean isAssociationFetch, EventSource source, Boolean readOnly]
+Method-name:isAssociationFetch
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:LoadEvent
+Method-returnType:null
+Method-parameters:[Serializable entityId, String entityClassName, Object instanceToLoad, LockMode lockMode, boolean isAssociationFetch, EventSource source, Boolean readOnly]
+MethodInvocation:setLockMode
+Method-name:LoadEvent
+Method-returnType:null
+Method-parameters:[Serializable entityId, String entityClassName, Object instanceToLoad, LockOptions lockOptions, boolean isAssociationFetch, EventSource source, Boolean readOnly]
+MethodInvocation:getLockMode
+MethodInvocation:getLockMode
+MethodInvocation:setLockMode
+FieldAccess:entityId
+FieldAccess:entityClassName
+FieldAccess:instanceToLoad
+FieldAccess:lockOptions
+FieldAccess:isAssociationFetch
+FieldAccess:postLoadEvent
+FieldAccess:readOnly
+Method-name:getEntityId
+Method-returnType:Serializable
+Method-parameters:[]
+Method-name:setEntityId
+Method-returnType:void
+Method-parameters:[Serializable entityId]
+FieldAccess:entityId
+Method-name:getEntityClassName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setEntityClassName
+Method-returnType:void
+Method-parameters:[String entityClassName]
+FieldAccess:entityClassName
+Method-name:getInstanceToLoad
+Method-returnType:Object
+Method-parameters:[]
+Method-name:setInstanceToLoad
+Method-returnType:void
+Method-parameters:[Object instanceToLoad]
+FieldAccess:instanceToLoad
+Method-name:getLockOptions
+Method-returnType:LockOptions
+Method-parameters:[]
+Method-name:getLockMode
+Method-returnType:LockMode
+Method-parameters:[]
+MethodInvocation:getLockMode
+Method-name:setLockMode
+Method-returnType:void
+Method-parameters:[LockMode lockMode]
+MethodInvocation:getLockMode
+MethodInvocation:writingOnLockOptions
+MethodInvocation:setLockMode
+FieldAccess:lockOptions
+Method-name:writingOnLockOptions
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:lockOptions
+Method-name:setLockTimeout
+Method-returnType:void
+Method-parameters:[int timeout]
+MethodInvocation:getTimeOut
+MethodInvocation:writingOnLockOptions
+MethodInvocation:setTimeOut
+FieldAccess:lockOptions
+Method-name:getLockTimeout
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getTimeOut
+FieldAccess:lockOptions
+Method-name:setLockScope
+Method-returnType:void
+Method-parameters:[boolean cascade]
+MethodInvocation:getScope
+MethodInvocation:writingOnLockOptions
+MethodInvocation:setScope
+FieldAccess:lockOptions
+Method-name:getLockScope
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getScope
+FieldAccess:lockOptions
+Method-name:getResult
+Method-returnType:Object
+Method-parameters:[]
+Method-name:setResult
+Method-returnType:void
+Method-parameters:[Object result]
+FieldAccess:result
+Method-name:getPostLoadEvent
+Method-returnType:PostLoadEvent
+Method-parameters:[]
+Method-name:setPostLoadEvent
+Method-returnType:void
+Method-parameters:[PostLoadEvent postLoadEvent]
+FieldAccess:postLoadEvent
+Method-name:getReadOnly
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setReadOnly
+Method-returnType:void
+Method-parameters:[Boolean readOnly]
+FieldAccess:readOnly
+Method-name:getPersister
+Method-returnType:EntityPersister
+Method-parameters:[DefaultLoadEventListener defaultLoadEventListener]
+MethodInvocation:getInstanceToLoad
+MethodInvocation:setEntityClassName
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getEntityPersister
+MethodInvocation:getSession
+MethodInvocation:entityPersister
+MethodInvocation:getMetamodel
+MethodInvocation:getFactory
+MethodInvocation:getSession
+MethodInvocation:getEntityClassName

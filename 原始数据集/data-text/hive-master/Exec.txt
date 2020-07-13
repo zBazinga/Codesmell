@@ -1,0 +1,1414 @@
+Class:Exec
+Field:VERSION
+Field:ERRORCODE
+Field:SQLCODE
+Field:SQLSTATE
+Field:HOSTCODE
+Field:exec
+Field:tree
+Field:OnError
+Field:scopes
+Field:globalScope
+Field:currentScope
+Field:stack
+Field:labels
+Field:callStack
+Field:signals
+Field:currentSignal
+Field:currentHandlerScope
+Field:resignal
+Field:managedTables
+Field:objectMap
+Field:objectConnMap
+Field:returnCursors
+Field:packages
+Field:currentPackageDecl
+Field:stmtConnList
+Field:arguments
+Field:conf
+Field:expr
+Field:function
+Field:converter
+Field:meta
+Field:select
+Field:stmt
+Field:conn
+Field:rowCount
+Field:execString
+Field:execFile
+Field:execMain
+Field:localUdf
+Field:initRoutines
+Field:buildSql
+Field:inCallStmt
+Field:udfRegistered
+Field:udfRun
+Field:dotHplsqlrcExists
+Field:hplsqlrcExists
+Field:trace
+Field:info
+Field:offline
+Method-name:Exec
+Method-returnType:null
+Method-parameters:[]
+Method-name:Exec
+Method-returnType:null
+Method-parameters:[Exec exec]
+FieldAccess:exec
+Method-name:setVariable
+Method-returnType:Var
+Method-parameters:[String name, Var value]
+MethodInvocation:empty
+MethodInvocation:pop
+MethodInvocation:startsWith
+MethodInvocation:setOption
+MethodInvocation:toString
+MethodInvocation:findVariable
+MethodInvocation:cast
+MethodInvocation:setName
+MethodInvocation:addVariable
+Method-name:setVariable
+Method-returnType:Var
+Method-parameters:[String name]
+MethodInvocation:setVariable
+Method-name:setVariable
+Method-returnType:Var
+Method-parameters:[String name, String value]
+MethodInvocation:setVariable
+Method-name:setVariable
+Method-returnType:Var
+Method-parameters:[String name, int value]
+MethodInvocation:setVariable
+MethodInvocation:valueOf
+Method-name:setVariableToNull
+Method-returnType:Var
+Method-parameters:[String name]
+MethodInvocation:findVariable
+MethodInvocation:removeValue
+MethodInvocation:setName
+MethodInvocation:addVariable
+Method-name:addVariable
+Method-returnType:void
+Method-parameters:[Var var]
+MethodInvocation:addVariable
+MethodInvocation:addVariable
+Method-name:addHandler
+Method-returnType:void
+Method-parameters:[Handler handler]
+MethodInvocation:addHandler
+Method-name:addReturnCursor
+Method-returnType:void
+Method-parameters:[Var var]
+MethodInvocation:callStackPeek
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:add
+Method-name:consumeReturnCursor
+Method-returnType:Var
+Method-parameters:[String routine]
+MethodInvocation:get
+MethodInvocation:toUpperCase
+MethodInvocation:get
+MethodInvocation:remove
+Method-name:stackPush
+Method-returnType:void
+Method-parameters:[Var var]
+MethodInvocation:push
+Method-name:stackPush
+Method-returnType:void
+Method-parameters:[String val]
+MethodInvocation:push
+Method-name:stackPush
+Method-returnType:void
+Method-parameters:[StringBuilder val]
+MethodInvocation:stackPush
+MethodInvocation:toString
+Method-name:stackPush
+Method-returnType:void
+Method-parameters:[Boolean val]
+MethodInvocation:push
+Method-name:stackPeek
+Method-returnType:Var
+Method-parameters:[]
+MethodInvocation:peek
+Method-name:stackPop
+Method-returnType:Var
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:pop
+Method-name:callStackPush
+Method-returnType:void
+Method-parameters:[String val]
+MethodInvocation:push
+MethodInvocation:toUpperCase
+Method-name:callStackPeek
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:peek
+Method-name:callStackPop
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:pop
+Method-name:findVariable
+Method-returnType:Var
+Method-parameters:[String name]
+MethodInvocation:getPackageCallContext
+MethodInvocation:splitIdentifier
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:findPackage
+MethodInvocation:findVariable
+MethodInvocation:startsWith
+MethodInvocation:substring
+MethodInvocation:findVariable
+MethodInvocation:findVariable
+MethodInvocation:findVariable
+MethodInvocation:getValue
+Method-name:findVariable
+Method-returnType:Var
+Method-parameters:[Var name]
+MethodInvocation:findVariable
+MethodInvocation:getName
+Method-name:findVariable
+Method-returnType:Var
+Method-parameters:[ArrayList<Var> vars, String name]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+Method-name:findCursor
+Method-returnType:Var
+Method-parameters:[String name]
+MethodInvocation:findVariable
+Method-name:findPackage
+Method-returnType:Package
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:toUpperCase
+Method-name:enterScope
+Method-returnType:void
+Method-parameters:[Scope scope]
+MethodInvocation:push
+Method-name:enterScope
+Method-returnType:void
+Method-parameters:[Scope.Type type]
+MethodInvocation:enterScope
+Method-name:enterScope
+Method-returnType:void
+Method-parameters:[Scope.Type type, Package pack]
+MethodInvocation:enterScope
+Method-name:enterGlobalScope
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:enterScope
+Method-name:leaveScope
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:empty
+MethodInvocation:peek
+MethodInvocation:peek
+MethodInvocation:runExitHandler
+MethodInvocation:pop
+MethodInvocation:getParent
+MethodInvocation:pop
+Method-name:signal
+Method-returnType:void
+Method-parameters:[Signal signal]
+MethodInvocation:push
+Method-name:signal
+Method-returnType:void
+Method-parameters:[Signal.Type type, String value, Exception exception]
+MethodInvocation:signal
+Method-name:signal
+Method-returnType:void
+Method-parameters:[Signal.Type type, String value]
+MethodInvocation:setSqlCode
+MethodInvocation:signal
+Method-name:signal
+Method-returnType:void
+Method-parameters:[Signal.Type type]
+MethodInvocation:setSqlCode
+MethodInvocation:signal
+Method-name:signal
+Method-returnType:void
+Method-parameters:[Exception exception]
+MethodInvocation:setSqlCode
+MethodInvocation:signal
+MethodInvocation:getMessage
+Method-name:resignal
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:resignal
+Method-name:resignal
+Method-returnType:void
+Method-parameters:[Signal signal]
+MethodInvocation:signal
+Method-name:runContinueHandler
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:pop
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:trace
+MethodInvocation:enterScope
+MethodInvocation:visit
+MethodInvocation:single_block_stmt
+MethodInvocation:leaveScope
+MethodInvocation:push
+Method-name:runExitHandler
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:pop
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:trace
+MethodInvocation:enterScope
+MethodInvocation:visit
+MethodInvocation:single_block_stmt
+MethodInvocation:leaveScope
+MethodInvocation:push
+Method-name:signalPop
+Method-returnType:Signal
+Method-parameters:[]
+MethodInvocation:empty
+MethodInvocation:pop
+Method-name:signalPeek
+Method-returnType:Signal
+Method-parameters:[]
+MethodInvocation:empty
+MethodInvocation:peek
+Method-name:labelPop
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:empty
+MethodInvocation:pop
+Method-name:executeQuery
+Method-returnType:Query
+Method-parameters:[ParserRuleContext ctx, Query query, String connProfile]
+MethodInvocation:executeQuery
+MethodInvocation:setSqlNoData
+MethodInvocation:info
+Method-name:executeQuery
+Method-returnType:Query
+Method-parameters:[ParserRuleContext ctx, String sql, String connProfile]
+MethodInvocation:executeQuery
+Method-name:prepareQuery
+Method-returnType:Query
+Method-parameters:[ParserRuleContext ctx, Query query, String connProfile]
+MethodInvocation:prepareQuery
+MethodInvocation:setSqlNoData
+MethodInvocation:info
+Method-name:prepareQuery
+Method-returnType:Query
+Method-parameters:[ParserRuleContext ctx, String sql, String connProfile]
+MethodInvocation:prepareQuery
+Method-name:executeSql
+Method-returnType:Query
+Method-parameters:[ParserRuleContext ctx, String sql, String connProfile]
+MethodInvocation:executeSql
+MethodInvocation:getRowCount
+MethodInvocation:info
+Method-name:closeQuery
+Method-returnType:void
+Method-parameters:[Query query, String conn]
+MethodInvocation:closeQuery
+Method-name:registerUdf
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getExecDir
+MethodInvocation:list
+MethodInvocation:startsWith
+MethodInvocation:endsWith
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:equals
+MethodInvocation:getLocation
+MethodInvocation:add
+MethodInvocation:getLocation
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:createLocalUdf
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:addPreSql
+Method-name:initOptions
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:startsWith
+MethodInvocation:compareToIgnoreCase
+MethodInvocation:startsWith
+MethodInvocation:addConnectionInit
+MethodInvocation:substring
+MethodInvocation:startsWith
+MethodInvocation:setConnectionConvert
+MethodInvocation:substring
+MethodInvocation:startsWith
+MethodInvocation:addConnection
+MethodInvocation:substring
+MethodInvocation:startsWith
+MethodInvocation:setOption
+Method-name:setSqlCode
+Method-returnType:void
+Method-parameters:[int sqlcode]
+MethodInvocation:valueOf
+MethodInvocation:findVariable
+MethodInvocation:setValue
+MethodInvocation:findVariable
+MethodInvocation:setValue
+Method-name:setSqlCode
+Method-returnType:void
+Method-parameters:[Exception exception]
+MethodInvocation:setSqlCode
+MethodInvocation:getErrorCode
+MethodInvocation:setSqlState
+MethodInvocation:getSQLState
+MethodInvocation:setSqlCode
+MethodInvocation:setSqlState
+Method-name:setSqlState
+Method-returnType:void
+Method-parameters:[String sqlstate]
+MethodInvocation:findVariable
+MethodInvocation:setValue
+Method-name:setHostCode
+Method-returnType:void
+Method-parameters:[int code]
+MethodInvocation:findVariable
+MethodInvocation:setValue
+MethodInvocation:valueOf
+Method-name:setSqlSuccess
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setSqlCode
+MethodInvocation:setSqlState
+Method-name:setSqlNoData
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setSqlCode
+MethodInvocation:setSqlState
+Method-name:run
+Method-returnType:Integer
+Method-parameters:[String[] args]
+MethodInvocation:enterGlobalScope
+MethodInvocation:init
+MethodInvocation:run
+MethodInvocation:println
+MethodInvocation:toString
+MethodInvocation:leaveScope
+MethodInvocation:cleanup
+MethodInvocation:printExceptions
+MethodInvocation:getProgramReturnCode
+Method-name:run
+Method-returnType:Var
+Method-parameters:[]
+MethodInvocation:visit
+MethodInvocation:execProc
+MethodInvocation:visit
+MethodInvocation:isEmpty
+MethodInvocation:stackPop
+Method-name:init
+Method-returnType:Integer
+Method-parameters:[String[] args]
+MethodInvocation:parseArguments
+MethodInvocation:setProperty
+MethodInvocation:init
+MethodInvocation:initOptions
+MethodInvocation:register
+MethodInvocation:register
+MethodInvocation:register
+MethodInvocation:register
+MethodInvocation:addVariable
+MethodInvocation:addVariable
+MethodInvocation:addVariable
+MethodInvocation:addVariable
+MethodInvocation:entrySet
+MethodInvocation:getVars
+MethodInvocation:addVariable
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getBytes
+MethodInvocation:program
+MethodInvocation:println
+MethodInvocation:getLocation
+MethodInvocation:println
+MethodInvocation:toStringTree
+MethodInvocation:includeRcFile
+Method-name:parseArguments
+Method-returnType:boolean
+Method-parameters:[String[] args]
+MethodInvocation:parse
+MethodInvocation:hasVersionOption
+MethodInvocation:println
+MethodInvocation:hasHelpOption
+MethodInvocation:getExecString
+MethodInvocation:getFileName
+MethodInvocation:printHelp
+MethodInvocation:getExecString
+MethodInvocation:getFileName
+MethodInvocation:getMain
+MethodInvocation:hasTraceOption
+MethodInvocation:hasOfflineOption
+MethodInvocation:println
+Method-name:includeRcFile
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:includeFile
+MethodInvocation:includeFile
+MethodInvocation:includeFile
+Method-name:includeFile
+Method-returnType:boolean
+Method-parameters:[String file, boolean showError]
+MethodInvocation:readFileToString
+MethodInvocation:isEmpty
+MethodInvocation:trace
+MethodInvocation:include
+MethodInvocation:error
+MethodInvocation:getMessage
+Method-name:include
+Method-returnType:void
+Method-parameters:[String content]
+MethodInvocation:getBytes
+MethodInvocation:program
+MethodInvocation:visit
+Method-name:visitProgram
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.ProgramContext ctx]
+MethodInvocation:visitChildren
+Method-name:visitBegin_end_block
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Begin_end_blockContext ctx]
+MethodInvocation:enterScope
+MethodInvocation:visitChildren
+MethodInvocation:leaveScope
+Method-name:cleanup
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:executeSql
+MethodInvocation:closeQuery
+MethodInvocation:trace
+Method-name:printExceptions
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:empty
+MethodInvocation:pop
+MethodInvocation:println
+MethodInvocation:printStackTrace
+MethodInvocation:println
+Method-name:getProgramReturnCode
+Method-returnType:Integer
+Method-parameters:[]
+MethodInvocation:empty
+MethodInvocation:pop
+MethodInvocation:parseInt
+Method-name:visitStmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.StmtContext ctx]
+MethodInvocation:semicolon_stmt
+MethodInvocation:create_procedure_stmt
+MethodInvocation:create_function_stmt
+MethodInvocation:empty
+MethodInvocation:runContinueHandler
+MethodInvocation:stackPop
+MethodInvocation:println
+MethodInvocation:toString
+MethodInvocation:visitChildren
+Method-name:visitSelect_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Select_stmtContext ctx]
+MethodInvocation:select
+Method-name:visitCte_select_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Cte_select_stmtContext ctx]
+MethodInvocation:cte
+Method-name:visitFullselect_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Fullselect_stmtContext ctx]
+MethodInvocation:fullselect
+Method-name:visitSubselect_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Subselect_stmtContext ctx]
+MethodInvocation:subselect
+Method-name:visitSelect_list
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Select_listContext ctx]
+MethodInvocation:selectList
+Method-name:visitFrom_clause
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.From_clauseContext ctx]
+MethodInvocation:from
+Method-name:visitFrom_table_name_clause
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.From_table_name_clauseContext ctx]
+MethodInvocation:fromTable
+Method-name:visitFrom_subselect_clause
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.From_subselect_clauseContext ctx]
+MethodInvocation:fromSubselect
+Method-name:visitFrom_join_clause
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.From_join_clauseContext ctx]
+MethodInvocation:fromJoin
+Method-name:visitFrom_table_values_clause
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.From_table_values_clauseContext ctx]
+MethodInvocation:fromTableValues
+Method-name:visitWhere_clause
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Where_clauseContext ctx]
+MethodInvocation:where
+Method-name:visitSelect_options_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Select_options_itemContext ctx]
+MethodInvocation:option
+Method-name:visitColumn_name
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Column_nameContext ctx]
+MethodInvocation:stackPush
+MethodInvocation:normalizeIdentifierPart
+MethodInvocation:getText
+Method-name:visitTable_name
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Table_nameContext ctx]
+MethodInvocation:getText
+MethodInvocation:toUpperCase
+MethodInvocation:normalizeObjectIdentifier
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:stackPush
+MethodInvocation:get
+MethodInvocation:stackPush
+MethodInvocation:stackPush
+Method-name:visitInsert_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Insert_stmtContext ctx]
+MethodInvocation:insert
+Method-name:visitInsert_directory_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Insert_directory_stmtContext ctx]
+MethodInvocation:insertDirectory
+Method-name:visitException_block_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Exception_block_itemContext ctx]
+MethodInvocation:empty
+MethodInvocation:pop
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:toString
+MethodInvocation:L_ID
+MethodInvocation:trace
+MethodInvocation:pop
+MethodInvocation:enterScope
+MethodInvocation:visit
+MethodInvocation:block
+MethodInvocation:leaveScope
+Method-name:visitDeclare_var_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Declare_var_itemContext ctx]
+MethodInvocation:T_ROWTYPE
+MethodInvocation:dtype
+MethodInvocation:getRowDataType
+MethodInvocation:getText
+MethodInvocation:ident
+MethodInvocation:dtype
+MethodInvocation:getDataType
+MethodInvocation:dtype_len
+MethodInvocation:getText
+MethodInvocation:L_INT
+MethodInvocation:dtype_len
+MethodInvocation:L_INT
+MethodInvocation:dtype_len
+MethodInvocation:getText
+MethodInvocation:L_INT
+MethodInvocation:dtype_len
+MethodInvocation:dtype_default
+MethodInvocation:evalPop
+MethodInvocation:dtype_default
+MethodInvocation:size
+MethodInvocation:ident
+MethodInvocation:getText
+MethodInvocation:ident
+MethodInvocation:addVariable
+MethodInvocation:T_CONSTANT
+MethodInvocation:setConstant
+MethodInvocation:trace
+MethodInvocation:toSqlString
+MethodInvocation:trace
+MethodInvocation:addVariable
+MethodInvocation:trace
+MethodInvocation:getText
+MethodInvocation:dtype
+Method-name:getDataType
+Method-returnType:String
+Method-parameters:[HplsqlParser.Declare_var_itemContext ctx]
+MethodInvocation:T_TYPE
+MethodInvocation:dtype
+MethodInvocation:getDataType
+MethodInvocation:getText
+MethodInvocation:ident
+MethodInvocation:dtype
+MethodInvocation:getFormattedText
+MethodInvocation:dtype
+Method-name:visitAllocate_cursor_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Allocate_cursor_stmtContext ctx]
+MethodInvocation:allocateCursor
+Method-name:visitAssociate_locator_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Associate_locator_stmtContext ctx]
+MethodInvocation:associateLocator
+Method-name:visitDeclare_cursor_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Declare_cursor_itemContext ctx]
+MethodInvocation:declareCursor
+Method-name:visitDescribe_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Describe_stmtContext ctx]
+MethodInvocation:describe
+Method-name:visitDrop_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Drop_stmtContext ctx]
+MethodInvocation:drop
+Method-name:visitOpen_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Open_stmtContext ctx]
+MethodInvocation:open
+Method-name:visitFetch_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Fetch_stmtContext ctx]
+MethodInvocation:fetch
+Method-name:visitClose_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Close_stmtContext ctx]
+MethodInvocation:close
+Method-name:visitCmp_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Cmp_stmtContext ctx]
+MethodInvocation:run
+Method-name:visitCopy_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Copy_stmtContext ctx]
+MethodInvocation:run
+Method-name:visitCopy_from_local_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Copy_from_local_stmtContext ctx]
+MethodInvocation:runFromLocal
+Method-name:visitDeclare_handler_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Declare_handler_itemContext ctx]
+MethodInvocation:trace
+MethodInvocation:T_CONTINUE
+MethodInvocation:ident
+MethodInvocation:getText
+MethodInvocation:ident
+MethodInvocation:T_NOT
+MethodInvocation:T_FOUND
+MethodInvocation:addHandler
+Method-name:visitDeclare_condition_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Declare_condition_itemContext ctx]
+Method-name:visitDeclare_temporary_table_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Declare_temporary_table_itemContext ctx]
+MethodInvocation:declareTemporaryTable
+Method-name:visitCreate_table_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Create_table_stmtContext ctx]
+MethodInvocation:createTable
+Method-name:visitCreate_table_options_hive_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Create_table_options_hive_itemContext ctx]
+MethodInvocation:createTableHiveOptions
+Method-name:visitCreate_table_options_ora_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Create_table_options_ora_itemContext ctx]
+Method-name:visitCreate_table_options_td_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Create_table_options_td_itemContext ctx]
+Method-name:visitCreate_table_options_mssql_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Create_table_options_mssql_itemContext ctx]
+Method-name:visitCreate_table_options_db2_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Create_table_options_db2_itemContext ctx]
+Method-name:visitCreate_table_options_mysql_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Create_table_options_mysql_itemContext ctx]
+MethodInvocation:createTableMysqlOptions
+Method-name:visitCreate_local_temp_table_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Create_local_temp_table_stmtContext ctx]
+MethodInvocation:createLocalTemporaryTable
+Method-name:visitAlter_table_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Alter_table_stmtContext ctx]
+Method-name:visitCreate_database_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Create_database_stmtContext ctx]
+MethodInvocation:createDatabase
+Method-name:visitCreate_function_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Create_function_stmtContext ctx]
+MethodInvocation:addUserFunction
+MethodInvocation:addLocalUdf
+Method-name:visitCreate_package_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Create_package_stmtContext ctx]
+MethodInvocation:toUpperCase
+MethodInvocation:getText
+MethodInvocation:ident
+MethodInvocation:put
+MethodInvocation:trace
+MethodInvocation:createSpecification
+Method-name:visitCreate_package_body_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Create_package_body_stmtContext ctx]
+MethodInvocation:toUpperCase
+MethodInvocation:getText
+MethodInvocation:ident
+MethodInvocation:get
+MethodInvocation:setAllMembersPublic
+MethodInvocation:put
+MethodInvocation:trace
+MethodInvocation:createBody
+Method-name:visitCreate_procedure_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Create_procedure_stmtContext ctx]
+MethodInvocation:addUserProcedure
+MethodInvocation:addLocalUdf
+Method-name:visitCreate_index_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Create_index_stmtContext ctx]
+Method-name:addLocalUdf
+Method-returnType:void
+Method-parameters:[ParserRuleContext ctx]
+MethodInvocation:append
+MethodInvocation:getFormattedText
+MethodInvocation:append
+Method-name:createLocalUdf
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:length
+MethodInvocation:getProperty
+MethodInvocation:print
+MethodInvocation:close
+MethodInvocation:printStackTrace
+Method-name:visitAssignment_stmt_single_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Assignment_stmt_single_itemContext ctx]
+MethodInvocation:getText
+MethodInvocation:ident
+MethodInvocation:visit
+MethodInvocation:expr
+MethodInvocation:setVariable
+MethodInvocation:trace
+MethodInvocation:toSqlString
+Method-name:visitAssignment_stmt_multiple_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Assignment_stmt_multiple_itemContext ctx]
+MethodInvocation:size
+MethodInvocation:ident
+MethodInvocation:size
+MethodInvocation:expr
+MethodInvocation:getText
+MethodInvocation:ident
+MethodInvocation:visit
+MethodInvocation:expr
+MethodInvocation:setVariable
+MethodInvocation:trace
+MethodInvocation:toString
+Method-name:visitAssignment_stmt_select_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Assignment_stmt_select_itemContext ctx]
+MethodInvocation:assignFromSelect
+Method-name:visitExpr
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.ExprContext ctx]
+MethodInvocation:execSql
+MethodInvocation:exec
+Method-name:visitBool_expr
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Bool_exprContext ctx]
+MethodInvocation:execBoolSql
+MethodInvocation:execBool
+Method-name:visitBool_expr_binary
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Bool_expr_binaryContext ctx]
+MethodInvocation:execBoolBinarySql
+MethodInvocation:execBoolBinary
+Method-name:visitBool_expr_unary
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Bool_expr_unaryContext ctx]
+MethodInvocation:execBoolUnarySql
+MethodInvocation:execBoolUnary
+Method-name:visitExpr_select
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Expr_selectContext ctx]
+MethodInvocation:select_stmt
+MethodInvocation:stackPush
+MethodInvocation:evalPop
+MethodInvocation:select_stmt
+MethodInvocation:visit
+MethodInvocation:expr
+Method-name:visitExpr_file
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Expr_fileContext ctx]
+MethodInvocation:file_name
+MethodInvocation:stackPush
+MethodInvocation:getText
+MethodInvocation:file_name
+MethodInvocation:visit
+MethodInvocation:expr
+Method-name:visitExpr_cursor_attribute
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Expr_cursor_attributeContext ctx]
+MethodInvocation:execCursorAttribute
+Method-name:visitExpr_func
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Expr_funcContext ctx]
+MethodInvocation:getText
+MethodInvocation:ident
+MethodInvocation:execSql
+MethodInvocation:expr_func_params
+MethodInvocation:getPackageCallContext
+MethodInvocation:splitIdentifier
+MethodInvocation:findPackage
+MethodInvocation:get
+MethodInvocation:execFunc
+MethodInvocation:get
+MethodInvocation:expr_func_params
+MethodInvocation:execFunc
+MethodInvocation:expr_func_params
+MethodInvocation:exec
+MethodInvocation:expr_func_params
+Method-name:visitExpr_agg_window_func
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Expr_agg_window_funcContext ctx]
+MethodInvocation:execAggWindowSql
+Method-name:visitExpr_spec_func
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Expr_spec_funcContext ctx]
+MethodInvocation:specExecSql
+MethodInvocation:specExec
+Method-name:visitInclude_stmt
+Method-returnType:Integer
+Method-parameters:[@NotNull HplsqlParser.Include_stmtContext ctx]
+MethodInvocation:include
+Method-name:visitIf_plsql_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.If_plsql_stmtContext ctx]
+MethodInvocation:ifPlsql
+Method-name:visitIf_tsql_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.If_tsql_stmtContext ctx]
+MethodInvocation:ifTsql
+Method-name:visitIf_bteq_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.If_bteq_stmtContext ctx]
+MethodInvocation:ifBteq
+Method-name:visitUse_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Use_stmtContext ctx]
+MethodInvocation:use
+Method-name:visitValues_into_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Values_into_stmtContext ctx]
+MethodInvocation:values
+Method-name:visitWhile_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.While_stmtContext ctx]
+MethodInvocation:while_
+Method-name:visitFor_cursor_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.For_cursor_stmtContext ctx]
+MethodInvocation:forCursor
+Method-name:visitFor_range_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.For_range_stmtContext ctx]
+MethodInvocation:forRange
+Method-name:visitExec_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Exec_stmtContext ctx]
+MethodInvocation:exec
+Method-name:visitCall_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Call_stmtContext ctx]
+MethodInvocation:getText
+MethodInvocation:ident
+MethodInvocation:getPackageCallContext
+MethodInvocation:splitIdentifier
+MethodInvocation:findPackage
+MethodInvocation:get
+MethodInvocation:execProc
+MethodInvocation:get
+MethodInvocation:expr_func_params
+MethodInvocation:execProc
+MethodInvocation:expr_func_params
+MethodInvocation:execProc
+MethodInvocation:expr_func_params
+Method-name:visitExit_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Exit_stmtContext ctx]
+MethodInvocation:exit
+Method-name:visitBreak_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Break_stmtContext ctx]
+MethodInvocation:break_
+Method-name:visitLeave_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Leave_stmtContext ctx]
+MethodInvocation:leave
+Method-name:visitPrint_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Print_stmtContext ctx]
+MethodInvocation:print
+Method-name:visitQuit_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Quit_stmtContext ctx]
+MethodInvocation:quit
+Method-name:visitSignal_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Signal_stmtContext ctx]
+MethodInvocation:signal
+Method-name:visitSummary_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Summary_stmtContext ctx]
+MethodInvocation:summary
+Method-name:visitResignal_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Resignal_stmtContext ctx]
+MethodInvocation:resignal
+Method-name:visitReturn_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Return_stmtContext ctx]
+MethodInvocation:return_
+Method-name:visitSet_current_schema_option
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Set_current_schema_optionContext ctx]
+MethodInvocation:setCurrentSchema
+Method-name:visitTruncate_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Truncate_stmtContext ctx]
+MethodInvocation:truncate
+Method-name:visitMap_object_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Map_object_stmtContext ctx]
+MethodInvocation:toString
+MethodInvocation:evalPop
+MethodInvocation:expr
+MethodInvocation:T_TO
+MethodInvocation:toString
+MethodInvocation:evalPop
+MethodInvocation:expr
+MethodInvocation:put
+MethodInvocation:toUpperCase
+MethodInvocation:T_AT
+MethodInvocation:T_TO
+MethodInvocation:toString
+MethodInvocation:evalPop
+MethodInvocation:expr
+MethodInvocation:toString
+MethodInvocation:evalPop
+MethodInvocation:expr
+MethodInvocation:put
+MethodInvocation:toUpperCase
+MethodInvocation:trace
+Method-name:visitUpdate_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Update_stmtContext ctx]
+MethodInvocation:update
+Method-name:visitDelete_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Delete_stmtContext ctx]
+MethodInvocation:delete
+Method-name:visitMerge_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Merge_stmtContext ctx]
+MethodInvocation:merge
+Method-name:visitHive
+Method-returnType:Integer
+Method-parameters:[@NotNull HplsqlParser.HiveContext ctx]
+MethodInvocation:trace
+MethodInvocation:add
+MethodInvocation:stackPush
+MethodInvocation:visitChildren
+MethodInvocation:stackPop
+MethodInvocation:size
+MethodInvocation:toArray
+MethodInvocation:trace
+MethodInvocation:toString
+MethodInvocation:exec
+MethodInvocation:getRuntime
+MethodInvocation:start
+MethodInvocation:getInputStream
+MethodInvocation:start
+MethodInvocation:getErrorStream
+MethodInvocation:waitFor
+MethodInvocation:trace
+MethodInvocation:setSqlCode
+MethodInvocation:signal
+MethodInvocation:getMessage
+Method-name:visitHive_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Hive_itemContext ctx]
+MethodInvocation:stackPeek
+MethodInvocation:getText
+MethodInvocation:getChild
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:toString
+MethodInvocation:evalPop
+MethodInvocation:expr
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:toString
+MethodInvocation:evalPop
+MethodInvocation:expr
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:toString
+MethodInvocation:L_ID
+MethodInvocation:toString
+MethodInvocation:evalPop
+MethodInvocation:expr
+Method-name:visitHost_cmd
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Host_cmdContext ctx]
+MethodInvocation:trace
+MethodInvocation:execHost
+MethodInvocation:getText
+MethodInvocation:getInputStream
+MethodInvocation:getStartIndex
+MethodInvocation:getStopIndex
+Method-name:visitHost_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Host_stmtContext ctx]
+MethodInvocation:trace
+MethodInvocation:execHost
+MethodInvocation:toString
+MethodInvocation:evalPop
+MethodInvocation:expr
+Method-name:execHost
+Method-returnType:void
+Method-parameters:[ParserRuleContext ctx, String cmd]
+MethodInvocation:trace
+MethodInvocation:exec
+MethodInvocation:getRuntime
+MethodInvocation:start
+MethodInvocation:getInputStream
+MethodInvocation:start
+MethodInvocation:getErrorStream
+MethodInvocation:waitFor
+MethodInvocation:trace
+MethodInvocation:setHostCode
+MethodInvocation:setHostCode
+MethodInvocation:signal
+Method-name:visitExpr_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Expr_stmtContext ctx]
+MethodInvocation:visitChildren
+Method-name:visitExpr_concat
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Expr_concatContext ctx]
+MethodInvocation:operatorConcatSql
+MethodInvocation:operatorConcat
+Method-name:visitExpr_case_simple
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Expr_case_simpleContext ctx]
+MethodInvocation:execSimpleCaseSql
+MethodInvocation:execSimpleCase
+Method-name:visitExpr_case_searched
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Expr_case_searchedContext ctx]
+MethodInvocation:execSearchedCaseSql
+MethodInvocation:execSearchedCase
+Method-name:visitGet_diag_stmt_exception_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Get_diag_stmt_exception_itemContext ctx]
+MethodInvocation:getDiagnosticsException
+Method-name:visitGet_diag_stmt_rowcount_item
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Get_diag_stmt_rowcount_itemContext ctx]
+MethodInvocation:getDiagnosticsRowCount
+Method-name:visitGrant_stmt
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Grant_stmtContext ctx]
+MethodInvocation:trace
+Method-name:visitLabel
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.LabelContext ctx]
+MethodInvocation:L_ID
+MethodInvocation:push
+MethodInvocation:toString
+MethodInvocation:L_ID
+MethodInvocation:getText
+MethodInvocation:L_LABEL
+MethodInvocation:endsWith
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:push
+Method-name:visitIdent
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.IdentContext ctx]
+MethodInvocation:getText
+MethodInvocation:startsWith
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:findVariable
+MethodInvocation:negate
+MethodInvocation:stackPush
+MethodInvocation:stackPush
+MethodInvocation:stackPush
+MethodInvocation:toSqlString
+MethodInvocation:isProc
+MethodInvocation:execProc
+MethodInvocation:stackPush
+Method-name:visitSingle_quotedString
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Single_quotedStringContext ctx]
+MethodInvocation:stackPush
+MethodInvocation:getText
+MethodInvocation:stackPush
+MethodInvocation:unquoteString
+MethodInvocation:getText
+Method-name:visitInt_number
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Int_numberContext ctx]
+MethodInvocation:push
+MethodInvocation:valueOf
+MethodInvocation:getText
+Method-name:visitExpr_interval
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Expr_intervalContext ctx]
+MethodInvocation:intValue
+MethodInvocation:evalPop
+MethodInvocation:expr
+MethodInvocation:set
+MethodInvocation:getText
+MethodInvocation:interval_item
+MethodInvocation:stackPush
+Method-name:visitDec_number
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Dec_numberContext ctx]
+MethodInvocation:stackPush
+MethodInvocation:getText
+Method-name:visitBool_literal
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Bool_literalContext ctx]
+MethodInvocation:T_FALSE
+MethodInvocation:stackPush
+MethodInvocation:valueOf
+Method-name:visitNull_const
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Null_constContext ctx]
+MethodInvocation:stackPush
+Method-name:visitDate_literal
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Date_literalContext ctx]
+MethodInvocation:toString
+MethodInvocation:evalPop
+MethodInvocation:string
+MethodInvocation:stackPush
+MethodInvocation:toDate
+MethodInvocation:stackPush
+MethodInvocation:getFormattedText
+Method-name:visitTimestamp_literal
+Method-returnType:Integer
+Method-parameters:[HplsqlParser.Timestamp_literalContext ctx]
+MethodInvocation:toString
+MethodInvocation:evalPop
+MethodInvocation:string
+MethodInvocation:length
+MethodInvocation:stackPush
+MethodInvocation:toTimestamp
+MethodInvocation:stackPush
+MethodInvocation:getFormattedText
+Method-name:getPackageCallContext
+Method-returnType:Package
+Method-parameters:[]
+Method-name:getStatementConnection
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:contains
+MethodInvocation:isEmpty
+MethodInvocation:get
+Method-name:getObjectConnection
+Method-returnType:String
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:toUpperCase
+Method-name:getConnection
+Method-returnType:Connection
+Method-parameters:[String conn]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getConnection
+Method-name:returnConnection
+Method-returnType:void
+Method-parameters:[String name, Connection conn]
+MethodInvocation:returnConnection
+Method-name:getConnectionType
+Method-returnType:Conn.Type
+Method-parameters:[String conn]
+MethodInvocation:getTypeByProfile
+Method-name:getConnectionType
+Method-returnType:Conn.Type
+Method-parameters:[]
+MethodInvocation:getConnectionType
+Method-name:addManagedTable
+Method-returnType:void
+Method-parameters:[String name, String managedName]
+MethodInvocation:put
+Method-name:getText
+Method-returnType:String
+Method-parameters:[ParserRuleContext ctx]
+MethodInvocation:getText
+MethodInvocation:getInputStream
+MethodInvocation:getStartIndex
+MethodInvocation:getStopIndex
+Method-name:getText
+Method-returnType:String
+Method-parameters:[ParserRuleContext ctx, Token start, Token stop]
+MethodInvocation:getText
+MethodInvocation:getInputStream
+MethodInvocation:getStartIndex
+MethodInvocation:getStopIndex
+Method-name:append
+Method-returnType:void
+Method-parameters:[StringBuilder str, String appendStr, Token start, Token stop]
+MethodInvocation:getText
+MethodInvocation:getInputStream
+MethodInvocation:getStartIndex
+MethodInvocation:getStopIndex
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:getText
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:getText
+MethodInvocation:append
+MethodInvocation:append
+Method-name:append
+Method-returnType:void
+Method-parameters:[StringBuilder str, TerminalNode start, TerminalNode stop]
+MethodInvocation:getText
+MethodInvocation:getInputStream
+MethodInvocation:getSymbol
+MethodInvocation:getStartIndex
+MethodInvocation:getSymbol
+MethodInvocation:getStopIndex
+MethodInvocation:getSymbol
+MethodInvocation:append
+Method-name:nvl
+Method-returnType:TerminalNode
+Method-parameters:[TerminalNode t1, TerminalNode t2]
+Method-name:evalPop
+Method-returnType:Var
+Method-parameters:[ParserRuleContext ctx]
+MethodInvocation:visit
+MethodInvocation:isEmpty
+MethodInvocation:stackPop
+Method-name:evalPop
+Method-returnType:Var
+Method-parameters:[ParserRuleContext ctx, long def]
+MethodInvocation:visit
+MethodInvocation:isEmpty
+MethodInvocation:stackPop
+Method-name:evalPop
+Method-returnType:String
+Method-parameters:[HplsqlParser.DtypeContext type, HplsqlParser.Dtype_lenContext len]
+MethodInvocation:isConvert
+MethodInvocation:dataType
+MethodInvocation:getText
+MethodInvocation:getStart
+MethodInvocation:getStop
+Method-name:evalNull
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:stackPush
+Method-name:getFormattedText
+Method-returnType:String
+Method-parameters:[ParserRuleContext ctx]
+MethodInvocation:getText
+MethodInvocation:getInputStream
+MethodInvocation:getStartIndex
+MethodInvocation:getStopIndex
+Method-name:setUdfRun
+Method-returnType:void
+Method-parameters:[boolean udfRun]
+FieldAccess:udfRun
+Method-name:isConvert
+Method-returnType:boolean
+Method-parameters:[String connName]
+MethodInvocation:getConnectionConvert
+Method-name:incRowCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:setRowCount
+Method-returnType:void
+Method-parameters:[int rowCount]
+Method-name:trace
+Method-returnType:void
+Method-parameters:[ParserRuleContext ctx, String message]
+MethodInvocation:println
+MethodInvocation:getLine
+MethodInvocation:getStart
+MethodInvocation:println
+Method-name:trace
+Method-returnType:void
+Method-parameters:[ParserRuleContext ctx, Var var, ResultSet rs, ResultSetMetaData rm, int idx]
+MethodInvocation:trace
+MethodInvocation:getColumnName
+MethodInvocation:getColumnTypeName
+MethodInvocation:trace
+MethodInvocation:getName
+MethodInvocation:toString
+MethodInvocation:size
+MethodInvocation:getValue
+MethodInvocation:trace
+MethodInvocation:getColumnName
+MethodInvocation:getColumnTypeName
+MethodInvocation:trace
+MethodInvocation:getName
+MethodInvocation:toString
+Method-name:info
+Method-returnType:void
+Method-parameters:[ParserRuleContext ctx, String message]
+MethodInvocation:println
+MethodInvocation:getLine
+MethodInvocation:getStart
+MethodInvocation:println
+Method-name:error
+Method-returnType:void
+Method-parameters:[ParserRuleContext ctx, String message]
+MethodInvocation:println
+MethodInvocation:getLine
+MethodInvocation:getStart
+MethodInvocation:println
+Method-name:getStack
+Method-returnType:Stack<Var>
+Method-parameters:[]
+Method-name:getRowCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:getConf
+Method-returnType:Conf
+Method-parameters:[]
+Method-name:getMeta
+Method-returnType:Meta
+Method-parameters:[]
+Method-name:getTrace
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getInfo
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getOffline
+Method-returnType:boolean
+Method-parameters:[]

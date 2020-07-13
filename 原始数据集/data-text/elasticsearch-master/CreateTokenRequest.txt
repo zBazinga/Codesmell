@@ -1,0 +1,156 @@
+Class:CreateTokenRequest
+Method-name:extractAuthenticationToken
+Method-returnType:AuthenticationToken
+Method-parameters:[GrantType grantType, ActionListener<CreateTokenResponse> listener, TransportCreateTokenAction transportCreateTokenAction]
+MethodInvocation:getUsername
+MethodInvocation:getPassword
+MethodInvocation:getKerberosTicket
+MethodInvocation:toString
+MethodInvocation:decode
+MethodInvocation:getDecoder
+MethodInvocation:onFailure
+Field:GrantType
+Field:value
+Method-name:GrantType
+Method-returnType:null
+Method-parameters:[String value]
+FieldAccess:value
+Method-name:getValue
+Method-returnType:String
+Method-parameters:[]
+Method-name:fromString
+Method-returnType:GrantType
+Method-parameters:[String grantType]
+MethodInvocation:values
+MethodInvocation:equals
+MethodInvocation:getValue
+Field:SUPPORTED_GRANT_TYPES
+MethodInvocation:unmodifiableSet
+MethodInvocation:of
+Field:grantType
+Field:username
+Field:password
+Field:kerberosTicket
+Field:scope
+Field:refreshToken
+Method-name:CreateTokenRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readString
+MethodInvocation:readOptionalString
+MethodInvocation:readOptionalSecureString
+MethodInvocation:readOptionalString
+MethodInvocation:readOptionalString
+MethodInvocation:readOptionalSecureString
+Method-name:CreateTokenRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:CreateTokenRequest
+Method-returnType:null
+Method-parameters:[String grantType, @Nullable String username, @Nullable SecureString password, @Nullable SecureString kerberosTicket, @Nullable String scope, @Nullable String refreshToken]
+FieldAccess:grantType
+FieldAccess:username
+FieldAccess:password
+FieldAccess:kerberosTicket
+FieldAccess:scope
+FieldAccess:refreshToken
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+MethodInvocation:fromString
+MethodInvocation:validateUnsupportedField
+MethodInvocation:validateUnsupportedField
+MethodInvocation:validateRequiredField
+MethodInvocation:validateRequiredField
+MethodInvocation:validateUnsupportedField
+MethodInvocation:validateUnsupportedField
+MethodInvocation:validateUnsupportedField
+MethodInvocation:validateRequiredField
+MethodInvocation:validateUnsupportedField
+MethodInvocation:validateUnsupportedField
+MethodInvocation:validateUnsupportedField
+MethodInvocation:validateRequiredField
+MethodInvocation:validateUnsupportedField
+MethodInvocation:validateUnsupportedField
+MethodInvocation:validateUnsupportedField
+MethodInvocation:validateUnsupportedField
+MethodInvocation:addValidationError
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:joining
+MethodInvocation:addValidationError
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:joining
+Method-name:validateRequiredField
+Method-returnType:ActionRequestValidationException
+Method-parameters:[String field, String fieldValue, ActionRequestValidationException validationException]
+MethodInvocation:isNullOrEmpty
+MethodInvocation:addValidationError
+MethodInvocation:format
+Method-name:validateRequiredField
+Method-returnType:ActionRequestValidationException
+Method-parameters:[String field, SecureString fieldValue, ActionRequestValidationException validationException]
+MethodInvocation:getChars
+MethodInvocation:length
+MethodInvocation:addValidationError
+MethodInvocation:format
+Method-name:validateUnsupportedField
+Method-returnType:ActionRequestValidationException
+Method-parameters:[GrantType grantType, String field, Object fieldValue, ActionRequestValidationException validationException]
+MethodInvocation:addValidationError
+MethodInvocation:format
+MethodInvocation:getValue
+Method-name:setGrantType
+Method-returnType:void
+Method-parameters:[String grantType]
+FieldAccess:grantType
+Method-name:setUsername
+Method-returnType:void
+Method-parameters:[@Nullable String username]
+FieldAccess:username
+Method-name:setPassword
+Method-returnType:void
+Method-parameters:[@Nullable SecureString password]
+FieldAccess:password
+Method-name:setKerberosTicket
+Method-returnType:void
+Method-parameters:[@Nullable SecureString kerberosTicket]
+FieldAccess:kerberosTicket
+Method-name:setScope
+Method-returnType:void
+Method-parameters:[@Nullable String scope]
+FieldAccess:scope
+Method-name:setRefreshToken
+Method-returnType:void
+Method-parameters:[@Nullable String refreshToken]
+FieldAccess:refreshToken
+Method-name:getGrantType
+Method-returnType:String
+Method-parameters:[]
+Method-name:getUsername
+Method-returnType:String
+Method-parameters:[]
+Method-name:getPassword
+Method-returnType:SecureString
+Method-parameters:[]
+Method-name:getKerberosTicket
+Method-returnType:SecureString
+Method-parameters:[]
+Method-name:getScope
+Method-returnType:String
+Method-parameters:[]
+Method-name:getRefreshToken
+Method-returnType:String
+Method-parameters:[]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeString
+MethodInvocation:writeOptionalString
+MethodInvocation:writeOptionalSecureString
+MethodInvocation:writeOptionalString
+MethodInvocation:writeOptionalString
+MethodInvocation:writeOptionalSecureString

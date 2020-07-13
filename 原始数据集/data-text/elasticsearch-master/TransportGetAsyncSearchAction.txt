@@ -1,0 +1,80 @@
+Class:TransportGetAsyncSearchAction
+Field:logger
+MethodInvocation:getLogger
+Field:clusterService
+Field:transportService
+Field:store
+Method-name:TransportGetAsyncSearchAction
+Method-returnType:null
+Method-parameters:[TransportService transportService, ActionFilters actionFilters, ClusterService clusterService, NamedWriteableRegistry registry, Client client, ThreadPool threadPool]
+FieldAccess:clusterService
+FieldAccess:transportService
+FieldAccess:store
+MethodInvocation:getThreadContext
+Method-name:doExecute
+Method-returnType:void
+Method-parameters:[Task task, GetAsyncSearchAction.Request request, ActionListener<AsyncSearchResponse> listener]
+MethodInvocation:currentTimeMillis
+MethodInvocation:decode
+MethodInvocation:getId
+MethodInvocation:get
+MethodInvocation:nodes
+MethodInvocation:state
+MethodInvocation:getNodeId
+MethodInvocation:getTaskId
+MethodInvocation:equals
+MethodInvocation:getId
+MethodInvocation:localNode
+MethodInvocation:getNodeId
+MethodInvocation:getTaskId
+MethodInvocation:getMillis
+MethodInvocation:getKeepAlive
+MethodInvocation:getMillis
+MethodInvocation:getKeepAlive
+MethodInvocation:updateExpirationTime
+MethodInvocation:getDocId
+MethodInvocation:wrap
+MethodInvocation:getSearchResponseFromTask
+MethodInvocation:status
+MethodInvocation:unwrapCause
+MethodInvocation:error
+MethodInvocation:getEncoded
+MethodInvocation:onFailure
+MethodInvocation:getEncoded
+MethodInvocation:getSearchResponseFromTask
+MethodInvocation:builder
+MethodInvocation:sendRequest
+MethodInvocation:build
+MethodInvocation:onFailure
+Method-name:getSearchResponseFromTask
+Method-returnType:void
+Method-parameters:[AsyncExecutionId searchId, GetAsyncSearchAction.Request request, long nowInMillis, long expirationTimeMillis, ActionListener<AsyncSearchResponse> listener]
+MethodInvocation:getTask
+MethodInvocation:getSearchResponseFromIndex
+MethodInvocation:isCancelled
+MethodInvocation:onFailure
+MethodInvocation:getEncoded
+MethodInvocation:setExpirationTime
+MethodInvocation:addCompletionListener
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[AsyncSearchResponse response]
+MethodInvocation:sendFinalResponse
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception exc]
+MethodInvocation:onFailure
+MethodInvocation:getWaitForCompletion
+MethodInvocation:onFailure
+Method-name:getSearchResponseFromIndex
+Method-returnType:void
+Method-parameters:[AsyncExecutionId searchId, GetAsyncSearchAction.Request request, long nowInMillis, ActionListener<AsyncSearchResponse> listener]
+MethodInvocation:getResponse
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[AsyncSearchResponse response]
+MethodInvocation:sendFinalResponse
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:onFailure

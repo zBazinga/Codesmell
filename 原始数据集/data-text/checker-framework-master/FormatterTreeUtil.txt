@@ -1,0 +1,189 @@
+Class:FormatterTreeUtil
+Field:checker
+Field:processingEnv
+Method-name:FormatterTreeUtil
+Method-returnType:null
+Method-parameters:[BaseTypeChecker checker]
+FieldAccess:checker
+FieldAccess:processingEnv
+MethodInvocation:getProcessingEnvironment
+Field:InvocationType
+Class:Result
+Field:value
+Field:location
+Method-name:Result
+Method-returnType:null
+Method-parameters:[E value, ExpressionTree location]
+FieldAccess:value
+FieldAccess:location
+Method-name:value
+Method-returnType:E
+Method-parameters:[]
+Method-name:asFormatCallCategoriesLowLevel
+Method-returnType:ConversionCategory[]
+Method-parameters:[MethodInvocationNode node]
+MethodInvocation:getArgument
+MethodInvocation:getInitializers
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:typeMirrorToClass
+MethodInvocation:getType
+MethodInvocation:valueOf
+MethodInvocation:getFieldName
+Method-name:asFormatCallCategories
+Method-returnType:Result<ConversionCategory[]>
+Method-parameters:[MethodInvocationNode node]
+MethodInvocation:asFormatCallCategoriesLowLevel
+MethodInvocation:getTree
+Method-name:isFormatCall
+Method-returnType:boolean
+Method-parameters:[MethodInvocationTree node, AnnotatedTypeFactory atypeFactory]
+MethodInvocation:elementFromUse
+MethodInvocation:getDeclAnnotation
+Method-name:isLocale
+Method-returnType:boolean
+Method-parameters:[ExpressionTree e, AnnotatedTypeFactory atypeFactory]
+MethodInvocation:typeMirrorToClass
+MethodInvocation:getUnderlyingType
+MethodInvocation:getAnnotatedType
+Class:FormatCall
+Field:formatAnno
+Field:args
+Field:node
+Field:formatArg
+Field:atypeFactory
+Method-name:FormatCall
+Method-returnType:null
+Method-parameters:[MethodInvocationTree node, AnnotatedTypeFactory atypeFactory]
+FieldAccess:node
+FieldAccess:atypeFactory
+MethodInvocation:getArguments
+MethodInvocation:isLocale
+MethodInvocation:get
+MethodInvocation:subList
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getAnnotatedType
+FieldAccess:args
+MethodInvocation:subList
+MethodInvocation:size
+Method-name:hasFormatAnnotation
+Method-returnType:Result<String>
+Method-parameters:[]
+MethodInvocation:hasAnnotation
+MethodInvocation:getAnnotation
+MethodInvocation:invalidFormatAnnotationToErrorMessage
+Method-name:getInvocationType
+Method-returnType:Result<InvocationType>
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getUnderlyingType
+MethodInvocation:getAnnotatedType
+MethodInvocation:accept
+Method-name:defaultAction
+Method-returnType:InvocationType
+Method-parameters:[TypeMirror e, Class<Void> p]
+Method-name:visitArray
+Method-returnType:InvocationType
+Method-parameters:[ArrayType t, Class<Void> p]
+MethodInvocation:accept
+Method-name:defaultAction
+Method-returnType:InvocationType
+Method-parameters:[Tree node, Class<Void> p]
+Method-name:visitTypeCast
+Method-returnType:InvocationType
+Method-parameters:[TypeCastTree node, Class<Void> p]
+MethodInvocation:getKind
+MethodInvocation:getUnderlyingType
+MethodInvocation:getAnnotatedType
+MethodInvocation:getExpression
+Method-name:visitNull
+Method-returnType:InvocationType
+Method-parameters:[NullType t, Class<Void> p]
+MethodInvocation:getMethodSelect
+MethodInvocation:isEmpty
+MethodInvocation:get
+Method-name:getFormatCategories
+Method-returnType:ConversionCategory[]
+Method-parameters:[]
+MethodInvocation:getAnnotation
+MethodInvocation:formatAnnotationToCategories
+Method-name:getParamTypes
+Method-returnType:Result<TypeMirror>[]
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getUnderlyingType
+MethodInvocation:getAnnotatedType
+Method-name:isValidParameter
+Method-returnType:boolean
+Method-parameters:[ConversionCategory formatCat, TypeMirror paramType]
+MethodInvocation:typeMirrorToClass
+MethodInvocation:isAssignableFrom
+Method-name:isParameterNull
+Method-returnType:boolean
+Method-parameters:[TypeMirror type]
+MethodInvocation:accept
+Method-name:defaultAction
+Method-returnType:Boolean
+Method-parameters:[TypeMirror e, Class<Void> p]
+Method-name:visitNull
+Method-returnType:Boolean
+Method-parameters:[NullType t, Class<Void> p]
+Method-name:failure
+Method-returnType:void
+Method-parameters:[Result<?> res, @CompilerMessageKey String msgKey, Object... args]
+MethodInvocation:reportError
+Method-name:warning
+Method-returnType:void
+Method-parameters:[Result<?> res, @CompilerMessageKey String msgKey, Object... args]
+MethodInvocation:reportWarning
+Method-name:exceptionToInvalidFormatAnnotation
+Method-returnType:AnnotationMirror
+Method-parameters:[IllegalFormatException ex]
+MethodInvocation:stringToInvalidFormatAnnotation
+MethodInvocation:getMessage
+Method-name:stringToInvalidFormatAnnotation
+Method-returnType:AnnotationMirror
+Method-parameters:[String invalidFormatString]
+MethodInvocation:getCanonicalName
+MethodInvocation:setValue
+MethodInvocation:build
+Method-name:invalidFormatAnnotationToErrorMessage
+Method-returnType:String
+Method-parameters:[AnnotationMirror anno]
+MethodInvocation:getElementValue
+Method-name:categoriesToFormatAnnotation
+Method-returnType:AnnotationMirror
+Method-parameters:[ConversionCategory[] args]
+MethodInvocation:getCanonicalName
+MethodInvocation:setValue
+MethodInvocation:build
+Method-name:formatAnnotationToCategories
+Method-returnType:ConversionCategory[]
+Method-parameters:[AnnotationMirror anno]
+MethodInvocation:getElementValueEnumArray
+MethodInvocation:toArray
+Class:TypeMirrorToClassVisitor
+Method-name:visitPrimitive
+Method-returnType:Class<? extends Object>
+Method-parameters:[PrimitiveType t, Class<Void> v]
+MethodInvocation:getKind
+Method-name:visitDeclared
+Method-returnType:Class<? extends Object>
+Method-parameters:[DeclaredType dt, Class<Void> v]
+MethodInvocation:accept
+MethodInvocation:asElement
+Method-name:visitType
+Method-returnType:Class<? extends Object>
+Method-parameters:[TypeElement e, Class<Void> v]
+MethodInvocation:toString
+MethodInvocation:getQualifiedName
+MethodInvocation:forName
+Field:typeMirrorToClassVisitor
+Method-name:typeMirrorToClass
+Method-returnType:Class<? extends Object>
+Method-parameters:[final TypeMirror type]
+MethodInvocation:accept

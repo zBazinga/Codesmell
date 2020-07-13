@@ -1,0 +1,110 @@
+Class:OpenOfficePreferences
+Field:DEFAULT_WINDOWS_PATH
+Field:DEFAULT_WIN_EXEC_PATH
+Field:WINDOWS_EXECUTABLE
+Field:DEFAULT_OSX_PATH
+Field:DEFAULT_OSX_EXEC_PATH
+Field:OSX_EXECUTABLE
+Field:DEFAULT_LINUX_PATH
+Field:DEFAULT_LINUX_EXEC_PATH
+Field:LINUX_EXECUTABLE
+Field:OO_JARS
+MethodInvocation:asList
+Field:executablePath
+Field:installationPath
+Field:useAllDatabases
+Field:syncWhenCiting
+Field:showPanel
+Field:externalStyles
+Field:currentStyle
+Field:jarsPath
+Method-name:OpenOfficePreferences
+Method-returnType:null
+Method-parameters:[String jarsPath, String executablePath, String installationPath, boolean useAllDatabases, boolean syncWhenCiting, boolean showPanel, List<String> externalStyles, String currentStyle]
+FieldAccess:jarsPath
+FieldAccess:executablePath
+FieldAccess:installationPath
+FieldAccess:useAllDatabases
+FieldAccess:syncWhenCiting
+FieldAccess:showPanel
+FieldAccess:externalStyles
+FieldAccess:currentStyle
+Method-name:clearCurrentStyle
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:currentStyle
+Method-name:getExecutablePath
+Method-returnType:String
+Method-parameters:[]
+Method-name:setExecutablePath
+Method-returnType:void
+Method-parameters:[String executablePath]
+FieldAccess:executablePath
+Method-name:getInstallationPath
+Method-returnType:String
+Method-parameters:[]
+Method-name:setInstallationPath
+Method-returnType:void
+Method-parameters:[String installationPath]
+FieldAccess:installationPath
+Method-name:getUseAllDatabases
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setUseAllDatabases
+Method-returnType:void
+Method-parameters:[Boolean useAllDatabases]
+FieldAccess:useAllDatabases
+Method-name:getSyncWhenCiting
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setSyncWhenCiting
+Method-returnType:void
+Method-parameters:[boolean syncWhenCiting]
+FieldAccess:syncWhenCiting
+Method-name:getShowPanel
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setShowPanel
+Method-returnType:void
+Method-parameters:[boolean showPanel]
+FieldAccess:showPanel
+Method-name:getExternalStyles
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setExternalStyles
+Method-returnType:void
+Method-parameters:[List<String> externalStyles]
+FieldAccess:externalStyles
+Method-name:getCurrentStyle
+Method-returnType:String
+Method-parameters:[]
+Method-name:setCurrentStyle
+Method-returnType:void
+Method-parameters:[String currentStyle]
+FieldAccess:currentStyle
+Method-name:getJarsPath
+Method-returnType:String
+Method-parameters:[]
+Method-name:setJarsPath
+Method-returnType:void
+Method-parameters:[String jarsPath]
+FieldAccess:jarsPath
+Method-name:updateConnectionParams
+Method-returnType:void
+Method-parameters:[String ooPath, String execPath, String jarsPath]
+MethodInvocation:setInstallationPath
+MethodInvocation:setExecutablePath
+MethodInvocation:setJarsPath
+Method-name:clearConnectionSettings
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:installationPath
+FieldAccess:executablePath
+FieldAccess:jarsPath
+Method-name:checkAutoDetectedPaths
+Method-returnType:boolean
+Method-parameters:[DetectOpenOfficeInstallation detectOpenOfficeInstallation]
+MethodInvocation:getExecutablePath
+MethodInvocation:isNullOrEmpty
+MethodInvocation:exists
+MethodInvocation:of

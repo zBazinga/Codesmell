@@ -1,0 +1,74 @@
+Class:ActionsManager
+Field:log
+MethodInvocation:getLogger
+Field:actionMethodParser
+Field:actionsCount
+Field:asyncMode
+Field:routes
+Field:runtimes
+Field:pathAliases
+Method-name:ActionsManager
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:routes
+FieldAccess:pathAliases
+FieldAccess:runtimes
+FieldAccess:asyncMode
+Method-name:getAllActionRuntimes
+Method-returnType:List<ActionRuntime>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getAllAliases
+Method-returnType:Map<String,String>
+Method-parameters:[]
+Method-name:getActionsCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:isAsyncModeOn
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:resolveActionMethod
+Method-returnType:Method
+Method-parameters:[final Class<?> actionClass, final String methodName]
+MethodInvocation:getMethodDescriptor
+MethodInvocation:lookup
+MethodInvocation:get
+MethodInvocation:getSimpleName
+MethodInvocation:getMethod
+Method-name:registerAction
+Method-returnType:ActionRuntime
+Method-parameters:[final Class actionClass, final Method actionMethod, final ActionDefinition actionDefinition]
+MethodInvocation:parse
+MethodInvocation:registerActionRuntime
+Method-name:registerActionRuntime
+Method-returnType:ActionRuntime
+Method-parameters:[final ActionRuntime actionRuntime]
+MethodInvocation:getActionPath
+MethodInvocation:getActionMethod
+MethodInvocation:debug
+MethodInvocation:ifNotNull
+MethodInvocation:getActionPath
+MethodInvocation:createActionString
+MethodInvocation:registerPath
+MethodInvocation:value
+MethodInvocation:value
+MethodInvocation:bind
+MethodInvocation:put
+MethodInvocation:createActionString
+MethodInvocation:isAsync
+Method-name:lookup
+Method-returnType:ActionRuntime
+Method-parameters:[final String method, final String[] actionPath]
+MethodInvocation:lookup
+Method-name:lookup
+Method-returnType:ActionRuntime
+Method-parameters:[final String actionString]
+MethodInvocation:get
+Method-name:registerPathAlias
+Method-returnType:void
+Method-parameters:[final String alias, final String path]
+MethodInvocation:put
+Method-name:lookupPathAlias
+Method-returnType:String
+Method-parameters:[final String alias]
+MethodInvocation:get

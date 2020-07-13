@@ -1,0 +1,454 @@
+Class:PersistentTasksCustomMetadata
+Field:TYPE
+Field:API_CONTEXT
+MethodInvocation:toString
+Field:LOST_NODE_ASSIGNMENT
+Field:tasks
+Field:lastAllocationId
+Method-name:PersistentTasksCustomMetadata
+Method-returnType:null
+Method-parameters:[long lastAllocationId, Map<String,PersistentTask<?>> tasks]
+FieldAccess:lastAllocationId
+FieldAccess:tasks
+Field:PERSISTENT_TASKS_PARSER
+Field:PERSISTENT_TASK_PARSER
+Field:ASSIGNMENT_PARSER
+Field:TASK_DESCRIPTION_PARSER
+MethodInvocation:declareLong
+MethodInvocation:declareObjectArray
+MethodInvocation:declareObject
+MethodInvocation:namedObject
+MethodInvocation:declareObject
+MethodInvocation:namedObject
+MethodInvocation:parse
+MethodInvocation:declareStringOrNull
+MethodInvocation:constructorArg
+MethodInvocation:declareStringOrNull
+MethodInvocation:constructorArg
+MethodInvocation:declareString
+MethodInvocation:declareString
+MethodInvocation:declareLong
+MethodInvocation:declareNamedObjects
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:setTaskName
+MethodInvocation:setParams
+MethodInvocation:setState
+MethodInvocation:declareObject
+MethodInvocation:declareLong
+Method-name:getPersistentTasksCustomMetadata
+Method-returnType:PersistentTasksCustomMetadata
+Method-parameters:[ClusterState clusterState]
+MethodInvocation:custom
+MethodInvocation:getMetadata
+Method-name:isAnyTaskUnassigned
+Method-returnType:boolean
+Method-parameters:[PersistentTasksClusterService persistentTasksClusterService]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:tasks
+MethodInvocation:isAssigned
+MethodInvocation:getAssignment
+Class:TaskDescriptionBuilder
+Field:taskName
+Field:params
+Field:state
+Method-name:TaskDescriptionBuilder
+Method-returnType:null
+Method-parameters:[String taskName]
+FieldAccess:taskName
+Method-name:setParams
+Method-returnType:TaskDescriptionBuilder
+Method-parameters:[Params params]
+FieldAccess:params
+Method-name:setState
+Method-returnType:TaskDescriptionBuilder
+Method-parameters:[PersistentTaskState state]
+FieldAccess:state
+Method-name:tasks
+Method-returnType:Collection<PersistentTask<?>>
+Method-parameters:[]
+MethodInvocation:values
+FieldAccess:tasks
+Method-name:taskMap
+Method-returnType:Map<String,PersistentTask<?>>
+Method-parameters:[]
+FieldAccess:tasks
+Method-name:getTask
+Method-returnType:PersistentTask<?>
+Method-parameters:[String id]
+MethodInvocation:get
+FieldAccess:tasks
+Method-name:findTasks
+Method-returnType:Collection<PersistentTask<?>>
+Method-parameters:[String taskName, Predicate<PersistentTask<?>> predicate]
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:tasks
+MethodInvocation:equals
+MethodInvocation:getTaskName
+MethodInvocation:toList
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:getNumberOfTasksOnNode
+Method-returnType:long
+Method-parameters:[String nodeId, String taskName]
+MethodInvocation:count
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:values
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:getMinimalSupportedVersion
+Method-returnType:Version
+Method-parameters:[]
+MethodInvocation:minimumCompatibilityVersion
+Method-name:context
+Method-returnType:EnumSet<Metadata.XContentContext>
+Method-parameters:[]
+Method-name:fromXContent
+Method-returnType:PersistentTasksCustomMetadata
+Method-parameters:[XContentParser parser]
+MethodInvocation:build
+MethodInvocation:apply
+Method-name:getTaskWithId
+Method-returnType:PersistentTask<Params>
+Method-parameters:[ClusterState clusterState, String taskId]
+MethodInvocation:custom
+MethodInvocation:metadata
+MethodInvocation:getTask
+Method-name:disassociateDeadNodes
+Method-returnType:ClusterState
+Method-parameters:[ClusterState clusterState]
+MethodInvocation:getPersistentTasksCustomMetadata
+MethodInvocation:builder
+MethodInvocation:tasks
+MethodInvocation:getExecutorNode
+MethodInvocation:getAssignment
+MethodInvocation:nodeExists
+MethodInvocation:nodes
+MethodInvocation:getExecutorNode
+MethodInvocation:getAssignment
+MethodInvocation:reassignTask
+MethodInvocation:getId
+MethodInvocation:isChanged
+MethodInvocation:builder
+MethodInvocation:metadata
+MethodInvocation:putCustom
+MethodInvocation:build
+MethodInvocation:build
+MethodInvocation:metadata
+MethodInvocation:builder
+Class:Assignment
+Field:executorNode
+Field:explanation
+Method-name:Assignment
+Method-returnType:null
+Method-parameters:[String executorNode, String explanation]
+Method-name:getExecutorNode
+Method-returnType:String
+Method-parameters:[]
+Method-name:getExplanation
+Method-returnType:String
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:isAssigned
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Field:INITIAL_ASSIGNMENT
+Class:PersistentTask
+Field:id
+Field:allocationId
+Field:taskName
+Field:params
+Field:state
+Field:assignment
+Field:allocationIdOnLastStatusUpdate
+Method-name:PersistentTask
+Method-returnType:null
+Method-parameters:[final String id, final String name, final P params, final long allocationId, final Assignment assignment]
+Method-name:PersistentTask
+Method-returnType:null
+Method-parameters:[final PersistentTask<P> task, final long allocationId, final Assignment assignment]
+Method-name:PersistentTask
+Method-returnType:null
+Method-parameters:[final PersistentTask<P> task, final PersistentTaskState state]
+Method-name:PersistentTask
+Method-returnType:null
+Method-parameters:[final String id, final long allocationId, final String name, final P params, final PersistentTaskState state, final Assignment assignment, final Long allocationIdOnLastStatusUpdate]
+FieldAccess:id
+FieldAccess:allocationId
+FieldAccess:taskName
+FieldAccess:params
+FieldAccess:state
+FieldAccess:assignment
+FieldAccess:allocationIdOnLastStatusUpdate
+MethodInvocation:equals
+MethodInvocation:getWriteableName
+MethodInvocation:getWriteableName
+MethodInvocation:equals
+MethodInvocation:getWriteableName
+MethodInvocation:getWriteableName
+Method-name:PersistentTask
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readString
+MethodInvocation:readLong
+MethodInvocation:readString
+MethodInvocation:readNamedWriteable
+MethodInvocation:readOptionalNamedWriteable
+MethodInvocation:readOptionalString
+MethodInvocation:readString
+MethodInvocation:readOptionalLong
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeString
+MethodInvocation:writeLong
+MethodInvocation:writeString
+MethodInvocation:writeNamedWriteable
+MethodInvocation:writeOptionalNamedWriteable
+MethodInvocation:writeOptionalString
+MethodInvocation:writeString
+MethodInvocation:writeOptionalLong
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:getId
+Method-returnType:String
+Method-parameters:[]
+Method-name:getAllocationId
+Method-returnType:long
+Method-parameters:[]
+Method-name:getTaskName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getParams
+Method-returnType:P
+Method-parameters:[]
+Method-name:getExecutorNode
+Method-returnType:String
+Method-parameters:[]
+Method-name:getAssignment
+Method-returnType:Assignment
+Method-parameters:[]
+Method-name:isAssigned
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isAssigned
+Method-name:getState
+Method-returnType:PersistentTaskState
+Method-parameters:[]
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, ToXContent.Params xParams]
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:startObject
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:field
+MethodInvocation:endObject
+MethodInvocation:endObject
+MethodInvocation:equals
+MethodInvocation:param
+MethodInvocation:field
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:field
+MethodInvocation:endObject
+MethodInvocation:field
+MethodInvocation:endObject
+Method-name:isFragment
+Method-returnType:boolean
+Method-parameters:[]
+Class:TaskBuilder
+Field:id
+Field:allocationId
+Field:taskName
+Field:params
+Field:state
+Field:assignment
+Field:allocationIdOnLastStatusUpdate
+Method-name:setId
+Method-returnType:TaskBuilder<Params>
+Method-parameters:[String id]
+FieldAccess:id
+Method-name:setAllocationId
+Method-returnType:TaskBuilder<Params>
+Method-parameters:[long allocationId]
+FieldAccess:allocationId
+Method-name:setTaskName
+Method-returnType:TaskBuilder<Params>
+Method-parameters:[String taskName]
+FieldAccess:taskName
+Method-name:setParams
+Method-returnType:TaskBuilder<Params>
+Method-parameters:[Params params]
+FieldAccess:params
+Method-name:setState
+Method-returnType:TaskBuilder<Params>
+Method-parameters:[PersistentTaskState state]
+FieldAccess:state
+Method-name:setAssignment
+Method-returnType:TaskBuilder<Params>
+Method-parameters:[Assignment assignment]
+FieldAccess:assignment
+Method-name:setAllocationIdOnLastStatusUpdate
+Method-returnType:TaskBuilder<Params>
+Method-parameters:[Long allocationIdOnLastStatusUpdate]
+FieldAccess:allocationIdOnLastStatusUpdate
+Method-name:build
+Method-returnType:PersistentTask<Params>
+Method-parameters:[]
+Method-name:getWriteableName
+Method-returnType:String
+Method-parameters:[]
+Method-name:PersistentTasksCustomMetadata
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readLong
+MethodInvocation:readMap
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeLong
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:values
+MethodInvocation:shouldSerialize
+MethodInvocation:getParams
+MethodInvocation:toMap
+MethodInvocation:identity
+MethodInvocation:writeMap
+MethodInvocation:writeTo
+Method-name:readDiffFrom
+Method-returnType:NamedDiff<Metadata.Custom>
+Method-parameters:[StreamInput in]
+MethodInvocation:readDiffFrom
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:field
+MethodInvocation:startArray
+MethodInvocation:values
+MethodInvocation:toXContent
+MethodInvocation:endArray
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[PersistentTasksCustomMetadata tasks]
+Class:Builder
+Field:tasks
+Field:lastAllocationId
+Field:changed
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[PersistentTasksCustomMetadata tasksInProgress]
+MethodInvocation:putAll
+Method-name:getLastAllocationId
+Method-returnType:long
+Method-parameters:[]
+Method-name:setLastAllocationId
+Method-returnType:Builder
+Method-parameters:[long currentId]
+FieldAccess:lastAllocationId
+Method-name:setTasks
+Method-returnType:Builder
+Method-parameters:[List<TaskBuilder<Params>> tasks]
+MethodInvocation:build
+MethodInvocation:put
+FieldAccess:tasks
+MethodInvocation:getId
+Method-name:getNextAllocationId
+Method-returnType:long
+Method-parameters:[]
+Method-name:addTask
+Method-returnType:Builder
+Method-parameters:[String taskId, String taskName, Params params, Assignment assignment]
+MethodInvocation:put
+MethodInvocation:getNextAllocationId
+Method-name:reassignTask
+Method-returnType:Builder
+Method-parameters:[String taskId, Assignment assignment]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:getNextAllocationId
+Method-name:updateTaskState
+Method-returnType:Builder
+Method-parameters:[final String taskId, final PersistentTaskState taskState]
+MethodInvocation:get
+MethodInvocation:put
+Method-name:removeTask
+Method-returnType:Builder
+Method-parameters:[String taskId]
+MethodInvocation:remove
+Method-name:hasTask
+Method-returnType:boolean
+Method-parameters:[String taskId]
+MethodInvocation:containsKey
+Method-name:hasTask
+Method-returnType:boolean
+Method-parameters:[String taskId, long allocationId]
+MethodInvocation:get
+MethodInvocation:getAllocationId
+Method-name:getCurrentTaskIds
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:isChanged
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:build
+Method-returnType:PersistentTasksCustomMetadata
+Method-parameters:[]
+MethodInvocation:unmodifiableMap

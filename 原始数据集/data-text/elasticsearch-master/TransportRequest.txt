@@ -1,0 +1,34 @@
+Class:TransportRequest
+Method-name:sendRequest
+Method-returnType:void
+Method-parameters:[final DiscoveryNode node, final String action, final TransportResponseHandler<T> handler, TransportService transportService]
+MethodInvocation:getConnection
+MethodInvocation:handleException
+MethodInvocation:sendRequest
+Class:Empty
+Field:INSTANCE
+Method-name:Empty
+Method-returnType:null
+Method-parameters:[]
+Method-name:Empty
+Method-returnType:null
+Method-parameters:[StreamInput in]
+Field:parentTaskId
+Method-name:TransportRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:TransportRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readFromStream
+Method-name:setParentTask
+Method-returnType:void
+Method-parameters:[TaskId taskId]
+FieldAccess:parentTaskId
+Method-name:getParentTask
+Method-returnType:TaskId
+Method-parameters:[]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeTo

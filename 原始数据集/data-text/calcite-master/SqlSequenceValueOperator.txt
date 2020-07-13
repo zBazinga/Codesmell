@@ -1,0 +1,23 @@
+Class:SqlSequenceValueOperator
+Method-name:SqlSequenceValueOperator
+Method-returnType:null
+Method-parameters:[SqlKind kind]
+Method-name:isDeterministic
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlCall call, int leftPrec, int rightPrec]
+MethodInvocation:sep
+MethodInvocation:unparse
+MethodInvocation:get
+MethodInvocation:getOperandList
+Method-name:deriveType
+Method-returnType:RelDataType
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope, SqlCall call]
+MethodInvocation:getTypeFactory
+MethodInvocation:createTypeWithNullability
+MethodInvocation:createSqlType
+Method-name:validateCall
+Method-returnType:void
+Method-parameters:[SqlCall call, SqlValidator validator, SqlValidatorScope scope, SqlValidatorScope operandScope]

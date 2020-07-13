@@ -1,0 +1,204 @@
+Class:ReduceWork
+Method-name:ReduceWork
+Method-returnType:null
+Method-parameters:[]
+Method-name:ReduceWork
+Method-returnType:null
+Method-parameters:[String name]
+Field:keyDesc
+Field:tagToValueDesc
+Field:reducer
+Field:numReduceTasks
+Field:needsTagging
+Field:tagToInput
+Field:isAutoReduceParallelism
+Field:isUniformDistribution
+Field:isSlowStart
+Field:minReduceTasks
+Field:maxReduceTasks
+Field:keyObjectInspector
+Field:valueObjectInspector
+Field:reduceVectorizationEnabled
+Field:vectorReduceEngine
+Field:vectorReduceColumnSortOrder
+Field:vectorReduceColumnNullOrder
+Field:edgeProp
+Method-name:setKeyDesc
+Method-returnType:void
+Method-parameters:[final TableDesc keyDesc]
+FieldAccess:keyDesc
+Method-name:getKeyDesc
+Method-returnType:TableDesc
+Method-parameters:[]
+Method-name:getTagToValueDesc
+Method-returnType:List<TableDesc>
+Method-parameters:[]
+Method-name:setTagToValueDesc
+Method-returnType:void
+Method-parameters:[final List<TableDesc> tagToValueDesc]
+FieldAccess:tagToValueDesc
+Method-name:getExecutionMode
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getIsTestForcedVectorizationEnable
+MethodInvocation:getIsTestVectorizationSuppressExplainExecutionMode
+Method-name:getReducer
+Method-returnType:Operator<?>
+Method-parameters:[]
+Method-name:setReducer
+Method-returnType:void
+Method-parameters:[final Operator<?> reducer]
+FieldAccess:reducer
+Method-name:getNeedsTagging
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setNeedsTagging
+Method-returnType:void
+Method-parameters:[boolean needsTagging]
+FieldAccess:needsTagging
+Method-name:setTagToInput
+Method-returnType:void
+Method-parameters:[final Map<Integer,String> tagToInput]
+FieldAccess:tagToInput
+Method-name:getTagToInput
+Method-returnType:Map<Integer,String>
+Method-parameters:[]
+Method-name:replaceRoots
+Method-returnType:void
+Method-parameters:[Map<Operator<?>,Operator<?>> replacementMap]
+MethodInvocation:setReducer
+MethodInvocation:get
+MethodInvocation:getReducer
+Method-name:getAllRootOperators
+Method-returnType:Set<Operator<?>>
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getReducer
+Method-name:getAnyRootOperator
+Method-returnType:Operator<? extends OperatorDesc>
+Method-parameters:[]
+MethodInvocation:getReducer
+Method-name:getNumReduceTasks
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setNumReduceTasks
+Method-returnType:void
+Method-parameters:[final Integer numReduceTasks]
+FieldAccess:numReduceTasks
+Method-name:configureJobConf
+Method-returnType:void
+Method-parameters:[JobConf job]
+MethodInvocation:findOperators
+MethodInvocation:configureJobConf
+MethodInvocation:getTableInfo
+MethodInvocation:getConf
+Method-name:setAutoReduceParallelism
+Method-returnType:void
+Method-parameters:[boolean isAutoReduceParallelism]
+FieldAccess:isAutoReduceParallelism
+Method-name:isAutoReduceParallelism
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSlowStart
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSlowStart
+Method-returnType:void
+Method-parameters:[boolean isSlowStart]
+FieldAccess:isSlowStart
+Method-name:setUniformDistribution
+Method-returnType:void
+Method-parameters:[boolean isUniformDistribution]
+FieldAccess:isUniformDistribution
+Method-name:isUniformDistribution
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:isUniformDistribution
+Method-name:setMinReduceTasks
+Method-returnType:void
+Method-parameters:[int minReduceTasks]
+FieldAccess:minReduceTasks
+Method-name:getMinReduceTasks
+Method-returnType:int
+Method-parameters:[]
+Method-name:getMaxReduceTasks
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxReduceTasks
+Method-returnType:void
+Method-parameters:[int maxReduceTasks]
+FieldAccess:maxReduceTasks
+Method-name:setReduceVectorizationEnabled
+Method-returnType:void
+Method-parameters:[boolean reduceVectorizationEnabled]
+FieldAccess:reduceVectorizationEnabled
+Method-name:getReduceVectorizationEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setVectorReduceEngine
+Method-returnType:void
+Method-parameters:[String vectorReduceEngine]
+FieldAccess:vectorReduceEngine
+Method-name:getVectorReduceEngine
+Method-returnType:String
+Method-parameters:[]
+Method-name:setVectorReduceColumnSortOrder
+Method-returnType:void
+Method-parameters:[String vectorReduceColumnSortOrder]
+FieldAccess:vectorReduceColumnSortOrder
+Method-name:getVectorReduceColumnSortOrder
+Method-returnType:String
+Method-parameters:[]
+Method-name:setVectorReduceColumnNullOrder
+Method-returnType:void
+Method-parameters:[String vectorReduceColumnNullOrder]
+FieldAccess:vectorReduceColumnNullOrder
+Method-name:getVectorReduceColumnNullOrder
+Method-returnType:String
+Method-parameters:[]
+Field:reduceVectorizableEngines
+MethodInvocation:asList
+Class:ReduceExplainVectorization
+Field:reduceWork
+Field:reduceVectorizationConditions
+Method-name:ReduceExplainVectorization
+Method-returnType:null
+Method-parameters:[ReduceWork reduceWork]
+FieldAccess:reduceWork
+Method-name:createReduceExplainVectorizationConditions
+Method-returnType:VectorizationCondition[]
+Method-parameters:[]
+MethodInvocation:getReduceVectorizationEnabled
+MethodInvocation:getVectorReduceEngine
+MethodInvocation:contains
+Method-name:getEnableConditionsMet
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:createReduceExplainVectorizationConditions
+MethodInvocation:getConditionsMet
+Method-name:getEnableConditionsNotMet
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:createReduceExplainVectorizationConditions
+MethodInvocation:getConditionsNotMet
+Method-name:getReduceColumnSortOrder
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getVectorizationExamined
+MethodInvocation:getVectorReduceColumnSortOrder
+Method-name:getReduceColumnNullOrder
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getVectorizationExamined
+MethodInvocation:getVectorReduceColumnNullOrder
+Method-name:getReduceExplainVectorization
+Method-returnType:ReduceExplainVectorization
+Method-parameters:[]
+MethodInvocation:getVectorizationExamined
+Method-name:setEdgePropRef
+Method-returnType:void
+Method-parameters:[TezEdgeProperty edgeProp]
+FieldAccess:edgeProp
+Method-name:getEdgePropRef
+Method-returnType:TezEdgeProperty
+Method-parameters:[]

@@ -1,0 +1,141 @@
+Class:AbsModule
+Field:RPC_TIMEOUT
+Field:STORAGE_DIALOGS
+Field:STORAGE_USERS
+Field:STORAGE_GROUPS
+Field:STORAGE_DOWNLOADS
+Field:STORAGE_CONTACTS
+Field:STORAGE_PHONE_BOOK
+Field:STORAGE_NOTIFICATIONS
+Field:STORAGE_SEARCH
+Field:STORAGE_BOOK_IMPORT
+Field:STORAGE_CHAT_STATES
+Field:STORAGE_CHAT_PREFIX
+Field:STORAGE_CHAT_DOCS_PREFIX
+Field:STORAGE_CURSOR
+Field:STORAGE_BLOB
+Field:BLOB_DIALOGS_ACTIVE
+Field:context
+Method-name:AbsModule
+Method-returnType:null
+Method-parameters:[ModuleContext context]
+FieldAccess:context
+Method-name:context
+Method-returnType:ModuleContext
+Method-parameters:[]
+Method-name:updates
+Method-returnType:Updates
+Method-parameters:[]
+MethodInvocation:getUpdatesModule
+Method-name:runOnUiThread
+Method-returnType:void
+Method-parameters:[Runnable runnable]
+MethodInvocation:postToMainThread
+Method-name:sendActor
+Method-returnType:ActorRef
+Method-parameters:[]
+MethodInvocation:getSendMessageActor
+MethodInvocation:getMessagesModule
+MethodInvocation:context
+Method-name:stickersActor
+Method-returnType:ActorRef
+Method-parameters:[]
+MethodInvocation:getStickersActor
+MethodInvocation:getStickersModule
+MethodInvocation:context
+Method-name:preferences
+Method-returnType:PreferencesStorage
+Method-parameters:[]
+MethodInvocation:getPreferences
+Method-name:myUid
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:myUid
+MethodInvocation:getAuthModule
+Method-name:request
+Method-returnType:void
+Method-parameters:[Request<T> request, RpcCallback<T> callback, long timeout]
+MethodInvocation:request
+MethodInvocation:getActorApi
+Method-name:request
+Method-returnType:void
+Method-parameters:[Request<T> request, RpcCallback<T> callback]
+MethodInvocation:request
+Method-name:request
+Method-returnType:void
+Method-parameters:[Request<T> request, long timeout]
+MethodInvocation:request
+MethodInvocation:getActorApi
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[T response]
+Method-name:onError
+Method-returnType:void
+Method-parameters:[RpcException e]
+Method-name:api
+Method-returnType:Promise<T>
+Method-parameters:[Request<T> request]
+MethodInvocation:request
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[T response]
+MethodInvocation:result
+Method-name:onError
+Method-returnType:void
+Method-parameters:[RpcException e]
+MethodInvocation:error
+Method-name:request
+Method-returnType:void
+Method-parameters:[Request<T> request]
+MethodInvocation:request
+Method-name:users
+Method-returnType:KeyValueEngine<User>
+Method-parameters:[]
+MethodInvocation:getUsersStorage
+MethodInvocation:getUsersModule
+Method-name:groups
+Method-returnType:KeyValueEngine<Group>
+Method-parameters:[]
+MethodInvocation:getGroups
+MethodInvocation:getGroupsModule
+Method-name:buildApiPeer
+Method-returnType:ApiPeer
+Method-parameters:[Peer peer]
+MethodInvocation:getPeerType
+MethodInvocation:getPeerId
+MethodInvocation:getPeerType
+MethodInvocation:getPeerId
+Method-name:getApiOutPeer
+Method-returnType:ApiOutPeer
+Method-parameters:[Peer peer]
+MethodInvocation:getPeerType
+MethodInvocation:getPeerId
+MethodInvocation:getAccessHash
+MethodInvocation:getValue
+MethodInvocation:users
+MethodInvocation:getPeerId
+MethodInvocation:getPeerType
+MethodInvocation:getPeerId
+MethodInvocation:getAccessHash
+MethodInvocation:getValue
+MethodInvocation:groups
+MethodInvocation:getPeerId
+Method-name:buildOutPeer
+Method-returnType:Promise<ApiOutPeer>
+Method-parameters:[Peer peer]
+MethodInvocation:getPeerType
+MethodInvocation:pipeTo
+MethodInvocation:map
+MethodInvocation:getValueAsync
+MethodInvocation:users
+MethodInvocation:getPeerId
+MethodInvocation:getUid
+MethodInvocation:getAccessHash
+MethodInvocation:getPeerType
+MethodInvocation:pipeTo
+MethodInvocation:map
+MethodInvocation:getValueAsync
+MethodInvocation:groups
+MethodInvocation:getPeerId
+MethodInvocation:getGroupId
+MethodInvocation:getAccessHash

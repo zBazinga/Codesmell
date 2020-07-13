@@ -1,0 +1,124 @@
+Class:BasicBlockList
+Field:regCount
+Method-name:BasicBlockList
+Method-returnType:null
+Method-parameters:[int size]
+Method-name:BasicBlockList
+Method-returnType:null
+Method-parameters:[BasicBlockList old]
+Method-name:get
+Method-returnType:BasicBlock
+Method-parameters:[int n]
+MethodInvocation:get0
+Method-name:set
+Method-returnType:void
+Method-parameters:[int n, BasicBlock bb]
+Method-name:getRegCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:forEachInsn
+MethodInvocation:getRegCount
+Method-name:getInstructionCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getOrNull0
+MethodInvocation:size
+MethodInvocation:getInsns
+Method-name:getEffectiveInstructionCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getOrNull0
+MethodInvocation:getInsns
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getOpcode
+MethodInvocation:getOpcode
+Method-name:labelToBlock
+Method-returnType:BasicBlock
+Method-parameters:[int label]
+MethodInvocation:indexOfLabel
+MethodInvocation:u2
+MethodInvocation:get
+Method-name:forEachInsn
+Method-returnType:void
+Method-parameters:[Insn.Visitor visitor]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getInsns
+MethodInvocation:forEach
+Method-name:withRegisterOffset
+Method-returnType:BasicBlockList
+Method-parameters:[int delta]
+MethodInvocation:size
+MethodInvocation:get0
+MethodInvocation:set
+MethodInvocation:withRegisterOffset
+MethodInvocation:isImmutable
+MethodInvocation:setImmutable
+Method-name:getMutableCopy
+Method-returnType:BasicBlockList
+Method-parameters:[]
+Method-name:catchesEqual
+Method-returnType:boolean
+Method-parameters:[BasicBlock block1, BasicBlock block2]
+MethodInvocation:getExceptionHandlerTypes
+MethodInvocation:getExceptionHandlerTypes
+MethodInvocation:equalContents
+MethodInvocation:getSuccessors
+MethodInvocation:getSuccessors
+MethodInvocation:size
+MethodInvocation:getPrimarySuccessor
+MethodInvocation:getPrimarySuccessor
+MethodInvocation:get
+MethodInvocation:get
+Class:RegCountVisitor
+Field:regCount
+Method-name:RegCountVisitor
+Method-returnType:null
+Method-parameters:[]
+Method-name:getRegCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:visitPlainInsn
+Method-returnType:void
+Method-parameters:[PlainInsn insn]
+MethodInvocation:visit
+Method-name:visitPlainCstInsn
+Method-returnType:void
+Method-parameters:[PlainCstInsn insn]
+MethodInvocation:visit
+Method-name:visitSwitchInsn
+Method-returnType:void
+Method-parameters:[SwitchInsn insn]
+MethodInvocation:visit
+Method-name:visitThrowingCstInsn
+Method-returnType:void
+Method-parameters:[ThrowingCstInsn insn]
+MethodInvocation:visit
+Method-name:visitThrowingInsn
+Method-returnType:void
+Method-parameters:[ThrowingInsn insn]
+MethodInvocation:visit
+Method-name:visitFillArrayDataInsn
+Method-returnType:void
+Method-parameters:[FillArrayDataInsn insn]
+MethodInvocation:visit
+Method-name:visitInvokePolymorphicInsn
+Method-returnType:void
+Method-parameters:[InvokePolymorphicInsn insn]
+MethodInvocation:visit
+Method-name:visit
+Method-returnType:void
+Method-parameters:[Insn insn]
+MethodInvocation:getResult
+MethodInvocation:processReg
+MethodInvocation:getSources
+MethodInvocation:size
+MethodInvocation:processReg
+MethodInvocation:get
+Method-name:processReg
+Method-returnType:void
+Method-parameters:[RegisterSpec spec]
+MethodInvocation:getNextReg

@@ -1,0 +1,73 @@
+Class:AspectRatioFrameLayout
+Method-name:onContentAspectRatioChanged
+Method-returnType:void
+Method-parameters:[float contentAspectRatio, @Nullable View contentView, PlayerView playerView]
+MethodInvocation:setAspectRatio
+Method-name:onAspectRatioUpdated
+Method-returnType:void
+Method-parameters:[float targetAspectRatio, float naturalAspectRatio, boolean aspectRatioMismatch]
+Field:RESIZE_MODE_FIT
+Field:RESIZE_MODE_FIXED_WIDTH
+Field:RESIZE_MODE_FIXED_HEIGHT
+Field:RESIZE_MODE_FILL
+Field:RESIZE_MODE_ZOOM
+Field:MAX_ASPECT_RATIO_DEFORMATION_FRACTION
+Field:aspectRatioUpdateDispatcher
+Field:aspectRatioListener
+Field:videoAspectRatio
+Field:resizeMode
+Method-name:AspectRatioFrameLayout
+Method-returnType:null
+Method-parameters:[Context context]
+Method-name:AspectRatioFrameLayout
+Method-returnType:null
+Method-parameters:[Context context, @Nullable AttributeSet attrs]
+MethodInvocation:obtainStyledAttributes
+MethodInvocation:getTheme
+MethodInvocation:getInt
+MethodInvocation:recycle
+Method-name:setAspectRatio
+Method-returnType:void
+Method-parameters:[float widthHeightRatio]
+FieldAccess:videoAspectRatio
+FieldAccess:videoAspectRatio
+MethodInvocation:requestLayout
+Method-name:setAspectRatioListener
+Method-returnType:void
+Method-parameters:[@Nullable AspectRatioListener listener]
+FieldAccess:aspectRatioListener
+Method-name:getResizeMode
+Method-returnType:int
+Method-parameters:[]
+Method-name:setResizeMode
+Method-returnType:void
+Method-parameters:[@ResizeMode int resizeMode]
+FieldAccess:resizeMode
+FieldAccess:resizeMode
+MethodInvocation:requestLayout
+Method-name:onMeasure
+Method-returnType:void
+Method-parameters:[int widthMeasureSpec, int heightMeasureSpec]
+MethodInvocation:getMeasuredWidth
+MethodInvocation:getMeasuredHeight
+MethodInvocation:abs
+MethodInvocation:scheduleUpdate
+MethodInvocation:scheduleUpdate
+MethodInvocation:makeMeasureSpec
+MethodInvocation:makeMeasureSpec
+Class:AspectRatioUpdateDispatcher
+Field:targetAspectRatio
+Field:naturalAspectRatio
+Field:aspectRatioMismatch
+Field:isScheduled
+Method-name:scheduleUpdate
+Method-returnType:void
+Method-parameters:[float targetAspectRatio, float naturalAspectRatio, boolean aspectRatioMismatch]
+FieldAccess:targetAspectRatio
+FieldAccess:naturalAspectRatio
+FieldAccess:aspectRatioMismatch
+MethodInvocation:post
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onAspectRatioUpdated

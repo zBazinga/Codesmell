@@ -1,0 +1,26 @@
+Class:TwilioConfiguration
+Field:apiName
+Field:methodName
+Method-name:copy
+Method-returnType:TwilioConfiguration
+Method-parameters:[]
+MethodInvocation:clone
+Method-name:getApiName
+Method-returnType:TwilioApiName
+Method-parameters:[]
+Method-name:setApiName
+Method-returnType:void
+Method-parameters:[TwilioApiName apiName]
+FieldAccess:apiName
+Method-name:getMethodName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setMethodName
+Method-returnType:void
+Method-parameters:[String methodName]
+FieldAccess:methodName
+Method-name:createEndpoint
+Method-returnType:Endpoint
+Method-parameters:[String uri, String methodName, TwilioApiName apiName, TwilioComponent twilioComponent]
+MethodInvocation:setApiName
+MethodInvocation:setMethodName

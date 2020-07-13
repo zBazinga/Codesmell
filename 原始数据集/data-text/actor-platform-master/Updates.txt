@@ -1,0 +1,119 @@
+Class:Updates
+Field:DUMB
+Field:updateActor
+Field:updateHandler
+Field:updateHandlerInt
+Method-name:Updates
+Method-returnType:null
+Method-parameters:[ModuleContext messenger]
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:updateHandler
+MethodInvocation:actorOf
+MethodInvocation:system
+MethodInvocation:CONSTRUCTOR
+MethodInvocation:context
+FieldAccess:updateHandlerInt
+FieldAccess:updateHandler
+FieldAccess:updateActor
+MethodInvocation:actorOf
+MethodInvocation:system
+MethodInvocation:CONSTRUCTOR
+MethodInvocation:context
+MethodInvocation:subscribe
+MethodInvocation:getEvents
+MethodInvocation:context
+Method-name:getUpdateHandler
+Method-returnType:SequenceHandlerInt
+Method-parameters:[]
+Method-name:onPushReceived
+Method-returnType:void
+Method-parameters:[int seq, long authId]
+MethodInvocation:send
+Method-name:applyUpdate
+Method-returnType:Promise<Void>
+Method-parameters:[int seq, byte[] state, Update update]
+MethodInvocation:send
+MethodInvocation:getHeaderKey
+MethodInvocation:toByteArray
+MethodInvocation:executeAfter
+MethodInvocation:result
+Method-name:applyUpdate
+Method-returnType:Promise<Void>
+Method-parameters:[int seq, byte[] state, Update update, List<ApiUser> users, List<ApiGroup> groups]
+MethodInvocation:send
+MethodInvocation:getHeaderKey
+MethodInvocation:toByteArray
+MethodInvocation:executeAfter
+MethodInvocation:result
+Method-name:waitForUpdate
+Method-returnType:Promise<Void>
+Method-parameters:[int seq]
+MethodInvocation:executeAfter
+MethodInvocation:result
+Method-name:applyRelatedData
+Method-returnType:Promise<Void>
+Method-parameters:[final List<ApiUser> users]
+MethodInvocation:applyRelatedData
+Method-name:applyRelatedData
+Method-returnType:Promise<Void>
+Method-parameters:[final List<ApiUser> users, final ApiGroup group]
+MethodInvocation:add
+MethodInvocation:applyRelatedData
+Method-name:applyRelatedData
+Method-returnType:Promise<Void>
+Method-parameters:[final List<ApiUser> users, final List<ApiGroup> groups]
+MethodInvocation:success
+MethodInvocation:size
+MethodInvocation:chain
+MethodInvocation:applyUsers
+MethodInvocation:getUserRouter
+MethodInvocation:getUsersModule
+MethodInvocation:context
+MethodInvocation:size
+MethodInvocation:chain
+MethodInvocation:applyGroups
+MethodInvocation:getRouter
+MethodInvocation:getGroupsModule
+MethodInvocation:context
+Method-name:loadRequiredPeers
+Method-returnType:Promise<Void>
+Method-parameters:[List<ApiUserOutPeer> users, List<ApiGroupOutPeer> groups]
+MethodInvocation:fetchMissingUsers
+MethodInvocation:getUserRouter
+MethodInvocation:getUsersModule
+MethodInvocation:context
+MethodInvocation:fetchPendingGroups
+MethodInvocation:getRouter
+MethodInvocation:getGroupsModule
+MethodInvocation:context
+MethodInvocation:flatMap
+MethodInvocation:tuple
+MethodInvocation:size
+MethodInvocation:getT1
+MethodInvocation:size
+MethodInvocation:getT2
+MethodInvocation:flatMap
+MethodInvocation:api
+MethodInvocation:getT1
+MethodInvocation:getT2
+MethodInvocation:applyRelatedData
+MethodInvocation:getUsers
+MethodInvocation:getGroups
+MethodInvocation:success
+Method-name:onUpdateReceived
+Method-returnType:void
+Method-parameters:[Object update]
+MethodInvocation:send
+Method-name:executeAfter
+Method-returnType:void
+Method-parameters:[int seq, Runnable runnable]
+MethodInvocation:send
+Method-name:resetModule
+Method-returnType:void
+Method-parameters:[]
+Method-name:onBusEvent
+Method-returnType:void
+Method-parameters:[Event event]
+MethodInvocation:send

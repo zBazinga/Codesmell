@@ -1,0 +1,77 @@
+Class:Sort
+Field:collation
+Field:fieldExps
+Field:offset
+Field:fetch
+Method-name:Sort
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traits, RelNode child, RelCollation collation]
+Method-name:Sort
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traits, RelNode child, RelCollation collation, RexNode offset, RexNode fetch]
+Method-name:Sort
+Method-returnType:null
+Method-parameters:[RelInput input]
+MethodInvocation:getCluster
+MethodInvocation:plus
+MethodInvocation:getTraitSet
+MethodInvocation:getCollation
+MethodInvocation:getInput
+MethodInvocation:canonize
+MethodInvocation:getCollation
+MethodInvocation:getExpression
+MethodInvocation:getExpression
+Method-name:copy
+Method-returnType:Sort
+Method-parameters:[RelTraitSet traitSet, List<RelNode> inputs]
+MethodInvocation:copy
+MethodInvocation:sole
+Method-name:copy
+Method-returnType:Sort
+Method-parameters:[RelTraitSet traitSet, RelNode newInput, RelCollation newCollation]
+MethodInvocation:copy
+Method-name:copy
+Method-returnType:Sort
+Method-parameters:[RelTraitSet traitSet, RelNode newInput, RelCollation newCollation, RexNode offset, RexNode fetch]
+Method-name:computeSelfCost
+Method-returnType:RelOptCost
+Method-parameters:[RelOptPlanner planner, RelMetadataQuery mq]
+MethodInvocation:getRowCount
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:nLogN
+MethodInvocation:makeCost
+MethodInvocation:getCostFactory
+Method-name:getChildExps
+Method-returnType:List<RexNode>
+Method-parameters:[]
+Method-name:accept
+Method-returnType:RelNode
+Method-parameters:[RexShuttle shuttle]
+Method-name:isEnforcer
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getFieldCollations
+Method-name:getCollation
+Method-returnType:RelCollation
+Method-parameters:[]
+Method-name:getCollationList
+Method-returnType:List<RelCollation>
+Method-parameters:[]
+MethodInvocation:singletonList
+MethodInvocation:getCollation
+Method-name:explainTerms
+Method-returnType:RelWriter
+Method-parameters:[RelWriter pw]
+Method-name:offsetFetch
+Method-returnType:SqlImplementor.Result
+Method-parameters:[SqlImplementor.Result x, RelToSqlConverter relToSqlConverter]
+MethodInvocation:builder
+MethodInvocation:setFetch
+MethodInvocation:toSql
+MethodInvocation:result
+MethodInvocation:builder
+MethodInvocation:setOffset
+MethodInvocation:toSql
+MethodInvocation:result

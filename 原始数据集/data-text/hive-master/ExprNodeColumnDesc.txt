@@ -1,0 +1,110 @@
+Class:ExprNodeColumnDesc
+Field:serialVersionUID
+Field:column
+Field:tabAlias
+Field:isPartitionColOrVirtualCol
+Field:isSkewedCol
+Field:isGenerated
+Method-name:ExprNodeColumnDesc
+Method-returnType:null
+Method-parameters:[]
+Method-name:ExprNodeColumnDesc
+Method-returnType:null
+Method-parameters:[ColumnInfo ci]
+Method-name:ExprNodeColumnDesc
+Method-returnType:null
+Method-parameters:[ColumnInfo ci, boolean isGenerated]
+MethodInvocation:getType
+MethodInvocation:getInternalName
+MethodInvocation:getTabAlias
+MethodInvocation:getIsVirtualCol
+Method-name:ExprNodeColumnDesc
+Method-returnType:null
+Method-parameters:[TypeInfo typeInfo, String column, String tabAlias, boolean isPartitionColOrVirtualCol]
+Method-name:ExprNodeColumnDesc
+Method-returnType:null
+Method-parameters:[Class<?> c, String column, String tabAlias, boolean isPartitionColOrVirtualCol]
+MethodInvocation:getPrimitiveTypeInfoFromJavaPrimitive
+Method-name:ExprNodeColumnDesc
+Method-returnType:null
+Method-parameters:[TypeInfo typeInfo, String column, String tabAlias, boolean isPartitionColOrVirtualCol, boolean isSkewedCol]
+Method-name:ExprNodeColumnDesc
+Method-returnType:null
+Method-parameters:[TypeInfo typeInfo, String column, String tabAlias, boolean isPartitionColOrVirtualCol, boolean isSkewedCol, boolean isGenerated]
+FieldAccess:column
+FieldAccess:tabAlias
+FieldAccess:isPartitionColOrVirtualCol
+FieldAccess:isSkewedCol
+FieldAccess:isGenerated
+Method-name:getColumn
+Method-returnType:String
+Method-parameters:[]
+Method-name:setColumn
+Method-returnType:void
+Method-parameters:[String column]
+FieldAccess:column
+Method-name:getTabAlias
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTabAlias
+Method-returnType:void
+Method-parameters:[String tabAlias]
+FieldAccess:tabAlias
+Method-name:getIsPartitionColOrVirtualCol
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIsPartitionColOrVirtualCol
+Method-returnType:void
+Method-parameters:[boolean isPartitionCol]
+FieldAccess:isPartitionColOrVirtualCol
+Method-name:getIsGenerated
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:isGenerated
+Method-name:setIsGenerated
+Method-returnType:void
+Method-parameters:[boolean isGenerated]
+FieldAccess:isGenerated
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getExprString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getColumn
+Method-name:getCols
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:add
+Method-name:clone
+Method-returnType:ExprNodeDesc
+Method-parameters:[]
+Method-name:isSame
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+MethodInvocation:getColumn
+MethodInvocation:equals
+MethodInvocation:getTypeInfo
+MethodInvocation:equals
+Method-name:isSkewedCol
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSkewedCol
+Method-returnType:void
+Method-parameters:[boolean isSkewedCol]
+FieldAccess:isSkewedCol
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:appendSuper
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toHashCode
+Method-name:setFoldedTabCol
+Method-returnType:void
+Method-parameters:[ExprNodeConstantDesc exprNodeConstantDesc]
+MethodInvocation:setFoldedFromTab
+MethodInvocation:getTabAlias
+MethodInvocation:setFoldedFromCol
+MethodInvocation:getColumn

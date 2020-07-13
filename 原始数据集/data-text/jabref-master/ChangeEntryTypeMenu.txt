@@ -1,0 +1,58 @@
+Class:ChangeEntryTypeMenu
+Method-name:ChangeEntryTypeMenu
+Method-returnType:null
+Method-parameters:[]
+Method-name:createMenuItem
+Method-returnType:MenuItem
+Method-parameters:[EntryType type, BibEntry entry, UndoManager undoManager]
+MethodInvocation:getDisplayName
+MethodInvocation:setOnAction
+MethodInvocation:lang
+MethodInvocation:ifPresent
+MethodInvocation:setType
+MethodInvocation:addEdit
+MethodInvocation:addEdit
+MethodInvocation:getDescription
+MethodInvocation:isNotBlank
+MethodInvocation:install
+MethodInvocation:getContent
+Method-name:getChangeEntryTypePopupMenu
+Method-returnType:ContextMenu
+Method-parameters:[BibEntry entry, BibDatabaseContext bibDatabaseContext, CountingUndoManager undoManager]
+MethodInvocation:populateComplete
+MethodInvocation:getItems
+Method-name:getChangeEntryTypeMenu
+Method-returnType:Menu
+Method-parameters:[BibEntry entry, BibDatabaseContext bibDatabaseContext, CountingUndoManager undoManager]
+MethodInvocation:setText
+MethodInvocation:lang
+MethodInvocation:populateComplete
+MethodInvocation:getItems
+Method-name:populateComplete
+Method-returnType:void
+Method-parameters:[ObservableList<MenuItem> items, BibEntry entry, BibDatabaseContext bibDatabaseContext, CountingUndoManager undoManager]
+MethodInvocation:isBiblatexMode
+MethodInvocation:populate
+MethodInvocation:getAllTypes
+MethodInvocation:populateSubMenu
+MethodInvocation:lang
+MethodInvocation:getAllCustomTypes
+MethodInvocation:populateSubMenu
+MethodInvocation:getFormattedName
+MethodInvocation:remove
+MethodInvocation:populateSubMenu
+MethodInvocation:populateSubMenu
+MethodInvocation:lang
+MethodInvocation:getAllCustomTypes
+Method-name:populateSubMenu
+Method-returnType:void
+Method-parameters:[ObservableList<MenuItem> items, String text, List<BibEntryType> entryTypes, BibEntry entry, CountingUndoManager undoManager]
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:populate
+MethodInvocation:add
+Method-name:populate
+Method-returnType:void
+Method-parameters:[Menu menu, Collection<BibEntryType> types, BibEntry entry, UndoManager undoManager]
+MethodInvocation:populate
+MethodInvocation:getItems

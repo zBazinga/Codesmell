@@ -1,0 +1,272 @@
+Class:CallBusActor
+Field:TIMEOUT
+Field:STASH
+Field:selfSettings
+Field:peerCallback
+Field:callBusCallback
+Field:isMasterReady
+Field:masterDeviceId
+Field:peerCall
+Field:isConnected
+Field:isEnabled
+Method-name:CallBusActor
+Method-returnType:null
+Method-parameters:[@NotNull final CallBusCallback callBusCallback, @NotNull PeerSettings selfSettings, @NotNull ModuleContext context]
+FieldAccess:selfSettings
+FieldAccess:callBusCallback
+FieldAccess:peerCallback
+Method-name:preStart
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:actorOf
+MethodInvocation:system
+MethodInvocation:getPath
+FieldAccess:selfSettings
+MethodInvocation:context
+FieldAccess:peerCall
+Method-name:onBusStarted
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onBusStarted
+MethodInvocation:getBusId
+Method-name:onOffer
+Method-returnType:void
+Method-parameters:[long deviceId, long sessionId, @NotNull String sdp]
+MethodInvocation:sendSignal
+MethodInvocation:toApi
+FieldAccess:selfSettings
+Method-name:onAnswer
+Method-returnType:void
+Method-parameters:[long deviceId, long sessionId, @NotNull String sdp]
+MethodInvocation:sendSignal
+Method-name:onCandidate
+Method-returnType:void
+Method-parameters:[long deviceId, long sessionId, int mdpIndex, @NotNull String id, @NotNull String sdp]
+MethodInvocation:sendSignal
+Method-name:onNegotiationSuccessful
+Method-returnType:void
+Method-parameters:[final long deviceId, final long sessionId]
+MethodInvocation:sendSignal
+MethodInvocation:stash
+Method-name:onNegotiationNeeded
+Method-returnType:void
+Method-parameters:[long deviceId, long sessionId]
+MethodInvocation:sendSignal
+MethodInvocation:stash
+Method-name:onMediaStreamsChanged
+Method-returnType:void
+Method-parameters:[long deviceId, boolean isAudioEnabled, boolean isVideoEnabled]
+MethodInvocation:sendSignal
+Method-name:onPeerStateChanged
+Method-returnType:void
+Method-parameters:[long deviceId, @NotNull PeerState state]
+MethodInvocation:onCallConnected
+MethodInvocation:onCallEnabled
+Method-name:onTrackAdded
+Method-returnType:void
+Method-parameters:[long deviceId, WebRTCMediaTrack track]
+MethodInvocation:onTrackAdded
+Method-name:onTrackRemoved
+Method-returnType:void
+Method-parameters:[long deviceId, WebRTCMediaTrack track]
+MethodInvocation:onTrackRemoved
+Method-name:onOwnTrackAdded
+Method-returnType:void
+Method-parameters:[WebRTCMediaTrack track]
+MethodInvocation:onOwnTrackAdded
+Method-name:onOwnTrackRemoved
+Method-returnType:void
+Method-parameters:[WebRTCMediaTrack track]
+MethodInvocation:onOwnTrackRemoved
+Method-name:onChangeAudioEnabled
+Method-returnType:void
+Method-parameters:[boolean isEnabled]
+MethodInvocation:onAudioEnabledChanged
+Method-name:onChangeVideoEnabled
+Method-returnType:void
+Method-parameters:[boolean isEnabled]
+MethodInvocation:onVideoEnabledChanged
+Method-name:onOwnAnswered
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onOwnStarted
+Method-name:onDeviceConnected
+Method-returnType:void
+Method-parameters:[int uid, long deviceId]
+Method-name:onDeviceDisconnected
+Method-returnType:void
+Method-parameters:[int uid, long deviceId]
+MethodInvocation:disposePeer
+Method-name:onMessageReceived
+Method-returnType:void
+Method-parameters:[@Nullable Integer senderId, @Nullable Long senderDeviceId, byte[] data]
+MethodInvocation:fromBytes
+MethodInvocation:printStackTrace
+MethodInvocation:d
+MethodInvocation:onAnswer
+MethodInvocation:getSessionId
+MethodInvocation:getSdp
+MethodInvocation:onAdvertised
+MethodInvocation:getOwnPeerSettings
+MethodInvocation:onOffer
+MethodInvocation:getSessionId
+MethodInvocation:getSdp
+MethodInvocation:onCandidate
+MethodInvocation:getSessionId
+MethodInvocation:getIndex
+MethodInvocation:getId
+MethodInvocation:getSdp
+MethodInvocation:onAdvertised
+MethodInvocation:getDevice
+MethodInvocation:getPeerSettings
+MethodInvocation:onOfferNeeded
+MethodInvocation:getDevice
+MethodInvocation:getSessionId
+MethodInvocation:disposePeer
+MethodInvocation:getDevice
+MethodInvocation:onOwnStarted
+MethodInvocation:onTheirStarted
+MethodInvocation:getDevice
+MethodInvocation:closeSession
+MethodInvocation:getDevice
+MethodInvocation:getSessionId
+MethodInvocation:unstashAll
+MethodInvocation:sendSignal
+MethodInvocation:toApi
+MethodInvocation:onConfigurationReady
+MethodInvocation:getServer
+MethodInvocation:isAudioEnabled
+MethodInvocation:isVideoEnabled
+MethodInvocation:onMediaStateChanged
+Method-name:postStop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:kill
+MethodInvocation:onBusStopped
+Method-name:onReceive
+Method-returnType:void
+Method-parameters:[Object message]
+MethodInvocation:joinBus
+MethodInvocation:getBusId
+MethodInvocation:connectBus
+MethodInvocation:getBusId
+MethodInvocation:getDeviceId
+MethodInvocation:onChangeAudioEnabled
+MethodInvocation:isEnabled
+MethodInvocation:onChangeVideoEnabled
+MethodInvocation:isEnabled
+MethodInvocation:onOwnAnswered
+Class:JoinBus
+Field:busId
+Method-name:JoinBus
+Method-returnType:null
+Method-parameters:[@NotNull String busId]
+FieldAccess:busId
+Method-name:getBusId
+Method-returnType:String
+Method-parameters:[]
+Class:JoinMasterBus
+Field:busId
+Field:deviceId
+Method-name:JoinMasterBus
+Method-returnType:null
+Method-parameters:[@NotNull String busId, long deviceId]
+FieldAccess:busId
+FieldAccess:deviceId
+Method-name:getBusId
+Method-returnType:String
+Method-parameters:[]
+Method-name:getDeviceId
+Method-returnType:long
+Method-parameters:[]
+Class:AudioEnabled
+Field:enabled
+Method-name:AudioEnabled
+Method-returnType:null
+Method-parameters:[boolean enabled]
+FieldAccess:enabled
+Method-name:isEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Class:VideoEnabled
+Field:enabled
+Method-name:VideoEnabled
+Method-returnType:null
+Method-parameters:[boolean enabled]
+FieldAccess:enabled
+Method-name:isEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Class:OnAnswered
+Class:CallbackWrapper
+Field:callCallback
+Method-name:CallbackWrapper
+Method-returnType:null
+Method-parameters:[@NotNull PeerCallCallback callCallback]
+FieldAccess:callCallback
+Method-name:onOffer
+Method-returnType:void
+Method-parameters:[final long deviceId, final long sessionId, @NotNull final String sdp]
+MethodInvocation:post
+MethodInvocation:self
+MethodInvocation:onOffer
+Method-name:onAnswer
+Method-returnType:void
+Method-parameters:[final long deviceId, final long sessionId, @NotNull final String sdp]
+MethodInvocation:post
+MethodInvocation:self
+MethodInvocation:onAnswer
+Method-name:onCandidate
+Method-returnType:void
+Method-parameters:[final long deviceId, final long sessionId, final int mdpIndex, @NotNull final String id, @NotNull final String sdp]
+MethodInvocation:post
+MethodInvocation:self
+MethodInvocation:onCandidate
+Method-name:onNegotiationSuccessful
+Method-returnType:void
+Method-parameters:[final long deviceId, final long sessionId]
+MethodInvocation:post
+MethodInvocation:self
+MethodInvocation:onNegotiationSuccessful
+Method-name:onNegotiationNeeded
+Method-returnType:void
+Method-parameters:[long deviceId, long sessionId]
+MethodInvocation:post
+MethodInvocation:self
+MethodInvocation:onNegotiationNeeded
+Method-name:onMediaStreamsChanged
+Method-returnType:void
+Method-parameters:[long deviceId, boolean isAudioEnabled, boolean isVideoEnabled]
+MethodInvocation:post
+MethodInvocation:self
+MethodInvocation:onMediaStreamsChanged
+Method-name:onPeerStateChanged
+Method-returnType:void
+Method-parameters:[final long deviceId, @NotNull final PeerState state]
+MethodInvocation:post
+MethodInvocation:self
+MethodInvocation:onPeerStateChanged
+Method-name:onTrackAdded
+Method-returnType:void
+Method-parameters:[long deviceId, WebRTCMediaTrack track]
+MethodInvocation:post
+MethodInvocation:self
+MethodInvocation:onTrackAdded
+Method-name:onTrackRemoved
+Method-returnType:void
+Method-parameters:[long deviceId, WebRTCMediaTrack track]
+MethodInvocation:post
+MethodInvocation:self
+MethodInvocation:onTrackRemoved
+Method-name:onOwnTrackAdded
+Method-returnType:void
+Method-parameters:[WebRTCMediaTrack track]
+MethodInvocation:post
+MethodInvocation:self
+MethodInvocation:onOwnTrackAdded
+Method-name:onOwnTrackRemoved
+Method-returnType:void
+Method-parameters:[WebRTCMediaTrack track]
+MethodInvocation:post
+MethodInvocation:self
+MethodInvocation:onOwnTrackRemoved

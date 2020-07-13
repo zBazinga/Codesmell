@@ -1,0 +1,223 @@
+Class:ManageAddOnsPanel
+Class:AddOnTableModel
+Field:addOns
+Field:icons
+Method-name:AddOnTableModel
+Method-returnType:null
+Method-parameters:[List<AddOnProperties> addOns]
+FieldAccess:addOns
+Method-name:getRowCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getColumnCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:getValueAt
+Method-returnType:Object
+Method-parameters:[int row, int col]
+MethodInvocation:get
+MethodInvocation:createIcon
+Method-name:createIcon
+Method-returnType:Icon
+Method-parameters:[final AddOnProperties addOn]
+MethodInvocation:get
+MethodInvocation:createIconOrReturnNotFoundIcon
+MethodInvocation:getName
+MethodInvocation:put
+Method-name:getColumnClass
+Method-returnType:Class<?>
+Method-parameters:[int col]
+Method-name:isCellEditable
+Method-returnType:boolean
+Method-parameters:[int row, int column]
+Method-name:setValueAt
+Method-returnType:void
+Method-parameters:[Object aValue, int row, int column]
+MethodInvocation:fireTableCellUpdated
+Method-name:getAddOnAt
+Method-returnType:AddOnProperties
+Method-parameters:[int row]
+MethodInvocation:get
+Method-name:addAddOn
+Method-returnType:void
+Method-parameters:[final AddOnProperties addOn]
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:fireTableRowsInserted
+Method-name:removeAddOn
+Method-returnType:void
+Method-parameters:[final AddOnProperties addOn]
+MethodInvocation:indexOf
+MethodInvocation:remove
+MethodInvocation:fireTableRowsDeleted
+Field:ADDON_RENDERER
+Field:tableModel
+Field:iconColumn
+Field:textColumn
+Field:buttonsColumn
+Method-name:ManageAddOnsPanel
+Method-returnType:null
+Method-parameters:[List<AddOnProperties> addOns]
+MethodInvocation:setLayout
+MethodInvocation:createTable
+MethodInvocation:setBackground
+MethodInvocation:getViewport
+MethodInvocation:setOpaque
+MethodInvocation:setBackground
+MethodInvocation:getViewport
+MethodInvocation:addListSelectionListener
+MethodInvocation:getSelectionModel
+Method-name:valueChanged
+Method-returnType:void
+Method-parameters:[ListSelectionEvent e]
+MethodInvocation:getSelectedRowCount
+MethodInvocation:setViewportView
+MethodInvocation:getSelectedRow
+MethodInvocation:getValueAt
+MethodInvocation:setOpaque
+MethodInvocation:setViewportView
+MethodInvocation:add
+MethodInvocation:add
+Method-name:createTable
+Method-returnType:JTable
+Method-parameters:[final AddOnTableModel tableModel]
+MethodInvocation:setTableHeader
+MethodInvocation:setRowHeight
+MethodInvocation:setBackground
+MethodInvocation:setShowVerticalLines
+MethodInvocation:getColumnModel
+MethodInvocation:createButton
+MethodInvocation:createButton
+MethodInvocation:createButton
+MethodInvocation:createButton
+MethodInvocation:setMinWidth
+MethodInvocation:getColumn
+MethodInvocation:setPreferredWidth
+MethodInvocation:getColumn
+MethodInvocation:setPreferredWidth
+MethodInvocation:getColumn
+MethodInvocation:setMinWidth
+MethodInvocation:getColumn
+MethodInvocation:getPreferredWidth
+MethodInvocation:setPreferredWidth
+MethodInvocation:getColumn
+MethodInvocation:getPreferredWidth
+MethodInvocation:createConfigureAction
+MethodInvocation:createDeactivateAction
+MethodInvocation:createActivateAction
+MethodInvocation:createDeinstallAction
+MethodInvocation:setCellRenderer
+MethodInvocation:getColumn
+MethodInvocation:getColumnModel
+MethodInvocation:setFocusable
+Method-name:getPreferredWidth
+Method-returnType:int
+Method-parameters:[JButton[] buttons]
+MethodInvocation:getPreferredSize
+MethodInvocation:getWidth
+MethodInvocation:getWidth
+Method-name:createConfigureAction
+Method-returnType:AbstractAction
+Method-parameters:[final AddOnTableModel tableModel]
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[ActionEvent e]
+MethodInvocation:parseInt
+MethodInvocation:getActionCommand
+MethodInvocation:getAddOnAt
+MethodInvocation:supportsOperation
+MethodInvocation:showMessageDialog
+MethodInvocation:getText
+MethodInvocation:getTranslatedName
+MethodInvocation:load
+MethodInvocation:getPreferencesXml
+MethodInvocation:actionPerformed
+MethodInvocation:createShowPreferencesAction
+Method-name:createDeactivateAction
+Method-returnType:AbstractAction
+Method-parameters:[final AddOnTableModel tableModel]
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[ActionEvent e]
+MethodInvocation:parseInt
+MethodInvocation:getActionCommand
+MethodInvocation:getAddOnAt
+MethodInvocation:supportsOperation
+MethodInvocation:showMessageDialog
+MethodInvocation:getText
+MethodInvocation:getTranslatedName
+MethodInvocation:setActive
+MethodInvocation:saveAddOn
+MethodInvocation:showMessageDialog
+MethodInvocation:getText
+MethodInvocation:getTranslatedName
+Method-name:createActivateAction
+Method-returnType:AbstractAction
+Method-parameters:[final AddOnTableModel tableModel]
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[ActionEvent e]
+MethodInvocation:parseInt
+MethodInvocation:getActionCommand
+MethodInvocation:getAddOnAt
+MethodInvocation:supportsOperation
+MethodInvocation:showMessageDialog
+MethodInvocation:getText
+MethodInvocation:getTranslatedName
+MethodInvocation:setActive
+MethodInvocation:saveAddOn
+MethodInvocation:showMessageDialog
+MethodInvocation:getText
+MethodInvocation:getTranslatedName
+Method-name:createDeinstallAction
+Method-returnType:AbstractAction
+Method-parameters:[final AddOnTableModel tableModel]
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[ActionEvent e]
+MethodInvocation:parseInt
+MethodInvocation:getActionCommand
+MethodInvocation:getAddOnAt
+MethodInvocation:supportsOperation
+MethodInvocation:errorMessage
+MethodInvocation:getText
+MethodInvocation:getTranslatedName
+MethodInvocation:showConfirmDialog
+MethodInvocation:getText
+MethodInvocation:getText
+MethodInvocation:getNameKey
+MethodInvocation:getText
+MethodInvocation:deinstall
+MethodInvocation:repaint
+MethodInvocation:informationMessage
+MethodInvocation:getText
+MethodInvocation:getTranslatedName
+Method-name:deinstall
+Method-returnType:void
+Method-parameters:[final AddOnTableModel tableModel, final AddOnProperties addOn]
+MethodInvocation:deinstall
+MethodInvocation:getController
+MethodInvocation:removeAddOn
+MethodInvocation:setWaitingCursor
+MethodInvocation:getViewController
+MethodInvocation:getCurrentController
+Method-name:createButton
+Method-returnType:JButton
+Method-parameters:[final String name]
+MethodInvocation:getText
+MethodInvocation:setName
+Method-name:saveAddOn
+Method-returnType:void
+Method-parameters:[final AddOnProperties addOn]
+MethodInvocation:save
+MethodInvocation:getController
+MethodInvocation:errorMessage
+MethodInvocation:getMessage
+Method-name:getTableModel
+Method-returnType:AddOnTableModel
+Method-parameters:[]
+Method-name:getText
+Method-returnType:String
+Method-parameters:[String key, Object... parameters]
+MethodInvocation:getText

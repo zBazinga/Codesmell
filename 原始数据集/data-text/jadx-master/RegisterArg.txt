@@ -1,0 +1,168 @@
+Class:RegisterArg
+Field:THIS_ARG_NAME
+Field:SUPER_ARG_NAME
+Field:regNum
+Field:sVar
+Method-name:RegisterArg
+Method-returnType:null
+Method-parameters:[int rn, ArgType type]
+FieldAccess:type
+FieldAccess:regNum
+Method-name:getRegNum
+Method-returnType:int
+Method-parameters:[]
+Method-name:isRegister
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setType
+Method-returnType:void
+Method-parameters:[ArgType newType]
+MethodInvocation:setType
+Method-name:getType
+Method-returnType:ArgType
+Method-parameters:[]
+MethodInvocation:getType
+MethodInvocation:getTypeInfo
+Method-name:getInitType
+Method-returnType:ArgType
+Method-parameters:[]
+Method-name:getImmutableType
+Method-returnType:ArgType
+Method-parameters:[]
+MethodInvocation:contains
+MethodInvocation:getImmutableType
+Method-name:isTypeImmutable
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:contains
+MethodInvocation:isTypeImmutable
+Method-name:getSVar
+Method-returnType:SSAVar
+Method-parameters:[]
+Method-name:setSVar
+Method-returnType:void
+Method-parameters:[@NotNull SSAVar sVar]
+FieldAccess:sVar
+Method-name:add
+Method-returnType:void
+Method-parameters:[AFlag flag]
+MethodInvocation:isTypeKnown
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isSuper
+MethodInvocation:isThis
+MethodInvocation:getName
+Method-name:isSuper
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:contains
+Method-name:setName
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:setName
+Method-name:setNameIfUnknown
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:getName
+MethodInvocation:setName
+Method-name:isNameEquals
+Method-returnType:boolean
+Method-parameters:[InsnArg arg]
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:duplicate
+Method-returnType:RegisterArg
+Method-parameters:[]
+MethodInvocation:duplicate
+MethodInvocation:getRegNum
+Method-name:duplicate
+Method-returnType:RegisterArg
+Method-parameters:[ArgType initType]
+MethodInvocation:duplicate
+MethodInvocation:getRegNum
+Method-name:duplicate
+Method-returnType:RegisterArg
+Method-parameters:[@Nullable SSAVar ssaVar]
+MethodInvocation:duplicate
+MethodInvocation:getRegNum
+Method-name:duplicate
+Method-returnType:RegisterArg
+Method-parameters:[int regNum, @Nullable SSAVar sVar]
+MethodInvocation:duplicate
+MethodInvocation:getInitType
+Method-name:duplicate
+Method-returnType:RegisterArg
+Method-parameters:[int regNum, ArgType initType, @Nullable SSAVar sVar]
+MethodInvocation:setSVar
+MethodInvocation:copyCommonParams
+Method-name:getAssignInsn
+Method-returnType:InsnNode
+Method-parameters:[]
+MethodInvocation:getParentInsn
+MethodInvocation:getAssign
+Method-name:equalRegisterAndType
+Method-returnType:boolean
+Method-parameters:[RegisterArg arg]
+MethodInvocation:equals
+Method-name:sameRegAndSVar
+Method-returnType:boolean
+Method-parameters:[InsnArg arg]
+MethodInvocation:isRegister
+MethodInvocation:getRegNum
+MethodInvocation:equals
+MethodInvocation:getSVar
+Method-name:sameReg
+Method-returnType:boolean
+Method-parameters:[InsnArg arg]
+MethodInvocation:isRegister
+MethodInvocation:getRegNum
+Method-name:sameCodeVar
+Method-returnType:boolean
+Method-parameters:[RegisterArg arg]
+MethodInvocation:getCodeVar
+MethodInvocation:getSVar
+MethodInvocation:getCodeVar
+MethodInvocation:getSVar
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+MethodInvocation:getSVar
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getVersion
+MethodInvocation:getName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getName
+MethodInvocation:getType
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getInitType
+MethodInvocation:equals
+MethodInvocation:isTypeKnown
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:isAttrStorageEmpty
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getAttributesString
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:makeNewSVar
+Method-returnType:SSAVar
+Method-parameters:[MethodNode methodNode]
+MethodInvocation:getRegNum
+MethodInvocation:makeNewSVar
+MethodInvocation:getNextSVarVersion

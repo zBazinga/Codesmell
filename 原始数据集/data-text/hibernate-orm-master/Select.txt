@@ -1,0 +1,118 @@
+Class:Select
+Field:selectClause
+Field:fromClause
+Field:outerJoinsAfterFrom
+Field:whereClause
+Field:outerJoinsAfterWhere
+Field:orderByClause
+Field:groupByClause
+Field:comment
+Field:lockOptions
+Field:dialect
+Field:guesstimatedBufferSize
+Method-name:Select
+Method-returnType:null
+Method-parameters:[Dialect dialect]
+FieldAccess:dialect
+Method-name:toStatementString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isNotEmpty
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:isNotEmpty
+MethodInvocation:append
+MethodInvocation:isNotEmpty
+MethodInvocation:isNotEmpty
+MethodInvocation:append
+MethodInvocation:isNotEmpty
+MethodInvocation:append
+MethodInvocation:isNotEmpty
+MethodInvocation:append
+MethodInvocation:isNotEmpty
+MethodInvocation:append
+MethodInvocation:isNotEmpty
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:isNotEmpty
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getLockMode
+MethodInvocation:append
+MethodInvocation:getForUpdateString
+MethodInvocation:transformSelectString
+MethodInvocation:toString
+Method-name:setFromClause
+Method-returnType:Select
+Method-parameters:[String fromClause]
+FieldAccess:fromClause
+FieldAccess:guesstimatedBufferSize
+MethodInvocation:length
+Method-name:setFromClause
+Method-returnType:Select
+Method-parameters:[String tableName, String alias]
+FieldAccess:fromClause
+FieldAccess:guesstimatedBufferSize
+MethodInvocation:length
+Method-name:setOrderByClause
+Method-returnType:Select
+Method-parameters:[String orderByClause]
+FieldAccess:orderByClause
+FieldAccess:guesstimatedBufferSize
+MethodInvocation:length
+Method-name:setGroupByClause
+Method-returnType:Select
+Method-parameters:[String groupByClause]
+FieldAccess:groupByClause
+FieldAccess:guesstimatedBufferSize
+MethodInvocation:length
+Method-name:setOuterJoins
+Method-returnType:Select
+Method-parameters:[String outerJoinsAfterFrom, String outerJoinsAfterWhere]
+FieldAccess:outerJoinsAfterFrom
+MethodInvocation:trim
+MethodInvocation:startsWith
+MethodInvocation:substring
+FieldAccess:outerJoinsAfterWhere
+FieldAccess:guesstimatedBufferSize
+MethodInvocation:length
+MethodInvocation:length
+Method-name:setSelectClause
+Method-returnType:Select
+Method-parameters:[String selectClause]
+FieldAccess:selectClause
+FieldAccess:guesstimatedBufferSize
+MethodInvocation:length
+Method-name:setWhereClause
+Method-returnType:Select
+Method-parameters:[String whereClause]
+FieldAccess:whereClause
+FieldAccess:guesstimatedBufferSize
+MethodInvocation:length
+Method-name:setComment
+Method-returnType:Select
+Method-parameters:[String comment]
+FieldAccess:comment
+FieldAccess:guesstimatedBufferSize
+MethodInvocation:length
+Method-name:getLockMode
+Method-returnType:LockMode
+Method-parameters:[]
+MethodInvocation:getLockMode
+Method-name:setLockMode
+Method-returnType:Select
+Method-parameters:[LockMode lockMode]
+MethodInvocation:setLockMode
+Method-name:getLockOptions
+Method-returnType:LockOptions
+Method-parameters:[]
+Method-name:setLockOptions
+Method-returnType:Select
+Method-parameters:[LockOptions lockOptions]
+MethodInvocation:copy
+FieldAccess:lockOptions

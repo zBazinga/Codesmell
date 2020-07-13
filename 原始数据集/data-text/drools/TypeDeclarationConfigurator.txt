@@ -1,0 +1,91 @@
+Class:TypeDeclarationConfigurator
+Field:kbuilder
+Method-name:TypeDeclarationConfigurator
+Method-returnType:null
+Method-parameters:[KnowledgeBuilderImpl kbuilder]
+FieldAccess:kbuilder
+Method-name:wireFieldAccessors
+Method-returnType:boolean
+Method-parameters:[PackageRegistry pkgRegistry, AbstractClassTypeDeclarationDescr typeDescr, TypeDeclaration type]
+MethodInvocation:getTypeClassDef
+MethodInvocation:buildFieldAccessors
+MethodInvocation:addBuilderResult
+MethodInvocation:getTypeName
+MethodInvocation:getTypeName
+MethodInvocation:getMessage
+MethodInvocation:processMvelBasedAccessors
+MethodInvocation:processTypeAnnotations
+MethodInvocation:getPropertySpecificOption
+MethodInvocation:getBuilderConfiguration
+Method-name:processMvelBasedAccessors
+Method-returnType:void
+Method-parameters:[KnowledgeBuilderImpl kbuilder, PackageRegistry pkgRegistry, Annotated annotated, TypeDeclaration type]
+MethodInvocation:wireTimestampAccessor
+MethodInvocation:wireDurationAccessor
+Method-name:buildFieldAccessors
+Method-returnType:void
+Method-parameters:[final TypeDeclaration type, final PackageRegistry pkgRegistry]
+MethodInvocation:getTypeClassDef
+MethodInvocation:getClassFieldAccessorStore
+MethodInvocation:getPackage
+MethodInvocation:getFieldsDefinitions
+MethodInvocation:getAccessor
+MethodInvocation:getName
+MethodInvocation:getDefinedClass
+MethodInvocation:getName
+MethodInvocation:setReadWriteAccessor
+Method-name:wireTimestampAccessor
+Method-returnType:void
+Method-parameters:[KnowledgeBuilderImpl kbuilder, Annotated annotated, TypeDeclaration type, PackageRegistry pkgRegistry]
+MethodInvocation:getTypedAnnotation
+MethodInvocation:value
+MethodInvocation:addBuilderResult
+MethodInvocation:getMessage
+MethodInvocation:setTimestampAttribute
+MethodInvocation:getPackage
+MethodInvocation:getMvelAnalysisResult
+MethodInvocation:setTimestampExtractor
+MethodInvocation:getFieldExtractor
+MethodInvocation:addBuilderResult
+MethodInvocation:getTypeName
+Method-name:wireDurationAccessor
+Method-returnType:void
+Method-parameters:[KnowledgeBuilderImpl kbuilder, Annotated annotated, TypeDeclaration type, PackageRegistry pkgRegistry]
+MethodInvocation:getTypedAnnotation
+MethodInvocation:value
+MethodInvocation:addBuilderResult
+MethodInvocation:getMessage
+MethodInvocation:setDurationAttribute
+MethodInvocation:getPackage
+MethodInvocation:getMvelAnalysisResult
+MethodInvocation:setDurationExtractor
+MethodInvocation:getFieldExtractor
+MethodInvocation:addBuilderResult
+MethodInvocation:getFullName
+Method-name:getMvelAnalysisResult
+Method-returnType:MVELAnalysisResult
+Method-parameters:[KnowledgeBuilderImpl kbuilder, BaseDescr typeDescr, TypeDeclaration type, PackageRegistry pkgRegistry, String durationField, InternalKnowledgePackage pkg]
+MethodInvocation:getDialect
+MethodInvocation:getDialectCompiletimeRegistry
+MethodInvocation:init
+MethodInvocation:getDialectCompiletimeRegistry
+MethodInvocation:isTypesafe
+MethodInvocation:setTypesafe
+MethodInvocation:analyzeExpression
+MethodInvocation:getDialect
+MethodInvocation:getTypeClass
+Method-name:getFieldExtractor
+Method-returnType:InternalReadAccessor
+Method-parameters:[TypeDeclaration type, String timestampField, InternalKnowledgePackage pkg, MVELAnalysisResult results]
+MethodInvocation:getMVELReader
+MethodInvocation:getClassFieldAccessorStore
+MethodInvocation:getPackage
+MethodInvocation:getTypeClass
+MethodInvocation:getName
+MethodInvocation:getTypeClass
+MethodInvocation:isTypesafe
+MethodInvocation:getReturnType
+MethodInvocation:getDialectData
+MethodInvocation:getDialectRuntimeRegistry
+MethodInvocation:addCompileable
+MethodInvocation:compile

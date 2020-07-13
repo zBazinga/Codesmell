@@ -1,0 +1,300 @@
+Class:RequestDetails
+Field:myRequestStopwatch
+Field:myInterceptorBroadcaster
+Field:myTenantId
+Field:myCompartmentName
+Field:myCompleteUrl
+Field:myFhirServerBase
+Field:myId
+Field:myOperation
+Field:myParameters
+Field:myRequestContents
+Field:myDeferredInterceptorBroadcaster
+Field:myRequestPath
+Field:myRequestType
+Field:myResourceName
+Field:myRespondGzip
+Field:myResponse
+Field:myRestOperationType
+Field:mySecondaryOperation
+Field:mySubRequest
+Field:myUnqualifiedToQualifiedNames
+Field:myUserData
+Field:myResource
+Field:myRequestId
+Field:myTransactionGuid
+Field:myFixedConditionalUrl
+Method-name:RequestDetails
+Method-returnType:null
+Method-parameters:[IInterceptorBroadcaster theInterceptorBroadcaster]
+Method-name:getFixedConditionalUrl
+Method-returnType:String
+Method-parameters:[]
+Method-name:setFixedConditionalUrl
+Method-returnType:void
+Method-parameters:[String theFixedConditionalUrl]
+Method-name:getRequestId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setRequestId
+Method-returnType:void
+Method-parameters:[String theRequestId]
+Method-name:getRequestStopwatch
+Method-returnType:StopWatch
+Method-parameters:[]
+Method-name:getResource
+Method-returnType:IBaseResource
+Method-parameters:[]
+Method-name:setResource
+Method-returnType:void
+Method-parameters:[IBaseResource theResource]
+Method-name:addParameter
+Method-returnType:void
+Method-parameters:[String theName, String[] theValues]
+MethodInvocation:getParameters
+MethodInvocation:put
+Method-name:getByteStreamRequestContents
+Method-returnType:byte[]
+Method-parameters:[]
+Method-name:getCharset
+Method-returnType:Charset
+Method-parameters:[]
+Method-name:getCompartmentName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setCompartmentName
+Method-returnType:void
+Method-parameters:[String theCompartmentName]
+Method-name:getCompleteUrl
+Method-returnType:String
+Method-parameters:[]
+Method-name:setCompleteUrl
+Method-returnType:void
+Method-parameters:[String theCompleteUrl]
+Method-name:getConditionalUrl
+Method-returnType:String
+Method-parameters:[RestOperationTypeEnum theOperationType]
+MethodInvocation:getHeader
+MethodInvocation:isBlank
+MethodInvocation:startsWith
+MethodInvocation:getFhirServerBase
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:getFhirServerBase
+MethodInvocation:getId
+MethodInvocation:hasIdPart
+MethodInvocation:getId
+MethodInvocation:indexOf
+MethodInvocation:getCompleteUrl
+MethodInvocation:getResourceName
+MethodInvocation:substring
+MethodInvocation:getCompleteUrl
+Method-name:getFhirContext
+Method-returnType:FhirContext
+Method-parameters:[]
+Method-name:getFhirServerBase
+Method-returnType:String
+Method-parameters:[]
+Method-name:setFhirServerBase
+Method-returnType:void
+Method-parameters:[String theFhirServerBase]
+Method-name:getHeader
+Method-returnType:String
+Method-parameters:[String name]
+Method-name:getHeaders
+Method-returnType:List<String>
+Method-parameters:[String name]
+Method-name:getId
+Method-returnType:IIdType
+Method-parameters:[]
+Method-name:setId
+Method-returnType:void
+Method-parameters:[IIdType theId]
+Method-name:getAttribute
+Method-returnType:Object
+Method-parameters:[String theAttributeName]
+Method-name:setAttribute
+Method-returnType:void
+Method-parameters:[String theAttributeName, Object theAttributeValue]
+Method-name:getInputStream
+Method-returnType:InputStream
+Method-parameters:[]
+Method-name:getOperation
+Method-returnType:String
+Method-parameters:[]
+Method-name:setOperation
+Method-returnType:void
+Method-parameters:[String theOperation]
+Method-name:getParameters
+Method-returnType:Map<String,String[]>
+Method-parameters:[]
+MethodInvocation:unmodifiableMap
+Method-name:setParameters
+Method-returnType:void
+Method-parameters:[Map<String,String[]> theParams]
+MethodInvocation:keySet
+MethodInvocation:isNeedsSanitization
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:entrySet
+MethodInvocation:toMap
+MethodInvocation:sanitizeUrlPart
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:getReader
+Method-returnType:Reader
+Method-parameters:[]
+Method-name:getInterceptorBroadcaster
+Method-returnType:IInterceptorBroadcaster
+Method-parameters:[]
+Method-name:getRequestPath
+Method-returnType:String
+Method-parameters:[]
+Method-name:setRequestPath
+Method-returnType:void
+Method-parameters:[String theRequestPath]
+Method-name:getRequestType
+Method-returnType:RequestTypeEnum
+Method-parameters:[]
+Method-name:setRequestType
+Method-returnType:void
+Method-parameters:[RequestTypeEnum theRequestType]
+Method-name:getResourceName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setResourceName
+Method-returnType:void
+Method-parameters:[String theResourceName]
+Method-name:getResponse
+Method-returnType:IRestfulResponse
+Method-parameters:[]
+Method-name:setResponse
+Method-returnType:void
+Method-parameters:[IRestfulResponse theResponse]
+FieldAccess:myResponse
+Method-name:getRestOperationType
+Method-returnType:RestOperationTypeEnum
+Method-parameters:[]
+Method-name:setRestOperationType
+Method-returnType:void
+Method-parameters:[RestOperationTypeEnum theRestOperationType]
+Method-name:getSecondaryOperation
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSecondaryOperation
+Method-returnType:void
+Method-parameters:[String theSecondaryOperation]
+Method-name:getServer
+Method-returnType:IRestfulServerDefaults
+Method-parameters:[]
+Method-name:getServerBaseForRequest
+Method-returnType:String
+Method-parameters:[]
+Method-name:getTenantId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTenantId
+Method-returnType:void
+Method-parameters:[String theTenantId]
+Method-name:getUnqualifiedToQualifiedNames
+Method-returnType:Map<String,List<String>>
+Method-parameters:[]
+MethodInvocation:keySet
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:substring
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:emptyMap
+Method-name:getUserData
+Method-returnType:Map<Object,Object>
+Method-parameters:[]
+Method-name:isRespondGzip
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setRespondGzip
+Method-returnType:void
+Method-parameters:[boolean theRespondGzip]
+Method-name:isSubRequest
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSubRequest
+Method-returnType:void
+Method-parameters:[boolean theSubRequest]
+Method-name:loadRequestContents
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:getByteStreamRequestContents
+MethodInvocation:getRequestContentsIfLoaded
+Method-name:getRequestContentsIfLoaded
+Method-returnType:byte[]
+Method-parameters:[]
+Method-name:removeParameter
+Method-returnType:void
+Method-parameters:[String theName]
+MethodInvocation:notNull
+MethodInvocation:getParameters
+MethodInvocation:remove
+Method-name:setRequestContents
+Method-returnType:void
+Method-parameters:[byte[] theRequestContents]
+Method-name:startDeferredOperationCallback
+Method-returnType:void
+Method-parameters:[]
+Method-name:stopDeferredRequestOperationCallbackAndRunDeferredItems
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:playDeferredActions
+MethodInvocation:getWrap
+Method-name:getTransactionGuid
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTransactionGuid
+Method-returnType:void
+Method-parameters:[String theTransactionGuid]
+Method-name:parseParams
+Method-returnType:void
+Method-parameters:[List<QualifiedParamList> paramList, String theQualifiedParamName, String theQualifier, BaseQueryParameter baseQueryParameter]
+MethodInvocation:extractQualifiersFromParameterName
+MethodInvocation:passes
+MethodInvocation:getQualifierWhitelist
+MethodInvocation:getQualifierBlacklist
+MethodInvocation:get
+MethodInvocation:getParameters
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:singleton
+MethodInvocation:add
+MethodInvocation:splitQueryStringByCommasIgnoreEscape
+Class:DeferredOperationCallback
+Field:myWrap
+Field:myDeferredTasks
+Method-name:DeferredOperationCallback
+Method-returnType:null
+Method-parameters:[@Nonnull IInterceptorBroadcaster theWrap]
+MethodInvocation:notNull
+Method-name:playDeferredActions
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:forEach
+Method-name:getWrap
+Method-returnType:IInterceptorBroadcaster
+Method-parameters:[]
+Method-name:callHooks
+Method-returnType:boolean
+Method-parameters:[Pointcut thePointcut, HookParams theParams]
+MethodInvocation:add
+MethodInvocation:callHooks
+Method-name:callHooksAndReturnObject
+Method-returnType:Object
+Method-parameters:[Pointcut thePointcut, HookParams theParams]
+MethodInvocation:equals
+MethodInvocation:getReturnType
+MethodInvocation:callHooksAndReturnObject
+MethodInvocation:add
+MethodInvocation:callHooksAndReturnObject
+Method-name:hasHooks
+Method-returnType:boolean
+Method-parameters:[Pointcut thePointcut]
+MethodInvocation:hasHooks

@@ -1,0 +1,93 @@
+Class:CollectSinkOperatorCoordinator
+Field:LOG
+MethodInvocation:getLogger
+Field:socketTimeout
+Field:address
+Field:socket
+Field:inStream
+Field:outStream
+Field:executorService
+Method-name:CollectSinkOperatorCoordinator
+Method-returnType:null
+Method-parameters:[int socketTimeout]
+FieldAccess:socketTimeout
+Method-name:start
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:executorService
+MethodInvocation:newSingleThreadExecutor
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:closeConnection
+MethodInvocation:shutdown
+FieldAccess:executorService
+Method-name:handleEventFromOperator
+Method-returnType:void
+Method-parameters:[int subtask, OperatorEvent event]
+MethodInvocation:checkArgument
+MethodInvocation:getAddress
+MethodInvocation:info
+Method-name:handleCoordinationRequest
+Method-returnType:CompletableFuture<CoordinationResponse>
+Method-parameters:[CoordinationRequest request]
+MethodInvocation:checkArgument
+MethodInvocation:completeWithEmptyResponse
+MethodInvocation:submit
+MethodInvocation:handleRequestImpl
+Method-name:handleRequestImpl
+Method-returnType:void
+Method-parameters:[CollectCoordinationRequest request, CompletableFuture<CoordinationResponse> responseFuture, InetSocketAddress sinkAddress]
+MethodInvocation:closeConnection
+MethodInvocation:completeWithEmptyResponse
+MethodInvocation:setSoTimeout
+MethodInvocation:setKeepAlive
+MethodInvocation:setTcpNoDelay
+MethodInvocation:connect
+MethodInvocation:getInputStream
+MethodInvocation:getOutputStream
+MethodInvocation:info
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:serialize
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:complete
+MethodInvocation:warn
+MethodInvocation:closeConnection
+MethodInvocation:completeWithEmptyResponse
+Method-name:closeConnection
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+MethodInvocation:warn
+Method-name:subtaskFailed
+Method-returnType:void
+Method-parameters:[int subtask, @Nullable Throwable reason]
+Method-name:checkpointCoordinator
+Method-returnType:CompletableFuture<byte[]>
+Method-parameters:[long checkpointId]
+MethodInvocation:writeObject
+MethodInvocation:completedFuture
+MethodInvocation:toByteArray
+Method-name:checkpointComplete
+Method-returnType:void
+Method-parameters:[long checkpointId]
+Method-name:resetToCheckpoint
+Method-returnType:void
+Method-parameters:[byte[] checkpointData]
+MethodInvocation:readObject
+Class:Provider
+Field:operatorId
+Field:socketTimeout
+Method-name:Provider
+Method-returnType:null
+Method-parameters:[OperatorID operatorId, int socketTimeout]
+FieldAccess:operatorId
+FieldAccess:socketTimeout
+Method-name:getOperatorId
+Method-returnType:OperatorID
+Method-parameters:[]
+Method-name:create
+Method-returnType:OperatorCoordinator
+Method-parameters:[Context context]

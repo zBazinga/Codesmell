@@ -1,0 +1,154 @@
+Class:ClassFieldAccessorCache
+Field:cacheByClassLoader
+Field:classLoader
+Method-name:ClassFieldAccessorCache
+Method-returnType:null
+Method-parameters:[ClassLoader classLoader]
+FieldAccess:classLoader
+Method-name:getClassLoader
+Method-returnType:ClassLoader
+Method-parameters:[]
+FieldAccess:classLoader
+Class:ClassObjectTypeKey
+Field:cls
+Field:event
+Method-name:ClassObjectTypeKey
+Method-returnType:null
+Method-parameters:[Class cls, boolean event]
+FieldAccess:cls
+FieldAccess:event
+Method-name:getCls
+Method-returnType:Class
+Method-parameters:[]
+Method-name:isEvent
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+Method-name:getReadAcessor
+Method-returnType:BaseClassFieldReader
+Method-parameters:[ClassFieldReader reader]
+MethodInvocation:getClass
+MethodInvocation:getClassName
+MethodInvocation:getReadAccessor
+MethodInvocation:getCacheEntry
+MethodInvocation:getAccessorKey
+Method-name:setReadAcessor
+Method-returnType:void
+Method-parameters:[ClassFieldReader reader, BaseClassFieldReader readAccessor]
+MethodInvocation:getClass
+MethodInvocation:getClassName
+MethodInvocation:setReadAccessor
+MethodInvocation:getCacheEntry
+MethodInvocation:getAccessorKey
+Method-name:getAccessorKey
+Method-returnType:AccessorKey
+Method-parameters:[ClassFieldReader reader]
+MethodInvocation:getClassName
+MethodInvocation:getFieldName
+Method-name:getWriteAcessor
+Method-returnType:BaseClassFieldWriter
+Method-parameters:[ClassFieldWriter writer]
+MethodInvocation:getClass
+MethodInvocation:getClassName
+MethodInvocation:getWriteAccessor
+MethodInvocation:getCacheEntry
+MethodInvocation:getAccessorKey
+Method-name:setWriteAcessor
+Method-returnType:void
+Method-parameters:[ClassFieldWriter writer, BaseClassFieldWriter writeAccessor]
+MethodInvocation:getClass
+MethodInvocation:getClassName
+MethodInvocation:setWriteAccessor
+MethodInvocation:getCacheEntry
+MethodInvocation:getAccessorKey
+Method-name:getAccessorKey
+Method-returnType:AccessorKey
+Method-parameters:[ClassFieldWriter writer]
+MethodInvocation:getClassName
+MethodInvocation:getFieldName
+Method-name:getClass
+Method-returnType:Class
+Method-parameters:[String className]
+MethodInvocation:convertPrimitiveNameToType
+MethodInvocation:loadClass
+FieldAccess:classLoader
+Method-name:getCacheEntry
+Method-returnType:CacheEntry
+Method-parameters:[Class cls]
+MethodInvocation:getClassLoader
+MethodInvocation:getClassLoader
+FieldAccess:classLoader
+MethodInvocation:get
+FieldAccess:cacheByClassLoader
+FieldAccess:classLoader
+MethodInvocation:put
+FieldAccess:cacheByClassLoader
+Class:CacheEntry
+Field:byteArrayClassLoader
+Field:readCache
+Field:writeCache
+Field:inspectors
+Field:objectTypes
+Method-name:CacheEntry
+Method-returnType:null
+Method-parameters:[ClassLoader parentClassLoader]
+FieldAccess:byteArrayClassLoader
+MethodInvocation:doPrivileged
+MethodInvocation:isAndroid
+MethodInvocation:instantiateObject
+Method-name:getByteArrayClassLoader
+Method-returnType:ByteArrayClassLoader
+Method-parameters:[]
+Method-name:getReadAccessor
+Method-returnType:BaseClassFieldReader
+Method-parameters:[AccessorKey key, Class cls]
+MethodInvocation:get
+FieldAccess:readCache
+MethodInvocation:getClassFieldReader
+MethodInvocation:getFieldName
+MethodInvocation:putIfAbsent
+FieldAccess:readCache
+Method-name:setReadAccessor
+Method-returnType:void
+Method-parameters:[AccessorKey key, BaseClassFieldReader reader]
+MethodInvocation:put
+FieldAccess:readCache
+Method-name:getWriteAccessor
+Method-returnType:BaseClassFieldWriter
+Method-parameters:[AccessorKey key, Class cls]
+MethodInvocation:get
+FieldAccess:writeCache
+MethodInvocation:getClassFieldWriter
+MethodInvocation:getFieldName
+MethodInvocation:putIfAbsent
+FieldAccess:writeCache
+Method-name:setWriteAccessor
+Method-returnType:void
+Method-parameters:[AccessorKey key, BaseClassFieldWriter writer]
+MethodInvocation:put
+FieldAccess:writeCache
+Method-name:getInspectors
+Method-returnType:Map<Class<?>,ClassFieldInspector>
+Method-parameters:[]
+Method-name:getClassObjectType
+Method-returnType:ClassObjectType
+Method-parameters:[Class<?> cls, ClassObjectType objectType]
+MethodInvocation:isEvent
+MethodInvocation:get
+MethodInvocation:setClassType
+MethodInvocation:putIfAbsent
+Class:DefaultByteArrayClassLoader
+Method-name:DefaultByteArrayClassLoader
+Method-returnType:null
+Method-parameters:[final ClassLoader parent]
+Method-name:defineClass
+Method-returnType:Class<?>
+Method-parameters:[final String name, final byte[] bytes, final ProtectionDomain domain]
+MethodInvocation:defineClass

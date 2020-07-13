@@ -1,0 +1,99 @@
+Class:TreeNode
+Field:owner
+Field:startPosition
+Field:length
+Field:lineNumber
+Method-name:TreeNode
+Method-returnType:null
+Method-parameters:[]
+Method-name:TreeNode
+Method-returnType:null
+Method-parameters:[TreeNode other]
+MethodInvocation:getStartPosition
+MethodInvocation:getLength
+MethodInvocation:getLineNumber
+Method-name:getKind
+Method-returnType:Kind
+Method-parameters:[]
+Method-name:getParent
+Method-returnType:TreeNode
+Method-parameters:[]
+MethodInvocation:getParent
+Method-name:setOwner
+Method-returnType:void
+Method-parameters:[ChildLink<? extends TreeNode> newOwner]
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:remove
+Method-name:replaceWith
+Method-returnType:void
+Method-parameters:[TreeNode other]
+Method-name:getStartPosition
+Method-returnType:int
+Method-parameters:[]
+Method-name:getLength
+Method-returnType:int
+Method-parameters:[]
+Method-name:setSourceRange
+Method-returnType:void
+Method-parameters:[int newStartPosition, int newLength]
+Method-name:getLineNumber
+Method-returnType:int
+Method-parameters:[]
+Method-name:setLineNumber
+Method-returnType:void
+Method-parameters:[int lineNumber]
+FieldAccess:lineNumber
+Method-name:accept
+Method-returnType:void
+Method-parameters:[TreeVisitor visitor]
+MethodInvocation:preVisit
+MethodInvocation:acceptInner
+MethodInvocation:postVisit
+Method-name:acceptInner
+Method-returnType:void
+Method-parameters:[TreeVisitor visitor]
+Method-name:copy
+Method-returnType:TreeNode
+Method-parameters:[]
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:accept
+Method-name:preVisit
+Method-returnType:boolean
+Method-parameters:[TreeNode node]
+MethodInvocation:validateInner
+Method-name:validateInner
+Method-returnType:void
+Method-parameters:[]
+Method-name:setPosition
+Method-returnType:TreeNode
+Method-parameters:[SourcePosition position]
+FieldAccess:startPosition
+MethodInvocation:getStartPosition
+FieldAccess:length
+MethodInvocation:getLength
+FieldAccess:lineNumber
+MethodInvocation:getLineNumber
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:getSourceIndent
+Method-returnType:String
+Method-parameters:[JavadocGenerator javadocGenerator]
+MethodInvocation:getStartPosition
+MethodInvocation:getParent
+MethodInvocation:getKind
+MethodInvocation:getParent
+MethodInvocation:getSource
+MethodInvocation:charAt
+MethodInvocation:isWhitespace
+MethodInvocation:substring
+MethodInvocation:indexOf
+MethodInvocation:length
+MethodInvocation:substring
+MethodInvocation:substring
+Field:Kind

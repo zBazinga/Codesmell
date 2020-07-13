@@ -1,0 +1,32 @@
+Class:TemporalDependencyMatrix
+Field:matrix
+Field:events
+Method-name:TemporalDependencyMatrix
+Method-returnType:null
+Method-parameters:[Interval[][] matrix, List<Pattern> events]
+FieldAccess:matrix
+FieldAccess:events
+Method-name:getMatrix
+Method-returnType:Interval[][]
+Method-parameters:[]
+Method-name:setMatrix
+Method-returnType:void
+Method-parameters:[Interval[][] matrix]
+FieldAccess:matrix
+Method-name:getEvents
+Method-returnType:List<Pattern>
+Method-parameters:[]
+Method-name:setEvents
+Method-returnType:void
+Method-parameters:[List<Pattern> events]
+FieldAccess:events
+Method-name:getExpirationOffset
+Method-returnType:long
+Method-parameters:[Pattern pattern]
+MethodInvocation:indexOf
+MethodInvocation:orElse
+MethodInvocation:max
+MethodInvocation:mapToLong
+MethodInvocation:filter
+MethodInvocation:range
+MethodInvocation:getUpperBound

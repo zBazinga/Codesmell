@@ -1,0 +1,41 @@
+Class:EdgeColorsConfigurationFactory
+Field:EDGE_COLOR_CONFIGURATION_PROPERTY
+Field:configurations
+Field:modeController
+Method-name:EdgeColorsConfigurationFactory
+Method-returnType:null
+Method-parameters:[ModeController modeController]
+FieldAccess:modeController
+Method-name:create
+Method-returnType:EdgeColorConfiguration
+Method-parameters:[MapModel map]
+MethodInvocation:getExtension
+MethodInvocation:getProperty
+MethodInvocation:load
+MethodInvocation:createNewConfiguration
+MethodInvocation:save
+MethodInvocation:setProperty
+MethodInvocation:put
+Method-name:createNewConfiguration
+Method-returnType:EdgeColorConfiguration
+Method-parameters:[MapModel map]
+MethodInvocation:getExtension
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:add
+MethodInvocation:getColor
+Method-name:load
+Method-returnType:EdgeColorConfiguration
+Method-parameters:[String configurationString]
+MethodInvocation:get
+MethodInvocation:split
+MethodInvocation:add
+MethodInvocation:stringToColor
+MethodInvocation:put
+Method-name:setConfiguration
+Method-returnType:void
+Method-parameters:[MapModel map, EdgeColorConfiguration edgeColorConfiguration]
+MethodInvocation:save
+MethodInvocation:setProperty
+MethodInvocation:getExtension
+MethodInvocation:put

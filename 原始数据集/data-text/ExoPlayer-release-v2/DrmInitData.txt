@@ -1,0 +1,179 @@
+Class:DrmInitData
+Method-name:createSessionCreationData
+Method-returnType:DrmInitData
+Method-parameters:[@Nullable DrmInitData manifestData, @Nullable DrmInitData mediaData]
+MethodInvocation:hasData
+MethodInvocation:add
+MethodInvocation:size
+MethodInvocation:hasData
+MethodInvocation:containsSchemeDataWithUuid
+MethodInvocation:add
+MethodInvocation:isEmpty
+Field:schemeDatas
+Field:hashCode
+Field:schemeType
+Field:schemeDataCount
+Method-name:DrmInitData
+Method-returnType:null
+Method-parameters:[List<SchemeData> schemeDatas]
+MethodInvocation:toArray
+Method-name:DrmInitData
+Method-returnType:null
+Method-parameters:[@Nullable String schemeType, List<SchemeData> schemeDatas]
+MethodInvocation:toArray
+Method-name:DrmInitData
+Method-returnType:null
+Method-parameters:[SchemeData... schemeDatas]
+Method-name:DrmInitData
+Method-returnType:null
+Method-parameters:[@Nullable String schemeType, SchemeData... schemeDatas]
+Method-name:DrmInitData
+Method-returnType:null
+Method-parameters:[@Nullable String schemeType, boolean cloneSchemeDatas, SchemeData... schemeDatas]
+FieldAccess:schemeType
+MethodInvocation:clone
+FieldAccess:schemeDatas
+MethodInvocation:sort
+FieldAccess:schemeDatas
+Method-name:DrmInitData
+Method-returnType:null
+Method-parameters:[Parcel in]
+MethodInvocation:readString
+MethodInvocation:castNonNull
+MethodInvocation:createTypedArray
+Method-name:get
+Method-returnType:SchemeData
+Method-parameters:[UUID uuid]
+MethodInvocation:matches
+Method-name:get
+Method-returnType:SchemeData
+Method-parameters:[int index]
+Method-name:copyWithSchemeType
+Method-returnType:DrmInitData
+Method-parameters:[@Nullable String schemeType]
+MethodInvocation:areEqual
+FieldAccess:schemeType
+Method-name:merge
+Method-returnType:DrmInitData
+Method-parameters:[DrmInitData drmInitData]
+MethodInvocation:checkState
+MethodInvocation:equals
+FieldAccess:schemeType
+MethodInvocation:nullSafeArrayConcatenation
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:areEqual
+MethodInvocation:equals
+Method-name:compare
+Method-returnType:int
+Method-parameters:[SchemeData first, SchemeData second]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:compareTo
+Method-name:describeContents
+Method-returnType:int
+Method-parameters:[]
+Method-name:writeToParcel
+Method-returnType:void
+Method-parameters:[Parcel dest, int flags]
+MethodInvocation:writeString
+MethodInvocation:writeTypedArray
+Field:CREATOR
+Method-name:createFromParcel
+Method-returnType:DrmInitData
+Method-parameters:[Parcel in]
+Method-name:newArray
+Method-returnType:DrmInitData[]
+Method-parameters:[int size]
+Method-name:containsSchemeDataWithUuid
+Method-returnType:boolean
+Method-parameters:[ArrayList<SchemeData> datas, int limit, UUID uuid]
+MethodInvocation:equals
+FieldAccess:uuid
+MethodInvocation:get
+Class:SchemeData
+Field:hashCode
+Field:uuid
+Field:licenseServerUrl
+Field:mimeType
+Field:data
+Method-name:SchemeData
+Method-returnType:null
+Method-parameters:[UUID uuid, String mimeType, @Nullable byte[] data]
+Method-name:SchemeData
+Method-returnType:null
+Method-parameters:[UUID uuid, @Nullable String licenseServerUrl, String mimeType, @Nullable byte[] data]
+FieldAccess:uuid
+MethodInvocation:checkNotNull
+FieldAccess:licenseServerUrl
+FieldAccess:mimeType
+MethodInvocation:checkNotNull
+FieldAccess:data
+Method-name:SchemeData
+Method-returnType:null
+Method-parameters:[Parcel in]
+MethodInvocation:readLong
+MethodInvocation:readLong
+MethodInvocation:readString
+MethodInvocation:castNonNull
+MethodInvocation:readString
+MethodInvocation:createByteArray
+Method-name:matches
+Method-returnType:boolean
+Method-parameters:[UUID schemeUuid]
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:canReplace
+Method-returnType:boolean
+Method-parameters:[SchemeData other]
+MethodInvocation:hasData
+MethodInvocation:hasData
+MethodInvocation:matches
+Method-name:hasData
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:copyWithData
+Method-returnType:SchemeData
+Method-parameters:[@Nullable byte[] data]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object obj]
+MethodInvocation:areEqual
+MethodInvocation:areEqual
+MethodInvocation:areEqual
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:describeContents
+Method-returnType:int
+Method-parameters:[]
+Method-name:writeToParcel
+Method-returnType:void
+Method-parameters:[Parcel dest, int flags]
+MethodInvocation:writeLong
+MethodInvocation:getMostSignificantBits
+MethodInvocation:writeLong
+MethodInvocation:getLeastSignificantBits
+MethodInvocation:writeString
+MethodInvocation:writeString
+MethodInvocation:writeByteArray
+Field:CREATOR
+Method-name:createFromParcel
+Method-returnType:SchemeData
+Method-parameters:[Parcel in]
+Method-name:newArray
+Method-returnType:SchemeData[]
+Method-parameters:[int size]

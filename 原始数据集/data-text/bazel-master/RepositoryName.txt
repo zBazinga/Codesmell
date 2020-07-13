@@ -1,0 +1,147 @@
+Class:RepositoryName
+Field:DEFAULT_REPOSITORY
+Field:DEFAULT
+Field:MAIN
+Field:VALID_REPO_NAME
+MethodInvocation:compile
+Field:repositoryNameCache
+MethodInvocation:build
+MethodInvocation:weakValues
+MethodInvocation:newBuilder
+Method-name:load
+Method-returnType:RepositoryName
+Method-parameters:[String name]
+MethodInvocation:validate
+MethodInvocation:sanitizeControlChars
+MethodInvocation:intern
+MethodInvocation:create
+MethodInvocation:create
+Field:name
+Method-name:RepositoryName
+Method-returnType:null
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:create
+Method-returnType:RepositoryName
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:propagateIfPossible
+MethodInvocation:getCause
+Method-name:createFromValidStrippedName
+Method-returnType:RepositoryName
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:getMessage
+Method-name:fromPathFragment
+Method-returnType:Pair<RepositoryName,PathFragment>
+Method-parameters:[PathFragment path, boolean siblingRepositoryLayout]
+MethodInvocation:segmentCount
+MethodInvocation:startsWith
+MethodInvocation:create
+MethodInvocation:getSegment
+MethodInvocation:subFragment
+MethodInvocation:of
+Method-name:validate
+Method-returnType:String
+Method-parameters:[String name]
+MethodInvocation:isEmpty
+MethodInvocation:startsWith
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:matches
+MethodInvocation:matcher
+Method-name:stripName
+Method-returnType:String
+Method-parameters:[String repoName]
+MethodInvocation:startsWith
+MethodInvocation:substring
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[@SuppressWarnings("unused") ObjectInputStream in]
+Method-name:writeReplace
+Method-returnType:Object
+Method-parameters:[]
+Method-name:strippedName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:substring
+Method-name:isDefault
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:isMain
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:equals
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getDefaultCanonicalForm
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isMain
+MethodInvocation:getName
+Method-name:getSourceRoot
+Method-returnType:PathFragment
+Method-parameters:[]
+MethodInvocation:isDefault
+MethodInvocation:isMain
+MethodInvocation:getRelative
+MethodInvocation:strippedName
+Method-name:getDerivedArtifactSourceRoot
+Method-returnType:PathFragment
+Method-parameters:[]
+MethodInvocation:getSourceRoot
+Method-name:getExecPath
+Method-returnType:PathFragment
+Method-parameters:[boolean siblingRepositoryLayout]
+MethodInvocation:isDefault
+MethodInvocation:isMain
+MethodInvocation:getRelative
+MethodInvocation:strippedName
+Method-name:getRunfilesPath
+Method-returnType:PathFragment
+Method-parameters:[]
+MethodInvocation:isDefault
+MethodInvocation:isMain
+MethodInvocation:getRelative
+MethodInvocation:create
+MethodInvocation:strippedName
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object object]
+MethodInvocation:equals
+MethodInvocation:getFilePathOs
+FieldAccess:name
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+MethodInvocation:getFilePathOs
+Class:SerializationProxy
+Field:repositoryName
+Method-name:SerializationProxy
+Method-returnType:null
+Method-parameters:[RepositoryName repositoryName]
+FieldAccess:repositoryName
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[ObjectOutputStream out]
+MethodInvocation:writeObject
+MethodInvocation:toString
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[ObjectInputStream in]
+MethodInvocation:create
+MethodInvocation:readObject
+MethodInvocation:getMessage
+Method-name:readObjectNoData
+Method-returnType:void
+Method-parameters:[]
+Method-name:readResolve
+Method-returnType:Object
+Method-parameters:[]

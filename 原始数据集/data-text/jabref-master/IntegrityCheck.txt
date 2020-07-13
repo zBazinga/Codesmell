@@ -1,0 +1,36 @@
+Class:IntegrityCheck
+Field:bibDatabaseContext
+Field:fieldCheckers
+Field:entryCheckers
+Method-name:IntegrityCheck
+Method-returnType:null
+Method-parameters:[BibDatabaseContext bibDatabaseContext, FilePreferences filePreferences, BibtexKeyPatternPreferences bibtexKeyPatternPreferences, JournalAbbreviationRepository journalAbbreviationRepository, boolean allowIntegerEdition]
+FieldAccess:bibDatabaseContext
+MethodInvocation:of
+MethodInvocation:getDatabase
+MethodInvocation:getDatabase
+MethodInvocation:isBiblatexMode
+MethodInvocation:add
+MethodInvocation:addAll
+MethodInvocation:of
+Method-name:check
+Method-returnType:List<IntegrityMessage>
+Method-parameters:[]
+MethodInvocation:getDatabase
+MethodInvocation:getEntries
+MethodInvocation:addAll
+MethodInvocation:checkEntry
+MethodInvocation:addAll
+MethodInvocation:checkDatabase
+Method-name:checkEntry
+Method-returnType:List<IntegrityMessage>
+Method-parameters:[BibEntry entry]
+MethodInvocation:getAll
+MethodInvocation:addAll
+MethodInvocation:check
+MethodInvocation:addAll
+MethodInvocation:check
+Method-name:checkDatabase
+Method-returnType:List<IntegrityMessage>
+Method-parameters:[BibDatabase database]
+MethodInvocation:check

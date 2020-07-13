@@ -1,0 +1,60 @@
+Class:Sync
+Field:serialVersionUID
+Field:NAME
+Field:ID_ATTRIBUTE
+Field:VERSION_ATTRIBUTE
+Field:CONFLICT_ATTRIBUTE
+Field:DELETED_ATTRIBUTE
+Field:id
+Field:version
+Field:deleted
+Field:conflict
+Field:history
+Field:conflicts
+Method-name:copyFrom
+Method-returnType:void
+Method-parameters:[final CopyFrom obj]
+MethodInvocation:clone
+MethodInvocation:addAll
+Method-name:getId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setId
+Method-returnType:void
+Method-parameters:[final String id]
+FieldAccess:id
+Method-name:getVersion
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setVersion
+Method-returnType:void
+Method-parameters:[final Integer version]
+FieldAccess:version
+Method-name:isDeleted
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setDeleted
+Method-returnType:void
+Method-parameters:[final Boolean deleted]
+FieldAccess:deleted
+Method-name:isConflict
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setConflict
+Method-returnType:void
+Method-parameters:[final Boolean conflict]
+FieldAccess:conflict
+Method-name:setHistory
+Method-returnType:void
+Method-parameters:[final History history]
+FieldAccess:history
+Method-name:getHistory
+Method-returnType:History
+Method-parameters:[]
+Method-name:getConflicts
+Method-returnType:List<Conflict>
+Method-parameters:[]
+Method-name:setConflicts
+Method-returnType:void
+Method-parameters:[final List<Conflict> conflicts]
+FieldAccess:conflicts

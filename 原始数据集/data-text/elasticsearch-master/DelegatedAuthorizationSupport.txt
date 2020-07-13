@@ -1,0 +1,65 @@
+Class:DelegatedAuthorizationSupport
+Field:lookup
+Field:logger
+Field:licenseState
+Method-name:DelegatedAuthorizationSupport
+Method-returnType:null
+Method-parameters:[Iterable<? extends Realm> allRealms, RealmConfig config, XPackLicenseState licenseState]
+MethodInvocation:getSetting
+MethodInvocation:settings
+MethodInvocation:threadContext
+Method-name:DelegatedAuthorizationSupport
+Method-returnType:null
+Method-parameters:[Iterable<? extends Realm> allRealms, List<String> lookupRealms, Settings settings, ThreadContext threadContext, XPackLicenseState licenseState]
+MethodInvocation:resolveRealms
+MethodInvocation:checkForRealmChains
+FieldAccess:lookup
+FieldAccess:logger
+MethodInvocation:getLogger
+MethodInvocation:getClass
+FieldAccess:licenseState
+Method-name:hasDelegation
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasRealms
+FieldAccess:lookup
+Method-name:resolve
+Method-returnType:void
+Method-parameters:[String username, ActionListener<AuthenticationResult> resultListener]
+MethodInvocation:isSecurityEnabled
+MethodInvocation:isAllowed
+MethodInvocation:onResponse
+MethodInvocation:unsuccessful
+MethodInvocation:newComplianceException
+MethodInvocation:hasDelegation
+MethodInvocation:onResponse
+MethodInvocation:unsuccessful
+MethodInvocation:wrap
+MethodInvocation:trace
+MethodInvocation:v1
+MethodInvocation:v2
+MethodInvocation:onResponse
+MethodInvocation:success
+MethodInvocation:v1
+MethodInvocation:onResponse
+MethodInvocation:unsuccessful
+MethodInvocation:collectionToDelimitedString
+MethodInvocation:getRealms
+MethodInvocation:lookup
+Method-name:resolveRealms
+Method-returnType:List<Realm>
+Method-parameters:[Iterable<? extends Realm> allRealms, List<String> lookupRealms]
+Method-name:checkForRealmChains
+Method-returnType:void
+Method-parameters:[Iterable<Realm> delegatedRealms, Settings globalSettings]
+MethodInvocation:getConcreteSettingForNamespace
+MethodInvocation:apply
+MethodInvocation:type
+MethodInvocation:name
+MethodInvocation:exists
+MethodInvocation:get
+Method-name:findRealm
+Method-returnType:Realm
+Method-parameters:[String name, Iterable<? extends Realm> allRealms]
+MethodInvocation:equals
+MethodInvocation:name

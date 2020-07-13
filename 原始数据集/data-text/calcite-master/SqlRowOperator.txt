@@ -1,0 +1,26 @@
+Class:SqlRowOperator
+Method-name:SqlRowOperator
+Method-returnType:null
+Method-parameters:[String name]
+Method-name:inferReturnType
+Method-returnType:RelDataType
+Method-parameters:[final SqlOperatorBinding opBinding]
+MethodInvocation:createStructType
+MethodInvocation:getTypeFactory
+Method-name:get
+Method-returnType:Map.Entry<String,RelDataType>
+Method-parameters:[int index]
+MethodInvocation:of
+MethodInvocation:deriveAliasFromOrdinal
+MethodInvocation:getOperandType
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getOperandCount
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlCall call, int leftPrec, int rightPrec]
+MethodInvocation:unparseFunctionSyntax
+Method-name:requiresDecimalExpansion
+Method-returnType:boolean
+Method-parameters:[]

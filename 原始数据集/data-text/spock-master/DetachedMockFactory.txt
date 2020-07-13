@@ -1,0 +1,58 @@
+Class:DetachedMockFactory
+Method-name:Mock
+Method-returnType:T
+Method-parameters:[Class<T> type]
+MethodInvocation:createMock
+MethodInvocation:inferNameFromType
+MethodInvocation:emptyMap
+Method-name:Mock
+Method-returnType:T
+Method-parameters:[Map<String,Object> options, Class<T> type]
+MethodInvocation:createMock
+MethodInvocation:inferNameFromType
+Method-name:Stub
+Method-returnType:T
+Method-parameters:[Class<T> type]
+MethodInvocation:createMock
+MethodInvocation:inferNameFromType
+MethodInvocation:emptyMap
+Method-name:Stub
+Method-returnType:T
+Method-parameters:[Map<String,Object> options, Class<T> type]
+MethodInvocation:createMock
+MethodInvocation:inferNameFromType
+Method-name:Spy
+Method-returnType:T
+Method-parameters:[Class<T> type]
+MethodInvocation:createMock
+MethodInvocation:inferNameFromType
+MethodInvocation:emptyMap
+Method-name:Spy
+Method-returnType:T
+Method-parameters:[T obj]
+MethodInvocation:createMock
+MethodInvocation:inferNameFromType
+MethodInvocation:getClass
+MethodInvocation:singletonMap
+Method-name:Spy
+Method-returnType:T
+Method-parameters:[Map<String,Object> options, Class<T> type]
+MethodInvocation:createMock
+MethodInvocation:inferNameFromType
+Method-name:createMock
+Method-returnType:T
+Method-parameters:[@Nullable String name, Class<T> type, MockNature nature, Map<String,Object> options]
+MethodInvocation:getClassLoader
+MethodInvocation:getSystemClassLoader
+MethodInvocation:createDetachedMock
+Method-name:createMock
+Method-returnType:T
+Method-parameters:[@Nullable String name, T obj, MockNature nature, Map<String,Object> options]
+MethodInvocation:getClassLoader
+MethodInvocation:getClass
+MethodInvocation:getSystemClassLoader
+MethodInvocation:createDetachedMock
+Method-name:inferNameFromType
+Method-returnType:String
+Method-parameters:[Class<?> type]
+MethodInvocation:getSimpleName

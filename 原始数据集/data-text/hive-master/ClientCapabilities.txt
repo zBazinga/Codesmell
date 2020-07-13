@@ -1,0 +1,237 @@
+Class:ClientCapabilities
+Field:STRUCT_DESC
+Field:VALUES_FIELD_DESC
+Field:schemes
+MethodInvocation:put
+MethodInvocation:put
+Field:values
+Field:_Fields
+MethodInvocation:VALUES
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:ClientCapabilities
+Method-returnType:null
+Method-parameters:[]
+Method-name:ClientCapabilities
+Method-returnType:null
+Method-parameters:[List<ClientCapability> values]
+FieldAccess:values
+Method-name:ClientCapabilities
+Method-returnType:null
+Method-parameters:[ClientCapabilities other]
+MethodInvocation:isSetValues
+MethodInvocation:size
+MethodInvocation:add
+FieldAccess:values
+Method-name:deepCopy
+Method-returnType:ClientCapabilities
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:values
+Method-name:getValuesSize
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:values
+MethodInvocation:size
+FieldAccess:values
+Method-name:getValuesIterator
+Method-returnType:java.util.Iterator<ClientCapability>
+Method-parameters:[]
+FieldAccess:values
+MethodInvocation:iterator
+FieldAccess:values
+Method-name:getValues
+Method-returnType:List<ClientCapability>
+Method-parameters:[]
+FieldAccess:values
+Method-name:setValues
+Method-returnType:void
+Method-parameters:[List<ClientCapability> values]
+FieldAccess:values
+Method-name:unsetValues
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:values
+Method-name:isSetValues
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:values
+Method-name:setValuesIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:values
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, Object value]
+MethodInvocation:unsetValues
+MethodInvocation:setValues
+Method-name:getFieldValue
+Method-returnType:Object
+Method-parameters:[_Fields field]
+MethodInvocation:getValues
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:isSetValues
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[ClientCapabilities that]
+MethodInvocation:isSetValues
+MethodInvocation:isSetValues
+MethodInvocation:equals
+FieldAccess:values
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSetValues
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[ClientCapabilities other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetValues
+MethodInvocation:isSetValues
+MethodInvocation:isSetValues
+MethodInvocation:compareTo
+FieldAccess:values
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+FieldAccess:values
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:values
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isSetValues
+MethodInvocation:toString
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:ClientCapabilitiesStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:ClientCapabilitiesStandardScheme
+Method-parameters:[]
+Class:ClientCapabilitiesStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, ClientCapabilities struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readListBegin
+MethodInvocation:findByValue
+MethodInvocation:readI32
+MethodInvocation:add
+MethodInvocation:readListEnd
+MethodInvocation:setValuesIsSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, ClientCapabilities struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeListBegin
+MethodInvocation:size
+MethodInvocation:writeI32
+MethodInvocation:getValue
+MethodInvocation:writeListEnd
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:ClientCapabilitiesTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:ClientCapabilitiesTupleScheme
+Method-parameters:[]
+Class:ClientCapabilitiesTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, ClientCapabilities struct]
+MethodInvocation:writeI32
+MethodInvocation:size
+MethodInvocation:writeI32
+MethodInvocation:getValue
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, ClientCapabilities struct]
+MethodInvocation:readI32
+MethodInvocation:findByValue
+MethodInvocation:readI32
+MethodInvocation:add
+MethodInvocation:setValuesIsSet

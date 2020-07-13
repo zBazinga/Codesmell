@@ -1,0 +1,205 @@
+Class:StorageBasedAuthorizationProvider
+Field:wh
+Field:isRunFromMetaStore
+Field:LOG
+MethodInvocation:getLogger
+Method-name:initWh
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:getConf
+FieldAccess:wh
+MethodInvocation:getConf
+FieldAccess:wh
+Method-name:init
+Method-returnType:void
+Method-parameters:[Configuration conf]
+Method-name:authorize
+Method-returnType:void
+Method-parameters:[Privilege[] readRequiredPriv, Privilege[] writeRequiredPriv]
+MethodInvocation:initWh
+MethodInvocation:getWhRoot
+MethodInvocation:authorize
+MethodInvocation:hiveException
+Method-name:authorize
+Method-returnType:void
+Method-parameters:[Database db, Privilege[] readRequiredPriv, Privilege[] writeRequiredPriv]
+MethodInvocation:getDbLocation
+MethodInvocation:getReadReqPriv
+MethodInvocation:getWriteReqPriv
+MethodInvocation:hasDropPrivilege
+MethodInvocation:checkDeletePermission
+MethodInvocation:getConf
+MethodInvocation:getUserName
+MethodInvocation:authorize
+Method-name:userHasProxyPrivilege
+Method-returnType:boolean
+Method-parameters:[String user, Configuration conf]
+MethodInvocation:checkUserHasHostProxyPrivileges
+MethodInvocation:getIPAddress
+MethodInvocation:info
+MethodInvocation:warn
+Method-name:authorize
+Method-returnType:void
+Method-parameters:[Table table, Privilege[] readRequiredPriv, Privilege[] writeRequiredPriv]
+MethodInvocation:initWh
+MethodInvocation:hiveException
+MethodInvocation:getReadReqPriv
+MethodInvocation:getWriteReqPriv
+MethodInvocation:requireCreatePrivilege
+MethodInvocation:requireCreatePrivilege
+MethodInvocation:authorize
+MethodInvocation:getDatabase
+MethodInvocation:getCatName
+MethodInvocation:getDbName
+MethodInvocation:getDataLocation
+MethodInvocation:hasDropPrivilege
+MethodInvocation:getTableType
+MethodInvocation:getBoolean
+MethodInvocation:getConf
+MethodInvocation:checkDeletePermission
+MethodInvocation:getConf
+MethodInvocation:getUserName
+MethodInvocation:authorize
+Method-name:requireCreatePrivilege
+Method-returnType:boolean
+Method-parameters:[Privilege[] privs]
+MethodInvocation:equals
+Method-name:authorize
+Method-returnType:void
+Method-parameters:[Partition part, Privilege[] readRequiredPriv, Privilege[] writeRequiredPriv]
+MethodInvocation:authorize
+MethodInvocation:getTable
+Method-name:authorize
+Method-returnType:void
+Method-parameters:[Table table, Partition part, Privilege[] readRequiredPriv, Privilege[] writeRequiredPriv]
+MethodInvocation:getReadReqPriv
+MethodInvocation:getWriteReqPriv
+MethodInvocation:hasDropPrivilege
+MethodInvocation:checkDeletePermission
+MethodInvocation:getDataLocation
+MethodInvocation:getConf
+MethodInvocation:getUserName
+MethodInvocation:getLocation
+MethodInvocation:requireCreatePrivilege
+MethodInvocation:requireCreatePrivilege
+MethodInvocation:authorize
+MethodInvocation:authorize
+MethodInvocation:authorize
+MethodInvocation:getDataLocation
+Method-name:checkDeletePermission
+Method-returnType:void
+Method-parameters:[Path dataLocation, Configuration conf, String userName]
+MethodInvocation:checkDeletePermission
+Method-name:authorize
+Method-returnType:void
+Method-parameters:[Table table, Partition part, List<String> columns, Privilege[] readRequiredPriv, Privilege[] writeRequiredPriv]
+MethodInvocation:authorize
+Method-name:setMetaStoreHandler
+Method-returnType:void
+Method-parameters:[IHMSHandler handler]
+MethodInvocation:setHandler
+FieldAccess:wh
+MethodInvocation:getWh
+FieldAccess:isRunFromMetaStore
+Method-name:getFsActions
+Method-returnType:EnumSet<FsAction>
+Method-parameters:[Privilege[] privs]
+MethodInvocation:noneOf
+MethodInvocation:add
+MethodInvocation:getFsAction
+Method-name:authorize
+Method-returnType:void
+Method-parameters:[Path path, Privilege[] readRequiredPriv, Privilege[] writeRequiredPriv]
+MethodInvocation:getFsActions
+MethodInvocation:addAll
+MethodInvocation:getFsActions
+MethodInvocation:isEmpty
+MethodInvocation:checkPermissions
+MethodInvocation:getConf
+MethodInvocation:authorizationException
+MethodInvocation:authorizationException
+MethodInvocation:hiveException
+Method-name:checkPermissions
+Method-returnType:void
+Method-parameters:[final Configuration conf, final Path path, final EnumSet<FsAction> actions]
+MethodInvocation:userHasProxyPrivilege
+MethodInvocation:getUserName
+MethodInvocation:info
+MethodInvocation:getFileSystem
+MethodInvocation:getFileStatusOrNull
+MethodInvocation:checkPermissions
+MethodInvocation:getUserName
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:getFileStatusOrNull
+MethodInvocation:getParent
+MethodInvocation:checkPermissions
+MethodInvocation:getUserName
+Method-name:checkPermissions
+Method-returnType:void
+Method-parameters:[final FileSystem fs, final FileStatus stat, final EnumSet<FsAction> actions, String user]
+MethodInvocation:or
+MethodInvocation:checkFileAccessWithImpersonation
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:accessControlException
+Method-name:getDbLocation
+Method-returnType:Path
+Method-parameters:[Database db]
+MethodInvocation:initWh
+MethodInvocation:getLocationUri
+MethodInvocation:getDefaultDatabasePath
+MethodInvocation:getName
+MethodInvocation:getDnsPath
+MethodInvocation:getDatabasePath
+MethodInvocation:hiveException
+Method-name:hiveException
+Method-returnType:HiveException
+Method-parameters:[Exception e]
+Method-name:authorizationException
+Method-returnType:AuthorizationException
+Method-parameters:[Exception e]
+Method-name:accessControlException
+Method-returnType:AccessControlException
+Method-parameters:[Exception e]
+MethodInvocation:getMessage
+MethodInvocation:initCause
+Method-name:authorizeAuthorizationApiInvocation
+Method-returnType:void
+Method-parameters:[]
+Class:DropPrivilegeExtractor
+Field:hasDropPrivilege
+Field:readReqPriv
+Field:writeReqPriv
+Method-name:DropPrivilegeExtractor
+Method-returnType:null
+Method-parameters:[Privilege[] readRequiredPriv, Privilege[] writeRequiredPriv]
+FieldAccess:readReqPriv
+MethodInvocation:extractDropPriv
+FieldAccess:writeReqPriv
+MethodInvocation:extractDropPriv
+Method-name:extractDropPriv
+Method-returnType:Privilege[]
+Method-parameters:[Privilege[] requiredPrivs]
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:toArray
+Method-name:hasDropPrivilege
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setHasDropPrivilege
+Method-returnType:void
+Method-parameters:[boolean hasDropPrivilege]
+FieldAccess:hasDropPrivilege
+Method-name:getReadReqPriv
+Method-returnType:Privilege[]
+Method-parameters:[]
+Method-name:getWriteReqPriv
+Method-returnType:Privilege[]
+Method-parameters:[]
+Method-name:getHivePolicyProvider
+Method-returnType:HivePolicyProvider
+Method-parameters:[]
+MethodInvocation:getConf

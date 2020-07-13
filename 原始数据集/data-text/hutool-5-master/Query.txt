@@ -1,0 +1,68 @@
+Class:Query
+Field:fields
+Field:tableNames
+Field:where
+Field:page
+Method-name:Query
+Method-returnType:null
+Method-parameters:[String... tableNames]
+FieldAccess:tableNames
+Method-name:Query
+Method-returnType:null
+Method-parameters:[Condition[] where, String... tableNames]
+Method-name:Query
+Method-returnType:null
+Method-parameters:[Condition[] where, Page page, String... tableNames]
+Method-name:Query
+Method-returnType:null
+Method-parameters:[Collection<String> fields, String[] tableNames, Condition[] where, Page page]
+FieldAccess:fields
+FieldAccess:tableNames
+FieldAccess:where
+FieldAccess:page
+Method-name:getFields
+Method-returnType:Collection<String>
+Method-parameters:[]
+Method-name:setFields
+Method-returnType:Query
+Method-parameters:[Collection<String> fields]
+FieldAccess:fields
+Method-name:setFields
+Method-returnType:Query
+Method-parameters:[String... fields]
+FieldAccess:fields
+MethodInvocation:newArrayList
+Method-name:getTableNames
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:setTableNames
+Method-returnType:Query
+Method-parameters:[String... tableNames]
+FieldAccess:tableNames
+Method-name:getWhere
+Method-returnType:Condition[]
+Method-parameters:[]
+Method-name:setWhere
+Method-returnType:Query
+Method-parameters:[Condition... where]
+FieldAccess:where
+Method-name:getPage
+Method-returnType:Page
+Method-parameters:[]
+Method-name:setPage
+Method-returnType:Query
+Method-parameters:[Page page]
+FieldAccess:page
+Method-name:getFirstTableName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isEmpty
+FieldAccess:tableNames
+FieldAccess:tableNames
+Method-name:find
+Method-returnType:T
+Method-parameters:[RsHandler<T> rsh, AbstractDb abstractDb]
+MethodInvocation:getConnection
+MethodInvocation:find
+MethodInvocation:getRunner
+MethodInvocation:closeConnection

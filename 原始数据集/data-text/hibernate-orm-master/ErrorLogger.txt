@@ -1,0 +1,57 @@
+Class:ErrorLogger
+Field:LOG
+MethodInvocation:getMessageLogger
+MethodInvocation:getName
+Field:errors
+Field:file
+Method-name:ErrorLogger
+Method-returnType:null
+Method-parameters:[]
+Method-name:ErrorLogger
+Method-returnType:null
+Method-parameters:[String file]
+FieldAccess:file
+Method-name:error
+Method-returnType:void
+Method-parameters:[SAXParseException error]
+FieldAccess:errors
+MethodInvocation:add
+Method-name:fatalError
+Method-returnType:void
+Method-parameters:[SAXParseException error]
+MethodInvocation:error
+Method-name:warning
+Method-returnType:void
+Method-parameters:[SAXParseException warn]
+MethodInvocation:parsingXmlWarning
+MethodInvocation:getLineNumber
+MethodInvocation:getMessage
+Method-name:getErrors
+Method-returnType:List<SAXParseException>
+Method-parameters:[]
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+Method-name:hasErrors
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+Method-name:logErrors
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:parsingXmlError
+MethodInvocation:getLineNumber
+MethodInvocation:getMessage
+MethodInvocation:parsingXmlErrorForFile
+MethodInvocation:getLineNumber
+MethodInvocation:getMessage
+Method-name:createSAXReader
+Method-returnType:SAXReader
+Method-parameters:[EntityResolver entityResolver, XMLHelper xmlHelper]
+MethodInvocation:setFeature
+MethodInvocation:setFeature
+MethodInvocation:setFeature
+MethodInvocation:setMergeAdjacentText
+MethodInvocation:setValidation
+MethodInvocation:setErrorHandler
+MethodInvocation:setEntityResolver

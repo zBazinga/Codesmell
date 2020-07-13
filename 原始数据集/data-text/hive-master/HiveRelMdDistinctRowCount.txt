@@ -1,0 +1,58 @@
+Class:HiveRelMdDistinctRowCount
+Field:SOURCE
+MethodInvocation:reflectiveSource
+Method-name:HiveRelMdDistinctRowCount
+Method-returnType:null
+Method-parameters:[]
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[HiveTableScan htRel, RelMetadataQuery mq, ImmutableBitSet groupKey, RexNode predicate]
+MethodInvocation:translateBitSetToProjIndx
+MethodInvocation:getColStat
+MethodInvocation:getCountDistint
+MethodInvocation:min
+MethodInvocation:getRowCount
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[RelNode r, RelMetadataQuery mq, int indx]
+MethodInvocation:of
+MethodInvocation:getDistinctRowCount
+MethodInvocation:makeLiteral
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[HiveSemiJoin rel, RelMetadataQuery mq, ImmutableBitSet groupKey, RexNode predicate]
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[HiveJoin rel, RelMetadataQuery mq, ImmutableBitSet groupKey, RexNode predicate]
+MethodInvocation:getJoinDistinctRowCount
+MethodInvocation:getJoinType
+Method-name:getJoinDistinctRowCount
+Method-returnType:Double
+Method-parameters:[RelMetadataQuery mq, RelNode joinRel, JoinRelType joinType, ImmutableBitSet groupKey, RexNode predicate, boolean useMaxNdv]
+MethodInvocation:builder
+MethodInvocation:builder
+MethodInvocation:get
+MethodInvocation:getInputs
+MethodInvocation:get
+MethodInvocation:getInputs
+MethodInvocation:setLeftRightBitmaps
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:conjunctions
+MethodInvocation:classifyFilters
+MethodInvocation:generatesNullsOnLeft
+MethodInvocation:generatesNullsOnRight
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:composeConjunction
+MethodInvocation:composeConjunction
+MethodInvocation:getDistinctRowCount
+MethodInvocation:build
+MethodInvocation:getDistinctRowCount
+MethodInvocation:build
+MethodInvocation:max
+MethodInvocation:multiply
+MethodInvocation:numDistinctVals
+MethodInvocation:getRowCount

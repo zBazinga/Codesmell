@@ -1,0 +1,172 @@
+Class:DeclarationScopeResolver
+Field:buildStack
+Field:globalMap
+Field:pkg
+Field:rule
+Field:ruleUnitDescr
+MethodInvocation:empty
+Method-name:DeclarationScopeResolver
+Method-returnType:null
+Method-parameters:[]
+Method-name:DeclarationScopeResolver
+Method-returnType:null
+Method-parameters:[final Map<String,Class<?>> globalMap, final Stack<RuleConditionElement> buildStack]
+Method-name:DeclarationScopeResolver
+Method-returnType:null
+Method-parameters:[final Map<String,Class<?>> globalMap, final InternalKnowledgePackage pkg]
+Method-name:DeclarationScopeResolver
+Method-returnType:null
+Method-parameters:[Map<String,Class<?>> globalMap, Stack<RuleConditionElement> buildStack, InternalKnowledgePackage pkg]
+FieldAccess:globalMap
+FieldAccess:buildStack
+FieldAccess:pkg
+Method-name:setRule
+Method-returnType:void
+Method-parameters:[RuleImpl rule]
+FieldAccess:rule
+FieldAccess:ruleUnitDescr
+MethodInvocation:getDescription
+MethodInvocation:getRuleUnitDescriptionLoader
+Method-name:peekBuildStack
+Method-returnType:RuleConditionElement
+Method-parameters:[]
+MethodInvocation:peek
+Method-name:popBuildStack
+Method-returnType:RuleConditionElement
+Method-parameters:[]
+MethodInvocation:pop
+Method-name:pushOnBuildStack
+Method-returnType:void
+Method-parameters:[RuleConditionElement element]
+MethodInvocation:push
+Method-name:getExtendedDeclaration
+Method-returnType:Declaration
+Method-parameters:[RuleImpl rule, String identifier]
+MethodInvocation:resolveDeclaration
+MethodInvocation:getLhs
+MethodInvocation:getParent
+MethodInvocation:getExtendedDeclaration
+MethodInvocation:getParent
+Method-name:getAllExtendedDeclaration
+Method-returnType:Map<String,Declaration>
+Method-parameters:[RuleImpl rule, Map<String,Declaration> dec]
+MethodInvocation:putAll
+MethodInvocation:getInnerDeclarations
+MethodInvocation:getLhs
+MethodInvocation:getParent
+MethodInvocation:getAllExtendedDeclaration
+MethodInvocation:getParent
+Method-name:getDeclaration
+Method-returnType:Declaration
+Method-parameters:[String identifier]
+MethodInvocation:size
+FieldAccess:buildStack
+MethodInvocation:resolveDeclaration
+MethodInvocation:get
+FieldAccess:buildStack
+MethodInvocation:getParent
+MethodInvocation:getExtendedDeclaration
+MethodInvocation:getParent
+MethodInvocation:resolveVarType
+MethodInvocation:getReadAcessor
+MethodInvocation:wireObjectType
+MethodInvocation:getClassFieldAccessorStore
+MethodInvocation:wireObjectType
+MethodInvocation:getClassFieldAccessorStore
+Method-name:resolveVarType
+Method-returnType:Class<?>
+Method-parameters:[String identifier]
+MethodInvocation:orElseGet
+MethodInvocation:flatMap
+MethodInvocation:getVarType
+MethodInvocation:get
+Method-name:normalizeValueForUnit
+Method-returnType:String
+Method-parameters:[String value]
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:hasVar
+Method-name:hasDataSource
+Method-returnType:boolean
+Method-parameters:[String name]
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:hasDataSource
+Method-name:getReadAcessor
+Method-returnType:InternalReadAccessor
+Method-parameters:[String identifier, ObjectType objectType]
+MethodInvocation:getClassType
+MethodInvocation:isAssignableFrom
+MethodInvocation:isAssignableFrom
+Method-name:available
+Method-returnType:boolean
+Method-parameters:[RuleImpl rule, final String name]
+MethodInvocation:size
+FieldAccess:buildStack
+MethodInvocation:resolveDeclaration
+MethodInvocation:get
+MethodInvocation:containsKey
+FieldAccess:globalMap
+MethodInvocation:getParent
+MethodInvocation:getExtendedDeclaration
+MethodInvocation:getParent
+Method-name:isDuplicated
+Method-returnType:boolean
+Method-parameters:[RuleImpl rule, final String name, final String type]
+MethodInvocation:containsKey
+FieldAccess:globalMap
+MethodInvocation:size
+FieldAccess:buildStack
+MethodInvocation:get
+MethodInvocation:resolveDeclaration
+MethodInvocation:isOr
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getDeclarationClass
+MethodInvocation:getParent
+MethodInvocation:getExtendedDeclaration
+MethodInvocation:getParent
+Method-name:getDeclarations
+Method-returnType:Map<String,Declaration>
+Method-parameters:[RuleImpl rule]
+MethodInvocation:getDeclarations
+Method-name:getDeclarations
+Method-returnType:Map<String,Declaration>
+Method-parameters:[RuleImpl rule, String consequenceName]
+FieldAccess:buildStack
+MethodInvocation:getType
+MethodInvocation:getInnerDeclarations
+MethodInvocation:getInnerDeclarations
+MethodInvocation:putAll
+MethodInvocation:getParent
+MethodInvocation:getAllExtendedDeclaration
+MethodInvocation:getParent
+Method-name:getDeclarationClasses
+Method-returnType:Map<String,Class<?>>
+Method-parameters:[RuleImpl rule]
+MethodInvocation:getDeclarationClasses
+MethodInvocation:getDeclarations
+Method-name:getDeclarationClasses
+Method-returnType:Map<String,Class<?>>
+Method-parameters:[final Map<String,Declaration> declarations]
+MethodInvocation:entrySet
+MethodInvocation:getDeclarationClass
+MethodInvocation:getValue
+MethodInvocation:put
+MethodInvocation:getKey
+Method-name:findPatternByIndex
+Method-returnType:Pattern
+Method-parameters:[int index]
+MethodInvocation:isEmpty
+FieldAccess:buildStack
+MethodInvocation:findPatternInNestedElements
+MethodInvocation:get
+Method-name:findPatternInNestedElements
+Method-returnType:Pattern
+Method-parameters:[final int index, final RuleConditionElement rce]
+MethodInvocation:getNestedElements
+MethodInvocation:getIndex
+MethodInvocation:isPatternScopeDelimiter
+MethodInvocation:findPatternInNestedElements

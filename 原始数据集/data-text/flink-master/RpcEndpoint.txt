@@ -1,0 +1,152 @@
+Class:RpcEndpoint
+Field:log
+MethodInvocation:getLogger
+MethodInvocation:getClass
+Field:rpcService
+Field:endpointId
+Field:rpcServer
+Field:currentMainThread
+Field:mainThreadExecutor
+Field:isRunning
+Method-name:RpcEndpoint
+Method-returnType:null
+Method-parameters:[final RpcService rpcService, final String endpointId]
+FieldAccess:rpcService
+MethodInvocation:checkNotNull
+FieldAccess:endpointId
+MethodInvocation:checkNotNull
+FieldAccess:rpcServer
+MethodInvocation:startServer
+FieldAccess:mainThreadExecutor
+Method-name:RpcEndpoint
+Method-returnType:null
+Method-parameters:[final RpcService rpcService]
+MethodInvocation:toString
+MethodInvocation:randomUUID
+Method-name:getEndpointId
+Method-returnType:String
+Method-parameters:[]
+Method-name:isRunning
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:validateRunsInMainThread
+Method-name:start
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:start
+Method-name:internalCallOnStart
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:validateRunsInMainThread
+MethodInvocation:onStart
+Method-name:onStart
+Method-returnType:void
+Method-parameters:[]
+Method-name:stop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:stop
+Method-name:internalCallOnStop
+Method-returnType:CompletableFuture<Void>
+Method-parameters:[]
+MethodInvocation:validateRunsInMainThread
+MethodInvocation:onStop
+Method-name:onStop
+Method-returnType:CompletableFuture<Void>
+Method-parameters:[]
+MethodInvocation:completedFuture
+Method-name:closeAsync
+Method-returnType:CompletableFuture<Void>
+Method-parameters:[]
+MethodInvocation:stopServer
+MethodInvocation:getTerminationFuture
+Method-name:getSelfGateway
+Method-returnType:C
+Method-parameters:[Class<C> selfGatewayType]
+MethodInvocation:isInstance
+Method-name:getAddress
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getAddress
+Method-name:getHostname
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getHostname
+Method-name:getMainThreadExecutor
+Method-returnType:MainThreadExecutor
+Method-parameters:[]
+Method-name:getRpcService
+Method-returnType:RpcService
+Method-parameters:[]
+Method-name:getTerminationFuture
+Method-returnType:CompletableFuture<Void>
+Method-parameters:[]
+MethodInvocation:getTerminationFuture
+Method-name:runAsync
+Method-returnType:void
+Method-parameters:[Runnable runnable]
+MethodInvocation:runAsync
+Method-name:scheduleRunAsync
+Method-returnType:void
+Method-parameters:[Runnable runnable, Time delay]
+MethodInvocation:scheduleRunAsync
+MethodInvocation:getSize
+MethodInvocation:getUnit
+Method-name:scheduleRunAsync
+Method-returnType:void
+Method-parameters:[Runnable runnable, long delay, TimeUnit unit]
+MethodInvocation:scheduleRunAsync
+MethodInvocation:toMillis
+Method-name:callAsync
+Method-returnType:CompletableFuture<V>
+Method-parameters:[Callable<V> callable, Time timeout]
+MethodInvocation:callAsync
+Method-name:validateRunsInMainThread
+Method-returnType:void
+Method-parameters:[]
+Method-name:terminateAkkaRpcActor
+Method-returnType:CompletableFuture<Void>
+Method-parameters:[ActorRef akkaRpcActorRef, AkkaRpcService akkaRpcService]
+MethodInvocation:tell
+MethodInvocation:noSender
+MethodInvocation:getTerminationFuture
+Class:MainThreadExecutor
+Field:gateway
+Field:mainThreadCheck
+Method-name:MainThreadExecutor
+Method-returnType:null
+Method-parameters:[MainThreadExecutable gateway, Runnable mainThreadCheck]
+FieldAccess:gateway
+MethodInvocation:checkNotNull
+FieldAccess:mainThreadCheck
+MethodInvocation:checkNotNull
+Method-name:runAsync
+Method-returnType:void
+Method-parameters:[Runnable runnable]
+MethodInvocation:runAsync
+Method-name:scheduleRunAsync
+Method-returnType:void
+Method-parameters:[Runnable runnable, long delayMillis]
+MethodInvocation:scheduleRunAsync
+Method-name:execute
+Method-returnType:void
+Method-parameters:[@Nonnull Runnable command]
+MethodInvocation:runAsync
+Method-name:schedule
+Method-returnType:ScheduledFuture<?>
+Method-parameters:[Runnable command, long delay, TimeUnit unit]
+MethodInvocation:convert
+MethodInvocation:scheduleRunAsync
+Method-name:schedule
+Method-returnType:ScheduledFuture<V>
+Method-parameters:[Callable<V> callable, long delay, TimeUnit unit]
+Method-name:scheduleAtFixedRate
+Method-returnType:ScheduledFuture<?>
+Method-parameters:[Runnable command, long initialDelay, long period, TimeUnit unit]
+Method-name:scheduleWithFixedDelay
+Method-returnType:ScheduledFuture<?>
+Method-parameters:[Runnable command, long initialDelay, long delay, TimeUnit unit]
+Method-name:assertRunningInMainThread
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:run

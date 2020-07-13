@@ -1,0 +1,100 @@
+Class:DataSetRow
+Field:serialVersionUID
+Field:input
+Field:desiredOutput
+Field:label
+Method-name:DataSetRow
+Method-returnType:null
+Method-parameters:[String input, String desiredOutput]
+FieldAccess:input
+MethodInvocation:parseDoubleArray
+FieldAccess:desiredOutput
+MethodInvocation:parseDoubleArray
+Method-name:DataSetRow
+Method-returnType:null
+Method-parameters:[double[] input, double[] desiredOutput]
+FieldAccess:input
+FieldAccess:desiredOutput
+Method-name:DataSetRow
+Method-returnType:null
+Method-parameters:[double... input]
+FieldAccess:input
+Method-name:DataSetRow
+Method-returnType:null
+Method-parameters:[ArrayList<Double> input, ArrayList<Double> desiredOutput]
+FieldAccess:input
+MethodInvocation:toDoubleArray
+FieldAccess:desiredOutput
+MethodInvocation:toDoubleArray
+Method-name:DataSetRow
+Method-returnType:null
+Method-parameters:[ArrayList<Double> input]
+FieldAccess:input
+MethodInvocation:toDoubleArray
+Method-name:getInput
+Method-returnType:double[]
+Method-parameters:[]
+FieldAccess:input
+Method-name:setInput
+Method-returnType:void
+Method-parameters:[double[] input]
+FieldAccess:input
+Method-name:getDesiredOutput
+Method-returnType:double[]
+Method-parameters:[]
+Method-name:setDesiredOutput
+Method-returnType:void
+Method-parameters:[double[] desiredOutput]
+FieldAccess:desiredOutput
+Method-name:getLabel
+Method-returnType:String
+Method-parameters:[]
+Method-name:setLabel
+Method-returnType:void
+Method-parameters:[String label]
+FieldAccess:label
+Method-name:isSupervised
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:delete
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:isSupervised
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:delete
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:toString
+Method-name:toCSV
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:isSupervised
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:delete
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:toString
+Method-name:addRow
+Method-returnType:void
+Method-parameters:[DataSet dataSet]
+MethodInvocation:getInputSize
+FieldAccess:length
+MethodInvocation:getInput
+MethodInvocation:getInputSize
+MethodInvocation:getOutputSize
+FieldAccess:length
+MethodInvocation:getDesiredOutput
+MethodInvocation:getOutputSize
+MethodInvocation:add
+MethodInvocation:getRows

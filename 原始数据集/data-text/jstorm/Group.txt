@@ -1,0 +1,65 @@
+Class:Group
+Field:nodes
+Field:graph
+Field:id
+MethodInvocation:toString
+MethodInvocation:randomUUID
+Method-name:Group
+Method-returnType:null
+Method-parameters:[DirectedGraph graph, List<Node> nodes]
+FieldAccess:graph
+MethodInvocation:addAll
+FieldAccess:nodes
+Method-name:Group
+Method-returnType:null
+Method-parameters:[DirectedGraph graph, Node n]
+MethodInvocation:asList
+Method-name:Group
+Method-returnType:null
+Method-parameters:[Group g1, Group g2]
+FieldAccess:graph
+MethodInvocation:addAll
+MethodInvocation:addAll
+Method-name:outgoingNodes
+Method-returnType:Set<Node>
+Method-parameters:[]
+MethodInvocation:addAll
+MethodInvocation:getChildren
+Method-name:incomingNodes
+Method-returnType:Set<Node>
+Method-parameters:[]
+MethodInvocation:addAll
+MethodInvocation:getParents
+Method-name:getResources
+Method-returnType:Map<String,Number>
+Method-parameters:[]
+MethodInvocation:getResources
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:containsKey
+MethodInvocation:doubleValue
+MethodInvocation:doubleValue
+MethodInvocation:get
+MethodInvocation:put
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:outgoingGroups
+Method-returnType:Collection<Group>
+Method-parameters:[GraphGrouper graphGrouper]
+MethodInvocation:outgoingNodes
+MethodInvocation:nodeGroup
+MethodInvocation:equals
+MethodInvocation:add

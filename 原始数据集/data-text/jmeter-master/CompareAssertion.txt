@@ -1,0 +1,112 @@
+Class:CompareAssertion
+Field:serialVersionUID
+Field:responses
+Field:emptySub
+Field:compareContent
+Field:compareTime
+Field:stringsToSkip
+Method-name:CompareAssertion
+Method-returnType:null
+Method-parameters:[]
+Method-name:getResult
+Method-returnType:AssertionResult
+Method-parameters:[SampleResult response]
+MethodInvocation:add
+MethodInvocation:size
+MethodInvocation:getName
+MethodInvocation:compareContent
+MethodInvocation:compareTime
+MethodInvocation:getName
+Method-name:compareTime
+Method-returnType:void
+Method-parameters:[CompareAssertionResult result]
+MethodInvocation:getTime
+MethodInvocation:abs
+MethodInvocation:markTimeFailure
+Method-name:markTimeFailure
+Method-returnType:void
+Method-parameters:[CompareAssertionResult result, SampleResult prevResult, long prevTime, SampleResult currentResult, long currentTime]
+MethodInvocation:setFailure
+MethodInvocation:appendResultDetails
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getResString
+MethodInvocation:addToBaseResult
+MethodInvocation:toString
+MethodInvocation:setLength
+MethodInvocation:appendResultDetails
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getResString
+MethodInvocation:addToSecondaryResult
+MethodInvocation:toString
+MethodInvocation:setFailureMessage
+MethodInvocation:getResString
+MethodInvocation:getResString
+Method-name:compareContent
+Method-returnType:void
+Method-parameters:[CompareAssertionResult result]
+MethodInvocation:getResponseDataAsString
+MethodInvocation:filterString
+MethodInvocation:equals
+MethodInvocation:markContentFailure
+Method-name:markContentFailure
+Method-returnType:void
+Method-parameters:[CompareAssertionResult result, String prevContent, SampleResult prevResult, SampleResult currentResult, String currentContent]
+MethodInvocation:setFailure
+MethodInvocation:appendResultDetails
+MethodInvocation:append
+MethodInvocation:addToBaseResult
+MethodInvocation:toString
+MethodInvocation:setLength
+MethodInvocation:appendResultDetails
+MethodInvocation:append
+MethodInvocation:addToSecondaryResult
+MethodInvocation:toString
+MethodInvocation:setFailureMessage
+MethodInvocation:getResString
+Method-name:appendResultDetails
+Method-returnType:void
+Method-parameters:[StringBuilder buf, SampleResult result]
+MethodInvocation:getSamplerData
+MethodInvocation:append
+MethodInvocation:trim
+MethodInvocation:append
+MethodInvocation:getRequestHeaders
+MethodInvocation:append
+MethodInvocation:append
+Method-name:filterString
+Method-returnType:String
+Method-parameters:[final String content]
+MethodInvocation:isEmpty
+MethodInvocation:setSubstitution
+MethodInvocation:getSubstitute
+MethodInvocation:substitute
+MethodInvocation:getMatcher
+MethodInvocation:getPattern
+MethodInvocation:getPatternCache
+MethodInvocation:getRegex
+Method-name:iterationStart
+Method-returnType:void
+Method-parameters:[LoopIterationEvent iterEvent]
+Method-name:isCompareContent
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setCompareContent
+Method-returnType:void
+Method-parameters:[boolean compareContent]
+FieldAccess:compareContent
+Method-name:getCompareTime
+Method-returnType:long
+Method-parameters:[]
+Method-name:setCompareTime
+Method-returnType:void
+Method-parameters:[long compareTime]
+FieldAccess:compareTime
+Method-name:getStringsToSkip
+Method-returnType:Collection<SubstitutionElement>
+Method-parameters:[]
+Method-name:setStringsToSkip
+Method-returnType:void
+Method-parameters:[Collection<SubstitutionElement> stringsToSkip]
+FieldAccess:stringsToSkip

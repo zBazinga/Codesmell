@@ -1,0 +1,338 @@
+Class:BoundingBox
+Field:xExtent
+Field:yExtent
+Field:zExtent
+Method-name:BoundingBox
+Method-returnType:null
+Method-parameters:[]
+Method-name:BoundingBox
+Method-returnType:null
+Method-parameters:[Vector3f c, float x, float y, float z]
+MethodInvocation:set
+FieldAccess:center
+FieldAccess:xExtent
+FieldAccess:yExtent
+FieldAccess:zExtent
+Method-name:BoundingBox
+Method-returnType:null
+Method-parameters:[BoundingBox source]
+MethodInvocation:set
+FieldAccess:center
+FieldAccess:xExtent
+FieldAccess:yExtent
+FieldAccess:zExtent
+Method-name:BoundingBox
+Method-returnType:null
+Method-parameters:[Vector3f min, Vector3f max]
+MethodInvocation:setMinMax
+Method-name:getType
+Method-returnType:Type
+Method-parameters:[]
+Method-name:computeFromPoints
+Method-returnType:void
+Method-parameters:[FloatBuffer points]
+MethodInvocation:containAABB
+Method-name:computeFromTris
+Method-returnType:void
+Method-parameters:[Triangle[] tris, int start, int end]
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:checkMinMax
+MethodInvocation:get
+MethodInvocation:checkMinMax
+MethodInvocation:get
+MethodInvocation:checkMinMax
+MethodInvocation:set
+MethodInvocation:addLocal
+MethodInvocation:multLocal
+MethodInvocation:release
+Method-name:computeFromTris
+Method-returnType:void
+Method-parameters:[int[] indices, Mesh mesh, int start, int end]
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:getTriangle
+MethodInvocation:get
+MethodInvocation:checkMinMax
+MethodInvocation:get
+MethodInvocation:checkMinMax
+MethodInvocation:get
+MethodInvocation:checkMinMax
+MethodInvocation:set
+MethodInvocation:addLocal
+MethodInvocation:multLocal
+MethodInvocation:release
+Method-name:checkMinMax
+Method-returnType:void
+Method-parameters:[Vector3f min, Vector3f max, Vector3f point]
+Method-name:containAABB
+Method-returnType:void
+Method-parameters:[FloatBuffer points]
+MethodInvocation:rewind
+MethodInvocation:remaining
+MethodInvocation:get
+MethodInvocation:ceil
+MethodInvocation:limit
+MethodInvocation:min
+MethodInvocation:remaining
+MethodInvocation:get
+MethodInvocation:release
+MethodInvocation:set
+MethodInvocation:multLocal
+Method-name:transform
+Method-returnType:BoundingVolume
+Method-parameters:[Transform trans, BoundingVolume store]
+MethodInvocation:getType
+MethodInvocation:mult
+MethodInvocation:getScale
+MethodInvocation:mult
+MethodInvocation:getRotation
+MethodInvocation:addLocal
+MethodInvocation:getTranslation
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:getRotation
+MethodInvocation:absoluteLocal
+MethodInvocation:getScale
+MethodInvocation:set
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:mult
+MethodInvocation:abs
+MethodInvocation:getX
+MethodInvocation:abs
+MethodInvocation:getY
+MethodInvocation:abs
+MethodInvocation:getZ
+MethodInvocation:release
+Method-name:transform
+Method-returnType:BoundingVolume
+Method-parameters:[Matrix4f trans, BoundingVolume store]
+MethodInvocation:getType
+MethodInvocation:get
+MethodInvocation:multProj
+MethodInvocation:divideLocal
+MethodInvocation:toRotationMatrix
+MethodInvocation:absoluteLocal
+MethodInvocation:set
+MethodInvocation:mult
+MethodInvocation:abs
+MethodInvocation:getX
+MethodInvocation:abs
+MethodInvocation:getY
+MethodInvocation:abs
+MethodInvocation:getZ
+MethodInvocation:release
+Method-name:whichSide
+Method-returnType:Plane.Side
+Method-parameters:[Plane plane]
+MethodInvocation:abs
+MethodInvocation:getX
+MethodInvocation:getNormal
+MethodInvocation:abs
+MethodInvocation:getY
+MethodInvocation:getNormal
+MethodInvocation:abs
+MethodInvocation:getZ
+MethodInvocation:getNormal
+MethodInvocation:pseudoDistance
+Method-name:merge
+Method-returnType:BoundingVolume
+Method-parameters:[BoundingVolume volume]
+MethodInvocation:mergeLocal
+Method-name:mergeLocal
+Method-returnType:BoundingVolume
+Method-parameters:[BoundingVolume volume]
+MethodInvocation:getType
+MethodInvocation:mergeLocal
+MethodInvocation:mergeLocal
+Method-name:mergeLocal
+Method-returnType:BoundingBox
+Method-parameters:[Vector3f c, float x, float y, float z]
+Method-name:clone
+Method-returnType:BoundingVolume
+Method-parameters:[BoundingVolume store]
+MethodInvocation:getType
+MethodInvocation:set
+MethodInvocation:clone
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:intersects
+Method-returnType:boolean
+Method-parameters:[BoundingVolume bv]
+MethodInvocation:intersectsBoundingBox
+Method-name:intersectsSphere
+Method-returnType:boolean
+Method-parameters:[BoundingSphere bs]
+MethodInvocation:intersectsBoundingBox
+Method-name:intersectsBoundingBox
+Method-returnType:boolean
+Method-parameters:[BoundingBox bb]
+Method-name:intersects
+Method-returnType:boolean
+Method-parameters:[Ray ray]
+Method-name:collideWithRay
+Method-returnType:int
+Method-parameters:[Ray ray, CollisionResults results]
+MethodInvocation:get
+MethodInvocation:subtractLocal
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:clip
+MethodInvocation:clip
+MethodInvocation:clip
+MethodInvocation:clip
+MethodInvocation:clip
+MethodInvocation:clip
+MethodInvocation:addLocal
+MethodInvocation:multLocal
+MethodInvocation:addLocal
+MethodInvocation:multLocal
+MethodInvocation:addCollision
+MethodInvocation:addCollision
+MethodInvocation:addLocal
+MethodInvocation:multLocal
+MethodInvocation:addCollision
+MethodInvocation:release
+Method-name:collideWithRay
+Method-returnType:int
+Method-parameters:[Ray ray]
+MethodInvocation:get
+MethodInvocation:subtractLocal
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:clip
+MethodInvocation:clip
+MethodInvocation:clip
+MethodInvocation:clip
+MethodInvocation:clip
+MethodInvocation:clip
+MethodInvocation:release
+Method-name:collideWith
+Method-returnType:int
+Method-parameters:[Collidable other, CollisionResults results]
+MethodInvocation:collideWithRay
+MethodInvocation:intersects
+MethodInvocation:get1
+MethodInvocation:get2
+MethodInvocation:get3
+MethodInvocation:addCollision
+MethodInvocation:intersects
+MethodInvocation:addCollision
+MethodInvocation:collideWith
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:collideWith
+Method-returnType:int
+Method-parameters:[Collidable other]
+MethodInvocation:collideWithRay
+MethodInvocation:intersects
+MethodInvocation:get1
+MethodInvocation:get2
+MethodInvocation:get3
+MethodInvocation:intersects
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:intersects
+Method-returnType:boolean
+Method-parameters:[Vector3f v1, Vector3f v2, Vector3f v3]
+MethodInvocation:intersect
+Method-name:contains
+Method-returnType:boolean
+Method-parameters:[Vector3f point]
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+Method-name:intersects
+Method-returnType:boolean
+Method-parameters:[Vector3f point]
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+Method-name:distanceToEdge
+Method-returnType:float
+Method-parameters:[Vector3f point]
+MethodInvocation:get
+MethodInvocation:subtract
+MethodInvocation:release
+MethodInvocation:sqrt
+Method-name:clip
+Method-returnType:boolean
+Method-parameters:[float denom, float numer, float[] t]
+Method-name:getExtent
+Method-returnType:Vector3f
+Method-parameters:[Vector3f store]
+MethodInvocation:set
+Method-name:getXExtent
+Method-returnType:float
+Method-parameters:[]
+Method-name:getYExtent
+Method-returnType:float
+Method-parameters:[]
+Method-name:getZExtent
+Method-returnType:float
+Method-parameters:[]
+Method-name:setXExtent
+Method-returnType:void
+Method-parameters:[float xExtent]
+FieldAccess:xExtent
+Method-name:setYExtent
+Method-returnType:void
+Method-parameters:[float yExtent]
+FieldAccess:yExtent
+Method-name:setZExtent
+Method-returnType:void
+Method-parameters:[float zExtent]
+FieldAccess:zExtent
+Method-name:getMin
+Method-returnType:Vector3f
+Method-parameters:[Vector3f store]
+MethodInvocation:subtractLocal
+MethodInvocation:set
+Method-name:getMax
+Method-returnType:Vector3f
+Method-parameters:[Vector3f store]
+MethodInvocation:addLocal
+MethodInvocation:set
+Method-name:setMinMax
+Method-returnType:void
+Method-parameters:[Vector3f min, Vector3f max]
+MethodInvocation:multLocal
+MethodInvocation:addLocal
+MethodInvocation:set
+FieldAccess:center
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter e]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter e]
+MethodInvocation:getCapsule
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+Method-name:getVolume
+Method-returnType:float
+Method-parameters:[]
+Method-name:setMinMaxOther
+Method-returnType:void
+Method-parameters:[boolean doMin, int axis, float value, BIHTree bihTree]
+MethodInvocation:getMin
+MethodInvocation:getMax
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:setMinMax

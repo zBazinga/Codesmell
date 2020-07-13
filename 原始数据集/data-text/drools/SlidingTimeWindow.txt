@@ -1,0 +1,279 @@
+Class:SlidingTimeWindow
+Field:size
+Field:job
+Field:nodeId
+Method-name:SlidingTimeWindow
+Method-returnType:null
+Method-parameters:[]
+Method-name:SlidingTimeWindow
+Method-returnType:null
+Method-parameters:[final long size]
+FieldAccess:size
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[final ObjectInput in]
+FieldAccess:size
+MethodInvocation:readLong
+FieldAccess:nodeId
+MethodInvocation:readInt
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[final ObjectOutput out]
+MethodInvocation:writeLong
+FieldAccess:size
+MethodInvocation:writeInt
+FieldAccess:nodeId
+Method-name:getType
+Method-returnType:BehaviorType
+Method-parameters:[]
+Method-name:setWindowNode
+Method-returnType:void
+Method-parameters:[WindowNode windowNode]
+FieldAccess:nodeId
+MethodInvocation:getId
+Method-name:getSize
+Method-returnType:long
+Method-parameters:[]
+Method-name:setSize
+Method-returnType:void
+Method-parameters:[final long size]
+FieldAccess:size
+Method-name:createContext
+Method-returnType:Behavior.Context
+Method-parameters:[]
+Method-name:assertFact
+Method-returnType:boolean
+Method-parameters:[final Object context, final InternalFactHandle fact, final PropagationContext pctx, final InternalWorkingMemory workingMemory]
+MethodInvocation:getCurrentTime
+MethodInvocation:getTimerService
+MethodInvocation:isExpiredOther
+MethodInvocation:add
+MethodInvocation:peek
+MethodInvocation:updateNextExpiration
+Method-name:retractFact
+Method-returnType:void
+Method-parameters:[final Object context, final InternalFactHandle fact, final PropagationContext pctx, final InternalWorkingMemory workingMemory]
+MethodInvocation:getExpiringHandle
+MethodInvocation:peek
+MethodInvocation:poll
+MethodInvocation:updateNextExpiration
+MethodInvocation:peek
+MethodInvocation:remove
+MethodInvocation:isEmpty
+MethodInvocation:getJobHandle
+MethodInvocation:removeJob
+MethodInvocation:getTimerService
+MethodInvocation:getJobHandle
+Method-name:expireFacts
+Method-returnType:void
+Method-parameters:[final Object context, final PropagationContext pctx, final InternalWorkingMemory workingMemory]
+MethodInvocation:getTimerService
+MethodInvocation:getCurrentTime
+MethodInvocation:peek
+MethodInvocation:isExpiredOther
+MethodInvocation:setExpiringHandle
+MethodInvocation:remove
+MethodInvocation:isValid
+MethodInvocation:createPropagationContextForFact
+MethodInvocation:doRetractObject
+MethodInvocation:setExpiringHandle
+MethodInvocation:peek
+MethodInvocation:updateNextExpiration
+Method-name:updateNextExpiration
+Method-returnType:void
+Method-parameters:[final InternalFactHandle fact, final InternalWorkingMemory workingMemory, final Behavior.Context context, final int nodeId]
+MethodInvocation:getTimerService
+MethodInvocation:getStartTimestamp
+MethodInvocation:getSize
+MethodInvocation:getCurrentTime
+MethodInvocation:queueWorkingMemoryAction
+MethodInvocation:scheduleJob
+MethodInvocation:createPointInTimeTrigger
+MethodInvocation:setJobHandle
+Method-name:getExpirationOffset
+Method-returnType:long
+Method-parameters:[]
+FieldAccess:size
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Class:SlidingTimeWindowContext
+Field:queue
+Field:expiringHandle
+Field:jobHandle
+Method-name:SlidingTimeWindowContext
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:queue
+Method-name:getJobHandle
+Method-returnType:JobHandle
+Method-parameters:[]
+FieldAccess:jobHandle
+Method-name:setJobHandle
+Method-returnType:void
+Method-parameters:[JobHandle jobHandle]
+FieldAccess:jobHandle
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+FieldAccess:queue
+MethodInvocation:readObject
+FieldAccess:expiringHandle
+MethodInvocation:readObject
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+FieldAccess:queue
+MethodInvocation:writeObject
+FieldAccess:expiringHandle
+Method-name:getExpiringHandle
+Method-returnType:EventFactHandle
+Method-parameters:[]
+Method-name:setExpiringHandle
+Method-returnType:void
+Method-parameters:[EventFactHandle expiringHandle]
+FieldAccess:expiringHandle
+Method-name:setExpiringTuple
+Method-returnType:void
+Method-parameters:[EventFactHandle expiringHandle]
+FieldAccess:expiringHandle
+Method-name:add
+Method-returnType:void
+Method-parameters:[EventFactHandle handle]
+MethodInvocation:add
+Method-name:remove
+Method-returnType:void
+Method-parameters:[EventFactHandle handle]
+MethodInvocation:remove
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:peek
+Method-returnType:EventFactHandle
+Method-parameters:[]
+MethodInvocation:peek
+Method-name:poll
+Method-returnType:EventFactHandle
+Method-parameters:[]
+MethodInvocation:poll
+Method-name:remove
+Method-returnType:EventFactHandle
+Method-parameters:[]
+MethodInvocation:remove
+Method-name:getFactHandles
+Method-returnType:Collection<EventFactHandle>
+Method-parameters:[]
+Class:BehaviorJobContextTimerOutputMarshaller
+Method-name:write
+Method-returnType:void
+Method-parameters:[JobContext jobCtx, MarshallerWriteContext outputCtx]
+MethodInvocation:writeShort
+MethodInvocation:peek
+MethodInvocation:writeInt
+MethodInvocation:getId
+Method-name:serialize
+Method-returnType:Timer
+Method-parameters:[JobContext jobCtx, MarshallerWriteContext outputCtx]
+MethodInvocation:peek
+MethodInvocation:build
+MethodInvocation:setBehavior
+MethodInvocation:setType
+MethodInvocation:newBuilder
+MethodInvocation:build
+MethodInvocation:setHandleId
+MethodInvocation:newBuilder
+MethodInvocation:getId
+Class:BehaviorJobContextTimerInputMarshaller
+Method-name:read
+Method-returnType:void
+Method-parameters:[MarshallerReaderContext inCtx]
+MethodInvocation:readInt
+MethodInvocation:get
+MethodInvocation:getNodeMemory
+MethodInvocation:readInt
+Method-name:deserialize
+Method-returnType:void
+Method-parameters:[MarshallerReaderContext inCtx, Timer _timer]
+MethodInvocation:getHandleId
+MethodInvocation:getBehavior
+Class:BehaviorJobContext
+Field:workingMemory
+Field:nodeId
+Field:behavior
+Field:behaviorContext
+Method-name:BehaviorJobContext
+Method-returnType:null
+Method-parameters:[int nodeId, InternalWorkingMemory workingMemory, Behavior behavior, Behavior.Context behaviorContext]
+FieldAccess:nodeId
+FieldAccess:workingMemory
+FieldAccess:behavior
+FieldAccess:behaviorContext
+Method-name:getJobHandle
+Method-returnType:JobHandle
+Method-parameters:[]
+MethodInvocation:getJobHandle
+Method-name:setJobHandle
+Method-returnType:void
+Method-parameters:[JobHandle jobHandle]
+MethodInvocation:setJobHandle
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+Method-name:getWorkingMemory
+Method-returnType:InternalWorkingMemory
+Method-parameters:[]
+Class:BehaviorJob
+Method-name:execute
+Method-returnType:void
+Method-parameters:[JobContext ctx]
+MethodInvocation:queueWorkingMemoryAction
+Class:BehaviorExpireWMAction
+Field:behavior
+Field:context
+Field:nodeId
+Method-name:BehaviorExpireWMAction
+Method-returnType:null
+Method-parameters:[final int nodeId, Behavior behavior, Behavior.Context context]
+FieldAccess:nodeId
+FieldAccess:behavior
+FieldAccess:context
+Method-name:BehaviorExpireWMAction
+Method-returnType:null
+Method-parameters:[MarshallerReaderContext inCtx]
+MethodInvocation:readInt
+MethodInvocation:get
+MethodInvocation:getNodeMemory
+MethodInvocation:readInt
+FieldAccess:behavior
+MethodInvocation:getBehaviors
+FieldAccess:context
+Method-name:BehaviorExpireWMAction
+Method-returnType:null
+Method-parameters:[MarshallerReaderContext context, Action _action]
+MethodInvocation:getNodeId
+MethodInvocation:getBehaviorExpire
+MethodInvocation:get
+MethodInvocation:getNodeMemory
+FieldAccess:behavior
+MethodInvocation:getBehaviors
+FieldAccess:context
+Method-name:execute
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory workingMemory]
+MethodInvocation:expireFacts
+FieldAccess:behavior
+Method-name:serialize
+Method-returnType:ProtobufMessages.ActionQueue.Action
+Method-parameters:[MarshallerWriteContext outputCtx]
+MethodInvocation:build
+MethodInvocation:setNodeId
+MethodInvocation:newBuilder
+MethodInvocation:build
+MethodInvocation:setBehaviorExpire
+MethodInvocation:setType
+MethodInvocation:newBuilder

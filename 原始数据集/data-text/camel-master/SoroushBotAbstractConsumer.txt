@@ -1,0 +1,154 @@
+Class:SoroushBotAbstractConsumer
+Field:LOG
+MethodInvocation:getLogger
+Field:endpoint
+Field:objectMapper
+Field:shutdown
+Field:lastMessageReceived
+Field:connection
+Method-name:SoroushBotAbstractConsumer
+Method-returnType:null
+Method-parameters:[SoroushBotEndpoint endpoint, Processor processor]
+FieldAccess:endpoint
+Method-name:doStart
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:run
+Method-name:handleExceptionThrownWhileCreatingOrProcessingExchange
+Method-returnType:void
+Method-parameters:[Exchange exchange, SoroushMessage soroushMessage, Exception ex]
+MethodInvocation:setProperty
+MethodInvocation:handleException
+MethodInvocation:getExceptionHandler
+MethodInvocation:getMessage
+Method-name:sendExchange
+Method-returnType:void
+Method-parameters:[Exchange exchange]
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:currentTimeMillis
+MethodInvocation:build
+MethodInvocation:url
+MethodInvocation:generateUrl
+MethodInvocation:get
+MethodInvocation:getAuthorizationToken
+MethodInvocation:build
+MethodInvocation:readTimeout
+MethodInvocation:writeTimeout
+MethodInvocation:connectTimeout
+MethodInvocation:getConnectionTimeout
+MethodInvocation:getMaxConnectionRetry
+Method-name:onBeforeConnect
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getConnectionRetry
+MethodInvocation:waitBeforeRetry
+MethodInvocation:isInfoEnabled
+MethodInvocation:info
+MethodInvocation:isInfoEnabled
+MethodInvocation:info
+MethodInvocation:ordinal
+Method-name:onOpen
+Method-returnType:void
+Method-parameters:[EventSource eventSource, Response response]
+MethodInvocation:info
+Method-name:handleClose
+Method-returnType:boolean
+Method-parameters:[EventSource eventSource, boolean manuallyClosed]
+MethodInvocation:warn
+MethodInvocation:debug
+Method-name:handleFailure
+Method-returnType:boolean
+Method-parameters:[EventSource eventSource, boolean manuallyClosed, Throwable t, Response response]
+MethodInvocation:error
+MethodInvocation:debug
+Method-name:onEvent
+Method-returnType:void
+Method-parameters:[EventSource eventSource, String id, String type, String data]
+MethodInvocation:createExchange
+MethodInvocation:readValue
+MethodInvocation:setBody
+MethodInvocation:getIn
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:isAutoDownload
+MethodInvocation:handleDownloadFiles
+MethodInvocation:sendExchange
+MethodInvocation:handleExceptionThrownWhileCreatingOrProcessingExchange
+MethodInvocation:error
+Method-name:onFinishProcess
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:info
+MethodInvocation:connect
+MethodInvocation:scheduleAtFixedRate
+MethodInvocation:newSingleThreadScheduledExecutor
+MethodInvocation:getExecutorServiceManager
+MethodInvocation:getCamelContext
+MethodInvocation:currentTimeMillis
+MethodInvocation:getReconnectIdleConnectionTimeout
+MethodInvocation:close
+MethodInvocation:getReconnectIdleConnectionTimeout
+Method-name:prepareShutdown
+Method-returnType:void
+Method-parameters:[boolean suspendOnly, boolean forced]
+MethodInvocation:close
+Class:ReconnectableEventSourceListener
+Field:manuallyClosed
+Field:client
+Field:maxConnectionRetry
+Field:connectionRetry
+Field:request
+Field:factory
+Field:eventSource
+Method-name:ReconnectableEventSourceListener
+Method-returnType:null
+Method-parameters:[OkHttpClient client, Request request, int maxConnectionRetry]
+FieldAccess:client
+FieldAccess:maxConnectionRetry
+FieldAccess:request
+MethodInvocation:createFactory
+Method-name:reconnect
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:cancel
+MethodInvocation:connect
+Method-name:connect
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onBeforeConnect
+MethodInvocation:newEventSource
+MethodInvocation:onFinishProcess
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:cancel
+Method-name:onFinishProcess
+Method-returnType:void
+Method-parameters:[]
+Method-name:onBeforeConnect
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:onOpen
+Method-returnType:void
+Method-parameters:[EventSource eventSource, Response response]
+Method-name:onClosed
+Method-returnType:void
+Method-parameters:[EventSource eventSource]
+MethodInvocation:handleClose
+MethodInvocation:reconnect
+Method-name:handleClose
+Method-returnType:boolean
+Method-parameters:[EventSource eventSource, boolean manuallyClosed]
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[EventSource eventSource, Throwable t, Response response]
+MethodInvocation:handleFailure
+MethodInvocation:reconnect
+Method-name:handleFailure
+Method-returnType:boolean
+Method-parameters:[EventSource eventSource, boolean manuallyClosed, Throwable t, Response response]
+Method-name:getConnectionRetry
+Method-returnType:int
+Method-parameters:[]

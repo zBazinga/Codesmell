@@ -1,0 +1,38 @@
+Class:SamlServiceProviderFactory
+Field:defaults
+Method-name:SamlServiceProviderFactory
+Method-returnType:null
+Method-parameters:[ServiceProviderDefaults defaults]
+FieldAccess:defaults
+Method-name:buildServiceProvider
+Method-returnType:SamlServiceProvider
+Method-parameters:[SamlServiceProviderDocument document]
+MethodInvocation:buildPrivileges
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getServiceProviderX509SigningCertificates
+MethodInvocation:toUnmodifiableSet
+MethodInvocation:parseUrl
+MethodInvocation:orElse
+MethodInvocation:ofNullable
+MethodInvocation:getAuthenticationExpiry
+MethodInvocation:contains
+MethodInvocation:contains
+Method-name:buildPrivileges
+Method-returnType:ServiceProviderPrivileges
+Method-parameters:[SamlServiceProviderDocument.Privileges configuredPrivileges]
+MethodInvocation:isEmpty
+MethodInvocation:of
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toUnmodifiableSet
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:matcher
+MethodInvocation:group
+MethodInvocation:toUnmodifiableSet

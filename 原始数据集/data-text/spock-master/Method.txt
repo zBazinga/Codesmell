@@ -1,0 +1,61 @@
+Class:Method
+Field:firstBlock
+Field:lastBlock
+Method-name:Method
+Method-returnType:null
+Method-parameters:[Spec parent, MethodNode code]
+MethodInvocation:setName
+MethodInvocation:getName
+Method-name:getFirstBlock
+Method-returnType:Block
+Method-parameters:[]
+Method-name:getLastBlock
+Method-returnType:Block
+Method-parameters:[]
+Method-name:getStatements
+Method-returnType:List<Statement>
+Method-parameters:[]
+MethodInvocation:getStatements
+MethodInvocation:getAst
+Method-name:getBlocks
+Method-returnType:Iterable<Block>
+Method-parameters:[]
+Method-name:addBlock
+Method-returnType:Block
+Method-parameters:[Block block]
+MethodInvocation:setNext
+MethodInvocation:setPrevious
+Method-name:accept
+Method-returnType:void
+Method-parameters:[ISpecVisitor visitor]
+MethodInvocation:visitMethod
+MethodInvocation:getBlocks
+MethodInvocation:accept
+MethodInvocation:visitMethodAgain
+Method-name:check
+Method-returnType:void
+Method-parameters:[InstanceFieldAccessChecker instanceFieldAccessChecker]
+MethodInvocation:getBlocks
+MethodInvocation:getAst
+MethodInvocation:visit
+Class:BlockIterable
+Field:first
+Method-name:BlockIterable
+Method-returnType:null
+Method-parameters:[Block first]
+FieldAccess:first
+Method-name:iterator
+Method-returnType:Iterator<Block>
+Method-parameters:[]
+Field:block
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:next
+Method-returnType:Block
+Method-parameters:[]
+MethodInvocation:hasNext
+MethodInvocation:getNext
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]

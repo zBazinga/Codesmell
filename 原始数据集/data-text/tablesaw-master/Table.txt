@@ -1,0 +1,768 @@
+Class:Table
+Field:defaultReaderRegistry
+Field:defaultWriterRegistry
+MethodInvocation:autoRegisterReadersAndWriters
+Field:columnList
+Field:name
+Method-name:Table
+Method-returnType:null
+Method-parameters:[]
+Method-name:Table
+Method-returnType:null
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:Table
+Method-returnType:null
+Method-parameters:[String name, Column<?>... columns]
+MethodInvocation:addColumns
+Method-name:Table
+Method-returnType:null
+Method-parameters:[String name, Collection<Column<?>> columns]
+MethodInvocation:addColumns
+Method-name:autoRegisterReadersAndWriters
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:scan
+MethodInvocation:whitelistPackages
+MethodInvocation:enableAllInfo
+MethodInvocation:addAll
+MethodInvocation:getNames
+MethodInvocation:getClassesImplementing
+MethodInvocation:getName
+MethodInvocation:addAll
+MethodInvocation:getNames
+MethodInvocation:getClassesImplementing
+MethodInvocation:getName
+MethodInvocation:forName
+Method-name:create
+Method-returnType:Table
+Method-parameters:[]
+Method-name:create
+Method-returnType:Table
+Method-parameters:[String tableName]
+Method-name:create
+Method-returnType:Table
+Method-parameters:[Column<?>... columns]
+Method-name:create
+Method-returnType:Table
+Method-parameters:[Collection<Column<?>> columns]
+Method-name:create
+Method-returnType:Table
+Method-parameters:[Stream<Column<?>> columns]
+MethodInvocation:collect
+MethodInvocation:toList
+Method-name:create
+Method-returnType:Table
+Method-parameters:[String name, Column<?>... columns]
+Method-name:create
+Method-returnType:Table
+Method-parameters:[String name, Collection<Column<?>> columns]
+Method-name:create
+Method-returnType:Table
+Method-parameters:[String name, Stream<Column<?>> columns]
+MethodInvocation:collect
+MethodInvocation:toList
+Method-name:first
+Method-returnType:Sort
+Method-parameters:[String columnName, Sort.Order order]
+MethodInvocation:on
+Method-name:getSort
+Method-returnType:Sort
+Method-parameters:[String... columnNames]
+MethodInvocation:first
+MethodInvocation:next
+Method-name:read
+Method-returnType:DataFrameReader
+Method-parameters:[]
+Method-name:write
+Method-returnType:DataFrameWriter
+Method-parameters:[]
+Method-name:addColumns
+Method-returnType:Table
+Method-parameters:[final Column<?>... cols]
+MethodInvocation:validateColumn
+MethodInvocation:add
+Method-name:validateColumn
+Method-returnType:void
+Method-parameters:[final Column<?> newColumn]
+MethodInvocation:checkNotNull
+MethodInvocation:columnNames
+MethodInvocation:add
+MethodInvocation:toLowerCase
+MethodInvocation:contains
+MethodInvocation:toLowerCase
+MethodInvocation:name
+MethodInvocation:format
+MethodInvocation:name
+MethodInvocation:checkColumnSize
+Method-name:checkColumnSize
+Method-returnType:void
+Method-parameters:[Column<?> newColumn]
+MethodInvocation:columnCount
+MethodInvocation:checkArgument
+MethodInvocation:size
+MethodInvocation:rowCount
+MethodInvocation:name
+Method-name:insertColumn
+Method-returnType:Table
+Method-parameters:[int index, Column<?> column]
+MethodInvocation:validateColumn
+MethodInvocation:add
+Method-name:replaceColumn
+Method-returnType:Table
+Method-parameters:[final int colIndex, final Column<?> newColumn]
+MethodInvocation:removeColumns
+MethodInvocation:column
+MethodInvocation:insertColumn
+Method-name:replaceColumn
+Method-returnType:Table
+Method-parameters:[final String columnName, final Column<?> newColumn]
+MethodInvocation:columnIndex
+MethodInvocation:replaceColumn
+Method-name:replaceColumn
+Method-returnType:Table
+Method-parameters:[Column<?> newColumn]
+MethodInvocation:replaceColumn
+MethodInvocation:name
+Method-name:setName
+Method-returnType:Table
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:column
+Method-returnType:Column<?>
+Method-parameters:[int columnIndex]
+MethodInvocation:get
+Method-name:columnCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:rowCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:get
+Method-name:columns
+Method-returnType:List<Column<?>>
+Method-parameters:[]
+Method-name:columnArray
+Method-returnType:Column<?>[]
+Method-parameters:[]
+MethodInvocation:toArray
+MethodInvocation:columnCount
+Method-name:categoricalColumns
+Method-returnType:List<CategoricalColumn<?>>
+Method-parameters:[String... columnNames]
+MethodInvocation:add
+MethodInvocation:categoricalColumn
+Method-name:columnIndex
+Method-returnType:int
+Method-parameters:[String columnName]
+MethodInvocation:size
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:name
+MethodInvocation:get
+MethodInvocation:format
+Method-name:columnIndex
+Method-returnType:int
+Method-parameters:[Column<?> column]
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:format
+MethodInvocation:name
+Method-name:name
+Method-returnType:String
+Method-parameters:[]
+Method-name:columnNames
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toList
+Method-name:copy
+Method-returnType:Table
+Method-parameters:[]
+MethodInvocation:addColumns
+MethodInvocation:emptyCopy
+MethodInvocation:rowCount
+MethodInvocation:rowCount
+MethodInvocation:rowCount
+MethodInvocation:copyRowsToTable
+Method-name:emptyCopy
+Method-returnType:Table
+Method-parameters:[]
+MethodInvocation:addColumns
+MethodInvocation:emptyCopy
+Method-name:emptyCopy
+Method-returnType:Table
+Method-parameters:[int rowSize]
+MethodInvocation:addColumns
+MethodInvocation:emptyCopy
+Method-name:sampleSplit
+Method-returnType:Table[]
+Method-parameters:[double table1Proportion]
+MethodInvocation:round
+MethodInvocation:rowCount
+MethodInvocation:rowCount
+MethodInvocation:add
+MethodInvocation:selectNRowsAtRandom
+MethodInvocation:rowCount
+MethodInvocation:add
+MethodInvocation:andNot
+MethodInvocation:where
+MethodInvocation:where
+Method-name:stratifiedSampleSplit
+Method-returnType:Table[]
+Method-parameters:[CategoricalColumn<?> column, double table1Proportion]
+MethodInvocation:checkArgument
+MethodInvocation:containsColumn
+MethodInvocation:emptyCopy
+MethodInvocation:emptyCopy
+MethodInvocation:forEach
+MethodInvocation:asTableList
+MethodInvocation:splitOn
+MethodInvocation:sampleSplit
+MethodInvocation:append
+MethodInvocation:append
+Method-name:sampleX
+Method-returnType:Table
+Method-parameters:[double proportion]
+MethodInvocation:checkArgument
+MethodInvocation:round
+MethodInvocation:rowCount
+MethodInvocation:where
+MethodInvocation:selectNRowsAtRandom
+MethodInvocation:rowCount
+Method-name:sampleN
+Method-returnType:Table
+Method-parameters:[int nRows]
+MethodInvocation:checkArgument
+MethodInvocation:rowCount
+MethodInvocation:where
+MethodInvocation:selectNRowsAtRandom
+MethodInvocation:rowCount
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:forEach
+Method-name:first
+Method-returnType:Table
+Method-parameters:[int nRows]
+MethodInvocation:min
+MethodInvocation:rowCount
+MethodInvocation:inRange
+Method-name:last
+Method-returnType:Table
+Method-parameters:[int nRows]
+MethodInvocation:min
+MethodInvocation:rowCount
+MethodInvocation:inRange
+MethodInvocation:rowCount
+MethodInvocation:rowCount
+Method-name:sortOn
+Method-returnType:Table
+Method-parameters:[int... columnIndexes]
+MethodInvocation:add
+MethodInvocation:name
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:name
+MethodInvocation:get
+MethodInvocation:sortOn
+MethodInvocation:toArray
+MethodInvocation:size
+Method-name:sortOn
+Method-returnType:Table
+Method-parameters:[String... columnNames]
+MethodInvocation:sortOn
+MethodInvocation:create
+Method-name:sortAscendingOn
+Method-returnType:Table
+Method-parameters:[String... columnNames]
+MethodInvocation:sortOn
+Method-name:sortDescendingOn
+Method-returnType:Table
+Method-parameters:[String... columnNames]
+MethodInvocation:getSort
+MethodInvocation:sortOn
+Method-name:sortOn
+Method-returnType:Table
+Method-parameters:[Sort key]
+MethodInvocation:checkArgument
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:getComparator
+MethodInvocation:sortOn
+MethodInvocation:getChain
+MethodInvocation:sortOn
+Method-name:sortOn
+Method-returnType:Table
+Method-parameters:[IntComparator rowComparator]
+MethodInvocation:emptyCopy
+MethodInvocation:rowCount
+MethodInvocation:rows
+MethodInvocation:parallelQuickSort
+MethodInvocation:copyRowsToTable
+Method-name:sortOn
+Method-returnType:Table
+Method-parameters:[Comparator<Row> rowComparator]
+MethodInvocation:sortOn
+MethodInvocation:at
+MethodInvocation:at
+MethodInvocation:compare
+Method-name:rows
+Method-returnType:int[]
+Method-parameters:[]
+MethodInvocation:rowCount
+MethodInvocation:rowCount
+Method-name:addRow
+Method-returnType:void
+Method-parameters:[int rowIndex, Table sourceTable]
+MethodInvocation:columnCount
+MethodInvocation:appendObj
+MethodInvocation:column
+MethodInvocation:get
+MethodInvocation:column
+Method-name:row
+Method-returnType:Row
+Method-parameters:[int rowIndex]
+MethodInvocation:at
+Method-name:rows
+Method-returnType:Table
+Method-parameters:[int... rowNumbers]
+MethodInvocation:checkArgument
+MethodInvocation:max
+MethodInvocation:rowCount
+MethodInvocation:where
+MethodInvocation:with
+Method-name:dropRows
+Method-returnType:Table
+Method-parameters:[int... rowNumbers]
+MethodInvocation:checkArgument
+MethodInvocation:max
+MethodInvocation:rowCount
+MethodInvocation:andNot
+MethodInvocation:withRange
+MethodInvocation:rowCount
+MethodInvocation:with
+MethodInvocation:where
+Method-name:inRange
+Method-returnType:Table
+Method-parameters:[int rowCount]
+MethodInvocation:checkArgument
+MethodInvocation:rowCount
+MethodInvocation:rowCount
+MethodInvocation:rowCount
+MethodInvocation:where
+MethodInvocation:withRange
+Method-name:inRange
+Method-returnType:Table
+Method-parameters:[int rowStart, int rowEnd]
+MethodInvocation:checkArgument
+MethodInvocation:rowCount
+MethodInvocation:where
+MethodInvocation:withRange
+Method-name:dropRange
+Method-returnType:Table
+Method-parameters:[int rowCount]
+MethodInvocation:checkArgument
+MethodInvocation:rowCount
+MethodInvocation:rowCount
+MethodInvocation:rowCount
+MethodInvocation:where
+MethodInvocation:withRange
+Method-name:dropRange
+Method-returnType:Table
+Method-parameters:[int rowStart, int rowEnd]
+MethodInvocation:checkArgument
+MethodInvocation:rowCount
+MethodInvocation:where
+MethodInvocation:withoutRange
+MethodInvocation:rowCount
+Method-name:where
+Method-returnType:Table
+Method-parameters:[Selection selection]
+MethodInvocation:emptyCopy
+MethodInvocation:size
+MethodInvocation:copyRowsToTable
+Method-name:where
+Method-returnType:Table
+Method-parameters:[Function<Table,Selection> selection]
+MethodInvocation:where
+MethodInvocation:apply
+MethodInvocation:emptyCopy
+MethodInvocation:rowCount
+MethodInvocation:copyRowsToTable
+MethodInvocation:apply
+Method-name:dropWhere
+Method-returnType:Table
+Method-parameters:[Function<Table,Selection> selection]
+MethodInvocation:where
+MethodInvocation:not
+Method-name:dropWhere
+Method-returnType:Table
+Method-parameters:[Selection selection]
+MethodInvocation:addRange
+MethodInvocation:rowCount
+MethodInvocation:andNot
+MethodInvocation:emptyCopy
+MethodInvocation:size
+MethodInvocation:copyRowsToTable
+Method-name:pivot
+Method-returnType:Table
+Method-parameters:[CategoricalColumn<?> column1, CategoricalColumn<?> column2, NumericColumn<?> column3, AggregateFunction<?,?> aggregateFunction]
+MethodInvocation:pivot
+Method-name:pivot
+Method-returnType:Table
+Method-parameters:[String column1Name, String column2Name, String column3Name, AggregateFunction<?,?> aggregateFunction]
+MethodInvocation:pivot
+MethodInvocation:categoricalColumn
+MethodInvocation:categoricalColumn
+MethodInvocation:numberColumn
+Method-name:splitOn
+Method-returnType:TableSliceGroup
+Method-parameters:[String... columns]
+MethodInvocation:splitOn
+MethodInvocation:toArray
+MethodInvocation:categoricalColumns
+Method-name:splitOn
+Method-returnType:TableSliceGroup
+Method-parameters:[CategoricalColumn<?>... columns]
+MethodInvocation:create
+Method-name:structure
+Method-returnType:Table
+Method-parameters:[]
+MethodInvocation:name
+MethodInvocation:indexColumn
+MethodInvocation:columnCount
+MethodInvocation:create
+MethodInvocation:columnCount
+MethodInvocation:create
+MethodInvocation:columnCount
+MethodInvocation:addColumns
+MethodInvocation:addColumns
+MethodInvocation:addColumns
+MethodInvocation:columnCount
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:name
+MethodInvocation:type
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:columnNames
+Method-name:dropDuplicateRows
+Method-returnType:Table
+Method-parameters:[]
+MethodInvocation:sortOn
+MethodInvocation:toArray
+MethodInvocation:columnNames
+MethodInvocation:size
+MethodInvocation:columns
+MethodInvocation:emptyCopy
+MethodInvocation:rowCount
+MethodInvocation:isEmpty
+MethodInvocation:compareRows
+MethodInvocation:appendRowToTable
+Method-name:dropRowsWithMissingValues
+Method-returnType:Table
+Method-parameters:[]
+MethodInvocation:rowCount
+MethodInvocation:columnCount
+MethodInvocation:column
+MethodInvocation:isMissing
+MethodInvocation:add
+MethodInvocation:withRange
+MethodInvocation:rowCount
+MethodInvocation:andNot
+MethodInvocation:emptyCopy
+MethodInvocation:size
+MethodInvocation:copyRowsToTable
+Method-name:select
+Method-returnType:Table
+Method-parameters:[Column<?>... columns]
+FieldAccess:name
+Method-name:select
+Method-returnType:Table
+Method-parameters:[String... columnNames]
+MethodInvocation:create
+FieldAccess:name
+MethodInvocation:toArray
+MethodInvocation:columns
+Method-name:removeColumns
+Method-returnType:Table
+Method-parameters:[Column<?>... columns]
+MethodInvocation:removeAll
+MethodInvocation:asList
+Method-name:removeColumnsWithMissingValues
+Method-returnType:Table
+Method-parameters:[]
+MethodInvocation:removeColumns
+MethodInvocation:toArray
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:countMissing
+Method-name:retainColumns
+Method-returnType:Table
+Method-parameters:[Column<?>... columns]
+MethodInvocation:asList
+MethodInvocation:clear
+MethodInvocation:addAll
+Method-name:retainColumns
+Method-returnType:Table
+Method-parameters:[String... columnNames]
+MethodInvocation:columns
+MethodInvocation:clear
+MethodInvocation:addAll
+Method-name:append
+Method-returnType:Table
+Method-parameters:[Table tableToAppend]
+MethodInvocation:column
+MethodInvocation:name
+MethodInvocation:append
+Method-name:appendRow
+Method-returnType:Row
+Method-parameters:[]
+MethodInvocation:appendMissing
+MethodInvocation:row
+MethodInvocation:rowCount
+Method-name:concat
+Method-returnType:Table
+Method-parameters:[Table tableToConcatenate]
+MethodInvocation:checkArgument
+MethodInvocation:rowCount
+MethodInvocation:rowCount
+MethodInvocation:columns
+MethodInvocation:addColumns
+Method-name:summarize
+Method-returnType:Summarizer
+Method-parameters:[String columName, AggregateFunction<?,?>... functions]
+MethodInvocation:summarize
+MethodInvocation:column
+Method-name:summarize
+Method-returnType:Summarizer
+Method-parameters:[List<String> columnNames, AggregateFunction<?,?>... functions]
+Method-name:summarize
+Method-returnType:Summarizer
+Method-parameters:[String numericColumn1Name, String numericColumn2Name, AggregateFunction<?,?>... functions]
+MethodInvocation:summarize
+MethodInvocation:column
+MethodInvocation:column
+Method-name:summarize
+Method-returnType:Summarizer
+Method-parameters:[String col1Name, String col2Name, String col3Name, AggregateFunction<?,?>... functions]
+MethodInvocation:summarize
+MethodInvocation:column
+MethodInvocation:column
+MethodInvocation:column
+Method-name:summarize
+Method-returnType:Summarizer
+Method-parameters:[String col1Name, String col2Name, String col3Name, String col4Name, AggregateFunction<?,?>... functions]
+MethodInvocation:summarize
+MethodInvocation:column
+MethodInvocation:column
+MethodInvocation:column
+MethodInvocation:column
+Method-name:summarize
+Method-returnType:Summarizer
+Method-parameters:[Column<?> numberColumn, AggregateFunction<?,?>... function]
+Method-name:summarize
+Method-returnType:Summarizer
+Method-parameters:[Column<?> column1, Column<?> column2, AggregateFunction<?,?>... function]
+Method-name:summarize
+Method-returnType:Summarizer
+Method-parameters:[Column<?> column1, Column<?> column2, Column<?> column3, AggregateFunction<?,?>... function]
+Method-name:summarize
+Method-returnType:Summarizer
+Method-parameters:[Column<?> column1, Column<?> column2, Column<?> column3, Column<?> column4, AggregateFunction<?,?>... function]
+Method-name:xTabCounts
+Method-returnType:Table
+Method-parameters:[String column1Name, String column2Name]
+MethodInvocation:counts
+MethodInvocation:categoricalColumn
+MethodInvocation:categoricalColumn
+Method-name:xTabRowPercents
+Method-returnType:Table
+Method-parameters:[String column1Name, String column2Name]
+MethodInvocation:rowPercents
+Method-name:xTabColumnPercents
+Method-returnType:Table
+Method-parameters:[String column1Name, String column2Name]
+MethodInvocation:columnPercents
+Method-name:xTabTablePercents
+Method-returnType:Table
+Method-parameters:[String column1Name, String column2Name]
+MethodInvocation:tablePercents
+Method-name:xTabPercents
+Method-returnType:Table
+Method-parameters:[String column1Name]
+MethodInvocation:percents
+Method-name:xTabCounts
+Method-returnType:Table
+Method-parameters:[String column1Name]
+MethodInvocation:counts
+Method-name:countBy
+Method-returnType:Table
+Method-parameters:[CategoricalColumn<?> groupingColumn]
+MethodInvocation:countByCategory
+Method-name:countBy
+Method-returnType:Table
+Method-parameters:[String categoricalColumnName]
+MethodInvocation:categoricalColumn
+MethodInvocation:countByCategory
+Method-name:joinOn
+Method-returnType:DataFrameJoiner
+Method-parameters:[String... columnNames]
+Method-name:missingValueCounts
+Method-returnType:Table
+Method-parameters:[]
+MethodInvocation:apply
+MethodInvocation:summarize
+MethodInvocation:columnNames
+Method-name:iterator
+Method-returnType:Iterator<Row>
+Method-parameters:[]
+Field:row
+Method-name:next
+Method-returnType:Row
+Method-parameters:[]
+MethodInvocation:next
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasNext
+Method-name:rollingIterator
+Method-returnType:Iterator<Row[]>
+Method-parameters:[int n]
+Field:currRow
+Method-name:next
+Method-returnType:Row[]
+Method-parameters:[]
+MethodInvocation:hasNext
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:rowCount
+Method-name:steppingIterator
+Method-returnType:Iterator<Row[]>
+Method-parameters:[int n]
+Field:currRow
+Method-name:next
+Method-returnType:Row[]
+Method-parameters:[]
+MethodInvocation:hasNext
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:rowCount
+Method-name:stream
+Method-returnType:Stream<Row>
+Method-parameters:[]
+MethodInvocation:stream
+MethodInvocation:iterator
+Method-name:steppingStream
+Method-returnType:Stream<Row[]>
+Method-parameters:[int n]
+MethodInvocation:stream
+MethodInvocation:steppingIterator
+Method-name:rollingStream
+Method-returnType:Stream<Row[]>
+Method-parameters:[int n]
+MethodInvocation:stream
+MethodInvocation:rollingIterator
+Method-name:transpose
+Method-returnType:Table
+Method-parameters:[]
+MethodInvocation:transpose
+Method-name:transpose
+Method-returnType:Table
+Method-parameters:[boolean includeColumnHeadingsAsFirstColumn, boolean useFirstColumnForHeadings]
+MethodInvocation:columnCount
+MethodInvocation:validateTableHasSingleColumnType
+MethodInvocation:create
+FieldAccess:name
+MethodInvocation:name
+MethodInvocation:column
+MethodInvocation:create
+MethodInvocation:columnCount
+MethodInvocation:column
+MethodInvocation:append
+MethodInvocation:name
+MethodInvocation:addColumns
+MethodInvocation:transpose
+MethodInvocation:valueOf
+MethodInvocation:get
+MethodInvocation:transpose
+MethodInvocation:valueOf
+MethodInvocation:columnCount
+Method-name:validateTableHasSingleColumnType
+Method-returnType:ColumnType
+Method-parameters:[int startingColumn]
+MethodInvocation:columnTypes
+MethodInvocation:count
+MethodInvocation:distinct
+MethodInvocation:skip
+MethodInvocation:stream
+Method-name:transpose
+Method-returnType:Table
+Method-parameters:[Table transposed, ColumnType resultColumnType, IntFunction<String> columnNameExtractor, int startingColumn]
+MethodInvocation:rowCount
+MethodInvocation:apply
+MethodInvocation:create
+MethodInvocation:columnCount
+MethodInvocation:append
+MethodInvocation:column
+MethodInvocation:addColumns
+Method-name:doWithRows
+Method-returnType:void
+Method-parameters:[Consumer<Row> doable]
+MethodInvocation:forEach
+MethodInvocation:stream
+Method-name:detect
+Method-returnType:boolean
+Method-parameters:[Predicate<Row> predicate]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+Method-name:stepWithRows
+Method-returnType:void
+Method-parameters:[Consumer<Row[]> rowConsumer, int n]
+MethodInvocation:forEach
+MethodInvocation:steppingStream
+Method-name:doWithRows
+Method-returnType:void
+Method-parameters:[Pairs pairs]
+MethodInvocation:forEach
+MethodInvocation:rollingStream
+MethodInvocation:doWithPair
+Method-name:doWithRowPairs
+Method-returnType:void
+Method-parameters:[Consumer<RowPair> pairConsumer]
+MethodInvocation:forEach
+MethodInvocation:rollingStream
+MethodInvocation:accept
+Method-name:rollWithRows
+Method-returnType:void
+Method-parameters:[Consumer<Row[]> rowConsumer, int n]
+MethodInvocation:forEach
+MethodInvocation:rollingStream
+Class:RowPair
+Field:first
+Field:second
+Method-name:RowPair
+Method-returnType:null
+Method-parameters:[Row first, Row second]
+FieldAccess:first
+FieldAccess:second
+Method-name:getFirst
+Method-returnType:Row
+Method-parameters:[]
+Method-name:getSecond
+Method-returnType:Row
+Method-parameters:[]
+Method-name:doWithPair
+Method-returnType:void
+Method-parameters:[Row row1, Row row2]
+Method-name:getResult
+Method-returnType:Object
+Method-parameters:[]

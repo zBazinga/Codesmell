@@ -1,0 +1,142 @@
+Class:AbstractAwsSigner
+Field:SHA256_MESSAGE_DIGEST
+MethodInvocation:withInitial
+MethodInvocation:getInstance
+MethodInvocation:build
+MethodInvocation:cause
+MethodInvocation:message
+MethodInvocation:builder
+MethodInvocation:getMessage
+Method-name:doHash
+Method-returnType:byte[]
+Method-parameters:[String text]
+MethodInvocation:getMessageDigestInstance
+MethodInvocation:update
+MethodInvocation:getBytes
+MethodInvocation:digest
+MethodInvocation:build
+MethodInvocation:cause
+MethodInvocation:message
+MethodInvocation:builder
+MethodInvocation:getMessage
+Method-name:getMessageDigestInstance
+Method-returnType:MessageDigest
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:reset
+Method-name:signAndBase64Encode
+Method-returnType:String
+Method-parameters:[String data, String key, SigningAlgorithm algorithm]
+MethodInvocation:signAndBase64Encode
+MethodInvocation:getBytes
+Method-name:signAndBase64Encode
+Method-returnType:String
+Method-parameters:[byte[] data, String key, SigningAlgorithm algorithm]
+MethodInvocation:sign
+MethodInvocation:getBytes
+MethodInvocation:toBase64
+MethodInvocation:build
+MethodInvocation:cause
+MethodInvocation:message
+MethodInvocation:builder
+MethodInvocation:getMessage
+Method-name:signWithMac
+Method-returnType:byte[]
+Method-parameters:[String stringData, Mac mac]
+MethodInvocation:doFinal
+MethodInvocation:getBytes
+MethodInvocation:build
+MethodInvocation:cause
+MethodInvocation:message
+MethodInvocation:builder
+MethodInvocation:getMessage
+Method-name:sign
+Method-returnType:byte[]
+Method-parameters:[String stringData, byte[] key, SigningAlgorithm algorithm]
+MethodInvocation:getBytes
+MethodInvocation:sign
+MethodInvocation:build
+MethodInvocation:cause
+MethodInvocation:message
+MethodInvocation:builder
+MethodInvocation:getMessage
+Method-name:hash
+Method-returnType:byte[]
+Method-parameters:[String text]
+MethodInvocation:doHash
+Method-name:hash
+Method-returnType:byte[]
+Method-parameters:[InputStream input]
+MethodInvocation:getMessageDigestInstance
+MethodInvocation:read
+MethodInvocation:digest
+MethodInvocation:getMessageDigest
+MethodInvocation:build
+MethodInvocation:cause
+MethodInvocation:message
+MethodInvocation:builder
+MethodInvocation:getMessage
+Method-name:hash
+Method-returnType:byte[]
+Method-parameters:[byte[] data]
+MethodInvocation:getMessageDigestInstance
+MethodInvocation:update
+MethodInvocation:digest
+MethodInvocation:build
+MethodInvocation:cause
+MethodInvocation:message
+MethodInvocation:builder
+MethodInvocation:getMessage
+Method-name:getCanonicalizedQueryString
+Method-returnType:String
+Method-parameters:[Map<String,List<String>> parameters]
+MethodInvocation:entrySet
+MethodInvocation:urlEncode
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:size
+MethodInvocation:urlEncode
+MethodInvocation:add
+MethodInvocation:sort
+MethodInvocation:put
+MethodInvocation:orElse
+MethodInvocation:flattenQueryParameters
+Method-name:getBinaryRequestPayloadStream
+Method-returnType:InputStream
+Method-parameters:[ContentStreamProvider streamProvider]
+MethodInvocation:newStream
+MethodInvocation:build
+MethodInvocation:cause
+MethodInvocation:message
+MethodInvocation:builder
+MethodInvocation:getMessage
+Method-name:getCanonicalizedResourcePath
+Method-returnType:String
+Method-parameters:[String resourcePath, boolean urlEncode]
+MethodInvocation:isEmpty
+MethodInvocation:urlEncodeIgnoreSlashes
+MethodInvocation:startsWith
+MethodInvocation:concat
+Method-name:getCanonicalizedEndpoint
+Method-returnType:String
+Method-parameters:[SdkHttpFullRequest request]
+MethodInvocation:lowerCase
+MethodInvocation:host
+MethodInvocation:isUsingStandardPort
+MethodInvocation:protocol
+MethodInvocation:port
+MethodInvocation:port
+Method-name:sanitizeCredentials
+Method-returnType:AwsCredentials
+Method-parameters:[AwsCredentials credentials]
+MethodInvocation:trim
+MethodInvocation:accessKeyId
+MethodInvocation:trim
+MethodInvocation:secretAccessKey
+MethodInvocation:create
+MethodInvocation:trim
+MethodInvocation:sessionToken
+MethodInvocation:create
+Method-name:addSessionCredentials
+Method-returnType:void
+Method-parameters:[SdkHttpFullRequest.Builder mutableRequest, AwsSessionCredentials credentials]

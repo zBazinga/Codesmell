@@ -1,0 +1,73 @@
+Class:EqlSession
+Field:client
+Field:configuration
+Field:indexResolver
+Field:preAnalyzer
+Field:analyzer
+Field:optimizer
+Field:planner
+Method-name:EqlSession
+Method-returnType:null
+Method-parameters:[Client client, EqlConfiguration cfg, IndexResolver indexResolver, PreAnalyzer preAnalyzer, FunctionRegistry functionRegistry, Verifier verifier, Optimizer optimizer, Planner planner, PlanExecutor planExecutor]
+FieldAccess:client
+MethodInvocation:getTaskId
+FieldAccess:configuration
+FieldAccess:indexResolver
+FieldAccess:preAnalyzer
+FieldAccess:analyzer
+FieldAccess:optimizer
+FieldAccess:planner
+Method-name:client
+Method-returnType:Client
+Method-parameters:[]
+Method-name:optimizer
+Method-returnType:Optimizer
+Method-parameters:[]
+Method-name:configuration
+Method-returnType:EqlConfiguration
+Method-parameters:[]
+Method-name:eql
+Method-returnType:void
+Method-parameters:[String eql, ParserParams params, ActionListener<Results> listener]
+MethodInvocation:eqlExecutable
+MethodInvocation:wrap
+MethodInvocation:execute
+Method-name:eqlExecutable
+Method-returnType:void
+Method-parameters:[String eql, ParserParams params, ActionListener<PhysicalPlan> listener]
+MethodInvocation:physicalPlan
+MethodInvocation:doParse
+MethodInvocation:onFailure
+Method-name:physicalPlan
+Method-returnType:void
+Method-parameters:[LogicalPlan optimized, ActionListener<PhysicalPlan> listener]
+MethodInvocation:optimizedPlan
+MethodInvocation:wrap
+MethodInvocation:onResponse
+MethodInvocation:plan
+Method-name:optimizedPlan
+Method-returnType:void
+Method-parameters:[LogicalPlan verified, ActionListener<LogicalPlan> listener]
+MethodInvocation:analyzedPlan
+MethodInvocation:wrap
+MethodInvocation:onResponse
+MethodInvocation:optimize
+Method-name:analyzedPlan
+Method-returnType:void
+Method-parameters:[LogicalPlan parsed, ActionListener<LogicalPlan> listener]
+MethodInvocation:analyzed
+MethodInvocation:onResponse
+MethodInvocation:preAnalyze
+MethodInvocation:wrap
+MethodInvocation:onResponse
+MethodInvocation:analyze
+Method-name:preAnalyze
+Method-returnType:void
+Method-parameters:[LogicalPlan parsed, ActionListener<LogicalPlan> listener]
+MethodInvocation:indexAsWildcard
+MethodInvocation:isCancelled
+MethodInvocation:resolveAsMergedMapping
+MethodInvocation:includeFrozen
+MethodInvocation:wrap
+MethodInvocation:onResponse
+MethodInvocation:preAnalyze

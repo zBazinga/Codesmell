@@ -1,0 +1,609 @@
+Class:Lattice
+Field:rootSchema
+Field:rootNode
+Field:columns
+Field:auto
+Field:algorithm
+Field:algorithmMaxMillis
+Field:rowCountEstimate
+Field:defaultMeasures
+Field:tiles
+Field:columnUses
+Field:statisticProvider
+Method-name:Lattice
+Method-returnType:null
+Method-parameters:[CalciteSchema rootSchema, LatticeRootNode rootNode, boolean auto, boolean algorithm, long algorithmMaxMillis, LatticeStatisticProvider.Factory statisticProviderFactory, @Nullable Double rowCountEstimate, ImmutableList<Column> columns, ImmutableSortedSet<Measure> defaultMeasures, ImmutableList<Tile> tiles, ImmutableListMultimap<Integer,Boolean> columnUses]
+Method-name:create
+Method-returnType:Lattice
+Method-parameters:[CalciteSchema schema, String sql, boolean auto]
+MethodInvocation:build
+MethodInvocation:auto
+MethodInvocation:builder
+Method-name:isValid
+Method-returnType:boolean
+Method-parameters:[Litmus litmus]
+MethodInvocation:isValid
+MethodInvocation:get
+MethodInvocation:fail
+MethodInvocation:succeed
+Method-name:populateAliases
+Method-returnType:void
+Method-parameters:[SqlNode from, List<String> aliases, @Nullable String current]
+MethodInvocation:populateAliases
+MethodInvocation:getLeft
+MethodInvocation:populateAliases
+MethodInvocation:getRight
+MethodInvocation:getKind
+MethodInvocation:populateAliases
+MethodInvocation:stripAs
+MethodInvocation:getAlias
+MethodInvocation:getAlias
+MethodInvocation:add
+Method-name:populate
+Method-returnType:boolean
+Method-parameters:[List<RelNode> nodes, List<int[][]> tempLinks, RelNode rel]
+MethodInvocation:isEmpty
+MethodInvocation:populate
+MethodInvocation:getInput
+MethodInvocation:add
+MethodInvocation:isOuterJoin
+MethodInvocation:getJoinType
+MethodInvocation:getJoinType
+MethodInvocation:populate
+MethodInvocation:getLeft
+MethodInvocation:populate
+MethodInvocation:getRight
+MethodInvocation:conjunctions
+MethodInvocation:getCondition
+MethodInvocation:add
+MethodInvocation:grab
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:grab
+Method-returnType:int[][]
+Method-parameters:[List<RelNode> leaves, RexNode rex]
+MethodInvocation:getKind
+MethodInvocation:getOperands
+MethodInvocation:inputField
+MethodInvocation:get
+MethodInvocation:inputField
+MethodInvocation:get
+Method-name:inputField
+Method-returnType:int[]
+Method-parameters:[List<RelNode> leaves, RexNode rex]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getIndex
+MethodInvocation:getIndex
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:sql
+Method-returnType:String
+Method-parameters:[ImmutableBitSet groupSet, List<Measure> aggCallList]
+MethodInvocation:sql
+Method-name:sql
+Method-returnType:String
+Method-parameters:[ImmutableBitSet groupSet, boolean group, List<Measure> aggCallList]
+MethodInvocation:rebuild
+MethodInvocation:set
+MethodInvocation:build
+MethodInvocation:intersects
+MethodInvocation:range
+MethodInvocation:use
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:addAll
+MethodInvocation:getDialect
+MethodInvocation:createSqlWriter
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:get
+MethodInvocation:toSql
+MethodInvocation:toSql
+MethodInvocation:with
+MethodInvocation:add
+FieldAccess:column
+MethodInvocation:equals
+MethodInvocation:defaultAlias
+MethodInvocation:append
+MethodInvocation:quoteIdentifier
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getName
+MethodInvocation:isEmpty
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toSql
+MethodInvocation:append
+MethodInvocation:add
+MethodInvocation:quoteIdentifier
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:quoteIdentifier
+MethodInvocation:getQualifiedName
+MethodInvocation:append
+MethodInvocation:quoteIdentifier
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:get
+MethodInvocation:toSql
+MethodInvocation:append
+MethodInvocation:get
+MethodInvocation:toSql
+MethodInvocation:value
+MethodInvocation:println
+MethodInvocation:isEmpty
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:createSqlWriter
+Method-returnType:SqlWriter
+Method-parameters:[SqlDialect dialect, StringBuilder buf, IntFunction<SqlNode> field]
+Method-name:countSql
+Method-returnType:String
+Method-parameters:[ImmutableBitSet groupSet]
+MethodInvocation:sql
+MethodInvocation:of
+Method-name:createStarTable
+Method-returnType:StarTable
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:unwrap
+MethodInvocation:of
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[CalciteSchema calciteSchema, String sql]
+MethodInvocation:builder
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[LatticeSpace space, CalciteSchema calciteSchema, String sql]
+Method-name:toMeasures
+Method-returnType:List<Measure>
+Method-parameters:[List<AggregateCall> aggCallList]
+MethodInvocation:transform
+Method-name:toMeasure
+Method-returnType:Measure
+Method-parameters:[AggregateCall aggCall]
+MethodInvocation:getAggregation
+MethodInvocation:isDistinct
+MethodInvocation:transform
+MethodInvocation:getArgList
+Method-name:computeTiles
+Method-returnType:Iterable<? extends Tile>
+Method-parameters:[]
+MethodInvocation:tiles
+Method-name:getFactRowCount
+Method-returnType:double
+Method-parameters:[]
+Method-name:getRowCount
+Method-returnType:double
+Method-parameters:[List<Column> columns]
+MethodInvocation:cardinality
+Method-name:getRowCount
+Method-returnType:double
+Method-parameters:[double factCount, double... columnCounts]
+MethodInvocation:getRowCount
+MethodInvocation:asList
+Method-name:getRowCount
+Method-returnType:double
+Method-parameters:[double factCount, List<Double> columnCounts]
+MethodInvocation:pow
+MethodInvocation:min
+Method-name:uniqueColumnNames
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:transform
+Method-name:columnToPathOffset
+Method-returnType:Pair<Path,Integer>
+Method-parameters:[BaseColumn c]
+MethodInvocation:zip
+MethodInvocation:equals
+MethodInvocation:of
+Method-name:tables
+Method-returnType:Set<LatticeTable>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toCollection
+Method-name:firstColumn
+Method-returnType:int
+Method-parameters:[String tableAlias]
+MethodInvocation:equals
+FieldAccess:table
+Method-name:isAlwaysMeasure
+Method-returnType:boolean
+Method-parameters:[Column column]
+MethodInvocation:contains
+MethodInvocation:get
+Class:Edge
+Field:FACTORY
+Field:pairs
+Method-name:Edge
+Method-returnType:null
+Method-parameters:[Vertex source, Vertex target]
+Method-name:getTarget
+Method-returnType:Vertex
+Method-parameters:[]
+Method-name:getSource
+Method-returnType:Vertex
+Method-parameters:[]
+Class:Vertex
+Field:table
+Field:alias
+Method-name:Vertex
+Method-returnType:null
+Method-parameters:[LatticeTable table, String alias]
+FieldAccess:table
+FieldAccess:alias
+Class:Measure
+Field:agg
+Field:distinct
+Field:name
+Field:args
+Field:digest
+Method-name:Measure
+Method-returnType:null
+Method-parameters:[SqlAggFunction agg, boolean distinct, @Nullable String name, Iterable<Column> args]
+FieldAccess:agg
+MethodInvocation:requireNonNull
+FieldAccess:distinct
+FieldAccess:name
+FieldAccess:args
+MethodInvocation:copyOf
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:zip
+FieldAccess:args
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:table
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:column
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:digest
+MethodInvocation:toString
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[@Nonnull Measure measure]
+MethodInvocation:compare
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:compare
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+FieldAccess:agg
+FieldAccess:agg
+MethodInvocation:equals
+FieldAccess:args
+FieldAccess:args
+FieldAccess:distinct
+FieldAccess:distinct
+Method-name:argBitSet
+Method-returnType:ImmutableBitSet
+Method-parameters:[]
+MethodInvocation:builder
+MethodInvocation:set
+MethodInvocation:build
+Method-name:argOrdinals
+Method-returnType:List<Integer>
+Method-parameters:[]
+MethodInvocation:transform
+Method-name:compare
+Method-returnType:int
+Method-parameters:[List<Column> list0, List<Column> list1]
+MethodInvocation:min
+MethodInvocation:size
+MethodInvocation:size
+FieldAccess:ordinal
+MethodInvocation:get
+FieldAccess:ordinal
+MethodInvocation:get
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:size
+MethodInvocation:size
+Method-name:copy
+Method-returnType:Measure
+Method-parameters:[Function<Column,Column> mapper]
+MethodInvocation:transform
+Class:Column
+Field:ordinal
+Field:alias
+Method-name:Column
+Method-returnType:null
+Method-parameters:[int ordinal, String alias]
+FieldAccess:ordinal
+FieldAccess:alias
+MethodInvocation:requireNonNull
+Method-name:toBitSet
+Method-returnType:ImmutableBitSet
+Method-parameters:[List<Column> columns]
+MethodInvocation:builder
+MethodInvocation:set
+MethodInvocation:build
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[Column column]
+MethodInvocation:compare
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+FieldAccess:ordinal
+FieldAccess:ordinal
+Method-name:toSql
+Method-returnType:void
+Method-parameters:[SqlWriter writer]
+Method-name:defaultAlias
+Method-returnType:String
+Method-parameters:[]
+Class:BaseColumn
+Field:table
+Field:column
+Method-name:BaseColumn
+Method-returnType:null
+Method-parameters:[int ordinal, String table, String column, String alias]
+FieldAccess:table
+MethodInvocation:requireNonNull
+FieldAccess:column
+MethodInvocation:requireNonNull
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+MethodInvocation:identifiers
+Method-name:identifiers
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:of
+Method-name:toSql
+Method-returnType:void
+Method-parameters:[SqlWriter writer]
+MethodInvocation:quoteIdentifier
+MethodInvocation:identifiers
+Method-name:defaultAlias
+Method-returnType:String
+Method-parameters:[]
+Class:DerivedColumn
+Field:e
+Field:tables
+Method-name:DerivedColumn
+Method-returnType:null
+Method-parameters:[int ordinal, String alias, RexNode e, List<String> tables]
+FieldAccess:e
+FieldAccess:tables
+MethodInvocation:copyOf
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:toSql
+Method-returnType:void
+Method-parameters:[SqlWriter writer]
+MethodInvocation:write
+Method-name:defaultAlias
+Method-returnType:String
+Method-parameters:[]
+Class:SqlWriter
+Field:lattice
+Field:buf
+Field:dialect
+Field:context
+Method-name:SqlWriter
+Method-returnType:null
+Method-parameters:[Lattice lattice, SqlDialect dialect, StringBuilder buf, SqlImplementor.SimpleContext context]
+FieldAccess:lattice
+FieldAccess:context
+FieldAccess:buf
+FieldAccess:dialect
+Method-name:with
+Method-returnType:SqlWriter
+Method-parameters:[StringBuilder buf]
+Method-name:write
+Method-returnType:SqlWriter
+Method-parameters:[RexNode e]
+MethodInvocation:toSql
+MethodInvocation:append
+MethodInvocation:toSqlString
+Class:Builder
+Field:rootNode
+Field:baseColumns
+Field:columnsByAlias
+Field:defaultMeasureSet
+Field:tileListBuilder
+MethodInvocation:builder
+Field:columnUses
+MethodInvocation:create
+Field:rootSchema
+Field:algorithm
+Field:algorithmMaxMillis
+Field:auto
+Field:rowCountEstimate
+Field:statisticProvider
+Field:derivedColumnsByName
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[LatticeSpace space, CalciteSchema schema, String sql]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[LatticeSpace space, CalciteSchema schema, MutableNode mutableNode]
+FieldAccess:rootSchema
+MethodInvocation:fixUp
+MethodInvocation:get
+MethodInvocation:put
+FieldAccess:rootNode
+MethodInvocation:build
+MethodInvocation:build
+Method-name:auto
+Method-returnType:Builder
+Method-parameters:[boolean auto]
+FieldAccess:auto
+Method-name:algorithm
+Method-returnType:Builder
+Method-parameters:[boolean algorithm]
+FieldAccess:algorithm
+Method-name:algorithmMaxMillis
+Method-returnType:Builder
+Method-parameters:[long algorithmMaxMillis]
+FieldAccess:algorithmMaxMillis
+Method-name:rowCountEstimate
+Method-returnType:Builder
+Method-parameters:[double rowCountEstimate]
+FieldAccess:rowCountEstimate
+Method-name:statisticProvider
+Method-returnType:Builder
+Method-parameters:[String statisticProvider]
+FieldAccess:statisticProvider
+Method-name:build
+Method-returnType:Lattice
+Method-parameters:[]
+FieldAccess:statisticProvider
+MethodInvocation:instantiatePlugin
+FieldAccess:statisticProvider
+MethodInvocation:checkArgument
+MethodInvocation:isRoot
+MethodInvocation:addAll
+MethodInvocation:addAll
+MethodInvocation:builder
+MethodInvocation:values
+MethodInvocation:build
+MethodInvocation:copyOf
+MethodInvocation:build
+MethodInvocation:copyOf
+Method-name:resolveArgs
+Method-returnType:ImmutableList<Column>
+Method-parameters:[@Nullable Object args]
+MethodInvocation:of
+MethodInvocation:of
+MethodInvocation:resolveColumnByAlias
+MethodInvocation:builder
+MethodInvocation:add
+MethodInvocation:resolveColumnByAlias
+MethodInvocation:build
+Method-name:resolveColumnByAlias
+Method-returnType:Column
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+Method-name:resolveColumn
+Method-returnType:Column
+Method-parameters:[Object name]
+MethodInvocation:resolveColumnByAlias
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:resolveColumnByAlias
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:resolveQualifiedColumn
+Method-name:resolveQualifiedColumn
+Method-returnType:Column
+Method-parameters:[String table, String column]
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:resolveMeasure
+Method-returnType:Measure
+Method-parameters:[String aggName, boolean distinct, @Nullable Object args]
+MethodInvocation:resolveAgg
+MethodInvocation:resolveArgs
+Method-name:resolveAgg
+Method-returnType:SqlAggFunction
+Method-parameters:[String aggName]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+Method-name:addMeasure
+Method-returnType:boolean
+Method-parameters:[Measure measure]
+MethodInvocation:add
+Method-name:addTile
+Method-returnType:void
+Method-parameters:[Tile tile]
+MethodInvocation:add
+Method-name:column
+Method-returnType:Column
+Method-parameters:[int table, int column]
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:get
+Method-name:pathOffsetToColumn
+Method-returnType:Column
+Method-parameters:[Path path, int offset]
+MethodInvocation:indexOf
+MethodInvocation:get
+MethodInvocation:get
+Method-name:expression
+Method-returnType:Column
+Method-parameters:[RexNode e, String alias, List<String> tableAliases]
+MethodInvocation:computeIfAbsent
+MethodInvocation:toString
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:first
+Method-name:use
+Method-returnType:void
+Method-parameters:[Column column, boolean measure]
+MethodInvocation:put
+Class:Fixer
+Field:aliases
+Field:columnAliases
+Field:seen
+Field:columnList
+MethodInvocation:builder
+Field:columnAliasList
+MethodInvocation:builder
+Field:c
+Method-name:fixUp
+Method-returnType:void
+Method-parameters:[MutableNode node]
+Class:Tile
+Field:measures
+Field:dimensions
+Field:bitSet
+Method-name:Tile
+Method-returnType:null
+Method-parameters:[ImmutableList<Measure> measures, ImmutableList<Column> dimensions]
+Method-name:builder
+Method-returnType:TileBuilder
+Method-parameters:[]
+Method-name:bitSet
+Method-returnType:ImmutableBitSet
+Method-parameters:[]
+Class:TileBuilder
+Field:measureBuilder
+Field:dimensionListBuilder
+Method-name:build
+Method-returnType:Tile
+Method-parameters:[]
+MethodInvocation:immutableSortedCopy
+MethodInvocation:natural
+MethodInvocation:immutableSortedCopy
+MethodInvocation:natural
+Method-name:addMeasure
+Method-returnType:void
+Method-parameters:[Measure measure]
+MethodInvocation:add
+Method-name:addDimension
+Method-returnType:void
+Method-parameters:[Column column]
+MethodInvocation:add

@@ -1,0 +1,29 @@
+Class:GenericApiGatewayResponse
+Field:httpResponse
+Field:body
+Method-name:GenericApiGatewayResponse
+Method-returnType:null
+Method-parameters:[HttpResponse httpResponse]
+FieldAccess:httpResponse
+MethodInvocation:getContent
+FieldAccess:body
+MethodInvocation:toString
+MethodInvocation:getContent
+FieldAccess:body
+Method-name:getHttpResponse
+Method-returnType:HttpResponse
+Method-parameters:[]
+Method-name:getBody
+Method-returnType:String
+Method-parameters:[]
+Method-name:convertAttributesFromHeaders
+Method-returnType:Map<String,String>
+Method-parameters:[AbstractAWSGatewayApiProcessor abstractAWSGatewayApiProcessor]
+MethodInvocation:forEach
+MethodInvocation:entrySet
+MethodInvocation:getHeaders
+MethodInvocation:getHttpResponse
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:isBlank
+MethodInvocation:put

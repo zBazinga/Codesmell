@@ -1,0 +1,162 @@
+Class:BlobStore
+Field:LOG
+MethodInvocation:getLogger
+Field:KEY_PATTERN
+MethodInvocation:compile
+Field:BASE_BLOBS_DIR_NAME
+Method-name:prepare
+Method-returnType:void
+Method-parameters:[Map conf, String baseDir, NimbusInfo nimbusInfo]
+Method-name:createBlob
+Method-returnType:AtomicOutputStream
+Method-parameters:[String key, SettableBlobMeta meta]
+Method-name:updateBlob
+Method-returnType:AtomicOutputStream
+Method-parameters:[String key]
+Method-name:getBlobMeta
+Method-returnType:ReadableBlobMeta
+Method-parameters:[String key]
+Method-name:setBlobMeta
+Method-returnType:void
+Method-parameters:[String key, SettableBlobMeta meta]
+Method-name:deleteBlob
+Method-returnType:void
+Method-parameters:[String key]
+Method-name:getBlob
+Method-returnType:InputStreamWithMeta
+Method-parameters:[String key]
+Method-name:listKeys
+Method-returnType:Iterator<String>
+Method-parameters:[]
+Method-name:getBlobReplication
+Method-returnType:int
+Method-parameters:[String key]
+Method-name:updateBlobReplication
+Method-returnType:int
+Method-parameters:[String key, int replication]
+Method-name:validateKey
+Method-returnType:void
+Method-parameters:[String key]
+MethodInvocation:isEmpty
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:matches
+MethodInvocation:matcher
+MethodInvocation:error
+Method-name:createBlob
+Method-returnType:void
+Method-parameters:[String key, InputStream in, SettableBlobMeta meta]
+MethodInvocation:createBlob
+MethodInvocation:read
+MethodInvocation:write
+MethodInvocation:close
+MethodInvocation:cancel
+MethodInvocation:close
+Method-name:readBlobTo
+Method-returnType:void
+Method-parameters:[String key, OutputStream out]
+MethodInvocation:getBlob
+MethodInvocation:read
+MethodInvocation:write
+MethodInvocation:close
+MethodInvocation:flush
+Method-name:readBlob
+Method-returnType:byte[]
+Method-parameters:[String key]
+MethodInvocation:readBlobTo
+MethodInvocation:toByteArray
+MethodInvocation:close
+Class:BlobStoreFileOutputStream
+Field:part
+Field:out
+Method-name:BlobStoreFileOutputStream
+Method-returnType:null
+Method-parameters:[BlobStoreFile part]
+FieldAccess:part
+FieldAccess:out
+MethodInvocation:getOutputStream
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+MethodInvocation:commit
+MethodInvocation:cancel
+Method-name:cancel
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+MethodInvocation:cancel
+Method-name:write
+Method-returnType:void
+Method-parameters:[int b]
+MethodInvocation:write
+Method-name:write
+Method-returnType:void
+Method-parameters:[byte[] b]
+MethodInvocation:write
+Method-name:write
+Method-returnType:void
+Method-parameters:[byte[] b, int offset, int len]
+MethodInvocation:write
+Class:BlobStoreFileInputStream
+Field:part
+Field:in
+Method-name:BlobStoreFileInputStream
+Method-returnType:null
+Method-parameters:[BlobStoreFile part]
+FieldAccess:part
+FieldAccess:in
+MethodInvocation:getInputStream
+Method-name:getVersion
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getModTime
+Method-name:read
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:read
+Method-name:read
+Method-returnType:int
+Method-parameters:[byte[] b, int off, int len]
+MethodInvocation:read
+Method-name:read
+Method-returnType:int
+Method-parameters:[byte[] b]
+MethodInvocation:read
+Method-name:available
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:available
+Method-name:getFileLength
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getFileLength
+Class:KeyTranslationIterator
+Field:it
+Field:next
+Field:prefix
+Method-name:KeyTranslationIterator
+Method-returnType:null
+Method-parameters:[Iterator<String> it, String prefix]
+FieldAccess:it
+FieldAccess:prefix
+MethodInvocation:primeNext
+Method-name:primeNext
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:startsWith
+MethodInvocation:substring
+MethodInvocation:length
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:next
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:hasNext
+MethodInvocation:primeNext
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]

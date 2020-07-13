@@ -1,0 +1,316 @@
+Class:LastOpenedList
+Class:RecentFile
+Method-name:RecentFile
+Method-returnType:null
+Method-parameters:[String restorable]
+FieldAccess:restorable
+Field:restorable
+Field:lastVisitedNodeId
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Field:LAST_OPENED_LIST_LENGTH
+Field:LAST_OPENED
+Field:LAST_LOCATIONS
+Field:PORTABLE_APP
+MethodInvocation:equals
+MethodInvocation:getProperty
+Field:USER_DRIVE
+MethodInvocation:substring
+MethodInvocation:getProperty
+Field:lastOpenedList
+Field:mapSelectedOnStart
+Method-name:LastOpenedList
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:restore
+Method-name:registerMenuContributor
+Method-returnType:void
+Method-parameters:[final ModeController modeController]
+MethodInvocation:addUiBuilder
+Method-name:visit
+Method-returnType:void
+Method-parameters:[Entry target]
+MethodInvocation:updateMenusOther
+Method-name:shouldSkipChildren
+Method-returnType:boolean
+Method-parameters:[Entry entry]
+Method-name:afterViewChange
+Method-returnType:void
+Method-parameters:[final Component oldView, final Component newView]
+MethodInvocation:updateMenus
+MethodInvocation:getMapModel
+MethodInvocation:getRestoreable
+MethodInvocation:updateList
+Method-name:afterViewClose
+Method-returnType:void
+Method-parameters:[final Component oldView]
+MethodInvocation:updateLastVisitedNodeId
+Method-name:selectLastVisitedNode
+Method-returnType:boolean
+Method-parameters:[RecentFile recentFile]
+MethodInvocation:getMap
+MethodInvocation:getCurrentController
+MethodInvocation:getNodeForID
+MethodInvocation:hasVisibleContent
+MethodInvocation:getSelection
+MethodInvocation:getCurrentController
+MethodInvocation:isSelected
+MethodInvocation:getRootNode
+MethodInvocation:selectAsTheOnlyOneSelected
+Method-name:saveLastPositionInMapEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanProperty
+MethodInvocation:getResourceController
+Method-name:afterViewCreated
+Method-returnType:void
+Method-parameters:[final Component mapView]
+MethodInvocation:getMapModel
+MethodInvocation:findRecentFileByMapModel
+MethodInvocation:saveLastPositionInMapEnabled
+MethodInvocation:selectLastVisitedNode
+MethodInvocation:ensureSelectLastVisitedNodeOnOpen
+Method-name:ensureSelectLastVisitedNodeOnOpen
+Method-returnType:void
+Method-parameters:[final MapModel map, final RecentFile recentFile]
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+MethodInvocation:addNodeSelectionListener
+Method-name:onSelect
+Method-returnType:void
+Method-parameters:[NodeModel node]
+MethodInvocation:get
+MethodInvocation:removeNodeSelectionListener
+MethodInvocation:getMap
+MethodInvocation:removeNodeSelectionListener
+MethodInvocation:getNodeForID
+MethodInvocation:isRoot
+MethodInvocation:selectAsTheOnlyOneSelected
+MethodInvocation:getSelection
+MethodInvocation:getCurrentController
+Method-name:onDeselect
+Method-returnType:void
+Method-parameters:[NodeModel node]
+Method-name:getMapModel
+Method-returnType:MapModel
+Method-parameters:[final Component mapView]
+MethodInvocation:getMapViewManager
+MethodInvocation:getCurrentController
+MethodInvocation:getModel
+Method-name:beforeViewChange
+Method-returnType:void
+Method-parameters:[final Component oldView, final Component newView]
+Method-name:getMaxMenuEntries
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getIntProperty
+MethodInvocation:getResourceController
+Method-name:getRestorable
+Method-returnType:String
+Method-parameters:[final File file]
+MethodInvocation:doPrivileged
+Method-name:run
+Method-returnType:Boolean
+Method-parameters:[]
+MethodInvocation:exists
+MethodInvocation:getAbsolutePath
+MethodInvocation:endsWith
+MethodInvocation:substring
+MethodInvocation:equals
+MethodInvocation:substring
+Method-name:getRestoreable
+Method-returnType:String
+Method-parameters:[final MapModel map]
+MethodInvocation:containsExtension
+MethodInvocation:getCurrentModeController
+MethodInvocation:equals
+MethodInvocation:getModeName
+MethodInvocation:getFile
+MethodInvocation:getRestorable
+Method-name:mapChanged
+Method-returnType:void
+Method-parameters:[final MapChangeEvent event]
+MethodInvocation:equals
+MethodInvocation:getProperty
+MethodInvocation:getNewValue
+MethodInvocation:getFile
+MethodInvocation:getRestorable
+MethodInvocation:updateList
+MethodInvocation:getMap
+Method-name:onNodeDeleted
+Method-returnType:void
+Method-parameters:[NodeDeletionEvent nodeDeletionEvent]
+Method-name:onNodeInserted
+Method-returnType:void
+Method-parameters:[final NodeModel parent, final NodeModel child, final int newIndex]
+Method-name:onNodeMoved
+Method-returnType:void
+Method-parameters:[NodeMoveEvent nodeMoveEvent]
+Method-name:onPreNodeDelete
+Method-returnType:void
+Method-parameters:[NodeDeletionEvent nodeDeletionEvent]
+Method-name:open
+Method-returnType:void
+Method-parameters:[final RecentFile recentFile]
+MethodInvocation:hasMoreTokens
+MethodInvocation:nextToken
+MethodInvocation:selectMode
+MethodInvocation:getCurrentController
+MethodInvocation:createFileFromRestorable
+MethodInvocation:fileToUrl
+MethodInvocation:tryToChangeToMapView
+MethodInvocation:openMap
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+Method-name:createFileFromRestorable
+Method-returnType:File
+Method-parameters:[StringTokenizer tokens]
+MethodInvocation:substring
+MethodInvocation:nextToken
+MethodInvocation:startsWith
+MethodInvocation:endsWith
+MethodInvocation:substring
+Method-name:openLastMapOnStart
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:safeOpen
+Method-name:restore
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getListPropertyNotNull
+MethodInvocation:getListPropertyNotNull
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:isEmpty
+MethodInvocation:get
+Method-name:getListPropertyNotNull
+Method-returnType:List<String>
+Method-parameters:[String key]
+MethodInvocation:getProperty
+MethodInvocation:getResourceController
+MethodInvocation:decodeListValue
+Method-name:safeOpen
+Method-returnType:void
+Method-parameters:[final RecentFile recentFile]
+MethodInvocation:open
+MethodInvocation:warn
+MethodInvocation:format
+MethodInvocation:showFrame
+MethodInvocation:getMenuComponent
+MethodInvocation:showConfirmDialog
+MethodInvocation:remove
+MethodInvocation:updateMenus
+Method-name:saveProperties
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:updateLastVisitedNodeIds
+MethodInvocation:setProperty
+MethodInvocation:getResourceController
+MethodInvocation:encodeListValue
+MethodInvocation:getRestoreables
+MethodInvocation:setProperty
+MethodInvocation:getResourceController
+MethodInvocation:encodeListValue
+MethodInvocation:getLastVisitedNodeIds
+Method-name:updateLastVisitedNodeIds
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getMapViewVector
+MethodInvocation:getMapViewManager
+MethodInvocation:getCurrentController
+MethodInvocation:updateLastVisitedNodeId
+Method-name:updateLastVisitedNodeId
+Method-returnType:void
+Method-parameters:[final Component mapView]
+MethodInvocation:getSelected
+MethodInvocation:findRecentFileByMapModel
+MethodInvocation:getMapModel
+MethodInvocation:getModel
+MethodInvocation:isRoot
+MethodInvocation:getID
+Method-name:findRecentFileByRestorable
+Method-returnType:RecentFile
+Method-parameters:[String restorable]
+MethodInvocation:equals
+Method-name:findRecentFileByMapModel
+Method-returnType:RecentFile
+Method-parameters:[final MapModel map]
+MethodInvocation:findRecentFileByRestorable
+MethodInvocation:getRestoreable
+Method-name:getRestoreables
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:add
+Method-name:getLastVisitedNodeIds
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:add
+Method-name:tryToChangeToMapView
+Method-returnType:boolean
+Method-parameters:[URL url]
+MethodInvocation:tryToChangeToMapView
+MethodInvocation:getMapViewManager
+MethodInvocation:getCurrentController
+MethodInvocation:warn
+Method-name:updateList
+Method-returnType:void
+Method-parameters:[final MapModel map, final String restoreString]
+MethodInvocation:containsExtension
+MethodInvocation:findRecentFileByRestorable
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:updateMenus
+Method-name:updateMenus
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getUserInputListenerFactory
+MethodInvocation:getCurrentModeController
+MethodInvocation:rebuildMenus
+Method-name:createOpenLastMapActionList
+Method-returnType:List<AFreeplaneAction>
+Method-parameters:[]
+MethodInvocation:getCurrentController
+MethodInvocation:getModeController
+MethodInvocation:getMaxMenuEntries
+MethodInvocation:equals
+MethodInvocation:getModeName
+MethodInvocation:getMap
+MethodInvocation:getURL
+MethodInvocation:getMap
+MethodInvocation:createOpenMapItemName
+MethodInvocation:add
+Method-name:createOpenMapItemName
+Method-returnType:void
+Method-parameters:[AFreeplaneAction openMapAction, final String restorable]
+MethodInvocation:indexOf
+MethodInvocation:putValue
+MethodInvocation:substring
+MethodInvocation:substring
+MethodInvocation:getText
+MethodInvocation:putValue
+MethodInvocation:putValue
+MethodInvocation:startsWith
+MethodInvocation:substring
+MethodInvocation:substring
+MethodInvocation:putValue
+Method-name:onPreNodeMoved
+Method-returnType:void
+Method-parameters:[NodeMoveEvent nodeMoveEvent]

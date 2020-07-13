@@ -1,0 +1,304 @@
+Class:PersistentTasksClusterService
+Field:CLUSTER_TASKS_ALLOCATION_RECHECK_INTERVAL_SETTING
+MethodInvocation:timeSetting
+MethodInvocation:timeValueSeconds
+MethodInvocation:timeValueSeconds
+Field:logger
+MethodInvocation:getLogger
+Field:clusterService
+Field:registry
+Field:decider
+Field:threadPool
+Field:periodicRechecker
+Method-name:PersistentTasksClusterService
+Method-returnType:null
+Method-parameters:[Settings settings, PersistentTasksExecutorRegistry registry, ClusterService clusterService, ThreadPool threadPool]
+FieldAccess:clusterService
+FieldAccess:registry
+FieldAccess:decider
+MethodInvocation:getClusterSettings
+FieldAccess:threadPool
+FieldAccess:periodicRechecker
+MethodInvocation:get
+MethodInvocation:addListener
+MethodInvocation:addSettingsUpdateConsumer
+MethodInvocation:getClusterSettings
+Method-name:setRecheckInterval
+Method-returnType:void
+Method-parameters:[TimeValue recheckInterval]
+MethodInvocation:setInterval
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+Method-name:createPersistentTask
+Method-returnType:void
+Method-parameters:[String taskId, String taskName, Params taskParams, ActionListener<PersistentTask<?>> listener]
+MethodInvocation:submitStateUpdateTask
+Method-name:execute
+Method-returnType:ClusterState
+Method-parameters:[ClusterState currentState]
+MethodInvocation:builder
+MethodInvocation:hasTask
+MethodInvocation:getPersistentTaskExecutorSafe
+MethodInvocation:validate
+MethodInvocation:createAssignment
+MethodInvocation:update
+MethodInvocation:addTask
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[String source, Exception e]
+MethodInvocation:onFailure
+Method-name:clusterStateProcessed
+Method-returnType:void
+Method-parameters:[String source, ClusterState oldState, ClusterState newState]
+MethodInvocation:custom
+MethodInvocation:getMetadata
+MethodInvocation:getTask
+MethodInvocation:onResponse
+MethodInvocation:isAssigned
+MethodInvocation:isScheduled
+MethodInvocation:rescheduleIfNecessary
+MethodInvocation:onResponse
+Method-name:completePersistentTask
+Method-returnType:void
+Method-parameters:[String id, long allocationId, Exception failure, ActionListener<PersistentTask<?>> listener]
+MethodInvocation:warn
+MethodInvocation:submitStateUpdateTask
+Method-name:execute
+Method-returnType:ClusterState
+Method-parameters:[ClusterState currentState]
+MethodInvocation:builder
+MethodInvocation:hasTask
+MethodInvocation:removeTask
+MethodInvocation:update
+MethodInvocation:hasTask
+MethodInvocation:warn
+MethodInvocation:getTaskName
+MethodInvocation:getTaskWithId
+MethodInvocation:warn
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[String source, Exception e]
+MethodInvocation:onFailure
+Method-name:clusterStateProcessed
+Method-returnType:void
+Method-parameters:[String source, ClusterState oldState, ClusterState newState]
+MethodInvocation:onResponse
+MethodInvocation:getTaskWithId
+Method-name:removePersistentTask
+Method-returnType:void
+Method-parameters:[String id, ActionListener<PersistentTask<?>> listener]
+MethodInvocation:submitStateUpdateTask
+Method-name:execute
+Method-returnType:ClusterState
+Method-parameters:[ClusterState currentState]
+MethodInvocation:builder
+MethodInvocation:hasTask
+MethodInvocation:update
+MethodInvocation:removeTask
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[String source, Exception e]
+MethodInvocation:onFailure
+Method-name:clusterStateProcessed
+Method-returnType:void
+Method-parameters:[String source, ClusterState oldState, ClusterState newState]
+MethodInvocation:onResponse
+MethodInvocation:getTaskWithId
+Method-name:updatePersistentTaskState
+Method-returnType:void
+Method-parameters:[final String taskId, final long taskAllocationId, final PersistentTaskState taskState, final ActionListener<PersistentTask<?>> listener]
+MethodInvocation:submitStateUpdateTask
+Method-name:execute
+Method-returnType:ClusterState
+Method-parameters:[ClusterState currentState]
+MethodInvocation:builder
+MethodInvocation:hasTask
+MethodInvocation:update
+MethodInvocation:updateTaskState
+MethodInvocation:hasTask
+MethodInvocation:warn
+MethodInvocation:warn
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[String source, Exception e]
+MethodInvocation:onFailure
+Method-name:clusterStateProcessed
+Method-returnType:void
+Method-parameters:[String source, ClusterState oldState, ClusterState newState]
+MethodInvocation:onResponse
+MethodInvocation:getTaskWithId
+Method-name:unassignPersistentTask
+Method-returnType:void
+Method-parameters:[final String taskId, final long taskAllocationId, final String reason, final ActionListener<PersistentTask<?>> listener]
+MethodInvocation:submitStateUpdateTask
+Method-name:execute
+Method-returnType:ClusterState
+Method-parameters:[ClusterState currentState]
+MethodInvocation:builder
+MethodInvocation:hasTask
+MethodInvocation:trace
+MethodInvocation:update
+MethodInvocation:reassignTask
+MethodInvocation:unassignedAssignment
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[String source, Exception e]
+MethodInvocation:onFailure
+Method-name:clusterStateProcessed
+Method-returnType:void
+Method-parameters:[String source, ClusterState oldState, ClusterState newState]
+MethodInvocation:onResponse
+MethodInvocation:getTaskWithId
+Method-name:createAssignment
+Method-returnType:Assignment
+Method-parameters:[final String taskName, final Params taskParams, final ClusterState currentState]
+MethodInvocation:getPersistentTaskExecutorSafe
+MethodInvocation:canAssign
+MethodInvocation:getType
+MethodInvocation:unassignedAssignment
+MethodInvocation:getReason
+MethodInvocation:getAssignment
+Method-name:clusterChanged
+Method-returnType:void
+Method-parameters:[ClusterChangedEvent event]
+MethodInvocation:localNodeMaster
+MethodInvocation:shouldReassignPersistentTasks
+MethodInvocation:cancel
+MethodInvocation:trace
+MethodInvocation:getVersion
+MethodInvocation:state
+MethodInvocation:reassignPersistentTasks
+Method-name:reassignPersistentTasks
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:submitStateUpdateTask
+Method-name:execute
+Method-returnType:ClusterState
+Method-parameters:[ClusterState currentState]
+MethodInvocation:reassignTasks
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[String source, Exception e]
+MethodInvocation:warn
+MethodInvocation:rescheduleIfNecessary
+Method-name:clusterStateProcessed
+Method-returnType:void
+Method-parameters:[String source, ClusterState oldState, ClusterState newState]
+MethodInvocation:isAnyTaskUnassigned
+MethodInvocation:custom
+MethodInvocation:getMetadata
+MethodInvocation:rescheduleIfNecessary
+Method-name:shouldReassignPersistentTasks
+Method-returnType:boolean
+Method-parameters:[final ClusterChangedEvent event]
+MethodInvocation:custom
+MethodInvocation:getMetadata
+MethodInvocation:state
+MethodInvocation:isLocalNodeElectedMaster
+MethodInvocation:nodes
+MethodInvocation:previousState
+MethodInvocation:persistentTasksChanged
+MethodInvocation:nodesChanged
+MethodInvocation:routingTableChanged
+MethodInvocation:metadataChanged
+MethodInvocation:tasks
+MethodInvocation:needsReassignment
+MethodInvocation:getAssignment
+MethodInvocation:nodes
+MethodInvocation:state
+MethodInvocation:createAssignment
+MethodInvocation:getTaskName
+MethodInvocation:getParams
+MethodInvocation:state
+MethodInvocation:equals
+MethodInvocation:getAssignment
+Method-name:reassignTasks
+Method-returnType:ClusterState
+Method-parameters:[final ClusterState currentState]
+MethodInvocation:custom
+MethodInvocation:getMetadata
+MethodInvocation:trace
+MethodInvocation:size
+MethodInvocation:tasks
+MethodInvocation:nodes
+MethodInvocation:tasks
+MethodInvocation:needsReassignment
+MethodInvocation:getAssignment
+MethodInvocation:createAssignment
+MethodInvocation:getTaskName
+MethodInvocation:getParams
+MethodInvocation:equals
+MethodInvocation:getAssignment
+MethodInvocation:trace
+MethodInvocation:getId
+MethodInvocation:getExecutorNode
+MethodInvocation:getAssignment
+MethodInvocation:getExecutorNode
+MethodInvocation:update
+MethodInvocation:reassignTask
+MethodInvocation:builder
+MethodInvocation:getId
+MethodInvocation:trace
+MethodInvocation:getId
+MethodInvocation:trace
+MethodInvocation:getId
+Method-name:persistentTasksChanged
+Method-returnType:boolean
+Method-parameters:[final ClusterChangedEvent event]
+MethodInvocation:equals
+MethodInvocation:custom
+MethodInvocation:metadata
+MethodInvocation:state
+MethodInvocation:custom
+MethodInvocation:metadata
+MethodInvocation:previousState
+Method-name:needsReassignment
+Method-returnType:boolean
+Method-parameters:[final Assignment assignment, final DiscoveryNodes nodes]
+MethodInvocation:isAssigned
+MethodInvocation:nodeExists
+MethodInvocation:getExecutorNode
+Method-name:builder
+Method-returnType:PersistentTasksCustomMetadata.Builder
+Method-parameters:[ClusterState currentState]
+MethodInvocation:builder
+MethodInvocation:custom
+MethodInvocation:getMetadata
+Method-name:update
+Method-returnType:ClusterState
+Method-parameters:[ClusterState currentState, PersistentTasksCustomMetadata.Builder tasksInProgress]
+MethodInvocation:isChanged
+MethodInvocation:build
+MethodInvocation:metadata
+MethodInvocation:builder
+MethodInvocation:putCustom
+MethodInvocation:builder
+MethodInvocation:metadata
+MethodInvocation:build
+Method-name:unassignedAssignment
+Method-returnType:Assignment
+Method-parameters:[String reason]
+Class:PeriodicRechecker
+Method-name:PeriodicRechecker
+Method-returnType:null
+Method-parameters:[TimeValue recheckInterval]
+Method-name:mustReschedule
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:runInternal
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isMasterNode
+MethodInvocation:localNode
+MethodInvocation:state
+MethodInvocation:trace
+MethodInvocation:getVersion
+MethodInvocation:isAnyTaskUnassigned
+MethodInvocation:custom
+MethodInvocation:getMetadata
+MethodInvocation:reassignPersistentTasks
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

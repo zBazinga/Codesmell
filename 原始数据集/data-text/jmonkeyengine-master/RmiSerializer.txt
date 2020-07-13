@@ -1,0 +1,111 @@
+Class:RmiSerializer
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:chrBuf
+Method-name:writeString
+Method-returnType:void
+Method-parameters:[ByteBuffer buffer, String string]
+MethodInvocation:length
+MethodInvocation:log
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:charAt
+Method-name:readString
+Method-returnType:String
+Method-parameters:[ByteBuffer buffer]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:valueOf
+Method-name:writeType
+Method-returnType:void
+Method-parameters:[ByteBuffer buffer, Class<?> clazz]
+MethodInvocation:putShort
+MethodInvocation:getSerializerRegistration
+MethodInvocation:log
+MethodInvocation:putShort
+MethodInvocation:getId
+Method-name:readType
+Method-returnType:Class<?>
+Method-parameters:[ByteBuffer buffer]
+MethodInvocation:readClass
+MethodInvocation:getShort
+MethodInvocation:position
+MethodInvocation:log
+MethodInvocation:getType
+Method-name:writeMethod
+Method-returnType:void
+Method-parameters:[ByteBuffer buffer, Method method]
+MethodInvocation:getName
+MethodInvocation:getParameterTypes
+MethodInvocation:getReturnType
+MethodInvocation:writeString
+MethodInvocation:writeType
+MethodInvocation:put
+MethodInvocation:writeType
+Method-name:readMethod
+Method-returnType:MethodDef
+Method-parameters:[ByteBuffer buffer]
+MethodInvocation:readString
+MethodInvocation:readType
+MethodInvocation:get
+MethodInvocation:readType
+Method-name:writeObjectDef
+Method-returnType:void
+Method-parameters:[ByteBuffer buffer, ObjectDef def]
+MethodInvocation:putShort
+MethodInvocation:writeString
+MethodInvocation:put
+MethodInvocation:writeMethod
+Method-name:readObjectDef
+Method-returnType:ObjectDef
+Method-parameters:[ByteBuffer buffer]
+MethodInvocation:getShort
+MethodInvocation:readString
+MethodInvocation:get
+MethodInvocation:readMethod
+Method-name:writeObjectDefs
+Method-returnType:void
+Method-parameters:[ByteBuffer buffer, RemoteObjectDefMessage defMsg]
+MethodInvocation:put
+MethodInvocation:writeObjectDef
+Method-name:readObjectDefs
+Method-returnType:RemoteObjectDefMessage
+Method-parameters:[ByteBuffer buffer]
+MethodInvocation:get
+MethodInvocation:readObjectDef
+Method-name:readMethodCall
+Method-returnType:RemoteMethodCallMessage
+Method-parameters:[ByteBuffer buffer]
+MethodInvocation:getShort
+MethodInvocation:getShort
+MethodInvocation:getShort
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:readClassAndObject
+Method-name:writeMethodReturn
+Method-returnType:void
+Method-parameters:[ByteBuffer buffer, RemoteMethodReturnMessage ret]
+MethodInvocation:putShort
+MethodInvocation:put
+MethodInvocation:writeClassAndObject
+MethodInvocation:put
+Method-name:readMethodReturn
+Method-returnType:RemoteMethodReturnMessage
+Method-parameters:[ByteBuffer buffer]
+MethodInvocation:getShort
+MethodInvocation:get
+MethodInvocation:readClassAndObject
+Method-name:readObject
+Method-returnType:T
+Method-parameters:[ByteBuffer data, Class<T> c]
+MethodInvocation:readObjectDefs
+MethodInvocation:readMethodCall
+MethodInvocation:readMethodReturn
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[ByteBuffer buffer, Object object]
+MethodInvocation:writeObjectDefs
+MethodInvocation:writeMethodCall
+MethodInvocation:writeMethodReturn

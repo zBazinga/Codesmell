@@ -1,0 +1,393 @@
+Class:Grouping
+Field:STRUCT_DESC
+Field:FIELDS_FIELD_DESC
+Field:SHUFFLE_FIELD_DESC
+Field:ALL_FIELD_DESC
+Field:NONE_FIELD_DESC
+Field:DIRECT_FIELD_DESC
+Field:CUSTOM_OBJECT_FIELD_DESC
+Field:CUSTOM_SERIALIZED_FIELD_DESC
+Field:LOCAL_OR_SHUFFLE_FIELD_DESC
+Field:LOCAL_FIRST_FIELD_DESC
+Field:_Fields
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:Grouping
+Method-returnType:null
+Method-parameters:[]
+Method-name:Grouping
+Method-returnType:null
+Method-parameters:[_Fields setField, Object value]
+Method-name:Grouping
+Method-returnType:null
+Method-parameters:[Grouping other]
+Method-name:deepCopy
+Method-returnType:Grouping
+Method-parameters:[]
+Method-name:fields
+Method-returnType:Grouping
+Method-parameters:[List<String> value]
+MethodInvocation:set_fields
+Method-name:shuffle
+Method-returnType:Grouping
+Method-parameters:[NullStruct value]
+MethodInvocation:set_shuffle
+Method-name:all
+Method-returnType:Grouping
+Method-parameters:[NullStruct value]
+MethodInvocation:set_all
+Method-name:none
+Method-returnType:Grouping
+Method-parameters:[NullStruct value]
+MethodInvocation:set_none
+Method-name:direct
+Method-returnType:Grouping
+Method-parameters:[NullStruct value]
+MethodInvocation:set_direct
+Method-name:custom_object
+Method-returnType:Grouping
+Method-parameters:[JavaObject value]
+MethodInvocation:set_custom_object
+Method-name:custom_serialized
+Method-returnType:Grouping
+Method-parameters:[ByteBuffer value]
+MethodInvocation:set_custom_serialized
+Method-name:custom_serialized
+Method-returnType:Grouping
+Method-parameters:[byte[] value]
+MethodInvocation:set_custom_serialized
+MethodInvocation:wrap
+MethodInvocation:copyOf
+Method-name:local_or_shuffle
+Method-returnType:Grouping
+Method-parameters:[NullStruct value]
+MethodInvocation:set_local_or_shuffle
+Method-name:localFirst
+Method-returnType:Grouping
+Method-parameters:[NullStruct value]
+MethodInvocation:set_localFirst
+Method-name:checkType
+Method-returnType:void
+Method-parameters:[_Fields setField, Object value]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:standardSchemeReadValue
+Method-returnType:Object
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, org.apache.thrift.protocol.TField field]
+MethodInvocation:findByThriftId
+MethodInvocation:readListBegin
+MethodInvocation:readString
+MethodInvocation:add
+MethodInvocation:readListEnd
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:readBinary
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:skip
+Method-name:standardSchemeWriteValue
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:writeListBegin
+MethodInvocation:size
+MethodInvocation:writeString
+MethodInvocation:writeListEnd
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:writeBinary
+MethodInvocation:write
+MethodInvocation:write
+Method-name:tupleSchemeReadValue
+Method-returnType:Object
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, short fieldID]
+MethodInvocation:findByThriftId
+MethodInvocation:readListBegin
+MethodInvocation:readString
+MethodInvocation:add
+MethodInvocation:readListEnd
+MethodInvocation:read
+MethodInvocation:read
+MethodInvocation:read
+MethodInvocation:read
+MethodInvocation:read
+MethodInvocation:readBinary
+MethodInvocation:read
+MethodInvocation:read
+Method-name:tupleSchemeWriteValue
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:writeListBegin
+MethodInvocation:size
+MethodInvocation:writeString
+MethodInvocation:writeListEnd
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:writeBinary
+MethodInvocation:write
+MethodInvocation:write
+Method-name:getFieldDesc
+Method-returnType:org.apache.thrift.protocol.TField
+Method-parameters:[_Fields setField]
+Method-name:getStructDesc
+Method-returnType:org.apache.thrift.protocol.TStruct
+Method-parameters:[]
+Method-name:enumForId
+Method-returnType:_Fields
+Method-parameters:[short id]
+MethodInvocation:findByThriftIdOrThrow
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:get_fields
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_fields
+Method-returnType:void
+Method-parameters:[List<String> value]
+Method-name:get_shuffle
+Method-returnType:NullStruct
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:get_all
+Method-returnType:NullStruct
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_all
+Method-returnType:void
+Method-parameters:[NullStruct value]
+Method-name:get_none
+Method-returnType:NullStruct
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_none
+Method-returnType:void
+Method-parameters:[NullStruct value]
+Method-name:get_direct
+Method-returnType:NullStruct
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_direct
+Method-returnType:void
+Method-parameters:[NullStruct value]
+Method-name:get_custom_object
+Method-returnType:JavaObject
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_custom_object
+Method-returnType:void
+Method-parameters:[JavaObject value]
+Method-name:get_custom_serialized
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:set_custom_serialized
+MethodInvocation:rightSize
+MethodInvocation:buffer_for_custom_serialized
+MethodInvocation:buffer_for_custom_serialized
+MethodInvocation:array
+Method-name:buffer_for_custom_serialized
+Method-returnType:ByteBuffer
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:copyBinary
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_custom_serialized
+Method-returnType:void
+Method-parameters:[byte[] value]
+MethodInvocation:set_custom_serialized
+MethodInvocation:wrap
+MethodInvocation:copyOf
+Method-name:set_custom_serialized
+Method-returnType:void
+Method-parameters:[ByteBuffer value]
+Method-name:get_local_or_shuffle
+Method-returnType:NullStruct
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_local_or_shuffle
+Method-returnType:void
+Method-parameters:[NullStruct value]
+Method-name:get_localFirst
+Method-returnType:NullStruct
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_localFirst
+Method-returnType:void
+Method-parameters:[NullStruct value]
+Method-name:is_set_fields
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_shuffle
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_all
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_none
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_direct
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_custom_object
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_custom_serialized
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_local_or_shuffle
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_localFirst
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Grouping other]
+MethodInvocation:getSetField
+MethodInvocation:getSetField
+MethodInvocation:equals
+MethodInvocation:getFieldValue
+MethodInvocation:getFieldValue
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[Grouping other]
+MethodInvocation:compareTo
+MethodInvocation:getSetField
+MethodInvocation:getSetField
+MethodInvocation:compareTo
+MethodInvocation:getFieldValue
+MethodInvocation:getFieldValue
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getSetField
+MethodInvocation:add
+MethodInvocation:getThriftFieldId
+MethodInvocation:getFieldValue
+MethodInvocation:add
+MethodInvocation:getValue
+MethodInvocation:getFieldValue
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read

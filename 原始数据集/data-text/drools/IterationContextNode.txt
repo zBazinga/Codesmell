@@ -1,0 +1,58 @@
+Class:IterationContextNode
+Field:name
+Field:expression
+Field:rangeEndExpr
+Method-name:IterationContextNode
+Method-returnType:null
+Method-parameters:[ParserRuleContext ctx, NameDefNode name, BaseNode expression]
+FieldAccess:name
+FieldAccess:expression
+Method-name:IterationContextNode
+Method-returnType:null
+Method-parameters:[ParserRuleContext ctx, NameDefNode name, BaseNode expression, BaseNode rangeEndExpr]
+FieldAccess:name
+FieldAccess:expression
+FieldAccess:rangeEndExpr
+Method-name:getName
+Method-returnType:NameDefNode
+Method-parameters:[]
+Method-name:setName
+Method-returnType:void
+Method-parameters:[NameDefNode name]
+FieldAccess:name
+Method-name:getExpression
+Method-returnType:BaseNode
+Method-parameters:[]
+Method-name:getRangeEndExpr
+Method-returnType:BaseNode
+Method-parameters:[]
+Method-name:setExpression
+Method-returnType:void
+Method-parameters:[BaseNode expression]
+FieldAccess:expression
+Method-name:evaluateName
+Method-returnType:String
+Method-parameters:[EvaluationContext ctx]
+MethodInvocation:evaluate
+FieldAccess:name
+Method-name:evaluate
+Method-returnType:Object
+Method-parameters:[EvaluationContext ctx]
+MethodInvocation:evaluate
+Method-name:evaluateRangeEnd
+Method-returnType:Object
+Method-parameters:[EvaluationContext ctx]
+MethodInvocation:evaluate
+Method-name:getChildrenNode
+Method-returnType:ASTNode[]
+Method-parameters:[]
+Method-name:accept
+Method-returnType:T
+Method-parameters:[Visitor<T> v]
+MethodInvocation:visit
+Method-name:createQuantifiedExpressionIterationContext
+Method-returnType:QuantifiedExpressionNode.QEIteration
+Method-parameters:[EvaluationContext ctx, QuantifiedExpressionNode quantifiedExpressionNode]
+MethodInvocation:evaluateName
+MethodInvocation:evaluate
+MethodInvocation:singletonList

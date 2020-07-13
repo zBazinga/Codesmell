@@ -1,0 +1,31 @@
+Class:TableSerializer
+Field:FIELD_NAME
+Field:LOG
+MethodInvocation:getLogger
+Field:tableHandle
+Field:partitions
+Field:hiveConf
+Method-name:TableSerializer
+Method-returnType:null
+Method-parameters:[org.apache.hadoop.hive.ql.metadata.Table tableHandle, Iterable<Partition> partitions, HiveConf hiveConf]
+FieldAccess:tableHandle
+FieldAccess:partitions
+FieldAccess:hiveConf
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[JsonWriter writer, ReplicationSpec additionalPropertiesProvider]
+MethodInvocation:shouldReplicate
+MethodInvocation:updatePropertiesInTable
+MethodInvocation:getTTable
+MethodInvocation:writeStringField
+MethodInvocation:toString
+MethodInvocation:writeFieldName
+MethodInvocation:writePartitions
+MethodInvocation:getMsg
+Method-name:writePartitions
+Method-returnType:void
+Method-parameters:[JsonWriter writer, ReplicationSpec additionalPropertiesProvider]
+MethodInvocation:writeStartArray
+MethodInvocation:writeTo
+MethodInvocation:getTPartition
+MethodInvocation:writeEndArray

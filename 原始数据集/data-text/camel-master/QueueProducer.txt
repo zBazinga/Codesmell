@@ -1,0 +1,66 @@
+Class:QueueProducer
+Field:configuration
+Field:queueServiceClientWrapper
+Field:queueServiceOperations
+Method-name:QueueProducer
+Method-returnType:null
+Method-parameters:[final Endpoint endpoint]
+FieldAccess:configuration
+MethodInvocation:getConfiguration
+MethodInvocation:getEndpoint
+FieldAccess:queueServiceClientWrapper
+MethodInvocation:getQueueServiceClient
+MethodInvocation:getEndpoint
+FieldAccess:queueServiceOperations
+Method-name:process
+Method-returnType:void
+Method-parameters:[Exchange exchange]
+MethodInvocation:determineOperation
+MethodInvocation:isEmpty
+MethodInvocation:setResponse
+MethodInvocation:listQueues
+MethodInvocation:setResponse
+MethodInvocation:createQueue
+MethodInvocation:getQueueOperations
+MethodInvocation:setResponse
+MethodInvocation:deleteQueue
+MethodInvocation:getQueueOperations
+MethodInvocation:setResponse
+MethodInvocation:clearQueue
+MethodInvocation:getQueueOperations
+MethodInvocation:setResponse
+MethodInvocation:sendMessage
+MethodInvocation:getQueueOperations
+MethodInvocation:setResponse
+MethodInvocation:deleteMessage
+MethodInvocation:getQueueOperations
+MethodInvocation:setResponse
+MethodInvocation:peekMessages
+MethodInvocation:getQueueOperations
+MethodInvocation:setResponse
+MethodInvocation:updateMessage
+MethodInvocation:getQueueOperations
+MethodInvocation:setResponse
+MethodInvocation:receiveMessages
+MethodInvocation:getQueueOperations
+Method-name:getEndpoint
+Method-returnType:QueueEndpoint
+Method-parameters:[]
+Method-name:determineOperation
+Method-returnType:QueueOperationDefinition
+Method-parameters:[final Exchange exchange]
+MethodInvocation:getQueueOperationsDefinitionFromHeaders
+MethodInvocation:getOperation
+Method-name:getQueueOperations
+Method-returnType:QueueOperations
+Method-parameters:[final Exchange exchange]
+MethodInvocation:getQueueClientWrapper
+MethodInvocation:determineQueueName
+Method-name:determineQueueName
+Method-returnType:String
+Method-parameters:[final Exchange exchange]
+MethodInvocation:isEmpty
+MethodInvocation:getQueueNameFromHeaders
+MethodInvocation:getQueueName
+MethodInvocation:getQueueNameFromHeaders
+MethodInvocation:isEmpty

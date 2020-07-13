@@ -1,0 +1,234 @@
+Class:TestStrategy
+Field:TEST_TMP_ROOT
+MethodInvocation:create
+Field:executionOptions
+Field:binTools
+Field:futures
+Field:tmpIndex
+Method-name:TestStrategy
+Method-returnType:null
+Method-parameters:[ExecutionOptions executionOptions, BinTools binTools]
+FieldAccess:executionOptions
+FieldAccess:binTools
+Method-name:getArgs
+Method-returnType:ImmutableList<String>
+Method-parameters:[TestRunnerAction testAction]
+MethodInvocation:expandedArgsFromAction
+Method-name:expandedArgsFromAction
+Method-returnType:ImmutableList<String>
+Method-parameters:[TestRunnerAction testAction]
+MethodInvocation:newArrayList
+MethodInvocation:getCurrent
+MethodInvocation:getTestSetupScript
+MethodInvocation:add
+MethodInvocation:getCallablePathString
+MethodInvocation:getExecPath
+MethodInvocation:isCoverageMode
+MethodInvocation:add
+MethodInvocation:getExecPathString
+MethodInvocation:getCollectCoverageScript
+MethodInvocation:getExecutionSettings
+MethodInvocation:getRunUnder
+MethodInvocation:addRunUnderArgs
+MethodInvocation:add
+MethodInvocation:getCallablePathString
+MethodInvocation:getRootRelativePath
+MethodInvocation:getExecutable
+MethodInvocation:addAll
+MethodInvocation:arguments
+MethodInvocation:getArgs
+MethodInvocation:copyOf
+Method-name:addRunUnderArgs
+Method-returnType:void
+Method-parameters:[TestRunnerAction testAction, List<String> args, boolean executedOnWindows]
+MethodInvocation:getExecutionSettings
+MethodInvocation:getRunUnderExecutable
+MethodInvocation:add
+MethodInvocation:getCallablePathString
+MethodInvocation:getRootRelativePath
+MethodInvocation:getRunUnderExecutable
+MethodInvocation:needsShell
+MethodInvocation:checkNotNull
+MethodInvocation:getShExecutableMaybe
+MethodInvocation:getPathString
+MethodInvocation:getShExecutableMaybe
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:getCommand
+MethodInvocation:getRunUnder
+MethodInvocation:addAll
+MethodInvocation:getOptions
+MethodInvocation:getRunUnder
+MethodInvocation:getExecutionSettings
+Method-name:getTestAttemptsPerLabel
+Method-returnType:int
+Method-parameters:[ExecutionOptions options, Label label, int defaultTestAttempts]
+MethodInvocation:reverse
+MethodInvocation:isIncluded
+MethodInvocation:getOnlyElement
+MethodInvocation:getOptions
+MethodInvocation:equals
+MethodInvocation:parseInt
+Method-name:getTmpDirName
+Method-returnType:String
+Method-parameters:[TestRunnerAction action]
+MethodInvocation:addPath
+MethodInvocation:getExecPath
+MethodInvocation:getExecutable
+MethodInvocation:getExecutionSettings
+MethodInvocation:addInt
+MethodInvocation:getShardNum
+MethodInvocation:addInt
+MethodInvocation:getRunNumber
+MethodInvocation:substring
+MethodInvocation:hexDigestAndReset
+Method-name:getTmpRoot
+Method-returnType:Path
+Method-parameters:[Path workspace, Path execRoot, ExecutionOptions executionOptions]
+MethodInvocation:getRelative
+MethodInvocation:getRelative
+MethodInvocation:getRelative
+Method-name:getMapping
+Method-returnType:Map<String,String>
+Method-parameters:[Iterable<String> variables, Map<String,String> environment]
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:get
+Method-name:closeSuppressed
+Method-returnType:void
+Method-parameters:[Throwable e, @Nullable Closeable c]
+MethodInvocation:close
+MethodInvocation:addSuppressed
+Method-name:prepareFileSystem
+Method-returnType:void
+Method-parameters:[TestRunnerAction testAction, Path execRoot, Path tmpDir, Path workingDirectory]
+MethodInvocation:recreateDirectory
+MethodInvocation:createDirectoryAndParents
+MethodInvocation:resolve
+MethodInvocation:isCoverageMode
+MethodInvocation:recreateDirectory
+MethodInvocation:getCoverageDirectory
+MethodInvocation:createDirectoryAndParents
+MethodInvocation:getBaseDir
+MethodInvocation:createDirectoryAndParents
+MethodInvocation:getUndeclaredOutputsDir
+MethodInvocation:createDirectoryAndParents
+MethodInvocation:getUndeclaredOutputsAnnotationsDir
+MethodInvocation:createDirectoryAndParents
+MethodInvocation:getSplitLogsDir
+Method-name:prepareFileSystem
+Method-returnType:void
+Method-parameters:[TestRunnerAction testAction, Path execRoot]
+MethodInvocation:prepareFileSystem
+Method-name:recreateDirectory
+Method-returnType:void
+Method-parameters:[Path directory]
+MethodInvocation:deleteTree
+MethodInvocation:createDirectoryAndParents
+Method-name:isTestKeepGoing
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getTestCancelFuture
+Method-returnType:ListenableFuture<Void>
+Method-parameters:[ActionOwner owner, int shardNum]
+MethodInvocation:computeIfAbsent
+MethodInvocation:create
+Method-name:getTestAttempts
+Method-returnType:int
+Method-parameters:[TestRunnerAction action]
+MethodInvocation:isFlaky
+MethodInvocation:getTestProperties
+MethodInvocation:getTestAttemptsForFlakyTest
+MethodInvocation:getTestAttempts
+Method-name:getTestAttemptsForFlakyTest
+Method-returnType:int
+Method-parameters:[TestRunnerAction action]
+MethodInvocation:getTestAttempts
+Method-name:getTestAttempts
+Method-returnType:int
+Method-parameters:[TestRunnerAction action, int defaultTestAttempts]
+MethodInvocation:getLabel
+MethodInvocation:getOwner
+MethodInvocation:getTestAttemptsPerLabel
+Method-name:getTimeout
+Method-returnType:Duration
+Method-parameters:[TestRunnerAction testAction]
+MethodInvocation:getConfiguration
+MethodInvocation:get
+MethodInvocation:getTestTimeout
+MethodInvocation:getFragment
+MethodInvocation:getTimeout
+MethodInvocation:getTestProperties
+Method-name:postTestResult
+Method-returnType:void
+Method-parameters:[ActionExecutionContext actionExecutionContext, TestResult result]
+MethodInvocation:saveCacheStatus
+MethodInvocation:getTestAction
+MethodInvocation:getData
+MethodInvocation:post
+MethodInvocation:getEventHandler
+Method-name:getTmpDirName
+Method-returnType:String
+Method-parameters:[PathFragment execPath]
+MethodInvocation:getBaseName
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:put
+Method-name:parseTestResult
+Method-returnType:TestCase
+Method-parameters:[Path resultFile]
+MethodInvocation:getInputStream
+MethodInvocation:parseXmlIntoTestResult
+Method-name:processTestOutput
+Method-returnType:void
+Method-parameters:[ActionExecutionContext actionExecutionContext, TestResultData testResultData, String testName, Path testLog]
+MethodInvocation:getTestPassed
+MethodInvocation:getStatus
+MethodInvocation:shouldOutputTestLog
+MethodInvocation:writeTestLog
+MethodInvocation:getOutputStream
+MethodInvocation:getFileOutErr
+MethodInvocation:handle
+MethodInvocation:getEventHandler
+MethodInvocation:of
+MethodInvocation:hasStatusDetails
+MethodInvocation:handle
+MethodInvocation:getEventHandler
+MethodInvocation:error
+MethodInvocation:getStatusDetails
+MethodInvocation:getStatus
+MethodInvocation:handle
+MethodInvocation:getEventHandler
+MethodInvocation:of
+MethodInvocation:getStatus
+MethodInvocation:handle
+MethodInvocation:getEventHandler
+MethodInvocation:of
+MethodInvocation:handle
+MethodInvocation:getEventHandler
+MethodInvocation:of
+Method-name:createStreamedTestOutput
+Method-returnType:Closeable
+Method-parameters:[OutErr outErr, Path testLogPath]
+Field:TestOutputFormat
+Field:TestSummaryFormat
+Class:ShardKey
+Field:owner
+Field:shard
+Method-name:ShardKey
+Method-returnType:null
+Method-parameters:[ActionOwner owner, int shard]
+FieldAccess:owner
+MethodInvocation:checkNotNull
+FieldAccess:shard
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals

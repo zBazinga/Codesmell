@@ -1,0 +1,101 @@
+Class:TransportValidateQueryAction
+Field:searchService
+Method-name:TransportValidateQueryAction
+Method-returnType:null
+Method-parameters:[ClusterService clusterService, TransportService transportService, SearchService searchService, ActionFilters actionFilters, IndexNameExpressionResolver indexNameExpressionResolver]
+FieldAccess:searchService
+Method-name:doExecute
+Method-returnType:void
+Method-parameters:[Task task, ValidateQueryRequest request, ActionListener<ValidateQueryResponse> listener]
+MethodInvocation:currentTimeMillis
+MethodInvocation:wrap
+MethodInvocation:query
+MethodInvocation:onFailure
+MethodInvocation:add
+MethodInvocation:getMessage
+MethodInvocation:onResponse
+MethodInvocation:query
+MethodInvocation:onResponse
+MethodInvocation:query
+MethodInvocation:rewriteAndFetch
+MethodInvocation:query
+MethodInvocation:getRewriteContext
+Method-name:newShardRequest
+Method-returnType:ShardValidateQueryRequest
+Method-parameters:[int numShards, ShardRouting shard, ValidateQueryRequest request]
+MethodInvocation:state
+MethodInvocation:resolveExpressions
+MethodInvocation:indices
+MethodInvocation:buildAliasFilter
+MethodInvocation:getIndexName
+MethodInvocation:shardId
+Method-name:readShardResponse
+Method-returnType:ShardValidateQueryResponse
+Method-parameters:[StreamInput in]
+Method-name:shards
+Method-returnType:GroupShardsIterator
+Method-parameters:[ClusterState clusterState, ValidateQueryRequest request, String[] concreteIndices]
+MethodInvocation:allShards
+MethodInvocation:toString
+MethodInvocation:nextInt
+MethodInvocation:get
+MethodInvocation:resolveSearchRouting
+MethodInvocation:indices
+MethodInvocation:searchShards
+MethodInvocation:operationRouting
+Method-name:checkGlobalBlock
+Method-returnType:ClusterBlockException
+Method-parameters:[ClusterState state, ValidateQueryRequest request]
+MethodInvocation:globalBlockedException
+MethodInvocation:blocks
+Method-name:checkRequestBlock
+Method-returnType:ClusterBlockException
+Method-parameters:[ClusterState state, ValidateQueryRequest countRequest, String[] concreteIndices]
+MethodInvocation:indicesBlockedException
+MethodInvocation:blocks
+Method-name:newResponse
+Method-returnType:ValidateQueryResponse
+Method-parameters:[ValidateQueryRequest request, AtomicReferenceArray shardsResponses, ClusterState clusterState]
+MethodInvocation:length
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:isValid
+MethodInvocation:explain
+MethodInvocation:rewrite
+MethodInvocation:allShards
+MethodInvocation:add
+MethodInvocation:getIndex
+MethodInvocation:allShards
+MethodInvocation:getId
+MethodInvocation:getShardId
+MethodInvocation:isValid
+MethodInvocation:getExplanation
+MethodInvocation:getError
+MethodInvocation:length
+Method-name:shardOperation
+Method-returnType:ShardValidateQueryResponse
+Method-parameters:[ShardValidateQueryRequest request, Task task]
+MethodInvocation:shardId
+MethodInvocation:nowInMillis
+MethodInvocation:filteringAliases
+MethodInvocation:createSearchContext
+MethodInvocation:toQuery
+MethodInvocation:getQueryShardContext
+MethodInvocation:query
+MethodInvocation:parsedQuery
+MethodInvocation:preProcess
+MethodInvocation:rewrite
+MethodInvocation:explain
+MethodInvocation:rewrite
+MethodInvocation:getDetailedMessage
+MethodInvocation:getMessage
+MethodInvocation:close
+MethodInvocation:shardId
+Method-name:explain
+Method-returnType:String
+Method-parameters:[SearchContext context, boolean rewritten]
+MethodInvocation:query
+MethodInvocation:toString
+MethodInvocation:query
+MethodInvocation:parsedQuery
+MethodInvocation:toString

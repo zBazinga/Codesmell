@@ -1,0 +1,77 @@
+Class:SubscriptionChannelFactory
+Field:myChannelFactory
+Method-name:SubscriptionChannelFactory
+Method-returnType:null
+Method-parameters:[IChannelFactory theChannelFactory]
+MethodInvocation:notNull
+Method-name:newDeliverySendingChannel
+Method-returnType:IChannelProducer
+Method-parameters:[String theChannelName, ChannelProducerSettings theChannelSettings]
+MethodInvocation:newProducerConfigForDeliveryChannel
+MethodInvocation:getOrCreateProducer
+Method-name:newDeliveryReceivingChannel
+Method-returnType:IChannelReceiver
+Method-parameters:[String theChannelName, ChannelConsumerSettings theChannelSettings]
+MethodInvocation:newConsumerConfigForDeliveryChannel
+MethodInvocation:getOrCreateReceiver
+Method-name:newMatchingSendingChannel
+Method-returnType:IChannelProducer
+Method-parameters:[String theChannelName, ChannelProducerSettings theChannelSettings]
+MethodInvocation:newProducerConfigForMatchingChannel
+MethodInvocation:getOrCreateProducer
+Method-name:newMatchingReceivingChannel
+Method-returnType:IChannelReceiver
+Method-parameters:[String theChannelName, ChannelConsumerSettings theChannelSettings]
+MethodInvocation:newConsumerConfigForMatchingChannel
+MethodInvocation:getOrCreateReceiver
+Method-name:newConsumerConfigForDeliveryChannel
+Method-returnType:ChannelConsumerSettings
+Method-parameters:[ChannelConsumerSettings theOptions]
+MethodInvocation:setConcurrentConsumers
+MethodInvocation:getDeliveryChannelConcurrentConsumers
+Method-name:newProducerConfigForMatchingChannel
+Method-returnType:ChannelProducerSettings
+Method-parameters:[ChannelProducerSettings theOptions]
+MethodInvocation:setConcurrentConsumers
+MethodInvocation:getMatchingChannelConcurrentConsumers
+Method-name:newConsumerConfigForMatchingChannel
+Method-returnType:ChannelConsumerSettings
+Method-parameters:[ChannelConsumerSettings theOptions]
+MethodInvocation:setConcurrentConsumers
+MethodInvocation:getMatchingChannelConcurrentConsumers
+Method-name:getDeliveryChannelConcurrentConsumers
+Method-returnType:int
+Method-parameters:[]
+Method-name:getMatchingChannelConcurrentConsumers
+Method-returnType:int
+Method-parameters:[]
+Method-name:getChannelFactory
+Method-returnType:IChannelFactory
+Method-parameters:[]
+Class:BroadcastingSubscribableChannelWrapper
+Field:myWrappedChannel
+Method-name:BroadcastingSubscribableChannelWrapper
+Method-returnType:null
+Method-parameters:[IChannelReceiver theChannel]
+MethodInvocation:subscribe
+MethodInvocation:send
+Method-name:getWrappedChannel
+Method-returnType:SubscribableChannel
+Method-parameters:[]
+Method-name:sendInternal
+Method-returnType:boolean
+Method-parameters:[Message<?> theMessage, long timeout]
+MethodInvocation:getSubscribers
+MethodInvocation:handleMessage
+Method-name:destroy
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:destroy
+Method-name:addInterceptor
+Method-returnType:void
+Method-parameters:[ChannelInterceptor interceptor]
+MethodInvocation:addInterceptor
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName

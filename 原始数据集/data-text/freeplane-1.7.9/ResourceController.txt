@@ -1,0 +1,286 @@
+Class:ResourceController
+Field:FREEPLANE_PROPERTIES
+Field:LOCAL_PROPERTIES
+Field:RESOURCE_DRAW_RECTANGLE_FOR_SELECTION
+Field:PLUGIN_DEFAULTS_RESOURCE
+Method-name:getResourceController
+Method-returnType:ResourceController
+Method-parameters:[]
+MethodInvocation:getResourceController
+MethodInvocation:getCurrentController
+Field:propertyChangeListeners
+Field:acceleratorManager
+Field:resources
+Field:FREEPLANE_RESOURCE_URL_PROTOCOL
+Field:OBJECT_TYPE
+Method-name:ResourceController
+Method-returnType:null
+Method-parameters:[]
+Method-name:addLanguageResources
+Method-returnType:void
+Method-parameters:[final String language, final URL url]
+MethodInvocation:addResources
+Method-name:addLanguageResources
+Method-returnType:void
+Method-parameters:[final String language, final Map<String,String> resources]
+MethodInvocation:addResources
+FieldAccess:resources
+Method-name:putUserResourceString
+Method-returnType:void
+Method-parameters:[String key, String value]
+MethodInvocation:putUserResourceString
+Method-name:addPropertyChangeListener
+Method-returnType:void
+Method-parameters:[final IFreeplanePropertyListener listener]
+MethodInvocation:add
+Method-name:addPropertyChangeListenerAndPropagate
+Method-returnType:void
+Method-parameters:[final IFreeplanePropertyListener listener]
+MethodInvocation:addPropertyChangeListener
+MethodInvocation:entrySet
+MethodInvocation:getProperties
+MethodInvocation:getKey
+MethodInvocation:propertyChanged
+MethodInvocation:getValue
+Method-name:loadAnotherLanguage
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:loadAnotherLanguage
+MethodInvocation:getProperty
+Method-name:firePropertyChanged
+Method-returnType:void
+Method-parameters:[final String property, final String value, final String oldValue]
+MethodInvocation:equals
+MethodInvocation:setProperty
+MethodInvocation:getPropertyChangeListeners
+MethodInvocation:propertyChanged
+Method-name:getBooleanProperty
+Method-returnType:boolean
+Method-parameters:[final String key]
+MethodInvocation:parseBoolean
+MethodInvocation:getProperty
+Method-name:getBooleanProperty
+Method-returnType:boolean
+Method-parameters:[final String key, final boolean defaultValue]
+MethodInvocation:getProperty
+MethodInvocation:parseBoolean
+Method-name:getEnumProperty
+Method-returnType:T
+Method-parameters:[String propertyName, Enum<T> defaultValue]
+MethodInvocation:toUpperCase
+MethodInvocation:getProperty
+MethodInvocation:valueOf
+MethodInvocation:getClass
+MethodInvocation:severe
+Method-name:getDefaultProperty
+Method-returnType:String
+Method-parameters:[final String key]
+Method-name:getDoubleProperty
+Method-returnType:double
+Method-parameters:[final String key, final double defaultValue]
+MethodInvocation:parseDouble
+MethodInvocation:getProperty
+MethodInvocation:getResourceController
+Method-name:getFreeplaneUserDirectory
+Method-returnType:String
+Method-parameters:[]
+Method-name:getIntProperty
+Method-returnType:int
+Method-parameters:[final String key, final int defaultValue]
+MethodInvocation:parseInt
+MethodInvocation:getProperty
+Method-name:getLengthProperty
+Method-returnType:int
+Method-parameters:[String name]
+MethodInvocation:getLengthQuantityProperty
+MethodInvocation:toBaseUnitsRounded
+Method-name:getLengthQuantityProperty
+Method-returnType:Quantity<LengthUnits>
+Method-parameters:[String name]
+MethodInvocation:getProperty
+MethodInvocation:fromString
+Method-name:getTimeProperty
+Method-returnType:int
+Method-parameters:[String name]
+MethodInvocation:getTimeQuantityProperty
+MethodInvocation:toBaseUnitsRounded
+Method-name:getTimeQuantityProperty
+Method-returnType:Quantity<TimePeriodUnits>
+Method-parameters:[String name]
+MethodInvocation:getProperty
+MethodInvocation:fromString
+Method-name:getIntProperty
+Method-returnType:int
+Method-parameters:[String key]
+MethodInvocation:parseInt
+MethodInvocation:getProperty
+Method-name:getDoubleProperty
+Method-returnType:double
+Method-parameters:[String key]
+MethodInvocation:parseDouble
+MethodInvocation:getProperty
+Method-name:getLongProperty
+Method-returnType:long
+Method-parameters:[final String key, final long defaultValue]
+MethodInvocation:parseLong
+MethodInvocation:getProperty
+Method-name:getColorProperty
+Method-returnType:Color
+Method-parameters:[String name]
+MethodInvocation:getProperty
+MethodInvocation:stringToColor
+Method-name:getProperties
+Method-returnType:Properties
+Method-parameters:[]
+Method-name:getProperty
+Method-returnType:String
+Method-parameters:[final String key]
+Method-name:getProperty
+Method-returnType:String
+Method-parameters:[final String key, final String value]
+MethodInvocation:getProperty
+MethodInvocation:getProperties
+Method-name:containsProperty
+Method-returnType:boolean
+Method-parameters:[String key]
+MethodInvocation:containsKey
+MethodInvocation:getProperties
+Method-name:getPropertyChangeListeners
+Method-returnType:Collection<IFreeplanePropertyListener>
+Method-parameters:[]
+MethodInvocation:unmodifiableCollection
+Method-name:getResource
+Method-returnType:URL
+Method-parameters:[final String resourcePath]
+MethodInvocation:getResource
+MethodInvocation:getClass
+Method-name:getResourceStream
+Method-returnType:InputStream
+Method-parameters:[final String resFileName]
+MethodInvocation:getResource
+MethodInvocation:severe
+MethodInvocation:openStream
+Method-name:getResourceBaseDir
+Method-returnType:String
+Method-parameters:[]
+Method-name:getInstallationBaseDir
+Method-returnType:String
+Method-parameters:[]
+Method-name:getResources
+Method-returnType:ResourceBundle
+Method-parameters:[]
+MethodInvocation:getProperty
+Method-name:getLanguageCode
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getLanguageCode
+Method-name:getDefaultLanguageCode
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getDefaultLanguageCode
+Method-name:getText
+Method-returnType:String
+Method-parameters:[final String key, final String resource]
+MethodInvocation:getResourceString
+MethodInvocation:getResources
+Method-name:init
+Method-returnType:void
+Method-parameters:[]
+Method-name:removePropertyChangeListener
+Method-returnType:void
+Method-parameters:[final IFreeplanePropertyListener listener]
+MethodInvocation:remove
+Method-name:saveProperties
+Method-returnType:void
+Method-parameters:[]
+Method-name:setDefaultProperty
+Method-returnType:void
+Method-parameters:[final String key, final String value]
+Method-name:setProperty
+Method-returnType:void
+Method-parameters:[final String property, final boolean value]
+MethodInvocation:setProperty
+MethodInvocation:toString
+Method-name:setProperty
+Method-returnType:void
+Method-parameters:[String name, int value]
+MethodInvocation:setProperty
+MethodInvocation:toString
+Method-name:setProperty
+Method-returnType:void
+Method-parameters:[String name, long value]
+MethodInvocation:setProperty
+MethodInvocation:toString
+Method-name:setProperty
+Method-returnType:void
+Method-parameters:[final String property, final String value]
+Method-name:loadProperties
+Method-returnType:boolean
+Method-parameters:[Properties resultProps, final URL url]
+MethodInvocation:openStream
+MethodInvocation:load
+MethodInvocation:info
+MethodInvocation:println
+MethodInvocation:silentlyClose
+Method-name:addDefaults
+Method-returnType:void
+Method-parameters:[URL propertiesUrl]
+MethodInvocation:loadProperties
+MethodInvocation:addDefaults
+Method-name:addDefaults
+Method-returnType:void
+Method-parameters:[Map<KT,VT> defaultProperties]
+MethodInvocation:entrySet
+MethodInvocation:setDefaultProperty
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:isApplet
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:removePropertyChangeListener
+Method-returnType:void
+Method-parameters:[final Class<? extends IActionOnChange> clazz, final AFreeplaneAction action]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getAction
+MethodInvocation:remove
+Method-name:getAcceleratorManager
+Method-returnType:ActionAcceleratorManager
+Method-parameters:[]
+Field:iconCache
+Method-name:getIcon
+Method-returnType:Icon
+Method-parameters:[final String iconKey]
+MethodInvocation:get
+MethodInvocation:startsWith
+MethodInvocation:getProperty
+MethodInvocation:loadIcon
+MethodInvocation:put
+Method-name:loadIcon
+Method-returnType:Icon
+Method-parameters:[final String resourcePath]
+MethodInvocation:getFirstResource
+MethodInvocation:getAlternativePaths
+MethodInvocation:getIcon
+MethodInvocation:getInstance
+MethodInvocation:severe
+Method-name:getFirstResource
+Method-returnType:URL
+Method-parameters:[String... resourcePaths]
+MethodInvocation:getResource
+Method-name:getIconResource
+Method-returnType:URL
+Method-parameters:[String resourcePath]
+MethodInvocation:getAlternativePaths
+MethodInvocation:getFirstResource
+Method-name:getImageIcon
+Method-returnType:Icon
+Method-parameters:[String iconKey]
+MethodInvocation:toImageIcon
+MethodInvocation:getIcon
+Method-name:setPropertyByParameter
+Method-returnType:void
+Method-parameters:[final String key, FreeplaneApplet freeplaneApplet]
+MethodInvocation:getParameter
+MethodInvocation:setProperty

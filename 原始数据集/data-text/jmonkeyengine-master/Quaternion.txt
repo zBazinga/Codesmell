@@ -1,0 +1,378 @@
+Class:Quaternion
+Field:serialVersionUID
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:IDENTITY
+Field:DIRECTION_Z
+Field:ZERO
+MethodInvocation:fromAxes
+Field:x
+Field:y
+Field:z
+Field:w
+Method-name:Quaternion
+Method-returnType:null
+Method-parameters:[]
+Method-name:Quaternion
+Method-returnType:null
+Method-parameters:[float x, float y, float z, float w]
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+FieldAccess:w
+Method-name:getX
+Method-returnType:float
+Method-parameters:[]
+Method-name:getY
+Method-returnType:float
+Method-parameters:[]
+Method-name:getZ
+Method-returnType:float
+Method-parameters:[]
+Method-name:getW
+Method-returnType:float
+Method-parameters:[]
+Method-name:set
+Method-returnType:Quaternion
+Method-parameters:[float x, float y, float z, float w]
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+FieldAccess:w
+Method-name:set
+Method-returnType:Quaternion
+Method-parameters:[Quaternion q]
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+FieldAccess:w
+Method-name:Quaternion
+Method-returnType:null
+Method-parameters:[float[] angles]
+MethodInvocation:fromAngles
+Method-name:Quaternion
+Method-returnType:null
+Method-parameters:[Quaternion q1, Quaternion q2, float interp]
+MethodInvocation:slerp
+Method-name:Quaternion
+Method-returnType:null
+Method-parameters:[Quaternion q]
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+FieldAccess:w
+Method-name:loadIdentity
+Method-returnType:void
+Method-parameters:[]
+Method-name:isIdentity
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:fromAngles
+Method-returnType:Quaternion
+Method-parameters:[float[] angles]
+MethodInvocation:fromAngles
+Method-name:fromAngles
+Method-returnType:Quaternion
+Method-parameters:[float xAngle, float yAngle, float zAngle]
+MethodInvocation:sin
+MethodInvocation:cos
+MethodInvocation:sin
+MethodInvocation:cos
+MethodInvocation:sin
+MethodInvocation:cos
+MethodInvocation:normalizeLocal
+Method-name:toAngles
+Method-returnType:float[]
+Method-parameters:[float[] angles]
+MethodInvocation:atan2
+MethodInvocation:atan2
+MethodInvocation:atan2
+MethodInvocation:asin
+MethodInvocation:atan2
+Method-name:fromRotationMatrix
+Method-returnType:Quaternion
+Method-parameters:[Matrix3f matrix]
+MethodInvocation:fromRotationMatrix
+Method-name:fromRotationMatrix
+Method-returnType:Quaternion
+Method-parameters:[float m00, float m01, float m02, float m10, float m11, float m12, float m20, float m21, float m22]
+MethodInvocation:sqrt
+MethodInvocation:sqrt
+MethodInvocation:sqrt
+MethodInvocation:sqrt
+MethodInvocation:sqrt
+MethodInvocation:sqrt
+MethodInvocation:sqrt
+Method-name:toRotationMatrix
+Method-returnType:Matrix3f
+Method-parameters:[]
+MethodInvocation:toRotationMatrix
+Method-name:toRotationMatrix
+Method-returnType:Matrix3f
+Method-parameters:[Matrix3f result]
+MethodInvocation:norm
+Method-name:toTransformMatrix
+Method-returnType:Matrix4f
+Method-parameters:[Matrix4f store]
+MethodInvocation:norm
+Method-name:toRotationMatrix
+Method-returnType:Matrix4f
+Method-parameters:[Matrix4f result]
+MethodInvocation:get
+MethodInvocation:toScaleVector
+MethodInvocation:setScale
+MethodInvocation:norm
+MethodInvocation:setScale
+MethodInvocation:release
+Method-name:getRotationColumn
+Method-returnType:Vector3f
+Method-parameters:[int i]
+MethodInvocation:getRotationColumn
+Method-name:getRotationColumn
+Method-returnType:Vector3f
+Method-parameters:[int i, Vector3f store]
+MethodInvocation:norm
+MethodInvocation:invSqrt
+MethodInvocation:warning
+Method-name:fromAngleAxis
+Method-returnType:Quaternion
+Method-parameters:[float angle, Vector3f axis]
+MethodInvocation:normalize
+MethodInvocation:fromAngleNormalAxis
+Method-name:fromAngleNormalAxis
+Method-returnType:Quaternion
+Method-parameters:[float angle, Vector3f axis]
+MethodInvocation:loadIdentity
+MethodInvocation:sin
+MethodInvocation:cos
+Method-name:toAngleAxis
+Method-returnType:float
+Method-parameters:[Vector3f axisStore]
+MethodInvocation:acos
+MethodInvocation:sqrt
+Method-name:slerp
+Method-returnType:Quaternion
+Method-parameters:[Quaternion q1, Quaternion q2, float t]
+MethodInvocation:set
+MethodInvocation:acos
+MethodInvocation:sin
+MethodInvocation:sin
+MethodInvocation:sin
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+FieldAccess:w
+Method-name:slerp
+Method-returnType:void
+Method-parameters:[Quaternion q2, float changeAmnt]
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+FieldAccess:w
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+FieldAccess:w
+MethodInvocation:acos
+MethodInvocation:sin
+MethodInvocation:sin
+MethodInvocation:sin
+FieldAccess:x
+FieldAccess:x
+FieldAccess:y
+FieldAccess:y
+FieldAccess:z
+FieldAccess:z
+FieldAccess:w
+FieldAccess:w
+Method-name:nlerp
+Method-returnType:void
+Method-parameters:[Quaternion q2, float blend]
+MethodInvocation:dot
+MethodInvocation:normalizeLocal
+Method-name:add
+Method-returnType:Quaternion
+Method-parameters:[Quaternion q]
+Method-name:addLocal
+Method-returnType:Quaternion
+Method-parameters:[Quaternion q]
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+FieldAccess:w
+Method-name:subtract
+Method-returnType:Quaternion
+Method-parameters:[Quaternion q]
+Method-name:subtractLocal
+Method-returnType:Quaternion
+Method-parameters:[Quaternion q]
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+FieldAccess:w
+Method-name:mult
+Method-returnType:Quaternion
+Method-parameters:[Quaternion q]
+MethodInvocation:mult
+Method-name:mult
+Method-returnType:Quaternion
+Method-parameters:[Quaternion q, Quaternion res]
+Method-name:apply
+Method-returnType:void
+Method-parameters:[Matrix3f matrix]
+MethodInvocation:fromRotationMatrix
+Method-name:fromAxes
+Method-returnType:Quaternion
+Method-parameters:[Vector3f[] axis]
+MethodInvocation:fromAxes
+Method-name:fromAxes
+Method-returnType:Quaternion
+Method-parameters:[Vector3f xAxis, Vector3f yAxis, Vector3f zAxis]
+MethodInvocation:fromRotationMatrix
+Method-name:toAxes
+Method-returnType:void
+Method-parameters:[Vector3f axis[]]
+MethodInvocation:toRotationMatrix
+MethodInvocation:getColumn
+MethodInvocation:getColumn
+MethodInvocation:getColumn
+Method-name:mult
+Method-returnType:Vector3f
+Method-parameters:[Vector3f v]
+MethodInvocation:mult
+Method-name:multLocal
+Method-returnType:Vector3f
+Method-parameters:[Vector3f v]
+Method-name:multLocal
+Method-returnType:Quaternion
+Method-parameters:[Quaternion q]
+Method-name:multLocal
+Method-returnType:Quaternion
+Method-parameters:[float qx, float qy, float qz, float qw]
+Method-name:mult
+Method-returnType:Vector3f
+Method-parameters:[Vector3f v, Vector3f store]
+MethodInvocation:set
+Method-name:mult
+Method-returnType:Quaternion
+Method-parameters:[float scalar]
+Method-name:multLocal
+Method-returnType:Quaternion
+Method-parameters:[float scalar]
+Method-name:dot
+Method-returnType:float
+Method-parameters:[Quaternion q]
+Method-name:norm
+Method-returnType:float
+Method-parameters:[]
+Method-name:normalizeLocal
+Method-returnType:Quaternion
+Method-parameters:[]
+MethodInvocation:invSqrt
+MethodInvocation:norm
+Method-name:inverse
+Method-returnType:Quaternion
+Method-parameters:[]
+MethodInvocation:norm
+Method-name:inverseLocal
+Method-returnType:Quaternion
+Method-parameters:[]
+MethodInvocation:norm
+Method-name:negate
+Method-returnType:void
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+Method-name:isSimilar
+Method-returnType:boolean
+Method-parameters:[Quaternion other, float epsilon]
+MethodInvocation:compare
+MethodInvocation:abs
+MethodInvocation:compare
+MethodInvocation:abs
+MethodInvocation:compare
+MethodInvocation:abs
+MethodInvocation:compare
+MethodInvocation:abs
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeFloat
+MethodInvocation:writeFloat
+MethodInvocation:writeFloat
+MethodInvocation:writeFloat
+Method-name:lookAt
+Method-returnType:Quaternion
+Method-parameters:[Vector3f direction, Vector3f up]
+MethodInvocation:get
+MethodInvocation:normalizeLocal
+MethodInvocation:set
+MethodInvocation:normalizeLocal
+MethodInvocation:crossLocal
+MethodInvocation:set
+MethodInvocation:normalizeLocal
+MethodInvocation:crossLocal
+MethodInvocation:set
+MethodInvocation:fromAxes
+MethodInvocation:release
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter e]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter e]
+MethodInvocation:getCapsule
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+Method-name:opposite
+Method-returnType:Quaternion
+Method-parameters:[]
+MethodInvocation:opposite
+Method-name:opposite
+Method-returnType:Quaternion
+Method-parameters:[Quaternion store]
+MethodInvocation:toAngleAxis
+MethodInvocation:fromAngleAxis
+Method-name:oppositeLocal
+Method-returnType:Quaternion
+Method-parameters:[]
+MethodInvocation:opposite
+Method-name:clone
+Method-returnType:Quaternion
+Method-parameters:[]
+Method-name:multLocalOther
+Method-returnType:void
+Method-parameters:[Matrix4f matrix4f]
+MethodInvocation:toAngleAxis
+MethodInvocation:fromAngleAxis
+MethodInvocation:multLocal

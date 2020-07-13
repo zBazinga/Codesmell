@@ -1,0 +1,603 @@
+Class:Matrix4f
+Field:serialVersionUID
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:m00
+Field:m01
+Field:m02
+Field:m03
+Field:m10
+Field:m11
+Field:m12
+Field:m13
+Field:m20
+Field:m21
+Field:m22
+Field:m23
+Field:m30
+Field:m31
+Field:m32
+Field:m33
+Field:ZERO
+Field:IDENTITY
+Method-name:Matrix4f
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:loadIdentity
+Method-name:Matrix4f
+Method-returnType:null
+Method-parameters:[float m00, float m01, float m02, float m03, float m10, float m11, float m12, float m13, float m20, float m21, float m22, float m23, float m30, float m31, float m32, float m33]
+FieldAccess:m00
+FieldAccess:m01
+FieldAccess:m02
+FieldAccess:m03
+FieldAccess:m10
+FieldAccess:m11
+FieldAccess:m12
+FieldAccess:m13
+FieldAccess:m20
+FieldAccess:m21
+FieldAccess:m22
+FieldAccess:m23
+FieldAccess:m30
+FieldAccess:m31
+FieldAccess:m32
+FieldAccess:m33
+Method-name:Matrix4f
+Method-returnType:null
+Method-parameters:[float[] array]
+MethodInvocation:set
+Method-name:Matrix4f
+Method-returnType:null
+Method-parameters:[Matrix4f mat]
+MethodInvocation:copy
+Method-name:copy
+Method-returnType:void
+Method-parameters:[Matrix4f matrix]
+MethodInvocation:loadIdentity
+Method-name:fromFrame
+Method-returnType:void
+Method-parameters:[Vector3f location, Vector3f direction, Vector3f up, Vector3f left]
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:crossLocal
+MethodInvocation:set
+MethodInvocation:crossLocal
+MethodInvocation:set
+MethodInvocation:dot
+MethodInvocation:dot
+MethodInvocation:dot
+MethodInvocation:release
+Method-name:get
+Method-returnType:void
+Method-parameters:[float[] matrix]
+MethodInvocation:get
+Method-name:get
+Method-returnType:void
+Method-parameters:[float[] matrix, boolean rowMajor]
+Method-name:get
+Method-returnType:float
+Method-parameters:[int i, int j]
+MethodInvocation:warning
+Method-name:getColumn
+Method-returnType:float[]
+Method-parameters:[int i]
+MethodInvocation:getColumn
+Method-name:getColumn
+Method-returnType:float[]
+Method-parameters:[int i, float[] store]
+MethodInvocation:warning
+Method-name:setColumn
+Method-returnType:void
+Method-parameters:[int i, float[] column]
+MethodInvocation:warning
+MethodInvocation:warning
+Method-name:set
+Method-returnType:void
+Method-parameters:[int i, int j, float value]
+MethodInvocation:warning
+Method-name:set
+Method-returnType:void
+Method-parameters:[float[][] matrix]
+FieldAccess:length
+Method-name:set
+Method-returnType:void
+Method-parameters:[float m00, float m01, float m02, float m03, float m10, float m11, float m12, float m13, float m20, float m21, float m22, float m23, float m30, float m31, float m32, float m33]
+FieldAccess:m00
+FieldAccess:m01
+FieldAccess:m02
+FieldAccess:m03
+FieldAccess:m10
+FieldAccess:m11
+FieldAccess:m12
+FieldAccess:m13
+FieldAccess:m20
+FieldAccess:m21
+FieldAccess:m22
+FieldAccess:m23
+FieldAccess:m30
+FieldAccess:m31
+FieldAccess:m32
+FieldAccess:m33
+Method-name:set
+Method-returnType:Matrix4f
+Method-parameters:[Matrix4f matrix]
+Method-name:set
+Method-returnType:void
+Method-parameters:[float[] matrix]
+MethodInvocation:set
+Method-name:set
+Method-returnType:void
+Method-parameters:[float[] matrix, boolean rowMajor]
+Method-name:transpose
+Method-returnType:Matrix4f
+Method-parameters:[]
+MethodInvocation:get
+Method-name:transposeLocal
+Method-returnType:Matrix4f
+Method-parameters:[]
+Method-name:toFloatBuffer
+Method-returnType:FloatBuffer
+Method-parameters:[]
+MethodInvocation:toFloatBuffer
+Method-name:toFloatBuffer
+Method-returnType:FloatBuffer
+Method-parameters:[boolean columnMajor]
+MethodInvocation:createFloatBuffer
+MethodInvocation:fillFloatBuffer
+MethodInvocation:rewind
+Method-name:fillFloatBuffer
+Method-returnType:FloatBuffer
+Method-parameters:[FloatBuffer fb]
+MethodInvocation:fillFloatBuffer
+Method-name:fillFloatBuffer
+Method-returnType:FloatBuffer
+Method-parameters:[FloatBuffer fb, boolean columnMajor]
+MethodInvocation:get
+MethodInvocation:fillFloatArray
+MethodInvocation:put
+MethodInvocation:release
+Method-name:fillFloatArray
+Method-returnType:void
+Method-parameters:[float[] f, boolean columnMajor]
+Method-name:readFloatBuffer
+Method-returnType:Matrix4f
+Method-parameters:[FloatBuffer fb]
+MethodInvocation:readFloatBuffer
+Method-name:readFloatBuffer
+Method-returnType:Matrix4f
+Method-parameters:[FloatBuffer fb, boolean columnMajor]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+Method-name:loadIdentity
+Method-returnType:void
+Method-parameters:[]
+Method-name:fromFrustum
+Method-returnType:void
+Method-parameters:[float near, float far, float left, float right, float top, float bottom, boolean parallel]
+MethodInvocation:loadIdentity
+Method-name:fromAngleAxis
+Method-returnType:void
+Method-parameters:[float angle, Vector3f axis]
+MethodInvocation:normalize
+MethodInvocation:fromAngleNormalAxis
+Method-name:fromAngleNormalAxis
+Method-returnType:void
+Method-parameters:[float angle, Vector3f axis]
+MethodInvocation:zero
+MethodInvocation:cos
+MethodInvocation:sin
+Method-name:multLocal
+Method-returnType:void
+Method-parameters:[float scalar]
+Method-name:mult
+Method-returnType:Matrix4f
+Method-parameters:[float scalar]
+MethodInvocation:set
+MethodInvocation:multLocal
+Method-name:mult
+Method-returnType:Matrix4f
+Method-parameters:[float scalar, Matrix4f store]
+MethodInvocation:set
+MethodInvocation:multLocal
+Method-name:mult
+Method-returnType:Matrix4f
+Method-parameters:[Matrix4f in2]
+MethodInvocation:mult
+Method-name:mult
+Method-returnType:Matrix4f
+Method-parameters:[Matrix4f in2, Matrix4f store]
+MethodInvocation:get
+MethodInvocation:release
+Method-name:multLocal
+Method-returnType:Matrix4f
+Method-parameters:[Matrix4f in2]
+MethodInvocation:mult
+Method-name:mult
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vec]
+MethodInvocation:mult
+Method-name:mult
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vec, Vector3f store]
+Method-name:mult
+Method-returnType:Vector4f
+Method-parameters:[Vector4f vec]
+MethodInvocation:mult
+Method-name:mult
+Method-returnType:Vector4f
+Method-parameters:[Vector4f vec, Vector4f store]
+MethodInvocation:warning
+Method-name:multAcross
+Method-returnType:Vector4f
+Method-parameters:[Vector4f vec]
+MethodInvocation:multAcross
+Method-name:multAcross
+Method-returnType:Vector4f
+Method-parameters:[Vector4f vec, Vector4f store]
+MethodInvocation:warning
+Method-name:multNormal
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vec, Vector3f store]
+Method-name:multNormalAcross
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vec, Vector3f store]
+Method-name:multProj
+Method-returnType:float
+Method-parameters:[Vector3f vec, Vector3f store]
+Method-name:multAcross
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vec, Vector3f store]
+MethodInvocation:warning
+Method-name:mult
+Method-returnType:Quaternion
+Method-parameters:[Quaternion vec, Quaternion store]
+MethodInvocation:warning
+Method-name:mult
+Method-returnType:float[]
+Method-parameters:[float[] vec4f]
+MethodInvocation:warning
+Method-name:multAcross
+Method-returnType:float[]
+Method-parameters:[float[] vec4f]
+MethodInvocation:warning
+Method-name:invert
+Method-returnType:Matrix4f
+Method-parameters:[]
+MethodInvocation:invert
+Method-name:invert
+Method-returnType:Matrix4f
+Method-parameters:[Matrix4f store]
+MethodInvocation:abs
+MethodInvocation:multLocal
+Method-name:invertLocal
+Method-returnType:Matrix4f
+Method-parameters:[]
+MethodInvocation:abs
+MethodInvocation:zero
+MethodInvocation:multLocal
+Method-name:adjoint
+Method-returnType:Matrix4f
+Method-parameters:[]
+MethodInvocation:adjoint
+Method-name:setTransform
+Method-returnType:void
+Method-parameters:[Vector3f position, Vector3f scale, Matrix3f rotMat]
+Method-name:adjoint
+Method-returnType:Matrix4f
+Method-parameters:[Matrix4f store]
+Method-name:determinant
+Method-returnType:float
+Method-parameters:[]
+Method-name:zero
+Method-returnType:Matrix4f
+Method-parameters:[]
+Method-name:add
+Method-returnType:Matrix4f
+Method-parameters:[Matrix4f mat]
+FieldAccess:m00
+FieldAccess:m01
+FieldAccess:m02
+FieldAccess:m03
+FieldAccess:m10
+FieldAccess:m11
+FieldAccess:m12
+FieldAccess:m13
+FieldAccess:m20
+FieldAccess:m21
+FieldAccess:m22
+FieldAccess:m23
+FieldAccess:m30
+FieldAccess:m31
+FieldAccess:m32
+FieldAccess:m33
+Method-name:addLocal
+Method-returnType:void
+Method-parameters:[Matrix4f mat]
+Method-name:toTranslationVector
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:toTranslationVector
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vector]
+MethodInvocation:set
+Method-name:toRotationQuat
+Method-returnType:Quaternion
+Method-parameters:[]
+MethodInvocation:fromRotationMatrix
+MethodInvocation:toRotationMatrix
+Method-name:toRotationQuat
+Method-returnType:Quaternion
+Method-parameters:[Quaternion q]
+MethodInvocation:fromRotationMatrix
+Method-name:toRotationMatrix
+Method-returnType:Matrix3f
+Method-parameters:[]
+Method-name:toRotationMatrix
+Method-returnType:void
+Method-parameters:[Matrix3f mat]
+Method-name:toScaleVector
+Method-returnType:Vector3f
+Method-parameters:[]
+MethodInvocation:toScaleVector
+Method-name:toScaleVector
+Method-returnType:Vector3f
+Method-parameters:[Vector3f store]
+MethodInvocation:sqrt
+MethodInvocation:sqrt
+MethodInvocation:sqrt
+MethodInvocation:set
+Method-name:setScale
+Method-returnType:void
+Method-parameters:[float x, float y, float z]
+MethodInvocation:sqrt
+MethodInvocation:sqrt
+MethodInvocation:sqrt
+Method-name:setScale
+Method-returnType:void
+Method-parameters:[Vector3f scale]
+MethodInvocation:setScale
+Method-name:setTranslation
+Method-returnType:void
+Method-parameters:[float[] translation]
+Method-name:setTranslation
+Method-returnType:void
+Method-parameters:[float x, float y, float z]
+Method-name:setTranslation
+Method-returnType:void
+Method-parameters:[Vector3f translation]
+Method-name:setInverseTranslation
+Method-returnType:void
+Method-parameters:[float[] translation]
+Method-name:angleRotation
+Method-returnType:void
+Method-parameters:[Vector3f angles]
+MethodInvocation:sin
+MethodInvocation:cos
+MethodInvocation:sin
+MethodInvocation:cos
+MethodInvocation:sin
+MethodInvocation:cos
+Method-name:setRotationQuaternion
+Method-returnType:void
+Method-parameters:[Quaternion quat]
+MethodInvocation:toRotationMatrix
+Method-name:setInverseRotationRadians
+Method-returnType:void
+Method-parameters:[float[] angles]
+MethodInvocation:cos
+MethodInvocation:sin
+MethodInvocation:cos
+MethodInvocation:sin
+MethodInvocation:cos
+MethodInvocation:sin
+Method-name:setInverseRotationDegrees
+Method-returnType:void
+Method-parameters:[float[] angles]
+MethodInvocation:setInverseRotationRadians
+Method-name:inverseTranslateVect
+Method-returnType:void
+Method-parameters:[float[] vec]
+Method-name:inverseTranslateVect
+Method-returnType:void
+Method-parameters:[Vector3f data]
+Method-name:translateVect
+Method-returnType:void
+Method-parameters:[Vector3f data]
+Method-name:inverseRotateVect
+Method-returnType:void
+Method-parameters:[Vector3f vec]
+Method-name:rotateVect
+Method-returnType:void
+Method-parameters:[Vector3f vec]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter e]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter e]
+MethodInvocation:getCapsule
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+Method-name:isIdentity
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:scale
+Method-returnType:void
+Method-parameters:[Vector3f scale]
+MethodInvocation:getX
+MethodInvocation:getX
+MethodInvocation:getX
+MethodInvocation:getX
+MethodInvocation:getY
+MethodInvocation:getY
+MethodInvocation:getY
+MethodInvocation:getY
+MethodInvocation:getZ
+MethodInvocation:getZ
+MethodInvocation:getZ
+MethodInvocation:getZ
+Method-name:equalIdentity
+Method-returnType:boolean
+Method-parameters:[Matrix4f mat]
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+Method-name:clone
+Method-returnType:Matrix4f
+Method-parameters:[]

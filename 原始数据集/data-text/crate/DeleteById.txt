@@ -1,0 +1,49 @@
+Class:DeleteById
+Field:table
+Field:docKeys
+Method-name:DeleteById
+Method-returnType:null
+Method-parameters:[DocTableInfo table, DocKeys docKeys]
+FieldAccess:table
+FieldAccess:docKeys
+Method-name:table
+Method-returnType:DocTableInfo
+Method-parameters:[]
+Method-name:docKeys
+Method-returnType:DocKeys
+Method-parameters:[]
+Method-name:type
+Method-returnType:StatementType
+Method-parameters:[]
+Method-name:executeOrFail
+Method-returnType:void
+Method-parameters:[DependencyCarrier dependencies, PlannerContext plannerContext, RowConsumer consumer, Row params, SubQueryResults subQueryResults]
+MethodInvocation:execute
+MethodInvocation:createExecutor
+Method-name:executeBulk
+Method-returnType:List<CompletableFuture<Long>>
+Method-parameters:[DependencyCarrier dependencies, PlannerContext plannerContext, List<Row> bulkParams, SubQueryResults subQueryResults]
+MethodInvocation:executeBulk
+MethodInvocation:createExecutor
+Class:DeleteRequests
+Field:jobId
+Field:requestTimeout
+Method-name:DeleteRequests
+Method-returnType:null
+Method-parameters:[UUID jobId, TimeValue requestTimeout]
+FieldAccess:jobId
+FieldAccess:requestTimeout
+Method-name:newRequest
+Method-returnType:ShardDeleteRequest
+Method-parameters:[ShardId shardId]
+MethodInvocation:timeout
+Method-name:bind
+Method-returnType:void
+Method-parameters:[Row parameters, SubQueryResults subQueryResults]
+Method-name:addItem
+Method-returnType:void
+Method-parameters:[ShardDeleteRequest request, int location, String id, Long version, Long seqNo, Long primaryTerm]
+MethodInvocation:version
+MethodInvocation:seqNo
+MethodInvocation:primaryTerm
+MethodInvocation:add

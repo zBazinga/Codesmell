@@ -1,0 +1,76 @@
+Class:Result
+Method-name:report
+Method-returnType:void
+Method-parameters:[final Object src, SourceChecker sourceChecker]
+MethodInvocation:isSuccess
+MethodInvocation:shouldSuppressWarnings
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:getMessageKeys
+MethodInvocation:getDiagMessages
+MethodInvocation:report
+Field:Type
+Method-name:merge
+Method-returnType:Type
+Method-parameters:[Type a, Type b]
+Field:type
+Field:messages
+Field:SUCCESS
+Method-name:failure
+Method-returnType:Result
+Method-parameters:[@CompilerMessageKey String messageKey, @Nullable Object... args]
+MethodInvocation:singleton
+Method-name:warning
+Method-returnType:Result
+Method-parameters:[@CompilerMessageKey String messageKey, @Nullable Object... args]
+MethodInvocation:singleton
+Method-name:Result
+Method-returnType:null
+Method-parameters:[Type type, Collection<DiagMessage> messagePairs]
+FieldAccess:type
+FieldAccess:messages
+MethodInvocation:getMessageKey
+MethodInvocation:getArgs
+MethodInvocation:copyOf
+MethodInvocation:getArgs
+MethodInvocation:toString
+MethodInvocation:add
+FieldAccess:messages
+Method-name:merge
+Method-returnType:Result
+Method-parameters:[Result r]
+MethodInvocation:isSuccess
+MethodInvocation:isSuccess
+MethodInvocation:size
+FieldAccess:messages
+MethodInvocation:size
+MethodInvocation:addAll
+FieldAccess:messages
+MethodInvocation:addAll
+MethodInvocation:merge
+FieldAccess:type
+Method-name:isSuccess
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isFailure
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isWarning
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getMessageKeys
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getDiagMessages
+MethodInvocation:getDiagMessages
+MethodInvocation:add
+MethodInvocation:getMessageKey
+MethodInvocation:unmodifiableList
+Method-name:getDiagMessages
+Method-returnType:List<DiagMessage>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

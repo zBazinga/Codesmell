@@ -1,0 +1,359 @@
+Class:NettyNioAsyncHttpClient
+Field:CLIENT_NAME
+Field:log
+MethodInvocation:getLogger
+Field:MAX_STREAMS_ALLOWED
+Field:DEFAULT_INITIAL_WINDOW_SIZE
+Field:NETTY_HTTP_DEFAULTS
+MethodInvocation:build
+MethodInvocation:put
+MethodInvocation:builder
+MethodInvocation:ofSeconds
+Field:sdkEventLoopGroup
+Field:pools
+Field:configuration
+Method-name:NettyNioAsyncHttpClient
+Method-returnType:null
+Method-parameters:[DefaultBuilder builder, AttributeMap serviceDefaultsMap]
+FieldAccess:configuration
+MethodInvocation:get
+FieldAccess:sdkEventLoopGroup
+MethodInvocation:eventLoopGroup
+MethodInvocation:resolveMaxHttp2Streams
+MethodInvocation:resolveInitialWindowSize
+FieldAccess:pools
+MethodInvocation:build
+MethodInvocation:proxyConfiguration
+MethodInvocation:sslProvider
+MethodInvocation:sdkEventLoopGroup
+MethodInvocation:healthCheckPingPeriod
+MethodInvocation:initialWindowSize
+MethodInvocation:maxStreams
+MethodInvocation:protocol
+MethodInvocation:configuration
+MethodInvocation:sdkChannelOptions
+MethodInvocation:builder
+MethodInvocation:resolveHealthCheckPingPeriod
+MethodInvocation:resolveSslProvider
+Method-name:NettyNioAsyncHttpClient
+Method-returnType:null
+Method-parameters:[SdkEventLoopGroup sdkEventLoopGroup, SdkChannelPoolMap<URI,? extends ChannelPool> pools, NettyConfiguration configuration]
+FieldAccess:sdkEventLoopGroup
+FieldAccess:pools
+FieldAccess:configuration
+Method-name:execute
+Method-returnType:CompletableFuture<Void>
+Method-parameters:[AsyncExecuteRequest request]
+MethodInvocation:createRequestContext
+MethodInvocation:execute
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:createRequestContext
+Method-returnType:RequestContext
+Method-parameters:[AsyncExecuteRequest request]
+MethodInvocation:get
+MethodInvocation:poolKey
+MethodInvocation:request
+MethodInvocation:eventLoopGroup
+Method-name:eventLoopGroup
+Method-returnType:SdkEventLoopGroup
+Method-parameters:[DefaultBuilder builder]
+MethodInvocation:isTrue
+MethodInvocation:orElseGet
+MethodInvocation:map
+MethodInvocation:fromNullable
+MethodInvocation:map
+Method-name:poolKey
+Method-returnType:URI
+Method-parameters:[SdkHttpRequest sdkRequest]
+MethodInvocation:invokeSafely
+MethodInvocation:protocol
+MethodInvocation:host
+MethodInvocation:port
+Method-name:resolveSslProvider
+Method-returnType:SslProvider
+Method-parameters:[DefaultBuilder builder]
+MethodInvocation:defaultClientProvider
+Method-name:resolveMaxHttp2Streams
+Method-returnType:long
+Method-parameters:[Integer topLevelValue, Http2Configuration http2Configuration]
+MethodInvocation:maxStreams
+MethodInvocation:min
+MethodInvocation:maxStreams
+Method-name:resolveInitialWindowSize
+Method-returnType:int
+Method-parameters:[Http2Configuration http2Configuration]
+MethodInvocation:initialWindowSize
+MethodInvocation:initialWindowSize
+Method-name:nonManagedEventLoopGroup
+Method-returnType:SdkEventLoopGroup
+Method-parameters:[SdkEventLoopGroup eventLoopGroup]
+MethodInvocation:create
+MethodInvocation:eventLoopGroup
+MethodInvocation:channelFactory
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:runAndLogError
+MethodInvocation:runAndLogError
+MethodInvocation:closeEventLoopUninterruptibly
+MethodInvocation:eventLoopGroup
+Method-name:closeEventLoopUninterruptibly
+Method-returnType:void
+Method-parameters:[EventLoopGroup eventLoopGroup]
+MethodInvocation:get
+MethodInvocation:shutdownGracefully
+MethodInvocation:interrupt
+MethodInvocation:currentThread
+MethodInvocation:error
+MethodInvocation:format
+Method-name:clientName
+Method-returnType:String
+Method-parameters:[]
+Method-name:configuration
+Method-returnType:NettyConfiguration
+Method-parameters:[]
+Method-name:maxConcurrency
+Method-returnType:Builder
+Method-parameters:[Integer maxConcurrency]
+Method-name:maxPendingConnectionAcquires
+Method-returnType:Builder
+Method-parameters:[Integer maxPendingAcquires]
+Method-name:readTimeout
+Method-returnType:Builder
+Method-parameters:[Duration readTimeout]
+Method-name:writeTimeout
+Method-returnType:Builder
+Method-parameters:[Duration writeTimeout]
+Method-name:connectionTimeout
+Method-returnType:Builder
+Method-parameters:[Duration timeout]
+Method-name:connectionAcquisitionTimeout
+Method-returnType:Builder
+Method-parameters:[Duration connectionAcquisitionTimeout]
+Method-name:connectionTimeToLive
+Method-returnType:Builder
+Method-parameters:[Duration connectionTimeToLive]
+Method-name:connectionMaxIdleTime
+Method-returnType:Builder
+Method-parameters:[Duration maxIdleConnectionTimeout]
+Method-name:useIdleConnectionReaper
+Method-returnType:Builder
+Method-parameters:[Boolean useConnectionReaper]
+Method-name:eventLoopGroup
+Method-returnType:Builder
+Method-parameters:[SdkEventLoopGroup eventLoopGroup]
+Method-name:eventLoopGroupBuilder
+Method-returnType:Builder
+Method-parameters:[SdkEventLoopGroup.Builder eventLoopGroupBuilder]
+Method-name:protocol
+Method-returnType:Builder
+Method-parameters:[Protocol protocol]
+Method-name:putChannelOption
+Method-returnType:Builder
+Method-parameters:[ChannelOption channelOption, Object value]
+Method-name:maxHttp2Streams
+Method-returnType:Builder
+Method-parameters:[Integer maxHttp2Streams]
+Method-name:sslProvider
+Method-returnType:Builder
+Method-parameters:[SslProvider sslProvider]
+Method-name:proxyConfiguration
+Method-returnType:Builder
+Method-parameters:[ProxyConfiguration proxyConfiguration]
+Method-name:tlsKeyManagersProvider
+Method-returnType:Builder
+Method-parameters:[TlsKeyManagersProvider keyManagersProvider]
+Method-name:tlsTrustManagersProvider
+Method-returnType:Builder
+Method-parameters:[TlsTrustManagersProvider trustManagersProvider]
+Method-name:http2Configuration
+Method-returnType:Builder
+Method-parameters:[Http2Configuration http2Configuration]
+Method-name:http2Configuration
+Method-returnType:Builder
+Method-parameters:[Consumer<Http2Configuration.Builder> http2ConfigurationBuilderConsumer]
+Class:DefaultBuilder
+Field:standardOptions
+MethodInvocation:builder
+Field:sdkChannelOptions
+Field:eventLoopGroup
+Field:eventLoopGroupBuilder
+Field:maxHttp2Streams
+Field:http2Configuration
+Field:sslProvider
+Field:proxyConfiguration
+Method-name:DefaultBuilder
+Method-returnType:null
+Method-parameters:[]
+Method-name:maxConcurrency
+Method-returnType:Builder
+Method-parameters:[Integer maxConcurrency]
+MethodInvocation:put
+Method-name:setMaxConcurrency
+Method-returnType:void
+Method-parameters:[Integer maxConnectionsPerEndpoint]
+MethodInvocation:maxConcurrency
+Method-name:maxPendingConnectionAcquires
+Method-returnType:Builder
+Method-parameters:[Integer maxPendingAcquires]
+MethodInvocation:put
+Method-name:setMaxPendingConnectionAcquires
+Method-returnType:void
+Method-parameters:[Integer maxPendingAcquires]
+MethodInvocation:maxPendingConnectionAcquires
+Method-name:readTimeout
+Method-returnType:Builder
+Method-parameters:[Duration readTimeout]
+MethodInvocation:isNotNegative
+MethodInvocation:put
+Method-name:setReadTimeout
+Method-returnType:void
+Method-parameters:[Duration readTimeout]
+MethodInvocation:readTimeout
+Method-name:writeTimeout
+Method-returnType:Builder
+Method-parameters:[Duration writeTimeout]
+MethodInvocation:isNotNegative
+MethodInvocation:put
+Method-name:setWriteTimeout
+Method-returnType:void
+Method-parameters:[Duration writeTimeout]
+MethodInvocation:writeTimeout
+Method-name:connectionTimeout
+Method-returnType:Builder
+Method-parameters:[Duration timeout]
+MethodInvocation:isPositive
+MethodInvocation:put
+Method-name:setConnectionTimeout
+Method-returnType:void
+Method-parameters:[Duration connectionTimeout]
+MethodInvocation:connectionTimeout
+Method-name:connectionAcquisitionTimeout
+Method-returnType:Builder
+Method-parameters:[Duration connectionAcquisitionTimeout]
+MethodInvocation:isPositive
+MethodInvocation:put
+Method-name:setConnectionAcquisitionTimeout
+Method-returnType:void
+Method-parameters:[Duration connectionAcquisitionTimeout]
+MethodInvocation:connectionAcquisitionTimeout
+Method-name:connectionTimeToLive
+Method-returnType:Builder
+Method-parameters:[Duration connectionTimeToLive]
+MethodInvocation:isPositive
+MethodInvocation:put
+Method-name:setConnectionTimeToLive
+Method-returnType:void
+Method-parameters:[Duration connectionTimeToLive]
+MethodInvocation:connectionTimeToLive
+Method-name:connectionMaxIdleTime
+Method-returnType:Builder
+Method-parameters:[Duration connectionMaxIdleTime]
+MethodInvocation:isPositive
+MethodInvocation:put
+Method-name:setConnectionMaxIdleTime
+Method-returnType:void
+Method-parameters:[Duration connectionMaxIdleTime]
+MethodInvocation:connectionMaxIdleTime
+Method-name:useIdleConnectionReaper
+Method-returnType:Builder
+Method-parameters:[Boolean useIdleConnectionReaper]
+MethodInvocation:put
+Method-name:setUseIdleConnectionReaper
+Method-returnType:void
+Method-parameters:[Boolean useIdleConnectionReaper]
+MethodInvocation:useIdleConnectionReaper
+Method-name:eventLoopGroup
+Method-returnType:Builder
+Method-parameters:[SdkEventLoopGroup eventLoopGroup]
+FieldAccess:eventLoopGroup
+Method-name:setEventLoopGroup
+Method-returnType:void
+Method-parameters:[SdkEventLoopGroup eventLoopGroup]
+MethodInvocation:eventLoopGroup
+Method-name:eventLoopGroupBuilder
+Method-returnType:Builder
+Method-parameters:[SdkEventLoopGroup.Builder eventLoopGroupBuilder]
+FieldAccess:eventLoopGroupBuilder
+Method-name:setEventLoopGroupBuilder
+Method-returnType:void
+Method-parameters:[SdkEventLoopGroup.Builder eventLoopGroupBuilder]
+MethodInvocation:eventLoopGroupBuilder
+Method-name:protocol
+Method-returnType:Builder
+Method-parameters:[Protocol protocol]
+MethodInvocation:put
+Method-name:setProtocol
+Method-returnType:void
+Method-parameters:[Protocol protocol]
+MethodInvocation:protocol
+Method-name:putChannelOption
+Method-returnType:Builder
+Method-parameters:[ChannelOption channelOption, Object value]
+MethodInvocation:putOption
+FieldAccess:sdkChannelOptions
+Method-name:maxHttp2Streams
+Method-returnType:Builder
+Method-parameters:[Integer maxHttp2Streams]
+FieldAccess:maxHttp2Streams
+Method-name:setMaxHttp2Streams
+Method-returnType:void
+Method-parameters:[Integer maxHttp2Streams]
+MethodInvocation:maxHttp2Streams
+Method-name:sslProvider
+Method-returnType:Builder
+Method-parameters:[SslProvider sslProvider]
+FieldAccess:sslProvider
+Method-name:setSslProvider
+Method-returnType:void
+Method-parameters:[SslProvider sslProvider]
+MethodInvocation:sslProvider
+Method-name:proxyConfiguration
+Method-returnType:Builder
+Method-parameters:[ProxyConfiguration proxyConfiguration]
+FieldAccess:proxyConfiguration
+Method-name:setProxyConfiguration
+Method-returnType:void
+Method-parameters:[ProxyConfiguration proxyConfiguration]
+MethodInvocation:proxyConfiguration
+Method-name:tlsKeyManagersProvider
+Method-returnType:Builder
+Method-parameters:[TlsKeyManagersProvider tlsKeyManagersProvider]
+MethodInvocation:put
+FieldAccess:standardOptions
+Method-name:setTlsKeyManagersProvider
+Method-returnType:void
+Method-parameters:[TlsKeyManagersProvider tlsKeyManagersProvider]
+MethodInvocation:tlsKeyManagersProvider
+Method-name:tlsTrustManagersProvider
+Method-returnType:Builder
+Method-parameters:[TlsTrustManagersProvider tlsTrustManagersProvider]
+MethodInvocation:put
+Method-name:setTlsTrustManagersProvider
+Method-returnType:void
+Method-parameters:[TlsTrustManagersProvider tlsTrustManagersProvider]
+MethodInvocation:tlsTrustManagersProvider
+Method-name:http2Configuration
+Method-returnType:Builder
+Method-parameters:[Http2Configuration http2Configuration]
+FieldAccess:http2Configuration
+Method-name:http2Configuration
+Method-returnType:Builder
+Method-parameters:[Consumer<Http2Configuration.Builder> http2ConfigurationBuilderConsumer]
+MethodInvocation:builder
+MethodInvocation:accept
+MethodInvocation:http2Configuration
+MethodInvocation:build
+Method-name:setHttp2Configuration
+Method-returnType:void
+Method-parameters:[Http2Configuration http2Configuration]
+MethodInvocation:http2Configuration
+Method-name:buildWithDefaults
+Method-returnType:SdkAsyncHttpClient
+Method-parameters:[AttributeMap serviceDefaults]
+MethodInvocation:merge
+MethodInvocation:merge
+MethodInvocation:merge
+MethodInvocation:build

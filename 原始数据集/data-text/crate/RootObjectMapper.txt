@@ -1,0 +1,156 @@
+Class:RootObjectMapper
+Class:Defaults
+Field:DYNAMIC_DATE_TIME_FORMATTERS
+MethodInvocation:getStrictStandardDateFormatter
+Field:DATE_DETECTION
+Field:NUMERIC_DETECTION
+Class:Builder
+Field:dynamicTemplates
+Field:dynamicDateTimeFormatters
+Field:dateDetection
+Field:numericDetection
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[String name]
+FieldAccess:builder
+Method-name:dynamicDateTimeFormatter
+Method-returnType:Builder
+Method-parameters:[Collection<FormatDateTimeFormatter> dateTimeFormatters]
+FieldAccess:dynamicDateTimeFormatters
+MethodInvocation:toArray
+Method-name:dynamicTemplates
+Method-returnType:Builder
+Method-parameters:[Collection<DynamicTemplate> templates]
+FieldAccess:dynamicTemplates
+MethodInvocation:toArray
+Method-name:build
+Method-returnType:RootObjectMapper
+Method-parameters:[BuilderContext context]
+Method-name:createMapper
+Method-returnType:ObjectMapper
+Method-parameters:[String name, Integer position, String fullPath, boolean enabled, Dynamic dynamic, Map<String,Mapper> mappers, @Nullable Settings settings]
+Class:TypeParser
+Method-name:parse
+Method-returnType:Mapper.Builder
+Method-parameters:[String name, Map<String,Object> node, ParserContext parserContext]
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:parseObjectOrDocumentTypeProperties
+MethodInvocation:processField
+MethodInvocation:indexVersionCreated
+MethodInvocation:remove
+Method-name:processField
+Method-returnType:boolean
+Method-parameters:[RootObjectMapper.Builder builder, String fieldName, Object fieldNode, Version indexVersionCreated]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:startsWith
+MethodInvocation:toString
+MethodInvocation:add
+MethodInvocation:parseDateTimeFormatter
+MethodInvocation:dynamicDateTimeFormatter
+MethodInvocation:equals
+MethodInvocation:toString
+MethodInvocation:dynamicDateTimeFormatter
+MethodInvocation:emptyList
+MethodInvocation:dynamicDateTimeFormatter
+MethodInvocation:singleton
+MethodInvocation:parseDateTimeFormatter
+MethodInvocation:equals
+MethodInvocation:size
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:parse
+MethodInvocation:add
+MethodInvocation:dynamicTemplates
+MethodInvocation:equals
+MethodInvocation:nodeBooleanValue
+MethodInvocation:equals
+MethodInvocation:nodeBooleanValue
+Field:dynamicDateTimeFormatters
+Field:dateDetection
+Field:numericDetection
+Field:dynamicTemplates
+Method-name:RootObjectMapper
+Method-returnType:null
+Method-parameters:[String name, boolean enabled, Dynamic dynamic, Map<String,Mapper> mappers, Explicit<FormatDateTimeFormatter[]> dynamicDateTimeFormatters, Explicit<DynamicTemplate[]> dynamicTemplates, Explicit<Boolean> dateDetection, Explicit<Boolean> numericDetection, Settings settings]
+FieldAccess:dynamicTemplates
+FieldAccess:dynamicDateTimeFormatters
+FieldAccess:dateDetection
+FieldAccess:numericDetection
+Method-name:mappingUpdate
+Method-returnType:ObjectMapper
+Method-parameters:[Mapper mapper]
+Method-name:dateDetection
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:value
+FieldAccess:dateDetection
+Method-name:numericDetection
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:value
+FieldAccess:numericDetection
+Method-name:dynamicDateTimeFormatters
+Method-returnType:FormatDateTimeFormatter[]
+Method-parameters:[]
+MethodInvocation:value
+Method-name:findTemplateBuilder
+Method-returnType:Mapper.Builder
+Method-parameters:[ParseContext context, String name, XContentFieldType matchType]
+MethodInvocation:findTemplateBuilder
+MethodInvocation:defaultMappingType
+Method-name:findTemplate
+Method-returnType:DynamicTemplate
+Method-parameters:[ContentPath path, String name, XContentFieldType matchType]
+MethodInvocation:pathAsText
+MethodInvocation:value
+MethodInvocation:match
+Method-name:merge
+Method-returnType:RootObjectMapper
+Method-parameters:[Mapper mergeWith, boolean updateAllTypes]
+Method-name:doMerge
+Method-returnType:void
+Method-parameters:[ObjectMapper mergeWith, boolean updateAllTypes]
+MethodInvocation:explicit
+FieldAccess:numericDetection
+MethodInvocation:explicit
+FieldAccess:dateDetection
+MethodInvocation:explicit
+FieldAccess:dynamicDateTimeFormatters
+MethodInvocation:explicit
+FieldAccess:dynamicTemplates
+Method-name:updateFieldType
+Method-returnType:RootObjectMapper
+Method-parameters:[Map<String,MappedFieldType> fullNameToFieldType]
+Method-name:doXContent
+Method-returnType:void
+Method-parameters:[XContentBuilder builder, ToXContent.Params params]
+MethodInvocation:paramAsBoolean
+MethodInvocation:explicit
+MethodInvocation:startArray
+MethodInvocation:value
+MethodInvocation:value
+MethodInvocation:format
+MethodInvocation:endArray
+MethodInvocation:explicit
+MethodInvocation:startArray
+MethodInvocation:value
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:name
+MethodInvocation:endObject
+MethodInvocation:endArray
+MethodInvocation:explicit
+MethodInvocation:field
+MethodInvocation:value
+MethodInvocation:explicit
+MethodInvocation:field
+MethodInvocation:value

@@ -1,0 +1,147 @@
+Class:Version
+Field:V_EMPTY_ID
+Field:V_EMPTY
+Field:ES_V_6_1_4_ID
+Field:ES_V_6_1_4
+Field:ES_V_6_5_1_ID
+Field:ES_V_6_5_1
+Field:INTERNAL_OFFSET
+Field:ES_V_7_0_0_ID
+Field:V_4_0_0
+Field:CURRENT
+Method-name:readVersion
+Method-returnType:Version
+Method-parameters:[StreamInput in]
+MethodInvocation:fromId
+MethodInvocation:readVInt
+Method-name:fromId
+Method-returnType:Version
+Method-parameters:[int internalId]
+Method-name:indexCreated
+Method-returnType:Version
+Method-parameters:[Settings indexSettings]
+MethodInvocation:get
+MethodInvocation:format
+MethodInvocation:getKey
+MethodInvocation:get
+Method-name:writeVersion
+Method-returnType:void
+Method-parameters:[Version version, StreamOutput out]
+MethodInvocation:writeVInt
+Method-name:min
+Method-returnType:Version
+Method-parameters:[Version version1, Version version2]
+Method-name:max
+Method-returnType:Version
+Method-parameters:[Version version1, Version version2]
+Method-name:fromInternalString
+Method-returnType:Version
+Method-parameters:[String version]
+Field:isSnapshot
+Field:externalId
+Field:internalId
+Field:major
+Field:minor
+Field:revision
+Field:build
+Field:luceneVersion
+Method-name:Version
+Method-returnType:null
+Method-parameters:[int internalId, int externalId, org.apache.lucene.util.Version luceneVersion]
+Method-name:Version
+Method-returnType:null
+Method-parameters:[int internalId, int externalId, boolean isSnapshot, org.apache.lucene.util.Version luceneVersion]
+FieldAccess:internalId
+FieldAccess:externalId
+FieldAccess:major
+FieldAccess:minor
+FieldAccess:revision
+FieldAccess:build
+FieldAccess:luceneVersion
+FieldAccess:isSnapshot
+Method-name:isSnapshot
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:after
+Method-returnType:boolean
+Method-parameters:[Version version]
+Method-name:onOrAfter
+Method-returnType:boolean
+Method-parameters:[Version version]
+Method-name:before
+Method-returnType:boolean
+Method-parameters:[Version version]
+Method-name:onOrBefore
+Method-returnType:boolean
+Method-parameters:[Version version]
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[Version other]
+MethodInvocation:compare
+FieldAccess:internalId
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:value
+MethodInvocation:toString
+Method-name:minimumCompatibilityVersion
+Method-returnType:Version
+Method-parameters:[]
+Method-name:minimumIndexCompatibilityVersion
+Method-returnType:Version
+Method-parameters:[]
+Method-name:isCompatible
+Method-returnType:boolean
+Method-parameters:[Version version]
+Method-name:main
+Method-returnType:void
+Method-parameters:[String[] args]
+MethodInvocation:format
+MethodInvocation:displayVersion
+MethodInvocation:isSnapshot
+MethodInvocation:hashShort
+MethodInvocation:timestamp
+MethodInvocation:version
+MethodInvocation:jvmInfo
+MethodInvocation:println
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:externalNumber
+Method-name:externalNumber
+Method-returnType:String
+Method-parameters:[]
+Method-name:displayVersion
+Method-returnType:String
+Method-parameters:[final Version version, final boolean isSnapshot]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:isRelease
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getDeclaredVersions
+Method-returnType:List<Version>
+Method-parameters:[final Class<?> versionClass]
+Method-name:getAsVersion
+Method-returnType:Version
+Method-parameters:[String setting, Settings settings]
+MethodInvocation:get
+MethodInvocation:fromId
+MethodInvocation:parseInt
+Field:Property
+Field:nameLowerCase
+Method-name:Property
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:nameLowerCase
+MethodInvocation:toLowerCase
+MethodInvocation:name
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

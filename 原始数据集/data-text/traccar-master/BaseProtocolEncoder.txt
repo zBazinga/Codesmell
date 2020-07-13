@@ -1,0 +1,54 @@
+Class:BaseProtocolEncoder
+Field:LOGGER
+MethodInvocation:getLogger
+Field:PROTOCOL_UNKNOWN
+Field:protocol
+Method-name:BaseProtocolEncoder
+Method-returnType:null
+Method-parameters:[Protocol protocol]
+FieldAccess:protocol
+Method-name:getProtocolName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:getUniqueId
+Method-returnType:String
+Method-parameters:[long deviceId]
+MethodInvocation:getUniqueId
+MethodInvocation:getById
+MethodInvocation:getIdentityManager
+Method-name:write
+Method-returnType:void
+Method-parameters:[ChannelHandlerContext ctx, Object msg, ChannelPromise promise]
+MethodInvocation:getMessage
+MethodInvocation:getMessage
+MethodInvocation:encodeCommand
+MethodInvocation:channel
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:asShortText
+MethodInvocation:id
+MethodInvocation:channel
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getUniqueId
+MethodInvocation:getDeviceId
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getType
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:info
+MethodInvocation:toString
+MethodInvocation:write
+MethodInvocation:getRemoteAddress
+Method-name:encodeCommand
+Method-returnType:Object
+Method-parameters:[Channel channel, Command command]
+MethodInvocation:encodeCommand
+Method-name:encodeCommand
+Method-returnType:Object
+Method-parameters:[Command command]

@@ -1,0 +1,121 @@
+Class:AttributeFormat
+Field:fontFamily
+Field:fontSize
+Field:fontBold
+Field:fontItalic
+Field:textColor
+Field:fillColor
+Method-name:AttributeFormat
+Method-returnType:null
+Method-parameters:[@Nullable String fontFamily, @Nullable String fontSize, @Nullable String fontWeight, @Nullable String fontStyle, @Nullable String textColor, @Nullable String fillColor]
+FieldAccess:fontFamily
+MethodInvocation:getValidFontFamily
+MethodInvocation:trimEmptyToNull
+FieldAccess:fontSize
+MethodInvocation:getValidFontSize
+MethodInvocation:trimEmptyToNull
+FieldAccess:fontBold
+MethodInvocation:getValidFontBold
+MethodInvocation:trimEmptyToNull
+FieldAccess:fontItalic
+MethodInvocation:getValidFontItalic
+MethodInvocation:trimEmptyToNull
+FieldAccess:textColor
+MethodInvocation:getValidNamedOrHexColor
+MethodInvocation:trimEmptyToNull
+FieldAccess:fillColor
+MethodInvocation:getValidNamedOrHexColor
+MethodInvocation:trimEmptyToNull
+Method-name:trimEmptyToNull
+Method-returnType:String
+Method-parameters:[@Nullable String textColor]
+MethodInvocation:trim
+MethodInvocation:isEmpty
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getValidHexColor
+Method-returnType:String
+Method-parameters:[@Nullable String s]
+MethodInvocation:getValidHexColor
+Method-name:getValidNamedOrHexColor
+Method-returnType:String
+Method-parameters:[@Nullable String s]
+MethodInvocation:getValidNamedOrHexColor
+Method-name:getValidFontFamily
+Method-returnType:String
+Method-parameters:[@Nullable String fontFamily]
+MethodInvocation:isEmpty
+Method-name:getValidFontSize
+Method-returnType:String
+Method-parameters:[@Nullable String fontSize]
+MethodInvocation:isEmpty
+Method-name:getValidFontBold
+Method-returnType:Boolean
+Method-parameters:[@Nullable String s]
+MethodInvocation:parseIntOrDefault
+Method-name:getValidFontItalic
+Method-returnType:Boolean
+Method-parameters:[@Nullable String s]
+MethodInvocation:startsWith
+MethodInvocation:parseIntOrDefault
+MethodInvocation:trim
+MethodInvocation:substring
+MethodInvocation:length
+Method-name:getShd
+Method-returnType:CTShd
+Method-parameters:[@NotNull DocxContext<T> docx]
+MethodInvocation:createCTShd
+MethodInvocation:getFactory
+MethodInvocation:setColor
+MethodInvocation:setFill
+MethodInvocation:setVal
+Method-name:setFormatRPr
+Method-returnType:void
+Method-parameters:[@NotNull RPrAbstract rPr, @NotNull DocxContext<T> docx]
+MethodInvocation:createColor
+MethodInvocation:getFactory
+MethodInvocation:setColor
+MethodInvocation:setVal
+MethodInvocation:toUpperCase
+MethodInvocation:getValidHexColorOrDefault
+MethodInvocation:setColor
+MethodInvocation:getShd
+MethodInvocation:createCTShd
+MethodInvocation:getFactory
+MethodInvocation:setShd
+MethodInvocation:setColor
+MethodInvocation:setFill
+MethodInvocation:setVal
+MethodInvocation:setBCs
+MethodInvocation:createBooleanDefaultTrue
+MethodInvocation:getFactory
+MethodInvocation:setB
+MethodInvocation:createBooleanDefaultTrue
+MethodInvocation:getFactory
+MethodInvocation:setICs
+MethodInvocation:createBooleanDefaultTrue
+MethodInvocation:getFactory
+MethodInvocation:setI
+MethodInvocation:createBooleanDefaultTrue
+MethodInvocation:getFactory
+MethodInvocation:endsWith
+MethodInvocation:parseFloat
+MethodInvocation:trim
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:round
+MethodInvocation:parseFloat
+MethodInvocation:round
+MethodInvocation:createHpsMeasure
+MethodInvocation:getFactory
+MethodInvocation:setVal
+MethodInvocation:valueOf
+MethodInvocation:setSzCs
+MethodInvocation:setSz
+MethodInvocation:setSzCs
+MethodInvocation:setSz
+Method-name:addRunAttributeFormatting
+Method-returnType:void
+Method-parameters:[DocxRendererContext docx, CoreNodeDocxRenderer renderer]
+MethodInvocation:setRunFormatProvider

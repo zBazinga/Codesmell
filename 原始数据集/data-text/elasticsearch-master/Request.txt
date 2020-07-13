@@ -1,0 +1,92 @@
+Class:Request
+Field:method
+Field:endpoint
+Field:parameters
+Field:entity
+Field:options
+Method-name:Request
+Method-returnType:null
+Method-parameters:[String method, String endpoint]
+FieldAccess:method
+MethodInvocation:requireNonNull
+FieldAccess:endpoint
+MethodInvocation:requireNonNull
+Method-name:getMethod
+Method-returnType:String
+Method-parameters:[]
+Method-name:getEndpoint
+Method-returnType:String
+Method-parameters:[]
+Method-name:addParameter
+Method-returnType:void
+Method-parameters:[String name, String value]
+MethodInvocation:requireNonNull
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:put
+Method-name:addParameters
+Method-returnType:void
+Method-parameters:[Map<String,String> paramSource]
+MethodInvocation:forEach
+Method-name:getParameters
+Method-returnType:Map<String,String>
+Method-parameters:[]
+MethodInvocation:unmodifiableMap
+Method-name:setEntity
+Method-returnType:void
+Method-parameters:[HttpEntity entity]
+FieldAccess:entity
+Method-name:setJsonEntity
+Method-returnType:void
+Method-parameters:[String entity]
+MethodInvocation:setEntity
+Method-name:getEntity
+Method-returnType:HttpEntity
+Method-parameters:[]
+Method-name:setOptions
+Method-returnType:void
+Method-parameters:[RequestOptions options]
+MethodInvocation:requireNonNull
+FieldAccess:options
+Method-name:setOptions
+Method-returnType:void
+Method-parameters:[RequestOptions.Builder options]
+MethodInvocation:requireNonNull
+FieldAccess:options
+MethodInvocation:build
+Method-name:getOptions
+Method-returnType:RequestOptions
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:isEmpty
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash

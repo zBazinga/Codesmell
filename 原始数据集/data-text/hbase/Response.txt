@@ -1,0 +1,76 @@
+Class:Response
+Field:LOG
+MethodInvocation:getLogger
+Field:code
+Field:headers
+Field:body
+Field:resp
+Field:stream
+Method-name:Response
+Method-returnType:null
+Method-parameters:[int code]
+Method-name:Response
+Method-returnType:null
+Method-parameters:[int code, Header[] headers]
+Method-name:Response
+Method-returnType:null
+Method-parameters:[int code, Header[] headers, byte[] body]
+FieldAccess:code
+FieldAccess:headers
+FieldAccess:body
+Method-name:Response
+Method-returnType:null
+Method-parameters:[int code, Header[] headers, HttpResponse resp, InputStream in]
+FieldAccess:code
+FieldAccess:headers
+FieldAccess:body
+FieldAccess:resp
+FieldAccess:stream
+Method-name:getCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:getStream
+Method-returnType:InputStream
+Method-parameters:[]
+FieldAccess:stream
+Method-name:getHeaders
+Method-returnType:Header[]
+Method-parameters:[]
+Method-name:getHeader
+Method-returnType:String
+Method-parameters:[String key]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:getValue
+Method-name:getLocation
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getHeader
+Method-name:hasBody
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getBody
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:getResponseBody
+MethodInvocation:debug
+Method-name:setCode
+Method-returnType:void
+Method-parameters:[int code]
+FieldAccess:code
+Method-name:setHeaders
+Method-returnType:void
+Method-parameters:[Header[] headers]
+FieldAccess:headers
+Method-name:setBody
+Method-returnType:void
+Method-parameters:[byte[] body]
+FieldAccess:body
+Method-name:getInputStream
+Method-returnType:XMLStreamReader
+Method-parameters:[RemoteAdmin remoteAdmin]
+MethodInvocation:newFactory
+MethodInvocation:setProperty
+MethodInvocation:setProperty
+MethodInvocation:createXMLStreamReader
+MethodInvocation:getBody

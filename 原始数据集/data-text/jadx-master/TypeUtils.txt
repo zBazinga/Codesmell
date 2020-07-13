@@ -1,0 +1,65 @@
+Class:TypeUtils
+Field:root
+Method-name:TypeUtils
+Method-returnType:null
+Method-parameters:[RootNode rootNode]
+FieldAccess:root
+Method-name:getClassGenerics
+Method-returnType:List<GenericTypeParameter>
+Method-parameters:[ArgType type]
+MethodInvocation:resolveClass
+MethodInvocation:getGenericTypeParameters
+MethodInvocation:getClsDetails
+MethodInvocation:getClsp
+MethodInvocation:isEmpty
+MethodInvocation:getTypeParameters
+MethodInvocation:emptyList
+MethodInvocation:getTypeParameters
+MethodInvocation:emptyList
+Method-name:getTypeVariablesMapping
+Method-returnType:Map<ArgType,ArgType>
+Method-parameters:[ArgType clsType]
+MethodInvocation:isGeneric
+MethodInvocation:emptyMap
+MethodInvocation:getClassGenerics
+MethodInvocation:getTypeUtils
+MethodInvocation:isEmpty
+MethodInvocation:emptyMap
+MethodInvocation:getGenericTypes
+MethodInvocation:emptyMap
+MethodInvocation:size
+MethodInvocation:emptyMap
+MethodInvocation:getTypeVariable
+MethodInvocation:get
+MethodInvocation:put
+Method-name:replaceMethodGenerics
+Method-returnType:ArgType
+Method-parameters:[BaseInvokeNode invokeInsn, IMethodDetails details, ArgType typeWithGeneric]
+MethodInvocation:getArgTypes
+MethodInvocation:isEmpty
+MethodInvocation:getFirstArgOffset
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getArg
+MethodInvocation:getType
+MethodInvocation:equals
+Method-name:replaceTypeVariablesUsingMap
+Method-returnType:ArgType
+Method-parameters:[ArgType replaceType, Map<ArgType,ArgType> replaceMap]
+MethodInvocation:isEmpty
+MethodInvocation:isGenericType
+MethodInvocation:get
+MethodInvocation:isArray
+MethodInvocation:replaceTypeVariablesUsingMap
+MethodInvocation:getArrayElement
+MethodInvocation:array
+MethodInvocation:getWildcardType
+MethodInvocation:containsTypeVariable
+MethodInvocation:replaceTypeVariablesUsingMap
+MethodInvocation:wildcard
+MethodInvocation:getWildcardBound
+MethodInvocation:getGenericTypes
+MethodInvocation:isGeneric
+MethodInvocation:replaceTypeVariablesUsingMap
+MethodInvocation:generic
+MethodInvocation:getObject

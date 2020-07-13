@@ -1,0 +1,241 @@
+Class:TAuthorization
+Field:STRUCT_DESC
+Field:LABELS_FIELD_DESC
+Field:STANDARD_SCHEME_FACTORY
+Field:TUPLE_SCHEME_FACTORY
+Field:labels
+Field:_Fields
+MethodInvocation:LABELS
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[java.lang.String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, java.lang.String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:java.lang.String
+Method-parameters:[]
+Field:optionals
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:TAuthorization
+Method-returnType:null
+Method-parameters:[]
+Method-name:TAuthorization
+Method-returnType:null
+Method-parameters:[TAuthorization other]
+MethodInvocation:isSetLabels
+FieldAccess:labels
+Method-name:deepCopy
+Method-returnType:TAuthorization
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:labels
+Method-name:getLabelsSize
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:labels
+MethodInvocation:size
+FieldAccess:labels
+Method-name:getLabelsIterator
+Method-returnType:java.util.Iterator<java.lang.String>
+Method-parameters:[]
+FieldAccess:labels
+MethodInvocation:iterator
+FieldAccess:labels
+Method-name:addToLabels
+Method-returnType:void
+Method-parameters:[java.lang.String elem]
+FieldAccess:labels
+FieldAccess:labels
+MethodInvocation:add
+FieldAccess:labels
+Method-name:getLabels
+Method-returnType:java.util.List<java.lang.String>
+Method-parameters:[]
+FieldAccess:labels
+Method-name:setLabels
+Method-returnType:TAuthorization
+Method-parameters:[@org.apache.thrift.annotation.Nullable java.util.List<java.lang.String> labels]
+FieldAccess:labels
+Method-name:unsetLabels
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:labels
+Method-name:isSetLabels
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:labels
+Method-name:setLabelsIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:labels
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, @org.apache.thrift.annotation.Nullable java.lang.Object value]
+MethodInvocation:unsetLabels
+MethodInvocation:setLabels
+Method-name:getFieldValue
+Method-returnType:java.lang.Object
+Method-parameters:[_Fields field]
+MethodInvocation:getLabels
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:isSetLabels
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[java.lang.Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[TAuthorization that]
+MethodInvocation:isSetLabels
+MethodInvocation:isSetLabels
+MethodInvocation:equals
+FieldAccess:labels
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSetLabels
+MethodInvocation:isSetLabels
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[TAuthorization other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetLabels
+MethodInvocation:isSetLabels
+MethodInvocation:isSetLabels
+MethodInvocation:compareTo
+FieldAccess:labels
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:scheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:scheme
+Method-name:toString
+Method-returnType:java.lang.String
+Method-parameters:[]
+MethodInvocation:isSetLabels
+MethodInvocation:append
+FieldAccess:labels
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:labels
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:TAuthorizationStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:TAuthorizationStandardScheme
+Method-parameters:[]
+Class:TAuthorizationStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, TAuthorization struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readListBegin
+MethodInvocation:readString
+MethodInvocation:add
+MethodInvocation:readListEnd
+MethodInvocation:setLabelsIsSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, TAuthorization struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:isSetLabels
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeListBegin
+MethodInvocation:size
+MethodInvocation:writeString
+MethodInvocation:writeListEnd
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:TAuthorizationTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:TAuthorizationTupleScheme
+Method-parameters:[]
+Class:TAuthorizationTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, TAuthorization struct]
+MethodInvocation:isSetLabels
+MethodInvocation:set
+MethodInvocation:writeBitSet
+MethodInvocation:isSetLabels
+MethodInvocation:writeI32
+MethodInvocation:size
+MethodInvocation:writeString
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, TAuthorization struct]
+MethodInvocation:readBitSet
+MethodInvocation:get
+MethodInvocation:readI32
+MethodInvocation:readString
+MethodInvocation:add
+MethodInvocation:setLabelsIsSet
+Method-name:scheme
+Method-returnType:S
+Method-parameters:[org.apache.thrift.protocol.TProtocol proto]
+MethodInvocation:getScheme
+MethodInvocation:equals
+MethodInvocation:getScheme

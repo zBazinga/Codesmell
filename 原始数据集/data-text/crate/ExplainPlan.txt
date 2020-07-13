@@ -1,0 +1,112 @@
+Class:ExplainPlan
+Field:Phase
+Field:subPlan
+Field:context
+Method-name:ExplainPlan
+Method-returnType:null
+Method-parameters:[Plan subExecutionPlan, @Nullable ProfilingContext context]
+FieldAccess:subPlan
+FieldAccess:context
+Method-name:subPlan
+Method-returnType:Plan
+Method-parameters:[]
+Method-name:type
+Method-returnType:StatementType
+Method-parameters:[]
+Method-name:executeOrFail
+Method-returnType:void
+Method-parameters:[DependencyCarrier dependencies, PlannerContext plannerContext, RowConsumer consumer, Row params, SubQueryResults subQueryResults]
+Method-name:createResultConsumer
+Method-returnType:BiConsumer<Void,Throwable>
+Method-parameters:[DependencyCarrier executor, RowConsumer consumer, UUID jobId, Timer timer, NodeOperationTree operationTree]
+Method-name:getRemoteCollectOperation
+Method-returnType:TransportCollectProfileOperation
+Method-parameters:[DependencyCarrier executor, UUID jobId]
+MethodInvocation:transportCollectProfileNodeAction
+MethodInvocation:transportActionProvider
+Method-name:buildResponse
+Method-returnType:Row
+Method-parameters:[Map<String,Object> apeTimings, Map<String,Map<String,Object>> timingsByNodeId, NodeOperationTree operationTree]
+MethodInvocation:newMapBuilder
+MethodInvocation:forEach
+MethodInvocation:extractPhasesTimingsFrom
+MethodInvocation:getNodeTimingsWithoutPhases
+MethodInvocation:keySet
+MethodInvocation:newMapBuilder
+MethodInvocation:put
+MethodInvocation:forEach
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:immutableMap
+MethodInvocation:immutableMap
+Method-name:extractPhasesTimingsFrom
+Method-returnType:Map<String,Object>
+Method-parameters:[Map<String,Map<String,Object>> timingsByNodeId, NodeOperationTree operationTree]
+MethodInvocation:nodeOperations
+MethodInvocation:executionPhase
+MethodInvocation:getPhaseTimingsAndAddThemToPhasesMap
+MethodInvocation:leaf
+MethodInvocation:getPhaseTimingsAndAddThemToPhasesMap
+Method-name:getPhaseTimingsAndAddThemToPhasesMap
+Method-returnType:void
+Method-parameters:[ExecutionPhase leafExecutionPhase, Map<String,Map<String,Object>> timingsByNodeId, Map<String,Object> allPhases]
+MethodInvocation:generateProfilingKey
+MethodInvocation:phaseId
+MethodInvocation:name
+MethodInvocation:getPhaseTimingsAcrossNodes
+MethodInvocation:isEmpty
+MethodInvocation:put
+MethodInvocation:of
+Method-name:getPhaseTimingsAcrossNodes
+Method-returnType:Map<String,Object>
+Method-parameters:[String phaseName, Map<String,Map<String,Object>> timingsByNodeId]
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:get
+MethodInvocation:getKey
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+Method-name:getNodeTimingsWithoutPhases
+Method-returnType:Map<String,Map<String,Object>>
+Method-parameters:[Set<String> phasesNames, Map<String,Map<String,Object>> timingsByNodeId]
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:values
+MethodInvocation:remove
+MethodInvocation:unmodifiableMap
+Method-name:collectTimingResults
+Method-returnType:CompletableFuture<Map<String,Map<String,Object>>>
+Method-parameters:[UUID jobId, DependencyCarrier executor, Collection<NodeOperation> nodeOperations]
+MethodInvocation:keySet
+MethodInvocation:groupByServer
+MethodInvocation:getRemoteCollectOperation
+MethodInvocation:size
+MethodInvocation:contains
+MethodInvocation:localNodeId
+MethodInvocation:size
+MethodInvocation:incrementAndGet
+MethodInvocation:whenComplete
+MethodInvocation:collect
+MethodInvocation:mergeResultsAndCompleteFuture
+MethodInvocation:whenComplete
+MethodInvocation:collectExecutionTimesAndFinishContext
+MethodInvocation:transportCollectProfileNodeAction
+MethodInvocation:transportActionProvider
+MethodInvocation:mergeResultsAndCompleteFuture
+MethodInvocation:localNodeId
+Method-name:mergeResultsAndCompleteFuture
+Method-returnType:BiConsumer<Map<String,Object>,Throwable>
+Method-parameters:[CompletableFuture<Map<String,Map<String,Object>>> resultFuture, ConcurrentHashMap<String,Map<String,Object>> timingsByNodeId, AtomicInteger remainingOperations, String nodeId]
+MethodInvocation:put
+MethodInvocation:decrementAndGet
+MethodInvocation:complete
+MethodInvocation:completeExceptionally
+Method-name:doAnalyze
+Method-returnType:boolean
+Method-parameters:[]

@@ -1,0 +1,152 @@
+Class:HivePrivilegeObject
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[HivePrivilegeObject o]
+MethodInvocation:compareTo
+MethodInvocation:compareTo
+MethodInvocation:compareTo
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compareTo
+MethodInvocation:compareTo
+MethodInvocation:compareTo
+Method-name:compare
+Method-returnType:int
+Method-parameters:[Collection<String> o1, Collection<String> o2]
+MethodInvocation:iterator
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:next
+MethodInvocation:compareTo
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+Method-name:needsMaskingOrFiltering
+Method-returnType:boolean
+Method-parameters:[TableMask tableMask]
+MethodInvocation:getRowFilterExpression
+MethodInvocation:getCellValueTransformers
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:getColumns
+MethodInvocation:size
+MethodInvocation:getColumns
+MethodInvocation:getObjectName
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getObjectName
+MethodInvocation:get
+MethodInvocation:getColumns
+MethodInvocation:equals
+Field:HivePrivilegeObjectType
+Field:HivePrivObjectActionType
+Field:type
+Field:dbname
+Field:objectName
+Field:commandParams
+Field:partKeys
+Field:columns
+Field:actionType
+Field:className
+Field:ownerName
+Field:ownerType
+Field:cellValueTransformers
+Field:rowFilterExpression
+Method-name:HivePrivilegeObject
+Method-returnType:null
+Method-parameters:[HivePrivilegeObjectType type, String dbname, String objectName]
+Method-name:HivePrivilegeObject
+Method-returnType:null
+Method-parameters:[HivePrivilegeObjectType type, String dbname, String objectName, HivePrivObjectActionType actionType]
+Method-name:HivePrivilegeObject
+Method-returnType:null
+Method-parameters:[HivePrivilegeObjectType type, String dbname, String objectName, List<String> partKeys, String column]
+MethodInvocation:asList
+Method-name:createHivePrivilegeObject
+Method-returnType:HivePrivilegeObject
+Method-parameters:[List<String> cmdParams]
+Method-name:HivePrivilegeObject
+Method-returnType:null
+Method-parameters:[HivePrivilegeObjectType type, String dbname, String objectName, List<String> partKeys, List<String> columns, List<String> commandParams]
+Method-name:HivePrivilegeObject
+Method-returnType:null
+Method-parameters:[String dbname, String objectName, List<String> columns]
+Method-name:HivePrivilegeObject
+Method-returnType:null
+Method-parameters:[HivePrivilegeObjectType type, String dbname, String objectName, List<String> partKeys, List<String> columns, HivePrivObjectActionType actionType, List<String> commandParams, String className]
+Method-name:HivePrivilegeObject
+Method-returnType:null
+Method-parameters:[HivePrivilegeObjectType type, String dbname, String objectName, List<String> partKeys, List<String> columns, HivePrivObjectActionType actionType, List<String> commandParams, String className, String ownerName, PrincipalType ownerType]
+FieldAccess:type
+FieldAccess:dbname
+FieldAccess:objectName
+FieldAccess:partKeys
+FieldAccess:columns
+FieldAccess:actionType
+FieldAccess:commandParams
+FieldAccess:className
+FieldAccess:ownerName
+FieldAccess:ownerType
+Method-name:forScheduledQuery
+Method-returnType:HivePrivilegeObject
+Method-parameters:[String owner, String clusterNamespace, String scheduleName]
+Method-name:getType
+Method-returnType:HivePrivilegeObjectType
+Method-parameters:[]
+Method-name:getDbname
+Method-returnType:String
+Method-parameters:[]
+Method-name:getObjectName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getActionType
+Method-returnType:HivePrivObjectActionType
+Method-parameters:[]
+Method-name:getCommandParams
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:getPartKeys
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:getColumns
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:getClassName
+Method-returnType:String
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getDbObjectName
+MethodInvocation:toString
+MethodInvocation:getDbObjectName
+MethodInvocation:toString
+Method-name:getOwnerName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:ownerName
+Method-name:getOwnerType
+Method-returnType:PrincipalType
+Method-parameters:[]
+FieldAccess:ownerType
+Method-name:getDbObjectName
+Method-returnType:String
+Method-parameters:[String dbname2, String objectName2]
+Method-name:getCellValueTransformers
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setCellValueTransformers
+Method-returnType:void
+Method-parameters:[List<String> cellValueTransformers]
+FieldAccess:cellValueTransformers
+Method-name:getRowFilterExpression
+Method-returnType:String
+Method-parameters:[]
+Method-name:setRowFilterExpression
+Method-returnType:void
+Method-parameters:[String rowFilterExpression]
+FieldAccess:rowFilterExpression

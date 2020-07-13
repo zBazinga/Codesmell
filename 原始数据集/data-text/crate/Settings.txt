@@ -1,0 +1,751 @@
+Class:Settings
+Field:EMPTY
+MethodInvocation:build
+Field:settings
+Field:secureSettings
+Field:firstLevelNames
+Field:keys
+Method-name:Settings
+Method-returnType:null
+Method-parameters:[Map<String,Object> settings, SecureSettings secureSettings]
+FieldAccess:settings
+MethodInvocation:unmodifiableSortedMap
+FieldAccess:secureSettings
+Method-name:getSecureSettings
+Method-returnType:SecureSettings
+Method-parameters:[]
+Method-name:getAsStructuredMap
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:processSetting
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:setValue
+MethodInvocation:convertMapsToArrays
+Method-name:processSetting
+Method-returnType:void
+Method-parameters:[Map<String,Object> map, String prefix, String setting, Object value]
+MethodInvocation:indexOf
+MethodInvocation:get
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:put
+MethodInvocation:substring
+MethodInvocation:substring
+MethodInvocation:get
+MethodInvocation:processSetting
+MethodInvocation:put
+MethodInvocation:processSetting
+MethodInvocation:put
+MethodInvocation:processSetting
+Method-name:convertMapsToArrays
+Method-returnType:Object
+Method-parameters:[Map<String,Object> map]
+MethodInvocation:isEmpty
+MethodInvocation:entrySet
+MethodInvocation:parseInt
+MethodInvocation:getKey
+MethodInvocation:max
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:setValue
+MethodInvocation:convertMapsToArrays
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:add
+Method-name:getByPrefix
+Method-returnType:Settings
+Method-parameters:[String prefix]
+FieldAccess:settings
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+Method-name:filter
+Method-returnType:Settings
+Method-parameters:[Predicate<String> predicate]
+FieldAccess:settings
+Method-name:getAsSettings
+Method-returnType:Settings
+Method-parameters:[String setting]
+MethodInvocation:getByPrefix
+Method-name:get
+Method-returnType:String
+Method-parameters:[String setting]
+MethodInvocation:toString
+MethodInvocation:get
+Method-name:get
+Method-returnType:String
+Method-parameters:[String setting, String defaultValue]
+MethodInvocation:get
+Method-name:get
+Method-returnType:String
+Method-parameters:[String setting, String defaultValue, boolean isList]
+MethodInvocation:get
+MethodInvocation:getClass
+MethodInvocation:toString
+Method-name:getAsFloat
+Method-returnType:Float
+Method-parameters:[String setting, Float defaultValue]
+MethodInvocation:get
+MethodInvocation:parseFloat
+Method-name:getAsDouble
+Method-returnType:Double
+Method-parameters:[String setting, Double defaultValue]
+MethodInvocation:get
+MethodInvocation:parseDouble
+Method-name:getAsInt
+Method-returnType:Integer
+Method-parameters:[String setting, Integer defaultValue]
+MethodInvocation:get
+MethodInvocation:parseInt
+Method-name:getAsLong
+Method-returnType:Long
+Method-parameters:[String setting, Long defaultValue]
+MethodInvocation:get
+MethodInvocation:parseLong
+Method-name:hasValue
+Method-returnType:boolean
+Method-parameters:[String key]
+MethodInvocation:get
+Class:DeprecationLoggerHolder
+Field:deprecationLogger
+MethodInvocation:getLogger
+Method-name:getAsBoolean
+Method-returnType:Boolean
+Method-parameters:[String setting, Boolean defaultValue]
+MethodInvocation:parseBoolean
+MethodInvocation:get
+Method-name:getAsTime
+Method-returnType:TimeValue
+Method-parameters:[String setting, TimeValue defaultValue]
+MethodInvocation:parseTimeValue
+MethodInvocation:get
+Method-name:getAsBytesSize
+Method-returnType:ByteSizeValue
+Method-parameters:[String setting, ByteSizeValue defaultValue]
+MethodInvocation:parseBytesSizeValue
+MethodInvocation:get
+Method-name:getAsMemory
+Method-returnType:ByteSizeValue
+Method-parameters:[String setting, String defaultValue]
+MethodInvocation:parseBytesSizeValueOrHeapRatio
+MethodInvocation:get
+Method-name:getAsRatio
+Method-returnType:RatioValue
+Method-parameters:[String setting, String defaultValue]
+MethodInvocation:parseRatioValue
+MethodInvocation:get
+Method-name:getAsSize
+Method-returnType:SizeValue
+Method-parameters:[String setting, SizeValue defaultValue]
+MethodInvocation:parseSizeValue
+MethodInvocation:get
+Method-name:getAsList
+Method-returnType:List<String>
+Method-parameters:[String key]
+MethodInvocation:getAsList
+MethodInvocation:emptyList
+Method-name:getAsList
+Method-returnType:List<String>
+Method-parameters:[String key, List<String> defaultValue]
+MethodInvocation:getAsList
+Method-name:getAsList
+Method-returnType:List<String>
+Method-parameters:[String key, List<String> defaultValue, Boolean commaDelimited]
+MethodInvocation:get
+MethodInvocation:unmodifiableList
+MethodInvocation:splitStringByCommaToArray
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:trim
+MethodInvocation:add
+MethodInvocation:trim
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:unmodifiableList
+Method-name:getGroups
+Method-returnType:Map<String,Settings>
+Method-parameters:[String settingPrefix]
+MethodInvocation:getGroups
+Method-name:getGroups
+Method-returnType:Map<String,Settings>
+Method-parameters:[String settingPrefix, boolean ignoreNonGrouped]
+MethodInvocation:hasLength
+MethodInvocation:charAt
+MethodInvocation:length
+MethodInvocation:getGroupsInternal
+Method-name:getGroupsInternal
+Method-returnType:Map<String,Settings>
+Method-parameters:[String settingPrefix, boolean ignoreNonGrouped]
+MethodInvocation:getByPrefix
+MethodInvocation:names
+MethodInvocation:getByPrefix
+MethodInvocation:isEmpty
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+Method-name:getAsGroups
+Method-returnType:Map<String,Settings>
+Method-parameters:[]
+MethodInvocation:getAsGroups
+Method-name:getAsGroups
+Method-returnType:Map<String,Settings>
+Method-parameters:[boolean ignoreNonGrouped]
+MethodInvocation:getGroupsInternal
+Method-name:names
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:stream
+MethodInvocation:keySet
+MethodInvocation:concat
+MethodInvocation:stream
+MethodInvocation:getSettingNames
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:toSet
+MethodInvocation:set
+MethodInvocation:unmodifiableSet
+MethodInvocation:get
+Method-name:toDelimitedString
+Method-returnType:String
+Method-parameters:[char delimiter]
+MethodInvocation:entrySet
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:toString
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:readSettingsFromStream
+Method-returnType:Settings
+Method-parameters:[StreamInput in]
+MethodInvocation:readVInt
+MethodInvocation:readString
+MethodInvocation:readGenericValue
+MethodInvocation:putNull
+MethodInvocation:putList
+MethodInvocation:put
+MethodInvocation:toString
+MethodInvocation:build
+Method-name:writeSettingsToStream
+Method-returnType:void
+Method-parameters:[Settings settings, StreamOutput out]
+MethodInvocation:entrySet
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeString
+MethodInvocation:getKey
+MethodInvocation:writeGenericValue
+MethodInvocation:getValue
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:filterSettings
+MethodInvocation:paramAsBoolean
+MethodInvocation:entrySet
+MethodInvocation:getAsStructuredMap
+MethodInvocation:field
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:entrySet
+MethodInvocation:field
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:fromXContent
+Method-returnType:Settings
+Method-parameters:[XContentParser parser]
+MethodInvocation:fromXContent
+Method-name:fromXContent
+Method-returnType:Settings
+Method-parameters:[XContentParser parser, boolean allowNullValues, boolean validateEndOfStream]
+MethodInvocation:currentToken
+MethodInvocation:nextToken
+MethodInvocation:ensureExpectedToken
+MethodInvocation:currentToken
+MethodInvocation:builder
+MethodInvocation:fromXContent
+MethodInvocation:isClosed
+MethodInvocation:nextToken
+FieldAccess:lineNumber
+MethodInvocation:getTokenLocation
+FieldAccess:columnNumber
+MethodInvocation:getTokenLocation
+FieldAccess:lineNumber
+MethodInvocation:getTokenLocation
+FieldAccess:columnNumber
+MethodInvocation:getTokenLocation
+MethodInvocation:build
+Method-name:fromXContent
+Method-returnType:void
+Method-parameters:[XContentParser parser, StringBuilder keyBuilder, Settings.Builder builder, boolean allowNullValues]
+MethodInvocation:length
+MethodInvocation:nextToken
+MethodInvocation:currentToken
+MethodInvocation:setLength
+MethodInvocation:append
+MethodInvocation:currentName
+MethodInvocation:currentToken
+MethodInvocation:append
+MethodInvocation:fromXContent
+MethodInvocation:currentToken
+MethodInvocation:nextToken
+MethodInvocation:currentToken
+MethodInvocation:add
+MethodInvocation:text
+MethodInvocation:currentToken
+MethodInvocation:add
+MethodInvocation:text
+MethodInvocation:currentToken
+MethodInvocation:add
+MethodInvocation:valueOf
+MethodInvocation:text
+MethodInvocation:toString
+MethodInvocation:validateValue
+MethodInvocation:putList
+MethodInvocation:currentToken
+MethodInvocation:toString
+MethodInvocation:validateValue
+MethodInvocation:putNull
+MethodInvocation:currentToken
+MethodInvocation:currentToken
+MethodInvocation:toString
+MethodInvocation:text
+MethodInvocation:validateValue
+MethodInvocation:put
+MethodInvocation:currentToken
+MethodInvocation:toString
+MethodInvocation:validateValue
+MethodInvocation:text
+MethodInvocation:put
+MethodInvocation:booleanValue
+MethodInvocation:throwUnknownToken
+MethodInvocation:currentToken
+MethodInvocation:getTokenLocation
+Method-name:validateValue
+Method-returnType:void
+Method-parameters:[String key, Object currentValue, Settings.Builder builder, XContentParser parser, boolean allowNullValues]
+MethodInvocation:containsKey
+FieldAccess:lineNumber
+MethodInvocation:getTokenLocation
+FieldAccess:columnNumber
+MethodInvocation:getTokenLocation
+MethodInvocation:get
+FieldAccess:lineNumber
+MethodInvocation:getTokenLocation
+FieldAccess:columnNumber
+MethodInvocation:getTokenLocation
+Field:FORMAT_PARAMS
+MethodInvocation:unmodifiableSet
+MethodInvocation:asList
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+FieldAccess:settings
+MethodInvocation:isEmpty
+MethodInvocation:getSettingNames
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:keySet
+Method-name:keySet
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:keySet
+MethodInvocation:concat
+MethodInvocation:stream
+MethodInvocation:keySet
+MethodInvocation:stream
+MethodInvocation:getSettingNames
+MethodInvocation:set
+MethodInvocation:unmodifiableSet
+MethodInvocation:collect
+MethodInvocation:toSet
+MethodInvocation:get
+Class:Builder
+Field:EMPTY_SETTINGS
+MethodInvocation:build
+Field:map
+Field:secureSettings
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:keys
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+FieldAccess:map
+Method-name:remove
+Method-returnType:String
+Method-parameters:[String key]
+MethodInvocation:toString
+MethodInvocation:remove
+Method-name:get
+Method-returnType:String
+Method-parameters:[String key]
+MethodInvocation:toString
+MethodInvocation:get
+Method-name:getSecureSettings
+Method-returnType:SecureSettings
+Method-parameters:[]
+MethodInvocation:get
+Method-name:setSecureSettings
+Method-returnType:Builder
+Method-parameters:[SecureSettings secureSettings]
+MethodInvocation:isLoaded
+MethodInvocation:get
+FieldAccess:secureSettings
+MethodInvocation:getSettingNames
+MethodInvocation:get
+FieldAccess:secureSettings
+MethodInvocation:getSettingNames
+MethodInvocation:set
+FieldAccess:secureSettings
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String key, Path path]
+MethodInvocation:put
+MethodInvocation:toString
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String key, TimeValue timeValue]
+MethodInvocation:put
+MethodInvocation:toString
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String key, ByteSizeValue byteSizeValue]
+MethodInvocation:put
+MethodInvocation:toString
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String key, Enum<?> enumValue]
+MethodInvocation:put
+MethodInvocation:toString
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String key, Level level]
+MethodInvocation:put
+MethodInvocation:toString
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String key, org.apache.lucene.util.Version luceneVersion]
+MethodInvocation:put
+MethodInvocation:toString
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String key, String value]
+MethodInvocation:put
+Method-name:copy
+Method-returnType:Builder
+Method-parameters:[String key, Settings source]
+MethodInvocation:copy
+Method-name:copy
+Method-returnType:Builder
+Method-parameters:[String key, String sourceKey, Settings source]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:putList
+MethodInvocation:putNull
+MethodInvocation:put
+MethodInvocation:toString
+Method-name:putNull
+Method-returnType:Builder
+Method-parameters:[String key]
+MethodInvocation:put
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String key, Class clazz]
+MethodInvocation:put
+MethodInvocation:getName
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String setting, boolean value]
+MethodInvocation:put
+MethodInvocation:valueOf
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String setting, int value]
+MethodInvocation:put
+MethodInvocation:valueOf
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String setting, Version version]
+MethodInvocation:put
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String setting, long value]
+MethodInvocation:put
+MethodInvocation:valueOf
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String setting, float value]
+MethodInvocation:put
+MethodInvocation:valueOf
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String setting, double value]
+MethodInvocation:put
+MethodInvocation:valueOf
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String setting, long value, TimeUnit timeUnit]
+MethodInvocation:put
+MethodInvocation:toMillis
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String setting, long value, ByteSizeUnit sizeUnit]
+MethodInvocation:put
+MethodInvocation:toBytes
+Method-name:putList
+Method-returnType:Builder
+Method-parameters:[String setting, String... values]
+MethodInvocation:putList
+MethodInvocation:asList
+Method-name:putList
+Method-returnType:Builder
+Method-parameters:[String setting, List<String> values]
+MethodInvocation:remove
+MethodInvocation:put
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[String settingPrefix, String groupName, String[] settings, String[] values]
+MethodInvocation:put
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[Settings settings]
+MethodInvocation:put
+Method-name:put
+Method-returnType:Builder
+Method-parameters:[Settings settings, boolean copySecureSettings]
+MethodInvocation:processLegacyLists
+MethodInvocation:putAll
+MethodInvocation:getSecureSettings
+MethodInvocation:setSecureSettings
+MethodInvocation:getSecureSettings
+Method-name:processLegacyLists
+Method-returnType:void
+Method-parameters:[Map<String,Object> map]
+MethodInvocation:toArray
+MethodInvocation:keySet
+MethodInvocation:size
+MethodInvocation:endsWith
+MethodInvocation:substring
+MethodInvocation:lastIndexOf
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:remove
+Method-name:loadFromSource
+Method-returnType:Builder
+Method-parameters:[String source, XContentType xContentType]
+MethodInvocation:createParser
+MethodInvocation:xContent
+MethodInvocation:put
+MethodInvocation:fromXContent
+Method-name:loadFromPath
+Method-returnType:Builder
+Method-parameters:[Path path]
+MethodInvocation:loadFromStream
+MethodInvocation:toString
+MethodInvocation:getFileName
+MethodInvocation:newInputStream
+Method-name:loadFromStream
+Method-returnType:Builder
+Method-parameters:[String resourceName, InputStream is, boolean acceptNullValues]
+MethodInvocation:endsWith
+MethodInvocation:endsWith
+MethodInvocation:endsWith
+MethodInvocation:createParser
+MethodInvocation:xContent
+MethodInvocation:currentToken
+MethodInvocation:nextToken
+MethodInvocation:put
+MethodInvocation:fromXContent
+MethodInvocation:close
+Method-name:putProperties
+Method-returnType:Builder
+Method-parameters:[final Map<String,String> esSettings, final Function<String,String> keyFunction]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:put
+MethodInvocation:apply
+MethodInvocation:getValue
+Method-name:replacePropertyPlaceholders
+Method-returnType:Builder
+Method-parameters:[]
+MethodInvocation:replacePropertyPlaceholders
+Method-name:replacePropertyPlaceholders
+Method-returnType:Builder
+Method-parameters:[Function<String,String> getenv]
+Method-name:resolvePlaceholder
+Method-returnType:String
+Method-parameters:[String placeholderName]
+MethodInvocation:apply
+MethodInvocation:toString
+MethodInvocation:get
+Method-name:shouldIgnoreMissing
+Method-returnType:boolean
+Method-parameters:[String placeholderName]
+MethodInvocation:startsWith
+Method-name:shouldRemoveMissingPlaceholder
+Method-returnType:boolean
+Method-parameters:[String placeholderName]
+MethodInvocation:startsWith
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:listIterator
+MethodInvocation:getValue
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:replacePlaceholders
+MethodInvocation:set
+MethodInvocation:replacePlaceholders
+MethodInvocation:toString
+MethodInvocation:getValue
+MethodInvocation:hasLength
+MethodInvocation:setValue
+MethodInvocation:remove
+Method-name:normalizePrefix
+Method-returnType:Builder
+Method-parameters:[String prefix]
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getKey
+MethodInvocation:startsWith
+MethodInvocation:endsWith
+MethodInvocation:put
+MethodInvocation:getValue
+MethodInvocation:remove
+MethodInvocation:putAll
+Method-name:build
+Method-returnType:Settings
+Method-parameters:[]
+MethodInvocation:processLegacyLists
+MethodInvocation:get
+Class:FilteredMap
+Field:delegate
+Field:filter
+Field:prefix
+Field:size
+Method-name:entrySet
+Method-returnType:Set<Entry<String,Object>>
+Method-parameters:[]
+Method-name:FilteredMap
+Method-returnType:null
+Method-parameters:[Map<String,Object> delegate, Predicate<String> filter, String prefix]
+FieldAccess:delegate
+FieldAccess:filter
+FieldAccess:prefix
+Method-name:get
+Method-returnType:Object
+Method-parameters:[Object key]
+MethodInvocation:test
+MethodInvocation:get
+Method-name:containsKey
+Method-returnType:boolean
+Method-parameters:[Object key]
+MethodInvocation:test
+MethodInvocation:containsKey
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:toIntExact
+MethodInvocation:count
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:keySet
+MethodInvocation:test
+Class:PrefixedSecureSettings
+Field:delegate
+Field:addPrefix
+Field:removePrefix
+Field:keyPredicate
+Field:settingNames
+Method-name:PrefixedSecureSettings
+Method-returnType:null
+Method-parameters:[SecureSettings delegate, String prefix, Predicate<String> keyPredicate]
+FieldAccess:delegate
+FieldAccess:addPrefix
+FieldAccess:removePrefix
+MethodInvocation:substring
+MethodInvocation:length
+FieldAccess:keyPredicate
+Method-name:isLoaded
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isLoaded
+Method-name:getSettingNames
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getSettingNames
+MethodInvocation:toSet
+MethodInvocation:set
+MethodInvocation:unmodifiableSet
+MethodInvocation:get
+Method-name:getString
+Method-returnType:SecureString
+Method-parameters:[String setting]
+MethodInvocation:getString
+MethodInvocation:apply
+Method-name:getFile
+Method-returnType:InputStream
+Method-parameters:[String setting]
+MethodInvocation:getFile
+MethodInvocation:apply
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:builder
+MethodInvocation:xContent
+MethodInvocation:startObject
+MethodInvocation:toXContent
+MethodInvocation:singletonMap
+MethodInvocation:endObject
+MethodInvocation:toString
+Method-name:toString
+Method-returnType:String
+Method-parameters:[Object o]
+MethodInvocation:toString

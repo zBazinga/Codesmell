@@ -1,0 +1,86 @@
+Class:ShardId
+Field:index
+Field:shardId
+Field:hashCode
+Method-name:ShardId
+Method-returnType:null
+Method-parameters:[Index index, int shardId]
+FieldAccess:index
+FieldAccess:shardId
+FieldAccess:hashCode
+MethodInvocation:computeHashCode
+Method-name:ShardId
+Method-returnType:null
+Method-parameters:[String index, String indexUUID, int shardId]
+Method-name:ShardId
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readVInt
+MethodInvocation:computeHashCode
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeTo
+MethodInvocation:writeVInt
+Method-name:getIndex
+Method-returnType:Index
+Method-parameters:[]
+Method-name:getIndexName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:id
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:shardId
+Method-name:getId
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:id
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:fromString
+Method-returnType:ShardId
+Method-parameters:[String shardIdString]
+MethodInvocation:indexOf
+MethodInvocation:charAt
+MethodInvocation:charAt
+MethodInvocation:length
+MethodInvocation:substring
+MethodInvocation:parseInt
+MethodInvocation:substring
+MethodInvocation:length
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:computeHashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[ShardId o]
+MethodInvocation:getId
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:getIndex
+MethodInvocation:compareTo
+MethodInvocation:getUUID
+MethodInvocation:getUUID
+MethodInvocation:getIndex
+MethodInvocation:compare
+MethodInvocation:getId
+Method-name:isShardLocked
+Method-returnType:boolean
+Method-parameters:[NodeEnvironment nodeEnvironment]
+MethodInvocation:close
+MethodInvocation:shardLock

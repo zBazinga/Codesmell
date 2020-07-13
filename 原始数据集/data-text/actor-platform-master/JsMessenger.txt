@@ -1,0 +1,221 @@
+Class:JsMessenger
+Field:TAG
+Field:instance
+Field:jsIdleModule
+Field:jsBindingModule
+Field:filesModule
+Field:fileSystemProvider
+Field:isElectron
+Method-name:JsMessenger
+Method-returnType:null
+Method-parameters:[Configuration configuration]
+MethodInvocation:getFileSystemRuntime
+MethodInvocation:isElectron
+MethodInvocation:pushDispatcher
+MethodInvocation:isElectron
+MethodInvocation:d
+MethodInvocation:subscribe
+Method-name:onEvent
+Method-returnType:void
+Method-parameters:[String content]
+MethodInvocation:d
+MethodInvocation:equals
+MethodInvocation:onVisible
+MethodInvocation:equals
+MethodInvocation:onHidden
+MethodInvocation:subscribe
+MethodInvocation:getGlobalTempCounter
+MethodInvocation:getGlobalState
+Method-name:onChanged
+Method-returnType:void
+Method-parameters:[Integer val, Value<Integer> valueModel]
+MethodInvocation:hideNewMessages
+MethodInvocation:updateBadge
+Method-name:getInstance
+Method-returnType:JsMessenger
+Method-parameters:[]
+Method-name:getJsIdleModule
+Method-returnType:JsIdleModule
+Method-parameters:[]
+Method-name:isElectron
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:sendPhoto
+Method-returnType:void
+Method-parameters:[final Peer peer, final String fileName, final JsBlob blob]
+MethodInvocation:d
+MethodInvocation:resize
+Method-name:onResized
+Method-returnType:void
+Method-parameters:[String thumb, int thumbW, int thumbH, int fullW, int fullH]
+MethodInvocation:d
+MethodInvocation:indexOf
+MethodInvocation:d
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:fromBase64
+MethodInvocation:registerUploadFile
+MethodInvocation:sendPhoto
+Method-name:sendPhoto
+Method-returnType:void
+Method-parameters:[final Peer peer, final JsFile file]
+MethodInvocation:sendPhoto
+MethodInvocation:getName
+Method-name:sendAnimation
+Method-returnType:void
+Method-parameters:[final Peer peer, final JsFile file]
+MethodInvocation:d
+MethodInvocation:resize
+Method-name:onResized
+Method-returnType:void
+Method-parameters:[String thumb, int thumbW, int thumbH, int fullW, int fullH]
+MethodInvocation:d
+MethodInvocation:indexOf
+MethodInvocation:d
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:fromBase64
+MethodInvocation:registerUploadFile
+MethodInvocation:sendAnimation
+MethodInvocation:getName
+Method-name:sendClipboardPhoto
+Method-returnType:void
+Method-parameters:[final Peer peer, final JsBlob file]
+MethodInvocation:sendPhoto
+Method-name:loadMoreDialogs
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:loadMoreDialogs
+MethodInvocation:getMessagesModule
+Method-name:loadArchivedDialogs
+Method-returnType:void
+Method-parameters:[boolean init, RpcCallback<ResponseLoadArchived> callback]
+MethodInvocation:loadMoreArchivedDialogs
+MethodInvocation:getMessagesModule
+Method-name:loadMoreHistory
+Method-returnType:void
+Method-parameters:[Peer peer]
+MethodInvocation:loadMoreHistory
+MethodInvocation:getMessagesModule
+Method-name:getJsUser
+Method-returnType:JsBindedValue<JsUser>
+Method-parameters:[int uid]
+MethodInvocation:getUser
+Method-name:getJsUserOnline
+Method-returnType:JsBindedValue<JsOnlineUser>
+Method-parameters:[int gid]
+MethodInvocation:getUserOnline
+Method-name:getJsUserBlocked
+Method-returnType:JsBindedValue<JsBlockedUser>
+Method-parameters:[int uid]
+MethodInvocation:getUserBlocked
+Method-name:getJsGroup
+Method-returnType:JsBindedValue<JsGroup>
+Method-parameters:[int gid]
+MethodInvocation:getGroup
+Method-name:getJsGroupOnline
+Method-returnType:JsBindedValue<JsOnlineGroup>
+Method-parameters:[int gid]
+MethodInvocation:getGroupOnline
+Method-name:getJsCall
+Method-returnType:JsBindedValue<JsCall>
+Method-parameters:[String id]
+MethodInvocation:getCall
+Method-name:getTyping
+Method-returnType:JsBindedValue<JsTyping>
+Method-parameters:[Peer peer]
+MethodInvocation:getTyping
+Method-name:getOnlineStatus
+Method-returnType:JsBindedValue<String>
+Method-parameters:[]
+MethodInvocation:getOnlineStatus
+Method-name:getGlobalCounter
+Method-returnType:JsBindedValue<JsCounter>
+Method-parameters:[]
+MethodInvocation:getGlobalCounter
+Method-name:getTempGlobalCounter
+Method-returnType:JsBindedValue<JsCounter>
+Method-parameters:[]
+MethodInvocation:getTempGlobalCounter
+Method-name:buildPeerInfo
+Method-returnType:JsPeerInfo
+Method-parameters:[Peer peer]
+MethodInvocation:getPeerType
+MethodInvocation:get
+MethodInvocation:getUsers
+MethodInvocation:getPeerId
+MethodInvocation:create
+MethodInvocation:create
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:get
+MethodInvocation:getNick
+MethodInvocation:getSmallAvatarUrl
+MethodInvocation:get
+MethodInvocation:getAvatar
+MethodInvocation:getPlaceholder
+MethodInvocation:getPeerId
+MethodInvocation:get
+MethodInvocation:getIsVerified
+MethodInvocation:getPeerType
+MethodInvocation:get
+MethodInvocation:getGroups
+MethodInvocation:getPeerId
+MethodInvocation:create
+MethodInvocation:create
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:getSmallAvatarUrl
+MethodInvocation:get
+MethodInvocation:getAvatar
+MethodInvocation:getPlaceholder
+MethodInvocation:getPeerId
+Method-name:getSharedDialogList
+Method-returnType:JsDisplayList<JsDialog,Dialog>
+Method-parameters:[]
+MethodInvocation:getSharedDialogList
+Method-name:getSharedContactList
+Method-returnType:JsDisplayList<JsContact,Contact>
+Method-parameters:[]
+MethodInvocation:getSharedContactList
+Method-name:getSharedSearchList
+Method-returnType:JsDisplayList<JsSearchEntity,SearchEntity>
+Method-parameters:[]
+MethodInvocation:getSharedSearchList
+Method-name:getSharedChatList
+Method-returnType:JsDisplayList<JsMessage,Message>
+Method-parameters:[Peer peer]
+MethodInvocation:getSharedMessageList
+Method-name:getDialogsGroupedList
+Method-returnType:JsBindedValue<JsArray<JsDialogGroup>>
+Method-parameters:[]
+MethodInvocation:getDialogsGroupedList
+Method-name:getStickers
+Method-returnType:JsBindedValue<JsArray<JsSticker>>
+Method-parameters:[]
+MethodInvocation:getStickers
+Method-name:broadcastEvent
+Method-returnType:void
+Method-parameters:[String tag, JavaScriptObject obj]
+MethodInvocation:broadcastEvent
+Method-name:subscribeEventBus
+Method-returnType:void
+Method-parameters:[JsEventBusCallback callback]
+MethodInvocation:subscribeEventBus
+Method-name:unsubscribeEventBus
+Method-returnType:void
+Method-parameters:[JsEventBusCallback callback]
+MethodInvocation:unsubscribeEventBus
+Method-name:getSmallAvatarUrl
+Method-returnType:String
+Method-parameters:[Avatar avatar]
+MethodInvocation:getSmallImage
+MethodInvocation:getFileUrl
+MethodInvocation:getFileReference
+MethodInvocation:getSmallImage
+Method-name:getFileUrl
+Method-returnType:String
+Method-parameters:[FileReference fileReference]
+MethodInvocation:getFileUrl
+MethodInvocation:getFileId
+MethodInvocation:getAccessHash

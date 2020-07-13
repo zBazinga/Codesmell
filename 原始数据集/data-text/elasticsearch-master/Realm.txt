@@ -1,0 +1,68 @@
+Class:Realm
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getClass
+Field:config
+Method-name:Realm
+Method-returnType:null
+Method-parameters:[RealmConfig config]
+FieldAccess:config
+Method-name:type
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:type
+Method-name:name
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:name
+Method-name:order
+Method-returnType:int
+Method-parameters:[]
+Method-name:getAuthenticationFailureHeaders
+Method-returnType:Map<String,List<String>>
+Method-parameters:[]
+MethodInvocation:singletonMap
+MethodInvocation:singletonList
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[Realm other]
+MethodInvocation:compare
+MethodInvocation:compareTo
+MethodInvocation:name
+MethodInvocation:name
+Method-name:supports
+Method-returnType:boolean
+Method-parameters:[AuthenticationToken token]
+Method-name:token
+Method-returnType:AuthenticationToken
+Method-parameters:[ThreadContext context]
+Method-name:authenticate
+Method-returnType:void
+Method-parameters:[AuthenticationToken token, ActionListener<AuthenticationResult> listener]
+Method-name:lookupUser
+Method-returnType:void
+Method-parameters:[String username, ActionListener<User> listener]
+Method-name:usageStats
+Method-returnType:void
+Method-parameters:[ActionListener<Map<String,Object>> listener]
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:order
+MethodInvocation:onResponse
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:type
+MethodInvocation:name
+Method-name:initialize
+Method-returnType:void
+Method-parameters:[Iterable<Realm> realms, XPackLicenseState licenseState]
+Method-name:clearCache
+Method-returnType:void
+Method-parameters:[String[] usernames, TransportClearRealmCacheAction transportClearRealmCacheAction]
+MethodInvocation:expire
+MethodInvocation:expireAll
+Method-name:create
+Method-returnType:Realm
+Method-parameters:[RealmConfig config]

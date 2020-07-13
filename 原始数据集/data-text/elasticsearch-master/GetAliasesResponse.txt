@@ -1,0 +1,59 @@
+Class:GetAliasesResponse
+Field:aliases
+MethodInvocation:of
+Method-name:GetAliasesResponse
+Method-returnType:null
+Method-parameters:[ImmutableOpenMap<String,List<AliasMetadata>> aliases]
+FieldAccess:aliases
+Method-name:GetAliasesResponse
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readVInt
+MethodInvocation:builder
+MethodInvocation:readString
+MethodInvocation:readVInt
+MethodInvocation:add
+MethodInvocation:put
+MethodInvocation:unmodifiableList
+MethodInvocation:build
+Method-name:getAliases
+Method-returnType:ImmutableOpenMap<String,List<AliasMetadata>>
+Method-parameters:[]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeString
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeTo
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:filterResults
+Method-returnType:void
+Method-parameters:[String javaRegex, GetIndexResponse indices, boolean retrieveIndices, boolean retrieveFrozenIndices, ActionListener<Set<IndexResolver.IndexInfo>> listener, IndexResolver indexResolver]
+MethodInvocation:compile
+MethodInvocation:comparing
+MethodInvocation:values
+MethodInvocation:getAliases
+MethodInvocation:alias
+MethodInvocation:matches
+MethodInvocation:matcher
+MethodInvocation:add
+MethodInvocation:indices
+MethodInvocation:getAsBoolean
+MethodInvocation:get
+MethodInvocation:getSettings
+MethodInvocation:matches
+MethodInvocation:matcher
+MethodInvocation:add
+MethodInvocation:onResponse

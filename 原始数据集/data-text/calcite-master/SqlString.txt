@@ -1,0 +1,40 @@
+Class:SqlString
+Field:sql
+Field:dialect
+Field:dynamicParameters
+Method-name:SqlString
+Method-returnType:null
+Method-parameters:[SqlDialect dialect, String sql]
+MethodInvocation:of
+Method-name:SqlString
+Method-returnType:null
+Method-parameters:[SqlDialect dialect, String sql, ImmutableList<Integer> dynamicParameters]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+FieldAccess:sql
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getSql
+Method-returnType:String
+Method-parameters:[]
+Method-name:getDynamicParameters
+Method-returnType:ImmutableList<Integer>
+Method-parameters:[]
+Method-name:getDialect
+Method-returnType:SqlDialect
+Method-parameters:[]
+Method-name:toIndexesTableExpression
+Method-returnType:List<ConstantExpression>
+Method-parameters:[JdbcToEnumerableConverter jdbcToEnumerableConverter]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getDynamicParameters
+MethodInvocation:toList

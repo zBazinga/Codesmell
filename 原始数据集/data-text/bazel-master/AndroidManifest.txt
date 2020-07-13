@@ -1,0 +1,141 @@
+Class:AndroidManifest
+Field:CUSTOM_PACKAGE_ATTR
+Field:manifest
+Field:pkg
+Field:exported
+Method-name:AndroidManifest
+Method-returnType:null
+Method-parameters:[Artifact manifest, @Nullable String pkg, boolean exported]
+FieldAccess:manifest
+FieldAccess:pkg
+FieldAccess:exported
+Method-name:forAarImport
+Method-returnType:StampedAndroidManifest
+Method-parameters:[Artifact manifest]
+Method-name:fromAttributes
+Method-returnType:AndroidManifest
+Method-parameters:[RuleContext ruleContext, AndroidDataContext dataContext]
+MethodInvocation:fromAttributes
+Method-name:fromAttributes
+Method-returnType:AndroidManifest
+Method-parameters:[RuleContext ruleContext, AndroidDataContext dataContext, @Nullable AndroidSemantics androidSemantics]
+MethodInvocation:definesAndroidResources
+MethodInvocation:attributes
+MethodInvocation:validateRuleContext
+MethodInvocation:getPrerequisiteArtifact
+MethodInvocation:from
+MethodInvocation:getAndroidPackage
+MethodInvocation:getExportsManifest
+Method-name:from
+Method-returnType:AndroidManifest
+Method-parameters:[AndroidDataContext dataContext, RuleErrorConsumer errorConsumer, @Nullable Artifact rawManifest, @Nullable String pkg, boolean exportsManifest]
+MethodInvocation:from
+Method-name:from
+Method-returnType:AndroidManifest
+Method-parameters:[AndroidDataContext dataContext, RuleErrorConsumer errorConsumer, @Nullable Artifact rawManifest, @Nullable AndroidSemantics androidSemantics, @Nullable String pkg, boolean exportsManifest]
+MethodInvocation:getDefaultPackage
+MethodInvocation:getLabel
+MethodInvocation:getActionConstructionContext
+MethodInvocation:createEmpty
+MethodInvocation:getActionConstructionContext
+MethodInvocation:renameManifest
+MethodInvocation:renameManifestIfNeeded
+Method-name:useLegacyMerging
+Method-returnType:boolean
+Method-parameters:[RuleErrorConsumer errorConsumer, AndroidConfiguration androidConfig, @Nullable String mergerString]
+MethodInvocation:getManifestMerger
+MethodInvocation:fromString
+MethodInvocation:getManifestMerger
+MethodInvocation:ruleWarning
+Method-name:getMergeeManifests
+Method-returnType:Map<Artifact,Label>
+Method-parameters:[NestedSet<ValidatedAndroidResources> transitiveData, AndroidConfiguration.ManifestMergerOrder manifestMergerOrder]
+MethodInvocation:toList
+MethodInvocation:isManifestExported
+MethodInvocation:put
+MethodInvocation:getManifest
+MethodInvocation:getLabel
+MethodInvocation:copyOf
+MethodInvocation:build
+MethodInvocation:copyOf
+MethodInvocation:build
+MethodInvocation:build
+Method-name:getAndroidPackage
+Method-returnType:String
+Method-parameters:[RuleContext ruleContext]
+MethodInvocation:isAttributeValueExplicitlySpecified
+MethodInvocation:attributes
+MethodInvocation:get
+MethodInvocation:attributes
+MethodInvocation:getDefaultPackage
+MethodInvocation:getLabel
+Method-name:getDefaultPackage
+Method-returnType:String
+Method-parameters:[Label label, ActionConstructionContext context, RuleErrorConsumer errorConsumer]
+MethodInvocation:getRelative
+MethodInvocation:getPackageDirectory
+MethodInvocation:getName
+MethodInvocation:getJavaPackageFromPath
+Method-name:getJavaPackageFromPath
+Method-returnType:String
+Method-parameters:[ActionConstructionContext context, RuleErrorConsumer errorConsumer, PathFragment jarPathFragment]
+MethodInvocation:getJavaRoot
+MethodInvocation:ruleError
+MethodInvocation:getPackageDirectory
+MethodInvocation:getJavaPackageName
+Method-name:updateManifest
+Method-returnType:AndroidManifest
+Method-parameters:[Artifact manifest]
+Method-name:stamp
+Method-returnType:StampedAndroidManifest
+Method-parameters:[AndroidDataContext dataContext]
+MethodInvocation:getManifest
+MethodInvocation:isNullOrEmpty
+MethodInvocation:getUniqueDirectoryArtifact
+MethodInvocation:build
+MethodInvocation:setManifestOutput
+MethodInvocation:setCustomPackage
+MethodInvocation:setLibrary
+MethodInvocation:setManifest
+Method-name:mergeWithDeps
+Method-returnType:StampedAndroidManifest
+Method-parameters:[AndroidDataContext dataContext, AndroidSemantics androidSemantics, RuleErrorConsumer errorConsumer, ResourceDependencies resourceDeps, Map<String,String> manifestValues, @Nullable String manifestMerger]
+MethodInvocation:getMergeeManifests
+MethodInvocation:getResourceContainers
+MethodInvocation:getManifestMergerOrder
+MethodInvocation:getAndroidConfig
+MethodInvocation:useLegacyMerging
+MethodInvocation:getAndroidConfig
+MethodInvocation:orElse
+MethodInvocation:maybeDoLegacyManifestMerging
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:getUniqueDirectoryArtifact
+MethodInvocation:build
+MethodInvocation:setLogOut
+MethodInvocation:setManifestOutput
+MethodInvocation:setCustomPackage
+MethodInvocation:setManifestValues
+MethodInvocation:setLibrary
+MethodInvocation:setMergeeManifests
+MethodInvocation:setManifest
+MethodInvocation:getUniqueDirectoryArtifact
+Method-name:getManifest
+Method-returnType:Artifact
+Method-parameters:[]
+Method-name:getPackage
+Method-returnType:String
+Method-parameters:[]
+Method-name:isExported
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object object]
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+MethodInvocation:getClass

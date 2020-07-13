@@ -1,0 +1,84 @@
+Class:AESProvenanceEventEncryptor
+Field:logger
+MethodInvocation:getLogger
+Field:ALGORITHM
+Field:IV_LENGTH
+Field:EMPTY_IV
+Field:VERSION
+Field:SUPPORTED_VERSIONS
+MethodInvocation:asList
+Field:MIN_METADATA_LENGTH
+Field:METADATA_DEFAULT_LENGTH
+MethodInvocation:length
+MethodInvocation:length
+Field:SENTINEL
+Field:keyProvider
+Field:aesKeyedCipherProvider
+Method-name:initialize
+Method-returnType:void
+Method-parameters:[KeyProvider keyProvider]
+FieldAccess:keyProvider
+FieldAccess:aesKeyedCipherProvider
+FieldAccess:aesKeyedCipherProvider
+MethodInvocation:getProvider
+MethodInvocation:addProvider
+Method-name:setCipherProvider
+Method-returnType:void
+Method-parameters:[AESKeyedCipherProvider cipherProvider]
+FieldAccess:aesKeyedCipherProvider
+Method-name:encrypt
+Method-returnType:byte[]
+Method-parameters:[byte[] plainRecord, String recordId, String keyId]
+MethodInvocation:isEmpty
+MethodInvocation:keyExists
+MethodInvocation:nextBytes
+MethodInvocation:debug
+MethodInvocation:initCipher
+MethodInvocation:getKey
+MethodInvocation:getIV
+MethodInvocation:doFinal
+MethodInvocation:serializeEncryptionMetadata
+MethodInvocation:debug
+MethodInvocation:concatByteArrays
+MethodInvocation:error
+Method-name:initCipher
+Method-returnType:Cipher
+Method-parameters:[EncryptionMethod method, int mode, SecretKey key, byte[] ivBytes]
+MethodInvocation:getCipher
+MethodInvocation:error
+Method-name:decrypt
+Method-returnType:byte[]
+Method-parameters:[byte[] encryptedRecord, String recordId]
+MethodInvocation:extractEncryptionMetadata
+MethodInvocation:error
+MethodInvocation:contains
+MethodInvocation:join
+MethodInvocation:keyExists
+MethodInvocation:isEmpty
+MethodInvocation:debug
+MethodInvocation:forAlgorithm
+MethodInvocation:initCipher
+MethodInvocation:getKey
+MethodInvocation:extractCipherBytes
+MethodInvocation:doFinal
+MethodInvocation:debug
+MethodInvocation:error
+Method-name:getNextKeyId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getAvailableKeyIds
+MethodInvocation:isEmpty
+MethodInvocation:get
+Method-name:extractEncryptionMetadata
+Method-returnType:EncryptionMetadata
+Method-parameters:[byte[] encryptedRecord]
+MethodInvocation:read
+MethodInvocation:readObject
+Method-name:extractCipherBytes
+Method-returnType:byte[]
+Method-parameters:[byte[] encryptedRecord, EncryptionMetadata metadata]
+MethodInvocation:copyOfRange
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString

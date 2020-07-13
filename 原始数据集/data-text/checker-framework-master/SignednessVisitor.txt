@@ -1,0 +1,149 @@
+Class:SignednessVisitor
+Method-name:SignednessVisitor
+Method-returnType:null
+Method-parameters:[BaseTypeChecker checker]
+Method-name:isMask
+Method-returnType:boolean
+Method-parameters:[Tree node]
+MethodInvocation:getKind
+Method-name:primitiveTypeCast
+Method-returnType:PrimitiveTypeTree
+Method-parameters:[Tree node]
+MethodInvocation:getKind
+MethodInvocation:getType
+MethodInvocation:getKind
+MethodInvocation:getUnderlyingType
+MethodInvocation:getKind
+Method-name:isLiteral
+Method-returnType:boolean
+Method-parameters:[ExpressionTree expr]
+Method-name:getLong
+Method-returnType:long
+Method-parameters:[Object obj]
+MethodInvocation:longValue
+Method-name:maskIgnoresMSB
+Method-returnType:boolean
+Method-parameters:[Kind maskKind, LiteralTree shiftAmountLit, LiteralTree maskLit]
+MethodInvocation:getLong
+MethodInvocation:getValue
+MethodInvocation:getLong
+MethodInvocation:getValue
+MethodInvocation:getKind
+Method-name:castIgnoresMSB
+Method-returnType:boolean
+Method-parameters:[TypeKind shiftTypeKind, TypeKind castTypeKind, LiteralTree shiftAmountLit]
+MethodInvocation:getLong
+MethodInvocation:getValue
+MethodInvocation:getLong
+MethodInvocation:getValue
+Method-name:isMaskedShiftEitherSignedness
+Method-returnType:boolean
+Method-parameters:[BinaryTree shiftExpr]
+MethodInvocation:enclosingNonParen
+MethodInvocation:getPath
+MethodInvocation:isMask
+MethodInvocation:getRightOperand
+MethodInvocation:getRightOperand
+MethodInvocation:getLeftOperand
+MethodInvocation:getRightOperand
+MethodInvocation:withoutParens
+MethodInvocation:isLiteral
+MethodInvocation:isLiteral
+MethodInvocation:maskIgnoresMSB
+MethodInvocation:getKind
+Method-name:isCastedShiftEitherSignedness
+Method-returnType:boolean
+Method-parameters:[BinaryTree shiftExpr]
+FieldAccess:first
+MethodInvocation:enclosingNonParen
+MethodInvocation:getPath
+MethodInvocation:primitiveTypeCast
+MethodInvocation:getPrimitiveTypeKind
+MethodInvocation:getKind
+MethodInvocation:getUnderlyingType
+MethodInvocation:getAnnotatedType
+MethodInvocation:getRightOperand
+MethodInvocation:isLiteral
+MethodInvocation:castIgnoresMSB
+Method-name:hasUnsignedAnnotation
+Method-returnType:boolean
+Method-parameters:[AnnotatedTypeMirror type]
+MethodInvocation:hasAnnotation
+MethodInvocation:hasAnnotation
+Method-name:hasSignedAnnotation
+Method-returnType:boolean
+Method-parameters:[AnnotatedTypeMirror type]
+MethodInvocation:hasAnnotation
+MethodInvocation:hasAnnotation
+Method-name:visitBinary
+Method-returnType:Void
+Method-parameters:[BinaryTree node, Void p]
+MethodInvocation:getLeftOperand
+MethodInvocation:getRightOperand
+MethodInvocation:getAnnotatedType
+MethodInvocation:getAnnotatedType
+MethodInvocation:getKind
+MethodInvocation:hasUnsignedAnnotation
+MethodInvocation:reportError
+MethodInvocation:hasUnsignedAnnotation
+MethodInvocation:reportError
+MethodInvocation:hasUnsignedAnnotation
+MethodInvocation:isMaskedShiftEitherSignedness
+MethodInvocation:isCastedShiftEitherSignedness
+MethodInvocation:reportError
+MethodInvocation:hasSignedAnnotation
+MethodInvocation:isMaskedShiftEitherSignedness
+MethodInvocation:isCastedShiftEitherSignedness
+MethodInvocation:reportError
+MethodInvocation:hasUnsignedAnnotation
+MethodInvocation:reportError
+MethodInvocation:hasUnsignedAnnotation
+MethodInvocation:reportError
+MethodInvocation:hasAnnotation
+MethodInvocation:hasAnnotation
+MethodInvocation:reportError
+MethodInvocation:hasAnnotation
+MethodInvocation:hasAnnotation
+MethodInvocation:reportError
+MethodInvocation:hasAnnotation
+MethodInvocation:hasAnnotation
+MethodInvocation:reportError
+MethodInvocation:hasAnnotation
+MethodInvocation:hasAnnotation
+MethodInvocation:reportError
+Method-name:kindWithoutAssignment
+Method-returnType:String
+Method-parameters:[Kind kind]
+MethodInvocation:toString
+MethodInvocation:endsWith
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:length
+Method-name:visitCompoundAssignment
+Method-returnType:Void
+Method-parameters:[CompoundAssignmentTree node, Void p]
+MethodInvocation:getVariable
+MethodInvocation:getExpression
+MethodInvocation:getAnnotatedType
+MethodInvocation:getAnnotatedType
+MethodInvocation:getKind
+MethodInvocation:hasUnsignedAnnotation
+MethodInvocation:reportError
+MethodInvocation:kindWithoutAssignment
+MethodInvocation:hasUnsignedAnnotation
+MethodInvocation:reportError
+MethodInvocation:kindWithoutAssignment
+MethodInvocation:hasUnsignedAnnotation
+MethodInvocation:reportError
+MethodInvocation:kindWithoutAssignment
+MethodInvocation:hasSignedAnnotation
+MethodInvocation:reportError
+MethodInvocation:kindWithoutAssignment
+MethodInvocation:hasAnnotation
+MethodInvocation:hasAnnotation
+MethodInvocation:reportError
+MethodInvocation:kindWithoutAssignment
+MethodInvocation:hasAnnotation
+MethodInvocation:hasAnnotation
+MethodInvocation:reportError
+MethodInvocation:kindWithoutAssignment

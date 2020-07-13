@@ -1,0 +1,93 @@
+Class:MutableRel
+Field:STRING_EQUIVALENCE
+Method-name:doEquivalent
+Method-returnType:boolean
+Method-parameters:[Object o, Object o2]
+MethodInvocation:equals
+MethodInvocation:toString
+MethodInvocation:toString
+Method-name:doHash
+Method-returnType:int
+Method-parameters:[Object o]
+MethodInvocation:hashCode
+MethodInvocation:toString
+Field:PAIRWISE_STRING_EQUIVALENCE
+MethodInvocation:pairwise
+Field:cluster
+Field:rowType
+Field:type
+Field:parent
+Field:ordinalInParent
+Method-name:MutableRel
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelDataType rowType, MutableRelType type]
+FieldAccess:cluster
+MethodInvocation:requireNonNull
+FieldAccess:rowType
+MethodInvocation:requireNonNull
+FieldAccess:type
+MethodInvocation:requireNonNull
+Method-name:getParent
+Method-returnType:MutableRel
+Method-parameters:[]
+Method-name:setInput
+Method-returnType:void
+Method-parameters:[int ordinalInParent, MutableRel input]
+Method-name:getInputs
+Method-returnType:List<MutableRel>
+Method-parameters:[]
+Method-name:clone
+Method-returnType:MutableRel
+Method-parameters:[]
+Method-name:childrenAccept
+Method-returnType:void
+Method-parameters:[MutableRelVisitor visitor]
+Method-name:replaceInParent
+Method-returnType:MutableRel
+Method-parameters:[MutableRel child]
+FieldAccess:parent
+MethodInvocation:setInput
+FieldAccess:parent
+FieldAccess:ordinalInParent
+Method-name:digest
+Method-returnType:StringBuilder
+Method-parameters:[StringBuilder buf]
+Method-name:deep
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:apply
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:deep
+Method-name:rowTypesAreEquivalent
+Method-returnType:boolean
+Method-parameters:[MutableRel rel1, Litmus litmus, SubstitutionVisitor substitutionVisitor]
+MethodInvocation:getFieldCount
+MethodInvocation:getFieldCount
+MethodInvocation:fail
+MethodInvocation:of
+MethodInvocation:zip
+MethodInvocation:getFieldList
+MethodInvocation:getFieldList
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:getType
+MethodInvocation:fail
+MethodInvocation:of
+MethodInvocation:succeed
+Class:MutableRelDumper
+Field:buf
+Field:level
+Method-name:visit
+Method-returnType:void
+Method-parameters:[MutableRel node]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:digest
+MethodInvocation:append
+Method-name:apply
+Method-returnType:String
+Method-parameters:[MutableRel rel]
+MethodInvocation:go
+MethodInvocation:toString

@@ -1,0 +1,80 @@
+Class:EnhancedForRewriter
+Method-name:EnhancedForRewriter
+Method-returnType:null
+Method-parameters:[CompilationUnit unit]
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[EnhancedForStatement node]
+MethodInvocation:getExpression
+MethodInvocation:getTypeMirror
+MethodInvocation:getVariableElement
+MethodInvocation:getParameter
+MethodInvocation:hasAnnotation
+MethodInvocation:setHasAutoreleasePool
+MethodInvocation:makeBlock
+MethodInvocation:getBody
+MethodInvocation:isArray
+MethodInvocation:handleArrayIteration
+MethodInvocation:emitJavaIteratorLoop
+MethodInvocation:convertToJavaIteratorLoop
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:asType
+MethodInvocation:boxLoopVariable
+MethodInvocation:setTypeQualifiers
+MethodInvocation:mutableCopy
+MethodInvocation:setVariableElement
+MethodInvocation:getParameter
+Method-name:handleArrayIteration
+Method-returnType:void
+Method-parameters:[EnhancedForStatement node]
+MethodInvocation:getExpression
+MethodInvocation:getTypeMirror
+MethodInvocation:getVariableElement
+MethodInvocation:getParameter
+MethodInvocation:getComponentType
+MethodInvocation:getIosArray
+MethodInvocation:newLocalVar
+MethodInvocation:setTypeQualifiers
+MethodInvocation:newLocalVar
+MethodInvocation:setTypeQualifiers
+MethodInvocation:newLocalVar
+MethodInvocation:addModifiers
+MethodInvocation:newField
+MethodInvocation:addModifiers
+MethodInvocation:newField
+MethodInvocation:getInt
+MethodInvocation:remove
+MethodInvocation:setExpression
+MethodInvocation:getBoolean
+MethodInvocation:makeBlock
+MethodInvocation:remove
+MethodInvocation:getBody
+MethodInvocation:setBody
+MethodInvocation:addStatement
+MethodInvocation:getStatements
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:replaceLoop
+Method-name:emitJavaIteratorLoop
+Method-returnType:boolean
+Method-parameters:[VariableElement loopVariable]
+MethodInvocation:getAnnotation
+MethodInvocation:getAnnotationValue
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:name
+Method-name:convertToJavaIteratorLoop
+Method-returnType:void
+Method-parameters:[EnhancedForStatement node]
+Method-name:boxLoopVariable
+Method-returnType:void
+Method-parameters:[EnhancedForStatement node, TypeMirror expressionType, VariableElement loopVariable]
+Method-name:makeBlock
+Method-returnType:Block
+Method-parameters:[Statement stmt]
+MethodInvocation:getParent
+MethodInvocation:replaceWith
+MethodInvocation:addStatement

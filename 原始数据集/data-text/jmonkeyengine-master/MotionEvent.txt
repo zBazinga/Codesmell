@@ -1,0 +1,217 @@
+Class:MotionEvent
+Field:spatial
+Field:currentWayPoint
+Field:currentValue
+Field:direction
+Field:lookAt
+Field:upVector
+Field:rotation
+Field:directionType
+Field:path
+Field:isControl
+Field:travelDirection
+Field:traveledDistance
+Method-name:interpolatePath
+Method-returnType:float
+Method-parameters:[float time, float tpf, MotionPath motionPath]
+MethodInvocation:get
+MethodInvocation:getLength
+MethodInvocation:getInitialDuration
+MethodInvocation:getWayPointIndexForDistance
+MethodInvocation:setCurrentWayPoint
+MethodInvocation:setCurrentValue
+MethodInvocation:interpolate
+MethodInvocation:getSpline
+MethodInvocation:getCurrentValue
+MethodInvocation:getCurrentWayPoint
+MethodInvocation:needsDirection
+MethodInvocation:set
+MethodInvocation:setDirection
+MethodInvocation:normalizeLocal
+MethodInvocation:subtractLocal
+MethodInvocation:getLocalTranslation
+MethodInvocation:getSpatial
+MethodInvocation:checkWayPoint
+MethodInvocation:setLocalTranslation
+MethodInvocation:getSpatial
+MethodInvocation:release
+Field:Direction
+Method-name:MotionEvent
+Method-returnType:null
+Method-parameters:[]
+Method-name:MotionEvent
+Method-returnType:null
+Method-parameters:[Spatial spatial, MotionPath path]
+MethodInvocation:addControl
+FieldAccess:path
+Method-name:MotionEvent
+Method-returnType:null
+Method-parameters:[Spatial spatial, MotionPath path, float initialDuration]
+MethodInvocation:addControl
+FieldAccess:path
+Method-name:MotionEvent
+Method-returnType:null
+Method-parameters:[Spatial spatial, MotionPath path, LoopMode loopMode]
+MethodInvocation:addControl
+FieldAccess:path
+FieldAccess:loopMode
+Method-name:MotionEvent
+Method-returnType:null
+Method-parameters:[Spatial spatial, MotionPath path, float initialDuration, LoopMode loopMode]
+MethodInvocation:addControl
+FieldAccess:path
+FieldAccess:loopMode
+Method-name:update
+Method-returnType:void
+Method-parameters:[float tpf]
+MethodInvocation:internalUpdate
+Method-name:internalUpdate
+Method-returnType:void
+Method-parameters:[float tpf]
+MethodInvocation:triggerWayPointReach
+MethodInvocation:getNbWayPoints
+MethodInvocation:stop
+MethodInvocation:clampWrapTime
+MethodInvocation:onUpdate
+Method-name:initEvent
+Method-returnType:void
+Method-parameters:[Application app, Cinematic cinematic]
+Method-name:setTime
+Method-returnType:void
+Method-parameters:[float time]
+MethodInvocation:onUpdate
+Method-name:onUpdate
+Method-returnType:void
+Method-parameters:[float tpf]
+MethodInvocation:interpolatePath
+MethodInvocation:computeTargetDirection
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter ex]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter im]
+MethodInvocation:getCapsule
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+MethodInvocation:readEnum
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+Method-name:needsDirection
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:computeTargetDirection
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:lookAt
+MethodInvocation:setLocalRotation
+MethodInvocation:lookAt
+MethodInvocation:lookAt
+MethodInvocation:multLocal
+MethodInvocation:setLocalRotation
+MethodInvocation:setLocalRotation
+Method-name:cloneForSpatial
+Method-returnType:Control
+Method-parameters:[Spatial spatial]
+Method-name:jmeClone
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:clone
+MethodInvocation:clone
+Method-name:cloneFields
+Method-returnType:void
+Method-parameters:[Cloner cloner, Object original]
+FieldAccess:spatial
+MethodInvocation:clone
+Method-name:onPlay
+Method-returnType:void
+Method-parameters:[]
+Method-name:onStop
+Method-returnType:void
+Method-parameters:[]
+Method-name:onPause
+Method-returnType:void
+Method-parameters:[]
+Method-name:getCurrentValue
+Method-returnType:float
+Method-parameters:[]
+Method-name:setCurrentValue
+Method-returnType:void
+Method-parameters:[float currentValue]
+FieldAccess:currentValue
+Method-name:getCurrentWayPoint
+Method-returnType:int
+Method-parameters:[]
+Method-name:setCurrentWayPoint
+Method-returnType:void
+Method-parameters:[int currentWayPoint]
+FieldAccess:currentWayPoint
+Method-name:getDirection
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:setDirection
+Method-returnType:void
+Method-parameters:[Vector3f direction]
+MethodInvocation:setDirection
+Method-name:setDirection
+Method-returnType:void
+Method-parameters:[Vector3f direction, Vector3f upVector]
+MethodInvocation:set
+FieldAccess:direction
+MethodInvocation:set
+FieldAccess:upVector
+Method-name:getDirectionType
+Method-returnType:Direction
+Method-parameters:[]
+Method-name:setDirectionType
+Method-returnType:void
+Method-parameters:[Direction directionType]
+FieldAccess:directionType
+Method-name:setLookAt
+Method-returnType:void
+Method-parameters:[Vector3f lookAt, Vector3f upVector]
+FieldAccess:lookAt
+FieldAccess:upVector
+Method-name:getRotation
+Method-returnType:Quaternion
+Method-parameters:[]
+Method-name:setRotation
+Method-returnType:void
+Method-parameters:[Quaternion rotation]
+FieldAccess:rotation
+Method-name:getPath
+Method-returnType:MotionPath
+Method-parameters:[]
+Method-name:setPath
+Method-returnType:void
+Method-parameters:[MotionPath path]
+FieldAccess:path
+Method-name:setEnabled
+Method-returnType:void
+Method-parameters:[boolean enabled]
+MethodInvocation:play
+MethodInvocation:pause
+Method-name:isEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:render
+Method-returnType:void
+Method-parameters:[RenderManager rm, ViewPort vp]
+Method-name:setSpatial
+Method-returnType:void
+Method-parameters:[Spatial spatial]
+FieldAccess:spatial
+Method-name:getSpatial
+Method-returnType:Spatial
+Method-parameters:[]
+Method-name:getTraveledDistance
+Method-returnType:float
+Method-parameters:[]

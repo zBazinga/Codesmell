@@ -1,0 +1,67 @@
+Class:MetaDataUpdateSettingsService
+Field:logger
+MethodInvocation:getLogger
+Field:clusterService
+Field:allocationService
+Field:indexScopedSettings
+Field:indicesService
+Field:threadPool
+Method-name:MetaDataUpdateSettingsService
+Method-returnType:null
+Method-parameters:[ClusterService clusterService, AllocationService allocationService, IndexScopedSettings indexScopedSettings, IndicesService indicesService, ThreadPool threadPool]
+FieldAccess:clusterService
+FieldAccess:threadPool
+FieldAccess:allocationService
+FieldAccess:indexScopedSettings
+FieldAccess:indicesService
+Method-name:updateSettings
+Method-returnType:void
+Method-parameters:[final UpdateSettingsClusterStateUpdateRequest request, final ActionListener<ClusterStateUpdateResponse> listener]
+Method-name:getTotalNewShards
+Method-returnType:int
+Method-parameters:[Index index, ClusterState currentState, int updatedNumberOfReplicas]
+MethodInvocation:index
+MethodInvocation:metaData
+MethodInvocation:getNumberOfShards
+MethodInvocation:getNumberOfReplicas
+Method-name:maybeUpdateClusterBlock
+Method-returnType:void
+Method-parameters:[String[] actualIndices, ClusterBlocks.Builder blocks, ClusterBlock block, Setting<Boolean> setting, Settings openSettings]
+MethodInvocation:exists
+MethodInvocation:get
+MethodInvocation:addIndexBlock
+MethodInvocation:removeIndexBlock
+Method-name:upgradeIndexSettings
+Method-returnType:void
+Method-parameters:[final UpgradeSettingsClusterStateUpdateRequest request, final ActionListener<ClusterStateUpdateResponse> listener]
+MethodInvocation:submitStateUpdateTask
+MethodInvocation:wrapPreservingContext
+MethodInvocation:getThreadContext
+Method-name:newResponse
+Method-returnType:ClusterStateUpdateResponse
+Method-parameters:[boolean acknowledged]
+Method-name:execute
+Method-returnType:ClusterState
+Method-parameters:[ClusterState currentState]
+MethodInvocation:builder
+MethodInvocation:metaData
+MethodInvocation:entrySet
+MethodInvocation:versions
+MethodInvocation:getKey
+MethodInvocation:get
+MethodInvocation:equals
+MethodInvocation:getCreationVersion
+MethodInvocation:put
+MethodInvocation:settingsVersion
+MethodInvocation:settings
+MethodInvocation:builder
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:builder
+MethodInvocation:getSettings
+MethodInvocation:v1
+MethodInvocation:getValue
+MethodInvocation:getSettingsVersion
+MethodInvocation:build
+MethodInvocation:metaData
+MethodInvocation:builder

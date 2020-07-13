@@ -1,0 +1,75 @@
+Class:PositionList
+Field:serialVersionUID
+Field:latitude
+Field:longitude
+Field:size
+Method-name:PositionList
+Method-returnType:null
+Method-parameters:[]
+Method-name:clone
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:clone
+MethodInvocation:clone
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[final Object obj]
+Method-name:ensureCapacity
+Method-returnType:void
+Method-parameters:[int new_size]
+MethodInvocation:ceil
+MethodInvocation:pow
+MethodInvocation:ceil
+MethodInvocation:log
+MethodInvocation:log
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+Method-name:getLongitude
+Method-returnType:double
+Method-parameters:[final int pos]
+Method-name:getLatitude
+Method-returnType:double
+Method-parameters:[final int pos]
+Method-name:add
+Method-returnType:void
+Method-parameters:[final double latitude, final double longitude]
+MethodInvocation:ensureCapacity
+FieldAccess:longitude
+FieldAccess:latitude
+Method-name:insert
+Method-returnType:void
+Method-parameters:[final int pos, final double latitude, final double longitude]
+MethodInvocation:ensureCapacity
+MethodInvocation:arraycopy
+FieldAccess:longitude
+FieldAccess:longitude
+MethodInvocation:arraycopy
+FieldAccess:latitude
+FieldAccess:latitude
+FieldAccess:longitude
+FieldAccess:latitude
+Method-name:replace
+Method-returnType:void
+Method-parameters:[final int pos, final double latitude, final double longitude]
+FieldAccess:longitude
+FieldAccess:latitude
+Method-name:remove
+Method-returnType:void
+Method-parameters:[final int pos]
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+Method-name:createPosListElement
+Method-returnType:Element
+Method-parameters:[GMLGenerator gmlGenerator]
+MethodInvocation:size
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getLatitude
+MethodInvocation:getLongitude
+MethodInvocation:addContent
+MethodInvocation:toString

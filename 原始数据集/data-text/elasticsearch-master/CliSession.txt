@@ -1,0 +1,64 @@
+Class:CliSession
+Field:httpClient
+Field:fetchSize
+Field:fetchSeparator
+Field:debug
+Field:binary
+Method-name:CliSession
+Method-returnType:null
+Method-parameters:[HttpClient httpClient]
+FieldAccess:httpClient
+Method-name:getClient
+Method-returnType:HttpClient
+Method-parameters:[]
+Method-name:setFetchSize
+Method-returnType:void
+Method-parameters:[int fetchSize]
+FieldAccess:fetchSize
+Method-name:getFetchSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:setFetchSeparator
+Method-returnType:void
+Method-parameters:[String fetchSeparator]
+FieldAccess:fetchSeparator
+Method-name:getFetchSeparator
+Method-returnType:String
+Method-parameters:[]
+Method-name:setDebug
+Method-returnType:void
+Method-parameters:[boolean debug]
+FieldAccess:debug
+Method-name:isDebug
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setBinary
+Method-returnType:void
+Method-parameters:[boolean binary]
+FieldAccess:binary
+Method-name:isBinary
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:checkConnection
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:serverInfo
+MethodInvocation:fromString
+MethodInvocation:getVersion
+MethodInvocation:isServerCompatible
+MethodInvocation:majorMinorToString
+MethodInvocation:toString
+Method-name:handleExceptionWhileCommunicatingWithServer
+Method-returnType:void
+Method-parameters:[CliTerminal terminal, RuntimeException e, AbstractServerCliCommand abstractServerCliCommand]
+MethodInvocation:ln
+MethodInvocation:error
+MethodInvocation:param
+MethodInvocation:error
+MethodInvocation:line
+MethodInvocation:getMessage
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getMessage
+MethodInvocation:isDebug
+MethodInvocation:printStackTrace

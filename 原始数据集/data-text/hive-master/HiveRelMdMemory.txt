@@ -1,0 +1,35 @@
+Class:HiveRelMdMemory
+Field:INSTANCE
+Field:SOURCE
+MethodInvocation:reflectiveSource
+Method-name:HiveRelMdMemory
+Method-returnType:null
+Method-parameters:[]
+Method-name:memory
+Method-returnType:Double
+Method-parameters:[HiveTableScan tableScan, RelMetadataQuery mq]
+Method-name:memory
+Method-returnType:Double
+Method-parameters:[HiveFilter filter, RelMetadataQuery mq]
+Method-name:memory
+Method-returnType:Double
+Method-parameters:[HiveJoin join, RelMetadataQuery mq]
+MethodInvocation:getMemory
+Method-name:cumulativeMemoryWithinPhaseSplit
+Method-returnType:Double
+Method-parameters:[HiveJoin join]
+MethodInvocation:getCumulativeMemoryWithinPhaseSplit
+Method-name:memory
+Method-returnType:Double
+Method-parameters:[HiveProject project, RelMetadataQuery mq]
+Method-name:memory
+Method-returnType:Double
+Method-parameters:[HiveSortLimit sort, RelMetadataQuery mq]
+MethodInvocation:getCollation
+MethodInvocation:getAverageRowSize
+MethodInvocation:getInput
+MethodInvocation:getRowCount
+MethodInvocation:getInput
+Method-name:memory
+Method-returnType:Double
+Method-parameters:[HiveUnion union, RelMetadataQuery mq]

@@ -1,0 +1,44 @@
+Class:CustomMappingsLoader
+Field:mappingsParser
+Field:classMapBuilder
+Field:beanContainer
+Method-name:CustomMappingsLoader
+Method-returnType:null
+Method-parameters:[MappingsParser mappingsParser, ClassMapBuilder classMapBuilder, BeanContainer beanContainer]
+FieldAccess:mappingsParser
+FieldAccess:classMapBuilder
+FieldAccess:beanContainer
+Method-name:load
+Method-returnType:LoadMappingsResult
+Method-parameters:[List<MappingFileData> mappings]
+MethodInvocation:findConfiguration
+MethodInvocation:getClassMaps
+MethodInvocation:processMappings
+MethodInvocation:addAll
+MethodInvocation:addDefaultFieldMappings
+MethodInvocation:getCustomConverters
+MethodInvocation:getConverters
+MethodInvocation:getCustomConverters
+MethodInvocation:getConverters
+MethodInvocation:getCustomConverters
+MethodInvocation:add
+MethodInvocation:entrySet
+MethodInvocation:getAll
+MethodInvocation:getValue
+MethodInvocation:getCustomConverters
+MethodInvocation:setConverters
+MethodInvocation:getCustomConverters
+MethodInvocation:setCustomConverters
+MethodInvocation:setConverters
+MethodInvocation:getCustomConverters
+MethodInvocation:addDefaultCustomConverters
+Method-name:findConfiguration
+Method-returnType:Configuration
+Method-parameters:[List<MappingFileData> mappingFileDataList]
+MethodInvocation:getConfiguration
+MethodInvocation:throwMappingException
+MethodInvocation:getConfiguration
+Class:ByReferenceConverter
+Method-name:convert
+Method-returnType:Object
+Method-parameters:[Object existingDestinationFieldValue, Object sourceFieldValue, Class<?> destinationClass, Class<?> sourceClass]

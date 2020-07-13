@@ -1,0 +1,95 @@
+Class:EvaluationContext
+Field:numThreads
+Field:executorServiceSupplier
+Field:keepGoing
+Field:eventHandler
+Field:useForkJoinPool
+Field:isExecutionPhase
+Method-name:EvaluationContext
+Method-returnType:null
+Method-parameters:[int numThreads, @Nullable Supplier<ExecutorService> executorServiceSupplier, boolean keepGoing, ExtendedEventHandler eventHandler, boolean useForkJoinPool, boolean isExecutionPhase]
+MethodInvocation:checkArgument
+FieldAccess:numThreads
+FieldAccess:executorServiceSupplier
+FieldAccess:keepGoing
+FieldAccess:eventHandler
+MethodInvocation:checkNotNull
+FieldAccess:useForkJoinPool
+FieldAccess:isExecutionPhase
+Method-name:newBuilder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:getParallelism
+Method-returnType:int
+Method-parameters:[]
+Method-name:getExecutorServiceSupplier
+Method-returnType:Optional<Supplier<ExecutorService>>
+Method-parameters:[]
+MethodInvocation:ofNullable
+Method-name:getKeepGoing
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getEventHandler
+Method-returnType:ExtendedEventHandler
+Method-parameters:[]
+Method-name:getCopyWithKeepGoing
+Method-returnType:EvaluationContext
+Method-parameters:[boolean keepGoing]
+FieldAccess:keepGoing
+FieldAccess:numThreads
+FieldAccess:executorServiceSupplier
+FieldAccess:eventHandler
+FieldAccess:useForkJoinPool
+FieldAccess:isExecutionPhase
+Method-name:getUseForkJoinPool
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isExecutionPhase
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:configureEvaluationContext
+Method-returnType:EvaluationContext
+Method-parameters:[SkyQueryEnvironment skyQueryEnvironment]
+Class:Builder
+Field:numThreads
+Field:executorServiceSupplier
+Field:keepGoing
+Field:eventHandler
+Field:useForkJoinPool
+Field:isExecutionPhase
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:copyFrom
+Method-returnType:Builder
+Method-parameters:[EvaluationContext evaluationContext]
+FieldAccess:numThreads
+FieldAccess:executorServiceSupplier
+FieldAccess:keepGoing
+FieldAccess:eventHandler
+Method-name:setNumThreads
+Method-returnType:Builder
+Method-parameters:[int numThreads]
+FieldAccess:numThreads
+Method-name:setExecutorServiceSupplier
+Method-returnType:Builder
+Method-parameters:[Supplier<ExecutorService> executorServiceSupplier]
+FieldAccess:executorServiceSupplier
+Method-name:setKeepGoing
+Method-returnType:Builder
+Method-parameters:[boolean keepGoing]
+FieldAccess:keepGoing
+Method-name:setEventHander
+Method-returnType:Builder
+Method-parameters:[ExtendedEventHandler eventHandler]
+FieldAccess:eventHandler
+Method-name:setUseForkJoinPool
+Method-returnType:Builder
+Method-parameters:[boolean useForkJoinPool]
+FieldAccess:useForkJoinPool
+Method-name:setExecutionPhase
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:build
+Method-returnType:EvaluationContext
+Method-parameters:[]

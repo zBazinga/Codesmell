@@ -1,0 +1,37 @@
+Class:BindingContext
+Field:initializer
+Field:model
+Method-name:BindingContext
+Method-returnType:null
+Method-parameters:[]
+Method-name:BindingContext
+Method-returnType:null
+Method-parameters:[@Nullable WebBindingInitializer initializer]
+FieldAccess:initializer
+Method-name:getModel
+Method-returnType:Model
+Method-parameters:[]
+FieldAccess:model
+Method-name:createDataBinder
+Method-returnType:WebExchangeDataBinder
+Method-parameters:[ServerWebExchange exchange, @Nullable Object target, String name]
+FieldAccess:initializer
+MethodInvocation:initBinder
+FieldAccess:initializer
+MethodInvocation:initDataBinder
+Method-name:initDataBinder
+Method-returnType:WebExchangeDataBinder
+Method-parameters:[WebExchangeDataBinder binder, ServerWebExchange exchange]
+Method-name:createDataBinder
+Method-returnType:WebExchangeDataBinder
+Method-parameters:[ServerWebExchange exchange, String name]
+MethodInvocation:createDataBinder
+Method-name:renderWith
+Method-returnType:Mono<? extends Void>
+Method-parameters:[View view, Map<String,Object> model, @Nullable MediaType mediaType, ServerWebExchange exchange, ViewResolutionResultHandler viewResolutionResultHandler]
+MethodInvocation:put
+MethodInvocation:getAttributes
+MethodInvocation:doOnTerminate
+MethodInvocation:render
+MethodInvocation:remove
+MethodInvocation:getAttributes

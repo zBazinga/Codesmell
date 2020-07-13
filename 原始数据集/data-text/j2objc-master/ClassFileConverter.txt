@@ -1,0 +1,217 @@
+Class:ClassFileConverter
+Field:parserEnv
+Field:translationEnv
+Field:file
+Field:classFile
+Field:typeName
+Method-name:convertClassFile
+Method-returnType:CompilationUnit
+Method-parameters:[Options options, JavacEnvironment env, InputFile file]
+MethodInvocation:setClassPath
+MethodInvocation:createUnit
+MethodInvocation:error
+MethodInvocation:getMessage
+Method-name:ClassFileConverter
+Method-returnType:null
+Method-parameters:[JavacEnvironment parserEnv, TranslationEnvironment translationEnv, InputFile file]
+FieldAccess:parserEnv
+FieldAccess:translationEnv
+FieldAccess:file
+FieldAccess:classFile
+MethodInvocation:create
+FieldAccess:typeName
+MethodInvocation:getFullName
+Method-name:setClassPath
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getAbsolutePath
+MethodInvocation:substring
+MethodInvocation:lastIndexOf
+MethodInvocation:getRelativePath
+MethodInvocation:add
+MethodInvocation:setLocation
+MethodInvocation:fileManager
+Method-name:createUnit
+Method-returnType:CompilationUnit
+Method-parameters:[]
+MethodInvocation:getTypeElement
+MethodInvocation:elementUtilities
+MethodInvocation:error
+MethodInvocation:getOriginalLocation
+MethodInvocation:getPackageOf
+MethodInvocation:elementUtilities
+MethodInvocation:defaultPackage
+MethodInvocation:toString
+MethodInvocation:getSimpleName
+MethodInvocation:setPackage
+MethodInvocation:convert
+MethodInvocation:convert
+MethodInvocation:convertClassInitializer
+MethodInvocation:addType
+Method-name:convertClassInitializer
+Method-returnType:void
+Method-parameters:[AbstractTypeDeclaration typeDecl]
+MethodInvocation:getMethod
+MethodInvocation:acceptVisitor
+MethodInvocation:getStatements
+MethodInvocation:addClassInitStatement
+MethodInvocation:copy
+Method-name:convert
+Method-returnType:TreeNode
+Method-parameters:[Element element, TreeNode parent]
+MethodInvocation:getKind
+MethodInvocation:convertAnnotationTypeDeclaration
+MethodInvocation:convertTypeDeclaration
+MethodInvocation:convertMethodDeclaration
+MethodInvocation:convertEnumDeclaration
+MethodInvocation:convertEnumConstantDeclaration
+MethodInvocation:convertFieldDeclaration
+MethodInvocation:convertPackage
+MethodInvocation:convertParameter
+MethodInvocation:getKind
+Method-name:convertName
+Method-returnType:Name
+Method-parameters:[Element element]
+MethodInvocation:getEnclosingElement
+MethodInvocation:isEmpty
+MethodInvocation:toString
+MethodInvocation:getSimpleName
+MethodInvocation:asType
+MethodInvocation:convertName
+Method-name:convertPackage
+Method-returnType:TreeNode
+Method-parameters:[PackageElement element]
+MethodInvocation:setName
+MethodInvocation:setPackageElement
+MethodInvocation:getPackageName
+MethodInvocation:elementUtil
+Method-name:convertBodyDeclaration
+Method-returnType:BodyDeclaration
+Method-parameters:[BodyDeclaration newNode, Element element]
+MethodInvocation:setAnnotations
+MethodInvocation:convertAnnotations
+Method-name:convertAnnotationTypeMemberDeclaration
+Method-returnType:AnnotationTypeMemberDeclaration
+Method-parameters:[ExecutableElement element]
+MethodInvocation:getDefaultValue
+MethodInvocation:convertAnnotationValue
+MethodInvocation:getReturnType
+MethodInvocation:setDefault
+MethodInvocation:convertBodyDeclaration
+Method-name:convertAnnotationTypeDeclaration
+Method-returnType:TreeNode
+Method-parameters:[TypeElement element]
+MethodInvocation:convertBodyDeclaration
+MethodInvocation:getEnclosedElements
+MethodInvocation:getKind
+MethodInvocation:convertAnnotationTypeMemberDeclaration
+MethodInvocation:convert
+MethodInvocation:addBodyDeclaration
+MethodInvocation:removeInterfaceModifiers
+Method-name:convertAnnotationValue
+Method-returnType:Expression
+Method-parameters:[TypeMirror type, AnnotationValue annot]
+MethodInvocation:createAnnotationValue
+MethodInvocation:translationUtil
+Method-name:convertAnnotation
+Method-returnType:Annotation
+Method-parameters:[AnnotationMirror mirror]
+MethodInvocation:getElementValues
+MethodInvocation:toString
+MethodInvocation:getAnnotationType
+MethodInvocation:equals
+MethodInvocation:getSimpleName
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:parsePropertyAttribute
+MethodInvocation:addAttribute
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:setValue
+MethodInvocation:convertAnnotationValue
+MethodInvocation:getReturnType
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:forEach
+MethodInvocation:setValue
+MethodInvocation:setName
+MethodInvocation:convertAnnotationValue
+MethodInvocation:getReturnType
+MethodInvocation:addValue
+MethodInvocation:setTypeName
+MethodInvocation:setAnnotationMirror
+MethodInvocation:asElement
+MethodInvocation:getAnnotationType
+Method-name:convertAnnotations
+Method-returnType:List<Annotation>
+Method-parameters:[Element element]
+MethodInvocation:getAnnotationMirrors
+MethodInvocation:add
+MethodInvocation:convertAnnotation
+Method-name:convertTypeDeclaration
+Method-returnType:TreeNode
+Method-parameters:[TypeElement element]
+MethodInvocation:convertBodyDeclaration
+MethodInvocation:getEnclosedElements
+MethodInvocation:isClass
+MethodInvocation:getKind
+MethodInvocation:isInterface
+MethodInvocation:getKind
+MethodInvocation:convert
+MethodInvocation:addBodyDeclaration
+MethodInvocation:isInterface
+MethodInvocation:removeInterfaceModifiers
+Method-name:getMethodDescriptor
+Method-returnType:String
+Method-parameters:[ExecutableElement exec]
+MethodInvocation:getMethodDescriptor
+MethodInvocation:typeUtil
+MethodInvocation:asType
+Method-name:convertMethodDeclaration
+Method-returnType:TreeNode
+Method-parameters:[ExecutableElement element, AbstractTypeDeclaration node]
+Method-name:convertParameter
+Method-returnType:TreeNode
+Method-parameters:[VariableElement element]
+MethodInvocation:setAnnotations
+MethodInvocation:convertAnnotations
+Method-name:convertFieldDeclaration
+Method-returnType:TreeNode
+Method-parameters:[VariableElement element]
+MethodInvocation:getConstantValue
+MethodInvocation:newLiteral
+MethodInvocation:typeUtil
+MethodInvocation:convertBodyDeclaration
+Method-name:isEnumSynthetic
+Method-returnType:boolean
+Method-parameters:[Element e, TypeMirror enumType]
+MethodInvocation:getKind
+MethodInvocation:getKind
+MethodInvocation:getSignatureName
+MethodInvocation:typeUtil
+MethodInvocation:toString
+MethodInvocation:getSimpleName
+MethodInvocation:getMethodDescriptor
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:convertEnumDeclaration
+Method-returnType:TreeNode
+Method-parameters:[TypeElement element]
+MethodInvocation:convertBodyDeclaration
+MethodInvocation:getEnclosedElements
+MethodInvocation:isEnumSynthetic
+MethodInvocation:asType
+MethodInvocation:convert
+MethodInvocation:getKind
+MethodInvocation:addEnumConstant
+MethodInvocation:addBodyDeclaration
+MethodInvocation:removeModifiers
+Method-name:convertEnumConstantDeclaration
+Method-returnType:TreeNode
+Method-parameters:[VariableElement element]
+MethodInvocation:convertBodyDeclaration

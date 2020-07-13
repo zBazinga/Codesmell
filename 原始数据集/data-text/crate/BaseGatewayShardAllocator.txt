@@ -1,0 +1,37 @@
+Class:BaseGatewayShardAllocator
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getClass
+Method-name:allocateUnassigned
+Method-returnType:void
+Method-parameters:[RoutingAllocation allocation]
+MethodInvocation:routingNodes
+MethodInvocation:iterator
+MethodInvocation:unassigned
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:makeAllocationDecision
+MethodInvocation:isDecisionTaken
+MethodInvocation:getAllocationDecision
+MethodInvocation:initialize
+MethodInvocation:getId
+MethodInvocation:getTargetNode
+MethodInvocation:getAllocationId
+MethodInvocation:primary
+MethodInvocation:getShardSize
+MethodInvocation:clusterInfo
+MethodInvocation:changes
+MethodInvocation:removeAndIgnore
+MethodInvocation:getAllocationStatus
+MethodInvocation:changes
+Method-name:makeAllocationDecision
+Method-returnType:AllocateUnassignedDecision
+Method-parameters:[ShardRouting unassignedShard, RoutingAllocation allocation, Logger logger]
+Method-name:buildDecisionsForAllNodes
+Method-returnType:List<NodeAllocationResult>
+Method-parameters:[ShardRouting shard, RoutingAllocation allocation]
+MethodInvocation:routingNodes
+MethodInvocation:canAllocate
+MethodInvocation:deciders
+MethodInvocation:add
+MethodInvocation:node

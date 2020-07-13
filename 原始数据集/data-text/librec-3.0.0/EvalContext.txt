@@ -1,0 +1,90 @@
+Class:EvalContext
+Field:groundTruthList
+Field:recommendedList
+Field:similarityMatrix
+Field:similarities
+Field:conf
+Field:recommender
+Method-name:EvalContext
+Method-returnType:null
+Method-parameters:[Configuration conf, RecommendedList recommendedList, SequentialAccessSparseMatrix testMatrix, SymmMatrix similarityMatrix, Map<String,RecommenderSimilarity> similarities]
+FieldAccess:conf
+FieldAccess:similarities
+FieldAccess:similarityMatrix
+FieldAccess:recommendedList
+FieldAccess:groundTruthList
+MethodInvocation:getGroundTruthListFromSparseMatrix
+Method-name:EvalContext
+Method-returnType:null
+Method-parameters:[Configuration conf, RecommendedList recommendedList, SequentialAccessSparseMatrix testMatrix]
+FieldAccess:conf
+FieldAccess:recommendedList
+FieldAccess:groundTruthList
+MethodInvocation:getGroundTruthListFromSparseMatrix
+Method-name:EvalContext
+Method-returnType:null
+Method-parameters:[Configuration conf, Recommender recommender, DataSet testDataset]
+FieldAccess:conf
+FieldAccess:recommender
+MethodInvocation:getBoolean
+MethodInvocation:recommendRank
+MethodInvocation:recommendRating
+FieldAccess:groundTruthList
+MethodInvocation:getGroundTruthListFromDataSet
+Method-name:EvalContext
+Method-returnType:null
+Method-parameters:[Configuration conf, Recommender recommender, DataSet testDataset, SymmMatrix similarityMatrix, Map<String,RecommenderSimilarity> similarities]
+FieldAccess:similarities
+FieldAccess:similarityMatrix
+Method-name:getGroundTruthListFromDataSet
+Method-returnType:RecommendedList
+Method-parameters:[DataSet dataset]
+FieldAccess:recommender
+MethodInvocation:getGroundTruthListFromSparseTensor
+MethodInvocation:getGroundTruthListFromSparseMatrix
+Method-name:getGroundTruthListFromSparseTensor
+Method-returnType:RecommendedList
+Method-parameters:[SparseTensor testTensor]
+MethodInvocation:getUserDimension
+MethodInvocation:getItemDimension
+MethodInvocation:dimensions
+MethodInvocation:addList
+MethodInvocation:key
+MethodInvocation:key
+MethodInvocation:get
+MethodInvocation:add
+Method-name:getGroundTruthList
+Method-returnType:RecommendedList
+Method-parameters:[]
+Method-name:setGroundTruthList
+Method-returnType:void
+Method-parameters:[RecommendedList groundTruthList]
+FieldAccess:groundTruthList
+Method-name:getRecommendedList
+Method-returnType:RecommendedList
+Method-parameters:[]
+Method-name:setRecommendedList
+Method-returnType:void
+Method-parameters:[RecommendedList recommendedList]
+FieldAccess:recommendedList
+Method-name:getSimilarityMatrix
+Method-returnType:SymmMatrix
+Method-parameters:[]
+Method-name:setSimilarityMatrix
+Method-returnType:void
+Method-parameters:[SymmMatrix similarityMatrix]
+FieldAccess:similarityMatrix
+Method-name:getSimilarities
+Method-returnType:Map<String,RecommenderSimilarity>
+Method-parameters:[]
+Method-name:setSimilarities
+Method-returnType:void
+Method-parameters:[Map<String,RecommenderSimilarity> similarities]
+FieldAccess:similarities
+Method-name:getConf
+Method-returnType:Configuration
+Method-parameters:[]
+Method-name:setConf
+Method-returnType:void
+Method-parameters:[Configuration conf]
+FieldAccess:conf

@@ -1,0 +1,61 @@
+Class:WebExchangeDataBinder
+Method-name:WebExchangeDataBinder
+Method-returnType:null
+Method-parameters:[@Nullable Object target]
+Method-name:WebExchangeDataBinder
+Method-returnType:null
+Method-parameters:[@Nullable Object target, String objectName]
+Method-name:bind
+Method-returnType:Mono<Void>
+Method-parameters:[ServerWebExchange exchange]
+MethodInvocation:then
+MethodInvocation:doOnNext
+MethodInvocation:getValuesToBind
+MethodInvocation:doBind
+Method-name:getValuesToBind
+Method-returnType:Mono<Map<String,Object>>
+Method-parameters:[ServerWebExchange exchange]
+MethodInvocation:extractValuesToBind
+Method-name:extractValuesToBind
+Method-returnType:Mono<Map<String,Object>>
+Method-parameters:[ServerWebExchange exchange]
+MethodInvocation:getQueryParams
+MethodInvocation:getRequest
+MethodInvocation:getFormData
+MethodInvocation:getMultipartData
+MethodInvocation:map
+MethodInvocation:zip
+MethodInvocation:just
+MethodInvocation:forEach
+MethodInvocation:getT1
+MethodInvocation:addBindValue
+MethodInvocation:forEach
+MethodInvocation:getT2
+MethodInvocation:addBindValue
+MethodInvocation:forEach
+MethodInvocation:getT3
+MethodInvocation:addBindValue
+Method-name:addBindValue
+Method-returnType:void
+Method-parameters:[Map<String,Object> params, String key, List<?> values]
+MethodInvocation:isEmpty
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:value
+MethodInvocation:toList
+MethodInvocation:put
+MethodInvocation:size
+MethodInvocation:get
+Method-name:validateIfApplicable
+Method-returnType:void
+Method-parameters:[MethodParameter parameter, ModelAttributeMethodArgumentResolver modelAttributeMethodArgumentResolver]
+MethodInvocation:getParameterAnnotations
+MethodInvocation:getAnnotation
+MethodInvocation:startsWith
+MethodInvocation:getSimpleName
+MethodInvocation:annotationType
+MethodInvocation:value
+MethodInvocation:getValue
+MethodInvocation:validate
+MethodInvocation:validate

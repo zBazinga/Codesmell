@@ -1,0 +1,26 @@
+Class:AlterTableSkewedByAnalyzer
+Method-name:AlterTableSkewedByAnalyzer
+Method-returnType:null
+Method-parameters:[QueryState queryState]
+Method-name:analyzeCommand
+Method-returnType:void
+Method-parameters:[TableName tableName, Map<String,String> partitionSpec, ASTNode command]
+Method-name:handleAlterTableSkewedBy
+Method-returnType:DDLDesc
+Method-parameters:[ASTNode ast, TableName tableName, Table table]
+MethodInvocation:getChild
+MethodInvocation:analyzeSkewedTableDDLColNames
+MethodInvocation:analyzeDDLSkewedValues
+MethodInvocation:analyzeStoredAdDirs
+MethodInvocation:validateSkewedInformation
+MethodInvocation:validateColumnNameUniqueness
+MethodInvocation:getCols
+Method-name:handleAlterTableDisableStoredAsDirs
+Method-returnType:DDLDesc
+Method-parameters:[TableName tableName, Table table]
+MethodInvocation:getSkewedColNames
+MethodInvocation:getSkewedColValues
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:getMsg
+MethodInvocation:getNotEmptyDbTable

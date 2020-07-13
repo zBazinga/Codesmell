@@ -1,0 +1,95 @@
+Class:CompositeApiProcessor
+Method-name:handleResponse
+Method-returnType:void
+Method-parameters:[Exchange exchange, Optional<T> body, Map<String,String> headers, SalesforceException exception, AsyncCallback callback]
+Field:compositeClient
+Field:format
+Method-name:CompositeApiProcessor
+Method-returnType:null
+Method-parameters:[final SalesforceEndpoint endpoint]
+Method-name:doStart
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getConfiguration
+MethodInvocation:getApiVersion
+MethodInvocation:getFormat
+MethodInvocation:contains
+MethodInvocation:of
+MethodInvocation:startService
+Method-name:doStop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:stopService
+Method-name:process
+Method-returnType:boolean
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:processInternal
+MethodInvocation:processInternal
+MethodInvocation:processInternal
+MethodInvocation:value
+MethodInvocation:processException
+MethodInvocation:format
+MethodInvocation:value
+MethodInvocation:getMessage
+MethodInvocation:processException
+Method-name:processCompositeBatchResponse
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final Optional<SObjectBatchResponse> responseBody, final Map<String,String> headers, final SalesforceException exception, final AsyncCallback callback]
+MethodInvocation:isPresent
+MethodInvocation:setException
+MethodInvocation:getIn
+MethodInvocation:getOut
+MethodInvocation:get
+MethodInvocation:copyFromWithNewBody
+MethodInvocation:putAll
+MethodInvocation:getHeaders
+MethodInvocation:done
+Method-name:processCompositeResponse
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final Optional<SObjectCompositeResponse> responseBody, final Map<String,String> headers, final SalesforceException exception, final AsyncCallback callback]
+MethodInvocation:isPresent
+MethodInvocation:setException
+MethodInvocation:getIn
+MethodInvocation:getOut
+MethodInvocation:get
+MethodInvocation:copyFromWithNewBody
+MethodInvocation:putAll
+MethodInvocation:getHeaders
+MethodInvocation:done
+Method-name:processCompositeTreeResponse
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final Optional<SObjectTreeResponse> responseBody, final Map<String,String> headers, final SalesforceException exception, final AsyncCallback callback]
+MethodInvocation:isPresent
+MethodInvocation:setException
+MethodInvocation:getIn
+MethodInvocation:getOut
+MethodInvocation:getBody
+MethodInvocation:get
+MethodInvocation:hasErrors
+MethodInvocation:getResults
+MethodInvocation:setIdFor
+MethodInvocation:getReferenceId
+MethodInvocation:getId
+MethodInvocation:setErrorFor
+MethodInvocation:getReferenceId
+MethodInvocation:getErrors
+MethodInvocation:getAllErrors
+MethodInvocation:getStatusCode
+MethodInvocation:setException
+MethodInvocation:copyFromWithNewBody
+MethodInvocation:putAll
+MethodInvocation:getHeaders
+MethodInvocation:done
+Method-name:processInternal
+Method-returnType:boolean
+Method-parameters:[final Class<T> bodyType, final Exchange exchange, final CompositeApiClient.Operation<T,R> clientOperation, final ResponseHandler<R> responseHandler, final AsyncCallback callback]
+MethodInvocation:getIn
+MethodInvocation:getMandatoryBody
+MethodInvocation:submit
+MethodInvocation:determineHeaders
+MethodInvocation:handleResponse
+Method-name:processException
+Method-returnType:boolean
+Method-parameters:[final Exchange exchange, final AsyncCallback callback, final Exception e]
+MethodInvocation:setException
+MethodInvocation:done

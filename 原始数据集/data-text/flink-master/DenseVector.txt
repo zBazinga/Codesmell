@@ -1,0 +1,189 @@
+Class:DenseVector
+Field:data
+Method-name:DenseVector
+Method-returnType:null
+Method-parameters:[]
+Method-name:DenseVector
+Method-returnType:null
+Method-parameters:[int n]
+FieldAccess:data
+Method-name:DenseVector
+Method-returnType:null
+Method-parameters:[double[] data]
+FieldAccess:data
+Method-name:getData
+Method-returnType:double[]
+Method-parameters:[]
+FieldAccess:data
+Method-name:setData
+Method-returnType:void
+Method-parameters:[double[] data]
+FieldAccess:data
+Method-name:ones
+Method-returnType:DenseVector
+Method-parameters:[int n]
+MethodInvocation:fill
+Method-name:zeros
+Method-returnType:DenseVector
+Method-parameters:[int n]
+MethodInvocation:fill
+Method-name:rand
+Method-returnType:DenseVector
+Method-parameters:[int n]
+MethodInvocation:nextDouble
+Method-name:clone
+Method-returnType:DenseVector
+Method-parameters:[]
+MethodInvocation:clone
+FieldAccess:data
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+Method-name:get
+Method-returnType:double
+Method-parameters:[int i]
+Method-name:set
+Method-returnType:void
+Method-parameters:[int i, double d]
+Method-name:add
+Method-returnType:void
+Method-parameters:[int i, double d]
+Method-name:normL1
+Method-returnType:double
+Method-parameters:[]
+MethodInvocation:abs
+Method-name:normL2
+Method-returnType:double
+Method-parameters:[]
+MethodInvocation:sqrt
+Method-name:normL2Square
+Method-returnType:double
+Method-parameters:[]
+Method-name:normInf
+Method-returnType:double
+Method-parameters:[]
+MethodInvocation:max
+MethodInvocation:abs
+Method-name:slice
+Method-returnType:DenseVector
+Method-parameters:[int[] indices]
+Method-name:prefix
+Method-returnType:DenseVector
+Method-parameters:[double d]
+MethodInvocation:size
+MethodInvocation:arraycopy
+FieldAccess:data
+FieldAccess:length
+FieldAccess:data
+Method-name:append
+Method-returnType:DenseVector
+Method-parameters:[double d]
+MethodInvocation:size
+MethodInvocation:arraycopy
+FieldAccess:data
+FieldAccess:length
+FieldAccess:data
+MethodInvocation:size
+Method-name:scaleEqual
+Method-returnType:void
+Method-parameters:[double d]
+MethodInvocation:scal
+Method-name:plus
+Method-returnType:DenseVector
+Method-parameters:[Vector other]
+MethodInvocation:clone
+MethodInvocation:axpy
+MethodInvocation:axpy
+Method-name:minus
+Method-returnType:DenseVector
+Method-parameters:[Vector other]
+MethodInvocation:clone
+MethodInvocation:axpy
+MethodInvocation:axpy
+Method-name:scale
+Method-returnType:DenseVector
+Method-parameters:[double d]
+MethodInvocation:clone
+MethodInvocation:scal
+Method-name:dot
+Method-returnType:double
+Method-parameters:[Vector vec]
+MethodInvocation:dot
+MethodInvocation:dot
+Method-name:standardizeEqual
+Method-returnType:void
+Method-parameters:[double mean, double stdvar]
+Method-name:normalizeEqual
+Method-returnType:void
+Method-parameters:[double p]
+MethodInvocation:isInfinite
+MethodInvocation:normInf
+MethodInvocation:normL1
+MethodInvocation:normL2
+MethodInvocation:pow
+MethodInvocation:abs
+MethodInvocation:pow
+Method-name:setEqual
+Method-returnType:void
+Method-parameters:[DenseVector other]
+Method-name:plusEqual
+Method-returnType:void
+Method-parameters:[Vector other]
+MethodInvocation:axpy
+MethodInvocation:axpy
+Method-name:minusEqual
+Method-returnType:void
+Method-parameters:[Vector other]
+MethodInvocation:axpy
+MethodInvocation:axpy
+Method-name:plusScaleEqual
+Method-returnType:void
+Method-parameters:[Vector other, double alpha]
+MethodInvocation:axpy
+MethodInvocation:axpy
+Method-name:outer
+Method-returnType:DenseMatrix
+Method-parameters:[]
+MethodInvocation:outer
+Method-name:outer
+Method-returnType:DenseMatrix
+Method-parameters:[DenseVector other]
+MethodInvocation:size
+MethodInvocation:size
+FieldAccess:data
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:iterator
+Method-returnType:VectorIterator
+Method-parameters:[]
+Method-name:multiplies
+Method-returnType:DenseVector
+Method-parameters:[DenseMatrix denseMatrix]
+MethodInvocation:numRows
+MethodInvocation:gemv
+Class:DenseVectorIterator
+Field:cursor
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:next
+Method-returnType:void
+Method-parameters:[]
+Method-name:getIndex
+Method-returnType:int
+Method-parameters:[]
+Method-name:getValue
+Method-returnType:double
+Method-parameters:[]

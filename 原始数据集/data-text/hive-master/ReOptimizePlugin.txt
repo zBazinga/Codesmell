@@ -1,0 +1,77 @@
+Class:ReOptimizePlugin
+Field:LOG
+MethodInvocation:getLogger
+Field:retryPossible
+Field:coreDriver
+Field:statsReaderHook
+Field:alwaysCollectStats
+Class:LocalHook
+Method-name:run
+Method-returnType:void
+Method-parameters:[HookContext hookContext]
+MethodInvocation:getHookType
+MethodInvocation:getException
+MethodInvocation:getMessage
+MethodInvocation:contains
+MethodInvocation:getName
+MethodInvocation:contains
+MethodInvocation:getName
+MethodInvocation:contains
+MethodInvocation:info
+Method-name:initialize
+Method-returnType:void
+Method-parameters:[Driver driver]
+MethodInvocation:addOnFailureHook
+MethodInvocation:getHookRunner
+MethodInvocation:addOnFailureHook
+MethodInvocation:getHookRunner
+MethodInvocation:addPostHook
+MethodInvocation:getHookRunner
+MethodInvocation:getBoolVar
+MethodInvocation:getConf
+MethodInvocation:setCollectOnSuccess
+MethodInvocation:setStatsSource
+MethodInvocation:getStatsSource
+MethodInvocation:getConf
+Method-name:shouldReExecute
+Method-returnType:boolean
+Method-parameters:[int executionNum]
+Method-name:prepareToReExecute
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setCollectOnSuccess
+MethodInvocation:setStatsSource
+MethodInvocation:getStatsSourceContaining
+MethodInvocation:getStatsSource
+MethodInvocation:getPlanMapper
+Method-name:shouldReExecute
+Method-returnType:boolean
+Method-parameters:[int executionNum, PlanMapper oldPlanMapper, PlanMapper newPlanMapper]
+MethodInvocation:planEquals
+MethodInvocation:info
+Method-name:planEquals
+Method-returnType:boolean
+Method-parameters:[PlanMapper pmL, PlanMapper pmR]
+MethodInvocation:getRootOps
+MethodInvocation:getRootOps
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:logicalEqualsTree
+MethodInvocation:remove
+MethodInvocation:remove
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+Method-name:beforeExecute
+Method-returnType:void
+Method-parameters:[int executionIndex, boolean explainReOptimization]
+MethodInvocation:setCollectOnSuccess
+Method-name:afterExecute
+Method-returnType:void
+Method-parameters:[PlanMapper planMapper, boolean success]
+MethodInvocation:setStatsSource
+MethodInvocation:getStatsSourceContaining
+MethodInvocation:getStatsSource

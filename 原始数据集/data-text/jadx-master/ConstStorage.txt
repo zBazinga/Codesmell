@@ -1,0 +1,105 @@
+Class:ConstStorage
+Class:ValueStorage
+Field:values
+Field:duplicates
+Method-name:getValues
+Method-returnType:Map<Object,FieldNode>
+Method-parameters:[]
+Method-name:get
+Method-returnType:FieldNode
+Method-parameters:[Object key]
+MethodInvocation:get
+Method-name:put
+Method-returnType:boolean
+Method-parameters:[Object value, FieldNode fld]
+MethodInvocation:put
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:contains
+MethodInvocation:remove
+Method-name:contains
+Method-returnType:boolean
+Method-parameters:[Object value]
+MethodInvocation:contains
+MethodInvocation:containsKey
+Field:replaceEnabled
+Field:globalValues
+Field:classes
+Field:resourcesNames
+Method-name:ConstStorage
+Method-returnType:null
+Method-parameters:[JadxArgs args]
+FieldAccess:replaceEnabled
+MethodInvocation:isReplaceConsts
+Method-name:processConstFields
+Method-returnType:void
+Method-parameters:[ClassNode cls, List<FieldNode> staticFields]
+MethodInvocation:isEmpty
+MethodInvocation:getAccessFlags
+MethodInvocation:isStatic
+MethodInvocation:isFinal
+MethodInvocation:get
+MethodInvocation:getValue
+MethodInvocation:getValueType
+MethodInvocation:addConstField
+MethodInvocation:getValue
+MethodInvocation:isPublic
+Method-name:addConstField
+Method-returnType:void
+Method-parameters:[ClassNode cls, FieldNode fld, Object value, boolean isPublic]
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:getClsValues
+Method-name:getClsValues
+Method-returnType:ValueStorage
+Method-parameters:[ClassNode cls]
+MethodInvocation:computeIfAbsent
+Method-name:getConstField
+Method-returnType:FieldNode
+Method-parameters:[ClassNode cls, Object value, boolean searchGlobal]
+MethodInvocation:dex
+MethodInvocation:getResourceField
+MethodInvocation:contains
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getParentClass
+MethodInvocation:getClassInfo
+MethodInvocation:resolveClass
+MethodInvocation:get
+Method-name:getConstFieldByLiteralArg
+Method-returnType:FieldNode
+Method-parameters:[ClassNode cls, LiteralArg arg]
+MethodInvocation:getPrimitiveType
+MethodInvocation:getType
+MethodInvocation:getLiteral
+MethodInvocation:getConstField
+MethodInvocation:getConstField
+MethodInvocation:abs
+MethodInvocation:getConstField
+MethodInvocation:abs
+MethodInvocation:getConstField
+MethodInvocation:abs
+MethodInvocation:getConstField
+MethodInvocation:abs
+MethodInvocation:getConstField
+MethodInvocation:abs
+MethodInvocation:intBitsToFloat
+MethodInvocation:getConstField
+MethodInvocation:compare
+MethodInvocation:longBitsToDouble
+MethodInvocation:getConstField
+MethodInvocation:compare
+Method-name:setResourcesNames
+Method-returnType:void
+Method-parameters:[Map<Integer,String> resourcesNames]
+FieldAccess:resourcesNames
+Method-name:getResourcesNames
+Method-returnType:Map<Integer,String>
+Method-parameters:[]
+Method-name:getGlobalConstFields
+Method-returnType:Map<Object,FieldNode>
+Method-parameters:[]
+MethodInvocation:getValues
+Method-name:isReplaceEnabled
+Method-returnType:boolean
+Method-parameters:[]

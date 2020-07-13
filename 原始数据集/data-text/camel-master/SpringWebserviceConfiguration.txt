@@ -1,0 +1,227 @@
+Class:SpringWebserviceConfiguration
+Field:webServiceEndpointUri
+Field:messageFilter
+Field:sslContextParameters
+Field:webServiceTemplate
+Field:messageSender
+Field:messageFactory
+Field:soapAction
+Field:wsAddressingAction
+Field:outputAction
+Field:faultAction
+Field:faultTo
+Field:replyTo
+Field:messageIdStrategy
+Field:timeout
+Field:allowResponseHeaderOverride
+Field:allowResponseAttachmentOverride
+Field:endpointMappingType
+Field:endpointMappingLookupKey
+Field:expression
+Field:xPathExpression
+Field:endpointMapping
+Field:endpointDispatcher
+Method-name:getWebServiceTemplate
+Method-returnType:WebServiceTemplate
+Method-parameters:[]
+Method-name:setWebServiceTemplate
+Method-returnType:void
+Method-parameters:[WebServiceTemplate webServiceTemplate]
+FieldAccess:webServiceTemplate
+Method-name:getMessageFactory
+Method-returnType:WebServiceMessageFactory
+Method-parameters:[]
+Method-name:setMessageFactory
+Method-returnType:void
+Method-parameters:[WebServiceMessageFactory messageFactory]
+FieldAccess:messageFactory
+Method-name:getWebServiceEndpointUri
+Method-returnType:String
+Method-parameters:[]
+Method-name:setWebServiceEndpointUri
+Method-returnType:void
+Method-parameters:[String webServiceEndpointUri]
+FieldAccess:webServiceEndpointUri
+Method-name:getSoapAction
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSoapAction
+Method-returnType:void
+Method-parameters:[String soapAction]
+FieldAccess:soapAction
+Method-name:getEndpointUri
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getEndpointMappingKey
+MethodInvocation:encode
+MethodInvocation:getLookupKey
+MethodInvocation:getEndpointMappingKey
+MethodInvocation:getDefaultUri
+Method-name:getWsAddressingAction
+Method-returnType:URI
+Method-parameters:[]
+Method-name:setWsAddressingAction
+Method-returnType:void
+Method-parameters:[URI wsAddressingAction]
+FieldAccess:wsAddressingAction
+Method-name:setWsAddressingAction
+Method-returnType:void
+Method-parameters:[String wsAddressingAction]
+MethodInvocation:hasText
+MethodInvocation:setWsAddressingAction
+Method-name:getTimeout
+Method-returnType:int
+Method-parameters:[]
+Method-name:setTimeout
+Method-returnType:void
+Method-parameters:[int timeout]
+FieldAccess:timeout
+Method-name:getEndpointMapping
+Method-returnType:CamelSpringWSEndpointMapping
+Method-parameters:[]
+Method-name:setEndpointMapping
+Method-returnType:void
+Method-parameters:[CamelSpringWSEndpointMapping endpointMapping]
+FieldAccess:endpointMapping
+Method-name:getEndpointMappingKey
+Method-returnType:EndpointMappingKey
+Method-parameters:[]
+Method-name:getEndpointMappingType
+Method-returnType:EndpointMappingType
+Method-parameters:[]
+Method-name:setEndpointMappingType
+Method-returnType:void
+Method-parameters:[EndpointMappingType endpointMappingType]
+FieldAccess:endpointMappingType
+Method-name:getEndpointMappingLookupKey
+Method-returnType:String
+Method-parameters:[]
+Method-name:setEndpointMappingLookupKey
+Method-returnType:void
+Method-parameters:[String endpointMappingLookupKey]
+FieldAccess:endpointMappingLookupKey
+Method-name:getExpression
+Method-returnType:String
+Method-parameters:[]
+Method-name:setExpression
+Method-returnType:void
+Method-parameters:[String expression]
+FieldAccess:expression
+Method-name:getxPathExpression
+Method-returnType:XPathExpression
+Method-parameters:[]
+Method-name:setxPathExpression
+Method-returnType:void
+Method-parameters:[XPathExpression xPathExpression]
+FieldAccess:xPathExpression
+Method-name:getSslContextParameters
+Method-returnType:SSLContextParameters
+Method-parameters:[]
+Method-name:setSslContextParameters
+Method-returnType:void
+Method-parameters:[SSLContextParameters sslContextParameters]
+FieldAccess:sslContextParameters
+Method-name:getEndpointDispatcher
+Method-returnType:CamelEndpointDispatcher
+Method-parameters:[]
+Method-name:setEndpointDispatcher
+Method-returnType:void
+Method-parameters:[CamelEndpointDispatcher endpointDispatcher]
+FieldAccess:endpointDispatcher
+Method-name:encode
+Method-returnType:String
+Method-parameters:[String uri]
+MethodInvocation:lastIndexOf
+MethodInvocation:replaceFirst
+MethodInvocation:subSequence
+MethodInvocation:substring
+Method-name:decode
+Method-returnType:String
+Method-parameters:[String uri]
+MethodInvocation:lastIndexOf
+MethodInvocation:replaceFirst
+MethodInvocation:subSequence
+MethodInvocation:substring
+Method-name:setMessageFilter
+Method-returnType:void
+Method-parameters:[MessageFilter messageFilter]
+FieldAccess:messageFilter
+Method-name:getMessageFilter
+Method-returnType:MessageFilter
+Method-parameters:[]
+Method-name:getOutputAction
+Method-returnType:URI
+Method-parameters:[]
+Method-name:setOutputAction
+Method-returnType:void
+Method-parameters:[URI outputAction]
+FieldAccess:outputAction
+Method-name:setOutputAction
+Method-returnType:void
+Method-parameters:[String output]
+MethodInvocation:hasText
+MethodInvocation:setOutputAction
+Method-name:getFaultAction
+Method-returnType:URI
+Method-parameters:[]
+Method-name:setFaultAction
+Method-returnType:void
+Method-parameters:[String fault]
+MethodInvocation:hasText
+MethodInvocation:setFaultAction
+Method-name:setFaultAction
+Method-returnType:void
+Method-parameters:[URI fault]
+FieldAccess:faultAction
+Method-name:getFaultTo
+Method-returnType:URI
+Method-parameters:[]
+Method-name:setFaultTo
+Method-returnType:void
+Method-parameters:[String faultTo]
+MethodInvocation:hasText
+MethodInvocation:setFaultTo
+Method-name:setFaultTo
+Method-returnType:void
+Method-parameters:[URI faultTo]
+FieldAccess:faultTo
+Method-name:getReplyTo
+Method-returnType:URI
+Method-parameters:[]
+Method-name:setReplyTo
+Method-returnType:void
+Method-parameters:[String replyToAction]
+MethodInvocation:hasText
+MethodInvocation:setReplyTo
+Method-name:setReplyTo
+Method-returnType:void
+Method-parameters:[URI replyToAction]
+FieldAccess:replyTo
+Method-name:getMessageSender
+Method-returnType:WebServiceMessageSender
+Method-parameters:[]
+Method-name:setMessageSender
+Method-returnType:void
+Method-parameters:[WebServiceMessageSender messageSender]
+FieldAccess:messageSender
+Method-name:getMessageIdStrategy
+Method-returnType:MessageIdStrategy
+Method-parameters:[]
+Method-name:setMessageIdStrategy
+Method-returnType:void
+Method-parameters:[MessageIdStrategy messageIdStrategy]
+FieldAccess:messageIdStrategy
+Method-name:isAllowResponseHeaderOverride
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAllowResponseHeaderOverride
+Method-returnType:void
+Method-parameters:[boolean allowResponseHeaderOverride]
+FieldAccess:allowResponseHeaderOverride
+Method-name:isAllowResponseAttachmentOverride
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAllowResponseAttachmentOverride
+Method-returnType:void
+Method-parameters:[boolean allowResponseAttachmentOverride]
+FieldAccess:allowResponseAttachmentOverride

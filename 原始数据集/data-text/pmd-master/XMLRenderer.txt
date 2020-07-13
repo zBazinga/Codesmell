@@ -1,0 +1,94 @@
+Class:XMLRenderer
+Field:encoding
+Method-name:XMLRenderer
+Method-returnType:null
+Method-parameters:[]
+Method-name:XMLRenderer
+Method-returnType:null
+Method-parameters:[String encoding]
+MethodInvocation:setEncoding
+Method-name:setEncoding
+Method-returnType:void
+Method-parameters:[String encoding]
+FieldAccess:encoding
+FieldAccess:encoding
+MethodInvocation:getProperty
+Method-name:getEncoding
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:encoding
+Method-name:createDocument
+Method-returnType:Document
+Method-parameters:[]
+MethodInvocation:newInstance
+MethodInvocation:newDocumentBuilder
+MethodInvocation:newDocument
+Method-name:dumpDocToWriter
+Method-returnType:void
+Method-parameters:[Document doc, Writer writer]
+MethodInvocation:newInstance
+MethodInvocation:newTransformer
+MethodInvocation:setOutputProperty
+MethodInvocation:setOutputProperty
+MethodInvocation:setOutputProperty
+MethodInvocation:setOutputProperty
+MethodInvocation:transform
+Method-name:render
+Method-returnType:String
+Method-parameters:[Iterator<Match> matches]
+MethodInvocation:render
+MethodInvocation:toString
+Method-name:render
+Method-returnType:void
+Method-parameters:[Iterator<Match> matches, Writer writer]
+MethodInvocation:createDocument
+MethodInvocation:createElement
+MethodInvocation:appendChild
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:appendChild
+MethodInvocation:addCodeSnippet
+MethodInvocation:addFilesToDuplicationElement
+MethodInvocation:createDuplicationElement
+MethodInvocation:dumpDocToWriter
+MethodInvocation:flush
+Method-name:addFilesToDuplicationElement
+Method-returnType:Element
+Method-parameters:[Document doc, Element duplication, Match match]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:createElement
+MethodInvocation:setAttribute
+MethodInvocation:valueOf
+MethodInvocation:getBeginLine
+MethodInvocation:setAttribute
+MethodInvocation:getFilename
+MethodInvocation:setAttribute
+MethodInvocation:valueOf
+MethodInvocation:getEndLine
+MethodInvocation:getBeginColumn
+MethodInvocation:getEndColumn
+MethodInvocation:setAttribute
+MethodInvocation:valueOf
+MethodInvocation:setAttribute
+MethodInvocation:valueOf
+MethodInvocation:appendChild
+Method-name:addCodeSnippet
+Method-returnType:Element
+Method-parameters:[Document doc, Element duplication, Match match]
+MethodInvocation:getSourceCodeSlice
+MethodInvocation:createElement
+MethodInvocation:appendChild
+MethodInvocation:createCDATASection
+MethodInvocation:appendChild
+Method-name:createDuplicationElement
+Method-returnType:Element
+Method-parameters:[Document doc, Match match]
+MethodInvocation:createElement
+MethodInvocation:setAttribute
+MethodInvocation:valueOf
+MethodInvocation:getLineCount
+MethodInvocation:setAttribute
+MethodInvocation:valueOf
+MethodInvocation:getTokenCount

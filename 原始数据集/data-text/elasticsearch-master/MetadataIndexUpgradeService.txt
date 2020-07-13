@@ -1,0 +1,69 @@
+Class:MetadataIndexUpgradeService
+Field:logger
+MethodInvocation:getLogger
+Field:settings
+Field:xContentRegistry
+Field:mapperRegistry
+Field:indexScopedSettings
+Method-name:MetadataIndexUpgradeService
+Method-returnType:null
+Method-parameters:[Settings settings, NamedXContentRegistry xContentRegistry, MapperRegistry mapperRegistry, IndexScopedSettings indexScopedSettings]
+FieldAccess:settings
+FieldAccess:xContentRegistry
+FieldAccess:mapperRegistry
+FieldAccess:indexScopedSettings
+Method-name:upgradeIndexMetadata
+Method-returnType:IndexMetadata
+Method-parameters:[IndexMetadata indexMetadata, Version minimumIndexCompatibilityVersion]
+MethodInvocation:isUpgraded
+MethodInvocation:archiveBrokenIndexSettings
+MethodInvocation:checkSupportedVersion
+MethodInvocation:archiveBrokenIndexSettings
+MethodInvocation:checkMappingsCompatibility
+MethodInvocation:markAsUpgraded
+Method-name:isUpgraded
+Method-returnType:boolean
+Method-parameters:[IndexMetadata indexMetadata]
+MethodInvocation:onOrAfter
+MethodInvocation:getUpgradedVersion
+Method-name:checkSupportedVersion
+Method-returnType:void
+Method-parameters:[IndexMetadata indexMetadata, Version minimumIndexCompatibilityVersion]
+MethodInvocation:isSupportedVersion
+MethodInvocation:getIndex
+MethodInvocation:getCreationVersion
+Method-name:isSupportedVersion
+Method-returnType:boolean
+Method-parameters:[IndexMetadata indexMetadata, Version minimumIndexCompatibilityVersion]
+MethodInvocation:onOrAfter
+MethodInvocation:getCreationVersion
+Method-name:checkMappingsCompatibility
+Method-returnType:void
+Method-parameters:[IndexMetadata indexMetadata]
+Method-name:markAsUpgraded
+Method-returnType:IndexMetadata
+Method-parameters:[IndexMetadata indexMetadata]
+MethodInvocation:build
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:builder
+MethodInvocation:getSettings
+MethodInvocation:build
+MethodInvocation:settings
+MethodInvocation:builder
+Method-name:archiveBrokenIndexSettings
+Method-returnType:IndexMetadata
+Method-parameters:[IndexMetadata indexMetadata]
+MethodInvocation:getSettings
+MethodInvocation:archiveUnknownOrInvalidSettings
+MethodInvocation:warn
+MethodInvocation:getIndex
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:warn
+MethodInvocation:getIndex
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:build
+MethodInvocation:settings
+MethodInvocation:builder

@@ -1,0 +1,101 @@
+Class:AbstractEncoderMethodReturnValueHandler
+Field:VOID_RESOLVABLE_TYPE
+MethodInvocation:forClass
+Field:OBJECT_RESOLVABLE_TYPE
+MethodInvocation:forClass
+Field:COROUTINES_FLOW_CLASS_NAME
+Field:logger
+MethodInvocation:getLog
+MethodInvocation:getClass
+Field:encoders
+Field:adapterRegistry
+Field:defaultBufferFactory
+Method-name:AbstractEncoderMethodReturnValueHandler
+Method-returnType:null
+Method-parameters:[List<Encoder<?>> encoders, ReactiveAdapterRegistry registry]
+MethodInvocation:notEmpty
+MethodInvocation:notNull
+FieldAccess:encoders
+MethodInvocation:unmodifiableList
+FieldAccess:adapterRegistry
+Method-name:getEncoders
+Method-returnType:List<Encoder<?>>
+Method-parameters:[]
+FieldAccess:encoders
+Method-name:getAdapterRegistry
+Method-returnType:ReactiveAdapterRegistry
+Method-parameters:[]
+FieldAccess:adapterRegistry
+Method-name:supportsReturnType
+Method-returnType:boolean
+Method-parameters:[MethodParameter returnType]
+Method-name:handleReturnValue
+Method-returnType:Mono<Void>
+Method-parameters:[@Nullable Object returnValue, MethodParameter returnType, Message<?> message]
+MethodInvocation:handleNoContent
+MethodInvocation:getOrDefault
+MethodInvocation:getHeaders
+FieldAccess:defaultBufferFactory
+MethodInvocation:get
+MethodInvocation:getHeaders
+MethodInvocation:encodeContent
+MethodInvocation:emptyMap
+MethodInvocation:handleEncodedContent
+MethodInvocation:from
+Method-name:encodeContent
+Method-returnType:Flux<DataBuffer>
+Method-parameters:[@Nullable Object content, MethodParameter returnType, DataBufferFactory bufferFactory, @Nullable MimeType mimeType, Map<String,Object> hints]
+MethodInvocation:forMethodParameter
+MethodInvocation:getAdapter
+MethodInvocation:getAdapterRegistry
+MethodInvocation:resolve
+MethodInvocation:toPublisher
+MethodInvocation:isKotlinReflectPresent
+MethodInvocation:isKotlinType
+MethodInvocation:getContainingClass
+MethodInvocation:isSuspend
+MethodInvocation:getMethod
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:toClass
+MethodInvocation:getGeneric
+MethodInvocation:getElementType
+MethodInvocation:justOrEmpty
+MethodInvocation:toClass
+MethodInvocation:forInstance
+MethodInvocation:resolve
+MethodInvocation:resolve
+MethodInvocation:cast
+MethodInvocation:from
+MethodInvocation:getEncoder
+MethodInvocation:map
+MethodInvocation:from
+MethodInvocation:encodeValue
+Method-name:getElementType
+Method-returnType:ResolvableType
+Method-parameters:[ReactiveAdapter adapter, ResolvableType type]
+MethodInvocation:isNoValue
+Method-name:getEncoder
+Method-returnType:Encoder<T>
+Method-parameters:[ResolvableType elementType, @Nullable MimeType mimeType]
+MethodInvocation:getEncoders
+MethodInvocation:canEncode
+Method-name:encodeValue
+Method-returnType:DataBuffer
+Method-parameters:[Object element, ResolvableType elementType, @Nullable Encoder<T> encoder, DataBufferFactory bufferFactory, @Nullable MimeType mimeType, @Nullable Map<String,Object> hints]
+MethodInvocation:getEncoder
+MethodInvocation:forInstance
+MethodInvocation:getClass
+MethodInvocation:encodeValue
+Method-name:handleEncodedContent
+Method-returnType:Mono<Void>
+Method-parameters:[Flux<DataBuffer> encodedContent, MethodParameter returnType, Message<?> message]
+Method-name:handleNoContent
+Method-returnType:Mono<Void>
+Method-parameters:[MethodParameter returnType, Message<?> message]
+Class:KotlinDelegate
+Method-name:isSuspend
+Method-returnType:boolean
+Method-parameters:[@Nullable Method method]
+MethodInvocation:getKotlinFunction
+MethodInvocation:isSuspend

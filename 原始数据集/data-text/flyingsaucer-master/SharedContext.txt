@@ -1,0 +1,304 @@
+Class:SharedContext
+Field:text_renderer
+Field:media
+Field:uac
+Field:interactive
+Field:idMap
+Field:dpi
+Field:MM__PER__CM
+Field:CM__PER__IN
+Field:mm_per_dot
+Field:DEFAULT_DPI
+Field:print
+Field:dotsPerPixel
+Field:styleMap
+Field:replacedElementFactory
+Field:temp_canvas
+Field:lineBreakingStrategy
+Method-name:SharedContext
+Method-returnType:null
+Method-parameters:[]
+Method-name:SharedContext
+Method-returnType:null
+Method-parameters:[UserAgentCallback uac]
+MethodInvocation:setMedia
+FieldAccess:uac
+MethodInvocation:setCss
+MethodInvocation:render
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getCss
+MethodInvocation:setTextRenderer
+MethodInvocation:setDPI
+MethodInvocation:getScreenResolution
+MethodInvocation:getDefaultToolkit
+MethodInvocation:setDPI
+Method-name:SharedContext
+Method-returnType:null
+Method-parameters:[UserAgentCallback uac, FontResolver fr, ReplacedElementFactory ref, TextRenderer tr, float dpi]
+MethodInvocation:setMedia
+FieldAccess:uac
+MethodInvocation:setCss
+MethodInvocation:render
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getCss
+MethodInvocation:setTextRenderer
+MethodInvocation:setDPI
+Method-name:setFormSubmissionListener
+Method-returnType:void
+Method-parameters:[FormSubmissionListener fsl]
+MethodInvocation:setFormSubmissionListener
+Method-name:newLayoutContextInstance
+Method-returnType:LayoutContext
+Method-parameters:[]
+Method-name:newRenderingContextInstance
+Method-returnType:RenderingContext
+Method-parameters:[]
+Method-name:getFontResolver
+Method-returnType:FontResolver
+Method-parameters:[]
+Method-name:flushFonts
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:flushCache
+Field:font_resolver
+Method-name:getMedia
+Method-returnType:String
+Method-parameters:[]
+Field:css
+Field:debug_draw_boxes
+Field:debug_draw_line_boxes
+Field:debug_draw_inline_boxes
+Field:debug_draw_font_metrics
+Field:canvas
+Field:selection_start
+Field:selection_end
+Field:selection_end_x
+Field:selection_start_x
+Field:in_selection
+Method-name:getTextRenderer
+Method-returnType:TextRenderer
+Method-parameters:[]
+Method-name:debugDrawBoxes
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:debugDrawLineBoxes
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:debugDrawInlineBoxes
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:debugDrawFontMetrics
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDebug_draw_boxes
+Method-returnType:void
+Method-parameters:[boolean debug_draw_boxes]
+FieldAccess:debug_draw_boxes
+Method-name:setDebug_draw_line_boxes
+Method-returnType:void
+Method-parameters:[boolean debug_draw_line_boxes]
+FieldAccess:debug_draw_line_boxes
+Method-name:setDebug_draw_inline_boxes
+Method-returnType:void
+Method-parameters:[boolean debug_draw_inline_boxes]
+FieldAccess:debug_draw_inline_boxes
+Method-name:setDebug_draw_font_metrics
+Method-returnType:void
+Method-parameters:[boolean debug_draw_font_metrics]
+FieldAccess:debug_draw_font_metrics
+Method-name:getCss
+Method-returnType:StyleReference
+Method-parameters:[]
+Method-name:setCss
+Method-returnType:void
+Method-parameters:[StyleReference css]
+FieldAccess:css
+Method-name:getCanvas
+Method-returnType:FSCanvas
+Method-parameters:[]
+Method-name:setCanvas
+Method-returnType:void
+Method-parameters:[FSCanvas canvas]
+FieldAccess:canvas
+Method-name:set_TempCanvas
+Method-returnType:void
+Method-parameters:[Rectangle rect]
+FieldAccess:temp_canvas
+Method-name:getFixedRectangle
+Method-returnType:Rectangle
+Method-parameters:[]
+MethodInvocation:getCanvas
+FieldAccess:temp_canvas
+MethodInvocation:getFixedRectangle
+MethodInvocation:getCanvas
+MethodInvocation:translate
+MethodInvocation:getX
+MethodInvocation:getCanvas
+MethodInvocation:getY
+MethodInvocation:getCanvas
+Field:namespaceHandler
+Method-name:setNamespaceHandler
+Method-returnType:void
+Method-parameters:[NamespaceHandler nh]
+Method-name:getNamespaceHandler
+Method-returnType:NamespaceHandler
+Method-parameters:[]
+Method-name:addBoxId
+Method-returnType:void
+Method-parameters:[String id, Box box]
+MethodInvocation:put
+Method-name:getBoxById
+Method-returnType:Box
+Method-parameters:[String id]
+MethodInvocation:get
+Method-name:removeBoxId
+Method-returnType:void
+Method-parameters:[String id]
+MethodInvocation:remove
+Method-name:getIdMap
+Method-returnType:Map
+Method-parameters:[]
+Method-name:setTextRenderer
+Method-returnType:void
+Method-parameters:[TextRenderer text_renderer]
+FieldAccess:text_renderer
+Method-name:setMedia
+Method-returnType:void
+Method-parameters:[String media]
+FieldAccess:media
+Method-name:getUac
+Method-returnType:UserAgentCallback
+Method-parameters:[]
+Method-name:getUserAgentCallback
+Method-returnType:UserAgentCallback
+Method-parameters:[]
+Method-name:setUserAgentCallback
+Method-returnType:void
+Method-parameters:[UserAgentCallback userAgentCallback]
+MethodInvocation:getCss
+MethodInvocation:setUserAgentCallback
+Method-name:getDPI
+Method-returnType:float
+Method-parameters:[]
+FieldAccess:dpi
+Method-name:setDPI
+Method-returnType:void
+Method-parameters:[float dpi]
+FieldAccess:dpi
+FieldAccess:mm_per_dot
+Method-name:getMmPerPx
+Method-returnType:float
+Method-parameters:[]
+FieldAccess:mm_per_dot
+Method-name:getXHeight
+Method-returnType:float
+Method-parameters:[FontContext fontContext, FontSpecification fs]
+MethodInvocation:resolveFont
+MethodInvocation:getFontResolver
+MethodInvocation:getFSFontMetrics
+MethodInvocation:getTextRenderer
+MethodInvocation:getStrikethroughOffset
+MethodInvocation:getAscent
+MethodInvocation:abs
+MethodInvocation:getStrikethroughThickness
+Method-name:getBaseURL
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getBaseURL
+Method-name:setBaseURL
+Method-returnType:void
+Method-parameters:[String url]
+MethodInvocation:setBaseURL
+Method-name:isPaged
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:isInteractive
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setInteractive
+Method-returnType:void
+Method-parameters:[boolean interactive]
+FieldAccess:interactive
+Method-name:isPrint
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setPrint
+Method-returnType:void
+Method-parameters:[boolean print]
+FieldAccess:print
+MethodInvocation:setMedia
+MethodInvocation:setMedia
+Method-name:setFontMapping
+Method-returnType:void
+Method-parameters:[String name, Font font]
+MethodInvocation:getFontResolver
+MethodInvocation:setFontMapping
+Method-name:setFontResolver
+Method-returnType:void
+Method-parameters:[FontResolver resolver]
+Method-name:getDotsPerPixel
+Method-returnType:int
+Method-parameters:[]
+Method-name:setDotsPerPixel
+Method-returnType:void
+Method-parameters:[int pixelsPerDot]
+FieldAccess:dotsPerPixel
+Method-name:getStyle
+Method-returnType:CalculatedStyle
+Method-parameters:[Element e]
+MethodInvocation:getStyle
+Method-name:getStyle
+Method-returnType:CalculatedStyle
+Method-parameters:[Element e, boolean restyle]
+MethodInvocation:get
+MethodInvocation:getParentNode
+MethodInvocation:getStyle
+MethodInvocation:deriveStyle
+MethodInvocation:getCascadedStyle
+MethodInvocation:getCss
+MethodInvocation:put
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:reset
+Method-name:getReplacedElementFactory
+Method-returnType:ReplacedElementFactory
+Method-parameters:[]
+Method-name:setReplacedElementFactory
+Method-returnType:void
+Method-parameters:[ReplacedElementFactory ref]
+FieldAccess:replacedElementFactory
+MethodInvocation:reset
+FieldAccess:replacedElementFactory
+FieldAccess:replacedElementFactory
+Method-name:removeElementReferences
+Method-returnType:void
+Method-parameters:[Element e]
+MethodInvocation:getID
+MethodInvocation:length
+MethodInvocation:removeBoxId
+MethodInvocation:remove
+MethodInvocation:removeStyle
+MethodInvocation:getCss
+MethodInvocation:remove
+MethodInvocation:getReplacedElementFactory
+MethodInvocation:hasChildNodes
+MethodInvocation:getChildNodes
+MethodInvocation:getLength
+MethodInvocation:item
+MethodInvocation:getNodeType
+MethodInvocation:removeElementReferences
+Method-name:getLineBreakingStrategy
+Method-returnType:LineBreakingStrategy
+Method-parameters:[]
+Method-name:setLineBreakingStrategy
+Method-returnType:void
+Method-parameters:[LineBreakingStrategy lineBreakingStrategy]
+FieldAccess:lineBreakingStrategy

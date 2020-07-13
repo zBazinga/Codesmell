@@ -1,0 +1,106 @@
+Class:FaultToleranceConfiguration
+Field:delay
+Field:successThreshold
+Field:requestVolumeThreshold
+Field:failureRatio
+Field:timeoutEnabled
+Field:timeoutDuration
+Field:timeoutPoolSize
+Field:timeoutExecutorServiceRef
+Field:bulkheadEnabled
+Field:bulkheadMaxConcurrentCalls
+Field:bulkheadWaitingTaskQueue
+Method-name:getDelay
+Method-returnType:long
+Method-parameters:[]
+Method-name:setDelay
+Method-returnType:void
+Method-parameters:[long delay]
+FieldAccess:delay
+Method-name:getSuccessThreshold
+Method-returnType:int
+Method-parameters:[]
+Method-name:setSuccessThreshold
+Method-returnType:void
+Method-parameters:[int successThreshold]
+FieldAccess:successThreshold
+Method-name:getRequestVolumeThreshold
+Method-returnType:int
+Method-parameters:[]
+Method-name:setRequestVolumeThreshold
+Method-returnType:void
+Method-parameters:[int requestVolumeThreshold]
+FieldAccess:requestVolumeThreshold
+Method-name:getFailureRatio
+Method-returnType:float
+Method-parameters:[]
+Method-name:setFailureRatio
+Method-returnType:void
+Method-parameters:[float failureRatio]
+FieldAccess:failureRatio
+Method-name:isTimeoutEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setTimeoutEnabled
+Method-returnType:void
+Method-parameters:[boolean timeoutEnabled]
+FieldAccess:timeoutEnabled
+Method-name:getTimeoutDuration
+Method-returnType:long
+Method-parameters:[]
+Method-name:setTimeoutDuration
+Method-returnType:void
+Method-parameters:[long timeoutDuration]
+FieldAccess:timeoutDuration
+Method-name:getTimeoutPoolSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:setTimeoutPoolSize
+Method-returnType:void
+Method-parameters:[int timeoutPoolSize]
+FieldAccess:timeoutPoolSize
+Method-name:getTimeoutExecutorServiceRef
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTimeoutExecutorServiceRef
+Method-returnType:void
+Method-parameters:[String timeoutExecutorServiceRef]
+FieldAccess:timeoutExecutorServiceRef
+Method-name:isBulkheadEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setBulkheadEnabled
+Method-returnType:void
+Method-parameters:[boolean bulkheadEnabled]
+FieldAccess:bulkheadEnabled
+Method-name:getBulkheadMaxConcurrentCalls
+Method-returnType:int
+Method-parameters:[]
+Method-name:setBulkheadMaxConcurrentCalls
+Method-returnType:void
+Method-parameters:[int bulkheadMaxConcurrentCalls]
+FieldAccess:bulkheadMaxConcurrentCalls
+Method-name:getBulkheadWaitingTaskQueue
+Method-returnType:int
+Method-parameters:[]
+Method-name:setBulkheadWaitingTaskQueue
+Method-returnType:void
+Method-parameters:[int bulkheadWaitingTaskQueue]
+FieldAccess:bulkheadWaitingTaskQueue
+Method-name:configureCircuitBreaker
+Method-returnType:void
+Method-parameters:[FaultToleranceConfigurationCommon config, FaultToleranceReifier faultToleranceReifier]
+MethodInvocation:setDelay
+MethodInvocation:parseDuration
+MethodInvocation:getDelay
+MethodInvocation:setSuccessThreshold
+MethodInvocation:parseInt
+MethodInvocation:getSuccessThreshold
+MethodInvocation:setRequestVolumeThreshold
+MethodInvocation:parseInt
+MethodInvocation:getRequestVolumeThreshold
+MethodInvocation:getFailureRatio
+MethodInvocation:parseFloat
+MethodInvocation:getFailureRatio
+MethodInvocation:setFailureRatio
+MethodInvocation:setFailureRatio

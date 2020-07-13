@@ -1,0 +1,41 @@
+Class:RequestValidatingInterceptor
+Field:DEFAULT_RESPONSE_HEADER_NAME
+Field:ourLog
+MethodInvocation:getLogger
+Field:REQUEST_VALIDATION_RESULT
+MethodInvocation:getName
+Field:myAddValidationResultsToResponseOperationOutcome
+Method-name:doValidate
+Method-returnType:ValidationResult
+Method-parameters:[FhirValidator theValidator, String theRequest]
+MethodInvocation:validateWithResult
+Method-name:incomingRequestPostProcessed
+Method-returnType:boolean
+Method-parameters:[RequestDetails theRequestDetails, HttpServletRequest theRequest, HttpServletResponse theResponse]
+MethodInvocation:determineRequestEncodingNoDefault
+MethodInvocation:trace
+MethodInvocation:determineRequestCharset
+MethodInvocation:loadRequestContents
+MethodInvocation:isBlank
+MethodInvocation:trace
+MethodInvocation:validate
+MethodInvocation:put
+MethodInvocation:getUserData
+Method-name:isAddValidationResultsToResponseOperationOutcome
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:outgoingResponse
+Method-returnType:boolean
+Method-parameters:[RequestDetails theRequestDetails, IBaseResource theResponseObject]
+MethodInvocation:get
+MethodInvocation:getUserData
+MethodInvocation:populateOperationOutcome
+Method-name:provideDefaultResponseHeaderName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAddValidationResultsToResponseOperationOutcome
+Method-returnType:void
+Method-parameters:[boolean theAddValidationResultsToResponseOperationOutcome]
+Method-name:setResponseHeaderName
+Method-returnType:void
+Method-parameters:[String theResponseHeaderName]

@@ -1,0 +1,87 @@
+Class:RequestPartMethodArgumentResolver
+Method-name:RequestPartMethodArgumentResolver
+Method-returnType:null
+Method-parameters:[List<HttpMessageReader<?>> readers, ReactiveAdapterRegistry registry]
+Method-name:supportsParameter
+Method-returnType:boolean
+Method-parameters:[MethodParameter parameter]
+MethodInvocation:hasParameterAnnotation
+MethodInvocation:checkParameterType
+Method-name:resolveArgument
+Method-returnType:Mono<Object>
+Method-parameters:[MethodParameter parameter, BindingContext bindingContext, ServerWebExchange exchange]
+MethodInvocation:getParameterAnnotation
+MethodInvocation:required
+MethodInvocation:getPartName
+MethodInvocation:flatMapIterable
+MethodInvocation:getMultipartData
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:getMissingPartException
+MethodInvocation:emptyList
+MethodInvocation:isAssignableFrom
+MethodInvocation:getParameterType
+MethodInvocation:cast
+MethodInvocation:next
+MethodInvocation:isAssignableFrom
+MethodInvocation:getParameterType
+MethodInvocation:nested
+MethodInvocation:isAssignableFrom
+MethodInvocation:getNestedParameterType
+MethodInvocation:cast
+MethodInvocation:collectList
+MethodInvocation:cast
+MethodInvocation:collectList
+MethodInvocation:decodePartValues
+MethodInvocation:getAdapter
+MethodInvocation:getAdapterRegistry
+MethodInvocation:getParameterType
+MethodInvocation:nested
+MethodInvocation:just
+MethodInvocation:fromPublisher
+MethodInvocation:isAssignableFrom
+MethodInvocation:getNestedParameterType
+MethodInvocation:decodePartValues
+MethodInvocation:cast
+MethodInvocation:next
+MethodInvocation:decodePartValues
+Method-name:getPartName
+Method-returnType:String
+Method-parameters:[MethodParameter methodParam, @Nullable RequestPart requestPart]
+MethodInvocation:name
+MethodInvocation:isEmpty
+MethodInvocation:getParameterName
+MethodInvocation:getName
+MethodInvocation:getNestedParameterType
+Method-name:getMissingPartException
+Method-returnType:ServerWebInputException
+Method-parameters:[String name, MethodParameter param]
+Method-name:decodePartValues
+Method-returnType:Flux<?>
+Method-parameters:[Flux<Part> parts, MethodParameter elementType, BindingContext bindingContext, ServerWebExchange exchange, boolean isRequired]
+MethodInvocation:flatMap
+MethodInvocation:getRequest
+MethodInvocation:build
+MethodInvocation:request
+MethodInvocation:mutate
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getLogPrefix
+MethodInvocation:name
+MethodInvocation:readBody
+Class:PartServerHttpRequest
+Field:part
+Method-name:PartServerHttpRequest
+Method-returnType:null
+Method-parameters:[ServerHttpRequest delegate, Part part]
+FieldAccess:part
+Method-name:getHeaders
+Method-returnType:HttpHeaders
+Method-parameters:[]
+MethodInvocation:headers
+FieldAccess:part
+Method-name:getBody
+Method-returnType:Flux<DataBuffer>
+Method-parameters:[]
+MethodInvocation:content
+FieldAccess:part

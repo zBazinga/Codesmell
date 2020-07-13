@@ -1,0 +1,36 @@
+Class:DexTranslationAdvice
+Field:THE_ONE
+Field:NO_SOURCES_IN_ORDER
+Field:MIN_INVOKE_IN_ORDER
+Field:disableSourcesInOrder
+Method-name:DexTranslationAdvice
+Method-returnType:null
+Method-parameters:[]
+Method-name:DexTranslationAdvice
+Method-returnType:null
+Method-parameters:[boolean disableInvokeRange]
+FieldAccess:disableSourcesInOrder
+Method-name:hasConstantOperation
+Method-returnType:boolean
+Method-parameters:[Rop opcode, RegisterSpec sourceA, RegisterSpec sourceB]
+MethodInvocation:getType
+MethodInvocation:getTypeBearer
+MethodInvocation:getTypeBearer
+MethodInvocation:getOpcode
+MethodInvocation:getTypeBearer
+MethodInvocation:fitsIn16Bits
+MethodInvocation:getTypeBearer
+MethodInvocation:getOpcode
+MethodInvocation:fitsIn16Bits
+MethodInvocation:fitsIn8Bits
+MethodInvocation:make
+MethodInvocation:getValue
+MethodInvocation:fitsIn16Bits
+Method-name:requiresSourcesInOrder
+Method-returnType:boolean
+Method-parameters:[Rop opcode, RegisterSpecList sources]
+MethodInvocation:isCallLike
+MethodInvocation:totalRopWidth
+Method-name:getMaxOptimalRegisterCount
+Method-returnType:int
+Method-parameters:[]

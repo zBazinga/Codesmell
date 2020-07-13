@@ -1,0 +1,39 @@
+Class:Topologies
+Field:topologies
+Field:nameToId
+Method-name:Topologies
+Method-returnType:null
+Method-parameters:[Map<String,TopologyDetails> topologies]
+FieldAccess:topologies
+MethodInvocation:size
+MethodInvocation:putAll
+FieldAccess:topologies
+FieldAccess:nameToId
+MethodInvocation:size
+MethodInvocation:keySet
+MethodInvocation:get
+MethodInvocation:put
+FieldAccess:nameToId
+MethodInvocation:getName
+Method-name:getById
+Method-returnType:TopologyDetails
+Method-parameters:[String topologyId]
+MethodInvocation:get
+FieldAccess:topologies
+Method-name:getByName
+Method-returnType:TopologyDetails
+Method-parameters:[String topologyName]
+MethodInvocation:get
+FieldAccess:nameToId
+MethodInvocation:getById
+Method-name:getTopologies
+Method-returnType:Collection<TopologyDetails>
+Method-parameters:[]
+MethodInvocation:values
+FieldAccess:topologies
+Method-name:needsSchedulingTopologies
+Method-returnType:List<TopologyDetails>
+Method-parameters:[Cluster cluster]
+MethodInvocation:getTopologies
+MethodInvocation:needsScheduling
+MethodInvocation:add

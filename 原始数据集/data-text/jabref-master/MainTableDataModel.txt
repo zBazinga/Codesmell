@@ -1,0 +1,62 @@
+Class:MainTableDataModel
+Field:entriesFiltered
+Field:entriesSorted
+Field:groupViewMode
+Field:nameFormatter
+Field:preferencesService
+Method-name:MainTableDataModel
+Method-returnType:null
+Method-parameters:[BibDatabaseContext context, PreferencesService preferencesService, StateManager stateManager]
+FieldAccess:nameFormatter
+FieldAccess:preferencesService
+MethodInvocation:forUI
+MethodInvocation:getEntries
+MethodInvocation:getDatabase
+MethodInvocation:mapBacked
+MethodInvocation:bind
+MethodInvocation:predicateProperty
+MethodInvocation:combine
+MethodInvocation:activeGroupProperty
+MethodInvocation:activeSearchQueryProperty
+MethodInvocation:isMatched
+MethodInvocation:bind
+MethodInvocation:size
+MethodInvocation:setActiveSearchResultSize
+MethodInvocation:getGroupViewMode
+Method-name:isMatched
+Method-returnType:boolean
+Method-parameters:[ObservableList<GroupTreeNode> groups, Optional<SearchQuery> query, BibEntryTableViewModel entry]
+MethodInvocation:isMatchedByGroup
+MethodInvocation:isMatchedBySearch
+Method-name:isMatchedBySearch
+Method-returnType:boolean
+Method-parameters:[Optional<SearchQuery> query, BibEntryTableViewModel entry]
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:isMatch
+MethodInvocation:getEntry
+Method-name:isMatchedByGroup
+Method-returnType:boolean
+Method-parameters:[ObservableList<GroupTreeNode> groups, BibEntryTableViewModel entry]
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:createGroupMatcher
+MethodInvocation:isMatch
+MethodInvocation:getEntry
+Method-name:createGroupMatcher
+Method-returnType:Optional<MatcherSet>
+Method-parameters:[List<GroupTreeNode> selectedGroups]
+MethodInvocation:isEmpty
+MethodInvocation:empty
+MethodInvocation:build
+MethodInvocation:addRule
+MethodInvocation:getSearchMatcher
+MethodInvocation:of
+Method-name:getEntriesFilteredAndSorted
+Method-returnType:SortedList<BibEntryTableViewModel>
+Method-parameters:[]
+Method-name:refresh
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setValue
+FieldAccess:nameFormatter

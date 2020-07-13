@@ -1,0 +1,116 @@
+Class:ConditionGen
+Class:CondStack
+Field:stack
+Method-name:getStack
+Method-returnType:Queue<IfCondition>
+Method-parameters:[]
+Method-name:push
+Method-returnType:void
+Method-parameters:[IfCondition cond]
+MethodInvocation:add
+Method-name:pop
+Method-returnType:IfCondition
+Method-parameters:[]
+MethodInvocation:poll
+Method-name:ConditionGen
+Method-returnType:null
+Method-parameters:[InsnGen insnGen]
+Method-name:add
+Method-returnType:void
+Method-parameters:[CodeWriter code, IfCondition condition]
+MethodInvocation:add
+Method-name:wrap
+Method-returnType:void
+Method-parameters:[CodeWriter code, IfCondition condition]
+MethodInvocation:wrap
+Method-name:add
+Method-returnType:void
+Method-parameters:[CodeWriter code, CondStack stack, IfCondition condition]
+MethodInvocation:push
+MethodInvocation:getMode
+MethodInvocation:addCompare
+MethodInvocation:getCompare
+MethodInvocation:addTernary
+MethodInvocation:addNot
+MethodInvocation:addAndOr
+MethodInvocation:getMode
+MethodInvocation:pop
+Method-name:wrap
+Method-returnType:void
+Method-parameters:[CodeWriter code, CondStack stack, IfCondition cond]
+MethodInvocation:isWrapNeeded
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+Method-name:wrap
+Method-returnType:void
+Method-parameters:[CodeWriter code, InsnArg firstArg]
+MethodInvocation:isArgWrapNeeded
+MethodInvocation:add
+MethodInvocation:addArg
+MethodInvocation:add
+Method-name:addCompare
+Method-returnType:void
+Method-parameters:[CodeWriter code, CondStack stack, Compare compare]
+MethodInvocation:getOp
+MethodInvocation:getA
+MethodInvocation:getB
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:isLiteral
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:getLiteral
+MethodInvocation:invert
+MethodInvocation:size
+MethodInvocation:getStack
+MethodInvocation:addArg
+MethodInvocation:wrap
+MethodInvocation:add
+MethodInvocation:wrap
+MethodInvocation:addWarn
+MethodInvocation:getSymbol
+MethodInvocation:addArg
+MethodInvocation:isArgWrapNeeded
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:getSymbol
+MethodInvocation:addArg
+MethodInvocation:isArgWrapNeeded
+Method-name:addTernary
+Method-returnType:void
+Method-parameters:[CodeWriter code, CondStack stack, IfCondition condition]
+MethodInvocation:add
+MethodInvocation:first
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:second
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:third
+Method-name:addNot
+Method-returnType:void
+Method-parameters:[CodeWriter code, CondStack stack, IfCondition condition]
+MethodInvocation:add
+MethodInvocation:wrap
+MethodInvocation:get
+MethodInvocation:getArgs
+Method-name:addAndOr
+Method-returnType:void
+Method-parameters:[CodeWriter code, CondStack stack, IfCondition condition]
+MethodInvocation:getMode
+MethodInvocation:iterator
+MethodInvocation:getArgs
+MethodInvocation:hasNext
+MethodInvocation:wrap
+MethodInvocation:next
+MethodInvocation:hasNext
+MethodInvocation:add
+Method-name:isArgWrapNeeded
+Method-returnType:boolean
+Method-parameters:[InsnArg arg]
+MethodInvocation:isInsnWrap
+MethodInvocation:getWrapInsn
+MethodInvocation:getType
+MethodInvocation:getOp

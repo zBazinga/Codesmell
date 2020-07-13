@@ -1,0 +1,64 @@
+Class:IncludeExcludeExtension
+Field:config
+Method-name:visitSpec
+Method-returnType:void
+Method-parameters:[SpecInfo spec]
+MethodInvocation:handleSpecIncludes
+MethodInvocation:handleSpecExcludes
+MethodInvocation:isExcluded
+MethodInvocation:excludeAllFeatures
+MethodInvocation:handleFeatureIncludes
+MethodInvocation:handleFeatureExcludes
+MethodInvocation:isExcluded
+MethodInvocation:allFeaturesExcluded
+MethodInvocation:setExcluded
+Method-name:handleSpecIncludes
+Method-returnType:void
+Method-parameters:[SpecInfo spec, IncludeExcludeCriteria criteria]
+MethodInvocation:isEmpty
+MethodInvocation:hasAnyAnnotation
+MethodInvocation:hasAnyBaseClass
+MethodInvocation:setExcluded
+Method-name:handleSpecExcludes
+Method-returnType:void
+Method-parameters:[SpecInfo spec, IncludeExcludeCriteria criteria]
+MethodInvocation:isEmpty
+MethodInvocation:hasAnyAnnotation
+MethodInvocation:hasAnyBaseClass
+MethodInvocation:setExcluded
+Method-name:handleFeatureIncludes
+Method-returnType:void
+Method-parameters:[SpecInfo spec, IncludeExcludeCriteria criteria]
+MethodInvocation:isEmpty
+MethodInvocation:getAllFeatures
+MethodInvocation:hasAnyAnnotation
+MethodInvocation:getFeatureMethod
+MethodInvocation:setExcluded
+Method-name:handleFeatureExcludes
+Method-returnType:void
+Method-parameters:[SpecInfo spec, IncludeExcludeCriteria criteria]
+MethodInvocation:isEmpty
+MethodInvocation:getAllFeatures
+MethodInvocation:hasAnyAnnotation
+MethodInvocation:getFeatureMethod
+MethodInvocation:setExcluded
+Method-name:excludeAllFeatures
+Method-returnType:void
+Method-parameters:[SpecInfo spec]
+MethodInvocation:getAllFeatures
+MethodInvocation:setExcluded
+Method-name:allFeaturesExcluded
+Method-returnType:boolean
+Method-parameters:[SpecInfo spec]
+MethodInvocation:getAllFeatures
+MethodInvocation:isExcluded
+Method-name:hasAnyAnnotation
+Method-returnType:boolean
+Method-parameters:[NodeInfo<?,?> node, List<Class<? extends Annotation>> annotationClasses]
+MethodInvocation:isAnnotationPresent
+MethodInvocation:getReflection
+Method-name:hasAnyBaseClass
+Method-returnType:boolean
+Method-parameters:[SpecInfo spec, List<Class<?>> baseClasses]
+MethodInvocation:isAssignableFrom
+MethodInvocation:getReflection

@@ -1,0 +1,83 @@
+Class:BRLActionColumn
+Field:serialVersionUID
+Field:definition
+Field:childColumns
+Field:FIELD_DEFINITION
+Field:FIELD_CHILD_COLUMNS
+Method-name:diff
+Method-returnType:List<BaseColumnFieldDiff>
+Method-parameters:[BaseColumn otherColumn]
+MethodInvocation:isEqualOrNull
+MethodInvocation:getDefinition
+MethodInvocation:getDefinition
+MethodInvocation:add
+MethodInvocation:getDefinition
+MethodInvocation:getDefinition
+MethodInvocation:isEqualOrNull
+MethodInvocation:getChildColumns
+MethodInvocation:getChildColumns
+MethodInvocation:addAll
+MethodInvocation:getColumnDiffs
+MethodInvocation:getChildColumns
+Method-name:getColumnDiffs
+Method-returnType:List<BaseColumnFieldDiff>
+Method-parameters:[List<BRLActionVariableColumn> otherChildColumns]
+MethodInvocation:min
+MethodInvocation:size
+FieldAccess:childColumns
+MethodInvocation:size
+MethodInvocation:addAll
+MethodInvocation:diff
+MethodInvocation:get
+FieldAccess:childColumns
+MethodInvocation:get
+MethodInvocation:addAll
+MethodInvocation:getDiffsForUnpairedColumns
+FieldAccess:childColumns
+MethodInvocation:addAll
+MethodInvocation:getDiffsForUnpairedColumns
+Method-name:getDiffsForUnpairedColumns
+Method-returnType:List<BaseColumnFieldDiff>
+Method-parameters:[List<BRLActionVariableColumn> addedChildColumns, int commonLength, boolean added]
+MethodInvocation:size
+MethodInvocation:subList
+MethodInvocation:size
+MethodInvocation:add
+Method-name:getDefinition
+Method-returnType:List<IAction>
+Method-parameters:[]
+FieldAccess:definition
+Method-name:setDefinition
+Method-returnType:void
+Method-parameters:[List<IAction> definition]
+FieldAccess:definition
+Method-name:getChildColumns
+Method-returnType:List<BRLActionVariableColumn>
+Method-parameters:[]
+FieldAccess:childColumns
+Method-name:setChildColumns
+Method-returnType:void
+Method-parameters:[List<BRLActionVariableColumn> childColumns]
+FieldAccess:childColumns
+Method-name:setHideColumn
+Method-returnType:void
+Method-parameters:[boolean hideColumn]
+FieldAccess:childColumns
+MethodInvocation:setHideColumn
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:hasVariables
+Method-returnType:boolean
+Method-parameters:[GuidedDTDRLPersistence guidedDTDRLPersistence]
+MethodInvocation:getDefinition
+MethodInvocation:addRhsItem
+MethodInvocation:visit
+MethodInvocation:size

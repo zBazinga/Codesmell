@@ -1,0 +1,107 @@
+Class:ActionEnvironment
+Field:EMPTY_ENVIRONMENT_VARIABLES
+MethodInvocation:of
+Field:EMPTY
+MethodInvocation:of
+Field:fixedEnv
+Field:inheritedEnv
+Method-name:ActionEnvironment
+Method-returnType:null
+Method-parameters:[EnvironmentVariables fixedEnv, ImmutableSet<String> inheritedEnv]
+FieldAccess:fixedEnv
+FieldAccess:inheritedEnv
+Method-name:split
+Method-returnType:ActionEnvironment
+Method-parameters:[Map<String,String> env]
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getKey
+MethodInvocation:add
+MethodInvocation:create
+MethodInvocation:copyOf
+Method-name:create
+Method-returnType:ActionEnvironment
+Method-parameters:[EnvironmentVariables fixedEnv, ImmutableSet<String> inheritedEnv]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+Method-name:create
+Method-returnType:ActionEnvironment
+Method-parameters:[Map<String,String> fixedEnv, ImmutableSet<String> inheritedEnv]
+MethodInvocation:create
+Method-name:create
+Method-returnType:ActionEnvironment
+Method-parameters:[Map<String,String> fixedEnv]
+MethodInvocation:of
+Method-name:addFixedVariables
+Method-returnType:ActionEnvironment
+Method-parameters:[Map<String,String> vars]
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:size
+Method-name:getFixedEnv
+Method-returnType:EnvironmentVariables
+Method-parameters:[]
+Method-name:getInheritedEnv
+Method-returnType:ImmutableSet<String>
+Method-parameters:[]
+Method-name:resolve
+Method-returnType:void
+Method-parameters:[Map<String,String> result, Map<String,String> clientEnv]
+MethodInvocation:checkNotNull
+MethodInvocation:putAll
+MethodInvocation:toMap
+MethodInvocation:get
+MethodInvocation:put
+Method-name:toMap
+Method-returnType:ImmutableMap<String,String>
+Method-parameters:[]
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:toMap
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:toMap
+Class:CompoundEnvironmentVariables
+Field:current
+Field:base
+Method-name:CompoundEnvironmentVariables
+Method-returnType:null
+Method-parameters:[Map<String,String> vars, EnvironmentVariables base]
+FieldAccess:current
+FieldAccess:base
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+Method-name:toMap
+Method-returnType:ImmutableMap<String,String>
+Method-parameters:[]
+MethodInvocation:putAll
+MethodInvocation:toMap
+MethodInvocation:putAll
+MethodInvocation:toMap
+MethodInvocation:copyOf
+Class:SimpleEnvironmentVariables
+Field:vars
+Method-name:SimpleEnvironmentVariables
+Method-returnType:null
+Method-parameters:[Map<String,String> vars]
+FieldAccess:vars
+MethodInvocation:copyOf
+Method-name:create
+Method-returnType:EnvironmentVariables
+Method-parameters:[Map<String,String> vars]
+MethodInvocation:isEmpty
+Method-name:toMap
+Method-returnType:ImmutableMap<String,String>
+Method-parameters:[]

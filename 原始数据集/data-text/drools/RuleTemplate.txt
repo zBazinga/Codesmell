@@ -1,0 +1,69 @@
+Class:RuleTemplate
+Field:name
+Field:contents
+Field:columns
+Field:templateContainer
+Field:replaceOptionals
+Method-name:RuleTemplate
+Method-returnType:null
+Method-parameters:[final String n, final TemplateContainer tc]
+FieldAccess:replaceOptionals
+Method-name:RuleTemplate
+Method-returnType:null
+Method-parameters:[final String n, final TemplateContainer tc, boolean replaceOptionals]
+FieldAccess:replaceOptionals
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getColumns
+Method-returnType:List<TemplateColumn>
+Method-parameters:[]
+Method-name:getContents
+Method-returnType:String
+Method-parameters:[]
+Method-name:addColumn
+Method-returnType:void
+Method-parameters:[String columnString]
+MethodInvocation:add
+FieldAccess:columns
+Method-name:setContents
+Method-returnType:void
+Method-parameters:[String contents]
+FieldAccess:contents
+MethodInvocation:replaceOptionals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:name
+FieldAccess:columns
+Method-name:replaceOptionals
+Method-returnType:String
+Method-parameters:[String contents]
+MethodInvocation:compile
+MethodInvocation:getColumnNames
+MethodInvocation:add
+MethodInvocation:readLine
+MethodInvocation:matcher
+MethodInvocation:find
+MethodInvocation:group
+MethodInvocation:contains
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:group
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:repeat
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:getColumnNames
+Method-returnType:Collection<String>
+Method-parameters:[]
+MethodInvocation:getColumns
+MethodInvocation:add
+MethodInvocation:getName
+Method-name:createColumnConditions
+Method-returnType:void
+Method-parameters:[Rule rule, DefaultTemplateRuleBase defaultTemplateRuleBase]
+MethodInvocation:getColumns
+MethodInvocation:addCondition

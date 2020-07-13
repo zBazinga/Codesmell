@@ -1,0 +1,161 @@
+Class:Entity
+Field:serialVersionUID
+Method-name:create
+Method-returnType:Entity
+Method-parameters:[]
+Method-name:create
+Method-returnType:Entity
+Method-parameters:[String tableName]
+Method-name:parse
+Method-returnType:Entity
+Method-parameters:[T bean]
+MethodInvocation:parseBean
+MethodInvocation:create
+Method-name:parse
+Method-returnType:Entity
+Method-parameters:[T bean, boolean isToUnderlineCase, boolean ignoreNullValue]
+MethodInvocation:parseBean
+MethodInvocation:create
+Method-name:parseWithUnderlineCase
+Method-returnType:Entity
+Method-parameters:[T bean]
+MethodInvocation:parseBean
+MethodInvocation:create
+Field:tableName
+Field:fieldNames
+Method-name:Entity
+Method-returnType:null
+Method-parameters:[]
+Method-name:Entity
+Method-returnType:null
+Method-parameters:[String tableName]
+FieldAccess:tableName
+Method-name:Entity
+Method-returnType:null
+Method-parameters:[String tableName, boolean caseInsensitive]
+FieldAccess:tableName
+Method-name:getTableName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTableName
+Method-returnType:Entity
+Method-parameters:[String tableName]
+FieldAccess:tableName
+Method-name:getFieldNames
+Method-returnType:Set<String>
+Method-parameters:[]
+FieldAccess:fieldNames
+Method-name:setFieldNames
+Method-returnType:Entity
+Method-parameters:[Collection<String> fieldNames]
+MethodInvocation:isNotEmpty
+FieldAccess:fieldNames
+MethodInvocation:newHashSet
+Method-name:setFieldNames
+Method-returnType:Entity
+Method-parameters:[String... fieldNames]
+MethodInvocation:isNotEmpty
+FieldAccess:fieldNames
+MethodInvocation:newLinkedHashSet
+Method-name:addFieldNames
+Method-returnType:Entity
+Method-parameters:[String... fieldNames]
+MethodInvocation:isNotEmpty
+FieldAccess:fieldNames
+MethodInvocation:setFieldNames
+MethodInvocation:addAll
+FieldAccess:fieldNames
+Method-name:parseBean
+Method-returnType:Entity
+Method-parameters:[T bean]
+MethodInvocation:isBlank
+FieldAccess:tableName
+MethodInvocation:setTableName
+MethodInvocation:lowerFirst
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:parseBean
+Method-returnType:Entity
+Method-parameters:[T bean, boolean isToUnderlineCase, boolean ignoreNullValue]
+MethodInvocation:isBlank
+FieldAccess:tableName
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:setTableName
+MethodInvocation:toUnderlineCase
+MethodInvocation:lowerFirst
+Method-name:filter
+Method-returnType:Entity
+Method-parameters:[String... keys]
+FieldAccess:tableName
+MethodInvocation:setFieldNames
+FieldAccess:fieldNames
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:get
+Method-name:set
+Method-returnType:Entity
+Method-parameters:[String field, Object value]
+Method-name:setIgnoreNull
+Method-returnType:Entity
+Method-parameters:[String field, Object value]
+Method-name:getClob
+Method-returnType:Clob
+Method-parameters:[String field]
+MethodInvocation:get
+Method-name:getBlob
+Method-returnType:Blob
+Method-parameters:[String field]
+MethodInvocation:get
+Method-name:getTime
+Method-returnType:Time
+Method-parameters:[String field]
+MethodInvocation:get
+MethodInvocation:invoke
+Method-name:getDate
+Method-returnType:Date
+Method-parameters:[String field]
+MethodInvocation:get
+MethodInvocation:invoke
+Method-name:getTimestamp
+Method-returnType:Timestamp
+Method-parameters:[String field]
+MethodInvocation:get
+MethodInvocation:invoke
+Method-name:getStr
+Method-returnType:String
+Method-parameters:[String field]
+MethodInvocation:getStr
+Method-name:getStr
+Method-returnType:String
+Method-parameters:[String field, Charset charset]
+MethodInvocation:get
+MethodInvocation:clobToStr
+MethodInvocation:blobToStr
+MethodInvocation:str
+MethodInvocation:getBytes
+Method-name:getRowId
+Method-returnType:RowId
+Method-parameters:[]
+MethodInvocation:getRowId
+Method-name:getRowId
+Method-returnType:RowId
+Method-parameters:[String field]
+MethodInvocation:get
+Method-name:clone
+Method-returnType:Entity
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:wrap
+Method-returnType:Entity
+Method-parameters:[Wrapper wrapper]
+MethodInvocation:setTableName
+MethodInvocation:wrap
+MethodInvocation:getTableName
+MethodInvocation:entrySet
+MethodInvocation:set
+MethodInvocation:wrap
+MethodInvocation:getKey
+MethodInvocation:getValue

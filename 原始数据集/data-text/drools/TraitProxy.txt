@@ -1,0 +1,153 @@
+Class:TraitProxy
+Field:tripleFactory
+Field:typeCode
+Field:propagationTypeCode
+Field:otns
+Method-name:TraitProxy
+Method-returnType:null
+Method-parameters:[]
+Field:fields
+Method-name:_isVirtual
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getFields
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+Method-name:setFields
+Method-returnType:void
+Method-parameters:[Map<String,Object> m]
+Method-name:_getTraitName
+Method-returnType:String
+Method-parameters:[]
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:readObject
+Method-name:buildEntry
+Method-returnType:Map.Entry<String,Object>
+Method-parameters:[final String k, final Object v]
+Field:key
+Field:obj
+Method-name:getKey
+Method-returnType:String
+Method-parameters:[]
+Method-name:getValue
+Method-returnType:Object
+Method-parameters:[]
+Method-name:setValue
+Method-returnType:Object
+Method-parameters:[Object value]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getObject
+Method-returnType:TraitableBean
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:getObject
+MethodInvocation:getObject
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:getClass
+MethodInvocation:hashCode
+MethodInvocation:getObject
+Method-name:propertyKey
+Method-returnType:Triple
+Method-parameters:[String property]
+MethodInvocation:newTriple
+MethodInvocation:getTripleFactory
+MethodInvocation:getObject
+Method-name:property
+Method-returnType:Triple
+Method-parameters:[String property, Object value]
+MethodInvocation:newTriple
+MethodInvocation:getTripleFactory
+MethodInvocation:getObject
+Method-name:propertyKey
+Method-returnType:Triple
+Method-parameters:[Object property]
+MethodInvocation:newTriple
+MethodInvocation:getTripleFactory
+MethodInvocation:getObject
+MethodInvocation:toString
+Method-name:getTripleFactory
+Method-returnType:TripleFactory
+Method-parameters:[]
+Method-name:setTripleFactory
+Method-returnType:void
+Method-parameters:[TripleFactory tripleFactory]
+FieldAccess:tripleFactory
+Method-name:_getTypeCode
+Method-returnType:BitSet
+Method-parameters:[]
+Method-name:setTypeCode
+Method-returnType:void
+Method-parameters:[BitSet typeCode]
+FieldAccess:typeCode
+Method-name:shed
+Method-returnType:void
+Method-parameters:[]
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[TraitProxy o]
+MethodInvocation:supersetOrEqualset
+FieldAccess:typeCode
+Method-name:computeInsertionVetoMask
+Method-returnType:BitSet
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:_getTraitMap
+MethodInvocation:getObject
+MethodInvocation:or
+FieldAccess:propagationTypeCode
+Method-name:assignOtn
+Method-returnType:void
+Method-parameters:[BitSet typeCode]
+MethodInvocation:add
+MethodInvocation:or
+Method-name:hasOtns
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:clearOtns
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:clear
+Method-name:listAssignedOtnTypeCodes
+Method-returnType:Set<BitSet>
+Method-parameters:[]
+MethodInvocation:unmodifiableSet
+Method-name:_hasTypeCode
+Method-returnType:boolean
+Method-parameters:[BitSet typeCode]
+MethodInvocation:contains
+Method-name:sameAndNotCoveredByDescendants
+Method-returnType:boolean
+Method-parameters:[BitSet typeMask, TraitObjectTypeNode traitObjectTypeNode]
+MethodInvocation:equals
+MethodInvocation:_getTypeCode
+MethodInvocation:_getTraitMap
+MethodInvocation:getObject
+MethodInvocation:lowerDescendants
+MethodInvocation:isEmpty
+MethodInvocation:_hasTypeCode

@@ -1,0 +1,36 @@
+Class:ArmatureMask
+Field:affectedJoints
+Method-name:contains
+Method-returnType:boolean
+Method-parameters:[Object target]
+MethodInvocation:get
+MethodInvocation:getId
+Method-name:createMask
+Method-returnType:ArmatureMask
+Method-parameters:[Armature armature, String fromJoint]
+MethodInvocation:addFromJoint
+Method-name:createMask
+Method-returnType:ArmatureMask
+Method-parameters:[Armature armature, String... joints]
+MethodInvocation:addBones
+MethodInvocation:set
+MethodInvocation:getId
+MethodInvocation:getJoint
+Method-name:addBones
+Method-returnType:void
+Method-parameters:[Armature armature, String... jointNames]
+MethodInvocation:findJoint
+MethodInvocation:set
+MethodInvocation:getId
+Method-name:addFromJoint
+Method-returnType:void
+Method-parameters:[Armature armature, String jointName]
+MethodInvocation:findJoint
+MethodInvocation:recurseAddJoint
+Method-name:recurseAddJoint
+Method-returnType:void
+Method-parameters:[Joint joint]
+MethodInvocation:set
+MethodInvocation:getId
+MethodInvocation:getChildren
+MethodInvocation:recurseAddJoint

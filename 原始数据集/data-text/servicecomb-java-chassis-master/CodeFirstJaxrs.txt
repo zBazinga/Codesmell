@@ -1,0 +1,111 @@
+Class:CodeFirstJaxrs
+Method-name:cseResponse
+Method-returnType:Response
+Method-parameters:[InvocationContext c1]
+MethodInvocation:createSuccess
+MethodInvocation:getHeaders
+MethodInvocation:addHeader
+MethodInvocation:toString
+MethodInvocation:get
+MethodInvocation:getContext
+MethodInvocation:getInvocationContext
+MethodInvocation:addHeader
+MethodInvocation:toString
+MethodInvocation:get
+MethodInvocation:getContext
+Method-name:testUserMap
+Method-returnType:Map<String,User>
+Method-parameters:[Map<String,User> userMap]
+Method-name:textPlain
+Method-returnType:String
+Method-parameters:[String body]
+Method-name:bytes
+Method-returnType:byte[]
+Method-parameters:[byte[] input]
+Method-name:addDate
+Method-returnType:Date
+Method-parameters:[@FormParam("date") Date date, @QueryParam("seconds") long seconds]
+MethodInvocation:getTime
+Method-name:defaultPath
+Method-returnType:int
+Method-parameters:[]
+Method-name:add
+Method-returnType:int
+Method-parameters:[@FormParam("a") int a, @FormParam("b") int b]
+Method-name:reduce
+Method-returnType:int
+Method-parameters:[HttpServletRequest request, @CookieParam("b") int b]
+MethodInvocation:parseInt
+MethodInvocation:getParameter
+Method-name:sayHello
+Method-returnType:Person
+Method-parameters:[Person user]
+MethodInvocation:setName
+MethodInvocation:getName
+Method-name:testRawJsonString
+Method-returnType:String
+Method-parameters:[String jsonInput]
+MethodInvocation:readValue
+MethodInvocation:getRestObjectMapper
+MethodInvocation:getBytes
+MethodInvocation:printStackTrace
+MethodInvocation:get
+Method-name:saySomething
+Method-returnType:String
+Method-parameters:[@HeaderParam("prefix") String prefix, Person user]
+MethodInvocation:getName
+Method-name:sayHi
+Method-returnType:String
+Method-parameters:[@PathParam("name") String name]
+MethodInvocation:setStatus
+MethodInvocation:getInvocationContext
+Method-name:sayHi2
+Method-returnType:String
+Method-parameters:[@PathParam("name") String name]
+Method-name:isTrue
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:addString
+Method-returnType:String
+Method-parameters:[@QueryParam("s") List<String> s]
+Method-name:testModelWithIgnoreField
+Method-returnType:OutputModelForTestIgnore
+Method-parameters:[InputModelForTestIgnore input]
+MethodInvocation:getInputId
+MethodInvocation:getContent
+MethodInvocation:getInputObject
+MethodInvocation:getInputJsonObject
+MethodInvocation:getInputIgnoreInterface
+Method-name:testRawJsonAnnotation
+Method-returnType:String
+Method-parameters:[@RawJsonRequestBody String jsonInput]
+MethodInvocation:readValue
+MethodInvocation:getRestObjectMapper
+MethodInvocation:getBytes
+MethodInvocation:printStackTrace
+MethodInvocation:get
+Method-name:getTraceId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getContext
+MethodInvocation:getInvocationContext
+Method-name:fileUpload1
+Method-returnType:String
+Method-parameters:[@FormParam("file1") Part file1, @FormParam("file2") Part file2]
+MethodInvocation:getInputStream
+MethodInvocation:getInputStream
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:format
+MethodInvocation:getSubmittedFileName
+MethodInvocation:getContentType
+MethodInvocation:getSubmittedFileName
+MethodInvocation:getContentType
+Method-name:fileUpload2
+Method-returnType:String
+Method-parameters:[@FormParam("file1") Part file1, @FormParam("message") String message]
+MethodInvocation:getInputStream
+MethodInvocation:toString
+MethodInvocation:format
+MethodInvocation:getSubmittedFileName
+MethodInvocation:getContentType

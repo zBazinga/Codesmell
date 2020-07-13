@@ -1,0 +1,296 @@
+Class:MatchQuery
+Field:Type
+Field:ordinal
+Method-name:Type
+Method-returnType:null
+Method-parameters:[int ordinal]
+FieldAccess:ordinal
+Method-name:readFromStream
+Method-returnType:Type
+Method-parameters:[StreamInput in]
+MethodInvocation:readVInt
+MethodInvocation:values
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeVInt
+FieldAccess:ordinal
+Field:ZeroTermsQuery
+Method-name:NONE
+Method-returnType:null
+Method-parameters:[]
+Field:ordinal
+Method-name:ZeroTermsQuery
+Method-returnType:null
+Method-parameters:[int ordinal]
+FieldAccess:ordinal
+Method-name:readFromStream
+Method-returnType:ZeroTermsQuery
+Method-parameters:[StreamInput in]
+MethodInvocation:readVInt
+MethodInvocation:values
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeVInt
+FieldAccess:ordinal
+Field:DEFAULT_PHRASE_SLOP
+Field:DEFAULT_LENIENCY
+Field:DEFAULT_ZERO_TERMS_QUERY
+Field:context
+Field:analyzer
+Field:occur
+Field:enablePositionIncrements
+Field:phraseSlop
+Field:fuzziness
+Field:fuzzyPrefixLength
+Field:maxExpansions
+Field:spanRewriteMethod
+Field:transpositions
+Field:fuzzyRewriteMethod
+Field:lenient
+Field:zeroTermsQuery
+Field:autoGenerateSynonymsPhraseQuery
+Method-name:MatchQuery
+Method-returnType:null
+Method-parameters:[QueryShardContext context]
+FieldAccess:context
+Method-name:setAnalyzer
+Method-returnType:void
+Method-parameters:[String analyzerName]
+FieldAccess:analyzer
+MethodInvocation:get
+MethodInvocation:getIndexAnalyzers
+MethodInvocation:getMapperService
+Method-name:setAnalyzer
+Method-returnType:void
+Method-parameters:[Analyzer analyzer]
+FieldAccess:analyzer
+Method-name:setOccur
+Method-returnType:void
+Method-parameters:[BooleanClause.Occur occur]
+FieldAccess:occur
+Method-name:setEnablePositionIncrements
+Method-returnType:void
+Method-parameters:[boolean enablePositionIncrements]
+FieldAccess:enablePositionIncrements
+Method-name:setPhraseSlop
+Method-returnType:void
+Method-parameters:[int phraseSlop]
+FieldAccess:phraseSlop
+Method-name:setFuzziness
+Method-returnType:void
+Method-parameters:[Fuzziness fuzziness]
+FieldAccess:fuzziness
+Method-name:setFuzzyPrefixLength
+Method-returnType:void
+Method-parameters:[int fuzzyPrefixLength]
+FieldAccess:fuzzyPrefixLength
+Method-name:setMaxExpansions
+Method-returnType:void
+Method-parameters:[int maxExpansions]
+FieldAccess:maxExpansions
+FieldAccess:spanRewriteMethod
+Method-name:setTranspositions
+Method-returnType:void
+Method-parameters:[boolean transpositions]
+FieldAccess:transpositions
+Method-name:setFuzzyRewriteMethod
+Method-returnType:void
+Method-parameters:[MultiTermQuery.RewriteMethod fuzzyRewriteMethod]
+FieldAccess:fuzzyRewriteMethod
+Method-name:setLenient
+Method-returnType:void
+Method-parameters:[boolean lenient]
+FieldAccess:lenient
+Method-name:setZeroTermsQuery
+Method-returnType:void
+Method-parameters:[ZeroTermsQuery zeroTermsQuery]
+FieldAccess:zeroTermsQuery
+Method-name:setAutoGenerateSynonymsPhraseQuery
+Method-returnType:void
+Method-parameters:[boolean enabled]
+FieldAccess:autoGenerateSynonymsPhraseQuery
+Method-name:parse
+Method-returnType:Query
+Method-parameters:[Type type, String fieldName, Object value]
+Method-name:parseInternal
+Method-returnType:Query
+Method-parameters:[Type type, String fieldName, MatchQueryBuilder builder, Object value]
+MethodInvocation:createBooleanQuery
+MethodInvocation:toString
+MethodInvocation:createBooleanPrefixQuery
+MethodInvocation:toString
+MethodInvocation:createPhraseQuery
+MethodInvocation:toString
+MethodInvocation:createPhrasePrefixQuery
+MethodInvocation:toString
+MethodInvocation:zeroTermsQuery
+Method-name:getAnalyzer
+Method-returnType:Analyzer
+Method-parameters:[MappedFieldType fieldType, boolean quoted]
+MethodInvocation:getSearchQuoteAnalyzer
+MethodInvocation:getSearchAnalyzer
+Method-name:zeroTermsQuery
+Method-returnType:Query
+Method-parameters:[]
+MethodInvocation:newMatchNoDocsQuery
+MethodInvocation:newMatchAllQuery
+Method-name:hasPositions
+Method-returnType:boolean
+Method-parameters:[MappedFieldType fieldType]
+MethodInvocation:compareTo
+MethodInvocation:indexOptions
+Class:MatchQueryBuilder
+Field:fieldType
+Method-name:MatchQueryBuilder
+Method-returnType:null
+Method-parameters:[Analyzer analyzer, MappedFieldType fieldType, boolean enablePositionIncrements, boolean autoGenerateSynonymsPhraseQuery]
+FieldAccess:fieldType
+MethodInvocation:setEnablePositionIncrements
+MethodInvocation:hasPositions
+MethodInvocation:setAutoGenerateMultiTermSynonymsPhraseQuery
+MethodInvocation:setAutoGenerateMultiTermSynonymsPhraseQuery
+Method-name:createFieldQuery
+Method-returnType:Query
+Method-parameters:[Analyzer analyzer, BooleanClause.Occur operator, String field, String queryText, boolean quoted, int slop]
+Method-name:createPhrasePrefixQuery
+Method-returnType:Query
+Method-parameters:[String field, String queryText, int slop]
+MethodInvocation:createQuery
+Method-name:createBooleanPrefixQuery
+Method-returnType:Query
+Method-parameters:[String field, String queryText, BooleanClause.Occur occur]
+MethodInvocation:createQuery
+Method-name:createFieldQuery
+Method-returnType:Query
+Method-parameters:[TokenStream source, Type type, BooleanClause.Occur operator, String field, int phraseSlop]
+Method-name:createQuery
+Method-returnType:Query
+Method-parameters:[String field, String queryText, Type type, BooleanClause.Occur operator, int phraseSlop]
+MethodInvocation:tokenStream
+MethodInvocation:hasAttribute
+MethodInvocation:setEnableGraphQueries
+MethodInvocation:createFieldQuery
+MethodInvocation:setEnableGraphQueries
+Method-name:newSpanQuery
+Method-returnType:SpanQuery
+Method-parameters:[Term[] terms, boolean isPrefix]
+MethodInvocation:spanPrefixQuery
+MethodInvocation:text
+MethodInvocation:spanPrefixQuery
+MethodInvocation:text
+Method-name:createSpanQuery
+Method-returnType:SpanQuery
+Method-parameters:[TokenStream in, String field]
+MethodInvocation:createSpanQuery
+Method-name:createSpanQuery
+Method-returnType:SpanQuery
+Method-parameters:[TokenStream in, String field, boolean isPrefix]
+MethodInvocation:getAttribute
+MethodInvocation:getAttribute
+MethodInvocation:incrementToken
+MethodInvocation:getPositionIncrement
+MethodInvocation:addGap
+MethodInvocation:getPositionIncrement
+MethodInvocation:addClause
+MethodInvocation:getBytesRef
+MethodInvocation:spanPrefixQuery
+MethodInvocation:text
+MethodInvocation:addClause
+MethodInvocation:build
+MethodInvocation:getClauses
+Method-name:newTermQuery
+Method-returnType:Query
+Method-parameters:[Term term, float boost]
+MethodInvocation:fuzzyQuery
+MethodInvocation:text
+MethodInvocation:setRewriteMethod
+MethodInvocation:termQuery
+MethodInvocation:bytes
+MethodInvocation:get
+MethodInvocation:newLenientFieldQuery
+MethodInvocation:name
+Method-name:newPrefixQuery
+Method-returnType:Query
+Method-parameters:[Term term]
+MethodInvocation:prefixQuery
+MethodInvocation:text
+MethodInvocation:newLenientFieldQuery
+MethodInvocation:field
+Method-name:analyzeTerm
+Method-returnType:Query
+Method-parameters:[String field, TokenStream stream, boolean isPrefix]
+MethodInvocation:getAttribute
+MethodInvocation:addAttribute
+MethodInvocation:reset
+MethodInvocation:incrementToken
+MethodInvocation:getBytesRef
+MethodInvocation:endOffset
+MethodInvocation:end
+MethodInvocation:endOffset
+MethodInvocation:newPrefixQuery
+MethodInvocation:newTermQuery
+Method-name:add
+Method-returnType:void
+Method-parameters:[BooleanQuery.Builder q, String field, List<Term> current, BooleanClause.Occur operator, boolean isPrefix]
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:newPrefixQuery
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:newTermQuery
+MethodInvocation:get
+MethodInvocation:toArray
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:add
+MethodInvocation:newSynonymQuery
+Method-name:analyzeMultiBoolean
+Method-returnType:Query
+Method-parameters:[String field, TokenStream stream, BooleanClause.Occur operator, boolean isPrefix]
+MethodInvocation:newBooleanQuery
+MethodInvocation:getAttribute
+MethodInvocation:getAttribute
+MethodInvocation:addAttribute
+MethodInvocation:reset
+MethodInvocation:incrementToken
+MethodInvocation:getPositionIncrement
+MethodInvocation:add
+MethodInvocation:clear
+MethodInvocation:add
+MethodInvocation:getBytesRef
+MethodInvocation:endOffset
+MethodInvocation:end
+MethodInvocation:add
+MethodInvocation:endOffset
+MethodInvocation:build
+Method-name:analyzePhrase
+Method-returnType:Query
+Method-parameters:[String field, TokenStream stream, int slop]
+MethodInvocation:checkForPositions
+MethodInvocation:phraseQuery
+MethodInvocation:newLenientFieldQuery
+Method-name:analyzeMultiPhrase
+Method-returnType:Query
+Method-parameters:[String field, TokenStream stream, int slop]
+MethodInvocation:checkForPositions
+MethodInvocation:multiPhraseQuery
+MethodInvocation:newLenientFieldQuery
+Method-name:analyzePhrasePrefix
+Method-returnType:Query
+Method-parameters:[String field, TokenStream stream, int slop, int positionCount]
+MethodInvocation:checkForPositions
+MethodInvocation:phrasePrefixQuery
+MethodInvocation:newLenientFieldQuery
+Method-name:analyzeGraphBoolean
+Method-returnType:Query
+Method-parameters:[String field, TokenStream source, BooleanClause.Occur operator, boolean isPrefix]
+Method-name:analyzeGraphPhrase
+Method-returnType:Query
+Method-parameters:[TokenStream source, String field, Type type, int slop]
+Method-name:checkForPositions
+Method-returnType:void
+Method-parameters:[String field]
+MethodInvocation:hasPositions

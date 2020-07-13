@@ -1,0 +1,43 @@
+Class:TransportOpenIdConnectPrepareAuthenticationAction
+Field:realms
+Method-name:TransportOpenIdConnectPrepareAuthenticationAction
+Method-returnType:null
+Method-parameters:[TransportService transportService, ActionFilters actionFilters, Realms realms]
+FieldAccess:realms
+Method-name:doExecute
+Method-returnType:void
+Method-parameters:[Task task, OpenIdConnectPrepareAuthenticationRequest request, ActionListener<OpenIdConnectPrepareAuthenticationResponse> listener]
+MethodInvocation:hasText
+MethodInvocation:getIssuer
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:stream
+FieldAccess:realms
+MethodInvocation:isIssuerValid
+MethodInvocation:getIssuer
+MethodInvocation:toList
+MethodInvocation:isEmpty
+MethodInvocation:onFailure
+MethodInvocation:getIssuer
+MethodInvocation:size
+MethodInvocation:onFailure
+MethodInvocation:getIssuer
+MethodInvocation:get
+MethodInvocation:hasText
+MethodInvocation:getRealmName
+MethodInvocation:realm
+FieldAccess:realms
+MethodInvocation:getRealmName
+MethodInvocation:prepareAuthenticationResponse
+MethodInvocation:getState
+MethodInvocation:getNonce
+MethodInvocation:getLoginHint
+MethodInvocation:onFailure
+MethodInvocation:getRealmName
+Method-name:prepareAuthenticationResponse
+Method-returnType:void
+Method-parameters:[OpenIdConnectRealm realm, String state, String nonce, String loginHint, ActionListener<OpenIdConnectPrepareAuthenticationResponse> listener]
+MethodInvocation:buildAuthenticationRequestUri
+MethodInvocation:onResponse
+MethodInvocation:onFailure

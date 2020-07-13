@@ -1,0 +1,57 @@
+Class:BoundTransportAddress
+Field:boundAddresses
+Field:publishAddress
+Method-name:BoundTransportAddress
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readInt
+Method-name:BoundTransportAddress
+Method-returnType:null
+Method-parameters:[TransportAddress[] boundAddresses, TransportAddress publishAddress]
+FieldAccess:boundAddresses
+FieldAccess:publishAddress
+Method-name:boundAddresses
+Method-returnType:TransportAddress[]
+Method-parameters:[]
+Method-name:publishAddress
+Method-returnType:TransportAddress
+Method-parameters:[]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeInt
+MethodInvocation:writeTo
+MethodInvocation:writeTo
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getHostString
+MethodInvocation:address
+MethodInvocation:toString
+MethodInvocation:isInetAddress
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:writePortsFile
+Method-returnType:void
+Method-parameters:[String type, Node node]
+MethodInvocation:resolve
+MethodInvocation:logsFile
+MethodInvocation:getEnvironment
+MethodInvocation:newBufferedWriter
+MethodInvocation:forName
+MethodInvocation:boundAddresses
+MethodInvocation:getByName
+MethodInvocation:getAddress
+MethodInvocation:write
+MethodInvocation:format
+MethodInvocation:getPort
+MethodInvocation:resolve
+MethodInvocation:logsFile
+MethodInvocation:getEnvironment
+MethodInvocation:move

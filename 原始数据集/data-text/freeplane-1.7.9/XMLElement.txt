@@ -1,0 +1,359 @@
+Class:XMLElement
+Field:NO_LINE
+Field:serialVersionUID
+Method-name:createElement
+Method-returnType:XMLElement
+Method-parameters:[final String fullName, final String namespace, final String systemID, final int lineNr]
+Field:attributes
+Field:children
+Field:content
+Field:fullName
+Field:lineNr
+Field:name
+Field:namespace
+Field:parent
+Field:systemID
+Method-name:XMLElement
+Method-returnType:null
+Method-parameters:[]
+Method-name:XMLElement
+Method-returnType:null
+Method-parameters:[final String fullName]
+Method-name:XMLElement
+Method-returnType:null
+Method-parameters:[final String fullName, final String namespace]
+Method-name:XMLElement
+Method-returnType:null
+Method-parameters:[final String fullName, final String systemID, final int lineNr]
+Method-name:XMLElement
+Method-returnType:null
+Method-parameters:[final String fullName, final String namespace, final String systemID, final int lineNr]
+FieldAccess:fullName
+MethodInvocation:indexOf
+MethodInvocation:substring
+FieldAccess:namespace
+FieldAccess:lineNr
+FieldAccess:systemID
+Method-name:addChild
+Method-returnType:void
+Method-parameters:[final XMLElement child]
+MethodInvocation:getName
+MethodInvocation:isEmpty
+MethodInvocation:lastElement
+MethodInvocation:getName
+MethodInvocation:setContent
+MethodInvocation:getContent
+MethodInvocation:getContent
+FieldAccess:parent
+MethodInvocation:addElement
+Method-name:createElement
+Method-returnType:XMLElement
+Method-parameters:[final String fullName]
+Method-name:createElement
+Method-returnType:XMLElement
+Method-parameters:[final String fullName, final String namespace]
+Method-name:createElement
+Method-returnType:XMLElement
+Method-parameters:[final String fullName, final String systemID, final int lineNr]
+Method-name:createPCDataElement
+Method-returnType:XMLElement
+Method-parameters:[]
+Method-name:enumerateAttributeNames
+Method-returnType:Enumeration<String>
+Method-parameters:[]
+MethodInvocation:elements
+MethodInvocation:hasMoreElements
+MethodInvocation:addElement
+MethodInvocation:getFullName
+MethodInvocation:nextElement
+MethodInvocation:elements
+Method-name:enumerateChildren
+Method-returnType:Enumeration<XMLElement>
+Method-parameters:[]
+MethodInvocation:elements
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[final Object rawElement]
+MethodInvocation:equalsXMLElement
+Method-name:equalsXMLElement
+Method-returnType:boolean
+Method-parameters:[final XMLElement elt]
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:size
+MethodInvocation:getAttributeCount
+MethodInvocation:elements
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:hasAttribute
+MethodInvocation:getName
+MethodInvocation:getNamespace
+MethodInvocation:getAttribute
+MethodInvocation:getName
+MethodInvocation:getNamespace
+MethodInvocation:equals
+MethodInvocation:getValue
+MethodInvocation:getAttributeType
+MethodInvocation:getName
+MethodInvocation:getNamespace
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:size
+MethodInvocation:getChildrenCount
+MethodInvocation:size
+MethodInvocation:getChildAtIndex
+MethodInvocation:getChildAtIndex
+MethodInvocation:equalsXMLElement
+Method-name:finalize
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:findAttribute
+Method-returnType:XMLAttribute
+Method-parameters:[final String fullName]
+MethodInvocation:elements
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:equals
+MethodInvocation:getFullName
+Method-name:findAttribute
+Method-returnType:XMLAttribute
+Method-parameters:[final String name, final String namespace]
+MethodInvocation:elements
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getNamespace
+MethodInvocation:equals
+MethodInvocation:getNamespace
+Method-name:getAttribute
+Method-returnType:String
+Method-parameters:[final String name]
+MethodInvocation:getAttribute
+Method-name:getAttribute
+Method-returnType:int
+Method-parameters:[final String name, final int defaultValue]
+MethodInvocation:getAttribute
+MethodInvocation:toString
+MethodInvocation:parseInt
+Method-name:getAttribute
+Method-returnType:String
+Method-parameters:[final String name, final String defaultValue]
+MethodInvocation:findAttribute
+MethodInvocation:getValue
+Method-name:getAttribute
+Method-returnType:int
+Method-parameters:[final String name, final String namespace, final int defaultValue]
+MethodInvocation:getAttribute
+MethodInvocation:toString
+MethodInvocation:parseInt
+Method-name:getAttribute
+Method-returnType:String
+Method-parameters:[final String name, final String namespace, final String defaultValue]
+MethodInvocation:findAttribute
+MethodInvocation:getValue
+Method-name:getAttributeCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getAttributeNamespace
+Method-returnType:String
+Method-parameters:[final String name]
+MethodInvocation:findAttribute
+MethodInvocation:getNamespace
+Method-name:getAttributes
+Method-returnType:Properties
+Method-parameters:[]
+MethodInvocation:elements
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:put
+MethodInvocation:getFullName
+MethodInvocation:getValue
+Method-name:getAttributesInNamespace
+Method-returnType:Properties
+Method-parameters:[final String namespace]
+MethodInvocation:elements
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:getNamespace
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:getNamespace
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:getValue
+Method-name:getAttributeType
+Method-returnType:String
+Method-parameters:[final String name]
+MethodInvocation:findAttribute
+MethodInvocation:getType
+Method-name:getAttributeType
+Method-returnType:String
+Method-parameters:[final String name, final String namespace]
+MethodInvocation:findAttribute
+MethodInvocation:getType
+Method-name:getChildAtIndex
+Method-returnType:XMLElement
+Method-parameters:[final int index]
+MethodInvocation:elementAt
+Method-name:getChildren
+Method-returnType:Vector<XMLElement>
+Method-parameters:[]
+Method-name:getChildrenCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getChildrenNamed
+Method-returnType:Vector<XMLElement>
+Method-parameters:[final String name]
+MethodInvocation:size
+MethodInvocation:elements
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:getFullName
+MethodInvocation:equals
+MethodInvocation:addElement
+Method-name:getChildrenNamed
+Method-returnType:Vector<XMLElement>
+Method-parameters:[final String name, final String namespace]
+MethodInvocation:size
+MethodInvocation:elements
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:getNamespace
+MethodInvocation:equals
+MethodInvocation:addElement
+Method-name:getContent
+Method-returnType:String
+Method-parameters:[]
+Method-name:getFirstChildNamed
+Method-returnType:XMLElement
+Method-parameters:[final String name]
+MethodInvocation:elements
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:getFullName
+MethodInvocation:equals
+Method-name:getFirstChildNamed
+Method-returnType:XMLElement
+Method-parameters:[final String name, final String namespace]
+MethodInvocation:elements
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:getNamespace
+MethodInvocation:equals
+Method-name:getFullName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getLineNr
+Method-returnType:int
+Method-parameters:[]
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getNamespace
+Method-returnType:String
+Method-parameters:[]
+Method-name:getParent
+Method-returnType:XMLElement
+Method-parameters:[]
+Method-name:getSystemID
+Method-returnType:String
+Method-parameters:[]
+Method-name:hasAttribute
+Method-returnType:boolean
+Method-parameters:[final String name]
+MethodInvocation:findAttribute
+Method-name:hasAttribute
+Method-returnType:boolean
+Method-parameters:[final String name, final String namespace]
+MethodInvocation:findAttribute
+Method-name:hasChildren
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:insertChild
+Method-returnType:void
+Method-parameters:[final XMLElement child, final int index]
+MethodInvocation:getName
+MethodInvocation:isEmpty
+MethodInvocation:lastElement
+MethodInvocation:getName
+MethodInvocation:setContent
+MethodInvocation:getContent
+MethodInvocation:getContent
+FieldAccess:parent
+MethodInvocation:insertElementAt
+Method-name:isLeaf
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:removeAttribute
+Method-returnType:void
+Method-parameters:[final String name]
+MethodInvocation:size
+MethodInvocation:elementAt
+MethodInvocation:equals
+MethodInvocation:getFullName
+MethodInvocation:removeElementAt
+Method-name:removeAttribute
+Method-returnType:void
+Method-parameters:[final String name, final String namespace]
+MethodInvocation:size
+MethodInvocation:elementAt
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getNamespace
+MethodInvocation:equals
+MethodInvocation:getNamespace
+MethodInvocation:removeElementAt
+Method-name:removeChild
+Method-returnType:void
+Method-parameters:[final XMLElement child]
+MethodInvocation:removeElement
+Method-name:removeChildAtIndex
+Method-returnType:void
+Method-parameters:[final int index]
+MethodInvocation:removeElementAt
+Method-name:setAttribute
+Method-returnType:void
+Method-parameters:[final String name, final String value]
+MethodInvocation:findAttribute
+MethodInvocation:addElement
+MethodInvocation:setValue
+Method-name:setAttribute
+Method-returnType:void
+Method-parameters:[final String fullName, final String namespace, final String value]
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:findAttribute
+MethodInvocation:addElement
+MethodInvocation:setValue
+Method-name:setContent
+Method-returnType:void
+Method-parameters:[final String content]
+FieldAccess:content
+Method-name:setName
+Method-returnType:void
+Method-parameters:[final String name]
+FieldAccess:name
+Method-name:setName
+Method-returnType:void
+Method-parameters:[final String fullName, final String namespace]
+MethodInvocation:indexOf
+MethodInvocation:substring
+FieldAccess:fullName
+FieldAccess:namespace
+Method-name:addAsChildWithContent
+Method-returnType:void
+Method-parameters:[String name, String content, AddOnProperties addOnProperties]
+MethodInvocation:setContent
+MethodInvocation:addChild

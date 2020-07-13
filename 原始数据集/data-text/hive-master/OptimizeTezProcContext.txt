@@ -1,0 +1,27 @@
+Class:OptimizeTezProcContext
+Field:parseContext
+Field:conf
+Field:inputs
+Field:outputs
+Field:pruningOpsRemovedByPriorOpt
+Field:visitedReduceSinks
+Field:eventOpToTableScanMap
+MethodInvocation:create
+Field:rootOperators
+Method-name:OptimizeTezProcContext
+Method-returnType:null
+Method-parameters:[HiveConf conf, ParseContext parseContext, Set<ReadEntity> inputs, Set<WriteEntity> outputs]
+FieldAccess:conf
+FieldAccess:parseContext
+FieldAccess:inputs
+FieldAccess:outputs
+FieldAccess:pruningOpsRemovedByPriorOpt
+Method-name:setRootOperators
+Method-returnType:void
+Method-parameters:[Deque<Operator<? extends OperatorDesc>> roots]
+FieldAccess:rootOperators
+Method-name:runStatsAnnotation
+Method-returnType:void
+Method-parameters:[TezCompiler tezCompiler]
+MethodInvocation:transform
+MethodInvocation:transform

@@ -1,0 +1,89 @@
+Class:PulsarEndpoint
+Field:pulsarClient
+Field:uri
+Field:persistence
+Field:tenant
+Field:namespace
+Field:topic
+Field:synchronous
+Field:pulsarConfiguration
+Method-name:PulsarEndpoint
+Method-returnType:null
+Method-parameters:[String uri, PulsarComponent component]
+FieldAccess:synchronous
+Method-name:createProducer
+Method-returnType:Producer
+Method-parameters:[]
+Method-name:createConsumer
+Method-returnType:Consumer
+Method-parameters:[Processor processor]
+MethodInvocation:configureConsumer
+Method-name:getPulsarClient
+Method-returnType:PulsarClient
+Method-parameters:[]
+Method-name:setPulsarClient
+Method-returnType:void
+Method-parameters:[PulsarClient pulsarClient]
+FieldAccess:pulsarClient
+Method-name:getPersistence
+Method-returnType:String
+Method-parameters:[]
+Method-name:setPersistence
+Method-returnType:void
+Method-parameters:[String persistence]
+FieldAccess:persistence
+Method-name:getTenant
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTenant
+Method-returnType:void
+Method-parameters:[String tenant]
+FieldAccess:tenant
+Method-name:getNamespace
+Method-returnType:String
+Method-parameters:[]
+Method-name:setNamespace
+Method-returnType:void
+Method-parameters:[String namespace]
+FieldAccess:namespace
+Method-name:getTopic
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTopic
+Method-returnType:void
+Method-parameters:[String topic]
+FieldAccess:topic
+Method-name:isSynchronous
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSynchronous
+Method-returnType:void
+Method-parameters:[boolean synchronous]
+FieldAccess:synchronous
+Method-name:getPulsarConfiguration
+Method-returnType:PulsarConfiguration
+Method-parameters:[]
+Method-name:setPulsarConfiguration
+Method-returnType:void
+Method-parameters:[PulsarConfiguration pulsarConfiguration]
+FieldAccess:pulsarConfiguration
+Method-name:getUri
+Method-returnType:String
+Method-parameters:[]
+Method-name:doStart
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:notNull
+MethodInvocation:notNull
+MethodInvocation:notNull
+MethodInvocation:notNull
+Method-name:getComponent
+Method-returnType:PulsarComponent
+Method-parameters:[]
+Method-name:createConsumers
+Method-returnType:Collection<Consumer<byte[]>>
+Method-parameters:[final ConsumerCreationStrategyFactory factory, PulsarConsumer pulsarConsumer]
+MethodInvocation:getStrategy
+MethodInvocation:getSubscriptionType
+MethodInvocation:getPulsarConfiguration
+MethodInvocation:create

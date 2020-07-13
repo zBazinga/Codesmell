@@ -1,0 +1,101 @@
+Class:ExceptionConverterImpl
+Field:log
+MethodInvocation:messageLogger
+Field:sharedSessionContract
+Field:isJpaBootstrap
+Field:nativeExceptionHandling51Compliance
+Method-name:ExceptionConverterImpl
+Method-returnType:null
+Method-parameters:[SharedSessionContractImplementor sharedSessionContract]
+FieldAccess:sharedSessionContract
+MethodInvocation:isJpaBootstrap
+MethodInvocation:getSessionFactoryOptions
+MethodInvocation:getFactory
+MethodInvocation:nativeExceptionHandling51Compliance
+MethodInvocation:getSessionFactoryOptions
+MethodInvocation:getFactory
+Method-name:convertCommitException
+Method-returnType:RuntimeException
+Method-parameters:[RuntimeException e]
+MethodInvocation:convert
+MethodInvocation:getCause
+MethodInvocation:getCause
+MethodInvocation:convert
+MethodInvocation:rollback
+MethodInvocation:getTransaction
+Method-name:convert
+Method-returnType:RuntimeException
+Method-parameters:[HibernateException e, LockOptions lockOptions]
+MethodInvocation:wrapStaleStateException
+MethodInvocation:handlePersistenceException
+MethodInvocation:wrapLockException
+MethodInvocation:handlePersistenceException
+MethodInvocation:wrapLockException
+MethodInvocation:handlePersistenceException
+MethodInvocation:wrapLockException
+MethodInvocation:handlePersistenceException
+MethodInvocation:getMessage
+MethodInvocation:handlePersistenceException
+MethodInvocation:getMessage
+MethodInvocation:handlePersistenceException
+MethodInvocation:getMessage
+MethodInvocation:handlePersistenceException
+MethodInvocation:getMessage
+MethodInvocation:handlePersistenceException
+MethodInvocation:getMessage
+MethodInvocation:handlePersistenceException
+MethodInvocation:markForRollbackOnly
+MethodInvocation:unableToMarkForRollbackOnTransientObjectException
+MethodInvocation:handlePersistenceException
+MethodInvocation:markForRollbackOnly
+MethodInvocation:unableToMarkForRollbackOnTransientObjectException
+Method-name:convert
+Method-returnType:RuntimeException
+Method-parameters:[HibernateException e]
+MethodInvocation:convert
+Method-name:convert
+Method-returnType:RuntimeException
+Method-parameters:[RuntimeException e]
+MethodInvocation:convert
+MethodInvocation:markForRollbackOnly
+Method-name:convert
+Method-returnType:RuntimeException
+Method-parameters:[RuntimeException e, LockOptions lockOptions]
+MethodInvocation:convert
+MethodInvocation:markForRollbackOnly
+Method-name:convert
+Method-returnType:JDBCException
+Method-parameters:[SQLException e, String message]
+MethodInvocation:convert
+MethodInvocation:getSqlExceptionHelper
+MethodInvocation:getJdbcServices
+Method-name:wrapStaleStateException
+Method-returnType:PersistenceException
+Method-parameters:[StaleStateException e]
+MethodInvocation:getIdentifier
+MethodInvocation:internalLoad
+MethodInvocation:getEntityName
+MethodInvocation:getMessage
+MethodInvocation:getMessage
+MethodInvocation:getMessage
+MethodInvocation:getMessage
+MethodInvocation:getMessage
+Method-name:wrapLockException
+Method-returnType:PersistenceException
+Method-parameters:[HibernateException e, LockOptions lockOptions]
+MethodInvocation:getMessage
+MethodInvocation:getEntity
+MethodInvocation:getMessage
+MethodInvocation:getTimeOut
+MethodInvocation:getMessage
+MethodInvocation:getEntity
+MethodInvocation:getMessage
+MethodInvocation:getEntity
+MethodInvocation:getTimeOut
+MethodInvocation:getMessage
+MethodInvocation:getMessage
+Method-name:handlePersistenceException
+Method-returnType:void
+Method-parameters:[PersistenceException e]
+MethodInvocation:markForRollbackOnly
+MethodInvocation:unableToMarkForRollbackOnPersistenceException

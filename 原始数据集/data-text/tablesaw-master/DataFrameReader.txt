@@ -1,0 +1,142 @@
+Class:DataFrameReader
+Field:registry
+Method-name:DataFrameReader
+Method-returnType:null
+Method-parameters:[ReaderRegistry registry]
+FieldAccess:registry
+Method-name:url
+Method-returnType:Table
+Method-parameters:[String url]
+MethodInvocation:url
+Method-name:url
+Method-returnType:Table
+Method-parameters:[URL url]
+MethodInvocation:openConnection
+MethodInvocation:getContentType
+MethodInvocation:url
+MethodInvocation:getCharset
+MethodInvocation:getMimeType
+Method-name:url
+Method-returnType:Table
+Method-parameters:[URL url, Charset charset, String mimeType]
+MethodInvocation:getReaderForMimeType
+MethodInvocation:isPresent
+MethodInvocation:readUrl
+MethodInvocation:get
+MethodInvocation:getReaderForExtension
+MethodInvocation:getExtension
+MethodInvocation:isPresent
+MethodInvocation:readUrl
+MethodInvocation:get
+Method-name:readUrl
+Method-returnType:Table
+Method-parameters:[URL url, Charset charset, DataReader<?> reader]
+MethodInvocation:read
+MethodInvocation:getInputStream
+MethodInvocation:openConnection
+Method-name:getMimeType
+Method-returnType:String
+Method-parameters:[String contentType]
+MethodInvocation:split
+MethodInvocation:trim
+Method-name:getCharset
+Method-returnType:Charset
+Method-parameters:[String contentType]
+MethodInvocation:split
+MethodInvocation:defaultCharset
+MethodInvocation:forName
+MethodInvocation:trim
+MethodInvocation:split
+Method-name:getExtension
+Method-returnType:String
+Method-parameters:[URL url]
+MethodInvocation:getFileExtension
+MethodInvocation:getPath
+Method-name:string
+Method-returnType:Table
+Method-parameters:[String s, String fileExtension]
+MethodInvocation:getReaderForExtension
+MethodInvocation:isPresent
+MethodInvocation:read
+MethodInvocation:get
+MethodInvocation:fromString
+Method-name:file
+Method-returnType:Table
+Method-parameters:[String file]
+MethodInvocation:file
+Method-name:file
+Method-returnType:Table
+Method-parameters:[File file]
+MethodInvocation:getFileExtension
+MethodInvocation:getCanonicalPath
+MethodInvocation:getReaderForExtension
+MethodInvocation:isPresent
+MethodInvocation:read
+MethodInvocation:get
+Method-name:usingOptions
+Method-returnType:Table
+Method-parameters:[T options]
+MethodInvocation:getReaderForOptions
+MethodInvocation:read
+Method-name:usingOptions
+Method-returnType:Table
+Method-parameters:[ReadOptions.Builder builder]
+MethodInvocation:usingOptions
+MethodInvocation:build
+Method-name:db
+Method-returnType:Table
+Method-parameters:[ResultSet resultSet]
+MethodInvocation:read
+Method-name:db
+Method-returnType:Table
+Method-parameters:[ResultSet resultSet, String tableName]
+MethodInvocation:read
+MethodInvocation:setName
+Method-name:csv
+Method-returnType:Table
+Method-parameters:[String file]
+MethodInvocation:csv
+MethodInvocation:builder
+Method-name:csv
+Method-returnType:Table
+Method-parameters:[String contents, String tableName]
+MethodInvocation:csv
+MethodInvocation:tableName
+MethodInvocation:builder
+Method-name:csv
+Method-returnType:Table
+Method-parameters:[File file]
+MethodInvocation:csv
+MethodInvocation:builder
+Method-name:csv
+Method-returnType:Table
+Method-parameters:[InputStream stream]
+MethodInvocation:csv
+MethodInvocation:builder
+Method-name:csv
+Method-returnType:Table
+Method-parameters:[URL url]
+MethodInvocation:readUrl
+MethodInvocation:getCharset
+MethodInvocation:getContentType
+MethodInvocation:openConnection
+Method-name:csv
+Method-returnType:Table
+Method-parameters:[InputStream stream, String name]
+MethodInvocation:csv
+MethodInvocation:tableName
+MethodInvocation:builder
+Method-name:csv
+Method-returnType:Table
+Method-parameters:[Reader reader]
+MethodInvocation:csv
+MethodInvocation:builder
+Method-name:csv
+Method-returnType:Table
+Method-parameters:[CsvReadOptions.Builder options]
+MethodInvocation:csv
+MethodInvocation:build
+Method-name:csv
+Method-returnType:Table
+Method-parameters:[CsvReadOptions options]
+MethodInvocation:read

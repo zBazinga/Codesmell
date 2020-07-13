@@ -1,0 +1,123 @@
+Class:RelMdDistinctRowCount
+Field:SOURCE
+MethodInvocation:reflectiveSource
+Method-name:RelMdDistinctRowCount
+Method-returnType:null
+Method-parameters:[]
+Method-name:getDef
+Method-returnType:MetadataDef<BuiltInMetadata.DistinctRowCount>
+Method-parameters:[]
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[RelNode rel, RelMetadataQuery mq, ImmutableBitSet groupKey, RexNode predicate]
+MethodInvocation:areColumnsDefinitelyUnique
+MethodInvocation:multiply
+MethodInvocation:getRowCount
+MethodInvocation:getSelectivity
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[Union rel, RelMetadataQuery mq, ImmutableBitSet groupKey, RexNode predicate]
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:getInputs
+MethodInvocation:accept
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:getDistinctRowCount
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[Sort rel, RelMetadataQuery mq, ImmutableBitSet groupKey, RexNode predicate]
+MethodInvocation:getDistinctRowCount
+MethodInvocation:getInput
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[TableModify rel, RelMetadataQuery mq, ImmutableBitSet groupKey, RexNode predicate]
+MethodInvocation:getDistinctRowCount
+MethodInvocation:getInput
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[Exchange rel, RelMetadataQuery mq, ImmutableBitSet groupKey, RexNode predicate]
+MethodInvocation:getDistinctRowCount
+MethodInvocation:getInput
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[Filter rel, RelMetadataQuery mq, ImmutableBitSet groupKey, RexNode predicate]
+MethodInvocation:isAlwaysTrue
+MethodInvocation:isEmpty
+MethodInvocation:unionPreds
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:getCondition
+MethodInvocation:getDistinctRowCount
+MethodInvocation:getInput
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[Join rel, RelMetadataQuery mq, ImmutableBitSet groupKey, RexNode predicate]
+MethodInvocation:getJoinDistinctRowCount
+MethodInvocation:getJoinType
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[Aggregate rel, RelMetadataQuery mq, ImmutableBitSet groupKey, RexNode predicate]
+MethodInvocation:isAlwaysTrue
+MethodInvocation:isEmpty
+MethodInvocation:splitFilters
+MethodInvocation:getGroupSet
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:composeConjunction
+MethodInvocation:builder
+MethodInvocation:setAggChildKeys
+MethodInvocation:getDistinctRowCount
+MethodInvocation:getInput
+MethodInvocation:build
+MethodInvocation:isEmpty
+MethodInvocation:composeConjunction
+MethodInvocation:guessSelectivity
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[Values rel, RelMetadataQuery mq, ImmutableBitSet groupKey, RexNode predicate]
+MethodInvocation:isAlwaysTrue
+MethodInvocation:isEmpty
+MethodInvocation:guessSelectivity
+MethodInvocation:estimateRowCount
+MethodInvocation:numDistinctVals
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[Project rel, RelMetadataQuery mq, ImmutableBitSet groupKey, RexNode predicate]
+MethodInvocation:isAlwaysTrue
+MethodInvocation:isEmpty
+MethodInvocation:builder
+MethodInvocation:builder
+MethodInvocation:getProjects
+MethodInvocation:splitCols
+MethodInvocation:splitFilters
+MethodInvocation:range
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:composeConjunction
+MethodInvocation:pushPastProject
+MethodInvocation:getDistinctRowCount
+MethodInvocation:getInput
+MethodInvocation:build
+MethodInvocation:isEmpty
+MethodInvocation:composeConjunction
+MethodInvocation:guessSelectivity
+MethodInvocation:cardinality
+MethodInvocation:build
+MethodInvocation:cardOfProjExpr
+MethodInvocation:get
+MethodInvocation:numDistinctVals
+MethodInvocation:getRowCount
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[RelSubset rel, RelMetadataQuery mq, ImmutableBitSet groupKey, RexNode predicate]
+MethodInvocation:getBest
+MethodInvocation:getDistinctRowCount
+MethodInvocation:getDistinctRowCount
+MethodInvocation:getRels
+MethodInvocation:getDistinctRowCount
+MethodInvocation:min

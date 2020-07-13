@@ -1,0 +1,86 @@
+Class:MetricsMaster
+Field:LOG
+MethodInvocation:getLogger
+Field:masterSource
+Field:masterProcSource
+Field:masterQuotaSource
+Field:serverCrashProcMetrics
+Method-name:MetricsMaster
+Method-returnType:null
+Method-parameters:[MetricsMasterWrapper masterWrapper]
+MethodInvocation:create
+MethodInvocation:getInstance
+MethodInvocation:create
+MethodInvocation:getInstance
+MethodInvocation:create
+MethodInvocation:getInstance
+MethodInvocation:convertToProcedureMetrics
+MethodInvocation:getServerCrashMetrics
+Method-name:getMetricsSource
+Method-returnType:MetricsMasterSource
+Method-parameters:[]
+Method-name:getMetricsProcSource
+Method-returnType:MetricsMasterProcSource
+Method-parameters:[]
+Method-name:getMetricsQuotaSource
+Method-returnType:MetricsMasterQuotaSource
+Method-parameters:[]
+Method-name:incrementRequests
+Method-returnType:void
+Method-parameters:[final long inc]
+MethodInvocation:incRequests
+Method-name:setNumSpaceQuotas
+Method-returnType:void
+Method-parameters:[final long numSpaceQuotas]
+MethodInvocation:updateNumSpaceQuotas
+Method-name:setNumTableInSpaceQuotaViolation
+Method-returnType:void
+Method-parameters:[final long numTablesInViolation]
+MethodInvocation:updateNumTablesInSpaceQuotaViolation
+Method-name:setNumNamespacesInSpaceQuotaViolation
+Method-returnType:void
+Method-parameters:[final long numNamespacesInViolation]
+MethodInvocation:updateNumNamespacesInSpaceQuotaViolation
+Method-name:setNumRegionSizeReports
+Method-returnType:void
+Method-parameters:[final long numRegionReports]
+MethodInvocation:updateNumCurrentSpaceQuotaRegionSizeReports
+Method-name:incrementQuotaObserverTime
+Method-returnType:void
+Method-parameters:[final long executionTime]
+MethodInvocation:incrementSpaceQuotaObserverChoreTime
+Method-name:getServerCrashProcMetrics
+Method-returnType:ProcedureMetrics
+Method-parameters:[]
+Method-name:convertToProcedureMetrics
+Method-returnType:ProcedureMetrics
+Method-parameters:[final OperationMetrics metrics]
+Method-name:getSubmittedCounter
+Method-returnType:Counter
+Method-parameters:[]
+MethodInvocation:getSubmittedCounter
+Method-name:getTimeHisto
+Method-returnType:Histogram
+Method-parameters:[]
+MethodInvocation:getTimeHisto
+Method-name:getFailedCounter
+Method-returnType:Counter
+Method-parameters:[]
+MethodInvocation:getFailedCounter
+Method-name:incrementSnapshotObserverTime
+Method-returnType:void
+Method-parameters:[final long executionTime]
+MethodInvocation:incrementSnapshotObserverChoreTime
+Method-name:incrementSnapshotSizeComputationTime
+Method-returnType:void
+Method-parameters:[final long executionTime]
+MethodInvocation:incrementSnapshotObserverSnapshotComputationTime
+Method-name:incrementSnapshotFetchTime
+Method-returnType:void
+Method-parameters:[long executionTime]
+MethodInvocation:incrementSnapshotObserverSnapshotFetchTime
+Method-name:initialize
+Method-returnType:void
+Method-parameters:[MasterServices master, MasterProcedureManagerHost masterProcedureManagerHost]
+MethodInvocation:getProcedureManagers
+MethodInvocation:initialize

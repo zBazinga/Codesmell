@@ -1,0 +1,79 @@
+Class:ConstTransformer
+Method-name:transform
+Method-returnType:void
+Method-parameters:[IrMethod m]
+MethodInvocation:init
+MethodInvocation:collect
+MethodInvocation:markConstant
+MethodInvocation:markReplacable
+MethodInvocation:replace
+MethodInvocation:clean
+Method-name:clean
+Method-returnType:void
+Method-parameters:[IrMethod m]
+Method-name:replace
+Method-returnType:void
+Method-parameters:[IrMethod m]
+MethodInvocation:travelMod
+Method-name:onUse
+Method-returnType:Value
+Method-parameters:[Local v]
+MethodInvocation:nConstant
+Method-name:onAssign
+Method-returnType:Value
+Method-parameters:[Local v, AssignStmt as]
+FieldAccess:vt
+MethodInvocation:trim
+MethodInvocation:nConstant
+Method-name:markReplacable
+Method-returnType:void
+Method-parameters:[IrMethod m]
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:markConstant
+Method-returnType:void
+Method-parameters:[IrMethod m]
+MethodInvocation:addAll
+MethodInvocation:isEmpty
+FieldAccess:tag
+MethodInvocation:poll
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:add
+Method-name:collect
+Method-returnType:void
+Method-parameters:[IrMethod m]
+MethodInvocation:getFirst
+MethodInvocation:getNext
+MethodInvocation:trim
+MethodInvocation:trim
+FieldAccess:tag
+MethodInvocation:add
+MethodInvocation:add
+FieldAccess:tag
+MethodInvocation:trim
+MethodInvocation:add
+MethodInvocation:add
+Method-name:init
+Method-returnType:void
+Method-parameters:[IrMethod m]
+Class:ConstAnalyzeValue
+Field:ZERO
+MethodInvocation:valueOf
+Field:local
+Field:isConst
+Field:replacable
+Field:cst
+Field:assignFrom
+Field:assignTo
+Method-name:ConstAnalyzeValue
+Method-returnType:null
+Method-parameters:[Local local]
+FieldAccess:local
+Method-name:isZero
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:equals

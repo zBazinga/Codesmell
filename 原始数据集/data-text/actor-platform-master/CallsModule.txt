@@ -1,0 +1,64 @@
+Class:CallsModule
+Field:TAG
+Field:callManager
+Field:callViewModels
+Method-name:CallsModule
+Method-returnType:null
+Method-parameters:[ModuleContext context]
+MethodInvocation:isVoiceCallsEnabled
+MethodInvocation:getConfiguration
+MethodInvocation:context
+MethodInvocation:context
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isVoiceCallsEnabled
+MethodInvocation:getConfiguration
+MethodInvocation:context
+MethodInvocation:actorOf
+MethodInvocation:system
+MethodInvocation:CONSTRUCTOR
+MethodInvocation:context
+Method-name:getCallViewModels
+Method-returnType:CallViewModels
+Method-parameters:[]
+Method-name:getCall
+Method-returnType:CallVM
+Method-parameters:[long id]
+MethodInvocation:getCall
+Method-name:getCallManager
+Method-returnType:ActorRef
+Method-parameters:[]
+Method-name:checkCall
+Method-returnType:void
+Method-parameters:[long callId, int attempt]
+MethodInvocation:send
+MethodInvocation:makeWakeLock
+Method-name:probablyEndCall
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:send
+Method-name:muteCall
+Method-returnType:void
+Method-parameters:[long callId]
+MethodInvocation:send
+Method-name:unmuteCall
+Method-returnType:void
+Method-parameters:[long callId]
+MethodInvocation:send
+Method-name:disableVideo
+Method-returnType:void
+Method-parameters:[long callId]
+MethodInvocation:send
+Method-name:enableVideo
+Method-returnType:void
+Method-parameters:[long callId]
+MethodInvocation:send
+Method-name:endCall
+Method-returnType:void
+Method-parameters:[long callId]
+MethodInvocation:send
+Method-name:answerCall
+Method-returnType:void
+Method-parameters:[long callId]
+MethodInvocation:send

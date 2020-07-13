@@ -1,0 +1,42 @@
+Class:InterferenceRegisterMapper
+Field:newRegInterference
+Field:oldRegInterference
+Method-name:InterferenceRegisterMapper
+Method-returnType:null
+Method-parameters:[InterferenceGraph oldRegInterference, int countOldRegisters]
+FieldAccess:oldRegInterference
+Method-name:addMapping
+Method-returnType:void
+Method-parameters:[int oldReg, int newReg, int category]
+MethodInvocation:addInterfence
+MethodInvocation:addInterfence
+Method-name:interferes
+Method-returnType:boolean
+Method-parameters:[int oldReg, int newReg, int category]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:has
+MethodInvocation:has
+MethodInvocation:interferes
+Method-name:interferes
+Method-returnType:boolean
+Method-parameters:[RegisterSpec oldSpec, int newReg]
+MethodInvocation:interferes
+MethodInvocation:getReg
+MethodInvocation:getCategory
+Method-name:addInterfence
+Method-returnType:void
+Method-parameters:[int newReg, int oldReg]
+MethodInvocation:ensureCapacity
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:mergeInterferenceSet
+MethodInvocation:get
+Method-name:areAnyPinned
+Method-returnType:boolean
+Method-parameters:[RegisterSpecList oldSpecs, int newReg, int targetCategory]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:oldToNew
+MethodInvocation:getReg
+MethodInvocation:getCategory

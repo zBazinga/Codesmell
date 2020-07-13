@@ -1,0 +1,185 @@
+Class:EvalConditionNode
+Field:serialVersionUID
+Field:condition
+Field:tupleMemoryEnabled
+Field:previousTupleSinkNode
+Field:nextTupleSinkNode
+Field:componentsMap
+Method-name:EvalConditionNode
+Method-returnType:null
+Method-parameters:[]
+Method-name:EvalConditionNode
+Method-returnType:null
+Method-parameters:[final int id, final LeftTupleSource tupleSource, final EvalCondition eval, final BuildContext context]
+FieldAccess:condition
+MethodInvocation:setLeftTupleSource
+FieldAccess:tupleMemoryEnabled
+MethodInvocation:isTupleMemoryEnabled
+MethodInvocation:initMasks
+MethodInvocation:calculateHashCode
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readObject
+MethodInvocation:readBoolean
+MethodInvocation:readObject
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+MethodInvocation:writeBoolean
+MethodInvocation:writeObject
+Method-name:attach
+Method-returnType:void
+Method-parameters:[BuildContext context]
+MethodInvocation:addTupleSink
+FieldAccess:leftInput
+Method-name:networkUpdated
+Method-returnType:void
+Method-parameters:[UpdateContext updateContext]
+MethodInvocation:networkUpdated
+FieldAccess:leftInput
+Method-name:getCondition
+Method-returnType:EvalCondition
+Method-parameters:[]
+FieldAccess:condition
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:id
+FieldAccess:condition
+Method-name:calculateHashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+FieldAccess:leftInput
+MethodInvocation:hashCode
+FieldAccess:condition
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[final Object object]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:getId
+FieldAccess:leftInput
+MethodInvocation:getId
+MethodInvocation:equals
+FieldAccess:condition
+Method-name:createMemory
+Method-returnType:EvalMemory
+Method-parameters:[final RuleBaseConfiguration config, InternalWorkingMemory wm]
+MethodInvocation:createContext
+FieldAccess:condition
+Method-name:createPeer
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple original]
+MethodInvocation:initPeer
+MethodInvocation:setPeer
+Method-name:isLeftTupleMemoryEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setLeftTupleMemoryEnabled
+Method-returnType:void
+Method-parameters:[boolean tupleMemoryEnabled]
+FieldAccess:tupleMemoryEnabled
+Method-name:getNextLeftTupleSinkNode
+Method-returnType:LeftTupleSinkNode
+Method-parameters:[]
+FieldAccess:nextTupleSinkNode
+Method-name:setNextLeftTupleSinkNode
+Method-returnType:void
+Method-parameters:[final LeftTupleSinkNode next]
+FieldAccess:nextTupleSinkNode
+Method-name:getPreviousLeftTupleSinkNode
+Method-returnType:LeftTupleSinkNode
+Method-parameters:[]
+FieldAccess:previousTupleSinkNode
+Method-name:setPreviousLeftTupleSinkNode
+Method-returnType:void
+Method-parameters:[final LeftTupleSinkNode previous]
+FieldAccess:previousTupleSinkNode
+Method-name:getType
+Method-returnType:short
+Method-parameters:[]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[InternalFactHandle factHandle, Sink sink, boolean leftTupleMemoryEnabled]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[final InternalFactHandle factHandle, final LeftTuple leftTuple, final Sink sink]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, Sink sink, PropagationContext pctx, boolean leftTupleMemoryEnabled]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, RightTuple rightTuple, Sink sink]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, RightTuple rightTuple, LeftTuple currentLeftChild, LeftTuple currentRightChild, Sink sink, boolean leftTupleMemoryEnabled]
+Method-name:doNode
+Method-returnType:void
+Method-parameters:[EvalMemory em, LeftTupleSink sink, InternalWorkingMemory wm, TupleSets<LeftTuple> srcLeftTuples, TupleSets<LeftTuple> trgLeftTuples, TupleSets<LeftTuple> stagedLeftTuples, PhreakEvalNode phreakEvalNode]
+MethodInvocation:getDeleteFirst
+MethodInvocation:doLeftDeletes
+MethodInvocation:getUpdateFirst
+MethodInvocation:doLeftUpdates
+MethodInvocation:getInsertFirst
+MethodInvocation:doLeftInserts
+MethodInvocation:resetAll
+Class:EvalMemory
+Field:serialVersionUID
+Field:context
+Field:memory
+Method-name:EvalMemory
+Method-returnType:null
+Method-parameters:[]
+Method-name:EvalMemory
+Method-returnType:null
+Method-parameters:[final Object context]
+FieldAccess:context
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readObject
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+Method-name:getNodeType
+Method-returnType:short
+Method-parameters:[]
+Method-name:setSegmentMemory
+Method-returnType:void
+Method-parameters:[SegmentMemory smem]
+FieldAccess:memory
+Method-name:getSegmentMemory
+Method-returnType:SegmentMemory
+Method-parameters:[]
+FieldAccess:memory
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+Method-name:getObjectTypeNode
+Method-returnType:ObjectTypeNode
+Method-parameters:[]
+MethodInvocation:getObjectTypeNode
+Method-name:doRemove
+Method-returnType:boolean
+Method-parameters:[final RuleRemovalContext context, final ReteooBuilder builder]
+MethodInvocation:isInUse
+MethodInvocation:removeTupleSink
+MethodInvocation:getLeftTupleSource
+FieldAccess:condition
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:values
+Method-name:addAssociation
+Method-returnType:void
+Method-parameters:[BuildContext context, Rule rule]
+MethodInvocation:put
+MethodInvocation:peekRuleComponent
+Method-name:removeAssociation
+Method-returnType:boolean
+Method-parameters:[Rule rule]
+MethodInvocation:isAssociatedWith
+MethodInvocation:remove

@@ -1,0 +1,34 @@
+Class:FtpsComponent
+Field:useGlobalSslContextParameters
+Method-name:FtpsComponent
+Method-returnType:null
+Method-parameters:[]
+Method-name:FtpsComponent
+Method-returnType:null
+Method-parameters:[CamelContext context]
+Method-name:buildFileEndpoint
+Method-returnType:GenericFileEndpoint<FTPFile>
+Method-parameters:[String uri, String remaining, Map<String,Object> parameters]
+MethodInvocation:getBaseUri
+MethodInvocation:ensureRelativeFtpDirectory
+MethodInvocation:extractAndSetFtpClientKeyStoreParameters
+MethodInvocation:extractAndSetFtpClientTrustStoreParameters
+MethodInvocation:extractAndSetFtpClientConfigParameters
+MethodInvocation:extractAndSetFtpClientParameters
+MethodInvocation:getSslContextParameters
+MethodInvocation:setSslContextParameters
+MethodInvocation:retrieveGlobalSslContextParameters
+Method-name:extractAndSetFtpClientTrustStoreParameters
+Method-returnType:void
+Method-parameters:[Map<String,Object> parameters, FtpsEndpoint endpoint]
+MethodInvocation:hasProperties
+MethodInvocation:extractProperties
+MethodInvocation:setFtpClientTrustStoreParameters
+Method-name:isUseGlobalSslContextParameters
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:useGlobalSslContextParameters
+Method-name:setUseGlobalSslContextParameters
+Method-returnType:void
+Method-parameters:[boolean useGlobalSslContextParameters]
+FieldAccess:useGlobalSslContextParameters

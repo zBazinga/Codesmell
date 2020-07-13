@@ -1,0 +1,281 @@
+Class:DataForm
+Field:NAMESPACE
+Field:ELEMENT
+Field:QNAME
+Method-name:sendSearchForm
+Method-returnType:org.jivesoftware.smackx.search.ReportedData
+Method-parameters:[XMPPConnection con, DomainBareJid searchService, UserSearch userSearch]
+MethodInvocation:setType
+MethodInvocation:setTo
+MethodInvocation:addExtension
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:getReportedDataFrom
+Field:Type
+Method-name:fromString
+Method-returnType:Type
+Method-parameters:[String string]
+MethodInvocation:valueOf
+MethodInvocation:toLowerCase
+Field:type
+Field:title
+Field:instructions
+Field:reportedData
+Field:items
+Field:fields
+Field:fieldsMap
+Field:extensionElements
+Method-name:DataForm
+Method-returnType:null
+Method-parameters:[Builder builder]
+MethodInvocation:cloneAndSeal
+MethodInvocation:cloneAndSeal
+MethodInvocation:cloneAndSeal
+MethodInvocation:cloneAndSeal
+MethodInvocation:cloneAndSeal
+MethodInvocation:register
+Method-name:getType
+Method-returnType:Type
+Method-parameters:[]
+Method-name:getTitle
+Method-returnType:String
+Method-parameters:[]
+Method-name:getInstructions
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:getReportedData
+Method-returnType:ReportedData
+Method-parameters:[]
+Method-name:getItems
+Method-returnType:List<Item>
+Method-parameters:[]
+Method-name:getFields
+Method-returnType:List<FormField>
+Method-parameters:[]
+Method-name:getField
+Method-returnType:FormField
+Method-parameters:[String fieldName]
+MethodInvocation:get
+Method-name:hasField
+Method-returnType:boolean
+Method-parameters:[String fieldName]
+MethodInvocation:containsKey
+Method-name:getElementName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getNamespace
+Method-returnType:String
+Method-parameters:[]
+Method-name:getExtensionElements
+Method-returnType:List<Element>
+Method-parameters:[]
+Method-name:getFormType
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getHiddenFormTypeField
+MethodInvocation:getFirstValue
+Method-name:getHiddenFormTypeField
+Method-returnType:TextSingleFormField
+Method-parameters:[]
+MethodInvocation:getField
+MethodInvocation:asHiddenFormTypeFieldIfPossible
+Method-name:hasHiddenFormTypeField
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getHiddenFormTypeField
+Method-name:toXML
+Method-returnType:XmlStringBuilder
+Method-parameters:[XmlEnvironment xmlEnvironment]
+MethodInvocation:attribute
+MethodInvocation:getType
+MethodInvocation:rightAngleBracket
+MethodInvocation:getXmlEnvironment
+MethodInvocation:optElement
+MethodInvocation:getTitle
+MethodInvocation:getInstructions
+MethodInvocation:element
+MethodInvocation:optElement
+MethodInvocation:getReportedData
+MethodInvocation:append
+MethodInvocation:getItems
+MethodInvocation:getType
+MethodInvocation:getFields
+MethodInvocation:append
+MethodInvocation:toXML
+MethodInvocation:append
+MethodInvocation:getExtensionElements
+MethodInvocation:closeElement
+Method-name:asBuilder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:from
+Method-returnType:DataForm
+Method-parameters:[StanzaView stanzaView]
+MethodInvocation:from
+Method-name:from
+Method-returnType:DataForm
+Method-parameters:[StanzaView stanzaView, String formType]
+MethodInvocation:getExtension
+MethodInvocation:getExtensions
+MethodInvocation:from
+Method-name:from
+Method-returnType:DataForm
+Method-parameters:[Collection<DataForm> dataForms, String formType]
+MethodInvocation:equals
+MethodInvocation:getFormType
+Method-name:remove
+Method-returnType:DataForm
+Method-parameters:[Collection<DataForm> dataForms, String formType]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:equals
+MethodInvocation:getFormType
+MethodInvocation:remove
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[Type type]
+Class:Builder
+Field:type
+Field:title
+Field:instructions
+Field:reportedData
+Field:items
+Field:fields
+Field:fieldsMap
+Field:extensionElements
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[Type type]
+FieldAccess:type
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[DataForm dataForm]
+MethodInvocation:getType
+MethodInvocation:getTitle
+MethodInvocation:getInstructions
+MethodInvocation:getReportedData
+MethodInvocation:newListWith
+MethodInvocation:getItems
+MethodInvocation:newListWith
+MethodInvocation:getFields
+MethodInvocation:newListWith
+MethodInvocation:getExtensionElements
+Method-name:setType
+Method-returnType:Builder
+Method-parameters:[Type type]
+FieldAccess:type
+MethodInvocation:requireNonNull
+Method-name:setTitle
+Method-returnType:Builder
+Method-parameters:[String title]
+FieldAccess:title
+Method-name:addField
+Method-returnType:Builder
+Method-parameters:[FormField field]
+MethodInvocation:getFieldName
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:add
+Method-name:addFields
+Method-returnType:Builder
+Method-parameters:[Collection<? extends FormField> fieldsToAdd]
+MethodInvocation:getFieldName
+MethodInvocation:containsKey
+MethodInvocation:getFieldName
+MethodInvocation:put
+MethodInvocation:add
+Method-name:removeField
+Method-returnType:Builder
+Method-parameters:[String fieldName]
+MethodInvocation:remove
+MethodInvocation:remove
+Method-name:setFormType
+Method-returnType:Builder
+Method-parameters:[String formType]
+MethodInvocation:buildHiddenFormType
+MethodInvocation:addField
+Method-name:setInstructions
+Method-returnType:Builder
+Method-parameters:[String instructions]
+MethodInvocation:setInstructions
+MethodInvocation:splitLinesPortable
+Method-name:setInstructions
+Method-returnType:Builder
+Method-parameters:[List<String> instructions]
+FieldAccess:instructions
+Method-name:addInstruction
+Method-returnType:Builder
+Method-parameters:[String instruction]
+MethodInvocation:add
+Method-name:addItem
+Method-returnType:Builder
+Method-parameters:[Item item]
+MethodInvocation:add
+Method-name:setReportedData
+Method-returnType:Builder
+Method-parameters:[ReportedData reportedData]
+FieldAccess:reportedData
+Method-name:addExtensionElement
+Method-returnType:Builder
+Method-parameters:[Element element]
+MethodInvocation:add
+Method-name:build
+Method-returnType:DataForm
+Method-parameters:[]
+Class:ReportedData
+Field:ELEMENT
+Field:QNAME
+Field:fields
+Method-name:ReportedData
+Method-returnType:null
+Method-parameters:[List<? extends FormField> fields]
+FieldAccess:fields
+MethodInvocation:unmodifiableList
+Method-name:getElementName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getNamespace
+Method-returnType:String
+Method-parameters:[]
+Method-name:getFields
+Method-returnType:List<? extends FormField>
+Method-parameters:[]
+Method-name:toXML
+Method-returnType:XmlStringBuilder
+Method-parameters:[XmlEnvironment xmlEnvironment]
+MethodInvocation:rightAngleBracket
+MethodInvocation:append
+MethodInvocation:getFields
+MethodInvocation:closeElement
+Class:Item
+Field:ELEMENT
+Field:QNAME
+Field:fields
+Method-name:Item
+Method-returnType:null
+Method-parameters:[List<? extends FormField> fields]
+FieldAccess:fields
+MethodInvocation:unmodifiableList
+Method-name:getElementName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getNamespace
+Method-returnType:String
+Method-parameters:[]
+Method-name:getFields
+Method-returnType:List<? extends FormField>
+Method-parameters:[]
+Method-name:toXML
+Method-returnType:XmlStringBuilder
+Method-parameters:[XmlEnvironment xmlEnvironment]
+MethodInvocation:rightAngleBracket
+MethodInvocation:append
+MethodInvocation:getFields
+MethodInvocation:closeElement

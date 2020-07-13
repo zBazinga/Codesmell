@@ -1,0 +1,64 @@
+Class:EnumerableLimit
+Field:offset
+Field:fetch
+Method-name:EnumerableLimit
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode input, RexNode offset, RexNode fetch]
+Method-name:create
+Method-returnType:EnumerableLimit
+Method-parameters:[final RelNode input, RexNode offset, RexNode fetch]
+MethodInvocation:getCluster
+MethodInvocation:getMetadataQuery
+MethodInvocation:replaceIf
+MethodInvocation:replaceIfs
+MethodInvocation:traitSetOf
+MethodInvocation:limit
+MethodInvocation:limit
+Method-name:copy
+Method-returnType:EnumerableLimit
+Method-parameters:[RelTraitSet traitSet, List<RelNode> newInputs]
+MethodInvocation:getCluster
+MethodInvocation:sole
+Method-name:explainTerms
+Method-returnType:RelWriter
+Method-parameters:[RelWriter pw]
+MethodInvocation:itemIf
+MethodInvocation:itemIf
+Method-name:implement
+Method-returnType:Result
+Method-parameters:[EnumerableRelImplementor implementor, Prefer pref]
+MethodInvocation:getInput
+MethodInvocation:visitChild
+MethodInvocation:of
+MethodInvocation:getTypeFactory
+MethodInvocation:getRowType
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:call
+MethodInvocation:getExpression
+MethodInvocation:append
+MethodInvocation:call
+MethodInvocation:getExpression
+MethodInvocation:add
+MethodInvocation:return_
+MethodInvocation:result
+MethodInvocation:toBlock
+Method-name:getExpression
+Method-returnType:Expression
+Method-parameters:[RexNode offset]
+MethodInvocation:convert_
+MethodInvocation:call
+MethodInvocation:constant
+MethodInvocation:getIndex
+MethodInvocation:constant
+MethodInvocation:intValue
+Method-name:getMinRowCount
+Method-returnType:Double
+Method-parameters:[RelMetadataQuery mq, RelMdMinRowCount relMdMinRowCount]
+MethodInvocation:getMinRowCount
+MethodInvocation:getInput
+FieldAccess:offset
+MethodInvocation:intValue
+FieldAccess:offset
+MethodInvocation:max
+MethodInvocation:intValue

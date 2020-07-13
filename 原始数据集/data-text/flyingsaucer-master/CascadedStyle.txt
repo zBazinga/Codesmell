@@ -1,0 +1,89 @@
+Class:CascadedStyle
+Field:cascadedProperties
+Field:fingerprint
+Method-name:createAnonymousStyle
+Method-returnType:CascadedStyle
+Method-parameters:[IdentValue display]
+MethodInvocation:singletonList
+MethodInvocation:iterator
+Method-name:createLayoutStyle
+Method-returnType:CascadedStyle
+Method-parameters:[PropertyDeclaration[] decls]
+MethodInvocation:iterator
+MethodInvocation:asList
+Method-name:createLayoutStyle
+Method-returnType:CascadedStyle
+Method-parameters:[List decls]
+MethodInvocation:iterator
+Method-name:createLayoutStyle
+Method-returnType:CascadedStyle
+Method-parameters:[CascadedStyle startingPoint, PropertyDeclaration[] decls]
+MethodInvocation:iterator
+MethodInvocation:asList
+Method-name:createLayoutPropertyDeclaration
+Method-returnType:PropertyDeclaration
+Method-parameters:[CSSName cssName, IdentValue display]
+Method-name:CascadedStyle
+Method-returnType:null
+Method-parameters:[java.util.Iterator iter]
+MethodInvocation:addProperties
+Method-name:addProperties
+Method-returnType:void
+Method-parameters:[java.util.Iterator iter]
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:add
+MethodInvocation:getImportanceAndOrigin
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:put
+MethodInvocation:getCSSName
+Method-name:CascadedStyle
+Method-returnType:null
+Method-parameters:[CascadedStyle startingPoint, Iterator props]
+MethodInvocation:addProperties
+Method-name:CascadedStyle
+Method-returnType:null
+Method-parameters:[]
+Field:emptyCascadedStyle
+Method-name:hasProperty
+Method-returnType:boolean
+Method-parameters:[CSSName cssName]
+MethodInvocation:get
+Method-name:propertyByName
+Method-returnType:PropertyDeclaration
+Method-parameters:[CSSName cssName]
+MethodInvocation:get
+Method-name:getIdent
+Method-returnType:IdentValue
+Method-parameters:[CSSName cssName]
+MethodInvocation:propertyByName
+MethodInvocation:asIdentValue
+Method-name:getCascadedPropertyDeclarations
+Method-returnType:java.util.Iterator
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:iterator
+MethodInvocation:values
+MethodInvocation:hasNext
+MethodInvocation:add
+MethodInvocation:next
+MethodInvocation:iterator
+Method-name:countAssigned
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getFingerprint
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:fingerprint
+MethodInvocation:iterator
+MethodInvocation:values
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:getFingerprint
+MethodInvocation:next
+FieldAccess:fingerprint
+MethodInvocation:toString
+FieldAccess:fingerprint

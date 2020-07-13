@@ -1,0 +1,58 @@
+Class:Distance
+Field:value
+Field:unit
+Method-name:Distance
+Method-returnType:null
+Method-parameters:[double value, DistanceUnit unit]
+FieldAccess:value
+FieldAccess:unit
+Method-name:convert
+Method-returnType:Distance
+Method-parameters:[DistanceUnit unit]
+FieldAccess:unit
+MethodInvocation:convert
+FieldAccess:unit
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:convert
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:valueOf
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[Distance o]
+MethodInvocation:compare
+MethodInvocation:convert
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:parseDistance
+Method-returnType:Distance
+Method-parameters:[String distance]
+MethodInvocation:parseDistance
+Method-name:parseDistance
+Method-returnType:Distance
+Method-parameters:[String distance, DistanceUnit defaultUnit]
+MethodInvocation:values
+MethodInvocation:endsWith
+MethodInvocation:parseDouble
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:parseDouble
+Method-name:readFromStream
+Method-returnType:DistanceUnit
+Method-parameters:[StreamInput in]
+MethodInvocation:readByte
+FieldAccess:length
+MethodInvocation:values
+MethodInvocation:values
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeByte
+MethodInvocation:ordinal

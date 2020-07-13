@@ -1,0 +1,39 @@
+Class:DexMethodNode
+Field:access
+Field:anns
+Field:codeNode
+Field:method
+Field:parameterAnns
+Method-name:DexMethodNode
+Method-returnType:null
+Method-parameters:[DexMethodVisitor mv, int access, Method method]
+FieldAccess:access
+FieldAccess:method
+Method-name:DexMethodNode
+Method-returnType:null
+Method-parameters:[int access, Method method]
+FieldAccess:access
+FieldAccess:method
+Method-name:accept
+Method-returnType:void
+Method-parameters:[DexClassVisitor dcv]
+MethodInvocation:visitMethod
+MethodInvocation:accept
+MethodInvocation:visitEnd
+Method-name:visitAnnotation
+Method-returnType:DexAnnotationVisitor
+Method-parameters:[String name, Visibility visibility]
+MethodInvocation:add
+Method-name:visitCode
+Method-returnType:DexCodeVisitor
+Method-parameters:[]
+FieldAccess:codeNode
+Method-name:visitParameterAnnotation
+Method-returnType:DexAnnotationAble
+Method-parameters:[final int index]
+FieldAccess:length
+MethodInvocation:getParameterTypes
+Method-name:visitAnnotation
+Method-returnType:DexAnnotationVisitor
+Method-parameters:[String name, Visibility visibility]
+MethodInvocation:add

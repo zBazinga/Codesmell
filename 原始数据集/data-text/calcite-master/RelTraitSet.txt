@@ -1,0 +1,227 @@
+Class:RelTraitSet
+Field:EMPTY_TRAITS
+Field:cache
+Field:traits
+Field:string
+Method-name:RelTraitSet
+Method-returnType:null
+Method-parameters:[Cache cache, RelTrait[] traits]
+FieldAccess:cache
+FieldAccess:traits
+FieldAccess:string
+MethodInvocation:computeString
+Method-name:createEmpty
+Method-returnType:RelTraitSet
+Method-parameters:[]
+Method-name:getTrait
+Method-returnType:RelTrait
+Method-parameters:[int index]
+Method-name:getTraits
+Method-returnType:List<E>
+Method-parameters:[int index]
+MethodInvocation:traitList
+MethodInvocation:of
+Method-name:get
+Method-returnType:RelTrait
+Method-parameters:[int index]
+MethodInvocation:getTrait
+Method-name:isEnabled
+Method-returnType:boolean
+Method-parameters:[RelTraitDef<T> traitDef]
+MethodInvocation:getTrait
+Method-name:getTrait
+Method-returnType:T
+Method-parameters:[RelTraitDef<T> traitDef]
+MethodInvocation:findIndex
+MethodInvocation:getTrait
+Method-name:getTraits
+Method-returnType:List<T>
+Method-parameters:[RelTraitDef<T> traitDef]
+MethodInvocation:findIndex
+MethodInvocation:getTraits
+Method-name:replace
+Method-returnType:RelTraitSet
+Method-parameters:[int index, RelTrait trait]
+Method-name:replace
+Method-returnType:RelTraitSet
+Method-parameters:[RelTrait trait]
+MethodInvocation:containsShallow
+MethodInvocation:getTraitDef
+MethodInvocation:findIndex
+MethodInvocation:replace
+Method-name:containsShallow
+Method-returnType:boolean
+Method-parameters:[T[] ts, RelTrait seek]
+Method-name:replace
+Method-returnType:RelTraitSet
+Method-parameters:[List<T> traits]
+Method-name:replace
+Method-returnType:RelTraitSet
+Method-parameters:[RelTraitDef<T> def, List<T> traits]
+MethodInvocation:replace
+MethodInvocation:of
+Method-name:replaceIfs
+Method-returnType:RelTraitSet
+Method-parameters:[RelTraitDef<T> def, Supplier<List<T>> traitSupplier]
+MethodInvocation:findIndex
+MethodInvocation:get
+MethodInvocation:replace
+MethodInvocation:of
+Method-name:replaceIf
+Method-returnType:RelTraitSet
+Method-parameters:[RelTraitDef<T> def, Supplier<T> traitSupplier]
+MethodInvocation:findIndex
+MethodInvocation:get
+MethodInvocation:replace
+Method-name:apply
+Method-returnType:RelTraitSet
+Method-parameters:[Mappings.TargetMapping mapping]
+MethodInvocation:apply
+MethodInvocation:getOrAdd
+Method-name:isDefault
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getDefault
+MethodInvocation:getTraitDef
+Method-name:isDefaultSansConvention
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getTraitDef
+MethodInvocation:getDefault
+MethodInvocation:getTraitDef
+Method-name:equalsSansConvention
+Method-returnType:boolean
+Method-parameters:[RelTraitSet other]
+MethodInvocation:getTraitDef
+MethodInvocation:equals
+Method-name:getDefault
+Method-returnType:RelTraitSet
+Method-parameters:[]
+MethodInvocation:getDefault
+MethodInvocation:getTraitDef
+MethodInvocation:getOrAdd
+Method-name:getDefaultSansConvention
+Method-returnType:RelTraitSet
+Method-parameters:[]
+MethodInvocation:getTraitDef
+MethodInvocation:getDefault
+MethodInvocation:getTraitDef
+MethodInvocation:getOrAdd
+Method-name:getConvention
+Method-returnType:Convention
+Method-parameters:[]
+MethodInvocation:getTrait
+Method-name:getDistribution
+Method-returnType:T
+Method-parameters:[]
+MethodInvocation:getTrait
+Method-name:getCollation
+Method-returnType:T
+Method-parameters:[]
+MethodInvocation:getTrait
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+Method-name:canonize
+Method-returnType:T
+Method-parameters:[T trait]
+MethodInvocation:canonize
+MethodInvocation:getTraitDef
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+FieldAccess:traits
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:satisfies
+Method-returnType:boolean
+Method-parameters:[RelTraitSet that]
+MethodInvocation:min
+MethodInvocation:size
+MethodInvocation:size
+FieldAccess:traits
+MethodInvocation:satisfies
+Method-name:matches
+Method-returnType:boolean
+Method-parameters:[RelTraitSet that]
+MethodInvocation:min
+MethodInvocation:size
+MethodInvocation:size
+FieldAccess:traits
+Method-name:contains
+Method-returnType:boolean
+Method-parameters:[RelTrait trait]
+Method-name:containsIfApplicable
+Method-returnType:boolean
+Method-parameters:[RelTrait trait]
+MethodInvocation:getTrait
+MethodInvocation:getTraitDef
+Method-name:comprises
+Method-returnType:boolean
+Method-parameters:[RelTrait... relTraits]
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:computeString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:findIndex
+Method-returnType:int
+Method-parameters:[RelTraitDef traitDef]
+MethodInvocation:getTraitDef
+Method-name:plus
+Method-returnType:RelTraitSet
+Method-parameters:[RelTrait trait]
+Method-name:plusAll
+Method-returnType:RelTraitSet
+Method-parameters:[RelTrait[] traits]
+MethodInvocation:plus
+Method-name:merge
+Method-returnType:RelTraitSet
+Method-parameters:[RelTraitSet additionalTraits]
+MethodInvocation:plusAll
+Method-name:difference
+Method-returnType:ImmutableList<RelTrait>
+Method-parameters:[RelTraitSet traitSet]
+MethodInvocation:builder
+MethodInvocation:min
+MethodInvocation:size
+MethodInvocation:size
+FieldAccess:traits
+MethodInvocation:add
+MethodInvocation:build
+Method-name:allSimple
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:simplify
+Method-returnType:RelTraitSet
+Method-parameters:[]
+MethodInvocation:replace
+MethodInvocation:size
+MethodInvocation:trait
+MethodInvocation:getDefault
+MethodInvocation:getTraitDef
+Method-name:copy
+Method-returnType:Project
+Method-parameters:[RelNode input, List<RexNode> projects, RelDataType rowType, int flags, Project project]
+MethodInvocation:discard
+MethodInvocation:copy
+Class:Cache
+Field:map
+Method-name:Cache
+Method-returnType:null
+Method-parameters:[]
+Method-name:getOrAdd
+Method-returnType:RelTraitSet
+Method-parameters:[List<RelTrait> traits]
+MethodInvocation:get
+MethodInvocation:toArray
+MethodInvocation:put

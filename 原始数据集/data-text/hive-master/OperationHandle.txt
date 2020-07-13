@@ -1,0 +1,60 @@
+Class:OperationHandle
+Field:opType
+Field:protocol
+Field:hasResultSet
+Method-name:OperationHandle
+Method-returnType:null
+Method-parameters:[OperationType opType, TProtocolVersion protocol]
+FieldAccess:opType
+FieldAccess:protocol
+Method-name:OperationHandle
+Method-returnType:null
+Method-parameters:[TOperationHandle tOperationHandle]
+Method-name:OperationHandle
+Method-returnType:null
+Method-parameters:[TOperationHandle tOperationHandle, TProtocolVersion protocol]
+MethodInvocation:getOperationId
+FieldAccess:opType
+MethodInvocation:getOperationType
+MethodInvocation:getOperationType
+FieldAccess:hasResultSet
+MethodInvocation:isHasResultSet
+FieldAccess:protocol
+Method-name:getOperationType
+Method-returnType:OperationType
+Method-parameters:[]
+Method-name:setHasResultSet
+Method-returnType:void
+Method-parameters:[boolean hasResultSet]
+FieldAccess:hasResultSet
+Method-name:hasResultSet
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:toTOperationHandle
+Method-returnType:TOperationHandle
+Method-parameters:[]
+MethodInvocation:setOperationId
+MethodInvocation:toTHandleIdentifier
+MethodInvocation:getHandleIdentifier
+MethodInvocation:setOperationType
+MethodInvocation:toTOperationType
+MethodInvocation:setHasResultSet
+Method-name:getProtocolVersion
+Method-returnType:TProtocolVersion
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getHandleIdentifier
+Method-name:getOperationStatus
+Method-returnType:OperationStatus
+Method-parameters:[OperationManager operationManager]
+MethodInvocation:getStatus
+MethodInvocation:getOperation

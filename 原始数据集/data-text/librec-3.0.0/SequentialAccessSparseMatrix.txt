@@ -1,0 +1,277 @@
+Class:SequentialAccessSparseMatrix
+Field:serialVersionUID
+Field:rowMatrix
+Field:rowToColumnPositionMap
+Field:columnToRowPositionMap
+Field:columnIndices
+Method-name:SequentialAccessSparseMatrix
+Method-returnType:null
+Method-parameters:[int rows, int columns]
+Method-name:SequentialAccessSparseMatrix
+Method-returnType:null
+Method-parameters:[int rows, int columns, Table<Integer,Integer,? extends Number> dataTable]
+MethodInvocation:constructColumnIndices
+MethodInvocation:constructMap
+Method-name:SequentialAccessSparseMatrix
+Method-returnType:null
+Method-parameters:[RowSequentialAccessSparseMatrix rowMatrix]
+MethodInvocation:rowSize
+MethodInvocation:columnSize
+FieldAccess:rowMatrix
+MethodInvocation:clone
+MethodInvocation:constructColumnIndices
+MethodInvocation:constructMap
+Method-name:SequentialAccessSparseMatrix
+Method-returnType:null
+Method-parameters:[SequentialAccessSparseMatrix otherMatrix]
+MethodInvocation:rowSize
+MethodInvocation:columnSize
+FieldAccess:rowMatrix
+MethodInvocation:clone
+MethodInvocation:getRowMatrix
+MethodInvocation:copy
+MethodInvocation:copy
+MethodInvocation:copy
+Method-name:SequentialAccessSparseMatrix
+Method-returnType:null
+Method-parameters:[int rows, int columns, DataFrame df, DataFrameIndex rowDataFrameIndex, int itemColumn, int valueColumn]
+MethodInvocation:constructColumnIndices
+MethodInvocation:constructMap
+Method-name:SequentialAccessSparseMatrix
+Method-returnType:null
+Method-parameters:[RowSequentialAccessSparseMatrix rowMatrix, boolean shallowIndicesCopy]
+MethodInvocation:rowSize
+MethodInvocation:columnSize
+FieldAccess:rowMatrix
+MethodInvocation:constructColumnIndices
+MethodInvocation:constructMap
+Method-name:SequentialAccessSparseMatrix
+Method-returnType:null
+Method-parameters:[SequentialAccessSparseMatrix otherMatrix, boolean shallowIndicesCopy]
+MethodInvocation:rowSize
+MethodInvocation:columnSize
+FieldAccess:rowMatrix
+MethodInvocation:copy
+MethodInvocation:copy
+MethodInvocation:copy
+Method-name:constructColumnIndices
+Method-returnType:void
+Method-parameters:[RowSequentialAccessSparseMatrix rowMatrix]
+MethodInvocation:columnSize
+MethodInvocation:columnSize
+MethodInvocation:row
+MethodInvocation:column
+MethodInvocation:add
+MethodInvocation:columnSize
+MethodInvocation:columnSize
+MethodInvocation:size
+MethodInvocation:sort
+MethodInvocation:getInt
+Method-name:constructMap
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:rowSize
+MethodInvocation:row
+MethodInvocation:put
+MethodInvocation:index
+MethodInvocation:position
+MethodInvocation:put
+MethodInvocation:columnSize
+MethodInvocation:columnSize
+MethodInvocation:column
+MethodInvocation:getNumEntries
+MethodInvocation:position
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:index
+MethodInvocation:columnSize
+MethodInvocation:column
+MethodInvocation:put
+MethodInvocation:index
+MethodInvocation:position
+MethodInvocation:put
+MethodInvocation:rowSize
+MethodInvocation:rowSize
+MethodInvocation:row
+MethodInvocation:getNumEntries
+MethodInvocation:position
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:index
+Method-name:mean
+Method-returnType:double
+Method-parameters:[]
+MethodInvocation:mean
+Method-name:row
+Method-returnType:SequentialSparseVector
+Method-parameters:[int row]
+MethodInvocation:row
+Method-name:column
+Method-returnType:SequentialSparseVector
+Method-parameters:[int column]
+Method-name:viewRow
+Method-returnType:SequentialSparseVector
+Method-parameters:[int row]
+MethodInvocation:viewRow
+Method-name:viewColumn
+Method-returnType:SequentialSparseVector
+Method-parameters:[int column]
+FieldAccess:length
+MethodInvocation:getAtColumnPosition
+MethodInvocation:rowSize
+Method-name:reshape
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:reshape
+MethodInvocation:constructColumnIndices
+MethodInvocation:constructMap
+Method-name:columnBasedRowIndices
+Method-returnType:int[][]
+Method-parameters:[]
+Method-name:clone
+Method-returnType:SequentialAccessSparseMatrix
+Method-parameters:[]
+MethodInvocation:rowSize
+MethodInvocation:columnSize
+MethodInvocation:clone
+MethodInvocation:copy
+MethodInvocation:copy
+MethodInvocation:copy
+Method-name:getRowMatrix
+Method-returnType:RowSequentialAccessSparseMatrix
+Method-parameters:[]
+Method-name:get
+Method-returnType:double
+Method-parameters:[int row, int column]
+MethodInvocation:get
+Method-name:set
+Method-returnType:void
+Method-parameters:[int row, int column, double value]
+MethodInvocation:set
+Method-name:setAtColumnPosition
+Method-returnType:void
+Method-parameters:[int row, int columnPosition, double value]
+MethodInvocation:setAtColumnPosition
+Method-name:getAtColumnPosition
+Method-returnType:double
+Method-parameters:[int row, int columnPosition]
+MethodInvocation:getAtColumnPosition
+Method-name:setAtRowPosition
+Method-returnType:void
+Method-parameters:[int rowPosition, int column, double value]
+MethodInvocation:setAtColumnPosition
+Method-name:getAtRowPosition
+Method-returnType:double
+Method-parameters:[int rowPosition, int column]
+MethodInvocation:getAtColumnPosition
+Method-name:rowColumnsCache
+Method-returnType:LoadingCache<Integer,List<Integer>>
+Method-parameters:[String cacheSpec]
+MethodInvocation:build
+MethodInvocation:from
+Method-name:load
+Method-returnType:List<Integer>
+Method-parameters:[Integer rowId]
+MethodInvocation:getIndices
+MethodInvocation:row
+MethodInvocation:toObject
+MethodInvocation:asList
+Method-name:rowColumnsSetCache
+Method-returnType:LoadingCache<Integer,Set<Integer>>
+Method-parameters:[String cacheSpec]
+MethodInvocation:build
+MethodInvocation:from
+Method-name:load
+Method-returnType:Set<Integer>
+Method-parameters:[Integer rowId]
+MethodInvocation:getIndices
+MethodInvocation:row
+MethodInvocation:toObject
+MethodInvocation:asList
+Method-name:columnRowsCache
+Method-returnType:LoadingCache<Integer,List<Integer>>
+Method-parameters:[String cacheSpec]
+MethodInvocation:build
+MethodInvocation:from
+Method-name:load
+Method-returnType:List<Integer>
+Method-parameters:[Integer colId]
+MethodInvocation:getIndices
+MethodInvocation:column
+MethodInvocation:toObject
+MethodInvocation:asList
+Method-name:getDataTable
+Method-returnType:Table<Integer,Integer,Double>
+Method-parameters:[]
+MethodInvocation:create
+MethodInvocation:put
+MethodInvocation:row
+MethodInvocation:column
+MethodInvocation:get
+Method-name:isRandomAccess
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getNumEntries
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getNumEntries
+Method-name:iterator
+Method-returnType:Iterator<MatrixEntry>
+Method-parameters:[]
+Method-name:getGroundTruthListFromSparseMatrix
+Method-returnType:RecommendedList
+Method-parameters:[EvalContext evalContext]
+MethodInvocation:rowSize
+MethodInvocation:addList
+MethodInvocation:row
+MethodInvocation:column
+MethodInvocation:get
+MethodInvocation:add
+Class:SparseMatrixIterator
+Field:matrixEntry
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getMatrixEntryPosition
+MethodInvocation:getNumEntries
+Method-name:next
+Method-returnType:SequentialSparseMatrixEntry
+Method-parameters:[]
+MethodInvocation:advanceOffset
+Class:SequentialSparseMatrixEntry
+Field:row
+Field:columnPosition
+Field:matrixEntryPosition
+Field:tempVector
+MethodInvocation:row
+Method-name:advanceOffset
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getNumEntries
+MethodInvocation:row
+MethodInvocation:getNumEntries
+MethodInvocation:row
+Method-name:getMatrixEntryPosition
+Method-returnType:int
+Method-parameters:[]
+Method-name:row
+Method-returnType:int
+Method-parameters:[]
+Method-name:column
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getIndexAtPosition
+Method-name:get
+Method-returnType:double
+Method-parameters:[]
+MethodInvocation:getAtPosition
+Method-name:columnPosition
+Method-returnType:int
+Method-parameters:[]
+Method-name:set
+Method-returnType:void
+Method-parameters:[double value]
+MethodInvocation:setAtPosition
+Method-name:rowPosition
+Method-returnType:int
+Method-parameters:[]

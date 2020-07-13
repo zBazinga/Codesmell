@@ -1,0 +1,118 @@
+Class:FilterAllocationDecider
+Field:NAME
+Field:CLUSTER_ROUTING_REQUIRE_GROUP_PREFIX
+Field:CLUSTER_ROUTING_INCLUDE_GROUP_PREFIX
+Field:CLUSTER_ROUTING_EXCLUDE_GROUP_PREFIX
+Field:CLUSTER_ROUTING_REQUIRE_GROUP_SETTING
+MethodInvocation:prefixKeySetting
+MethodInvocation:simpleString
+MethodInvocation:accept
+Field:CLUSTER_ROUTING_INCLUDE_GROUP_SETTING
+MethodInvocation:prefixKeySetting
+MethodInvocation:simpleString
+MethodInvocation:accept
+Field:CLUSTER_ROUTING_EXCLUDE_GROUP_SETTING
+MethodInvocation:prefixKeySetting
+MethodInvocation:simpleString
+MethodInvocation:accept
+Field:clusterRequireFilters
+Field:clusterIncludeFilters
+Field:clusterExcludeFilters
+Method-name:FilterAllocationDecider
+Method-returnType:null
+Method-parameters:[Settings settings, ClusterSettings clusterSettings]
+MethodInvocation:setClusterRequireFilters
+MethodInvocation:getAsMap
+MethodInvocation:setClusterExcludeFilters
+MethodInvocation:getAsMap
+MethodInvocation:setClusterIncludeFilters
+MethodInvocation:getAsMap
+MethodInvocation:addAffixMapUpdateConsumer
+MethodInvocation:addAffixMapUpdateConsumer
+MethodInvocation:addAffixMapUpdateConsumer
+Method-name:canAllocate
+Method-returnType:Decision
+Method-parameters:[ShardRouting shardRouting, RoutingNode node, RoutingAllocation allocation]
+MethodInvocation:unassigned
+MethodInvocation:getIndexSafe
+MethodInvocation:metadata
+MethodInvocation:index
+MethodInvocation:getInitialRecoveryFilters
+MethodInvocation:getType
+MethodInvocation:recoverySource
+MethodInvocation:match
+MethodInvocation:node
+MethodInvocation:decision
+MethodInvocation:shouldFilter
+MethodInvocation:node
+Method-name:canAllocate
+Method-returnType:Decision
+Method-parameters:[IndexMetadata indexMetadata, RoutingNode node, RoutingAllocation allocation]
+MethodInvocation:shouldFilter
+MethodInvocation:node
+Method-name:canRemain
+Method-returnType:Decision
+Method-parameters:[ShardRouting shardRouting, RoutingNode node, RoutingAllocation allocation]
+MethodInvocation:shouldFilter
+MethodInvocation:node
+Method-name:shouldAutoExpandToNode
+Method-returnType:Decision
+Method-parameters:[IndexMetadata indexMetadata, DiscoveryNode node, RoutingAllocation allocation]
+MethodInvocation:shouldClusterFilter
+MethodInvocation:shouldIndexFilter
+MethodInvocation:decision
+Method-name:shouldFilter
+Method-returnType:Decision
+Method-parameters:[ShardRouting shardRouting, DiscoveryNode node, RoutingAllocation allocation]
+MethodInvocation:shouldClusterFilter
+MethodInvocation:shouldIndexFilter
+MethodInvocation:getIndexSafe
+MethodInvocation:metadata
+MethodInvocation:index
+MethodInvocation:decision
+Method-name:shouldFilter
+Method-returnType:Decision
+Method-parameters:[IndexMetadata indexMd, DiscoveryNode node, RoutingAllocation allocation]
+MethodInvocation:shouldClusterFilter
+MethodInvocation:shouldIndexFilter
+MethodInvocation:decision
+Method-name:shouldIndexFilter
+Method-returnType:Decision
+Method-parameters:[IndexMetadata indexMd, DiscoveryNode node, RoutingAllocation allocation]
+MethodInvocation:requireFilters
+MethodInvocation:match
+MethodInvocation:requireFilters
+MethodInvocation:decision
+MethodInvocation:requireFilters
+MethodInvocation:includeFilters
+MethodInvocation:match
+MethodInvocation:includeFilters
+MethodInvocation:decision
+MethodInvocation:includeFilters
+MethodInvocation:excludeFilters
+MethodInvocation:match
+MethodInvocation:excludeFilters
+MethodInvocation:decision
+MethodInvocation:getKey
+MethodInvocation:excludeFilters
+Method-name:shouldClusterFilter
+Method-returnType:Decision
+Method-parameters:[DiscoveryNode node, RoutingAllocation allocation]
+MethodInvocation:match
+MethodInvocation:decision
+MethodInvocation:match
+MethodInvocation:decision
+MethodInvocation:match
+MethodInvocation:decision
+Method-name:setClusterRequireFilters
+Method-returnType:void
+Method-parameters:[Map<String,String> filters]
+MethodInvocation:buildFromKeyValue
+Method-name:setClusterIncludeFilters
+Method-returnType:void
+Method-parameters:[Map<String,String> filters]
+MethodInvocation:buildFromKeyValue
+Method-name:setClusterExcludeFilters
+Method-returnType:void
+Method-parameters:[Map<String,String> filters]
+MethodInvocation:buildFromKeyValue

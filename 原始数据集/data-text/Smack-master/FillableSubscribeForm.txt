@@ -1,0 +1,43 @@
+Class:FillableSubscribeForm
+Method-name:FillableSubscribeForm
+Method-returnType:null
+Method-parameters:[DataForm dataForm]
+Method-name:setDeliverOn
+Method-returnType:void
+Method-parameters:[boolean deliverNotifications]
+MethodInvocation:writeBoolean
+MethodInvocation:getFieldName
+Method-name:setDigestOn
+Method-returnType:void
+Method-parameters:[boolean digestOn]
+MethodInvocation:writeBoolean
+MethodInvocation:getFieldName
+Method-name:setDigestFrequency
+Method-returnType:void
+Method-parameters:[int frequency]
+MethodInvocation:write
+MethodInvocation:getFieldName
+Method-name:setExpiry
+Method-returnType:void
+Method-parameters:[Date expire]
+MethodInvocation:write
+MethodInvocation:getFieldName
+Method-name:setIncludeBody
+Method-returnType:void
+Method-parameters:[boolean include]
+MethodInvocation:writeBoolean
+MethodInvocation:getFieldName
+Method-name:setShowValues
+Method-returnType:void
+Method-parameters:[Collection<PresenceState> stateValues]
+MethodInvocation:listMultiBuilder
+MethodInvocation:getFieldName
+MethodInvocation:addValue
+MethodInvocation:toString
+MethodInvocation:write
+MethodInvocation:build
+Method-name:subscribe
+Method-returnType:Subscription
+Method-parameters:[String jidString, Node node]
+MethodInvocation:from
+MethodInvocation:subscribe

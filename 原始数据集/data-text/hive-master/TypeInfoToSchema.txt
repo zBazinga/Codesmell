@@ -1,0 +1,105 @@
+Class:TypeInfoToSchema
+Field:recordCounter
+Method-name:convert
+Method-returnType:Schema
+Method-parameters:[List<String> columnNames, List<TypeInfo> columnTypes, List<String> columnComments, String namespace, String name, String doc]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:createAvroField
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:addAll
+MethodInvocation:getFields
+MethodInvocation:isEmpty
+MethodInvocation:createRecord
+MethodInvocation:setFields
+Method-name:createAvroField
+Method-returnType:Schema.Field
+Method-parameters:[String name, TypeInfo typeInfo, String comment]
+MethodInvocation:createAvroSchema
+Method-name:createAvroSchema
+Method-returnType:Schema
+Method-parameters:[TypeInfo typeInfo]
+MethodInvocation:getCategory
+MethodInvocation:createAvroPrimitive
+MethodInvocation:createAvroArray
+MethodInvocation:createAvroMap
+MethodInvocation:createAvroRecord
+MethodInvocation:createAvroUnion
+MethodInvocation:wrapInUnionWithNull
+Method-name:createAvroUnion
+Method-returnType:Schema
+Method-parameters:[TypeInfo typeInfo]
+MethodInvocation:getAllUnionObjectTypeInfos
+MethodInvocation:createAvroSchema
+MethodInvocation:getType
+MethodInvocation:addAll
+MethodInvocation:getTypes
+MethodInvocation:add
+MethodInvocation:createUnion
+MethodInvocation:removeDuplicateNullSchemas
+Method-name:createAvroRecord
+Method-returnType:Schema
+Method-parameters:[TypeInfo typeInfo]
+MethodInvocation:getAllStructFieldNames
+MethodInvocation:getAllStructFieldTypeInfos
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:createAvroField
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:getFields
+MethodInvocation:addAll
+MethodInvocation:createRecord
+MethodInvocation:toString
+MethodInvocation:setFields
+Method-name:createAvroMap
+Method-returnType:Schema
+Method-parameters:[TypeInfo typeInfo]
+MethodInvocation:getMapKeyTypeInfo
+MethodInvocation:getPrimitiveCategory
+MethodInvocation:getMapValueTypeInfo
+MethodInvocation:createAvroSchema
+MethodInvocation:createMap
+Method-name:createAvroArray
+Method-returnType:Schema
+Method-parameters:[TypeInfo typeInfo]
+MethodInvocation:createAvroSchema
+MethodInvocation:getListElementTypeInfo
+MethodInvocation:createArray
+Method-name:getFields
+Method-returnType:List<Schema.Field>
+Method-parameters:[Schema.Field schemaField]
+MethodInvocation:nullNode
+MethodInvocation:getType
+MethodInvocation:schema
+MethodInvocation:getFields
+MethodInvocation:schema
+MethodInvocation:add
+MethodInvocation:name
+MethodInvocation:schema
+MethodInvocation:doc
+MethodInvocation:add
+MethodInvocation:name
+MethodInvocation:schema
+MethodInvocation:doc
+Method-name:wrapInUnionWithNull
+Method-returnType:Schema
+Method-parameters:[Schema schema]
+MethodInvocation:getType
+MethodInvocation:removeDuplicateNullSchemas
+MethodInvocation:getTypes
+MethodInvocation:createUnion
+MethodInvocation:createUnion
+MethodInvocation:asList
+MethodInvocation:create
+Method-name:removeDuplicateNullSchemas
+Method-returnType:List<Schema>
+Method-parameters:[List<Schema> childSchemas]
+MethodInvocation:getType
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:create

@@ -1,0 +1,488 @@
+Class:ASTBuilderVisitor
+Field:scopeHelper
+Class:ScopeHelper
+Field:stack
+Method-name:ScopeHelper
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:stack
+MethodInvocation:push
+FieldAccess:stack
+Method-name:addTypes
+Method-returnType:void
+Method-parameters:[Map<String,Type> inputTypes]
+MethodInvocation:putAll
+MethodInvocation:peek
+Method-name:addType
+Method-returnType:void
+Method-parameters:[String name, Type type]
+MethodInvocation:put
+MethodInvocation:peek
+Method-name:pushScope
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:push
+Method-name:popScope
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:pop
+Method-name:resolveType
+Method-returnType:Optional<Type>
+Method-parameters:[String name]
+MethodInvocation:findFirst
+MethodInvocation:flatMap
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:ofNullable
+MethodInvocation:get
+MethodInvocation:isPresent
+MethodInvocation:of
+MethodInvocation:get
+MethodInvocation:empty
+Method-name:ASTBuilderVisitor
+Method-returnType:null
+Method-parameters:[Map<String,Type> inputTypes]
+FieldAccess:scopeHelper
+MethodInvocation:addTypes
+FieldAccess:scopeHelper
+Method-name:visitNumberLiteral
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.NumberLiteralContext ctx]
+MethodInvocation:newNumberNode
+Method-name:visitBoolLiteral
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.BoolLiteralContext ctx]
+MethodInvocation:newBooleanNode
+Method-name:visitSignedUnaryExpressionPlus
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.SignedUnaryExpressionPlusContext ctx]
+MethodInvocation:visit
+MethodInvocation:unaryExpressionNotPlusMinus
+MethodInvocation:newSignedUnaryNode
+Method-name:visitSignedUnaryExpressionMinus
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.SignedUnaryExpressionMinusContext ctx]
+MethodInvocation:visit
+MethodInvocation:unaryExpression
+MethodInvocation:newSignedUnaryNode
+Method-name:visitNullLiteral
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.NullLiteralContext ctx]
+MethodInvocation:newNullNode
+Method-name:visitStringLiteral
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.StringLiteralContext ctx]
+MethodInvocation:newStringNode
+Method-name:visitPrimaryParens
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.PrimaryParensContext ctx]
+MethodInvocation:visit
+MethodInvocation:expression
+Method-name:visitPowExpression
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.PowExpressionContext ctx]
+MethodInvocation:visit
+MethodInvocation:powerExpression
+MethodInvocation:visit
+MethodInvocation:filterPathExpression
+MethodInvocation:getText
+MethodInvocation:newInfixOpNode
+Method-name:visitMultExpression
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.MultExpressionContext ctx]
+MethodInvocation:visit
+MethodInvocation:multiplicativeExpression
+MethodInvocation:visit
+MethodInvocation:powerExpression
+MethodInvocation:getText
+MethodInvocation:newInfixOpNode
+Method-name:visitAddExpression
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.AddExpressionContext ctx]
+MethodInvocation:visit
+MethodInvocation:additiveExpression
+MethodInvocation:visit
+MethodInvocation:multiplicativeExpression
+MethodInvocation:getText
+MethodInvocation:newInfixOpNode
+Method-name:visitRelExpressionBetween
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.RelExpressionBetweenContext ctx]
+MethodInvocation:visit
+MethodInvocation:visit
+MethodInvocation:visit
+MethodInvocation:newBetweenNode
+Method-name:visitExpressionList
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.ExpressionListContext ctx]
+MethodInvocation:getChildCount
+MethodInvocation:getChild
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:getChild
+MethodInvocation:newListNode
+Method-name:visitInterval
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.IntervalContext ctx]
+MethodInvocation:visit
+MethodInvocation:visit
+MethodInvocation:equals
+MethodInvocation:getText
+MethodInvocation:equals
+MethodInvocation:getText
+MethodInvocation:newIntervalNode
+Method-name:visitPositiveUnaryTestIneq
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.PositiveUnaryTestIneqContext ctx]
+MethodInvocation:visit
+MethodInvocation:endpoint
+MethodInvocation:getText
+MethodInvocation:newUnaryTestNode
+Method-name:visitPositiveUnaryTests
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.PositiveUnaryTestsContext ctx]
+MethodInvocation:getChildCount
+MethodInvocation:getChild
+MethodInvocation:getChild
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:getChild
+MethodInvocation:newListNode
+Method-name:visitRelExpressionTestList
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.RelExpressionTestListContext ctx]
+MethodInvocation:visit
+MethodInvocation:visit
+MethodInvocation:positiveUnaryTests
+MethodInvocation:newInNode
+Method-name:visitRelExpressionValue
+Method-returnType:BaseNode
+Method-parameters:[RelExpressionValueContext ctx]
+MethodInvocation:visit
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:newInNode
+Method-name:visitPositiveUnaryTestDash
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.PositiveUnaryTestDashContext ctx]
+MethodInvocation:newDashNode
+Method-name:visitCompExpression
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.CompExpressionContext ctx]
+MethodInvocation:visit
+MethodInvocation:visit
+MethodInvocation:newInfixOpNode
+MethodInvocation:getText
+Method-name:visitCondOr
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.CondOrContext ctx]
+MethodInvocation:visit
+MethodInvocation:visit
+MethodInvocation:newInfixOpNode
+MethodInvocation:getText
+Method-name:visitCondAnd
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.CondAndContext ctx]
+MethodInvocation:visit
+MethodInvocation:visit
+MethodInvocation:newInfixOpNode
+MethodInvocation:getText
+Method-name:visitList
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.ListContext ctx]
+MethodInvocation:expressionList
+MethodInvocation:newListNode
+MethodInvocation:visit
+MethodInvocation:expressionList
+Method-name:visitNameDefinition
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.NameDefinitionContext ctx]
+MethodInvocation:getChildCount
+MethodInvocation:visit
+MethodInvocation:getChild
+MethodInvocation:getAllTokens
+MethodInvocation:add
+MethodInvocation:getText
+MethodInvocation:newNameDefNode
+Method-name:visitIterationNameDefinition
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.IterationNameDefinitionContext ctx]
+MethodInvocation:getChildCount
+MethodInvocation:visit
+MethodInvocation:getChild
+MethodInvocation:getAllTokens
+MethodInvocation:add
+MethodInvocation:getText
+MethodInvocation:newNameDefNode
+Method-name:visitKeyString
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.KeyStringContext ctx]
+MethodInvocation:newStringNode
+Method-name:visitKeyName
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.KeyNameContext ctx]
+MethodInvocation:visit
+MethodInvocation:nameDefinition
+Method-name:visitContextEntry
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.ContextEntryContext ctx]
+MethodInvocation:key
+MethodInvocation:expression
+MethodInvocation:visit
+MethodInvocation:visit
+MethodInvocation:newContextEntry
+Method-name:visitContextEntries
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.ContextEntriesContext ctx]
+MethodInvocation:pushScope
+MethodInvocation:contextEntry
+MethodInvocation:visit
+MethodInvocation:add
+MethodInvocation:addType
+MethodInvocation:getText
+MethodInvocation:getName
+MethodInvocation:getResultType
+MethodInvocation:popScope
+MethodInvocation:newListNode
+Method-name:visitContext
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.ContextContext ctx]
+MethodInvocation:contextEntries
+MethodInvocation:visit
+MethodInvocation:contextEntries
+MethodInvocation:newListNode
+MethodInvocation:newContextNode
+Method-name:visitFormalParameters
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.FormalParametersContext ctx]
+MethodInvocation:formalParameter
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:newListNode
+Method-name:visitFormalParameter
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.FormalParameterContext ctx]
+MethodInvocation:visit
+MethodInvocation:nameDefinition
+Method-name:visitFunctionDefinition
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.FunctionDefinitionContext ctx]
+MethodInvocation:formalParameters
+MethodInvocation:visit
+MethodInvocation:formalParameters
+MethodInvocation:visit
+MethodInvocation:newFunctionDefinition
+Method-name:visitIterationContext
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.IterationContextContext ctx]
+MethodInvocation:visit
+MethodInvocation:iterationNameDefinition
+MethodInvocation:visit
+MethodInvocation:get
+MethodInvocation:expression
+MethodInvocation:size
+MethodInvocation:expression
+MethodInvocation:newIterationContextNode
+MethodInvocation:visit
+MethodInvocation:get
+MethodInvocation:expression
+MethodInvocation:newIterationContextNode
+Method-name:visitIterationContexts
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.IterationContextsContext ctx]
+MethodInvocation:iterationContext
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:newListNode
+Method-name:visitForExpression
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.ForExpressionContext ctx]
+MethodInvocation:visit
+MethodInvocation:iterationContexts
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:newForExpression
+Method-name:visitQualifiedName
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.QualifiedNameContext ctx]
+MethodInvocation:nameRef
+MethodInvocation:getOriginalText
+MethodInvocation:orElse
+MethodInvocation:resolveType
+MethodInvocation:get
+MethodInvocation:getFields
+MethodInvocation:add
+MethodInvocation:newNameRefNode
+MethodInvocation:size
+MethodInvocation:newQualifiedNameNode
+MethodInvocation:get
+Method-name:visitIfExpression
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.IfExpressionContext ctx]
+MethodInvocation:visit
+MethodInvocation:visit
+MethodInvocation:visit
+MethodInvocation:newIfExpression
+Method-name:visitQuantExprSome
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.QuantExprSomeContext ctx]
+MethodInvocation:visit
+MethodInvocation:iterationContexts
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:newQuantifiedExpression
+Method-name:visitQuantExprEvery
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.QuantExprEveryContext ctx]
+MethodInvocation:visit
+MethodInvocation:iterationContexts
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:newQuantifiedExpression
+Method-name:visitNameRef
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.NameRefContext ctx]
+MethodInvocation:newNameRefNode
+Method-name:visitPositionalParameters
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.PositionalParametersContext ctx]
+MethodInvocation:expression
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:newListNode
+Method-name:visitNamedParameter
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.NamedParameterContext ctx]
+MethodInvocation:visit
+MethodInvocation:visit
+MethodInvocation:newNamedParameterNode
+Method-name:visitNamedParameters
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.NamedParametersContext ctx]
+MethodInvocation:namedParameter
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:newListNode
+Method-name:visitParametersEmpty
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.ParametersEmptyContext ctx]
+MethodInvocation:newListNode
+Method-name:visitParametersNamed
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.ParametersNamedContext ctx]
+MethodInvocation:visit
+MethodInvocation:namedParameters
+Method-name:visitParametersPositional
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.ParametersPositionalContext ctx]
+MethodInvocation:visit
+MethodInvocation:positionalParameters
+Method-name:visitPrimaryName
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.PrimaryNameContext ctx]
+MethodInvocation:visit
+MethodInvocation:qualifiedName
+MethodInvocation:parameters
+MethodInvocation:visit
+MethodInvocation:parameters
+MethodInvocation:buildFunctionCall
+Method-name:buildFunctionCall
+Method-returnType:BaseNode
+Method-parameters:[ParserRuleContext ctx, BaseNode name, ListNode params]
+MethodInvocation:getFunctionName
+MethodInvocation:newFunctionInvocationNode
+Method-name:visitUnaryTestsRoot
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.UnaryTestsRootContext ctx]
+MethodInvocation:visit
+MethodInvocation:unaryTests
+Method-name:visitUnaryTests_empty
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.UnaryTests_emptyContext ctx]
+MethodInvocation:newUnaryTestListNode
+MethodInvocation:singletonList
+MethodInvocation:newDashNode
+Method-name:visitUnaryTests_positive
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.UnaryTests_positiveContext ctx]
+MethodInvocation:visit
+MethodInvocation:positiveUnaryTests
+MethodInvocation:newUnaryTestListNode
+MethodInvocation:getElements
+Method-name:visitUnaryTests_negated
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.UnaryTests_negatedContext ctx]
+MethodInvocation:newNameRefNode
+MethodInvocation:visit
+MethodInvocation:positiveUnaryTests
+MethodInvocation:newUnaryTestListNode
+MethodInvocation:getElements
+Method-name:buildNotCall
+Method-returnType:BaseNode
+Method-parameters:[ParserRuleContext ctx, BaseNode name, ListNode params]
+MethodInvocation:size
+MethodInvocation:getElements
+MethodInvocation:get
+MethodInvocation:getElements
+MethodInvocation:newUnaryTestNode
+MethodInvocation:newFunctionInvocationNode
+MethodInvocation:newFunctionInvocationNode
+MethodInvocation:newFunctionInvocationNode
+MethodInvocation:newFunctionInvocationNode
+MethodInvocation:newFunctionInvocationNode
+MethodInvocation:newFunctionInvocationNode
+MethodInvocation:isBoolean
+MethodInvocation:newFunctionInvocationNode
+MethodInvocation:newFunctionInvocationNode
+MethodInvocation:newUnaryTestNode
+MethodInvocation:newUnaryTestNode
+MethodInvocation:newUnaryTestNode
+MethodInvocation:newUnaryTestNode
+Method-name:visitType
+Method-returnType:TypeNode
+Method-parameters:[FEEL_1_1Parser.TypeContext ctx]
+MethodInvocation:newTypeNode
+Method-name:visitRelExpressionInstanceOf
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.RelExpressionInstanceOfContext ctx]
+MethodInvocation:visit
+MethodInvocation:visit
+MethodInvocation:type
+MethodInvocation:newInstanceOfNode
+Method-name:visitFilterPathExpression
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.FilterPathExpressionContext ctx]
+MethodInvocation:visit
+MethodInvocation:filterPathExpression
+MethodInvocation:visit
+MethodInvocation:newFilterExpressionNode
+MethodInvocation:qualifiedName
+MethodInvocation:visit
+MethodInvocation:filterPathExpression
+MethodInvocation:visit
+MethodInvocation:qualifiedName
+MethodInvocation:newPathExpressionNode
+MethodInvocation:visit
+MethodInvocation:unaryExpression
+Method-name:visitExpressionTextual
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.ExpressionTextualContext ctx]
+MethodInvocation:visit
+Method-name:visitUenpmPrimary
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.UenpmPrimaryContext ctx]
+MethodInvocation:visit
+MethodInvocation:primary
+MethodInvocation:qualifiedName
+MethodInvocation:visit
+MethodInvocation:qualifiedName
+MethodInvocation:newPathExpressionNode
+MethodInvocation:parameters
+MethodInvocation:visit
+MethodInvocation:parameters
+MethodInvocation:buildFunctionCall
+Method-name:visitCompilation_unit
+Method-returnType:BaseNode
+Method-parameters:[FEEL_1_1Parser.Compilation_unitContext ctx]
+MethodInvocation:visit
+MethodInvocation:expression

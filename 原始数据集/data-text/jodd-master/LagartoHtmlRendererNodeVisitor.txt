@@ -1,0 +1,117 @@
+Class:LagartoHtmlRendererNodeVisitor
+Field:appendable
+Method-name:LagartoHtmlRendererNodeVisitor
+Method-returnType:null
+Method-parameters:[final Appendable appendable]
+FieldAccess:appendable
+Method-name:cdata
+Method-returnType:void
+Method-parameters:[final CData cdata]
+MethodInvocation:getNodeValue
+MethodInvocation:writeCData
+Method-name:comment
+Method-returnType:void
+Method-parameters:[final Comment comment]
+MethodInvocation:getNodeValue
+MethodInvocation:writeComment
+Method-name:document
+Method-returnType:void
+Method-parameters:[final Document document]
+MethodInvocation:visitChildren
+Method-name:documentType
+Method-returnType:void
+Method-parameters:[final DocumentType documentType]
+MethodInvocation:writeDoctype
+Method-name:text
+Method-returnType:void
+Method-parameters:[final Text text]
+MethodInvocation:getTextValue
+MethodInvocation:append
+Method-name:xmlDeclaration
+Method-returnType:void
+Method-parameters:[final XmlDeclaration xmlDeclaration]
+MethodInvocation:writeXml
+MethodInvocation:getVersion
+MethodInvocation:getEncoding
+MethodInvocation:getStandalone
+Field:Case
+Field:tagCase
+Field:attributeCase
+Method-name:setTagCase
+Method-returnType:void
+Method-parameters:[final Case tagCase]
+FieldAccess:tagCase
+Method-name:getTagCase
+Method-returnType:Case
+Method-parameters:[]
+Method-name:setAttributeCase
+Method-returnType:void
+Method-parameters:[final Case attributeCase]
+FieldAccess:attributeCase
+Method-name:getAttributeCase
+Method-returnType:Case
+Method-parameters:[]
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+Method-name:resolveNodeName
+Method-returnType:String
+Method-parameters:[final Node node]
+MethodInvocation:getNodeName
+MethodInvocation:getNodeRawName
+MethodInvocation:toLowerCase
+MethodInvocation:getNodeRawName
+MethodInvocation:toUpperCase
+MethodInvocation:getNodeRawName
+Method-name:resolveAttributeName
+Method-returnType:String
+Method-parameters:[final Node node, final Attribute attribute]
+MethodInvocation:getName
+MethodInvocation:getRawName
+MethodInvocation:toLowerCase
+MethodInvocation:getRawName
+MethodInvocation:toUpperCase
+MethodInvocation:getRawName
+Method-name:renderAttribute
+Method-returnType:void
+Method-parameters:[final Node node, final Attribute attribute, final Appendable appendable]
+MethodInvocation:resolveAttributeName
+MethodInvocation:getValue
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:attributeDoubleQuoted
+MethodInvocation:append
+Method-name:element
+Method-returnType:void
+Method-parameters:[final Element element]
+MethodInvocation:_element
+Method-name:_element
+Method-returnType:void
+Method-parameters:[final Element element]
+MethodInvocation:resolveNodeName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getAttributesCount
+MethodInvocation:getAttribute
+MethodInvocation:append
+MethodInvocation:renderAttribute
+MethodInvocation:getChildNodesCount
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:elementBody
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+Method-name:elementBody
+Method-returnType:void
+Method-parameters:[final Element element]
+MethodInvocation:getChildNodesCount
+MethodInvocation:isRawTag
+MethodInvocation:getChild
+MethodInvocation:getNodeType
+MethodInvocation:append
+MethodInvocation:getNodeValue
+MethodInvocation:visit
+MethodInvocation:visitChildren

@@ -1,0 +1,26 @@
+Class:JAXRSObjectParamTypeSchema
+Method-name:testFlattenObjectParam
+Method-returnType:FlattenObjectResponse
+Method-parameters:[FlattenObjectRequest request]
+MethodInvocation:convertValue
+MethodInvocation:getRestObjectMapper
+Method-name:testFluentSetterFlattenObjectParam
+Method-returnType:FluentSetterFlattenObjectResponse
+Method-parameters:[FluentSetterFlattenObjectRequest request]
+MethodInvocation:convertValue
+MethodInvocation:getRestObjectMapper
+Method-name:testMultiLayerObjectParam
+Method-returnType:MultiLayerObjectParam
+Method-parameters:[MultiLayerObjectParam request]
+Method-name:testRecursiveObjectParam
+Method-returnType:RecursiveObjectParam
+Method-parameters:[RecursiveObjectParam request]
+Method-name:testListObjectParam
+Method-returnType:List<GenericObjectParam<List<RecursiveObjectParam>>>
+Method-parameters:[List<GenericObjectParam<List<RecursiveObjectParam>>> request]
+Method-name:testMapObjectParam
+Method-returnType:Map<String,GenericObjectParam<Map<String,GenericObjectParam<RecursiveObjectParam>>>>
+Method-parameters:[Map<String,GenericObjectParam<Map<String,GenericObjectParam<RecursiveObjectParam>>>> request]
+Method-name:testFluentSetterBeanParamRequest
+Method-returnType:FluentSetterBeanParamRequest
+Method-parameters:[@BeanParam FluentSetterBeanParamRequest request]

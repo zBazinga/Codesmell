@@ -1,0 +1,34 @@
+Class:MonitoringBulkRequest
+Field:docs
+Method-name:MonitoringBulkRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:MonitoringBulkRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:addAll
+MethodInvocation:readList
+Method-name:getDocs
+Method-returnType:Collection<MonitoringBulkDoc>
+Method-parameters:[]
+MethodInvocation:unmodifiableCollection
+FieldAccess:docs
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:addValidationError
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getSource
+MethodInvocation:length
+MethodInvocation:getSource
+MethodInvocation:addValidationError
+Method-name:add
+Method-returnType:MonitoringBulkRequest
+Method-parameters:[MonitoringBulkDoc doc]
+MethodInvocation:add
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeList

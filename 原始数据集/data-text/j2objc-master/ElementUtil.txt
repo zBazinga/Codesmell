@@ -1,0 +1,612 @@
+Class:ElementUtil
+Field:ACC_BRIDGE
+Field:ACC_VARARGS
+Field:ACC_SYNTHETIC
+Field:ACC_ANNOTATION
+Field:ACC_ENUM
+Field:ACC_ANONYMOUS
+Field:ACC_FLAG_MASK
+Field:VISIBILITY_MODIFIERS
+MethodInvocation:of
+Field:LAZY_INIT
+Field:NULLABLE_PATTERN
+MethodInvocation:compile
+Field:NONNULL_PATTERN
+MethodInvocation:compile
+Field:javacElements
+Field:elementTypeMap
+Method-name:ElementUtil
+Method-returnType:null
+Method-parameters:[Elements javacElements]
+FieldAccess:javacElements
+Method-name:getName
+Method-returnType:String
+Method-parameters:[Element element]
+MethodInvocation:getKind
+MethodInvocation:getQualifiedName
+MethodInvocation:getSimpleName
+MethodInvocation:toString
+Method-name:getQualifiedName
+Method-returnType:String
+Method-parameters:[TypeElement element]
+MethodInvocation:toString
+MethodInvocation:getQualifiedName
+Method-name:isNamed
+Method-returnType:boolean
+Method-parameters:[Element element, String name]
+MethodInvocation:contentEquals
+MethodInvocation:getSimpleName
+Method-name:isStatic
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:hasModifier
+Method-name:isDefault
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:valueOf
+MethodInvocation:hasModifier
+Method-name:isFinal
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:hasModifier
+Method-name:isPublic
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:hasModifier
+Method-name:isPrivate
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:hasModifier
+Method-name:isVolatile
+Method-returnType:boolean
+Method-parameters:[VariableElement element]
+MethodInvocation:hasModifier
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:asType
+MethodInvocation:hasQualifiedNamedAnnotation
+Method-name:isTopLevel
+Method-returnType:boolean
+Method-parameters:[TypeElement type]
+MethodInvocation:getNestingKind
+Method-name:isAnonymous
+Method-returnType:boolean
+Method-parameters:[TypeElement type]
+MethodInvocation:getNestingKind
+Method-name:isLocal
+Method-returnType:boolean
+Method-parameters:[TypeElement type]
+MethodInvocation:getNestingKind
+Method-name:isLambda
+Method-returnType:boolean
+Method-parameters:[TypeElement type]
+Method-name:isInterface
+Method-returnType:boolean
+Method-parameters:[Element type]
+MethodInvocation:getKind
+Method-name:isAnnotationType
+Method-returnType:boolean
+Method-parameters:[Element type]
+MethodInvocation:getKind
+Method-name:isEnum
+Method-returnType:boolean
+Method-parameters:[Element e]
+MethodInvocation:getKind
+Method-name:isEnumConstant
+Method-returnType:boolean
+Method-parameters:[Element e]
+MethodInvocation:getKind
+Method-name:isPackage
+Method-returnType:boolean
+Method-parameters:[Element e]
+MethodInvocation:getKind
+Method-name:isTypeElement
+Method-returnType:boolean
+Method-parameters:[Element e]
+MethodInvocation:getKind
+MethodInvocation:isClass
+MethodInvocation:isInterface
+Method-name:isExecutableElement
+Method-returnType:boolean
+Method-parameters:[Element e]
+MethodInvocation:getKind
+Method-name:isTypeParameterElement
+Method-returnType:boolean
+Method-parameters:[Element e]
+MethodInvocation:getKind
+Method-name:isAnnotationMember
+Method-returnType:boolean
+Method-parameters:[ExecutableElement e]
+MethodInvocation:isAnnotationType
+MethodInvocation:getDeclaringClass
+Method-name:getDeclaringClass
+Method-returnType:TypeElement
+Method-parameters:[Element element]
+MethodInvocation:getEnclosingElement
+MethodInvocation:isTypeElement
+Method-name:getSuperclass
+Method-returnType:TypeElement
+Method-parameters:[TypeElement element]
+MethodInvocation:asTypeElement
+MethodInvocation:getSuperclass
+Method-name:getInterfaces
+Method-returnType:List<TypeElement>
+Method-parameters:[TypeElement element]
+MethodInvocation:newArrayList
+MethodInvocation:transform
+MethodInvocation:getInterfaces
+MethodInvocation:asTypeElement
+Method-name:isPrimitiveConstant
+Method-returnType:boolean
+Method-parameters:[VariableElement element]
+MethodInvocation:isFinal
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:asType
+MethodInvocation:getConstantValue
+MethodInvocation:isField
+MethodInvocation:getKind
+Method-name:isConstant
+Method-returnType:boolean
+Method-parameters:[VariableElement element]
+MethodInvocation:getConstantValue
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:asType
+MethodInvocation:hasValidCppCharacters
+Method-name:isStringConstant
+Method-returnType:boolean
+Method-parameters:[VariableElement element]
+MethodInvocation:getConstantValue
+MethodInvocation:hasValidCppCharacters
+Method-name:isGlobalVar
+Method-returnType:boolean
+Method-parameters:[VariableElement element]
+MethodInvocation:isStatic
+MethodInvocation:isPrimitiveConstant
+Method-name:isInstanceVar
+Method-returnType:boolean
+Method-parameters:[VariableElement element]
+MethodInvocation:getKind
+MethodInvocation:isGlobalVar
+Method-name:isNonnull
+Method-returnType:boolean
+Method-parameters:[VariableElement element]
+MethodInvocation:isNonnull
+Method-name:getTypeQualifiers
+Method-returnType:String
+Method-parameters:[VariableElement element]
+MethodInvocation:getTypeQualifiers
+Method-name:isAbstract
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:hasModifier
+Method-name:isNative
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:hasModifier
+Method-name:isSynchronized
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:hasModifier
+Method-name:isSynthetic
+Method-returnType:boolean
+Method-parameters:[int modifiers]
+Method-name:isSynthetic
+Method-returnType:boolean
+Method-parameters:[Element e]
+MethodInvocation:isSynthetic
+MethodInvocation:flags
+Method-name:getHeader
+Method-returnType:String
+Method-parameters:[TypeElement e]
+MethodInvocation:getHeader
+Method-name:isIosType
+Method-returnType:boolean
+Method-parameters:[TypeElement e]
+MethodInvocation:isIosType
+Method-name:getSelector
+Method-returnType:String
+Method-parameters:[ExecutableElement e]
+MethodInvocation:getSelector
+Method-name:isPackageInfo
+Method-returnType:boolean
+Method-parameters:[TypeElement type]
+MethodInvocation:equals
+MethodInvocation:toString
+MethodInvocation:getSimpleName
+Method-name:isPrivateInnerType
+Method-returnType:boolean
+Method-parameters:[TypeElement type]
+MethodInvocation:getNestingKind
+MethodInvocation:isPrivate
+MethodInvocation:isPrivateInnerType
+MethodInvocation:getEnclosingElement
+MethodInvocation:isPrivate
+Method-name:hasOuterContext
+Method-returnType:boolean
+Method-parameters:[TypeElement type]
+MethodInvocation:getNestingKind
+MethodInvocation:isStatic
+MethodInvocation:getEnclosingElement
+MethodInvocation:isStatic
+Method-name:hasModifier
+Method-returnType:boolean
+Method-parameters:[Element element, Modifier modifier]
+MethodInvocation:contains
+MethodInvocation:getModifiers
+Method-name:isVariable
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:getKind
+Method-name:isField
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:getKind
+Method-name:isParameter
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:getKind
+Method-name:isLocalVariable
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:getKind
+Method-name:isMethod
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:getKind
+Method-name:isConstructor
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:getKind
+Method-name:isInstanceMethod
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:isMethod
+MethodInvocation:isStatic
+Method-name:isWeakReference
+Method-returnType:boolean
+Method-parameters:[VariableElement var]
+MethodInvocation:hasNamedAnnotation
+MethodInvocation:hasWeakPropertyAttribute
+MethodInvocation:isWeak
+Method-name:isWeakOuterType
+Method-returnType:boolean
+Method-parameters:[TypeElement type]
+MethodInvocation:isWeakOuter
+MethodInvocation:isAnonymous
+MethodInvocation:getSuperclass
+MethodInvocation:hasNamedAnnotation
+MethodInvocation:getInterfaces
+MethodInvocation:hasNamedAnnotation
+MethodInvocation:containsKey
+MethodInvocation:hasNamedAnnotation
+MethodInvocation:get
+MethodInvocation:hasNamedAnnotation
+MethodInvocation:asType
+MethodInvocation:hasNamedAnnotation
+Method-name:hasWeakPropertyAttribute
+Method-returnType:boolean
+Method-parameters:[VariableElement var]
+MethodInvocation:getAnnotation
+MethodInvocation:contains
+MethodInvocation:parsePropertyAttribute
+Method-name:parsePropertyAttribute
+Method-returnType:Set<String>
+Method-parameters:[AnnotationMirror annotation]
+Method-name:isRetainedWithField
+Method-returnType:boolean
+Method-parameters:[VariableElement varElement]
+MethodInvocation:hasAnnotation
+Method-name:filterEnclosedElements
+Method-returnType:Iterable<T>
+Method-parameters:[Element elem, Class<T> resultClass, ElementKind... kinds]
+MethodInvocation:asList
+MethodInvocation:transform
+MethodInvocation:filter
+MethodInvocation:getEnclosedElements
+MethodInvocation:contains
+MethodInvocation:getKind
+Method-name:getMethods
+Method-returnType:Iterable<ExecutableElement>
+Method-parameters:[TypeElement e]
+MethodInvocation:filterEnclosedElements
+Method-name:getConstructors
+Method-returnType:Iterable<ExecutableElement>
+Method-parameters:[TypeElement e]
+MethodInvocation:filterEnclosedElements
+Method-name:getExecutables
+Method-returnType:List<ExecutableElement>
+Method-parameters:[TypeElement e]
+MethodInvocation:newArrayList
+MethodInvocation:filterEnclosedElements
+Method-name:getDeclaredFields
+Method-returnType:List<VariableElement>
+Method-parameters:[Element e]
+MethodInvocation:newArrayList
+MethodInvocation:filterEnclosedElements
+Method-name:getDeclaredTypes
+Method-returnType:Iterable<TypeElement>
+Method-parameters:[TypeElement e]
+MethodInvocation:filterEnclosedElements
+Method-name:paramsMatch
+Method-returnType:boolean
+Method-parameters:[ExecutableElement method, String[] paramTypes]
+MethodInvocation:getParameters
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:getQualifiedName
+MethodInvocation:asType
+MethodInvocation:get
+Method-name:findMethod
+Method-returnType:ExecutableElement
+Method-parameters:[TypeElement type, String name, String... paramTypes]
+MethodInvocation:getFirst
+MethodInvocation:filter
+MethodInvocation:filterEnclosedElements
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:paramsMatch
+Method-name:findGetterMethod
+Method-returnType:ExecutableElement
+Method-parameters:[String propertyName, TypeMirror propertyType, TypeElement declaringClass, boolean isStatic]
+MethodInvocation:findMethod
+MethodInvocation:isBoolean
+MethodInvocation:findMethod
+MethodInvocation:capitalize
+MethodInvocation:isStatic
+Method-name:findSetterMethod
+Method-returnType:ExecutableElement
+Method-parameters:[String propertyName, TypeMirror type, TypeElement declaringClass, boolean isStatic]
+MethodInvocation:findMethod
+MethodInvocation:capitalize
+MethodInvocation:getQualifiedName
+MethodInvocation:isStatic
+Method-name:findConstructor
+Method-returnType:ExecutableElement
+Method-parameters:[TypeElement type, String... paramTypes]
+MethodInvocation:getFirst
+MethodInvocation:filter
+MethodInvocation:getConstructors
+MethodInvocation:paramsMatch
+Method-name:findField
+Method-returnType:VariableElement
+Method-parameters:[TypeElement type, String name]
+MethodInvocation:getFirst
+MethodInvocation:filter
+MethodInvocation:filterEnclosedElements
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:asTypes
+Method-returnType:Iterable<TypeMirror>
+Method-parameters:[Iterable<? extends Element> elements]
+MethodInvocation:transform
+MethodInvocation:asType
+Method-name:overrides
+Method-returnType:boolean
+Method-parameters:[ExecutableElement overrider, ExecutableElement overridden, TypeElement type]
+MethodInvocation:overrides
+Method-name:getPackage
+Method-returnType:PackageElement
+Method-parameters:[Element e]
+MethodInvocation:isPackage
+MethodInvocation:getEnclosingElement
+Method-name:getPackageName
+Method-returnType:com.google.devtools.j2objc.ast.Name
+Method-parameters:[PackageElement element]
+MethodInvocation:getParentPackage
+MethodInvocation:asType
+MethodInvocation:getPackageName
+Method-name:getParentPackage
+Method-returnType:PackageElement
+Method-parameters:[PackageElement element]
+MethodInvocation:toString
+MethodInvocation:getQualifiedName
+MethodInvocation:isEmpty
+MethodInvocation:contains
+MethodInvocation:substring
+MethodInvocation:lastIndexOf
+MethodInvocation:getMethod
+MethodInvocation:invoke
+MethodInvocation:getMethod
+MethodInvocation:getReturnType
+MethodInvocation:invoke
+MethodInvocation:getPackageElement
+Method-name:getBinaryName
+Method-returnType:String
+Method-parameters:[TypeElement e]
+MethodInvocation:getDeclaringClass
+MethodInvocation:getBinaryName
+MethodInvocation:getName
+MethodInvocation:getQualifiedName
+MethodInvocation:toString
+MethodInvocation:getBinaryName
+Method-name:getElementValuesWithDefaults
+Method-returnType:Map<? extends ExecutableElement,? extends AnnotationValue>
+Method-parameters:[AnnotationMirror annotation]
+MethodInvocation:getAnnotationType
+MethodInvocation:getElementValues
+MethodInvocation:getMethods
+MethodInvocation:asElement
+MethodInvocation:getDefaultValue
+MethodInvocation:containsKey
+MethodInvocation:put
+Method-name:getVisibilityModifiers
+Method-returnType:Set<Modifier>
+Method-parameters:[Element e]
+MethodInvocation:intersection
+MethodInvocation:getModifiers
+Method-name:fromModifierSet
+Method-returnType:int
+Method-parameters:[Set<Modifier> set]
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:contains
+Method-name:isRuntimeAnnotation
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror mirror]
+MethodInvocation:isRuntimeAnnotation
+MethodInvocation:asElement
+MethodInvocation:getAnnotationType
+Method-name:isRuntimeAnnotation
+Method-returnType:boolean
+Method-parameters:[Element e]
+MethodInvocation:isAnnotationType
+MethodInvocation:hasRetentionPolicy
+Method-name:isGeneratedAnnotation
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror mirror]
+MethodInvocation:isGeneratedAnnotation
+MethodInvocation:asElement
+MethodInvocation:getAnnotationType
+Method-name:isGeneratedAnnotation
+Method-returnType:boolean
+Method-parameters:[Element e]
+MethodInvocation:isAnnotationType
+MethodInvocation:hasRetentionPolicy
+Method-name:hasRetentionPolicy
+Method-returnType:boolean
+Method-parameters:[Element e, String policy]
+MethodInvocation:getAllAnnotations
+MethodInvocation:toString
+MethodInvocation:getSimpleName
+MethodInvocation:asElement
+MethodInvocation:getAnnotationType
+MethodInvocation:equals
+MethodInvocation:values
+MethodInvocation:getElementValues
+MethodInvocation:getValue
+MethodInvocation:contentEquals
+MethodInvocation:getSimpleName
+Method-name:getAnnotation
+Method-returnType:AnnotationMirror
+Method-parameters:[Element element, Class<?> annotationClass]
+MethodInvocation:getQualifiedNamedAnnotation
+MethodInvocation:getName
+Method-name:hasAnnotation
+Method-returnType:boolean
+Method-parameters:[Element element, Class<?> annotationClass]
+MethodInvocation:getAnnotation
+Method-name:hasNamedAnnotation
+Method-returnType:boolean
+Method-parameters:[AnnotatedConstruct ac, String name]
+MethodInvocation:getAllAnnotations
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:asElement
+MethodInvocation:getAnnotationType
+Method-name:hasNamedAnnotation
+Method-returnType:boolean
+Method-parameters:[AnnotatedConstruct ac, Pattern pattern]
+MethodInvocation:getAllAnnotations
+MethodInvocation:matches
+MethodInvocation:matcher
+MethodInvocation:getName
+MethodInvocation:asElement
+MethodInvocation:getAnnotationType
+Method-name:hasQualifiedNamedAnnotation
+Method-returnType:boolean
+Method-parameters:[Element element, String name]
+MethodInvocation:getQualifiedNamedAnnotation
+Method-name:getQualifiedNamedAnnotation
+Method-returnType:AnnotationMirror
+Method-parameters:[Element element, String name]
+MethodInvocation:getAllAnnotations
+MethodInvocation:equals
+MethodInvocation:getQualifiedName
+MethodInvocation:asElement
+MethodInvocation:getAnnotationType
+Method-name:getAllAnnotations
+Method-returnType:Iterable<? extends AnnotationMirror>
+Method-parameters:[AnnotatedConstruct ac]
+MethodInvocation:concat
+MethodInvocation:getAnnotationMirrors
+MethodInvocation:get
+Method-name:hasNullableAnnotation
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:hasNullabilityAnnotation
+Method-name:hasNonnullAnnotation
+Method-returnType:boolean
+Method-parameters:[Element element]
+MethodInvocation:hasNullabilityAnnotation
+Method-name:hasNullabilityAnnotation
+Method-returnType:boolean
+Method-parameters:[Element element, Pattern pattern]
+MethodInvocation:isMethod
+MethodInvocation:getKind
+MethodInvocation:getReturnType
+MethodInvocation:isPrimitive
+MethodInvocation:isVariable
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:asType
+MethodInvocation:isMethod
+MethodInvocation:hasNamedAnnotation
+MethodInvocation:getReturnType
+MethodInvocation:isVariable
+MethodInvocation:hasNamedAnnotation
+MethodInvocation:asType
+MethodInvocation:hasNamedAnnotation
+Method-name:getAnnotationValue
+Method-returnType:Object
+Method-parameters:[AnnotationMirror annotation, String name]
+MethodInvocation:entrySet
+MethodInvocation:getElementValues
+MethodInvocation:equals
+MethodInvocation:toString
+MethodInvocation:getSimpleName
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getValue
+Method-name:getSortedAnnotationMembers
+Method-returnType:List<ExecutableElement>
+Method-parameters:[TypeElement annotation]
+MethodInvocation:newArrayList
+MethodInvocation:getMethods
+MethodInvocation:sort
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getName
+Method-name:suppressesWarning
+Method-returnType:boolean
+Method-parameters:[String warning, Element element]
+MethodInvocation:isPackage
+MethodInvocation:getAnnotation
+MethodInvocation:getAnnotationValue
+MethodInvocation:equals
+MethodInvocation:getValue
+MethodInvocation:suppressesWarning
+MethodInvocation:getEnclosingElement
+Method-name:mapElementType
+Method-returnType:void
+Method-parameters:[Element element, TypeMirror type]
+MethodInvocation:put
+Method-name:getType
+Method-returnType:TypeMirror
+Method-parameters:[Element element]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:asType
+Method-name:isNonnull
+Method-returnType:boolean
+Method-parameters:[Element element, boolean parametersNonnullByDefault]
+MethodInvocation:hasNonnullAnnotation
+MethodInvocation:isConstructor
+MethodInvocation:isParameter
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:asType
+Method-name:getSourceFile
+Method-returnType:String
+Method-parameters:[TypeElement type]
+FieldAccess:sourcefile
+MethodInvocation:getName

@@ -1,0 +1,45 @@
+Class:MicroserviceManager
+Field:LOGGER
+MethodInvocation:getLogger
+Field:appManager
+Field:appId
+Field:versionsByName
+Method-name:MicroserviceManager
+Method-returnType:null
+Method-parameters:[AppManager appManager, String appId]
+FieldAccess:appManager
+FieldAccess:appId
+Method-name:getVersionsByName
+Method-returnType:Map<String,MicroserviceVersions>
+Method-parameters:[]
+Method-name:getOrCreateMicroserviceVersions
+Method-returnType:MicroserviceVersions
+Method-parameters:[String microserviceName]
+MethodInvocation:computeIfAbsent
+MethodInvocation:pullInstances
+MethodInvocation:tryRemoveInvalidMicroservice
+Method-name:tryRemoveInvalidMicroservice
+Method-returnType:void
+Method-parameters:[MicroserviceVersions microserviceVersions]
+MethodInvocation:isWaitingDelete
+MethodInvocation:getMicroserviceName
+MethodInvocation:remove
+MethodInvocation:destroy
+MethodInvocation:info
+Method-name:getOrCreateMicroserviceVersionRule
+Method-returnType:MicroserviceVersionRule
+Method-parameters:[String microserviceName, String versionRule]
+MethodInvocation:getOrCreateMicroserviceVersions
+MethodInvocation:getOrCreateMicroserviceVersionRule
+Method-name:pullInstances
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:pullInstances
+MethodInvocation:tryRemoveInvalidMicroservice
+Method-name:onMicroserviceInstanceChanged
+Method-returnType:void
+Method-parameters:[MicroserviceInstanceChangedEvent changedEvent]
+MethodInvocation:values
+MethodInvocation:onMicroserviceInstanceChanged
+MethodInvocation:tryRemoveInvalidMicroservice

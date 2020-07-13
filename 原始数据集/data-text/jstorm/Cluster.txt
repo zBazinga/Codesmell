@@ -1,0 +1,228 @@
+Class:Cluster
+Field:supervisors
+Field:assignments
+Field:status
+Field:hostToId
+Field:blackListedHosts
+Field:inimbus
+Method-name:Cluster
+Method-returnType:null
+Method-parameters:[INimbus nimbus, Map<String,SupervisorDetails> supervisors, Map<String,SchedulerAssignmentImpl> assignments]
+FieldAccess:inimbus
+FieldAccess:supervisors
+MethodInvocation:size
+MethodInvocation:putAll
+FieldAccess:supervisors
+FieldAccess:assignments
+MethodInvocation:size
+MethodInvocation:putAll
+FieldAccess:assignments
+FieldAccess:status
+FieldAccess:hostToId
+MethodInvocation:keySet
+MethodInvocation:get
+MethodInvocation:getHost
+MethodInvocation:containsKey
+FieldAccess:hostToId
+MethodInvocation:put
+FieldAccess:hostToId
+MethodInvocation:add
+MethodInvocation:get
+FieldAccess:hostToId
+Method-name:setBlacklistedHosts
+Method-returnType:void
+Method-parameters:[Set<String> hosts]
+Method-name:getBlacklistedHosts
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:blacklistHost
+Method-returnType:void
+Method-parameters:[String host]
+MethodInvocation:add
+Method-name:isBlackListed
+Method-returnType:boolean
+Method-parameters:[String supervisorId]
+MethodInvocation:contains
+MethodInvocation:getHost
+Method-name:isBlacklistedHost
+Method-returnType:boolean
+Method-parameters:[String host]
+MethodInvocation:contains
+Method-name:getHost
+Method-returnType:String
+Method-parameters:[String supervisorId]
+MethodInvocation:getHostName
+Method-name:needsScheduling
+Method-returnType:boolean
+Method-parameters:[TopologyDetails topology]
+MethodInvocation:getNumWorkers
+MethodInvocation:getAssignedNumWorkers
+MethodInvocation:size
+MethodInvocation:getUnassignedExecutors
+Method-name:getNeedsSchedulingExecutorToComponents
+Method-returnType:Map<ExecutorDetails,String>
+Method-parameters:[TopologyDetails topology]
+MethodInvocation:getExecutors
+MethodInvocation:get
+FieldAccess:assignments
+MethodInvocation:getId
+MethodInvocation:getExecutors
+MethodInvocation:removeAll
+MethodInvocation:selectExecutorToComponent
+Method-name:getNeedsSchedulingComponentToExecutors
+Method-returnType:Map<String,List<ExecutorDetails>>
+Method-parameters:[TopologyDetails topology]
+MethodInvocation:getNeedsSchedulingExecutorToComponents
+MethodInvocation:keySet
+MethodInvocation:get
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:get
+Method-name:getUsedPorts
+Method-returnType:Set<Integer>
+Method-parameters:[SupervisorDetails supervisor]
+MethodInvocation:getAssignments
+MethodInvocation:values
+MethodInvocation:values
+MethodInvocation:getExecutorToSlot
+MethodInvocation:equals
+MethodInvocation:getNodeId
+MethodInvocation:getId
+MethodInvocation:add
+MethodInvocation:getPort
+Method-name:getAvailablePorts
+Method-returnType:Set<Integer>
+Method-parameters:[SupervisorDetails supervisor]
+MethodInvocation:getUsedPorts
+MethodInvocation:addAll
+MethodInvocation:getAssignablePorts
+MethodInvocation:removeAll
+Method-name:getAssignablePorts
+Method-returnType:Set<Integer>
+Method-parameters:[SupervisorDetails supervisor]
+MethodInvocation:isBlackListed
+Method-name:getAvailableSlots
+Method-returnType:List<WorkerSlot>
+Method-parameters:[SupervisorDetails supervisor]
+MethodInvocation:getAvailablePorts
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:getId
+Method-name:getAssignableSlots
+Method-returnType:List<WorkerSlot>
+Method-parameters:[SupervisorDetails supervisor]
+MethodInvocation:getAssignablePorts
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:getId
+Method-name:getUnassignedExecutors
+Method-returnType:Collection<ExecutorDetails>
+Method-parameters:[TopologyDetails topology]
+MethodInvocation:getExecutors
+MethodInvocation:getAssignmentById
+MethodInvocation:getId
+MethodInvocation:getExecutors
+MethodInvocation:removeAll
+Method-name:getAssignedNumWorkers
+Method-returnType:int
+Method-parameters:[TopologyDetails topology]
+MethodInvocation:getAssignmentById
+MethodInvocation:getId
+MethodInvocation:addAll
+MethodInvocation:values
+MethodInvocation:getExecutorToSlot
+MethodInvocation:size
+Method-name:assign
+Method-returnType:void
+Method-parameters:[WorkerSlot slot, String topologyId, Collection<ExecutorDetails> executors]
+MethodInvocation:isSlotOccupied
+MethodInvocation:getNodeId
+MethodInvocation:getPort
+MethodInvocation:getAssignmentById
+MethodInvocation:put
+FieldAccess:assignments
+MethodInvocation:isExecutorAssigned
+MethodInvocation:assign
+Method-name:getAvailableSlots
+Method-returnType:List<WorkerSlot>
+Method-parameters:[]
+MethodInvocation:values
+FieldAccess:supervisors
+MethodInvocation:addAll
+MethodInvocation:getAvailableSlots
+Method-name:getAssignableSlots
+Method-returnType:List<WorkerSlot>
+Method-parameters:[]
+MethodInvocation:values
+FieldAccess:supervisors
+MethodInvocation:addAll
+MethodInvocation:getAssignableSlots
+Method-name:freeSlot
+Method-returnType:void
+Method-parameters:[WorkerSlot slot]
+MethodInvocation:values
+FieldAccess:assignments
+MethodInvocation:isSlotOccupied
+MethodInvocation:unassignBySlot
+Method-name:freeSlots
+Method-returnType:void
+Method-parameters:[Collection<WorkerSlot> slots]
+MethodInvocation:freeSlot
+Method-name:isSlotOccupied
+Method-returnType:boolean
+Method-parameters:[WorkerSlot slot]
+MethodInvocation:values
+FieldAccess:assignments
+MethodInvocation:isSlotOccupied
+Method-name:getAssignmentById
+Method-returnType:SchedulerAssignment
+Method-parameters:[String topologyId]
+MethodInvocation:containsKey
+FieldAccess:assignments
+MethodInvocation:get
+FieldAccess:assignments
+Method-name:getSupervisorById
+Method-returnType:SupervisorDetails
+Method-parameters:[String nodeId]
+MethodInvocation:containsKey
+FieldAccess:supervisors
+MethodInvocation:get
+FieldAccess:supervisors
+Method-name:getUsedSlots
+Method-returnType:Collection<WorkerSlot>
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:addAll
+MethodInvocation:values
+MethodInvocation:getExecutorToSlot
+Method-name:getSupervisorsByHost
+Method-returnType:List<SupervisorDetails>
+Method-parameters:[String host]
+MethodInvocation:get
+FieldAccess:hostToId
+MethodInvocation:add
+MethodInvocation:getSupervisorById
+Method-name:getAssignments
+Method-returnType:Map<String,SchedulerAssignment>
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:assignments
+MethodInvocation:keySet
+FieldAccess:assignments
+MethodInvocation:put
+MethodInvocation:get
+FieldAccess:assignments
+Method-name:getSupervisors
+Method-returnType:Map<String,SupervisorDetails>
+Method-parameters:[]
+FieldAccess:supervisors
+Method-name:setStatus
+Method-returnType:void
+Method-parameters:[String topologyId, String status]
+MethodInvocation:put
+FieldAccess:status
+Method-name:getStatusMap
+Method-returnType:Map<String,String>
+Method-parameters:[]
+FieldAccess:status

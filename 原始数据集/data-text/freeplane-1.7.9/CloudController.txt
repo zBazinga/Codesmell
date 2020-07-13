@@ -1,0 +1,80 @@
+Class:CloudController
+Field:DEF_STROKE
+Field:DEFAULT_WIDTH
+Field:NORMAL_WIDTH
+Field:RESOURCES_CLOUD_COLOR
+Field:RESOURCES_CLOUD_SHAPE
+Method-name:getStandardColor
+Method-returnType:Color
+Method-parameters:[]
+MethodInvocation:getResourceController
+MethodInvocation:getProperty
+MethodInvocation:stringToColor
+Method-name:getStandardShape
+Method-returnType:Shape
+Method-parameters:[]
+MethodInvocation:getResourceController
+MethodInvocation:getEnumProperty
+Method-name:getController
+Method-returnType:CloudController
+Method-parameters:[]
+MethodInvocation:getController
+MethodInvocation:getCurrentModeController
+Method-name:getController
+Method-returnType:CloudController
+Method-parameters:[ModeController modeController]
+MethodInvocation:getExtension
+Method-name:install
+Method-returnType:void
+Method-parameters:[final CloudController cloudController]
+MethodInvocation:addExtension
+MethodInvocation:getCurrentModeController
+Field:cloudHandlers
+Method-name:CloudController
+Method-returnType:null
+Method-parameters:[final ModeController modeController]
+MethodInvocation:addCloudGetter
+Method-name:getProperty
+Method-returnType:CloudModel
+Method-parameters:[final NodeModel node, final CloudModel currentValue]
+MethodInvocation:getStyleCloud
+MethodInvocation:getMap
+MethodInvocation:getStyles
+MethodInvocation:getController
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+MethodInvocation:getReadManager
+MethodInvocation:getWriteManager
+MethodInvocation:registerBy
+Method-name:getStyleCloud
+Method-returnType:CloudModel
+Method-parameters:[final MapModel map, final Collection<IStyle> collection]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+Method-name:addCloudGetter
+Method-returnType:IPropertyHandler<CloudModel,NodeModel>
+Method-parameters:[final Integer key, final IPropertyHandler<CloudModel,NodeModel> getter]
+MethodInvocation:addGetter
+Method-name:getColor
+Method-returnType:Color
+Method-parameters:[final NodeModel node]
+MethodInvocation:getCloud
+MethodInvocation:getColor
+Method-name:getWidth
+Method-returnType:int
+Method-parameters:[final NodeModel node]
+Method-name:removeCloudGetter
+Method-returnType:IPropertyHandler<CloudModel,NodeModel>
+Method-parameters:[final Integer key]
+MethodInvocation:removeGetter
+Method-name:getCloud
+Method-returnType:CloudModel
+Method-parameters:[final NodeModel model]
+MethodInvocation:getProperty
+Method-name:getShape
+Method-returnType:Shape
+Method-parameters:[NodeModel node]
+MethodInvocation:getCloud
+MethodInvocation:getShape
+MethodInvocation:getStandardShape

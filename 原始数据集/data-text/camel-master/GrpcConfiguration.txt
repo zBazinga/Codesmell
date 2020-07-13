@@ -1,0 +1,208 @@
+Class:GrpcConfiguration
+Field:host
+Field:port
+Field:service
+Field:method
+Field:negotiationType
+Field:authenticationType
+Field:jwtAlgorithm
+Field:jwtSecret
+Field:jwtIssuer
+Field:jwtSubject
+Field:serviceAccountResource
+Field:keyCertChainResource
+Field:keyResource
+Field:keyPassword
+Field:trustCertCollectionResource
+Field:producerStrategy
+Field:streamRepliesTo
+Field:userAgent
+Field:consumerStrategy
+Field:forwardOnCompleted
+Field:forwardOnError
+Field:flowControlWindow
+Field:maxMessageSize
+Field:maxConcurrentCallsPerConnection
+Method-name:getService
+Method-returnType:String
+Method-parameters:[]
+Method-name:setService
+Method-returnType:void
+Method-parameters:[String service]
+FieldAccess:service
+Method-name:getMethod
+Method-returnType:String
+Method-parameters:[]
+Method-name:setMethod
+Method-returnType:void
+Method-parameters:[String method]
+FieldAccess:method
+Method-name:getHost
+Method-returnType:String
+Method-parameters:[]
+Method-name:setHost
+Method-returnType:void
+Method-parameters:[String host]
+FieldAccess:host
+Method-name:getPort
+Method-returnType:int
+Method-parameters:[]
+Method-name:setPort
+Method-returnType:void
+Method-parameters:[int port]
+FieldAccess:port
+Method-name:setNegotiationType
+Method-returnType:void
+Method-parameters:[NegotiationType negotiationType]
+FieldAccess:negotiationType
+Method-name:getNegotiationType
+Method-returnType:NegotiationType
+Method-parameters:[]
+Method-name:getAuthenticationType
+Method-returnType:GrpcAuthType
+Method-parameters:[]
+Method-name:setAuthenticationType
+Method-returnType:void
+Method-parameters:[GrpcAuthType authenticationType]
+FieldAccess:authenticationType
+Method-name:getJwtAlgorithm
+Method-returnType:JwtAlgorithm
+Method-parameters:[]
+Method-name:setJwtAlgorithm
+Method-returnType:void
+Method-parameters:[JwtAlgorithm jwtAlgorithm]
+FieldAccess:jwtAlgorithm
+Method-name:getJwtSecret
+Method-returnType:String
+Method-parameters:[]
+Method-name:setJwtSecret
+Method-returnType:void
+Method-parameters:[String jwtSecret]
+FieldAccess:jwtSecret
+Method-name:getJwtIssuer
+Method-returnType:String
+Method-parameters:[]
+Method-name:setJwtIssuer
+Method-returnType:void
+Method-parameters:[String jwtIssuer]
+FieldAccess:jwtIssuer
+Method-name:getJwtSubject
+Method-returnType:String
+Method-parameters:[]
+Method-name:setJwtSubject
+Method-returnType:void
+Method-parameters:[String jwtSubject]
+FieldAccess:jwtSubject
+Method-name:getServiceAccountResource
+Method-returnType:String
+Method-parameters:[]
+Method-name:setServiceAccountResource
+Method-returnType:void
+Method-parameters:[String serviceAccountResource]
+FieldAccess:serviceAccountResource
+Method-name:setKeyCertChainResource
+Method-returnType:void
+Method-parameters:[String keyCertChainResource]
+FieldAccess:keyCertChainResource
+Method-name:getKeyCertChainResource
+Method-returnType:String
+Method-parameters:[]
+Method-name:setKeyResource
+Method-returnType:void
+Method-parameters:[String keyResource]
+FieldAccess:keyResource
+Method-name:getKeyResource
+Method-returnType:String
+Method-parameters:[]
+Method-name:getKeyPassword
+Method-returnType:String
+Method-parameters:[]
+Method-name:setKeyPassword
+Method-returnType:void
+Method-parameters:[String keyPassword]
+FieldAccess:keyPassword
+Method-name:setTrustCertCollectionResource
+Method-returnType:void
+Method-parameters:[String trustCertCollectionResource]
+FieldAccess:trustCertCollectionResource
+Method-name:getTrustCertCollectionResource
+Method-returnType:String
+Method-parameters:[]
+Method-name:getConsumerStrategy
+Method-returnType:GrpcConsumerStrategy
+Method-parameters:[]
+Method-name:setConsumerStrategy
+Method-returnType:void
+Method-parameters:[GrpcConsumerStrategy consumerStrategy]
+FieldAccess:consumerStrategy
+Method-name:setForwardOnCompleted
+Method-returnType:void
+Method-parameters:[boolean forwardOnCompleted]
+FieldAccess:forwardOnCompleted
+Method-name:isForwardOnCompleted
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setForwardOnError
+Method-returnType:void
+Method-parameters:[boolean forwardOnError]
+FieldAccess:forwardOnError
+Method-name:isForwardOnError
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getProducerStrategy
+Method-returnType:GrpcProducerStrategy
+Method-parameters:[]
+Method-name:setProducerStrategy
+Method-returnType:void
+Method-parameters:[GrpcProducerStrategy producerStrategy]
+FieldAccess:producerStrategy
+Method-name:getStreamRepliesTo
+Method-returnType:String
+Method-parameters:[]
+Method-name:setStreamRepliesTo
+Method-returnType:void
+Method-parameters:[String streamRepliesTo]
+FieldAccess:streamRepliesTo
+Method-name:getUserAgent
+Method-returnType:String
+Method-parameters:[]
+Method-name:setUserAgent
+Method-returnType:void
+Method-parameters:[String userAgent]
+FieldAccess:userAgent
+Method-name:getFlowControlWindow
+Method-returnType:int
+Method-parameters:[]
+Method-name:setFlowControlWindow
+Method-returnType:void
+Method-parameters:[int flowControlWindow]
+FieldAccess:flowControlWindow
+Method-name:setMaxMessageSize
+Method-returnType:void
+Method-parameters:[int maxMessageSize]
+FieldAccess:maxMessageSize
+Method-name:getMaxMessageSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxConcurrentCallsPerConnection
+Method-returnType:void
+Method-parameters:[int maxConcurrentCallsPerConnection]
+FieldAccess:maxConcurrentCallsPerConnection
+Method-name:getMaxConcurrentCallsPerConnection
+Method-returnType:int
+Method-parameters:[]
+Method-name:parseURI
+Method-returnType:void
+Method-parameters:[URI uri]
+MethodInvocation:setHost
+MethodInvocation:getHost
+MethodInvocation:getPort
+MethodInvocation:setPort
+MethodInvocation:getPort
+MethodInvocation:setService
+MethodInvocation:substring
+MethodInvocation:getPath
+Method-name:parseConfiguration
+Method-returnType:GrpcConfiguration
+Method-parameters:[String remaining, GrpcComponent grpcComponent]
+MethodInvocation:parseURI

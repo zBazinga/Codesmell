@@ -1,0 +1,240 @@
+Class:IndexGraveyard
+Field:SETTING_MAX_TOMBSTONES
+MethodInvocation:intSetting
+Field:TYPE
+Field:TOMBSTONES_FIELD
+Field:GRAVEYARD_PARSER
+MethodInvocation:declareObjectArray
+MethodInvocation:getParser
+Field:tombstones
+Method-name:IndexGraveyard
+Method-returnType:null
+Method-parameters:[final List<Tombstone> list]
+Method-name:IndexGraveyard
+Method-returnType:null
+Method-parameters:[final StreamInput in]
+MethodInvocation:readVInt
+MethodInvocation:add
+FieldAccess:tombstones
+MethodInvocation:unmodifiableList
+Method-name:getWriteableName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getMinimalSupportedVersion
+Method-returnType:Version
+Method-parameters:[]
+MethodInvocation:minimumCompatibilityVersion
+Method-name:context
+Method-returnType:EnumSet<Metadata.XContentContext>
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+FieldAccess:tombstones
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:getTombstones
+Method-returnType:List<Tombstone>
+Method-parameters:[]
+Method-name:containsIndex
+Method-returnType:boolean
+Method-parameters:[final Index index]
+MethodInvocation:equals
+MethodInvocation:getIndex
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[final XContentBuilder builder, final Params params]
+MethodInvocation:startArray
+MethodInvocation:getPreferredName
+MethodInvocation:toXContent
+MethodInvocation:endArray
+Method-name:fromXContent
+Method-returnType:IndexGraveyard
+Method-parameters:[final XContentParser parser]
+MethodInvocation:parse
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[final StreamOutput out]
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeTo
+Method-name:diff
+Method-returnType:Diff<Metadata.Custom>
+Method-parameters:[final Metadata.Custom previous]
+Method-name:readDiffFrom
+Method-returnType:NamedDiff<Metadata.Custom>
+Method-parameters:[final StreamInput in]
+Method-name:builder
+Method-returnType:IndexGraveyard.Builder
+Method-parameters:[]
+Method-name:builder
+Method-returnType:IndexGraveyard.Builder
+Method-parameters:[final IndexGraveyard graveyard]
+Class:Builder
+Field:tombstones
+Field:numPurged
+Field:currentTime
+MethodInvocation:currentTimeMillis
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[IndexGraveyard that]
+MethodInvocation:getTombstones
+Method-name:tombstones
+Method-returnType:List<Tombstone>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+Method-name:addTombstone
+Method-returnType:Builder
+Method-parameters:[final Index index]
+MethodInvocation:add
+Method-name:addTombstones
+Method-returnType:Builder
+Method-parameters:[final Collection<Index> indices]
+MethodInvocation:addTombstone
+Method-name:addBuiltTombstones
+Method-returnType:Builder
+Method-parameters:[final List<Tombstone> tombstones]
+MethodInvocation:addAll
+FieldAccess:tombstones
+Method-name:getNumPurged
+Method-returnType:int
+Method-parameters:[]
+Method-name:purge
+Method-returnType:int
+Method-parameters:[final int maxTombstones]
+MethodInvocation:size
+MethodInvocation:tombstones
+MethodInvocation:subList
+MethodInvocation:size
+Method-name:build
+Method-returnType:IndexGraveyard
+Method-parameters:[]
+MethodInvocation:build
+Method-name:build
+Method-returnType:IndexGraveyard
+Method-parameters:[final Settings settings]
+MethodInvocation:purge
+MethodInvocation:get
+Class:IndexGraveyardDiff
+Field:added
+Field:removedCount
+Method-name:IndexGraveyardDiff
+Method-returnType:null
+Method-parameters:[final StreamInput in]
+MethodInvocation:unmodifiableList
+MethodInvocation:readList
+MethodInvocation:readVInt
+Method-name:IndexGraveyardDiff
+Method-returnType:null
+Method-parameters:[final IndexGraveyard previous, final IndexGraveyard current]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[final StreamOutput out]
+MethodInvocation:writeList
+MethodInvocation:writeVInt
+Method-name:apply
+Method-returnType:IndexGraveyard
+Method-parameters:[final Metadata.Custom previous]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:subList
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:build
+MethodInvocation:addBuiltTombstones
+Method-name:getAdded
+Method-returnType:List<Tombstone>
+Method-parameters:[]
+Method-name:getRemovedCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:getWriteableName
+Method-returnType:String
+Method-parameters:[]
+Class:Tombstone
+Field:INDEX_KEY
+Field:DELETE_DATE_IN_MILLIS_KEY
+Field:DELETE_DATE_KEY
+Field:TOMBSTONE_PARSER
+MethodInvocation:declareObject
+MethodInvocation:fromXContent
+MethodInvocation:declareLong
+MethodInvocation:declareString
+Field:FORMATTER
+MethodInvocation:withZone
+MethodInvocation:forPattern
+Method-name:getParser
+Method-returnType:ContextParser<Void,Tombstone>
+Method-parameters:[]
+MethodInvocation:build
+MethodInvocation:apply
+Field:index
+Field:deleteDateInMillis
+Method-name:Tombstone
+Method-returnType:null
+Method-parameters:[final Index index, final long deleteDateInMillis]
+MethodInvocation:requireNonNull
+FieldAccess:index
+FieldAccess:deleteDateInMillis
+Method-name:Tombstone
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readLong
+Method-name:getIndex
+Method-returnType:Index
+Method-parameters:[]
+Method-name:getDeleteDateInMillis
+Method-returnType:long
+Method-parameters:[]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[final StreamOutput out]
+MethodInvocation:writeTo
+MethodInvocation:writeLong
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[final Object other]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:format
+MethodInvocation:ofEpochMilli
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[final XContentBuilder builder, final Params params]
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:toXContent
+MethodInvocation:timeField
+MethodInvocation:endObject
+Class:Builder
+Field:index
+Field:deleteDateInMillis
+Method-name:index
+Method-returnType:void
+Method-parameters:[final Index index]
+FieldAccess:index
+Method-name:deleteDateInMillis
+Method-returnType:void
+Method-parameters:[final long deleteDate]
+FieldAccess:deleteDateInMillis
+Method-name:build
+Method-returnType:Tombstone
+Method-parameters:[]

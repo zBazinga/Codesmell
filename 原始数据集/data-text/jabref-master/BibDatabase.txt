@@ -1,0 +1,353 @@
+Class:BibDatabase
+Field:LOGGER
+MethodInvocation:getLogger
+Field:RESOLVE_CONTENT_PATTERN
+MethodInvocation:compile
+Field:entries
+MethodInvocation:synchronizedObservableList
+MethodInvocation:observableArrayList
+Field:bibtexStrings
+Field:eventBus
+Field:preamble
+Field:epilog
+Field:sharedDatabaseID
+Method-name:BibDatabase
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:registerListener
+Method-name:BibDatabase
+Method-returnType:null
+Method-parameters:[List<BibEntry> entries]
+MethodInvocation:insertEntries
+Method-name:getText
+Method-returnType:String
+Method-parameters:[String toResolve, BibDatabase database]
+MethodInvocation:resolveForStrings
+Method-name:getEntryCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:hasEntries
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getEntriesSorted
+Method-returnType:List<BibEntry>
+Method-parameters:[Comparator<BibEntry> comparator]
+MethodInvocation:sort
+Method-name:containsEntryWithId
+Method-returnType:boolean
+Method-parameters:[String id]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:equals
+MethodInvocation:getId
+Method-name:getEntries
+Method-returnType:ObservableList<BibEntry>
+Method-parameters:[]
+MethodInvocation:unmodifiableObservableList
+Method-name:getAllVisibleFields
+Method-returnType:Set<Field>
+Method-parameters:[]
+MethodInvocation:comparing
+MethodInvocation:getEntries
+MethodInvocation:addAll
+MethodInvocation:getFields
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:isInternalField
+MethodInvocation:toSet
+Method-name:getEntryByKey
+Method-returnType:Optional<BibEntry>
+Method-parameters:[String key]
+MethodInvocation:equals
+MethodInvocation:orElse
+MethodInvocation:getCiteKeyOptional
+MethodInvocation:of
+MethodInvocation:empty
+Method-name:getEntriesByKey
+Method-returnType:List<BibEntry>
+Method-parameters:[String key]
+MethodInvocation:ifPresent
+MethodInvocation:getCiteKeyOptional
+MethodInvocation:equals
+MethodInvocation:add
+Method-name:insertEntry
+Method-returnType:void
+Method-parameters:[BibEntry entry]
+MethodInvocation:insertEntry
+Method-name:insertEntry
+Method-returnType:void
+Method-parameters:[BibEntry entry, EntriesEventSource eventSource]
+MethodInvocation:insertEntries
+MethodInvocation:singletonList
+Method-name:insertEntries
+Method-returnType:void
+Method-parameters:[BibEntry... entries]
+MethodInvocation:insertEntries
+MethodInvocation:asList
+Method-name:insertEntries
+Method-returnType:void
+Method-parameters:[List<BibEntry> entries]
+MethodInvocation:insertEntries
+Method-name:insertEntries
+Method-returnType:void
+Method-parameters:[List<BibEntry> newEntries, EntriesEventSource eventSource]
+MethodInvocation:requireNonNull
+MethodInvocation:registerListener
+MethodInvocation:isEmpty
+MethodInvocation:post
+MethodInvocation:post
+MethodInvocation:get
+MethodInvocation:addAll
+Method-name:removeEntry
+Method-returnType:void
+Method-parameters:[BibEntry bibEntry]
+MethodInvocation:removeEntries
+MethodInvocation:singletonList
+Method-name:removeEntry
+Method-returnType:void
+Method-parameters:[BibEntry bibEntry, EntriesEventSource eventSource]
+MethodInvocation:removeEntries
+MethodInvocation:singletonList
+Method-name:removeEntries
+Method-returnType:void
+Method-parameters:[List<BibEntry> toBeDeleted]
+MethodInvocation:removeEntries
+Method-name:removeEntries
+Method-returnType:void
+Method-parameters:[List<BibEntry> toBeDeleted, EntriesEventSource eventSource]
+MethodInvocation:requireNonNull
+MethodInvocation:add
+MethodInvocation:getId
+MethodInvocation:removeIf
+MethodInvocation:contains
+MethodInvocation:getId
+MethodInvocation:post
+Method-name:getPreamble
+Method-returnType:Optional<String>
+Method-parameters:[]
+MethodInvocation:isBlank
+MethodInvocation:empty
+MethodInvocation:of
+Method-name:setPreamble
+Method-returnType:void
+Method-parameters:[String preamble]
+FieldAccess:preamble
+Method-name:addString
+Method-returnType:void
+Method-parameters:[BibtexString string]
+MethodInvocation:getId
+MethodInvocation:hasStringByName
+MethodInvocation:getName
+MethodInvocation:containsKey
+MethodInvocation:put
+Method-name:setStrings
+Method-returnType:void
+Method-parameters:[List<BibtexString> stringsToAdd]
+MethodInvocation:forEach
+Method-name:removeString
+Method-returnType:void
+Method-parameters:[String id]
+MethodInvocation:remove
+Method-name:getStringKeySet
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getStringValues
+Method-returnType:Collection<BibtexString>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getString
+Method-returnType:BibtexString
+Method-parameters:[String id]
+MethodInvocation:get
+Method-name:getStringByName
+Method-returnType:Optional<BibtexString>
+Method-parameters:[String name]
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getStringValues
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:getStringCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:hasNoStrings
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:copyPreamble
+Method-returnType:void
+Method-parameters:[BibDatabase database]
+MethodInvocation:setPreamble
+MethodInvocation:orElse
+MethodInvocation:getPreamble
+Method-name:hasStringByName
+Method-returnType:boolean
+Method-parameters:[String label]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:values
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:resolveForStrings
+Method-returnType:String
+Method-parameters:[String content]
+MethodInvocation:requireNonNull
+MethodInvocation:resolveContent
+Method-name:getUsedStrings
+Method-returnType:Collection<BibtexString>
+Method-parameters:[Collection<BibEntry> entries]
+MethodInvocation:getFieldValues
+MethodInvocation:resolveContent
+MethodInvocation:resolveContent
+MethodInvocation:add
+MethodInvocation:clone
+MethodInvocation:get
+Method-name:resolveForStrings
+Method-returnType:List<BibEntry>
+Method-parameters:[Collection<BibEntry> entriesToResolve, boolean inPlace]
+MethodInvocation:requireNonNull
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:resolveForStrings
+Method-name:resolveForStrings
+Method-returnType:BibEntry
+Method-parameters:[BibEntry entry, boolean inPlace]
+MethodInvocation:clone
+MethodInvocation:entrySet
+MethodInvocation:getFieldMap
+MethodInvocation:setField
+MethodInvocation:getKey
+MethodInvocation:resolveForStrings
+MethodInvocation:getValue
+Method-name:resolveString
+Method-returnType:String
+Method-parameters:[String label, Set<String> usedIds, Set<String> allUsedIds]
+MethodInvocation:requireNonNull
+MethodInvocation:requireNonNull
+MethodInvocation:requireNonNull
+MethodInvocation:values
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:contains
+MethodInvocation:getId
+MethodInvocation:info
+MethodInvocation:add
+MethodInvocation:getId
+MethodInvocation:add
+MethodInvocation:getId
+MethodInvocation:getContent
+MethodInvocation:resolveContent
+MethodInvocation:remove
+MethodInvocation:getId
+MethodInvocation:getMonthByShortName
+MethodInvocation:orElse
+MethodInvocation:map
+Method-name:resolveContent
+Method-returnType:String
+Method-parameters:[String result, Set<String> usedIds, Set<String> allUsedIds]
+MethodInvocation:matches
+MethodInvocation:matcher
+MethodInvocation:indexOf
+MethodInvocation:append
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:resolveString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:substring
+MethodInvocation:toString
+Method-name:getEpilog
+Method-returnType:String
+Method-parameters:[]
+Method-name:setEpilog
+Method-returnType:void
+Method-parameters:[String epilog]
+FieldAccess:epilog
+Method-name:registerListener
+Method-returnType:void
+Method-parameters:[Object listener]
+MethodInvocation:register
+FieldAccess:eventBus
+Method-name:unregisterListener
+Method-returnType:void
+Method-parameters:[Object listener]
+MethodInvocation:unregister
+FieldAccess:eventBus
+MethodInvocation:debug
+Method-name:relayEntryChangeEvent
+Method-returnType:void
+Method-parameters:[FieldChangedEvent event]
+MethodInvocation:post
+Method-name:getReferencedEntry
+Method-returnType:Optional<BibEntry>
+Method-parameters:[BibEntry entry]
+MethodInvocation:flatMap
+MethodInvocation:getField
+Method-name:getSharedDatabaseID
+Method-returnType:Optional<String>
+Method-parameters:[]
+MethodInvocation:ofNullable
+FieldAccess:sharedDatabaseID
+Method-name:setSharedDatabaseID
+Method-returnType:void
+Method-parameters:[String sharedDatabaseID]
+FieldAccess:sharedDatabaseID
+Method-name:isShared
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isPresent
+MethodInvocation:getSharedDatabaseID
+Method-name:clearSharedDatabaseID
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:sharedDatabaseID
+Method-name:generateSharedDatabaseID
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:sharedDatabaseID
+MethodInvocation:toString
+FieldAccess:sharedDatabaseID
+Method-name:getNumberOfKeyOccurrences
+Method-returnType:long
+Method-parameters:[String citeKey]
+MethodInvocation:count
+MethodInvocation:filter
+MethodInvocation:flatMap
+MethodInvocation:stream
+MethodInvocation:stream
+MethodInvocation:getCiteKeyOptional
+MethodInvocation:equals
+Method-name:isDuplicateCiteKeyExisting
+Method-returnType:boolean
+Method-parameters:[String citeKey]
+MethodInvocation:getNumberOfKeyOccurrences
+Method-name:saveDatabase
+Method-returnType:void
+Method-parameters:[String subName, ArgumentProcessor argumentProcessor]
+MethodInvocation:println
+MethodInvocation:lang
+MethodInvocation:loadForSaveFromPreferences
+MethodInvocation:of
+MethodInvocation:getEncoding
+MethodInvocation:saveDatabase
+MethodInvocation:hasEncodingProblems
+MethodInvocation:println
+MethodInvocation:lang
+MethodInvocation:lang
+MethodInvocation:displayName
+MethodInvocation:getEncoding
+MethodInvocation:getEncodingProblems
+MethodInvocation:println
+MethodInvocation:lang
+MethodInvocation:getLocalizedMessage

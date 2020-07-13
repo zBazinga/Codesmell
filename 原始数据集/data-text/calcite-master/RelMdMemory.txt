@@ -1,0 +1,24 @@
+Class:RelMdMemory
+Field:SOURCE
+MethodInvocation:reflectiveSource
+Method-name:RelMdMemory
+Method-returnType:null
+Method-parameters:[]
+Method-name:getDef
+Method-returnType:MetadataDef<BuiltInMetadata.Memory>
+Method-parameters:[]
+Method-name:memory
+Method-returnType:Double
+Method-parameters:[RelNode rel, RelMetadataQuery mq]
+Method-name:cumulativeMemoryWithinPhase
+Method-returnType:Double
+Method-parameters:[RelNode rel, RelMetadataQuery mq]
+MethodInvocation:memory
+MethodInvocation:isPhaseTransition
+MethodInvocation:getInputs
+MethodInvocation:cumulativeMemoryWithinPhase
+Method-name:cumulativeMemoryWithinPhaseSplit
+Method-returnType:Double
+Method-parameters:[RelNode rel, RelMetadataQuery mq]
+MethodInvocation:cumulativeMemoryWithinPhase
+MethodInvocation:splitCount

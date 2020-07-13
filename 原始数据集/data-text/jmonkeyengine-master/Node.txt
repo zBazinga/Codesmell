@@ -1,0 +1,258 @@
+Class:Node
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:children
+Field:updateList
+Field:updateListValid
+Method-name:Node
+Method-returnType:null
+Method-parameters:[]
+Method-name:Node
+Method-returnType:null
+Method-parameters:[String name]
+MethodInvocation:setRequiresUpdates
+MethodInvocation:getClass
+Method-name:getQuantity
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:setTransformRefresh
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getArray
+MethodInvocation:setTransformRefresh
+Method-name:setLightListRefresh
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getArray
+MethodInvocation:setLightListRefresh
+Method-name:setMatParamOverrideRefresh
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getArray
+MethodInvocation:setMatParamOverrideRefresh
+Method-name:updateWorldBound
+Method-returnType:void
+Method-parameters:[]
+Method-name:setParent
+Method-returnType:void
+Method-parameters:[Node parent]
+FieldAccess:parent
+Method-name:addUpdateChildren
+Method-returnType:void
+Method-parameters:[SafeArrayList<Spatial> results]
+MethodInvocation:getArray
+MethodInvocation:requiresUpdates
+MethodInvocation:add
+MethodInvocation:addUpdateChildren
+Method-name:invalidateUpdateList
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:invalidateUpdateList
+Method-name:getUpdateList
+Method-returnType:SafeArrayList<Spatial>
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:addUpdateChildren
+Method-name:updateLogicalState
+Method-returnType:void
+Method-parameters:[float tpf]
+MethodInvocation:getArray
+MethodInvocation:getUpdateList
+MethodInvocation:updateLogicalState
+Method-name:updateGeometricState
+Method-returnType:void
+Method-parameters:[]
+Method-name:getTriangleCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getTriangleCount
+MethodInvocation:get
+Method-name:getVertexCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getVertexCount
+MethodInvocation:get
+Method-name:attachChild
+Method-returnType:int
+Method-parameters:[Spatial child]
+MethodInvocation:attachChildAt
+MethodInvocation:size
+Method-name:attachChildAt
+Method-returnType:int
+Method-parameters:[Spatial child, int index]
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:detachChild
+MethodInvocation:getParent
+MethodInvocation:setParent
+MethodInvocation:add
+MethodInvocation:setTransformRefresh
+MethodInvocation:setLightListRefresh
+MethodInvocation:setMatParamOverrideRefresh
+MethodInvocation:isLoggable
+MethodInvocation:log
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:invalidateUpdateList
+MethodInvocation:size
+Method-name:detachChild
+Method-returnType:int
+Method-parameters:[Spatial child]
+MethodInvocation:getParent
+MethodInvocation:indexOf
+MethodInvocation:detachChildAt
+Method-name:detachChildNamed
+Method-returnType:int
+Method-parameters:[String childName]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:detachChildAt
+Method-name:detachChildAt
+Method-returnType:Spatial
+Method-parameters:[int index]
+MethodInvocation:remove
+MethodInvocation:setParent
+MethodInvocation:log
+MethodInvocation:toString
+MethodInvocation:setBoundRefresh
+MethodInvocation:setTransformRefresh
+MethodInvocation:setLightListRefresh
+MethodInvocation:setMatParamOverrideRefresh
+MethodInvocation:invalidateUpdateList
+Method-name:detachAllChildren
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:detachChildAt
+MethodInvocation:log
+MethodInvocation:toString
+Method-name:getChildIndex
+Method-returnType:int
+Method-parameters:[Spatial sp]
+MethodInvocation:indexOf
+Method-name:swapChildren
+Method-returnType:void
+Method-parameters:[int index1, int index2]
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:add
+Method-name:getChild
+Method-returnType:Spatial
+Method-parameters:[int i]
+MethodInvocation:get
+Method-name:getChild
+Method-returnType:Spatial
+Method-parameters:[String name]
+MethodInvocation:getArray
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getChild
+Method-name:hasChild
+Method-returnType:boolean
+Method-parameters:[Spatial spat]
+MethodInvocation:contains
+MethodInvocation:getArray
+MethodInvocation:hasChild
+Method-name:getChildren
+Method-returnType:List<Spatial>
+Method-parameters:[]
+Method-name:setMaterial
+Method-returnType:void
+Method-parameters:[Material mat]
+MethodInvocation:size
+MethodInvocation:setMaterial
+MethodInvocation:get
+Method-name:setLodLevel
+Method-returnType:void
+Method-parameters:[int lod]
+MethodInvocation:getArray
+MethodInvocation:setLodLevel
+Method-name:collideWith
+Method-returnType:int
+Method-parameters:[Collidable other, CollisionResults results]
+MethodInvocation:getArray
+MethodInvocation:collideWith
+Method-name:descendantMatches
+Method-returnType:List<T>
+Method-parameters:[Class<T> spatialSubclass, String nameRegex]
+MethodInvocation:getQuantity
+MethodInvocation:getChildren
+MethodInvocation:matches
+MethodInvocation:add
+MethodInvocation:addAll
+MethodInvocation:descendantMatches
+Method-name:descendantMatches
+Method-returnType:List<T>
+Method-parameters:[Class<T> spatialSubclass]
+MethodInvocation:descendantMatches
+Method-name:descendantMatches
+Method-returnType:List<T>
+Method-parameters:[String nameRegex]
+MethodInvocation:descendantMatches
+Method-name:clone
+Method-returnType:Node
+Method-parameters:[boolean cloneMaterials]
+Method-name:deepClone
+Method-returnType:Spatial
+Method-parameters:[]
+Method-name:oldDeepClone
+Method-returnType:Spatial
+Method-parameters:[]
+MethodInvocation:deepClone
+MethodInvocation:add
+Method-name:cloneFields
+Method-returnType:void
+Method-parameters:[Cloner cloner, Object original]
+FieldAccess:children
+MethodInvocation:clone
+FieldAccess:updateList
+MethodInvocation:clone
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter e]
+MethodInvocation:writeSavableArrayList
+MethodInvocation:getCapsule
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter e]
+MethodInvocation:readSavableArrayList
+MethodInvocation:getCapsule
+MethodInvocation:getArray
+Method-name:setModelBound
+Method-returnType:void
+Method-parameters:[BoundingVolume modelBound]
+MethodInvocation:getArray
+MethodInvocation:setModelBound
+MethodInvocation:clone
+Method-name:updateModelBound
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getArray
+MethodInvocation:updateModelBound
+Method-name:depthFirstTraversal
+Method-returnType:void
+Method-parameters:[SceneGraphVisitor visitor, DFSMode mode]
+MethodInvocation:getArray
+MethodInvocation:depthFirstTraversal
+MethodInvocation:visit
+MethodInvocation:visit
+MethodInvocation:getArray
+MethodInvocation:depthFirstTraversal
+Method-name:breadthFirstTraversal
+Method-returnType:void
+Method-parameters:[SceneGraphVisitor visitor, Queue<Spatial> queue]
+MethodInvocation:addAll
+Method-name:attach
+Method-returnType:void
+Method-parameters:[boolean deforms, Geometry geom, ArmatureNode armatureNode]
+MethodInvocation:attachChild
+MethodInvocation:attachChild
+MethodInvocation:getChild

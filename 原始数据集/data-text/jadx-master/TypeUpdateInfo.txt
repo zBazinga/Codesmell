@@ -1,0 +1,39 @@
+Class:TypeUpdateInfo
+Field:flags
+Field:updates
+Method-name:TypeUpdateInfo
+Method-returnType:null
+Method-parameters:[TypeUpdateFlags flags]
+FieldAccess:flags
+Method-name:requestUpdate
+Method-returnType:void
+Method-parameters:[InsnArg arg, ArgType changeType]
+MethodInvocation:add
+Method-name:applyUpdates
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getArg
+MethodInvocation:setType
+MethodInvocation:getType
+Method-name:isProcessed
+Method-returnType:boolean
+Method-parameters:[InsnArg arg]
+MethodInvocation:isEmpty
+MethodInvocation:getArg
+Method-name:getType
+Method-returnType:ArgType
+Method-parameters:[InsnArg arg]
+MethodInvocation:getArg
+MethodInvocation:getType
+MethodInvocation:getType
+Method-name:rollbackUpdate
+Method-returnType:void
+Method-parameters:[InsnArg arg]
+MethodInvocation:removeIf
+MethodInvocation:getArg
+Method-name:getUpdates
+Method-returnType:List<TypeUpdateEntry>
+Method-parameters:[]
+Method-name:getFlags
+Method-returnType:TypeUpdateFlags
+Method-parameters:[]

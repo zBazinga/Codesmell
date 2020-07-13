@@ -1,0 +1,107 @@
+Class:TimeWindow
+Field:start
+Field:end
+Method-name:TimeWindow
+Method-returnType:null
+Method-parameters:[long start, long end]
+FieldAccess:start
+FieldAccess:end
+Method-name:getStart
+Method-returnType:long
+Method-parameters:[]
+Method-name:getEnd
+Method-returnType:long
+Method-parameters:[]
+Method-name:maxTimestamp
+Method-returnType:long
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:modInverse
+Method-name:modInverse
+Method-returnType:int
+Method-parameters:[int x]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:intersects
+Method-returnType:boolean
+Method-parameters:[TimeWindow other]
+FieldAccess:start
+FieldAccess:end
+Method-name:cover
+Method-returnType:TimeWindow
+Method-parameters:[TimeWindow other]
+MethodInvocation:min
+MethodInvocation:max
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[Window o]
+FieldAccess:start
+MethodInvocation:compare
+FieldAccess:end
+MethodInvocation:compare
+FieldAccess:start
+Method-name:mergeWindow
+Method-returnType:TimeWindow
+Method-parameters:[TimeWindow other, Collection<TimeWindow> mergedWindow, SessionWindowAssigner sessionWindowAssigner]
+MethodInvocation:intersects
+MethodInvocation:add
+MethodInvocation:cover
+Class:Serializer
+Field:serialVersionUID
+Method-name:isImmutableType
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:createInstance
+Method-returnType:TimeWindow
+Method-parameters:[]
+Method-name:copy
+Method-returnType:TimeWindow
+Method-parameters:[TimeWindow from]
+Method-name:copy
+Method-returnType:TimeWindow
+Method-parameters:[TimeWindow from, TimeWindow reuse]
+Method-name:getLength
+Method-returnType:int
+Method-parameters:[]
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[TimeWindow record, DataOutputView target]
+MethodInvocation:writeLong
+MethodInvocation:writeLong
+Method-name:deserialize
+Method-returnType:TimeWindow
+Method-parameters:[DataInputView source]
+MethodInvocation:readLong
+MethodInvocation:readLong
+Method-name:deserialize
+Method-returnType:TimeWindow
+Method-parameters:[TimeWindow reuse, DataInputView source]
+MethodInvocation:deserialize
+Method-name:copy
+Method-returnType:void
+Method-parameters:[DataInputView source, DataOutputView target]
+MethodInvocation:writeLong
+MethodInvocation:readLong
+MethodInvocation:writeLong
+MethodInvocation:readLong
+Method-name:snapshotConfiguration
+Method-returnType:TypeSerializerSnapshot<TimeWindow>
+Method-parameters:[]
+Class:TimeWindowSerializerSnapshot
+Method-name:TimeWindowSerializerSnapshot
+Method-returnType:null
+Method-parameters:[]
+Method-name:getWindowStartWithOffset
+Method-returnType:long
+Method-parameters:[long timestamp, long offset, long windowSize]
+Method-name:of
+Method-returnType:TimeWindow
+Method-parameters:[long start, long end]

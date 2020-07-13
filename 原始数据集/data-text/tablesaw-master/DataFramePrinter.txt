@@ -1,0 +1,104 @@
+Class:DataFramePrinter
+Field:TOO_SHORT_COLUMN_MARKER
+Field:maxRows
+Field:stream
+Method-name:DataFramePrinter
+Method-returnType:null
+Method-parameters:[int maxRows, OutputStream stream]
+FieldAccess:maxRows
+FieldAccess:stream
+Method-name:getWidths
+Method-returnType:int[]
+Method-parameters:[String[] headers, String[][] data]
+MethodInvocation:max
+MethodInvocation:length
+MethodInvocation:max
+MethodInvocation:length
+Method-name:getHeaderTemplate
+Method-returnType:String
+Method-parameters:[int[] widths, String[] headers]
+MethodInvocation:orElse
+MethodInvocation:reduce
+MethodInvocation:mapToObj
+MethodInvocation:range
+MethodInvocation:length
+MethodInvocation:whitespace
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:whitespace
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:getDataTemplate
+Method-returnType:String
+Method-parameters:[int[] widths]
+MethodInvocation:orElse
+MethodInvocation:reduce
+MethodInvocation:mapToObj
+MethodInvocation:range
+Method-name:whitespace
+Method-returnType:void
+Method-parameters:[StringBuilder text, int length]
+MethodInvocation:forEach
+MethodInvocation:range
+MethodInvocation:append
+Method-name:print
+Method-returnType:void
+Method-parameters:[Relation frame]
+MethodInvocation:getHeaderTokens
+MethodInvocation:getDataTokens
+MethodInvocation:getWidths
+MethodInvocation:getDataTemplate
+MethodInvocation:getHeaderTemplate
+MethodInvocation:sum
+MethodInvocation:map
+MethodInvocation:of
+MethodInvocation:name
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:tableName
+MethodInvocation:lineSeparator
+MethodInvocation:format
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:lineSeparator
+MethodInvocation:append
+MethodInvocation:format
+MethodInvocation:append
+MethodInvocation:lineSeparator
+MethodInvocation:append
+MethodInvocation:getBytes
+MethodInvocation:toString
+MethodInvocation:write
+FieldAccess:stream
+MethodInvocation:flush
+FieldAccess:stream
+Method-name:getHeaderTokens
+Method-returnType:String[]
+Method-parameters:[Relation frame]
+MethodInvocation:columnCount
+MethodInvocation:forEach
+MethodInvocation:range
+MethodInvocation:name
+MethodInvocation:column
+Method-name:getDataToken
+Method-returnType:String
+Method-parameters:[Column<?> col, int i]
+MethodInvocation:size
+MethodInvocation:getString
+Method-name:getDataTokens
+Method-returnType:String[][]
+Method-parameters:[Relation frame]
+MethodInvocation:rowCount
+MethodInvocation:min
+MethodInvocation:rowCount
+MethodInvocation:rowCount
+MethodInvocation:columnCount
+MethodInvocation:ceil
+MethodInvocation:column
+MethodInvocation:getDataToken
+MethodInvocation:column
+MethodInvocation:getDataToken
+MethodInvocation:rowCount
+MethodInvocation:column
+MethodInvocation:getDataToken

@@ -1,0 +1,26 @@
+Class:EmptyIfStmtRule
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[final ASTIfStatement node, final Object data]
+MethodInvocation:handleIf
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[final ASTElseIfStatement node, final Object data]
+MethodInvocation:handleIf
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[final ASTElseStatement node, final Object data]
+MethodInvocation:handleIf
+Method-name:handleIf
+Method-returnType:void
+Method-parameters:[final AbstractVmNode node, final Object data]
+MethodInvocation:getFirstChildOfType
+MethodInvocation:getNumChildren
+MethodInvocation:addViolation
+MethodInvocation:getNumChildren
+MethodInvocation:getChild
+MethodInvocation:isBlank
+MethodInvocation:toString
+MethodInvocation:getFirstToken
+MethodInvocation:getChild
+MethodInvocation:addViolation

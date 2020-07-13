@@ -1,0 +1,310 @@
+Class:HttpResponse
+Field:statusCode
+Field:reasonPhrase
+Field:body
+Field:headers
+Field:cookies
+Field:connectionOptions
+Method-name:response
+Method-returnType:HttpResponse
+Method-parameters:[]
+Method-name:response
+Method-returnType:HttpResponse
+Method-parameters:[String body]
+MethodInvocation:withBody
+MethodInvocation:withReasonPhrase
+MethodInvocation:withStatusCode
+MethodInvocation:code
+MethodInvocation:reasonPhrase
+Method-name:notFoundResponse
+Method-returnType:HttpResponse
+Method-parameters:[]
+MethodInvocation:withReasonPhrase
+MethodInvocation:withStatusCode
+MethodInvocation:code
+MethodInvocation:reasonPhrase
+Method-name:withStatusCode
+Method-returnType:HttpResponse
+Method-parameters:[Integer statusCode]
+FieldAccess:statusCode
+Method-name:getStatusCode
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:withReasonPhrase
+Method-returnType:HttpResponse
+Method-parameters:[String reasonPhrase]
+FieldAccess:reasonPhrase
+Method-name:getReasonPhrase
+Method-returnType:String
+Method-parameters:[]
+Method-name:withBody
+Method-returnType:HttpResponse
+Method-parameters:[String body]
+FieldAccess:body
+Method-name:withBody
+Method-returnType:HttpResponse
+Method-parameters:[String body, Charset charset]
+FieldAccess:body
+Method-name:withBody
+Method-returnType:HttpResponse
+Method-parameters:[String body, MediaType contentType]
+FieldAccess:body
+Method-name:withBody
+Method-returnType:HttpResponse
+Method-parameters:[byte[] body]
+FieldAccess:body
+Method-name:withBody
+Method-returnType:HttpResponse
+Method-parameters:[BodyWithContentType body]
+FieldAccess:body
+Method-name:getBody
+Method-returnType:BodyWithContentType
+Method-parameters:[]
+Method-name:getBodyAsRawBytes
+Method-returnType:byte[]
+Method-parameters:[]
+FieldAccess:body
+MethodInvocation:getRawBytes
+FieldAccess:body
+Method-name:getBodyAsString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:getHeaders
+Method-returnType:Headers
+Method-parameters:[]
+FieldAccess:headers
+Method-name:getOrCreateHeaders
+Method-returnType:Headers
+Method-parameters:[]
+FieldAccess:headers
+FieldAccess:headers
+FieldAccess:headers
+Method-name:withHeaders
+Method-returnType:HttpResponse
+Method-parameters:[Headers headers]
+MethodInvocation:isEmpty
+FieldAccess:headers
+FieldAccess:headers
+Method-name:withHeaders
+Method-returnType:HttpResponse
+Method-parameters:[List<Header> headers]
+MethodInvocation:withEntries
+MethodInvocation:getOrCreateHeaders
+Method-name:withHeaders
+Method-returnType:HttpResponse
+Method-parameters:[Header... headers]
+MethodInvocation:withEntries
+MethodInvocation:getOrCreateHeaders
+Method-name:withHeader
+Method-returnType:HttpResponse
+Method-parameters:[Header header]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateHeaders
+Method-name:withHeader
+Method-returnType:HttpResponse
+Method-parameters:[String name, String... values]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateHeaders
+Method-name:withHeader
+Method-returnType:HttpResponse
+Method-parameters:[NottableString name, NottableString... values]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateHeaders
+MethodInvocation:header
+Method-name:withContentType
+Method-returnType:HttpResponse
+Method-parameters:[MediaType mediaType]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateHeaders
+MethodInvocation:header
+MethodInvocation:toString
+MethodInvocation:toString
+Method-name:replaceHeader
+Method-returnType:HttpResponse
+Method-parameters:[Header header]
+MethodInvocation:replaceEntry
+MethodInvocation:getOrCreateHeaders
+Method-name:replaceHeader
+Method-returnType:HttpResponse
+Method-parameters:[String name, String... values]
+MethodInvocation:replaceEntry
+MethodInvocation:getOrCreateHeaders
+Method-name:getHeaderList
+Method-returnType:List<Header>
+Method-parameters:[]
+FieldAccess:headers
+MethodInvocation:getEntries
+FieldAccess:headers
+MethodInvocation:emptyList
+Method-name:getHeaderMultimap
+Method-returnType:Multimap<NottableString,NottableString>
+Method-parameters:[]
+FieldAccess:headers
+MethodInvocation:getMultimap
+FieldAccess:headers
+Method-name:getHeader
+Method-returnType:List<String>
+Method-parameters:[String name]
+FieldAccess:headers
+MethodInvocation:getValues
+FieldAccess:headers
+MethodInvocation:emptyList
+Method-name:getFirstHeader
+Method-returnType:String
+Method-parameters:[String name]
+FieldAccess:headers
+MethodInvocation:getFirstValue
+FieldAccess:headers
+Method-name:containsHeader
+Method-returnType:boolean
+Method-parameters:[String name]
+FieldAccess:headers
+MethodInvocation:containsEntry
+FieldAccess:headers
+Method-name:removeHeader
+Method-returnType:HttpResponse
+Method-parameters:[String name]
+FieldAccess:headers
+MethodInvocation:remove
+Method-name:removeHeader
+Method-returnType:HttpResponse
+Method-parameters:[NottableString name]
+FieldAccess:headers
+MethodInvocation:remove
+Method-name:containsHeader
+Method-returnType:boolean
+Method-parameters:[String name, String value]
+FieldAccess:headers
+MethodInvocation:containsEntry
+FieldAccess:headers
+Method-name:getCookies
+Method-returnType:Cookies
+Method-parameters:[]
+FieldAccess:cookies
+Method-name:getOrCreateCookies
+Method-returnType:Cookies
+Method-parameters:[]
+FieldAccess:cookies
+FieldAccess:cookies
+FieldAccess:cookies
+Method-name:withCookies
+Method-returnType:HttpResponse
+Method-parameters:[Cookies cookies]
+MethodInvocation:isEmpty
+FieldAccess:cookies
+FieldAccess:cookies
+Method-name:withCookies
+Method-returnType:HttpResponse
+Method-parameters:[List<Cookie> cookies]
+MethodInvocation:withEntries
+MethodInvocation:getOrCreateCookies
+Method-name:withCookies
+Method-returnType:HttpResponse
+Method-parameters:[Cookie... cookies]
+MethodInvocation:withEntries
+MethodInvocation:getOrCreateCookies
+Method-name:withCookie
+Method-returnType:HttpResponse
+Method-parameters:[Cookie cookie]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateCookies
+Method-name:withCookie
+Method-returnType:HttpResponse
+Method-parameters:[String name, String value]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateCookies
+Method-name:withCookie
+Method-returnType:HttpResponse
+Method-parameters:[NottableString name, NottableString value]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateCookies
+Method-name:getCookieList
+Method-returnType:List<Cookie>
+Method-parameters:[]
+FieldAccess:cookies
+MethodInvocation:getEntries
+FieldAccess:cookies
+MethodInvocation:emptyList
+Method-name:getCookieMap
+Method-returnType:Map<NottableString,NottableString>
+Method-parameters:[]
+FieldAccess:cookies
+MethodInvocation:getMap
+FieldAccess:cookies
+Method-name:cookieHeadeDoesNotAlreadyExists
+Method-returnType:boolean
+Method-parameters:[Cookie cookieValue]
+MethodInvocation:getHeader
+MethodInvocation:toString
+MethodInvocation:name
+MethodInvocation:decode
+MethodInvocation:value
+MethodInvocation:decode
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getValue
+MethodInvocation:getName
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getValue
+MethodInvocation:getValue
+Method-name:cookieHeadeDoesNotAlreadyExists
+Method-returnType:boolean
+Method-parameters:[String name, String value]
+MethodInvocation:getHeader
+MethodInvocation:toString
+MethodInvocation:name
+MethodInvocation:decode
+MethodInvocation:value
+MethodInvocation:decode
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+Method-name:withConnectionOptions
+Method-returnType:HttpResponse
+Method-parameters:[ConnectionOptions connectionOptions]
+FieldAccess:connectionOptions
+Method-name:getConnectionOptions
+Method-returnType:ConnectionOptions
+Method-parameters:[]
+Method-name:getType
+Method-returnType:Type
+Method-parameters:[]
+Method-name:clone
+Method-returnType:HttpResponse
+Method-parameters:[]
+MethodInvocation:withConnectionOptions
+MethodInvocation:withDelay
+MethodInvocation:withCookies
+MethodInvocation:withHeaders
+MethodInvocation:withBody
+MethodInvocation:withReasonPhrase
+MethodInvocation:withStatusCode
+MethodInvocation:response
+MethodInvocation:clone
+MethodInvocation:clone
+MethodInvocation:getDelay
+Method-name:update
+Method-returnType:HttpResponse
+Method-parameters:[HttpResponse replaceResponse]
+MethodInvocation:getStatusCode
+MethodInvocation:withStatusCode
+MethodInvocation:getStatusCode
+MethodInvocation:getReasonPhrase
+MethodInvocation:withReasonPhrase
+MethodInvocation:getReasonPhrase
+MethodInvocation:getHeaderList
+MethodInvocation:replaceEntry
+MethodInvocation:getOrCreateHeaders
+MethodInvocation:getCookieList
+MethodInvocation:withCookie
+MethodInvocation:getBody
+MethodInvocation:withBody
+MethodInvocation:getBody
+MethodInvocation:getConnectionOptions
+MethodInvocation:withConnectionOptions
+MethodInvocation:getConnectionOptions
+Method-name:setHeaderIfNotAlreadyExists
+Method-returnType:void
+Method-parameters:[String name, String value, CORSHeaders corsHeaders]
+MethodInvocation:isEmpty
+MethodInvocation:getFirstHeader
+MethodInvocation:withHeader

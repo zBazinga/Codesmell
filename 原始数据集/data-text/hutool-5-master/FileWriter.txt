@@ -1,0 +1,125 @@
+Class:FileWriter
+Field:serialVersionUID
+Method-name:create
+Method-returnType:FileWriter
+Method-parameters:[File file, Charset charset]
+Method-name:create
+Method-returnType:FileWriter
+Method-parameters:[File file]
+Method-name:FileWriter
+Method-returnType:null
+Method-parameters:[File file, Charset charset]
+MethodInvocation:checkFile
+Method-name:FileWriter
+Method-returnType:null
+Method-parameters:[File file, String charset]
+MethodInvocation:charset
+Method-name:FileWriter
+Method-returnType:null
+Method-parameters:[String filePath, Charset charset]
+MethodInvocation:file
+Method-name:FileWriter
+Method-returnType:null
+Method-parameters:[String filePath, String charset]
+MethodInvocation:file
+MethodInvocation:charset
+Method-name:FileWriter
+Method-returnType:null
+Method-parameters:[File file]
+Method-name:FileWriter
+Method-returnType:null
+Method-parameters:[String filePath]
+Method-name:write
+Method-returnType:File
+Method-parameters:[String content, boolean isAppend]
+MethodInvocation:getWriter
+MethodInvocation:write
+MethodInvocation:flush
+MethodInvocation:close
+Method-name:write
+Method-returnType:File
+Method-parameters:[String content]
+MethodInvocation:write
+Method-name:append
+Method-returnType:File
+Method-parameters:[String content]
+MethodInvocation:write
+Method-name:writeLines
+Method-returnType:File
+Method-parameters:[Collection<T> list]
+MethodInvocation:writeLines
+Method-name:appendLines
+Method-returnType:File
+Method-parameters:[Collection<T> list]
+MethodInvocation:writeLines
+Method-name:writeLines
+Method-returnType:File
+Method-parameters:[Collection<T> list, boolean isAppend]
+MethodInvocation:writeLines
+Method-name:writeLines
+Method-returnType:File
+Method-parameters:[Collection<T> list, LineSeparator lineSeparator, boolean isAppend]
+MethodInvocation:getPrintWriter
+MethodInvocation:print
+MethodInvocation:toString
+MethodInvocation:printNewLine
+MethodInvocation:flush
+FieldAccess:file
+Method-name:writeMap
+Method-returnType:File
+Method-parameters:[Map<?,?> map, String kvSeparator, boolean isAppend]
+MethodInvocation:writeMap
+Method-name:writeMap
+Method-returnType:File
+Method-parameters:[Map<?,?> map, LineSeparator lineSeparator, String kvSeparator, boolean isAppend]
+MethodInvocation:getPrintWriter
+MethodInvocation:entrySet
+MethodInvocation:print
+MethodInvocation:format
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:printNewLine
+MethodInvocation:flush
+FieldAccess:file
+Method-name:write
+Method-returnType:File
+Method-parameters:[byte[] data, int off, int len]
+MethodInvocation:write
+Method-name:append
+Method-returnType:File
+Method-parameters:[byte[] data, int off, int len]
+MethodInvocation:write
+Method-name:write
+Method-returnType:File
+Method-parameters:[byte[] data, int off, int len, boolean isAppend]
+MethodInvocation:touch
+MethodInvocation:write
+MethodInvocation:flush
+MethodInvocation:close
+Method-name:writeFromStream
+Method-returnType:File
+Method-parameters:[InputStream in]
+MethodInvocation:touch
+MethodInvocation:copy
+MethodInvocation:close
+Method-name:getOutputStream
+Method-returnType:BufferedOutputStream
+Method-parameters:[]
+MethodInvocation:touch
+Method-name:getWriter
+Method-returnType:BufferedWriter
+Method-parameters:[boolean isAppend]
+MethodInvocation:touch
+Method-name:getPrintWriter
+Method-returnType:PrintWriter
+Method-parameters:[boolean isAppend]
+MethodInvocation:getWriter
+Method-name:checkFile
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:notNull
+MethodInvocation:exists
+FieldAccess:file
+MethodInvocation:isFile
+MethodInvocation:getAbsoluteFile
+FieldAccess:file

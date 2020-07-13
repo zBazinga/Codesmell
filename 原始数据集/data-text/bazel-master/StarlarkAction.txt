@@ -1,0 +1,82 @@
+Class:StarlarkAction
+Field:unusedInputsList
+Field:allInputs
+Method-name:StarlarkAction
+Method-returnType:null
+Method-parameters:[ActionOwner owner, NestedSet<Artifact> tools, NestedSet<Artifact> inputs, Iterable<Artifact> outputs, Artifact primaryOutput, ResourceSet resourceSet, CommandLines commandLines, CommandLineLimits commandLineLimits, boolean isShellCommand, ActionEnvironment env, ImmutableMap<String,String> executionInfo, CharSequence progressMessage, RunfilesSupplier runfilesSupplier, String mnemonic, Optional<Artifact> unusedInputsList]
+FieldAccess:allInputs
+FieldAccess:unusedInputsList
+Method-name:getUnusedInputsList
+Method-returnType:Optional<Artifact>
+Method-parameters:[]
+Method-name:isShareable
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isPresent
+Method-name:discoversInputs
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isPresent
+Method-name:getAllowedDerivedInputs
+Method-returnType:NestedSet<Artifact>
+Method-parameters:[]
+MethodInvocation:getInputs
+Method-name:discoverInputs
+Method-returnType:NestedSet<Artifact>
+Method-parameters:[ActionExecutionContext actionExecutionContext]
+MethodInvocation:updateInputs
+Method-name:getUnusedInputListInputStream
+Method-returnType:InputStream
+Method-parameters:[ActionExecutionContext actionExecutionContext, List<SpawnResult> spawnResults]
+MethodInvocation:get
+MethodInvocation:getInMemoryOutput
+MethodInvocation:get
+MethodInvocation:getInputStream
+MethodInvocation:toPath
+MethodInvocation:getPathResolver
+MethodInvocation:getExecPathString
+Method-name:afterExecute
+Method-returnType:void
+Method-parameters:[ActionExecutionContext actionExecutionContext, List<SpawnResult> spawnResults]
+MethodInvocation:isPresent
+MethodInvocation:toList
+MethodInvocation:put
+MethodInvocation:getExecPathString
+MethodInvocation:getUnusedInputListInputStream
+MethodInvocation:readLine
+MethodInvocation:trim
+MethodInvocation:isEmpty
+MethodInvocation:remove
+MethodInvocation:updateInputs
+MethodInvocation:wrap
+MethodInvocation:values
+Method-name:getSpawnForExtraAction
+Method-returnType:Spawn
+Method-parameters:[]
+MethodInvocation:getSpawn
+Method-name:getInputFilesForExtraAction
+Method-returnType:NestedSet<Artifact>
+Method-parameters:[ActionExecutionContext actionExecutionContext]
+Class:Builder
+Field:unusedInputsList
+MethodInvocation:empty
+Method-name:getInMemoryUnusedInputsListFileFlag
+Method-returnType:boolean
+Method-parameters:[@Nullable BuildConfiguration configuration]
+MethodInvocation:inmemoryUnusedInputsList
+Method-name:setUnusedInputsList
+Method-returnType:Builder
+Method-parameters:[Optional<Artifact> unusedInputsList]
+FieldAccess:unusedInputsList
+Method-name:createSpawnAction
+Method-returnType:SpawnAction
+Method-parameters:[ActionOwner owner, NestedSet<Artifact> tools, NestedSet<Artifact> inputsAndTools, ImmutableList<Artifact> outputs, Artifact primaryOutput, ResourceSet resourceSet, CommandLines commandLines, CommandLineLimits commandLineLimits, boolean isShellCommand, ActionEnvironment env, @Nullable BuildConfiguration configuration, ImmutableMap<String,String> executionInfo, CharSequence progressMessage, RunfilesSupplier runfilesSupplier, String mnemonic]
+MethodInvocation:isPresent
+MethodInvocation:getInMemoryUnusedInputsListFileFlag
+MethodInvocation:build
+MethodInvocation:put
+MethodInvocation:putAll
+MethodInvocation:builderWithExpectedSize
+MethodInvocation:size
+MethodInvocation:getExecPathString
+MethodInvocation:get

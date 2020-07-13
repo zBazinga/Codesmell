@@ -1,0 +1,223 @@
+Class:CalciteCatalogReader
+Field:rootSchema
+Field:typeFactory
+Field:schemaPaths
+Field:nameMatcher
+Field:config
+Method-name:CalciteCatalogReader
+Method-returnType:null
+Method-parameters:[CalciteSchema rootSchema, List<String> defaultSchema, RelDataTypeFactory typeFactory, CalciteConnectionConfig config]
+MethodInvocation:withCaseSensitive
+MethodInvocation:caseSensitive
+MethodInvocation:of
+MethodInvocation:requireNonNull
+MethodInvocation:of
+Method-name:CalciteCatalogReader
+Method-returnType:null
+Method-parameters:[CalciteSchema rootSchema, SqlNameMatcher nameMatcher, List<List<String>> schemaPaths, RelDataTypeFactory typeFactory, CalciteConnectionConfig config]
+FieldAccess:rootSchema
+MethodInvocation:requireNonNull
+FieldAccess:nameMatcher
+FieldAccess:schemaPaths
+MethodInvocation:immutableCopy
+MethodInvocation:isDistinct
+FieldAccess:typeFactory
+FieldAccess:config
+Method-name:withSchemaPath
+Method-returnType:CalciteCatalogReader
+Method-parameters:[List<String> schemaPath]
+MethodInvocation:of
+MethodInvocation:of
+Method-name:getTable
+Method-returnType:Prepare.PreparingTable
+Method-parameters:[final List<String> names]
+MethodInvocation:getTableEntry
+MethodInvocation:getTable
+MethodInvocation:unwrap
+MethodInvocation:create
+MethodInvocation:getRowType
+Method-name:getConfig
+Method-returnType:CalciteConnectionConfig
+Method-parameters:[]
+Method-name:getFunctionsFrom
+Method-returnType:Collection<Function>
+Method-parameters:[List<String> names]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:addAll
+MethodInvocation:skip
+MethodInvocation:addAll
+MethodInvocation:getSchema
+MethodInvocation:addAll
+MethodInvocation:getPath
+MethodInvocation:getSchema
+MethodInvocation:concat
+MethodInvocation:skipLast
+MethodInvocation:last
+MethodInvocation:isCaseSensitive
+MethodInvocation:addAll
+MethodInvocation:getFunctions
+Method-name:getNamedType
+Method-returnType:RelDataType
+Method-parameters:[SqlIdentifier typeName]
+MethodInvocation:getTypeEntry
+MethodInvocation:getRootSchema
+MethodInvocation:apply
+MethodInvocation:getType
+Method-name:getAllSchemaObjectNames
+Method-returnType:List<SqlMoniker>
+Method-parameters:[List<String> names]
+MethodInvocation:getSchema
+MethodInvocation:of
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:moniker
+MethodInvocation:getSubSchemaMap
+MethodInvocation:keySet
+MethodInvocation:add
+MethodInvocation:moniker
+MethodInvocation:getTableNames
+MethodInvocation:add
+MethodInvocation:moniker
+MethodInvocation:getFunctionNames
+MethodInvocation:add
+MethodInvocation:moniker
+Method-name:moniker
+Method-returnType:SqlMonikerImpl
+Method-parameters:[CalciteSchema schema, String name, SqlMonikerType type]
+MethodInvocation:path
+MethodInvocation:size
+MethodInvocation:equals
+FieldAccess:name
+MethodInvocation:root
+Method-name:getSchemaPaths
+Method-returnType:List<List<String>>
+Method-parameters:[]
+Method-name:getTableForMember
+Method-returnType:Prepare.PreparingTable
+Method-parameters:[List<String> names]
+MethodInvocation:getTable
+Method-name:field
+Method-returnType:RelDataTypeField
+Method-parameters:[RelDataType rowType, String alias]
+MethodInvocation:field
+Method-name:matches
+Method-returnType:boolean
+Method-parameters:[String string, String name]
+MethodInvocation:matches
+Method-name:createTypeFromProjection
+Method-returnType:RelDataType
+Method-parameters:[final RelDataType type, final List<String> columnNameList]
+MethodInvocation:createTypeFromProjection
+MethodInvocation:isCaseSensitive
+Method-name:lookupOperatorOverloads
+Method-returnType:void
+Method-parameters:[final SqlIdentifier opName, SqlFunctionCategory category, SqlSyntax syntax, List<SqlOperator> operatorList, SqlNameMatcher nameMatcher]
+MethodInvocation:isTableFunction
+MethodInvocation:forEachOrdered
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getFunctionsFrom
+MethodInvocation:toOp
+Method-name:operatorTable
+Method-returnType:SqlOperatorTable
+Method-parameters:[String className]
+MethodInvocation:createRootSchema
+MethodInvocation:addFunctions
+MethodInvocation:plus
+MethodInvocation:of
+MethodInvocation:getFunctionNames
+MethodInvocation:getFunctions
+MethodInvocation:add
+MethodInvocation:toOp
+Method-name:toOp
+Method-returnType:SqlOperator
+Method-parameters:[SqlIdentifier name, final Function function]
+MethodInvocation:toOp
+Method-name:toOp
+Method-returnType:SqlOperator
+Method-parameters:[RelDataTypeFactory typeFactory, SqlIdentifier name, final Function function]
+MethodInvocation:getParameters
+MethodInvocation:getType
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:first
+MethodInvocation:getFamily
+MethodInvocation:getSqlTypeName
+MethodInvocation:family
+MethodInvocation:isOptional
+MethodInvocation:get
+MethodInvocation:getParameters
+MethodInvocation:toSql
+MethodInvocation:infer
+MethodInvocation:explicit
+MethodInvocation:infer
+MethodInvocation:explicit
+MethodInvocation:explicit
+MethodInvocation:explicit
+Method-name:infer
+Method-returnType:SqlReturnTypeInference
+Method-parameters:[final ScalarFunction function]
+MethodInvocation:getTypeFactory
+MethodInvocation:getReturnType
+MethodInvocation:getReturnType
+MethodInvocation:toSql
+Method-name:infer
+Method-returnType:SqlReturnTypeInference
+Method-parameters:[final AggregateFunction function]
+MethodInvocation:getTypeFactory
+MethodInvocation:getReturnType
+MethodInvocation:toSql
+Method-name:toSql
+Method-returnType:List<RelDataType>
+Method-parameters:[final RelDataTypeFactory typeFactory, List<RelDataType> types]
+MethodInvocation:transform
+MethodInvocation:toSql
+Method-name:toSql
+Method-returnType:RelDataType
+Method-parameters:[RelDataTypeFactory typeFactory, RelDataType type]
+MethodInvocation:getJavaClass
+MethodInvocation:createTypeWithNullability
+MethodInvocation:createSqlType
+MethodInvocation:toSql
+Method-name:getOperatorList
+Method-returnType:List<SqlOperator>
+Method-parameters:[]
+Method-name:getRootSchema
+Method-returnType:CalciteSchema
+Method-parameters:[]
+Method-name:getTypeFactory
+Method-returnType:RelDataTypeFactory
+Method-parameters:[]
+Method-name:registerRules
+Method-returnType:void
+Method-parameters:[RelOptPlanner planner]
+Method-name:isCaseSensitive
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isCaseSensitive
+Method-name:nameMatcher
+Method-returnType:SqlNameMatcher
+Method-parameters:[]
+Method-name:unwrap
+Method-returnType:C
+Method-parameters:[Class<C> aClass]
+MethodInvocation:isInstance
+MethodInvocation:cast
+Method-name:createSqlValidator
+Method-returnType:SqlValidator
+Method-parameters:[CalcitePrepare.Context context, CalcitePrepareImpl calcitePrepare]
+MethodInvocation:fun
+MethodInvocation:config
+MethodInvocation:instance
+MethodInvocation:of
+MethodInvocation:getTypeFactory
+MethodInvocation:config
+MethodInvocation:withIdentifierExpansion
+MethodInvocation:withDefaultNullCollation
+MethodInvocation:withSqlConformance
+MethodInvocation:withLenientOperatorLookup
+MethodInvocation:lenientOperatorLookup
+MethodInvocation:conformance
+MethodInvocation:defaultNullCollation

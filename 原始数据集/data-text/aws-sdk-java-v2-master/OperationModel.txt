@@ -1,0 +1,197 @@
+Class:OperationModel
+Field:operationName
+Field:deprecated
+Field:input
+Field:returnType
+Field:exceptions
+Field:simpleMethods
+Field:hasBlobMemberAsPayload
+Field:isAuthenticated
+Field:authType
+Field:isPaginated
+Field:endpointOperation
+Field:endpointCacheRequired
+Field:endpointDiscovery
+Field:inputShape
+Field:outputShape
+Field:endpointTrait
+Method-name:getOperationName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setOperationName
+Method-returnType:void
+Method-parameters:[String operationName]
+FieldAccess:operationName
+Method-name:getMethodName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:unCapitalize
+Method-name:isDeprecated
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDeprecated
+Method-returnType:void
+Method-parameters:[boolean deprecated]
+FieldAccess:deprecated
+Method-name:getDocs
+Method-returnType:String
+Method-parameters:[IntermediateModel model, ClientType clientType]
+MethodInvocation:getDocs
+Method-name:getDocs
+Method-returnType:String
+Method-parameters:[IntermediateModel model, ClientType clientType, SimpleMethodOverload methodOverload]
+MethodInvocation:getDocs
+Method-name:getDocs
+Method-returnType:String
+Method-parameters:[IntermediateModel model, ClientType clientType, SimpleMethodOverload methodOverload, DocConfiguration config]
+MethodInvocation:getDocs
+Method-name:isAuthenticated
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIsAuthenticated
+Method-returnType:void
+Method-parameters:[boolean isAuthenticated]
+FieldAccess:isAuthenticated
+Method-name:getAuthType
+Method-returnType:AuthType
+Method-parameters:[]
+Method-name:setAuthType
+Method-returnType:void
+Method-parameters:[AuthType authType]
+FieldAccess:authType
+Method-name:getInputShape
+Method-returnType:ShapeModel
+Method-parameters:[]
+Method-name:setInputShape
+Method-returnType:void
+Method-parameters:[ShapeModel inputShape]
+FieldAccess:inputShape
+Method-name:getOutputShape
+Method-returnType:ShapeModel
+Method-parameters:[]
+Method-name:setOutputShape
+Method-returnType:void
+Method-parameters:[ShapeModel outputShape]
+FieldAccess:outputShape
+Method-name:getInput
+Method-returnType:VariableModel
+Method-parameters:[]
+Method-name:setInput
+Method-returnType:void
+Method-parameters:[VariableModel input]
+FieldAccess:input
+Method-name:getReturnType
+Method-returnType:ReturnTypeModel
+Method-parameters:[]
+Method-name:setReturnType
+Method-returnType:void
+Method-parameters:[ReturnTypeModel returnType]
+FieldAccess:returnType
+Method-name:getSyncReturnType
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getReturnType
+Method-name:getExceptions
+Method-returnType:List<ExceptionModel>
+Method-parameters:[]
+Method-name:setExceptions
+Method-returnType:void
+Method-parameters:[List<ExceptionModel> exceptions]
+FieldAccess:exceptions
+Method-name:addException
+Method-returnType:void
+Method-parameters:[ExceptionModel exception]
+MethodInvocation:add
+Method-name:getSimpleMethodForms
+Method-returnType:List<SimpleMethodFormModel>
+Method-parameters:[]
+Method-name:addSimpleMethodForm
+Method-returnType:void
+Method-parameters:[List<ArgumentModel> arguments]
+FieldAccess:simpleMethods
+FieldAccess:simpleMethods
+MethodInvocation:setArguments
+MethodInvocation:add
+FieldAccess:simpleMethods
+Method-name:getHasBlobMemberAsPayload
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:hasBlobMemberAsPayload
+Method-name:setHasBlobMemberAsPayload
+Method-returnType:void
+Method-parameters:[boolean hasBlobMemberAsPayload]
+FieldAccess:hasBlobMemberAsPayload
+Method-name:hasStreamingInput
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isHasStreamingMember
+Method-name:hasStreamingOutput
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isHasStreamingMember
+Method-name:isStreaming
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasStreamingInput
+MethodInvocation:hasStreamingOutput
+Method-name:isEndpointOperation
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setEndpointOperation
+Method-returnType:void
+Method-parameters:[boolean endpointOperation]
+FieldAccess:endpointOperation
+Method-name:isEndpointCacheRequired
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setEndpointCacheRequired
+Method-returnType:void
+Method-parameters:[boolean endpointCacheRequired]
+FieldAccess:endpointCacheRequired
+Method-name:isPaginated
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setPaginated
+Method-returnType:void
+Method-parameters:[boolean paginated]
+Method-name:getEndpointDiscovery
+Method-returnType:EndpointDiscovery
+Method-parameters:[]
+Method-name:setEndpointDiscovery
+Method-returnType:void
+Method-parameters:[EndpointDiscovery endpointDiscovery]
+FieldAccess:endpointDiscovery
+Method-name:getEndpointTrait
+Method-returnType:EndpointTrait
+Method-parameters:[]
+Method-name:setEndpointTrait
+Method-returnType:void
+Method-parameters:[EndpointTrait endpointTrait]
+FieldAccess:endpointTrait
+Method-name:hasEventStreamOutput
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:containsEventStream
+Method-name:hasEventStreamInput
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:containsEventStream
+Method-name:hasRequiresLengthInInput
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isHasRequiresLengthMember
+Method-name:containsEventStream
+Method-returnType:boolean
+Method-parameters:[ShapeModel shapeModel]
+MethodInvocation:getMembers
+MethodInvocation:anyMatch
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getMembers
+MethodInvocation:getShape
+MethodInvocation:isEventStream
+MethodInvocation:getShape
+Method-name:asyncResponseTransformerVariable
+Method-returnType:String
+Method-parameters:[boolean isStreaming, boolean isRestJson, JsonProtocolSpec jsonProtocolSpec]
+MethodInvocation:hasEventStreamOutput

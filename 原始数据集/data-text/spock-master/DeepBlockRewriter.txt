@@ -1,0 +1,188 @@
+Class:DeepBlockRewriter
+Field:resources
+Field:insideInteraction
+Method-name:DeepBlockRewriter
+Method-returnType:null
+Method-parameters:[IRewriteResources resources]
+MethodInvocation:getCurrentBlock
+MethodInvocation:getAstNodeCache
+FieldAccess:resources
+Method-name:visit
+Method-returnType:void
+Method-parameters:[Block block]
+Method-name:visitAssertStatement
+Method-returnType:void
+Method-parameters:[AssertStatement stat]
+MethodInvocation:replaceVisitedStatementWith
+MethodInvocation:rewriteExplicitCondition
+Method-name:doVisitExpressionStatement
+Method-returnType:void
+Method-parameters:[ExpressionStatement stat]
+MethodInvocation:visitInteractionAwareExpressionStatement
+MethodInvocation:isWithCall
+MethodInvocation:isGroupConditionBlock
+MethodInvocation:handleInteraction
+MethodInvocation:handleImplicitCondition
+Method-name:visitInteractionAwareExpressionStatement
+Method-returnType:InteractionRewriter
+Method-parameters:[ExpressionStatement stat]
+MethodInvocation:getCurrentWithOrMockClosure
+MethodInvocation:isInteractionExpression
+Method-name:doVisitBinaryExpression
+Method-returnType:void
+Method-parameters:[BinaryExpression expression]
+MethodInvocation:getType
+MethodInvocation:getOperation
+MethodInvocation:visit
+MethodInvocation:getRightExpression
+MethodInvocation:getLeftExpression
+MethodInvocation:visit
+Method-name:doVisitClosureExpression
+Method-returnType:void
+Method-parameters:[ClosureExpression expr]
+MethodInvocation:defineRecorders
+Method-name:visitDeclarationExpression
+Method-returnType:void
+Method-parameters:[DeclarationExpression expr]
+MethodInvocation:visitBinaryExpression
+Method-name:doVisitMethodCallExpression
+Method-returnType:void
+Method-parameters:[MethodCallExpression expr]
+MethodInvocation:handleMockCall
+MethodInvocation:handleThrownCall
+MethodInvocation:handleOldCall
+MethodInvocation:handleInteractionBlockCall
+MethodInvocation:handleImplicitCallOnMethodParam
+MethodInvocation:forbidUseOfSuperInFixtureMethod
+Method-name:handleImplicitCallOnMethodParam
+Method-returnType:boolean
+Method-parameters:[MethodCallExpression expr]
+MethodInvocation:isImplicitThis
+MethodInvocation:getMethodAsString
+MethodInvocation:asList
+MethodInvocation:getParameters
+MethodInvocation:getAst
+MethodInvocation:getCurrentMethod
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:setMethod
+MethodInvocation:setObjectExpression
+Method-name:handleInteraction
+Method-returnType:boolean
+Method-parameters:[InteractionRewriter rewriter, ExpressionStatement stat]
+MethodInvocation:rewrite
+MethodInvocation:error
+MethodInvocation:getErrorReporter
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:replaceVisitedStatementWith
+Method-name:handleImplicitCondition
+Method-returnType:boolean
+Method-parameters:[ExpressionStatement stat]
+MethodInvocation:isThenOrExpectBlock
+MethodInvocation:isWithCall
+MethodInvocation:isConditionBlock
+MethodInvocation:isGroupConditionBlock
+MethodInvocation:isImplicitCondition
+MethodInvocation:checkIsValidImplicitCondition
+MethodInvocation:isGroupConditionBlock
+MethodInvocation:isWithCall
+MethodInvocation:isGroupConditionBlock
+MethodInvocation:isInvocationWithImplicitThis
+MethodInvocation:getExpression
+MethodInvocation:equals
+MethodInvocation:getMethodName
+MethodInvocation:getExpression
+MethodInvocation:equals
+MethodInvocation:getMethodName
+MethodInvocation:getExpression
+MethodInvocation:replaceObjectExpressionWithCurrentClosure
+MethodInvocation:rewriteImplicitCondition
+MethodInvocation:replaceVisitedStatementWith
+Method-name:replaceObjectExpressionWithCurrentClosure
+Method-returnType:void
+Method-parameters:[ExpressionStatement stat]
+MethodInvocation:getExpression
+MethodInvocation:referenceToCurrentClosure
+MethodInvocation:setObjectExpression
+Method-name:referenceToCurrentClosure
+Method-returnType:MethodCallExpression
+Method-parameters:[]
+Method-name:handleMockCall
+Method-returnType:boolean
+Method-parameters:[MethodCallExpression expr]
+MethodInvocation:isTestDouble
+MethodInvocation:isStatic
+MethodInvocation:getAst
+MethodInvocation:getCurrentMethod
+MethodInvocation:error
+MethodInvocation:getErrorReporter
+MethodInvocation:expand
+Method-name:handleThrownCall
+Method-returnType:boolean
+Method-parameters:[MethodCallExpression expr]
+MethodInvocation:isExceptionCondition
+MethodInvocation:error
+MethodInvocation:getErrorReporter
+MethodInvocation:isExceptionConditionFound
+MethodInvocation:error
+MethodInvocation:getErrorReporter
+MethodInvocation:isMatch
+MethodInvocation:error
+MethodInvocation:getErrorReporter
+MethodInvocation:isThrownCall
+MethodInvocation:expand
+Method-name:handleOldCall
+Method-returnType:boolean
+Method-parameters:[MethodCallExpression expr]
+MethodInvocation:isOldCall
+MethodInvocation:error
+MethodInvocation:getErrorReporter
+MethodInvocation:setMethod
+MethodInvocation:getMethodAsString
+MethodInvocation:getArgumentList
+MethodInvocation:captureOldValue
+MethodInvocation:get
+MethodInvocation:set
+Method-name:handleInteractionBlockCall
+Method-returnType:boolean
+Method-parameters:[MethodCallExpression expr]
+MethodInvocation:isInteractionCall
+Method-name:defineRecorders
+Method-returnType:void
+Method-parameters:[ClosureExpression expr, boolean enableErrorCollector]
+MethodInvocation:defineRecorders
+MethodInvocation:getStatements
+Method-name:forbidUseOfSuperInFixtureMethod
+Method-returnType:boolean
+Method-parameters:[MethodCallExpression expr]
+MethodInvocation:getCurrentMethod
+MethodInvocation:getObjectExpression
+MethodInvocation:isSuperExpression
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getMethodAsString
+MethodInvocation:error
+MethodInvocation:getErrorReporter
+Method-name:getCurrentWithOrMockClosure
+Method-returnType:ClosureExpression
+Method-parameters:[]
+MethodInvocation:isWithCall
+MethodInvocation:isTestDouble
+MethodInvocation:getClosureExpr
+Method-name:isThenOrExpectBlock
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isImplicitCondition
+Method-returnType:boolean
+Method-parameters:[Statement stat]
+MethodInvocation:getExpression
+Method-name:checkIsValidImplicitCondition
+Method-returnType:void
+Method-parameters:[Statement stat]
+MethodInvocation:getExpression
+MethodInvocation:ofType
+MethodInvocation:getType
+MethodInvocation:getOperation
+MethodInvocation:error
+MethodInvocation:getErrorReporter

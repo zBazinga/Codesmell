@@ -1,0 +1,57 @@
+Class:AbstractJavaNode
+Field:parser
+Field:scope
+Field:comment
+Field:root
+Method-name:AbstractJavaNode
+Method-returnType:null
+Method-parameters:[int id]
+Method-name:AbstractJavaNode
+Method-returnType:null
+Method-parameters:[JavaParser parser, int id]
+FieldAccess:parser
+Method-name:jjtOpen
+Method-returnType:void
+Method-parameters:[]
+Method-name:jjtClose
+Method-returnType:void
+Method-parameters:[]
+Method-name:jjtAccept
+Method-returnType:Object
+Method-parameters:[JavaParserVisitor visitor, Object data]
+MethodInvocation:visit
+Method-name:childrenAccept
+Method-returnType:Object
+Method-parameters:[JavaParserVisitor visitor, Object data]
+MethodInvocation:jjtAccept
+Method-name:getRoot
+Method-returnType:ASTCompilationUnit
+Method-parameters:[]
+MethodInvocation:getRoot
+MethodInvocation:getParent
+Method-name:getScope
+Method-returnType:Scope
+Method-parameters:[]
+MethodInvocation:getScope
+Method-name:setScope
+Method-returnType:void
+Method-parameters:[Scope scope]
+FieldAccess:scope
+Method-name:comment
+Method-returnType:void
+Method-parameters:[Comment theComment]
+Method-name:comment
+Method-returnType:Comment
+Method-parameters:[]
+Method-name:getXPathNodeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:isAStringBuilderBuffer
+Method-returnType:boolean
+Method-parameters:[String name, ConsecutiveAppendsShouldReuseRule consecutiveAppendsShouldReuseRule]
+MethodInvocation:getDeclarations
+MethodInvocation:getScope
+MethodInvocation:keySet
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:isExactlyAny

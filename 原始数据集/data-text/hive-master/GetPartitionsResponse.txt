@@ -1,0 +1,237 @@
+Class:GetPartitionsResponse
+Field:STRUCT_DESC
+Field:PARTITION_SPEC_FIELD_DESC
+Field:schemes
+MethodInvocation:put
+MethodInvocation:put
+Field:partitionSpec
+Field:_Fields
+MethodInvocation:PARTITION_SPEC
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:GetPartitionsResponse
+Method-returnType:null
+Method-parameters:[]
+Method-name:GetPartitionsResponse
+Method-returnType:null
+Method-parameters:[List<PartitionSpec> partitionSpec]
+FieldAccess:partitionSpec
+Method-name:GetPartitionsResponse
+Method-returnType:null
+Method-parameters:[GetPartitionsResponse other]
+MethodInvocation:isSetPartitionSpec
+MethodInvocation:size
+MethodInvocation:add
+FieldAccess:partitionSpec
+Method-name:deepCopy
+Method-returnType:GetPartitionsResponse
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:partitionSpec
+Method-name:getPartitionSpecSize
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:partitionSpec
+MethodInvocation:size
+FieldAccess:partitionSpec
+Method-name:getPartitionSpecIterator
+Method-returnType:java.util.Iterator<PartitionSpec>
+Method-parameters:[]
+FieldAccess:partitionSpec
+MethodInvocation:iterator
+FieldAccess:partitionSpec
+Method-name:getPartitionSpec
+Method-returnType:List<PartitionSpec>
+Method-parameters:[]
+FieldAccess:partitionSpec
+Method-name:setPartitionSpec
+Method-returnType:void
+Method-parameters:[List<PartitionSpec> partitionSpec]
+FieldAccess:partitionSpec
+Method-name:unsetPartitionSpec
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:partitionSpec
+Method-name:isSetPartitionSpec
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:partitionSpec
+Method-name:setPartitionSpecIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:partitionSpec
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, Object value]
+MethodInvocation:unsetPartitionSpec
+MethodInvocation:setPartitionSpec
+Method-name:getFieldValue
+Method-returnType:Object
+Method-parameters:[_Fields field]
+MethodInvocation:getPartitionSpec
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:isSetPartitionSpec
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[GetPartitionsResponse that]
+MethodInvocation:isSetPartitionSpec
+MethodInvocation:isSetPartitionSpec
+MethodInvocation:equals
+FieldAccess:partitionSpec
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSetPartitionSpec
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[GetPartitionsResponse other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetPartitionSpec
+MethodInvocation:isSetPartitionSpec
+MethodInvocation:isSetPartitionSpec
+MethodInvocation:compareTo
+FieldAccess:partitionSpec
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+FieldAccess:partitionSpec
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:partitionSpec
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:GetPartitionsResponseStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:GetPartitionsResponseStandardScheme
+Method-parameters:[]
+Class:GetPartitionsResponseStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, GetPartitionsResponse struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readListBegin
+MethodInvocation:read
+MethodInvocation:add
+MethodInvocation:readListEnd
+MethodInvocation:setPartitionSpecIsSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, GetPartitionsResponse struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeListBegin
+MethodInvocation:size
+MethodInvocation:write
+MethodInvocation:writeListEnd
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:GetPartitionsResponseTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:GetPartitionsResponseTupleScheme
+Method-parameters:[]
+Class:GetPartitionsResponseTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, GetPartitionsResponse struct]
+MethodInvocation:isSetPartitionSpec
+MethodInvocation:set
+MethodInvocation:writeBitSet
+MethodInvocation:isSetPartitionSpec
+MethodInvocation:writeI32
+MethodInvocation:size
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, GetPartitionsResponse struct]
+MethodInvocation:readBitSet
+MethodInvocation:get
+MethodInvocation:readI32
+MethodInvocation:read
+MethodInvocation:add
+MethodInvocation:setPartitionSpecIsSet

@@ -1,0 +1,69 @@
+Class:TextPosition
+Field:NOT_AVAILABLE
+Field:serialVersionUID
+Field:line
+Field:column
+Method-name:TextPosition
+Method-returnType:null
+Method-parameters:[int line, int column]
+FieldAccess:line
+FieldAccess:column
+Method-name:getLine
+Method-returnType:int
+Method-parameters:[]
+Method-name:getColumn
+Method-returnType:int
+Method-parameters:[]
+Method-name:getLineIndex
+Method-returnType:int
+Method-parameters:[]
+Method-name:getColumnIndex
+Method-returnType:int
+Method-parameters:[]
+Method-name:shiftVertically
+Method-returnType:TextPosition
+Method-parameters:[int numLines]
+MethodInvocation:create
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:format
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[TextPosition other]
+Method-name:startOf
+Method-returnType:TextPosition
+Method-parameters:[Token token]
+MethodInvocation:create
+MethodInvocation:getStartLine
+MethodInvocation:getStartColumn
+Method-name:startOf
+Method-returnType:TextPosition
+Method-parameters:[ASTNode node]
+MethodInvocation:create
+MethodInvocation:getLineNumber
+MethodInvocation:getColumnNumber
+Method-name:endOf
+Method-returnType:TextPosition
+Method-parameters:[ASTNode node]
+MethodInvocation:create
+MethodInvocation:getLastLineNumber
+MethodInvocation:getLastColumnNumber
+Method-name:create
+Method-returnType:TextPosition
+Method-parameters:[int line, int column]
+Method-name:contains
+Method-returnType:boolean
+Method-parameters:[TextRegion textRegion]
+MethodInvocation:compareTo
+MethodInvocation:getStart
+MethodInvocation:compareTo
+MethodInvocation:getEnd

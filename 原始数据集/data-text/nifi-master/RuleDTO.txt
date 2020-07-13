@@ -1,0 +1,50 @@
+Class:RuleDTO
+Field:id
+Field:name
+Field:conditions
+Field:actions
+Method-name:getId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setId
+Method-returnType:void
+Method-parameters:[String id]
+FieldAccess:id
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setName
+Method-returnType:void
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:getConditions
+Method-returnType:Set<ConditionDTO>
+Method-parameters:[]
+Method-name:setConditions
+Method-returnType:void
+Method-parameters:[Set<ConditionDTO> conditions]
+FieldAccess:conditions
+Method-name:getActions
+Method-returnType:Set<ActionDTO>
+Method-parameters:[]
+Method-name:setActions
+Method-returnType:void
+Method-parameters:[Set<ActionDTO> actions]
+FieldAccess:actions
+Method-name:createRule
+Method-returnType:Rule
+Method-parameters:[UpdateAttributeModelFactory updateAttributeModelFactory]
+MethodInvocation:getName
+MethodInvocation:isEmpty
+MethodInvocation:trim
+MethodInvocation:getName
+MethodInvocation:setId
+MethodInvocation:getId
+MethodInvocation:setName
+MethodInvocation:getName
+MethodInvocation:setConditions
+MethodInvocation:createConditions
+MethodInvocation:getConditions
+MethodInvocation:setActions
+MethodInvocation:createActions
+MethodInvocation:getActions

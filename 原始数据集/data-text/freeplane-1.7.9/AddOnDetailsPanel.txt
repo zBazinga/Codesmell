@@ -1,0 +1,171 @@
+Class:AddOnDetailsPanel
+Field:maxWidth
+Field:warning
+Field:entryNavigator
+MethodInvocation:createEntryNavigator
+Method-name:AddOnDetailsPanel
+Method-returnType:null
+Method-parameters:[final AddOnProperties addOn, final String warning]
+FieldAccess:warning
+MethodInvocation:setLayout
+MethodInvocation:decode
+MethodInvocation:decode
+MethodInvocation:createWarningLabel
+MethodInvocation:add
+MethodInvocation:createImageLabel
+MethodInvocation:add
+MethodInvocation:createTitleLabel
+MethodInvocation:add
+MethodInvocation:createAuthorLabel
+MethodInvocation:add
+MethodInvocation:createHorizontalBox
+MethodInvocation:add
+MethodInvocation:getText
+MethodInvocation:add
+MethodInvocation:createAddOnHomepageButton
+MethodInvocation:add
+MethodInvocation:createDetails
+MethodInvocation:add
+Method-name:createEntryNavigator
+Method-returnType:EntryNavigator
+Method-parameters:[]
+MethodInvocation:createNavigator
+Method-name:createImageLabel
+Method-returnType:JLabel
+Method-parameters:[AddOnProperties addOn]
+MethodInvocation:setIcon
+MethodInvocation:createIconOrReturnNotFoundIcon
+MethodInvocation:getName
+Method-name:AddOnDetailsPanel
+Method-returnType:null
+Method-parameters:[AddOnProperties addOn]
+Method-name:createWarningLabel
+Method-returnType:JLabel
+Method-parameters:[final AddOnProperties addOn]
+MethodInvocation:replaceAll
+Method-name:createTitleLabel
+Method-returnType:JLabel
+Method-parameters:[final AddOnProperties addOn]
+MethodInvocation:toHtml
+MethodInvocation:getTranslatedName
+MethodInvocation:replaceAll
+MethodInvocation:getVersion
+Method-name:createAuthorLabel
+Method-returnType:JLabel
+Method-parameters:[final AddOnProperties addOn]
+MethodInvocation:getAuthor
+MethodInvocation:getText
+MethodInvocation:toHtml
+MethodInvocation:getAuthor
+Method-name:createAddOnHomepageButton
+Method-returnType:JComponent
+Method-parameters:[final AddOnProperties addOn]
+MethodInvocation:createHtmlLinkStyleButton
+MethodInvocation:toURI
+MethodInvocation:getHomepage
+MethodInvocation:toString
+MethodInvocation:getHomepage
+MethodInvocation:warn
+Method-name:createDetails
+Method-returnType:JComponent
+Method-parameters:[final AddOnProperties addOn]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toHtml
+MethodInvocation:getDescription
+MethodInvocation:append
+MethodInvocation:getScripts
+MethodInvocation:isEmpty
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:row
+MethodInvocation:getText
+MethodInvocation:getText
+MethodInvocation:getText
+MethodInvocation:append
+MethodInvocation:row
+MethodInvocation:bold
+MethodInvocation:getText
+MethodInvocation:toXMLEscapedText
+MethodInvocation:formatMenuLocation
+MethodInvocation:formatShortcut
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:setAutoscrolls
+MethodInvocation:createIconOrReturnNull
+MethodInvocation:getName
+MethodInvocation:setIcon
+Method-name:toHtml
+Method-returnType:String
+Method-parameters:[String htmlOrPlainText]
+MethodInvocation:isHtmlNode
+MethodInvocation:replaceAll
+MethodInvocation:toHTMLEscapedText
+Method-name:formatShortcut
+Method-returnType:String
+Method-parameters:[final Script script]
+MethodInvocation:makeMenuItemKey
+MethodInvocation:getAcceleratorManager
+MethodInvocation:getResourceController
+MethodInvocation:getAccelerator
+MethodInvocation:getKeyStroke
+MethodInvocation:keyStrokeToString
+Method-name:formatMenuLocation
+Method-returnType:String
+Method-parameters:[ScriptAddOnProperties.Script script]
+MethodInvocation:getCurrentModeController
+MethodInvocation:getGenericMenuStructure
+MethodInvocation:getUserInputListenerFactory
+MethodInvocation:replaceAliases
+MethodInvocation:split
+MethodInvocation:listIterator
+MethodInvocation:asList
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:isEmpty
+MethodInvocation:getChild
+MethodInvocation:previous
+MethodInvocation:getLocationDescription
+MethodInvocation:hasNext
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:scriptNameToMenuItemTitle
+MethodInvocation:next
+MethodInvocation:toString
+Method-name:bold
+Method-returnType:String
+Method-parameters:[final String text]
+Method-name:row
+Method-returnType:String
+Method-parameters:[final String td, final Object... columns]
+MethodInvocation:join
+Method-name:getText
+Method-returnType:String
+Method-parameters:[String key, Object... parameters]
+MethodInvocation:getRawText
+MethodInvocation:getResourceKey
+MethodInvocation:format
+MethodInvocation:getResourceKey
+Method-name:getResourceKey
+Method-returnType:String
+Method-parameters:[final String key]
+Method-name:getWarning
+Method-returnType:String
+Method-parameters:[]
+Method-name:setWarning
+Method-returnType:void
+Method-parameters:[String warning]
+FieldAccess:warning
+Method-name:getMaxWidth
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxWidth
+Method-returnType:void
+Method-parameters:[int maxWidth]
+FieldAccess:maxWidth
+Method-name:getPreferredSize
+Method-returnType:Dimension
+Method-parameters:[]
+MethodInvocation:min

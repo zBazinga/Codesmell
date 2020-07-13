@@ -1,0 +1,88 @@
+Class:ExecMapperContext
+Field:lastInputPath
+Field:currentInputPath
+Field:inputFileChecked
+Field:fileId
+Field:localWork
+Field:fetchOperators
+Field:jc
+Field:ioCxt
+Field:currentBigBucketFile
+Method-name:getCurrentBigBucketFile
+Method-returnType:String
+Method-parameters:[]
+Method-name:setCurrentBigBucketFile
+Method-returnType:void
+Method-parameters:[String currentBigBucketFile]
+FieldAccess:currentBigBucketFile
+Method-name:ExecMapperContext
+Method-returnType:null
+Method-parameters:[JobConf jc]
+FieldAccess:jc
+MethodInvocation:get
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:inputFileChanged
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getInputPath
+FieldAccess:ioCxt
+MethodInvocation:equals
+Method-name:resetRow
+Method-returnType:void
+Method-parameters:[]
+Method-name:getLastInputPath
+Method-returnType:Path
+Method-parameters:[]
+Method-name:setLastInputPath
+Method-returnType:void
+Method-parameters:[Path lastInputPath]
+FieldAccess:lastInputPath
+Method-name:getCurrentInputPath
+Method-returnType:Path
+Method-parameters:[]
+MethodInvocation:getInputPath
+FieldAccess:ioCxt
+Method-name:setCurrentInputPath
+Method-returnType:void
+Method-parameters:[Path currentInputPath]
+FieldAccess:currentInputPath
+Method-name:getJc
+Method-returnType:JobConf
+Method-parameters:[]
+Method-name:setJc
+Method-returnType:void
+Method-parameters:[JobConf jc]
+FieldAccess:jc
+Method-name:getLocalWork
+Method-returnType:MapredLocalWork
+Method-parameters:[]
+Method-name:setLocalWork
+Method-returnType:void
+Method-parameters:[MapredLocalWork localWork]
+FieldAccess:localWork
+Method-name:getFileId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setFileId
+Method-returnType:void
+Method-parameters:[String fileId]
+FieldAccess:fileId
+Method-name:getFetchOperators
+Method-returnType:Map<String,FetchOperator>
+Method-parameters:[]
+Method-name:setFetchOperators
+Method-returnType:void
+Method-parameters:[Map<String,FetchOperator> fetchOperators]
+FieldAccess:fetchOperators
+Method-name:getIoCxt
+Method-returnType:IOContext
+Method-parameters:[]
+Method-name:isInputFileChangeSensitive
+Method-returnType:boolean
+Method-parameters:[MapJoinOperator mapJoinOperator]
+MethodInvocation:getLocalWork
+MethodInvocation:getInputFileChangeSensitive
+MethodInvocation:getLocalWork

@@ -1,0 +1,83 @@
+Class:PerspectiveLodCalculator
+Field:cam
+Field:pixelError
+Field:turnOffLod
+Method-name:PerspectiveLodCalculator
+Method-returnType:null
+Method-parameters:[]
+Method-name:PerspectiveLodCalculator
+Method-returnType:null
+Method-parameters:[Camera cam, float pixelError]
+FieldAccess:cam
+FieldAccess:pixelError
+Method-name:getCameraConstant
+Method-returnType:float
+Method-parameters:[Camera cam, float pixelLimit]
+MethodInvocation:getFrustumNear
+MethodInvocation:abs
+MethodInvocation:getFrustumTop
+MethodInvocation:getHeight
+Method-name:calculateLod
+Method-returnType:boolean
+Method-parameters:[TerrainPatch patch, List<Vector3f> locations, HashMap<String,UpdatedTerrainPatch> updates]
+MethodInvocation:getLod
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:setNewLod
+MethodInvocation:setPreviousLod
+MethodInvocation:getLodEntropies
+MethodInvocation:getCameraConstant
+MethodInvocation:getCenterLocation
+MethodInvocation:distance
+MethodInvocation:get
+MethodInvocation:getMaxLod
+MethodInvocation:getMaxLod
+MethodInvocation:getLod
+MethodInvocation:getLod
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:setNewLod
+MethodInvocation:setPreviousLod
+Method-name:getCenterLocation
+Method-returnType:Vector3f
+Method-parameters:[TerrainPatch patch]
+MethodInvocation:clone
+MethodInvocation:getWorldTranslation
+MethodInvocation:getSize
+MethodInvocation:getSize
+Method-name:clone
+Method-returnType:LodCalculator
+Method-parameters:[]
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter ex]
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter im]
+Method-name:usesVariableLod
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getPixelError
+Method-returnType:float
+Method-parameters:[]
+Method-name:setPixelError
+Method-returnType:void
+Method-parameters:[float pixelError]
+FieldAccess:pixelError
+Method-name:setCam
+Method-returnType:void
+Method-parameters:[Camera cam]
+FieldAccess:cam
+Method-name:turnOffLod
+Method-returnType:void
+Method-parameters:[]
+Method-name:isLodOff
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:turnOnLod
+Method-returnType:void
+Method-parameters:[]

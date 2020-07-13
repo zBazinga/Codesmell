@@ -1,0 +1,55 @@
+Class:ReactiveAdapter
+Field:descriptor
+Field:toPublisherFunction
+Field:fromPublisherFunction
+Method-name:ReactiveAdapter
+Method-returnType:null
+Method-parameters:[ReactiveTypeDescriptor descriptor, Function<Object,Publisher<?>> toPublisherFunction, Function<Publisher<?>,Object> fromPublisherFunction]
+MethodInvocation:notNull
+MethodInvocation:notNull
+MethodInvocation:notNull
+FieldAccess:descriptor
+FieldAccess:toPublisherFunction
+FieldAccess:fromPublisherFunction
+Method-name:getDescriptor
+Method-returnType:ReactiveTypeDescriptor
+Method-parameters:[]
+FieldAccess:descriptor
+Method-name:getReactiveType
+Method-returnType:Class<?>
+Method-parameters:[]
+MethodInvocation:getReactiveType
+MethodInvocation:getDescriptor
+Method-name:isMultiValue
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isMultiValue
+MethodInvocation:getDescriptor
+Method-name:isNoValue
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isNoValue
+MethodInvocation:getDescriptor
+Method-name:supportsEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:supportsEmpty
+MethodInvocation:getDescriptor
+Method-name:toPublisher
+Method-returnType:Publisher<T>
+Method-parameters:[@Nullable Object source]
+MethodInvocation:getEmptyValue
+MethodInvocation:getDescriptor
+MethodInvocation:apply
+FieldAccess:toPublisherFunction
+Method-name:fromPublisher
+Method-returnType:Object
+Method-parameters:[Publisher<?> publisher]
+MethodInvocation:apply
+FieldAccess:fromPublisherFunction
+Method-name:getElementType
+Method-returnType:ResolvableType
+Method-parameters:[ResolvableType genericType, AbstractMessageWriterResultHandler abstractMessageWriterResultHandler]
+MethodInvocation:isNoValue
+MethodInvocation:forClass
+MethodInvocation:forClass

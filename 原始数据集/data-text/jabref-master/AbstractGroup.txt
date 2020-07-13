@@ -1,0 +1,120 @@
+Class:AbstractGroup
+Field:name
+Field:context
+Field:color
+MethodInvocation:empty
+Field:isExpanded
+Field:description
+MethodInvocation:empty
+Field:iconName
+MethodInvocation:empty
+Method-name:AbstractGroup
+Method-returnType:null
+Method-parameters:[String name, GroupHierarchyType context]
+MethodInvocation:setValue
+FieldAccess:name
+FieldAccess:context
+MethodInvocation:requireNonNull
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getValue
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:getValue
+FieldAccess:name
+MethodInvocation:getValue
+MethodInvocation:equals
+FieldAccess:description
+MethodInvocation:equals
+FieldAccess:context
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+MethodInvocation:getValue
+Method-name:getColor
+Method-returnType:Optional<Color>
+Method-parameters:[]
+Method-name:setColor
+Method-returnType:void
+Method-parameters:[Color color]
+FieldAccess:color
+MethodInvocation:of
+Method-name:setColor
+Method-returnType:void
+Method-parameters:[String colorString]
+MethodInvocation:isBlank
+MethodInvocation:empty
+MethodInvocation:setColor
+MethodInvocation:valueOf
+Method-name:isExpanded
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setExpanded
+Method-returnType:void
+Method-parameters:[boolean expanded]
+Method-name:getDescription
+Method-returnType:Optional<String>
+Method-parameters:[]
+Method-name:setDescription
+Method-returnType:void
+Method-parameters:[String description]
+MethodInvocation:isBlank
+FieldAccess:description
+MethodInvocation:empty
+FieldAccess:description
+MethodInvocation:of
+Method-name:getIconName
+Method-returnType:Optional<String>
+Method-parameters:[]
+Method-name:setIconName
+Method-returnType:void
+Method-parameters:[String iconName]
+MethodInvocation:isBlank
+FieldAccess:iconName
+MethodInvocation:empty
+FieldAccess:iconName
+MethodInvocation:of
+Method-name:getHierarchicalContext
+Method-returnType:GroupHierarchyType
+Method-parameters:[]
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getValue
+Method-name:nameProperty
+Method-returnType:StringProperty
+Method-parameters:[]
+Method-name:contains
+Method-returnType:boolean
+Method-parameters:[BibEntry entry]
+Method-name:isMatch
+Method-returnType:boolean
+Method-parameters:[BibEntry entry]
+MethodInvocation:contains
+Method-name:containsAny
+Method-returnType:boolean
+Method-parameters:[List<BibEntry> entries]
+MethodInvocation:contains
+Method-name:containsAll
+Method-returnType:boolean
+Method-parameters:[List<BibEntry> entries]
+MethodInvocation:contains
+Method-name:isDynamic
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:deepCopy
+Method-returnType:AbstractGroup
+Method-parameters:[]
+Method-name:addNewGroup
+Method-returnType:void
+Method-parameters:[CountingUndoManager undoManager, GroupTreeNodeViewModel groupTreeNodeViewModel]
+MethodInvocation:fromGroup
+MethodInvocation:addChild
+MethodInvocation:getNode
+MethodInvocation:addEdit

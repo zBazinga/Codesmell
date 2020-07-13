@@ -1,0 +1,213 @@
+Class:RuleModelVisitor
+Field:factPattern
+Field:model
+Field:vars
+Method-name:RuleModelVisitor
+Method-returnType:null
+Method-parameters:[]
+Method-name:RuleModelVisitor
+Method-returnType:null
+Method-parameters:[Map<InterpolationVariable,Integer> vars]
+FieldAccess:vars
+Method-name:RuleModelVisitor
+Method-returnType:null
+Method-parameters:[IPattern pattern, Map<InterpolationVariable,Integer> vars]
+FieldAccess:vars
+MethodInvocation:addLhsItem
+FieldAccess:model
+Method-name:RuleModelVisitor
+Method-returnType:null
+Method-parameters:[IAction action, Map<InterpolationVariable,Integer> vars]
+FieldAccess:vars
+MethodInvocation:addRhsItem
+FieldAccess:model
+Method-name:RuleModelVisitor
+Method-returnType:null
+Method-parameters:[IPattern[] lhs, Map<InterpolationVariable,Integer> vars]
+FieldAccess:vars
+FieldAccess:lhs
+FieldAccess:model
+Method-name:RuleModelVisitor
+Method-returnType:null
+Method-parameters:[IAction[] rhs, Map<InterpolationVariable,Integer> vars]
+FieldAccess:vars
+FieldAccess:rhs
+FieldAccess:model
+Method-name:parseStringPattern
+Method-returnType:void
+Method-parameters:[String text]
+MethodInvocation:length
+MethodInvocation:indexOf
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:size
+Method-name:visit
+Method-returnType:void
+Method-parameters:[Object o]
+MethodInvocation:visitRuleModel
+MethodInvocation:visitFactPattern
+MethodInvocation:visitCompositeFieldConstraint
+MethodInvocation:visitSingleFieldConstraint
+MethodInvocation:visitSingleFieldConstraint
+MethodInvocation:visitCompositeFactPattern
+MethodInvocation:visitFreeFormLine
+MethodInvocation:visitFromAccumulateCompositeFactPattern
+MethodInvocation:visitFromCollectCompositeFactPattern
+MethodInvocation:visitFromCompositeFactPattern
+MethodInvocation:visitDSLSentence
+MethodInvocation:visitActionFieldList
+MethodInvocation:visitActionFieldList
+MethodInvocation:visitActionFieldList
+MethodInvocation:visitTemplateVariableAware
+Method-name:visitActionFieldList
+Method-returnType:void
+Method-parameters:[ActionInsertFact afl]
+MethodInvocation:getFactType
+MethodInvocation:getFieldValues
+MethodInvocation:getValue
+MethodInvocation:getType
+MethodInvocation:getField
+MethodInvocation:getNature
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:size
+Method-name:visitActionFieldList
+Method-returnType:void
+Method-parameters:[ActionSetField afl]
+MethodInvocation:getLHSBindingType
+MethodInvocation:getVariable
+MethodInvocation:getFieldValues
+MethodInvocation:getValue
+MethodInvocation:getType
+MethodInvocation:getField
+MethodInvocation:getNature
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:size
+Method-name:visitActionFieldList
+Method-returnType:void
+Method-parameters:[ActionUpdateField afl]
+MethodInvocation:getLHSBindingType
+MethodInvocation:getVariable
+MethodInvocation:getFieldValues
+MethodInvocation:getValue
+MethodInvocation:getType
+MethodInvocation:getField
+MethodInvocation:getNature
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:size
+Method-name:visitCompositeFieldConstraint
+Method-returnType:void
+Method-parameters:[CompositeFieldConstraint cfc]
+MethodInvocation:getConstraints
+MethodInvocation:getConstraints
+MethodInvocation:visit
+Method-name:visitDSLSentence
+Method-returnType:void
+Method-parameters:[final DSLSentence sentence]
+MethodInvocation:getDefinition
+MethodInvocation:parseStringPattern
+Method-name:visitFactPattern
+Method-returnType:void
+Method-parameters:[FactPattern pattern]
+FieldAccess:factPattern
+MethodInvocation:getFieldConstraints
+MethodInvocation:visit
+Method-name:visitFreeFormLine
+Method-returnType:void
+Method-parameters:[FreeFormLine ffl]
+MethodInvocation:parseStringPattern
+MethodInvocation:getText
+Method-name:visitFromAccumulateCompositeFactPattern
+Method-returnType:void
+Method-parameters:[FromAccumulateCompositeFactPattern pattern]
+MethodInvocation:visit
+MethodInvocation:getFactPattern
+MethodInvocation:visit
+MethodInvocation:getSourcePattern
+MethodInvocation:parseStringPattern
+MethodInvocation:getActionCode
+MethodInvocation:parseStringPattern
+MethodInvocation:getInitCode
+MethodInvocation:parseStringPattern
+MethodInvocation:getReverseCode
+Method-name:visitFromCollectCompositeFactPattern
+Method-returnType:void
+Method-parameters:[FromCollectCompositeFactPattern pattern]
+MethodInvocation:visit
+MethodInvocation:getFactPattern
+MethodInvocation:visit
+MethodInvocation:getRightPattern
+Method-name:visitFromCompositeFactPattern
+Method-returnType:void
+Method-parameters:[FromCompositeFactPattern pattern]
+MethodInvocation:visit
+MethodInvocation:getFactPattern
+MethodInvocation:parseStringPattern
+MethodInvocation:getTextOther
+MethodInvocation:getExpression
+Method-name:visitRuleModel
+Method-returnType:void
+Method-parameters:[RuleModel model]
+FieldAccess:model
+MethodInvocation:visit
+MethodInvocation:visit
+Method-name:visitSingleFieldConstraint
+Method-returnType:void
+Method-parameters:[SingleFieldConstraint sfc]
+MethodInvocation:getValue
+MethodInvocation:getFieldType
+MethodInvocation:getFactType
+MethodInvocation:getFieldName
+MethodInvocation:getOperator
+MethodInvocation:getConstraintValueType
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:size
+MethodInvocation:getConnectives
+FieldAccess:length
+MethodInvocation:getConnectives
+MethodInvocation:getConnectives
+MethodInvocation:getValue
+MethodInvocation:getFieldType
+MethodInvocation:getFactType
+MethodInvocation:getFieldName
+MethodInvocation:getConstraintValueType
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:size
+Method-name:visitSingleFieldConstraint
+Method-returnType:void
+Method-parameters:[SingleFieldConstraintEBLeftSide sfexp]
+MethodInvocation:getGenericType
+MethodInvocation:getExpressionLeftSide
+MethodInvocation:getPreviousClassType
+MethodInvocation:getExpressionLeftSide
+MethodInvocation:getClassType
+MethodInvocation:getExpressionLeftSide
+MethodInvocation:getValue
+MethodInvocation:getFieldName
+MethodInvocation:getConstraintValueType
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:size
+MethodInvocation:getConnectives
+FieldAccess:length
+MethodInvocation:getConnectives
+MethodInvocation:getConnectives
+MethodInvocation:getValue
+MethodInvocation:getFieldName
+MethodInvocation:getConstraintValueType
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:size
+Method-name:visitTemplateVariableAware
+Method-returnType:void
+Method-parameters:[final TemplateAware templateAware]
+MethodInvocation:extractInterpolationVariables
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:size

@@ -1,0 +1,182 @@
+Class:PlanMapper
+Field:groups
+Field:objectMap
+Method-name:getRootOps
+Method-returnType:List<Operator>
+Method-parameters:[ReOptimizePlugin reOptimizePlugin]
+MethodInvocation:getAll
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getNumChild
+MethodInvocation:remove
+Class:CompositeMap
+Field:comparedMap
+Field:identityMap
+Field:typeCompared
+Method-name:CompositeMap
+Method-returnType:null
+Method-parameters:[Class<?>... comparedTypes]
+MethodInvocation:isFinal
+MethodInvocation:getModifiers
+MethodInvocation:newHashSet
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:size
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+Method-name:containsKey
+Method-returnType:boolean
+Method-parameters:[Object key]
+MethodInvocation:containsKey
+MethodInvocation:containsKey
+Method-name:containsValue
+Method-returnType:boolean
+Method-parameters:[Object value]
+MethodInvocation:containsValue
+MethodInvocation:containsValue
+Method-name:get
+Method-returnType:V
+Method-parameters:[Object key]
+MethodInvocation:get
+MethodInvocation:get
+Method-name:put
+Method-returnType:V
+Method-parameters:[K key, V value]
+MethodInvocation:shouldCompare
+MethodInvocation:getClass
+MethodInvocation:put
+MethodInvocation:put
+Method-name:remove
+Method-returnType:V
+Method-parameters:[Object key]
+MethodInvocation:shouldCompare
+MethodInvocation:getClass
+MethodInvocation:remove
+MethodInvocation:remove
+Method-name:shouldCompare
+Method-returnType:boolean
+Method-parameters:[Class<?> key]
+MethodInvocation:contains
+Method-name:putAll
+Method-returnType:void
+Method-parameters:[Map<? extends K,? extends V> m]
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:clear
+Method-name:keySet
+Method-returnType:Set<K>
+Method-parameters:[]
+MethodInvocation:union
+MethodInvocation:keySet
+MethodInvocation:keySet
+Method-name:values
+Method-returnType:Collection<V>
+Method-parameters:[]
+Method-name:entrySet
+Method-returnType:Set<Entry<K,V>>
+Method-parameters:[]
+MethodInvocation:union
+MethodInvocation:entrySet
+MethodInvocation:entrySet
+Class:EquivGroup
+Field:members
+Method-name:add
+Method-returnType:void
+Method-parameters:[Object o]
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:put
+Method-name:getAll
+Method-returnType:List<T>
+Method-parameters:[Class<T> clazz]
+MethodInvocation:isInstance
+MethodInvocation:add
+Method-name:link
+Method-returnType:void
+Method-parameters:[Object o1, Object o2]
+MethodInvocation:link
+Method-name:merge
+Method-returnType:void
+Method-parameters:[Object o1, Object o2]
+MethodInvocation:link
+Method-name:link
+Method-returnType:void
+Method-parameters:[Object o1, Object o2, boolean mayMerge]
+MethodInvocation:newSetFromMap
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:getKeyFor
+MethodInvocation:add
+MethodInvocation:getKeyFor
+MethodInvocation:newSetFromMap
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:removeAll
+MethodInvocation:isEmpty
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+Field:signatureCache
+MethodInvocation:newCache
+Method-name:getKeyFor
+Method-returnType:Object
+Method-parameters:[Object o]
+MethodInvocation:getSignature
+Method-name:getAll
+Method-returnType:List<T>
+Method-parameters:[Class<T> clazz]
+MethodInvocation:addAll
+MethodInvocation:getAll
+Method-name:runMapper
+Method-returnType:void
+Method-parameters:[GroupTransformer mapper]
+MethodInvocation:map
+Method-name:lookupAll
+Method-returnType:List<T>
+Method-parameters:[Class<T> clazz, Object key]
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:getAll
+Method-name:lookup
+Method-returnType:T
+Method-parameters:[Class<T> clazz, Object key]
+MethodInvocation:lookupAll
+MethodInvocation:size
+MethodInvocation:get
+Method-name:iterateGroups
+Method-returnType:Iterator<EquivGroup>
+Method-parameters:[]
+MethodInvocation:iterator
+Method-name:getSignatureOf
+Method-returnType:OpTreeSignature
+Method-parameters:[Operator<?> op]
+MethodInvocation:getSignature
+Method-name:clearSignatureCache
+Method-returnType:void
+Method-parameters:[]
+Field:auxSignatureCache
+MethodInvocation:newCache
+Method-name:getAuxSignatureOf
+Method-returnType:AuxOpTreeSignature
+Method-parameters:[Operator<?> op]
+MethodInvocation:getSignature

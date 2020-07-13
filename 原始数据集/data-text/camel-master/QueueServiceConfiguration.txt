@@ -1,0 +1,59 @@
+Class:QueueServiceConfiguration
+Field:queueName
+Field:azureQueueClient
+Field:operation
+Field:messageTimeToLive
+Field:messageVisibilityDelay
+Field:queuePrefix
+Method-name:getQueueName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setQueueName
+Method-returnType:void
+Method-parameters:[String queueName]
+FieldAccess:queueName
+Method-name:getAzureQueueClient
+Method-returnType:CloudQueue
+Method-parameters:[]
+Method-name:setAzureQueueClient
+Method-returnType:void
+Method-parameters:[CloudQueue azureQueueClient]
+FieldAccess:azureQueueClient
+Method-name:getOperation
+Method-returnType:QueueServiceOperations
+Method-parameters:[]
+Method-name:setOperation
+Method-returnType:void
+Method-parameters:[QueueServiceOperations operation]
+FieldAccess:operation
+Method-name:getMessageTimeToLive
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMessageTimeToLive
+Method-returnType:void
+Method-parameters:[int messageTimeToLive]
+FieldAccess:messageTimeToLive
+Method-name:getMessageVisibilityDelay
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMessageVisibilityDelay
+Method-returnType:void
+Method-parameters:[int messageVisibilityDelay]
+FieldAccess:messageVisibilityDelay
+Method-name:getQueuePrefix
+Method-returnType:String
+Method-parameters:[]
+Method-name:setQueuePrefix
+Method-returnType:void
+Method-parameters:[String queuePrefix]
+FieldAccess:queuePrefix
+Method-name:copy
+Method-returnType:QueueServiceConfiguration
+Method-parameters:[]
+Method-name:checkCredentials
+Method-returnType:void
+Method-parameters:[QueueServiceComponent queueServiceComponent]
+MethodInvocation:getAzureQueueClient
+MethodInvocation:getAccountCredentials
+MethodInvocation:getCredentials
+MethodInvocation:getServiceClient

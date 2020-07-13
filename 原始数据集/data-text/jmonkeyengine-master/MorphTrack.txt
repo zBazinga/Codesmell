@@ -1,0 +1,80 @@
+Class:MorphTrack
+Field:length
+Field:target
+Field:weights
+Field:interpolator
+Field:times
+Field:nbMorphTargets
+Method-name:MorphTrack
+Method-returnType:null
+Method-parameters:[]
+Method-name:MorphTrack
+Method-returnType:null
+Method-parameters:[Geometry target, float[] times, float[] weights, int nbMorphTargets]
+FieldAccess:target
+FieldAccess:nbMorphTargets
+MethodInvocation:setKeyframes
+Method-name:getWeights
+Method-returnType:float[]
+Method-parameters:[]
+Method-name:getTimes
+Method-returnType:float[]
+Method-parameters:[]
+Method-name:setTimes
+Method-returnType:void
+Method-parameters:[float[] times]
+FieldAccess:times
+Method-name:setKeyframes
+Method-returnType:void
+Method-parameters:[float[] times, float[] weights]
+Method-name:getLength
+Method-returnType:double
+Method-parameters:[]
+Method-name:getDataAtTime
+Method-returnType:void
+Method-parameters:[double t, float[] store]
+MethodInvocation:arraycopy
+MethodInvocation:interpolateWeights
+Method-name:setFrameInterpolator
+Method-returnType:void
+Method-parameters:[FrameInterpolator interpolator]
+FieldAccess:interpolator
+Method-name:getTarget
+Method-returnType:Geometry
+Method-parameters:[]
+Method-name:setTarget
+Method-returnType:void
+Method-parameters:[Geometry target]
+FieldAccess:target
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter ex]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter im]
+MethodInvocation:getCapsule
+MethodInvocation:readFloatArray
+MethodInvocation:readFloatArray
+MethodInvocation:readSavable
+MethodInvocation:readInt
+MethodInvocation:setTimes
+Method-name:jmeClone
+Method-returnType:Object
+Method-parameters:[]
+Method-name:cloneFields
+Method-returnType:void
+Method-parameters:[Cloner cloner, Object original]
+FieldAccess:target
+MethodInvocation:clone
+Method-name:interpolateMorphTrack
+Method-returnType:void
+Method-parameters:[double t, ClipAction clipAction]
+MethodInvocation:getTarget
+MethodInvocation:getMorphState
+MethodInvocation:getDataAtTime
+MethodInvocation:setMorphState

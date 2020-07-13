@@ -1,0 +1,65 @@
+Class:StoreFileMetaData
+Field:name
+Field:length
+Field:checksum
+Field:writtenBy
+Field:hash
+Method-name:StoreFileMetaData
+Method-returnType:null
+Method-parameters:[String name, long length, String checksum, Version writtenBy]
+Method-name:StoreFileMetaData
+Method-returnType:null
+Method-parameters:[String name, long length, String checksum, Version writtenBy, BytesRef hash]
+FieldAccess:name
+MethodInvocation:requireNonNull
+FieldAccess:length
+FieldAccess:checksum
+MethodInvocation:requireNonNull
+FieldAccess:writtenBy
+MethodInvocation:requireNonNull
+FieldAccess:hash
+Method-name:StoreFileMetaData
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readString
+MethodInvocation:readVLong
+MethodInvocation:readString
+MethodInvocation:parse
+MethodInvocation:readString
+MethodInvocation:readBytesRef
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeString
+MethodInvocation:writeVLong
+MethodInvocation:writeString
+MethodInvocation:writeString
+MethodInvocation:toString
+MethodInvocation:writeBytesRef
+Method-name:name
+Method-returnType:String
+Method-parameters:[]
+Method-name:length
+Method-returnType:long
+Method-parameters:[]
+Method-name:checksum
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:checksum
+Method-name:isSame
+Method-returnType:boolean
+Method-parameters:[StoreFileMetaData other]
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:writtenBy
+Method-returnType:Version
+Method-parameters:[]
+Method-name:hash
+Method-returnType:BytesRef
+Method-parameters:[]
+Method-name:createVerifyingOutput
+Method-returnType:IndexOutput
+Method-parameters:[String fileName, final IOContext context, Store store]

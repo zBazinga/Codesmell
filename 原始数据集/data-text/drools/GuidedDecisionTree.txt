@@ -1,0 +1,52 @@
+Class:GuidedDecisionTree
+Field:imports
+Field:packageName
+Field:treeName
+Field:root
+Field:errors
+Method-name:getImports
+Method-returnType:Imports
+Method-parameters:[]
+FieldAccess:imports
+Method-name:setImports
+Method-returnType:void
+Method-parameters:[final Imports imports]
+FieldAccess:imports
+MethodInvocation:checkNotNull
+Method-name:getPackageName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:packageName
+Method-name:setPackageName
+Method-returnType:void
+Method-parameters:[final String packageName]
+FieldAccess:packageName
+MethodInvocation:checkNotNull
+Method-name:getTreeName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:treeName
+Method-name:setTreeName
+Method-returnType:void
+Method-parameters:[final String treeName]
+FieldAccess:treeName
+MethodInvocation:checkNotNull
+Method-name:getRoot
+Method-returnType:TypeNode
+Method-parameters:[]
+FieldAccess:root
+Method-name:setRoot
+Method-returnType:void
+Method-parameters:[final TypeNode root]
+FieldAccess:root
+Method-name:getParserErrors
+Method-returnType:List<GuidedDecisionTreeParserError>
+Method-parameters:[]
+Method-name:marshal
+Method-returnType:String
+Method-parameters:[GuidedDecisionTreeDRLPersistence guidedDecisionTreeDRLPersistence]
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:append
+MethodInvocation:visit
+MethodInvocation:toString

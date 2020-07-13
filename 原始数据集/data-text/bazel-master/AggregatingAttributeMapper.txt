@@ -1,0 +1,262 @@
+Class:AggregatingAttributeMapper
+Field:rule
+Method-name:AggregatingAttributeMapper
+Method-returnType:null
+Method-parameters:[Rule rule]
+MethodInvocation:getPackage
+MethodInvocation:getRuleClassObject
+MethodInvocation:getLabel
+MethodInvocation:getAttributeContainer
+FieldAccess:rule
+Method-name:of
+Method-returnType:AggregatingAttributeMapper
+Method-parameters:[Rule rule]
+Method-name:addDuplicateLabels
+Method-returnType:ImmutableSet.Builder<Label>
+Method-parameters:[ImmutableSet.Builder<Label> builder, List<Label> labels]
+MethodInvocation:duplicatedElementsOf
+MethodInvocation:isEmpty
+MethodInvocation:builderWithExpectedSize
+MethodInvocation:size
+MethodInvocation:addAll
+Method-name:extractLabels
+Method-returnType:ImmutableList<Label>
+Method-parameters:[Type<?> type, Object value]
+MethodInvocation:builder
+MethodInvocation:visitLabels
+MethodInvocation:add
+MethodInvocation:build
+Method-name:getNonConfigurableAttributes
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getNonConfigurableAttributes
+MethodInvocation:getRuleClassObject
+Method-name:visitLabels
+Method-returnType:void
+Method-parameters:[Attribute attribute, Type.LabelVisitor<Attribute> visitor]
+MethodInvocation:visitLabels
+Method-name:visitLabels
+Method-returnType:void
+Method-parameters:[Attribute attribute, boolean includeSelectKeys, Type.LabelVisitor<Attribute> visitor]
+MethodInvocation:getType
+MethodInvocation:getSelectorList
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:getLabelClass
+MethodInvocation:getComputedDefault
+MethodInvocation:getName
+MethodInvocation:getType
+MethodInvocation:visitAttribute
+MethodInvocation:getName
+MethodInvocation:getType
+MethodInvocation:visitLabels
+MethodInvocation:getSelectors
+MethodInvocation:entrySet
+MethodInvocation:getEntries
+MethodInvocation:isReservedLabel
+MethodInvocation:getKey
+MethodInvocation:visit
+MethodInvocation:getKey
+MethodInvocation:isValueSet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getDefaultValue
+MethodInvocation:visitLabels
+Method-name:getReachableLabels
+Method-returnType:Set<Label>
+Method-parameters:[String attributeName, boolean includeSelectKeys]
+MethodInvocation:builder
+MethodInvocation:visitLabels
+MethodInvocation:getAttributeDefinition
+MethodInvocation:add
+MethodInvocation:build
+Method-name:checkForDuplicateLabels
+Method-returnType:Set<Label>
+Method-parameters:[Attribute attribute]
+MethodInvocation:getName
+MethodInvocation:getType
+MethodInvocation:getSelectorList
+MethodInvocation:getName
+MethodInvocation:size
+MethodInvocation:getSelectors
+MethodInvocation:visitAttribute
+MethodInvocation:addDuplicateLabels
+MethodInvocation:extractLabels
+MethodInvocation:getSelectors
+MethodInvocation:values
+MethodInvocation:getEntries
+MethodInvocation:extractLabels
+MethodInvocation:addDuplicateLabels
+MethodInvocation:addAll
+MethodInvocation:addAll
+MethodInvocation:addDuplicateLabels
+MethodInvocation:of
+MethodInvocation:build
+Method-name:getConcatenatedSelectorListsOfListType
+Method-returnType:Iterable<T>
+Method-parameters:[String attributeName, Type<T> type]
+MethodInvocation:getSelectorList
+MethodInvocation:getSelectors
+MethodInvocation:add
+MethodInvocation:concat
+MethodInvocation:values
+MethodInvocation:getEntries
+MethodInvocation:copyOf
+Method-name:visitAttribute
+Method-returnType:Iterable<T>
+Method-parameters:[String attributeName, Type<T> type]
+MethodInvocation:getSelectorList
+MethodInvocation:builder
+MethodInvocation:visitConfigurableAttribute
+MethodInvocation:getSelectors
+MethodInvocation:build
+MethodInvocation:getComputedDefault
+MethodInvocation:getPossibleValues
+MethodInvocation:get
+MethodInvocation:of
+MethodInvocation:of
+Method-name:visitConfigurableAttribute
+Method-returnType:void
+Method-parameters:[List<Selector<T>> selectors, BoundSelectorPaths boundSelectorPaths, Type<T> type, T currentValueSoFar, ImmutableList.Builder<T> valuesBuilder]
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:subList
+MethodInvocation:size
+MethodInvocation:getEntries
+MethodInvocation:getChosenKey
+MethodInvocation:keySet
+MethodInvocation:get
+MethodInvocation:visitConfigurableAttribute
+MethodInvocation:concat
+MethodInvocation:of
+MethodInvocation:entrySet
+MethodInvocation:bind
+MethodInvocation:keySet
+MethodInvocation:getKey
+MethodInvocation:visitConfigurableAttribute
+MethodInvocation:getValue
+MethodInvocation:concat
+MethodInvocation:of
+MethodInvocation:getValue
+MethodInvocation:unbind
+MethodInvocation:keySet
+Method-name:visitAttributes
+Method-returnType:List<Map<String,Object>>
+Method-parameters:[List<String> attributes, ComputationLimiter<TException> limiter]
+MethodInvocation:visitAttributesInner
+MethodInvocation:size
+Method-name:visitAttributesInner
+Method-returnType:void
+Method-parameters:[List<String> attributes, List<Map<String,Object>> mappings, Map<String,Object> currentMap, AtomicInteger combinationsSoFar, ComputationLimiter<TException> limiter]
+MethodInvocation:isEmpty
+MethodInvocation:onComputationCount
+MethodInvocation:incrementAndGet
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:visitAttribute
+MethodInvocation:getAttributeType
+MethodInvocation:subList
+MethodInvocation:size
+MethodInvocation:put
+MethodInvocation:visitAttributesInner
+Method-name:createMapBackedAttributeMap
+Method-returnType:AttributeMap
+Method-parameters:[final Map<String,Object> directMap]
+Method-name:get
+Method-returnType:T
+Method-parameters:[String attributeName, Type<T> type]
+MethodInvocation:checkType
+MethodInvocation:contains
+MethodInvocation:getNonConfigurableAttributes
+MethodInvocation:get
+MethodInvocation:containsKey
+MethodInvocation:cast
+MethodInvocation:get
+Method-name:isConfigurable
+Method-returnType:boolean
+Method-parameters:[String attributeName]
+MethodInvocation:isConfigurable
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:getLabel
+Method-returnType:Label
+Method-parameters:[]
+MethodInvocation:getLabel
+Method-name:getRuleClassName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getRuleClassName
+Method-name:getAttributeNames
+Method-returnType:Iterable<String>
+Method-parameters:[]
+MethodInvocation:build
+MethodInvocation:addAll
+MethodInvocation:addAll
+MethodInvocation:builder
+MethodInvocation:keySet
+MethodInvocation:getNonConfigurableAttributes
+Method-name:visitLabels
+Method-returnType:Collection<DepEdge>
+Method-parameters:[]
+MethodInvocation:visitLabels
+Method-name:visitLabels
+Method-returnType:Collection<DepEdge>
+Method-parameters:[Attribute attribute]
+MethodInvocation:visitLabels
+Method-name:getPackageDefaultHdrsCheck
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPackageDefaultHdrsCheck
+Method-name:getPackageDefaultTestOnly
+Method-returnType:Boolean
+Method-parameters:[]
+MethodInvocation:getPackageDefaultTestOnly
+Method-name:getPackageDefaultDeprecation
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPackageDefaultDeprecation
+Method-name:getPackageDefaultCopts
+Method-returnType:ImmutableList<String>
+Method-parameters:[]
+MethodInvocation:getPackageDefaultCopts
+Method-name:getAttributeType
+Method-returnType:Type<?>
+Method-parameters:[String attrName]
+MethodInvocation:getAttributeType
+Method-name:getAttributeDefinition
+Method-returnType:Attribute
+Method-parameters:[String attrName]
+MethodInvocation:getAttributeDefinition
+Method-name:isAttributeValueExplicitlySpecified
+Method-returnType:boolean
+Method-parameters:[String attributeName]
+MethodInvocation:isAttributeValueExplicitlySpecified
+Method-name:has
+Method-returnType:boolean
+Method-parameters:[String attrName]
+MethodInvocation:has
+Method-name:has
+Method-returnType:boolean
+Method-parameters:[String attrName, Type<T> type]
+MethodInvocation:has
+Class:BoundSelectorPaths
+Field:bindings
+Method-name:bind
+Method-returnType:void
+Method-parameters:[Set<Label> allKeys, Label chosenKey]
+MethodInvocation:checkState
+MethodInvocation:contains
+MethodInvocation:verify
+MethodInvocation:put
+Method-name:unbind
+Method-returnType:void
+Method-parameters:[Set<Label> allKeys]
+MethodInvocation:verifyNotNull
+MethodInvocation:remove
+Method-name:getChosenKey
+Method-returnType:Label
+Method-parameters:[Set<Label> allKeys]
+MethodInvocation:get

@@ -1,0 +1,425 @@
+Class:VolcanoPlanner
+Field:root
+Field:classOperands
+MethodInvocation:create
+Field:allSets
+Field:mapDigestToRel
+Field:mapRel2Subset
+Field:prunedNodes
+Field:registeredSchemas
+Field:ruleQueue
+Field:traitDefs
+Field:nextSetId
+Field:originalRoot
+Field:locked
+Field:noneConventionHasInfiniteCost
+Field:materializations
+Field:latticeByName
+Field:provenanceMap
+Field:ruleCallStack
+Field:zeroCost
+Field:tasks
+Field:nextTaskId
+Field:topDownOpt
+MethodInvocation:value
+Method-name:VolcanoPlanner
+Method-returnType:null
+Method-parameters:[]
+Method-name:VolcanoPlanner
+Method-returnType:null
+Method-parameters:[Context externalContext]
+Method-name:VolcanoPlanner
+Method-returnType:null
+Method-parameters:[RelOptCostFactory costFactory, Context externalContext]
+FieldAccess:zeroCost
+MethodInvocation:makeZeroCost
+FieldAccess:costFactory
+FieldAccess:provenanceMap
+MethodInvocation:isDebugEnabled
+MethodInvocation:blackholeMap
+Method-name:getPhaseRuleMappingInitializer
+Method-returnType:VolcanoPlannerPhaseRuleMappingInitializer
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:get
+Method-name:setTopDownOpt
+Method-returnType:void
+Method-parameters:[boolean value]
+Method-name:isRegistered
+Method-returnType:boolean
+Method-parameters:[RelNode rel]
+MethodInvocation:get
+Method-name:setRoot
+Method-returnType:void
+Method-parameters:[RelNode rel]
+MethodInvocation:registerMetadataRels
+FieldAccess:root
+MethodInvocation:registerImpl
+FieldAccess:originalRoot
+FieldAccess:originalRoot
+MethodInvocation:ensureRootConverters
+Method-name:getRoot
+Method-returnType:RelNode
+Method-parameters:[]
+Method-name:getMaterializations
+Method-returnType:List<RelOptMaterialization>
+Method-parameters:[]
+MethodInvocation:copyOf
+Method-name:addMaterialization
+Method-returnType:void
+Method-parameters:[RelOptMaterialization materialization]
+MethodInvocation:add
+Method-name:addLattice
+Method-returnType:void
+Method-parameters:[RelOptLattice lattice]
+MethodInvocation:put
+MethodInvocation:getQualifiedName
+Method-name:getLattice
+Method-returnType:RelOptLattice
+Method-parameters:[RelOptTable table]
+MethodInvocation:get
+MethodInvocation:getQualifiedName
+Method-name:registerMaterializations
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:unwrap
+MethodInvocation:materializationsEnabled
+MethodInvocation:useMaterializedViews
+MethodInvocation:run
+MethodInvocation:registerImpl
+MethodInvocation:getApplicableMaterializations
+MethodInvocation:removeAll
+MethodInvocation:registerImpl
+MethodInvocation:createCastRel
+MethodInvocation:getRowType
+MethodInvocation:registerImpl
+MethodInvocation:useLattices
+MethodInvocation:copyOf
+MethodInvocation:values
+MethodInvocation:isEmpty
+FieldAccess:left
+MethodInvocation:get
+MethodInvocation:run
+MethodInvocation:registerImpl
+Method-name:getSet
+Method-returnType:RelSet
+Method-parameters:[RelNode rel]
+Method-name:addRelTraitDef
+Method-returnType:boolean
+Method-parameters:[RelTraitDef relTraitDef]
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:clearRelTraitDefs
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:getRelTraitDefs
+Method-returnType:List<RelTraitDef>
+Method-parameters:[]
+Method-name:emptyTraitSet
+Method-returnType:RelTraitSet
+Method-parameters:[]
+MethodInvocation:multiple
+MethodInvocation:plus
+MethodInvocation:getDefault
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getRules
+MethodInvocation:removeRule
+MethodInvocation:clear
+FieldAccess:classOperands
+MethodInvocation:clear
+FieldAccess:allSets
+MethodInvocation:clear
+FieldAccess:mapDigestToRel
+MethodInvocation:clear
+FieldAccess:mapRel2Subset
+MethodInvocation:clear
+FieldAccess:prunedNodes
+MethodInvocation:clear
+FieldAccess:ruleQueue
+MethodInvocation:clear
+FieldAccess:materializations
+MethodInvocation:clear
+FieldAccess:latticeByName
+MethodInvocation:clear
+FieldAccess:provenanceMap
+Method-name:addRule
+Method-returnType:boolean
+Method-parameters:[RelOptRule rule]
+MethodInvocation:getOperands
+MethodInvocation:subClasses
+MethodInvocation:getMatchedClass
+MethodInvocation:isAssignableFrom
+MethodInvocation:put
+MethodInvocation:getInTrait
+MethodInvocation:getTraitDef
+MethodInvocation:contains
+MethodInvocation:registerConverterRule
+Method-name:removeRule
+Method-returnType:boolean
+Method-parameters:[RelOptRule rule]
+MethodInvocation:removeIf
+MethodInvocation:values
+MethodInvocation:equals
+MethodInvocation:getRule
+MethodInvocation:getInTrait
+MethodInvocation:getTraitDef
+MethodInvocation:contains
+MethodInvocation:deregisterConverterRule
+Method-name:onNewClass
+Method-returnType:void
+Method-parameters:[RelNode node]
+MethodInvocation:getClass
+MethodInvocation:values
+MethodInvocation:getOperands
+MethodInvocation:isAssignableFrom
+MethodInvocation:getMatchedClass
+MethodInvocation:put
+Method-name:changeTraits
+Method-returnType:RelNode
+Method-parameters:[final RelNode rel, RelTraitSet toTraits]
+Method-name:chooseDelegate
+Method-returnType:RelOptPlanner
+Method-parameters:[]
+Method-name:findBestExp
+Method-returnType:RelNode
+Method-parameters:[]
+Method-name:checkCancel
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:get
+Method-name:registerMetadataRels
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:register
+MethodInvocation:keySet
+Method-name:ensureRootConverters
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getRels
+MethodInvocation:add
+MethodInvocation:getInput
+MethodInvocation:difference
+MethodInvocation:getTraitSet
+MethodInvocation:getTraitSet
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:register
+MethodInvocation:getCluster
+MethodInvocation:getTraitDef
+MethodInvocation:get
+MethodInvocation:getTraitSet
+Method-name:register
+Method-returnType:RelSubset
+Method-parameters:[RelNode rel, RelNode equivRel]
+Method-name:ensureRegistered
+Method-returnType:RelSubset
+Method-parameters:[RelNode rel, RelNode equivRel]
+Method-name:isValid
+Method-returnType:boolean
+Method-parameters:[Litmus litmus]
+MethodInvocation:getRoot
+MethodInvocation:get
+MethodInvocation:getMetadataQuerySupplier
+MethodInvocation:getCluster
+MethodInvocation:getRoot
+MethodInvocation:fail
+MethodInvocation:fail
+MethodInvocation:contains
+MethodInvocation:fail
+MethodInvocation:getCost
+MethodInvocation:equals
+MethodInvocation:fail
+MethodInvocation:getRels
+MethodInvocation:getCost
+MethodInvocation:isLt
+MethodInvocation:fail
+MethodInvocation:succeed
+Method-name:registerAbstractRelationalRules
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:registerAbstractRelationalRules
+Method-name:registerSchema
+Method-returnType:void
+Method-parameters:[RelOptSchema schema]
+MethodInvocation:add
+MethodInvocation:registerRules
+Method-name:setNoneConventionHasInfiniteCost
+Method-returnType:void
+Method-parameters:[boolean infinite]
+FieldAccess:noneConventionHasInfiniteCost
+Method-name:getCost
+Method-returnType:RelOptCost
+Method-parameters:[RelNode rel, RelMetadataQuery mq]
+Method-name:getSubset
+Method-returnType:RelSubset
+Method-parameters:[RelNode rel]
+Method-name:getSubset
+Method-returnType:RelSubset
+Method-parameters:[RelNode rel, RelTraitSet traits]
+MethodInvocation:getSubset
+Method-name:getSubset
+Method-returnType:RelSubset
+Method-parameters:[RelNode rel, RelTraitSet traits, boolean createIfMissing]
+MethodInvocation:equals
+MethodInvocation:getTraitSet
+MethodInvocation:getSet
+MethodInvocation:getOrCreateSubset
+MethodInvocation:getCluster
+MethodInvocation:getSubset
+Method-name:isSeedNode
+Method-returnType:boolean
+Method-parameters:[RelNode node]
+FieldAccess:set
+MethodInvocation:getSubset
+MethodInvocation:contains
+Method-name:changeTraitsUsingConverters
+Method-returnType:RelNode
+Method-parameters:[RelNode rel, RelTraitSet toTraits]
+Method-name:setImportance
+Method-returnType:void
+Method-parameters:[RelNode rel, double importance]
+Method-name:prune
+Method-returnType:void
+Method-parameters:[RelNode rel]
+MethodInvocation:add
+Method-name:dump
+Method-returnType:void
+Method-parameters:[PrintWriter pw]
+MethodInvocation:println
+MethodInvocation:println
+MethodInvocation:explain
+MethodInvocation:value
+MethodInvocation:println
+MethodInvocation:println
+MethodInvocation:dumpSets
+MethodInvocation:value
+MethodInvocation:println
+MethodInvocation:println
+MethodInvocation:dumpGraphviz
+MethodInvocation:println
+Method-name:toDot
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:dumpGraphviz
+MethodInvocation:flush
+MethodInvocation:toString
+Method-name:rename
+Method-returnType:void
+Method-parameters:[RelNode rel]
+Method-name:reregister
+Method-returnType:void
+Method-parameters:[RelSet set, RelNode rel]
+Method-name:checkPruned
+Method-returnType:void
+Method-parameters:[RelNode rel, RelNode duplicateRel]
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:canonize
+Method-returnType:RelSubset
+Method-parameters:[final RelSubset subset]
+MethodInvocation:getOrCreateSubset
+MethodInvocation:getCluster
+MethodInvocation:getTraitSet
+Method-name:fireRules
+Method-returnType:void
+Method-parameters:[RelNode rel]
+MethodInvocation:get
+MethodInvocation:getClass
+MethodInvocation:matches
+MethodInvocation:match
+Method-name:fixUpInputs
+Method-returnType:boolean
+Method-parameters:[RelNode rel]
+MethodInvocation:getInputs
+MethodInvocation:canonize
+MethodInvocation:replaceInput
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:clearCache
+Method-name:merge
+Method-returnType:RelSet
+Method-parameters:[RelSet set, RelSet set2]
+Method-name:equivRoot
+Method-returnType:RelSet
+Method-parameters:[RelSet s]
+MethodInvocation:forward2
+Method-name:forward2
+Method-returnType:RelSet
+Method-parameters:[RelSet s, RelSet p]
+MethodInvocation:forward1
+MethodInvocation:forward1
+Method-name:forward1
+Method-returnType:RelSet
+Method-parameters:[RelSet s, RelSet p]
+Method-name:registerImpl
+Method-returnType:RelSubset
+Method-parameters:[RelNode rel, RelSet set]
+Method-name:addRelToSet
+Method-returnType:RelSubset
+Method-parameters:[RelNode rel, RelSet set]
+MethodInvocation:add
+MethodInvocation:put
+MethodInvocation:getMetadataQuery
+MethodInvocation:getCluster
+MethodInvocation:propagateCostImprovements
+Method-name:registerSubset
+Method-returnType:RelSubset
+Method-parameters:[RelSet set, RelSubset subset]
+MethodInvocation:trace
+MethodInvocation:getId
+MethodInvocation:merge
+Method-name:registerMetadataProviders
+Method-returnType:void
+Method-parameters:[List<RelMetadataProvider> list]
+MethodInvocation:add
+Method-name:getRelMetadataTimestamp
+Method-returnType:long
+Method-parameters:[RelNode rel]
+MethodInvocation:getSubset
+Method-name:normalizePlan
+Method-returnType:String
+Method-parameters:[String plan]
+MethodInvocation:compile
+MethodInvocation:matcher
+MethodInvocation:find
+MethodInvocation:group
+MethodInvocation:replace
+Method-name:setLocked
+Method-returnType:void
+Method-parameters:[boolean locked]
+FieldAccess:locked
+Class:DeferringRuleCall
+Method-name:DeferringRuleCall
+Method-returnType:null
+Method-parameters:[VolcanoPlanner planner, RelOptRuleOperand operand]
+Method-name:onMatch
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getOperand0
+MethodInvocation:addMatch
+Class:Provenance
+Field:EMPTY
+Class:UnknownProvenance
+Class:DirectProvenance
+Field:source
+Method-name:DirectProvenance
+Method-returnType:null
+Method-parameters:[RelNode source]
+FieldAccess:source
+Class:RuleProvenance
+Field:rule
+Field:rels
+Field:callId
+Method-name:RuleProvenance
+Method-returnType:null
+Method-parameters:[RelOptRule rule, ImmutableList<RelNode> rels, int callId]
+FieldAccess:rule
+FieldAccess:rels
+FieldAccess:callId

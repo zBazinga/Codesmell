@@ -1,0 +1,93 @@
+Class:ExprNodeDesc
+Field:serialVersionUID
+Field:typeInfo
+Method-name:ExprNodeDesc
+Method-returnType:null
+Method-parameters:[]
+Method-name:ExprNodeDesc
+Method-returnType:null
+Method-parameters:[TypeInfo typeInfo]
+FieldAccess:typeInfo
+Method-name:clone
+Method-returnType:ExprNodeDesc
+Method-parameters:[]
+Method-name:isSame
+Method-returnType:boolean
+Method-parameters:[Object o]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+Method-name:getTypeInfo
+Method-returnType:TypeInfo
+Method-parameters:[]
+Method-name:setTypeInfo
+Method-returnType:void
+Method-parameters:[TypeInfo typeInfo]
+FieldAccess:typeInfo
+Method-name:getExprString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:assert
+Method-name:getExprStringForExplain
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:getExprString
+Method-returnType:String
+Method-parameters:[boolean sortChildren]
+MethodInvocation:getExprString
+Method-name:getWritableObjectInspector
+Method-returnType:ObjectInspector
+Method-parameters:[]
+MethodInvocation:getStandardWritableObjectInspectorFromTypeInfo
+Method-name:getTypeString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getTypeName
+Method-name:getCols
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:getChildren
+Method-returnType:List<ExprNodeDesc>
+Method-parameters:[]
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:findVariable
+Method-returnType:int
+Method-parameters:[ConvertAstToSearchArg convertAstToSearchArg]
+MethodInvocation:getChildren
+MethodInvocation:size
+MethodInvocation:get
+Class:ExprNodeDescEqualityWrapper
+Field:exprNodeDesc
+Field:hashcode
+Method-name:ExprNodeDescEqualityWrapper
+Method-returnType:null
+Method-parameters:[ExprNodeDesc exprNodeDesc]
+FieldAccess:exprNodeDesc
+FieldAccess:hashcode
+MethodInvocation:hashCode
+Method-name:getExprNodeDesc
+Method-returnType:ExprNodeDesc
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:isSame
+FieldAccess:exprNodeDesc
+MethodInvocation:getExprNodeDesc
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:transform
+Method-returnType:Collection<ExprNodeDescEqualityWrapper>
+Method-parameters:[Collection<ExprNodeDesc> descs]
+MethodInvocation:size
+MethodInvocation:add

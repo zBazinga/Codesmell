@@ -1,0 +1,220 @@
+Class:StreamNode
+Field:serialVersionUID
+Field:id
+Field:parallelism
+Field:maxParallelism
+Field:minResources
+Field:preferredResources
+Field:managedMemoryWeight
+Field:bufferTimeout
+Field:operatorName
+Field:slotSharingGroup
+Field:coLocationGroup
+Field:statePartitioners
+Field:stateKeySerializer
+Field:operatorFactory
+Field:outputSelectors
+Field:typeSerializersIn
+Field:typeSerializerOut
+Field:inEdges
+Field:outEdges
+Field:jobVertexClass
+Field:inputFormat
+Field:outputFormat
+Field:transformationUID
+Field:userHash
+Method-name:StreamNode
+Method-returnType:null
+Method-parameters:[Integer id, @Nullable String slotSharingGroup, @Nullable String coLocationGroup, StreamOperator<?> operator, String operatorName, List<OutputSelector<?>> outputSelector, Class<? extends AbstractInvokable> jobVertexClass]
+MethodInvocation:of
+Method-name:StreamNode
+Method-returnType:null
+Method-parameters:[Integer id, @Nullable String slotSharingGroup, @Nullable String coLocationGroup, StreamOperatorFactory<?> operatorFactory, String operatorName, List<OutputSelector<?>> outputSelector, Class<? extends AbstractInvokable> jobVertexClass]
+FieldAccess:id
+FieldAccess:operatorName
+FieldAccess:operatorFactory
+FieldAccess:outputSelectors
+FieldAccess:jobVertexClass
+FieldAccess:slotSharingGroup
+FieldAccess:coLocationGroup
+Method-name:addOutEdge
+Method-returnType:void
+Method-parameters:[StreamEdge outEdge]
+MethodInvocation:getSourceId
+MethodInvocation:getId
+MethodInvocation:add
+Method-name:getOutEdges
+Method-returnType:List<StreamEdge>
+Method-parameters:[]
+Method-name:getInEdges
+Method-returnType:List<StreamEdge>
+Method-parameters:[]
+Method-name:getOutEdgeIndices
+Method-returnType:List<Integer>
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getTargetId
+Method-name:getInEdgeIndices
+Method-returnType:List<Integer>
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getSourceId
+Method-name:getId
+Method-returnType:int
+Method-parameters:[]
+Method-name:getParallelism
+Method-returnType:int
+Method-parameters:[]
+Method-name:setParallelism
+Method-returnType:void
+Method-parameters:[Integer parallelism]
+FieldAccess:parallelism
+Method-name:getMaxParallelism
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxParallelism
+Method-returnType:void
+Method-parameters:[int maxParallelism]
+FieldAccess:maxParallelism
+Method-name:getMinResources
+Method-returnType:ResourceSpec
+Method-parameters:[]
+Method-name:getPreferredResources
+Method-returnType:ResourceSpec
+Method-parameters:[]
+Method-name:setResources
+Method-returnType:void
+Method-parameters:[ResourceSpec minResources, ResourceSpec preferredResources]
+FieldAccess:minResources
+FieldAccess:preferredResources
+Method-name:setManagedMemoryWeight
+Method-returnType:void
+Method-parameters:[int managedMemoryWeight]
+FieldAccess:managedMemoryWeight
+Method-name:getManagedMemoryWeight
+Method-returnType:int
+Method-parameters:[]
+Method-name:getBufferTimeout
+Method-returnType:long
+Method-parameters:[]
+Method-name:setBufferTimeout
+Method-returnType:void
+Method-parameters:[Long bufferTimeout]
+FieldAccess:bufferTimeout
+Method-name:getOperator
+Method-returnType:StreamOperator<?>
+Method-parameters:[]
+MethodInvocation:getOperator
+Method-name:getOperatorFactory
+Method-returnType:StreamOperatorFactory<?>
+Method-parameters:[]
+Method-name:getOperatorName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getOutputSelectors
+Method-returnType:List<OutputSelector<?>>
+Method-parameters:[]
+Method-name:addOutputSelector
+Method-returnType:void
+Method-parameters:[OutputSelector<?> outputSelector]
+MethodInvocation:add
+FieldAccess:outputSelectors
+Method-name:setSerializersIn
+Method-returnType:void
+Method-parameters:[TypeSerializer<?>... typeSerializersIn]
+MethodInvocation:checkArgument
+FieldAccess:typeSerializersIn
+Method-name:getTypeSerializersIn
+Method-returnType:TypeSerializer<?>[]
+Method-parameters:[]
+Method-name:getTypeSerializerIn
+Method-returnType:TypeSerializer<?>
+Method-parameters:[int index]
+Method-name:getTypeSerializerOut
+Method-returnType:TypeSerializer<?>
+Method-parameters:[]
+Method-name:setSerializerOut
+Method-returnType:void
+Method-parameters:[TypeSerializer<?> typeSerializerOut]
+FieldAccess:typeSerializerOut
+Method-name:getJobVertexClass
+Method-returnType:Class<? extends AbstractInvokable>
+Method-parameters:[]
+Method-name:getInputFormat
+Method-returnType:InputFormat<?,?>
+Method-parameters:[]
+Method-name:setInputFormat
+Method-returnType:void
+Method-parameters:[InputFormat<?,?> inputFormat]
+FieldAccess:inputFormat
+Method-name:getOutputFormat
+Method-returnType:OutputFormat<?>
+Method-parameters:[]
+Method-name:setOutputFormat
+Method-returnType:void
+Method-parameters:[OutputFormat<?> outputFormat]
+FieldAccess:outputFormat
+Method-name:setSlotSharingGroup
+Method-returnType:void
+Method-parameters:[@Nullable String slotSharingGroup]
+FieldAccess:slotSharingGroup
+Method-name:getSlotSharingGroup
+Method-returnType:String
+Method-parameters:[]
+Method-name:setCoLocationGroup
+Method-returnType:void
+Method-parameters:[@Nullable String coLocationGroup]
+FieldAccess:coLocationGroup
+Method-name:getCoLocationGroup
+Method-returnType:String
+Method-parameters:[]
+Method-name:isSameSlotSharingGroup
+Method-returnType:boolean
+Method-parameters:[StreamNode downstreamVertex]
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getStatePartitioners
+Method-returnType:KeySelector<?,?>[]
+Method-parameters:[]
+Method-name:setStatePartitioners
+Method-returnType:void
+Method-parameters:[KeySelector<?,?>... statePartitioners]
+MethodInvocation:checkArgument
+FieldAccess:statePartitioners
+Method-name:getStateKeySerializer
+Method-returnType:TypeSerializer<?>
+Method-parameters:[]
+Method-name:setStateKeySerializer
+Method-returnType:void
+Method-parameters:[TypeSerializer<?> stateKeySerializer]
+FieldAccess:stateKeySerializer
+Method-name:getTransformationUID
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTransformationUID
+Method-returnType:void
+Method-parameters:[String transformationId]
+FieldAccess:transformationUID
+Method-name:getUserHash
+Method-returnType:String
+Method-parameters:[]
+Method-name:setUserHash
+Method-returnType:void
+Method-parameters:[String userHash]
+FieldAccess:userHash
+Method-name:getCoordinatorProvider
+Method-returnType:Optional<OperatorCoordinator.Provider>
+Method-parameters:[String operatorName, OperatorID operatorID]
+MethodInvocation:of
+MethodInvocation:getCoordinatorProvider
+MethodInvocation:empty
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]

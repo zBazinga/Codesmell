@@ -1,0 +1,46 @@
+Class:BlockFormattingContext
+Field:_x
+Field:_y
+Field:_persistentBFC
+Method-name:BlockFormattingContext
+Method-returnType:null
+Method-parameters:[BlockBox block, LayoutContext c]
+Method-name:getOffset
+Method-returnType:Point
+Method-parameters:[]
+Method-name:translate
+Method-returnType:void
+Method-parameters:[int x, int y]
+Method-name:getFloatManager
+Method-returnType:FloatManager
+Method-parameters:[]
+MethodInvocation:getFloatManager
+Method-name:getRightFloatDistance
+Method-returnType:int
+Method-parameters:[CssContext cssCtx, LineBox line, int containingBlockWidth]
+MethodInvocation:getRightFloatDistance
+MethodInvocation:getFloatManager
+Method-name:getFloatDistance
+Method-returnType:int
+Method-parameters:[CssContext cssCtx, LineBox line, int containingBlockWidth]
+MethodInvocation:getLeftFloatDistance
+MethodInvocation:getRightFloatDistance
+Method-name:getNextLineBoxDelta
+Method-returnType:int
+Method-parameters:[CssContext cssCtx, LineBox line, int containingBlockWidth]
+MethodInvocation:getNextLineBoxDelta
+MethodInvocation:getFloatManager
+Method-name:floatBox
+Method-returnType:void
+Method-parameters:[LayoutContext c, BlockBox floated]
+MethodInvocation:floatBox
+MethodInvocation:getFloatManager
+MethodInvocation:getLayer
+Method-name:clear
+Method-returnType:void
+Method-parameters:[LayoutContext c, Box current]
+MethodInvocation:clear
+MethodInvocation:getFloatManager
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

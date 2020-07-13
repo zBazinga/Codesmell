@@ -1,0 +1,96 @@
+Class:OutErr
+Field:SYSTEM_OUT_ERR
+MethodInvocation:create
+Field:out
+Field:err
+Method-name:OutErr
+Method-returnType:null
+Method-parameters:[OutputStream out, OutputStream err]
+FieldAccess:out
+FieldAccess:err
+Method-name:create
+Method-returnType:OutErr
+Method-parameters:[OutputStream out, OutputStream err]
+Method-name:createSynchronizedFunnel
+Method-returnType:OutErr
+Method-parameters:[final OutputStream outputStream]
+Method-name:write
+Method-returnType:void
+Method-parameters:[int b]
+MethodInvocation:write
+Method-name:write
+Method-returnType:void
+Method-parameters:[byte b[]]
+MethodInvocation:write
+Method-name:write
+Method-returnType:void
+Method-parameters:[byte b[], int off, int len]
+MethodInvocation:write
+Method-name:flush
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:flush
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+MethodInvocation:create
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+MethodInvocation:close
+Method-name:createSymlinks
+Method-returnType:void
+Method-parameters:[Path execRoot, BinTools binTools, Map<String,String> shellEnvironment, boolean enableRunfiles, SymlinkTreeHelper symlinkTreeHelper]
+MethodInvocation:createSymlinksUsingCommand
+MethodInvocation:copyManifest
+Method-name:getSystemPatcher
+Method-returnType:SystemPatcher
+Method-parameters:[]
+Method-name:start
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setOut
+MethodInvocation:setErr
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setOut
+MethodInvocation:setErr
+MethodInvocation:switchBackTo
+MethodInvocation:switchBackTo
+Method-name:getOutputStream
+Method-returnType:OutputStream
+Method-parameters:[]
+Method-name:getErrorStream
+Method-returnType:OutputStream
+Method-parameters:[]
+Method-name:printOut
+Method-returnType:void
+Method-parameters:[String s]
+MethodInvocation:print
+MethodInvocation:flush
+Method-name:printOutLn
+Method-returnType:void
+Method-parameters:[String s]
+MethodInvocation:printOut
+Method-name:printErr
+Method-returnType:void
+Method-parameters:[String s]
+MethodInvocation:print
+MethodInvocation:flush
+Method-name:printErrLn
+Method-returnType:void
+Method-parameters:[String s]
+MethodInvocation:printErr
+Method-name:start
+Method-returnType:void
+Method-parameters:[]
+Class:SwitchingPrintStream
+Method-name:SwitchingPrintStream
+Method-returnType:null
+Method-parameters:[OutputStream override]
+Method-name:switchBackTo
+Method-returnType:void
+Method-parameters:[OutputStream saved]

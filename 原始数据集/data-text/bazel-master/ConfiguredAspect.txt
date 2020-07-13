@@ -1,0 +1,163 @@
+Class:ConfiguredAspect
+Field:descriptor
+Field:actions
+Field:providers
+Method-name:ConfiguredAspect
+Method-returnType:null
+Method-parameters:[AspectDescriptor descriptor, ImmutableList<ActionAnalysisMetadata> actions, TransitiveInfoProviderMap providers]
+FieldAccess:descriptor
+FieldAccess:actions
+FieldAccess:providers
+MethodInvocation:getProviderCount
+MethodInvocation:getProviderInstanceAt
+MethodInvocation:init
+Method-name:forAlias
+Method-returnType:ConfiguredAspect
+Method-parameters:[ConfiguredAspect real]
+MethodInvocation:getActions
+MethodInvocation:getProviders
+Method-name:forNonapplicableTarget
+Method-returnType:ConfiguredAspect
+Method-parameters:[AspectDescriptor descriptor]
+MethodInvocation:of
+MethodInvocation:build
+MethodInvocation:add
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[AspectClass aspectClass, AspectParameters parameters, RuleContext ruleContext]
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:getAspectClass
+Method-name:getDescriptor
+Method-returnType:AspectDescriptor
+Method-parameters:[]
+Method-name:getActions
+Method-returnType:ImmutableList<ActionAnalysisMetadata>
+Method-parameters:[]
+Method-name:getProviders
+Method-returnType:TransitiveInfoProviderMap
+Method-parameters:[]
+Method-name:getProvider
+Method-returnType:P
+Method-parameters:[Class<P> providerClass]
+MethodInvocation:checkProvider
+MethodInvocation:getProvider
+Method-name:get
+Method-returnType:Info
+Method-parameters:[Provider.Key key]
+MethodInvocation:get
+Method-name:get
+Method-returnType:Object
+Method-parameters:[String legacyKey]
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:getKey
+MethodInvocation:get
+Class:Builder
+Field:providers
+Field:outputGroupBuilders
+Field:ruleContext
+Field:descriptor
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[AspectClass aspectClass, AspectParameters parameters, RuleContext context]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[AspectDescriptor descriptor, RuleContext ruleContext]
+FieldAccess:descriptor
+FieldAccess:ruleContext
+Method-name:addProvider
+Method-returnType:Builder
+Method-parameters:[Class<? extends T> providerClass, T provider]
+MethodInvocation:checkNotNull
+MethodInvocation:checkProviderClass
+MethodInvocation:put
+Method-name:addProvider
+Method-returnType:Builder
+Method-parameters:[TransitiveInfoProvider provider]
+MethodInvocation:checkNotNull
+MethodInvocation:addProvider
+MethodInvocation:get
+Method-name:checkProviderClass
+Method-returnType:void
+Method-parameters:[Class<? extends TransitiveInfoProvider> providerClass]
+MethodInvocation:checkNotNull
+Method-name:addProviders
+Method-returnType:Builder
+Method-parameters:[TransitiveInfoProviderMap providers]
+MethodInvocation:addAll
+FieldAccess:providers
+Method-name:addProviders
+Method-returnType:Builder
+Method-parameters:[TransitiveInfoProvider... providers]
+MethodInvocation:addProviders
+MethodInvocation:asList
+Method-name:addProviders
+Method-returnType:Builder
+Method-parameters:[Iterable<TransitiveInfoProvider> providers]
+MethodInvocation:addProvider
+Method-name:addOutputGroup
+Method-returnType:Builder
+Method-parameters:[String name, NestedSet<Artifact> artifacts]
+MethodInvocation:get
+MethodInvocation:stableOrder
+MethodInvocation:put
+MethodInvocation:addTransitive
+Method-name:addSkylarkTransitiveInfo
+Method-returnType:Builder
+Method-parameters:[String name, Object value]
+MethodInvocation:put
+Method-name:addSkylarkTransitiveInfo
+Method-returnType:Builder
+Method-parameters:[String name, Object value, Location loc]
+MethodInvocation:put
+Method-name:addSkylarkDeclaredProvider
+Method-returnType:Builder
+Method-parameters:[Info declaredProvider]
+MethodInvocation:getProvider
+MethodInvocation:isExported
+MethodInvocation:getLocation
+MethodInvocation:addDeclaredProvider
+Method-name:addDeclaredProvider
+Method-returnType:void
+Method-parameters:[Info declaredProvider]
+MethodInvocation:put
+Method-name:addNativeDeclaredProvider
+Method-returnType:Builder
+Method-parameters:[Info declaredProvider]
+MethodInvocation:getProvider
+MethodInvocation:checkState
+MethodInvocation:isExported
+MethodInvocation:addDeclaredProvider
+Method-name:build
+Method-returnType:ConfiguredAspect
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:builder
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:build
+MethodInvocation:getValue
+MethodInvocation:contains
+MethodInvocation:getKey
+MethodInvocation:addDeclaredProvider
+MethodInvocation:build
+MethodInvocation:addProvider
+MethodInvocation:createExtraActionProvider
+MethodInvocation:of
+MethodInvocation:getAnalysisEnvironment
+MethodInvocation:assignOwnersAndFilterSharedActionsAndThrowActionConflict
+MethodInvocation:getActionKeyContext
+MethodInvocation:getRegisteredActions
+MethodInvocation:getOwner
+FieldAccess:includeRequiredConfigFragmentsProvider
+MethodInvocation:get
+MethodInvocation:getOptions
+MethodInvocation:getConfiguration
+MethodInvocation:addProvider
+MethodInvocation:getRequiredConfigFragments
+MethodInvocation:getActions
+MethodInvocation:build

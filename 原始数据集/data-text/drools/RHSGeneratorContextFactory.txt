@@ -1,0 +1,31 @@
+Class:RHSGeneratorContextFactory
+Field:contexts
+Method-name:newGeneratorContext
+Method-returnType:RHSGeneratorContext
+Method-parameters:[]
+MethodInvocation:add
+Method-name:newChildGeneratorContext
+Method-returnType:RHSGeneratorContext
+Method-parameters:[final RHSGeneratorContext parent, final IAction action]
+MethodInvocation:getMaximumDepth
+MethodInvocation:add
+Method-name:newChildGeneratorContext
+Method-returnType:RHSGeneratorContext
+Method-parameters:[final RHSGeneratorContext parent, final ActionFieldValue afv]
+MethodInvocation:getMaximumDepth
+MethodInvocation:add
+Method-name:getGeneratorContexts
+Method-returnType:List<RHSGeneratorContext>
+Method-parameters:[]
+Method-name:getMaximumDepth
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:max
+MethodInvocation:getDepth
+Method-name:getPeers
+Method-returnType:List<RHSGeneratorContext>
+Method-parameters:[final RHSGeneratorContext peer]
+MethodInvocation:getDepth
+MethodInvocation:getDepth
+MethodInvocation:add
+MethodInvocation:remove

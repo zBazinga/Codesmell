@@ -1,0 +1,39 @@
+Class:Exchange
+Field:distribution
+Method-name:Exchange
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode input, RelDistribution distribution]
+Method-name:Exchange
+Method-returnType:null
+Method-parameters:[RelInput input]
+MethodInvocation:getCluster
+MethodInvocation:plus
+MethodInvocation:getTraitSet
+MethodInvocation:getCollation
+MethodInvocation:getInput
+MethodInvocation:canonize
+MethodInvocation:getDistribution
+Method-name:copy
+Method-returnType:Exchange
+Method-parameters:[RelTraitSet traitSet, List<RelNode> inputs]
+MethodInvocation:copy
+MethodInvocation:sole
+Method-name:copy
+Method-returnType:Exchange
+Method-parameters:[RelTraitSet traitSet, RelNode newInput, RelDistribution newDistribution]
+Method-name:getDistribution
+Method-returnType:RelDistribution
+Method-parameters:[]
+Method-name:computeSelfCost
+Method-returnType:RelOptCost
+Method-parameters:[RelOptPlanner planner, RelMetadataQuery mq]
+MethodInvocation:getRowCount
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:makeCost
+MethodInvocation:getCostFactory
+MethodInvocation:nLogN
+Method-name:explainTerms
+Method-returnType:RelWriter
+Method-parameters:[RelWriter pw]
+MethodInvocation:item

@@ -1,0 +1,27 @@
+Class:EMLComposer
+Method-name:create
+Method-returnType:EMLComposer
+Method-parameters:[]
+Method-name:compose
+Method-returnType:String
+Method-parameters:[final Email email]
+MethodInvocation:getSession
+MethodInvocation:createSession
+MethodInvocation:getProperties
+MethodInvocation:getSession
+MethodInvocation:getSession
+MethodInvocation:sendMail
+MethodInvocation:getEml
+Class:OutputStreamTransport
+Method-name:OutputStreamTransport
+Method-returnType:null
+Method-parameters:[final Session session]
+Method-name:sendMessage
+Method-returnType:void
+Method-parameters:[final Message msg, final Address[] addresses]
+MethodInvocation:writeTo
+MethodInvocation:toString
+Method-name:getEml
+Method-returnType:String
+Method-parameters:[]
+Field:eml

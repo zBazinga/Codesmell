@@ -1,0 +1,653 @@
+Class:Rounding
+Method-name:roundOther
+Method-returnType:ExtendedBounds
+Method-parameters:[ExtendedBounds extendedBounds]
+MethodInvocation:withoutOffset
+MethodInvocation:getMin
+MethodInvocation:round
+MethodInvocation:getMin
+MethodInvocation:getMax
+MethodInvocation:round
+MethodInvocation:getMax
+Field:DateTimeUnit
+Field:extraLocalOffsetLookup
+MethodInvocation:toMillis
+Method-name:roundFloor
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:roundWeekOfWeekYear
+Method-name:extraLocalOffsetLookup
+Method-returnType:long
+Method-parameters:[]
+Field:extraLocalOffsetLookup
+MethodInvocation:toMillis
+Method-name:roundFloor
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:roundYear
+Method-name:extraLocalOffsetLookup
+Method-returnType:long
+Method-parameters:[]
+Field:extraLocalOffsetLookup
+MethodInvocation:toMillis
+Method-name:roundFloor
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:roundQuarterOfYear
+Method-name:extraLocalOffsetLookup
+Method-returnType:long
+Method-parameters:[]
+Field:extraLocalOffsetLookup
+MethodInvocation:toMillis
+Method-name:roundFloor
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:roundMonthOfYear
+Method-name:extraLocalOffsetLookup
+Method-returnType:long
+Method-parameters:[]
+Field:unitMillis
+MethodInvocation:toMillis
+MethodInvocation:getDuration
+MethodInvocation:getBaseUnit
+Method-name:roundFloor
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:roundFloor
+Method-name:extraLocalOffsetLookup
+Method-returnType:long
+Method-parameters:[]
+Field:unitMillis
+MethodInvocation:toMillis
+MethodInvocation:getDuration
+MethodInvocation:getBaseUnit
+Method-name:roundFloor
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:roundFloor
+Method-name:extraLocalOffsetLookup
+Method-returnType:long
+Method-parameters:[]
+Field:unitMillis
+MethodInvocation:toMillis
+MethodInvocation:getDuration
+MethodInvocation:getBaseUnit
+Method-name:roundFloor
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:roundFloor
+Method-name:extraLocalOffsetLookup
+Method-returnType:long
+Method-parameters:[]
+Field:unitMillis
+MethodInvocation:toMillis
+MethodInvocation:getDuration
+MethodInvocation:getBaseUnit
+Method-name:roundFloor
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:roundFloor
+Method-name:extraLocalOffsetLookup
+Method-returnType:long
+Method-parameters:[]
+Field:id
+Field:field
+Method-name:DateTimeUnit
+Method-returnType:null
+Method-parameters:[byte id, TemporalField field]
+FieldAccess:id
+FieldAccess:field
+Method-name:roundFloor
+Method-returnType:long
+Method-parameters:[long utcMillis]
+Method-name:extraLocalOffsetLookup
+Method-returnType:long
+Method-parameters:[]
+Method-name:getId
+Method-returnType:byte
+Method-parameters:[]
+Method-name:getField
+Method-returnType:TemporalField
+Method-parameters:[]
+Method-name:resolve
+Method-returnType:DateTimeUnit
+Method-parameters:[byte id]
+Method-name:innerWriteTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeByte
+MethodInvocation:id
+MethodInvocation:innerWriteTo
+Method-name:id
+Method-returnType:byte
+Method-parameters:[]
+Method-name:round
+Method-returnType:long
+Method-parameters:[long utcMillis]
+Method-name:nextRoundingValue
+Method-returnType:long
+Method-parameters:[long utcMillis]
+Method-name:prepare
+Method-returnType:Prepared
+Method-parameters:[long minUtcMillis, long maxUtcMillis]
+Method-name:prepareForUnknown
+Method-returnType:Prepared
+Method-parameters:[]
+Method-name:prepareJavaTime
+Method-returnType:Prepared
+Method-parameters:[]
+Method-name:round
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:round
+MethodInvocation:prepare
+Method-name:nextRoundingValue
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:nextRoundingValue
+MethodInvocation:prepare
+Method-name:offset
+Method-returnType:long
+Method-parameters:[]
+Method-name:withoutOffset
+Method-returnType:Rounding
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[DateTimeUnit unit]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[TimeValue interval]
+Class:Builder
+Field:unit
+Field:interval
+Field:timeZone
+Field:offset
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[DateTimeUnit unit]
+FieldAccess:unit
+FieldAccess:interval
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[TimeValue interval]
+FieldAccess:unit
+MethodInvocation:millis
+FieldAccess:interval
+MethodInvocation:millis
+Method-name:timeZone
+Method-returnType:Builder
+Method-parameters:[ZoneId timeZone]
+FieldAccess:timeZone
+Method-name:offset
+Method-returnType:Builder
+Method-parameters:[long offset]
+FieldAccess:offset
+Method-name:build
+Method-returnType:Rounding
+Method-parameters:[]
+Class:TimeUnitRounding
+Field:ID
+Field:unit
+Field:timeZone
+Field:unitRoundsToMidnight
+Method-name:TimeUnitRounding
+Method-returnType:null
+Method-parameters:[DateTimeUnit unit, ZoneId timeZone]
+FieldAccess:unit
+FieldAccess:timeZone
+FieldAccess:unitRoundsToMidnight
+MethodInvocation:toMillis
+MethodInvocation:getDuration
+MethodInvocation:getBaseUnit
+FieldAccess:field
+FieldAccess:unit
+Method-name:TimeUnitRounding
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:resolve
+MethodInvocation:readByte
+MethodInvocation:readZoneId
+Method-name:innerWriteTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeByte
+MethodInvocation:getId
+MethodInvocation:writeZoneId
+Method-name:id
+Method-returnType:byte
+Method-parameters:[]
+Method-name:truncateLocalDateTime
+Method-returnType:LocalDateTime
+Method-parameters:[LocalDateTime localDateTime]
+MethodInvocation:withNano
+MethodInvocation:of
+MethodInvocation:getYear
+MethodInvocation:getMonthValue
+MethodInvocation:getDayOfMonth
+MethodInvocation:getHour
+MethodInvocation:getMinute
+MethodInvocation:of
+MethodInvocation:getYear
+MethodInvocation:getMonth
+MethodInvocation:getDayOfMonth
+MethodInvocation:getHour
+MethodInvocation:query
+MethodInvocation:localDate
+MethodInvocation:atStartOfDay
+MethodInvocation:with
+MethodInvocation:of
+MethodInvocation:toLocalDate
+MethodInvocation:of
+MethodInvocation:getYear
+MethodInvocation:getMonthValue
+MethodInvocation:of
+MethodInvocation:getYear
+MethodInvocation:firstMonthOfQuarter
+MethodInvocation:getMonth
+MethodInvocation:of
+MethodInvocation:of
+MethodInvocation:getYear
+Method-name:prepare
+Method-returnType:Prepared
+Method-parameters:[long minUtcMillis, long maxUtcMillis]
+MethodInvocation:extraLocalOffsetLookup
+MethodInvocation:toMillis
+MethodInvocation:getDuration
+MethodInvocation:getBaseUnit
+MethodInvocation:lookup
+MethodInvocation:prepareJavaTime
+MethodInvocation:fixedInRange
+Method-name:prepareForUnknown
+Method-returnType:Prepared
+Method-parameters:[]
+MethodInvocation:fixedOffset
+MethodInvocation:toMillis
+MethodInvocation:getDuration
+MethodInvocation:getBaseUnit
+MethodInvocation:prepareJavaTime
+Method-name:prepareJavaTime
+Method-returnType:Prepared
+Method-parameters:[]
+MethodInvocation:toMillis
+MethodInvocation:getDuration
+MethodInvocation:getBaseUnit
+Method-name:offset
+Method-returnType:long
+Method-parameters:[]
+Method-name:withoutOffset
+Method-returnType:Rounding
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Class:FixedToMidnightRounding
+Field:offset
+Method-name:FixedToMidnightRounding
+Method-returnType:null
+Method-parameters:[LocalTimeOffset offset]
+FieldAccess:offset
+Method-name:round
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:localToUtcInThisOffset
+MethodInvocation:roundFloor
+MethodInvocation:utcToLocalTime
+Method-name:nextRoundingValue
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:nextRoundingValue
+Class:FixedNotToMidnightRounding
+Field:offset
+Field:unitMillis
+Method-name:FixedNotToMidnightRounding
+Method-returnType:null
+Method-parameters:[LocalTimeOffset offset, long unitMillis]
+FieldAccess:offset
+FieldAccess:unitMillis
+Method-name:round
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:localToUtcInThisOffset
+MethodInvocation:roundFloor
+MethodInvocation:utcToLocalTime
+Method-name:nextRoundingValue
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:round
+Class:ToMidnightRounding
+Field:lookup
+Method-name:ToMidnightRounding
+Method-returnType:null
+Method-parameters:[LocalTimeOffset.Lookup lookup]
+FieldAccess:lookup
+Method-name:round
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:lookup
+MethodInvocation:localToUtc
+MethodInvocation:roundFloor
+MethodInvocation:utcToLocalTime
+Method-name:nextRoundingValue
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:nextRoundingValue
+Method-name:inGap
+Method-returnType:long
+Method-parameters:[long localMillis, Gap gap]
+MethodInvocation:startUtcMillis
+Method-name:beforeGap
+Method-returnType:long
+Method-parameters:[long localMillis, Gap gap]
+MethodInvocation:localToUtc
+MethodInvocation:previous
+Method-name:inOverlap
+Method-returnType:long
+Method-parameters:[long localMillis, Overlap overlap]
+MethodInvocation:localToUtc
+MethodInvocation:previous
+Method-name:beforeOverlap
+Method-returnType:long
+Method-parameters:[long localMillis, Overlap overlap]
+MethodInvocation:localToUtc
+MethodInvocation:previous
+Class:NotToMidnightRounding
+Field:lookup
+Method-name:NotToMidnightRounding
+Method-returnType:null
+Method-parameters:[LocalTimeOffset.Lookup lookup, long unitMillis]
+FieldAccess:lookup
+Method-name:round
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:lookup
+MethodInvocation:roundFloor
+MethodInvocation:utcToLocalTime
+MethodInvocation:localToUtc
+Method-name:inGap
+Method-returnType:long
+Method-parameters:[long localMillis, Gap gap]
+MethodInvocation:localToUtc
+MethodInvocation:previous
+MethodInvocation:roundFloor
+MethodInvocation:firstMissingLocalTime
+Method-name:beforeGap
+Method-returnType:long
+Method-parameters:[long localMillis, Gap gap]
+MethodInvocation:inGap
+Method-name:inOverlap
+Method-returnType:long
+Method-parameters:[long localMillis, Overlap overlap]
+MethodInvocation:localToUtcInThisOffset
+Method-name:beforeOverlap
+Method-returnType:long
+Method-parameters:[long localMillis, Overlap overlap]
+MethodInvocation:firstNonOverlappingLocalTime
+MethodInvocation:firstOverlappingLocalTime
+MethodInvocation:localToUtcInThisOffset
+MethodInvocation:localToUtc
+MethodInvocation:previous
+Class:JavaTimeToMidnightRounding
+Method-name:round
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:ofInstant
+MethodInvocation:ofEpochMilli
+MethodInvocation:truncateLocalDateTime
+MethodInvocation:firstTimeOnDay
+Method-name:nextRoundingValue
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:ofInstant
+MethodInvocation:ofEpochMilli
+MethodInvocation:truncateLocalDateTime
+MethodInvocation:nextRelevantMidnight
+MethodInvocation:firstTimeOnDay
+Method-name:firstTimeOnDay
+Method-returnType:long
+Method-parameters:[LocalDateTime localMidnight]
+Method-name:nextRelevantMidnight
+Method-returnType:LocalDateTime
+Method-parameters:[LocalDateTime localMidnight]
+Class:JavaTimeNotToMidnightRounding
+Method-name:JavaTimeNotToMidnightRounding
+Method-returnType:null
+Method-parameters:[long unitMillis]
+Method-name:round
+Method-returnType:long
+Method-parameters:[long utcMillis]
+Method-name:truncateAsLocalTime
+Method-returnType:Instant
+Method-parameters:[Instant instant, final ZoneRules rules]
+Class:AbstractNotToMidnightRounding
+Field:unitMillis
+Method-name:AbstractNotToMidnightRounding
+Method-returnType:null
+Method-parameters:[long unitMillis]
+FieldAccess:unitMillis
+Method-name:nextRoundingValue
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:round
+MethodInvocation:round
+Class:TimeIntervalRounding
+Field:ID
+Field:interval
+Field:timeZone
+Method-name:TimeIntervalRounding
+Method-returnType:null
+Method-parameters:[long interval, ZoneId timeZone]
+FieldAccess:interval
+FieldAccess:timeZone
+Method-name:TimeIntervalRounding
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readVLong
+MethodInvocation:readZoneId
+Method-name:innerWriteTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeVLong
+MethodInvocation:writeZoneId
+Method-name:id
+Method-returnType:byte
+Method-parameters:[]
+Method-name:prepare
+Method-returnType:Prepared
+Method-parameters:[long minUtcMillis, long maxUtcMillis]
+MethodInvocation:lookup
+MethodInvocation:prepareJavaTime
+MethodInvocation:fixedInRange
+Method-name:prepareForUnknown
+Method-returnType:Prepared
+Method-parameters:[]
+MethodInvocation:fixedOffset
+MethodInvocation:prepareJavaTime
+Method-name:prepareJavaTime
+Method-returnType:Prepared
+Method-parameters:[]
+Method-name:offset
+Method-returnType:long
+Method-parameters:[]
+Method-name:withoutOffset
+Method-returnType:Rounding
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:roundKey
+Method-returnType:long
+Method-parameters:[long value, long interval]
+Class:FixedRounding
+Field:offset
+Method-name:FixedRounding
+Method-returnType:null
+Method-parameters:[LocalTimeOffset offset]
+FieldAccess:offset
+Method-name:round
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:localToUtcInThisOffset
+MethodInvocation:roundKey
+MethodInvocation:utcToLocalTime
+Method-name:nextRoundingValue
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:nextRoundingValue
+Class:VariableRounding
+Field:lookup
+Method-name:VariableRounding
+Method-returnType:null
+Method-parameters:[LocalTimeOffset.Lookup lookup]
+FieldAccess:lookup
+Method-name:round
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:lookup
+MethodInvocation:localToUtc
+MethodInvocation:roundKey
+MethodInvocation:utcToLocalTime
+Method-name:nextRoundingValue
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:nextRoundingValue
+Method-name:inGap
+Method-returnType:long
+Method-parameters:[long localMillis, Gap gap]
+MethodInvocation:startUtcMillis
+Method-name:beforeGap
+Method-returnType:long
+Method-parameters:[long localMillis, Gap gap]
+MethodInvocation:localToUtc
+MethodInvocation:previous
+Method-name:inOverlap
+Method-returnType:long
+Method-parameters:[long localMillis, Overlap overlap]
+MethodInvocation:localToUtcInThisOffset
+Method-name:beforeOverlap
+Method-returnType:long
+Method-parameters:[long localMillis, Overlap overlap]
+MethodInvocation:localToUtc
+MethodInvocation:previous
+MethodInvocation:roundKey
+MethodInvocation:firstNonOverlappingLocalTime
+Class:JavaTimeRounding
+Method-name:round
+Method-returnType:long
+Method-parameters:[long utcMillis]
+Method-name:nextRoundingValue
+Method-returnType:long
+Method-parameters:[long time]
+MethodInvocation:getTotalSeconds
+MethodInvocation:getOffset
+MethodInvocation:getRules
+MethodInvocation:ofEpochMilli
+MethodInvocation:toEpochMilli
+MethodInvocation:toInstant
+MethodInvocation:withZoneSameLocal
+MethodInvocation:ofInstant
+MethodInvocation:ofEpochMilli
+Class:OffsetRounding
+Field:ID
+Field:delegate
+Field:offset
+Method-name:OffsetRounding
+Method-returnType:null
+Method-parameters:[Rounding delegate, long offset]
+FieldAccess:delegate
+FieldAccess:offset
+Method-name:OffsetRounding
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:read
+MethodInvocation:readZLong
+Method-name:innerWriteTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:before
+MethodInvocation:getVersion
+MethodInvocation:writeTo
+MethodInvocation:writeZLong
+Method-name:id
+Method-returnType:byte
+Method-parameters:[]
+Method-name:prepare
+Method-returnType:Prepared
+Method-parameters:[long minUtcMillis, long maxUtcMillis]
+MethodInvocation:wrapPreparedRounding
+MethodInvocation:prepare
+Method-name:prepareForUnknown
+Method-returnType:Prepared
+Method-parameters:[]
+MethodInvocation:wrapPreparedRounding
+MethodInvocation:prepareForUnknown
+Method-name:prepareJavaTime
+Method-returnType:Prepared
+Method-parameters:[]
+MethodInvocation:wrapPreparedRounding
+MethodInvocation:prepareJavaTime
+Method-name:wrapPreparedRounding
+Method-returnType:Prepared
+Method-parameters:[Prepared delegatePrepared]
+Method-name:round
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:round
+Method-name:nextRoundingValue
+Method-returnType:long
+Method-parameters:[long utcMillis]
+MethodInvocation:nextRoundingValue
+Method-name:offset
+Method-returnType:long
+Method-parameters:[]
+Method-name:withoutOffset
+Method-returnType:Rounding
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:read
+Method-returnType:Rounding
+Method-parameters:[StreamInput in]
+MethodInvocation:readByte

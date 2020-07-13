@@ -1,0 +1,198 @@
+Class:DenseMatrix
+Field:m
+Field:n
+Field:data
+Method-name:DenseMatrix
+Method-returnType:null
+Method-parameters:[int m, int n]
+Method-name:DenseMatrix
+Method-returnType:null
+Method-parameters:[int m, int n, double[] data]
+Method-name:DenseMatrix
+Method-returnType:null
+Method-parameters:[int m, int n, double[] data, boolean inRowMajor]
+MethodInvocation:assert
+FieldAccess:m
+FieldAccess:n
+MethodInvocation:toColumnMajor
+FieldAccess:data
+Method-name:DenseMatrix
+Method-returnType:null
+Method-parameters:[double[][] data]
+FieldAccess:m
+FieldAccess:m
+FieldAccess:n
+FieldAccess:data
+FieldAccess:n
+FieldAccess:length
+FieldAccess:length
+FieldAccess:data
+MethodInvocation:set
+Method-name:eye
+Method-returnType:DenseMatrix
+Method-parameters:[int n]
+MethodInvocation:eye
+Method-name:eye
+Method-returnType:DenseMatrix
+Method-parameters:[int m, int n]
+MethodInvocation:min
+Method-name:zeros
+Method-returnType:DenseMatrix
+Method-parameters:[int m, int n]
+Method-name:ones
+Method-returnType:DenseMatrix
+Method-parameters:[int m, int n]
+MethodInvocation:fill
+Method-name:rand
+Method-returnType:DenseMatrix
+Method-parameters:[int m, int n]
+MethodInvocation:random
+Method-name:randSymmetric
+Method-returnType:DenseMatrix
+Method-parameters:[int n]
+MethodInvocation:random
+MethodInvocation:set
+MethodInvocation:set
+Method-name:get
+Method-returnType:double
+Method-parameters:[int i, int j]
+Method-name:getData
+Method-returnType:double[]
+Method-parameters:[]
+FieldAccess:data
+Method-name:getArrayCopy2D
+Method-returnType:double[][]
+Method-parameters:[]
+MethodInvocation:get
+Method-name:getArrayCopy1D
+Method-returnType:double[]
+Method-parameters:[boolean inRowMajor]
+MethodInvocation:get
+MethodInvocation:clone
+FieldAccess:data
+Method-name:getRow
+Method-returnType:double[]
+Method-parameters:[int row]
+Method-name:getColumn
+Method-returnType:double[]
+Method-parameters:[int col]
+Method-name:clone
+Method-returnType:DenseMatrix
+Method-parameters:[]
+FieldAccess:m
+FieldAccess:n
+MethodInvocation:clone
+FieldAccess:data
+Method-name:selectRows
+Method-returnType:DenseMatrix
+Method-parameters:[int[] rows]
+FieldAccess:n
+FieldAccess:n
+MethodInvocation:set
+MethodInvocation:get
+Method-name:getSubMatrix
+Method-returnType:DenseMatrix
+Method-parameters:[int m0, int m1, int n0, int n1]
+Method-name:setSubMatrix
+Method-returnType:void
+Method-parameters:[DenseMatrix sub, int m0, int m1, int n0, int n1]
+Method-name:set
+Method-returnType:void
+Method-parameters:[int i, int j, double s]
+Method-name:add
+Method-returnType:void
+Method-parameters:[int i, int j, double s]
+Method-name:isSquare
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSymmetric
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:get
+Method-name:numRows
+Method-returnType:int
+Method-parameters:[]
+Method-name:numCols
+Method-returnType:int
+Method-parameters:[]
+Method-name:sum
+Method-returnType:double
+Method-parameters:[]
+FieldAccess:length
+FieldAccess:data
+FieldAccess:data
+Method-name:scale
+Method-returnType:DenseMatrix
+Method-parameters:[double v]
+MethodInvocation:clone
+MethodInvocation:scal
+Method-name:scaleEqual
+Method-returnType:void
+Method-parameters:[double v]
+MethodInvocation:scal
+Method-name:plus
+Method-returnType:DenseMatrix
+Method-parameters:[DenseMatrix mat]
+MethodInvocation:clone
+MethodInvocation:axpy
+Method-name:plus
+Method-returnType:DenseMatrix
+Method-parameters:[double alpha]
+MethodInvocation:clone
+Method-name:plusEquals
+Method-returnType:void
+Method-parameters:[DenseMatrix mat]
+MethodInvocation:axpy
+Method-name:plusEquals
+Method-returnType:void
+Method-parameters:[double alpha]
+FieldAccess:length
+FieldAccess:data
+FieldAccess:data
+Method-name:minus
+Method-returnType:DenseMatrix
+Method-parameters:[DenseMatrix mat]
+MethodInvocation:clone
+MethodInvocation:axpy
+Method-name:minusEquals
+Method-returnType:void
+Method-parameters:[DenseMatrix mat]
+MethodInvocation:axpy
+Method-name:multiplies
+Method-returnType:DenseMatrix
+Method-parameters:[DenseMatrix mat]
+FieldAccess:m
+MethodInvocation:gemm
+Method-name:multiplies
+Method-returnType:DenseVector
+Method-parameters:[SparseVector x]
+MethodInvocation:numRows
+MethodInvocation:numRows
+MethodInvocation:getIndices
+MethodInvocation:getValues
+MethodInvocation:numCols
+MethodInvocation:get
+MethodInvocation:set
+Method-name:transpose
+Method-returnType:DenseMatrix
+Method-parameters:[]
+MethodInvocation:set
+MethodInvocation:get
+Method-name:toColumnMajor
+Method-returnType:void
+Method-parameters:[int m, int n, double[] data]
+MethodInvocation:arraycopy
+FieldAccess:data
+MethodInvocation:transpose
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:format
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:get
+MethodInvocation:append
+MethodInvocation:toString

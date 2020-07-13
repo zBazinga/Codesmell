@@ -1,0 +1,72 @@
+Class:FS
+Class:Builder
+Field:resolvers
+Field:mounts
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:resolvers
+Method-name:register
+Method-returnType:Builder
+Method-parameters:[String name, FSMountFactory<?> resolver]
+MethodInvocation:put
+Method-name:mount
+Method-returnType:Builder
+Method-parameters:[String name, Path path]
+MethodInvocation:get
+MethodInvocation:create
+MethodInvocation:add
+Method-name:mount
+Method-returnType:Builder
+Method-parameters:[String mountPointConfig]
+MethodInvocation:indexOf
+MethodInvocation:length
+MethodInvocation:substring
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:substring
+MethodInvocation:mount
+MethodInvocation:get
+Method-name:getMounts
+Method-returnType:List<Mount<?>>
+Method-parameters:[]
+Method-name:build
+Method-returnType:FS
+Method-parameters:[]
+MethodInvocation:mount
+MethodInvocation:getDriver
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:append
+MethodInvocation:getValue
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:toString
+Field:drivers
+Method-name:FS
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:drivers
+Method-name:get
+Method-returnType:File
+Method-parameters:[Path path]
+Method-name:mount
+Method-returnType:FS
+Method-parameters:[FSDriver<?> driver]
+MethodInvocation:add
+Method-name:mount
+Method-returnType:FS
+Method-parameters:[java.io.File root]
+MethodInvocation:mount
+Method-name:mount
+Method-returnType:FS
+Method-parameters:[Class<?> clazz]
+MethodInvocation:getLocation
+MethodInvocation:getCodeSource
+MethodInvocation:getProtectionDomain
+MethodInvocation:merge
+MethodInvocation:mount

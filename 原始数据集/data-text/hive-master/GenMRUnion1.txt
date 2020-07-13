@@ -1,0 +1,49 @@
+Class:GenMRUnion1
+Method-name:GenMRUnion1
+Method-returnType:null
+Method-parameters:[]
+Method-name:processSubQueryUnionCreateIntermediate
+Method-returnType:void
+Method-parameters:[Operator<? extends OperatorDesc> parent, Operator<? extends OperatorDesc> child, Task<?> uTask, GenMRProcContext ctx, GenMRUnionCtx uCtxTask]
+MethodInvocation:getParseCtx
+MethodInvocation:getIntermediateFileTableDesc
+MethodInvocation:getFieldSchemasFromRowSchema
+MethodInvocation:getSchema
+MethodInvocation:getContext
+MethodInvocation:getMRTmpPath
+MethodInvocation:createTemporaryFile
+MethodInvocation:addTaskTmpDir
+MethodInvocation:toString
+MethodInvocation:toUri
+MethodInvocation:addTTDesc
+MethodInvocation:addListTopOperators
+MethodInvocation:getCurrTask
+MethodInvocation:addDependentTask
+MethodInvocation:contains
+MethodInvocation:getRootTasks
+MethodInvocation:remove
+MethodInvocation:getRootTasks
+MethodInvocation:contains
+MethodInvocation:getRootTasks
+MethodInvocation:shouldBeRootTask
+MethodInvocation:add
+MethodInvocation:getRootTasks
+Method-name:processSubQueryUnionMerge
+Method-returnType:void
+Method-parameters:[GenMRProcContext ctx, GenMRUnionCtx uCtxTask, UnionOperator union, Stack<Node> stack]
+MethodInvocation:getUTask
+MethodInvocation:setCurrTask
+MethodInvocation:getCurrTopOp
+MethodInvocation:isSeenOp
+MethodInvocation:setTaskPlan
+MethodInvocation:getCurrAliasId
+MethodInvocation:getCurrTopOp
+Method-name:process
+Method-returnType:Object
+Method-parameters:[Node nd, Stack<Node> stack, NodeProcessorCtx opProcCtx, Object... nodeOutputs]
+Method-name:shouldBeRootTask
+Method-returnType:boolean
+Method-parameters:[Task<?> currTask]
+MethodInvocation:getParentTasks
+MethodInvocation:size
+MethodInvocation:getParentTasks

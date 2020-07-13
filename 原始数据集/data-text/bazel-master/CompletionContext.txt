@@ -1,0 +1,60 @@
+Class:CompletionContext
+Field:FAILED_COMPLETION_CTX
+MethodInvocation:createNull
+Method-name:create
+Method-returnType:CompletionContext
+Method-parameters:[Map<Artifact,Collection<Artifact>> expandedArtifacts, Map<Artifact,ImmutableList<FilesetOutputSymlink>> expandedFilesets, boolean expandFilesets, ActionInputMap inputMap, PathResolverFactory pathResolverFactory, Path execRoot, String workspaceName]
+MethodInvocation:shouldCreatePathResolverForArtifactValues
+MethodInvocation:createPathResolverForArtifactValues
+Method-name:createNull
+Method-returnType:CompletionContext
+Method-parameters:[]
+Method-name:expander
+Method-returnType:ArtifactExpander
+Method-parameters:[]
+Method-name:pathResolver
+Method-returnType:ArtifactPathResolver
+Method-parameters:[]
+Method-name:expandFilesets
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:execRoot
+Method-returnType:Path
+Method-parameters:[]
+Method-name:visitArtifacts
+Method-returnType:void
+Method-parameters:[Iterable<Artifact> artifacts, ArtifactReceiver receiver]
+MethodInvocation:isMiddlemanArtifact
+MethodInvocation:isFileset
+MethodInvocation:expandFilesets
+MethodInvocation:visitFileset
+MethodInvocation:isTreeArtifact
+MethodInvocation:expand
+MethodInvocation:expander
+MethodInvocation:accept
+MethodInvocation:accept
+Method-name:visitFileset
+Method-returnType:void
+Method-parameters:[Artifact filesetArtifact, ArtifactReceiver receiver]
+MethodInvocation:getFileset
+MethodInvocation:expander
+MethodInvocation:constructFilesetManifest
+MethodInvocation:entrySet
+MethodInvocation:getEntries
+MethodInvocation:getValue
+MethodInvocation:getKey
+MethodInvocation:acceptFilesetMapping
+MethodInvocation:getRelative
+MethodInvocation:execRoot
+Method-name:accept
+Method-returnType:void
+Method-parameters:[Artifact artifact]
+Method-name:acceptFilesetMapping
+Method-returnType:void
+Method-parameters:[Artifact fileset, PathFragment relName, Path targetFile]
+Method-name:createPathResolverForArtifactValues
+Method-returnType:ArtifactPathResolver
+Method-parameters:[ActionInputMap actionInputMap, Map<Artifact,Collection<Artifact>> expandedArtifacts, Map<Artifact,ImmutableList<FilesetOutputSymlink>> filesets, String workspaceName]
+Method-name:shouldCreatePathResolverForArtifactValues
+Method-returnType:boolean
+Method-parameters:[]

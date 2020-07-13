@@ -1,0 +1,32 @@
+Class:AvroEndpoint
+Field:configuration
+Method-name:AvroEndpoint
+Method-returnType:null
+Method-parameters:[String endpointUri, Component component, AvroConfiguration configuration]
+FieldAccess:configuration
+Method-name:isSingletonProducer
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:createExchange
+Method-returnType:Exchange
+Method-parameters:[Protocol.Message message, Object request]
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:getResponse
+MethodInvocation:createExchange
+MethodInvocation:setBody
+MethodInvocation:getIn
+MethodInvocation:setHeader
+MethodInvocation:getIn
+MethodInvocation:getName
+Method-name:createConsumer
+Method-returnType:Consumer
+Method-parameters:[Processor processor]
+MethodInvocation:configureConsumer
+Method-name:getConfiguration
+Method-returnType:AvroConfiguration
+Method-parameters:[]
+Method-name:doStart
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:validateConfiguration

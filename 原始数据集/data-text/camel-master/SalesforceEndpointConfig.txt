@@ -1,0 +1,456 @@
+Class:SalesforceEndpointConfig
+Field:DEFAULT_VERSION
+Field:API_VERSION
+Field:FORMAT
+Field:RAW_PAYLOAD
+Field:SOBJECT_NAME
+Field:SOBJECT_ID
+Field:SOBJECT_FIELDS
+Field:SOBJECT_EXT_ID_NAME
+Field:SOBJECT_EXT_ID_VALUE
+Field:SOBJECT_BLOB_FIELD_NAME
+Field:SOBJECT_CLASS
+Field:SOBJECT_QUERY
+Field:SOBJECT_SEARCH
+Field:APEX_METHOD
+Field:APEX_URL
+Field:LIMIT
+Field:APEX_QUERY_PARAM_PREFIX
+Field:CONTENT_TYPE
+Field:JOB_ID
+Field:BATCH_ID
+Field:RESULT_ID
+Field:REPORT_ID
+Field:INCLUDE_DETAILS
+Field:REPORT_METADATA
+Field:INSTANCE_ID
+Field:DEFAULT_REPLAY_ID
+Field:INITIAL_REPLAY_ID_MAP
+Field:APPROVAL
+Field:DEFAULT_MAX_AUTHENTICATION_RETRIES
+Field:DEFAULT_BACKOFF_INCREMENT
+Field:DEFAULT_MAX_BACKOFF
+Field:NOT_FOUND_BEHAVIOUR
+Field:apiVersion
+Field:format
+Field:rawPayload
+Field:sObjectName
+Field:sObjectId
+Field:sObjectFields
+Field:sObjectIdName
+Field:sObjectIdValue
+Field:sObjectBlobFieldName
+Field:sObjectClass
+Field:sObjectQuery
+Field:sObjectSearch
+Field:apexMethod
+Field:apexUrl
+Field:apexQueryParams
+Field:contentType
+Field:jobId
+Field:batchId
+Field:resultId
+Field:updateTopic
+Field:notifyForFields
+Field:notifyForOperations
+Field:notifyForOperationCreate
+Field:notifyForOperationUpdate
+Field:notifyForOperationDelete
+Field:notifyForOperationUndelete
+Field:reportId
+Field:includeDetails
+Field:reportMetadata
+Field:instanceId
+Field:defaultReplayId
+Field:initialReplayIdMap
+Field:approval
+Field:httpClient
+Field:objectMapper
+Field:backoffIncrement
+Field:maxBackoff
+Field:limit
+Field:notFoundBehaviour
+Method-name:copy
+Method-returnType:SalesforceEndpointConfig
+Method-parameters:[]
+Method-name:getFormat
+Method-returnType:PayloadFormat
+Method-parameters:[]
+Method-name:setFormat
+Method-returnType:void
+Method-parameters:[PayloadFormat format]
+FieldAccess:format
+Method-name:isRawPayload
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setRawPayload
+Method-returnType:void
+Method-parameters:[boolean rawPayload]
+FieldAccess:rawPayload
+Method-name:getApiVersion
+Method-returnType:String
+Method-parameters:[]
+Method-name:setApiVersion
+Method-returnType:void
+Method-parameters:[String apiVersion]
+FieldAccess:apiVersion
+Method-name:getSObjectName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSObjectName
+Method-returnType:void
+Method-parameters:[String sObjectName]
+FieldAccess:sObjectName
+Method-name:getSObjectId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSObjectId
+Method-returnType:void
+Method-parameters:[String sObjectId]
+FieldAccess:sObjectId
+Method-name:getSObjectFields
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSObjectFields
+Method-returnType:void
+Method-parameters:[String sObjectFields]
+FieldAccess:sObjectFields
+Method-name:getSObjectIdName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSObjectIdName
+Method-returnType:void
+Method-parameters:[String sObjectIdName]
+FieldAccess:sObjectIdName
+Method-name:getSObjectIdValue
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSObjectIdValue
+Method-returnType:void
+Method-parameters:[String sObjectIdValue]
+FieldAccess:sObjectIdValue
+Method-name:getSObjectBlobFieldName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSObjectBlobFieldName
+Method-returnType:void
+Method-parameters:[String sObjectBlobFieldName]
+FieldAccess:sObjectBlobFieldName
+Method-name:getSObjectClass
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSObjectClass
+Method-returnType:void
+Method-parameters:[String sObjectClass]
+FieldAccess:sObjectClass
+Method-name:getSObjectQuery
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSObjectQuery
+Method-returnType:void
+Method-parameters:[String sObjectQuery]
+FieldAccess:sObjectQuery
+Method-name:getSObjectSearch
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSObjectSearch
+Method-returnType:void
+Method-parameters:[String sObjectSearch]
+FieldAccess:sObjectSearch
+Method-name:getApexMethod
+Method-returnType:String
+Method-parameters:[]
+Method-name:setApexMethod
+Method-returnType:void
+Method-parameters:[String apexMethod]
+FieldAccess:apexMethod
+Method-name:getApexUrl
+Method-returnType:String
+Method-parameters:[]
+Method-name:setApexUrl
+Method-returnType:void
+Method-parameters:[String apexUrl]
+FieldAccess:apexUrl
+Method-name:getApexQueryParams
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+MethodInvocation:orElse
+MethodInvocation:ofNullable
+MethodInvocation:emptyMap
+MethodInvocation:unmodifiableMap
+Method-name:setApexQueryParams
+Method-returnType:void
+Method-parameters:[Map<String,Object> apexQueryParams]
+FieldAccess:apexQueryParams
+Method-name:getApproval
+Method-returnType:ApprovalRequest
+Method-parameters:[]
+Method-name:setApproval
+Method-returnType:void
+Method-parameters:[final ApprovalRequest approval]
+FieldAccess:approval
+Method-name:getContentType
+Method-returnType:ContentType
+Method-parameters:[]
+Method-name:setContentType
+Method-returnType:void
+Method-parameters:[ContentType contentType]
+FieldAccess:contentType
+Method-name:getJobId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setJobId
+Method-returnType:void
+Method-parameters:[String jobId]
+FieldAccess:jobId
+Method-name:getBatchId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setBatchId
+Method-returnType:void
+Method-parameters:[String batchId]
+FieldAccess:batchId
+Method-name:getResultId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setResultId
+Method-returnType:void
+Method-parameters:[String resultId]
+FieldAccess:resultId
+Method-name:isUpdateTopic
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setUpdateTopic
+Method-returnType:void
+Method-parameters:[boolean updateTopic]
+FieldAccess:updateTopic
+Method-name:getNotifyForFields
+Method-returnType:NotifyForFieldsEnum
+Method-parameters:[]
+Method-name:setNotifyForFields
+Method-returnType:void
+Method-parameters:[NotifyForFieldsEnum notifyForFields]
+FieldAccess:notifyForFields
+Method-name:getNotifyForOperations
+Method-returnType:NotifyForOperationsEnum
+Method-parameters:[]
+Method-name:setNotifyForOperations
+Method-returnType:void
+Method-parameters:[NotifyForOperationsEnum notifyForOperations]
+FieldAccess:notifyForOperations
+Method-name:getNotifyForOperationCreate
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setNotifyForOperationCreate
+Method-returnType:void
+Method-parameters:[Boolean notifyForOperationCreate]
+FieldAccess:notifyForOperationCreate
+Method-name:getNotifyForOperationUpdate
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setNotifyForOperationUpdate
+Method-returnType:void
+Method-parameters:[Boolean notifyForOperationUpdate]
+FieldAccess:notifyForOperationUpdate
+Method-name:getNotifyForOperationDelete
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setNotifyForOperationDelete
+Method-returnType:void
+Method-parameters:[Boolean notifyForOperationDelete]
+FieldAccess:notifyForOperationDelete
+Method-name:getNotifyForOperationUndelete
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setNotifyForOperationUndelete
+Method-returnType:void
+Method-parameters:[Boolean notifyForOperationUndelete]
+FieldAccess:notifyForOperationUndelete
+Method-name:getReportId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setReportId
+Method-returnType:void
+Method-parameters:[String reportId]
+FieldAccess:reportId
+Method-name:getIncludeDetails
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setIncludeDetails
+Method-returnType:void
+Method-parameters:[Boolean includeDetails]
+FieldAccess:includeDetails
+Method-name:getReportMetadata
+Method-returnType:ReportMetadata
+Method-parameters:[]
+Method-name:setReportMetadata
+Method-returnType:void
+Method-parameters:[ReportMetadata reportMetadata]
+FieldAccess:reportMetadata
+Method-name:getInstanceId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setInstanceId
+Method-returnType:void
+Method-parameters:[String instanceId]
+FieldAccess:instanceId
+Method-name:setHttpClient
+Method-returnType:void
+Method-parameters:[SalesforceHttpClient httpClient]
+FieldAccess:httpClient
+Method-name:getHttpClient
+Method-returnType:SalesforceHttpClient
+Method-parameters:[]
+Method-name:getObjectMapper
+Method-returnType:ObjectMapper
+Method-parameters:[]
+Method-name:getBackoffIncrement
+Method-returnType:long
+Method-parameters:[]
+Method-name:setBackoffIncrement
+Method-returnType:void
+Method-parameters:[long backoffIncrement]
+FieldAccess:backoffIncrement
+Method-name:getMaxBackoff
+Method-returnType:long
+Method-parameters:[]
+Method-name:setMaxBackoff
+Method-returnType:void
+Method-parameters:[long maxBackoff]
+FieldAccess:maxBackoff
+Method-name:setObjectMapper
+Method-returnType:void
+Method-parameters:[ObjectMapper objectMapper]
+FieldAccess:objectMapper
+Method-name:toValueMap
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+MethodInvocation:put
+MethodInvocation:toLowerCase
+MethodInvocation:toString
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:value
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+Method-name:getDefaultReplayId
+Method-returnType:Long
+Method-parameters:[]
+Method-name:setDefaultReplayId
+Method-returnType:void
+Method-parameters:[Long defaultReplayId]
+FieldAccess:defaultReplayId
+Method-name:getInitialReplayIdMap
+Method-returnType:Map<String,Long>
+Method-parameters:[]
+MethodInvocation:orElse
+MethodInvocation:ofNullable
+MethodInvocation:emptyMap
+Method-name:setInitialReplayIdMap
+Method-returnType:void
+Method-parameters:[Map<String,Long> initialReplayIdMap]
+FieldAccess:initialReplayIdMap
+Method-name:getLimit
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setLimit
+Method-returnType:void
+Method-parameters:[final Integer limit]
+FieldAccess:limit
+Method-name:getApprovalActionType
+Method-returnType:Action
+Method-parameters:[]
+MethodInvocation:getActionType
+Method-name:getApprovalComments
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getComments
+Method-name:getApprovalContextActorId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getContextActorId
+Method-name:getApprovalContextId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getContextId
+Method-name:getApprovalNextApproverIds
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getNextApproverIds
+Method-name:getApprovalProcessDefinitionNameOrId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getProcessDefinitionNameOrId
+Method-name:isApprovalSkipEntryCriteria
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isSkipEntryCriteria
+Method-name:setApprovalActionType
+Method-returnType:void
+Method-parameters:[final Action actionType]
+MethodInvocation:setActionType
+Method-name:setApprovalComments
+Method-returnType:void
+Method-parameters:[final String comments]
+MethodInvocation:setComments
+Method-name:setApprovalContextActorId
+Method-returnType:void
+Method-parameters:[final String contextActorId]
+MethodInvocation:setContextActorId
+Method-name:setApprovalContextId
+Method-returnType:void
+Method-parameters:[final String contextId]
+MethodInvocation:setContextId
+Method-name:setApprovalNextApproverIds
+Method-returnType:void
+Method-parameters:[final List<String> nextApproverIds]
+MethodInvocation:setNextApproverIds
+Method-name:setApprovalNextApproverIds
+Method-returnType:void
+Method-parameters:[String nextApproverId]
+MethodInvocation:setNextApproverIds
+Method-name:setApprovalProcessDefinitionNameOrId
+Method-returnType:void
+Method-parameters:[final String processDefinitionNameOrId]
+MethodInvocation:setProcessDefinitionNameOrId
+Method-name:setApprovalSkipEntryCriteria
+Method-returnType:void
+Method-parameters:[final boolean skipEntryCriteria]
+MethodInvocation:setSkipEntryCriteria
+Method-name:getNotFoundBehaviour
+Method-returnType:NotFoundBehaviour
+Method-parameters:[]
+Method-name:setNotFoundBehaviour
+Method-returnType:void
+Method-parameters:[final NotFoundBehaviour notFoundBehaviour]
+FieldAccess:notFoundBehaviour
+Method-name:createRestClientFor
+Method-returnType:RestClient
+Method-parameters:[SalesforceComponent salesforceComponent]
+MethodInvocation:getApiVersion
+MethodInvocation:getFormat
+MethodInvocation:getHttpClient
+MethodInvocation:getSession
+MethodInvocation:getLoginConfig

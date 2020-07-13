@@ -1,0 +1,37 @@
+Class:IdTableHelper
+Field:log
+MethodInvocation:getLogger
+Field:INSTANCE
+Method-name:IdTableHelper
+Method-returnType:null
+Method-parameters:[]
+Method-name:executeIdTableCreationStatements
+Method-returnType:void
+Method-parameters:[List<String> creationStatements, JdbcServices jdbcServices, JdbcConnectionAccess connectionAccess]
+MethodInvocation:isEmpty
+MethodInvocation:obtainConnection
+MethodInvocation:debug
+MethodInvocation:createStatement
+MethodInvocation:logStatement
+MethodInvocation:getSqlStatementLogger
+MethodInvocation:execute
+MethodInvocation:debugf
+MethodInvocation:getMessage
+MethodInvocation:close
+MethodInvocation:error
+MethodInvocation:releaseConnection
+MethodInvocation:error
+Method-name:executeIdTableDropStatements
+Method-returnType:void
+Method-parameters:[String[] dropStatements, JdbcServices jdbcServices, JdbcConnectionAccess connectionAccess]
+MethodInvocation:obtainConnection
+MethodInvocation:createStatement
+MethodInvocation:logStatement
+MethodInvocation:getSqlStatementLogger
+MethodInvocation:execute
+MethodInvocation:debugf
+MethodInvocation:getMessage
+MethodInvocation:close
+MethodInvocation:error
+MethodInvocation:releaseConnection
+MethodInvocation:error

@@ -1,0 +1,629 @@
+Class:JobMaster
+Field:JOB_MANAGER_NAME
+Field:jobMasterConfiguration
+Field:resourceId
+Field:jobGraph
+Field:rpcTimeout
+Field:highAvailabilityServices
+Field:blobWriter
+Field:heartbeatServices
+Field:jobMetricGroupFactory
+Field:scheduledExecutorService
+Field:jobCompletionActions
+Field:fatalErrorHandler
+Field:userCodeLoader
+Field:slotPool
+Field:scheduler
+Field:schedulerNGFactory
+Field:backPressureStatsTracker
+Field:resourceManagerLeaderRetriever
+Field:registeredTaskManagers
+Field:shuffleMaster
+Field:taskManagerHeartbeatManager
+Field:resourceManagerHeartbeatManager
+Field:schedulerNG
+Field:jobStatusListener
+Field:jobManagerJobMetricGroup
+Field:resourceManagerAddress
+Field:resourceManagerConnection
+Field:establishedResourceManagerConnection
+Field:accumulators
+Field:partitionTracker
+Method-name:JobMaster
+Method-returnType:null
+Method-parameters:[RpcService rpcService, JobMasterConfiguration jobMasterConfiguration, ResourceID resourceId, JobGraph jobGraph, HighAvailabilityServices highAvailabilityService, SlotPoolFactory slotPoolFactory, SchedulerFactory schedulerFactory, JobManagerSharedServices jobManagerSharedServices, HeartbeatServices heartbeatServices, JobManagerJobMetricGroupFactory jobMetricGroupFactory, OnCompletionActions jobCompletionActions, FatalErrorHandler fatalErrorHandler, ClassLoader userCodeLoader, SchedulerNGFactory schedulerNGFactory, ShuffleMaster<?> shuffleMaster, PartitionTrackerFactory partitionTrackerFactory]
+MethodInvocation:createRandomName
+FieldAccess:jobMasterConfiguration
+MethodInvocation:checkNotNull
+FieldAccess:resourceId
+MethodInvocation:checkNotNull
+FieldAccess:jobGraph
+MethodInvocation:checkNotNull
+FieldAccess:rpcTimeout
+MethodInvocation:getRpcTimeout
+FieldAccess:highAvailabilityServices
+MethodInvocation:checkNotNull
+FieldAccess:blobWriter
+MethodInvocation:getBlobWriter
+FieldAccess:scheduledExecutorService
+MethodInvocation:getScheduledExecutorService
+FieldAccess:jobCompletionActions
+MethodInvocation:checkNotNull
+FieldAccess:fatalErrorHandler
+MethodInvocation:checkNotNull
+FieldAccess:userCodeLoader
+MethodInvocation:checkNotNull
+FieldAccess:schedulerNGFactory
+MethodInvocation:checkNotNull
+FieldAccess:heartbeatServices
+MethodInvocation:checkNotNull
+FieldAccess:jobMetricGroupFactory
+MethodInvocation:checkNotNull
+MethodInvocation:getName
+MethodInvocation:getJobID
+MethodInvocation:info
+MethodInvocation:getResourceManagerLeaderRetriever
+FieldAccess:slotPool
+MethodInvocation:createSlotPool
+MethodInvocation:checkNotNull
+MethodInvocation:getJobID
+FieldAccess:scheduler
+MethodInvocation:createScheduler
+MethodInvocation:checkNotNull
+FieldAccess:registeredTaskManagers
+FieldAccess:partitionTracker
+MethodInvocation:create
+MethodInvocation:checkNotNull
+MethodInvocation:get
+MethodInvocation:empty
+MethodInvocation:of
+FieldAccess:backPressureStatsTracker
+MethodInvocation:checkNotNull
+MethodInvocation:getBackPressureStatsTracker
+FieldAccess:shuffleMaster
+MethodInvocation:checkNotNull
+FieldAccess:jobManagerJobMetricGroup
+MethodInvocation:create
+FieldAccess:schedulerNG
+MethodInvocation:createScheduler
+FieldAccess:jobStatusListener
+FieldAccess:resourceManagerConnection
+FieldAccess:establishedResourceManagerConnection
+FieldAccess:accumulators
+FieldAccess:taskManagerHeartbeatManager
+MethodInvocation:getInstance
+FieldAccess:resourceManagerHeartbeatManager
+MethodInvocation:getInstance
+Method-name:createScheduler
+Method-returnType:SchedulerNG
+Method-parameters:[final JobManagerJobMetricGroup jobManagerJobMetricGroup]
+MethodInvocation:createInstance
+MethodInvocation:getConfiguration
+MethodInvocation:getCheckpointRecoveryFactory
+MethodInvocation:getSlotRequestTimeout
+Method-name:start
+Method-returnType:CompletableFuture<Acknowledge>
+Method-parameters:[final JobMasterId newJobMasterId]
+MethodInvocation:start
+MethodInvocation:callAsyncWithoutFencing
+MethodInvocation:startJobExecution
+Method-name:suspend
+Method-returnType:CompletableFuture<Acknowledge>
+Method-parameters:[final Exception cause]
+MethodInvocation:callAsyncWithoutFencing
+MethodInvocation:suspendExecution
+MethodInvocation:whenComplete
+MethodInvocation:stop
+Method-name:onStop
+Method-returnType:CompletableFuture<Void>
+Method-parameters:[]
+MethodInvocation:info
+MethodInvocation:getName
+MethodInvocation:getJobID
+MethodInvocation:keySet
+MethodInvocation:getName
+MethodInvocation:getJobID
+MethodInvocation:disconnectTaskManager
+MethodInvocation:suspendExecution
+MethodInvocation:close
+MethodInvocation:completedFuture
+Method-name:cancel
+Method-returnType:CompletableFuture<Acknowledge>
+Method-parameters:[Time timeout]
+MethodInvocation:cancel
+MethodInvocation:completedFuture
+MethodInvocation:get
+Method-name:updateTaskExecutionState
+Method-returnType:CompletableFuture<Acknowledge>
+Method-parameters:[final TaskExecutionState taskExecutionState]
+MethodInvocation:checkNotNull
+MethodInvocation:updateTaskExecutionState
+MethodInvocation:completedFuture
+MethodInvocation:get
+MethodInvocation:completedExceptionally
+MethodInvocation:getID
+Method-name:requestNextInputSplit
+Method-returnType:CompletableFuture<SerializedInputSplit>
+Method-parameters:[final JobVertexID vertexID, final ExecutionAttemptID executionAttempt]
+MethodInvocation:completedFuture
+MethodInvocation:requestNextInputSplit
+MethodInvocation:warn
+MethodInvocation:completedExceptionally
+Method-name:requestPartitionState
+Method-returnType:CompletableFuture<ExecutionState>
+Method-parameters:[final IntermediateDataSetID intermediateResultId, final ResultPartitionID resultPartitionId]
+MethodInvocation:completedFuture
+MethodInvocation:requestPartitionState
+MethodInvocation:info
+MethodInvocation:completedExceptionally
+Method-name:scheduleOrUpdateConsumers
+Method-returnType:CompletableFuture<Acknowledge>
+Method-parameters:[final ResultPartitionID partitionID, final Time timeout]
+MethodInvocation:scheduleOrUpdateConsumers
+MethodInvocation:completedFuture
+MethodInvocation:get
+Method-name:disconnectTaskManager
+Method-returnType:CompletableFuture<Acknowledge>
+Method-parameters:[final ResourceID resourceID, final Exception cause]
+MethodInvocation:debug
+MethodInvocation:getMessage
+MethodInvocation:unmonitorTarget
+MethodInvocation:releaseTaskManager
+MethodInvocation:stopTrackingPartitionsFor
+MethodInvocation:remove
+MethodInvocation:disconnectJobManager
+MethodInvocation:getJobID
+MethodInvocation:completedFuture
+MethodInvocation:get
+Method-name:acknowledgeCheckpoint
+Method-returnType:void
+Method-parameters:[final JobID jobID, final ExecutionAttemptID executionAttemptID, final long checkpointId, final CheckpointMetrics checkpointMetrics, final TaskStateSnapshot checkpointState]
+MethodInvocation:acknowledgeCheckpoint
+Method-name:declineCheckpoint
+Method-returnType:void
+Method-parameters:[DeclineCheckpoint decline]
+MethodInvocation:declineCheckpoint
+Method-name:sendOperatorEventToCoordinator
+Method-returnType:CompletableFuture<Acknowledge>
+Method-parameters:[final ExecutionAttemptID task, final OperatorID operatorID, final SerializedValue<OperatorEvent> serializedEvent]
+MethodInvocation:deserializeValue
+MethodInvocation:deliverOperatorEventToCoordinator
+MethodInvocation:completedFuture
+MethodInvocation:get
+MethodInvocation:completedExceptionally
+Method-name:requestKvStateLocation
+Method-returnType:CompletableFuture<KvStateLocation>
+Method-parameters:[final JobID jobId, final String registrationName]
+MethodInvocation:completedFuture
+MethodInvocation:requestKvStateLocation
+MethodInvocation:info
+MethodInvocation:completedExceptionally
+Method-name:notifyKvStateRegistered
+Method-returnType:CompletableFuture<Acknowledge>
+Method-parameters:[final JobID jobId, final JobVertexID jobVertexId, final KeyGroupRange keyGroupRange, final String registrationName, final KvStateID kvStateId, final InetSocketAddress kvStateServerAddress]
+MethodInvocation:notifyKvStateRegistered
+MethodInvocation:completedFuture
+MethodInvocation:get
+MethodInvocation:info
+MethodInvocation:completedExceptionally
+Method-name:notifyKvStateUnregistered
+Method-returnType:CompletableFuture<Acknowledge>
+Method-parameters:[JobID jobId, JobVertexID jobVertexId, KeyGroupRange keyGroupRange, String registrationName]
+MethodInvocation:notifyKvStateUnregistered
+MethodInvocation:completedFuture
+MethodInvocation:get
+MethodInvocation:info
+MethodInvocation:completedExceptionally
+Method-name:offerSlots
+Method-returnType:CompletableFuture<Collection<SlotOffer>>
+Method-parameters:[final ResourceID taskManagerId, final Collection<SlotOffer> slots, final Time timeout]
+MethodInvocation:get
+MethodInvocation:completedExceptionally
+MethodInvocation:getFencingToken
+MethodInvocation:completedFuture
+MethodInvocation:offerSlots
+Method-name:failSlot
+Method-returnType:void
+Method-parameters:[final ResourceID taskManagerId, final AllocationID allocationId, final Exception cause]
+MethodInvocation:containsKey
+MethodInvocation:internalFailAllocation
+MethodInvocation:warn
+Method-name:internalFailAllocation
+Method-returnType:void
+Method-parameters:[AllocationID allocationId, Exception cause]
+MethodInvocation:failAllocation
+MethodInvocation:ifPresent
+MethodInvocation:isTrackingPartitionsFor
+MethodInvocation:releaseEmptyTaskManager
+Method-name:releaseEmptyTaskManager
+Method-returnType:void
+Method-parameters:[ResourceID resourceId]
+MethodInvocation:disconnectTaskManager
+MethodInvocation:format
+Method-name:registerTaskManager
+Method-returnType:CompletableFuture<RegistrationResponse>
+Method-parameters:[final String taskManagerRpcAddress, final UnresolvedTaskManagerLocation unresolvedTaskManagerLocation, final Time timeout]
+MethodInvocation:fromUnresolvedLocation
+MethodInvocation:format
+MethodInvocation:getExternalAddress
+MethodInvocation:getMessage
+MethodInvocation:error
+MethodInvocation:completedFuture
+MethodInvocation:getResourceID
+MethodInvocation:containsKey
+MethodInvocation:completedFuture
+MethodInvocation:handleAsync
+MethodInvocation:connect
+MethodInvocation:getRpcService
+MethodInvocation:getMessage
+MethodInvocation:registerTaskManager
+MethodInvocation:put
+MethodInvocation:of
+MethodInvocation:monitorTarget
+Method-name:receiveHeartbeat
+Method-returnType:void
+Method-parameters:[ResourceID resourceID, AllocatedSlotReport payload]
+Method-name:requestHeartbeat
+Method-returnType:void
+Method-parameters:[ResourceID resourceID, AllocatedSlotReport allocatedSlotReport]
+MethodInvocation:heartbeatFromJobManager
+MethodInvocation:getMainThreadExecutor
+Method-name:disconnectResourceManager
+Method-returnType:void
+Method-parameters:[final ResourceManagerId resourceManagerId, final Exception cause]
+MethodInvocation:isConnectingToResourceManager
+MethodInvocation:reconnectToResourceManager
+Method-name:isConnectingToResourceManager
+Method-returnType:boolean
+Method-parameters:[ResourceManagerId resourceManagerId]
+MethodInvocation:equals
+MethodInvocation:getResourceManagerId
+Method-name:heartbeatFromTaskManager
+Method-returnType:void
+Method-parameters:[final ResourceID resourceID, AccumulatorReport accumulatorReport]
+MethodInvocation:receiveHeartbeat
+Method-name:heartbeatFromResourceManager
+Method-returnType:void
+Method-parameters:[final ResourceID resourceID]
+MethodInvocation:requestHeartbeat
+Method-name:requestJobDetails
+Method-returnType:CompletableFuture<JobDetails>
+Method-parameters:[Time timeout]
+MethodInvocation:completedFuture
+MethodInvocation:requestJobDetails
+Method-name:requestJobStatus
+Method-returnType:CompletableFuture<JobStatus>
+Method-parameters:[Time timeout]
+MethodInvocation:completedFuture
+MethodInvocation:requestJobStatus
+Method-name:requestJob
+Method-returnType:CompletableFuture<ArchivedExecutionGraph>
+Method-parameters:[Time timeout]
+MethodInvocation:completedFuture
+MethodInvocation:requestJob
+Method-name:triggerSavepoint
+Method-returnType:CompletableFuture<String>
+Method-parameters:[@Nullable final String targetDirectory, final boolean cancelJob, final Time timeout]
+MethodInvocation:triggerSavepoint
+Method-name:stopWithSavepoint
+Method-returnType:CompletableFuture<String>
+Method-parameters:[@Nullable final String targetDirectory, final boolean advanceToEndOfEventTime, final Time timeout]
+MethodInvocation:stopWithSavepoint
+Method-name:requestOperatorBackPressureStats
+Method-returnType:CompletableFuture<OperatorBackPressureStatsResponse>
+Method-parameters:[final JobVertexID jobVertexId]
+MethodInvocation:requestOperatorBackPressureStats
+MethodInvocation:completedFuture
+MethodInvocation:of
+MethodInvocation:orElse
+MethodInvocation:info
+MethodInvocation:completedExceptionally
+Method-name:notifyAllocationFailure
+Method-returnType:void
+Method-parameters:[AllocationID allocationID, Exception cause]
+MethodInvocation:internalFailAllocation
+Method-name:updateGlobalAggregate
+Method-returnType:CompletableFuture<Object>
+Method-parameters:[String aggregateName, Object aggregand, byte[] serializedAggregateFunction]
+MethodInvocation:deserializeObject
+MethodInvocation:error
+MethodInvocation:completedExceptionally
+MethodInvocation:get
+MethodInvocation:createAccumulator
+MethodInvocation:add
+MethodInvocation:put
+MethodInvocation:completedFuture
+MethodInvocation:getResult
+Method-name:deliverCoordinationRequestToCoordinator
+Method-returnType:CompletableFuture<CoordinationResponse>
+Method-parameters:[OperatorID operatorId, SerializedValue<CoordinationRequest> serializedRequest, Time timeout]
+MethodInvocation:deserializeValue
+MethodInvocation:deliverCoordinationRequestToCoordinator
+MethodInvocation:completedExceptionally
+Method-name:startJobExecution
+Method-returnType:Acknowledge
+Method-parameters:[JobMasterId newJobMasterId]
+MethodInvocation:validateRunsInMainThread
+MethodInvocation:checkNotNull
+MethodInvocation:equals
+MethodInvocation:getFencingToken
+MethodInvocation:info
+MethodInvocation:get
+MethodInvocation:setNewFencingToken
+MethodInvocation:startJobMasterServices
+MethodInvocation:info
+MethodInvocation:getName
+MethodInvocation:getJobID
+MethodInvocation:resetAndStartScheduler
+MethodInvocation:get
+Method-name:startJobMasterServices
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:startHeartbeatServices
+MethodInvocation:start
+MethodInvocation:getFencingToken
+MethodInvocation:getAddress
+MethodInvocation:getMainThreadExecutor
+MethodInvocation:start
+MethodInvocation:getMainThreadExecutor
+MethodInvocation:reconnectToResourceManager
+MethodInvocation:start
+Method-name:setNewFencingToken
+Method-returnType:void
+Method-parameters:[JobMasterId newJobMasterId]
+MethodInvocation:getFencingToken
+MethodInvocation:info
+MethodInvocation:getFencingToken
+MethodInvocation:suspendExecution
+MethodInvocation:getFencingToken
+MethodInvocation:setFencingToken
+Method-name:suspendExecution
+Method-returnType:Acknowledge
+Method-parameters:[final Exception cause]
+MethodInvocation:validateRunsInMainThread
+MethodInvocation:getFencingToken
+MethodInvocation:debug
+MethodInvocation:get
+MethodInvocation:setFencingToken
+MethodInvocation:stop
+MethodInvocation:warn
+MethodInvocation:suspendAndClearSchedulerFields
+MethodInvocation:suspend
+MethodInvocation:closeResourceManagerConnection
+MethodInvocation:stopHeartbeatServices
+MethodInvocation:get
+Method-name:stopHeartbeatServices
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:stop
+MethodInvocation:stop
+Method-name:startHeartbeatServices
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:createHeartbeatManagerSender
+MethodInvocation:getMainThreadExecutor
+MethodInvocation:createHeartbeatManager
+MethodInvocation:getMainThreadExecutor
+Method-name:assignScheduler
+Method-returnType:void
+Method-parameters:[SchedulerNG newScheduler, JobManagerJobMetricGroup newJobManagerJobMetricGroup]
+MethodInvocation:validateRunsInMainThread
+MethodInvocation:checkState
+MethodInvocation:isTerminalState
+MethodInvocation:requestJobStatus
+MethodInvocation:checkState
+Method-name:resetAndStartScheduler
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:validateRunsInMainThread
+MethodInvocation:requestJobStatus
+MethodInvocation:completedFuture
+MethodInvocation:setMainThreadExecutor
+MethodInvocation:getMainThreadExecutor
+MethodInvocation:suspendAndClearSchedulerFields
+MethodInvocation:create
+MethodInvocation:createScheduler
+MethodInvocation:handle
+MethodInvocation:getTerminationFuture
+MethodInvocation:setMainThreadExecutor
+MethodInvocation:getMainThreadExecutor
+MethodInvocation:assignScheduler
+MethodInvocation:thenRun
+Method-name:startScheduling
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:checkState
+MethodInvocation:registerJobStatusListener
+MethodInvocation:startScheduling
+Method-name:suspendAndClearSchedulerFields
+Method-returnType:void
+Method-parameters:[Exception cause]
+MethodInvocation:suspendScheduler
+MethodInvocation:clearSchedulerFields
+Method-name:suspendScheduler
+Method-returnType:void
+Method-parameters:[Exception cause]
+MethodInvocation:suspend
+MethodInvocation:close
+MethodInvocation:stop
+Method-name:clearSchedulerFields
+Method-returnType:void
+Method-parameters:[]
+Method-name:handleJobMasterError
+Method-returnType:void
+Method-parameters:[final Throwable cause]
+MethodInvocation:isJvmFatalError
+MethodInvocation:error
+MethodInvocation:onFatalError
+MethodInvocation:jobMasterFailed
+Method-name:jobStatusChanged
+Method-returnType:void
+Method-parameters:[final JobStatus newJobStatus, long timestamp, @Nullable final Throwable error]
+MethodInvocation:validateRunsInMainThread
+MethodInvocation:isGloballyTerminalState
+MethodInvocation:runAsync
+MethodInvocation:forEach
+MethodInvocation:keySet
+MethodInvocation:requestJob
+MethodInvocation:execute
+MethodInvocation:jobReachedGloballyTerminalState
+Method-name:notifyOfNewResourceManagerLeader
+Method-returnType:void
+Method-parameters:[final String newResourceManagerAddress, final ResourceManagerId resourceManagerId]
+MethodInvocation:createResourceManagerAddress
+MethodInvocation:reconnectToResourceManager
+MethodInvocation:format
+Method-name:reconnectToResourceManager
+Method-returnType:void
+Method-parameters:[Exception cause]
+MethodInvocation:closeResourceManagerConnection
+MethodInvocation:tryConnectToResourceManager
+Method-name:tryConnectToResourceManager
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:connectToResourceManager
+Method-name:connectToResourceManager
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:info
+MethodInvocation:getJobID
+MethodInvocation:getAddress
+MethodInvocation:getFencingToken
+MethodInvocation:getAddress
+MethodInvocation:getResourceManagerId
+MethodInvocation:start
+Method-name:establishResourceManagerConnection
+Method-returnType:void
+Method-parameters:[final JobMasterRegistrationSuccess success]
+MethodInvocation:getResourceManagerId
+MethodInvocation:equals
+MethodInvocation:getTargetLeaderId
+MethodInvocation:info
+MethodInvocation:getTargetGateway
+MethodInvocation:getResourceManagerResourceId
+MethodInvocation:connectToResourceManager
+MethodInvocation:monitorTarget
+Method-name:receiveHeartbeat
+Method-returnType:void
+Method-parameters:[ResourceID resourceID, Void payload]
+MethodInvocation:heartbeatFromJobManager
+Method-name:requestHeartbeat
+Method-returnType:void
+Method-parameters:[ResourceID resourceID, Void payload]
+MethodInvocation:debug
+Method-name:closeResourceManagerConnection
+Method-returnType:void
+Method-parameters:[Exception cause]
+MethodInvocation:dissolveResourceManagerConnection
+MethodInvocation:close
+Method-name:dissolveResourceManagerConnection
+Method-returnType:void
+Method-parameters:[EstablishedResourceManagerConnection establishedResourceManagerConnection, Exception cause]
+MethodInvocation:getResourceManagerResourceID
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:info
+MethodInvocation:getMessage
+MethodInvocation:unmonitorTarget
+MethodInvocation:getResourceManagerGateway
+MethodInvocation:disconnectJobManager
+MethodInvocation:getJobID
+MethodInvocation:disconnectResourceManager
+Method-name:getGateway
+Method-returnType:JobMasterGateway
+Method-parameters:[]
+MethodInvocation:getSelfGateway
+Class:ResourceManagerLeaderListener
+Method-name:notifyLeaderAddress
+Method-returnType:void
+Method-parameters:[final String leaderAddress, final UUID leaderSessionID]
+MethodInvocation:runAsync
+MethodInvocation:notifyOfNewResourceManagerLeader
+MethodInvocation:fromUuidOrNull
+Method-name:handleError
+Method-returnType:void
+Method-parameters:[final Exception exception]
+MethodInvocation:handleJobMasterError
+Class:ResourceManagerConnection
+Field:jobID
+Field:jobManagerResourceID
+Field:jobManagerRpcAddress
+Field:jobMasterId
+Method-name:ResourceManagerConnection
+Method-returnType:null
+Method-parameters:[final Logger log, final JobID jobID, final ResourceID jobManagerResourceID, final String jobManagerRpcAddress, final JobMasterId jobMasterId, final String resourceManagerAddress, final ResourceManagerId resourceManagerId, final Executor executor]
+FieldAccess:jobID
+MethodInvocation:checkNotNull
+FieldAccess:jobManagerResourceID
+MethodInvocation:checkNotNull
+FieldAccess:jobManagerRpcAddress
+MethodInvocation:checkNotNull
+FieldAccess:jobMasterId
+MethodInvocation:checkNotNull
+Method-name:generateRegistration
+Method-returnType:RetryingRegistration<ResourceManagerId,ResourceManagerGateway,JobMasterRegistrationSuccess>
+Method-parameters:[]
+MethodInvocation:getRpcService
+MethodInvocation:getTargetAddress
+MethodInvocation:getTargetLeaderId
+MethodInvocation:getRetryingRegistrationConfiguration
+Method-name:invokeRegistration
+Method-returnType:CompletableFuture<RegistrationResponse>
+Method-parameters:[ResourceManagerGateway gateway, ResourceManagerId fencingToken, long timeoutMillis]
+MethodInvocation:milliseconds
+MethodInvocation:registerJobManager
+Method-name:onRegistrationSuccess
+Method-returnType:void
+Method-parameters:[final JobMasterRegistrationSuccess success]
+MethodInvocation:runAsync
+MethodInvocation:establishResourceManagerConnection
+Method-name:onRegistrationFailure
+Method-returnType:void
+Method-parameters:[final Throwable failure]
+MethodInvocation:handleJobMasterError
+Class:JobManagerJobStatusListener
+Field:running
+Method-name:jobStatusChanges
+Method-returnType:void
+Method-parameters:[final JobID jobId, final JobStatus newJobStatus, final long timestamp, final Throwable error]
+MethodInvocation:runAsync
+MethodInvocation:jobStatusChanged
+Method-name:stop
+Method-returnType:void
+Method-parameters:[]
+Class:TaskManagerHeartbeatListener
+Method-name:notifyHeartbeatTimeout
+Method-returnType:void
+Method-parameters:[ResourceID resourceID]
+MethodInvocation:validateRunsInMainThread
+MethodInvocation:disconnectTaskManager
+Method-name:reportPayload
+Method-returnType:void
+Method-parameters:[ResourceID resourceID, AccumulatorReport payload]
+MethodInvocation:validateRunsInMainThread
+MethodInvocation:getAccumulatorSnapshots
+MethodInvocation:updateAccumulators
+Method-name:retrievePayload
+Method-returnType:AllocatedSlotReport
+Method-parameters:[ResourceID resourceID]
+MethodInvocation:validateRunsInMainThread
+MethodInvocation:createAllocatedSlotReport
+Class:ResourceManagerHeartbeatListener
+Method-name:notifyHeartbeatTimeout
+Method-returnType:void
+Method-parameters:[final ResourceID resourceId]
+MethodInvocation:validateRunsInMainThread
+MethodInvocation:info
+MethodInvocation:equals
+MethodInvocation:getResourceManagerResourceID
+MethodInvocation:reconnectToResourceManager
+MethodInvocation:format
+Method-name:reportPayload
+Method-returnType:void
+Method-parameters:[ResourceID resourceID, Void payload]
+Method-name:retrievePayload
+Method-returnType:Void
+Method-parameters:[ResourceID resourceID]

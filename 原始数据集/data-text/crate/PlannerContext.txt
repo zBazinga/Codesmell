@@ -1,0 +1,77 @@
+Class:PlannerContext
+Method-name:forSubPlan
+Method-returnType:PlannerContext
+Method-parameters:[PlannerContext context]
+MethodInvocation:forSubPlan
+Method-name:forSubPlan
+Method-returnType:PlannerContext
+Method-parameters:[PlannerContext context, int fetchSize]
+MethodInvocation:randomUUID
+Field:jobId
+Field:coordinatorTxnCtx
+Field:fetchSize
+Field:routingBuilder
+Field:routingProvider
+Field:functions
+Field:clusterState
+Field:executionPhaseId
+Field:handlerNode
+Method-name:PlannerContext
+Method-returnType:null
+Method-parameters:[ClusterState clusterState, RoutingProvider routingProvider, UUID jobId, Functions functions, CoordinatorTxnCtx coordinatorTxnCtx, int fetchSize]
+FieldAccess:routingProvider
+FieldAccess:functions
+FieldAccess:routingBuilder
+FieldAccess:clusterState
+FieldAccess:jobId
+FieldAccess:coordinatorTxnCtx
+FieldAccess:fetchSize
+FieldAccess:handlerNode
+MethodInvocation:getLocalNodeId
+MethodInvocation:getNodes
+Method-name:fetchSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:transactionContext
+Method-returnType:CoordinatorTxnCtx
+Method-parameters:[]
+Method-name:handlerNode
+Method-returnType:String
+Method-parameters:[]
+Method-name:jobId
+Method-returnType:UUID
+Method-parameters:[]
+Method-name:nextExecutionPhaseId
+Method-returnType:int
+Method-parameters:[]
+Method-name:allocateRouting
+Method-returnType:Routing
+Method-parameters:[TableInfo tableInfo, WhereClause where, RoutingProvider.ShardSelection shardSelection, SessionContext sessionContext]
+MethodInvocation:allocateRouting
+Method-name:resolveShard
+Method-returnType:ShardRouting
+Method-parameters:[String indexName, String id, @Nullable String routing]
+MethodInvocation:resolveShard
+Method-name:buildReaderAllocations
+Method-returnType:ReaderAllocations
+Method-parameters:[]
+MethodInvocation:buildReaderAllocations
+Method-name:functions
+Method-returnType:Functions
+Method-parameters:[]
+Method-name:planWithEvalProjection
+Method-returnType:ExecutionPlan
+Method-parameters:[ExecutionPlan executionPlan, List<Symbol> sourceOutputs, Row params, SubQueryResults subQueryResults, FetchOrEval fetchOrEval]
+MethodInvocation:map
+MethodInvocation:outputs
+MethodInvocation:orderBy
+MethodInvocation:resultDescription
+MethodInvocation:tryMapToNewOutputs
+MethodInvocation:ensureOnHandler
+MethodInvocation:map
+MethodInvocation:addProjection
+MethodInvocation:create
+MethodInvocation:limit
+MethodInvocation:resultDescription
+MethodInvocation:offset
+MethodInvocation:resultDescription

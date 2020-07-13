@@ -1,0 +1,31 @@
+Class:DecoraParser
+Method-name:decorate
+Method-returnType:void
+Method-parameters:[final Writer writer, final char[] pageContent, final char[] decoraContent]
+MethodInvocation:parseDecorator
+MethodInvocation:parsePage
+MethodInvocation:writeDecoratedPage
+Method-name:parseDecorator
+Method-returnType:DecoraTag[]
+Method-parameters:[final char[] decoraContent]
+MethodInvocation:setEnableRawTextModes
+MethodInvocation:getConfig
+MethodInvocation:parse
+MethodInvocation:getDecoraTags
+Method-name:parsePage
+Method-returnType:void
+Method-parameters:[final char[] pageContent, final DecoraTag[] decoraTags]
+MethodInvocation:parse
+Method-name:writeDecoratedPage
+Method-returnType:void
+Method-parameters:[final Writer out, final char[] decoratorContent, final char[] pageContent, final DecoraTag[] decoraTags]
+MethodInvocation:getStartIndex
+MethodInvocation:write
+MethodInvocation:getEndIndex
+MethodInvocation:getRegionLength
+MethodInvocation:hasDefaultValue
+MethodInvocation:write
+MethodInvocation:getDefaultValueStart
+MethodInvocation:getDefaultValueLength
+MethodInvocation:writeRegion
+MethodInvocation:write

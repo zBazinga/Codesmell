@@ -1,0 +1,75 @@
+Class:FullHttpResponseToMockServerResponse
+Field:mockServerLogger
+Field:bodyDecoderEncoder
+Method-name:FullHttpResponseToMockServerResponse
+Method-returnType:null
+Method-parameters:[MockServerLogger mockServerLogger]
+FieldAccess:mockServerLogger
+FieldAccess:bodyDecoderEncoder
+Method-name:mapFullHttpResponseToMockServerResponse
+Method-returnType:HttpResponse
+Method-parameters:[FullHttpResponse fullHttpResponse]
+MethodInvocation:setStatusCode
+MethodInvocation:setHeaders
+MethodInvocation:setCookies
+MethodInvocation:setBody
+MethodInvocation:logEvent
+MethodInvocation:setThrowable
+MethodInvocation:setArguments
+MethodInvocation:setMessageFormat
+MethodInvocation:setLogLevel
+MethodInvocation:setType
+Method-name:setStatusCode
+Method-returnType:void
+Method-parameters:[HttpResponse httpResponse, FullHttpResponse fullHttpResponse]
+MethodInvocation:status
+MethodInvocation:withStatusCode
+MethodInvocation:code
+MethodInvocation:withReasonPhrase
+MethodInvocation:reasonPhrase
+Method-name:setHeaders
+Method-returnType:void
+Method-parameters:[HttpResponse httpResponse, FullHttpResponse fullHttpResponse]
+MethodInvocation:names
+MethodInvocation:headers
+MethodInvocation:withEntry
+MethodInvocation:getAll
+MethodInvocation:headers
+MethodInvocation:isEmpty
+MethodInvocation:withHeaders
+Method-name:setCookies
+Method-returnType:void
+Method-parameters:[HttpResponse httpResponse]
+MethodInvocation:getHeaderList
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getValue
+MethodInvocation:getName
+MethodInvocation:getValues
+MethodInvocation:decode
+MethodInvocation:getValue
+MethodInvocation:trim
+MethodInvocation:name
+MethodInvocation:trim
+MethodInvocation:value
+MethodInvocation:withEntry
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getValue
+MethodInvocation:getName
+MethodInvocation:getValues
+MethodInvocation:decode
+MethodInvocation:getValue
+MethodInvocation:trim
+MethodInvocation:name
+MethodInvocation:trim
+MethodInvocation:value
+MethodInvocation:withEntry
+MethodInvocation:isEmpty
+MethodInvocation:withCookies
+Method-name:setBody
+Method-returnType:void
+Method-parameters:[HttpResponse httpResponse, FullHttpResponse fullHttpResponse]
+MethodInvocation:withBody
+MethodInvocation:byteBufToBody
+MethodInvocation:content
+MethodInvocation:get
+MethodInvocation:headers

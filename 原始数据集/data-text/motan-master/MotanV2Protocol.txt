@@ -1,0 +1,46 @@
+Class:MotanV2Protocol
+Field:DEFAULT_CODEC
+Field:ipPort2RequestRouter
+Method-name:createExporter
+Method-returnType:Exporter<T>
+Method-parameters:[Provider<T> provider, URL url]
+MethodInvocation:getParameter
+MethodInvocation:getName
+MethodInvocation:isBlank
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:put
+MethodInvocation:getParameters
+MethodInvocation:getName
+FieldAccess:ipPort2RequestRouter
+FieldAccess:exporterMap
+Method-name:createReferer
+Method-returnType:Referer<T>
+Method-parameters:[Class<T> clz, URL url, URL serviceUrl]
+MethodInvocation:setDefaultCodec
+Method-name:setDefaultCodec
+Method-returnType:void
+Method-parameters:[URL url]
+MethodInvocation:getParameter
+MethodInvocation:getName
+MethodInvocation:isBlank
+MethodInvocation:equals
+MethodInvocation:put
+MethodInvocation:getParameters
+MethodInvocation:getName
+Class:V2RpcReferer
+Method-name:V2RpcReferer
+Method-returnType:null
+Method-parameters:[Class<T> clz, URL url, URL serviceUrl]
+Method-name:doCall
+Method-returnType:Response
+Method-parameters:[Request request]
+MethodInvocation:setAttachment
+MethodInvocation:getName
+MethodInvocation:getGroup
+MethodInvocation:setAttachment
+MethodInvocation:getProtocol
+FieldAccess:url
+MethodInvocation:request
+MethodInvocation:getUri

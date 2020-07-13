@@ -1,0 +1,216 @@
+Class:DateHistogramGroupSource
+Field:CALENDAR_INTERVAL_ID
+Field:FIXED_INTERVAL_ID
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getInterval
+Method-returnType:DateHistogramInterval
+Method-parameters:[]
+Method-name:getIntervalTypeId
+Method-returnType:byte
+Method-parameters:[]
+Class:FixedInterval
+Field:NAME
+Field:interval
+Method-name:FixedInterval
+Method-returnType:null
+Method-parameters:[DateHistogramInterval interval]
+FieldAccess:interval
+Method-name:FixedInterval
+Method-returnType:null
+Method-parameters:[StreamInput in]
+FieldAccess:interval
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getInterval
+Method-returnType:DateHistogramInterval
+Method-parameters:[]
+Method-name:getIntervalTypeId
+Method-returnType:byte
+Method-parameters:[]
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:field
+MethodInvocation:toXContent
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeTo
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+FieldAccess:interval
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Class:CalendarInterval
+Field:NAME
+Field:interval
+Method-name:CalendarInterval
+Method-returnType:null
+Method-parameters:[DateHistogramInterval interval]
+FieldAccess:interval
+MethodInvocation:get
+MethodInvocation:toString
+Method-name:CalendarInterval
+Method-returnType:null
+Method-parameters:[StreamInput in]
+FieldAccess:interval
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getInterval
+Method-returnType:DateHistogramInterval
+Method-parameters:[]
+Method-name:getIntervalTypeId
+Method-returnType:byte
+Method-parameters:[]
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:field
+MethodInvocation:toXContent
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeTo
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+FieldAccess:interval
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:readInterval
+Method-returnType:Interval
+Method-parameters:[StreamInput in]
+MethodInvocation:readByte
+Method-name:writeInterval
+Method-returnType:void
+Method-parameters:[Interval interval, StreamOutput out]
+MethodInvocation:write
+MethodInvocation:getIntervalTypeId
+MethodInvocation:writeTo
+Field:NAME
+Field:TIME_ZONE
+Field:STRICT_PARSER
+MethodInvocation:createParser
+Field:LENIENT_PARSER
+MethodInvocation:createParser
+Field:interval
+Field:timeZone
+Field:rounding
+Method-name:DateHistogramGroupSource
+Method-returnType:null
+Method-parameters:[String field, ScriptConfig scriptConfig, Interval interval, ZoneId timeZone]
+FieldAccess:interval
+FieldAccess:timeZone
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:parseTimeValue
+MethodInvocation:toString
+MethodInvocation:getName
+MethodInvocation:timeZone
+FieldAccess:rounding
+MethodInvocation:build
+Method-name:DateHistogramGroupSource
+Method-returnType:null
+Method-parameters:[StreamInput in]
+FieldAccess:interval
+MethodInvocation:readInterval
+FieldAccess:timeZone
+MethodInvocation:readOptionalZoneId
+MethodInvocation:before
+MethodInvocation:getVersion
+MethodInvocation:readOptionalString
+Method-name:createParser
+Method-returnType:ConstructingObjectParser<DateHistogramGroupSource,Void>
+Method-parameters:[boolean lenient]
+MethodInvocation:declareValuesSourceFields
+MethodInvocation:declareString
+MethodInvocation:optionalConstructorArg
+MethodInvocation:declareString
+MethodInvocation:optionalConstructorArg
+MethodInvocation:declareField
+MethodInvocation:optionalConstructorArg
+MethodInvocation:currentToken
+MethodInvocation:of
+MethodInvocation:text
+MethodInvocation:ofHours
+MethodInvocation:intValue
+Method-name:fromXContent
+Method-returnType:DateHistogramGroupSource
+Method-parameters:[final XContentParser parser, boolean lenient]
+MethodInvocation:apply
+MethodInvocation:apply
+Method-name:getType
+Method-returnType:Type
+Method-parameters:[]
+Method-name:getInterval
+Method-returnType:Interval
+Method-parameters:[]
+Method-name:getTimeZone
+Method-returnType:ZoneId
+Method-parameters:[]
+Method-name:getRounding
+Method-returnType:Rounding
+Method-parameters:[]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeInterval
+MethodInvocation:writeOptionalZoneId
+MethodInvocation:before
+MethodInvocation:getVersion
+MethodInvocation:writeOptionalString
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startObject
+MethodInvocation:toXContent
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:toString
+MethodInvocation:endObject
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+FieldAccess:field
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:getIncrementalBucketUpdateFilterQuery
+Method-returnType:QueryBuilder
+Method-parameters:[Set<String> changedBuckets, String synchronizationField, long synchronizationTimestamp]
+MethodInvocation:equals
+MethodInvocation:format
+MethodInvocation:gte
+MethodInvocation:round
+Method-name:supportsIncrementalBucketUpdate
+Method-returnType:boolean
+Method-parameters:[]

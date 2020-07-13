@@ -1,0 +1,107 @@
+Class:ScriptAddOnProperties
+Class:Script
+Field:name
+Field:executionMode
+Field:menuTitleKey
+Field:menuLocation
+Field:permissions
+Field:keyboardShortcut
+Field:scriptBody
+Field:active
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Field:scripts
+Field:lib
+Method-name:ScriptAddOnProperties
+Method-returnType:null
+Method-parameters:[String name]
+MethodInvocation:setName
+Method-name:ScriptAddOnProperties
+Method-returnType:null
+Method-parameters:[final XMLElement addOnElement]
+FieldAccess:scripts
+MethodInvocation:parseScripts
+MethodInvocation:getChildrenNamed
+MethodInvocation:setLib
+MethodInvocation:parseBinaries
+MethodInvocation:getChildrenNamed
+MethodInvocation:validate
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+Method-name:parseScripts
+Method-returnType:List<Script>
+Method-parameters:[Vector<XMLElement> xmlElements]
+MethodInvocation:isEmpty
+MethodInvocation:getChildren
+MethodInvocation:get
+MethodInvocation:entrySet
+MethodInvocation:getAttributes
+MethodInvocation:equals
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:getKey
+MethodInvocation:parseExecutionMode
+MethodInvocation:toString
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:getKey
+MethodInvocation:toString
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:getKey
+MethodInvocation:toString
+MethodInvocation:getValue
+MethodInvocation:getAttributes
+MethodInvocation:add
+Method-name:parseExecutionMode
+Method-returnType:ExecutionMode
+Method-parameters:[final String executionModeString]
+MethodInvocation:valueOf
+MethodInvocation:toUpperCase
+Method-name:getScripts
+Method-returnType:List<Script>
+Method-parameters:[]
+Method-name:getLib
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setLib
+Method-returnType:void
+Method-parameters:[Collection<String> lib]
+FieldAccess:lib
+Method-name:getNameKey
+Method-returnType:String
+Method-parameters:[final String name]
+Method-name:toXml
+Method-returnType:XMLElement
+Method-parameters:[]
+MethodInvocation:addScriptsAsChild
+MethodInvocation:addLibAsChild
+Method-name:addScriptsAsChild
+Method-returnType:void
+Method-parameters:[XMLElement parent]
+MethodInvocation:setAttribute
+MethodInvocation:setAttribute
+MethodInvocation:setAttribute
+MethodInvocation:setAttribute
+MethodInvocation:toString
+MethodInvocation:getPermissionNames
+MethodInvocation:setAttribute
+MethodInvocation:toString
+MethodInvocation:get
+MethodInvocation:addChild
+MethodInvocation:addChild
+Method-name:addLibAsChild
+Method-returnType:void
+Method-parameters:[XMLElement parent]
+MethodInvocation:setAttribute
+MethodInvocation:addChild
+MethodInvocation:addChild
+Method-name:supportsOperation
+Method-returnType:boolean
+Method-parameters:[String opName]
+MethodInvocation:equals
+MethodInvocation:isActive
+MethodInvocation:isEmpty

@@ -1,0 +1,99 @@
+Class:VectorGeoPointShapeQueryProcessor
+Method-name:process
+Method-returnType:Query
+Method-parameters:[Geometry shape, String fieldName, ShapeRelation relation, QueryShardContext context]
+MethodInvocation:validateIsGeoPointFieldType
+MethodInvocation:getVectorQueryFromShape
+Method-name:validateIsGeoPointFieldType
+Method-returnType:void
+Method-parameters:[String fieldName, QueryShardContext context]
+MethodInvocation:fieldMapper
+MethodInvocation:typeName
+Method-name:getVectorQueryFromShape
+Method-returnType:Query
+Method-parameters:[Geometry queryShape, String fieldName, ShapeRelation relation, QueryShardContext context]
+MethodInvocation:visit
+Class:ShapeVisitor
+Field:context
+Field:fieldType
+Field:fieldName
+Field:relation
+Method-name:ShapeVisitor
+Method-returnType:null
+Method-parameters:[QueryShardContext context, String fieldName, ShapeRelation relation]
+FieldAccess:context
+FieldAccess:fieldType
+MethodInvocation:fieldMapper
+FieldAccess:fieldName
+FieldAccess:relation
+Method-name:visit
+Method-returnType:Query
+Method-parameters:[Circle circle]
+MethodInvocation:newDistanceQuery
+MethodInvocation:getLat
+MethodInvocation:getLon
+MethodInvocation:getRadiusMeters
+MethodInvocation:hasDocValues
+MethodInvocation:newSlowDistanceQuery
+MethodInvocation:getLat
+MethodInvocation:getLon
+MethodInvocation:getRadiusMeters
+Method-name:visit
+Method-returnType:Query
+Method-parameters:[GeometryCollection<?> collection]
+MethodInvocation:visit
+MethodInvocation:build
+Method-name:visit
+Method-returnType:void
+Method-parameters:[BooleanQuery.Builder bqb, GeometryCollection<?> collection]
+MethodInvocation:add
+MethodInvocation:visit
+Method-name:visit
+Method-returnType:Query
+Method-parameters:[org.elasticsearch.geometry.Line line]
+Method-name:visit
+Method-returnType:Query
+Method-parameters:[LinearRing ring]
+Method-name:visit
+Method-returnType:Query
+Method-parameters:[MultiLine multiLine]
+Method-name:visit
+Method-returnType:Query
+Method-parameters:[MultiPoint multiPoint]
+Method-name:visit
+Method-returnType:Query
+Method-parameters:[ArrayList<Polygon> collector]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:toLucenePolygon
+MethodInvocation:get
+MethodInvocation:newPolygonQuery
+MethodInvocation:hasDocValues
+MethodInvocation:newSlowPolygonQuery
+Method-name:visit
+Method-returnType:Query
+Method-parameters:[MultiPolygon multiPolygon]
+MethodInvocation:decomposeMultiPolygon
+MethodInvocation:visit
+Method-name:visit
+Method-returnType:Query
+Method-parameters:[Point point]
+Method-name:visit
+Method-returnType:Query
+Method-parameters:[Polygon polygon]
+MethodInvocation:decomposePolygon
+MethodInvocation:visit
+Method-name:visit
+Method-returnType:Query
+Method-parameters:[Rectangle r]
+MethodInvocation:newBoxQuery
+MethodInvocation:getMinY
+MethodInvocation:getMaxY
+MethodInvocation:getMinX
+MethodInvocation:getMaxX
+MethodInvocation:hasDocValues
+MethodInvocation:newSlowBoxQuery
+MethodInvocation:getMinY
+MethodInvocation:getMaxY
+MethodInvocation:getMinX
+MethodInvocation:getMaxX

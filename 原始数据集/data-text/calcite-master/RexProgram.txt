@@ -1,0 +1,372 @@
+Class:RexProgram
+Field:exprs
+Field:projects
+Field:condition
+Field:inputRowType
+Field:outputRowType
+Field:refCounts
+Method-name:RexProgram
+Method-returnType:null
+Method-parameters:[RelDataType inputRowType, List<? extends RexNode> exprs, List<RexLocalRef> projects, RexLocalRef condition, RelDataType outputRowType]
+Method-name:getExprList
+Method-returnType:List<RexNode>
+Method-parameters:[]
+Method-name:getProjectList
+Method-returnType:List<RexLocalRef>
+Method-parameters:[]
+Method-name:getNamedProjects
+Method-returnType:List<Pair<RexLocalRef,String>>
+Method-parameters:[]
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:get
+Method-returnType:Pair<RexLocalRef,String>
+Method-parameters:[int index]
+MethodInvocation:of
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:get
+MethodInvocation:getFieldList
+Method-name:getCondition
+Method-returnType:RexLocalRef
+Method-parameters:[]
+Method-name:create
+Method-returnType:RexProgram
+Method-parameters:[RelDataType inputRowType, List<? extends RexNode> projectExprs, RexNode conditionExpr, RelDataType outputRowType, RexBuilder rexBuilder]
+MethodInvocation:create
+MethodInvocation:getFieldNames
+Method-name:create
+Method-returnType:RexProgram
+Method-parameters:[RelDataType inputRowType, List<? extends RexNode> projectExprs, RexNode conditionExpr, List<String> fieldNames, RexBuilder rexBuilder]
+Method-name:create
+Method-returnType:RexProgram
+Method-parameters:[RelInput input]
+MethodInvocation:getExpressionList
+MethodInvocation:getExpressionList
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:getRowType
+MethodInvocation:getRowType
+MethodInvocation:getExpression
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:collectExplainTerms
+MethodInvocation:simple
+Method-name:explainCalc
+Method-returnType:RelWriter
+Method-parameters:[RelWriter pw]
+MethodInvocation:item
+MethodInvocation:item
+MethodInvocation:item
+MethodInvocation:item
+MethodInvocation:item
+MethodInvocation:collectExplainTerms
+MethodInvocation:getDetailLevel
+Method-name:collectExplainTerms
+Method-returnType:RelWriter
+Method-parameters:[String prefix, RelWriter pw]
+MethodInvocation:collectExplainTerms
+Method-name:collectExplainTerms
+Method-returnType:RelWriter
+Method-parameters:[String prefix, RelWriter pw, SqlExplainLevel level]
+Method-name:countTrivial
+Method-returnType:int
+Method-parameters:[List<RexLocalRef> refs]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getIndex
+MethodInvocation:size
+Method-name:getExprCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:size
+Method-name:createIdentity
+Method-returnType:RexProgram
+Method-parameters:[RelDataType rowType]
+MethodInvocation:createIdentity
+Method-name:createIdentity
+Method-returnType:RexProgram
+Method-parameters:[RelDataType rowType, RelDataType outputRowType]
+MethodInvocation:equals
+MethodInvocation:right
+MethodInvocation:getFieldList
+MethodInvocation:right
+MethodInvocation:getFieldList
+MethodInvocation:getFieldList
+MethodInvocation:size
+MethodInvocation:of
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:getType
+Method-name:getInputRowType
+Method-returnType:RelDataType
+Method-parameters:[]
+Method-name:containsAggs
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:containsOver
+Method-name:getOutputRowType
+Method-returnType:RelDataType
+Method-parameters:[]
+Method-name:isValid
+Method-returnType:boolean
+Method-parameters:[Litmus litmus, RelNode.Context context]
+MethodInvocation:fail
+MethodInvocation:fail
+MethodInvocation:fail
+MethodInvocation:fail
+MethodInvocation:isStruct
+MethodInvocation:containIdentity
+MethodInvocation:fail
+MethodInvocation:getFieldCount
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:fail
+MethodInvocation:containNoCommonExprs
+MethodInvocation:fail
+MethodInvocation:containNoForwardRefs
+MethodInvocation:fail
+MethodInvocation:containNoNonTrivialAggs
+MethodInvocation:fail
+MethodInvocation:types
+MethodInvocation:inBooleanFamily
+MethodInvocation:getType
+MethodInvocation:fail
+MethodInvocation:accept
+MethodInvocation:fail
+MethodInvocation:accept
+MethodInvocation:fail
+MethodInvocation:accept
+MethodInvocation:fail
+MethodInvocation:succeed
+Method-name:isNull
+Method-returnType:boolean
+Method-parameters:[RexNode expr]
+MethodInvocation:getKind
+MethodInvocation:getValue2
+MethodInvocation:isNull
+MethodInvocation:get
+MethodInvocation:isNull
+MethodInvocation:get
+FieldAccess:operands
+Method-name:expandLocalRef
+Method-returnType:RexNode
+Method-parameters:[RexLocalRef ref]
+MethodInvocation:accept
+Method-name:split
+Method-returnType:Pair<ImmutableList<RexNode>,ImmutableList<RexNode>>
+Method-parameters:[]
+MethodInvocation:decomposeConjunction
+MethodInvocation:expandLocalRef
+MethodInvocation:builder
+FieldAccess:projects
+MethodInvocation:add
+MethodInvocation:expandLocalRef
+MethodInvocation:of
+MethodInvocation:build
+MethodInvocation:copyOf
+Method-name:getCollations
+Method-returnType:List<RelCollation>
+Method-parameters:[List<RelCollation> inputCollations]
+MethodInvocation:deduceCollations
+MethodInvocation:getFieldCount
+Method-name:deduceCollations
+Method-returnType:void
+Method-parameters:[List<RelCollation> outputCollations, final int sourceCount, List<RexLocalRef> refs, List<RelCollation> inputCollations]
+MethodInvocation:fill
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getIndex
+MethodInvocation:getFieldCollations
+MethodInvocation:getFieldIndex
+MethodInvocation:add
+MethodInvocation:withFieldIndex
+MethodInvocation:add
+MethodInvocation:of
+MethodInvocation:sort
+MethodInvocation:natural
+Method-name:projectsIdentity
+Method-returnType:boolean
+Method-parameters:[final boolean fail]
+Method-name:projectsOnlyIdentity
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getFieldCount
+MethodInvocation:size
+MethodInvocation:get
+Method-name:isTrivial
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getCondition
+MethodInvocation:projectsOnlyIdentity
+Method-name:getReferenceCounts
+Method-returnType:int[]
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:apply
+MethodInvocation:visitLocalRef
+MethodInvocation:visitLocalRef
+Method-name:isConstant
+Method-returnType:boolean
+Method-parameters:[RexNode ref]
+MethodInvocation:accept
+Method-name:gatherExpr
+Method-returnType:RexNode
+Method-parameters:[RexNode expr]
+MethodInvocation:accept
+Method-name:getSourceField
+Method-returnType:int
+Method-parameters:[int outputOrdinal]
+Method-name:isPermutation
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:getFieldList
+MethodInvocation:size
+MethodInvocation:getSourceField
+Method-name:getPermutation
+Method-returnType:Permutation
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:getFieldList
+MethodInvocation:size
+MethodInvocation:getSourceField
+MethodInvocation:set
+Method-name:getCorrelVariableNames
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:apply
+Method-name:visitCorrelVariable
+Method-returnType:Void
+Method-parameters:[RexCorrelVariable correlVariable]
+MethodInvocation:add
+MethodInvocation:getName
+Method-name:isNormalized
+Method-returnType:boolean
+Method-parameters:[Litmus litmus, RexBuilder rexBuilder]
+MethodInvocation:normalize
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:equals
+MethodInvocation:fail
+MethodInvocation:succeed
+Method-name:normalize
+Method-returnType:RexProgram
+Method-parameters:[RexBuilder rexBuilder, RexSimplify simplify]
+Method-name:normalize
+Method-returnType:RexProgram
+Method-parameters:[RexBuilder rexBuilder, boolean simplify]
+MethodInvocation:normalize
+Method-name:getPartialMapping
+Method-returnType:Mappings.TargetMapping
+Method-parameters:[int inputFieldCount]
+MethodInvocation:create
+MethodInvocation:size
+MethodInvocation:zip
+MethodInvocation:expandLocalRef
+MethodInvocation:set
+MethodInvocation:getIndex
+Method-name:copy
+Method-returnType:Calc
+Method-parameters:[RelTraitSet traitSet, RelNode child, List<RelCollation> collationList, Calc calc]
+MethodInvocation:discard
+MethodInvocation:copy
+Class:Checker
+Field:internalExprTypeList
+Method-name:Checker
+Method-returnType:null
+Method-parameters:[RelDataType inputRowType, List<RelDataType> internalExprTypeList, RelNode.Context context, Litmus litmus]
+FieldAccess:internalExprTypeList
+Method-name:visitLocalRef
+Method-returnType:Boolean
+Method-parameters:[RexLocalRef localRef]
+MethodInvocation:getIndex
+MethodInvocation:size
+MethodInvocation:fail
+MethodInvocation:eq
+MethodInvocation:getType
+MethodInvocation:get
+MethodInvocation:fail
+MethodInvocation:succeed
+Class:ExpansionShuttle
+Field:exprs
+Method-name:ExpansionShuttle
+Method-returnType:null
+Method-parameters:[List<RexNode> exprs]
+FieldAccess:exprs
+Method-name:visitLocalRef
+Method-returnType:RexNode
+Method-parameters:[RexLocalRef localRef]
+MethodInvocation:get
+MethodInvocation:getIndex
+MethodInvocation:accept
+Class:ConstantFinder
+Method-name:visitLocalRef
+Method-returnType:Boolean
+Method-parameters:[RexLocalRef localRef]
+MethodInvocation:get
+MethodInvocation:accept
+Method-name:visitOver
+Method-returnType:Boolean
+Method-parameters:[RexOver over]
+Method-name:visitCorrelVariable
+Method-returnType:Boolean
+Method-parameters:[RexCorrelVariable correlVariable]
+Class:Marshaller
+Method-name:Marshaller
+Method-returnType:null
+Method-parameters:[]
+Method-name:visitInputRef
+Method-returnType:RexNode
+Method-parameters:[RexInputRef inputRef]
+Method-name:visitLocalRef
+Method-returnType:RexNode
+Method-parameters:[RexLocalRef localRef]
+MethodInvocation:get
+MethodInvocation:accept
+Method-name:visitLiteral
+Method-returnType:RexNode
+Method-parameters:[RexLiteral literal]
+Method-name:visitCall
+Method-returnType:RexNode
+Method-parameters:[RexCall call]
+MethodInvocation:getOperands
+MethodInvocation:add
+MethodInvocation:accept
+MethodInvocation:clone
+MethodInvocation:getType
+Method-name:visitOver
+Method-returnType:RexNode
+Method-parameters:[RexOver over]
+MethodInvocation:visitCall
+Method-name:visitCorrelVariable
+Method-returnType:RexNode
+Method-parameters:[RexCorrelVariable correlVariable]
+Method-name:visitDynamicParam
+Method-returnType:RexNode
+Method-parameters:[RexDynamicParam dynamicParam]
+Method-name:visitRangeRef
+Method-returnType:RexNode
+Method-parameters:[RexRangeRef rangeRef]
+Method-name:visitFieldAccess
+Method-returnType:RexNode
+Method-parameters:[RexFieldAccess fieldAccess]
+MethodInvocation:accept
+MethodInvocation:getReferenceExpr
+MethodInvocation:getField
+Class:ReferenceCounter
+Method-name:ReferenceCounter
+Method-returnType:null
+Method-parameters:[]
+Method-name:visitLocalRef
+Method-returnType:Void
+Method-parameters:[RexLocalRef localRef]
+MethodInvocation:getIndex

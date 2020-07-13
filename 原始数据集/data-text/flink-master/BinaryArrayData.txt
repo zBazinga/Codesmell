@@ -1,0 +1,364 @@
+Class:BinaryArrayData
+Field:BYTE_ARRAY_BASE_OFFSET
+MethodInvocation:arrayBaseOffset
+Field:BOOLEAN_ARRAY_OFFSET
+MethodInvocation:arrayBaseOffset
+Field:SHORT_ARRAY_OFFSET
+MethodInvocation:arrayBaseOffset
+Field:INT_ARRAY_OFFSET
+MethodInvocation:arrayBaseOffset
+Field:LONG_ARRAY_OFFSET
+MethodInvocation:arrayBaseOffset
+Field:FLOAT_ARRAY_OFFSET
+MethodInvocation:arrayBaseOffset
+Field:DOUBLE_ARRAY_OFFSET
+MethodInvocation:arrayBaseOffset
+Method-name:calculateHeaderInBytes
+Method-returnType:int
+Method-parameters:[int numFields]
+Method-name:calculateFixLengthPartSize
+Method-returnType:int
+Method-parameters:[LogicalType type]
+MethodInvocation:getTypeRoot
+MethodInvocation:calculateFixLengthPartSize
+MethodInvocation:getSourceType
+Field:size
+Field:elementOffset
+Method-name:BinaryArrayData
+Method-returnType:null
+Method-parameters:[]
+Method-name:assertIndexIsValid
+Method-returnType:void
+Method-parameters:[int ordinal]
+Method-name:getElementOffset
+Method-returnType:int
+Method-parameters:[int ordinal, int elementSize]
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+Method-name:pointTo
+Method-returnType:void
+Method-parameters:[MemorySegment[] segments, int offset, int sizeInBytes]
+Method-name:isNullAt
+Method-returnType:boolean
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:bitGet
+Method-name:setNullAt
+Method-returnType:void
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:bitSet
+Method-name:setNotNullAt
+Method-returnType:void
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:bitUnSet
+Method-name:getLong
+Method-returnType:long
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:getLong
+MethodInvocation:getElementOffset
+Method-name:setLong
+Method-returnType:void
+Method-parameters:[int pos, long value]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:setNotNullAt
+MethodInvocation:setLong
+MethodInvocation:getElementOffset
+Method-name:setNullLong
+Method-returnType:void
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:bitSet
+MethodInvocation:setLong
+MethodInvocation:getElementOffset
+Method-name:getInt
+Method-returnType:int
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:getInt
+MethodInvocation:getElementOffset
+Method-name:setInt
+Method-returnType:void
+Method-parameters:[int pos, int value]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:setNotNullAt
+MethodInvocation:setInt
+MethodInvocation:getElementOffset
+Method-name:setNullInt
+Method-returnType:void
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:bitSet
+MethodInvocation:setInt
+MethodInvocation:getElementOffset
+Method-name:getString
+Method-returnType:StringData
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:getElementOffset
+MethodInvocation:getLong
+MethodInvocation:readStringData
+Method-name:getDecimal
+Method-returnType:DecimalData
+Method-parameters:[int pos, int precision, int scale]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:isCompact
+MethodInvocation:fromUnscaledLong
+MethodInvocation:getLong
+MethodInvocation:getElementOffset
+MethodInvocation:getElementOffset
+MethodInvocation:getLong
+MethodInvocation:readDecimalData
+Method-name:getTimestamp
+Method-returnType:TimestampData
+Method-parameters:[int pos, int precision]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:isCompact
+MethodInvocation:fromEpochMillis
+MethodInvocation:getLong
+MethodInvocation:getElementOffset
+MethodInvocation:getElementOffset
+MethodInvocation:getLong
+MethodInvocation:readTimestampData
+Method-name:getRawValue
+Method-returnType:RawValueData<T>
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:getElementOffset
+MethodInvocation:getLong
+MethodInvocation:readRawValueData
+Method-name:getBinary
+Method-returnType:byte[]
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:getElementOffset
+MethodInvocation:getLong
+MethodInvocation:readBinary
+Method-name:getArray
+Method-returnType:ArrayData
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:readArrayData
+MethodInvocation:getLong
+Method-name:getMap
+Method-returnType:MapData
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:readMapData
+MethodInvocation:getLong
+Method-name:getRow
+Method-returnType:RowData
+Method-parameters:[int pos, int numFields]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:getElementOffset
+MethodInvocation:getLong
+MethodInvocation:readRowData
+Method-name:getBoolean
+Method-returnType:boolean
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:getBoolean
+MethodInvocation:getElementOffset
+Method-name:setBoolean
+Method-returnType:void
+Method-parameters:[int pos, boolean value]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:setNotNullAt
+MethodInvocation:setBoolean
+MethodInvocation:getElementOffset
+Method-name:setNullBoolean
+Method-returnType:void
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:bitSet
+MethodInvocation:setBoolean
+MethodInvocation:getElementOffset
+Method-name:getByte
+Method-returnType:byte
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:getByte
+MethodInvocation:getElementOffset
+Method-name:setByte
+Method-returnType:void
+Method-parameters:[int pos, byte value]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:setNotNullAt
+MethodInvocation:setByte
+MethodInvocation:getElementOffset
+Method-name:setNullByte
+Method-returnType:void
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:bitSet
+MethodInvocation:setByte
+MethodInvocation:getElementOffset
+Method-name:getShort
+Method-returnType:short
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:getShort
+MethodInvocation:getElementOffset
+Method-name:setShort
+Method-returnType:void
+Method-parameters:[int pos, short value]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:setNotNullAt
+MethodInvocation:setShort
+MethodInvocation:getElementOffset
+Method-name:setNullShort
+Method-returnType:void
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:bitSet
+MethodInvocation:setShort
+MethodInvocation:getElementOffset
+Method-name:getFloat
+Method-returnType:float
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:getFloat
+MethodInvocation:getElementOffset
+Method-name:setFloat
+Method-returnType:void
+Method-parameters:[int pos, float value]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:setNotNullAt
+MethodInvocation:setFloat
+MethodInvocation:getElementOffset
+Method-name:setNullFloat
+Method-returnType:void
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:bitSet
+MethodInvocation:setFloat
+MethodInvocation:getElementOffset
+Method-name:getDouble
+Method-returnType:double
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:getDouble
+MethodInvocation:getElementOffset
+Method-name:setDouble
+Method-returnType:void
+Method-parameters:[int pos, double value]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:setNotNullAt
+MethodInvocation:setDouble
+MethodInvocation:getElementOffset
+Method-name:setNullDouble
+Method-returnType:void
+Method-parameters:[int pos]
+MethodInvocation:assertIndexIsValid
+MethodInvocation:bitSet
+MethodInvocation:setDouble
+MethodInvocation:getElementOffset
+Method-name:setDecimal
+Method-returnType:void
+Method-parameters:[int pos, DecimalData value, int precision]
+Method-name:setTimestamp
+Method-returnType:void
+Method-parameters:[int pos, TimestampData value, int precision]
+Method-name:anyNull
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getInt
+Method-name:checkNoNull
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:anyNull
+Method-name:toBooleanArray
+Method-returnType:boolean[]
+Method-parameters:[]
+MethodInvocation:checkNoNull
+MethodInvocation:copyToUnsafe
+Method-name:toByteArray
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:checkNoNull
+MethodInvocation:copyToUnsafe
+Method-name:toShortArray
+Method-returnType:short[]
+Method-parameters:[]
+MethodInvocation:checkNoNull
+MethodInvocation:copyToUnsafe
+Method-name:toIntArray
+Method-returnType:int[]
+Method-parameters:[]
+MethodInvocation:checkNoNull
+MethodInvocation:copyToUnsafe
+Method-name:toLongArray
+Method-returnType:long[]
+Method-parameters:[]
+MethodInvocation:checkNoNull
+MethodInvocation:copyToUnsafe
+Method-name:toFloatArray
+Method-returnType:float[]
+Method-parameters:[]
+MethodInvocation:checkNoNull
+MethodInvocation:copyToUnsafe
+Method-name:toDoubleArray
+Method-returnType:double[]
+Method-parameters:[]
+MethodInvocation:checkNoNull
+MethodInvocation:copyToUnsafe
+Method-name:toObjectArray
+Method-returnType:T[]
+Method-parameters:[LogicalType elementType]
+MethodInvocation:toInternalConversionClass
+MethodInvocation:newInstance
+MethodInvocation:isNullAt
+MethodInvocation:get
+Method-name:copy
+Method-returnType:BinaryArrayData
+Method-parameters:[]
+MethodInvocation:copy
+Method-name:copy
+Method-returnType:BinaryArrayData
+Method-parameters:[BinaryArrayData reuse]
+MethodInvocation:copyToBytes
+MethodInvocation:pointTo
+MethodInvocation:wrap
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashByWords
+Method-name:fromPrimitiveArray
+Method-returnType:BinaryArrayData
+Method-parameters:[boolean[] arr]
+MethodInvocation:fromPrimitiveArray
+Method-name:fromPrimitiveArray
+Method-returnType:BinaryArrayData
+Method-parameters:[byte[] arr]
+MethodInvocation:fromPrimitiveArray
+Method-name:fromPrimitiveArray
+Method-returnType:BinaryArrayData
+Method-parameters:[short[] arr]
+MethodInvocation:fromPrimitiveArray
+Method-name:fromPrimitiveArray
+Method-returnType:BinaryArrayData
+Method-parameters:[int[] arr]
+MethodInvocation:fromPrimitiveArray
+Method-name:fromPrimitiveArray
+Method-returnType:BinaryArrayData
+Method-parameters:[long[] arr]
+MethodInvocation:fromPrimitiveArray
+Method-name:fromPrimitiveArray
+Method-returnType:BinaryArrayData
+Method-parameters:[float[] arr]
+MethodInvocation:fromPrimitiveArray
+Method-name:fromPrimitiveArray
+Method-returnType:BinaryArrayData
+Method-parameters:[double[] arr]
+MethodInvocation:fromPrimitiveArray
+Method-name:fromPrimitiveArray
+Method-returnType:BinaryArrayData
+Method-parameters:[Object arr, int offset, int length, int elementSize]
+MethodInvocation:calculateHeaderInBytes
+MethodInvocation:putInt
+MethodInvocation:copyMemory
+MethodInvocation:pointTo
+MethodInvocation:wrap

@@ -1,0 +1,23 @@
+Class:ObserveManager
+Field:endpoints
+Method-name:ObserveManager
+Method-returnType:null
+Method-parameters:[]
+Method-name:findObservingEndpoint
+Method-returnType:ObservingEndpoint
+Method-parameters:[InetSocketAddress address]
+MethodInvocation:get
+MethodInvocation:createObservingEndpoint
+Method-name:getObservingEndpoint
+Method-returnType:ObservingEndpoint
+Method-parameters:[InetSocketAddress address]
+MethodInvocation:get
+Method-name:createObservingEndpoint
+Method-returnType:ObservingEndpoint
+Method-parameters:[InetSocketAddress address]
+MethodInvocation:putIfAbsent
+Method-name:getRelation
+Method-returnType:ObserveRelation
+Method-parameters:[InetSocketAddress source, Token token]
+MethodInvocation:getObservingEndpoint
+MethodInvocation:getObserveRelation

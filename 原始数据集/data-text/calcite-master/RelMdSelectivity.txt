@@ -1,0 +1,101 @@
+Class:RelMdSelectivity
+Field:SOURCE
+MethodInvocation:reflectiveSource
+Method-name:RelMdSelectivity
+Method-returnType:null
+Method-parameters:[]
+Method-name:getDef
+Method-returnType:MetadataDef<BuiltInMetadata.Selectivity>
+Method-parameters:[]
+Method-name:getSelectivity
+Method-returnType:Double
+Method-parameters:[Union rel, RelMetadataQuery mq, RexNode predicate]
+MethodInvocation:size
+MethodInvocation:getInputs
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:getInputs
+MethodInvocation:getRowCount
+MethodInvocation:accept
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:getSelectivity
+Method-name:getSelectivity
+Method-returnType:Double
+Method-parameters:[Sort rel, RelMetadataQuery mq, RexNode predicate]
+MethodInvocation:getSelectivity
+MethodInvocation:getInput
+Method-name:getSelectivity
+Method-returnType:Double
+Method-parameters:[TableModify rel, RelMetadataQuery mq, RexNode predicate]
+MethodInvocation:getSelectivity
+MethodInvocation:getInput
+Method-name:getSelectivity
+Method-returnType:Double
+Method-parameters:[Filter rel, RelMetadataQuery mq, RexNode predicate]
+MethodInvocation:getSelectivity
+MethodInvocation:getInput
+MethodInvocation:minusPreds
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:getCondition
+MethodInvocation:getSelectivity
+MethodInvocation:getInput
+MethodInvocation:getCondition
+Method-name:getSelectivity
+Method-returnType:Double
+Method-parameters:[Calc rel, RelMetadataQuery mq, RexNode predicate]
+MethodInvocation:getProgram
+MethodInvocation:getCondition
+MethodInvocation:getSelectivity
+MethodInvocation:getInput
+MethodInvocation:getSelectivity
+MethodInvocation:getInput
+MethodInvocation:minusPreds
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:expandLocalRef
+Method-name:getSelectivity
+Method-returnType:Double
+Method-parameters:[Join rel, RelMetadataQuery mq, RexNode predicate]
+MethodInvocation:isSemiJoin
+MethodInvocation:getSelectivity
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:makeSemiJoinSelectivityRexNode
+MethodInvocation:makeCall
+MethodInvocation:getSelectivity
+MethodInvocation:getLeft
+Method-name:getSelectivity
+Method-returnType:Double
+Method-parameters:[Aggregate rel, RelMetadataQuery mq, RexNode predicate]
+MethodInvocation:splitFilters
+MethodInvocation:getGroupSet
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:composeConjunction
+MethodInvocation:getSelectivity
+MethodInvocation:getInput
+MethodInvocation:composeConjunction
+MethodInvocation:guessSelectivity
+Method-name:getSelectivity
+Method-returnType:Double
+Method-parameters:[Project rel, RelMetadataQuery mq, RexNode predicate]
+MethodInvocation:splitFilters
+MethodInvocation:range
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:composeConjunction
+MethodInvocation:pushPastProject
+MethodInvocation:getSelectivity
+MethodInvocation:getInput
+MethodInvocation:composeConjunction
+MethodInvocation:guessSelectivity
+Method-name:getSelectivity
+Method-returnType:Double
+Method-parameters:[RelNode rel, RelMetadataQuery mq, RexNode predicate]
+MethodInvocation:guessSelectivity

@@ -1,0 +1,33 @@
+Class:DirectoryDialogConfiguration
+Field:initialDirectory
+Method-name:DirectoryDialogConfiguration
+Method-returnType:null
+Method-parameters:[Path initialDirectory]
+FieldAccess:initialDirectory
+Method-name:getInitialDirectory
+Method-returnType:Optional<Path>
+Method-parameters:[]
+MethodInvocation:ofNullable
+Method-name:getConfiguredDirectoryChooser
+Method-returnType:DirectoryChooser
+Method-parameters:[JabRefDialogService jabRefDialogService]
+MethodInvocation:ifPresent
+MethodInvocation:map
+MethodInvocation:getInitialDirectory
+Class:Builder
+Field:initialDirectory
+Method-name:build
+Method-returnType:DirectoryDialogConfiguration
+Method-parameters:[]
+Method-name:withInitialDirectory
+Method-returnType:Builder
+Method-parameters:[Path directory]
+MethodInvocation:toAbsolutePath
+MethodInvocation:isDirectory
+MethodInvocation:getParent
+MethodInvocation:exists
+Method-name:withInitialDirectory
+Method-returnType:Builder
+Method-parameters:[String directory]
+MethodInvocation:withInitialDirectory
+MethodInvocation:of

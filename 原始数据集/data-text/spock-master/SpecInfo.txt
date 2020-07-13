@@ -1,0 +1,252 @@
+Class:SpecInfo
+Field:fields
+Field:setupInterceptors
+Field:cleanupInterceptors
+Field:setupSpecInterceptors
+Field:cleanupSpecInterceptors
+Field:sharedInitializerInterceptors
+Field:initializerInterceptors
+Field:listeners
+Field:pkg
+Field:filename
+Field:narrative
+Field:superSpec
+Field:subSpec
+Field:specsTopToBottom
+Field:specsBottomToTop
+Field:initializerMethod
+Field:sharedInitializerMethod
+Field:setupMethods
+Field:cleanupMethods
+Field:setupSpecMethods
+Field:cleanupSpecMethods
+Field:features
+Method-name:getPackage
+Method-returnType:String
+Method-parameters:[]
+Method-name:setPackage
+Method-returnType:void
+Method-parameters:[String pkg]
+FieldAccess:pkg
+Method-name:getFilename
+Method-returnType:String
+Method-parameters:[]
+Method-name:setFilename
+Method-returnType:void
+Method-parameters:[String filename]
+FieldAccess:filename
+Method-name:getNarrative
+Method-returnType:String
+Method-parameters:[]
+Method-name:setNarrative
+Method-returnType:void
+Method-parameters:[String narrative]
+FieldAccess:narrative
+Method-name:getSuperSpec
+Method-returnType:SpecInfo
+Method-parameters:[]
+Method-name:setSuperSpec
+Method-returnType:void
+Method-parameters:[SpecInfo superSpec]
+FieldAccess:superSpec
+Method-name:getSubSpec
+Method-returnType:SpecInfo
+Method-parameters:[]
+Method-name:setSubSpec
+Method-returnType:void
+Method-parameters:[SpecInfo subSpec]
+FieldAccess:subSpec
+Method-name:getTopSpec
+Method-returnType:SpecInfo
+Method-parameters:[]
+MethodInvocation:getSuperSpec
+MethodInvocation:getSuperSpec
+Method-name:getIsTopSpec
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getBottomSpec
+Method-returnType:SpecInfo
+Method-parameters:[]
+MethodInvocation:getSubSpec
+MethodInvocation:getSubSpec
+Method-name:getIsBottomSpec
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getSpecsTopToBottom
+Method-returnType:List<SpecInfo>
+Method-parameters:[]
+MethodInvocation:getTopSpec
+MethodInvocation:add
+MethodInvocation:getSubSpec
+Method-name:getSpecsBottomToTop
+Method-returnType:List<SpecInfo>
+Method-parameters:[]
+MethodInvocation:getBottomSpec
+MethodInvocation:add
+MethodInvocation:getSuperSpec
+Method-name:getInitializerMethod
+Method-returnType:MethodInfo
+Method-parameters:[]
+Method-name:setInitializerMethod
+Method-returnType:void
+Method-parameters:[MethodInfo initializerMethod]
+FieldAccess:initializerMethod
+Method-name:getSharedInitializerMethod
+Method-returnType:MethodInfo
+Method-parameters:[]
+Method-name:setSharedInitializerMethod
+Method-returnType:void
+Method-parameters:[MethodInfo sharedInitializerMethod]
+FieldAccess:sharedInitializerMethod
+Method-name:getSetupMethods
+Method-returnType:List<MethodInfo>
+Method-parameters:[]
+Method-name:addSetupMethod
+Method-returnType:void
+Method-parameters:[MethodInfo setupMethod]
+MethodInvocation:add
+Method-name:getCleanupMethods
+Method-returnType:List<MethodInfo>
+Method-parameters:[]
+Method-name:addCleanupMethod
+Method-returnType:void
+Method-parameters:[MethodInfo cleanupMethod]
+MethodInvocation:add
+Method-name:getSetupSpecMethods
+Method-returnType:List<MethodInfo>
+Method-parameters:[]
+Method-name:addSetupSpecMethod
+Method-returnType:void
+Method-parameters:[MethodInfo setupSpecMethod]
+MethodInvocation:add
+Method-name:getCleanupSpecMethods
+Method-returnType:List<MethodInfo>
+Method-parameters:[]
+Method-name:addCleanupSpecMethod
+Method-returnType:void
+Method-parameters:[MethodInfo cleanupSpecMethod]
+MethodInvocation:add
+Method-name:getFixtureMethods
+Method-returnType:Iterable<MethodInfo>
+Method-parameters:[]
+MethodInvocation:concat
+Method-name:getAllFixtureMethods
+Method-returnType:Iterable<MethodInfo>
+Method-parameters:[]
+MethodInvocation:getFixtureMethods
+MethodInvocation:concat
+MethodInvocation:getAllFixtureMethods
+MethodInvocation:getFixtureMethods
+Method-name:getFields
+Method-returnType:List<FieldInfo>
+Method-parameters:[]
+Method-name:getAllFields
+Method-returnType:List<FieldInfo>
+Method-parameters:[]
+MethodInvocation:getAllFields
+MethodInvocation:addAll
+Method-name:addField
+Method-returnType:void
+Method-parameters:[FieldInfo field]
+MethodInvocation:add
+Method-name:getFeatures
+Method-returnType:List<FeatureInfo>
+Method-parameters:[]
+Method-name:getAllFeatures
+Method-returnType:List<FeatureInfo>
+Method-parameters:[]
+MethodInvocation:getAllFeatures
+MethodInvocation:addAll
+Method-name:getAllFeaturesInExecutionOrder
+Method-returnType:List<FeatureInfo>
+Method-parameters:[]
+MethodInvocation:getAllFeatures
+MethodInvocation:sort
+MethodInvocation:comparingInt
+Method-name:addFeature
+Method-returnType:void
+Method-parameters:[FeatureInfo feature]
+MethodInvocation:add
+Method-name:getSetupInterceptors
+Method-returnType:List<IMethodInterceptor>
+Method-parameters:[]
+Method-name:addSetupInterceptor
+Method-returnType:void
+Method-parameters:[IMethodInterceptor interceptor]
+MethodInvocation:add
+Method-name:getCleanupInterceptors
+Method-returnType:List<IMethodInterceptor>
+Method-parameters:[]
+Method-name:addCleanupInterceptor
+Method-returnType:void
+Method-parameters:[IMethodInterceptor interceptor]
+MethodInvocation:add
+Method-name:getSetupSpecInterceptors
+Method-returnType:List<IMethodInterceptor>
+Method-parameters:[]
+Method-name:addSetupSpecInterceptor
+Method-returnType:void
+Method-parameters:[IMethodInterceptor interceptor]
+MethodInvocation:add
+Method-name:getCleanupSpecInterceptors
+Method-returnType:List<IMethodInterceptor>
+Method-parameters:[]
+Method-name:addCleanupSpecInterceptor
+Method-returnType:void
+Method-parameters:[IMethodInterceptor interceptor]
+MethodInvocation:add
+Method-name:getSharedInitializerInterceptors
+Method-returnType:List<IMethodInterceptor>
+Method-parameters:[]
+Method-name:addSharedInitializerInterceptor
+Method-returnType:void
+Method-parameters:[IMethodInterceptor interceptor]
+MethodInvocation:add
+Method-name:getInitializerInterceptors
+Method-returnType:List<IMethodInterceptor>
+Method-parameters:[]
+Method-name:addInitializerInterceptor
+Method-returnType:void
+Method-parameters:[IMethodInterceptor interceptor]
+MethodInvocation:add
+Method-name:getListeners
+Method-returnType:List<IRunListener>
+Method-parameters:[]
+Method-name:addListener
+Method-returnType:void
+Method-parameters:[IRunListener listener]
+MethodInvocation:add
+Method-name:filterFeatures
+Method-returnType:void
+Method-parameters:[final IFeatureFilter filter]
+MethodInvocation:getAllFeatures
+MethodInvocation:matches
+MethodInvocation:setExcluded
+Method-name:sortFeatures
+Method-returnType:void
+Method-parameters:[final IFeatureSortOrder order]
+MethodInvocation:getAllFeatures
+MethodInvocation:sort
+MethodInvocation:size
+MethodInvocation:setExecutionOrder
+MethodInvocation:get
+Method-name:isInitializerOrFixtureMethod
+Method-returnType:boolean
+Method-parameters:[String className, String methodName]
+MethodInvocation:contains
+MethodInvocation:getSpecsBottomToTop
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getReflection
+Method-name:toFeatureName
+Method-returnType:String
+Method-parameters:[String methodName]
+MethodInvocation:getAllFeatures
+MethodInvocation:hasBytecodeName
+MethodInvocation:getName
+Method-name:sortFeaturesInDeclarationOrder
+Method-returnType:void
+Method-parameters:[StepwiseExtension stepwiseExtension]
+MethodInvocation:getFeatures
+MethodInvocation:setExecutionOrder
+MethodInvocation:getDeclarationOrder

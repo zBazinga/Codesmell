@@ -1,0 +1,177 @@
+Class:Filter
+Method-name:createTransparentFilter
+Method-returnType:Filter
+Method-parameters:[]
+MethodInvocation:getResourceController
+MethodInvocation:getBooleanProperty
+MethodInvocation:getBooleanProperty
+Method-name:getFilterInfo
+Method-returnType:FilterInfo
+Method-parameters:[NodeModel node]
+Field:DEFAULT_FILTER_INFO_ACCESSOR
+Method-name:getFilterInfo
+Method-returnType:FilterInfo
+Method-parameters:[NodeModel node]
+MethodInvocation:getFilterInfo
+Method-name:createOneTimeFilter
+Method-returnType:Filter
+Method-parameters:[final ICondition condition, final boolean areAncestorsShown, final boolean areDescendantsShown, final boolean applyToVisibleNodesOnly]
+Field:filterInfos
+Method-name:getFilterInfo
+Method-returnType:FilterInfo
+Method-parameters:[NodeModel node]
+MethodInvocation:get
+MethodInvocation:put
+Field:appliesToVisibleNodesOnly
+Field:condition
+Field:options
+Field:accessor
+Method-name:Filter
+Method-returnType:null
+Method-parameters:[final ICondition condition, final boolean areAncestorsShown, final boolean areDescendantsShown, final boolean applyToVisibleNodesOnly]
+Method-name:Filter
+Method-returnType:null
+Method-parameters:[final ICondition condition, final boolean areAncestorsShown, final boolean areDescendantsShown, final boolean applyToVisibleNodesOnly, FilterInfoAccessor accessor]
+FieldAccess:condition
+FieldAccess:accessor
+FieldAccess:options
+Method-name:addFilterResult
+Method-returnType:void
+Method-parameters:[final NodeModel node, final int flag]
+MethodInvocation:add
+MethodInvocation:getFilterInfo
+Method-name:appliesToVisibleNodesOnly
+Method-returnType:boolean
+Method-parameters:[]
+Field:filterIcon
+Method-name:displayFilterStatus
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getIcon
+MethodInvocation:getResourceController
+MethodInvocation:getCondition
+MethodInvocation:addStatusInfo
+MethodInvocation:getViewController
+MethodInvocation:getCurrentController
+MethodInvocation:removeStatus
+MethodInvocation:getViewController
+MethodInvocation:getCurrentController
+Method-name:applyFilter
+Method-returnType:void
+Method-parameters:[Object source, final MapModel map, final boolean force]
+MethodInvocation:displayFilterStatus
+MethodInvocation:setWaitingCursor
+MethodInvocation:getViewController
+MethodInvocation:getCurrentController
+MethodInvocation:getFilter
+MethodInvocation:setFilter
+MethodInvocation:isConditionStronger
+MethodInvocation:calculateFilterResults
+MethodInvocation:getSelection
+MethodInvocation:getCurrentController
+MethodInvocation:getSelected
+MethodInvocation:getVisibleAncestorOrSelf
+MethodInvocation:keepNodePosition
+MethodInvocation:refreshMap
+MethodInvocation:selectVisibleNode
+MethodInvocation:setWaitingCursor
+MethodInvocation:getViewController
+MethodInvocation:getCurrentController
+Method-name:calculateFilterResults
+Method-returnType:void
+Method-parameters:[final MapModel map]
+MethodInvocation:getRootNode
+MethodInvocation:resetFilter
+MethodInvocation:filterChildren
+MethodInvocation:checkNode
+MethodInvocation:addFilterResult
+Method-name:calculateFilterResults
+Method-returnType:void
+Method-parameters:[final NodeModel root]
+MethodInvocation:applyFilter
+Method-name:applyFilter
+Method-returnType:boolean
+Method-parameters:[final NodeModel node, final boolean isAncestorSelected, final boolean isAncestorEclipsed, boolean isDescendantSelected]
+MethodInvocation:shouldRemainInvisible
+MethodInvocation:checkNode
+MethodInvocation:resetFilter
+MethodInvocation:addFilterResult
+MethodInvocation:addFilterResult
+MethodInvocation:addFilterResult
+MethodInvocation:addFilterResult
+MethodInvocation:filterChildren
+MethodInvocation:addFilterResult
+Method-name:areAncestorsShown
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:areDescendantsShown
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:checkNode
+Method-returnType:boolean
+Method-parameters:[final NodeModel node]
+MethodInvocation:shouldRemainInvisible
+MethodInvocation:checkNode
+Method-name:shouldRemainInvisible
+Method-returnType:boolean
+Method-parameters:[final NodeModel node]
+MethodInvocation:hasVisibleContent
+Method-name:filterChildren
+Method-returnType:boolean
+Method-parameters:[final NodeModel node, final boolean isAncestorSelected, final boolean isAncestorEclipsed]
+MethodInvocation:getChildren
+MethodInvocation:applyFilter
+Method-name:getCondition
+Method-returnType:ICondition
+Method-parameters:[]
+Method-name:isConditionStronger
+Method-returnType:boolean
+Method-parameters:[final Filter oldFilter]
+MethodInvocation:equals
+MethodInvocation:getCondition
+MethodInvocation:getCondition
+Method-name:isVisible
+Method-returnType:boolean
+Method-parameters:[final NodeModel node]
+MethodInvocation:getExtension
+MethodInvocation:getExtension
+MethodInvocation:getRootNode
+MethodInvocation:getMap
+MethodInvocation:isVisible
+MethodInvocation:getFilterInfo
+FieldAccess:options
+Method-name:refreshMap
+Method-returnType:void
+Method-parameters:[Object source, MapModel map]
+MethodInvocation:fireMapChanged
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+Method-name:resetFilter
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:reset
+MethodInvocation:getFilterInfo
+Method-name:getFilterInfo
+Method-returnType:FilterInfo
+Method-parameters:[final NodeModel node]
+MethodInvocation:getFilterInfo
+Method-name:selectVisibleNode
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getSelection
+MethodInvocation:getCurrentController
+MethodInvocation:getSelection
+MethodInvocation:size
+MethodInvocation:toArray
+MethodInvocation:hasVisibleContent
+MethodInvocation:toggleSelected
+MethodInvocation:getSelected
+MethodInvocation:hasVisibleContent
+MethodInvocation:size
+MethodInvocation:getSelection
+MethodInvocation:toggleSelected
+MethodInvocation:selectAsTheOnlyOneSelected
+MethodInvocation:getVisibleAncestorOrSelf
+MethodInvocation:setSiblingMaxLevel
+MethodInvocation:getNodeLevel
+MethodInvocation:getSelected

@@ -1,0 +1,324 @@
+Class:BaseWork
+Field:LOG
+MethodInvocation:getLogger
+Field:dummyOps
+Field:tag
+Field:sortColNames
+Field:mrLocalWork
+Method-name:BaseWork
+Method-returnType:null
+Method-parameters:[]
+Method-name:BaseWork
+Method-returnType:null
+Method-parameters:[String name]
+MethodInvocation:setName
+Field:gatheringStats
+Field:name
+Field:vectorizationExamined
+Field:vectorizationEnabled
+Field:vectorizedRowBatchCtx
+Field:useVectorizedInputFileFormat
+Field:inputFormatSupportSet
+Field:supportSetInUse
+Field:supportRemovedReasons
+Field:notVectorizedReason
+Field:groupByVectorOutput
+Field:allNative
+Field:usesVectorUDFAdaptor
+Field:vectorizedVertexNum
+Field:vectorizedTestingReducerBatchSize
+Field:isTestForcedVectorizationEnable
+Field:isTestVectorizationSuppressExplainExecutionMode
+Field:llapMode
+Field:uberMode
+Field:reservedMemoryMB
+Field:inputSourceToRuntimeValuesInfo
+Method-name:setGatheringStats
+Method-returnType:void
+Method-parameters:[boolean gatherStats]
+FieldAccess:gatheringStats
+Method-name:isGatheringStats
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:gatheringStats
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setName
+Method-returnType:void
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:getDummyOps
+Method-returnType:List<HashTableDummyOperator>
+Method-parameters:[]
+Method-name:setDummyOps
+Method-returnType:void
+Method-parameters:[List<HashTableDummyOperator> dummyOps]
+FieldAccess:dummyOps
+MethodInvocation:isEmpty
+FieldAccess:dummyOps
+MethodInvocation:isEmpty
+MethodInvocation:info
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+FieldAccess:dummyOps
+Method-name:addDummyOp
+Method-returnType:void
+Method-parameters:[HashTableDummyOperator dummyOp]
+MethodInvocation:add
+Method-name:replaceRoots
+Method-returnType:void
+Method-parameters:[Map<Operator<?>,Operator<?>> replacementMap]
+Method-name:getAllRootOperators
+Method-returnType:Set<Operator<? extends OperatorDesc>>
+Method-parameters:[]
+Method-name:getAnyRootOperator
+Method-returnType:Operator<? extends OperatorDesc>
+Method-parameters:[]
+Method-name:getAllOperators
+Method-returnType:Set<Operator<?>>
+Method-parameters:[]
+MethodInvocation:getAllRootOperators
+MethodInvocation:addAll
+MethodInvocation:empty
+MethodInvocation:pop
+MethodInvocation:add
+MethodInvocation:getChildOperators
+MethodInvocation:addAll
+MethodInvocation:getChildOperators
+Method-name:getAllLeafOperators
+Method-returnType:Set<Operator<? extends OperatorDesc>>
+Method-parameters:[]
+MethodInvocation:getAllRootOperators
+MethodInvocation:addAll
+MethodInvocation:empty
+MethodInvocation:pop
+MethodInvocation:getNumChild
+MethodInvocation:add
+MethodInvocation:getChildOperators
+MethodInvocation:addAll
+MethodInvocation:getChildOperators
+Method-name:setVectorizedVertexNum
+Method-returnType:void
+Method-parameters:[long vectorizedVertexNum]
+FieldAccess:vectorizedVertexNum
+Method-name:getVectorizedVertexNum
+Method-returnType:long
+Method-parameters:[]
+Method-name:setVectorizedTestingReducerBatchSize
+Method-returnType:void
+Method-parameters:[int vectorizedTestingReducerBatchSize]
+FieldAccess:vectorizedTestingReducerBatchSize
+Method-name:getVectorizedTestingReducerBatchSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:setVectorizationExamined
+Method-returnType:void
+Method-parameters:[boolean vectorizationExamined]
+FieldAccess:vectorizationExamined
+Method-name:getVectorizationExamined
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setVectorizationEnabled
+Method-returnType:void
+Method-parameters:[boolean vectorizationEnabled]
+FieldAccess:vectorizationEnabled
+Method-name:getVectorizationEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getVectorizedRowBatchCtx
+Method-returnType:VectorizedRowBatchCtx
+Method-parameters:[]
+Method-name:setVectorizedRowBatchCtx
+Method-returnType:void
+Method-parameters:[VectorizedRowBatchCtx vectorizedRowBatchCtx]
+FieldAccess:vectorizedRowBatchCtx
+Method-name:setNotVectorizedReason
+Method-returnType:void
+Method-parameters:[VectorizerReason notVectorizedReason]
+FieldAccess:notVectorizedReason
+Method-name:getNotVectorizedReason
+Method-returnType:VectorizerReason
+Method-parameters:[]
+Method-name:setUsesVectorUDFAdaptor
+Method-returnType:void
+Method-parameters:[boolean usesVectorUDFAdaptor]
+FieldAccess:usesVectorUDFAdaptor
+Method-name:getUsesVectorUDFAdaptor
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAllNative
+Method-returnType:void
+Method-parameters:[boolean allNative]
+FieldAccess:allNative
+Method-name:getAllNative
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIsTestForcedVectorizationEnable
+Method-returnType:void
+Method-parameters:[boolean isTestForcedVectorizationEnable]
+FieldAccess:isTestForcedVectorizationEnable
+Method-name:getIsTestForcedVectorizationEnable
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIsTestVectorizationSuppressExplainExecutionMode
+Method-returnType:void
+Method-parameters:[boolean isTestVectorizationSuppressExplainExecutionMode]
+FieldAccess:isTestVectorizationSuppressExplainExecutionMode
+Method-name:getIsTestVectorizationSuppressExplainExecutionMode
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getMode
+Method-returnType:String
+Method-parameters:[TezProgressMonitor tezProgressMonitor]
+MethodInvocation:getUberMode
+MethodInvocation:getLlapMode
+Class:BaseExplainVectorization
+Field:baseWork
+Method-name:BaseExplainVectorization
+Method-returnType:null
+Method-parameters:[BaseWork baseWork]
+FieldAccess:baseWork
+Method-name:getColumnAndTypes
+Method-returnType:List<String>
+Method-parameters:[int[] projectionColumns, String[] columnNames, TypeInfo[] typeInfos, DataTypePhysicalVariation[] dataTypePhysicalVariations]
+MethodInvocation:toString
+MethodInvocation:add
+Method-name:enabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getVectorizationEnabled
+Method-name:vectorized
+Method-returnType:Boolean
+Method-parameters:[]
+MethodInvocation:getVectorizationEnabled
+MethodInvocation:getVectorMode
+Method-name:notVectorizedReason
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getVectorizationEnabled
+MethodInvocation:getVectorMode
+MethodInvocation:getNotVectorizedReason
+MethodInvocation:toString
+Method-name:nativeVectorized
+Method-returnType:Boolean
+Method-parameters:[]
+MethodInvocation:getVectorMode
+MethodInvocation:getAllNative
+Method-name:getColumns
+Method-returnType:List<String>
+Method-parameters:[VectorizedRowBatchCtx vectorizedRowBatchCtx, int startIndex, int count]
+MethodInvocation:getRowColumnNames
+MethodInvocation:getRowColumnTypeInfos
+MethodInvocation:getRowdataTypePhysicalVariations
+MethodInvocation:toString
+MethodInvocation:add
+Method-name:getScratchColumns
+Method-returnType:String
+Method-parameters:[VectorizedRowBatchCtx vectorizedRowBatchCtx]
+MethodInvocation:getScratchColumnTypeNames
+MethodInvocation:getScratchDataTypePhysicalVariations
+MethodInvocation:toString
+MethodInvocation:add
+MethodInvocation:toString
+Method-name:usesVectorUDFAdaptor
+Method-returnType:Boolean
+Method-parameters:[]
+MethodInvocation:getVectorMode
+MethodInvocation:getUsesVectorUDFAdaptor
+Class:RowBatchContextExplainVectorization
+Field:vectorizedRowBatchCtx
+Method-name:RowBatchContextExplainVectorization
+Method-returnType:null
+Method-parameters:[VectorizedRowBatchCtx vectorizedRowBatchCtx]
+FieldAccess:vectorizedRowBatchCtx
+Method-name:getDataColumns
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getColumns
+MethodInvocation:getDataColumnCount
+Method-name:getPartitionColumns
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getColumns
+MethodInvocation:getDataColumnCount
+MethodInvocation:getPartitionColumnCount
+Method-name:getDataColumnNums
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getDataColumnNums
+MethodInvocation:toString
+Method-name:getDataColumnCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getDataColumnCount
+Method-name:getPartitionColumnCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getPartitionColumnCount
+Method-name:getScratchColumnTypeNames
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getScratchColumns
+Method-name:getNeededVirtualColumns
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getNeededVirtualColumns
+MethodInvocation:toString
+Method-name:vectorizedRowBatchContext
+Method-returnType:RowBatchContextExplainVectorization
+Method-parameters:[]
+MethodInvocation:getVectorMode
+MethodInvocation:getVectorizedRowBatchCtx
+Method-name:getMapRedLocalWork
+Method-returnType:MapredLocalWork
+Method-parameters:[]
+Method-name:setMapRedLocalWork
+Method-returnType:void
+Method-parameters:[final MapredLocalWork mapLocalWork]
+FieldAccess:mrLocalWork
+Method-name:setUberMode
+Method-returnType:void
+Method-parameters:[boolean uberMode]
+FieldAccess:uberMode
+Method-name:getUberMode
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setLlapMode
+Method-returnType:void
+Method-parameters:[boolean llapMode]
+FieldAccess:llapMode
+Method-name:getLlapMode
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getReservedMemoryMB
+Method-returnType:int
+Method-parameters:[]
+Method-name:setReservedMemoryMB
+Method-returnType:void
+Method-parameters:[int memoryMB]
+Method-name:configureJobConf
+Method-returnType:void
+Method-parameters:[JobConf job]
+Method-name:setTag
+Method-returnType:void
+Method-parameters:[int tag]
+FieldAccess:tag
+Method-name:getTag
+Method-returnType:int
+Method-parameters:[]
+Method-name:addSortCols
+Method-returnType:void
+Method-parameters:[List<String> sortCols]
+MethodInvocation:addAll
+FieldAccess:sortColNames
+Method-name:getSortCols
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:getInputSourceToRuntimeValuesInfo
+Method-returnType:Map<String,RuntimeValuesInfo>
+Method-parameters:[]
+Method-name:setInputSourceToRuntimeValuesInfo
+Method-returnType:void
+Method-parameters:[String workName, RuntimeValuesInfo runtimeValuesInfo]
+MethodInvocation:put

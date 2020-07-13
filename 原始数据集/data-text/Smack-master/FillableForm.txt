@@ -1,0 +1,138 @@
+Class:FillableForm
+Field:requiredFields
+Field:filledRequiredFields
+Field:missingRequiredFields
+Field:filledFields
+Method-name:FillableForm
+Method-returnType:null
+Method-parameters:[DataForm dataForm]
+MethodInvocation:getType
+MethodInvocation:getFields
+MethodInvocation:isRequired
+MethodInvocation:getFieldName
+MethodInvocation:add
+MethodInvocation:add
+FieldAccess:requiredFields
+MethodInvocation:unmodifiableSet
+Method-name:writeListMulti
+Method-returnType:void
+Method-parameters:[String fieldName, List<? extends CharSequence> values]
+MethodInvocation:build
+MethodInvocation:addValues
+MethodInvocation:listMultiBuilder
+MethodInvocation:write
+Method-name:writeTextSingle
+Method-returnType:void
+Method-parameters:[String fieldName, CharSequence value]
+MethodInvocation:build
+MethodInvocation:setValue
+MethodInvocation:textSingleBuilder
+MethodInvocation:write
+Method-name:writeBoolean
+Method-returnType:void
+Method-parameters:[String fieldName, boolean value]
+MethodInvocation:build
+MethodInvocation:setValue
+MethodInvocation:booleanBuilder
+MethodInvocation:write
+Method-name:write
+Method-returnType:void
+Method-parameters:[String fieldName, int value]
+MethodInvocation:writeTextSingle
+MethodInvocation:toString
+Method-name:write
+Method-returnType:void
+Method-parameters:[String fieldName, Date date]
+MethodInvocation:writeTextSingle
+MethodInvocation:formatXEP0082Date
+Method-name:setAnswer
+Method-returnType:void
+Method-parameters:[String fieldName, Collection<? extends CharSequence> answers]
+MethodInvocation:getFieldOrThrow
+MethodInvocation:getType
+MethodInvocation:build
+MethodInvocation:addValues
+MethodInvocation:createMultiKindFieldbuilder
+MethodInvocation:size
+MethodInvocation:jidsFrom
+MethodInvocation:isEmpty
+MethodInvocation:get
+MethodInvocation:build
+MethodInvocation:addValues
+MethodInvocation:jidMultiBuilder
+MethodInvocation:write
+Method-name:createMultiKindFieldbuilder
+Method-returnType:AbstractMultiFormField.Builder<?,?>
+Method-parameters:[String fieldName, FormField.Type type]
+MethodInvocation:listMultiBuilder
+MethodInvocation:textMultiBuilder
+Method-name:setAnswer
+Method-returnType:void
+Method-parameters:[String fieldName, int answer]
+MethodInvocation:setAnswer
+MethodInvocation:toString
+Method-name:setAnswer
+Method-returnType:void
+Method-parameters:[String fieldName, CharSequence answer]
+MethodInvocation:getFieldOrThrow
+MethodInvocation:getType
+MethodInvocation:build
+MethodInvocation:setValue
+MethodInvocation:createSingleKindFieldBuilder
+MethodInvocation:build
+MethodInvocation:setValue
+MethodInvocation:booleanBuilder
+MethodInvocation:from
+MethodInvocation:build
+MethodInvocation:setValue
+MethodInvocation:jidSingleBuilder
+MethodInvocation:build
+MethodInvocation:addValue
+MethodInvocation:createMultiKindFieldbuilder
+MethodInvocation:write
+Method-name:createSingleKindFieldBuilder
+Method-returnType:AbstractSingleStringValueFormField.Builder<?,?>
+Method-parameters:[String fieldName, FormField.Type type]
+MethodInvocation:textPrivateBuilder
+MethodInvocation:textSingleBuilder
+MethodInvocation:hiddenBuilder
+MethodInvocation:listSingleBuilder
+Method-name:setAnswer
+Method-returnType:void
+Method-parameters:[String fieldName, boolean answer]
+MethodInvocation:getFieldOrThrow
+MethodInvocation:getType
+MethodInvocation:build
+MethodInvocation:setValue
+MethodInvocation:booleanBuilder
+MethodInvocation:write
+Method-name:write
+Method-returnType:void
+Method-parameters:[FormField filledFormField]
+MethodInvocation:getType
+MethodInvocation:hasValueSet
+MethodInvocation:getFieldName
+MethodInvocation:hasField
+MethodInvocation:getDataForm
+MethodInvocation:containsKey
+MethodInvocation:getField
+MethodInvocation:getDataForm
+MethodInvocation:getFormFieldChildElements
+MethodInvocation:validate
+MethodInvocation:put
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:remove
+Method-name:getField
+Method-returnType:FormField
+Method-parameters:[String fieldName]
+MethodInvocation:get
+Method-name:getDataFormToSubmit
+Method-returnType:DataForm
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:build
+MethodInvocation:addFields
+MethodInvocation:addField
+MethodInvocation:builder
+MethodInvocation:values

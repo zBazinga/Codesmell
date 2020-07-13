@@ -1,0 +1,28 @@
+Class:GlobalCheckpointSyncAction
+Field:ACTION_NAME
+Field:TYPE
+Method-name:GlobalCheckpointSyncAction
+Method-returnType:null
+Method-parameters:[final Settings settings, final TransportService transportService, final ClusterService clusterService, final IndicesService indicesService, final ThreadPool threadPool, final ShardStateAction shardStateAction, final ActionFilters actionFilters]
+Method-name:newResponseInstance
+Method-returnType:ReplicationResponse
+Method-parameters:[StreamInput in]
+Method-name:shardOperationOnPrimary
+Method-returnType:void
+Method-parameters:[Request request, IndexShard indexShard, ActionListener<PrimaryResult<Request,ReplicationResponse>> listener]
+MethodInvocation:completeWith
+MethodInvocation:maybeSyncTranslog
+Method-name:shardOperationOnReplica
+Method-returnType:ReplicaResult
+Method-parameters:[final Request request, final IndexShard indexShard]
+MethodInvocation:maybeSyncTranslog
+Class:Request
+Method-name:Request
+Method-returnType:null
+Method-parameters:[StreamInput in]
+Method-name:Request
+Method-returnType:null
+Method-parameters:[final ShardId shardId]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

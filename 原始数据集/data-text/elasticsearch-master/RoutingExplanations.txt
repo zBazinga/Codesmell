@@ -1,0 +1,44 @@
+Class:RoutingExplanations
+Field:explanations
+Method-name:RoutingExplanations
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:explanations
+Method-name:explanations
+Method-returnType:List<RerouteExplanation>
+Method-parameters:[]
+FieldAccess:explanations
+Method-name:getYesDecisionMessages
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:explanations
+MethodInvocation:equals
+MethodInvocation:type
+MethodInvocation:decisions
+MethodInvocation:getMessage
+MethodInvocation:command
+MethodInvocation:toList
+Method-name:readFrom
+Method-returnType:RoutingExplanations
+Method-parameters:[StreamInput in]
+MethodInvocation:readVInt
+MethodInvocation:readFrom
+MethodInvocation:add
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[RoutingExplanations explanations, StreamOutput out]
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeTo
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startArray
+MethodInvocation:toXContent
+MethodInvocation:endArray

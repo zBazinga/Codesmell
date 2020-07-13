@@ -1,0 +1,116 @@
+Class:SerializationContext
+Field:crashTerminatingCallback
+Method-name:onSuccess
+Method-returnType:void
+Method-parameters:[@Nullable Void result]
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Throwable t]
+MethodInvocation:handleCrash
+Field:registry
+Field:dependencies
+Field:serializer
+Field:explicitlyAllowedClasses
+Field:allowFuturesToBlockWritingOn
+Field:futuresToBlockWritingOn
+Method-name:SerializationContext
+Method-returnType:null
+Method-parameters:[ObjectCodecRegistry registry, ImmutableMap<Class<?>,Object> dependencies, @Nullable Serializer serializer, boolean allowFuturesToBlockWritingOn]
+FieldAccess:registry
+FieldAccess:dependencies
+FieldAccess:serializer
+FieldAccess:allowFuturesToBlockWritingOn
+MethodInvocation:of
+Method-name:SerializationContext
+Method-returnType:null
+Method-parameters:[ObjectCodecRegistry registry, ImmutableMap<Class<?>,Object> dependencies]
+Method-name:SerializationContext
+Method-returnType:null
+Method-parameters:[ImmutableMap<Class<?>,Object> dependencies]
+MethodInvocation:get
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[Object object, CodedOutputStream codedOut]
+MethodInvocation:serializeInternal
+Method-name:serializeWithAdHocMemoizationStrategy
+Method-returnType:void
+Method-parameters:[Object object, MemoizationStrategy memoizationStrategy, CodedOutputStream codedOut]
+MethodInvocation:serializeInternal
+Method-name:serializeInternal
+Method-returnType:void
+Method-parameters:[Object object, @Nullable MemoizationStrategy customMemoizationStrategy, CodedOutputStream codedOut]
+MethodInvocation:recordAndGetDescriptorIfNotConstantMemoizedOrNull
+MethodInvocation:serialize
+MethodInvocation:getCodec
+MethodInvocation:getStrategy
+MethodInvocation:serialize
+Method-name:getDependency
+Method-returnType:T
+Method-parameters:[Class<T> type]
+MethodInvocation:checkNotNull
+MethodInvocation:get
+Method-name:getMemoizingContext
+Method-returnType:SerializationContext
+Method-parameters:[]
+MethodInvocation:getNewMemoizingContext
+Method-name:getMemoizingAndBlockingOnWriteContext
+Method-returnType:SerializationContext
+Method-parameters:[]
+MethodInvocation:checkState
+MethodInvocation:checkState
+MethodInvocation:getNewMemoizingContext
+Method-name:getNewMemoizingContext
+Method-returnType:SerializationContext
+Method-parameters:[]
+MethodInvocation:getNewMemoizingContext
+Method-name:getNewMemoizingContext
+Method-returnType:SerializationContext
+Method-parameters:[boolean allowFuturesToBlockWritingOn]
+FieldAccess:registry
+FieldAccess:dependencies
+Method-name:getNewNonMemoizingContext
+Method-returnType:SerializationContext
+Method-parameters:[]
+FieldAccess:registry
+FieldAccess:dependencies
+FieldAccess:allowFuturesToBlockWritingOn
+Method-name:addFutureToBlockWritingOn
+Method-returnType:void
+Method-parameters:[ListenableFuture<Void> future]
+MethodInvocation:checkState
+MethodInvocation:addCallback
+MethodInvocation:directExecutor
+MethodInvocation:add
+Method-name:createFutureToBlockWritingOn
+Method-returnType:ListenableFuture<Void>
+Method-parameters:[]
+MethodInvocation:call
+MethodInvocation:whenAllSucceed
+MethodInvocation:directExecutor
+Method-name:checkClassExplicitlyAllowed
+Method-returnType:void
+Method-parameters:[Class<T> allowedClass, T objectForDebugging]
+MethodInvocation:contains
+Method-name:addExplicitlyAllowedClass
+Method-returnType:void
+Method-parameters:[Class<?> allowedClass]
+MethodInvocation:add
+Method-name:writeNullOrConstant
+Method-returnType:boolean
+Method-parameters:[@Nullable Object object, CodedOutputStream codedOut]
+MethodInvocation:writeSInt32NoTag
+MethodInvocation:maybeGetTagForConstant
+MethodInvocation:writeSInt32NoTag
+Method-name:recordAndGetDescriptorIfNotConstantMemoizedOrNull
+Method-returnType:ObjectCodecRegistry.CodecDescriptor
+Method-parameters:[@Nullable Object object, CodedOutputStream codedOut]
+MethodInvocation:writeNullOrConstant
+MethodInvocation:getMemoizedIndex
+MethodInvocation:writeSInt32NoTag
+MethodInvocation:getCodecDescriptorForObject
+MethodInvocation:writeSInt32NoTag
+MethodInvocation:getTag
+Method-name:serializeImpl
+Method-returnType:void
+Method-parameters:[Object subject, CodedOutputStream codedOut, ObjectCodecs objectCodecs]
+MethodInvocation:serialize

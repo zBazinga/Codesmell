@@ -1,0 +1,170 @@
+Class:Microservice
+Field:serviceId
+Field:framework
+Field:registerBy
+Field:environment
+Field:appId
+Field:serviceName
+Field:alias
+Field:version
+Field:description
+Field:level
+Field:schemas
+Field:schemaMap
+Field:paths
+Field:status
+Field:properties
+Field:instance
+Field:thirdPartyService
+Method-name:Microservice
+Method-returnType:null
+Method-parameters:[]
+Method-name:getInstance
+Method-returnType:MicroserviceInstance
+Method-parameters:[]
+Method-name:getIntance
+Method-returnType:MicroserviceInstance
+Method-parameters:[]
+MethodInvocation:getInstance
+Method-name:setInstance
+Method-returnType:void
+Method-parameters:[MicroserviceInstance instance]
+FieldAccess:instance
+Method-name:setIntance
+Method-returnType:void
+Method-parameters:[MicroserviceInstance instance]
+MethodInvocation:setInstance
+Method-name:getServiceId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setServiceId
+Method-returnType:void
+Method-parameters:[String serviceId]
+FieldAccess:serviceId
+Method-name:getAppId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAppId
+Method-returnType:void
+Method-parameters:[String appId]
+FieldAccess:appId
+Method-name:getAlias
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAlias
+Method-returnType:void
+Method-parameters:[String alias]
+FieldAccess:alias
+Method-name:getServiceName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setServiceName
+Method-returnType:void
+Method-parameters:[String serviceName]
+FieldAccess:serviceName
+Method-name:getVersion
+Method-returnType:String
+Method-parameters:[]
+Method-name:setVersion
+Method-returnType:void
+Method-parameters:[String version]
+FieldAccess:version
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:setDescription
+Method-returnType:void
+Method-parameters:[String description]
+FieldAccess:description
+Method-name:getLevel
+Method-returnType:String
+Method-parameters:[]
+Method-name:setLevel
+Method-returnType:void
+Method-parameters:[String level]
+FieldAccess:level
+Method-name:getSchemas
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setSchemas
+Method-returnType:void
+Method-parameters:[List<String> schemas]
+FieldAccess:schemas
+Method-name:addSchema
+Method-returnType:void
+Method-parameters:[String schemaId, String content]
+MethodInvocation:put
+FieldAccess:schemaMap
+MethodInvocation:add
+Method-name:getSchemaMap
+Method-returnType:Map<String,String>
+Method-parameters:[]
+Method-name:getStatus
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:setStatus
+Method-returnType:void
+Method-parameters:[String status]
+FieldAccess:status
+MethodInvocation:valueOf
+Method-name:getProperties
+Method-returnType:Map<String,String>
+Method-parameters:[]
+Method-name:setProperties
+Method-returnType:void
+Method-parameters:[Map<String,String> properties]
+FieldAccess:properties
+Method-name:generateAbsoluteMicroserviceName
+Method-returnType:String
+Method-parameters:[String appId, String microserviceName]
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:getPaths
+Method-returnType:List<BasePath>
+Method-parameters:[]
+Method-name:setPaths
+Method-returnType:void
+Method-parameters:[List<BasePath> paths]
+FieldAccess:paths
+Method-name:getFramework
+Method-returnType:Framework
+Method-parameters:[]
+Method-name:setFramework
+Method-returnType:void
+Method-parameters:[Framework framework]
+FieldAccess:framework
+Method-name:getRegisterBy
+Method-returnType:String
+Method-parameters:[]
+Method-name:setRegisterBy
+Method-returnType:void
+Method-parameters:[String registerBy]
+FieldAccess:registerBy
+Method-name:getEnvironment
+Method-returnType:String
+Method-parameters:[]
+Method-name:setEnvironment
+Method-returnType:void
+Method-parameters:[String environment]
+FieldAccess:environment
+Method-name:isThirdPartyService
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setThirdPartyService
+Method-returnType:void
+Method-parameters:[boolean thirdPartyService]
+FieldAccess:thirdPartyService
+Method-name:setDescriptionOther
+Method-returnType:void
+Method-parameters:[Configuration configuration, MicroserviceFactory microserviceFactory]
+MethodInvocation:getStringArray
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:setDescription
+MethodInvocation:substring
+MethodInvocation:length

@@ -1,0 +1,45 @@
+Class:FileHistory
+Field:HISTORY_SIZE
+Field:history
+Method-name:FileHistory
+Method-returnType:null
+Method-parameters:[List<Path> files]
+MethodInvocation:requireNonNull
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:newFile
+Method-returnType:void
+Method-parameters:[Path file]
+MethodInvocation:removeItem
+MethodInvocation:addFirst
+MethodInvocation:size
+MethodInvocation:removeLast
+Method-name:getFileAt
+Method-returnType:Path
+Method-parameters:[int index]
+MethodInvocation:get
+Method-name:removeItem
+Method-returnType:void
+Method-parameters:[Path file]
+MethodInvocation:remove
+Method-name:getHistory
+Method-returnType:List<Path>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+Method-name:storeFileHistory
+Method-returnType:void
+Method-parameters:[JabRefPreferences jabRefPreferences]
+MethodInvocation:isEmpty
+MethodInvocation:putStringList
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getHistory
+MethodInvocation:toList

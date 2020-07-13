@@ -1,0 +1,66 @@
+Class:ModifyPreviousTuples
+Field:linkedTuples
+Method-name:ModifyPreviousTuples
+Method-returnType:null
+Method-parameters:[InternalFactHandle.LinkedTuples linkedTuples]
+FieldAccess:linkedTuples
+Method-name:peekLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[int partition]
+MethodInvocation:getFirstLeftTuple
+Method-name:peekLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[RuleBasePartitionId partitionId]
+MethodInvocation:getFirstLeftTuple
+Method-name:peekRightTuple
+Method-returnType:RightTuple
+Method-parameters:[int partition]
+MethodInvocation:getFirstRightTuple
+Method-name:peekRightTuple
+Method-returnType:RightTuple
+Method-parameters:[RuleBasePartitionId partitionId]
+MethodInvocation:getFirstRightTuple
+Method-name:removeLeftTuple
+Method-returnType:void
+Method-parameters:[int partition]
+MethodInvocation:removeLeftTuple
+MethodInvocation:peekLeftTuple
+Method-name:removeLeftTuple
+Method-returnType:void
+Method-parameters:[RuleBasePartitionId partitionId]
+MethodInvocation:removeLeftTuple
+MethodInvocation:peekLeftTuple
+Method-name:removeRightTuple
+Method-returnType:void
+Method-parameters:[int partition]
+MethodInvocation:removeRightTuple
+MethodInvocation:peekRightTuple
+Method-name:removeRightTuple
+Method-returnType:void
+Method-parameters:[RuleBasePartitionId partitionId]
+MethodInvocation:removeRightTuple
+MethodInvocation:peekRightTuple
+Method-name:retractTuples
+Method-returnType:void
+Method-parameters:[PropagationContext pctx, InternalWorkingMemory wm]
+MethodInvocation:forEachLeftTuple
+MethodInvocation:doDeleteObject
+MethodInvocation:forEachRightTuple
+MethodInvocation:doRightDelete
+Method-name:doDeleteObject
+Method-returnType:void
+Method-parameters:[PropagationContext pctx, InternalWorkingMemory wm, LeftTuple leftTuple]
+MethodInvocation:getTupleSource
+MethodInvocation:getNodeMemory
+MethodInvocation:doDeleteObject
+MethodInvocation:getSegmentMemory
+Method-name:doRightDelete
+Method-returnType:void
+Method-parameters:[PropagationContext pctx, InternalWorkingMemory wm, RightTuple rightTuple]
+MethodInvocation:setPropagationContext
+MethodInvocation:retractTuple
+Method-name:propagateModifyObjectForPartition
+Method-returnType:void
+Method-parameters:[InternalFactHandle handle, PropagationContext context, InternalWorkingMemory wm, int partition, CompositePartitionAwareObjectSinkAdapter compositePartitionAwareObjectSinkAdapter]
+MethodInvocation:propagateModifyObject
+MethodInvocation:getPartitionedPropagators

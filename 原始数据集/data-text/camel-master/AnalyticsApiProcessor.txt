@@ -1,0 +1,120 @@
+Class:AnalyticsApiProcessor
+Field:analyticsClient
+Method-name:AnalyticsApiProcessor
+Method-returnType:null
+Method-parameters:[SalesforceEndpoint endpoint]
+Method-name:doStart
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:analyticsClient
+MethodInvocation:get
+MethodInvocation:startService
+Method-name:doStop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:stopService
+Method-name:process
+Method-returnType:boolean
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:processGetRecentReports
+MethodInvocation:processGetReportDescription
+MethodInvocation:processExecuteSyncReport
+MethodInvocation:processExecuteAsyncReport
+MethodInvocation:processGetReportInstances
+MethodInvocation:processGetReportResults
+MethodInvocation:value
+MethodInvocation:setException
+MethodInvocation:format
+MethodInvocation:value
+MethodInvocation:getStatusCode
+MethodInvocation:getMessage
+MethodInvocation:done
+MethodInvocation:setException
+MethodInvocation:format
+MethodInvocation:value
+MethodInvocation:getMessage
+MethodInvocation:done
+Method-name:processGetRecentReports
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getRecentReports
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[List<RecentReport> reportDescription, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processGetReportDescription
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getParameter
+MethodInvocation:getReportDescription
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[ReportDescription reportDescription, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processExecuteSyncReport
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getParameter
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getId
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:executeSyncReport
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[AbstractReportResultsBase reportResults, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processExecuteAsyncReport
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getParameter
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getId
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:executeAsyncReport
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[ReportInstance reportInstance, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processGetReportInstances
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getParameter
+MethodInvocation:getReportInstances
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[List<ReportInstance> reportInstances, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processGetReportResults
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:getReportResults
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[AbstractReportResultsBase reportResults, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processResponse
+Method-returnType:void
+Method-parameters:[Exchange exchange, Object body, Map<String,String> headers, SalesforceException ex, AsyncCallback callback]
+MethodInvocation:getOut
+MethodInvocation:setException
+MethodInvocation:setBody
+MethodInvocation:getIn
+MethodInvocation:getHeaders
+MethodInvocation:putAll
+MethodInvocation:getHeaders
+MethodInvocation:putAll
+MethodInvocation:done

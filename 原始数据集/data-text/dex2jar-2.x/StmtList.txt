@@ -1,0 +1,110 @@
+Class:StmtList
+Method-name:rmUnused
+Method-returnType:void
+Method-parameters:[Set<LabelStmt> uselabels, CleanLabel cleanLabel]
+MethodInvocation:getFirst
+MethodInvocation:contains
+MethodInvocation:getNext
+MethodInvocation:remove
+MethodInvocation:getNext
+Class:StmtListIterator
+Field:current
+Field:next
+Field:list
+Method-name:StmtListIterator
+Method-returnType:null
+Method-parameters:[StmtList list, Stmt next]
+FieldAccess:list
+FieldAccess:next
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:next
+Method-returnType:Stmt
+Method-parameters:[]
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:remove
+Field:first
+Field:last
+Field:index
+Field:size
+Method-name:add
+Method-returnType:void
+Method-parameters:[Stmt stmt]
+MethodInvocation:insertLast
+Method-name:addAll
+Method-returnType:void
+Method-parameters:[Collection<Stmt> list]
+MethodInvocation:insertLast
+Method-name:clone
+Method-returnType:StmtList
+Method-parameters:[LabelAndLocalMapper mapper]
+MethodInvocation:add
+MethodInvocation:clone
+Method-name:compare
+Method-returnType:int
+Method-parameters:[Stmt o1, Stmt o2]
+Method-name:contains
+Method-returnType:boolean
+Method-parameters:[Stmt stmt]
+Method-name:getFirst
+Method-returnType:Stmt
+Method-parameters:[]
+Method-name:getLast
+Method-returnType:Stmt
+Method-parameters:[]
+Method-name:getSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:indexIt
+Method-returnType:void
+Method-parameters:[Stmt stmt]
+FieldAccess:index
+FieldAccess:index
+Method-name:insertAfter
+Method-returnType:void
+Method-parameters:[Stmt position, Stmt stmt]
+MethodInvocation:indexIt
+Method-name:insertBefore
+Method-returnType:void
+Method-parameters:[Stmt position, Stmt stmt]
+MethodInvocation:indexIt
+Method-name:insertFirst
+Method-returnType:void
+Method-parameters:[Stmt stmt]
+MethodInvocation:indexIt
+Method-name:insertLast
+Method-returnType:void
+Method-parameters:[Stmt stmt]
+MethodInvocation:indexIt
+Method-name:iterator
+Method-returnType:Iterator<Stmt>
+Method-parameters:[]
+Method-name:remove
+Method-returnType:void
+Method-parameters:[Stmt stmt]
+Method-name:replace
+Method-returnType:void
+Method-parameters:[Stmt stmt, Stmt nas]
+MethodInvocation:indexIt
+FieldAccess:last
+FieldAccess:first
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:size
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:move
+Method-returnType:void
+Method-parameters:[Stmt start, Stmt end, Stmt dist]
+FieldAccess:first
+FieldAccess:last
+FieldAccess:last
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]

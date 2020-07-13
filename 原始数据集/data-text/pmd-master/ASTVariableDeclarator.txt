@@ -1,0 +1,51 @@
+Class:ASTVariableDeclarator
+Method-name:ASTVariableDeclarator
+Method-returnType:null
+Method-parameters:[int id]
+Method-name:ASTVariableDeclarator
+Method-returnType:null
+Method-parameters:[JavaParser p, int id]
+Method-name:jjtAccept
+Method-returnType:Object
+Method-parameters:[JavaParserVisitor visitor, Object data]
+MethodInvocation:visit
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getImage
+MethodInvocation:getChild
+Method-name:getVariableId
+Method-returnType:ASTVariableDeclaratorId
+Method-parameters:[]
+MethodInvocation:getChild
+Method-name:hasInitializer
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getNumChildren
+Method-name:getInitializer
+Method-returnType:ASTVariableInitializer
+Method-parameters:[]
+MethodInvocation:hasInitializer
+MethodInvocation:getChild
+Method-name:iterateIds
+Method-returnType:Iterator<ASTVariableDeclaratorId>
+Method-parameters:[Node parent]
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasNext
+Method-name:next
+Method-returnType:ASTVariableDeclaratorId
+Method-parameters:[]
+MethodInvocation:getVariableId
+MethodInvocation:next
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]
+Method-name:isRef
+Method-returnType:boolean
+Method-parameters:[ASTFieldDeclaration fieldDeclaration, RedundantFieldInitializerRule redundantFieldInitializerRule]
+MethodInvocation:getChild
+MethodInvocation:getChild
+MethodInvocation:isArray
+MethodInvocation:getChild

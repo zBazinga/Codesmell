@@ -1,0 +1,201 @@
+Class:MapModel
+Field:ran
+Field:UNDEFINED_NODE_ID
+Field:changesPerformedSinceLastSave
+Field:extensionContainer
+Field:filter
+Field:iconRegistry
+Field:listeners
+Field:nodes
+Field:readOnly
+Field:root
+Field:url
+Field:nodeChangeAnnouncer
+Method-name:MapModel
+Method-returnType:null
+Method-parameters:[IconRegistry iconRegistry, NodeChangeAnnouncer nodeChangeAnnouncer]
+FieldAccess:root
+MethodInvocation:getCurrentFilterController
+MethodInvocation:createTransparentFilter
+FieldAccess:iconRegistry
+FieldAccess:nodeChangeAnnouncer
+Method-name:MapModel
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:getCurrentModeController
+MethodInvocation:getMapController
+FieldAccess:nodeChangeAnnouncer
+Method-name:createNewRoot
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getText
+MethodInvocation:attach
+Method-name:addExtension
+Method-returnType:void
+Method-parameters:[final Class<? extends IExtension> clazz, final IExtension extension]
+MethodInvocation:addExtension
+Method-name:addExtension
+Method-returnType:void
+Method-parameters:[final IExtension extension]
+MethodInvocation:addExtension
+Method-name:putExtension
+Method-returnType:IExtension
+Method-parameters:[final Class<? extends IExtension> clazz, final IExtension extension]
+MethodInvocation:putExtension
+Method-name:putExtension
+Method-returnType:IExtension
+Method-parameters:[final IExtension extension]
+MethodInvocation:putExtension
+Method-name:containsExtension
+Method-returnType:boolean
+Method-parameters:[Class<? extends IExtension> clazz]
+MethodInvocation:containsExtension
+Method-name:addMapChangeListener
+Method-returnType:void
+Method-parameters:[final IMapChangeListener listener]
+MethodInvocation:add
+Method-name:releaseResources
+Method-returnType:void
+Method-parameters:[]
+Method-name:fireMapChangeEvent
+Method-returnType:void
+Method-parameters:[final MapChangeEvent event]
+MethodInvocation:mapChanged
+Method-name:generateNodeID
+Method-returnType:String
+Method-parameters:[final String proposedID]
+MethodInvocation:equals
+MethodInvocation:getNodeForID
+MethodInvocation:toString
+MethodInvocation:nextInt
+MethodInvocation:containsKey
+Method-name:getExtension
+Method-returnType:T
+Method-parameters:[final Class<T> clazz]
+MethodInvocation:getExtension
+Method-name:getExtensions
+Method-returnType:Map<Class<? extends IExtension>,IExtension>
+Method-parameters:[]
+MethodInvocation:getExtensions
+Method-name:getFile
+Method-returnType:File
+Method-parameters:[]
+MethodInvocation:equals
+MethodInvocation:getProtocol
+MethodInvocation:urlToFile
+Method-name:getFilter
+Method-returnType:Filter
+Method-parameters:[]
+Method-name:getIconRegistry
+Method-returnType:IconRegistry
+Method-parameters:[]
+Method-name:getNodeForID
+Method-returnType:NodeModel
+Method-parameters:[final String nodeID]
+MethodInvocation:get
+Method-name:getNumberOfChangesSinceLastSave
+Method-returnType:int
+Method-parameters:[]
+Method-name:getRootNode
+Method-returnType:NodeModel
+Method-parameters:[]
+Method-name:getTitle
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getURL
+MethodInvocation:toString
+MethodInvocation:getURL
+Method-name:getURL
+Method-returnType:URL
+Method-parameters:[]
+Method-name:isReadOnly
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isDocumentation
+Method-name:isDocumentation
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:containsExtension
+Method-name:isSaved
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:registryID
+Method-returnType:void
+Method-parameters:[final String value, final NodeModel nodeModel]
+MethodInvocation:put
+Method-name:registryNode
+Method-returnType:String
+Method-parameters:[final NodeModel nodeModel]
+MethodInvocation:generateNodeID
+MethodInvocation:getID
+MethodInvocation:registryID
+Method-name:registryNodeRecursive
+Method-returnType:void
+Method-parameters:[final NodeModel nodeModel]
+MethodInvocation:registryNodeRecursive
+Method-name:registryNodeRecursive
+Method-returnType:void
+Method-parameters:[final NodeModel nodeModel, final int depth]
+MethodInvocation:getID
+MethodInvocation:registryID
+MethodInvocation:iterator
+MethodInvocation:getChildren
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:registryNodeRecursive
+Method-name:removeExtension
+Method-returnType:IExtension
+Method-parameters:[final Class<? extends IExtension> clazz]
+MethodInvocation:removeExtension
+Method-name:removeExtension
+Method-returnType:boolean
+Method-parameters:[final IExtension extension]
+MethodInvocation:removeExtension
+Method-name:removeMapChangeListener
+Method-returnType:void
+Method-parameters:[final IMapChangeListener listener]
+MethodInvocation:remove
+Method-name:setFilter
+Method-returnType:void
+Method-parameters:[final Filter filter]
+FieldAccess:filter
+Method-name:setReadOnly
+Method-returnType:void
+Method-parameters:[final boolean readOnly]
+FieldAccess:readOnly
+Method-name:setRoot
+Method-returnType:void
+Method-parameters:[final NodeModel root]
+FieldAccess:root
+MethodInvocation:attach
+MethodInvocation:setMap
+Method-name:setSaved
+Method-returnType:void
+Method-parameters:[final boolean saved]
+Method-name:setURL
+Method-returnType:void
+Method-parameters:[final URL v]
+Method-name:unregistryNodes
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:getChildren
+MethodInvocation:unregistryNodes
+MethodInvocation:getID
+MethodInvocation:put
+Method-name:getNodeChangeAnnouncer
+Method-returnType:NodeChangeAnnouncer
+Method-parameters:[]
+Method-name:close
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:closeWithoutSaving
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+Method-name:getAbsoluteUri
+Method-returnType:URI
+Method-parameters:[ExternalResource externalResource]
+MethodInvocation:getExtension
+MethodInvocation:getCurrentModeController
+MethodInvocation:getAbsoluteUri
+MethodInvocation:getUri
+MethodInvocation:printStackTrace

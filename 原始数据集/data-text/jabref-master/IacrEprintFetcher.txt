@@ -1,0 +1,126 @@
+Class:IacrEprintFetcher
+Field:NAME
+Field:LOGGER
+MethodInvocation:getLogger
+Field:DATE_FROM_WEBSITE_AFTER_2000_PATTERN
+MethodInvocation:compile
+Field:DATE_FROM_WEBSITE_BEFORE_2000_PATTERN
+MethodInvocation:compile
+Field:WITHOUT_LETTERS_SPACE
+MethodInvocation:compile
+Field:DATE_FORMAT_WEBSITE_AFTER_2000
+MethodInvocation:ofPattern
+Field:DATE_FORMAT_WEBSITE_BEFORE_2000_LONG_MONTHS
+MethodInvocation:ofPattern
+Field:DATE_FORMAT_WEBSITE_BEFORE_2000_SHORT_MONTHS
+MethodInvocation:ofPattern
+Field:DATE_FORMAT_BIBTEX
+Field:IDENTIFIER_PREDICATE
+MethodInvocation:asPredicate
+MethodInvocation:compile
+Field:CITATION_URL_PREFIX
+Field:DESCRIPTION_URL_PREFIX
+Field:WEBSITE_CHARSET
+Field:prefs
+Method-name:IacrEprintFetcher
+Method-returnType:null
+Method-parameters:[ImportFormatPreferences prefs]
+FieldAccess:prefs
+Method-name:performSearchById
+Method-returnType:Optional<BibEntry>
+Method-parameters:[String identifier]
+MethodInvocation:trim
+MethodInvocation:replaceAll
+MethodInvocation:matcher
+MethodInvocation:test
+MethodInvocation:lang
+MethodInvocation:createEntryFromIacrCitation
+MethodInvocation:isPresent
+MethodInvocation:setAdditionalFields
+MethodInvocation:get
+Method-name:createEntryFromIacrCitation
+Method-returnType:Optional<BibEntry>
+Method-parameters:[String validIdentifier]
+MethodInvocation:getHtml
+MethodInvocation:contains
+MethodInvocation:lang
+MethodInvocation:getRequiredValueBetween
+MethodInvocation:singleFromString
+MethodInvocation:lang
+Method-name:setAdditionalFields
+Method-returnType:void
+Method-parameters:[BibEntry entry, String identifier]
+MethodInvocation:getHtml
+MethodInvocation:setField
+MethodInvocation:getAbstract
+MethodInvocation:getRequiredValueBetween
+MethodInvocation:setField
+MethodInvocation:getLatestDate
+MethodInvocation:isFromOrAfterYear2000
+MethodInvocation:getVersion
+MethodInvocation:setField
+MethodInvocation:setField
+MethodInvocation:setField
+Method-name:getVersion
+Method-returnType:String
+Method-parameters:[String identifier, String descriptiveHtml]
+MethodInvocation:getRequiredValueBetween
+Method-name:getAbstract
+Method-returnType:String
+Method-parameters:[String descriptiveHtml]
+MethodInvocation:getRequiredValueBetween
+MethodInvocation:replaceAll
+Method-name:getLatestDate
+Method-returnType:String
+Method-parameters:[String dateStringAsInHtml]
+MethodInvocation:contains
+MethodInvocation:lang
+MethodInvocation:split
+MethodInvocation:parseSingleDateFromWebsite
+MethodInvocation:add
+MethodInvocation:format
+MethodInvocation:isEmpty
+MethodInvocation:lang
+MethodInvocation:sort
+MethodInvocation:reverseOrder
+MethodInvocation:get
+Method-name:parseSingleDateFromWebsite
+Method-returnType:TemporalAccessor
+Method-parameters:[String dateStringFromWebsite]
+MethodInvocation:replaceAll
+MethodInvocation:matcher
+MethodInvocation:trim
+MethodInvocation:find
+MethodInvocation:parse
+MethodInvocation:group
+MethodInvocation:warn
+MethodInvocation:matcher
+MethodInvocation:trim
+MethodInvocation:find
+MethodInvocation:replace
+MethodInvocation:group
+MethodInvocation:parse
+MethodInvocation:parse
+MethodInvocation:warn
+MethodInvocation:warn
+Method-name:getHtml
+Method-returnType:String
+Method-parameters:[String url]
+MethodInvocation:asString
+MethodInvocation:lang
+Method-name:getRequiredValueBetween
+Method-returnType:String
+Method-parameters:[String from, String to, String haystack]
+MethodInvocation:substringBetween
+MethodInvocation:lang
+Method-name:isFromOrAfterYear2000
+Method-returnType:boolean
+Method-parameters:[BibEntry entry]
+MethodInvocation:getField
+MethodInvocation:isPresent
+MethodInvocation:parseInt
+MethodInvocation:get
+MethodInvocation:lang
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]

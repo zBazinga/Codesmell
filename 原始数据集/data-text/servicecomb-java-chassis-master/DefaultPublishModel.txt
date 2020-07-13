@@ -1,0 +1,54 @@
+Class:DefaultPublishModel
+Field:consumer
+Field:producer
+Field:edge
+Field:threadPools
+Method-name:getConsumer
+Method-returnType:ConsumerPublishModel
+Method-parameters:[]
+Method-name:setConsumer
+Method-returnType:void
+Method-parameters:[ConsumerPublishModel consumer]
+FieldAccess:consumer
+Method-name:getProducer
+Method-returnType:ProducerPublishModel
+Method-parameters:[]
+Method-name:getEdge
+Method-returnType:EdgePublishModel
+Method-parameters:[]
+Method-name:setEdge
+Method-returnType:void
+Method-parameters:[EdgePublishModel edge]
+FieldAccess:edge
+Method-name:setProducer
+Method-returnType:void
+Method-parameters:[ProducerPublishModel producer]
+FieldAccess:producer
+Method-name:getThreadPools
+Method-returnType:Map<String,ThreadPoolPublishModel>
+Method-parameters:[]
+Method-name:setThreadPools
+Method-returnType:void
+Method-parameters:[Map<String,ThreadPoolPublishModel> threadPools]
+FieldAccess:threadPools
+Method-name:printThreadPoolMetrics
+Method-returnType:void
+Method-parameters:[StringBuilder sb, DefaultLogPublisher defaultLogPublisher]
+MethodInvocation:isEmpty
+MethodInvocation:getThreadPools
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:entrySet
+MethodInvocation:getThreadPools
+MethodInvocation:getValue
+MethodInvocation:append
+MethodInvocation:format
+MethodInvocation:getCorePoolSize
+MethodInvocation:getMaxThreads
+MethodInvocation:getPoolSize
+MethodInvocation:getCurrentThreadsBusy
+MethodInvocation:getRejected
+MethodInvocation:getQueueSize
+MethodInvocation:getAvgTaskCount
+MethodInvocation:getAvgCompletedTaskCount
+MethodInvocation:getKey

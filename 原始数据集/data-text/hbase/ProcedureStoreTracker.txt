@@ -1,0 +1,267 @@
+Class:ProcedureStoreTracker
+Field:LOG
+MethodInvocation:getLogger
+Field:map
+Field:keepDeletes
+Field:partial
+Field:minModifiedProcId
+Field:maxModifiedProcId
+Method-name:setDeletedIfPartial
+Method-returnType:void
+Method-parameters:[long procId, ProcedureWALFormatReader procedureWALFormatReader]
+MethodInvocation:isPartial
+MethodInvocation:setDeleted
+Field:DeleteState
+Method-name:resetToProto
+Method-returnType:void
+Method-parameters:[ProcedureProtos.ProcedureStoreTracker trackerProtoBuf]
+MethodInvocation:reset
+MethodInvocation:getNodeList
+MethodInvocation:put
+MethodInvocation:getStart
+Method-name:resetTo
+Method-returnType:void
+Method-parameters:[ProcedureStoreTracker tracker]
+MethodInvocation:resetTo
+Method-name:resetTo
+Method-returnType:void
+Method-parameters:[ProcedureStoreTracker tracker, boolean resetDelete]
+MethodInvocation:reset
+FieldAccess:partial
+FieldAccess:minModifiedProcId
+FieldAccess:maxModifiedProcId
+FieldAccess:keepDeletes
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:insert
+Method-returnType:void
+Method-parameters:[long procId]
+MethodInvocation:insert
+Method-name:insert
+Method-returnType:void
+Method-parameters:[long[] procIds]
+MethodInvocation:insert
+Method-name:insert
+Method-returnType:void
+Method-parameters:[long procId, long[] subProcIds]
+MethodInvocation:update
+MethodInvocation:insert
+Method-name:insert
+Method-returnType:BitSetNode
+Method-parameters:[BitSetNode node, long procId]
+MethodInvocation:contains
+MethodInvocation:getOrCreateNode
+MethodInvocation:insertOrUpdate
+MethodInvocation:trackProcIds
+Method-name:update
+Method-returnType:void
+Method-parameters:[long procId]
+MethodInvocation:update
+Method-name:update
+Method-returnType:BitSetNode
+Method-parameters:[BitSetNode node, long procId]
+Method-name:delete
+Method-returnType:void
+Method-parameters:[long procId]
+MethodInvocation:delete
+Method-name:delete
+Method-returnType:void
+Method-parameters:[final long[] procIds]
+MethodInvocation:sort
+MethodInvocation:delete
+Method-name:delete
+Method-returnType:BitSetNode
+Method-parameters:[BitSetNode node, long procId]
+MethodInvocation:lookupClosestNode
+MethodInvocation:contains
+MethodInvocation:warn
+MethodInvocation:delete
+MethodInvocation:isEmpty
+MethodInvocation:remove
+MethodInvocation:getStart
+MethodInvocation:trackProcIds
+Method-name:setMinMaxModifiedProcIds
+Method-returnType:void
+Method-parameters:[long min, long max]
+FieldAccess:minModifiedProcId
+FieldAccess:maxModifiedProcId
+Method-name:setDeleted
+Method-returnType:void
+Method-parameters:[long procId, boolean isDeleted]
+Method-name:setDeletedIfModified
+Method-returnType:void
+Method-parameters:[long... procId]
+MethodInvocation:lookupClosestNode
+MethodInvocation:isModified
+MethodInvocation:delete
+Method-name:setDeleteIf
+Method-returnType:void
+Method-parameters:[ProcedureStoreTracker tracker, BiFunction<BitSetNode,Long,Boolean> func]
+MethodInvocation:values
+MethodInvocation:getStart
+MethodInvocation:getEnd
+MethodInvocation:isModified
+MethodInvocation:lookupClosestNode
+MethodInvocation:apply
+MethodInvocation:delete
+Method-name:setDeletedIfDeletedByThem
+Method-returnType:void
+Method-parameters:[ProcedureStoreTracker tracker]
+MethodInvocation:setDeleteIf
+MethodInvocation:contains
+MethodInvocation:isDeleted
+Method-name:setDeletedIfModifiedInBoth
+Method-returnType:void
+Method-parameters:[ProcedureStoreTracker tracker]
+MethodInvocation:setDeleteIf
+MethodInvocation:isModified
+Method-name:lookupClosestNode
+Method-returnType:BitSetNode
+Method-parameters:[final BitSetNode node, final long procId]
+MethodInvocation:contains
+MethodInvocation:floorEntry
+MethodInvocation:getValue
+Method-name:trackProcIds
+Method-returnType:void
+Method-parameters:[long procId]
+MethodInvocation:min
+MethodInvocation:max
+Method-name:getModifiedMinProcId
+Method-returnType:long
+Method-parameters:[]
+Method-name:getModifiedMaxProcId
+Method-returnType:long
+Method-parameters:[]
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:keepDeletes
+FieldAccess:partial
+MethodInvocation:clear
+FieldAccess:map
+Method-name:isModified
+Method-returnType:boolean
+Method-parameters:[long procId]
+MethodInvocation:floorEntry
+MethodInvocation:contains
+MethodInvocation:getValue
+MethodInvocation:isModified
+MethodInvocation:getValue
+Method-name:isDeleted
+Method-returnType:DeleteState
+Method-parameters:[long procId]
+MethodInvocation:floorEntry
+MethodInvocation:contains
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:isDeleted
+MethodInvocation:isModified
+Method-name:getActiveMinProcId
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:firstEntry
+MethodInvocation:getActiveMinProcId
+MethodInvocation:getValue
+Method-name:setKeepDeletes
+Method-returnType:void
+Method-parameters:[boolean keepDeletes]
+FieldAccess:keepDeletes
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:isEmpty
+MethodInvocation:getValue
+MethodInvocation:remove
+Method-name:isPartial
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setPartialFlag
+Method-returnType:void
+Method-parameters:[boolean isPartial]
+FieldAccess:partial
+MethodInvocation:entrySet
+MethodInvocation:unsetPartialFlag
+MethodInvocation:getValue
+FieldAccess:partial
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:isEmpty
+MethodInvocation:getValue
+Method-name:isAllModified
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:isAllModified
+MethodInvocation:getValue
+Method-name:getAllActiveProcIds
+Method-returnType:long[]
+Method-parameters:[]
+MethodInvocation:toArray
+MethodInvocation:flatMapToLong
+MethodInvocation:filter
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:values
+Method-name:resetModified
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:resetModified
+MethodInvocation:getValue
+Method-name:getOrCreateNode
+Method-returnType:BitSetNode
+Method-parameters:[long procId]
+MethodInvocation:floorEntry
+MethodInvocation:getValue
+MethodInvocation:contains
+MethodInvocation:canGrow
+MethodInvocation:ceilingEntry
+MethodInvocation:getValue
+MethodInvocation:canGrow
+MethodInvocation:canMerge
+MethodInvocation:mergeNodes
+MethodInvocation:getEnd
+MethodInvocation:getStart
+MethodInvocation:growNode
+MethodInvocation:growNode
+MethodInvocation:growNode
+MethodInvocation:growNode
+MethodInvocation:put
+MethodInvocation:getStart
+Method-name:growNode
+Method-returnType:BitSetNode
+Method-parameters:[BitSetNode node, long procId]
+MethodInvocation:remove
+MethodInvocation:getStart
+MethodInvocation:grow
+MethodInvocation:put
+MethodInvocation:getStart
+Method-name:mergeNodes
+Method-returnType:BitSetNode
+Method-parameters:[BitSetNode leftNode, BitSetNode rightNode]
+Method-name:dump
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:println
+MethodInvocation:size
+MethodInvocation:println
+MethodInvocation:isAllModified
+MethodInvocation:println
+MethodInvocation:isEmpty
+MethodInvocation:entrySet
+MethodInvocation:dump
+MethodInvocation:getValue
+Method-name:toProto
+Method-returnType:ProcedureProtos.ProcedureStoreTracker
+Method-parameters:[]
+MethodInvocation:newBuilder
+MethodInvocation:entrySet
+MethodInvocation:addNode
+MethodInvocation:convert
+MethodInvocation:getValue
+MethodInvocation:build

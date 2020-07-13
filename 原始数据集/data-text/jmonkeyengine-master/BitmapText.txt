@@ -1,0 +1,201 @@
+Class:BitmapText
+Field:font
+Field:block
+Field:needRefresh
+Field:textPages
+Field:letters
+Method-name:BitmapText
+Method-returnType:null
+Method-parameters:[BitmapFont font]
+Method-name:BitmapText
+Method-returnType:null
+Method-parameters:[BitmapFont font, boolean rightToLeft]
+Method-name:BitmapText
+Method-returnType:null
+Method-parameters:[BitmapFont font, boolean rightToLeft, boolean arrayBased]
+MethodInvocation:getPageSize
+MethodInvocation:attachChild
+FieldAccess:font
+FieldAccess:block
+MethodInvocation:setSize
+MethodInvocation:getPreferredSize
+Method-name:clone
+Method-returnType:BitmapText
+Method-parameters:[]
+Method-name:cloneFields
+Method-returnType:void
+Method-parameters:[Cloner cloner, Object original]
+MethodInvocation:clone
+MethodInvocation:clone
+FieldAccess:block
+MethodInvocation:clone
+FieldAccess:letters
+MethodInvocation:isRightToLeft
+MethodInvocation:getQuad
+Method-name:getFont
+Method-returnType:BitmapFont
+Method-parameters:[]
+Method-name:setSize
+Method-returnType:void
+Method-parameters:[float size]
+MethodInvocation:setSize
+MethodInvocation:invalidate
+Method-name:getSize
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:getSize
+Method-name:setText
+Method-returnType:void
+Method-parameters:[CharSequence text]
+MethodInvocation:setText
+MethodInvocation:toString
+Method-name:setText
+Method-returnType:void
+Method-parameters:[String text]
+MethodInvocation:getText
+MethodInvocation:equals
+MethodInvocation:getText
+MethodInvocation:setText
+MethodInvocation:setText
+Method-name:getText
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getText
+Method-name:getColor
+Method-returnType:ColorRGBA
+Method-parameters:[]
+MethodInvocation:getBaseColor
+Method-name:setColor
+Method-returnType:void
+Method-parameters:[ColorRGBA color]
+MethodInvocation:setColor
+MethodInvocation:invalidate
+Method-name:setAlpha
+Method-returnType:void
+Method-parameters:[float alpha]
+MethodInvocation:setBaseAlpha
+Method-name:getAlpha
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:getBaseAlpha
+Method-name:setBox
+Method-returnType:void
+Method-parameters:[Rectangle rect]
+MethodInvocation:setTextBox
+MethodInvocation:invalidate
+Method-name:getLineHeight
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:getLineHeight
+Method-name:getHeight
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:assemble
+MethodInvocation:getLineHeight
+MethodInvocation:getLineCount
+MethodInvocation:getTextBox
+MethodInvocation:max
+Method-name:getLineWidth
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:assemble
+MethodInvocation:getTextBox
+MethodInvocation:max
+MethodInvocation:getTotalWidth
+MethodInvocation:getTotalWidth
+Method-name:getLineCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:assemble
+MethodInvocation:getLineCount
+Method-name:getLineWrapMode
+Method-returnType:LineWrapMode
+Method-parameters:[]
+MethodInvocation:getLineWrapMode
+Method-name:setAlignment
+Method-returnType:void
+Method-parameters:[BitmapFont.Align align]
+MethodInvocation:getTextBox
+MethodInvocation:setAlignment
+MethodInvocation:invalidate
+Method-name:setVerticalAlignment
+Method-returnType:void
+Method-parameters:[BitmapFont.VAlign align]
+MethodInvocation:getTextBox
+MethodInvocation:setVerticalAlignment
+MethodInvocation:invalidate
+Method-name:getAlignment
+Method-returnType:BitmapFont.Align
+Method-parameters:[]
+MethodInvocation:getAlignment
+Method-name:getVerticalAlignment
+Method-returnType:BitmapFont.VAlign
+Method-parameters:[]
+MethodInvocation:getVerticalAlignment
+Method-name:setStyle
+Method-returnType:void
+Method-parameters:[int start, int end, int style]
+MethodInvocation:setStyle
+Method-name:setStyle
+Method-returnType:void
+Method-parameters:[String regexp, int style]
+MethodInvocation:compile
+MethodInvocation:matcher
+MethodInvocation:getText
+MethodInvocation:find
+MethodInvocation:setStyle
+MethodInvocation:start
+MethodInvocation:end
+Method-name:setColor
+Method-returnType:void
+Method-parameters:[int start, int end, ColorRGBA color]
+MethodInvocation:setColor
+MethodInvocation:invalidate
+Method-name:setColor
+Method-returnType:void
+Method-parameters:[String regexp, ColorRGBA color]
+MethodInvocation:compile
+MethodInvocation:matcher
+MethodInvocation:getText
+MethodInvocation:find
+MethodInvocation:setColor
+MethodInvocation:start
+MethodInvocation:end
+MethodInvocation:invalidate
+Method-name:setTabPosition
+Method-returnType:void
+Method-parameters:[float... tabs]
+MethodInvocation:setTabPosition
+MethodInvocation:invalidate
+Method-name:setTabWidth
+Method-returnType:void
+Method-parameters:[float width]
+MethodInvocation:setTabWidth
+MethodInvocation:invalidate
+Method-name:setEllipsisChar
+Method-returnType:void
+Method-parameters:[char c]
+MethodInvocation:setEllipsisChar
+MethodInvocation:invalidate
+Method-name:setLineWrapMode
+Method-returnType:void
+Method-parameters:[LineWrapMode wrap]
+MethodInvocation:getLineWrapMode
+MethodInvocation:setLineWrapMode
+MethodInvocation:invalidate
+Method-name:updateLogicalState
+Method-returnType:void
+Method-parameters:[float tpf]
+MethodInvocation:assemble
+Method-name:assemble
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:update
+MethodInvocation:assemble
+Method-name:render
+Method-returnType:void
+Method-parameters:[RenderManager rm, ColorRGBA color]
+MethodInvocation:getMaterial
+MethodInvocation:setTexture
+MethodInvocation:getTexture
+MethodInvocation:render

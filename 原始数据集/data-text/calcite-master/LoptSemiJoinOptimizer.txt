@@ -1,0 +1,143 @@
+Class:LoptSemiJoinOptimizer
+Field:THRESHOLD_SCORE
+Field:rexBuilder
+Field:mq
+Field:chosenSemiJoins
+Field:possibleSemiJoins
+Field:factorCostOrdering
+MethodInvocation:from
+Method-name:LoptSemiJoinOptimizer
+Method-returnType:null
+Method-parameters:[RelMetadataQuery mq, LoptMultiJoin multiJoin, RexBuilder rexBuilder]
+FieldAccess:mq
+MethodInvocation:getNumJoinFactors
+MethodInvocation:getJoinFactor
+FieldAccess:rexBuilder
+Method-name:makePossibleSemiJoins
+Method-returnType:void
+Method-parameters:[LoptMultiJoin multiJoin]
+MethodInvocation:isFullOuterJoin
+MethodInvocation:getMultiJoinRel
+MethodInvocation:getNumJoinFactors
+MethodInvocation:getJoinFilters
+MethodInvocation:isSuitableFilter
+MethodInvocation:isNullGenerating
+MethodInvocation:isNullGenerating
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:put
+MethodInvocation:keySet
+MethodInvocation:get
+MethodInvocation:findSemiJoinIndexByCost
+MethodInvocation:put
+MethodInvocation:put
+Method-name:isSuitableFilter
+Method-returnType:int
+Method-parameters:[LoptMultiJoin multiJoin, RexNode joinFilter, int factIdx]
+Method-name:findSemiJoinIndexByCost
+Method-returnType:LogicalJoin
+Method-parameters:[LoptMultiJoin multiJoin, List<RexNode> joinFilters, int factIdx, int dimIdx]
+Method-name:adjustSemiJoinCondition
+Method-returnType:RexNode
+Method-parameters:[LoptMultiJoin multiJoin, int leftAdjustment, RexNode semiJoinCondition, int leftIdx, int rightIdx]
+MethodInvocation:getNumFieldsInJoinFactor
+MethodInvocation:getNumFieldsInJoinFactor
+MethodInvocation:getNumFieldsInJoinFactor
+MethodInvocation:getNumTotalFields
+MethodInvocation:accept
+MethodInvocation:getMultiJoinFields
+Method-name:validateKeys
+Method-returnType:LcsTable
+Method-parameters:[RelNode factRel, List<Integer> leftKeys, List<Integer> rightKeys, List<Integer> actualLeftKeys]
+Method-name:removeExtraFilters
+Method-returnType:RexNode
+Method-parameters:[List<Integer> keys, int nFields, RexNode condition]
+Method-name:chooseBestSemiJoin
+Method-returnType:boolean
+Method-parameters:[LoptMultiJoin multiJoin]
+MethodInvocation:getNumJoinFactors
+MethodInvocation:immutableSortedCopy
+MethodInvocation:range
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:keySet
+MethodInvocation:get
+MethodInvocation:computeScore
+MethodInvocation:get
+MethodInvocation:create
+MethodInvocation:of
+MethodInvocation:getCondition
+MethodInvocation:of
+MethodInvocation:removeJoin
+MethodInvocation:removePossibleSemiJoin
+MethodInvocation:removePossibleSemiJoin
+MethodInvocation:get
+Method-name:computeScore
+Method-returnType:double
+Method-parameters:[RelNode factRel, RelNode dimRel, LogicalJoin semiJoin]
+MethodInvocation:of
+FieldAccess:rightKeys
+MethodInvocation:analyzeCondition
+MethodInvocation:computeSemiJoinSelectivity
+MethodInvocation:getCumulativeCost
+MethodInvocation:sqrt
+MethodInvocation:max
+MethodInvocation:getRows
+MethodInvocation:areColumnsDefinitelyUniqueWhenNullsFiltered
+MethodInvocation:getRowCount
+MethodInvocation:getCumulativeCost
+MethodInvocation:getRows
+Method-name:removeJoin
+Method-returnType:void
+Method-parameters:[LoptMultiJoin multiJoin, LogicalJoin semiJoin, int factIdx, int dimIdx]
+MethodInvocation:getJoinRemovalFactor
+MethodInvocation:of
+FieldAccess:rightKeys
+MethodInvocation:analyzeCondition
+MethodInvocation:getJoinFactor
+MethodInvocation:areColumnsDefinitelyUniqueWhenNullsFiltered
+MethodInvocation:getProjFields
+MethodInvocation:getNumFieldsInJoinFactor
+MethodInvocation:range
+MethodInvocation:contains
+MethodInvocation:getJoinFieldRefCounts
+MethodInvocation:get
+MethodInvocation:setJoinRemovalFactor
+MethodInvocation:setJoinRemovalSemiJoin
+MethodInvocation:cardinality
+MethodInvocation:get
+MethodInvocation:getJoinFieldRefCounts
+FieldAccess:leftKeys
+MethodInvocation:analyzeCondition
+Method-name:removePossibleSemiJoin
+Method-returnType:void
+Method-parameters:[Map<Integer,LogicalJoin> possibleDimensions, Integer factIdx, Integer dimIdx]
+MethodInvocation:remove
+MethodInvocation:isEmpty
+MethodInvocation:remove
+MethodInvocation:put
+Method-name:getChosenSemiJoin
+Method-returnType:RelNode
+Method-parameters:[int factIdx]
+Class:FactorCostComparator
+Method-name:compare
+Method-returnType:int
+Method-parameters:[Integer rel1Idx, Integer rel2Idx]
+MethodInvocation:getCumulativeCost
+MethodInvocation:getCumulativeCost
+MethodInvocation:isLt
+MethodInvocation:equals
+Class:LcsTable
+Class:LcsTableScan
+Class:LcsIndexOptimizer
+Method-name:LcsIndexOptimizer
+Method-returnType:null
+Method-parameters:[LcsTableScan rel]
+Method-name:findSemiJoinIndexByCost
+Method-returnType:FemLocalIndex
+Method-parameters:[RelNode dimRel, List<Integer> actualLeftKeys, List<Integer> rightKeys, List<Integer> bestKeyOrder]
+Class:FemLocalIndex
+Class:LucidDbSpecialOperators
+Method-name:isLcsRidColumnId
+Method-returnType:boolean
+Method-parameters:[int originColumnOrdinal]

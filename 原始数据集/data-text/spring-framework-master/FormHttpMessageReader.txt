@@ -1,0 +1,85 @@
+Class:FormHttpMessageReader
+Field:DEFAULT_CHARSET
+Field:MULTIVALUE_STRINGS_TYPE
+MethodInvocation:forClassWithGenerics
+Field:defaultCharset
+Field:maxInMemorySize
+Method-name:setDefaultCharset
+Method-returnType:void
+Method-parameters:[Charset charset]
+MethodInvocation:notNull
+FieldAccess:defaultCharset
+Method-name:getDefaultCharset
+Method-returnType:Charset
+Method-parameters:[]
+FieldAccess:defaultCharset
+Method-name:setMaxInMemorySize
+Method-returnType:void
+Method-parameters:[int byteCount]
+FieldAccess:maxInMemorySize
+Method-name:getMaxInMemorySize
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:maxInMemorySize
+Method-name:canRead
+Method-returnType:boolean
+Method-parameters:[ResolvableType elementType, @Nullable MediaType mediaType]
+MethodInvocation:hasUnresolvableGenerics
+MethodInvocation:isAssignableFrom
+MethodInvocation:toClass
+MethodInvocation:isAssignableFrom
+MethodInvocation:isCompatibleWith
+Method-name:read
+Method-returnType:Flux<MultiValueMap<String,String>>
+Method-parameters:[ResolvableType elementType, ReactiveHttpInputMessage message, Map<String,Object> hints]
+MethodInvocation:from
+MethodInvocation:readMono
+Method-name:readMono
+Method-returnType:Mono<MultiValueMap<String,String>>
+Method-parameters:[ResolvableType elementType, ReactiveHttpInputMessage message, Map<String,Object> hints]
+MethodInvocation:getContentType
+MethodInvocation:getHeaders
+MethodInvocation:getMediaTypeCharset
+MethodInvocation:map
+MethodInvocation:join
+MethodInvocation:getBody
+FieldAccess:maxInMemorySize
+MethodInvocation:decode
+MethodInvocation:asByteBuffer
+MethodInvocation:toString
+MethodInvocation:release
+MethodInvocation:parseFormData
+MethodInvocation:logFormData
+Method-name:logFormData
+Method-returnType:void
+Method-parameters:[MultiValueMap<String,String> formData, Map<String,Object> hints]
+MethodInvocation:traceDebug
+MethodInvocation:getLogPrefix
+MethodInvocation:isEnableLoggingRequestDetails
+MethodInvocation:formatValue
+MethodInvocation:keySet
+Method-name:getMediaTypeCharset
+Method-returnType:Charset
+Method-parameters:[@Nullable MediaType mediaType]
+MethodInvocation:getCharset
+MethodInvocation:getCharset
+MethodInvocation:getDefaultCharset
+Method-name:parseFormData
+Method-returnType:MultiValueMap<String,String>
+Method-parameters:[Charset charset, String body]
+MethodInvocation:tokenizeToStringArray
+MethodInvocation:indexOf
+MethodInvocation:add
+MethodInvocation:decode
+MethodInvocation:name
+MethodInvocation:decode
+MethodInvocation:substring
+MethodInvocation:name
+MethodInvocation:decode
+MethodInvocation:substring
+MethodInvocation:name
+MethodInvocation:add
+Method-name:getReadableMediaTypes
+Method-returnType:List<MediaType>
+Method-parameters:[]
+MethodInvocation:singletonList

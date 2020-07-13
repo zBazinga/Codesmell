@@ -1,0 +1,47 @@
+Class:SubtreeProcessor
+Method-name:SubtreeProcessor
+Method-returnType:null
+Method-parameters:[]
+Field:processor
+Method-name:setProcessor
+Method-returnType:void
+Method-parameters:[PhaseProcessor processor]
+FieldAccess:processor
+Method-name:childEntriesWillBecomeVisible
+Method-returnType:void
+Method-parameters:[Entry entry]
+MethodInvocation:shouldProcessOnEvent
+MethodInvocation:buildChildren
+Method-name:buildChildren
+Method-returnType:void
+Method-parameters:[Entry entry]
+MethodInvocation:forChildren
+MethodInvocation:buildChildren
+Method-name:rebuildEntry
+Method-returnType:void
+Method-parameters:[Entry entry]
+MethodInvocation:getParent
+MethodInvocation:forChildren
+MethodInvocation:destroy
+MethodInvocation:build
+Method-name:forChildren
+Method-returnType:PhaseProcessor
+Method-parameters:[Entry entry]
+MethodInvocation:getRoot
+MethodInvocation:forChildren
+Method-name:childEntriesHidden
+Method-returnType:void
+Method-parameters:[Entry entry]
+MethodInvocation:shouldProcessOnEvent
+MethodInvocation:destroyChildren
+Method-name:destroyChildren
+Method-returnType:void
+Method-parameters:[Entry entry]
+MethodInvocation:forChildren
+MethodInvocation:children
+MethodInvocation:destroy
+Method-name:rebuildChildren
+Method-returnType:void
+Method-parameters:[Entry entry]
+MethodInvocation:destroyChildren
+MethodInvocation:buildChildren

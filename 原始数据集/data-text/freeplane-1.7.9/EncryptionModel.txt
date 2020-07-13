@@ -1,0 +1,86 @@
+Class:EncryptionModel
+Field:hiddenChildren
+Method-name:getModel
+Method-returnType:EncryptionModel
+Method-parameters:[final NodeModel node]
+MethodInvocation:getExtension
+Field:encryptedContent
+Field:mEncrypter
+Field:node
+Method-name:EncryptionModel
+Method-returnType:null
+Method-parameters:[final NodeModel node, IEncrypter encrypter]
+FieldAccess:node
+FieldAccess:mEncrypter
+Method-name:EncryptionModel
+Method-returnType:null
+Method-parameters:[final NodeModel node, final String encryptedContent]
+FieldAccess:node
+FieldAccess:encryptedContent
+FieldAccess:mEncrypter
+Method-name:checkAndSetEncrypter
+Method-returnType:boolean
+Method-parameters:[final IEncrypter encrypter]
+MethodInvocation:decryptXml
+MethodInvocation:equals
+MethodInvocation:startsWith
+MethodInvocation:warn
+Method-name:decrypt
+Method-returnType:boolean
+Method-parameters:[final MapController mapController, final IEncrypter encrypter]
+MethodInvocation:checkAndSetEncrypter
+MethodInvocation:containsKey
+MethodInvocation:decryptXml
+MethodInvocation:split
+MethodInvocation:length
+MethodInvocation:pasteXML
+MethodInvocation:put
+MethodInvocation:getChildrenInternal
+MethodInvocation:severe
+Method-name:decryptXml
+Method-returnType:String
+Method-parameters:[final String encryptedString, final IEncrypter encrypter]
+MethodInvocation:decrypt
+Method-name:encryptXml
+Method-returnType:String
+Method-parameters:[final StringBuffer childXml]
+MethodInvocation:encrypt
+MethodInvocation:toString
+Method-name:encrypt
+Method-returnType:String
+Method-parameters:[final MapWriter mapWriter, List<NodeModel> childNodes]
+MethodInvocation:listIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:writeNodeAsXml
+MethodInvocation:hasNext
+MethodInvocation:write
+MethodInvocation:getBuffer
+MethodInvocation:encryptXml
+Method-name:calculateEncryptedContent
+Method-returnType:String
+Method-parameters:[final MapWriter mapWriter]
+MethodInvocation:encrypt
+MethodInvocation:getChildrenInternal
+MethodInvocation:severe
+Method-name:isAccessible
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isLocked
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:unlock
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setChildrenInternal
+MethodInvocation:remove
+Method-name:lock
+Method-returnType:void
+Method-parameters:[MapWriter mapWriter]
+MethodInvocation:getChildrenInternal
+MethodInvocation:encrypt
+FieldAccess:encryptedContent
+MethodInvocation:put
+MethodInvocation:setChildrenInternal
+MethodInvocation:emptyList
+MethodInvocation:severe

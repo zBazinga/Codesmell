@@ -1,0 +1,75 @@
+Class:SqlParameter
+Field:name
+Field:sqlType
+Field:typeName
+Field:scale
+Method-name:SqlParameter
+Method-returnType:null
+Method-parameters:[int sqlType]
+FieldAccess:sqlType
+Method-name:SqlParameter
+Method-returnType:null
+Method-parameters:[int sqlType, @Nullable String typeName]
+FieldAccess:sqlType
+FieldAccess:typeName
+Method-name:SqlParameter
+Method-returnType:null
+Method-parameters:[int sqlType, int scale]
+FieldAccess:sqlType
+FieldAccess:scale
+Method-name:SqlParameter
+Method-returnType:null
+Method-parameters:[String name, int sqlType]
+FieldAccess:name
+FieldAccess:sqlType
+Method-name:SqlParameter
+Method-returnType:null
+Method-parameters:[String name, int sqlType, @Nullable String typeName]
+FieldAccess:name
+FieldAccess:sqlType
+FieldAccess:typeName
+Method-name:SqlParameter
+Method-returnType:null
+Method-parameters:[String name, int sqlType, int scale]
+FieldAccess:name
+FieldAccess:sqlType
+FieldAccess:scale
+Method-name:SqlParameter
+Method-returnType:null
+Method-parameters:[SqlParameter otherParam]
+MethodInvocation:notNull
+FieldAccess:name
+FieldAccess:sqlType
+FieldAccess:typeName
+FieldAccess:scale
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:name
+Method-name:getSqlType
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:sqlType
+Method-name:getTypeName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:typeName
+Method-name:getScale
+Method-returnType:Integer
+Method-parameters:[]
+FieldAccess:scale
+Method-name:isInputValueProvided
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isResultsParameter
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:sqlTypesToAnonymousParameterList
+Method-returnType:List<SqlParameter>
+Method-parameters:[@Nullable int... types]
+MethodInvocation:add
+Method-name:createParameterBinding
+Method-returnType:String
+Method-parameters:[CallMetaDataContext callMetaDataContext]
+MethodInvocation:isNamedBinding
+MethodInvocation:getName

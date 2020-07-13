@@ -1,0 +1,30 @@
+Class:MapperRegistry
+Field:mapperParsers
+Field:metadataMapperParsers
+Field:metadataMapperParsers7x
+Field:fieldFilter
+Method-name:MapperRegistry
+Method-returnType:null
+Method-parameters:[Map<String,Mapper.TypeParser> mapperParsers, Map<String,MetadataFieldMapper.TypeParser> metadataMapperParsers, Function<String,Predicate<String>> fieldFilter]
+FieldAccess:mapperParsers
+MethodInvocation:unmodifiableMap
+FieldAccess:metadataMapperParsers
+MethodInvocation:unmodifiableMap
+MethodInvocation:remove
+FieldAccess:metadataMapperParsers7x
+FieldAccess:fieldFilter
+Method-name:getMapperParsers
+Method-returnType:Map<String,Mapper.TypeParser>
+Method-parameters:[]
+Method-name:getMetadataMapperParsers
+Method-returnType:Map<String,MetadataFieldMapper.TypeParser>
+Method-parameters:[Version indexCreatedVersion]
+MethodInvocation:onOrAfter
+Method-name:isMetadataField
+Method-returnType:boolean
+Method-parameters:[Version indexCreatedVersion, String field]
+MethodInvocation:containsKey
+MethodInvocation:getMetadataMapperParsers
+Method-name:getFieldFilter
+Method-returnType:Function<String,Predicate<String>>
+Method-parameters:[]

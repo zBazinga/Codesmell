@@ -1,0 +1,74 @@
+Class:MethodNamingConventionsRule
+Field:DESCRIPTOR_TO_DISPLAY_NAME
+Field:CHECK_NATIVE_METHODS_DESCRIPTOR
+Field:instanceRegex
+MethodInvocation:build
+MethodInvocation:defaultProp
+Field:staticRegex
+MethodInvocation:build
+MethodInvocation:defaultProp
+Field:nativeRegex
+MethodInvocation:build
+MethodInvocation:defaultProp
+Field:junit3Regex
+MethodInvocation:build
+MethodInvocation:defaultValue
+MethodInvocation:defaultProp
+Field:junit4Regex
+MethodInvocation:build
+MethodInvocation:defaultProp
+Method-name:MethodNamingConventionsRule
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:definePropertyDescriptor
+MethodInvocation:definePropertyDescriptor
+MethodInvocation:definePropertyDescriptor
+MethodInvocation:definePropertyDescriptor
+MethodInvocation:definePropertyDescriptor
+MethodInvocation:definePropertyDescriptor
+Method-name:isJunit4Test
+Method-returnType:boolean
+Method-parameters:[ASTMethodDeclaration node]
+MethodInvocation:isAnnotationPresent
+Method-name:isJunit3Test
+Method-returnType:boolean
+Method-parameters:[ASTMethodDeclaration node]
+MethodInvocation:startsWith
+MethodInvocation:getName
+MethodInvocation:getFirstParentOfAnyType
+MethodInvocation:isInterface
+MethodInvocation:getSuperClassTypeNode
+MethodInvocation:isA
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTMethodDeclaration node, Object data]
+MethodInvocation:isAnnotationPresent
+MethodInvocation:isNative
+MethodInvocation:getProperty
+MethodInvocation:checkMatches
+MethodInvocation:isStatic
+MethodInvocation:checkMatches
+MethodInvocation:isJunit4Test
+MethodInvocation:checkMatches
+MethodInvocation:isJunit3Test
+MethodInvocation:checkMatches
+MethodInvocation:checkMatches
+Method-name:defaultConvention
+Method-returnType:String
+Method-parameters:[]
+Method-name:nameExtractor
+Method-returnType:String
+Method-parameters:[ASTMethodDeclaration node]
+MethodInvocation:getName
+Method-name:defaultProp
+Method-returnType:RegexPropertyBuilder
+Method-parameters:[String name, String displayName]
+MethodInvocation:trim
+MethodInvocation:isEmpty
+MethodInvocation:put
+MethodInvocation:getName
+Method-name:kindDisplayName
+Method-returnType:String
+Method-parameters:[ASTMethodDeclaration node, PropertyDescriptor<Pattern> descriptor]
+MethodInvocation:get
+MethodInvocation:name

@@ -1,0 +1,67 @@
+Class:SubtypesSolver
+Method-name:solveFromSubtypes
+Method-returnType:InferenceResult
+Method-parameters:[final Set<TypeVariable> remainingTargets, final ConstraintMap constraints, final AnnotatedTypeFactory typeFactory]
+MethodInvocation:glbSubtypes
+Method-name:glbSubtypes
+Method-returnType:InferenceResult
+Method-parameters:[final Set<TypeVariable> remainingTargets, final ConstraintMap constraints, final AnnotatedTypeFactory typeFactory]
+MethodInvocation:getQualifierHierarchy
+MethodInvocation:getTypeUtils
+MethodInvocation:getProcessingEnv
+MethodInvocation:sort
+Method-name:compare
+Method-returnType:int
+Method-parameters:[TypeVariable o1, TypeVariable o2]
+MethodInvocation:isSubtype
+MethodInvocation:isSubtype
+FieldAccess:subtypes
+MethodInvocation:getConstraints
+MethodInvocation:isEmpty
+MethodInvocation:propagatePreviousGlbs
+MethodInvocation:size
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:deepCopy
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:get
+MethodInvocation:getAnnotationInHierarchy
+MethodInvocation:add
+MethodInvocation:isEmpty
+MethodInvocation:getTopAnnotations
+MethodInvocation:greatestLowerBound
+MethodInvocation:get
+MethodInvocation:replaceAnnotation
+MethodInvocation:put
+MethodInvocation:glbAll
+MethodInvocation:isEmpty
+MethodInvocation:getTopAnnotations
+MethodInvocation:greatestLowerBound
+MethodInvocation:get
+MethodInvocation:getAnnotationInHierarchy
+MethodInvocation:addAnnotation
+MethodInvocation:replaceAnnotation
+MethodInvocation:greatestLowerBound
+MethodInvocation:put
+Method-name:propagatePreviousGlbs
+Method-returnType:void
+Method-parameters:[final Subtypes targetSubtypes, InferenceResult solution, final Map<AnnotatedTypeMirror,AnnotationMirrorSet> subtypesOfTarget]
+MethodInvocation:entrySet
+MethodInvocation:get
+MethodInvocation:getKey
+FieldAccess:type
+MethodInvocation:get
+MethodInvocation:addAll
+MethodInvocation:getValue
+MethodInvocation:put
+MethodInvocation:getValue
+Method-name:greatestLowerBound
+Method-returnType:AnnotationMirror
+Method-parameters:[final Iterable<? extends AnnotationMirror> annos, QualifierHierarchy qualifierHierarchy]
+MethodInvocation:iterator
+MethodInvocation:next
+MethodInvocation:hasNext
+MethodInvocation:greatestLowerBound
+MethodInvocation:next

@@ -1,0 +1,577 @@
+Class:StandardConvertletTable
+Field:INSTANCE
+Method-name:StandardConvertletTable
+Method-returnType:null
+Method-parameters:[]
+Method-name:or
+Method-returnType:RexNode
+Method-parameters:[RexBuilder rexBuilder, RexNode a0, RexNode a1]
+MethodInvocation:makeCall
+Method-name:eq
+Method-returnType:RexNode
+Method-parameters:[RexBuilder rexBuilder, RexNode a0, RexNode a1]
+MethodInvocation:makeCall
+Method-name:ge
+Method-returnType:RexNode
+Method-parameters:[RexBuilder rexBuilder, RexNode a0, RexNode a1]
+MethodInvocation:makeCall
+Method-name:le
+Method-returnType:RexNode
+Method-parameters:[RexBuilder rexBuilder, RexNode a0, RexNode a1]
+MethodInvocation:makeCall
+Method-name:and
+Method-returnType:RexNode
+Method-parameters:[RexBuilder rexBuilder, RexNode a0, RexNode a1]
+MethodInvocation:makeCall
+Method-name:divideInt
+Method-returnType:RexNode
+Method-parameters:[RexBuilder rexBuilder, RexNode a0, RexNode a1]
+MethodInvocation:makeCall
+Method-name:plus
+Method-returnType:RexNode
+Method-parameters:[RexBuilder rexBuilder, RexNode a0, RexNode a1]
+MethodInvocation:makeCall
+Method-name:minus
+Method-returnType:RexNode
+Method-parameters:[RexBuilder rexBuilder, RexNode a0, RexNode a1]
+MethodInvocation:makeCall
+Method-name:multiply
+Method-returnType:RexNode
+Method-parameters:[RexBuilder rexBuilder, RexNode a0, RexNode a1]
+MethodInvocation:makeCall
+Method-name:case_
+Method-returnType:RexNode
+Method-parameters:[RexBuilder rexBuilder, RexNode... args]
+MethodInvocation:makeCall
+Method-name:plus
+Method-returnType:SqlCall
+Method-parameters:[SqlParserPos pos, SqlNode a0, SqlNode a1]
+MethodInvocation:createCall
+Method-name:convertCase
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlCase call]
+Method-name:convertArray
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlArrayValueConstructor op, SqlCall call]
+MethodInvocation:convertCall
+Method-name:convertMap
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlMapValueConstructor op, SqlCall call]
+MethodInvocation:convertCall
+Method-name:convertMultisetQuery
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlMultisetQueryConstructor op, SqlCall call]
+Method-name:convertJdbc
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlJdbcFunctionCall op, SqlCall call]
+MethodInvocation:getLookupCall
+MethodInvocation:convertExpression
+Method-name:convertCast
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, final SqlCall call]
+Method-name:convertFloorCeil
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlCall call]
+MethodInvocation:getKind
+MethodInvocation:operandCount
+MethodInvocation:operand
+MethodInvocation:operand
+MethodInvocation:getValue
+FieldAccess:multiplier
+MethodInvocation:getStartUnit
+MethodInvocation:getIntervalQualifier
+MethodInvocation:convertExpression
+MethodInvocation:getRexBuilder
+MethodInvocation:makeExactLiteral
+MethodInvocation:valueOf
+MethodInvocation:ge
+MethodInvocation:makeExactLiteral
+MethodInvocation:subtract
+MethodInvocation:makeReinterpretCast
+MethodInvocation:getType
+MethodInvocation:makeLiteral
+MethodInvocation:minus
+MethodInvocation:plus
+MethodInvocation:case_
+MethodInvocation:case_
+MethodInvocation:makeExactLiteral
+MethodInvocation:divideInt
+MethodInvocation:multiply
+MethodInvocation:convertFunction
+MethodInvocation:getOperator
+Method-name:convertExtract
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlExtractFunction op, SqlCall call]
+MethodInvocation:convertFunction
+MethodInvocation:getOperator
+Method-name:mod
+Method-returnType:RexNode
+Method-parameters:[RexBuilder rexBuilder, RelDataType resType, RexNode res, BigDecimal val]
+MethodInvocation:equals
+MethodInvocation:makeCall
+MethodInvocation:makeExactLiteral
+Method-name:divide
+Method-returnType:RexNode
+Method-parameters:[RexBuilder rexBuilder, RexNode res, BigDecimal val]
+MethodInvocation:equals
+MethodInvocation:compareTo
+MethodInvocation:signum
+MethodInvocation:divide
+MethodInvocation:multiply
+MethodInvocation:makeExactLiteral
+MethodInvocation:divideInt
+MethodInvocation:makeExactLiteral
+Method-name:convertDatetimeMinus
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlDatetimeSubtractionOperator op, SqlCall call]
+MethodInvocation:getRexBuilder
+MethodInvocation:getOperandList
+MethodInvocation:convertExpressionList
+MethodInvocation:getValidatedNodeType
+MethodInvocation:getValidator
+MethodInvocation:makeCall
+MethodInvocation:subList
+Method-name:convertFunction
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlFunction fun, SqlCall call]
+MethodInvocation:getOperandList
+MethodInvocation:convertExpressionList
+MethodInvocation:getFunctionType
+MethodInvocation:makeConstructorCall
+MethodInvocation:getValidatedNodeTypeIfKnown
+MethodInvocation:getValidator
+MethodInvocation:deriveReturnType
+MethodInvocation:getRexBuilder
+MethodInvocation:makeCall
+MethodInvocation:getRexBuilder
+Method-name:convertWindowFunction
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlWindowTableFunction fun, SqlCall call]
+MethodInvocation:skip
+MethodInvocation:getOperandList
+MethodInvocation:convertExpressionList
+MethodInvocation:getValidatedNodeTypeIfKnown
+MethodInvocation:getValidator
+MethodInvocation:deriveReturnType
+MethodInvocation:getRexBuilder
+MethodInvocation:makeCall
+MethodInvocation:getRexBuilder
+Method-name:convertJsonValueFunction
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlJsonValueFunction fun, SqlCall call]
+MethodInvocation:getOperandList
+MethodInvocation:hasExplicitTypeSpec
+MethodInvocation:toArray
+MethodInvocation:removeTypeSpecOperands
+MethodInvocation:convertExpressionList
+MethodInvocation:getValidatedNodeTypeIfKnown
+MethodInvocation:getValidator
+MethodInvocation:makeCall
+MethodInvocation:getRexBuilder
+Method-name:convertSequenceValue
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlSequenceValueOperator fun, SqlCall call]
+Method-name:convertAggregateFunction
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlAggFunction fun, SqlCall call]
+MethodInvocation:getOperandList
+MethodInvocation:isCountStar
+MethodInvocation:of
+MethodInvocation:convertExpressionList
+MethodInvocation:getValidatedNodeTypeIfKnown
+MethodInvocation:getValidator
+MethodInvocation:getGroupCount
+MethodInvocation:getTypeFactory
+MethodInvocation:of
+Method-name:getGroupCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:inferReturnType
+MethodInvocation:makeCall
+MethodInvocation:getRexBuilder
+Method-name:makeConstructorCall
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlFunction constructor, List<RexNode> exprs]
+MethodInvocation:getRexBuilder
+MethodInvocation:deriveReturnType
+MethodInvocation:getFieldCount
+MethodInvocation:builder
+Method-name:getRexBuilder
+Method-returnType:RexBuilder
+Method-parameters:[]
+Method-name:validateExpression
+Method-returnType:SqlNode
+Method-parameters:[RelDataType rowType, SqlNode expr]
+Method-name:convertExpression
+Method-returnType:RexNode
+Method-parameters:[SqlNode e]
+MethodInvocation:add
+MethodInvocation:newAttributeInitializer
+MethodInvocation:getInitializerExpressionFactory
+MethodInvocation:generateCastExpressions
+MethodInvocation:build
+MethodInvocation:makeNewInvocation
+Method-name:convertCall
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlCall call]
+MethodInvocation:convertCall
+MethodInvocation:getOperator
+MethodInvocation:getOperandList
+Method-name:convertCall
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlOperator op, List<SqlNode> operands]
+MethodInvocation:getRexBuilder
+MethodInvocation:getOperandTypeChecker
+MethodInvocation:getConsistency
+MethodInvocation:getOperandTypeChecker
+MethodInvocation:convertExpressionList
+MethodInvocation:deriveReturnType
+MethodInvocation:makeCall
+MethodInvocation:flatten
+Method-name:elseArgs
+Method-returnType:List<Integer>
+Method-parameters:[int count]
+MethodInvocation:add
+MethodInvocation:add
+Method-name:convertExpressionList
+Method-returnType:List<RexNode>
+Method-parameters:[SqlRexContext cx, List<SqlNode> nodes, SqlOperandTypeChecker.Consistency consistency]
+MethodInvocation:add
+MethodInvocation:convertExpression
+MethodInvocation:size
+MethodInvocation:consistentType
+MethodInvocation:types
+MethodInvocation:newArrayList
+MethodInvocation:clear
+MethodInvocation:add
+MethodInvocation:ensureType
+MethodInvocation:getRexBuilder
+Method-name:consistentType
+Method-returnType:RelDataType
+Method-parameters:[SqlRexContext cx, SqlOperandTypeChecker.Consistency consistency, List<RelDataType> types]
+MethodInvocation:areSameFamily
+MethodInvocation:getFamily
+MethodInvocation:add
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:getFamily
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:createSqlType
+MethodInvocation:getTypeFactory
+MethodInvocation:leastRestrictive
+MethodInvocation:getTypeFactory
+Method-name:convertPlus
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlCall call]
+MethodInvocation:convertCall
+MethodInvocation:getSqlTypeName
+MethodInvocation:getType
+MethodInvocation:getRexBuilder
+MethodInvocation:getOperands
+MethodInvocation:size
+MethodInvocation:getSqlTypeName
+MethodInvocation:getType
+MethodInvocation:get
+MethodInvocation:of
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:makeCall
+MethodInvocation:getType
+Method-name:convertIsDistinctFrom
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlCall call, boolean neg]
+MethodInvocation:convertExpression
+MethodInvocation:operand
+MethodInvocation:convertExpression
+MethodInvocation:operand
+MethodInvocation:isDistinctFrom
+MethodInvocation:getRexBuilder
+Method-name:convertBetween
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlBetweenOperator op, SqlCall call]
+MethodInvocation:convertExpressionList
+MethodInvocation:getOperandList
+MethodInvocation:getConsistency
+MethodInvocation:getOperandTypeChecker
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getRexBuilder
+MethodInvocation:ge
+MethodInvocation:le
+MethodInvocation:and
+MethodInvocation:ge
+MethodInvocation:le
+MethodInvocation:and
+MethodInvocation:or
+MethodInvocation:unexpected
+MethodInvocation:getOperator
+MethodInvocation:isNegated
+MethodInvocation:makeCall
+Method-name:convertLiteralChain
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlLiteralChainOperator op, SqlCall call]
+MethodInvocation:discard
+MethodInvocation:concatenateOperands
+MethodInvocation:convertLiteral
+Method-name:convertRow
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlRowOperator op, SqlCall call]
+MethodInvocation:getSqlTypeName
+MethodInvocation:getValidatedNodeType
+MethodInvocation:getValidator
+MethodInvocation:convertCall
+MethodInvocation:getRexBuilder
+MethodInvocation:getOperandList
+MethodInvocation:add
+MethodInvocation:makeLiteral
+MethodInvocation:getSimple
+MethodInvocation:deriveReturnType
+MethodInvocation:makeCall
+Method-name:convertOverlaps
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlOverlapsOperator op, SqlCall call]
+Method-name:convertOverlapsOperand
+Method-returnType:Pair<RexNode,RexNode>
+Method-parameters:[SqlRexContext cx, SqlParserPos pos, SqlNode operand]
+MethodInvocation:getKind
+MethodInvocation:operand
+MethodInvocation:operand
+MethodInvocation:getValidatedNodeType
+MethodInvocation:getValidator
+MethodInvocation:isInterval
+MethodInvocation:plus
+MethodInvocation:convertExpression
+MethodInvocation:convertExpression
+MethodInvocation:of
+Method-name:castToValidatedType
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlCall call, RexNode value]
+MethodInvocation:castToValidatedType
+MethodInvocation:getValidator
+MethodInvocation:getRexBuilder
+Method-name:castToValidatedType
+Method-returnType:RexNode
+Method-parameters:[SqlNode node, RexNode e, SqlValidator validator, RexBuilder rexBuilder]
+MethodInvocation:getValidatedNodeType
+MethodInvocation:getType
+MethodInvocation:makeCast
+Class:RegrCovarianceConvertlet
+Field:kind
+Method-name:RegrCovarianceConvertlet
+Method-returnType:null
+Method-parameters:[SqlKind kind]
+FieldAccess:kind
+Method-name:convertCall
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlCall call]
+Method-name:expandRegrSzz
+Method-returnType:SqlNode
+Method-parameters:[final SqlNode arg1, final SqlNode arg2, final RelDataType avgType, final SqlRexContext cx, boolean variance]
+MethodInvocation:createCall
+MethodInvocation:expandCovariance
+MethodInvocation:convertExpression
+MethodInvocation:getCastedSqlNode
+MethodInvocation:createCall
+Method-name:expandCovariance
+Method-returnType:SqlNode
+Method-parameters:[final SqlNode arg0Input, final SqlNode arg1Input, final SqlNode dependent, final RelDataType varType, final SqlRexContext cx, boolean biased]
+MethodInvocation:createNull
+MethodInvocation:convertExpression
+MethodInvocation:convertExpression
+MethodInvocation:getCastedSqlNode
+MethodInvocation:getCastedSqlNode
+MethodInvocation:createCall
+MethodInvocation:createCall
+MethodInvocation:createCall
+MethodInvocation:createCall
+MethodInvocation:createCall
+MethodInvocation:createCall
+MethodInvocation:createCall
+MethodInvocation:equals
+MethodInvocation:createCall
+MethodInvocation:equals
+MethodInvocation:createCall
+MethodInvocation:equals
+MethodInvocation:createCall
+MethodInvocation:getCastedSqlNode
+MethodInvocation:convertExpression
+MethodInvocation:createCall
+MethodInvocation:createCall
+MethodInvocation:createExactNumeric
+MethodInvocation:of
+MethodInvocation:createCall
+MethodInvocation:of
+MethodInvocation:getCastedSqlNode
+MethodInvocation:createCall
+MethodInvocation:createCall
+Method-name:getCastedSqlNode
+Method-returnType:SqlNode
+Method-parameters:[SqlNode argInput, RelDataType varType, SqlParserPos pos, RexNode argRex]
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:createCall
+MethodInvocation:convertTypeToSpec
+Class:AvgVarianceConvertlet
+Field:kind
+Method-name:AvgVarianceConvertlet
+Method-returnType:null
+Method-parameters:[SqlKind kind]
+FieldAccess:kind
+Method-name:convertCall
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlCall call]
+Method-name:expandAvg
+Method-returnType:SqlNode
+Method-parameters:[final SqlNode arg, final RelDataType avgType, final SqlRexContext cx]
+MethodInvocation:createCall
+MethodInvocation:convertExpression
+MethodInvocation:getCastedSqlNode
+MethodInvocation:createCall
+MethodInvocation:createCall
+Method-name:expandVariance
+Method-returnType:SqlNode
+Method-parameters:[final SqlNode argInput, final RelDataType varType, final SqlRexContext cx, boolean biased, boolean sqrt]
+MethodInvocation:getCastedSqlNode
+MethodInvocation:convertExpression
+MethodInvocation:createCall
+MethodInvocation:getCastedSqlNode
+MethodInvocation:convertExpression
+MethodInvocation:createCall
+MethodInvocation:getCastedSqlNode
+MethodInvocation:convertExpression
+MethodInvocation:createCall
+MethodInvocation:getCastedSqlNode
+MethodInvocation:convertExpression
+MethodInvocation:createCall
+MethodInvocation:getCastedSqlNode
+MethodInvocation:convertExpression
+MethodInvocation:createCall
+MethodInvocation:getCastedSqlNode
+MethodInvocation:convertExpression
+MethodInvocation:createCall
+MethodInvocation:getCastedSqlNode
+MethodInvocation:convertExpression
+MethodInvocation:createCall
+MethodInvocation:getCastedSqlNode
+MethodInvocation:convertExpression
+MethodInvocation:createExactNumeric
+MethodInvocation:createNull
+MethodInvocation:of
+MethodInvocation:createCall
+MethodInvocation:of
+MethodInvocation:getCastedSqlNode
+MethodInvocation:createCall
+MethodInvocation:createCall
+MethodInvocation:getCastedSqlNode
+MethodInvocation:convertExpression
+MethodInvocation:createExactNumeric
+MethodInvocation:createCall
+Method-name:getCastedSqlNode
+Method-returnType:SqlNode
+Method-parameters:[SqlNode argInput, RelDataType varType, SqlParserPos pos, RexNode argRex]
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:createCall
+MethodInvocation:convertTypeToSpec
+Class:TrimConvertlet
+Field:flag
+Method-name:TrimConvertlet
+Method-returnType:null
+Method-parameters:[SqlTrimFunction.Flag flag]
+FieldAccess:flag
+Method-name:convertCall
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlCall call]
+MethodInvocation:getRexBuilder
+MethodInvocation:convertExpression
+MethodInvocation:get
+MethodInvocation:getOperandList
+MethodInvocation:makeCall
+MethodInvocation:makeFlag
+MethodInvocation:makeLiteral
+Class:GreatestConvertlet
+Method-name:convertCall
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlCall call]
+MethodInvocation:getRexBuilder
+MethodInvocation:getValidatedNodeType
+MethodInvocation:getValidator
+MethodInvocation:getKind
+MethodInvocation:convertExpressionList
+MethodInvocation:getOperandList
+MethodInvocation:add
+MethodInvocation:makeCall
+MethodInvocation:add
+MethodInvocation:composeDisjunction
+MethodInvocation:add
+MethodInvocation:makeNullLiteral
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:makeCall
+MethodInvocation:add
+MethodInvocation:composeConjunction
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:makeCall
+Class:FloorCeilConvertlet
+Method-name:convertCall
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlCall call]
+MethodInvocation:convertFloorCeil
+Class:TimestampAddConvertlet
+Method-name:convertCall
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlCall call]
+MethodInvocation:getRexBuilder
+MethodInvocation:operand
+MethodInvocation:symbolValue
+MethodInvocation:getParserPosition
+MethodInvocation:convertExpression
+MethodInvocation:operand
+MethodInvocation:divide
+MethodInvocation:multiply
+MethodInvocation:makeIntervalLiteral
+MethodInvocation:divide
+MethodInvocation:multiply
+MethodInvocation:makeIntervalLiteral
+MethodInvocation:makeCall
+MethodInvocation:convertExpression
+MethodInvocation:operand
+Class:TimestampDiffConvertlet
+Method-name:convertCall
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlCall call]
+MethodInvocation:getRexBuilder
+MethodInvocation:operand
+MethodInvocation:symbolValue
+MethodInvocation:valueOf
+MethodInvocation:convertExpression
+MethodInvocation:operand
+MethodInvocation:convertExpression
+MethodInvocation:operand
+MethodInvocation:createTypeWithNullability
+MethodInvocation:getTypeFactory
+MethodInvocation:createSqlIntervalType
+MethodInvocation:getTypeFactory
+MethodInvocation:isNullable
+MethodInvocation:getType
+MethodInvocation:isNullable
+MethodInvocation:getType
+MethodInvocation:makeCall
+MethodInvocation:of
+MethodInvocation:createTypeWithNullability
+MethodInvocation:getTypeFactory
+MethodInvocation:createSqlType
+MethodInvocation:getTypeFactory
+MethodInvocation:containsNullable
+MethodInvocation:getType
+MethodInvocation:makeCast
+MethodInvocation:multiplyDivide

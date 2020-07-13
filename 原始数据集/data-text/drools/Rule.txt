@@ -1,0 +1,86 @@
+Class:Rule
+Field:MAX_ROWS
+Field:_name
+Field:_description
+Field:_metadata
+Field:_lhs
+Field:_rhs
+Field:_spreadsheetRow
+Method-name:Rule
+Method-returnType:null
+Method-parameters:[final String name, final Integer salience, final int spreadsheetRow]
+FieldAccess:_name
+MethodInvocation:asStringLiteral
+FieldAccess:_description
+FieldAccess:_metadata
+FieldAccess:_lhs
+FieldAccess:_rhs
+FieldAccess:_spreadsheetRow
+Method-name:addMetadata
+Method-returnType:void
+Method-parameters:[final String meta]
+MethodInvocation:add
+FieldAccess:_metadata
+Method-name:addCondition
+Method-returnType:void
+Method-parameters:[final Condition con]
+MethodInvocation:add
+FieldAccess:_lhs
+Method-name:addConsequence
+Method-returnType:void
+Method-parameters:[final Consequence con]
+MethodInvocation:add
+FieldAccess:_rhs
+Method-name:renderDRL
+Method-returnType:void
+Method-parameters:[final DRLOutput out]
+MethodInvocation:isCommented
+MethodInvocation:writeLine
+MethodInvocation:getComment
+MethodInvocation:writeLine
+FieldAccess:_name
+FieldAccess:_description
+MethodInvocation:writeLine
+FieldAccess:_description
+FieldAccess:_metadata
+MethodInvocation:writeLine
+MethodInvocation:writeLine
+MethodInvocation:renderDRL
+FieldAccess:_lhs
+MethodInvocation:writeLine
+MethodInvocation:renderDRL
+FieldAccess:_rhs
+MethodInvocation:writeLine
+Method-name:getMetadata
+Method-returnType:List<String>
+Method-parameters:[]
+FieldAccess:_metadata
+Method-name:getConditions
+Method-returnType:List<Condition>
+Method-parameters:[]
+FieldAccess:_lhs
+Method-name:getConsequences
+Method-returnType:List<Consequence>
+Method-parameters:[]
+FieldAccess:_rhs
+Method-name:setName
+Method-returnType:void
+Method-parameters:[final String value]
+FieldAccess:_name
+MethodInvocation:asStringLiteral
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:_name
+Method-name:setDescription
+Method-returnType:void
+Method-parameters:[final String value]
+FieldAccess:_description
+Method-name:appendDescription
+Method-returnType:void
+Method-parameters:[final String value]
+FieldAccess:_description
+Method-name:getSpreadsheetRowNumber
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:_spreadsheetRow

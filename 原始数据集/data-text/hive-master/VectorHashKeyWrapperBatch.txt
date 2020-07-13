@@ -1,0 +1,331 @@
+Class:VectorHashKeyWrapperBatch
+Method-name:VectorHashKeyWrapperBatch
+Method-returnType:null
+Method-parameters:[int keyCount]
+Field:MODEL_REFERENCES_COUNT
+Field:keyExpressions
+Field:vectorHashKeyWrappers
+Field:keysFixedSize
+Field:hashCtx
+Method-name:getKeysFixedSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:getVectorHashKeyWrappers
+Method-returnType:VectorHashKeyWrapperBase[]
+Method-parameters:[]
+Method-name:evaluateBatch
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch batch]
+MethodInvocation:clearIsNull
+MethodInvocation:getOutputColumnNum
+MethodInvocation:evaluateLongColumnVector
+MethodInvocation:getOutputColumnNum
+MethodInvocation:evaluateDoubleColumnVector
+MethodInvocation:getOutputColumnNum
+MethodInvocation:evaluateStringColumnVector
+MethodInvocation:getOutputColumnNum
+MethodInvocation:evaluateDecimalColumnVector
+MethodInvocation:getOutputColumnNum
+MethodInvocation:evaluateTimestampColumnVector
+MethodInvocation:getOutputColumnNum
+MethodInvocation:evaluateIntervalDayTimeColumnVector
+MethodInvocation:setHashKey
+Method-name:evaluateBatchGroupingSets
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch batch, boolean[] groupingSetsOverrideIsNulls]
+MethodInvocation:clearIsNull
+MethodInvocation:assignNullLong
+MethodInvocation:getOutputColumnNum
+MethodInvocation:evaluateLongColumnVector
+MethodInvocation:assignNullDouble
+MethodInvocation:getOutputColumnNum
+MethodInvocation:evaluateDoubleColumnVector
+MethodInvocation:assignNullString
+MethodInvocation:getOutputColumnNum
+MethodInvocation:evaluateStringColumnVector
+MethodInvocation:assignNullDecimal
+MethodInvocation:getOutputColumnNum
+MethodInvocation:evaluateDecimalColumnVector
+MethodInvocation:assignNullTimestamp
+MethodInvocation:getOutputColumnNum
+MethodInvocation:evaluateTimestampColumnVector
+MethodInvocation:assignNullIntervalDayTime
+MethodInvocation:getOutputColumnNum
+MethodInvocation:evaluateIntervalDayTimeColumnVector
+MethodInvocation:setHashKey
+Method-name:evaluateLongColumnVector
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch batch, LongColumnVector columnVector, int keyIndex, int index]
+MethodInvocation:assignLongNoNullsRepeating
+MethodInvocation:assignLongNullsRepeating
+MethodInvocation:assignLongNoNullsNoRepeatingSelection
+MethodInvocation:assignLongNoNullsNoRepeatingNoSelection
+MethodInvocation:assignLongNullsNoRepeatingSelection
+MethodInvocation:assignLongNullsNoRepeatingNoSelection
+Method-name:evaluateDoubleColumnVector
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch batch, DoubleColumnVector columnVector, int keyIndex, int index]
+MethodInvocation:assignDoubleNoNullsRepeating
+MethodInvocation:assignDoubleNullsRepeating
+MethodInvocation:assignDoubleNoNullsNoRepeatingSelection
+MethodInvocation:assignDoubleNoNullsNoRepeatingNoSelection
+MethodInvocation:assignDoubleNullsNoRepeatingSelection
+MethodInvocation:assignDoubleNullsNoRepeatingNoSelection
+Method-name:evaluateStringColumnVector
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch batch, BytesColumnVector columnVector, int keyIndex, int index]
+MethodInvocation:assignStringNoNullsRepeating
+MethodInvocation:assignStringNullsRepeating
+MethodInvocation:assignStringNoNullsNoRepeatingSelection
+MethodInvocation:assignStringNoNullsNoRepeatingNoSelection
+MethodInvocation:assignStringNullsNoRepeatingSelection
+MethodInvocation:assignStringNullsNoRepeatingNoSelection
+Method-name:evaluateDecimalColumnVector
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch batch, DecimalColumnVector columnVector, int keyIndex, int index]
+MethodInvocation:assignDecimalNoNullsRepeating
+MethodInvocation:assignDecimalNullsRepeating
+MethodInvocation:assignDecimalNoNullsNoRepeatingSelection
+MethodInvocation:assignDecimalNoNullsNoRepeatingNoSelection
+MethodInvocation:assignDecimalNullsNoRepeatingSelection
+MethodInvocation:assignDecimalNullsNoRepeatingNoSelection
+Method-name:evaluateTimestampColumnVector
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch batch, TimestampColumnVector columnVector, int keyIndex, int index]
+MethodInvocation:assignTimestampNoNullsRepeating
+MethodInvocation:assignTimestampNullsRepeating
+MethodInvocation:assignTimestampNoNullsNoRepeatingSelection
+MethodInvocation:assignTimestampNoNullsNoRepeatingNoSelection
+MethodInvocation:assignTimestampNullsNoRepeatingSelection
+MethodInvocation:assignTimestampNullsNoRepeatingNoSelection
+Method-name:evaluateIntervalDayTimeColumnVector
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch batch, IntervalDayTimeColumnVector columnVector, int keyIndex, int index]
+MethodInvocation:assignIntervalDayTimeNoNullsRepeating
+MethodInvocation:assignIntervalDayTimeNullsRepeating
+MethodInvocation:assignIntervalDayTimeNoNullsNoRepeatingSelection
+MethodInvocation:assignIntervalDayTimeNoNullsNoRepeatingNoSelection
+MethodInvocation:assignIntervalDayTimeNullsNoRepeatingSelection
+MethodInvocation:assignIntervalDayTimeNullsNoRepeatingNoSelection
+Method-name:assignStringNullsNoRepeatingSelection
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, BytesColumnVector columnVector, int[] selected]
+MethodInvocation:assignNullString
+MethodInvocation:assignString
+Method-name:assignStringNullsRepeating
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, BytesColumnVector columnVector]
+MethodInvocation:assignNullString
+MethodInvocation:assignString
+Method-name:assignStringNullsNoRepeatingNoSelection
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, BytesColumnVector columnVector]
+MethodInvocation:assignNullString
+MethodInvocation:assignString
+Method-name:assignStringNoNullsRepeating
+Method-returnType:void
+Method-parameters:[int index, int size, BytesColumnVector columnVector]
+MethodInvocation:assignString
+Method-name:assignStringNoNullsNoRepeatingSelection
+Method-returnType:void
+Method-parameters:[int index, int size, BytesColumnVector columnVector, int[] selected]
+MethodInvocation:assignString
+Method-name:assignStringNoNullsNoRepeatingNoSelection
+Method-returnType:void
+Method-parameters:[int index, int size, BytesColumnVector columnVector]
+MethodInvocation:assignString
+Method-name:assignDoubleNullsNoRepeatingSelection
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, DoubleColumnVector columnVector, int[] selected]
+MethodInvocation:assignDouble
+MethodInvocation:assignNullDouble
+Method-name:assignDoubleNullsRepeating
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, DoubleColumnVector columnVector]
+MethodInvocation:assignNullDouble
+Method-name:assignDoubleNullsNoRepeatingNoSelection
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, DoubleColumnVector columnVector]
+MethodInvocation:assignDouble
+MethodInvocation:assignNullDouble
+Method-name:assignDoubleNoNullsRepeating
+Method-returnType:void
+Method-parameters:[int index, int size, DoubleColumnVector columnVector]
+MethodInvocation:assignDouble
+Method-name:assignDoubleNoNullsNoRepeatingSelection
+Method-returnType:void
+Method-parameters:[int index, int size, DoubleColumnVector columnVector, int[] selected]
+MethodInvocation:assignDouble
+Method-name:assignDoubleNoNullsNoRepeatingNoSelection
+Method-returnType:void
+Method-parameters:[int index, int size, DoubleColumnVector columnVector]
+MethodInvocation:assignDouble
+Method-name:assignLongNullsNoRepeatingSelection
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, LongColumnVector columnVector, int[] selected]
+MethodInvocation:assignLong
+MethodInvocation:assignNullLong
+Method-name:assignLongNullsRepeating
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, LongColumnVector columnVector]
+MethodInvocation:assignNullLong
+Method-name:assignLongNullsNoRepeatingNoSelection
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, LongColumnVector columnVector]
+MethodInvocation:assignLong
+MethodInvocation:assignNullLong
+Method-name:assignLongNoNullsRepeating
+Method-returnType:void
+Method-parameters:[int index, int size, LongColumnVector columnVector]
+MethodInvocation:assignLong
+Method-name:assignLongNoNullsNoRepeatingSelection
+Method-returnType:void
+Method-parameters:[int index, int size, LongColumnVector columnVector, int[] selected]
+MethodInvocation:assignLong
+Method-name:assignLongNoNullsNoRepeatingNoSelection
+Method-returnType:void
+Method-parameters:[int index, int size, LongColumnVector columnVector]
+MethodInvocation:assignLong
+Method-name:assignDecimalNullsNoRepeatingSelection
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, DecimalColumnVector columnVector, int[] selected]
+MethodInvocation:assignDecimal
+MethodInvocation:assignNullDecimal
+Method-name:assignDecimalNullsRepeating
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, DecimalColumnVector columnVector]
+MethodInvocation:assignNullDecimal
+Method-name:assignDecimalNullsNoRepeatingNoSelection
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, DecimalColumnVector columnVector]
+MethodInvocation:assignDecimal
+MethodInvocation:assignNullDecimal
+Method-name:assignDecimalNoNullsRepeating
+Method-returnType:void
+Method-parameters:[int index, int size, DecimalColumnVector columnVector]
+MethodInvocation:assignDecimal
+Method-name:assignDecimalNoNullsNoRepeatingSelection
+Method-returnType:void
+Method-parameters:[int index, int size, DecimalColumnVector columnVector, int[] selected]
+MethodInvocation:assignDecimal
+Method-name:assignDecimalNoNullsNoRepeatingNoSelection
+Method-returnType:void
+Method-parameters:[int index, int size, DecimalColumnVector columnVector]
+MethodInvocation:assignDecimal
+Method-name:assignTimestampNullsNoRepeatingSelection
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, TimestampColumnVector columnVector, int[] selected]
+MethodInvocation:assignTimestamp
+MethodInvocation:assignNullTimestamp
+Method-name:assignTimestampNullsRepeating
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, TimestampColumnVector columnVector]
+MethodInvocation:assignNullTimestamp
+Method-name:assignTimestampNullsNoRepeatingNoSelection
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, TimestampColumnVector columnVector]
+MethodInvocation:assignTimestamp
+MethodInvocation:assignNullTimestamp
+Method-name:assignTimestampNoNullsRepeating
+Method-returnType:void
+Method-parameters:[int index, int size, TimestampColumnVector columnVector]
+MethodInvocation:assignTimestamp
+Method-name:assignTimestampNoNullsNoRepeatingSelection
+Method-returnType:void
+Method-parameters:[int index, int size, TimestampColumnVector columnVector, int[] selected]
+MethodInvocation:assignTimestamp
+Method-name:assignTimestampNoNullsNoRepeatingNoSelection
+Method-returnType:void
+Method-parameters:[int index, int size, TimestampColumnVector columnVector]
+MethodInvocation:assignTimestamp
+Method-name:assignIntervalDayTimeNullsNoRepeatingSelection
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, IntervalDayTimeColumnVector columnVector, int[] selected]
+MethodInvocation:assignIntervalDayTime
+MethodInvocation:assignNullIntervalDayTime
+Method-name:assignIntervalDayTimeNullsRepeating
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, IntervalDayTimeColumnVector columnVector]
+MethodInvocation:assignNullIntervalDayTime
+Method-name:assignIntervalDayTimeNullsNoRepeatingNoSelection
+Method-returnType:void
+Method-parameters:[int keyIndex, int index, int size, IntervalDayTimeColumnVector columnVector]
+MethodInvocation:assignIntervalDayTime
+MethodInvocation:assignNullIntervalDayTime
+Method-name:assignIntervalDayTimeNoNullsRepeating
+Method-returnType:void
+Method-parameters:[int index, int size, IntervalDayTimeColumnVector columnVector]
+MethodInvocation:assignIntervalDayTime
+Method-name:assignIntervalDayTimeNoNullsNoRepeatingSelection
+Method-returnType:void
+Method-parameters:[int index, int size, IntervalDayTimeColumnVector columnVector, int[] selected]
+MethodInvocation:assignIntervalDayTime
+Method-name:assignIntervalDayTimeNoNullsNoRepeatingNoSelection
+Method-returnType:void
+Method-parameters:[int index, int size, IntervalDayTimeColumnVector columnVector]
+MethodInvocation:assignIntervalDayTime
+Method-name:compileKeyWrapperBatch
+Method-returnType:VectorHashKeyWrapperBatch
+Method-parameters:[VectorExpression[] keyExpressions]
+MethodInvocation:getOutputTypeInfo
+MethodInvocation:compileKeyWrapperBatch
+Method-name:compileKeyWrapperBatch
+Method-returnType:VectorHashKeyWrapperBatch
+Method-parameters:[VectorExpression[] keyExpressions, TypeInfo[] typeInfos]
+MethodInvocation:addKey
+MethodInvocation:finishAdding
+MethodInvocation:allocateKeyWrapper
+MethodInvocation:get
+MethodInvocation:alignUp
+MethodInvocation:object
+MethodInvocation:ref
+MethodInvocation:primitive1
+MethodInvocation:memoryAlign
+MethodInvocation:lengthForLongArrayOfSize
+MethodInvocation:lengthForDoubleArrayOfSize
+MethodInvocation:lengthForObjectArrayOfSize
+MethodInvocation:lengthForObjectArrayOfSize
+MethodInvocation:lengthForObjectArrayOfSize
+MethodInvocation:lengthForObjectArrayOfSize
+MethodInvocation:lengthForIntArrayOfSize
+MethodInvocation:lengthForBooleanArrayOfSize
+Method-name:allocateKeyWrapper
+Method-returnType:VectorHashKeyWrapperBase
+Method-parameters:[]
+MethodInvocation:allocate
+Method-name:setLongValue
+Method-returnType:void
+Method-parameters:[VectorHashKeyWrapperBase kw, int keyIndex, Long value]
+MethodInvocation:assignNullLong
+MethodInvocation:assignLong
+Method-name:assignRowColumn
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch batch, int batchIndex, int keyIndex, VectorHashKeyWrapperBase kw]
+MethodInvocation:isNull
+FieldAccess:vector
+MethodInvocation:getLongValue
+FieldAccess:vector
+MethodInvocation:getDoubleValue
+MethodInvocation:setVal
+MethodInvocation:getBytes
+MethodInvocation:getByteStart
+MethodInvocation:getByteLength
+MethodInvocation:set
+MethodInvocation:getDecimal
+MethodInvocation:set
+MethodInvocation:getTimestamp
+MethodInvocation:set
+MethodInvocation:getIntervalDayTime
+Method-name:getVariableSize
+Method-returnType:int
+Method-parameters:[int batchSize]
+MethodInvocation:getVariableSize
+Method-name:getComparator
+Method-returnType:Comparator<VectorHashKeyWrapperBase>
+Method-parameters:[String columnSortOrder, String nullOrder]
+MethodInvocation:addColumnComparator
+MethodInvocation:charAt
+MethodInvocation:charAt
+FieldAccess:length
+MethodInvocation:getComparators
+MethodInvocation:getComparators

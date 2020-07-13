@@ -1,0 +1,77 @@
+Class:LocalVar
+Field:LOG
+MethodInvocation:getLogger
+Field:regNum
+Field:name
+Field:type
+Field:isEnd
+Field:startAddr
+Field:endAddr
+Method-name:LocalVar
+Method-returnType:null
+Method-parameters:[DexNode dex, int rn, int nameId, int typeId, int signId]
+MethodInvocation:getString
+MethodInvocation:getType
+MethodInvocation:getString
+Method-name:LocalVar
+Method-returnType:null
+Method-parameters:[int regNum, String name, ArgType type]
+Method-name:LocalVar
+Method-returnType:null
+Method-parameters:[int regNum, String name, ArgType type, String sign]
+FieldAccess:regNum
+FieldAccess:name
+MethodInvocation:consumeType
+MethodInvocation:checkSignature
+MethodInvocation:error
+FieldAccess:type
+Method-name:checkSignature
+Method-returnType:boolean
+Method-parameters:[ArgType type, ArgType gType]
+MethodInvocation:getArrayRootElement
+MethodInvocation:isGeneric
+MethodInvocation:equals
+MethodInvocation:getObject
+MethodInvocation:getArrayRootElement
+MethodInvocation:getObject
+MethodInvocation:warn
+MethodInvocation:isGenericType
+Method-name:start
+Method-returnType:void
+Method-parameters:[int addr]
+FieldAccess:isEnd
+FieldAccess:startAddr
+Method-name:end
+Method-returnType:boolean
+Method-parameters:[int addr]
+FieldAccess:isEnd
+FieldAccess:endAddr
+Method-name:getRegNum
+Method-returnType:int
+Method-parameters:[]
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getType
+Method-returnType:ArgType
+Method-parameters:[]
+Method-name:isEnd
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getStartAddr
+Method-returnType:int
+Method-parameters:[]
+Method-name:getEndAddr
+Method-returnType:int
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:formatOffset
+MethodInvocation:formatOffset

@@ -1,0 +1,106 @@
+Class:RelFieldCollation
+Method-name:compare
+Method-returnType:int
+Method-parameters:[Comparable c1, Comparable c2, int nullComparison]
+MethodInvocation:compareTo
+Method-name:direction
+Method-returnType:int
+Method-parameters:[MongoSort mongoSort]
+MethodInvocation:getDirection
+Field:Direction
+Field:shortString
+Method-name:Direction
+Method-returnType:null
+Method-parameters:[String shortString]
+FieldAccess:shortString
+Method-name:monotonicity
+Method-returnType:SqlMonotonicity
+Method-parameters:[]
+Method-name:of
+Method-returnType:Direction
+Method-parameters:[SqlMonotonicity monotonicity]
+Method-name:defaultNullDirection
+Method-returnType:NullDirection
+Method-parameters:[]
+Method-name:isDescending
+Method-returnType:boolean
+Method-parameters:[]
+Field:NullDirection
+Method-name:FIRST
+Method-returnType:null
+Method-parameters:[]
+Field:nullComparison
+Method-name:NullDirection
+Method-returnType:null
+Method-parameters:[int nullComparison]
+FieldAccess:nullComparison
+Field:fieldIndex
+Field:direction
+Field:nullDirection
+Method-name:RelFieldCollation
+Method-returnType:null
+Method-parameters:[int fieldIndex]
+Method-name:RelFieldCollation
+Method-returnType:null
+Method-parameters:[int fieldIndex, Direction direction]
+MethodInvocation:defaultNullDirection
+Method-name:RelFieldCollation
+Method-returnType:null
+Method-parameters:[int fieldIndex, Direction direction, NullDirection nullDirection]
+FieldAccess:fieldIndex
+FieldAccess:direction
+MethodInvocation:requireNonNull
+FieldAccess:nullDirection
+MethodInvocation:requireNonNull
+Method-name:withFieldIndex
+Method-returnType:RelFieldCollation
+Method-parameters:[int fieldIndex]
+FieldAccess:fieldIndex
+Method-name:copy
+Method-returnType:RelFieldCollation
+Method-parameters:[int target]
+MethodInvocation:withFieldIndex
+Method-name:withDirection
+Method-returnType:RelFieldCollation
+Method-parameters:[Direction direction]
+FieldAccess:direction
+Method-name:withNullDirection
+Method-returnType:RelFieldCollation
+Method-parameters:[NullDirection nullDirection]
+FieldAccess:nullDirection
+Method-name:shift
+Method-returnType:RelFieldCollation
+Method-parameters:[int offset]
+MethodInvocation:withFieldIndex
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+FieldAccess:fieldIndex
+FieldAccess:direction
+FieldAccess:nullDirection
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:getFieldIndex
+Method-returnType:int
+Method-parameters:[]
+Method-name:getDirection
+Method-returnType:RelFieldCollation.Direction
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:defaultNullDirection
+MethodInvocation:valueOf
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:defaultNullDirection
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:shortString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:defaultNullDirection

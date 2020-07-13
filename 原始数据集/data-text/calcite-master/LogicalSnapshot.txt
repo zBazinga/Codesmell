@@ -1,0 +1,25 @@
+Class:LogicalSnapshot
+Method-name:LogicalSnapshot
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode input, RexNode period]
+Method-name:copy
+Method-returnType:Snapshot
+Method-parameters:[RelTraitSet traitSet, RelNode input, RexNode period]
+MethodInvocation:getCluster
+Method-name:create
+Method-returnType:LogicalSnapshot
+Method-parameters:[RelNode input, RexNode period]
+MethodInvocation:getCluster
+MethodInvocation:getMetadataQuery
+MethodInvocation:replaceIf
+MethodInvocation:replaceIfs
+MethodInvocation:replace
+MethodInvocation:traitSet
+MethodInvocation:snapshot
+MethodInvocation:snapshot
+Method-name:decorrelateRel
+Method-returnType:RelDecorrelator.Frame
+Method-parameters:[RelDecorrelator relDecorrelator]
+MethodInvocation:containsCorrelation
+MethodInvocation:getPeriod
+MethodInvocation:decorrelateRel

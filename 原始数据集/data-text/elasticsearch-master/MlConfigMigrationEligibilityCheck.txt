@@ -1,0 +1,57 @@
+Class:MlConfigMigrationEligibilityCheck
+Field:ENABLE_CONFIG_MIGRATION
+MethodInvocation:boolSetting
+Field:isConfigMigrationEnabled
+Method-name:MlConfigMigrationEligibilityCheck
+Method-returnType:null
+Method-parameters:[Settings settings, ClusterService clusterService]
+MethodInvocation:get
+MethodInvocation:addSettingsUpdateConsumer
+MethodInvocation:getClusterSettings
+Method-name:setConfigMigrationEnabled
+Method-returnType:void
+Method-parameters:[boolean configMigrationEnabled]
+FieldAccess:isConfigMigrationEnabled
+Method-name:canStartMigration
+Method-returnType:boolean
+Method-parameters:[ClusterState clusterState]
+MethodInvocation:mlConfigIndexIsAllocated
+Method-name:mlConfigIndexIsAllocated
+Method-returnType:boolean
+Method-parameters:[ClusterState clusterState]
+MethodInvocation:hasIndex
+MethodInvocation:metadata
+MethodInvocation:configIndexName
+MethodInvocation:index
+MethodInvocation:getRoutingTable
+MethodInvocation:configIndexName
+MethodInvocation:allPrimaryShardsActive
+Method-name:jobIsEligibleForMigration
+Method-returnType:boolean
+Method-parameters:[String jobId, ClusterState clusterState]
+MethodInvocation:canStartMigration
+MethodInvocation:getMlMetadata
+MethodInvocation:get
+MethodInvocation:getJobs
+MethodInvocation:isDeleting
+MethodInvocation:custom
+MethodInvocation:metadata
+MethodInvocation:contains
+MethodInvocation:openJobIds
+MethodInvocation:contains
+MethodInvocation:unassignedJobIds
+MethodInvocation:nodes
+Method-name:datafeedIsEligibleForMigration
+Method-returnType:boolean
+Method-parameters:[String datafeedId, ClusterState clusterState]
+MethodInvocation:canStartMigration
+MethodInvocation:getMlMetadata
+MethodInvocation:containsKey
+MethodInvocation:getDatafeeds
+MethodInvocation:custom
+MethodInvocation:metadata
+MethodInvocation:contains
+MethodInvocation:startedDatafeedIds
+MethodInvocation:contains
+MethodInvocation:unassignedDatafeedIds
+MethodInvocation:nodes

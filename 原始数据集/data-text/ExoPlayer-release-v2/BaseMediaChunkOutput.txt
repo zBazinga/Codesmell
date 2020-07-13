@@ -1,0 +1,24 @@
+Class:BaseMediaChunkOutput
+Field:TAG
+Field:trackTypes
+Field:sampleQueues
+Method-name:BaseMediaChunkOutput
+Method-returnType:null
+Method-parameters:[int[] trackTypes, SampleQueue[] sampleQueues]
+FieldAccess:trackTypes
+FieldAccess:sampleQueues
+Method-name:track
+Method-returnType:TrackOutput
+Method-parameters:[int id, int type]
+MethodInvocation:e
+Method-name:getWriteIndices
+Method-returnType:int[]
+Method-parameters:[]
+MethodInvocation:getWriteIndex
+Method-name:setSampleOffsetUs
+Method-returnType:void
+Method-parameters:[long sampleOffsetUs]
+MethodInvocation:setSampleOffsetUs
+Method-name:getTrackOutputProvider
+Method-returnType:TrackOutputProvider
+Method-parameters:[ContainerMediaChunk containerMediaChunk]

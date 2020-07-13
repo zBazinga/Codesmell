@@ -1,0 +1,21 @@
+Class:RemoveCorruptedLuceneSegmentsAction
+Method-name:getCleanStatus
+Method-returnType:Tuple<RemoveCorruptedShardDataCommand.CleanStatus,String>
+Method-parameters:[Directory indexDirectory, Lock writeLock, PrintStream printStream, boolean verbose]
+MethodInvocation:isCorruptMarkerFileIsPresent
+MethodInvocation:setChecksumsOnly
+MethodInvocation:setInfoStream
+MethodInvocation:checkIndex
+MethodInvocation:tuple
+MethodInvocation:tuple
+MethodInvocation:tuple
+Method-name:execute
+Method-returnType:void
+Method-parameters:[Terminal terminal, Directory indexDirectory, Lock writeLock, PrintStream printStream, boolean verbose]
+MethodInvocation:setChecksumsOnly
+MethodInvocation:setInfoStream
+MethodInvocation:checkIndex
+MethodInvocation:println
+MethodInvocation:exorciseIndex
+MethodInvocation:println
+MethodInvocation:println

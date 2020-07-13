@@ -1,0 +1,108 @@
+Class:OpActions
+Field:stack
+Field:memory
+Field:storage
+Method-name:addAction
+Method-returnType:Action
+Method-parameters:[List<Action> container, Action.Name name]
+MethodInvocation:setName
+MethodInvocation:add
+Method-name:getStack
+Method-returnType:List<Action>
+Method-parameters:[]
+Method-name:setStack
+Method-returnType:void
+Method-parameters:[List<Action> stack]
+FieldAccess:stack
+Method-name:getMemory
+Method-returnType:List<Action>
+Method-parameters:[]
+Method-name:setMemory
+Method-returnType:void
+Method-parameters:[List<Action> memory]
+FieldAccess:memory
+Method-name:getStorage
+Method-returnType:List<Action>
+Method-parameters:[]
+Method-name:setStorage
+Method-returnType:void
+Method-parameters:[List<Action> storage]
+FieldAccess:storage
+Method-name:addStackPop
+Method-returnType:Action
+Method-parameters:[]
+MethodInvocation:addAction
+Method-name:addStackPush
+Method-returnType:Action
+Method-parameters:[DataWord value]
+MethodInvocation:addParam
+MethodInvocation:addAction
+Method-name:addStackSwap
+Method-returnType:Action
+Method-parameters:[int from, int to]
+MethodInvocation:addParam
+MethodInvocation:addParam
+MethodInvocation:addAction
+Method-name:addMemoryExtend
+Method-returnType:Action
+Method-parameters:[long delta]
+MethodInvocation:addParam
+MethodInvocation:addAction
+Method-name:addMemoryWrite
+Method-returnType:Action
+Method-parameters:[int address, byte[] data, int size]
+MethodInvocation:addParam
+MethodInvocation:addParam
+MethodInvocation:addAction
+MethodInvocation:substring
+MethodInvocation:toHexString
+Method-name:addStoragePut
+Method-returnType:Action
+Method-parameters:[DataWord key, DataWord value]
+MethodInvocation:addParam
+MethodInvocation:addParam
+MethodInvocation:addAction
+Method-name:addStorageRemove
+Method-returnType:Action
+Method-parameters:[DataWord key]
+MethodInvocation:addParam
+MethodInvocation:addAction
+Method-name:addStorageClear
+Method-returnType:Action
+Method-parameters:[]
+MethodInvocation:addAction
+Method-name:addOp
+Method-returnType:Op
+Method-parameters:[byte code, int pc, int deep, DataWord energy, ProgramTrace programTrace]
+MethodInvocation:setActions
+MethodInvocation:setCode
+MethodInvocation:code
+MethodInvocation:setDeep
+MethodInvocation:setEnergy
+MethodInvocation:value
+MethodInvocation:setPc
+MethodInvocation:add
+MethodInvocation:getOps
+Class:Action
+Field:name
+Field:params
+Method-name:getName
+Method-returnType:Name
+Method-parameters:[]
+Method-name:setName
+Method-returnType:void
+Method-parameters:[Name name]
+FieldAccess:name
+Method-name:getParams
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+Method-name:setParams
+Method-returnType:void
+Method-parameters:[Map<String,Object> params]
+FieldAccess:params
+Method-name:addParam
+Method-returnType:Action
+Method-parameters:[String name, Object value]
+MethodInvocation:put
+MethodInvocation:toString
+Field:Name

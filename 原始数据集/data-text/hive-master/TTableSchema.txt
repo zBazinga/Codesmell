@@ -1,0 +1,233 @@
+Class:TTableSchema
+Field:STRUCT_DESC
+Field:COLUMNS_FIELD_DESC
+Field:schemes
+MethodInvocation:put
+MethodInvocation:put
+Field:columns
+Field:_Fields
+MethodInvocation:COLUMNS
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:TTableSchema
+Method-returnType:null
+Method-parameters:[]
+Method-name:TTableSchema
+Method-returnType:null
+Method-parameters:[List<TColumnDesc> columns]
+FieldAccess:columns
+Method-name:TTableSchema
+Method-returnType:null
+Method-parameters:[TTableSchema other]
+MethodInvocation:isSetColumns
+MethodInvocation:size
+MethodInvocation:add
+FieldAccess:columns
+Method-name:deepCopy
+Method-returnType:TTableSchema
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:columns
+Method-name:getColumnsSize
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:columns
+MethodInvocation:size
+FieldAccess:columns
+Method-name:getColumnsIterator
+Method-returnType:java.util.Iterator<TColumnDesc>
+Method-parameters:[]
+FieldAccess:columns
+MethodInvocation:iterator
+FieldAccess:columns
+Method-name:getColumns
+Method-returnType:List<TColumnDesc>
+Method-parameters:[]
+FieldAccess:columns
+Method-name:setColumns
+Method-returnType:void
+Method-parameters:[List<TColumnDesc> columns]
+FieldAccess:columns
+Method-name:unsetColumns
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:columns
+Method-name:isSetColumns
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:columns
+Method-name:setColumnsIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:columns
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, Object value]
+MethodInvocation:unsetColumns
+MethodInvocation:setColumns
+Method-name:getFieldValue
+Method-returnType:Object
+Method-parameters:[_Fields field]
+MethodInvocation:getColumns
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:isSetColumns
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[TTableSchema that]
+MethodInvocation:isSetColumns
+MethodInvocation:isSetColumns
+MethodInvocation:equals
+FieldAccess:columns
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSetColumns
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[TTableSchema other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetColumns
+MethodInvocation:isSetColumns
+MethodInvocation:isSetColumns
+MethodInvocation:compareTo
+FieldAccess:columns
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+FieldAccess:columns
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:columns
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isSetColumns
+MethodInvocation:toString
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:TTableSchemaStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:TTableSchemaStandardScheme
+Method-parameters:[]
+Class:TTableSchemaStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, TTableSchema struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readListBegin
+MethodInvocation:read
+MethodInvocation:add
+MethodInvocation:readListEnd
+MethodInvocation:setColumnsIsSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, TTableSchema struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeListBegin
+MethodInvocation:size
+MethodInvocation:write
+MethodInvocation:writeListEnd
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:TTableSchemaTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:TTableSchemaTupleScheme
+Method-parameters:[]
+Class:TTableSchemaTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, TTableSchema struct]
+MethodInvocation:writeI32
+MethodInvocation:size
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, TTableSchema struct]
+MethodInvocation:readI32
+MethodInvocation:read
+MethodInvocation:add
+MethodInvocation:setColumnsIsSet

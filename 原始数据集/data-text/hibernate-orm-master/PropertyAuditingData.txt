@@ -1,0 +1,187 @@
+Class:PropertyAuditingData
+Field:name
+Field:beanName
+Field:store
+Field:mapKey
+Field:mapKeyEnumType
+Field:joinTable
+Field:accessType
+Field:auditJoinTableOverrides
+Field:relationTargetAuditMode
+Field:auditMappedBy
+Field:relationMappedBy
+Field:positionMappedBy
+Field:forceInsertable
+Field:usingModifiedFlag
+Field:modifiedFlagName
+Field:explicitModifiedFlagName
+Field:value
+Field:syntheic
+Method-name:PropertyAuditingData
+Method-returnType:null
+Method-parameters:[]
+Method-name:PropertyAuditingData
+Method-returnType:null
+Method-parameters:[String name, String accessType, ModificationStore store, RelationTargetAuditMode relationTargetAuditMode, String auditMappedBy, String positionMappedBy, boolean forceInsertable]
+Method-name:PropertyAuditingData
+Method-returnType:null
+Method-parameters:[String name, String accessType, ModificationStore store, RelationTargetAuditMode relationTargetAuditMode, String auditMappedBy, String positionMappedBy, boolean forceInsertable, boolean syntheic, Value value]
+FieldAccess:name
+FieldAccess:beanName
+FieldAccess:accessType
+FieldAccess:store
+FieldAccess:relationTargetAuditMode
+FieldAccess:auditMappedBy
+FieldAccess:positionMappedBy
+FieldAccess:forceInsertable
+FieldAccess:syntheic
+FieldAccess:value
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setName
+Method-returnType:void
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:getBeanName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setBeanName
+Method-returnType:void
+Method-parameters:[String beanName]
+FieldAccess:beanName
+Method-name:getStore
+Method-returnType:ModificationStore
+Method-parameters:[]
+Method-name:setStore
+Method-returnType:void
+Method-parameters:[ModificationStore store]
+FieldAccess:store
+Method-name:getMapKey
+Method-returnType:String
+Method-parameters:[]
+Method-name:setMapKey
+Method-returnType:void
+Method-parameters:[String mapKey]
+FieldAccess:mapKey
+Method-name:getMapKeyEnumType
+Method-returnType:EnumType
+Method-parameters:[]
+Method-name:setMapKeyEnumType
+Method-returnType:void
+Method-parameters:[EnumType mapKeyEnumType]
+FieldAccess:mapKeyEnumType
+Method-name:getJoinTable
+Method-returnType:AuditJoinTable
+Method-parameters:[]
+Method-name:setJoinTable
+Method-returnType:void
+Method-parameters:[AuditJoinTable joinTable]
+FieldAccess:joinTable
+Method-name:getAccessType
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAccessType
+Method-returnType:void
+Method-parameters:[String accessType]
+FieldAccess:accessType
+Method-name:getPropertyData
+Method-returnType:PropertyData
+Method-parameters:[]
+MethodInvocation:resolvePropertyData
+Method-name:resolvePropertyData
+Method-returnType:PropertyData
+Method-parameters:[Type propertyType]
+Method-name:resolvePropertyData
+Method-returnType:PropertyData
+Method-parameters:[Type propertyType, Type virtualType]
+MethodInvocation:getReturnedClass
+Method-name:getAuditingOverrides
+Method-returnType:List<AuditOverride>
+Method-parameters:[]
+Method-name:getAuditMappedBy
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAuditMappedBy
+Method-returnType:void
+Method-parameters:[String auditMappedBy]
+FieldAccess:auditMappedBy
+Method-name:getRelationMappedBy
+Method-returnType:String
+Method-parameters:[]
+Method-name:setRelationMappedBy
+Method-returnType:void
+Method-parameters:[String relationMappedBy]
+FieldAccess:relationMappedBy
+Method-name:getPositionMappedBy
+Method-returnType:String
+Method-parameters:[]
+Method-name:setPositionMappedBy
+Method-returnType:void
+Method-parameters:[String positionMappedBy]
+FieldAccess:positionMappedBy
+Method-name:isForceInsertable
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setForceInsertable
+Method-returnType:void
+Method-parameters:[boolean forceInsertable]
+FieldAccess:forceInsertable
+Method-name:isUsingModifiedFlag
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setUsingModifiedFlag
+Method-returnType:void
+Method-parameters:[boolean usingModifiedFlag]
+FieldAccess:usingModifiedFlag
+Method-name:getModifiedFlagName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setModifiedFlagName
+Method-returnType:void
+Method-parameters:[String modifiedFlagName]
+FieldAccess:modifiedFlagName
+Method-name:isModifiedFlagNameExplicitlySpecified
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getExplicitModifiedFlagName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setExplicitModifiedFlagName
+Method-returnType:void
+Method-parameters:[String modifiedFlagName]
+FieldAccess:explicitModifiedFlagName
+Method-name:addAuditingOverride
+Method-returnType:void
+Method-parameters:[AuditOverride annotation]
+MethodInvocation:name
+MethodInvocation:equals
+MethodInvocation:name
+MethodInvocation:add
+Method-name:addAuditingOverrides
+Method-returnType:void
+Method-parameters:[AuditOverrides annotationOverrides]
+MethodInvocation:value
+MethodInvocation:addAuditingOverride
+Method-name:getRelationTargetAuditMode
+Method-returnType:RelationTargetAuditMode
+Method-parameters:[]
+Method-name:setRelationTargetAuditMode
+Method-returnType:void
+Method-parameters:[RelationTargetAuditMode relationTargetAuditMode]
+FieldAccess:relationTargetAuditMode
+Method-name:isSyntheic
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getValue
+Method-returnType:Value
+Method-parameters:[]
+Method-name:setPropertyRelationMappedBy
+Method-returnType:void
+Method-parameters:[XProperty property, AuditedPropertiesReader auditedPropertiesReader]
+MethodInvocation:getAnnotation
+MethodInvocation:equals
+MethodInvocation:mappedBy
+MethodInvocation:setRelationMappedBy
+MethodInvocation:mappedBy

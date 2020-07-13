@@ -1,0 +1,53 @@
+Class:ClientCommandHookFactory
+Field:instance
+Method-name:ClientCommandHookFactory
+Method-returnType:null
+Method-parameters:[]
+Method-name:get
+Method-returnType:ClientCommandHookFactory
+Method-parameters:[]
+Class:SetCommandHook
+Method-name:SetCommandHook
+Method-returnType:null
+Method-parameters:[String sql]
+Method-name:postHook
+Method-returnType:void
+Method-parameters:[BeeLine beeLine]
+MethodInvocation:isBeeLine
+MethodInvocation:setHiveConf
+MethodInvocation:getOpts
+MethodInvocation:getHiveConf
+MethodInvocation:getCommands
+Class:UseCommandHook
+Method-name:UseCommandHook
+Method-returnType:null
+Method-parameters:[String sql]
+Method-name:postHook
+Method-returnType:void
+Method-parameters:[BeeLine beeLine]
+MethodInvocation:replaceAll
+MethodInvocation:split
+MethodInvocation:setCurrentDatabase
+Class:ConnectCommandHook
+Method-name:ConnectCommandHook
+Method-returnType:null
+Method-parameters:[String sql]
+Method-name:postHook
+Method-returnType:void
+Method-parameters:[BeeLine beeLine]
+MethodInvocation:replaceAll
+MethodInvocation:split
+MethodInvocation:getDbName
+MethodInvocation:parseURL
+MethodInvocation:setCurrentDatabase
+Class:GoCommandHook
+Method-name:GoCommandHook
+Method-returnType:null
+Method-parameters:[String sql]
+Method-name:postHook
+Method-returnType:void
+Method-parameters:[BeeLine beeLine]
+MethodInvocation:getSchema
+MethodInvocation:getConnection
+MethodInvocation:getDatabaseConnection
+MethodInvocation:setCurrentDatabase

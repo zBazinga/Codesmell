@@ -1,0 +1,118 @@
+Class:Reporter
+Field:SHOW_ONCE_TAG
+Field:eventHandlers
+Field:outErrToReporter
+MethodInvocation:outErrForReporter
+Field:eventsShown
+Field:eventBus
+Field:outputFilter
+Field:ansiAllowingHandler
+Field:ansiStrippingHandler
+Field:ansiAllowingHandlerRegistered
+Method-name:Reporter
+Method-returnType:null
+Method-parameters:[EventBus eventBus]
+FieldAccess:eventBus
+Method-name:Reporter
+Method-returnType:null
+Method-parameters:[Reporter template]
+MethodInvocation:addAll
+FieldAccess:eventBus
+Method-name:Reporter
+Method-returnType:null
+Method-parameters:[EventBus eventBus, EventHandler... handlers]
+FieldAccess:eventBus
+MethodInvocation:addHandler
+Method-name:outErrForReporter
+Method-returnType:OutErr
+Method-parameters:[EventHandler rep]
+MethodInvocation:create
+Method-name:getOutErr
+Method-returnType:OutErr
+Method-parameters:[]
+Method-name:addHandler
+Method-returnType:void
+Method-parameters:[EventHandler handler]
+MethodInvocation:checkNotNull
+MethodInvocation:add
+Method-name:removeHandler
+Method-returnType:void
+Method-parameters:[EventHandler handler]
+MethodInvocation:checkNotNull
+MethodInvocation:remove
+Method-name:handle
+Method-returnType:void
+Method-parameters:[Event e]
+MethodInvocation:getKind
+MethodInvocation:getKind
+MethodInvocation:getTag
+MethodInvocation:equals
+MethodInvocation:getTag
+MethodInvocation:showOutput
+MethodInvocation:getTag
+MethodInvocation:equals
+MethodInvocation:getTag
+MethodInvocation:contains
+MethodInvocation:toString
+MethodInvocation:add
+MethodInvocation:toString
+MethodInvocation:handle
+Method-name:post
+Method-returnType:void
+Method-parameters:[ExtendedEventHandler.Postable obj]
+MethodInvocation:post
+MethodInvocation:post
+Method-name:clearEventBus
+Method-returnType:void
+Method-parameters:[]
+Method-name:startTask
+Method-returnType:void
+Method-parameters:[Location location, String message]
+MethodInvocation:handle
+MethodInvocation:of
+Method-name:finishTask
+Method-returnType:void
+Method-parameters:[Location location, String message]
+MethodInvocation:handle
+MethodInvocation:of
+Method-name:error
+Method-returnType:void
+Method-parameters:[Location location, String message, Throwable error]
+MethodInvocation:handle
+MethodInvocation:error
+MethodInvocation:printStackTrace
+MethodInvocation:getErrorStream
+MethodInvocation:getOutErr
+Method-name:showOutput
+Method-returnType:boolean
+Method-parameters:[String tag]
+MethodInvocation:showOutput
+Method-name:setOutputFilter
+Method-returnType:void
+Method-parameters:[OutputFilter outputFilter]
+FieldAccess:outputFilter
+Method-name:registerAnsiAllowingHandler
+Method-returnType:void
+Method-parameters:[EventHandler ansiStrippingHandler, EventHandler ansiAllowingHandler]
+FieldAccess:ansiAllowingHandler
+FieldAccess:ansiStrippingHandler
+Method-name:switchToAnsiAllowingHandler
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:removeHandler
+MethodInvocation:addHandler
+Method-name:checkClientServerCompatibility
+Method-returnType:void
+Method-parameters:[ServerCapabilities capabilities, RemoteOptions remoteOptions, DigestFunction.Value digestFunction, RemoteModule remoteModule]
+MethodInvocation:checkClientServerCompatibility
+MethodInvocation:getWarnings
+MethodInvocation:handle
+MethodInvocation:warn
+MethodInvocation:getErrors
+MethodInvocation:size
+MethodInvocation:handle
+MethodInvocation:error
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:get
+MethodInvocation:size

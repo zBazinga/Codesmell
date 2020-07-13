@@ -1,0 +1,102 @@
+Class:Word07Writer
+Field:doc
+Field:destFile
+Field:isClosed
+Method-name:Word07Writer
+Method-returnType:null
+Method-parameters:[]
+Method-name:Word07Writer
+Method-returnType:null
+Method-parameters:[File destFile]
+MethodInvocation:create
+Method-name:Word07Writer
+Method-returnType:null
+Method-parameters:[XWPFDocument doc]
+Method-name:Word07Writer
+Method-returnType:null
+Method-parameters:[XWPFDocument doc, File destFile]
+FieldAccess:doc
+FieldAccess:destFile
+Method-name:getDoc
+Method-returnType:XWPFDocument
+Method-parameters:[]
+FieldAccess:doc
+Method-name:setDestFile
+Method-returnType:Word07Writer
+Method-parameters:[File destFile]
+FieldAccess:destFile
+Method-name:addText
+Method-returnType:Word07Writer
+Method-parameters:[Font font, String... texts]
+MethodInvocation:addText
+Method-name:addText
+Method-returnType:Word07Writer
+Method-parameters:[ParagraphAlignment align, Font font, String... texts]
+MethodInvocation:createParagraph
+FieldAccess:doc
+MethodInvocation:setAlignment
+MethodInvocation:isNotEmpty
+MethodInvocation:createRun
+MethodInvocation:setText
+MethodInvocation:setFontFamily
+MethodInvocation:getFamily
+MethodInvocation:setFontSize
+MethodInvocation:getSize
+MethodInvocation:setBold
+MethodInvocation:isBold
+MethodInvocation:setItalic
+MethodInvocation:isItalic
+Method-name:addTable
+Method-returnType:Word07Writer
+Method-parameters:[Iterable<?> data]
+MethodInvocation:createTable
+FieldAccess:doc
+Method-name:addPicture
+Method-returnType:Word07Writer
+Method-parameters:[File picFile, int width, int height]
+MethodInvocation:getName
+MethodInvocation:toUpperCase
+MethodInvocation:extName
+MethodInvocation:valueOf
+MethodInvocation:addPicture
+MethodInvocation:getInputStream
+Method-name:addPicture
+Method-returnType:Word07Writer
+Method-parameters:[InputStream in, PicType picType, String fileName, int width, int height]
+MethodInvocation:addPicture
+Method-name:flush
+Method-returnType:Word07Writer
+Method-parameters:[]
+MethodInvocation:flush
+FieldAccess:destFile
+Method-name:flush
+Method-returnType:Word07Writer
+Method-parameters:[File destFile]
+MethodInvocation:notNull
+MethodInvocation:flush
+MethodInvocation:getOutputStream
+Method-name:flush
+Method-returnType:Word07Writer
+Method-parameters:[OutputStream out]
+MethodInvocation:flush
+Method-name:flush
+Method-returnType:Word07Writer
+Method-parameters:[OutputStream out, boolean isCloseOut]
+MethodInvocation:isFalse
+FieldAccess:isClosed
+MethodInvocation:write
+FieldAccess:doc
+MethodInvocation:flush
+MethodInvocation:close
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:destFile
+MethodInvocation:flush
+MethodInvocation:closeWithoutFlush
+Method-name:closeWithoutFlush
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+FieldAccess:doc
+FieldAccess:isClosed

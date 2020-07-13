@@ -1,0 +1,82 @@
+Class:PhiInsn
+Field:blockBinds
+Method-name:PhiInsn
+Method-returnType:null
+Method-parameters:[int regNum, int predecessors]
+MethodInvocation:setResult
+MethodInvocation:reg
+MethodInvocation:add
+MethodInvocation:add
+Method-name:PhiInsn
+Method-returnType:null
+Method-parameters:[int argsCount]
+FieldAccess:blockBinds
+Method-name:bindArg
+Method-returnType:RegisterArg
+Method-parameters:[BlockNode pred]
+MethodInvocation:reg
+MethodInvocation:getRegNum
+MethodInvocation:getResult
+MethodInvocation:getInitType
+MethodInvocation:getResult
+MethodInvocation:bindArg
+Method-name:bindArg
+Method-returnType:void
+Method-parameters:[RegisterArg arg, BlockNode pred]
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:getBlockByArg
+Method-returnType:BlockNode
+Method-parameters:[RegisterArg arg]
+MethodInvocation:getArgIndex
+MethodInvocation:get
+Method-name:getBlockByArgIndex
+Method-returnType:BlockNode
+Method-parameters:[int argIndex]
+MethodInvocation:get
+Method-name:getArg
+Method-returnType:RegisterArg
+Method-parameters:[int n]
+Method-name:removeArg
+Method-returnType:boolean
+Method-parameters:[InsnArg arg]
+MethodInvocation:getArgIndex
+MethodInvocation:removeArg
+Method-name:removeArg
+Method-returnType:RegisterArg
+Method-parameters:[int index]
+MethodInvocation:remove
+MethodInvocation:updateUsedInPhiList
+MethodInvocation:getSVar
+Method-name:getArgBySsaVar
+Method-returnType:RegisterArg
+Method-parameters:[SSAVar ssaVar]
+MethodInvocation:getArgsCount
+MethodInvocation:getArguments
+MethodInvocation:getSVar
+Method-name:replaceArg
+Method-returnType:boolean
+Method-parameters:[InsnArg from, InsnArg to]
+MethodInvocation:getArgIndex
+MethodInvocation:getBlockByArgIndex
+MethodInvocation:removeArg
+MethodInvocation:bindArg
+MethodInvocation:addUsedInPhi
+MethodInvocation:getSVar
+Method-name:addArg
+Method-returnType:void
+Method-parameters:[InsnArg arg]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int n, InsnArg arg]
+Method-name:copy
+Method-returnType:InsnNode
+Method-parameters:[]
+MethodInvocation:copyCommonParams
+MethodInvocation:getArgsCount
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getResult
+MethodInvocation:listToString
+MethodInvocation:getArguments

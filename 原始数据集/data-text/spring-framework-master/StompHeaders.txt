@@ -1,0 +1,308 @@
+Class:StompHeaders
+Field:serialVersionUID
+Field:CONTENT_TYPE
+Field:CONTENT_LENGTH
+Field:RECEIPT
+Field:HOST
+Field:ACCEPT_VERSION
+Field:LOGIN
+Field:PASSCODE
+Field:HEARTBEAT
+Field:SESSION
+Field:SERVER
+Field:DESTINATION
+Field:ID
+Field:ACK
+Field:SUBSCRIPTION
+Field:MESSAGE_ID
+Field:RECEIPT_ID
+Field:headers
+Method-name:StompHeaders
+Method-returnType:null
+Method-parameters:[]
+Method-name:StompHeaders
+Method-returnType:null
+Method-parameters:[Map<String,List<String>> headers, boolean readOnly]
+MethodInvocation:notNull
+MethodInvocation:size
+MethodInvocation:forEach
+MethodInvocation:put
+MethodInvocation:unmodifiableList
+FieldAccess:headers
+MethodInvocation:unmodifiableMap
+FieldAccess:headers
+Method-name:setContentType
+Method-returnType:void
+Method-parameters:[@Nullable MimeType mimeType]
+MethodInvocation:isTrue
+MethodInvocation:isWildcardType
+MethodInvocation:isTrue
+MethodInvocation:isWildcardSubtype
+MethodInvocation:set
+MethodInvocation:toString
+MethodInvocation:set
+Method-name:getContentType
+Method-returnType:MimeType
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:hasLength
+MethodInvocation:parseMimeType
+Method-name:setContentLength
+Method-returnType:void
+Method-parameters:[long contentLength]
+MethodInvocation:set
+MethodInvocation:toString
+Method-name:getContentLength
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:parseLong
+Method-name:setReceipt
+Method-returnType:void
+Method-parameters:[@Nullable String receipt]
+MethodInvocation:set
+Method-name:getReceipt
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setHost
+Method-returnType:void
+Method-parameters:[@Nullable String host]
+MethodInvocation:set
+Method-name:getHost
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setAcceptVersion
+Method-returnType:void
+Method-parameters:[@Nullable String... acceptVersions]
+MethodInvocation:isEmpty
+MethodInvocation:set
+MethodInvocation:forEach
+MethodInvocation:stream
+MethodInvocation:isTrue
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:set
+MethodInvocation:arrayToCommaDelimitedString
+Method-name:getAcceptVersion
+Method-returnType:String[]
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:commaDelimitedListToStringArray
+Method-name:setLogin
+Method-returnType:void
+Method-parameters:[@Nullable String login]
+MethodInvocation:set
+Method-name:getLogin
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setPasscode
+Method-returnType:void
+Method-parameters:[@Nullable String passcode]
+MethodInvocation:set
+Method-name:getPasscode
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setHeartbeat
+Method-returnType:void
+Method-parameters:[@Nullable long[] heartbeat]
+MethodInvocation:set
+Method-name:getHeartbeat
+Method-returnType:long[]
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:split
+MethodInvocation:parseLong
+MethodInvocation:parseLong
+Method-name:isHeartbeatEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getHeartbeat
+Method-name:setSession
+Method-returnType:void
+Method-parameters:[@Nullable String session]
+MethodInvocation:set
+Method-name:getSession
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setServer
+Method-returnType:void
+Method-parameters:[@Nullable String server]
+MethodInvocation:set
+Method-name:getServer
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setDestination
+Method-returnType:void
+Method-parameters:[@Nullable String destination]
+MethodInvocation:set
+Method-name:getDestination
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setId
+Method-returnType:void
+Method-parameters:[@Nullable String id]
+MethodInvocation:set
+Method-name:getId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setAck
+Method-returnType:void
+Method-parameters:[@Nullable String ack]
+MethodInvocation:set
+Method-name:getAck
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setSubscription
+Method-returnType:void
+Method-parameters:[@Nullable String subscription]
+MethodInvocation:set
+Method-name:getSubscription
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setMessageId
+Method-returnType:void
+Method-parameters:[@Nullable String messageId]
+MethodInvocation:set
+Method-name:getMessageId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setReceiptId
+Method-returnType:void
+Method-parameters:[@Nullable String receiptId]
+MethodInvocation:set
+Method-name:getReceiptId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:getFirst
+Method-returnType:String
+Method-parameters:[String headerName]
+MethodInvocation:get
+FieldAccess:headers
+MethodInvocation:get
+Method-name:add
+Method-returnType:void
+Method-parameters:[String headerName, @Nullable String headerValue]
+MethodInvocation:computeIfAbsent
+FieldAccess:headers
+MethodInvocation:add
+Method-name:addAll
+Method-returnType:void
+Method-parameters:[String headerName, List<? extends String> headerValues]
+MethodInvocation:computeIfAbsent
+FieldAccess:headers
+MethodInvocation:addAll
+Method-name:addAll
+Method-returnType:void
+Method-parameters:[MultiValueMap<String,String> values]
+MethodInvocation:forEach
+Method-name:set
+Method-returnType:void
+Method-parameters:[String headerName, @Nullable String headerValue]
+MethodInvocation:add
+MethodInvocation:put
+FieldAccess:headers
+Method-name:setAll
+Method-returnType:void
+Method-parameters:[Map<String,String> values]
+MethodInvocation:forEach
+Method-name:toSingleValueMap
+Method-returnType:Map<String,String>
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:headers
+MethodInvocation:forEach
+FieldAccess:headers
+MethodInvocation:put
+MethodInvocation:get
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:headers
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+FieldAccess:headers
+Method-name:containsKey
+Method-returnType:boolean
+Method-parameters:[Object key]
+MethodInvocation:containsKey
+FieldAccess:headers
+Method-name:containsValue
+Method-returnType:boolean
+Method-parameters:[Object value]
+MethodInvocation:containsValue
+FieldAccess:headers
+Method-name:get
+Method-returnType:List<String>
+Method-parameters:[Object key]
+MethodInvocation:get
+FieldAccess:headers
+Method-name:put
+Method-returnType:List<String>
+Method-parameters:[String key, List<String> value]
+MethodInvocation:put
+FieldAccess:headers
+Method-name:remove
+Method-returnType:List<String>
+Method-parameters:[Object key]
+MethodInvocation:remove
+FieldAccess:headers
+Method-name:putAll
+Method-returnType:void
+Method-parameters:[Map<? extends String,? extends List<String>> map]
+MethodInvocation:putAll
+FieldAccess:headers
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+FieldAccess:headers
+Method-name:keySet
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+FieldAccess:headers
+Method-name:values
+Method-returnType:Collection<List<String>>
+Method-parameters:[]
+MethodInvocation:values
+FieldAccess:headers
+Method-name:entrySet
+Method-returnType:Set<Entry<String,List<String>>>
+Method-parameters:[]
+MethodInvocation:entrySet
+FieldAccess:headers
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object other]
+MethodInvocation:equals
+FieldAccess:headers
+FieldAccess:headers
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+FieldAccess:headers
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+FieldAccess:headers
+Method-name:readOnlyStompHeaders
+Method-returnType:StompHeaders
+Method-parameters:[@Nullable Map<String,List<String>> headers]
+MethodInvocation:emptyMap

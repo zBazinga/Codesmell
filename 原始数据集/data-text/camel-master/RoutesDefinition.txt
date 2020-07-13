@@ -1,0 +1,151 @@
+Class:RoutesDefinition
+Field:routes
+Field:intercepts
+Field:interceptFroms
+Field:interceptSendTos
+Field:onExceptions
+Field:onCompletions
+Field:camelContext
+Field:errorHandlerFactory
+Method-name:RoutesDefinition
+Method-returnType:null
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getShortName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getLabel
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getId
+Method-name:getRoutes
+Method-returnType:List<RouteDefinition>
+Method-parameters:[]
+Method-name:setRoutes
+Method-returnType:void
+Method-parameters:[List<RouteDefinition> routes]
+FieldAccess:routes
+Method-name:getInterceptFroms
+Method-returnType:List<InterceptFromDefinition>
+Method-parameters:[]
+Method-name:setInterceptFroms
+Method-returnType:void
+Method-parameters:[List<InterceptFromDefinition> interceptFroms]
+FieldAccess:interceptFroms
+Method-name:getInterceptSendTos
+Method-returnType:List<InterceptSendToEndpointDefinition>
+Method-parameters:[]
+Method-name:setInterceptSendTos
+Method-returnType:void
+Method-parameters:[List<InterceptSendToEndpointDefinition> interceptSendTos]
+FieldAccess:interceptSendTos
+Method-name:getIntercepts
+Method-returnType:List<InterceptDefinition>
+Method-parameters:[]
+Method-name:setIntercepts
+Method-returnType:void
+Method-parameters:[List<InterceptDefinition> intercepts]
+FieldAccess:intercepts
+Method-name:getOnExceptions
+Method-returnType:List<OnExceptionDefinition>
+Method-parameters:[]
+Method-name:setOnExceptions
+Method-returnType:void
+Method-parameters:[List<OnExceptionDefinition> onExceptions]
+FieldAccess:onExceptions
+Method-name:getOnCompletions
+Method-returnType:List<OnCompletionDefinition>
+Method-parameters:[]
+Method-name:setOnCompletions
+Method-returnType:void
+Method-parameters:[List<OnCompletionDefinition> onCompletions]
+FieldAccess:onCompletions
+Method-name:getCamelContext
+Method-returnType:CamelContext
+Method-parameters:[]
+Method-name:setCamelContext
+Method-returnType:void
+Method-parameters:[CamelContext camelContext]
+FieldAccess:camelContext
+Method-name:getErrorHandlerFactory
+Method-returnType:ErrorHandlerFactory
+Method-parameters:[]
+Method-name:setErrorHandlerFactory
+Method-returnType:void
+Method-parameters:[ErrorHandlerFactory errorHandlerFactory]
+FieldAccess:errorHandlerFactory
+Method-name:route
+Method-returnType:RouteDefinition
+Method-parameters:[]
+MethodInvocation:createRoute
+MethodInvocation:route
+Method-name:from
+Method-returnType:RouteDefinition
+Method-parameters:[@AsEndpointUri String uri]
+MethodInvocation:createRoute
+MethodInvocation:from
+MethodInvocation:route
+Method-name:from
+Method-returnType:RouteDefinition
+Method-parameters:[Endpoint endpoint]
+MethodInvocation:createRoute
+MethodInvocation:from
+MethodInvocation:route
+Method-name:from
+Method-returnType:RouteDefinition
+Method-parameters:[EndpointConsumerBuilder endpoint]
+MethodInvocation:createRoute
+MethodInvocation:from
+MethodInvocation:route
+Method-name:route
+Method-returnType:RouteDefinition
+Method-parameters:[RouteDefinition route]
+MethodInvocation:prepareRoute
+MethodInvocation:getCamelContext
+MethodInvocation:getOnExceptions
+MethodInvocation:getIntercepts
+MethodInvocation:getInterceptFroms
+MethodInvocation:getInterceptSendTos
+MethodInvocation:getOnCompletions
+MethodInvocation:add
+MethodInvocation:getRoutes
+MethodInvocation:markPrepared
+Method-name:intercept
+Method-returnType:InterceptDefinition
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getIntercepts
+Method-name:interceptFrom
+Method-returnType:InterceptFromDefinition
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getInterceptFroms
+Method-name:interceptFrom
+Method-returnType:InterceptFromDefinition
+Method-parameters:[@AsEndpointUri final String uri]
+MethodInvocation:add
+MethodInvocation:getInterceptFroms
+Method-name:interceptSendToEndpoint
+Method-returnType:InterceptSendToEndpointDefinition
+Method-parameters:[@AsEndpointUri final String uri]
+MethodInvocation:add
+MethodInvocation:getInterceptSendTos
+Method-name:onException
+Method-returnType:OnExceptionDefinition
+Method-parameters:[Class<? extends Throwable> exception]
+MethodInvocation:setRouteScoped
+MethodInvocation:add
+MethodInvocation:getOnExceptions
+Method-name:onCompletion
+Method-returnType:OnCompletionDefinition
+Method-parameters:[]
+MethodInvocation:setRouteScoped
+MethodInvocation:add
+MethodInvocation:getOnCompletions
+Method-name:createRoute
+Method-returnType:RouteDefinition
+Method-parameters:[]
+MethodInvocation:getErrorHandlerFactory
+MethodInvocation:setErrorHandlerFactoryIfNull

@@ -1,0 +1,443 @@
+Class:QBParseInfo
+Field:isSubQ
+Field:alias
+Field:joinExpr
+Field:hints
+Field:hintList
+Field:aliasToSrc
+Field:nameToDest
+Field:nameToDestSchema
+Field:nameToSample
+Field:exprToColumnAlias
+Field:destToSelExpr
+Field:destToWhereExpr
+Field:destToGroupby
+Field:destRollups
+Field:destCubes
+Field:destGroupingSets
+Field:destToHaving
+Field:destToOpType
+Field:insertIntoTables
+Field:insertOverwriteTables
+Field:queryFromExpr
+Field:isAnalyzeCommand
+Field:isNoScanAnalyzeCommand
+Field:tableSpecs
+Field:analyzeRewrite
+Field:destToClusterby
+Field:destToDistributeby
+Field:destToSortby
+Field:aliasToLateralViews
+Field:destToLateralView
+Field:destToOrderby
+Field:destToLimit
+Field:outerQueryLimit
+Field:destToAggregationExprs
+Field:destToDistinctFuncExprs
+Field:destToWindowingExprs
+Field:LOG
+MethodInvocation:getLogger
+MethodInvocation:getName
+Method-name:QBParseInfo
+Method-returnType:null
+Method-parameters:[String alias, boolean isSubQ]
+FieldAccess:alias
+MethodInvocation:internIfNotNull
+FieldAccess:isSubQ
+Method-name:clearAggregationExprsForClause
+Method-returnType:void
+Method-parameters:[String clause]
+MethodInvocation:clear
+MethodInvocation:get
+Method-name:setAggregationExprsForClause
+Method-returnType:void
+Method-parameters:[String clause, Map<String,ASTNode> aggregationTrees]
+MethodInvocation:put
+Method-name:addAggregationExprsForClause
+Method-returnType:void
+Method-parameters:[String clause, Map<String,ASTNode> aggregationTrees]
+MethodInvocation:containsKey
+MethodInvocation:putAll
+MethodInvocation:get
+MethodInvocation:put
+Method-name:addInsertIntoTable
+Method-returnType:void
+Method-parameters:[String fullName, ASTNode ast]
+MethodInvocation:put
+MethodInvocation:toLowerCase
+Method-name:setDestToOpType
+Method-returnType:void
+Method-parameters:[String clause, boolean value]
+MethodInvocation:put
+Method-name:isDestToOpTypeInsertOverwrite
+Method-returnType:boolean
+Method-parameters:[String clause]
+MethodInvocation:containsKey
+MethodInvocation:get
+Method-name:isInsertIntoTable
+Method-returnType:boolean
+Method-parameters:[String dbName, String table]
+MethodInvocation:containsKey
+MethodInvocation:toLowerCase
+Method-name:isInsertIntoTable
+Method-returnType:boolean
+Method-parameters:[String fullTableName]
+MethodInvocation:containsKey
+MethodInvocation:toLowerCase
+Method-name:getAggregationExprsForClause
+Method-returnType:Map<String,ASTNode>
+Method-parameters:[String clause]
+MethodInvocation:get
+Method-name:addWindowingExprToClause
+Method-returnType:void
+Method-parameters:[String clause, ASTNode windowingExprNode]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:toStringTree
+Method-name:getWindowingExprsForClause
+Method-returnType:Map<String,ASTNode>
+Method-parameters:[String clause]
+MethodInvocation:get
+Method-name:clearDistinctFuncExprsForClause
+Method-returnType:void
+Method-parameters:[String clause]
+MethodInvocation:get
+MethodInvocation:clear
+Method-name:setDistinctFuncExprsForClause
+Method-returnType:void
+Method-parameters:[String clause, List<ASTNode> ast]
+MethodInvocation:put
+Method-name:getDistinctFuncExprsForClause
+Method-returnType:List<ASTNode>
+Method-parameters:[String clause]
+MethodInvocation:get
+Method-name:setSelExprForClause
+Method-returnType:void
+Method-parameters:[String clause, ASTNode ast]
+MethodInvocation:put
+Method-name:setQueryFromExpr
+Method-returnType:void
+Method-parameters:[ASTNode ast]
+Method-name:setWhrExprForClause
+Method-returnType:void
+Method-parameters:[String clause, ASTNode ast]
+MethodInvocation:put
+Method-name:setHavingExprForClause
+Method-returnType:void
+Method-parameters:[String clause, ASTNode ast]
+MethodInvocation:put
+Method-name:setGroupByExprForClause
+Method-returnType:void
+Method-parameters:[String clause, ASTNode ast]
+MethodInvocation:put
+Method-name:setDestForClause
+Method-returnType:void
+Method-parameters:[String clause, ASTNode ast]
+MethodInvocation:put
+Method-name:setDestSchemaForClause
+Method-returnType:List<String>
+Method-parameters:[String clause, List<String> columnList]
+MethodInvocation:put
+Method-name:getDestSchemaForClause
+Method-returnType:List<String>
+Method-parameters:[String clause]
+MethodInvocation:get
+Method-name:setClusterByExprForClause
+Method-returnType:void
+Method-parameters:[String clause, ASTNode ast]
+MethodInvocation:put
+Method-name:setDistributeByExprForClause
+Method-returnType:void
+Method-parameters:[String clause, ASTNode ast]
+MethodInvocation:put
+Method-name:setSortByExprForClause
+Method-returnType:void
+Method-parameters:[String clause, ASTNode ast]
+MethodInvocation:put
+Method-name:setOrderByExprForClause
+Method-returnType:void
+Method-parameters:[String clause, ASTNode ast]
+MethodInvocation:put
+Method-name:setSrcForAlias
+Method-returnType:void
+Method-parameters:[String alias, ASTNode ast]
+MethodInvocation:put
+MethodInvocation:toLowerCase
+Method-name:getClauseNames
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getClauseNamesForDest
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getDestForClause
+Method-returnType:ASTNode
+Method-parameters:[String clause]
+MethodInvocation:get
+Method-name:getWhrForClause
+Method-returnType:ASTNode
+Method-parameters:[String clause]
+MethodInvocation:get
+Method-name:getDestToWhereExpr
+Method-returnType:Map<String,ASTNode>
+Method-parameters:[]
+Method-name:getGroupByForClause
+Method-returnType:ASTNode
+Method-parameters:[String clause]
+MethodInvocation:get
+Method-name:getDestRollups
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:getDestCubes
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:getDestGroupingSets
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:getDestToGroupBy
+Method-returnType:Map<String,ASTNode>
+Method-parameters:[]
+Method-name:getHavingForClause
+Method-returnType:ASTNode
+Method-parameters:[String clause]
+MethodInvocation:get
+Method-name:getDestToHaving
+Method-returnType:Map<String,ASTNode>
+Method-parameters:[]
+Method-name:getSelForClause
+Method-returnType:ASTNode
+Method-parameters:[String clause]
+MethodInvocation:get
+Method-name:getQueryFrom
+Method-returnType:ASTNode
+Method-parameters:[]
+Method-name:getClusterByForClause
+Method-returnType:ASTNode
+Method-parameters:[String clause]
+MethodInvocation:get
+Method-name:getDestToClusterBy
+Method-returnType:Map<String,ASTNode>
+Method-parameters:[]
+Method-name:getDistributeByForClause
+Method-returnType:ASTNode
+Method-parameters:[String clause]
+MethodInvocation:get
+Method-name:getDestToDistributeBy
+Method-returnType:Map<String,ASTNode>
+Method-parameters:[]
+Method-name:getSortByForClause
+Method-returnType:ASTNode
+Method-parameters:[String clause]
+MethodInvocation:get
+Method-name:getOrderByForClause
+Method-returnType:ASTNode
+Method-parameters:[String clause]
+MethodInvocation:get
+Method-name:getDestToSortBy
+Method-returnType:Map<String,ASTNode>
+Method-parameters:[]
+Method-name:getDestToOrderBy
+Method-returnType:Map<String,ASTNode>
+Method-parameters:[]
+Method-name:getSrcForAlias
+Method-returnType:ASTNode
+Method-parameters:[String alias]
+MethodInvocation:get
+MethodInvocation:toLowerCase
+Method-name:getAlias
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAlias
+Method-returnType:void
+Method-parameters:[String alias]
+FieldAccess:alias
+Method-name:getIsSubQ
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIsSubQ
+Method-returnType:void
+Method-parameters:[boolean isSubQ]
+FieldAccess:isSubQ
+Method-name:getJoinExpr
+Method-returnType:ASTNode
+Method-parameters:[]
+Method-name:setJoinExpr
+Method-returnType:void
+Method-parameters:[ASTNode joinExpr]
+FieldAccess:joinExpr
+Method-name:getTabSample
+Method-returnType:TableSample
+Method-parameters:[String alias]
+MethodInvocation:get
+MethodInvocation:toLowerCase
+Method-name:setTabSample
+Method-returnType:void
+Method-parameters:[String alias, TableSample tableSample]
+MethodInvocation:put
+MethodInvocation:toLowerCase
+Method-name:getExprToColumnAlias
+Method-returnType:String
+Method-parameters:[ASTNode expr]
+MethodInvocation:get
+Method-name:getAllExprToColumnAlias
+Method-returnType:Map<ASTNode,String>
+Method-parameters:[]
+Method-name:hasExprToColumnAlias
+Method-returnType:boolean
+Method-parameters:[ASTNode expr]
+MethodInvocation:containsKey
+Method-name:setExprToColumnAlias
+Method-returnType:void
+Method-parameters:[ASTNode expr, String alias]
+MethodInvocation:put
+MethodInvocation:internIfNotNull
+Method-name:setDestLimit
+Method-returnType:void
+Method-parameters:[String dest, Integer offset, Integer limit]
+MethodInvocation:put
+Method-name:getDestLimit
+Method-returnType:Integer
+Method-parameters:[String dest]
+MethodInvocation:get
+MethodInvocation:getValue
+MethodInvocation:get
+Method-name:getDestLimitOffset
+Method-returnType:Integer
+Method-parameters:[String dest]
+MethodInvocation:get
+MethodInvocation:getKey
+MethodInvocation:get
+Method-name:getOuterQueryLimit
+Method-returnType:int
+Method-parameters:[]
+Method-name:setOuterQueryLimit
+Method-returnType:void
+Method-parameters:[int outerQueryLimit]
+FieldAccess:outerQueryLimit
+Method-name:isTopLevelSimpleSelectStarQuery
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:isSimpleSelectQuery
+MethodInvocation:values
+MethodInvocation:getChildCount
+MethodInvocation:getChild
+MethodInvocation:getChild
+MethodInvocation:getType
+Method-name:isSimpleSelectQuery
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:values
+MethodInvocation:isEmpty
+MethodInvocation:values
+MethodInvocation:isEmpty
+MethodInvocation:values
+MethodInvocation:isEmpty
+MethodInvocation:values
+MethodInvocation:getType
+MethodInvocation:getChild
+Method-name:setHints
+Method-returnType:void
+Method-parameters:[ASTNode hint]
+Method-name:setHintList
+Method-returnType:void
+Method-parameters:[List<ASTNode> hintList]
+FieldAccess:hintList
+Method-name:getHintList
+Method-returnType:List<ASTNode>
+Method-parameters:[]
+Method-name:getHints
+Method-returnType:ASTNode
+Method-parameters:[]
+Method-name:getAliasToLateralViews
+Method-returnType:Map<String,List<ASTNode>>
+Method-parameters:[]
+Method-name:getLateralViewsForAlias
+Method-returnType:List<ASTNode>
+Method-parameters:[String alias]
+MethodInvocation:get
+MethodInvocation:toLowerCase
+Method-name:addLateralViewForAlias
+Method-returnType:void
+Method-parameters:[String alias, ASTNode lateralView]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:add
+Method-name:setIsAnalyzeCommand
+Method-returnType:void
+Method-parameters:[boolean isAnalyzeCommand]
+FieldAccess:isAnalyzeCommand
+Method-name:isAnalyzeCommand
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:addTableSpec
+Method-returnType:void
+Method-parameters:[String tName, TableSpec tSpec]
+MethodInvocation:put
+Method-name:getTableSpec
+Method-returnType:TableSpec
+Method-parameters:[String tName]
+MethodInvocation:get
+Method-name:getTableSpec
+Method-returnType:TableSpec
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:keySet
+MethodInvocation:get
+MethodInvocation:next
+Method-name:getDestToLimit
+Method-returnType:Map<String,SimpleEntry<Integer,Integer>>
+Method-parameters:[]
+Method-name:getDestToAggregationExprs
+Method-returnType:Map<String,Map<String,ASTNode>>
+Method-parameters:[]
+Method-name:getDestToDistinctFuncExprs
+Method-returnType:Map<String,List<ASTNode>>
+Method-parameters:[]
+Method-name:getNameToSample
+Method-returnType:Map<String,TableSample>
+Method-parameters:[]
+Method-name:getDestToLateralView
+Method-returnType:Map<String,ASTNode>
+Method-parameters:[]
+Method-name:isInsertInto
+Method-returnType:boolean
+Method-parameters:[String dest, SemanticAnalyzer semanticAnalyzer]
+MethodInvocation:getDestForClause
+MethodInvocation:getType
+Field:ClauseType
+Method-name:getAnalyzeRewrite
+Method-returnType:AnalyzeRewriteContext
+Method-parameters:[]
+Method-name:setAnalyzeRewrite
+Method-returnType:void
+Method-parameters:[AnalyzeRewriteContext analyzeRewrite]
+FieldAccess:analyzeRewrite
+Method-name:isNoScanAnalyzeCommand
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setNoScanAnalyzeCommand
+Method-returnType:void
+Method-parameters:[boolean isNoScanAnalyzeCommand]
+FieldAccess:isNoScanAnalyzeCommand
+Method-name:getInsertOverwriteTables
+Method-returnType:Map<String,ASTNode>
+Method-parameters:[]
+Method-name:hasInsertTables
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:insertIntoTables
+MethodInvocation:size
+FieldAccess:insertOverwriteTables

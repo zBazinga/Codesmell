@@ -1,0 +1,99 @@
+Class:SourceConfig
+Field:QUERY
+Field:INDEX
+Field:STRICT_PARSER
+MethodInvocation:createParser
+Field:LENIENT_PARSER
+MethodInvocation:createParser
+Method-name:createParser
+Method-returnType:ConstructingObjectParser<SourceConfig,Void>
+Method-parameters:[boolean lenient]
+MethodInvocation:toArray
+MethodInvocation:matchAll
+MethodInvocation:declareStringArray
+MethodInvocation:constructorArg
+MethodInvocation:declareObject
+MethodInvocation:optionalConstructorArg
+MethodInvocation:fromXContent
+Field:index
+Field:queryConfig
+Method-name:SourceConfig
+Method-returnType:null
+Method-parameters:[String... index]
+MethodInvocation:matchAll
+Method-name:SourceConfig
+Method-returnType:null
+Method-parameters:[String[] index, QueryConfig queryConfig]
+MethodInvocation:requireNonNull
+MethodInvocation:getPreferredName
+MethodInvocation:anyMatch
+MethodInvocation:stream
+FieldAccess:index
+FieldAccess:queryConfig
+MethodInvocation:requireNonNull
+MethodInvocation:getPreferredName
+Method-name:SourceConfig
+Method-returnType:null
+Method-parameters:[final StreamInput in]
+MethodInvocation:readStringArray
+Method-name:getIndex
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:getQueryConfig
+Method-returnType:QueryConfig
+Method-parameters:[]
+Method-name:isValid
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isValid
+Method-name:requiresRemoteCluster
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeStringArray
+MethodInvocation:writeTo
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startObject
+MethodInvocation:array
+MethodInvocation:getPreferredName
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:endObject
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:fromXContent
+Method-returnType:SourceConfig
+Method-parameters:[final XContentParser parser, boolean lenient]
+MethodInvocation:apply
+MethodInvocation:apply
+Method-name:validateQuery
+Method-returnType:void
+Method-parameters:[Client client, final ActionListener<Boolean> listener, Pivot pivot]
+MethodInvocation:buildSearchRequest
+MethodInvocation:execute
+MethodInvocation:wrap
+MethodInvocation:onFailure
+MethodInvocation:status
+MethodInvocation:onFailure
+MethodInvocation:status
+MethodInvocation:status
+MethodInvocation:onResponse
+MethodInvocation:unwrapCause
+MethodInvocation:status
+MethodInvocation:onFailure

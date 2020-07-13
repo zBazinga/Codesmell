@@ -1,0 +1,348 @@
+Class:BasicPanel
+Field:PAGE_PAINTING_CLEARANCE_WIDTH
+Field:PAGE_PAINTING_CLEARANCE_HEIGHT
+Field:explicitlyOpaque
+Field:mouseTracker
+Field:centeredPagedView
+Field:formSubmissionListener
+Method-name:BasicPanel
+Method-returnType:null
+Method-parameters:[]
+Method-name:BasicPanel
+Method-returnType:null
+Method-parameters:[UserAgentCallback uac]
+Method-name:submit
+Method-returnType:void
+Method-parameters:[String query]
+MethodInvocation:println
+MethodInvocation:println
+MethodInvocation:showMessageDialog
+MethodInvocation:setFormSubmissionListener
+MethodInvocation:init
+Method-name:paintComponent
+Method-returnType:void
+Method-parameters:[Graphics g]
+MethodInvocation:paintDefaultBackground
+MethodInvocation:getRootLayer
+MethodInvocation:isNeedRelayout
+MethodInvocation:create
+MethodInvocation:doDocumentLayout
+MethodInvocation:dispose
+MethodInvocation:getRootLayer
+MethodInvocation:setNeedRelayout
+MethodInvocation:render
+MethodInvocation:create
+MethodInvocation:newRenderingContext
+MethodInvocation:currentTimeMillis
+MethodInvocation:doRender
+MethodInvocation:currentTimeMillis
+MethodInvocation:render
+MethodInvocation:dispose
+Method-name:doRender
+Method-returnType:void
+Method-parameters:[RenderingContext c, Layer root]
+MethodInvocation:getGraphics
+MethodInvocation:getOutputDevice
+MethodInvocation:paintDefaultBackground
+MethodInvocation:getEnclosingScrollPane
+MethodInvocation:getInsets
+MethodInvocation:translate
+MethodInvocation:currentTimeMillis
+MethodInvocation:isPrint
+MethodInvocation:paint
+MethodInvocation:paintPagedView
+MethodInvocation:currentTimeMillis
+MethodInvocation:isTrue
+MethodInvocation:p
+MethodInvocation:hasDocumentListeners
+MethodInvocation:fireOnRenderException
+MethodInvocation:exception
+MethodInvocation:getMessage
+Method-name:paintDefaultBackground
+Method-returnType:void
+Method-parameters:[Graphics g]
+MethodInvocation:setColor
+MethodInvocation:getBackground
+MethodInvocation:fillRect
+MethodInvocation:getWidth
+MethodInvocation:getHeight
+Method-name:paintPagedView
+Method-returnType:void
+Method-parameters:[RenderingContext c, Layer root]
+MethodInvocation:getLastPage
+MethodInvocation:isCenteredPagedView
+MethodInvocation:calcCenteredPageLeftOffset
+MethodInvocation:getMaxPageWidth
+MethodInvocation:assignPagePaintingPositions
+MethodInvocation:setPreferredSize
+MethodInvocation:getMaxPageWidth
+MethodInvocation:getPaintingBottom
+MethodInvocation:getLastPage
+MethodInvocation:revalidate
+MethodInvocation:getGraphics
+MethodInvocation:getOutputDevice
+MethodInvocation:getClip
+MethodInvocation:getPages
+MethodInvocation:setPageCount
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:setPage
+MethodInvocation:setClip
+MethodInvocation:getScreenPaintingBounds
+MethodInvocation:intersects
+MethodInvocation:paintBackground
+MethodInvocation:paintMarginAreas
+MethodInvocation:paintBorder
+MethodInvocation:getColor
+MethodInvocation:setColor
+MethodInvocation:drawRect
+MethodInvocation:setColor
+MethodInvocation:getPagedViewClippingBounds
+MethodInvocation:clip
+MethodInvocation:getMarginBorderPadding
+MethodInvocation:getPaintingTop
+MethodInvocation:getMarginBorderPadding
+MethodInvocation:getTop
+MethodInvocation:translate
+MethodInvocation:paint
+MethodInvocation:translate
+MethodInvocation:setClip
+MethodInvocation:setClip
+Method-name:calcCenteredPageLeftOffset
+Method-returnType:int
+Method-parameters:[int maxPageWidth]
+MethodInvocation:getWidth
+Method-name:paintPage
+Method-returnType:void
+Method-parameters:[Graphics2D g, int pageNo]
+MethodInvocation:getRootLayer
+MethodInvocation:size
+MethodInvocation:getPages
+MethodInvocation:size
+MethodInvocation:getPages
+MethodInvocation:newRenderingContext
+MethodInvocation:get
+MethodInvocation:getPages
+MethodInvocation:setPageCount
+MethodInvocation:size
+MethodInvocation:getPages
+MethodInvocation:setPage
+MethodInvocation:paintBackground
+MethodInvocation:paintMarginAreas
+MethodInvocation:paintBorder
+MethodInvocation:getClip
+MethodInvocation:getPrintClippingBounds
+MethodInvocation:clip
+MethodInvocation:getPaintingTop
+MethodInvocation:getMarginBorderPadding
+MethodInvocation:getMarginBorderPadding
+MethodInvocation:translate
+MethodInvocation:paint
+MethodInvocation:translate
+MethodInvocation:setClip
+Method-name:assignPagePrintPositions
+Method-returnType:void
+Method-parameters:[Graphics2D g]
+MethodInvocation:newRenderingContext
+MethodInvocation:assignPagePaintingPositions
+MethodInvocation:getRootLayer
+Method-name:printTree
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:printTree
+MethodInvocation:getRootBox
+Method-name:printTree
+Method-returnType:void
+Method-parameters:[Box box, String tab]
+MethodInvocation:layout
+MethodInvocation:getChildIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:printTree
+Method-name:setLayout
+Method-returnType:void
+Method-parameters:[LayoutManager l]
+Method-name:setSharedContext
+Method-returnType:void
+Method-parameters:[SharedContext ctx]
+FieldAccess:sharedContext
+Method-name:setSize
+Method-returnType:void
+Method-parameters:[Dimension d]
+MethodInvocation:layout
+Method-name:setDocument
+Method-returnType:void
+Method-parameters:[InputStream stream, String url, NamespaceHandler nsh]
+MethodInvocation:getDocument
+MethodInvocation:load
+MethodInvocation:setDocument
+Method-name:setDocumentFromString
+Method-returnType:void
+Method-parameters:[String content, String url, NamespaceHandler nsh]
+MethodInvocation:getDocument
+MethodInvocation:load
+MethodInvocation:setDocument
+Method-name:setDocument
+Method-returnType:void
+Method-parameters:[Document doc, String url]
+MethodInvocation:setDocument
+Method-name:setDocument
+Method-returnType:void
+Method-parameters:[String url]
+MethodInvocation:setDocument
+MethodInvocation:loadDocument
+Method-name:setDocument
+Method-returnType:void
+Method-parameters:[String url, NamespaceHandler nsh]
+MethodInvocation:setDocument
+MethodInvocation:loadDocument
+Method-name:setDocument
+Method-returnType:void
+Method-parameters:[InputStream stream, String url]
+MethodInvocation:setDocument
+Method-name:setDocumentRelative
+Method-returnType:void
+Method-parameters:[String filename]
+MethodInvocation:resolveURI
+MethodInvocation:getUac
+MethodInvocation:getSharedContext
+MethodInvocation:isAnchorInCurrentDocument
+MethodInvocation:getAnchorId
+MethodInvocation:getBoxById
+MethodInvocation:getSharedContext
+MethodInvocation:isInline
+MethodInvocation:getStyle
+MethodInvocation:getAbsX
+MethodInvocation:getAbsY
+MethodInvocation:getMargin
+MethodInvocation:getLayoutContext
+MethodInvocation:getAbsX
+MethodInvocation:left
+MethodInvocation:getAbsY
+MethodInvocation:top
+MethodInvocation:scrollTo
+MethodInvocation:loadDocument
+MethodInvocation:setDocument
+Method-name:reloadDocument
+Method-returnType:void
+Method-parameters:[String URI]
+MethodInvocation:reloadDocument
+MethodInvocation:loadDocument
+Method-name:reloadDocument
+Method-returnType:void
+Method-parameters:[Document doc]
+FieldAccess:doc
+MethodInvocation:render
+FieldAccess:doc
+MethodInvocation:setDocument
+FieldAccess:doc
+MethodInvocation:getBaseURL
+MethodInvocation:getSharedContext
+MethodInvocation:getNamespaceHandler
+MethodInvocation:getSharedContext
+Method-name:getURL
+Method-returnType:URL
+Method-parameters:[]
+MethodInvocation:getBaseURL
+MethodInvocation:getUac
+MethodInvocation:getSharedContext
+MethodInvocation:printStackTrace
+Method-name:getDocument
+Method-returnType:Document
+Method-parameters:[]
+Method-name:getDocumentTitle
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getDocumentTitle
+MethodInvocation:getNamespaceHandler
+MethodInvocation:getSharedContext
+Method-name:loadDocument
+Method-returnType:Document
+Method-parameters:[final String uri]
+MethodInvocation:getXMLResource
+MethodInvocation:getUac
+MethodInvocation:getDocument
+Method-name:isOpaque
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:checkOpacityMethodClient
+Method-name:setOpaque
+Method-returnType:void
+Method-parameters:[boolean opaque]
+MethodInvocation:checkOpacityMethodClient
+Method-name:checkOpacityMethodClient
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getStackTrace
+MethodInvocation:getClassName
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:getSharedContext
+Method-returnType:SharedContext
+Method-parameters:[]
+Method-name:isAnchorInCurrentDocument
+Method-returnType:boolean
+Method-parameters:[String str]
+MethodInvocation:charAt
+Method-name:getAnchorId
+Method-returnType:String
+Method-parameters:[String url]
+MethodInvocation:substring
+MethodInvocation:length
+Method-name:scrollTo
+Method-returnType:void
+Method-parameters:[Point pt]
+MethodInvocation:getEnclosingScrollPane
+MethodInvocation:getVerticalScrollBar
+MethodInvocation:setValue
+Method-name:isInteractive
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isInteractive
+MethodInvocation:getSharedContext
+Method-name:setInteractive
+Method-returnType:void
+Method-parameters:[boolean interactive]
+MethodInvocation:setInteractive
+MethodInvocation:getSharedContext
+Method-name:addMouseTrackingListener
+Method-returnType:void
+Method-parameters:[FSMouseListener l]
+MethodInvocation:addListener
+Method-name:removeMouseTrackingListener
+Method-returnType:void
+Method-parameters:[FSMouseListener l]
+MethodInvocation:removeListener
+Method-name:getMouseTrackingListeners
+Method-returnType:List
+Method-parameters:[]
+MethodInvocation:getListeners
+Method-name:resetMouseTracker
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:reset
+Method-name:isCenteredPagedView
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setCenteredPagedView
+Method-returnType:void
+Method-parameters:[boolean centeredPagedView]
+FieldAccess:centeredPagedView
+Method-name:submit
+Method-returnType:void
+Method-parameters:[String url]
+MethodInvocation:submit
+Method-name:setFormSubmissionListener
+Method-returnType:void
+Method-parameters:[FormSubmissionListener fsl]
+FieldAccess:formSubmissionListener
+MethodInvocation:setFormSubmissionListener
+Method-name:findLink
+Method-returnType:String
+Method-parameters:[Element e, LinkListener linkListener]
+MethodInvocation:getNodeType
+MethodInvocation:getParentNode
+MethodInvocation:getLinkUri
+MethodInvocation:getNamespaceHandler
+MethodInvocation:getSharedContext

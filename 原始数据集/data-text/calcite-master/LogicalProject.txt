@@ -1,0 +1,74 @@
+Class:LogicalProject
+Method-name:LogicalProject
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, List<RelHint> hints, RelNode input, List<? extends RexNode> projects, RelDataType rowType]
+Method-name:LogicalProject
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode input, List<? extends RexNode> projects, RelDataType rowType]
+MethodInvocation:of
+Method-name:LogicalProject
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode input, List<? extends RexNode> projects, RelDataType rowType, int flags]
+MethodInvocation:of
+MethodInvocation:discard
+Method-name:LogicalProject
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelNode input, List<RexNode> projects, List<String> fieldNames, int flags]
+MethodInvocation:traitSetOf
+MethodInvocation:of
+MethodInvocation:createStructType
+MethodInvocation:getTypeFactory
+MethodInvocation:discard
+Method-name:LogicalProject
+Method-returnType:null
+Method-parameters:[RelInput input]
+Method-name:create
+Method-returnType:LogicalProject
+Method-parameters:[final RelNode input, List<RelHint> hints, final List<? extends RexNode> projects, List<String> fieldNames]
+MethodInvocation:getCluster
+MethodInvocation:createStructType
+MethodInvocation:getTypeFactory
+MethodInvocation:create
+Method-name:create
+Method-returnType:LogicalProject
+Method-parameters:[final RelNode input, List<RelHint> hints, final List<? extends RexNode> projects, RelDataType rowType]
+MethodInvocation:getCluster
+MethodInvocation:getMetadataQuery
+MethodInvocation:replaceIfs
+MethodInvocation:replace
+MethodInvocation:traitSet
+MethodInvocation:project
+Method-name:copy
+Method-returnType:LogicalProject
+Method-parameters:[RelTraitSet traitSet, RelNode input, List<RexNode> projects, RelDataType rowType]
+MethodInvocation:getCluster
+Method-name:accept
+Method-returnType:RelNode
+Method-parameters:[RelShuttle shuttle]
+MethodInvocation:visit
+Method-name:withHints
+Method-returnType:RelNode
+Method-parameters:[List<RelHint> hintList]
+MethodInvocation:getCluster
+MethodInvocation:getProjects
+Method-name:findReference
+Method-returnType:ImmutableBitSet
+Method-parameters:[final LogicalWindow window, ProjectWindowTransposeRule projectWindowTransposeRule]
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getInput
+MethodInvocation:builder
+Method-name:visitInputRef
+Method-returnType:RexNode
+Method-parameters:[RexInputRef inputRef]
+MethodInvocation:getIndex
+MethodInvocation:set
+MethodInvocation:getChildExps
+MethodInvocation:accept
+MethodInvocation:set
+MethodInvocation:getFieldCollations
+MethodInvocation:getFieldIndex
+MethodInvocation:set
+MethodInvocation:getFieldIndex
+MethodInvocation:accept
+MethodInvocation:build

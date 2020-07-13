@@ -1,0 +1,39 @@
+Class:MutableTypeConstraint
+Field:type
+Field:inUse
+Method-name:setType
+Method-returnType:void
+Method-parameters:[ConstraintType type]
+FieldAccess:type
+Method-name:getType
+Method-returnType:ConstraintType
+Method-parameters:[]
+FieldAccess:type
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readObject
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+Method-name:clone
+Method-returnType:MutableTypeConstraint
+Method-parameters:[]
+Method-name:cloneIfInUse
+Method-returnType:MutableTypeConstraint
+Method-parameters:[]
+MethodInvocation:compareAndSet
+MethodInvocation:clone
+MethodInvocation:set
+Method-name:setInUse
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getAndSet
+Method-name:setConstraintType
+Method-returnType:void
+Method-parameters:[Pattern pattern]
+MethodInvocation:getRequiredDeclarations
+MethodInvocation:isGlobal
+MethodInvocation:getPattern
+MethodInvocation:setType

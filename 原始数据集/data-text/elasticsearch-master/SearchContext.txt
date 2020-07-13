@@ -1,0 +1,396 @@
+Class:SearchContext
+Field:DEFAULT_TERMINATE_AFTER
+Field:TRACK_TOTAL_HITS_ACCURATE
+Field:TRACK_TOTAL_HITS_DISABLED
+Field:DEFAULT_TRACK_TOTAL_HITS_UP_TO
+Field:clearables
+Field:closed
+Field:innerHitsContext
+Method-name:SearchContext
+Method-returnType:null
+Method-parameters:[]
+Method-name:setTask
+Method-returnType:void
+Method-parameters:[SearchShardTask task]
+Method-name:getTask
+Method-returnType:SearchShardTask
+Method-parameters:[]
+Method-name:isCancelled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:compareAndSet
+MethodInvocation:decRef
+Method-name:closeInternal
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clearReleasables
+MethodInvocation:doClose
+Method-name:alreadyClosed
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:refCount
+Method-name:doClose
+Method-returnType:void
+Method-parameters:[]
+Method-name:preProcess
+Method-returnType:void
+Method-parameters:[boolean rewrite]
+Method-name:buildFilteredQuery
+Method-returnType:Query
+Method-parameters:[Query query]
+Method-name:id
+Method-returnType:SearchContextId
+Method-parameters:[]
+Method-name:source
+Method-returnType:String
+Method-parameters:[]
+Method-name:request
+Method-returnType:ShardSearchRequest
+Method-parameters:[]
+Method-name:searchType
+Method-returnType:SearchType
+Method-parameters:[]
+Method-name:shardTarget
+Method-returnType:SearchShardTarget
+Method-parameters:[]
+Method-name:numberOfShards
+Method-returnType:int
+Method-parameters:[]
+Method-name:queryBoost
+Method-returnType:float
+Method-parameters:[]
+Method-name:getOriginNanoTime
+Method-returnType:long
+Method-parameters:[]
+Method-name:scrollContext
+Method-returnType:ScrollContext
+Method-parameters:[]
+Method-name:scrollContext
+Method-returnType:SearchContext
+Method-parameters:[ScrollContext scroll]
+Method-name:aggregations
+Method-returnType:SearchContextAggregations
+Method-parameters:[]
+Method-name:aggregations
+Method-returnType:SearchContext
+Method-parameters:[SearchContextAggregations aggregations]
+Method-name:addSearchExt
+Method-returnType:void
+Method-parameters:[SearchExtBuilder searchExtBuilder]
+Method-name:getSearchExt
+Method-returnType:SearchExtBuilder
+Method-parameters:[String name]
+Method-name:highlight
+Method-returnType:SearchContextHighlight
+Method-parameters:[]
+Method-name:highlight
+Method-returnType:void
+Method-parameters:[SearchContextHighlight highlight]
+Method-name:innerHits
+Method-returnType:InnerHitsContext
+Method-parameters:[]
+Method-name:suggest
+Method-returnType:SuggestionSearchContext
+Method-parameters:[]
+Method-name:suggest
+Method-returnType:void
+Method-parameters:[SuggestionSearchContext suggest]
+Method-name:rescore
+Method-returnType:List<RescoreContext>
+Method-parameters:[]
+Method-name:addRescore
+Method-returnType:void
+Method-parameters:[RescoreContext rescore]
+Method-name:hasScriptFields
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:scriptFields
+Method-returnType:ScriptFieldsContext
+Method-parameters:[]
+Method-name:sourceRequested
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:hasFetchSourceContext
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:fetchSourceContext
+Method-returnType:FetchSourceContext
+Method-parameters:[]
+Method-name:fetchSourceContext
+Method-returnType:SearchContext
+Method-parameters:[FetchSourceContext fetchSourceContext]
+Method-name:docValuesContext
+Method-returnType:FetchDocValuesContext
+Method-parameters:[]
+Method-name:docValuesContext
+Method-returnType:SearchContext
+Method-parameters:[FetchDocValuesContext docValuesContext]
+Method-name:searcher
+Method-returnType:ContextIndexSearcher
+Method-parameters:[]
+Method-name:indexShard
+Method-returnType:IndexShard
+Method-parameters:[]
+Method-name:mapperService
+Method-returnType:MapperService
+Method-parameters:[]
+Method-name:similarityService
+Method-returnType:SimilarityService
+Method-parameters:[]
+Method-name:bigArrays
+Method-returnType:BigArrays
+Method-parameters:[]
+Method-name:bitsetFilterCache
+Method-returnType:BitsetFilterCache
+Method-parameters:[]
+Method-name:getForField
+Method-returnType:IFD
+Method-parameters:[MappedFieldType fieldType]
+Method-name:timeout
+Method-returnType:TimeValue
+Method-parameters:[]
+Method-name:timeout
+Method-returnType:void
+Method-parameters:[TimeValue timeout]
+Method-name:terminateAfter
+Method-returnType:int
+Method-parameters:[]
+Method-name:terminateAfter
+Method-returnType:void
+Method-parameters:[int terminateAfter]
+Method-name:lowLevelCancellation
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:minimumScore
+Method-returnType:SearchContext
+Method-parameters:[float minimumScore]
+Method-name:minimumScore
+Method-returnType:Float
+Method-parameters:[]
+Method-name:sort
+Method-returnType:SearchContext
+Method-parameters:[SortAndFormats sort]
+Method-name:sort
+Method-returnType:SortAndFormats
+Method-parameters:[]
+Method-name:trackScores
+Method-returnType:SearchContext
+Method-parameters:[boolean trackScores]
+Method-name:trackScores
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:trackTotalHitsUpTo
+Method-returnType:SearchContext
+Method-parameters:[int trackTotalHits]
+Method-name:trackTotalHitsUpTo
+Method-returnType:int
+Method-parameters:[]
+Method-name:searchAfter
+Method-returnType:SearchContext
+Method-parameters:[FieldDoc searchAfter]
+Method-name:searchAfter
+Method-returnType:FieldDoc
+Method-parameters:[]
+Method-name:collapse
+Method-returnType:SearchContext
+Method-parameters:[CollapseContext collapse]
+Method-name:collapse
+Method-returnType:CollapseContext
+Method-parameters:[]
+Method-name:parsedPostFilter
+Method-returnType:SearchContext
+Method-parameters:[ParsedQuery postFilter]
+Method-name:parsedPostFilter
+Method-returnType:ParsedQuery
+Method-parameters:[]
+Method-name:aliasFilter
+Method-returnType:Query
+Method-parameters:[]
+Method-name:parsedQuery
+Method-returnType:SearchContext
+Method-parameters:[ParsedQuery query]
+Method-name:parsedQuery
+Method-returnType:ParsedQuery
+Method-parameters:[]
+Method-name:query
+Method-returnType:Query
+Method-parameters:[]
+Method-name:from
+Method-returnType:int
+Method-parameters:[]
+Method-name:from
+Method-returnType:SearchContext
+Method-parameters:[int from]
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+Method-name:size
+Method-returnType:SearchContext
+Method-parameters:[int size]
+Method-name:hasStoredFields
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:hasStoredFieldsContext
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:storedFieldsRequested
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:storedFieldsContext
+Method-returnType:StoredFieldsContext
+Method-parameters:[]
+Method-name:storedFieldsContext
+Method-returnType:SearchContext
+Method-parameters:[StoredFieldsContext storedFieldsContext]
+Method-name:explain
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:explain
+Method-returnType:void
+Method-parameters:[boolean explain]
+Method-name:groupStats
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:groupStats
+Method-returnType:void
+Method-parameters:[List<String> groupStats]
+Method-name:version
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:version
+Method-returnType:void
+Method-parameters:[boolean version]
+Method-name:seqNoAndPrimaryTerm
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:seqNoAndPrimaryTerm
+Method-returnType:void
+Method-parameters:[boolean seqNoAndPrimaryTerm]
+Method-name:docIdsToLoad
+Method-returnType:int[]
+Method-parameters:[]
+Method-name:docIdsToLoadFrom
+Method-returnType:int
+Method-parameters:[]
+Method-name:docIdsToLoadSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:docIdsToLoad
+Method-returnType:SearchContext
+Method-parameters:[int[] docIdsToLoad, int docsIdsToLoadFrom, int docsIdsToLoadSize]
+Method-name:accessed
+Method-returnType:void
+Method-parameters:[long accessTime]
+Method-name:lastAccessTime
+Method-returnType:long
+Method-parameters:[]
+Method-name:keepAlive
+Method-returnType:long
+Method-parameters:[]
+Method-name:keepAlive
+Method-returnType:void
+Method-parameters:[long keepAlive]
+Method-name:lookup
+Method-returnType:SearchLookup
+Method-parameters:[]
+MethodInvocation:lookup
+MethodInvocation:getQueryShardContext
+Method-name:dfsResult
+Method-returnType:DfsSearchResult
+Method-parameters:[]
+Method-name:queryResult
+Method-returnType:QuerySearchResult
+Method-parameters:[]
+Method-name:fetchPhase
+Method-returnType:FetchPhase
+Method-parameters:[]
+Method-name:fetchResult
+Method-returnType:FetchSearchResult
+Method-parameters:[]
+Method-name:getProfilers
+Method-returnType:Profilers
+Method-parameters:[]
+Method-name:addReleasable
+Method-returnType:void
+Method-parameters:[Releasable releasable, Lifetime lifetime]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:add
+Method-name:clearReleasables
+Method-returnType:void
+Method-parameters:[Lifetime lifetime]
+MethodInvocation:values
+MethodInvocation:compareTo
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:close
+MethodInvocation:flatten
+Method-name:hasOnlySuggest
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:source
+MethodInvocation:request
+MethodInvocation:isSuggestOnly
+MethodInvocation:source
+MethodInvocation:request
+Method-name:smartNameFieldType
+Method-returnType:MappedFieldType
+Method-parameters:[String name]
+Method-name:getObjectMapper
+Method-returnType:ObjectMapper
+Method-parameters:[String name]
+Method-name:getRelativeTimeInMillis
+Method-returnType:long
+Method-parameters:[]
+Method-name:queryCollectors
+Method-returnType:Map<Class<?>,Collector>
+Method-parameters:[]
+Method-name:findNestedObjectMapper
+Method-returnType:ObjectMapper
+Method-parameters:[int nestedDocId, LeafReaderContext context, DocumentMapper documentMapper]
+MethodInvocation:values
+MethodInvocation:objectMappers
+MethodInvocation:isNested
+MethodInvocation:nested
+MethodInvocation:nestedTypeFilter
+MethodInvocation:createWeight
+MethodInvocation:searcher
+MethodInvocation:scorer
+MethodInvocation:advance
+MethodInvocation:iterator
+MethodInvocation:length
+MethodInvocation:fullPath
+MethodInvocation:length
+MethodInvocation:fullPath
+Field:Lifetime
+Method-name:getQueryShardContext
+Method-returnType:QueryShardContext
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:shardTarget
+MethodInvocation:searchType
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:searchType
+MethodInvocation:scrollContext
+FieldAccess:scroll
+MethodInvocation:scrollContext
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:keepAlive
+FieldAccess:scroll
+MethodInvocation:scrollContext
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:query
+MethodInvocation:toString

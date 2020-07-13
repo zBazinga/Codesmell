@@ -1,0 +1,79 @@
+Class:OpenSessionInViewInterceptor
+Field:PARTICIPATE_SUFFIX
+Field:logger
+MethodInvocation:getLog
+MethodInvocation:getClass
+Field:sessionFactory
+Method-name:setSessionFactory
+Method-returnType:void
+Method-parameters:[@Nullable SessionFactory sessionFactory]
+FieldAccess:sessionFactory
+Method-name:getSessionFactory
+Method-returnType:SessionFactory
+Method-parameters:[]
+FieldAccess:sessionFactory
+Method-name:obtainSessionFactory
+Method-returnType:SessionFactory
+Method-parameters:[]
+MethodInvocation:getSessionFactory
+MethodInvocation:state
+Method-name:preHandle
+Method-returnType:void
+Method-parameters:[WebRequest request]
+MethodInvocation:getParticipateAttributeName
+MethodInvocation:getAsyncManager
+MethodInvocation:hasConcurrentResult
+MethodInvocation:applySessionBindingInterceptor
+MethodInvocation:hasResource
+MethodInvocation:obtainSessionFactory
+MethodInvocation:getAttribute
+MethodInvocation:setAttribute
+MethodInvocation:getParticipateAttributeName
+MethodInvocation:debug
+MethodInvocation:openSession
+MethodInvocation:bindResource
+MethodInvocation:obtainSessionFactory
+MethodInvocation:obtainSessionFactory
+MethodInvocation:registerCallableInterceptor
+MethodInvocation:registerDeferredResultInterceptor
+Method-name:postHandle
+Method-returnType:void
+Method-parameters:[WebRequest request, @Nullable ModelMap model]
+Method-name:afterCompletion
+Method-returnType:void
+Method-parameters:[WebRequest request, @Nullable Exception ex]
+MethodInvocation:decrementParticipateCount
+MethodInvocation:unbindResource
+MethodInvocation:obtainSessionFactory
+MethodInvocation:debug
+MethodInvocation:closeSession
+MethodInvocation:getSession
+Method-name:decrementParticipateCount
+Method-returnType:boolean
+Method-parameters:[WebRequest request]
+MethodInvocation:getParticipateAttributeName
+MethodInvocation:getAttribute
+MethodInvocation:setAttribute
+MethodInvocation:removeAttribute
+Method-name:afterConcurrentHandlingStarted
+Method-returnType:void
+Method-parameters:[WebRequest request]
+MethodInvocation:decrementParticipateCount
+MethodInvocation:unbindResource
+MethodInvocation:obtainSessionFactory
+Method-name:openSession
+Method-returnType:Session
+Method-parameters:[]
+MethodInvocation:openSession
+MethodInvocation:obtainSessionFactory
+MethodInvocation:setFlushMode
+Method-name:getParticipateAttributeName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+MethodInvocation:obtainSessionFactory
+Method-name:applySessionBindingInterceptor
+Method-returnType:boolean
+Method-parameters:[WebAsyncManager asyncManager, String key]
+MethodInvocation:getCallableInterceptor
+MethodInvocation:bindSession

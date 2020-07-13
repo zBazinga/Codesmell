@@ -1,0 +1,59 @@
+Class:RolloverRequest
+Field:alias
+Field:newIndexName
+Field:dryRun
+Field:conditions
+Field:createIndexRequest
+Method-name:RolloverRequest
+Method-returnType:null
+Method-parameters:[String alias, String newIndexName]
+FieldAccess:alias
+FieldAccess:newIndexName
+Method-name:getAlias
+Method-returnType:String
+Method-parameters:[]
+Method-name:getNewIndexName
+Method-returnType:String
+Method-parameters:[]
+Method-name:dryRun
+Method-returnType:RolloverRequest
+Method-parameters:[boolean dryRun]
+FieldAccess:dryRun
+Method-name:isDryRun
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:addMaxIndexDocsCondition
+Method-returnType:RolloverRequest
+Method-parameters:[long numDocs]
+MethodInvocation:containsKey
+FieldAccess:conditions
+MethodInvocation:name
+MethodInvocation:name
+MethodInvocation:put
+FieldAccess:conditions
+MethodInvocation:name
+Method-name:addMaxIndexSizeCondition
+Method-returnType:RolloverRequest
+Method-parameters:[ByteSizeValue size]
+MethodInvocation:containsKey
+FieldAccess:conditions
+MethodInvocation:name
+MethodInvocation:put
+FieldAccess:conditions
+MethodInvocation:name
+Method-name:getConditions
+Method-returnType:Map<String,Condition<?>>
+Method-parameters:[]
+Method-name:getCreateIndexRequest
+Method-returnType:CreateIndexRequest
+Method-parameters:[]
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startObject
+MethodInvocation:innerToXContent
+MethodInvocation:startObject
+MethodInvocation:values
+MethodInvocation:toXContent
+MethodInvocation:endObject
+MethodInvocation:endObject

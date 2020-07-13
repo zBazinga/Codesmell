@@ -1,0 +1,52 @@
+Class:BaseQueryParameter
+Field:ourLog
+MethodInvocation:getLogger
+Method-name:encode
+Method-returnType:List<QualifiedParamList>
+Method-parameters:[FhirContext theContext, Object theObject]
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getParamType
+Method-returnType:RestSearchParameterTypeEnum
+Method-parameters:[]
+Method-name:getQualifierBlacklist
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:getQualifierWhitelist
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:supportsRepetition
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:handlesMissing
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:initializeTypes
+Method-returnType:void
+Method-parameters:[Method theMethod, Class<? extends Collection<?>> theOuterCollectionType, Class<? extends Collection<?>> theInnerCollectionType, Class<?> theParameterType]
+Method-name:isRequired
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:parse
+Method-returnType:Object
+Method-parameters:[FhirContext theContext, List<QualifiedParamList> theString]
+Method-name:translateQueryParametersIntoServerArgument
+Method-returnType:Object
+Method-parameters:[RequestDetails theRequest, BaseMethodBinding<?> theMethodBinding]
+MethodInvocation:getName
+MethodInvocation:parseParams
+MethodInvocation:get
+MethodInvocation:getUnqualifiedToQualifiedNames
+MethodInvocation:parseParams
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:isEmpty
+MethodInvocation:debug
+MethodInvocation:getName
+MethodInvocation:getQualifierWhitelist
+MethodInvocation:handlesMissing
+MethodInvocation:parse
+MethodInvocation:getFhirContext
+MethodInvocation:parse
+MethodInvocation:getFhirContext

@@ -1,0 +1,103 @@
+Class:ViewPort
+Field:name
+Field:cam
+Field:queue
+Field:sceneList
+Field:processors
+Field:out
+Field:backColor
+Field:clearDepth
+Field:clearColor
+Field:clearStencil
+Field:enabled
+Method-name:ViewPort
+Method-returnType:null
+Method-parameters:[String name, Camera cam]
+FieldAccess:name
+FieldAccess:cam
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getProcessors
+Method-returnType:SafeArrayList<SceneProcessor>
+Method-parameters:[]
+Method-name:addProcessor
+Method-returnType:void
+Method-parameters:[SceneProcessor processor]
+MethodInvocation:add
+Method-name:removeProcessor
+Method-returnType:void
+Method-parameters:[SceneProcessor processor]
+MethodInvocation:remove
+MethodInvocation:cleanup
+Method-name:clearProcessors
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:cleanup
+MethodInvocation:clear
+Method-name:isClearDepth
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setClearDepth
+Method-returnType:void
+Method-parameters:[boolean clearDepth]
+FieldAccess:clearDepth
+Method-name:isClearColor
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setClearColor
+Method-returnType:void
+Method-parameters:[boolean clearColor]
+FieldAccess:clearColor
+Method-name:isClearStencil
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setClearStencil
+Method-returnType:void
+Method-parameters:[boolean clearStencil]
+FieldAccess:clearStencil
+Method-name:setClearFlags
+Method-returnType:void
+Method-parameters:[boolean color, boolean depth, boolean stencil]
+FieldAccess:clearColor
+FieldAccess:clearDepth
+FieldAccess:clearStencil
+Method-name:getOutputFrameBuffer
+Method-returnType:FrameBuffer
+Method-parameters:[]
+Method-name:setOutputFrameBuffer
+Method-returnType:void
+Method-parameters:[FrameBuffer out]
+FieldAccess:out
+Method-name:getCamera
+Method-returnType:Camera
+Method-parameters:[]
+Method-name:getQueue
+Method-returnType:RenderQueue
+Method-parameters:[]
+Method-name:detachScene
+Method-returnType:void
+Method-parameters:[Spatial scene]
+MethodInvocation:remove
+MethodInvocation:forceRefresh
+Method-name:clearScenes
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:getScenes
+Method-returnType:SafeArrayList<Spatial>
+Method-parameters:[]
+Method-name:setBackgroundColor
+Method-returnType:void
+Method-parameters:[ColorRGBA background]
+MethodInvocation:set
+Method-name:getBackgroundColor
+Method-returnType:ColorRGBA
+Method-parameters:[]
+Method-name:setEnabled
+Method-returnType:void
+Method-parameters:[boolean enable]
+FieldAccess:enabled
+Method-name:isEnabled
+Method-returnType:boolean
+Method-parameters:[]

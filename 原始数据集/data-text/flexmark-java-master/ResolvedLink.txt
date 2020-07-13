@@ -1,0 +1,88 @@
+Class:ResolvedLink
+Field:myLinkType
+Field:myUrl
+Field:myStatus
+Field:myAttributes
+Method-name:ResolvedLink
+Method-returnType:null
+Method-parameters:[@NotNull LinkType linkType, @NotNull CharSequence url]
+Method-name:ResolvedLink
+Method-returnType:null
+Method-parameters:[@NotNull LinkType linkType, @NotNull CharSequence url, @Nullable Attributes attributes]
+Method-name:getAttributes
+Method-returnType:Attributes
+Method-parameters:[]
+Method-name:getNonNullAttributes
+Method-returnType:Attributes
+Method-parameters:[]
+Method-name:ResolvedLink
+Method-returnType:null
+Method-parameters:[@NotNull LinkType linkType, CharSequence url, @Nullable Attributes attributes, @NotNull LinkStatus status]
+MethodInvocation:valueOf
+MethodInvocation:addValues
+MethodInvocation:getNonNullAttributes
+Method-name:withStatus
+Method-returnType:ResolvedLink
+Method-parameters:[@NotNull LinkStatus status]
+FieldAccess:myStatus
+Method-name:getLinkType
+Method-returnType:LinkType
+Method-parameters:[]
+Method-name:getStatus
+Method-returnType:LinkStatus
+Method-parameters:[]
+Method-name:withUrl
+Method-returnType:ResolvedLink
+Method-parameters:[@NotNull CharSequence url]
+MethodInvocation:valueOf
+MethodInvocation:equals
+FieldAccess:myUrl
+Method-name:getUrl
+Method-returnType:String
+Method-parameters:[]
+Method-name:getPageRef
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:indexOf
+MethodInvocation:substring
+Method-name:getAnchorRef
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:indexOf
+MethodInvocation:substring
+Method-name:withTitle
+Method-returnType:ResolvedLink
+Method-parameters:[@Nullable CharSequence title]
+MethodInvocation:getValue
+MethodInvocation:contentEquals
+MethodInvocation:remove
+MethodInvocation:isEmpty
+MethodInvocation:replaceValue
+Method-name:getTitle
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getValue
+Method-name:withTarget
+Method-returnType:ResolvedLink
+Method-parameters:[@Nullable CharSequence target]
+MethodInvocation:getValue
+MethodInvocation:contentEquals
+MethodInvocation:remove
+MethodInvocation:isEmpty
+MethodInvocation:replaceValue
+Method-name:getTarget
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getValue
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode

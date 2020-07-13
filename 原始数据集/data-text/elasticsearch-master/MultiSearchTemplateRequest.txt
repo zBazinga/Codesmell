@@ -1,0 +1,78 @@
+Class:MultiSearchTemplateRequest
+Field:maxConcurrentSearchRequests
+Field:requests
+Field:indicesOptions
+MethodInvocation:strictExpandOpenAndForbidClosedIgnoreThrottled
+Method-name:MultiSearchTemplateRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:MultiSearchTemplateRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readVInt
+MethodInvocation:readList
+Method-name:add
+Method-returnType:MultiSearchTemplateRequest
+Method-parameters:[SearchTemplateRequestBuilder request]
+MethodInvocation:add
+MethodInvocation:request
+Method-name:maxConcurrentSearchRequests
+Method-returnType:int
+Method-parameters:[]
+Method-name:maxConcurrentSearchRequests
+Method-returnType:MultiSearchTemplateRequest
+Method-parameters:[int maxConcurrentSearchRequests]
+FieldAccess:maxConcurrentSearchRequests
+Method-name:requests
+Method-returnType:List<SearchTemplateRequest>
+Method-parameters:[]
+FieldAccess:requests
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:addValidationError
+MethodInvocation:validate
+MethodInvocation:addValidationErrors
+MethodInvocation:validationErrors
+Method-name:indicesOptions
+Method-returnType:IndicesOptions
+Method-parameters:[]
+Method-name:indicesOptions
+Method-returnType:MultiSearchTemplateRequest
+Method-parameters:[IndicesOptions indicesOptions]
+FieldAccess:indicesOptions
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeVInt
+MethodInvocation:writeList
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:writeMultiLineFormat
+Method-returnType:byte[]
+Method-parameters:[MultiSearchTemplateRequest multiSearchTemplateRequest, XContent xContent]
+MethodInvocation:requests
+MethodInvocation:getRequest
+MethodInvocation:builder
+MethodInvocation:writeSearchRequestParams
+MethodInvocation:writeTo
+MethodInvocation:bytes
+MethodInvocation:write
+MethodInvocation:streamSeparator
+MethodInvocation:builder
+MethodInvocation:toXContent
+MethodInvocation:writeTo
+MethodInvocation:bytes
+MethodInvocation:write
+MethodInvocation:streamSeparator
+MethodInvocation:toByteArray

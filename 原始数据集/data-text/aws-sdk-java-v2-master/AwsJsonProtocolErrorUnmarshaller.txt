@@ -1,0 +1,116 @@
+Class:AwsJsonProtocolErrorUnmarshaller
+Field:jsonProtocolUnmarshaller
+Field:exceptions
+Field:errorMessageParser
+Field:jsonFactory
+Field:defaultExceptionSupplier
+Field:errorCodeParser
+Method-name:AwsJsonProtocolErrorUnmarshaller
+Method-returnType:null
+Method-parameters:[Builder builder]
+FieldAccess:jsonProtocolUnmarshaller
+FieldAccess:errorCodeParser
+FieldAccess:errorMessageParser
+FieldAccess:jsonFactory
+FieldAccess:defaultExceptionSupplier
+FieldAccess:exceptions
+Method-name:handle
+Method-returnType:AwsServiceException
+Method-parameters:[SdkHttpFullResponse response, ExecutionAttributes executionAttributes]
+MethodInvocation:unmarshall
+Method-name:unmarshall
+Method-returnType:AwsServiceException
+Method-parameters:[SdkHttpFullResponse response, ExecutionAttributes executionAttributes]
+MethodInvocation:createJsonContent
+MethodInvocation:parseErrorCode
+MethodInvocation:findAny
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:equals
+MethodInvocation:errorCode
+MethodInvocation:get
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:toBuilder
+MethodInvocation:unmarshall
+MethodInvocation:getJsonNode
+MethodInvocation:parseErrorMessage
+MethodInvocation:getJsonNode
+MethodInvocation:awsErrorDetails
+MethodInvocation:extractAwsErrorDetails
+MethodInvocation:clockSkew
+MethodInvocation:getClockSkew
+MethodInvocation:message
+MethodInvocation:statusCode
+MethodInvocation:statusCode
+MethodInvocation:requestId
+MethodInvocation:getRequestIdFromHeaders
+MethodInvocation:headers
+MethodInvocation:extendedRequestId
+MethodInvocation:getExtendedRequestIdFromHeaders
+MethodInvocation:headers
+MethodInvocation:build
+Method-name:getClockSkew
+Method-returnType:Duration
+Method-parameters:[ExecutionAttributes executionAttributes]
+MethodInvocation:getAttribute
+MethodInvocation:ofSeconds
+Method-name:statusCode
+Method-returnType:int
+Method-parameters:[SdkHttpFullResponse response, Optional<ExceptionMetadata> modeledExceptionMetadata]
+MethodInvocation:statusCode
+MethodInvocation:statusCode
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:httpStatusCode
+Method-name:getRequestIdFromHeaders
+Method-returnType:String
+Method-parameters:[Map<String,List<String>> headers]
+MethodInvocation:orElse
+MethodInvocation:firstMatchingHeader
+Method-name:getExtendedRequestIdFromHeaders
+Method-returnType:String
+Method-parameters:[Map<String,List<String>> headers]
+MethodInvocation:orElse
+MethodInvocation:firstMatchingHeader
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Class:Builder
+Field:jsonProtocolUnmarshaller
+Field:exceptions
+Field:errorMessageParser
+Field:jsonFactory
+Field:defaultExceptionSupplier
+Field:errorCodeParser
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:jsonProtocolUnmarshaller
+Method-returnType:Builder
+Method-parameters:[JsonProtocolUnmarshaller jsonProtocolUnmarshaller]
+FieldAccess:jsonProtocolUnmarshaller
+Method-name:exceptions
+Method-returnType:Builder
+Method-parameters:[List<ExceptionMetadata> exceptions]
+FieldAccess:exceptions
+Method-name:errorMessageParser
+Method-returnType:Builder
+Method-parameters:[ErrorMessageParser errorMessageParser]
+FieldAccess:errorMessageParser
+Method-name:jsonFactory
+Method-returnType:Builder
+Method-parameters:[JsonFactory jsonFactory]
+FieldAccess:jsonFactory
+Method-name:defaultExceptionSupplier
+Method-returnType:Builder
+Method-parameters:[Supplier<SdkPojo> defaultExceptionSupplier]
+FieldAccess:defaultExceptionSupplier
+Method-name:errorCodeParser
+Method-returnType:Builder
+Method-parameters:[ErrorCodeParser errorCodeParser]
+FieldAccess:errorCodeParser
+Method-name:build
+Method-returnType:AwsJsonProtocolErrorUnmarshaller
+Method-parameters:[]

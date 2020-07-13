@@ -1,0 +1,75 @@
+Class:ExceptionHandlingInterceptor
+Field:PROCESSING
+Field:ourLog
+MethodInvocation:getLogger
+Field:myReturnStackTracesForExceptionTypes
+Method-name:handleException
+Method-returnType:boolean
+Method-parameters:[RequestDetails theRequestDetails, BaseServerResponseException theException, HttpServletRequest theRequest, HttpServletResponse theResponse]
+MethodInvocation:handleException
+MethodInvocation:close
+Method-name:handleException
+Method-returnType:Object
+Method-parameters:[RequestDetails theRequestDetails, BaseServerResponseException theException]
+MethodInvocation:getResponse
+MethodInvocation:getFhirContext
+MethodInvocation:getServer
+MethodInvocation:getOperationOutcome
+MethodInvocation:createOperationOutcome
+MethodInvocation:getStatusCode
+MethodInvocation:hasResponseHeaders
+MethodInvocation:getResponseHeaders
+MethodInvocation:entrySet
+MethodInvocation:isNotBlank
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:addHeader
+MethodInvocation:getMessage
+MethodInvocation:isNotBlank
+MethodInvocation:indexOf
+MethodInvocation:callOutgoingFailureOperationOutcomeHook
+MethodInvocation:streamResponseAsResource
+MethodInvocation:singleton
+Method-name:preProcessOutgoingException
+Method-returnType:BaseServerResponseException
+Method-parameters:[RequestDetails theRequestDetails, Throwable theException, HttpServletRequest theServletRequest]
+MethodInvocation:getOperationOutcome
+MethodInvocation:setOperationOutcome
+MethodInvocation:createOperationOutcome
+MethodInvocation:getFhirContext
+MethodInvocation:getServer
+Method-name:createOperationOutcome
+Method-returnType:IBaseOperationOutcome
+Method-parameters:[Throwable theException, FhirContext ctx]
+MethodInvocation:getOperationOutcome
+MethodInvocation:newInstance
+MethodInvocation:error
+MethodInvocation:populateDetails
+MethodInvocation:getStatusCode
+MethodInvocation:warn
+MethodInvocation:toString
+MethodInvocation:warn
+MethodInvocation:populateDetails
+MethodInvocation:getAdditionalMessages
+MethodInvocation:getAdditionalMessages
+MethodInvocation:addIssue
+MethodInvocation:error
+MethodInvocation:toString
+MethodInvocation:populateDetails
+MethodInvocation:error
+MethodInvocation:error
+Method-name:populateDetails
+Method-returnType:void
+Method-parameters:[FhirContext theCtx, Throwable theException, IBaseOperationOutcome theOo]
+MethodInvocation:isAssignableFrom
+MethodInvocation:getClass
+MethodInvocation:getMessage
+MethodInvocation:getStackTrace
+MethodInvocation:addIssue
+MethodInvocation:addIssue
+MethodInvocation:getMessage
+Method-name:setReturnStackTracesForExceptionTypes
+Method-returnType:ExceptionHandlingInterceptor
+Method-parameters:[Class<?>... theExceptionTypes]

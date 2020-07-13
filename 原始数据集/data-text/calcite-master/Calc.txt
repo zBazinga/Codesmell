@@ -1,0 +1,65 @@
+Class:Calc
+Field:hints
+Field:program
+Method-name:Calc
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traits, List<RelHint> hints, RelNode child, RexProgram program]
+Method-name:Calc
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traits, RelNode child, RexProgram program]
+MethodInvocation:of
+Method-name:Calc
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traits, RelNode child, RexProgram program, List<RelCollation> collationList]
+MethodInvocation:of
+MethodInvocation:discard
+Method-name:copy
+Method-returnType:Calc
+Method-parameters:[RelTraitSet traitSet, List<RelNode> inputs]
+MethodInvocation:copy
+MethodInvocation:sole
+Method-name:copy
+Method-returnType:Calc
+Method-parameters:[RelTraitSet traitSet, RelNode child, RexProgram program]
+Method-name:isValid
+Method-returnType:boolean
+Method-parameters:[Litmus litmus, Context context]
+MethodInvocation:equal
+MethodInvocation:getInputRowType
+MethodInvocation:getRowType
+MethodInvocation:getInput
+MethodInvocation:fail
+MethodInvocation:isValid
+MethodInvocation:fail
+MethodInvocation:isNormalized
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:fail
+MethodInvocation:succeed
+Method-name:getProgram
+Method-returnType:RexProgram
+Method-parameters:[]
+Method-name:getHints
+Method-returnType:ImmutableList<RelHint>
+Method-parameters:[]
+Method-name:estimateRowCount
+Method-returnType:double
+Method-parameters:[RelMetadataQuery mq]
+MethodInvocation:estimateFilteredRows
+MethodInvocation:getInput
+Method-name:computeSelfCost
+Method-returnType:RelOptCost
+Method-parameters:[RelOptPlanner planner, RelMetadataQuery mq]
+MethodInvocation:getRowCount
+MethodInvocation:getRowCount
+MethodInvocation:getInput
+MethodInvocation:getExprCount
+MethodInvocation:makeCost
+MethodInvocation:getCostFactory
+Method-name:explainTerms
+Method-returnType:RelWriter
+Method-parameters:[RelWriter pw]
+MethodInvocation:explainCalc
+Method-name:accept
+Method-returnType:RelNode
+Method-parameters:[RexShuttle shuttle]

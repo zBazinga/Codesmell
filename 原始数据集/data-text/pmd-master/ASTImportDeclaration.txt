@@ -1,0 +1,62 @@
+Class:ASTImportDeclaration
+Field:isImportOnDemand
+Field:isStatic
+Field:pkg
+Method-name:ASTImportDeclaration
+Method-returnType:null
+Method-parameters:[int id]
+Method-name:ASTImportDeclaration
+Method-returnType:null
+Method-parameters:[JavaParser p, int id]
+Method-name:setImportOnDemand
+Method-returnType:void
+Method-parameters:[]
+Method-name:isImportOnDemand
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setStatic
+Method-returnType:void
+Method-parameters:[]
+Method-name:isStatic
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getImportedNameNode
+Method-returnType:ASTName
+Method-parameters:[]
+MethodInvocation:getChild
+Method-name:getImportedName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getImage
+MethodInvocation:getChild
+Method-name:getImportedSimpleName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getImportedName
+MethodInvocation:substring
+MethodInvocation:lastIndexOf
+Method-name:getPackageName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getImportedName
+MethodInvocation:indexOf
+MethodInvocation:lastIndexOf
+MethodInvocation:substring
+Method-name:jjtAccept
+Method-returnType:Object
+Method-parameters:[JavaParserVisitor visitor, Object data]
+MethodInvocation:visit
+Method-name:setPackage
+Method-returnType:void
+Method-parameters:[Package packge]
+FieldAccess:pkg
+Method-name:getPackage
+Method-returnType:Package
+Method-parameters:[]
+FieldAccess:pkg
+Method-name:isAllowedClass
+Method-returnType:boolean
+Method-parameters:[LoosePackageCouplingRule loosePackageCouplingRule]
+MethodInvocation:getImportedName
+MethodInvocation:getProperty
+MethodInvocation:equals

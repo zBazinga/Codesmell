@@ -1,0 +1,61 @@
+Class:Bucket
+Field:MAX_KADEMLIA_K
+Field:left
+Field:right
+Field:name
+Field:peers
+Method-name:Bucket
+Method-returnType:null
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:splitBucket
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:nextBit
+MethodInvocation:add
+MethodInvocation:add
+FieldAccess:peers
+Method-name:left
+Method-returnType:Bucket
+Method-parameters:[]
+Method-name:right
+Method-returnType:Bucket
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toBinaryString
+MethodInvocation:toString
+Method-name:traverseTree
+Method-returnType:void
+Method-parameters:[DoOnTree doOnTree]
+MethodInvocation:traverseTree
+MethodInvocation:traverseTree
+MethodInvocation:call
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getPeers
+Method-returnType:List<Peer>
+Method-parameters:[]
+Method-name:call
+Method-returnType:void
+Method-parameters:[Bucket bucket]
+Class:SaveLeaf
+Field:leafs
+Method-name:call
+Method-returnType:void
+Method-parameters:[Bucket bucket]
+MethodInvocation:add
+Method-name:getLeafs
+Method-returnType:List<Bucket>
+Method-parameters:[]
+Method-name:setLeafs
+Method-returnType:void
+Method-parameters:[List<Bucket> leafs]
+FieldAccess:leafs

@@ -1,0 +1,41 @@
+Class:OrderingSpecification
+Method-name:createSortSpecification
+Method-returnType:SortSpecification
+Method-parameters:[AST ident, CollationSpecification collationSpecification, OrderByFragmentParser orderByFragmentParser]
+MethodInvocation:create
+MethodInvocation:getASTFactory
+MethodInvocation:create
+MethodInvocation:getASTFactory
+MethodInvocation:create
+MethodInvocation:getASTFactory
+MethodInvocation:getType
+MethodInvocation:getText
+MethodInvocation:setFirstChild
+MethodInvocation:setFirstChild
+MethodInvocation:addChild
+MethodInvocation:addChild
+Class:Ordering
+Field:ASCENDING
+Field:DESCENDING
+Field:name
+Method-name:Ordering
+Method-returnType:null
+Method-parameters:[String name]
+FieldAccess:name
+Field:resolved
+Field:ordering
+Method-name:getOrdering
+Method-returnType:Ordering
+Method-parameters:[]
+MethodInvocation:resolve
+MethodInvocation:getText
+Method-name:resolve
+Method-returnType:Ordering
+Method-parameters:[String text]
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:getRenderableText
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:name
+MethodInvocation:getOrdering

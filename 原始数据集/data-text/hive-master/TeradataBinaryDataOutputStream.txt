@@ -1,0 +1,99 @@
+Class:TeradataBinaryDataOutputStream
+Field:LOG
+MethodInvocation:getLog
+Field:TIMESTAMP_NO_NANOS_BYTE_NUM
+Method-name:TeradataBinaryDataOutputStream
+Method-returnType:null
+Method-parameters:[]
+Method-name:writeInt
+Method-returnType:void
+Method-parameters:[int i]
+MethodInvocation:writeSwappedInteger
+Method-name:writeTimestamp
+Method-returnType:void
+Method-parameters:[TimestampWritableV2 timestamp, int byteNum]
+MethodInvocation:join
+MethodInvocation:nCopies
+MethodInvocation:write
+MethodInvocation:getBytes
+MethodInvocation:toString
+MethodInvocation:getTimestamp
+MethodInvocation:length
+MethodInvocation:write
+MethodInvocation:getBytes
+MethodInvocation:substring
+MethodInvocation:write
+MethodInvocation:getBytes
+MethodInvocation:length
+MethodInvocation:join
+MethodInvocation:nCopies
+MethodInvocation:length
+MethodInvocation:join
+MethodInvocation:nCopies
+MethodInvocation:length
+MethodInvocation:write
+MethodInvocation:getBytes
+Method-name:writeDouble
+Method-returnType:void
+Method-parameters:[double d]
+MethodInvocation:writeSwappedDouble
+Method-name:writeDate
+Method-returnType:void
+Method-parameters:[DateWritableV2 date]
+MethodInvocation:writeSwappedInteger
+MethodInvocation:getYear
+MethodInvocation:get
+MethodInvocation:getMonth
+MethodInvocation:get
+MethodInvocation:getDay
+MethodInvocation:get
+MethodInvocation:writeSwappedInteger
+Method-name:writeLong
+Method-returnType:void
+Method-parameters:[long l]
+MethodInvocation:writeSwappedLong
+Method-name:writeChar
+Method-returnType:void
+Method-parameters:[HiveCharWritable writable, int length]
+MethodInvocation:join
+MethodInvocation:nCopies
+MethodInvocation:write
+MethodInvocation:getBytes
+MethodInvocation:getStrippedValue
+MethodInvocation:getLength
+MethodInvocation:write
+MethodInvocation:getBytes
+MethodInvocation:format
+MethodInvocation:getPaddedValue
+MethodInvocation:join
+MethodInvocation:nCopies
+MethodInvocation:write
+MethodInvocation:getBytes
+Method-name:writeDecimal
+Method-returnType:void
+Method-parameters:[HiveDecimalWritable writable, int byteNum, int scale]
+MethodInvocation:write
+MethodInvocation:scale
+MethodInvocation:getHiveDecimal
+MethodInvocation:unscaledValue
+MethodInvocation:getHiveDecimal
+MethodInvocation:join
+MethodInvocation:nCopies
+MethodInvocation:multiply
+MethodInvocation:toByteArray
+MethodInvocation:reverse
+MethodInvocation:write
+MethodInvocation:fill
+MethodInvocation:write
+Method-name:writeShort
+Method-returnType:void
+Method-parameters:[short s]
+MethodInvocation:writeSwappedShort
+Method-name:writeVarByte
+Method-returnType:void
+Method-parameters:[BytesWritable writable]
+MethodInvocation:writeSwappedShort
+MethodInvocation:getLength
+MethodInvocation:writeSwappedShort
+MethodInvocation:write
+MethodInvocation:getBytes

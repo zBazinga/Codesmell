@@ -1,0 +1,37 @@
+Class:ProxySpawnActionContext
+Field:spawnActionContextMaps
+Method-name:ProxySpawnActionContext
+Method-returnType:null
+Method-parameters:[SpawnActionContextMaps spawnActionContextMaps]
+FieldAccess:spawnActionContextMaps
+Method-name:exec
+Method-returnType:ImmutableList<SpawnResult>
+Method-parameters:[Spawn spawn, ActionExecutionContext actionExecutionContext]
+MethodInvocation:exec
+MethodInvocation:resolveOne
+Method-name:beginExecution
+Method-returnType:SpawnContinuation
+Method-parameters:[Spawn spawn, ActionExecutionContext actionExecutionContext]
+MethodInvocation:resolveOne
+MethodInvocation:failedWithExecException
+MethodInvocation:beginExecution
+Method-name:resolve
+Method-returnType:List<SpawnStrategy>
+Method-parameters:[Spawn spawn, ActionExecutionContext actionExecutionContext]
+MethodInvocation:getSpawnActionContexts
+MethodInvocation:getEventHandler
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:canExec
+MethodInvocation:toList
+MethodInvocation:isEmpty
+MethodInvocation:format
+MethodInvocation:getMnemonic
+Method-name:canExec
+Method-returnType:boolean
+Method-parameters:[Spawn spawn, ActionContext.ActionContextRegistry actionContextRegistry]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:getSpawnActionContexts
+MethodInvocation:canExec

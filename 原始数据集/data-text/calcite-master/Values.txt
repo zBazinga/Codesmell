@@ -1,0 +1,88 @@
+Class:Values
+Field:IS_EMPTY_J
+Field:IS_EMPTY
+Field:IS_NOT_EMPTY
+Field:tuples
+Method-name:Values
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelDataType rowType, ImmutableList<ImmutableList<RexLiteral>> tuples, RelTraitSet traits]
+Method-name:Values
+Method-returnType:null
+Method-parameters:[RelInput input]
+MethodInvocation:getCluster
+MethodInvocation:getRowType
+MethodInvocation:getTuples
+MethodInvocation:getTraitSet
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[Values values]
+MethodInvocation:isEmpty
+MethodInvocation:getTuples
+Method-name:isNotEmpty
+Method-returnType:boolean
+Method-parameters:[Values values]
+MethodInvocation:isEmpty
+Method-name:getTuples
+Method-returnType:ImmutableList<ImmutableList<RexLiteral>>
+Method-parameters:[RelInput input]
+MethodInvocation:getTuples
+Method-name:getTuples
+Method-returnType:ImmutableList<ImmutableList<RexLiteral>>
+Method-parameters:[]
+Method-name:assertRowType
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:deriveRowType
+Method-returnType:RelDataType
+Method-parameters:[]
+Method-name:computeSelfCost
+Method-returnType:RelOptCost
+Method-parameters:[RelOptPlanner planner, RelMetadataQuery mq]
+MethodInvocation:getRowCount
+MethodInvocation:makeCost
+MethodInvocation:getCostFactory
+Method-name:estimateRowCount
+Method-returnType:double
+Method-parameters:[RelMetadataQuery mq]
+MethodInvocation:size
+Method-name:explainTerms
+Method-returnType:RelWriter
+Method-parameters:[RelWriter pw]
+MethodInvocation:itemIf
+MethodInvocation:itemIf
+MethodInvocation:getDetailLevel
+MethodInvocation:getFieldList
+MethodInvocation:nest
+MethodInvocation:nest
+MethodInvocation:item
+MethodInvocation:item
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:computeDigest
+MethodInvocation:joining
+MethodInvocation:joining
+Method-name:averageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[RelMetadataQuery mq, RelMdSize relMdSize]
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:builder
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:getTuples
+MethodInvocation:averageTypeValueSize
+MethodInvocation:getType
+MethodInvocation:getTuples
+MethodInvocation:typeValueSize
+MethodInvocation:getType
+MethodInvocation:getValueAs
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:getTuples
+MethodInvocation:add
+MethodInvocation:build

@@ -1,0 +1,79 @@
+Class:JoinNode
+Field:serialVersionUID
+Method-name:JoinNode
+Method-returnType:null
+Method-parameters:[]
+Method-name:JoinNode
+Method-returnType:null
+Method-parameters:[final int id, final LeftTupleSource leftInput, final ObjectSource rightInput, final BetaConstraints binder, final BuildContext context]
+FieldAccess:tupleMemoryEnabled
+MethodInvocation:isTupleMemoryEnabled
+Method-name:getType
+Method-returnType:short
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getId
+MethodInvocation:getObjectType
+MethodInvocation:getObjectTypeNode
+Method-name:createPeer
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple original]
+MethodInvocation:initPeer
+MethodInvocation:setPeer
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[InternalFactHandle factHandle, Sink sink, boolean leftTupleMemoryEnabled]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[final InternalFactHandle factHandle, final LeftTuple leftTuple, final Sink sink]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, Sink sink, PropagationContext pctx, boolean leftTupleMemoryEnabled]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, RightTuple rightTuple, Sink sink]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, RightTuple rightTuple, LeftTuple currentLeftChild, LeftTuple currentRightChild, Sink sink, boolean leftTupleMemoryEnabled]
+Method-name:retractRightTuple
+Method-returnType:void
+Method-parameters:[final RightTuple rightTuple, final PropagationContext pctx, final InternalWorkingMemory wm]
+MethodInvocation:getNodeMemory
+MethodInvocation:setPropagationContext
+MethodInvocation:doDeleteRightTuple
+Method-name:modifyRightTuple
+Method-returnType:void
+Method-parameters:[RightTuple rightTuple, PropagationContext context, InternalWorkingMemory workingMemory]
+Method-name:doRemove
+Method-returnType:boolean
+Method-parameters:[RuleRemovalContext context, ReteooBuilder builder]
+MethodInvocation:isInUse
+MethodInvocation:removeTupleSink
+MethodInvocation:getLeftTupleSource
+MethodInvocation:removeObjectSink
+MethodInvocation:getRightInput
+Method-name:doNode
+Method-returnType:void
+Method-parameters:[LeftTupleSink sink, BetaMemory bm, InternalWorkingMemory wm, TupleSets<LeftTuple> srcLeftTuples, TupleSets<LeftTuple> trgLeftTuples, TupleSets<LeftTuple> stagedLeftTuples, PhreakJoinNode phreakJoinNode]
+MethodInvocation:takeAll
+MethodInvocation:getStagedRightTuples
+MethodInvocation:getDeleteFirst
+MethodInvocation:doRightDeletes
+MethodInvocation:getDeleteFirst
+MethodInvocation:doLeftDeletes
+MethodInvocation:getUpdateFirst
+MethodInvocation:doUpdatesReorderRightMemory
+MethodInvocation:getUpdateFirst
+MethodInvocation:doUpdatesReorderLeftMemory
+MethodInvocation:getUpdateFirst
+MethodInvocation:doRightUpdates
+MethodInvocation:getUpdateFirst
+MethodInvocation:doLeftUpdates
+MethodInvocation:getInsertFirst
+MethodInvocation:doRightInserts
+MethodInvocation:getInsertFirst
+MethodInvocation:doLeftInserts
+MethodInvocation:resetAll
+MethodInvocation:resetAll

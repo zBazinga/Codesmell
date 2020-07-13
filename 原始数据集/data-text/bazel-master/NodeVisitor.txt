@@ -1,0 +1,179 @@
+Class:NodeVisitor
+Method-name:visit
+Method-returnType:void
+Method-parameters:[Node node]
+MethodInvocation:accept
+Method-name:visitAll
+Method-returnType:void
+Method-parameters:[List<? extends Node> nodes]
+MethodInvocation:visit
+Method-name:visitBlock
+Method-returnType:void
+Method-parameters:[List<Statement> statements]
+MethodInvocation:visitAll
+Method-name:visit
+Method-returnType:void
+Method-parameters:[Argument node]
+MethodInvocation:visit
+MethodInvocation:getValue
+Method-name:visit
+Method-returnType:void
+Method-parameters:[Parameter node]
+MethodInvocation:visit
+MethodInvocation:getIdentifier
+MethodInvocation:getDefaultValue
+MethodInvocation:visit
+MethodInvocation:getDefaultValue
+Method-name:visit
+Method-returnType:void
+Method-parameters:[BinaryOperatorExpression node]
+MethodInvocation:visit
+MethodInvocation:getX
+MethodInvocation:visit
+MethodInvocation:getY
+Method-name:visit
+Method-returnType:void
+Method-parameters:[CallExpression node]
+MethodInvocation:visit
+MethodInvocation:getFunction
+MethodInvocation:visitAll
+MethodInvocation:getArguments
+Method-name:visit
+Method-returnType:void
+Method-parameters:[@SuppressWarnings("unused") Identifier node]
+Method-name:visit
+Method-returnType:void
+Method-parameters:[Comprehension node]
+MethodInvocation:getClauses
+MethodInvocation:visit
+MethodInvocation:getVars
+MethodInvocation:visit
+MethodInvocation:getIterable
+MethodInvocation:visit
+MethodInvocation:getCondition
+MethodInvocation:visit
+MethodInvocation:getBody
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ForStatement node]
+MethodInvocation:visit
+MethodInvocation:getCollection
+MethodInvocation:visit
+MethodInvocation:getLHS
+MethodInvocation:visitBlock
+MethodInvocation:getBlock
+Method-name:visit
+Method-returnType:void
+Method-parameters:[LoadStatement node]
+MethodInvocation:getBindings
+MethodInvocation:visit
+MethodInvocation:getLocalName
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ListExpression node]
+MethodInvocation:visitAll
+MethodInvocation:getElements
+Method-name:visit
+Method-returnType:void
+Method-parameters:[@SuppressWarnings("unused") IntegerLiteral node]
+Method-name:visit
+Method-returnType:void
+Method-parameters:[@SuppressWarnings("unused") StringLiteral node]
+Method-name:visit
+Method-returnType:void
+Method-parameters:[AssignmentStatement node]
+MethodInvocation:visit
+MethodInvocation:getRHS
+MethodInvocation:visit
+MethodInvocation:getLHS
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ExpressionStatement node]
+MethodInvocation:visit
+MethodInvocation:getExpression
+Method-name:visit
+Method-returnType:void
+Method-parameters:[IfStatement node]
+MethodInvocation:visit
+MethodInvocation:getCondition
+MethodInvocation:visitBlock
+MethodInvocation:getThenBlock
+MethodInvocation:getElseBlock
+MethodInvocation:visitBlock
+MethodInvocation:getElseBlock
+Method-name:visit
+Method-returnType:void
+Method-parameters:[DefStatement node]
+MethodInvocation:visit
+MethodInvocation:getIdentifier
+MethodInvocation:visitAll
+MethodInvocation:getParameters
+MethodInvocation:visitBlock
+MethodInvocation:getStatements
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ReturnStatement node]
+MethodInvocation:getReturnExpression
+MethodInvocation:visit
+MethodInvocation:getReturnExpression
+Method-name:visit
+Method-returnType:void
+Method-parameters:[FlowStatement node]
+Method-name:visit
+Method-returnType:void
+Method-parameters:[DictExpression node]
+MethodInvocation:visitAll
+MethodInvocation:getEntries
+Method-name:visit
+Method-returnType:void
+Method-parameters:[DictExpression.Entry node]
+MethodInvocation:visit
+MethodInvocation:getKey
+MethodInvocation:visit
+MethodInvocation:getValue
+Method-name:visit
+Method-returnType:void
+Method-parameters:[UnaryOperatorExpression node]
+MethodInvocation:visit
+MethodInvocation:getX
+Method-name:visit
+Method-returnType:void
+Method-parameters:[DotExpression node]
+MethodInvocation:visit
+MethodInvocation:getObject
+MethodInvocation:visit
+MethodInvocation:getField
+Method-name:visit
+Method-returnType:void
+Method-parameters:[IndexExpression node]
+MethodInvocation:visit
+MethodInvocation:getObject
+MethodInvocation:visit
+MethodInvocation:getKey
+Method-name:visit
+Method-returnType:void
+Method-parameters:[SliceExpression node]
+MethodInvocation:visit
+MethodInvocation:getObject
+MethodInvocation:getStart
+MethodInvocation:visit
+MethodInvocation:getStart
+MethodInvocation:getStop
+MethodInvocation:visit
+MethodInvocation:getStop
+MethodInvocation:getStep
+MethodInvocation:visit
+MethodInvocation:getStep
+Method-name:visit
+Method-returnType:void
+Method-parameters:[@SuppressWarnings("unused") Comment node]
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ConditionalExpression node]
+MethodInvocation:visit
+MethodInvocation:getCondition
+MethodInvocation:visit
+MethodInvocation:getThenCase
+MethodInvocation:getElseCase
+MethodInvocation:visit
+MethodInvocation:getElseCase

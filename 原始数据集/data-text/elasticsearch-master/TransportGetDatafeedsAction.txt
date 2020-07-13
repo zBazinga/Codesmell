@@ -1,0 +1,52 @@
+Class:TransportGetDatafeedsAction
+Field:logger
+MethodInvocation:getLogger
+Field:datafeedConfigProvider
+Method-name:TransportGetDatafeedsAction
+Method-returnType:null
+Method-parameters:[TransportService transportService, ClusterService clusterService, ThreadPool threadPool, ActionFilters actionFilters, IndexNameExpressionResolver indexNameExpressionResolver, Client client, NamedXContentRegistry xContentRegistry]
+Method-name:executor
+Method-returnType:String
+Method-parameters:[]
+Method-name:read
+Method-returnType:GetDatafeedsAction.Response
+Method-parameters:[StreamInput in]
+Method-name:masterOperation
+Method-returnType:void
+Method-parameters:[Task task, GetDatafeedsAction.Request request, ClusterState state, ActionListener<GetDatafeedsAction.Response> listener]
+MethodInvocation:debug
+MethodInvocation:getDatafeedId
+MethodInvocation:expandClusterStateDatafeeds
+MethodInvocation:getDatafeedId
+MethodInvocation:allowNoDatafeeds
+MethodInvocation:expandDatafeedConfigs
+MethodInvocation:getDatafeedId
+MethodInvocation:allowNoDatafeeds
+MethodInvocation:wrap
+MethodInvocation:containsKey
+MethodInvocation:getId
+MethodInvocation:onFailure
+MethodInvocation:getId
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:values
+MethodInvocation:add
+MethodInvocation:build
+MethodInvocation:addAll
+MethodInvocation:values
+MethodInvocation:sort
+MethodInvocation:comparing
+MethodInvocation:onResponse
+MethodInvocation:size
+Method-name:expandClusterStateDatafeeds
+Method-returnType:Map<String,DatafeedConfig>
+Method-parameters:[String datafeedExpression, boolean allowNoDatafeeds, ClusterState clusterState]
+MethodInvocation:getMlMetadata
+MethodInvocation:expandDatafeedIds
+MethodInvocation:put
+MethodInvocation:getDatafeed
+Method-name:checkBlock
+Method-returnType:ClusterBlockException
+Method-parameters:[GetDatafeedsAction.Request request, ClusterState state]
+MethodInvocation:globalBlockedException
+MethodInvocation:blocks

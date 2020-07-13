@@ -1,0 +1,80 @@
+Class:TaskTracker
+Field:LOG
+MethodInvocation:getLogger
+Field:tasks
+Field:replicationState
+Field:numberOfTasks
+Field:maxTasksAllowed
+Method-name:TaskTracker
+Method-returnType:null
+Method-parameters:[int defaultMaxTasks]
+Method-name:TaskTracker
+Method-returnType:null
+Method-parameters:[TaskTracker existing]
+Method-name:addTask
+Method-returnType:void
+Method-parameters:[Task<?> task]
+MethodInvocation:add
+MethodInvocation:updateTaskCount
+Method-name:addTaskList
+Method-returnType:void
+Method-parameters:[List<Task<?>> taskList]
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:updateTaskCount
+Method-name:addDependentTask
+Method-returnType:void
+Method-parameters:[Task<?> dependent]
+MethodInvocation:isEmpty
+MethodInvocation:addTask
+MethodInvocation:traverse
+MethodInvocation:updateTaskCount
+Method-name:updateTaskCount
+Method-returnType:void
+Method-parameters:[Task<?> task, List<Task<?>> visited]
+MethodInvocation:add
+MethodInvocation:getChildTasks
+MethodInvocation:getChildTasks
+MethodInvocation:contains
+MethodInvocation:updateTaskCount
+Method-name:canAddMoreTasks
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:hasTasks
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:update
+Method-returnType:void
+Method-parameters:[TaskTracker withAnother]
+MethodInvocation:hasReplicationState
+FieldAccess:replicationState
+Method-name:setReplicationState
+Method-returnType:void
+Method-parameters:[ReplicationState state]
+FieldAccess:replicationState
+Method-name:hasReplicationState
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:replicationState
+Method-returnType:ReplicationState
+Method-parameters:[]
+Method-name:tasks
+Method-returnType:List<Task<?>>
+Method-parameters:[]
+Method-name:debugLog
+Method-returnType:void
+Method-parameters:[String forEventType]
+MethodInvocation:debug
+MethodInvocation:size
+Method-name:numberOfTasks
+Method-returnType:int
+Method-parameters:[]
+Method-name:setUpDependencies
+Method-returnType:void
+Method-parameters:[TaskTracker childTasks, ReplLoadTask replLoadTask]
+MethodInvocation:hasTasks
+MethodInvocation:tasks
+MethodInvocation:tasks
+MethodInvocation:addDependentTask
+MethodInvocation:tasks
+MethodInvocation:addTask

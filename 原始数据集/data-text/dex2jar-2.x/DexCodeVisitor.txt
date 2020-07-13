@@ -1,0 +1,102 @@
+Class:DexCodeVisitor
+Field:visitor
+Method-name:DexCodeVisitor
+Method-returnType:null
+Method-parameters:[]
+Method-name:DexCodeVisitor
+Method-returnType:null
+Method-parameters:[DexCodeVisitor visitor]
+FieldAccess:visitor
+Method-name:visitRegister
+Method-returnType:void
+Method-parameters:[int total]
+MethodInvocation:visitRegister
+Method-name:visitStmt2R1N
+Method-returnType:void
+Method-parameters:[Op op, int distReg, int srcReg, int content]
+MethodInvocation:visitStmt2R1N
+Method-name:visitStmt3R
+Method-returnType:void
+Method-parameters:[Op op, int a, int b, int c]
+MethodInvocation:visitStmt3R
+Method-name:visitTypeStmt
+Method-returnType:void
+Method-parameters:[Op op, int a, int b, String type]
+MethodInvocation:visitTypeStmt
+Method-name:visitConstStmt
+Method-returnType:void
+Method-parameters:[Op op, int ra, Object value]
+MethodInvocation:visitConstStmt
+Method-name:visitFillArrayDataStmt
+Method-returnType:void
+Method-parameters:[Op op, int ra, Object array]
+MethodInvocation:visitFillArrayDataStmt
+Method-name:visitEnd
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:visitEnd
+Method-name:visitFieldStmt
+Method-returnType:void
+Method-parameters:[Op op, int a, int b, Field field]
+MethodInvocation:visitFieldStmt
+Method-name:visitFilledNewArrayStmt
+Method-returnType:void
+Method-parameters:[Op op, int[] args, String type]
+MethodInvocation:visitFilledNewArrayStmt
+Method-name:visitJumpStmt
+Method-returnType:void
+Method-parameters:[Op op, int a, int b, DexLabel label]
+MethodInvocation:visitJumpStmt
+Method-name:visitLabel
+Method-returnType:void
+Method-parameters:[DexLabel label]
+MethodInvocation:visitLabel
+Method-name:visitSparseSwitchStmt
+Method-returnType:void
+Method-parameters:[Op op, int ra, int[] cases, DexLabel[] labels]
+MethodInvocation:visitSparseSwitchStmt
+Method-name:visitMethodStmt
+Method-returnType:void
+Method-parameters:[Op op, int[] args, Method method]
+MethodInvocation:visitMethodStmt
+Method-name:visitMethodStmt
+Method-returnType:void
+Method-parameters:[Op op, int[] args, String name, Proto proto, MethodHandle bsm, Object... bsmArgs]
+MethodInvocation:visitMethodStmt
+Method-name:visitMethodStmt
+Method-returnType:void
+Method-parameters:[Op op, int[] args, Method bsm, Proto proto]
+MethodInvocation:visitMethodStmt
+Method-name:visitStmt2R
+Method-returnType:void
+Method-parameters:[Op op, int a, int b]
+MethodInvocation:visitStmt2R
+Method-name:visitStmt0R
+Method-returnType:void
+Method-parameters:[Op op]
+MethodInvocation:visitStmt0R
+Method-name:visitStmt1R
+Method-returnType:void
+Method-parameters:[Op op, int reg]
+MethodInvocation:visitStmt1R
+Method-name:visitPackedSwitchStmt
+Method-returnType:void
+Method-parameters:[Op op, int aA, int first_case, DexLabel[] labels]
+MethodInvocation:visitPackedSwitchStmt
+Method-name:visitTryCatch
+Method-returnType:void
+Method-parameters:[DexLabel start, DexLabel end, DexLabel handler[], String type[]]
+MethodInvocation:visitTryCatch
+Method-name:visitDebug
+Method-returnType:DexDebugVisitor
+Method-parameters:[]
+MethodInvocation:visitDebug
+Method-name:accept
+Method-returnType:void
+Method-parameters:[DexCodeNode dexCodeNode]
+MethodInvocation:accept
+MethodInvocation:visitDebug
+MethodInvocation:accept
+MethodInvocation:visitEnd
+MethodInvocation:visitRegister
+MethodInvocation:accept

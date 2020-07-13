@@ -1,0 +1,46 @@
+Class:SqlMultisetValueConstructor
+Method-name:SqlMultisetValueConstructor
+Method-returnType:null
+Method-parameters:[]
+Method-name:SqlMultisetValueConstructor
+Method-returnType:null
+Method-parameters:[String name, SqlKind kind]
+Method-name:inferReturnType
+Method-returnType:RelDataType
+Method-parameters:[SqlOperatorBinding opBinding]
+MethodInvocation:getComponentType
+MethodInvocation:getTypeFactory
+MethodInvocation:collectOperandTypes
+MethodInvocation:createMultisetType
+MethodInvocation:getTypeFactory
+Method-name:getComponentType
+Method-returnType:RelDataType
+Method-parameters:[RelDataTypeFactory typeFactory, List<RelDataType> argTypes]
+MethodInvocation:leastRestrictive
+Method-name:checkOperandTypes
+Method-returnType:boolean
+Method-parameters:[SqlCallBinding callBinding, boolean throwOnFailure]
+MethodInvocation:deriveAndCollectTypes
+MethodInvocation:getValidator
+MethodInvocation:getScope
+MethodInvocation:operands
+MethodInvocation:size
+MethodInvocation:newValidationError
+MethodInvocation:requireAtLeastOneArg
+MethodInvocation:getComponentType
+MethodInvocation:getTypeFactory
+MethodInvocation:newValidationError
+MethodInvocation:needSameTypeParameter
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlCall call, int leftPrec, int rightPrec]
+MethodInvocation:keyword
+MethodInvocation:getName
+MethodInvocation:startList
+MethodInvocation:getOperandList
+MethodInvocation:sep
+MethodInvocation:unparse
+MethodInvocation:endList
+Method-name:convertMultiset
+Method-returnType:RexNode
+Method-parameters:[SqlRexContext cx, SqlCall call, StandardConvertletTable standardConvertletTable]

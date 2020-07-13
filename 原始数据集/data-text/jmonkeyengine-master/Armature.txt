@@ -1,0 +1,126 @@
+Class:Armature
+Field:rootJoints
+Field:jointList
+Field:skinningMatrixes
+Field:modelTransformClass
+Method-name:Armature
+Method-returnType:null
+Method-parameters:[]
+Method-name:Armature
+Method-returnType:null
+Method-parameters:[Joint[] jointList]
+FieldAccess:jointList
+MethodInvocation:setId
+MethodInvocation:instanciateJointModelTransform
+MethodInvocation:getParent
+MethodInvocation:add
+MethodInvocation:toArray
+MethodInvocation:size
+MethodInvocation:createSkinningMatrices
+MethodInvocation:update
+Method-name:update
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:update
+Method-name:createSkinningMatrices
+Method-returnType:void
+Method-parameters:[]
+Method-name:setModelTransformClass
+Method-returnType:void
+Method-parameters:[Class<? extends JointModelTransform> modelTransformClass]
+FieldAccess:modelTransformClass
+MethodInvocation:instanciateJointModelTransform
+Method-name:instanciateJointModelTransform
+Method-returnType:void
+Method-parameters:[Joint joint]
+MethodInvocation:setJointModelTransform
+MethodInvocation:newInstance
+Method-name:getRoots
+Method-returnType:Joint[]
+Method-parameters:[]
+Method-name:getJointList
+Method-returnType:List<Joint>
+Method-parameters:[]
+MethodInvocation:asList
+Method-name:getJoint
+Method-returnType:Joint
+Method-parameters:[int index]
+Method-name:getJoint
+Method-returnType:Joint
+Method-parameters:[String name]
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:getJointIndex
+Method-returnType:int
+Method-parameters:[Joint joint]
+Method-name:getJointIndex
+Method-returnType:int
+Method-parameters:[String name]
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:saveBindPose
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:update
+MethodInvocation:saveBindPose
+Method-name:applyBindPose
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:applyBindPose
+Method-name:saveInitialPose
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:saveInitialPose
+Method-name:applyInitialPose
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:applyInitialPose
+Method-name:computeSkinningMatrices
+Method-returnType:Matrix4f[]
+Method-parameters:[]
+MethodInvocation:getOffsetTransform
+Method-name:getJointCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:jmeClone
+Method-returnType:Object
+Method-parameters:[]
+Method-name:cloneFields
+Method-returnType:void
+Method-parameters:[Cloner cloner, Object original]
+FieldAccess:rootJoints
+MethodInvocation:clone
+FieldAccess:jointList
+MethodInvocation:clone
+FieldAccess:skinningMatrixes
+MethodInvocation:clone
+MethodInvocation:instanciateJointModelTransform
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter im]
+MethodInvocation:getCapsule
+MethodInvocation:readSavableArray
+MethodInvocation:arraycopy
+MethodInvocation:readSavableArray
+MethodInvocation:arraycopy
+MethodInvocation:readString
+MethodInvocation:getCanonicalName
+MethodInvocation:forName
+MethodInvocation:setId
+MethodInvocation:instanciateJointModelTransform
+MethodInvocation:createSkinningMatrices
+MethodInvocation:update
+MethodInvocation:applyInitialPose
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter ex]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:getCanonicalName
+MethodInvocation:getCanonicalName
+Method-name:findJoint
+Method-returnType:Joint
+Method-parameters:[String jointName, ArmatureMask armatureMask]
+MethodInvocation:getJoint

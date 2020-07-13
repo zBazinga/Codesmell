@@ -1,0 +1,339 @@
+Class:HiveDecimal
+Field:MAX_PRECISION
+Field:MAX_SCALE
+Field:USER_DEFAULT_PRECISION
+Field:USER_DEFAULT_SCALE
+Field:SYSTEM_DEFAULT_PRECISION
+Field:SYSTEM_DEFAULT_SCALE
+Field:ZERO
+MethodInvocation:create
+Field:ONE
+MethodInvocation:create
+Field:ROUND_FLOOR
+Field:ROUND_CEILING
+Field:ROUND_HALF_UP
+Field:ROUND_HALF_EVEN
+Method-name:HiveDecimal
+Method-returnType:null
+Method-parameters:[]
+Method-name:HiveDecimal
+Method-returnType:null
+Method-parameters:[HiveDecimal dec]
+Method-name:HiveDecimal
+Method-returnType:null
+Method-parameters:[FastHiveDecimal fastDec]
+Method-name:HiveDecimal
+Method-returnType:null
+Method-parameters:[int fastSignum, FastHiveDecimal fastDec]
+Method-name:HiveDecimal
+Method-returnType:null
+Method-parameters:[int fastSignum, long fast0, long fast1, long fast2, int fastIntegerDigitCount, int fastScale]
+Method-name:createFromFast
+Method-returnType:HiveDecimal
+Method-parameters:[FastHiveDecimal fastDec]
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[BigDecimal bigDecimal]
+MethodInvocation:create
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[BigDecimal bigDecimal, boolean allowRounding]
+MethodInvocation:fastSetFromBigDecimal
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[BigInteger bigInteger]
+MethodInvocation:fastSetFromBigInteger
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[BigInteger bigInteger, int scale]
+MethodInvocation:fastSetFromBigIntegerAndScale
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[String string]
+MethodInvocation:fastSetFromString
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[String string, boolean trimBlanks]
+MethodInvocation:fastSetFromString
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[byte[] bytes]
+MethodInvocation:fastSetFromBytes
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[byte[] bytes, boolean trimBlanks]
+MethodInvocation:fastSetFromBytes
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[boolean isNegative, byte[] bytes, int scale]
+MethodInvocation:fastSetFromDigitsOnlyBytesAndScale
+MethodInvocation:fastNegate
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[boolean isNegative, byte[] bytes, int offset, int length, int scale]
+MethodInvocation:fastSetFromDigitsOnlyBytesAndScale
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[byte[] bytes, int offset, int length]
+MethodInvocation:fastSetFromBytes
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[byte[] bytes, int offset, int length, boolean trimBlanks]
+MethodInvocation:fastSetFromBytes
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[int intValue]
+MethodInvocation:fastSetFromInt
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[long longValue]
+MethodInvocation:fastSetFromLong
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[long longValue, int scale]
+MethodInvocation:fastSetFromLongAndScale
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[float floatValue]
+MethodInvocation:fastSetFromFloat
+Method-name:create
+Method-returnType:HiveDecimal
+Method-parameters:[double doubleValue]
+MethodInvocation:fastSetFromDouble
+Field:SCRATCH_BUFFER_LEN_SERIALIZATION_UTILS_READ
+Method-name:serializationUtilsRead
+Method-returnType:HiveDecimal
+Method-parameters:[InputStream inputStream, int scale, byte[] scratchBytes]
+MethodInvocation:fastSerializationUtilsRead
+Method-name:createFromBigIntegerBytesAndScale
+Method-returnType:HiveDecimal
+Method-parameters:[byte[] bytes, int scale]
+MethodInvocation:fastSetFromBigIntegerBytesAndScale
+Method-name:createFromBigIntegerBytesAndScale
+Method-returnType:HiveDecimal
+Method-parameters:[byte[] bytes, int offset, int length, int scale]
+MethodInvocation:fastSetFromBigIntegerBytesAndScale
+Field:SCRATCH_LONGS_LEN
+Method-name:serializationUtilsWrite
+Method-returnType:boolean
+Method-parameters:[OutputStream outputStream, long[] scratchLongs]
+MethodInvocation:fastSerializationUtilsWrite
+Field:SCRATCH_BUFFER_LEN_BIG_INTEGER_BYTES
+Method-name:bigIntegerBytes
+Method-returnType:int
+Method-parameters:[long[] scratchLongs, byte[] buffer]
+MethodInvocation:fastBigIntegerBytes
+Method-name:bigIntegerBytes
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:fastBigIntegerBytes
+MethodInvocation:copyOfRange
+Method-name:bigIntegerBytesScaled
+Method-returnType:int
+Method-parameters:[int serializeScale, long[] scratchLongs, byte[] buffer]
+MethodInvocation:fastBigIntegerBytesScaled
+Method-name:bigIntegerBytesScaled
+Method-returnType:byte[]
+Method-parameters:[int serializeScale]
+MethodInvocation:fastBigIntegerBytesScaled
+MethodInvocation:copyOfRange
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:fastSerializationScale
+MethodInvocation:fastToFormatString
+MethodInvocation:fastSerializationScale
+MethodInvocation:fastToString
+Method-name:toString
+Method-returnType:String
+Method-parameters:[byte[] scratchBuffer]
+MethodInvocation:fastSerializationScale
+MethodInvocation:fastToFormatString
+MethodInvocation:fastSerializationScale
+MethodInvocation:fastToString
+Method-name:toFormatString
+Method-returnType:String
+Method-parameters:[int formatScale]
+MethodInvocation:fastToFormatString
+Method-name:toFormatString
+Method-returnType:String
+Method-parameters:[int formatScale, byte[] scratchBuffer]
+MethodInvocation:fastToFormatString
+Method-name:toDigitsOnlyString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:fastToDigitsOnlyString
+Field:SCRATCH_BUFFER_LEN_TO_BYTES
+Method-name:toBytes
+Method-returnType:int
+Method-parameters:[byte[] scratchBuffer]
+MethodInvocation:fastToBytes
+Method-name:toFormatBytes
+Method-returnType:int
+Method-parameters:[int formatScale, byte[] scratchBuffer]
+MethodInvocation:fastToFormatBytes
+Method-name:toDigitsOnlyBytes
+Method-returnType:int
+Method-parameters:[byte[] scratchBuffer]
+MethodInvocation:fastToDigitsOnlyBytes
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[HiveDecimal dec]
+MethodInvocation:fastCompareTo
+Method-name:newFasterHashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:fastNewFasterHashCode
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:fastHashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:fastEquals
+Method-name:scale
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:fastScale
+Method-name:integerDigitCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:fastIntegerDigitCount
+Method-name:precision
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:fastSqlPrecision
+Method-name:rawPrecision
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:fastRawPrecision
+Method-name:signum
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:fastSignum
+Method-name:isByte
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:fastIsByte
+Method-name:byteValue
+Method-returnType:byte
+Method-parameters:[]
+MethodInvocation:fastByteValueClip
+Method-name:isShort
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:fastIsShort
+Method-name:shortValue
+Method-returnType:short
+Method-parameters:[]
+MethodInvocation:fastShortValueClip
+Method-name:isInt
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:fastIsInt
+Method-name:intValue
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:fastIntValueClip
+Method-name:isLong
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:fastIsLong
+Method-name:longValue
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:fastLongValueClip
+Method-name:longValueExact
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:isLong
+MethodInvocation:fastLongValueClip
+Method-name:floatValue
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:fastFloatValue
+Method-name:doubleValue
+Method-returnType:double
+Method-parameters:[]
+MethodInvocation:fastDoubleValue
+Method-name:bigDecimalValue
+Method-returnType:BigDecimal
+Method-parameters:[]
+MethodInvocation:fastBigDecimalValue
+Method-name:unscaledValue
+Method-returnType:BigInteger
+Method-parameters:[]
+MethodInvocation:fastBigIntegerValue
+Method-name:fractionPortion
+Method-returnType:HiveDecimal
+Method-parameters:[]
+MethodInvocation:fastFractionPortion
+Method-name:integerPortion
+Method-returnType:HiveDecimal
+Method-parameters:[]
+MethodInvocation:fastIntegerPortion
+Method-name:add
+Method-returnType:HiveDecimal
+Method-parameters:[HiveDecimal dec]
+MethodInvocation:fastAdd
+Method-name:subtract
+Method-returnType:HiveDecimal
+Method-parameters:[HiveDecimal dec]
+MethodInvocation:fastSubtract
+Method-name:multiply
+Method-returnType:HiveDecimal
+Method-parameters:[HiveDecimal dec]
+MethodInvocation:fastMultiply
+Method-name:scaleByPowerOfTen
+Method-returnType:HiveDecimal
+Method-parameters:[int power]
+MethodInvocation:fastSignum
+MethodInvocation:fastScaleByPowerOfTen
+Method-name:abs
+Method-returnType:HiveDecimal
+Method-parameters:[]
+MethodInvocation:fastSignum
+MethodInvocation:fastAbs
+Method-name:negate
+Method-returnType:HiveDecimal
+Method-parameters:[]
+MethodInvocation:fastSignum
+MethodInvocation:fastNegate
+Method-name:setScale
+Method-returnType:HiveDecimal
+Method-parameters:[int serializationScale]
+MethodInvocation:fastSetSerializationScale
+Method-name:setScale
+Method-returnType:HiveDecimal
+Method-parameters:[int roundingPoint, int roundingMode]
+MethodInvocation:fastScale
+MethodInvocation:fastRound
+Method-name:pow
+Method-returnType:HiveDecimal
+Method-parameters:[int exponent]
+MethodInvocation:fastPow
+Method-name:divide
+Method-returnType:HiveDecimal
+Method-parameters:[HiveDecimal divisor]
+MethodInvocation:fastDivide
+Method-name:remainder
+Method-returnType:HiveDecimal
+Method-parameters:[HiveDecimal divisor]
+MethodInvocation:fastRemainder
+Method-name:enforcePrecisionScale
+Method-returnType:HiveDecimal
+Method-parameters:[HiveDecimal dec, int maxPrecision, int maxScale]
+MethodInvocation:fastCheckPrecisionScale
+MethodInvocation:fastUpdatePrecisionScale
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:fastIsValid
+MethodInvocation:fastRaiseInvalidException
+Method-name:fill
+Method-returnType:void
+Method-parameters:[DecimalColumnVector decimalColumnVector]
+MethodInvocation:set

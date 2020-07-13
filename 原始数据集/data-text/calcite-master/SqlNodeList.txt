@@ -1,0 +1,102 @@
+Class:SqlNodeList
+Field:EMPTY
+Method-name:add
+Method-returnType:void
+Method-parameters:[SqlNode node]
+Field:SINGLETON_EMPTY
+MethodInvocation:of
+Field:SINGLETON_STAR
+MethodInvocation:of
+Field:list
+Method-name:SqlNodeList
+Method-returnType:null
+Method-parameters:[SqlParserPos pos]
+Method-name:SqlNodeList
+Method-returnType:null
+Method-parameters:[Collection<? extends SqlNode> collection, SqlParserPos pos]
+Method-name:iterator
+Method-returnType:Iterator<SqlNode>
+Method-parameters:[]
+MethodInvocation:iterator
+Method-name:getList
+Method-returnType:List<SqlNode>
+Method-parameters:[]
+Method-name:add
+Method-returnType:void
+Method-parameters:[SqlNode node]
+MethodInvocation:add
+Method-name:clone
+Method-returnType:SqlNodeList
+Method-parameters:[SqlParserPos pos]
+Method-name:get
+Method-returnType:SqlNode
+Method-parameters:[int n]
+MethodInvocation:get
+Method-name:set
+Method-returnType:SqlNode
+Method-parameters:[int n, SqlNode node]
+MethodInvocation:set
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, int leftPrec, int rightPrec]
+MethodInvocation:list
+Method-name:commaList
+Method-returnType:void
+Method-parameters:[SqlWriter writer]
+MethodInvocation:unparse
+Method-name:andOrList
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlBinaryOperator sepOp]
+MethodInvocation:list
+Method-name:validate
+Method-returnType:void
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope]
+MethodInvocation:validate
+Method-name:accept
+Method-returnType:R
+Method-parameters:[SqlVisitor<R> visitor]
+MethodInvocation:visit
+Method-name:equalsDeep
+Method-returnType:boolean
+Method-parameters:[SqlNode node, Litmus litmus]
+MethodInvocation:fail
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:fail
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:equalsDeep
+MethodInvocation:fail
+MethodInvocation:succeed
+Method-name:toArray
+Method-returnType:SqlNode[]
+Method-parameters:[]
+MethodInvocation:toArray
+Method-name:isEmptyList
+Method-returnType:boolean
+Method-parameters:[final SqlNode node]
+MethodInvocation:size
+Method-name:of
+Method-returnType:SqlNodeList
+Method-parameters:[SqlNode node1]
+MethodInvocation:add
+Method-name:of
+Method-returnType:SqlNodeList
+Method-parameters:[SqlNode node1, SqlNode node2]
+MethodInvocation:add
+MethodInvocation:add
+Method-name:of
+Method-returnType:SqlNodeList
+Method-parameters:[SqlNode node1, SqlNode node2, SqlNode... nodes]
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+Method-name:validateExpr
+Method-returnType:void
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope]
+MethodInvocation:validateExpr

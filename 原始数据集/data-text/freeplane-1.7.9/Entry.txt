@@ -1,0 +1,170 @@
+Class:Entry
+Field:name
+Field:parent
+Field:builders
+Field:attributes
+Field:childEntries
+Method-name:Entry
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:name
+MethodInvocation:emptyList
+Method-name:setAttribute
+Method-returnType:void
+Method-parameters:[final String key, Object value]
+MethodInvocation:setAttributeObject
+Method-name:setAttribute
+Method-returnType:void
+Method-parameters:[Class<?> valueClass, Object value]
+MethodInvocation:setAttributeObject
+Method-name:setAttributeObject
+Method-returnType:void
+Method-parameters:[final Object key, Object value]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:put
+Method-name:getAttribute
+Method-returnType:Object
+Method-parameters:[final String key]
+MethodInvocation:get
+Method-name:getAttribute
+Method-returnType:T
+Method-parameters:[final Class<T> key]
+MethodInvocation:get
+Method-name:addChild
+Method-returnType:void
+Method-parameters:[Entry entry]
+MethodInvocation:add
+MethodInvocation:setParent
+Method-name:setParent
+Method-returnType:void
+Method-parameters:[Entry parent]
+FieldAccess:parent
+Method-name:setBuilders
+Method-returnType:Entry
+Method-parameters:[List<String> builders]
+FieldAccess:builders
+Method-name:setBuilders
+Method-returnType:Entry
+Method-parameters:[String... builders]
+MethodInvocation:setBuilders
+MethodInvocation:asList
+Method-name:getParent
+Method-returnType:Entry
+Method-parameters:[]
+Method-name:setName
+Method-returnType:void
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:getPath
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPath
+MethodInvocation:getName
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getChild
+Method-returnType:Entry
+Method-parameters:[int index]
+MethodInvocation:get
+Method-name:getChild
+Method-returnType:Entry
+Method-parameters:[int... indices]
+MethodInvocation:getChild
+Method-name:children
+Method-returnType:List<Entry>
+Method-parameters:[]
+Method-name:builders
+Method-returnType:Collection<String>
+Method-parameters:[]
+Method-name:removeChildren
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:removeAttribute
+Method-returnType:Object
+Method-parameters:[String key]
+MethodInvocation:remove
+Method-name:removeAttribute
+Method-returnType:T
+Method-parameters:[Class<T> valueClass]
+MethodInvocation:remove
+Method-name:hasChildren
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getChildCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getRoot
+Method-returnType:Entry
+Method-parameters:[]
+MethodInvocation:getRoot
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:getChild
+Method-returnType:Entry
+Method-parameters:[String name]
+MethodInvocation:children
+MethodInvocation:getName
+MethodInvocation:isEmpty
+MethodInvocation:getChild
+MethodInvocation:equals
+Method-name:findEntry
+Method-returnType:Entry
+Method-parameters:[String name]
+MethodInvocation:equals
+FieldAccess:name
+MethodInvocation:children
+MethodInvocation:findEntry
+Method-name:findEntries
+Method-returnType:List<Entry>
+Method-parameters:[String name]
+MethodInvocation:equals
+FieldAccess:name
+MethodInvocation:add
+MethodInvocation:children
+MethodInvocation:addAll
+MethodInvocation:findEntries
+Method-name:isLeaf
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getChildByPath
+Method-returnType:Entry
+Method-parameters:[String... names]
+MethodInvocation:isEmpty
+MethodInvocation:getChild
+Method-name:remove
+Method-returnType:void
+Method-parameters:[Entry entry]
+MethodInvocation:remove
+Method-name:getSelectedActionName
+Method-returnType:String
+Method-parameters:[MenuRadioActionComponentProvider menuRadioActionComponentProvider]
+MethodInvocation:getAttribute
+MethodInvocation:getParent
+MethodInvocation:getAttribute
+MethodInvocation:getParent
+MethodInvocation:getProperty
+MethodInvocation:getResourceController

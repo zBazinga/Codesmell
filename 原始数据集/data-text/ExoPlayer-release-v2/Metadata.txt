@@ -1,0 +1,75 @@
+Class:Metadata
+Method-name:getFormat
+Method-returnType:Format
+Method-parameters:[byte[] streamMarkerAndInfoBlock, FlacStreamMetadata flacStreamMetadata]
+MethodInvocation:getMetadataCopyWithAppendedEntriesFrom
+MethodInvocation:createAudioSampleFormat
+MethodInvocation:getBitRate
+MethodInvocation:singletonList
+Method-name:getWrappedMetadataFormat
+Method-returnType:Format
+Method-parameters:[]
+Method-name:getWrappedMetadataBytes
+Method-returnType:byte[]
+Method-parameters:[]
+Field:entries
+Method-name:Metadata
+Method-returnType:null
+Method-parameters:[Entry... entries]
+FieldAccess:entries
+Method-name:Metadata
+Method-returnType:null
+Method-parameters:[List<? extends Entry> entries]
+FieldAccess:entries
+MethodInvocation:size
+MethodInvocation:toArray
+FieldAccess:entries
+Method-name:Metadata
+Method-returnType:null
+Method-parameters:[Parcel in]
+MethodInvocation:readInt
+MethodInvocation:readParcelable
+MethodInvocation:getClassLoader
+Method-name:length
+Method-returnType:int
+Method-parameters:[]
+Method-name:get
+Method-returnType:Metadata.Entry
+Method-parameters:[int index]
+Method-name:copyWithAppendedEntriesFrom
+Method-returnType:Metadata
+Method-parameters:[@Nullable Metadata other]
+MethodInvocation:copyWithAppendedEntries
+Method-name:copyWithAppendedEntries
+Method-returnType:Metadata
+Method-parameters:[Entry... entriesToAppend]
+MethodInvocation:nullSafeArrayConcatenation
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:describeContents
+Method-returnType:int
+Method-parameters:[]
+Method-name:writeToParcel
+Method-returnType:void
+Method-parameters:[Parcel dest, int flags]
+MethodInvocation:writeInt
+MethodInvocation:writeParcelable
+Field:CREATOR
+Method-name:createFromParcel
+Method-returnType:Metadata
+Method-parameters:[Parcel in]
+Method-name:newArray
+Method-returnType:Metadata[]
+Method-parameters:[int size]

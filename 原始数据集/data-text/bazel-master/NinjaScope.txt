@@ -1,0 +1,114 @@
+Class:NinjaScope
+Field:parentScope
+Field:includePoint
+Field:includedScopes
+Field:subNinjaScopes
+Field:rules
+Field:pools
+Field:expandedVariables
+Method-name:NinjaScope
+Method-returnType:null
+Method-parameters:[]
+Method-name:NinjaScope
+Method-returnType:null
+Method-parameters:[@Nullable NinjaScope parentScope, @Nullable Long includePoint]
+FieldAccess:parentScope
+FieldAccess:includePoint
+FieldAccess:rules
+MethodInvocation:newTreeMap
+FieldAccess:pools
+MethodInvocation:newTreeMap
+FieldAccess:includedScopes
+MethodInvocation:newTreeMap
+FieldAccess:subNinjaScopes
+MethodInvocation:newTreeMap
+FieldAccess:expandedVariables
+MethodInvocation:newHashMap
+Method-name:findByNameAndOffset
+Method-returnType:Pair<Long,T>
+Method-parameters:[long offset, String name, NinjaScope scope, Function<NinjaScope,Map<String,List<Pair<Long,T>>>> mapFunction]
+MethodInvocation:get
+MethodInvocation:checkNotNull
+MethodInvocation:apply
+MethodInvocation:binarySearch
+MethodInvocation:of
+MethodInvocation:comparing
+MethodInvocation:get
+MethodInvocation:of
+MethodInvocation:getFirst
+MethodInvocation:getSecond
+Method-name:getRules
+Method-returnType:Map<String,List<Pair<Long,NinjaRule>>>
+Method-parameters:[]
+Method-name:setRules
+Method-returnType:void
+Method-parameters:[Map<String,List<Pair<Long,NinjaRule>>> rules]
+MethodInvocation:putAll
+FieldAccess:rules
+Method-name:getPools
+Method-returnType:Map<String,List<Pair<Long,NinjaPool>>>
+Method-parameters:[]
+Method-name:setPools
+Method-returnType:void
+Method-parameters:[Map<String,List<Pair<Long,NinjaPool>>> pools]
+MethodInvocation:putAll
+FieldAccess:pools
+Method-name:getIncludedScopes
+Method-returnType:Collection<NinjaScope>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getSubNinjaScopes
+Method-returnType:Collection<NinjaScope>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:addExpandedVariable
+Method-returnType:void
+Method-parameters:[Long offset, String name, String value]
+MethodInvocation:add
+MethodInvocation:computeIfAbsent
+MethodInvocation:newArrayList
+MethodInvocation:of
+Method-name:addIncluded
+Method-returnType:NinjaScope
+Method-parameters:[Long offset]
+MethodInvocation:put
+Method-name:addSubNinja
+Method-returnType:NinjaScope
+Method-parameters:[Long offset]
+MethodInvocation:put
+Method-name:findExpandedVariable
+Method-returnType:String
+Method-parameters:[long offset, String name]
+MethodInvocation:findByNameAndOffsetRecursively
+Method-name:findRule
+Method-returnType:NinjaRule
+Method-parameters:[long offset, String name]
+MethodInvocation:findByNameAndOffsetRecursively
+Method-name:findByNameAndOffsetRecursively
+Method-returnType:T
+Method-parameters:[long offset, String name, Function<NinjaScope,Map<String,List<Pair<Long,T>>>> mapSupplier]
+MethodInvocation:findByNameAndOffset
+MethodInvocation:checkNotNull
+MethodInvocation:getFirst
+MethodInvocation:subMap
+MethodInvocation:values
+MethodInvocation:descendingMap
+MethodInvocation:findByNameAndOffsetRecursively
+MethodInvocation:getSecond
+MethodInvocation:checkNotNull
+MethodInvocation:findByNameAndOffsetRecursively
+Method-name:createScopeFromExpandedValues
+Method-returnType:NinjaScope
+Method-parameters:[ImmutableSortedMap<String,List<Pair<Long,String>>> expandedVariables]
+MethodInvocation:putAll
+Method-name:iterate
+Method-returnType:void
+Method-parameters:[Consumer<NinjaScope> consumer]
+MethodInvocation:add
+MethodInvocation:isEmpty
+MethodInvocation:removeFirst
+MethodInvocation:accept
+MethodInvocation:addAll
+MethodInvocation:getIncludedScopes
+MethodInvocation:addAll
+MethodInvocation:getSubNinjaScopes

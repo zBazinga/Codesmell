@@ -1,0 +1,96 @@
+Class:QueueConfiguration
+Field:accountName
+Field:queueName
+Field:credentials
+Field:accessKey
+Field:serviceClient
+Field:operation
+Field:timeToLive
+Field:visibilityTimeout
+Field:maxMessages
+Field:timeout
+Method-name:getAccountName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAccountName
+Method-returnType:void
+Method-parameters:[String accountName]
+FieldAccess:accountName
+Method-name:getCredentials
+Method-returnType:StorageSharedKeyCredential
+Method-parameters:[]
+Method-name:setCredentials
+Method-returnType:void
+Method-parameters:[StorageSharedKeyCredential credentials]
+FieldAccess:credentials
+Method-name:getServiceClient
+Method-returnType:QueueServiceClient
+Method-parameters:[]
+Method-name:setServiceClient
+Method-returnType:void
+Method-parameters:[QueueServiceClient serviceClient]
+FieldAccess:serviceClient
+Method-name:getQueueName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setQueueName
+Method-returnType:void
+Method-parameters:[String queueName]
+FieldAccess:queueName
+Method-name:getAccessKey
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAccessKey
+Method-returnType:void
+Method-parameters:[String accessKey]
+FieldAccess:accessKey
+Method-name:getTimeToLive
+Method-returnType:Duration
+Method-parameters:[]
+Method-name:setTimeToLive
+Method-returnType:void
+Method-parameters:[Duration timeToLive]
+FieldAccess:timeToLive
+Method-name:getVisibilityTimeout
+Method-returnType:Duration
+Method-parameters:[]
+Method-name:setVisibilityTimeout
+Method-returnType:void
+Method-parameters:[Duration visibilityTimeout]
+FieldAccess:visibilityTimeout
+Method-name:getOperation
+Method-returnType:QueueOperationDefinition
+Method-parameters:[]
+Method-name:setOperation
+Method-returnType:void
+Method-parameters:[QueueOperationDefinition operation]
+FieldAccess:operation
+Method-name:getMaxMessages
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setMaxMessages
+Method-returnType:void
+Method-parameters:[Integer maxMessages]
+FieldAccess:maxMessages
+Method-name:getTimeout
+Method-returnType:Duration
+Method-parameters:[]
+Method-name:setTimeout
+Method-returnType:void
+Method-parameters:[Duration timeout]
+FieldAccess:timeout
+Method-name:copy
+Method-returnType:QueueConfiguration
+Method-parameters:[]
+Method-name:checkCredentials
+Method-returnType:void
+Method-parameters:[QueueComponent queueComponent]
+MethodInvocation:getServiceClient
+MethodInvocation:findByType
+MethodInvocation:getRegistry
+MethodInvocation:getCamelContext
+MethodInvocation:size
+MethodInvocation:setCredentials
+MethodInvocation:get
+MethodInvocation:findFirst
+MethodInvocation:stream

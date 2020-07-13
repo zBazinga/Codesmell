@@ -1,0 +1,247 @@
+Class:ArtifactFactory
+Field:CONCURRENCY_LEVEL
+MethodInvocation:availableProcessors
+MethodInvocation:getRuntime
+Field:STRIPED_LOCK
+MethodInvocation:lock
+Field:execRootParent
+Field:derivedPathPrefix
+Field:sourceArtifactCache
+Field:sourceArtifactRoots
+Field:siblingRepositoryLayout
+Field:packageRoots
+Method-name:ArtifactFactory
+Method-returnType:null
+Method-parameters:[Path execRootParent, String derivedPathPrefix]
+FieldAccess:execRootParent
+FieldAccess:derivedPathPrefix
+MethodInvocation:create
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:setSourceArtifactRoots
+Method-returnType:void
+Method-parameters:[ImmutableMap<Root,ArtifactRoot> sourceArtifactRoots]
+FieldAccess:sourceArtifactRoots
+Method-name:setSiblingRepositoryLayout
+Method-returnType:void
+Method-parameters:[boolean siblingRepositoryLayout]
+FieldAccess:siblingRepositoryLayout
+Method-name:setPackageRoots
+Method-returnType:void
+Method-parameters:[PackageRoots.PackageRootLookup packageRoots]
+FieldAccess:packageRoots
+Method-name:noteAnalysisStarting
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:newBuild
+Method-name:getSourceArtifact
+Method-returnType:SourceArtifact
+Method-parameters:[PathFragment execPath, Root root, ArtifactOwner owner]
+MethodInvocation:checkArgument
+MethodInvocation:isAbsolute
+MethodInvocation:isAbsolute
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+MethodInvocation:getArtifact
+MethodInvocation:checkNotNull
+MethodInvocation:get
+Method-name:getSourceArtifact
+Method-returnType:SourceArtifact
+Method-parameters:[PathFragment execPath, Root root]
+MethodInvocation:getSourceArtifact
+Method-name:validatePath
+Method-returnType:void
+Method-parameters:[PathFragment rootRelativePath, ArtifactRoot root]
+MethodInvocation:checkArgument
+MethodInvocation:isSourceRoot
+MethodInvocation:checkArgument
+MethodInvocation:isAbsolute
+MethodInvocation:isAbsolute
+MethodInvocation:getRoot
+MethodInvocation:checkArgument
+MethodInvocation:containsUplevelReferences
+MethodInvocation:checkArgument
+MethodInvocation:startsWith
+MethodInvocation:asPath
+MethodInvocation:getRoot
+MethodInvocation:getRoot
+MethodInvocation:getFileSystem
+MethodInvocation:asPath
+MethodInvocation:getRoot
+MethodInvocation:getFileSystem
+MethodInvocation:checkArgument
+MethodInvocation:equals
+MethodInvocation:asPath
+MethodInvocation:getRoot
+MethodInvocation:getRoot
+Method-name:getDerivedArtifact
+Method-returnType:Artifact.DerivedArtifact
+Method-parameters:[PathFragment rootRelativePath, ArtifactRoot root, ArtifactOwner owner]
+MethodInvocation:getDerivedArtifact
+Method-name:getDerivedArtifact
+Method-returnType:Artifact.DerivedArtifact
+Method-parameters:[PathFragment rootRelativePath, ArtifactRoot root, ArtifactOwner owner, boolean contentBasedPath]
+MethodInvocation:validatePath
+MethodInvocation:getArtifact
+MethodInvocation:getRelative
+MethodInvocation:getExecPath
+Method-name:getFilesetArtifact
+Method-returnType:Artifact.DerivedArtifact
+Method-parameters:[PathFragment rootRelativePath, ArtifactRoot root, ArtifactOwner owner]
+MethodInvocation:validatePath
+MethodInvocation:getArtifact
+MethodInvocation:getRelative
+MethodInvocation:getExecPath
+Method-name:getTreeArtifact
+Method-returnType:Artifact.SpecialArtifact
+Method-parameters:[PathFragment rootRelativePath, ArtifactRoot root, ArtifactOwner owner]
+MethodInvocation:validatePath
+MethodInvocation:getArtifact
+MethodInvocation:getRelative
+MethodInvocation:getExecPath
+Method-name:getSymlinkArtifact
+Method-returnType:Artifact.SpecialArtifact
+Method-parameters:[PathFragment rootRelativePath, ArtifactRoot root, ArtifactOwner owner]
+MethodInvocation:validatePath
+MethodInvocation:getArtifact
+MethodInvocation:getRelative
+MethodInvocation:getExecPath
+Method-name:getConstantMetadataArtifact
+Method-returnType:Artifact.DerivedArtifact
+Method-parameters:[PathFragment rootRelativePath, ArtifactRoot root, ArtifactOwner owner]
+MethodInvocation:validatePath
+MethodInvocation:getArtifact
+MethodInvocation:getRelative
+MethodInvocation:getExecPath
+Method-name:getArtifact
+Method-returnType:Artifact
+Method-parameters:[ArtifactRoot root, PathFragment execPath, ArtifactOwner owner, @Nullable SpecialArtifactType type, boolean contentBasedPath]
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+MethodInvocation:isSourceRoot
+MethodInvocation:createArtifact
+MethodInvocation:getArtifact
+MethodInvocation:differentOwnerOrRoot
+MethodInvocation:get
+MethodInvocation:lock
+MethodInvocation:getArtifact
+MethodInvocation:differentOwnerOrRoot
+MethodInvocation:createArtifact
+MethodInvocation:putArtifact
+MethodInvocation:unlock
+Method-name:resolveSourceArtifactWithAncestor
+Method-returnType:Artifact
+Method-parameters:[PathFragment relativePath, PathFragment baseExecPath, ArtifactRoot baseRoot, RepositoryName repositoryName]
+MethodInvocation:checkState
+MethodInvocation:checkState
+MethodInvocation:isEmpty
+MethodInvocation:getRelative
+MethodInvocation:containsUplevelReferences
+MethodInvocation:subFragment
+MethodInvocation:containsUplevelReferences
+MethodInvocation:isDerivedArtifact
+MethodInvocation:getArtifactIfValid
+MethodInvocation:findSourceRoot
+MethodInvocation:getRoot
+MethodInvocation:createArtifactIfNotValid
+Method-name:findSourceRoot
+Method-returnType:Root
+Method-parameters:[PathFragment execPath, @Nullable PathFragment baseExecPath, @Nullable Root baseRoot, RepositoryName repositoryName]
+MethodInvocation:getParentDirectory
+MethodInvocation:fromPathFragment
+MethodInvocation:getFirst
+MethodInvocation:getSecond
+MethodInvocation:equals
+MethodInvocation:getRootForPackage
+MethodInvocation:create
+MethodInvocation:getParentDirectory
+MethodInvocation:equals
+Method-name:resolveSourceArtifact
+Method-returnType:Artifact
+Method-parameters:[PathFragment execPath, @SuppressWarnings("unused") RepositoryName repositoryName]
+MethodInvocation:resolveSourceArtifactWithAncestor
+Method-name:resolveSourceArtifacts
+Method-returnType:Map<PathFragment,Artifact>
+Method-parameters:[Iterable<PathFragment> execPaths, PackageRootResolver resolver]
+MethodInvocation:containsUplevelReferences
+MethodInvocation:put
+MethodInvocation:getArtifactIfValid
+MethodInvocation:put
+MethodInvocation:isDerivedArtifact
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:findPackageRootsForFiles
+MethodInvocation:put
+MethodInvocation:createArtifactIfNotValid
+MethodInvocation:get
+Method-name:getPathFromSourceExecPath
+Method-returnType:Path
+Method-parameters:[Path execRoot, PathFragment execPath]
+MethodInvocation:checkState
+MethodInvocation:startsWith
+MethodInvocation:getRootForPackage
+MethodInvocation:create
+MethodInvocation:getRelative
+MethodInvocation:getRelative
+Method-name:createArtifactIfNotValid
+Method-returnType:Artifact
+Method-parameters:[Root sourceRoot, PathFragment execPath]
+MethodInvocation:getArtifact
+MethodInvocation:equals
+MethodInvocation:getRoot
+MethodInvocation:getRoot
+MethodInvocation:getArtifactIfValid
+MethodInvocation:markEntryAsValid
+MethodInvocation:checkState
+MethodInvocation:equals
+MethodInvocation:getSourceArtifact
+Method-name:isDerivedArtifact
+Method-returnType:boolean
+Method-parameters:[PathFragment execPath]
+MethodInvocation:startsWith
+Class:SourceArtifactCache
+Field:pathToSourceArtifact
+Field:buildId
+Method-name:getArtifact
+Method-returnType:SourceArtifact
+Method-parameters:[PathFragment execPath]
+MethodInvocation:get
+MethodInvocation:getArtifact
+Method-name:getArtifactIfValid
+Method-returnType:Artifact
+Method-parameters:[PathFragment execPath]
+MethodInvocation:get
+MethodInvocation:getIdOfBuild
+MethodInvocation:getArtifact
+Method-name:markEntryAsValid
+Method-returnType:void
+Method-parameters:[PathFragment execPath]
+MethodInvocation:checkNotNull
+MethodInvocation:getArtifact
+MethodInvocation:putArtifact
+Method-name:newBuild
+Method-returnType:void
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:putArtifact
+Method-returnType:void
+Method-parameters:[PathFragment execPath, SourceArtifact artifact]
+MethodInvocation:put
+Class:Entry
+Field:artifact
+Field:idOfBuild
+Method-name:Entry
+Method-returnType:null
+Method-parameters:[SourceArtifact artifact]
+FieldAccess:artifact
+Method-name:getArtifact
+Method-returnType:SourceArtifact
+Method-parameters:[]
+Method-name:getIdOfBuild
+Method-returnType:int
+Method-parameters:[]

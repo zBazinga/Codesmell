@@ -1,0 +1,46 @@
+Class:TableSourceImpl
+Field:explicitCatalog
+Field:explicitSchema
+Field:explicitTableName
+Field:rowId
+Field:comment
+Field:checkConstraint
+Method-name:TableSourceImpl
+Method-returnType:null
+Method-parameters:[MappingDocument mappingDocument, String explicitSchema, String explicitCatalog, String explicitTableName, String rowId, String comment, String checkConstraint]
+FieldAccess:explicitCatalog
+MethodInvocation:determineCatalogName
+FieldAccess:explicitSchema
+MethodInvocation:determineSchemaName
+FieldAccess:explicitTableName
+FieldAccess:rowId
+FieldAccess:comment
+FieldAccess:checkConstraint
+Method-name:getExplicitCatalogName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getExplicitSchemaName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getExplicitTableName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getRowId
+Method-returnType:String
+Method-parameters:[]
+Method-name:getComment
+Method-returnType:String
+Method-parameters:[]
+Method-name:getCheckConstraint
+Method-returnType:String
+Method-parameters:[]
+Method-name:determineCatalogName
+Method-returnType:String
+Method-parameters:[MappingDocument mappingDocument, String catalogName]
+MethodInvocation:getCatalog
+MethodInvocation:getDocumentRoot
+Method-name:determineSchemaName
+Method-returnType:String
+Method-parameters:[MappingDocument mappingDocument, String schemaName]
+MethodInvocation:getSchema
+MethodInvocation:getDocumentRoot

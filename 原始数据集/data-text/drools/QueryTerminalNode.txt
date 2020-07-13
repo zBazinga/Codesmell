@@ -1,0 +1,164 @@
+Class:QueryTerminalNode
+Field:serialVersionUID
+Field:type
+Field:query
+Field:subrule
+Field:subruleIndex
+Field:allDeclarations
+Field:requiredDeclarations
+Field:previousTupleSinkNode
+Field:nextTupleSinkNode
+Field:leftInputOtnId
+Method-name:QueryTerminalNode
+Method-returnType:null
+Method-parameters:[]
+Method-name:QueryTerminalNode
+Method-returnType:null
+Method-parameters:[final int id, final LeftTupleSource source, final RuleImpl rule, final GroupElement subrule, final int subruleIndex, final BuildContext context]
+MethodInvocation:getPartitionId
+MethodInvocation:isMultithreadEvaluation
+MethodInvocation:getConfiguration
+MethodInvocation:getKnowledgeBase
+FieldAccess:query
+FieldAccess:subrule
+FieldAccess:subruleIndex
+MethodInvocation:initDeclaredMask
+MethodInvocation:initInferredMask
+MethodInvocation:initDeclarations
+MethodInvocation:calculateHashCode
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:readInt
+MethodInvocation:initDeclarations
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+MethodInvocation:writeInt
+Method-name:getQuery
+Method-returnType:QueryImpl
+Method-parameters:[]
+Method-name:getRule
+Method-returnType:RuleImpl
+Method-parameters:[]
+FieldAccess:query
+Method-name:calculateHashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+FieldAccess:query
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[final Object object]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:equals
+FieldAccess:query
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getId
+MethodInvocation:getName
+FieldAccess:query
+Method-name:getSubRule
+Method-returnType:GroupElement
+Method-parameters:[]
+FieldAccess:subrule
+Method-name:isFireDirect
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getAllDeclarations
+Method-returnType:Declaration[]
+Method-parameters:[]
+FieldAccess:allDeclarations
+Method-name:getRequiredDeclarations
+Method-returnType:Declaration[]
+Method-parameters:[]
+FieldAccess:requiredDeclarations
+Method-name:initDeclarations
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getOuterDeclarations
+FieldAccess:allDeclarations
+MethodInvocation:toArray
+MethodInvocation:values
+MethodInvocation:size
+FieldAccess:requiredDeclarations
+FieldAccess:length
+MethodInvocation:getParameters
+MethodInvocation:getParameters
+FieldAccess:requiredDeclarations
+MethodInvocation:get
+MethodInvocation:getIdentifier
+Method-name:getSubruleIndex
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:subruleIndex
+Method-name:getPreviousLeftTupleSinkNode
+Method-returnType:LeftTupleSinkNode
+Method-parameters:[]
+FieldAccess:previousTupleSinkNode
+Method-name:setPreviousLeftTupleSinkNode
+Method-returnType:void
+Method-parameters:[final LeftTupleSinkNode previous]
+FieldAccess:previousTupleSinkNode
+Method-name:getNextLeftTupleSinkNode
+Method-returnType:LeftTupleSinkNode
+Method-parameters:[]
+FieldAccess:nextTupleSinkNode
+Method-name:setNextLeftTupleSinkNode
+Method-returnType:void
+Method-parameters:[final LeftTupleSinkNode next]
+FieldAccess:nextTupleSinkNode
+Method-name:getType
+Method-returnType:short
+Method-parameters:[]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[InternalFactHandle factHandle, Sink sink, boolean leftTupleMemoryEnabled]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[final InternalFactHandle factHandle, final LeftTuple leftTuple, final Sink sink]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, Sink sink, PropagationContext pctx, boolean leftTupleMemoryEnabled]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, RightTuple rightTuple, Sink sink]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, RightTuple rightTuple, LeftTuple currentLeftChild, LeftTuple currentRightChild, Sink sink, boolean leftTupleMemoryEnabled]
+Method-name:getLeftInputOtnId
+Method-returnType:ObjectTypeNode.Id
+Method-parameters:[]
+Method-name:setLeftInputOtnId
+Method-returnType:void
+Method-parameters:[ObjectTypeNode.Id leftInputOtnId]
+FieldAccess:leftInputOtnId
+Method-name:createPeer
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple original]
+Method-name:getSalienceDeclarations
+Method-returnType:Declaration[]
+Method-parameters:[]
+Method-name:attach
+Method-returnType:void
+Method-parameters:[BuildContext context]
+MethodInvocation:addTupleSink
+MethodInvocation:getLeftTupleSource
+MethodInvocation:addAssociation
+MethodInvocation:getRule
+Method-name:doNode
+Method-returnType:void
+Method-parameters:[InternalAgenda agenda, TupleSets<LeftTuple> srcLeftTuples, LinkedList<StackEntry> stack, PhreakQueryTerminalNode phreakQueryTerminalNode]
+MethodInvocation:getDeleteFirst
+MethodInvocation:doLeftDeletes
+MethodInvocation:getUpdateFirst
+MethodInvocation:doLeftUpdates
+MethodInvocation:getInsertFirst
+MethodInvocation:doLeftInserts
+MethodInvocation:resetAll

@@ -1,0 +1,98 @@
+Class:SearchModule
+Field:DUMB
+Field:searchList
+Field:actorRef
+Method-name:SearchModule
+Method-returnType:null
+Method-parameters:[Modules modules]
+MethodInvocation:createList
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:actorOf
+MethodInvocation:system
+MethodInvocation:context
+Method-name:getSearchList
+Method-returnType:ListEngine<SearchEntity>
+Method-parameters:[]
+Method-name:findTextMessages
+Method-returnType:Promise<List<MessageSearchEntity>>
+Method-parameters:[Peer peer, String query]
+MethodInvocation:add
+MethodInvocation:getApiOutPeer
+MethodInvocation:add
+MethodInvocation:findMessages
+Method-name:findAllDocs
+Method-returnType:Promise<List<MessageSearchEntity>>
+Method-parameters:[Peer peer]
+MethodInvocation:findAllContent
+Method-name:findAllLinks
+Method-returnType:Promise<List<MessageSearchEntity>>
+Method-parameters:[Peer peer]
+MethodInvocation:findAllContent
+Method-name:findAllPhotos
+Method-returnType:Promise<List<MessageSearchEntity>>
+Method-parameters:[Peer peer]
+MethodInvocation:findAllContent
+Method-name:findAllContent
+Method-returnType:Promise<List<MessageSearchEntity>>
+Method-parameters:[Peer peer, ApiSearchContentType contentType]
+MethodInvocation:add
+MethodInvocation:getApiOutPeer
+MethodInvocation:add
+MethodInvocation:findMessages
+Method-name:findPeers
+Method-returnType:Promise<List<PeerSearchEntity>>
+Method-parameters:[PeerSearchType type]
+MethodInvocation:add
+MethodInvocation:findPeers
+Method-name:findPeers
+Method-returnType:Promise<List<PeerSearchEntity>>
+Method-parameters:[String query]
+MethodInvocation:add
+MethodInvocation:findPeers
+Method-name:findPeers
+Method-returnType:Promise<List<PeerSearchEntity>>
+Method-parameters:[ArrayList<ApiSearchCondition> conditions]
+MethodInvocation:map
+MethodInvocation:chain
+MethodInvocation:chain
+MethodInvocation:api
+MethodInvocation:applyRelatedData
+MethodInvocation:updates
+MethodInvocation:getUsers
+MethodInvocation:getGroups
+MethodInvocation:loadRequiredPeers
+MethodInvocation:updates
+MethodInvocation:getUserPeers
+MethodInvocation:getGroupPeers
+MethodInvocation:map
+MethodInvocation:of
+MethodInvocation:getSearchResults
+MethodInvocation:convert
+MethodInvocation:getPeer
+MethodInvocation:getOptMatchString
+Method-name:findPublicGroupById
+Method-returnType:Promise<Peer>
+Method-parameters:[int gid]
+MethodInvocation:add
+MethodInvocation:map
+MethodInvocation:loadRequiredPeers
+MethodInvocation:updates
+MethodInvocation:group
+Method-name:buildSearchModel
+Method-returnType:SearchValueModel<SearchResult>
+Method-parameters:[]
+MethodInvocation:context
+Method-name:onDialogsChanged
+Method-returnType:void
+Method-parameters:[List<Dialog> dialogs]
+MethodInvocation:send
+Method-name:onContactsChanged
+Method-returnType:void
+Method-parameters:[Integer[] contacts]
+MethodInvocation:send
+Method-name:resetModule
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:send

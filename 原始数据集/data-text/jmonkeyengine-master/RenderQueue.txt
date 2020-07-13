@@ -1,0 +1,67 @@
+Class:RenderQueue
+Field:opaqueList
+Field:guiList
+Field:transparentList
+Field:translucentList
+Field:skyList
+Method-name:RenderQueue
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:opaqueList
+FieldAccess:guiList
+FieldAccess:transparentList
+FieldAccess:translucentList
+FieldAccess:skyList
+Field:Bucket
+Field:ShadowMode
+Method-name:setGeometryComparator
+Method-returnType:void
+Method-parameters:[Bucket bucket, GeometryComparator c]
+Method-name:getGeometryComparator
+Method-returnType:GeometryComparator
+Method-parameters:[Bucket bucket]
+MethodInvocation:getComparator
+MethodInvocation:getComparator
+MethodInvocation:getComparator
+MethodInvocation:getComparator
+MethodInvocation:getComparator
+Method-name:addToQueue
+Method-returnType:void
+Method-parameters:[Geometry g, Bucket bucket]
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+Method-name:renderShadowQueue
+Method-returnType:void
+Method-parameters:[GeometryList list, RenderManager rm, Camera cam, boolean clear]
+MethodInvocation:renderGeometryList
+Method-name:isQueueEmpty
+Method-returnType:boolean
+Method-parameters:[Bucket bucket]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+Method-name:renderQueue
+Method-returnType:void
+Method-parameters:[Bucket bucket, RenderManager rm, Camera cam]
+MethodInvocation:renderQueue
+Method-name:renderQueue
+Method-returnType:void
+Method-parameters:[Bucket bucket, RenderManager rm, Camera cam, boolean clear]
+MethodInvocation:renderGeometryList
+MethodInvocation:renderGeometryList
+MethodInvocation:renderGeometryList
+MethodInvocation:renderGeometryList
+MethodInvocation:renderGeometryList
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear

@@ -1,0 +1,56 @@
+Class:ArrayIsStoredDirectlyRule
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTClassOrInterfaceDeclaration node, Object data]
+MethodInvocation:isInterface
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTConstructorDeclaration node, Object data]
+MethodInvocation:getArrays
+MethodInvocation:getFormalParameters
+MethodInvocation:findDescendantsOfType
+MethodInvocation:checkAll
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTMethodDeclaration node, Object data]
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:getArrays
+MethodInvocation:checkAll
+MethodInvocation:findDescendantsOfType
+Method-name:checkAll
+Method-returnType:void
+Method-parameters:[Object context, ASTFormalParameter[] arrs, List<ASTBlockStatement> bs]
+MethodInvocation:checkForDirectAssignment
+Method-name:getExpressionVarName
+Method-returnType:String
+Method-parameters:[Node e]
+MethodInvocation:getFirstNameImage
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:getImage
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:usesThisModifier
+MethodInvocation:usesSuperModifier
+Method-name:checkForDirectAssignment
+Method-returnType:boolean
+Method-parameters:[Object ctx, final ASTFormalParameter parameter, final List<ASTBlockStatement> bs]
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:getImage
+MethodInvocation:hasDescendantOfType
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:getChild
+MethodInvocation:getExpressionVarName
+MethodInvocation:getChild
+MethodInvocation:getFirstParentOfType
+MethodInvocation:getFirstParentOfType
+MethodInvocation:isLocalVariable
+MethodInvocation:getNumChildren
+MethodInvocation:getChild
+MethodInvocation:hasDescendantOfType
+MethodInvocation:getExpressionVarName
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:isArrayDereference
+MethodInvocation:equals
+MethodInvocation:getFirstParentOfType
+MethodInvocation:getFirstParentOfType
+MethodInvocation:isLocalVariable
+MethodInvocation:addViolation

@@ -1,0 +1,95 @@
+Class:FilterSelectivityEstimator
+Field:childRel
+Field:childCardinality
+Field:mq
+Method-name:FilterSelectivityEstimator
+Method-returnType:null
+Method-parameters:[RelNode childRel, RelMetadataQuery mq]
+FieldAccess:mq
+FieldAccess:childRel
+FieldAccess:childCardinality
+MethodInvocation:getRowCount
+Method-name:estimateSelectivity
+Method-returnType:Double
+Method-parameters:[RexNode predicate]
+MethodInvocation:accept
+Method-name:visitInputRef
+Method-returnType:Double
+Method-parameters:[RexInputRef inputRef]
+MethodInvocation:getSqlTypeName
+MethodInvocation:getType
+Method-name:visitCall
+Method-returnType:Double
+Method-parameters:[RexCall call]
+MethodInvocation:isPartitionPredicate
+FieldAccess:childRel
+MethodInvocation:getOp
+MethodInvocation:computeConjunctionSelectivity
+MethodInvocation:computeDisjunctionSelectivity
+MethodInvocation:computeNotEqualitySelectivity
+MethodInvocation:getMaxNulls
+MethodInvocation:getRowCount
+MethodInvocation:max
+MethodInvocation:computeNotEqualitySelectivity
+MethodInvocation:computeFunctionSelectivity
+MethodInvocation:size
+MethodInvocation:computeFunctionSelectivity
+Method-name:computeNotEqualitySelectivity
+Method-returnType:Double
+Method-parameters:[RexCall call]
+MethodInvocation:getMaxNDV
+Method-name:computeFunctionSelectivity
+Method-returnType:Double
+Method-parameters:[RexCall call]
+MethodInvocation:getMaxNDV
+Method-name:computeDisjunctionSelectivity
+Method-returnType:Double
+Method-parameters:[RexCall call]
+MethodInvocation:getOperands
+MethodInvocation:accept
+Method-name:computeConjunctionSelectivity
+Method-returnType:Double
+Method-parameters:[RexCall call]
+MethodInvocation:getOperands
+MethodInvocation:accept
+Method-name:getMaxNulls
+Method-returnType:long
+Method-parameters:[RexCall call, HiveTableScan t]
+MethodInvocation:getInputRefs
+MethodInvocation:getColStat
+MethodInvocation:getNumNulls
+Method-name:getMaxNDV
+Method-returnType:Double
+Method-parameters:[RexCall call]
+MethodInvocation:getOperands
+MethodInvocation:getDistinctRowCount
+FieldAccess:childRel
+MethodInvocation:getIndex
+MethodInvocation:apply
+MethodInvocation:getDistinctRowCount
+FieldAccess:childRel
+Method-name:isPartitionPredicate
+Method-returnType:boolean
+Method-parameters:[RexNode expr, RelNode r]
+MethodInvocation:pushFilterPastProject
+MethodInvocation:isPartitionPredicate
+MethodInvocation:getInput
+MethodInvocation:isPartitionPredicate
+MethodInvocation:getInput
+MethodInvocation:getTable
+MethodInvocation:bits
+MethodInvocation:containsPartitionColumnsOnly
+Method-name:getOp
+Method-returnType:SqlKind
+Method-parameters:[RexCall call]
+MethodInvocation:getKind
+MethodInvocation:equals
+MethodInvocation:getKind
+MethodInvocation:inBooleanFamily
+MethodInvocation:getType
+MethodInvocation:getOperator
+MethodInvocation:getName
+MethodInvocation:equalsIgnoreCase
+Method-name:visitLiteral
+Method-returnType:Double
+Method-parameters:[RexLiteral literal]

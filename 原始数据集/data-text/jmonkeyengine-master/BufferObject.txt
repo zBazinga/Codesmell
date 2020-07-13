@@ -1,0 +1,339 @@
+Class:BufferObject
+Field:CLASS_TO_VAR_TYPE
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+Method-name:getVarTypeByValue
+Method-returnType:VarType
+Method-parameters:[final Object value]
+MethodInvocation:get
+MethodInvocation:getClass
+MethodInvocation:isEmpty
+MethodInvocation:getVarTypeByValue
+MethodInvocation:get
+MethodInvocation:getVarTypeByValue
+MethodInvocation:next
+MethodInvocation:iterator
+Field:Layout
+Field:BufferType
+Field:requiredCaps
+Method-name:BufferType
+Method-returnType:null
+Method-parameters:[final Caps requiredCaps]
+FieldAccess:requiredCaps
+Method-name:getRequiredCaps
+Method-returnType:Caps
+Method-parameters:[]
+Field:fields
+Field:fieldArray
+Field:layout
+Field:binding
+Field:bufferType
+Field:previousData
+Method-name:BufferObject
+Method-returnType:null
+Method-parameters:[final int binding, final Layout layout, final BufferType bufferType]
+FieldAccess:handleRef
+FieldAccess:bufferType
+FieldAccess:binding
+FieldAccess:layout
+FieldAccess:fields
+FieldAccess:fieldArray
+Method-name:BufferObject
+Method-returnType:null
+Method-parameters:[final int binding, final Layout layout]
+Method-name:BufferObject
+Method-returnType:null
+Method-parameters:[final int binding, final BufferType bufferType]
+Method-name:BufferObject
+Method-returnType:null
+Method-parameters:[final BufferType bufferType]
+Method-name:BufferObject
+Method-returnType:null
+Method-parameters:[final Layout layout]
+Method-name:BufferObject
+Method-returnType:null
+Method-parameters:[final int binding]
+Method-name:BufferObject
+Method-returnType:null
+Method-parameters:[]
+Method-name:BufferObject
+Method-returnType:null
+Method-parameters:[final Void unused, final int id]
+FieldAccess:fieldArray
+FieldAccess:fields
+FieldAccess:layout
+FieldAccess:binding
+Method-name:declareField
+Method-returnType:void
+Method-parameters:[final String name, final VarType varType]
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:add
+Method-name:getBufferType
+Method-returnType:BufferType
+Method-parameters:[]
+Method-name:setBufferType
+Method-returnType:void
+Method-parameters:[final BufferType bufferType]
+MethodInvocation:getId
+FieldAccess:bufferType
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[final String name, final Object value]
+MethodInvocation:get
+MethodInvocation:declareField
+MethodInvocation:getVarTypeByValue
+MethodInvocation:get
+MethodInvocation:setValue
+MethodInvocation:setUpdateNeeded
+Method-name:getFieldValue
+Method-returnType:T
+Method-parameters:[final String name]
+MethodInvocation:get
+MethodInvocation:getValue
+Method-name:getBinding
+Method-returnType:int
+Method-parameters:[]
+Method-name:resetObject
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:id
+MethodInvocation:setUpdateNeeded
+Method-name:computeData
+Method-returnType:ByteBuffer
+Method-parameters:[final int maxSize]
+MethodInvocation:estimateSize
+MethodInvocation:capacity
+MethodInvocation:destroyDirectBuffer
+MethodInvocation:clear
+MethodInvocation:createByteBuffer
+MethodInvocation:writeField
+MethodInvocation:flip
+FieldAccess:previousData
+Method-name:estimateSize
+Method-returnType:int
+Method-parameters:[final BufferObjectField field]
+MethodInvocation:getType
+MethodInvocation:estimate
+MethodInvocation:getValue
+MethodInvocation:estimate
+MethodInvocation:getValue
+MethodInvocation:estimateArray
+MethodInvocation:getValue
+MethodInvocation:estimateArray
+MethodInvocation:getValue
+MethodInvocation:estimateArray
+MethodInvocation:getValue
+MethodInvocation:estimateArray
+MethodInvocation:getValue
+MethodInvocation:estimateArray
+MethodInvocation:getValue
+MethodInvocation:getType
+Method-name:estimateArray
+Method-returnType:int
+Method-parameters:[final Object value, final int multiplier]
+FieldAccess:length
+MethodInvocation:size
+Method-name:estimate
+Method-returnType:int
+Method-parameters:[final float[] values]
+Method-name:estimate
+Method-returnType:int
+Method-parameters:[final int[] values]
+Method-name:writeField
+Method-returnType:void
+Method-parameters:[final BufferObjectField field, final ByteBuffer data]
+MethodInvocation:getValue
+MethodInvocation:getType
+MethodInvocation:putInt
+MethodInvocation:intValue
+MethodInvocation:putInt
+MethodInvocation:putLong
+MethodInvocation:putFloat
+MethodInvocation:floatValue
+MethodInvocation:putInt
+MethodInvocation:putLong
+MethodInvocation:put
+MethodInvocation:putInt
+MethodInvocation:putLong
+MethodInvocation:putShort
+MethodInvocation:put
+MethodInvocation:writeOther
+MethodInvocation:write
+MethodInvocation:writeVec4
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:writeVec2Array
+MethodInvocation:writeVec3Array
+MethodInvocation:writeVec4Array
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:writeMat3Array
+MethodInvocation:writeMat4Array
+MethodInvocation:getType
+Method-name:writeMat3Array
+Method-returnType:void
+Method-parameters:[final ByteBuffer data, final Object value]
+MethodInvocation:write
+MethodInvocation:getArray
+MethodInvocation:write
+MethodInvocation:write
+Method-name:writeMat4Array
+Method-returnType:void
+Method-parameters:[final ByteBuffer data, final Object value]
+MethodInvocation:write
+MethodInvocation:getArray
+MethodInvocation:write
+MethodInvocation:write
+Method-name:writeVec4Array
+Method-returnType:void
+Method-parameters:[final ByteBuffer data, final Object value]
+MethodInvocation:writeVec4
+MethodInvocation:getArray
+MethodInvocation:writeVec4
+MethodInvocation:writeVec4
+Method-name:writeVec3Array
+Method-returnType:void
+Method-parameters:[final ByteBuffer data, final Object value]
+MethodInvocation:write
+MethodInvocation:getArray
+MethodInvocation:write
+MethodInvocation:write
+Method-name:writeVec2Array
+Method-returnType:void
+Method-parameters:[final ByteBuffer data, final Object value]
+MethodInvocation:writeOther
+MethodInvocation:getArray
+MethodInvocation:writeOther
+MethodInvocation:writeOther
+Method-name:write
+Method-returnType:void
+Method-parameters:[final ByteBuffer data, final float[] value]
+MethodInvocation:putFloat
+Method-name:write
+Method-returnType:void
+Method-parameters:[final ByteBuffer data, final int[] value]
+MethodInvocation:putInt
+Method-name:writeVec4
+Method-returnType:void
+Method-parameters:[final ByteBuffer data, final Object value]
+MethodInvocation:putLong
+MethodInvocation:putLong
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:getX
+MethodInvocation:getY
+MethodInvocation:getZ
+MethodInvocation:getW
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:getX
+MethodInvocation:getY
+MethodInvocation:getZ
+MethodInvocation:getW
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:getRed
+MethodInvocation:getGreen
+MethodInvocation:getBlue
+MethodInvocation:getAlpha
+Method-name:write
+Method-returnType:void
+Method-parameters:[final ByteBuffer data, final Vector3f value]
+MethodInvocation:putInt
+MethodInvocation:putLong
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:getX
+MethodInvocation:getY
+MethodInvocation:getZ
+MethodInvocation:putInt
+Method-name:write
+Method-returnType:void
+Method-parameters:[final ByteBuffer data, final float x, final float y, final float z]
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:putInt
+Method-name:write
+Method-returnType:void
+Method-parameters:[final ByteBuffer data, final float x, final float y, final float z, final float w]
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+Method-name:write
+Method-returnType:void
+Method-parameters:[final ByteBuffer data, final Matrix3f value]
+MethodInvocation:write
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:write
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:write
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+Method-name:write
+Method-returnType:void
+Method-parameters:[final ByteBuffer data, final Matrix4f value]
+MethodInvocation:write
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:write
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:write
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:write
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+Method-name:deleteObject
+Method-returnType:void
+Method-parameters:[final Object rendererObject]
+MethodInvocation:deleteBuffer
+Method-name:createDestructableClone
+Method-returnType:NativeObject
+Method-parameters:[]
+MethodInvocation:getId
+Method-name:deleteNativeBuffers
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:destroyDirectBuffer
+Method-name:getUniqueId
+Method-returnType:long
+Method-parameters:[]

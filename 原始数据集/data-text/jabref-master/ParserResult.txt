@@ -1,0 +1,143 @@
+Class:ParserResult
+Field:entryTypes
+Field:warnings
+Field:database
+Field:metaData
+Field:file
+Field:invalid
+Field:toOpenTab
+Field:changedOnMigration
+Method-name:ParserResult
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:emptyList
+Method-name:ParserResult
+Method-returnType:null
+Method-parameters:[Collection<BibEntry> entries]
+MethodInvocation:purgeEmptyEntries
+Method-name:ParserResult
+Method-returnType:null
+Method-parameters:[BibDatabase database]
+Method-name:ParserResult
+Method-returnType:null
+Method-parameters:[BibDatabase database, MetaData metaData, Set<BibEntryType> entryTypes]
+FieldAccess:database
+MethodInvocation:requireNonNull
+FieldAccess:metaData
+MethodInvocation:requireNonNull
+FieldAccess:entryTypes
+MethodInvocation:requireNonNull
+Method-name:fromErrorMessage
+Method-returnType:ParserResult
+Method-parameters:[String message]
+MethodInvocation:addWarning
+MethodInvocation:setInvalid
+Method-name:getErrorMessage
+Method-returnType:String
+Method-parameters:[Exception exception]
+MethodInvocation:getLocalizedMessage
+MethodInvocation:getCause
+MethodInvocation:getLocalizedMessage
+MethodInvocation:getCause
+Method-name:fromError
+Method-returnType:ParserResult
+Method-parameters:[Exception exception]
+MethodInvocation:fromErrorMessage
+MethodInvocation:getErrorMessage
+Method-name:toOpenTab
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setToOpenTab
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:toOpenTab
+Method-name:getDatabase
+Method-returnType:BibDatabase
+Method-parameters:[]
+Method-name:getMetaData
+Method-returnType:MetaData
+Method-parameters:[]
+Method-name:setMetaData
+Method-returnType:void
+Method-parameters:[MetaData md]
+FieldAccess:metaData
+Method-name:getEntryTypes
+Method-returnType:Set<BibEntryType>
+Method-parameters:[]
+Method-name:getFile
+Method-returnType:Optional<File>
+Method-parameters:[]
+MethodInvocation:map
+MethodInvocation:ofNullable
+Method-name:setFile
+Method-returnType:void
+Method-parameters:[File f]
+MethodInvocation:toPath
+Method-name:addWarning
+Method-returnType:void
+Method-parameters:[String s]
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:addException
+Method-returnType:void
+Method-parameters:[Exception exception]
+MethodInvocation:getErrorMessage
+MethodInvocation:addWarning
+Method-name:hasWarnings
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:warnings
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:isInvalid
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setInvalid
+Method-returnType:void
+Method-parameters:[boolean invalid]
+FieldAccess:invalid
+Method-name:getErrorMessage
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:warnings
+MethodInvocation:joining
+Method-name:getDatabaseContext
+Method-returnType:BibDatabaseContext
+Method-parameters:[]
+Method-name:setDatabaseContext
+Method-returnType:void
+Method-parameters:[BibDatabaseContext bibDatabaseContext]
+MethodInvocation:requireNonNull
+MethodInvocation:getDatabase
+MethodInvocation:getMetaData
+MethodInvocation:orElse
+MethodInvocation:getDatabasePath
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasEntries
+MethodInvocation:getDatabase
+MethodInvocation:hasNoStrings
+MethodInvocation:getDatabase
+MethodInvocation:isEmpty
+MethodInvocation:getPreamble
+MethodInvocation:getDatabase
+MethodInvocation:isEmpty
+MethodInvocation:getMetaData
+Method-name:wasChangedOnMigration
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setChangedOnMigration
+Method-returnType:void
+Method-parameters:[boolean wasChangedOnMigration]
+FieldAccess:changedOnMigration
+Method-name:getBibDatabaseModeFromParserResult
+Method-returnType:BibDatabaseMode
+Method-parameters:[CheckForNewEntryTypesAction checkForNewEntryTypesAction]
+MethodInvocation:orElse
+MethodInvocation:getMode
+MethodInvocation:getMetaData
+MethodInvocation:getDefaultBibDatabaseMode

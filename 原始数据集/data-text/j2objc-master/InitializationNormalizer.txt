@@ -1,0 +1,108 @@
+Class:InitializationNormalizer
+Field:captureInfo
+Method-name:InitializationNormalizer
+Method-returnType:null
+Method-parameters:[CompilationUnit unit]
+MethodInvocation:captureInfo
+MethodInvocation:getEnv
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[TypeDeclaration node]
+MethodInvocation:normalizeMembers
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[EnumDeclaration node]
+MethodInvocation:normalizeMembers
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[AnnotationTypeDeclaration node]
+MethodInvocation:normalizeMembers
+Class:TypeNormalizer
+Field:node
+Field:type
+Field:initStatements
+Field:classInitStatements
+Field:constInitIdx
+Method-name:TypeNormalizer
+Method-returnType:null
+Method-parameters:[AbstractTypeDeclaration node]
+FieldAccess:node
+MethodInvocation:getTypeElement
+MethodInvocation:getClassInitStatements
+Method-name:normalizeMembers
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:getBodyDeclarations
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getKind
+MethodInvocation:addInitializer
+MethodInvocation:remove
+MethodInvocation:addFieldInitializer
+MethodInvocation:isClass
+MethodInvocation:getKind
+MethodInvocation:getMethodDeclarations
+MethodInvocation:isDesignatedConstructor
+MethodInvocation:copyList
+MethodInvocation:getInitLocation
+MethodInvocation:addCaptureAssignments
+Method-name:addInitializer
+Method-returnType:void
+Method-parameters:[Initializer initializer]
+MethodInvocation:isStatic
+MethodInvocation:getModifiers
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:getBody
+Method-name:addFieldInitializer
+Method-returnType:void
+Method-parameters:[FieldDeclaration field]
+MethodInvocation:getFragment
+MethodInvocation:getInitializer
+MethodInvocation:handleFieldInitializer
+Method-name:handleFieldInitializer
+Method-returnType:void
+Method-parameters:[VariableDeclarationFragment frag]
+MethodInvocation:isInstanceVar
+MethodInvocation:getVariableElement
+MethodInvocation:add
+MethodInvocation:makeAssignmentStatement
+MethodInvocation:getInitializer
+MethodInvocation:getConstantValue
+MethodInvocation:getKind
+MethodInvocation:isInterface
+MethodInvocation:getKind
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:makeAssignmentStatement
+MethodInvocation:hasValidCppCharacters
+MethodInvocation:add
+MethodInvocation:makeAssignmentStatement
+MethodInvocation:setInitializer
+MethodInvocation:newLiteral
+Method-name:makeAssignmentStatement
+Method-returnType:ExpressionStatement
+Method-parameters:[VariableDeclarationFragment fragment]
+MethodInvocation:getVariableElement
+MethodInvocation:remove
+MethodInvocation:getInitializer
+Method-name:addCaptureAssignments
+Method-returnType:void
+Method-parameters:[MethodDeclaration constructor, TypeElement type]
+MethodInvocation:subList
+MethodInvocation:getStatements
+MethodInvocation:getBody
+MethodInvocation:getCaptures
+MethodInvocation:hasField
+MethodInvocation:add
+MethodInvocation:getField
+MethodInvocation:getParam
+Method-name:isDesignatedConstructor
+Method-returnType:boolean
+Method-parameters:[MethodDeclaration node]
+MethodInvocation:isConstructor
+MethodInvocation:getBody
+MethodInvocation:getStatements
+MethodInvocation:isEmpty
+MethodInvocation:get

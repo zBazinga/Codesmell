@@ -1,0 +1,240 @@
+Class:PrimaryKeysResponse
+Field:STRUCT_DESC
+Field:PRIMARY_KEYS_FIELD_DESC
+Field:schemes
+MethodInvocation:put
+MethodInvocation:put
+Field:primaryKeys
+Field:_Fields
+MethodInvocation:PRIMARY_KEYS
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:PrimaryKeysResponse
+Method-returnType:null
+Method-parameters:[]
+Method-name:PrimaryKeysResponse
+Method-returnType:null
+Method-parameters:[List<SQLPrimaryKey> primaryKeys]
+FieldAccess:primaryKeys
+Method-name:PrimaryKeysResponse
+Method-returnType:null
+Method-parameters:[PrimaryKeysResponse other]
+MethodInvocation:isSetPrimaryKeys
+MethodInvocation:size
+MethodInvocation:add
+FieldAccess:primaryKeys
+Method-name:deepCopy
+Method-returnType:PrimaryKeysResponse
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:primaryKeys
+Method-name:getPrimaryKeysSize
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:primaryKeys
+MethodInvocation:size
+FieldAccess:primaryKeys
+Method-name:getPrimaryKeysIterator
+Method-returnType:java.util.Iterator<SQLPrimaryKey>
+Method-parameters:[]
+FieldAccess:primaryKeys
+MethodInvocation:iterator
+FieldAccess:primaryKeys
+Method-name:addToPrimaryKeys
+Method-returnType:void
+Method-parameters:[SQLPrimaryKey elem]
+FieldAccess:primaryKeys
+FieldAccess:primaryKeys
+MethodInvocation:add
+FieldAccess:primaryKeys
+Method-name:getPrimaryKeys
+Method-returnType:List<SQLPrimaryKey>
+Method-parameters:[]
+FieldAccess:primaryKeys
+Method-name:setPrimaryKeys
+Method-returnType:void
+Method-parameters:[List<SQLPrimaryKey> primaryKeys]
+FieldAccess:primaryKeys
+Method-name:unsetPrimaryKeys
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:primaryKeys
+Method-name:isSetPrimaryKeys
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:primaryKeys
+Method-name:setPrimaryKeysIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:primaryKeys
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, Object value]
+MethodInvocation:unsetPrimaryKeys
+MethodInvocation:setPrimaryKeys
+Method-name:getFieldValue
+Method-returnType:Object
+Method-parameters:[_Fields field]
+MethodInvocation:getPrimaryKeys
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:isSetPrimaryKeys
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[PrimaryKeysResponse that]
+MethodInvocation:isSetPrimaryKeys
+MethodInvocation:isSetPrimaryKeys
+MethodInvocation:equals
+FieldAccess:primaryKeys
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSetPrimaryKeys
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[PrimaryKeysResponse other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetPrimaryKeys
+MethodInvocation:isSetPrimaryKeys
+MethodInvocation:isSetPrimaryKeys
+MethodInvocation:compareTo
+FieldAccess:primaryKeys
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+FieldAccess:primaryKeys
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:primaryKeys
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isSetPrimaryKeys
+MethodInvocation:toString
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:PrimaryKeysResponseStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:PrimaryKeysResponseStandardScheme
+Method-parameters:[]
+Class:PrimaryKeysResponseStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, PrimaryKeysResponse struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readListBegin
+MethodInvocation:read
+MethodInvocation:add
+MethodInvocation:readListEnd
+MethodInvocation:setPrimaryKeysIsSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, PrimaryKeysResponse struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeListBegin
+MethodInvocation:size
+MethodInvocation:write
+MethodInvocation:writeListEnd
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:PrimaryKeysResponseTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:PrimaryKeysResponseTupleScheme
+Method-parameters:[]
+Class:PrimaryKeysResponseTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, PrimaryKeysResponse struct]
+MethodInvocation:writeI32
+MethodInvocation:size
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, PrimaryKeysResponse struct]
+MethodInvocation:readI32
+MethodInvocation:read
+MethodInvocation:add
+MethodInvocation:setPrimaryKeysIsSet

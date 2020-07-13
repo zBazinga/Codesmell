@@ -1,0 +1,93 @@
+Class:QpsControllerManager
+Field:LOGGER
+MethodInvocation:getLogger
+Field:configQpsControllerMap
+Field:qualifiedNameControllerMap
+Field:globalQpsController
+Field:SEPARATOR
+Field:configKeyPrefix
+Method-name:getOrCreate
+Method-returnType:QpsController
+Method-parameters:[String microserviceName, Invocation invocation]
+MethodInvocation:computeIfAbsent
+MethodInvocation:getSchemaQualifiedName
+MethodInvocation:getOperationMeta
+MethodInvocation:create
+Method-name:create
+Method-returnType:QpsController
+Method-parameters:[String qualifiedNameKey, String microserviceName, Invocation invocation]
+MethodInvocation:createQpsControllerIfNotExist
+MethodInvocation:createQpsControllerIfNotExist
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:getSchemaId
+MethodInvocation:createQpsControllerIfNotExist
+MethodInvocation:searchQpsController
+Method-name:searchQpsController
+Method-returnType:QpsController
+Method-parameters:[String qualifiedNameKey]
+MethodInvocation:get
+MethodInvocation:isValidQpsController
+MethodInvocation:lastIndexOf
+MethodInvocation:get
+MethodInvocation:substring
+MethodInvocation:isValidQpsController
+MethodInvocation:lastIndexOf
+MethodInvocation:isValidQpsController
+Method-name:keyMatch
+Method-returnType:boolean
+Method-parameters:[String configKey, Entry<String,QpsController> controllerEntry]
+MethodInvocation:equals
+MethodInvocation:getKey
+MethodInvocation:startsWith
+MethodInvocation:getKey
+Method-name:createQpsControllerIfNotExist
+Method-returnType:void
+Method-parameters:[String configKey]
+MethodInvocation:contains
+MethodInvocation:keySet
+MethodInvocation:info
+MethodInvocation:getDynamicProperty
+MethodInvocation:getInteger
+MethodInvocation:put
+MethodInvocation:addCallback
+MethodInvocation:setQpsLimit
+MethodInvocation:getInteger
+MethodInvocation:info
+MethodInvocation:getString
+MethodInvocation:updateObjMap
+Method-name:updateObjMap
+Method-returnType:void
+Method-parameters:[String configKey]
+MethodInvocation:entrySet
+MethodInvocation:keyMatch
+MethodInvocation:searchQpsController
+MethodInvocation:getKey
+MethodInvocation:setValue
+MethodInvocation:info
+MethodInvocation:getKey
+MethodInvocation:getKey
+MethodInvocation:getQpsLimit
+Method-name:setConfigKeyPrefix
+Method-returnType:QpsControllerManager
+Method-parameters:[String configKeyPrefix]
+FieldAccess:configKeyPrefix
+Method-name:setGlobalQpsController
+Method-returnType:QpsControllerManager
+Method-parameters:[String globalConfigKey]
+MethodInvocation:getInstance
+MethodInvocation:getInteger
+MethodInvocation:addCallback
+MethodInvocation:setQpsLimit
+MethodInvocation:getInteger
+MethodInvocation:info
+MethodInvocation:getInteger
+FieldAccess:globalQpsController
+Method-name:getGlobalQpsController
+Method-returnType:QpsController
+Method-parameters:[]
+Method-name:getDynamicProperty
+Method-returnType:DynamicProperty
+Method-parameters:[String configKey]
+MethodInvocation:getInstance

@@ -1,0 +1,69 @@
+Class:SaveOrUpdateEvent
+Field:object
+Field:requestedId
+Field:entityName
+Field:entity
+Field:entry
+Field:resultId
+Method-name:SaveOrUpdateEvent
+Method-returnType:null
+Method-parameters:[String entityName, Object original, EventSource source]
+FieldAccess:entityName
+Method-name:SaveOrUpdateEvent
+Method-returnType:null
+Method-parameters:[String entityName, Object original, Serializable id, EventSource source]
+FieldAccess:requestedId
+Method-name:SaveOrUpdateEvent
+Method-returnType:null
+Method-parameters:[Object object, EventSource source]
+FieldAccess:object
+Method-name:getObject
+Method-returnType:Object
+Method-parameters:[]
+Method-name:setObject
+Method-returnType:void
+Method-parameters:[Object object]
+FieldAccess:object
+Method-name:getRequestedId
+Method-returnType:Serializable
+Method-parameters:[]
+Method-name:setRequestedId
+Method-returnType:void
+Method-parameters:[Serializable requestedId]
+FieldAccess:requestedId
+Method-name:getEntityName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setEntityName
+Method-returnType:void
+Method-parameters:[String entityName]
+FieldAccess:entityName
+Method-name:getEntity
+Method-returnType:Object
+Method-parameters:[]
+Method-name:setEntity
+Method-returnType:void
+Method-parameters:[Object entity]
+FieldAccess:entity
+Method-name:getEntry
+Method-returnType:EntityEntry
+Method-parameters:[]
+Method-name:setEntry
+Method-returnType:void
+Method-parameters:[EntityEntry entry]
+FieldAccess:entry
+Method-name:getResultId
+Method-returnType:Serializable
+Method-parameters:[]
+Method-name:setResultId
+Method-returnType:void
+Method-parameters:[Serializable resultId]
+FieldAccess:resultId
+Method-name:cascadeOnUpdate
+Method-returnType:void
+Method-parameters:[EntityPersister persister, Object entity, DefaultSaveOrUpdateEventListener defaultSaveOrUpdateEventListener]
+MethodInvocation:getSession
+MethodInvocation:getPersistenceContextInternal
+MethodInvocation:incrementCascadeLevel
+MethodInvocation:cascade
+MethodInvocation:decrementCascadeLevel

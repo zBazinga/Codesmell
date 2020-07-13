@@ -1,0 +1,394 @@
+Class:InputManager
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:keys
+Field:mouse
+Field:joystick
+Field:touch
+Field:frameTPF
+Field:lastLastUpdateTime
+Field:lastUpdateTime
+Field:frameDelta
+Field:firstTime
+Field:eventsPermitted
+Field:mouseVisible
+Field:safeMode
+Field:globalAxisDeadZone
+Field:cursorPos
+Field:joysticks
+Field:bindings
+Field:mappings
+Field:pressedButtons
+Field:axisValues
+Field:rawListeners
+Field:inputQueue
+Field:joystickConnectionListeners
+Method-name:cleanupWithInput
+Method-returnType:void
+Method-parameters:[ChaseCamera chaseCamera]
+MethodInvocation:deleteMapping
+MethodInvocation:deleteMapping
+MethodInvocation:deleteMapping
+MethodInvocation:deleteMapping
+MethodInvocation:deleteMapping
+MethodInvocation:deleteMapping
+MethodInvocation:deleteMapping
+MethodInvocation:removeListener
+Class:Mapping
+Field:name
+Field:triggers
+Field:listeners
+Method-name:Mapping
+Method-returnType:null
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:InputManager
+Method-returnType:null
+Method-parameters:[MouseInput mouse, KeyInput keys, JoyInput joystick, TouchInput touch]
+FieldAccess:keys
+FieldAccess:mouse
+FieldAccess:joystick
+FieldAccess:touch
+MethodInvocation:setInputListener
+MethodInvocation:setInputListener
+MethodInvocation:setInputListener
+MethodInvocation:loadJoysticks
+MethodInvocation:setInputListener
+MethodInvocation:getInputTimeNanos
+Method-name:invokeActions
+Method-returnType:void
+Method-parameters:[int hash, boolean pressed]
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:onAction
+Method-name:computeAnalogValue
+Method-returnType:float
+Method-parameters:[long timeDelta]
+MethodInvocation:clamp
+Method-name:invokeTimedActions
+Method-returnType:void
+Method-parameters:[int hash, long time, boolean pressed]
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:remove
+MethodInvocation:max
+MethodInvocation:invokeAnalogs
+MethodInvocation:computeAnalogValue
+Method-name:invokeUpdateActions
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:max
+MethodInvocation:invokeAnalogs
+MethodInvocation:computeAnalogValue
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:invokeAnalogs
+Method-name:invokeAnalogs
+Method-returnType:void
+Method-parameters:[int hash, float value, boolean isAxis]
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:onAnalog
+Method-name:invokeAnalogsAndActions
+Method-returnType:void
+Method-parameters:[int hash, float value, float effectiveDeadZone, boolean applyTpf]
+MethodInvocation:invokeAnalogs
+MethodInvocation:get
+MethodInvocation:containsKey
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:onAction
+MethodInvocation:onAnalog
+Method-name:beginInput
+Method-returnType:void
+Method-parameters:[]
+Method-name:endInput
+Method-returnType:void
+Method-parameters:[]
+Method-name:onJoyAxisEventQueued
+Method-returnType:void
+Method-parameters:[JoyAxisEvent evt]
+MethodInvocation:getJoyIndex
+MethodInvocation:getAxisIndex
+MethodInvocation:getValue
+MethodInvocation:max
+MethodInvocation:getDeadZone
+MethodInvocation:getAxis
+MethodInvocation:joyAxisHash
+MethodInvocation:joyAxisHash
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:invokeActions
+MethodInvocation:invokeActions
+MethodInvocation:remove
+MethodInvocation:remove
+MethodInvocation:joyAxisHash
+MethodInvocation:joyAxisHash
+MethodInvocation:get
+MethodInvocation:invokeActions
+MethodInvocation:invokeAnalogsAndActions
+MethodInvocation:put
+MethodInvocation:remove
+MethodInvocation:joyAxisHash
+MethodInvocation:joyAxisHash
+MethodInvocation:get
+MethodInvocation:invokeActions
+MethodInvocation:invokeAnalogsAndActions
+MethodInvocation:put
+MethodInvocation:remove
+Method-name:onJoyAxisEvent
+Method-returnType:void
+Method-parameters:[JoyAxisEvent evt]
+MethodInvocation:add
+Method-name:onJoyButtonEventQueued
+Method-returnType:void
+Method-parameters:[JoyButtonEvent evt]
+MethodInvocation:joyButtonHash
+MethodInvocation:getJoyIndex
+MethodInvocation:getButtonIndex
+MethodInvocation:invokeActions
+MethodInvocation:isPressed
+MethodInvocation:invokeTimedActions
+MethodInvocation:getTime
+MethodInvocation:isPressed
+Method-name:onJoyButtonEvent
+Method-returnType:void
+Method-parameters:[JoyButtonEvent evt]
+MethodInvocation:add
+Method-name:onMouseMotionEventQueued
+Method-returnType:void
+Method-parameters:[MouseMotionEvent evt]
+MethodInvocation:getDX
+MethodInvocation:abs
+MethodInvocation:getDX
+MethodInvocation:invokeAnalogsAndActions
+MethodInvocation:mouseAxisHash
+MethodInvocation:getDX
+MethodInvocation:getDY
+MethodInvocation:abs
+MethodInvocation:getDY
+MethodInvocation:invokeAnalogsAndActions
+MethodInvocation:mouseAxisHash
+MethodInvocation:getDY
+MethodInvocation:getDeltaWheel
+MethodInvocation:abs
+MethodInvocation:getDeltaWheel
+MethodInvocation:invokeAnalogsAndActions
+MethodInvocation:mouseAxisHash
+MethodInvocation:getDeltaWheel
+Method-name:setMouseCursor
+Method-returnType:void
+Method-parameters:[JmeCursor jmeCursor]
+MethodInvocation:setNativeCursor
+Method-name:onMouseMotionEvent
+Method-returnType:void
+Method-parameters:[MouseMotionEvent evt]
+MethodInvocation:set
+MethodInvocation:getX
+MethodInvocation:getY
+MethodInvocation:add
+Method-name:onMouseButtonEventQueued
+Method-returnType:void
+Method-parameters:[MouseButtonEvent evt]
+MethodInvocation:mouseButtonHash
+MethodInvocation:getButtonIndex
+MethodInvocation:invokeActions
+MethodInvocation:isPressed
+MethodInvocation:invokeTimedActions
+MethodInvocation:getTime
+MethodInvocation:isPressed
+Method-name:onMouseButtonEvent
+Method-returnType:void
+Method-parameters:[MouseButtonEvent evt]
+MethodInvocation:set
+MethodInvocation:getX
+MethodInvocation:getY
+MethodInvocation:add
+Method-name:onKeyEventQueued
+Method-returnType:void
+Method-parameters:[KeyInputEvent evt]
+MethodInvocation:isRepeating
+MethodInvocation:keyHash
+MethodInvocation:getKeyCode
+MethodInvocation:invokeActions
+MethodInvocation:isPressed
+MethodInvocation:invokeTimedActions
+MethodInvocation:getTime
+MethodInvocation:isPressed
+Method-name:onKeyEvent
+Method-returnType:void
+Method-parameters:[KeyInputEvent evt]
+MethodInvocation:add
+Method-name:setAxisDeadZone
+Method-returnType:void
+Method-parameters:[float deadZone]
+FieldAccess:globalAxisDeadZone
+Method-name:getAxisDeadZone
+Method-returnType:float
+Method-parameters:[]
+Method-name:addListener
+Method-returnType:void
+Method-parameters:[InputListener listener, String... mappingNames]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:removeListener
+Method-returnType:void
+Method-parameters:[InputListener listener]
+MethodInvocation:values
+MethodInvocation:remove
+Method-name:addMapping
+Method-returnType:void
+Method-parameters:[String mappingName, Trigger... triggers]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:triggerHashCode
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:log
+Method-name:hasMapping
+Method-returnType:boolean
+Method-parameters:[String mappingName]
+MethodInvocation:containsKey
+Method-name:deleteMapping
+Method-returnType:void
+Method-parameters:[String mappingName]
+MethodInvocation:remove
+MethodInvocation:log
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:remove
+Method-name:deleteTrigger
+Method-returnType:void
+Method-parameters:[String mappingName, Trigger trigger]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:triggerHashCode
+MethodInvocation:remove
+Method-name:clearMappings
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:reset
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:clear
+Method-name:isCursorVisible
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setCursorVisible
+Method-returnType:void
+Method-parameters:[boolean visible]
+MethodInvocation:setCursorVisible
+Method-name:getCursorPosition
+Method-returnType:Vector2f
+Method-parameters:[]
+Method-name:getJoysticks
+Method-returnType:Joystick[]
+Method-parameters:[]
+Method-name:addRawInputListener
+Method-returnType:void
+Method-parameters:[RawInputListener listener]
+MethodInvocation:add
+Method-name:removeRawInputListener
+Method-returnType:void
+Method-parameters:[RawInputListener listener]
+MethodInvocation:remove
+Method-name:clearRawInputListeners
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:setSimulateMouse
+Method-returnType:void
+Method-parameters:[boolean value]
+MethodInvocation:setSimulateMouse
+Method-name:getSimulateMouse
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isSimulateMouse
+Method-name:isSimulateMouse
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isSimulateMouse
+Method-name:setSimulateKeyboard
+Method-returnType:void
+Method-parameters:[boolean value]
+MethodInvocation:setSimulateKeyboard
+Method-name:isSimulateKeyboard
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isSimulateKeyboard
+Method-name:processQueue
+Method-returnType:void
+Method-parameters:[]
+Method-name:update
+Method-returnType:void
+Method-parameters:[float tpf]
+MethodInvocation:getInputTimeNanos
+MethodInvocation:update
+MethodInvocation:update
+MethodInvocation:update
+MethodInvocation:update
+MethodInvocation:processQueue
+MethodInvocation:invokeUpdateActions
+Method-name:onTouchEventQueued
+Method-returnType:void
+Method-parameters:[TouchEvent evt]
+MethodInvocation:get
+MethodInvocation:touchHash
+MethodInvocation:getKeyCode
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:onTouch
+Method-name:onTouchEvent
+Method-returnType:void
+Method-parameters:[TouchEvent evt]
+MethodInvocation:set
+MethodInvocation:getX
+MethodInvocation:getY
+MethodInvocation:add
+Method-name:setJoysticks
+Method-returnType:void
+Method-parameters:[Joystick[] joysticks]
+FieldAccess:joysticks
+Method-name:addJoystickConnectionListener
+Method-returnType:boolean
+Method-parameters:[JoystickConnectionListener listener]
+MethodInvocation:add
+Method-name:removeJoystickConnectionListener
+Method-returnType:boolean
+Method-parameters:[JoystickConnectionListener listener]
+MethodInvocation:remove
+Method-name:clearJoystickConnectionListeners
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:fireJoystickConnectedEvent
+Method-returnType:void
+Method-parameters:[Joystick joystick]
+MethodInvocation:onConnected
+Method-name:fireJoystickDisconnectedEvent
+Method-returnType:void
+Method-parameters:[Joystick joystick]
+MethodInvocation:onDisconnected

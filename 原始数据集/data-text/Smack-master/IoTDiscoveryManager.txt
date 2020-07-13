@@ -1,0 +1,214 @@
+Class:IoTDiscoveryManager
+Field:LOGGER
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:INSTANCES
+MethodInvocation:addConnectionCreationListener
+Method-name:connectionCreated
+Method-returnType:void
+Method-parameters:[XMPPConnection connection]
+MethodInvocation:isAutoEnableActive
+MethodInvocation:getInstanceFor
+Method-name:getInstanceFor
+Method-returnType:IoTDiscoveryManager
+Method-parameters:[XMPPConnection connection]
+MethodInvocation:get
+MethodInvocation:put
+Field:preconfiguredRegistry
+Field:usedRegistries
+Field:things
+Method-name:IoTDiscoveryManager
+Method-returnType:null
+Method-parameters:[XMPPConnection connection]
+MethodInvocation:registerIQRequestHandler
+Method-name:handleIQRequest
+Method-returnType:IQ
+Method-parameters:[IQ iqRequest]
+MethodInvocation:isRegistry
+MethodInvocation:getFrom
+MethodInvocation:log
+MethodInvocation:getJid
+MethodInvocation:getNodeInfo
+MethodInvocation:getStateFor
+MethodInvocation:setOwner
+MethodInvocation:asBareJid
+MethodInvocation:info
+MethodInvocation:getInstanceFor
+MethodInvocation:connection
+MethodInvocation:sendFriendshipRequest
+MethodInvocation:asBareJid
+MethodInvocation:log
+MethodInvocation:createResultIQ
+MethodInvocation:registerIQRequestHandler
+Method-name:handleIQRequest
+Method-returnType:IQ
+Method-parameters:[IQ iqRequest]
+MethodInvocation:isRegistry
+MethodInvocation:getFrom
+MethodInvocation:log
+MethodInvocation:getFrom
+MethodInvocation:getNodeInfo
+MethodInvocation:getStateFor
+MethodInvocation:equals
+MethodInvocation:getRegistry
+MethodInvocation:severe
+MethodInvocation:getRegistry
+MethodInvocation:isOwned
+MethodInvocation:setUnowned
+MethodInvocation:fine
+MethodInvocation:createResultIQ
+MethodInvocation:registerIQRequestHandler
+Method-name:handleIQRequest
+Method-returnType:IQ
+Method-parameters:[IQ iqRequest]
+MethodInvocation:isRegistry
+MethodInvocation:getFrom
+MethodInvocation:log
+MethodInvocation:getStateFor
+MethodInvocation:getNodeInfo
+MethodInvocation:setRemoved
+MethodInvocation:unfriend
+MethodInvocation:getInstanceFor
+MethodInvocation:connection
+MethodInvocation:getFrom
+MethodInvocation:log
+MethodInvocation:createResultIQ
+Method-name:findRegistry
+Method-returnType:Jid
+Method-parameters:[]
+MethodInvocation:connection
+MethodInvocation:getInstanceFor
+MethodInvocation:findServicesDiscoverInfo
+MethodInvocation:isEmpty
+MethodInvocation:getFrom
+MethodInvocation:get
+Method-name:registerThing
+Method-returnType:ThingState
+Method-parameters:[Jid registry, Thing thing]
+MethodInvocation:connection
+MethodInvocation:getMetaTags
+MethodInvocation:getNodeInfo
+MethodInvocation:isSelfOwened
+MethodInvocation:setTo
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:getStateFor
+MethodInvocation:getNodeInfo
+MethodInvocation:setRegistry
+MethodInvocation:asBareJid
+MethodInvocation:interactWithRegistry
+MethodInvocation:installThing
+MethodInvocation:getInstanceFor
+MethodInvocation:installThing
+MethodInvocation:getInstanceFor
+Method-name:claimThing
+Method-returnType:IoTClaimed
+Method-parameters:[Collection<Tag> metaTags]
+MethodInvocation:claimThing
+Method-name:claimThing
+Method-returnType:IoTClaimed
+Method-parameters:[Collection<Tag> metaTags, boolean publicThing]
+MethodInvocation:findRegistry
+MethodInvocation:claimThing
+Method-name:claimThing
+Method-returnType:IoTClaimed
+Method-parameters:[Jid registry, Collection<Tag> metaTags, boolean publicThing]
+MethodInvocation:interactWithRegistry
+MethodInvocation:setTo
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:connection
+MethodInvocation:getJid
+MethodInvocation:sendFriendshipRequest
+MethodInvocation:getInstanceFor
+MethodInvocation:connection
+MethodInvocation:asBareJid
+Method-name:removeThing
+Method-returnType:void
+Method-parameters:[BareJid thing]
+MethodInvocation:removeThing
+Method-name:removeThing
+Method-returnType:void
+Method-parameters:[BareJid thing, NodeInfo nodeInfo]
+MethodInvocation:findRegistry
+MethodInvocation:removeThing
+Method-name:removeThing
+Method-returnType:void
+Method-parameters:[Jid registry, BareJid thing, NodeInfo nodeInfo]
+MethodInvocation:interactWithRegistry
+MethodInvocation:setTo
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:connection
+Method-name:unregister
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:unregister
+Method-name:unregister
+Method-returnType:void
+Method-parameters:[NodeInfo nodeInfo]
+MethodInvocation:findRegistry
+MethodInvocation:unregister
+Method-name:unregister
+Method-returnType:void
+Method-parameters:[Jid registry, NodeInfo nodeInfo]
+MethodInvocation:interactWithRegistry
+MethodInvocation:setTo
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:connection
+MethodInvocation:getStateFor
+MethodInvocation:setUnregistered
+MethodInvocation:connection
+MethodInvocation:uninstallThing
+MethodInvocation:getInstanceFor
+MethodInvocation:uninstallThing
+MethodInvocation:getInstanceFor
+Method-name:disownThing
+Method-returnType:void
+Method-parameters:[Jid thing]
+MethodInvocation:disownThing
+Method-name:disownThing
+Method-returnType:void
+Method-parameters:[Jid thing, NodeInfo nodeInfo]
+MethodInvocation:findRegistry
+MethodInvocation:disownThing
+Method-name:disownThing
+Method-returnType:void
+Method-parameters:[Jid registry, Jid thing, NodeInfo nodeInfo]
+MethodInvocation:interactWithRegistry
+MethodInvocation:setTo
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:connection
+Method-name:isRegistry
+Method-returnType:boolean
+Method-parameters:[BareJid jid]
+MethodInvocation:requireNonNull
+MethodInvocation:findRegistry
+MethodInvocation:equals
+MethodInvocation:contains
+Method-name:isRegistry
+Method-returnType:boolean
+Method-parameters:[Jid jid]
+MethodInvocation:isRegistry
+MethodInvocation:asBareJid
+MethodInvocation:log
+Method-name:interactWithRegistry
+Method-returnType:void
+Method-parameters:[Jid registry]
+MethodInvocation:add
+MethodInvocation:getInstanceFor
+MethodInvocation:connection
+MethodInvocation:sendFriendshipRequestIfRequired
+MethodInvocation:asBareJid
+Method-name:getStateFor
+Method-returnType:ThingState
+Method-parameters:[Thing thing]
+MethodInvocation:get
+MethodInvocation:getNodeInfo
+Method-name:getStateFor
+Method-returnType:ThingState
+Method-parameters:[NodeInfo nodeInfo]
+MethodInvocation:get
+MethodInvocation:put

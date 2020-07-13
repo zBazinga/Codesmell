@@ -1,0 +1,85 @@
+Class:TypographicQuotes
+Field:openingMarker
+Field:text
+Field:closingMarker
+Field:typographicOpening
+Field:typographicClosing
+Method-name:getSegments
+Method-returnType:BasedSequence[]
+Method-parameters:[]
+Method-name:getAstExtra
+Method-returnType:void
+Method-parameters:[@NotNull StringBuilder out]
+MethodInvocation:isNotNull
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:isNotNull
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:delimitedSegmentSpanChars
+Method-name:TypographicQuotes
+Method-returnType:null
+Method-parameters:[]
+Method-name:TypographicQuotes
+Method-returnType:null
+Method-parameters:[BasedSequence chars]
+Method-name:TypographicQuotes
+Method-returnType:null
+Method-parameters:[BasedSequence openingMarker, BasedSequence text, BasedSequence closingMarker]
+MethodInvocation:baseSubSequence
+MethodInvocation:getStartOffset
+MethodInvocation:getEndOffset
+FieldAccess:openingMarker
+FieldAccess:text
+FieldAccess:closingMarker
+Method-name:getOpeningMarker
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setOpeningMarker
+Method-returnType:void
+Method-parameters:[BasedSequence openingMarker]
+FieldAccess:openingMarker
+Method-name:getText
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setText
+Method-returnType:void
+Method-parameters:[BasedSequence text]
+FieldAccess:text
+Method-name:getClosingMarker
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setClosingMarker
+Method-returnType:void
+Method-parameters:[BasedSequence closingMarker]
+FieldAccess:closingMarker
+Method-name:getTypographicOpening
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTypographicOpening
+Method-returnType:void
+Method-parameters:[String typographicOpening]
+FieldAccess:typographicOpening
+Method-name:getTypographicClosing
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTypographicClosing
+Method-returnType:void
+Method-parameters:[String typographicClosing]
+FieldAccess:typographicClosing
+Method-name:render
+Method-returnType:void
+Method-parameters:[NodeRendererContext context, HtmlWriter html, TypographicNodeRenderer renderer]
+MethodInvocation:getTypographicOpening
+MethodInvocation:isEmpty
+MethodInvocation:getTypographicOpening
+MethodInvocation:raw
+MethodInvocation:getTypographicOpening
+MethodInvocation:renderChildren
+MethodInvocation:getTypographicClosing
+MethodInvocation:isEmpty
+MethodInvocation:getTypographicClosing
+MethodInvocation:raw
+MethodInvocation:getTypographicClosing

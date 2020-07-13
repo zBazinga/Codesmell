@@ -1,0 +1,356 @@
+Class:MLogicalStyleController
+Field:STYLE_ACTIONS
+Class:RemoveConditionalStyleActor
+Field:index
+Field:conditionalStyleModel
+Field:item
+Method-name:RemoveConditionalStyleActor
+Method-returnType:null
+Method-parameters:[ConditionalStyleModel conditionalStyleModel, int index]
+FieldAccess:index
+FieldAccess:conditionalStyleModel
+Method-name:undo
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isActive
+MethodInvocation:getCondition
+MethodInvocation:getStyle
+MethodInvocation:isLast
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:act
+Method-returnType:void
+Method-parameters:[]
+Class:AddConditionalStyleActor
+Field:conditionalStyleModel
+Field:isActive
+Field:condition
+Field:style
+Field:isLast
+Method-name:AddConditionalStyleActor
+Method-returnType:null
+Method-parameters:[final ConditionalStyleModel conditionalStyleModel, boolean isActive, ASelectableCondition condition, IStyle style, boolean isLast]
+FieldAccess:conditionalStyleModel
+FieldAccess:isActive
+FieldAccess:condition
+FieldAccess:style
+FieldAccess:isLast
+Method-name:undo
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getStyleCount
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:act
+Method-returnType:void
+Method-parameters:[]
+Class:StyleRemover
+Method-name:StyleRemover
+Method-returnType:null
+Method-parameters:[]
+Method-name:nodeChanged
+Method-returnType:void
+Method-parameters:[final NodeChangeEvent event]
+MethodInvocation:getCurrentModeController
+MethodInvocation:isUndoAction
+MethodInvocation:equals
+MethodInvocation:getProperty
+MethodInvocation:getNode
+MethodInvocation:getMap
+MethodInvocation:getNewValue
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:undoableRemoveExtensions
+Class:ExtensionCopier
+Method-name:copy
+Method-returnType:void
+Method-parameters:[final Object key, final NodeModel from, final NodeModel to]
+MethodInvocation:equals
+MethodInvocation:copy
+Method-name:copy
+Method-returnType:void
+Method-parameters:[final NodeModel from, final NodeModel to]
+MethodInvocation:getExtension
+MethodInvocation:createExtension
+MethodInvocation:setStyle
+MethodInvocation:getStyle
+Method-name:remove
+Method-returnType:void
+Method-parameters:[final Object key, final NodeModel from]
+MethodInvocation:equals
+MethodInvocation:removeExtension
+Method-name:remove
+Method-returnType:void
+Method-parameters:[final Object key, final NodeModel from, final NodeModel which]
+MethodInvocation:equals
+MethodInvocation:getExtension
+MethodInvocation:getExtension
+MethodInvocation:removeExtension
+Method-name:resolveParentExtensions
+Method-returnType:void
+Method-parameters:[Object key, NodeModel to]
+Field:actions
+Method-name:MLogicalStyleController
+Method-returnType:null
+Method-parameters:[ModeController modeController]
+Method-name:initS
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getCurrentModeController
+MethodInvocation:addAction
+Method-name:initM
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getCurrentModeController
+MethodInvocation:addNodeChangeListener
+MethodInvocation:getMapController
+MethodInvocation:registerExtensionCopier
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:equals
+MethodInvocation:getModeName
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:isHeadless
+MethodInvocation:getViewController
+MethodInvocation:getController
+MethodInvocation:addUiBuilder
+MethodInvocation:getUserInputListenerFactory
+MethodInvocation:addMapSelectionListener
+MethodInvocation:getMapViewManager
+MethodInvocation:getCurrentController
+Method-name:afterMapChange
+Method-returnType:void
+Method-parameters:[final MapModel oldMap, final MapModel newMap]
+MethodInvocation:rebuildMenus
+MethodInvocation:getMapController
+MethodInvocation:addMapChangeListener
+Method-name:onPreNodeMoved
+Method-returnType:void
+Method-parameters:[NodeMoveEvent nodeMoveEvent]
+Method-name:onPreNodeDelete
+Method-returnType:void
+Method-parameters:[NodeDeletionEvent nodeDeletionEvent]
+Method-name:onNodeMoved
+Method-returnType:void
+Method-parameters:[NodeMoveEvent nodeMoveEvent]
+Method-name:onNodeInserted
+Method-returnType:void
+Method-parameters:[final NodeModel parent, final NodeModel child, final int newIndex]
+Method-name:onNodeDeleted
+Method-returnType:void
+Method-parameters:[NodeDeletionEvent nodeDeletionEvent]
+Method-name:mapChanged
+Method-returnType:void
+Method-parameters:[final MapChangeEvent event]
+MethodInvocation:equals
+MethodInvocation:getProperty
+MethodInvocation:rebuildMenus
+MethodInvocation:addNodeSelectionListener
+Method-name:onSelect
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:selectActions
+Method-name:onDeselect
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+Class:StyleMenuBuilder
+Field:modeController
+Method-name:StyleMenuBuilder
+Method-returnType:null
+Method-parameters:[ModeController modeController]
+FieldAccess:modeController
+Method-name:visit
+Method-returnType:void
+Method-parameters:[Entry target]
+MethodInvocation:addStyleMenu
+Method-name:shouldSkipChildren
+Method-returnType:boolean
+Method-parameters:[Entry entry]
+Method-name:addStyleMenu
+Method-returnType:void
+Method-parameters:[final Entry target]
+MethodInvocation:getMap
+MethodInvocation:getCurrentController
+MethodInvocation:getExtension
+MethodInvocation:clear
+MethodInvocation:getRootNode
+MethodInvocation:getStyleMap
+MethodInvocation:addActionIfNotAlreadySet
+MethodInvocation:add
+MethodInvocation:addChildAction
+MethodInvocation:addStyleMenu
+Method-name:addStyleMenu
+Method-returnType:void
+Method-parameters:[final Entry target, final NodeModel styleMapNode, MapStyleModel extension]
+MethodInvocation:getChildren
+MethodInvocation:hasChildren
+MethodInvocation:addStyleMenu
+MethodInvocation:getUserObject
+MethodInvocation:getStyleNode
+MethodInvocation:addActionIfNotAlreadySet
+MethodInvocation:add
+MethodInvocation:addChildAction
+MethodInvocation:severe
+Method-name:setStyle
+Method-returnType:void
+Method-parameters:[final NodeModel node, final IStyle style]
+MethodInvocation:getCurrentModeController
+MethodInvocation:getStyle
+MethodInvocation:equals
+MethodInvocation:nodeChanged
+MethodInvocation:getMapController
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:act
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:changeStyle
+Method-name:undo
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:changeStyle
+Method-name:changeStyle
+Method-returnType:void
+Method-parameters:[final ModeController modeController, final NodeModel node, final IStyle oldStyle, final IStyle style]
+MethodInvocation:createExtension
+MethodInvocation:setStyle
+MethodInvocation:removeExtension
+MethodInvocation:nodeChanged
+MethodInvocation:getMapController
+MethodInvocation:selectActions
+MethodInvocation:execute
+MethodInvocation:getMap
+Method-name:copyStyleExtensions
+Method-returnType:void
+Method-parameters:[final IStyle style, final NodeModel target]
+MethodInvocation:getController
+MethodInvocation:getExtension
+MethodInvocation:getMap
+MethodInvocation:getStyleNode
+MethodInvocation:getController
+MethodInvocation:copyAttributesToNode
+MethodInvocation:getDetailTextText
+MethodInvocation:setDetails
+MethodInvocation:getNoteText
+MethodInvocation:getController
+MethodInvocation:setNoteText
+Method-name:selectActions
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setSelected
+Method-name:setStyle
+Method-returnType:void
+Method-parameters:[final IStyle style]
+MethodInvocation:getCurrentModeController
+MethodInvocation:getSelectedNodes
+MethodInvocation:getMapController
+MethodInvocation:setStyle
+Method-name:moveConditionalStyleDown
+Method-returnType:void
+Method-parameters:[final MapModel map, final ConditionalStyleModel conditionalStyleModel, final int index]
+MethodInvocation:getStyleCount
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:act
+Method-returnType:void
+Method-parameters:[]
+Method-name:undo
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:execute
+MethodInvocation:getCurrentModeController
+Method-name:moveConditionalStyleUp
+Method-returnType:void
+Method-parameters:[final MapModel map, final ConditionalStyleModel conditionalStyleModel, final int index]
+MethodInvocation:getStyleCount
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:act
+Method-returnType:void
+Method-parameters:[]
+Method-name:undo
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:execute
+MethodInvocation:getCurrentModeController
+Method-name:getController
+Method-returnType:MLogicalStyleController
+Method-parameters:[]
+MethodInvocation:getController
+Method-name:addConditionalStyle
+Method-returnType:void
+Method-parameters:[final MapModel map, final ConditionalStyleModel conditionalStyleModel, boolean isActive, ASelectableCondition condition, IStyle style, boolean isLast]
+MethodInvocation:execute
+MethodInvocation:getCurrentModeController
+Method-name:removeConditionalStyle
+Method-returnType:Item
+Method-parameters:[final MapModel map, final ConditionalStyleModel conditionalStyleModel, final int index]
+MethodInvocation:execute
+MethodInvocation:getCurrentModeController
+Method-name:getConditionalStyleModelAsTableModel
+Method-returnType:TableModel
+Method-parameters:[final MapModel map, final ConditionalStyleModel conditionalStyleModel]
+Field:tableModel
+MethodInvocation:asTableModel
+Method-name:addTableModelListener
+Method-returnType:void
+Method-parameters:[TableModelListener l]
+MethodInvocation:addTableModelListener
+Method-name:getColumnClass
+Method-returnType:Class<?>
+Method-parameters:[int columnIndex]
+MethodInvocation:getColumnClass
+Method-name:getColumnCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getColumnCount
+Method-name:getColumnName
+Method-returnType:String
+Method-parameters:[int columnIndex]
+MethodInvocation:getColumnName
+Method-name:getRowCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getRowCount
+Method-name:getValueAt
+Method-returnType:Object
+Method-parameters:[int rowIndex, int columnIndex]
+MethodInvocation:getValueAt
+Method-name:isCellEditable
+Method-returnType:boolean
+Method-parameters:[int rowIndex, int columnIndex]
+MethodInvocation:isCellEditable
+Method-name:removeTableModelListener
+Method-returnType:void
+Method-parameters:[TableModelListener l]
+MethodInvocation:removeTableModelListener
+Method-name:setValueAt
+Method-returnType:void
+Method-parameters:[final Object aValue, final int rowIndex, final int columnIndex]
+MethodInvocation:getValueAt
+MethodInvocation:equals
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:act
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setValueAt
+Method-name:undo
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setValueAt
+MethodInvocation:execute
+MethodInvocation:getCurrentModeController

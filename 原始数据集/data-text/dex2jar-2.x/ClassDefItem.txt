@@ -1,0 +1,79 @@
+Class:ClassDefItem
+Field:clazz
+Field:accessFlags
+Field:superclazz
+Field:interfaces
+Field:sourceFile
+Field:classData
+Field:classAnnotations
+Field:annotations
+Field:staticValues
+Method-name:place
+Method-returnType:int
+Method-parameters:[int offset]
+Method-name:prepare
+Method-returnType:void
+Method-parameters:[ConstPool cp]
+MethodInvocation:prepare
+MethodInvocation:preparteAnnotationsDirectoryItem
+MethodInvocation:prepareEncodedArrayItem
+Method-name:prepareEncodedArrayItem
+Method-returnType:void
+Method-parameters:[ConstPool cp]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:isDefaultValueForType
+MethodInvocation:putEnCodedArrayItem
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:defaultValueForType
+MethodInvocation:getTypeString
+MethodInvocation:add
+Method-name:preparteAnnotationsDirectoryItem
+Method-returnType:void
+Method-parameters:[ConstPool cp]
+MethodInvocation:collectField
+MethodInvocation:collectField
+MethodInvocation:collectMethod
+MethodInvocation:collectMethod
+FieldAccess:classAnnotations
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:putAnnotationDirectoryItem
+FieldAccess:annotations
+MethodInvocation:uniqAnnotationSetItem
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+Method-name:collectMethod
+Method-returnType:void
+Method-parameters:[Map<MethodIdItem,AnnotationSetItem> methodAnnotations, Map<MethodIdItem,AnnotationSetRefListItem> parameterAnnotations, List<EncodedMethod> ms, ConstPool cp]
+MethodInvocation:put
+MethodInvocation:uniqAnnotationSetItem
+MethodInvocation:put
+MethodInvocation:uniqAnnotationSetRefListItem
+Method-name:collectField
+Method-returnType:void
+Method-parameters:[Map<FieldIdItem,AnnotationSetItem> fieldAnnotations, List<EncodedField> fs, ConstPool cp]
+MethodInvocation:put
+MethodInvocation:uniqAnnotationSetItem
+Method-name:write
+Method-returnType:void
+Method-parameters:[DataOut out]
+MethodInvocation:uint
+MethodInvocation:uint
+FieldAccess:accessFlags
+MethodInvocation:uint
+MethodInvocation:uint
+MethodInvocation:size
+MethodInvocation:uint
+MethodInvocation:uint
+MethodInvocation:uint
+MethodInvocation:uint
+Method-name:iterateParent
+Method-returnType:ConstPool.PE
+Method-parameters:[ConstPool constPool]
+MethodInvocation:add
+MethodInvocation:addAll
+MethodInvocation:iterator

@@ -1,0 +1,85 @@
+Class:ProducerOperationHandler
+Field:LOGGER
+MethodInvocation:getLogger
+Field:INSTANCE
+Method-name:handle
+Method-returnType:void
+Method-parameters:[Invocation invocation, AsyncResponse asyncResp]
+MethodInvocation:getSwaggerProducerOperation
+MethodInvocation:getOperationMeta
+MethodInvocation:producerFail
+MethodInvocation:producerOperationNotExist
+MethodInvocation:getSchemaId
+MethodInvocation:getOperationName
+MethodInvocation:invoke
+Method-name:completableFutureInvoke
+Method-returnType:void
+Method-parameters:[Invocation invocation, SwaggerProducerOperation producerOperation, AsyncResponse asyncResp]
+MethodInvocation:setInvocationContext
+MethodInvocation:doCompletableFutureInvoke
+MethodInvocation:removeInvocationContext
+Method-name:doCompletableFutureInvoke
+Method-returnType:void
+Method-parameters:[Invocation invocation, SwaggerProducerOperation producerOperation, AsyncResponse asyncResp]
+MethodInvocation:onBusinessMethodStart
+MethodInvocation:toProducerArguments
+MethodInvocation:getProducerInvokeExtenstionList
+MethodInvocation:beforeMethodInvoke
+MethodInvocation:invoke
+MethodInvocation:getProducerMethod
+MethodInvocation:getProducerInstance
+MethodInvocation:onBusinessMethodFinish
+MethodInvocation:whenComplete
+MethodInvocation:onBusinessFinish
+MethodInvocation:handle
+MethodInvocation:mapResponse
+MethodInvocation:getResponseMapper
+MethodInvocation:getStatus
+MethodInvocation:handle
+MethodInvocation:processException
+MethodInvocation:shouldPrintErrorLog
+MethodInvocation:error
+MethodInvocation:getTraceIdLogger
+MethodInvocation:getInvocationQualifiedName
+MethodInvocation:onBusinessMethodFinish
+MethodInvocation:onBusinessFinish
+MethodInvocation:handle
+MethodInvocation:processException
+Method-name:syncInvoke
+Method-returnType:void
+Method-parameters:[Invocation invocation, SwaggerProducerOperation producerOperation, AsyncResponse asyncResp]
+MethodInvocation:setInvocationContext
+MethodInvocation:doInvoke
+MethodInvocation:removeInvocationContext
+MethodInvocation:handle
+Method-name:doInvoke
+Method-returnType:Response
+Method-parameters:[Invocation invocation, SwaggerProducerOperation producerOperation]
+MethodInvocation:onBusinessMethodStart
+MethodInvocation:toProducerArguments
+MethodInvocation:getProducerInvokeExtenstionList
+MethodInvocation:beforeMethodInvoke
+MethodInvocation:invoke
+MethodInvocation:getProducerMethod
+MethodInvocation:getProducerInstance
+MethodInvocation:mapResponse
+MethodInvocation:getResponseMapper
+MethodInvocation:getStatus
+MethodInvocation:onBusinessMethodFinish
+MethodInvocation:onBusinessFinish
+MethodInvocation:shouldPrintErrorLog
+MethodInvocation:error
+MethodInvocation:getTraceIdLogger
+MethodInvocation:getInvocationQualifiedName
+MethodInvocation:onBusinessMethodFinish
+MethodInvocation:onBusinessFinish
+MethodInvocation:processException
+Method-name:shouldPrintErrorLog
+Method-returnType:boolean
+Method-parameters:[Throwable throwable]
+MethodInvocation:getTargetException
+Method-name:processException
+Method-returnType:Response
+Method-parameters:[SwaggerInvocation invocation, Throwable e]
+MethodInvocation:getTargetException
+MethodInvocation:convertExceptionToResponse

@@ -1,0 +1,111 @@
+Class:LightList
+Field:list
+Field:tlist
+Field:distToOwner
+Field:listSize
+Field:owner
+Field:DEFAULT_SIZE
+Field:c
+Method-name:compare
+Method-returnType:int
+Method-parameters:[Light l1, Light l2]
+Method-name:LightList
+Method-returnType:null
+Method-parameters:[]
+Method-name:LightList
+Method-returnType:null
+Method-parameters:[Spatial owner]
+MethodInvocation:fill
+FieldAccess:owner
+Method-name:setOwner
+Method-returnType:void
+Method-parameters:[Spatial owner]
+FieldAccess:owner
+Method-name:doubleSize
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+Method-name:add
+Method-returnType:void
+Method-parameters:[Light l]
+MethodInvocation:doubleSize
+Method-name:remove
+Method-returnType:void
+Method-parameters:[int index]
+Method-name:remove
+Method-returnType:void
+Method-parameters:[Light l]
+MethodInvocation:remove
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+Method-name:get
+Method-returnType:Light
+Method-parameters:[int num]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:fill
+Method-name:sort
+Method-returnType:void
+Method-parameters:[boolean transformChanged]
+MethodInvocation:clone
+MethodInvocation:arraycopy
+MethodInvocation:computeLastDistance
+MethodInvocation:msort
+Method-name:update
+Method-returnType:void
+Method-parameters:[LightList local, LightList parent]
+MethodInvocation:clear
+MethodInvocation:doubleSize
+MethodInvocation:arraycopy
+MethodInvocation:doubleSize
+Method-name:iterator
+Method-returnType:Iterator<Light>
+Method-parameters:[]
+Field:index
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+Method-name:next
+Method-returnType:Light
+Method-parameters:[]
+MethodInvocation:hasNext
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:remove
+Method-name:clone
+Method-returnType:LightList
+Method-parameters:[]
+MethodInvocation:clone
+MethodInvocation:clone
+Method-name:jmeClone
+Method-returnType:LightList
+Method-parameters:[]
+Method-name:cloneFields
+Method-returnType:void
+Method-parameters:[Cloner cloner, Object original]
+FieldAccess:owner
+MethodInvocation:clone
+FieldAccess:list
+MethodInvocation:clone
+FieldAccess:distToOwner
+MethodInvocation:clone
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter ex]
+MethodInvocation:getCapsule
+MethodInvocation:add
+MethodInvocation:writeSavableArrayList
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter im]
+MethodInvocation:getCapsule
+MethodInvocation:readSavableArrayList
+MethodInvocation:size
+MethodInvocation:max
+MethodInvocation:get
+MethodInvocation:fill

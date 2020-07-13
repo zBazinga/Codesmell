@@ -1,0 +1,57 @@
+Class:MapInitializationNode
+Field:keyNodes
+Field:valueNodes
+Method-name:getKeyNode
+Method-returnType:ExpressionNode
+Method-parameters:[int index]
+MethodInvocation:get
+Method-name:getValueNode
+Method-returnType:ExpressionNode
+Method-parameters:[int index]
+MethodInvocation:get
+Method-name:getArgumentsSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getKeyNodes
+Method-returnType:List<ExpressionNode>
+Method-parameters:[]
+Method-name:getValueNodes
+Method-returnType:List<ExpressionNode>
+Method-parameters:[]
+Field:constructor
+Field:method
+Method-name:setConstructor
+Method-returnType:void
+Method-parameters:[PainlessConstructor constructor]
+FieldAccess:constructor
+Method-name:getConstructor
+Method-returnType:PainlessConstructor
+Method-parameters:[]
+Method-name:setMethod
+Method-returnType:void
+Method-parameters:[PainlessMethod method]
+FieldAccess:method
+Method-name:getMethod
+Method-returnType:PainlessMethod
+Method-parameters:[]
+Method-name:write
+Method-returnType:void
+Method-parameters:[ClassWriter classWriter, MethodWriter methodWriter, ScopeTable scopeTable]
+MethodInvocation:writeDebugInfo
+MethodInvocation:newInstance
+MethodInvocation:getType
+MethodInvocation:getExpressionType
+MethodInvocation:dup
+MethodInvocation:invokeConstructor
+MethodInvocation:getType
+MethodInvocation:getDeclaringClass
+MethodInvocation:getMethod
+MethodInvocation:getArgumentsSize
+MethodInvocation:dup
+MethodInvocation:write
+MethodInvocation:getKeyNode
+MethodInvocation:write
+MethodInvocation:getValueNode
+MethodInvocation:invokeMethodCall
+MethodInvocation:pop

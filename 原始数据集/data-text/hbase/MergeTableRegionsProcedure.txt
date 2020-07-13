@@ -1,0 +1,403 @@
+Class:MergeTableRegionsProcedure
+Field:LOG
+MethodInvocation:getLogger
+Field:traceEnabled
+Field:regionLocation
+Field:regionsToMerge
+Field:mergedRegion
+Field:forcible
+Method-name:MergeTableRegionsProcedure
+Method-returnType:null
+Method-parameters:[]
+Method-name:MergeTableRegionsProcedure
+Method-returnType:null
+Method-parameters:[final MasterProcedureEnv env, final RegionInfo regionToMergeA, final RegionInfo regionToMergeB]
+Method-name:MergeTableRegionsProcedure
+Method-returnType:null
+Method-parameters:[final MasterProcedureEnv env, final RegionInfo regionToMergeA, final RegionInfo regionToMergeB, final boolean forcible]
+Method-name:MergeTableRegionsProcedure
+Method-returnType:null
+Method-parameters:[final MasterProcedureEnv env, final RegionInfo[] regionsToMerge, final boolean forcible]
+MethodInvocation:checkRegionsToMerge
+FieldAccess:regionsToMerge
+FieldAccess:mergedRegion
+MethodInvocation:createMergedRegionInfo
+MethodInvocation:preflightChecks
+FieldAccess:forcible
+Method-name:checkRegionsToMerge
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, final RegionInfo[] regionsToMerge, final boolean forcible]
+MethodInvocation:toString
+MethodInvocation:checkRegionsToMerge
+Method-name:checkRegionsToMerge
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, final RegionInfo regionToMergeA, final RegionInfo regionToMergeB, final boolean forcible]
+MethodInvocation:equals
+MethodInvocation:getTable
+MethodInvocation:getTable
+MethodInvocation:getReplicaId
+MethodInvocation:getReplicaId
+MethodInvocation:checkOnline
+MethodInvocation:checkOnline
+MethodInvocation:areAdjacent
+MethodInvocation:getShortNameToLog
+MethodInvocation:getShortNameToLog
+MethodInvocation:warn
+Method-name:createMergedRegionInfo
+Method-returnType:RegionInfo
+Method-parameters:[final RegionInfo[] regionsToMerge]
+MethodInvocation:createMergedRegionInfo
+Method-name:createMergedRegionInfo
+Method-returnType:RegionInfo
+Method-parameters:[final RegionInfo regionToMergeA, final RegionInfo regionToMergeB]
+MethodInvocation:compare
+MethodInvocation:getStartKey
+MethodInvocation:getStartKey
+MethodInvocation:equals
+MethodInvocation:getEndKey
+MethodInvocation:equals
+MethodInvocation:getEndKey
+MethodInvocation:compareTo
+MethodInvocation:getEndKey
+MethodInvocation:getEndKey
+MethodInvocation:getEndKey
+MethodInvocation:getEndKey
+MethodInvocation:build
+MethodInvocation:setRegionId
+MethodInvocation:setSplit
+MethodInvocation:setEndKey
+MethodInvocation:setStartKey
+MethodInvocation:newBuilder
+MethodInvocation:getTable
+MethodInvocation:getMergedRegionIdTimestamp
+Method-name:getMergedRegionIdTimestamp
+Method-returnType:long
+Method-parameters:[final RegionInfo regionToMergeA, final RegionInfo regionToMergeB]
+MethodInvocation:currentTime
+MethodInvocation:getRegionId
+MethodInvocation:getRegionId
+MethodInvocation:warn
+MethodInvocation:getRegionId
+MethodInvocation:getRegionId
+MethodInvocation:max
+MethodInvocation:getRegionId
+MethodInvocation:getRegionId
+Method-name:removeNonDefaultReplicas
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:removeNonDefaultReplicas
+MethodInvocation:of
+MethodInvocation:getRegionReplication
+Method-name:checkClosedRegions
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:checkClosedRegion
+Method-name:executeFromState
+Method-returnType:Flow
+Method-parameters:[final MasterProcedureEnv env, MergeTableRegionsState state]
+Method-name:rollbackState
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env, final MergeTableRegionsState state]
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:warn
+MethodInvocation:cleanupMergedRegion
+MethodInvocation:rollbackCloseRegionsForMerge
+MethodInvocation:postRollBackMergeRegions
+MethodInvocation:warn
+MethodInvocation:getShortNameToLog
+MethodInvocation:getTableName
+Method-name:isRollbackSupported
+Method-returnType:boolean
+Method-parameters:[final MergeTableRegionsState state]
+Method-name:getState
+Method-returnType:MergeTableRegionsState
+Method-parameters:[final int stateId]
+MethodInvocation:forNumber
+Method-name:getStateId
+Method-returnType:int
+Method-parameters:[final MergeTableRegionsState state]
+MethodInvocation:getNumber
+Method-name:getInitialState
+Method-returnType:MergeTableRegionsState
+Method-parameters:[]
+Method-name:serializeStateData
+Method-returnType:void
+Method-parameters:[ProcedureStateSerializer serializer]
+MethodInvocation:setForcible
+MethodInvocation:setMergedRegionInfo
+MethodInvocation:setUserInfo
+MethodInvocation:newBuilder
+MethodInvocation:toProtoUserInfo
+MethodInvocation:getUser
+MethodInvocation:toRegionInfo
+MethodInvocation:addRegionInfo
+MethodInvocation:toRegionInfo
+MethodInvocation:serialize
+MethodInvocation:build
+Method-name:deserializeStateData
+Method-returnType:void
+Method-parameters:[ProcedureStateSerializer serializer]
+MethodInvocation:deserialize
+MethodInvocation:setUser
+MethodInvocation:toUserInfo
+MethodInvocation:getUserInfo
+MethodInvocation:assert
+MethodInvocation:getRegionInfoCount
+MethodInvocation:getRegionInfoCount
+MethodInvocation:toRegionInfo
+MethodInvocation:getRegionInfo
+MethodInvocation:toRegionInfo
+MethodInvocation:getMergedRegionInfo
+Method-name:toStringClassDetails
+Method-returnType:void
+Method-parameters:[StringBuilder sb]
+MethodInvocation:append
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getTableName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getShortNameToLog
+MethodInvocation:append
+MethodInvocation:append
+Method-name:acquireLock
+Method-returnType:LockState
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:waitRegions
+MethodInvocation:getProcedureScheduler
+MethodInvocation:getTableName
+MethodInvocation:debug
+MethodInvocation:dumpLocks
+MethodInvocation:getProcedureScheduler
+Method-name:releaseLock
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:wakeRegions
+MethodInvocation:getProcedureScheduler
+MethodInvocation:getTableName
+Method-name:holdLock
+Method-returnType:boolean
+Method-parameters:[MasterProcedureEnv env]
+Method-name:getTableName
+Method-returnType:TableName
+Method-parameters:[]
+MethodInvocation:getTable
+Method-name:getTableOperationType
+Method-returnType:TableOperationType
+Method-parameters:[]
+Method-name:getProcedureMetrics
+Method-returnType:ProcedureMetrics
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:getMergeProcMetrics
+MethodInvocation:getAssignmentManagerMetrics
+MethodInvocation:getAssignmentManager
+Method-name:prepareMergeRegion
+Method-returnType:boolean
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:isTakingSnapshot
+MethodInvocation:getSnapshotManager
+MethodInvocation:getMasterServices
+MethodInvocation:getTable
+MethodInvocation:getShortNameToLog
+MethodInvocation:getTable
+MethodInvocation:getCatalogJanitor
+MethodInvocation:getMasterServices
+MethodInvocation:cleanMergeQualifier
+MethodInvocation:cleanMergeQualifier
+MethodInvocation:getShortNameToLog
+MethodInvocation:getEncodedName
+MethodInvocation:getEncodedName
+MethodInvocation:warn
+MethodInvocation:getRegionStates
+MethodInvocation:getAssignmentManager
+MethodInvocation:getRegionState
+MethodInvocation:getEncodedName
+MethodInvocation:getRegionState
+MethodInvocation:getEncodedName
+MethodInvocation:getEncodedName
+MethodInvocation:getEncodedName
+MethodInvocation:isOpened
+MethodInvocation:isOpened
+MethodInvocation:isSplitOrMergeEnabled
+MethodInvocation:getMasterServices
+MethodInvocation:deepToString
+MethodInvocation:warn
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:isMergeEnabled
+MethodInvocation:get
+MethodInvocation:getTableDescriptors
+MethodInvocation:getMasterServices
+MethodInvocation:getTableName
+MethodInvocation:deepToString
+MethodInvocation:warn
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:isMergeable
+MethodInvocation:isMergeable
+MethodInvocation:getShortNameToLog
+MethodInvocation:getRegion
+MethodInvocation:initCause
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:setRegionStateToMerging
+Method-name:isMergeable
+Method-returnType:boolean
+Method-parameters:[final MasterProcedureEnv env, final RegionState rs]
+MethodInvocation:getRegionInfoResponse
+MethodInvocation:getServerName
+MethodInvocation:getRegion
+MethodInvocation:hasMergeable
+MethodInvocation:getMergeable
+Method-name:preMergeRegions
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:getMasterCoprocessorHost
+MethodInvocation:preMergeRegionsAction
+MethodInvocation:getUser
+MethodInvocation:onRegionMerged
+MethodInvocation:getMasterQuotaManager
+MethodInvocation:getMasterServices
+FieldAccess:mergedRegion
+MethodInvocation:planSkipped
+MethodInvocation:getRegionNormalizer
+MethodInvocation:getMasterServices
+FieldAccess:mergedRegion
+Method-name:postRollBackMergeRegions
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:getMasterCoprocessorHost
+MethodInvocation:postRollBackMergeRegionsAction
+MethodInvocation:getUser
+Method-name:setRegionStateToMerging
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:getRegionStates
+MethodInvocation:getAssignmentManager
+MethodInvocation:setState
+MethodInvocation:getRegionStateNode
+MethodInvocation:setState
+MethodInvocation:getRegionStateNode
+Method-name:createMergedRegion
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:getMasterFileSystem
+MethodInvocation:getMasterServices
+MethodInvocation:getTableDir
+MethodInvocation:getRootDir
+MethodInvocation:getTable
+MethodInvocation:getFileSystem
+MethodInvocation:openRegionFromFileSystem
+MethodInvocation:getMasterConfiguration
+MethodInvocation:createMergesDir
+MethodInvocation:mergeStoreFiles
+MethodInvocation:getMergesDir
+MethodInvocation:openRegionFromFileSystem
+MethodInvocation:getMasterConfiguration
+MethodInvocation:mergeStoreFiles
+MethodInvocation:getMergesDir
+MethodInvocation:commitMergedRegion
+MethodInvocation:setState
+MethodInvocation:getOrCreateRegionStateNode
+MethodInvocation:getRegionStates
+MethodInvocation:getAssignmentManager
+Method-name:cleanupMergedRegion
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:getMasterFileSystem
+MethodInvocation:getMasterServices
+MethodInvocation:getTableDir
+MethodInvocation:getRootDir
+MethodInvocation:getTable
+MethodInvocation:getFileSystem
+MethodInvocation:openRegionFromFileSystem
+MethodInvocation:getMasterConfiguration
+MethodInvocation:cleanupMergedRegion
+Method-name:rollbackCloseRegionsForMerge
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:reopenRegionsForRollback
+MethodInvocation:asList
+MethodInvocation:getRegionReplication
+MethodInvocation:getServerName
+Method-name:createUnassignProcedures
+Method-returnType:TransitRegionStateProcedure[]
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:createUnassignProceduresForSplitOrMerge
+MethodInvocation:of
+MethodInvocation:getRegionReplication
+Method-name:createAssignProcedures
+Method-returnType:TransitRegionStateProcedure[]
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:createAssignProceduresForOpeningNewRegions
+MethodInvocation:singletonList
+MethodInvocation:getRegionReplication
+MethodInvocation:getServerName
+Method-name:getRegionReplication
+Method-returnType:int
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:get
+MethodInvocation:getTableDescriptors
+MethodInvocation:getMasterServices
+MethodInvocation:getTableName
+MethodInvocation:getRegionReplication
+Method-name:preMergeRegionsCommit
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:getMasterCoprocessorHost
+MethodInvocation:preMergeRegionsCommit
+MethodInvocation:getUser
+MethodInvocation:parseRegionName
+MethodInvocation:getRow
+MethodInvocation:error
+Method-name:updateMetaForMergedRegions
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:getServerName
+MethodInvocation:markRegionAsMerged
+MethodInvocation:getAssignmentManager
+Method-name:postMergeRegionsCommit
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:getMasterCoprocessorHost
+MethodInvocation:postMergeRegionsCommit
+MethodInvocation:getUser
+Method-name:postCompletedMergeRegions
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:getMasterCoprocessorHost
+MethodInvocation:postCompletedMergeRegionsAction
+MethodInvocation:getUser
+Method-name:getServerName
+Method-returnType:ServerName
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:getRegionServerOfRegion
+MethodInvocation:getRegionStates
+MethodInvocation:getAssignmentManager
+Method-name:writeMaxSequenceIdFile
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:getFileSystem
+MethodInvocation:getMasterWalManager
+MethodInvocation:getMasterServices
+MethodInvocation:max
+MethodInvocation:getMaxRegionSequenceId
+MethodInvocation:getWALRegionDir
+MethodInvocation:writeRegionSequenceIdFile
+MethodInvocation:getWALRegionDir
+Method-name:isTraceEnabled
+Method-returnType:Boolean
+Method-parameters:[]
+MethodInvocation:isTraceEnabled
+Method-name:getMergedRegion
+Method-returnType:RegionInfo
+Method-parameters:[]
+FieldAccess:mergedRegion
+Method-name:abort
+Method-returnType:boolean
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:isRollbackSupported
+MethodInvocation:getCurrentState

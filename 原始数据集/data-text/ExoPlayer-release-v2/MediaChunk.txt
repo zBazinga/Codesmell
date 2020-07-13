@@ -1,0 +1,19 @@
+Class:MediaChunk
+Field:chunkIndex
+Method-name:MediaChunk
+Method-returnType:null
+Method-parameters:[DataSource dataSource, DataSpec dataSpec, Format trackFormat, int trackSelectionReason, @Nullable Object trackSelectionData, long startTimeUs, long endTimeUs, long chunkIndex]
+MethodInvocation:checkNotNull
+FieldAccess:chunkIndex
+Method-name:getNextChunkIndex
+Method-returnType:long
+Method-parameters:[]
+Method-name:isLoadCompleted
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getSegmentNum
+Method-returnType:long
+Method-parameters:[DefaultDashChunkSource.RepresentationHolder representationHolder, long loadPositionUs, long firstAvailableSegmentNum, long lastAvailableSegmentNum, DefaultDashChunkSource defaultDashChunkSource]
+MethodInvocation:getNextChunkIndex
+MethodInvocation:constrainValue
+MethodInvocation:getSegmentNum

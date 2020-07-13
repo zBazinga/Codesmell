@@ -1,0 +1,53 @@
+Class:SchedulerAssignmentImpl
+Field:topologyId
+Field:executorToSlot
+Method-name:SchedulerAssignmentImpl
+Method-returnType:null
+Method-parameters:[String topologyId, Map<ExecutorDetails,WorkerSlot> executorToSlots]
+FieldAccess:topologyId
+FieldAccess:executorToSlot
+MethodInvocation:putAll
+FieldAccess:executorToSlot
+Method-name:getSlots
+Method-returnType:Set<WorkerSlot>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:assign
+Method-returnType:void
+Method-parameters:[WorkerSlot slot, Collection<ExecutorDetails> executors]
+MethodInvocation:put
+FieldAccess:executorToSlot
+Method-name:unassignBySlot
+Method-returnType:void
+Method-parameters:[WorkerSlot slot]
+MethodInvocation:keySet
+FieldAccess:executorToSlot
+MethodInvocation:get
+FieldAccess:executorToSlot
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:remove
+FieldAccess:executorToSlot
+Method-name:isSlotOccupied
+Method-returnType:boolean
+Method-parameters:[WorkerSlot slot]
+MethodInvocation:containsValue
+FieldAccess:executorToSlot
+Method-name:isExecutorAssigned
+Method-returnType:boolean
+Method-parameters:[ExecutorDetails executor]
+MethodInvocation:containsKey
+FieldAccess:executorToSlot
+Method-name:getTopologyId
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:topologyId
+Method-name:getExecutorToSlot
+Method-returnType:Map<ExecutorDetails,WorkerSlot>
+Method-parameters:[]
+FieldAccess:executorToSlot
+Method-name:getExecutors
+Method-returnType:Set<ExecutorDetails>
+Method-parameters:[]
+MethodInvocation:keySet
+FieldAccess:executorToSlot

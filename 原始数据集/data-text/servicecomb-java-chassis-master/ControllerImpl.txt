@@ -1,0 +1,20 @@
+Class:ControllerImpl
+Method-name:add
+Method-returnType:int
+Method-parameters:[@Min(1) @RequestParam("a") int a, @Min(1) @RequestParam("b") int b]
+Method-name:sayHello
+Method-returnType:String
+Method-parameters:[@PathVariable("name") String name]
+MethodInvocation:equals
+Method-name:sayHi
+Method-returnType:String
+Method-parameters:[HttpServletRequest request]
+MethodInvocation:getRemoteAddr
+MethodInvocation:isEmpty
+MethodInvocation:getParameterValues
+MethodInvocation:equals
+MethodInvocation:getParameter
+MethodInvocation:toString
+Method-name:sayHei
+Method-returnType:String
+Method-parameters:[@RequestHeader("name") String name]

@@ -1,0 +1,414 @@
+Class:ApacheHttpClient
+Field:CLIENT_NAME
+Field:log
+MethodInvocation:loggerFor
+Field:apacheHttpRequestFactory
+Field:httpClient
+Field:requestConfig
+Field:resolvedOptions
+Method-name:ApacheHttpClient
+Method-returnType:null
+Method-parameters:[ConnectionManagerAwareHttpClient httpClient, ApacheHttpRequestConfig requestConfig, AttributeMap resolvedOptions]
+FieldAccess:httpClient
+FieldAccess:requestConfig
+FieldAccess:resolvedOptions
+Method-name:ApacheHttpClient
+Method-returnType:null
+Method-parameters:[DefaultBuilder builder, AttributeMap resolvedOptions]
+FieldAccess:httpClient
+MethodInvocation:createClient
+FieldAccess:requestConfig
+MethodInvocation:createRequestConfig
+FieldAccess:resolvedOptions
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:createClient
+Method-returnType:ConnectionManagerAwareHttpClient
+Method-parameters:[ApacheHttpClient.DefaultBuilder configuration, AttributeMap standardOptions]
+MethodInvocation:custom
+MethodInvocation:create
+MethodInvocation:setConnectionManager
+MethodInvocation:setUserAgent
+MethodInvocation:disableAutomaticRetries
+MethodInvocation:disableRedirectHandling
+MethodInvocation:setKeepAliveStrategy
+MethodInvocation:disableContentCompression
+MethodInvocation:setRequestExecutor
+MethodInvocation:buildKeepAliveStrategy
+MethodInvocation:wrap
+MethodInvocation:addProxyConfig
+MethodInvocation:useIdleConnectionReaper
+MethodInvocation:registerConnectionManager
+MethodInvocation:getInstance
+MethodInvocation:toMillis
+MethodInvocation:get
+MethodInvocation:build
+Method-name:addProxyConfig
+Method-returnType:void
+Method-parameters:[HttpClientBuilder builder, DefaultBuilder configuration]
+MethodInvocation:isTrue
+MethodInvocation:isProxyEnabled
+MethodInvocation:isTrue
+MethodInvocation:isAuthenticatedProxy
+MethodInvocation:isProxyEnabled
+MethodInvocation:debug
+MethodInvocation:host
+MethodInvocation:host
+MethodInvocation:port
+MethodInvocation:scheme
+MethodInvocation:nonProxyHosts
+MethodInvocation:isAuthenticatedProxy
+MethodInvocation:newProxyCredentialsProvider
+MethodInvocation:setRoutePlanner
+MethodInvocation:setDefaultCredentialsProvider
+Method-name:buildKeepAliveStrategy
+Method-returnType:ConnectionKeepAliveStrategy
+Method-parameters:[AttributeMap standardOptions]
+MethodInvocation:toMillis
+MethodInvocation:get
+Method-name:useIdleConnectionReaper
+Method-returnType:boolean
+Method-parameters:[AttributeMap standardOptions]
+MethodInvocation:equals
+MethodInvocation:get
+Method-name:isProxyEnabled
+Method-returnType:boolean
+Method-parameters:[ProxyConfiguration proxyConfiguration]
+MethodInvocation:host
+MethodInvocation:port
+Method-name:prepareRequest
+Method-returnType:ExecutableHttpRequest
+Method-parameters:[HttpExecuteRequest request]
+MethodInvocation:toApacheRequest
+Method-name:call
+Method-returnType:HttpExecuteResponse
+Method-parameters:[]
+MethodInvocation:execute
+Method-name:abort
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:abort
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getHttpClientConnectionManager
+MethodInvocation:deregisterConnectionManager
+MethodInvocation:getInstance
+MethodInvocation:shutdown
+Method-name:execute
+Method-returnType:HttpExecuteResponse
+Method-parameters:[HttpRequestBase apacheRequest]
+MethodInvocation:newClientContext
+MethodInvocation:proxyConfiguration
+MethodInvocation:execute
+MethodInvocation:createResponse
+Method-name:toApacheRequest
+Method-returnType:HttpRequestBase
+Method-parameters:[HttpExecuteRequest request]
+MethodInvocation:create
+Method-name:createResponse
+Method-returnType:HttpExecuteResponse
+Method-parameters:[org.apache.http.HttpResponse apacheHttpResponse, HttpRequestBase apacheRequest]
+MethodInvocation:build
+MethodInvocation:headers
+MethodInvocation:statusText
+MethodInvocation:statusCode
+MethodInvocation:builder
+MethodInvocation:getStatusCode
+MethodInvocation:getStatusLine
+MethodInvocation:getReasonPhrase
+MethodInvocation:getStatusLine
+MethodInvocation:transformHeaders
+MethodInvocation:getEntity
+MethodInvocation:toAbortableInputStream
+MethodInvocation:build
+MethodInvocation:responseBody
+MethodInvocation:response
+MethodInvocation:builder
+Method-name:toAbortableInputStream
+Method-returnType:AbortableInputStream
+Method-parameters:[HttpResponse apacheHttpResponse, HttpRequestBase apacheRequest]
+MethodInvocation:create
+MethodInvocation:getContent
+MethodInvocation:getEntity
+Method-name:transformHeaders
+Method-returnType:Map<String,List<String>>
+Method-parameters:[HttpResponse apacheHttpResponse]
+MethodInvocation:collect
+MethodInvocation:of
+MethodInvocation:getAllHeaders
+MethodInvocation:groupingBy
+MethodInvocation:mapping
+MethodInvocation:toList
+Method-name:createRequestConfig
+Method-returnType:ApacheHttpRequestConfig
+Method-parameters:[DefaultBuilder builder, AttributeMap resolvedOptions]
+MethodInvocation:build
+MethodInvocation:expectContinueEnabled
+MethodInvocation:localAddress
+MethodInvocation:proxyConfiguration
+MethodInvocation:connectionAcquireTimeout
+MethodInvocation:connectionTimeout
+MethodInvocation:socketTimeout
+MethodInvocation:builder
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:orElse
+MethodInvocation:ofNullable
+MethodInvocation:orElse
+MethodInvocation:ofNullable
+Method-name:clientName
+Method-returnType:String
+Method-parameters:[]
+Method-name:socketTimeout
+Method-returnType:Builder
+Method-parameters:[Duration socketTimeout]
+Method-name:connectionTimeout
+Method-returnType:Builder
+Method-parameters:[Duration connectionTimeout]
+Method-name:connectionAcquisitionTimeout
+Method-returnType:Builder
+Method-parameters:[Duration connectionAcquisitionTimeout]
+Method-name:maxConnections
+Method-returnType:Builder
+Method-parameters:[Integer maxConnections]
+Method-name:proxyConfiguration
+Method-returnType:Builder
+Method-parameters:[ProxyConfiguration proxyConfiguration]
+Method-name:localAddress
+Method-returnType:Builder
+Method-parameters:[InetAddress localAddress]
+Method-name:expectContinueEnabled
+Method-returnType:Builder
+Method-parameters:[Boolean expectContinueEnabled]
+Method-name:connectionTimeToLive
+Method-returnType:Builder
+Method-parameters:[Duration connectionTimeToLive]
+Method-name:connectionMaxIdleTime
+Method-returnType:Builder
+Method-parameters:[Duration maxIdleConnectionTimeout]
+Method-name:useIdleConnectionReaper
+Method-returnType:Builder
+Method-parameters:[Boolean useConnectionReaper]
+Method-name:httpRoutePlanner
+Method-returnType:Builder
+Method-parameters:[HttpRoutePlanner proxyConfiguration]
+Method-name:credentialsProvider
+Method-returnType:Builder
+Method-parameters:[CredentialsProvider credentialsProvider]
+Method-name:tlsKeyManagersProvider
+Method-returnType:Builder
+Method-parameters:[TlsKeyManagersProvider tlsKeyManagersProvider]
+Method-name:tlsTrustManagersProvider
+Method-returnType:Builder
+Method-parameters:[TlsTrustManagersProvider tlsTrustManagersProvider]
+Class:DefaultBuilder
+Field:standardOptions
+MethodInvocation:builder
+Field:proxyConfiguration
+MethodInvocation:build
+MethodInvocation:builder
+Field:localAddress
+Field:expectContinueEnabled
+Field:httpRoutePlanner
+Field:credentialsProvider
+Method-name:DefaultBuilder
+Method-returnType:null
+Method-parameters:[]
+Method-name:socketTimeout
+Method-returnType:Builder
+Method-parameters:[Duration socketTimeout]
+MethodInvocation:put
+Method-name:setSocketTimeout
+Method-returnType:void
+Method-parameters:[Duration socketTimeout]
+MethodInvocation:socketTimeout
+Method-name:connectionTimeout
+Method-returnType:Builder
+Method-parameters:[Duration connectionTimeout]
+MethodInvocation:put
+Method-name:setConnectionTimeout
+Method-returnType:void
+Method-parameters:[Duration connectionTimeout]
+MethodInvocation:connectionTimeout
+Method-name:connectionAcquisitionTimeout
+Method-returnType:Builder
+Method-parameters:[Duration connectionAcquisitionTimeout]
+MethodInvocation:isPositive
+MethodInvocation:put
+Method-name:setConnectionAcquisitionTimeout
+Method-returnType:void
+Method-parameters:[Duration connectionAcquisitionTimeout]
+MethodInvocation:connectionAcquisitionTimeout
+Method-name:maxConnections
+Method-returnType:Builder
+Method-parameters:[Integer maxConnections]
+MethodInvocation:put
+Method-name:setMaxConnections
+Method-returnType:void
+Method-parameters:[Integer maxConnections]
+MethodInvocation:maxConnections
+Method-name:proxyConfiguration
+Method-returnType:Builder
+Method-parameters:[ProxyConfiguration proxyConfiguration]
+FieldAccess:proxyConfiguration
+Method-name:setProxyConfiguration
+Method-returnType:void
+Method-parameters:[ProxyConfiguration proxyConfiguration]
+MethodInvocation:proxyConfiguration
+Method-name:localAddress
+Method-returnType:Builder
+Method-parameters:[InetAddress localAddress]
+FieldAccess:localAddress
+Method-name:setLocalAddress
+Method-returnType:void
+Method-parameters:[InetAddress localAddress]
+MethodInvocation:localAddress
+Method-name:expectContinueEnabled
+Method-returnType:Builder
+Method-parameters:[Boolean expectContinueEnabled]
+FieldAccess:expectContinueEnabled
+Method-name:setExpectContinueEnabled
+Method-returnType:void
+Method-parameters:[Boolean useExpectContinue]
+FieldAccess:expectContinueEnabled
+Method-name:connectionTimeToLive
+Method-returnType:Builder
+Method-parameters:[Duration connectionTimeToLive]
+MethodInvocation:put
+Method-name:setConnectionTimeToLive
+Method-returnType:void
+Method-parameters:[Duration connectionTimeToLive]
+MethodInvocation:connectionTimeToLive
+Method-name:connectionMaxIdleTime
+Method-returnType:Builder
+Method-parameters:[Duration maxIdleConnectionTimeout]
+MethodInvocation:put
+Method-name:setConnectionMaxIdleTime
+Method-returnType:void
+Method-parameters:[Duration connectionMaxIdleTime]
+MethodInvocation:connectionMaxIdleTime
+Method-name:useIdleConnectionReaper
+Method-returnType:Builder
+Method-parameters:[Boolean useIdleConnectionReaper]
+MethodInvocation:put
+Method-name:setUseIdleConnectionReaper
+Method-returnType:void
+Method-parameters:[Boolean useIdleConnectionReaper]
+MethodInvocation:useIdleConnectionReaper
+Method-name:httpRoutePlanner
+Method-returnType:Builder
+Method-parameters:[HttpRoutePlanner httpRoutePlanner]
+FieldAccess:httpRoutePlanner
+Method-name:setHttpRoutePlanner
+Method-returnType:void
+Method-parameters:[HttpRoutePlanner httpRoutePlanner]
+MethodInvocation:httpRoutePlanner
+Method-name:credentialsProvider
+Method-returnType:Builder
+Method-parameters:[CredentialsProvider credentialsProvider]
+FieldAccess:credentialsProvider
+Method-name:setCredentialsProvider
+Method-returnType:void
+Method-parameters:[CredentialsProvider credentialsProvider]
+MethodInvocation:credentialsProvider
+Method-name:tlsKeyManagersProvider
+Method-returnType:Builder
+Method-parameters:[TlsKeyManagersProvider tlsKeyManagersProvider]
+MethodInvocation:put
+Method-name:setTlsKeyManagersProvider
+Method-returnType:void
+Method-parameters:[TlsKeyManagersProvider tlsKeyManagersProvider]
+MethodInvocation:tlsKeyManagersProvider
+Method-name:tlsTrustManagersProvider
+Method-returnType:Builder
+Method-parameters:[TlsTrustManagersProvider tlsTrustManagersProvider]
+MethodInvocation:put
+Method-name:setTlsTrustManagersProvider
+Method-returnType:void
+Method-parameters:[TlsTrustManagersProvider tlsTrustManagersProvider]
+MethodInvocation:tlsTrustManagersProvider
+Method-name:buildWithDefaults
+Method-returnType:SdkHttpClient
+Method-parameters:[AttributeMap serviceDefaults]
+MethodInvocation:merge
+MethodInvocation:merge
+MethodInvocation:build
+Class:ApacheConnectionManagerFactory
+Method-name:create
+Method-returnType:HttpClientConnectionManager
+Method-parameters:[ApacheHttpClient.DefaultBuilder configuration, AttributeMap standardOptions]
+MethodInvocation:getPreferredSocketFactory
+MethodInvocation:createSocketFactoryRegistry
+MethodInvocation:toMillis
+MethodInvocation:get
+MethodInvocation:setDefaultMaxPerRoute
+MethodInvocation:get
+MethodInvocation:setMaxTotal
+MethodInvocation:get
+MethodInvocation:setDefaultSocketConfig
+MethodInvocation:buildSocketConfig
+Method-name:getPreferredSocketFactory
+Method-returnType:ConnectionSocketFactory
+Method-parameters:[ApacheHttpClient.DefaultBuilder configuration, AttributeMap standardOptions]
+MethodInvocation:getSslContext
+MethodInvocation:getHostNameVerifier
+Method-name:getHostNameVerifier
+Method-returnType:HostnameVerifier
+Method-parameters:[AttributeMap standardOptions]
+MethodInvocation:get
+MethodInvocation:getDefaultHostnameVerifier
+Method-name:getSslContext
+Method-returnType:SSLContext
+Method-parameters:[AttributeMap standardOptions]
+MethodInvocation:isTrue
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:trustManagers
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:warn
+MethodInvocation:trustAllTrustManager
+MethodInvocation:get
+MethodInvocation:keyManagers
+MethodInvocation:getInstance
+MethodInvocation:init
+MethodInvocation:getMessage
+Method-name:trustAllTrustManager
+Method-returnType:TrustManager[]
+Method-parameters:[]
+Method-name:checkClientTrusted
+Method-returnType:void
+Method-parameters:[X509Certificate[] x509Certificates, String s]
+MethodInvocation:debug
+MethodInvocation:getSubjectDN
+Method-name:checkServerTrusted
+Method-returnType:void
+Method-parameters:[X509Certificate[] x509Certificates, String s]
+MethodInvocation:debug
+MethodInvocation:getSubjectDN
+Method-name:getAcceptedIssuers
+Method-returnType:X509Certificate[]
+Method-parameters:[]
+Method-name:buildSocketConfig
+Method-returnType:SocketConfig
+Method-parameters:[AttributeMap standardOptions]
+MethodInvocation:build
+MethodInvocation:setTcpNoDelay
+MethodInvocation:setSoTimeout
+MethodInvocation:setSoKeepAlive
+MethodInvocation:custom
+MethodInvocation:saturatedCast
+MethodInvocation:toMillis
+MethodInvocation:get
+Method-name:createSocketFactoryRegistry
+Method-returnType:Registry<ConnectionSocketFactory>
+Method-parameters:[ConnectionSocketFactory sslSocketFactory]
+MethodInvocation:build
+MethodInvocation:register
+MethodInvocation:register
+MethodInvocation:create
+MethodInvocation:getSocketFactory

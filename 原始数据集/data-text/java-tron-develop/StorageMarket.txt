@@ -1,0 +1,153 @@
+Class:StorageMarket
+Field:MS_PER_YEAR
+Field:NEW_TOTAL_RESERVED
+Field:NEW_STORAGE_LIMIT
+Field:NEW_TOTAL_POOL
+Field:accountStore
+Field:dynamicPropertiesStore
+Field:supply
+Method-name:StorageMarket
+Method-returnType:null
+Method-parameters:[AccountStore accountStore, DynamicPropertiesStore dynamicPropertiesStore]
+FieldAccess:accountStore
+FieldAccess:dynamicPropertiesStore
+Method-name:exchange_to_supply
+Method-returnType:long
+Method-parameters:[boolean isTRX, long quant]
+MethodInvocation:info
+MethodInvocation:getTotalStoragePool
+MethodInvocation:getTotalStorageReserved
+MethodInvocation:info
+MethodInvocation:info
+MethodInvocation:pow
+MethodInvocation:info
+Method-name:exchange_to_supply2
+Method-returnType:long
+Method-parameters:[boolean isTRX, long quant]
+MethodInvocation:info
+MethodInvocation:getTotalStoragePool
+MethodInvocation:getTotalStorageReserved
+MethodInvocation:info
+MethodInvocation:info
+MethodInvocation:pow
+MethodInvocation:info
+Method-name:exchange_from_supply
+Method-returnType:long
+Method-parameters:[boolean isTRX, long supplyQuant]
+MethodInvocation:getTotalStoragePool
+MethodInvocation:getTotalStorageReserved
+MethodInvocation:pow
+MethodInvocation:info
+MethodInvocation:round
+MethodInvocation:info
+Method-name:exchange
+Method-returnType:long
+Method-parameters:[long from, boolean isTRX]
+MethodInvocation:exchange_to_supply
+MethodInvocation:exchange_from_supply
+Method-name:calculateTax
+Method-returnType:long
+Method-parameters:[long duration, long limit]
+MethodInvocation:getStorageExchangeTaxRate
+MethodInvocation:info
+Method-name:tryPayTax
+Method-returnType:long
+Method-parameters:[long duration, long limit]
+MethodInvocation:calculateTax
+MethodInvocation:exchange
+MethodInvocation:info
+MethodInvocation:getTotalStorageTax
+MethodInvocation:getTotalStoragePool
+MethodInvocation:getTotalStorageReserved
+MethodInvocation:info
+MethodInvocation:getTotalStorageReserved
+MethodInvocation:getTotalStorageReserved
+MethodInvocation:info
+MethodInvocation:info
+Method-name:payTax
+Method-returnType:long
+Method-parameters:[long duration, long limit]
+MethodInvocation:calculateTax
+MethodInvocation:exchange
+MethodInvocation:info
+MethodInvocation:getTotalStorageTax
+MethodInvocation:getTotalStoragePool
+MethodInvocation:getTotalStorageReserved
+MethodInvocation:info
+MethodInvocation:getTotalStorageReserved
+MethodInvocation:getTotalStorageReserved
+MethodInvocation:info
+MethodInvocation:info
+MethodInvocation:saveTotalStorageTax
+MethodInvocation:saveTotalStoragePool
+MethodInvocation:saveTotalStorageReserved
+Method-name:tryBuyStorageBytes
+Method-returnType:long
+Method-parameters:[long storageBought]
+MethodInvocation:exchange_to_supply2
+MethodInvocation:exchange_from_supply
+Method-name:tryBuyStorage
+Method-returnType:long
+Method-parameters:[long quant]
+MethodInvocation:exchange
+Method-name:trySellStorage
+Method-returnType:long
+Method-parameters:[long bytes]
+MethodInvocation:exchange
+Method-name:buyStorageBytes
+Method-returnType:AccountCapsule
+Method-parameters:[AccountCapsule accountCapsule, long storageBought]
+MethodInvocation:getLatestBlockHeaderTimestamp
+MethodInvocation:getStorageLimit
+MethodInvocation:exchange_to_supply2
+MethodInvocation:exchange_from_supply
+MethodInvocation:getBalance
+MethodInvocation:info
+MethodInvocation:info
+MethodInvocation:setLatestExchangeStorageTime
+MethodInvocation:setStorageLimit
+MethodInvocation:setBalance
+MethodInvocation:put
+MethodInvocation:createDbKey
+MethodInvocation:getTotalStoragePool
+MethodInvocation:getTotalStorageReserved
+MethodInvocation:info
+MethodInvocation:saveTotalStoragePool
+MethodInvocation:saveTotalStorageReserved
+Method-name:buyStorage
+Method-returnType:void
+Method-parameters:[AccountCapsule accountCapsule, long quant]
+MethodInvocation:getLatestBlockHeaderTimestamp
+MethodInvocation:getStorageLimit
+MethodInvocation:getBalance
+MethodInvocation:info
+MethodInvocation:exchange
+MethodInvocation:info
+MethodInvocation:setLatestExchangeStorageTime
+MethodInvocation:setStorageLimit
+MethodInvocation:setBalance
+MethodInvocation:put
+MethodInvocation:createDbKey
+MethodInvocation:getTotalStoragePool
+MethodInvocation:getTotalStorageReserved
+MethodInvocation:info
+MethodInvocation:saveTotalStoragePool
+MethodInvocation:saveTotalStorageReserved
+Method-name:sellStorage
+Method-returnType:void
+Method-parameters:[AccountCapsule accountCapsule, long bytes]
+MethodInvocation:getLatestBlockHeaderTimestamp
+MethodInvocation:getStorageLimit
+MethodInvocation:exchange
+MethodInvocation:getBalance
+MethodInvocation:info
+MethodInvocation:setLatestExchangeStorageTime
+MethodInvocation:setStorageLimit
+MethodInvocation:setBalance
+MethodInvocation:put
+MethodInvocation:createDbKey
+MethodInvocation:getTotalStoragePool
+MethodInvocation:getTotalStorageReserved
+MethodInvocation:info
+MethodInvocation:saveTotalStoragePool
+MethodInvocation:saveTotalStorageReserved

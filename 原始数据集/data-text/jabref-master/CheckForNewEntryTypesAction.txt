@@ -1,0 +1,22 @@
+Class:CheckForNewEntryTypesAction
+Method-name:isActionNecessary
+Method-returnType:boolean
+Method-parameters:[ParserResult parserResult]
+MethodInvocation:isEmpty
+MethodInvocation:getListOfUnknownAndUnequalCustomizations
+Method-name:performAction
+Method-returnType:void
+Method-parameters:[BasePanel panel, ParserResult parserResult]
+MethodInvocation:getBibDatabaseModeFromParserResult
+MethodInvocation:getListOfUnknownAndUnequalCustomizations
+MethodInvocation:showAndWait
+Method-name:getListOfUnknownAndUnequalCustomizations
+Method-returnType:List<BibEntryType>
+Method-parameters:[ParserResult parserResult]
+MethodInvocation:getBibDatabaseModeFromParserResult
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getEntryTypes
+MethodInvocation:isDifferentCustomOrModifiedType
+MethodInvocation:toList

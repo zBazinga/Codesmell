@@ -1,0 +1,157 @@
+Class:RegisterSpecList
+Field:EMPTY
+Method-name:make
+Method-returnType:RegisterSpecList
+Method-parameters:[RegisterSpec spec]
+MethodInvocation:set
+Method-name:make
+Method-returnType:RegisterSpecList
+Method-parameters:[RegisterSpec spec0, RegisterSpec spec1]
+MethodInvocation:set
+MethodInvocation:set
+Method-name:make
+Method-returnType:RegisterSpecList
+Method-parameters:[RegisterSpec spec0, RegisterSpec spec1, RegisterSpec spec2]
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set
+Method-name:make
+Method-returnType:RegisterSpecList
+Method-parameters:[RegisterSpec spec0, RegisterSpec spec1, RegisterSpec spec2, RegisterSpec spec3]
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set
+Method-name:RegisterSpecList
+Method-returnType:null
+Method-parameters:[int size]
+Method-name:getType
+Method-returnType:Type
+Method-parameters:[int n]
+MethodInvocation:getType
+MethodInvocation:getType
+MethodInvocation:get
+Method-name:getWordCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getCategory
+MethodInvocation:getType
+Method-name:withAddedType
+Method-returnType:TypeList
+Method-parameters:[Type type]
+Method-name:get
+Method-returnType:RegisterSpec
+Method-parameters:[int n]
+MethodInvocation:get0
+Method-name:specForRegister
+Method-returnType:RegisterSpec
+Method-parameters:[int reg]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getReg
+Method-name:indexOfRegister
+Method-returnType:int
+Method-parameters:[int reg]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getReg
+Method-name:set
+Method-returnType:void
+Method-parameters:[int n, RegisterSpec spec]
+MethodInvocation:set0
+Method-name:getRegistersSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:get0
+MethodInvocation:getNextReg
+Method-name:withFirst
+Method-returnType:RegisterSpecList
+Method-parameters:[RegisterSpec spec]
+MethodInvocation:size
+MethodInvocation:set0
+MethodInvocation:get0
+MethodInvocation:set0
+MethodInvocation:isImmutable
+MethodInvocation:setImmutable
+Method-name:withoutFirst
+Method-returnType:RegisterSpecList
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:set0
+MethodInvocation:get0
+MethodInvocation:isImmutable
+MethodInvocation:setImmutable
+Method-name:withoutLast
+Method-returnType:RegisterSpecList
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:set0
+MethodInvocation:get0
+MethodInvocation:isImmutable
+MethodInvocation:setImmutable
+Method-name:subset
+Method-returnType:RegisterSpecList
+Method-parameters:[BitSet exclusionSet]
+MethodInvocation:size
+MethodInvocation:cardinality
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:set0
+MethodInvocation:get0
+MethodInvocation:isImmutable
+MethodInvocation:setImmutable
+Method-name:withOffset
+Method-returnType:RegisterSpecList
+Method-parameters:[int delta]
+MethodInvocation:size
+MethodInvocation:get0
+MethodInvocation:set0
+MethodInvocation:withOffset
+MethodInvocation:isImmutable
+MethodInvocation:setImmutable
+Method-name:withExpandedRegisters
+Method-returnType:RegisterSpecList
+Method-parameters:[int base, boolean duplicateFirst, BitSet compatRegs]
+MethodInvocation:size
+MethodInvocation:expandRegister
+MethodInvocation:getResult
+Method-name:totalRopWidth
+Method-returnType:int
+Method-parameters:[DexTranslationAdvice dexTranslationAdvice]
+MethodInvocation:size
+MethodInvocation:getCategory
+MethodInvocation:get
+Class:Expander
+Field:compatRegs
+Field:regSpecList
+Field:base
+Field:result
+Field:duplicateFirst
+Method-name:Expander
+Method-returnType:null
+Method-parameters:[RegisterSpecList regSpecList, BitSet compatRegs, int base, boolean duplicateFirst]
+FieldAccess:regSpecList
+FieldAccess:compatRegs
+FieldAccess:base
+FieldAccess:result
+MethodInvocation:size
+FieldAccess:duplicateFirst
+Method-name:expandRegister
+Method-returnType:void
+Method-parameters:[int regIdx]
+MethodInvocation:expandRegister
+MethodInvocation:get0
+Method-name:expandRegister
+Method-returnType:void
+Method-parameters:[int regIdx, RegisterSpec registerToExpand]
+MethodInvocation:get
+MethodInvocation:withReg
+MethodInvocation:getCategory
+MethodInvocation:set0
+Method-name:getResult
+Method-returnType:RegisterSpecList
+Method-parameters:[]
+MethodInvocation:isImmutable
+MethodInvocation:setImmutable

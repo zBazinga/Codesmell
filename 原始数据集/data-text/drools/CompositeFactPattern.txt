@@ -1,0 +1,70 @@
+Class:CompositeFactPattern
+Field:COMPOSITE_TYPE_NOT
+Field:COMPOSITE_TYPE_EXISTS
+Field:COMPOSITE_TYPE_OR
+Field:type
+Field:patterns
+Method-name:CompositeFactPattern
+Method-returnType:null
+Method-parameters:[final String type]
+FieldAccess:type
+Method-name:CompositeFactPattern
+Method-returnType:null
+Method-parameters:[]
+Method-name:clearFactPatterns
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:patterns
+Method-name:addFactPatterns
+Method-returnType:void
+Method-parameters:[IFactPattern[] patterns]
+MethodInvocation:addFactPattern
+Method-name:addFactPattern
+Method-returnType:void
+Method-parameters:[final IFactPattern pat]
+FieldAccess:patterns
+FieldAccess:patterns
+FieldAccess:patterns
+MethodInvocation:arraycopy
+FieldAccess:patterns
+Method-name:getPatterns
+Method-returnType:IFactPattern[]
+Method-parameters:[]
+Method-name:removeFactPattern
+Method-returnType:boolean
+Method-parameters:[int index]
+FieldAccess:length
+FieldAccess:patterns
+FieldAccess:length
+FieldAccess:patterns
+FieldAccess:length
+FieldAccess:patterns
+FieldAccess:length
+FieldAccess:patterns
+FieldAccess:patterns
+FieldAccess:patterns
+Method-name:getType
+Method-returnType:String
+Method-parameters:[]
+Method-name:setType
+Method-returnType:void
+Method-parameters:[String type]
+FieldAccess:type
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:visitCompositeFactPattern
+Method-returnType:void
+Method-parameters:[RuleModelVisitor ruleModelVisitor]
+MethodInvocation:getPatterns
+MethodInvocation:getPatterns
+MethodInvocation:visit

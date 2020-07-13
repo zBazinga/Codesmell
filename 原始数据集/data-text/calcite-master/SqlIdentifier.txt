@@ -1,0 +1,189 @@
+Class:SqlIdentifier
+Field:STAR
+MethodInvocation:star
+Field:names
+Field:collation
+Field:componentPositions
+Method-name:SqlIdentifier
+Method-returnType:null
+Method-parameters:[List<String> names, SqlCollation collation, SqlParserPos pos, List<SqlParserPos> componentPositions]
+Method-name:SqlIdentifier
+Method-returnType:null
+Method-parameters:[List<String> names, SqlParserPos pos]
+Method-name:SqlIdentifier
+Method-returnType:null
+Method-parameters:[String name, SqlCollation collation, SqlParserPos pos]
+MethodInvocation:of
+Method-name:SqlIdentifier
+Method-returnType:null
+Method-parameters:[String name, SqlParserPos pos]
+MethodInvocation:of
+Method-name:star
+Method-returnType:SqlIdentifier
+Method-parameters:[SqlParserPos pos]
+MethodInvocation:star
+MethodInvocation:of
+MethodInvocation:of
+Method-name:star
+Method-returnType:SqlIdentifier
+Method-parameters:[List<String> names, SqlParserPos pos, List<SqlParserPos> componentPositions]
+MethodInvocation:transform
+MethodInvocation:equals
+Method-name:getKind
+Method-returnType:SqlKind
+Method-parameters:[]
+Method-name:clone
+Method-returnType:SqlNode
+Method-parameters:[SqlParserPos pos]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getString
+Method-name:getString
+Method-returnType:String
+Method-parameters:[List<String> names]
+MethodInvocation:sepList
+MethodInvocation:toStar
+Method-name:toStar
+Method-returnType:List<String>
+Method-parameters:[List<String> names]
+MethodInvocation:transform
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:setNames
+Method-returnType:void
+Method-parameters:[List<String> names, List<SqlParserPos> poses]
+FieldAccess:names
+MethodInvocation:copyOf
+FieldAccess:componentPositions
+MethodInvocation:copyOf
+Method-name:setName
+Method-returnType:SqlIdentifier
+Method-parameters:[int i, String name]
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:toArray
+MethodInvocation:copyOf
+Method-name:add
+Method-returnType:SqlIdentifier
+Method-parameters:[int i, String name, SqlParserPos pos]
+MethodInvocation:add
+MethodInvocation:add
+Method-name:getComponentParserPosition
+Method-returnType:SqlParserPos
+Method-parameters:[int i]
+Method-name:assignNamesFrom
+Method-returnType:void
+Method-parameters:[SqlIdentifier other]
+MethodInvocation:setNames
+Method-name:getComponent
+Method-returnType:SqlIdentifier
+Method-parameters:[int ordinal]
+MethodInvocation:getComponent
+Method-name:getComponent
+Method-returnType:SqlIdentifier
+Method-parameters:[int from, int to]
+FieldAccess:pos
+MethodInvocation:subList
+MethodInvocation:sum
+MethodInvocation:subList
+Method-name:plus
+Method-returnType:SqlIdentifier
+Method-parameters:[String name, SqlParserPos pos]
+MethodInvocation:build
+MethodInvocation:add
+MethodInvocation:addAll
+MethodInvocation:builder
+FieldAccess:names
+FieldAccess:componentPositions
+MethodInvocation:builder
+MethodInvocation:build
+MethodInvocation:add
+MethodInvocation:addAll
+FieldAccess:componentPositions
+MethodInvocation:sum
+MethodInvocation:build
+MethodInvocation:add
+FieldAccess:pos
+Method-name:plusStar
+Method-returnType:SqlIdentifier
+Method-parameters:[]
+MethodInvocation:plus
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:equals
+MethodInvocation:toImmutableList
+Method-name:skipLast
+Method-returnType:SqlIdentifier
+Method-parameters:[int n]
+MethodInvocation:getComponent
+MethodInvocation:size
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, int leftPrec, int rightPrec]
+MethodInvocation:unparseSqlIdentifierSyntax
+Method-name:validate
+Method-returnType:void
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope]
+MethodInvocation:validateIdentifier
+Method-name:validateExpr
+Method-returnType:void
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope]
+MethodInvocation:makeNullaryCall
+MethodInvocation:validateCall
+MethodInvocation:validateIdentifier
+Method-name:equalsDeep
+Method-returnType:boolean
+Method-parameters:[SqlNode node, Litmus litmus]
+MethodInvocation:fail
+MethodInvocation:size
+FieldAccess:names
+MethodInvocation:size
+MethodInvocation:fail
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:get
+FieldAccess:names
+MethodInvocation:get
+MethodInvocation:fail
+MethodInvocation:succeed
+Method-name:accept
+Method-returnType:R
+Method-parameters:[SqlVisitor<R> visitor]
+MethodInvocation:visit
+Method-name:getCollation
+Method-returnType:SqlCollation
+Method-parameters:[]
+Method-name:getSimple
+Method-returnType:String
+Method-parameters:[]
+Method-name:isStar
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:equals
+MethodInvocation:last
+Method-name:isSimple
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:isStar
+Method-name:isComponentQuoted
+Method-returnType:boolean
+Method-parameters:[int i]
+MethodInvocation:isQuoted
+MethodInvocation:get
+Method-name:getMonotonicity
+Method-returnType:SqlMonotonicity
+Method-parameters:[SqlValidatorScope scope]
+MethodInvocation:equals
+MethodInvocation:last
+MethodInvocation:isDynamicStarColName
+MethodInvocation:last
+MethodInvocation:getValidator
+MethodInvocation:makeNullaryCall
+MethodInvocation:getMonotonicity
+MethodInvocation:fullyQualify
+MethodInvocation:getMonotonicity
+MethodInvocation:resolve
+MethodInvocation:last

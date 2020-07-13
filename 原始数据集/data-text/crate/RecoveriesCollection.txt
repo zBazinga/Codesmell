@@ -1,0 +1,142 @@
+Class:RecoveriesCollection
+Field:onGoingRecoveries
+MethodInvocation:newConcurrentMap
+Field:logger
+Field:threadPool
+Field:ensureClusterStateVersionCallback
+Method-name:RecoveriesCollection
+Method-returnType:null
+Method-parameters:[Logger logger, ThreadPool threadPool, LongConsumer ensureClusterStateVersionCallback]
+FieldAccess:logger
+FieldAccess:threadPool
+FieldAccess:ensureClusterStateVersionCallback
+Method-name:startRecovery
+Method-returnType:long
+Method-parameters:[IndexShard indexShard, DiscoveryNode sourceNode, PeerRecoveryTargetService.RecoveryListener listener, TimeValue activityTimeout]
+MethodInvocation:startRecoveryInternal
+MethodInvocation:recoveryId
+Method-name:startRecoveryInternal
+Method-returnType:void
+Method-parameters:[RecoveryTarget recoveryTarget, TimeValue activityTimeout]
+Method-name:resetRecovery
+Method-returnType:RecoveryTarget
+Method-parameters:[final long recoveryId, final TimeValue activityTimeout]
+MethodInvocation:remove
+MethodInvocation:retryCopy
+MethodInvocation:startRecoveryInternal
+MethodInvocation:resetRecovery
+MethodInvocation:cancellableThreads
+MethodInvocation:trace
+MethodInvocation:shardId
+MethodInvocation:sourceNode
+MethodInvocation:recoveryId
+MethodInvocation:recoveryId
+MethodInvocation:trace
+MethodInvocation:shardId
+MethodInvocation:sourceNode
+MethodInvocation:recoveryId
+MethodInvocation:recoveryId
+MethodInvocation:cancelRecovery
+MethodInvocation:recoveryId
+MethodInvocation:notifyListener
+MethodInvocation:state
+Method-name:getRecoveryTarget
+Method-returnType:RecoveryTarget
+Method-parameters:[long id]
+MethodInvocation:get
+Method-name:getRecovery
+Method-returnType:RecoveryRef
+Method-parameters:[long id]
+MethodInvocation:get
+MethodInvocation:tryIncRef
+Method-name:getRecoverySafe
+Method-returnType:RecoveryRef
+Method-parameters:[long id, ShardId shardId]
+Method-name:cancelRecovery
+Method-returnType:boolean
+Method-parameters:[long id, String reason]
+MethodInvocation:remove
+MethodInvocation:trace
+MethodInvocation:shardId
+MethodInvocation:sourceNode
+MethodInvocation:recoveryId
+MethodInvocation:cancel
+Method-name:failRecovery
+Method-returnType:void
+Method-parameters:[long id, RecoveryFailedException e, boolean sendShardFailure]
+MethodInvocation:remove
+MethodInvocation:trace
+MethodInvocation:shardId
+MethodInvocation:sourceNode
+MethodInvocation:recoveryId
+MethodInvocation:fail
+Method-name:markRecoveryAsDone
+Method-returnType:void
+Method-parameters:[long id]
+MethodInvocation:remove
+MethodInvocation:trace
+MethodInvocation:shardId
+MethodInvocation:sourceNode
+MethodInvocation:recoveryId
+MethodInvocation:markAsDone
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:cancelRecoveriesForShard
+Method-returnType:boolean
+Method-parameters:[ShardId shardId, String reason]
+MethodInvocation:iterator
+MethodInvocation:values
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:equals
+MethodInvocation:shardId
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:trace
+MethodInvocation:shardId
+MethodInvocation:sourceNode
+MethodInvocation:recoveryId
+MethodInvocation:cancel
+Class:RecoveryRef
+Field:status
+Field:closed
+Method-name:RecoveryRef
+Method-returnType:null
+Method-parameters:[RecoveryTarget status]
+FieldAccess:status
+MethodInvocation:setLastAccessTime
+FieldAccess:status
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:compareAndSet
+MethodInvocation:decRef
+Method-name:target
+Method-returnType:RecoveryTarget
+Method-parameters:[]
+Class:RecoveryMonitor
+Field:recoveryId
+Field:checkInterval
+Field:lastSeenAccessTime
+Method-name:RecoveryMonitor
+Method-returnType:null
+Method-parameters:[long recoveryId, long lastSeenAccessTime, TimeValue checkInterval]
+FieldAccess:recoveryId
+FieldAccess:checkInterval
+FieldAccess:lastSeenAccessTime
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:error
+Method-name:doRun
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:trace
+MethodInvocation:lastAccessTime
+MethodInvocation:failRecovery
+MethodInvocation:state
+MethodInvocation:trace
+MethodInvocation:schedule

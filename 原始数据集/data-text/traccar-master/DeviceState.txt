@@ -1,0 +1,50 @@
+Class:DeviceState
+Field:motionState
+Method-name:setMotionState
+Method-returnType:void
+Method-parameters:[boolean motionState]
+FieldAccess:motionState
+Method-name:getMotionState
+Method-returnType:Boolean
+Method-parameters:[]
+Field:motionPosition
+Method-name:setMotionPosition
+Method-returnType:void
+Method-parameters:[Position motionPosition]
+FieldAccess:motionPosition
+Method-name:getMotionPosition
+Method-returnType:Position
+Method-parameters:[]
+Field:overspeedState
+Method-name:setOverspeedState
+Method-returnType:void
+Method-parameters:[boolean overspeedState]
+FieldAccess:overspeedState
+Method-name:getOverspeedState
+Method-returnType:Boolean
+Method-parameters:[]
+Field:overspeedPosition
+Method-name:setOverspeedPosition
+Method-returnType:void
+Method-parameters:[Position overspeedPosition]
+FieldAccess:overspeedPosition
+Method-name:getOverspeedPosition
+Method-returnType:Position
+Method-parameters:[]
+Field:overspeedGeofenceId
+Method-name:setOverspeedGeofenceId
+Method-returnType:void
+Method-parameters:[long overspeedGeofenceId]
+FieldAccess:overspeedGeofenceId
+Method-name:getOverspeedGeofenceId
+Method-returnType:long
+Method-parameters:[]
+Method-name:newEvent
+Method-returnType:Map<Event,Position>
+Method-parameters:[boolean newMotion, MotionEventHandler motionEventHandler]
+MethodInvocation:getMotionPosition
+MethodInvocation:getDeviceId
+MethodInvocation:getId
+MethodInvocation:setMotionState
+MethodInvocation:setMotionPosition
+MethodInvocation:singletonMap

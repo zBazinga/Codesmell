@@ -1,0 +1,146 @@
+Class:Alias
+Field:FILTER
+Field:ROUTING
+Field:INDEX_ROUTING
+Field:SEARCH_ROUTING
+Field:IS_WRITE_INDEX
+Field:name
+Field:filter
+Field:indexRouting
+Field:searchRouting
+Field:writeIndex
+Method-name:Alias
+Method-returnType:null
+Method-parameters:[]
+Method-name:Alias
+Method-returnType:null
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:name
+Method-returnType:String
+Method-parameters:[]
+Method-name:filter
+Method-returnType:String
+Method-parameters:[]
+Method-name:filter
+Method-returnType:Alias
+Method-parameters:[String filter]
+FieldAccess:filter
+Method-name:filter
+Method-returnType:Alias
+Method-parameters:[Map<String,Object> filter]
+MethodInvocation:isEmpty
+FieldAccess:filter
+MethodInvocation:contentBuilder
+MethodInvocation:map
+FieldAccess:filter
+MethodInvocation:toString
+Method-name:routing
+Method-returnType:Alias
+Method-parameters:[String routing]
+FieldAccess:indexRouting
+FieldAccess:searchRouting
+Method-name:indexRouting
+Method-returnType:String
+Method-parameters:[]
+Method-name:indexRouting
+Method-returnType:Alias
+Method-parameters:[String indexRouting]
+FieldAccess:indexRouting
+Method-name:searchRouting
+Method-returnType:String
+Method-parameters:[]
+Method-name:searchRouting
+Method-returnType:Alias
+Method-parameters:[String searchRouting]
+FieldAccess:searchRouting
+Method-name:writeIndex
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:writeIndex
+Method-returnType:Alias
+Method-parameters:[@Nullable Boolean writeIndex]
+FieldAccess:writeIndex
+Method-name:read
+Method-returnType:Alias
+Method-parameters:[StreamInput in]
+MethodInvocation:readFrom
+Method-name:readFrom
+Method-returnType:void
+Method-parameters:[StreamInput in]
+MethodInvocation:readString
+MethodInvocation:readOptionalString
+MethodInvocation:readOptionalString
+MethodInvocation:readOptionalString
+MethodInvocation:readOptionalBoolean
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeString
+MethodInvocation:writeOptionalString
+MethodInvocation:writeOptionalString
+MethodInvocation:writeOptionalString
+MethodInvocation:writeOptionalBoolean
+Method-name:fromXContent
+Method-returnType:Alias
+Method-parameters:[XContentParser parser]
+MethodInvocation:currentName
+MethodInvocation:nextToken
+MethodInvocation:nextToken
+MethodInvocation:currentName
+MethodInvocation:match
+MethodInvocation:getDeprecationHandler
+MethodInvocation:mapOrdered
+MethodInvocation:filter
+MethodInvocation:match
+MethodInvocation:getDeprecationHandler
+MethodInvocation:routing
+MethodInvocation:text
+MethodInvocation:match
+MethodInvocation:getDeprecationHandler
+MethodInvocation:indexRouting
+MethodInvocation:text
+MethodInvocation:match
+MethodInvocation:getDeprecationHandler
+MethodInvocation:searchRouting
+MethodInvocation:text
+MethodInvocation:match
+MethodInvocation:getDeprecationHandler
+MethodInvocation:writeIndex
+MethodInvocation:booleanValue
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startObject
+MethodInvocation:streamInput
+MethodInvocation:rawField
+MethodInvocation:getPreferredName
+MethodInvocation:equals
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:endObject
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:alias
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[PutIndexTemplateRequest putIndexTemplateRequest]
+MethodInvocation:add
+MethodInvocation:aliases

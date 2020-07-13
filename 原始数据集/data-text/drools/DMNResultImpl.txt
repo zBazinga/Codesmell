@@ -1,0 +1,106 @@
+Class:DMNResultImpl
+Field:context
+Field:messages
+Field:decisionResults
+Field:model
+Method-name:DMNResultImpl
+Method-returnType:null
+Method-parameters:[DMNModel model]
+FieldAccess:model
+Method-name:setContext
+Method-returnType:void
+Method-parameters:[DMNContext context]
+FieldAccess:context
+Method-name:getContext
+Method-returnType:DMNContext
+Method-parameters:[]
+Method-name:getMessages
+Method-returnType:List<DMNMessage>
+Method-parameters:[]
+MethodInvocation:getMessages
+Method-name:addAll
+Method-returnType:void
+Method-parameters:[List<? extends DMNMessage> messages]
+MethodInvocation:addAll
+FieldAccess:messages
+Method-name:addMessage
+Method-returnType:DMNMessage
+Method-parameters:[DMNMessage msg]
+MethodInvocation:addMessage
+Method-name:addMessage
+Method-returnType:DMNMessage
+Method-parameters:[DMNMessage.Severity severity, String message, DMNMessageType messageType, DMNModelInstrumentedBase source]
+MethodInvocation:addMessage
+Method-name:addMessage
+Method-returnType:DMNMessage
+Method-parameters:[DMNMessage.Severity severity, String message, DMNMessageType messageType, DMNModelInstrumentedBase source, Throwable exception]
+MethodInvocation:addMessage
+Method-name:getMessages
+Method-returnType:List<DMNMessage>
+Method-parameters:[DMNMessage.Severity... sevs]
+MethodInvocation:getMessages
+Method-name:addMessage
+Method-returnType:DMNMessage
+Method-parameters:[DMNMessage.Severity severity, String message, DMNMessageType messageType, DMNModelInstrumentedBase source, FEELEvent feelEvent]
+MethodInvocation:addMessage
+Method-name:hasErrors
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasErrors
+Method-name:getDecisionResults
+Method-returnType:List<DMNDecisionResult>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getDecisionResultByName
+Method-returnType:DMNDecisionResult
+Method-parameters:[String name]
+MethodInvocation:orElse
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:values
+MethodInvocation:equals
+MethodInvocation:getDecisionName
+Method-name:getDecisionResultById
+Method-returnType:DMNDecisionResult
+Method-parameters:[String id]
+MethodInvocation:get
+Method-name:addDecisionResult
+Method-returnType:void
+Method-parameters:[DMNDecisionResult result]
+MethodInvocation:put
+FieldAccess:decisionResults
+MethodInvocation:getDecisionId
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getModel
+Method-returnType:DMNModel
+Method-parameters:[]
+Method-name:addAllUnfiltered
+Method-returnType:void
+Method-parameters:[List<? extends DMNMessage> messages]
+MethodInvocation:addAllUnfiltered
+FieldAccess:messages
+Method-name:isNodeValueDefined
+Method-returnType:boolean
+Method-parameters:[DMNNode callerNode, DMNNode node, DMNRuntimeImpl dmnRuntime]
+MethodInvocation:equals
+MethodInvocation:getModelNamespace
+MethodInvocation:orElse
+MethodInvocation:scopeNamespace
+MethodInvocation:getContext
+MethodInvocation:getNamespace
+MethodInvocation:getModel
+MethodInvocation:isDefined
+MethodInvocation:getContext
+MethodInvocation:getName
+MethodInvocation:getModelImportAliasFor
+MethodInvocation:getModelNamespace
+MethodInvocation:getModelName
+MethodInvocation:isPresent
+MethodInvocation:get
+MethodInvocation:getContext
+MethodInvocation:get
+MethodInvocation:containsKey
+MethodInvocation:getName

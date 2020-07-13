@@ -1,0 +1,39 @@
+Class:TransportClearRealmCacheAction
+Field:realms
+Field:authenticationService
+Method-name:TransportClearRealmCacheAction
+Method-returnType:null
+Method-parameters:[ThreadPool threadPool, ClusterService clusterService, TransportService transportService, ActionFilters actionFilters, Realms realms, AuthenticationService authenticationService]
+FieldAccess:realms
+FieldAccess:authenticationService
+Method-name:newResponse
+Method-returnType:ClearRealmCacheResponse
+Method-parameters:[ClearRealmCacheRequest request, List<ClearRealmCacheResponse.Node> responses, List<FailedNodeException> failures]
+MethodInvocation:getClusterName
+Method-name:newNodeRequest
+Method-returnType:ClearRealmCacheRequest.Node
+Method-parameters:[ClearRealmCacheRequest request]
+Method-name:newNodeResponse
+Method-returnType:ClearRealmCacheResponse.Node
+Method-parameters:[StreamInput in]
+Method-name:nodeOperation
+Method-returnType:ClearRealmCacheResponse.Node
+Method-parameters:[ClearRealmCacheRequest.Node nodeRequest, Task task]
+MethodInvocation:getRealms
+FieldAccess:length
+MethodInvocation:getRealms
+MethodInvocation:clearCache
+MethodInvocation:getUsernames
+MethodInvocation:localNode
+MethodInvocation:getRealms
+MethodInvocation:realm
+MethodInvocation:clearCache
+MethodInvocation:getUsernames
+MethodInvocation:clearAuthenticationServiceCache
+MethodInvocation:getUsernames
+MethodInvocation:localNode
+Method-name:clearAuthenticationServiceCache
+Method-returnType:void
+Method-parameters:[String[] usernames]
+MethodInvocation:expire
+MethodInvocation:expireAll

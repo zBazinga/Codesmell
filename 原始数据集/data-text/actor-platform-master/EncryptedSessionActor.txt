@@ -1,0 +1,147 @@
+Class:EncryptedSessionActor
+Field:TAG
+Field:MAX_DECRYPT_CHAINS
+Field:uid
+Field:session
+Field:keyManager
+Field:latestTheirEphemeralKey
+Field:encryptionChains
+Field:decryptionChains
+Method-name:EncryptedSessionActor
+Method-returnType:null
+Method-parameters:[ModuleContext context, PeerSession session]
+FieldAccess:TAG
+MethodInvocation:getUid
+MethodInvocation:getTheirKeyGroupId
+FieldAccess:uid
+MethodInvocation:getUid
+FieldAccess:session
+Method-name:preStart
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getKeyManagerInt
+MethodInvocation:getEncryption
+MethodInvocation:context
+Method-name:onEncrypt
+Method-returnType:Promise<EncryptedPackageRes>
+Method-parameters:[final byte[] data]
+MethodInvocation:map
+MethodInvocation:map
+MethodInvocation:mapIfNullPromise
+MethodInvocation:success
+MethodInvocation:supplyUserPreKey
+MethodInvocation:getTheirKeyGroupId
+Method-name:apply
+Method-returnType:EncryptedSessionChain
+Method-parameters:[byte[] publicKey]
+MethodInvocation:pickEncryptChain
+Method-name:apply
+Method-returnType:EncryptedPackageRes
+Method-parameters:[EncryptedSessionChain encryptedSessionChain]
+MethodInvocation:encrypt
+Method-name:onDecrypt
+Method-returnType:Promise<DecryptedPackage>
+Method-parameters:[final byte[] data]
+MethodInvocation:substring
+MethodInvocation:substring
+MethodInvocation:d
+MethodInvocation:keyHash
+MethodInvocation:d
+MethodInvocation:keyHash
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:map
+MethodInvocation:pickDecryptChain
+Method-name:apply
+Method-returnType:DecryptedPackage
+Method-parameters:[EncryptedSessionChain encryptedSessionChain]
+MethodInvocation:decryptOther
+Method-name:apply
+Method-returnType:void
+Method-parameters:[DecryptedPackage decryptedPackage]
+MethodInvocation:d
+Method-name:apply
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:d
+Method-name:pickEncryptChain
+Method-returnType:EncryptedSessionChain
+Method-parameters:[byte[] ephemeralKey]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:keyGenPrivate
+MethodInvocation:randomBytes
+MethodInvocation:add
+Method-name:encrypt
+Method-returnType:EncryptedPackageRes
+Method-parameters:[EncryptedSessionChain chain, byte[] data]
+MethodInvocation:encrypt
+MethodInvocation:printStackTrace
+MethodInvocation:d
+MethodInvocation:keyHash
+MethodInvocation:keyGenPublic
+MethodInvocation:getOwnPrivateKey
+MethodInvocation:d
+MethodInvocation:keyHash
+MethodInvocation:getTheirPublicKey
+MethodInvocation:getTheirKeyGroupId
+Method-name:pickDecryptChain
+Method-returnType:Promise<EncryptedSessionChain>
+Method-parameters:[final byte[] theirEphemeralKey, final byte[] ephemeralKey]
+MethodInvocation:isEquals
+MethodInvocation:keyGenPublic
+MethodInvocation:getOwnPrivateKey
+MethodInvocation:flatMap
+MethodInvocation:success
+Method-name:apply
+Method-returnType:Promise<EncryptedSessionChain>
+Method-parameters:[EncryptedSessionChain src]
+MethodInvocation:success
+Method-name:onAsk
+Method-returnType:Promise
+Method-parameters:[Object message]
+MethodInvocation:onEncrypt
+MethodInvocation:getData
+MethodInvocation:onDecrypt
+MethodInvocation:getData
+Class:EncryptPackage
+Field:data
+Method-name:EncryptPackage
+Method-returnType:null
+Method-parameters:[byte[] data]
+FieldAccess:data
+Method-name:getData
+Method-returnType:byte[]
+Method-parameters:[]
+Class:EncryptedPackageRes
+Field:data
+Field:keyGroupId
+Method-name:EncryptedPackageRes
+Method-returnType:null
+Method-parameters:[byte[] data, int keyGroupId]
+FieldAccess:data
+FieldAccess:keyGroupId
+Method-name:getData
+Method-returnType:byte[]
+Method-parameters:[]
+Method-name:getKeyGroupId
+Method-returnType:int
+Method-parameters:[]
+Class:DecryptPackage
+Field:data
+Method-name:DecryptPackage
+Method-returnType:null
+Method-parameters:[byte[] data]
+FieldAccess:data
+Method-name:getData
+Method-returnType:byte[]
+Method-parameters:[]
+Class:DecryptedPackage
+Field:data
+Method-name:DecryptedPackage
+Method-returnType:null
+Method-parameters:[byte[] data]
+FieldAccess:data
+Method-name:getData
+Method-returnType:byte[]
+Method-parameters:[]

@@ -1,0 +1,218 @@
+Class:GenMRProcContext
+Method-name:processLinkedFileDesc
+Method-returnType:void
+Method-parameters:[Task<?> childTask, GenMRFileSink1 genMRFileSink1]
+MethodInvocation:getCurrTask
+MethodInvocation:getCurrTopOp
+MethodInvocation:isSeenOp
+MethodInvocation:getCurrAliasId
+MethodInvocation:setTaskPlan
+MethodInvocation:addDependentTask
+Class:GenMapRedCtx
+Field:currTask
+Field:currAliasId
+Method-name:GenMapRedCtx
+Method-returnType:null
+Method-parameters:[]
+Method-name:GenMapRedCtx
+Method-returnType:null
+Method-parameters:[Task<?> currTask, String currAliasId]
+FieldAccess:currTask
+FieldAccess:currAliasId
+Method-name:getCurrTask
+Method-returnType:Task<?>
+Method-parameters:[]
+Method-name:getCurrAliasId
+Method-returnType:String
+Method-parameters:[]
+Class:GenMRUnionCtx
+Field:uTask
+Field:taskTmpDir
+Field:tt_desc
+Field:listTopOperators
+Method-name:GenMRUnionCtx
+Method-returnType:null
+Method-parameters:[Task<?> uTask]
+FieldAccess:uTask
+Method-name:getUTask
+Method-returnType:Task<?>
+Method-parameters:[]
+Method-name:addTaskTmpDir
+Method-returnType:void
+Method-parameters:[String taskTmpDir]
+MethodInvocation:add
+FieldAccess:taskTmpDir
+Method-name:getTaskTmpDir
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:addTTDesc
+Method-returnType:void
+Method-parameters:[TableDesc tt_desc]
+MethodInvocation:add
+FieldAccess:tt_desc
+Method-name:getTTDesc
+Method-returnType:List<TableDesc>
+Method-parameters:[]
+Method-name:getListTopOperators
+Method-returnType:List<TableScanOperator>
+Method-parameters:[]
+Method-name:addListTopOperators
+Method-returnType:void
+Method-parameters:[TableScanOperator topOperator]
+MethodInvocation:add
+Field:conf
+Field:opTaskMap
+Field:taskToSeenOps
+Field:unionTaskMap
+Field:seenFileSinkOps
+Field:parseCtx
+Field:mvTask
+Field:rootTasks
+Field:mapCurrCtx
+Field:currTask
+Field:currTopOp
+Field:currUnionOp
+Field:currAliasId
+Field:dependencyTaskForMultiInsert
+Field:linkedFileDescTasks
+Field:inputs
+Field:outputs
+Method-name:GenMRProcContext
+Method-returnType:null
+Method-parameters:[]
+Method-name:GenMRProcContext
+Method-returnType:null
+Method-parameters:[HiveConf conf, HashMap<Operator<? extends OperatorDesc>,Task<?>> opTaskMap, ParseContext parseCtx, List<Task<MoveWork>> mvTask, List<Task<?>> rootTasks, LinkedHashMap<Operator<? extends OperatorDesc>,GenMapRedCtx> mapCurrCtx, Set<ReadEntity> inputs, Set<WriteEntity> outputs]
+FieldAccess:conf
+FieldAccess:opTaskMap
+FieldAccess:mvTask
+FieldAccess:parseCtx
+FieldAccess:rootTasks
+FieldAccess:mapCurrCtx
+FieldAccess:inputs
+FieldAccess:outputs
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+Method-name:getOpTaskMap
+Method-returnType:HashMap<Operator<? extends OperatorDesc>,Task<?>>
+Method-parameters:[]
+Method-name:setOpTaskMap
+Method-returnType:void
+Method-parameters:[HashMap<Operator<? extends OperatorDesc>,Task<?>> opTaskMap]
+FieldAccess:opTaskMap
+Method-name:isSeenOp
+Method-returnType:boolean
+Method-parameters:[Task task, Operator operator]
+MethodInvocation:get
+MethodInvocation:contains
+Method-name:addSeenOp
+Method-returnType:void
+Method-parameters:[Task task, Operator operator]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:add
+Method-name:getSeenFileSinkOps
+Method-returnType:List<FileSinkOperator>
+Method-parameters:[]
+Method-name:setSeenFileSinkOps
+Method-returnType:void
+Method-parameters:[List<FileSinkOperator> seenFileSinkOps]
+FieldAccess:seenFileSinkOps
+Method-name:getParseCtx
+Method-returnType:ParseContext
+Method-parameters:[]
+Method-name:setParseCtx
+Method-returnType:void
+Method-parameters:[ParseContext parseCtx]
+FieldAccess:parseCtx
+Method-name:getMvTask
+Method-returnType:List<Task<MoveWork>>
+Method-parameters:[]
+Method-name:setMvTask
+Method-returnType:void
+Method-parameters:[List<Task<MoveWork>> mvTask]
+FieldAccess:mvTask
+Method-name:getRootTasks
+Method-returnType:List<Task<?>>
+Method-parameters:[]
+Method-name:setRootTasks
+Method-returnType:void
+Method-parameters:[List<Task<?>> rootTasks]
+FieldAccess:rootTasks
+Method-name:addRootIfPossible
+Method-returnType:boolean
+Method-parameters:[Task<?> task]
+MethodInvocation:getParentTasks
+MethodInvocation:isEmpty
+MethodInvocation:getParentTasks
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:getMapCurrCtx
+Method-returnType:LinkedHashMap<Operator<? extends OperatorDesc>,GenMapRedCtx>
+Method-parameters:[]
+Method-name:setMapCurrCtx
+Method-returnType:void
+Method-parameters:[LinkedHashMap<Operator<? extends OperatorDesc>,GenMapRedCtx> mapCurrCtx]
+FieldAccess:mapCurrCtx
+Method-name:getCurrTask
+Method-returnType:Task<?>
+Method-parameters:[]
+Method-name:setCurrTask
+Method-returnType:void
+Method-parameters:[Task<?> currTask]
+FieldAccess:currTask
+Method-name:getCurrTopOp
+Method-returnType:TableScanOperator
+Method-parameters:[]
+Method-name:setCurrTopOp
+Method-returnType:void
+Method-parameters:[TableScanOperator currTopOp]
+FieldAccess:currTopOp
+Method-name:getCurrUnionOp
+Method-returnType:UnionOperator
+Method-parameters:[]
+Method-name:setCurrUnionOp
+Method-returnType:void
+Method-parameters:[UnionOperator currUnionOp]
+FieldAccess:currUnionOp
+Method-name:getCurrAliasId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setCurrAliasId
+Method-returnType:void
+Method-parameters:[String currAliasId]
+FieldAccess:currAliasId
+Method-name:getUnionTask
+Method-returnType:GenMRUnionCtx
+Method-parameters:[UnionOperator op]
+MethodInvocation:get
+Method-name:setUnionTask
+Method-returnType:void
+Method-parameters:[UnionOperator op, GenMRUnionCtx uTask]
+MethodInvocation:put
+Method-name:getInputs
+Method-returnType:Set<ReadEntity>
+Method-parameters:[]
+Method-name:getOutputs
+Method-returnType:Set<WriteEntity>
+Method-parameters:[]
+Method-name:getConf
+Method-returnType:HiveConf
+Method-parameters:[]
+Method-name:setConf
+Method-returnType:void
+Method-parameters:[HiveConf conf]
+FieldAccess:conf
+Method-name:getDependencyTaskForMultiInsert
+Method-returnType:DependencyCollectionTask
+Method-parameters:[]
+MethodInvocation:getBoolVar
+MethodInvocation:get
+Method-name:getLinkedFileDescTasks
+Method-returnType:Map<FileSinkDesc,Task<?>>
+Method-parameters:[]
+Method-name:setLinkedFileDescTasks
+Method-returnType:void
+Method-parameters:[Map<FileSinkDesc,Task<?>> linkedFileDescTasks]
+FieldAccess:linkedFileDescTasks

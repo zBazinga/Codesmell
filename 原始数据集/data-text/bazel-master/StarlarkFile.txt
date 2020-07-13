@@ -1,0 +1,91 @@
+Class:StarlarkFile
+Field:errors
+Field:statements
+Field:options
+Field:comments
+Field:contentHashCode
+Method-name:StarlarkFile
+Method-returnType:null
+Method-parameters:[ImmutableList<Statement> statements, FileOptions options, ImmutableList<Comment> comments, List<Event> errors, String contentHashCode, Lexer.LexerLocation location]
+FieldAccess:statements
+FieldAccess:options
+FieldAccess:comments
+FieldAccess:errors
+FieldAccess:contentHashCode
+MethodInvocation:setLocation
+Method-name:create
+Method-returnType:StarlarkFile
+Method-parameters:[ImmutableList<Statement> statements, FileOptions options, Parser.ParseResult result, String contentHashCode]
+MethodInvocation:copyOf
+Method-name:parseWithPrelude
+Method-returnType:StarlarkFile
+Method-parameters:[ParserInput input, List<Statement> prelude, FileOptions options]
+MethodInvocation:parseFile
+MethodInvocation:builder
+MethodInvocation:addAll
+MethodInvocation:addAll
+MethodInvocation:create
+MethodInvocation:build
+Method-name:parseWithDigest
+Method-returnType:StarlarkFile
+Method-parameters:[ParserInput input, byte[] digest, FileOptions options]
+MethodInvocation:parseFile
+MethodInvocation:create
+MethodInvocation:copyOf
+MethodInvocation:toString
+MethodInvocation:fromBytes
+Method-name:parse
+Method-returnType:StarlarkFile
+Method-parameters:[ParserInput input, FileOptions options]
+MethodInvocation:parseFile
+MethodInvocation:create
+MethodInvocation:copyOf
+Method-name:parse
+Method-returnType:StarlarkFile
+Method-parameters:[ParserInput input]
+MethodInvocation:parse
+Method-name:subTree
+Method-returnType:StarlarkFile
+Method-parameters:[int i, int j]
+MethodInvocation:subList
+FieldAccess:statements
+FieldAccess:options
+MethodInvocation:of
+MethodInvocation:getStartLocation
+MethodInvocation:get
+FieldAccess:statements
+Method-name:errors
+Method-returnType:List<Event>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+Method-name:ok
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getStatements
+Method-returnType:ImmutableList<Statement>
+Method-parameters:[]
+Method-name:getComments
+Method-returnType:ImmutableList<Comment>
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:size
+Method-name:accept
+Method-returnType:void
+Method-parameters:[NodeVisitor visitor]
+MethodInvocation:visit
+Method-name:getOptions
+Method-returnType:FileOptions
+Method-parameters:[]
+Method-name:getContentHashCode
+Method-returnType:String
+Method-parameters:[]
+Method-name:visit
+Method-returnType:void
+Method-parameters:[NodeVisitor nodeVisitor]
+MethodInvocation:visitBlock
+MethodInvocation:getStatements
+MethodInvocation:visitAll
+MethodInvocation:getComments

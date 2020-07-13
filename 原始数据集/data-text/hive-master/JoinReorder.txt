@@ -1,0 +1,57 @@
+Class:JoinReorder
+Field:cache
+Method-name:getOutputSize
+Method-returnType:int
+Method-parameters:[Operator<? extends OperatorDesc> operator, Set<String> bigTables]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:getOutputSizeInternal
+MethodInvocation:put
+Method-name:getOutputSizeInternal
+Method-returnType:int
+Method-parameters:[Operator<? extends OperatorDesc> operator, Set<String> bigTables]
+MethodInvocation:getParentOperators
+MethodInvocation:getOutputSize
+MethodInvocation:getAlias
+MethodInvocation:getConf
+MethodInvocation:contains
+MethodInvocation:getParentOperators
+MethodInvocation:getParentOperators
+MethodInvocation:getOutputSize
+Method-name:getBigTables
+Method-returnType:Set<String>
+Method-parameters:[ParseContext joinCtx]
+MethodInvocation:getJoinOps
+MethodInvocation:getStreamAliases
+MethodInvocation:getConf
+MethodInvocation:addAll
+MethodInvocation:getStreamAliases
+MethodInvocation:getConf
+Method-name:reorder
+Method-returnType:void
+Method-parameters:[JoinOperator joinOp, Set<String> bigTables]
+MethodInvocation:size
+MethodInvocation:getParentOperators
+MethodInvocation:getOutputSize
+MethodInvocation:get
+MethodInvocation:getParentOperators
+MethodInvocation:getOutputSize
+MethodInvocation:get
+MethodInvocation:getParentOperators
+MethodInvocation:getTagOrder
+MethodInvocation:getConf
+MethodInvocation:setTag
+MethodInvocation:getConf
+MethodInvocation:get
+MethodInvocation:getParentOperators
+MethodInvocation:setTag
+MethodInvocation:getConf
+MethodInvocation:get
+MethodInvocation:getParentOperators
+Method-name:transform
+Method-returnType:ParseContext
+Method-parameters:[ParseContext pactx]
+MethodInvocation:getBigTables
+MethodInvocation:clear
+MethodInvocation:getJoinOps
+MethodInvocation:reorder

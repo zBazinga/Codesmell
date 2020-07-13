@@ -1,0 +1,551 @@
+Class:MetadataBuilderImpl
+Field:log
+MethodInvocation:messageLogger
+Field:sources
+Field:bootstrapContext
+Field:options
+Method-name:MetadataBuilderImpl
+Method-returnType:null
+Method-parameters:[MetadataSources sources]
+MethodInvocation:getStandardServiceRegistry
+MethodInvocation:getServiceRegistry
+Method-name:getStandardServiceRegistry
+Method-returnType:StandardServiceRegistry
+Method-parameters:[ServiceRegistry serviceRegistry]
+MethodInvocation:isInstance
+MethodInvocation:isInstance
+MethodInvocation:debugf
+MethodInvocation:build
+MethodInvocation:format
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:MetadataBuilderImpl
+Method-returnType:null
+Method-parameters:[MetadataSources sources, StandardServiceRegistry serviceRegistry]
+FieldAccess:sources
+FieldAccess:options
+FieldAccess:bootstrapContext
+MethodInvocation:setBootstrapContext
+MethodInvocation:loadJavaServices
+MethodInvocation:getService
+MethodInvocation:getServiceRegistry
+MethodInvocation:contribute
+MethodInvocation:applyCfgXmlValues
+MethodInvocation:getService
+MethodInvocation:getService
+MethodInvocation:loadJavaServices
+MethodInvocation:contribute
+Method-name:applyCfgXmlValues
+Method-returnType:void
+Method-parameters:[CfgXmlAccessService service]
+MethodInvocation:getAggregatedConfig
+MethodInvocation:getCacheRegionDefinitions
+MethodInvocation:applyCacheRegionDefinition
+Method-name:applyImplicitSchemaName
+Method-returnType:MetadataBuilder
+Method-parameters:[String implicitSchemaName]
+Method-name:applyImplicitCatalogName
+Method-returnType:MetadataBuilder
+Method-parameters:[String implicitCatalogName]
+Method-name:applyImplicitNamingStrategy
+Method-returnType:MetadataBuilder
+Method-parameters:[ImplicitNamingStrategy namingStrategy]
+FieldAccess:implicitNamingStrategy
+FieldAccess:options
+Method-name:applyPhysicalNamingStrategy
+Method-returnType:MetadataBuilder
+Method-parameters:[PhysicalNamingStrategy namingStrategy]
+FieldAccess:physicalNamingStrategy
+FieldAccess:options
+Method-name:applySharedCacheMode
+Method-returnType:MetadataBuilder
+Method-parameters:[SharedCacheMode sharedCacheMode]
+FieldAccess:sharedCacheMode
+FieldAccess:options
+Method-name:applyAccessType
+Method-returnType:MetadataBuilder
+Method-parameters:[AccessType implicitCacheAccessType]
+FieldAccess:implicitCacheAccessType
+FieldAccess:mappingDefaults
+FieldAccess:options
+Method-name:applyIndexView
+Method-returnType:MetadataBuilder
+Method-parameters:[IndexView jandexView]
+MethodInvocation:injectJandexView
+FieldAccess:bootstrapContext
+Method-name:applyScanOptions
+Method-returnType:MetadataBuilder
+Method-parameters:[ScanOptions scanOptions]
+MethodInvocation:injectScanOptions
+FieldAccess:bootstrapContext
+Method-name:applyScanEnvironment
+Method-returnType:MetadataBuilder
+Method-parameters:[ScanEnvironment scanEnvironment]
+MethodInvocation:injectScanEnvironment
+FieldAccess:bootstrapContext
+Method-name:applyScanner
+Method-returnType:MetadataBuilder
+Method-parameters:[Scanner scanner]
+MethodInvocation:injectScanner
+FieldAccess:bootstrapContext
+Method-name:applyArchiveDescriptorFactory
+Method-returnType:MetadataBuilder
+Method-parameters:[ArchiveDescriptorFactory factory]
+MethodInvocation:injectArchiveDescriptorFactory
+FieldAccess:bootstrapContext
+Method-name:enableExplicitDiscriminatorsForJoinedSubclassSupport
+Method-returnType:MetadataBuilder
+Method-parameters:[boolean supported]
+Method-name:enableImplicitDiscriminatorsForJoinedSubclassSupport
+Method-returnType:MetadataBuilder
+Method-parameters:[boolean supported]
+Method-name:enableImplicitForcingOfDiscriminatorsInSelect
+Method-returnType:MetadataBuilder
+Method-parameters:[boolean supported]
+Method-name:enableGlobalNationalizedCharacterDataSupport
+Method-returnType:MetadataBuilder
+Method-parameters:[boolean enabled]
+Method-name:applyBasicType
+Method-returnType:MetadataBuilder
+Method-parameters:[BasicType type]
+MethodInvocation:add
+Method-name:applyBasicType
+Method-returnType:MetadataBuilder
+Method-parameters:[BasicType type, String... keys]
+MethodInvocation:add
+Method-name:applyBasicType
+Method-returnType:MetadataBuilder
+Method-parameters:[UserType type, String... keys]
+MethodInvocation:add
+Method-name:applyBasicType
+Method-returnType:MetadataBuilder
+Method-parameters:[CompositeUserType type, String... keys]
+MethodInvocation:add
+Method-name:applyTypes
+Method-returnType:MetadataBuilder
+Method-parameters:[TypeContributor typeContributor]
+MethodInvocation:contribute
+Method-name:contributeType
+Method-returnType:void
+Method-parameters:[BasicType type]
+MethodInvocation:add
+Method-name:contributeType
+Method-returnType:void
+Method-parameters:[BasicType type, String... keys]
+MethodInvocation:add
+Method-name:contributeType
+Method-returnType:void
+Method-parameters:[UserType type, String[] keys]
+MethodInvocation:add
+Method-name:contributeType
+Method-returnType:void
+Method-parameters:[CompositeUserType type, String[] keys]
+MethodInvocation:add
+Method-name:contributeJavaTypeDescriptor
+Method-returnType:void
+Method-parameters:[JavaTypeDescriptor descriptor]
+MethodInvocation:addDescriptor
+MethodInvocation:getJavaTypeDescriptorRegistry
+MethodInvocation:getTypeConfiguration
+FieldAccess:bootstrapContext
+Method-name:contributeSqlTypeDescriptor
+Method-returnType:void
+Method-parameters:[SqlTypeDescriptor descriptor]
+MethodInvocation:addDescriptor
+MethodInvocation:getSqlTypeDescriptorRegistry
+MethodInvocation:getTypeConfiguration
+FieldAccess:bootstrapContext
+Method-name:getTypeConfiguration
+Method-returnType:TypeConfiguration
+Method-parameters:[]
+MethodInvocation:getTypeConfiguration
+Method-name:applyCacheRegionDefinition
+Method-returnType:MetadataBuilder
+Method-parameters:[CacheRegionDefinition cacheRegionDefinition]
+MethodInvocation:addCacheRegionDefinition
+FieldAccess:bootstrapContext
+Method-name:applyTempClassLoader
+Method-returnType:MetadataBuilder
+Method-parameters:[ClassLoader tempClassLoader]
+MethodInvocation:injectJpaTempClassLoader
+FieldAccess:bootstrapContext
+Method-name:applySourceProcessOrdering
+Method-returnType:MetadataBuilder
+Method-parameters:[MetadataSourceType... sourceTypes]
+MethodInvocation:addAll
+MethodInvocation:asList
+Method-name:allowSpecjSyntax
+Method-returnType:MetadataBuilder
+Method-parameters:[]
+FieldAccess:specjProprietarySyntaxEnabled
+FieldAccess:options
+Method-name:applySqlFunction
+Method-returnType:MetadataBuilder
+Method-parameters:[String functionName, SQLFunction function]
+MethodInvocation:addSqlFunction
+FieldAccess:bootstrapContext
+Method-name:applyAuxiliaryDatabaseObject
+Method-returnType:MetadataBuilder
+Method-parameters:[AuxiliaryDatabaseObject auxiliaryDatabaseObject]
+MethodInvocation:addAuxiliaryDatabaseObject
+FieldAccess:bootstrapContext
+Method-name:applyAttributeConverter
+Method-returnType:MetadataBuilder
+Method-parameters:[AttributeConverterDefinition definition]
+MethodInvocation:addAttributeConverterInfo
+FieldAccess:bootstrapContext
+Method-name:applyAttributeConverter
+Method-returnType:MetadataBuilder
+Method-parameters:[Class<? extends AttributeConverter> attributeConverterClass]
+MethodInvocation:addAttributeConverterInfo
+FieldAccess:bootstrapContext
+Method-name:getConverterClass
+Method-returnType:Class<? extends AttributeConverter>
+Method-parameters:[]
+Method-name:toConverterDescriptor
+Method-returnType:ConverterDescriptor
+Method-parameters:[MetadataBuildingContext context]
+MethodInvocation:getClassmateContext
+MethodInvocation:getBootstrapContext
+Method-name:applyAttributeConverter
+Method-returnType:MetadataBuilder
+Method-parameters:[Class<? extends AttributeConverter> attributeConverterClass, boolean autoApply]
+MethodInvocation:addAttributeConverterInfo
+FieldAccess:bootstrapContext
+Method-name:getConverterClass
+Method-returnType:Class<? extends AttributeConverter>
+Method-parameters:[]
+Method-name:toConverterDescriptor
+Method-returnType:ConverterDescriptor
+Method-parameters:[MetadataBuildingContext context]
+MethodInvocation:getClassmateContext
+MethodInvocation:getBootstrapContext
+Method-name:applyAttributeConverter
+Method-returnType:MetadataBuilder
+Method-parameters:[AttributeConverter attributeConverter]
+MethodInvocation:addAttributeConverterInfo
+FieldAccess:bootstrapContext
+Method-name:getConverterClass
+Method-returnType:Class<? extends AttributeConverter>
+Method-parameters:[]
+MethodInvocation:getClass
+Method-name:toConverterDescriptor
+Method-returnType:ConverterDescriptor
+Method-parameters:[MetadataBuildingContext context]
+MethodInvocation:getClassmateContext
+MethodInvocation:getBootstrapContext
+Method-name:applyAttributeConverter
+Method-returnType:MetadataBuilder
+Method-parameters:[AttributeConverter attributeConverter, boolean autoApply]
+MethodInvocation:addAttributeConverterInfo
+FieldAccess:bootstrapContext
+Method-name:getConverterClass
+Method-returnType:Class<? extends AttributeConverter>
+Method-parameters:[]
+MethodInvocation:getClass
+Method-name:toConverterDescriptor
+Method-returnType:ConverterDescriptor
+Method-parameters:[MetadataBuildingContext context]
+MethodInvocation:getClassmateContext
+MethodInvocation:getBootstrapContext
+Method-name:enableNewIdentifierGeneratorSupport
+Method-returnType:MetadataBuilder
+Method-parameters:[boolean enabled]
+MethodInvocation:disableLegacyFallback
+FieldAccess:idGenerationTypeInterpreter
+FieldAccess:options
+MethodInvocation:enableLegacyFallback
+FieldAccess:idGenerationTypeInterpreter
+FieldAccess:options
+Method-name:applyIdGenerationTypeInterpreter
+Method-returnType:MetadataBuilder
+Method-parameters:[IdGeneratorStrategyInterpreter interpreter]
+MethodInvocation:addInterpreterDelegate
+FieldAccess:idGenerationTypeInterpreter
+FieldAccess:options
+Method-name:unwrap
+Method-returnType:T
+Method-parameters:[Class<T> type]
+Method-name:build
+Method-returnType:MetadataImplementor
+Method-parameters:[]
+MethodInvocation:getService
+MethodInvocation:getAggregatedConfig
+MethodInvocation:getMappingReferences
+MethodInvocation:getAggregatedConfig
+MethodInvocation:getMappingReferences
+MethodInvocation:getAggregatedConfig
+MethodInvocation:apply
+MethodInvocation:build
+Method-name:getBootstrapContext
+Method-returnType:BootstrapContext
+Method-parameters:[]
+Method-name:getMetadataBuildingOptions
+Method-returnType:MetadataBuildingOptions
+Method-parameters:[]
+Class:MappingDefaultsImpl
+Field:implicitSchemaName
+Field:implicitCatalogName
+Field:implicitlyQuoteIdentifiers
+Field:implicitCacheAccessType
+Method-name:MappingDefaultsImpl
+Method-returnType:null
+Method-parameters:[StandardServiceRegistry serviceRegistry]
+MethodInvocation:getService
+FieldAccess:implicitSchemaName
+MethodInvocation:getSetting
+FieldAccess:implicitCatalogName
+MethodInvocation:getSetting
+FieldAccess:implicitlyQuoteIdentifiers
+MethodInvocation:getSetting
+FieldAccess:implicitCacheAccessType
+MethodInvocation:getSetting
+Method-name:convert
+Method-returnType:AccessType
+Method-parameters:[Object value]
+MethodInvocation:fromExternalName
+MethodInvocation:toString
+Method-name:getImplicitSchemaName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getImplicitCatalogName
+Method-returnType:String
+Method-parameters:[]
+Method-name:shouldImplicitlyQuoteIdentifiers
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getImplicitIdColumnName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getImplicitTenantIdColumnName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getImplicitDiscriminatorColumnName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getImplicitPackageName
+Method-returnType:String
+Method-parameters:[]
+Method-name:isAutoImportEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getImplicitCascadeStyleName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getImplicitPropertyAccessorName
+Method-returnType:String
+Method-parameters:[]
+Method-name:areEntitiesImplicitlyLazy
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:areCollectionsImplicitlyLazy
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getImplicitCacheAccessType
+Method-returnType:AccessType
+Method-parameters:[]
+Class:MetadataBuildingOptionsImpl
+Field:serviceRegistry
+Field:mappingDefaults
+Field:bootstrapContext
+Field:basicTypeRegistrations
+Field:implicitNamingStrategy
+Field:physicalNamingStrategy
+Field:sharedCacheMode
+Field:defaultCacheAccessType
+Field:multiTenancyStrategy
+Field:explicitDiscriminatorsForJoinedInheritanceSupported
+Field:implicitDiscriminatorsForJoinedInheritanceSupported
+Field:implicitlyForceDiscriminatorInSelect
+Field:useNationalizedCharacterData
+Field:specjProprietarySyntaxEnabled
+Field:sourceProcessOrdering
+Field:idGenerationTypeInterpreter
+Field:schemaCharset
+Field:xmlMappingEnabled
+Method-name:MetadataBuildingOptionsImpl
+Method-returnType:null
+Method-parameters:[StandardServiceRegistry serviceRegistry]
+FieldAccess:serviceRegistry
+MethodInvocation:getService
+MethodInvocation:getService
+FieldAccess:mappingDefaults
+FieldAccess:multiTenancyStrategy
+MethodInvocation:determineMultiTenancyStrategy
+MethodInvocation:getSettings
+FieldAccess:xmlMappingEnabled
+MethodInvocation:getSetting
+FieldAccess:implicitDiscriminatorsForJoinedInheritanceSupported
+MethodInvocation:getSetting
+FieldAccess:explicitDiscriminatorsForJoinedInheritanceSupported
+MethodInvocation:getSetting
+FieldAccess:implicitlyForceDiscriminatorInSelect
+MethodInvocation:getSetting
+FieldAccess:sharedCacheMode
+MethodInvocation:getSetting
+Method-name:convert
+Method-returnType:SharedCacheMode
+Method-parameters:[Object value]
+MethodInvocation:isInstance
+MethodInvocation:valueOf
+MethodInvocation:toString
+FieldAccess:defaultCacheAccessType
+MethodInvocation:getSetting
+Method-name:convert
+Method-returnType:AccessType
+Method-parameters:[Object value]
+MethodInvocation:isInstance
+MethodInvocation:toAccessType
+MethodInvocation:isInstance
+MethodInvocation:fromExternalName
+MethodInvocation:toString
+MethodInvocation:getService
+MethodInvocation:getDefaultAccessType
+MethodInvocation:getService
+FieldAccess:specjProprietarySyntaxEnabled
+MethodInvocation:getSetting
+FieldAccess:implicitNamingStrategy
+MethodInvocation:resolveDefaultableStrategy
+MethodInvocation:get
+MethodInvocation:getSettings
+Method-name:call
+Method-returnType:ImplicitNamingStrategy
+Method-parameters:[]
+MethodInvocation:resolveDefaultableStrategy
+FieldAccess:physicalNamingStrategy
+MethodInvocation:resolveDefaultableStrategy
+MethodInvocation:get
+MethodInvocation:getSettings
+FieldAccess:sourceProcessOrdering
+MethodInvocation:resolveInitialSourceProcessOrdering
+MethodInvocation:getSetting
+MethodInvocation:disableLegacyFallback
+FieldAccess:idGenerationTypeInterpreter
+MethodInvocation:enableLegacyFallback
+FieldAccess:idGenerationTypeInterpreter
+FieldAccess:useNationalizedCharacterData
+MethodInvocation:getSetting
+FieldAccess:schemaCharset
+MethodInvocation:getSetting
+Method-name:resolveInitialSourceProcessOrdering
+Method-returnType:ArrayList<MetadataSourceType>
+Method-parameters:[ConfigurationService configService]
+MethodInvocation:getSetting
+MethodInvocation:split
+MethodInvocation:addAll
+MethodInvocation:arrayList
+MethodInvocation:add
+MethodInvocation:parsePrecedence
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:add
+Method-name:getServiceRegistry
+Method-returnType:StandardServiceRegistry
+Method-parameters:[]
+Method-name:getMappingDefaults
+Method-returnType:MappingDefaults
+Method-parameters:[]
+Method-name:getBasicTypeRegistrations
+Method-returnType:List<BasicTypeRegistration>
+Method-parameters:[]
+Method-name:getReflectionManager
+Method-returnType:ReflectionManager
+Method-parameters:[]
+MethodInvocation:getReflectionManager
+Method-name:getJandexView
+Method-returnType:IndexView
+Method-parameters:[]
+MethodInvocation:getJandexView
+Method-name:getScanOptions
+Method-returnType:ScanOptions
+Method-parameters:[]
+MethodInvocation:getScanOptions
+Method-name:getScanEnvironment
+Method-returnType:ScanEnvironment
+Method-parameters:[]
+MethodInvocation:getScanEnvironment
+Method-name:getScanner
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:getScanner
+Method-name:getArchiveDescriptorFactory
+Method-returnType:ArchiveDescriptorFactory
+Method-parameters:[]
+MethodInvocation:getArchiveDescriptorFactory
+Method-name:getTempClassLoader
+Method-returnType:ClassLoader
+Method-parameters:[]
+MethodInvocation:getJpaTempClassLoader
+Method-name:getImplicitNamingStrategy
+Method-returnType:ImplicitNamingStrategy
+Method-parameters:[]
+Method-name:getPhysicalNamingStrategy
+Method-returnType:PhysicalNamingStrategy
+Method-parameters:[]
+Method-name:getSharedCacheMode
+Method-returnType:SharedCacheMode
+Method-parameters:[]
+Method-name:getImplicitCacheAccessType
+Method-returnType:AccessType
+Method-parameters:[]
+Method-name:getMultiTenancyStrategy
+Method-returnType:MultiTenancyStrategy
+Method-parameters:[]
+Method-name:getIdGenerationTypeInterpreter
+Method-returnType:IdGeneratorStrategyInterpreter
+Method-parameters:[]
+Method-name:getCacheRegionDefinitions
+Method-returnType:List<CacheRegionDefinition>
+Method-parameters:[]
+MethodInvocation:getCacheRegionDefinitions
+Method-name:ignoreExplicitDiscriminatorsForJoinedInheritance
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:createImplicitDiscriminatorsForJoinedInheritance
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:shouldImplicitlyForceDiscriminatorInSelect
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:useNationalizedCharacterData
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSpecjProprietarySyntaxEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getSourceProcessOrdering
+Method-returnType:List<MetadataSourceType>
+Method-parameters:[]
+Method-name:getSqlFunctions
+Method-returnType:Map<String,SQLFunction>
+Method-parameters:[]
+MethodInvocation:getSqlFunctions
+Method-name:getAuxiliaryDatabaseObjectList
+Method-returnType:List<AuxiliaryDatabaseObject>
+Method-parameters:[]
+MethodInvocation:getAuxiliaryDatabaseObjectList
+Method-name:getAttributeConverters
+Method-returnType:List<AttributeConverterInfo>
+Method-parameters:[]
+MethodInvocation:getAttributeConverters
+Method-name:getSchemaCharset
+Method-returnType:String
+Method-parameters:[]
+Method-name:isXmlMappingEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:apply
+Method-returnType:void
+Method-parameters:[JpaOrmXmlPersistenceUnitDefaults jpaOrmXmlPersistenceUnitDefaults]
+MethodInvocation:shouldImplicitlyQuoteIdentifiers
+MethodInvocation:shouldImplicitlyQuoteIdentifiers
+MethodInvocation:getImplicitCatalogName
+MethodInvocation:nullIfEmpty
+MethodInvocation:getDefaultCatalogName
+MethodInvocation:getImplicitSchemaName
+MethodInvocation:nullIfEmpty
+MethodInvocation:getDefaultSchemaName
+Method-name:setBootstrapContext
+Method-returnType:void
+Method-parameters:[BootstrapContextImpl bootstrapContext]
+FieldAccess:bootstrapContext

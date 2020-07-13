@@ -1,0 +1,163 @@
+Class:IQ
+Field:IQ_ELEMENT
+Field:QUERY_ELEMENT
+Field:childElementQName
+Field:childElementName
+Field:childElementNamespace
+Field:type
+Method-name:IQ
+Method-returnType:null
+Method-parameters:[IQ iq]
+MethodInvocation:getType
+FieldAccess:childElementName
+FieldAccess:childElementNamespace
+FieldAccess:childElementQName
+Method-name:IQ
+Method-returnType:null
+Method-parameters:[String childElementName, String childElementNamespace]
+Method-name:IQ
+Method-returnType:null
+Method-parameters:[AbstractIqBuilder<?> iqBuilder, String childElementName, String childElementNamespace]
+FieldAccess:childElementName
+FieldAccess:childElementNamespace
+Method-name:getType
+Method-returnType:Type
+Method-parameters:[]
+Method-name:setType
+Method-returnType:void
+Method-parameters:[Type type]
+FieldAccess:type
+MethodInvocation:requireNonNull
+Method-name:isRequestIQ
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isResponseIQ
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isRequestIQ
+Method-name:getChildElementQName
+Method-returnType:QName
+Method-parameters:[]
+Method-name:getChildElementName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getChildElementNamespace
+Method-returnType:String
+Method-parameters:[]
+Method-name:getElementName
+Method-returnType:String
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getChildElementName
+MethodInvocation:getChildElementNamespace
+MethodInvocation:append
+MethodInvocation:logCommonAttributes
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:toXML
+Method-returnType:XmlStringBuilder
+Method-parameters:[XmlEnvironment enclosingXmlEnvironment]
+MethodInvocation:addCommonAttributes
+MethodInvocation:attribute
+MethodInvocation:attribute
+MethodInvocation:toString
+MethodInvocation:rightAngleBracket
+MethodInvocation:appendInnerXml
+MethodInvocation:closeElement
+Method-name:getChildElementXML
+Method-returnType:XmlStringBuilder
+Method-parameters:[]
+MethodInvocation:appendInnerXml
+Method-name:appendInnerXml
+Method-returnType:void
+Method-parameters:[XmlStringBuilder xml]
+MethodInvocation:appendErrorIfExists
+MethodInvocation:getIQChildElementBuilder
+MethodInvocation:append
+MethodInvocation:getExtensions
+MethodInvocation:isEmpty
+MethodInvocation:closeEmptyElement
+MethodInvocation:rightAngleBracket
+MethodInvocation:append
+MethodInvocation:closeElement
+Method-name:getIQChildElementBuilder
+Method-returnType:IQChildElementXmlStringBuilder
+Method-parameters:[IQChildElementXmlStringBuilder xml]
+Method-name:createResultIQ
+Method-returnType:IQ
+Method-parameters:[final IQ request]
+Method-name:createErrorResponse
+Method-returnType:ErrorIQ
+Method-parameters:[final IQ request, final StanzaError error]
+MethodInvocation:isRequestIQ
+MethodInvocation:toXML
+MethodInvocation:setStanzaId
+MethodInvocation:getStanzaId
+MethodInvocation:setFrom
+MethodInvocation:getTo
+MethodInvocation:setTo
+MethodInvocation:getFrom
+Method-name:createErrorResponse
+Method-returnType:ErrorIQ
+Method-parameters:[final IQ request, final StanzaError.Builder error]
+MethodInvocation:createErrorResponse
+MethodInvocation:build
+Method-name:createErrorResponse
+Method-returnType:ErrorIQ
+Method-parameters:[final IQ request, final StanzaError.Condition condition]
+MethodInvocation:createErrorResponse
+MethodInvocation:build
+MethodInvocation:getBuilder
+Method-name:sendStanza
+Method-returnType:void
+Method-parameters:[JingleSession jingleSession]
+MethodInvocation:sendFormattedJingle
+MethodInvocation:sendStanza
+MethodInvocation:getConnection
+Field:Type
+Method-name:fromString
+Method-returnType:Type
+Method-parameters:[String string]
+MethodInvocation:valueOf
+MethodInvocation:toLowerCase
+Field:ResponseType
+Method-name:result
+Method-returnType:null
+Method-parameters:[]
+Method-name:ResponseType
+Method-returnType:null
+Method-parameters:[Type type]
+FieldAccess:type
+Method-name:getType
+Method-returnType:Type
+Method-parameters:[]
+Class:IQChildElementXmlStringBuilder
+Field:element
+Field:isEmptyElement
+Method-name:IQChildElementXmlStringBuilder
+Method-returnType:null
+Method-parameters:[IQ iq]
+MethodInvocation:getChildElementName
+MethodInvocation:getChildElementNamespace
+Method-name:IQChildElementXmlStringBuilder
+Method-returnType:null
+Method-parameters:[ExtensionElement pe]
+MethodInvocation:getElementName
+MethodInvocation:getNamespace
+Method-name:IQChildElementXmlStringBuilder
+Method-returnType:null
+Method-parameters:[String element, String namespace]
+MethodInvocation:prelude
+FieldAccess:element
+Method-name:setEmptyElement
+Method-returnType:void
+Method-parameters:[]

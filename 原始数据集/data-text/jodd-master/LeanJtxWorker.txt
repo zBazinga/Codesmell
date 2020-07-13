@@ -1,0 +1,28 @@
+Class:LeanJtxWorker
+Field:log
+MethodInvocation:getLogger
+Field:txManager
+Method-name:LeanJtxWorker
+Method-returnType:null
+Method-parameters:[final JtxTransactionManager txManager]
+FieldAccess:txManager
+Method-name:getTransactionManager
+Method-returnType:JtxTransactionManager
+Method-parameters:[]
+Method-name:getCurrentTransaction
+Method-returnType:JtxTransaction
+Method-parameters:[]
+MethodInvocation:getTransaction
+Method-name:maybeCommitTransaction
+Method-returnType:boolean
+Method-parameters:[final JtxTransaction tx]
+MethodInvocation:debug
+MethodInvocation:commit
+Method-name:markOrRollbackTransaction
+Method-returnType:boolean
+Method-parameters:[JtxTransaction tx, final Throwable cause]
+MethodInvocation:getCurrentTransaction
+MethodInvocation:debug
+MethodInvocation:setRollbackOnly
+MethodInvocation:debug
+MethodInvocation:rollback

@@ -1,0 +1,50 @@
+Class:KieJarChangeSet
+Field:changes
+Method-name:getChanges
+Method-returnType:Map<String,ResourceChangeSet>
+Method-parameters:[]
+Method-name:removeFile
+Method-returnType:void
+Method-parameters:[String file]
+MethodInvocation:put
+Method-name:addFile
+Method-returnType:void
+Method-parameters:[String file]
+MethodInvocation:put
+Method-name:registerChanges
+Method-returnType:void
+Method-parameters:[String file, ResourceChangeSet changeSet]
+MethodInvocation:put
+Method-name:contains
+Method-returnType:boolean
+Method-parameters:[String resourceName]
+MethodInvocation:contains
+MethodInvocation:keySet
+Method-name:merge
+Method-returnType:KieJarChangeSet
+Method-parameters:[KieJarChangeSet other]
+MethodInvocation:putAll
+FieldAccess:changes
+MethodInvocation:putAll
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getModifiedClasses
+Method-returnType:List<String>
+Method-parameters:[KieContainerImpl kieContainer]
+MethodInvocation:values
+MethodInvocation:getChanges
+MethodInvocation:getChangeType
+MethodInvocation:getResourceName
+MethodInvocation:endsWith
+MethodInvocation:add

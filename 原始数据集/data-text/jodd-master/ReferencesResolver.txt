@@ -1,0 +1,120 @@
+Class:ReferencesResolver
+Field:petiteConfig
+Method-name:ReferencesResolver
+Method-returnType:null
+Method-parameters:[final PetiteConfig petiteConfig]
+FieldAccess:petiteConfig
+Method-name:resolveReferenceFromValue
+Method-returnType:BeanReferences
+Method-parameters:[final PropertyDescriptor propertyDescriptor, final String refName]
+MethodInvocation:isEmpty
+MethodInvocation:buildDefaultReference
+MethodInvocation:of
+MethodInvocation:removeDuplicateNames
+Method-name:resolveReferenceFromValues
+Method-returnType:BeanReferences[]
+Method-parameters:[final Executable methodOrCtor, final String... parameterReferences]
+MethodInvocation:convertRefToReferences
+MethodInvocation:buildDefaultReferences
+FieldAccess:length
+MethodInvocation:getParameterTypes
+MethodInvocation:getName
+MethodInvocation:getDeclaringClass
+MethodInvocation:getName
+MethodInvocation:removeAllDuplicateNames
+Method-name:readReferenceFromAnnotation
+Method-returnType:BeanReferences
+Method-parameters:[final PropertyDescriptor propertyDescriptor]
+MethodInvocation:getWriteMethodDescriptor
+MethodInvocation:getFieldDescriptor
+MethodInvocation:getAnnotation
+MethodInvocation:getMethod
+MethodInvocation:getAnnotation
+MethodInvocation:getField
+MethodInvocation:trim
+MethodInvocation:value
+MethodInvocation:length
+MethodInvocation:of
+MethodInvocation:updateReferencesWithDefaultsIfNeeded
+MethodInvocation:removeDuplicateNames
+Method-name:readReferenceFromAnnotation
+Method-returnType:BeanReferences
+Method-parameters:[final FieldDescriptor fieldDescriptor]
+MethodInvocation:getAnnotation
+MethodInvocation:getField
+MethodInvocation:trim
+MethodInvocation:value
+MethodInvocation:length
+MethodInvocation:of
+MethodInvocation:removeDuplicateNames
+Method-name:readAllReferencesFromAnnotation
+Method-returnType:BeanReferences[]
+Method-parameters:[final Executable methodOrCtor]
+MethodInvocation:getAnnotation
+MethodInvocation:getParameters
+MethodInvocation:convertAnnValueToReferences
+MethodInvocation:value
+MethodInvocation:getAnnotation
+MethodInvocation:readAnnotationValue
+MethodInvocation:of
+MethodInvocation:updateReferencesWithDefaultsIfNeeded
+MethodInvocation:removeAllDuplicateNames
+Method-name:readAnnotationValue
+Method-returnType:String
+Method-parameters:[final PetiteInject annotation]
+MethodInvocation:trim
+MethodInvocation:value
+MethodInvocation:isEmpty
+Method-name:updateReferencesWithDefaultsIfNeeded
+Method-returnType:BeanReferences[]
+Method-parameters:[final Executable methodOrCtor, BeanReferences[] references]
+MethodInvocation:buildDefaultReferences
+FieldAccess:length
+MethodInvocation:getParameterTypes
+MethodInvocation:getName
+MethodInvocation:parameterReferenceIsNotSet
+Method-name:updateReferencesWithDefaultsIfNeeded
+Method-returnType:BeanReferences
+Method-parameters:[final PropertyDescriptor propertyDescriptor, BeanReferences references]
+MethodInvocation:isEmpty
+MethodInvocation:buildDefaultReference
+Method-name:buildDefaultReferences
+Method-returnType:BeanReferences[]
+Method-parameters:[final Executable methodOrCtor]
+MethodInvocation:getUseParamo
+MethodInvocation:getLookupReferences
+MethodInvocation:resolveParameters
+MethodInvocation:getParameterTypes
+MethodInvocation:of
+MethodInvocation:getName
+MethodInvocation:uncapitalize
+MethodInvocation:getSimpleName
+MethodInvocation:getName
+Method-name:buildDefaultReference
+Method-returnType:BeanReferences
+Method-parameters:[final PropertyDescriptor propertyDescriptor]
+MethodInvocation:getLookupReferences
+MethodInvocation:getName
+MethodInvocation:uncapitalize
+MethodInvocation:getSimpleName
+MethodInvocation:getType
+MethodInvocation:getName
+MethodInvocation:getType
+MethodInvocation:of
+Method-name:removeAllDuplicateNames
+Method-returnType:void
+Method-parameters:[final BeanReferences[] allBeanReferences]
+MethodInvocation:removeDuplicateNames
+Method-name:convertRefToReferences
+Method-returnType:BeanReferences[]
+Method-parameters:[final String[] references]
+MethodInvocation:of
+Method-name:convertAnnValueToReferences
+Method-returnType:BeanReferences[]
+Method-parameters:[String value]
+MethodInvocation:trim
+MethodInvocation:length
+MethodInvocation:toStringArray
+MethodInvocation:get
+MethodInvocation:of
+MethodInvocation:trim

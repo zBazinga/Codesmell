@@ -1,0 +1,87 @@
+Class:Olingo4Component
+Field:configuration
+Field:useGlobalSslContextParameters
+Field:apiProxy
+Method-name:Olingo4Component
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:getCollection
+Method-name:Olingo4Component
+Method-returnType:null
+Method-parameters:[CamelContext context]
+MethodInvocation:getCollection
+Method-name:getApiName
+Method-returnType:Olingo4ApiName
+Method-parameters:[String apiNameStr]
+MethodInvocation:fromValue
+Method-name:createEndpoint
+Method-returnType:Endpoint
+Method-parameters:[String uri, String remaining, Map<String,Object> parameters]
+MethodInvocation:split
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:put
+MethodInvocation:toString
+MethodInvocation:createEndpointConfiguration
+MethodInvocation:createEndpoint
+MethodInvocation:setProperties
+Method-name:setConfiguration
+Method-returnType:void
+Method-parameters:[Olingo4Configuration configuration]
+Method-name:getConfiguration
+Method-returnType:Olingo4Configuration
+Method-parameters:[]
+Method-name:createApiProxy
+Method-returnType:Olingo4AppWrapper
+Method-parameters:[Olingo4Configuration endpointConfiguration]
+MethodInvocation:equals
+FieldAccess:configuration
+MethodInvocation:createOlingo4App
+FieldAccess:configuration
+MethodInvocation:createOlingo4App
+Method-name:createOlingo4App
+Method-returnType:Olingo4AppWrapper
+Method-parameters:[Olingo4Configuration configuration]
+MethodInvocation:getHttpAsyncClientBuilder
+MethodInvocation:create
+MethodInvocation:custom
+MethodInvocation:setConnectTimeout
+MethodInvocation:getConnectTimeout
+MethodInvocation:setSocketTimeout
+MethodInvocation:getSocketTimeout
+MethodInvocation:getProxy
+MethodInvocation:setProxy
+MethodInvocation:setDefaultRequestConfig
+MethodInvocation:build
+MethodInvocation:getSslContextParameters
+MethodInvocation:retrieveGlobalSslContextParameters
+MethodInvocation:setSSLContext
+MethodInvocation:createSSLContext
+MethodInvocation:getCamelContext
+MethodInvocation:wrapRuntimeCamelException
+MethodInvocation:wrapRuntimeCamelException
+MethodInvocation:getServiceUri
+MethodInvocation:getServiceUri
+MethodInvocation:setContentType
+MethodInvocation:getOlingo4App
+MethodInvocation:getContentType
+MethodInvocation:setHttpHeaders
+MethodInvocation:getOlingo4App
+MethodInvocation:getHttpHeaders
+Method-name:isUseGlobalSslContextParameters
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:useGlobalSslContextParameters
+Method-name:setUseGlobalSslContextParameters
+Method-returnType:void
+Method-parameters:[boolean useGlobalSslContextParameters]
+FieldAccess:useGlobalSslContextParameters
+Method-name:closeApiProxy
+Method-returnType:void
+Method-parameters:[Olingo4AppWrapper apiProxy]
+FieldAccess:apiProxy
+MethodInvocation:close
+Method-name:doStop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close

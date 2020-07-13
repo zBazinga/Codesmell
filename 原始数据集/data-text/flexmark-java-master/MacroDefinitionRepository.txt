@@ -1,0 +1,42 @@
+Class:MacroDefinitionRepository
+Field:myReferencedMacroDefinitionBlocks
+Method-name:addMacrosReference
+Method-returnType:void
+Method-parameters:[MacroDefinitionBlock macroDefinitionBlock, MacroReference macros]
+MethodInvocation:isReferenced
+MethodInvocation:add
+MethodInvocation:setFirstReferenceOffset
+MethodInvocation:getStartOffset
+Method-name:resolveMacrosOrdinals
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:sort
+MethodInvocation:comparing
+MethodInvocation:setOrdinal
+Method-name:getReferencedMacroDefinitionBlocks
+Method-returnType:List<MacroDefinitionBlock>
+Method-parameters:[]
+Method-name:MacroDefinitionRepository
+Method-returnType:null
+Method-parameters:[DataHolder options]
+MethodInvocation:get
+Method-name:getDataKey
+Method-returnType:DataKey<MacroDefinitionRepository>
+Method-parameters:[]
+Method-name:getKeepDataKey
+Method-returnType:DataKey<KeepType>
+Method-parameters:[]
+Method-name:getReferencedElements
+Method-returnType:Set<MacroDefinitionBlock>
+Method-parameters:[Node parent]
+MethodInvocation:visitNodes
+MethodInvocation:getReferenceNode
+MethodInvocation:add
+Method-name:getMacroDefinitionBlock
+Method-returnType:MacroDefinitionBlock
+Method-parameters:[MacroReference reference]
+MethodInvocation:isEmpty
+MethodInvocation:getText
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:getText

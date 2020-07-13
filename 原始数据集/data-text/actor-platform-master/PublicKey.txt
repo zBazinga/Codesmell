@@ -1,0 +1,35 @@
+Class:PublicKey
+Field:keyId
+Field:keyAlg
+Field:publicKey
+Method-name:PublicKey
+Method-returnType:null
+Method-parameters:[long keyId, String keyAlg, byte[] publicKey]
+FieldAccess:keyId
+FieldAccess:keyAlg
+FieldAccess:publicKey
+Method-name:PublicKey
+Method-returnType:null
+Method-parameters:[byte[] data]
+MethodInvocation:load
+Method-name:getKeyId
+Method-returnType:long
+Method-parameters:[]
+Method-name:getKeyAlg
+Method-returnType:String
+Method-parameters:[]
+Method-name:getPublicKey
+Method-returnType:byte[]
+Method-parameters:[]
+Method-name:parse
+Method-returnType:void
+Method-parameters:[BserValues values]
+MethodInvocation:getLong
+MethodInvocation:getString
+MethodInvocation:getBytes
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[BserWriter writer]
+MethodInvocation:writeLong
+MethodInvocation:writeString
+MethodInvocation:writeBytes

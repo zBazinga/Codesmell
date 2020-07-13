@@ -1,0 +1,70 @@
+Class:AController
+Class:ActionSelectorOnPropertyChange
+Field:propertyName
+Field:action
+Method-name:ActionSelectorOnPropertyChange
+Method-returnType:null
+Method-parameters:[final AFreeplaneAction action]
+FieldAccess:action
+MethodInvocation:checkOnPropertyChange
+MethodInvocation:getAnnotation
+MethodInvocation:getClass
+Method-name:getAction
+Method-returnType:AFreeplaneAction
+Method-parameters:[]
+Method-name:propertyChanged
+Method-returnType:void
+Method-parameters:[final String propertyName, final String newValue, final String oldValue]
+MethodInvocation:equals
+FieldAccess:propertyName
+MethodInvocation:setSelected
+Method-name:getAction
+Method-returnType:AFreeplaneAction
+Method-parameters:[]
+Field:actions
+Method-name:AController
+Method-returnType:null
+Method-parameters:[]
+Method-name:addAction
+Method-returnType:void
+Method-parameters:[final AFreeplaneAction value]
+MethodInvocation:getKey
+MethodInvocation:put
+MethodInvocation:getActions
+MethodInvocation:equals
+MethodInvocation:put
+MethodInvocation:getActions
+MethodInvocation:checkSelectionOnPropertyChange
+MethodInvocation:addPropertyChangeListener
+MethodInvocation:getResourceController
+Method-name:addActionIfNotAlreadySet
+Method-returnType:void
+Method-parameters:[AFreeplaneAction action]
+MethodInvocation:getAction
+MethodInvocation:getKey
+MethodInvocation:addAction
+Method-name:getAction
+Method-returnType:AFreeplaneAction
+Method-parameters:[final String key]
+MethodInvocation:get
+MethodInvocation:getActions
+Method-name:getActions
+Method-returnType:Map<String,AFreeplaneAction>
+Method-parameters:[]
+Method-name:getActionKeys
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:removeAction
+Method-returnType:AFreeplaneAction
+Method-parameters:[final String key]
+MethodInvocation:remove
+MethodInvocation:getActions
+MethodInvocation:checkSelectionOnPropertyChange
+MethodInvocation:removePropertyChangeListener
+MethodInvocation:getResourceController
+Method-name:removeActionIfSet
+Method-returnType:AFreeplaneAction
+Method-parameters:[final String key]
+MethodInvocation:getAction
+MethodInvocation:removeAction

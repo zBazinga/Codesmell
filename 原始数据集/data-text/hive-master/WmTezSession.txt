@@ -1,0 +1,149 @@
+Class:WmTezSession
+Field:poolName
+Field:clusterFraction
+Field:killReason
+Field:amPluginInfoLock
+Field:amPluginInfo
+Field:amPluginEndpointVersion
+Field:amRegistryFuture
+Field:timeoutTimer
+Field:queryId
+Field:returnFuture
+Field:wmParent
+Method-name:resetGlobalTezSession
+Method-returnType:void
+Method-parameters:[WorkloadManager workloadManager]
+MethodInvocation:get
+MethodInvocation:getTezSession
+MethodInvocation:setTezSession
+Class:ActualWmState
+Field:sending
+Field:sent
+Field:target
+Field:actualState
+Method-name:WmTezSession
+Method-returnType:null
+Method-parameters:[String sessionId, WorkloadManager parent, SessionExpirationTracker expiration, HiveConf conf]
+Method-name:WmTezSession
+Method-returnType:null
+Method-parameters:[String sessionId, Manager testParent, SessionExpirationTracker expiration, HiveConf conf]
+Method-name:waitForAmRegistryAsync
+Method-returnType:ListenableFuture<WmTezSession>
+Method-parameters:[int timeoutMs, ScheduledExecutorService timeoutPool]
+MethodInvocation:create
+MethodInvocation:set
+MethodInvocation:setException
+FieldAccess:timeoutTimer
+MethodInvocation:schedule
+Method-name:updateFromRegistry
+Method-returnType:void
+Method-parameters:[TezAmInstance si, int ephSeqVersion]
+MethodInvocation:updateAmEndpointInfo
+MethodInvocation:handleGuaranteedTasksChange
+MethodInvocation:getGuaranteedCount
+Method-name:updateAmEndpointInfo
+Method-returnType:void
+Method-parameters:[TezAmInstance si, int ephSeqVersion]
+MethodInvocation:getHost
+MethodInvocation:getPluginPort
+MethodInvocation:getPluginToken
+MethodInvocation:getPluginTokenJobId
+MethodInvocation:info
+FieldAccess:amPluginEndpointVersion
+FieldAccess:amPluginInfo
+MethodInvocation:set
+MethodInvocation:cancel
+Method-name:handleGuaranteedTasksChange
+Method-returnType:void
+Method-parameters:[int guaranteedCount]
+MethodInvocation:notifyOfInconsistentAllocation
+Method-name:getAmPluginInfo
+Method-returnType:AmPluginInfo
+Method-parameters:[Ref<Integer> version]
+Method-name:setPoolName
+Method-returnType:void
+Method-parameters:[String poolName]
+FieldAccess:poolName
+Method-name:getPoolName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setClusterFraction
+Method-returnType:void
+Method-parameters:[double fraction]
+FieldAccess:clusterFraction
+Method-name:clearWm
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:poolName
+FieldAccess:clusterFraction
+Method-name:hasClusterFraction
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:clusterFraction
+Method-name:getClusterFraction
+Method-returnType:double
+Method-parameters:[]
+FieldAccess:clusterFraction
+Method-name:setSendingGuaranteed
+Method-returnType:Integer
+Method-parameters:[Integer intAlloc]
+Method-name:getAllocationState
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSentGuaranteed
+Method-returnType:int
+Method-parameters:[]
+Method-name:setFailedToSendGuaranteed
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:handleUpdateError
+Method-returnType:void
+Method-parameters:[int endpointVersion]
+MethodInvocation:addUpdateError
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:identityHashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+Method-name:isIrrelevantForWm
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getReasonForKill
+Method-returnType:String
+Method-parameters:[]
+Method-name:setIsIrrelevantForWm
+Method-returnType:void
+Method-parameters:[String killReason]
+FieldAccess:killReason
+FieldAccess:killReason
+Class:TimeoutRunnable
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isDone
+MethodInvocation:cancel
+Method-name:setQueryId
+Method-returnType:void
+Method-parameters:[String queryId]
+FieldAccess:queryId
+Method-name:getQueryId
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:queryId
+Method-name:createAndSetReturnFuture
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:returnFuture
+MethodInvocation:create
+MethodInvocation:getWmContext
+MethodInvocation:setReturnEventFuture
+MethodInvocation:getWmContext
+Method-name:resolveReturnFuture
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:set
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

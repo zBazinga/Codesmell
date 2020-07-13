@@ -1,0 +1,62 @@
+Class:RelatedElements
+Field:relatedElements
+Field:relatedNode
+Field:relatedMaps
+Method-name:RelatedElements
+Method-returnType:null
+Method-parameters:[final NodeModel relatedNode]
+FieldAccess:relatedNode
+Method-name:relateAttribute
+Method-returnType:void
+Method-parameters:[final NodeModel relatedNode, final Attribute attribute]
+MethodInvocation:getMap
+FieldAccess:relatedNode
+MethodInvocation:getMap
+MethodInvocation:put
+Method-name:relateNode
+Method-returnType:void
+Method-parameters:[final NodeModel accessedNode]
+MethodInvocation:getMap
+MethodInvocation:getMap
+MethodInvocation:put
+Method-name:relateMap
+Method-returnType:void
+Method-parameters:[final MapModel accessedMap]
+MethodInvocation:getMap
+MethodInvocation:add
+Method-name:add
+Method-returnType:void
+Method-parameters:[final MapModel accessedMap]
+MethodInvocation:add
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getRelatedNodes
+Method-returnType:Collection<NodeModel>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getElements
+Method-returnType:Collection<Object>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:entrySet
+Method-returnType:Set<Entry<Object,NodeModel>>
+Method-parameters:[]
+MethodInvocation:entrySet
+Method-name:toMap
+Method-returnType:Map<? extends NodeRO,Dependencies>
+Method-parameters:[DependencyLookupProxy dependencyLookupProxy]
+MethodInvocation:isEmpty
+MethodInvocation:emptyMap
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:computeIfAbsent
+MethodInvocation:getExtension
+MethodInvocation:setNodeContained
+MethodInvocation:addAttribute
+MethodInvocation:forEach
+MethodInvocation:put
+MethodInvocation:getScriptContext
+MethodInvocation:build

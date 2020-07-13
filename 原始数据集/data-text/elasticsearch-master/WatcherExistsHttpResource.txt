@@ -1,0 +1,53 @@
+Class:WatcherExistsHttpResource
+Field:logger
+MethodInvocation:getLogger
+Field:WATCHER_CHECK_PARAMETERS
+MethodInvocation:singletonMap
+Field:XPACK_DOES_NOT_EXIST
+MethodInvocation:newHashSet
+MethodInvocation:getStatus
+MethodInvocation:getStatus
+Field:clusterService
+Field:watches
+Method-name:WatcherExistsHttpResource
+Method-returnType:null
+Method-parameters:[final String resourceOwnerName, final ClusterService clusterService, final MultiHttpResource watches]
+FieldAccess:clusterService
+MethodInvocation:requireNonNull
+FieldAccess:watches
+MethodInvocation:requireNonNull
+Method-name:getWatches
+Method-returnType:MultiHttpResource
+Method-parameters:[]
+Method-name:doCheck
+Method-returnType:void
+Method-parameters:[final RestClient client, final ActionListener<Boolean> listener]
+MethodInvocation:isLocalNodeElectedMaster
+MethodInvocation:nodes
+MethodInvocation:state
+MethodInvocation:checkXPackForWatcher
+MethodInvocation:onResponse
+Method-name:checkXPackForWatcher
+Method-returnType:void
+Method-parameters:[final RestClient client, final ActionListener<Boolean> listener]
+MethodInvocation:canUseWatcher
+MethodInvocation:xContent
+MethodInvocation:checkForResource
+MethodInvocation:newHashSet
+MethodInvocation:getStatus
+MethodInvocation:getStatus
+Method-name:canUseWatcher
+Method-returnType:boolean
+Method-parameters:[final Response response, final XContent xContent]
+MethodInvocation:convertToMap
+MethodInvocation:getContent
+MethodInvocation:getEntity
+MethodInvocation:isEmpty
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+Method-name:doPublish
+Method-returnType:void
+Method-parameters:[final RestClient client, final ActionListener<Boolean> listener]
+MethodInvocation:checkAndPublish

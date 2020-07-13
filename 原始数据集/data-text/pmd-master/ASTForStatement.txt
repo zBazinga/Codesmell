@@ -1,0 +1,41 @@
+Class:ASTForStatement
+Method-name:ASTForStatement
+Method-returnType:null
+Method-parameters:[int id]
+Method-name:ASTForStatement
+Method-returnType:null
+Method-parameters:[JavaParser p, int id]
+Method-name:jjtAccept
+Method-returnType:Object
+Method-parameters:[JavaParserVisitor visitor, Object data]
+MethodInvocation:visit
+Method-name:getGuardExpressionNode
+Method-returnType:ASTExpression
+Method-parameters:[]
+MethodInvocation:getCondition
+Method-name:getCondition
+Method-returnType:ASTExpression
+Method-parameters:[]
+MethodInvocation:isForeach
+MethodInvocation:getFirstChildOfType
+Method-name:isForeach
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getChild
+Method-name:getBody
+Method-returnType:ASTStatement
+Method-parameters:[]
+MethodInvocation:getChild
+MethodInvocation:getNumChildren
+Method-name:isIterableModifiedInsideLoop
+Method-returnType:boolean
+Method-parameters:[Map.Entry<VariableNameDeclaration,List<NameOccurrence>> iterableInfo, ForLoopCanBeForeachRule forLoopCanBeForeachRule]
+MethodInvocation:getName
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getFirstParentOfType
+MethodInvocation:getLocation
+MethodInvocation:equals
+MethodInvocation:getImage
+MethodInvocation:getLocation
+MethodInvocation:startsWith

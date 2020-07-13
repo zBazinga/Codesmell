@@ -1,0 +1,64 @@
+Class:DecimalColumnVector
+Field:vector
+Field:scale
+Field:precision
+Method-name:DecimalColumnVector
+Method-returnType:null
+Method-parameters:[int precision, int scale]
+Method-name:DecimalColumnVector
+Method-returnType:null
+Method-parameters:[int size, int precision, int scale]
+FieldAccess:precision
+FieldAccess:scale
+Method-name:flatten
+Method-returnType:void
+Method-parameters:[boolean selectedInUse, int[] sel, int size]
+MethodInvocation:flattenPush
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:flattenRepeatingNulls
+MethodInvocation:flattenNoNulls
+Method-name:setElement
+Method-returnType:void
+Method-parameters:[int outputElementNum, int inputElementNum, ColumnVector inputColVector]
+MethodInvocation:set
+FieldAccess:vector
+MethodInvocation:isSet
+Method-name:stringifyValue
+Method-returnType:void
+Method-parameters:[StringBuilder buffer, int row]
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+Method-name:set
+Method-returnType:void
+Method-parameters:[int elementNum, HiveDecimalWritable writable]
+MethodInvocation:set
+MethodInvocation:isSet
+Method-name:set
+Method-returnType:void
+Method-parameters:[int elementNum, HiveDecimal hiveDec]
+MethodInvocation:set
+MethodInvocation:isSet
+Method-name:setNullDataValue
+Method-returnType:void
+Method-parameters:[int elementNum]
+MethodInvocation:setFromLongAndScale
+Method-name:ensureSize
+Method-returnType:void
+Method-parameters:[int size, boolean preserveData]
+MethodInvocation:arraycopy
+Method-name:shallowCopyTo
+Method-returnType:void
+Method-parameters:[ColumnVector otherCv]
+Method-name:copySelected
+Method-returnType:void
+Method-parameters:[boolean selectedInUse, int[] sel, int size, ColumnVector outputColVector]
+MethodInvocation:set
+MethodInvocation:setFromLong
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:fill
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set

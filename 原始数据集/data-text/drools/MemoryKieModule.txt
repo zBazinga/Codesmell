@@ -1,0 +1,165 @@
+Class:MemoryKieModule
+Field:logger
+MethodInvocation:getLogger
+Field:MEMORY_URL_PROTOCOL
+Field:mfs
+Field:creationTimestamp
+MethodInvocation:currentTimeMillis
+Method-name:MemoryKieModule
+Method-returnType:null
+Method-parameters:[]
+Method-name:MemoryKieModule
+Method-returnType:null
+Method-parameters:[ReleaseId releaseId]
+Method-name:MemoryKieModule
+Method-returnType:null
+Method-parameters:[ReleaseId releaseId, KieModuleModel kModuleModel, MemoryFileSystem mfs]
+FieldAccess:mfs
+Method-name:isAvailable
+Method-returnType:boolean
+Method-parameters:[String path]
+MethodInvocation:existsFile
+Method-name:getBytes
+Method-returnType:byte[]
+Method-parameters:[String path]
+MethodInvocation:getBytes
+Method-name:getFileNames
+Method-returnType:Collection<String>
+Method-parameters:[]
+MethodInvocation:getFileNames
+Method-name:getMemoryFileSystem
+Method-returnType:MemoryFileSystem
+Method-parameters:[]
+FieldAccess:mfs
+Method-name:mark
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:mark
+Method-name:getModifiedResourcesSinceLastMark
+Method-returnType:Collection<String>
+Method-parameters:[]
+MethodInvocation:getModifiedResourcesSinceLastMark
+Method-name:getFile
+Method-returnType:File
+Method-parameters:[]
+Method-name:getBytes
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:writeAsBytes
+Method-name:getCreationTimestamp
+Method-returnType:long
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getReleaseId
+Method-name:createResourceProvider
+Method-returnType:ResourceProvider
+Method-parameters:[]
+Class:MemoryKieModuleResourceProvider
+Field:mfs
+Method-name:MemoryKieModuleResourceProvider
+Method-returnType:null
+Method-parameters:[MemoryFileSystem mfs]
+FieldAccess:mfs
+Method-name:getResource
+Method-returnType:URL
+Method-parameters:[String name]
+MethodInvocation:existsFile
+MethodInvocation:constructName
+MethodInvocation:getFile
+MethodInvocation:existsFolder
+MethodInvocation:constructName
+MethodInvocation:getFolder
+MethodInvocation:debug
+Method-name:constructName
+Method-returnType:String
+Method-parameters:[String name]
+MethodInvocation:startsWith
+Method-name:getResourceAsStream
+Method-returnType:InputStream
+Method-parameters:[String name]
+MethodInvocation:existsFile
+MethodInvocation:getContents
+MethodInvocation:getFile
+MethodInvocation:existsFolder
+MethodInvocation:getFolder
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Class:MemoryFileURLStreamHandler
+Field:file
+Method-name:MemoryFileURLStreamHandler
+Method-returnType:null
+Method-parameters:[org.drools.compiler.compiler.io.File file]
+FieldAccess:file
+Method-name:openConnection
+Method-returnType:URLConnection
+Method-parameters:[URL url]
+MethodInvocation:equals
+MethodInvocation:getProtocol
+MethodInvocation:openConnection
+Class:MemoryFolderURLStreamHandler
+Field:folder
+Method-name:MemoryFolderURLStreamHandler
+Method-returnType:null
+Method-parameters:[Folder folder]
+FieldAccess:folder
+Method-name:openConnection
+Method-returnType:URLConnection
+Method-parameters:[URL url]
+MethodInvocation:equals
+MethodInvocation:getProtocol
+MethodInvocation:openConnection
+Class:MemoryFileURLConnection
+Field:file
+Method-name:MemoryFileURLConnection
+Method-returnType:null
+Method-parameters:[URL url, org.drools.compiler.compiler.io.File file]
+FieldAccess:file
+Method-name:getInputStream
+Method-returnType:InputStream
+Method-parameters:[]
+MethodInvocation:getContents
+Method-name:connect
+Method-returnType:void
+Method-parameters:[]
+Class:MemoryFolderURLConnection
+Field:folder
+Method-name:MemoryFolderURLConnection
+Method-returnType:null
+Method-parameters:[URL url, Folder folder]
+FieldAccess:folder
+Method-name:getInputStream
+Method-returnType:InputStream
+Method-parameters:[]
+Method-name:connect
+Method-returnType:void
+Method-parameters:[]
+Class:FolderMembersInputStream
+Field:dataIs
+Method-name:FolderMembersInputStream
+Method-returnType:null
+Method-parameters:[Folder folder]
+FieldAccess:dataIs
+MethodInvocation:folderMembersToInputStream
+Method-name:read
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:read
+Method-name:folderMembersToInputStream
+Method-returnType:InputStream
+Method-parameters:[Folder folder]
+MethodInvocation:getMembers
+MethodInvocation:append
+MethodInvocation:toRelativePortableString
+MethodInvocation:getPath
+MethodInvocation:getPath
+MethodInvocation:append
+MethodInvocation:getBytes
+MethodInvocation:toString

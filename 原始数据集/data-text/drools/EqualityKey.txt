@@ -1,0 +1,97 @@
+Class:EqualityKey
+Field:STATED
+Field:JUSTIFIED
+Field:hashCode
+Field:status
+Field:beliefSet
+Method-name:EqualityKey
+Method-returnType:null
+Method-parameters:[]
+Method-name:EqualityKey
+Method-returnType:null
+Method-parameters:[final InternalFactHandle handle]
+FieldAccess:hashCode
+MethodInvocation:getObjectHashCode
+Method-name:EqualityKey
+Method-returnType:null
+Method-parameters:[final InternalFactHandle handle, final int status]
+FieldAccess:hashCode
+MethodInvocation:getObjectHashCode
+FieldAccess:status
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readInt
+MethodInvocation:readInt
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+Method-name:getLogicalFactHandle
+Method-returnType:InternalFactHandle
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setLogicalFactHandle
+Method-returnType:void
+Method-parameters:[InternalFactHandle logicalFactHandle]
+MethodInvocation:removeFirst
+MethodInvocation:addFirst
+Method-name:getFactHandle
+Method-returnType:InternalFactHandle
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:addFactHandle
+Method-returnType:void
+Method-parameters:[final InternalFactHandle handle]
+MethodInvocation:add
+Method-name:removeFactHandle
+Method-returnType:void
+Method-parameters:[final InternalFactHandle handle]
+MethodInvocation:remove
+Method-name:getStatus
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:status
+Method-name:getBeliefSet
+Method-returnType:BeliefSet
+Method-parameters:[]
+Method-name:setBeliefSet
+Method-returnType:void
+Method-parameters:[BeliefSet beliefSet]
+FieldAccess:beliefSet
+Method-name:setStatus
+Method-returnType:void
+Method-parameters:[final int status]
+FieldAccess:status
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:status
+FieldAccess:status
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[final Object object]
+MethodInvocation:equals
+MethodInvocation:getObject
+MethodInvocation:getFirst
+Method-name:deleteFromTMS
+Method-returnType:void
+Method-parameters:[InternalFactHandle handle, ObjectTypeConf typeConf, PropagationContext propagationContext, NamedEntryPoint namedEntryPoint]
+MethodInvocation:isTMSEnabled
+MethodInvocation:getTruthMaintenanceSystem
+MethodInvocation:removeFactHandle
+MethodInvocation:setEqualityKey
+MethodInvocation:isEmpty
+MethodInvocation:getLogicalFactHandle
+MethodInvocation:remove
+MethodInvocation:getLogicalFactHandle
+MethodInvocation:getLogicalFactHandle
+MethodInvocation:getBeliefSet
+MethodInvocation:getEqualityKey
+MethodInvocation:unstage
+MethodInvocation:getBeliefSystem

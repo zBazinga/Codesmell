@@ -1,0 +1,155 @@
+Class:CheckpointConfig
+Field:serialVersionUID
+Field:LOG
+MethodInvocation:getLogger
+Field:DEFAULT_MODE
+Field:DEFAULT_TIMEOUT
+Field:DEFAULT_MIN_PAUSE_BETWEEN_CHECKPOINTS
+Field:DEFAULT_MAX_CONCURRENT_CHECKPOINTS
+Field:UNDEFINED_TOLERABLE_CHECKPOINT_NUMBER
+Field:checkpointingMode
+Field:checkpointInterval
+Field:checkpointTimeout
+Field:minPauseBetweenCheckpoints
+Field:maxConcurrentCheckpoints
+Field:forceCheckpointing
+Field:unalignedCheckpointsEnabled
+Field:externalizedCheckpointCleanup
+Field:failOnCheckpointingErrors
+Field:preferCheckpointForRecovery
+Field:tolerableCheckpointFailureNumber
+Method-name:isCheckpointingEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getCheckpointingMode
+Method-returnType:CheckpointingMode
+Method-parameters:[]
+Method-name:setCheckpointingMode
+Method-returnType:void
+Method-parameters:[CheckpointingMode checkpointingMode]
+FieldAccess:checkpointingMode
+MethodInvocation:requireNonNull
+Method-name:getCheckpointInterval
+Method-returnType:long
+Method-parameters:[]
+Method-name:setCheckpointInterval
+Method-returnType:void
+Method-parameters:[long checkpointInterval]
+MethodInvocation:format
+FieldAccess:checkpointInterval
+Method-name:getCheckpointTimeout
+Method-returnType:long
+Method-parameters:[]
+Method-name:setCheckpointTimeout
+Method-returnType:void
+Method-parameters:[long checkpointTimeout]
+MethodInvocation:format
+FieldAccess:checkpointTimeout
+Method-name:getMinPauseBetweenCheckpoints
+Method-returnType:long
+Method-parameters:[]
+Method-name:setMinPauseBetweenCheckpoints
+Method-returnType:void
+Method-parameters:[long minPauseBetweenCheckpoints]
+FieldAccess:minPauseBetweenCheckpoints
+Method-name:getMaxConcurrentCheckpoints
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxConcurrentCheckpoints
+Method-returnType:void
+Method-parameters:[int maxConcurrentCheckpoints]
+FieldAccess:maxConcurrentCheckpoints
+Method-name:isForceCheckpointing
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setForceCheckpointing
+Method-returnType:void
+Method-parameters:[boolean forceCheckpointing]
+FieldAccess:forceCheckpointing
+Method-name:isFailOnCheckpointingErrors
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setFailOnCheckpointingErrors
+Method-returnType:void
+Method-parameters:[boolean failOnCheckpointingErrors]
+MethodInvocation:warn
+FieldAccess:failOnCheckpointingErrors
+FieldAccess:tolerableCheckpointFailureNumber
+FieldAccess:tolerableCheckpointFailureNumber
+Method-name:getTolerableCheckpointFailureNumber
+Method-returnType:int
+Method-parameters:[]
+Method-name:setTolerableCheckpointFailureNumber
+Method-returnType:void
+Method-parameters:[int tolerableCheckpointFailureNumber]
+FieldAccess:tolerableCheckpointFailureNumber
+Method-name:enableExternalizedCheckpoints
+Method-returnType:void
+Method-parameters:[ExternalizedCheckpointCleanup cleanupMode]
+FieldAccess:externalizedCheckpointCleanup
+MethodInvocation:checkNotNull
+Method-name:isExternalizedCheckpointsEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isPreferCheckpointForRecovery
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setPreferCheckpointForRecovery
+Method-returnType:void
+Method-parameters:[boolean preferCheckpointForRecovery]
+FieldAccess:preferCheckpointForRecovery
+Method-name:enableUnalignedCheckpoints
+Method-returnType:void
+Method-parameters:[boolean enabled]
+Method-name:enableUnalignedCheckpoints
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:enableUnalignedCheckpoints
+Method-name:isUnalignedCheckpointsEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getExternalizedCheckpointCleanup
+Method-returnType:ExternalizedCheckpointCleanup
+Method-parameters:[]
+Method-name:getCheckpointingModeOther
+Method-returnType:CheckpointingMode
+Method-parameters:[StreamingJobGraphGenerator streamingJobGraphGenerator]
+MethodInvocation:getCheckpointingMode
+MethodInvocation:checkArgument
+MethodInvocation:isCheckpointingEnabled
+Field:ExternalizedCheckpointCleanup
+Field:deleteOnCancellation
+Method-name:ExternalizedCheckpointCleanup
+Method-returnType:null
+Method-parameters:[boolean deleteOnCancellation]
+FieldAccess:deleteOnCancellation
+Method-name:deleteOnCancellation
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:configure
+Method-returnType:void
+Method-parameters:[ReadableConfig configuration]
+MethodInvocation:ifPresent
+MethodInvocation:getOptional
+MethodInvocation:ifPresent
+MethodInvocation:getOptional
+MethodInvocation:setCheckpointInterval
+MethodInvocation:toMillis
+MethodInvocation:ifPresent
+MethodInvocation:getOptional
+MethodInvocation:setCheckpointTimeout
+MethodInvocation:toMillis
+MethodInvocation:ifPresent
+MethodInvocation:getOptional
+MethodInvocation:ifPresent
+MethodInvocation:getOptional
+MethodInvocation:setMinPauseBetweenCheckpoints
+MethodInvocation:toMillis
+MethodInvocation:ifPresent
+MethodInvocation:getOptional
+MethodInvocation:ifPresent
+MethodInvocation:getOptional
+MethodInvocation:ifPresent
+MethodInvocation:getOptional
+MethodInvocation:ifPresent
+MethodInvocation:getOptional

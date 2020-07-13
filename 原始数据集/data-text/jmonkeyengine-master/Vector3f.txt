@@ -1,0 +1,336 @@
+Class:Vector3f
+Field:serialVersionUID
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:ZERO
+Field:NAN
+Field:UNIT_X
+Field:UNIT_Y
+Field:UNIT_Z
+Field:UNIT_XYZ
+Field:POSITIVE_INFINITY
+Field:NEGATIVE_INFINITY
+Field:x
+Field:y
+Field:z
+Method-name:Vector3f
+Method-returnType:null
+Method-parameters:[]
+Method-name:Vector3f
+Method-returnType:null
+Method-parameters:[float x, float y, float z]
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+Method-name:Vector3f
+Method-returnType:null
+Method-parameters:[Vector3f copy]
+MethodInvocation:set
+Method-name:set
+Method-returnType:Vector3f
+Method-parameters:[float x, float y, float z]
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+Method-name:set
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vect]
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+Method-name:add
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vec]
+MethodInvocation:warning
+Method-name:add
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vec, Vector3f result]
+Method-name:addLocal
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vec]
+MethodInvocation:warning
+Method-name:add
+Method-returnType:Vector3f
+Method-parameters:[float addX, float addY, float addZ]
+Method-name:addLocal
+Method-returnType:Vector3f
+Method-parameters:[float addX, float addY, float addZ]
+Method-name:scaleAdd
+Method-returnType:Vector3f
+Method-parameters:[float scalar, Vector3f add]
+Method-name:scaleAdd
+Method-returnType:Vector3f
+Method-parameters:[float scalar, Vector3f mult, Vector3f add]
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+Method-name:dot
+Method-returnType:float
+Method-parameters:[Vector3f vec]
+MethodInvocation:warning
+Method-name:cross
+Method-returnType:Vector3f
+Method-parameters:[Vector3f v]
+MethodInvocation:cross
+Method-name:cross
+Method-returnType:Vector3f
+Method-parameters:[Vector3f v, Vector3f result]
+MethodInvocation:cross
+Method-name:cross
+Method-returnType:Vector3f
+Method-parameters:[float otherX, float otherY, float otherZ, Vector3f result]
+MethodInvocation:set
+Method-name:crossLocal
+Method-returnType:Vector3f
+Method-parameters:[Vector3f v]
+MethodInvocation:crossLocal
+Method-name:crossLocal
+Method-returnType:Vector3f
+Method-parameters:[float otherX, float otherY, float otherZ]
+Method-name:project
+Method-returnType:Vector3f
+Method-parameters:[Vector3f other]
+MethodInvocation:dot
+MethodInvocation:lengthSquared
+MethodInvocation:multLocal
+Method-name:projectLocal
+Method-returnType:Vector3f
+Method-parameters:[Vector3f other]
+MethodInvocation:dot
+MethodInvocation:lengthSquared
+MethodInvocation:multLocal
+MethodInvocation:set
+Method-name:isUnitVector
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:length
+Method-name:length
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:sqrt
+MethodInvocation:lengthSquared
+Method-name:lengthSquared
+Method-returnType:float
+Method-parameters:[]
+Method-name:distanceSquared
+Method-returnType:float
+Method-parameters:[Vector3f v]
+Method-name:distance
+Method-returnType:float
+Method-parameters:[Vector3f v]
+MethodInvocation:sqrt
+MethodInvocation:distanceSquared
+Method-name:mult
+Method-returnType:Vector3f
+Method-parameters:[float scalar]
+Method-name:mult
+Method-returnType:Vector3f
+Method-parameters:[float scalar, Vector3f product]
+Method-name:multLocal
+Method-returnType:Vector3f
+Method-parameters:[float scalar]
+Method-name:multLocal
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vec]
+MethodInvocation:warning
+Method-name:multLocal
+Method-returnType:Vector3f
+Method-parameters:[float x, float y, float z]
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+Method-name:mult
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vec]
+MethodInvocation:warning
+MethodInvocation:mult
+Method-name:mult
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vec, Vector3f store]
+MethodInvocation:warning
+MethodInvocation:set
+Method-name:divide
+Method-returnType:Vector3f
+Method-parameters:[float scalar]
+Method-name:divideLocal
+Method-returnType:Vector3f
+Method-parameters:[float scalar]
+Method-name:divide
+Method-returnType:Vector3f
+Method-parameters:[Vector3f scalar]
+Method-name:divideLocal
+Method-returnType:Vector3f
+Method-parameters:[Vector3f scalar]
+Method-name:negate
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:negateLocal
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:subtract
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vec]
+Method-name:subtractLocal
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vec]
+MethodInvocation:warning
+Method-name:subtract
+Method-returnType:Vector3f
+Method-parameters:[Vector3f vec, Vector3f result]
+Method-name:subtract
+Method-returnType:Vector3f
+Method-parameters:[float subtractX, float subtractY, float subtractZ]
+Method-name:subtractLocal
+Method-returnType:Vector3f
+Method-parameters:[float subtractX, float subtractY, float subtractZ]
+Method-name:normalize
+Method-returnType:Vector3f
+Method-parameters:[]
+MethodInvocation:sqrt
+MethodInvocation:clone
+Method-name:normalizeLocal
+Method-returnType:Vector3f
+Method-parameters:[]
+MethodInvocation:sqrt
+Method-name:maxLocal
+Method-returnType:Vector3f
+Method-parameters:[Vector3f other]
+Method-name:minLocal
+Method-returnType:Vector3f
+Method-parameters:[Vector3f other]
+Method-name:zero
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:angleBetween
+Method-returnType:float
+Method-parameters:[Vector3f otherVector]
+MethodInvocation:dot
+MethodInvocation:acos
+Method-name:interpolateLocal
+Method-returnType:Vector3f
+Method-parameters:[Vector3f finalVec, float changeAmnt]
+FieldAccess:x
+FieldAccess:x
+FieldAccess:y
+FieldAccess:y
+FieldAccess:z
+FieldAccess:z
+Method-name:interpolateLocal
+Method-returnType:Vector3f
+Method-parameters:[Vector3f beginVec, Vector3f finalVec, float changeAmnt]
+FieldAccess:x
+FieldAccess:y
+FieldAccess:z
+Method-name:isValidVector
+Method-returnType:boolean
+Method-parameters:[Vector3f vector]
+MethodInvocation:isNaN
+MethodInvocation:isNaN
+MethodInvocation:isNaN
+MethodInvocation:isInfinite
+MethodInvocation:isInfinite
+MethodInvocation:isInfinite
+Method-name:generateOrthonormalBasis
+Method-returnType:void
+Method-parameters:[Vector3f u, Vector3f v, Vector3f w]
+MethodInvocation:normalizeLocal
+MethodInvocation:generateComplementBasis
+Method-name:generateComplementBasis
+Method-returnType:void
+Method-parameters:[Vector3f u, Vector3f v, Vector3f w]
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:invSqrt
+MethodInvocation:invSqrt
+Method-name:clone
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:toArray
+Method-returnType:float[]
+Method-parameters:[float[] floats]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+Method-name:isSimilar
+Method-returnType:boolean
+Method-parameters:[Vector3f other, float epsilon]
+MethodInvocation:compare
+MethodInvocation:abs
+MethodInvocation:compare
+MethodInvocation:abs
+MethodInvocation:compare
+MethodInvocation:abs
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter e]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter e]
+MethodInvocation:getCapsule
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+Method-name:getX
+Method-returnType:float
+Method-parameters:[]
+Method-name:setX
+Method-returnType:Vector3f
+Method-parameters:[float x]
+FieldAccess:x
+Method-name:getY
+Method-returnType:float
+Method-parameters:[]
+Method-name:setY
+Method-returnType:Vector3f
+Method-parameters:[float y]
+FieldAccess:y
+Method-name:getZ
+Method-returnType:float
+Method-parameters:[]
+Method-name:setZ
+Method-returnType:Vector3f
+Method-parameters:[float z]
+FieldAccess:z
+Method-name:get
+Method-returnType:float
+Method-parameters:[int index]
+Method-name:set
+Method-returnType:void
+Method-parameters:[int index, float value]
+Method-name:intersects
+Method-returnType:boolean
+Method-parameters:[Vector3f v1, Vector3f v2, Vector3f store, boolean doPlanar, boolean quad, Ray ray]
+MethodInvocation:get
+MethodInvocation:subtract
+MethodInvocation:subtract
+MethodInvocation:subtract
+MethodInvocation:cross
+MethodInvocation:dot
+MethodInvocation:release
+MethodInvocation:dot
+MethodInvocation:cross
+MethodInvocation:dot
+MethodInvocation:crossLocal
+MethodInvocation:dot
+MethodInvocation:release
+MethodInvocation:addLocal
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:release

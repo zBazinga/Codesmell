@@ -1,0 +1,249 @@
+Class:JmsMessagingTemplate
+Field:jmsTemplate
+Field:jmsMessageConverter
+Field:converterSet
+Field:defaultDestinationName
+Method-name:JmsMessagingTemplate
+Method-returnType:null
+Method-parameters:[]
+Method-name:JmsMessagingTemplate
+Method-returnType:null
+Method-parameters:[ConnectionFactory connectionFactory]
+FieldAccess:jmsTemplate
+Method-name:JmsMessagingTemplate
+Method-returnType:null
+Method-parameters:[JmsTemplate jmsTemplate]
+MethodInvocation:notNull
+FieldAccess:jmsTemplate
+Method-name:setConnectionFactory
+Method-returnType:void
+Method-parameters:[ConnectionFactory connectionFactory]
+FieldAccess:jmsTemplate
+MethodInvocation:setConnectionFactory
+FieldAccess:jmsTemplate
+FieldAccess:jmsTemplate
+Method-name:getConnectionFactory
+Method-returnType:ConnectionFactory
+Method-parameters:[]
+FieldAccess:jmsTemplate
+MethodInvocation:getConnectionFactory
+FieldAccess:jmsTemplate
+Method-name:setJmsTemplate
+Method-returnType:void
+Method-parameters:[@Nullable JmsTemplate jmsTemplate]
+FieldAccess:jmsTemplate
+Method-name:getJmsTemplate
+Method-returnType:JmsTemplate
+Method-parameters:[]
+FieldAccess:jmsTemplate
+Method-name:setJmsMessageConverter
+Method-returnType:void
+Method-parameters:[MessageConverter jmsMessageConverter]
+MethodInvocation:notNull
+FieldAccess:jmsMessageConverter
+FieldAccess:converterSet
+Method-name:getJmsMessageConverter
+Method-returnType:MessageConverter
+Method-parameters:[]
+FieldAccess:jmsMessageConverter
+Method-name:setDefaultDestinationName
+Method-returnType:void
+Method-parameters:[@Nullable String defaultDestinationName]
+FieldAccess:defaultDestinationName
+Method-name:getDefaultDestinationName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:defaultDestinationName
+Method-name:afterPropertiesSet
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:notNull
+FieldAccess:jmsTemplate
+FieldAccess:converterSet
+MethodInvocation:getMessageConverter
+FieldAccess:jmsTemplate
+MethodInvocation:setPayloadConverter
+FieldAccess:jmsMessageConverter
+MethodInvocation:getMessageConverter
+FieldAccess:jmsTemplate
+Method-name:obtainJmsTemplate
+Method-returnType:JmsTemplate
+Method-parameters:[]
+MethodInvocation:state
+FieldAccess:jmsTemplate
+FieldAccess:jmsTemplate
+Method-name:send
+Method-returnType:void
+Method-parameters:[Message<?> message]
+MethodInvocation:getDefaultDestination
+MethodInvocation:send
+MethodInvocation:send
+MethodInvocation:getRequiredDefaultDestinationName
+Method-name:convertAndSend
+Method-returnType:void
+Method-parameters:[Object payload]
+MethodInvocation:convertAndSend
+Method-name:convertAndSend
+Method-returnType:void
+Method-parameters:[Object payload, @Nullable MessagePostProcessor postProcessor]
+MethodInvocation:getDefaultDestination
+MethodInvocation:convertAndSend
+MethodInvocation:convertAndSend
+MethodInvocation:getRequiredDefaultDestinationName
+Method-name:send
+Method-returnType:void
+Method-parameters:[String destinationName, Message<?> message]
+MethodInvocation:doSend
+Method-name:convertAndSend
+Method-returnType:void
+Method-parameters:[String destinationName, Object payload]
+MethodInvocation:convertAndSend
+Method-name:convertAndSend
+Method-returnType:void
+Method-parameters:[String destinationName, Object payload, @Nullable Map<String,Object> headers]
+MethodInvocation:convertAndSend
+Method-name:convertAndSend
+Method-returnType:void
+Method-parameters:[String destinationName, Object payload, @Nullable MessagePostProcessor postProcessor]
+MethodInvocation:convertAndSend
+Method-name:convertAndSend
+Method-returnType:void
+Method-parameters:[String destinationName, Object payload, @Nullable Map<String,Object> headers, @Nullable MessagePostProcessor postProcessor]
+MethodInvocation:doConvert
+MethodInvocation:send
+Method-name:receive
+Method-returnType:Message<?>
+Method-parameters:[]
+MethodInvocation:getDefaultDestination
+MethodInvocation:receive
+MethodInvocation:receive
+MethodInvocation:getRequiredDefaultDestinationName
+Method-name:receiveAndConvert
+Method-returnType:T
+Method-parameters:[Class<T> targetClass]
+MethodInvocation:getDefaultDestination
+MethodInvocation:receiveAndConvert
+MethodInvocation:receiveAndConvert
+MethodInvocation:getRequiredDefaultDestinationName
+Method-name:receive
+Method-returnType:Message<?>
+Method-parameters:[String destinationName]
+MethodInvocation:doReceive
+Method-name:receiveAndConvert
+Method-returnType:T
+Method-parameters:[String destinationName, Class<T> targetClass]
+MethodInvocation:doReceive
+MethodInvocation:doConvert
+Method-name:sendAndReceive
+Method-returnType:Message<?>
+Method-parameters:[Message<?> requestMessage]
+MethodInvocation:getDefaultDestination
+MethodInvocation:sendAndReceive
+MethodInvocation:sendAndReceive
+MethodInvocation:getRequiredDefaultDestinationName
+Method-name:sendAndReceive
+Method-returnType:Message<?>
+Method-parameters:[String destinationName, Message<?> requestMessage]
+MethodInvocation:doSendAndReceive
+Method-name:convertSendAndReceive
+Method-returnType:T
+Method-parameters:[String destinationName, Object request, Class<T> targetClass]
+MethodInvocation:convertSendAndReceive
+Method-name:convertSendAndReceive
+Method-returnType:T
+Method-parameters:[Object request, Class<T> targetClass]
+MethodInvocation:convertSendAndReceive
+Method-name:convertSendAndReceive
+Method-returnType:T
+Method-parameters:[String destinationName, Object request, @Nullable Map<String,Object> headers, Class<T> targetClass]
+MethodInvocation:convertSendAndReceive
+Method-name:convertSendAndReceive
+Method-returnType:T
+Method-parameters:[Object request, Class<T> targetClass, @Nullable MessagePostProcessor postProcessor]
+MethodInvocation:getDefaultDestination
+MethodInvocation:convertSendAndReceive
+MethodInvocation:convertSendAndReceive
+MethodInvocation:getRequiredDefaultDestinationName
+Method-name:convertSendAndReceive
+Method-returnType:T
+Method-parameters:[String destinationName, Object request, Class<T> targetClass, @Nullable MessagePostProcessor requestPostProcessor]
+MethodInvocation:convertSendAndReceive
+Method-name:convertSendAndReceive
+Method-returnType:T
+Method-parameters:[String destinationName, Object request, @Nullable Map<String,Object> headers, Class<T> targetClass, @Nullable MessagePostProcessor postProcessor]
+MethodInvocation:doConvert
+MethodInvocation:sendAndReceive
+MethodInvocation:fromMessage
+MethodInvocation:getMessageConverter
+Method-name:doSend
+Method-returnType:void
+Method-parameters:[Destination destination, Message<?> message]
+MethodInvocation:send
+MethodInvocation:obtainJmsTemplate
+MethodInvocation:createMessageCreator
+MethodInvocation:convertJmsException
+Method-name:doSend
+Method-returnType:void
+Method-parameters:[String destinationName, Message<?> message]
+MethodInvocation:send
+MethodInvocation:obtainJmsTemplate
+MethodInvocation:createMessageCreator
+MethodInvocation:convertJmsException
+Method-name:doReceive
+Method-returnType:Message<?>
+Method-parameters:[Destination destination]
+MethodInvocation:receive
+MethodInvocation:obtainJmsTemplate
+MethodInvocation:convertJmsMessage
+MethodInvocation:convertJmsException
+Method-name:doReceive
+Method-returnType:Message<?>
+Method-parameters:[String destinationName]
+MethodInvocation:receive
+MethodInvocation:obtainJmsTemplate
+MethodInvocation:convertJmsMessage
+MethodInvocation:convertJmsException
+Method-name:doSendAndReceive
+Method-returnType:Message<?>
+Method-parameters:[Destination destination, Message<?> requestMessage]
+MethodInvocation:sendAndReceive
+MethodInvocation:obtainJmsTemplate
+MethodInvocation:createMessageCreator
+MethodInvocation:convertJmsMessage
+MethodInvocation:convertJmsException
+Method-name:doSendAndReceive
+Method-returnType:Message<?>
+Method-parameters:[String destinationName, Message<?> requestMessage]
+MethodInvocation:sendAndReceive
+MethodInvocation:obtainJmsTemplate
+MethodInvocation:createMessageCreator
+MethodInvocation:convertJmsMessage
+MethodInvocation:convertJmsException
+Method-name:createMessageCreator
+Method-returnType:MessagingMessageCreator
+Method-parameters:[Message<?> message]
+MethodInvocation:getJmsMessageConverter
+Method-name:getRequiredDefaultDestinationName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getDefaultDestinationName
+Method-name:convertJmsMessage
+Method-returnType:Message<?>
+Method-parameters:[@Nullable javax.jms.Message message]
+MethodInvocation:fromMessage
+MethodInvocation:getJmsMessageConverter
+Class:MessagingMessageCreator
+Field:message
+Field:messageConverter
+Method-name:MessagingMessageCreator
+Method-returnType:null
+Method-parameters:[Message<?> message, MessageConverter messageConverter]
+FieldAccess:message
+FieldAccess:messageConverter
+Method-name:createMessage
+Method-returnType:javax.jms.Message
+Method-parameters:[Session session]
+MethodInvocation:toMessage
+FieldAccess:messageConverter
+FieldAccess:message
+FieldAccess:message

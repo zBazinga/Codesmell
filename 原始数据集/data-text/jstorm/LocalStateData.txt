@@ -1,0 +1,240 @@
+Class:LocalStateData
+Field:STRUCT_DESC
+Field:SERIALIZED_PARTS_FIELD_DESC
+Field:schemes
+MethodInvocation:put
+MethodInvocation:put
+Field:serialized_parts
+Field:_Fields
+MethodInvocation:SERIALIZED_PARTS
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:LocalStateData
+Method-returnType:null
+Method-parameters:[]
+Method-name:LocalStateData
+Method-returnType:null
+Method-parameters:[Map<String,ThriftSerializedObject> serialized_parts]
+FieldAccess:serialized_parts
+Method-name:LocalStateData
+Method-returnType:null
+Method-parameters:[LocalStateData other]
+MethodInvocation:is_set_serialized_parts
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:put
+FieldAccess:serialized_parts
+Method-name:deepCopy
+Method-returnType:LocalStateData
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:serialized_parts
+Method-name:get_serialized_parts_size
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:serialized_parts
+MethodInvocation:size
+FieldAccess:serialized_parts
+Method-name:get_serialized_parts
+Method-returnType:Map<String,ThriftSerializedObject>
+Method-parameters:[]
+FieldAccess:serialized_parts
+Method-name:set_serialized_parts
+Method-returnType:void
+Method-parameters:[Map<String,ThriftSerializedObject> serialized_parts]
+FieldAccess:serialized_parts
+Method-name:unset_serialized_parts
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:serialized_parts
+Method-name:is_set_serialized_parts
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:serialized_parts
+Method-name:set_serialized_parts_isSet
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:serialized_parts
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, Object value]
+MethodInvocation:unset_serialized_parts
+MethodInvocation:set_serialized_parts
+Method-name:getFieldValue
+Method-returnType:Object
+Method-parameters:[_Fields field]
+MethodInvocation:get_serialized_parts
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:is_set_serialized_parts
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[LocalStateData that]
+MethodInvocation:is_set_serialized_parts
+MethodInvocation:is_set_serialized_parts
+MethodInvocation:equals
+FieldAccess:serialized_parts
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:is_set_serialized_parts
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[LocalStateData other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:is_set_serialized_parts
+MethodInvocation:is_set_serialized_parts
+MethodInvocation:is_set_serialized_parts
+MethodInvocation:compareTo
+FieldAccess:serialized_parts
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+FieldAccess:serialized_parts
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:serialized_parts
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:is_set_serialized_parts
+MethodInvocation:toString
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:LocalStateDataStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:LocalStateDataStandardScheme
+Method-parameters:[]
+Class:LocalStateDataStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, LocalStateData struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readMapBegin
+MethodInvocation:readString
+MethodInvocation:read
+MethodInvocation:put
+MethodInvocation:readMapEnd
+MethodInvocation:set_serialized_parts_isSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, LocalStateData struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeMapBegin
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:writeString
+MethodInvocation:getKey
+MethodInvocation:write
+MethodInvocation:getValue
+MethodInvocation:writeMapEnd
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:LocalStateDataTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:LocalStateDataTupleScheme
+Method-parameters:[]
+Class:LocalStateDataTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, LocalStateData struct]
+MethodInvocation:writeI32
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:writeString
+MethodInvocation:getKey
+MethodInvocation:write
+MethodInvocation:getValue
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, LocalStateData struct]
+MethodInvocation:readI32
+MethodInvocation:readString
+MethodInvocation:read
+MethodInvocation:put
+MethodInvocation:set_serialized_parts_isSet

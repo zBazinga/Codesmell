@@ -1,0 +1,109 @@
+Class:UrlBasedViewResolver
+Field:REDIRECT_URL_PREFIX
+Field:viewClass
+Field:prefix
+Field:suffix
+Field:viewNames
+Field:redirectViewProvider
+Field:requestContextAttribute
+Field:applicationContext
+Method-name:setViewClass
+Method-returnType:void
+Method-parameters:[@Nullable Class<?> viewClass]
+MethodInvocation:isAssignableFrom
+MethodInvocation:requiredViewClass
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:requiredViewClass
+FieldAccess:viewClass
+Method-name:getViewClass
+Method-returnType:Class<?>
+Method-parameters:[]
+FieldAccess:viewClass
+Method-name:requiredViewClass
+Method-returnType:Class<?>
+Method-parameters:[]
+Method-name:setPrefix
+Method-returnType:void
+Method-parameters:[@Nullable String prefix]
+FieldAccess:prefix
+Method-name:getPrefix
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:prefix
+Method-name:setSuffix
+Method-returnType:void
+Method-parameters:[@Nullable String suffix]
+FieldAccess:suffix
+Method-name:getSuffix
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:suffix
+Method-name:setViewNames
+Method-returnType:void
+Method-parameters:[@Nullable String... viewNames]
+FieldAccess:viewNames
+Method-name:getViewNames
+Method-returnType:String[]
+Method-parameters:[]
+FieldAccess:viewNames
+Method-name:setRedirectViewProvider
+Method-returnType:void
+Method-parameters:[Function<String,RedirectView> redirectViewProvider]
+FieldAccess:redirectViewProvider
+Method-name:setRequestContextAttribute
+Method-returnType:void
+Method-parameters:[@Nullable String requestContextAttribute]
+FieldAccess:requestContextAttribute
+Method-name:getRequestContextAttribute
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:requestContextAttribute
+Method-name:setApplicationContext
+Method-returnType:void
+Method-parameters:[@Nullable ApplicationContext applicationContext]
+FieldAccess:applicationContext
+Method-name:getApplicationContext
+Method-returnType:ApplicationContext
+Method-parameters:[]
+FieldAccess:applicationContext
+Method-name:afterPropertiesSet
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getViewClass
+Method-name:resolveViewName
+Method-returnType:Mono<View>
+Method-parameters:[String viewName, Locale locale]
+MethodInvocation:canHandle
+MethodInvocation:empty
+MethodInvocation:startsWith
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:apply
+FieldAccess:redirectViewProvider
+MethodInvocation:createView
+MethodInvocation:applyLifecycleMethods
+MethodInvocation:checkResourceExists
+MethodInvocation:just
+MethodInvocation:empty
+MethodInvocation:error
+Method-name:canHandle
+Method-returnType:boolean
+Method-parameters:[String viewName, Locale locale]
+MethodInvocation:getViewNames
+MethodInvocation:simpleMatch
+Method-name:createView
+Method-returnType:AbstractUrlBasedView
+Method-parameters:[String viewName]
+MethodInvocation:getViewClass
+MethodInvocation:state
+MethodInvocation:instantiateClass
+MethodInvocation:setSupportedMediaTypes
+MethodInvocation:getSupportedMediaTypes
+MethodInvocation:setDefaultCharset
+MethodInvocation:getDefaultCharset
+MethodInvocation:setUrl
+MethodInvocation:getPrefix
+MethodInvocation:getSuffix
+MethodInvocation:getRequestContextAttribute
+MethodInvocation:setRequestContextAttribute

@@ -1,0 +1,42 @@
+Class:TransportPutSamlServiceProviderAction
+Field:logger
+MethodInvocation:getLogger
+Field:index
+Field:identityProvider
+Field:clock
+Method-name:TransportPutSamlServiceProviderAction
+Method-returnType:null
+Method-parameters:[TransportService transportService, ActionFilters actionFilters, SamlServiceProviderIndex index, SamlIdentityProvider identityProvider]
+MethodInvocation:systemUTC
+Method-name:TransportPutSamlServiceProviderAction
+Method-returnType:null
+Method-parameters:[TransportService transportService, ActionFilters actionFilters, SamlServiceProviderIndex index, SamlIdentityProvider identityProvider, Clock clock]
+FieldAccess:index
+FieldAccess:identityProvider
+FieldAccess:clock
+Method-name:doExecute
+Method-returnType:void
+Method-parameters:[Task task, final PutSamlServiceProviderRequest request, final ActionListener<PutSamlServiceProviderResponse> listener]
+Method-name:writeDocument
+Method-returnType:void
+Method-parameters:[SamlServiceProviderDocument document, DocWriteRequest.OpType opType, WriteRequest.RefreshPolicy refreshPolicy, ActionListener<PutSamlServiceProviderResponse> listener]
+MethodInvocation:instant
+MethodInvocation:validate
+MethodInvocation:onFailure
+MethodInvocation:debug
+MethodInvocation:writeDocument
+MethodInvocation:wrap
+MethodInvocation:onResponse
+MethodInvocation:getId
+MethodInvocation:getResult
+MethodInvocation:getSeqNo
+MethodInvocation:getPrimaryTerm
+Method-name:deriveDocumentId
+Method-returnType:String
+Method-parameters:[SamlServiceProviderDocument document]
+MethodInvocation:digest
+MethodInvocation:sha256
+MethodInvocation:getBytes
+MethodInvocation:encodeToString
+MethodInvocation:withoutPadding
+MethodInvocation:getUrlEncoder

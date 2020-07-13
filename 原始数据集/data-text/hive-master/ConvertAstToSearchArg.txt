@@ -1,0 +1,224 @@
+Class:ConvertAstToSearchArg
+Field:LOG
+MethodInvocation:getLogger
+Field:builder
+Field:conf
+Field:BoxType
+Field:type
+Method-name:BoxType
+Method-returnType:null
+Method-parameters:[PredicateLeaf.Type type]
+FieldAccess:type
+Method-name:ConvertAstToSearchArg
+Method-returnType:null
+Method-parameters:[Configuration conf, ExprNodeGenericFuncDesc expression]
+FieldAccess:conf
+MethodInvocation:newBuilder
+MethodInvocation:parse
+Method-name:buildSearchArgument
+Method-returnType:SearchArgument
+Method-parameters:[]
+MethodInvocation:build
+Method-name:getType
+Method-returnType:BoxType
+Method-parameters:[ExprNodeDesc expr]
+MethodInvocation:getTypeInfo
+MethodInvocation:getCategory
+MethodInvocation:getPrimitiveCategory
+Method-name:getColumnName
+Method-returnType:String
+Method-parameters:[ExprNodeGenericFuncDesc expr, int variable]
+MethodInvocation:getChildren
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getColumn
+Method-name:boxLiteral
+Method-returnType:Object
+Method-parameters:[ExprNodeConstantDesc constantDesc, BoxType boxType]
+MethodInvocation:getValue
+MethodInvocation:isLong
+MethodInvocation:longValue
+MethodInvocation:longValue
+MethodInvocation:getPaddedValue
+MethodInvocation:toString
+MethodInvocation:doubleValue
+MethodInvocation:doubleValue
+MethodInvocation:floatValue
+MethodInvocation:doubleValue
+MethodInvocation:toSqlTimestamp
+MethodInvocation:toSqlTimestamp
+MethodInvocation:valueOf
+MethodInvocation:toString
+MethodInvocation:daysToMillis
+MethodInvocation:toEpochDay
+MethodInvocation:valueOf
+MethodInvocation:toString
+MethodInvocation:toString
+Method-name:findLiteral
+Method-returnType:Object
+Method-parameters:[Configuration conf, ExprNodeGenericFuncDesc expr, final BoxType boxType]
+MethodInvocation:getChildren
+MethodInvocation:size
+MethodInvocation:getLiteral
+Method-name:getLiteral
+Method-returnType:Object
+Method-parameters:[Configuration conf, ExprNodeDesc child, BoxType boxType]
+MethodInvocation:boxLiteral
+MethodInvocation:getDynamicValue
+MethodInvocation:setConf
+Method-name:getLiteral
+Method-returnType:Object
+Method-parameters:[Configuration conf, ExprNodeGenericFuncDesc expr, BoxType boxType, int position]
+MethodInvocation:getChildren
+MethodInvocation:get
+MethodInvocation:getLiteral
+Method-name:getLiteralList
+Method-returnType:Object[]
+Method-parameters:[ExprNodeGenericFuncDesc expr, BoxType boxType, int start]
+MethodInvocation:getChildren
+MethodInvocation:size
+MethodInvocation:subList
+MethodInvocation:size
+MethodInvocation:boxLiteral
+Method-name:createLeaf
+Method-returnType:void
+Method-parameters:[PredicateLeaf.Operator operator, ExprNodeGenericFuncDesc expression, int variable]
+MethodInvocation:getColumnName
+MethodInvocation:literal
+MethodInvocation:getType
+MethodInvocation:get
+MethodInvocation:getChildren
+MethodInvocation:literal
+MethodInvocation:startNot
+MethodInvocation:isNull
+MethodInvocation:equals
+MethodInvocation:findLiteral
+MethodInvocation:nullSafeEquals
+MethodInvocation:findLiteral
+MethodInvocation:lessThan
+MethodInvocation:findLiteral
+MethodInvocation:lessThanEquals
+MethodInvocation:findLiteral
+MethodInvocation:in
+MethodInvocation:getLiteralList
+MethodInvocation:between
+MethodInvocation:getLiteral
+MethodInvocation:getLiteral
+MethodInvocation:warn
+MethodInvocation:getMessage
+MethodInvocation:literal
+MethodInvocation:end
+Method-name:createLeaf
+Method-returnType:void
+Method-parameters:[PredicateLeaf.Operator operator, ExprNodeGenericFuncDesc expression]
+MethodInvocation:createLeaf
+MethodInvocation:findVariable
+Method-name:addChildren
+Method-returnType:void
+Method-parameters:[ExprNodeGenericFuncDesc node]
+MethodInvocation:getChildren
+MethodInvocation:parse
+Method-name:parse
+Method-returnType:void
+Method-parameters:[ExprNodeDesc expression]
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:getTypeString
+MethodInvocation:equals
+MethodInvocation:getColumn
+MethodInvocation:literal
+MethodInvocation:getClass
+MethodInvocation:getGenericUDF
+MethodInvocation:startOr
+MethodInvocation:addChildren
+MethodInvocation:end
+MethodInvocation:startAnd
+MethodInvocation:addChildren
+MethodInvocation:end
+MethodInvocation:startNot
+MethodInvocation:addChildren
+MethodInvocation:end
+MethodInvocation:createLeaf
+MethodInvocation:startNot
+MethodInvocation:createLeaf
+MethodInvocation:end
+MethodInvocation:createLeaf
+MethodInvocation:startNot
+MethodInvocation:createLeaf
+MethodInvocation:end
+MethodInvocation:startNot
+MethodInvocation:createLeaf
+MethodInvocation:end
+MethodInvocation:createLeaf
+MethodInvocation:createLeaf
+MethodInvocation:createLeaf
+MethodInvocation:createLeaf
+MethodInvocation:createLeaf
+MethodInvocation:startNot
+MethodInvocation:createLeaf
+MethodInvocation:end
+MethodInvocation:literal
+Field:SARG_PUSHDOWN
+Field:sargsCache
+Method-name:initializeAndGetSargsCache
+Method-returnType:Cache<String,SearchArgument>
+Method-parameters:[Configuration conf]
+MethodInvocation:build
+MethodInvocation:maximumWeight
+MethodInvocation:weigher
+MethodInvocation:newBuilder
+MethodInvocation:length
+MethodInvocation:getIntVar
+Method-name:getSargsCache
+Method-returnType:Cache<String,SearchArgument>
+Method-parameters:[Configuration conf]
+MethodInvocation:initializeAndGetSargsCache
+Method-name:isSargsCacheEnabled
+Method-returnType:boolean
+Method-parameters:[Configuration conf]
+MethodInvocation:getIntVar
+Method-name:getSearchArgumentFromString
+Method-returnType:SearchArgument
+Method-parameters:[Configuration conf, String sargString]
+MethodInvocation:isSargsCacheEnabled
+MethodInvocation:get
+MethodInvocation:getSargsCache
+MethodInvocation:create
+MethodInvocation:create
+Method-name:getSearchArgumentFromExpression
+Method-returnType:SearchArgument
+Method-parameters:[Configuration conf, String sargString]
+MethodInvocation:isSargsCacheEnabled
+MethodInvocation:get
+MethodInvocation:getSargsCache
+MethodInvocation:create
+MethodInvocation:deserializeExpression
+MethodInvocation:create
+MethodInvocation:deserializeExpression
+Method-name:create
+Method-returnType:SearchArgument
+Method-parameters:[Configuration conf, ExprNodeGenericFuncDesc expression]
+MethodInvocation:buildSearchArgument
+Field:kryo
+Method-name:create
+Method-returnType:SearchArgument
+Method-parameters:[String kryo]
+MethodInvocation:create
+MethodInvocation:decodeBase64
+Method-name:create
+Method-returnType:SearchArgument
+Method-parameters:[byte[] kryoBytes]
+MethodInvocation:readObject
+MethodInvocation:get
+Method-name:createFromConf
+Method-returnType:SearchArgument
+Method-parameters:[Configuration conf]
+MethodInvocation:get
+MethodInvocation:getSearchArgumentFromExpression
+MethodInvocation:get
+MethodInvocation:getSearchArgumentFromString
+Method-name:canCreateFromConf
+Method-returnType:boolean
+Method-parameters:[Configuration conf]
+MethodInvocation:get
+MethodInvocation:get

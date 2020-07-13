@@ -1,0 +1,85 @@
+Class:PresentationEditorController
+Field:presentationPanelController
+Field:slidePanelController
+Field:slideEditorController
+Field:navigationPanelController
+Field:presentations
+Field:presentationChangeListener
+Method-name:PresentationEditorController
+Method-returnType:null
+Method-parameters:[final PresentationState presentationState]
+MethodInvocation:addPresentationStateListener
+Method-name:onPresentationStateChange
+Method-returnType:void
+Method-parameters:[PresentationStateChangeEvent presentationStateChangeEvent]
+MethodInvocation:isPresentationRunning
+MethodInvocation:disableEditing
+MethodInvocation:disableEditing
+MethodInvocation:enableEditing
+MethodInvocation:enableEditing
+Field:slide
+Method-name:onCollectionChange
+Method-returnType:void
+Method-parameters:[CollectionChangedEvent<Slide> event]
+MethodInvocation:getCurrentElement
+MethodInvocation:setSlide
+Field:slides
+Method-name:onCollectionChange
+Method-returnType:void
+Method-parameters:[CollectionChangedEvent<Presentation> event]
+MethodInvocation:removeCollectionChangeListener
+MethodInvocation:getCurrentElement
+MethodInvocation:addCollectionChangeListener
+MethodInvocation:setSlide
+MethodInvocation:getCurrentElement
+MethodInvocation:setSlide
+MethodInvocation:changePresentation
+MethodInvocation:setCollection
+MethodInvocation:setPresentation
+Method-name:setPresentations
+Method-returnType:void
+Method-parameters:[NamedElementCollection<Presentation> newPresentations]
+MethodInvocation:removeCollectionChangeListener
+MethodInvocation:setCollection
+MethodInvocation:getCurrentElement
+MethodInvocation:setCollection
+MethodInvocation:setSlide
+MethodInvocation:getCurrentElement
+MethodInvocation:addCollectionChangeListener
+MethodInvocation:onCollectionChange
+MethodInvocation:of
+Method-name:createPanel
+Method-returnType:Component
+Method-parameters:[ModeController modeController]
+MethodInvocation:createVerticalBox
+MethodInvocation:createCollectionBox
+MethodInvocation:createTitledBorder
+MethodInvocation:add
+MethodInvocation:createCollectionBox
+MethodInvocation:createTitledBorder
+MethodInvocation:add
+MethodInvocation:createSlideContentBox
+MethodInvocation:add
+MethodInvocation:createNavigationBox
+MethodInvocation:add
+MethodInvocation:createActionPanel
+MethodInvocation:add
+Method-name:createActionPanel
+Method-returnType:JComponent
+Method-parameters:[ModeController modeController]
+MethodInvocation:getAction
+MethodInvocation:getAction
+MethodInvocation:setAlignmentX
+MethodInvocation:add
+MethodInvocation:setAlignmentX
+MethodInvocation:add
+MethodInvocation:getAction
+MethodInvocation:setActionCommand
+MethodInvocation:setAlignmentX
+MethodInvocation:add
+MethodInvocation:getPreferredSize
+MethodInvocation:setMaximumSize
+Method-name:registerActions
+Method-returnType:void
+Method-parameters:[ModeController modeController]
+MethodInvocation:registerActions

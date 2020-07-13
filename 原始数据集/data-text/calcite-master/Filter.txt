@@ -1,0 +1,89 @@
+Class:Filter
+Field:condition
+Method-name:Filter
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traits, RelNode child, RexNode condition]
+Method-name:Filter
+Method-returnType:null
+Method-parameters:[RelInput input]
+MethodInvocation:getCluster
+MethodInvocation:getTraitSet
+MethodInvocation:getInput
+MethodInvocation:getExpression
+Method-name:copy
+Method-returnType:RelNode
+Method-parameters:[RelTraitSet traitSet, List<RelNode> inputs]
+MethodInvocation:copy
+MethodInvocation:sole
+MethodInvocation:getCondition
+Method-name:copy
+Method-returnType:Filter
+Method-parameters:[RelTraitSet traitSet, RelNode input, RexNode condition]
+Method-name:getChildExps
+Method-returnType:List<RexNode>
+Method-parameters:[]
+MethodInvocation:of
+Method-name:accept
+Method-returnType:RelNode
+Method-parameters:[RexShuttle shuttle]
+MethodInvocation:apply
+FieldAccess:condition
+FieldAccess:condition
+MethodInvocation:copy
+MethodInvocation:getInput
+Method-name:getCondition
+Method-returnType:RexNode
+Method-parameters:[]
+Method-name:isValid
+Method-returnType:boolean
+Method-parameters:[Litmus litmus, Context context]
+MethodInvocation:isNullabilityCast
+MethodInvocation:getTypeFactory
+MethodInvocation:getCluster
+MethodInvocation:fail
+MethodInvocation:getRowType
+MethodInvocation:getInput
+MethodInvocation:accept
+MethodInvocation:getFailureCount
+MethodInvocation:fail
+MethodInvocation:succeed
+Method-name:computeSelfCost
+Method-returnType:RelOptCost
+Method-parameters:[RelOptPlanner planner, RelMetadataQuery mq]
+MethodInvocation:getRowCount
+MethodInvocation:getRowCount
+MethodInvocation:getInput
+MethodInvocation:makeCost
+MethodInvocation:getCostFactory
+Method-name:estimateRowCount
+Method-returnType:double
+Method-parameters:[RelMetadataQuery mq]
+MethodInvocation:estimateFilteredRows
+MethodInvocation:getInput
+Method-name:estimateFilteredRows
+Method-returnType:double
+Method-parameters:[RelNode child, RexProgram program]
+MethodInvocation:getMetadataQuery
+MethodInvocation:getCluster
+MethodInvocation:estimateFilteredRows
+Method-name:estimateFilteredRows
+Method-returnType:double
+Method-parameters:[RelNode child, RexNode condition]
+MethodInvocation:getMetadataQuery
+MethodInvocation:getCluster
+MethodInvocation:estimateFilteredRows
+Method-name:explainTerms
+Method-returnType:RelWriter
+Method-parameters:[RelWriter pw]
+MethodInvocation:item
+Method-name:getConjunctions
+Method-returnType:List<RexNode>
+Method-parameters:[FilterJoinRule filterJoinRule]
+MethodInvocation:conjunctions
+MethodInvocation:getCondition
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:collapseExpandedIsNotDistinctFromExpr

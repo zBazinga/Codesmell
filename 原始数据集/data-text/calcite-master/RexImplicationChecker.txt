@@ -1,0 +1,196 @@
+Class:RexImplicationChecker
+Field:LOGGER
+MethodInvocation:getLogger
+Field:builder
+Field:executor
+Field:rowType
+Method-name:RexImplicationChecker
+Method-returnType:null
+Method-parameters:[RexBuilder builder, RexExecutor executor, RelDataType rowType]
+FieldAccess:builder
+MethodInvocation:requireNonNull
+FieldAccess:executor
+MethodInvocation:requireNonNull
+FieldAccess:rowType
+MethodInvocation:requireNonNull
+Method-name:implies
+Method-returnType:boolean
+Method-parameters:[RexNode first, RexNode second]
+MethodInvocation:validate
+MethodInvocation:debug
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:toDnf
+MethodInvocation:toDnf
+MethodInvocation:isAlwaysFalse
+MethodInvocation:isAlwaysTrue
+MethodInvocation:disjunctions
+MethodInvocation:disjunctions
+MethodInvocation:impliesAny
+MethodInvocation:debug
+MethodInvocation:debug
+Method-name:impliesAny
+Method-returnType:boolean
+Method-parameters:[RexNode first, List<RexNode> seconds]
+MethodInvocation:impliesConjunction
+Method-name:impliesConjunction
+Method-returnType:boolean
+Method-parameters:[RexNode first, RexNode second]
+MethodInvocation:implies2
+MethodInvocation:getKind
+MethodInvocation:conjunctions
+MethodInvocation:implies2
+Method-name:implies2
+Method-returnType:boolean
+Method-parameters:[RexNode first, RexNode second]
+MethodInvocation:isAlwaysFalse
+MethodInvocation:equals
+MethodInvocation:getKind
+MethodInvocation:get
+MethodInvocation:getOperands
+Method-name:isNull
+Method-returnType:boolean
+Method-parameters:[RexNode node]
+MethodInvocation:equals
+MethodInvocation:isNull
+MethodInvocation:apply
+MethodInvocation:of
+MethodInvocation:apply
+MethodInvocation:of
+MethodInvocation:checkSupport
+MethodInvocation:warn
+MethodInvocation:builder
+MethodInvocation:entrySet
+MethodInvocation:builder
+MethodInvocation:size
+FieldAccess:usageList
+MethodInvocation:getValue
+FieldAccess:usageList
+MethodInvocation:getValue
+MethodInvocation:add
+MethodInvocation:of
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:add
+MethodInvocation:build
+MethodInvocation:cartesianProduct
+MethodInvocation:build
+MethodInvocation:of
+MethodInvocation:isSatisfiable
+Method-name:isSatisfiable
+Method-returnType:boolean
+Method-parameters:[RexNode second, DataContext dataValues]
+MethodInvocation:of
+MethodInvocation:getExecutable
+MethodInvocation:setDataContext
+MethodInvocation:execute
+MethodInvocation:warn
+MethodInvocation:getMessage
+Method-name:checkSupport
+Method-returnType:boolean
+Method-parameters:[InputUsageFinder firstUsageFinder, InputUsageFinder secondUsageFinder]
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getKey
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:getKind
+MethodInvocation:getKey
+MethodInvocation:get
+MethodInvocation:getKind
+MethodInvocation:getKey
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:getKind
+MethodInvocation:getKey
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:getKind
+MethodInvocation:getKey
+MethodInvocation:get
+MethodInvocation:isEquivalentOp
+MethodInvocation:isEquivalentOp
+MethodInvocation:isEquivalentOp
+MethodInvocation:isEquivalentOp
+MethodInvocation:isSupportedUnaryOperators
+MethodInvocation:isEquivalentOp
+MethodInvocation:isOppositeOp
+MethodInvocation:isSupportedUnaryOperators
+MethodInvocation:isEquivalentOp
+MethodInvocation:isEquivalentOp
+Method-name:isSupportedUnaryOperators
+Method-returnType:boolean
+Method-parameters:[SqlKind kind]
+Method-name:isEquivalentOp
+Method-returnType:boolean
+Method-parameters:[SqlKind fKind, SqlKind sKind]
+Method-name:isOppositeOp
+Method-returnType:boolean
+Method-parameters:[SqlKind fKind, SqlKind sKind]
+Method-name:validate
+Method-returnType:boolean
+Method-parameters:[RexNode first, RexNode second]
+Class:InputUsageFinder
+Field:usageMap
+Method-name:InputUsageFinder
+Method-returnType:null
+Method-parameters:[]
+Method-name:visitInputRef
+Method-returnType:Void
+Method-parameters:[RexInputRef inputRef]
+MethodInvocation:getUsageMap
+Method-name:visitCall
+Method-returnType:Void
+Method-parameters:[RexCall call]
+MethodInvocation:getKind
+MethodInvocation:getOperator
+MethodInvocation:updateBinaryOpUsage
+MethodInvocation:updateUnaryOpUsage
+Method-name:updateUnaryOpUsage
+Method-returnType:void
+Method-parameters:[RexCall call]
+MethodInvocation:getOperands
+MethodInvocation:removeCast
+MethodInvocation:get
+MethodInvocation:isA
+MethodInvocation:updateUsage
+MethodInvocation:getOperator
+Method-name:updateBinaryOpUsage
+Method-returnType:void
+Method-parameters:[RexCall call]
+MethodInvocation:getOperands
+MethodInvocation:removeCast
+MethodInvocation:get
+MethodInvocation:removeCast
+MethodInvocation:get
+MethodInvocation:isA
+MethodInvocation:isA
+MethodInvocation:updateUsage
+MethodInvocation:getOperator
+MethodInvocation:isA
+MethodInvocation:isA
+MethodInvocation:updateUsage
+MethodInvocation:reverse
+MethodInvocation:getOperator
+Method-name:reverse
+Method-returnType:SqlOperator
+Method-parameters:[SqlOperator op]
+MethodInvocation:op
+MethodInvocation:reverse
+MethodInvocation:getKind
+Method-name:updateUsage
+Method-returnType:void
+Method-parameters:[SqlOperator op, RexInputRef inputRef, RexNode literal]
+MethodInvocation:getUsageMap
+MethodInvocation:of
+MethodInvocation:add
+Method-name:getUsageMap
+Method-returnType:InputRefUsage<SqlOperator,RexNode>
+Method-parameters:[RexInputRef rex]
+MethodInvocation:get
+MethodInvocation:put
+Class:InputRefUsage
+Field:usageList
+Field:usageCount

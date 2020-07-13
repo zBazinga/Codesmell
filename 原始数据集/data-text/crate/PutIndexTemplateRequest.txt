@@ -1,0 +1,294 @@
+Class:PutIndexTemplateRequest
+Field:name
+Field:cause
+Field:indexPatterns
+Field:order
+Field:create
+Field:settings
+Field:mappings
+Field:aliases
+Field:version
+Method-name:PutIndexTemplateRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:PutIndexTemplateRequest
+Method-returnType:null
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+MethodInvocation:addValidationError
+MethodInvocation:size
+MethodInvocation:addValidationError
+Method-name:name
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:name
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:name
+Method-name:patterns
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[List<String> indexPatterns]
+FieldAccess:indexPatterns
+Method-name:patterns
+Method-returnType:List<String>
+Method-parameters:[]
+FieldAccess:indexPatterns
+Method-name:order
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[int order]
+FieldAccess:order
+Method-name:order
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:order
+Method-name:version
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[Integer version]
+FieldAccess:version
+Method-name:version
+Method-returnType:Integer
+Method-parameters:[]
+FieldAccess:version
+Method-name:create
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[boolean create]
+FieldAccess:create
+Method-name:create
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:settings
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[Settings settings]
+FieldAccess:settings
+Method-name:settings
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[Settings.Builder settings]
+FieldAccess:settings
+MethodInvocation:build
+Method-name:settings
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[String source, XContentType xContentType]
+FieldAccess:settings
+MethodInvocation:build
+MethodInvocation:loadFromSource
+MethodInvocation:builder
+Method-name:settings
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[Map<String,Object> source]
+MethodInvocation:contentBuilder
+MethodInvocation:map
+MethodInvocation:settings
+MethodInvocation:toString
+Method-name:settings
+Method-returnType:Settings
+Method-parameters:[]
+FieldAccess:settings
+Method-name:mapping
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[String type, String source, XContentType xContentType]
+MethodInvocation:mapping
+Method-name:cause
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[String cause]
+FieldAccess:cause
+Method-name:cause
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:cause
+Method-name:mapping
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[String type, XContentBuilder source]
+MethodInvocation:mapping
+MethodInvocation:bytes
+MethodInvocation:contentType
+Method-name:mapping
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[String type, BytesReference source, XContentType xContentType]
+MethodInvocation:requireNonNull
+MethodInvocation:put
+MethodInvocation:convertToJson
+Method-name:mapping
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[String type, Map<String,Object> source]
+MethodInvocation:size
+MethodInvocation:containsKey
+MethodInvocation:map
+MethodInvocation:put
+MethodInvocation:newMapBuilder
+MethodInvocation:contentBuilder
+MethodInvocation:map
+MethodInvocation:mapping
+Method-name:mapping
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[String type, Object... source]
+MethodInvocation:mapping
+MethodInvocation:buildFromSimplifiedDef
+Method-name:mappings
+Method-returnType:Map<String,String>
+Method-parameters:[]
+FieldAccess:mappings
+Method-name:source
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[XContentBuilder templateBuilder]
+MethodInvocation:source
+MethodInvocation:bytes
+MethodInvocation:contentType
+Method-name:source
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[Map templateSource]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:equals
+MethodInvocation:getValue
+MethodInvocation:patterns
+MethodInvocation:singletonList
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getValue
+MethodInvocation:toList
+MethodInvocation:patterns
+MethodInvocation:equals
+MethodInvocation:order
+MethodInvocation:nodeIntegerValue
+MethodInvocation:getValue
+MethodInvocation:order
+MethodInvocation:equals
+MethodInvocation:getValue
+MethodInvocation:version
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:getValue
+MethodInvocation:settings
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:getValue
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:getKey
+MethodInvocation:mapping
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:aliases
+MethodInvocation:getValue
+Method-name:source
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[String templateSource, XContentType xContentType]
+MethodInvocation:source
+MethodInvocation:convertToMap
+MethodInvocation:xContent
+Method-name:source
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[byte[] source, XContentType xContentType]
+MethodInvocation:source
+Method-name:source
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[byte[] source, int offset, int length, XContentType xContentType]
+MethodInvocation:source
+Method-name:source
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[BytesReference source, XContentType xContentType]
+MethodInvocation:source
+MethodInvocation:v2
+MethodInvocation:convertToMap
+Method-name:aliases
+Method-returnType:Set<Alias>
+Method-parameters:[]
+FieldAccess:aliases
+Method-name:aliases
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[Map source]
+MethodInvocation:jsonBuilder
+MethodInvocation:map
+MethodInvocation:aliases
+MethodInvocation:bytes
+Method-name:aliases
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[XContentBuilder source]
+MethodInvocation:aliases
+MethodInvocation:bytes
+Method-name:aliases
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[String source]
+MethodInvocation:aliases
+Method-name:aliases
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[BytesReference source]
+MethodInvocation:createParser
+MethodInvocation:nextToken
+MethodInvocation:nextToken
+MethodInvocation:alias
+MethodInvocation:fromXContent
+Method-name:indices
+Method-returnType:String[]
+Method-parameters:[]
+MethodInvocation:toArray
+MethodInvocation:size
+Method-name:indicesOptions
+Method-returnType:IndicesOptions
+Method-parameters:[]
+MethodInvocation:strictExpand
+Method-name:readFrom
+Method-returnType:void
+Method-parameters:[StreamInput in]
+MethodInvocation:readString
+MethodInvocation:readString
+MethodInvocation:readList
+MethodInvocation:readInt
+MethodInvocation:readBoolean
+MethodInvocation:readSettingsFromStream
+MethodInvocation:readVInt
+MethodInvocation:readString
+MethodInvocation:readString
+MethodInvocation:put
+MethodInvocation:readVInt
+MethodInvocation:add
+MethodInvocation:read
+MethodInvocation:readOptionalVInt
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeString
+MethodInvocation:writeString
+MethodInvocation:writeStringCollection
+MethodInvocation:writeInt
+MethodInvocation:writeBoolean
+MethodInvocation:writeSettingsToStream
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:writeString
+MethodInvocation:getKey
+MethodInvocation:writeString
+MethodInvocation:getValue
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeTo
+MethodInvocation:writeOptionalVInt
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:field
+MethodInvocation:field
+MethodInvocation:field
+MethodInvocation:startObject
+MethodInvocation:toXContent
+MethodInvocation:endObject
+MethodInvocation:startObject
+MethodInvocation:entrySet
+MethodInvocation:field
+MethodInvocation:getKey
+MethodInvocation:createParser
+MethodInvocation:getValue
+MethodInvocation:copyCurrentStructure
+MethodInvocation:endObject
+MethodInvocation:startObject
+MethodInvocation:toXContent
+MethodInvocation:endObject

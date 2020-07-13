@@ -1,0 +1,120 @@
+Class:DatabaseReader
+Field:reader
+Field:om
+Field:locales
+Method-name:DatabaseReader
+Method-returnType:null
+Method-parameters:[final Builder builder]
+FieldAccess:reader
+FieldAccess:reader
+FieldAccess:om
+MethodInvocation:configure
+FieldAccess:om
+MethodInvocation:configure
+FieldAccess:om
+MethodInvocation:addValue
+MethodInvocation:setInjectableValues
+FieldAccess:om
+FieldAccess:locales
+Method-name:geocode
+Method-returnType:CityResponse
+Method-parameters:[RecordPath ipPath, Record record, GeoEnrichIPRecord geoEnrichIPRecord]
+MethodInvocation:evaluate
+MethodInvocation:findFirst
+MethodInvocation:getSelectedFields
+MethodInvocation:isPresent
+MethodInvocation:get
+MethodInvocation:getValue
+MethodInvocation:toString
+MethodInvocation:getByName
+MethodInvocation:city
+Class:Builder
+Field:database
+Field:stream
+Field:locales
+MethodInvocation:asList
+Field:mode
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[InputStream stream]
+FieldAccess:stream
+FieldAccess:database
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[File database]
+FieldAccess:database
+FieldAccess:stream
+Method-name:locales
+Method-returnType:Builder
+Method-parameters:[List<String> val]
+FieldAccess:locales
+Method-name:fileMode
+Method-returnType:Builder
+Method-parameters:[FileMode val]
+FieldAccess:stream
+MethodInvocation:equals
+FieldAccess:mode
+Method-name:build
+Method-returnType:DatabaseReader
+Method-parameters:[]
+Method-name:get
+Method-returnType:T
+Method-parameters:[InetAddress ipAddress, Class<T> cls, boolean hasTraits, String type]
+MethodInvocation:getDatabaseType
+MethodInvocation:getMetadata
+MethodInvocation:contains
+MethodInvocation:getMethodName
+MethodInvocation:getStackTrace
+MethodInvocation:currentThread
+MethodInvocation:get
+FieldAccess:reader
+MethodInvocation:getHostAddress
+MethodInvocation:treeToValue
+MethodInvocation:reader
+FieldAccess:om
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+FieldAccess:reader
+Method-name:country
+Method-returnType:CountryResponse
+Method-parameters:[InetAddress ipAddress]
+MethodInvocation:get
+Method-name:city
+Method-returnType:CityResponse
+Method-parameters:[InetAddress ipAddress]
+MethodInvocation:get
+Method-name:anonymousIp
+Method-returnType:AnonymousIpResponse
+Method-parameters:[InetAddress ipAddress]
+MethodInvocation:get
+Method-name:connectionType
+Method-returnType:ConnectionTypeResponse
+Method-parameters:[InetAddress ipAddress]
+MethodInvocation:get
+Method-name:domain
+Method-returnType:DomainResponse
+Method-parameters:[InetAddress ipAddress]
+MethodInvocation:get
+Method-name:isp
+Method-returnType:IspResponse
+Method-parameters:[InetAddress ipAddress]
+MethodInvocation:get
+Method-name:getMetadata
+Method-returnType:Metadata
+Method-parameters:[]
+MethodInvocation:getMetadata
+FieldAccess:reader
+Class:JsonInjector
+Field:ip
+Method-name:JsonInjector
+Method-returnType:null
+Method-parameters:[final String ip]
+FieldAccess:ip
+Method-name:findInjectableValue
+Method-returnType:Object
+Method-parameters:[final Object valueId, final DeserializationContext ctxt, final BeanProperty forProperty, final Object beanInstance]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals

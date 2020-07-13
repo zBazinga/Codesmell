@@ -1,0 +1,92 @@
+Class:IfInfo
+Field:condition
+Field:mergedBlocks
+Field:thenBlock
+Field:elseBlock
+Field:skipBlocks
+Field:forceInlineInsns
+Field:outBlock
+Field:ifBlock
+Method-name:IfInfo
+Method-returnType:null
+Method-parameters:[IfCondition condition, BlockNode thenBlock, BlockNode elseBlock]
+Method-name:IfInfo
+Method-returnType:null
+Method-parameters:[IfInfo info, BlockNode thenBlock, BlockNode elseBlock]
+MethodInvocation:getCondition
+MethodInvocation:getMergedBlocks
+MethodInvocation:getSkipBlocks
+MethodInvocation:getForceInlineInsns
+Method-name:IfInfo
+Method-returnType:null
+Method-parameters:[IfCondition condition, BlockNode thenBlock, BlockNode elseBlock, Set<BlockNode> mergedBlocks, Set<BlockNode> skipBlocks, List<InsnNode> forceInlineInsns]
+FieldAccess:condition
+FieldAccess:thenBlock
+FieldAccess:elseBlock
+FieldAccess:mergedBlocks
+FieldAccess:skipBlocks
+FieldAccess:forceInlineInsns
+Method-name:invert
+Method-returnType:IfInfo
+Method-parameters:[IfInfo info]
+MethodInvocation:invert
+MethodInvocation:getCondition
+MethodInvocation:getElseBlock
+MethodInvocation:getThenBlock
+MethodInvocation:getMergedBlocks
+MethodInvocation:getSkipBlocks
+MethodInvocation:getForceInlineInsns
+MethodInvocation:setIfBlock
+MethodInvocation:getIfBlock
+Method-name:merge
+Method-returnType:void
+Method-parameters:[IfInfo... arr]
+MethodInvocation:addAll
+MethodInvocation:getMergedBlocks
+MethodInvocation:addAll
+MethodInvocation:getSkipBlocks
+MethodInvocation:addInsnsForForcedInline
+MethodInvocation:getForceInlineInsns
+Method-name:getCondition
+Method-returnType:IfCondition
+Method-parameters:[]
+Method-name:getMergedBlocks
+Method-returnType:Set<BlockNode>
+Method-parameters:[]
+Method-name:getSkipBlocks
+Method-returnType:Set<BlockNode>
+Method-parameters:[]
+Method-name:getThenBlock
+Method-returnType:BlockNode
+Method-parameters:[]
+Method-name:getElseBlock
+Method-returnType:BlockNode
+Method-parameters:[]
+Method-name:getOutBlock
+Method-returnType:BlockNode
+Method-parameters:[]
+Method-name:setOutBlock
+Method-returnType:void
+Method-parameters:[BlockNode outBlock]
+FieldAccess:outBlock
+Method-name:getIfBlock
+Method-returnType:BlockNode
+Method-parameters:[]
+Method-name:setIfBlock
+Method-returnType:void
+Method-parameters:[BlockNode ifBlock]
+FieldAccess:ifBlock
+Method-name:getForceInlineInsns
+Method-returnType:List<InsnNode>
+Method-parameters:[]
+Method-name:resetForceInlineInsns
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:addInsnsForForcedInline
+Method-returnType:void
+Method-parameters:[List<InsnNode> insns]
+MethodInvocation:addAll
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

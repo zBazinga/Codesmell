@@ -1,0 +1,54 @@
+Class:ColStatsProcessor
+Field:LOG
+MethodInvocation:getLogger
+Field:ftOp
+Field:fWork
+Field:colStatDesc
+Field:conf
+Field:isStatsReliable
+Method-name:ColStatsProcessor
+Method-returnType:null
+Method-parameters:[ColumnStatsDesc colStats, HiveConf conf]
+FieldAccess:conf
+MethodInvocation:getFWork
+MethodInvocation:getBoolVar
+Method-name:initialize
+Method-returnType:void
+Method-parameters:[CompilationOpContext opContext]
+MethodInvocation:initializeForFetch
+MethodInvocation:error
+MethodInvocation:stringifyException
+Method-name:process
+Method-returnType:int
+Method-parameters:[Hive db, Table tbl]
+MethodInvocation:persistColumnStats
+Method-name:constructColumnStatsFromPackedRows
+Method-returnType:List<ColumnStatistics>
+Method-parameters:[Table tbl1]
+Method-name:buildColumnStatsDesc
+Method-returnType:ColumnStatisticsDesc
+Method-parameters:[Table table, String partName, boolean isTblLevel]
+Method-name:persistColumnStats
+Method-returnType:int
+Method-parameters:[Hive db, Table tbl]
+MethodInvocation:constructColumnStatsFromPackedRows
+MethodInvocation:isEmpty
+MethodInvocation:setNeedMerge
+MethodInvocation:isNeedMerge
+MethodInvocation:isTransactionalTable
+MethodInvocation:getTxnMgr
+MethodInvocation:get
+MethodInvocation:setValidWriteIdList
+MethodInvocation:toString
+MethodInvocation:getTableValidWriteIdList
+MethodInvocation:getFullTableName
+MethodInvocation:getDbName
+MethodInvocation:getTableName
+MethodInvocation:setWriteId
+MethodInvocation:getAllocatedTableWriteId
+MethodInvocation:getDbName
+MethodInvocation:getTableName
+MethodInvocation:setPartitionColumnStatistics
+Method-name:setDpPartSpecs
+Method-returnType:void
+Method-parameters:[Collection<Partition> dpPartSpecs]

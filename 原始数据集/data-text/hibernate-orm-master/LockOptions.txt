@@ -1,0 +1,113 @@
+Class:LockOptions
+Field:NONE
+Field:READ
+Field:UPGRADE
+Field:NO_WAIT
+Field:WAIT_FOREVER
+Field:SKIP_LOCKED
+Field:lockMode
+Field:timeout
+Field:aliasSpecificLockModes
+Field:followOnLocking
+Method-name:LockOptions
+Method-returnType:null
+Method-parameters:[]
+Method-name:LockOptions
+Method-returnType:null
+Method-parameters:[LockMode lockMode]
+FieldAccess:lockMode
+Method-name:getLockMode
+Method-returnType:LockMode
+Method-parameters:[]
+Method-name:setLockMode
+Method-returnType:LockOptions
+Method-parameters:[LockMode lockMode]
+FieldAccess:lockMode
+Method-name:setAliasSpecificLockMode
+Method-returnType:LockOptions
+Method-parameters:[String alias, LockMode lockMode]
+MethodInvocation:put
+Method-name:getAliasSpecificLockMode
+Method-returnType:LockMode
+Method-parameters:[String alias]
+MethodInvocation:get
+Method-name:getEffectiveLockMode
+Method-returnType:LockMode
+Method-parameters:[String alias]
+MethodInvocation:getAliasSpecificLockMode
+FieldAccess:lockMode
+Method-name:hasAliasSpecificLockModes
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getAliasLockCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getAliasLockIterator
+Method-returnType:Iterator<Map.Entry<String,LockMode>>
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:getAliasSpecificLocks
+Method-name:getAliasSpecificLocks
+Method-returnType:Iterable<Map.Entry<String,LockMode>>
+Method-parameters:[]
+MethodInvocation:emptyList
+MethodInvocation:entrySet
+Method-name:findGreatestLockMode
+Method-returnType:LockMode
+Method-parameters:[]
+MethodInvocation:getLockMode
+MethodInvocation:values
+MethodInvocation:greaterThan
+Method-name:getTimeOut
+Method-returnType:int
+Method-parameters:[]
+Method-name:setTimeOut
+Method-returnType:LockOptions
+Method-parameters:[int timeout]
+FieldAccess:timeout
+Field:scope
+Method-name:getScope
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setScope
+Method-returnType:LockOptions
+Method-parameters:[boolean scope]
+FieldAccess:scope
+Method-name:getFollowOnLocking
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setFollowOnLocking
+Method-returnType:LockOptions
+Method-parameters:[Boolean followOnLocking]
+FieldAccess:followOnLocking
+Method-name:makeCopy
+Method-returnType:LockOptions
+Method-parameters:[]
+MethodInvocation:copy
+Method-name:copy
+Method-returnType:LockOptions
+Method-parameters:[LockOptions source, LockOptions destination]
+MethodInvocation:setLockMode
+MethodInvocation:getLockMode
+MethodInvocation:setScope
+MethodInvocation:getScope
+MethodInvocation:setTimeOut
+MethodInvocation:getTimeOut
+MethodInvocation:setFollowOnLocking
+MethodInvocation:getFollowOnLocking
+Method-name:buildQueryParameters
+Method-returnType:QueryParameters
+Method-parameters:[Serializable id, Serializable[] ids, Object optionalObject, BatchingEntityLoader batchingEntityLoader]
+MethodInvocation:fill
+MethodInvocation:getIdentifierType
+MethodInvocation:persister
+MethodInvocation:setPositionalParameterTypes
+MethodInvocation:setPositionalParameterValues
+MethodInvocation:setOptionalObject
+MethodInvocation:setOptionalEntityName
+MethodInvocation:getEntityName
+MethodInvocation:persister
+MethodInvocation:setOptionalId
+MethodInvocation:setLockOptions

@@ -1,0 +1,470 @@
+Class:ValueBoundaryScanner
+Field:start
+Field:end
+Field:nullsLast
+Method-name:ValueBoundaryScanner
+Method-returnType:null
+Method-parameters:[BoundaryDef start, BoundaryDef end, boolean nullsLast]
+FieldAccess:start
+FieldAccess:end
+FieldAccess:nullsLast
+Method-name:computeValue
+Method-returnType:Object
+Method-parameters:[Object row]
+Method-name:isDistanceGreater
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2, int amt]
+Method-name:isEqual
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2]
+Method-name:computeStart
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+Method-name:computeEnd
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+Method-name:handleCache
+Method-returnType:void
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:getBoundaryCache
+MethodInvocation:isUnbounded
+MethodInvocation:isUnbounded
+MethodInvocation:clear
+MethodInvocation:isComplete
+MethodInvocation:isEmpty
+MethodInvocation:fillCacheUntilEndOrFull
+MethodInvocation:isPreceding
+MethodInvocation:isUnbounded
+MethodInvocation:isPreceding
+MethodInvocation:getMaxEntry
+MethodInvocation:getKey
+MethodInvocation:evictOne
+MethodInvocation:checkIfCacheCanEvict
+MethodInvocation:getMaxEntry
+MethodInvocation:getKey
+MethodInvocation:evictOne
+MethodInvocation:isFollowing
+MethodInvocation:computeStart
+MethodInvocation:checkIfCacheCanEvict
+MethodInvocation:isCurrentRow
+MethodInvocation:checkIfCacheCanEvict
+MethodInvocation:isFollowing
+MethodInvocation:checkIfCacheCanEvict
+MethodInvocation:fillCacheUntilEndOrFull
+Method-name:fillCacheUntilEndOrFull
+Method-returnType:void
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:getBoundaryCache
+MethodInvocation:size
+MethodInvocation:getMaxEntry
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:size
+MethodInvocation:isFull
+MethodInvocation:computeValue
+MethodInvocation:getAt
+MethodInvocation:isEqual
+MethodInvocation:put
+MethodInvocation:putIfNotFull
+MethodInvocation:setComplete
+Method-name:skipOrStepBack
+Method-returnType:Pair<Integer,Object>
+Method-parameters:[int r, PTFPartition p]
+MethodInvocation:getBoundaryCache
+MethodInvocation:floorEntry
+MethodInvocation:ceilingEntry
+MethodInvocation:getKey
+MethodInvocation:floorEntry
+MethodInvocation:getValue
+MethodInvocation:computeValue
+MethodInvocation:getAt
+MethodInvocation:computeValue
+MethodInvocation:getAt
+Method-name:skipOrStepForward
+Method-returnType:Pair<Integer,Object>
+Method-parameters:[int r, PTFPartition p]
+MethodInvocation:getBoundaryCache
+MethodInvocation:floorEntry
+MethodInvocation:ceilingEntry
+MethodInvocation:equals
+MethodInvocation:getKey
+MethodInvocation:ceilingEntry
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:size
+MethodInvocation:computeValue
+MethodInvocation:getAt
+Method-name:computeValueUseCache
+Method-returnType:Object
+Method-parameters:[int r, PTFPartition p]
+MethodInvocation:getBoundaryCache
+MethodInvocation:floorEntry
+MethodInvocation:ceilingEntry
+MethodInvocation:equals
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:computeValue
+MethodInvocation:getAt
+Method-name:getScanner
+Method-returnType:ValueBoundaryScanner
+Method-parameters:[WindowFrameDef winFrameDef, boolean nullsLast]
+MethodInvocation:getOrderDef
+MethodInvocation:size
+MethodInvocation:getExpressions
+MethodInvocation:getStart
+MethodInvocation:getEnd
+MethodInvocation:getScanner
+MethodInvocation:getStart
+MethodInvocation:getEnd
+Class:SingleValueBoundaryScanner
+Field:expressionDef
+Method-name:SingleValueBoundaryScanner
+Method-returnType:null
+Method-parameters:[BoundaryDef start, BoundaryDef end, OrderExpressionDef expressionDef, boolean nullsLast]
+FieldAccess:expressionDef
+Method-name:computeStart
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:getDirection
+MethodInvocation:computeStartPreceding
+MethodInvocation:computeStartCurrentRow
+MethodInvocation:computeStartFollowing
+Method-name:computeStartPreceding
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:getAmt
+MethodInvocation:computeValueUseCache
+MethodInvocation:getOrder
+MethodInvocation:skipOrStepBack
+MethodInvocation:getLeft
+MethodInvocation:getRight
+MethodInvocation:getOrder
+MethodInvocation:getOrder
+MethodInvocation:isDistanceGreater
+MethodInvocation:skipOrStepBack
+MethodInvocation:getLeft
+MethodInvocation:getRight
+MethodInvocation:isDistanceGreater
+MethodInvocation:skipOrStepBack
+MethodInvocation:getLeft
+MethodInvocation:getRight
+Method-name:computeStartCurrentRow
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:computeValueUseCache
+MethodInvocation:skipOrStepBack
+MethodInvocation:getLeft
+MethodInvocation:getRight
+MethodInvocation:isEqual
+MethodInvocation:skipOrStepBack
+MethodInvocation:getLeft
+MethodInvocation:getRight
+Method-name:computeStartFollowing
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:getAmt
+MethodInvocation:computeValueUseCache
+MethodInvocation:getOrder
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:skipOrStepForward
+MethodInvocation:getLeft
+MethodInvocation:getRight
+MethodInvocation:getOrder
+MethodInvocation:size
+MethodInvocation:isDistanceGreater
+MethodInvocation:skipOrStepForward
+MethodInvocation:getLeft
+MethodInvocation:getRight
+MethodInvocation:size
+MethodInvocation:isDistanceGreater
+MethodInvocation:skipOrStepForward
+MethodInvocation:getLeft
+MethodInvocation:getRight
+Method-name:computeEnd
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:getDirection
+MethodInvocation:computeEndPreceding
+MethodInvocation:computeEndCurrentRow
+MethodInvocation:computeEndFollowing
+Method-name:computeEndPreceding
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:getAmt
+MethodInvocation:computeValueUseCache
+MethodInvocation:getOrder
+MethodInvocation:size
+MethodInvocation:getOrder
+MethodInvocation:isDistanceGreater
+MethodInvocation:skipOrStepBack
+MethodInvocation:getLeft
+MethodInvocation:getRight
+MethodInvocation:isDistanceGreater
+MethodInvocation:skipOrStepBack
+MethodInvocation:getLeft
+MethodInvocation:getRight
+Method-name:computeEndCurrentRow
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:computeValueUseCache
+MethodInvocation:size
+MethodInvocation:skipOrStepForward
+MethodInvocation:getLeft
+MethodInvocation:getRight
+MethodInvocation:size
+MethodInvocation:isEqual
+MethodInvocation:skipOrStepForward
+MethodInvocation:getLeft
+MethodInvocation:getRight
+Method-name:computeEndFollowing
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:getAmt
+MethodInvocation:size
+MethodInvocation:computeValueUseCache
+MethodInvocation:getOrder
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:skipOrStepForward
+MethodInvocation:getLeft
+MethodInvocation:getRight
+MethodInvocation:getOrder
+MethodInvocation:size
+MethodInvocation:isDistanceGreater
+MethodInvocation:skipOrStepForward
+MethodInvocation:getLeft
+MethodInvocation:getRight
+MethodInvocation:size
+MethodInvocation:isDistanceGreater
+MethodInvocation:skipOrStepForward
+MethodInvocation:getLeft
+MethodInvocation:getRight
+Method-name:computeValue
+Method-returnType:Object
+Method-parameters:[Object row]
+MethodInvocation:evaluate
+MethodInvocation:getExprEvaluator
+MethodInvocation:copyToStandardObject
+MethodInvocation:getOI
+Method-name:isDistanceGreater
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2, int amt]
+Method-name:isEqual
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2]
+Method-name:getScanner
+Method-returnType:SingleValueBoundaryScanner
+Method-parameters:[BoundaryDef start, BoundaryDef end, OrderDef orderDef, boolean nullsLast]
+MethodInvocation:size
+MethodInvocation:getExpressions
+MethodInvocation:get
+MethodInvocation:getExpressions
+MethodInvocation:getOI
+MethodInvocation:getPrimitiveCategory
+MethodInvocation:format
+MethodInvocation:getPrimitiveCategory
+Class:LongValueBoundaryScanner
+Method-name:LongValueBoundaryScanner
+Method-returnType:null
+Method-parameters:[BoundaryDef start, BoundaryDef end, OrderExpressionDef expressionDef, boolean nullsLast]
+Method-name:isDistanceGreater
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2, int amt]
+MethodInvocation:getLong
+MethodInvocation:getOI
+MethodInvocation:getLong
+MethodInvocation:getOI
+Method-name:isEqual
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2]
+MethodInvocation:getLong
+MethodInvocation:getOI
+MethodInvocation:getLong
+MethodInvocation:getOI
+Class:DoubleValueBoundaryScanner
+Method-name:DoubleValueBoundaryScanner
+Method-returnType:null
+Method-parameters:[BoundaryDef start, BoundaryDef end, OrderExpressionDef expressionDef, boolean nullsLast]
+Method-name:isDistanceGreater
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2, int amt]
+MethodInvocation:getDouble
+MethodInvocation:getOI
+MethodInvocation:getDouble
+MethodInvocation:getOI
+Method-name:isEqual
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2]
+MethodInvocation:getDouble
+MethodInvocation:getOI
+MethodInvocation:getDouble
+MethodInvocation:getOI
+Class:HiveDecimalValueBoundaryScanner
+Method-name:HiveDecimalValueBoundaryScanner
+Method-returnType:null
+Method-parameters:[BoundaryDef start, BoundaryDef end, OrderExpressionDef expressionDef, boolean nullsLast]
+Method-name:isDistanceGreater
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2, int amt]
+MethodInvocation:getHiveDecimal
+MethodInvocation:getOI
+MethodInvocation:getHiveDecimal
+MethodInvocation:getOI
+MethodInvocation:intValue
+MethodInvocation:subtract
+Method-name:isEqual
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2]
+MethodInvocation:getHiveDecimal
+MethodInvocation:getOI
+MethodInvocation:getHiveDecimal
+MethodInvocation:getOI
+MethodInvocation:equals
+Class:DateValueBoundaryScanner
+Method-name:DateValueBoundaryScanner
+Method-returnType:null
+Method-parameters:[BoundaryDef start, BoundaryDef end, OrderExpressionDef expressionDef, boolean nullsLast]
+Method-name:isDistanceGreater
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2, int amt]
+MethodInvocation:getDate
+MethodInvocation:getOI
+MethodInvocation:getDate
+MethodInvocation:getOI
+MethodInvocation:toEpochMilli
+MethodInvocation:toEpochMilli
+Method-name:isEqual
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2]
+MethodInvocation:getDate
+MethodInvocation:getOI
+MethodInvocation:getDate
+MethodInvocation:getOI
+MethodInvocation:equals
+Class:TimestampValueBoundaryScanner
+Method-name:TimestampValueBoundaryScanner
+Method-returnType:null
+Method-parameters:[BoundaryDef start, BoundaryDef end, OrderExpressionDef expressionDef, boolean nullsLast]
+Method-name:isDistanceGreater
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2, int amt]
+MethodInvocation:toEpochMilli
+MethodInvocation:getTimestamp
+MethodInvocation:getOI
+MethodInvocation:toEpochMilli
+MethodInvocation:getTimestamp
+MethodInvocation:getOI
+Method-name:isEqual
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2]
+MethodInvocation:getTimestamp
+MethodInvocation:getOI
+MethodInvocation:getTimestamp
+MethodInvocation:getOI
+MethodInvocation:equals
+Class:TimestampLocalTZValueBoundaryScanner
+Method-name:TimestampLocalTZValueBoundaryScanner
+Method-returnType:null
+Method-parameters:[BoundaryDef start, BoundaryDef end, OrderExpressionDef expressionDef, boolean nullsLast]
+Method-name:isDistanceGreater
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2, int amt]
+MethodInvocation:getEpochSecond
+MethodInvocation:getTimestampLocalTZ
+MethodInvocation:getOI
+MethodInvocation:getEpochSecond
+MethodInvocation:getTimestampLocalTZ
+MethodInvocation:getOI
+Method-name:isEqual
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2]
+MethodInvocation:getTimestampLocalTZ
+MethodInvocation:getOI
+MethodInvocation:getTimestampLocalTZ
+MethodInvocation:getOI
+MethodInvocation:equals
+Class:StringValueBoundaryScanner
+Method-name:StringValueBoundaryScanner
+Method-returnType:null
+Method-parameters:[BoundaryDef start, BoundaryDef end, OrderExpressionDef expressionDef, boolean nullsLast]
+Method-name:isDistanceGreater
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2, int amt]
+MethodInvocation:getString
+MethodInvocation:getOI
+MethodInvocation:getString
+MethodInvocation:getOI
+MethodInvocation:compareTo
+Method-name:isEqual
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2]
+MethodInvocation:getString
+MethodInvocation:getOI
+MethodInvocation:getString
+MethodInvocation:getOI
+MethodInvocation:equals
+Class:MultiValueBoundaryScanner
+Field:orderDef
+Method-name:MultiValueBoundaryScanner
+Method-returnType:null
+Method-parameters:[BoundaryDef start, BoundaryDef end, OrderDef orderDef, boolean nullsLast]
+FieldAccess:orderDef
+Method-name:computeStart
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:getDirection
+MethodInvocation:computeStartPreceding
+MethodInvocation:computeStartCurrentRow
+Method-name:computeStartPreceding
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:getAmt
+Method-name:computeStartCurrentRow
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:computeValueUseCache
+MethodInvocation:isEqual
+MethodInvocation:skipOrStepBack
+MethodInvocation:getLeft
+MethodInvocation:getRight
+Method-name:computeEnd
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:getDirection
+MethodInvocation:computeEndCurrentRow
+MethodInvocation:computeEndFollowing
+Method-name:computeEndCurrentRow
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:computeValueUseCache
+MethodInvocation:size
+MethodInvocation:isEqual
+MethodInvocation:skipOrStepForward
+MethodInvocation:getLeft
+MethodInvocation:getRight
+Method-name:computeEndFollowing
+Method-returnType:int
+Method-parameters:[int rowIdx, PTFPartition p]
+MethodInvocation:getAmt
+MethodInvocation:size
+Method-name:computeValue
+Method-returnType:Object
+Method-parameters:[Object row]
+MethodInvocation:size
+MethodInvocation:getExpressions
+MethodInvocation:evaluate
+MethodInvocation:getExprEvaluator
+MethodInvocation:get
+MethodInvocation:getExpressions
+MethodInvocation:copyToStandardObject
+MethodInvocation:getOI
+MethodInvocation:get
+MethodInvocation:getExpressions
+Method-name:isEqual
+Method-returnType:boolean
+Method-parameters:[Object val1, Object val2]
+Method-name:isDistanceGreater
+Method-returnType:boolean
+Method-parameters:[Object v1, Object v2, int amt]

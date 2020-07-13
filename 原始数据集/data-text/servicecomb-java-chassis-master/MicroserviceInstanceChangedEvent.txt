@@ -1,0 +1,33 @@
+Class:MicroserviceInstanceChangedEvent
+Field:action
+Field:key
+Field:instance
+Method-name:getInstance
+Method-returnType:MicroserviceInstance
+Method-parameters:[]
+Method-name:setInstance
+Method-returnType:void
+Method-parameters:[MicroserviceInstance instance]
+FieldAccess:instance
+Method-name:getKey
+Method-returnType:MicroserviceKey
+Method-parameters:[]
+Method-name:setKey
+Method-returnType:void
+Method-parameters:[MicroserviceKey key]
+FieldAccess:key
+Method-name:getAction
+Method-returnType:WatchAction
+Method-parameters:[]
+Method-name:setAction
+Method-returnType:void
+Method-parameters:[WatchAction action]
+FieldAccess:action
+Method-name:onMicroserviceInstanceChanged
+Method-returnType:void
+Method-parameters:[AppManager appManager]
+MethodInvocation:get
+MethodInvocation:getApps
+MethodInvocation:getAppId
+MethodInvocation:getKey
+MethodInvocation:onMicroserviceInstanceChanged

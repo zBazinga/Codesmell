@@ -1,0 +1,72 @@
+Class:ClassNode
+Field:name
+Field:typeReference
+Field:fieldNodes
+Field:constructorNodes
+Field:methodNodes
+Method-name:ClassNode
+Method-returnType:null
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:accept
+Method-returnType:Object
+Method-parameters:[NodeVisitor visitor, Object data]
+MethodInvocation:visitFields
+MethodInvocation:visitConstructors
+MethodInvocation:visitMethods
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getType
+Method-returnType:Class<?>
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:getClass
+MethodInvocation:fromInternalForm
+Method-name:defineField
+Method-returnType:FieldNode
+Method-parameters:[String name, String desc]
+MethodInvocation:equals
+MethodInvocation:add
+Method-name:defineConstructor
+Method-returnType:ConstructorNode
+Method-parameters:[String name, String desc]
+MethodInvocation:equals
+MethodInvocation:add
+Method-name:defineMethod
+Method-returnType:MethodNode
+Method-parameters:[String name, String desc]
+MethodInvocation:equals
+MethodInvocation:add
+Method-name:getFieldNodes
+Method-returnType:List<FieldNode>
+Method-parameters:[]
+MethodInvocation:emptyList
+Method-name:getConstructorNodes
+Method-returnType:List<ConstructorNode>
+Method-parameters:[]
+MethodInvocation:emptyList
+Method-name:getMethodNodes
+Method-returnType:List<MethodNode>
+Method-parameters:[]
+MethodInvocation:emptyList
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[ClassNode that]
+MethodInvocation:compareTo
+FieldAccess:name
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+FieldAccess:name
+FieldAccess:name
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:ignore
+Method-returnType:void
+Method-parameters:[String description, UsageNodeVisitor usageNodeVisitor]
+MethodInvocation:println
+MethodInvocation:getName

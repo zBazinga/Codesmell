@@ -1,0 +1,15 @@
+Class:DexFileNode
+Field:clzs
+Field:dexVersion
+Method-name:visitDexFileVersion
+Method-returnType:void
+Method-parameters:[int version]
+FieldAccess:dexVersion
+Method-name:visit
+Method-returnType:DexClassVisitor
+Method-parameters:[int access_flags, String className, String superClass, String[] interfaceNames]
+MethodInvocation:add
+Method-name:accept
+Method-returnType:void
+Method-parameters:[DexFileVisitor dfv]
+MethodInvocation:accept

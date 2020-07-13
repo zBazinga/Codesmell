@@ -1,0 +1,168 @@
+Class:Schemas
+Field:logger
+MethodInvocation:getLogger
+Field:READ_ONLY_SCHEMAS
+MethodInvocation:of
+Field:SCHEMA_PATTERN
+MethodInvocation:compile
+Field:DOC_SCHEMA_NAME
+Field:clusterService
+Field:docSchemaInfoFactory
+Field:schemas
+Field:builtInSchemas
+Method-name:Schemas
+Method-returnType:null
+Method-parameters:[Map<String,SchemaInfo> builtInSchemas, ClusterService clusterService, DocSchemaInfoFactory docSchemaInfoFactory]
+FieldAccess:clusterService
+FieldAccess:docSchemaInfoFactory
+MethodInvocation:putAll
+FieldAccess:builtInSchemas
+Method-name:resolveTableInfo
+Method-returnType:TableInfo
+Method-parameters:[QualifiedName ident, Operation operation, SearchPath searchPath]
+MethodInvocation:schemaName
+MethodInvocation:relationName
+MethodInvocation:get
+MethodInvocation:getTableInfo
+MethodInvocation:get
+MethodInvocation:getTableInfo
+MethodInvocation:toString
+MethodInvocation:blockedRaiseException
+Method-name:resolveRelation
+Method-returnType:RelationName
+Method-parameters:[QualifiedName ident, SearchPath searchPath]
+MethodInvocation:schemaName
+MethodInvocation:relationName
+MethodInvocation:custom
+MethodInvocation:metaData
+MethodInvocation:state
+MethodInvocation:getTableOrViewRelation
+MethodInvocation:getTableOrViewRelation
+MethodInvocation:toString
+Method-name:getTableOrViewRelation
+Method-returnType:RelationName
+Method-parameters:[String pathSchema, String relation, ViewsMetaData views]
+MethodInvocation:get
+MethodInvocation:getTableInfo
+MethodInvocation:contains
+Method-name:schemaName
+Method-returnType:String
+Method-parameters:[QualifiedName ident]
+Method-name:relationName
+Method-returnType:String
+Method-parameters:[QualifiedName ident]
+Method-name:getTableInfo
+Method-returnType:T
+Method-parameters:[RelationName ident]
+MethodInvocation:getSchemaInfo
+MethodInvocation:getTableInfo
+MethodInvocation:name
+Method-name:getSchemaInfo
+Method-returnType:SchemaInfo
+Method-parameters:[RelationName ident]
+MethodInvocation:schema
+MethodInvocation:get
+Method-name:iterator
+Method-returnType:Iterator<SchemaInfo>
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:values
+Method-name:clusterChanged
+Method-returnType:void
+Method-parameters:[ClusterChangedEvent event]
+MethodInvocation:metaDataChanged
+MethodInvocation:getNewCurrentSchemas
+MethodInvocation:metaData
+MethodInvocation:state
+MethodInvocation:difference
+MethodInvocation:keySet
+MethodInvocation:keySet
+MethodInvocation:immutableCopy
+MethodInvocation:difference
+MethodInvocation:immutableCopy
+MethodInvocation:difference
+MethodInvocation:keySet
+MethodInvocation:close
+MethodInvocation:remove
+MethodInvocation:error
+MethodInvocation:getMessage
+MethodInvocation:put
+MethodInvocation:getCustomSchemaInfo
+MethodInvocation:update
+Method-name:getNewCurrentSchemas
+Method-returnType:Set<String>
+Method-parameters:[MetaData metaData]
+MethodInvocation:add
+MethodInvocation:getConcreteAllIndices
+MethodInvocation:addIfSchema
+MethodInvocation:keys
+MethodInvocation:templates
+MethodInvocation:addIfSchema
+MethodInvocation:custom
+MethodInvocation:forEach
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:functionsMetaData
+MethodInvocation:custom
+MethodInvocation:forEach
+MethodInvocation:map
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:spliterator
+MethodInvocation:names
+Method-name:addIfSchema
+Method-returnType:void
+Method-parameters:[Set<String> schemas, String indexOrTemplate]
+MethodInvocation:matcher
+MethodInvocation:matches
+MethodInvocation:add
+MethodInvocation:group
+Method-name:getCustomSchemaInfo
+Method-returnType:SchemaInfo
+Method-parameters:[String name]
+MethodInvocation:create
+Method-name:isDefaultOrCustomSchema
+Method-returnType:boolean
+Method-parameters:[@Nullable String schemaName]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+Method-name:tableExists
+Method-returnType:boolean
+Method-parameters:[RelationName relationName]
+MethodInvocation:get
+MethodInvocation:schema
+MethodInvocation:invalidateTableCache
+MethodInvocation:name
+MethodInvocation:getTableInfo
+MethodInvocation:name
+Method-name:doStart
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:addListener
+Method-name:doStop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:removeListener
+Method-name:doClose
+Method-returnType:void
+Method-parameters:[]
+Method-name:resolveView
+Method-returnType:Tuple<ViewMetaData,RelationName>
+Method-parameters:[QualifiedName ident, SearchPath searchPath]
+MethodInvocation:custom
+MethodInvocation:metaData
+MethodInvocation:state
+MethodInvocation:schemaName
+MethodInvocation:relationName
+MethodInvocation:get
+MethodInvocation:getView
+MethodInvocation:getView
+MethodInvocation:tuple
+Method-name:viewExists
+Method-returnType:boolean
+Method-parameters:[RelationName relationName]
+MethodInvocation:custom
+MethodInvocation:metaData
+MethodInvocation:state
+MethodInvocation:getView

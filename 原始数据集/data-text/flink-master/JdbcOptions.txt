@@ -1,0 +1,92 @@
+Class:JdbcOptions
+Field:serialVersionUID
+Field:tableName
+Field:dialect
+Method-name:JdbcOptions
+Method-returnType:null
+Method-parameters:[String dbURL, String tableName, String driverName, String username, String password, JdbcDialect dialect]
+FieldAccess:tableName
+FieldAccess:dialect
+Method-name:getTableName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getDialect
+Method-returnType:JdbcDialect
+Method-parameters:[]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:getJdbcDmlOptions
+Method-returnType:JdbcDmlOptions
+Method-parameters:[TableSchema schema, JdbcDynamicTableSourceSinkFactory jdbcDynamicTableSourceSinkFactory]
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:getPrimaryKey
+MethodInvocation:toArray
+MethodInvocation:getColumns
+MethodInvocation:build
+MethodInvocation:withKeyFields
+MethodInvocation:withFieldNames
+MethodInvocation:withDialect
+MethodInvocation:withTableName
+MethodInvocation:builder
+MethodInvocation:getTableName
+MethodInvocation:getDialect
+MethodInvocation:getFieldNames
+Class:Builder
+Field:dbURL
+Field:tableName
+Field:driverName
+Field:username
+Field:password
+Field:dialect
+Method-name:setTableName
+Method-returnType:Builder
+Method-parameters:[String tableName]
+FieldAccess:tableName
+Method-name:setUsername
+Method-returnType:Builder
+Method-parameters:[String username]
+FieldAccess:username
+Method-name:setPassword
+Method-returnType:Builder
+Method-parameters:[String password]
+FieldAccess:password
+Method-name:setDriverName
+Method-returnType:Builder
+Method-parameters:[String driverName]
+FieldAccess:driverName
+Method-name:setDBUrl
+Method-returnType:Builder
+Method-parameters:[String dbURL]
+FieldAccess:dbURL
+Method-name:setDialect
+Method-returnType:Builder
+Method-parameters:[JdbcDialect dialect]
+FieldAccess:dialect
+Method-name:build
+Method-returnType:JdbcOptions
+Method-parameters:[]
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+FieldAccess:dialect
+MethodInvocation:get
+FieldAccess:dialect
+MethodInvocation:orElseGet
+FieldAccess:driverName
+MethodInvocation:defaultDriverName
+FieldAccess:driverName
+MethodInvocation:orElseGet

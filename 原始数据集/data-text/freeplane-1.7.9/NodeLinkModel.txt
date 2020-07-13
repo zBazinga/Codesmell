@@ -1,0 +1,54 @@
+Class:NodeLinkModel
+Field:targetID
+Field:source
+Method-name:NodeLinkModel
+Method-returnType:null
+Method-parameters:[final NodeModel source, final String targetID]
+FieldAccess:targetID
+FieldAccess:source
+Method-name:getSource
+Method-returnType:NodeModel
+Method-parameters:[]
+Method-name:getTarget
+Method-returnType:NodeModel
+Method-parameters:[]
+MethodInvocation:getNodeForID
+MethodInvocation:getMap
+MethodInvocation:getSource
+MethodInvocation:getTargetID
+Method-name:getTargetID
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTargetID
+Method-returnType:void
+Method-parameters:[final String targetID]
+FieldAccess:targetID
+Method-name:isSelfLink
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:equals
+MethodInvocation:createID
+MethodInvocation:getSource
+MethodInvocation:getTargetID
+Method-name:clones
+Method-returnType:Collection<NodeLinkModel>
+Method-parameters:[]
+MethodInvocation:subtreeClones
+MethodInvocation:getSource
+MethodInvocation:size
+MethodInvocation:asList
+MethodInvocation:size
+MethodInvocation:cloneForSource
+MethodInvocation:add
+Method-name:cloneForSource
+Method-returnType:NodeLinkModel
+Method-parameters:[NodeModel sourceClone]
+Method-name:cloneForSource
+Method-returnType:NodeLinkModel
+Method-parameters:[NodeModel sourceClone, String targetId]
+Method-name:addLinkToMap
+Method-returnType:void
+Method-parameters:[final MapModel map, NodeLinks nodeLinks]
+MethodInvocation:getLinks
+MethodInvocation:addExtension
+MethodInvocation:add

@@ -1,0 +1,30 @@
+Class:ApexXSSFromEscapeFalseRule
+Field:ADD_ERROR
+Method-name:ApexXSSFromEscapeFalseRule
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:setProperty
+MethodInvocation:setProperty
+MethodInvocation:setProperty
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTUserClass node, Object data]
+MethodInvocation:isTestMethodOrClass
+MethodInvocation:isSystemLevelClass
+MethodInvocation:findDescendantsOfType
+MethodInvocation:isMethodName
+MethodInvocation:validateBooleanParameter
+Method-name:validateBooleanParameter
+Method-returnType:void
+Method-parameters:[ASTMethodCallExpression methodCall, Object data]
+MethodInvocation:getNumChildren
+MethodInvocation:getChild
+MethodInvocation:isBoolean
+MethodInvocation:parseBoolean
+MethodInvocation:getImage
+MethodInvocation:validateLiteralPresence
+Method-name:validateLiteralPresence
+Method-returnType:void
+Method-parameters:[ASTMethodCallExpression methodCall, Object data]
+MethodInvocation:findDescendantsOfType
+MethodInvocation:addViolation

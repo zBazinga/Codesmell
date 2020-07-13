@@ -1,0 +1,96 @@
+Class:EvaluatingNormalizer
+Field:logger
+MethodInvocation:getLogger
+Field:functions
+Field:granularity
+Field:referenceResolver
+Field:fieldResolver
+Field:visitor
+Method-name:functionOnlyNormalizer
+Method-returnType:EvaluatingNormalizer
+Method-parameters:[Functions functions]
+Method-name:EvaluatingNormalizer
+Method-returnType:null
+Method-parameters:[Functions functions, RowGranularity granularity, @Nullable ReferenceResolver<? extends Input<?>> referenceResolver, @Nullable FieldResolver fieldResolver]
+FieldAccess:functions
+FieldAccess:granularity
+FieldAccess:referenceResolver
+FieldAccess:fieldResolver
+FieldAccess:visitor
+Method-name:normalizeOther
+Method-returnType:WriterProjection
+Method-parameters:[TransactionContext txnCtx, WriterProjection writerProjection]
+MethodInvocation:normalize
+MethodInvocation:uri
+MethodInvocation:uri
+MethodInvocation:inputs
+MethodInvocation:uri
+MethodInvocation:compressionType
+MethodInvocation:overwrites
+MethodInvocation:outputNames
+MethodInvocation:outputFormat
+Class:BaseVisitor
+Method-name:visitField
+Method-returnType:Symbol
+Method-parameters:[Field field, TransactionContext context]
+MethodInvocation:resolveField
+Method-name:visitMatchPredicate
+Method-returnType:Symbol
+Method-parameters:[MatchPredicate matchPredicate, TransactionContext context]
+MethodInvocation:identBoostMap
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:process
+MethodInvocation:getKey
+MethodInvocation:add
+MethodInvocation:of
+MethodInvocation:fqn
+MethodInvocation:column
+MethodInvocation:add
+MethodInvocation:getValue
+MethodInvocation:asList
+MethodInvocation:createInfo
+MethodInvocation:typeView
+MethodInvocation:queryTerm
+MethodInvocation:of
+MethodInvocation:matchType
+MethodInvocation:options
+MethodInvocation:process
+Method-name:visitReference
+Method-returnType:Symbol
+Method-parameters:[Reference symbol, TransactionContext context]
+MethodInvocation:ordinal
+MethodInvocation:granularity
+MethodInvocation:ordinal
+MethodInvocation:getImplementation
+MethodInvocation:of
+MethodInvocation:valueType
+MethodInvocation:value
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:format
+Method-name:visitFunction
+Method-returnType:Symbol
+Method-parameters:[Function function, TransactionContext context]
+MethodInvocation:normalizeFunction
+Method-name:normalizeFunction
+Method-returnType:Symbol
+Method-parameters:[Function function, TransactionContext context]
+MethodInvocation:processAndMaybeCopy
+MethodInvocation:getQualified
+MethodInvocation:ident
+MethodInvocation:info
+MethodInvocation:normalizeSymbol
+Method-name:visitWindowFunction
+Method-returnType:Symbol
+Method-parameters:[WindowFunction function, TransactionContext context]
+MethodInvocation:normalizeFunction
+MethodInvocation:info
+MethodInvocation:arguments
+MethodInvocation:map
+MethodInvocation:windowDefinition
+MethodInvocation:process
+Method-name:normalize
+Method-returnType:Symbol
+Method-parameters:[@Nullable Symbol symbol, @Nullable TransactionContext txnCtx]
+MethodInvocation:process

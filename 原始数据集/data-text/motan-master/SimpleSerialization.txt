@@ -1,0 +1,354 @@
+Class:SimpleSerialization
+Class:SimpleType
+Field:NULL
+Field:STRING
+Field:STRING_MAP
+Field:BYTE_ARRAY
+Field:STRING_ARRAY
+Field:BOOL
+Field:BYTE
+Field:INT16
+Field:INT32
+Field:INT64
+Field:FLOAT32
+Field:FLOAT64
+Field:MAP
+Field:ARRAY
+Field:DEFAULT_MAP_SIZE
+Field:DEFAULT_ARRAY_SIZE
+Method-name:isStringCollection
+Method-returnType:boolean
+Method-parameters:[Collection<?> obj]
+MethodInvocation:isEmpty
+Method-name:isStringMap
+Method-returnType:boolean
+Method-parameters:[Map<?,?> obj]
+MethodInvocation:isEmpty
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:serialize
+Method-returnType:byte[]
+Method-parameters:[Object obj]
+MethodInvocation:serialize
+MethodInvocation:flip
+MethodInvocation:remaining
+MethodInvocation:get
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[Object obj, GrowableByteBuffer buffer]
+MethodInvocation:put
+MethodInvocation:getClass
+MethodInvocation:writeString
+MethodInvocation:writeByte
+MethodInvocation:writeBool
+MethodInvocation:writeInt16
+MethodInvocation:writeInt32
+MethodInvocation:writeInt64
+MethodInvocation:writeFloat32
+MethodInvocation:writeFloat64
+MethodInvocation:isStringMap
+MethodInvocation:writeStringMap
+MethodInvocation:writeMap
+MethodInvocation:isArray
+MethodInvocation:getComponentType
+MethodInvocation:writeStringArray
+MethodInvocation:getComponentType
+MethodInvocation:writeBytes
+MethodInvocation:writeArray
+MethodInvocation:isStringCollection
+MethodInvocation:writeStringArray
+MethodInvocation:writeArray
+Method-name:deserialize
+Method-returnType:T
+Method-parameters:[byte[] bytes, Class<T> clz]
+MethodInvocation:wrap
+MethodInvocation:deserialize
+Method-name:deserialize
+Method-returnType:T
+Method-parameters:[GrowableByteBuffer buffer, Class<T> clz]
+MethodInvocation:get
+MethodInvocation:readString
+MethodInvocation:isAssignableFrom
+MethodInvocation:readStringMap
+MethodInvocation:readBytes
+MethodInvocation:isArray
+MethodInvocation:getComponentType
+MethodInvocation:readStringArray
+MethodInvocation:isAssignableFrom
+MethodInvocation:readStringList
+MethodInvocation:isAssignableFrom
+MethodInvocation:readStringSet
+MethodInvocation:readBool
+MethodInvocation:readByte
+MethodInvocation:readInt16
+MethodInvocation:readInt32
+MethodInvocation:readInt64
+MethodInvocation:readFloat32
+MethodInvocation:readFloat64
+MethodInvocation:isAssignableFrom
+MethodInvocation:readMap
+MethodInvocation:isArray
+MethodInvocation:readArray
+MethodInvocation:isAssignableFrom
+MethodInvocation:readList
+MethodInvocation:isAssignableFrom
+MethodInvocation:readSet
+Method-name:serializeMulti
+Method-returnType:byte[]
+Method-parameters:[Object[] data]
+MethodInvocation:serialize
+MethodInvocation:flip
+MethodInvocation:remaining
+MethodInvocation:get
+Method-name:deserializeMulti
+Method-returnType:Object[]
+Method-parameters:[byte[] data, Class<?>[] classes]
+MethodInvocation:wrap
+MethodInvocation:deserialize
+Method-name:getSerializationNumber
+Method-returnType:int
+Method-parameters:[]
+Method-name:putString
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, String str]
+MethodInvocation:getBytes
+MethodInvocation:putInt
+MethodInvocation:put
+Method-name:writeString
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, String str]
+MethodInvocation:put
+MethodInvocation:putString
+Method-name:writeStringMap
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, Map<String,String> value]
+MethodInvocation:put
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:putString
+MethodInvocation:getKey
+MethodInvocation:putString
+MethodInvocation:getValue
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:putInt
+MethodInvocation:position
+Method-name:writeBytes
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, byte[] value]
+MethodInvocation:put
+MethodInvocation:putInt
+MethodInvocation:put
+Method-name:writeStringArray
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, String[] value]
+MethodInvocation:put
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:putString
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:putInt
+MethodInvocation:position
+Method-name:writeStringArray
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, Collection<String> value]
+MethodInvocation:put
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:putString
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:putInt
+MethodInvocation:position
+Method-name:writeBool
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, boolean value]
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+Method-name:writeByte
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, byte value]
+MethodInvocation:put
+MethodInvocation:put
+Method-name:writeInt16
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, short value]
+MethodInvocation:put
+MethodInvocation:putShort
+Method-name:writeInt32
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, int value]
+MethodInvocation:put
+MethodInvocation:putZigzag32
+Method-name:writeInt64
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, long value]
+MethodInvocation:put
+MethodInvocation:putZigzag64
+Method-name:writeFloat32
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, float value]
+MethodInvocation:put
+MethodInvocation:putFloat
+Method-name:writeFloat64
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, double value]
+MethodInvocation:put
+MethodInvocation:putDouble
+Method-name:writeArray
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, Object[] value]
+MethodInvocation:put
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:serialize
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:putInt
+MethodInvocation:position
+Method-name:writeArray
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, Collection<?> value]
+MethodInvocation:put
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:serialize
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:putInt
+MethodInvocation:position
+Method-name:writeMap
+Method-returnType:void
+Method-parameters:[GrowableByteBuffer buffer, Map<?,?> value]
+MethodInvocation:put
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:entrySet
+MethodInvocation:serialize
+MethodInvocation:getKey
+MethodInvocation:serialize
+MethodInvocation:getValue
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:putInt
+MethodInvocation:position
+Method-name:getAndCheckSize
+Method-returnType:int
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:getInt
+MethodInvocation:remaining
+Method-name:readString
+Method-returnType:String
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:readBytes
+Method-name:readStringMap
+Method-returnType:Map<String,String>
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:getAndCheckSize
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:put
+MethodInvocation:readString
+MethodInvocation:readString
+MethodInvocation:position
+MethodInvocation:position
+Method-name:readBytes
+Method-returnType:byte[]
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:getAndCheckSize
+MethodInvocation:get
+Method-name:readStringArray
+Method-returnType:String[]
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:readStringList
+MethodInvocation:size
+MethodInvocation:toArray
+Method-name:readStringList
+Method-returnType:List<String>
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:readStringCollection
+Method-name:readStringSet
+Method-returnType:Set<String>
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:readStringCollection
+Method-name:readStringCollection
+Method-returnType:T
+Method-parameters:[GrowableByteBuffer buffer, T collection]
+MethodInvocation:getAndCheckSize
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:add
+MethodInvocation:readString
+MethodInvocation:position
+MethodInvocation:position
+Method-name:readBool
+Method-returnType:Boolean
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:get
+Method-name:readByte
+Method-returnType:Byte
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:get
+Method-name:readInt16
+Method-returnType:Short
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:getShort
+Method-name:readInt32
+Method-returnType:Integer
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:getZigZag32
+Method-name:readInt64
+Method-returnType:Long
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:getZigZag64
+Method-name:readFloat32
+Method-returnType:Float
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:getFloat
+Method-name:readFloat64
+Method-returnType:Double
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:getDouble
+Method-name:readMap
+Method-returnType:Map
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:getAndCheckSize
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:put
+MethodInvocation:deserialize
+MethodInvocation:deserialize
+MethodInvocation:position
+MethodInvocation:position
+Method-name:readArray
+Method-returnType:Object[]
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:readList
+MethodInvocation:size
+MethodInvocation:toArray
+Method-name:readList
+Method-returnType:List<Object>
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:readCollection
+Method-name:readSet
+Method-returnType:Set<Object>
+Method-parameters:[GrowableByteBuffer buffer]
+MethodInvocation:readCollection
+Method-name:readCollection
+Method-returnType:T
+Method-parameters:[GrowableByteBuffer buffer, T collection]
+MethodInvocation:getAndCheckSize
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:add
+MethodInvocation:deserialize
+MethodInvocation:position
+MethodInvocation:position

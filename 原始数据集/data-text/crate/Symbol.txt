@@ -1,0 +1,42 @@
+Class:Symbol
+Method-name:isLiteral
+Method-returnType:boolean
+Method-parameters:[Symbol symbol, DataType expectedType]
+MethodInvocation:symbolType
+MethodInvocation:equals
+MethodInvocation:valueType
+Method-name:symbolType
+Method-returnType:SymbolType
+Method-parameters:[]
+Method-name:accept
+Method-returnType:R
+Method-parameters:[SymbolVisitor<C,R> visitor, C context]
+Method-name:valueType
+Method-returnType:DataType
+Method-parameters:[]
+Method-name:cast
+Method-returnType:Symbol
+Method-parameters:[DataType newDataType]
+MethodInvocation:cast
+Method-name:cast
+Method-returnType:Symbol
+Method-parameters:[DataType newDataType, boolean tryCast]
+MethodInvocation:generateCastFunction
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:representation
+Method-name:canBeCasted
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:id
+MethodInvocation:valueType
+MethodInvocation:id
+Method-name:createEvalProjectionForDistributionJoinSymbol
+Method-returnType:List<Symbol>
+Method-parameters:[List<Symbol> outputs, ExecutionPlan executionPlan, HashJoin hashJoin]
+MethodInvocation:size
+MethodInvocation:addAll
+MethodInvocation:add
+MethodInvocation:create
+MethodInvocation:addProjection

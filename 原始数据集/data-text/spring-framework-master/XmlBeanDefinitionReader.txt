@@ -1,0 +1,200 @@
+Class:XmlBeanDefinitionReader
+Field:VALIDATION_NONE
+Field:VALIDATION_AUTO
+Field:VALIDATION_DTD
+Field:VALIDATION_XSD
+Field:constants
+Field:validationMode
+Field:namespaceAware
+Field:documentReaderClass
+Field:problemReporter
+Field:eventListener
+Field:sourceExtractor
+Field:namespaceHandlerResolver
+Field:documentLoader
+Field:entityResolver
+Field:errorHandler
+Field:validationModeDetector
+Field:resourcesCurrentlyBeingLoaded
+Method-name:initialValue
+Method-returnType:Set<EncodedResource>
+Method-parameters:[]
+Method-name:XmlBeanDefinitionReader
+Method-returnType:null
+Method-parameters:[BeanDefinitionRegistry registry]
+Method-name:setValidating
+Method-returnType:void
+Method-parameters:[boolean validating]
+FieldAccess:validationMode
+FieldAccess:namespaceAware
+Method-name:setValidationModeName
+Method-returnType:void
+Method-parameters:[String validationModeName]
+MethodInvocation:setValidationMode
+MethodInvocation:intValue
+MethodInvocation:asNumber
+Method-name:setValidationMode
+Method-returnType:void
+Method-parameters:[int validationMode]
+FieldAccess:validationMode
+Method-name:getValidationMode
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:validationMode
+Method-name:setNamespaceAware
+Method-returnType:void
+Method-parameters:[boolean namespaceAware]
+FieldAccess:namespaceAware
+Method-name:isNamespaceAware
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:namespaceAware
+Method-name:setProblemReporter
+Method-returnType:void
+Method-parameters:[@Nullable ProblemReporter problemReporter]
+FieldAccess:problemReporter
+Method-name:setEventListener
+Method-returnType:void
+Method-parameters:[@Nullable ReaderEventListener eventListener]
+FieldAccess:eventListener
+Method-name:setSourceExtractor
+Method-returnType:void
+Method-parameters:[@Nullable SourceExtractor sourceExtractor]
+FieldAccess:sourceExtractor
+Method-name:setNamespaceHandlerResolver
+Method-returnType:void
+Method-parameters:[@Nullable NamespaceHandlerResolver namespaceHandlerResolver]
+FieldAccess:namespaceHandlerResolver
+Method-name:setDocumentLoader
+Method-returnType:void
+Method-parameters:[@Nullable DocumentLoader documentLoader]
+FieldAccess:documentLoader
+Method-name:setEntityResolver
+Method-returnType:void
+Method-parameters:[@Nullable EntityResolver entityResolver]
+FieldAccess:entityResolver
+Method-name:getEntityResolver
+Method-returnType:EntityResolver
+Method-parameters:[]
+FieldAccess:entityResolver
+MethodInvocation:getResourceLoader
+FieldAccess:entityResolver
+FieldAccess:entityResolver
+MethodInvocation:getBeanClassLoader
+FieldAccess:entityResolver
+Method-name:setErrorHandler
+Method-returnType:void
+Method-parameters:[ErrorHandler errorHandler]
+FieldAccess:errorHandler
+Method-name:setDocumentReaderClass
+Method-returnType:void
+Method-parameters:[Class<? extends BeanDefinitionDocumentReader> documentReaderClass]
+FieldAccess:documentReaderClass
+Method-name:loadBeanDefinitions
+Method-returnType:int
+Method-parameters:[Resource resource]
+MethodInvocation:loadBeanDefinitions
+Method-name:loadBeanDefinitions
+Method-returnType:int
+Method-parameters:[EncodedResource encodedResource]
+MethodInvocation:notNull
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:get
+FieldAccess:resourcesCurrentlyBeingLoaded
+MethodInvocation:add
+MethodInvocation:getInputStream
+MethodInvocation:getResource
+MethodInvocation:getEncoding
+MethodInvocation:setEncoding
+MethodInvocation:getEncoding
+MethodInvocation:doLoadBeanDefinitions
+MethodInvocation:getResource
+MethodInvocation:getResource
+MethodInvocation:remove
+MethodInvocation:isEmpty
+MethodInvocation:remove
+FieldAccess:resourcesCurrentlyBeingLoaded
+Method-name:loadBeanDefinitions
+Method-returnType:int
+Method-parameters:[InputSource inputSource]
+MethodInvocation:loadBeanDefinitions
+Method-name:loadBeanDefinitions
+Method-returnType:int
+Method-parameters:[InputSource inputSource, @Nullable String resourceDescription]
+MethodInvocation:doLoadBeanDefinitions
+Method-name:doLoadBeanDefinitions
+Method-returnType:int
+Method-parameters:[InputSource inputSource, Resource resource]
+MethodInvocation:doLoadDocument
+MethodInvocation:registerBeanDefinitions
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getDescription
+MethodInvocation:getLineNumber
+MethodInvocation:getDescription
+MethodInvocation:getDescription
+MethodInvocation:getDescription
+MethodInvocation:getDescription
+Method-name:doLoadDocument
+Method-returnType:Document
+Method-parameters:[InputSource inputSource, Resource resource]
+MethodInvocation:loadDocument
+FieldAccess:documentLoader
+MethodInvocation:getEntityResolver
+FieldAccess:errorHandler
+MethodInvocation:getValidationModeForResource
+MethodInvocation:isNamespaceAware
+Method-name:getValidationModeForResource
+Method-returnType:int
+Method-parameters:[Resource resource]
+MethodInvocation:getValidationMode
+MethodInvocation:detectValidationMode
+Method-name:detectValidationMode
+Method-returnType:int
+Method-parameters:[Resource resource]
+MethodInvocation:isOpen
+MethodInvocation:getInputStream
+MethodInvocation:detectValidationMode
+FieldAccess:validationModeDetector
+Method-name:registerBeanDefinitions
+Method-returnType:int
+Method-parameters:[Document doc, Resource resource]
+MethodInvocation:createBeanDefinitionDocumentReader
+MethodInvocation:getBeanDefinitionCount
+MethodInvocation:getRegistry
+MethodInvocation:registerBeanDefinitions
+MethodInvocation:createReaderContext
+MethodInvocation:getBeanDefinitionCount
+MethodInvocation:getRegistry
+Method-name:createBeanDefinitionDocumentReader
+Method-returnType:BeanDefinitionDocumentReader
+Method-parameters:[]
+MethodInvocation:instantiateClass
+FieldAccess:documentReaderClass
+Method-name:createReaderContext
+Method-returnType:XmlReaderContext
+Method-parameters:[Resource resource]
+FieldAccess:problemReporter
+FieldAccess:eventListener
+FieldAccess:sourceExtractor
+MethodInvocation:getNamespaceHandlerResolver
+Method-name:getNamespaceHandlerResolver
+Method-returnType:NamespaceHandlerResolver
+Method-parameters:[]
+FieldAccess:namespaceHandlerResolver
+FieldAccess:namespaceHandlerResolver
+MethodInvocation:createDefaultNamespaceHandlerResolver
+FieldAccess:namespaceHandlerResolver
+Method-name:createDefaultNamespaceHandlerResolver
+Method-returnType:NamespaceHandlerResolver
+Method-parameters:[]
+MethodInvocation:getResourceLoader
+MethodInvocation:getClassLoader
+MethodInvocation:getResourceLoader
+MethodInvocation:getBeanClassLoader
+Method-name:loadBeanDefinitionsOther
+Method-returnType:void
+Method-parameters:[XmlWebApplicationContext xmlWebApplicationContext]
+MethodInvocation:getConfigLocations
+MethodInvocation:loadBeanDefinitions

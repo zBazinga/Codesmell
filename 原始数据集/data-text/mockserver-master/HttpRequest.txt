@@ -1,0 +1,414 @@
+Class:HttpRequest
+Field:method
+MethodInvocation:string
+Field:path
+MethodInvocation:string
+Field:queryStringParameters
+Field:body
+Field:headers
+Field:cookies
+Field:keepAlive
+Field:secure
+Field:socketAddress
+Method-name:request
+Method-returnType:HttpRequest
+Method-parameters:[]
+Method-name:request
+Method-returnType:HttpRequest
+Method-parameters:[String path]
+MethodInvocation:withPath
+Method-name:isKeepAlive
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:withKeepAlive
+Method-returnType:HttpRequest
+Method-parameters:[Boolean isKeepAlive]
+FieldAccess:keepAlive
+Method-name:isSecure
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:withSecure
+Method-returnType:HttpRequest
+Method-parameters:[Boolean isSsl]
+FieldAccess:secure
+Method-name:getSocketAddress
+Method-returnType:SocketAddress
+Method-parameters:[]
+Method-name:withSocketAddress
+Method-returnType:HttpRequest
+Method-parameters:[SocketAddress socketAddress]
+FieldAccess:socketAddress
+Method-name:withSocketAddress
+Method-returnType:HttpRequest
+Method-parameters:[String host, Integer port, SocketAddress.Scheme scheme]
+FieldAccess:socketAddress
+MethodInvocation:withScheme
+MethodInvocation:withPort
+MethodInvocation:withHost
+Method-name:withMethod
+Method-returnType:HttpRequest
+Method-parameters:[String method]
+MethodInvocation:withMethod
+MethodInvocation:string
+Method-name:withMethod
+Method-returnType:HttpRequest
+Method-parameters:[NottableString method]
+FieldAccess:method
+Method-name:getMethod
+Method-returnType:NottableString
+Method-parameters:[]
+Method-name:getMethod
+Method-returnType:String
+Method-parameters:[String defaultValue]
+MethodInvocation:isBlank
+MethodInvocation:getValue
+MethodInvocation:getValue
+Method-name:withPath
+Method-returnType:HttpRequest
+Method-parameters:[String path]
+MethodInvocation:withPath
+MethodInvocation:string
+Method-name:withPath
+Method-returnType:HttpRequest
+Method-parameters:[NottableString path]
+FieldAccess:path
+Method-name:getPath
+Method-returnType:NottableString
+Method-parameters:[]
+Method-name:matches
+Method-returnType:boolean
+Method-parameters:[final String method]
+MethodInvocation:equals
+MethodInvocation:getValue
+FieldAccess:method
+Method-name:matches
+Method-returnType:boolean
+Method-parameters:[final String method, final String... paths]
+MethodInvocation:equals
+MethodInvocation:getValue
+FieldAccess:method
+MethodInvocation:equals
+MethodInvocation:getValue
+FieldAccess:path
+Method-name:getQueryStringParameters
+Method-returnType:Parameters
+Method-parameters:[]
+FieldAccess:queryStringParameters
+Method-name:getOrCreateQueryStringParameters
+Method-returnType:Parameters
+Method-parameters:[]
+FieldAccess:queryStringParameters
+FieldAccess:queryStringParameters
+FieldAccess:queryStringParameters
+Method-name:withQueryStringParameters
+Method-returnType:HttpRequest
+Method-parameters:[Parameters parameters]
+MethodInvocation:isEmpty
+FieldAccess:queryStringParameters
+FieldAccess:queryStringParameters
+Method-name:withQueryStringParameters
+Method-returnType:HttpRequest
+Method-parameters:[List<Parameter> parameters]
+MethodInvocation:withEntries
+MethodInvocation:getOrCreateQueryStringParameters
+Method-name:withQueryStringParameters
+Method-returnType:HttpRequest
+Method-parameters:[Parameter... parameters]
+MethodInvocation:withEntries
+MethodInvocation:getOrCreateQueryStringParameters
+Method-name:withQueryStringParameters
+Method-returnType:HttpRequest
+Method-parameters:[Map<String,List<String>> parameters]
+MethodInvocation:withEntries
+MethodInvocation:getOrCreateQueryStringParameters
+Method-name:withQueryStringParameter
+Method-returnType:HttpRequest
+Method-parameters:[Parameter parameter]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateQueryStringParameters
+Method-name:withQueryStringParameter
+Method-returnType:HttpRequest
+Method-parameters:[String name, String... values]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateQueryStringParameters
+Method-name:withQueryStringParameter
+Method-returnType:HttpRequest
+Method-parameters:[NottableString name, NottableString... values]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateQueryStringParameters
+Method-name:getQueryStringParameterList
+Method-returnType:List<Parameter>
+Method-parameters:[]
+FieldAccess:queryStringParameters
+MethodInvocation:getEntries
+FieldAccess:queryStringParameters
+MethodInvocation:emptyList
+Method-name:hasQueryStringParameter
+Method-returnType:boolean
+Method-parameters:[String name, String value]
+FieldAccess:queryStringParameters
+MethodInvocation:containsEntry
+FieldAccess:queryStringParameters
+Method-name:hasQueryStringParameter
+Method-returnType:boolean
+Method-parameters:[NottableString name, NottableString value]
+FieldAccess:queryStringParameters
+MethodInvocation:containsEntry
+FieldAccess:queryStringParameters
+Method-name:getFirstQueryStringParameter
+Method-returnType:String
+Method-parameters:[String name]
+FieldAccess:queryStringParameters
+MethodInvocation:getFirstValue
+FieldAccess:queryStringParameters
+Method-name:withBody
+Method-returnType:HttpRequest
+Method-parameters:[String body]
+FieldAccess:body
+Method-name:withBody
+Method-returnType:HttpRequest
+Method-parameters:[String body, Charset charset]
+FieldAccess:body
+Method-name:withBody
+Method-returnType:HttpRequest
+Method-parameters:[byte[] body]
+FieldAccess:body
+Method-name:withBody
+Method-returnType:HttpRequest
+Method-parameters:[Body body]
+FieldAccess:body
+Method-name:getBody
+Method-returnType:Body
+Method-parameters:[]
+Method-name:getBodyAsRawBytes
+Method-returnType:byte[]
+Method-parameters:[]
+FieldAccess:body
+MethodInvocation:getRawBytes
+FieldAccess:body
+Method-name:getBodyAsString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:getHeaders
+Method-returnType:Headers
+Method-parameters:[]
+FieldAccess:headers
+Method-name:getOrCreateHeaders
+Method-returnType:Headers
+Method-parameters:[]
+FieldAccess:headers
+FieldAccess:headers
+FieldAccess:headers
+Method-name:withHeaders
+Method-returnType:HttpRequest
+Method-parameters:[Headers headers]
+MethodInvocation:isEmpty
+FieldAccess:headers
+FieldAccess:headers
+Method-name:withHeaders
+Method-returnType:HttpRequest
+Method-parameters:[List<Header> headers]
+MethodInvocation:withEntries
+MethodInvocation:getOrCreateHeaders
+Method-name:withHeaders
+Method-returnType:HttpRequest
+Method-parameters:[Header... headers]
+MethodInvocation:withEntries
+MethodInvocation:getOrCreateHeaders
+Method-name:withHeader
+Method-returnType:HttpRequest
+Method-parameters:[Header header]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateHeaders
+Method-name:withHeader
+Method-returnType:HttpRequest
+Method-parameters:[String name, String... values]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateHeaders
+MethodInvocation:header
+Method-name:withHeader
+Method-returnType:HttpRequest
+Method-parameters:[NottableString name, NottableString... values]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateHeaders
+MethodInvocation:header
+Method-name:withContentType
+Method-returnType:HttpRequest
+Method-parameters:[MediaType mediaType]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateHeaders
+MethodInvocation:header
+MethodInvocation:toString
+MethodInvocation:toString
+Method-name:replaceHeader
+Method-returnType:HttpRequest
+Method-parameters:[Header header]
+MethodInvocation:replaceEntry
+MethodInvocation:getOrCreateHeaders
+Method-name:getHeaderList
+Method-returnType:List<Header>
+Method-parameters:[]
+FieldAccess:headers
+MethodInvocation:getEntries
+FieldAccess:headers
+MethodInvocation:emptyList
+Method-name:getHeader
+Method-returnType:List<String>
+Method-parameters:[String name]
+FieldAccess:headers
+MethodInvocation:getValues
+FieldAccess:headers
+MethodInvocation:emptyList
+Method-name:getFirstHeader
+Method-returnType:String
+Method-parameters:[String name]
+FieldAccess:headers
+MethodInvocation:getFirstValue
+FieldAccess:headers
+Method-name:containsHeader
+Method-returnType:boolean
+Method-parameters:[String name]
+FieldAccess:headers
+MethodInvocation:containsEntry
+FieldAccess:headers
+Method-name:containsHeader
+Method-returnType:boolean
+Method-parameters:[String name, String value]
+FieldAccess:headers
+MethodInvocation:containsEntry
+FieldAccess:headers
+Method-name:removeHeader
+Method-returnType:HttpRequest
+Method-parameters:[String name]
+FieldAccess:headers
+MethodInvocation:remove
+Method-name:removeHeader
+Method-returnType:HttpRequest
+Method-parameters:[NottableString name]
+FieldAccess:headers
+MethodInvocation:remove
+Method-name:getCookies
+Method-returnType:Cookies
+Method-parameters:[]
+FieldAccess:cookies
+Method-name:getOrCreateCookies
+Method-returnType:Cookies
+Method-parameters:[]
+FieldAccess:cookies
+FieldAccess:cookies
+FieldAccess:cookies
+Method-name:withCookies
+Method-returnType:HttpRequest
+Method-parameters:[Cookies cookies]
+MethodInvocation:isEmpty
+FieldAccess:cookies
+FieldAccess:cookies
+Method-name:withCookies
+Method-returnType:HttpRequest
+Method-parameters:[List<Cookie> cookies]
+MethodInvocation:withEntries
+MethodInvocation:getOrCreateCookies
+Method-name:withCookies
+Method-returnType:HttpRequest
+Method-parameters:[Cookie... cookies]
+MethodInvocation:withEntries
+MethodInvocation:getOrCreateCookies
+Method-name:withCookie
+Method-returnType:HttpRequest
+Method-parameters:[Cookie cookie]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateCookies
+Method-name:withCookie
+Method-returnType:HttpRequest
+Method-parameters:[String name, String value]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateCookies
+Method-name:withCookie
+Method-returnType:HttpRequest
+Method-parameters:[NottableString name, NottableString value]
+MethodInvocation:withEntry
+MethodInvocation:getOrCreateCookies
+Method-name:getCookieList
+Method-returnType:List<Cookie>
+Method-parameters:[]
+FieldAccess:cookies
+MethodInvocation:getEntries
+FieldAccess:cookies
+MethodInvocation:emptyList
+Method-name:socketAddressFromHostHeader
+Method-returnType:InetSocketAddress
+Method-parameters:[]
+MethodInvocation:getHost
+MethodInvocation:getScheme
+MethodInvocation:equals
+MethodInvocation:getScheme
+MethodInvocation:getHost
+MethodInvocation:getPort
+MethodInvocation:getPort
+MethodInvocation:isNotBlank
+MethodInvocation:getFirstHeader
+MethodInvocation:toString
+MethodInvocation:isSecure
+MethodInvocation:isSecure
+MethodInvocation:split
+MethodInvocation:getFirstHeader
+MethodInvocation:toString
+MethodInvocation:parseInt
+Method-name:clone
+Method-returnType:HttpRequest
+Method-parameters:[]
+MethodInvocation:withSocketAddress
+MethodInvocation:withSecure
+MethodInvocation:withKeepAlive
+MethodInvocation:withCookies
+MethodInvocation:withHeaders
+MethodInvocation:withBody
+MethodInvocation:withQueryStringParameters
+MethodInvocation:withPath
+MethodInvocation:withMethod
+MethodInvocation:not
+MethodInvocation:request
+MethodInvocation:clone
+MethodInvocation:clone
+MethodInvocation:clone
+Method-name:update
+Method-returnType:HttpRequest
+Method-parameters:[HttpRequest replaceRequest]
+MethodInvocation:getMethod
+MethodInvocation:isNotBlank
+MethodInvocation:getValue
+MethodInvocation:getMethod
+MethodInvocation:withMethod
+MethodInvocation:getMethod
+MethodInvocation:getPath
+MethodInvocation:isNotBlank
+MethodInvocation:getValue
+MethodInvocation:getPath
+MethodInvocation:withPath
+MethodInvocation:getPath
+MethodInvocation:getHeaderList
+MethodInvocation:replaceEntry
+MethodInvocation:getOrCreateHeaders
+MethodInvocation:getCookieList
+MethodInvocation:withCookie
+MethodInvocation:getQueryStringParameterList
+MethodInvocation:replaceEntry
+MethodInvocation:getOrCreateQueryStringParameters
+MethodInvocation:getBody
+MethodInvocation:withBody
+MethodInvocation:getBody
+MethodInvocation:isSecure
+MethodInvocation:withSecure
+MethodInvocation:isSecure
+MethodInvocation:isKeepAlive
+MethodInvocation:withKeepAlive
+MethodInvocation:isKeepAlive
+MethodInvocation:getSocketAddress
+MethodInvocation:withSocketAddress
+MethodInvocation:getSocketAddress
+Method-name:notFoundFuture
+Method-returnType:HttpForwardActionResult
+Method-parameters:[HttpForwardAction httpForwardAction]
+MethodInvocation:complete
+MethodInvocation:notFoundResponse

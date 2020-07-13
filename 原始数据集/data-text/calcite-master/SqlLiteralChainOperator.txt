@@ -1,0 +1,65 @@
+Class:SqlLiteralChainOperator
+Method-name:SqlLiteralChainOperator
+Method-returnType:null
+Method-parameters:[]
+Method-name:argTypesValid
+Method-returnType:boolean
+Method-parameters:[SqlCallBinding callBinding]
+MethodInvocation:getOperandCount
+MethodInvocation:zip
+MethodInvocation:operands
+MethodInvocation:deriveType
+MethodInvocation:getValidator
+MethodInvocation:getScope
+MethodInvocation:sameNamedType
+Method-name:checkOperandTypes
+Method-returnType:boolean
+Method-parameters:[SqlCallBinding callBinding, boolean throwOnFailure]
+MethodInvocation:argTypesValid
+MethodInvocation:newValidationSignatureError
+Method-name:inferReturnType
+Method-returnType:RelDataType
+Method-parameters:[SqlOperatorBinding opBinding]
+Method-name:getAllowedSignatures
+Method-returnType:String
+Method-parameters:[String opName]
+Method-name:validateCall
+Method-returnType:void
+Method-parameters:[SqlCall call, SqlValidator validator, SqlValidatorScope scope, SqlValidatorScope operandScope]
+MethodInvocation:getOperandList
+MethodInvocation:size
+MethodInvocation:getParserPosition
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getParserPosition
+MethodInvocation:getLineNum
+MethodInvocation:getLineNum
+MethodInvocation:newValidationError
+MethodInvocation:stringFragsOnSameLine
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlCall call, int leftPrec, int rightPrec]
+MethodInvocation:startList
+MethodInvocation:zip
+MethodInvocation:getOperandList
+MethodInvocation:newlineAndIndent
+MethodInvocation:getNlsString
+MethodInvocation:getCollation
+MethodInvocation:literal
+MethodInvocation:asSql
+MethodInvocation:getDialect
+MethodInvocation:literal
+MethodInvocation:asSql
+MethodInvocation:getDialect
+MethodInvocation:unparse
+MethodInvocation:getTypeName
+MethodInvocation:getValue
+MethodInvocation:literal
+MethodInvocation:toHexString
+MethodInvocation:literal
+MethodInvocation:toValue
+MethodInvocation:unparse
+MethodInvocation:endList
+Method-name:concatenateOperands
+Method-returnType:SqlLiteral
+Method-parameters:[SqlCall call]

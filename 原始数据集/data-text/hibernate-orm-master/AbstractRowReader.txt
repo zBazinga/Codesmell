@@ -1,0 +1,111 @@
+Class:AbstractRowReader
+Field:log
+MethodInvocation:logger
+Field:entityReferenceInitializers
+Field:arrayReferenceInitializers
+Field:collectionReferenceInitializers
+Field:entityInitializerByEntityReference
+Method-name:AbstractRowReader
+Method-returnType:null
+Method-parameters:[ReaderCollector readerCollector]
+MethodInvocation:isNotEmpty
+MethodInvocation:getEntityReferenceInitializers
+MethodInvocation:getEntityReferenceInitializers
+MethodInvocation:size
+MethodInvocation:put
+MethodInvocation:getEntityReference
+MethodInvocation:emptyList
+MethodInvocation:emptyMap
+FieldAccess:arrayReferenceInitializers
+MethodInvocation:isNotEmpty
+MethodInvocation:getArrayReferenceInitializers
+MethodInvocation:getArrayReferenceInitializers
+MethodInvocation:emptyList
+FieldAccess:collectionReferenceInitializers
+MethodInvocation:isNotEmpty
+MethodInvocation:getNonArrayCollectionReferenceInitializers
+MethodInvocation:getNonArrayCollectionReferenceInitializers
+MethodInvocation:emptyList
+Method-name:readLogicalRow
+Method-returnType:Object
+Method-parameters:[ResultSet resultSet, ResultSetProcessingContextImpl context]
+Method-name:readRow
+Method-returnType:Object
+Method-parameters:[ResultSet resultSet, ResultSetProcessingContextImpl context]
+MethodInvocation:isNotEmpty
+MethodInvocation:hydrateIdentifier
+MethodInvocation:resolveEntityKey
+MethodInvocation:hydrateEntityState
+MethodInvocation:readLogicalRow
+MethodInvocation:finishUpRow
+MethodInvocation:finishUpRow
+MethodInvocation:finishUpRow
+Method-name:resolveEntityKey
+Method-returnType:void
+Method-parameters:[ResultSet resultSet, ResultSetProcessingContextImpl context, EntityReferenceInitializer entityReferenceInitializer]
+MethodInvocation:getEntityReference
+MethodInvocation:getIdentifierDescription
+MethodInvocation:hasFetches
+MethodInvocation:hasBidirectionalEntityReferences
+MethodInvocation:resolveEntityKey
+MethodInvocation:resolveEntityKey
+Method-name:resolveEntityKey
+Method-returnType:void
+Method-parameters:[ResultSet resultSet, ResultSetProcessingContextImpl context, FetchSource fetchSource]
+MethodInvocation:getBidirectionalEntityReferences
+MethodInvocation:get
+MethodInvocation:getTargetEntityReference
+MethodInvocation:resolveEntityKey
+MethodInvocation:hydrateEntityState
+MethodInvocation:getFetches
+MethodInvocation:isInstance
+MethodInvocation:get
+MethodInvocation:resolveEntityKey
+MethodInvocation:hydrateEntityState
+MethodInvocation:isInstance
+MethodInvocation:resolveEntityKey
+Method-name:finishUp
+Method-returnType:void
+Method-parameters:[ResultSetProcessingContextImpl context, List<AfterLoadAction> afterLoadActionList]
+MethodInvocation:getHydratedEntityRegistrationList
+MethodInvocation:finishLoadingArrays
+MethodInvocation:isEventSource
+MethodInvocation:getSession
+MethodInvocation:getSession
+MethodInvocation:getSession
+MethodInvocation:performTwoPhaseLoad
+MethodInvocation:finishLoadingCollections
+MethodInvocation:afterInitialize
+MethodInvocation:postLoad
+Method-name:finishLoadingArrays
+Method-returnType:void
+Method-parameters:[ResultSetProcessingContextImpl context]
+MethodInvocation:endLoading
+Method-name:performTwoPhaseLoad
+Method-returnType:void
+Method-parameters:[PreLoadEvent preLoadEvent, ResultSetProcessingContextImpl context, List<HydratedEntityRegistration> hydratedEntityRegistrations]
+MethodInvocation:size
+MethodInvocation:tracev
+MethodInvocation:getSession
+MethodInvocation:listeners
+MethodInvocation:getEventListenerGroup
+MethodInvocation:getService
+MethodInvocation:getServiceRegistry
+MethodInvocation:getFactory
+MethodInvocation:initializeEntity
+MethodInvocation:getInstance
+MethodInvocation:isReadOnly
+Method-name:finishLoadingCollections
+Method-returnType:void
+Method-parameters:[ResultSetProcessingContextImpl context]
+MethodInvocation:endLoading
+Method-name:postLoad
+Method-returnType:void
+Method-parameters:[PostLoadEvent postLoadEvent, ResultSetProcessingContextImpl context, List<HydratedEntityRegistration> hydratedEntityRegistrations, List<AfterLoadAction> afterLoadActionList]
+MethodInvocation:getSession
+MethodInvocation:postLoad
+MethodInvocation:getInstance
+MethodInvocation:afterLoad
+MethodInvocation:getInstance
+MethodInvocation:getEntityPersister
+MethodInvocation:getEntityReference

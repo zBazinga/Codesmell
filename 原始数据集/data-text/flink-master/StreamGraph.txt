@@ -1,0 +1,509 @@
+Class:StreamGraph
+Field:LOG
+MethodInvocation:getLogger
+Field:ITERATION_SOURCE_NAME_PREFIX
+Field:ITERATION_SINK_NAME_PREFIX
+Field:jobName
+Field:executionConfig
+Field:checkpointConfig
+Field:savepointRestoreSettings
+MethodInvocation:none
+Field:scheduleMode
+Field:chaining
+Field:userArtifacts
+Field:timeCharacteristic
+Field:globalDataExchangeMode
+Field:allVerticesInSameSlotSharingGroupByDefault
+Field:streamNodes
+Field:sources
+Field:sinks
+Field:virtualSelectNodes
+Field:virtualSideOutputNodes
+Field:virtualPartitionNodes
+Field:vertexIDtoBrokerID
+Field:vertexIDtoLoopTimeout
+Field:stateBackend
+Field:iterationSourceSinkPairs
+Method-name:StreamGraph
+Method-returnType:null
+Method-parameters:[ExecutionConfig executionConfig, CheckpointConfig checkpointConfig, SavepointRestoreSettings savepointRestoreSettings]
+FieldAccess:executionConfig
+MethodInvocation:checkNotNull
+FieldAccess:checkpointConfig
+MethodInvocation:checkNotNull
+FieldAccess:savepointRestoreSettings
+MethodInvocation:checkNotNull
+MethodInvocation:clear
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+Method-name:getExecutionConfig
+Method-returnType:ExecutionConfig
+Method-parameters:[]
+Method-name:getCheckpointConfig
+Method-returnType:CheckpointConfig
+Method-parameters:[]
+Method-name:setSavepointRestoreSettings
+Method-returnType:void
+Method-parameters:[SavepointRestoreSettings savepointRestoreSettings]
+FieldAccess:savepointRestoreSettings
+Method-name:getSavepointRestoreSettings
+Method-returnType:SavepointRestoreSettings
+Method-parameters:[]
+Method-name:getJobName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setJobName
+Method-returnType:void
+Method-parameters:[String jobName]
+FieldAccess:jobName
+Method-name:setChaining
+Method-returnType:void
+Method-parameters:[boolean chaining]
+FieldAccess:chaining
+Method-name:setStateBackend
+Method-returnType:void
+Method-parameters:[StateBackend backend]
+FieldAccess:stateBackend
+Method-name:getStateBackend
+Method-returnType:StateBackend
+Method-parameters:[]
+FieldAccess:stateBackend
+Method-name:getScheduleMode
+Method-returnType:ScheduleMode
+Method-parameters:[]
+Method-name:setScheduleMode
+Method-returnType:void
+Method-parameters:[ScheduleMode scheduleMode]
+FieldAccess:scheduleMode
+Method-name:getUserArtifacts
+Method-returnType:Collection<Tuple2<String,DistributedCache.DistributedCacheEntry>>
+Method-parameters:[]
+Method-name:setUserArtifacts
+Method-returnType:void
+Method-parameters:[Collection<Tuple2<String,DistributedCache.DistributedCacheEntry>> userArtifacts]
+FieldAccess:userArtifacts
+Method-name:getTimeCharacteristic
+Method-returnType:TimeCharacteristic
+Method-parameters:[]
+Method-name:setTimeCharacteristic
+Method-returnType:void
+Method-parameters:[TimeCharacteristic timeCharacteristic]
+FieldAccess:timeCharacteristic
+Method-name:getGlobalDataExchangeMode
+Method-returnType:GlobalDataExchangeMode
+Method-parameters:[]
+Method-name:setGlobalDataExchangeMode
+Method-returnType:void
+Method-parameters:[GlobalDataExchangeMode globalDataExchangeMode]
+FieldAccess:globalDataExchangeMode
+Method-name:setAllVerticesInSameSlotSharingGroupByDefault
+Method-returnType:void
+Method-parameters:[boolean allVerticesInSameSlotSharingGroupByDefault]
+FieldAccess:allVerticesInSameSlotSharingGroupByDefault
+Method-name:isAllVerticesInSameSlotSharingGroupByDefault
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isChainingEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isIterative
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:addSource
+Method-returnType:void
+Method-parameters:[Integer vertexID, @Nullable String slotSharingGroup, @Nullable String coLocationGroup, SourceOperatorFactory<OUT> operatorFactory, TypeInformation<IN> inTypeInfo, TypeInformation<OUT> outTypeInfo, String operatorName]
+MethodInvocation:addOperator
+MethodInvocation:add
+Method-name:addLegacySource
+Method-returnType:void
+Method-parameters:[Integer vertexID, @Nullable String slotSharingGroup, @Nullable String coLocationGroup, StreamOperatorFactory<OUT> operatorFactory, TypeInformation<IN> inTypeInfo, TypeInformation<OUT> outTypeInfo, String operatorName]
+MethodInvocation:addOperator
+MethodInvocation:add
+Method-name:addSink
+Method-returnType:void
+Method-parameters:[Integer vertexID, @Nullable String slotSharingGroup, @Nullable String coLocationGroup, StreamOperatorFactory<OUT> operatorFactory, TypeInformation<IN> inTypeInfo, TypeInformation<OUT> outTypeInfo, String operatorName]
+MethodInvocation:addOperator
+MethodInvocation:add
+Method-name:addOperator
+Method-returnType:void
+Method-parameters:[Integer vertexID, @Nullable String slotSharingGroup, @Nullable String coLocationGroup, StreamOperatorFactory<OUT> operatorFactory, TypeInformation<IN> inTypeInfo, TypeInformation<OUT> outTypeInfo, String operatorName]
+MethodInvocation:isStreamSource
+MethodInvocation:addOperator
+Method-name:addOperator
+Method-returnType:void
+Method-parameters:[Integer vertexID, @Nullable String slotSharingGroup, @Nullable String coLocationGroup, StreamOperatorFactory<OUT> operatorFactory, TypeInformation<IN> inTypeInfo, TypeInformation<OUT> outTypeInfo, String operatorName, Class<? extends AbstractInvokable> invokableClass]
+MethodInvocation:addNode
+MethodInvocation:setSerializers
+MethodInvocation:createSerializer
+MethodInvocation:createSerializer
+MethodInvocation:isOutputTypeConfigurable
+MethodInvocation:setOutputType
+MethodInvocation:isInputTypeConfigurable
+MethodInvocation:setInputType
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+Method-name:addCoOperator
+Method-returnType:void
+Method-parameters:[Integer vertexID, String slotSharingGroup, @Nullable String coLocationGroup, StreamOperatorFactory<OUT> taskOperatorFactory, TypeInformation<IN1> in1TypeInfo, TypeInformation<IN2> in2TypeInfo, TypeInformation<OUT> outTypeInfo, String operatorName]
+MethodInvocation:addNode
+MethodInvocation:createSerializer
+MethodInvocation:setSerializers
+MethodInvocation:createSerializer
+MethodInvocation:createSerializer
+MethodInvocation:isOutputTypeConfigurable
+MethodInvocation:setOutputType
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+Method-name:addMultipleInputOperator
+Method-returnType:void
+Method-parameters:[Integer vertexID, String slotSharingGroup, @Nullable String coLocationGroup, StreamOperatorFactory<OUT> operatorFactory, List<TypeInformation<?>> inTypeInfos, TypeInformation<OUT> outTypeInfo, String operatorName]
+MethodInvocation:addNode
+MethodInvocation:setSerializers
+MethodInvocation:createSerializer
+MethodInvocation:isOutputTypeConfigurable
+MethodInvocation:setOutputType
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+Method-name:addNode
+Method-returnType:StreamNode
+Method-parameters:[Integer vertexID, @Nullable String slotSharingGroup, @Nullable String coLocationGroup, Class<? extends AbstractInvokable> vertexClass, StreamOperatorFactory<?> operatorFactory, String operatorName]
+MethodInvocation:containsKey
+MethodInvocation:put
+Method-name:addVirtualSelectNode
+Method-returnType:void
+Method-parameters:[Integer originalId, Integer virtualId, List<String> selectedNames]
+MethodInvocation:containsKey
+MethodInvocation:put
+Method-name:addVirtualSideOutputNode
+Method-returnType:void
+Method-parameters:[Integer originalId, Integer virtualId, OutputTag outputTag]
+MethodInvocation:containsKey
+MethodInvocation:values
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:getId
+MethodInvocation:getId
+MethodInvocation:equals
+MethodInvocation:getTypeInfo
+MethodInvocation:getTypeInfo
+MethodInvocation:getId
+MethodInvocation:put
+Method-name:addVirtualPartitionNode
+Method-returnType:void
+Method-parameters:[Integer originalId, Integer virtualId, StreamPartitioner<?> partitioner, ShuffleMode shuffleMode]
+MethodInvocation:containsKey
+MethodInvocation:put
+Method-name:getSlotSharingGroup
+Method-returnType:String
+Method-parameters:[Integer id]
+MethodInvocation:containsKey
+FieldAccess:f0
+MethodInvocation:get
+MethodInvocation:getSlotSharingGroup
+MethodInvocation:containsKey
+FieldAccess:f0
+MethodInvocation:get
+MethodInvocation:getSlotSharingGroup
+MethodInvocation:containsKey
+FieldAccess:f0
+MethodInvocation:get
+MethodInvocation:getSlotSharingGroup
+MethodInvocation:getStreamNode
+MethodInvocation:getSlotSharingGroup
+Method-name:addEdge
+Method-returnType:void
+Method-parameters:[Integer upStreamVertexID, Integer downStreamVertexID, int typeNumber]
+MethodInvocation:addEdgeInternal
+Method-name:addEdgeInternal
+Method-returnType:void
+Method-parameters:[Integer upStreamVertexID, Integer downStreamVertexID, int typeNumber, StreamPartitioner<?> partitioner, List<String> outputNames, OutputTag outputTag, ShuffleMode shuffleMode]
+MethodInvocation:containsKey
+FieldAccess:f0
+MethodInvocation:get
+FieldAccess:f1
+MethodInvocation:get
+MethodInvocation:addEdgeInternal
+MethodInvocation:containsKey
+FieldAccess:f0
+MethodInvocation:get
+MethodInvocation:isEmpty
+FieldAccess:f1
+MethodInvocation:get
+MethodInvocation:addEdgeInternal
+MethodInvocation:containsKey
+FieldAccess:f0
+MethodInvocation:get
+FieldAccess:f1
+MethodInvocation:get
+FieldAccess:f2
+MethodInvocation:get
+MethodInvocation:addEdgeInternal
+MethodInvocation:getStreamNode
+MethodInvocation:getStreamNode
+MethodInvocation:getParallelism
+MethodInvocation:getParallelism
+MethodInvocation:getParallelism
+MethodInvocation:getParallelism
+MethodInvocation:getParallelism
+MethodInvocation:getParallelism
+MethodInvocation:addOutEdge
+MethodInvocation:getStreamNode
+MethodInvocation:getSourceId
+MethodInvocation:addInEdge
+MethodInvocation:getStreamNode
+MethodInvocation:getTargetId
+Method-name:addOutputSelector
+Method-returnType:void
+Method-parameters:[Integer vertexID, OutputSelector<T> outputSelector]
+MethodInvocation:containsKey
+MethodInvocation:addOutputSelector
+FieldAccess:f0
+MethodInvocation:get
+MethodInvocation:containsKey
+MethodInvocation:addOutputSelector
+FieldAccess:f0
+MethodInvocation:get
+MethodInvocation:addOutputSelector
+MethodInvocation:getStreamNode
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+Method-name:setParallelism
+Method-returnType:void
+Method-parameters:[Integer vertexID, int parallelism]
+MethodInvocation:getStreamNode
+MethodInvocation:setParallelism
+MethodInvocation:getStreamNode
+Method-name:setMaxParallelism
+Method-returnType:void
+Method-parameters:[int vertexID, int maxParallelism]
+MethodInvocation:getStreamNode
+MethodInvocation:setMaxParallelism
+MethodInvocation:getStreamNode
+Method-name:setResources
+Method-returnType:void
+Method-parameters:[int vertexID, ResourceSpec minResources, ResourceSpec preferredResources]
+MethodInvocation:getStreamNode
+MethodInvocation:setResources
+MethodInvocation:getStreamNode
+Method-name:setManagedMemoryWeight
+Method-returnType:void
+Method-parameters:[int vertexID, int managedMemoryWeight]
+MethodInvocation:getStreamNode
+MethodInvocation:setManagedMemoryWeight
+MethodInvocation:getStreamNode
+Method-name:setOneInputStateKey
+Method-returnType:void
+Method-parameters:[Integer vertexID, KeySelector<?,?> keySelector, TypeSerializer<?> keySerializer]
+MethodInvocation:getStreamNode
+MethodInvocation:setStatePartitioners
+MethodInvocation:setStateKeySerializer
+Method-name:setTwoInputStateKey
+Method-returnType:void
+Method-parameters:[Integer vertexID, KeySelector<?,?> keySelector1, KeySelector<?,?> keySelector2, TypeSerializer<?> keySerializer]
+MethodInvocation:getStreamNode
+MethodInvocation:setStatePartitioners
+MethodInvocation:setStateKeySerializer
+Method-name:setMultipleInputStateKey
+Method-returnType:void
+Method-parameters:[Integer vertexID, List<KeySelector<?,?>> keySelectors, TypeSerializer<?> keySerializer]
+MethodInvocation:getStreamNode
+MethodInvocation:setStatePartitioners
+MethodInvocation:toArray
+MethodInvocation:stream
+MethodInvocation:setStateKeySerializer
+Method-name:setBufferTimeout
+Method-returnType:void
+Method-parameters:[Integer vertexID, long bufferTimeout]
+MethodInvocation:getStreamNode
+MethodInvocation:setBufferTimeout
+MethodInvocation:getStreamNode
+Method-name:setSerializers
+Method-returnType:void
+Method-parameters:[Integer vertexID, TypeSerializer<?> in1, TypeSerializer<?> in2, TypeSerializer<?> out]
+MethodInvocation:getStreamNode
+MethodInvocation:setSerializersIn
+MethodInvocation:setSerializerOut
+Method-name:setSerializers
+Method-returnType:void
+Method-parameters:[Integer vertexID, List<TypeInformation<?>> inTypeInfos, TypeSerializer<OUT> out]
+MethodInvocation:getStreamNode
+MethodInvocation:setSerializersIn
+MethodInvocation:toArray
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:createSerializer
+MethodInvocation:setSerializerOut
+Method-name:setSerializersFrom
+Method-returnType:void
+Method-parameters:[Integer from, Integer to]
+MethodInvocation:getStreamNode
+MethodInvocation:getStreamNode
+MethodInvocation:setSerializersIn
+MethodInvocation:getTypeSerializerOut
+MethodInvocation:setSerializerOut
+MethodInvocation:getTypeSerializerIn
+Method-name:setOutType
+Method-returnType:void
+Method-parameters:[Integer vertexID, TypeInformation<OUT> outType]
+MethodInvocation:setSerializerOut
+MethodInvocation:getStreamNode
+MethodInvocation:createSerializer
+Method-name:setInputFormat
+Method-returnType:void
+Method-parameters:[Integer vertexID, InputFormat<?,?> inputFormat]
+MethodInvocation:setInputFormat
+MethodInvocation:getStreamNode
+Method-name:setOutputFormat
+Method-returnType:void
+Method-parameters:[Integer vertexID, OutputFormat<?> outputFormat]
+MethodInvocation:setOutputFormat
+MethodInvocation:getStreamNode
+Method-name:setTransformationUID
+Method-returnType:void
+Method-parameters:[Integer nodeId, String transformationId]
+MethodInvocation:get
+MethodInvocation:setTransformationUID
+Method-name:setTransformationUserHash
+Method-returnType:void
+Method-parameters:[Integer nodeId, String nodeHash]
+MethodInvocation:get
+MethodInvocation:setUserHash
+Method-name:getStreamNode
+Method-returnType:StreamNode
+Method-parameters:[Integer vertexID]
+MethodInvocation:get
+Method-name:getVertexIDs
+Method-returnType:Collection<? extends Integer>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getStreamEdges
+Method-returnType:List<StreamEdge>
+Method-parameters:[int sourceId]
+MethodInvocation:getOutEdges
+MethodInvocation:getStreamNode
+Method-name:getStreamEdges
+Method-returnType:List<StreamEdge>
+Method-parameters:[int sourceId, int targetId]
+MethodInvocation:getOutEdges
+MethodInvocation:getStreamNode
+MethodInvocation:getTargetId
+MethodInvocation:add
+Method-name:getStreamEdgesOrThrow
+Method-returnType:List<StreamEdge>
+Method-parameters:[int sourceId, int targetId]
+MethodInvocation:getStreamEdges
+MethodInvocation:isEmpty
+Method-name:getSourceIDs
+Method-returnType:Collection<Integer>
+Method-parameters:[]
+Method-name:getSinkIDs
+Method-returnType:Collection<Integer>
+Method-parameters:[]
+Method-name:getStreamNodes
+Method-returnType:Collection<StreamNode>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getAllOperatorFactory
+Method-returnType:Set<Tuple2<Integer,StreamOperatorFactory<?>>>
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:add
+MethodInvocation:getId
+MethodInvocation:getOperatorFactory
+Method-name:getBrokerID
+Method-returnType:String
+Method-parameters:[Integer vertexID]
+MethodInvocation:get
+Method-name:getLoopTimeout
+Method-returnType:long
+Method-parameters:[Integer vertexID]
+MethodInvocation:get
+Method-name:createIterationSourceAndSink
+Method-returnType:Tuple2<StreamNode,StreamNode>
+Method-parameters:[int loopId, int sourceId, int sinkId, long timeout, int parallelism, int maxParallelism, ResourceSpec minResources, ResourceSpec preferredResources]
+MethodInvocation:addNode
+MethodInvocation:add
+MethodInvocation:getId
+MethodInvocation:setParallelism
+MethodInvocation:getId
+MethodInvocation:setMaxParallelism
+MethodInvocation:getId
+MethodInvocation:setResources
+MethodInvocation:getId
+MethodInvocation:addNode
+MethodInvocation:add
+MethodInvocation:getId
+MethodInvocation:setParallelism
+MethodInvocation:getId
+MethodInvocation:setMaxParallelism
+MethodInvocation:getId
+MethodInvocation:equals
+MethodInvocation:setResources
+MethodInvocation:getId
+MethodInvocation:add
+MethodInvocation:put
+FieldAccess:vertexIDtoBrokerID
+MethodInvocation:getId
+MethodInvocation:put
+FieldAccess:vertexIDtoBrokerID
+MethodInvocation:getId
+MethodInvocation:put
+FieldAccess:vertexIDtoLoopTimeout
+MethodInvocation:getId
+MethodInvocation:put
+FieldAccess:vertexIDtoLoopTimeout
+MethodInvocation:getId
+Method-name:getIterationSourceSinkPairs
+Method-returnType:Set<Tuple2<StreamNode,StreamNode>>
+Method-parameters:[]
+Method-name:getSourceVertex
+Method-returnType:StreamNode
+Method-parameters:[StreamEdge edge]
+MethodInvocation:get
+MethodInvocation:getSourceId
+Method-name:getTargetVertex
+Method-returnType:StreamNode
+Method-parameters:[StreamEdge edge]
+MethodInvocation:get
+MethodInvocation:getTargetId
+Method-name:removeEdge
+Method-returnType:void
+Method-parameters:[StreamEdge edge]
+MethodInvocation:remove
+MethodInvocation:getOutEdges
+MethodInvocation:getSourceVertex
+MethodInvocation:remove
+MethodInvocation:getInEdges
+MethodInvocation:getTargetVertex
+Method-name:removeVertex
+Method-returnType:void
+Method-parameters:[StreamNode toRemove]
+MethodInvocation:addAll
+MethodInvocation:getInEdges
+MethodInvocation:addAll
+MethodInvocation:getOutEdges
+MethodInvocation:removeEdge
+MethodInvocation:remove
+MethodInvocation:getId
+Method-name:getJobGraph
+Method-returnType:JobGraph
+Method-parameters:[]
+MethodInvocation:getJobGraph
+Method-name:getJobGraph
+Method-returnType:JobGraph
+Method-parameters:[@Nullable JobID jobID]
+MethodInvocation:createJobGraph
+Method-name:getStreamingPlanAsJSON
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getJSON
+Method-name:createSerializer
+Method-returnType:TypeSerializer<T>
+Method-parameters:[TypeInformation<T> typeInfo]
+MethodInvocation:createSerializer
+Method-name:isChainable
+Method-returnType:boolean
+Method-parameters:[StreamEdge edge, boolean isChainingEnabled, StreamGraphHasherV2 streamGraphHasherV2]
+MethodInvocation:isChainable

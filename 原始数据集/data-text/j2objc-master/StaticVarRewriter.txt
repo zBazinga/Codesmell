@@ -1,0 +1,67 @@
+Class:StaticVarRewriter
+Method-name:StaticVarRewriter
+Method-returnType:null
+Method-parameters:[CompilationUnit unit]
+Method-name:needsStaticLoad
+Method-returnType:boolean
+Method-parameters:[TreeNode currentNode, VariableElement var]
+MethodInvocation:isStatic
+MethodInvocation:isConstant
+MethodInvocation:getEnclosingTypeElement
+MethodInvocation:equals
+MethodInvocation:getDeclaringClass
+Method-name:rewriteStaticAccess
+Method-returnType:void
+Method-parameters:[Expression node]
+MethodInvocation:getVariableElement
+MethodInvocation:needsStaticLoad
+MethodInvocation:getDeclaringClass
+MethodInvocation:isAssigned
+MethodInvocation:isEnumConstant
+MethodInvocation:asType
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getFullName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getVariableShortName
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:addImportType
+MethodInvocation:asType
+MethodInvocation:asType
+MethodInvocation:replaceWith
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[FieldAccess node]
+MethodInvocation:getVariableElement
+MethodInvocation:isInstanceVar
+MethodInvocation:accept
+MethodInvocation:getExpression
+MethodInvocation:remove
+MethodInvocation:getExpression
+MethodInvocation:remove
+MethodInvocation:getName
+MethodInvocation:hasSideEffect
+MethodInvocation:replaceWith
+MethodInvocation:accept
+MethodInvocation:isAssigned
+MethodInvocation:addExpression
+MethodInvocation:asType
+MethodInvocation:replaceWith
+MethodInvocation:asType
+MethodInvocation:addExpression
+MethodInvocation:replaceWith
+MethodInvocation:accept
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SimpleName node]
+MethodInvocation:rewriteStaticAccess
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[QualifiedName node]
+MethodInvocation:rewriteStaticAccess
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SwitchCase node]

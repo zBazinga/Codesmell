@@ -1,0 +1,113 @@
+Class:RegionTransitionProcedure
+Field:aborted
+Field:transitionState
+Field:regionInfo
+Field:attempt
+Method-name:RegionTransitionProcedure
+Method-returnType:null
+Method-parameters:[]
+Method-name:RegionTransitionProcedure
+Method-returnType:null
+Method-parameters:[final RegionInfo regionInfo]
+FieldAccess:regionInfo
+Method-name:getRegionInfo
+Method-returnType:RegionInfo
+Method-parameters:[]
+Method-name:setRegionInfo
+Method-returnType:void
+Method-parameters:[final RegionInfo regionInfo]
+FieldAccess:regionInfo
+Method-name:setAttempt
+Method-returnType:void
+Method-parameters:[int attempt]
+FieldAccess:attempt
+Method-name:getAttempt
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:attempt
+Method-name:getTableName
+Method-returnType:TableName
+Method-parameters:[]
+MethodInvocation:getRegionInfo
+MethodInvocation:getTable
+Method-name:isMeta
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isMetaTableName
+MethodInvocation:getTableName
+Method-name:toStringClassDetails
+Method-returnType:void
+Method-parameters:[final StringBuilder sb]
+MethodInvocation:append
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getTableName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getRegionInfo
+MethodInvocation:getEncodedName
+MethodInvocation:getRegionInfo
+Method-name:getRegionState
+Method-returnType:RegionStateNode
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:getOrCreateRegionStateNode
+MethodInvocation:getRegionStates
+MethodInvocation:getAssignmentManager
+MethodInvocation:getRegionInfo
+Method-name:setTransitionState
+Method-returnType:void
+Method-parameters:[final RegionTransitionState state]
+FieldAccess:transitionState
+Method-name:getTransitionState
+Method-returnType:RegionTransitionState
+Method-parameters:[]
+Method-name:startTransition
+Method-returnType:boolean
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode]
+Method-name:updateTransition
+Method-returnType:boolean
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode]
+Method-name:finishTransition
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode]
+Method-name:reportTransition
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode, TransitionCode code, long seqId]
+Method-name:remoteCallBuild
+Method-returnType:Optional<RemoteOperation>
+Method-parameters:[MasterProcedureEnv env, ServerName serverName]
+Method-name:remoteCallFailed
+Method-returnType:boolean
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode, IOException exception]
+Method-name:remoteCallFailed
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env, final ServerName serverName, final IOException exception]
+Method-name:toStringState
+Method-returnType:void
+Method-parameters:[StringBuilder builder]
+FieldAccess:transitionState
+MethodInvocation:isFinished
+MethodInvocation:append
+MethodInvocation:append
+Method-name:execute
+Method-returnType:Procedure[]
+Method-parameters:[final MasterProcedureEnv env]
+Method-name:rollback
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env]
+Method-name:isRollbackSupported
+Method-returnType:boolean
+Method-parameters:[final RegionTransitionState state]
+Method-name:abort
+Method-returnType:boolean
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:isRollbackSupported
+MethodInvocation:set
+Method-name:remoteOperationCompleted
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env]
+Method-name:remoteOperationFailed
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, RemoteProcedureException error]

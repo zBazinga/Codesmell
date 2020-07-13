@@ -1,0 +1,73 @@
+Class:CsvReader
+Field:INSTANCE
+MethodInvocation:register
+Method-name:register
+Method-returnType:void
+Method-parameters:[ReaderRegistry registry]
+MethodInvocation:registerExtension
+MethodInvocation:registerMimeType
+MethodInvocation:registerOptions
+Method-name:CsvReader
+Method-returnType:null
+Method-parameters:[]
+Method-name:getReaderAndColumnTypes
+Method-returnType:Pair<Reader,ColumnType[]>
+Method-parameters:[Source source, CsvReadOptions options]
+MethodInvocation:columnTypes
+MethodInvocation:createReader
+MethodInvocation:file
+MethodInvocation:getBytes
+MethodInvocation:toString
+MethodInvocation:createReader
+MethodInvocation:detectColumnTypes
+MethodInvocation:create
+MethodInvocation:createReader
+Method-name:read
+Method-returnType:Table
+Method-parameters:[CsvReadOptions options]
+MethodInvocation:read
+Method-name:read
+Method-returnType:Table
+Method-parameters:[CsvReadOptions options, boolean headerOnly]
+MethodInvocation:getReaderAndColumnTypes
+MethodInvocation:source
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:csvParser
+MethodInvocation:parseRows
+MethodInvocation:sampleSize
+MethodInvocation:reader
+MethodInvocation:source
+MethodInvocation:stopParsing
+MethodInvocation:close
+Method-name:printColumnTypes
+Method-returnType:String
+Method-parameters:[CsvReadOptions options]
+MethodInvocation:structure
+MethodInvocation:read
+MethodInvocation:getTypeString
+Method-name:detectColumnTypes
+Method-returnType:ColumnType[]
+Method-parameters:[Reader reader, CsvReadOptions options]
+MethodInvocation:header
+MethodInvocation:csvParser
+MethodInvocation:getColumnTypes
+MethodInvocation:stopParsing
+Method-name:csvParser
+Method-returnType:CsvParser
+Method-parameters:[CsvReadOptions options]
+MethodInvocation:setLineSeparatorDetectionEnabled
+MethodInvocation:lineSeparatorDetectionEnabled
+MethodInvocation:setFormat
+MethodInvocation:csvFormat
+MethodInvocation:setMaxCharsPerColumn
+MethodInvocation:maxCharsPerColumn
+MethodInvocation:maxNumberOfColumns
+MethodInvocation:setMaxColumns
+MethodInvocation:maxNumberOfColumns
+Method-name:read
+Method-returnType:Table
+Method-parameters:[Source source]
+MethodInvocation:read
+MethodInvocation:build
+MethodInvocation:builder

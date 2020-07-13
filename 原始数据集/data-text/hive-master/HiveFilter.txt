@@ -1,0 +1,76 @@
+Class:HiveFilter
+Method-name:isSqlCountCheck
+Method-returnType:boolean
+Method-parameters:[HiveRemoveSqCountCheck hiveRemoveSqCountCheck]
+MethodInvocation:getCondition
+MethodInvocation:getCondition
+MethodInvocation:getKind
+MethodInvocation:getOperands
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getOperator
+Class:StatEnhancedHiveFilter
+Field:rowCount
+Method-name:StatEnhancedHiveFilter
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traits, RelNode child, RexNode condition, long rowCount]
+FieldAccess:rowCount
+Method-name:getRowCount
+Method-returnType:long
+Method-parameters:[]
+Method-name:estimateRowCount
+Method-returnType:double
+Method-parameters:[RelMetadataQuery mq]
+Method-name:copy
+Method-returnType:Filter
+Method-parameters:[RelTraitSet traitSet, RelNode input, RexNode condition]
+Method-name:HiveFilter
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traits, RelNode child, RexNode condition]
+MethodInvocation:getDefaultTraitSet
+Method-name:copy
+Method-returnType:Filter
+Method-parameters:[RelTraitSet traitSet, RelNode input, RexNode condition]
+Method-name:implement
+Method-returnType:void
+Method-parameters:[Implementor implementor]
+Method-name:findCorrelatedVar
+Method-returnType:void
+Method-parameters:[RexNode node, Set<CorrelationId> allVars]
+MethodInvocation:getOperands
+MethodInvocation:getReferenceExpr
+MethodInvocation:add
+FieldAccess:id
+MethodInvocation:findCorrelatedVar
+Method-name:traverseFilter
+Method-returnType:void
+Method-parameters:[RexNode node, Set<CorrelationId> allVars]
+MethodInvocation:getInput
+FieldAccess:rel
+MethodInvocation:size
+MethodInvocation:getInputs
+MethodInvocation:size
+MethodInvocation:getInputs
+MethodInvocation:getInput
+MethodInvocation:findCorrelatedVar
+MethodInvocation:getCondition
+MethodInvocation:size
+MethodInvocation:getOperands
+MethodInvocation:get
+MethodInvocation:getOperands
+MethodInvocation:traverseFilter
+Method-name:getVariablesSet
+Method-returnType:Set<CorrelationId>
+Method-parameters:[]
+MethodInvocation:traverseFilter
+Method-name:getVariablesSet
+Method-returnType:Set<CorrelationId>
+Method-parameters:[RexSubQuery e]
+MethodInvocation:traverseFilter
+Method-name:accept
+Method-returnType:RelNode
+Method-parameters:[RelShuttle shuttle]
+MethodInvocation:visit
+MethodInvocation:visit

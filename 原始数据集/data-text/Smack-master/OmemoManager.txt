@@ -1,0 +1,407 @@
+Class:OmemoManager
+Field:LOGGER
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:UNKNOWN_DEVICE_ID
+Field:INSTANCES
+Field:service
+Field:omemoMessageListeners
+Field:omemoMucMessageListeners
+Field:pepManager
+Field:trustCallback
+Field:ownJid
+Field:deviceId
+Method-name:OmemoManager
+Method-returnType:null
+Method-parameters:[XMPPConnection connection, Integer deviceId]
+MethodInvocation:getInstance
+MethodInvocation:getInstanceFor
+FieldAccess:deviceId
+MethodInvocation:isAuthenticated
+MethodInvocation:initBareJidAndDeviceId
+MethodInvocation:addConnectionListener
+Method-name:authenticated
+Method-returnType:void
+Method-parameters:[XMPPConnection connection, boolean resumed]
+MethodInvocation:initBareJidAndDeviceId
+MethodInvocation:registerRatchetForManager
+MethodInvocation:resumeStanzaAndPEPListeners
+Method-name:getInstanceFor
+Method-returnType:OmemoManager
+Method-parameters:[XMPPConnection connection, Integer deviceId]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:put
+Method-name:getInstanceFor
+Method-returnType:OmemoManager
+Method-parameters:[XMPPConnection connection]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:size
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:firstKey
+Method-name:setTrustCallback
+Method-returnType:void
+Method-parameters:[OmemoTrustCallback callback]
+Method-name:getTrustCallback
+Method-returnType:OmemoTrustCallback
+Method-parameters:[]
+Method-name:initialize
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isAuthenticated
+MethodInvocation:connection
+MethodInvocation:getTrustCallback
+MethodInvocation:init
+MethodInvocation:getOmemoService
+Method-name:initializeAsync
+Method-returnType:void
+Method-parameters:[final InitializationFinishedCallback finishedCallback]
+MethodInvocation:go
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:initialize
+MethodInvocation:initializationFinished
+MethodInvocation:initializationFailed
+Method-name:getDevicesOf
+Method-returnType:Set<OmemoDevice>
+Method-parameters:[BareJid contact]
+MethodInvocation:loadCachedDeviceList
+MethodInvocation:getOmemoStoreBackend
+MethodInvocation:getOmemoService
+MethodInvocation:getOwnDevice
+MethodInvocation:getActiveDevices
+MethodInvocation:add
+Method-name:encrypt
+Method-returnType:OmemoMessage.Sent
+Method-parameters:[BareJid recipient, String message]
+MethodInvocation:add
+MethodInvocation:encrypt
+Method-name:encrypt
+Method-returnType:OmemoMessage.Sent
+Method-parameters:[Set<BareJid> recipients, String message]
+MethodInvocation:getDevicesOf
+MethodInvocation:getOwnJid
+MethodInvocation:addAll
+MethodInvocation:getDevicesOf
+MethodInvocation:createOmemoMessage
+Method-name:decrypt
+Method-returnType:OmemoMessage.Received
+Method-parameters:[BareJid sender, OmemoElement omemoElement]
+MethodInvocation:decryptMessage
+MethodInvocation:getOmemoService
+Method-name:decryptMamQueryResult
+Method-returnType:List<MessageOrOmemoMessage>
+Method-parameters:[MamManager.MamQuery mamQuery]
+MethodInvocation:decryptMamQueryResult
+MethodInvocation:getOmemoService
+Method-name:trustOmemoIdentity
+Method-returnType:void
+Method-parameters:[OmemoDevice device, OmemoFingerprint fingerprint]
+MethodInvocation:setTrust
+Method-name:distrustOmemoIdentity
+Method-returnType:void
+Method-parameters:[OmemoDevice device, OmemoFingerprint fingerprint]
+MethodInvocation:setTrust
+Method-name:isTrustedOmemoIdentity
+Method-returnType:boolean
+Method-parameters:[OmemoDevice device, OmemoFingerprint fingerprint]
+MethodInvocation:getTrust
+Method-name:isDecidedOmemoIdentity
+Method-returnType:boolean
+Method-parameters:[OmemoDevice device, OmemoFingerprint fingerprint]
+MethodInvocation:getTrust
+Method-name:sendRatchetUpdateMessage
+Method-returnType:void
+Method-parameters:[OmemoDevice recipient]
+MethodInvocation:connection
+MethodInvocation:to
+MethodInvocation:buildMessageStanza
+MethodInvocation:getStanzaFactory
+MethodInvocation:getJid
+MethodInvocation:createRatchetUpdateElement
+MethodInvocation:getOmemoService
+MethodInvocation:addExtension
+MethodInvocation:set
+MethodInvocation:sendStanza
+MethodInvocation:build
+Method-name:contactSupportsOmemo
+Method-returnType:boolean
+Method-parameters:[BareJid contact]
+MethodInvocation:refreshDeviceList
+MethodInvocation:getOmemoService
+MethodInvocation:connection
+MethodInvocation:getOwnDevice
+MethodInvocation:isEmpty
+MethodInvocation:getActiveDevices
+Method-name:multiUserChatSupportsOmemo
+Method-returnType:boolean
+Method-parameters:[MultiUserChat multiUserChat]
+MethodInvocation:getRoom
+MethodInvocation:getRoomInfo
+MethodInvocation:getInstanceFor
+MethodInvocation:connection
+MethodInvocation:isNonanonymous
+MethodInvocation:isMembersOnly
+Method-name:serverSupportsOmemo
+Method-returnType:boolean
+Method-parameters:[XMPPConnection connection, DomainBareJid server]
+MethodInvocation:containsFeature
+MethodInvocation:discoverInfo
+MethodInvocation:getInstanceFor
+Method-name:getOwnFingerprint
+Method-returnType:OmemoFingerprint
+Method-parameters:[]
+MethodInvocation:getOwnJid
+MethodInvocation:getFingerprint
+MethodInvocation:getOmemoStoreBackend
+MethodInvocation:getOmemoService
+MethodInvocation:getOwnDevice
+Method-name:getFingerprint
+Method-returnType:OmemoFingerprint
+Method-parameters:[OmemoDevice device]
+MethodInvocation:getOwnJid
+MethodInvocation:equals
+MethodInvocation:getOwnDevice
+MethodInvocation:getOwnFingerprint
+MethodInvocation:getFingerprintAndMaybeBuildSession
+MethodInvocation:getOmemoStoreBackend
+MethodInvocation:getOmemoService
+Method-name:getActiveFingerprints
+Method-returnType:HashMap<OmemoDevice,OmemoFingerprint>
+Method-parameters:[BareJid contact]
+MethodInvocation:getOwnJid
+MethodInvocation:loadCachedDeviceList
+MethodInvocation:getOmemoStoreBackend
+MethodInvocation:getOmemoService
+MethodInvocation:getOwnDevice
+MethodInvocation:getActiveDevices
+MethodInvocation:getFingerprint
+MethodInvocation:put
+Method-name:addOmemoMessageListener
+Method-returnType:void
+Method-parameters:[OmemoMessageListener listener]
+MethodInvocation:add
+Method-name:removeOmemoMessageListener
+Method-returnType:void
+Method-parameters:[OmemoMessageListener listener]
+MethodInvocation:remove
+Method-name:addOmemoMucMessageListener
+Method-returnType:void
+Method-parameters:[OmemoMucMessageListener listener]
+MethodInvocation:add
+Method-name:removeOmemoMucMessageListener
+Method-returnType:void
+Method-parameters:[OmemoMucMessageListener listener]
+MethodInvocation:remove
+Method-name:requestDeviceListUpdateFor
+Method-returnType:void
+Method-parameters:[BareJid contact]
+MethodInvocation:refreshDeviceList
+MethodInvocation:getOmemoService
+MethodInvocation:connection
+MethodInvocation:getOwnDevice
+Method-name:purgeDeviceList
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:purgeDeviceList
+MethodInvocation:getOmemoService
+Method-name:rotateSignedPreKey
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isAuthenticated
+MethodInvocation:connection
+MethodInvocation:changeSignedPreKey
+MethodInvocation:getOmemoStoreBackend
+MethodInvocation:getOmemoService
+MethodInvocation:getOwnDevice
+MethodInvocation:packOmemoBundle
+MethodInvocation:getOmemoStoreBackend
+MethodInvocation:getOmemoService
+MethodInvocation:getOwnDevice
+MethodInvocation:publishBundle
+MethodInvocation:connection
+MethodInvocation:getOwnDevice
+Method-name:stanzaContainsOmemoElement
+Method-returnType:boolean
+Method-parameters:[Stanza stanza]
+MethodInvocation:hasExtension
+Method-name:throwIfNoServiceSet
+Method-returnType:void
+Method-parameters:[]
+Method-name:randomDeviceId
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:nextInt
+Method-name:getOwnJid
+Method-returnType:BareJid
+Method-parameters:[]
+MethodInvocation:isAuthenticated
+MethodInvocation:connection
+MethodInvocation:asBareJid
+MethodInvocation:getUser
+MethodInvocation:connection
+Method-name:getDeviceId
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:getOwnDevice
+Method-returnType:OmemoDevice
+Method-parameters:[]
+MethodInvocation:getOwnJid
+MethodInvocation:getDeviceId
+Method-name:setDeviceId
+Method-returnType:void
+Method-parameters:[int nDeviceId]
+MethodInvocation:remove
+MethodInvocation:get
+MethodInvocation:connection
+MethodInvocation:getDeviceId
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:connection
+FieldAccess:deviceId
+Method-name:notifyOmemoMessageReceived
+Method-returnType:void
+Method-parameters:[Stanza stanza, OmemoMessage.Received decryptedMessage]
+MethodInvocation:onOmemoMessageReceived
+Method-name:notifyOmemoMucMessageReceived
+Method-returnType:void
+Method-parameters:[MultiUserChat muc, Stanza stanza, OmemoMessage.Received decryptedMessage]
+MethodInvocation:onOmemoMucMessageReceived
+Method-name:notifyOmemoCarbonCopyReceived
+Method-returnType:void
+Method-parameters:[CarbonExtension.Direction direction, Message carbonCopy, Message wrappingMessage, OmemoMessage.Received decryptedCarbonCopy]
+MethodInvocation:onOmemoCarbonCopyReceived
+Method-name:resumeStanzaAndPEPListeners
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getInstanceFor
+MethodInvocation:connection
+MethodInvocation:removeAsyncStanzaListener
+MethodInvocation:connection
+MethodInvocation:removeCarbonCopyReceivedListener
+MethodInvocation:addPepEventListener
+MethodInvocation:addAsyncStanzaListener
+MethodInvocation:connection
+MethodInvocation:addCarbonCopyReceivedListener
+Method-name:stopStanzaAndPEPListeners
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:removePepEventListener
+MethodInvocation:removeAsyncStanzaListener
+MethodInvocation:connection
+MethodInvocation:removeCarbonCopyReceivedListener
+MethodInvocation:getInstanceFor
+MethodInvocation:connection
+Method-name:rebuildSessionWith
+Method-returnType:void
+Method-parameters:[OmemoDevice contactsDevice]
+MethodInvocation:isAuthenticated
+MethodInvocation:connection
+MethodInvocation:buildFreshSessionWithDevice
+MethodInvocation:getOmemoService
+MethodInvocation:connection
+MethodInvocation:getOwnDevice
+Method-name:getConnection
+Method-returnType:XMPPConnection
+Method-parameters:[]
+MethodInvocation:connection
+Method-name:getOmemoService
+Method-returnType:OmemoService<?,?,?,?,?,?,?,?,?>
+Method-parameters:[]
+MethodInvocation:throwIfNoServiceSet
+Method-name:internalOmemoMessageStanzaListener
+Method-returnType:void
+Method-parameters:[final Stanza packet]
+MethodInvocation:go
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onOmemoMessageStanzaReceived
+MethodInvocation:getOmemoService
+MethodInvocation:log
+Method-name:internalOmemoCarbonCopyListener
+Method-returnType:void
+Method-parameters:[final CarbonExtension.Direction direction, final Message carbonCopy, final Message wrappingMessage]
+MethodInvocation:go
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isOmemoMessage
+MethodInvocation:onOmemoCarbonCopyReceived
+MethodInvocation:getOmemoService
+MethodInvocation:log
+Field:pepOmemoDeviceListEventListener
+MethodInvocation:mergeCachedDeviceList
+MethodInvocation:getOmemoStoreBackend
+MethodInvocation:getOmemoService
+MethodInvocation:getOwnDevice
+MethodInvocation:equals
+MethodInvocation:asBareJid
+MethodInvocation:getOwnJid
+MethodInvocation:cleanUpDeviceList
+MethodInvocation:getOmemoService
+MethodInvocation:getOwnDevice
+MethodInvocation:log
+MethodInvocation:equals
+MethodInvocation:copyDeviceIds
+MethodInvocation:copyDeviceIds
+MethodInvocation:log
+MethodInvocation:toString
+MethodInvocation:toArray
+MethodInvocation:copyDeviceIds
+MethodInvocation:toString
+MethodInvocation:toArray
+MethodInvocation:copyDeviceIds
+MethodInvocation:go
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:publishDeviceList
+MethodInvocation:connection
+MethodInvocation:log
+Method-name:isOmemoMessage
+Method-returnType:boolean
+Method-parameters:[Stanza stanza]
+MethodInvocation:stanzaContainsOmemoElement
+Class:LoggedInOmemoManager
+Field:manager
+Method-name:LoggedInOmemoManager
+Method-returnType:null
+Method-parameters:[OmemoManager manager]
+MethodInvocation:getOwnJid
+MethodInvocation:isAuthenticated
+MethodInvocation:getConnection
+MethodInvocation:asBareJid
+MethodInvocation:getUser
+MethodInvocation:getConnection
+FieldAccess:manager
+Method-name:get
+Method-returnType:OmemoManager
+Method-parameters:[]
+Method-name:initializationFinished
+Method-returnType:void
+Method-parameters:[OmemoManager manager]
+Method-name:initializationFailed
+Method-returnType:void
+Method-parameters:[Exception cause]
+Method-name:initBareJidAndDeviceId
+Method-returnType:void
+Method-parameters:[OmemoManager manager]
+MethodInvocation:isAuthenticated
+MethodInvocation:getConnection
+MethodInvocation:asBareJid
+MethodInvocation:getUser
+MethodInvocation:getConnection
+MethodInvocation:equals
+MethodInvocation:localDeviceIdsOf
+MethodInvocation:getOmemoStoreBackend
+MethodInvocation:getOmemoService
+MethodInvocation:size
+MethodInvocation:setDeviceId
+MethodInvocation:first
+MethodInvocation:setDeviceId
+MethodInvocation:randomDeviceId

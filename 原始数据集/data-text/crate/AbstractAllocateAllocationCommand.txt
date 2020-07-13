@@ -1,0 +1,114 @@
+Class:AbstractAllocateAllocationCommand
+Field:INDEX_FIELD
+Field:SHARD_FIELD
+Field:NODE_FIELD
+Method-name:createAllocateParser
+Method-returnType:ObjectParser<T,Void>
+Method-parameters:[String command]
+MethodInvocation:declareString
+MethodInvocation:declareInt
+MethodInvocation:declareString
+Class:Builder
+Field:index
+Field:shard
+Field:node
+Method-name:setIndex
+Method-returnType:void
+Method-parameters:[String index]
+FieldAccess:index
+Method-name:setShard
+Method-returnType:void
+Method-parameters:[int shard]
+FieldAccess:shard
+Method-name:setNode
+Method-returnType:void
+Method-parameters:[String node]
+FieldAccess:node
+Method-name:parse
+Method-returnType:Builder<T>
+Method-parameters:[XContentParser parser]
+Method-name:build
+Method-returnType:T
+Method-parameters:[]
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+Field:index
+Field:shardId
+Field:node
+Method-name:AbstractAllocateAllocationCommand
+Method-returnType:null
+Method-parameters:[String index, int shardId, String node]
+FieldAccess:index
+FieldAccess:shardId
+FieldAccess:node
+Method-name:AbstractAllocateAllocationCommand
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readString
+MethodInvocation:readVInt
+MethodInvocation:readString
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeString
+MethodInvocation:writeVInt
+MethodInvocation:writeString
+Method-name:index
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:index
+Method-name:shardId
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:shardId
+Method-name:node
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:node
+Method-name:explainOrThrowMissingRoutingNode
+Method-returnType:RerouteExplanation
+Method-parameters:[RoutingAllocation allocation, boolean explain, DiscoveryNode discoNode]
+MethodInvocation:isDataNode
+MethodInvocation:explainOrThrowRejectedCommand
+MethodInvocation:explainOrThrowRejectedCommand
+Method-name:explainOrThrowRejectedCommand
+Method-returnType:RerouteExplanation
+Method-parameters:[boolean explain, RoutingAllocation allocation, RuntimeException rte]
+MethodInvocation:decision
+MethodInvocation:name
+MethodInvocation:getMessage
+Method-name:initializeUnassignedShard
+Method-returnType:void
+Method-parameters:[RoutingAllocation allocation, RoutingNodes routingNodes, RoutingNode routingNode, ShardRouting shardRouting]
+MethodInvocation:initializeUnassignedShard
+Method-name:initializeUnassignedShard
+Method-returnType:void
+Method-parameters:[RoutingAllocation allocation, RoutingNodes routingNodes, RoutingNode routingNode, ShardRouting shardRouting, @Nullable UnassignedInfo unassignedInfo, @Nullable RecoverySource recoverySource]
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, ToXContent.Params params]
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:index
+MethodInvocation:field
+MethodInvocation:shardId
+MethodInvocation:field
+MethodInvocation:node
+MethodInvocation:extraXContent
+MethodInvocation:endObject
+Method-name:extraXContent
+Method-returnType:void
+Method-parameters:[XContentBuilder builder]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash

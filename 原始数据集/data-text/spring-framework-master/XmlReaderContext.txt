@@ -1,0 +1,59 @@
+Class:XmlReaderContext
+Field:reader
+Field:namespaceHandlerResolver
+Method-name:XmlReaderContext
+Method-returnType:null
+Method-parameters:[Resource resource, ProblemReporter problemReporter, ReaderEventListener eventListener, SourceExtractor sourceExtractor, XmlBeanDefinitionReader reader, NamespaceHandlerResolver namespaceHandlerResolver]
+FieldAccess:reader
+FieldAccess:namespaceHandlerResolver
+Method-name:getReader
+Method-returnType:XmlBeanDefinitionReader
+Method-parameters:[]
+FieldAccess:reader
+Method-name:getRegistry
+Method-returnType:BeanDefinitionRegistry
+Method-parameters:[]
+MethodInvocation:getRegistry
+FieldAccess:reader
+Method-name:getResourceLoader
+Method-returnType:ResourceLoader
+Method-parameters:[]
+MethodInvocation:getResourceLoader
+FieldAccess:reader
+Method-name:getBeanClassLoader
+Method-returnType:ClassLoader
+Method-parameters:[]
+MethodInvocation:getBeanClassLoader
+FieldAccess:reader
+Method-name:getEnvironment
+Method-returnType:Environment
+Method-parameters:[]
+MethodInvocation:getEnvironment
+FieldAccess:reader
+Method-name:getNamespaceHandlerResolver
+Method-returnType:NamespaceHandlerResolver
+Method-parameters:[]
+FieldAccess:namespaceHandlerResolver
+Method-name:generateBeanName
+Method-returnType:String
+Method-parameters:[BeanDefinition beanDefinition]
+MethodInvocation:generateBeanName
+MethodInvocation:getBeanNameGenerator
+FieldAccess:reader
+MethodInvocation:getRegistry
+Method-name:registerWithGeneratedName
+Method-returnType:String
+Method-parameters:[BeanDefinition beanDefinition]
+MethodInvocation:generateBeanName
+MethodInvocation:registerBeanDefinition
+MethodInvocation:getRegistry
+Method-name:readDocumentFromString
+Method-returnType:Document
+Method-parameters:[String documentContent]
+MethodInvocation:doLoadDocument
+FieldAccess:reader
+MethodInvocation:getResource
+Method-name:createDelegate
+Method-returnType:BeanDefinitionParserDelegate
+Method-parameters:[Element root, @Nullable BeanDefinitionParserDelegate parentDelegate, DefaultBeanDefinitionDocumentReader defaultBeanDefinitionDocumentReader]
+MethodInvocation:initDefaults

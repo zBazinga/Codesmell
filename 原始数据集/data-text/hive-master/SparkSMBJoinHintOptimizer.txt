@@ -1,0 +1,34 @@
+Class:SparkSMBJoinHintOptimizer
+Method-name:SparkSMBJoinHintOptimizer
+Method-returnType:null
+Method-parameters:[ParseContext pctx]
+Method-name:SparkSMBJoinHintOptimizer
+Method-returnType:null
+Method-parameters:[]
+Method-name:process
+Method-returnType:Object
+Method-parameters:[Node nd, Stack<Node> stack, NodeProcessorCtx procCtx, Object... nodeOutputs]
+MethodInvocation:canConvertBucketMapJoinToSMBJoin
+MethodInvocation:getBoolVar
+MethodInvocation:getConf
+MethodInvocation:getMsg
+MethodInvocation:removeSmallTableReduceSink
+MethodInvocation:convertBucketMapJoinToSMBJoin
+Method-name:removeSmallTableReduceSink
+Method-returnType:void
+Method-parameters:[MapJoinOperator mapJoinOp]
+MethodInvocation:getConf
+MethodInvocation:getParentOperators
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getPosBigTable
+MethodInvocation:getParentOperators
+MethodInvocation:checkArgument
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:removeChild
+MethodInvocation:setChildOperators
+MethodInvocation:makeList
+MethodInvocation:set
+MethodInvocation:getParentOperators

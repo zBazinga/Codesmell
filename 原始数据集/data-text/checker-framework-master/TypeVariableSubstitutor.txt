@@ -1,0 +1,55 @@
+Class:TypeVariableSubstitutor
+Method-name:substitute
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[final Map<TypeVariable,AnnotatedTypeMirror> typeParamToArg, final AnnotatedTypeMirror typeMirror]
+MethodInvocation:visit
+Method-name:substituteTypeVariable
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[final AnnotatedTypeMirror argument, final AnnotatedTypeVariable use]
+MethodInvocation:deepCopy
+MethodInvocation:addAnnotations
+MethodInvocation:getAnnotationsField
+MethodInvocation:isEmpty
+MethodInvocation:getAnnotationsField
+MethodInvocation:replaceAnnotations
+MethodInvocation:getAnnotations
+Class:Visitor
+Field:elementToArgMap
+Method-name:Visitor
+Method-returnType:null
+Method-parameters:[final Map<TypeVariable,AnnotatedTypeMirror> typeParamToArg]
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:asElement
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:visitArray
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedArrayType original, IdentityHashMap<AnnotatedTypeMirror,AnnotatedTypeMirror> originalToCopy]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:createType
+MethodInvocation:getUnderlyingType
+MethodInvocation:isDeclaration
+MethodInvocation:maybeCopyPrimaryAnnotations
+MethodInvocation:put
+MethodInvocation:visit
+MethodInvocation:getComponentType
+MethodInvocation:isSameType
+MethodInvocation:getUnderlyingType
+MethodInvocation:getUnderlyingType
+MethodInvocation:getKind
+MethodInvocation:getArrayType
+MethodInvocation:getUnderlyingType
+MethodInvocation:createType
+MethodInvocation:addAnnotations
+MethodInvocation:getAnnotations
+MethodInvocation:setComponentType
+Method-name:visitTypeVariable
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedTypeVariable original, IdentityHashMap<AnnotatedTypeMirror,AnnotatedTypeMirror> originalToCopy]
+MethodInvocation:asElement
+MethodInvocation:getUnderlyingType
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:substituteTypeVariable

@@ -1,0 +1,117 @@
+Class:LocalRegistryService
+Field:registeredServices
+Field:subscribeListeners
+Field:registryUrl
+Method-name:LocalRegistryService
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:LocalRegistryService
+Method-returnType:null
+Method-parameters:[URL url]
+FieldAccess:registryUrl
+Method-name:doSubscribe
+Method-returnType:void
+Method-parameters:[URL url, NotifyListener listener]
+MethodInvocation:getSubscribeKey
+MethodInvocation:get
+MethodInvocation:putIfAbsent
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:putIfAbsent
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:discover
+MethodInvocation:size
+MethodInvocation:notify
+MethodInvocation:getUrl
+MethodInvocation:info
+Method-name:doUnsubscribe
+Method-returnType:void
+Method-parameters:[URL url, NotifyListener listener]
+MethodInvocation:getSubscribeKey
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:info
+Method-name:doDiscover
+Method-returnType:List<URL>
+Method-parameters:[URL url]
+MethodInvocation:get
+MethodInvocation:getRegistryKey
+Method-name:doAvailable
+Method-returnType:void
+Method-parameters:[URL url]
+Method-name:doUnavailable
+Method-returnType:void
+Method-parameters:[URL url]
+Method-name:doRegister
+Method-returnType:void
+Method-parameters:[URL url]
+MethodInvocation:getRegistryKey
+MethodInvocation:get
+MethodInvocation:putIfAbsent
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:info
+MethodInvocation:notifyListeners
+Method-name:doUnregister
+Method-returnType:void
+Method-parameters:[URL url]
+MethodInvocation:get
+MethodInvocation:getRegistryKey
+MethodInvocation:remove
+MethodInvocation:info
+MethodInvocation:notifyListeners
+Method-name:getUrl
+Method-returnType:URL
+Method-parameters:[]
+Method-name:getAllUrl
+Method-returnType:Map<String,List<URL>>
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:size
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:add
+MethodInvocation:createCopy
+MethodInvocation:put
+Method-name:remove
+Method-returnType:void
+Method-parameters:[URL url, List<URL> urls]
+MethodInvocation:isEmpty
+MethodInvocation:removeCachedUrlByIdentity
+Method-name:add
+Method-returnType:void
+Method-parameters:[URL url, List<URL> urls]
+MethodInvocation:removeCachedUrlByIdentity
+MethodInvocation:add
+Method-name:removeCachedUrlByIdentity
+Method-returnType:void
+Method-parameters:[URL url, List<URL> urls]
+MethodInvocation:isEmpty
+MethodInvocation:equals
+MethodInvocation:remove
+Method-name:notifyListeners
+Method-returnType:void
+Method-parameters:[URL changedUrl]
+MethodInvocation:discover
+MethodInvocation:get
+MethodInvocation:getSubscribeKey
+MethodInvocation:values
+MethodInvocation:notify
+MethodInvocation:getUrl
+MethodInvocation:warn
+MethodInvocation:format
+Method-name:getRegistryKey
+Method-returnType:String
+Method-parameters:[URL url]
+MethodInvocation:getPath
+MethodInvocation:getParameter
+MethodInvocation:getName
+MethodInvocation:warn
+Method-name:getSubscribeKey
+Method-returnType:String
+Method-parameters:[URL url]
+MethodInvocation:getRegistryKey

@@ -1,0 +1,166 @@
+Class:PTFPartition
+Field:LOG
+MethodInvocation:getLogger
+Field:serDe
+Field:inputOI
+Field:outputOI
+Field:elems
+Field:boundaryCache
+Method-name:PTFPartition
+Method-returnType:null
+Method-parameters:[Configuration cfg, AbstractSerDe serDe, StructObjectInspector inputOI, StructObjectInspector outputOI]
+Method-name:PTFPartition
+Method-returnType:null
+Method-parameters:[Configuration cfg, AbstractSerDe serDe, StructObjectInspector inputOI, StructObjectInspector outputOI, boolean createElemContainer]
+FieldAccess:serDe
+FieldAccess:inputOI
+FieldAccess:outputOI
+MethodInvocation:getIntVar
+MethodInvocation:setSerDe
+MethodInvocation:setTableDesc
+MethodInvocation:createTableDesc
+MethodInvocation:getIntVar
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clearRows
+Method-name:getSerDe
+Method-returnType:AbstractSerDe
+Method-parameters:[]
+Method-name:getInputOI
+Method-returnType:StructObjectInspector
+Method-parameters:[]
+Method-name:getOutputOI
+Method-returnType:StructObjectInspector
+Method-parameters:[]
+Method-name:getAt
+Method-returnType:Object
+Method-parameters:[int i]
+MethodInvocation:getAt
+Method-name:append
+Method-returnType:void
+Method-parameters:[Object o]
+MethodInvocation:rowCount
+MethodInvocation:format
+MethodInvocation:copyToStandardObject
+MethodInvocation:addRow
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:rowCount
+Method-name:iterator
+Method-returnType:PTFPartitionIterator<Object>
+Method-parameters:[]
+MethodInvocation:first
+MethodInvocation:size
+Method-name:range
+Method-returnType:PTFPartitionIterator<Object>
+Method-parameters:[int start, int end]
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:size
+MethodInvocation:assert
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+MethodInvocation:error
+MethodInvocation:toString
+Method-name:checkIfCacheCanEvict
+Method-returnType:void
+Method-parameters:[int rowIdx, boolean willScanFwd, ValueBoundaryScanner valueBoundaryScanner]
+MethodInvocation:getBoundaryCache
+MethodInvocation:floorEntry
+MethodInvocation:floorEntry
+MethodInvocation:getKey
+MethodInvocation:evictThisAndAllBefore
+MethodInvocation:getKey
+MethodInvocation:floorEntry
+MethodInvocation:getKey
+MethodInvocation:evictThisAndAllBefore
+MethodInvocation:getKey
+Class:PItr
+Field:idx
+Field:start
+Field:end
+Field:createTimeSz
+Method-name:PItr
+Method-returnType:null
+Method-parameters:[int start, int end]
+FieldAccess:idx
+FieldAccess:start
+FieldAccess:end
+MethodInvocation:size
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:checkForComodification
+Method-name:next
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:checkForComodification
+MethodInvocation:getAt
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]
+Method-name:checkForComodification
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getIndex
+Method-returnType:int
+Method-parameters:[]
+Method-name:getAt
+Method-returnType:Object
+Method-parameters:[int i]
+MethodInvocation:getAt
+Method-name:lead
+Method-returnType:Object
+Method-parameters:[int amt]
+MethodInvocation:getAt
+Method-name:lag
+Method-returnType:Object
+Method-parameters:[int amt]
+MethodInvocation:getAt
+Method-name:resetToIndex
+Method-returnType:Object
+Method-parameters:[int idx]
+MethodInvocation:getAt
+FieldAccess:idx
+Method-name:getPartition
+Method-returnType:PTFPartition
+Method-parameters:[]
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+Method-name:getIndex
+Method-returnType:int
+Method-parameters:[]
+Method-name:lead
+Method-returnType:T
+Method-parameters:[int amt]
+Method-name:lag
+Method-returnType:T
+Method-parameters:[int amt]
+Method-name:resetToIndex
+Method-returnType:Object
+Method-parameters:[int idx]
+Method-name:getPartition
+Method-returnType:PTFPartition
+Method-parameters:[]
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+Method-name:create
+Method-returnType:PTFPartition
+Method-parameters:[Configuration cfg, AbstractSerDe serDe, StructObjectInspector inputOI, StructObjectInspector outputOI]
+Method-name:createRolling
+Method-returnType:PTFRollingPartition
+Method-parameters:[Configuration cfg, AbstractSerDe serDe, StructObjectInspector inputOI, StructObjectInspector outputOI, int precedingSpan, int followingSpan]
+Method-name:setupPartitionOutputOI
+Method-returnType:StructObjectInspector
+Method-parameters:[AbstractSerDe serDe, StructObjectInspector tblFnOI]
+MethodInvocation:getStandardObjectInspector
+Method-name:getBoundaryCache
+Method-returnType:BoundaryCache
+Method-parameters:[]

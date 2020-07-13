@@ -1,0 +1,209 @@
+Class:Neuron
+Field:serialVersionUID
+Field:parentLayer
+Field:inputConnections
+Field:outConnections
+Field:netInput
+Field:output
+Field:error
+Field:inputFunction
+Field:transferFunction
+Field:label
+Method-name:Neuron
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:inputFunction
+FieldAccess:transferFunction
+FieldAccess:inputConnections
+FieldAccess:outConnections
+Method-name:Neuron
+Method-returnType:null
+Method-parameters:[InputFunction inputFunction, TransferFunction transferFunction]
+FieldAccess:inputFunction
+FieldAccess:transferFunction
+FieldAccess:inputConnections
+FieldAccess:outConnections
+Method-name:calculate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:inputConnections
+FieldAccess:netInput
+MethodInvocation:getOutput
+FieldAccess:inputFunction
+MethodInvocation:asArray
+FieldAccess:inputConnections
+FieldAccess:output
+MethodInvocation:getOutput
+FieldAccess:transferFunction
+FieldAccess:netInput
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setInput
+MethodInvocation:setOutput
+Method-name:setInput
+Method-returnType:void
+Method-parameters:[double input]
+FieldAccess:netInput
+Method-name:getNetInput
+Method-returnType:double
+Method-parameters:[]
+FieldAccess:netInput
+Method-name:getOutput
+Method-returnType:double
+Method-parameters:[]
+FieldAccess:output
+Method-name:hasInputConnections
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:inputConnections
+Method-name:hasOutputConnectionTo
+Method-returnType:boolean
+Method-parameters:[Neuron neuron]
+MethodInvocation:getToNeuron
+Method-name:hasInputConnectionFrom
+Method-returnType:boolean
+Method-parameters:[Neuron neuron]
+MethodInvocation:getFromNeuron
+Method-name:addInputConnection
+Method-returnType:void
+Method-parameters:[Connection connection]
+MethodInvocation:getToNeuron
+MethodInvocation:hasInputConnectionFrom
+MethodInvocation:getFromNeuron
+MethodInvocation:add
+FieldAccess:inputConnections
+MethodInvocation:getFromNeuron
+MethodInvocation:addOutputConnection
+Method-name:addInputConnection
+Method-returnType:void
+Method-parameters:[Neuron fromNeuron]
+MethodInvocation:addInputConnection
+Method-name:addInputConnection
+Method-returnType:void
+Method-parameters:[Neuron fromNeuron, double weightVal]
+MethodInvocation:addInputConnection
+Method-name:addOutputConnection
+Method-returnType:void
+Method-parameters:[Connection connection]
+MethodInvocation:getFromNeuron
+MethodInvocation:hasOutputConnectionTo
+MethodInvocation:getToNeuron
+MethodInvocation:add
+FieldAccess:outConnections
+Method-name:getInputConnections
+Method-returnType:Connection[]
+Method-parameters:[]
+MethodInvocation:asArray
+Method-name:getOutConnections
+Method-returnType:Connection[]
+Method-parameters:[]
+MethodInvocation:asArray
+Method-name:removeInputConnection
+Method-returnType:void
+Method-parameters:[Connection conn]
+MethodInvocation:remove
+Method-name:removeOutputConnection
+Method-returnType:void
+Method-parameters:[Connection conn]
+MethodInvocation:remove
+Method-name:removeInputConnectionFrom
+Method-returnType:void
+Method-parameters:[Neuron fromNeuron]
+MethodInvocation:size
+MethodInvocation:getFromNeuron
+MethodInvocation:get
+MethodInvocation:removeOutputConnection
+MethodInvocation:get
+MethodInvocation:removeInputConnection
+MethodInvocation:get
+Method-name:removeOutputConnectionTo
+Method-returnType:void
+Method-parameters:[Neuron toNeuron]
+MethodInvocation:size
+MethodInvocation:getToNeuron
+MethodInvocation:get
+MethodInvocation:removeInputConnection
+MethodInvocation:get
+MethodInvocation:removeOutputConnection
+MethodInvocation:get
+Method-name:removeAllInputConnections
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:removeAllOutputConnections
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:removeAllConnections
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:removeAllInputConnections
+MethodInvocation:removeAllOutputConnections
+Method-name:getConnectionFrom
+Method-returnType:Connection
+Method-parameters:[Neuron fromNeuron]
+FieldAccess:inputConnections
+MethodInvocation:getFromNeuron
+Method-name:setInputFunction
+Method-returnType:void
+Method-parameters:[InputFunction inputFunction]
+FieldAccess:inputFunction
+Method-name:setTransferFunction
+Method-returnType:void
+Method-parameters:[TransferFunction transferFunction]
+FieldAccess:transferFunction
+Method-name:getInputFunction
+Method-returnType:InputFunction
+Method-parameters:[]
+FieldAccess:inputFunction
+Method-name:getTransferFunction
+Method-returnType:TransferFunction
+Method-parameters:[]
+FieldAccess:transferFunction
+Method-name:setParentLayer
+Method-returnType:void
+Method-parameters:[Layer parent]
+FieldAccess:parentLayer
+Method-name:getParentLayer
+Method-returnType:Layer
+Method-parameters:[]
+FieldAccess:parentLayer
+Method-name:getWeights
+Method-returnType:Weight[]
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:getWeight
+MethodInvocation:get
+Method-name:getError
+Method-returnType:double
+Method-parameters:[]
+Method-name:setError
+Method-returnType:void
+Method-parameters:[double error]
+FieldAccess:error
+Method-name:setOutput
+Method-returnType:void
+Method-parameters:[double output]
+FieldAccess:output
+Method-name:initializeWeights
+Method-returnType:void
+Method-parameters:[double value]
+FieldAccess:inputConnections
+MethodInvocation:setValue
+MethodInvocation:getWeight
+Method-name:getLabel
+Method-returnType:String
+Method-parameters:[]
+Method-name:setLabel
+Method-returnType:void
+Method-parameters:[String label]
+FieldAccess:label
+Method-name:removeNeuron
+Method-returnType:void
+Method-parameters:[Layer layer]
+MethodInvocation:indexOf
+MethodInvocation:removeNeuronAt

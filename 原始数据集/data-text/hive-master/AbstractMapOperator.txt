@@ -1,0 +1,87 @@
+Class:AbstractMapOperator
+Field:serialVersionUID
+Method-name:getKeyValueReader
+Method-returnType:KeyValueReader
+Method-parameters:[Collection<KeyValueReader> keyValueReaders, MapRecordProcessor mapRecordProcessor]
+MethodInvocation:initializeContexts
+MethodInvocation:getCurrentDeserializer
+MethodInvocation:getObjectInspector
+MethodInvocation:getSortCols
+MethodInvocation:getConf
+Field:Counter
+Field:deserialize_error_count
+Field:recordCounter
+Field:numRows
+Field:connectedOperators
+Field:normalizedPaths
+Method-name:normalizePath
+Method-returnType:Path
+Method-parameters:[Path onefile, boolean schemaless]
+MethodInvocation:get
+MethodInvocation:getScheme
+MethodInvocation:toUri
+MethodInvocation:getPath
+MethodInvocation:toUri
+MethodInvocation:put
+Method-name:getNominalPath
+Method-returnType:Path
+Method-parameters:[Path fpath]
+MethodInvocation:getScheme
+MethodInvocation:toUri
+MethodInvocation:keySet
+MethodInvocation:getPathToAliases
+MethodInvocation:normalizePath
+MethodInvocation:getScheme
+MethodInvocation:toUri
+MethodInvocation:getPath
+MethodInvocation:toUri
+MethodInvocation:equals
+MethodInvocation:relativize
+MethodInvocation:toUri
+MethodInvocation:toUri
+MethodInvocation:toUri
+Method-name:initEmptyInputChildren
+Method-returnType:void
+Method-parameters:[List<Operator<?>> children, Configuration hconf]
+Method-name:AbstractMapOperator
+Method-returnType:null
+Method-parameters:[]
+Method-name:AbstractMapOperator
+Method-returnType:null
+Method-parameters:[CompilationOpContext ctx]
+Method-name:setChildren
+Method-returnType:void
+Method-parameters:[Configuration hconf]
+Method-name:initializeMapOperator
+Method-returnType:void
+Method-parameters:[Configuration hconf]
+MethodInvocation:put
+MethodInvocation:toString
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:replace
+MethodInvocation:put
+Method-name:initializeContexts
+Method-returnType:void
+Method-parameters:[]
+Method-name:getCurrentDeserializer
+Method-returnType:Deserializer
+Method-parameters:[]
+Method-name:process
+Method-returnType:void
+Method-parameters:[Writable value]
+Method-name:closeOp
+Method-returnType:void
+Method-parameters:[boolean abort]
+MethodInvocation:set
+Method-name:clearConnectedOperators
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:setConnectedOperators
+Method-returnType:void
+Method-parameters:[int tag, DummyStoreOperator dummyOp]
+MethodInvocation:put
+Method-name:getConnectedOperators
+Method-returnType:Map<Integer,DummyStoreOperator>
+Method-parameters:[]

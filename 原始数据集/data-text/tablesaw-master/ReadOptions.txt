@@ -1,0 +1,182 @@
+Class:ReadOptions
+Field:DEFAULT_IGNORE_ZERO_DECIMAL
+Field:DEFAULT_TYPES
+MethodInvocation:newArrayList
+Field:EXTENDED_TYPES
+MethodInvocation:newArrayList
+Field:source
+Field:tableName
+Field:columnTypesToDetect
+Field:sample
+Field:dateFormat
+Field:dateTimeFormat
+Field:timeFormat
+Field:locale
+Field:missingValueIndicator
+Field:minimizeColumnSizes
+Field:maxCharsPerColumn
+Field:ignoreZeroDecimal
+Field:dateFormatter
+Field:dateTimeFormatter
+Field:timeFormatter
+Field:header
+Method-name:ReadOptions
+Method-returnType:null
+Method-parameters:[ReadOptions.Builder builder]
+MethodInvocation:getDefault
+Method-name:source
+Method-returnType:Source
+Method-parameters:[]
+Method-name:tableName
+Method-returnType:String
+Method-parameters:[]
+Method-name:columnTypesToDetect
+Method-returnType:List<ColumnType>
+Method-parameters:[]
+Method-name:sample
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:minimizeColumnSizes
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:missingValueIndicator
+Method-returnType:String
+Method-parameters:[]
+Method-name:locale
+Method-returnType:Locale
+Method-parameters:[]
+Method-name:header
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:ignoreZeroDecimal
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:dateTimeFormatter
+Method-returnType:DateTimeFormatter
+Method-parameters:[]
+MethodInvocation:isNullOrEmpty
+MethodInvocation:ofPattern
+Method-name:timeFormatter
+Method-returnType:DateTimeFormatter
+Method-parameters:[]
+MethodInvocation:isNullOrEmpty
+MethodInvocation:ofPattern
+Method-name:dateFormatter
+Method-returnType:DateTimeFormatter
+Method-parameters:[]
+MethodInvocation:isNullOrEmpty
+MethodInvocation:ofPattern
+Method-name:getColumnNames
+Method-returnType:String[]
+Method-parameters:[ColumnType[] types, AbstractParser<?> parser, FileReader fileReader]
+MethodInvocation:header
+MethodInvocation:parseNext
+MethodInvocation:trim
+Class:Builder
+Field:source
+Field:tableName
+Field:columnTypesToDetect
+Field:sample
+Field:dateFormat
+Field:dateFormatter
+Field:timeFormat
+Field:timeFormatter
+Field:dateTimeFormat
+Field:dateTimeFormatter
+Field:locale
+Field:missingValueIndicator
+Field:minimizeColumnSizes
+Field:header
+Field:maxCharsPerColumn
+Field:ignoreZeroDecimal
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[Source source]
+FieldAccess:source
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[File file]
+FieldAccess:source
+FieldAccess:tableName
+MethodInvocation:getName
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[URL url]
+FieldAccess:source
+MethodInvocation:openStream
+FieldAccess:tableName
+MethodInvocation:toString
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[InputStream stream]
+FieldAccess:source
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[Reader reader]
+FieldAccess:source
+Method-name:tableName
+Method-returnType:Builder
+Method-parameters:[String tableName]
+FieldAccess:tableName
+Method-name:header
+Method-returnType:Builder
+Method-parameters:[boolean hasHeader]
+FieldAccess:header
+Method-name:dateFormat
+Method-returnType:Builder
+Method-parameters:[String dateFormat]
+FieldAccess:dateFormat
+Method-name:dateFormat
+Method-returnType:Builder
+Method-parameters:[DateTimeFormatter dateFormat]
+FieldAccess:dateFormatter
+Method-name:timeFormat
+Method-returnType:Builder
+Method-parameters:[String timeFormat]
+FieldAccess:timeFormat
+Method-name:timeFormat
+Method-returnType:Builder
+Method-parameters:[DateTimeFormatter dateFormat]
+FieldAccess:timeFormatter
+Method-name:dateTimeFormat
+Method-returnType:Builder
+Method-parameters:[String dateTimeFormat]
+FieldAccess:dateTimeFormat
+Method-name:dateTimeFormat
+Method-returnType:Builder
+Method-parameters:[DateTimeFormatter dateFormat]
+FieldAccess:dateTimeFormatter
+Method-name:missingValueIndicator
+Method-returnType:Builder
+Method-parameters:[String missingValueIndicator]
+FieldAccess:missingValueIndicator
+Method-name:maxCharsPerColumn
+Method-returnType:Builder
+Method-parameters:[int maxCharsPerColumn]
+FieldAccess:maxCharsPerColumn
+Method-name:ignoreZeroDecimal
+Method-returnType:Builder
+Method-parameters:[boolean ignoreZeroDecimal]
+FieldAccess:ignoreZeroDecimal
+Method-name:sample
+Method-returnType:Builder
+Method-parameters:[boolean sample]
+FieldAccess:sample
+Method-name:locale
+Method-returnType:Builder
+Method-parameters:[Locale locale]
+FieldAccess:locale
+Method-name:columnTypesToDetect
+Method-returnType:Builder
+Method-parameters:[List<ColumnType> columnTypesToDetect]
+FieldAccess:columnTypesToDetect
+Method-name:minimizeColumnSizes
+Method-returnType:Builder
+Method-parameters:[]
+FieldAccess:columnTypesToDetect
+Method-name:build
+Method-returnType:ReadOptions
+Method-parameters:[]

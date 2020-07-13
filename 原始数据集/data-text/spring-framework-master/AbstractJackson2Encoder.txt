@@ -1,0 +1,133 @@
+Class:AbstractJackson2Encoder
+Field:NEWLINE_SEPARATOR
+Field:STREAM_SEPARATORS
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:parseMediaType
+Field:streamingMediaTypes
+Method-name:AbstractJackson2Encoder
+Method-returnType:null
+Method-parameters:[ObjectMapper mapper, MimeType... mimeTypes]
+Method-name:setStreamingMediaTypes
+Method-returnType:void
+Method-parameters:[List<MediaType> mediaTypes]
+MethodInvocation:clear
+FieldAccess:streamingMediaTypes
+MethodInvocation:addAll
+FieldAccess:streamingMediaTypes
+Method-name:canEncode
+Method-returnType:boolean
+Method-parameters:[ResolvableType elementType, @Nullable MimeType mimeType]
+MethodInvocation:toClass
+MethodInvocation:supportsMimeType
+MethodInvocation:isAssignableFrom
+MethodInvocation:resolve
+MethodInvocation:canSerialize
+MethodInvocation:getObjectMapper
+Method-name:encode
+Method-returnType:Flux<DataBuffer>
+Method-parameters:[Publisher<?> inputStream, DataBufferFactory bufferFactory, ResolvableType elementType, @Nullable MimeType mimeType, @Nullable Map<String,Object> hints]
+MethodInvocation:notNull
+MethodInvocation:notNull
+MethodInvocation:notNull
+MethodInvocation:flux
+MethodInvocation:map
+MethodInvocation:from
+MethodInvocation:encodeValue
+MethodInvocation:streamSeparator
+MethodInvocation:createObjectWriter
+MethodInvocation:_getBufferRecycler
+MethodInvocation:getFactory
+MethodInvocation:getJsonEncoding
+MethodInvocation:createGenerator
+MethodInvocation:getFactory
+MethodInvocation:getObjectMapper
+MethodInvocation:writeValues
+MethodInvocation:map
+MethodInvocation:from
+MethodInvocation:encodeStreamingValue
+MethodInvocation:error
+MethodInvocation:forClassWithGenerics
+MethodInvocation:flux
+MethodInvocation:map
+MethodInvocation:collectList
+MethodInvocation:from
+MethodInvocation:encodeValue
+Method-name:encodeValue
+Method-returnType:DataBuffer
+Method-parameters:[Object value, DataBufferFactory bufferFactory, ResolvableType valueType, @Nullable MimeType mimeType, @Nullable Map<String,Object> hints]
+MethodInvocation:createObjectWriter
+MethodInvocation:_getBufferRecycler
+MethodInvocation:getFactory
+MethodInvocation:getJsonEncoding
+MethodInvocation:logValue
+MethodInvocation:createGenerator
+MethodInvocation:getFactory
+MethodInvocation:getObjectMapper
+MethodInvocation:writeValue
+MethodInvocation:flush
+MethodInvocation:getType
+MethodInvocation:getOriginalMessage
+MethodInvocation:toByteArray
+MethodInvocation:allocateBuffer
+MethodInvocation:write
+Method-name:encodeStreamingValue
+Method-returnType:DataBuffer
+Method-parameters:[Object value, DataBufferFactory bufferFactory, @Nullable Map<String,Object> hints, SequenceWriter sequenceWriter, ByteArrayBuilder byteArrayBuilder, byte[] separator]
+MethodInvocation:logValue
+MethodInvocation:write
+MethodInvocation:flush
+MethodInvocation:getType
+MethodInvocation:getOriginalMessage
+MethodInvocation:toByteArray
+MethodInvocation:reset
+MethodInvocation:allocateBuffer
+MethodInvocation:write
+MethodInvocation:write
+Method-name:logValue
+Method-returnType:void
+Method-parameters:[@Nullable Map<String,Object> hints, Object value]
+MethodInvocation:isLoggingSuppressed
+MethodInvocation:traceDebug
+MethodInvocation:formatValue
+MethodInvocation:getLogPrefix
+Method-name:createObjectWriter
+Method-returnType:ObjectWriter
+Method-parameters:[ResolvableType valueType, @Nullable MimeType mimeType, @Nullable Map<String,Object> hints]
+MethodInvocation:getJavaType
+MethodInvocation:getType
+MethodInvocation:get
+MethodInvocation:writerWithView
+MethodInvocation:getObjectMapper
+MethodInvocation:writer
+MethodInvocation:getObjectMapper
+MethodInvocation:isContainerType
+MethodInvocation:forType
+MethodInvocation:customizeWriter
+Method-name:customizeWriter
+Method-returnType:ObjectWriter
+Method-parameters:[ObjectWriter writer, @Nullable MimeType mimeType, ResolvableType elementType, @Nullable Map<String,Object> hints]
+Method-name:streamSeparator
+Method-returnType:byte[]
+Method-parameters:[@Nullable MimeType mimeType]
+FieldAccess:streamingMediaTypes
+MethodInvocation:isCompatibleWith
+MethodInvocation:getOrDefault
+Method-name:getEncodableMimeTypes
+Method-returnType:List<MimeType>
+Method-parameters:[]
+MethodInvocation:getMimeTypes
+Method-name:getStreamingMediaTypes
+Method-returnType:List<MediaType>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+FieldAccess:streamingMediaTypes
+Method-name:getEncodeHints
+Method-returnType:Map<String,Object>
+Method-parameters:[@Nullable ResolvableType actualType, ResolvableType elementType, @Nullable MediaType mediaType, ServerHttpRequest request, ServerHttpResponse response]
+MethodInvocation:getHints
+MethodInvocation:none
+Method-name:getAnnotation
+Method-returnType:A
+Method-parameters:[MethodParameter parameter, Class<A> annotType]
+MethodInvocation:getMethodAnnotation

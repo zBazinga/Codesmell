@@ -1,0 +1,77 @@
+Class:ResourceEntry
+Field:id
+Field:pkgName
+Field:typeName
+Field:keyName
+Field:parentRef
+Field:simpleValue
+Field:namedValues
+Field:config
+Method-name:ResourceEntry
+Method-returnType:null
+Method-parameters:[int id, String pkgName, String typeName, String keyName]
+FieldAccess:id
+FieldAccess:pkgName
+FieldAccess:typeName
+FieldAccess:keyName
+Method-name:ResourceEntry
+Method-returnType:null
+Method-parameters:[int id]
+Method-name:getId
+Method-returnType:int
+Method-parameters:[]
+Method-name:getPkgName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getTypeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getKeyName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setParentRef
+Method-returnType:void
+Method-parameters:[int parentRef]
+FieldAccess:parentRef
+Method-name:getParentRef
+Method-returnType:int
+Method-parameters:[]
+Method-name:getSimpleValue
+Method-returnType:RawValue
+Method-parameters:[]
+Method-name:setSimpleValue
+Method-returnType:void
+Method-parameters:[RawValue simpleValue]
+FieldAccess:simpleValue
+Method-name:setNamedValues
+Method-returnType:void
+Method-parameters:[List<RawNamedValue> namedValues]
+FieldAccess:namedValues
+Method-name:getNamedValues
+Method-returnType:List<RawNamedValue>
+Method-parameters:[]
+Method-name:setConfig
+Method-returnType:void
+Method-parameters:[EntryConfig config]
+FieldAccess:config
+Method-name:getConfig
+Method-returnType:EntryConfig
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toHexString
+Method-name:getValueString
+Method-returnType:String
+Method-parameters:[ValuesParser valuesParser]
+MethodInvocation:getSimpleValue
+MethodInvocation:decodeValue
+MethodInvocation:getNamedValues
+MethodInvocation:size
+MethodInvocation:decodeNameRef
+MethodInvocation:getNameRef
+MethodInvocation:decodeValue
+MethodInvocation:getRawValue
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:toString

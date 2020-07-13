@@ -1,0 +1,75 @@
+Class:SubscriptionValidatingInterceptor
+Field:mySubscriptionCanonicalizer
+Field:myDaoRegistry
+Field:mySubscriptionStrategyEvaluator
+Field:myFhirContext
+Method-name:resourcePreCreate
+Method-returnType:void
+Method-parameters:[IBaseResource theResource]
+MethodInvocation:validateSubmittedSubscription
+Method-name:resourcePreCreate
+Method-returnType:void
+Method-parameters:[IBaseResource theOldResource, IBaseResource theResource]
+MethodInvocation:validateSubmittedSubscription
+Method-name:setFhirContextForUnitTest
+Method-returnType:void
+Method-parameters:[FhirContext theFhirContext]
+Method-name:validateSubmittedSubscription
+Method-returnType:void
+Method-parameters:[IBaseResource theSubscription]
+MethodInvocation:equals
+MethodInvocation:getResourceType
+MethodInvocation:canonicalize
+MethodInvocation:getStatus
+MethodInvocation:getStatus
+MethodInvocation:setMatchingStrategyTag
+MethodInvocation:getCriteriaString
+MethodInvocation:isBlank
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:contains
+MethodInvocation:validateChannelType
+MethodInvocation:isResourceTypeSupported
+MethodInvocation:determineStrategy
+MethodInvocation:setMatchingStrategyTag
+MethodInvocation:getMessage
+MethodInvocation:getChannelType
+MethodInvocation:getChannelType
+MethodInvocation:validateMessageSubscriptionEndpoint
+MethodInvocation:getEndpointUrl
+Method-name:validateMessageSubscriptionEndpoint
+Method-returnType:void
+Method-parameters:[String theEndpointUrl]
+MethodInvocation:equals
+MethodInvocation:getScheme
+MethodInvocation:getSchemeSpecificPart
+MethodInvocation:isBlank
+Method-name:validateChannelType
+Method-returnType:void
+Method-parameters:[CanonicalSubscription theSubscription]
+MethodInvocation:getChannelType
+MethodInvocation:getChannelType
+MethodInvocation:validateChannelPayload
+MethodInvocation:validateChannelEndpoint
+Method-name:validateChannelEndpoint
+Method-returnType:void
+Method-parameters:[CanonicalSubscription theResource]
+MethodInvocation:isBlank
+MethodInvocation:getEndpointUrl
+Method-name:validateChannelPayload
+Method-returnType:void
+Method-parameters:[CanonicalSubscription theResource]
+MethodInvocation:isBlank
+MethodInvocation:getPayloadString
+MethodInvocation:forContentType
+MethodInvocation:getPayloadString
+MethodInvocation:getPayloadString
+Method-name:setSubscriptionCanonicalizerForUnitTest
+Method-returnType:void
+Method-parameters:[SubscriptionCanonicalizer theSubscriptionCanonicalizer]
+Method-name:setDaoRegistryForUnitTest
+Method-returnType:void
+Method-parameters:[DaoRegistry theDaoRegistry]
+Method-name:setSubscriptionStrategyEvaluatorForUnitTest
+Method-returnType:void
+Method-parameters:[SubscriptionStrategyEvaluator theSubscriptionStrategyEvaluator]

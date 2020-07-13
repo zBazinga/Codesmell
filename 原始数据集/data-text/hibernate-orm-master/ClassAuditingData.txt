@@ -1,0 +1,75 @@
+Class:ClassAuditingData
+Field:properties
+Field:secondaryTableDictionary
+Field:auditTable
+Field:defaultAudited
+Method-name:ClassAuditingData
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:newHashMap
+MethodInvocation:newHashMap
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:addPropertyAuditingData
+Method-returnType:void
+Method-parameters:[String propertyName, PropertyAuditingData auditingData]
+MethodInvocation:put
+Method-name:getPropertyAuditingData
+Method-returnType:PropertyAuditingData
+Method-parameters:[String propertyName]
+MethodInvocation:get
+Method-name:getPropertyNames
+Method-returnType:Iterable<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getSecondaryTableDictionary
+Method-returnType:Map<String,String>
+Method-parameters:[]
+Method-name:getAuditTable
+Method-returnType:AuditTable
+Method-parameters:[]
+Method-name:setAuditTable
+Method-returnType:void
+Method-parameters:[AuditTable auditTable]
+FieldAccess:auditTable
+Method-name:setDefaultAudited
+Method-returnType:void
+Method-parameters:[boolean defaultAudited]
+FieldAccess:defaultAudited
+Method-name:isAudited
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+Method-name:contains
+Method-returnType:boolean
+Method-parameters:[String propertyName]
+MethodInvocation:containsKey
+Method-name:getNonSyntheticPropertyNames
+Method-returnType:Iterable<String>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:entrySet
+MethodInvocation:isSyntheic
+MethodInvocation:getValue
+MethodInvocation:toList
+Method-name:getSyntheticProperties
+Method-returnType:Iterable<PropertyAuditingData>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:values
+MethodInvocation:isSyntheic
+MethodInvocation:toList
+Method-name:checkPropertiesAudited
+Method-returnType:boolean
+Method-parameters:[Iterator<Property> properties, AuditMetadataGenerator auditMetadataGenerator]
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getName
+MethodInvocation:getPropertyAuditingData

@@ -1,0 +1,51 @@
+Class:BazelStarlarkContext
+Field:phase
+Field:toolsRepository
+Field:fragmentNameToClass
+Field:repoMapping
+Field:symbolGenerator
+Field:analysisRuleLabel
+Method-name:BazelStarlarkContext
+Method-returnType:null
+Method-parameters:[Phase phase, String toolsRepository, @Nullable ImmutableMap<String,Class<?>> fragmentNameToClass, ImmutableMap<RepositoryName,RepositoryName> repoMapping, SymbolGenerator<?> symbolGenerator, @Nullable Label analysisRuleLabel]
+FieldAccess:phase
+FieldAccess:toolsRepository
+FieldAccess:fragmentNameToClass
+FieldAccess:repoMapping
+FieldAccess:symbolGenerator
+MethodInvocation:checkNotNull
+FieldAccess:analysisRuleLabel
+Method-name:from
+Method-returnType:BazelStarlarkContext
+Method-parameters:[StarlarkThread thread]
+MethodInvocation:getThreadLocal
+Method-name:storeInThread
+Method-returnType:void
+Method-parameters:[StarlarkThread thread]
+MethodInvocation:setThreadLocal
+MethodInvocation:setThreadLocal
+Method-name:getPhase
+Method-returnType:Phase
+Method-parameters:[]
+Method-name:getToolsRepository
+Method-returnType:String
+Method-parameters:[]
+Method-name:getFragmentNameToClass
+Method-returnType:ImmutableMap<String,Class<?>>
+Method-parameters:[]
+Method-name:getRepoMapping
+Method-returnType:ImmutableMap<RepositoryName,RepositoryName>
+Method-parameters:[]
+Method-name:getSymbolGenerator
+Method-returnType:SymbolGenerator<?>
+Method-parameters:[]
+Method-name:getAnalysisRuleLabel
+Method-returnType:Label
+Method-parameters:[]
+Method-name:checkLoadingOrWorkspacePhase
+Method-returnType:void
+Method-parameters:[String function]
+Method-name:checkLoadingPhase
+Method-returnType:void
+Method-parameters:[String function]
+Field:Phase

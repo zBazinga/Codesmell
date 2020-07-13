@@ -1,0 +1,169 @@
+Class:SequenceStyleGenerator
+Field:LOG
+MethodInvocation:getMessageLogger
+MethodInvocation:getName
+Field:SEQUENCE_PARAM
+Field:DEF_SEQUENCE_NAME
+Field:INITIAL_PARAM
+Field:DEFAULT_INITIAL_VALUE
+Field:INCREMENT_PARAM
+Field:DEFAULT_INCREMENT_SIZE
+Field:CONFIG_PREFER_SEQUENCE_PER_ENTITY
+Field:CONFIG_SEQUENCE_PER_ENTITY_SUFFIX
+Field:DEF_SEQUENCE_SUFFIX
+Field:OPT_PARAM
+Field:FORCE_TBL_PARAM
+Field:VALUE_COLUMN_PARAM
+Field:DEF_VALUE_COLUMN
+Field:databaseStructure
+Field:optimizer
+Field:identifierType
+Method-name:getDatabaseStructure
+Method-returnType:DatabaseStructure
+Method-parameters:[]
+Method-name:getOptimizer
+Method-returnType:Optimizer
+Method-parameters:[]
+Method-name:getIdentifierType
+Method-returnType:Type
+Method-parameters:[]
+Method-name:configure
+Method-returnType:void
+Method-parameters:[Type type, Properties params, ServiceRegistry serviceRegistry]
+MethodInvocation:getService
+MethodInvocation:getService
+MethodInvocation:getDialect
+FieldAccess:identifierType
+MethodInvocation:getBoolean
+MethodInvocation:determineSequenceName
+MethodInvocation:determineInitialValue
+MethodInvocation:determineIncrementSize
+MethodInvocation:determineOptimizationStrategy
+MethodInvocation:isPooledOptimizer
+MethodInvocation:isPhysicalSequence
+MethodInvocation:getText
+MethodInvocation:getObjectName
+MethodInvocation:getSequenceIncrementValue
+MethodInvocation:equals
+MethodInvocation:intValue
+MethodInvocation:getSetting
+MethodInvocation:format
+MethodInvocation:sequenceIncrementSizeMismatch
+MethodInvocation:determineAdjustedIncrementSize
+MethodInvocation:supportsSequences
+MethodInvocation:supportsPooledSequences
+MethodInvocation:forcingTableUse
+FieldAccess:databaseStructure
+MethodInvocation:buildDatabaseStructure
+FieldAccess:optimizer
+MethodInvocation:buildOptimizer
+MethodInvocation:getReturnedClass
+MethodInvocation:getInt
+MethodInvocation:prepare
+FieldAccess:databaseStructure
+Method-name:determineValueColumnName
+Method-returnType:Identifier
+Method-parameters:[Properties params, JdbcEnvironment jdbcEnvironment]
+MethodInvocation:getString
+MethodInvocation:toIdentifier
+MethodInvocation:getIdentifierHelper
+Method-name:determineInitialValue
+Method-returnType:int
+Method-parameters:[Properties params]
+MethodInvocation:getInt
+Method-name:determineIncrementSize
+Method-returnType:int
+Method-parameters:[Properties params]
+MethodInvocation:getInt
+Method-name:determineOptimizationStrategy
+Method-returnType:String
+Method-parameters:[Properties params, int incrementSize]
+MethodInvocation:getString
+MethodInvocation:determineImplicitOptimizerName
+Method-name:determineAdjustedIncrementSize
+Method-returnType:int
+Method-parameters:[String optimizationStrategy, int incrementSize]
+MethodInvocation:abs
+MethodInvocation:equals
+MethodInvocation:getExternalName
+MethodInvocation:honoringOptimizerSetting
+MethodInvocation:getExternalName
+MethodInvocation:honoringOptimizerSetting
+MethodInvocation:getExternalName
+Method-name:buildDatabaseStructure
+Method-returnType:DatabaseStructure
+Method-parameters:[Type type, Properties params, JdbcEnvironment jdbcEnvironment, boolean forceTableUse, QualifiedName sequenceName, int initialValue, int incrementSize]
+MethodInvocation:isPhysicalSequence
+MethodInvocation:buildSequenceStructure
+MethodInvocation:buildTableStructure
+Method-name:isPhysicalSequence
+Method-returnType:boolean
+Method-parameters:[JdbcEnvironment jdbcEnvironment, boolean forceTableUse]
+MethodInvocation:supportsSequences
+MethodInvocation:getDialect
+Method-name:buildSequenceStructure
+Method-returnType:DatabaseStructure
+Method-parameters:[Type type, Properties params, JdbcEnvironment jdbcEnvironment, QualifiedName sequenceName, int initialValue, int incrementSize]
+MethodInvocation:getReturnedClass
+Method-name:buildTableStructure
+Method-returnType:DatabaseStructure
+Method-parameters:[Type type, Properties params, JdbcEnvironment jdbcEnvironment, QualifiedName sequenceName, int initialValue, int incrementSize]
+MethodInvocation:determineValueColumnName
+MethodInvocation:getReturnedClass
+Method-name:generate
+Method-returnType:Serializable
+Method-parameters:[SharedSessionContractImplementor session, Object object]
+MethodInvocation:generate
+MethodInvocation:buildCallback
+Method-name:generatorKey
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:sqlCreateStrings
+Method-returnType:String[]
+Method-parameters:[Dialect dialect]
+MethodInvocation:sqlCreateStrings
+Method-name:sqlDropStrings
+Method-returnType:String[]
+Method-parameters:[Dialect dialect]
+MethodInvocation:sqlDropStrings
+Method-name:supportsBulkInsertionIdentifierGeneration
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isInstance
+MethodInvocation:getOptimizer
+MethodInvocation:isPhysicalSequence
+MethodInvocation:getDatabaseStructure
+Method-name:determineBulkInsertionIdentifierGenerationSelectFragment
+Method-returnType:String
+Method-parameters:[Dialect dialect]
+MethodInvocation:getSelectSequenceNextValString
+MethodInvocation:getName
+MethodInvocation:getDatabaseStructure
+Method-name:registerExportables
+Method-returnType:void
+Method-parameters:[Database database]
+MethodInvocation:registerExportables
+Method-name:getSequenceIncrementValue
+Method-returnType:Long
+Method-parameters:[JdbcEnvironment jdbcEnvironment, String sequenceName]
+MethodInvocation:orElse
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getSequenceInformationList
+MethodInvocation:getExtractedDatabaseMetaData
+MethodInvocation:getCatalogName
+MethodInvocation:getSequenceName
+MethodInvocation:getSchemaName
+MethodInvocation:getSequenceName
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getText
+MethodInvocation:getSequenceName
+MethodInvocation:getSequenceName
+MethodInvocation:equals
+MethodInvocation:getCurrentCatalog
+MethodInvocation:equals
+MethodInvocation:getCurrentSchema

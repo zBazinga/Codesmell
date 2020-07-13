@@ -1,0 +1,42 @@
+Class:HiveMetaStoreAuthorizableEvent
+Field:preEventContext
+Method-name:HiveMetaStoreAuthorizableEvent
+Method-returnType:null
+Method-parameters:[PreEventContext preEventContext]
+FieldAccess:preEventContext
+Method-name:getAuthzContext
+Method-returnType:HiveMetaStoreAuthzInfo
+Method-parameters:[]
+Method-name:getSdLocation
+Method-returnType:String
+Method-parameters:[StorageDescriptor sd]
+MethodInvocation:getLocation
+Method-name:getCommandParams
+Method-returnType:List<String>
+Method-parameters:[String cmdStr, String objectName]
+MethodInvocation:singletonList
+Method-name:getHivePrivilegeObject
+Method-returnType:HivePrivilegeObject
+Method-parameters:[Database database]
+MethodInvocation:getName
+MethodInvocation:getOwnerName
+MethodInvocation:getOwnerType
+Method-name:getHivePrivilegeObject
+Method-returnType:HivePrivilegeObject
+Method-parameters:[Table table]
+MethodInvocation:getDbName
+MethodInvocation:getTableName
+MethodInvocation:getOwner
+MethodInvocation:getOwnerType
+Method-name:getHivePrivilegeObjectDfsUri
+Method-returnType:HivePrivilegeObject
+Method-parameters:[String uri]
+Method-name:getHivePrivilegeObjectLocalUri
+Method-returnType:HivePrivilegeObject
+Method-parameters:[String uri]
+Method-name:getCurrentUser
+Method-returnType:String
+Method-parameters:[HiveMetaStoreAuthorizer hiveMetaStoreAuthorizer]
+MethodInvocation:getShortUserName
+MethodInvocation:getUGI
+MethodInvocation:getAuthzContext

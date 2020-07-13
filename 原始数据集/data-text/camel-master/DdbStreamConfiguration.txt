@@ -1,0 +1,103 @@
+Class:DdbStreamConfiguration
+Field:tableName
+Field:accessKey
+Field:secretKey
+Field:region
+Field:amazonDynamoDbStreamsClient
+Field:maxResultsPerRequest
+Field:iteratorType
+Field:sequenceNumberProvider
+Field:proxyProtocol
+Field:proxyHost
+Field:proxyPort
+Method-name:getAmazonDynamoDbStreamsClient
+Method-returnType:AmazonDynamoDBStreams
+Method-parameters:[]
+Method-name:setAmazonDynamoDbStreamsClient
+Method-returnType:void
+Method-parameters:[AmazonDynamoDBStreams amazonDynamoDbStreamsClient]
+FieldAccess:amazonDynamoDbStreamsClient
+Method-name:getAccessKey
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAccessKey
+Method-returnType:void
+Method-parameters:[String accessKey]
+FieldAccess:accessKey
+Method-name:getSecretKey
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSecretKey
+Method-returnType:void
+Method-parameters:[String secretKey]
+FieldAccess:secretKey
+Method-name:getRegion
+Method-returnType:String
+Method-parameters:[]
+Method-name:setRegion
+Method-returnType:void
+Method-parameters:[String region]
+FieldAccess:region
+Method-name:getMaxResultsPerRequest
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxResultsPerRequest
+Method-returnType:void
+Method-parameters:[int maxResultsPerRequest]
+FieldAccess:maxResultsPerRequest
+Method-name:getTableName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTableName
+Method-returnType:void
+Method-parameters:[String tableName]
+FieldAccess:tableName
+Method-name:getIteratorType
+Method-returnType:ShardIteratorType
+Method-parameters:[]
+Method-name:setIteratorType
+Method-returnType:void
+Method-parameters:[ShardIteratorType iteratorType]
+FieldAccess:iteratorType
+Method-name:getSequenceNumberProvider
+Method-returnType:SequenceNumberProvider
+Method-parameters:[]
+Method-name:setSequenceNumberProvider
+Method-returnType:void
+Method-parameters:[SequenceNumberProvider sequenceNumberProvider]
+FieldAccess:sequenceNumberProvider
+Method-name:getProxyProtocol
+Method-returnType:Protocol
+Method-parameters:[]
+Method-name:setProxyProtocol
+Method-returnType:void
+Method-parameters:[Protocol proxyProtocol]
+FieldAccess:proxyProtocol
+Method-name:getProxyHost
+Method-returnType:String
+Method-parameters:[]
+Method-name:setProxyHost
+Method-returnType:void
+Method-parameters:[String proxyHost]
+FieldAccess:proxyHost
+Method-name:getProxyPort
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setProxyPort
+Method-returnType:void
+Method-parameters:[Integer proxyPort]
+FieldAccess:proxyPort
+Method-name:copy
+Method-returnType:DdbStreamConfiguration
+Method-parameters:[]
+Method-name:checkAndSetRegistryClient
+Method-returnType:void
+Method-parameters:[DdbStreamComponent ddbStreamComponent]
+MethodInvocation:findByType
+MethodInvocation:getRegistry
+MethodInvocation:getCamelContext
+MethodInvocation:size
+MethodInvocation:setAmazonDynamoDbStreamsClient
+MethodInvocation:get
+MethodInvocation:findFirst
+MethodInvocation:stream

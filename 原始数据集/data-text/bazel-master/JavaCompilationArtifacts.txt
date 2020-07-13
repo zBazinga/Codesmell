@@ -1,0 +1,77 @@
+Class:JavaCompilationArtifacts
+Field:EMPTY
+MethodInvocation:build
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:create
+Method-returnType:JavaCompilationArtifacts
+Method-parameters:[ImmutableList<Artifact> runtimeJars, ImmutableList<Artifact> compileTimeJars, ImmutableList<Artifact> fullCompileTimeJars, Artifact compileTimeDependencyArtifact]
+MethodInvocation:copyOf
+MethodInvocation:copyOf
+MethodInvocation:copyOf
+Method-name:getRuntimeJars
+Method-returnType:ImmutableList<Artifact>
+Method-parameters:[]
+Method-name:getCompileTimeJars
+Method-returnType:ImmutableList<Artifact>
+Method-parameters:[]
+Method-name:getFullCompileTimeJars
+Method-returnType:ImmutableList<Artifact>
+Method-parameters:[]
+Method-name:getCompileTimeDependencyArtifact
+Method-returnType:Artifact
+Method-parameters:[]
+Class:Builder
+Field:runtimeJars
+Field:compileTimeJars
+Field:fullCompileTimeJars
+Field:compileTimeDependencies
+Method-name:build
+Method-returnType:JavaCompilationArtifacts
+Method-parameters:[]
+MethodInvocation:checkState
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:create
+MethodInvocation:copyOf
+MethodInvocation:copyOf
+MethodInvocation:copyOf
+Method-name:addRuntimeJar
+Method-returnType:Builder
+Method-parameters:[Artifact jar]
+MethodInvocation:add
+FieldAccess:runtimeJars
+Method-name:addRuntimeJars
+Method-returnType:Builder
+Method-parameters:[Iterable<Artifact> jars]
+MethodInvocation:addAll
+FieldAccess:runtimeJars
+Method-name:addInterfaceJarWithFullJar
+Method-returnType:Builder
+Method-parameters:[Artifact ijar, Artifact fullJar]
+MethodInvocation:add
+FieldAccess:compileTimeJars
+MethodInvocation:add
+FieldAccess:fullCompileTimeJars
+Method-name:addCompileTimeJarAsFullJar
+Method-returnType:Builder
+Method-parameters:[Artifact jar]
+MethodInvocation:add
+FieldAccess:compileTimeJars
+MethodInvocation:add
+FieldAccess:fullCompileTimeJars
+Method-name:addInterfaceJars
+Method-returnType:Builder
+Method-parameters:[Iterable<Artifact> jars]
+MethodInvocation:addAll
+FieldAccess:compileTimeJars
+Method-name:addFullCompileTimeJars
+Method-returnType:Builder
+Method-parameters:[Iterable<Artifact> jars]
+MethodInvocation:addAll
+FieldAccess:fullCompileTimeJars
+Method-name:setCompileTimeDependencies
+Method-returnType:Builder
+Method-parameters:[@Nullable Artifact compileTimeDependencies]
+FieldAccess:compileTimeDependencies

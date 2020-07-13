@@ -1,0 +1,434 @@
+Class:Warehouse
+Field:DEFAULT_CATALOG_NAME
+Field:DEFAULT_CATALOG_COMMENT
+Field:DEFAULT_DATABASE_NAME
+Field:DEFAULT_DATABASE_COMMENT
+Field:DEFAULT_SERIALIZATION_FORMAT
+Field:DATABASE_WAREHOUSE_SUFFIX
+Field:CAT_DB_TABLE_SEPARATOR
+Field:whRoot
+Field:whRootExternal
+Field:conf
+Field:whRootString
+Field:whRootExternalString
+Field:isTenantBasedStorage
+Field:LOG
+MethodInvocation:getLogger
+Field:fsHandler
+Field:storageAuthCheck
+Field:cm
+Method-name:Warehouse
+Method-returnType:null
+Method-parameters:[Configuration conf]
+FieldAccess:conf
+MethodInvocation:getVar
+MethodInvocation:isBlank
+MethodInvocation:getVarname
+MethodInvocation:getVar
+MethodInvocation:getMetaStoreFsHandler
+MethodInvocation:getInstance
+MethodInvocation:getBoolVar
+MethodInvocation:getBoolVar
+Method-name:getMetaStoreFsHandler
+Method-returnType:MetaStoreFS
+Method-parameters:[Configuration conf]
+MethodInvocation:getVar
+MethodInvocation:forName
+MethodInvocation:getClassLoader
+MethodInvocation:newInstance
+MethodInvocation:getMessage
+Method-name:getFs
+Method-returnType:FileSystem
+Method-parameters:[Path f, Configuration conf]
+MethodInvocation:getFileSystem
+MethodInvocation:logAndThrowMetaException
+Method-name:getFs
+Method-returnType:FileSystem
+Method-parameters:[Path f]
+MethodInvocation:getFs
+Method-name:getDnsPath
+Method-returnType:Path
+Method-parameters:[Path path, Configuration conf]
+MethodInvocation:getFs
+MethodInvocation:getPath
+MethodInvocation:toUri
+MethodInvocation:isEmpty
+MethodInvocation:getScheme
+MethodInvocation:getUri
+MethodInvocation:getAuthority
+MethodInvocation:getUri
+Method-name:getDnsPath
+Method-returnType:Path
+Method-parameters:[Path path]
+MethodInvocation:getDnsPath
+Method-name:getWhRoot
+Method-returnType:Path
+Method-parameters:[]
+MethodInvocation:getDnsPath
+Method-name:getWhRootExternal
+Method-returnType:Path
+Method-parameters:[]
+MethodInvocation:hasExternalWarehouseRoot
+MethodInvocation:getWhRoot
+MethodInvocation:getDnsPath
+Method-name:determineDatabasePath
+Method-returnType:Path
+Method-parameters:[Catalog cat, Database db]
+MethodInvocation:isSetLocationUri
+MethodInvocation:getDnsPath
+MethodInvocation:getLocationUri
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:getWhRootExternal
+MethodInvocation:getWhRootExternal
+MethodInvocation:dbDirFromDbName
+MethodInvocation:getDnsPath
+MethodInvocation:getLocationUri
+MethodInvocation:dbDirFromDbName
+Method-name:getDatabasePath
+Method-returnType:Path
+Method-parameters:[Database db]
+MethodInvocation:getManagedLocationUri
+MethodInvocation:getDnsPath
+MethodInvocation:getManagedLocationUri
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getCatalogName
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:getWhRoot
+MethodInvocation:getLocationUri
+Method-name:getDatabaseManagedPath
+Method-returnType:Path
+Method-parameters:[Database db]
+MethodInvocation:getManagedLocationUri
+MethodInvocation:getDnsPath
+MethodInvocation:getManagedLocationUri
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getCatalogName
+MethodInvocation:getLocationUri
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:getWhRoot
+MethodInvocation:getWhRoot
+MethodInvocation:toLowerCase
+MethodInvocation:getName
+Method-name:getDefaultDatabasePath
+Method-returnType:Path
+Method-parameters:[String dbName]
+MethodInvocation:getDefaultDatabasePath
+Method-name:getDefaultExternalDatabasePath
+Method-returnType:Path
+Method-parameters:[String dbName]
+MethodInvocation:getDefaultDatabasePath
+Method-name:getDefaultDatabasePath
+Method-returnType:Path
+Method-parameters:[String dbName, boolean inExternalWH]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getWhRootExternal
+MethodInvocation:getWhRootExternal
+MethodInvocation:toLowerCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getWhRoot
+MethodInvocation:getWhRoot
+MethodInvocation:toLowerCase
+Method-name:hasExternalWarehouseRoot
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isBlank
+Method-name:getDefaultTablePath
+Method-returnType:Path
+Method-parameters:[Database db, String tableName]
+MethodInvocation:getDefaultTablePath
+Method-name:getDefaultTablePath
+Method-returnType:Path
+Method-parameters:[Database db, String tableName, boolean isExternal]
+MethodInvocation:getLocationUri
+MethodInvocation:isSubdirectory
+MethodInvocation:toString
+MethodInvocation:getWhRoot
+MethodInvocation:toString
+MethodInvocation:getDefaultExternalDatabasePath
+MethodInvocation:getName
+MethodInvocation:getDatabaseManagedPath
+MethodInvocation:getDatabasePath
+MethodInvocation:getDnsPath
+MethodInvocation:encodeTableName
+MethodInvocation:toLowerCase
+Method-name:getDefaultManagedTablePath
+Method-returnType:Path
+Method-parameters:[Database db, String tableName]
+MethodInvocation:getDatabaseManagedPath
+MethodInvocation:getDnsPath
+MethodInvocation:encodeTableName
+MethodInvocation:toLowerCase
+Method-name:getDefaultTablePath
+Method-returnType:Path
+Method-parameters:[String dbName, String tableName, boolean isExternal]
+MethodInvocation:hasExternalWarehouseRoot
+MethodInvocation:getDefaultExternalDatabasePath
+MethodInvocation:getDefaultDatabasePath
+MethodInvocation:getDnsPath
+MethodInvocation:encodeTableName
+MethodInvocation:toLowerCase
+Method-name:getDefaultTablePath
+Method-returnType:Path
+Method-parameters:[Database db, Table table]
+MethodInvocation:getDefaultTablePath
+MethodInvocation:getTableName
+MethodInvocation:isExternalTable
+Method-name:getQualifiedName
+Method-returnType:String
+Method-parameters:[Table table]
+MethodInvocation:getDbTable
+MethodInvocation:getDbName
+MethodInvocation:getTableName
+Method-name:getQualifiedName
+Method-returnType:String
+Method-parameters:[String dbName, String tableName]
+MethodInvocation:getDbTable
+Method-name:getQualifiedName
+Method-returnType:String
+Method-parameters:[Partition partition]
+MethodInvocation:getDbName
+MethodInvocation:getTableName
+MethodInvocation:getValues
+Method-name:getCatalogQualifiedTableName
+Method-returnType:String
+Method-parameters:[Table table]
+MethodInvocation:getQualified
+MethodInvocation:getCatName
+MethodInvocation:getDbName
+MethodInvocation:getTableName
+Method-name:mkdirs
+Method-returnType:boolean
+Method-parameters:[Path f]
+MethodInvocation:getFs
+MethodInvocation:mkdir
+MethodInvocation:logAndThrowMetaException
+Method-name:renameDir
+Method-returnType:boolean
+Method-parameters:[Path sourcePath, Path destPath, boolean needCmRecycle]
+MethodInvocation:recycle
+MethodInvocation:getFs
+MethodInvocation:getFs
+MethodInvocation:rename
+MethodInvocation:logAndThrowMetaException
+Method-name:addToChangeManagement
+Method-returnType:void
+Method-parameters:[Path file]
+MethodInvocation:recycle
+MethodInvocation:stringifyException
+Method-name:deleteDir
+Method-returnType:boolean
+Method-parameters:[Path f, boolean recursive, Database db]
+MethodInvocation:deleteDir
+Method-name:deleteDir
+Method-returnType:boolean
+Method-parameters:[Path f, boolean recursive, boolean ifPurge, Database db]
+MethodInvocation:deleteDir
+MethodInvocation:isSourceOfReplication
+Method-name:deleteDir
+Method-returnType:boolean
+Method-parameters:[Path f, boolean recursive, boolean ifPurge, boolean needCmRecycle]
+MethodInvocation:recycle
+MethodInvocation:stringifyException
+MethodInvocation:getFs
+MethodInvocation:deleteDir
+Method-name:recycleDirToCmPath
+Method-returnType:void
+Method-parameters:[Path f, boolean ifPurge]
+MethodInvocation:recycle
+MethodInvocation:stringifyException
+Method-name:isEmptyDir
+Method-returnType:boolean
+Method-parameters:[Path path]
+FieldAccess:length
+MethodInvocation:listStatus
+MethodInvocation:getFs
+Method-name:isWritable
+Method-returnType:boolean
+Method-parameters:[Path path]
+MethodInvocation:getFs
+MethodInvocation:getFileStatus
+MethodInvocation:checkFileAccess
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+Method-name:escapePathName
+Method-returnType:String
+Method-parameters:[String path]
+MethodInvocation:escapePathName
+Method-name:unescapePathName
+Method-returnType:String
+Method-parameters:[String path]
+MethodInvocation:unescapePathName
+Method-name:makePartPath
+Method-returnType:String
+Method-parameters:[Map<String,String> spec]
+MethodInvocation:makePartName
+Method-name:makePartName
+Method-returnType:String
+Method-parameters:[Map<String,String> spec, boolean addTrailingSeperator]
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:length
+MethodInvocation:getValue
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:escapePathName
+MethodInvocation:getKey
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:escapePathName
+MethodInvocation:getValue
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:makeDynamicPartName
+Method-returnType:String
+Method-parameters:[Map<String,String> spec]
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:length
+MethodInvocation:getValue
+MethodInvocation:append
+MethodInvocation:escapePathName
+MethodInvocation:getKey
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:escapePathName
+MethodInvocation:getValue
+MethodInvocation:append
+MethodInvocation:toString
+Field:pat
+MethodInvocation:compile
+Field:slash
+MethodInvocation:compile
+Method-name:makeValsFromName
+Method-returnType:AbstractList<String>
+Method-parameters:[String name, AbstractList<String> result]
+Method-name:makeSpecFromName
+Method-returnType:LinkedHashMap<String,String>
+Method-parameters:[String name]
+MethodInvocation:isEmpty
+MethodInvocation:makeSpecFromName
+Method-name:makeSpecFromName
+Method-returnType:boolean
+Method-parameters:[Map<String,String> partSpec, Path currPath, Set<String> requiredKeys]
+MethodInvocation:getName
+MethodInvocation:matcher
+MethodInvocation:matches
+MethodInvocation:unescapePathName
+MethodInvocation:group
+MethodInvocation:unescapePathName
+MethodInvocation:group
+MethodInvocation:add
+MethodInvocation:getParent
+MethodInvocation:isEmpty
+MethodInvocation:getName
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:warn
+Method-name:makeEscSpecFromName
+Method-returnType:Map<String,String>
+Method-parameters:[String name]
+MethodInvocation:isEmpty
+MethodInvocation:getName
+MethodInvocation:matcher
+MethodInvocation:matches
+MethodInvocation:group
+MethodInvocation:group
+MethodInvocation:add
+MethodInvocation:getParent
+MethodInvocation:isEmpty
+MethodInvocation:getName
+MethodInvocation:size
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:get
+Method-name:getDefaultPartitionPath
+Method-returnType:Path
+Method-parameters:[Database db, Table table, Map<String,String> pm]
+MethodInvocation:getPartitionPath
+MethodInvocation:getDefaultTablePath
+Method-name:getPartitionPath
+Method-returnType:Path
+Method-parameters:[Path tblPath, Map<String,String> pm]
+MethodInvocation:makePartPath
+Method-name:getPartitionPath
+Method-returnType:Path
+Method-parameters:[Database db, Table table, List<String> vals]
+MethodInvocation:getPartitionKeys
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:getTableName
+MethodInvocation:size
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:get
+MethodInvocation:getLocation
+MethodInvocation:getSd
+MethodInvocation:getPartitionPath
+MethodInvocation:getDnsPath
+MethodInvocation:getLocation
+MethodInvocation:getSd
+MethodInvocation:getDefaultPartitionPath
+Method-name:isDir
+Method-returnType:boolean
+Method-parameters:[Path f]
+MethodInvocation:getFs
+MethodInvocation:getFileStatus
+MethodInvocation:isDir
+MethodInvocation:logAndThrowMetaException
+Method-name:makePartName
+Method-returnType:String
+Method-parameters:[List<FieldSchema> partCols, List<String> vals]
+MethodInvocation:makePartName
+Method-name:getFileStatusesForSD
+Method-returnType:List<FileStatus>
+Method-parameters:[StorageDescriptor desc]
+MethodInvocation:getFileStatusesForLocation
+MethodInvocation:getLocation
+Method-name:getFileStatusesForLocation
+Method-returnType:List<FileStatus>
+Method-parameters:[String location]
+MethodInvocation:getFileSystem
+MethodInvocation:getFileStatusRecurse
+MethodInvocation:logAndThrowMetaException
+Method-name:getFileStatusesForUnpartitionedTable
+Method-returnType:List<FileStatus>
+Method-parameters:[Database db, Table table]
+MethodInvocation:getDnsPath
+MethodInvocation:getLocation
+MethodInvocation:getSd
+MethodInvocation:getFileSystem
+MethodInvocation:getFileStatusRecurse
+MethodInvocation:logAndThrowMetaException
+Method-name:makePartName
+Method-returnType:String
+Method-parameters:[List<FieldSchema> partCols, List<String> vals, String defaultStr]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:getName
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:makePartName
+Method-name:getPartValuesFromPartName
+Method-returnType:List<String>
+Method-parameters:[String partName]
+MethodInvocation:makeSpecFromName
+MethodInvocation:addAll
+MethodInvocation:values
+Method-name:makeSpecFromValues
+Method-returnType:Map<String,String>
+Method-parameters:[List<FieldSchema> partCols, List<String> values]
+MethodInvocation:size
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:get
+MethodInvocation:get

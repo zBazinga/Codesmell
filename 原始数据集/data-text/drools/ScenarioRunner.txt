@@ -1,0 +1,83 @@
+Class:ScenarioRunner
+Field:ksession
+Field:maximumAmountOfRuleFirings
+Field:workingMemoryWrapper
+Field:factPopulatorFactory
+Field:factPopulator
+Method-name:ScenarioRunner
+Method-returnType:null
+Method-parameters:[final KieSession ksession]
+Method-name:ScenarioRunner
+Method-returnType:null
+Method-parameters:[final KieSession ksession, final int maximumAmountOfRuleFirings]
+FieldAccess:ksession
+FieldAccess:maximumAmountOfRuleFirings
+Method-name:run
+Method-returnType:void
+Method-parameters:[final Scenario scenario]
+MethodInvocation:getKieBase
+MethodInvocation:getRootClassLoader
+MethodInvocation:getImports
+FieldAccess:workingMemoryWrapper
+MethodInvocation:scenarioUsesTimeWalk
+FieldAccess:factPopulatorFactory
+FieldAccess:factPopulator
+MethodInvocation:setLastRunResult
+MethodInvocation:populateGlobals
+MethodInvocation:getGlobals
+MethodInvocation:applyFixtures
+MethodInvocation:getFixtures
+MethodInvocation:createScenarioSettings
+Method-name:scenarioUsesTimeWalk
+Method-returnType:boolean
+Method-parameters:[Scenario scenario]
+MethodInvocation:getFixtures
+MethodInvocation:getScenarioSimulatedDate
+Method-name:getImports
+Method-returnType:Set<String>
+Method-parameters:[final Scenario scenario]
+MethodInvocation:addAll
+MethodInvocation:getImportStrings
+MethodInvocation:getImports
+MethodInvocation:getPackageName
+MethodInvocation:isEmpty
+MethodInvocation:getPackageName
+MethodInvocation:add
+MethodInvocation:getPackageName
+Method-name:createScenarioSettings
+Method-returnType:ScenarioSettings
+Method-parameters:[final Scenario scenario]
+MethodInvocation:setRuleList
+MethodInvocation:getRules
+MethodInvocation:setInclusive
+MethodInvocation:isInclusive
+MethodInvocation:setMaxRuleFirings
+MethodInvocation:getMaxRuleFirings
+Method-name:getMaxRuleFirings
+Method-returnType:int
+Method-parameters:[final Scenario scenario]
+MethodInvocation:getMaxRuleFirings
+Method-name:applyFixtures
+Method-returnType:void
+Method-parameters:[final List<Fixture> fixtures, final ScenarioSettings scenarioSettings]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:add
+MethodInvocation:createFactPopulator
+MethodInvocation:retractFact
+MethodInvocation:getName
+MethodInvocation:executeMethod
+MethodInvocation:activateRuleFlowGroup
+MethodInvocation:getName
+MethodInvocation:populate
+MethodInvocation:executeSubScenario
+MethodInvocation:populate
+MethodInvocation:verifyExpectation
+MethodInvocation:populate
+Method-name:populateGlobals
+Method-returnType:void
+Method-parameters:[final List<FactData> globals]
+MethodInvocation:add
+MethodInvocation:createGlobalFactPopulator
+MethodInvocation:populate

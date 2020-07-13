@@ -1,0 +1,397 @@
+Class:Stream
+Field:_node
+Field:_name
+Field:_topology
+Method-name:Stream
+Method-returnType:null
+Method-parameters:[TridentTopology topology, String name, Node node]
+Method-name:name
+Method-returnType:Stream
+Method-parameters:[String name]
+Method-name:parallelismHint
+Method-returnType:Stream
+Method-parameters:[int hint]
+Method-name:setCPULoad
+Method-returnType:Stream
+Method-parameters:[Number load]
+MethodInvocation:setCPULoad
+Method-name:setMemoryLoad
+Method-returnType:Stream
+Method-parameters:[Number onHeap]
+MethodInvocation:setMemoryLoad
+Method-name:setMemoryLoad
+Method-returnType:Stream
+Method-parameters:[Number onHeap, Number offHeap]
+MethodInvocation:setMemoryLoad
+Method-name:project
+Method-returnType:Stream
+Method-parameters:[Fields keepFields]
+MethodInvocation:projectionValidation
+MethodInvocation:addSourcedNode
+MethodInvocation:getUniqueStreamId
+Method-name:groupBy
+Method-returnType:GroupedStream
+Method-parameters:[Fields fields]
+MethodInvocation:projectionValidation
+Method-name:partitionBy
+Method-returnType:Stream
+Method-parameters:[Fields fields]
+MethodInvocation:projectionValidation
+MethodInvocation:partition
+MethodInvocation:fields
+MethodInvocation:toList
+Method-name:partition
+Method-returnType:Stream
+Method-parameters:[CustomStreamGrouping partitioner]
+MethodInvocation:partition
+MethodInvocation:custom_serialized
+MethodInvocation:javaSerialize
+Method-name:shuffle
+Method-returnType:Stream
+Method-parameters:[]
+MethodInvocation:partition
+MethodInvocation:shuffle
+Method-name:localOrShuffle
+Method-returnType:Stream
+Method-parameters:[]
+MethodInvocation:partition
+MethodInvocation:local_or_shuffle
+Method-name:global
+Method-returnType:Stream
+Method-parameters:[]
+MethodInvocation:partition
+Method-name:batchGlobal
+Method-returnType:Stream
+Method-parameters:[]
+MethodInvocation:partition
+Method-name:broadcast
+Method-returnType:Stream
+Method-parameters:[]
+MethodInvocation:partition
+MethodInvocation:all
+Method-name:identityPartition
+Method-returnType:Stream
+Method-parameters:[]
+MethodInvocation:partition
+Method-name:partition
+Method-returnType:Stream
+Method-parameters:[Grouping grouping]
+MethodInvocation:partition
+MethodInvocation:each
+MethodInvocation:addSourcedNode
+MethodInvocation:getOutputFields
+Method-name:applyAssembly
+Method-returnType:Stream
+Method-parameters:[Assembly assembly]
+MethodInvocation:apply
+Method-name:each
+Method-returnType:Stream
+Method-parameters:[Fields inputFields, Function function, Fields functionFields]
+MethodInvocation:projectionValidation
+MethodInvocation:addSourcedNode
+MethodInvocation:getUniqueStreamId
+MethodInvocation:fieldsConcat
+MethodInvocation:getOutputFields
+Method-name:partitionAggregate
+Method-returnType:Stream
+Method-parameters:[Fields inputFields, Aggregator agg, Fields functionFields]
+MethodInvocation:projectionValidation
+MethodInvocation:addSourcedNode
+MethodInvocation:getUniqueStreamId
+Method-name:stateQuery
+Method-returnType:Stream
+Method-parameters:[TridentState state, Fields inputFields, QueryFunction function, Fields functionFields]
+MethodInvocation:projectionValidation
+MethodInvocation:getUniqueStreamId
+MethodInvocation:fieldsConcat
+MethodInvocation:getOutputFields
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:addSourcedNode
+Method-name:partitionPersist
+Method-returnType:TridentState
+Method-parameters:[StateFactory stateFactory, Fields inputFields, StateUpdater updater, Fields functionFields]
+MethodInvocation:partitionPersist
+Method-name:partitionPersist
+Method-returnType:TridentState
+Method-parameters:[StateSpec stateSpec, Fields inputFields, StateUpdater updater, Fields functionFields]
+MethodInvocation:projectionValidation
+MethodInvocation:getUniqueStateId
+MethodInvocation:getUniqueStreamId
+MethodInvocation:addSourcedStateNode
+Method-name:partitionPersist
+Method-returnType:TridentState
+Method-parameters:[StateFactory stateFactory, Fields inputFields, StateUpdater updater]
+MethodInvocation:partitionPersist
+Method-name:partitionPersist
+Method-returnType:TridentState
+Method-parameters:[StateSpec stateSpec, Fields inputFields, StateUpdater updater]
+MethodInvocation:partitionPersist
+Method-name:each
+Method-returnType:Stream
+Method-parameters:[Function function, Fields functionFields]
+MethodInvocation:each
+Method-name:each
+Method-returnType:Stream
+Method-parameters:[Fields inputFields, Filter filter]
+MethodInvocation:each
+Method-name:filter
+Method-returnType:Stream
+Method-parameters:[Filter filter]
+MethodInvocation:each
+MethodInvocation:getOutputFields
+Method-name:filter
+Method-returnType:Stream
+Method-parameters:[Fields inputFields, Filter filter]
+MethodInvocation:each
+Method-name:map
+Method-returnType:Stream
+Method-parameters:[MapFunction function]
+MethodInvocation:projectionValidation
+MethodInvocation:getOutputFields
+MethodInvocation:addSourcedNode
+MethodInvocation:getUniqueStreamId
+MethodInvocation:getOutputFields
+MethodInvocation:getOutputFields
+MethodInvocation:getOutputFields
+Method-name:flatMap
+Method-returnType:Stream
+Method-parameters:[FlatMapFunction function]
+MethodInvocation:projectionValidation
+MethodInvocation:getOutputFields
+MethodInvocation:addSourcedNode
+MethodInvocation:getUniqueStreamId
+MethodInvocation:getOutputFields
+MethodInvocation:getOutputFields
+MethodInvocation:getOutputFields
+Method-name:peek
+Method-returnType:Stream
+Method-parameters:[Consumer action]
+MethodInvocation:projectionValidation
+MethodInvocation:getOutputFields
+MethodInvocation:addSourcedNode
+MethodInvocation:getUniqueStreamId
+MethodInvocation:getOutputFields
+MethodInvocation:getOutputFields
+MethodInvocation:getOutputFields
+Method-name:chainedAgg
+Method-returnType:ChainedAggregatorDeclarer
+Method-parameters:[]
+Method-name:partitionAggregate
+Method-returnType:Stream
+Method-parameters:[Aggregator agg, Fields functionFields]
+MethodInvocation:partitionAggregate
+Method-name:partitionAggregate
+Method-returnType:Stream
+Method-parameters:[CombinerAggregator agg, Fields functionFields]
+MethodInvocation:partitionAggregate
+Method-name:partitionAggregate
+Method-returnType:Stream
+Method-parameters:[Fields inputFields, CombinerAggregator agg, Fields functionFields]
+MethodInvocation:projectionValidation
+MethodInvocation:chainEnd
+MethodInvocation:partitionAggregate
+MethodInvocation:chainedAgg
+Method-name:partitionAggregate
+Method-returnType:Stream
+Method-parameters:[ReducerAggregator agg, Fields functionFields]
+MethodInvocation:partitionAggregate
+Method-name:partitionAggregate
+Method-returnType:Stream
+Method-parameters:[Fields inputFields, ReducerAggregator agg, Fields functionFields]
+MethodInvocation:projectionValidation
+MethodInvocation:chainEnd
+MethodInvocation:partitionAggregate
+MethodInvocation:chainedAgg
+Method-name:minBy
+Method-returnType:Stream
+Method-parameters:[String inputFieldName]
+MethodInvocation:comparableAggregateStream
+Method-name:minBy
+Method-returnType:Stream
+Method-parameters:[String inputFieldName, Comparator<T> comparator]
+MethodInvocation:comparableAggregateStream
+Method-name:min
+Method-returnType:Stream
+Method-parameters:[Comparator<TridentTuple> comparator]
+MethodInvocation:comparableAggregateStream
+Method-name:maxBy
+Method-returnType:Stream
+Method-parameters:[String inputFieldName]
+MethodInvocation:comparableAggregateStream
+Method-name:maxBy
+Method-returnType:Stream
+Method-parameters:[String inputFieldName, Comparator<T> comparator]
+MethodInvocation:comparableAggregateStream
+Method-name:max
+Method-returnType:Stream
+Method-parameters:[Comparator<TridentTuple> comparator]
+MethodInvocation:comparableAggregateStream
+Method-name:comparableAggregateStream
+Method-returnType:Stream
+Method-parameters:[String inputFieldName, Aggregator<T> aggregator]
+MethodInvocation:projectionValidation
+MethodInvocation:partitionAggregate
+MethodInvocation:getOutputFields
+MethodInvocation:getOutputFields
+Method-name:aggregate
+Method-returnType:Stream
+Method-parameters:[Aggregator agg, Fields functionFields]
+MethodInvocation:aggregate
+Method-name:aggregate
+Method-returnType:Stream
+Method-parameters:[Fields inputFields, Aggregator agg, Fields functionFields]
+MethodInvocation:projectionValidation
+MethodInvocation:chainEnd
+MethodInvocation:aggregate
+MethodInvocation:chainedAgg
+Method-name:aggregate
+Method-returnType:Stream
+Method-parameters:[CombinerAggregator agg, Fields functionFields]
+MethodInvocation:aggregate
+Method-name:aggregate
+Method-returnType:Stream
+Method-parameters:[Fields inputFields, CombinerAggregator agg, Fields functionFields]
+MethodInvocation:projectionValidation
+MethodInvocation:chainEnd
+MethodInvocation:aggregate
+MethodInvocation:chainedAgg
+Method-name:aggregate
+Method-returnType:Stream
+Method-parameters:[ReducerAggregator agg, Fields functionFields]
+MethodInvocation:aggregate
+Method-name:aggregate
+Method-returnType:Stream
+Method-parameters:[Fields inputFields, ReducerAggregator agg, Fields functionFields]
+MethodInvocation:projectionValidation
+MethodInvocation:chainEnd
+MethodInvocation:aggregate
+MethodInvocation:chainedAgg
+Method-name:tumblingWindow
+Method-returnType:Stream
+Method-parameters:[int windowCount, WindowsStoreFactory windowStoreFactory, Fields inputFields, Aggregator aggregator, Fields functionFields]
+MethodInvocation:window
+MethodInvocation:of
+Method-name:slidingWindow
+Method-returnType:Stream
+Method-parameters:[int windowCount, int slideCount, WindowsStoreFactory windowStoreFactory, Fields inputFields, Aggregator aggregator, Fields functionFields]
+MethodInvocation:window
+MethodInvocation:of
+Method-name:tumblingWindow
+Method-returnType:Stream
+Method-parameters:[BaseWindowedBolt.Duration windowDuration, WindowsStoreFactory windowStoreFactory, Fields inputFields, Aggregator aggregator, Fields functionFields]
+MethodInvocation:window
+MethodInvocation:of
+Method-name:slidingWindow
+Method-returnType:Stream
+Method-parameters:[BaseWindowedBolt.Duration windowDuration, BaseWindowedBolt.Duration slidingInterval, WindowsStoreFactory windowStoreFactory, Fields inputFields, Aggregator aggregator, Fields functionFields]
+MethodInvocation:window
+MethodInvocation:of
+Method-name:window
+Method-returnType:Stream
+Method-parameters:[WindowConfig windowConfig, Fields inputFields, Aggregator aggregator, Fields functionFields]
+MethodInvocation:window
+Method-name:window
+Method-returnType:Stream
+Method-parameters:[WindowConfig windowConfig, WindowsStoreFactory windowStoreFactory, Fields inputFields, Aggregator aggregator, Fields functionFields]
+MethodInvocation:window
+Method-name:window
+Method-returnType:Stream
+Method-parameters:[WindowConfig windowConfig, WindowsStoreFactory windowStoreFactory, Fields inputFields, Aggregator aggregator, Fields functionFields, boolean storeTuplesInStore]
+MethodInvocation:projectionValidation
+MethodInvocation:validate
+MethodInvocation:addTriggerField
+MethodInvocation:addSourcedNode
+MethodInvocation:getUniqueStreamId
+MethodInvocation:getUniqueWindowId
+MethodInvocation:project
+MethodInvocation:partitionPersist
+Method-name:addTriggerField
+Method-returnType:Fields
+Method-parameters:[Fields functionFields]
+MethodInvocation:add
+MethodInvocation:add
+Method-name:partitionPersist
+Method-returnType:TridentState
+Method-parameters:[StateFactory stateFactory, StateUpdater updater, Fields functionFields]
+MethodInvocation:partitionPersist
+Method-name:partitionPersist
+Method-returnType:TridentState
+Method-parameters:[StateSpec stateSpec, StateUpdater updater, Fields functionFields]
+MethodInvocation:partitionPersist
+Method-name:partitionPersist
+Method-returnType:TridentState
+Method-parameters:[StateFactory stateFactory, StateUpdater updater]
+MethodInvocation:partitionPersist
+Method-name:partitionPersist
+Method-returnType:TridentState
+Method-parameters:[StateSpec stateSpec, StateUpdater updater]
+MethodInvocation:partitionPersist
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateFactory stateFactory, CombinerAggregator agg, Fields functionFields]
+MethodInvocation:persistentAggregate
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateSpec spec, CombinerAggregator agg, Fields functionFields]
+MethodInvocation:persistentAggregate
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateFactory stateFactory, Fields inputFields, CombinerAggregator agg, Fields functionFields]
+MethodInvocation:persistentAggregate
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateSpec spec, Fields inputFields, CombinerAggregator agg, Fields functionFields]
+MethodInvocation:projectionValidation
+MethodInvocation:partitionPersist
+MethodInvocation:chainEnd
+MethodInvocation:aggregate
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateFactory stateFactory, ReducerAggregator agg, Fields functionFields]
+MethodInvocation:persistentAggregate
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateSpec spec, ReducerAggregator agg, Fields functionFields]
+MethodInvocation:persistentAggregate
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateFactory stateFactory, Fields inputFields, ReducerAggregator agg, Fields functionFields]
+MethodInvocation:persistentAggregate
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateSpec spec, Fields inputFields, ReducerAggregator agg, Fields functionFields]
+MethodInvocation:projectionValidation
+MethodInvocation:partitionPersist
+MethodInvocation:global
+Method-name:stateQuery
+Method-returnType:Stream
+Method-parameters:[TridentState state, QueryFunction function, Fields functionFields]
+MethodInvocation:stateQuery
+Method-name:toStream
+Method-returnType:Stream
+Method-parameters:[]
+Method-name:getOutputFields
+Method-returnType:Fields
+Method-parameters:[]
+Class:BatchGlobalAggScheme
+Method-name:aggPartition
+Method-returnType:IAggregatableStream
+Method-parameters:[Stream s]
+MethodInvocation:batchGlobal
+Method-name:singleEmitPartitioner
+Method-returnType:BatchToPartition
+Method-parameters:[]
+Class:GlobalAggScheme
+Method-name:aggPartition
+Method-returnType:IAggregatableStream
+Method-parameters:[Stream s]
+MethodInvocation:global
+Method-name:singleEmitPartitioner
+Method-returnType:BatchToPartition
+Method-parameters:[]
+Method-name:projectionValidation
+Method-returnType:void
+Method-parameters:[Fields projFields]
+MethodInvocation:getOutputFields
+MethodInvocation:contains

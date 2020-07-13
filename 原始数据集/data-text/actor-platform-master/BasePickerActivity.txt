@@ -1,0 +1,130 @@
+Class:BasePickerActivity
+Field:selectedItems
+Field:searchEnabled
+Field:currentFragment
+Method-name:onCreate
+Method-returnType:void
+Method-parameters:[Bundle savedInstanceState]
+MethodInvocation:setContentView
+MethodInvocation:commit
+MethodInvocation:add
+MethodInvocation:setCustomAnimations
+MethodInvocation:beginTransaction
+MethodInvocation:getFragmentManager
+MethodInvocation:getWelcomeFragment
+MethodInvocation:setDisplayHomeAsUpEnabled
+MethodInvocation:getSupportActionBar
+MethodInvocation:findViewById
+MethodInvocation:setOnClickListener
+Method-name:onClick
+Method-returnType:void
+Method-parameters:[View view]
+MethodInvocation:returnResult
+MethodInvocation:findViewById
+MethodInvocation:setOnClickListener
+Method-name:onClick
+Method-returnType:void
+Method-parameters:[View view]
+MethodInvocation:finish
+Method-name:returnResult
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:putExtra
+MethodInvocation:setResult
+MethodInvocation:save
+MethodInvocation:finish
+Method-name:getWelcomeFragment
+Method-returnType:Fragment
+Method-parameters:[]
+Method-name:onCreateOptionsMenu
+Method-returnType:boolean
+Method-parameters:[Menu menu]
+MethodInvocation:onCreateOptionsMenu
+MethodInvocation:getMenuInflater
+Method-name:onOptionsItemSelected
+Method-returnType:boolean
+Method-parameters:[MenuItem item]
+MethodInvocation:getItemId
+MethodInvocation:onBackPressed
+MethodInvocation:onOptionsItemSelected
+Method-name:onAttachFragment
+Method-returnType:void
+Method-parameters:[Fragment fragment]
+Method-name:onBackPressed
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getBackStackEntryCount
+MethodInvocation:getFragmentManager
+MethodInvocation:popBackStack
+MethodInvocation:getFragmentManager
+Method-name:save
+Method-returnType:void
+Method-parameters:[]
+Method-name:selectItem
+Method-returnType:boolean
+Method-parameters:[String path]
+MethodInvocation:contains
+MethodInvocation:size
+MethodInvocation:show
+MethodInvocation:makeText
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:updateCounter
+Method-name:selectItem
+Method-returnType:void
+Method-parameters:[ExplorerItem item, View itemView]
+MethodInvocation:setSelected
+MethodInvocation:selectItem
+MethodInvocation:getPath
+MethodInvocation:bindData
+Method-name:updateCounter
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:findViewById
+MethodInvocation:findViewById
+MethodInvocation:findViewById
+MethodInvocation:findViewById
+MethodInvocation:isEmpty
+MethodInvocation:setText
+MethodInvocation:size
+MethodInvocation:findViewById
+MethodInvocation:setEnabled
+MethodInvocation:findViewById
+MethodInvocation:isEmpty
+MethodInvocation:setEnabled
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:getVisibility
+MethodInvocation:isEmpty
+MethodInvocation:getVisibility
+FieldAccess:width
+MethodInvocation:getLayoutParams
+MethodInvocation:isEmpty
+MethodInvocation:ofInt
+MethodInvocation:ofInt
+MethodInvocation:setDuration
+MethodInvocation:setInterpolator
+MethodInvocation:addUpdateListener
+Method-name:onAnimationUpdate
+Method-returnType:void
+Method-parameters:[ValueAnimator valueAnimator]
+MethodInvocation:getAnimatedValue
+MethodInvocation:getLayoutParams
+MethodInvocation:setVisibility
+MethodInvocation:setVisibility
+MethodInvocation:setLayoutParams
+MethodInvocation:invalidate
+MethodInvocation:start
+Method-name:isSelected
+Method-returnType:boolean
+Method-parameters:[String path]
+MethodInvocation:contains
+Method-name:isSelected
+Method-returnType:boolean
+Method-parameters:[File file]
+MethodInvocation:isSelected
+MethodInvocation:getPath
+Method-name:setFragment
+Method-returnType:void
+Method-parameters:[Fragment fragment]
+FieldAccess:currentFragment

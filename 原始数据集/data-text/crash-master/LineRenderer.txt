@@ -1,0 +1,107 @@
+Class:LineRenderer
+Field:NULL
+Method-name:getActualWidth
+Method-returnType:int
+Method-parameters:[]
+Method-name:getMinWidth
+Method-returnType:int
+Method-parameters:[]
+Method-name:getMinHeight
+Method-returnType:int
+Method-parameters:[int width]
+Method-name:getActualHeight
+Method-returnType:int
+Method-parameters:[int width]
+Method-name:reader
+Method-returnType:LineReader
+Method-parameters:[int width]
+Method-name:hasLine
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:renderLine
+Method-returnType:void
+Method-parameters:[RenderAppendable to]
+Method-name:vertical
+Method-returnType:LineRenderer
+Method-parameters:[Iterable<? extends LineRenderer> renderers]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:hasNext
+Method-name:getActualWidth
+Method-returnType:int
+Method-parameters:[]
+Method-name:getMinWidth
+Method-returnType:int
+Method-parameters:[]
+Method-name:getMinHeight
+Method-returnType:int
+Method-parameters:[int width]
+Method-name:getActualHeight
+Method-returnType:int
+Method-parameters:[int width]
+Method-name:reader
+Method-returnType:LineReader
+Method-parameters:[int width, int height]
+MethodInvocation:reader
+Method-name:reader
+Method-returnType:LineReader
+Method-parameters:[int width]
+Method-name:render
+Method-returnType:void
+Method-parameters:[RenderAppendable out]
+MethodInvocation:reader
+MethodInvocation:getWidth
+MethodInvocation:hasLine
+MethodInvocation:renderLine
+MethodInvocation:append
+Class:Composite
+Field:renderers
+Field:actualWidth
+Field:minWidth
+Method-name:Composite
+Method-returnType:null
+Method-parameters:[Iterable<? extends LineRenderer> renderers]
+MethodInvocation:max
+MethodInvocation:getActualWidth
+MethodInvocation:max
+MethodInvocation:getMinWidth
+FieldAccess:actualWidth
+FieldAccess:minWidth
+FieldAccess:renderers
+Method-name:getActualWidth
+Method-returnType:int
+Method-parameters:[]
+Method-name:getMinWidth
+Method-returnType:int
+Method-parameters:[]
+Method-name:getActualHeight
+Method-returnType:int
+Method-parameters:[int width]
+MethodInvocation:getActualHeight
+Method-name:getMinHeight
+Method-returnType:int
+Method-parameters:[int width]
+Method-name:reader
+Method-returnType:LineReader
+Method-parameters:[final int width, final int height]
+MethodInvocation:iterator
+Field:current
+Field:index
+Method-name:hasLine
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasLine
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:reader
+MethodInvocation:hasLine
+Method-name:renderLine
+Method-returnType:void
+Method-parameters:[RenderAppendable to]
+MethodInvocation:hasLine
+MethodInvocation:renderLine
+Method-name:reader
+Method-returnType:LineReader
+Method-parameters:[final int width]
+MethodInvocation:reader

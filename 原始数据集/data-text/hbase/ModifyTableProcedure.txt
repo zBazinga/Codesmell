@@ -1,0 +1,213 @@
+Class:ModifyTableProcedure
+Field:LOG
+MethodInvocation:getLogger
+Field:unmodifiedTableDescriptor
+Field:modifiedTableDescriptor
+Field:deleteColumnFamilyInModify
+Field:shouldCheckDescriptor
+Method-name:ModifyTableProcedure
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:initilize
+Method-name:ModifyTableProcedure
+Method-returnType:null
+Method-parameters:[final MasterProcedureEnv env, final TableDescriptor htd]
+Method-name:ModifyTableProcedure
+Method-returnType:null
+Method-parameters:[final MasterProcedureEnv env, final TableDescriptor htd, final ProcedurePrepareLatch latch]
+Method-name:ModifyTableProcedure
+Method-returnType:null
+Method-parameters:[final MasterProcedureEnv env, final TableDescriptor newTableDescriptor, final ProcedurePrepareLatch latch, final TableDescriptor oldTableDescriptor, final boolean shouldCheckDescriptor]
+MethodInvocation:initilize
+FieldAccess:modifiedTableDescriptor
+MethodInvocation:preflightChecks
+Method-name:initilize
+Method-returnType:void
+Method-parameters:[final TableDescriptor unmodifiedTableDescriptor, final boolean shouldCheckDescriptor]
+FieldAccess:unmodifiedTableDescriptor
+FieldAccess:shouldCheckDescriptor
+FieldAccess:deleteColumnFamilyInModify
+Method-name:executeFromState
+Method-returnType:Flow
+Method-parameters:[final MasterProcedureEnv env, final ModifyTableState state]
+MethodInvocation:trace
+MethodInvocation:prepareModify
+MethodInvocation:setNextState
+MethodInvocation:preModify
+MethodInvocation:setNextState
+MethodInvocation:updateTableDescriptor
+MethodInvocation:setNextState
+MethodInvocation:updateReplicaColumnsIfNeeded
+MethodInvocation:setNextState
+MethodInvocation:setNextState
+MethodInvocation:deleteFromFs
+MethodInvocation:setNextState
+MethodInvocation:postModify
+MethodInvocation:setNextState
+MethodInvocation:isTableEnabled
+MethodInvocation:getAssignmentManager
+MethodInvocation:getTableName
+MethodInvocation:addChildProcedure
+MethodInvocation:getTableName
+MethodInvocation:isRollbackSupported
+MethodInvocation:setFailure
+MethodInvocation:warn
+MethodInvocation:getTableName
+Method-name:rollbackState
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env, final ModifyTableState state]
+Method-name:isRollbackSupported
+Method-returnType:boolean
+Method-parameters:[final ModifyTableState state]
+Method-name:completionCleanup
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:releaseSyncLatch
+Method-name:getState
+Method-returnType:ModifyTableState
+Method-parameters:[final int stateId]
+MethodInvocation:forNumber
+Method-name:getStateId
+Method-returnType:int
+Method-parameters:[final ModifyTableState state]
+MethodInvocation:getNumber
+Method-name:getInitialState
+Method-returnType:ModifyTableState
+Method-parameters:[]
+Method-name:serializeStateData
+Method-returnType:void
+Method-parameters:[ProcedureStateSerializer serializer]
+MethodInvocation:setShouldCheckDescriptor
+MethodInvocation:setDeleteColumnFamilyInModify
+MethodInvocation:setModifiedTableSchema
+MethodInvocation:setUserInfo
+MethodInvocation:newBuilder
+MethodInvocation:toProtoUserInfo
+MethodInvocation:getUser
+MethodInvocation:toTableSchema
+MethodInvocation:setUnmodifiedTableSchema
+MethodInvocation:toTableSchema
+MethodInvocation:serialize
+MethodInvocation:build
+Method-name:deserializeStateData
+Method-returnType:void
+Method-parameters:[ProcedureStateSerializer serializer]
+MethodInvocation:deserialize
+MethodInvocation:setUser
+MethodInvocation:toUserInfo
+MethodInvocation:getUserInfo
+MethodInvocation:toTableDescriptor
+MethodInvocation:getModifiedTableSchema
+MethodInvocation:getDeleteColumnFamilyInModify
+MethodInvocation:hasShouldCheckDescriptor
+MethodInvocation:getShouldCheckDescriptor
+MethodInvocation:hasUnmodifiedTableSchema
+MethodInvocation:toTableDescriptor
+MethodInvocation:getUnmodifiedTableSchema
+Method-name:getTableName
+Method-returnType:TableName
+Method-parameters:[]
+MethodInvocation:getTableName
+Method-name:getTableOperationType
+Method-returnType:TableOperationType
+Method-parameters:[]
+Method-name:prepareModify
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:tableExists
+MethodInvocation:getConnection
+MethodInvocation:getMasterServices
+MethodInvocation:getTableName
+MethodInvocation:getTableName
+MethodInvocation:getColumnFamilyCount
+MethodInvocation:toString
+MethodInvocation:getTableName
+MethodInvocation:compare
+MethodInvocation:get
+MethodInvocation:getTableDescriptors
+MethodInvocation:getMasterServices
+MethodInvocation:getTableName
+MethodInvocation:error
+MethodInvocation:toString
+MethodInvocation:getTableName
+MethodInvocation:toString
+MethodInvocation:getTableName
+FieldAccess:unmodifiedTableDescriptor
+MethodInvocation:get
+MethodInvocation:getTableDescriptors
+MethodInvocation:getMasterServices
+MethodInvocation:getTableName
+MethodInvocation:isTableState
+MethodInvocation:getTableStateManager
+MethodInvocation:getMasterServices
+MethodInvocation:getTableName
+MethodInvocation:getRegionReplication
+MethodInvocation:getRegionReplication
+MethodInvocation:getColumnFamilyNames
+MethodInvocation:getColumnFamilyNames
+MethodInvocation:contains
+FieldAccess:deleteColumnFamilyInModify
+Method-name:preModify
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env, final ModifyTableState state]
+MethodInvocation:runCoprocessorAction
+Method-name:updateTableDescriptor
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env]
+MethodInvocation:add
+MethodInvocation:getTableDescriptors
+MethodInvocation:getMasterServices
+Method-name:deleteFromFs
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env, final TableDescriptor oldTableDescriptor, final TableDescriptor newTableDescriptor]
+MethodInvocation:getColumnFamilyNames
+MethodInvocation:getColumnFamilyNames
+MethodInvocation:contains
+MethodInvocation:deleteColumnFamilyFromFileSystem
+MethodInvocation:getTableName
+MethodInvocation:getRegionInfoList
+MethodInvocation:isMobEnabled
+MethodInvocation:getColumnFamily
+Method-name:updateReplicaColumnsIfNeeded
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env, final TableDescriptor oldTableDescriptor, final TableDescriptor newTableDescriptor]
+MethodInvocation:getRegionReplication
+MethodInvocation:getRegionReplication
+MethodInvocation:getConnection
+MethodInvocation:getMasterServices
+MethodInvocation:getScanForTableName
+MethodInvocation:getTableName
+MethodInvocation:addColumn
+MethodInvocation:getTable
+MethodInvocation:getScanner
+MethodInvocation:add
+MethodInvocation:getRow
+MethodInvocation:removeRegionReplicasFromMeta
+MethodInvocation:getConnection
+MethodInvocation:getMasterServices
+MethodInvocation:getTableRegions
+MethodInvocation:getTableName
+MethodInvocation:addRegionsToMeta
+MethodInvocation:setupRegionReplicaReplication
+MethodInvocation:getMasterConfiguration
+Method-name:addRegionsToMeta
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env, final TableDescriptor tableDescriptor, final List<RegionInfo> regionInfos]
+MethodInvocation:addRegionsToMeta
+MethodInvocation:getConnection
+MethodInvocation:getMasterServices
+MethodInvocation:getRegionReplication
+Method-name:postModify
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env, final ModifyTableState state]
+MethodInvocation:runCoprocessorAction
+Method-name:runCoprocessorAction
+Method-returnType:void
+Method-parameters:[final MasterProcedureEnv env, final ModifyTableState state]
+MethodInvocation:getMasterCoprocessorHost
+MethodInvocation:preModifyTableAction
+MethodInvocation:getTableName
+MethodInvocation:getUser
+MethodInvocation:postCompletedModifyTableAction
+MethodInvocation:getTableName
+MethodInvocation:getUser

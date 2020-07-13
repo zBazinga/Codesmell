@@ -1,0 +1,93 @@
+Class:ExplorerItem
+Field:fileType
+Field:file
+Field:selected
+Field:enabled
+Field:imageId
+Method-name:ExplorerItem
+Method-returnType:null
+Method-parameters:[File file]
+FieldAccess:file
+Method-name:ExplorerItem
+Method-returnType:null
+Method-parameters:[File file, boolean selected]
+FieldAccess:selected
+Method-name:ExplorerItem
+Method-returnType:null
+Method-parameters:[File file, boolean selected, String fileType]
+FieldAccess:fileType
+Method-name:ExplorerItem
+Method-returnType:null
+Method-parameters:[String path]
+Method-name:ExplorerItem
+Method-returnType:null
+Method-parameters:[File file, boolean selected, String fileType, int imageId, boolean enabled]
+FieldAccess:file
+FieldAccess:selected
+FieldAccess:fileType
+FieldAccess:imageId
+FieldAccess:enabled
+Method-name:getTitle
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:getSubtitle
+Method-returnType:String
+Method-parameters:[Context context]
+Method-name:getImage
+Method-returnType:int
+Method-parameters:[]
+Method-name:getPath
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPath
+Method-name:isDirectory
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isDirectory
+Method-name:getFile
+Method-returnType:File
+Method-parameters:[]
+Method-name:getFileType
+Method-returnType:String
+Method-parameters:[]
+Method-name:isEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSelected
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSelected
+Method-returnType:void
+Method-parameters:[boolean selected]
+FieldAccess:selected
+Method-name:bindImage
+Method-returnType:void
+Method-parameters:[View itemView]
+MethodInvocation:findViewById
+MethodInvocation:setScaleType
+MethodInvocation:setVisibility
+MethodInvocation:findViewById
+MethodInvocation:setVisibility
+MethodInvocation:setImageResource
+MethodInvocation:setImageResource
+MethodInvocation:findViewById
+MethodInvocation:setVisibility
+MethodInvocation:setText
+Method-name:bindData
+Method-returnType:void
+Method-parameters:[View itemView]
+Method-name:getLastModified
+Method-returnType:Long
+Method-parameters:[]
+MethodInvocation:lastModified
+Method-name:bindData
+Method-returnType:void
+Method-parameters:[ExploreItemViewHolder holder]
+MethodInvocation:setTitle
+MethodInvocation:getTitle
+MethodInvocation:setSubtitle
+MethodInvocation:getSubtitle
+MethodInvocation:getContext
+MethodInvocation:setSelected
+MethodInvocation:enableDivider

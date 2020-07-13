@@ -1,0 +1,159 @@
+Class:Version
+Field:V_EMPTY_ID
+Field:V_EMPTY
+Field:V_7_0_0
+Field:V_7_0_1
+Field:V_7_1_0
+Field:V_7_1_1
+Field:V_7_2_0
+Field:V_7_2_1
+Field:V_7_3_0
+Field:V_7_3_1
+Field:V_7_3_2
+Field:V_7_4_0
+Field:V_7_4_1
+Field:V_7_4_2
+Field:V_7_5_0
+Field:V_7_5_1
+Field:V_7_5_2
+Field:V_7_6_0
+Field:V_7_6_1
+Field:V_7_6_2
+Field:V_7_7_0
+Field:V_7_7_1
+Field:V_7_8_0
+Field:V_7_9_0
+Field:V_8_0_0
+Field:CURRENT
+Field:idToVersion
+Method-name:readVersion
+Method-returnType:Version
+Method-parameters:[StreamInput in]
+MethodInvocation:fromId
+MethodInvocation:readVInt
+Method-name:fromId
+Method-returnType:Version
+Method-parameters:[int id]
+Method-name:indexCreated
+Method-returnType:Version
+Method-parameters:[Settings indexSettings]
+MethodInvocation:get
+MethodInvocation:format
+MethodInvocation:getKey
+MethodInvocation:get
+Method-name:writeVersion
+Method-returnType:void
+Method-parameters:[Version version, StreamOutput out]
+MethodInvocation:writeVInt
+Method-name:min
+Method-returnType:Version
+Method-parameters:[Version version1, Version version2]
+Method-name:max
+Method-returnType:Version
+Method-parameters:[Version version1, Version version2]
+Method-name:fromString
+Method-returnType:Version
+Method-parameters:[String version]
+MethodInvocation:hasLength
+MethodInvocation:endsWith
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:split
+MethodInvocation:parseInt
+MethodInvocation:parseInt
+MethodInvocation:parseInt
+MethodInvocation:fromId
+Field:id
+Field:major
+Field:minor
+Field:revision
+Field:build
+Field:luceneVersion
+Method-name:Version
+Method-returnType:null
+Method-parameters:[int id, org.apache.lucene.util.Version luceneVersion]
+FieldAccess:id
+FieldAccess:major
+FieldAccess:minor
+FieldAccess:revision
+FieldAccess:build
+FieldAccess:luceneVersion
+MethodInvocation:requireNonNull
+Method-name:after
+Method-returnType:boolean
+Method-parameters:[Version version]
+Method-name:onOrAfter
+Method-returnType:boolean
+Method-parameters:[Version version]
+Method-name:before
+Method-returnType:boolean
+Method-parameters:[Version version]
+Method-name:onOrBefore
+Method-returnType:boolean
+Method-parameters:[Version version]
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[Version other]
+MethodInvocation:compare
+FieldAccess:id
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:value
+MethodInvocation:toString
+Method-name:checkAutoIdWithOpTypeCreateSupportedByVersion
+Method-returnType:void
+Method-parameters:[IndexRequest indexRequest]
+MethodInvocation:id
+MethodInvocation:opType
+MethodInvocation:before
+Class:DeclaredVersionsHolder
+Field:DECLARED_VERSIONS
+MethodInvocation:unmodifiableList
+MethodInvocation:getDeclaredVersions
+Method-name:minimumCompatibilityVersion
+Method-returnType:Version
+Method-parameters:[]
+MethodInvocation:fromId
+MethodInvocation:fromId
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:after
+MethodInvocation:min
+MethodInvocation:fromId
+Method-name:minimumIndexCompatibilityVersion
+Method-returnType:Version
+Method-parameters:[]
+MethodInvocation:min
+MethodInvocation:fromId
+Method-name:isCompatible
+Method-returnType:boolean
+Method-parameters:[Version version]
+Method-name:main
+Method-returnType:void
+Method-parameters:[String[] args]
+MethodInvocation:format
+MethodInvocation:getQualifiedVersion
+MethodInvocation:displayName
+MethodInvocation:flavor
+MethodInvocation:displayName
+MethodInvocation:type
+MethodInvocation:hash
+MethodInvocation:date
+MethodInvocation:version
+MethodInvocation:jvmInfo
+MethodInvocation:println
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:getDeclaredVersions
+Method-returnType:List<Version>
+Method-parameters:[final Class<?> versionClass]

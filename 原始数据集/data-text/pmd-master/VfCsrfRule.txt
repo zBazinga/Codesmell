@@ -1,0 +1,13 @@
+Class:VfCsrfRule
+Field:APEX_PAGE
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTElement node, Object data]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:findChildrenOfType
+MethodInvocation:toLowerCase
+MethodInvocation:getName
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:doesElContainIdentifiers
+MethodInvocation:addViolation

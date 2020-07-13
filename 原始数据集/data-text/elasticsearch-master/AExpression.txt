@@ -1,0 +1,44 @@
+Class:AExpression
+Method-name:buildPostfixChain
+Method-returnType:AExpression
+Method-parameters:[PainlessParser.PostdotContext postdot, List<PainlessParser.PostfixContext> postfixes, Walker walker]
+MethodInvocation:visitPostdot
+MethodInvocation:visitPostfix
+Class:Input
+Field:read
+Field:write
+Field:expected
+Field:explicit
+Field:internal
+Class:Output
+Field:actual
+Field:isStaticType
+Field:partialCanonicalTypeName
+Field:isDefOptimized
+Field:expressionNode
+Method-name:AExpression
+Method-returnType:null
+Method-parameters:[Location location]
+Method-name:getChildIf
+Method-returnType:AExpression
+Method-parameters:[Class<? extends AExpression> type]
+MethodInvocation:isAssignableFrom
+MethodInvocation:getClass
+Method-name:analyze
+Method-returnType:Output
+Method-parameters:[ClassNode classNode, ScriptRoot scriptRoot, Scope scope, Input input]
+Method-name:analyze
+Method-returnType:Output
+Method-parameters:[AExpression expression, ClassNode classNode, ScriptRoot scriptRoot, Scope scope, Input input]
+MethodInvocation:analyze
+MethodInvocation:createError
+MethodInvocation:createError
+MethodInvocation:typeToCanonicalTypeName
+Method-name:cast
+Method-returnType:ExpressionNode
+Method-parameters:[ExpressionNode expressionNode, PainlessCast painlessCast]
+MethodInvocation:setLocation
+MethodInvocation:getLocation
+MethodInvocation:setExpressionType
+MethodInvocation:setCast
+MethodInvocation:setChildNode

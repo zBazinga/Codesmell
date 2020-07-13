@@ -1,0 +1,403 @@
+Class:SegmentMemory
+Field:log
+MethodInvocation:getLogger
+Field:isLogTraceEnabled
+MethodInvocation:isTraceEnabled
+Field:rootNode
+Field:tipNode
+Field:nodeMemories
+Field:linkedNodeMask
+Field:dirtyNodeMask
+Field:allLinkedMaskTest
+Field:pathMemories
+Field:segmentPosMaskBit
+Field:pos
+Field:stagedLeftTuples
+Field:active
+Field:previous
+Field:next
+Field:dataDrivenPathMemories
+Method-name:SegmentMemory
+Method-returnType:null
+Method-parameters:[LeftTupleNode rootNode]
+FieldAccess:rootNode
+FieldAccess:linkedNodeMask
+FieldAccess:dirtyNodeMask
+FieldAccess:pathMemories
+FieldAccess:nodeMemories
+FieldAccess:stagedLeftTuples
+Method-name:getRootNode
+Method-returnType:LeftTupleNode
+Method-parameters:[]
+Method-name:getTipNode
+Method-returnType:LeftTupleNode
+Method-parameters:[]
+Method-name:setTipNode
+Method-returnType:void
+Method-parameters:[LeftTupleNode tipNode]
+FieldAccess:tipNode
+Method-name:getSinkFactory
+Method-returnType:LeftTupleSink
+Method-parameters:[]
+Method-name:createNodeMemory
+Method-returnType:T
+Method-parameters:[MemoryFactory<T> memoryFactory, InternalWorkingMemory wm]
+MethodInvocation:getNodeMemory
+MethodInvocation:add
+Method-name:getNodeMemories
+Method-returnType:LinkedList<Memory>
+Method-parameters:[]
+Method-name:getLinkedNodeMask
+Method-returnType:long
+Method-parameters:[]
+Method-name:setLinkedNodeMask
+Method-returnType:void
+Method-parameters:[long linkedNodeMask]
+FieldAccess:linkedNodeMask
+Method-name:getDirtyNodeMask
+Method-returnType:long
+Method-parameters:[]
+Method-name:resetDirtyNodeMask
+Method-returnType:void
+Method-parameters:[]
+Method-name:updateDirtyNodeMask
+Method-returnType:void
+Method-parameters:[long mask]
+Method-name:updateCleanNodeMask
+Method-returnType:void
+Method-parameters:[long mask]
+Method-name:getRuleNames
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:get
+MethodInvocation:toString
+Method-name:linkNode
+Method-returnType:boolean
+Method-parameters:[long mask, InternalWorkingMemory wm]
+MethodInvocation:trace
+MethodInvocation:getRuleNames
+MethodInvocation:notifyRuleLinkSegment
+Method-name:linkNodeWithoutRuleNotify
+Method-returnType:boolean
+Method-parameters:[long mask]
+MethodInvocation:trace
+MethodInvocation:getRuleNames
+MethodInvocation:linkSegmentWithoutRuleNotify
+Method-name:linkSegmentWithoutRuleNotify
+Method-returnType:boolean
+Method-parameters:[InternalWorkingMemory wm, long mask]
+MethodInvocation:linkSegmentWithoutRuleNotify
+Method-name:linkSegmentWithoutRuleNotify
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isSegmentLinked
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:linkNodeWithoutRuleNotify
+MethodInvocation:isDataDriven
+MethodInvocation:isRuleLinked
+Method-name:notifyRuleLinkSegment
+Method-returnType:boolean
+Method-parameters:[InternalWorkingMemory wm, long mask]
+MethodInvocation:notifyRuleLinkSegment
+Method-name:notifyRuleLinkSegment
+Method-returnType:boolean
+Method-parameters:[InternalWorkingMemory wm]
+MethodInvocation:isSegmentLinked
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:notifyRuleLinkSegment
+MethodInvocation:isDataDriven
+MethodInvocation:isRuleLinked
+Method-name:notifyRuleLinkSegment
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm, PathMemory pmem]
+MethodInvocation:linkSegment
+Method-name:unlinkNode
+Method-returnType:boolean
+Method-parameters:[long mask, InternalWorkingMemory wm]
+MethodInvocation:isSegmentLinked
+MethodInvocation:trace
+MethodInvocation:getRuleNames
+MethodInvocation:isSegmentLinked
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:isDataDriven
+MethodInvocation:isRuleLinked
+MethodInvocation:unlinkedSegment
+MethodInvocation:size
+MethodInvocation:isRuleLinked
+MethodInvocation:get
+MethodInvocation:doLinkRule
+MethodInvocation:get
+Method-name:unlinkSegment
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm]
+MethodInvocation:size
+MethodInvocation:unlinkedSegment
+MethodInvocation:get
+Method-name:unlinkNodeWithoutRuleNotify
+Method-returnType:void
+Method-parameters:[long mask]
+MethodInvocation:trace
+MethodInvocation:getRuleNames
+Method-name:getAllLinkedMaskTest
+Method-returnType:long
+Method-parameters:[]
+Method-name:setAllLinkedMaskTest
+Method-returnType:void
+Method-parameters:[long allLinkedTestMask]
+FieldAccess:allLinkedMaskTest
+Method-name:isSegmentLinked
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getPathMemories
+Method-returnType:List<PathMemory>
+Method-parameters:[]
+Method-name:addPathMemory
+Method-returnType:void
+Method-parameters:[PathMemory pathMemory]
+MethodInvocation:add
+MethodInvocation:isDataDriven
+MethodInvocation:add
+Method-name:mergePathMemories
+Method-returnType:void
+Method-parameters:[SegmentMemory segmentMemory]
+MethodInvocation:getPathMemories
+MethodInvocation:isAssociatedWith
+MethodInvocation:addPathMemory
+Method-name:isAssociatedWith
+Method-returnType:boolean
+Method-parameters:[PathMemory pmem]
+MethodInvocation:getAssociatedRules
+MethodInvocation:isAssociatedWith
+MethodInvocation:isAssociatedWith
+MethodInvocation:getRule
+Method-name:removePathMemory
+Method-returnType:void
+Method-parameters:[PathMemory pathMemory]
+MethodInvocation:remove
+MethodInvocation:isDataDriven
+MethodInvocation:remove
+MethodInvocation:isEmpty
+Method-name:getFirstDataDrivenPathMemory
+Method-returnType:PathMemory
+Method-parameters:[]
+MethodInvocation:get
+Method-name:hasDataDrivenPathMemories
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getDataDrivenPathMemories
+Method-returnType:List<PathMemory>
+Method-parameters:[]
+Method-name:getSegmentPosMaskBit
+Method-returnType:long
+Method-parameters:[]
+Method-name:setSegmentPosMaskBit
+Method-returnType:void
+Method-parameters:[long nodeSegmenMask]
+FieldAccess:segmentPosMaskBit
+Method-name:isActive
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setActive
+Method-returnType:void
+Method-parameters:[boolean evaluating]
+FieldAccess:active
+Method-name:getPos
+Method-returnType:int
+Method-parameters:[]
+Method-name:setPos
+Method-returnType:void
+Method-parameters:[int pos]
+FieldAccess:pos
+Method-name:getStagedLeftTuples
+Method-returnType:TupleSets<LeftTuple>
+Method-parameters:[]
+Method-name:setStagedTuples
+Method-returnType:void
+Method-parameters:[TupleSets<LeftTuple> stagedTuples]
+FieldAccess:stagedLeftTuples
+Method-name:getNext
+Method-returnType:SegmentMemory
+Method-parameters:[]
+FieldAccess:next
+Method-name:setNext
+Method-returnType:void
+Method-parameters:[SegmentMemory next]
+FieldAccess:next
+Method-name:getPrevious
+Method-returnType:SegmentMemory
+Method-parameters:[]
+FieldAccess:previous
+Method-name:setPrevious
+Method-returnType:void
+Method-parameters:[SegmentMemory previous]
+FieldAccess:previous
+Method-name:nullPrevNext
+Method-returnType:void
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getId
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getId
+MethodInvocation:getId
+FieldAccess:rootNode
+Method-name:asPrototype
+Method-returnType:Prototype
+Method-parameters:[]
+Method-name:getNodesInSegment
+Method-returnType:List<NetworkNode>
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getLeftTupleSource
+MethodInvocation:add
+Method-name:reset
+Method-returnType:void
+Method-parameters:[Prototype prototype]
+FieldAccess:dirtyNodeMask
+FieldAccess:linkedNodeMask
+MethodInvocation:resetAll
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Class:Prototype
+Field:rootNode
+Field:tipNode
+Field:linkedNodeMask
+Field:allLinkedMaskTest
+Field:segmentPosMaskBit
+Field:pos
+Field:memories
+Field:nodesInSegment
+Method-name:Prototype
+Method-returnType:null
+Method-parameters:[SegmentMemory smem]
+FieldAccess:rootNode
+FieldAccess:tipNode
+FieldAccess:linkedNodeMask
+FieldAccess:allLinkedMaskTest
+FieldAccess:segmentPosMaskBit
+FieldAccess:pos
+MethodInvocation:getFirst
+MethodInvocation:getNext
+MethodInvocation:add
+MethodInvocation:get
+Method-name:newSegmentMemory
+Method-returnType:SegmentMemory
+Method-parameters:[InternalWorkingMemory wm]
+MethodInvocation:getNodesInSegment
+MethodInvocation:getNodeMemory
+MethodInvocation:setSegmentMemory
+MethodInvocation:add
+MethodInvocation:getNodeMemories
+MethodInvocation:get
+MethodInvocation:populateMemory
+Method-name:getNodesInSegment
+Method-returnType:List<NetworkNode>
+Method-parameters:[SegmentMemory smem]
+MethodInvocation:getNodesInSegment
+Class:MemoryPrototype
+Method-name:get
+Method-returnType:MemoryPrototype
+Method-parameters:[Memory memory]
+Method-name:populateMemory
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm, Memory memory]
+Class:BetaMemoryPrototype
+Field:nodePosMaskBit
+Field:riaNode
+Method-name:BetaMemoryPrototype
+Method-returnType:null
+Method-parameters:[BetaMemory betaMemory]
+FieldAccess:nodePosMaskBit
+MethodInvocation:getNodePosMaskBit
+MethodInvocation:getRiaRuleMemory
+MethodInvocation:getRightInputAdapterNode
+MethodInvocation:getRiaRuleMemory
+Method-name:populateMemory
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm, Memory memory]
+MethodInvocation:setNodePosMaskBit
+MethodInvocation:getNodeMemory
+MethodInvocation:setRiaRuleMemory
+MethodInvocation:getRiaPathMemory
+Class:LiaMemoryPrototype
+Field:nodePosMaskBit
+Method-name:LiaMemoryPrototype
+Method-returnType:null
+Method-parameters:[LeftInputAdapterNode.LiaNodeMemory liaMemory]
+FieldAccess:nodePosMaskBit
+MethodInvocation:getNodePosMaskBit
+Method-name:populateMemory
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm, Memory liaMemory]
+MethodInvocation:setNodePosMaskBit
+Class:ReactiveFromMemoryPrototype
+Field:nodePosMaskBit
+Method-name:ReactiveFromMemoryPrototype
+Method-returnType:null
+Method-parameters:[ReactiveFromNode.ReactiveFromMemory memory]
+FieldAccess:nodePosMaskBit
+MethodInvocation:getNodePosMaskBit
+MethodInvocation:getBetaMemory
+Method-name:populateMemory
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm, Memory memory]
+MethodInvocation:setNodePosMaskBit
+Class:QueryMemoryPrototype
+Field:nodePosMaskBit
+Field:queryNode
+Method-name:QueryMemoryPrototype
+Method-returnType:null
+Method-parameters:[QueryElementNode.QueryElementNodeMemory queryMemory]
+MethodInvocation:getNodePosMaskBit
+FieldAccess:queryNode
+MethodInvocation:getNode
+Method-name:populateMemory
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm, Memory mem]
+MethodInvocation:getQuerySegmentMemory
+MethodInvocation:getRootNode
+MethodInvocation:getSegmentMemory
+MethodInvocation:setQuerySegmentMemory
+MethodInvocation:setNodePosMaskBit
+Class:TimerMemoryPrototype
+Field:nodePosMaskBit
+Method-name:TimerMemoryPrototype
+Method-returnType:null
+Method-parameters:[TimerNodeMemory timerMemory]
+MethodInvocation:getNodePosMaskBit
+Method-name:populateMemory
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm, Memory mem]
+MethodInvocation:setNodePosMaskBit
+Class:AccumulateMemoryPrototype
+Field:betaProto
+Method-name:AccumulateMemoryPrototype
+Method-returnType:null
+Method-parameters:[AccumulateNode.AccumulateMemory accMemory]
+MethodInvocation:getBetaMemory
+Method-name:populateMemory
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm, Memory accMemory]
+MethodInvocation:populateMemory
+MethodInvocation:getBetaMemory
+Class:FromMemoryPrototype
+Field:betaProto
+Method-name:FromMemoryPrototype
+Method-returnType:null
+Method-parameters:[FromNode.FromMemory fromMemory]
+MethodInvocation:getBetaMemory
+Method-name:populateMemory
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm, Memory fromMemory]
+MethodInvocation:populateMemory
+MethodInvocation:getBetaMemory

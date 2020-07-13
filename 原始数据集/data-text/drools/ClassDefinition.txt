@@ -1,0 +1,305 @@
+Class:ClassDefinition
+Method-name:getTraitInterfaces
+Method-returnType:Collection<String>
+Method-parameters:[TraitRegistry traitRegistry]
+MethodInvocation:getInterfaces
+MethodInvocation:containsKey
+MethodInvocation:getTraits
+MethodInvocation:add
+Field:TRAITING_MODE
+Field:className
+Field:superClass
+Field:interfaces
+Field:definedClass
+Field:traitable
+Field:abstrakt
+Field:metaData
+Field:fields
+Field:annotations
+Field:modifiedPropsByMethod
+Method-name:ClassDefinition
+Method-returnType:null
+Method-parameters:[]
+Method-name:ClassDefinition
+Method-returnType:null
+Method-parameters:[String className]
+Method-name:ClassDefinition
+Method-returnType:null
+Method-parameters:[String className, String superClass, String[] interfaces]
+MethodInvocation:setClassName
+MethodInvocation:setSuperClass
+MethodInvocation:setInterfaces
+Method-name:ClassDefinition
+Method-returnType:null
+Method-parameters:[Class<?> cls]
+FieldAccess:definedClass
+MethodInvocation:setClassName
+MethodInvocation:getCanonicalName
+MethodInvocation:setSuperClass
+MethodInvocation:getSuperclass
+MethodInvocation:getCanonicalName
+MethodInvocation:getSuperclass
+FieldAccess:length
+MethodInvocation:getInterfaces
+MethodInvocation:getInterfaces
+MethodInvocation:getCanonicalName
+MethodInvocation:setInterfaces
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+FieldAccess:className
+MethodInvocation:readObject
+FieldAccess:superClass
+MethodInvocation:readObject
+FieldAccess:interfaces
+MethodInvocation:readObject
+FieldAccess:fields
+MethodInvocation:readObject
+FieldAccess:annotations
+MethodInvocation:readObject
+FieldAccess:modifiedPropsByMethod
+MethodInvocation:readObject
+FieldAccess:traitable
+MethodInvocation:readObject
+FieldAccess:abstrakt
+MethodInvocation:readBoolean
+FieldAccess:metaData
+MethodInvocation:readObject
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+FieldAccess:className
+MethodInvocation:writeObject
+FieldAccess:superClass
+MethodInvocation:writeObject
+FieldAccess:interfaces
+MethodInvocation:writeObject
+FieldAccess:fields
+MethodInvocation:writeObject
+FieldAccess:annotations
+MethodInvocation:writeObject
+FieldAccess:modifiedPropsByMethod
+MethodInvocation:writeObject
+FieldAccess:traitable
+MethodInvocation:writeBoolean
+FieldAccess:abstrakt
+MethodInvocation:writeObject
+FieldAccess:metaData
+Method-name:getClassName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:className
+Method-name:setClassName
+Method-returnType:void
+Method-parameters:[final String className]
+FieldAccess:className
+Method-name:getDefinedClass
+Method-returnType:Class<?>
+Method-parameters:[]
+Method-name:setDefinedClass
+Method-returnType:void
+Method-parameters:[final Class<?> definedClass]
+FieldAccess:definedClass
+Method-name:addField
+Method-returnType:void
+Method-parameters:[FieldDefinition attr]
+MethodInvocation:put
+FieldAccess:fields
+MethodInvocation:getName
+Method-name:getFieldsDefinitions
+Method-returnType:Collection<FieldDefinition>
+Method-parameters:[]
+MethodInvocation:unmodifiableCollection
+MethodInvocation:values
+FieldAccess:fields
+Method-name:getField
+Method-returnType:FieldDefinition
+Method-parameters:[final String fieldName]
+MethodInvocation:get
+FieldAccess:fields
+Method-name:getFieldByAlias
+Method-returnType:FieldDefinition
+Method-parameters:[String alias]
+MethodInvocation:getFields
+MethodInvocation:equals
+MethodInvocation:resolveAlias
+Method-name:getField
+Method-returnType:FieldDefinition
+Method-parameters:[int index]
+MethodInvocation:size
+MethodInvocation:iterator
+MethodInvocation:values
+MethodInvocation:next
+MethodInvocation:next
+Method-name:getInterfaces
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:setInterfaces
+Method-returnType:void
+Method-parameters:[String[] interfaces]
+FieldAccess:interfaces
+Method-name:getSuperClass
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSuperClass
+Method-returnType:void
+Method-parameters:[final String superClass]
+FieldAccess:superClass
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getClassName
+Method-name:getSimpleName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:substring
+MethodInvocation:getClassName
+MethodInvocation:lastIndexOf
+MethodInvocation:getClassName
+Method-name:getPackageName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:substring
+MethodInvocation:getClassName
+MethodInvocation:lastIndexOf
+MethodInvocation:getClassName
+Method-name:newInstance
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:newInstance
+FieldAccess:definedClass
+Method-name:getFactClass
+Method-returnType:Class<?>
+Method-parameters:[]
+MethodInvocation:getDefinedClass
+Method-name:getFields
+Method-returnType:List<FactField>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:get
+Method-returnType:Object
+Method-parameters:[Object bean, String field]
+MethodInvocation:getField
+MethodInvocation:getValue
+MethodInvocation:getFieldAccessor
+MethodInvocation:getField
+MethodInvocation:setAccessible
+MethodInvocation:get
+Method-name:set
+Method-returnType:void
+Method-parameters:[Object bean, String field, Object value]
+MethodInvocation:getField
+MethodInvocation:setValue
+MethodInvocation:getFieldAccessor
+MethodInvocation:getField
+MethodInvocation:setAccessible
+MethodInvocation:set
+Method-name:getAsMap
+Method-returnType:Map<String,Object>
+Method-parameters:[Object bean]
+MethodInvocation:size
+MethodInvocation:entrySet
+FieldAccess:fields
+MethodInvocation:getValue
+MethodInvocation:getFieldAccessor
+MethodInvocation:getValue
+MethodInvocation:put
+MethodInvocation:getKey
+Method-name:setFromMap
+Method-returnType:void
+Method-parameters:[Object bean, Map<String,Object> data]
+MethodInvocation:entrySet
+MethodInvocation:set
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:addAnnotation
+Method-returnType:void
+Method-parameters:[AnnotationDefinition annotationDefinition]
+FieldAccess:annotations
+FieldAccess:annotations
+MethodInvocation:put
+FieldAccess:annotations
+MethodInvocation:getName
+Method-name:getAnnotations
+Method-returnType:Collection<AnnotationDefinition>
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:emptyList
+Method-name:getAnnotation
+Method-returnType:AnnotationDefinition
+Method-parameters:[Class<?> annotationClass]
+MethodInvocation:get
+MethodInvocation:getName
+Method-name:getClassAnnotations
+Method-returnType:List<Annotation>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+MethodInvocation:getAnnotations
+Method-name:getMetaData
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+Method-name:getMetaData
+Method-returnType:Object
+Method-parameters:[String name]
+MethodInvocation:get
+Method-name:addMetaData
+Method-returnType:void
+Method-parameters:[String key, Object value]
+FieldAccess:metaData
+MethodInvocation:put
+Method-name:addModifiedPropsByMethod
+Method-returnType:void
+Method-parameters:[Method method, List<String> props]
+MethodInvocation:modifiedPropsByMethodKey
+MethodInvocation:put
+Method-name:getModifiedPropsByMethod
+Method-returnType:List<String>
+Method-parameters:[Method method]
+MethodInvocation:getModifiedPropsByMethod
+MethodInvocation:getName
+FieldAccess:length
+MethodInvocation:getParameterTypes
+Method-name:getModifiedPropsByMethod
+Method-returnType:List<String>
+Method-parameters:[String methodName, int args]
+MethodInvocation:get
+MethodInvocation:get
+Method-name:modifiedPropsByMethodKey
+Method-returnType:String
+Method-parameters:[Method method]
+MethodInvocation:getName
+MethodInvocation:isVarArgs
+FieldAccess:length
+MethodInvocation:getParameterTypes
+Method-name:isReactive
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getAnnotation
+Method-name:isTraitable
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setTraitable
+Method-returnType:void
+Method-parameters:[boolean traitable]
+MethodInvocation:setTraitable
+Method-name:setTraitable
+Method-returnType:void
+Method-parameters:[boolean traitable, boolean enableLogical]
+FieldAccess:traitable
+FieldAccess:traitable
+Method-name:isFullTraiting
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:traitable
+Method-name:isAbstrakt
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAbstrakt
+Method-returnType:void
+Method-parameters:[boolean abstrakt]
+FieldAccess:abstrakt
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:asList

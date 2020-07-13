@@ -1,0 +1,125 @@
+Class:SwingReplacedElementFactory
+Field:imageComponents
+Field:forms
+Field:formSubmissionListener
+Field:repaintListener
+Field:imageResourceLoader
+Method-name:SwingReplacedElementFactory
+Method-returnType:null
+Method-parameters:[]
+Method-name:SwingReplacedElementFactory
+Method-returnType:null
+Method-parameters:[RepaintListener repaintListener]
+Method-name:SwingReplacedElementFactory
+Method-returnType:null
+Method-parameters:[final RepaintListener listener, final ImageResourceLoader irl]
+FieldAccess:repaintListener
+FieldAccess:imageResourceLoader
+FieldAccess:formSubmissionListener
+Method-name:createReplacedElement
+Method-returnType:ReplacedElement
+Method-parameters:[LayoutContext context, BlockBox box, UserAgentCallback uac, int cssWidth, int cssHeight]
+MethodInvocation:getElement
+MethodInvocation:isImageElement
+MethodInvocation:getNamespaceHandler
+MethodInvocation:replaceImage
+MethodInvocation:getParentForm
+MethodInvocation:getForm
+MethodInvocation:addForm
+MethodInvocation:addComponent
+MethodInvocation:getComponent
+MethodInvocation:setIntrinsicSize
+MethodInvocation:getIntrinsicSize
+MethodInvocation:isInteractive
+MethodInvocation:add
+MethodInvocation:getCanvas
+Method-name:replaceImage
+Method-returnType:ReplacedElement
+Method-parameters:[UserAgentCallback uac, LayoutContext context, Element elem, int cssWidth, int cssHeight]
+MethodInvocation:getImageSourceURI
+MethodInvocation:getNamespaceHandler
+MethodInvocation:length
+MethodInvocation:layout
+MethodInvocation:newIrreplaceableImageElement
+MethodInvocation:isEmbeddedBase64Image
+MethodInvocation:loadEmbeddedBase64Image
+MethodInvocation:resolveURI
+MethodInvocation:lookupImageReplacedElement
+MethodInvocation:load
+MethodInvocation:get
+MethodInvocation:isLoaded
+MethodInvocation:getImage
+MethodInvocation:getImage
+MethodInvocation:storeImageReplacedElement
+Method-name:lookupImageReplacedElement
+Method-returnType:ReplacedElement
+Method-parameters:[final Element elem, final String ruri, final int cssWidth, final int cssHeight]
+MethodInvocation:get
+Method-name:newIrreplaceableImageElement
+Method-returnType:ReplacedElement
+Method-parameters:[int cssWidth, int cssHeight]
+MethodInvocation:createCompatibleBufferedImage
+MethodInvocation:createGraphics
+MethodInvocation:setColor
+MethodInvocation:setBackground
+MethodInvocation:setFont
+MethodInvocation:drawString
+MethodInvocation:dispose
+Method-name:storeImageReplacedElement
+Method-returnType:void
+Method-parameters:[Element e, ReplacedElement cc, String uri, final int cssWidth, final int cssHeight]
+MethodInvocation:put
+Method-name:lookupImageReplacedElement
+Method-returnType:ReplacedElement
+Method-parameters:[Element e, String uri]
+MethodInvocation:lookupImageReplacedElement
+Method-name:addForm
+Method-returnType:void
+Method-parameters:[Element e, XhtmlForm f]
+MethodInvocation:put
+Method-name:getForm
+Method-returnType:XhtmlForm
+Method-parameters:[Element e]
+MethodInvocation:get
+Method-name:getParentForm
+Method-returnType:Element
+Method-parameters:[Element e, LayoutContext context]
+MethodInvocation:getParentNode
+MethodInvocation:getNodeType
+MethodInvocation:isFormElement
+MethodInvocation:getNamespaceHandler
+MethodInvocation:getNodeType
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+Method-name:remove
+Method-returnType:void
+Method-parameters:[Element e]
+MethodInvocation:remove
+MethodInvocation:remove
+Method-name:setFormSubmissionListener
+Method-returnType:void
+Method-parameters:[FormSubmissionListener fsl]
+FieldAccess:formSubmissionListener
+Class:CacheKey
+Field:elem
+Field:uri
+Field:width
+Field:height
+Method-name:CacheKey
+Method-returnType:null
+Method-parameters:[final Element elem, final String uri, final int width, final int height]
+FieldAccess:uri
+FieldAccess:width
+FieldAccess:height
+FieldAccess:elem
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[final Object o]
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode

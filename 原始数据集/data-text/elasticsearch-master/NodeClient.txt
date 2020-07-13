@@ -1,0 +1,53 @@
+Class:NodeClient
+Field:actions
+Field:taskManager
+Field:localNodeId
+Field:remoteClusterService
+Method-name:NodeClient
+Method-returnType:null
+Method-parameters:[Settings settings, ThreadPool threadPool]
+Method-name:initialize
+Method-returnType:void
+Method-parameters:[Map<ActionType,TransportAction> actions, TaskManager taskManager, Supplier<String> localNodeId, RemoteClusterService remoteClusterService]
+FieldAccess:actions
+FieldAccess:taskManager
+FieldAccess:localNodeId
+FieldAccess:remoteClusterService
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+Method-name:doExecute
+Method-returnType:void
+Method-parameters:[ActionType<Response> action, Request request, ActionListener<Response> listener]
+MethodInvocation:executeLocally
+Method-name:executeLocally
+Method-returnType:Task
+Method-parameters:[ActionType<Response> action, Request request, ActionListener<Response> listener]
+MethodInvocation:registerAndExecute
+MethodInvocation:transportAction
+MethodInvocation:onResponse
+MethodInvocation:onFailure
+Method-name:executeLocally
+Method-returnType:Task
+Method-parameters:[ActionType<Response> action, Request request, TaskListener<Response> listener]
+MethodInvocation:registerAndExecute
+MethodInvocation:transportAction
+Method-name:getLocalNodeId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:get
+Method-name:transportAction
+Method-returnType:TransportAction<Request,Response>
+Method-parameters:[ActionType<Response> action]
+MethodInvocation:get
+Method-name:getRemoteClusterClient
+Method-returnType:Client
+Method-parameters:[String clusterAlias]
+MethodInvocation:getRemoteClusterClient
+MethodInvocation:threadPool
+Method-name:handleGet
+Method-returnType:BaseRestHandler.RestChannelConsumer
+Method-parameters:[final RestRequest request, RestDeprecationInfoAction restDeprecationInfoAction]
+MethodInvocation:splitStringByCommaToArray
+MethodInvocation:param
+MethodInvocation:execute

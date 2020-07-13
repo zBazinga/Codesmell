@@ -1,0 +1,73 @@
+Class:CsvBaseReader
+Field:serialVersionUID
+Field:DEFAULT_CHARSET
+Field:config
+Method-name:CsvBaseReader
+Method-returnType:null
+Method-parameters:[]
+Method-name:CsvBaseReader
+Method-returnType:null
+Method-parameters:[CsvReadConfig config]
+FieldAccess:config
+MethodInvocation:defaultIfNull
+MethodInvocation:defaultConfig
+Method-name:setFieldSeparator
+Method-returnType:void
+Method-parameters:[char fieldSeparator]
+MethodInvocation:setFieldSeparator
+FieldAccess:config
+Method-name:setTextDelimiter
+Method-returnType:void
+Method-parameters:[char textDelimiter]
+MethodInvocation:setTextDelimiter
+FieldAccess:config
+Method-name:setContainsHeader
+Method-returnType:void
+Method-parameters:[boolean containsHeader]
+MethodInvocation:setContainsHeader
+FieldAccess:config
+Method-name:setSkipEmptyRows
+Method-returnType:void
+Method-parameters:[boolean skipEmptyRows]
+MethodInvocation:setSkipEmptyRows
+FieldAccess:config
+Method-name:setErrorOnDifferentFieldCount
+Method-returnType:void
+Method-parameters:[boolean errorOnDifferentFieldCount]
+MethodInvocation:setErrorOnDifferentFieldCount
+FieldAccess:config
+Method-name:read
+Method-returnType:CsvData
+Method-parameters:[File file]
+MethodInvocation:read
+Method-name:read
+Method-returnType:CsvData
+Method-parameters:[File file, Charset charset]
+MethodInvocation:read
+MethodInvocation:requireNonNull
+MethodInvocation:toPath
+Method-name:read
+Method-returnType:CsvData
+Method-parameters:[Path path]
+MethodInvocation:read
+Method-name:read
+Method-returnType:CsvData
+Method-parameters:[Path path, Charset charset]
+MethodInvocation:notNull
+MethodInvocation:read
+MethodInvocation:getReader
+Method-name:read
+Method-returnType:void
+Method-parameters:[Reader reader, CsvRowHandler rowHandler]
+MethodInvocation:read
+MethodInvocation:parse
+Method-name:read
+Method-returnType:CsvData
+Method-parameters:[Reader reader]
+MethodInvocation:parse
+MethodInvocation:read
+MethodInvocation:getHeader
+Method-name:parse
+Method-returnType:CsvParser
+Method-parameters:[Reader reader]
+FieldAccess:config

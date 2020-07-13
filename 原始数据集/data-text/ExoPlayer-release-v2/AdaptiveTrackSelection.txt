@@ -1,0 +1,211 @@
+Class:AdaptiveTrackSelection
+Class:Factory
+Field:bandwidthMeter
+Field:minDurationForQualityIncreaseMs
+Field:maxDurationForQualityDecreaseMs
+Field:minDurationToRetainAfterDiscardMs
+Field:bandwidthFraction
+Field:bufferedFractionToLiveEdgeForQualityIncrease
+Field:minTimeBetweenBufferReevaluationMs
+Field:clock
+Method-name:Factory
+Method-returnType:null
+Method-parameters:[]
+Method-name:Factory
+Method-returnType:null
+Method-parameters:[BandwidthMeter bandwidthMeter]
+Method-name:Factory
+Method-returnType:null
+Method-parameters:[int minDurationForQualityIncreaseMs, int maxDurationForQualityDecreaseMs, int minDurationToRetainAfterDiscardMs, float bandwidthFraction]
+Method-name:Factory
+Method-returnType:null
+Method-parameters:[BandwidthMeter bandwidthMeter, int minDurationForQualityIncreaseMs, int maxDurationForQualityDecreaseMs, int minDurationToRetainAfterDiscardMs, float bandwidthFraction]
+Method-name:Factory
+Method-returnType:null
+Method-parameters:[int minDurationForQualityIncreaseMs, int maxDurationForQualityDecreaseMs, int minDurationToRetainAfterDiscardMs, float bandwidthFraction, float bufferedFractionToLiveEdgeForQualityIncrease, long minTimeBetweenBufferReevaluationMs, Clock clock]
+Method-name:Factory
+Method-returnType:null
+Method-parameters:[@Nullable BandwidthMeter bandwidthMeter, int minDurationForQualityIncreaseMs, int maxDurationForQualityDecreaseMs, int minDurationToRetainAfterDiscardMs, float bandwidthFraction, float bufferedFractionToLiveEdgeForQualityIncrease, long minTimeBetweenBufferReevaluationMs, Clock clock]
+FieldAccess:bandwidthMeter
+FieldAccess:minDurationForQualityIncreaseMs
+FieldAccess:maxDurationForQualityDecreaseMs
+FieldAccess:minDurationToRetainAfterDiscardMs
+FieldAccess:bandwidthFraction
+FieldAccess:bufferedFractionToLiveEdgeForQualityIncrease
+FieldAccess:minTimeBetweenBufferReevaluationMs
+FieldAccess:clock
+Method-name:createTrackSelections
+Method-returnType:TrackSelection[]
+Method-parameters:[@NullableType Definition[] definitions, BandwidthMeter bandwidthMeter]
+FieldAccess:bandwidthMeter
+FieldAccess:bandwidthMeter
+FieldAccess:bitrate
+MethodInvocation:getFormat
+MethodInvocation:createAdaptiveTrackSelection
+MethodInvocation:add
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:length
+MethodInvocation:length
+FieldAccess:bitrate
+MethodInvocation:getFormat
+MethodInvocation:length
+MethodInvocation:getAllocationCheckpoints
+MethodInvocation:size
+MethodInvocation:experimental_setBandwidthAllocationCheckpoints
+MethodInvocation:get
+Method-name:createAdaptiveTrackSelection
+Method-returnType:AdaptiveTrackSelection
+Method-parameters:[TrackGroup group, BandwidthMeter bandwidthMeter, int[] tracks, int totalFixedTrackBandwidth]
+Field:DEFAULT_MIN_DURATION_FOR_QUALITY_INCREASE_MS
+Field:DEFAULT_MAX_DURATION_FOR_QUALITY_DECREASE_MS
+Field:DEFAULT_MIN_DURATION_TO_RETAIN_AFTER_DISCARD_MS
+Field:DEFAULT_BANDWIDTH_FRACTION
+Field:DEFAULT_BUFFERED_FRACTION_TO_LIVE_EDGE_FOR_QUALITY_INCREASE
+Field:DEFAULT_MIN_TIME_BETWEEN_BUFFER_REEVALUTATION_MS
+Field:bandwidthProvider
+Field:minDurationForQualityIncreaseUs
+Field:maxDurationForQualityDecreaseUs
+Field:minDurationToRetainAfterDiscardUs
+Field:bufferedFractionToLiveEdgeForQualityIncrease
+Field:minTimeBetweenBufferReevaluationMs
+Field:clock
+Field:playbackSpeed
+Field:selectedIndex
+Field:reason
+Field:lastBufferEvaluationMs
+Method-name:AdaptiveTrackSelection
+Method-returnType:null
+Method-parameters:[TrackGroup group, int[] tracks, BandwidthMeter bandwidthMeter]
+Method-name:AdaptiveTrackSelection
+Method-returnType:null
+Method-parameters:[TrackGroup group, int[] tracks, BandwidthMeter bandwidthMeter, long reservedBandwidth, long minDurationForQualityIncreaseMs, long maxDurationForQualityDecreaseMs, long minDurationToRetainAfterDiscardMs, float bandwidthFraction, float bufferedFractionToLiveEdgeForQualityIncrease, long minTimeBetweenBufferReevaluationMs, Clock clock]
+Method-name:AdaptiveTrackSelection
+Method-returnType:null
+Method-parameters:[TrackGroup group, int[] tracks, BandwidthProvider bandwidthProvider, long minDurationForQualityIncreaseMs, long maxDurationForQualityDecreaseMs, long minDurationToRetainAfterDiscardMs, float bufferedFractionToLiveEdgeForQualityIncrease, long minTimeBetweenBufferReevaluationMs, Clock clock]
+FieldAccess:bandwidthProvider
+FieldAccess:minDurationForQualityIncreaseUs
+FieldAccess:maxDurationForQualityDecreaseUs
+FieldAccess:minDurationToRetainAfterDiscardUs
+FieldAccess:bufferedFractionToLiveEdgeForQualityIncrease
+FieldAccess:minTimeBetweenBufferReevaluationMs
+FieldAccess:clock
+Method-name:experimental_setBandwidthAllocationCheckpoints
+Method-returnType:void
+Method-parameters:[long[][] allocationCheckpoints]
+MethodInvocation:experimental_setBandwidthAllocationCheckpoints
+Method-name:enable
+Method-returnType:void
+Method-parameters:[]
+Method-name:onPlaybackSpeed
+Method-returnType:void
+Method-parameters:[float playbackSpeed]
+FieldAccess:playbackSpeed
+Method-name:updateSelectedTrack
+Method-returnType:void
+Method-parameters:[long playbackPositionUs, long bufferedDurationUs, long availableDurationUs, List<? extends MediaChunk> queue, MediaChunkIterator[] mediaChunkIterators]
+MethodInvocation:elapsedRealtime
+MethodInvocation:determineIdealSelectedIndex
+MethodInvocation:determineIdealSelectedIndex
+MethodInvocation:isBlacklisted
+MethodInvocation:getFormat
+MethodInvocation:getFormat
+MethodInvocation:minDurationForQualityIncreaseUs
+Method-name:getSelectedIndex
+Method-returnType:int
+Method-parameters:[]
+Method-name:getSelectionReason
+Method-returnType:int
+Method-parameters:[]
+Method-name:getSelectionData
+Method-returnType:Object
+Method-parameters:[]
+Method-name:evaluateQueueSize
+Method-returnType:int
+Method-parameters:[long playbackPositionUs, List<? extends MediaChunk> queue]
+MethodInvocation:elapsedRealtime
+MethodInvocation:shouldEvaluateQueueSize
+MethodInvocation:size
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getPlayoutDurationForMediaDuration
+MethodInvocation:getMinDurationToRetainAfterDiscardUs
+MethodInvocation:determineIdealSelectedIndex
+MethodInvocation:getFormat
+MethodInvocation:get
+MethodInvocation:getPlayoutDurationForMediaDuration
+Method-name:canSelectFormat
+Method-returnType:boolean
+Method-parameters:[Format format, int trackBitrate, float playbackSpeed, long effectiveBitrate]
+MethodInvocation:round
+Method-name:shouldEvaluateQueueSize
+Method-returnType:boolean
+Method-parameters:[long nowMs]
+Method-name:getMinDurationToRetainAfterDiscardUs
+Method-returnType:long
+Method-parameters:[]
+Method-name:determineIdealSelectedIndex
+Method-returnType:int
+Method-parameters:[long nowMs]
+MethodInvocation:getAllocatedBandwidth
+MethodInvocation:isBlacklisted
+MethodInvocation:getFormat
+MethodInvocation:canSelectFormat
+Method-name:minDurationForQualityIncreaseUs
+Method-returnType:long
+Method-parameters:[long availableDurationUs]
+Method-name:getAllocatedBandwidth
+Method-returnType:long
+Method-parameters:[]
+Class:DefaultBandwidthProvider
+Field:bandwidthMeter
+Field:bandwidthFraction
+Field:reservedBandwidth
+Field:allocationCheckpoints
+Method-name:DefaultBandwidthProvider
+Method-returnType:null
+Method-parameters:[BandwidthMeter bandwidthMeter, float bandwidthFraction, long reservedBandwidth]
+FieldAccess:bandwidthMeter
+FieldAccess:bandwidthFraction
+FieldAccess:reservedBandwidth
+Method-name:getAllocatedBandwidth
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getBitrateEstimate
+MethodInvocation:max
+Method-name:experimental_setBandwidthAllocationCheckpoints
+Method-returnType:void
+Method-parameters:[long[][] allocationCheckpoints]
+MethodInvocation:checkArgument
+FieldAccess:allocationCheckpoints
+Method-name:getAllocationCheckpoints
+Method-returnType:long[][][]
+Method-parameters:[long[][] trackBitrates]
+MethodInvocation:getLogArrayValues
+MethodInvocation:getSwitchPoints
+MethodInvocation:countArrayElements
+MethodInvocation:setCheckpointValues
+FieldAccess:length
+MethodInvocation:setCheckpointValues
+Method-name:getLogArrayValues
+Method-returnType:double[][]
+Method-parameters:[long[][] values]
+FieldAccess:length
+FieldAccess:length
+MethodInvocation:log
+Method-name:getSwitchPoints
+Method-returnType:double[][]
+Method-parameters:[double[][] logBitrates]
+FieldAccess:length
+FieldAccess:length
+FieldAccess:length
+FieldAccess:length
+Method-name:countArrayElements
+Method-returnType:int
+Method-parameters:[double[][] array]
+Method-name:setCheckpointValues
+Method-returnType:void
+Method-parameters:[long[][][] checkpoints, int checkpointIndex, long[][] trackBitrates, int[] selectedTracks]

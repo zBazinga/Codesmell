@@ -1,0 +1,134 @@
+Class:ContentNegotiationManagerFactoryBean
+Field:strategies
+Field:favorPathExtension
+Field:favorParameter
+Field:ignoreAcceptHeader
+Field:mediaTypes
+Field:ignoreUnknownPathExtensions
+Field:useRegisteredExtensionsOnly
+Field:parameterName
+Field:defaultNegotiationStrategy
+Field:contentNegotiationManager
+Field:servletContext
+Method-name:setStrategies
+Method-returnType:void
+Method-parameters:[@Nullable List<ContentNegotiationStrategy> strategies]
+FieldAccess:strategies
+Method-name:setFavorPathExtension
+Method-returnType:void
+Method-parameters:[boolean favorPathExtension]
+FieldAccess:favorPathExtension
+Method-name:setMediaTypes
+Method-returnType:void
+Method-parameters:[Properties mediaTypes]
+MethodInvocation:isEmpty
+MethodInvocation:forEach
+MethodInvocation:addMediaType
+MethodInvocation:valueOf
+Method-name:addMediaType
+Method-returnType:void
+Method-parameters:[String key, MediaType mediaType]
+MethodInvocation:put
+FieldAccess:mediaTypes
+MethodInvocation:toLowerCase
+Method-name:addMediaTypes
+Method-returnType:void
+Method-parameters:[@Nullable Map<String,MediaType> mediaTypes]
+MethodInvocation:forEach
+Method-name:setIgnoreUnknownPathExtensions
+Method-returnType:void
+Method-parameters:[boolean ignore]
+FieldAccess:ignoreUnknownPathExtensions
+Method-name:setUseJaf
+Method-returnType:void
+Method-parameters:[boolean useJaf]
+MethodInvocation:setUseRegisteredExtensionsOnly
+Method-name:setUseRegisteredExtensionsOnly
+Method-returnType:void
+Method-parameters:[boolean useRegisteredExtensionsOnly]
+FieldAccess:useRegisteredExtensionsOnly
+Method-name:useRegisteredExtensionsOnly
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:useRegisteredExtensionsOnly
+FieldAccess:useRegisteredExtensionsOnly
+Method-name:setFavorParameter
+Method-returnType:void
+Method-parameters:[boolean favorParameter]
+FieldAccess:favorParameter
+Method-name:setParameterName
+Method-returnType:void
+Method-parameters:[String parameterName]
+MethodInvocation:notNull
+FieldAccess:parameterName
+Method-name:setIgnoreAcceptHeader
+Method-returnType:void
+Method-parameters:[boolean ignoreAcceptHeader]
+FieldAccess:ignoreAcceptHeader
+Method-name:setDefaultContentTypes
+Method-returnType:void
+Method-parameters:[List<MediaType> contentTypes]
+FieldAccess:defaultNegotiationStrategy
+Method-name:setDefaultContentTypeStrategy
+Method-returnType:void
+Method-parameters:[ContentNegotiationStrategy strategy]
+FieldAccess:defaultNegotiationStrategy
+Method-name:setServletContext
+Method-returnType:void
+Method-parameters:[ServletContext servletContext]
+FieldAccess:servletContext
+Method-name:afterPropertiesSet
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:build
+Method-name:build
+Method-returnType:ContentNegotiationManager
+Method-parameters:[]
+FieldAccess:strategies
+MethodInvocation:addAll
+FieldAccess:strategies
+FieldAccess:favorPathExtension
+FieldAccess:servletContext
+MethodInvocation:useRegisteredExtensionsOnly
+FieldAccess:servletContext
+FieldAccess:mediaTypes
+FieldAccess:mediaTypes
+MethodInvocation:setIgnoreUnknownExtensions
+FieldAccess:ignoreUnknownPathExtensions
+FieldAccess:useRegisteredExtensionsOnly
+MethodInvocation:setUseRegisteredExtensionsOnly
+FieldAccess:useRegisteredExtensionsOnly
+MethodInvocation:add
+FieldAccess:favorParameter
+FieldAccess:mediaTypes
+MethodInvocation:setParameterName
+FieldAccess:parameterName
+FieldAccess:useRegisteredExtensionsOnly
+MethodInvocation:setUseRegisteredExtensionsOnly
+FieldAccess:useRegisteredExtensionsOnly
+MethodInvocation:setUseRegisteredExtensionsOnly
+MethodInvocation:add
+FieldAccess:ignoreAcceptHeader
+MethodInvocation:add
+FieldAccess:defaultNegotiationStrategy
+MethodInvocation:add
+FieldAccess:defaultNegotiationStrategy
+FieldAccess:contentNegotiationManager
+MethodInvocation:isEmpty
+FieldAccess:mediaTypes
+FieldAccess:favorPathExtension
+FieldAccess:favorParameter
+MethodInvocation:addFileExtensionResolvers
+FieldAccess:contentNegotiationManager
+FieldAccess:mediaTypes
+FieldAccess:contentNegotiationManager
+Method-name:getObject
+Method-returnType:ContentNegotiationManager
+Method-parameters:[]
+FieldAccess:contentNegotiationManager
+Method-name:getObjectType
+Method-returnType:Class<?>
+Method-parameters:[]
+Method-name:isSingleton
+Method-returnType:boolean
+Method-parameters:[]

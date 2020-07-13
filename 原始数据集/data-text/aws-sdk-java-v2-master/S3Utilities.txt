@@ -1,0 +1,98 @@
+Class:S3Utilities
+Field:region
+Field:s3Configuration
+Field:profileFile
+Field:profileName
+Method-name:S3Utilities
+Method-returnType:null
+Method-parameters:[Builder builder]
+FieldAccess:region
+MethodInvocation:paramNotNull
+FieldAccess:s3Configuration
+FieldAccess:profileFile
+FieldAccess:profileName
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:create
+Method-returnType:S3Utilities
+Method-parameters:[SdkClientConfiguration clientConfiguration]
+MethodInvocation:build
+MethodInvocation:profileName
+MethodInvocation:profileFile
+MethodInvocation:s3Configuration
+MethodInvocation:region
+MethodInvocation:builder
+MethodInvocation:option
+MethodInvocation:option
+MethodInvocation:option
+MethodInvocation:option
+Method-name:getUrl
+Method-returnType:URL
+Method-parameters:[Consumer<GetUrlRequest.Builder> getUrlRequest]
+MethodInvocation:getUrl
+MethodInvocation:build
+MethodInvocation:applyMutation
+MethodInvocation:builder
+Method-name:getUrl
+Method-returnType:URL
+Method-parameters:[GetUrlRequest getUrlRequest]
+MethodInvocation:resolveRegionForGetUrl
+MethodInvocation:resolveEndpoint
+MethodInvocation:endpoint
+MethodInvocation:endpoint
+MethodInvocation:createMarshalledRequest
+MethodInvocation:build
+MethodInvocation:key
+MethodInvocation:bucket
+MethodInvocation:builder
+MethodInvocation:bucket
+MethodInvocation:key
+MethodInvocation:sdkHttpRequest
+MethodInvocation:applyEndpointConfiguration
+MethodInvocation:toURL
+MethodInvocation:getUri
+MethodInvocation:create
+MethodInvocation:getUri
+Method-name:resolveRegionForGetUrl
+Method-returnType:Region
+Method-parameters:[GetUrlRequest getUrlRequest]
+MethodInvocation:region
+FieldAccess:region
+MethodInvocation:region
+MethodInvocation:region
+FieldAccess:region
+Method-name:resolveEndpoint
+Method-returnType:URI
+Method-parameters:[URI endpoint, Region region]
+MethodInvocation:getServiceEndpoint
+MethodInvocation:withProfileName
+MethodInvocation:withProfileFile
+MethodInvocation:withRegion
+Class:Builder
+Field:region
+Field:s3Configuration
+Field:profileFile
+Field:profileName
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:region
+Method-returnType:Builder
+Method-parameters:[Region region]
+FieldAccess:region
+Method-name:s3Configuration
+Method-returnType:Builder
+Method-parameters:[S3Configuration s3Configuration]
+FieldAccess:s3Configuration
+Method-name:profileFile
+Method-returnType:Builder
+Method-parameters:[ProfileFile profileFile]
+FieldAccess:profileFile
+Method-name:profileName
+Method-returnType:Builder
+Method-parameters:[String profileName]
+FieldAccess:profileName
+Method-name:build
+Method-returnType:S3Utilities
+Method-parameters:[]

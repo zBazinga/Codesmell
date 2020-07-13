@@ -1,0 +1,74 @@
+Class:Message
+Field:message
+Field:cause
+Field:sources
+Method-name:Message
+Method-returnType:null
+Method-parameters:[List<Object> sources, String message, Throwable cause]
+FieldAccess:sources
+MethodInvocation:unmodifiableList
+FieldAccess:message
+MethodInvocation:requireNonNull
+FieldAccess:cause
+Method-name:Message
+Method-returnType:null
+Method-parameters:[Object source, String message]
+MethodInvocation:singletonList
+Method-name:Message
+Method-returnType:null
+Method-parameters:[Object source, Throwable cause]
+MethodInvocation:singletonList
+Method-name:Message
+Method-returnType:null
+Method-parameters:[String message]
+MethodInvocation:emptyList
+Method-name:getSource
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:convert
+MethodInvocation:get
+MethodInvocation:size
+Method-name:getSources
+Method-returnType:List<Object>
+Method-parameters:[]
+Method-name:getMessage
+Method-returnType:String
+Method-parameters:[]
+Method-name:acceptVisitor
+Method-returnType:T
+Method-parameters:[ElementVisitor<T> visitor]
+MethodInvocation:visit
+Method-name:getCause
+Method-returnType:Throwable
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:applyTo
+Method-returnType:void
+Method-parameters:[Binder binder]
+MethodInvocation:addError
+MethodInvocation:withSource
+MethodInvocation:getSource
+Method-name:merge
+Method-returnType:Message
+Method-parameters:[Errors errors]
+MethodInvocation:addAll
+MethodInvocation:getSources
+MethodInvocation:addAll
+MethodInvocation:getSources
+MethodInvocation:getMessage
+MethodInvocation:getCause

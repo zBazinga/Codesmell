@@ -1,0 +1,60 @@
+Class:RexSubQuery
+Field:rel
+Method-name:RexSubQuery
+Method-returnType:null
+Method-parameters:[RelDataType type, SqlOperator op, ImmutableList<RexNode> operands, RelNode rel]
+FieldAccess:rel
+FieldAccess:digest
+MethodInvocation:computeDigest
+Method-name:in
+Method-returnType:RexSubQuery
+Method-parameters:[RelNode rel, ImmutableList<RexNode> nodes]
+MethodInvocation:type
+Method-name:some
+Method-returnType:RexSubQuery
+Method-parameters:[RelNode rel, ImmutableList<RexNode> nodes, SqlQuantifyOperator op]
+Method-name:type
+Method-returnType:RelDataType
+Method-parameters:[RelNode rel, ImmutableList<RexNode> nodes]
+Method-name:exists
+Method-returnType:RexSubQuery
+Method-parameters:[RelNode rel]
+MethodInvocation:getTypeFactory
+MethodInvocation:getCluster
+MethodInvocation:createSqlType
+MethodInvocation:of
+Method-name:scalar
+Method-returnType:RexSubQuery
+Method-parameters:[RelNode rel]
+Method-name:accept
+Method-returnType:R
+Method-parameters:[RexVisitor<R> visitor]
+MethodInvocation:visitSubQuery
+Method-name:accept
+Method-returnType:R
+Method-parameters:[RexBiVisitor<R,P> visitor, P arg]
+MethodInvocation:visitSubQuery
+Method-name:computeDigest
+Method-returnType:String
+Method-parameters:[boolean withType]
+MethodInvocation:getName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:clone
+Method-returnType:RexSubQuery
+Method-parameters:[RelDataType type, List<RexNode> operands]
+MethodInvocation:getOperator
+MethodInvocation:copyOf
+Method-name:clone
+Method-returnType:RexSubQuery
+Method-parameters:[RelNode rel]
+MethodInvocation:getOperator
+Method-name:rewriteSome
+Method-returnType:RexNode
+Method-parameters:[Set<CorrelationId> variablesSet, RelBuilder builder, SubQueryRemoveRule subQueryRemoveRule]

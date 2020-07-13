@@ -1,0 +1,713 @@
+Class:CoapClient
+Field:LOGGER
+MethodInvocation:getLogger
+Field:timeout
+Field:uri
+Field:destinationContext
+Field:type
+Field:blockwise
+Field:executor
+Field:secondaryExecutor
+Field:detachExecutor
+Field:endpoint
+Method-name:CoapClient
+Method-returnType:null
+Method-parameters:[]
+Method-name:CoapClient
+Method-returnType:null
+Method-parameters:[String uri]
+FieldAccess:uri
+Method-name:CoapClient
+Method-returnType:null
+Method-parameters:[URI uri]
+MethodInvocation:toString
+Method-name:CoapClient
+Method-returnType:null
+Method-parameters:[String scheme, String host, int port, String... path]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:uri
+MethodInvocation:toString
+Method-name:getTimeout
+Method-returnType:Long
+Method-parameters:[]
+Method-name:setTimeout
+Method-returnType:CoapClient
+Method-parameters:[Long timeout]
+FieldAccess:timeout
+Method-name:getURI
+Method-returnType:String
+Method-parameters:[]
+Method-name:setURI
+Method-returnType:CoapClient
+Method-parameters:[String uri]
+MethodInvocation:set
+FieldAccess:destinationContext
+FieldAccess:uri
+Method-name:setDestinationContext
+Method-returnType:CoapClient
+Method-parameters:[EndpointContext peerContext]
+MethodInvocation:set
+FieldAccess:destinationContext
+Method-name:getDestinationContext
+Method-returnType:EndpointContext
+Method-parameters:[]
+MethodInvocation:get
+FieldAccess:destinationContext
+Method-name:useExecutor
+Method-returnType:CoapClient
+Method-parameters:[]
+MethodInvocation:newFixedThreadPool
+FieldAccess:executor
+FieldAccess:secondaryExecutor
+FieldAccess:executor
+FieldAccess:secondaryExecutor
+FieldAccess:detachExecutor
+MethodInvocation:shutdownNow
+MethodInvocation:shutdown
+MethodInvocation:execute
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:info
+Method-name:setExecutors
+Method-returnType:CoapClient
+Method-parameters:[ExecutorService executor, ScheduledThreadPoolExecutor secondaryExecutor, boolean detach]
+FieldAccess:executor
+FieldAccess:secondaryExecutor
+FieldAccess:executor
+FieldAccess:secondaryExecutor
+FieldAccess:detachExecutor
+Method-name:getSecondaryExecutor
+Method-returnType:ScheduledThreadPoolExecutor
+Method-parameters:[]
+FieldAccess:detachExecutor
+Method-name:getEndpoint
+Method-returnType:Endpoint
+Method-parameters:[]
+Method-name:setEndpoint
+Method-returnType:CoapClient
+Method-parameters:[Endpoint endpoint]
+FieldAccess:endpoint
+MethodInvocation:isStarted
+MethodInvocation:start
+MethodInvocation:info
+MethodInvocation:getAddress
+MethodInvocation:error
+Method-name:useCONs
+Method-returnType:CoapClient
+Method-parameters:[]
+FieldAccess:type
+Method-name:useNONs
+Method-returnType:CoapClient
+Method-parameters:[]
+FieldAccess:type
+Method-name:useEarlyNegotiation
+Method-returnType:CoapClient
+Method-parameters:[int size]
+FieldAccess:blockwise
+Method-name:useLateNegotiation
+Method-returnType:CoapClient
+Method-parameters:[]
+FieldAccess:blockwise
+Method-name:ping
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:ping
+FieldAccess:timeout
+Method-name:ping
+Method-returnType:boolean
+Method-parameters:[long timeout]
+MethodInvocation:ping
+Method-name:ping
+Method-returnType:boolean
+Method-parameters:[Long timeout]
+MethodInvocation:setToken
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:getEffectiveEndpoint
+MethodInvocation:getLong
+MethodInvocation:getConfig
+MethodInvocation:waitForResponse
+MethodInvocation:send
+MethodInvocation:isRejected
+Method-name:discover
+Method-returnType:Set<WebLink>
+Method-parameters:[]
+MethodInvocation:discover
+Method-name:discover
+Method-returnType:Set<WebLink>
+Method-parameters:[String query]
+MethodInvocation:newGet
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:setUriPath
+MethodInvocation:clearUriQuery
+MethodInvocation:clearUriPath
+MethodInvocation:getOptions
+MethodInvocation:setUriQuery
+MethodInvocation:getOptions
+MethodInvocation:synchronous
+MethodInvocation:setDestinationContextFromResponse
+MethodInvocation:advanced
+MethodInvocation:getContentFormat
+MethodInvocation:getOptions
+MethodInvocation:emptySet
+MethodInvocation:parse
+MethodInvocation:getResponseText
+Method-name:get
+Method-returnType:CoapResponse
+Method-parameters:[]
+MethodInvocation:newGet
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:synchronous
+Method-name:get
+Method-returnType:CoapResponse
+Method-parameters:[int accept]
+MethodInvocation:newGet
+MethodInvocation:setAccept
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:synchronous
+Method-name:get
+Method-returnType:void
+Method-parameters:[CoapHandler handler]
+MethodInvocation:newGet
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:asynchronous
+Method-name:get
+Method-returnType:void
+Method-parameters:[CoapHandler handler, int accept]
+MethodInvocation:newGet
+MethodInvocation:setAccept
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:asynchronous
+Method-name:post
+Method-returnType:CoapResponse
+Method-parameters:[String payload, int format]
+MethodInvocation:newPost
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:synchronous
+Method-name:post
+Method-returnType:CoapResponse
+Method-parameters:[byte[] payload, int format]
+MethodInvocation:newPost
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:synchronous
+Method-name:post
+Method-returnType:CoapResponse
+Method-parameters:[String payload, int format, int accept]
+MethodInvocation:newPost
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:setAccept
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:synchronous
+Method-name:post
+Method-returnType:CoapResponse
+Method-parameters:[byte[] payload, int format, int accept]
+MethodInvocation:newPost
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:setAccept
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:synchronous
+Method-name:post
+Method-returnType:void
+Method-parameters:[CoapHandler handler, String payload, int format]
+MethodInvocation:newPost
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:asynchronous
+Method-name:post
+Method-returnType:void
+Method-parameters:[CoapHandler handler, byte[] payload, int format]
+MethodInvocation:newPost
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:asynchronous
+Method-name:post
+Method-returnType:void
+Method-parameters:[CoapHandler handler, String payload, int format, int accept]
+MethodInvocation:newPost
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:setAccept
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:asynchronous
+Method-name:post
+Method-returnType:void
+Method-parameters:[CoapHandler handler, byte[] payload, int format, int accept]
+MethodInvocation:newPost
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:setAccept
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:asynchronous
+Method-name:put
+Method-returnType:CoapResponse
+Method-parameters:[String payload, int format]
+MethodInvocation:newPut
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:synchronous
+Method-name:put
+Method-returnType:CoapResponse
+Method-parameters:[byte[] payload, int format]
+MethodInvocation:newPut
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:synchronous
+Method-name:putIfMatch
+Method-returnType:CoapResponse
+Method-parameters:[String payload, int format, byte[]... etags]
+MethodInvocation:newPut
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:ifMatch
+MethodInvocation:synchronous
+Method-name:putIfMatch
+Method-returnType:CoapResponse
+Method-parameters:[byte[] payload, int format, byte[]... etags]
+MethodInvocation:newPut
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:ifMatch
+MethodInvocation:synchronous
+Method-name:putIfNoneMatch
+Method-returnType:CoapResponse
+Method-parameters:[String payload, int format]
+MethodInvocation:newPut
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:setIfNoneMatch
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:synchronous
+Method-name:putIfNoneMatch
+Method-returnType:CoapResponse
+Method-parameters:[byte[] payload, int format]
+MethodInvocation:newPut
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:setIfNoneMatch
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:synchronous
+Method-name:put
+Method-returnType:void
+Method-parameters:[CoapHandler handler, String payload, int format]
+MethodInvocation:newPut
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:asynchronous
+Method-name:put
+Method-returnType:void
+Method-parameters:[CoapHandler handler, byte[] payload, int format]
+MethodInvocation:newPut
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:asynchronous
+Method-name:putIfMatch
+Method-returnType:void
+Method-parameters:[CoapHandler handler, String payload, int format, byte[]... etags]
+MethodInvocation:newPut
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:ifMatch
+MethodInvocation:asynchronous
+Method-name:putIfMatch
+Method-returnType:void
+Method-parameters:[CoapHandler handler, byte[] payload, int format, byte[]... etags]
+MethodInvocation:newPut
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:ifMatch
+MethodInvocation:asynchronous
+Method-name:putIfNoneMatch
+Method-returnType:void
+Method-parameters:[CoapHandler handler, String payload, int format]
+MethodInvocation:newPut
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:setIfNoneMatch
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:asynchronous
+Method-name:putIfNoneMatch
+Method-returnType:void
+Method-parameters:[CoapHandler handler, byte[] payload, int format]
+MethodInvocation:newPut
+MethodInvocation:setPayload
+MethodInvocation:setContentFormat
+MethodInvocation:getOptions
+MethodInvocation:setIfNoneMatch
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:asynchronous
+Method-name:delete
+Method-returnType:CoapResponse
+Method-parameters:[]
+MethodInvocation:newDelete
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:synchronous
+Method-name:delete
+Method-returnType:void
+Method-parameters:[CoapHandler handler]
+MethodInvocation:newDelete
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:asynchronous
+Method-name:validate
+Method-returnType:CoapResponse
+Method-parameters:[byte[]... etags]
+MethodInvocation:newGet
+MethodInvocation:etags
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:synchronous
+Method-name:validate
+Method-returnType:void
+Method-parameters:[CoapHandler handler, byte[]... etags]
+MethodInvocation:newGet
+MethodInvocation:etags
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:asynchronous
+Method-name:advanced
+Method-returnType:CoapResponse
+Method-parameters:[Request request]
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:synchronous
+Method-name:advanced
+Method-returnType:void
+Method-parameters:[CoapHandler handler, Request request]
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:asynchronous
+Method-name:observeAndWait
+Method-returnType:CoapObserveRelation
+Method-parameters:[CoapHandler handler]
+MethodInvocation:newGet
+MethodInvocation:setObserve
+MethodInvocation:observeAndWait
+Method-name:observeAndWait
+Method-returnType:CoapObserveRelation
+Method-parameters:[CoapHandler handler, int accept]
+MethodInvocation:newGet
+MethodInvocation:setObserve
+MethodInvocation:setAccept
+MethodInvocation:getOptions
+MethodInvocation:observeAndWait
+Method-name:observe
+Method-returnType:CoapObserveRelation
+Method-parameters:[CoapHandler handler]
+MethodInvocation:newGet
+MethodInvocation:setObserve
+MethodInvocation:observe
+Method-name:observe
+Method-returnType:CoapObserveRelation
+Method-parameters:[CoapHandler handler, int accept]
+MethodInvocation:newGet
+MethodInvocation:setObserve
+MethodInvocation:observe
+MethodInvocation:accept
+Method-name:shutdown
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:executor
+FieldAccess:secondaryExecutor
+FieldAccess:detachExecutor
+FieldAccess:executor
+FieldAccess:secondaryExecutor
+MethodInvocation:shutdownNow
+MethodInvocation:shutdownNow
+Method-name:asynchronous
+Method-returnType:void
+Method-parameters:[Request request, CoapHandler handler]
+MethodInvocation:addMessageObserver
+MethodInvocation:isMulticast
+MethodInvocation:send
+Method-name:synchronous
+Method-returnType:CoapResponse
+Method-parameters:[Request request]
+MethodInvocation:synchronous
+MethodInvocation:getEffectiveEndpoint
+Method-name:synchronous
+Method-returnType:CoapResponse
+Method-parameters:[Request request, Endpoint outEndpoint]
+MethodInvocation:getTimeout
+MethodInvocation:getLong
+MethodInvocation:getConfig
+MethodInvocation:waitForResponse
+MethodInvocation:send
+MethodInvocation:cancel
+MethodInvocation:getSendError
+MethodInvocation:isMulticast
+MethodInvocation:setDestinationContextFromResponse
+Method-name:accept
+Method-returnType:Request
+Method-parameters:[final Request request, final int accept]
+MethodInvocation:setAccept
+MethodInvocation:getOptions
+Method-name:etags
+Method-returnType:Request
+Method-parameters:[final Request request, final byte[]... etags]
+MethodInvocation:addETag
+MethodInvocation:getOptions
+Method-name:ifMatch
+Method-returnType:Request
+Method-parameters:[final Request request, final byte[]... etags]
+MethodInvocation:addIfMatch
+MethodInvocation:getOptions
+Method-name:observeAndWait
+Method-returnType:CoapObserveRelation
+Method-parameters:[Request request, CoapHandler handler]
+MethodInvocation:hasObserve
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:getEffectiveEndpoint
+MethodInvocation:getSecondaryExecutor
+MethodInvocation:isMulticast
+MethodInvocation:addMessageObserver
+MethodInvocation:addNotificationListener
+MethodInvocation:setNotificationListener
+MethodInvocation:synchronous
+MethodInvocation:hasObserve
+MethodInvocation:getOptions
+MethodInvocation:advanced
+MethodInvocation:setCanceled
+Method-name:observe
+Method-returnType:CoapObserveRelation
+Method-parameters:[Request request, CoapHandler handler]
+MethodInvocation:hasObserve
+MethodInvocation:getOptions
+MethodInvocation:assignClientUriIfEmpty
+MethodInvocation:getEffectiveEndpoint
+MethodInvocation:getSecondaryExecutor
+MethodInvocation:isMulticast
+MethodInvocation:addMessageObserver
+MethodInvocation:addNotificationListener
+MethodInvocation:setNotificationListener
+MethodInvocation:send
+Method-name:send
+Method-returnType:Request
+Method-parameters:[Request request]
+MethodInvocation:send
+MethodInvocation:getEffectiveEndpoint
+Method-name:send
+Method-returnType:Request
+Method-parameters:[Request request, Endpoint outEndpoint]
+MethodInvocation:setBlock2
+MethodInvocation:getOptions
+MethodInvocation:size2Szx
+FieldAccess:blockwise
+MethodInvocation:sendRequest
+Method-name:getEffectiveEndpoint
+Method-returnType:Endpoint
+Method-parameters:[Request request]
+MethodInvocation:getEndpoint
+MethodInvocation:getDefaultEndpoint
+MethodInvocation:getEndpointManager
+MethodInvocation:getScheme
+Method-name:execute
+Method-returnType:void
+Method-parameters:[Runnable job]
+FieldAccess:executor
+MethodInvocation:run
+MethodInvocation:execute
+MethodInvocation:isShutdown
+MethodInvocation:warn
+Method-name:newGet
+Method-returnType:Request
+Method-parameters:[]
+MethodInvocation:applyRequestType
+MethodInvocation:newGet
+Method-name:newPost
+Method-returnType:Request
+Method-parameters:[]
+MethodInvocation:applyRequestType
+MethodInvocation:newPost
+Method-name:newPut
+Method-returnType:Request
+Method-parameters:[]
+MethodInvocation:applyRequestType
+MethodInvocation:newPut
+Method-name:newDelete
+Method-returnType:Request
+Method-parameters:[]
+MethodInvocation:applyRequestType
+MethodInvocation:newDelete
+Method-name:applyRequestType
+Method-returnType:Request
+Method-parameters:[Request request]
+MethodInvocation:setType
+FieldAccess:type
+Method-name:assignClientUriIfEmpty
+Method-returnType:Request
+Method-parameters:[Request request]
+MethodInvocation:get
+MethodInvocation:getDestinationContext
+MethodInvocation:setDestinationContext
+MethodInvocation:setURI
+MethodInvocation:hasURI
+MethodInvocation:hasProxyURI
+MethodInvocation:setURI
+Method-name:setDestinationContextFromResponse
+Method-returnType:void
+Method-parameters:[Response response]
+MethodInvocation:compareAndSet
+MethodInvocation:getSourceContext
+Class:Adapter
+Field:obs
+Field:req
+Method-name:Adapter
+Method-returnType:null
+Method-parameters:[MessageObserver observer, Request request]
+Method-name:onNotification
+Method-returnType:void
+Method-parameters:[Request request, Response response]
+MethodInvocation:equals
+MethodInvocation:getToken
+MethodInvocation:getToken
+MethodInvocation:onResponse
+Class:MessageObserverImpl
+Field:handler
+Field:multicast
+Method-name:MessageObserverImpl
+Method-returnType:null
+Method-parameters:[CoapHandler handler, boolean multicast]
+FieldAccess:handler
+FieldAccess:multicast
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[final Response response]
+MethodInvocation:setDestinationContextFromResponse
+MethodInvocation:succeeded
+Method-name:succeeded
+Method-returnType:void
+Method-parameters:[final CoapResponse response]
+MethodInvocation:execute
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:deliver
+MethodInvocation:warn
+Method-name:deliver
+Method-returnType:void
+Method-parameters:[CoapResponse response]
+MethodInvocation:onLoad
+Method-name:failed
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:execute
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onError
+MethodInvocation:warn
+Class:ObserveMessageObserverImpl
+Field:relation
+Method-name:ObserveMessageObserverImpl
+Method-returnType:null
+Method-parameters:[CoapHandler handler, boolean multicast, CoapObserveRelation relation]
+FieldAccess:relation
+Method-name:deliver
+Method-returnType:void
+Method-parameters:[CoapResponse response]
+MethodInvocation:onResponse
+MethodInvocation:onLoad
+MethodInvocation:debug
+MethodInvocation:advanced
+Method-name:failed
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setCanceled
+Class:Builder
+Field:scheme
+Field:host
+Field:port
+Field:path
+Field:query
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[String host, int port]
+FieldAccess:host
+FieldAccess:port
+MethodInvocation:toString
+Method-name:scheme
+Method-returnType:Builder
+Method-parameters:[String scheme]
+FieldAccess:scheme
+Method-name:host
+Method-returnType:Builder
+Method-parameters:[String host]
+FieldAccess:host
+Method-name:port
+Method-returnType:Builder
+Method-parameters:[String port]
+FieldAccess:port
+Method-name:port
+Method-returnType:Builder
+Method-parameters:[int port]
+FieldAccess:port
+MethodInvocation:toString
+Method-name:path
+Method-returnType:Builder
+Method-parameters:[String... path]
+FieldAccess:path
+Method-name:query
+Method-returnType:Builder
+Method-parameters:[String... query]
+FieldAccess:query
+Method-name:create
+Method-returnType:CoapClient
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString

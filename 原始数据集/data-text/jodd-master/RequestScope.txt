@@ -1,0 +1,57 @@
+Class:RequestScope
+Field:madvocEncoding
+Field:actionPathMacroInjector
+Field:instancesInjector
+Method-name:inject
+Method-returnType:void
+Method-parameters:[final ActionRequest actionRequest, final Targets targets]
+MethodInvocation:getHttpServletRequest
+MethodInvocation:inject
+MethodInvocation:injectAttributes
+MethodInvocation:injectParameters
+MethodInvocation:injectUploadedFiles
+MethodInvocation:inject
+Method-name:inject
+Method-returnType:void
+Method-parameters:[final ServletContext servletContext, final Targets targets]
+Method-name:inject
+Method-returnType:void
+Method-parameters:[final Targets targets]
+Method-name:injectParameters
+Method-returnType:void
+Method-parameters:[final HttpServletRequest servletRequest, final Targets targets]
+MethodInvocation:equals
+MethodInvocation:getMethod
+MethodInvocation:getParameterNames
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:getAttribute
+MethodInvocation:forEachTargetAndIn
+MethodInvocation:matchedName
+MethodInvocation:getParameterValues
+MethodInvocation:prepareParameters
+MethodInvocation:getEncoding
+MethodInvocation:convertCharset
+MethodInvocation:writeValue
+Method-name:injectUploadedFiles
+Method-returnType:void
+Method-parameters:[final HttpServletRequest servletRequest, final Targets targets]
+MethodInvocation:isMultipart
+MethodInvocation:getFileParameterNames
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:getAttribute
+MethodInvocation:forEachTargetAndIn
+MethodInvocation:matchedName
+MethodInvocation:getFiles
+MethodInvocation:isValid
+MethodInvocation:isUploaded
+MethodInvocation:writeValue
+Method-name:outject
+Method-returnType:void
+Method-parameters:[final ActionRequest actionRequest, final Targets targets]
+MethodInvocation:getHttpServletRequest
+MethodInvocation:forEachTargetAndOut
+MethodInvocation:readValue
+MethodInvocation:setAttribute
+MethodInvocation:name

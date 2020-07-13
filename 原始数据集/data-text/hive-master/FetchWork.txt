@@ -1,0 +1,215 @@
+Class:FetchWork
+Field:serialVersionUID
+Field:tblDir
+Field:tblDesc
+Field:partDir
+Field:partDesc
+Field:source
+Field:sink
+Field:limit
+Field:leastNumRows
+Field:splitSample
+Field:rowsComputedFromStats
+Field:statRowOI
+Field:serializationNullFormat
+Field:isHiveServerQuery
+Field:isUsingThriftJDBCBinarySerDe
+Field:isCachedResult
+Field:filesToFetch
+Method-name:isHiveServerQuery
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setHiveServerQuery
+Method-returnType:void
+Method-parameters:[boolean isHiveServerQuery]
+FieldAccess:isHiveServerQuery
+Method-name:isUsingThriftJDBCBinarySerDe
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIsUsingThriftJDBCBinarySerDe
+Method-returnType:void
+Method-parameters:[boolean isUsingThriftJDBCBinarySerDe]
+FieldAccess:isUsingThriftJDBCBinarySerDe
+Method-name:FetchWork
+Method-returnType:null
+Method-parameters:[]
+Method-name:FetchWork
+Method-returnType:null
+Method-parameters:[List<List<Object>> rowsComputedFromStats, StructObjectInspector statRowOI]
+FieldAccess:rowsComputedFromStats
+FieldAccess:statRowOI
+Method-name:getStatRowOI
+Method-returnType:StructObjectInspector
+Method-parameters:[]
+Method-name:getRowsComputedUsingStats
+Method-returnType:List<List<Object>>
+Method-parameters:[]
+Method-name:FetchWork
+Method-returnType:null
+Method-parameters:[Path tblDir, TableDesc tblDesc]
+Method-name:FetchWork
+Method-returnType:null
+Method-parameters:[Path tblDir, TableDesc tblDesc, int limit]
+FieldAccess:tblDir
+FieldAccess:tblDesc
+FieldAccess:limit
+Method-name:FetchWork
+Method-returnType:null
+Method-parameters:[List<Path> partDir, List<PartitionDesc> partDesc, TableDesc tblDesc]
+Method-name:FetchWork
+Method-returnType:null
+Method-parameters:[List<Path> partDir, List<PartitionDesc> partDesc, TableDesc tblDesc, int limit]
+FieldAccess:tblDesc
+FieldAccess:partDir
+FieldAccess:partDesc
+FieldAccess:limit
+FieldAccess:filesToFetch
+Method-name:getSerializationNullFormat
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSerializationNullFormat
+Method-returnType:void
+Method-parameters:[String format]
+Method-name:isNotPartitioned
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isPartitioned
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getTblDir
+Method-returnType:Path
+Method-parameters:[]
+Method-name:setTblDir
+Method-returnType:void
+Method-parameters:[Path tblDir]
+FieldAccess:tblDir
+Method-name:getTblDesc
+Method-returnType:TableDesc
+Method-parameters:[]
+Method-name:setTblDesc
+Method-returnType:void
+Method-parameters:[TableDesc tblDesc]
+FieldAccess:tblDesc
+Method-name:getPartDir
+Method-returnType:ArrayList<Path>
+Method-parameters:[]
+Method-name:setPartDir
+Method-returnType:void
+Method-parameters:[ArrayList<Path> partDir]
+FieldAccess:partDir
+Method-name:getPartDesc
+Method-returnType:ArrayList<PartitionDesc>
+Method-parameters:[]
+Method-name:getPathLists
+Method-returnType:List<Path>
+Method-parameters:[]
+MethodInvocation:isPartitioned
+MethodInvocation:asList
+Method-name:getPartDescOrderedByPartDir
+Method-returnType:ArrayList<PartitionDesc>
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:values
+Method-name:getPartDescs
+Method-returnType:List<PartitionDesc>
+Method-parameters:[List<Path> paths]
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:indexOf
+MethodInvocation:getParent
+Method-name:setPartDesc
+Method-returnType:void
+Method-parameters:[ArrayList<PartitionDesc> partDesc]
+FieldAccess:partDesc
+Method-name:getLimit
+Method-returnType:int
+Method-parameters:[]
+Method-name:setLimit
+Method-returnType:void
+Method-parameters:[int limit]
+FieldAccess:limit
+Method-name:getLeastNumRows
+Method-returnType:int
+Method-parameters:[]
+Method-name:setLeastNumRows
+Method-returnType:void
+Method-parameters:[int leastNumRows]
+FieldAccess:leastNumRows
+Method-name:getSource
+Method-returnType:Operator<?>
+Method-parameters:[]
+Method-name:isSourceTable
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:source
+FieldAccess:source
+Method-name:setSource
+Method-returnType:void
+Method-parameters:[Operator<?> source]
+FieldAccess:source
+Method-name:getSink
+Method-returnType:ListSinkOperator
+Method-parameters:[]
+Method-name:setSink
+Method-returnType:void
+Method-parameters:[ListSinkOperator sink]
+FieldAccess:sink
+Method-name:setSplitSample
+Method-returnType:void
+Method-parameters:[SplitSample splitSample]
+FieldAccess:splitSample
+Method-name:getSplitSample
+Method-returnType:SplitSample
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:concat
+MethodInvocation:toString
+MethodInvocation:toUri
+Field:vectorizationExamined
+Method-name:setVectorizationExamined
+Method-returnType:void
+Method-parameters:[boolean vectorizationExamined]
+FieldAccess:vectorizationExamined
+Method-name:getVectorizationExamined
+Method-returnType:boolean
+Method-parameters:[]
+Class:FetchExplainVectorization
+Field:fetchWork
+Method-name:FetchExplainVectorization
+Method-returnType:null
+Method-parameters:[FetchWork fetchWork]
+FieldAccess:fetchWork
+Method-name:enabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:enabledConditionsNotMet
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getConditionsSupported
+Method-name:getMapExplainVectorization
+Method-returnType:FetchExplainVectorization
+Method-parameters:[]
+MethodInvocation:getVectorizationExamined
+Method-name:isCachedResult
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setCachedResult
+Method-returnType:void
+Method-parameters:[boolean isCachedResult]
+FieldAccess:isCachedResult
+Method-name:setFilesToFetch
+Method-returnType:void
+Method-parameters:[Set<FileStatus> filesToFetch]
+FieldAccess:filesToFetch
+Method-name:getFilesToFetch
+Method-returnType:Set<FileStatus>
+Method-parameters:[]

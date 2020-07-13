@@ -1,0 +1,453 @@
+Class:ConfiguredRuleClassProvider
+Field:defaultWorkspaceFilePrefix
+Field:defaultWorkspaceFileSuffix
+Field:preludeLabel
+Field:runfilesPrefix
+Field:toolsRepository
+Field:ruleClassMap
+Field:ruleDefinitionMap
+Field:nativeAspectClassMap
+Field:configurationOptions
+Field:configurationFragmentFactories
+Field:optionsToFragmentMap
+Field:trimmingTransitionFactory
+Field:toolchainTaggedTrimmingTransition
+Field:shouldInvalidateCacheForOptionDiff
+Field:universalFragments
+Field:buildInfoFactories
+Field:prerequisiteValidator
+Field:environment
+Field:symlinkDefinitions
+Field:reservedActionMnemonics
+Field:actionEnvironmentProvider
+Field:configurationFragmentMap
+Field:constraintSemantics
+Field:thirdPartyLicenseExistencePolicy
+Method-name:ConfiguredRuleClassProvider
+Method-returnType:null
+Method-parameters:[Label preludeLabel, String runfilesPrefix, String toolsRepository, ImmutableMap<String,RuleClass> ruleClassMap, ImmutableMap<String,RuleDefinition> ruleDefinitionMap, ImmutableMap<String,NativeAspectClass> nativeAspectClassMap, String defaultWorkspaceFilePrefix, String defaultWorkspaceFileSuffix, ImmutableList<BuildInfoFactory> buildInfoFactories, ImmutableList<Class<? extends FragmentOptions>> configurationOptions, ImmutableList<ConfigurationFragmentFactory> configurationFragments, ImmutableList<Class<? extends Fragment>> universalFragments, @Nullable TransitionFactory<Rule> trimmingTransitionFactory, PatchTransition toolchainTaggedTrimmingTransition, OptionsDiffPredicate shouldInvalidateCacheForOptionDiff, PrerequisiteValidator prerequisiteValidator, ImmutableMap<String,Object> skylarkAccessibleJavaClasses, ImmutableList<Bootstrap> skylarkBootstraps, ImmutableList<SymlinkDefinition> symlinkDefinitions, ImmutableSet<String> reservedActionMnemonics, BuildConfiguration.ActionEnvironmentProvider actionEnvironmentProvider, ConstraintSemantics constraintSemantics, ThirdPartyLicenseExistencePolicy thirdPartyLicenseExistencePolicy]
+FieldAccess:preludeLabel
+FieldAccess:runfilesPrefix
+FieldAccess:toolsRepository
+FieldAccess:ruleClassMap
+FieldAccess:ruleDefinitionMap
+FieldAccess:nativeAspectClassMap
+FieldAccess:defaultWorkspaceFilePrefix
+FieldAccess:defaultWorkspaceFileSuffix
+FieldAccess:buildInfoFactories
+FieldAccess:configurationOptions
+FieldAccess:configurationFragmentFactories
+FieldAccess:optionsToFragmentMap
+MethodInvocation:computeOptionsToFragmentMap
+FieldAccess:universalFragments
+FieldAccess:trimmingTransitionFactory
+FieldAccess:toolchainTaggedTrimmingTransition
+FieldAccess:shouldInvalidateCacheForOptionDiff
+FieldAccess:prerequisiteValidator
+FieldAccess:environment
+MethodInvocation:createEnvironment
+FieldAccess:symlinkDefinitions
+FieldAccess:reservedActionMnemonics
+FieldAccess:actionEnvironmentProvider
+FieldAccess:configurationFragmentMap
+MethodInvocation:createFragmentMap
+FieldAccess:constraintSemantics
+FieldAccess:thirdPartyLicenseExistencePolicy
+Method-name:computeOptionsToFragmentMap
+Method-returnType:Map<String,Class<? extends Fragment>>
+Method-parameters:[Iterable<ConfigurationFragmentFactory> configurationFragments]
+MethodInvocation:requiredOptions
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:put
+MethodInvocation:size
+MethodInvocation:getFields
+MethodInvocation:isAnnotationPresent
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:getAnnotation
+MethodInvocation:creates
+Method-name:createEnvironment
+Method-returnType:ImmutableMap<String,Object>
+Method-parameters:[ImmutableMap<String,Object> skylarkAccessibleTopLevels, ImmutableList<Bootstrap> bootstraps]
+MethodInvocation:builder
+MethodInvocation:addSkylarkGlobalsToBuilder
+MethodInvocation:putAll
+MethodInvocation:entrySet
+MethodInvocation:addBindingsToBuilder
+MethodInvocation:build
+Method-name:createFragmentMap
+Method-returnType:ImmutableMap<String,Class<?>>
+Method-parameters:[Iterable<ConfigurationFragmentFactory> configurationFragmentFactories]
+MethodInvocation:builder
+MethodInvocation:creates
+MethodInvocation:getSkylarkModule
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:build
+Method-name:getRuleDefinition
+Method-returnType:RuleDefinition
+Method-parameters:[Class<? extends RuleDefinition> usingClass, RuleDocumentationAttribute ruleDocumentationAttribute]
+MethodInvocation:newInstance
+MethodInvocation:getConstructor
+MethodInvocation:getRuleClassDefinition
+MethodInvocation:getName
+Method-name:getPrerequisiteValidator
+Method-returnType:PrerequisiteValidator
+Method-parameters:[]
+Method-name:getPreludeLabel
+Method-returnType:Label
+Method-parameters:[]
+Method-name:getRunfilesPrefix
+Method-returnType:String
+Method-parameters:[]
+Method-name:getToolsRepository
+Method-returnType:String
+Method-parameters:[]
+Method-name:getRuleClassMap
+Method-returnType:Map<String,RuleClass>
+Method-parameters:[]
+Method-name:getNativeAspectClassMap
+Method-returnType:Map<String,NativeAspectClass>
+Method-parameters:[]
+Method-name:getNativeAspectClass
+Method-returnType:NativeAspectClass
+Method-parameters:[String key]
+MethodInvocation:get
+Method-name:getBuildInfoFactoriesAsMap
+Method-returnType:Map<BuildInfoKey,BuildInfoFactory>
+Method-parameters:[]
+MethodInvocation:builder
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:build
+Method-name:getConfigurationFragments
+Method-returnType:ImmutableList<ConfigurationFragmentFactory>
+Method-parameters:[]
+Method-name:getConfigurationFragmentForOption
+Method-returnType:Class<? extends Fragment>
+Method-parameters:[String requiredOption]
+MethodInvocation:get
+Method-name:getTrimmingTransitionFactory
+Method-returnType:TransitionFactory<Rule>
+Method-parameters:[]
+Method-name:getToolchainTaggedTrimmingTransition
+Method-returnType:PatchTransition
+Method-parameters:[]
+Method-name:shouldInvalidateCacheForOptionDiff
+Method-returnType:boolean
+Method-parameters:[BuildOptions newOptions, OptionDefinition changedOption, Object oldValue, Object newValue]
+MethodInvocation:apply
+Method-name:getConfigurationOptions
+Method-returnType:ImmutableList<Class<? extends FragmentOptions>>
+Method-parameters:[]
+Method-name:getRuleClassDefinition
+Method-returnType:RuleDefinition
+Method-parameters:[String ruleClassName]
+MethodInvocation:get
+Method-name:getUniversalFragments
+Method-returnType:ImmutableList<Class<? extends Fragment>>
+Method-parameters:[]
+Method-name:createBuildOptions
+Method-returnType:BuildOptions
+Method-parameters:[OptionsProvider optionsProvider]
+MethodInvocation:of
+Method-name:getEnvironment
+Method-returnType:ImmutableMap<String,Object>
+Method-parameters:[]
+Method-name:createRuleClassStarlarkThread
+Method-returnType:StarlarkThread
+Method-parameters:[Label fileLabel, Mutability mutability, StarlarkSemantics starlarkSemantics, StarlarkThread.PrintHandler printHandler, String astFileContentHashCode, Map<String,Extension> importMap, ClassObject nativeModule, ImmutableMap<RepositoryName,RepositoryName> repoMapping]
+MethodInvocation:put
+MethodInvocation:build
+MethodInvocation:setImportedExtensions
+MethodInvocation:setFileContentHashCode
+MethodInvocation:setSemantics
+MethodInvocation:setGlobals
+MethodInvocation:builder
+MethodInvocation:withLabel
+MethodInvocation:createForBuiltins
+MethodInvocation:setPrintHandler
+MethodInvocation:storeInThread
+Method-name:getDefaultWorkspacePrefix
+Method-returnType:String
+Method-parameters:[]
+Method-name:getDefaultWorkspaceSuffix
+Method-returnType:String
+Method-parameters:[]
+Method-name:getConfigurationFragmentMap
+Method-returnType:Map<String,Class<?>>
+Method-parameters:[]
+Method-name:getSymlinkDefinitions
+Method-returnType:ImmutableList<SymlinkDefinition>
+Method-parameters:[]
+Method-name:getConstraintSemantics
+Method-returnType:ConstraintSemantics
+Method-parameters:[]
+Method-name:getThirdPartyLicenseExistencePolicy
+Method-returnType:ThirdPartyLicenseExistencePolicy
+Method-parameters:[]
+Method-name:getAllFragments
+Method-returnType:ImmutableSortedSet<Class<? extends Fragment>>
+Method-parameters:[]
+MethodInvocation:orderedBy
+MethodInvocation:getConfigurationFragments
+MethodInvocation:add
+MethodInvocation:creates
+MethodInvocation:addAll
+MethodInvocation:getUniversalFragments
+MethodInvocation:build
+Method-name:getReservedActionMnemonics
+Method-returnType:ImmutableSet<String>
+Method-parameters:[]
+Method-name:getActionEnvironmentProvider
+Method-returnType:BuildConfiguration.ActionEnvironmentProvider
+Method-parameters:[]
+Field:ALWAYS_INVALIDATE
+Method-name:apply
+Method-returnType:boolean
+Method-parameters:[BuildOptions newOptions, OptionDefinition option, Object oldValue, Object newValue]
+Method-name:validate
+Method-returnType:void
+Method-parameters:[RuleContext.Builder contextBuilder, ConfiguredTargetAndData prerequisite, Attribute attribute]
+Method-name:init
+Method-returnType:void
+Method-parameters:[ConfiguredRuleClassProvider.Builder builder]
+Method-name:requires
+Method-returnType:ImmutableList<RuleSet>
+Method-parameters:[]
+Class:Builder
+Field:defaultWorkspaceFilePrefix
+Field:defaultWorkspaceFileSuffix
+Field:configurationFragmentFactories
+Field:buildInfoFactories
+Field:configurationOptions
+Field:ruleClassMap
+Field:ruleDefinitionMap
+Field:nativeAspectClassMap
+Field:ruleMap
+Field:dependencyGraph
+Field:universalFragments
+Field:skylarkBootstraps
+MethodInvocation:builder
+Field:symlinkDefinitions
+MethodInvocation:builder
+Field:preludeLabel
+Field:runfilesPrefix
+Field:toolsRepository
+Field:trimmingTransitionFactory
+Field:toolchainTaggedTrimmingTransition
+Field:shouldInvalidateCacheForOptionDiff
+Field:prerequisiteValidator
+Field:skylarkAccessibleTopLevels
+MethodInvocation:builder
+Field:reservedActionMnemonics
+Field:actionEnvironmentProvider
+Field:constraintSemantics
+Field:thirdPartyLicenseExistencePolicy
+Field:enableExecutionTransition
+Method-name:addWorkspaceFilePrefix
+Method-returnType:Builder
+Method-parameters:[String contents]
+MethodInvocation:append
+Method-name:addWorkspaceFileSuffix
+Method-returnType:Builder
+Method-parameters:[String contents]
+MethodInvocation:append
+Method-name:clearWorkspaceFileSuffixForTesting
+Method-returnType:Builder
+Method-parameters:[]
+MethodInvocation:delete
+MethodInvocation:length
+Method-name:setPrelude
+Method-returnType:Builder
+Method-parameters:[String preludeLabelString]
+FieldAccess:preludeLabel
+MethodInvocation:parseAbsolute
+MethodInvocation:of
+MethodInvocation:format
+MethodInvocation:getMessage
+Method-name:setRunfilesPrefix
+Method-returnType:Builder
+Method-parameters:[String runfilesPrefix]
+FieldAccess:runfilesPrefix
+Method-name:setPrerequisiteValidator
+Method-returnType:Builder
+Method-parameters:[PrerequisiteValidator prerequisiteValidator]
+FieldAccess:prerequisiteValidator
+Method-name:addBuildInfoFactory
+Method-returnType:Builder
+Method-parameters:[BuildInfoFactory factory]
+MethodInvocation:add
+Method-name:addRuleDefinition
+Method-returnType:Builder
+Method-parameters:[RuleDefinition ruleDefinition]
+MethodInvocation:getClass
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:createNode
+MethodInvocation:ancestors
+MethodInvocation:getMetadata
+MethodInvocation:addEdge
+Method-name:addNativeAspectClass
+Method-returnType:Builder
+Method-parameters:[NativeAspectClass aspectFactoryClass]
+MethodInvocation:put
+MethodInvocation:getName
+Method-name:addConfigurationFragment
+Method-returnType:Builder
+Method-parameters:[ConfigurationFragmentFactory factory]
+MethodInvocation:addAll
+FieldAccess:configurationOptions
+MethodInvocation:requiredOptions
+MethodInvocation:add
+Method-name:addConfigurationOptions
+Method-returnType:Builder
+Method-parameters:[Class<? extends FragmentOptions> configurationOptions]
+MethodInvocation:add
+FieldAccess:configurationOptions
+Method-name:addUniversalConfigurationFragment
+Method-returnType:Builder
+Method-parameters:[Class<? extends Fragment> fragment]
+MethodInvocation:add
+FieldAccess:universalFragments
+Method-name:addSkylarkBootstrap
+Method-returnType:Builder
+Method-parameters:[Bootstrap bootstrap]
+MethodInvocation:add
+FieldAccess:skylarkBootstraps
+Method-name:addSkylarkAccessibleTopLevels
+Method-returnType:Builder
+Method-parameters:[String name, Object object]
+MethodInvocation:put
+FieldAccess:skylarkAccessibleTopLevels
+Method-name:addSymlinkDefinition
+Method-returnType:Builder
+Method-parameters:[SymlinkDefinition symlinkDefinition]
+MethodInvocation:add
+FieldAccess:symlinkDefinitions
+Method-name:addReservedActionMnemonic
+Method-returnType:Builder
+Method-parameters:[String mnemonic]
+MethodInvocation:add
+FieldAccess:reservedActionMnemonics
+Method-name:setActionEnvironmentProvider
+Method-returnType:Builder
+Method-parameters:[BuildConfiguration.ActionEnvironmentProvider actionEnvironmentProvider]
+FieldAccess:actionEnvironmentProvider
+Method-name:setConstraintSemantics
+Method-returnType:Builder
+Method-parameters:[ConstraintSemantics constraintSemantics]
+FieldAccess:constraintSemantics
+Method-name:setThirdPartyLicenseExistencePolicy
+Method-returnType:Builder
+Method-parameters:[ThirdPartyLicenseExistencePolicy policy]
+FieldAccess:thirdPartyLicenseExistencePolicy
+Method-name:addTrimmingTransitionFactory
+Method-returnType:Builder
+Method-parameters:[TransitionFactory<Rule> factory]
+MethodInvocation:checkNotNull
+MethodInvocation:checkArgument
+MethodInvocation:isSplit
+MethodInvocation:of
+Method-name:setToolchainTaggedTrimmingTransition
+Method-returnType:Builder
+Method-parameters:[PatchTransition transition]
+MethodInvocation:checkNotNull
+MethodInvocation:checkState
+FieldAccess:toolchainTaggedTrimmingTransition
+Method-name:overrideTrimmingTransitionFactoryForTesting
+Method-returnType:Builder
+Method-parameters:[TransitionFactory<Rule> factory]
+MethodInvocation:addTrimmingTransitionFactory
+Method-name:setShouldInvalidateCacheForOptionDiff
+Method-returnType:Builder
+Method-parameters:[OptionsDiffPredicate shouldInvalidateCacheForOptionDiff]
+MethodInvocation:checkState
+MethodInvocation:equals
+FieldAccess:shouldInvalidateCacheForOptionDiff
+FieldAccess:shouldInvalidateCacheForOptionDiff
+Method-name:enableExecutionTransition
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:enableExecutionTransition
+Method-returnType:Builder
+Method-parameters:[boolean flag]
+FieldAccess:enableExecutionTransition
+Method-name:overrideShouldInvalidateCacheForOptionDiffForTesting
+Method-returnType:Builder
+Method-parameters:[OptionsDiffPredicate shouldInvalidateCacheForOptionDiff]
+FieldAccess:shouldInvalidateCacheForOptionDiff
+MethodInvocation:setShouldInvalidateCacheForOptionDiff
+Method-name:createFactory
+Method-returnType:RuleConfiguredTargetFactory
+Method-parameters:[Class<? extends RuleConfiguredTargetFactory> factoryClass]
+MethodInvocation:getConstructor
+MethodInvocation:newInstance
+Method-name:commitRuleDefinition
+Method-returnType:RuleClass
+Method-parameters:[Class<? extends RuleDefinition> definitionClass]
+MethodInvocation:checkNotNull
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:getMetadata
+MethodInvocation:checkArgument
+MethodInvocation:get
+MethodInvocation:name
+MethodInvocation:name
+MethodInvocation:ancestors
+MethodInvocation:checkArgument
+MethodInvocation:type
+MethodInvocation:factoryClass
+MethodInvocation:checkArgument
+MethodInvocation:type
+MethodInvocation:contains
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:name
+MethodInvocation:type
+MethodInvocation:createFactory
+MethodInvocation:factoryClass
+MethodInvocation:name
+MethodInvocation:type
+MethodInvocation:factory
+MethodInvocation:setThirdPartyLicenseExistencePolicy
+MethodInvocation:build
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:put
+MethodInvocation:getName
+Method-name:build
+Method-returnType:ConfiguredRuleClassProvider
+Method-parameters:[]
+MethodInvocation:getTopologicalOrder
+MethodInvocation:commitRuleDefinition
+MethodInvocation:getLabel
+MethodInvocation:copyOf
+MethodInvocation:copyOf
+MethodInvocation:copyOf
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:copyOf
+MethodInvocation:copyOf
+MethodInvocation:copyOf
+MethodInvocation:copyOf
+MethodInvocation:build
+MethodInvocation:build
+MethodInvocation:build
+MethodInvocation:copyOf
+Method-name:getToolsLabel
+Method-returnType:Label
+Method-parameters:[String labelValue]
+MethodInvocation:parseAbsoluteUnchecked
+Method-name:getToolsRepository
+Method-returnType:String
+Method-parameters:[]
+Method-name:setToolsRepository
+Method-returnType:Builder
+Method-parameters:[String toolsRepository]
+FieldAccess:toolsRepository

@@ -1,0 +1,46 @@
+Class:UseCollectionIsEmptyRule
+Method-name:appliesToClassName
+Method-returnType:boolean
+Method-parameters:[String name]
+MethodInvocation:isCollectionType
+Method-name:isTargetMethod
+Method-returnType:boolean
+Method-parameters:[JavaNameOccurrence occ]
+MethodInvocation:getNameForWhichThisIsAQualifier
+MethodInvocation:endsWith
+MethodInvocation:getImage
+MethodInvocation:getLocation
+Method-name:getComparisonTargets
+Method-returnType:Map<String,List<String>>
+Method-parameters:[]
+MethodInvocation:put
+MethodInvocation:asList
+MethodInvocation:put
+MethodInvocation:asList
+MethodInvocation:put
+MethodInvocation:asList
+MethodInvocation:put
+MethodInvocation:asList
+MethodInvocation:put
+MethodInvocation:asList
+MethodInvocation:put
+MethodInvocation:asList
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTPrimarySuffix node, Object data]
+MethodInvocation:getImage
+MethodInvocation:endsWith
+MethodInvocation:getImage
+MethodInvocation:getTypeOfPrimaryPrefix
+MethodInvocation:getTypeOfMethodCall
+MethodInvocation:isCollectionType
+MethodInvocation:getType
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:checkNodeAndReport
+Method-name:getTypeOfPrimaryPrefix
+Method-returnType:ASTClassOrInterfaceType
+Method-parameters:[ASTPrimarySuffix node]
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:getFirstChildOfType
+MethodInvocation:getParent

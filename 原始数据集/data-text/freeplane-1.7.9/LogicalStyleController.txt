@@ -1,0 +1,272 @@
+Class:LogicalStyleController
+Field:STYLE_TOOLTIP
+Field:cachedNode
+Field:cachedStyle
+Field:styleHandlers
+Method-name:LogicalStyleController
+Method-returnType:null
+Method-parameters:[ModeController modeController]
+MethodInvocation:createBuilder
+MethodInvocation:registerChangeListener
+MethodInvocation:addStyleGetter
+Method-name:getProperty
+Method-returnType:Collection<IStyle>
+Method-parameters:[NodeModel node, Collection<IStyle> currentValue]
+MethodInvocation:getExtension
+MethodInvocation:getMap
+MethodInvocation:add
+MethodInvocation:addStyleGetter
+Method-name:getProperty
+Method-returnType:Collection<IStyle>
+Method-parameters:[NodeModel node, Collection<IStyle> currentValue]
+MethodInvocation:getExtension
+MethodInvocation:getMap
+MethodInvocation:getStyles
+MethodInvocation:getConditionalStyleModel
+MethodInvocation:addAll
+MethodInvocation:addStyleGetter
+Method-name:getProperty
+Method-returnType:Collection<IStyle>
+Method-parameters:[NodeModel node, Collection<IStyle> currentValue]
+MethodInvocation:add
+MethodInvocation:addToolTipProvider
+Method-name:getTooltip
+Method-returnType:String
+Method-parameters:[ModeController modeController, NodeModel node, Component view]
+MethodInvocation:getBooleanProperty
+MethodInvocation:getResourceController
+MethodInvocation:getStyles
+MethodInvocation:size
+MethodInvocation:remove
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:getText
+MethodInvocation:plainToHTML
+MethodInvocation:getStyleNames
+Method-name:getResursively
+Method-returnType:Collection<IStyle>
+Method-parameters:[NodeModel node, Collection<IStyle> collection]
+MethodInvocation:getExtension
+MethodInvocation:getMap
+MethodInvocation:addAll
+Method-name:addAll
+Method-returnType:void
+Method-parameters:[NodeModel node, MapStyleModel styleModel, Collection<IStyle> currentValue, Collection<IStyle> collection]
+MethodInvocation:add
+Method-name:add
+Method-returnType:void
+Method-parameters:[NodeModel node, Collection<IStyle> currentValue, IStyle style]
+MethodInvocation:getExtension
+MethodInvocation:getMap
+MethodInvocation:add
+Method-name:add
+Method-returnType:void
+Method-parameters:[NodeModel node, MapStyleModel styleModel, Collection<IStyle> currentValue, IStyle styleKey]
+MethodInvocation:add
+MethodInvocation:getStyleNode
+MethodInvocation:getStyle
+MethodInvocation:add
+MethodInvocation:getExtension
+MethodInvocation:getStyles
+MethodInvocation:addAll
+Method-name:registerChangeListener
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getCurrentModeController
+MethodInvocation:getMapController
+MethodInvocation:addMapChangeListener
+Method-name:onPreNodeMoved
+Method-returnType:void
+Method-parameters:[NodeMoveEvent nodeMoveEvent]
+MethodInvocation:clearCache
+Method-name:onPreNodeDelete
+Method-returnType:void
+Method-parameters:[NodeDeletionEvent nodeDeletionEvent]
+MethodInvocation:clearCache
+Method-name:onNodeMoved
+Method-returnType:void
+Method-parameters:[NodeMoveEvent nodeMoveEvent]
+MethodInvocation:clearCache
+Method-name:onNodeInserted
+Method-returnType:void
+Method-parameters:[NodeModel parent, NodeModel child, int newIndex]
+MethodInvocation:clearCache
+Method-name:onNodeDeleted
+Method-returnType:void
+Method-parameters:[NodeDeletionEvent nodeDeletionEvent]
+MethodInvocation:clearCache
+Method-name:mapChanged
+Method-returnType:void
+Method-parameters:[MapChangeEvent event]
+MethodInvocation:clearCache
+MethodInvocation:addNodeChangeListener
+Method-name:nodeChanged
+Method-returnType:void
+Method-parameters:[NodeChangeEvent event]
+MethodInvocation:clearCache
+Method-name:createBuilder
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getCurrentModeController
+MethodInvocation:getMapController
+MethodInvocation:getReadManager
+MethodInvocation:addAttributeHandler
+Method-name:setAttribute
+Method-returnType:void
+Method-parameters:[final Object node, final String value]
+MethodInvocation:createExtension
+MethodInvocation:setStyle
+MethodInvocation:create
+MethodInvocation:addAttributeHandler
+Method-name:setAttribute
+Method-returnType:void
+Method-parameters:[final Object node, final String value]
+MethodInvocation:createExtension
+MethodInvocation:setStyle
+MethodInvocation:create
+MethodInvocation:format
+MethodInvocation:getWriteManager
+MethodInvocation:addAttributeWriter
+Method-name:writeAttributes
+Method-returnType:void
+Method-parameters:[final ITreeWriter writer, final Object node, final String tag]
+MethodInvocation:shouldWriteSharedContent
+MethodInvocation:getExtension
+MethodInvocation:getStyle
+MethodInvocation:toKeyString
+MethodInvocation:addAttribute
+MethodInvocation:addAttribute
+Method-name:install
+Method-returnType:void
+Method-parameters:[final LogicalStyleController logicalStyleController]
+MethodInvocation:getCurrentModeController
+MethodInvocation:addExtension
+Method-name:getController
+Method-returnType:LogicalStyleController
+Method-parameters:[]
+MethodInvocation:getCurrentModeController
+MethodInvocation:getController
+Method-name:getController
+Method-returnType:LogicalStyleController
+Method-parameters:[ModeController modeController]
+MethodInvocation:getExtension
+Method-name:refreshMap
+Method-returnType:void
+Method-parameters:[final MapModel map]
+Method-name:undo
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:refreshMapLater
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:act
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:refreshMapLater
+MethodInvocation:execute
+MethodInvocation:getCurrentModeController
+Field:mapsToRefresh
+Method-name:refreshMapLater
+Method-returnType:void
+Method-parameters:[final MapModel map]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:invokeLater
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:remove
+MethodInvocation:getExtension
+MethodInvocation:refreshStyles
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+MethodInvocation:fireMapChanged
+Method-name:getFirstStyle
+Method-returnType:IStyle
+Method-parameters:[final NodeModel node]
+MethodInvocation:getStyles
+Method-name:getStyles
+Method-returnType:Collection<IStyle>
+Method-parameters:[final NodeModel node]
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:getProperty
+Method-name:moveConditionalStyleDown
+Method-returnType:void
+Method-parameters:[final ConditionalStyleModel conditionalStyleModel, int index]
+MethodInvocation:moveDown
+Method-name:moveConditionalStyleUp
+Method-returnType:void
+Method-parameters:[final ConditionalStyleModel conditionalStyleModel, int index]
+MethodInvocation:moveUp
+Method-name:addConditionalStyle
+Method-returnType:void
+Method-parameters:[final ConditionalStyleModel conditionalStyleModel, boolean isActive, ASelectableCondition condition, IStyle style, boolean isLast]
+MethodInvocation:addCondition
+Method-name:insertConditionalStyle
+Method-returnType:void
+Method-parameters:[final ConditionalStyleModel conditionalStyleModel, int index, boolean isActive, ASelectableCondition condition, IStyle style, boolean isLast]
+MethodInvocation:insertCondition
+Method-name:removeConditionalStyle
+Method-returnType:Item
+Method-parameters:[final ConditionalStyleModel conditionalStyleModel, int index]
+MethodInvocation:removeCondition
+Method-name:clearCache
+Method-returnType:void
+Method-parameters:[]
+Method-name:addStyleGetter
+Method-returnType:IPropertyHandler<Collection<IStyle>,NodeModel>
+Method-parameters:[final Integer key, final IPropertyHandler<Collection<IStyle>,NodeModel> getter]
+MethodInvocation:addGetter
+Method-name:removeStyleGetter
+Method-returnType:IPropertyHandler<Collection<IStyle>,NodeModel>
+Method-parameters:[final Integer key, final IPropertyHandler<Collection<IStyle>,NodeModel> getter]
+MethodInvocation:addGetter
+Method-name:getStyleNames
+Method-returnType:String
+Method-parameters:[final Collection<IStyle> styles, String separator]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:toString
+Method-name:getConditionalMapStyles
+Method-returnType:Collection<IStyle>
+Method-parameters:[final NodeModel node]
+MethodInvocation:getExtension
+MethodInvocation:getMap
+MethodInvocation:getStyles
+MethodInvocation:getConditionalStyleModel
+MethodInvocation:clearCache
+MethodInvocation:getResursively
+Method-name:getConditionalNodeStyles
+Method-returnType:Collection<IStyle>
+Method-parameters:[final NodeModel node]
+MethodInvocation:getStyle
+MethodInvocation:add
+MethodInvocation:getExtension
+MethodInvocation:getStyles
+MethodInvocation:clearCache
+MethodInvocation:addAll
+MethodInvocation:getResursively
+MethodInvocation:remove
+Method-name:getNodeStyleNames
+Method-returnType:String
+Method-parameters:[NodeModel node, String separator]
+MethodInvocation:getStyleNames
+MethodInvocation:getConditionalNodeStyles
+Method-name:getMapStyleNames
+Method-returnType:String
+Method-parameters:[NodeModel node, String separator]
+MethodInvocation:getStyleNames
+MethodInvocation:getConditionalMapStyles
+Method-name:conditionalStylesOf
+Method-returnType:ConditionalStyleChecker
+Method-parameters:[NodeModel node]
+MethodInvocation:getExtension
+MethodInvocation:getMap
+MethodInvocation:getConditionalStyleModel
+MethodInvocation:getExtension

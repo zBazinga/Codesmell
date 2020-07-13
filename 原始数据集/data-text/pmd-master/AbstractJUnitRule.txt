@@ -1,0 +1,82 @@
+Class:AbstractJUnitRule
+Field:JUNIT3_CLASS_NAME
+Field:JUNIT4_CLASS_NAME
+Field:JUNIT5_CLASS_NAME
+Field:isJUnit3Class
+Field:isJUnit4Class
+Field:isJUnit5Class
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTCompilationUnit node, Object data]
+MethodInvocation:isJUnit3Class
+MethodInvocation:isJUnit4Class
+MethodInvocation:isJUnit5Class
+MethodInvocation:hasImports
+MethodInvocation:hasImports
+MethodInvocation:isTestNgClass
+Method-name:isJUnitMethod
+Method-returnType:boolean
+Method-parameters:[ASTMethodDeclaration method, Object data]
+MethodInvocation:isAbstract
+MethodInvocation:isNative
+MethodInvocation:isStatic
+MethodInvocation:isPublic
+MethodInvocation:isJUnit3Method
+MethodInvocation:isJUnit4Method
+MethodInvocation:isJUnit5Method
+Method-name:isJUnit4Method
+Method-returnType:boolean
+Method-parameters:[ASTMethodDeclaration method]
+MethodInvocation:doesNodeContainJUnitAnnotation
+MethodInvocation:getParent
+Method-name:isJUnit5Method
+Method-returnType:boolean
+Method-parameters:[ASTMethodDeclaration method]
+MethodInvocation:doesNodeContainJUnitAnnotation
+MethodInvocation:getParent
+Method-name:isJUnit3Method
+Method-returnType:boolean
+Method-parameters:[ASTMethodDeclaration method]
+MethodInvocation:isVoid
+MethodInvocation:startsWith
+MethodInvocation:getName
+Method-name:isJUnit3Class
+Method-returnType:boolean
+Method-parameters:[ASTCompilationUnit node]
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:getType
+MethodInvocation:isA
+MethodInvocation:getType
+MethodInvocation:getFirstChildOfType
+MethodInvocation:endsWith
+MethodInvocation:getImage
+MethodInvocation:getChild
+MethodInvocation:getImage
+MethodInvocation:endsWith
+MethodInvocation:hasImports
+MethodInvocation:endsWith
+MethodInvocation:getImage
+Method-name:isJUnit4Class
+Method-returnType:boolean
+Method-parameters:[ASTCompilationUnit node]
+MethodInvocation:doesNodeContainJUnitAnnotation
+Method-name:isJUnit5Class
+Method-returnType:boolean
+Method-parameters:[ASTCompilationUnit node]
+MethodInvocation:doesNodeContainJUnitAnnotation
+Method-name:doesNodeContainJUnitAnnotation
+Method-returnType:boolean
+Method-parameters:[Node node, String annotationTypeClassName]
+MethodInvocation:findDescendantsOfType
+MethodInvocation:getChild
+MethodInvocation:getType
+MethodInvocation:getFirstChildOfType
+MethodInvocation:hasImageEqualTo
+MethodInvocation:hasImageEqualTo
+MethodInvocation:isA
+Method-name:hasImports
+Method-returnType:boolean
+Method-parameters:[ASTCompilationUnit cu, String className]
+MethodInvocation:findDescendantsOfType
+MethodInvocation:getFirstChildOfType
+MethodInvocation:hasImageEqualTo

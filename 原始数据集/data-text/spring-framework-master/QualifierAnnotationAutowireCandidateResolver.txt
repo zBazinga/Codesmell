@@ -1,0 +1,139 @@
+Class:QualifierAnnotationAutowireCandidateResolver
+Field:qualifierTypes
+Field:valueAnnotationType
+Method-name:QualifierAnnotationAutowireCandidateResolver
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:add
+FieldAccess:qualifierTypes
+MethodInvocation:add
+FieldAccess:qualifierTypes
+MethodInvocation:forName
+MethodInvocation:getClassLoader
+Method-name:QualifierAnnotationAutowireCandidateResolver
+Method-returnType:null
+Method-parameters:[Class<? extends Annotation> qualifierType]
+MethodInvocation:notNull
+MethodInvocation:add
+FieldAccess:qualifierTypes
+Method-name:QualifierAnnotationAutowireCandidateResolver
+Method-returnType:null
+Method-parameters:[Set<Class<? extends Annotation>> qualifierTypes]
+MethodInvocation:notNull
+MethodInvocation:addAll
+FieldAccess:qualifierTypes
+Method-name:addQualifierType
+Method-returnType:void
+Method-parameters:[Class<? extends Annotation> qualifierType]
+MethodInvocation:add
+FieldAccess:qualifierTypes
+Method-name:setValueAnnotationType
+Method-returnType:void
+Method-parameters:[Class<? extends Annotation> valueAnnotationType]
+FieldAccess:valueAnnotationType
+Method-name:isAutowireCandidate
+Method-returnType:boolean
+Method-parameters:[BeanDefinitionHolder bdHolder, DependencyDescriptor descriptor]
+MethodInvocation:checkQualifiers
+MethodInvocation:getAnnotations
+MethodInvocation:getMethodParameter
+MethodInvocation:getMethod
+MethodInvocation:getReturnType
+MethodInvocation:checkQualifiers
+MethodInvocation:getMethodAnnotations
+Method-name:checkQualifiers
+Method-returnType:boolean
+Method-parameters:[BeanDefinitionHolder bdHolder, Annotation[] annotationsToSearch]
+MethodInvocation:isEmpty
+MethodInvocation:annotationType
+MethodInvocation:isQualifier
+MethodInvocation:checkQualifier
+MethodInvocation:getAnnotations
+MethodInvocation:annotationType
+MethodInvocation:isQualifier
+MethodInvocation:isEmpty
+MethodInvocation:getValue
+MethodInvocation:checkQualifier
+Method-name:isQualifier
+Method-returnType:boolean
+Method-parameters:[Class<? extends Annotation> annotationType]
+FieldAccess:qualifierTypes
+MethodInvocation:equals
+MethodInvocation:isAnnotationPresent
+Method-name:checkQualifier
+Method-returnType:boolean
+Method-parameters:[BeanDefinitionHolder bdHolder, Annotation annotation, TypeConverter typeConverter]
+MethodInvocation:annotationType
+MethodInvocation:getBeanDefinition
+MethodInvocation:getQualifier
+MethodInvocation:getName
+MethodInvocation:getQualifier
+MethodInvocation:getShortName
+MethodInvocation:getQualifiedElementAnnotation
+MethodInvocation:getFactoryMethodAnnotation
+MethodInvocation:getResolvedDecoratedDefinition
+MethodInvocation:getFactoryMethodAnnotation
+MethodInvocation:getBeanFactory
+MethodInvocation:getType
+MethodInvocation:getBeanFactory
+MethodInvocation:getBeanName
+MethodInvocation:getAnnotation
+MethodInvocation:getUserClass
+MethodInvocation:hasBeanClass
+MethodInvocation:getAnnotation
+MethodInvocation:getUserClass
+MethodInvocation:getBeanClass
+MethodInvocation:equals
+MethodInvocation:getAnnotationAttributes
+MethodInvocation:isEmpty
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getAttribute
+MethodInvocation:getAttribute
+MethodInvocation:equals
+MethodInvocation:matchesName
+MethodInvocation:getDefaultValue
+MethodInvocation:convertIfNecessary
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:getQualifiedElementAnnotation
+Method-returnType:Annotation
+Method-parameters:[RootBeanDefinition bd, Class<? extends Annotation> type]
+MethodInvocation:getQualifiedElement
+MethodInvocation:getAnnotation
+Method-name:getFactoryMethodAnnotation
+Method-returnType:Annotation
+Method-parameters:[RootBeanDefinition bd, Class<? extends Annotation> type]
+MethodInvocation:getResolvedFactoryMethod
+MethodInvocation:getAnnotation
+Method-name:isRequired
+Method-returnType:boolean
+Method-parameters:[DependencyDescriptor descriptor]
+MethodInvocation:getAnnotation
+MethodInvocation:required
+Method-name:hasQualifier
+Method-returnType:boolean
+Method-parameters:[DependencyDescriptor descriptor]
+MethodInvocation:getAnnotations
+MethodInvocation:isQualifier
+MethodInvocation:annotationType
+Method-name:getSuggestedValue
+Method-returnType:Object
+Method-parameters:[DependencyDescriptor descriptor]
+MethodInvocation:findValue
+MethodInvocation:getAnnotations
+MethodInvocation:getMethodParameter
+MethodInvocation:findValue
+MethodInvocation:getMethodAnnotations
+Method-name:findValue
+Method-returnType:Object
+Method-parameters:[Annotation[] annotationsToSearch]
+MethodInvocation:getMergedAnnotationAttributes
+MethodInvocation:forAnnotations
+FieldAccess:valueAnnotationType
+MethodInvocation:extractValue
+Method-name:extractValue
+Method-returnType:Object
+Method-parameters:[AnnotationAttributes attr]
+MethodInvocation:get

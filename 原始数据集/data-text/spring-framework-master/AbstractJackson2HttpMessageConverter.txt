@@ -1,0 +1,163 @@
+Class:AbstractJackson2HttpMessageConverter
+Field:DEFAULT_CHARSET
+Field:objectMapper
+Field:prettyPrint
+Field:ssePrettyPrinter
+Method-name:AbstractJackson2HttpMessageConverter
+Method-returnType:null
+Method-parameters:[ObjectMapper objectMapper]
+FieldAccess:objectMapper
+MethodInvocation:indentObjectsWith
+FieldAccess:ssePrettyPrinter
+Method-name:AbstractJackson2HttpMessageConverter
+Method-returnType:null
+Method-parameters:[ObjectMapper objectMapper, MediaType supportedMediaType]
+MethodInvocation:setSupportedMediaTypes
+MethodInvocation:singletonList
+Method-name:AbstractJackson2HttpMessageConverter
+Method-returnType:null
+Method-parameters:[ObjectMapper objectMapper, MediaType... supportedMediaTypes]
+MethodInvocation:setSupportedMediaTypes
+MethodInvocation:asList
+Method-name:setObjectMapper
+Method-returnType:void
+Method-parameters:[ObjectMapper objectMapper]
+MethodInvocation:notNull
+FieldAccess:objectMapper
+MethodInvocation:configurePrettyPrint
+Method-name:getObjectMapper
+Method-returnType:ObjectMapper
+Method-parameters:[]
+FieldAccess:objectMapper
+Method-name:setPrettyPrint
+Method-returnType:void
+Method-parameters:[boolean prettyPrint]
+FieldAccess:prettyPrint
+MethodInvocation:configurePrettyPrint
+Method-name:configurePrettyPrint
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:prettyPrint
+MethodInvocation:configure
+FieldAccess:objectMapper
+FieldAccess:prettyPrint
+Method-name:canRead
+Method-returnType:boolean
+Method-parameters:[Class<?> clazz, @Nullable MediaType mediaType]
+MethodInvocation:canRead
+Method-name:canRead
+Method-returnType:boolean
+Method-parameters:[Type type, @Nullable Class<?> contextClass, @Nullable MediaType mediaType]
+MethodInvocation:canRead
+MethodInvocation:getJavaType
+MethodInvocation:canDeserialize
+FieldAccess:objectMapper
+MethodInvocation:logWarningIfNecessary
+MethodInvocation:get
+Method-name:canWrite
+Method-returnType:boolean
+Method-parameters:[Class<?> clazz, @Nullable MediaType mediaType]
+MethodInvocation:canWrite
+MethodInvocation:canSerialize
+FieldAccess:objectMapper
+MethodInvocation:logWarningIfNecessary
+MethodInvocation:get
+Method-name:logWarningIfNecessary
+Method-returnType:void
+Method-parameters:[Type type, @Nullable Throwable cause]
+MethodInvocation:startsWith
+MethodInvocation:getMessage
+MethodInvocation:isDebugEnabled
+MethodInvocation:isWarnEnabled
+MethodInvocation:debug
+MethodInvocation:isDebugEnabled
+MethodInvocation:warn
+MethodInvocation:warn
+Method-name:readInternal
+Method-returnType:Object
+Method-parameters:[Class<?> clazz, HttpInputMessage inputMessage]
+MethodInvocation:getJavaType
+MethodInvocation:readJavaType
+Method-name:read
+Method-returnType:Object
+Method-parameters:[Type type, @Nullable Class<?> contextClass, HttpInputMessage inputMessage]
+MethodInvocation:getJavaType
+MethodInvocation:readJavaType
+Method-name:readJavaType
+Method-returnType:Object
+Method-parameters:[JavaType javaType, HttpInputMessage inputMessage]
+MethodInvocation:getDeserializationView
+MethodInvocation:readValue
+MethodInvocation:forType
+MethodInvocation:readerWithView
+FieldAccess:objectMapper
+MethodInvocation:getBody
+MethodInvocation:readValue
+FieldAccess:objectMapper
+MethodInvocation:getBody
+MethodInvocation:getType
+MethodInvocation:getOriginalMessage
+Method-name:writeInternal
+Method-returnType:void
+Method-parameters:[Object object, @Nullable Type type, HttpOutputMessage outputMessage]
+MethodInvocation:getContentType
+MethodInvocation:getHeaders
+MethodInvocation:getJsonEncoding
+MethodInvocation:createGenerator
+MethodInvocation:getFactory
+FieldAccess:objectMapper
+MethodInvocation:getBody
+MethodInvocation:writePrefix
+MethodInvocation:getValue
+MethodInvocation:getSerializationView
+MethodInvocation:getFilters
+MethodInvocation:isAssignable
+MethodInvocation:getClass
+MethodInvocation:getJavaType
+MethodInvocation:writerWithView
+FieldAccess:objectMapper
+MethodInvocation:writer
+FieldAccess:objectMapper
+MethodInvocation:with
+MethodInvocation:isContainerType
+MethodInvocation:forType
+MethodInvocation:getConfig
+MethodInvocation:isCompatibleWith
+MethodInvocation:isEnabled
+MethodInvocation:with
+FieldAccess:ssePrettyPrinter
+MethodInvocation:writeValue
+MethodInvocation:writeSuffix
+MethodInvocation:flush
+MethodInvocation:getType
+MethodInvocation:getOriginalMessage
+Method-name:writePrefix
+Method-returnType:void
+Method-parameters:[JsonGenerator generator, Object object]
+Method-name:writeSuffix
+Method-returnType:void
+Method-parameters:[JsonGenerator generator, Object object]
+Method-name:getJavaType
+Method-returnType:JavaType
+Method-parameters:[Type type, @Nullable Class<?> contextClass]
+MethodInvocation:getTypeFactory
+FieldAccess:objectMapper
+MethodInvocation:constructType
+MethodInvocation:resolveType
+Method-name:getJsonEncoding
+Method-returnType:JsonEncoding
+Method-parameters:[@Nullable MediaType contentType]
+MethodInvocation:getCharset
+MethodInvocation:getCharset
+MethodInvocation:values
+MethodInvocation:equals
+MethodInvocation:name
+MethodInvocation:getJavaName
+Method-name:getDefaultContentType
+Method-returnType:MediaType
+Method-parameters:[Object object]
+MethodInvocation:getValue
+Method-name:getContentLength
+Method-returnType:Long
+Method-parameters:[Object object, @Nullable MediaType contentType]
+MethodInvocation:getValue

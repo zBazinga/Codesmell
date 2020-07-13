@@ -1,0 +1,219 @@
+Class:JobGraph
+Field:serialVersionUID
+Field:taskVertices
+Field:jobConfiguration
+Field:jobID
+Field:jobName
+Field:scheduleMode
+Field:serializedExecutionConfig
+Field:snapshotSettings
+Field:savepointRestoreSettings
+MethodInvocation:none
+Field:userJars
+Field:userArtifacts
+Field:userJarBlobKeys
+Field:classpaths
+MethodInvocation:emptyList
+Method-name:JobGraph
+Method-returnType:null
+Method-parameters:[String jobName]
+Method-name:JobGraph
+Method-returnType:null
+Method-parameters:[JobID jobId, String jobName]
+FieldAccess:jobID
+FieldAccess:jobName
+MethodInvocation:setExecutionConfig
+Method-name:JobGraph
+Method-returnType:null
+Method-parameters:[JobVertex... vertices]
+Method-name:JobGraph
+Method-returnType:null
+Method-parameters:[String jobName, JobVertex... vertices]
+Method-name:JobGraph
+Method-returnType:null
+Method-parameters:[JobID jobId, String jobName, JobVertex... vertices]
+MethodInvocation:addVertex
+Method-name:getJobID
+Method-returnType:JobID
+Method-parameters:[]
+FieldAccess:jobID
+Method-name:setJobID
+Method-returnType:void
+Method-parameters:[JobID jobID]
+FieldAccess:jobID
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:jobName
+Method-name:getJobConfiguration
+Method-returnType:Configuration
+Method-parameters:[]
+FieldAccess:jobConfiguration
+Method-name:getSerializedExecutionConfig
+Method-returnType:SerializedValue<ExecutionConfig>
+Method-parameters:[]
+Method-name:setScheduleMode
+Method-returnType:void
+Method-parameters:[ScheduleMode scheduleMode]
+FieldAccess:scheduleMode
+Method-name:getScheduleMode
+Method-returnType:ScheduleMode
+Method-parameters:[]
+Method-name:setSavepointRestoreSettings
+Method-returnType:void
+Method-parameters:[SavepointRestoreSettings settings]
+FieldAccess:savepointRestoreSettings
+MethodInvocation:checkNotNull
+Method-name:getSavepointRestoreSettings
+Method-returnType:SavepointRestoreSettings
+Method-parameters:[]
+Method-name:setExecutionConfig
+Method-returnType:void
+Method-parameters:[ExecutionConfig executionConfig]
+MethodInvocation:checkNotNull
+FieldAccess:serializedExecutionConfig
+Method-name:addVertex
+Method-returnType:void
+Method-parameters:[JobVertex vertex]
+MethodInvocation:getID
+MethodInvocation:put
+MethodInvocation:put
+Method-name:getVertices
+Method-returnType:Iterable<JobVertex>
+Method-parameters:[]
+MethodInvocation:values
+FieldAccess:taskVertices
+Method-name:getVerticesAsArray
+Method-returnType:JobVertex[]
+Method-parameters:[]
+MethodInvocation:toArray
+MethodInvocation:values
+FieldAccess:taskVertices
+MethodInvocation:size
+FieldAccess:taskVertices
+Method-name:getNumberOfVertices
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:taskVertices
+Method-name:setSnapshotSettings
+Method-returnType:void
+Method-parameters:[JobCheckpointingSettings settings]
+FieldAccess:snapshotSettings
+Method-name:getCheckpointingSettings
+Method-returnType:JobCheckpointingSettings
+Method-parameters:[]
+Method-name:isCheckpointingEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getCheckpointInterval
+MethodInvocation:getCheckpointCoordinatorConfiguration
+Method-name:findVertexByID
+Method-returnType:JobVertex
+Method-parameters:[JobVertexID id]
+MethodInvocation:get
+FieldAccess:taskVertices
+Method-name:setClasspaths
+Method-returnType:void
+Method-parameters:[List<URL> paths]
+Method-name:getClasspaths
+Method-returnType:List<URL>
+Method-parameters:[]
+Method-name:getMaximumParallelism
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:max
+MethodInvocation:getParallelism
+Method-name:getVerticesSortedTopologicallyFromSources
+Method-returnType:List<JobVertex>
+Method-parameters:[]
+MethodInvocation:isEmpty
+FieldAccess:taskVertices
+MethodInvocation:emptyList
+MethodInvocation:size
+FieldAccess:taskVertices
+MethodInvocation:values
+FieldAccess:taskVertices
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:hasNoConnectedInputs
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:addNodesThatHaveNoNewPredecessors
+Method-name:addNodesThatHaveNoNewPredecessors
+Method-returnType:void
+Method-parameters:[JobVertex start, List<JobVertex> target, Set<JobVertex> remaining]
+MethodInvocation:getProducedDataSets
+MethodInvocation:getConsumers
+MethodInvocation:getTarget
+MethodInvocation:contains
+MethodInvocation:getInputs
+MethodInvocation:getSource
+MethodInvocation:contains
+MethodInvocation:getProducer
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:addNodesThatHaveNoNewPredecessors
+Method-name:addJar
+Method-returnType:void
+Method-parameters:[Path jar]
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:addJars
+Method-returnType:void
+Method-parameters:[final List<URL> jarFilesToAttach]
+MethodInvocation:addJar
+MethodInvocation:toURI
+Method-name:getUserJars
+Method-returnType:List<Path>
+Method-parameters:[]
+Method-name:addUserArtifact
+Method-returnType:void
+Method-parameters:[String name, DistributedCache.DistributedCacheEntry file]
+MethodInvocation:putIfAbsent
+Method-name:getUserArtifacts
+Method-returnType:Map<String,DistributedCache.DistributedCacheEntry>
+Method-parameters:[]
+Method-name:addUserJarBlobKey
+Method-returnType:void
+Method-parameters:[PermanentBlobKey key]
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:hasUsercodeJarFiles
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:userJars
+Method-name:getUserJarBlobKeys
+Method-returnType:List<PermanentBlobKey>
+Method-parameters:[]
+FieldAccess:userJarBlobKeys
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:setUserArtifactBlobKey
+Method-returnType:void
+Method-parameters:[String entryName, PermanentBlobKey blobKey]
+MethodInvocation:serializeObject
+MethodInvocation:computeIfPresent
+Method-name:setUserArtifactRemotePath
+Method-returnType:void
+Method-parameters:[String entryName, String remotePath]
+MethodInvocation:computeIfPresent
+Method-name:writeUserArtifactEntriesToConfiguration
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:writeFileInfoToConfig
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:isPartialResourceConfigured
+Method-returnType:boolean
+Method-parameters:[Dispatcher dispatcher]
+MethodInvocation:getVertices
+MethodInvocation:getMinResources

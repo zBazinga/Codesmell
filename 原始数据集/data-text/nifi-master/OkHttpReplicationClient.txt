@@ -1,0 +1,154 @@
+Class:OkHttpReplicationClient
+Field:logger
+MethodInvocation:getLogger
+Field:gzipEncodings
+MethodInvocation:collect
+MethodInvocation:of
+MethodInvocation:toSet
+Field:jsonSerializer
+Field:xmlSerializer
+Field:jsonCodec
+Field:okHttpClient
+Field:tlsConfigured
+Method-name:OkHttpReplicationClient
+Method-returnType:null
+Method-parameters:[final NiFiProperties properties]
+MethodInvocation:setDefaultPropertyInclusion
+MethodInvocation:construct
+MethodInvocation:setAnnotationIntrospector
+MethodInvocation:getTypeFactory
+MethodInvocation:createOkHttpClient
+Method-name:prepareRequest
+Method-returnType:PreparedRequest
+Method-parameters:[final String method, final Map<String,String> headers, final Object entity]
+MethodInvocation:isUseGzip
+MethodInvocation:checkContentLengthHeader
+MethodInvocation:createRequestBody
+MethodInvocation:updateHeadersForGzip
+Method-name:checkContentLengthHeader
+Method-returnType:void
+Method-parameters:[String method, Map<String,String> headers]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:orElse
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:entrySet
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getValue
+MethodInvocation:warn
+MethodInvocation:getValue
+MethodInvocation:put
+Method-name:replicate
+Method-returnType:Response
+Method-parameters:[final PreparedRequest request, final String uri]
+MethodInvocation:requireNonNull
+MethodInvocation:replicate
+Method-name:replicate
+Method-returnType:Response
+Method-parameters:[final OkHttpPreparedRequest request, final String uri]
+MethodInvocation:debug
+MethodInvocation:createCall
+MethodInvocation:execute
+MethodInvocation:getResponseBytes
+MethodInvocation:getHeaders
+MethodInvocation:debug
+MethodInvocation:code
+MethodInvocation:create
+MethodInvocation:code
+Method-name:isTLSConfigured
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getHeaders
+Method-returnType:MultivaluedMap<String,String>
+Method-parameters:[final okhttp3.Response callResponse]
+MethodInvocation:headers
+MethodInvocation:names
+MethodInvocation:values
+MethodInvocation:addAll
+Method-name:getResponseBytes
+Method-returnType:byte[]
+Method-parameters:[final okhttp3.Response callResponse]
+MethodInvocation:bytes
+MethodInvocation:body
+MethodInvocation:header
+MethodInvocation:contains
+MethodInvocation:copy
+MethodInvocation:toByteArray
+Method-name:createCall
+Method-returnType:Call
+Method-parameters:[final OkHttpPreparedRequest request, final String uri]
+MethodInvocation:buildUrl
+MethodInvocation:url
+MethodInvocation:toUpperCase
+MethodInvocation:getMethod
+MethodInvocation:method
+MethodInvocation:getRequestBody
+MethodInvocation:method
+MethodInvocation:entrySet
+MethodInvocation:getHeaders
+MethodInvocation:addHeader
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:build
+MethodInvocation:newCall
+Method-name:createRequestBody
+Method-returnType:RequestBody
+Method-parameters:[final Map<String,String> headers, final Object entity, final boolean gzip]
+MethodInvocation:getContentType
+MethodInvocation:serializeEntity
+MethodInvocation:parse
+MethodInvocation:create
+Method-name:getContentType
+Method-returnType:String
+Method-parameters:[final Map<String,String> headers, final String defaultValue]
+MethodInvocation:entrySet
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:serializeEntity
+Method-returnType:byte[]
+Method-parameters:[final Object entity, final String contentType, final boolean gzip]
+MethodInvocation:serialize
+MethodInvocation:getSerializer
+MethodInvocation:close
+MethodInvocation:toByteArray
+Method-name:getSerializer
+Method-returnType:EntitySerializer
+Method-parameters:[final String contentType]
+MethodInvocation:toLowerCase
+Method-name:updateHeadersForGzip
+Method-returnType:Map<String,String>
+Method-parameters:[final Map<String,String> headers]
+MethodInvocation:get
+MethodInvocation:contains
+MethodInvocation:put
+Method-name:isUseGzip
+Method-returnType:boolean
+Method-parameters:[final Map<String,String> headers]
+MethodInvocation:get
+MethodInvocation:split
+MethodInvocation:anyMatch
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:map
+MethodInvocation:of
+Method-name:createOkHttpClient
+Method-returnType:OkHttpClient
+Method-parameters:[final NiFiProperties properties]
+MethodInvocation:getClusterNodeConnectionTimeout
+MethodInvocation:getPreciseTimeDuration
+MethodInvocation:getClusterNodeReadTimeout
+MethodInvocation:getPreciseTimeDuration
+MethodInvocation:newBuilder
+MethodInvocation:connectTimeout
+MethodInvocation:readTimeout
+MethodInvocation:followRedirects
+MethodInvocation:getClusterNodeMaxConcurrentRequests
+MethodInvocation:connectionPool
+MethodInvocation:fromNiFiProperties
+MethodInvocation:applyTlsToOkHttpClientBuilder
+MethodInvocation:build

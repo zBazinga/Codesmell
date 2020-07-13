@@ -1,0 +1,24 @@
+Class:EntriesAddedEvent
+Field:firstEntry
+Method-name:EntriesAddedEvent
+Method-returnType:null
+Method-parameters:[List<BibEntry> bibEntries, BibEntry firstEntry, EntriesEventSource location]
+FieldAccess:firstEntry
+Method-name:EntriesAddedEvent
+Method-returnType:null
+Method-parameters:[List<BibEntry> bibEntries, EntriesEventSource location]
+FieldAccess:firstEntry
+Method-name:getFirstEntry
+Method-returnType:BibEntry
+Method-parameters:[]
+FieldAccess:firstEntry
+Method-name:listen
+Method-returnType:void
+Method-parameters:[DBMSSynchronizer dbmsSynchronizer]
+MethodInvocation:isEventSourceAccepted
+MethodInvocation:checkCurrentConnection
+MethodInvocation:synchronizeLocalMetaData
+MethodInvocation:synchronizeLocalDatabase
+MethodInvocation:insertEntries
+MethodInvocation:getDBProcessor
+MethodInvocation:getBibEntries

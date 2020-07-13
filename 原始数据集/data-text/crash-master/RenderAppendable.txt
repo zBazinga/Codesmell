@@ -1,0 +1,102 @@
+Class:RenderAppendable
+Field:context
+Field:stack
+Method-name:RenderAppendable
+Method-returnType:null
+Method-parameters:[ScreenContext context]
+FieldAccess:context
+Method-name:append
+Method-returnType:RenderAppendable
+Method-parameters:[CharSequence s]
+MethodInvocation:append
+Method-name:append
+Method-returnType:Screenable
+Method-parameters:[char c]
+MethodInvocation:append
+Method-name:append
+Method-returnType:Screenable
+Method-parameters:[CharSequence csq, int start, int end]
+MethodInvocation:append
+Method-name:append
+Method-returnType:Screenable
+Method-parameters:[Style style]
+MethodInvocation:append
+Method-name:cls
+Method-returnType:Screenable
+Method-parameters:[]
+MethodInvocation:cls
+Method-name:getWidth
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:max
+MethodInvocation:getWidth
+Method-name:getHeight
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getHeight
+Method-name:flush
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:flush
+Method-name:enterStyle
+Method-returnType:void
+Method-parameters:[Style.Composite style]
+MethodInvocation:append
+MethodInvocation:addLast
+Method-name:leaveStyle
+Method-returnType:Style.Composite
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:removeLast
+MethodInvocation:size
+MethodInvocation:getMerged
+MethodInvocation:foo
+MethodInvocation:getBold
+MethodInvocation:getBold
+MethodInvocation:foo
+MethodInvocation:getUnderline
+MethodInvocation:getUnderline
+MethodInvocation:foo
+MethodInvocation:getBlink
+MethodInvocation:getBlink
+MethodInvocation:foo
+MethodInvocation:getForeground
+MethodInvocation:getForeground
+MethodInvocation:foo
+MethodInvocation:getBackground
+MethodInvocation:getBackground
+MethodInvocation:style
+MethodInvocation:append
+MethodInvocation:append
+Method-name:getMerged
+Method-returnType:Style.Composite
+Method-parameters:[]
+MethodInvocation:style
+MethodInvocation:merge
+Method-name:foo
+Method-returnType:Boolean
+Method-parameters:[Boolean last, Boolean merged]
+Method-name:foo
+Method-returnType:Color
+Method-parameters:[Color last, Color merged, Color def]
+Method-name:styleOff
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:append
+Method-name:styleOn
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:append
+MethodInvocation:getMerged
+Method-name:render
+Method-returnType:void
+Method-parameters:[Element element]
+MethodInvocation:renderer
+MethodInvocation:reader
+MethodInvocation:getWidth
+MethodInvocation:getHeight
+MethodInvocation:hasLine
+MethodInvocation:renderLine
+MethodInvocation:append

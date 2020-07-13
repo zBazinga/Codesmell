@@ -1,0 +1,277 @@
+Class:RowResolver
+Field:serialVersionUID
+Field:rowSchema
+Field:rslvMap
+Field:invRslvMap
+Field:altInvRslvMap
+Field:expressionMap
+Field:ambiguousColumns
+Field:checkForAmbiguity
+Field:isExprResolver
+Field:LOG
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:namedJoinInfo
+Method-name:RowResolver
+Method-returnType:null
+Method-parameters:[]
+Method-name:putExpression
+Method-returnType:void
+Method-parameters:[ASTNode node, ColumnInfo colInfo]
+MethodInvocation:toStringTree
+MethodInvocation:put
+MethodInvocation:put
+Method-name:getExpression
+Method-returnType:ColumnInfo
+Method-parameters:[ASTNode node]
+MethodInvocation:get
+MethodInvocation:toStringTree
+Method-name:getExpressionSource
+Method-returnType:ASTNode
+Method-parameters:[ASTNode node]
+MethodInvocation:get
+MethodInvocation:toStringTree
+Method-name:put
+Method-returnType:void
+Method-parameters:[String tab_alias, String col_alias, ColumnInfo colInfo]
+MethodInvocation:addMappingOnly
+MethodInvocation:setTabAlias
+MethodInvocation:toLowerCase
+MethodInvocation:setAlias
+MethodInvocation:toLowerCase
+MethodInvocation:add
+MethodInvocation:getSignature
+Method-name:keepAmbiguousInfo
+Method-returnType:void
+Method-parameters:[String col_alias, String tab_alias]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+Method-name:addMappingOnly
+Method-returnType:boolean
+Method-parameters:[String tab_alias, String col_alias, ColumnInfo colInfo]
+MethodInvocation:toLowerCase
+MethodInvocation:containsKey
+MethodInvocation:getInternalName
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:warn
+MethodInvocation:keepAmbiguousInfo
+MethodInvocation:put
+MethodInvocation:getInternalName
+MethodInvocation:put
+MethodInvocation:getInternalName
+Method-name:hasTableAlias
+Method-returnType:boolean
+Method-parameters:[String tab_alias]
+MethodInvocation:get
+MethodInvocation:toLowerCase
+Method-name:get
+Method-returnType:ColumnInfo
+Method-parameters:[String tab_alias, String col_alias]
+MethodInvocation:isAmbiguousReference
+MethodInvocation:toLowerCase
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:entrySet
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:getColumnInfos
+Method-returnType:List<ColumnInfo>
+Method-parameters:[]
+MethodInvocation:getSignature
+Method-name:getReferenceableColumnAliases
+Method-returnType:List<String>
+Method-parameters:[String tableAlias, int max]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:isHiddenVirtualCol
+MethodInvocation:add
+MethodInvocation:getKey
+MethodInvocation:getColumnInfos
+MethodInvocation:isHiddenVirtualCol
+MethodInvocation:reverseLookup
+MethodInvocation:getInternalName
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:getAlias
+Method-name:getFieldMap
+Method-returnType:Map<String,ColumnInfo>
+Method-parameters:[String tabAlias]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:toLowerCase
+Method-name:getPosition
+Method-returnType:int
+Method-parameters:[String internalName]
+MethodInvocation:getSignature
+MethodInvocation:equals
+MethodInvocation:getInternalName
+Method-name:getTableNames
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:reverseLookup
+Method-returnType:String[]
+Method-parameters:[String internalName]
+MethodInvocation:get
+Method-name:setIsExprResolver
+Method-returnType:void
+Method-parameters:[boolean isExprResolver]
+FieldAccess:isExprResolver
+Method-name:getIsExprResolver
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getAlternateMappings
+Method-returnType:String[]
+Method-parameters:[String internalName]
+MethodInvocation:get
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:append
+MethodInvocation:getValue
+MethodInvocation:entrySet
+MethodInvocation:append
+MethodInvocation:getKey
+MethodInvocation:toString
+MethodInvocation:getValue
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:getRowSchema
+Method-returnType:RowSchema
+Method-parameters:[]
+Method-name:getRslvMap
+Method-returnType:Map<String,Map<String,ColumnInfo>>
+Method-parameters:[]
+Method-name:getExpressionMap
+Method-returnType:Map<String,ASTNode>
+Method-parameters:[]
+Method-name:setExprResolver
+Method-returnType:void
+Method-parameters:[boolean isExprResolver]
+FieldAccess:isExprResolver
+Method-name:doesInvRslvMapContain
+Method-returnType:boolean
+Method-parameters:[String column]
+MethodInvocation:containsKey
+MethodInvocation:getInvRslvMap
+Method-name:setRowSchema
+Method-returnType:void
+Method-parameters:[RowSchema rowSchema]
+FieldAccess:rowSchema
+Method-name:setExpressionMap
+Method-returnType:void
+Method-parameters:[Map<String,ASTNode> expressionMap]
+FieldAccess:expressionMap
+Method-name:getMacroColumnData
+Method-returnType:void
+Method-parameters:[List<FieldSchema> arguments, Set<String> actualColumnNames, ArrayList<String> macroColumnNames, ArrayList<TypeInfo> macroColumnTypes, CreateMacroAnalyzer createMacroAnalyzer]
+MethodInvocation:getTypeInfoFromTypeString
+MethodInvocation:getType
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:add
+MethodInvocation:equals
+MethodInvocation:size
+MethodInvocation:size
+Class:IntRef
+Field:val
+Method-name:add
+Method-returnType:boolean
+Method-parameters:[RowResolver rrToAddTo, RowResolver rrToAddFrom, int numColumns]
+MethodInvocation:add
+Method-name:add
+Method-returnType:boolean
+Method-parameters:[RowResolver rrToAddTo, RowResolver rrToAddFrom, IntRef outputColPosRef, int numColumns]
+MethodInvocation:getSignature
+MethodInvocation:getRowSchema
+MethodInvocation:getInternalName
+MethodInvocation:reverseLookup
+MethodInvocation:setInternalName
+MethodInvocation:getColumnInternalName
+MethodInvocation:putWithCheck
+MethodInvocation:getAlternateMappings
+MethodInvocation:put
+Method-name:putWithCheck
+Method-returnType:boolean
+Method-parameters:[String tabAlias, String colAlias, String internalName, ColumnInfo newCI]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:isSameColumnForRR
+MethodInvocation:warn
+MethodInvocation:toMappingString
+MethodInvocation:toMappingString
+MethodInvocation:get
+MethodInvocation:keepAmbiguousInfo
+MethodInvocation:put
+MethodInvocation:isSameColumnForRR
+MethodInvocation:warn
+MethodInvocation:toMappingString
+Method-name:add
+Method-returnType:boolean
+Method-parameters:[RowResolver rrToAddTo, RowResolver rrToAddFrom, IntRef outputColPosRef]
+MethodInvocation:add
+Method-name:add
+Method-returnType:boolean
+Method-parameters:[RowResolver rrToAddTo, RowResolver rrToAddFrom]
+MethodInvocation:add
+Method-name:getCombinedRR
+Method-returnType:RowResolver
+Method-parameters:[RowResolver leftRR, RowResolver rightRR]
+MethodInvocation:add
+MethodInvocation:warn
+MethodInvocation:add
+MethodInvocation:warn
+Method-name:duplicate
+Method-returnType:RowResolver
+Method-parameters:[]
+MethodInvocation:putAll
+MethodInvocation:putAll
+MethodInvocation:putAll
+MethodInvocation:putAll
+MethodInvocation:putAll
+Method-name:getInvRslvMap
+Method-returnType:HashMap<String,String[]>
+Method-parameters:[]
+Method-name:getNamedJoinInfo
+Method-returnType:NamedJoinInfo
+Method-parameters:[]
+Method-name:setNamedJoinInfo
+Method-returnType:void
+Method-parameters:[NamedJoinInfo namedJoinInfo]
+FieldAccess:namedJoinInfo
+Method-name:isAmbiguousReference
+Method-returnType:boolean
+Method-parameters:[String tableAlias, String colAlias]
+MethodInvocation:getCheckForAmbiguity
+MethodInvocation:isEmpty
+MethodInvocation:get
+MethodInvocation:toLowerCase
+MethodInvocation:containsKey
+MethodInvocation:toLowerCase
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:entrySet
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getKey
+Method-name:setCheckForAmbiguity
+Method-returnType:void
+Method-parameters:[boolean check]
+FieldAccess:checkForAmbiguity
+Method-name:getCheckForAmbiguity
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:checkForAmbiguity

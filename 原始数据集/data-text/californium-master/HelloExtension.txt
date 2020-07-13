@@ -1,0 +1,72 @@
+Class:HelloExtension
+Field:TYPE_BITS
+Field:LENGTH_BITS
+Field:type
+Method-name:HelloExtension
+Method-returnType:null
+Method-parameters:[final ExtensionType type]
+FieldAccess:type
+Method-name:getLength
+Method-returnType:int
+Method-parameters:[]
+Method-name:toByteArray
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:write
+MethodInvocation:getId
+MethodInvocation:addExtensionData
+MethodInvocation:toByteArray
+Method-name:addExtensionData
+Method-returnType:void
+Method-parameters:[DatagramWriter writer]
+Method-name:fromExtensionDataReader
+Method-returnType:HelloExtension
+Method-parameters:[int typeCode, DatagramReader extensionDataReader, InetSocketAddress peerAddress]
+MethodInvocation:getExtensionTypeById
+MethodInvocation:fromExtensionDataReader
+MethodInvocation:fromExtensionDataReader
+MethodInvocation:fromExtensionDataReader
+MethodInvocation:fromExtensionDataReaader
+MethodInvocation:fromExtensionDataReader
+MethodInvocation:fromExtensionDataReader
+MethodInvocation:fromExtensionDataReader
+MethodInvocation:fromExtensionDataReader
+MethodInvocation:close
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getId
+MethodInvocation:toString
+Method-name:getType
+Method-returnType:ExtensionType
+Method-parameters:[]
+Method-name:addExtension
+Method-returnType:void
+Method-parameters:[ClientHello clientHello]
+MethodInvocation:getExtensions
+MethodInvocation:addExtension
+MethodInvocation:getExtensions
+Field:ExtensionType
+Field:id
+Field:name
+Method-name:ExtensionType
+Method-returnType:null
+Method-parameters:[int id, String name]
+FieldAccess:id
+FieldAccess:name
+Method-name:getExtensionTypeById
+Method-returnType:ExtensionType
+Method-parameters:[int id]
+MethodInvocation:values
+MethodInvocation:getId
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getId
+Method-returnType:int
+Method-parameters:[]

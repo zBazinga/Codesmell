@@ -1,0 +1,76 @@
+Class:TimeoutChecker
+Field:timeoutCheckerWatchdog
+Field:watchdog
+Field:operation
+Field:timeout
+Field:checkedThread
+Field:future
+Field:isClosed
+Field:timeoutExceeded
+Method-name:TimeoutChecker
+Method-returnType:null
+Method-parameters:[String operation, TimeValue timeout, ScheduledExecutorService scheduler]
+FieldAccess:operation
+FieldAccess:timeout
+FieldAccess:checkedThread
+MethodInvocation:currentThread
+MethodInvocation:add
+FieldAccess:future
+MethodInvocation:schedule
+MethodInvocation:nanos
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:cancel
+MethodInvocation:remove
+Method-name:check
+Method-returnType:void
+Method-parameters:[String where]
+Method-name:setTimeoutExceeded
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:interruptLongRunningThreadIfRegistered
+Class:TimeoutCheckerWatchdog
+Field:registry
+Method-name:add
+Method-returnType:void
+Method-parameters:[Thread thread, TimeValue timeout]
+Method-name:register
+Method-returnType:void
+Method-parameters:[Matcher matcher]
+MethodInvocation:get
+MethodInvocation:currentThread
+MethodInvocation:compareAndSet
+MethodInvocation:add
+Method-name:maxExecutionTimeInMillis
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:currentThread
+MethodInvocation:getMillis
+Method-name:unregister
+Method-returnType:void
+Method-parameters:[Matcher matcher]
+MethodInvocation:get
+MethodInvocation:currentThread
+MethodInvocation:compareAndSet
+MethodInvocation:remove
+Method-name:remove
+Method-returnType:void
+Method-parameters:[Thread thread]
+Method-name:interruptLongRunningThreadIfRegistered
+Method-returnType:void
+Method-parameters:[Thread thread]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:interrupt
+Class:WatchDogEntry
+Field:timeout
+Field:registered
+Field:matchers
+Method-name:WatchDogEntry
+Method-returnType:null
+Method-parameters:[TimeValue timeout]
+FieldAccess:timeout
+FieldAccess:registered
+FieldAccess:matchers

@@ -1,0 +1,22 @@
+Class:PreAnalyzer
+Class:PreAnalysis
+Field:EMPTY
+MethodInvocation:emptyList
+Field:indices
+Method-name:PreAnalysis
+Method-returnType:null
+Method-parameters:[List<TableInfo> indices]
+FieldAccess:indices
+Method-name:preAnalyze
+Method-returnType:PreAnalysis
+Method-parameters:[LogicalPlan plan]
+MethodInvocation:analyzed
+MethodInvocation:doPreAnalyze
+Method-name:doPreAnalyze
+Method-returnType:PreAnalysis
+Method-parameters:[LogicalPlan plan]
+MethodInvocation:forEachUp
+MethodInvocation:add
+MethodInvocation:table
+MethodInvocation:frozen
+MethodInvocation:forEachUp

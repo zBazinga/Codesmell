@@ -1,0 +1,279 @@
+Class:Kernel
+Field:globalWorkSize
+Field:workGroupSize
+Method-name:Kernel
+Method-returnType:null
+Method-parameters:[ObjectReleaser releaser]
+FieldAccess:globalWorkSize
+FieldAccess:workGroupSize
+Method-name:register
+Method-returnType:Kernel
+Method-parameters:[]
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getArgCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:getGlobalWorkSize
+Method-returnType:WorkSize
+Method-parameters:[]
+Method-name:setGlobalWorkSize
+Method-returnType:void
+Method-parameters:[WorkSize ws]
+MethodInvocation:set
+Method-name:setGlobalWorkSize
+Method-returnType:void
+Method-parameters:[int size]
+MethodInvocation:set
+Method-name:setGlobalWorkSize
+Method-returnType:void
+Method-parameters:[int width, int height]
+MethodInvocation:set
+Method-name:setGlobalWorkSize
+Method-returnType:void
+Method-parameters:[int width, int height, int depth]
+MethodInvocation:set
+Method-name:getWorkGroupSize
+Method-returnType:WorkSize
+Method-parameters:[]
+Method-name:setWorkGroupSize
+Method-returnType:void
+Method-parameters:[WorkSize ws]
+MethodInvocation:set
+Method-name:setWorkGroupSize
+Method-returnType:void
+Method-parameters:[int size]
+MethodInvocation:set
+Method-name:setWorkGroupSize
+Method-returnType:void
+Method-parameters:[int width, int height]
+MethodInvocation:set
+Method-name:setWorkGroupSdize
+Method-returnType:void
+Method-parameters:[int width, int height, int depth]
+MethodInvocation:set
+Method-name:setWorkGroupSizeToNull
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:set
+Method-name:getMaxWorkGroupSize
+Method-returnType:long
+Method-parameters:[Device device]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, LocalMemPerElement t]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, LocalMem t]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, Buffer t]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, Image i]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, byte b]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, short s]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, int i]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, long l]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, float f]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, double d]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, Vector2f v]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, Vector4f v]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, Quaternion q]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, Matrix4f mat]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, Matrix3f mat]
+MethodInvocation:get
+MethodInvocation:zero
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:setArg
+MethodInvocation:release
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, ByteBuffer buffer, long size]
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int index, Object arg]
+MethodInvocation:setArg
+MethodInvocation:setArg
+MethodInvocation:setArg
+MethodInvocation:setArg
+MethodInvocation:setArg
+MethodInvocation:setArg
+MethodInvocation:setArg
+MethodInvocation:setArg
+MethodInvocation:setArg
+MethodInvocation:setArg
+MethodInvocation:setArg
+MethodInvocation:setArg
+MethodInvocation:setArg
+MethodInvocation:setArg
+MethodInvocation:setArg
+Method-name:setArgs
+Method-returnType:void
+Method-parameters:[Object... args]
+MethodInvocation:setArg
+Method-name:Run
+Method-returnType:Event
+Method-parameters:[CommandQueue queue]
+Method-name:RunNoEvent
+Method-returnType:void
+Method-parameters:[CommandQueue queue]
+MethodInvocation:release
+MethodInvocation:Run
+Method-name:Run1
+Method-returnType:Event
+Method-parameters:[CommandQueue queue, WorkSize globalWorkSize, Object... args]
+MethodInvocation:setGlobalWorkSize
+MethodInvocation:setWorkGroupSizeToNull
+MethodInvocation:setArgs
+MethodInvocation:Run
+Method-name:Run1NoEvent
+Method-returnType:void
+Method-parameters:[CommandQueue queue, WorkSize globalWorkSize, Object... args]
+MethodInvocation:setGlobalWorkSize
+MethodInvocation:setWorkGroupSizeToNull
+MethodInvocation:setArgs
+MethodInvocation:RunNoEvent
+Method-name:Run2
+Method-returnType:Event
+Method-parameters:[CommandQueue queue, WorkSize globalWorkSize, WorkSize workGroupSize, Object... args]
+MethodInvocation:setGlobalWorkSize
+MethodInvocation:setWorkGroupSize
+MethodInvocation:setArgs
+MethodInvocation:Run
+Method-name:Run2NoEvent
+Method-returnType:void
+Method-parameters:[CommandQueue queue, WorkSize globalWorkSize, WorkSize workGroupSize, Object... args]
+MethodInvocation:setGlobalWorkSize
+MethodInvocation:setWorkGroupSize
+MethodInvocation:setArgs
+MethodInvocation:RunNoEvent
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Class:LocalMem
+Field:size
+Method-name:LocalMem
+Method-returnType:null
+Method-parameters:[int size]
+FieldAccess:size
+Method-name:getSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:size
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+FieldAccess:size
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Class:LocalMemPerElement
+Field:size
+Method-name:LocalMemPerElement
+Method-returnType:null
+Method-parameters:[int size]
+FieldAccess:size
+Method-name:getSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:size
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+FieldAccess:size
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Class:WorkSize
+Field:dimension
+Field:sizes
+Method-name:WorkSize
+Method-returnType:null
+Method-parameters:[int dimension, long... sizes]
+MethodInvocation:set
+Method-name:WorkSize
+Method-returnType:null
+Method-parameters:[]
+Method-name:WorkSize
+Method-returnType:null
+Method-parameters:[long size]
+Method-name:WorkSize
+Method-returnType:null
+Method-parameters:[long width, long height]
+Method-name:WorkSize
+Method-returnType:null
+Method-parameters:[long width, long height, long depth]
+Method-name:getDimension
+Method-returnType:int
+Method-parameters:[]
+Method-name:getSizes
+Method-returnType:long[]
+Method-parameters:[]
+Method-name:set
+Method-returnType:void
+Method-parameters:[int dimension, long... sizes]
+FieldAccess:dimension
+FieldAccess:sizes
+Method-name:set
+Method-returnType:void
+Method-parameters:[WorkSize ws]
+FieldAccess:dimension
+FieldAccess:sizes
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:dimension
+MethodInvocation:hashCode
+FieldAccess:sizes
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+FieldAccess:dimension
+MethodInvocation:equals
+FieldAccess:sizes
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString

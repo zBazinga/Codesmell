@@ -1,0 +1,265 @@
+Class:GenericUDF
+Field:ORDINAL_SUFFIXES
+Method-name:prepare
+Method-returnType:void
+Method-parameters:[int version]
+Method-name:get
+Method-returnType:Object
+Method-parameters:[]
+Class:DeferredJavaObject
+Field:value
+Method-name:DeferredJavaObject
+Method-returnType:null
+Method-parameters:[Object value]
+FieldAccess:value
+Method-name:prepare
+Method-returnType:void
+Method-parameters:[int version]
+Method-name:get
+Method-returnType:Object
+Method-parameters:[]
+Method-name:GenericUDF
+Method-returnType:null
+Method-parameters:[]
+Method-name:initialize
+Method-returnType:ObjectInspector
+Method-parameters:[ObjectInspector[] arguments]
+Method-name:configure
+Method-returnType:void
+Method-parameters:[MapredContext context]
+Method-name:initializeAndFoldConstants
+Method-returnType:ObjectInspector
+Method-parameters:[ObjectInspector[] arguments]
+MethodInvocation:initialize
+MethodInvocation:getRequiredFiles
+MethodInvocation:getRequiredJars
+MethodInvocation:isConstantObjectInspector
+MethodInvocation:isConstantObjectInspector
+MethodInvocation:isConsistentWithinQuery
+MethodInvocation:supportsConstantObjectInspector
+MethodInvocation:getWritableConstantValue
+MethodInvocation:evaluate
+MethodInvocation:getConstantObjectInspector
+Method-name:getRequiredJars
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:getRequiredFiles
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:evaluate
+Method-returnType:Object
+Method-parameters:[DeferredObject[] arguments]
+Method-name:getDisplayString
+Method-returnType:String
+Method-parameters:[String[] children]
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+Method-name:flip
+Method-returnType:GenericUDF
+Method-parameters:[]
+Method-name:negative
+Method-returnType:GenericUDF
+Method-parameters:[]
+MethodInvocation:getFuncName
+Method-name:getUdfName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:copyToNewInstance
+Method-returnType:void
+Method-parameters:[Object newInstance]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:getStandardDisplayString
+Method-returnType:String
+Method-parameters:[String name, String[] children]
+MethodInvocation:getStandardDisplayString
+Method-name:getStandardDisplayString
+Method-returnType:String
+Method-parameters:[String name, String[] children, String delim]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:getFuncName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toLowerCase
+MethodInvocation:substring
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:checkArgsSize
+Method-returnType:void
+Method-parameters:[ObjectInspector[] arguments, int min, int max]
+MethodInvocation:append
+MethodInvocation:getFuncName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:checkArgPrimitive
+Method-returnType:void
+Method-parameters:[ObjectInspector[] arguments, int i]
+MethodInvocation:getCategory
+MethodInvocation:getFuncName
+MethodInvocation:getArgOrder
+Method-name:checkArgGroups
+Method-returnType:void
+Method-parameters:[ObjectInspector[] arguments, int i, PrimitiveCategory[] inputTypes, PrimitiveGrouping... grps]
+MethodInvocation:getPrimitiveCategory
+MethodInvocation:getPrimitiveGrouping
+MethodInvocation:append
+MethodInvocation:getFuncName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getArgOrder
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:obtainStringConverter
+Method-returnType:void
+Method-parameters:[ObjectInspector[] arguments, int i, PrimitiveCategory[] inputTypes, Converter[] converters]
+MethodInvocation:getPrimitiveCategory
+MethodInvocation:getConverter
+Method-name:obtainIntConverter
+Method-returnType:void
+Method-parameters:[ObjectInspector[] arguments, int i, PrimitiveCategory[] inputTypes, Converter[] converters]
+MethodInvocation:getPrimitiveCategory
+MethodInvocation:getFuncName
+MethodInvocation:getArgOrder
+MethodInvocation:getConverter
+Method-name:obtainLongConverter
+Method-returnType:void
+Method-parameters:[ObjectInspector[] arguments, int i, PrimitiveCategory[] inputTypes, Converter[] converters]
+MethodInvocation:getPrimitiveCategory
+MethodInvocation:getFuncName
+MethodInvocation:getArgOrder
+MethodInvocation:getConverter
+Method-name:obtainDoubleConverter
+Method-returnType:void
+Method-parameters:[ObjectInspector[] arguments, int i, PrimitiveCategory[] inputTypes, Converter[] converters]
+MethodInvocation:getPrimitiveCategory
+MethodInvocation:getConverter
+Method-name:obtainDateConverter
+Method-returnType:void
+Method-parameters:[ObjectInspector[] arguments, int i, PrimitiveCategory[] inputTypes, Converter[] converters]
+MethodInvocation:getPrimitiveCategory
+MethodInvocation:getFuncName
+MethodInvocation:getArgOrder
+MethodInvocation:getConverter
+Method-name:obtainTimestampConverter
+Method-returnType:void
+Method-parameters:[ObjectInspector[] arguments, int i, PrimitiveCategory[] inputTypes, Converter[] converters]
+MethodInvocation:getPrimitiveCategory
+MethodInvocation:getFuncName
+MethodInvocation:getArgOrder
+MethodInvocation:getConverter
+Method-name:getStringValue
+Method-returnType:String
+Method-parameters:[DeferredObject[] arguments, int i, Converter[] converters]
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:convert
+Method-name:getIntValue
+Method-returnType:Integer
+Method-parameters:[DeferredObject[] arguments, int i, Converter[] converters]
+MethodInvocation:get
+MethodInvocation:convert
+MethodInvocation:get
+Method-name:getLongValue
+Method-returnType:Long
+Method-parameters:[DeferredObject[] arguments, int i, Converter[] converters]
+MethodInvocation:get
+MethodInvocation:convert
+MethodInvocation:get
+Method-name:getDoubleValue
+Method-returnType:Double
+Method-parameters:[DeferredObject[] arguments, int i, Converter[] converters]
+MethodInvocation:get
+MethodInvocation:convert
+MethodInvocation:get
+Method-name:getDateValue
+Method-returnType:Date
+Method-parameters:[DeferredObject[] arguments, int i, PrimitiveCategory[] inputTypes, Converter[] converters]
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:convert
+MethodInvocation:valueOf
+MethodInvocation:convert
+MethodInvocation:get
+MethodInvocation:getFuncName
+Method-name:getTimestampValue
+Method-returnType:Timestamp
+Method-parameters:[DeferredObject[] arguments, int i, Converter[] converters]
+MethodInvocation:get
+MethodInvocation:convert
+MethodInvocation:getTimestamp
+Method-name:getIntervalYearMonthValue
+Method-returnType:HiveIntervalYearMonth
+Method-parameters:[DeferredObject[] arguments, int i, PrimitiveCategory[] inputTypes, Converter[] converters]
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:convert
+MethodInvocation:valueOf
+MethodInvocation:convert
+MethodInvocation:getHiveIntervalYearMonth
+MethodInvocation:getFuncName
+Method-name:getIntervalDayTimeValue
+Method-returnType:HiveIntervalDayTime
+Method-parameters:[DeferredObject[] arguments, int i, PrimitiveCategory[] inputTypes, Converter[] converters]
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:convert
+MethodInvocation:valueOf
+MethodInvocation:convert
+MethodInvocation:getHiveIntervalDayTime
+MethodInvocation:getFuncName
+Method-name:getConstantStringValue
+Method-returnType:String
+Method-parameters:[ObjectInspector[] arguments, int i]
+MethodInvocation:getWritableConstantValue
+MethodInvocation:toString
+Method-name:getConstantBooleanValue
+Method-returnType:Boolean
+Method-parameters:[ObjectInspector[] arguments, int i]
+MethodInvocation:getWritableConstantValue
+MethodInvocation:get
+MethodInvocation:getFuncName
+MethodInvocation:getArgOrder
+MethodInvocation:getClass
+Method-name:getConstantIntValue
+Method-returnType:Integer
+Method-parameters:[ObjectInspector[] arguments, int i]
+MethodInvocation:getWritableConstantValue
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getFuncName
+MethodInvocation:getArgOrder
+MethodInvocation:getClass
+Method-name:getArgOrder
+Method-returnType:String
+Method-parameters:[int i]
+Method-name:adapt
+Method-returnType:Optional<T>
+Method-parameters:[Class<T> clazz]
+MethodInvocation:isInstance
+MethodInvocation:of
+MethodInvocation:empty

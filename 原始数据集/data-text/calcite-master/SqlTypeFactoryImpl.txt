@@ -1,0 +1,118 @@
+Class:SqlTypeFactoryImpl
+Method-name:SqlTypeFactoryImpl
+Method-returnType:null
+Method-parameters:[RelDataTypeSystem typeSystem]
+Method-name:createSqlType
+Method-returnType:RelDataType
+Method-parameters:[SqlTypeName typeName]
+MethodInvocation:allowsPrec
+MethodInvocation:createSqlType
+MethodInvocation:getDefaultPrecision
+MethodInvocation:assertBasic
+MethodInvocation:canonize
+Method-name:createSqlType
+Method-returnType:RelDataType
+Method-parameters:[SqlTypeName typeName, int precision]
+Method-name:createSqlType
+Method-returnType:RelDataType
+Method-parameters:[SqlTypeName typeName, int precision, int scale]
+Method-name:createUnknownType
+Method-returnType:RelDataType
+Method-parameters:[]
+MethodInvocation:canonize
+Method-name:createMultisetType
+Method-returnType:RelDataType
+Method-parameters:[RelDataType type, long maxCardinality]
+Method-name:createArrayType
+Method-returnType:RelDataType
+Method-parameters:[RelDataType elementType, long maxCardinality]
+Method-name:createMapType
+Method-returnType:RelDataType
+Method-parameters:[RelDataType keyType, RelDataType valueType]
+MethodInvocation:canonize
+Method-name:createSqlIntervalType
+Method-returnType:RelDataType
+Method-parameters:[SqlIntervalQualifier intervalQualifier]
+MethodInvocation:canonize
+Method-name:createTypeWithCharsetAndCollation
+Method-returnType:RelDataType
+Method-parameters:[RelDataType type, Charset charset, SqlCollation collation]
+Method-name:leastRestrictive
+Method-returnType:RelDataType
+Method-parameters:[List<RelDataType> types]
+Method-name:leastRestrictiveByCast
+Method-returnType:RelDataType
+Method-parameters:[List<RelDataType> types]
+MethodInvocation:get
+MethodInvocation:isNullable
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getSqlTypeName
+MethodInvocation:isNullable
+MethodInvocation:canCastFrom
+MethodInvocation:canCastFrom
+MethodInvocation:createTypeWithNullability
+Method-name:createTypeWithNullability
+Method-returnType:RelDataType
+Method-parameters:[final RelDataType type, final boolean nullable]
+MethodInvocation:createWithNullability
+MethodInvocation:copyMapType
+MethodInvocation:copyArrayType
+MethodInvocation:copyMultisetType
+MethodInvocation:copyIntervalType
+MethodInvocation:copyObjectType
+MethodInvocation:canonize
+Method-name:assertBasic
+Method-returnType:void
+Method-parameters:[SqlTypeName typeName]
+Method-name:leastRestrictiveSqlType
+Method-returnType:RelDataType
+Method-parameters:[List<RelDataType> types]
+Method-name:createDoublePrecisionType
+Method-returnType:RelDataType
+Method-parameters:[]
+MethodInvocation:createSqlType
+Method-name:copyMultisetType
+Method-returnType:RelDataType
+Method-parameters:[RelDataType type, boolean nullable]
+MethodInvocation:copyType
+MethodInvocation:getComponentType
+Method-name:copyIntervalType
+Method-returnType:RelDataType
+Method-parameters:[RelDataType type, boolean nullable]
+MethodInvocation:getIntervalQualifier
+Method-name:copyObjectType
+Method-returnType:RelDataType
+Method-parameters:[RelDataType type, boolean nullable]
+MethodInvocation:getSqlTypeName
+MethodInvocation:getSqlIdentifier
+MethodInvocation:getFieldList
+MethodInvocation:getComparability
+Method-name:copyArrayType
+Method-returnType:RelDataType
+Method-parameters:[RelDataType type, boolean nullable]
+MethodInvocation:copyType
+MethodInvocation:getComponentType
+Method-name:copyMapType
+Method-returnType:RelDataType
+Method-parameters:[RelDataType type, boolean nullable]
+MethodInvocation:copyType
+MethodInvocation:getKeyType
+MethodInvocation:copyType
+MethodInvocation:getValueType
+Method-name:canonize
+Method-returnType:RelDataType
+Method-parameters:[RelDataType type]
+MethodInvocation:isNullable
+MethodInvocation:setFamily
+MethodInvocation:setFamily
+MethodInvocation:createTypeWithNullability
+Class:UnknownSqlType
+Method-name:UnknownSqlType
+Method-returnType:null
+Method-parameters:[RelDataTypeFactory typeFactory]
+MethodInvocation:getTypeSystem
+Method-name:generateTypeString
+Method-returnType:void
+Method-parameters:[StringBuilder sb, boolean withDetail]
+MethodInvocation:append

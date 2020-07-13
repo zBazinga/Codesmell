@@ -1,0 +1,463 @@
+Class:PageBox
+Field:MARGIN_AREA_DEFS
+Field:LEADING_TRAILING_SPLIT
+Field:_style
+Field:_top
+Field:_bottom
+Field:_paintingTop
+Field:_paintingBottom
+Field:_pageNo
+Field:_outerPageWidth
+Field:_pageDimensions
+Field:_pageInfo
+Field:_marginAreas
+Field:_metadata
+Method-name:getWidth
+Method-returnType:int
+Method-parameters:[CssContext cssCtx]
+MethodInvocation:resolvePageDimensions
+MethodInvocation:getWidth
+Method-name:getHeight
+Method-returnType:int
+Method-parameters:[CssContext cssCtx]
+MethodInvocation:resolvePageDimensions
+MethodInvocation:getHeight
+Method-name:resolvePageDimensions
+Method-returnType:void
+Method-parameters:[CssContext cssCtx]
+MethodInvocation:getStyle
+MethodInvocation:isLength
+MethodInvocation:getFloatPropertyProportionalTo
+MethodInvocation:resolveAutoPageWidth
+MethodInvocation:isLength
+MethodInvocation:getFloatPropertyProportionalTo
+MethodInvocation:resolveAutoPageHeight
+MethodInvocation:isIdent
+MethodInvocation:setWidth
+MethodInvocation:setHeight
+Method-name:isUseLetterSize
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getDefault
+MethodInvocation:getCountry
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:resolveAutoPageWidth
+Method-returnType:int
+Method-parameters:[CssContext cssCtx]
+MethodInvocation:isUseLetterSize
+MethodInvocation:calcFloatProportionalValue
+MethodInvocation:getStyle
+MethodInvocation:calcFloatProportionalValue
+MethodInvocation:getStyle
+Method-name:resolveAutoPageHeight
+Method-returnType:int
+Method-parameters:[CssContext cssCtx]
+MethodInvocation:isUseLetterSize
+MethodInvocation:calcFloatProportionalValue
+MethodInvocation:getStyle
+MethodInvocation:calcFloatProportionalValue
+MethodInvocation:getStyle
+Method-name:getContentHeight
+Method-returnType:int
+Method-parameters:[CssContext cssCtx]
+MethodInvocation:getHeight
+MethodInvocation:getMarginBorderPadding
+MethodInvocation:getMarginBorderPadding
+Method-name:getContentWidth
+Method-returnType:int
+Method-parameters:[CssContext cssCtx]
+MethodInvocation:getWidth
+MethodInvocation:getMarginBorderPadding
+MethodInvocation:getMarginBorderPadding
+Method-name:getStyle
+Method-returnType:CalculatedStyle
+Method-parameters:[]
+Method-name:setStyle
+Method-returnType:void
+Method-parameters:[CalculatedStyle style]
+Method-name:getBottom
+Method-returnType:int
+Method-parameters:[]
+Method-name:getTop
+Method-returnType:int
+Method-parameters:[]
+Method-name:setTopAndBottom
+Method-returnType:void
+Method-parameters:[CssContext cssCtx, int top]
+MethodInvocation:getContentHeight
+Method-name:getPaintingBottom
+Method-returnType:int
+Method-parameters:[]
+Method-name:setPaintingBottom
+Method-returnType:void
+Method-parameters:[int paintingBottom]
+Method-name:getPaintingTop
+Method-returnType:int
+Method-parameters:[]
+Method-name:setPaintingTop
+Method-returnType:void
+Method-parameters:[int paintingTop]
+Method-name:getScreenPaintingBounds
+Method-returnType:Rectangle
+Method-parameters:[CssContext cssCtx, int additionalClearance]
+MethodInvocation:getPaintingTop
+MethodInvocation:getWidth
+MethodInvocation:getPaintingBottom
+MethodInvocation:getPaintingTop
+Method-name:getPrintPaintingBounds
+Method-returnType:Rectangle
+Method-parameters:[CssContext cssCtx]
+MethodInvocation:getWidth
+MethodInvocation:getHeight
+Method-name:getPagedViewClippingBounds
+Method-returnType:Rectangle
+Method-parameters:[CssContext cssCtx, int additionalClearance]
+MethodInvocation:getMarginBorderPadding
+MethodInvocation:getPaintingTop
+MethodInvocation:getMarginBorderPadding
+MethodInvocation:getContentWidth
+MethodInvocation:getContentHeight
+Method-name:getPrintClippingBounds
+Method-returnType:Rectangle
+Method-parameters:[CssContext cssCtx]
+MethodInvocation:getMarginBorderPadding
+MethodInvocation:getMarginBorderPadding
+MethodInvocation:getContentWidth
+MethodInvocation:getContentHeight
+Method-name:getMargin
+Method-returnType:RectPropertySet
+Method-parameters:[CssContext cssCtx]
+MethodInvocation:getMarginRect
+MethodInvocation:getStyle
+Method-name:getBorderEdge
+Method-returnType:Rectangle
+Method-parameters:[int left, int top, CssContext cssCtx]
+MethodInvocation:getMargin
+MethodInvocation:left
+MethodInvocation:top
+MethodInvocation:getWidth
+MethodInvocation:left
+MethodInvocation:right
+MethodInvocation:getHeight
+MethodInvocation:top
+MethodInvocation:bottom
+Method-name:paintBorder
+Method-returnType:void
+Method-parameters:[RenderingContext c, int additionalClearance, short mode]
+MethodInvocation:getPaintingTop
+MethodInvocation:paintBorder
+MethodInvocation:getOutputDevice
+MethodInvocation:getStyle
+MethodInvocation:getBorderEdge
+Method-name:paintBackground
+Method-returnType:void
+Method-parameters:[RenderingContext c, int additionalClearance, short mode]
+MethodInvocation:getScreenPaintingBounds
+MethodInvocation:getPrintPaintingBounds
+MethodInvocation:paintBackground
+MethodInvocation:getOutputDevice
+MethodInvocation:getStyle
+MethodInvocation:getBorder
+MethodInvocation:getStyle
+Method-name:paintMarginAreas
+Method-returnType:void
+Method-parameters:[RenderingContext c, int additionalClearance, short mode]
+MethodInvocation:getTable
+MethodInvocation:getPaintingPosition
+MethodInvocation:getArea
+MethodInvocation:translate
+MethodInvocation:getOutputDevice
+MethodInvocation:paint
+MethodInvocation:getLayer
+MethodInvocation:translate
+MethodInvocation:getOutputDevice
+Method-name:getPageNo
+Method-returnType:int
+Method-parameters:[]
+Method-name:setPageNo
+Method-returnType:void
+Method-parameters:[int pageNo]
+Method-name:getOuterPageWidth
+Method-returnType:int
+Method-parameters:[]
+Method-name:setOuterPageWidth
+Method-returnType:void
+Method-parameters:[int containingBlockWidth]
+Method-name:getMarginBorderPadding
+Method-returnType:int
+Method-parameters:[CssContext cssCtx, int which]
+MethodInvocation:getMarginBorderPadding
+MethodInvocation:getStyle
+MethodInvocation:getOuterPageWidth
+Method-name:getPageInfo
+Method-returnType:PageInfo
+Method-parameters:[]
+Method-name:setPageInfo
+Method-returnType:void
+Method-parameters:[PageInfo pageInfo]
+Method-name:getMetadata
+Method-returnType:Element
+Method-parameters:[]
+Method-name:layout
+Method-returnType:void
+Method-parameters:[LayoutContext c]
+MethodInvocation:setPage
+MethodInvocation:retrievePageMetadata
+MethodInvocation:layoutMarginAreas
+Method-name:retrievePageMetadata
+Method-returnType:void
+Method-parameters:[LayoutContext c]
+MethodInvocation:getXMPPropertyList
+MethodInvocation:getPageInfo
+MethodInvocation:size
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getCSSName
+MethodInvocation:getValue
+MethodInvocation:getValues
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getPropertyValueType
+MethodInvocation:getFunction
+MethodInvocation:isElementFunction
+MethodInvocation:getRunningBlock
+MethodInvocation:getElement
+Method-name:layoutMarginAreas
+Method-returnType:void
+Method-parameters:[LayoutContext c]
+MethodInvocation:getMargin
+MethodInvocation:getLayoutDimension
+MethodInvocation:createMarginTable
+MethodInvocation:getMarginBoxNames
+MethodInvocation:getHeight
+MethodInvocation:getDirection
+MethodInvocation:setContainingBlock
+MethodInvocation:getWidth
+MethodInvocation:getHeight
+MethodInvocation:setNoPageBreak
+MethodInvocation:reInit
+MethodInvocation:pushLayer
+MethodInvocation:addPage
+MethodInvocation:getRootLayer
+MethodInvocation:layout
+MethodInvocation:popLayer
+MethodInvocation:setNoPageBreak
+Method-name:isLeftPage
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isRightPage
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:exportLeadingText
+Method-returnType:void
+Method-parameters:[RenderingContext c, Writer writer]
+MethodInvocation:exportText
+MethodInvocation:getTable
+Method-name:exportTrailingText
+Method-returnType:void
+Method-parameters:[RenderingContext c, Writer writer]
+MethodInvocation:exportText
+MethodInvocation:getTable
+Class:PageDimensions
+Field:_width
+Field:_height
+Method-name:getHeight
+Method-returnType:int
+Method-parameters:[]
+Method-name:setHeight
+Method-returnType:void
+Method-parameters:[int height]
+Method-name:getWidth
+Method-returnType:int
+Method-parameters:[]
+Method-name:setWidth
+Method-returnType:void
+Method-parameters:[int width]
+Class:MarginAreaContainer
+Field:_area
+Field:_table
+Method-name:MarginAreaContainer
+Method-returnType:null
+Method-parameters:[MarginArea area, TableBox table]
+Method-name:getArea
+Method-returnType:MarginArea
+Method-parameters:[]
+Method-name:getTable
+Method-returnType:TableBox
+Method-parameters:[]
+Class:MarginArea
+Field:_marginBoxNames
+Field:_table
+Method-name:getLayoutDimension
+Method-returnType:Dimension
+Method-parameters:[CssContext c, PageBox page, RectPropertySet margin]
+Method-name:getPaintingPosition
+Method-returnType:Point
+Method-parameters:[RenderingContext c, PageBox page, int additionalClearance, short mode]
+Method-name:MarginArea
+Method-returnType:null
+Method-parameters:[MarginBoxName marginBoxName]
+Method-name:MarginArea
+Method-returnType:null
+Method-parameters:[MarginBoxName[] marginBoxNames]
+Method-name:getTable
+Method-returnType:TableBox
+Method-parameters:[]
+Method-name:setTable
+Method-returnType:void
+Method-parameters:[TableBox table]
+Method-name:getMarginBoxNames
+Method-returnType:MarginBoxName[]
+Method-parameters:[]
+Method-name:getDirection
+Method-returnType:int
+Method-parameters:[]
+Class:TopLeftCorner
+Method-name:TopLeftCorner
+Method-returnType:null
+Method-parameters:[]
+Method-name:getLayoutDimension
+Method-returnType:Dimension
+Method-parameters:[CssContext c, PageBox page, RectPropertySet margin]
+MethodInvocation:left
+MethodInvocation:top
+Method-name:getPaintingPosition
+Method-returnType:Point
+Method-parameters:[RenderingContext c, PageBox page, int additionalClearance, short mode]
+MethodInvocation:getPaintingTop
+Class:TopRightCorner
+Method-name:TopRightCorner
+Method-returnType:null
+Method-parameters:[]
+Method-name:getLayoutDimension
+Method-returnType:Dimension
+Method-parameters:[CssContext c, PageBox page, RectPropertySet margin]
+MethodInvocation:right
+MethodInvocation:top
+Method-name:getPaintingPosition
+Method-returnType:Point
+Method-parameters:[RenderingContext c, PageBox page, int additionalClearance, short mode]
+MethodInvocation:getWidth
+MethodInvocation:right
+MethodInvocation:getMargin
+MethodInvocation:getPaintingTop
+Class:BottomRightCorner
+Method-name:BottomRightCorner
+Method-returnType:null
+Method-parameters:[]
+Method-name:getLayoutDimension
+Method-returnType:Dimension
+Method-parameters:[CssContext c, PageBox page, RectPropertySet margin]
+MethodInvocation:right
+MethodInvocation:bottom
+Method-name:getPaintingPosition
+Method-returnType:Point
+Method-parameters:[RenderingContext c, PageBox page, int additionalClearance, short mode]
+MethodInvocation:getWidth
+MethodInvocation:right
+MethodInvocation:getMargin
+MethodInvocation:getPaintingBottom
+MethodInvocation:bottom
+MethodInvocation:getMargin
+MethodInvocation:getHeight
+MethodInvocation:bottom
+MethodInvocation:getMargin
+Class:BottomLeftCorner
+Method-name:BottomLeftCorner
+Method-returnType:null
+Method-parameters:[]
+Method-name:getLayoutDimension
+Method-returnType:Dimension
+Method-parameters:[CssContext c, PageBox page, RectPropertySet margin]
+MethodInvocation:left
+MethodInvocation:bottom
+Method-name:getPaintingPosition
+Method-returnType:Point
+Method-parameters:[RenderingContext c, PageBox page, int additionalClearance, short mode]
+MethodInvocation:getPaintingBottom
+MethodInvocation:bottom
+MethodInvocation:getMargin
+MethodInvocation:getHeight
+MethodInvocation:bottom
+MethodInvocation:getMargin
+Class:LeftMarginArea
+Method-name:LeftMarginArea
+Method-returnType:null
+Method-parameters:[]
+Method-name:getLayoutDimension
+Method-returnType:Dimension
+Method-parameters:[CssContext c, PageBox page, RectPropertySet margin]
+MethodInvocation:left
+MethodInvocation:getContentHeight
+Method-name:getPaintingPosition
+Method-returnType:Point
+Method-parameters:[RenderingContext c, PageBox page, int additionalClearance, short mode]
+MethodInvocation:getPaintingTop
+MethodInvocation:top
+MethodInvocation:getMargin
+MethodInvocation:top
+MethodInvocation:getMargin
+Method-name:getDirection
+Method-returnType:int
+Method-parameters:[]
+Class:RightMarginArea
+Method-name:RightMarginArea
+Method-returnType:null
+Method-parameters:[]
+Method-name:getLayoutDimension
+Method-returnType:Dimension
+Method-parameters:[CssContext c, PageBox page, RectPropertySet margin]
+MethodInvocation:left
+MethodInvocation:getContentHeight
+Method-name:getPaintingPosition
+Method-returnType:Point
+Method-parameters:[RenderingContext c, PageBox page, int additionalClearance, short mode]
+MethodInvocation:getWidth
+MethodInvocation:right
+MethodInvocation:getMargin
+MethodInvocation:getPaintingTop
+MethodInvocation:top
+MethodInvocation:getMargin
+MethodInvocation:top
+MethodInvocation:getMargin
+Method-name:getDirection
+Method-returnType:int
+Method-parameters:[]
+Class:TopMarginArea
+Method-name:TopMarginArea
+Method-returnType:null
+Method-parameters:[]
+Method-name:getLayoutDimension
+Method-returnType:Dimension
+Method-parameters:[CssContext c, PageBox page, RectPropertySet margin]
+MethodInvocation:getContentWidth
+MethodInvocation:top
+Method-name:getPaintingPosition
+Method-returnType:Point
+Method-parameters:[RenderingContext c, PageBox page, int additionalClearance, short mode]
+MethodInvocation:left
+MethodInvocation:getMargin
+MethodInvocation:getPaintingTop
+Class:BottomMarginArea
+Method-name:BottomMarginArea
+Method-returnType:null
+Method-parameters:[]
+Method-name:getLayoutDimension
+Method-returnType:Dimension
+Method-parameters:[CssContext c, PageBox page, RectPropertySet margin]
+MethodInvocation:getContentWidth
+MethodInvocation:bottom
+Method-name:getPaintingPosition
+Method-returnType:Point
+Method-parameters:[RenderingContext c, PageBox page, int additionalClearance, short mode]
+MethodInvocation:left
+MethodInvocation:getMargin
+MethodInvocation:getPaintingBottom
+MethodInvocation:bottom
+MethodInvocation:getMargin
+MethodInvocation:getHeight
+MethodInvocation:bottom
+MethodInvocation:getMargin

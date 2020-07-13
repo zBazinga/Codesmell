@@ -1,0 +1,67 @@
+Class:FilesetOutputSymlink
+Method-name:createForTesting
+Method-returnType:FilesetOutputSymlink
+Method-parameters:[PathFragment name, PathFragment target, PathFragment execRoot]
+MethodInvocation:create
+Method-name:createAlreadyRelativizedForTesting
+Method-returnType:FilesetOutputSymlink
+Method-parameters:[PathFragment name, PathFragment target, boolean isRelativeToExecRoot]
+MethodInvocation:createAlreadyRelativized
+Method-name:create
+Method-returnType:FilesetOutputSymlink
+Method-parameters:[PathFragment name, PathFragment target, HasDigest metadata, boolean isGeneratedTarget, PathFragment execRoot]
+MethodInvocation:startsWith
+MethodInvocation:relativeTo
+MethodInvocation:createAlreadyRelativized
+Method-name:createAlreadyRelativized
+Method-returnType:FilesetOutputSymlink
+Method-parameters:[PathFragment name, PathFragment target, HasDigest metadata, boolean isGeneratedTarget, boolean isRelativeToExecRoot]
+Method-name:getName
+Method-returnType:PathFragment
+Method-parameters:[]
+Method-name:getTargetPath
+Method-returnType:PathFragment
+Method-parameters:[]
+Method-name:getMetadata
+Method-returnType:HasDigest
+Method-parameters:[]
+Method-name:isGeneratedTarget
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isRelativeToExecRoot
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:reconstituteTargetPath
+Method-returnType:PathFragment
+Method-parameters:[PathFragment execRoot]
+MethodInvocation:isRelativeToExecRoot
+MethodInvocation:getRelative
+MethodInvocation:getTargetPath
+MethodInvocation:getTargetPath
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getMetadata
+MethodInvocation:format
+MethodInvocation:getPathString
+MethodInvocation:getName
+MethodInvocation:getPathString
+MethodInvocation:getTargetPath
+MethodInvocation:format
+MethodInvocation:getPathString
+MethodInvocation:getName
+MethodInvocation:getPathString
+MethodInvocation:getTargetPath
+MethodInvocation:getMetadata
+Method-name:getFingerprint
+Method-returnType:BigInteger
+Method-parameters:[]
+MethodInvocation:getFingerprint
+MethodInvocation:addBoolean
+MethodInvocation:addBoolean
+MethodInvocation:addPath
+MethodInvocation:addPath
+MethodInvocation:getName
+MethodInvocation:getTargetPath
+MethodInvocation:isGeneratedTarget
+MethodInvocation:isRelativeToExecRoot

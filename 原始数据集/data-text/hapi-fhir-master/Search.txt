@@ -1,0 +1,203 @@
+Class:Search
+Field:UUID_COLUMN_LENGTH
+Field:MAX_SEARCH_QUERY_STRING
+Field:FAILURE_MESSAGE_LENGTH
+Field:serialVersionUID
+Field:ourLog
+MethodInvocation:getLogger
+Field:myCreated
+Field:myDeleted
+Field:myFailureCode
+Field:myFailureMessage
+Field:myExpiryOrNull
+Field:myId
+Field:myIncludes
+Field:myLastUpdatedHigh
+Field:myLastUpdatedLow
+Field:myNumFound
+Field:myNumBlocked
+Field:myPreferredPageSize
+Field:myResourceId
+Field:myResourceType
+Field:mySearchQueryString
+Field:mySearchQueryStringHash
+Field:mySearchType
+Field:myStatus
+Field:myTotalCount
+Field:myUuid
+Field:myVersion
+Field:mySearchParameterMap
+Method-name:Search
+Method-returnType:null
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+Method-name:getNumBlocked
+Method-returnType:int
+Method-parameters:[]
+Method-name:setNumBlocked
+Method-returnType:void
+Method-parameters:[int theNumBlocked]
+Method-name:getExpiryOrNull
+Method-returnType:Date
+Method-parameters:[]
+Method-name:setExpiryOrNull
+Method-returnType:void
+Method-parameters:[Date theExpiryOrNull]
+Method-name:getDeleted
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setDeleted
+Method-returnType:void
+Method-parameters:[Boolean theDeleted]
+Method-name:getCreated
+Method-returnType:Date
+Method-parameters:[]
+Method-name:setCreated
+Method-returnType:void
+Method-parameters:[Date theCreated]
+Method-name:getFailureCode
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setFailureCode
+Method-returnType:void
+Method-parameters:[Integer theFailureCode]
+Method-name:getFailureMessage
+Method-returnType:String
+Method-parameters:[]
+Method-name:setFailureMessage
+Method-returnType:void
+Method-parameters:[String theFailureMessage]
+MethodInvocation:left
+MethodInvocation:getProperty
+Method-name:getId
+Method-returnType:Long
+Method-parameters:[]
+Method-name:getIncludes
+Method-returnType:Collection<SearchInclude>
+Method-parameters:[]
+Method-name:getLastUpdated
+Method-returnType:DateRangeParam
+Method-parameters:[]
+Method-name:setLastUpdated
+Method-returnType:void
+Method-parameters:[DateRangeParam theLastUpdated]
+MethodInvocation:getLowerBoundAsInstant
+MethodInvocation:getUpperBoundAsInstant
+Method-name:getLastUpdatedHigh
+Method-returnType:Date
+Method-parameters:[]
+Method-name:getLastUpdatedLow
+Method-returnType:Date
+Method-parameters:[]
+Method-name:getNumFound
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:trace
+Method-name:setNumFound
+Method-returnType:void
+Method-parameters:[int theNumFound]
+MethodInvocation:trace
+Method-name:getPreferredPageSize
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setPreferredPageSize
+Method-returnType:void
+Method-parameters:[Integer thePreferredPageSize]
+Method-name:getResourceId
+Method-returnType:Long
+Method-parameters:[]
+Method-name:setResourceId
+Method-returnType:void
+Method-parameters:[Long theResourceId]
+Method-name:getResourceType
+Method-returnType:String
+Method-parameters:[]
+Method-name:setResourceType
+Method-returnType:void
+Method-parameters:[String theResourceType]
+Method-name:getSearchQueryString
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSearchQueryString
+Method-returnType:void
+Method-parameters:[String theSearchQueryString]
+MethodInvocation:length
+MethodInvocation:toString
+MethodInvocation:randomUUID
+MethodInvocation:hashCode
+Method-name:getSearchType
+Method-returnType:SearchTypeEnum
+Method-parameters:[]
+Method-name:setSearchType
+Method-returnType:void
+Method-parameters:[SearchTypeEnum theSearchType]
+Method-name:getStatus
+Method-returnType:SearchStatusEnum
+Method-parameters:[]
+MethodInvocation:trace
+Method-name:setStatus
+Method-returnType:void
+Method-parameters:[SearchStatusEnum theStatus]
+MethodInvocation:trace
+Method-name:getTotalCount
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setTotalCount
+Method-returnType:void
+Method-parameters:[Integer theTotalCount]
+Method-name:getUuid
+Method-returnType:String
+Method-parameters:[]
+Method-name:setUuid
+Method-returnType:void
+Method-parameters:[String theUuid]
+Method-name:setLastUpdated
+Method-returnType:void
+Method-parameters:[Date theLowerBound, Date theUpperBound]
+Method-name:setSearchQueryStringHash
+Method-returnType:void
+Method-parameters:[Integer theSearchQueryStringHash]
+Method-name:toIncList
+Method-returnType:Set<Include>
+Method-parameters:[boolean theWantReverse]
+MethodInvocation:getIncludes
+MethodInvocation:isReverse
+MethodInvocation:add
+MethodInvocation:getInclude
+MethodInvocation:isRecurse
+MethodInvocation:unmodifiableSet
+Method-name:toIncludesList
+Method-returnType:Set<Include>
+Method-parameters:[]
+MethodInvocation:toIncList
+Method-name:toRevIncludesList
+Method-returnType:Set<Include>
+Method-parameters:[]
+MethodInvocation:toIncList
+Method-name:getVersion
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:getSearchParameterMap
+Method-returnType:Optional<SearchParameterMap>
+Method-parameters:[]
+MethodInvocation:map
+MethodInvocation:ofNullable
+MethodInvocation:deserialize
+Method-name:setSearchParameterMap
+Method-returnType:void
+Method-parameters:[SearchParameterMap theSearchParameterMap]
+MethodInvocation:serialize
+Method-name:setCannotBeReused
+Method-returnType:void
+Method-parameters:[]

@@ -1,0 +1,76 @@
+Class:Page
+Field:serialVersionUID
+Field:DEFAULT_PAGE_SIZE
+Field:pageNumber
+Field:pageSize
+Field:orders
+Method-name:Page
+Method-returnType:null
+Method-parameters:[]
+Method-name:Page
+Method-returnType:null
+Method-parameters:[int pageNumber, int pageSize]
+FieldAccess:pageNumber
+MethodInvocation:max
+FieldAccess:pageSize
+Method-name:Page
+Method-returnType:null
+Method-parameters:[int pageNumber, int pageSize, Order order]
+FieldAccess:orders
+Method-name:getPageNumber
+Method-returnType:int
+Method-parameters:[]
+Method-name:setPageNumber
+Method-returnType:void
+Method-parameters:[int pageNumber]
+FieldAccess:pageNumber
+MethodInvocation:max
+Method-name:getNumPerPage
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getPageSize
+Method-name:setNumPerPage
+Method-returnType:void
+Method-parameters:[int pageSize]
+MethodInvocation:setPageSize
+Method-name:getPageSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:setPageSize
+Method-returnType:void
+Method-parameters:[int pageSize]
+FieldAccess:pageSize
+Method-name:getOrders
+Method-returnType:Order[]
+Method-parameters:[]
+FieldAccess:orders
+Method-name:setOrder
+Method-returnType:void
+Method-parameters:[Order... orders]
+FieldAccess:orders
+Method-name:addOrder
+Method-returnType:void
+Method-parameters:[Order... orders]
+FieldAccess:orders
+MethodInvocation:append
+FieldAccess:orders
+Method-name:getStartPosition
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getStart
+FieldAccess:pageNumber
+FieldAccess:pageSize
+Method-name:getEndPosition
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getEnd
+FieldAccess:pageNumber
+FieldAccess:pageSize
+Method-name:getStartEnd
+Method-returnType:int[]
+Method-parameters:[]
+MethodInvocation:transToStartEnd
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString

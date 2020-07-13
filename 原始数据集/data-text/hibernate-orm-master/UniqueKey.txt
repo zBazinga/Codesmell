@@ -1,0 +1,37 @@
+Class:UniqueKey
+Field:columnOrderMap
+Method-name:sqlConstraintString
+Method-returnType:String
+Method-parameters:[Dialect dialect, String constraintName, String defaultCatalog, String defaultSchema]
+Method-name:sqlCreateString
+Method-returnType:String
+Method-parameters:[Dialect dialect, Mapping p, String defaultCatalog, String defaultSchema]
+Method-name:sqlDropString
+Method-returnType:String
+Method-parameters:[Dialect dialect, String defaultCatalog, String defaultSchema]
+Method-name:addColumn
+Method-returnType:void
+Method-parameters:[Column column, String order]
+MethodInvocation:addColumn
+MethodInvocation:isNotEmpty
+MethodInvocation:put
+Method-name:getColumnOrderMap
+Method-returnType:Map<Column,String>
+Method-parameters:[]
+Method-name:generatedConstraintNamePrefix
+Method-returnType:String
+Method-parameters:[]
+Method-name:getExportIdentifier
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:qualify
+MethodInvocation:getExportIdentifier
+MethodInvocation:getTable
+MethodInvocation:getName
+Method-name:hasNullable
+Method-returnType:boolean
+Method-parameters:[DB2UniqueDelegate db2UniqueDelegate]
+MethodInvocation:columnIterator
+MethodInvocation:hasNext
+MethodInvocation:isNullable
+MethodInvocation:next

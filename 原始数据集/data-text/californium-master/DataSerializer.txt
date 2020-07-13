@@ -1,0 +1,80 @@
+Class:DataSerializer
+Method-name:getByteArray
+Method-returnType:byte[]
+Method-parameters:[final Message message]
+MethodInvocation:getRawCode
+MethodInvocation:getType
+MethodInvocation:isEmpty
+MethodInvocation:getToken
+MethodInvocation:getPayloadSize
+MethodInvocation:getType
+MethodInvocation:getToken
+MethodInvocation:getMID
+MethodInvocation:serializeHeader
+MethodInvocation:writeCurrentByte
+MethodInvocation:serializeOptionsAndPayload
+MethodInvocation:getOptions
+MethodInvocation:getPayload
+MethodInvocation:writeCurrentByte
+MethodInvocation:getType
+MethodInvocation:getToken
+MethodInvocation:getRawCode
+MethodInvocation:getMID
+MethodInvocation:size
+MethodInvocation:serializeHeader
+MethodInvocation:writeCurrentByte
+MethodInvocation:write
+MethodInvocation:toByteArray
+Method-name:serializeRequest
+Method-returnType:RawData
+Method-parameters:[final Request request]
+MethodInvocation:serializeRequest
+Method-name:serializeResponse
+Method-returnType:RawData
+Method-parameters:[final Response response]
+MethodInvocation:serializeResponse
+Method-name:serializeResponse
+Method-returnType:RawData
+Method-parameters:[final Response response, final MessageCallback outboundCallback]
+MethodInvocation:getBytes
+MethodInvocation:setBytes
+MethodInvocation:getByteArray
+MethodInvocation:outbound
+MethodInvocation:getBytes
+MethodInvocation:getEffectiveDestinationContext
+Method-name:serializeEmptyMessage
+Method-returnType:RawData
+Method-parameters:[final EmptyMessage emptyMessage]
+MethodInvocation:serializeEmptyMessage
+Method-name:serializeEmptyMessage
+Method-returnType:RawData
+Method-parameters:[final EmptyMessage emptyMessage, final MessageCallback outboundCallback]
+MethodInvocation:getBytes
+MethodInvocation:setBytes
+MethodInvocation:getByteArray
+MethodInvocation:outbound
+MethodInvocation:getBytes
+MethodInvocation:getEffectiveDestinationContext
+Method-name:serializeHeader
+Method-returnType:void
+Method-parameters:[DatagramWriter writer, MessageHeader header]
+Method-name:serializeOptionsAndPayload
+Method-returnType:void
+Method-parameters:[DatagramWriter writer, final OptionSet optionSet, final byte[] payload]
+MethodInvocation:asSortedList
+MethodInvocation:getValue
+MethodInvocation:getNumber
+MethodInvocation:getOptionNibble
+MethodInvocation:write
+MethodInvocation:getOptionNibble
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:writeBytes
+MethodInvocation:writeByte
+MethodInvocation:writeBytes
+Method-name:getOptionNibble
+Method-returnType:int
+Method-parameters:[final int optionValue]

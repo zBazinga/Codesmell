@@ -1,0 +1,231 @@
+Class:MetadataSources
+Field:LOG
+MethodInvocation:messageLogger
+Field:serviceRegistry
+Field:xmlMappingBinderAccess
+Field:xmlBindings
+Field:annotatedClasses
+Field:annotatedClassNames
+Field:annotatedPackages
+Method-name:MetadataSources
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:build
+Method-name:MetadataSources
+Method-returnType:null
+Method-parameters:[ServiceRegistry serviceRegistry]
+MethodInvocation:isExpectedServiceRegistryType
+MethodInvocation:isDebugEnabled
+MethodInvocation:debugf
+MethodInvocation:getName
+MethodInvocation:getClass
+FieldAccess:serviceRegistry
+Method-name:isExpectedServiceRegistryType
+Method-returnType:boolean
+Method-parameters:[ServiceRegistry serviceRegistry]
+MethodInvocation:isInstance
+MethodInvocation:isInstance
+Method-name:getXmlMappingBinderAccess
+Method-returnType:XmlMappingBinderAccess
+Method-parameters:[]
+Method-name:getXmlBindings
+Method-returnType:List<Binding>
+Method-parameters:[]
+MethodInvocation:emptyList
+Method-name:getAnnotatedPackages
+Method-returnType:Collection<String>
+Method-parameters:[]
+MethodInvocation:emptySet
+Method-name:getAnnotatedClasses
+Method-returnType:Collection<Class<?>>
+Method-parameters:[]
+MethodInvocation:emptySet
+Method-name:getAnnotatedClassNames
+Method-returnType:Collection<String>
+Method-parameters:[]
+MethodInvocation:emptySet
+Method-name:getServiceRegistry
+Method-returnType:ServiceRegistry
+Method-parameters:[]
+Method-name:getMetadataBuilder
+Method-returnType:MetadataBuilder
+Method-parameters:[]
+MethodInvocation:getCustomBuilderOrDefault
+Method-name:getMetadataBuilder
+Method-returnType:MetadataBuilder
+Method-parameters:[StandardServiceRegistry serviceRegistry]
+MethodInvocation:getCustomBuilderOrDefault
+Method-name:getCustomBuilderOrDefault
+Method-returnType:MetadataBuilder
+Method-parameters:[MetadataBuilderImpl defaultBuilder]
+MethodInvocation:getService
+MethodInvocation:loadJavaServices
+MethodInvocation:getMetadataBuilder
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:size
+MethodInvocation:join
+Method-name:buildMetadata
+Method-returnType:Metadata
+Method-parameters:[]
+MethodInvocation:build
+MethodInvocation:getMetadataBuilder
+Method-name:buildMetadata
+Method-returnType:Metadata
+Method-parameters:[StandardServiceRegistry serviceRegistry]
+MethodInvocation:build
+MethodInvocation:getMetadataBuilder
+Method-name:addAnnotatedClass
+Method-returnType:MetadataSources
+Method-parameters:[Class annotatedClass]
+MethodInvocation:add
+Method-name:addAnnotatedClassName
+Method-returnType:MetadataSources
+Method-parameters:[String annotatedClassName]
+MethodInvocation:add
+Method-name:addPackage
+Method-returnType:MetadataSources
+Method-parameters:[String packageName]
+MethodInvocation:endsWith
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:addPackageInternal
+Method-name:addPackageInternal
+Method-returnType:void
+Method-parameters:[String packageName]
+MethodInvocation:add
+Method-name:addPackage
+Method-returnType:MetadataSources
+Method-parameters:[Package packageRef]
+MethodInvocation:addPackageInternal
+MethodInvocation:getName
+Method-name:addClass
+Method-returnType:MetadataSources
+Method-parameters:[Class entityClass]
+MethodInvocation:isDebugEnabled
+MethodInvocation:debugf
+MethodInvocation:getName
+MethodInvocation:replace
+MethodInvocation:getName
+MethodInvocation:addResource
+Method-name:addResource
+Method-returnType:MetadataSources
+Method-parameters:[String name]
+MethodInvocation:add
+MethodInvocation:getXmlBindingsForWrite
+MethodInvocation:bind
+MethodInvocation:getXmlMappingBinderAccess
+Method-name:addFile
+Method-returnType:MetadataSources
+Method-parameters:[String path]
+MethodInvocation:addFile
+Method-name:addFile
+Method-returnType:MetadataSources
+Method-parameters:[File file]
+MethodInvocation:add
+MethodInvocation:getXmlBindingsForWrite
+MethodInvocation:bind
+MethodInvocation:getXmlMappingBinderAccess
+Method-name:addCacheableFile
+Method-returnType:MetadataSources
+Method-parameters:[String path]
+MethodInvocation:addCacheableFile
+Method-name:addCacheableFile
+Method-returnType:void
+Method-parameters:[Origin origin, File file]
+MethodInvocation:add
+MethodInvocation:getXmlBindingsForWrite
+MethodInvocation:doBind
+MethodInvocation:getMappingBinder
+MethodInvocation:getXmlMappingBinderAccess
+Method-name:addCacheableFile
+Method-returnType:MetadataSources
+Method-parameters:[File file]
+MethodInvocation:getName
+MethodInvocation:addCacheableFile
+Method-name:addCacheableFileStrictly
+Method-returnType:MetadataSources
+Method-parameters:[File file]
+MethodInvocation:getAbsolutePath
+MethodInvocation:add
+MethodInvocation:getXmlBindingsForWrite
+MethodInvocation:doBind
+MethodInvocation:getMappingBinder
+MethodInvocation:getXmlMappingBinderAccess
+Method-name:addInputStream
+Method-returnType:MetadataSources
+Method-parameters:[InputStreamAccess xmlInputStreamAccess]
+MethodInvocation:add
+MethodInvocation:getXmlBindingsForWrite
+MethodInvocation:bind
+MethodInvocation:getXmlMappingBinderAccess
+Method-name:addInputStream
+Method-returnType:MetadataSources
+Method-parameters:[InputStream xmlInputStream]
+MethodInvocation:add
+MethodInvocation:getXmlBindingsForWrite
+MethodInvocation:bind
+MethodInvocation:getXmlMappingBinderAccess
+Method-name:addURL
+Method-returnType:MetadataSources
+Method-parameters:[URL url]
+MethodInvocation:add
+MethodInvocation:getXmlBindingsForWrite
+MethodInvocation:bind
+MethodInvocation:getXmlMappingBinderAccess
+Method-name:addDocument
+Method-returnType:MetadataSources
+Method-parameters:[Document document]
+MethodInvocation:add
+MethodInvocation:getXmlBindingsForWrite
+MethodInvocation:doBind
+MethodInvocation:getMappingBinder
+MethodInvocation:getXmlMappingBinderAccess
+Method-name:addJar
+Method-returnType:MetadataSources
+Method-parameters:[File jar]
+MethodInvocation:isDebugEnabled
+MethodInvocation:debugf
+MethodInvocation:getName
+MethodInvocation:getAbsolutePath
+MethodInvocation:isTraceEnabled
+MethodInvocation:entries
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:endsWith
+MethodInvocation:getName
+MethodInvocation:tracef
+MethodInvocation:getName
+MethodInvocation:add
+MethodInvocation:getXmlBindingsForWrite
+MethodInvocation:doBind
+MethodInvocation:getMappingBinder
+MethodInvocation:getXmlMappingBinderAccess
+MethodInvocation:close
+Method-name:getXmlBindingsForWrite
+Method-returnType:List
+Method-parameters:[]
+Method-name:addDirectory
+Method-returnType:MetadataSources
+Method-parameters:[File dir]
+MethodInvocation:listFiles
+MethodInvocation:isDirectory
+MethodInvocation:addDirectory
+MethodInvocation:endsWith
+MethodInvocation:getName
+MethodInvocation:addFile
+Method-name:apply
+Method-returnType:void
+Method-parameters:[MappingReference mappingReference]
+MethodInvocation:getType
+MethodInvocation:addResource
+MethodInvocation:getReference
+MethodInvocation:addAnnotatedClassName
+MethodInvocation:getReference
+MethodInvocation:addFile
+MethodInvocation:getReference
+MethodInvocation:addPackage
+MethodInvocation:getReference
+MethodInvocation:addJar
+MethodInvocation:getReference

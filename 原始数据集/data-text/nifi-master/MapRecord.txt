@@ -1,0 +1,313 @@
+Class:MapRecord
+Field:schema
+Field:values
+Field:serializedForm
+Field:checkTypes
+Field:dropUnknownFields
+Field:inactiveFields
+Method-name:MapRecord
+Method-returnType:null
+Method-parameters:[final RecordSchema schema, final Map<String,Object> values]
+Method-name:MapRecord
+Method-returnType:null
+Method-parameters:[final RecordSchema schema, final Map<String,Object> values, final boolean checkTypes, final boolean dropUnknownFields]
+MethodInvocation:requireNonNull
+FieldAccess:schema
+MethodInvocation:requireNonNull
+FieldAccess:values
+MethodInvocation:checkTypes
+FieldAccess:serializedForm
+MethodInvocation:empty
+FieldAccess:checkTypes
+FieldAccess:dropUnknownFields
+Method-name:MapRecord
+Method-returnType:null
+Method-parameters:[final RecordSchema schema, final Map<String,Object> values, final SerializedForm serializedForm]
+Method-name:MapRecord
+Method-returnType:null
+Method-parameters:[final RecordSchema schema, final Map<String,Object> values, final SerializedForm serializedForm, final boolean checkTypes, final boolean dropUnknownFields]
+MethodInvocation:requireNonNull
+FieldAccess:schema
+MethodInvocation:requireNonNull
+FieldAccess:values
+MethodInvocation:checkTypes
+FieldAccess:serializedForm
+MethodInvocation:ofNullable
+FieldAccess:checkTypes
+FieldAccess:dropUnknownFields
+Method-name:checkTypes
+Method-returnType:Map<String,Object>
+Method-parameters:[final Map<String,Object> values, final RecordSchema schema]
+MethodInvocation:getFields
+MethodInvocation:getExplicitValue
+MethodInvocation:isNullable
+MethodInvocation:getDefaultValue
+MethodInvocation:getFieldName
+MethodInvocation:isCompatibleDataType
+MethodInvocation:getDataType
+MethodInvocation:getFieldName
+MethodInvocation:getDataType
+Method-name:isDropUnknownFields
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isTypeChecked
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getSchema
+Method-returnType:RecordSchema
+Method-parameters:[]
+Method-name:getValues
+Method-returnType:Object[]
+Method-parameters:[]
+MethodInvocation:getFieldCount
+MethodInvocation:getFields
+MethodInvocation:getExplicitValue
+MethodInvocation:getDefaultValue
+Method-name:getValue
+Method-returnType:Object
+Method-parameters:[final String fieldName]
+MethodInvocation:getField
+MethodInvocation:isPresent
+MethodInvocation:getValue
+MethodInvocation:get
+MethodInvocation:get
+FieldAccess:values
+Method-name:getValue
+Method-returnType:Object
+Method-parameters:[final RecordField field]
+MethodInvocation:getExplicitValue
+MethodInvocation:resolveField
+MethodInvocation:isPresent
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:getExplicitValue
+MethodInvocation:get
+MethodInvocation:getDefaultValue
+MethodInvocation:getDefaultValue
+MethodInvocation:get
+Method-name:getExplicitValue
+Method-returnType:Object
+Method-parameters:[final RecordField field]
+MethodInvocation:getExplicitValue
+FieldAccess:values
+Method-name:getExplicitValue
+Method-returnType:Object
+Method-parameters:[final RecordField field, final Map<String,Object> values]
+MethodInvocation:getFieldName
+MethodInvocation:get
+MethodInvocation:getAliases
+MethodInvocation:get
+Method-name:getAsString
+Method-returnType:String
+Method-parameters:[final String fieldName]
+MethodInvocation:getDataType
+MethodInvocation:isPresent
+MethodInvocation:convertToString
+MethodInvocation:getValue
+MethodInvocation:getFormat
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:getValue
+Method-name:getAsString
+Method-returnType:String
+Method-parameters:[final String fieldName, final String format]
+MethodInvocation:convertToString
+MethodInvocation:getValue
+Method-name:getAsString
+Method-returnType:String
+Method-parameters:[final RecordField field, final String format]
+MethodInvocation:convertToString
+MethodInvocation:getValue
+Method-name:convertToString
+Method-returnType:String
+Method-parameters:[final Object value, final String format]
+MethodInvocation:toString
+Method-name:getAsLong
+Method-returnType:Long
+Method-parameters:[final String fieldName]
+MethodInvocation:toLong
+MethodInvocation:getValue
+Method-name:getAsInt
+Method-returnType:Integer
+Method-parameters:[final String fieldName]
+MethodInvocation:toInteger
+MethodInvocation:getValue
+Method-name:getAsDouble
+Method-returnType:Double
+Method-parameters:[final String fieldName]
+MethodInvocation:toDouble
+MethodInvocation:getValue
+Method-name:getAsFloat
+Method-returnType:Float
+Method-parameters:[final String fieldName]
+MethodInvocation:toFloat
+MethodInvocation:getValue
+Method-name:getAsRecord
+Method-returnType:Record
+Method-parameters:[String fieldName, final RecordSchema schema]
+MethodInvocation:toRecord
+MethodInvocation:getValue
+Method-name:getAsBoolean
+Method-returnType:Boolean
+Method-parameters:[final String fieldName]
+MethodInvocation:toBoolean
+MethodInvocation:getValue
+Method-name:getAsDate
+Method-returnType:Date
+Method-parameters:[final String fieldName, final String format]
+MethodInvocation:toDate
+MethodInvocation:getValue
+MethodInvocation:getDateFormat
+Method-name:getAsArray
+Method-returnType:Object[]
+Method-parameters:[final String fieldName]
+MethodInvocation:toArray
+MethodInvocation:getValue
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[final Object obj]
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getSerializedForm
+Method-returnType:Optional<SerializedForm>
+Method-parameters:[]
+Method-name:toMap
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+MethodInvocation:unmodifiableMap
+Method-name:setValue
+Method-returnType:void
+Method-parameters:[final RecordField field, final Object value]
+MethodInvocation:setValueAndGetField
+MethodInvocation:getFieldName
+MethodInvocation:isPresent
+MethodInvocation:add
+Method-name:setValue
+Method-returnType:void
+Method-parameters:[final String fieldName, final Object value]
+MethodInvocation:setValueAndGetField
+Method-name:setValueAndGetField
+Method-returnType:Optional<RecordField>
+Method-parameters:[final String fieldName, final Object value]
+MethodInvocation:getField
+MethodInvocation:getSchema
+MethodInvocation:isPresent
+MethodInvocation:put
+MethodInvocation:equals
+MethodInvocation:empty
+MethodInvocation:get
+MethodInvocation:isTypeChecked
+MethodInvocation:convertType
+MethodInvocation:getDataType
+MethodInvocation:put
+MethodInvocation:getFieldName
+MethodInvocation:equals
+MethodInvocation:empty
+Method-name:setArrayValue
+Method-returnType:void
+Method-parameters:[final String fieldName, final int arrayIndex, final Object value]
+MethodInvocation:getField
+MethodInvocation:getSchema
+MethodInvocation:isPresent
+MethodInvocation:get
+MethodInvocation:getDataType
+MethodInvocation:getFieldType
+MethodInvocation:get
+MethodInvocation:getFieldName
+MethodInvocation:getElementType
+MethodInvocation:convertType
+MethodInvocation:equals
+MethodInvocation:empty
+Method-name:setMapValue
+Method-returnType:void
+Method-parameters:[final String fieldName, final String mapKey, final Object value]
+MethodInvocation:getField
+MethodInvocation:getSchema
+MethodInvocation:isPresent
+MethodInvocation:get
+MethodInvocation:getDataType
+MethodInvocation:getFieldType
+MethodInvocation:get
+MethodInvocation:getFieldName
+MethodInvocation:getValueType
+MethodInvocation:convertType
+MethodInvocation:put
+MethodInvocation:equals
+MethodInvocation:empty
+Method-name:incorporateSchema
+Method-returnType:void
+Method-parameters:[RecordSchema other]
+FieldAccess:schema
+MethodInvocation:merge
+FieldAccess:schema
+Method-name:incorporateInactiveFields
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getFields
+MethodInvocation:getUpdatedRecordField
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:isEmpty
+MethodInvocation:contains
+MethodInvocation:add
+FieldAccess:schema
+Method-name:getUpdatedRecordField
+Method-returnType:RecordField
+Method-parameters:[final RecordField field]
+MethodInvocation:getDataType
+MethodInvocation:getFieldType
+MethodInvocation:isSimpleType
+MethodInvocation:getValue
+MethodInvocation:incorporateInactiveFields
+MethodInvocation:getChildSchema
+MethodInvocation:getSchema
+MethodInvocation:merge
+MethodInvocation:getRecordDataType
+MethodInvocation:getFieldName
+MethodInvocation:getDefaultValue
+MethodInvocation:getAliases
+MethodInvocation:isNullable
+MethodInvocation:getElementType
+MethodInvocation:getFieldType
+MethodInvocation:getChildSchema
+MethodInvocation:incorporateInactiveFields
+MethodInvocation:merge
+MethodInvocation:getSchema
+MethodInvocation:getRecordDataType
+MethodInvocation:getArrayDataType
+MethodInvocation:getFieldName
+MethodInvocation:getDefaultValue
+MethodInvocation:getAliases
+MethodInvocation:isNullable
+MethodInvocation:getPossibleSubTypes
+MethodInvocation:chooseDataType
+MethodInvocation:getFieldType
+MethodInvocation:incorporateInactiveFields
+MethodInvocation:getChildSchema
+MethodInvocation:getSchema
+MethodInvocation:merge
+MethodInvocation:getRecordDataType
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:getChoiceDataType
+MethodInvocation:getFieldName
+MethodInvocation:getDefaultValue
+MethodInvocation:getAliases
+MethodInvocation:isNullable
+Method-name:isSimpleType
+Method-returnType:boolean
+Method-parameters:[final RecordFieldType fieldType]
+Method-name:getRawFieldNames
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet

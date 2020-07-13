@@ -1,0 +1,316 @@
+Class:TColumnValue
+Field:STRUCT_DESC
+Field:BOOL_VAL_FIELD_DESC
+Field:BYTE_VAL_FIELD_DESC
+Field:I16_VAL_FIELD_DESC
+Field:I32_VAL_FIELD_DESC
+Field:I64_VAL_FIELD_DESC
+Field:DOUBLE_VAL_FIELD_DESC
+Field:STRING_VAL_FIELD_DESC
+Method-name:addToColVals
+Method-returnType:void
+Method-parameters:[TRow tRow]
+MethodInvocation:getColVals
+MethodInvocation:setColVals
+MethodInvocation:add
+MethodInvocation:getColVals
+Field:_Fields
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:TColumnValue
+Method-returnType:null
+Method-parameters:[]
+Method-name:TColumnValue
+Method-returnType:null
+Method-parameters:[_Fields setField, Object value]
+Method-name:TColumnValue
+Method-returnType:null
+Method-parameters:[TColumnValue other]
+Method-name:deepCopy
+Method-returnType:TColumnValue
+Method-parameters:[]
+Method-name:boolVal
+Method-returnType:TColumnValue
+Method-parameters:[TBoolValue value]
+MethodInvocation:setBoolVal
+Method-name:byteVal
+Method-returnType:TColumnValue
+Method-parameters:[TByteValue value]
+MethodInvocation:setByteVal
+Method-name:i16Val
+Method-returnType:TColumnValue
+Method-parameters:[TI16Value value]
+MethodInvocation:setI16Val
+Method-name:i32Val
+Method-returnType:TColumnValue
+Method-parameters:[TI32Value value]
+MethodInvocation:setI32Val
+Method-name:i64Val
+Method-returnType:TColumnValue
+Method-parameters:[TI64Value value]
+MethodInvocation:setI64Val
+Method-name:doubleVal
+Method-returnType:TColumnValue
+Method-parameters:[TDoubleValue value]
+MethodInvocation:setDoubleVal
+Method-name:stringVal
+Method-returnType:TColumnValue
+Method-parameters:[TStringValue value]
+MethodInvocation:setStringVal
+Method-name:checkType
+Method-returnType:void
+Method-parameters:[_Fields setField, Object value]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:standardSchemeReadValue
+Method-returnType:Object
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, org.apache.thrift.protocol.TField field]
+MethodInvocation:findByThriftId
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:skip
+Method-name:standardSchemeWriteValue
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:tupleSchemeReadValue
+Method-returnType:Object
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, short fieldID]
+MethodInvocation:findByThriftId
+MethodInvocation:read
+MethodInvocation:read
+MethodInvocation:read
+MethodInvocation:read
+MethodInvocation:read
+MethodInvocation:read
+MethodInvocation:read
+Method-name:tupleSchemeWriteValue
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:getFieldDesc
+Method-returnType:org.apache.thrift.protocol.TField
+Method-parameters:[_Fields setField]
+Method-name:getStructDesc
+Method-returnType:org.apache.thrift.protocol.TStruct
+Method-parameters:[]
+Method-name:enumForId
+Method-returnType:_Fields
+Method-parameters:[short id]
+MethodInvocation:findByThriftIdOrThrow
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:getBoolVal
+Method-returnType:TBoolValue
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setBoolVal
+Method-returnType:void
+Method-parameters:[TBoolValue value]
+Method-name:getByteVal
+Method-returnType:TByteValue
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setByteVal
+Method-returnType:void
+Method-parameters:[TByteValue value]
+Method-name:getI16Val
+Method-returnType:TI16Value
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setI16Val
+Method-returnType:void
+Method-parameters:[TI16Value value]
+Method-name:getI32Val
+Method-returnType:TI32Value
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setI32Val
+Method-returnType:void
+Method-parameters:[TI32Value value]
+Method-name:getI64Val
+Method-returnType:TI64Value
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setI64Val
+Method-returnType:void
+Method-parameters:[TI64Value value]
+Method-name:getDoubleVal
+Method-returnType:TDoubleValue
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setDoubleVal
+Method-returnType:void
+Method-parameters:[TDoubleValue value]
+Method-name:getStringVal
+Method-returnType:TStringValue
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setStringVal
+Method-returnType:void
+Method-parameters:[TStringValue value]
+Method-name:isSetBoolVal
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSetByteVal
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSetI16Val
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSetI32Val
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSetI64Val
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSetDoubleVal
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSetStringVal
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[TColumnValue other]
+MethodInvocation:getSetField
+MethodInvocation:getSetField
+MethodInvocation:equals
+MethodInvocation:getFieldValue
+MethodInvocation:getFieldValue
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[TColumnValue other]
+MethodInvocation:compareTo
+MethodInvocation:getSetField
+MethodInvocation:getSetField
+MethodInvocation:compareTo
+MethodInvocation:getFieldValue
+MethodInvocation:getFieldValue
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getSetField
+MethodInvocation:add
+MethodInvocation:getThriftFieldId
+MethodInvocation:getFieldValue
+MethodInvocation:add
+MethodInvocation:getValue
+MethodInvocation:getFieldValue
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read

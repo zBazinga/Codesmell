@@ -1,0 +1,115 @@
+Class:CheckpointTupleForwarder
+Field:LOG
+MethodInvocation:getLogger
+Field:bolt
+Field:transactionRequestCount
+Field:checkPointInputTaskCount
+Field:lastTxid
+Field:collector
+Method-name:CheckpointTupleForwarder
+Method-returnType:null
+Method-parameters:[IRichBolt bolt]
+FieldAccess:bolt
+Method-name:prepare
+Method-returnType:void
+Method-parameters:[Map stormConf, TopologyContext context, OutputCollector collector]
+MethodInvocation:init
+MethodInvocation:prepare
+FieldAccess:collector
+Method-name:init
+Method-returnType:void
+Method-parameters:[TopologyContext context, OutputCollector collector]
+FieldAccess:collector
+FieldAccess:checkPointInputTaskCount
+MethodInvocation:getCheckpointInputTaskCount
+Method-name:execute
+Method-returnType:void
+Method-parameters:[Tuple input]
+MethodInvocation:isCheckpoint
+MethodInvocation:processCheckpoint
+MethodInvocation:handleTuple
+Method-name:cleanup
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:cleanup
+Method-name:declareOutputFields
+Method-returnType:void
+Method-parameters:[OutputFieldsDeclarer declarer]
+MethodInvocation:declareOutputFields
+MethodInvocation:declareStream
+Method-name:getComponentConfiguration
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+MethodInvocation:getComponentConfiguration
+Method-name:handleCheckpoint
+Method-returnType:void
+Method-parameters:[Tuple checkpointTuple, Action action, long txid]
+MethodInvocation:emit
+MethodInvocation:ack
+Method-name:handleTuple
+Method-returnType:void
+Method-parameters:[Tuple input]
+MethodInvocation:execute
+Method-name:processCheckpoint
+Method-returnType:void
+Method-parameters:[Tuple input]
+MethodInvocation:getValueByField
+MethodInvocation:getLongByField
+MethodInvocation:shouldProcessTransaction
+MethodInvocation:debug
+MethodInvocation:handleCheckpoint
+MethodInvocation:debug
+MethodInvocation:ack
+MethodInvocation:error
+MethodInvocation:fail
+MethodInvocation:reportError
+MethodInvocation:debug
+MethodInvocation:ack
+Method-name:getCheckpointInputTaskCount
+Method-returnType:int
+Method-parameters:[TopologyContext context]
+MethodInvocation:keySet
+MethodInvocation:getThisSources
+MethodInvocation:equals
+MethodInvocation:get_streamId
+MethodInvocation:size
+MethodInvocation:getComponentTasks
+MethodInvocation:get_componentId
+Method-name:shouldProcessTransaction
+Method-returnType:boolean
+Method-parameters:[Action action, long txid]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:remove
+Class:TransactionRequest
+Field:action
+Field:txid
+Method-name:TransactionRequest
+Method-returnType:null
+Method-parameters:[Action action, long txid]
+FieldAccess:action
+FieldAccess:txid
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Class:AnchoringOutputCollector
+Method-name:AnchoringOutputCollector
+Method-returnType:null
+Method-parameters:[IOutputCollector delegate]
+Method-name:emit
+Method-returnType:List<Integer>
+Method-parameters:[String streamId, List<Object> tuple]
+Method-name:emitDirect
+Method-returnType:void
+Method-parameters:[int taskId, String streamId, List<Object> tuple]

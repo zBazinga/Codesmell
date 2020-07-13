@@ -1,0 +1,513 @@
+Class:TridentTopology
+Field:_graph
+Field:_colocate
+Field:_gen
+Method-name:TridentTopology
+Method-returnType:null
+Method-parameters:[]
+Method-name:TridentTopology
+Method-returnType:null
+Method-parameters:[DefaultDirectedGraph<Node,IndexedEdge> graph, Map<String,List<Node>> colocate, UniqueIdGen gen]
+Method-name:newStream
+Method-returnType:Stream
+Method-parameters:[String txId, IRichSpout spout]
+MethodInvocation:newStream
+Method-name:newStream
+Method-returnType:Stream
+Method-parameters:[String txId, IBatchSpout spout]
+MethodInvocation:getUniqueStreamId
+MethodInvocation:getOutputFields
+MethodInvocation:addNode
+Method-name:newStream
+Method-returnType:Stream
+Method-parameters:[String txId, ITridentSpout spout]
+MethodInvocation:getUniqueStreamId
+MethodInvocation:getOutputFields
+MethodInvocation:addNode
+Method-name:newStream
+Method-returnType:Stream
+Method-parameters:[String txId, IPartitionedTridentSpout spout]
+MethodInvocation:newStream
+Method-name:newStream
+Method-returnType:Stream
+Method-parameters:[String txId, IOpaquePartitionedTridentSpout spout]
+MethodInvocation:newStream
+Method-name:newStream
+Method-returnType:Stream
+Method-parameters:[String txId, ITridentDataSource dataSource]
+MethodInvocation:newStream
+MethodInvocation:newStream
+MethodInvocation:newStream
+MethodInvocation:newStream
+Method-name:newDRPCStream
+Method-returnType:Stream
+Method-parameters:[String function]
+MethodInvocation:newDRPCStream
+Method-name:newDRPCStream
+Method-returnType:Stream
+Method-parameters:[String function, ILocalDRPC server]
+MethodInvocation:newDRPCStream
+Method-name:newDRPCStream
+Method-returnType:Stream
+Method-parameters:[DRPCSpout spout]
+MethodInvocation:getUniqueStreamId
+MethodInvocation:getSingleOutputStreamFields
+MethodInvocation:addNode
+MethodInvocation:project
+Method-name:newStaticState
+Method-returnType:TridentState
+Method-parameters:[StateFactory factory]
+MethodInvocation:newStaticState
+Method-name:newStaticState
+Method-returnType:TridentState
+Method-parameters:[StateSpec spec]
+MethodInvocation:getUniqueStateId
+MethodInvocation:getUniqueStreamId
+MethodInvocation:registerNode
+Method-name:multiReduce
+Method-returnType:Stream
+Method-parameters:[Stream s1, Stream s2, MultiReducer function, Fields outputFields]
+MethodInvocation:multiReduce
+MethodInvocation:asList
+Method-name:multiReduce
+Method-returnType:Stream
+Method-parameters:[Fields inputFields1, Stream s1, Fields inputFields2, Stream s2, MultiReducer function, Fields outputFields]
+MethodInvocation:multiReduce
+MethodInvocation:asList
+MethodInvocation:asList
+Method-name:multiReduce
+Method-returnType:Stream
+Method-parameters:[GroupedStream s1, GroupedStream s2, GroupedMultiReducer function, Fields outputFields]
+MethodInvocation:multiReduce
+MethodInvocation:asList
+Method-name:multiReduce
+Method-returnType:Stream
+Method-parameters:[Fields inputFields1, GroupedStream s1, Fields inputFields2, GroupedStream s2, GroupedMultiReducer function, Fields outputFields]
+MethodInvocation:multiReduce
+MethodInvocation:asList
+MethodInvocation:asList
+Method-name:multiReduce
+Method-returnType:Stream
+Method-parameters:[List<Stream> streams, MultiReducer function, Fields outputFields]
+MethodInvocation:multiReduce
+MethodInvocation:getAllOutputFields
+Method-name:multiReduce
+Method-returnType:Stream
+Method-parameters:[List<GroupedStream> streams, GroupedMultiReducer function, Fields outputFields]
+MethodInvocation:multiReduce
+MethodInvocation:getAllOutputFields
+Method-name:multiReduce
+Method-returnType:Stream
+Method-parameters:[List<Fields> inputFields, List<Stream> streams, MultiReducer function, Fields outputFields]
+MethodInvocation:add
+MethodInvocation:getUniqueStreamId
+MethodInvocation:join
+MethodInvocation:addSourcedNode
+Method-name:multiReduce
+Method-returnType:Stream
+Method-parameters:[List<Fields> inputFields, List<GroupedStream> groupedStreams, GroupedMultiReducer function, Fields outputFields]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getGroupFields
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:partitionBy
+MethodInvocation:toStream
+MethodInvocation:add
+MethodInvocation:fieldsUnion
+MethodInvocation:get
+MethodInvocation:multiReduce
+Method-name:merge
+Method-returnType:Stream
+Method-parameters:[Fields outputFields, Stream... streams]
+MethodInvocation:merge
+MethodInvocation:asList
+Method-name:merge
+Method-returnType:Stream
+Method-parameters:[Fields outputFields, List<Stream> streams]
+MethodInvocation:multiReduce
+Method-name:merge
+Method-returnType:Stream
+Method-parameters:[Stream... streams]
+MethodInvocation:merge
+MethodInvocation:asList
+Method-name:merge
+Method-returnType:Stream
+Method-parameters:[List<Stream> streams]
+MethodInvocation:merge
+MethodInvocation:getOutputFields
+MethodInvocation:get
+Method-name:join
+Method-returnType:Stream
+Method-parameters:[Stream s1, Fields joinFields1, Stream s2, Fields joinFields2, Fields outFields]
+MethodInvocation:join
+MethodInvocation:asList
+MethodInvocation:asList
+Method-name:join
+Method-returnType:Stream
+Method-parameters:[List<Stream> streams, List<Fields> joinFields, Fields outFields]
+MethodInvocation:join
+Method-name:join
+Method-returnType:Stream
+Method-parameters:[Stream s1, Fields joinFields1, Stream s2, Fields joinFields2, Fields outFields, JoinType type]
+MethodInvocation:join
+MethodInvocation:asList
+MethodInvocation:asList
+Method-name:join
+Method-returnType:Stream
+Method-parameters:[List<Stream> streams, List<Fields> joinFields, Fields outFields, JoinType type]
+MethodInvocation:join
+MethodInvocation:repeat
+MethodInvocation:size
+Method-name:join
+Method-returnType:Stream
+Method-parameters:[Stream s1, Fields joinFields1, Stream s2, Fields joinFields2, Fields outFields, List<JoinType> mixed]
+MethodInvocation:join
+MethodInvocation:asList
+MethodInvocation:asList
+Method-name:join
+Method-returnType:Stream
+Method-parameters:[List<Stream> streams, List<Fields> joinFields, Fields outFields, List<JoinType> mixed]
+MethodInvocation:multiReduce
+MethodInvocation:strippedInputFields
+MethodInvocation:groupedStreams
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:strippedInputFields
+Method-name:build
+Method-returnType:StormTopology
+Method-parameters:[]
+MethodInvocation:setProperty
+MethodInvocation:clone
+MethodInvocation:completeDRPC
+MethodInvocation:vertexSet
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:values
+MethodInvocation:removeAll
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:mergeFully
+MethodInvocation:getAllGroups
+MethodInvocation:edgeSet
+MethodInvocation:nodeGroup
+MethodInvocation:nodeGroup
+MethodInvocation:equals
+MethodInvocation:removeEdge
+MethodInvocation:makeIdentityPartition
+MethodInvocation:addVertex
+MethodInvocation:addEdge
+MethodInvocation:addEdge
+MethodInvocation:extraPartitionInputs
+MethodInvocation:makeIdentityNode
+MethodInvocation:getParent
+MethodInvocation:outgoingEdgesOf
+MethodInvocation:removeVertex
+MethodInvocation:addVertex
+MethodInvocation:addVertex
+MethodInvocation:addEdge
+MethodInvocation:addEdge
+MethodInvocation:addEdge
+MethodInvocation:nodeGroup
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:addGroup
+MethodInvocation:addGroup
+MethodInvocation:reindex
+MethodInvocation:getAllGroups
+MethodInvocation:connectedSets
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:getGroupParallelisms
+MethodInvocation:genSpoutIds
+MethodInvocation:genBoltIds
+MethodInvocation:readDefaultConfig
+MethodInvocation:get
+MethodInvocation:nodeGroup
+MethodInvocation:mergeDefaultResources
+MethodInvocation:getResources
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:setCPULoad
+MethodInvocation:setMemoryLoad
+MethodInvocation:setBatchPerTupleSpout
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:setCPULoad
+MethodInvocation:setMemoryLoad
+MethodInvocation:setSpout
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:isSpoutGroup
+MethodInvocation:get
+MethodInvocation:getOutputStreamBatchGroups
+MethodInvocation:mergeDefaultResources
+MethodInvocation:getResources
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:setCPULoad
+MethodInvocation:setMemoryLoad
+MethodInvocation:setBolt
+MethodInvocation:get
+MethodInvocation:committerBatches
+MethodInvocation:uniquedSubscriptions
+MethodInvocation:externalGroupInputs
+MethodInvocation:getParent
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:nodeGroup
+MethodInvocation:grouping
+MethodInvocation:buildTopology
+Method-name:mergeDefaultResources
+Method-returnType:Map<String,Number>
+Method-parameters:[Map<String,Number> res, Map defaultConfig]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:max
+MethodInvocation:doubleValue
+MethodInvocation:doubleValue
+MethodInvocation:max
+MethodInvocation:doubleValue
+MethodInvocation:doubleValue
+MethodInvocation:max
+MethodInvocation:doubleValue
+MethodInvocation:doubleValue
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+Method-name:completeDRPC
+Method-returnType:void
+Method-parameters:[DefaultDirectedGraph<Node,IndexedEdge> graph, Map<String,List<Node>> colocate, UniqueIdGen gen]
+MethodInvocation:connectedSets
+MethodInvocation:checkValidJoins
+MethodInvocation:getDRPCSpoutNode
+MethodInvocation:getLastAddedNode
+MethodInvocation:multiReduce
+MethodInvocation:batchGlobal
+MethodInvocation:project
+MethodInvocation:batchGlobal
+Method-name:getLastAddedNode
+Method-returnType:Node
+Method-parameters:[Collection<Node> g]
+Method-name:getDRPCSpoutNode
+Method-returnType:SpoutNode
+Method-parameters:[Collection<Node> g]
+FieldAccess:type
+Method-name:checkValidJoins
+Method-returnType:void
+Method-parameters:[Collection<Node> g]
+FieldAccess:type
+Method-name:isSpoutGroup
+Method-returnType:boolean
+Method-parameters:[Group g]
+MethodInvocation:size
+MethodInvocation:next
+MethodInvocation:iterator
+Method-name:uniquedSubscriptions
+Method-returnType:Collection<PartitionNode>
+Method-parameters:[Set<PartitionNode> subscriptions]
+MethodInvocation:get
+MethodInvocation:equals
+MethodInvocation:put
+MethodInvocation:values
+Method-name:genSpoutIds
+Method-returnType:Map<Node,String>
+Method-parameters:[Collection<SpoutNode> spoutNodes]
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:get_function
+MethodInvocation:put
+Method-name:genBoltIds
+Method-returnType:Map<Group,String>
+Method-parameters:[Collection<Group> groups]
+MethodInvocation:isSpoutGroup
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:getGroupName
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:getGroupName
+MethodInvocation:put
+MethodInvocation:join
+Method-name:getGroupName
+Method-returnType:String
+Method-parameters:[Group g]
+MethodInvocation:put
+MethodInvocation:values
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:join
+Method-name:getOutputStreamBatchGroups
+Method-returnType:Map<String,String>
+Method-parameters:[Group g, Map<Node,String> batchGroupMap]
+MethodInvocation:externalGroupOutputs
+MethodInvocation:put
+MethodInvocation:get
+Method-name:committerBatches
+Method-returnType:Set<String>
+Method-parameters:[Group g, Map<Node,String> batchGroupMap]
+FieldAccess:committer
+MethodInvocation:add
+MethodInvocation:get
+Method-name:getGroupParallelisms
+Method-returnType:Map<Group,Integer>
+Method-parameters:[DirectedGraph<Node,IndexedEdge> graph, GraphGrouper grouper, Collection<Group> groups]
+MethodInvocation:addVertex
+MethodInvocation:externalGroupInputs
+MethodInvocation:isIdentityPartition
+MethodInvocation:getParent
+MethodInvocation:nodeGroup
+MethodInvocation:equals
+MethodInvocation:addEdge
+MethodInvocation:connectedSets
+MethodInvocation:getFixedParallelism
+MethodInvocation:getMaxParallelism
+MethodInvocation:max
+MethodInvocation:min
+MethodInvocation:put
+Method-name:getMaxParallelism
+Method-returnType:Integer
+Method-parameters:[Set<Group> groups]
+MethodInvocation:isSpoutGroup
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:getSpoutComponentConfig
+MethodInvocation:get
+MethodInvocation:intValue
+MethodInvocation:min
+MethodInvocation:intValue
+Method-name:getSpoutComponentConfig
+Method-returnType:Map
+Method-parameters:[Object spout]
+MethodInvocation:getComponentConfiguration
+MethodInvocation:getComponentConfiguration
+MethodInvocation:getComponentConfiguration
+Method-name:getFixedParallelism
+Method-returnType:Integer
+Method-parameters:[Set<Group> groups]
+Method-name:isIdentityPartition
+Method-returnType:boolean
+Method-parameters:[PartitionNode n]
+MethodInvocation:is_set_custom_serialized
+MethodInvocation:javaDeserialize
+MethodInvocation:get_custom_serialized
+Method-name:addEdge
+Method-returnType:void
+Method-parameters:[DirectedGraph g, Object source, Object target, int index]
+MethodInvocation:addEdge
+Method-name:makeIdentityNode
+Method-returnType:Node
+Method-parameters:[Fields allOutputFields]
+MethodInvocation:getUniqueStreamId
+Method-name:extraPartitionInputs
+Method-returnType:List<PartitionNode>
+Method-parameters:[Group g]
+MethodInvocation:externalGroupInputs
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:values
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:equals
+MethodInvocation:add
+Method-name:externalGroupInputs
+Method-returnType:Set<PartitionNode>
+Method-parameters:[Group g]
+MethodInvocation:incomingNodes
+MethodInvocation:add
+Method-name:externalGroupOutputs
+Method-returnType:Set<PartitionNode>
+Method-parameters:[Group g]
+MethodInvocation:outgoingNodes
+MethodInvocation:add
+Method-name:makeIdentityPartition
+Method-returnType:PartitionNode
+Method-parameters:[Node basis]
+MethodInvocation:custom_serialized
+MethodInvocation:javaSerialize
+Method-name:getUniqueStreamId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getUniqueStreamId
+Method-name:getUniqueStateId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getUniqueStateId
+Method-name:getUniqueWindowId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getUniqueWindowId
+Method-name:registerNode
+Method-returnType:void
+Method-parameters:[Node n]
+MethodInvocation:addVertex
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:get
+Method-name:addNode
+Method-returnType:Stream
+Method-parameters:[Node n]
+MethodInvocation:registerNode
+Method-name:registerSourcedNode
+Method-returnType:void
+Method-parameters:[List<Stream> sources, Node newNode]
+MethodInvocation:registerNode
+MethodInvocation:addEdge
+Method-name:addSourcedNode
+Method-returnType:Stream
+Method-parameters:[List<Stream> sources, Node newNode]
+MethodInvocation:registerSourcedNode
+Method-name:addSourcedStateNode
+Method-returnType:TridentState
+Method-parameters:[List<Stream> sources, Node newNode]
+MethodInvocation:registerSourcedNode
+Method-name:addSourcedNode
+Method-returnType:Stream
+Method-parameters:[Stream source, Node newNode]
+MethodInvocation:addSourcedNode
+MethodInvocation:asList
+Method-name:addSourcedStateNode
+Method-returnType:TridentState
+Method-parameters:[Stream source, Node newNode]
+MethodInvocation:addSourcedStateNode
+MethodInvocation:asList
+Method-name:getAllOutputFields
+Method-returnType:List<Fields>
+Method-parameters:[List streams]
+MethodInvocation:add
+MethodInvocation:getOutputFields
+Method-name:groupedStreams
+Method-returnType:List<GroupedStream>
+Method-parameters:[List<Stream> streams, List<Fields> joinFields]
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:groupBy
+MethodInvocation:get
+MethodInvocation:get
+Method-name:strippedInputFields
+Method-returnType:List<Fields>
+Method-parameters:[List<Stream> streams, List<Fields> joinFields]
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:fieldsSubtract
+MethodInvocation:getOutputFields
+MethodInvocation:get
+MethodInvocation:get
+Method-name:repeat
+Method-returnType:List<JoinType>
+Method-parameters:[int n, JoinType type]
+MethodInvocation:add

@@ -1,0 +1,70 @@
+Class:ActiveShardCount
+Field:ACTIVE_SHARD_COUNT_DEFAULT
+Field:ALL_ACTIVE_SHARDS
+Field:DEFAULT
+Field:ALL
+Field:NONE
+Field:ONE
+Field:value
+Method-name:ActiveShardCount
+Method-returnType:null
+Method-parameters:[final int value]
+FieldAccess:value
+Method-name:from
+Method-returnType:ActiveShardCount
+Method-parameters:[final int value]
+MethodInvocation:get
+Method-name:validate
+Method-returnType:boolean
+Method-parameters:[final int numberOfReplicas]
+Method-name:get
+Method-returnType:ActiveShardCount
+Method-parameters:[final int value]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[final StreamOutput out]
+MethodInvocation:writeInt
+Method-name:readFrom
+Method-returnType:ActiveShardCount
+Method-parameters:[final StreamInput in]
+MethodInvocation:get
+MethodInvocation:readInt
+Method-name:parseString
+Method-returnType:ActiveShardCount
+Method-parameters:[final String str]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:parseInt
+MethodInvocation:from
+Method-name:enoughShardsActive
+Method-returnType:boolean
+Method-parameters:[final int activeShardCount]
+FieldAccess:value
+FieldAccess:value
+Method-name:enoughShardsActive
+Method-returnType:boolean
+Method-parameters:[final ClusterState clusterState, final String... indices]
+Method-name:enoughShardsActive
+Method-returnType:boolean
+Method-parameters:[final IndexShardRoutingTable shardRoutingTable]
+MethodInvocation:size
+MethodInvocation:activeShards
+MethodInvocation:size
+MethodInvocation:replicaShards
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:setWaitForActiveShards
+Method-returnType:void
+Method-parameters:[ResizeRequest resizeRequest]
+MethodInvocation:waitForActiveShards
+MethodInvocation:getTargetIndexRequest

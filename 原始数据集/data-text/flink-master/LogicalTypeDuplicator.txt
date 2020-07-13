@@ -1,0 +1,94 @@
+Class:LogicalTypeDuplicator
+Method-name:visit
+Method-returnType:LogicalType
+Method-parameters:[ArrayType arrayType]
+MethodInvocation:isNullable
+MethodInvocation:accept
+MethodInvocation:getElementType
+Method-name:visit
+Method-returnType:LogicalType
+Method-parameters:[MultisetType multisetType]
+MethodInvocation:isNullable
+MethodInvocation:accept
+MethodInvocation:getElementType
+Method-name:visit
+Method-returnType:LogicalType
+Method-parameters:[MapType mapType]
+MethodInvocation:isNullable
+MethodInvocation:accept
+MethodInvocation:getKeyType
+MethodInvocation:accept
+MethodInvocation:getValueType
+Method-name:visit
+Method-returnType:LogicalType
+Method-parameters:[RowType rowType]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getFields
+MethodInvocation:isPresent
+MethodInvocation:getDescription
+MethodInvocation:getName
+MethodInvocation:accept
+MethodInvocation:getType
+MethodInvocation:get
+MethodInvocation:getDescription
+MethodInvocation:getName
+MethodInvocation:accept
+MethodInvocation:getType
+MethodInvocation:toList
+MethodInvocation:isNullable
+Method-name:visit
+Method-returnType:LogicalType
+Method-parameters:[DistinctType distinctType]
+MethodInvocation:newBuilder
+MethodInvocation:orElseThrow
+MethodInvocation:getObjectIdentifier
+MethodInvocation:accept
+MethodInvocation:getSourceType
+MethodInvocation:ifPresent
+MethodInvocation:getDescription
+MethodInvocation:build
+Method-name:visit
+Method-returnType:LogicalType
+Method-parameters:[StructuredType structuredType]
+MethodInvocation:instantiateStructuredBuilder
+MethodInvocation:attributes
+MethodInvocation:duplicateStructuredAttributes
+MethodInvocation:setNullable
+MethodInvocation:isNullable
+MethodInvocation:setFinal
+MethodInvocation:isFinal
+MethodInvocation:setInstantiable
+MethodInvocation:isInstantiable
+MethodInvocation:comparision
+MethodInvocation:getComparision
+MethodInvocation:ifPresent
+MethodInvocation:getSuperType
+MethodInvocation:accept
+MethodInvocation:superType
+MethodInvocation:ifPresent
+MethodInvocation:getDescription
+MethodInvocation:build
+Method-name:defaultMethod
+Method-returnType:LogicalType
+Method-parameters:[LogicalType logicalType]
+MethodInvocation:copy
+Method-name:duplicateStructuredAttributes
+Method-returnType:List<StructuredAttribute>
+Method-parameters:[StructuredType structuredType]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getAttributes
+MethodInvocation:isPresent
+MethodInvocation:getDescription
+MethodInvocation:getName
+MethodInvocation:accept
+MethodInvocation:getType
+MethodInvocation:get
+MethodInvocation:getDescription
+MethodInvocation:getName
+MethodInvocation:accept
+MethodInvocation:getType
+MethodInvocation:toList

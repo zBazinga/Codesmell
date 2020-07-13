@@ -1,0 +1,107 @@
+Class:AggregationPath
+Field:AGG_DELIM
+Method-name:parse
+Method-returnType:AggregationPath
+Method-parameters:[String path]
+MethodInvocation:tokenizeToStringArray
+MethodInvocation:lastIndexOf
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:length
+MethodInvocation:add
+MethodInvocation:substring
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:lastIndexOf
+MethodInvocation:add
+MethodInvocation:length
+MethodInvocation:split
+MethodInvocation:add
+MethodInvocation:lastIndexOf
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:length
+MethodInvocation:add
+MethodInvocation:substring
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:add
+Class:PathElement
+Field:fullName
+Field:name
+Field:key
+Method-name:PathElement
+Method-returnType:null
+Method-parameters:[String fullName, String name, String key]
+FieldAccess:fullName
+FieldAccess:name
+FieldAccess:key
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Field:pathElements
+Method-name:AggregationPath
+Method-returnType:null
+Method-parameters:[List<PathElement> tokens]
+FieldAccess:pathElements
+MethodInvocation:size
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:arrayToDelimitedString
+MethodInvocation:toArray
+Method-name:lastPathElement
+Method-returnType:PathElement
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:size
+Method-name:getPathElements
+Method-returnType:List<PathElement>
+Method-parameters:[]
+FieldAccess:pathElements
+Method-name:getPathElementsAsStringList
+Method-returnType:List<String>
+Method-parameters:[]
+FieldAccess:pathElements
+MethodInvocation:add
+MethodInvocation:add
+Method-name:resolveAggregator
+Method-returnType:Aggregator
+Method-parameters:[Aggregator root]
+Method-name:resolveTopmostAggregator
+Method-returnType:Aggregator
+Method-parameters:[Aggregator root]
+Method-name:bucketComparator
+Method-returnType:BucketComparator
+Method-parameters:[Aggregator root, SortOrder order]
+MethodInvocation:bucketComparator
+MethodInvocation:resolveAggregator
+FieldAccess:key
+MethodInvocation:lastPathElement
+Method-name:split
+Method-returnType:String[]
+Method-parameters:[String toSplit, int index, String[] result]
+MethodInvocation:substring
+MethodInvocation:substring
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode

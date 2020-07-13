@@ -1,0 +1,37 @@
+Class:Location
+Field:sourceName
+Field:offset
+Method-name:Location
+Method-returnType:null
+Method-parameters:[String sourceName, int offset]
+FieldAccess:sourceName
+MethodInvocation:requireNonNull
+FieldAccess:offset
+Method-name:getSourceName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getOffset
+Method-returnType:int
+Method-parameters:[]
+Method-name:createError
+Method-returnType:RuntimeException
+Method-parameters:[RuntimeException exception]
+Field:MAX_NAME_LENGTH
+Method-name:computeSourceName
+Method-returnType:String
+Method-parameters:[String scriptName]
+MethodInvocation:indexOf
+MethodInvocation:indexOf
+MethodInvocation:min
+MethodInvocation:length
+MethodInvocation:min
+MethodInvocation:append
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:writeDebugInfo
+Method-returnType:void
+Method-parameters:[MethodWriter methodWriter]
+MethodInvocation:visitLabel
+MethodInvocation:visitLineNumber
+MethodInvocation:getOffset

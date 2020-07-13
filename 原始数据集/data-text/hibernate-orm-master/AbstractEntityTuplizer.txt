@@ -1,0 +1,358 @@
+Class:AbstractEntityTuplizer
+Field:entityMetamodel
+Field:idGetter
+Field:idSetter
+Field:getters
+Field:setters
+Field:propertySpan
+Field:hasCustomAccessors
+Field:instantiator
+Field:proxyFactory
+Field:identifierMapperType
+Method-name:getIdentifierMapperType
+Method-returnType:Type
+Method-parameters:[]
+Method-name:buildPropertyGetter
+Method-returnType:Getter
+Method-parameters:[Property mappedProperty, PersistentClass mappedEntity]
+Method-name:buildPropertySetter
+Method-returnType:Setter
+Method-parameters:[Property mappedProperty, PersistentClass mappedEntity]
+Method-name:buildInstantiator
+Method-returnType:Instantiator
+Method-parameters:[EntityMetamodel entityMetamodel, PersistentClass mappingInfo]
+Method-name:buildProxyFactory
+Method-returnType:ProxyFactory
+Method-parameters:[PersistentClass mappingInfo, Getter idGetter, Setter idSetter]
+Method-name:AbstractEntityTuplizer
+Method-returnType:null
+Method-parameters:[EntityMetamodel entityMetamodel, PersistentClass mappingInfo]
+FieldAccess:entityMetamodel
+MethodInvocation:isVirtual
+MethodInvocation:getIdentifierProperty
+MethodInvocation:buildPropertyGetter
+MethodInvocation:getIdentifierProperty
+MethodInvocation:buildPropertySetter
+MethodInvocation:getIdentifierProperty
+MethodInvocation:getPropertySpan
+MethodInvocation:getPropertyClosureIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:buildPropertyGetter
+MethodInvocation:buildPropertySetter
+MethodInvocation:isBasicPropertyAccessor
+MethodInvocation:buildInstantiator
+MethodInvocation:isLazy
+MethodInvocation:buildProxyFactory
+MethodInvocation:setLazy
+MethodInvocation:getIdentifierMapper
+MethodInvocation:getType
+MethodInvocation:buildMappedIdentifierValueMarshaller
+MethodInvocation:getEntityName
+MethodInvocation:getFactory
+MethodInvocation:getType
+MethodInvocation:getIdentifierProperty
+Method-name:getEntityName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:getSubclassEntityNames
+Method-returnType:Set
+Method-parameters:[]
+MethodInvocation:getSubclassEntityNames
+Method-name:getIdentifier
+Method-returnType:Serializable
+Method-parameters:[Object entity]
+MethodInvocation:getIdentifier
+Method-name:getIdentifier
+Method-returnType:Serializable
+Method-parameters:[Object entity, SharedSessionContractImplementor session]
+MethodInvocation:isEmbedded
+MethodInvocation:getIdentifierProperty
+MethodInvocation:isInstance
+MethodInvocation:getIdentifier
+MethodInvocation:getHibernateLazyInitializer
+MethodInvocation:getEntityName
+MethodInvocation:getIdentifier
+MethodInvocation:getEntityMode
+MethodInvocation:get
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getMessage
+MethodInvocation:append
+MethodInvocation:getMessage
+MethodInvocation:toString
+Method-name:setIdentifier
+Method-returnType:void
+Method-parameters:[Object entity, Serializable id]
+MethodInvocation:setIdentifier
+Method-name:setIdentifier
+Method-returnType:void
+Method-parameters:[Object entity, Serializable id, SharedSessionContractImplementor session]
+MethodInvocation:isEmbedded
+MethodInvocation:getIdentifierProperty
+MethodInvocation:getType
+MethodInvocation:getIdentifierProperty
+MethodInvocation:setPropertyValues
+MethodInvocation:getPropertyValues
+MethodInvocation:getEntityMode
+MethodInvocation:getEntityMode
+MethodInvocation:set
+MethodInvocation:getFactory
+MethodInvocation:setIdentifier
+MethodInvocation:getEntityMode
+Method-name:getIdentifier
+Method-returnType:Object
+Method-parameters:[Object entity, EntityMode entityMode, SharedSessionContractImplementor session]
+Method-name:setIdentifier
+Method-returnType:void
+Method-parameters:[Object entity, Serializable id, EntityMode entityMode, SharedSessionContractImplementor session]
+Field:mappedIdentifierValueMarshaller
+Method-name:buildMappedIdentifierValueMarshaller
+Method-returnType:MappedIdentifierValueMarshaller
+Method-parameters:[String entityName, SessionFactoryImplementor sessionFactory, ComponentType mappedIdClassComponentType, ComponentType virtualIdComponent]
+FieldAccess:length
+MethodInvocation:getSubtypes
+MethodInvocation:isEntityType
+MethodInvocation:getSubtypes
+MethodInvocation:isEntityType
+MethodInvocation:getSubtypes
+Class:NormalMappedIdentifierValueMarshaller
+Field:virtualIdComponent
+Field:mappedIdentifierType
+Method-name:NormalMappedIdentifierValueMarshaller
+Method-returnType:null
+Method-parameters:[ComponentType virtualIdComponent, ComponentType mappedIdentifierType]
+FieldAccess:virtualIdComponent
+FieldAccess:mappedIdentifierType
+Method-name:getIdentifier
+Method-returnType:Object
+Method-parameters:[Object entity, EntityMode entityMode, SharedSessionContractImplementor session]
+MethodInvocation:instantiate
+MethodInvocation:getPropertyValues
+MethodInvocation:setPropertyValues
+Method-name:setIdentifier
+Method-returnType:void
+Method-parameters:[Object entity, Serializable id, EntityMode entityMode, SharedSessionContractImplementor session]
+MethodInvocation:setPropertyValues
+MethodInvocation:getPropertyValues
+Class:IncrediblySillyJpaMapsIdMappedIdentifierValueMarshaller
+Field:entityName
+Field:sessionFactory
+Field:virtualIdComponent
+Field:mappedIdentifierType
+Method-name:IncrediblySillyJpaMapsIdMappedIdentifierValueMarshaller
+Method-returnType:null
+Method-parameters:[String entityName, SessionFactoryImplementor sessionFactory, ComponentType virtualIdComponent, ComponentType mappedIdentifierType]
+FieldAccess:sessionFactory
+FieldAccess:entityName
+FieldAccess:virtualIdComponent
+FieldAccess:mappedIdentifierType
+Method-name:getIdentifier
+Method-returnType:Object
+Method-parameters:[Object entity, EntityMode entityMode, SharedSessionContractImplementor session]
+MethodInvocation:instantiate
+MethodInvocation:getPropertyValues
+MethodInvocation:getSubtypes
+MethodInvocation:getSubtypes
+MethodInvocation:isAssociationType
+MethodInvocation:isAssociationType
+MethodInvocation:determineEntityId
+MethodInvocation:setPropertyValues
+Method-name:setIdentifier
+Method-returnType:void
+Method-parameters:[Object entity, Serializable id, EntityMode entityMode, SharedSessionContractImplementor session]
+MethodInvocation:getPropertyValues
+MethodInvocation:getPersistenceContextInternal
+MethodInvocation:getMetamodel
+FieldAccess:length
+MethodInvocation:getSubtypes
+MethodInvocation:getSubtypes
+MethodInvocation:getSubtypes
+MethodInvocation:isEntityType
+MethodInvocation:isEntityType
+MethodInvocation:getAssociatedEntityName
+MethodInvocation:generateEntityKey
+MethodInvocation:entityPersister
+MethodInvocation:getProxy
+MethodInvocation:getEntity
+MethodInvocation:getPropertyValue
+MethodInvocation:entityPersister
+MethodInvocation:getPropertyNames
+MethodInvocation:setPropertyValues
+Method-name:determineEntityId
+Method-returnType:Serializable
+Method-parameters:[Object entity, AssociationType associationType, SharedSessionContractImplementor session, SessionFactoryImplementor sessionFactory]
+MethodInvocation:isInstance
+MethodInvocation:getIdentifier
+MethodInvocation:getHibernateLazyInitializer
+MethodInvocation:getEntry
+MethodInvocation:getPersistenceContextInternal
+MethodInvocation:getId
+MethodInvocation:resolveEntityPersister
+MethodInvocation:getIdentifier
+Method-name:resolveEntityPersister
+Method-returnType:EntityPersister
+Method-parameters:[Object entity, AssociationType associationType, SharedSessionContractImplementor session, SessionFactoryImplementor sessionFactory]
+Method-name:resetIdentifier
+Method-returnType:void
+Method-parameters:[Object entity, Serializable currentId, Object currentVersion]
+MethodInvocation:resetIdentifier
+Method-name:resetIdentifier
+Method-returnType:void
+Method-parameters:[Object entity, Serializable currentId, Object currentVersion, SharedSessionContractImplementor session]
+MethodInvocation:getIdentifierProperty
+MethodInvocation:getIdentifierGenerator
+MethodInvocation:getDefaultValue
+MethodInvocation:getUnsavedValue
+MethodInvocation:setIdentifier
+MethodInvocation:getVersionProperty
+MethodInvocation:isVersioned
+MethodInvocation:setPropertyValue
+MethodInvocation:getVersionPropertyIndex
+MethodInvocation:getDefaultValue
+MethodInvocation:getUnsavedValue
+Method-name:getVersion
+Method-returnType:Object
+Method-parameters:[Object entity]
+MethodInvocation:isVersioned
+MethodInvocation:get
+MethodInvocation:getVersionPropertyIndex
+Method-name:shouldGetAllProperties
+Method-returnType:boolean
+Method-parameters:[Object entity]
+MethodInvocation:getBytecodeEnhancementMetadata
+MethodInvocation:getEntityMetamodel
+MethodInvocation:isEnhancedForLazyLoading
+MethodInvocation:hasUnFetchedAttributes
+Method-name:getPropertyValues
+Method-returnType:Object[]
+Method-parameters:[Object entity]
+MethodInvocation:getBytecodeEnhancementMetadata
+MethodInvocation:getLazyAttributesMetadata
+MethodInvocation:getPropertySpan
+MethodInvocation:getPropertyNames
+MethodInvocation:isLazyAttribute
+MethodInvocation:isAttributeLoaded
+MethodInvocation:get
+Method-name:getPropertyValuesToInsert
+Method-returnType:Object[]
+Method-parameters:[Object entity, Map mergeMap, SharedSessionContractImplementor session]
+MethodInvocation:getPropertySpan
+MethodInvocation:getForInsert
+Method-name:getPropertyValue
+Method-returnType:Object
+Method-parameters:[Object entity, int i]
+MethodInvocation:get
+Method-name:getPropertyValue
+Method-returnType:Object
+Method-parameters:[Object entity, String propertyPath]
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:getPropertyIndexOrNull
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:getPropertyIndexOrNull
+MethodInvocation:getPropertyValue
+MethodInvocation:getComponentValue
+MethodInvocation:getPropertyTypes
+MethodInvocation:substring
+Method-name:getComponentValue
+Method-returnType:Object
+Method-parameters:[ComponentType type, Object component, String propertyPath]
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:findSubPropertyIndex
+MethodInvocation:getPropertyValue
+MethodInvocation:getComponentValue
+MethodInvocation:getSubtypes
+MethodInvocation:substring
+Method-name:setPropertyValues
+Method-returnType:void
+Method-parameters:[Object entity, Object[] values]
+MethodInvocation:hasLazyProperties
+MethodInvocation:getFactory
+MethodInvocation:getPropertySpan
+MethodInvocation:set
+Method-name:setPropertyValue
+Method-returnType:void
+Method-parameters:[Object entity, int i, Object value]
+MethodInvocation:set
+MethodInvocation:getFactory
+Method-name:setPropertyValue
+Method-returnType:void
+Method-parameters:[Object entity, String propertyName, Object value]
+MethodInvocation:set
+MethodInvocation:getPropertyIndex
+MethodInvocation:getFactory
+Method-name:instantiate
+Method-returnType:Object
+Method-parameters:[Serializable id]
+MethodInvocation:instantiate
+Method-name:instantiate
+Method-returnType:Object
+Method-parameters:[Serializable id, SharedSessionContractImplementor session]
+MethodInvocation:instantiate
+MethodInvocation:getInstantiator
+MethodInvocation:setIdentifier
+Method-name:instantiate
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:instantiate
+Method-name:afterInitialize
+Method-returnType:void
+Method-parameters:[Object entity, SharedSessionContractImplementor session]
+Method-name:isInstance
+Method-returnType:boolean
+Method-parameters:[Object object]
+MethodInvocation:isInstance
+MethodInvocation:getInstantiator
+Method-name:hasProxy
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isLazy
+MethodInvocation:isEnhancedForLazyLoading
+MethodInvocation:getBytecodeEnhancementMetadata
+Method-name:createProxy
+Method-returnType:Object
+Method-parameters:[Serializable id, SharedSessionContractImplementor session]
+MethodInvocation:getProxy
+MethodInvocation:getProxyFactory
+Method-name:isLifecycleImplementor
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getEntityMetamodel
+Method-returnType:EntityMetamodel
+Method-parameters:[]
+Method-name:getFactory
+Method-returnType:SessionFactoryImplementor
+Method-parameters:[]
+MethodInvocation:getSessionFactory
+Method-name:getInstantiator
+Method-returnType:Instantiator
+Method-parameters:[]
+Method-name:getProxyFactory
+Method-returnType:ProxyFactory
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getEntityMetamodel
+Method-name:getIdentifierGetter
+Method-returnType:Getter
+Method-parameters:[]
+Method-name:getVersionGetter
+Method-returnType:Getter
+Method-parameters:[]
+MethodInvocation:getEntityMetamodel
+MethodInvocation:isVersioned
+MethodInvocation:getGetter
+MethodInvocation:getVersionPropertyIndex
+Method-name:getGetter
+Method-returnType:Getter
+Method-parameters:[int i]

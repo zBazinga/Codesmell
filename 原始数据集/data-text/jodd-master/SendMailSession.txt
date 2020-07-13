@@ -1,0 +1,129 @@
+Class:SendMailSession
+Field:ALTERNATIVE
+Field:RELATED
+Field:CHARSET
+Field:INLINE
+MethodInvocation:setupSystemMailProperties
+Method-name:SendMailSession
+Method-returnType:null
+Method-parameters:[final Session session, final Transport transport]
+Method-name:getService
+Method-returnType:Transport
+Method-parameters:[]
+Method-name:sendMail
+Method-returnType:String
+Method-parameters:[final Email email]
+MethodInvocation:createMessage
+MethodInvocation:sendMessage
+MethodInvocation:getService
+MethodInvocation:getAllRecipients
+MethodInvocation:getMessageID
+Method-name:createMessage
+Method-returnType:MimeMessage
+Method-parameters:[final Email email]
+MethodInvocation:clone
+MethodInvocation:getSession
+MethodInvocation:setPeople
+MethodInvocation:setSubject
+MethodInvocation:setSentDate
+MethodInvocation:setHeaders
+MethodInvocation:addBodyData
+Method-name:setSentDate
+Method-returnType:void
+Method-parameters:[final Email emailWithData, final MimeMessage msgToSet]
+MethodInvocation:sentDate
+MethodInvocation:setSentDate
+Method-name:setHeaders
+Method-returnType:void
+Method-parameters:[final Email emailWithData, final MimeMessage msgToSet]
+MethodInvocation:headers
+MethodInvocation:entrySet
+MethodInvocation:setHeader
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:setPeople
+Method-returnType:void
+Method-parameters:[final Email emailWithData, final MimeMessage msgToSet]
+MethodInvocation:setFrom
+MethodInvocation:toInternetAddress
+MethodInvocation:from
+MethodInvocation:setReplyTo
+MethodInvocation:convert
+MethodInvocation:replyTo
+MethodInvocation:setRecipients
+Method-name:setRecipients
+Method-returnType:void
+Method-parameters:[final Email emailWithData, final MimeMessage msgToSet]
+MethodInvocation:convert
+MethodInvocation:to
+MethodInvocation:setRecipients
+MethodInvocation:convert
+MethodInvocation:cc
+MethodInvocation:setRecipients
+MethodInvocation:convert
+MethodInvocation:bcc
+MethodInvocation:setRecipients
+Method-name:addBodyData
+Method-returnType:void
+Method-parameters:[final Email emailWithData, final MimeMessage msgToSet]
+MethodInvocation:messages
+MethodInvocation:size
+MethodInvocation:attachments
+MethodInvocation:isEmpty
+MethodInvocation:setContent
+MethodInvocation:get
+MethodInvocation:addBodyPart
+MethodInvocation:getBaseBodyPart
+MethodInvocation:addBodyPart
+MethodInvocation:getBodyPart
+MethodInvocation:addAnyAttachments
+MethodInvocation:setContent
+Method-name:getBaseBodyPart
+Method-returnType:MimeBodyPart
+Method-parameters:[final MimeMultipart msgMultipart]
+MethodInvocation:setContent
+Method-name:getBodyPart
+Method-returnType:MimeBodyPart
+Method-parameters:[final EmailMessage emailMessage, final List<EmailAttachment<? extends DataSource>> attachments]
+MethodInvocation:filterEmbeddedAttachments
+MethodInvocation:isEmpty
+MethodInvocation:setContent
+MethodInvocation:removeAll
+MethodInvocation:setContent
+MethodInvocation:addBodyPart
+MethodInvocation:addAnyAttachments
+MethodInvocation:setContent
+Method-name:setContent
+Method-returnType:void
+Method-parameters:[final EmailMessage emailWithData, final Part partToSet]
+MethodInvocation:setContent
+MethodInvocation:getContent
+MethodInvocation:getMimeType
+MethodInvocation:getEncoding
+Method-name:createAttachmentBodyPart
+Method-returnType:MimeBodyPart
+Method-parameters:[final EmailAttachment<? extends DataSource> attachment]
+MethodInvocation:getEncodedName
+MethodInvocation:setFileName
+MethodInvocation:setDataHandler
+MethodInvocation:getDataSource
+MethodInvocation:getContentId
+MethodInvocation:setContentID
+MethodInvocation:getContentId
+MethodInvocation:isInline
+MethodInvocation:setDisposition
+Method-name:filterEmbeddedAttachments
+Method-returnType:List<EmailAttachment<? extends DataSource>>
+Method-parameters:[final List<EmailAttachment<? extends DataSource>> attachments, final EmailMessage emailMessage]
+MethodInvocation:isEmpty
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:isEmbeddedInto
+MethodInvocation:add
+MethodInvocation:remove
+Method-name:addAnyAttachments
+Method-returnType:void
+Method-parameters:[final List<EmailAttachment<? extends DataSource>> attachments, final MimeMultipart multipart]
+MethodInvocation:createAttachmentBodyPart
+MethodInvocation:addBodyPart

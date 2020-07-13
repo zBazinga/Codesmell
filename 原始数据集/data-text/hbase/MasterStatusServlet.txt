@@ -1,0 +1,15 @@
+Class:MasterStatusServlet
+Field:serialVersionUID
+Method-name:doGet
+Method-returnType:void
+Method-parameters:[HttpServletRequest request, HttpServletResponse response]
+Method-name:getMetaLocationOrNull
+Method-returnType:ServerName
+Method-parameters:[HMaster master]
+MethodInvocation:getMetaRegionLocation
+MethodInvocation:getZooKeeper
+Method-name:getFragmentationInfo
+Method-returnType:Map<String,Integer>
+Method-parameters:[HMaster master, Configuration conf]
+MethodInvocation:getBoolean
+MethodInvocation:getTableFragmentation

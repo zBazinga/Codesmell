@@ -1,0 +1,98 @@
+Class:DeleteByQueryRequest
+Method-name:DeleteByQueryRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:DeleteByQueryRequest
+Method-returnType:null
+Method-parameters:[String... indices]
+Method-name:DeleteByQueryRequest
+Method-returnType:null
+Method-parameters:[SearchRequest search]
+Method-name:DeleteByQueryRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+Method-name:DeleteByQueryRequest
+Method-returnType:null
+Method-parameters:[SearchRequest search, boolean setDefaults]
+MethodInvocation:fetchSource
+MethodInvocation:source
+Method-name:setQuery
+Method-returnType:DeleteByQueryRequest
+Method-parameters:[QueryBuilder query]
+MethodInvocation:query
+MethodInvocation:source
+MethodInvocation:getSearchRequest
+Method-name:setRouting
+Method-returnType:DeleteByQueryRequest
+Method-parameters:[String routing]
+MethodInvocation:routing
+MethodInvocation:getSearchRequest
+Method-name:setBatchSize
+Method-returnType:DeleteByQueryRequest
+Method-parameters:[int size]
+MethodInvocation:size
+MethodInvocation:source
+MethodInvocation:getSearchRequest
+Method-name:setIndicesOptions
+Method-returnType:DeleteByQueryRequest
+Method-parameters:[IndicesOptions indicesOptions]
+MethodInvocation:indicesOptions
+MethodInvocation:getSearchRequest
+Method-name:getBatchSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:source
+MethodInvocation:getSearchRequest
+Method-name:getRouting
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:routing
+MethodInvocation:getSearchRequest
+Method-name:self
+Method-returnType:DeleteByQueryRequest
+Method-parameters:[]
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+MethodInvocation:indices
+MethodInvocation:getSearchRequest
+FieldAccess:length
+MethodInvocation:indices
+MethodInvocation:getSearchRequest
+MethodInvocation:addValidationError
+MethodInvocation:getSearchRequest
+MethodInvocation:source
+MethodInvocation:getSearchRequest
+MethodInvocation:addValidationError
+MethodInvocation:query
+MethodInvocation:source
+MethodInvocation:getSearchRequest
+MethodInvocation:addValidationError
+Method-name:forSlice
+Method-returnType:DeleteByQueryRequest
+Method-parameters:[TaskId slicingTask, SearchRequest slice, int totalSlices]
+MethodInvocation:doForSlice
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:searchToString
+MethodInvocation:toString
+Method-name:indices
+Method-returnType:IndicesRequest
+Method-parameters:[String... indices]
+Method-name:indices
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:indicesOptions
+Method-returnType:IndicesOptions
+Method-parameters:[]
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startObject
+MethodInvocation:innerToXContent
+MethodInvocation:source
+MethodInvocation:getSearchRequest
+MethodInvocation:endObject

@@ -1,0 +1,322 @@
+Class:CLIService
+Field:SERVER_VERSION
+MethodInvocation:values
+Field:LOG
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:sessionManager
+Field:serviceUGI
+Field:httpUGI
+Field:hiveServer2
+Field:defaultFetchRows
+Field:allowSessionsInitial
+Method-name:CLIService
+Method-returnType:null
+Method-parameters:[HiveServer2 hiveServer2, boolean allowSessions]
+MethodInvocation:getSimpleName
+FieldAccess:hiveServer2
+FieldAccess:allowSessionsInitial
+Method-name:init
+Method-returnType:void
+Method-parameters:[HiveConf hiveConf]
+MethodInvocation:setHiveConf
+MethodInvocation:getIntVar
+MethodInvocation:addService
+MethodInvocation:isSecurityEnabled
+MethodInvocation:loginFromKeytab
+FieldAccess:serviceUGI
+MethodInvocation:getUGI
+MethodInvocation:getVar
+MethodInvocation:getVar
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:info
+FieldAccess:httpUGI
+MethodInvocation:loginFromSpnegoKeytabAndReturnUGI
+MethodInvocation:info
+MethodInvocation:warn
+MethodInvocation:applyAuthorizationConfigPolicy
+MethodInvocation:getMessage
+MethodInvocation:setupBlockedUdfs
+Method-name:applyAuthorizationConfigPolicy
+Method-returnType:void
+Method-parameters:[HiveConf newHiveConf]
+MethodInvocation:setIsHiveServerQuery
+MethodInvocation:start
+MethodInvocation:applyAuthorizationPolicy
+Method-name:setupBlockedUdfs
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getHiveConf
+MethodInvocation:setupPermissionsForBuiltinUDFs
+MethodInvocation:getVar
+MethodInvocation:getVar
+Method-name:getServiceUGI
+Method-returnType:UserGroupInformation
+Method-parameters:[]
+FieldAccess:serviceUGI
+Method-name:getHttpUGI
+Method-returnType:UserGroupInformation
+Method-parameters:[]
+FieldAccess:httpUGI
+Method-name:start
+Method-returnType:void
+Method-parameters:[]
+Method-name:stop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:closeCurrent
+Method-name:openSession
+Method-returnType:SessionHandle
+Method-parameters:[TProtocolVersion protocol, String username, String password, Map<String,String> configuration]
+MethodInvocation:openSession
+MethodInvocation:debug
+Method-name:openSessionWithImpersonation
+Method-returnType:SessionHandle
+Method-parameters:[TProtocolVersion protocol, String username, String password, Map<String,String> configuration, String delegationToken]
+MethodInvocation:openSession
+MethodInvocation:debug
+Method-name:openSession
+Method-returnType:SessionHandle
+Method-parameters:[TProtocolVersion protocol, String username, String password, String ipAddress, Map<String,String> configuration]
+MethodInvocation:openSession
+MethodInvocation:debug
+Method-name:openSessionWithImpersonation
+Method-returnType:SessionHandle
+Method-parameters:[TProtocolVersion protocol, String username, String password, String ipAddress, Map<String,String> configuration, String delegationToken]
+MethodInvocation:openSession
+MethodInvocation:debug
+Method-name:openSession
+Method-returnType:SessionHandle
+Method-parameters:[String username, String password, Map<String,String> configuration]
+MethodInvocation:openSession
+MethodInvocation:debug
+Method-name:createSessionWithSessionHandle
+Method-returnType:void
+Method-parameters:[SessionHandle sessionHandle, String username, String password, Map<String,String> configuration]
+MethodInvocation:createSession
+MethodInvocation:debug
+Method-name:openSessionWithImpersonation
+Method-returnType:SessionHandle
+Method-parameters:[String username, String password, Map<String,String> configuration, String delegationToken]
+MethodInvocation:openSession
+MethodInvocation:debug
+Method-name:closeSession
+Method-returnType:void
+Method-parameters:[SessionHandle sessionHandle]
+MethodInvocation:closeSession
+MethodInvocation:debug
+Method-name:getInfo
+Method-returnType:GetInfoValue
+Method-parameters:[SessionHandle sessionHandle, GetInfoType getInfoType]
+MethodInvocation:getInfo
+MethodInvocation:getSession
+MethodInvocation:debug
+Method-name:executeStatement
+Method-returnType:OperationHandle
+Method-parameters:[SessionHandle sessionHandle, String statement, Map<String,String> confOverlay]
+MethodInvocation:getSession
+MethodInvocation:updateProgressMonitor
+MethodInvocation:getSessionState
+MethodInvocation:executeStatement
+MethodInvocation:debug
+Method-name:executeStatement
+Method-returnType:OperationHandle
+Method-parameters:[SessionHandle sessionHandle, String statement, Map<String,String> confOverlay, long queryTimeout]
+MethodInvocation:getSession
+MethodInvocation:updateProgressMonitor
+MethodInvocation:getSessionState
+MethodInvocation:executeStatement
+MethodInvocation:debug
+Method-name:executeStatementAsync
+Method-returnType:OperationHandle
+Method-parameters:[SessionHandle sessionHandle, String statement, Map<String,String> confOverlay]
+MethodInvocation:getSession
+MethodInvocation:updateProgressMonitor
+MethodInvocation:getSessionState
+MethodInvocation:executeStatementAsync
+MethodInvocation:debug
+Method-name:executeStatementAsync
+Method-returnType:OperationHandle
+Method-parameters:[SessionHandle sessionHandle, String statement, Map<String,String> confOverlay, long queryTimeout]
+MethodInvocation:getSession
+MethodInvocation:updateProgressMonitor
+MethodInvocation:getSessionState
+MethodInvocation:executeStatementAsync
+MethodInvocation:debug
+Method-name:getTypeInfo
+Method-returnType:OperationHandle
+Method-parameters:[SessionHandle sessionHandle]
+MethodInvocation:getTypeInfo
+MethodInvocation:getSession
+MethodInvocation:debug
+Method-name:getCatalogs
+Method-returnType:OperationHandle
+Method-parameters:[SessionHandle sessionHandle]
+MethodInvocation:getCatalogs
+MethodInvocation:getSession
+MethodInvocation:debug
+Method-name:getSchemas
+Method-returnType:OperationHandle
+Method-parameters:[SessionHandle sessionHandle, String catalogName, String schemaName]
+MethodInvocation:getSchemas
+MethodInvocation:getSession
+MethodInvocation:debug
+Method-name:getTables
+Method-returnType:OperationHandle
+Method-parameters:[SessionHandle sessionHandle, String catalogName, String schemaName, String tableName, List<String> tableTypes]
+MethodInvocation:getTables
+MethodInvocation:getSession
+MethodInvocation:debug
+Method-name:getTableTypes
+Method-returnType:OperationHandle
+Method-parameters:[SessionHandle sessionHandle]
+MethodInvocation:getTableTypes
+MethodInvocation:getSession
+MethodInvocation:debug
+Method-name:getColumns
+Method-returnType:OperationHandle
+Method-parameters:[SessionHandle sessionHandle, String catalogName, String schemaName, String tableName, String columnName]
+MethodInvocation:getColumns
+MethodInvocation:getSession
+MethodInvocation:debug
+Method-name:getFunctions
+Method-returnType:OperationHandle
+Method-parameters:[SessionHandle sessionHandle, String catalogName, String schemaName, String functionName]
+MethodInvocation:getFunctions
+MethodInvocation:getSession
+MethodInvocation:debug
+Method-name:getPrimaryKeys
+Method-returnType:OperationHandle
+Method-parameters:[SessionHandle sessionHandle, String catalog, String schema, String table]
+MethodInvocation:getPrimaryKeys
+MethodInvocation:getSession
+MethodInvocation:debug
+Method-name:getCrossReference
+Method-returnType:OperationHandle
+Method-parameters:[SessionHandle sessionHandle, String primaryCatalog, String primarySchema, String primaryTable, String foreignCatalog, String foreignSchema, String foreignTable]
+MethodInvocation:getCrossReference
+MethodInvocation:getSession
+MethodInvocation:debug
+Method-name:getOperationStatus
+Method-returnType:OperationStatus
+Method-parameters:[OperationHandle opHandle, boolean getProgressUpdate]
+MethodInvocation:getOperation
+MethodInvocation:getOperationManager
+MethodInvocation:getHiveConf
+MethodInvocation:getParentSession
+MethodInvocation:shouldRunAsync
+MethodInvocation:getTimeVar
+MethodInvocation:currentTimeMillis
+MethodInvocation:getBeginTime
+MethodInvocation:min
+MethodInvocation:toMillis
+MethodInvocation:get
+MethodInvocation:getBackgroundHandle
+MethodInvocation:trace
+MethodInvocation:trace
+MethodInvocation:warn
+MethodInvocation:getStatus
+MethodInvocation:debug
+MethodInvocation:getNumModifiedRows
+MethodInvocation:setNumModifiedRows
+MethodInvocation:setJobProgressUpdate
+MethodInvocation:progressUpdateLog
+Field:PROGRESS_MAX_WAIT_NS
+Method-name:progressUpdateLog
+Method-returnType:JobProgressUpdate
+Method-parameters:[boolean isProgressLogRequested, Operation operation, HiveConf conf]
+MethodInvocation:canProvideProgressLog
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:getSessionState
+MethodInvocation:getParentSession
+MethodInvocation:nanoTime
+MethodInvocation:isDone
+MethodInvocation:getProgressMonitor
+MethodInvocation:nanoTime
+MethodInvocation:debug
+MethodInvocation:waitToTerminate
+MethodInvocation:min
+MethodInvocation:warn
+MethodInvocation:getProgressMonitor
+Method-name:cancelOperation
+Method-returnType:void
+Method-parameters:[OperationHandle opHandle]
+MethodInvocation:cancelOperation
+MethodInvocation:getParentSession
+MethodInvocation:getOperation
+MethodInvocation:getOperationManager
+MethodInvocation:debug
+Method-name:closeOperation
+Method-returnType:void
+Method-parameters:[OperationHandle opHandle]
+MethodInvocation:closeOperation
+MethodInvocation:getParentSession
+MethodInvocation:getOperation
+MethodInvocation:getOperationManager
+MethodInvocation:debug
+Method-name:getResultSetMetadata
+Method-returnType:TableSchema
+Method-parameters:[OperationHandle opHandle]
+MethodInvocation:getResultSetMetadata
+MethodInvocation:getParentSession
+MethodInvocation:getOperation
+MethodInvocation:getOperationManager
+MethodInvocation:debug
+Method-name:fetchResults
+Method-returnType:RowSet
+Method-parameters:[OperationHandle opHandle]
+MethodInvocation:fetchResults
+Method-name:fetchResults
+Method-returnType:RowSet
+Method-parameters:[OperationHandle opHandle, FetchOrientation orientation, long maxRows, FetchType fetchType]
+MethodInvocation:fetchResults
+MethodInvocation:getParentSession
+MethodInvocation:getOperation
+MethodInvocation:getOperationManager
+MethodInvocation:debug
+Method-name:getDelegationTokenFromMetaStore
+Method-returnType:String
+Method-parameters:[String owner]
+MethodInvocation:getHiveConf
+MethodInvocation:getBoolVar
+MethodInvocation:getBoolVar
+MethodInvocation:closeCurrent
+MethodInvocation:getDelegationToken
+MethodInvocation:get
+MethodInvocation:getCause
+MethodInvocation:getCause
+Method-name:getDelegationToken
+Method-returnType:String
+Method-parameters:[SessionHandle sessionHandle, HiveAuthFactory authFactory, String owner, String renewer]
+MethodInvocation:getDelegationToken
+MethodInvocation:getSession
+MethodInvocation:info
+Method-name:setApplicationName
+Method-returnType:void
+Method-parameters:[SessionHandle sh, String value]
+MethodInvocation:setApplicationName
+MethodInvocation:getSession
+Method-name:cancelDelegationToken
+Method-returnType:void
+Method-parameters:[SessionHandle sessionHandle, HiveAuthFactory authFactory, String tokenStr]
+MethodInvocation:cancelDelegationToken
+MethodInvocation:getSession
+MethodInvocation:info
+Method-name:renewDelegationToken
+Method-returnType:void
+Method-parameters:[SessionHandle sessionHandle, HiveAuthFactory authFactory, String tokenStr]
+MethodInvocation:renewDelegationToken
+MethodInvocation:getSession
+MethodInvocation:info
+Method-name:getQueryId
+Method-returnType:String
+Method-parameters:[TOperationHandle opHandle]
+MethodInvocation:getOperation
+MethodInvocation:getOperationManager
+MethodInvocation:getQueryId
+MethodInvocation:debug
+Method-name:getSessionManager
+Method-returnType:SessionManager
+Method-parameters:[]

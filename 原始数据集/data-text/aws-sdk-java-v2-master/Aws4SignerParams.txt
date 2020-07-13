@@ -1,0 +1,139 @@
+Class:Aws4SignerParams
+Field:doubleUrlEncode
+Field:awsCredentials
+Field:signingName
+Field:signingRegion
+Field:timeOffset
+Field:signingClockOverride
+Method-name:Aws4SignerParams
+Method-returnType:null
+Method-parameters:[BuilderImpl<?> builder]
+FieldAccess:doubleUrlEncode
+MethodInvocation:paramNotNull
+FieldAccess:awsCredentials
+MethodInvocation:paramNotNull
+FieldAccess:signingName
+MethodInvocation:paramNotNull
+FieldAccess:signingRegion
+MethodInvocation:paramNotNull
+FieldAccess:timeOffset
+FieldAccess:signingClockOverride
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:doubleUrlEncode
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:awsCredentials
+Method-returnType:AwsCredentials
+Method-parameters:[]
+Method-name:signingName
+Method-returnType:String
+Method-parameters:[]
+Method-name:signingRegion
+Method-returnType:Region
+Method-parameters:[]
+Method-name:timeOffset
+Method-returnType:Optional<Integer>
+Method-parameters:[]
+MethodInvocation:ofNullable
+Method-name:signingClockOverride
+Method-returnType:Optional<Clock>
+Method-parameters:[]
+MethodInvocation:ofNullable
+Method-name:resolveSigningClock
+Method-returnType:Clock
+Method-parameters:[Aws4SignerRequestParams aws4SignerRequestParams]
+MethodInvocation:isPresent
+MethodInvocation:signingClockOverride
+MethodInvocation:get
+MethodInvocation:signingClockOverride
+MethodInvocation:systemUTC
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:timeOffset
+MethodInvocation:offset
+MethodInvocation:ofSeconds
+Method-name:doubleUrlEncode
+Method-returnType:B
+Method-parameters:[Boolean doubleUrlEncode]
+Method-name:awsCredentials
+Method-returnType:B
+Method-parameters:[AwsCredentials awsCredentials]
+Method-name:signingName
+Method-returnType:B
+Method-parameters:[String signingName]
+Method-name:signingRegion
+Method-returnType:B
+Method-parameters:[Region signingRegion]
+Method-name:timeOffset
+Method-returnType:B
+Method-parameters:[Integer timeOffset]
+Method-name:signingClockOverride
+Method-returnType:B
+Method-parameters:[Clock signingClockOverride]
+Method-name:build
+Method-returnType:Aws4SignerParams
+Method-parameters:[]
+Class:BuilderImpl
+Field:DEFAULT_DOUBLE_URL_ENCODE
+Field:doubleUrlEncode
+Field:awsCredentials
+Field:signingName
+Field:signingRegion
+Field:timeOffset
+Field:signingClockOverride
+Method-name:BuilderImpl
+Method-returnType:null
+Method-parameters:[]
+Method-name:doubleUrlEncode
+Method-returnType:B
+Method-parameters:[Boolean doubleUrlEncode]
+FieldAccess:doubleUrlEncode
+Method-name:setDoubleUrlEncode
+Method-returnType:void
+Method-parameters:[Boolean doubleUrlEncode]
+MethodInvocation:doubleUrlEncode
+Method-name:awsCredentials
+Method-returnType:B
+Method-parameters:[AwsCredentials awsCredentials]
+FieldAccess:awsCredentials
+Method-name:setAwsCredentials
+Method-returnType:void
+Method-parameters:[AwsCredentials awsCredentials]
+MethodInvocation:awsCredentials
+Method-name:signingName
+Method-returnType:B
+Method-parameters:[String signingName]
+FieldAccess:signingName
+Method-name:setSigningName
+Method-returnType:void
+Method-parameters:[String signingName]
+MethodInvocation:signingName
+Method-name:signingRegion
+Method-returnType:B
+Method-parameters:[Region signingRegion]
+FieldAccess:signingRegion
+Method-name:setSigningRegion
+Method-returnType:void
+Method-parameters:[Region signingRegion]
+MethodInvocation:signingRegion
+Method-name:timeOffset
+Method-returnType:B
+Method-parameters:[Integer timeOffset]
+FieldAccess:timeOffset
+Method-name:setTimeOffset
+Method-returnType:void
+Method-parameters:[Integer timeOffset]
+MethodInvocation:timeOffset
+Method-name:signingClockOverride
+Method-returnType:B
+Method-parameters:[Clock signingClockOverride]
+FieldAccess:signingClockOverride
+Method-name:setSigningClockOverride
+Method-returnType:void
+Method-parameters:[Clock signingClockOverride]
+MethodInvocation:signingClockOverride
+Method-name:build
+Method-returnType:Aws4SignerParams
+Method-parameters:[]

@@ -1,0 +1,102 @@
+Class:WalkStateGraphContext
+Field:initialStateClass
+Field:finalStateClass
+Field:mandatoryIntermediateState
+Field:loginContext
+Field:walkedStateGraphPath
+Field:failedStates
+Field:mandatoryIntermediateStateHandled
+Method-name:WalkStateGraphContext
+Method-returnType:null
+Method-parameters:[Builder builder]
+Method-name:recordWalkTo
+Method-returnType:void
+Method-parameters:[State state]
+MethodInvocation:add
+Method-name:isWalksFinalState
+Method-returnType:boolean
+Method-parameters:[StateDescriptor stateDescriptor]
+MethodInvocation:getClass
+Method-name:isFinalStateAuthenticatedAndResourceBound
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:maybeReturnMandatoryImmediateState
+Method-returnType:GraphVertex<State>
+Method-parameters:[List<GraphVertex<State>> outgoingStateEdges]
+MethodInvocation:getClass
+MethodInvocation:getStateDescriptor
+MethodInvocation:getElement
+Method-name:getWalk
+Method-returnType:List<State>
+Method-parameters:[]
+MethodInvocation:newListWith
+Method-name:getWalkLength
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:appendWalkTo
+Method-returnType:void
+Method-parameters:[List<State> walk]
+MethodInvocation:addAll
+Method-name:getLoginContext
+Method-returnType:LoginContext
+Method-parameters:[]
+Method-name:stateAlreadyVisited
+Method-returnType:boolean
+Method-parameters:[State state]
+MethodInvocation:contains
+Method-name:recordFailedState
+Method-returnType:void
+Method-parameters:[State state, StateTransitionResult stateTransitionResult]
+MethodInvocation:put
+Method-name:getFailedStates
+Method-returnType:Map<State,StateTransitionResult>
+Method-parameters:[]
+Method-name:wouldCauseCycle
+Method-returnType:boolean
+Method-parameters:[GraphVertex<State> successorStateVertex]
+MethodInvocation:wouldCycleRecursive
+Method-name:wouldCycleRecursive
+Method-returnType:boolean
+Method-parameters:[GraphVertex<State> stateVertex, Set<Class<? extends StateDescriptor>> visited]
+MethodInvocation:getClass
+MethodInvocation:getStateDescriptor
+MethodInvocation:getElement
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:getOutgoingEdges
+MethodInvocation:wouldCycleRecursive
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[Class<? extends StateDescriptor> initialStateClass, Class<? extends StateDescriptor> finalStateClass]
+Method-name:ensureNotOnOurWayToAuthenticatedAndResourceBound
+Method-returnType:void
+Method-parameters:[State state]
+MethodInvocation:isFinalStateAuthenticatedAndResourceBound
+Class:Builder
+Field:initialStateClass
+Field:finalStateClass
+Field:mandatoryIntermediateState
+Field:loginContext
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[Class<? extends StateDescriptor> initialStateClass, Class<? extends StateDescriptor> finalStateClass]
+FieldAccess:initialStateClass
+MethodInvocation:requireNonNull
+FieldAccess:finalStateClass
+MethodInvocation:requireNonNull
+Method-name:withMandatoryIntermediateState
+Method-returnType:Builder
+Method-parameters:[Class<? extends StateDescriptor> mandatoryIntermedidateState]
+FieldAccess:mandatoryIntermediateState
+Method-name:withLoginContext
+Method-returnType:Builder
+Method-parameters:[String username, String password, Resourcepart resource]
+MethodInvocation:withLoginContext
+Method-name:withLoginContext
+Method-returnType:Builder
+Method-parameters:[LoginContext loginContext]
+FieldAccess:loginContext
+Method-name:build
+Method-returnType:WalkStateGraphContext
+Method-parameters:[]

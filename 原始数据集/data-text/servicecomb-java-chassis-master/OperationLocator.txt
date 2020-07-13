@@ -1,0 +1,41 @@
+Class:OperationLocator
+Field:LOGGER
+MethodInvocation:getLogger
+Field:SLASH
+Field:operation
+Field:pathVarMap
+Field:resourceFound
+Method-name:getOperation
+Method-returnType:RestOperationMeta
+Method-parameters:[]
+FieldAccess:operation
+Method-name:getPathVarMap
+Method-returnType:Map<String,String>
+Method-parameters:[]
+FieldAccess:pathVarMap
+Method-name:locate
+Method-returnType:void
+Method-parameters:[String microserviceName, String path, String httpMethod, MicroservicePaths microservicePaths]
+MethodInvocation:locateStaticPathOperation
+MethodInvocation:getStaticPathOperationMap
+MethodInvocation:locateDynamicPathOperation
+MethodInvocation:getDynamicPathOperationList
+MethodInvocation:error
+MethodInvocation:getReasonPhrase
+Method-name:locateStaticPathOperation
+Method-returnType:RestOperationMeta
+Method-parameters:[String path, String httpMethod, Map<String,OperationGroup> staticPathOperations]
+MethodInvocation:get
+MethodInvocation:findValue
+Method-name:locateDynamicPathOperation
+Method-returnType:RestOperationMeta
+Method-parameters:[String path, Collection<RestOperationMeta> resourceList, String httpMethod]
+MethodInvocation:match
+MethodInvocation:getAbsolutePathRegExp
+MethodInvocation:equals
+MethodInvocation:checkHttpMethod
+Method-name:getStandardPath
+Method-returnType:String
+Method-parameters:[String path]
+MethodInvocation:length
+MethodInvocation:endsWith

@@ -1,0 +1,102 @@
+Class:CompressedXContent
+Method-name:crc32
+Method-returnType:int
+Method-parameters:[BytesReference data]
+MethodInvocation:writeTo
+MethodInvocation:getValue
+Field:bytes
+Field:crc32
+Method-name:CompressedXContent
+Method-returnType:null
+Method-parameters:[byte[] compressed, int crc32]
+FieldAccess:bytes
+FieldAccess:crc32
+MethodInvocation:assertConsistent
+Method-name:CompressedXContent
+Method-returnType:null
+Method-parameters:[ToXContent xcontent, XContentType type, ToXContent.Params params]
+MethodInvocation:streamOutput
+MethodInvocation:contentBuilder
+MethodInvocation:startObject
+MethodInvocation:toXContent
+MethodInvocation:endObject
+FieldAccess:bytes
+MethodInvocation:toBytes
+MethodInvocation:bytes
+FieldAccess:crc32
+MethodInvocation:getValue
+MethodInvocation:assertConsistent
+Method-name:CompressedXContent
+Method-returnType:null
+Method-parameters:[BytesReference data]
+MethodInvocation:compressor
+FieldAccess:bytes
+MethodInvocation:toBytes
+FieldAccess:crc32
+MethodInvocation:crc32
+MethodInvocation:uncompressed
+MethodInvocation:streamOutput
+MethodInvocation:writeTo
+FieldAccess:bytes
+MethodInvocation:toBytes
+MethodInvocation:bytes
+FieldAccess:crc32
+MethodInvocation:crc32
+MethodInvocation:assertConsistent
+Method-name:assertConsistent
+Method-returnType:void
+Method-parameters:[]
+Method-name:CompressedXContent
+Method-returnType:null
+Method-parameters:[byte[] data]
+Method-name:CompressedXContent
+Method-returnType:null
+Method-parameters:[String str]
+MethodInvocation:getBytes
+Method-name:compressed
+Method-returnType:byte[]
+Method-parameters:[]
+FieldAccess:bytes
+Method-name:compressedReference
+Method-returnType:BytesReference
+Method-parameters:[]
+Method-name:uncompressed
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:toBytes
+MethodInvocation:uncompress
+Method-name:string
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:utf8ToString
+MethodInvocation:uncompressed
+Method-name:readCompressedString
+Method-returnType:CompressedXContent
+Method-parameters:[StreamInput in]
+MethodInvocation:readInt
+MethodInvocation:readVInt
+MethodInvocation:readBytes
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeInt
+MethodInvocation:writeVInt
+MethodInvocation:writeBytes
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:compressed
+MethodInvocation:compressed
+MethodInvocation:equals
+MethodInvocation:uncompressed
+MethodInvocation:uncompressed
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:string

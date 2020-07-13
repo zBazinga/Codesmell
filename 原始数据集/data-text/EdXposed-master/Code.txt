@@ -1,0 +1,390 @@
+Class:Code
+Field:method
+Field:labels
+Field:currentLabel
+Field:localsInitialized
+Field:thisLocal
+Field:parameters
+Field:locals
+Field:sourcePosition
+Field:catchTypes
+Field:catchLabels
+Field:catches
+Method-name:Code
+Method-returnType:null
+Method-parameters:[DexMaker.MethodDeclaration methodDeclaration]
+FieldAccess:method
+MethodInvocation:isStatic
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:get
+FieldAccess:currentLabel
+MethodInvocation:adopt
+FieldAccess:currentLabel
+FieldAccess:marked
+FieldAccess:currentLabel
+Method-name:newLocal
+Method-returnType:Local<T>
+Method-parameters:[TypeId<T> type]
+MethodInvocation:get
+MethodInvocation:add
+Method-name:getParameter
+Method-returnType:Local<T>
+Method-parameters:[int index, TypeId<T> type]
+MethodInvocation:coerce
+MethodInvocation:get
+Method-name:getThis
+Method-returnType:Local<T>
+Method-parameters:[TypeId<T> type]
+MethodInvocation:coerce
+Method-name:coerce
+Method-returnType:Local<T>
+Method-parameters:[Local<?> local, TypeId<T> expectedType]
+MethodInvocation:equals
+Method-name:initializeLocals
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:initialize
+MethodInvocation:make
+MethodInvocation:initialize
+MethodInvocation:add
+MethodInvocation:opMoveParam
+MethodInvocation:spec
+MethodInvocation:addAll
+FieldAccess:instructions
+MethodInvocation:get
+Method-name:paramSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:adopt
+Method-returnType:void
+Method-parameters:[Label target]
+MethodInvocation:add
+Method-name:mark
+Method-returnType:void
+Method-parameters:[Label label]
+MethodInvocation:adopt
+MethodInvocation:jump
+Method-name:jump
+Method-returnType:void
+Method-parameters:[Label target]
+MethodInvocation:adopt
+MethodInvocation:addInstruction
+Method-name:addCatchClause
+Method-returnType:void
+Method-parameters:[TypeId<? extends Throwable> toCatch, Label catchClause]
+MethodInvocation:contains
+MethodInvocation:adopt
+MethodInvocation:add
+MethodInvocation:toTypeList
+MethodInvocation:add
+Method-name:removeCatchClause
+Method-returnType:Label
+Method-parameters:[TypeId<? extends Throwable> toCatch]
+MethodInvocation:indexOf
+MethodInvocation:remove
+MethodInvocation:toTypeList
+MethodInvocation:remove
+Method-name:moveException
+Method-returnType:void
+Method-parameters:[Local<?> result]
+MethodInvocation:addInstruction
+MethodInvocation:opMoveException
+MethodInvocation:spec
+Method-name:throwValue
+Method-returnType:void
+Method-parameters:[Local<? extends Throwable> toThrow]
+MethodInvocation:addInstruction
+MethodInvocation:make
+MethodInvocation:spec
+Method-name:toTypeList
+Method-returnType:StdTypeList
+Method-parameters:[List<TypeId<?>> types]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:set
+FieldAccess:ropType
+MethodInvocation:get
+Method-name:addInstruction
+Method-returnType:void
+Method-parameters:[Insn insn]
+MethodInvocation:addInstruction
+Method-name:addInstruction
+Method-returnType:void
+Method-parameters:[Insn insn, Label branch]
+MethodInvocation:add
+MethodInvocation:getBranchingness
+MethodInvocation:getOpcode
+MethodInvocation:splitCurrentLabel
+MethodInvocation:emptyList
+MethodInvocation:splitCurrentLabel
+Method-name:splitCurrentLabel
+Method-returnType:void
+Method-parameters:[Label alternateSuccessor, List<Label> catchLabels]
+MethodInvocation:adopt
+Method-name:loadConstant
+Method-returnType:void
+Method-parameters:[Local<T> target, T value]
+MethodInvocation:opConst
+MethodInvocation:getBranchingness
+MethodInvocation:addInstruction
+MethodInvocation:spec
+MethodInvocation:getConstant
+MethodInvocation:addInstruction
+MethodInvocation:getConstant
+MethodInvocation:moveResult
+Method-name:move
+Method-returnType:void
+Method-parameters:[Local<T> target, Local<T> source]
+MethodInvocation:addInstruction
+MethodInvocation:opMove
+MethodInvocation:spec
+MethodInvocation:spec
+Method-name:op
+Method-returnType:void
+Method-parameters:[UnaryOp op, Local<T> target, Local<T> source]
+MethodInvocation:addInstruction
+MethodInvocation:rop
+MethodInvocation:spec
+MethodInvocation:spec
+Method-name:op
+Method-returnType:void
+Method-parameters:[BinaryOp op, Local<T1> target, Local<T1> a, Local<T2> b]
+MethodInvocation:rop
+MethodInvocation:make
+MethodInvocation:make
+MethodInvocation:spec
+MethodInvocation:spec
+MethodInvocation:getBranchingness
+MethodInvocation:addInstruction
+MethodInvocation:spec
+MethodInvocation:addInstruction
+MethodInvocation:moveResult
+Method-name:compare
+Method-returnType:void
+Method-parameters:[Comparison comparison, Label trueLabel, Local<T> a, Local<T> b]
+MethodInvocation:adopt
+MethodInvocation:rop
+MethodInvocation:make
+MethodInvocation:addInstruction
+MethodInvocation:make
+MethodInvocation:spec
+MethodInvocation:spec
+Method-name:compareZ
+Method-returnType:void
+Method-parameters:[Comparison comparison, Label trueLabel, Local<?> a]
+MethodInvocation:adopt
+MethodInvocation:rop
+MethodInvocation:make
+MethodInvocation:addInstruction
+MethodInvocation:make
+MethodInvocation:spec
+Method-name:compareFloatingPoint
+Method-returnType:void
+Method-parameters:[Local<Integer> target, Local<T> a, Local<T> b, int nanValue]
+MethodInvocation:opCmpg
+MethodInvocation:opCmpl
+MethodInvocation:addInstruction
+MethodInvocation:spec
+MethodInvocation:make
+MethodInvocation:spec
+MethodInvocation:spec
+Method-name:compareLongs
+Method-returnType:void
+Method-parameters:[Local<Integer> target, Local<Long> a, Local<Long> b]
+MethodInvocation:addInstruction
+MethodInvocation:spec
+MethodInvocation:make
+MethodInvocation:spec
+MethodInvocation:spec
+Method-name:iget
+Method-returnType:void
+Method-parameters:[FieldId<D,? extends V> fieldId, Local<V> target, Local<D> instance]
+MethodInvocation:addInstruction
+MethodInvocation:opGetField
+MethodInvocation:make
+MethodInvocation:spec
+MethodInvocation:moveResult
+Method-name:iput
+Method-returnType:void
+Method-parameters:[FieldId<D,V> fieldId, Local<? extends D> instance, Local<? extends V> source]
+MethodInvocation:addInstruction
+MethodInvocation:opPutField
+MethodInvocation:make
+MethodInvocation:spec
+MethodInvocation:spec
+Method-name:sget
+Method-returnType:void
+Method-parameters:[FieldId<?,? extends V> fieldId, Local<V> target]
+MethodInvocation:addInstruction
+MethodInvocation:opGetStatic
+MethodInvocation:moveResult
+Method-name:sput
+Method-returnType:void
+Method-parameters:[FieldId<?,V> fieldId, Local<? extends V> source]
+MethodInvocation:addInstruction
+MethodInvocation:opPutStatic
+MethodInvocation:make
+MethodInvocation:spec
+Method-name:newInstance
+Method-returnType:void
+Method-parameters:[Local<T> target, MethodId<T,Void> constructor, Local<?>... args]
+MethodInvocation:addInstruction
+MethodInvocation:moveResult
+MethodInvocation:invokeDirect
+Method-name:invokeStatic
+Method-returnType:void
+Method-parameters:[MethodId<?,R> method, Local<? super R> target, Local<?>... args]
+MethodInvocation:invoke
+MethodInvocation:opInvokeStatic
+MethodInvocation:prototype
+Method-name:invokeVirtual
+Method-returnType:void
+Method-parameters:[MethodId<D,R> method, Local<? super R> target, Local<? extends D> instance, Local<?>... args]
+MethodInvocation:invoke
+MethodInvocation:opInvokeVirtual
+MethodInvocation:prototype
+Method-name:invokeDirect
+Method-returnType:void
+Method-parameters:[MethodId<D,R> method, Local<? super R> target, Local<? extends D> instance, Local<?>... args]
+MethodInvocation:invoke
+MethodInvocation:opInvokeDirect
+MethodInvocation:prototype
+Method-name:invokeSuper
+Method-returnType:void
+Method-parameters:[MethodId<D,R> method, Local<? super R> target, Local<? extends D> instance, Local<?>... args]
+MethodInvocation:invoke
+MethodInvocation:opInvokeSuper
+MethodInvocation:prototype
+Method-name:invokeInterface
+Method-returnType:void
+Method-parameters:[MethodId<D,R> method, Local<? super R> target, Local<? extends D> instance, Local<?>... args]
+MethodInvocation:invoke
+MethodInvocation:opInvokeInterface
+MethodInvocation:prototype
+Method-name:invoke
+Method-returnType:void
+Method-parameters:[Rop rop, MethodId<D,R> method, Local<? super R> target, Local<? extends D> object, Local<?>... args]
+MethodInvocation:addInstruction
+MethodInvocation:concatenate
+MethodInvocation:moveResult
+Method-name:instanceOfType
+Method-returnType:void
+Method-parameters:[Local<?> target, Local<?> source, TypeId<?> type]
+MethodInvocation:addInstruction
+MethodInvocation:make
+MethodInvocation:spec
+MethodInvocation:moveResult
+Method-name:cast
+Method-returnType:void
+Method-parameters:[Local<?> target, Local<?> source]
+MethodInvocation:isReference
+FieldAccess:ropType
+MethodInvocation:getType
+MethodInvocation:addInstruction
+MethodInvocation:make
+MethodInvocation:spec
+MethodInvocation:moveResult
+MethodInvocation:addInstruction
+MethodInvocation:getCastRop
+MethodInvocation:spec
+MethodInvocation:spec
+Method-name:getCastRop
+Method-returnType:Rop
+Method-parameters:[external.com.android.dx.rop.type.Type sourceType, external.com.android.dx.rop.type.Type targetType]
+MethodInvocation:getBasicType
+MethodInvocation:getBasicType
+MethodInvocation:opConv
+Method-name:arrayLength
+Method-returnType:void
+Method-parameters:[Local<Integer> target, Local<T> array]
+MethodInvocation:addInstruction
+MethodInvocation:make
+MethodInvocation:spec
+MethodInvocation:moveResult
+Method-name:newArray
+Method-returnType:void
+Method-parameters:[Local<T> target, Local<Integer> length]
+MethodInvocation:addInstruction
+MethodInvocation:opNewArray
+MethodInvocation:make
+MethodInvocation:spec
+MethodInvocation:moveResult
+Method-name:aget
+Method-returnType:void
+Method-parameters:[Local<?> target, Local<?> array, Local<Integer> index]
+MethodInvocation:addInstruction
+MethodInvocation:opAget
+MethodInvocation:make
+MethodInvocation:spec
+MethodInvocation:spec
+MethodInvocation:moveResult
+Method-name:aput
+Method-returnType:void
+Method-parameters:[Local<?> array, Local<Integer> index, Local<?> source]
+MethodInvocation:addInstruction
+MethodInvocation:opAput
+MethodInvocation:make
+MethodInvocation:spec
+MethodInvocation:spec
+MethodInvocation:spec
+Method-name:returnVoid
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:equals
+MethodInvocation:addInstruction
+Method-name:returnValue
+Method-returnType:void
+Method-parameters:[Local<?> result]
+MethodInvocation:equals
+MethodInvocation:addInstruction
+MethodInvocation:opReturn
+MethodInvocation:make
+MethodInvocation:spec
+Method-name:moveResult
+Method-returnType:void
+Method-parameters:[Local<?> target, boolean afterNonInvokeThrowingInsn]
+MethodInvocation:opMoveResultPseudo
+MethodInvocation:opMoveResult
+MethodInvocation:addInstruction
+MethodInvocation:spec
+Method-name:monitorEnter
+Method-returnType:void
+Method-parameters:[Local<?> monitor]
+MethodInvocation:addInstruction
+MethodInvocation:make
+MethodInvocation:spec
+Method-name:monitorExit
+Method-returnType:void
+Method-parameters:[Local<?> monitor]
+MethodInvocation:addInstruction
+MethodInvocation:make
+MethodInvocation:spec
+Method-name:toBasicBlocks
+Method-returnType:BasicBlockList
+Method-parameters:[]
+MethodInvocation:initializeLocals
+MethodInvocation:cleanUpLabels
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:set
+MethodInvocation:toBasicBlock
+MethodInvocation:get
+Method-name:cleanUpLabels
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:isEmpty
+MethodInvocation:remove
+MethodInvocation:compact
+Method-name:concatenate
+Method-returnType:RegisterSpecList
+Method-parameters:[Local<?> first, Local<?>[] rest]
+MethodInvocation:set
+MethodInvocation:spec
+MethodInvocation:set
+MethodInvocation:spec

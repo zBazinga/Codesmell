@@ -1,0 +1,150 @@
+Class:PublishableHttpResource
+Field:FILTER_PATH_NONE
+Field:FILTER_PATH_RESOURCE_VERSION
+Field:NO_BODY_PARAMETERS
+MethodInvocation:singletonMap
+Field:RESOURCE_VERSION_PARAMETERS
+MethodInvocation:singletonMap
+Field:GET_EXISTS
+MethodInvocation:singleton
+MethodInvocation:getStatus
+Field:GET_DOES_NOT_EXIST
+MethodInvocation:singleton
+MethodInvocation:getStatus
+Field:defaultParameters
+Method-name:PublishableHttpResource
+Method-returnType:null
+Method-parameters:[final String resourceOwnerName, @Nullable final TimeValue masterTimeout, final Map<String,String> baseParameters]
+Method-name:PublishableHttpResource
+Method-returnType:null
+Method-parameters:[final String resourceOwnerName, @Nullable final TimeValue masterTimeout, final Map<String,String> baseParameters, final boolean dirty]
+MethodInvocation:equals
+MethodInvocation:size
+MethodInvocation:putAll
+MethodInvocation:put
+MethodInvocation:toString
+FieldAccess:defaultParameters
+MethodInvocation:unmodifiableMap
+FieldAccess:defaultParameters
+Method-name:getDefaultParameters
+Method-returnType:Map<String,String>
+Method-parameters:[]
+Method-name:doCheckAndPublish
+Method-returnType:void
+Method-parameters:[final RestClient client, final ActionListener<Boolean> listener]
+MethodInvocation:doCheck
+MethodInvocation:wrap
+MethodInvocation:onResponse
+MethodInvocation:doPublish
+Method-name:doCheck
+Method-returnType:void
+Method-parameters:[RestClient client, ActionListener<Boolean> listener]
+Method-name:versionCheckForResource
+Method-returnType:void
+Method-parameters:[final RestClient client, final ActionListener<Boolean> listener, final Logger logger, final String resourceBasePath, final String resourceName, final String resourceType, final String resourceOwnerName, final String resourceOwnerType, final XContent xContent, final int minimumVersion]
+MethodInvocation:shouldReplaceResource
+MethodInvocation:checkForResource
+Method-name:checkForResource
+Method-returnType:void
+Method-parameters:[final RestClient client, final ActionListener<Boolean> listener, final Logger logger, final String resourceBasePath, final String resourceName, final String resourceType, final String resourceOwnerName, final String resourceOwnerType, final Set<Integer> exists, final Set<Integer> doesNotExist, final CheckedFunction<Response,Boolean,IOException> responseChecker, final CheckedFunction<Response,Boolean,IOException> doesNotExistResponseChecker]
+MethodInvocation:trace
+MethodInvocation:addDefaultParameters
+MethodInvocation:union
+MethodInvocation:addParameter
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toString
+MethodInvocation:joining
+MethodInvocation:performRequestAsync
+Method-name:onSuccess
+Method-returnType:void
+Method-parameters:[final Response response]
+MethodInvocation:getStatusCode
+MethodInvocation:getStatusLine
+MethodInvocation:contains
+MethodInvocation:debug
+MethodInvocation:onResponse
+MethodInvocation:apply
+MethodInvocation:contains
+MethodInvocation:debug
+MethodInvocation:onResponse
+MethodInvocation:apply
+MethodInvocation:onFailure
+MethodInvocation:error
+MethodInvocation:onFailure
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[final Exception exception]
+MethodInvocation:getResponse
+MethodInvocation:getStatusCode
+MethodInvocation:getStatusLine
+MethodInvocation:error
+MethodInvocation:error
+MethodInvocation:onFailure
+Method-name:doPublish
+Method-returnType:void
+Method-parameters:[RestClient client, ActionListener<Boolean> listener]
+Method-name:putResource
+Method-returnType:void
+Method-parameters:[final RestClient client, final ActionListener<Boolean> listener, final Logger logger, final String resourceBasePath, final String resourceName, final Map<String,String> parameters, final java.util.function.Supplier<HttpEntity> body, final String resourceType, final String resourceOwnerName, final String resourceOwnerType]
+MethodInvocation:trace
+MethodInvocation:addDefaultParameters
+MethodInvocation:addParameters
+MethodInvocation:setEntity
+MethodInvocation:get
+MethodInvocation:performRequestAsync
+Method-name:onSuccess
+Method-returnType:void
+Method-parameters:[final Response response]
+MethodInvocation:getStatusCode
+MethodInvocation:getStatusLine
+MethodInvocation:getStatus
+MethodInvocation:getStatus
+MethodInvocation:debug
+MethodInvocation:onResponse
+MethodInvocation:onFailure
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[final Exception exception]
+MethodInvocation:error
+MethodInvocation:onFailure
+Method-name:deleteResource
+Method-returnType:void
+Method-parameters:[final RestClient client, final ActionListener<Boolean> listener, final Logger logger, final String resourceBasePath, final String resourceName, final String resourceType, final String resourceOwnerName, final String resourceOwnerType]
+MethodInvocation:trace
+MethodInvocation:addDefaultParameters
+MethodInvocation:containsKey
+MethodInvocation:addParameter
+MethodInvocation:toString
+MethodInvocation:getStatus
+MethodInvocation:performRequestAsync
+Method-name:onSuccess
+Method-returnType:void
+Method-parameters:[Response response]
+MethodInvocation:getStatusCode
+MethodInvocation:getStatusLine
+MethodInvocation:getStatus
+MethodInvocation:getStatus
+MethodInvocation:debug
+MethodInvocation:onResponse
+MethodInvocation:onFailure
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception exception]
+MethodInvocation:error
+MethodInvocation:onFailure
+Method-name:alwaysReplaceResource
+Method-returnType:boolean
+Method-parameters:[final Response response]
+Method-name:addDefaultParameters
+Method-returnType:void
+Method-parameters:[final Request request]
+MethodInvocation:addParameters
+Method-name:addParameters
+Method-returnType:void
+Method-parameters:[final Request request, final Map<String,String> parameters]
+MethodInvocation:entrySet
+MethodInvocation:addParameter
+MethodInvocation:getKey
+MethodInvocation:getValue

@@ -1,0 +1,91 @@
+Class:RegionLocations
+Field:numNonNullElements
+Field:locations
+Method-name:RegionLocations
+Method-returnType:null
+Method-parameters:[HRegionLocation... locations]
+MethodInvocation:getReplicaId
+MethodInvocation:getRegion
+MethodInvocation:getReplicaId
+MethodInvocation:getRegion
+FieldAccess:locations
+FieldAccess:locations
+FieldAccess:locations
+MethodInvocation:getReplicaId
+MethodInvocation:getRegion
+FieldAccess:locations
+MethodInvocation:getServerName
+FieldAccess:numNonNullElements
+Method-name:RegionLocations
+Method-returnType:null
+Method-parameters:[Collection<HRegionLocation> locations]
+MethodInvocation:toArray
+MethodInvocation:size
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+Method-name:numNonNullElements
+Method-returnType:int
+Method-parameters:[]
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:removeByServer
+Method-returnType:RegionLocations
+Method-parameters:[ServerName serverName]
+MethodInvocation:equals
+MethodInvocation:getServerName
+MethodInvocation:arraycopy
+Method-name:remove
+Method-returnType:RegionLocations
+Method-parameters:[int replicaId]
+MethodInvocation:getRegionLocation
+MethodInvocation:arraycopy
+Method-name:removeElementsWithNullLocation
+Method-returnType:RegionLocations
+Method-parameters:[]
+MethodInvocation:getServerName
+Method-name:mergeLocations
+Method-returnType:RegionLocations
+Method-parameters:[RegionLocations other]
+Method-name:selectRegionLocation
+Method-returnType:HRegionLocation
+Method-parameters:[HRegionLocation oldLocation, HRegionLocation location, boolean checkForEquals, boolean force]
+MethodInvocation:isGreaterThan
+MethodInvocation:getSeqNum
+MethodInvocation:getSeqNum
+Method-name:updateLocation
+Method-returnType:RegionLocations
+Method-parameters:[HRegionLocation location, boolean checkForEquals, boolean force]
+Method-name:isGreaterThan
+Method-returnType:boolean
+Method-parameters:[long a, long b, boolean checkForEquals]
+Method-name:getRegionLocation
+Method-returnType:HRegionLocation
+Method-parameters:[int replicaId]
+Method-name:getRegionLocationByRegionName
+Method-returnType:HRegionLocation
+Method-parameters:[byte[] regionName]
+MethodInvocation:equals
+MethodInvocation:getRegionName
+MethodInvocation:getRegion
+MethodInvocation:equals
+MethodInvocation:getEncodedNameAsBytes
+MethodInvocation:getRegion
+Method-name:getRegionLocations
+Method-returnType:HRegionLocation[]
+Method-parameters:[]
+Method-name:getDefaultRegionLocation
+Method-returnType:HRegionLocation
+Method-parameters:[]
+Method-name:getRegionLocation
+Method-returnType:HRegionLocation
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString

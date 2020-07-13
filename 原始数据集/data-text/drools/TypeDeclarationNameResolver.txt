@@ -1,0 +1,124 @@
+Class:TypeDeclarationNameResolver
+Field:kbuilder
+Method-name:TypeDeclarationNameResolver
+Method-returnType:null
+Method-parameters:[KnowledgeBuilderImpl kbuilder]
+FieldAccess:kbuilder
+Method-name:resolveTypes
+Method-returnType:void
+Method-parameters:[Collection<? extends PackageDescr> packageDescrs, List<TypeDefinition> unresolvedTypes]
+MethodInvocation:getTypeResolver
+MethodInvocation:getPackageRegistry
+MethodInvocation:getName
+MethodInvocation:ensureQualifiedDeclarationName
+MethodInvocation:getTypeResolver
+MethodInvocation:getPackageRegistry
+MethodInvocation:getName
+MethodInvocation:qualifyNames
+Method-name:resolveTypes
+Method-returnType:void
+Method-parameters:[PackageDescr packageDescr, List<TypeDefinition> unresolvedTypes, TypeResolver typeResolver]
+MethodInvocation:ensureQualifiedDeclarationName
+MethodInvocation:qualifyNames
+Method-name:ensureQualifiedDeclarationName
+Method-returnType:void
+Method-parameters:[List<TypeDefinition> unresolvedTypes, PackageDescr packageDescr, TypeResolver typeResolver]
+MethodInvocation:getClassAndEnumDeclarationDescrs
+MethodInvocation:ensureQualifiedDeclarationName
+Method-name:qualifyNames
+Method-returnType:void
+Method-parameters:[List<TypeDefinition> unresolvedTypes, PackageDescr packageDescr, TypeResolver typeResolver]
+MethodInvocation:getTypeDeclarations
+MethodInvocation:qualifyNames
+MethodInvocation:discoverHierarchyForRedeclarations
+MethodInvocation:getEnumDeclarations
+MethodInvocation:qualifyNames
+Method-name:qualifyNames
+Method-returnType:void
+Method-parameters:[AbstractClassTypeDeclarationDescr declarationDescr, PackageDescr packageDescr, List<TypeDefinition> unresolvedTypes, TypeResolver typeResolver]
+MethodInvocation:ensureQualifiedSuperType
+MethodInvocation:ensureQualifiedFieldType
+Method-name:discoverHierarchyForRedeclarations
+Method-returnType:void
+Method-parameters:[TypeDeclarationDescr typeDescr, PackageDescr packageDescr, TypeResolver typeResolver]
+MethodInvocation:getPackageRegistry
+MethodInvocation:getName
+MethodInvocation:getExistingDeclarationClass
+MethodInvocation:isTrait
+MethodInvocation:fillStaticInterfaces
+MethodInvocation:clear
+MethodInvocation:getSuperTypes
+MethodInvocation:addSuperType
+MethodInvocation:isInterface
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:getSuperclass
+MethodInvocation:registerClass
+MethodInvocation:getFullTypeName
+Method-name:ensureQualifiedDeclarationName
+Method-returnType:void
+Method-parameters:[AbstractClassTypeDeclarationDescr declarationDescr, PackageDescr packageDescr, TypeResolver typeResolver, List<TypeDefinition> unresolvedTypes]
+MethodInvocation:resolveName
+MethodInvocation:getFullName
+MethodInvocation:getType
+MethodInvocation:equals
+MethodInvocation:getFullName
+MethodInvocation:getType
+MethodInvocation:isFullyQualified
+MethodInvocation:getType
+MethodInvocation:alreadyDefinedInPackage
+MethodInvocation:setTypeName
+MethodInvocation:setNamespace
+MethodInvocation:getNamespace
+Method-name:alreadyDefinedInPackage
+Method-returnType:boolean
+Method-parameters:[String resolved, AbstractClassTypeDeclarationDescr current, PackageDescr pd]
+MethodInvocation:getClassAndEnumDeclarationDescrs
+MethodInvocation:equals
+MethodInvocation:getFullName
+MethodInvocation:getType
+Method-name:ensureQualifiedSuperType
+Method-returnType:void
+Method-parameters:[AbstractClassTypeDeclarationDescr typeDescr, PackageDescr packageDescr, TypeResolver typeResolver, List<TypeDefinition> unresolvedTypes]
+MethodInvocation:getSuperTypes
+MethodInvocation:getFullName
+MethodInvocation:resolveName
+MethodInvocation:setName
+MethodInvocation:addBuilderResult
+MethodInvocation:getTypeName
+Method-name:ensureQualifiedFieldType
+Method-returnType:void
+Method-parameters:[AbstractClassTypeDeclarationDescr typeDescr, PackageDescr packageDescr, TypeResolver typeResolver, List<TypeDefinition> unresolvedTypes]
+MethodInvocation:values
+MethodInvocation:getFields
+MethodInvocation:getObjectType
+MethodInvocation:getPattern
+MethodInvocation:resolveName
+MethodInvocation:setObjectType
+MethodInvocation:getPattern
+MethodInvocation:addBuilderResult
+MethodInvocation:getFieldName
+MethodInvocation:getTypeName
+Method-name:resolveName
+Method-returnType:String
+Method-parameters:[String type, AbstractClassTypeDeclarationDescr typeDescr, PackageDescr packageDescr, TypeResolver typeResolver, List<TypeDefinition> unresolvedTypes, boolean forceResolution]
+MethodInvocation:isQualified
+MethodInvocation:lookupSimpleNameByImports
+MethodInvocation:getRootClassLoader
+MethodInvocation:resolveType
+MethodInvocation:getPackageRegistry
+MethodInvocation:getNamespace
+MethodInvocation:isQualified
+MethodInvocation:resolveType
+MethodInvocation:getCanonicalName
+MethodInvocation:typeName2ClassName
+MethodInvocation:getRootClassLoader
+MethodInvocation:isQualified
+MethodInvocation:setTypeClassName
+MethodInvocation:add
+Method-name:fillStaticInterfaces
+Method-returnType:void
+Method-parameters:[TypeDeclarationDescr typeDescr, Class<?> typeClass]
+MethodInvocation:getMinimalImplementedInterfaceNames
+MethodInvocation:addSuperType
+MethodInvocation:getName

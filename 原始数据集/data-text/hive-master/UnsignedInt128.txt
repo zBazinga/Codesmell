@@ -1,0 +1,814 @@
+Class:UnsignedInt128
+Field:INT_COUNT
+Field:BYTE_SIZE
+Field:MAX_DIGITS
+Field:MAX_VALUE
+Field:MIN_VALUE
+Field:TEN_TO_THIRTYEIGHT
+Field:v
+Field:count
+Method-name:getIntsPerElement
+Method-returnType:int
+Method-parameters:[int precision]
+MethodInvocation:assert
+Method-name:UnsignedInt128
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:zeroClear
+Method-name:UnsignedInt128
+Method-returnType:null
+Method-parameters:[UnsignedInt128 o]
+MethodInvocation:update
+Method-name:UnsignedInt128
+Method-returnType:null
+Method-parameters:[int v0, int v1, int v2, int v3]
+MethodInvocation:update
+Method-name:UnsignedInt128
+Method-returnType:null
+Method-parameters:[long v]
+MethodInvocation:update
+Method-name:UnsignedInt128
+Method-returnType:null
+Method-parameters:[String str]
+MethodInvocation:update
+Method-name:UnsignedInt128
+Method-returnType:null
+Method-parameters:[char[] str, int offset, int length]
+MethodInvocation:update
+Method-name:UnsignedInt128
+Method-returnType:null
+Method-parameters:[BigInteger bigInt]
+MethodInvocation:update
+Method-name:update
+Method-returnType:void
+Method-parameters:[BigInteger bigInt]
+MethodInvocation:intValue
+MethodInvocation:intValue
+MethodInvocation:shiftRight
+MethodInvocation:intValue
+MethodInvocation:shiftRight
+MethodInvocation:intValue
+MethodInvocation:shiftRight
+MethodInvocation:update
+Method-name:getV0
+Method-returnType:int
+Method-parameters:[]
+Method-name:getV1
+Method-returnType:int
+Method-parameters:[]
+Method-name:getV2
+Method-returnType:int
+Method-parameters:[]
+Method-name:getV3
+Method-returnType:int
+Method-parameters:[]
+Method-name:setV0
+Method-returnType:void
+Method-parameters:[int val]
+MethodInvocation:updateCount
+Method-name:setV1
+Method-returnType:void
+Method-parameters:[int val]
+MethodInvocation:updateCount
+Method-name:setV2
+Method-returnType:void
+Method-parameters:[int val]
+MethodInvocation:updateCount
+Method-name:setV3
+Method-returnType:void
+Method-parameters:[int val]
+MethodInvocation:updateCount
+Method-name:exceedsTenToThirtyEight
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:throwIfExceedsTenToThirtyEight
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:exceedsTenToThirtyEight
+MethodInvocation:throwOverflowException
+Method-name:asLong
+Method-returnType:long
+Method-parameters:[]
+FieldAccess:count
+MethodInvocation:throwOverflowException
+Method-name:zeroClear
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:count
+Method-name:isZero
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:count
+Method-name:isOne
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:v
+FieldAccess:count
+Method-name:fitsInt32
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:count
+Method-name:update
+Method-returnType:void
+Method-parameters:[UnsignedInt128 o]
+MethodInvocation:update
+Method-name:update
+Method-returnType:void
+Method-parameters:[long v]
+MethodInvocation:assert
+MethodInvocation:update
+Method-name:update
+Method-returnType:void
+Method-parameters:[int v0, int v1, int v2, int v3]
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+MethodInvocation:updateCount
+Method-name:update
+Method-returnType:void
+Method-parameters:[IntBuffer buf, int precision]
+MethodInvocation:getIntsPerElement
+MethodInvocation:update32
+MethodInvocation:update64
+MethodInvocation:update96
+MethodInvocation:update128
+Method-name:update128
+Method-returnType:void
+Method-parameters:[IntBuffer buf]
+MethodInvocation:get
+MethodInvocation:updateCount
+Method-name:update96
+Method-returnType:void
+Method-parameters:[IntBuffer buf]
+MethodInvocation:get
+MethodInvocation:updateCount
+Method-name:update64
+Method-returnType:void
+Method-parameters:[IntBuffer buf]
+MethodInvocation:get
+MethodInvocation:updateCount
+Method-name:update32
+Method-returnType:void
+Method-parameters:[IntBuffer buf]
+MethodInvocation:get
+MethodInvocation:updateCount
+Method-name:update
+Method-returnType:void
+Method-parameters:[int[] array, int offset, int precision]
+MethodInvocation:getIntsPerElement
+MethodInvocation:update32
+MethodInvocation:update64
+MethodInvocation:update96
+MethodInvocation:update128
+Method-name:update128
+Method-returnType:void
+Method-parameters:[int[] array, int offset]
+MethodInvocation:arraycopy
+MethodInvocation:updateCount
+Method-name:update96
+Method-returnType:void
+Method-parameters:[int[] array, int offset]
+MethodInvocation:arraycopy
+MethodInvocation:updateCount
+Method-name:update64
+Method-returnType:void
+Method-parameters:[int[] array, int offset]
+MethodInvocation:arraycopy
+MethodInvocation:updateCount
+Method-name:update32
+Method-returnType:void
+Method-parameters:[int[] array, int offset]
+MethodInvocation:updateCount
+Method-name:update
+Method-returnType:void
+Method-parameters:[String str]
+MethodInvocation:update
+MethodInvocation:toCharArray
+MethodInvocation:length
+Method-name:update
+Method-returnType:void
+Method-parameters:[char[] str, int offset, int length]
+MethodInvocation:assert
+MethodInvocation:zeroClear
+MethodInvocation:throwOverflowException
+MethodInvocation:scaleUpTenDestructive
+MethodInvocation:addDestructive
+MethodInvocation:scaleUpTenDestructive
+MethodInvocation:addDestructive
+Method-name:serializeTo
+Method-returnType:void
+Method-parameters:[IntBuffer buf, int precision]
+MethodInvocation:put
+MethodInvocation:getIntsPerElement
+Method-name:serializeTo128
+Method-returnType:void
+Method-parameters:[IntBuffer buf]
+MethodInvocation:put
+Method-name:serializeTo96
+Method-returnType:void
+Method-parameters:[IntBuffer buf]
+MethodInvocation:assert
+MethodInvocation:put
+Method-name:serializeTo64
+Method-returnType:void
+Method-parameters:[IntBuffer buf]
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:put
+Method-name:serializeTo32
+Method-returnType:void
+Method-parameters:[IntBuffer buf]
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:put
+Method-name:serializeTo
+Method-returnType:void
+Method-parameters:[int[] array, int offset, int precision]
+MethodInvocation:arraycopy
+MethodInvocation:getIntsPerElement
+Method-name:serializeTo128
+Method-returnType:void
+Method-parameters:[int[] array, int offset]
+MethodInvocation:arraycopy
+Method-name:serializeTo96
+Method-returnType:void
+Method-parameters:[int[] array, int offset]
+MethodInvocation:assert
+MethodInvocation:arraycopy
+Method-name:serializeTo64
+Method-returnType:void
+Method-parameters:[int[] array, int offset]
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:arraycopy
+Method-name:serializeTo32
+Method-returnType:void
+Method-parameters:[int[] array, int offset]
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:assert
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[UnsignedInt128 o]
+MethodInvocation:compareTo
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[int[] o]
+MethodInvocation:compareTo
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[int o0, int o1, int o2, int o3]
+MethodInvocation:compareUnsignedInt
+MethodInvocation:compareUnsignedInt
+MethodInvocation:compareUnsignedInt
+MethodInvocation:compareUnsignedInt
+Method-name:compareToScaleTen
+Method-returnType:int
+Method-parameters:[UnsignedInt128 o, short tenScale]
+MethodInvocation:compareTo
+MethodInvocation:isZero
+MethodInvocation:isZero
+MethodInvocation:isZero
+MethodInvocation:compareTo
+MethodInvocation:fitsInt32
+MethodInvocation:fitsInt32
+FieldAccess:v
+MethodInvocation:assert
+MethodInvocation:compareUnsignedLong
+MethodInvocation:clone
+MethodInvocation:scaleDownTenArray4RoundUp
+MethodInvocation:scaleUpTenArray
+MethodInvocation:compareTo
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[UnsignedInt128 o]
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[int o0, int o1, int o2, int o3]
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+Method-name:clone
+Method-returnType:Object
+Method-parameters:[]
+Method-name:toBigIntegerSlow
+Method-returnType:BigInteger
+Method-parameters:[]
+MethodInvocation:valueOf
+MethodInvocation:shiftLeft
+MethodInvocation:add
+MethodInvocation:valueOf
+MethodInvocation:shiftLeft
+MethodInvocation:add
+MethodInvocation:valueOf
+MethodInvocation:shiftLeft
+MethodInvocation:add
+MethodInvocation:valueOf
+Method-name:toFormalString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isZero
+MethodInvocation:divideDestructive
+Method-name:getDigitsArray
+Method-returnType:char[]
+Method-parameters:[int[] meta]
+MethodInvocation:isZero
+MethodInvocation:divideDestructive
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toHexString
+MethodInvocation:append
+MethodInvocation:toHexString
+MethodInvocation:append
+MethodInvocation:toHexString
+MethodInvocation:append
+MethodInvocation:toHexString
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:toBigIntegerSlow
+Method-name:addDestructive
+Method-returnType:void
+Method-parameters:[UnsignedInt128 right]
+MethodInvocation:addDestructive
+Method-name:addDestructive
+Method-returnType:void
+Method-parameters:[int[] r]
+FieldAccess:v
+FieldAccess:v
+MethodInvocation:updateCount
+MethodInvocation:throwOverflowException
+Method-name:addDestructive
+Method-returnType:void
+Method-parameters:[int r]
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+MethodInvocation:throwOverflowException
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+MethodInvocation:updateCount
+Method-name:incrementDestructive
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:incrementArray
+MethodInvocation:updateCount
+Method-name:decrementDestructive
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:decrementArray
+MethodInvocation:updateCount
+Method-name:addDestructiveScaleTen
+Method-returnType:void
+Method-parameters:[UnsignedInt128 right, short tenScale]
+MethodInvocation:addDestructive
+MethodInvocation:clone
+MethodInvocation:scaleDownTenArray4RoundUp
+MethodInvocation:scaleUpTenArray
+MethodInvocation:throwOverflowException
+MethodInvocation:addDestructive
+Method-name:subtractDestructive
+Method-returnType:void
+Method-parameters:[UnsignedInt128 right]
+MethodInvocation:subtractDestructive
+Method-name:subtractDestructive
+Method-returnType:void
+Method-parameters:[int[] r]
+FieldAccess:v
+FieldAccess:v
+MethodInvocation:updateCount
+MethodInvocation:throwOverflowException
+Method-name:difference
+Method-returnType:byte
+Method-parameters:[UnsignedInt128 left, UnsignedInt128 right, UnsignedInt128 result]
+MethodInvocation:differenceInternal
+Method-name:differenceScaleTen
+Method-returnType:byte
+Method-parameters:[UnsignedInt128 left, UnsignedInt128 right, UnsignedInt128 result, short tenScale]
+MethodInvocation:difference
+MethodInvocation:clone
+MethodInvocation:scaleDownTenArray4RoundUp
+MethodInvocation:scaleUpTenArray
+MethodInvocation:throwOverflowException
+MethodInvocation:differenceInternal
+Method-name:multiplyDestructive
+Method-returnType:void
+Method-parameters:[int right]
+MethodInvocation:zeroClear
+FieldAccess:v
+FieldAccess:v
+MethodInvocation:updateCount
+MethodInvocation:throwOverflowException
+Method-name:multiplyDestructive
+Method-returnType:void
+Method-parameters:[UnsignedInt128 right]
+MethodInvocation:fitsInt32
+MethodInvocation:fitsInt32
+MethodInvocation:multiplyDestructiveFitsInt32
+MethodInvocation:multiplyArrays4And4To4NoOverflow
+FieldAccess:v
+MethodInvocation:updateCount
+Method-name:multiplyShiftDestructive
+Method-returnType:void
+Method-parameters:[UnsignedInt128 right, short rightShifts]
+MethodInvocation:fitsInt32
+MethodInvocation:fitsInt32
+MethodInvocation:multiplyDestructiveFitsInt32
+MethodInvocation:multiplyArrays4And4To8
+FieldAccess:v
+MethodInvocation:shiftRightArray
+FieldAccess:v
+MethodInvocation:updateCount
+Method-name:multiplyScaleDownTenDestructive
+Method-returnType:void
+Method-parameters:[UnsignedInt128 right, short tenScale]
+MethodInvocation:assert
+MethodInvocation:fitsInt32
+MethodInvocation:fitsInt32
+MethodInvocation:multiplyDestructiveFitsInt32
+MethodInvocation:multiplyArrays4And4To8
+FieldAccess:v
+MethodInvocation:scaleDownTenArray8RoundUp
+MethodInvocation:update
+Method-name:divideDestructive
+Method-returnType:void
+Method-parameters:[UnsignedInt128 right, UnsignedInt128 remainder]
+MethodInvocation:isZero
+MethodInvocation:assert
+MethodInvocation:isZero
+MethodInvocation:throwZeroDivisionException
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:divideDestructive
+MethodInvocation:update
+MethodInvocation:divideMultiPrecision
+FieldAccess:v
+MethodInvocation:update
+MethodInvocation:update
+Method-name:divideScaleUpTenDestructive
+Method-returnType:void
+Method-parameters:[UnsignedInt128 right, short tenScale, UnsignedInt128 remainder]
+MethodInvocation:throwOverflowException
+MethodInvocation:multiplyConstructive256
+MethodInvocation:divideMultiPrecision
+MethodInvocation:update
+MethodInvocation:update
+Method-name:divideDestructive
+Method-returnType:int
+Method-parameters:[int right]
+MethodInvocation:assert
+FieldAccess:v
+FieldAccess:v
+MethodInvocation:updateCount
+Method-name:divideDestructive
+Method-returnType:long
+Method-parameters:[long right]
+MethodInvocation:assert
+FieldAccess:v
+FieldAccess:v
+MethodInvocation:updateCount
+Method-name:shiftRightDestructive
+Method-returnType:void
+Method-parameters:[int bits, boolean roundUp]
+MethodInvocation:assert
+MethodInvocation:shiftRightDestructive
+Method-name:shiftLeftDestructive
+Method-returnType:void
+Method-parameters:[int bits]
+MethodInvocation:assert
+MethodInvocation:shiftLeftDestructive
+Method-name:shiftLeftDestructiveCheckOverflow
+Method-returnType:void
+Method-parameters:[int bits]
+MethodInvocation:bitLength
+MethodInvocation:throwOverflowException
+MethodInvocation:shiftLeftDestructive
+Method-name:scaleDownTenDestructive
+Method-returnType:void
+Method-parameters:[short tenScale]
+MethodInvocation:isZero
+MethodInvocation:scaleDownTenArray4RoundUp
+MethodInvocation:updateCount
+Method-name:scaleDownFiveDestructive
+Method-returnType:void
+Method-parameters:[short fiveScale]
+MethodInvocation:isZero
+MethodInvocation:scaleDownFiveArrayRoundUp
+MethodInvocation:updateCount
+Method-name:scaleUpTenDestructive
+Method-returnType:void
+Method-parameters:[short tenScale]
+MethodInvocation:isZero
+MethodInvocation:shiftLeftDestructiveCheckOverflow
+MethodInvocation:scaleUpFiveDestructive
+Method-name:scaleUpFiveDestructive
+Method-returnType:void
+Method-parameters:[short fiveScale]
+MethodInvocation:isZero
+MethodInvocation:min
+MethodInvocation:multiplyDestructive
+Method-name:addConstructive
+Method-returnType:UnsignedInt128
+Method-parameters:[UnsignedInt128 right]
+MethodInvocation:addDestructive
+Method-name:incrementConstructive
+Method-returnType:UnsignedInt128
+Method-parameters:[]
+MethodInvocation:incrementDestructive
+Method-name:subtractConstructive
+Method-returnType:UnsignedInt128
+Method-parameters:[UnsignedInt128 right]
+MethodInvocation:subtractDestructive
+Method-name:decrementConstructive
+Method-returnType:UnsignedInt128
+Method-parameters:[]
+MethodInvocation:decrementDestructive
+Method-name:multiplyConstructive
+Method-returnType:UnsignedInt128
+Method-parameters:[int right]
+MethodInvocation:multiplyDestructive
+Method-name:multiplyConstructive
+Method-returnType:UnsignedInt128
+Method-parameters:[UnsignedInt128 right]
+MethodInvocation:multiplyDestructive
+Method-name:multiplyConstructive256
+Method-returnType:int[]
+Method-parameters:[UnsignedInt128 right]
+MethodInvocation:multiplyArrays4And4To8
+FieldAccess:v
+Method-name:divideConstructive
+Method-returnType:UnsignedInt128
+Method-parameters:[int right]
+MethodInvocation:divideDestructive
+Method-name:divideConstructive
+Method-returnType:UnsignedInt128
+Method-parameters:[UnsignedInt128 right, UnsignedInt128 remainder]
+MethodInvocation:divideDestructive
+Method-name:shiftRightConstructive
+Method-returnType:UnsignedInt128
+Method-parameters:[int bits, boolean roundUp]
+MethodInvocation:shiftRightDestructive
+Method-name:shiftLeftConstructive
+Method-returnType:UnsignedInt128
+Method-parameters:[int bits]
+MethodInvocation:shiftLeftDestructive
+Method-name:bitLength
+Method-returnType:short
+Method-parameters:[]
+MethodInvocation:bitLength
+Method-name:shiftRightDestructive
+Method-returnType:void
+Method-parameters:[int wordShifts, int bitShiftsInWord, boolean roundUp]
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:zeroClear
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+MethodInvocation:assert
+MethodInvocation:update
+MethodInvocation:incrementDestructive
+Method-name:shiftLeftDestructive
+Method-returnType:void
+Method-parameters:[int wordShifts, int bitShiftsInWord]
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:zeroClear
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+MethodInvocation:assert
+MethodInvocation:update
+Method-name:multiplyArrays4And4To4NoOverflow
+Method-returnType:void
+Method-parameters:[int[] left, int[] right]
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:throwOverflowException
+MethodInvocation:throwOverflowException
+Method-name:multiplyArrays4And4To8
+Method-returnType:int[]
+Method-parameters:[int[] left, int[] right]
+MethodInvocation:assert
+MethodInvocation:assert
+Method-name:incrementArray
+Method-returnType:void
+Method-parameters:[int[] array]
+MethodInvocation:throwOverflowException
+Method-name:decrementArray
+Method-returnType:void
+Method-parameters:[int[] array]
+MethodInvocation:throwOverflowException
+Method-name:differenceInternal
+Method-returnType:byte
+Method-parameters:[UnsignedInt128 left, int[] r, UnsignedInt128 result]
+MethodInvocation:compareTo
+MethodInvocation:zeroClear
+MethodInvocation:throwOverflowException
+MethodInvocation:updateCount
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[int l0, int l1, int l2, int l3, int r0, int r1, int r2, int r3]
+MethodInvocation:compareUnsignedInt
+MethodInvocation:compareUnsignedInt
+MethodInvocation:compareUnsignedInt
+MethodInvocation:compareUnsignedInt
+Method-name:scaleUpTenArray
+Method-returnType:boolean
+Method-parameters:[int[] array, short tenScale]
+MethodInvocation:min
+Method-name:scaleDownTenArray4RoundUp
+Method-returnType:void
+Method-parameters:[int[] array, short tenScale]
+MethodInvocation:scaleDownFiveArray
+MethodInvocation:shiftRightArray
+Method-name:scaleDownTenArray8RoundUp
+Method-returnType:void
+Method-parameters:[int[] array, short tenScale]
+MethodInvocation:assert
+MethodInvocation:fill
+MethodInvocation:assert
+MethodInvocation:divideCheckRound
+MethodInvocation:incrementArray
+FieldAccess:v
+MethodInvocation:assert
+MethodInvocation:assert
+MethodInvocation:throwOverflowException
+MethodInvocation:throwOverflowException
+FieldAccess:v
+FieldAccess:v
+MethodInvocation:compareTo
+MethodInvocation:incrementArray
+Method-name:scaleDownFiveArray
+Method-returnType:boolean
+Method-parameters:[int[] array, short fiveScale]
+MethodInvocation:min
+MethodInvocation:assert
+MethodInvocation:divideCheckRound
+MethodInvocation:divideCheckRound
+Method-name:divideCheckRound
+Method-returnType:boolean
+Method-parameters:[int[] array, int divisor]
+Method-name:scaleDownFiveArrayRoundUp
+Method-returnType:void
+Method-parameters:[int[] array, short tenScale]
+MethodInvocation:scaleDownFiveArray
+MethodInvocation:incrementArray
+Method-name:shiftRightArray
+Method-returnType:void
+Method-parameters:[int rightShifts, int[] z, int[] result, boolean round]
+MethodInvocation:assert
+MethodInvocation:throwOverflowException
+MethodInvocation:throwOverflowException
+MethodInvocation:throwOverflowException
+MethodInvocation:assert
+MethodInvocation:incrementArray
+Method-name:multiplyDestructiveFitsInt32
+Method-returnType:void
+Method-parameters:[UnsignedInt128 right, short rightShifts, short tenScaleDown]
+MethodInvocation:assert
+MethodInvocation:fitsInt32
+MethodInvocation:fitsInt32
+MethodInvocation:assert
+MethodInvocation:isZero
+MethodInvocation:isZero
+MethodInvocation:zeroClear
+MethodInvocation:isOne
+MethodInvocation:update
+MethodInvocation:multiplyDestructive
+MethodInvocation:shiftRightDestructive
+MethodInvocation:scaleDownTenDestructive
+Method-name:updateCount
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:count
+FieldAccess:count
+FieldAccess:count
+FieldAccess:count
+FieldAccess:count
+Method-name:fastSerializeIntPartForHiveDecimal
+Method-returnType:void
+Method-parameters:[ByteBuffer buf, int pos, int value, byte signum, boolean isFirstNonZero]
+MethodInvocation:putInt
+Method-name:fastSerializeForHiveDecimal
+Method-returnType:int
+Method-parameters:[Decimal128FastBuffer scratch, byte signum]
+FieldAccess:count
+MethodInvocation:getByteBuffer
+MethodInvocation:put
+FieldAccess:count
+FieldAccess:count
+MethodInvocation:fastSerializeIntPartForHiveDecimal
+MethodInvocation:fastSerializeIntPartForHiveDecimal
+MethodInvocation:fastSerializeIntPartForHiveDecimal
+MethodInvocation:fastSerializeIntPartForHiveDecimal
+Method-name:fastUpdateFromInternalStorage
+Method-returnType:byte
+Method-parameters:[byte[] internalStorage]
+FieldAccess:count
+MethodInvocation:assert
+FieldAccess:count
+FieldAccess:v
+MethodInvocation:fastUpdateIntFromInternalStorage
+FieldAccess:count
+MethodInvocation:fastUpdateIntFromInternalStorage
+FieldAccess:count
+MethodInvocation:fastUpdateIntFromInternalStorage
+FieldAccess:count
+MethodInvocation:fastUpdateIntFromInternalStorage
+FieldAccess:count
+FieldAccess:count
+Method-name:fastUpdateIntFromInternalStorage
+Method-returnType:int
+Method-parameters:[byte[] internalStorage, byte signum, int pos, int length]
+Method-name:getV
+Method-returnType:int[]
+Method-parameters:[]
+Method-name:setV
+Method-returnType:void
+Method-parameters:[int[] v]
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+FieldAccess:v
+MethodInvocation:updateCount
+Method-name:getCount
+Method-returnType:byte
+Method-parameters:[]
+Method-name:setCount
+Method-returnType:void
+Method-parameters:[byte count]
+FieldAccess:count
+Method-name:zeroFractionPart
+Method-returnType:void
+Method-parameters:[Decimal128 decimal128]
+MethodInvocation:getScale
+MethodInvocation:divideDestructive
+MethodInvocation:getUnscaledValue
+MethodInvocation:scaleUpTenDestructive
+MethodInvocation:getUnscaledValue
+MethodInvocation:isZero
+MethodInvocation:getUnscaledValue
+MethodInvocation:setSignum

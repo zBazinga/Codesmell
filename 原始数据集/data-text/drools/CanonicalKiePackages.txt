@@ -1,0 +1,27 @@
+Class:CanonicalKiePackages
+Field:packages
+Method-name:CanonicalKiePackages
+Method-returnType:null
+Method-parameters:[Map<String,InternalKnowledgePackage> packages]
+FieldAccess:packages
+Method-name:getKiePackages
+Method-returnType:Collection<InternalKnowledgePackage>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getKiePackage
+Method-returnType:KiePackage
+Method-parameters:[String pkgName]
+MethodInvocation:get
+Method-name:addKiePackage
+Method-returnType:void
+Method-parameters:[InternalKnowledgePackage kiePackage]
+MethodInvocation:put
+MethodInvocation:getName
+Method-name:mergeProcesses
+Method-returnType:CanonicalKiePackages
+Method-parameters:[List<Process> processes, CanonicalKieModule canonicalKieModule]
+MethodInvocation:getKiePackage
+MethodInvocation:getPackageName
+MethodInvocation:getPackageName
+MethodInvocation:addKiePackage
+MethodInvocation:addProcess

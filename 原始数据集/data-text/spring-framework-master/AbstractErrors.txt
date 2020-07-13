@@ -1,0 +1,153 @@
+Class:AbstractErrors
+Field:nestedPath
+Field:nestedPathStack
+Method-name:setNestedPath
+Method-returnType:void
+Method-parameters:[@Nullable String nestedPath]
+MethodInvocation:doSetNestedPath
+MethodInvocation:clear
+FieldAccess:nestedPathStack
+Method-name:getNestedPath
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:nestedPath
+Method-name:pushNestedPath
+Method-returnType:void
+Method-parameters:[String subPath]
+MethodInvocation:push
+FieldAccess:nestedPathStack
+MethodInvocation:getNestedPath
+MethodInvocation:doSetNestedPath
+MethodInvocation:getNestedPath
+Method-name:popNestedPath
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:pop
+FieldAccess:nestedPathStack
+MethodInvocation:doSetNestedPath
+Method-name:doSetNestedPath
+Method-returnType:void
+Method-parameters:[@Nullable String nestedPath]
+MethodInvocation:canonicalFieldName
+MethodInvocation:length
+MethodInvocation:endsWith
+FieldAccess:nestedPath
+Method-name:fixedField
+Method-returnType:String
+Method-parameters:[@Nullable String field]
+MethodInvocation:hasLength
+MethodInvocation:getNestedPath
+MethodInvocation:canonicalFieldName
+MethodInvocation:getNestedPath
+MethodInvocation:endsWith
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:length
+Method-name:canonicalFieldName
+Method-returnType:String
+Method-parameters:[String field]
+Method-name:reject
+Method-returnType:void
+Method-parameters:[String errorCode]
+MethodInvocation:reject
+Method-name:reject
+Method-returnType:void
+Method-parameters:[String errorCode, String defaultMessage]
+MethodInvocation:reject
+Method-name:rejectValue
+Method-returnType:void
+Method-parameters:[@Nullable String field, String errorCode]
+MethodInvocation:rejectValue
+Method-name:rejectValue
+Method-returnType:void
+Method-parameters:[@Nullable String field, String errorCode, String defaultMessage]
+MethodInvocation:rejectValue
+Method-name:hasErrors
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:getAllErrors
+Method-name:getErrorCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getAllErrors
+Method-name:getAllErrors
+Method-returnType:List<ObjectError>
+Method-parameters:[]
+MethodInvocation:addAll
+MethodInvocation:getGlobalErrors
+MethodInvocation:addAll
+MethodInvocation:getFieldErrors
+MethodInvocation:unmodifiableList
+Method-name:hasGlobalErrors
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getGlobalErrorCount
+Method-name:getGlobalErrorCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getGlobalErrors
+Method-name:getGlobalError
+Method-returnType:ObjectError
+Method-parameters:[]
+MethodInvocation:getGlobalErrors
+MethodInvocation:isEmpty
+MethodInvocation:get
+Method-name:hasFieldErrors
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getFieldErrorCount
+Method-name:getFieldErrorCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getFieldErrors
+Method-name:getFieldError
+Method-returnType:FieldError
+Method-parameters:[]
+MethodInvocation:getFieldErrors
+MethodInvocation:isEmpty
+MethodInvocation:get
+Method-name:hasFieldErrors
+Method-returnType:boolean
+Method-parameters:[String field]
+MethodInvocation:getFieldErrorCount
+Method-name:getFieldErrorCount
+Method-returnType:int
+Method-parameters:[String field]
+MethodInvocation:size
+MethodInvocation:getFieldErrors
+Method-name:getFieldErrors
+Method-returnType:List<FieldError>
+Method-parameters:[String field]
+MethodInvocation:getFieldErrors
+MethodInvocation:fixedField
+MethodInvocation:isMatchingFieldError
+MethodInvocation:add
+MethodInvocation:unmodifiableList
+Method-name:getFieldError
+Method-returnType:FieldError
+Method-parameters:[String field]
+MethodInvocation:getFieldErrors
+MethodInvocation:isEmpty
+MethodInvocation:get
+Method-name:getFieldType
+Method-returnType:Class<?>
+Method-parameters:[String field]
+MethodInvocation:getFieldValue
+MethodInvocation:getClass
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getErrorCount
+MethodInvocation:getAllErrors
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString

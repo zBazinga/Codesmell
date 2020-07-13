@@ -1,0 +1,229 @@
+Class:Entry
+Field:serialVersionUID
+Field:summary
+Field:title
+Field:created
+Field:published
+Field:updated
+Field:source
+Field:alternateLinks
+Field:authors
+Field:categories
+Field:contents
+Field:contributors
+Field:foreignMarkup
+Field:modules
+Field:otherLinks
+Field:id
+Field:rights
+Field:xmlBase
+Method-name:Entry
+Method-returnType:null
+Method-parameters:[]
+Method-name:setAlternateLinks
+Method-returnType:void
+Method-parameters:[final List<Link> alternateLinks]
+FieldAccess:alternateLinks
+Method-name:getAlternateLinks
+Method-returnType:List<Link>
+Method-parameters:[]
+MethodInvocation:createWhenNull
+Method-name:setAuthors
+Method-returnType:void
+Method-parameters:[final List<SyndPerson> authors]
+FieldAccess:authors
+Method-name:getAuthors
+Method-returnType:List<SyndPerson>
+Method-parameters:[]
+MethodInvocation:createWhenNull
+Method-name:setCategories
+Method-returnType:void
+Method-parameters:[final List<Category> categories]
+FieldAccess:categories
+Method-name:getCategories
+Method-returnType:List<Category>
+Method-parameters:[]
+MethodInvocation:createWhenNull
+Method-name:setContents
+Method-returnType:void
+Method-parameters:[final List<Content> contents]
+FieldAccess:contents
+Method-name:getContents
+Method-returnType:List<Content>
+Method-parameters:[]
+MethodInvocation:createWhenNull
+Method-name:setContributors
+Method-returnType:void
+Method-parameters:[final List<SyndPerson> contributors]
+FieldAccess:contributors
+Method-name:getContributors
+Method-returnType:List<SyndPerson>
+Method-parameters:[]
+MethodInvocation:createWhenNull
+Method-name:setCreated
+Method-returnType:void
+Method-parameters:[final Date created]
+FieldAccess:created
+MethodInvocation:copy
+Method-name:getCreated
+Method-returnType:Date
+Method-parameters:[]
+MethodInvocation:copy
+Method-name:setForeignMarkup
+Method-returnType:void
+Method-parameters:[final List<Element> foreignMarkup]
+FieldAccess:foreignMarkup
+Method-name:getForeignMarkup
+Method-returnType:List<Element>
+Method-parameters:[]
+MethodInvocation:createWhenNull
+Method-name:setId
+Method-returnType:void
+Method-parameters:[final String id]
+FieldAccess:id
+Method-name:getId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setIssued
+Method-returnType:void
+Method-parameters:[final Date issued]
+MethodInvocation:copy
+Method-name:getIssued
+Method-returnType:Date
+Method-parameters:[]
+MethodInvocation:copy
+Method-name:isMediaEntry
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getOtherLinks
+MethodInvocation:equals
+MethodInvocation:getRel
+Method-name:setModified
+Method-returnType:void
+Method-parameters:[final Date modified]
+MethodInvocation:copy
+Method-name:getModified
+Method-returnType:Date
+Method-parameters:[]
+MethodInvocation:copy
+Method-name:getModule
+Method-returnType:Module
+Method-parameters:[final String uri]
+MethodInvocation:getModule
+Method-name:setModules
+Method-returnType:void
+Method-parameters:[final List<Module> modules]
+FieldAccess:modules
+Method-name:getModules
+Method-returnType:List<Module>
+Method-parameters:[]
+MethodInvocation:createWhenNull
+Method-name:setOtherLinks
+Method-returnType:void
+Method-parameters:[final List<Link> otherLinks]
+FieldAccess:otherLinks
+Method-name:getOtherLinks
+Method-returnType:List<Link>
+Method-parameters:[]
+MethodInvocation:createWhenNull
+Method-name:setPublished
+Method-returnType:void
+Method-parameters:[final Date published]
+FieldAccess:published
+MethodInvocation:copy
+Method-name:getPublished
+Method-returnType:Date
+Method-parameters:[]
+MethodInvocation:copy
+Method-name:setRights
+Method-returnType:void
+Method-parameters:[final String rights]
+FieldAccess:rights
+Method-name:getRights
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSource
+Method-returnType:void
+Method-parameters:[final Feed source]
+FieldAccess:source
+Method-name:getSource
+Method-returnType:Feed
+Method-parameters:[]
+Method-name:setSummary
+Method-returnType:void
+Method-parameters:[final Content summary]
+FieldAccess:summary
+Method-name:getSummary
+Method-returnType:Content
+Method-parameters:[]
+Method-name:setTitle
+Method-returnType:void
+Method-parameters:[final String title]
+FieldAccess:title
+FieldAccess:title
+MethodInvocation:setValue
+FieldAccess:title
+Method-name:getTitle
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getValue
+Method-name:setTitleEx
+Method-returnType:void
+Method-parameters:[final Content title]
+FieldAccess:title
+Method-name:getTitleEx
+Method-returnType:Content
+Method-parameters:[]
+Method-name:setUpdated
+Method-returnType:void
+Method-parameters:[final Date updated]
+FieldAccess:updated
+MethodInvocation:copy
+Method-name:getUpdated
+Method-returnType:Date
+Method-parameters:[]
+MethodInvocation:copy
+Method-name:setXmlBase
+Method-returnType:void
+Method-parameters:[final String xmlBase]
+FieldAccess:xmlBase
+Method-name:getXmlBase
+Method-returnType:String
+Method-parameters:[]
+Method-name:clone
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:beanClone
+MethodInvocation:emptySet
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[final Object other]
+MethodInvocation:getForeignMarkup
+MethodInvocation:setForeignMarkup
+MethodInvocation:getForeignMarkup
+MethodInvocation:beanEquals
+MethodInvocation:getClass
+MethodInvocation:setForeignMarkup
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:beanHashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+MethodInvocation:getClass
+Method-name:findRelatedLink
+Method-returnType:Link
+Method-parameters:[final String relation]
+MethodInvocation:equals
+MethodInvocation:getRel
+Method-name:createSyndEnclosure
+Method-returnType:SyndEnclosure
+Method-parameters:[final Feed feed, final Link link, ConverterForAtom10 converterForAtom10]
+MethodInvocation:setUrl
+MethodInvocation:getHrefResolved
+MethodInvocation:setType
+MethodInvocation:getType
+MethodInvocation:setLength
+MethodInvocation:getLength

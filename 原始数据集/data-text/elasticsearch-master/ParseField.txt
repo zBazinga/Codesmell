@@ -1,0 +1,76 @@
+Class:ParseField
+Field:name
+Field:deprecatedNames
+Field:allReplacedWith
+Field:allNames
+Field:fullyDeprecated
+Field:EMPTY
+Method-name:ParseField
+Method-returnType:null
+Method-parameters:[String name, String... deprecatedNames]
+FieldAccess:name
+FieldAccess:deprecatedNames
+MethodInvocation:addAll
+FieldAccess:deprecatedNames
+MethodInvocation:toArray
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:addAll
+FieldAccess:deprecatedNames
+FieldAccess:allNames
+MethodInvocation:toArray
+MethodInvocation:size
+Method-name:getPreferredName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getAllNamesIncludedDeprecated
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:withDeprecation
+Method-returnType:ParseField
+Method-parameters:[String... deprecatedNames]
+FieldAccess:name
+Method-name:withAllDeprecated
+Method-returnType:ParseField
+Method-parameters:[String allReplacedWith]
+MethodInvocation:withDeprecation
+MethodInvocation:getAllNamesIncludedDeprecated
+Method-name:withAllDeprecated
+Method-returnType:ParseField
+Method-parameters:[]
+MethodInvocation:withDeprecation
+MethodInvocation:getAllNamesIncludedDeprecated
+Method-name:match
+Method-returnType:boolean
+Method-parameters:[String fieldName, DeprecationHandler deprecationHandler]
+MethodInvocation:match
+Method-name:match
+Method-returnType:boolean
+Method-parameters:[String parserName, Supplier<XContentLocation> location, String fieldName, DeprecationHandler deprecationHandler]
+MethodInvocation:requireNonNull
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:usedDeprecatedField
+MethodInvocation:usedDeprecatedName
+MethodInvocation:usedDeprecatedField
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPreferredName
+Method-name:getAllReplacedWith
+Method-returnType:String
+Method-parameters:[]
+Method-name:getDeprecatedNames
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:addOptionalField
+Method-returnType:void
+Method-parameters:[XContentBuilder builder, Object value, DatafeedUpdate datafeedUpdate]
+MethodInvocation:field
+MethodInvocation:getPreferredName
+Class:CommonFields
+Field:FIELD
+Field:FIELDS
+Field:FORMAT
+Field:MISSING
+Field:TIME_ZONE

@@ -1,0 +1,301 @@
+Class:IngestDocument
+Field:INGEST_KEY
+Field:INGEST_KEY_PREFIX
+Field:SOURCE_PREFIX
+Field:TIMESTAMP
+Field:sourceAndMetadata
+Field:ingestMetadata
+Field:executedPipelines
+Method-name:IngestDocument
+Method-returnType:null
+Method-parameters:[String index, String id, String routing, Long version, VersionType versionType, Map<String,Object> source]
+FieldAccess:sourceAndMetadata
+MethodInvocation:putAll
+FieldAccess:sourceAndMetadata
+MethodInvocation:put
+FieldAccess:sourceAndMetadata
+MethodInvocation:getFieldName
+MethodInvocation:put
+FieldAccess:sourceAndMetadata
+MethodInvocation:getFieldName
+MethodInvocation:put
+FieldAccess:sourceAndMetadata
+MethodInvocation:getFieldName
+MethodInvocation:put
+MethodInvocation:getFieldName
+MethodInvocation:put
+MethodInvocation:getFieldName
+MethodInvocation:toString
+FieldAccess:ingestMetadata
+MethodInvocation:put
+FieldAccess:ingestMetadata
+MethodInvocation:now
+Method-name:IngestDocument
+Method-returnType:null
+Method-parameters:[IngestDocument other]
+MethodInvocation:deepCopyMap
+MethodInvocation:deepCopyMap
+Method-name:IngestDocument
+Method-returnType:null
+Method-parameters:[Map<String,Object> sourceAndMetadata, Map<String,Object> ingestMetadata]
+FieldAccess:sourceAndMetadata
+FieldAccess:ingestMetadata
+Method-name:getFieldValue
+Method-returnType:T
+Method-parameters:[String path, Class<T> clazz]
+MethodInvocation:resolve
+MethodInvocation:cast
+Method-name:getFieldValue
+Method-returnType:T
+Method-parameters:[String path, Class<T> clazz, boolean ignoreMissing]
+MethodInvocation:getFieldValue
+MethodInvocation:hasField
+Method-name:getFieldValue
+Method-returnType:T
+Method-parameters:[TemplateScript.Factory pathTemplate, Class<T> clazz]
+MethodInvocation:getFieldValue
+MethodInvocation:renderTemplate
+Method-name:getFieldValueAsBytes
+Method-returnType:byte[]
+Method-parameters:[String path]
+MethodInvocation:getFieldValueAsBytes
+Method-name:getFieldValueAsBytes
+Method-returnType:byte[]
+Method-parameters:[String path, boolean ignoreMissing]
+MethodInvocation:getFieldValue
+MethodInvocation:decode
+MethodInvocation:getDecoder
+MethodInvocation:toString
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:hasField
+Method-returnType:boolean
+Method-parameters:[TemplateScript.Factory fieldPathTemplate]
+MethodInvocation:hasField
+MethodInvocation:renderTemplate
+Method-name:hasField
+Method-returnType:boolean
+Method-parameters:[String path]
+MethodInvocation:hasField
+Method-name:hasField
+Method-returnType:boolean
+Method-parameters:[String path, boolean failOutOfRange]
+MethodInvocation:get
+MethodInvocation:parseInt
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:containsKey
+MethodInvocation:parseInt
+MethodInvocation:size
+MethodInvocation:size
+Method-name:removeField
+Method-returnType:void
+Method-parameters:[TemplateScript.Factory fieldPathTemplate]
+MethodInvocation:removeField
+MethodInvocation:renderTemplate
+Method-name:removeField
+Method-returnType:void
+Method-parameters:[String path]
+MethodInvocation:resolve
+MethodInvocation:containsKey
+MethodInvocation:remove
+MethodInvocation:parseInt
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:remove
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:resolve
+Method-returnType:Object
+Method-parameters:[String pathElement, String fullPath, Object context]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:parseInt
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:appendFieldValue
+Method-returnType:void
+Method-parameters:[String path, Object value]
+MethodInvocation:setFieldValue
+Method-name:appendFieldValue
+Method-returnType:void
+Method-parameters:[TemplateScript.Factory fieldPathTemplate, ValueSource valueSource]
+MethodInvocation:createTemplateModel
+MethodInvocation:appendFieldValue
+MethodInvocation:execute
+MethodInvocation:newInstance
+MethodInvocation:copyAndResolve
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[String path, Object value]
+MethodInvocation:setFieldValue
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[TemplateScript.Factory fieldPathTemplate, ValueSource valueSource]
+MethodInvocation:createTemplateModel
+MethodInvocation:setFieldValue
+MethodInvocation:execute
+MethodInvocation:newInstance
+MethodInvocation:copyAndResolve
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[String path, Object value, boolean append]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:parseInt
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:appendValues
+MethodInvocation:put
+MethodInvocation:appendValues
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:parseInt
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:appendValues
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:appendValues
+Method-returnType:List<Object>
+Method-parameters:[Object maybeList, Object value]
+MethodInvocation:add
+MethodInvocation:appendValues
+Method-name:appendValues
+Method-returnType:void
+Method-parameters:[List<Object> list, Object value]
+MethodInvocation:addAll
+MethodInvocation:add
+Method-name:cast
+Method-returnType:T
+Method-parameters:[String path, Object object, Class<T> clazz]
+MethodInvocation:isInstance
+MethodInvocation:cast
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+Method-name:renderTemplate
+Method-returnType:String
+Method-parameters:[TemplateScript.Factory template]
+MethodInvocation:execute
+MethodInvocation:newInstance
+MethodInvocation:createTemplateModel
+Method-name:createTemplateModel
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+MethodInvocation:put
+MethodInvocation:put
+Method-name:extractMetadata
+Method-returnType:Map<Metadata,Object>
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:put
+MethodInvocation:remove
+MethodInvocation:getFieldName
+Method-name:getMetadata
+Method-returnType:Map<Metadata,Object>
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:getFieldName
+Method-name:getIngestMetadata
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+FieldAccess:ingestMetadata
+Method-name:getSourceAndMetadata
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+FieldAccess:sourceAndMetadata
+Method-name:deepCopyMap
+Method-returnType:Map<K,V>
+Method-parameters:[Map<K,V> source]
+MethodInvocation:deepCopy
+Method-name:deepCopy
+Method-returnType:Object
+Method-parameters:[Object value]
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:deepCopy
+MethodInvocation:getValue
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:deepCopy
+MethodInvocation:copyOf
+MethodInvocation:clone
+MethodInvocation:getClass
+Method-name:executePipeline
+Method-returnType:void
+Method-parameters:[Pipeline pipeline, BiConsumer<IngestDocument,Exception> handler]
+MethodInvocation:add
+MethodInvocation:getId
+MethodInvocation:put
+MethodInvocation:getId
+MethodInvocation:execute
+MethodInvocation:remove
+MethodInvocation:getId
+MethodInvocation:put
+MethodInvocation:remove
+MethodInvocation:accept
+MethodInvocation:accept
+MethodInvocation:getId
+Method-name:getPipelineStack
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:reverse
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Field:Metadata
+Field:fieldName
+Method-name:Metadata
+Method-returnType:null
+Method-parameters:[String fieldName]
+FieldAccess:fieldName
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Class:FieldPath
+Field:pathElements
+Field:initialContext
+Method-name:FieldPath
+Method-returnType:null
+Method-parameters:[String path]
+MethodInvocation:isEmpty
+MethodInvocation:startsWith
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:startsWith
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:length
+FieldAccess:pathElements
+MethodInvocation:split
+MethodInvocation:isEmpty

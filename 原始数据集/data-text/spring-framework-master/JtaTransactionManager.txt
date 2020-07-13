@@ -1,0 +1,389 @@
+Class:JtaTransactionManager
+Field:DEFAULT_USER_TRANSACTION_NAME
+Field:FALLBACK_TRANSACTION_MANAGER_NAMES
+Field:DEFAULT_TRANSACTION_SYNCHRONIZATION_REGISTRY_NAME
+Field:jndiTemplate
+Field:userTransaction
+Field:userTransactionName
+Field:autodetectUserTransaction
+Field:cacheUserTransaction
+Field:userTransactionObtainedFromJndi
+Field:transactionManager
+Field:transactionManagerName
+Field:autodetectTransactionManager
+Field:transactionSynchronizationRegistry
+Field:transactionSynchronizationRegistryName
+Field:autodetectTransactionSynchronizationRegistry
+Field:allowCustomIsolationLevels
+Method-name:JtaTransactionManager
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:setNestedTransactionAllowed
+Method-name:JtaTransactionManager
+Method-returnType:null
+Method-parameters:[UserTransaction userTransaction]
+MethodInvocation:notNull
+FieldAccess:userTransaction
+Method-name:JtaTransactionManager
+Method-returnType:null
+Method-parameters:[UserTransaction userTransaction, TransactionManager transactionManager]
+MethodInvocation:notNull
+MethodInvocation:notNull
+FieldAccess:userTransaction
+FieldAccess:transactionManager
+Method-name:JtaTransactionManager
+Method-returnType:null
+Method-parameters:[TransactionManager transactionManager]
+MethodInvocation:notNull
+FieldAccess:transactionManager
+FieldAccess:userTransaction
+MethodInvocation:buildUserTransaction
+Method-name:setJndiTemplate
+Method-returnType:void
+Method-parameters:[JndiTemplate jndiTemplate]
+MethodInvocation:notNull
+FieldAccess:jndiTemplate
+Method-name:getJndiTemplate
+Method-returnType:JndiTemplate
+Method-parameters:[]
+FieldAccess:jndiTemplate
+Method-name:setJndiEnvironment
+Method-returnType:void
+Method-parameters:[@Nullable Properties jndiEnvironment]
+FieldAccess:jndiTemplate
+Method-name:getJndiEnvironment
+Method-returnType:Properties
+Method-parameters:[]
+MethodInvocation:getEnvironment
+FieldAccess:jndiTemplate
+Method-name:setUserTransaction
+Method-returnType:void
+Method-parameters:[@Nullable UserTransaction userTransaction]
+FieldAccess:userTransaction
+Method-name:getUserTransaction
+Method-returnType:UserTransaction
+Method-parameters:[]
+FieldAccess:userTransaction
+Method-name:setUserTransactionName
+Method-returnType:void
+Method-parameters:[String userTransactionName]
+FieldAccess:userTransactionName
+Method-name:setAutodetectUserTransaction
+Method-returnType:void
+Method-parameters:[boolean autodetectUserTransaction]
+FieldAccess:autodetectUserTransaction
+Method-name:setCacheUserTransaction
+Method-returnType:void
+Method-parameters:[boolean cacheUserTransaction]
+FieldAccess:cacheUserTransaction
+Method-name:setTransactionManager
+Method-returnType:void
+Method-parameters:[@Nullable TransactionManager transactionManager]
+FieldAccess:transactionManager
+Method-name:getTransactionManager
+Method-returnType:TransactionManager
+Method-parameters:[]
+FieldAccess:transactionManager
+Method-name:setTransactionManagerName
+Method-returnType:void
+Method-parameters:[String transactionManagerName]
+FieldAccess:transactionManagerName
+Method-name:setAutodetectTransactionManager
+Method-returnType:void
+Method-parameters:[boolean autodetectTransactionManager]
+FieldAccess:autodetectTransactionManager
+Method-name:setTransactionSynchronizationRegistry
+Method-returnType:void
+Method-parameters:[@Nullable TransactionSynchronizationRegistry transactionSynchronizationRegistry]
+FieldAccess:transactionSynchronizationRegistry
+Method-name:getTransactionSynchronizationRegistry
+Method-returnType:TransactionSynchronizationRegistry
+Method-parameters:[]
+FieldAccess:transactionSynchronizationRegistry
+Method-name:setTransactionSynchronizationRegistryName
+Method-returnType:void
+Method-parameters:[String transactionSynchronizationRegistryName]
+FieldAccess:transactionSynchronizationRegistryName
+Method-name:setAutodetectTransactionSynchronizationRegistry
+Method-returnType:void
+Method-parameters:[boolean autodetectTransactionSynchronizationRegistry]
+FieldAccess:autodetectTransactionSynchronizationRegistry
+Method-name:setAllowCustomIsolationLevels
+Method-returnType:void
+Method-parameters:[boolean allowCustomIsolationLevels]
+FieldAccess:allowCustomIsolationLevels
+Method-name:afterPropertiesSet
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:initUserTransactionAndTransactionManager
+MethodInvocation:checkUserTransactionAndTransactionManager
+MethodInvocation:initTransactionSynchronizationRegistry
+Method-name:initUserTransactionAndTransactionManager
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:userTransaction
+MethodInvocation:hasLength
+FieldAccess:userTransactionName
+FieldAccess:userTransaction
+MethodInvocation:lookupUserTransaction
+FieldAccess:userTransactionName
+FieldAccess:userTransactionObtainedFromJndi
+FieldAccess:userTransaction
+MethodInvocation:retrieveUserTransaction
+FieldAccess:userTransaction
+FieldAccess:autodetectUserTransaction
+FieldAccess:userTransaction
+MethodInvocation:findUserTransaction
+FieldAccess:transactionManager
+MethodInvocation:hasLength
+FieldAccess:transactionManagerName
+FieldAccess:transactionManager
+MethodInvocation:lookupTransactionManager
+FieldAccess:transactionManagerName
+FieldAccess:transactionManager
+MethodInvocation:retrieveTransactionManager
+FieldAccess:transactionManager
+FieldAccess:autodetectTransactionManager
+FieldAccess:transactionManager
+MethodInvocation:findTransactionManager
+FieldAccess:userTransaction
+FieldAccess:userTransaction
+FieldAccess:transactionManager
+FieldAccess:userTransaction
+MethodInvocation:buildUserTransaction
+FieldAccess:transactionManager
+Method-name:checkUserTransactionAndTransactionManager
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:userTransaction
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+FieldAccess:userTransaction
+FieldAccess:transactionManager
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+FieldAccess:transactionManager
+MethodInvocation:warn
+Method-name:initTransactionSynchronizationRegistry
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:transactionSynchronizationRegistry
+MethodInvocation:hasLength
+FieldAccess:transactionSynchronizationRegistryName
+FieldAccess:transactionSynchronizationRegistry
+MethodInvocation:lookupTransactionSynchronizationRegistry
+FieldAccess:transactionSynchronizationRegistryName
+FieldAccess:transactionSynchronizationRegistry
+MethodInvocation:retrieveTransactionSynchronizationRegistry
+FieldAccess:transactionSynchronizationRegistry
+FieldAccess:autodetectTransactionSynchronizationRegistry
+FieldAccess:transactionSynchronizationRegistry
+MethodInvocation:findTransactionSynchronizationRegistry
+FieldAccess:userTransaction
+FieldAccess:transactionManager
+FieldAccess:transactionSynchronizationRegistry
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+FieldAccess:transactionSynchronizationRegistry
+Method-name:buildUserTransaction
+Method-returnType:UserTransaction
+Method-parameters:[TransactionManager transactionManager]
+Method-name:lookupUserTransaction
+Method-returnType:UserTransaction
+Method-parameters:[String userTransactionName]
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:lookup
+MethodInvocation:getJndiTemplate
+Method-name:lookupTransactionManager
+Method-returnType:TransactionManager
+Method-parameters:[String transactionManagerName]
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:lookup
+MethodInvocation:getJndiTemplate
+Method-name:lookupTransactionSynchronizationRegistry
+Method-returnType:TransactionSynchronizationRegistry
+Method-parameters:[String registryName]
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:lookup
+MethodInvocation:getJndiTemplate
+Method-name:retrieveUserTransaction
+Method-returnType:UserTransaction
+Method-parameters:[]
+Method-name:retrieveTransactionManager
+Method-returnType:TransactionManager
+Method-parameters:[]
+Method-name:retrieveTransactionSynchronizationRegistry
+Method-returnType:TransactionSynchronizationRegistry
+Method-parameters:[]
+Method-name:findUserTransaction
+Method-returnType:UserTransaction
+Method-parameters:[]
+MethodInvocation:lookup
+MethodInvocation:getJndiTemplate
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+FieldAccess:userTransactionObtainedFromJndi
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+Method-name:findTransactionManager
+Method-returnType:TransactionManager
+Method-parameters:[@Nullable UserTransaction ut]
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:lookup
+MethodInvocation:getJndiTemplate
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+Method-name:findTransactionSynchronizationRegistry
+Method-returnType:TransactionSynchronizationRegistry
+Method-parameters:[@Nullable UserTransaction ut, @Nullable TransactionManager tm]
+FieldAccess:userTransactionObtainedFromJndi
+MethodInvocation:lookup
+MethodInvocation:getJndiTemplate
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+Method-name:doGetTransaction
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:getUserTransaction
+FieldAccess:cacheUserTransaction
+MethodInvocation:lookupUserTransaction
+FieldAccess:userTransactionName
+FieldAccess:userTransactionName
+MethodInvocation:doGetJtaTransaction
+Method-name:doGetJtaTransaction
+Method-returnType:JtaTransactionObject
+Method-parameters:[UserTransaction ut]
+Method-name:isExistingTransaction
+Method-returnType:boolean
+Method-parameters:[Object transaction]
+MethodInvocation:getStatus
+MethodInvocation:getUserTransaction
+Method-name:useSavepointForNestedTransaction
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:doBegin
+Method-returnType:void
+Method-parameters:[Object transaction, TransactionDefinition definition]
+MethodInvocation:doJtaBegin
+Method-name:doJtaBegin
+Method-returnType:void
+Method-parameters:[JtaTransactionObject txObject, TransactionDefinition definition]
+MethodInvocation:applyIsolationLevel
+MethodInvocation:getIsolationLevel
+MethodInvocation:determineTimeout
+MethodInvocation:applyTimeout
+MethodInvocation:begin
+MethodInvocation:getUserTransaction
+Method-name:applyIsolationLevel
+Method-returnType:void
+Method-parameters:[JtaTransactionObject txObject, int isolationLevel]
+FieldAccess:allowCustomIsolationLevels
+Method-name:applyTimeout
+Method-returnType:void
+Method-parameters:[JtaTransactionObject txObject, int timeout]
+MethodInvocation:setTransactionTimeout
+MethodInvocation:getUserTransaction
+Method-name:doSuspend
+Method-returnType:Object
+Method-parameters:[Object transaction]
+MethodInvocation:doJtaSuspend
+Method-name:doResume
+Method-returnType:void
+Method-parameters:[@Nullable Object transaction, Object suspendedResources]
+MethodInvocation:doJtaResume
+Method-name:doJtaResume
+Method-returnType:void
+Method-parameters:[@Nullable JtaTransactionObject txObject, Object suspendedTransaction]
+MethodInvocation:getTransactionManager
+MethodInvocation:resume
+MethodInvocation:getTransactionManager
+Method-name:shouldCommitOnGlobalRollbackOnly
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:doCommit
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status]
+MethodInvocation:getTransaction
+MethodInvocation:getStatus
+MethodInvocation:getUserTransaction
+MethodInvocation:rollback
+MethodInvocation:getUserTransaction
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:commit
+MethodInvocation:getUserTransaction
+Method-name:doRollback
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status]
+MethodInvocation:getTransaction
+MethodInvocation:getStatus
+MethodInvocation:getUserTransaction
+MethodInvocation:rollback
+MethodInvocation:getUserTransaction
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+Method-name:doSetRollbackOnly
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status]
+MethodInvocation:getTransaction
+MethodInvocation:isDebug
+MethodInvocation:debug
+MethodInvocation:getStatus
+MethodInvocation:getUserTransaction
+MethodInvocation:setRollbackOnly
+MethodInvocation:getUserTransaction
+Method-name:registerAfterCompletionWithExistingTransaction
+Method-returnType:void
+Method-parameters:[Object transaction, List<TransactionSynchronization> synchronizations]
+MethodInvocation:debug
+MethodInvocation:doRegisterAfterCompletionWithJtaTransaction
+MethodInvocation:getCause
+MethodInvocation:debug
+MethodInvocation:invokeAfterCompletion
+MethodInvocation:debug
+MethodInvocation:invokeAfterCompletion
+Method-name:doRegisterAfterCompletionWithJtaTransaction
+Method-returnType:void
+Method-parameters:[JtaTransactionObject txObject, List<TransactionSynchronization> synchronizations]
+MethodInvocation:getStatus
+MethodInvocation:getUserTransaction
+FieldAccess:transactionSynchronizationRegistry
+MethodInvocation:registerInterposedSynchronization
+FieldAccess:transactionSynchronizationRegistry
+MethodInvocation:getTransactionManager
+MethodInvocation:getTransaction
+MethodInvocation:getTransactionManager
+MethodInvocation:registerSynchronization
+MethodInvocation:warn
+MethodInvocation:invokeAfterCompletion
+Method-name:doCleanupAfterCompletion
+Method-returnType:void
+Method-parameters:[Object transaction]
+MethodInvocation:setTransactionTimeout
+MethodInvocation:getUserTransaction
+MethodInvocation:debug
+Method-name:createTransaction
+Method-returnType:Transaction
+Method-parameters:[@Nullable String name, int timeout]
+MethodInvocation:getTransactionManager
+MethodInvocation:state
+MethodInvocation:setTransactionTimeout
+MethodInvocation:begin
+Method-name:supportsResourceAdapterManagedTransactions
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[ObjectInputStream ois]
+MethodInvocation:defaultReadObject
+FieldAccess:jndiTemplate
+MethodInvocation:initUserTransactionAndTransactionManager
+MethodInvocation:initTransactionSynchronizationRegistry

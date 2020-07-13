@@ -1,0 +1,50 @@
+Class:RecommenderContext
+Field:dataModel
+Field:similarity
+Field:similarities
+Method-name:RecommenderContext
+Method-returnType:null
+Method-parameters:[Configuration conf]
+FieldAccess:conf
+Method-name:RecommenderContext
+Method-returnType:null
+Method-parameters:[Configuration conf, DataModel dataModel]
+FieldAccess:conf
+FieldAccess:dataModel
+Method-name:RecommenderContext
+Method-returnType:null
+Method-parameters:[Configuration conf, DataModel dataModel, RecommenderSimilarity similarity]
+FieldAccess:conf
+FieldAccess:dataModel
+FieldAccess:similarity
+Method-name:getDataModel
+Method-returnType:DataModel
+Method-parameters:[]
+Method-name:getSimilarity
+Method-returnType:RecommenderSimilarity
+Method-parameters:[]
+Method-name:setSimilarity
+Method-returnType:void
+Method-parameters:[RecommenderSimilarity similarity]
+FieldAccess:similarity
+Method-name:setDataModel
+Method-returnType:void
+Method-parameters:[DataModel dataModel]
+FieldAccess:dataModel
+Method-name:getSimilarities
+Method-returnType:Map<String,RecommenderSimilarity>
+Method-parameters:[]
+Method-name:addSimilarities
+Method-returnType:void
+Method-parameters:[String similarityKey, RecommenderSimilarity similarity]
+FieldAccess:similarities
+FieldAccess:similarities
+MethodInvocation:put
+FieldAccess:similarities
+Method-name:newRecommemder
+Method-returnType:Recommender
+Method-parameters:[String algClass, Ensemble ensemble]
+MethodInvocation:newInstance
+MethodInvocation:forName
+MethodInvocation:setContext
+MethodInvocation:train

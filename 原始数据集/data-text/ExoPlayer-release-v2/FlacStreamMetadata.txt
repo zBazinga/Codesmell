@@ -1,0 +1,112 @@
+Class:FlacStreamMetadata
+Class:SeekTable
+Field:pointSampleNumbers
+Field:pointOffsets
+Method-name:SeekTable
+Method-returnType:null
+Method-parameters:[long[] pointSampleNumbers, long[] pointOffsets]
+FieldAccess:pointSampleNumbers
+FieldAccess:pointOffsets
+Field:TAG
+Field:NOT_IN_LOOKUP_TABLE
+Field:SEPARATOR
+Field:minBlockSizeSamples
+Field:maxBlockSizeSamples
+Field:minFrameSize
+Field:maxFrameSize
+Field:sampleRate
+Field:sampleRateLookupKey
+Field:channels
+Field:bitsPerSample
+Field:bitsPerSampleLookupKey
+Field:totalSamples
+Field:seekTable
+Field:metadata
+Method-name:FlacStreamMetadata
+Method-returnType:null
+Method-parameters:[byte[] data, int offset]
+MethodInvocation:setPosition
+MethodInvocation:readBits
+MethodInvocation:readBits
+MethodInvocation:readBits
+MethodInvocation:readBits
+MethodInvocation:readBits
+MethodInvocation:getSampleRateLookupKey
+MethodInvocation:readBits
+MethodInvocation:readBits
+MethodInvocation:getBitsPerSampleLookupKey
+MethodInvocation:readBitsToLong
+Method-name:FlacStreamMetadata
+Method-returnType:null
+Method-parameters:[int minBlockSizeSamples, int maxBlockSizeSamples, int minFrameSize, int maxFrameSize, int sampleRate, int channels, int bitsPerSample, long totalSamples, ArrayList<String> vorbisComments, ArrayList<PictureFrame> pictureFrames]
+MethodInvocation:buildMetadata
+Method-name:FlacStreamMetadata
+Method-returnType:null
+Method-parameters:[int minBlockSizeSamples, int maxBlockSizeSamples, int minFrameSize, int maxFrameSize, int sampleRate, int channels, int bitsPerSample, long totalSamples, @Nullable SeekTable seekTable, @Nullable Metadata metadata]
+FieldAccess:minBlockSizeSamples
+FieldAccess:maxBlockSizeSamples
+FieldAccess:minFrameSize
+FieldAccess:maxFrameSize
+FieldAccess:sampleRate
+FieldAccess:sampleRateLookupKey
+MethodInvocation:getSampleRateLookupKey
+FieldAccess:channels
+FieldAccess:bitsPerSample
+FieldAccess:bitsPerSampleLookupKey
+MethodInvocation:getBitsPerSampleLookupKey
+FieldAccess:totalSamples
+FieldAccess:seekTable
+FieldAccess:metadata
+Method-name:getMaxDecodedFrameSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:getBitRate
+Method-returnType:int
+Method-parameters:[]
+Method-name:getDurationUs
+Method-returnType:long
+Method-parameters:[]
+Method-name:getSampleNumber
+Method-returnType:long
+Method-parameters:[long timeUs]
+MethodInvocation:constrainValue
+Method-name:getApproxBytesPerFrame
+Method-returnType:long
+Method-parameters:[]
+Method-name:getMetadataCopyWithAppendedEntriesFrom
+Method-returnType:Metadata
+Method-parameters:[@Nullable Metadata other]
+MethodInvocation:copyWithAppendedEntriesFrom
+Method-name:copyWithSeekTable
+Method-returnType:FlacStreamMetadata
+Method-parameters:[@Nullable SeekTable seekTable]
+Method-name:copyWithVorbisComments
+Method-returnType:FlacStreamMetadata
+Method-parameters:[List<String> vorbisComments]
+MethodInvocation:getMetadataCopyWithAppendedEntriesFrom
+MethodInvocation:buildMetadata
+MethodInvocation:emptyList
+Method-name:copyWithPictureFrames
+Method-returnType:FlacStreamMetadata
+Method-parameters:[List<PictureFrame> pictureFrames]
+MethodInvocation:getMetadataCopyWithAppendedEntriesFrom
+MethodInvocation:buildMetadata
+MethodInvocation:emptyList
+Method-name:getSampleRateLookupKey
+Method-returnType:int
+Method-parameters:[int sampleRate]
+Method-name:getBitsPerSampleLookupKey
+Method-returnType:int
+Method-parameters:[int bitsPerSample]
+Method-name:buildMetadata
+Method-returnType:Metadata
+Method-parameters:[List<String> vorbisComments, List<PictureFrame> pictureFrames]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:splitAtFirst
+MethodInvocation:w
+MethodInvocation:add
+MethodInvocation:addAll
+MethodInvocation:isEmpty

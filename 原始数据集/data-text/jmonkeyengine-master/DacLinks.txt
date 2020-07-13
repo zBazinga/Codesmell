@@ -1,0 +1,276 @@
+Class:DacLinks
+Field:logger3
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:rotateIdentity
+Field:transformIdentity
+Field:translateIdentity
+Field:isReady
+Field:boneLinkList
+Field:boneLinks
+Field:skeleton
+Field:transformer
+Field:torsoLink
+Method-name:DacLinks
+Method-returnType:null
+Method-parameters:[]
+Method-name:findBone
+Method-returnType:Joint
+Method-parameters:[String boneName]
+MethodInvocation:verifyAddedToSpatial
+MethodInvocation:getJoint
+Method-name:findBoneLink
+Method-returnType:BoneLink
+Method-parameters:[String boneName]
+MethodInvocation:get
+Method-name:findLink
+Method-returnType:PhysicsLink
+Method-parameters:[String linkName]
+Method-name:getSkeleton
+Method-returnType:Armature
+Method-parameters:[]
+Method-name:getTorsoLink
+Method-returnType:TorsoLink
+Method-parameters:[]
+Method-name:getTransformer
+Method-returnType:Spatial
+Method-parameters:[]
+Method-name:isReady
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:listLinks
+Method-returnType:List<T>
+Method-parameters:[Class<T> linkType]
+MethodInvocation:countLinks
+MethodInvocation:isAssignableFrom
+MethodInvocation:getClass
+MethodInvocation:add
+MethodInvocation:isAssignableFrom
+MethodInvocation:getClass
+MethodInvocation:add
+Method-name:listManagedBones
+Method-returnType:Joint[]
+Method-parameters:[String managerName]
+MethodInvocation:equals
+MethodInvocation:getRoots
+MethodInvocation:add
+MethodInvocation:addUnlinkedDescendants
+MethodInvocation:findBoneLink
+MethodInvocation:getBone
+MethodInvocation:add
+MethodInvocation:addUnlinkedDescendants
+MethodInvocation:size
+MethodInvocation:toArray
+Method-name:listRigidBodies
+Method-returnType:PhysicsRigidBody[]
+Method-parameters:[]
+Method-name:meshTransform
+Method-returnType:Transform
+Method-parameters:[Transform storeResult]
+MethodInvocation:clone
+MethodInvocation:getWorldTransform
+Method-name:physicsTransform
+Method-returnType:Transform
+Method-parameters:[Joint bone, Vector3f localOffset, Transform storeResult]
+MethodInvocation:setTranslation
+MethodInvocation:setRotation
+MethodInvocation:setScale
+MethodInvocation:getModelTransform
+MethodInvocation:combineWithParent
+MethodInvocation:meshTransform
+MethodInvocation:combineWithParent
+Method-name:rebuild
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:verifyAddedToSpatial
+MethodInvocation:getSpatial
+MethodInvocation:removeSpatialData
+MethodInvocation:createSpatialData
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:get
+MethodInvocation:postRebuild
+MethodInvocation:postRebuild
+Method-name:verifyReadyForDynamicMode
+Method-returnType:void
+Method-parameters:[String desiredAction]
+Method-name:getBoneLinks
+Method-returnType:List<BoneLink>
+Method-parameters:[]
+Method-name:verifyAddedToSpatial
+Method-returnType:void
+Method-parameters:[String desiredAction]
+Method-name:addPhysics
+Method-returnType:void
+Method-parameters:[PhysicsSpace space]
+MethodInvocation:gravity
+MethodInvocation:getRigidBody
+MethodInvocation:add
+MethodInvocation:setGravity
+MethodInvocation:getRigidBody
+MethodInvocation:add
+MethodInvocation:setGravity
+MethodInvocation:getJoint
+MethodInvocation:add
+Method-name:cloneFields
+Method-returnType:void
+Method-parameters:[Cloner cloner, Object original]
+MethodInvocation:clone
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:clone
+MethodInvocation:put
+MethodInvocation:clone
+MethodInvocation:clone
+MethodInvocation:clone
+Method-name:createSpatialData
+Method-returnType:void
+Method-parameters:[Spatial spatial]
+Method-name:jmeClone
+Method-returnType:DacLinks
+Method-parameters:[]
+Method-name:mass
+Method-returnType:float
+Method-parameters:[String boneName]
+MethodInvocation:getSpatial
+MethodInvocation:equals
+MethodInvocation:getRigidBody
+MethodInvocation:getMass
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:getRigidBody
+MethodInvocation:getMass
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter im]
+MethodInvocation:getCapsule
+MethodInvocation:readSavableArrayList
+MethodInvocation:boneName
+MethodInvocation:put
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+Method-name:removePhysics
+Method-returnType:void
+Method-parameters:[PhysicsSpace space]
+MethodInvocation:getRigidBody
+MethodInvocation:remove
+MethodInvocation:values
+MethodInvocation:getRigidBody
+MethodInvocation:remove
+MethodInvocation:getJoint
+MethodInvocation:remove
+Method-name:removeSpatialData
+Method-returnType:void
+Method-parameters:[Spatial spat]
+MethodInvocation:removePhysics
+MethodInvocation:clear
+Method-name:setDamping
+Method-returnType:void
+Method-parameters:[float dampingRatio]
+MethodInvocation:getSpatial
+MethodInvocation:listRigidBodies
+MethodInvocation:setDamping
+Method-name:setGravity
+Method-returnType:void
+Method-parameters:[Vector3f gravity]
+MethodInvocation:getSpatial
+MethodInvocation:listRigidBodies
+MethodInvocation:setGravity
+Method-name:setJointLimits
+Method-returnType:void
+Method-parameters:[String boneName, RangeOfMotion rom]
+MethodInvocation:hasBoneLink
+MethodInvocation:getSpatial
+MethodInvocation:findBoneLink
+MethodInvocation:getJoint
+MethodInvocation:setupJoint
+Method-name:setMass
+Method-returnType:void
+Method-parameters:[String boneName, float mass]
+MethodInvocation:getSpatial
+MethodInvocation:equals
+MethodInvocation:getRigidBody
+MethodInvocation:findBoneLink
+MethodInvocation:getRigidBody
+MethodInvocation:setMass
+Method-name:setPhysicsLocation
+Method-returnType:void
+Method-parameters:[Vector3f vec]
+MethodInvocation:setPhysicsLocation
+MethodInvocation:getRigidBody
+Method-name:setPhysicsRotation
+Method-returnType:void
+Method-parameters:[Quaternion quat]
+MethodInvocation:setPhysicsRotation
+MethodInvocation:getRigidBody
+Method-name:update
+Method-returnType:void
+Method-parameters:[float tpf]
+MethodInvocation:verifyAddedToSpatial
+MethodInvocation:isEnabled
+MethodInvocation:update
+MethodInvocation:update
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter ex]
+MethodInvocation:getCapsule
+MethodInvocation:countLinkedBones
+MethodInvocation:toArray
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:physicsTick
+Method-returnType:void
+Method-parameters:[PhysicsSpace space, float timeStep]
+Method-name:prePhysicsTick
+Method-returnType:void
+Method-parameters:[PhysicsSpace space, float timeStep]
+Method-name:addJoints
+Method-returnType:void
+Method-parameters:[PhysicsLink parentLink]
+MethodInvocation:childNames
+MethodInvocation:findBoneLink
+MethodInvocation:addJoint
+MethodInvocation:add
+MethodInvocation:addJoints
+Method-name:childNames
+Method-returnType:List<String>
+Method-parameters:[PhysicsLink link]
+Method-name:createBoneLink
+Method-returnType:void
+Method-parameters:[String boneName, VectorSet vertexLocations]
+MethodInvocation:findBone
+MethodInvocation:getModelTransform
+MethodInvocation:invert
+MethodInvocation:numVectors
+MethodInvocation:mean
+MethodInvocation:subtractLocal
+MethodInvocation:getTranslation
+MethodInvocation:getModelTransform
+MethodInvocation:createShape
+MethodInvocation:zero
+MethodInvocation:getTranslation
+MethodInvocation:transformVector
+MethodInvocation:put
+Method-name:createShape
+Method-returnType:CollisionShape
+Method-parameters:[Transform vertexToShape, Vector3f center, VectorSet vertexLocations]
+Method-name:createTorsoLink
+Method-returnType:void
+Method-parameters:[VectorSet vertexLocations, Mesh[] meshes]
+Method-name:sortControls
+Method-returnType:void
+Method-parameters:[SkinningControl skinningControl]
+Method-name:validateSkeleton
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:validate
+MethodInvocation:listLinkedBoneNames
+MethodInvocation:findBone
+MethodInvocation:format
+MethodInvocation:getParent
+MethodInvocation:log

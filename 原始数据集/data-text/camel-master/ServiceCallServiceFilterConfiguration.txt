@@ -1,0 +1,54 @@
+Class:ServiceCallServiceFilterConfiguration
+Field:parent
+Field:factoryKey
+Method-name:ServiceCallServiceFilterConfiguration
+Method-returnType:null
+Method-parameters:[]
+Method-name:ServiceCallServiceFilterConfiguration
+Method-returnType:null
+Method-parameters:[ServiceCallDefinition parent, String factoryKey]
+FieldAccess:parent
+FieldAccess:factoryKey
+Method-name:end
+Method-returnType:ServiceCallDefinition
+Method-parameters:[]
+FieldAccess:parent
+Method-name:endParent
+Method-returnType:ProcessorDefinition<?>
+Method-parameters:[]
+MethodInvocation:end
+FieldAccess:parent
+Method-name:property
+Method-returnType:ServiceCallServiceFilterConfiguration
+Method-parameters:[String key, String value]
+Method-name:newInstance
+Method-returnType:ServiceFilter
+Method-parameters:[CamelContext camelContext]
+MethodInvocation:notNull
+MethodInvocation:lookup
+MethodInvocation:newInstance
+MethodInvocation:orElse
+MethodInvocation:findClass
+MethodInvocation:getFactoryFinder
+MethodInvocation:adapt
+MethodInvocation:isAssignableFrom
+MethodInvocation:newInstance
+MethodInvocation:getInjector
+MethodInvocation:getName
+MethodInvocation:getProperties
+MethodInvocation:getBeanIntrospection
+MethodInvocation:adapt
+MethodInvocation:replaceAll
+MethodInvocation:resolvePropertyPlaceholders
+MethodInvocation:format
+MethodInvocation:toString
+MethodInvocation:put
+MethodInvocation:getPropertiesAsMap
+MethodInvocation:postProcessFactoryParameters
+MethodInvocation:bind
+MethodInvocation:build
+MethodInvocation:newInstance
+Method-name:serviceFilterConfiguration
+Method-returnType:ServiceCallConfigurationDefinition
+Method-parameters:[ServiceCallConfigurationDefinition serviceCallConfigurationDefinition]
+MethodInvocation:setServiceFilterConfiguration

@@ -1,0 +1,55 @@
+Class:TypeIdsSection
+Field:typeIds
+Method-name:TypeIdsSection
+Method-returnType:null
+Method-parameters:[DexFile file]
+Method-name:items
+Method-returnType:Collection<? extends Item>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:get
+Method-returnType:IndexedItem
+Method-parameters:[Constant cst]
+MethodInvocation:throwIfNotPrepared
+MethodInvocation:getClassType
+MethodInvocation:get
+Method-name:writeHeaderPart
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out]
+MethodInvocation:throwIfNotPrepared
+MethodInvocation:size
+MethodInvocation:getFileOffset
+MethodInvocation:format
+MethodInvocation:size
+MethodInvocation:items
+MethodInvocation:annotates
+MethodInvocation:annotate
+MethodInvocation:u4
+MethodInvocation:annotate
+MethodInvocation:u4
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+Method-name:intern
+Method-returnType:TypeIdItem
+Method-parameters:[Type type]
+MethodInvocation:throwIfPrepared
+MethodInvocation:get
+MethodInvocation:put
+Method-name:intern
+Method-returnType:TypeIdItem
+Method-parameters:[CstType type]
+MethodInvocation:throwIfPrepared
+MethodInvocation:getClassType
+MethodInvocation:get
+MethodInvocation:put
+Method-name:indexOf
+Method-returnType:int
+Method-parameters:[Type type]
+MethodInvocation:throwIfNotPrepared
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:orderItems
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:items
+MethodInvocation:setIndex

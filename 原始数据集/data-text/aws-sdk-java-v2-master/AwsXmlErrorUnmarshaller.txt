@@ -1,0 +1,111 @@
+Class:AwsXmlErrorUnmarshaller
+Field:X_AMZN_REQUEST_ID_HEADER
+Field:X_AMZ_ID_2_HEADER
+Field:exceptions
+Field:defaultExceptionSupplier
+Field:errorUnmarshaller
+Method-name:AwsXmlErrorUnmarshaller
+Method-returnType:null
+Method-parameters:[Builder builder]
+FieldAccess:exceptions
+FieldAccess:errorUnmarshaller
+FieldAccess:defaultExceptionSupplier
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:unmarshall
+Method-returnType:AwsServiceException
+Method-parameters:[XmlElement documentRoot, Optional<XmlElement> errorRoot, Optional<SdkBytes> documentBytes, SdkHttpFullResponse response, ExecutionAttributes executionAttributes]
+MethodInvocation:getErrorCode
+MethodInvocation:orElseGet
+MethodInvocation:map
+MethodInvocation:invokeSafely
+MethodInvocation:unmarshallFromErrorCode
+MethodInvocation:build
+MethodInvocation:serviceName
+MethodInvocation:sdkHttpResponse
+MethodInvocation:rawResponse
+MethodInvocation:errorMessage
+MethodInvocation:errorCode
+MethodInvocation:builder
+MethodInvocation:message
+MethodInvocation:orElse
+MethodInvocation:getAttribute
+MethodInvocation:awsErrorDetails
+MethodInvocation:clockSkew
+MethodInvocation:statusCode
+MethodInvocation:extendedRequestId
+MethodInvocation:requestId
+MethodInvocation:getRequestId
+MethodInvocation:getExtendedRequestId
+MethodInvocation:statusCode
+MethodInvocation:getClockSkew
+MethodInvocation:build
+Method-name:getClockSkew
+Method-returnType:Duration
+Method-parameters:[ExecutionAttributes executionAttributes]
+MethodInvocation:getAttribute
+MethodInvocation:ofSeconds
+Method-name:defaultException
+Method-returnType:AwsServiceException.Builder
+Method-parameters:[]
+MethodInvocation:get
+Method-name:unmarshallFromErrorCode
+Method-returnType:AwsServiceException.Builder
+Method-parameters:[SdkHttpFullResponse response, XmlElement errorRoot, String errorCode]
+MethodInvocation:get
+MethodInvocation:orElse
+MethodInvocation:findAny
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:equals
+MethodInvocation:errorCode
+MethodInvocation:toBuilder
+MethodInvocation:unmarshall
+MethodInvocation:message
+MethodInvocation:getMessage
+Method-name:getErrorCode
+Method-returnType:String
+Method-parameters:[Optional<XmlElement> errorRoot]
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:getOptionalElementByName
+Method-name:getRequestId
+Method-returnType:String
+Method-parameters:[SdkHttpFullResponse response, XmlElement document]
+MethodInvocation:orElse
+MethodInvocation:getOptionalElementByName
+MethodInvocation:getElementByName
+MethodInvocation:textContent
+MethodInvocation:orElse
+MethodInvocation:firstMatchingHeader
+Method-name:getExtendedRequestId
+Method-returnType:String
+Method-parameters:[SdkHttpFullResponse response]
+MethodInvocation:orElse
+MethodInvocation:firstMatchingHeader
+Class:Builder
+Field:exceptions
+Field:defaultExceptionSupplier
+Field:errorUnmarshaller
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:exceptions
+Method-returnType:Builder
+Method-parameters:[List<ExceptionMetadata> exceptions]
+FieldAccess:exceptions
+Method-name:defaultExceptionSupplier
+Method-returnType:Builder
+Method-parameters:[Supplier<SdkPojo> defaultExceptionSupplier]
+FieldAccess:defaultExceptionSupplier
+Method-name:errorUnmarshaller
+Method-returnType:Builder
+Method-parameters:[XmlErrorUnmarshaller errorUnmarshaller]
+FieldAccess:errorUnmarshaller
+Method-name:build
+Method-returnType:AwsXmlErrorUnmarshaller
+Method-parameters:[]

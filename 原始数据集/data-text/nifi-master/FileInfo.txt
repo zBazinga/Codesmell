@@ -1,0 +1,128 @@
+Class:FileInfo
+Field:serialVersionUID
+Field:directory
+Field:size
+Field:lastModifiedTime
+Field:fileName
+Field:fullPathFileName
+Field:permissions
+Field:owner
+Field:group
+Method-name:getFileName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getFullPathFileName
+Method-returnType:String
+Method-parameters:[]
+Method-name:isDirectory
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getSize
+Method-returnType:long
+Method-parameters:[]
+Method-name:getLastModifiedTime
+Method-returnType:long
+Method-parameters:[]
+Method-name:getPermissions
+Method-returnType:String
+Method-parameters:[]
+Method-name:getOwner
+Method-returnType:String
+Method-parameters:[]
+Method-name:getGroup
+Method-returnType:String
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[FileInfo o]
+MethodInvocation:compareTo
+Method-name:FileInfo
+Method-returnType:null
+Method-parameters:[final Builder builder]
+FieldAccess:directory
+FieldAccess:size
+FieldAccess:lastModifiedTime
+FieldAccess:fileName
+FieldAccess:fullPathFileName
+FieldAccess:permissions
+FieldAccess:owner
+FieldAccess:group
+Method-name:getAttributesFromFile
+Method-returnType:Map<String,String>
+Method-parameters:[GetFileTransfer getFileTransfer]
+MethodInvocation:put
+MethodInvocation:format
+MethodInvocation:getLastModifiedTime
+MethodInvocation:put
+MethodInvocation:getPermissions
+MethodInvocation:put
+MethodInvocation:getOwner
+MethodInvocation:put
+MethodInvocation:getGroup
+Class:Builder
+Field:directory
+Field:size
+Field:lastModifiedTime
+Field:fileName
+Field:fullPathFileName
+Field:permissions
+Field:owner
+Field:group
+Method-name:build
+Method-returnType:FileInfo
+Method-parameters:[]
+Method-name:directory
+Method-returnType:Builder
+Method-parameters:[boolean directory]
+FieldAccess:directory
+Method-name:size
+Method-returnType:Builder
+Method-parameters:[long size]
+FieldAccess:size
+Method-name:lastModifiedTime
+Method-returnType:Builder
+Method-parameters:[long lastModifiedTime]
+FieldAccess:lastModifiedTime
+Method-name:filename
+Method-returnType:Builder
+Method-parameters:[String fileName]
+FieldAccess:fileName
+Method-name:fullPathFileName
+Method-returnType:Builder
+Method-parameters:[String pathFileName]
+FieldAccess:fullPathFileName
+Method-name:permissions
+Method-returnType:Builder
+Method-parameters:[String permissions]
+FieldAccess:permissions
+Method-name:owner
+Method-returnType:Builder
+Method-parameters:[String owner]
+FieldAccess:owner
+Method-name:group
+Method-returnType:Builder
+Method-parameters:[String group]
+FieldAccess:group
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFileName
+Method-name:getIdentifier
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFullPathFileName
+MethodInvocation:getName
+Method-name:getTimestamp
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getLastModifiedTime

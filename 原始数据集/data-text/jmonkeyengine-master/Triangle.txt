@@ -1,0 +1,139 @@
+Class:Triangle
+Field:serialVersionUID
+Field:pointa
+Field:pointb
+Field:pointc
+Field:center
+Field:normal
+Field:projection
+Field:index
+Method-name:Triangle
+Method-returnType:null
+Method-parameters:[]
+Method-name:Triangle
+Method-returnType:null
+Method-parameters:[Vector3f p1, Vector3f p2, Vector3f p3]
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set
+Method-name:get
+Method-returnType:Vector3f
+Method-parameters:[int i]
+Method-name:get1
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:get2
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:get3
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:set
+Method-returnType:void
+Method-parameters:[int i, Vector3f point]
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set
+Method-name:set
+Method-returnType:void
+Method-parameters:[int i, float x, float y, float z]
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set
+Method-name:set1
+Method-returnType:void
+Method-parameters:[Vector3f v]
+MethodInvocation:set
+Method-name:set2
+Method-returnType:void
+Method-parameters:[Vector3f v]
+MethodInvocation:set
+Method-name:set3
+Method-returnType:void
+Method-parameters:[Vector3f v]
+MethodInvocation:set
+Method-name:set
+Method-returnType:void
+Method-parameters:[Vector3f v1, Vector3f v2, Vector3f v3]
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set
+Method-name:calculateCenter
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:set
+MethodInvocation:multLocal
+MethodInvocation:addLocal
+MethodInvocation:addLocal
+Method-name:calculateNormal
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:set
+MethodInvocation:crossLocal
+MethodInvocation:subtractLocal
+MethodInvocation:normalizeLocal
+Method-name:getCenter
+Method-returnType:Vector3f
+Method-parameters:[]
+MethodInvocation:calculateCenter
+Method-name:setCenter
+Method-returnType:void
+Method-parameters:[Vector3f center]
+FieldAccess:center
+Method-name:getNormal
+Method-returnType:Vector3f
+Method-parameters:[]
+MethodInvocation:calculateNormal
+Method-name:setNormal
+Method-returnType:void
+Method-parameters:[Vector3f normal]
+FieldAccess:normal
+Method-name:getProjection
+Method-returnType:float
+Method-parameters:[]
+FieldAccess:projection
+Method-name:setProjection
+Method-returnType:void
+Method-parameters:[float projection]
+FieldAccess:projection
+Method-name:getIndex
+Method-returnType:int
+Method-parameters:[]
+Method-name:setIndex
+Method-returnType:void
+Method-parameters:[int index]
+FieldAccess:index
+Method-name:computeTriangleNormal
+Method-returnType:Vector3f
+Method-parameters:[Vector3f v1, Vector3f v2, Vector3f v3, Vector3f store]
+MethodInvocation:set
+MethodInvocation:crossLocal
+MethodInvocation:subtractLocal
+MethodInvocation:normalizeLocal
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter e]
+MethodInvocation:write
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:getCapsule
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter e]
+MethodInvocation:readSavable
+MethodInvocation:getCapsule
+MethodInvocation:clone
+MethodInvocation:readSavable
+MethodInvocation:getCapsule
+MethodInvocation:clone
+MethodInvocation:readSavable
+MethodInvocation:getCapsule
+MethodInvocation:clone
+Method-name:clone
+Method-returnType:Triangle
+Method-parameters:[]
+MethodInvocation:clone
+MethodInvocation:clone
+MethodInvocation:clone

@@ -1,0 +1,65 @@
+Class:ArithNode
+Field:op
+Method-name:ArithNode
+Method-returnType:null
+Method-parameters:[DecodedInstruction insn, ArithOp op, ArgType type, boolean literal]
+FieldAccess:op
+MethodInvocation:setResult
+MethodInvocation:reg
+MethodInvocation:getRegisterCount
+MethodInvocation:addReg
+MethodInvocation:addLit
+MethodInvocation:addReg
+MethodInvocation:addLit
+MethodInvocation:addReg
+MethodInvocation:addReg
+MethodInvocation:addReg
+MethodInvocation:addReg
+Method-name:ArithNode
+Method-returnType:null
+Method-parameters:[ArithOp op, RegisterArg res, InsnArg a, InsnArg b]
+FieldAccess:op
+MethodInvocation:setResult
+MethodInvocation:addArg
+MethodInvocation:addArg
+Method-name:ArithNode
+Method-returnType:null
+Method-parameters:[ArithOp op, InsnArg a, InsnArg b]
+Method-name:oneArgOp
+Method-returnType:ArithNode
+Method-parameters:[ArithOp op, InsnArg res, InsnArg a]
+MethodInvocation:add
+Method-name:getOp
+Method-returnType:ArithOp
+Method-parameters:[]
+Method-name:isSame
+Method-returnType:boolean
+Method-parameters:[InsnNode obj]
+MethodInvocation:isSameLiteral
+Method-name:isSameLiteral
+Method-returnType:boolean
+Method-parameters:[ArithNode other]
+MethodInvocation:getArg
+MethodInvocation:getArg
+MethodInvocation:isLiteral
+MethodInvocation:isLiteral
+MethodInvocation:isLiteral
+MethodInvocation:getLiteral
+MethodInvocation:getLiteral
+Method-name:copy
+Method-returnType:InsnNode
+Method-parameters:[]
+MethodInvocation:duplicate
+MethodInvocation:getArg
+MethodInvocation:duplicate
+MethodInvocation:getArg
+MethodInvocation:copyCommonParams
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:formatOffset
+MethodInvocation:insnTypeToString
+MethodInvocation:getResult
+MethodInvocation:getArg
+MethodInvocation:getSymbol
+MethodInvocation:getArg

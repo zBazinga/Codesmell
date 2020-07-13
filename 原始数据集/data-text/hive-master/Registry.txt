@@ -1,0 +1,419 @@
+Class:Registry
+Field:LOG
+MethodInvocation:getLogger
+Field:WINDOW_FUNC_PREFIX
+Field:mFunctions
+Field:builtIns
+MethodInvocation:synchronizedSet
+Field:persistent
+Field:mSessionUDFLoaders
+Field:isNative
+Field:lock
+Method-name:Registry
+Method-returnType:null
+Method-parameters:[boolean isNative]
+FieldAccess:isNative
+Method-name:registerFunction
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, Class<?> udfClass, FunctionResource... resources]
+MethodInvocation:registerFunction
+Method-name:registerFunction
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, FunctionType functionType, Class<?> udfClass, FunctionResource... resources]
+MethodInvocation:getUDFClassType
+MethodInvocation:registerUDF
+MethodInvocation:toLowerCase
+MethodInvocation:registerGenericUDF
+MethodInvocation:registerGenericUDTF
+MethodInvocation:registerUDAF
+MethodInvocation:registerGenericUDAF
+MethodInvocation:newInstance
+MethodInvocation:registerTableFunction
+Method-name:registerUDF
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, Class<? extends UDF> UDFClass, boolean isOperator, FunctionResource... resources]
+MethodInvocation:registerUDF
+MethodInvocation:toLowerCase
+Method-name:registerUDF
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, Class<? extends UDF> UDFClass, boolean isOperator, String displayName, FunctionResource... resources]
+MethodInvocation:registerUDF
+Method-name:registerUDF
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, FunctionType functionType, Class<? extends UDF> UDFClass, boolean isOperator, String displayName, FunctionResource... resources]
+MethodInvocation:validateClass
+MethodInvocation:validateDescription
+MethodInvocation:getName
+MethodInvocation:addFunction
+Method-name:validateDescription
+Method-returnType:void
+Method-parameters:[Class<?> input]
+MethodInvocation:getAnnotation
+MethodInvocation:warn
+MethodInvocation:getCanonicalName
+Method-name:registerGenericUDF
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, Class<? extends GenericUDF> genericUDFClass, FunctionResource... resources]
+MethodInvocation:registerGenericUDF
+Method-name:registerGenericUDF
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, FunctionType functionType, Class<? extends GenericUDF> genericUDFClass, FunctionResource... resources]
+MethodInvocation:validateClass
+MethodInvocation:validateDescription
+MethodInvocation:newInstance
+MethodInvocation:addFunction
+Method-name:registerHiddenBuiltIn
+Method-returnType:void
+Method-parameters:[Class<? extends GenericUDF> functionClass]
+MethodInvocation:lock
+MethodInvocation:add
+MethodInvocation:unlock
+Method-name:registerGenericUDTF
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, Class<? extends GenericUDTF> genericUDTFClass, FunctionResource... resources]
+MethodInvocation:registerGenericUDTF
+Method-name:registerGenericUDTF
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, FunctionType functionType, Class<? extends GenericUDTF> genericUDTFClass, FunctionResource... resources]
+MethodInvocation:validateClass
+MethodInvocation:validateDescription
+MethodInvocation:newInstance
+MethodInvocation:addFunction
+Method-name:registerGenericUDAF
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, GenericUDAFResolver genericUDAFResolver, FunctionResource... resources]
+MethodInvocation:registerGenericUDAF
+Method-name:registerGenericUDAF
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, FunctionType functionType, GenericUDAFResolver genericUDAFResolver, FunctionResource... resources]
+MethodInvocation:validateDescription
+MethodInvocation:getClass
+MethodInvocation:addFunction
+MethodInvocation:addFunction
+Method-name:registerUDAF
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, Class<? extends UDAF> udafClass, FunctionResource... resources]
+MethodInvocation:registerUDAF
+Method-name:registerUDAF
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, FunctionType functionType, Class<? extends UDAF> udafClass, FunctionResource... resources]
+MethodInvocation:validateClass
+MethodInvocation:newInstance
+MethodInvocation:addFunction
+MethodInvocation:addFunction
+Method-name:registerTableFunction
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, Class<? extends TableFunctionResolver> tFnCls, FunctionResource... resources]
+MethodInvocation:registerTableFunction
+Method-name:registerTableFunction
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, FunctionType functionType, Class<? extends TableFunctionResolver> tFnCls, FunctionResource... resources]
+MethodInvocation:validateClass
+MethodInvocation:addFunction
+Method-name:registerMacro
+Method-returnType:FunctionInfo
+Method-parameters:[String macroName, ExprNodeDesc body, List<String> colNames, List<TypeInfo> colTypes]
+MethodInvocation:registerMacro
+Method-name:registerMacro
+Method-returnType:FunctionInfo
+Method-parameters:[String macroName, ExprNodeDesc body, List<String> colNames, List<TypeInfo> colTypes, FunctionResource... resources]
+MethodInvocation:addFunction
+Method-name:registerPermanentFunction
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, String className, boolean registerToSession, FunctionResource... resources]
+MethodInvocation:qualifyFunctionName
+MethodInvocation:toLowerCase
+MethodInvocation:getCurrentDatabase
+MethodInvocation:get
+MethodInvocation:registerToSessionRegistry
+MethodInvocation:addFunction
+MethodInvocation:addFunction
+Method-name:registerWindowFunction
+Method-returnType:void
+Method-parameters:[String name, GenericUDAFResolver wFn]
+MethodInvocation:addFunction
+Method-name:validateClass
+Method-returnType:void
+Method-parameters:[Class input, Class expected]
+MethodInvocation:isAssignableFrom
+Method-name:getFunctionInfo
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName]
+MethodInvocation:toLowerCase
+MethodInvocation:isQualifiedFunctionName
+MethodInvocation:getQualifiedFunctionInfo
+MethodInvocation:addToCurrentFunctions
+MethodInvocation:get
+MethodInvocation:isBlockedFunction
+MethodInvocation:qualifyFunctionName
+MethodInvocation:toLowerCase
+MethodInvocation:getCurrentDatabase
+MethodInvocation:get
+MethodInvocation:getQualifiedFunctionInfo
+MethodInvocation:addToCurrentFunctions
+Method-name:getWindowFunctionInfo
+Method-returnType:WindowFunctionInfo
+Method-parameters:[String functionName]
+MethodInvocation:getFunctionInfo
+MethodInvocation:qualifyFunctionName
+MethodInvocation:toLowerCase
+MethodInvocation:getCurrentDatabase
+MethodInvocation:get
+MethodInvocation:getFunctionInfo
+Method-name:isBuiltInFunc
+Method-returnType:boolean
+Method-parameters:[Class<?> udfClass]
+MethodInvocation:contains
+Method-name:isPermanentFunc
+Method-returnType:boolean
+Method-parameters:[Class<?> udfClass]
+MethodInvocation:containsKey
+Method-name:getCurrentFunctionNames
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:lock
+MethodInvocation:getFunctionNames
+MethodInvocation:unlock
+Method-name:getFunctionNames
+Method-returnType:Set<String>
+Method-parameters:[String funcPatternStr]
+MethodInvocation:lock
+MethodInvocation:getFunctionNames
+MethodInvocation:compile
+MethodInvocation:emptySet
+MethodInvocation:unlock
+Method-name:getFunctionNames
+Method-returnType:Set<String>
+Method-parameters:[Pattern funcPattern]
+MethodInvocation:lock
+MethodInvocation:keySet
+MethodInvocation:contains
+MethodInvocation:matches
+MethodInvocation:matcher
+MethodInvocation:add
+MethodInvocation:unlock
+Method-name:getFunctionSynonyms
+Method-returnType:void
+Method-parameters:[String funcName, FunctionInfo funcInfo, Set<String> synonyms]
+MethodInvocation:lock
+MethodInvocation:getFunctionClass
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:contains
+MethodInvocation:equals
+MethodInvocation:getValue
+MethodInvocation:getFunctionClass
+MethodInvocation:add
+MethodInvocation:unlock
+Method-name:getGenericUDAFEvaluator
+Method-returnType:GenericUDAFEvaluator
+Method-parameters:[String name, List<ObjectInspector> argumentOIs, boolean isWindowing, boolean isDistinct, boolean isAllColumns]
+MethodInvocation:getGenericUDAFResolver
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getEvaluator
+MethodInvocation:getEvaluator
+MethodInvocation:getParameters
+Method-name:getGenericWindowingEvaluator
+Method-returnType:GenericUDAFEvaluator
+Method-parameters:[String functionName, List<ObjectInspector> argumentOIs, boolean isDistinct, boolean isAllColumns]
+MethodInvocation:toLowerCase
+MethodInvocation:getWindowFunctionInfo
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:getGenericUDAFEvaluator
+MethodInvocation:size
+MethodInvocation:getGenericUDAFResolver
+MethodInvocation:toArray
+MethodInvocation:getEvaluator
+Method-name:addFunction
+Method-returnType:void
+Method-parameters:[String functionName, FunctionInfo function]
+MethodInvocation:lock
+MethodInvocation:isBuiltIn
+MethodInvocation:isNative
+MethodInvocation:toLowerCase
+MethodInvocation:get
+MethodInvocation:isBuiltInFunc
+MethodInvocation:getFunctionClass
+MethodInvocation:format
+MethodInvocation:getFunctionClass
+MethodInvocation:debug
+MethodInvocation:discarded
+MethodInvocation:put
+MethodInvocation:isBuiltIn
+MethodInvocation:add
+MethodInvocation:getFunctionClass
+MethodInvocation:isPersistent
+MethodInvocation:getPermanentUdfClass
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:valueOf
+MethodInvocation:unlock
+Method-name:getPermanentUdfClass
+Method-returnType:Class<?>
+Method-parameters:[FunctionInfo function]
+MethodInvocation:getFunctionClass
+MethodInvocation:getSessionSpecifiedClassLoader
+MethodInvocation:forName
+MethodInvocation:getClassName
+Method-name:unregisterFunction
+Method-returnType:void
+Method-parameters:[String functionName]
+MethodInvocation:lock
+MethodInvocation:toLowerCase
+MethodInvocation:get
+MethodInvocation:isBuiltIn
+MethodInvocation:getMsg
+MethodInvocation:remove
+MethodInvocation:discarded
+MethodInvocation:isPersistent
+MethodInvocation:removePersistentFunctionUnderLock
+MethodInvocation:unlock
+Method-name:removePersistentFunctionUnderLock
+Method-returnType:void
+Method-parameters:[FunctionInfo fi]
+MethodInvocation:getPermanentUdfClass
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:put
+MethodInvocation:valueOf
+Method-name:unregisterFunctions
+Method-returnType:void
+Method-parameters:[String dbName]
+MethodInvocation:lock
+MethodInvocation:getFunctionNames
+MethodInvocation:toLowerCase
+MethodInvocation:unregisterFunction
+MethodInvocation:unlock
+Method-name:getGenericUDAFResolver
+Method-returnType:GenericUDAFResolver
+Method-parameters:[String functionName]
+MethodInvocation:getFunctionInfo
+MethodInvocation:getGenericUDAFResolver
+Method-name:getQualifiedFunctionInfo
+Method-returnType:FunctionInfo
+Method-parameters:[String qualifiedName]
+MethodInvocation:get
+MethodInvocation:isBlockedFunction
+MethodInvocation:isDiscarded
+MethodInvocation:remove
+MethodInvocation:isPersistent
+MethodInvocation:registerToSessionRegistry
+MethodInvocation:get
+MethodInvocation:getConf
+MethodInvocation:getBoolVar
+MethodInvocation:getFunctionInfoFromMetastoreNoLock
+Method-name:registerToSessionRegistry
+Method-returnType:FunctionInfo
+Method-parameters:[String qualifiedName, FunctionInfo function]
+MethodInvocation:getSessionSpecifiedClassLoader
+MethodInvocation:getResources
+MethodInvocation:addFunctionResources
+MethodInvocation:error
+MethodInvocation:getSessionSpecifiedClassLoader
+MethodInvocation:forName
+MethodInvocation:getClassName
+MethodInvocation:registerFunction
+MethodInvocation:getRegistryForWrite
+MethodInvocation:error
+MethodInvocation:getClassName
+MethodInvocation:isHiveServerQuery
+MethodInvocation:get
+MethodInvocation:addToUDFLoaders
+MethodInvocation:getRegistryForWrite
+MethodInvocation:error
+MethodInvocation:restoreSessionSpecifiedClassLoader
+MethodInvocation:shareStateWith
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:lock
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:unlock
+Method-name:closeCUDFLoaders
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:lock
+MethodInvocation:closeClassLoader
+MethodInvocation:error
+MethodInvocation:clear
+MethodInvocation:unlock
+Method-name:addToUDFLoaders
+Method-returnType:void
+Method-parameters:[ClassLoader loader]
+MethodInvocation:lock
+MethodInvocation:add
+MethodInvocation:unlock
+Method-name:removeFromUDFLoaders
+Method-returnType:void
+Method-parameters:[ClassLoader loader]
+MethodInvocation:lock
+MethodInvocation:remove
+MethodInvocation:unlock
+Method-name:setupPermissionsForUDFs
+Method-returnType:void
+Method-parameters:[String whiteListStr, String blackListStr]
+MethodInvocation:newHashSet
+MethodInvocation:split
+MethodInvocation:omitEmptyStrings
+MethodInvocation:trimResults
+MethodInvocation:on
+MethodInvocation:toLowerCase
+MethodInvocation:newHashSet
+MethodInvocation:split
+MethodInvocation:omitEmptyStrings
+MethodInvocation:trimResults
+MethodInvocation:on
+MethodInvocation:toLowerCase
+MethodInvocation:removeAll
+MethodInvocation:entrySet
+MethodInvocation:setBlockedFunction
+MethodInvocation:getValue
+MethodInvocation:isUdfBlocked
+MethodInvocation:getKey
+Method-name:isUdfBlocked
+Method-returnType:boolean
+Method-parameters:[String functionName, Set<String> whiteList, Set<String> blackList]
+MethodInvocation:toLowerCase
+MethodInvocation:contains
+MethodInvocation:isEmpty
+MethodInvocation:contains
+Method-name:getFunctionInfoFromMetastoreNoLock
+Method-returnType:FunctionInfo
+Method-parameters:[String functionName, HiveConf conf]
+MethodInvocation:getQualifiedFunctionNameParts
+MethodInvocation:getFunction
+MethodInvocation:get
+MethodInvocation:toLowerCase
+MethodInvocation:registerPermanentFunction
+MethodInvocation:getClassName
+MethodInvocation:toFunctionResource
+MethodInvocation:getResourceUris
+MethodInvocation:error
+MethodInvocation:getClassName
+MethodInvocation:info
+Method-name:registerUDFPlugin
+Method-returnType:void
+Method-parameters:[HiveUDFPlugin instance]
+MethodInvocation:getDescriptors
+MethodInvocation:isAssignableFrom
+MethodInvocation:getUDFClass
+MethodInvocation:registerUDF
+MethodInvocation:getFunctionName
+MethodInvocation:getUDFClass
+MethodInvocation:isAssignableFrom
+MethodInvocation:getUDFClass
+MethodInvocation:getFunctionName
+MethodInvocation:registerGenericUDAF
+MethodInvocation:newInstance
+MethodInvocation:getUDFClass
+MethodInvocation:isAssignableFrom
+MethodInvocation:getUDFClass
+MethodInvocation:registerGenericUDTF
+MethodInvocation:getFunctionName
+MethodInvocation:getUDFClass
+MethodInvocation:getFunctionName

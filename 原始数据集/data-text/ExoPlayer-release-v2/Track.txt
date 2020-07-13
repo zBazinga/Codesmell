@@ -1,0 +1,37 @@
+Class:Track
+Method-name:modifyTrack
+Method-returnType:Track
+Method-parameters:[FragmentedMp4Extractor fragmentedMp4Extractor]
+Field:TRANSFORMATION_NONE
+Field:TRANSFORMATION_CEA608_CDAT
+Field:id
+Field:type
+Field:timescale
+Field:movieTimescale
+Field:durationUs
+Field:format
+Field:sampleTransformation
+Field:editListDurations
+Field:editListMediaTimes
+Field:nalUnitLengthFieldLength
+Field:sampleDescriptionEncryptionBoxes
+Method-name:Track
+Method-returnType:null
+Method-parameters:[int id, int type, long timescale, long movieTimescale, long durationUs, Format format, @Transformation int sampleTransformation, @Nullable TrackEncryptionBox[] sampleDescriptionEncryptionBoxes, int nalUnitLengthFieldLength, @Nullable long[] editListDurations, @Nullable long[] editListMediaTimes]
+FieldAccess:id
+FieldAccess:type
+FieldAccess:timescale
+FieldAccess:movieTimescale
+FieldAccess:durationUs
+FieldAccess:format
+FieldAccess:sampleTransformation
+FieldAccess:sampleDescriptionEncryptionBoxes
+FieldAccess:nalUnitLengthFieldLength
+FieldAccess:editListDurations
+FieldAccess:editListMediaTimes
+Method-name:getSampleDescriptionEncryptionBox
+Method-returnType:TrackEncryptionBox
+Method-parameters:[int sampleDescriptionIndex]
+Method-name:copyWithFormat
+Method-returnType:Track
+Method-parameters:[Format format]

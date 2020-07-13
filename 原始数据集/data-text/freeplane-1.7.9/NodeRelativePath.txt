@@ -1,0 +1,80 @@
+Class:NodeRelativePath
+Field:commonAncestor
+Field:beginPath
+Field:endPath
+Method-name:comparator
+Method-returnType:Comparator<NodeModel>
+Method-parameters:[]
+Field:paths
+Method-name:compare
+Method-returnType:int
+Method-parameters:[NodeModel o1, NodeModel o2]
+MethodInvocation:getPath
+MethodInvocation:getPath
+MethodInvocation:compareNodePositions
+Method-name:getPath
+Method-returnType:NodeAbsolutePath
+Method-parameters:[NodeModel node]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:reset
+Method-name:NodeRelativePath
+Method-returnType:null
+Method-parameters:[NodeModel begin, NodeModel end]
+Method-name:NodeRelativePath
+Method-returnType:null
+Method-parameters:[NodeAbsolutePath absoluteBeginPath, NodeAbsolutePath absoluteEndPath]
+MethodInvocation:hasNext
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:equals
+MethodInvocation:next
+MethodInvocation:previous
+MethodInvocation:previous
+FieldAccess:commonAncestor
+MethodInvocation:lastIndex
+MethodInvocation:path
+MethodInvocation:path
+Method-name:commonAncestor
+Method-returnType:NodeModel
+Method-parameters:[]
+Method-name:pathBegin
+Method-returnType:NodeModel
+Method-parameters:[NodeModel commonAncestor]
+MethodInvocation:relativeNode
+Method-name:pathEnd
+Method-returnType:NodeModel
+Method-parameters:[NodeModel commonAncestor]
+MethodInvocation:relativeNode
+Method-name:relativeNode
+Method-returnType:NodeModel
+Method-parameters:[NodeModel commonAncestor, final int[] path, int level]
+MethodInvocation:getChildAt
+Method-name:ancestorForBegin
+Method-returnType:NodeModel
+Method-parameters:[NodeModel begin]
+MethodInvocation:ancestor
+Method-name:ancestor
+Method-returnType:NodeModel
+Method-parameters:[NodeModel source, final int backLevelNumber]
+MethodInvocation:getParentNode
+Method-name:equalPathsTo
+Method-returnType:boolean
+Method-parameters:[NodeRelativePath nodeRelativePath2]
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:beginPathElement
+Method-returnType:NodeModel
+Method-parameters:[int level]
+MethodInvocation:relativeNode
+Method-name:endPathElement
+Method-returnType:NodeModel
+Method-parameters:[int level]
+MethodInvocation:relativeNode
+Method-name:getPathLength
+Method-returnType:int
+Method-parameters:[]
+Method-name:compareNodePositions
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:compare

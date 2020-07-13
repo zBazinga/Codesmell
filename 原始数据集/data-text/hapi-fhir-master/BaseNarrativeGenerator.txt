@@ -1,0 +1,102 @@
+Class:BaseNarrativeGenerator
+Field:myManifest
+Method-name:getManifest
+Method-returnType:INarrativeTemplateManifest
+Method-parameters:[]
+Method-name:setManifest
+Method-returnType:void
+Method-parameters:[INarrativeTemplateManifest theManifest]
+Method-name:populateResourceNarrative
+Method-returnType:boolean
+Method-parameters:[FhirContext theFhirContext, IBaseResource theResource]
+MethodInvocation:getTemplateForElement
+MethodInvocation:size
+MethodInvocation:applyTemplate
+MethodInvocation:get
+Method-name:getTemplateForElement
+Method-returnType:List<INarrativeTemplate>
+Method-parameters:[FhirContext theFhirContext, IBase theElement]
+MethodInvocation:getTemplateByElement
+MethodInvocation:getStyle
+Method-name:applyTemplate
+Method-returnType:boolean
+Method-parameters:[FhirContext theFhirContext, INarrativeTemplate theTemplate, IBaseResource theResource]
+MethodInvocation:templateDoesntApplyToResource
+MethodInvocation:getResourceType
+MethodInvocation:defaultIfEmpty
+MethodInvocation:getContextPath
+MethodInvocation:findElementsInResourceRequiringNarratives
+MethodInvocation:getOrCreateNarrativeChildElement
+MethodInvocation:applyTemplate
+MethodInvocation:cleanWhitespace
+MethodInvocation:isNotBlank
+MethodInvocation:setDivAsString
+MethodInvocation:setStatusAsString
+Method-name:getOrCreateNarrativeChildElement
+Method-returnType:INarrative
+Method-parameters:[FhirContext theFhirContext, IBase nextTargetContext]
+MethodInvocation:getElementDefinition
+MethodInvocation:getClass
+MethodInvocation:getChildByName
+MethodInvocation:getValues
+MethodInvocation:getAccessor
+MethodInvocation:isEmpty
+MethodInvocation:newInstance
+MethodInvocation:getElementDefinition
+MethodInvocation:addValue
+MethodInvocation:getMutator
+MethodInvocation:get
+Method-name:findElementsInResourceRequiringNarratives
+Method-returnType:List<IBase>
+Method-parameters:[FhirContext theFhirContext, IBaseResource theResource, String theContextPath]
+MethodInvocation:isOlderThan
+MethodInvocation:getVersion
+MethodInvocation:getVersion
+MethodInvocation:singletonList
+MethodInvocation:newFluentPath
+MethodInvocation:evaluate
+Method-name:applyTemplate
+Method-returnType:String
+Method-parameters:[FhirContext theFhirContext, INarrativeTemplate theTemplate, IBase theTargetContext]
+Method-name:templateDoesntApplyToResource
+Method-returnType:boolean
+Method-parameters:[INarrativeTemplate theTemplate, IBaseResource theResource]
+MethodInvocation:getAppliesToProfiles
+MethodInvocation:isEmpty
+MethodInvocation:getAppliesToProfiles
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getProfile
+MethodInvocation:getMeta
+MethodInvocation:getValueAsString
+MethodInvocation:toSet
+MethodInvocation:getAppliesToProfiles
+MethodInvocation:contains
+Method-name:getStyle
+Method-returnType:EnumSet<TemplateTypeEnum>
+Method-parameters:[]
+Method-name:cleanWhitespace
+Method-returnType:String
+Method-parameters:[String theResult]
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:isWhitespace
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:length
+MethodInvocation:toLowerCase
+MethodInvocation:charAt
+MethodInvocation:toLowerCase
+MethodInvocation:charAt
+MethodInvocation:toLowerCase
+MethodInvocation:charAt
+MethodInvocation:toLowerCase
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString

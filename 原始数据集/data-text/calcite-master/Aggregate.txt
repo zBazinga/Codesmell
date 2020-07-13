@@ -1,0 +1,204 @@
+Class:Aggregate
+Field:hints
+Method-name:isSimple
+Method-returnType:boolean
+Method-parameters:[Aggregate aggregate]
+MethodInvocation:getGroupType
+Field:IS_SIMPLE
+Field:NO_INDICATOR
+Field:IS_NOT_GRAND_TOTAL
+Method-name:checkIndicator
+Method-returnType:void
+Method-parameters:[boolean indicator]
+MethodInvocation:checkArgument
+Field:indicator
+Field:aggCalls
+Field:groupSet
+Field:groupSets
+Method-name:Aggregate
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, List<RelHint> hints, RelNode input, ImmutableBitSet groupSet, List<ImmutableBitSet> groupSets, List<AggregateCall> aggCalls]
+Method-name:typeMatchesInferred
+Method-returnType:assert
+Method-parameters:[]
+Method-name:Aggregate
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode input, ImmutableBitSet groupSet, List<ImmutableBitSet> groupSets, List<AggregateCall> aggCalls]
+Method-name:Aggregate
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traits, RelNode child, boolean indicator, ImmutableBitSet groupSet, List<ImmutableBitSet> groupSets, List<AggregateCall> aggCalls]
+MethodInvocation:of
+MethodInvocation:checkIndicator
+Method-name:isNotGrandTotal
+Method-returnType:boolean
+Method-parameters:[Aggregate aggregate]
+MethodInvocation:getGroupCount
+Method-name:noIndicator
+Method-returnType:boolean
+Method-parameters:[Aggregate aggregate]
+Method-name:isPredicate
+Method-returnType:boolean
+Method-parameters:[RelNode input, int index]
+MethodInvocation:getType
+MethodInvocation:get
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:getSqlTypeName
+MethodInvocation:isNullable
+Method-name:Aggregate
+Method-returnType:null
+Method-parameters:[RelInput input]
+MethodInvocation:getCluster
+MethodInvocation:getTraitSet
+MethodInvocation:getInput
+MethodInvocation:getBitSet
+MethodInvocation:getBitSetList
+MethodInvocation:getAggregateCalls
+Method-name:copy
+Method-returnType:RelNode
+Method-parameters:[RelTraitSet traitSet, List<RelNode> inputs]
+MethodInvocation:copy
+MethodInvocation:sole
+Method-name:copy
+Method-returnType:Aggregate
+Method-parameters:[RelTraitSet traitSet, RelNode input, ImmutableBitSet groupSet, List<ImmutableBitSet> groupSets, List<AggregateCall> aggCalls]
+Method-name:getAggCallList
+Method-returnType:List<AggregateCall>
+Method-parameters:[]
+Method-name:getNamedAggCalls
+Method-returnType:List<Pair<AggregateCall,String>>
+Method-parameters:[]
+MethodInvocation:getGroupCount
+MethodInvocation:zip
+MethodInvocation:skip
+MethodInvocation:getFieldNames
+MethodInvocation:getRowType
+Method-name:getGroupCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:cardinality
+Method-name:getIndicatorCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:getGroupSet
+Method-returnType:ImmutableBitSet
+Method-parameters:[]
+Method-name:getGroupSets
+Method-returnType:ImmutableList<ImmutableBitSet>
+Method-parameters:[]
+Method-name:explainTerms
+Method-returnType:RelWriter
+Method-parameters:[RelWriter pw]
+MethodInvocation:itemIf
+MethodInvocation:itemIf
+MethodInvocation:item
+MethodInvocation:getGroupType
+MethodInvocation:nest
+MethodInvocation:nest
+MethodInvocation:zip
+MethodInvocation:item
+MethodInvocation:first
+Method-name:estimateRowCount
+Method-returnType:double
+Method-parameters:[RelMetadataQuery mq]
+MethodInvocation:cardinality
+MethodInvocation:pow
+Method-name:computeSelfCost
+Method-returnType:RelOptCost
+Method-parameters:[RelOptPlanner planner, RelMetadataQuery mq]
+MethodInvocation:getRowCount
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getAggregation
+MethodInvocation:makeCost
+MethodInvocation:getCostFactory
+Method-name:deriveRowType
+Method-returnType:RelDataType
+Method-parameters:[]
+MethodInvocation:deriveRowType
+MethodInvocation:getTypeFactory
+MethodInvocation:getCluster
+MethodInvocation:getRowType
+MethodInvocation:getInput
+Method-name:deriveRowType
+Method-returnType:RelDataType
+Method-parameters:[RelDataTypeFactory typeFactory, final RelDataType inputRowType, boolean indicator, ImmutableBitSet groupSet, List<ImmutableBitSet> groupSets, final List<AggregateCall> aggCalls]
+Method-name:allContain
+Method-returnType:boolean
+Method-parameters:[List<ImmutableBitSet> groupSets, int groupKey]
+MethodInvocation:get
+Method-name:isValid
+Method-returnType:boolean
+Method-parameters:[Litmus litmus, Context context]
+MethodInvocation:check
+MethodInvocation:isDistinct
+MethodInvocation:getFieldNames
+MethodInvocation:getRowType
+MethodInvocation:getRowType
+Method-name:typeMatchesInferred
+Method-returnType:boolean
+Method-parameters:[final AggregateCall aggCall, final Litmus litmus]
+MethodInvocation:getAggregation
+MethodInvocation:createBinding
+MethodInvocation:inferReturnType
+MethodInvocation:eq
+Method-name:containsDistinctCall
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isDistinct
+Method-name:getHints
+Method-returnType:ImmutableList<RelHint>
+Method-parameters:[]
+Method-name:getGroupType
+Method-returnType:Group
+Method-parameters:[]
+MethodInvocation:induce
+Field:Group
+Method-name:induce
+Method-returnType:Group
+Method-parameters:[ImmutableBitSet groupSet, List<ImmutableBitSet> groupSets]
+MethodInvocation:isStrictlyOrdered
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:pow
+MethodInvocation:cardinality
+MethodInvocation:isRollup
+Method-name:isRollup
+Method-returnType:boolean
+Method-parameters:[ImmutableBitSet groupSet, List<ImmutableBitSet> groupSets]
+Method-name:getRollup
+Method-returnType:List<Integer>
+Method-parameters:[List<ImmutableBitSet> groupSets]
+MethodInvocation:addAll
+MethodInvocation:toList
+MethodInvocation:except
+MethodInvocation:reverse
+MethodInvocation:copyOf
+Class:AggCallBinding
+Field:operands
+Field:groupCount
+Field:filter
+Method-name:AggCallBinding
+Method-returnType:null
+Method-parameters:[RelDataTypeFactory typeFactory, SqlAggFunction aggFunction, List<RelDataType> operands, int groupCount, boolean filter]
+Method-name:getGroupCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:hasFilter
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getOperandCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getOperandType
+Method-returnType:RelDataType
+Method-parameters:[int ordinal]
+MethodInvocation:get
+Method-name:newError
+Method-returnType:CalciteException
+Method-parameters:[Resources.ExInst<SqlValidatorException> e]
+MethodInvocation:newContextException

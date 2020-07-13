@@ -1,0 +1,366 @@
+Class:OperatorRewriter
+Field:retainedLocalCandidateStack
+Field:retainedLocalCandidates
+Field:isSynchronizedMethod
+Method-name:OperatorRewriter
+Method-returnType:null
+Method-parameters:[CompilationUnit unit]
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[Assignment node]
+MethodInvocation:getOperator
+MethodInvocation:rewriteRegularAssignment
+MethodInvocation:isStringAppend
+MethodInvocation:rewriteStringAppend
+MethodInvocation:rewriteCompoundAssign
+Method-name:isStringAppend
+Method-returnType:boolean
+Method-parameters:[TreeNode node]
+MethodInvocation:getOperator
+MethodInvocation:isAssignable
+MethodInvocation:asType
+MethodInvocation:getJavaString
+MethodInvocation:getTypeMirror
+MethodInvocation:getLeftHandSide
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[InfixExpression node]
+MethodInvocation:getOperator
+MethodInvocation:getTypeMirror
+MethodInvocation:getInfixFunction
+MethodInvocation:iterator
+MethodInvocation:getOperands
+MethodInvocation:next
+MethodInvocation:remove
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:remove
+MethodInvocation:addParameters
+MethodInvocation:getTypeMirror
+MethodInvocation:getTypeMirror
+MethodInvocation:getArguments
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:replaceWith
+MethodInvocation:isString
+MethodInvocation:isStringAppend
+MethodInvocation:getParent
+MethodInvocation:rewriteStringConcatenation
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[MethodDeclaration node]
+MethodInvocation:isSynchronized
+MethodInvocation:getModifiers
+MethodInvocation:addAll
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getParameters
+MethodInvocation:getVariableElement
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:asType
+MethodInvocation:toList
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[MethodDeclaration node]
+MethodInvocation:clear
+MethodInvocation:clear
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SynchronizedStatement node]
+MethodInvocation:add
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[SynchronizedStatement node]
+MethodInvocation:removeLast
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[ReturnStatement node]
+MethodInvocation:getExpression
+MethodInvocation:isEmpty
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:getTypeMirror
+MethodInvocation:rewriteRetainedLocal
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[FieldAccess node]
+MethodInvocation:rewriteVolatileLoad
+MethodInvocation:accept
+MethodInvocation:getExpression
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SuperFieldAccess node]
+MethodInvocation:rewriteVolatileLoad
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[QualifiedName node]
+MethodInvocation:rewriteVolatileLoad
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SimpleName node]
+MethodInvocation:rewriteVolatileLoad
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[VariableDeclarationFragment node]
+MethodInvocation:getInitializer
+MethodInvocation:getVariableElement
+MethodInvocation:accept
+MethodInvocation:handleRetainedLocal
+MethodInvocation:getInitializer
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:asType
+MethodInvocation:add
+Method-name:isRetainedLocal
+Method-returnType:boolean
+Method-parameters:[VariableElement var]
+MethodInvocation:isLocalVariable
+MethodInvocation:hasAnnotation
+MethodInvocation:contains
+Method-name:rewriteRetainedLocal
+Method-returnType:void
+Method-parameters:[Expression expr]
+MethodInvocation:useARC
+MethodInvocation:getKind
+MethodInvocation:getTypeMirror
+MethodInvocation:replaceWith
+MethodInvocation:addArgument
+Method-name:handleRetainedLocal
+Method-returnType:void
+Method-parameters:[VariableElement var, Expression rhs]
+MethodInvocation:isRetainedLocal
+MethodInvocation:rewriteRetainedLocal
+Method-name:rewriteVolatileLoad
+Method-returnType:void
+Method-parameters:[Expression node]
+MethodInvocation:getVariableElement
+MethodInvocation:isVolatile
+MethodInvocation:isAssigned
+MethodInvocation:getTypeMirror
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:capitalize
+MethodInvocation:toString
+MethodInvocation:addParameters
+MethodInvocation:replaceWith
+MethodInvocation:addArgument
+Method-name:getAssignmentFunctionName
+Method-returnType:String
+Method-parameters:[Assignment node, VariableElement var, boolean isRetainedWith]
+MethodInvocation:isField
+MethodInvocation:asType
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:isWeakReference
+MethodInvocation:isVolatile
+MethodInvocation:capitalize
+MethodInvocation:getName
+MethodInvocation:useReferenceCounting
+MethodInvocation:retainResult
+MethodInvocation:getRightHandSide
+MethodInvocation:setRightHandSide
+Field:rwCount
+Method-name:getRetainedWithTarget
+Method-returnType:Expression
+Method-parameters:[Assignment node, VariableElement var]
+MethodInvocation:getLeftHandSide
+MethodInvocation:asType
+MethodInvocation:getDeclaringClass
+MethodInvocation:getExpression
+MethodInvocation:newLocalVar
+MethodInvocation:getTypeMirror
+MethodInvocation:add
+MethodInvocation:asStatementList
+MethodInvocation:getOwningStatement
+MethodInvocation:setExpression
+MethodInvocation:replaceWith
+MethodInvocation:addExpression
+Method-name:rewriteRegularAssignment
+Method-returnType:void
+Method-parameters:[Assignment node]
+MethodInvocation:getVariableElement
+MethodInvocation:getLeftHandSide
+MethodInvocation:handleRetainedLocal
+MethodInvocation:getRightHandSide
+MethodInvocation:isRetainedWithField
+MethodInvocation:getAssignmentFunctionName
+MethodInvocation:getTypeMirror
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:getLeftHandSide
+MethodInvocation:getArguments
+MethodInvocation:addParameters
+MethodInvocation:add
+MethodInvocation:getRetainedWithTarget
+MethodInvocation:addParameters
+MethodInvocation:add
+MethodInvocation:getTypeMirror
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:getRightHandSide
+MethodInvocation:replaceWith
+Method-name:intSizePostfix
+Method-returnType:String
+Method-parameters:[TypeMirror type]
+MethodInvocation:getKind
+Method-name:getInfixFunction
+Method-returnType:String
+Method-parameters:[InfixExpression.Operator op, TypeMirror nodeType]
+MethodInvocation:getKind
+MethodInvocation:getKind
+MethodInvocation:intSizePostfix
+MethodInvocation:intSizePostfix
+MethodInvocation:intSizePostfix
+Method-name:isVolatile
+Method-returnType:boolean
+Method-parameters:[Expression varNode]
+MethodInvocation:getVariableElement
+MethodInvocation:isVolatile
+Method-name:shouldRewriteCompoundAssign
+Method-returnType:boolean
+Method-parameters:[Assignment node]
+MethodInvocation:getLeftHandSide
+MethodInvocation:getTypeMirror
+MethodInvocation:getTypeMirror
+MethodInvocation:getRightHandSide
+MethodInvocation:getOperator
+MethodInvocation:isVolatile
+MethodInvocation:isFloatingPoint
+MethodInvocation:isFloatingPoint
+MethodInvocation:isVolatile
+Method-name:needsPromotionSuffix
+Method-returnType:boolean
+Method-parameters:[Assignment.Operator op]
+Method-name:getPromotionSuffix
+Method-returnType:String
+Method-parameters:[Assignment node]
+MethodInvocation:needsPromotionSuffix
+MethodInvocation:getOperator
+MethodInvocation:getKind
+MethodInvocation:getTypeMirror
+MethodInvocation:getLeftHandSide
+MethodInvocation:getKind
+MethodInvocation:getTypeMirror
+MethodInvocation:getRightHandSide
+Method-name:rewriteCompoundAssign
+Method-returnType:void
+Method-parameters:[Assignment node]
+MethodInvocation:shouldRewriteCompoundAssign
+MethodInvocation:getLeftHandSide
+MethodInvocation:getRightHandSide
+MethodInvocation:getTypeMirror
+MethodInvocation:getName
+MethodInvocation:getOperator
+MethodInvocation:isVolatile
+MethodInvocation:capitalize
+MethodInvocation:toString
+MethodInvocation:getPromotionSuffix
+MethodInvocation:addParameters
+MethodInvocation:getTypeMirror
+MethodInvocation:getArguments
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:replaceWith
+Method-name:getStrcatTypesCString
+Method-returnType:CStringLiteral
+Method-parameters:[List<Expression> operands]
+MethodInvocation:append
+MethodInvocation:getStringConcatenationTypeCharacter
+MethodInvocation:toString
+Method-name:rewriteStringConcatenation
+Method-returnType:void
+Method-parameters:[InfixExpression node]
+MethodInvocation:getOperands
+MethodInvocation:newArrayListWithCapacity
+MethodInvocation:size
+MethodInvocation:moveList
+MethodInvocation:coalesceStringLiterals
+MethodInvocation:size
+MethodInvocation:isString
+MethodInvocation:getTypeMirror
+MethodInvocation:get
+MethodInvocation:replaceWith
+MethodInvocation:get
+MethodInvocation:asType
+MethodInvocation:getJavaString
+MethodInvocation:setIsVarargs
+MethodInvocation:addParameters
+MethodInvocation:getArguments
+MethodInvocation:add
+MethodInvocation:getStrcatTypesCString
+MethodInvocation:addAll
+MethodInvocation:replaceWith
+Method-name:getStringAppendOperands
+Method-returnType:List<Expression>
+Method-parameters:[Assignment node]
+MethodInvocation:getRightHandSide
+MethodInvocation:isString
+MethodInvocation:getTypeMirror
+MethodInvocation:getOperator
+MethodInvocation:getOperands
+MethodInvocation:newArrayListWithCapacity
+MethodInvocation:size
+MethodInvocation:moveList
+MethodInvocation:coalesceStringLiterals
+MethodInvocation:singletonList
+MethodInvocation:remove
+Method-name:rewriteStringAppend
+Method-returnType:void
+Method-parameters:[Assignment node]
+MethodInvocation:getStringAppendOperands
+MethodInvocation:getLeftHandSide
+MethodInvocation:getTypeMirror
+MethodInvocation:getOperatorFunctionModifier
+MethodInvocation:setIsVarargs
+MethodInvocation:addParameters
+MethodInvocation:getArguments
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:getStrcatTypesCString
+MethodInvocation:addAll
+MethodInvocation:replaceWith
+Method-name:coalesceStringLiterals
+Method-returnType:List<Expression>
+Method-parameters:[List<Expression> rawOperands]
+MethodInvocation:newArrayListWithCapacity
+MethodInvocation:size
+MethodInvocation:getLiteralStringValue
+MethodInvocation:addStringLiteralArgument
+MethodInvocation:add
+MethodInvocation:addStringLiteralArgument
+Method-name:addStringLiteralArgument
+Method-returnType:void
+Method-parameters:[List<Expression> args, String literal]
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:add
+MethodInvocation:charAt
+MethodInvocation:add
+Method-name:getLiteralStringValue
+Method-returnType:String
+Method-parameters:[Expression expr]
+MethodInvocation:getKind
+MethodInvocation:getLiteralValue
+MethodInvocation:hasValidCppCharacters
+MethodInvocation:valueOf
+MethodInvocation:booleanValue
+MethodInvocation:valueOf
+MethodInvocation:charValue
+MethodInvocation:toString
+MethodInvocation:getValue
+Method-name:getStringConcatenationTypeCharacter
+Method-returnType:char
+Method-parameters:[Expression operand]
+MethodInvocation:getTypeMirror
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:charAt
+MethodInvocation:getBinaryName
+MethodInvocation:isString

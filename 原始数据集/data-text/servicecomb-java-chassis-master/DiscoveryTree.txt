@@ -1,0 +1,72 @@
+Class:DiscoveryTree
+Field:LOGGER
+MethodInvocation:getLogger
+Field:root
+Field:lock
+Field:filters
+Method-name:loadFromSPI
+Method-returnType:void
+Method-parameters:[Class<? extends DiscoveryFilter> cls]
+MethodInvocation:addAll
+MethodInvocation:getSortedService
+Method-name:addFilter
+Method-returnType:void
+Method-parameters:[DiscoveryFilter filter]
+MethodInvocation:add
+Method-name:sort
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:sort
+MethodInvocation:comparingInt
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:enabled
+MethodInvocation:remove
+MethodInvocation:info
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:enabled
+Method-name:isMatch
+Method-returnType:boolean
+Method-parameters:[VersionedCache existing, VersionedCache inputCache]
+MethodInvocation:isSameVersion
+Method-name:isExpired
+Method-returnType:boolean
+Method-parameters:[VersionedCache existing, VersionedCache inputCache]
+MethodInvocation:isExpired
+Method-name:discovery
+Method-returnType:DiscoveryTreeNode
+Method-parameters:[DiscoveryContext context, VersionedCache inputCache]
+MethodInvocation:getOrCreateRoot
+MethodInvocation:computeIfAbsent
+MethodInvocation:children
+MethodInvocation:name
+MethodInvocation:fromCache
+MethodInvocation:doDiscovery
+Method-name:getOrCreateRoot
+Method-returnType:DiscoveryTreeNode
+Method-parameters:[VersionedCache inputCache]
+MethodInvocation:isMatch
+MethodInvocation:isExpired
+MethodInvocation:cacheVersion
+MethodInvocation:cacheVersion
+MethodInvocation:isSameVersion
+MethodInvocation:cacheVersion
+MethodInvocation:cacheVersion
+Method-name:doDiscovery
+Method-returnType:DiscoveryTreeNode
+Method-parameters:[DiscoveryContext context, DiscoveryTreeNode parent]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:setCurrentNode
+MethodInvocation:discovery
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:level
+MethodInvocation:isGroupingFilter
+MethodInvocation:name
+MethodInvocation:name
+MethodInvocation:isEmpty
+MethodInvocation:popRerunFilter
+MethodInvocation:level

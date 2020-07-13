@@ -1,0 +1,40 @@
+Class:OperatorExplainVectorization
+Field:vectorDesc
+Field:isNative
+Method-name:OperatorExplainVectorization
+Method-returnType:null
+Method-parameters:[VectorDesc vectorDesc, boolean isNative]
+FieldAccess:vectorDesc
+FieldAccess:isNative
+Method-name:vectorExpressionsToStringList
+Method-returnType:List<String>
+Method-parameters:[VectorExpression[] vectorExpressions]
+MethodInvocation:add
+MethodInvocation:toString
+Method-name:outputColumnsAndTypesToStringList
+Method-returnType:List<String>
+Method-parameters:[int[] outputColumns, TypeInfo[] typeInfos]
+MethodInvocation:add
+MethodInvocation:toString
+Method-name:outputColumnsAndTypesToStringList
+Method-returnType:List<String>
+Method-parameters:[VectorColumnMapping vectorColumnMapping]
+MethodInvocation:getCount
+MethodInvocation:getOutputColumns
+MethodInvocation:getTypeInfos
+MethodInvocation:outputColumnsAndTypesToStringList
+Method-name:columnMappingToStringList
+Method-returnType:List<String>
+Method-parameters:[VectorColumnMapping vectorColumnMapping]
+MethodInvocation:getCount
+MethodInvocation:getInputColumns
+MethodInvocation:getOutputColumns
+MethodInvocation:add
+Method-name:getClassName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSimpleName
+MethodInvocation:getVectorOpClass
+Method-name:getNative
+Method-returnType:boolean
+Method-parameters:[]

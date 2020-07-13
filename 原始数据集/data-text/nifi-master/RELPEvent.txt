@@ -1,0 +1,19 @@
+Class:RELPEvent
+Field:txnr
+Field:command
+Method-name:RELPEvent
+Method-returnType:null
+Method-parameters:[final String sender, final byte[] data, final ChannelResponder<SocketChannel> responder, final long txnr, final String command]
+FieldAccess:txnr
+FieldAccess:command
+Method-name:getTxnr
+Method-returnType:long
+Method-parameters:[]
+Method-name:getCommand
+Method-returnType:String
+Method-parameters:[]
+Method-name:getBatchKey
+Method-returnType:String
+Method-parameters:[ListenRELP listenRELP]
+MethodInvocation:getSender
+MethodInvocation:getCommand

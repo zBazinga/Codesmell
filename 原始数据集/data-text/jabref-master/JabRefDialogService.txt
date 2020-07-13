@@ -1,0 +1,321 @@
+Class:JabRefDialogService
+Field:DIALOG_SIZE_LIMIT
+Field:TOAST_MESSAGE_DISPLAY_TIME
+MethodInvocation:millis
+Field:LOGGER
+MethodInvocation:getLogger
+Field:preferences
+Field:themeLoader
+Field:mainWindow
+Field:statusLine
+Method-name:JabRefDialogService
+Method-returnType:null
+Method-parameters:[Window mainWindow, Pane mainPane, JabRefPreferences preferences, ThemeLoader themeLoader]
+FieldAccess:mainWindow
+FieldAccess:statusLine
+Method-name:createDialog
+Method-returnType:FXDialog
+Method-parameters:[AlertType type, String title, String content]
+MethodInvocation:installCss
+MethodInvocation:getScene
+MethodInvocation:getDialogPane
+MethodInvocation:setHeaderText
+MethodInvocation:setContentText
+MethodInvocation:setMinHeight
+MethodInvocation:getDialogPane
+Method-name:createDialogWithOptOut
+Method-returnType:FXDialog
+Method-parameters:[AlertType type, String title, String content, String optOutMessage, Consumer<Boolean> optOutAction]
+MethodInvocation:applyCss
+MethodInvocation:getDialogPane
+MethodInvocation:getGraphic
+MethodInvocation:getDialogPane
+MethodInvocation:setDialogPane
+Method-name:createDetailsButton
+Method-returnType:Node
+Method-parameters:[]
+MethodInvocation:setText
+MethodInvocation:setOnAction
+MethodInvocation:accept
+MethodInvocation:isSelected
+MethodInvocation:setExpandableContent
+MethodInvocation:getDialogPane
+MethodInvocation:setExpanded
+MethodInvocation:getDialogPane
+MethodInvocation:setGraphic
+MethodInvocation:getDialogPane
+MethodInvocation:installCss
+MethodInvocation:getScene
+MethodInvocation:getDialogPane
+MethodInvocation:setHeaderText
+MethodInvocation:setContentText
+MethodInvocation:setMinHeight
+MethodInvocation:getDialogPane
+Method-name:shortenDialogMessage
+Method-returnType:String
+Method-parameters:[String dialogMessage]
+MethodInvocation:length
+MethodInvocation:trim
+MethodInvocation:trim
+MethodInvocation:substring
+MethodInvocation:min
+MethodInvocation:length
+Method-name:showChoiceDialogAndWait
+Method-returnType:Optional<T>
+Method-parameters:[String title, String content, String okButtonLabel, T defaultChoice, Collection<T> choices]
+MethodInvocation:add
+MethodInvocation:getIcons
+MethodInvocation:getWindow
+MethodInvocation:getScene
+MethodInvocation:getDialogPane
+MethodInvocation:getJabRefImageFX
+MethodInvocation:setAll
+MethodInvocation:getButtonTypes
+MethodInvocation:getDialogPane
+MethodInvocation:setHeaderText
+MethodInvocation:setTitle
+MethodInvocation:setContentText
+MethodInvocation:installCss
+MethodInvocation:getScene
+MethodInvocation:getDialogPane
+MethodInvocation:showAndWait
+Method-name:showInputDialogAndWait
+Method-returnType:Optional<String>
+Method-parameters:[String title, String content]
+MethodInvocation:setHeaderText
+MethodInvocation:setContentText
+MethodInvocation:installCss
+MethodInvocation:getScene
+MethodInvocation:getDialogPane
+MethodInvocation:showAndWait
+Method-name:showInputDialogWithDefaultAndWait
+Method-returnType:Optional<String>
+Method-parameters:[String title, String content, String defaultValue]
+MethodInvocation:setHeaderText
+MethodInvocation:setContentText
+MethodInvocation:installCss
+MethodInvocation:getScene
+MethodInvocation:getDialogPane
+MethodInvocation:showAndWait
+Method-name:showInformationDialogAndWait
+Method-returnType:void
+Method-parameters:[String title, String content]
+MethodInvocation:createDialog
+MethodInvocation:showAndWait
+Method-name:showWarningDialogAndWait
+Method-returnType:void
+Method-parameters:[String title, String content]
+MethodInvocation:createDialog
+MethodInvocation:showAndWait
+Method-name:showErrorDialogAndWait
+Method-returnType:void
+Method-parameters:[String title, String content]
+MethodInvocation:createDialog
+MethodInvocation:showAndWait
+Method-name:showErrorDialogAndWait
+Method-returnType:void
+Method-parameters:[String message, Throwable exception]
+MethodInvocation:setMaxWidth
+MethodInvocation:getDialogPane
+MethodInvocation:getWidth
+MethodInvocation:setHeaderText
+MethodInvocation:installCss
+MethodInvocation:getScene
+MethodInvocation:getDialogPane
+MethodInvocation:showAndWait
+Method-name:showErrorDialogAndWait
+Method-returnType:void
+Method-parameters:[String title, String content, Throwable exception]
+MethodInvocation:setHeaderText
+MethodInvocation:setContentText
+MethodInvocation:installCss
+MethodInvocation:getScene
+MethodInvocation:getDialogPane
+MethodInvocation:showAndWait
+Method-name:showErrorDialogAndWait
+Method-returnType:void
+Method-parameters:[String message]
+MethodInvocation:createDialog
+MethodInvocation:lang
+MethodInvocation:showAndWait
+Method-name:showConfirmationDialogAndWait
+Method-returnType:boolean
+Method-parameters:[String title, String content]
+MethodInvocation:createDialog
+MethodInvocation:isPresent
+MethodInvocation:filter
+MethodInvocation:showAndWait
+Method-name:showConfirmationDialogAndWait
+Method-returnType:boolean
+Method-parameters:[String title, String content, String okButtonLabel]
+MethodInvocation:createDialog
+MethodInvocation:setAll
+MethodInvocation:getButtonTypes
+MethodInvocation:isPresent
+MethodInvocation:filter
+MethodInvocation:showAndWait
+Method-name:showConfirmationDialogAndWait
+Method-returnType:boolean
+Method-parameters:[String title, String content, String okButtonLabel, String cancelButtonLabel]
+MethodInvocation:createDialog
+MethodInvocation:setAll
+MethodInvocation:getButtonTypes
+MethodInvocation:isPresent
+MethodInvocation:filter
+MethodInvocation:showAndWait
+Method-name:showConfirmationDialogWithOptOutAndWait
+Method-returnType:boolean
+Method-parameters:[String title, String content, String optOutMessage, Consumer<Boolean> optOutAction]
+MethodInvocation:createDialogWithOptOut
+MethodInvocation:setAll
+MethodInvocation:getButtonTypes
+MethodInvocation:isPresent
+MethodInvocation:filter
+MethodInvocation:showAndWait
+Method-name:showConfirmationDialogWithOptOutAndWait
+Method-returnType:boolean
+Method-parameters:[String title, String content, String okButtonLabel, String cancelButtonLabel, String optOutMessage, Consumer<Boolean> optOutAction]
+MethodInvocation:createDialogWithOptOut
+MethodInvocation:setAll
+MethodInvocation:getButtonTypes
+MethodInvocation:isPresent
+MethodInvocation:filter
+MethodInvocation:showAndWait
+Method-name:showCustomButtonDialogAndWait
+Method-returnType:Optional<ButtonType>
+Method-parameters:[AlertType type, String title, String content, ButtonType... buttonTypes]
+MethodInvocation:createDialog
+MethodInvocation:setAll
+MethodInvocation:getButtonTypes
+MethodInvocation:showAndWait
+Method-name:showCustomDialogAndWait
+Method-returnType:Optional<ButtonType>
+Method-parameters:[String title, DialogPane contentPane, ButtonType... buttonTypes]
+MethodInvocation:setDialogPane
+MethodInvocation:setAll
+MethodInvocation:getButtonTypes
+MethodInvocation:setMinHeight
+MethodInvocation:getDialogPane
+MethodInvocation:setResizable
+MethodInvocation:installCss
+MethodInvocation:getScene
+MethodInvocation:getDialogPane
+MethodInvocation:showAndWait
+Method-name:showCustomDialogAndWait
+Method-returnType:Optional<R>
+Method-parameters:[Dialog<R> dialog]
+MethodInvocation:showAndWait
+Method-name:showProgressDialog
+Method-returnType:void
+Method-parameters:[String title, String content, Task<V> task]
+MethodInvocation:setHeaderText
+MethodInvocation:setTitle
+MethodInvocation:setContentText
+MethodInvocation:setGraphic
+MethodInvocation:add
+MethodInvocation:getIcons
+MethodInvocation:getWindow
+MethodInvocation:getScene
+MethodInvocation:getDialogPane
+MethodInvocation:getJabRefImageFX
+MethodInvocation:setOnCloseRequest
+MethodInvocation:cancel
+MethodInvocation:getDialogPane
+MethodInvocation:add
+MethodInvocation:getButtonTypes
+MethodInvocation:lookupButton
+MethodInvocation:setOnAction
+MethodInvocation:cancel
+MethodInvocation:close
+MethodInvocation:installCss
+MethodInvocation:getScene
+MethodInvocation:getDialogPane
+MethodInvocation:show
+Method-name:showBackgroundProgressDialogAndWait
+Method-returnType:Optional<ButtonType>
+Method-parameters:[String title, String content, StateManager stateManager]
+MethodInvocation:listBind
+MethodInvocation:getTasks
+MethodInvocation:getBackgroundTasks
+MethodInvocation:setRetainTasks
+MethodInvocation:setGraphicFactory
+MethodInvocation:setContent
+MethodInvocation:setDialogPane
+MethodInvocation:setAll
+MethodInvocation:getButtonTypes
+MethodInvocation:setMinHeight
+MethodInvocation:getDialogPane
+MethodInvocation:setResizable
+MethodInvocation:installCss
+MethodInvocation:getScene
+MethodInvocation:getDialogPane
+MethodInvocation:addListener
+MethodInvocation:getAnyTaskRunning
+MethodInvocation:setResult
+MethodInvocation:close
+MethodInvocation:showAndWait
+MethodInvocation:showCustomDialogAndWait
+Method-name:notify
+Method-returnType:void
+Method-parameters:[String message]
+MethodInvocation:info
+MethodInvocation:fireEvent
+Method-name:showFileSaveDialog
+Method-returnType:Optional<Path>
+Method-parameters:[FileDialogConfiguration fileDialogConfiguration]
+MethodInvocation:getConfiguredFileChooser
+MethodInvocation:showSaveDialog
+MethodInvocation:ifPresent
+MethodInvocation:ofNullable
+MethodInvocation:getSelectedExtensionFilter
+MethodInvocation:map
+MethodInvocation:ofNullable
+Method-name:showFileOpenDialog
+Method-returnType:Optional<Path>
+Method-parameters:[FileDialogConfiguration fileDialogConfiguration]
+MethodInvocation:getConfiguredFileChooser
+MethodInvocation:showOpenDialog
+MethodInvocation:ifPresent
+MethodInvocation:ofNullable
+MethodInvocation:getSelectedExtensionFilter
+MethodInvocation:map
+MethodInvocation:ofNullable
+Method-name:showDirectorySelectionDialog
+Method-returnType:Optional<Path>
+Method-parameters:[DirectoryDialogConfiguration directoryDialogConfiguration]
+MethodInvocation:getConfiguredDirectoryChooser
+MethodInvocation:showDialog
+MethodInvocation:map
+MethodInvocation:ofNullable
+Method-name:showFileOpenDialogAndGetMultipleFiles
+Method-returnType:List<Path>
+Method-parameters:[FileDialogConfiguration fileDialogConfiguration]
+MethodInvocation:getConfiguredFileChooser
+MethodInvocation:showOpenMultipleDialog
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toList
+MethodInvocation:emptyList
+Method-name:getConfiguredFileChooser
+Method-returnType:FileChooser
+Method-parameters:[FileDialogConfiguration fileDialogConfiguration]
+MethodInvocation:addAll
+MethodInvocation:getExtensionFilters
+MethodInvocation:getExtensionFilters
+MethodInvocation:setSelectedExtensionFilter
+MethodInvocation:getDefaultExtension
+MethodInvocation:setInitialFileName
+MethodInvocation:getInitialFileName
+MethodInvocation:ifPresent
+MethodInvocation:map
+MethodInvocation:getInitialDirectory
+Method-name:showPrintDialog
+Method-returnType:boolean
+Method-parameters:[PrinterJob job]
+MethodInvocation:showPrintDialog
+Method-name:showFileOpenFromArchiveDialog
+Method-returnType:Optional<Path>
+Method-parameters:[Path archivePath]
+MethodInvocation:newFileSystem
+MethodInvocation:showAndWait

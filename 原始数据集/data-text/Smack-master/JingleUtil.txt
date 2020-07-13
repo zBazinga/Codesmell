@@ -1,0 +1,364 @@
+Class:JingleUtil
+Field:connection
+Method-name:JingleUtil
+Method-returnType:null
+Method-parameters:[XMPPConnection connection]
+FieldAccess:connection
+Method-name:createSessionInitiate
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId, JingleContent.Creator contentCreator, String contentName, JingleContent.Senders contentSenders, JingleContentDescription description, JingleContentTransport transport]
+MethodInvocation:getBuilder
+MethodInvocation:setInitiator
+MethodInvocation:setSessionId
+MethodInvocation:setAction
+MethodInvocation:getUser
+MethodInvocation:getBuilder
+MethodInvocation:setTransport
+MethodInvocation:setDescription
+MethodInvocation:setSenders
+MethodInvocation:setName
+MethodInvocation:setCreator
+MethodInvocation:build
+MethodInvocation:addJingleContent
+MethodInvocation:build
+MethodInvocation:setFrom
+MethodInvocation:getUser
+MethodInvocation:setTo
+Method-name:createSessionInitiateFileOffer
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId, JingleContent.Creator contentCreator, String contentName, JingleContentDescription description, JingleContentTransport transport]
+MethodInvocation:createSessionInitiate
+Method-name:sendSessionInitiateFileOffer
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId, JingleContent.Creator contentCreator, String contentName, JingleContentDescription description, JingleContentTransport transport]
+MethodInvocation:createSessionInitiateFileOffer
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:sendSessionInitiate
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId, JingleContent.Creator contentCreator, String contentName, JingleContent.Senders contentSenders, JingleContentDescription description, JingleContentTransport transport]
+MethodInvocation:createSessionInitiate
+MethodInvocation:nextResult
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createSessionAccept
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId, JingleContent.Creator contentCreator, String contentName, JingleContent.Senders contentSenders, JingleContentDescription description, JingleContentTransport transport]
+MethodInvocation:getBuilder
+MethodInvocation:setSessionId
+MethodInvocation:setAction
+MethodInvocation:setResponder
+MethodInvocation:getUser
+MethodInvocation:getBuilder
+MethodInvocation:setTransport
+MethodInvocation:setDescription
+MethodInvocation:setSenders
+MethodInvocation:setName
+MethodInvocation:setCreator
+MethodInvocation:build
+MethodInvocation:addJingleContent
+MethodInvocation:build
+MethodInvocation:setTo
+MethodInvocation:setFrom
+MethodInvocation:getUser
+Method-name:sendSessionAccept
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId, JingleContent.Creator contentCreator, String contentName, JingleContent.Senders contentSenders, JingleContentDescription description, JingleContentTransport transport]
+MethodInvocation:createSessionAccept
+MethodInvocation:nextResult
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createSessionTerminate
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId, JingleReason reason]
+MethodInvocation:getBuilder
+MethodInvocation:setReason
+MethodInvocation:setSessionId
+MethodInvocation:setAction
+MethodInvocation:build
+MethodInvocation:setFrom
+MethodInvocation:getUser
+MethodInvocation:setTo
+Method-name:createSessionTerminate
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId, JingleReason.Reason reason]
+MethodInvocation:createSessionTerminate
+Method-name:createSessionTerminateDecline
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminate
+Method-name:sendSessionTerminateDecline
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminateDecline
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createSessionTerminateSuccess
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminate
+Method-name:sendSessionTerminateSuccess
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminateSuccess
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createSessionTerminateBusy
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminate
+Method-name:sendSessionTerminateBusy
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminateBusy
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createSessionTerminateAlternativeSession
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId, String altSessionId]
+MethodInvocation:createSessionTerminate
+MethodInvocation:AlternativeSession
+Method-name:sendSessionTerminateAlternativeSession
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId, String altSessionId]
+MethodInvocation:createSessionTerminateAlternativeSession
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createSessionTerminateCancel
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminate
+Method-name:sendSessionTerminateCancel
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminateCancel
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createSessionTerminateContentCancel
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId, JingleContent.Creator contentCreator, String contentName]
+MethodInvocation:getBuilder
+MethodInvocation:setSessionId
+MethodInvocation:setAction
+MethodInvocation:getBuilder
+MethodInvocation:setName
+MethodInvocation:setCreator
+MethodInvocation:build
+MethodInvocation:addJingleContent
+MethodInvocation:build
+MethodInvocation:setFrom
+MethodInvocation:getUser
+MethodInvocation:setTo
+Method-name:sendSessionTerminateContentCancel
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId, JingleContent.Creator contentCreator, String contentName]
+MethodInvocation:createSessionTerminateContentCancel
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createSessionTerminateUnsupportedTransports
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminate
+Method-name:sendSessionTerminateUnsupportedTransports
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminateUnsupportedTransports
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createSessionTerminateFailedTransport
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminate
+Method-name:sendSessionTerminateFailedTransport
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminateFailedTransport
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createSessionTerminateUnsupportedApplications
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminate
+Method-name:sendSessionTerminateUnsupportedApplications
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminateUnsupportedApplications
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createSessionTerminateFailedApplication
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminate
+Method-name:sendSessionTerminateFailedApplication
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminateFailedApplication
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createSessionTerminateIncompatibleParameters
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminate
+Method-name:sendSessionTerminateIncompatibleParameters
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionTerminateIncompatibleParameters
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:sendContentRejectFileNotAvailable
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId, JingleContentDescription description]
+Method-name:createSessionPing
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:getBuilder
+MethodInvocation:setAction
+MethodInvocation:setSessionId
+MethodInvocation:build
+MethodInvocation:setFrom
+MethodInvocation:getUser
+MethodInvocation:setTo
+Method-name:sendSessionPing
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, String sessionId]
+MethodInvocation:createSessionPing
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createAck
+Method-returnType:IQ
+Method-parameters:[Jingle jingle]
+MethodInvocation:createResultIQ
+Method-name:sendAck
+Method-returnType:void
+Method-parameters:[Jingle jingle]
+MethodInvocation:sendStanza
+MethodInvocation:createAck
+Method-name:createTransportReplace
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, FullJid initiator, String sessionId, JingleContent.Creator contentCreator, String contentName, JingleContentTransport transport]
+MethodInvocation:getBuilder
+MethodInvocation:setAction
+MethodInvocation:setSessionId
+MethodInvocation:setInitiator
+MethodInvocation:getBuilder
+MethodInvocation:setTransport
+MethodInvocation:setCreator
+MethodInvocation:setName
+MethodInvocation:build
+MethodInvocation:addJingleContent
+MethodInvocation:build
+MethodInvocation:setTo
+MethodInvocation:setFrom
+MethodInvocation:getUser
+Method-name:sendTransportReplace
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, FullJid initiator, String sessionId, JingleContent.Creator contentCreator, String contentName, JingleContentTransport transport]
+MethodInvocation:createTransportReplace
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createTransportAccept
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, FullJid initiator, String sessionId, JingleContent.Creator contentCreator, String contentName, JingleContentTransport transport]
+MethodInvocation:getBuilder
+MethodInvocation:setSessionId
+MethodInvocation:setInitiator
+MethodInvocation:setAction
+MethodInvocation:getBuilder
+MethodInvocation:setTransport
+MethodInvocation:setName
+MethodInvocation:setCreator
+MethodInvocation:build
+MethodInvocation:addJingleContent
+MethodInvocation:build
+MethodInvocation:setTo
+MethodInvocation:setFrom
+MethodInvocation:getUser
+Method-name:sendTransportAccept
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, FullJid initiator, String sessionId, JingleContent.Creator contentCreator, String contentName, JingleContentTransport transport]
+MethodInvocation:createTransportAccept
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:createTransportReject
+Method-returnType:Jingle
+Method-parameters:[FullJid recipient, FullJid initiator, String sessionId, JingleContent.Creator contentCreator, String contentName, JingleContentTransport transport]
+MethodInvocation:getBuilder
+MethodInvocation:setSessionId
+MethodInvocation:setInitiator
+MethodInvocation:setAction
+MethodInvocation:getBuilder
+MethodInvocation:setTransport
+MethodInvocation:setName
+MethodInvocation:setCreator
+MethodInvocation:build
+MethodInvocation:addJingleContent
+MethodInvocation:build
+MethodInvocation:setTo
+MethodInvocation:setFrom
+MethodInvocation:getUser
+Method-name:sendTransportReject
+Method-returnType:IQ
+Method-parameters:[FullJid recipient, FullJid initiator, String sessionId, JingleContent.Creator contentCreator, String contentName, JingleContentTransport transport]
+MethodInvocation:createTransportReject
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:sendErrorUnknownSession
+Method-returnType:void
+Method-parameters:[Jingle request]
+MethodInvocation:sendStanza
+MethodInvocation:createErrorUnknownSession
+Method-name:createErrorUnknownInitiator
+Method-returnType:IQ
+Method-parameters:[Jingle request]
+MethodInvocation:createErrorResponse
+Method-name:sendErrorUnknownInitiator
+Method-returnType:void
+Method-parameters:[Jingle request]
+MethodInvocation:sendStanza
+MethodInvocation:createErrorUnknownInitiator
+Method-name:createErrorUnsupportedInfo
+Method-returnType:IQ
+Method-parameters:[Jingle request]
+MethodInvocation:build
+MethodInvocation:addExtension
+MethodInvocation:setCondition
+MethodInvocation:getBuilder
+MethodInvocation:createErrorResponse
+Method-name:sendErrorUnsupportedInfo
+Method-returnType:void
+Method-parameters:[Jingle request]
+MethodInvocation:sendStanza
+MethodInvocation:createErrorUnsupportedInfo
+Method-name:createErrorTieBreak
+Method-returnType:IQ
+Method-parameters:[Jingle request]
+MethodInvocation:build
+MethodInvocation:addExtension
+MethodInvocation:setCondition
+MethodInvocation:getBuilder
+MethodInvocation:createErrorResponse
+Method-name:sendErrorTieBreak
+Method-returnType:void
+Method-parameters:[Jingle request]
+MethodInvocation:sendStanza
+MethodInvocation:createErrorTieBreak
+Method-name:createErrorOutOfOrder
+Method-returnType:IQ
+Method-parameters:[Jingle request]
+MethodInvocation:build
+MethodInvocation:addExtension
+MethodInvocation:setCondition
+MethodInvocation:getBuilder
+MethodInvocation:createErrorResponse
+Method-name:sendErrorOutOfOrder
+Method-returnType:void
+Method-parameters:[Jingle request]
+MethodInvocation:sendStanza
+MethodInvocation:createErrorOutOfOrder
+Method-name:createErrorMalformedRequest
+Method-returnType:IQ
+Method-parameters:[Jingle request]
+MethodInvocation:createErrorResponse
+Method-name:sendErrorMalformedRequest
+Method-returnType:void
+Method-parameters:[Jingle request]
+MethodInvocation:sendStanza
+MethodInvocation:createErrorMalformedRequest

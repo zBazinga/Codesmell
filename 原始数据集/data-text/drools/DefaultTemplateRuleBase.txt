@@ -1,0 +1,67 @@
+Class:DefaultTemplateRuleBase
+Field:kBase
+Method-name:DefaultTemplateRuleBase
+Method-returnType:null
+Method-parameters:[final TemplateContainer tc]
+MethodInvocation:readKnowledgeBase
+MethodInvocation:getDTRules
+MethodInvocation:getTemplates
+Method-name:newStatefulSession
+Method-returnType:KieSession
+Method-parameters:[]
+MethodInvocation:newKieSession
+Method-name:getDTRules
+Method-returnType:String
+Method-parameters:[Map<String,RuleTemplate> templates]
+MethodInvocation:getName
+MethodInvocation:getPackage
+MethodInvocation:addImports
+MethodInvocation:addGlobals
+MethodInvocation:values
+MethodInvocation:createTemplateRule
+MethodInvocation:renderDRL
+MethodInvocation:getDRL
+Method-name:createTemplateRule
+Method-returnType:void
+Method-parameters:[org.drools.template.model.Package p, int index, RuleTemplate template]
+MethodInvocation:getName
+MethodInvocation:setSnippet
+MethodInvocation:addCondition
+MethodInvocation:createColumnConditions
+MethodInvocation:addConsequence
+MethodInvocation:createConsequence
+MethodInvocation:addRule
+Method-name:addGlobals
+Method-returnType:void
+Method-parameters:[org.drools.template.model.Package p]
+MethodInvocation:setClassName
+MethodInvocation:getName
+MethodInvocation:setIdentifier
+MethodInvocation:addVariable
+Method-name:addImports
+Method-returnType:void
+Method-parameters:[org.drools.template.model.Package p]
+MethodInvocation:setClassName
+MethodInvocation:getName
+MethodInvocation:setClassName
+MethodInvocation:getName
+MethodInvocation:addImport
+MethodInvocation:addImport
+Method-name:createConsequence
+Method-returnType:Consequence
+Method-parameters:[RuleTemplate template]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getName
+MethodInvocation:setSnippet
+MethodInvocation:toString
+Method-name:readKnowledgeBase
+Method-returnType:InternalKnowledgeBase
+Method-parameters:[String drl]
+MethodInvocation:addPackageFromDrl
+MethodInvocation:getPackage
+MethodInvocation:getName
+MethodInvocation:getPackage
+MethodInvocation:newKnowledgeBase
+MethodInvocation:addPackage

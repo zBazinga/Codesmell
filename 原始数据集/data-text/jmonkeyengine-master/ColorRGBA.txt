@@ -1,0 +1,215 @@
+Class:ColorRGBA
+Field:GAMMA
+Field:serialVersionUID
+Field:Black
+Field:White
+Field:DarkGray
+Field:Gray
+Field:LightGray
+Field:Red
+Field:Green
+Field:Blue
+Field:Yellow
+Field:Magenta
+Field:Cyan
+Field:Orange
+Field:Brown
+Field:Pink
+Field:BlackNoAlpha
+Field:r
+Field:g
+Field:b
+Field:a
+Method-name:ColorRGBA
+Method-returnType:null
+Method-parameters:[]
+Method-name:ColorRGBA
+Method-returnType:null
+Method-parameters:[float r, float g, float b, float a]
+FieldAccess:r
+FieldAccess:g
+FieldAccess:b
+FieldAccess:a
+Method-name:ColorRGBA
+Method-returnType:null
+Method-parameters:[ColorRGBA rgba]
+FieldAccess:a
+FieldAccess:r
+FieldAccess:g
+FieldAccess:b
+Method-name:set
+Method-returnType:ColorRGBA
+Method-parameters:[float r, float g, float b, float a]
+FieldAccess:r
+FieldAccess:g
+FieldAccess:b
+FieldAccess:a
+Method-name:set
+Method-returnType:ColorRGBA
+Method-parameters:[ColorRGBA rgba]
+Method-name:setRed
+Method-returnType:ColorRGBA
+Method-parameters:[float value]
+Method-name:setGreen
+Method-returnType:ColorRGBA
+Method-parameters:[float value]
+Method-name:setBlue
+Method-returnType:ColorRGBA
+Method-parameters:[float value]
+Method-name:setAlpha
+Method-returnType:ColorRGBA
+Method-parameters:[float value]
+Method-name:clamp
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clamp
+MethodInvocation:clamp
+MethodInvocation:clamp
+MethodInvocation:clamp
+Method-name:getColorArray
+Method-returnType:float[]
+Method-parameters:[]
+Method-name:getColorArray
+Method-returnType:float[]
+Method-parameters:[float[] store]
+Method-name:getAlpha
+Method-returnType:float
+Method-parameters:[]
+Method-name:getRed
+Method-returnType:float
+Method-parameters:[]
+Method-name:getBlue
+Method-returnType:float
+Method-parameters:[]
+Method-name:getGreen
+Method-returnType:float
+Method-parameters:[]
+Method-name:interpolateLocal
+Method-returnType:ColorRGBA
+Method-parameters:[ColorRGBA finalColor, float changeAmnt]
+FieldAccess:r
+FieldAccess:r
+FieldAccess:g
+FieldAccess:g
+FieldAccess:b
+FieldAccess:b
+FieldAccess:a
+FieldAccess:a
+Method-name:interpolateLocal
+Method-returnType:ColorRGBA
+Method-parameters:[ColorRGBA beginColor, ColorRGBA finalColor, float changeAmnt]
+FieldAccess:r
+FieldAccess:g
+FieldAccess:b
+FieldAccess:a
+Method-name:randomColor
+Method-returnType:ColorRGBA
+Method-parameters:[]
+MethodInvocation:nextRandomFloat
+MethodInvocation:nextRandomFloat
+MethodInvocation:nextRandomFloat
+Method-name:mult
+Method-returnType:ColorRGBA
+Method-parameters:[ColorRGBA c]
+Method-name:mult
+Method-returnType:ColorRGBA
+Method-parameters:[float scalar]
+Method-name:multLocal
+Method-returnType:ColorRGBA
+Method-parameters:[float scalar]
+FieldAccess:r
+FieldAccess:g
+FieldAccess:b
+FieldAccess:a
+Method-name:add
+Method-returnType:ColorRGBA
+Method-parameters:[ColorRGBA c]
+Method-name:addLocal
+Method-returnType:ColorRGBA
+Method-parameters:[ColorRGBA c]
+MethodInvocation:set
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:clone
+Method-returnType:ColorRGBA
+Method-parameters:[]
+Method-name:toArray
+Method-returnType:float[]
+Method-parameters:[float[] floats]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:compare
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter e]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter e]
+MethodInvocation:getCapsule
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+Method-name:asBytesRGBA
+Method-returnType:byte[]
+Method-parameters:[]
+Method-name:asIntARGB
+Method-returnType:int
+Method-parameters:[]
+Method-name:asIntRGBA
+Method-returnType:int
+Method-parameters:[]
+Method-name:asIntABGR
+Method-returnType:int
+Method-parameters:[]
+Method-name:fromIntARGB
+Method-returnType:ColorRGBA
+Method-parameters:[int color]
+Method-name:fromIntRGBA
+Method-returnType:ColorRGBA
+Method-parameters:[int color]
+Method-name:fromIntABGR
+Method-returnType:ColorRGBA
+Method-parameters:[int color]
+Method-name:fromRGBA255
+Method-returnType:ColorRGBA
+Method-parameters:[int r, int g, int b, int a]
+Method-name:toVector3f
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:toVector4f
+Method-returnType:Vector4f
+Method-parameters:[]
+Method-name:setAsSrgb
+Method-returnType:ColorRGBA
+Method-parameters:[float r, float g, float b, float a]
+FieldAccess:r
+MethodInvocation:pow
+FieldAccess:b
+MethodInvocation:pow
+FieldAccess:g
+MethodInvocation:pow
+FieldAccess:a
+Method-name:getAsSrgb
+Method-returnType:ColorRGBA
+Method-parameters:[]
+MethodInvocation:pow
+MethodInvocation:pow
+MethodInvocation:pow

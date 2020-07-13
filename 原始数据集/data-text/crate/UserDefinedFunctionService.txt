@@ -1,0 +1,101 @@
+Class:UserDefinedFunctionService
+Field:LOGGER
+MethodInvocation:getLogger
+Field:clusterService
+Field:functions
+Field:languageRegistry
+Method-name:UserDefinedFunctionService
+Method-returnType:null
+Method-parameters:[ClusterService clusterService, Functions functions]
+FieldAccess:clusterService
+FieldAccess:functions
+Method-name:getLanguage
+Method-returnType:UDFLanguage
+Method-parameters:[String languageName]
+MethodInvocation:get
+MethodInvocation:format
+Method-name:registerLanguage
+Method-returnType:void
+Method-parameters:[UDFLanguage language]
+MethodInvocation:put
+MethodInvocation:name
+Method-name:registerFunction
+Method-returnType:void
+Method-parameters:[final UserDefinedFunctionMetaData metaData, final boolean replace, final ActionListener<UserDefinedFunctionResponse> listener, final TimeValue timeout]
+MethodInvocation:submitStateUpdateTask
+MethodInvocation:name
+Method-name:execute
+Method-returnType:ClusterState
+Method-parameters:[ClusterState currentState]
+MethodInvocation:metaData
+MethodInvocation:builder
+MethodInvocation:putFunction
+MethodInvocation:custom
+MethodInvocation:putCustom
+MethodInvocation:build
+MethodInvocation:metaData
+MethodInvocation:builder
+Method-name:timeout
+Method-returnType:TimeValue
+Method-parameters:[]
+Method-name:clusterStateProcessed
+Method-returnType:void
+Method-parameters:[String source, ClusterState oldState, ClusterState newState]
+MethodInvocation:onResponse
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[String source, Exception e]
+MethodInvocation:onFailure
+Method-name:dropFunction
+Method-returnType:void
+Method-parameters:[final String schema, final String name, final List<DataType> argumentTypes, final boolean ifExists, final ActionListener<UserDefinedFunctionResponse> listener, final TimeValue timeout]
+MethodInvocation:submitStateUpdateTask
+Method-name:execute
+Method-returnType:ClusterState
+Method-parameters:[ClusterState currentState]
+MethodInvocation:metaData
+MethodInvocation:builder
+MethodInvocation:metaData
+MethodInvocation:removeFunction
+MethodInvocation:custom
+MethodInvocation:putCustom
+MethodInvocation:build
+MethodInvocation:metaData
+MethodInvocation:builder
+Method-name:timeout
+Method-returnType:TimeValue
+Method-parameters:[]
+Method-name:clusterStateProcessed
+Method-returnType:void
+Method-parameters:[String source, ClusterState oldState, ClusterState newState]
+MethodInvocation:onResponse
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[String source, Exception e]
+MethodInvocation:onFailure
+Method-name:removeFunction
+Method-returnType:UserDefinedFunctionsMetaData
+Method-parameters:[@Nullable UserDefinedFunctionsMetaData functions, String schema, String name, List<DataType> argumentDataTypes, boolean ifExists]
+MethodInvocation:contains
+MethodInvocation:of
+MethodInvocation:newInstance
+MethodInvocation:remove
+Method-name:updateImplementations
+Method-returnType:void
+Method-parameters:[String schema, Stream<UserDefinedFunctionMetaData> userDefinedFunctions]
+MethodInvocation:registerUdfResolversForSchema
+MethodInvocation:constructScalarInstances
+Method-name:constructScalarInstances
+Method-returnType:Map<FunctionIdent,FunctionImplementation>
+Method-parameters:[Stream<UserDefinedFunctionMetaData> functions]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:createFunctionImplementation
+MethodInvocation:getLanguage
+MethodInvocation:language
+MethodInvocation:put
+MethodInvocation:ident
+MethodInvocation:info
+MethodInvocation:warn
+MethodInvocation:specificName

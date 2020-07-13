@@ -1,0 +1,98 @@
+Class:AbstractVmNode
+Field:parser
+Field:info
+Field:state
+Field:invalid
+Field:first
+Field:last
+Field:templateName
+Method-name:AbstractVmNode
+Method-returnType:null
+Method-parameters:[final int i]
+Method-name:AbstractVmNode
+Method-returnType:null
+Method-parameters:[final VmParser p, final int i]
+Method-name:jjtOpen
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getToken
+Method-name:jjtClose
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getToken
+Method-name:setFirstToken
+Method-returnType:void
+Method-parameters:[final Token t]
+FieldAccess:first
+Method-name:getFirstToken
+Method-returnType:Token
+Method-parameters:[]
+Method-name:getLastToken
+Method-returnType:Token
+Method-parameters:[]
+Method-name:jjtAccept
+Method-returnType:Object
+Method-parameters:[final VmParserVisitor visitor, final Object data]
+MethodInvocation:visit
+Method-name:childrenAccept
+Method-returnType:Object
+Method-parameters:[final VmParserVisitor visitor, final Object data]
+MethodInvocation:children
+MethodInvocation:jjtAccept
+Method-name:getXPathNodeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[final String prefix]
+MethodInvocation:toString
+Method-name:dump
+Method-returnType:void
+Method-parameters:[final String prefix, final boolean recurse, final Writer writer]
+MethodInvocation:println
+MethodInvocation:toString
+MethodInvocation:dump
+Method-name:literal
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:equals
+MethodInvocation:tokenLiteral
+MethodInvocation:tokenLiteral
+MethodInvocation:equals
+MethodInvocation:append
+MethodInvocation:tokenLiteral
+MethodInvocation:toString
+Method-name:getType
+Method-returnType:int
+Method-parameters:[]
+Method-name:setInfo
+Method-returnType:void
+Method-parameters:[final int info]
+FieldAccess:info
+Method-name:getInfo
+Method-returnType:int
+Method-parameters:[]
+Method-name:setInvalid
+Method-returnType:void
+Method-parameters:[]
+Method-name:isInvalid
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getLine
+Method-returnType:int
+Method-parameters:[]
+Method-name:getColumn
+Method-returnType:int
+Method-parameters:[]
+Method-name:getTemplateName
+Method-returnType:String
+Method-parameters:[]
+Method-name:adjTokenLineNums
+Method-returnType:void
+Method-parameters:[ASTStringLiteral astStringLiteral]
+MethodInvocation:getFirstToken
+MethodInvocation:getLastToken
+MethodInvocation:getColumn
+MethodInvocation:getColumn
+MethodInvocation:getLine
+MethodInvocation:getLine

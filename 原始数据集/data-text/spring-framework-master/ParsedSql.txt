@@ -1,0 +1,64 @@
+Class:ParsedSql
+Field:originalSql
+Field:parameterNames
+Field:parameterIndexes
+Field:namedParameterCount
+Field:unnamedParameterCount
+Field:totalParameterCount
+Method-name:ParsedSql
+Method-returnType:null
+Method-parameters:[String originalSql]
+FieldAccess:originalSql
+Method-name:getOriginalSql
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:originalSql
+Method-name:addNamedParameter
+Method-returnType:void
+Method-parameters:[String parameterName, int startIndex, int endIndex]
+MethodInvocation:add
+FieldAccess:parameterNames
+MethodInvocation:add
+FieldAccess:parameterIndexes
+Method-name:getParameterNames
+Method-returnType:List<String>
+Method-parameters:[]
+FieldAccess:parameterNames
+Method-name:getParameterIndexes
+Method-returnType:int[]
+Method-parameters:[int parameterPosition]
+MethodInvocation:get
+FieldAccess:parameterIndexes
+Method-name:setNamedParameterCount
+Method-returnType:void
+Method-parameters:[int namedParameterCount]
+FieldAccess:namedParameterCount
+Method-name:getNamedParameterCount
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:namedParameterCount
+Method-name:setUnnamedParameterCount
+Method-returnType:void
+Method-parameters:[int unnamedParameterCount]
+FieldAccess:unnamedParameterCount
+Method-name:getUnnamedParameterCount
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:unnamedParameterCount
+Method-name:setTotalParameterCount
+Method-returnType:void
+Method-parameters:[int totalParameterCount]
+FieldAccess:totalParameterCount
+Method-name:getTotalParameterCount
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:totalParameterCount
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:originalSql
+Method-name:getPreparedStatementCreatorFactory
+Method-returnType:PreparedStatementCreatorFactory
+Method-parameters:[SqlParameterSource paramSource, NamedParameterJdbcTemplate namedParameterJdbcTemplate]
+MethodInvocation:substituteNamedParameters
+MethodInvocation:buildSqlParameterList

@@ -1,0 +1,102 @@
+Class:MapReader
+Class:NodeTreeCreator
+Field:createdMap
+Field:hints
+Field:mapChild
+Field:newIds
+Method-name:NodeTreeCreator
+Method-returnType:null
+Method-parameters:[]
+Method-name:NodeTreeCreator
+Method-returnType:null
+Method-parameters:[Map<Object,Object> hints]
+FieldAccess:hints
+Method-name:create
+Method-returnType:NodeModel
+Method-parameters:[final Reader pReader]
+MethodInvocation:load
+MethodInvocation:getMapChild
+MethodInvocation:reset
+Method-name:createNodeTreeFromXml
+Method-returnType:NodeModel
+Method-parameters:[final MapModel map, final Reader pReader]
+MethodInvocation:start
+MethodInvocation:create
+MethodInvocation:finish
+Method-name:finish
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:readingCompleted
+MethodInvocation:clear
+Method-name:start
+Method-returnType:void
+Method-parameters:[final MapModel map]
+Method-name:getCreatedMap
+Method-returnType:MapModel
+Method-parameters:[]
+Method-name:getHint
+Method-returnType:Object
+Method-parameters:[final Object key]
+MethodInvocation:get
+Method-name:setHint
+Method-returnType:void
+Method-parameters:[final Object key, final Object value]
+MethodInvocation:put
+Method-name:putHints
+Method-returnType:void
+Method-parameters:[Map<? extends Object,? extends Object> m]
+MethodInvocation:putAll
+Method-name:getMapChild
+Method-returnType:NodeModel
+Method-parameters:[]
+Method-name:setMapChild
+Method-returnType:void
+Method-parameters:[final NodeModel mapChild]
+FieldAccess:mapChild
+MethodInvocation:getRootNode
+MethodInvocation:setRoot
+Method-name:substituteNodeID
+Method-returnType:void
+Method-parameters:[final String value, final String realId]
+MethodInvocation:put
+Method-name:substitutedID
+Method-returnType:String
+Method-parameters:[final String idCandicate]
+MethodInvocation:get
+Field:nodeBuilder
+Field:readManager
+Field:nodeTreeCreator
+Method-name:getCurrentNodeTreeCreator
+Method-returnType:NodeTreeCreator
+Method-parameters:[]
+Method-name:MapReader
+Method-returnType:null
+Method-parameters:[final ReadManager readManager]
+FieldAccess:readManager
+MethodInvocation:registerBy
+Method-name:createElement
+Method-returnType:Object
+Method-parameters:[final Object parent, final String tag, final XMLElement attributes]
+MethodInvocation:getCreatedMap
+Method-name:createNodeTreeFromXml
+Method-returnType:NodeModel
+Method-parameters:[final MapModel map, final Reader pReader, final Mode mode]
+MethodInvocation:put
+MethodInvocation:createNodeTreeFromXml
+Method-name:createNodeTreeFromXml
+Method-returnType:NodeModel
+Method-parameters:[final MapModel map, final Reader pReader, final Map<Object,Object> hints]
+MethodInvocation:createNodeTreeFromXml
+Method-name:endElement
+Method-returnType:void
+Method-parameters:[final Object parent, final String tag, final Object element, final XMLElement dom]
+MethodInvocation:getAttributeCount
+MethodInvocation:hasChildren
+MethodInvocation:addExtension
+Method-name:isMapLoadingInProcess
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:nodeTreeCreator
+Method-returnType:NodeTreeCreator
+Method-parameters:[final MapModel map]
+MethodInvocation:start

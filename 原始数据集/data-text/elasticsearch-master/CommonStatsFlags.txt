@@ -1,0 +1,154 @@
+Class:CommonStatsFlags
+Field:ALL
+MethodInvocation:all
+Field:NONE
+MethodInvocation:clear
+Field:flags
+MethodInvocation:allOf
+Field:groups
+Field:fieldDataFields
+Field:completionDataFields
+Field:includeSegmentFileSizes
+Field:includeUnloadedSegments
+Method-name:CommonStatsFlags
+Method-returnType:null
+Method-parameters:[Flag... flags]
+MethodInvocation:clear
+MethodInvocation:addAll
+FieldAccess:flags
+Method-name:CommonStatsFlags
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readLong
+MethodInvocation:clear
+MethodInvocation:values
+MethodInvocation:getIndex
+MethodInvocation:add
+MethodInvocation:before
+MethodInvocation:getVersion
+MethodInvocation:readStringArray
+MethodInvocation:readStringArray
+MethodInvocation:readStringArray
+MethodInvocation:readStringArray
+MethodInvocation:readBoolean
+MethodInvocation:onOrAfter
+MethodInvocation:getVersion
+MethodInvocation:readBoolean
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:getIndex
+MethodInvocation:writeLong
+MethodInvocation:before
+MethodInvocation:getVersion
+MethodInvocation:writeStringArrayNullable
+MethodInvocation:writeStringArrayNullable
+MethodInvocation:writeStringArrayNullable
+MethodInvocation:writeStringArrayNullable
+MethodInvocation:writeBoolean
+MethodInvocation:onOrAfter
+MethodInvocation:getVersion
+MethodInvocation:writeBoolean
+Method-name:all
+Method-returnType:CommonStatsFlags
+Method-parameters:[]
+MethodInvocation:allOf
+Method-name:clear
+Method-returnType:CommonStatsFlags
+Method-parameters:[]
+MethodInvocation:noneOf
+Method-name:anySet
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getFlags
+Method-returnType:Flag[]
+Method-parameters:[]
+MethodInvocation:toArray
+MethodInvocation:size
+Method-name:groups
+Method-returnType:CommonStatsFlags
+Method-parameters:[String... groups]
+FieldAccess:groups
+Method-name:groups
+Method-returnType:String[]
+Method-parameters:[]
+FieldAccess:groups
+Method-name:fieldDataFields
+Method-returnType:CommonStatsFlags
+Method-parameters:[String... fieldDataFields]
+FieldAccess:fieldDataFields
+Method-name:fieldDataFields
+Method-returnType:String[]
+Method-parameters:[]
+FieldAccess:fieldDataFields
+Method-name:completionDataFields
+Method-returnType:CommonStatsFlags
+Method-parameters:[String... completionDataFields]
+FieldAccess:completionDataFields
+Method-name:completionDataFields
+Method-returnType:String[]
+Method-parameters:[]
+FieldAccess:completionDataFields
+Method-name:includeSegmentFileSizes
+Method-returnType:CommonStatsFlags
+Method-parameters:[boolean includeSegmentFileSizes]
+FieldAccess:includeSegmentFileSizes
+Method-name:includeUnloadedSegments
+Method-returnType:CommonStatsFlags
+Method-parameters:[boolean includeUnloadedSegments]
+FieldAccess:includeUnloadedSegments
+Method-name:includeUnloadedSegments
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:includeUnloadedSegments
+Method-name:includeSegmentFileSizes
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:includeSegmentFileSizes
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[Flag flag]
+MethodInvocation:contains
+Method-name:unSet
+Method-returnType:boolean
+Method-parameters:[Flag flag]
+MethodInvocation:remove
+Method-name:set
+Method-returnType:void
+Method-parameters:[Flag flag]
+MethodInvocation:add
+Method-name:set
+Method-returnType:CommonStatsFlags
+Method-parameters:[Flag flag, boolean add]
+MethodInvocation:set
+MethodInvocation:unSet
+Method-name:clone
+Method-returnType:CommonStatsFlags
+Method-parameters:[]
+MethodInvocation:clone
+Method-name:indexShardStats
+Method-returnType:IndexShardStats
+Method-parameters:[final IndicesService indicesService, final IndexShard indexShard, IndicesService indexServices]
+MethodInvocation:routingEntry
+MethodInvocation:commitStats
+MethodInvocation:seqNoStats
+MethodInvocation:getRetentionLeaseStats
+MethodInvocation:shardId
+MethodInvocation:routingEntry
+MethodInvocation:shardPath
+MethodInvocation:getIndicesQueryCache
+Field:Flag
+Field:restName
+Field:index
+Method-name:Flag
+Method-returnType:null
+Method-parameters:[final String restName, final int index]
+FieldAccess:restName
+FieldAccess:index
+Method-name:getRestName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getIndex
+Method-returnType:int
+Method-parameters:[]

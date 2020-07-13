@@ -1,0 +1,120 @@
+Class:XmlEnvironment
+Field:EMPTY
+Field:namespace
+Field:language
+Field:next
+Field:effectiveNamespaceDetermined
+Field:effectiveLanguageDetermined
+Field:effectiveNamespace
+Field:effectiveLanguage
+Method-name:XmlEnvironment
+Method-returnType:null
+Method-parameters:[String namespace]
+Method-name:XmlEnvironment
+Method-returnType:null
+Method-parameters:[String namespace, String language]
+Method-name:XmlEnvironment
+Method-returnType:null
+Method-parameters:[Builder builder]
+Method-name:XmlEnvironment
+Method-returnType:null
+Method-parameters:[String namespace, String language, XmlEnvironment next]
+FieldAccess:namespace
+FieldAccess:language
+FieldAccess:next
+Method-name:getNamespace
+Method-returnType:String
+Method-parameters:[]
+Method-name:getEffectiveNamespace
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isNotEmpty
+MethodInvocation:getEffectiveNamespace
+Method-name:getEffectiveNamespaceOrUse
+Method-returnType:String
+Method-parameters:[String namespace]
+MethodInvocation:getEffectiveLanguage
+MethodInvocation:isNullOrEmpty
+Method-name:effectiveNamespaceEquals
+Method-returnType:boolean
+Method-parameters:[String namespace]
+MethodInvocation:getEffectiveNamespace
+MethodInvocation:equals
+Method-name:getLanguage
+Method-returnType:String
+Method-parameters:[]
+Method-name:getEffectiveLanguage
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isNotEmpty
+MethodInvocation:getEffectiveLanguage
+Method-name:effectiveLanguageEquals
+Method-returnType:boolean
+Method-parameters:[String language]
+MethodInvocation:getEffectiveLanguage
+MethodInvocation:equals
+Field:toStringCache
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getSimpleName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getEffectiveNamespace
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getEffectiveLanguage
+MethodInvocation:toString
+Method-name:from
+Method-returnType:XmlEnvironment
+Method-parameters:[XmlPullParser parser]
+MethodInvocation:from
+Method-name:from
+Method-returnType:XmlEnvironment
+Method-parameters:[XmlPullParser parser, XmlEnvironment outerXmlEnvironment]
+MethodInvocation:getNamespace
+MethodInvocation:getXmlLang
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:parse
+Method-returnType:RosterPacket
+Method-parameters:[XmlPullParser parser, int initialDepth, RosterPacketProvider rosterPacketProvider]
+MethodInvocation:getAttributeValue
+MethodInvocation:setVersion
+MethodInvocation:next
+MethodInvocation:getName
+MethodInvocation:parseItem
+MethodInvocation:addRosterItem
+MethodInvocation:getName
+MethodInvocation:getDepth
+Class:Builder
+Field:namespace
+Field:language
+Field:next
+Method-name:withNamespace
+Method-returnType:Builder
+Method-parameters:[String namespace]
+FieldAccess:namespace
+Method-name:withLanguage
+Method-returnType:Builder
+Method-parameters:[String language]
+FieldAccess:language
+Method-name:withNext
+Method-returnType:Builder
+Method-parameters:[XmlEnvironment next]
+FieldAccess:next
+Method-name:with
+Method-returnType:Builder
+Method-parameters:[StreamOpen streamOpen]
+MethodInvocation:withNamespace
+MethodInvocation:getNamespace
+MethodInvocation:withLanguage
+MethodInvocation:getLanguage
+Method-name:build
+Method-returnType:XmlEnvironment
+Method-parameters:[]

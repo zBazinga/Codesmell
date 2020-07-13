@@ -1,0 +1,69 @@
+Class:SqlStatementLogger
+Field:LOG
+MethodInvocation:logger
+Field:LOG_SLOW
+MethodInvocation:logger
+Field:logToStdout
+Field:format
+Field:logSlowQuery
+Method-name:SqlStatementLogger
+Method-returnType:null
+Method-parameters:[]
+Method-name:SqlStatementLogger
+Method-returnType:null
+Method-parameters:[boolean logToStdout, boolean format]
+Method-name:SqlStatementLogger
+Method-returnType:null
+Method-parameters:[boolean logToStdout, boolean format, long logSlowQuery]
+FieldAccess:logToStdout
+FieldAccess:format
+FieldAccess:logSlowQuery
+Method-name:isLogToStdout
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setLogToStdout
+Method-returnType:void
+Method-parameters:[boolean logToStdout]
+FieldAccess:logToStdout
+Method-name:isFormat
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setFormat
+Method-returnType:void
+Method-parameters:[boolean format]
+FieldAccess:format
+Method-name:getLogSlowQuery
+Method-returnType:long
+Method-parameters:[]
+Method-name:logStatement
+Method-returnType:void
+Method-parameters:[String statement]
+MethodInvocation:logStatement
+MethodInvocation:getFormatter
+Method-name:logStatement
+Method-returnType:void
+Method-parameters:[String statement, Formatter formatter]
+MethodInvocation:isDebugEnabled
+MethodInvocation:format
+MethodInvocation:debug
+MethodInvocation:println
+Method-name:logSlowQuery
+Method-returnType:void
+Method-parameters:[Statement statement, long startTimeNanos]
+MethodInvocation:logSlowQuery
+MethodInvocation:toString
+Method-name:logSlowQuery
+Method-returnType:void
+Method-parameters:[String sql, long startTimeNanos]
+MethodInvocation:toMillis
+MethodInvocation:nanoTime
+MethodInvocation:info
+MethodInvocation:println
+Method-name:prepareStatement
+Method-returnType:PreparedStatement
+Method-parameters:[Connection connection, String sql, SessionEventListenerManager statsCollector, TableGenerator tableGenerator]
+MethodInvocation:logStatement
+MethodInvocation:getFormatter
+MethodInvocation:jdbcPrepareStatementStart
+MethodInvocation:prepareStatement
+MethodInvocation:jdbcPrepareStatementEnd

@@ -1,0 +1,59 @@
+Class:BitBuffer
+Field:buffer
+Field:writeByte
+Field:writeCount
+Field:readByte
+Field:readCount
+Method-name:BitBuffer
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:buffer
+Method-name:BitBuffer
+Method-returnType:null
+Method-parameters:[ByteBuf buffer]
+FieldAccess:buffer
+Method-name:writeEncoded
+Method-returnType:void
+Method-parameters:[byte[] bytes]
+MethodInvocation:write
+Method-name:write
+Method-returnType:void
+Method-parameters:[int b]
+MethodInvocation:writeByte
+Method-name:readUnsigned
+Method-returnType:int
+Method-parameters:[int length]
+MethodInvocation:readUnsignedByte
+Method-name:readSigned
+Method-returnType:int
+Method-parameters:[int length]
+MethodInvocation:readUnsigned
+Method-name:decodePayload
+Method-returnType:Position
+Method-parameters:[Channel channel, SocketAddress remoteAddress, AisProtocolDecoder aisProtocolDecoder]
+MethodInvocation:readUnsigned
+MethodInvocation:readUnsigned
+MethodInvocation:readUnsigned
+MethodInvocation:getDeviceSession
+MethodInvocation:valueOf
+MethodInvocation:getProtocolName
+MethodInvocation:setDeviceId
+MethodInvocation:getDeviceId
+MethodInvocation:setTime
+MethodInvocation:readUnsigned
+MethodInvocation:set
+MethodInvocation:readUnsigned
+MethodInvocation:set
+MethodInvocation:readSigned
+MethodInvocation:setSpeed
+MethodInvocation:readUnsigned
+MethodInvocation:setValid
+MethodInvocation:readUnsigned
+MethodInvocation:setLongitude
+MethodInvocation:readSigned
+MethodInvocation:setLatitude
+MethodInvocation:readSigned
+MethodInvocation:setCourse
+MethodInvocation:readUnsigned
+MethodInvocation:set
+MethodInvocation:readUnsigned

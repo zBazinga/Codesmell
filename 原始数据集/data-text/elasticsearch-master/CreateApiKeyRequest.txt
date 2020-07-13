@@ -1,0 +1,92 @@
+Class:CreateApiKeyRequest
+Field:DEFAULT_REFRESH_POLICY
+Field:name
+Field:expiration
+Field:roleDescriptors
+MethodInvocation:emptyList
+Field:refreshPolicy
+Method-name:CreateApiKeyRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:CreateApiKeyRequest
+Method-returnType:null
+Method-parameters:[@Nullable String name, @Nullable List<RoleDescriptor> roleDescriptors, @Nullable TimeValue expiration]
+FieldAccess:name
+FieldAccess:roleDescriptors
+MethodInvocation:of
+MethodInvocation:copyOf
+FieldAccess:expiration
+Method-name:CreateApiKeyRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:onOrAfter
+MethodInvocation:getVersion
+FieldAccess:name
+MethodInvocation:readOptionalString
+FieldAccess:name
+MethodInvocation:readString
+FieldAccess:expiration
+MethodInvocation:readOptionalTimeValue
+FieldAccess:roleDescriptors
+MethodInvocation:copyOf
+MethodInvocation:readList
+FieldAccess:refreshPolicy
+MethodInvocation:readFrom
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setName
+Method-returnType:void
+Method-parameters:[@Nullable String name]
+FieldAccess:name
+Method-name:getExpiration
+Method-returnType:TimeValue
+Method-parameters:[]
+Method-name:setExpiration
+Method-returnType:void
+Method-parameters:[@Nullable TimeValue expiration]
+FieldAccess:expiration
+Method-name:getRoleDescriptors
+Method-returnType:List<RoleDescriptor>
+Method-parameters:[]
+Method-name:setRoleDescriptors
+Method-returnType:void
+Method-parameters:[@Nullable List<RoleDescriptor> roleDescriptors]
+FieldAccess:roleDescriptors
+MethodInvocation:of
+MethodInvocation:copyOf
+Method-name:getRefreshPolicy
+Method-returnType:WriteRequest.RefreshPolicy
+Method-parameters:[]
+Method-name:setRefreshPolicy
+Method-returnType:void
+Method-parameters:[WriteRequest.RefreshPolicy refreshPolicy]
+FieldAccess:refreshPolicy
+MethodInvocation:requireNonNull
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+MethodInvocation:length
+MethodInvocation:addValidationError
+MethodInvocation:equals
+MethodInvocation:trim
+MethodInvocation:addValidationError
+MethodInvocation:startsWith
+MethodInvocation:addValidationError
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:onOrAfter
+MethodInvocation:getVersion
+MethodInvocation:writeOptionalString
+MethodInvocation:writeString
+MethodInvocation:writeOptionalTimeValue
+MethodInvocation:writeList
+MethodInvocation:writeTo
+Method-name:getApiKeyExpiration
+Method-returnType:Instant
+Method-parameters:[Instant now, ApiKeyService apiKeyService]
+MethodInvocation:getExpiration
+MethodInvocation:plusSeconds
+MethodInvocation:getSeconds
+MethodInvocation:getExpiration

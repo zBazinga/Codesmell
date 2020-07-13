@@ -1,0 +1,47 @@
+Class:CoLocationGroup
+Field:serialVersionUID
+Field:id
+Field:vertices
+Field:constraints
+Method-name:CoLocationGroup
+Method-returnType:null
+Method-parameters:[]
+Method-name:CoLocationGroup
+Method-returnType:null
+Method-parameters:[JobVertex... vertices]
+MethodInvocation:add
+FieldAccess:vertices
+Method-name:getVertices
+Method-returnType:List<JobVertex>
+Method-parameters:[]
+Method-name:mergeInto
+Method-returnType:void
+Method-parameters:[CoLocationGroup other]
+MethodInvocation:checkNotNull
+FieldAccess:vertices
+MethodInvocation:updateCoLocationGroup
+MethodInvocation:addAll
+FieldAccess:vertices
+MethodInvocation:clear
+FieldAccess:vertices
+Method-name:getLocationConstraint
+Method-returnType:CoLocationConstraint
+Method-parameters:[int subtask]
+MethodInvocation:ensureConstraints
+MethodInvocation:get
+Method-name:ensureConstraints
+Method-returnType:void
+Method-parameters:[int num]
+MethodInvocation:ensureCapacity
+MethodInvocation:size
+MethodInvocation:ensureCapacity
+MethodInvocation:size
+MethodInvocation:add
+Method-name:getId
+Method-returnType:AbstractID
+Method-parameters:[]
+Method-name:resetConstraints
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+FieldAccess:constraints

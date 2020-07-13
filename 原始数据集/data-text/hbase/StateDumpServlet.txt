@@ -1,0 +1,24 @@
+Class:StateDumpServlet
+Field:DEFAULT_TAIL_KB
+Field:serialVersionUID
+Method-name:dumpVersionInfo
+Method-returnType:void
+Method-parameters:[PrintWriter out]
+MethodInvocation:writeTo
+MethodInvocation:println
+MethodInvocation:getVersion
+MethodInvocation:println
+MethodInvocation:getUrl
+MethodInvocation:getRevision
+MethodInvocation:println
+MethodInvocation:getUser
+MethodInvocation:getDate
+Method-name:isShowQueueDump
+Method-returnType:boolean
+Method-parameters:[Configuration conf]
+MethodInvocation:getBoolean
+Method-name:getTailKbParam
+Method-returnType:long
+Method-parameters:[HttpServletRequest request]
+MethodInvocation:getParameter
+MethodInvocation:parseLong

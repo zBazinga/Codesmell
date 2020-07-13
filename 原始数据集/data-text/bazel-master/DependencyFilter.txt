@@ -1,0 +1,50 @@
+Class:DependencyFilter
+Field:ALL_DEPS
+Method-name:apply
+Method-returnType:boolean
+Method-parameters:[AttributeInfoProvider x, Attribute y]
+Field:ONLY_TARGET_DEPS
+Method-name:apply
+Method-returnType:boolean
+Method-parameters:[AttributeInfoProvider infoProvider, Attribute attribute]
+MethodInvocation:getLabelClass
+MethodInvocation:getType
+MethodInvocation:isTool
+MethodInvocation:getTransitionFactory
+Field:NO_IMPLICIT_DEPS
+Method-name:apply
+Method-returnType:boolean
+Method-parameters:[AttributeInfoProvider infoProvider, Attribute attribute]
+MethodInvocation:isAttributeValueExplicitlySpecified
+Field:NO_NODEP_ATTRIBUTES
+Method-name:apply
+Method-returnType:boolean
+Method-parameters:[AttributeInfoProvider infoProvider, Attribute attribute]
+MethodInvocation:getLabelClass
+MethodInvocation:getType
+Field:NO_NODEP_ATTRIBUTES_EXCEPT_VISIBILITY
+Method-name:apply
+Method-returnType:boolean
+Method-parameters:[AttributeInfoProvider infoProvider, Attribute attribute]
+MethodInvocation:apply
+MethodInvocation:equals
+MethodInvocation:getName
+Field:DIRECT_COMPILE_TIME_INPUT
+Method-name:apply
+Method-returnType:boolean
+Method-parameters:[AttributeInfoProvider infoProvider, Attribute attribute]
+MethodInvocation:isDirectCompileTimeInput
+Method-name:and
+Method-returnType:DependencyFilter
+Method-parameters:[final DependencyFilter a, final DependencyFilter b]
+Method-name:apply
+Method-returnType:boolean
+Method-parameters:[AttributeInfoProvider infoProvider, Attribute attribute]
+MethodInvocation:apply
+MethodInvocation:apply
+Method-name:apply
+Method-returnType:boolean
+Method-parameters:[AttributeInfoProvider infoProvider, Attribute attribute]
+Method-name:isAttributeValueExplicitlySpecified
+Method-returnType:boolean
+Method-parameters:[Attribute attribute]

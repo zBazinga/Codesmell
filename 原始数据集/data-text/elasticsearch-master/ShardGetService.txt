@@ -1,0 +1,69 @@
+Class:ShardGetService
+Field:mapperService
+Field:existsMetric
+Field:missingMetric
+Field:currentMetric
+Field:indexShard
+Method-name:ShardGetService
+Method-returnType:null
+Method-parameters:[IndexSettings indexSettings, IndexShard indexShard, MapperService mapperService]
+MethodInvocation:shardId
+FieldAccess:mapperService
+FieldAccess:indexShard
+Method-name:stats
+Method-returnType:GetStats
+Method-parameters:[]
+MethodInvocation:count
+MethodInvocation:toMillis
+MethodInvocation:sum
+MethodInvocation:count
+MethodInvocation:toMillis
+MethodInvocation:sum
+MethodInvocation:count
+Method-name:get
+Method-returnType:GetResult
+Method-parameters:[String id, String[] gFields, boolean realtime, long version, VersionType versionType, FetchSourceContext fetchSourceContext]
+MethodInvocation:get
+Method-name:get
+Method-returnType:GetResult
+Method-parameters:[String id, String[] gFields, boolean realtime, long version, VersionType versionType, long ifSeqNo, long ifPrimaryTerm, FetchSourceContext fetchSourceContext]
+MethodInvocation:inc
+MethodInvocation:nanoTime
+MethodInvocation:innerGet
+MethodInvocation:isExists
+MethodInvocation:inc
+MethodInvocation:nanoTime
+MethodInvocation:inc
+MethodInvocation:nanoTime
+MethodInvocation:dec
+Method-name:getForUpdate
+Method-returnType:GetResult
+Method-parameters:[String id, long ifSeqNo, long ifPrimaryTerm]
+MethodInvocation:get
+Method-name:get
+Method-returnType:GetResult
+Method-parameters:[Engine.GetResult engineGetResult, String id, String[] fields, FetchSourceContext fetchSourceContext]
+MethodInvocation:exists
+MethodInvocation:getIndexName
+MethodInvocation:inc
+MethodInvocation:nanoTime
+MethodInvocation:normalizeFetchSourceContent
+MethodInvocation:innerGetLoadFromStoredFields
+MethodInvocation:isExists
+MethodInvocation:inc
+MethodInvocation:nanoTime
+MethodInvocation:inc
+MethodInvocation:nanoTime
+MethodInvocation:dec
+Method-name:innerGet
+Method-returnType:GetResult
+Method-parameters:[String id, String[] gFields, boolean realtime, long version, VersionType versionType, long ifSeqNo, long ifPrimaryTerm, FetchSourceContext fetchSourceContext]
+Method-name:innerGetLoadFromStoredFields
+Method-returnType:GetResult
+Method-parameters:[String id, String[] storedFields, FetchSourceContext fetchSourceContext, Engine.GetResult get, MapperService mapperService]
+Method-name:buildFieldsVisitors
+Method-returnType:FieldsVisitor
+Method-parameters:[String[] fields, FetchSourceContext fetchSourceContext]
+MethodInvocation:fetchSource
+MethodInvocation:newHashSet
+MethodInvocation:fetchSource

@@ -1,0 +1,72 @@
+Class:EvaluatorRegistry
+Field:serialVersionUID
+Field:evaluators
+Field:classloader
+Method-name:EvaluatorRegistry
+Method-returnType:null
+Method-parameters:[]
+Method-name:EvaluatorRegistry
+Method-returnType:null
+Method-parameters:[ClassLoader classloader]
+FieldAccess:evaluators
+FieldAccess:classloader
+FieldAccess:classloader
+MethodInvocation:getDefaultClassLoader
+MethodInvocation:getEvaluatorDefinitions
+MethodInvocation:addEvaluatorDefinition
+Method-name:keySet
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readObject
+MethodInvocation:getClassLoader
+MethodInvocation:getDefaultClassLoader
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+Method-name:getDefaultClassLoader
+Method-returnType:ClassLoader
+Method-parameters:[]
+MethodInvocation:getContextClassLoader
+MethodInvocation:currentThread
+MethodInvocation:getContextClassLoader
+MethodInvocation:currentThread
+MethodInvocation:getClassLoader
+Method-name:addEvaluatorDefinition
+Method-returnType:void
+Method-parameters:[String className]
+MethodInvocation:loadClass
+FieldAccess:classloader
+MethodInvocation:newInstance
+MethodInvocation:addEvaluatorDefinition
+Method-name:addEvaluatorDefinition
+Method-returnType:void
+Method-parameters:[EvaluatorDefinition def]
+MethodInvocation:getEvaluatorIds
+MethodInvocation:put
+FieldAccess:evaluators
+Method-name:getEvaluatorDefinition
+Method-returnType:EvaluatorDefinition
+Method-parameters:[String evaluatorId]
+MethodInvocation:get
+FieldAccess:evaluators
+Method-name:getEvaluatorDefinition
+Method-returnType:EvaluatorDefinition
+Method-parameters:[Operator operator]
+MethodInvocation:get
+FieldAccess:evaluators
+MethodInvocation:getOperatorString
+Method-name:getEvaluator
+Method-returnType:Evaluator
+Method-parameters:[ValueType type, String operatorId, boolean isNegated, String parameterText]
+MethodInvocation:getEvaluator
+MethodInvocation:getEvaluatorDefinition
+Method-name:getEvaluator
+Method-returnType:Evaluator
+Method-parameters:[ValueType type, Operator operator]
+MethodInvocation:getEvaluator
+MethodInvocation:getEvaluatorDefinition

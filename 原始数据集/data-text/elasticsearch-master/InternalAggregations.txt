@@ -1,0 +1,71 @@
+Class:InternalAggregations
+Field:EMPTY
+MethodInvocation:emptyList
+Field:INTERNAL_AGG_COMPARATOR
+MethodInvocation:isMapped
+MethodInvocation:isMapped
+MethodInvocation:isMapped
+MethodInvocation:isMapped
+Method-name:InternalAggregations
+Method-returnType:null
+Method-parameters:[List<InternalAggregation> aggregations]
+Method-name:InternalAggregations
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readList
+MethodInvocation:readNamedWriteable
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeNamedWriteableList
+MethodInvocation:getInternalAggregations
+Method-name:copyResults
+Method-returnType:List<InternalAggregation>
+Method-parameters:[]
+MethodInvocation:getInternalAggregations
+Method-name:getInternalAggregations
+Method-returnType:List<InternalAggregation>
+Method-parameters:[]
+Method-name:sortValue
+Method-returnType:double
+Method-parameters:[AggregationPath.PathElement head, Iterator<AggregationPath.PathElement> tail]
+MethodInvocation:get
+MethodInvocation:hasNext
+MethodInvocation:sortValue
+MethodInvocation:next
+MethodInvocation:sortValue
+Method-name:topLevelReduce
+Method-returnType:InternalAggregations
+Method-parameters:[List<InternalAggregations> aggregationsList, ReduceContext context]
+MethodInvocation:reduce
+MethodInvocation:isFinalReduce
+MethodInvocation:getInternalAggregations
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:reducePipelines
+MethodInvocation:subTree
+MethodInvocation:pipelineTreeRoot
+MethodInvocation:getName
+MethodInvocation:toList
+MethodInvocation:aggregators
+MethodInvocation:pipelineTreeRoot
+MethodInvocation:doReduce
+MethodInvocation:add
+Method-name:reduce
+Method-returnType:InternalAggregations
+Method-parameters:[List<InternalAggregations> aggregationsList, ReduceContext context]
+MethodInvocation:isEmpty
+MethodInvocation:computeIfAbsent
+MethodInvocation:getName
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:sort
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:reduce
+Method-name:resolveValue
+Method-returnType:double
+Method-parameters:[AggregationPath aggregationPath]

@@ -1,0 +1,39 @@
+Class:ReferenceConfig
+Field:microserviceReferenceConfig
+Field:transport
+Field:versionRule
+Field:thirdPartyService
+Method-name:ReferenceConfig
+Method-returnType:null
+Method-parameters:[String transport, String versionRule]
+FieldAccess:transport
+FieldAccess:versionRule
+Method-name:getTransport
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTransport
+Method-returnType:void
+Method-parameters:[String transport]
+FieldAccess:transport
+Method-name:is3rdPartyService
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isThirdPartyService
+Method-name:getVersionRule
+Method-returnType:String
+Method-parameters:[]
+Method-name:isThirdPartyService
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setThirdPartyService
+Method-returnType:ReferenceConfig
+Method-parameters:[boolean thirdPartyService]
+FieldAccess:thirdPartyService
+Method-name:mark3rdPartyService
+Method-returnType:void
+Method-parameters:[OperationMeta operationMeta, MicroserviceReferenceConfig microserviceReferenceConfig]
+MethodInvocation:getOrCreateMicroserviceVersions
+MethodInvocation:getAppId
+MethodInvocation:getMicroserviceMeta
+MethodInvocation:getMicroserviceName
+MethodInvocation:setThirdPartyService

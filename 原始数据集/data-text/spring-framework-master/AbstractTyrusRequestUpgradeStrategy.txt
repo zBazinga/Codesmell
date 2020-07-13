@@ -1,0 +1,99 @@
+Class:AbstractTyrusRequestUpgradeStrategy
+Field:random
+Field:constructor
+Field:constructorWithBooleanArgument
+Field:registerMethod
+Field:unRegisterMethod
+MethodInvocation:getEndpointConstructor
+MethodInvocation:getParameterCount
+MethodInvocation:getDeclaredMethod
+MethodInvocation:getDeclaredMethod
+MethodInvocation:makeAccessible
+Method-name:getEndpointConstructor
+Method-returnType:Constructor<?>
+Method-parameters:[]
+MethodInvocation:getConstructors
+MethodInvocation:getParameterTypes
+Field:componentProvider
+MethodInvocation:create
+Method-name:getSupportedVersions
+Method-returnType:String[]
+Method-parameters:[]
+MethodInvocation:tokenizeToStringArray
+MethodInvocation:getSupportedWireProtocolVersions
+Method-name:getInstalledExtensions
+Method-returnType:List<WebSocketExtension>
+Method-parameters:[WebSocketContainer container]
+Method-name:upgradeInternal
+Method-returnType:void
+Method-parameters:[ServerHttpRequest request, ServerHttpResponse response, @Nullable String selectedProtocol, List<Extension> extensions, Endpoint endpoint]
+MethodInvocation:getHttpServletRequest
+MethodInvocation:getHttpServletResponse
+MethodInvocation:getContainer
+MethodInvocation:getWebSocketEngine
+MethodInvocation:nextLong
+MethodInvocation:createTyrusEndpoint
+MethodInvocation:register
+MethodInvocation:getHeaders
+MethodInvocation:createRequestContext
+MethodInvocation:upgrade
+MethodInvocation:equals
+MethodInvocation:getStatus
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:getHeaders
+MethodInvocation:handleSuccess
+MethodInvocation:unregisterTyrusEndpoint
+MethodInvocation:getURI
+MethodInvocation:unregisterTyrusEndpoint
+MethodInvocation:getURI
+Method-name:createTyrusEndpoint
+Method-returnType:Object
+Method-parameters:[Endpoint endpoint, String endpointPath, @Nullable String protocol, List<Extension> extensions, WebSocketContainer container, TyrusWebSocketEngine engine]
+MethodInvocation:setSubprotocols
+MethodInvocation:singletonList
+MethodInvocation:setExtensions
+MethodInvocation:createEndpoint
+FieldAccess:componentProvider
+Method-name:createRequestContext
+Method-returnType:RequestContext
+Method-parameters:[HttpServletRequest request, String endpointPath, HttpHeaders headers]
+MethodInvocation:build
+MethodInvocation:remoteAddr
+MethodInvocation:secure
+MethodInvocation:userPrincipal
+MethodInvocation:requestURI
+MethodInvocation:create
+MethodInvocation:create
+MethodInvocation:getUserPrincipal
+MethodInvocation:isSecure
+MethodInvocation:getRemoteAddr
+MethodInvocation:forEach
+MethodInvocation:put
+MethodInvocation:getHeaders
+Method-name:unregisterTyrusEndpoint
+Method-returnType:void
+Method-parameters:[TyrusWebSocketEngine engine, @Nullable Object tyrusEndpoint]
+MethodInvocation:unregister
+Method-name:createEndpoint
+Method-returnType:Object
+Method-parameters:[ServerEndpointRegistration registration, ComponentProviderService provider, WebSocketContainer container, TyrusWebSocketEngine engine]
+MethodInvocation:getPropertyValue
+MethodInvocation:getPropertyValue
+MethodInvocation:newInstance
+MethodInvocation:getEndpoint
+MethodInvocation:getConfigurator
+MethodInvocation:newInstance
+MethodInvocation:getEndpoint
+MethodInvocation:getConfigurator
+Method-name:register
+Method-returnType:void
+Method-parameters:[TyrusWebSocketEngine engine, Object endpoint]
+MethodInvocation:invoke
+Method-name:unregister
+Method-returnType:void
+Method-parameters:[TyrusWebSocketEngine engine, Object endpoint]
+MethodInvocation:invoke
+Method-name:handleSuccess
+Method-returnType:void
+Method-parameters:[HttpServletRequest request, HttpServletResponse response, UpgradeInfo upgradeInfo, TyrusUpgradeResponse upgradeResponse]

@@ -1,0 +1,68 @@
+Class:AbstractLimitHandler
+Method-name:AbstractLimitHandler
+Method-returnType:null
+Method-parameters:[]
+Method-name:supportsLimit
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:supportsLimitOffset
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:supportsLimit
+Method-name:supportsVariableLimit
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:supportsLimit
+Method-name:bindLimitParametersInReverseOrder
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:bindLimitParametersFirst
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:useMaxForLimit
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:forceLimitUsage
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:convertToFirstRowValue
+Method-returnType:int
+Method-parameters:[int zeroBasedFirstResult]
+Method-name:processSql
+Method-returnType:String
+Method-parameters:[String sql, RowSelection selection]
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:bindLimitParametersAtStartOfQuery
+Method-returnType:int
+Method-parameters:[RowSelection selection, PreparedStatement statement, int index]
+MethodInvocation:bindLimitParametersFirst
+MethodInvocation:bindLimitParameters
+Method-name:bindLimitParametersAtEndOfQuery
+Method-returnType:int
+Method-parameters:[RowSelection selection, PreparedStatement statement, int index]
+MethodInvocation:bindLimitParametersFirst
+MethodInvocation:bindLimitParameters
+Method-name:setMaxRows
+Method-returnType:void
+Method-parameters:[RowSelection selection, PreparedStatement statement]
+Method-name:bindLimitParameters
+Method-returnType:int
+Method-parameters:[RowSelection selection, PreparedStatement statement, int index]
+MethodInvocation:supportsVariableLimit
+MethodInvocation:hasMaxRows
+MethodInvocation:convertToFirstRowValue
+MethodInvocation:getFirstRow
+MethodInvocation:getMaxOrLimit
+MethodInvocation:supportsLimitOffset
+MethodInvocation:forceLimitUsage
+MethodInvocation:bindLimitParametersInReverseOrder
+MethodInvocation:setInt
+MethodInvocation:setInt
+Method-name:getMaxOrLimit
+Method-returnType:int
+Method-parameters:[RowSelection selection]
+MethodInvocation:convertToFirstRowValue
+MethodInvocation:getFirstRow
+MethodInvocation:getMaxRows
+MethodInvocation:useMaxForLimit

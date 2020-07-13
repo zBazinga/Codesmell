@@ -1,0 +1,28 @@
+Class:EntryNavigator
+Field:aliases
+Method-name:EntryNavigator
+Method-returnType:null
+Method-parameters:[]
+Method-name:findChildByPath
+Method-returnType:Entry
+Method-parameters:[Entry top, String path]
+MethodInvocation:replaceAliases
+MethodInvocation:getChildByPath
+MethodInvocation:split
+Method-name:replaceAliases
+Method-returnType:String
+Method-parameters:[String path]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:startsWith
+MethodInvocation:getValue
+MethodInvocation:substring
+MethodInvocation:length
+Method-name:addAlias
+Method-returnType:void
+Method-parameters:[String alias, String path]
+MethodInvocation:put
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:valueOf

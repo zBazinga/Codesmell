@@ -1,0 +1,18 @@
+Class:MasterProcedureManagerHost
+Field:procedureMgrMap
+Method-name:loadProcedures
+Method-returnType:void
+Method-parameters:[Configuration conf]
+MethodInvocation:loadUserProcedures
+MethodInvocation:getProcedureManagers
+MethodInvocation:put
+MethodInvocation:getProcedureSignature
+Method-name:stop
+Method-returnType:void
+Method-parameters:[String why]
+MethodInvocation:getProcedureManagers
+MethodInvocation:stop
+Method-name:getProcedureManager
+Method-returnType:MasterProcedureManager
+Method-parameters:[String signature]
+MethodInvocation:get

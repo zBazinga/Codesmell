@@ -1,0 +1,214 @@
+Class:ColumnIdent
+Field:UNDERSCORE_PATTERN
+MethodInvocation:compile
+Field:SUBSCRIPT_PATTERN
+MethodInvocation:compile
+Field:ordering
+MethodInvocation:lexicographical
+MethodInvocation:natural
+Field:name
+Field:path
+Method-name:ColumnIdent
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readString
+MethodInvocation:readVInt
+MethodInvocation:add
+MethodInvocation:readString
+MethodInvocation:of
+Method-name:ColumnIdent
+Method-returnType:null
+Method-parameters:[String name]
+FieldAccess:name
+FieldAccess:path
+MethodInvocation:of
+Method-name:ColumnIdent
+Method-returnType:null
+Method-parameters:[String name, String childName]
+MethodInvocation:of
+Method-name:ColumnIdent
+Method-returnType:null
+Method-parameters:[String name, @Nullable List<String> path]
+FieldAccess:name
+FieldAccess:path
+MethodInvocation:firstNonNull
+MethodInvocation:of
+Method-name:fromNameSafe
+Method-returnType:ColumnIdent
+Method-parameters:[String name]
+MethodInvocation:validateColumnName
+Method-name:fromNameAndPathSafe
+Method-returnType:ColumnIdent
+Method-parameters:[String name, List<String> path]
+MethodInvocation:validateColumnName
+MethodInvocation:validateObjectKey
+Method-name:getChildSafe
+Method-returnType:ColumnIdent
+Method-parameters:[ColumnIdent parent, String name]
+MethodInvocation:validateObjectKey
+MethodInvocation:getChild
+Method-name:fromPath
+Method-returnType:ColumnIdent
+Method-parameters:[@Nullable String path]
+MethodInvocation:splitToList
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:subList
+MethodInvocation:size
+MethodInvocation:get
+Method-name:getChild
+Method-returnType:ColumnIdent
+Method-parameters:[ColumnIdent parent, String name]
+MethodInvocation:isTopLevel
+MethodInvocation:build
+MethodInvocation:add
+MethodInvocation:addAll
+MethodInvocation:builder
+Method-name:get
+Method-returnType:Object
+Method-parameters:[Map map, ColumnIdent column]
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+Method-name:isChildOf
+Method-returnType:boolean
+Method-parameters:[ColumnIdent parent]
+MethodInvocation:equals
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:iterator
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:equals
+MethodInvocation:next
+MethodInvocation:next
+Method-name:validateColumnName
+Method-returnType:void
+Method-parameters:[String columnName]
+MethodInvocation:validateDotInColumnName
+MethodInvocation:validateSubscriptPatternInColumnName
+MethodInvocation:validateUnderscorePatternInColumnName
+Method-name:validateObjectKey
+Method-returnType:void
+Method-parameters:[String columnName]
+MethodInvocation:validateDotInColumnName
+MethodInvocation:validateSubscriptPatternInColumnName
+Method-name:validateDotInColumnName
+Method-returnType:void
+Method-parameters:[String columnName]
+MethodInvocation:indexOf
+Method-name:validateSubscriptPatternInColumnName
+Method-returnType:void
+Method-parameters:[String columnName]
+MethodInvocation:matches
+MethodInvocation:matcher
+Method-name:validateUnderscorePatternInColumnName
+Method-returnType:void
+Method-parameters:[String columnName]
+MethodInvocation:matches
+MethodInvocation:matcher
+Method-name:getParent
+Method-returnType:ColumnIdent
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:subList
+MethodInvocation:size
+Method-name:shiftRight
+Method-returnType:ColumnIdent
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:subList
+MethodInvocation:size
+Method-name:isSystemColumn
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:matches
+MethodInvocation:matcher
+Method-name:getRoot
+Method-returnType:ColumnIdent
+Method-parameters:[]
+MethodInvocation:isTopLevel
+MethodInvocation:name
+Method-name:name
+Method-returnType:String
+Method-parameters:[]
+Method-name:fqn
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isTopLevel
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:toString
+Method-name:quotedOutputName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:sqlFqn
+MethodInvocation:quoteIfNeeded
+Method-name:sqlFqn
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:sqlFqn
+Method-name:sqlFqn
+Method-returnType:String
+Method-parameters:[String name]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:path
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:isTopLevel
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:sqlFqn
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[ColumnIdent o]
+MethodInvocation:result
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:start
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeString
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeString
+Method-name:prepend
+Method-returnType:ColumnIdent
+Method-parameters:[String name]
+MethodInvocation:isEmpty
+FieldAccess:name
+MethodInvocation:add
+FieldAccess:name
+Method-name:add
+Method-returnType:void
+Method-parameters:[Symbol symbol, SelectAnalysis selectAnalysis]
+MethodInvocation:add
+MethodInvocation:outputNames
+MethodInvocation:add
+MethodInvocation:outputSymbols
+MethodInvocation:put
+MethodInvocation:outputMultiMap
+MethodInvocation:sqlFqn

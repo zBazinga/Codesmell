@@ -1,0 +1,90 @@
+Class:AbstractMapComponentNode
+Field:mapFromElement
+Field:columns
+Method-name:getMapReference
+Method-returnType:FromReferenceNode
+Method-parameters:[]
+MethodInvocation:getFirstChild
+Method-name:getColumns
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:setScalarColumnText
+Method-returnType:void
+Method-parameters:[int i]
+MethodInvocation:generateScalarColumns
+MethodInvocation:getColumns
+Method-name:resolve
+Method-returnType:void
+Method-parameters:[boolean generateJoin, boolean implicitJoin, String classAlias, AST parent, AST parentPredicate]
+MethodInvocation:getMapReference
+MethodInvocation:resolve
+MethodInvocation:isAliasRef
+MethodInvocation:getQueryableCollection
+MethodInvocation:getFromElement
+MethodInvocation:isAssignableFrom
+MethodInvocation:getReturnedClass
+MethodInvocation:getCollectionType
+MethodInvocation:getFromElement
+MethodInvocation:isCollectionType
+MethodInvocation:getDataType
+MethodInvocation:getDataType
+MethodInvocation:isAssignableFrom
+MethodInvocation:getReturnedClass
+MethodInvocation:getFromElement
+MethodInvocation:nonMap
+MethodInvocation:setFromElement
+MethodInvocation:setDataType
+MethodInvocation:resolveType
+MethodInvocation:getQueryableCollection
+FieldAccess:columns
+MethodInvocation:resolveColumns
+MethodInvocation:getQueryableCollection
+MethodInvocation:initText
+FieldAccess:columns
+MethodInvocation:setFirstChild
+Method-name:getMapFromElement
+Method-returnType:FromElement
+Method-parameters:[]
+Method-name:isAliasRef
+Method-returnType:boolean
+Method-parameters:[FromReferenceNode mapReference]
+MethodInvocation:getType
+Method-name:initText
+Method-returnType:void
+Method-parameters:[String[] columns]
+MethodInvocation:join
+MethodInvocation:isComparativeExpressionClause
+MethodInvocation:getWalker
+MethodInvocation:setText
+Method-name:expressionDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:resolveColumns
+Method-returnType:String[]
+Method-parameters:[QueryableCollection collectionPersister]
+Method-name:resolveType
+Method-returnType:Type
+Method-parameters:[QueryableCollection collectionPersister]
+Method-name:nonMap
+Method-returnType:SemanticException
+Method-parameters:[]
+MethodInvocation:expressionDescription
+Method-name:resolveIndex
+Method-returnType:void
+Method-parameters:[AST parent]
+MethodInvocation:expressionDescription
+Method-name:findOrAddMapKeyEntityFromElement
+Method-returnType:MapKeyEntityFromElement
+Method-parameters:[QueryableCollection collectionPersister]
+MethodInvocation:isEntityType
+MethodInvocation:getIndexType
+MethodInvocation:getDestinations
+MethodInvocation:getFromElement
+MethodInvocation:buildKeyJoin
+MethodInvocation:getFromElement
+Method-name:getReferencedTables
+Method-returnType:String[]
+Method-parameters:[]
+MethodInvocation:getFromElement
+MethodInvocation:getEntityPersister
+MethodInvocation:getTableNames

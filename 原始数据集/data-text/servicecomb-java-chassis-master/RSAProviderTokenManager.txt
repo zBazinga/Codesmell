@@ -1,0 +1,57 @@
+Class:RSAProviderTokenManager
+Field:LOGGER
+MethodInvocation:getLogger
+Field:validatedToken
+MethodInvocation:build
+MethodInvocation:expireAfterAccess
+MethodInvocation:newBuilder
+MethodInvocation:getExpiredTime
+Field:accessController
+Method-name:valid
+Method-returnType:boolean
+Method-parameters:[String token]
+MethodInvocation:fromStr
+MethodInvocation:error
+MethodInvocation:tokenExpired
+MethodInvocation:error
+MethodInvocation:containsKey
+MethodInvocation:asMap
+MethodInvocation:getValidatedToken
+MethodInvocation:isAllowed
+MethodInvocation:getOrCreate
+MethodInvocation:getServiceId
+MethodInvocation:isValidToken
+MethodInvocation:tokenExpired
+MethodInvocation:put
+MethodInvocation:getValidatedToken
+MethodInvocation:isAllowed
+MethodInvocation:getOrCreate
+MethodInvocation:getServiceId
+MethodInvocation:error
+Method-name:isValidToken
+Method-returnType:boolean
+Method-parameters:[RSAAuthenticationToken rsaToken]
+MethodInvocation:getSign
+MethodInvocation:plainToken
+MethodInvocation:getPublicKey
+MethodInvocation:getInstanceId
+MethodInvocation:getServiceId
+MethodInvocation:verify
+Method-name:getExpiredTime
+Method-returnType:int
+Method-parameters:[]
+Method-name:tokenExpired
+Method-returnType:boolean
+Method-parameters:[RSAAuthenticationToken rsaToken]
+MethodInvocation:getGenerateTime
+MethodInvocation:currentTimeMillis
+Method-name:getPublicKey
+Method-returnType:String
+Method-parameters:[String instanceId, String serviceId]
+MethodInvocation:getOrCreate
+MethodInvocation:get
+MethodInvocation:getProperties
+MethodInvocation:error
+Method-name:getValidatedToken
+Method-returnType:Cache<RSAAuthenticationToken,Boolean>
+Method-parameters:[]

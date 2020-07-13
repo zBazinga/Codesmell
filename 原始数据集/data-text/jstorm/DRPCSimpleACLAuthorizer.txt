@@ -1,0 +1,71 @@
+Class:DRPCSimpleACLAuthorizer
+Field:LOG
+MethodInvocation:getLogger
+Field:CLIENT_USERS_KEY
+Field:INVOCATION_USER_KEY
+Field:FUNCTION_KEY
+Field:_aclFileName
+Field:_ptol
+Field:_permitWhenMissingFunctionEntry
+Class:AclFunctionEntry
+Field:clientUsers
+Field:invocationUser
+Method-name:AclFunctionEntry
+Method-returnType:null
+Method-parameters:[Collection<String> clientUsers, String invocationUser]
+FieldAccess:clientUsers
+FieldAccess:invocationUser
+Field:_acl
+Field:_lastUpdate
+Method-name:readAclFromConfig
+Method-returnType:Map<String,AclFunctionEntry>
+Method-parameters:[]
+MethodInvocation:currentTimeMillis
+MethodInvocation:findAndReadConfigFile
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:keySet
+MethodInvocation:get
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:warn
+MethodInvocation:currentTimeMillis
+Method-name:prepare
+Method-returnType:void
+Method-parameters:[Map conf]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:GetPrincipalToLocalPlugin
+Method-name:getLocalUserFromContext
+Method-returnType:String
+Method-parameters:[ReqContext context]
+MethodInvocation:toLocal
+MethodInvocation:principal
+Method-name:permitClientOrInvocationRequest
+Method-returnType:boolean
+Method-parameters:[ReqContext context, Map params, String fieldName]
+MethodInvocation:readAclFromConfig
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:get
+MethodInvocation:getDeclaredField
+MethodInvocation:get
+MethodInvocation:warn
+MethodInvocation:getUserFromContext
+MethodInvocation:getLocalUserFromContext
+MethodInvocation:warn
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:permitClientRequest
+Method-returnType:boolean
+Method-parameters:[ReqContext context, String operation, Map params]
+MethodInvocation:permitClientOrInvocationRequest
+Method-name:permitInvocationRequest
+Method-returnType:boolean
+Method-parameters:[ReqContext context, String operation, Map params]
+MethodInvocation:permitClientOrInvocationRequest

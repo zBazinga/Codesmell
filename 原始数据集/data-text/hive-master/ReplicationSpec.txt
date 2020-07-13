@@ -1,0 +1,266 @@
+Class:ReplicationSpec
+Field:isInReplicationScope
+Field:isMetadataOnly
+Field:eventId
+Field:currStateId
+Field:isNoop
+Field:isReplace
+Field:validWriteIdList
+Field:validTxnList
+Field:specType
+Field:isMigratingToTxnTable
+Field:isMigratingToExternalTable
+Field:needDupCopyCheck
+Field:isRepl
+Field:isMetadataOnlyForExternalTables
+Method-name:updatePropertiesInTable
+Method-returnType:Table
+Method-parameters:[Table table, TableSerializer tableSerializer]
+MethodInvocation:getParameters
+MethodInvocation:removeIf
+MethodInvocation:entrySet
+MethodInvocation:equals
+MethodInvocation:getKey
+MethodInvocation:equals
+MethodInvocation:getKey
+MethodInvocation:isInReplicationScope
+MethodInvocation:getReplSpecType
+MethodInvocation:putToParameters
+MethodInvocation:toString
+MethodInvocation:getCurrentReplicationState
+Field:KEY
+Field:keyName
+Method-name:KEY
+Method-returnType:null
+Method-parameters:[String s]
+FieldAccess:keyName
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Field:SCOPE
+Field:Type
+Method-name:ReplicationSpec
+Method-returnType:null
+Method-parameters:[ASTNode node]
+MethodInvocation:isApplicable
+MethodInvocation:init
+MethodInvocation:getChildCount
+MethodInvocation:getChild
+MethodInvocation:isApplicable
+MethodInvocation:init
+Method-name:ReplicationSpec
+Method-returnType:null
+Method-parameters:[]
+Method-name:ReplicationSpec
+Method-returnType:null
+Method-parameters:[String fromId, String toId]
+Method-name:ReplicationSpec
+Method-returnType:null
+Method-parameters:[boolean isInReplicationScope, boolean isMetadataOnly, String eventReplicationState, String currentReplicationState, boolean isNoop, boolean isReplace]
+FieldAccess:isInReplicationScope
+FieldAccess:isMetadataOnly
+FieldAccess:eventId
+FieldAccess:currStateId
+FieldAccess:isNoop
+FieldAccess:isReplace
+FieldAccess:specType
+Method-name:ReplicationSpec
+Method-returnType:null
+Method-parameters:[Function<String,String> keyFetcher]
+MethodInvocation:apply
+MethodInvocation:toString
+FieldAccess:isInReplicationScope
+FieldAccess:isMetadataOnly
+FieldAccess:specType
+MethodInvocation:equalsIgnoreCase
+FieldAccess:isMetadataOnly
+FieldAccess:isInReplicationScope
+MethodInvocation:equalsIgnoreCase
+FieldAccess:isInReplicationScope
+FieldAccess:eventId
+MethodInvocation:apply
+MethodInvocation:toString
+FieldAccess:currStateId
+MethodInvocation:apply
+MethodInvocation:toString
+FieldAccess:isNoop
+MethodInvocation:parseBoolean
+MethodInvocation:apply
+MethodInvocation:toString
+FieldAccess:isReplace
+MethodInvocation:parseBoolean
+MethodInvocation:apply
+MethodInvocation:toString
+FieldAccess:validWriteIdList
+MethodInvocation:apply
+MethodInvocation:toString
+FieldAccess:validTxnList
+MethodInvocation:apply
+MethodInvocation:toString
+Method-name:isApplicable
+Method-returnType:boolean
+Method-parameters:[ASTNode node]
+MethodInvocation:getType
+MethodInvocation:getToken
+Method-name:allowReplacement
+Method-returnType:boolean
+Method-parameters:[String currReplState, String replacementReplState]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:parseLong
+MethodInvocation:replaceAll
+MethodInvocation:parseLong
+MethodInvocation:replaceAll
+Method-name:allowReplacementInto
+Method-returnType:boolean
+Method-parameters:[Map<String,String> params]
+MethodInvocation:allowReplacement
+MethodInvocation:getLastReplicatedStateFromParameters
+MethodInvocation:getCurrentReplicationState
+Method-name:allowEventReplacementInto
+Method-returnType:boolean
+Method-parameters:[Map<String,String> params]
+MethodInvocation:allowReplacement
+MethodInvocation:getLastReplicatedStateFromParameters
+MethodInvocation:getReplicationState
+Method-name:allowEventReplacementInto
+Method-returnType:Predicate<Partition>
+Method-parameters:[]
+Method-name:apply
+Method-returnType:boolean
+Method-parameters:[@Nullable Partition partition]
+MethodInvocation:allowEventReplacementInto
+MethodInvocation:getParameters
+Method-name:init
+Method-returnType:void
+Method-parameters:[ASTNode node]
+MethodInvocation:stripQuotes
+MethodInvocation:getText
+MethodInvocation:getChild
+MethodInvocation:getChildCount
+MethodInvocation:equals
+MethodInvocation:toLowerCase
+MethodInvocation:getText
+MethodInvocation:getChild
+MethodInvocation:parseLong
+Method-name:getLastReplicatedStateFromParameters
+Method-returnType:String
+Method-parameters:[Map<String,String> m]
+MethodInvocation:containsKey
+MethodInvocation:toString
+MethodInvocation:get
+MethodInvocation:toString
+Method-name:getReplSpecType
+Method-returnType:Type
+Method-parameters:[]
+FieldAccess:specType
+Method-name:setReplSpecType
+Method-returnType:void
+Method-parameters:[Type specType]
+FieldAccess:specType
+Method-name:isInReplicationScope
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isMetadataOnly
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIsMetadataOnly
+Method-returnType:void
+Method-parameters:[boolean isMetadataOnly]
+FieldAccess:isMetadataOnly
+Method-name:isMetadataOnlyForExternalTables
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setMetadataOnlyForExternalTables
+Method-returnType:void
+Method-parameters:[boolean metadataOnlyForExternalTables]
+Method-name:isReplace
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIsReplace
+Method-returnType:void
+Method-parameters:[boolean isReplace]
+FieldAccess:isReplace
+Method-name:getReplicationState
+Method-returnType:String
+Method-parameters:[]
+Method-name:getCurrentReplicationState
+Method-returnType:String
+Method-parameters:[]
+Method-name:setCurrentReplicationState
+Method-returnType:void
+Method-parameters:[String currStateId]
+FieldAccess:currStateId
+Method-name:isNoop
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setNoop
+Method-returnType:void
+Method-parameters:[boolean isNoop]
+FieldAccess:isNoop
+Method-name:getValidWriteIdList
+Method-returnType:String
+Method-parameters:[]
+Method-name:setValidWriteIdList
+Method-returnType:void
+Method-parameters:[String validWriteIdList]
+FieldAccess:validWriteIdList
+Method-name:getValidTxnList
+Method-returnType:String
+Method-parameters:[]
+Method-name:setValidTxnList
+Method-returnType:void
+Method-parameters:[String validTxnList]
+FieldAccess:validTxnList
+Method-name:isTransactionalTableDump
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:get
+Method-returnType:String
+Method-parameters:[KEY key]
+MethodInvocation:getScope
+MethodInvocation:getReplicationState
+MethodInvocation:getCurrentReplicationState
+MethodInvocation:valueOf
+MethodInvocation:isNoop
+MethodInvocation:valueOf
+MethodInvocation:isReplace
+MethodInvocation:getValidWriteIdList
+MethodInvocation:getValidTxnList
+Method-name:getScope
+Method-returnType:SCOPE
+Method-parameters:[]
+MethodInvocation:isInReplicationScope
+MethodInvocation:isMetadataOnly
+Method-name:isMigratingToTxnTable
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setMigratingToTxnTable
+Method-returnType:void
+Method-parameters:[]
+Method-name:isMigratingToExternalTable
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setMigratingToExternalTable
+Method-returnType:void
+Method-parameters:[]
+Method-name:copyLastReplId
+Method-returnType:void
+Method-parameters:[Map<String,String> srcParameter, Map<String,String> destParameter]
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:put
+MethodInvocation:toString
+Method-name:needDupCopyCheck
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setNeedDupCopyCheck
+Method-returnType:void
+Method-parameters:[boolean isFirstIncPending]
+FieldAccess:needDupCopyCheck
+Method-name:isRepl
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setRepl
+Method-returnType:void
+Method-parameters:[boolean repl]

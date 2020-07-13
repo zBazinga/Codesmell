@@ -1,0 +1,87 @@
+Class:StreamResequencerConfig
+Field:capacity
+Field:timeout
+Field:deliveryAttemptInterval
+Field:ignoreInvalidExchanges
+Field:comparator
+Field:comparatorRef
+Field:rejectOld
+Method-name:StreamResequencerConfig
+Method-returnType:null
+Method-parameters:[]
+Method-name:StreamResequencerConfig
+Method-returnType:null
+Method-parameters:[int capacity, long timeout]
+Method-name:StreamResequencerConfig
+Method-returnType:null
+Method-parameters:[int capacity, long timeout, ExpressionResultComparator comparator]
+Method-name:StreamResequencerConfig
+Method-returnType:null
+Method-parameters:[int capacity, long timeout, Boolean rejectOld]
+Method-name:StreamResequencerConfig
+Method-returnType:null
+Method-parameters:[int capacity, long timeout, Boolean rejectOld, ExpressionResultComparator comparator]
+FieldAccess:capacity
+MethodInvocation:toString
+FieldAccess:timeout
+MethodInvocation:toString
+FieldAccess:rejectOld
+MethodInvocation:toString
+FieldAccess:comparator
+Method-name:getDefault
+Method-returnType:StreamResequencerConfig
+Method-parameters:[]
+Method-name:getCapacity
+Method-returnType:String
+Method-parameters:[]
+Method-name:setCapacity
+Method-returnType:void
+Method-parameters:[String capacity]
+FieldAccess:capacity
+Method-name:getTimeout
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTimeout
+Method-returnType:void
+Method-parameters:[String timeout]
+FieldAccess:timeout
+Method-name:getDeliveryAttemptInterval
+Method-returnType:String
+Method-parameters:[]
+Method-name:setDeliveryAttemptInterval
+Method-returnType:void
+Method-parameters:[String deliveryAttemptInterval]
+FieldAccess:deliveryAttemptInterval
+Method-name:getIgnoreInvalidExchanges
+Method-returnType:String
+Method-parameters:[]
+Method-name:setIgnoreInvalidExchanges
+Method-returnType:void
+Method-parameters:[String ignoreInvalidExchanges]
+FieldAccess:ignoreInvalidExchanges
+Method-name:getComparator
+Method-returnType:ExpressionResultComparator
+Method-parameters:[]
+Method-name:setComparator
+Method-returnType:void
+Method-parameters:[ExpressionResultComparator comparator]
+FieldAccess:comparator
+Method-name:getComparatorRef
+Method-returnType:String
+Method-parameters:[]
+Method-name:setComparatorRef
+Method-returnType:void
+Method-parameters:[String comparatorRef]
+FieldAccess:comparatorRef
+Method-name:setRejectOld
+Method-returnType:void
+Method-parameters:[String value]
+FieldAccess:rejectOld
+Method-name:getRejectOld
+Method-returnType:String
+Method-parameters:[]
+Method-name:stream
+Method-returnType:ResequenceDefinition
+Method-parameters:[ResequenceDefinition resequenceDefinition]
+MethodInvocation:setStreamConfig
+MethodInvocation:setBatchConfig

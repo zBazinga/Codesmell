@@ -1,0 +1,52 @@
+Class:BigIntegerFingerprint
+Field:MARKER
+MethodInvocation:fromString
+Field:fingerprint
+Field:alreadySmearedFingerprints
+Field:seenNull
+Method-name:addLong
+Method-returnType:BigIntegerFingerprint
+Method-parameters:[long addition]
+MethodInvocation:addLong
+Method-name:addString
+Method-returnType:BigIntegerFingerprint
+Method-parameters:[String string]
+MethodInvocation:addString
+Method-name:addDigestedBytes
+Method-returnType:BigIntegerFingerprint
+Method-parameters:[@Nullable byte[] bytes]
+MethodInvocation:addBytes
+Method-name:addBoolean
+Method-returnType:BigIntegerFingerprint
+Method-parameters:[boolean bool]
+MethodInvocation:addBoolean
+Method-name:addPath
+Method-returnType:BigIntegerFingerprint
+Method-parameters:[PathFragment pathFragment]
+MethodInvocation:addPath
+Method-name:addBigIntegerOrdered
+Method-returnType:BigIntegerFingerprint
+Method-parameters:[BigInteger bigInteger]
+MethodInvocation:add
+MethodInvocation:addUUID
+Method-name:addNullableBigIntegerOrdered
+Method-returnType:BigIntegerFingerprint
+Method-parameters:[@Nullable BigInteger bigInteger]
+MethodInvocation:addBigIntegerOrdered
+Method-name:getFingerprint
+Method-returnType:BigInteger
+Method-parameters:[]
+MethodInvocation:digestAndReset
+MethodInvocation:composeOrdered
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:digestAndReset
+MethodInvocation:clear
+Method-name:addToFingerprint
+Method-returnType:void
+Method-parameters:[FileContentsProxy fileContentsProxy]
+MethodInvocation:addLong
+MethodInvocation:getCTime
+MethodInvocation:addLong
+MethodInvocation:getNodeId

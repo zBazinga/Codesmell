@@ -1,0 +1,34 @@
+Class:AlterTableUpdateColumnStatistictAnalyzer
+Method-name:AlterTableUpdateColumnStatistictAnalyzer
+Method-returnType:null
+Method-parameters:[QueryState queryState]
+Method-name:analyzeCommand
+Method-returnType:void
+Method-parameters:[TableName tableName, Map<String,String> partitionSpec, ASTNode command]
+MethodInvocation:getTable
+MethodInvocation:getUnescapedName
+MethodInvocation:getChild
+MethodInvocation:getProps
+MethodInvocation:getChild
+MethodInvocation:getChild
+MethodInvocation:getPartitionName
+MethodInvocation:getColumnType
+MethodInvocation:getDbName
+MethodInvocation:getTableName
+MethodInvocation:get
+MethodInvocation:addInputsOutputsAlterTable
+MethodInvocation:isTransactionalTable
+MethodInvocation:setAcidDdlDesc
+MethodInvocation:add
+Method-name:getPartitionName
+Method-returnType:String
+Method-parameters:[Map<String,String> partitionSpec]
+MethodInvocation:makePartName
+MethodInvocation:toString
+Method-name:getColumnType
+Method-returnType:String
+Method-parameters:[Table table, String columnName]
+MethodInvocation:getCols
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:getType

@@ -1,0 +1,477 @@
+Class:Row
+Method-name:addRow
+Method-returnType:void
+Method-parameters:[Table rows]
+MethodInvocation:columnCount
+MethodInvocation:appendObj
+MethodInvocation:column
+MethodInvocation:getObject
+Class:ColumnMap
+Field:columnMap
+Field:columnType
+Method-name:ColumnMap
+Method-returnType:null
+Method-parameters:[ColumnType columnType]
+FieldAccess:columnType
+Method-name:ColumnMap
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:columnType
+Method-name:get
+Method-returnType:T
+Method-parameters:[String columnName]
+MethodInvocation:get
+MethodInvocation:toLowerCase
+MethodInvocation:throwWrongTypeError
+MethodInvocation:throwColumnNotPresentError
+Method-name:put
+Method-returnType:void
+Method-parameters:[String columnName, T column]
+MethodInvocation:put
+MethodInvocation:toLowerCase
+Method-name:throwWrongTypeError
+Method-returnType:void
+Method-parameters:[String columnName]
+MethodInvocation:equals
+MethodInvocation:name
+MethodInvocation:type
+MethodInvocation:get
+MethodInvocation:columns
+MethodInvocation:getTable
+MethodInvocation:columnTypeName
+MethodInvocation:format
+Method-name:throwColumnNotPresentError
+Method-returnType:void
+Method-parameters:[String columnName]
+MethodInvocation:format
+MethodInvocation:name
+MethodInvocation:getTable
+Method-name:columnTypeName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:columnType
+MethodInvocation:name
+FieldAccess:columnType
+Field:tableSlice
+Field:columnNames
+Field:dateColumnMap
+Field:doubleColumnMap
+Field:intColumnMap
+Field:longColumnMap
+Field:shortColumnMap
+Field:floatColumnMap
+Field:stringColumnMap
+Field:booleanColumnMap
+Field:dateTimeColumnMap
+Field:instantColumnMap
+Field:timeColumnMap
+Field:columnMap
+Field:numericColumnMap
+Field:rowNumber
+Method-name:Row
+Method-returnType:null
+Method-parameters:[Table table]
+Method-name:Row
+Method-returnType:null
+Method-parameters:[TableSlice tableSlice]
+Method-name:Row
+Method-returnType:null
+Method-parameters:[Table table, int rowNumber]
+Method-name:Row
+Method-returnType:null
+Method-parameters:[TableSlice tableSlice, int rowNumber]
+FieldAccess:tableSlice
+MethodInvocation:toArray
+MethodInvocation:columnNames
+FieldAccess:rowNumber
+MethodInvocation:columns
+MethodInvocation:getTable
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+Method-name:at
+Method-returnType:void
+Method-parameters:[int rowNumber]
+FieldAccess:rowNumber
+Method-name:columnCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:columnCount
+Method-name:columnNames
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:columnNames
+Method-name:getBoolean
+Method-returnType:Boolean
+Method-parameters:[int columnIndex]
+MethodInvocation:getBoolean
+Method-name:getBoolean
+Method-returnType:Boolean
+Method-parameters:[String columnName]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getDate
+Method-returnType:LocalDate
+Method-parameters:[String columnName]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getDate
+Method-returnType:LocalDate
+Method-parameters:[int columnIndex]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getDateTime
+Method-returnType:LocalDateTime
+Method-parameters:[int columnIndex]
+MethodInvocation:getDateTime
+Method-name:getDateTime
+Method-returnType:LocalDateTime
+Method-parameters:[String columnName]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getInstant
+Method-returnType:Instant
+Method-parameters:[int columnIndex]
+MethodInvocation:getInstant
+Method-name:getInstant
+Method-returnType:Instant
+Method-parameters:[String columnName]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getDouble
+Method-returnType:double
+Method-parameters:[int columnIndex]
+MethodInvocation:getDouble
+Method-name:getDouble
+Method-returnType:double
+Method-parameters:[String columnName]
+MethodInvocation:getDouble
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getFloat
+Method-returnType:float
+Method-parameters:[int columnIndex]
+MethodInvocation:getFloat
+Method-name:getFloat
+Method-returnType:float
+Method-parameters:[String columnName]
+MethodInvocation:getFloat
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getInt
+Method-returnType:int
+Method-parameters:[int columnIndex]
+MethodInvocation:getInt
+Method-name:getInt
+Method-returnType:int
+Method-parameters:[String columnName]
+MethodInvocation:getInt
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getLong
+Method-returnType:long
+Method-parameters:[int columnIndex]
+MethodInvocation:getLong
+Method-name:getLong
+Method-returnType:long
+Method-parameters:[String columnName]
+MethodInvocation:getLong
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getObject
+Method-returnType:Object
+Method-parameters:[String columnName]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getObject
+Method-returnType:Object
+Method-parameters:[int columnIndex]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getPackedDate
+Method-returnType:int
+Method-parameters:[String columnName]
+MethodInvocation:getIntInternal
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getPackedDate
+Method-returnType:int
+Method-parameters:[int columnIndex]
+MethodInvocation:getIntInternal
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getPackedDateTime
+Method-returnType:long
+Method-parameters:[String columnName]
+MethodInvocation:getLongInternal
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getPackedDateTime
+Method-returnType:long
+Method-parameters:[int columnIndex]
+MethodInvocation:getLongInternal
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getPackedTime
+Method-returnType:int
+Method-parameters:[String columnName]
+MethodInvocation:getIntInternal
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getPackedTime
+Method-returnType:int
+Method-parameters:[int columnIndex]
+MethodInvocation:getIntInternal
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getShort
+Method-returnType:short
+Method-parameters:[int columnIndex]
+MethodInvocation:getShort
+Method-name:getRowNumber
+Method-returnType:int
+Method-parameters:[]
+Method-name:getString
+Method-returnType:String
+Method-parameters:[int columnIndex]
+MethodInvocation:getString
+Method-name:getShort
+Method-returnType:short
+Method-parameters:[String columnName]
+MethodInvocation:getShort
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getText
+Method-returnType:String
+Method-parameters:[String columnName]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getText
+Method-returnType:String
+Method-parameters:[int columnIndex]
+MethodInvocation:getString
+Method-name:getTime
+Method-returnType:LocalTime
+Method-parameters:[String columnName]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getTime
+Method-returnType:LocalTime
+Method-parameters:[int columnIndex]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:getString
+Method-returnType:String
+Method-parameters:[String columnName]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:isMissing
+Method-returnType:boolean
+Method-parameters:[String columnName]
+MethodInvocation:get
+MethodInvocation:getIndex
+MethodInvocation:isMissing
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:rowCount
+FieldAccess:tableSlice
+Method-name:next
+Method-returnType:Row
+Method-parameters:[]
+MethodInvocation:hasNext
+Method-name:setMissing
+Method-returnType:void
+Method-parameters:[int columnIndex]
+MethodInvocation:setMissing
+Method-name:setMissing
+Method-returnType:void
+Method-parameters:[String columnName]
+MethodInvocation:setMissing
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:setBoolean
+Method-returnType:void
+Method-parameters:[int columnIndex, boolean value]
+MethodInvocation:setBoolean
+Method-name:setBoolean
+Method-returnType:void
+Method-parameters:[String columnName, boolean value]
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:setDate
+Method-returnType:void
+Method-parameters:[int columnIndex, LocalDate value]
+MethodInvocation:setDate
+Method-name:setDate
+Method-returnType:void
+Method-parameters:[String columnName, LocalDate value]
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:setDateTime
+Method-returnType:void
+Method-parameters:[int columnIndex, LocalDateTime value]
+MethodInvocation:setDateTime
+Method-name:setDateTime
+Method-returnType:void
+Method-parameters:[String columnName, LocalDateTime value]
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:setInstant
+Method-returnType:void
+Method-parameters:[int columnIndex, Instant value]
+MethodInvocation:setInstant
+Method-name:setInstant
+Method-returnType:void
+Method-parameters:[String columnName, Instant value]
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:setDouble
+Method-returnType:void
+Method-parameters:[int columnIndex, double value]
+MethodInvocation:setDouble
+Method-name:setDouble
+Method-returnType:void
+Method-parameters:[String columnName, double value]
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:setFloat
+Method-returnType:void
+Method-parameters:[int columnIndex, float value]
+MethodInvocation:setFloat
+Method-name:setFloat
+Method-returnType:void
+Method-parameters:[String columnName, float value]
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:setInt
+Method-returnType:void
+Method-parameters:[int columnIndex, int value]
+MethodInvocation:setInt
+Method-name:setInt
+Method-returnType:void
+Method-parameters:[String columnName, int value]
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:setLong
+Method-returnType:void
+Method-parameters:[int columnIndex, long value]
+MethodInvocation:setLong
+Method-name:setLong
+Method-returnType:void
+Method-parameters:[String columnName, long value]
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:setShort
+Method-returnType:void
+Method-parameters:[int columnIndex, short value]
+MethodInvocation:setShort
+Method-name:setShort
+Method-returnType:void
+Method-parameters:[String columnName, short value]
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:setString
+Method-returnType:void
+Method-parameters:[int columnIndex, String value]
+MethodInvocation:setString
+Method-name:setString
+Method-returnType:void
+Method-parameters:[String columnName, String value]
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:setText
+Method-returnType:void
+Method-parameters:[int columnIndex, String value]
+MethodInvocation:setString
+Method-name:setText
+Method-returnType:void
+Method-parameters:[String columnName, String value]
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:setTime
+Method-returnType:void
+Method-parameters:[int columnIndex, LocalTime value]
+MethodInvocation:setTime
+Method-name:getIndex
+Method-returnType:int
+Method-parameters:[int rowNumber]
+MethodInvocation:mappedRowNumber
+Method-name:getNumber
+Method-returnType:double
+Method-parameters:[String columnName]
+MethodInvocation:getDouble
+MethodInvocation:get
+Method-name:getColumnType
+Method-returnType:ColumnType
+Method-parameters:[String columnName]
+MethodInvocation:type
+MethodInvocation:get
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:emptyCopy
+MethodInvocation:getTable
+MethodInvocation:getRowNumber
+MethodInvocation:addRow
+MethodInvocation:print
+Method-name:setTime
+Method-returnType:void
+Method-parameters:[String columnName, LocalTime value]
+MethodInvocation:set
+MethodInvocation:get

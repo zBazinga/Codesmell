@@ -1,0 +1,203 @@
+Class:EdgeController
+Field:STANDARD_EDGE_STYLE
+Field:STANDARD_EDGE_COLOR
+MethodInvocation:getRGB
+Field:Rules
+Method-name:getController
+Method-returnType:EdgeController
+Method-parameters:[]
+MethodInvocation:getController
+MethodInvocation:getCurrentModeController
+Method-name:getController
+Method-returnType:EdgeController
+Method-parameters:[ModeController modeController]
+MethodInvocation:getExtension
+Method-name:install
+Method-returnType:void
+Method-parameters:[final EdgeController edgeController]
+MethodInvocation:addExtension
+MethodInvocation:getCurrentModeController
+Field:colorHandlers
+Field:styleHandlers
+Field:widthHandlers
+Field:dashHandlers
+Field:modeController
+Field:edgeColorsConfigurationFactory
+Method-name:EdgeController
+Method-returnType:null
+Method-parameters:[final ModeController modeController]
+FieldAccess:modeController
+MethodInvocation:addColorGetter
+Method-name:getProperty
+Method-returnType:ObjectRule<Color,Rules>
+Method-parameters:[final NodeModel node, final ObjectRule<Color,Rules> currentValue]
+MethodInvocation:getStyleEdgeColorRule
+MethodInvocation:addColorGetter
+Method-name:getProperty
+Method-returnType:ObjectRule<Color,Rules>
+Method-parameters:[NodeModel model, ObjectRule<Color,Rules> currentValue]
+MethodInvocation:getMap
+MethodInvocation:getExtension
+MethodInvocation:getRootNode
+MethodInvocation:getParentNode
+MethodInvocation:isRoot
+MethodInvocation:addColorGetter
+Method-name:getProperty
+Method-returnType:ObjectRule<Color,Rules>
+Method-parameters:[NodeModel node, final ObjectRule<Color,Rules> currentValue]
+MethodInvocation:addStyleGetter
+Method-name:getProperty
+Method-returnType:EdgeStyle
+Method-parameters:[final NodeModel node, final EdgeStyle currentValu]
+MethodInvocation:getStyleStyle
+MethodInvocation:getMap
+MethodInvocation:getStyles
+MethodInvocation:getController
+MethodInvocation:addStyleGetter
+Method-name:getProperty
+Method-returnType:EdgeStyle
+Method-parameters:[NodeModel node, final EdgeStyle currentValue]
+MethodInvocation:getParentNode
+MethodInvocation:addWidthGetter
+Method-name:getProperty
+Method-returnType:Integer
+Method-parameters:[final NodeModel node, final Integer currentValue]
+MethodInvocation:getStyleWidth
+MethodInvocation:getMap
+MethodInvocation:getStyles
+MethodInvocation:getController
+MethodInvocation:addWidthGetter
+Method-name:getProperty
+Method-returnType:Integer
+Method-parameters:[NodeModel node, final Integer currentValue]
+MethodInvocation:getParentNode
+MethodInvocation:addDashGetter
+Method-name:getProperty
+Method-returnType:DashVariant
+Method-parameters:[final NodeModel node, final DashVariant currentValue]
+MethodInvocation:getStyleDash
+MethodInvocation:getMap
+MethodInvocation:getStyles
+MethodInvocation:getController
+MethodInvocation:addDashGetter
+Method-name:getProperty
+Method-returnType:DashVariant
+Method-parameters:[NodeModel node, final DashVariant currentValue]
+MethodInvocation:getParentNode
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+MethodInvocation:getReadManager
+MethodInvocation:getWriteManager
+MethodInvocation:registerBy
+Method-name:addColorGetter
+Method-returnType:IPropertyHandler<ObjectRule<Color,Rules>,NodeModel>
+Method-parameters:[final Integer key, final IPropertyHandler<ObjectRule<Color,Rules>,NodeModel> getter]
+MethodInvocation:addGetter
+Method-name:addStyleGetter
+Method-returnType:IPropertyHandler<EdgeStyle,NodeModel>
+Method-parameters:[final Integer key, final IPropertyHandler<EdgeStyle,NodeModel> getter]
+MethodInvocation:addGetter
+Method-name:addWidthGetter
+Method-returnType:IPropertyHandler<Integer,NodeModel>
+Method-parameters:[final Integer key, final IPropertyHandler<Integer,NodeModel> getter]
+MethodInvocation:addGetter
+Method-name:addDashGetter
+Method-returnType:IPropertyHandler<DashVariant,NodeModel>
+Method-parameters:[final Integer key, final IPropertyHandler<DashVariant,NodeModel> getter]
+MethodInvocation:addGetter
+Method-name:getColor
+Method-returnType:Color
+Method-parameters:[final NodeModel node]
+MethodInvocation:getColor
+Method-name:getColor
+Method-returnType:Color
+Method-parameters:[final NodeModel node, final boolean resolveColor]
+MethodInvocation:getColorRule
+MethodInvocation:hasValue
+MethodInvocation:getValue
+MethodInvocation:getRule
+MethodInvocation:getParentNode
+MethodInvocation:getColor
+Method-name:getColorRule
+Method-returnType:ObjectRule<Color,Rules>
+Method-parameters:[final NodeModel node]
+MethodInvocation:getProperty
+Method-name:getStyle
+Method-returnType:EdgeStyle
+Method-parameters:[final NodeModel node]
+MethodInvocation:getStyle
+Method-name:getStyle
+Method-returnType:EdgeStyle
+Method-parameters:[final NodeModel node, final boolean resolveParent]
+MethodInvocation:getProperty
+MethodInvocation:getStyle
+MethodInvocation:getParentNode
+Method-name:getWidth
+Method-returnType:int
+Method-parameters:[final NodeModel node]
+MethodInvocation:getWidth
+Method-name:getWidth
+Method-returnType:Integer
+Method-parameters:[final NodeModel node, final boolean resolveParent]
+MethodInvocation:getProperty
+MethodInvocation:getWidth
+MethodInvocation:getParentNode
+Method-name:getDash
+Method-returnType:DashVariant
+Method-parameters:[NodeModel node]
+MethodInvocation:getDash
+Method-name:getDash
+Method-returnType:DashVariant
+Method-parameters:[NodeModel node, final boolean resolveParent]
+MethodInvocation:getProperty
+MethodInvocation:getDash
+MethodInvocation:getParentNode
+Method-name:getStyleEdgeColorRule
+Method-returnType:ObjectRule<Color,Rules>
+Method-parameters:[NodeModel node]
+MethodInvocation:getMap
+MethodInvocation:getStyles
+MethodInvocation:getController
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:containsExtension
+MethodInvocation:getRootNode
+MethodInvocation:getExtension
+MethodInvocation:isAutomaticLevelStyle
+MethodInvocation:getNodeColorRule
+Method-name:getStyleWidth
+Method-returnType:Integer
+Method-parameters:[final MapModel map, final Collection<IStyle> collection]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getWidth
+Method-name:getStyleDash
+Method-returnType:DashVariant
+Method-parameters:[final MapModel map, final Collection<IStyle> collection]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getDash
+Method-name:getStyleStyle
+Method-returnType:EdgeStyle
+Method-parameters:[final MapModel map, final Collection<IStyle> collection]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getStyle
+Method-name:getNodeColorRule
+Method-returnType:ObjectRule<Color,Rules>
+Method-parameters:[NodeModel styleNode]
+MethodInvocation:getModel
+MethodInvocation:getColor
+Method-name:areEdgeColorsAvailable
+Method-returnType:boolean
+Method-parameters:[MapModel map]
+MethodInvocation:create
+MethodInvocation:areEdgeColorsAvailable
+Method-name:getEdgeColor
+Method-returnType:Color
+Method-parameters:[MapModel map, int colorCounter]
+MethodInvocation:create
+MethodInvocation:getEdgeColor

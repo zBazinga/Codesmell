@@ -1,0 +1,111 @@
+Class:CompositeOperandTypeChecker
+Field:range
+Field:Composition
+Field:allowedRules
+Field:composition
+Field:allowedSignatures
+Method-name:CompositeOperandTypeChecker
+Method-returnType:null
+Method-parameters:[Composition composition, ImmutableList<? extends SqlOperandTypeChecker> allowedRules, @Nullable String allowedSignatures, @Nullable SqlOperandCountRange range]
+Method-name:isOptional
+Method-returnType:boolean
+Method-parameters:[int i]
+MethodInvocation:isOptional
+Method-name:getRules
+Method-returnType:ImmutableList<? extends SqlOperandTypeChecker>
+Method-parameters:[]
+Method-name:getConsistency
+Method-returnType:Consistency
+Method-parameters:[]
+Method-name:getAllowedSignatures
+Method-returnType:String
+Method-parameters:[SqlOperator op, String opName]
+MethodInvocation:zip
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getAllowedSignatures
+MethodInvocation:toString
+Method-name:getOperandCountRange
+Method-returnType:SqlOperandCountRange
+Method-parameters:[]
+MethodInvocation:of
+MethodInvocation:size
+Method-name:get
+Method-returnType:SqlOperandCountRange
+Method-parameters:[int index]
+MethodInvocation:getOperandCountRange
+MethodInvocation:get
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:minMin
+MethodInvocation:maxMax
+Method-name:isValidCount
+Method-returnType:boolean
+Method-parameters:[int count]
+MethodInvocation:isValidCount
+MethodInvocation:isValidCount
+Method-name:getMin
+Method-returnType:int
+Method-parameters:[]
+Method-name:getMax
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isValidCount
+MethodInvocation:of
+MethodInvocation:between
+Method-name:minMin
+Method-returnType:int
+Method-parameters:[List<SqlOperandCountRange> ranges]
+MethodInvocation:min
+MethodInvocation:getMax
+Method-name:maxMax
+Method-returnType:int
+Method-parameters:[List<SqlOperandCountRange> ranges]
+MethodInvocation:getMax
+MethodInvocation:max
+MethodInvocation:getMax
+Method-name:checkOperandTypes
+Method-returnType:boolean
+Method-parameters:[SqlCallBinding callBinding, boolean throwOnFailure]
+MethodInvocation:isTypeCoercionEnabled
+MethodInvocation:getTypeCoercion
+MethodInvocation:getValidator
+MethodInvocation:binaryArithmeticCoercion
+MethodInvocation:check
+MethodInvocation:checkOperandTypes
+MethodInvocation:newValidationSignatureError
+Method-name:check
+Method-returnType:boolean
+Method-parameters:[SqlCallBinding callBinding]
+MethodInvocation:isValidCount
+MethodInvocation:getOperandCount
+MethodInvocation:range
+MethodInvocation:getOperandCount
+MethodInvocation:checkSingleOperandType
+MethodInvocation:operand
+MethodInvocation:getCall
+MethodInvocation:isTypeCoercionEnabled
+MethodInvocation:coerceOperands
+MethodInvocation:getOperandCount
+MethodInvocation:size
+MethodInvocation:zip
+MethodInvocation:checkSingleOperandType
+MethodInvocation:operand
+MethodInvocation:getCall
+MethodInvocation:isTypeCoercionEnabled
+MethodInvocation:coerceOperands
+MethodInvocation:zip
+MethodInvocation:checkOperandTypes
+MethodInvocation:checkWithoutTypeCoercion
+MethodInvocation:zip
+MethodInvocation:checkOperandTypes
+Method-name:coerceOperands
+Method-returnType:boolean
+Method-parameters:[SqlCallBinding callBinding, boolean repeat]
+Method-name:checkWithoutTypeCoercion
+Method-returnType:boolean
+Method-parameters:[SqlCallBinding callBinding]
+MethodInvocation:isTypeCoercionEnabled
+MethodInvocation:checkOperandTypesWithoutTypeCoercion

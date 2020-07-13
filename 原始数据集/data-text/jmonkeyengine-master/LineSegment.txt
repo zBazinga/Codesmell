@@ -1,0 +1,196 @@
+Class:LineSegment
+Field:serialVersionUID
+Field:origin
+Field:direction
+Field:extent
+Method-name:LineSegment
+Method-returnType:null
+Method-parameters:[]
+Method-name:LineSegment
+Method-returnType:null
+Method-parameters:[LineSegment ls]
+FieldAccess:origin
+MethodInvocation:getOrigin
+FieldAccess:direction
+MethodInvocation:getDirection
+FieldAccess:extent
+MethodInvocation:getExtent
+Method-name:LineSegment
+Method-returnType:null
+Method-parameters:[Vector3f origin, Vector3f direction, float extent]
+FieldAccess:origin
+FieldAccess:direction
+FieldAccess:extent
+Method-name:LineSegment
+Method-returnType:null
+Method-parameters:[Vector3f start, Vector3f end]
+FieldAccess:origin
+FieldAccess:direction
+MethodInvocation:subtract
+FieldAccess:extent
+MethodInvocation:length
+MethodInvocation:normalizeLocal
+Method-name:set
+Method-returnType:void
+Method-parameters:[LineSegment ls]
+FieldAccess:origin
+MethodInvocation:getOrigin
+FieldAccess:direction
+MethodInvocation:getDirection
+FieldAccess:extent
+MethodInvocation:getExtent
+Method-name:distance
+Method-returnType:float
+Method-parameters:[Vector3f point]
+MethodInvocation:sqrt
+MethodInvocation:distanceSquared
+Method-name:distance
+Method-returnType:float
+Method-parameters:[LineSegment ls]
+MethodInvocation:sqrt
+MethodInvocation:distanceSquared
+Method-name:distance
+Method-returnType:float
+Method-parameters:[Ray r]
+MethodInvocation:sqrt
+MethodInvocation:distanceSquared
+Method-name:distanceSquared
+Method-returnType:float
+Method-parameters:[Vector3f point]
+MethodInvocation:get
+MethodInvocation:subtract
+MethodInvocation:dot
+MethodInvocation:add
+MethodInvocation:mult
+MethodInvocation:add
+MethodInvocation:mult
+MethodInvocation:subtract
+MethodInvocation:mult
+MethodInvocation:subtractLocal
+MethodInvocation:lengthSquared
+MethodInvocation:release
+Method-name:distanceSquared
+Method-returnType:float
+Method-parameters:[LineSegment test]
+MethodInvocation:get
+MethodInvocation:subtract
+MethodInvocation:getOrigin
+MethodInvocation:dot
+MethodInvocation:getDirection
+MethodInvocation:dot
+MethodInvocation:dot
+MethodInvocation:getDirection
+MethodInvocation:lengthSquared
+MethodInvocation:release
+MethodInvocation:abs
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:getExtent
+MethodInvocation:abs
+Method-name:distanceSquared
+Method-returnType:float
+Method-parameters:[Ray r]
+MethodInvocation:subtract
+MethodInvocation:getOrigin
+MethodInvocation:dot
+MethodInvocation:getDirection
+MethodInvocation:dot
+MethodInvocation:getDirection
+MethodInvocation:dot
+MethodInvocation:lengthSquared
+MethodInvocation:abs
+MethodInvocation:abs
+Method-name:getDirection
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:setDirection
+Method-returnType:void
+Method-parameters:[Vector3f direction]
+FieldAccess:direction
+Method-name:getExtent
+Method-returnType:float
+Method-parameters:[]
+Method-name:setExtent
+Method-returnType:void
+Method-parameters:[float extent]
+FieldAccess:extent
+Method-name:getOrigin
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:setOrigin
+Method-returnType:void
+Method-parameters:[Vector3f origin]
+FieldAccess:origin
+Method-name:getPositiveEnd
+Method-returnType:Vector3f
+Method-parameters:[Vector3f store]
+MethodInvocation:add
+MethodInvocation:mult
+Method-name:getNegativeEnd
+Method-returnType:Vector3f
+Method-parameters:[Vector3f store]
+MethodInvocation:subtract
+MethodInvocation:mult
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter e]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter e]
+MethodInvocation:getCapsule
+MethodInvocation:readSavable
+MethodInvocation:clone
+MethodInvocation:readSavable
+MethodInvocation:clone
+MethodInvocation:readFloat
+Method-name:clone
+Method-returnType:LineSegment
+Method-parameters:[]
+MethodInvocation:clone
+MethodInvocation:clone
+Method-name:isPointInsideBounds
+Method-returnType:boolean
+Method-parameters:[Vector3f point]
+MethodInvocation:isPointInsideBounds
+Method-name:isPointInsideBounds
+Method-returnType:boolean
+Method-parameters:[Vector3f point, float error]
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:abs

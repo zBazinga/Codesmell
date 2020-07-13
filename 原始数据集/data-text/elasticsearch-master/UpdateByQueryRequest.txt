@@ -1,0 +1,97 @@
+Class:UpdateByQueryRequest
+Field:pipeline
+Method-name:UpdateByQueryRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:UpdateByQueryRequest
+Method-returnType:null
+Method-parameters:[String... indices]
+Method-name:UpdateByQueryRequest
+Method-returnType:null
+Method-parameters:[SearchRequest search]
+Method-name:UpdateByQueryRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readOptionalString
+Method-name:UpdateByQueryRequest
+Method-returnType:null
+Method-parameters:[SearchRequest search, boolean setDefaults]
+Method-name:setPipeline
+Method-returnType:UpdateByQueryRequest
+Method-parameters:[String pipeline]
+FieldAccess:pipeline
+Method-name:setQuery
+Method-returnType:UpdateByQueryRequest
+Method-parameters:[QueryBuilder query]
+MethodInvocation:query
+MethodInvocation:source
+MethodInvocation:getSearchRequest
+Method-name:setRouting
+Method-returnType:UpdateByQueryRequest
+Method-parameters:[String routing]
+MethodInvocation:routing
+MethodInvocation:getSearchRequest
+Method-name:setBatchSize
+Method-returnType:UpdateByQueryRequest
+Method-parameters:[int size]
+MethodInvocation:size
+MethodInvocation:source
+MethodInvocation:getSearchRequest
+Method-name:setIndicesOptions
+Method-returnType:UpdateByQueryRequest
+Method-parameters:[IndicesOptions indicesOptions]
+MethodInvocation:indicesOptions
+MethodInvocation:getSearchRequest
+Method-name:getBatchSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:source
+MethodInvocation:getSearchRequest
+Method-name:getRouting
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:routing
+MethodInvocation:getSearchRequest
+Method-name:getPipeline
+Method-returnType:String
+Method-parameters:[]
+Method-name:self
+Method-returnType:UpdateByQueryRequest
+Method-parameters:[]
+Method-name:forSlice
+Method-returnType:UpdateByQueryRequest
+Method-parameters:[TaskId slicingTask, SearchRequest slice, int totalSlices]
+MethodInvocation:doForSlice
+MethodInvocation:setPipeline
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:searchToString
+MethodInvocation:toString
+Method-name:indices
+Method-returnType:IndicesRequest
+Method-parameters:[String... indices]
+Method-name:indices
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:indicesOptions
+Method-returnType:IndicesOptions
+Method-parameters:[]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeOptionalString
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startObject
+MethodInvocation:getScript
+MethodInvocation:field
+MethodInvocation:toXContent
+MethodInvocation:getScript
+MethodInvocation:innerToXContent
+MethodInvocation:source
+MethodInvocation:getSearchRequest
+MethodInvocation:endObject

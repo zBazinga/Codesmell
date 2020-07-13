@@ -1,0 +1,45 @@
+Class:ComputeImpl
+Field:LOGGER
+MethodInvocation:getLogger
+Method-name:add
+Method-returnType:int
+Method-parameters:[@FormParam("a") int a, @FormParam("b") int b]
+Method-name:reduce
+Method-returnType:int
+Method-parameters:[@Context HttpServletRequest request]
+MethodInvocation:parseInt
+MethodInvocation:getParameter
+MethodInvocation:parseInt
+MethodInvocation:getParameter
+Method-name:testRawJsonString
+Method-returnType:String
+Method-parameters:[String jsonInput]
+MethodInvocation:readValue
+MethodInvocation:getRestObjectMapper
+MethodInvocation:getBytes
+MethodInvocation:printStackTrace
+MethodInvocation:get
+Method-name:saySomething
+Method-returnType:String
+Method-parameters:[@HeaderParam("prefix") String prefix, Person user]
+MethodInvocation:getName
+Method-name:sayHi
+Method-returnType:void
+Method-parameters:[@PathParam("name") String name]
+MethodInvocation:info
+MethodInvocation:setStatus
+MethodInvocation:getInvocationContext
+Method-name:sayHi2
+Method-returnType:void
+Method-parameters:[@PathParam("name") String name]
+MethodInvocation:info
+Method-name:sayHei
+Method-returnType:void
+Method-parameters:[@QueryParam("name") String name]
+MethodInvocation:info
+Method-name:isTrue
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:addString
+Method-returnType:String
+Method-parameters:[@QueryParam("s") String[] s]

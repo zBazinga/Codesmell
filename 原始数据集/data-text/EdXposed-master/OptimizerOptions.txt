@@ -1,0 +1,20 @@
+Class:OptimizerOptions
+Field:optimizeList
+Field:dontOptimizeList
+Field:optimizeListsLoaded
+Method-name:loadOptimizeLists
+Method-returnType:void
+Method-parameters:[String optimizeListFile, String dontOptimizeListFile]
+MethodInvocation:loadStringsFromFile
+MethodInvocation:loadStringsFromFile
+Method-name:loadStringsFromFile
+Method-returnType:HashSet<String>
+Method-parameters:[String filename]
+MethodInvocation:readLine
+MethodInvocation:add
+MethodInvocation:close
+Method-name:shouldOptimize
+Method-returnType:boolean
+Method-parameters:[String canonicalMethodName]
+MethodInvocation:contains
+MethodInvocation:contains

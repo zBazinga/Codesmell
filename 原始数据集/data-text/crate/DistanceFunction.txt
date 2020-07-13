@@ -1,0 +1,69 @@
+Class:DistanceFunction
+Field:NAME
+Field:ALLOWED_PARAM
+MethodInvocation:of
+Field:info
+Field:geoPointInfo
+MethodInvocation:genInfo
+MethodInvocation:asList
+Method-name:register
+Method-returnType:void
+Method-parameters:[ScalarFunctionModule module]
+MethodInvocation:register
+MethodInvocation:build
+MethodInvocation:builder
+Method-name:getForTypes
+Method-returnType:FunctionImplementation
+Method-parameters:[List<DataType> dataTypes]
+MethodInvocation:genInfo
+Method-name:genInfo
+Method-returnType:FunctionInfo
+Method-parameters:[List<DataType> argumentTypes]
+Method-name:DistanceFunction
+Method-returnType:null
+Method-parameters:[FunctionInfo info]
+FieldAccess:info
+Method-name:info
+Method-returnType:FunctionInfo
+Method-parameters:[]
+Method-name:evaluate
+Method-returnType:Double
+Method-parameters:[TransactionContext txnCtx, Input[] args]
+Method-name:evaluate
+Method-returnType:Double
+Method-parameters:[Input arg1, Input arg2]
+MethodInvocation:value
+MethodInvocation:value
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:arcDistance
+Method-name:normalizeSymbol
+Method-returnType:Symbol
+Method-parameters:[Function symbol, TransactionContext txnCtx]
+MethodInvocation:get
+MethodInvocation:arguments
+MethodInvocation:get
+MethodInvocation:arguments
+MethodInvocation:valueType
+MethodInvocation:valueType
+MethodInvocation:isValueSymbol
+MethodInvocation:symbolType
+MethodInvocation:equals
+MethodInvocation:convert
+MethodInvocation:validateType
+MethodInvocation:isValueSymbol
+MethodInvocation:symbolType
+MethodInvocation:equals
+MethodInvocation:convert
+MethodInvocation:validateType
+MethodInvocation:of
+MethodInvocation:evaluate
+MethodInvocation:asList
+MethodInvocation:asList
+Method-name:validateType
+Method-returnType:void
+Method-parameters:[Symbol symbol, DataType dataType]
+MethodInvocation:equals
+MethodInvocation:format

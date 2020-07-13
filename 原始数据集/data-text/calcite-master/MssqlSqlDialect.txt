@@ -1,0 +1,109 @@
+Class:MssqlSqlDialect
+Field:DEFAULT_CONTEXT
+MethodInvocation:withNullCollation
+MethodInvocation:withCaseSensitive
+MethodInvocation:withIdentifierQuoteString
+MethodInvocation:withDatabaseProduct
+Field:DEFAULT
+Field:MSSQL_SUBSTRING
+Field:top
+Method-name:MssqlSqlDialect
+Method-returnType:null
+Method-parameters:[Context context]
+MethodInvocation:databaseMajorVersion
+Method-name:emulateNullDirection
+Method-returnType:SqlNode
+Method-parameters:[SqlNode node, boolean nullsFirst, boolean desc]
+MethodInvocation:isDefaultOrder
+MethodInvocation:getKind
+MethodInvocation:of
+MethodInvocation:createCall
+MethodInvocation:createExactNumeric
+MethodInvocation:createExactNumeric
+MethodInvocation:createCall
+MethodInvocation:of
+MethodInvocation:createCall
+MethodInvocation:of
+Method-name:unparseOffsetFetch
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlNode offset, SqlNode fetch]
+Method-name:unparseTopN
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlNode offset, SqlNode fetch]
+MethodInvocation:keyword
+MethodInvocation:keyword
+MethodInvocation:unparse
+MethodInvocation:keyword
+Method-name:unparseDateTimeLiteral
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlAbstractDateTimeLiteral literal, int leftPrec, int rightPrec]
+MethodInvocation:literal
+MethodInvocation:toFormattedString
+Method-name:unparseCall
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlCall call, int leftPrec, int rightPrec]
+MethodInvocation:getOperator
+MethodInvocation:operandCount
+MethodInvocation:unparseFunctionSyntax
+MethodInvocation:getKind
+MethodInvocation:operandCount
+MethodInvocation:unparseFloor
+Method-name:supportsCharSet
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:supportsGroupByWithRollup
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:supportsGroupByWithCube
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:unparseFloor
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlCall call]
+MethodInvocation:operand
+MethodInvocation:getValue
+MethodInvocation:unparseFloorWithUnit
+MethodInvocation:unparseFloorWithUnit
+MethodInvocation:print
+MethodInvocation:unparse
+MethodInvocation:operand
+MethodInvocation:print
+MethodInvocation:unparse
+MethodInvocation:operand
+MethodInvocation:print
+MethodInvocation:unparseFloorWithUnit
+MethodInvocation:unparseFloorWithUnit
+MethodInvocation:unparseFloorWithUnit
+MethodInvocation:unparseFloorWithUnit
+Method-name:unparseSqlDatetimeArithmetic
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlCall call, SqlKind sqlKind, int leftPrec, int rightPrec]
+MethodInvocation:startFunCall
+MethodInvocation:operand
+MethodInvocation:unparseSqlIntervalLiteralMssql
+MethodInvocation:unparse
+MethodInvocation:sep
+MethodInvocation:unparse
+MethodInvocation:operand
+MethodInvocation:endList
+Method-name:unparseSqlIntervalQualifier
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlIntervalQualifier qualifier, RelDataTypeSystem typeSystem]
+MethodInvocation:name
+MethodInvocation:keyword
+Method-name:unparseSqlIntervalLiteral
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlIntervalLiteral literal, int leftPrec, int rightPrec]
+MethodInvocation:unparseSqlIntervalLiteralMssql
+Method-name:unparseFloorWithUnit
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlCall call, int charLen, String offset]
+MethodInvocation:print
+MethodInvocation:startList
+MethodInvocation:print
+MethodInvocation:unparse
+MethodInvocation:operand
+MethodInvocation:print
+MethodInvocation:length
+MethodInvocation:print
+MethodInvocation:endList

@@ -1,0 +1,154 @@
+Class:ListItem
+Field:openingMarker
+Field:markerSuffix
+Field:tight
+Field:hadBlankAfterItemParagraph
+Field:containsBlankLine
+Field:priority
+Method-name:ListItem
+Method-returnType:null
+Method-parameters:[]
+Method-name:ListItem
+Method-returnType:null
+Method-parameters:[ListItem other]
+FieldAccess:openingMarker
+FieldAccess:markerSuffix
+FieldAccess:tight
+FieldAccess:hadBlankAfterItemParagraph
+FieldAccess:containsBlankLine
+FieldAccess:priority
+MethodInvocation:takeChildren
+MethodInvocation:setCharsFromContent
+Method-name:ListItem
+Method-returnType:null
+Method-parameters:[BasedSequence chars]
+Method-name:ListItem
+Method-returnType:null
+Method-parameters:[BasedSequence chars, List<BasedSequence> segments]
+Method-name:ListItem
+Method-returnType:null
+Method-parameters:[BlockContent blockContent]
+Method-name:isOrderedItem
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getAstExtra
+Method-returnType:void
+Method-parameters:[@NotNull StringBuilder out]
+MethodInvocation:segmentSpanChars
+MethodInvocation:segmentSpanChars
+MethodInvocation:isTight
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:isHadBlankAfterItemParagraph
+MethodInvocation:append
+MethodInvocation:isContainsBlankLine
+MethodInvocation:append
+Method-name:getSegments
+Method-returnType:BasedSequence[]
+Method-parameters:[]
+Method-name:canChangeMarker
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getPriority
+Method-returnType:int
+Method-parameters:[]
+Method-name:setPriority
+Method-returnType:void
+Method-parameters:[int priority]
+FieldAccess:priority
+Method-name:getOpeningMarker
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setOpeningMarker
+Method-returnType:void
+Method-parameters:[BasedSequence openingMarker]
+FieldAccess:openingMarker
+Method-name:getMarkerSuffix
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setMarkerSuffix
+Method-returnType:void
+Method-parameters:[BasedSequence markerSuffix]
+Method-name:setTight
+Method-returnType:void
+Method-parameters:[boolean tight]
+FieldAccess:tight
+Method-name:setLoose
+Method-returnType:void
+Method-parameters:[boolean loose]
+FieldAccess:tight
+Method-name:isTight
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isInTightList
+Method-name:isOwnTight
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isLoose
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isTight
+Method-name:isParagraphEndWrappingDisabled
+Method-returnType:boolean
+Method-parameters:[Paragraph node]
+MethodInvocation:getFirstChild
+MethodInvocation:getLastChild
+MethodInvocation:getFirstChild
+MethodInvocation:getParent
+MethodInvocation:getLastChildAny
+MethodInvocation:getParent
+Method-name:isParagraphStartWrappingDisabled
+Method-returnType:boolean
+Method-parameters:[Paragraph node]
+MethodInvocation:isItemParagraph
+Method-name:isParagraphInTightListItem
+Method-returnType:boolean
+Method-parameters:[Paragraph node]
+MethodInvocation:isTight
+MethodInvocation:isItemParagraph
+Method-name:isItemParagraph
+Method-returnType:boolean
+Method-parameters:[Paragraph node]
+MethodInvocation:getFirstChild
+MethodInvocation:getNext
+Method-name:isParagraphWrappingDisabled
+Method-returnType:boolean
+Method-parameters:[Paragraph node, ListOptions listOptions, DataHolder options]
+Method-name:isInTightList
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getParent
+MethodInvocation:isTight
+MethodInvocation:getParent
+Method-name:isHadBlankAfterItemParagraph
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isContainsBlankLine
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setContainsBlankLine
+Method-returnType:void
+Method-parameters:[boolean containsBlankLine]
+FieldAccess:containsBlankLine
+Method-name:setHadBlankAfterItemParagraph
+Method-returnType:void
+Method-parameters:[boolean hadBlankAfterItemParagraph]
+FieldAccess:hadBlankAfterItemParagraph
+Method-name:getLastBlankLineChild
+Method-returnType:Node
+Method-parameters:[]
+MethodInvocation:getLastChild
+Method-name:isTightListItem
+Method-returnType:boolean
+Method-parameters:[ListOptions options]
+MethodInvocation:isLoose
+MethodInvocation:isAutoLoose
+MethodInvocation:isAutoLooseOneLevelLists
+MethodInvocation:getAncestorOfType
+MethodInvocation:getChildOfType
+MethodInvocation:getFirstChild
+MethodInvocation:isTight
+MethodInvocation:isInTightList
+MethodInvocation:getFirstChild
+MethodInvocation:isTight
+MethodInvocation:isInTightList

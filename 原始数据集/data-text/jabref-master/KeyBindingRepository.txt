@@ -1,0 +1,112 @@
+Class:KeyBindingRepository
+Field:LOGGER
+MethodInvocation:getLogger
+Field:bindings
+Field:shortcutMask
+Method-name:KeyBindingRepository
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:emptyList
+MethodInvocation:emptyList
+Method-name:KeyBindingRepository
+Method-returnType:null
+Method-parameters:[List<String> bindNames, List<String> bindings]
+FieldAccess:bindings
+MethodInvocation:comparing
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:values
+MethodInvocation:put
+MethodInvocation:getDefaultKeyBinding
+MethodInvocation:size
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:get
+Method-name:checkKeyCombinationEquality
+Method-returnType:boolean
+Method-parameters:[KeyCombination combination, KeyEvent keyEvent]
+MethodInvocation:getCode
+MethodInvocation:match
+Method-name:get
+Method-returnType:Optional<String>
+Method-parameters:[KeyBinding key]
+MethodInvocation:ofNullable
+MethodInvocation:get
+Method-name:get
+Method-returnType:String
+Method-parameters:[String key]
+MethodInvocation:getKeyBinding
+MethodInvocation:flatMap
+MethodInvocation:ofNullable
+MethodInvocation:get
+MethodInvocation:isPresent
+MethodInvocation:get
+MethodInvocation:isPresent
+MethodInvocation:getDefaultKeyBinding
+MethodInvocation:get
+Method-name:getKeyBindings
+Method-returnType:SortedMap<KeyBinding,String>
+Method-parameters:[]
+Method-name:put
+Method-returnType:void
+Method-parameters:[KeyBinding key, String value]
+MethodInvocation:put
+Method-name:put
+Method-returnType:void
+Method-parameters:[String key, String value]
+MethodInvocation:ifPresent
+MethodInvocation:getKeyBinding
+MethodInvocation:put
+Method-name:getKeyBinding
+Method-returnType:Optional<KeyBinding>
+Method-parameters:[String key]
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:values
+MethodInvocation:equals
+MethodInvocation:getConstant
+Method-name:resetToDefault
+Method-returnType:void
+Method-parameters:[String key]
+MethodInvocation:ifPresent
+MethodInvocation:getKeyBinding
+MethodInvocation:put
+MethodInvocation:getDefaultKeyBinding
+Method-name:resetToDefault
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:forEach
+MethodInvocation:put
+MethodInvocation:getDefaultKeyBinding
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:bindings
+Method-name:mapToKeyBinding
+Method-returnType:Optional<KeyBinding>
+Method-parameters:[KeyEvent keyEvent]
+MethodInvocation:values
+MethodInvocation:checkKeyCombinationEquality
+MethodInvocation:of
+MethodInvocation:empty
+Method-name:checkKeyCombinationEquality
+Method-returnType:boolean
+Method-parameters:[KeyBinding binding, KeyEvent keyEvent]
+MethodInvocation:getKeyCombination
+MethodInvocation:checkKeyCombinationEquality
+Method-name:getBindNames
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:keySet
+MethodInvocation:toList
+Method-name:getBindings
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:values

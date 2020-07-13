@@ -1,0 +1,60 @@
+Class:NioServer
+Field:selector
+Field:serverSocketChannel
+Method-name:NioServer
+Method-returnType:null
+Method-parameters:[int port]
+MethodInvocation:init
+Method-name:init
+Method-returnType:NioServer
+Method-parameters:[InetSocketAddress address]
+FieldAccess:serverSocketChannel
+MethodInvocation:open
+MethodInvocation:configureBlocking
+MethodInvocation:socket
+MethodInvocation:bind
+MethodInvocation:open
+MethodInvocation:register
+Method-name:listen
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:doListen
+Method-name:doListen
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:select
+FieldAccess:selector
+MethodInvocation:iterator
+MethodInvocation:selectedKeys
+MethodInvocation:hasNext
+MethodInvocation:handle
+MethodInvocation:next
+MethodInvocation:remove
+Method-name:handle
+Method-returnType:void
+Method-parameters:[SelectionKey key]
+MethodInvocation:isAcceptable
+MethodInvocation:channel
+MethodInvocation:accept
+MethodInvocation:registerChannel
+MethodInvocation:isReadable
+MethodInvocation:channel
+MethodInvocation:read
+MethodInvocation:registerChannel
+MethodInvocation:isWritable
+MethodInvocation:channel
+MethodInvocation:write
+MethodInvocation:registerChannel
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+FieldAccess:selector
+MethodInvocation:close
+FieldAccess:serverSocketChannel
+Method-name:read
+Method-returnType:void
+Method-parameters:[SocketChannel socketChannel]
+Method-name:write
+Method-returnType:void
+Method-parameters:[SocketChannel socketChannel]

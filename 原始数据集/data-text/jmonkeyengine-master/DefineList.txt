@@ -1,0 +1,87 @@
+Class:DefineList
+Field:MAX_DEFINES
+Field:isSet
+Field:values
+Method-name:DefineList
+Method-returnType:null
+Method-parameters:[int numValues]
+Method-name:DefineList
+Method-returnType:null
+Method-parameters:[DefineList original]
+FieldAccess:isSet
+FieldAccess:values
+MethodInvocation:arraycopy
+Method-name:rangeCheck
+Method-returnType:void
+Method-parameters:[int id]
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[int id]
+MethodInvocation:rangeCheck
+Method-name:unset
+Method-returnType:void
+Method-parameters:[int id]
+MethodInvocation:rangeCheck
+Method-name:set
+Method-returnType:void
+Method-parameters:[int id, int val]
+MethodInvocation:rangeCheck
+Method-name:set
+Method-returnType:void
+Method-parameters:[int id, float val]
+MethodInvocation:set
+MethodInvocation:floatToIntBits
+Method-name:set
+Method-returnType:void
+Method-parameters:[int id, boolean val]
+MethodInvocation:set
+MethodInvocation:unset
+Method-name:setAll
+Method-returnType:void
+Method-parameters:[DefineList other]
+MethodInvocation:isSet
+MethodInvocation:set
+MethodInvocation:getInt
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:fill
+Method-name:getBoolean
+Method-returnType:boolean
+Method-parameters:[int id]
+Method-name:getFloat
+Method-returnType:float
+Method-parameters:[int id]
+MethodInvocation:intBitsToFloat
+Method-name:getInt
+Method-returnType:int
+Method-parameters:[int id]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+Method-name:deepClone
+Method-returnType:DefineList
+Method-parameters:[]
+Method-name:generateSource
+Method-returnType:void
+Method-parameters:[StringBuilder sb, List<String> defineNames, List<VarType> defineTypes]
+MethodInvocation:isSet
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:intBitsToFloat
+MethodInvocation:isInfinite
+MethodInvocation:isNaN
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+Method-name:generateSource
+Method-returnType:String
+Method-parameters:[List<String> defineNames, List<VarType> defineTypes]
+MethodInvocation:generateSource
+MethodInvocation:toString

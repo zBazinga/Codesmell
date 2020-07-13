@@ -1,0 +1,176 @@
+Class:GroupTreeNode
+Field:PATH_DELEMITER
+Field:group
+Method-name:GroupTreeNode
+Method-returnType:null
+Method-parameters:[AbstractGroup group]
+FieldAccess:group
+MethodInvocation:requireNonNull
+Method-name:fromGroup
+Method-returnType:GroupTreeNode
+Method-parameters:[AbstractGroup group]
+Method-name:getGroup
+Method-returnType:AbstractGroup
+Method-parameters:[]
+Method-name:setGroup
+Method-returnType:void
+Method-parameters:[AbstractGroup newGroup]
+FieldAccess:group
+MethodInvocation:requireNonNull
+Method-name:setGroup
+Method-returnType:List<FieldChange>
+Method-parameters:[AbstractGroup newGroup, boolean shouldKeepPreviousAssignments, boolean shouldRemovePreviousAssignments, List<BibEntry> entriesInDatabase]
+MethodInvocation:getGroup
+MethodInvocation:setGroup
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:toList
+MethodInvocation:addAll
+MethodInvocation:remove
+MethodInvocation:addAll
+MethodInvocation:add
+Method-name:getSearchMatcher
+Method-returnType:SearchMatcher
+Method-parameters:[]
+MethodInvocation:getSearchMatcher
+MethodInvocation:getHierarchicalContext
+Method-name:getSearchMatcher
+Method-returnType:SearchMatcher
+Method-parameters:[GroupHierarchyType originalContext]
+MethodInvocation:getHierarchicalContext
+MethodInvocation:build
+MethodInvocation:addRule
+MethodInvocation:getChildren
+MethodInvocation:addRule
+MethodInvocation:getSearchMatcher
+MethodInvocation:isRoot
+MethodInvocation:addRule
+MethodInvocation:getSearchMatcher
+MethodInvocation:get
+MethodInvocation:getParent
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:getChildren
+MethodInvocation:getChildren
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:getContainingGroups
+Method-returnType:List<GroupTreeNode>
+Method-parameters:[List<BibEntry> entries, boolean requireAll]
+MethodInvocation:containsAll
+FieldAccess:group
+MethodInvocation:add
+MethodInvocation:containsAny
+FieldAccess:group
+MethodInvocation:add
+MethodInvocation:getChildren
+MethodInvocation:addAll
+MethodInvocation:getContainingGroups
+Method-name:getMatchingGroups
+Method-returnType:List<GroupTreeNode>
+Method-parameters:[BibEntry entry]
+MethodInvocation:getMatchingGroups
+MethodInvocation:singletonList
+Method-name:getMatchingGroups
+Method-returnType:List<GroupTreeNode>
+Method-parameters:[List<BibEntry> entries]
+MethodInvocation:getSearchMatcher
+MethodInvocation:isMatch
+MethodInvocation:add
+MethodInvocation:getChildren
+MethodInvocation:addAll
+MethodInvocation:getMatchingGroups
+Method-name:getEntriesInGroup
+Method-returnType:List<BibEntry>
+Method-parameters:[List<BibEntry> entries]
+MethodInvocation:contains
+FieldAccess:group
+MethodInvocation:add
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:addSubgroup
+Method-returnType:GroupTreeNode
+Method-parameters:[AbstractGroup subgroup]
+MethodInvocation:fromGroup
+MethodInvocation:addChild
+Method-name:copyNode
+Method-returnType:GroupTreeNode
+Method-parameters:[]
+MethodInvocation:fromGroup
+Method-name:findMatches
+Method-returnType:List<BibEntry>
+Method-parameters:[List<BibEntry> entries]
+MethodInvocation:getSearchMatcher
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:toList
+Method-name:findMatches
+Method-returnType:List<BibEntry>
+Method-parameters:[BibDatabase database]
+MethodInvocation:findMatches
+MethodInvocation:getEntries
+Method-name:matches
+Method-returnType:boolean
+Method-parameters:[BibEntry entry]
+MethodInvocation:isMatch
+MethodInvocation:getSearchMatcher
+Method-name:getPath
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:skip
+MethodInvocation:stream
+MethodInvocation:getPathFromRoot
+MethodInvocation:joining
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getChildByPath
+Method-returnType:Optional<GroupTreeNode>
+Method-parameters:[String pathToSource]
+MethodInvocation:split
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getChildren
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:isPresent
+MethodInvocation:get
+MethodInvocation:empty
+MethodInvocation:of
+Method-name:addEntriesToGroup
+Method-returnType:List<FieldChange>
+Method-parameters:[Collection<BibEntry> entries]
+MethodInvocation:getGroup
+MethodInvocation:add
+MethodInvocation:getGroup
+MethodInvocation:emptyList
+Method-name:removeEntriesFromGroup
+Method-returnType:List<FieldChange>
+Method-parameters:[List<BibEntry> entries]
+MethodInvocation:getGroup
+MethodInvocation:remove
+MethodInvocation:getGroup
+MethodInvocation:emptyList
+Method-name:isSameGroupAs
+Method-returnType:boolean
+Method-parameters:[GroupTreeNode other]
+MethodInvocation:equals
+Method-name:moveToOther
+Method-returnType:void
+Method-parameters:[int targetIndex, GroupNodeViewModel groupNodeViewModel]
+MethodInvocation:moveTo
+MethodInvocation:getGroupNode

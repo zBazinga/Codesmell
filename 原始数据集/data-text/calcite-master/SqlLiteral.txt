@@ -1,0 +1,278 @@
+Class:SqlLiteral
+Field:typeName
+Field:value
+Method-name:SqlLiteral
+Method-returnType:null
+Method-parameters:[Object value, SqlTypeName typeName, SqlParserPos pos]
+Method-name:getTypeName
+Method-returnType:SqlTypeName
+Method-parameters:[]
+Method-name:valueMatchesType
+Method-returnType:boolean
+Method-parameters:[Object value, SqlTypeName typeName]
+MethodInvocation:unexpected
+Method-name:clone
+Method-returnType:SqlLiteral
+Method-parameters:[SqlParserPos pos]
+Method-name:getKind
+Method-returnType:SqlKind
+Method-parameters:[]
+Method-name:getValue
+Method-returnType:Object
+Method-parameters:[]
+Method-name:getValueAs
+Method-returnType:T
+Method-parameters:[Class<T> clazz]
+MethodInvocation:isInstance
+MethodInvocation:cast
+MethodInvocation:cast
+MethodInvocation:getValue
+MethodInvocation:cast
+MethodInvocation:getAsByteArray
+MethodInvocation:cast
+MethodInvocation:longValue
+MethodInvocation:unscaledValue
+MethodInvocation:cast
+MethodInvocation:longValue
+MethodInvocation:cast
+MethodInvocation:intValue
+MethodInvocation:cast
+MethodInvocation:shortValue
+MethodInvocation:cast
+MethodInvocation:byteValue
+MethodInvocation:cast
+MethodInvocation:doubleValue
+MethodInvocation:cast
+MethodInvocation:floatValue
+MethodInvocation:cast
+MethodInvocation:toCalendar
+MethodInvocation:cast
+MethodInvocation:toCalendar
+MethodInvocation:cast
+MethodInvocation:toCalendar
+MethodInvocation:cast
+MethodInvocation:getSign
+MethodInvocation:intervalToMonths
+MethodInvocation:cast
+MethodInvocation:valueOf
+MethodInvocation:getValueAs
+MethodInvocation:cast
+FieldAccess:timeUnitRange
+MethodInvocation:getIntervalQualifier
+MethodInvocation:cast
+MethodInvocation:getSign
+MethodInvocation:intervalToMillis
+MethodInvocation:cast
+MethodInvocation:valueOf
+MethodInvocation:getValueAs
+MethodInvocation:cast
+FieldAccess:timeUnitRange
+MethodInvocation:getIntervalQualifier
+Method-name:symbolValue_
+Method-returnType:E
+Method-parameters:[]
+Method-name:symbolValue
+Method-returnType:E
+Method-parameters:[Class<E> class_]
+MethodInvocation:cast
+Method-name:booleanValue
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:sampleValue
+Method-returnType:SqlSampleSpec
+Method-parameters:[SqlNode node]
+FieldAccess:value
+Method-name:value
+Method-returnType:Comparable
+Method-parameters:[SqlNode node]
+Method-name:stringValue
+Method-returnType:String
+Method-parameters:[SqlNode node]
+Method-name:unchain
+Method-returnType:SqlLiteral
+Method-parameters:[SqlNode node]
+MethodInvocation:isLiteralChain
+MethodInvocation:concatenateOperands
+MethodInvocation:toString
+MethodInvocation:typeName
+Method-name:toValue
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getValue
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope]
+MethodInvocation:validateLiteral
+Method-name:accept
+Method-returnType:R
+Method-parameters:[SqlVisitor<R> visitor]
+MethodInvocation:visit
+Method-name:equalsDeep
+Method-returnType:boolean
+Method-parameters:[SqlNode node, Litmus litmus]
+MethodInvocation:fail
+MethodInvocation:equals
+MethodInvocation:fail
+MethodInvocation:succeed
+Method-name:getMonotonicity
+Method-returnType:SqlMonotonicity
+Method-parameters:[SqlValidatorScope scope]
+Method-name:createNull
+Method-returnType:SqlLiteral
+Method-parameters:[SqlParserPos pos]
+Method-name:createBoolean
+Method-returnType:SqlLiteral
+Method-parameters:[boolean b, SqlParserPos pos]
+Method-name:createUnknown
+Method-returnType:SqlLiteral
+Method-parameters:[SqlParserPos pos]
+Method-name:createSymbol
+Method-returnType:SqlLiteral
+Method-parameters:[Enum<?> o, SqlParserPos pos]
+Method-name:createSample
+Method-returnType:SqlLiteral
+Method-parameters:[SqlSampleSpec sampleSpec, SqlParserPos pos]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:intValue
+Method-returnType:int
+Method-parameters:[boolean exact]
+MethodInvocation:intValueExact
+MethodInvocation:newContextException
+MethodInvocation:getParserPosition
+MethodInvocation:numberLiteralOutOfRange
+MethodInvocation:toString
+MethodInvocation:intValue
+MethodInvocation:unexpected
+Method-name:longValue
+Method-returnType:long
+Method-parameters:[boolean exact]
+MethodInvocation:longValueExact
+MethodInvocation:newContextException
+MethodInvocation:getParserPosition
+MethodInvocation:numberLiteralOutOfRange
+MethodInvocation:toString
+MethodInvocation:longValue
+MethodInvocation:unexpected
+Method-name:signum
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:compareTo
+MethodInvocation:bigDecimalValue
+Method-name:bigDecimalValue
+Method-returnType:BigDecimal
+Method-parameters:[]
+MethodInvocation:unexpected
+Method-name:getStringValue
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getValue
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, int leftPrec, int rightPrec]
+MethodInvocation:keyword
+MethodInvocation:keyword
+MethodInvocation:unexpected
+MethodInvocation:keyword
+MethodInvocation:toString
+MethodInvocation:keyword
+MethodInvocation:valueOf
+MethodInvocation:literal
+MethodInvocation:toString
+Method-name:createSqlType
+Method-returnType:RelDataType
+Method-parameters:[RelDataTypeFactory typeFactory]
+MethodInvocation:createSqlType
+MethodInvocation:createTypeWithNullability
+MethodInvocation:getBitCount
+MethodInvocation:createSqlType
+MethodInvocation:getCharset
+MethodInvocation:getDefaultCharset
+MethodInvocation:getCollation
+MethodInvocation:createSqlType
+MethodInvocation:length
+MethodInvocation:getValue
+MethodInvocation:createTypeWithCharsetAndCollation
+MethodInvocation:createSqlIntervalType
+MethodInvocation:getIntervalQualifier
+MethodInvocation:createSqlType
+MethodInvocation:needToImplement
+MethodInvocation:toString
+Method-name:createDate
+Method-returnType:SqlDateLiteral
+Method-parameters:[Calendar calendar, SqlParserPos pos]
+MethodInvocation:createDate
+MethodInvocation:fromCalendarFields
+Method-name:createDate
+Method-returnType:SqlDateLiteral
+Method-parameters:[DateString date, SqlParserPos pos]
+Method-name:createTimestamp
+Method-returnType:SqlTimestampLiteral
+Method-parameters:[Calendar calendar, int precision, SqlParserPos pos]
+MethodInvocation:createTimestamp
+MethodInvocation:fromCalendarFields
+Method-name:createTimestamp
+Method-returnType:SqlTimestampLiteral
+Method-parameters:[TimestampString ts, int precision, SqlParserPos pos]
+Method-name:createTime
+Method-returnType:SqlTimeLiteral
+Method-parameters:[Calendar calendar, int precision, SqlParserPos pos]
+MethodInvocation:createTime
+MethodInvocation:fromCalendarFields
+Method-name:createTime
+Method-returnType:SqlTimeLiteral
+Method-parameters:[TimeString t, int precision, SqlParserPos pos]
+Method-name:createInterval
+Method-returnType:SqlIntervalLiteral
+Method-parameters:[int sign, String intervalStr, SqlIntervalQualifier intervalQualifier, SqlParserPos pos]
+MethodInvocation:typeName
+Method-name:createNegative
+Method-returnType:SqlNumericLiteral
+Method-parameters:[SqlNumericLiteral num, SqlParserPos pos]
+MethodInvocation:negate
+MethodInvocation:getValue
+MethodInvocation:getPrec
+MethodInvocation:getScale
+MethodInvocation:isExact
+Method-name:createExactNumeric
+Method-returnType:SqlNumericLiteral
+Method-parameters:[String s, SqlParserPos pos]
+Method-name:createApproxNumeric
+Method-returnType:SqlNumericLiteral
+Method-parameters:[String s, SqlParserPos pos]
+MethodInvocation:parseDecimal
+Method-name:createBinaryString
+Method-returnType:SqlBinaryStringLiteral
+Method-parameters:[String s, SqlParserPos pos]
+MethodInvocation:createFromHexString
+MethodInvocation:newContextException
+MethodInvocation:binaryLiteralInvalid
+Method-name:createBinaryString
+Method-returnType:SqlBinaryStringLiteral
+Method-parameters:[byte[] bytes, SqlParserPos pos]
+MethodInvocation:createFromBytes
+MethodInvocation:newContextException
+MethodInvocation:binaryLiteralInvalid
+Method-name:createCharString
+Method-returnType:SqlCharStringLiteral
+Method-parameters:[String s, SqlParserPos pos]
+MethodInvocation:createCharString
+Method-name:createCharString
+Method-returnType:SqlCharStringLiteral
+Method-parameters:[String s, String charSet, SqlParserPos pos]
+Method-name:unescapeUnicode
+Method-returnType:SqlLiteral
+Method-parameters:[char unicodeEscapeChar]
+Method-name:name
+Method-returnType:String
+Method-parameters:[]
+Method-name:ordinal
+Method-returnType:int
+Method-parameters:[]

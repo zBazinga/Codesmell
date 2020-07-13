@@ -1,0 +1,52 @@
+Class:JsonContent
+Field:LOG
+MethodInvocation:getLogger
+Field:rawContent
+Field:jsonNode
+Method-name:JsonContent
+Method-returnType:null
+Method-parameters:[byte[] rawJsonContent, SdkJsonNode jsonNode]
+FieldAccess:rawContent
+FieldAccess:jsonNode
+Method-name:JsonContent
+Method-returnType:null
+Method-parameters:[byte[] rawJsonContent, JsonFactory jsonFactory]
+FieldAccess:rawContent
+FieldAccess:jsonNode
+MethodInvocation:parseJsonContent
+Method-name:createJsonContent
+Method-returnType:JsonContent
+Method-parameters:[SdkHttpFullResponse httpResponse, JsonFactory jsonFactory]
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:content
+MethodInvocation:toByteArray
+MethodInvocation:debug
+Method-name:parseJsonContent
+Method-returnType:SdkJsonNode
+Method-parameters:[byte[] rawJsonContent, JsonFactory jsonFactory]
+MethodInvocation:emptyObject
+MethodInvocation:create
+MethodInvocation:parse
+MethodInvocation:debug
+MethodInvocation:emptyObject
+Method-name:getRawContent
+Method-returnType:byte[]
+Method-parameters:[]
+Method-name:getJsonNode
+Method-returnType:SdkJsonNode
+Method-parameters:[]
+Method-name:extractAwsErrorDetails
+Method-returnType:AwsErrorDetails
+Method-parameters:[SdkHttpFullResponse response, ExecutionAttributes executionAttributes, String errorCode, String errorMessage, AwsJsonProtocolErrorUnmarshaller awsJsonProtocolErrorUnmarshaller]
+MethodInvocation:sdkHttpResponse
+MethodInvocation:serviceName
+MethodInvocation:errorCode
+MethodInvocation:builder
+MethodInvocation:getAttribute
+MethodInvocation:getRawContent
+MethodInvocation:rawResponse
+MethodInvocation:fromByteArray
+MethodInvocation:getRawContent
+MethodInvocation:errorMessage
+MethodInvocation:build

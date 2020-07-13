@@ -1,0 +1,255 @@
+Class:TransitRegionStateProcedure
+Field:LOG
+MethodInvocation:getLogger
+Field:type
+Field:initialState
+Field:lastState
+Field:assignCandidate
+Field:forceNewPlan
+Field:retryCounter
+Field:remoteProc
+Method-name:TransitRegionStateProcedure
+Method-returnType:null
+Method-parameters:[]
+Method-name:setInitalAndLastState
+Method-returnType:void
+Method-parameters:[]
+Method-name:TransitRegionStateProcedure
+Method-returnType:null
+Method-parameters:[MasterProcedureEnv env, RegionInfo hri, ServerName assignCandidate, boolean forceNewPlan, TransitionType type]
+FieldAccess:assignCandidate
+FieldAccess:forceNewPlan
+FieldAccess:type
+MethodInvocation:setInitalAndLastState
+Method-name:getTableOperationType
+Method-returnType:TableOperationType
+Method-parameters:[]
+Method-name:waitInitialized
+Method-returnType:boolean
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:isMetaTableName
+MethodInvocation:getTableName
+MethodInvocation:getAssignmentManager
+MethodInvocation:waitMetaLoaded
+MethodInvocation:waitMetaAssigned
+MethodInvocation:getRegion
+Method-name:queueAssign
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode]
+MethodInvocation:equals
+MethodInvocation:getLastHost
+MethodInvocation:setRegionLocation
+MethodInvocation:getLastHost
+MethodInvocation:info
+MethodInvocation:getLastHost
+MethodInvocation:setRegionLocation
+MethodInvocation:getLastHost
+MethodInvocation:info
+MethodInvocation:toShortString
+MethodInvocation:queueAssign
+MethodInvocation:getAssignmentManager
+MethodInvocation:setNextState
+MethodInvocation:suspendIfNotReady
+MethodInvocation:getProcedureEvent
+Method-name:openRegion
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode]
+MethodInvocation:getRegionLocation
+MethodInvocation:warn
+MethodInvocation:getRegion
+MethodInvocation:setNextState
+MethodInvocation:regionOpening
+MethodInvocation:getAssignmentManager
+MethodInvocation:addChildProcedure
+MethodInvocation:getRegion
+MethodInvocation:setNextState
+Method-name:confirmOpened
+Method-returnType:Flow
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode]
+MethodInvocation:isInState
+MethodInvocation:unsetProcedure
+MethodInvocation:updateProgress
+MethodInvocation:getParentProcId
+MethodInvocation:setNextState
+MethodInvocation:incrementAndGetRetries
+MethodInvocation:addToFailedOpen
+MethodInvocation:getRegionStates
+MethodInvocation:getAssignmentManager
+MethodInvocation:getAssignMaxAttempts
+MethodInvocation:getAssignmentManager
+MethodInvocation:info
+MethodInvocation:toShortString
+MethodInvocation:regionFailedOpen
+MethodInvocation:getAssignmentManager
+MethodInvocation:setFailure
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getAssignMaxAttempts
+MethodInvocation:getAssignmentManager
+MethodInvocation:unsetProcedure
+MethodInvocation:regionFailedOpen
+MethodInvocation:getAssignmentManager
+MethodInvocation:setRegionLocation
+MethodInvocation:setNextState
+MethodInvocation:getAssignRetryImmediatelyMaxAttempts
+MethodInvocation:getAssignmentManager
+Method-name:closeRegion
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode]
+MethodInvocation:isInState
+MethodInvocation:regionClosing
+MethodInvocation:getAssignmentManager
+MethodInvocation:addChildProcedure
+MethodInvocation:getRegion
+MethodInvocation:getRegionLocation
+MethodInvocation:setNextState
+MethodInvocation:setRegionLocation
+MethodInvocation:setNextState
+Method-name:confirmClosed
+Method-returnType:Flow
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode]
+Method-name:execute
+Method-returnType:Procedure[]
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:getOrCreateRegionStateNode
+MethodInvocation:getRegionStates
+MethodInvocation:getAssignmentManager
+MethodInvocation:getRegion
+MethodInvocation:lock
+MethodInvocation:unlock
+Method-name:getRegionStateNode
+Method-returnType:RegionStateNode
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:getOrCreateRegionStateNode
+MethodInvocation:getRegionStates
+MethodInvocation:getAssignmentManager
+MethodInvocation:getRegion
+Method-name:executeFromState
+Method-returnType:Flow
+Method-parameters:[MasterProcedureEnv env, RegionStateTransitionState state]
+MethodInvocation:getRegionStateNode
+MethodInvocation:queueAssign
+MethodInvocation:openRegion
+MethodInvocation:confirmOpened
+MethodInvocation:closeRegion
+MethodInvocation:confirmClosed
+MethodInvocation:createRetryCounter
+MethodInvocation:getMasterConfiguration
+MethodInvocation:getBackoffTimeAndIncrementAttempts
+MethodInvocation:warn
+MethodInvocation:toShortString
+MethodInvocation:setTimeout
+MethodInvocation:toIntExact
+MethodInvocation:setState
+MethodInvocation:skipPersistence
+Method-name:setTimeoutFailure
+Method-returnType:boolean
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:setState
+MethodInvocation:addFront
+MethodInvocation:getProcedureScheduler
+Method-name:reportTransition
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode, ServerName serverName, TransitionCode code, long seqId, long procId]
+MethodInvocation:warn
+MethodInvocation:getProcId
+MethodInvocation:warn
+MethodInvocation:getProcId
+MethodInvocation:reportTransition
+Method-name:serverCrashed
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode, ServerName serverName]
+MethodInvocation:serverCrashed
+MethodInvocation:regionClosedAbnormally
+MethodInvocation:getAssignmentManager
+Method-name:attachRemoteProc
+Method-returnType:void
+Method-parameters:[RegionRemoteProcedureBase proc]
+FieldAccess:remoteProc
+Method-name:unattachRemoteProc
+Method-returnType:void
+Method-parameters:[RegionRemoteProcedureBase proc]
+Method-name:stateLoaded
+Method-returnType:void
+Method-parameters:[AssignmentManager am, RegionStateNode regionNode]
+MethodInvocation:stateLoaded
+Method-name:rollbackState
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, RegionStateTransitionState state]
+Method-name:getState
+Method-returnType:RegionStateTransitionState
+Method-parameters:[int stateId]
+MethodInvocation:forNumber
+Method-name:getStateId
+Method-returnType:int
+Method-parameters:[RegionStateTransitionState state]
+MethodInvocation:getNumber
+Method-name:getInitialState
+Method-returnType:RegionStateTransitionState
+Method-parameters:[]
+Method-name:convert
+Method-returnType:TransitionType
+Method-parameters:[RegionTransitionType type]
+Method-name:convert
+Method-returnType:RegionTransitionType
+Method-parameters:[TransitionType type]
+Method-name:serializeStateData
+Method-returnType:void
+Method-parameters:[ProcedureStateSerializer serializer]
+MethodInvocation:setForceNewPlan
+MethodInvocation:setType
+MethodInvocation:newBuilder
+MethodInvocation:convert
+MethodInvocation:setAssignCandidate
+MethodInvocation:toServerName
+MethodInvocation:serialize
+MethodInvocation:build
+Method-name:deserializeStateData
+Method-returnType:void
+Method-parameters:[ProcedureStateSerializer serializer]
+MethodInvocation:deserialize
+MethodInvocation:convert
+MethodInvocation:getType
+MethodInvocation:setInitalAndLastState
+MethodInvocation:getForceNewPlan
+MethodInvocation:hasAssignCandidate
+MethodInvocation:toServerName
+MethodInvocation:getAssignCandidate
+Method-name:getProcedureMetrics
+Method-returnType:ProcedureMetrics
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:getAssignmentManagerMetrics
+MethodInvocation:getAssignmentManager
+MethodInvocation:getAssignProcMetrics
+MethodInvocation:getUnassignProcMetrics
+MethodInvocation:getMoveProcMetrics
+MethodInvocation:getReopenProcMetrics
+Method-name:toStringClassDetails
+Method-returnType:void
+Method-parameters:[StringBuilder sb]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+Method-name:setOwner
+Method-returnType:TransitRegionStateProcedure
+Method-parameters:[MasterProcedureEnv env, TransitRegionStateProcedure proc]
+MethodInvocation:setOwner
+MethodInvocation:getShortName
+MethodInvocation:getRequestUser
+Field:TransitionType
+Method-name:assign
+Method-returnType:TransitRegionStateProcedure
+Method-parameters:[MasterProcedureEnv env, RegionInfo region, @Nullable ServerName targetServer]
+MethodInvocation:setOwner
+Method-name:unassign
+Method-returnType:TransitRegionStateProcedure
+Method-parameters:[MasterProcedureEnv env, RegionInfo region]
+MethodInvocation:setOwner
+Method-name:reopen
+Method-returnType:TransitRegionStateProcedure
+Method-parameters:[MasterProcedureEnv env, RegionInfo region]
+MethodInvocation:setOwner
+Method-name:move
+Method-returnType:TransitRegionStateProcedure
+Method-parameters:[MasterProcedureEnv env, RegionInfo region, @Nullable ServerName targetServer]
+MethodInvocation:setOwner

@@ -1,0 +1,126 @@
+Class:LightProbe
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:FALLBACK_MATRIX
+Field:shCoeffs
+Field:prefilteredEnvMap
+Field:area
+Field:ready
+Field:position
+Field:nbMipMaps
+Field:AreaType
+Method-name:LightProbe
+Method-returnType:null
+Method-parameters:[]
+Method-name:getPrefilteredEnvMap
+Method-returnType:TextureCubeMap
+Method-parameters:[]
+Method-name:setPrefilteredMap
+Method-returnType:void
+Method-parameters:[TextureCubeMap prefileteredEnvMap]
+FieldAccess:prefilteredEnvMap
+Method-name:getUniformMatrix
+Method-returnType:Matrix4f
+Method-parameters:[]
+MethodInvocation:getUniformMatrix
+MethodInvocation:getRadius
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter ex]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter im]
+MethodInvocation:getCapsule
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+MethodInvocation:getCenter
+MethodInvocation:getRadius
+MethodInvocation:setCenter
+MethodInvocation:readInt
+MethodInvocation:readBoolean
+MethodInvocation:readSavableArray
+MethodInvocation:log
+Method-name:getBounds
+Method-returnType:BoundingVolume
+Method-parameters:[]
+MethodInvocation:getRadius
+MethodInvocation:getCenter
+Method-name:setBounds
+Method-returnType:void
+Method-parameters:[BoundingVolume bounds]
+Method-name:getArea
+Method-returnType:ProbeArea
+Method-parameters:[]
+Method-name:setAreaType
+Method-returnType:void
+Method-parameters:[AreaType type]
+MethodInvocation:setCenter
+Method-name:getAreaType
+Method-returnType:AreaType
+Method-parameters:[]
+Method-name:isReady
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setReady
+Method-returnType:void
+Method-parameters:[boolean ready]
+FieldAccess:ready
+Method-name:getShCoeffs
+Method-returnType:Vector3f[]
+Method-parameters:[]
+Method-name:setShCoeffs
+Method-returnType:void
+Method-parameters:[Vector3f[] shCoeffs]
+FieldAccess:shCoeffs
+Method-name:getPosition
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:setPosition
+Method-returnType:void
+Method-parameters:[Vector3f position]
+MethodInvocation:set
+FieldAccess:position
+MethodInvocation:setCenter
+Method-name:getNbMipMaps
+Method-returnType:int
+Method-parameters:[]
+Method-name:setNbMipMaps
+Method-returnType:void
+Method-parameters:[int nbMipMaps]
+FieldAccess:nbMipMaps
+Method-name:intersectsBox
+Method-returnType:boolean
+Method-parameters:[BoundingBox box, TempVars vars]
+MethodInvocation:intersectsBox
+Method-name:intersectsFrustum
+Method-returnType:boolean
+Method-parameters:[Camera camera, TempVars vars]
+MethodInvocation:intersectsFrustum
+Method-name:intersectsSphere
+Method-returnType:boolean
+Method-parameters:[BoundingSphere sphere, TempVars vars]
+MethodInvocation:intersectsSphere
+Method-name:computeLastDistance
+Method-returnType:void
+Method-parameters:[Spatial owner]
+MethodInvocation:getWorldBound
+MethodInvocation:getWorldBound
+MethodInvocation:distanceSquaredTo
+MethodInvocation:distanceSquared
+MethodInvocation:getWorldTranslation
+Method-name:getType
+Method-returnType:Type
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

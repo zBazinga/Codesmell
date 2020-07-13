@@ -1,0 +1,131 @@
+Class:ExpressionInfo
+Field:TEXT_NOT_AVAILABLE
+Field:VALUE_NOT_AVAILABLE
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Field:region
+Field:anchor
+Field:operation
+Field:children
+Field:text
+Field:value
+Field:renderedValue
+Field:relevant
+Method-name:ExpressionInfo
+Method-returnType:null
+Method-parameters:[TextRegion region, TextPosition anchor, @Nullable String operation, List<ExpressionInfo> children]
+FieldAccess:region
+FieldAccess:anchor
+FieldAccess:operation
+FieldAccess:children
+Method-name:ExpressionInfo
+Method-returnType:null
+Method-parameters:[TextRegion region, TextPosition anchor, @Nullable String operation, ExpressionInfo... children]
+MethodInvocation:asList
+Method-name:getRegion
+Method-returnType:TextRegion
+Method-parameters:[]
+Method-name:getAnchor
+Method-returnType:TextPosition
+Method-parameters:[]
+Method-name:getOperation
+Method-returnType:String
+Method-parameters:[]
+Method-name:getChildren
+Method-returnType:List<ExpressionInfo>
+Method-parameters:[]
+Method-name:getText
+Method-returnType:String
+Method-parameters:[]
+Method-name:setText
+Method-returnType:void
+Method-parameters:[String text]
+FieldAccess:text
+Method-name:getValue
+Method-returnType:Object
+Method-parameters:[]
+Method-name:setValue
+Method-returnType:ExpressionInfo
+Method-parameters:[Object value]
+FieldAccess:value
+Method-name:getRenderedValue
+Method-returnType:String
+Method-parameters:[]
+Method-name:setRenderedValue
+Method-returnType:void
+Method-parameters:[String renderedValue]
+FieldAccess:renderedValue
+Method-name:getEffectiveRenderedValue
+Method-returnType:String
+Method-parameters:[]
+Method-name:isRelevant
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setRelevant
+Method-returnType:ExpressionInfo
+Method-parameters:[boolean relevant]
+FieldAccess:relevant
+Method-name:shiftVertically
+Method-returnType:void
+Method-parameters:[int numLines]
+MethodInvocation:shiftVertically
+MethodInvocation:shiftVertically
+Method-name:iterator
+Method-returnType:Iterator<ExpressionInfo>
+Method-parameters:[]
+MethodInvocation:collectPrefix
+MethodInvocation:iterator
+Method-name:inPrefixOrder
+Method-returnType:Iterable<ExpressionInfo>
+Method-parameters:[final boolean skipIrrelevant]
+MethodInvocation:collectPrefix
+MethodInvocation:iterator
+Method-name:inPostfixOrder
+Method-returnType:List<ExpressionInfo>
+Method-parameters:[final boolean skipIrrelevant]
+MethodInvocation:collectPostfix
+Method-name:inCustomOrder
+Method-returnType:Iterable<ExpressionInfo>
+Method-parameters:[boolean skipIrrelevant, Comparator<ExpressionInfo> comparator]
+MethodInvocation:collectPrefix
+MethodInvocation:sort
+Method-name:isEqualityComparison
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:equals
+MethodInvocation:size
+Method-name:isInstanceOfComparison
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:equals
+MethodInvocation:size
+Method-name:isEqualityComparison
+Method-returnType:boolean
+Method-parameters:[Class<?>... types]
+MethodInvocation:isEqualityComparison
+MethodInvocation:hasAnyOfTypes
+MethodInvocation:getValue
+MethodInvocation:get
+MethodInvocation:hasAnyOfTypes
+MethodInvocation:getValue
+MethodInvocation:get
+Method-name:collectPrefix
+Method-returnType:void
+Method-parameters:[List<ExpressionInfo> collector, boolean skipIrrelevant]
+MethodInvocation:isRelevant
+MethodInvocation:add
+MethodInvocation:collectPrefix
+Method-name:collectPostfix
+Method-returnType:void
+Method-parameters:[List<ExpressionInfo> collector, boolean skipIrrelevant]
+MethodInvocation:collectPostfix
+MethodInvocation:isRelevant
+MethodInvocation:add
+Method-name:getTypeHint
+Method-returnType:String
+Method-parameters:[FailedEqualityComparisonRenderer failedEqualityComparisonRenderer]
+MethodInvocation:voidAwareGetClass
+MethodInvocation:getValue
+MethodInvocation:getCanonicalName
+MethodInvocation:getName

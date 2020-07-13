@@ -1,0 +1,121 @@
+Class:ExprWalkerInfo
+Class:ExprInfo
+Field:isCandidate
+Field:alias
+Field:convertedExpr
+Field:LOG
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:op
+Field:pushdownPreds
+Field:nonFinalPreds
+Field:exprInfoMap
+Field:newToOldExprMap
+Field:isDeterministic
+Method-name:ExprWalkerInfo
+Method-returnType:null
+Method-parameters:[]
+Method-name:ExprWalkerInfo
+Method-returnType:null
+Method-parameters:[Operator<? extends OperatorDesc> op]
+FieldAccess:op
+Method-name:getOp
+Method-returnType:Operator<? extends OperatorDesc>
+Method-parameters:[]
+Method-name:getNewToOldExprMap
+Method-returnType:Map<ExprNodeDesc,ExprNodeDesc>
+Method-parameters:[]
+Method-name:getExprInfo
+Method-returnType:ExprInfo
+Method-parameters:[ExprNodeDesc expr]
+MethodInvocation:get
+Method-name:addExprInfo
+Method-returnType:ExprInfo
+Method-parameters:[ExprNodeDesc expr]
+MethodInvocation:put
+Method-name:addOrGetExprInfo
+Method-returnType:ExprInfo
+Method-parameters:[ExprNodeDesc expr]
+MethodInvocation:get
+MethodInvocation:put
+Method-name:addFinalCandidate
+Method-returnType:void
+Method-parameters:[String alias, ExprNodeDesc expr]
+MethodInvocation:getPushdownPreds
+MethodInvocation:isSame
+MethodInvocation:add
+Method-name:addPushDowns
+Method-returnType:void
+Method-parameters:[String alias, List<ExprNodeDesc> pushDowns]
+MethodInvocation:getPushdownPreds
+MethodInvocation:isSame
+MethodInvocation:add
+Method-name:getFinalCandidates
+Method-returnType:Map<String,List<ExprNodeDesc>>
+Method-parameters:[]
+Method-name:getPushdownPreds
+Method-returnType:List<ExprNodeDesc>
+Method-parameters:[String alias]
+MethodInvocation:get
+MethodInvocation:put
+Method-name:hasAnyCandidates
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:values
+MethodInvocation:isEmpty
+Method-name:hasNonFinalCandidates
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:values
+MethodInvocation:isEmpty
+Method-name:addNonFinalCandidate
+Method-returnType:void
+Method-parameters:[String alias, ExprNodeDesc expr]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:get
+Method-name:getNonFinalCandidates
+Method-returnType:Map<String,List<ExprNodeDesc>>
+Method-parameters:[]
+Method-name:getResidualPredicates
+Method-returnType:Map<String,List<ExprNodeDesc>>
+Method-parameters:[boolean clear]
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:clear
+Method-name:merge
+Method-returnType:void
+Method-parameters:[ExprWalkerInfo ewi]
+MethodInvocation:entrySet
+MethodInvocation:getFinalCandidates
+MethodInvocation:get
+MethodInvocation:getKey
+MethodInvocation:addAll
+MethodInvocation:getValue
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:entrySet
+MethodInvocation:getNonFinalCandidates
+MethodInvocation:get
+MethodInvocation:getKey
+MethodInvocation:addAll
+MethodInvocation:getValue
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:putAll
+MethodInvocation:getNewToOldExprMap
+Method-name:setDeterministic
+Method-returnType:void
+Method-parameters:[boolean b]
+Method-name:isDeterministic
+Method-returnType:boolean
+Method-parameters:[]

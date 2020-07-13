@@ -1,0 +1,31 @@
+Class:SocketOutputStreamPoolFactory
+Field:socketTimeoutInMillis
+Field:socketConnectTimeoutInMillis
+Method-name:SocketOutputStreamPoolFactory
+Method-returnType:null
+Method-parameters:[int socketConnectTimeoutInMillis, int socketTimeoutInMillis]
+FieldAccess:socketConnectTimeoutInMillis
+FieldAccess:socketTimeoutInMillis
+Method-name:makeObject
+Method-returnType:PooledObject<SocketOutputStream>
+Method-parameters:[SocketConnectionInfos connectionInfos]
+MethodInvocation:wrap
+MethodInvocation:create
+Method-name:destroyObject
+Method-returnType:void
+Method-parameters:[SocketConnectionInfos socketConnectionInfos, PooledObject<SocketOutputStream> socketOutputStream]
+MethodInvocation:getObject
+MethodInvocation:closeQuietly
+MethodInvocation:closeQuietly
+MethodInvocation:getSocket
+Method-name:create
+Method-returnType:SocketOutputStream
+Method-parameters:[SocketConnectionInfos connectionInfos]
+MethodInvocation:setKeepAlive
+MethodInvocation:setSoTimeout
+MethodInvocation:connect
+MethodInvocation:getHost
+MethodInvocation:getPort
+Method-name:wrap
+Method-returnType:PooledObject<SocketOutputStream>
+Method-parameters:[SocketOutputStream outputStream]

@@ -1,0 +1,77 @@
+Class:AbstractBibtexKeyPattern
+Field:defaultPattern
+Field:data
+Method-name:addBibtexKeyPattern
+Method-returnType:void
+Method-parameters:[EntryType type, String pattern]
+MethodInvocation:put
+MethodInvocation:split
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:getValue
+Method-returnType:List<String>
+Method-parameters:[EntryType entryType]
+MethodInvocation:get
+MethodInvocation:getDefaultValue
+MethodInvocation:isEmpty
+MethodInvocation:getLastLevelBibtexKeyPattern
+Method-name:split
+Method-returnType:List<String>
+Method-parameters:[String bibtexKeyPattern]
+MethodInvocation:add
+MethodInvocation:hasMoreTokens
+MethodInvocation:add
+MethodInvocation:nextToken
+Method-name:isDefaultValue
+Method-returnType:boolean
+Method-parameters:[EntryType entryType]
+MethodInvocation:get
+Method-name:getDefaultValue
+Method-returnType:List<String>
+Method-parameters:[]
+FieldAccess:defaultPattern
+Method-name:setDefaultValue
+Method-returnType:void
+Method-parameters:[String bibtexKeyPattern]
+MethodInvocation:requireNonNull
+FieldAccess:defaultPattern
+MethodInvocation:split
+Method-name:getAllKeys
+Method-returnType:Set<EntryType>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getPatterns
+Method-returnType:Map<EntryType,List<String>>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:entrySet
+MethodInvocation:toMap
+Method-name:getLastLevelBibtexKeyPattern
+Method-returnType:List<String>
+Method-parameters:[EntryType key]
+Method-name:setCiteKeyPattern
+Method-returnType:void
+Method-parameters:[MetaData metaData]
+MethodInvocation:requireNonNull
+MethodInvocation:getDefaultValue
+MethodInvocation:getPatterns
+MethodInvocation:setCiteKeyPattern

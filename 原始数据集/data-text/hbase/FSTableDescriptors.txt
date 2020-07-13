@@ -1,0 +1,342 @@
+Class:FSTableDescriptors
+Field:LOG
+MethodInvocation:getLogger
+Field:fs
+Field:rootdir
+Field:fsreadonly
+Field:usecache
+Field:fsvisited
+Field:cachehits
+Field:invocations
+Field:TABLEINFO_FILE_PREFIX
+Field:TABLEINFO_DIR
+Field:TMP_DIR
+Field:cache
+Field:metaTableDescriptor
+Method-name:FSTableDescriptors
+Method-returnType:null
+Method-parameters:[final Configuration conf]
+MethodInvocation:getCurrentFileSystem
+MethodInvocation:getRootDir
+Method-name:FSTableDescriptors
+Method-returnType:null
+Method-parameters:[final Configuration conf, final FileSystem fs, final Path rootdir]
+Method-name:FSTableDescriptors
+Method-returnType:null
+Method-parameters:[final Configuration conf, final FileSystem fs, final Path rootdir, final boolean fsreadonly, final boolean usecache]
+Method-name:FSTableDescriptors
+Method-returnType:null
+Method-parameters:[final Configuration conf, final FileSystem fs, final Path rootdir, final boolean fsreadonly, final boolean usecache, Function<TableDescriptorBuilder,TableDescriptorBuilder> metaObserver]
+FieldAccess:fs
+FieldAccess:rootdir
+FieldAccess:fsreadonly
+FieldAccess:usecache
+FieldAccess:metaTableDescriptor
+MethodInvocation:createMetaTableDescriptor
+MethodInvocation:build
+MethodInvocation:apply
+MethodInvocation:createMetaTableDescriptorBuilder
+Method-name:createMetaTableDescriptorBuilder
+Method-returnType:TableDescriptorBuilder
+Method-parameters:[final Configuration conf]
+MethodInvocation:setCoprocessor
+MethodInvocation:setColumnFamily
+MethodInvocation:setColumnFamily
+MethodInvocation:setColumnFamily
+MethodInvocation:setColumnFamily
+MethodInvocation:newBuilder
+MethodInvocation:build
+MethodInvocation:setBloomFilterType
+MethodInvocation:setScope
+MethodInvocation:setBlocksize
+MethodInvocation:setInMemory
+MethodInvocation:setMaxVersions
+MethodInvocation:newBuilder
+MethodInvocation:getInt
+MethodInvocation:getInt
+MethodInvocation:build
+MethodInvocation:setBloomFilterType
+MethodInvocation:setScope
+MethodInvocation:setBlocksize
+MethodInvocation:setInMemory
+MethodInvocation:setMaxVersions
+MethodInvocation:newBuilder
+MethodInvocation:getInt
+MethodInvocation:build
+MethodInvocation:setBloomFilterType
+MethodInvocation:setScope
+MethodInvocation:setInMemory
+MethodInvocation:setMaxVersions
+MethodInvocation:newBuilder
+MethodInvocation:build
+MethodInvocation:setBloomFilterType
+MethodInvocation:setScope
+MethodInvocation:setBlocksize
+MethodInvocation:setInMemory
+MethodInvocation:setMaxVersions
+MethodInvocation:newBuilder
+MethodInvocation:getInt
+MethodInvocation:getInt
+MethodInvocation:build
+MethodInvocation:setPriority
+MethodInvocation:newBuilder
+MethodInvocation:getName
+Method-name:createMetaTableDescriptor
+Method-returnType:TableDescriptor
+Method-parameters:[final Configuration conf]
+MethodInvocation:build
+MethodInvocation:createMetaTableDescriptorBuilder
+Method-name:setCacheOn
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+FieldAccess:cache
+FieldAccess:usecache
+Method-name:setCacheOff
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:usecache
+MethodInvocation:clear
+FieldAccess:cache
+Method-name:isUsecache
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:usecache
+Method-name:get
+Method-returnType:TableDescriptor
+Method-parameters:[final TableName tablename]
+MethodInvocation:equals
+MethodInvocation:contains
+MethodInvocation:getNameAsString
+MethodInvocation:get
+FieldAccess:cache
+MethodInvocation:getTableDescriptorFromFs
+MethodInvocation:debug
+MethodInvocation:debug
+MethodInvocation:put
+FieldAccess:cache
+Method-name:getAll
+Method-returnType:Map<String,TableDescriptor>
+Method-parameters:[]
+MethodInvocation:entrySet
+FieldAccess:cache
+MethodInvocation:put
+MethodInvocation:toString
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:put
+MethodInvocation:getNameAsString
+MethodInvocation:getTableName
+FieldAccess:metaTableDescriptor
+MethodInvocation:trace
+MethodInvocation:getTableDirs
+MethodInvocation:get
+MethodInvocation:getTableName
+MethodInvocation:warn
+MethodInvocation:put
+MethodInvocation:getNameAsString
+MethodInvocation:getTableName
+Method-name:getByNamespace
+Method-returnType:Map<String,TableDescriptor>
+Method-parameters:[String name]
+MethodInvocation:getLocalTableDirs
+MethodInvocation:getNamespaceDir
+MethodInvocation:get
+MethodInvocation:getTableName
+MethodInvocation:warn
+MethodInvocation:put
+MethodInvocation:getNameAsString
+MethodInvocation:getTableName
+Method-name:add
+Method-returnType:void
+Method-parameters:[TableDescriptor htd]
+MethodInvocation:getTableName
+MethodInvocation:equals
+MethodInvocation:contains
+MethodInvocation:getNameAsString
+MethodInvocation:getNameAsString
+MethodInvocation:getTableName
+MethodInvocation:updateTableDescriptor
+Method-name:remove
+Method-returnType:TableDescriptor
+Method-parameters:[final TableName tablename]
+MethodInvocation:getTableDir
+MethodInvocation:exists
+FieldAccess:fs
+MethodInvocation:delete
+FieldAccess:fs
+MethodInvocation:toString
+MethodInvocation:remove
+FieldAccess:cache
+Method-name:isTableInfoExists
+Method-returnType:boolean
+Method-parameters:[TableName tableName]
+MethodInvocation:getTableInfoPath
+Method-name:getTableInfoPath
+Method-returnType:FileStatus
+Method-parameters:[final TableName tableName]
+MethodInvocation:getTableDir
+MethodInvocation:getTableInfoPath
+Method-name:getTableInfoPath
+Method-returnType:FileStatus
+Method-parameters:[Path tableDir]
+MethodInvocation:getTableInfoPath
+Method-name:getTableInfoPath
+Method-returnType:FileStatus
+Method-parameters:[FileSystem fs, Path tableDir]
+MethodInvocation:getTableInfoPath
+Method-name:getTableInfoPath
+Method-returnType:FileStatus
+Method-parameters:[FileSystem fs, Path tableDir, boolean removeOldFiles]
+MethodInvocation:getCurrentTableInfoStatus
+Method-name:getCurrentTableInfoStatus
+Method-returnType:FileStatus
+Method-parameters:[FileSystem fs, Path dir, boolean removeOldFiles]
+MethodInvocation:listStatus
+MethodInvocation:compare
+MethodInvocation:getPath
+MethodInvocation:equals
+MethodInvocation:delete
+MethodInvocation:getPath
+MethodInvocation:warn
+MethodInvocation:debug
+Field:TABLEINFO_FILESTATUS_COMPARATOR
+Method-name:compare
+Method-returnType:int
+Method-parameters:[FileStatus left, FileStatus right]
+MethodInvocation:compareTo
+Method-name:getTableDir
+Method-returnType:Path
+Method-parameters:[final TableName tableName]
+MethodInvocation:getTableDir
+Field:TABLEINFO_PATHFILTER
+Method-name:accept
+Method-returnType:boolean
+Method-parameters:[Path p]
+MethodInvocation:startsWith
+MethodInvocation:getName
+Field:WIDTH_OF_SEQUENCE_ID
+Method-name:formatTableInfoSequenceId
+Method-returnType:String
+Method-parameters:[final int number]
+MethodInvocation:abs
+MethodInvocation:toString
+Field:TABLEINFO_FILE_REGEX
+MethodInvocation:compile
+Method-name:getTableInfoSequenceId
+Method-returnType:int
+Method-parameters:[final Path p]
+MethodInvocation:matcher
+MethodInvocation:getName
+MethodInvocation:matches
+MethodInvocation:toString
+MethodInvocation:group
+MethodInvocation:length
+MethodInvocation:parseInt
+MethodInvocation:group
+Method-name:getTableInfoFileName
+Method-returnType:String
+Method-parameters:[final int sequenceid]
+MethodInvocation:formatTableInfoSequenceId
+Method-name:getTableDescriptorFromFs
+Method-returnType:TableDescriptor
+Method-parameters:[FileSystem fs, Path hbaseRootDir, TableName tableName]
+MethodInvocation:getTableDir
+MethodInvocation:getTableDescriptorFromFs
+Method-name:getTableDescriptorFromFs
+Method-returnType:TableDescriptor
+Method-parameters:[FileSystem fs, Path tableDir]
+MethodInvocation:getTableInfoPath
+MethodInvocation:readTableDescriptor
+Method-name:readTableDescriptor
+Method-returnType:TableDescriptor
+Method-parameters:[FileSystem fs, FileStatus status]
+MethodInvocation:checkedCast
+MethodInvocation:getLen
+MethodInvocation:open
+MethodInvocation:getPath
+MethodInvocation:readFully
+MethodInvocation:close
+MethodInvocation:parseFrom
+MethodInvocation:toShort
+Method-name:updateTableDescriptor
+Method-returnType:Path
+Method-parameters:[TableDescriptor td]
+MethodInvocation:getTableName
+MethodInvocation:getTableDir
+MethodInvocation:writeTableDescriptor
+MethodInvocation:getTableInfoPath
+MethodInvocation:info
+MethodInvocation:put
+FieldAccess:cache
+MethodInvocation:getTableName
+Method-name:deleteTableDescriptorIfExists
+Method-returnType:void
+Method-parameters:[TableName tableName]
+MethodInvocation:getTableDir
+MethodInvocation:deleteTableDescriptorFiles
+Method-name:deleteTableDescriptorFiles
+Method-returnType:void
+Method-parameters:[FileSystem fs, Path dir, int maxSequenceId]
+MethodInvocation:listStatus
+MethodInvocation:getPath
+MethodInvocation:getTableInfoSequenceId
+MethodInvocation:delete
+MethodInvocation:debug
+MethodInvocation:error
+Method-name:writeTableDescriptor
+Method-returnType:Path
+Method-parameters:[final FileSystem fs, final TableDescriptor htd, final Path tableDir, final FileStatus currentDescriptorFile]
+MethodInvocation:getTableInfoSequenceId
+MethodInvocation:getPath
+MethodInvocation:getTableInfoFileName
+MethodInvocation:exists
+MethodInvocation:debug
+MethodInvocation:writeTD
+MethodInvocation:mkdirs
+MethodInvocation:getParent
+MethodInvocation:rename
+MethodInvocation:debug
+MethodInvocation:debug
+MethodInvocation:deleteDirectory
+MethodInvocation:warn
+MethodInvocation:deleteTableDescriptorFiles
+Method-name:writeTD
+Method-returnType:void
+Method-parameters:[final FileSystem fs, final Path p, final TableDescriptor htd]
+MethodInvocation:create
+MethodInvocation:write
+MethodInvocation:toByteArray
+MethodInvocation:close
+Method-name:createTableDescriptor
+Method-returnType:boolean
+Method-parameters:[TableDescriptor htd]
+MethodInvocation:createTableDescriptor
+Method-name:createTableDescriptor
+Method-returnType:boolean
+Method-parameters:[TableDescriptor htd, boolean forceCreation]
+MethodInvocation:getTableDir
+MethodInvocation:getTableName
+MethodInvocation:createTableDescriptorForTableDirectory
+Method-name:createTableDescriptorForTableDirectory
+Method-returnType:boolean
+Method-parameters:[Path tableDir, TableDescriptor htd, boolean forceCreation]
+MethodInvocation:getTableInfoPath
+MethodInvocation:debug
+MethodInvocation:getPath
+MethodInvocation:exists
+MethodInvocation:getPath
+MethodInvocation:getLen
+MethodInvocation:equals
+MethodInvocation:readTableDescriptor
+MethodInvocation:trace
+MethodInvocation:writeTableDescriptor
+Method-name:fabricateTableInfo
+Method-returnType:boolean
+Method-parameters:[TableName tableName, Set<String> columns, HBaseFsck hBaseFsck]
+MethodInvocation:isEmpty
+MethodInvocation:newBuilder
+MethodInvocation:setColumnFamily
+MethodInvocation:of
+MethodInvocation:createTableDescriptor
+MethodInvocation:build

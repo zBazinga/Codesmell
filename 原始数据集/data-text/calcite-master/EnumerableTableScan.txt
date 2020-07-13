@@ -1,0 +1,108 @@
+Class:EnumerableTableScan
+Field:elementType
+Method-name:EnumerableTableScan
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelOptTable table, Class elementType]
+Method-name:create
+Method-returnType:EnumerableTableScan
+Method-parameters:[RelOptCluster cluster, RelOptTable relOptTable]
+MethodInvocation:unwrap
+MethodInvocation:deduceElementType
+MethodInvocation:replaceIfs
+MethodInvocation:traitSetOf
+MethodInvocation:getCollations
+MethodInvocation:getStatistic
+MethodInvocation:of
+Method-name:canHandle
+Method-returnType:boolean
+Method-parameters:[Table table]
+Method-name:canHandle
+Method-returnType:boolean
+Method-parameters:[RelOptTable relOptTable]
+MethodInvocation:unwrap
+MethodInvocation:canHandle
+MethodInvocation:value
+MethodInvocation:value
+MethodInvocation:value
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:getSqlTypeName
+MethodInvocation:getType
+Method-name:deduceElementType
+Method-returnType:Class
+Method-parameters:[Table table]
+MethodInvocation:getElementType
+Method-name:deduceFormat
+Method-returnType:JavaRowFormat
+Method-parameters:[RelOptTable table]
+MethodInvocation:deduceElementType
+MethodInvocation:unwrap
+Method-name:getExpression
+Method-returnType:Expression
+Method-parameters:[PhysType physType]
+Method-name:toEnumerable
+Method-returnType:Expression
+Method-parameters:[Expression expression]
+MethodInvocation:getType
+MethodInvocation:isArray
+MethodInvocation:isPrimitive
+MethodInvocation:getComponentType
+MethodInvocation:toClass
+MethodInvocation:call
+MethodInvocation:call
+MethodInvocation:isAssignableFrom
+MethodInvocation:isAssignableFrom
+MethodInvocation:call
+MethodInvocation:isAssignableFrom
+MethodInvocation:call
+Method-name:toRows
+Method-returnType:Expression
+Method-parameters:[PhysType physType, Expression expression]
+MethodInvocation:getFormat
+MethodInvocation:isAssignableFrom
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:unwrap
+MethodInvocation:unwrap
+MethodInvocation:unwrap
+MethodInvocation:call
+MethodInvocation:format
+MethodInvocation:getFormat
+MethodInvocation:hasCollectionField
+MethodInvocation:parameter
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:add
+MethodInvocation:fieldExpression
+MethodInvocation:call
+MethodInvocation:lambda
+MethodInvocation:record
+Method-name:format
+Method-returnType:JavaRowFormat
+Method-parameters:[]
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:isAssignableFrom
+MethodInvocation:isAssignableFrom
+MethodInvocation:is
+MethodInvocation:isAssignableFrom
+Method-name:hasCollectionField
+Method-returnType:boolean
+Method-parameters:[RelDataType rowType]
+MethodInvocation:getFieldList
+MethodInvocation:getSqlTypeName
+MethodInvocation:getType
+Method-name:copy
+Method-returnType:RelNode
+Method-parameters:[RelTraitSet traitSet, List<RelNode> inputs]
+MethodInvocation:getCluster
+Method-name:implement
+Method-returnType:Result
+Method-parameters:[EnumerableRelImplementor implementor, Prefer pref]
+MethodInvocation:of
+MethodInvocation:getTypeFactory
+MethodInvocation:getRowType
+MethodInvocation:format
+MethodInvocation:getExpression
+MethodInvocation:result
+MethodInvocation:toBlock

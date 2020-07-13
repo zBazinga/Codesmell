@@ -1,0 +1,133 @@
+Class:SpockExecutionContext
+Field:engineExecutionListener
+Field:runContext
+Field:runner
+Field:spec
+Field:currentFeature
+Field:currentIteration
+Field:sharedInstance
+Field:currentInstance
+Field:parentId
+Field:errorInfoCollector
+Method-name:SpockExecutionContext
+Method-returnType:null
+Method-parameters:[EngineExecutionListener engineExecutionListener]
+FieldAccess:engineExecutionListener
+Method-name:setRunContext
+Method-returnType:SpockExecutionContext
+Method-parameters:[RunContext runContext]
+FieldAccess:runContext
+Method-name:setRunner
+Method-returnType:SpockExecutionContext
+Method-parameters:[PlatformParameterizedSpecRunner runner]
+FieldAccess:runner
+Method-name:setSpec
+Method-returnType:SpockExecutionContext
+Method-parameters:[SpecInfo spec]
+FieldAccess:spec
+Method-name:setCurrentFeature
+Method-returnType:SpockExecutionContext
+Method-parameters:[FeatureInfo currentFeature]
+FieldAccess:currentFeature
+Method-name:setCurrentIteration
+Method-returnType:SpockExecutionContext
+Method-parameters:[IterationInfo currentIteration]
+FieldAccess:currentIteration
+Method-name:setSharedInstance
+Method-returnType:SpockExecutionContext
+Method-parameters:[Specification sharedInstance]
+FieldAccess:sharedInstance
+Method-name:setCurrentInstance
+Method-returnType:SpockExecutionContext
+Method-parameters:[Specification currentInstance]
+FieldAccess:currentInstance
+Method-name:setParentId
+Method-returnType:SpockExecutionContext
+Method-parameters:[UniqueId parentId]
+FieldAccess:parentId
+Method-name:setErrorInfoCollector
+Method-returnType:SpockExecutionContext
+Method-parameters:[ErrorInfoCollector errorInfoCollector]
+FieldAccess:errorInfoCollector
+Method-name:clone
+Method-returnType:SpockExecutionContext
+Method-parameters:[]
+Method-name:getRunner
+Method-returnType:PlatformParameterizedSpecRunner
+Method-parameters:[]
+Method-name:getRunContext
+Method-returnType:RunContext
+Method-parameters:[]
+Method-name:withRunContext
+Method-returnType:SpockExecutionContext
+Method-parameters:[RunContext runContext]
+MethodInvocation:setRunContext
+MethodInvocation:clone
+Method-name:withRunner
+Method-returnType:SpockExecutionContext
+Method-parameters:[PlatformParameterizedSpecRunner runner]
+MethodInvocation:setRunner
+MethodInvocation:clone
+Method-name:withSharedInstance
+Method-returnType:SpockExecutionContext
+Method-parameters:[Specification sharedInstance]
+MethodInvocation:setSharedInstance
+MethodInvocation:clone
+Method-name:withCurrentInstance
+Method-returnType:SpockExecutionContext
+Method-parameters:[Specification currentInstance]
+MethodInvocation:setCurrentInstance
+MethodInvocation:clone
+Method-name:withSpec
+Method-returnType:SpockExecutionContext
+Method-parameters:[SpecInfo spec]
+MethodInvocation:setSpec
+MethodInvocation:clone
+Method-name:withCurrentFeature
+Method-returnType:SpockExecutionContext
+Method-parameters:[FeatureInfo feature]
+MethodInvocation:setCurrentFeature
+MethodInvocation:clone
+Method-name:withCurrentIteration
+Method-returnType:SpockExecutionContext
+Method-parameters:[IterationInfo iteration]
+MethodInvocation:setCurrentIteration
+MethodInvocation:setCurrentFeature
+MethodInvocation:clone
+MethodInvocation:getFeature
+Method-name:withErrorInfoCollector
+Method-returnType:SpockExecutionContext
+Method-parameters:[ErrorInfoCollector errorInfoCollector]
+MethodInvocation:setErrorInfoCollector
+MethodInvocation:clone
+Method-name:withParentId
+Method-returnType:SpockExecutionContext
+Method-parameters:[UniqueId uniqueId]
+MethodInvocation:setParentId
+MethodInvocation:clone
+Method-name:getSharedInstance
+Method-returnType:Specification
+Method-parameters:[]
+Method-name:getCurrentInstance
+Method-returnType:Specification
+Method-parameters:[]
+Method-name:getSpec
+Method-returnType:SpecInfo
+Method-parameters:[]
+Method-name:getCurrentFeature
+Method-returnType:FeatureInfo
+Method-parameters:[]
+Method-name:getCurrentIteration
+Method-returnType:IterationInfo
+Method-parameters:[]
+Method-name:getParentId
+Method-returnType:UniqueId
+Method-parameters:[]
+Method-name:getErrorInfoCollector
+Method-returnType:ErrorInfoCollector
+Method-parameters:[]
+Method-name:sneakyInvoke
+Method-returnType:void
+Method-parameters:[Node.Invocation<SpockExecutionContext> invocation, SpockNode spockNode]
+MethodInvocation:invoke
+MethodInvocation:sneakyThrow

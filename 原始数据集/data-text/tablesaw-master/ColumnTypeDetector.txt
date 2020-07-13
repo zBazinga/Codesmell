@@ -1,0 +1,52 @@
+Class:ColumnTypeDetector
+Field:STRING_COLUMN_ROW_COUNT_CUTOFF
+Field:STRING_COLUMN_CUTOFF
+Field:typeArray
+Method-name:ColumnTypeDetector
+Method-returnType:null
+Method-parameters:[List<ColumnType> typeArray]
+FieldAccess:typeArray
+Method-name:detectColumnTypes
+Method-returnType:ColumnType[]
+Method-parameters:[Iterator<String[]> rows, ReadOptions options]
+MethodInvocation:sample
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:nextRow
+MethodInvocation:nextRowWithoutSampling
+MethodInvocation:detectType
+MethodInvocation:equals
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:toArray
+Method-name:nextRowWithoutSampling
+Method-returnType:int
+Method-parameters:[int nextRow]
+Method-name:nextRow
+Method-returnType:int
+Method-parameters:[int nextRow]
+Method-name:detectType
+Method-returnType:ColumnType
+Method-parameters:[List<String> valuesList, ReadOptions options]
+MethodInvocation:getParserList
+MethodInvocation:isMissing
+MethodInvocation:canParse
+MethodInvocation:remove
+MethodInvocation:columnType
+MethodInvocation:remove
+MethodInvocation:selectType
+MethodInvocation:get
+MethodInvocation:size
+Method-name:selectType
+Method-returnType:ColumnType
+Method-parameters:[List<ColumnType> typeCandidates]
+MethodInvocation:get
+Method-name:getParserList
+Method-returnType:List<AbstractColumnParser<?>>
+Method-parameters:[List<ColumnType> typeArray, ReadOptions options]
+MethodInvocation:add
+MethodInvocation:customParser

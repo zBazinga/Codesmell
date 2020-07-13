@@ -1,0 +1,51 @@
+Class:AbstractPMDProcessor
+Field:LOG
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:configuration
+Method-name:AbstractPMDProcessor
+Method-returnType:null
+Method-parameters:[PMDConfiguration configuration]
+FieldAccess:configuration
+Method-name:filenameFrom
+Method-returnType:String
+Method-parameters:[DataSource dataSource]
+MethodInvocation:getNiceFileName
+MethodInvocation:isReportShortNames
+MethodInvocation:getInputPaths
+Method-name:createRuleSets
+Method-returnType:RuleSets
+Method-parameters:[RuleSetFactory factory, Report report]
+MethodInvocation:getRuleSets
+MethodInvocation:getRuleSets
+MethodInvocation:removeBrokenRules
+MethodInvocation:addConfigError
+MethodInvocation:dysfunctionReason
+Method-name:removeBrokenRules
+Method-returnType:Set<Rule>
+Method-parameters:[final RuleSets ruleSets]
+MethodInvocation:removeDysfunctionalRules
+MethodInvocation:isLoggable
+MethodInvocation:log
+MethodInvocation:getName
+MethodInvocation:dysfunctionReason
+Method-name:processFiles
+Method-returnType:void
+Method-parameters:[RuleSetFactory ruleSetFactory, List<DataSource> files, RuleContext ctx, List<Renderer> renderers]
+MethodInvocation:createRuleSets
+MethodInvocation:getReport
+MethodInvocation:checkValidity
+MethodInvocation:getAnalysisCache
+MethodInvocation:getClassLoader
+MethodInvocation:getNiceFileName
+MethodInvocation:runAnalysis
+MethodInvocation:renderReports
+MethodInvocation:getReport
+MethodInvocation:collectReports
+MethodInvocation:closeQuietly
+Method-name:runAnalysis
+Method-returnType:void
+Method-parameters:[PmdRunnable runnable]
+Method-name:collectReports
+Method-returnType:void
+Method-parameters:[List<Renderer> renderers]

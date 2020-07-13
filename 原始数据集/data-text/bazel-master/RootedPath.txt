@@ -1,0 +1,62 @@
+Class:RootedPath
+Field:root
+Field:rootRelativePath
+Method-name:RootedPath
+Method-returnType:null
+Method-parameters:[Root root, PathFragment rootRelativePath]
+MethodInvocation:checkState
+MethodInvocation:isAbsolute
+MethodInvocation:isAbsolute
+FieldAccess:root
+FieldAccess:rootRelativePath
+Method-name:toRootedPath
+Method-returnType:RootedPath
+Method-parameters:[Root root, PathFragment rootRelativePath]
+MethodInvocation:isAbsolute
+MethodInvocation:isAbsolute
+MethodInvocation:checkArgument
+MethodInvocation:contains
+MethodInvocation:relativize
+Method-name:toRootedPath
+Method-returnType:RootedPath
+Method-parameters:[Root root, Path path]
+MethodInvocation:checkState
+MethodInvocation:contains
+MethodInvocation:toRootedPath
+MethodInvocation:asFragment
+Method-name:toRootedPathMaybeUnderRoot
+Method-returnType:RootedPath
+Method-parameters:[Path path, Iterable<Root> packagePathRoots]
+MethodInvocation:contains
+MethodInvocation:toRootedPath
+MethodInvocation:toRootedPath
+MethodInvocation:absoluteRoot
+MethodInvocation:getFileSystem
+Method-name:asPath
+Method-returnType:Path
+Method-parameters:[]
+MethodInvocation:getRelative
+Method-name:getRoot
+Method-returnType:Root
+Method-parameters:[]
+Method-name:getRootRelativePath
+Method-returnType:PathFragment
+Method-parameters:[]
+Method-name:getParentDirectory
+Method-returnType:RootedPath
+Method-parameters:[]
+MethodInvocation:getParentDirectory
+MethodInvocation:getRootRelativePath
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

@@ -1,0 +1,102 @@
+Class:TcpMatcher
+Field:LOGGER
+MethodInvocation:getLogger
+Field:exchangeRemoveHandler
+Field:endpointContextMatcher
+Method-name:TcpMatcher
+Method-returnType:null
+Method-parameters:[NetworkConfig config, NotificationListener notificationListener, TokenGenerator tokenGenerator, ObservationStore observationStore, MessageExchangeStore exchangeStore, Executor executor, EndpointContextMatcher endpointContextMatcher]
+FieldAccess:endpointContextMatcher
+Method-name:sendRequest
+Method-returnType:void
+Method-parameters:[Exchange exchange]
+MethodInvocation:getCurrentRequest
+MethodInvocation:isObserve
+MethodInvocation:registerObserve
+MethodInvocation:setRemoveHandler
+MethodInvocation:registerOutboundRequestWithTokenOnly
+MethodInvocation:debug
+MethodInvocation:getKeyToken
+Method-name:sendResponse
+Method-returnType:void
+Method-parameters:[Exchange exchange]
+MethodInvocation:getCurrentResponse
+MethodInvocation:getRelation
+MethodInvocation:ensureToken
+MethodInvocation:getToken
+MethodInvocation:getCurrentRequest
+MethodInvocation:addMessageObserver
+Method-name:onSendError
+Method-returnType:void
+Method-parameters:[Throwable error]
+MethodInvocation:cancel
+MethodInvocation:setComplete
+Method-name:sendEmptyMessage
+Method-returnType:void
+Method-parameters:[Exchange exchange, EmptyMessage message]
+MethodInvocation:isConfirmable
+MethodInvocation:setToken
+Method-name:receiveRequest
+Method-returnType:void
+Method-parameters:[final Request request, final EndpointReceiver receiver]
+MethodInvocation:setRemoveHandler
+MethodInvocation:execute
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:receiveRequest
+Method-name:receiveResponse
+Method-returnType:void
+Method-parameters:[final Response response, final EndpointReceiver receiver]
+MethodInvocation:getEndpointIdentity
+MethodInvocation:getSourceContext
+MethodInvocation:getKeyToken
+MethodInvocation:getToken
+MethodInvocation:get
+MethodInvocation:matchNotifyResponse
+MethodInvocation:trace
+MethodInvocation:getSourceContext
+MethodInvocation:cancel
+MethodInvocation:execute
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isNotification
+MethodInvocation:getRequest
+MethodInvocation:getCurrentRequest
+MethodInvocation:get
+MethodInvocation:debug
+MethodInvocation:cancel
+MethodInvocation:getEndpointContext
+MethodInvocation:error
+MethodInvocation:getSourceContext
+MethodInvocation:cancel
+MethodInvocation:isResponseRelatedToRequest
+MethodInvocation:getSourceContext
+MethodInvocation:getCurrentRequest
+MethodInvocation:isNotification
+MethodInvocation:isNotification
+MethodInvocation:isObserveCancel
+MethodInvocation:debug
+MethodInvocation:cancel
+MethodInvocation:receiveResponse
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:toRelevantState
+MethodInvocation:getSourceContext
+MethodInvocation:error
+MethodInvocation:getSourceContext
+MethodInvocation:cancel
+Method-name:receiveEmptyMessage
+Method-returnType:void
+Method-parameters:[final EmptyMessage message, EndpointReceiver receiver]
+Method-name:cancel
+Method-returnType:void
+Method-parameters:[Response response, EndpointReceiver receiver]
+MethodInvocation:setCanceled
+MethodInvocation:receiveResponse
+Class:RemoveHandlerImpl
+Method-name:remove
+Method-returnType:void
+Method-parameters:[Exchange exchange, KeyToken keyToken, KeyMID keyMID]
+MethodInvocation:remove

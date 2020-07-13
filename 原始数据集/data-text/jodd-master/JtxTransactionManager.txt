@@ -1,0 +1,170 @@
+Class:JtxTransactionManager
+Field:log
+MethodInvocation:getLogger
+Field:maxResourcesPerTransaction
+Field:oneResourceManager
+Field:validateExistingTransaction
+Field:ignoreScope
+Field:resourceManagers
+Field:txStack
+Method-name:JtxTransactionManager
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:maxResourcesPerTransaction
+FieldAccess:resourceManagers
+MethodInvocation:createDefault
+Method-name:getMaxResourcesPerTransaction
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxResourcesPerTransaction
+Method-returnType:void
+Method-parameters:[final int maxResourcesPerTransaction]
+FieldAccess:maxResourcesPerTransaction
+Method-name:isValidateExistingTransaction
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setValidateExistingTransaction
+Method-returnType:void
+Method-parameters:[final boolean validateExistingTransaction]
+FieldAccess:validateExistingTransaction
+Method-name:isSingleResourceManager
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSingleResourceManager
+Method-returnType:void
+Method-parameters:[final boolean oneResourceManager]
+FieldAccess:oneResourceManager
+Method-name:isIgnoreScope
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIgnoreScope
+Method-returnType:void
+Method-parameters:[final boolean ignoreScope]
+FieldAccess:ignoreScope
+Method-name:totalThreadTransactions
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:size
+Method-name:totalThreadTransactionsWithStatus
+Method-returnType:int
+Method-parameters:[final JtxStatus status]
+MethodInvocation:get
+MethodInvocation:getStatus
+Method-name:totalActiveThreadTransactions
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:totalThreadTransactionsWithStatus
+Method-name:isAssociatedWithThread
+Method-returnType:boolean
+Method-parameters:[final JtxTransaction tx]
+MethodInvocation:get
+MethodInvocation:contains
+Method-name:removeTransaction
+Method-returnType:boolean
+Method-parameters:[final JtxTransaction tx]
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:isEmpty
+MethodInvocation:remove
+Method-name:getTransaction
+Method-returnType:JtxTransaction
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:get
+MethodInvocation:size
+Method-name:associateTransaction
+Method-returnType:void
+Method-parameters:[final JtxTransaction tx]
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:add
+Field:totalTransactions
+Method-name:totalTransactions
+Method-returnType:int
+Method-parameters:[]
+Method-name:createNewTransaction
+Method-returnType:JtxTransaction
+Method-parameters:[final JtxTransactionMode tm, final Object scope, final boolean active]
+Method-name:requestTransaction
+Method-returnType:JtxTransaction
+Method-parameters:[final JtxTransactionMode mode]
+MethodInvocation:requestTransaction
+Method-name:requestTransaction
+Method-returnType:JtxTransaction
+Method-parameters:[final JtxTransactionMode mode, final Object scope]
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:toString
+MethodInvocation:getTransaction
+MethodInvocation:isNewTxScope
+MethodInvocation:getPropagationBehavior
+MethodInvocation:propRequired
+MethodInvocation:propSupports
+MethodInvocation:propMandatory
+MethodInvocation:propRequiresNew
+MethodInvocation:propNotSupported
+MethodInvocation:propNever
+MethodInvocation:value
+MethodInvocation:getPropagationBehavior
+Method-name:continueTx
+Method-returnType:void
+Method-parameters:[final JtxTransaction sourceTx, final JtxTransactionMode destMode]
+MethodInvocation:getTransactionMode
+MethodInvocation:getIsolationLevel
+MethodInvocation:getIsolationLevel
+MethodInvocation:isReadOnly
+MethodInvocation:isReadOnly
+Method-name:propRequired
+Method-returnType:JtxTransaction
+Method-parameters:[JtxTransaction currentTx, final JtxTransactionMode mode, final Object scope]
+MethodInvocation:isNoTransaction
+MethodInvocation:createNewTransaction
+MethodInvocation:continueTx
+Method-name:propRequiresNew
+Method-returnType:JtxTransaction
+Method-parameters:[final JtxTransaction currentTx, final JtxTransactionMode mode, final Object scope]
+MethodInvocation:createNewTransaction
+Method-name:propSupports
+Method-returnType:JtxTransaction
+Method-parameters:[JtxTransaction currentTx, final JtxTransactionMode mode, final Object scope]
+MethodInvocation:isNoTransaction
+MethodInvocation:continueTx
+MethodInvocation:createNewTransaction
+Method-name:propMandatory
+Method-returnType:JtxTransaction
+Method-parameters:[final JtxTransaction currentTx, final JtxTransactionMode mode, final Object scope]
+MethodInvocation:isNoTransaction
+MethodInvocation:continueTx
+Method-name:propNotSupported
+Method-returnType:JtxTransaction
+Method-parameters:[final JtxTransaction currentTx, final JtxTransactionMode mode, final Object scope]
+MethodInvocation:createNewTransaction
+MethodInvocation:isNoTransaction
+MethodInvocation:createNewTransaction
+Method-name:propNever
+Method-returnType:JtxTransaction
+Method-parameters:[JtxTransaction currentTx, final JtxTransactionMode mode, final Object scope]
+MethodInvocation:isNoTransaction
+MethodInvocation:createNewTransaction
+Method-name:registerResourceManager
+Method-returnType:void
+Method-parameters:[final JtxResourceManager resourceManager]
+MethodInvocation:isEmpty
+MethodInvocation:put
+FieldAccess:resourceManagers
+MethodInvocation:getResourceType
+Method-name:lookupResourceManager
+Method-returnType:JtxResourceManager<E>
+Method-parameters:[final Class<E> resourceType]
+MethodInvocation:get
+FieldAccess:resourceManagers
+MethodInvocation:getSimpleName
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:forEachValue
+FieldAccess:resourceManagers
+MethodInvocation:close
+MethodInvocation:clear

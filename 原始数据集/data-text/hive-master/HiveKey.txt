@@ -1,0 +1,46 @@
+Class:HiveKey
+Field:LENGTH_BYTES
+Field:hashCode
+Field:hashCodeValid
+Field:distKeyLength
+Method-name:HiveKey
+Method-returnType:null
+Method-parameters:[]
+Method-name:HiveKey
+Method-returnType:null
+Method-parameters:[byte[] bytes]
+Method-name:HiveKey
+Method-returnType:null
+Method-parameters:[byte[] bytes, int hashcode]
+Method-name:setHashCode
+Method-returnType:void
+Method-parameters:[int myHashCode]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:setDistKeyLength
+Method-returnType:void
+Method-parameters:[int distKeyLength]
+FieldAccess:distKeyLength
+Method-name:getDistKeyLength
+Method-returnType:int
+Method-parameters:[]
+Method-name:writeHiveKey
+Method-returnType:void
+Method-parameters:[Output output, KeyValueContainer keyValueContainer]
+MethodInvocation:getLength
+MethodInvocation:writeInt
+MethodInvocation:writeBytes
+MethodInvocation:getBytes
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:getDistKeyLength
+Class:Comparator
+Method-name:Comparator
+Method-returnType:null
+Method-parameters:[]
+Method-name:compare
+Method-returnType:int
+Method-parameters:[byte[] b1, int s1, int l1, byte[] b2, int s2, int l2]
+MethodInvocation:compareBytes
+MethodInvocation:define

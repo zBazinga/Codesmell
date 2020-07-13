@@ -1,0 +1,181 @@
+Class:PhysicsLink
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:children
+Field:bone
+Field:control
+Field:blendInterval
+Field:kinematicWeight
+Field:joint
+Field:parent
+Field:rigidBody
+Field:kpTransform
+Field:kpVelocity
+Field:localOffset
+Method-name:PhysicsLink
+Method-returnType:null
+Method-parameters:[]
+Method-name:PhysicsLink
+Method-returnType:null
+Method-parameters:[DacLinks control, Joint bone, CollisionShape collisionShape, float mass, Vector3f localOffset]
+Method-name:boneName
+Method-returnType:String
+Method-parameters:[]
+Method-name:countChildren
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getBone
+Method-returnType:Joint
+Method-parameters:[]
+Method-name:getControl
+Method-returnType:DacLinks
+Method-parameters:[]
+Method-name:getJoint
+Method-returnType:PhysicsJoint
+Method-parameters:[]
+Method-name:getParent
+Method-returnType:PhysicsLink
+Method-parameters:[]
+Method-name:getRigidBody
+Method-returnType:PhysicsRigidBody
+Method-parameters:[]
+Method-name:isKinematic
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:kinematicWeight
+Method-returnType:float
+Method-parameters:[]
+Method-name:listChildren
+Method-returnType:PhysicsLink[]
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:toArray
+Method-name:name
+Method-returnType:String
+Method-parameters:[]
+Method-name:physicsTransform
+Method-returnType:Transform
+Method-parameters:[Transform storeResult]
+MethodInvocation:isKinematic
+MethodInvocation:set
+MethodInvocation:getPhysicsLocation
+MethodInvocation:getTranslation
+MethodInvocation:getPhysicsRotation
+MethodInvocation:getRotation
+MethodInvocation:setScale
+MethodInvocation:getScale
+MethodInvocation:getCollisionShape
+Method-name:postRebuild
+Method-returnType:void
+Method-parameters:[PhysicsLink oldLink]
+Method-name:postTick
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isKinematic
+MethodInvocation:activate
+Method-name:preTick
+Method-returnType:void
+Method-parameters:[float timeStep]
+MethodInvocation:isKinematic
+MethodInvocation:setPhysicsLocation
+MethodInvocation:getTranslation
+MethodInvocation:setPhysicsRotation
+MethodInvocation:getRotation
+MethodInvocation:setScale
+MethodInvocation:getCollisionShape
+MethodInvocation:getScale
+Method-name:setDynamic
+Method-returnType:void
+Method-parameters:[Vector3f uniformAcceleration]
+MethodInvocation:verifyReadyForDynamicMode
+MethodInvocation:setKinematicWeight
+MethodInvocation:setGravity
+Method-name:update
+Method-returnType:void
+Method-parameters:[float tpf]
+Method-name:velocity
+Method-returnType:Vector3f
+Method-parameters:[Vector3f storeResult]
+Method-name:blendToKinematicMode
+Method-returnType:void
+Method-parameters:[float blendInterval]
+Method-name:dynamicUpdate
+Method-returnType:void
+Method-parameters:[]
+Method-name:kinematicUpdate
+Method-returnType:void
+Method-parameters:[float tpf]
+Method-name:localOffset
+Method-returnType:Vector3f
+Method-parameters:[Vector3f storeResult]
+MethodInvocation:set
+Method-name:setJoint
+Method-returnType:void
+Method-parameters:[PhysicsJoint joint]
+FieldAccess:joint
+Method-name:setParent
+Method-returnType:void
+Method-parameters:[PhysicsLink parent]
+Method-name:setRigidBody
+Method-returnType:void
+Method-parameters:[PhysicsRigidBody body]
+Method-name:cloneFields
+Method-returnType:void
+Method-parameters:[Cloner cloner, Object original]
+MethodInvocation:clone
+MethodInvocation:clone
+MethodInvocation:clone
+MethodInvocation:clone
+MethodInvocation:clone
+MethodInvocation:clone
+MethodInvocation:clone
+MethodInvocation:clone
+MethodInvocation:clone
+Method-name:jmeClone
+Method-returnType:PhysicsLink
+Method-parameters:[]
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter im]
+MethodInvocation:getCapsule
+MethodInvocation:readSavableArrayList
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter ex]
+MethodInvocation:getCapsule
+MethodInvocation:writeSavableArrayList
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:createRigidBody
+Method-returnType:PhysicsRigidBody
+Method-parameters:[float mass, CollisionShape collisionShape]
+Method-name:setKinematicWeight
+Method-returnType:void
+Method-parameters:[float weight]
+Method-name:updateKPTransform
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:physicsTransform
+Method-name:setMass
+Method-returnType:void
+Method-parameters:[float mass, DacLinks dacLinks]

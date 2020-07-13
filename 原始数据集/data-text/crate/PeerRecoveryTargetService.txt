@@ -1,0 +1,295 @@
+Class:PeerRecoveryTargetService
+Field:logger
+MethodInvocation:getLogger
+Class:Actions
+Field:FILES_INFO
+Field:FILE_CHUNK
+Field:CLEAN_FILES
+Field:TRANSLOG_OPS
+Field:PREPARE_TRANSLOG
+Field:FINALIZE
+Field:WAIT_CLUSTERSTATE
+Field:HANDOFF_PRIMARY_CONTEXT
+Field:threadPool
+Field:transportService
+Field:recoverySettings
+Field:clusterService
+Field:onGoingRecoveries
+Method-name:PeerRecoveryTargetService
+Method-returnType:null
+Method-parameters:[ThreadPool threadPool, TransportService transportService, RecoverySettings recoverySettings, ClusterService clusterService]
+FieldAccess:threadPool
+FieldAccess:transportService
+FieldAccess:recoverySettings
+FieldAccess:clusterService
+FieldAccess:onGoingRecoveries
+MethodInvocation:registerRequestHandler
+MethodInvocation:registerRequestHandler
+MethodInvocation:registerRequestHandler
+MethodInvocation:registerRequestHandler
+MethodInvocation:registerRequestHandler
+MethodInvocation:registerRequestHandler
+MethodInvocation:registerRequestHandler
+MethodInvocation:registerRequestHandler
+Method-name:beforeIndexShardClosed
+Method-returnType:void
+Method-parameters:[ShardId shardId, @Nullable IndexShard indexShard, Settings indexSettings]
+MethodInvocation:cancelRecoveriesForShard
+Method-name:startRecovery
+Method-returnType:void
+Method-parameters:[final IndexShard indexShard, final DiscoveryNode sourceNode, final RecoveryListener listener]
+MethodInvocation:startRecovery
+MethodInvocation:activityTimeout
+MethodInvocation:execute
+MethodInvocation:generic
+Method-name:retryRecovery
+Method-returnType:void
+Method-parameters:[final long recoveryId, final Throwable reason, TimeValue retryAfter, TimeValue activityTimeout]
+MethodInvocation:trace
+MethodInvocation:retryRecovery
+Method-name:retryRecovery
+Method-returnType:void
+Method-parameters:[final long recoveryId, final String reason, TimeValue retryAfter, TimeValue activityTimeout]
+MethodInvocation:trace
+MethodInvocation:retryRecovery
+Method-name:retryRecovery
+Method-returnType:void
+Method-parameters:[final long recoveryId, final TimeValue retryAfter, final TimeValue activityTimeout]
+MethodInvocation:resetRecovery
+MethodInvocation:schedule
+MethodInvocation:recoveryId
+Method-name:doRecovery
+Method-returnType:void
+Method-parameters:[final long recoveryId]
+Method-name:getStoreMetadataSnapshot
+Method-returnType:Store.MetadataSnapshot
+Method-parameters:[final RecoveryTarget recoveryTarget]
+MethodInvocation:snapshotStoreMetadata
+MethodInvocation:indexShard
+MethodInvocation:trace
+MethodInvocation:warn
+Method-name:getStartRecoveryRequest
+Method-returnType:StartRecoveryRequest
+Method-parameters:[final RecoveryTarget recoveryTarget]
+MethodInvocation:trace
+MethodInvocation:shardId
+MethodInvocation:sourceNode
+MethodInvocation:getStoreMetadataSnapshot
+MethodInvocation:trace
+MethodInvocation:shardId
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:getStartingSeqNo
+MethodInvocation:trace
+MethodInvocation:shardId
+MethodInvocation:sourceNode
+MethodInvocation:trace
+MethodInvocation:shardId
+MethodInvocation:sourceNode
+MethodInvocation:shardId
+MethodInvocation:getId
+MethodInvocation:allocationId
+MethodInvocation:routingEntry
+MethodInvocation:indexShard
+MethodInvocation:sourceNode
+MethodInvocation:localNode
+MethodInvocation:getPrimary
+MethodInvocation:state
+MethodInvocation:recoveryId
+Method-name:getStartingSeqNo
+Method-returnType:long
+Method-parameters:[final Logger logger, final RecoveryTarget recoveryTarget]
+Method-name:onRecoveryDone
+Method-returnType:void
+Method-parameters:[RecoveryState state]
+Method-name:onRecoveryFailure
+Method-returnType:void
+Method-parameters:[RecoveryState state, RecoveryFailedException e, boolean sendShardFailure]
+Class:PrepareForTranslogOperationsRequestHandler
+Method-name:messageReceived
+Method-returnType:void
+Method-parameters:[RecoveryPrepareForTranslogOperationsRequest request, TransportChannel channel, Task task]
+MethodInvocation:getRecoverySafe
+MethodInvocation:recoveryId
+MethodInvocation:shardId
+MethodInvocation:prepareForTranslogOperations
+MethodInvocation:target
+MethodInvocation:isFileBasedRecovery
+MethodInvocation:totalTranslogOps
+MethodInvocation:sendResponse
+Class:FinalizeRecoveryRequestHandler
+Method-name:messageReceived
+Method-returnType:void
+Method-parameters:[RecoveryFinalizeRecoveryRequest request, TransportChannel channel, Task task]
+MethodInvocation:getRecoverySafe
+MethodInvocation:recoveryId
+MethodInvocation:shardId
+MethodInvocation:finalizeRecovery
+MethodInvocation:target
+MethodInvocation:globalCheckpoint
+MethodInvocation:sendResponse
+Class:WaitForClusterStateRequestHandler
+Method-name:messageReceived
+Method-returnType:void
+Method-parameters:[RecoveryWaitForClusterStateRequest request, TransportChannel channel, Task task]
+MethodInvocation:getRecoverySafe
+MethodInvocation:recoveryId
+MethodInvocation:shardId
+MethodInvocation:ensureClusterStateVersion
+MethodInvocation:target
+MethodInvocation:clusterStateVersion
+MethodInvocation:sendResponse
+Class:HandoffPrimaryContextRequestHandler
+Method-name:messageReceived
+Method-returnType:void
+Method-parameters:[final RecoveryHandoffPrimaryContextRequest request, final TransportChannel channel, Task task]
+MethodInvocation:getRecoverySafe
+MethodInvocation:recoveryId
+MethodInvocation:shardId
+MethodInvocation:handoffPrimaryContext
+MethodInvocation:target
+MethodInvocation:primaryContext
+MethodInvocation:sendResponse
+Class:TranslogOperationsRequestHandler
+Method-name:messageReceived
+Method-returnType:void
+Method-parameters:[final RecoveryTranslogOperationsRequest request, final TransportChannel channel, Task task]
+MethodInvocation:getRecoverySafe
+MethodInvocation:recoveryId
+MethodInvocation:shardId
+MethodInvocation:getThreadContext
+MethodInvocation:target
+MethodInvocation:indexTranslogOperations
+MethodInvocation:operations
+MethodInvocation:totalTranslogOps
+MethodInvocation:maxSeenAutoIdTimestampOnPrimary
+MethodInvocation:maxSeqNoOfUpdatesOrDeletesOnPrimary
+MethodInvocation:sendResponse
+MethodInvocation:getLocalCheckpoint
+MethodInvocation:indexShard
+MethodInvocation:debug
+MethodInvocation:waitForNextChange
+Method-name:onNewClusterState
+Method-returnType:void
+Method-parameters:[ClusterState state]
+MethodInvocation:messageReceived
+MethodInvocation:onFailure
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:sendResponse
+MethodInvocation:warn
+Method-name:onClusterServiceClose
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onFailure
+Method-name:onTimeout
+Method-returnType:void
+Method-parameters:[TimeValue timeout]
+MethodInvocation:onFailure
+Method-name:waitForClusterState
+Method-returnType:void
+Method-parameters:[long clusterStateVersion]
+MethodInvocation:state
+MethodInvocation:timeValueMinutes
+MethodInvocation:getThreadContext
+MethodInvocation:getVersion
+MethodInvocation:trace
+MethodInvocation:getVersion
+MethodInvocation:trace
+MethodInvocation:getVersion
+MethodInvocation:waitForNextChange
+Method-name:onNewClusterState
+Method-returnType:void
+Method-parameters:[ClusterState state]
+MethodInvocation:onResponse
+MethodInvocation:getVersion
+Method-name:onClusterServiceClose
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onFailure
+MethodInvocation:localNode
+Method-name:onTimeout
+Method-returnType:void
+Method-parameters:[TimeValue timeout]
+MethodInvocation:onFailure
+MethodInvocation:getVersion
+MethodInvocation:get
+MethodInvocation:trace
+MethodInvocation:debug
+MethodInvocation:getVersion
+MethodInvocation:state
+MethodInvocation:convertToRuntime
+Class:FilesInfoRequestHandler
+Method-name:messageReceived
+Method-returnType:void
+Method-parameters:[RecoveryFilesInfoRequest request, TransportChannel channel, Task task]
+MethodInvocation:getRecoverySafe
+MethodInvocation:recoveryId
+MethodInvocation:shardId
+MethodInvocation:receiveFileInfo
+MethodInvocation:target
+MethodInvocation:sendResponse
+Class:CleanFilesRequestHandler
+Method-name:messageReceived
+Method-returnType:void
+Method-parameters:[RecoveryCleanFilesRequest request, TransportChannel channel, Task task]
+MethodInvocation:getRecoverySafe
+MethodInvocation:recoveryId
+MethodInvocation:shardId
+MethodInvocation:cleanFiles
+MethodInvocation:target
+MethodInvocation:totalTranslogOps
+MethodInvocation:sourceMetaSnapshot
+MethodInvocation:sendResponse
+Class:FileChunkTransportRequestHandler
+Field:bytesSinceLastPause
+Method-name:messageReceived
+Method-returnType:void
+Method-parameters:[final RecoveryFileChunkRequest request, TransportChannel channel, Task task]
+MethodInvocation:getRecoverySafe
+MethodInvocation:recoveryId
+MethodInvocation:shardId
+MethodInvocation:target
+MethodInvocation:getIndex
+MethodInvocation:state
+MethodInvocation:sourceThrottleTimeInNanos
+MethodInvocation:addSourceThrottling
+MethodInvocation:sourceThrottleTimeInNanos
+MethodInvocation:rateLimiter
+MethodInvocation:addAndGet
+MethodInvocation:length
+MethodInvocation:content
+MethodInvocation:getMinPauseCheckBytes
+MethodInvocation:addAndGet
+MethodInvocation:pause
+MethodInvocation:addTargetThrottling
+MethodInvocation:addThrottleTime
+MethodInvocation:recoveryStats
+MethodInvocation:indexShard
+MethodInvocation:writeFileChunk
+MethodInvocation:metadata
+MethodInvocation:position
+MethodInvocation:content
+MethodInvocation:lastChunk
+MethodInvocation:totalTranslogOps
+MethodInvocation:sendResponse
+Class:RecoveryRunner
+Field:recoveryId
+Method-name:RecoveryRunner
+Method-returnType:null
+Method-parameters:[long recoveryId]
+FieldAccess:recoveryId
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:getRecovery
+MethodInvocation:error
+MethodInvocation:failRecovery
+MethodInvocation:state
+MethodInvocation:target
+MethodInvocation:debug
+Method-name:doRun
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:doRecovery

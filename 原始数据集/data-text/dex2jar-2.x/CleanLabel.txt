@@ -1,0 +1,29 @@
+Class:CleanLabel
+Method-name:transform
+Method-returnType:void
+Method-parameters:[IrMethod irMethod]
+MethodInvocation:addTrap
+MethodInvocation:addVars
+MethodInvocation:addStmt
+MethodInvocation:addAll
+MethodInvocation:rmUnused
+Method-name:addVars
+Method-returnType:void
+Method-parameters:[List<LocalVar> vars, Set<LabelStmt> uselabels]
+MethodInvocation:add
+MethodInvocation:add
+Method-name:addStmt
+Method-returnType:void
+Method-parameters:[StmtList stmts, Set<LabelStmt> labels]
+MethodInvocation:getFirst
+MethodInvocation:getNext
+MethodInvocation:add
+MethodInvocation:getTarget
+MethodInvocation:add
+MethodInvocation:add
+Method-name:addTrap
+Method-returnType:void
+Method-parameters:[List<Trap> traps, Set<LabelStmt> labels]
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add

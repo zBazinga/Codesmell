@@ -1,0 +1,65 @@
+Class:ImmutableFieldRule
+Field:FieldImmutabilityType
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTClassOrInterfaceDeclaration node, Object data]
+MethodInvocation:getDeclarations
+MethodInvocation:getScope
+MethodInvocation:findAllConstructors
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getAccessNodeParent
+MethodInvocation:isStatic
+MethodInvocation:isPrivate
+MethodInvocation:isFinal
+MethodInvocation:isVolatile
+MethodInvocation:hasLombokAnnotation
+MethodInvocation:hasIgnoredAnnotation
+MethodInvocation:initializedInConstructor
+MethodInvocation:getValue
+MethodInvocation:initializedWhenDeclared
+MethodInvocation:addViolation
+MethodInvocation:getNode
+MethodInvocation:getImage
+Method-name:initializedInConstructor
+Method-returnType:FieldImmutabilityType
+Method-parameters:[VariableNameDeclaration field, List<NameOccurrence> usages, Set<ASTConstructorDeclaration> allConstructors]
+MethodInvocation:isOnLeftHandSide
+MethodInvocation:isSelfAssignment
+MethodInvocation:getLocation
+MethodInvocation:getFirstParentOfType
+MethodInvocation:isSameClass
+MethodInvocation:inLoopOrTry
+MethodInvocation:getFirstParentOfType
+MethodInvocation:inAnonymousInnerClass
+MethodInvocation:getFirstParentOfType
+MethodInvocation:add
+MethodInvocation:getFirstParentOfType
+MethodInvocation:getFirstParentOfType
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:removeAll
+MethodInvocation:isEmpty
+Method-name:isSameClass
+Method-returnType:boolean
+Method-parameters:[VariableNameDeclaration field, ASTConstructorDeclaration constructor]
+MethodInvocation:getFirstParentOfType
+MethodInvocation:getFirstParentOfType
+MethodInvocation:getNode
+Method-name:inLoopOrTry
+Method-returnType:boolean
+Method-parameters:[Node node]
+MethodInvocation:getFirstParentOfType
+MethodInvocation:getFirstParentOfType
+MethodInvocation:getFirstParentOfType
+MethodInvocation:getFirstParentOfType
+Method-name:inAnonymousInnerClass
+Method-returnType:boolean
+Method-parameters:[Node node]
+MethodInvocation:getFirstParentOfType
+MethodInvocation:isAnonymousInnerClass
+Method-name:findAllConstructors
+Method-returnType:List<ASTConstructorDeclaration>
+Method-parameters:[ASTClassOrInterfaceDeclaration node]
+MethodInvocation:findDescendantsOfType
+MethodInvocation:getFirstChildOfType

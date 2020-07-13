@@ -1,0 +1,151 @@
+Class:NewTransformer
+Field:IGNORED
+Method-name:transform
+Method-returnType:void
+Method-parameters:[IrMethod method]
+MethodInvocation:replaceX
+MethodInvocation:replaceAST
+Method-name:replaceX
+Method-returnType:void
+Method-parameters:[IrMethod method]
+FieldAccess:vt
+MethodInvocation:getOp1
+FieldAccess:vt
+MethodInvocation:getOp2
+MethodInvocation:getOp1
+MethodInvocation:put
+MethodInvocation:size
+MethodInvocation:reIndexLocal
+MethodInvocation:makeSureUsedBeforeConstructor
+MethodInvocation:size
+MethodInvocation:replace0
+Method-name:replaceAST
+Method-returnType:void
+Method-parameters:[IrMethod method]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:findInvokeExpr
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:getRet
+MethodInvocation:getOps
+FieldAccess:vt
+MethodInvocation:getOps
+MethodInvocation:copyOfRange
+MethodInvocation:nInvokeNew
+MethodInvocation:getArgs
+MethodInvocation:getOwner
+MethodInvocation:insertBefore
+MethodInvocation:nVoidInvoke
+MethodInvocation:remove
+Method-name:replace0
+Method-returnType:void
+Method-parameters:[IrMethod method, Map<Local,TObject> init, int size]
+MethodInvocation:values
+MethodInvocation:add
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+FieldAccess:vt
+MethodInvocation:getOp1
+MethodInvocation:contains
+MethodInvocation:getOp1
+MethodInvocation:remove
+MethodInvocation:values
+MethodInvocation:insertAfter
+MethodInvocation:nAssign
+MethodInvocation:findInvokeExpr
+MethodInvocation:getOps
+MethodInvocation:copyOfRange
+MethodInvocation:nInvokeNew
+MethodInvocation:getArgs
+MethodInvocation:getOwner
+MethodInvocation:replace
+MethodInvocation:nAssign
+Method-name:makeSureUsedBeforeConstructor
+Method-returnType:void
+Method-parameters:[IrMethod method, final Map<Local,TObject> init, final int size]
+MethodInvocation:createCFG
+MethodInvocation:dfs
+Field:keepFrame
+Field:tmp
+Field:stmtTraveler
+Field:current
+Method-name:travel
+Method-returnType:Stmt
+Method-parameters:[Stmt stmt]
+FieldAccess:current
+FieldAccess:vt
+MethodInvocation:getOp1
+MethodInvocation:getOp1
+FieldAccess:vt
+MethodInvocation:getOp2
+MethodInvocation:getOp2
+FieldAccess:vt
+MethodInvocation:getOp2
+MethodInvocation:get
+MethodInvocation:travel
+MethodInvocation:getOp2
+MethodInvocation:getOp1
+Method-name:travel
+Method-returnType:Value
+Method-parameters:[Value op]
+FieldAccess:length
+MethodInvocation:getOps
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getOps
+MethodInvocation:use
+Method-name:merge
+Method-returnType:Vx[]
+Method-parameters:[Vx[] srcFrame, Vx[] distFrame, Stmt src, Stmt dist]
+MethodInvocation:arraycopy
+FieldAccess:phis
+MethodInvocation:size
+MethodInvocation:getOps
+MethodInvocation:getOp2
+Method-name:initFirstFrame
+Method-returnType:Vx[]
+Method-parameters:[Stmt first]
+Method-name:exec
+Method-returnType:Vx[]
+Method-parameters:[Vx[] frame, Stmt stmt]
+MethodInvocation:arraycopy
+MethodInvocation:travel
+MethodInvocation:size
+Method-name:use
+Method-returnType:void
+Method-parameters:[Local local]
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getValue
+MethodInvocation:remove
+Method-name:findInvokeExpr
+Method-returnType:InvokeExpr
+Method-parameters:[Stmt p, InvokeExpr ie]
+FieldAccess:vt
+MethodInvocation:getOp2
+MethodInvocation:getOp2
+MethodInvocation:getOp
+Class:TObject
+Field:invokeStmt
+Field:local
+Field:useBeforeInit
+Field:init
+Method-name:TObject
+Method-returnType:null
+Method-parameters:[Local local, AssignStmt init]
+FieldAccess:local
+FieldAccess:init
+Class:Vx
+Field:init
+Field:obj
+Method-name:Vx
+Method-returnType:null
+Method-parameters:[TObject obj, boolean init]
+FieldAccess:obj
+FieldAccess:init

@@ -1,0 +1,37 @@
+Class:TargetInsn
+Field:target
+Method-name:TargetInsn
+Method-returnType:null
+Method-parameters:[Dop opcode, SourcePosition position, RegisterSpecList registers, CodeAddress target]
+FieldAccess:target
+Method-name:withOpcode
+Method-returnType:DalvInsn
+Method-parameters:[Dop opcode]
+MethodInvocation:getPosition
+MethodInvocation:getRegisters
+Method-name:withRegisters
+Method-returnType:DalvInsn
+Method-parameters:[RegisterSpecList registers]
+MethodInvocation:getOpcode
+MethodInvocation:getPosition
+Method-name:getTarget
+Method-returnType:CodeAddress
+Method-parameters:[]
+Method-name:getTargetAddress
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getAddress
+Method-name:getTargetOffset
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getAddress
+MethodInvocation:getAddress
+Method-name:hasTargetOffset
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasAddress
+MethodInvocation:hasAddress
+Method-name:argString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:identifierString

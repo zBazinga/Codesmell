@@ -1,0 +1,49 @@
+Class:ContextAnnotationAutowireCandidateResolver
+Method-name:getLazyResolutionProxyIfNecessary
+Method-returnType:Object
+Method-parameters:[DependencyDescriptor descriptor, @Nullable String beanName]
+MethodInvocation:isLazy
+MethodInvocation:buildLazyResolutionProxy
+Method-name:isLazy
+Method-returnType:boolean
+Method-parameters:[DependencyDescriptor descriptor]
+MethodInvocation:getAnnotations
+MethodInvocation:getAnnotation
+MethodInvocation:value
+MethodInvocation:getMethodParameter
+MethodInvocation:getMethod
+MethodInvocation:getReturnType
+MethodInvocation:getAnnotation
+MethodInvocation:getAnnotatedElement
+MethodInvocation:value
+Method-name:buildLazyResolutionProxy
+Method-returnType:Object
+Method-parameters:[final DependencyDescriptor descriptor, final @Nullable String beanName]
+MethodInvocation:state
+MethodInvocation:getBeanFactory
+MethodInvocation:getBeanFactory
+Method-name:getTargetClass
+Method-returnType:Class<?>
+Method-parameters:[]
+MethodInvocation:getDependencyType
+Method-name:isStatic
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getTarget
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:doResolveDependency
+MethodInvocation:getTargetClass
+MethodInvocation:emptyMap
+MethodInvocation:emptyList
+MethodInvocation:emptySet
+MethodInvocation:getResolvableType
+Method-name:releaseTarget
+Method-returnType:void
+Method-parameters:[Object target]
+MethodInvocation:setTargetSource
+MethodInvocation:getDependencyType
+MethodInvocation:isInterface
+MethodInvocation:addInterface
+MethodInvocation:getProxy
+MethodInvocation:getBeanClassLoader

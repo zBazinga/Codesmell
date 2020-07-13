@@ -1,0 +1,53 @@
+Class:ExternalModule
+Method-name:ExternalModule
+Method-returnType:null
+Method-parameters:[ModuleContext context]
+Method-name:externalMethod
+Method-returnType:Command<T>
+Method-parameters:[@NotNull final Request<T> request]
+MethodInvocation:request
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[T response]
+MethodInvocation:onResult
+Method-name:onError
+Method-returnType:void
+Method-parameters:[RpcException e]
+MethodInvocation:onError
+Method-name:startWebAction
+Method-returnType:Command<WebActionDescriptor>
+Method-parameters:[final String webAction]
+MethodInvocation:request
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[ResponseInitWebaction response]
+MethodInvocation:onResult
+MethodInvocation:getUri
+MethodInvocation:getRegexp
+MethodInvocation:getActionHash
+Method-name:onError
+Method-returnType:void
+Method-parameters:[RpcException e]
+MethodInvocation:onError
+Method-name:completeWebAction
+Method-returnType:Command<Boolean>
+Method-parameters:[final String actionHash, final String url]
+MethodInvocation:request
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[ResponseCompleteWebaction response]
+MethodInvocation:onResult
+Method-name:onError
+Method-returnType:void
+Method-parameters:[RpcException e]
+MethodInvocation:onError
+Method-name:rawPersistentRequest
+Method-returnType:void
+Method-parameters:[String service, String method, ApiRawValue params]
+MethodInvocation:performPersistRequest
+MethodInvocation:getApiModule
+MethodInvocation:context
+Method-name:rawRequest
+Method-returnType:void
+Method-parameters:[String service, String method, ApiRawValue params]
+MethodInvocation:request

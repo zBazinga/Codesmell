@@ -1,0 +1,33 @@
+Class:StandardStreamsCapturer
+Field:standardStreamsListeners
+Field:outStream
+Field:errStream
+Method-name:start
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:startCapture
+MethodInvocation:startCapture
+Method-name:startCapture
+Method-returnType:void
+Method-parameters:[PrintStream originalStream, TeePrintStream teeStream, final boolean isOut]
+MethodInvocation:stopDelegation
+Method-name:printed
+Method-returnType:void
+Method-parameters:[String message]
+MethodInvocation:standardOut
+MethodInvocation:standardErr
+MethodInvocation:setOut
+MethodInvocation:setErr
+Method-name:stop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:stopCapture
+MethodInvocation:stopCapture
+Method-name:addStandardStreamsListener
+Method-returnType:void
+Method-parameters:[IStandardStreamsListener listener]
+MethodInvocation:add
+Method-name:removeStandardStreamsListener
+Method-returnType:void
+Method-parameters:[IStandardStreamsListener listener]
+MethodInvocation:remove

@@ -1,0 +1,31 @@
+Class:DependencyLookupProxy
+Field:searchStrategy
+Method-name:DependencyLookupProxy
+Method-returnType:null
+Method-parameters:[NodeModel delegate, ScriptContext scriptContext, DependencySearchStrategy searchStrategy]
+FieldAccess:searchStrategy
+Method-name:ofNode
+Method-returnType:Map<? extends NodeRO,Dependencies>
+Method-parameters:[]
+MethodInvocation:find
+MethodInvocation:getDelegate
+MethodInvocation:toMap
+Method-name:ofAttribute
+Method-returnType:Map<? extends NodeRO,Dependencies>
+Method-parameters:[int attributeIndex]
+MethodInvocation:getExtension
+MethodInvocation:getDelegate
+MethodInvocation:getRowCount
+MethodInvocation:getAttribute
+MethodInvocation:find
+MethodInvocation:getDelegate
+MethodInvocation:toMap
+MethodInvocation:emptyMap
+Method-name:ofAttribute
+Method-returnType:Map<? extends NodeRO,Dependencies>
+Method-parameters:[String attributeName]
+MethodInvocation:getExtension
+MethodInvocation:getDelegate
+MethodInvocation:ofAttribute
+MethodInvocation:getAttributeIndex
+MethodInvocation:emptyMap

@@ -1,0 +1,480 @@
+Class:CalciteSchema
+Field:parent
+Field:schema
+Field:name
+Field:tableMap
+Field:functionMap
+Field:typeMap
+Field:latticeMap
+Field:functionNames
+Field:nullaryFunctionMap
+Field:subSchemaMap
+Field:path
+Method-name:CalciteSchema
+Method-returnType:null
+Method-parameters:[CalciteSchema parent, Schema schema, String name, NameMap<CalciteSchema> subSchemaMap, NameMap<TableEntry> tableMap, NameMap<LatticeEntry> latticeMap, NameMap<TypeEntry> typeMap, NameMultimap<FunctionEntry> functionMap, NameSet functionNames, NameMap<FunctionEntry> nullaryFunctionMap, List<? extends List<String>> path]
+FieldAccess:parent
+FieldAccess:schema
+FieldAccess:name
+FieldAccess:tableMap
+FieldAccess:tableMap
+MethodInvocation:requireNonNull
+FieldAccess:latticeMap
+FieldAccess:latticeMap
+MethodInvocation:requireNonNull
+FieldAccess:subSchemaMap
+FieldAccess:subSchemaMap
+MethodInvocation:requireNonNull
+FieldAccess:functionMap
+FieldAccess:functionNames
+FieldAccess:nullaryFunctionMap
+FieldAccess:functionMap
+MethodInvocation:requireNonNull
+FieldAccess:functionNames
+MethodInvocation:requireNonNull
+FieldAccess:nullaryFunctionMap
+MethodInvocation:requireNonNull
+FieldAccess:typeMap
+FieldAccess:typeMap
+MethodInvocation:requireNonNull
+FieldAccess:path
+Method-name:getImplicitSubSchema
+Method-returnType:CalciteSchema
+Method-parameters:[String schemaName, boolean caseSensitive]
+Method-name:getImplicitTable
+Method-returnType:TableEntry
+Method-parameters:[String tableName, boolean caseSensitive]
+Method-name:getImplicitType
+Method-returnType:TypeEntry
+Method-parameters:[String name, boolean caseSensitive]
+Method-name:getImplicitTableBasedOnNullaryFunction
+Method-returnType:TableEntry
+Method-parameters:[String tableName, boolean caseSensitive]
+Method-name:addImplicitSubSchemaToBuilder
+Method-returnType:void
+Method-parameters:[ImmutableSortedMap.Builder<String,CalciteSchema> builder]
+Method-name:addImplicitTableToBuilder
+Method-returnType:void
+Method-parameters:[ImmutableSortedSet.Builder<String> builder]
+Method-name:addImplicitFunctionsToBuilder
+Method-returnType:void
+Method-parameters:[ImmutableList.Builder<Function> builder, String name, boolean caseSensitive]
+Method-name:addImplicitFuncNamesToBuilder
+Method-returnType:void
+Method-parameters:[ImmutableSortedSet.Builder<String> builder]
+Method-name:addImplicitTypeNamesToBuilder
+Method-returnType:void
+Method-parameters:[ImmutableSortedSet.Builder<String> builder]
+Method-name:addImplicitTablesBasedOnNullaryFunctionsToBuilder
+Method-returnType:void
+Method-parameters:[ImmutableSortedMap.Builder<String,Table> builder]
+Method-name:snapshot
+Method-returnType:CalciteSchema
+Method-parameters:[CalciteSchema parent, SchemaVersion version]
+Method-name:isCacheEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setCache
+Method-returnType:void
+Method-parameters:[boolean cache]
+Method-name:tableEntry
+Method-returnType:TableEntryImpl
+Method-parameters:[String name, Table table]
+MethodInvocation:of
+Method-name:typeEntry
+Method-returnType:TypeEntryImpl
+Method-parameters:[String name, RelProtoDataType relProtoDataType]
+Method-name:add
+Method-returnType:TableEntry
+Method-parameters:[String tableName, Table table]
+MethodInvocation:add
+MethodInvocation:of
+Method-name:add
+Method-returnType:TableEntry
+Method-parameters:[String tableName, Table table, ImmutableList<String> sqls]
+MethodInvocation:put
+Method-name:add
+Method-returnType:TypeEntry
+Method-parameters:[String name, RelProtoDataType type]
+MethodInvocation:put
+Method-name:add
+Method-returnType:FunctionEntry
+Method-parameters:[String name, Function function]
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:isEmpty
+MethodInvocation:getParameters
+MethodInvocation:put
+Method-name:add
+Method-returnType:LatticeEntry
+Method-parameters:[String name, Lattice lattice]
+MethodInvocation:containsKey
+MethodInvocation:put
+Method-name:root
+Method-returnType:CalciteSchema
+Method-parameters:[]
+Method-name:isRoot
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:path
+Method-returnType:List<String>
+Method-parameters:[String name]
+MethodInvocation:add
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:copyOf
+MethodInvocation:reverse
+Method-name:getSubSchema
+Method-returnType:CalciteSchema
+Method-parameters:[String schemaName, boolean caseSensitive]
+MethodInvocation:entrySet
+MethodInvocation:range
+MethodInvocation:getValue
+MethodInvocation:getImplicitSubSchema
+Method-name:add
+Method-returnType:CalciteSchema
+Method-parameters:[String name, Schema schema]
+Method-name:getTableBySql
+Method-returnType:TableEntry
+Method-parameters:[String sql]
+MethodInvocation:values
+MethodInvocation:map
+MethodInvocation:contains
+Method-name:getTable
+Method-returnType:TableEntry
+Method-parameters:[String tableName, boolean caseSensitive]
+MethodInvocation:entrySet
+MethodInvocation:range
+MethodInvocation:getValue
+MethodInvocation:getImplicitTable
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:plus
+Method-returnType:SchemaPlus
+Method-parameters:[]
+Method-name:from
+Method-returnType:CalciteSchema
+Method-parameters:[SchemaPlus plus]
+MethodInvocation:calciteSchema
+Method-name:getPath
+Method-returnType:List<? extends List<String>>
+Method-parameters:[]
+MethodInvocation:of
+MethodInvocation:path
+Method-name:getSubSchemaMap
+Method-returnType:NavigableMap<String,CalciteSchema>
+Method-parameters:[]
+MethodInvocation:putAll
+MethodInvocation:map
+MethodInvocation:addImplicitSubSchemaToBuilder
+MethodInvocation:build
+Method-name:getLatticeMap
+Method-returnType:NavigableMap<String,LatticeEntry>
+Method-parameters:[]
+MethodInvocation:copyOf
+MethodInvocation:map
+Method-name:getTableNames
+Method-returnType:NavigableSet<String>
+Method-parameters:[]
+MethodInvocation:addAll
+MethodInvocation:keySet
+MethodInvocation:map
+MethodInvocation:addImplicitTableToBuilder
+MethodInvocation:build
+Method-name:getTypeNames
+Method-returnType:NavigableSet<String>
+Method-parameters:[]
+MethodInvocation:addAll
+MethodInvocation:keySet
+MethodInvocation:map
+MethodInvocation:addImplicitTypeNamesToBuilder
+MethodInvocation:build
+Method-name:getType
+Method-returnType:TypeEntry
+Method-parameters:[String name, boolean caseSensitive]
+MethodInvocation:entrySet
+MethodInvocation:range
+MethodInvocation:getValue
+MethodInvocation:getImplicitType
+Method-name:getFunctions
+Method-returnType:Collection<Function>
+Method-parameters:[String name, boolean caseSensitive]
+MethodInvocation:builder
+MethodInvocation:right
+MethodInvocation:range
+MethodInvocation:add
+MethodInvocation:getFunction
+MethodInvocation:addImplicitFunctionsToBuilder
+MethodInvocation:build
+Method-name:getFunctionNames
+Method-returnType:NavigableSet<String>
+Method-parameters:[]
+MethodInvocation:addAll
+MethodInvocation:keySet
+MethodInvocation:map
+MethodInvocation:addImplicitFuncNamesToBuilder
+MethodInvocation:build
+Method-name:getTablesBasedOnNullaryFunctions
+Method-returnType:NavigableMap<String,Table>
+Method-parameters:[]
+Method-name:getTableBasedOnNullaryFunction
+Method-returnType:TableEntry
+Method-parameters:[String tableName, boolean caseSensitive]
+Method-name:createSnapshot
+Method-returnType:CalciteSchema
+Method-parameters:[SchemaVersion version]
+MethodInvocation:checkArgument
+MethodInvocation:isRoot
+MethodInvocation:snapshot
+Method-name:find
+Method-returnType:NavigableMap<String,V>
+Method-parameters:[NavigableMap<String,V> map, String s]
+MethodInvocation:range
+MethodInvocation:immutableCopyOf
+Method-name:find
+Method-returnType:Iterable<String>
+Method-parameters:[NavigableSet<String> set, String name]
+MethodInvocation:range
+MethodInvocation:immutableCopyOf
+Method-name:createRootSchema
+Method-returnType:CalciteSchema
+Method-parameters:[boolean addMetadataSchema]
+MethodInvocation:createRootSchema
+Method-name:createRootSchema
+Method-returnType:CalciteSchema
+Method-parameters:[boolean addMetadataSchema, boolean cache]
+MethodInvocation:createRootSchema
+Method-name:createRootSchema
+Method-returnType:CalciteSchema
+Method-parameters:[boolean addMetadataSchema, boolean cache, String name]
+MethodInvocation:createRootSchema
+Method-name:createRootSchema
+Method-returnType:CalciteSchema
+Method-parameters:[boolean addMetadataSchema, boolean cache, String name, Schema schema]
+MethodInvocation:add
+Method-name:removeSubSchema
+Method-returnType:boolean
+Method-parameters:[String name]
+MethodInvocation:remove
+Method-name:removeTable
+Method-returnType:boolean
+Method-parameters:[String name]
+MethodInvocation:remove
+Method-name:removeFunction
+Method-returnType:boolean
+Method-parameters:[String name]
+MethodInvocation:remove
+MethodInvocation:remove
+Method-name:removeType
+Method-returnType:boolean
+Method-parameters:[String name]
+MethodInvocation:remove
+Method-name:connect
+Method-returnType:CalciteConnection
+Method-parameters:[JavaTypeFactory typeFactory, Driver driver]
+MethodInvocation:newConnection
+Class:Entry
+Field:schema
+Field:name
+Method-name:Entry
+Method-returnType:null
+Method-parameters:[CalciteSchema schema, String name]
+FieldAccess:schema
+MethodInvocation:requireNonNull
+FieldAccess:name
+MethodInvocation:requireNonNull
+Method-name:path
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:path
+Class:TableEntry
+Field:sqls
+Method-name:TableEntry
+Method-returnType:null
+Method-parameters:[CalciteSchema schema, String name, ImmutableList<String> sqls]
+FieldAccess:sqls
+MethodInvocation:requireNonNull
+Method-name:getTable
+Method-returnType:Table
+Method-parameters:[]
+Class:TypeEntry
+Method-name:TypeEntry
+Method-returnType:null
+Method-parameters:[CalciteSchema schema, String name]
+Method-name:getType
+Method-returnType:RelProtoDataType
+Method-parameters:[]
+Class:FunctionEntry
+Method-name:FunctionEntry
+Method-returnType:null
+Method-parameters:[CalciteSchema schema, String name]
+Method-name:getFunction
+Method-returnType:Function
+Method-parameters:[]
+Method-name:isMaterialization
+Method-returnType:boolean
+Method-parameters:[]
+Class:LatticeEntry
+Method-name:LatticeEntry
+Method-returnType:null
+Method-parameters:[CalciteSchema schema, String name]
+Method-name:getLattice
+Method-returnType:Lattice
+Method-parameters:[]
+Method-name:getStarTable
+Method-returnType:TableEntry
+Method-parameters:[]
+Class:SchemaPlusImpl
+Method-name:calciteSchema
+Method-returnType:CalciteSchema
+Method-parameters:[]
+Method-name:getParentSchema
+Method-returnType:SchemaPlus
+Method-parameters:[]
+MethodInvocation:plus
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:isMutable
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isMutable
+Method-name:setCacheEnabled
+Method-returnType:void
+Method-parameters:[boolean cache]
+MethodInvocation:setCache
+Method-name:isCacheEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isCacheEnabled
+Method-name:snapshot
+Method-returnType:Schema
+Method-parameters:[SchemaVersion version]
+Method-name:getExpression
+Method-returnType:Expression
+Method-parameters:[SchemaPlus parentSchema, String name]
+MethodInvocation:getExpression
+Method-name:getTable
+Method-returnType:Table
+Method-parameters:[String name]
+MethodInvocation:getTable
+MethodInvocation:getTable
+Method-name:getTableNames
+Method-returnType:NavigableSet<String>
+Method-parameters:[]
+MethodInvocation:getTableNames
+Method-name:getType
+Method-returnType:RelProtoDataType
+Method-parameters:[String name]
+MethodInvocation:getType
+MethodInvocation:getType
+Method-name:getTypeNames
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:getTypeNames
+Method-name:getFunctions
+Method-returnType:Collection<Function>
+Method-parameters:[String name]
+MethodInvocation:getFunctions
+Method-name:getFunctionNames
+Method-returnType:NavigableSet<String>
+Method-parameters:[]
+MethodInvocation:getFunctionNames
+Method-name:getSubSchema
+Method-returnType:SchemaPlus
+Method-parameters:[String name]
+MethodInvocation:getSubSchema
+MethodInvocation:plus
+Method-name:getSubSchemaNames
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+MethodInvocation:getSubSchemaMap
+Method-name:add
+Method-returnType:SchemaPlus
+Method-parameters:[String name, Schema schema]
+MethodInvocation:add
+MethodInvocation:plus
+Method-name:unwrap
+Method-returnType:T
+Method-parameters:[Class<T> clazz]
+MethodInvocation:isInstance
+MethodInvocation:cast
+MethodInvocation:isInstance
+MethodInvocation:cast
+MethodInvocation:isInstance
+FieldAccess:schema
+MethodInvocation:cast
+FieldAccess:schema
+MethodInvocation:cast
+MethodInvocation:getDataSource
+MethodInvocation:cast
+MethodInvocation:getDataSource
+Method-name:setPath
+Method-returnType:void
+Method-parameters:[ImmutableList<ImmutableList<String>> path]
+FieldAccess:path
+Method-name:add
+Method-returnType:void
+Method-parameters:[String name, Table table]
+MethodInvocation:add
+Method-name:add
+Method-returnType:void
+Method-parameters:[String name, Function function]
+MethodInvocation:add
+Method-name:add
+Method-returnType:void
+Method-parameters:[String name, RelProtoDataType type]
+MethodInvocation:add
+Method-name:add
+Method-returnType:void
+Method-parameters:[String name, Lattice lattice]
+MethodInvocation:add
+Class:TableEntryImpl
+Field:table
+Method-name:TableEntryImpl
+Method-returnType:null
+Method-parameters:[CalciteSchema schema, String name, Table table, ImmutableList<String> sqls]
+FieldAccess:table
+MethodInvocation:requireNonNull
+Method-name:getTable
+Method-returnType:Table
+Method-parameters:[]
+Class:TypeEntryImpl
+Field:protoDataType
+Method-name:TypeEntryImpl
+Method-returnType:null
+Method-parameters:[CalciteSchema schema, String name, RelProtoDataType protoDataType]
+FieldAccess:protoDataType
+Method-name:getType
+Method-returnType:RelProtoDataType
+Method-parameters:[]
+Class:FunctionEntryImpl
+Field:function
+Method-name:FunctionEntryImpl
+Method-returnType:null
+Method-parameters:[CalciteSchema schema, String name, Function function]
+FieldAccess:function
+Method-name:getFunction
+Method-returnType:Function
+Method-parameters:[]
+Method-name:isMaterialization
+Method-returnType:boolean
+Method-parameters:[]
+Class:LatticeEntryImpl
+Field:lattice
+Field:starTableEntry
+Method-name:LatticeEntryImpl
+Method-returnType:null
+Method-parameters:[CalciteSchema schema, String name, Lattice lattice]
+FieldAccess:lattice
+MethodInvocation:createStarTable
+MethodInvocation:add
+Method-name:getLattice
+Method-returnType:Lattice
+Method-parameters:[]
+Method-name:getStarTable
+Method-returnType:TableEntry
+Method-parameters:[]

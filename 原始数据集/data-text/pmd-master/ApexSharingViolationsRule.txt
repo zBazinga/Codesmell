@@ -1,0 +1,39 @@
+Class:ApexSharingViolationsRule
+Field:localCacheOfReportedNodes
+Method-name:ApexSharingViolationsRule
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:setProperty
+MethodInvocation:setProperty
+MethodInvocation:setProperty
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTUserClass node, Object data]
+MethodInvocation:isTestMethodOrClass
+MethodInvocation:isSystemLevelClass
+MethodInvocation:isTestMethodOrClass
+MethodInvocation:isSharingPresent
+MethodInvocation:checkForSharingDeclaration
+MethodInvocation:checkForDatabaseMethods
+MethodInvocation:clear
+Method-name:checkForDatabaseMethods
+Method-returnType:void
+Method-parameters:[ASTUserClass node, Object data, boolean sharingFound]
+MethodInvocation:findDescendantsOfType
+MethodInvocation:isMethodName
+MethodInvocation:reportViolation
+Method-name:reportViolation
+Method-returnType:void
+Method-parameters:[ApexNode<?> node, Object data]
+MethodInvocation:getFirstChildOfType
+MethodInvocation:put
+MethodInvocation:addViolation
+MethodInvocation:put
+MethodInvocation:addViolation
+Method-name:checkForSharingDeclaration
+Method-returnType:void
+Method-parameters:[ApexNode<?> node, Object data, boolean sharingFound]
+MethodInvocation:foundAnyDML
+MethodInvocation:foundAnySOQLorSOSL
+MethodInvocation:isTestMethodOrClass
+MethodInvocation:reportViolation

@@ -1,0 +1,85 @@
+Class:JobLauncher
+Field:transportJobAction
+Field:transportKillJobsNodeAction
+Field:nodeOperationTrees
+Field:jobId
+Field:clusterService
+Field:jobSetup
+Field:tasksService
+Field:indicesService
+Field:enableProfiling
+Field:executor
+Field:hasDirectResponse
+Method-name:JobLauncher
+Method-returnType:null
+Method-parameters:[UUID jobId, ClusterService clusterService, JobSetup jobSetup, TasksService tasksService, IndicesService indicesService, TransportJobAction transportJobAction, TransportKillJobsNodeAction transportKillJobsNodeAction, List<NodeOperationTree> nodeOperationTrees, boolean enableProfiling, Executor executor]
+FieldAccess:jobId
+FieldAccess:clusterService
+FieldAccess:jobSetup
+FieldAccess:tasksService
+FieldAccess:indicesService
+FieldAccess:transportJobAction
+FieldAccess:transportKillJobsNodeAction
+FieldAccess:nodeOperationTrees
+FieldAccess:enableProfiling
+FieldAccess:executor
+MethodInvocation:nodeOperations
+MethodInvocation:hasDirectResponseDownstream
+MethodInvocation:downstreamNodes
+Method-name:execute
+Method-returnType:void
+Method-parameters:[RowConsumer consumer, TransactionContext txnCtx]
+Method-name:executeBulk
+Method-returnType:List<CompletableFuture<Long>>
+Method-parameters:[TransactionContext txnCtx]
+MethodInvocation:flatMap
+MethodInvocation:stream
+MethodInvocation:stream
+MethodInvocation:nodeOperations
+MethodInvocation:groupByServer
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:collectingAndThen
+MethodInvocation:summingLong
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:resultFuture
+MethodInvocation:add
+MethodInvocation:leaf
+MethodInvocation:setupTasks
+MethodInvocation:singletonList
+MethodInvocation:failedFuture
+Method-name:setupTasks
+Method-returnType:void
+Method-parameters:[TransactionContext txnCtx, Map<String,Collection<NodeOperation>> operationByServer, List<ExecutionPhase> handlerPhases, List<RowConsumer> handlerConsumers]
+Method-name:maybeInstrumentProfiler
+Method-returnType:SharedShardContexts
+Method-parameters:[RootTask.Builder builder]
+MethodInvocation:profilingContext
+MethodInvocation:getIndexReader
+MethodInvocation:identity
+Method-name:accountFailureForRemoteOperations
+Method-returnType:void
+Method-parameters:[Map<String,Collection<NodeOperation>> operationByServer, InitializationTracker initializationTracker, List<Tuple<ExecutionPhase,RowConsumer>> handlerPhaseAndReceiver, Throwable t]
+MethodInvocation:accept
+MethodInvocation:v2
+MethodInvocation:size
+MethodInvocation:jobInitializationFailed
+Method-name:createHandlerPhaseAndReceivers
+Method-returnType:List<Tuple<ExecutionPhase,RowConsumer>>
+Method-parameters:[List<ExecutionPhase> handlerPhases, List<RowConsumer> handlerReceivers, InitializationTracker initializationTracker]
+MethodInvocation:listIterator
+MethodInvocation:next
+MethodInvocation:add
+Method-name:sendJobRequests
+Method-returnType:void
+Method-parameters:[TransactionContext txnCtx, String localNodeId, Map<String,Collection<NodeOperation>> operationByServer, List<PageBucketReceiver> pageBucketReceivers, List<Tuple<ExecutionPhase,RowConsumer>> handlerPhases, int bucketIdx, InitializationTracker initializationTracker]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:sessionSettings
+MethodInvocation:getValue
+MethodInvocation:execute
+MethodInvocation:asActionListener
+MethodInvocation:execute

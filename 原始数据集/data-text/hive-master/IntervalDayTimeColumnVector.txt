@@ -1,0 +1,115 @@
+Class:IntervalDayTimeColumnVector
+Field:totalSeconds
+Field:nanos
+Field:scratchIntervalDayTime
+Field:scratchWritable
+Method-name:IntervalDayTimeColumnVector
+Method-returnType:null
+Method-parameters:[]
+Method-name:IntervalDayTimeColumnVector
+Method-returnType:null
+Method-parameters:[int len]
+Method-name:getLength
+Method-returnType:int
+Method-parameters:[]
+Method-name:getTotalSeconds
+Method-returnType:long
+Method-parameters:[int elementNum]
+Method-name:getNanos
+Method-returnType:long
+Method-parameters:[int elementNum]
+Method-name:getDouble
+Method-returnType:double
+Method-parameters:[int elementNum]
+MethodInvocation:getDouble
+MethodInvocation:asScratchIntervalDayTime
+Method-name:intervalDayTimeUpdate
+Method-returnType:void
+Method-parameters:[HiveIntervalDayTime intervalDayTime, int elementNum]
+MethodInvocation:set
+Method-name:asScratchIntervalDayTime
+Method-returnType:HiveIntervalDayTime
+Method-parameters:[int elementNum]
+MethodInvocation:set
+Method-name:getScratchIntervalDayTime
+Method-returnType:HiveIntervalDayTime
+Method-parameters:[]
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[HiveIntervalDayTime intervalDayTime, int elementNum]
+MethodInvocation:compareTo
+MethodInvocation:asScratchIntervalDayTime
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[int elementNum1, IntervalDayTimeColumnVector intervalDayTimeColVector2, int elementNum2]
+MethodInvocation:compareTo
+MethodInvocation:asScratchIntervalDayTime
+MethodInvocation:asScratchIntervalDayTime
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[IntervalDayTimeColumnVector intervalDayTimeColVector1, int elementNum1, int elementNum2]
+MethodInvocation:compareTo
+MethodInvocation:asScratchIntervalDayTime
+MethodInvocation:asScratchIntervalDayTime
+Method-name:setElement
+Method-returnType:void
+Method-parameters:[int outputElementNum, int inputElementNum, ColumnVector inputColVector]
+Method-name:flatten
+Method-returnType:void
+Method-parameters:[boolean selectedInUse, int[] sel, int size]
+MethodInvocation:flattenPush
+MethodInvocation:fill
+MethodInvocation:fill
+MethodInvocation:flattenRepeatingNulls
+MethodInvocation:flattenNoNulls
+Method-name:set
+Method-returnType:void
+Method-parameters:[int elementNum, HiveIntervalDayTime intervalDayTime]
+FieldAccess:totalSeconds
+MethodInvocation:getTotalSeconds
+FieldAccess:nanos
+MethodInvocation:getNanos
+Method-name:setFromScratchIntervalDayTime
+Method-returnType:void
+Method-parameters:[int elementNum]
+FieldAccess:totalSeconds
+MethodInvocation:getTotalSeconds
+FieldAccess:nanos
+MethodInvocation:getNanos
+Method-name:setNullValue
+Method-returnType:void
+Method-parameters:[int elementNum]
+Method-name:copySelected
+Method-returnType:void
+Method-parameters:[boolean selectedInUse, int[] sel, int size, ColumnVector outputColVector]
+MethodInvocation:fill
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+Method-name:fill
+Method-returnType:void
+Method-parameters:[HiveIntervalDayTime intervalDayTime]
+MethodInvocation:getTotalSeconds
+MethodInvocation:getNanos
+Method-name:getScratchWritable
+Method-returnType:Writable
+Method-parameters:[]
+Method-name:setScratchWritable
+Method-returnType:void
+Method-parameters:[Writable scratchWritable]
+FieldAccess:scratchWritable
+Method-name:stringifyValue
+Method-returnType:void
+Method-parameters:[StringBuilder buffer, int row]
+MethodInvocation:set
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+Method-name:ensureSize
+Method-returnType:void
+Method-parameters:[int size, boolean preserveData]
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+Method-name:shallowCopyTo
+Method-returnType:void
+Method-parameters:[ColumnVector otherCv]

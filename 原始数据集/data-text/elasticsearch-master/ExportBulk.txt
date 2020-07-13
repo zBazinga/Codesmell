@@ -1,0 +1,79 @@
+Class:ExportBulk
+Field:name
+Field:threadContext
+Field:closed
+Method-name:ExportBulk
+Method-returnType:null
+Method-parameters:[String name, ThreadContext threadContext]
+FieldAccess:name
+MethodInvocation:requireNonNull
+FieldAccess:threadContext
+MethodInvocation:requireNonNull
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:add
+Method-returnType:void
+Method-parameters:[Collection<MonitoringDoc> docs]
+MethodInvocation:get
+MethodInvocation:doAdd
+Method-name:doAdd
+Method-returnType:void
+Method-parameters:[Collection<MonitoringDoc> docs]
+Method-name:flush
+Method-returnType:void
+Method-parameters:[ActionListener<Void> listener]
+MethodInvocation:compareAndSet
+MethodInvocation:doFlush
+MethodInvocation:onResponse
+Method-name:doFlush
+Method-returnType:void
+Method-parameters:[ActionListener<Void> listener]
+Method-name:doExport
+Method-returnType:void
+Method-parameters:[final Collection<MonitoringDoc> docs, final ActionListener<Void> listener, Exporters exporters]
+MethodInvocation:add
+MethodInvocation:set
+MethodInvocation:flush
+MethodInvocation:wrap
+MethodInvocation:get
+MethodInvocation:onResponse
+MethodInvocation:onFailure
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:addSuppressed
+MethodInvocation:get
+MethodInvocation:onFailure
+Class:Compound
+Field:bulks
+Method-name:Compound
+Method-returnType:null
+Method-parameters:[List<ExportBulk> bulks, ThreadContext threadContext]
+FieldAccess:bulks
+Method-name:doAdd
+Method-returnType:void
+Method-parameters:[Collection<MonitoringDoc> docs]
+MethodInvocation:add
+MethodInvocation:addExportException
+Method-name:doFlush
+Method-returnType:void
+Method-parameters:[ActionListener<Void> listener]
+MethodInvocation:flush
+MethodInvocation:wrap
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:addExportException
+MethodInvocation:get
+MethodInvocation:addSuppressed
+MethodInvocation:get
+MethodInvocation:onResponse
+MethodInvocation:newExceptionHandlingListener
+MethodInvocation:run
+Method-name:newExceptionHandlingListener
+Method-returnType:ActionListener<Void>
+Method-parameters:[SetOnce<ExportException> exceptionRef, ActionListener<Void> listener]
+MethodInvocation:wrap
+MethodInvocation:get
+MethodInvocation:onResponse
+MethodInvocation:onFailure
+MethodInvocation:get

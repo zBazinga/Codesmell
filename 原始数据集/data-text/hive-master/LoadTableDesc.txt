@@ -1,0 +1,161 @@
+Class:LoadTableDesc
+Field:serialVersionUID
+Field:loadFileType
+Field:dpCtx
+Field:lbCtx
+Field:inheritTableSpecs
+Field:inheritLocation
+Field:stmtId
+Field:currentWriteId
+Field:isInsertOverwrite
+Field:isDirectInsert
+Field:mdTable
+Field:table
+Field:partitionSpec
+Method-name:getWriteTypeOther
+Method-returnType:WriteEntity.WriteType
+Method-parameters:[AcidUtils.Operation operation, MoveTask moveTask]
+MethodInvocation:getLoadFileType
+MethodInvocation:isInsertOverwrite
+Field:LoadFileType
+Method-name:LoadTableDesc
+Method-returnType:null
+Method-parameters:[final LoadTableDesc o]
+MethodInvocation:getSourcePath
+MethodInvocation:getWriteType
+FieldAccess:loadFileType
+FieldAccess:dpCtx
+FieldAccess:lbCtx
+FieldAccess:inheritTableSpecs
+FieldAccess:inheritLocation
+FieldAccess:currentWriteId
+FieldAccess:table
+FieldAccess:partitionSpec
+Method-name:LoadTableDesc
+Method-returnType:null
+Method-parameters:[final Path sourcePath, final TableDesc table, final Map<String,String> partitionSpec, final LoadFileType loadFileType, final AcidUtils.Operation writeType, Long currentWriteId]
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:getProperties
+MethodInvocation:getTableName
+MethodInvocation:init
+Method-name:LoadTableDesc
+Method-returnType:null
+Method-parameters:[final Path sourcePath, final TableDesc table, final Map<String,String> partitionSpec, final LoadFileType loadFileType, final Long writeId]
+Method-name:LoadTableDesc
+Method-returnType:null
+Method-parameters:[final Path sourcePath, final TableDesc table, final Map<String,String> partitionSpec, final AcidUtils.Operation writeType, Long currentWriteId]
+Method-name:LoadTableDesc
+Method-returnType:null
+Method-parameters:[final Path sourcePath, final org.apache.hadoop.hive.ql.plan.TableDesc table, final Map<String,String> partitionSpec]
+Method-name:LoadTableDesc
+Method-returnType:null
+Method-parameters:[final Path sourcePath, final TableDesc table, final DynamicPartitionCtx dpCtx, final AcidUtils.Operation writeType, boolean isReplace, Long writeId]
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:getTableName
+FieldAccess:dpCtx
+MethodInvocation:getPartSpec
+MethodInvocation:init
+MethodInvocation:getPartSpec
+MethodInvocation:init
+Method-name:init
+Method-returnType:void
+Method-parameters:[final org.apache.hadoop.hive.ql.plan.TableDesc table, final Map<String,String> partitionSpec, final LoadFileType loadFileType, Long writeId]
+FieldAccess:table
+FieldAccess:partitionSpec
+FieldAccess:loadFileType
+FieldAccess:currentWriteId
+Method-name:getTable
+Method-returnType:TableDesc
+Method-parameters:[]
+Method-name:setTable
+Method-returnType:void
+Method-parameters:[final org.apache.hadoop.hive.ql.plan.TableDesc table]
+FieldAccess:table
+Method-name:getPartitionSpec
+Method-returnType:Map<String,String>
+Method-parameters:[]
+Method-name:setPartitionSpec
+Method-returnType:void
+Method-parameters:[final Map<String,String> partitionSpec]
+FieldAccess:partitionSpec
+Method-name:getReplace
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getLoadFileType
+Method-returnType:LoadFileType
+Method-parameters:[]
+Method-name:isMmTableExplain
+Method-returnType:Boolean
+Method-parameters:[]
+MethodInvocation:isMmTable
+Method-name:isMmTable
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isInsertOnlyTable
+MethodInvocation:getProperties
+Method-name:setLoadFileType
+Method-returnType:void
+Method-parameters:[LoadFileType loadFileType]
+FieldAccess:loadFileType
+Method-name:getDPCtx
+Method-returnType:DynamicPartitionCtx
+Method-parameters:[]
+Method-name:setDPCtx
+Method-returnType:void
+Method-parameters:[final DynamicPartitionCtx dpCtx]
+FieldAccess:dpCtx
+Method-name:getInheritTableSpecs
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getInheritLocation
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setInheritTableSpecs
+Method-returnType:void
+Method-parameters:[boolean inheritTableSpecs]
+FieldAccess:inheritTableSpecs
+Method-name:isInsertOverwrite
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:isInsertOverwrite
+Method-name:setInsertOverwrite
+Method-returnType:void
+Method-parameters:[boolean v]
+FieldAccess:isInsertOverwrite
+Method-name:setIsDirectInsert
+Method-returnType:void
+Method-parameters:[boolean isDirectInsert]
+FieldAccess:isDirectInsert
+Method-name:isDirectInsert
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:isDirectInsert
+Method-name:getLbCtx
+Method-returnType:ListBucketingCtx
+Method-parameters:[]
+Method-name:setLbCtx
+Method-returnType:void
+Method-parameters:[ListBucketingCtx lbCtx]
+FieldAccess:lbCtx
+Method-name:getWriteId
+Method-returnType:long
+Method-parameters:[]
+Method-name:setWriteId
+Method-returnType:void
+Method-parameters:[long writeId]
+Method-name:getStmtId
+Method-returnType:int
+Method-parameters:[]
+Method-name:setStmtId
+Method-returnType:void
+Method-parameters:[int stmtId]
+FieldAccess:stmtId
+Method-name:getMdTable
+Method-returnType:Table
+Method-parameters:[]
+Method-name:setMdTable
+Method-returnType:void
+Method-parameters:[Table mdTable]
+FieldAccess:mdTable

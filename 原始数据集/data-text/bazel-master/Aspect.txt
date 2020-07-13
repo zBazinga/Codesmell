@@ -1,0 +1,79 @@
+Class:Aspect
+Field:definitionCache
+MethodInvocation:build
+MethodInvocation:newBuilder
+MethodInvocation:from
+MethodInvocation:build
+MethodInvocation:newBuilder
+MethodInvocation:from
+MethodInvocation:getDefinition
+Field:aspectDescriptor
+Field:aspectDefinition
+Method-name:Aspect
+Method-returnType:null
+Method-parameters:[AspectClass aspectClass, AspectDefinition aspectDefinition, AspectParameters parameters]
+FieldAccess:aspectDescriptor
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+FieldAccess:aspectDefinition
+MethodInvocation:checkNotNull
+Method-name:forNative
+Method-returnType:Aspect
+Method-parameters:[NativeAspectClass nativeAspectClass, AspectParameters parameters]
+MethodInvocation:getUnchecked
+MethodInvocation:getUnchecked
+Method-name:forNative
+Method-returnType:Aspect
+Method-parameters:[NativeAspectClass nativeAspectClass]
+MethodInvocation:forNative
+Method-name:forSkylark
+Method-returnType:Aspect
+Method-parameters:[SkylarkAspectClass skylarkAspectClass, AspectDefinition aspectDefinition, AspectParameters parameters]
+Method-name:getAspectClass
+Method-returnType:AspectClass
+Method-parameters:[]
+MethodInvocation:getAspectClass
+Method-name:getParameters
+Method-returnType:AspectParameters
+Method-parameters:[]
+MethodInvocation:getParameters
+Method-name:getDescriptor
+Method-returnType:AspectDescriptor
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:format
+MethodInvocation:toString
+Method-name:getDefinition
+Method-returnType:AspectDefinition
+Method-parameters:[]
+Method-name:isAttributeValueExplicitlySpecified
+Method-returnType:boolean
+Method-parameters:[Attribute attribute]
+Class:AspectCodec
+Method-name:getEncodedClass
+Method-returnType:Class<Aspect>
+Method-parameters:[]
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[SerializationContext context, Aspect obj, CodedOutputStream codedOut]
+MethodInvocation:serialize
+MethodInvocation:getDescriptor
+MethodInvocation:getAspectClass
+MethodInvocation:getDescriptor
+MethodInvocation:writeBoolNoTag
+MethodInvocation:serialize
+MethodInvocation:getDefinition
+Method-name:deserialize
+Method-returnType:Aspect
+Method-parameters:[DeserializationContext context, CodedInputStream codedIn]
+MethodInvocation:deserialize
+MethodInvocation:readBool
+MethodInvocation:forNative
+MethodInvocation:getAspectClass
+MethodInvocation:getParameters
+MethodInvocation:deserialize
+MethodInvocation:forSkylark
+MethodInvocation:getAspectClass
+MethodInvocation:getParameters

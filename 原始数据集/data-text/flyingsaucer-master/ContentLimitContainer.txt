@@ -1,0 +1,78 @@
+Class:ContentLimitContainer
+Field:_parent
+Field:_initialPageNo
+Field:_contentLimits
+Field:_lastPage
+Method-name:ContentLimitContainer
+Method-returnType:null
+Method-parameters:[LayoutContext c, int startAbsY]
+MethodInvocation:getPageNo
+MethodInvocation:getPage
+Method-name:getInitialPageNo
+Method-returnType:int
+Method-parameters:[]
+Method-name:getLastPageNo
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getContentLimit
+Method-returnType:ContentLimit
+Method-parameters:[int pageNo]
+MethodInvocation:getContentLimit
+Method-name:getContentLimit
+Method-returnType:ContentLimit
+Method-parameters:[int pageNo, boolean addAsNeeded]
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:size
+MethodInvocation:get
+Method-name:updateTop
+Method-returnType:void
+Method-parameters:[LayoutContext c, int absY]
+MethodInvocation:getPage
+MethodInvocation:updateTop
+MethodInvocation:getContentLimit
+MethodInvocation:getPageNo
+MethodInvocation:getParent
+MethodInvocation:updateTop
+Method-name:updateBottom
+Method-returnType:void
+Method-parameters:[LayoutContext c, int absY]
+MethodInvocation:getPage
+MethodInvocation:updateBottom
+MethodInvocation:getContentLimit
+MethodInvocation:getPageNo
+MethodInvocation:getParent
+MethodInvocation:updateBottom
+Method-name:getPage
+Method-returnType:PageBox
+Method-parameters:[LayoutContext c, int absY]
+MethodInvocation:getLastPage
+MethodInvocation:getTop
+MethodInvocation:getBottom
+MethodInvocation:getPage
+MethodInvocation:getRootLayer
+MethodInvocation:setLastPage
+Method-name:getLastPage
+Method-returnType:PageBox
+Method-parameters:[]
+MethodInvocation:getParent
+MethodInvocation:getParent
+Method-name:setLastPage
+Method-returnType:void
+Method-parameters:[PageBox page]
+MethodInvocation:getParent
+MethodInvocation:getParent
+Method-name:getParent
+Method-returnType:ContentLimitContainer
+Method-parameters:[]
+Method-name:setParent
+Method-returnType:void
+Method-parameters:[ContentLimitContainer parent]
+Method-name:isContainsMultiplePages
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

@@ -1,0 +1,82 @@
+Class:RuleContext
+Field:LOG
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:report
+Field:sourceCodeFile
+Field:languageVersion
+Field:attributes
+Field:ignoreExceptions
+Method-name:RuleContext
+Method-returnType:null
+Method-parameters:[]
+Method-name:RuleContext
+Method-returnType:null
+Method-parameters:[RuleContext ruleContext]
+FieldAccess:attributes
+MethodInvocation:addListeners
+FieldAccess:report
+MethodInvocation:getListeners
+MethodInvocation:getReport
+Method-name:getReport
+Method-returnType:Report
+Method-parameters:[]
+Method-name:setReport
+Method-returnType:void
+Method-parameters:[Report report]
+FieldAccess:report
+Method-name:getSourceCodeFile
+Method-returnType:File
+Method-parameters:[]
+Method-name:setSourceCodeFile
+Method-returnType:void
+Method-parameters:[File sourceCodeFile]
+FieldAccess:sourceCodeFile
+Method-name:getSourceCodeFilename
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:setSourceCodeFilename
+Method-returnType:void
+Method-parameters:[String filename]
+MethodInvocation:warning
+Method-name:getLanguageVersion
+Method-returnType:LanguageVersion
+Method-parameters:[]
+FieldAccess:languageVersion
+Method-name:setLanguageVersion
+Method-returnType:void
+Method-parameters:[LanguageVersion languageVersion]
+FieldAccess:languageVersion
+Method-name:setAttribute
+Method-returnType:boolean
+Method-parameters:[String name, Object value]
+MethodInvocation:putIfAbsent
+FieldAccess:attributes
+Method-name:getAttribute
+Method-returnType:Object
+Method-parameters:[String name]
+MethodInvocation:get
+FieldAccess:attributes
+Method-name:removeAttribute
+Method-returnType:Object
+Method-parameters:[String name]
+MethodInvocation:remove
+FieldAccess:attributes
+Method-name:setIgnoreExceptions
+Method-returnType:void
+Method-parameters:[boolean ignoreExceptions]
+FieldAccess:ignoreExceptions
+Method-name:isIgnoreExceptions
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:parse
+Method-returnType:Node
+Method-parameters:[Reader sourceCode, Parser parser, SourceCodeProcessor sourceCodeProcessor]
+MethodInvocation:startOperation
+MethodInvocation:parse
+MethodInvocation:valueOf
+MethodInvocation:getSourceCodeFile
+MethodInvocation:suppress
+MethodInvocation:getReport
+MethodInvocation:getSuppressMap

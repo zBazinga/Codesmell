@@ -1,0 +1,55 @@
+Class:EnumerableTableFunctionScan
+Method-name:EnumerableTableFunctionScan
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traits, List<RelNode> inputs, Type elementType, RelDataType rowType, RexNode call, Set<RelColumnMapping> columnMappings]
+Method-name:copy
+Method-returnType:EnumerableTableFunctionScan
+Method-parameters:[RelTraitSet traitSet, List<RelNode> inputs, RexNode rexCall, Type elementType, RelDataType rowType, Set<RelColumnMapping> columnMappings]
+MethodInvocation:getCluster
+Method-name:implement
+Method-returnType:Result
+Method-parameters:[EnumerableRelImplementor implementor, Prefer pref]
+MethodInvocation:isImplementorDefined
+MethodInvocation:getCall
+MethodInvocation:tvfImplementorBasedImplement
+MethodInvocation:defaultTableFunctionImplement
+Method-name:isImplementorDefined
+Method-returnType:boolean
+Method-parameters:[RexCall call]
+MethodInvocation:getOperator
+MethodInvocation:get
+MethodInvocation:getOperator
+Method-name:isQueryable
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getCall
+MethodInvocation:getCall
+MethodInvocation:getOperator
+MethodInvocation:getOperator
+MethodInvocation:getFunction
+MethodInvocation:getFunction
+MethodInvocation:isAssignableFrom
+MethodInvocation:getReturnType
+Method-name:defaultTableFunctionImplement
+Method-returnType:Result
+Method-parameters:[EnumerableRelImplementor implementor, Prefer pref]
+MethodInvocation:getElementType
+MethodInvocation:getFieldCount
+MethodInvocation:isQueryable
+MethodInvocation:getElementType
+MethodInvocation:isAssignableFrom
+MethodInvocation:getElementType
+MethodInvocation:of
+MethodInvocation:getTypeFactory
+MethodInvocation:getRowType
+MethodInvocation:forAggregation
+MethodInvocation:getTypeFactory
+MethodInvocation:getCluster
+MethodInvocation:getConformance
+MethodInvocation:setCorrelates
+MethodInvocation:add
+MethodInvocation:return_
+MethodInvocation:translate
+MethodInvocation:getCall
+MethodInvocation:result
+MethodInvocation:toBlock

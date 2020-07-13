@@ -1,0 +1,107 @@
+Class:MysqlSqlDialect
+Field:MYSQL_TYPE_SYSTEM
+Method-name:getMaxPrecision
+Method-returnType:int
+Method-parameters:[SqlTypeName typeName]
+Field:DEFAULT_CONTEXT
+MethodInvocation:withNullCollation
+MethodInvocation:withUnquotedCasing
+MethodInvocation:withDataTypeSystem
+MethodInvocation:withIdentifierQuoteString
+MethodInvocation:withDatabaseProduct
+Field:DEFAULT
+Field:ISNULL_FUNCTION
+Field:majorVersion
+Method-name:MysqlSqlDialect
+Method-returnType:null
+Method-parameters:[Context context]
+MethodInvocation:databaseMajorVersion
+Method-name:supportsCharSet
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:requiresAliasForFromItems
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:supportsAliasedValues
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:unparseOffsetFetch
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlNode offset, SqlNode fetch]
+MethodInvocation:unparseFetchUsingLimit
+Method-name:emulateNullDirection
+Method-returnType:SqlNode
+Method-parameters:[SqlNode node, boolean nullsFirst, boolean desc]
+MethodInvocation:emulateNullDirectionWithIsNull
+Method-name:supportsAggregateFunction
+Method-returnType:boolean
+Method-parameters:[SqlKind kind]
+Method-name:supportsNestedAggregations
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:supportsGroupByWithRollup
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getCalendarPolicy
+Method-returnType:CalendarPolicy
+Method-parameters:[]
+Method-name:getCastSpec
+Method-returnType:SqlNode
+Method-parameters:[RelDataType type]
+MethodInvocation:getSqlTypeName
+MethodInvocation:getMaxPrecision
+MethodInvocation:getTypeSystem
+MethodInvocation:getPrecision
+MethodInvocation:getSqlTypeName
+MethodInvocation:getSqlTypeName
+Method-name:rewriteSingleValueExpr
+Method-returnType:SqlNode
+Method-parameters:[SqlNode aggCall]
+MethodInvocation:operand
+MethodInvocation:createNull
+MethodInvocation:of
+MethodInvocation:createCall
+MethodInvocation:of
+MethodInvocation:createExactNumeric
+MethodInvocation:createExactNumeric
+MethodInvocation:of
+MethodInvocation:createCall
+MethodInvocation:createCall
+MethodInvocation:debug
+Method-name:unparseCall
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlCall call, int leftPrec, int rightPrec]
+MethodInvocation:getKind
+MethodInvocation:operandCount
+MethodInvocation:unparseFloor
+Method-name:unparseFloor
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlCall call]
+MethodInvocation:operand
+MethodInvocation:getValue
+MethodInvocation:print
+MethodInvocation:startList
+MethodInvocation:print
+MethodInvocation:unparse
+MethodInvocation:operand
+MethodInvocation:print
+MethodInvocation:endList
+MethodInvocation:print
+MethodInvocation:startList
+MethodInvocation:unparse
+MethodInvocation:operand
+MethodInvocation:sep
+MethodInvocation:print
+MethodInvocation:endList
+Method-name:unparseSqlIntervalQualifier
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlIntervalQualifier qualifier, RelDataTypeSystem typeSystem]
+MethodInvocation:useDefaultFractionalSecondPrecision
+MethodInvocation:name
+MethodInvocation:validate
+MethodInvocation:keyword
+MethodInvocation:keyword
+MethodInvocation:name
+Method-name:validate
+Method-returnType:TimeUnit
+Method-parameters:[TimeUnit timeUnit]

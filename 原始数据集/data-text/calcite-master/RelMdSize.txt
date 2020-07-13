@@ -1,0 +1,174 @@
+Class:RelMdSize
+Field:SOURCE
+MethodInvocation:reflectiveSource
+Field:BYTES_PER_CHARACTER
+Method-name:RelMdSize
+Method-returnType:null
+Method-parameters:[]
+Method-name:getDef
+Method-returnType:MetadataDef<BuiltInMetadata.Size>
+Method-parameters:[]
+Method-name:averageRowSize
+Method-returnType:Double
+Method-parameters:[RelNode rel, RelMetadataQuery mq]
+MethodInvocation:getAverageColumnSizes
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:zip
+MethodInvocation:averageFieldValueSize
+Method-name:averageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[RelNode rel, RelMetadataQuery mq]
+Method-name:averageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[Filter rel, RelMetadataQuery mq]
+MethodInvocation:getAverageColumnSizes
+MethodInvocation:getInput
+Method-name:averageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[Sort rel, RelMetadataQuery mq]
+MethodInvocation:getAverageColumnSizes
+MethodInvocation:getInput
+Method-name:averageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[TableModify rel, RelMetadataQuery mq]
+MethodInvocation:getAverageColumnSizes
+MethodInvocation:getInput
+Method-name:averageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[Exchange rel, RelMetadataQuery mq]
+MethodInvocation:getAverageColumnSizes
+MethodInvocation:getInput
+Method-name:averageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[Project rel, RelMetadataQuery mq]
+MethodInvocation:getAverageColumnSizesNotNull
+MethodInvocation:getInput
+MethodInvocation:builder
+MethodInvocation:getProjects
+MethodInvocation:add
+MethodInvocation:averageRexSize
+MethodInvocation:build
+Method-name:averageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[Calc rel, RelMetadataQuery mq]
+MethodInvocation:getAverageColumnSizesNotNull
+MethodInvocation:getInput
+MethodInvocation:builder
+MethodInvocation:forEach
+FieldAccess:left
+MethodInvocation:split
+MethodInvocation:getProgram
+MethodInvocation:add
+MethodInvocation:averageRexSize
+MethodInvocation:build
+Method-name:averageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[TableScan rel, RelMetadataQuery mq]
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:builder
+MethodInvocation:add
+MethodInvocation:averageTypeValueSize
+MethodInvocation:getType
+MethodInvocation:build
+Method-name:averageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[Aggregate rel, RelMetadataQuery mq]
+MethodInvocation:getAverageColumnSizesNotNull
+MethodInvocation:getInput
+MethodInvocation:builder
+MethodInvocation:getGroupSet
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:getAggCallList
+MethodInvocation:add
+MethodInvocation:averageTypeValueSize
+MethodInvocation:build
+Method-name:averageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[Join rel, RelMetadataQuery mq]
+MethodInvocation:averageJoinColumnSizes
+Method-name:averageJoinColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[Join rel, RelMetadataQuery mq]
+MethodInvocation:projectsRight
+MethodInvocation:getJoinType
+MethodInvocation:getLeft
+MethodInvocation:getRight
+MethodInvocation:getAverageColumnSizes
+MethodInvocation:getAverageColumnSizes
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:toArray
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:copyOf
+Method-name:averageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[Intersect rel, RelMetadataQuery mq]
+MethodInvocation:getAverageColumnSizes
+MethodInvocation:getInput
+Method-name:averageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[Minus rel, RelMetadataQuery mq]
+MethodInvocation:getAverageColumnSizes
+MethodInvocation:getInput
+Method-name:averageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[Union rel, RelMetadataQuery mq]
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getInputs
+MethodInvocation:getAverageColumnSizes
+MethodInvocation:add
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:builder
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:build
+Method-name:averageFieldValueSize
+Method-returnType:Double
+Method-parameters:[RelDataTypeField field]
+MethodInvocation:averageTypeValueSize
+MethodInvocation:getType
+Method-name:averageTypeValueSize
+Method-returnType:Double
+Method-parameters:[RelDataType type]
+MethodInvocation:getSqlTypeName
+MethodInvocation:getPrecision
+MethodInvocation:min
+MethodInvocation:getPrecision
+MethodInvocation:getPrecision
+MethodInvocation:min
+MethodInvocation:getPrecision
+MethodInvocation:getFieldList
+MethodInvocation:averageTypeValueSize
+MethodInvocation:getType
+Method-name:typeValueSize
+Method-returnType:double
+Method-parameters:[RelDataType type, Comparable value]
+MethodInvocation:getSqlTypeName
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:getValue
+Method-name:averageRexSize
+Method-returnType:Double
+Method-parameters:[RexNode node, List<Double> inputColumnSizes]
+MethodInvocation:getKind
+MethodInvocation:get
+MethodInvocation:getIndex
+MethodInvocation:typeValueSize
+MethodInvocation:getType
+MethodInvocation:getValueAs
+MethodInvocation:getOperands
+MethodInvocation:getSqlTypeName
+MethodInvocation:getType
+MethodInvocation:getSqlTypeName
+MethodInvocation:getType
+MethodInvocation:averageRexSize
+MethodInvocation:averageTypeValueSize
+MethodInvocation:getType

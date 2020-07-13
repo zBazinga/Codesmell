@@ -1,0 +1,159 @@
+Class:SimpleCharStream
+Field:staticFlag
+Field:bufsize
+Field:available
+Field:tokenBegin
+Field:bufpos
+Field:bufline
+Field:bufcolumn
+Field:column
+Field:line
+Field:prevCharIsCR
+Field:prevCharIsLF
+Field:inputStream
+Field:buffer
+Field:maxNextCharInd
+Field:inBuf
+Field:tabSize
+Method-name:setTabSize
+Method-returnType:void
+Method-parameters:[int i]
+Method-name:getTabSize
+Method-returnType:int
+Method-parameters:[int i]
+Method-name:ExpandBuff
+Method-returnType:void
+Method-parameters:[boolean wrapAround]
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+MethodInvocation:getMessage
+Method-name:FillBuff
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:ExpandBuff
+MethodInvocation:ExpandBuff
+MethodInvocation:read
+MethodInvocation:close
+MethodInvocation:backup
+Method-name:BeginToken
+Method-returnType:char
+Method-parameters:[]
+MethodInvocation:readChar
+Method-name:UpdateLineColumn
+Method-returnType:void
+Method-parameters:[char c]
+Method-name:readChar
+Method-returnType:char
+Method-parameters:[]
+MethodInvocation:FillBuff
+MethodInvocation:UpdateLineColumn
+Method-name:getColumn
+Method-returnType:int
+Method-parameters:[]
+Method-name:getLine
+Method-returnType:int
+Method-parameters:[]
+Method-name:getEndColumn
+Method-returnType:int
+Method-parameters:[]
+Method-name:getEndLine
+Method-returnType:int
+Method-parameters:[]
+Method-name:getBeginColumn
+Method-returnType:int
+Method-parameters:[]
+Method-name:getBeginLine
+Method-returnType:int
+Method-parameters:[]
+Method-name:backup
+Method-returnType:void
+Method-parameters:[int amount]
+Method-name:SimpleCharStream
+Method-returnType:null
+Method-parameters:[java.io.Reader dstream, int startline, int startcolumn, int buffersize]
+Method-name:SimpleCharStream
+Method-returnType:null
+Method-parameters:[java.io.Reader dstream, int startline, int startcolumn]
+Method-name:SimpleCharStream
+Method-returnType:null
+Method-parameters:[java.io.Reader dstream]
+Method-name:ReInit
+Method-returnType:void
+Method-parameters:[java.io.Reader dstream, int startline, int startcolumn, int buffersize]
+Method-name:ReInit
+Method-returnType:void
+Method-parameters:[java.io.Reader dstream, int startline, int startcolumn]
+MethodInvocation:ReInit
+Method-name:ReInit
+Method-returnType:void
+Method-parameters:[java.io.Reader dstream]
+MethodInvocation:ReInit
+Method-name:SimpleCharStream
+Method-returnType:null
+Method-parameters:[java.io.InputStream dstream, String encoding, int startline, int startcolumn, int buffersize]
+Method-name:SimpleCharStream
+Method-returnType:null
+Method-parameters:[java.io.InputStream dstream, int startline, int startcolumn, int buffersize]
+Method-name:SimpleCharStream
+Method-returnType:null
+Method-parameters:[java.io.InputStream dstream, String encoding, int startline, int startcolumn]
+Method-name:SimpleCharStream
+Method-returnType:null
+Method-parameters:[java.io.InputStream dstream, int startline, int startcolumn]
+Method-name:SimpleCharStream
+Method-returnType:null
+Method-parameters:[java.io.InputStream dstream, String encoding]
+Method-name:SimpleCharStream
+Method-returnType:null
+Method-parameters:[java.io.InputStream dstream]
+Method-name:ReInit
+Method-returnType:void
+Method-parameters:[java.io.InputStream dstream, String encoding, int startline, int startcolumn, int buffersize]
+MethodInvocation:ReInit
+Method-name:ReInit
+Method-returnType:void
+Method-parameters:[java.io.InputStream dstream, int startline, int startcolumn, int buffersize]
+MethodInvocation:ReInit
+Method-name:ReInit
+Method-returnType:void
+Method-parameters:[java.io.InputStream dstream, String encoding]
+MethodInvocation:ReInit
+Method-name:ReInit
+Method-returnType:void
+Method-parameters:[java.io.InputStream dstream]
+MethodInvocation:ReInit
+Method-name:ReInit
+Method-returnType:void
+Method-parameters:[java.io.InputStream dstream, String encoding, int startline, int startcolumn]
+MethodInvocation:ReInit
+Method-name:ReInit
+Method-returnType:void
+Method-parameters:[java.io.InputStream dstream, int startline, int startcolumn]
+MethodInvocation:ReInit
+Method-name:GetImage
+Method-returnType:String
+Method-parameters:[]
+Method-name:GetSuffix
+Method-returnType:char[]
+Method-parameters:[int len]
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+Method-name:Done
+Method-returnType:void
+Method-parameters:[]
+Method-name:adjustBeginLineColumn
+Method-returnType:void
+Method-parameters:[int newLine, int newCol]
+Method-name:ReInitOther
+Method-returnType:void
+Method-parameters:[int lexState, SSPTParserTokenManager ssptParserTokenManager]
+MethodInvocation:ReInit
+MethodInvocation:SwitchTo

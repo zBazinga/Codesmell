@@ -1,0 +1,277 @@
+Class:ImplicitOutputsFunction
+Field:DEFAULT_RULE_ATTRIBUTE_GETTER
+Method-name:get
+Method-returnType:Set<String>
+Method-parameters:[AttributeMap rule, String attr]
+MethodInvocation:attributeValues
+Field:NONE
+Method-name:getImplicitOutputs
+Method-returnType:Iterable<String>
+Method-parameters:[EventHandler eventHandler, AttributeMap rule]
+MethodInvocation:emptyList
+Field:PERCENT_ESCAPER
+MethodInvocation:build
+MethodInvocation:addEscape
+MethodInvocation:builder
+Method-name:fromTemplates
+Method-returnType:SafeImplicitOutputsFunction
+Method-parameters:[String... templates]
+MethodInvocation:fromTemplates
+MethodInvocation:asList
+Method-name:fromTemplates
+Method-returnType:SafeImplicitOutputsFunction
+Method-parameters:[final Iterable<String> templates]
+Method-name:fromUnsafeTemplates
+Method-returnType:ImplicitOutputsFunction
+Method-parameters:[Iterable<String> templates]
+Method-name:fromFunctions
+Method-returnType:SafeImplicitOutputsFunction
+Method-parameters:[SafeImplicitOutputsFunction... functions]
+MethodInvocation:fromFunctions
+MethodInvocation:asList
+Method-name:fromFunctions
+Method-returnType:SafeImplicitOutputsFunction
+Method-parameters:[final Iterable<SafeImplicitOutputsFunction> functions]
+Method-name:attributeValues
+Method-returnType:Set<String>
+Method-parameters:[AttributeMap rule, String attrName]
+MethodInvocation:equals
+MethodInvocation:getParentDirectory
+MethodInvocation:create
+MethodInvocation:getName
+MethodInvocation:segmentCount
+MethodInvocation:singleton
+MethodInvocation:singleton
+MethodInvocation:getPathString
+MethodInvocation:equals
+MethodInvocation:singleton
+MethodInvocation:getBaseName
+MethodInvocation:create
+MethodInvocation:getName
+MethodInvocation:getAttributeType
+MethodInvocation:emptySet
+MethodInvocation:singleton
+MethodInvocation:get
+MethodInvocation:newLinkedHashSet
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:singleton
+MethodInvocation:removeExtension
+MethodInvocation:getName
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:get
+MethodInvocation:removeExtension
+MethodInvocation:getName
+MethodInvocation:toCollection
+MethodInvocation:get
+MethodInvocation:singleton
+MethodInvocation:getName
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:get
+MethodInvocation:toCollection
+Method-name:createPlaceholderSubstitutionFormatString
+Method-returnType:String
+Method-parameters:[String template, Collection<String> placeholders]
+MethodInvocation:createPlaceholderSubstitutionFormatStringRecursive
+Method-name:createPlaceholderSubstitutionFormatStringRecursive
+Method-returnType:String
+Method-parameters:[String template, Collection<String> placeholders, StringBuilder formatBuilder]
+MethodInvocation:indexOf
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:escape
+MethodInvocation:indexOf
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:escape
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:escape
+MethodInvocation:substring
+MethodInvocation:add
+MethodInvocation:substring
+MethodInvocation:createPlaceholderSubstitutionFormatStringRecursive
+MethodInvocation:substring
+Method-name:substitutePlaceholderIntoTemplate
+Method-returnType:ImmutableList<String>
+Method-parameters:[String template, AttributeMap rule]
+MethodInvocation:substitutePlaceholderIntoTemplate
+Method-name:substitutePlaceholderIntoTemplate
+Method-returnType:ImmutableList<String>
+Method-parameters:[String template, AttributeMap rule, AttributeValueGetter attributeGetter]
+MethodInvocation:parse
+MethodInvocation:substituteAttributes
+Method-name:substitutePlaceholderIntoUnsafeTemplate
+Method-returnType:ImmutableList<String>
+Method-parameters:[String unsafeTemplate, AttributeMap rule, AttributeValueGetter attributeGetter]
+MethodInvocation:parse
+MethodInvocation:attributeNames
+MethodInvocation:isConfigurable
+MethodInvocation:format
+MethodInvocation:substituteAttributes
+Method-name:getImplicitOutputs
+Method-returnType:Iterable<String>
+Method-parameters:[EventHandler eventHandler, AttributeMap rule]
+Method-name:get
+Method-returnType:Set<String>
+Method-parameters:[AttributeMap rule, String attr]
+Class:SkylarkImplicitOutputsFunction
+Method-name:calculateOutputs
+Method-returnType:ImmutableMap<String,String>
+Method-parameters:[EventHandler eventHandler, AttributeMap map]
+Method-name:getImplicitOutputs
+Method-returnType:Iterable<String>
+Method-parameters:[EventHandler eventHandler, AttributeMap map]
+MethodInvocation:values
+MethodInvocation:calculateOutputs
+Class:SkylarkImplicitOutputsFunctionWithCallback
+Field:callback
+Field:loc
+Method-name:SkylarkImplicitOutputsFunctionWithCallback
+Method-returnType:null
+Method-parameters:[StarlarkCallbackHelper callback, Location loc]
+FieldAccess:callback
+FieldAccess:loc
+Method-name:calculateOutputs
+Method-returnType:ImmutableMap<String,String>
+Method-parameters:[EventHandler eventHandler, AttributeMap map]
+MethodInvocation:getAttributeNames
+MethodInvocation:getAttributeType
+MethodInvocation:isConfigurable
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:getSkylarkName
+MethodInvocation:fromJava
+MethodInvocation:create
+MethodInvocation:builder
+MethodInvocation:entrySet
+MethodInvocation:castMap
+MethodInvocation:call
+MethodInvocation:getImplicitOutputs
+MethodInvocation:fromTemplates
+MethodInvocation:getValue
+MethodInvocation:isEmpty
+MethodInvocation:format
+MethodInvocation:getKey
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getOnlyElement
+MethodInvocation:build
+MethodInvocation:getMessage
+Class:SkylarkImplicitOutputsFunctionWithMap
+Field:outputMap
+Method-name:SkylarkImplicitOutputsFunctionWithMap
+Method-returnType:null
+Method-parameters:[ImmutableMap<String,String> outputMap]
+FieldAccess:outputMap
+Method-name:calculateOutputs
+Method-returnType:ImmutableMap<String,String>
+Method-parameters:[EventHandler eventHandler, AttributeMap map]
+MethodInvocation:builder
+MethodInvocation:entrySet
+MethodInvocation:fromUnsafeTemplates
+MethodInvocation:of
+MethodInvocation:getValue
+MethodInvocation:getImplicitOutputs
+MethodInvocation:isEmpty
+MethodInvocation:format
+MethodInvocation:getKey
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getOnlyElement
+MethodInvocation:build
+Class:SafeImplicitOutputsFunction
+Method-name:getImplicitOutputs
+Method-returnType:Iterable<String>
+Method-parameters:[EventHandler eventHandler, AttributeMap map]
+Class:TemplateImplicitOutputsFunction
+Field:templates
+Method-name:TemplateImplicitOutputsFunction
+Method-returnType:null
+Method-parameters:[Iterable<String> templates]
+FieldAccess:templates
+Method-name:getImplicitOutputs
+Method-returnType:Iterable<String>
+Method-parameters:[EventHandler eventHandler, AttributeMap rule]
+MethodInvocation:substitutePlaceholderIntoTemplate
+MethodInvocation:isEmpty
+MethodInvocation:addAll
+MethodInvocation:build
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:joinEnglishList
+Class:UnsafeTemplatesImplicitOutputsFunction
+Field:templates
+Method-name:UnsafeTemplatesImplicitOutputsFunction
+Method-returnType:null
+Method-parameters:[Iterable<String> templates]
+FieldAccess:templates
+Method-name:getImplicitOutputs
+Method-returnType:Iterable<String>
+Method-parameters:[EventHandler eventHandler, AttributeMap rule]
+MethodInvocation:substitutePlaceholderIntoUnsafeTemplate
+MethodInvocation:isEmpty
+MethodInvocation:addAll
+MethodInvocation:build
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:joinEnglishList
+Class:FunctionCombinationImplicitOutputsFunction
+Field:functions
+Method-name:FunctionCombinationImplicitOutputsFunction
+Method-returnType:null
+Method-parameters:[Iterable<SafeImplicitOutputsFunction> functions]
+FieldAccess:functions
+Method-name:getImplicitOutputs
+Method-returnType:Iterable<String>
+Method-parameters:[EventHandler eventHandler, AttributeMap rule]
+MethodInvocation:addAll
+MethodInvocation:getImplicitOutputs
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:joinEnglishList
+Class:ParsedTemplate
+Method-name:parse
+Method-returnType:ParsedTemplate
+Method-parameters:[String rawTemplate]
+MethodInvocation:newArrayList
+MethodInvocation:createPlaceholderSubstitutionFormatString
+MethodInvocation:isEmpty
+MethodInvocation:of
+Method-name:template
+Method-returnType:String
+Method-parameters:[]
+Method-name:formatStr
+Method-returnType:String
+Method-parameters:[]
+Method-name:attributeNames
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:substituteAttributes
+Method-returnType:ImmutableList<String>
+Method-parameters:[AttributeMap attributeMap, AttributeValueGetter attributeGetter]
+MethodInvocation:isEmpty
+MethodInvocation:attributeNames
+MethodInvocation:of
+MethodInvocation:template
+MethodInvocation:newArrayListWithCapacity
+MethodInvocation:size
+MethodInvocation:attributeNames
+MethodInvocation:attributeNames
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:of
+MethodInvocation:add
+MethodInvocation:cartesianProduct
+MethodInvocation:add
+MethodInvocation:format
+MethodInvocation:formatStr
+MethodInvocation:toArray
+MethodInvocation:build

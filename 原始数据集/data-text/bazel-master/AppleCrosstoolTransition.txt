@@ -1,0 +1,36 @@
+Class:AppleCrosstoolTransition
+Field:APPLE_CROSSTOOL_TRANSITION
+Method-name:setAppleCrosstoolTransitionConfiguration
+Method-returnType:void
+Method-parameters:[BuildOptions from, BuildOptions to, String cpu]
+FieldAccess:appleCrosstoolTop
+MethodInvocation:get
+FieldAccess:appleLibcTop
+MethodInvocation:get
+FieldAccess:cppCompiler
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:equals
+MethodInvocation:equals
+FieldAccess:configurationDistinguisher
+MethodInvocation:get
+FieldAccess:cppCompiler
+MethodInvocation:get
+FieldAccess:libcTopLabel
+MethodInvocation:get
+FieldAccess:fissionModes
+MethodInvocation:get
+MethodInvocation:of
+FieldAccess:platforms
+MethodInvocation:get
+MethodInvocation:of
+Method-name:patch
+Method-returnType:BuildOptions
+Method-parameters:[BuildOptions buildOptions]
+MethodInvocation:clone
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:cpuStringForTarget
+MethodInvocation:determineSingleArchitecture
+MethodInvocation:setAppleCrosstoolTransitionConfiguration

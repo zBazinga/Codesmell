@@ -1,0 +1,37 @@
+Class:Layout
+Method-name:flow
+Method-returnType:Layout
+Method-parameters:[]
+Method-name:weighted
+Method-returnType:Layout
+Method-parameters:[int... weights]
+Method-name:compute
+Method-returnType:int[]
+Method-parameters:[boolean spaced, int totalLength, int[] actualLengths, int[] minLengths]
+Method-name:withColumnLayout
+Method-returnType:TableElement
+Method-parameters:[TableElement tableElement]
+MethodInvocation:setColumnLayout
+Class:Weighted
+Field:weights
+Method-name:Weighted
+Method-returnType:null
+Method-parameters:[int... weights]
+FieldAccess:weights
+MethodInvocation:clone
+Method-name:getWeights
+Method-returnType:int[]
+Method-parameters:[]
+MethodInvocation:clone
+Method-name:compute
+Method-returnType:int[]
+Method-parameters:[boolean spaced, int length, int[] actualLengths, int[] minLengths]
+MethodInvocation:min
+MethodInvocation:abs
+MethodInvocation:abs
+Field:RTL
+Method-name:compute
+Method-returnType:int[]
+Method-parameters:[boolean spaced, int length, int[] actualLengths, int[] minLengths]
+MethodInvocation:clone
+MethodInvocation:copyOf

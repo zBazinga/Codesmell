@@ -1,0 +1,47 @@
+Class:ThrottlingAllocationDecider
+Field:logger
+MethodInvocation:getLogger
+Field:DEFAULT_CLUSTER_ROUTING_ALLOCATION_NODE_CONCURRENT_RECOVERIES
+Field:DEFAULT_CLUSTER_ROUTING_ALLOCATION_NODE_INITIAL_PRIMARIES_RECOVERIES
+Field:NAME
+Field:CLUSTER_ROUTING_ALLOCATION_NODE_CONCURRENT_RECOVERIES_SETTING
+MethodInvocation:toString
+MethodInvocation:parseInt
+Field:CLUSTER_ROUTING_ALLOCATION_NODE_INITIAL_PRIMARIES_RECOVERIES_SETTING
+MethodInvocation:intSetting
+Field:CLUSTER_ROUTING_ALLOCATION_NODE_CONCURRENT_INCOMING_RECOVERIES_SETTING
+MethodInvocation:parseInt
+Field:CLUSTER_ROUTING_ALLOCATION_NODE_CONCURRENT_OUTGOING_RECOVERIES_SETTING
+MethodInvocation:parseInt
+Field:primariesInitialRecoveries
+Field:concurrentIncomingRecoveries
+Field:concurrentOutgoingRecoveries
+Method-name:ThrottlingAllocationDecider
+Method-returnType:null
+Method-parameters:[Settings settings, ClusterSettings clusterSettings]
+FieldAccess:primariesInitialRecoveries
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:addSettingsUpdateConsumer
+MethodInvocation:addSettingsUpdateConsumer
+MethodInvocation:addSettingsUpdateConsumer
+MethodInvocation:debug
+Method-name:setConcurrentIncomingRecoverries
+Method-returnType:void
+Method-parameters:[int concurrentIncomingRecoveries]
+FieldAccess:concurrentIncomingRecoveries
+Method-name:setConcurrentOutgoingRecoverries
+Method-returnType:void
+Method-parameters:[int concurrentOutgoingRecoveries]
+FieldAccess:concurrentOutgoingRecoveries
+Method-name:setPrimariesInitialRecoveries
+Method-returnType:void
+Method-parameters:[int primariesInitialRecoveries]
+FieldAccess:primariesInitialRecoveries
+Method-name:canAllocate
+Method-returnType:Decision
+Method-parameters:[ShardRouting shardRouting, RoutingNode node, RoutingAllocation allocation]
+Method-name:initializingShard
+Method-returnType:ShardRouting
+Method-parameters:[ShardRouting shardRouting, String currentNodeId]

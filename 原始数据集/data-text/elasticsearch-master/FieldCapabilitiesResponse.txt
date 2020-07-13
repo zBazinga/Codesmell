@@ -1,0 +1,119 @@
+Class:FieldCapabilitiesResponse
+Field:INDICES_FIELD
+Field:FIELDS_FIELD
+Field:indices
+Field:responseMap
+Field:indexResponses
+Method-name:FieldCapabilitiesResponse
+Method-returnType:null
+Method-parameters:[String[] indices, Map<String,Map<String,FieldCapabilities>> responseMap]
+MethodInvocation:emptyList
+Method-name:FieldCapabilitiesResponse
+Method-returnType:null
+Method-parameters:[List<FieldCapabilitiesIndexResponse> indexResponses]
+MethodInvocation:emptyMap
+Method-name:FieldCapabilitiesResponse
+Method-returnType:null
+Method-parameters:[String[] indices, Map<String,Map<String,FieldCapabilities>> responseMap, List<FieldCapabilitiesIndexResponse> indexResponses]
+FieldAccess:responseMap
+MethodInvocation:requireNonNull
+FieldAccess:indexResponses
+MethodInvocation:requireNonNull
+FieldAccess:indices
+Method-name:FieldCapabilitiesResponse
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:onOrAfter
+MethodInvocation:getVersion
+MethodInvocation:readStringArray
+FieldAccess:responseMap
+MethodInvocation:readMap
+MethodInvocation:readList
+Method-name:FieldCapabilitiesResponse
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:emptyMap
+MethodInvocation:emptyList
+Method-name:getIndices
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:get
+Method-returnType:Map<String,Map<String,FieldCapabilities>>
+Method-parameters:[]
+Method-name:getIndexResponses
+Method-returnType:List<FieldCapabilitiesIndexResponse>
+Method-parameters:[]
+Method-name:getField
+Method-returnType:Map<String,FieldCapabilities>
+Method-parameters:[String field]
+MethodInvocation:get
+Method-name:readField
+Method-returnType:Map<String,FieldCapabilities>
+Method-parameters:[StreamInput in]
+MethodInvocation:readMap
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:onOrAfter
+MethodInvocation:getVersion
+MethodInvocation:writeStringArray
+MethodInvocation:writeMap
+MethodInvocation:writeList
+Method-name:writeField
+Method-returnType:void
+Method-parameters:[StreamOutput out, Map<String,FieldCapabilities> map]
+MethodInvocation:writeMap
+MethodInvocation:writeTo
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:size
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:endObject
+Method-name:fromXContent
+Method-returnType:FieldCapabilitiesResponse
+Method-parameters:[XContentParser parser]
+MethodInvocation:parse
+Field:PARSER
+MethodInvocation:emptyList
+MethodInvocation:toArray
+MethodInvocation:stream
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:toMap
+MethodInvocation:declareStringArray
+MethodInvocation:optionalConstructorArg
+MethodInvocation:declareNamedObjects
+MethodInvocation:constructorArg
+MethodInvocation:parseTypeToCapabilities
+Method-name:parseTypeToCapabilities
+Method-returnType:Map<String,FieldCapabilities>
+Method-parameters:[XContentParser parser, String name]
+MethodInvocation:ensureExpectedToken
+MethodInvocation:nextToken
+MethodInvocation:nextToken
+MethodInvocation:ensureExpectedToken
+MethodInvocation:currentName
+MethodInvocation:fromXContent
+MethodInvocation:put
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString

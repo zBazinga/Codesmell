@@ -1,0 +1,129 @@
+Class:OrderByFragmentParser
+Field:LOG
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:context
+Field:columnReferences
+Method-name:OrderByFragmentParser
+Method-returnType:null
+Method-parameters:[TokenStream lexer, TranslationContext context]
+FieldAccess:context
+Method-name:getColumnReferences
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:quotedIdentifier
+Method-returnType:AST
+Method-parameters:[AST ident]
+MethodInvocation:quote
+MethodInvocation:getDialect
+MethodInvocation:getText
+MethodInvocation:add
+MethodInvocation:create
+MethodInvocation:getASTFactory
+Method-name:quotedString
+Method-returnType:AST
+Method-parameters:[AST ident]
+MethodInvocation:create
+MethodInvocation:getASTFactory
+MethodInvocation:quote
+MethodInvocation:getDialect
+MethodInvocation:getText
+Method-name:isFunctionName
+Method-returnType:boolean
+Method-parameters:[AST ast]
+MethodInvocation:getFirstChild
+MethodInvocation:equals
+MethodInvocation:getText
+MethodInvocation:findSQLFunction
+MethodInvocation:getSqlFunctionRegistry
+MethodInvocation:getText
+MethodInvocation:hasParenthesesIfNoArguments
+Method-name:resolveFunction
+Method-returnType:AST
+Method-parameters:[AST ast]
+Method-name:resolveFunctionArgument
+Method-returnType:String
+Method-parameters:[AST argumentNode]
+MethodInvocation:getText
+MethodInvocation:contains
+MethodInvocation:adjustTemplateReferences
+MethodInvocation:startsWith
+MethodInvocation:endsWith
+MethodInvocation:add
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:compile
+MethodInvocation:matcher
+MethodInvocation:find
+MethodInvocation:add
+MethodInvocation:group
+Method-name:resolveIdent
+Method-returnType:AST
+Method-parameters:[AST ident]
+MethodInvocation:getText
+MethodInvocation:map
+MethodInvocation:getColumnMapper
+MethodInvocation:create
+MethodInvocation:getASTFactory
+MethodInvocation:makeColumnReference
+MethodInvocation:processSqlValueReference
+MethodInvocation:create
+MethodInvocation:getASTFactory
+MethodInvocation:addChild
+MethodInvocation:processSqlValueReference
+Method-name:processSqlValueReference
+Method-returnType:AST
+Method-parameters:[SqlValueReference sqlValueReference]
+MethodInvocation:isInstance
+MethodInvocation:getColumnName
+MethodInvocation:create
+MethodInvocation:getASTFactory
+MethodInvocation:makeColumnReference
+MethodInvocation:getFormulaFragment
+MethodInvocation:adjustTemplateReferences
+MethodInvocation:create
+MethodInvocation:getASTFactory
+Method-name:makeColumnReference
+Method-returnType:String
+Method-parameters:[String text]
+MethodInvocation:add
+Field:TEMPLATE_MARKER_LENGTH
+MethodInvocation:length
+Method-name:adjustTemplateReferences
+Method-returnType:String
+Method-parameters:[String template]
+MethodInvocation:length
+MethodInvocation:indexOf
+MethodInvocation:isValidIdentifierCharacter
+MethodInvocation:charAt
+MethodInvocation:substring
+MethodInvocation:replace
+MethodInvocation:substring
+MethodInvocation:add
+MethodInvocation:indexOf
+MethodInvocation:length
+Method-name:isValidIdentifierCharacter
+Method-returnType:boolean
+Method-parameters:[char c]
+MethodInvocation:isLetter
+MethodInvocation:isDigit
+Method-name:postProcessSortSpecification
+Method-returnType:AST
+Method-parameters:[AST sortSpec]
+Field:traceDepth
+Method-name:traceIn
+Method-returnType:void
+Method-parameters:[String ruleName]
+MethodInvocation:isTraceEnabled
+MethodInvocation:repeat
+MethodInvocation:trace
+Method-name:traceOut
+Method-returnType:void
+Method-parameters:[String ruleName]
+MethodInvocation:isTraceEnabled
+MethodInvocation:repeat
+MethodInvocation:trace
+Method-name:trace
+Method-returnType:void
+Method-parameters:[String msg]
+MethodInvocation:trace

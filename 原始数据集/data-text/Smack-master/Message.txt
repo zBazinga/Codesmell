@@ -1,0 +1,345 @@
+Class:Message
+Field:ELEMENT
+Field:BODY
+Field:type
+Method-name:Message
+Method-returnType:null
+Method-parameters:[]
+Method-name:Message
+Method-returnType:null
+Method-parameters:[Jid to]
+MethodInvocation:setTo
+Method-name:Message
+Method-returnType:null
+Method-parameters:[Jid to, Type type]
+MethodInvocation:setType
+Method-name:Message
+Method-returnType:null
+Method-parameters:[Jid to, String body]
+MethodInvocation:setBody
+Method-name:Message
+Method-returnType:null
+Method-parameters:[String to, String body]
+MethodInvocation:from
+Method-name:Message
+Method-returnType:null
+Method-parameters:[Jid to, ExtensionElement extensionElement]
+MethodInvocation:addExtension
+Method-name:Message
+Method-returnType:null
+Method-parameters:[MessageBuilder messageBuilder]
+Method-name:Message
+Method-returnType:null
+Method-parameters:[Message other]
+FieldAccess:type
+Method-name:getType
+Method-returnType:Type
+Method-parameters:[]
+Method-name:setType
+Method-returnType:void
+Method-parameters:[Type type]
+FieldAccess:type
+Method-name:getSubject
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSubject
+Method-name:getSubject
+Method-returnType:String
+Method-parameters:[String language]
+MethodInvocation:getMessageSubject
+Method-name:getMessageSubject
+Method-returnType:Subject
+Method-parameters:[String language]
+MethodInvocation:determineLanguage
+MethodInvocation:getSubjects
+MethodInvocation:equals
+MethodInvocation:equals
+FieldAccess:language
+Method-name:getSubjects
+Method-returnType:Set<Subject>
+Method-parameters:[]
+MethodInvocation:getExtensions
+MethodInvocation:size
+MethodInvocation:addAll
+Method-name:setSubject
+Method-returnType:void
+Method-parameters:[String subject]
+MethodInvocation:removeSubject
+MethodInvocation:addSubject
+Method-name:addSubject
+Method-returnType:Subject
+Method-parameters:[String language, String subject]
+MethodInvocation:determineLanguage
+MethodInvocation:getExtensions
+MethodInvocation:equals
+MethodInvocation:getLanguage
+MethodInvocation:addExtension
+Method-name:removeSubject
+Method-returnType:boolean
+Method-parameters:[String language]
+MethodInvocation:determineLanguage
+MethodInvocation:getExtensions
+MethodInvocation:equals
+MethodInvocation:removeSubject
+Method-name:removeSubject
+Method-returnType:boolean
+Method-parameters:[Subject subject]
+MethodInvocation:removeExtension
+Method-name:getSubjectLanguages
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getMessageSubject
+MethodInvocation:getExtensions
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:unmodifiableList
+Method-name:getBody
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getBody
+Method-name:getBody
+Method-returnType:String
+Method-parameters:[String language]
+MethodInvocation:getMessageBody
+Method-name:getMessageBody
+Method-returnType:Body
+Method-parameters:[String language]
+MethodInvocation:determineLanguage
+MethodInvocation:getBodies
+MethodInvocation:equals
+MethodInvocation:equals
+FieldAccess:language
+Method-name:getBodies
+Method-returnType:Set<Body>
+Method-parameters:[]
+MethodInvocation:getExtensions
+MethodInvocation:size
+MethodInvocation:add
+Method-name:setBody
+Method-returnType:void
+Method-parameters:[CharSequence body]
+MethodInvocation:toString
+MethodInvocation:setBody
+Method-name:setBody
+Method-returnType:void
+Method-parameters:[String body]
+MethodInvocation:removeBody
+MethodInvocation:addBody
+Method-name:addBody
+Method-returnType:Body
+Method-parameters:[String language, String body]
+MethodInvocation:determineLanguage
+MethodInvocation:removeBody
+MethodInvocation:addExtension
+Method-name:removeBody
+Method-returnType:boolean
+Method-parameters:[String language]
+MethodInvocation:determineLanguage
+MethodInvocation:getBodies
+MethodInvocation:getLanguage
+MethodInvocation:equals
+MethodInvocation:removeExtension
+Method-name:removeBody
+Method-returnType:boolean
+Method-parameters:[Body body]
+MethodInvocation:removeExtension
+Method-name:getBodyLanguages
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getMessageBody
+MethodInvocation:getBodies
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:unmodifiableList
+Method-name:getThread
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getExtension
+MethodInvocation:getThread
+Method-name:setThread
+Method-returnType:void
+Method-parameters:[String thread]
+MethodInvocation:addExtension
+Method-name:determineLanguage
+Method-returnType:String
+Method-parameters:[String language]
+MethodInvocation:equals
+FieldAccess:language
+FieldAccess:language
+Method-name:getElementName
+Method-returnType:String
+Method-parameters:[]
+Method-name:asBuilder
+Method-returnType:MessageBuilder
+Method-parameters:[]
+MethodInvocation:buildMessageFrom
+MethodInvocation:getStanzaId
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:logCommonAttributes
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:toXML
+Method-returnType:XmlStringBuilder
+Method-parameters:[XmlEnvironment enclosingXmlEnvironment]
+MethodInvocation:addCommonAttributes
+MethodInvocation:optAttribute
+MethodInvocation:rightAngleBracket
+MethodInvocation:appendErrorIfExists
+MethodInvocation:append
+MethodInvocation:getExtensions
+MethodInvocation:closeElement
+Method-name:clone
+Method-returnType:Message
+Method-parameters:[]
+Class:Subject
+Field:ELEMENT
+Field:NAMESPACE
+Field:QNAME
+Field:subject
+Field:language
+Method-name:Subject
+Method-returnType:null
+Method-parameters:[String language, String subject]
+FieldAccess:language
+FieldAccess:subject
+Method-name:getLanguage
+Method-returnType:String
+Method-parameters:[]
+Method-name:getSubject
+Method-returnType:String
+Method-parameters:[]
+Field:hashCodeCache
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getHashCode
+MethodInvocation:append
+MethodInvocation:append
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+MethodInvocation:append
+MethodInvocation:append
+Method-name:getElementName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getNamespace
+Method-returnType:String
+Method-parameters:[]
+Method-name:toXML
+Method-returnType:XmlStringBuilder
+Method-parameters:[org.jivesoftware.smack.packet.XmlEnvironment enclosingNamespace]
+MethodInvocation:rightAngleBracket
+MethodInvocation:escape
+MethodInvocation:closeElement
+MethodInvocation:getElementName
+Class:Body
+Field:ELEMENT
+Field:NAMESPACE
+Field:QNAME
+Field:BodyElementNamespace
+Field:xmlNamespace
+Method-name:BodyElementNamespace
+Method-returnType:null
+Method-parameters:[String xmlNamespace]
+FieldAccess:xmlNamespace
+Method-name:getNamespace
+Method-returnType:String
+Method-parameters:[]
+Field:message
+Field:language
+Field:namespace
+Method-name:Body
+Method-returnType:null
+Method-parameters:[String language, String message]
+Method-name:Body
+Method-returnType:null
+Method-parameters:[String language, String message, BodyElementNamespace namespace]
+FieldAccess:language
+FieldAccess:message
+FieldAccess:namespace
+MethodInvocation:requireNonNull
+Method-name:getLanguage
+Method-returnType:String
+Method-parameters:[]
+Method-name:getMessage
+Method-returnType:String
+Method-parameters:[]
+Field:hashCodeCache
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getHashCode
+MethodInvocation:append
+MethodInvocation:append
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+MethodInvocation:append
+MethodInvocation:append
+Method-name:getElementName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getNamespace
+Method-returnType:String
+Method-parameters:[]
+Method-name:toXML
+Method-returnType:XmlStringBuilder
+Method-parameters:[XmlEnvironment enclosingXmlEnvironment]
+MethodInvocation:rightAngleBracket
+MethodInvocation:escape
+MethodInvocation:closeElement
+MethodInvocation:getElementName
+Class:Thread
+Field:ELEMENT
+Field:NAMESPACE
+Field:QNAME
+Field:PARENT_ATTRIBUTE_NAME
+Field:thread
+Field:parent
+Method-name:Thread
+Method-returnType:null
+Method-parameters:[String thread]
+Method-name:Thread
+Method-returnType:null
+Method-parameters:[String thread, String parent]
+FieldAccess:thread
+MethodInvocation:requireNotNullNorEmpty
+FieldAccess:parent
+MethodInvocation:requireNullOrNotEmpty
+Method-name:getThread
+Method-returnType:String
+Method-parameters:[]
+Method-name:getParent
+Method-returnType:String
+Method-parameters:[]
+Method-name:getElementName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getNamespace
+Method-returnType:String
+Method-parameters:[]
+Method-name:getQName
+Method-returnType:QName
+Method-parameters:[]
+Method-name:toXML
+Method-returnType:XmlStringBuilder
+Method-parameters:[XmlEnvironment xmlEnvironment]
+MethodInvocation:optAttribute
+MethodInvocation:rightAngleBracket
+MethodInvocation:escape
+MethodInvocation:closeElement
+Field:Type
+Method-name:fromString
+Method-returnType:Type
+Method-parameters:[String string]
+MethodInvocation:valueOf
+MethodInvocation:toLowerCase

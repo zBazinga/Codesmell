@@ -1,0 +1,33 @@
+Class:LinkStatus
+Field:UNKNOWN
+Field:VALID
+Field:INVALID
+Field:UNCHECKED
+Field:NOT_FOUND
+Field:myName
+Method-name:LinkStatus
+Method-returnType:null
+Method-parameters:[@NotNull String name]
+FieldAccess:myName
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:isStatus
+Method-returnType:boolean
+Method-parameters:[CharSequence status]
+MethodInvocation:equals
+MethodInvocation:valueOf
+Method-name:withStatus
+Method-returnType:ResolvedContent
+Method-parameters:[ResolvedContent content]
+MethodInvocation:getStatus
+MethodInvocation:getResolvedLink
+MethodInvocation:getContent

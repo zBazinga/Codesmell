@@ -1,0 +1,195 @@
+Class:RewriteSemanticAnalyzer
+Field:LOG
+MethodInvocation:getLogger
+Field:useSuper
+Method-name:RewriteSemanticAnalyzer
+Method-returnType:null
+Method-parameters:[QueryState queryState]
+Method-name:analyzeInternal
+Method-returnType:void
+Method-parameters:[ASTNode tree]
+MethodInvocation:supportsAcid
+MethodInvocation:getTxnMgr
+MethodInvocation:getMsg
+MethodInvocation:analyze
+MethodInvocation:cleanUpMetaColumnAccessControl
+Method-name:analyze
+Method-returnType:void
+Method-parameters:[ASTNode tree]
+Method-name:addPartitionColsToSelect
+Method-returnType:void
+Method-parameters:[List<FieldSchema> partCols, StringBuilder rewrittenQueryStr, ASTNode target]
+MethodInvocation:getSimpleTableName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:unparseIdentifier
+MethodInvocation:getName
+FieldAccess:conf
+Method-name:checkValidSetClauseTarget
+Method-returnType:void
+Method-parameters:[ASTNode colName, Table targetTable]
+MethodInvocation:normalizeColName
+MethodInvocation:getText
+MethodInvocation:getPartCols
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:getMsg
+MethodInvocation:getBucketCols
+MethodInvocation:contains
+MethodInvocation:getBucketCols
+MethodInvocation:getCols
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:getText
+MethodInvocation:getFullyQualifiedName
+Method-name:findLHSofAssignment
+Method-returnType:ASTNode
+Method-parameters:[ASTNode assignment]
+Method-name:collectSetColumnsAndExpressions
+Method-returnType:Map<String,ASTNode>
+Method-parameters:[ASTNode setClause, Set<String> setRCols, Table targetTable]
+Method-name:getTargetTable
+Method-returnType:Table
+Method-parameters:[ASTNode tabRef]
+MethodInvocation:getTable
+Method-name:getTable
+Method-returnType:Table
+Method-parameters:[ASTNode tabRef, Hive db, boolean throwException]
+MethodInvocation:getType
+MethodInvocation:getQualifiedTableName
+MethodInvocation:getChild
+MethodInvocation:getQualifiedTableName
+MethodInvocation:raiseWrongType
+MethodInvocation:getTable
+MethodInvocation:getDb
+MethodInvocation:getTable
+MethodInvocation:error
+MethodInvocation:getNotEmptyDbTable
+MethodInvocation:getMessage
+MethodInvocation:getMsg
+MethodInvocation:getNotEmptyDbTable
+MethodInvocation:error
+MethodInvocation:getNotEmptyDbTable
+MethodInvocation:getMessage
+MethodInvocation:getMessage
+Method-name:markReadEntityForUpdate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isWritten
+MethodInvocation:setUpdateOrDelete
+Method-name:setUpAccessControlInfoForUpdate
+Method-returnType:void
+Method-parameters:[Table mTable, Map<String,ASTNode> setCols]
+MethodInvocation:keySet
+MethodInvocation:add
+MethodInvocation:getCompleteName
+MethodInvocation:getDbName
+MethodInvocation:getTableName
+MethodInvocation:setUpdateColumnAccessInfo
+Method-name:cleanUpMetaColumnAccessControl
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:stripVirtualColumn
+Method-name:parseRewrittenQuery
+Method-returnType:ReparseResult
+Method-parameters:[StringBuilder rewrittenQueryStr, String originalQuery]
+MethodInvocation:setVar
+MethodInvocation:setBoolVar
+MethodInvocation:setHDFSCleanup
+MethodInvocation:addSubContext
+MethodInvocation:getMsg
+MethodInvocation:setExplainConfig
+MethodInvocation:getExplainConfig
+MethodInvocation:setExplainPlan
+MethodInvocation:isExplainPlan
+MethodInvocation:setStatsSource
+MethodInvocation:getStatsSource
+MethodInvocation:setPlanMapper
+MethodInvocation:getPlanMapper
+MethodInvocation:setIsUpdateDeleteMerge
+MethodInvocation:setCmd
+MethodInvocation:toString
+MethodInvocation:info
+MethodInvocation:toString
+MethodInvocation:parse
+MethodInvocation:toString
+MethodInvocation:getMsg
+Method-name:validateTargetTable
+Method-returnType:void
+Method-parameters:[Table mTable]
+MethodInvocation:getTableType
+MethodInvocation:getTableType
+MethodInvocation:error
+MethodInvocation:getFullyQualifiedName
+MethodInvocation:getMsg
+Method-name:isWritten
+Method-returnType:boolean
+Method-parameters:[Entity readEntity]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:toString
+MethodInvocation:toString
+Method-name:addSetRCols
+Method-returnType:void
+Method-parameters:[ASTNode node, Set<String> setRCols]
+Method-name:normalizeColName
+Method-returnType:String
+Method-parameters:[String colName]
+MethodInvocation:toLowerCase
+Method-name:updateOutputs
+Method-returnType:void
+Method-parameters:[Table targetTable]
+MethodInvocation:markReadEntityForUpdate
+MethodInvocation:isPartitioned
+MethodInvocation:getRestrictedPartitionSet
+MethodInvocation:isEmpty
+MethodInvocation:getWriteType
+MethodInvocation:isTargetTable
+MethodInvocation:add
+MethodInvocation:removeAll
+MethodInvocation:getPartition
+MethodInvocation:getWriteType
+MethodInvocation:setDynamicPartitionWrite
+MethodInvocation:isDynamicPartitionWrite
+MethodInvocation:add
+Method-name:getRestrictedPartitionSet
+Method-returnType:List<ReadEntity>
+Method-parameters:[Table targetTable]
+MethodInvocation:getType
+MethodInvocation:isTargetTable
+MethodInvocation:add
+Method-name:isTargetTable
+Method-returnType:boolean
+Method-parameters:[Entity entity, Table targetTable]
+MethodInvocation:equals
+MethodInvocation:getTable
+Method-name:getSimpleTableName
+Method-returnType:String
+Method-parameters:[ASTNode n]
+MethodInvocation:unparseIdentifier
+MethodInvocation:getSimpleTableNameBase
+FieldAccess:conf
+Method-name:getSimpleTableNameBase
+Method-returnType:String
+Method-parameters:[ASTNode n]
+MethodInvocation:getType
+MethodInvocation:findTabRefIdxs
+MethodInvocation:getText
+MethodInvocation:getChild
+MethodInvocation:getSimpleTableNameBase
+MethodInvocation:getChild
+MethodInvocation:getChildCount
+MethodInvocation:getText
+MethodInvocation:getChild
+MethodInvocation:getText
+MethodInvocation:getChild
+MethodInvocation:getText
+MethodInvocation:getChild
+MethodInvocation:raiseWrongType
+Class:ReparseResult
+Field:rewrittenTree
+Field:rewrittenCtx
+Method-name:ReparseResult
+Method-returnType:null
+Method-parameters:[ASTNode n, Context c]

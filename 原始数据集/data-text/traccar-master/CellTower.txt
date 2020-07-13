@@ -1,0 +1,88 @@
+Class:CellTower
+Method-name:from
+Method-returnType:CellTower
+Method-parameters:[int mcc, int mnc, int lac, long cid]
+MethodInvocation:setMobileCountryCode
+MethodInvocation:setMobileNetworkCode
+MethodInvocation:setLocationAreaCode
+MethodInvocation:setCellId
+Method-name:from
+Method-returnType:CellTower
+Method-parameters:[int mcc, int mnc, int lac, long cid, int rssi]
+MethodInvocation:from
+MethodInvocation:setSignalStrength
+Method-name:fromLacCid
+Method-returnType:CellTower
+Method-parameters:[int lac, long cid]
+MethodInvocation:from
+MethodInvocation:getInteger
+MethodInvocation:getConfig
+MethodInvocation:getInteger
+MethodInvocation:getConfig
+Method-name:fromCidLac
+Method-returnType:CellTower
+Method-parameters:[long cid, int lac]
+MethodInvocation:fromLacCid
+Field:radioType
+Method-name:getRadioType
+Method-returnType:String
+Method-parameters:[]
+Method-name:setRadioType
+Method-returnType:void
+Method-parameters:[String radioType]
+FieldAccess:radioType
+Field:cellId
+Method-name:getCellId
+Method-returnType:Long
+Method-parameters:[]
+Method-name:setCellId
+Method-returnType:void
+Method-parameters:[Long cellId]
+FieldAccess:cellId
+Field:locationAreaCode
+Method-name:getLocationAreaCode
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setLocationAreaCode
+Method-returnType:void
+Method-parameters:[Integer locationAreaCode]
+FieldAccess:locationAreaCode
+Field:mobileCountryCode
+Method-name:getMobileCountryCode
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setMobileCountryCode
+Method-returnType:void
+Method-parameters:[Integer mobileCountryCode]
+FieldAccess:mobileCountryCode
+Field:mobileNetworkCode
+Method-name:getMobileNetworkCode
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setMobileNetworkCode
+Method-returnType:void
+Method-parameters:[Integer mobileNetworkCode]
+FieldAccess:mobileNetworkCode
+Field:signalStrength
+Method-name:getSignalStrength
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setSignalStrength
+Method-returnType:void
+Method-parameters:[Integer signalStrength]
+FieldAccess:signalStrength
+Method-name:setOperator
+Method-returnType:void
+Method-parameters:[long operator]
+MethodInvocation:valueOf
+MethodInvocation:parseInt
+MethodInvocation:substring
+MethodInvocation:parseInt
+MethodInvocation:substring
+Method-name:addCellTower
+Method-returnType:void
+Method-parameters:[Network network]
+MethodInvocation:getCellTowers
+MethodInvocation:setCellTowers
+MethodInvocation:add
+MethodInvocation:getCellTowers

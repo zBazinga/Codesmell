@@ -1,0 +1,62 @@
+Class:SqlAggFunction
+Field:requiresOrder
+Field:requiresOver
+Field:requiresGroupOrder
+Method-name:SqlAggFunction
+Method-returnType:null
+Method-parameters:[String name, SqlKind kind, SqlReturnTypeInference returnTypeInference, SqlOperandTypeInference operandTypeInference, SqlOperandTypeChecker operandTypeChecker, SqlFunctionCategory funcType]
+Method-name:SqlAggFunction
+Method-returnType:null
+Method-parameters:[String name, SqlIdentifier sqlIdentifier, SqlKind kind, SqlReturnTypeInference returnTypeInference, SqlOperandTypeInference operandTypeInference, SqlOperandTypeChecker operandTypeChecker, SqlFunctionCategory funcType]
+Method-name:SqlAggFunction
+Method-returnType:null
+Method-parameters:[String name, SqlIdentifier sqlIdentifier, SqlKind kind, SqlReturnTypeInference returnTypeInference, SqlOperandTypeInference operandTypeInference, SqlOperandTypeChecker operandTypeChecker, SqlFunctionCategory funcType, boolean requiresOrder, boolean requiresOver]
+Method-name:SqlAggFunction
+Method-returnType:null
+Method-parameters:[String name, SqlIdentifier sqlIdentifier, SqlKind kind, SqlReturnTypeInference returnTypeInference, SqlOperandTypeInference operandTypeInference, SqlOperandTypeChecker operandTypeChecker, SqlFunctionCategory funcType, boolean requiresOrder, boolean requiresOver, Optionality requiresGroupOrder]
+FieldAccess:requiresOrder
+FieldAccess:requiresOver
+FieldAccess:requiresGroupOrder
+MethodInvocation:requireNonNull
+Method-name:unwrap
+Method-returnType:T
+Method-parameters:[Class<T> clazz]
+MethodInvocation:isInstance
+MethodInvocation:cast
+Method-name:isAggregator
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isQuantifierAllowed
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:validateCall
+Method-returnType:void
+Method-parameters:[SqlCall call, SqlValidator validator, SqlValidatorScope scope, SqlValidatorScope operandScope]
+MethodInvocation:validateAggregateParams
+Method-name:requiresOrder
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:requiresGroupOrder
+Method-returnType:Optionality
+Method-parameters:[]
+Method-name:requiresOver
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getDistinctOptionality
+Method-returnType:Optionality
+Method-parameters:[]
+Method-name:getParameterTypes
+Method-returnType:List<RelDataType>
+Method-parameters:[RelDataTypeFactory typeFactory]
+Method-name:getReturnType
+Method-returnType:RelDataType
+Method-parameters:[RelDataTypeFactory typeFactory]
+Method-name:allowsFilter
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:allowsNullTreatment
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getRollup
+Method-returnType:SqlAggFunction
+Method-parameters:[MaterializedViewAggregateRule materializedViewAggregateRule]

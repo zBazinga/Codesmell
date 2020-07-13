@@ -1,0 +1,125 @@
+Class:Message
+Field:CREATOR
+Method-name:createInstance
+Method-returnType:Message
+Method-parameters:[]
+Field:ENTITY_NAME
+Field:rid
+Field:sortDate
+Field:date
+Field:senderId
+Field:messageState
+Field:content
+Field:reactions
+Field:contentIndex
+Method-name:Message
+Method-returnType:null
+Method-parameters:[long rid, long sortDate, long date, int senderId, MessageState messageState, AbsContent content]
+Method-name:Message
+Method-returnType:null
+Method-parameters:[long rid, long sortDate, long date, int senderId, MessageState messageState, AbsContent content, List<Reaction> reactions, int contentIndex]
+FieldAccess:rid
+FieldAccess:sortDate
+FieldAccess:date
+FieldAccess:senderId
+FieldAccess:messageState
+FieldAccess:content
+FieldAccess:reactions
+FieldAccess:contentIndex
+Method-name:Message
+Method-returnType:null
+Method-parameters:[]
+Method-name:fromBytes
+Method-returnType:Message
+Method-parameters:[byte[] data]
+MethodInvocation:parse
+Method-name:getRid
+Method-returnType:long
+Method-parameters:[]
+Method-name:getSortDate
+Method-returnType:long
+Method-parameters:[]
+Method-name:getDate
+Method-returnType:long
+Method-parameters:[]
+Method-name:getSenderId
+Method-returnType:int
+Method-parameters:[]
+Method-name:getMessageState
+Method-returnType:MessageState
+Method-parameters:[]
+Method-name:getReactions
+Method-returnType:List<Reaction>
+Method-parameters:[]
+Method-name:getContentIndex
+Method-returnType:int
+Method-parameters:[]
+Method-name:isSent
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isPendingOrSent
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isOnServer
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getContent
+Method-returnType:AbsContent
+Method-parameters:[]
+Method-name:changeState
+Method-returnType:Message
+Method-parameters:[MessageState messageState]
+Method-name:changeDate
+Method-returnType:Message
+Method-parameters:[long date]
+Method-name:changeAllDate
+Method-returnType:Message
+Method-parameters:[long date]
+Method-name:changeContent
+Method-returnType:Message
+Method-parameters:[AbsContent content]
+Method-name:changeReactions
+Method-returnType:Message
+Method-parameters:[List<Reaction> reactions]
+Method-name:parse
+Method-returnType:void
+Method-parameters:[BserValues values]
+MethodInvocation:getLong
+MethodInvocation:getLong
+MethodInvocation:getLong
+MethodInvocation:getInt
+MethodInvocation:fromValue
+MethodInvocation:getInt
+MethodInvocation:parse
+MethodInvocation:getBytes
+MethodInvocation:getRepeatedBytes
+MethodInvocation:add
+MethodInvocation:fromBytes
+MethodInvocation:getInt
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[BserWriter writer]
+MethodInvocation:writeLong
+MethodInvocation:writeLong
+MethodInvocation:writeLong
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:getValue
+MethodInvocation:writeBytes
+MethodInvocation:serialize
+MethodInvocation:writeRepeatedObj
+MethodInvocation:writeInt
+Method-name:getEngineId
+Method-returnType:long
+Method-parameters:[]
+Method-name:getEngineSort
+Method-returnType:long
+Method-parameters:[]
+Method-name:getEngineSearch
+Method-returnType:String
+Method-parameters:[]
+Method-name:onNewMessage
+Method-returnType:Promise<Void>
+Method-parameters:[Peer peer, RouterInt routerInt]
+MethodInvocation:add
+MethodInvocation:onNewMessages

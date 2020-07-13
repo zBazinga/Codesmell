@@ -1,0 +1,303 @@
+Class:DefaultDashChunkSource
+Class:Factory
+Field:dataSourceFactory
+Field:maxSegmentsPerLoad
+Method-name:Factory
+Method-returnType:null
+Method-parameters:[DataSource.Factory dataSourceFactory]
+Method-name:Factory
+Method-returnType:null
+Method-parameters:[DataSource.Factory dataSourceFactory, int maxSegmentsPerLoad]
+FieldAccess:dataSourceFactory
+FieldAccess:maxSegmentsPerLoad
+Method-name:createDashChunkSource
+Method-returnType:DashChunkSource
+Method-parameters:[LoaderErrorThrower manifestLoaderErrorThrower, DashManifest manifest, int periodIndex, int[] adaptationSetIndices, TrackSelection trackSelection, int trackType, long elapsedRealtimeOffsetMs, boolean enableEventMessageTrack, List<Format> closedCaptionFormats, @Nullable PlayerTrackEmsgHandler playerEmsgHandler, @Nullable TransferListener transferListener]
+MethodInvocation:createDataSource
+MethodInvocation:addTransferListener
+Field:manifestLoaderErrorThrower
+Field:adaptationSetIndices
+Field:trackType
+Field:dataSource
+Field:elapsedRealtimeOffsetMs
+Field:maxSegmentsPerLoad
+Field:playerTrackEmsgHandler
+Field:representationHolders
+Field:trackSelection
+Field:manifest
+Field:periodIndex
+Field:fatalError
+Field:missingLastSegment
+Field:liveEdgeTimeUs
+Method-name:DefaultDashChunkSource
+Method-returnType:null
+Method-parameters:[LoaderErrorThrower manifestLoaderErrorThrower, DashManifest manifest, int periodIndex, int[] adaptationSetIndices, TrackSelection trackSelection, int trackType, DataSource dataSource, long elapsedRealtimeOffsetMs, int maxSegmentsPerLoad, boolean enableEventMessageTrack, List<Format> closedCaptionFormats, @Nullable PlayerTrackEmsgHandler playerTrackEmsgHandler]
+FieldAccess:manifestLoaderErrorThrower
+FieldAccess:manifest
+FieldAccess:adaptationSetIndices
+FieldAccess:trackSelection
+FieldAccess:trackType
+FieldAccess:dataSource
+FieldAccess:periodIndex
+FieldAccess:elapsedRealtimeOffsetMs
+FieldAccess:maxSegmentsPerLoad
+FieldAccess:playerTrackEmsgHandler
+MethodInvocation:getPeriodDurationUs
+MethodInvocation:getRepresentations
+MethodInvocation:length
+MethodInvocation:get
+MethodInvocation:getIndexInTrackGroup
+Method-name:getAdjustedSeekPositionUs
+Method-returnType:long
+Method-parameters:[long positionUs, SeekParameters seekParameters]
+MethodInvocation:getSegmentNum
+MethodInvocation:getSegmentStartTimeUs
+MethodInvocation:getSegmentCount
+MethodInvocation:getSegmentStartTimeUs
+MethodInvocation:resolveSeekPositionUs
+Method-name:updateManifest
+Method-returnType:void
+Method-parameters:[DashManifest newManifest, int newPeriodIndex]
+MethodInvocation:getPeriodDurationUs
+MethodInvocation:getRepresentations
+MethodInvocation:get
+MethodInvocation:getIndexInTrackGroup
+MethodInvocation:copyWithNewRepresentation
+Method-name:updateTrackSelection
+Method-returnType:void
+Method-parameters:[TrackSelection trackSelection]
+FieldAccess:trackSelection
+Method-name:maybeThrowError
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:maybeThrowError
+Method-name:getPreferredQueueSize
+Method-returnType:int
+Method-parameters:[long playbackPositionUs, List<? extends MediaChunk> queue]
+MethodInvocation:length
+MethodInvocation:size
+MethodInvocation:evaluateQueueSize
+Method-name:getNextChunk
+Method-returnType:void
+Method-parameters:[long playbackPositionUs, long loadPositionUs, List<? extends MediaChunk> queue, ChunkHolder out]
+MethodInvocation:resolveTimeToLiveEdgeUs
+MethodInvocation:msToUs
+MethodInvocation:msToUs
+FieldAccess:startMs
+MethodInvocation:getPeriod
+MethodInvocation:maybeRefreshManifestBeforeLoadingNextChunk
+MethodInvocation:getNowUnixTimeUs
+MethodInvocation:isEmpty
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:length
+MethodInvocation:getFirstAvailableSegmentNum
+MethodInvocation:getLastAvailableSegmentNum
+MethodInvocation:getSegmentNum
+MethodInvocation:updateSelectedTrack
+MethodInvocation:getSelectedIndex
+MethodInvocation:getSampleFormats
+MethodInvocation:getInitializationUri
+MethodInvocation:getIndexUri
+MethodInvocation:newInitializationChunk
+MethodInvocation:getSelectedFormat
+MethodInvocation:getSelectionReason
+MethodInvocation:getSelectionData
+MethodInvocation:getSegmentCount
+MethodInvocation:getFirstAvailableSegmentNum
+MethodInvocation:getLastAvailableSegmentNum
+MethodInvocation:updateLiveEdgeTimeUs
+MethodInvocation:getSegmentNum
+MethodInvocation:getSegmentStartTimeUs
+MethodInvocation:min
+MethodInvocation:getSegmentStartTimeUs
+MethodInvocation:isEmpty
+MethodInvocation:newMediaChunk
+MethodInvocation:getSelectedFormat
+MethodInvocation:getSelectionReason
+MethodInvocation:getSelectionData
+Method-name:onChunkLoadCompleted
+Method-returnType:void
+Method-parameters:[Chunk chunk]
+MethodInvocation:indexOf
+MethodInvocation:getSeekMap
+MethodInvocation:copyWithNewSegmentIndex
+MethodInvocation:onChunkLoadCompleted
+Method-name:onChunkLoadError
+Method-returnType:boolean
+Method-parameters:[Chunk chunk, boolean cancelable, Exception e, long blacklistDurationMs]
+MethodInvocation:maybeRefreshManifestOnLoadingError
+FieldAccess:responseCode
+MethodInvocation:indexOf
+MethodInvocation:getSegmentCount
+MethodInvocation:getFirstSegmentNum
+MethodInvocation:getNextChunkIndex
+MethodInvocation:blacklist
+MethodInvocation:indexOf
+Method-name:getRepresentations
+Method-returnType:ArrayList<Representation>
+Method-parameters:[]
+FieldAccess:adaptationSets
+MethodInvocation:getPeriod
+MethodInvocation:addAll
+FieldAccess:representations
+MethodInvocation:get
+Method-name:updateLiveEdgeTimeUs
+Method-returnType:void
+Method-parameters:[RepresentationHolder representationHolder, long lastAvailableSegmentNum]
+MethodInvocation:getSegmentEndTimeUs
+Method-name:getNowUnixTimeUs
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:elapsedRealtime
+MethodInvocation:currentTimeMillis
+Method-name:resolveTimeToLiveEdgeUs
+Method-returnType:long
+Method-parameters:[long playbackPositionUs]
+Method-name:newInitializationChunk
+Method-returnType:Chunk
+Method-parameters:[RepresentationHolder representationHolder, DataSource dataSource, Format trackFormat, int trackSelectionReason, Object trackSelectionData, RangedUri initializationUri, RangedUri indexUri]
+MethodInvocation:attemptMerge
+MethodInvocation:resolveUri
+MethodInvocation:getCacheKey
+Method-name:newMediaChunk
+Method-returnType:Chunk
+Method-parameters:[RepresentationHolder representationHolder, DataSource dataSource, int trackType, Format trackFormat, int trackSelectionReason, Object trackSelectionData, long firstSegmentNum, int maxSegmentCount, long seekTimeUs]
+MethodInvocation:getSegmentStartTimeUs
+MethodInvocation:getSegmentUrl
+MethodInvocation:getSegmentEndTimeUs
+MethodInvocation:resolveUri
+MethodInvocation:getCacheKey
+MethodInvocation:getSegmentUrl
+MethodInvocation:attemptMerge
+MethodInvocation:getSegmentEndTimeUs
+MethodInvocation:resolveUri
+MethodInvocation:getCacheKey
+Class:RepresentationSegmentIterator
+Field:representationHolder
+Method-name:RepresentationSegmentIterator
+Method-returnType:null
+Method-parameters:[RepresentationHolder representation, long firstAvailableSegmentNum, long lastAvailableSegmentNum]
+FieldAccess:representationHolder
+Method-name:getDataSpec
+Method-returnType:DataSpec
+Method-parameters:[]
+MethodInvocation:checkInBounds
+MethodInvocation:getSegmentUrl
+MethodInvocation:getCurrentIndex
+MethodInvocation:resolveUri
+MethodInvocation:getCacheKey
+Method-name:getChunkStartTimeUs
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:checkInBounds
+MethodInvocation:getSegmentStartTimeUs
+MethodInvocation:getCurrentIndex
+Method-name:getChunkEndTimeUs
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:checkInBounds
+MethodInvocation:getSegmentEndTimeUs
+MethodInvocation:getCurrentIndex
+Class:RepresentationHolder
+Field:extractorWrapper
+Field:representation
+Field:segmentIndex
+Field:periodDurationUs
+Field:segmentNumShift
+Method-name:RepresentationHolder
+Method-returnType:null
+Method-parameters:[long periodDurationUs, int trackType, Representation representation, boolean enableEventMessageTrack, List<Format> closedCaptionFormats, @Nullable TrackOutput playerEmsgTrackOutput]
+MethodInvocation:createExtractorWrapper
+MethodInvocation:getIndex
+Method-name:RepresentationHolder
+Method-returnType:null
+Method-parameters:[long periodDurationUs, Representation representation, @Nullable ChunkExtractorWrapper extractorWrapper, long segmentNumShift, @Nullable DashSegmentIndex segmentIndex]
+FieldAccess:periodDurationUs
+FieldAccess:representation
+FieldAccess:segmentNumShift
+FieldAccess:extractorWrapper
+FieldAccess:segmentIndex
+Method-name:copyWithNewRepresentation
+Method-returnType:RepresentationHolder
+Method-parameters:[long newPeriodDurationUs, Representation newRepresentation]
+MethodInvocation:getIndex
+MethodInvocation:getIndex
+MethodInvocation:isExplicit
+MethodInvocation:getSegmentCount
+MethodInvocation:getFirstSegmentNum
+MethodInvocation:getTimeUs
+MethodInvocation:getTimeUs
+MethodInvocation:getDurationUs
+MethodInvocation:getFirstSegmentNum
+MethodInvocation:getTimeUs
+MethodInvocation:getSegmentNum
+MethodInvocation:getSegmentNum
+Method-name:copyWithNewSegmentIndex
+Method-returnType:RepresentationHolder
+Method-parameters:[DashSegmentIndex segmentIndex]
+Method-name:getFirstSegmentNum
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getFirstSegmentNum
+Method-name:getSegmentCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getSegmentCount
+Method-name:getSegmentStartTimeUs
+Method-returnType:long
+Method-parameters:[long segmentNum]
+MethodInvocation:getTimeUs
+Method-name:getSegmentEndTimeUs
+Method-returnType:long
+Method-parameters:[long segmentNum]
+MethodInvocation:getSegmentStartTimeUs
+MethodInvocation:getDurationUs
+Method-name:getSegmentNum
+Method-returnType:long
+Method-parameters:[long positionUs]
+MethodInvocation:getSegmentNum
+Method-name:getSegmentUrl
+Method-returnType:RangedUri
+Method-parameters:[long segmentNum]
+MethodInvocation:getSegmentUrl
+Method-name:getFirstAvailableSegmentNum
+Method-returnType:long
+Method-parameters:[DashManifest manifest, int periodIndex, long nowUnixTimeUs]
+MethodInvocation:getSegmentCount
+MethodInvocation:msToUs
+MethodInvocation:msToUs
+FieldAccess:startMs
+MethodInvocation:getPeriod
+MethodInvocation:msToUs
+MethodInvocation:max
+MethodInvocation:getFirstSegmentNum
+MethodInvocation:getSegmentNum
+MethodInvocation:getFirstSegmentNum
+Method-name:getLastAvailableSegmentNum
+Method-returnType:long
+Method-parameters:[DashManifest manifest, int periodIndex, long nowUnixTimeUs]
+MethodInvocation:getSegmentCount
+MethodInvocation:msToUs
+MethodInvocation:msToUs
+FieldAccess:startMs
+MethodInvocation:getPeriod
+MethodInvocation:getSegmentNum
+MethodInvocation:getFirstSegmentNum
+Method-name:mimeTypeIsWebm
+Method-returnType:boolean
+Method-parameters:[String mimeType]
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+Method-name:mimeTypeIsRawText
+Method-returnType:boolean
+Method-parameters:[String mimeType]
+MethodInvocation:isText
+MethodInvocation:equals
+Method-name:createExtractorWrapper
+Method-returnType:ChunkExtractorWrapper
+Method-parameters:[int trackType, Representation representation, boolean enableEventMessageTrack, List<Format> closedCaptionFormats, @Nullable TrackOutput playerEmsgTrackOutput]
+MethodInvocation:mimeTypeIsRawText
+MethodInvocation:equals
+MethodInvocation:mimeTypeIsWebm

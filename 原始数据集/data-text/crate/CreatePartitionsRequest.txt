@@ -1,0 +1,46 @@
+Class:CreatePartitionsRequest
+Field:indices
+MethodInvocation:of
+Field:jobId
+Method-name:CreatePartitionsRequest
+Method-returnType:null
+Method-parameters:[Collection<String> indices, UUID jobId]
+FieldAccess:indices
+FieldAccess:jobId
+Method-name:CreatePartitionsRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:indices
+Method-returnType:Collection<String>
+Method-parameters:[]
+Method-name:jobId
+Method-returnType:UUID
+Method-parameters:[]
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+Method-name:readFrom
+Method-returnType:void
+Method-parameters:[StreamInput in]
+MethodInvocation:readLong
+MethodInvocation:readLong
+MethodInvocation:readVInt
+MethodInvocation:add
+MethodInvocation:readString
+FieldAccess:indices
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeLong
+MethodInvocation:getMostSignificantBits
+MethodInvocation:writeLong
+MethodInvocation:getLeastSignificantBits
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeString
+Method-name:validateAndFilterExistingIndices
+Method-returnType:void
+Method-parameters:[ClusterState currentState, List<String> indicesToCreate, TransportCreatePartitionsAction transportCreatePartitionsAction]
+MethodInvocation:indices
+MethodInvocation:validateIndexName
+MethodInvocation:add

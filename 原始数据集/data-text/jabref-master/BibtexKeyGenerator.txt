@@ -1,0 +1,101 @@
+Class:BibtexKeyGenerator
+Field:APPENDIX_CHARACTERS
+Field:DEFAULT_UNWANTED_CHARACTERS
+Field:LOGGER
+MethodInvocation:getLogger
+Field:DISALLOWED_CHARACTERS
+MethodInvocation:asList
+Field:citeKeyPattern
+Field:database
+Field:bibtexKeyPatternPreferences
+Method-name:BibtexKeyGenerator
+Method-returnType:null
+Method-parameters:[BibDatabaseContext bibDatabaseContext, BibtexKeyPatternPreferences bibtexKeyPatternPreferences]
+MethodInvocation:getCiteKeyPattern
+MethodInvocation:getMetaData
+MethodInvocation:getKeyPattern
+MethodInvocation:getDatabase
+Method-name:BibtexKeyGenerator
+Method-returnType:null
+Method-parameters:[AbstractBibtexKeyPattern citeKeyPattern, BibDatabase database, BibtexKeyPatternPreferences bibtexKeyPatternPreferences]
+FieldAccess:citeKeyPattern
+MethodInvocation:requireNonNull
+FieldAccess:database
+MethodInvocation:requireNonNull
+FieldAccess:bibtexKeyPatternPreferences
+MethodInvocation:requireNonNull
+Method-name:generateKey
+Method-returnType:String
+Method-parameters:[BibEntry entry, String pattern]
+MethodInvocation:generateKey
+Method-name:generateKey
+Method-returnType:String
+Method-parameters:[BibEntry entry, String pattern, BibDatabase database]
+MethodInvocation:emptyList
+MethodInvocation:setDefaultValue
+MethodInvocation:generateKey
+Method-name:getAppendix
+Method-returnType:String
+Method-parameters:[int number]
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:getAppendix
+MethodInvocation:length
+MethodInvocation:substring
+MethodInvocation:substring
+Method-name:removeUnwantedCharacters
+Method-returnType:String
+Method-parameters:[String key, String unwantedCharacters]
+MethodInvocation:toString
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:filter
+MethodInvocation:chars
+MethodInvocation:indexOf
+MethodInvocation:contains
+MethodInvocation:replaceSpecialCharacters
+Method-name:cleanKey
+Method-returnType:String
+Method-parameters:[String key, String unwantedCharacters]
+MethodInvocation:replaceAll
+MethodInvocation:removeUnwantedCharacters
+Method-name:generateKey
+Method-returnType:String
+Method-parameters:[BibEntry entry]
+MethodInvocation:getType
+MethodInvocation:getValue
+MethodInvocation:isEmpty
+MethodInvocation:remove
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:parseFieldMarker
+MethodInvocation:getKeywordDelimiter
+MethodInvocation:get
+MethodInvocation:expandBrackets
+MethodInvocation:size
+MethodInvocation:applyModifiers
+MethodInvocation:cleanKey
+MethodInvocation:getUnwantedCharacters
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:warn
+MethodInvocation:toString
+MethodInvocation:getKeyPatternRegex
+MethodInvocation:isEmpty
+MethodInvocation:trim
+MethodInvocation:getKeyPatternReplacement
+MethodInvocation:replaceAll
+MethodInvocation:orElse
+MethodInvocation:getCiteKeyOptional
+MethodInvocation:getNumberOfKeyOccurrences
+MethodInvocation:equals
+MethodInvocation:getKeySuffix
+MethodInvocation:getKeySuffix
+MethodInvocation:getAppendix
+MethodInvocation:getNumberOfKeyOccurrences
+MethodInvocation:equals
+Method-name:generateAndSetKey
+Method-returnType:Optional<FieldChange>
+Method-parameters:[BibEntry entry]
+MethodInvocation:generateKey
+MethodInvocation:setCiteKey

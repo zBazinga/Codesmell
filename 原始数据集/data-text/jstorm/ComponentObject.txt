@@ -1,0 +1,219 @@
+Class:ComponentObject
+Field:STRUCT_DESC
+Field:SERIALIZED_JAVA_FIELD_DESC
+Field:SHELL_FIELD_DESC
+Field:JAVA_OBJECT_FIELD_DESC
+Field:_Fields
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:ComponentObject
+Method-returnType:null
+Method-parameters:[]
+Method-name:ComponentObject
+Method-returnType:null
+Method-parameters:[_Fields setField, Object value]
+Method-name:ComponentObject
+Method-returnType:null
+Method-parameters:[ComponentObject other]
+Method-name:deepCopy
+Method-returnType:ComponentObject
+Method-parameters:[]
+Method-name:serialized_java
+Method-returnType:ComponentObject
+Method-parameters:[ByteBuffer value]
+MethodInvocation:set_serialized_java
+Method-name:serialized_java
+Method-returnType:ComponentObject
+Method-parameters:[byte[] value]
+MethodInvocation:set_serialized_java
+MethodInvocation:wrap
+MethodInvocation:copyOf
+Method-name:shell
+Method-returnType:ComponentObject
+Method-parameters:[ShellComponent value]
+MethodInvocation:set_shell
+Method-name:java_object
+Method-returnType:ComponentObject
+Method-parameters:[JavaObject value]
+MethodInvocation:set_java_object
+Method-name:checkType
+Method-returnType:void
+Method-parameters:[_Fields setField, Object value]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:standardSchemeReadValue
+Method-returnType:Object
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, org.apache.thrift.protocol.TField field]
+MethodInvocation:findByThriftId
+MethodInvocation:readBinary
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:skip
+Method-name:standardSchemeWriteValue
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:writeBinary
+MethodInvocation:write
+MethodInvocation:write
+Method-name:tupleSchemeReadValue
+Method-returnType:Object
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, short fieldID]
+MethodInvocation:findByThriftId
+MethodInvocation:readBinary
+MethodInvocation:read
+MethodInvocation:read
+Method-name:tupleSchemeWriteValue
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:writeBinary
+MethodInvocation:write
+MethodInvocation:write
+Method-name:getFieldDesc
+Method-returnType:org.apache.thrift.protocol.TField
+Method-parameters:[_Fields setField]
+Method-name:getStructDesc
+Method-returnType:org.apache.thrift.protocol.TStruct
+Method-parameters:[]
+Method-name:enumForId
+Method-returnType:_Fields
+Method-parameters:[short id]
+MethodInvocation:findByThriftIdOrThrow
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:get_serialized_java
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:set_serialized_java
+MethodInvocation:rightSize
+MethodInvocation:buffer_for_serialized_java
+MethodInvocation:buffer_for_serialized_java
+MethodInvocation:array
+Method-name:buffer_for_serialized_java
+Method-returnType:ByteBuffer
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:copyBinary
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_serialized_java
+Method-returnType:void
+Method-parameters:[byte[] value]
+MethodInvocation:set_serialized_java
+MethodInvocation:wrap
+MethodInvocation:copyOf
+Method-name:set_serialized_java
+Method-returnType:void
+Method-parameters:[ByteBuffer value]
+Method-name:get_shell
+Method-returnType:ShellComponent
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:get_java_object
+Method-returnType:JavaObject
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_java_object
+Method-returnType:void
+Method-parameters:[JavaObject value]
+Method-name:is_set_serialized_java
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_shell
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_java_object
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[ComponentObject other]
+MethodInvocation:getSetField
+MethodInvocation:getSetField
+MethodInvocation:equals
+MethodInvocation:getFieldValue
+MethodInvocation:getFieldValue
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[ComponentObject other]
+MethodInvocation:compareTo
+MethodInvocation:getSetField
+MethodInvocation:getSetField
+MethodInvocation:compareTo
+MethodInvocation:getFieldValue
+MethodInvocation:getFieldValue
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getSetField
+MethodInvocation:add
+MethodInvocation:getThriftFieldId
+MethodInvocation:getFieldValue
+MethodInvocation:add
+MethodInvocation:getValue
+MethodInvocation:getFieldValue
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read

@@ -1,0 +1,107 @@
+Class:TableMetadata
+Field:LOG
+MethodInvocation:messageLogger
+Field:catalog
+Field:schema
+Field:name
+Field:columns
+Field:foreignKeys
+Field:indexes
+Method-name:TableMetadata
+Method-returnType:null
+Method-parameters:[ResultSet rs, DatabaseMetaData meta, boolean extras]
+MethodInvocation:getString
+MethodInvocation:getString
+MethodInvocation:getString
+MethodInvocation:initColumns
+MethodInvocation:initForeignKeys
+MethodInvocation:initIndexes
+MethodInvocation:tableFound
+MethodInvocation:columns
+MethodInvocation:keySet
+MethodInvocation:foreignKeys
+MethodInvocation:keySet
+MethodInvocation:indexes
+MethodInvocation:keySet
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getCatalog
+Method-returnType:String
+Method-parameters:[]
+Method-name:getSchema
+Method-returnType:String
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getColumnMetadata
+Method-returnType:ColumnMetadata
+Method-parameters:[String columnName]
+MethodInvocation:get
+MethodInvocation:toLowerCase
+Method-name:getForeignKeyMetadata
+Method-returnType:ForeignKeyMetadata
+Method-parameters:[String keyName]
+MethodInvocation:get
+MethodInvocation:toLowerCase
+Method-name:getForeignKeyMetadata
+Method-returnType:ForeignKeyMetadata
+Method-parameters:[ForeignKey fk]
+MethodInvocation:values
+MethodInvocation:matches
+Method-name:getIndexMetadata
+Method-returnType:IndexMetadata
+Method-parameters:[String indexName]
+MethodInvocation:get
+MethodInvocation:toLowerCase
+Method-name:addForeignKey
+Method-returnType:void
+Method-parameters:[ResultSet rs]
+MethodInvocation:getString
+MethodInvocation:getForeignKeyMetadata
+MethodInvocation:put
+MethodInvocation:toLowerCase
+MethodInvocation:getName
+MethodInvocation:addReference
+Method-name:addIndex
+Method-returnType:void
+Method-parameters:[ResultSet rs]
+MethodInvocation:getString
+MethodInvocation:getIndexMetadata
+MethodInvocation:put
+MethodInvocation:toLowerCase
+MethodInvocation:getName
+MethodInvocation:addColumn
+MethodInvocation:getColumnMetadata
+MethodInvocation:getString
+Method-name:addColumn
+Method-returnType:void
+Method-parameters:[ResultSet rs]
+MethodInvocation:getString
+MethodInvocation:getColumnMetadata
+MethodInvocation:put
+MethodInvocation:toLowerCase
+MethodInvocation:getName
+Method-name:initForeignKeys
+Method-returnType:void
+Method-parameters:[DatabaseMetaData meta]
+MethodInvocation:getImportedKeys
+MethodInvocation:next
+MethodInvocation:addForeignKey
+MethodInvocation:close
+Method-name:initIndexes
+Method-returnType:void
+Method-parameters:[DatabaseMetaData meta]
+MethodInvocation:getIndexInfo
+MethodInvocation:next
+MethodInvocation:getShort
+MethodInvocation:addIndex
+MethodInvocation:close
+Method-name:initColumns
+Method-returnType:void
+Method-parameters:[DatabaseMetaData meta]
+MethodInvocation:getColumns
+MethodInvocation:next
+MethodInvocation:addColumn
+MethodInvocation:close

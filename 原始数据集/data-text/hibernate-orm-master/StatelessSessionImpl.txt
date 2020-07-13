@@ -1,0 +1,469 @@
+Class:StatelessSessionImpl
+Field:LOG
+MethodInvocation:messageLogger
+Field:NO_INFLUENCERS
+Method-name:getInternalFetchProfile
+Method-returnType:String
+Method-parameters:[]
+Method-name:setInternalFetchProfile
+Method-returnType:void
+Method-parameters:[String internalFetchProfile]
+Field:temporaryPersistenceContext
+Field:connectionProvided
+Field:allowBytecodeProxy
+Method-name:StatelessSessionImpl
+Method-returnType:null
+Method-parameters:[SessionFactoryImpl factory, SessionCreationOptions options]
+MethodInvocation:getConnection
+MethodInvocation:isEnhancementAsProxyEnabled
+MethodInvocation:getSessionFactoryOptions
+MethodInvocation:getFactory
+Method-name:shouldAutoJoinTransaction
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:insert
+Method-returnType:Serializable
+Method-parameters:[Object entity]
+MethodInvocation:checkOpen
+MethodInvocation:insert
+Method-name:insert
+Method-returnType:Serializable
+Method-parameters:[String entityName, Object entity]
+MethodInvocation:checkOpen
+MethodInvocation:getEntityPersister
+MethodInvocation:generate
+MethodInvocation:getIdentifierGenerator
+MethodInvocation:getPropertyValues
+MethodInvocation:isVersioned
+MethodInvocation:seedVersion
+MethodInvocation:getVersionProperty
+MethodInvocation:getVersionType
+MethodInvocation:setPropertyValues
+MethodInvocation:insert
+MethodInvocation:insert
+MethodInvocation:setIdentifier
+Method-name:delete
+Method-returnType:void
+Method-parameters:[Object entity]
+MethodInvocation:checkOpen
+MethodInvocation:delete
+Method-name:delete
+Method-returnType:void
+Method-parameters:[String entityName, Object entity]
+MethodInvocation:checkOpen
+MethodInvocation:getEntityPersister
+MethodInvocation:getIdentifier
+MethodInvocation:getVersion
+MethodInvocation:delete
+Method-name:update
+Method-returnType:void
+Method-parameters:[Object entity]
+MethodInvocation:checkOpen
+MethodInvocation:update
+Method-name:update
+Method-returnType:void
+Method-parameters:[String entityName, Object entity]
+MethodInvocation:checkOpen
+MethodInvocation:getEntityPersister
+MethodInvocation:getIdentifier
+MethodInvocation:getPropertyValues
+MethodInvocation:isVersioned
+MethodInvocation:getVersion
+MethodInvocation:increment
+MethodInvocation:getVersionType
+MethodInvocation:setVersion
+MethodInvocation:setPropertyValues
+MethodInvocation:update
+Method-name:get
+Method-returnType:Object
+Method-parameters:[Class entityClass, Serializable id]
+MethodInvocation:get
+MethodInvocation:getName
+Method-name:get
+Method-returnType:Object
+Method-parameters:[Class entityClass, Serializable id, LockMode lockMode]
+MethodInvocation:get
+MethodInvocation:getName
+Method-name:get
+Method-returnType:Object
+Method-parameters:[String entityName, Serializable id]
+MethodInvocation:get
+Method-name:get
+Method-returnType:Object
+Method-parameters:[String entityName, Serializable id, LockMode lockMode]
+MethodInvocation:checkOpen
+MethodInvocation:load
+MethodInvocation:entityPersister
+MethodInvocation:getMetamodel
+MethodInvocation:getFactory
+MethodInvocation:getNullSafeLockMode
+MethodInvocation:isLoadFinished
+MethodInvocation:clear
+Method-name:refresh
+Method-returnType:void
+Method-parameters:[Object entity]
+MethodInvocation:refresh
+MethodInvocation:bestGuessEntityName
+Method-name:refresh
+Method-returnType:void
+Method-parameters:[String entityName, Object entity]
+MethodInvocation:refresh
+Method-name:refresh
+Method-returnType:void
+Method-parameters:[Object entity, LockMode lockMode]
+MethodInvocation:refresh
+MethodInvocation:bestGuessEntityName
+Method-name:refresh
+Method-returnType:void
+Method-parameters:[String entityName, Object entity, LockMode lockMode]
+MethodInvocation:getEntityPersister
+MethodInvocation:getIdentifier
+MethodInvocation:isTraceEnabled
+MethodInvocation:tracev
+MethodInvocation:infoString
+MethodInvocation:getFactory
+MethodInvocation:canWriteToCache
+MethodInvocation:getCacheAccessStrategy
+MethodInvocation:generateCacheKey
+MethodInvocation:getFactory
+MethodInvocation:getTenantIdentifier
+MethodInvocation:evict
+MethodInvocation:getInternalFetchProfile
+MethodInvocation:getLoadQueryInfluencers
+MethodInvocation:setInternalFetchProfile
+MethodInvocation:getLoadQueryInfluencers
+MethodInvocation:load
+MethodInvocation:getNullSafeLockMode
+MethodInvocation:setInternalFetchProfile
+MethodInvocation:getLoadQueryInfluencers
+MethodInvocation:throwIfNull
+MethodInvocation:getEntityName
+MethodInvocation:isLoadFinished
+MethodInvocation:clear
+Method-name:immediateLoad
+Method-returnType:Object
+Method-parameters:[String entityName, Serializable id]
+MethodInvocation:isLoadFinished
+MethodInvocation:getPersistenceContextInternal
+MethodInvocation:get
+Method-name:initializeCollection
+Method-returnType:void
+Method-parameters:[PersistentCollection collection, boolean writing]
+Method-name:instantiate
+Method-returnType:Object
+Method-parameters:[String entityName, Serializable id]
+MethodInvocation:checkOpen
+MethodInvocation:instantiate
+MethodInvocation:entityPersister
+MethodInvocation:getMetamodel
+MethodInvocation:getFactory
+Method-name:internalLoad
+Method-returnType:Object
+Method-parameters:[String entityName, Serializable id, boolean eager, boolean nullable]
+MethodInvocation:checkOpen
+MethodInvocation:entityPersister
+MethodInvocation:getMetamodel
+MethodInvocation:getFactory
+MethodInvocation:generateEntityKey
+MethodInvocation:getPersistenceContext
+MethodInvocation:getEntity
+MethodInvocation:getEntityMetamodel
+MethodInvocation:getBytecodeEnhancementMetadata
+MethodInvocation:isEnhancedForLazyLoading
+MethodInvocation:getProxyFactory
+MethodInvocation:getTuplizer
+MethodInvocation:getEntityMetamodel
+MethodInvocation:getProxy
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:isDebugEnabled
+MethodInvocation:isUnwrap
+MethodInvocation:getHibernateLazyInitializer
+MethodInvocation:debug
+MethodInvocation:narrowProxy
+MethodInvocation:hasSubclasses
+MethodInvocation:debugf
+MethodInvocation:createProxy
+MethodInvocation:createEnhancedProxy
+MethodInvocation:hasSubclasses
+MethodInvocation:createEnhancedProxy
+MethodInvocation:hasProxy
+MethodInvocation:getProxy
+MethodInvocation:narrowProxy
+MethodInvocation:createProxy
+MethodInvocation:beforeLoad
+MethodInvocation:get
+MethodInvocation:afterLoad
+Method-name:createProxy
+Method-returnType:Object
+Method-parameters:[EntityKey entityKey]
+MethodInvocation:createProxy
+MethodInvocation:getPersister
+MethodInvocation:getIdentifier
+MethodInvocation:addProxy
+MethodInvocation:getPersistenceContext
+Method-name:iterate
+Method-returnType:Iterator
+Method-parameters:[String query, QueryParameters queryParameters]
+Method-name:iterateFilter
+Method-returnType:Iterator
+Method-parameters:[Object collection, String filter, QueryParameters queryParameters]
+Method-name:listFilter
+Method-returnType:List
+Method-parameters:[Object collection, String filter, QueryParameters queryParameters]
+Method-name:isAutoCloseSessionEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isAutoCloseSessionEnabled
+MethodInvocation:getSessionFactoryOptions
+MethodInvocation:getFactory
+Method-name:shouldAutoClose
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isAutoCloseSessionEnabled
+MethodInvocation:isClosed
+Method-name:isFlushModeNever
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:managedClose
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isClosed
+MethodInvocation:close
+Method-name:managedFlush
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:checkOpen
+MethodInvocation:executeBatch
+MethodInvocation:getJdbcCoordinator
+Method-name:bestGuessEntityName
+Method-returnType:String
+Method-parameters:[Object object]
+MethodInvocation:getImplementation
+MethodInvocation:getHibernateLazyInitializer
+MethodInvocation:guessEntityName
+Method-name:connection
+Method-returnType:Connection
+Method-parameters:[]
+MethodInvocation:checkOpen
+MethodInvocation:getPhysicalConnection
+MethodInvocation:getLogicalConnection
+MethodInvocation:getJdbcCoordinator
+Method-name:executeUpdate
+Method-returnType:int
+Method-parameters:[String query, QueryParameters queryParameters]
+MethodInvocation:checkOpen
+MethodInvocation:validateParameters
+MethodInvocation:getQueryPlan
+MethodInvocation:performExecuteUpdate
+MethodInvocation:afterOperation
+MethodInvocation:clear
+Method-name:getCacheMode
+Method-returnType:CacheMode
+Method-parameters:[]
+Method-name:setCacheMode
+Method-returnType:void
+Method-parameters:[CacheMode cm]
+Method-name:setFlushMode
+Method-returnType:void
+Method-parameters:[FlushMode fm]
+Method-name:setHibernateFlushMode
+Method-returnType:void
+Method-parameters:[FlushMode flushMode]
+Method-name:getDontFlushFromFind
+Method-returnType:int
+Method-parameters:[]
+Method-name:getContextEntityIdentifier
+Method-returnType:Serializable
+Method-parameters:[Object object]
+MethodInvocation:checkOpen
+Method-name:getEntityMode
+Method-returnType:EntityMode
+Method-parameters:[]
+Method-name:guessEntityName
+Method-returnType:String
+Method-parameters:[Object entity]
+MethodInvocation:checkOpen
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:getEntityPersister
+Method-returnType:EntityPersister
+Method-parameters:[String entityName, Object object]
+MethodInvocation:checkOpen
+MethodInvocation:entityPersister
+MethodInvocation:getMetamodel
+MethodInvocation:getFactory
+MethodInvocation:guessEntityName
+MethodInvocation:getSubclassEntityPersister
+MethodInvocation:entityPersister
+MethodInvocation:getMetamodel
+MethodInvocation:getFactory
+MethodInvocation:getFactory
+Method-name:getEntityUsingInterceptor
+Method-returnType:Object
+Method-parameters:[EntityKey key]
+MethodInvocation:checkOpen
+MethodInvocation:getPersistenceContext
+MethodInvocation:getEntity
+MethodInvocation:getEntity
+MethodInvocation:getInterceptor
+MethodInvocation:getEntityName
+MethodInvocation:getIdentifier
+MethodInvocation:addEntity
+Method-name:getPersistenceContext
+Method-returnType:PersistenceContext
+Method-parameters:[]
+Method-name:setAutoClear
+Method-returnType:void
+Method-parameters:[boolean enabled]
+Method-name:load
+Method-returnType:Object
+Method-parameters:[String entityName, Serializable identifier]
+Method-name:isEventSource
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isDefaultReadOnly
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDefaultReadOnly
+Method-returnType:void
+Method-parameters:[boolean readOnly]
+Method-name:list
+Method-returnType:List
+Method-parameters:[String query, QueryParameters queryParameters]
+MethodInvocation:checkOpen
+MethodInvocation:validateParameters
+MethodInvocation:getQueryPlan
+MethodInvocation:performList
+MethodInvocation:afterOperation
+MethodInvocation:clear
+Method-name:afterOperation
+Method-returnType:void
+Method-parameters:[boolean success]
+MethodInvocation:isTransactionInProgress
+MethodInvocation:afterTransaction
+MethodInvocation:getJdbcCoordinator
+Method-name:createCriteria
+Method-returnType:Criteria
+Method-parameters:[Class persistentClass, String alias]
+MethodInvocation:checkOpen
+MethodInvocation:getName
+Method-name:createCriteria
+Method-returnType:Criteria
+Method-parameters:[String entityName, String alias]
+MethodInvocation:checkOpen
+Method-name:createCriteria
+Method-returnType:Criteria
+Method-parameters:[Class persistentClass]
+MethodInvocation:checkOpen
+MethodInvocation:getName
+Method-name:createCriteria
+Method-returnType:Criteria
+Method-parameters:[String entityName]
+MethodInvocation:checkOpen
+Method-name:scroll
+Method-returnType:ScrollableResultsImplementor
+Method-parameters:[Criteria criteria, ScrollMode scrollMode]
+MethodInvocation:checkOpen
+MethodInvocation:getEntityOrClassName
+MethodInvocation:getOuterJoinLoadable
+MethodInvocation:getFactory
+MethodInvocation:getLoadQueryInfluencers
+MethodInvocation:scroll
+Method-name:list
+Method-returnType:List
+Method-parameters:[Criteria criteria]
+MethodInvocation:checkOpen
+MethodInvocation:getImplementors
+MethodInvocation:getMetamodel
+MethodInvocation:getFactory
+MethodInvocation:getEntityOrClassName
+MethodInvocation:getOuterJoinLoadable
+MethodInvocation:getFactory
+MethodInvocation:getLoadQueryInfluencers
+MethodInvocation:list
+MethodInvocation:addAll
+MethodInvocation:afterOperation
+MethodInvocation:clear
+Method-name:getOuterJoinLoadable
+Method-returnType:OuterJoinLoadable
+Method-parameters:[String entityName]
+MethodInvocation:entityPersister
+MethodInvocation:getMetamodel
+MethodInvocation:getFactory
+Method-name:listCustomQuery
+Method-returnType:List
+Method-parameters:[CustomQuery customQuery, QueryParameters queryParameters]
+MethodInvocation:checkOpen
+MethodInvocation:getFactory
+MethodInvocation:list
+MethodInvocation:afterOperation
+MethodInvocation:clear
+Method-name:scrollCustomQuery
+Method-returnType:ScrollableResultsImplementor
+Method-parameters:[CustomQuery customQuery, QueryParameters queryParameters]
+MethodInvocation:checkOpen
+MethodInvocation:getFactory
+MethodInvocation:scroll
+Method-name:scroll
+Method-returnType:ScrollableResultsImplementor
+Method-parameters:[String query, QueryParameters queryParameters]
+MethodInvocation:checkOpen
+MethodInvocation:getQueryPlan
+MethodInvocation:performScroll
+Method-name:afterScrollOperation
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:flush
+Method-returnType:void
+Method-parameters:[]
+Method-name:getLoadQueryInfluencers
+Method-returnType:LoadQueryInfluencers
+Method-parameters:[]
+Method-name:getPersistenceContextInternal
+Method-returnType:PersistenceContext
+Method-parameters:[]
+Method-name:executeNativeUpdate
+Method-returnType:int
+Method-parameters:[NativeSQLQuerySpecification nativeSQLQuerySpecification, QueryParameters queryParameters]
+MethodInvocation:checkOpen
+MethodInvocation:validateParameters
+MethodInvocation:getNativeQueryPlan
+MethodInvocation:performExecuteUpdate
+MethodInvocation:afterOperation
+MethodInvocation:clear
+Method-name:afterTransactionBegin
+Method-returnType:void
+Method-parameters:[]
+Method-name:beforeTransactionCompletion
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:flushBeforeTransactionCompletion
+Method-name:afterTransactionCompletion
+Method-returnType:void
+Method-parameters:[boolean successful, boolean delayed]
+MethodInvocation:shouldAutoClose
+MethodInvocation:isClosed
+MethodInvocation:managedClose
+Method-name:isTransactionInProgress
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:flushBeforeTransactionCompletion
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isClosed
+MethodInvocation:isFlushModeNever
+MethodInvocation:isRollback
+MethodInvocation:getCurrentStatus
+MethodInvocation:getJtaPlatform
+MethodInvocation:managedFlush
+Method-name:getJtaPlatform
+Method-returnType:JtaPlatform
+Method-parameters:[]
+MethodInvocation:getService
+MethodInvocation:getServiceRegistry
+MethodInvocation:getFactory
+Method-name:getNullSafeLockMode
+Method-returnType:LockMode
+Method-parameters:[LockMode lockMode]

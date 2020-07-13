@@ -1,0 +1,331 @@
+Class:BaseActivity
+Field:STYLE
+FieldAccess:style
+MethodInvocation:sharedActor
+Field:BINDER
+Field:isResumed
+Method-name:onCreate
+Method-returnType:void
+Method-parameters:[Bundle savedInstanceState]
+MethodInvocation:waitForReady
+MethodInvocation:sharedActor
+MethodInvocation:notifyOnResume
+MethodInvocation:getSupportActionBar
+MethodInvocation:getToolBarColor
+MethodInvocation:setBackgroundDrawable
+MethodInvocation:getSupportActionBar
+MethodInvocation:getToolBarColor
+Method-name:onResume
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onPerformBind
+MethodInvocation:notifyOnResume
+Method-name:onPause
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:unbindAll
+MethodInvocation:notifyOnPause
+Method-name:onSaveInstanceState
+Method-returnType:void
+Method-parameters:[Bundle outState]
+MethodInvocation:notifyOnPause
+Method-name:onStop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:notifyOnPause
+Method-name:onDestroy
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:notifyOnPause
+Method-name:onPerformBind
+Method-returnType:void
+Method-parameters:[]
+Method-name:bind
+Method-returnType:void
+Method-parameters:[final TextView textView, Value<String> value]
+MethodInvocation:bind
+Method-name:bind
+Method-returnType:void
+Method-parameters:[TextView textView, Value<T> value, Function<T,CharSequence> bind]
+MethodInvocation:bind
+MethodInvocation:setText
+MethodInvocation:apply
+Method-name:bind
+Method-returnType:void
+Method-parameters:[TextView textView, Value<T1> value1, Value<T2> value2, BiFunction<T1,T2,CharSequence> bind]
+MethodInvocation:bind
+MethodInvocation:setText
+MethodInvocation:apply
+Method-name:bind
+Method-returnType:void
+Method-parameters:[final AvatarView avatarView, final int id, final Value<Avatar> avatar, final Value<String> name]
+MethodInvocation:bind
+Method-name:bind
+Method-returnType:void
+Method-parameters:[final TextView textView, final UserVM user]
+MethodInvocation:bind
+Method-name:bind
+Method-returnType:void
+Method-parameters:[final TextView textView, View titleContainer, GroupVM value]
+MethodInvocation:bind
+Method-name:bindGlobalCounter
+Method-returnType:void
+Method-parameters:[ValueChangedListener<Integer> callback]
+MethodInvocation:bindGlobalCounter
+Method-name:bindGroupTyping
+Method-returnType:void
+Method-parameters:[final TextView textView, final View container, final View titleContainer, final Value<int[]> typing]
+MethodInvocation:bindGroupTyping
+Method-name:bindPrivateTyping
+Method-returnType:void
+Method-parameters:[final TextView textView, final View container, final View titleContainer, final Value<Boolean> typing]
+MethodInvocation:bindPrivateTyping
+Method-name:bind
+Method-returnType:void
+Method-parameters:[Value<T> value, ValueChangedListener<T> listener]
+MethodInvocation:bind
+Method-name:bind
+Method-returnType:void
+Method-parameters:[Value<T> value, ValueChangedListener<T> listener, boolean notify]
+MethodInvocation:bind
+Method-name:bind
+Method-returnType:void
+Method-parameters:[final Value<T> value1, final Value<V> value2, final ValueDoubleChangedListener<T,V> listener]
+MethodInvocation:bind
+Method-name:setToolbar
+Method-returnType:void
+Method-parameters:[int text, boolean enableBack]
+MethodInvocation:getSupportActionBar
+MethodInvocation:setDisplayShowCustomEnabled
+MethodInvocation:getSupportActionBar
+MethodInvocation:setDisplayHomeAsUpEnabled
+MethodInvocation:getSupportActionBar
+MethodInvocation:setDisplayShowHomeEnabled
+MethodInvocation:getSupportActionBar
+MethodInvocation:setDisplayShowTitleEnabled
+MethodInvocation:getSupportActionBar
+MethodInvocation:setDisplayUseLogoEnabled
+MethodInvocation:getSupportActionBar
+MethodInvocation:setTitle
+MethodInvocation:getSupportActionBar
+Method-name:setToolbar
+Method-returnType:void
+Method-parameters:[int text]
+MethodInvocation:setToolbar
+Method-name:setToolbar
+Method-returnType:void
+Method-parameters:[View view, ActionBar.LayoutParams params, boolean enableBack]
+MethodInvocation:getSupportActionBar
+MethodInvocation:setDisplayShowCustomEnabled
+MethodInvocation:getSupportActionBar
+MethodInvocation:setDisplayHomeAsUpEnabled
+MethodInvocation:getSupportActionBar
+MethodInvocation:setDisplayShowTitleEnabled
+MethodInvocation:getSupportActionBar
+MethodInvocation:setDisplayUseLogoEnabled
+MethodInvocation:getSupportActionBar
+MethodInvocation:setCustomView
+MethodInvocation:getSupportActionBar
+MethodInvocation:setDisplayShowHomeEnabled
+MethodInvocation:getSupportActionBar
+MethodInvocation:setDisplayShowHomeEnabled
+MethodInvocation:getSupportActionBar
+MethodInvocation:setDisplayHomeAsUpEnabled
+MethodInvocation:getSupportActionBar
+MethodInvocation:getParent
+MethodInvocation:setContentInsetsAbsolute
+Method-name:setToolbar
+Method-returnType:void
+Method-parameters:[View view, ActionBar.LayoutParams params]
+MethodInvocation:setToolbar
+Method-name:execute
+Method-returnType:void
+Method-parameters:[Command<T> cmd, int title, final CommandCallback<T> callback]
+MethodInvocation:setMessage
+MethodInvocation:getString
+MethodInvocation:setCancelable
+MethodInvocation:setCanceledOnTouchOutside
+MethodInvocation:show
+MethodInvocation:start
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[T res]
+MethodInvocation:dismissDialog
+MethodInvocation:onResult
+Method-name:onError
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:dismissDialog
+MethodInvocation:onError
+Method-name:execute
+Method-returnType:void
+Method-parameters:[Command<T> cmd]
+MethodInvocation:execute
+Method-name:execute
+Method-returnType:void
+Method-parameters:[Command<T> cmd, final CommandCallback<T> callback]
+MethodInvocation:start
+Method-name:execute
+Method-returnType:void
+Method-parameters:[Command<T> cmd, int title]
+MethodInvocation:setMessage
+MethodInvocation:getString
+MethodInvocation:setCancelable
+MethodInvocation:setCanceledOnTouchOutside
+MethodInvocation:show
+MethodInvocation:start
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[T res]
+MethodInvocation:dismissDialog
+Method-name:onError
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:dismissDialog
+Method-name:execute
+Method-returnType:void
+Method-parameters:[Promise<T> promise]
+MethodInvocation:execute
+Method-name:execute
+Method-returnType:void
+Method-parameters:[Promise<T> promise, int title]
+MethodInvocation:show
+MethodInvocation:getString
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:dismissDialog
+MethodInvocation:dismissDialog
+Method-name:dismissDialog
+Method-returnType:void
+Method-parameters:[ProgressDialog progressDialog]
+MethodInvocation:dismiss
+MethodInvocation:printStackTrace
+Method-name:notifyOnResume
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onActivityOpen
+MethodInvocation:messenger
+Method-name:notifyOnPause
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onActivityClosed
+MethodInvocation:messenger
+Method-name:getIsResumed
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:onMemberClick
+Method-returnType:void
+Method-parameters:[GroupVM groupVM, UserVM userVM, boolean isAdministrator, boolean isInvitedByMe, MembersAdapter membersAdapter]
+MethodInvocation:get
+MethodInvocation:getPhones
+MethodInvocation:addItem
+MethodInvocation:replace
+MethodInvocation:getString
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:startActivity
+MethodInvocation:openPrivateDialog
+MethodInvocation:getId
+MethodInvocation:size
+MethodInvocation:addItem
+MethodInvocation:replace
+MethodInvocation:getString
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:size
+MethodInvocation:startActivity
+MethodInvocation:call
+MethodInvocation:getPhone
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:parse
+MethodInvocation:getInstance
+MethodInvocation:getPhone
+MethodInvocation:get
+MethodInvocation:getTitle
+MethodInvocation:get
+MethodInvocation:format
+MethodInvocation:getInstance
+MethodInvocation:printStackTrace
+MethodInvocation:getTitle
+MethodInvocation:get
+MethodInvocation:getPhone
+MethodInvocation:get
+MethodInvocation:setCanceledOnTouchOutside
+MethodInvocation:show
+MethodInvocation:setItems
+MethodInvocation:startActivity
+MethodInvocation:call
+MethodInvocation:getPhone
+MethodInvocation:get
+MethodInvocation:addItem
+MethodInvocation:replace
+MethodInvocation:getString
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:startProfileActivity
+MethodInvocation:getId
+MethodInvocation:get
+MethodInvocation:getIsCanKickAnyone
+MethodInvocation:get
+MethodInvocation:getIsCanKickInvited
+MethodInvocation:addItem
+MethodInvocation:replace
+MethodInvocation:getString
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:setCanceledOnTouchOutside
+MethodInvocation:show
+MethodInvocation:setNegativeButton
+MethodInvocation:setPositiveButton
+MethodInvocation:setMessage
+MethodInvocation:replace
+MethodInvocation:getString
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:execute
+MethodInvocation:kickMember
+MethodInvocation:messenger
+MethodInvocation:getId
+MethodInvocation:getId
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[Void res1]
+Method-name:onError
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:show
+MethodInvocation:makeText
+MethodInvocation:get
+MethodInvocation:getIsCanEditAdmins
+MethodInvocation:isBot
+MethodInvocation:addItem
+MethodInvocation:getString
+MethodInvocation:getResources
+MethodInvocation:getString
+MethodInvocation:getResources
+MethodInvocation:start
+MethodInvocation:makeAdmin
+MethodInvocation:messenger
+MethodInvocation:getId
+MethodInvocation:getId
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[Void res]
+Method-name:onError
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:start
+MethodInvocation:revokeAdmin
+MethodInvocation:messenger
+MethodInvocation:getId
+MethodInvocation:getId
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[Void res]
+Method-name:onError
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:setCanceledOnTouchOutside
+MethodInvocation:show
+MethodInvocation:build

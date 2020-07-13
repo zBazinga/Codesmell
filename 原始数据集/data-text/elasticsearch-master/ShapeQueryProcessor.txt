@@ -1,0 +1,84 @@
+Class:ShapeQueryProcessor
+Method-name:process
+Method-returnType:Query
+Method-parameters:[Geometry shape, String fieldName, ShapeRelation relation, QueryShardContext context]
+MethodInvocation:validateIsShapeFieldType
+MethodInvocation:before
+MethodInvocation:indexVersionCreated
+MethodInvocation:getVectorQueryFromShape
+Method-name:validateIsShapeFieldType
+Method-returnType:void
+Method-parameters:[String fieldName, QueryShardContext context]
+MethodInvocation:fieldMapper
+MethodInvocation:typeName
+Method-name:getVectorQueryFromShape
+Method-returnType:Query
+Method-parameters:[Geometry queryShape, String fieldName, ShapeRelation relation, QueryShardContext context]
+MethodInvocation:visit
+MethodInvocation:geometries
+MethodInvocation:size
+MethodInvocation:newGeometryQuery
+MethodInvocation:getLuceneRelation
+MethodInvocation:toArray
+MethodInvocation:size
+Class:LuceneGeometryCollector
+Field:geometries
+Field:name
+Field:context
+Method-name:LuceneGeometryCollector
+Method-returnType:null
+Method-parameters:[String name, QueryShardContext context]
+FieldAccess:name
+FieldAccess:context
+Method-name:geometries
+Method-returnType:List<XYGeometry>
+Method-parameters:[]
+Method-name:visit
+Method-returnType:Void
+Method-parameters:[Circle circle]
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:toLuceneXYCircle
+Method-name:visit
+Method-returnType:Void
+Method-parameters:[GeometryCollection<?> collection]
+MethodInvocation:visit
+Method-name:visit
+Method-returnType:Void
+Method-parameters:[Line line]
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:toLuceneXYLine
+Method-name:visit
+Method-returnType:Void
+Method-parameters:[LinearRing ring]
+Method-name:visit
+Method-returnType:Void
+Method-parameters:[MultiLine multiLine]
+MethodInvocation:visit
+Method-name:visit
+Method-returnType:Void
+Method-parameters:[MultiPoint multiPoint]
+MethodInvocation:visit
+Method-name:visit
+Method-returnType:Void
+Method-parameters:[MultiPolygon multiPolygon]
+MethodInvocation:visit
+Method-name:visit
+Method-returnType:Void
+Method-parameters:[Point point]
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:toLuceneXYPoint
+Method-name:visit
+Method-returnType:Void
+Method-parameters:[Polygon polygon]
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:toLuceneXYPolygon
+Method-name:visit
+Method-returnType:Void
+Method-parameters:[Rectangle r]
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:toLuceneXYRectangle

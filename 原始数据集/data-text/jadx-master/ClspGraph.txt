@@ -1,0 +1,124 @@
+Class:ClspGraph
+Field:LOG
+MethodInvocation:getLogger
+Field:root
+Field:superTypesCache
+MethodInvocation:synchronizedMap
+Field:nameMap
+Field:missingClasses
+Method-name:ClspGraph
+Method-returnType:null
+Method-parameters:[RootNode rootNode]
+FieldAccess:root
+Method-name:load
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:loadFromClstFile
+MethodInvocation:addClasspath
+Method-name:addClasspath
+Method-returnType:void
+Method-parameters:[ClsSet set]
+MethodInvocation:getClassesCount
+MethodInvocation:addToMap
+Method-name:addApp
+Method-returnType:void
+Method-parameters:[List<ClassNode> classes]
+MethodInvocation:size
+MethodInvocation:addClass
+MethodInvocation:setParents
+MethodInvocation:makeParentsArray
+MethodInvocation:get
+Method-name:isClsKnown
+Method-returnType:boolean
+Method-parameters:[String fullName]
+MethodInvocation:containsKey
+Method-name:getClsDetails
+Method-returnType:ClspClass
+Method-parameters:[ArgType type]
+MethodInvocation:get
+MethodInvocation:getObject
+Method-name:getMethodDetails
+Method-returnType:IMethodDetails
+Method-parameters:[MethodInfo methodInfo]
+MethodInvocation:get
+MethodInvocation:getRawName
+MethodInvocation:getDeclClass
+MethodInvocation:getMethodFromClass
+MethodInvocation:getParents
+MethodInvocation:getClspClass
+MethodInvocation:getMethodFromClass
+Method-name:addClass
+Method-returnType:ClspClass
+Method-parameters:[ClassNode cls]
+MethodInvocation:getType
+MethodInvocation:getClassInfo
+MethodInvocation:getObject
+MethodInvocation:put
+Method-name:isImplements
+Method-returnType:boolean
+Method-parameters:[String clsName, String implClsName]
+MethodInvocation:getSuperTypes
+MethodInvocation:contains
+Method-name:getImplementations
+Method-returnType:List<String>
+Method-parameters:[String clsName]
+MethodInvocation:keySet
+MethodInvocation:isImplements
+MethodInvocation:add
+Method-name:getCommonAncestor
+Method-returnType:String
+Method-parameters:[String clsName, String implClsName]
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:isImplements
+MethodInvocation:getSuperTypes
+MethodInvocation:searchCommonParent
+Method-name:searchCommonParent
+Method-returnType:String
+Method-parameters:[Set<String> anc, ClspClass cls]
+MethodInvocation:getParents
+MethodInvocation:getObject
+MethodInvocation:contains
+MethodInvocation:getClspClass
+MethodInvocation:searchCommonParent
+Method-name:getSuperTypes
+Method-returnType:Set<String>
+Method-parameters:[String clsName]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:emptySet
+MethodInvocation:addSuperTypes
+MethodInvocation:putInSuperTypesCache
+Method-name:putInSuperTypesCache
+Method-returnType:Set<String>
+Method-parameters:[String clsName, Set<String> result]
+MethodInvocation:isEmpty
+MethodInvocation:emptySet
+MethodInvocation:put
+MethodInvocation:put
+Method-name:addSuperTypes
+Method-returnType:void
+Method-parameters:[ClspClass cls, Set<String> result]
+MethodInvocation:getParents
+MethodInvocation:getClspClass
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:addSuperTypes
+Method-name:getClspClass
+Method-returnType:ClspClass
+Method-parameters:[ArgType clsType]
+MethodInvocation:get
+MethodInvocation:getObject
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getObject
+Method-name:printMissingClasses
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:warn
+MethodInvocation:isDebugEnabled
+MethodInvocation:sort
+MethodInvocation:debug

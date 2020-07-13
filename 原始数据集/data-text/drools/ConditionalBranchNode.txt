@@ -1,0 +1,168 @@
+Class:ConditionalBranchNode
+Field:branchEvaluator
+Field:tupleMemoryEnabled
+Field:previousTupleSinkNode
+Field:nextTupleSinkNode
+Method-name:ConditionalBranchNode
+Method-returnType:null
+Method-parameters:[]
+Method-name:ConditionalBranchNode
+Method-returnType:null
+Method-parameters:[int id, LeftTupleSource tupleSource, ConditionalBranchEvaluator branchEvaluator, BuildContext context]
+MethodInvocation:setLeftTupleSource
+FieldAccess:tupleMemoryEnabled
+MethodInvocation:isTupleMemoryEnabled
+FieldAccess:branchEvaluator
+MethodInvocation:initMasks
+MethodInvocation:calculateHashCode
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readBoolean
+MethodInvocation:readObject
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeBoolean
+MethodInvocation:writeObject
+Method-name:getBranchEvaluator
+Method-returnType:ConditionalBranchEvaluator
+Method-parameters:[]
+Method-name:attach
+Method-returnType:void
+Method-parameters:[BuildContext context]
+MethodInvocation:addTupleSink
+MethodInvocation:getLeftTupleSource
+Method-name:networkUpdated
+Method-returnType:void
+Method-parameters:[UpdateContext updateContext]
+MethodInvocation:networkUpdated
+MethodInvocation:getLeftTupleSource
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:branchEvaluator
+Method-name:calculateHashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:getLeftTupleSource
+MethodInvocation:hashCode
+FieldAccess:branchEvaluator
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object object]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:getId
+MethodInvocation:getLeftTupleSource
+MethodInvocation:getId
+MethodInvocation:getLeftTupleSource
+MethodInvocation:equals
+FieldAccess:branchEvaluator
+Method-name:createMemory
+Method-returnType:ConditionalBranchMemory
+Method-parameters:[final RuleBaseConfiguration config, InternalWorkingMemory wm]
+MethodInvocation:createContext
+Method-name:createPeer
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple original]
+MethodInvocation:initPeer
+MethodInvocation:setPeer
+Method-name:isLeftTupleMemoryEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setLeftTupleMemoryEnabled
+Method-returnType:void
+Method-parameters:[boolean tupleMemoryEnabled]
+FieldAccess:tupleMemoryEnabled
+Method-name:getNextLeftTupleSinkNode
+Method-returnType:LeftTupleSinkNode
+Method-parameters:[]
+FieldAccess:nextTupleSinkNode
+Method-name:setNextLeftTupleSinkNode
+Method-returnType:void
+Method-parameters:[final LeftTupleSinkNode next]
+FieldAccess:nextTupleSinkNode
+Method-name:getPreviousLeftTupleSinkNode
+Method-returnType:LeftTupleSinkNode
+Method-parameters:[]
+FieldAccess:previousTupleSinkNode
+Method-name:setPreviousLeftTupleSinkNode
+Method-returnType:void
+Method-parameters:[final LeftTupleSinkNode previous]
+FieldAccess:previousTupleSinkNode
+Method-name:getType
+Method-returnType:short
+Method-parameters:[]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[InternalFactHandle factHandle, Sink sink, boolean leftTupleMemoryEnabled]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[final InternalFactHandle factHandle, final LeftTuple leftTuple, final Sink sink]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, Sink sink, PropagationContext pctx, boolean leftTupleMemoryEnabled]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, RightTuple rightTuple, Sink sink]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, RightTuple rightTuple, LeftTuple currentLeftChild, LeftTuple currentRightChild, Sink sink, boolean leftTupleMemoryEnabled]
+Method-name:doNode
+Method-returnType:void
+Method-parameters:[ConditionalBranchMemory cbm, LeftTupleSink sink, InternalAgenda agenda, TupleSets<LeftTuple> srcLeftTuples, TupleSets<LeftTuple> trgLeftTuples, TupleSets<LeftTuple> stagedLeftTuples, RuleExecutor executor, PhreakBranchNode phreakBranchNode]
+MethodInvocation:getDeleteFirst
+MethodInvocation:doLeftDeletes
+MethodInvocation:getUpdateFirst
+MethodInvocation:doLeftUpdates
+MethodInvocation:getInsertFirst
+MethodInvocation:doLeftInserts
+MethodInvocation:resetAll
+Class:ConditionalBranchMemory
+Field:serialVersionUID
+Field:context
+Field:segmentMemory
+Method-name:ConditionalBranchMemory
+Method-returnType:null
+Method-parameters:[]
+Method-name:ConditionalBranchMemory
+Method-returnType:null
+Method-parameters:[final Object context]
+FieldAccess:context
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readObject
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+Method-name:getNodeType
+Method-returnType:short
+Method-parameters:[]
+Method-name:setSegmentMemory
+Method-returnType:void
+Method-parameters:[SegmentMemory segmentMemory]
+FieldAccess:segmentMemory
+Method-name:getSegmentMemory
+Method-returnType:SegmentMemory
+Method-parameters:[]
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+Method-name:getObjectTypeNode
+Method-returnType:ObjectTypeNode
+Method-parameters:[]
+MethodInvocation:getObjectTypeNode
+MethodInvocation:getLeftTupleSource
+Method-name:doRemove
+Method-returnType:boolean
+Method-parameters:[final RuleRemovalContext context, final ReteooBuilder builder]
+MethodInvocation:isInUse
+MethodInvocation:removeTupleSink
+MethodInvocation:getLeftTupleSource
+Method-name:initDeclaredMask
+Method-returnType:void
+Method-parameters:[BuildContext context, LeftTupleSource leftInput]

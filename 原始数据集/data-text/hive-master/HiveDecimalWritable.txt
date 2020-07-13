@@ -1,0 +1,418 @@
+Class:HiveDecimalWritable
+Field:isSet
+Field:internalScratchLongs
+Field:internalScratchBuffer
+Method-name:HiveDecimalWritable
+Method-returnType:null
+Method-parameters:[]
+Method-name:HiveDecimalWritable
+Method-returnType:null
+Method-parameters:[String string]
+MethodInvocation:fastSetFromString
+MethodInvocation:fastReset
+Method-name:HiveDecimalWritable
+Method-returnType:null
+Method-parameters:[byte[] bigIntegerBytes, int scale]
+MethodInvocation:setFromBigIntegerBytesAndScale
+Method-name:HiveDecimalWritable
+Method-returnType:null
+Method-parameters:[HiveDecimalWritable writable]
+MethodInvocation:set
+Method-name:HiveDecimalWritable
+Method-returnType:null
+Method-parameters:[HiveDecimal value]
+MethodInvocation:set
+Method-name:HiveDecimalWritable
+Method-returnType:null
+Method-parameters:[long longValue]
+MethodInvocation:setFromLong
+Method-name:set
+Method-returnType:void
+Method-parameters:[HiveDecimal value]
+MethodInvocation:fastReset
+MethodInvocation:fastSet
+Method-name:set
+Method-returnType:void
+Method-parameters:[HiveDecimal value, int maxPrecision, int maxScale]
+MethodInvocation:set
+MethodInvocation:fastEnforcePrecisionScale
+MethodInvocation:fastReset
+Method-name:set
+Method-returnType:void
+Method-parameters:[HiveDecimalWritable writable]
+MethodInvocation:isSet
+MethodInvocation:fastReset
+MethodInvocation:fastSet
+Method-name:set
+Method-returnType:void
+Method-parameters:[byte[] bigIntegerBytes, int scale]
+MethodInvocation:setFromBigIntegerBytesAndScale
+Method-name:set
+Method-returnType:void
+Method-parameters:[HiveDecimalWritable writable, int maxPrecision, int maxScale]
+MethodInvocation:set
+MethodInvocation:fastEnforcePrecisionScale
+MethodInvocation:fastReset
+Method-name:setFromLong
+Method-returnType:void
+Method-parameters:[long longValue]
+MethodInvocation:fastReset
+MethodInvocation:fastSetFromLong
+Method-name:setFromDouble
+Method-returnType:void
+Method-parameters:[double doubleValue]
+MethodInvocation:fastReset
+MethodInvocation:fastSetFromDouble
+MethodInvocation:fastReset
+Method-name:setFromBytes
+Method-returnType:void
+Method-parameters:[byte[] bytes, int offset, int length]
+MethodInvocation:fastReset
+MethodInvocation:fastSetFromBytes
+MethodInvocation:fastReset
+Method-name:setFromBytes
+Method-returnType:void
+Method-parameters:[byte[] bytes, int offset, int length, boolean trimBlanks]
+MethodInvocation:fastReset
+MethodInvocation:fastSetFromBytes
+MethodInvocation:fastReset
+Method-name:setFromDigitsOnlyBytesWithScale
+Method-returnType:void
+Method-parameters:[boolean isNegative, byte[] bytes, int offset, int length, int scale]
+MethodInvocation:fastReset
+MethodInvocation:fastSetFromDigitsOnlyBytesAndScale
+MethodInvocation:fastReset
+Method-name:setFromBigIntegerBytesAndScale
+Method-returnType:void
+Method-parameters:[byte[] bigIntegerBytes, int scale]
+MethodInvocation:fastReset
+MethodInvocation:fastSetFromBigIntegerBytesAndScale
+MethodInvocation:fastReset
+Method-name:setFromBigIntegerBytesAndScale
+Method-returnType:void
+Method-parameters:[byte[] bigIntegerBytes, int offset, int length, int scale]
+MethodInvocation:fastReset
+MethodInvocation:fastSetFromBigIntegerBytesAndScale
+MethodInvocation:fastReset
+Method-name:setFromLongAndScale
+Method-returnType:void
+Method-parameters:[long longValue, int scale]
+MethodInvocation:fastReset
+MethodInvocation:fastSetFromLongAndScale
+MethodInvocation:fastReset
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getHiveDecimal
+Method-returnType:HiveDecimal
+Method-parameters:[]
+MethodInvocation:createFromFast
+Method-name:getHiveDecimal
+Method-returnType:HiveDecimal
+Method-parameters:[int maxPrecision, int maxScale]
+MethodInvocation:createFromFast
+MethodInvocation:enforcePrecisionScale
+Method-name:readFields
+Method-returnType:void
+Method-parameters:[DataInput in]
+MethodInvocation:readVInt
+MethodInvocation:readVInt
+MethodInvocation:readFully
+MethodInvocation:fastReset
+MethodInvocation:fastSetFromBigIntegerBytesAndScale
+Method-name:write
+Method-returnType:void
+Method-parameters:[DataOutput out]
+MethodInvocation:isSet
+MethodInvocation:write
+Method-name:write
+Method-returnType:void
+Method-parameters:[DataOutput out, long[] scratchLongs, byte[] scratchBuffer]
+MethodInvocation:isSet
+MethodInvocation:writeVInt
+MethodInvocation:fastScale
+MethodInvocation:fastBigIntegerBytes
+MethodInvocation:writeVInt
+MethodInvocation:write
+Method-name:serializationUtilsRead
+Method-returnType:boolean
+Method-parameters:[InputStream inputStream, int scale, byte[] scratchBytes]
+MethodInvocation:fastReset
+MethodInvocation:fastSerializationUtilsRead
+Method-name:serializationUtilsWrite
+Method-returnType:boolean
+Method-parameters:[OutputStream outputStream, long[] scratchLongs]
+MethodInvocation:isSet
+MethodInvocation:fastSerializationUtilsWrite
+Field:DECIMAL64_DECIMAL_DIGITS
+Method-name:isPrecisionDecimal64
+Method-returnType:boolean
+Method-parameters:[int precision]
+Method-name:getDecimal64AbsMax
+Method-returnType:long
+Method-parameters:[int precision]
+MethodInvocation:getDecimal64AbsMax
+Method-name:deserialize64
+Method-returnType:void
+Method-parameters:[long decimal64Long, int scale]
+MethodInvocation:fastDeserialize64
+Method-name:serialize64
+Method-returnType:long
+Method-parameters:[int scale]
+MethodInvocation:fastSerialize64
+Method-name:isValid
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:fastIsValid
+Method-name:bigIntegerBytesInternalScratch
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastBigIntegerBytes
+Method-name:bigIntegerBytesInternalScratchBuffer
+Method-returnType:byte[]
+Method-parameters:[]
+Method-name:bigIntegerBytesCopy
+Method-returnType:byte[]
+Method-parameters:[long[] scratchLongs, byte[] scratchBuffer]
+MethodInvocation:isSet
+MethodInvocation:fastBigIntegerBytes
+MethodInvocation:copyOf
+Method-name:bigIntegerBytes
+Method-returnType:int
+Method-parameters:[long[] scratchLongs, byte[] scratchBuffer]
+MethodInvocation:isSet
+MethodInvocation:fastBigIntegerBytes
+Method-name:signum
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastSignum
+Method-name:precision
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastSqlPrecision
+Method-name:rawPrecision
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastRawPrecision
+Method-name:scale
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastScale
+Method-name:isByte
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastIsByte
+Method-name:byteValue
+Method-returnType:byte
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastByteValueClip
+Method-name:isShort
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastIsShort
+Method-name:shortValue
+Method-returnType:short
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastShortValueClip
+Method-name:isInt
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastIsInt
+Method-name:intValue
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastIntValueClip
+Method-name:isLong
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastIsLong
+Method-name:longValue
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastLongValueClip
+Method-name:floatValue
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastFloatValue
+Method-name:doubleValue
+Method-returnType:double
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastDoubleValue
+Method-name:mutateAbs
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:fastAbs
+Method-name:mutateNegate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:fastNegate
+Method-name:mutateAdd
+Method-returnType:void
+Method-parameters:[HiveDecimalWritable decWritable]
+MethodInvocation:fastAdd
+Method-name:mutateAdd
+Method-returnType:void
+Method-parameters:[HiveDecimal dec]
+MethodInvocation:fastAdd
+Method-name:mutateSubtract
+Method-returnType:void
+Method-parameters:[HiveDecimalWritable decWritable]
+MethodInvocation:fastSubtract
+Method-name:mutateSubtract
+Method-returnType:void
+Method-parameters:[HiveDecimal dec]
+MethodInvocation:fastSubtract
+Method-name:mutateMultiply
+Method-returnType:void
+Method-parameters:[HiveDecimalWritable decWritable]
+MethodInvocation:fastMultiply
+Method-name:mutateMultiply
+Method-returnType:void
+Method-parameters:[HiveDecimal dec]
+MethodInvocation:fastMultiply
+Method-name:mutateDivide
+Method-returnType:void
+Method-parameters:[HiveDecimalWritable decWritable]
+MethodInvocation:fastDivide
+Method-name:mutateDivide
+Method-returnType:void
+Method-parameters:[HiveDecimal dec]
+MethodInvocation:fastDivide
+Method-name:mutateRemainder
+Method-returnType:void
+Method-parameters:[HiveDecimalWritable decWritable]
+MethodInvocation:fastRemainder
+Method-name:mutateRemainder
+Method-returnType:void
+Method-parameters:[HiveDecimal dec]
+MethodInvocation:fastRemainder
+Method-name:mutateScaleByPowerOfTen
+Method-returnType:void
+Method-parameters:[int power]
+MethodInvocation:fastScaleByPowerOfTen
+Method-name:mutateFractionPortion
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:fastFractionPortion
+Method-name:mutateIntegerPortion
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:fastIntegerPortion
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[HiveDecimalWritable writable]
+MethodInvocation:isSet
+MethodInvocation:isSet
+MethodInvocation:fastCompareTo
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[HiveDecimal dec]
+MethodInvocation:isSet
+MethodInvocation:fastCompareTo
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[HiveDecimal dec, HiveDecimalWritable writable]
+MethodInvocation:isSet
+MethodInvocation:fastCompareTo
+Method-name:toBytes
+Method-returnType:int
+Method-parameters:[byte[] scratchBuffer]
+MethodInvocation:isSet
+MethodInvocation:fastToBytes
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastToString
+Method-name:toString
+Method-returnType:String
+Method-parameters:[byte[] scratchBuffer]
+MethodInvocation:isSet
+MethodInvocation:fastSerializationScale
+MethodInvocation:fastToFormatString
+MethodInvocation:fastSerializationScale
+MethodInvocation:fastToString
+Method-name:toFormatString
+Method-returnType:String
+Method-parameters:[int formatScale]
+MethodInvocation:isSet
+MethodInvocation:fastToFormatString
+Method-name:toFormatBytes
+Method-returnType:int
+Method-parameters:[int formatScale, byte[] scratchBuffer]
+MethodInvocation:isSet
+MethodInvocation:fastToFormatBytes
+Method-name:toDigitsOnlyBytes
+Method-returnType:int
+Method-parameters:[byte[] scratchBuffer]
+MethodInvocation:isSet
+MethodInvocation:fastToDigitsOnlyBytes
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:isSet
+MethodInvocation:fastEquals
+Method-name:newFasterHashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastNewFasterHashCode
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastHashCode
+Field:EMPTY_ARRAY
+Method-name:getInternalStorage
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:bigIntegerBytesCopy
+Method-name:getScale
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSet
+MethodInvocation:fastScale
+Method-name:mutateSetScale
+Method-returnType:void
+Method-parameters:[int roundingPoint, int roundingMode]
+MethodInvocation:fastRound
+MethodInvocation:fastReset
+Method-name:mutateEnforcePrecisionScale
+Method-returnType:boolean
+Method-parameters:[int precision, int scale]
+MethodInvocation:fastEnforcePrecisionScale
+MethodInvocation:fastReset
+Method-name:enforcePrecisionScale
+Method-returnType:HiveDecimalWritable
+Method-parameters:[HiveDecimalWritable writable, int precision, int scale]
+MethodInvocation:mutateEnforcePrecisionScale
+MethodInvocation:isSet
+Method-name:setOther
+Method-returnType:void
+Method-parameters:[int elementNum, Decimal64ColumnVector decimal64ColumnVector]
+MethodInvocation:set
+MethodInvocation:getScratchWritable
+MethodInvocation:mutateEnforcePrecisionScale
+MethodInvocation:getScratchWritable
+MethodInvocation:isSet
+MethodInvocation:getScratchWritable
+MethodInvocation:serialize64
+MethodInvocation:getScratchWritable

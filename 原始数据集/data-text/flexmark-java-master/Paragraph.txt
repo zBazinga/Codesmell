@@ -1,0 +1,101 @@
+Class:Paragraph
+Field:EMPTY_INDENTS
+Field:lineIndents
+Field:trailingBlankLine
+Field:hasTableSeparator
+Method-name:getSegments
+Method-returnType:BasedSequence[]
+Method-parameters:[]
+Method-name:getAstExtra
+Method-returnType:void
+Method-parameters:[@NotNull StringBuilder out]
+MethodInvocation:append
+Method-name:Paragraph
+Method-returnType:null
+Method-parameters:[]
+Method-name:Paragraph
+Method-returnType:null
+Method-parameters:[BasedSequence chars]
+Method-name:Paragraph
+Method-returnType:null
+Method-parameters:[BasedSequence chars, List<BasedSequence> lineSegments, List<Integer> lineIndents]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:setLineIndents
+Method-name:Paragraph
+Method-returnType:null
+Method-parameters:[BasedSequence chars, List<BasedSequence> lineSegments, int[] lineIndents]
+MethodInvocation:size
+FieldAccess:lineIndents
+Method-name:Paragraph
+Method-returnType:null
+Method-parameters:[BlockContent blockContent]
+MethodInvocation:setLineIndents
+MethodInvocation:getLineIndents
+Method-name:setLineIndents
+Method-returnType:void
+Method-parameters:[List<Integer> lineIndents]
+FieldAccess:lineIndents
+MethodInvocation:size
+FieldAccess:lineIndents
+Method-name:setContent
+Method-returnType:void
+Method-parameters:[@NotNull BasedSequence chars, @NotNull List<BasedSequence> lineSegments]
+Method-name:setContent
+Method-returnType:void
+Method-parameters:[BasedSequence chars, List<BasedSequence> lineSegments, List<Integer> lineIndents]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:setLineIndents
+Method-name:setContent
+Method-returnType:void
+Method-parameters:[@NotNull List<BasedSequence> lineSegments]
+Method-name:setContent
+Method-returnType:void
+Method-parameters:[@NotNull BlockContent blockContent]
+MethodInvocation:setLineIndents
+MethodInvocation:getLineIndents
+Method-name:setContent
+Method-returnType:void
+Method-parameters:[BlockContent blockContent, int startLine, int endLine]
+MethodInvocation:subList
+MethodInvocation:getLines
+MethodInvocation:setLineIndents
+MethodInvocation:subList
+MethodInvocation:getLineIndents
+Method-name:setContent
+Method-returnType:void
+Method-parameters:[Paragraph other, int startLine, int endLine]
+MethodInvocation:getContentLines
+MethodInvocation:arraycopy
+FieldAccess:lineIndents
+FieldAccess:lineIndents
+Method-name:setLineIndents
+Method-returnType:void
+Method-parameters:[int[] lineIndents]
+FieldAccess:lineIndents
+Method-name:getLineIndent
+Method-returnType:int
+Method-parameters:[int line]
+Method-name:getLineIndents
+Method-returnType:int[]
+Method-parameters:[]
+Method-name:isTrailingBlankLine
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setTrailingBlankLine
+Method-returnType:void
+Method-parameters:[boolean trailingBlankLine]
+FieldAccess:trailingBlankLine
+Method-name:setHasTableSeparator
+Method-returnType:void
+Method-parameters:[boolean hasTableSeparator]
+FieldAccess:hasTableSeparator
+Method-name:hasTableSeparator
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:collectText
+Method-returnType:boolean
+Method-parameters:[ISequenceBuilder<? extends ISequenceBuilder<?,BasedSequence>,BasedSequence> out, int flags, NodeVisitor nodeVisitor]
+MethodInvocation:isEmpty
+MethodInvocation:add

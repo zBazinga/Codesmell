@@ -1,0 +1,93 @@
+Class:EnergyProcessor
+Method-name:EnergyProcessor
+Method-returnType:null
+Method-parameters:[DynamicPropertiesStore dynamicPropertiesStore, AccountStore accountStore]
+Method-name:getHeadSlot
+Method-returnType:long
+Method-parameters:[DynamicPropertiesStore dynamicPropertiesStore]
+MethodInvocation:getLatestBlockHeaderTimestamp
+MethodInvocation:parseLong
+MethodInvocation:getTimestamp
+MethodInvocation:getGenesisBlock
+MethodInvocation:getInstance
+Method-name:updateUsage
+Method-returnType:void
+Method-parameters:[AccountCapsule accountCapsule]
+MethodInvocation:getHeadSlot
+MethodInvocation:updateUsage
+Method-name:updateUsage
+Method-returnType:void
+Method-parameters:[AccountCapsule accountCapsule, long now]
+MethodInvocation:getAccountResource
+MethodInvocation:getEnergyUsage
+MethodInvocation:getLatestConsumeTimeForEnergy
+MethodInvocation:setEnergyUsage
+MethodInvocation:increase
+Method-name:updateTotalEnergyAverageUsage
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getHeadSlot
+MethodInvocation:getBlockEnergyUsage
+MethodInvocation:getTotalEnergyAverageUsage
+MethodInvocation:getTotalEnergyAverageTime
+MethodInvocation:increase
+MethodInvocation:saveTotalEnergyAverageUsage
+MethodInvocation:saveTotalEnergyAverageTime
+Method-name:updateAdaptiveTotalEnergyLimit
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getTotalEnergyAverageUsage
+MethodInvocation:getTotalEnergyTargetLimit
+MethodInvocation:getTotalEnergyCurrentLimit
+MethodInvocation:getTotalEnergyLimit
+MethodInvocation:min
+MethodInvocation:max
+MethodInvocation:saveTotalEnergyCurrentLimit
+MethodInvocation:debug
+Method-name:consume
+Method-returnType:void
+Method-parameters:[TransactionCapsule trx, TransactionTrace trace]
+Method-name:useEnergy
+Method-returnType:boolean
+Method-parameters:[AccountCapsule accountCapsule, long energy, long now]
+MethodInvocation:getEnergyUsage
+MethodInvocation:getLatestConsumeTimeForEnergy
+MethodInvocation:getAccountResource
+MethodInvocation:calculateGlobalEnergyLimit
+MethodInvocation:increase
+MethodInvocation:getLatestBlockHeaderTimestamp
+MethodInvocation:increase
+MethodInvocation:setEnergyUsage
+MethodInvocation:setLatestOperationTime
+MethodInvocation:setLatestConsumeTimeForEnergy
+MethodInvocation:put
+MethodInvocation:createDbKey
+MethodInvocation:getAllowAdaptiveEnergy
+MethodInvocation:getBlockEnergyUsage
+MethodInvocation:saveBlockEnergyUsage
+Method-name:calculateGlobalEnergyLimit
+Method-returnType:long
+Method-parameters:[AccountCapsule accountCapsule]
+Method-name:getAccountLeftEnergyFromFreeze
+Method-returnType:long
+Method-parameters:[AccountCapsule accountCapsule]
+MethodInvocation:getHeadSlot
+MethodInvocation:getEnergyUsage
+MethodInvocation:getLatestConsumeTimeForEnergy
+MethodInvocation:getAccountResource
+MethodInvocation:calculateGlobalEnergyLimit
+MethodInvocation:increase
+MethodInvocation:max
+Method-name:getHeadSlot
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getHeadSlot
+Method-name:getOriginUsage
+Method-returnType:long
+Method-parameters:[DynamicPropertiesStore dynamicPropertiesStore, AccountCapsule origin, long originEnergyLimit, long originUsage, ReceiptCapsule receiptCapsule]
+MethodInvocation:checkForEnergyLimit
+MethodInvocation:min
+MethodInvocation:min
+MethodInvocation:getAccountLeftEnergyFromFreeze
+MethodInvocation:min
+MethodInvocation:getAccountLeftEnergyFromFreeze

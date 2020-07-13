@@ -1,0 +1,77 @@
+Class:CodeVar
+Field:name
+Field:type
+Field:ssaVars
+Field:isFinal
+Field:isThis
+Field:isDeclared
+Method-name:fromMthArg
+Method-returnType:CodeVar
+Method-parameters:[RegisterArg mthArg]
+MethodInvocation:setType
+MethodInvocation:getInitType
+MethodInvocation:setName
+MethodInvocation:getName
+MethodInvocation:setDeclared
+MethodInvocation:setThis
+MethodInvocation:isThis
+MethodInvocation:getRegNum
+MethodInvocation:setCodeVar
+MethodInvocation:setSsaVars
+MethodInvocation:singletonList
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setName
+Method-returnType:void
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:getType
+Method-returnType:ArgType
+Method-parameters:[]
+Method-name:setType
+Method-returnType:void
+Method-parameters:[ArgType type]
+FieldAccess:type
+Method-name:getSsaVars
+Method-returnType:List<SSAVar>
+Method-parameters:[]
+Method-name:addSsaVar
+Method-returnType:void
+Method-parameters:[SSAVar ssaVar]
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:setSsaVars
+Method-returnType:void
+Method-parameters:[List<SSAVar> ssaVars]
+FieldAccess:ssaVars
+Method-name:isFinal
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setFinal
+Method-returnType:void
+Method-parameters:[boolean aFinal]
+Method-name:isThis
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setThis
+Method-returnType:void
+Method-parameters:[boolean aThis]
+Method-name:isDeclared
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDeclared
+Method-returnType:void
+Method-parameters:[boolean declared]
+Method-name:mergeFlagsFrom
+Method-returnType:void
+Method-parameters:[CodeVar other]
+MethodInvocation:isDeclared
+MethodInvocation:setDeclared
+MethodInvocation:isThis
+MethodInvocation:setThis
+MethodInvocation:isFinal
+MethodInvocation:setFinal
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

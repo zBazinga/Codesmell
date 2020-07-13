@@ -1,0 +1,295 @@
+Class:Node
+Field:pubSubManager
+Field:id
+Field:itemEventToListenerMap
+Field:itemDeleteToListenerMap
+Field:configEventToListenerMap
+Method-name:Node
+Method-returnType:null
+Method-parameters:[PubSubManager pubSubManager, String nodeId]
+FieldAccess:pubSubManager
+Method-name:getId
+Method-returnType:String
+Method-parameters:[]
+Method-name:getNodeConfiguration
+Method-returnType:ConfigureForm
+Method-parameters:[]
+MethodInvocation:createPubsubPacket
+MethodInvocation:getId
+MethodInvocation:sendPubsubPacket
+MethodInvocation:getFormFromPacket
+Method-name:sendConfigurationForm
+Method-returnType:void
+Method-parameters:[FillableConfigureForm configureForm]
+MethodInvocation:createPubsubPacket
+MethodInvocation:getId
+MethodInvocation:getDataFormToSubmit
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:getConnection
+Method-name:discoverInfo
+Method-returnType:DiscoverInfo
+Method-parameters:[]
+MethodInvocation:getConnection
+MethodInvocation:build
+MethodInvocation:setNode
+MethodInvocation:to
+MethodInvocation:builder
+MethodInvocation:getServiceJid
+MethodInvocation:getId
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:getSubscriptions
+Method-returnType:List<Subscription>
+Method-parameters:[]
+MethodInvocation:getSubscriptions
+Method-name:getSubscriptions
+Method-returnType:List<Subscription>
+Method-parameters:[List<ExtensionElement> additionalExtensions, Collection<ExtensionElement> returnedExtensions]
+MethodInvocation:getSubscriptions
+Method-name:getSubscriptionsAsOwner
+Method-returnType:List<Subscription>
+Method-parameters:[]
+MethodInvocation:getSubscriptionsAsOwner
+Method-name:getSubscriptionsAsOwner
+Method-returnType:List<Subscription>
+Method-parameters:[List<ExtensionElement> additionalExtensions, Collection<ExtensionElement> returnedExtensions]
+MethodInvocation:getSubscriptions
+Method-name:getSubscriptions
+Method-returnType:List<Subscription>
+Method-parameters:[SubscriptionsNamespace subscriptionsNamespace, List<ExtensionElement> additionalExtensions, Collection<ExtensionElement> returnedExtensions]
+MethodInvocation:createPubsubPacket
+MethodInvocation:getId
+MethodInvocation:addExtension
+MethodInvocation:sendPubsubPacket
+MethodInvocation:addAll
+MethodInvocation:getExtensions
+MethodInvocation:getExtension
+MethodInvocation:getSubscriptions
+Method-name:modifySubscriptionsAsOwner
+Method-returnType:PubSub
+Method-parameters:[List<Subscription> changedSubs]
+MethodInvocation:createPubsubPacket
+MethodInvocation:getId
+MethodInvocation:sendPubsubPacket
+Method-name:getAffiliations
+Method-returnType:List<Affiliation>
+Method-parameters:[]
+MethodInvocation:getAffiliations
+Method-name:getAffiliations
+Method-returnType:List<Affiliation>
+Method-parameters:[List<ExtensionElement> additionalExtensions, Collection<ExtensionElement> returnedExtensions]
+MethodInvocation:getAffiliations
+Method-name:getAffiliationsAsOwner
+Method-returnType:List<Affiliation>
+Method-parameters:[]
+MethodInvocation:getAffiliationsAsOwner
+Method-name:getAffiliationsAsOwner
+Method-returnType:List<Affiliation>
+Method-parameters:[List<ExtensionElement> additionalExtensions, Collection<ExtensionElement> returnedExtensions]
+MethodInvocation:getAffiliations
+Method-name:getAffiliations
+Method-returnType:List<Affiliation>
+Method-parameters:[AffiliationNamespace affiliationsNamespace, List<ExtensionElement> additionalExtensions, Collection<ExtensionElement> returnedExtensions]
+MethodInvocation:createPubsubPacket
+MethodInvocation:getId
+MethodInvocation:addExtension
+MethodInvocation:sendPubsubPacket
+MethodInvocation:addAll
+MethodInvocation:getExtensions
+MethodInvocation:getExtension
+MethodInvocation:getAffiliations
+Method-name:modifyAffiliationAsOwner
+Method-returnType:PubSub
+Method-parameters:[List<Affiliation> affiliations]
+MethodInvocation:getPubSubNamespace
+MethodInvocation:createPubsubPacket
+MethodInvocation:getId
+MethodInvocation:sendPubsubPacket
+Method-name:subscribe
+Method-returnType:Subscription
+Method-parameters:[Jid jid]
+MethodInvocation:createPubsubPacket
+MethodInvocation:getId
+MethodInvocation:sendPubsubPacket
+MethodInvocation:getExtension
+Method-name:subscribe
+Method-returnType:Subscription
+Method-parameters:[String jidString]
+MethodInvocation:from
+MethodInvocation:subscribe
+Method-name:subscribe
+Method-returnType:Subscription
+Method-parameters:[Jid jid, FillableSubscribeForm subForm]
+MethodInvocation:getDataFormToSubmit
+MethodInvocation:createPubsubPacket
+MethodInvocation:getId
+MethodInvocation:addExtension
+MethodInvocation:sendPubsubPacket
+MethodInvocation:getExtension
+Method-name:unsubscribe
+Method-returnType:void
+Method-parameters:[String jid]
+MethodInvocation:unsubscribe
+Method-name:unsubscribe
+Method-returnType:void
+Method-parameters:[String jid, String subscriptionId]
+MethodInvocation:sendPubsubPacket
+MethodInvocation:createPubsubPacket
+MethodInvocation:getId
+Method-name:getSubscriptionOptions
+Method-returnType:SubscribeForm
+Method-parameters:[String jid]
+MethodInvocation:getSubscriptionOptions
+Method-name:getSubscriptionOptions
+Method-returnType:SubscribeForm
+Method-parameters:[String jid, String subscriptionId]
+MethodInvocation:sendPubsubPacket
+MethodInvocation:createPubsubPacket
+MethodInvocation:getId
+MethodInvocation:getExtension
+MethodInvocation:getForm
+Method-name:addItemEventListener
+Method-returnType:void
+Method-parameters:[@SuppressWarnings("rawtypes") ItemEventListener listener]
+MethodInvocation:put
+MethodInvocation:addSyncStanzaListener
+MethodInvocation:getConnection
+MethodInvocation:toString
+Method-name:removeItemEventListener
+Method-returnType:void
+Method-parameters:[@SuppressWarnings("rawtypes") ItemEventListener listener]
+MethodInvocation:remove
+MethodInvocation:removeSyncStanzaListener
+MethodInvocation:getConnection
+Method-name:addConfigurationListener
+Method-returnType:void
+Method-parameters:[NodeConfigListener listener]
+MethodInvocation:put
+MethodInvocation:addSyncStanzaListener
+MethodInvocation:getConnection
+MethodInvocation:toString
+Method-name:removeConfigurationListener
+Method-returnType:void
+Method-parameters:[NodeConfigListener listener]
+MethodInvocation:remove
+MethodInvocation:removeSyncStanzaListener
+MethodInvocation:getConnection
+Method-name:addItemDeleteListener
+Method-returnType:void
+Method-parameters:[ItemDeleteListener listener]
+MethodInvocation:put
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:addSyncStanzaListener
+MethodInvocation:getConnection
+Method-name:removeItemDeleteListener
+Method-returnType:void
+Method-parameters:[ItemDeleteListener listener]
+MethodInvocation:remove
+MethodInvocation:removeSyncStanzaListener
+MethodInvocation:getConnection
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:createPubsubPacket
+Method-returnType:PubSub
+Method-parameters:[Type type, NodeExtension ext]
+MethodInvocation:createPubsubPacket
+MethodInvocation:getServiceJid
+Method-name:sendPubsubPacket
+Method-returnType:PubSub
+Method-parameters:[PubSub packet]
+MethodInvocation:sendPubsubPacket
+Method-name:getSubscriptionIds
+Method-returnType:List<String>
+Method-parameters:[Stanza packet]
+MethodInvocation:getExtension
+MethodInvocation:size
+MethodInvocation:getHeaders
+MethodInvocation:getHeaders
+MethodInvocation:add
+MethodInvocation:getValue
+Class:ItemEventTranslator
+Field:listener
+Method-name:ItemEventTranslator
+Method-returnType:null
+Method-parameters:[@SuppressWarnings("rawtypes") ItemEventListener eventListener]
+Method-name:processStanza
+Method-returnType:void
+Method-parameters:[Stanza packet]
+MethodInvocation:getExtensionElement
+MethodInvocation:getXmlns
+MethodInvocation:getEvent
+MethodInvocation:getNode
+MethodInvocation:getItems
+MethodInvocation:getSubscriptionIds
+MethodInvocation:getDelayTimestamp
+MethodInvocation:handlePublishedItems
+Class:ItemDeleteTranslator
+Field:listener
+Method-name:ItemDeleteTranslator
+Method-returnType:null
+Method-parameters:[ItemDeleteListener eventListener]
+Method-name:processStanza
+Method-returnType:void
+Method-parameters:[Stanza packet]
+MethodInvocation:getExtensionElement
+MethodInvocation:getXmlns
+MethodInvocation:getExtensions
+MethodInvocation:equals
+MethodInvocation:getElementName
+MethodInvocation:get
+MethodInvocation:getElementName
+MethodInvocation:handlePurge
+MethodInvocation:getEvent
+MethodInvocation:getItems
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:getId
+MethodInvocation:getNode
+MethodInvocation:getSubscriptionIds
+MethodInvocation:handleDeletedItems
+Class:NodeConfigTranslator
+Field:listener
+Method-name:NodeConfigTranslator
+Method-returnType:null
+Method-parameters:[NodeConfigListener eventListener]
+Method-name:processStanza
+Method-returnType:void
+Method-parameters:[Stanza packet]
+MethodInvocation:getExtensionElement
+MethodInvocation:getXmlns
+MethodInvocation:getEvent
+MethodInvocation:handleNodeConfiguration
+Class:EventContentFilter
+Field:firstElement
+Field:secondElement
+Field:allowEmpty
+Method-name:EventContentFilter
+Method-returnType:null
+Method-parameters:[String elementName]
+Method-name:EventContentFilter
+Method-returnType:null
+Method-parameters:[String firstLevelElement, String secondLevelElement]
+MethodInvocation:equals
+MethodInvocation:toString
+MethodInvocation:equals
+Method-name:acceptSpecific
+Method-returnType:boolean
+Method-parameters:[Message message]
+MethodInvocation:from
+MethodInvocation:getEvent
+MethodInvocation:equals
+MethodInvocation:getElementName
+MethodInvocation:equals
+MethodInvocation:getNode
+MethodInvocation:getId
+MethodInvocation:getExtensions
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:getElementName
+MethodInvocation:get

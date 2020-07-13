@@ -1,0 +1,53 @@
+Class:GraphGrouper
+Field:graph
+Field:currGroups
+Field:groupIndex
+Method-name:GraphGrouper
+Method-returnType:null
+Method-parameters:[DirectedGraph<Node,IndexedEdge> graph, Collection<Group> initialGroups]
+FieldAccess:graph
+FieldAccess:currGroups
+MethodInvocation:reindex
+Method-name:getAllGroups
+Method-returnType:Collection<Group>
+Method-parameters:[]
+Method-name:addGroup
+Method-returnType:void
+Method-parameters:[Group g]
+MethodInvocation:add
+Method-name:reindex
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:put
+Method-name:mergeFully
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:outgoingGroups
+MethodInvocation:size
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:merge
+MethodInvocation:incomingGroups
+MethodInvocation:size
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:merge
+Method-name:merge
+Method-returnType:void
+Method-parameters:[Group g1, Group g2]
+MethodInvocation:remove
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:put
+Method-name:incomingGroups
+Method-returnType:Collection<Group>
+Method-parameters:[Group g]
+MethodInvocation:incomingNodes
+MethodInvocation:nodeGroup
+MethodInvocation:equals
+MethodInvocation:add
+Method-name:nodeGroup
+Method-returnType:Group
+Method-parameters:[Node n]
+MethodInvocation:get

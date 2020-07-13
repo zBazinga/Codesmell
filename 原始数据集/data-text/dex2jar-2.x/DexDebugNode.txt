@@ -1,0 +1,113 @@
+Class:DexDebugNode
+Field:debugNodes
+Field:parameterNames
+Field:fineName
+Method-name:addDebug
+Method-returnType:void
+Method-parameters:[DexDebugOpNode dexDebugNode]
+MethodInvocation:add
+Method-name:visitSetFile
+Method-returnType:void
+Method-parameters:[String file]
+FieldAccess:fineName
+Method-name:visitRestartLocal
+Method-returnType:void
+Method-parameters:[int reg, DexLabel label]
+MethodInvocation:addDebug
+Method-name:visitParameterName
+Method-returnType:void
+Method-parameters:[final int parameterIndex, final String name]
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:set
+Method-name:visitLineNumber
+Method-returnType:void
+Method-parameters:[final int line, final DexLabel label]
+MethodInvocation:addDebug
+Method-name:visitStartLocal
+Method-returnType:void
+Method-parameters:[int reg, DexLabel label, String name, String type, String signature]
+MethodInvocation:addDebug
+Method-name:visitEndLocal
+Method-returnType:void
+Method-parameters:[int reg, DexLabel label]
+MethodInvocation:addDebug
+Method-name:visitPrologue
+Method-returnType:void
+Method-parameters:[DexLabel dexLabel]
+MethodInvocation:addDebug
+Method-name:visitEpiogue
+Method-returnType:void
+Method-parameters:[DexLabel dexLabel]
+MethodInvocation:addDebug
+Class:DexDebugOpNode
+Field:label
+Method-name:DexDebugOpNode
+Method-returnType:null
+Method-parameters:[DexLabel label]
+FieldAccess:label
+Method-name:accept
+Method-returnType:void
+Method-parameters:[DexDebugVisitor cv]
+Class:StartLocalNode
+Field:reg
+Field:name
+Field:type
+Field:signature
+Method-name:StartLocalNode
+Method-returnType:null
+Method-parameters:[DexLabel label, int reg, String name, String type, String signature]
+FieldAccess:reg
+FieldAccess:name
+FieldAccess:type
+FieldAccess:signature
+Method-name:accept
+Method-returnType:void
+Method-parameters:[DexDebugVisitor cv]
+MethodInvocation:visitStartLocal
+Class:EndLocal
+Field:reg
+Method-name:EndLocal
+Method-returnType:null
+Method-parameters:[DexLabel label, int reg]
+FieldAccess:reg
+Method-name:accept
+Method-returnType:void
+Method-parameters:[DexDebugVisitor cv]
+MethodInvocation:visitEndLocal
+Class:Epiogue
+Method-name:Epiogue
+Method-returnType:null
+Method-parameters:[DexLabel label]
+Method-name:accept
+Method-returnType:void
+Method-parameters:[DexDebugVisitor cv]
+MethodInvocation:visitEpiogue
+Class:Prologue
+Method-name:Prologue
+Method-returnType:null
+Method-parameters:[DexLabel label]
+Method-name:accept
+Method-returnType:void
+Method-parameters:[DexDebugVisitor cv]
+MethodInvocation:visitPrologue
+Class:RestartLocal
+Field:reg
+Method-name:RestartLocal
+Method-returnType:null
+Method-parameters:[DexLabel label, int reg]
+FieldAccess:reg
+Method-name:accept
+Method-returnType:void
+Method-parameters:[DexDebugVisitor cv]
+MethodInvocation:visitRestartLocal
+Class:LineNumber
+Field:line
+Method-name:LineNumber
+Method-returnType:null
+Method-parameters:[DexLabel label, int line]
+FieldAccess:line
+Method-name:accept
+Method-returnType:void
+Method-parameters:[DexDebugVisitor cv]
+MethodInvocation:visitLineNumber

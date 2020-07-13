@@ -1,0 +1,39 @@
+Class:OptimizeRunOrderExtension
+Field:configuration
+Method-name:visitSpec
+Method-returnType:void
+Method-parameters:[SpecInfo spec]
+MethodInvocation:getName
+MethodInvocation:getReflection
+MethodInvocation:safeLoadFromDisk
+MethodInvocation:sortFeatures
+MethodInvocation:addListener
+Field:specStarted
+Field:featureStarted
+Field:errorOccurred
+Method-name:beforeSpec
+Method-returnType:void
+Method-parameters:[SpecInfo spec]
+MethodInvocation:nanoTime
+Method-name:beforeFeature
+Method-returnType:void
+Method-parameters:[FeatureInfo feature]
+MethodInvocation:nanoTime
+Method-name:afterFeature
+Method-returnType:void
+Method-parameters:[FeatureInfo feature]
+MethodInvocation:collectFeatureData
+MethodInvocation:nanoTime
+Method-name:error
+Method-returnType:void
+Method-parameters:[ErrorInfo error]
+Method-name:afterSpec
+Method-returnType:void
+Method-parameters:[SpecInfo spec]
+MethodInvocation:collectSpecData
+MethodInvocation:nanoTime
+MethodInvocation:safeSaveToDisk
+Method-name:safeSaveToDisk
+Method-returnType:void
+Method-parameters:[SpecRunHistory history]
+MethodInvocation:saveToDisk

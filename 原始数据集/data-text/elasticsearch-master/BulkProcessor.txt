@@ -1,0 +1,240 @@
+Class:BulkProcessor
+Method-name:beforeBulk
+Method-returnType:void
+Method-parameters:[long executionId, BulkRequest request]
+Method-name:afterBulk
+Method-returnType:void
+Method-parameters:[long executionId, BulkRequest request, BulkResponse response]
+Method-name:afterBulk
+Method-returnType:void
+Method-parameters:[long executionId, BulkRequest request, Throwable failure]
+Class:Builder
+Field:consumer
+Field:listener
+Field:flushScheduler
+Field:retryScheduler
+Field:onClose
+Field:concurrentRequests
+Field:bulkActions
+Field:bulkSize
+Field:flushInterval
+Field:backoffPolicy
+MethodInvocation:exponentialBackoff
+Field:globalIndex
+Field:globalRouting
+Field:globalPipeline
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[BiConsumer<BulkRequest,ActionListener<BulkResponse>> consumer, Listener listener, Scheduler flushScheduler, Scheduler retryScheduler, Runnable onClose]
+FieldAccess:consumer
+FieldAccess:listener
+FieldAccess:flushScheduler
+FieldAccess:retryScheduler
+FieldAccess:onClose
+Method-name:setConcurrentRequests
+Method-returnType:Builder
+Method-parameters:[int concurrentRequests]
+FieldAccess:concurrentRequests
+Method-name:setBulkActions
+Method-returnType:Builder
+Method-parameters:[int bulkActions]
+FieldAccess:bulkActions
+Method-name:setBulkSize
+Method-returnType:Builder
+Method-parameters:[ByteSizeValue bulkSize]
+FieldAccess:bulkSize
+Method-name:setFlushInterval
+Method-returnType:Builder
+Method-parameters:[TimeValue flushInterval]
+FieldAccess:flushInterval
+Method-name:setGlobalIndex
+Method-returnType:Builder
+Method-parameters:[String globalIndex]
+FieldAccess:globalIndex
+Method-name:setGlobalRouting
+Method-returnType:Builder
+Method-parameters:[String globalRouting]
+FieldAccess:globalRouting
+Method-name:setGlobalPipeline
+Method-returnType:Builder
+Method-parameters:[String globalPipeline]
+FieldAccess:globalPipeline
+Method-name:setBackoffPolicy
+Method-returnType:Builder
+Method-parameters:[BackoffPolicy backoffPolicy]
+FieldAccess:backoffPolicy
+Method-name:build
+Method-returnType:BulkProcessor
+Method-parameters:[]
+MethodInvocation:createBulkRequestWithGlobalDefaults
+Method-name:createBulkRequestWithGlobalDefaults
+Method-returnType:Supplier<BulkRequest>
+Method-parameters:[]
+MethodInvocation:routing
+MethodInvocation:pipeline
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[Client client, Listener listener, Scheduler flushScheduler, Scheduler retryScheduler, Runnable onClose]
+MethodInvocation:requireNonNull
+MethodInvocation:requireNonNull
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[Client client, Listener listener]
+MethodInvocation:requireNonNull
+MethodInvocation:requireNonNull
+MethodInvocation:threadPool
+MethodInvocation:threadPool
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[BiConsumer<BulkRequest,ActionListener<BulkResponse>> consumer, Listener listener]
+MethodInvocation:requireNonNull
+MethodInvocation:requireNonNull
+MethodInvocation:initScheduler
+MethodInvocation:initScheduler
+MethodInvocation:buildScheduler
+MethodInvocation:buildScheduler
+MethodInvocation:terminate
+MethodInvocation:terminate
+Method-name:buildScheduler
+Method-returnType:Scheduler
+Method-parameters:[ScheduledThreadPoolExecutor scheduledThreadPoolExecutor]
+MethodInvocation:wrapAsScheduledCancellable
+MethodInvocation:schedule
+MethodInvocation:millis
+Field:bulkActions
+Field:bulkSize
+Field:cancellableFlushTask
+Field:executionIdGen
+Field:bulkRequest
+Field:bulkRequestSupplier
+Field:bulkRequestHandler
+Field:onClose
+Field:closed
+Field:lock
+Method-name:BulkProcessor
+Method-returnType:null
+Method-parameters:[BiConsumer<BulkRequest,ActionListener<BulkResponse>> consumer, BackoffPolicy backoffPolicy, Listener listener, int concurrentRequests, int bulkActions, ByteSizeValue bulkSize, @Nullable TimeValue flushInterval, Scheduler flushScheduler, Scheduler retryScheduler, Runnable onClose, Supplier<BulkRequest> bulkRequestSupplier]
+FieldAccess:bulkActions
+FieldAccess:bulkSize
+MethodInvocation:getBytes
+FieldAccess:bulkRequest
+MethodInvocation:get
+FieldAccess:bulkRequestSupplier
+FieldAccess:bulkRequestHandler
+FieldAccess:cancellableFlushTask
+MethodInvocation:startFlushTask
+FieldAccess:onClose
+Method-name:BulkProcessor
+Method-returnType:null
+Method-parameters:[BiConsumer<BulkRequest,ActionListener<BulkResponse>> consumer, BackoffPolicy backoffPolicy, Listener listener, int concurrentRequests, int bulkActions, ByteSizeValue bulkSize, @Nullable TimeValue flushInterval, Scheduler scheduler, Runnable onClose, Supplier<BulkRequest> bulkRequestSupplier]
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:awaitClose
+MethodInvocation:interrupt
+MethodInvocation:currentThread
+Method-name:awaitClose
+Method-returnType:boolean
+Method-parameters:[long timeout, TimeUnit unit]
+MethodInvocation:lock
+MethodInvocation:cancel
+FieldAccess:cancellableFlushTask
+MethodInvocation:numberOfActions
+MethodInvocation:execute
+MethodInvocation:awaitClose
+FieldAccess:bulkRequestHandler
+MethodInvocation:run
+MethodInvocation:unlock
+Method-name:add
+Method-returnType:BulkProcessor
+Method-parameters:[IndexRequest request]
+MethodInvocation:add
+Method-name:add
+Method-returnType:BulkProcessor
+Method-parameters:[DeleteRequest request]
+MethodInvocation:add
+Method-name:add
+Method-returnType:BulkProcessor
+Method-parameters:[DocWriteRequest<?> request]
+MethodInvocation:internalAdd
+Method-name:isOpen
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:ensureOpen
+Method-returnType:void
+Method-parameters:[]
+Method-name:internalAdd
+Method-returnType:void
+Method-parameters:[DocWriteRequest<?> request]
+MethodInvocation:lock
+MethodInvocation:ensureOpen
+MethodInvocation:add
+MethodInvocation:newBulkRequestIfNeeded
+MethodInvocation:unlock
+MethodInvocation:execute
+MethodInvocation:v1
+MethodInvocation:v2
+Method-name:add
+Method-returnType:BulkProcessor
+Method-parameters:[BytesReference data, @Nullable String defaultIndex, @Nullable String defaultPipeline, XContentType xContentType]
+MethodInvocation:lock
+MethodInvocation:ensureOpen
+MethodInvocation:add
+MethodInvocation:newBulkRequestIfNeeded
+MethodInvocation:unlock
+MethodInvocation:execute
+MethodInvocation:v1
+MethodInvocation:v2
+Method-name:startFlushTask
+Method-returnType:Scheduler.Cancellable
+Method-parameters:[TimeValue flushInterval, Scheduler scheduler]
+Method-name:cancel
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isCancelled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:scheduleWithFixedDelay
+Method-name:newBulkRequestIfNeeded
+Method-returnType:Tuple<BulkRequest,Long>
+Method-parameters:[]
+MethodInvocation:ensureOpen
+MethodInvocation:isOverTheLimit
+FieldAccess:bulkRequest
+FieldAccess:bulkRequest
+MethodInvocation:get
+MethodInvocation:incrementAndGet
+Method-name:execute
+Method-returnType:void
+Method-parameters:[BulkRequest bulkRequest, long executionId]
+MethodInvocation:execute
+FieldAccess:bulkRequestHandler
+Method-name:execute
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:bulkRequest
+MethodInvocation:incrementAndGet
+FieldAccess:bulkRequest
+MethodInvocation:get
+MethodInvocation:execute
+Method-name:isOverTheLimit
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:numberOfActions
+MethodInvocation:estimatedSizeInBytes
+Method-name:flush
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:lock
+MethodInvocation:ensureOpen
+MethodInvocation:numberOfActions
+MethodInvocation:execute
+MethodInvocation:unlock
+Class:Flush
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:lock
+MethodInvocation:numberOfActions
+MethodInvocation:execute
+MethodInvocation:unlock

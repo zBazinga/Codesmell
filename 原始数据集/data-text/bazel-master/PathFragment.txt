@@ -1,0 +1,316 @@
+Class:PathFragment
+Field:EMPTY_FRAGMENT
+Field:INVALID_SEGMENT
+Field:OS
+MethodInvocation:getFilePathOs
+Field:SEPARATOR_CHAR
+MethodInvocation:getSeparator
+Field:normalizedPath
+Field:driveStrLength
+Method-name:PathFragment
+Method-returnType:null
+Method-parameters:[String normalizedPath, int driveStrLength]
+FieldAccess:normalizedPath
+MethodInvocation:checkNotNull
+FieldAccess:driveStrLength
+Method-name:create
+Method-returnType:PathFragment
+Method-parameters:[String path]
+MethodInvocation:isEmpty
+MethodInvocation:needsToNormalize
+MethodInvocation:normalize
+MethodInvocation:getDriveStrLength
+Method-name:createAlreadyNormalized
+Method-returnType:PathFragment
+Method-parameters:[String normalizedPath]
+MethodInvocation:getDriveStrLength
+MethodInvocation:createAlreadyNormalized
+Method-name:createAlreadyNormalized
+Method-returnType:PathFragment
+Method-parameters:[String normalizedPath, int driveStrLength]
+MethodInvocation:isEmpty
+Method-name:isNormalizedRelativePath
+Method-returnType:boolean
+Method-parameters:[String path]
+MethodInvocation:getDriveStrLength
+MethodInvocation:needsToNormalize
+Method-name:containsSeparator
+Method-returnType:boolean
+Method-parameters:[String path]
+MethodInvocation:lastIndexOf
+Method-name:isAbsolute
+Method-returnType:boolean
+Method-parameters:[String path]
+MethodInvocation:getDriveStrLength
+Method-name:isNormalized
+Method-returnType:boolean
+Method-parameters:[String path]
+MethodInvocation:isNormalizedImpl
+Method-name:containsUplevelReferences
+Method-returnType:boolean
+Method-parameters:[String path]
+MethodInvocation:isNormalizedImpl
+Method-name:isNormalizedImpl
+Method-returnType:boolean
+Method-parameters:[String path, boolean lookForSameLevelReferences]
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:isSeparator
+Method-name:checkAllPathsAreUnder
+Method-returnType:void
+Method-parameters:[Iterable<PathFragment> paths, PathFragment startingWithPath]
+MethodInvocation:checkArgument
+MethodInvocation:equals
+MethodInvocation:startsWith
+Method-name:checkBaseName
+Method-returnType:void
+Method-parameters:[String baseName]
+MethodInvocation:length
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:indexOf
+Method-name:getPathString
+Method-returnType:String
+Method-parameters:[]
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getDriveStrLength
+Method-returnType:int
+Method-parameters:[]
+Method-name:getBaseName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:lastIndexOf
+MethodInvocation:substring
+MethodInvocation:substring
+Method-name:getRelative
+Method-returnType:PathFragment
+Method-parameters:[PathFragment other]
+MethodInvocation:checkNotNull
+MethodInvocation:getRelative
+MethodInvocation:getDriveStrLength
+MethodInvocation:needsToNormalizeSuffix
+Method-name:getRelative
+Method-returnType:PathFragment
+Method-parameters:[String other]
+MethodInvocation:checkNotNull
+MethodInvocation:getRelative
+MethodInvocation:getDriveStrLength
+MethodInvocation:needsToNormalize
+Method-name:getRelative
+Method-returnType:PathFragment
+Method-parameters:[String other, int otherDriveStrLength, int normalizationLevel]
+MethodInvocation:isEmpty
+MethodInvocation:create
+MethodInvocation:isEmpty
+MethodInvocation:normalize
+MethodInvocation:length
+MethodInvocation:normalize
+Method-name:getChild
+Method-returnType:PathFragment
+Method-parameters:[String baseName]
+MethodInvocation:checkBaseName
+MethodInvocation:length
+Method-name:getParentDirectory
+Method-returnType:PathFragment
+Method-parameters:[]
+MethodInvocation:lastIndexOf
+MethodInvocation:length
+MethodInvocation:substring
+MethodInvocation:isEmpty
+MethodInvocation:substring
+Method-name:relativeTo
+Method-returnType:PathFragment
+Method-parameters:[PathFragment base]
+MethodInvocation:checkNotNull
+MethodInvocation:isAbsolute
+MethodInvocation:isAbsolute
+MethodInvocation:startsWith
+MethodInvocation:format
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:charAt
+MethodInvocation:format
+MethodInvocation:substring
+Method-name:relativeTo
+Method-returnType:PathFragment
+Method-parameters:[String base]
+MethodInvocation:relativeTo
+MethodInvocation:create
+Method-name:startsWith
+Method-returnType:boolean
+Method-parameters:[PathFragment other]
+MethodInvocation:checkNotNull
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:startsWith
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:length
+Method-name:endsWith
+Method-returnType:boolean
+Method-parameters:[PathFragment other]
+MethodInvocation:checkNotNull
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:isAbsolute
+MethodInvocation:equals
+MethodInvocation:endsWith
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:length
+MethodInvocation:length
+Method-name:isAbsolute
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+FieldAccess:normalizedPath
+FieldAccess:normalizedPath
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+FieldAccess:normalizedPath
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[PathFragment o]
+MethodInvocation:compare
+FieldAccess:normalizedPath
+Method-name:segmentCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:length
+MethodInvocation:charAt
+Method-name:getSegment
+Method-returnType:String
+Method-parameters:[int index]
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:charAt
+MethodInvocation:substring
+Method-name:subFragment
+Method-returnType:PathFragment
+Method-parameters:[int beginIndex, int endIndex]
+MethodInvocation:format
+MethodInvocation:toString
+MethodInvocation:subFragmentImpl
+Method-name:subFragment
+Method-returnType:PathFragment
+Method-parameters:[int beginIndex]
+MethodInvocation:format
+MethodInvocation:toString
+MethodInvocation:subFragmentImpl
+Method-name:subFragmentImpl
+Method-returnType:PathFragment
+Method-parameters:[int beginIndex, int endIndex]
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:charAt
+MethodInvocation:length
+MethodInvocation:format
+MethodInvocation:toString
+FieldAccess:driveStrLength
+MethodInvocation:max
+MethodInvocation:substring
+Method-name:segments
+Method-returnType:String[]
+Method-parameters:[]
+MethodInvocation:segmentCount
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:substring
+MethodInvocation:substring
+Method-name:getSegments
+Method-returnType:ImmutableList<String>
+Method-parameters:[]
+MethodInvocation:copyOf
+MethodInvocation:segments
+Method-name:getFirstSegment
+Method-returnType:int
+Method-parameters:[Set<String> values]
+MethodInvocation:segments
+MethodInvocation:contains
+Method-name:getSafePathString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getCallablePathString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isAbsolute
+MethodInvocation:isEmpty
+MethodInvocation:indexOf
+Method-name:getFileExtension
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:substring
+Method-name:replaceName
+Method-returnType:PathFragment
+Method-parameters:[String newName]
+MethodInvocation:getParentDirectory
+MethodInvocation:getRelative
+Method-name:getDriveStr
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:checkArgument
+MethodInvocation:isAbsolute
+MethodInvocation:substring
+Method-name:toRelative
+Method-returnType:PathFragment
+Method-parameters:[]
+MethodInvocation:checkArgument
+MethodInvocation:isAbsolute
+MethodInvocation:substring
+Method-name:containsUplevelReferences
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:startsWith
+Method-name:addMapping
+Method-returnType:void
+Method-parameters:[Map<PathFragment,ActionInput> inputMappings, ActionInput input, SpawnInputExpander spawnInputExpander]
+MethodInvocation:checkArgument
+MethodInvocation:isAbsolute
+MethodInvocation:put
+Method-name:filePathForFileTypeMatcher
+Method-returnType:String
+Method-parameters:[]
+Method-name:expandToCommandLine
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPathString
+Method-name:writeReplace
+Method-returnType:Object
+Method-parameters:[]
+Field:NormalizedImplState
+Class:Codec
+Field:stringCodec
+MethodInvocation:asciiOptimized
+Method-name:getEncodedClass
+Method-returnType:Class<? extends PathFragment>
+Method-parameters:[]
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[SerializationContext context, PathFragment obj, CodedOutputStream codedOut]
+MethodInvocation:serialize
+Method-name:deserialize
+Method-returnType:PathFragment
+Method-parameters:[DeserializationContext context, CodedInputStream codedIn]
+MethodInvocation:createAlreadyNormalized
+MethodInvocation:deserialize

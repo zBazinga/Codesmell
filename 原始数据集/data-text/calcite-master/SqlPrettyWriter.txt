@@ -1,0 +1,637 @@
+Class:SqlPrettyWriter
+Field:LOGGER
+MethodInvocation:getLogger
+Field:DEFAULT_BEAN
+MethodInvocation:getBean
+MethodInvocation:withDialect
+MethodInvocation:config
+Field:NL
+MethodInvocation:getProperty
+Field:dialect
+Field:buf
+Field:listStack
+Field:dynamicParameters
+Field:frame
+Field:needWhitespace
+Field:nextWhitespace
+Field:config
+Field:bean
+Field:currentIndent
+Field:lineStart
+Method-name:SqlPrettyWriter
+Method-returnType:null
+Method-parameters:[SqlWriterConfig config, StringBuilder buf, boolean ignore]
+FieldAccess:buf
+MethodInvocation:requireNonNull
+FieldAccess:dialect
+MethodInvocation:requireNonNull
+MethodInvocation:dialect
+FieldAccess:config
+MethodInvocation:requireNonNull
+MethodInvocation:reset
+Method-name:SqlPrettyWriter
+Method-returnType:null
+Method-parameters:[@Nonnull SqlWriterConfig config, @Nonnull StringBuilder buf]
+MethodInvocation:requireNonNull
+Method-name:SqlPrettyWriter
+Method-returnType:null
+Method-parameters:[SqlDialect dialect, SqlWriterConfig config, StringBuilder buf]
+MethodInvocation:withDialect
+MethodInvocation:requireNonNull
+Method-name:SqlPrettyWriter
+Method-returnType:null
+Method-parameters:[SqlDialect dialect, SqlWriterConfig config]
+MethodInvocation:withDialect
+MethodInvocation:requireNonNull
+Method-name:SqlPrettyWriter
+Method-returnType:null
+Method-parameters:[SqlDialect dialect, boolean alwaysUseParentheses, PrintWriter pw]
+MethodInvocation:withAlwaysUseParentheses
+MethodInvocation:withDialect
+MethodInvocation:config
+MethodInvocation:requireNonNull
+Method-name:SqlPrettyWriter
+Method-returnType:null
+Method-parameters:[SqlDialect dialect, boolean alwaysUseParentheses]
+MethodInvocation:withAlwaysUseParentheses
+MethodInvocation:withDialect
+MethodInvocation:config
+MethodInvocation:requireNonNull
+Method-name:SqlPrettyWriter
+Method-returnType:null
+Method-parameters:[SqlDialect dialect]
+MethodInvocation:withDialect
+MethodInvocation:config
+MethodInvocation:requireNonNull
+Method-name:SqlPrettyWriter
+Method-returnType:null
+Method-parameters:[@Nonnull SqlWriterConfig config]
+Method-name:SqlPrettyWriter
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:config
+Method-name:config
+Method-returnType:SqlWriterConfig
+Method-parameters:[]
+MethodInvocation:withDialect
+MethodInvocation:create
+Method-name:setCaseClausesOnNewLines
+Method-returnType:void
+Method-parameters:[boolean caseClausesOnNewLines]
+FieldAccess:config
+MethodInvocation:withCaseClausesOnNewLines
+Method-name:setSubQueryStyle
+Method-returnType:void
+Method-parameters:[SubQueryStyle subQueryStyle]
+FieldAccess:config
+MethodInvocation:withSubQueryStyle
+Method-name:setWindowNewline
+Method-returnType:void
+Method-parameters:[boolean windowNewline]
+FieldAccess:config
+MethodInvocation:withWindowNewline
+Method-name:setWindowDeclListNewline
+Method-returnType:void
+Method-parameters:[boolean windowDeclListNewline]
+FieldAccess:config
+MethodInvocation:withWindowDeclListNewline
+Method-name:getIndentation
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:indentation
+Method-name:isAlwaysUseParentheses
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:alwaysUseParentheses
+Method-name:inQuery
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isQuoteAllIdentifiers
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:quoteAllIdentifiers
+Method-name:isClauseStartsLine
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:clauseStartsLine
+Method-name:isSelectListItemsOnSeparateLines
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:selectListItemsOnSeparateLines
+Method-name:isWhereListItemsOnSeparateLines
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:whereListItemsOnSeparateLines
+Method-name:isSelectListExtraIndentFlag
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:selectListExtraIndentFlag
+Method-name:isKeywordsLowerCase
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:keywordsLowerCase
+Method-name:getLineLength
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:lineLength
+Method-name:resetSettings
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:reset
+MethodInvocation:config
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setLength
+MethodInvocation:setNeedWhitespace
+Method-name:getBean
+Method-returnType:Bean
+Method-parameters:[]
+Method-name:setIndentation
+Method-returnType:void
+Method-parameters:[int indentation]
+FieldAccess:config
+MethodInvocation:withIndentation
+Method-name:describe
+Method-returnType:void
+Method-parameters:[PrintWriter pw, boolean omitDefaults]
+MethodInvocation:getBean
+MethodInvocation:getPropertyNames
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:equals
+MethodInvocation:print
+MethodInvocation:print
+Method-name:setSettings
+Method-returnType:void
+Method-parameters:[Properties properties]
+MethodInvocation:resetSettings
+MethodInvocation:getBean
+MethodInvocation:getPropertyNames
+MethodInvocation:getProperty
+MethodInvocation:set
+Method-name:setClauseStartsLine
+Method-returnType:void
+Method-parameters:[boolean clauseStartsLine]
+FieldAccess:config
+MethodInvocation:withClauseStartsLine
+Method-name:setSelectListItemsOnSeparateLines
+Method-returnType:void
+Method-parameters:[boolean b]
+FieldAccess:config
+MethodInvocation:withSelectListItemsOnSeparateLines
+Method-name:setSelectListExtraIndentFlag
+Method-returnType:void
+Method-parameters:[boolean selectListExtraIndentFlag]
+FieldAccess:config
+MethodInvocation:withSelectListExtraIndentFlag
+Method-name:setKeywordsLowerCase
+Method-returnType:void
+Method-parameters:[boolean keywordsLowerCase]
+FieldAccess:config
+MethodInvocation:withKeywordsLowerCase
+Method-name:setWhereListItemsOnSeparateLines
+Method-returnType:void
+Method-parameters:[boolean whereListItemsOnSeparateLines]
+FieldAccess:config
+MethodInvocation:withWhereListItemsOnSeparateLines
+Method-name:setAlwaysUseParentheses
+Method-returnType:void
+Method-parameters:[boolean alwaysUseParentheses]
+FieldAccess:config
+MethodInvocation:withAlwaysUseParentheses
+Method-name:newlineAndIndent
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:newlineAndIndent
+Method-name:newlineAndIndent
+Method-returnType:void
+Method-parameters:[int indent]
+MethodInvocation:append
+MethodInvocation:length
+MethodInvocation:indent
+MethodInvocation:setNeedWhitespace
+Method-name:indent
+Method-returnType:void
+Method-parameters:[int indent]
+MethodInvocation:append
+Method-name:setQuoteAllIdentifiers
+Method-returnType:void
+Method-parameters:[boolean quoteAllIdentifiers]
+FieldAccess:config
+MethodInvocation:withQuoteAllIdentifiers
+Method-name:createListFrame
+Method-returnType:FrameImpl
+Method-parameters:[FrameType frameType, String keyword, String open, String close]
+MethodInvocation:indentation
+MethodInvocation:column
+MethodInvocation:fold
+MethodInvocation:clauseStartsLine
+MethodInvocation:clauseStartsLine
+MethodInvocation:clauseStartsLine
+MethodInvocation:selectListExtraIndentFlag
+MethodInvocation:clauseEndsLine
+MethodInvocation:leadingComma
+MethodInvocation:length
+MethodInvocation:clauseEndsLine
+MethodInvocation:lineFolding
+MethodInvocation:lineFolding
+MethodInvocation:foldLength
+MethodInvocation:foldLength
+MethodInvocation:subQueryStyle
+MethodInvocation:padRight
+Method-name:_before
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:newlineAndIndent
+Method-name:_before
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:unexpected
+MethodInvocation:subQueryStyle
+MethodInvocation:setNeedWhitespace
+MethodInvocation:leadingComma
+MethodInvocation:leadingComma
+Method-name:sep
+Method-returnType:void
+Method-parameters:[boolean printFirst, String sep]
+MethodInvocation:equals
+FieldAccess:newlineBeforeSep
+FieldAccess:newlineAfterSep
+MethodInvocation:newlineAndIndent
+MethodInvocation:newlineAndIndent
+MethodInvocation:keyword
+Method-name:fold
+Method-returnType:SqlWriterConfig.LineFolding
+Method-parameters:[FrameTypeEnum frameType]
+MethodInvocation:f3
+MethodInvocation:selectFolding
+MethodInvocation:lineFolding
+MethodInvocation:selectListItemsOnSeparateLines
+MethodInvocation:f3
+MethodInvocation:groupByFolding
+MethodInvocation:lineFolding
+MethodInvocation:selectListItemsOnSeparateLines
+MethodInvocation:f3
+MethodInvocation:orderByFolding
+MethodInvocation:lineFolding
+MethodInvocation:selectListItemsOnSeparateLines
+MethodInvocation:f3
+MethodInvocation:updateSetFolding
+MethodInvocation:lineFolding
+MethodInvocation:updateSetListNewline
+MethodInvocation:f3
+MethodInvocation:whereFolding
+MethodInvocation:lineFolding
+MethodInvocation:whereListItemsOnSeparateLines
+MethodInvocation:f3
+MethodInvocation:windowFolding
+MethodInvocation:lineFolding
+MethodInvocation:clauseStartsLine
+MethodInvocation:windowDeclListNewline
+MethodInvocation:f3
+MethodInvocation:overFolding
+MethodInvocation:lineFolding
+MethodInvocation:windowNewline
+MethodInvocation:f3
+MethodInvocation:valuesFolding
+MethodInvocation:lineFolding
+MethodInvocation:valuesListNewline
+MethodInvocation:f3
+MethodInvocation:fromFolding
+MethodInvocation:lineFolding
+MethodInvocation:caseClausesOnNewLines
+MethodInvocation:f3
+MethodInvocation:caseClausesOnNewLines
+Method-name:f3
+Method-returnType:SqlWriterConfig.LineFolding
+Method-parameters:[SqlWriterConfig.LineFolding folding0, SqlWriterConfig.LineFolding folding1, boolean opt]
+Method-name:startList
+Method-returnType:Frame
+Method-parameters:[FrameType frameType, String keyword, String open, String close]
+Method-name:endList
+Method-returnType:void
+Method-parameters:[Frame frame]
+Method-name:format
+Method-returnType:String
+Method-parameters:[SqlNode node]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:toSqlString
+Method-returnType:SqlString
+Method-parameters:[]
+FieldAccess:dynamicParameters
+MethodInvocation:build
+FieldAccess:dynamicParameters
+MethodInvocation:toString
+Method-name:getDialect
+Method-returnType:SqlDialect
+Method-parameters:[]
+Method-name:literal
+Method-returnType:void
+Method-parameters:[String s]
+MethodInvocation:print
+MethodInvocation:setNeedWhitespace
+Method-name:keyword
+Method-returnType:void
+Method-parameters:[String s]
+MethodInvocation:maybeWhitespace
+MethodInvocation:append
+MethodInvocation:isKeywordsLowerCase
+MethodInvocation:toLowerCase
+MethodInvocation:toUpperCase
+MethodInvocation:equals
+MethodInvocation:setNeedWhitespace
+MethodInvocation:needWhitespaceAfter
+Method-name:maybeWhitespace
+Method-returnType:void
+Method-parameters:[String s]
+MethodInvocation:tooLong
+MethodInvocation:needWhitespaceBefore
+MethodInvocation:whiteSpace
+Method-name:needWhitespaceBefore
+Method-returnType:boolean
+Method-parameters:[String s]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:needWhitespaceAfter
+Method-returnType:boolean
+Method-parameters:[String s]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:whiteSpace
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:equals
+MethodInvocation:newlineAndIndent
+MethodInvocation:append
+MethodInvocation:setNeedWhitespace
+Method-name:column
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:length
+Method-name:tooLong
+Method-returnType:boolean
+Method-parameters:[String s]
+MethodInvocation:lineLength
+MethodInvocation:column
+MethodInvocation:column
+MethodInvocation:length
+MethodInvocation:trace
+Method-name:print
+Method-returnType:void
+Method-parameters:[String s]
+MethodInvocation:maybeWhitespace
+MethodInvocation:append
+Method-name:print
+Method-returnType:void
+Method-parameters:[int x]
+MethodInvocation:maybeWhitespace
+MethodInvocation:append
+Method-name:identifier
+Method-returnType:void
+Method-parameters:[String name, boolean quoted]
+MethodInvocation:maybeWhitespace
+MethodInvocation:isQuoteAllIdentifiers
+MethodInvocation:quoteIdentifier
+MethodInvocation:append
+MethodInvocation:setNeedWhitespace
+Method-name:dynamicParam
+Method-returnType:void
+Method-parameters:[int index]
+MethodInvocation:builder
+MethodInvocation:add
+MethodInvocation:print
+MethodInvocation:setNeedWhitespace
+Method-name:fetchOffset
+Method-returnType:void
+Method-parameters:[SqlNode fetch, SqlNode offset]
+MethodInvocation:unparseOffsetFetch
+Method-name:topN
+Method-returnType:void
+Method-parameters:[SqlNode fetch, SqlNode offset]
+MethodInvocation:unparseTopN
+Method-name:startFunCall
+Method-returnType:Frame
+Method-parameters:[String funName]
+MethodInvocation:keyword
+MethodInvocation:setNeedWhitespace
+MethodInvocation:startList
+Method-name:endFunCall
+Method-returnType:void
+Method-parameters:[Frame frame]
+MethodInvocation:endList
+FieldAccess:frame
+Method-name:startList
+Method-returnType:Frame
+Method-parameters:[String open, String close]
+MethodInvocation:startList
+Method-name:startList
+Method-returnType:Frame
+Method-parameters:[FrameTypeEnum frameType]
+Method-name:startList
+Method-returnType:Frame
+Method-parameters:[FrameType frameType, String open, String close]
+Method-name:list
+Method-returnType:SqlWriter
+Method-parameters:[FrameTypeEnum frameType, Consumer<SqlWriter> action]
+MethodInvocation:startList
+MethodInvocation:accept
+MethodInvocation:endList
+Method-name:list
+Method-returnType:SqlWriter
+Method-parameters:[FrameTypeEnum frameType, SqlBinaryOperator sepOp, SqlNodeList list]
+MethodInvocation:startList
+MethodInvocation:list
+MethodInvocation:endList
+Method-name:sep
+Method-returnType:void
+Method-parameters:[String sep]
+MethodInvocation:sep
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:sep
+Method-returnType:void
+Method-parameters:[String sep, boolean printFirst]
+MethodInvocation:startsWith
+MethodInvocation:endsWith
+MethodInvocation:sep
+Method-name:setNeedWhitespace
+Method-returnType:void
+Method-parameters:[boolean needWhitespace]
+FieldAccess:needWhitespace
+Method-name:setLineLength
+Method-returnType:void
+Method-parameters:[int lineLength]
+FieldAccess:config
+MethodInvocation:withLineLength
+Class:FrameImpl
+Field:frameType
+Field:keyword
+Field:open
+Field:close
+Field:left
+Field:extraIndent
+Field:sepIndent
+Field:itemCount
+Field:newlineBeforeSep
+Field:newlineAfterSep
+Field:newlineBeforeClose
+Field:newlineAfterClose
+Field:newlineAfterOpen
+Field:chopLimit
+Field:lineFolding
+Method-name:FrameImpl
+Method-returnType:null
+Method-parameters:[FrameType frameType, String keyword, String open, String close, int left, int extraIndent, int chopLimit, SqlWriterConfig.LineFolding lineFolding, boolean newlineAfterOpen, boolean newlineBeforeSep, int sepIndent, boolean newlineAfterSep, boolean newlineBeforeClose, boolean newlineAfterClose]
+Method-name:before
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:equals
+MethodInvocation:keyword
+Method-name:after
+Method-returnType:void
+Method-parameters:[]
+Method-name:sep
+Method-returnType:void
+Method-parameters:[boolean printFirst, String sep]
+MethodInvocation:newlineAndIndent
+MethodInvocation:newlineAndIndent
+MethodInvocation:keyword
+Method-name:extraIndent
+Method-returnType:int
+Method-parameters:[FrameType subFrameType]
+FieldAccess:frameType
+MethodInvocation:indentation
+MethodInvocation:needsIndent
+Method-name:list
+Method-returnType:void
+Method-parameters:[SqlNodeList list, SqlBinaryOperator sepOp]
+MethodInvocation:list2
+MethodInvocation:restore
+MethodInvocation:clauseEndsLine
+FieldAccess:lineFolding
+FieldAccess:chopLimit
+MethodInvocation:leadingComma
+MethodInvocation:length
+FieldAccess:sepIndent
+FieldAccess:sepIndent
+MethodInvocation:list2
+MethodInvocation:list2
+Method-name:list2
+Method-returnType:boolean
+Method-parameters:[SqlNodeList list, SqlBinaryOperator sepOp]
+MethodInvocation:getRightPrec
+MethodInvocation:getLeftPrec
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:sep
+MethodInvocation:getName
+MethodInvocation:unparse
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:sep
+MethodInvocation:getName
+MethodInvocation:unparse
+MethodInvocation:column
+MethodInvocation:restore
+MethodInvocation:newlineAndIndent
+MethodInvocation:unparse
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:sep
+MethodInvocation:getName
+MethodInvocation:unparse
+MethodInvocation:size
+MethodInvocation:sep
+MethodInvocation:getName
+MethodInvocation:column
+MethodInvocation:clauseEndsLine
+MethodInvocation:restore
+MethodInvocation:newlineAndIndent
+MethodInvocation:unparse
+MethodInvocation:size
+MethodInvocation:sep
+MethodInvocation:getName
+Class:Save
+Field:bufLength
+Method-name:Save
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:bufLength
+MethodInvocation:length
+Method-name:restore
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setLength
+Class:Bean
+Field:o
+Field:getterMethods
+Field:setterMethods
+Method-name:Bean
+Method-returnType:null
+Method-parameters:[SqlPrettyWriter o]
+FieldAccess:o
+MethodInvocation:getMethods
+MethodInvocation:getClass
+MethodInvocation:startsWith
+MethodInvocation:getName
+MethodInvocation:getReturnType
+FieldAccess:length
+MethodInvocation:getParameterTypes
+MethodInvocation:stripPrefix
+MethodInvocation:getName
+MethodInvocation:put
+MethodInvocation:startsWith
+MethodInvocation:getName
+MethodInvocation:getReturnType
+FieldAccess:length
+MethodInvocation:getParameterTypes
+MethodInvocation:stripPrefix
+MethodInvocation:getName
+MethodInvocation:put
+MethodInvocation:startsWith
+MethodInvocation:getName
+MethodInvocation:getReturnType
+FieldAccess:length
+MethodInvocation:getParameterTypes
+MethodInvocation:stripPrefix
+MethodInvocation:getName
+MethodInvocation:put
+Method-name:stripPrefix
+Method-returnType:String
+Method-parameters:[String name, int offset]
+MethodInvocation:toLowerCase
+MethodInvocation:substring
+MethodInvocation:substring
+Method-name:set
+Method-returnType:void
+Method-parameters:[String name, String value]
+MethodInvocation:get
+MethodInvocation:invoke
+MethodInvocation:throwIfUnchecked
+MethodInvocation:getCause
+MethodInvocation:getCause
+Method-name:get
+Method-returnType:Object
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:invoke
+MethodInvocation:throwIfUnchecked
+MethodInvocation:getCause
+MethodInvocation:getCause
+Method-name:getPropertyNames
+Method-returnType:String[]
+Method-parameters:[]
+MethodInvocation:addAll
+MethodInvocation:keySet
+MethodInvocation:addAll
+MethodInvocation:keySet
+MethodInvocation:toArray

@@ -1,0 +1,36 @@
+Class:ConstantPropagationTransfer
+Method-name:initialStore
+Method-returnType:ConstantPropagationStore
+Method-parameters:[UnderlyingAST underlyingAST, @Nullable List<LocalVariableNode> parameters]
+Method-name:visitLocalVariable
+Method-returnType:TransferResult<Constant,ConstantPropagationStore>
+Method-parameters:[LocalVariableNode node, TransferInput<Constant,ConstantPropagationStore> before]
+MethodInvocation:getRegularStore
+MethodInvocation:getInformation
+Method-name:visitNode
+Method-returnType:TransferResult<Constant,ConstantPropagationStore>
+Method-parameters:[Node n, TransferInput<Constant,ConstantPropagationStore> p]
+MethodInvocation:getRegularStore
+Method-name:visitAssignment
+Method-returnType:TransferResult<Constant,ConstantPropagationStore>
+Method-parameters:[AssignmentNode n, TransferInput<Constant,ConstantPropagationStore> pi]
+MethodInvocation:getRegularStore
+MethodInvocation:getTarget
+MethodInvocation:getInformation
+MethodInvocation:getExpression
+MethodInvocation:setInformation
+Method-name:visitIntegerLiteral
+Method-returnType:TransferResult<Constant,ConstantPropagationStore>
+Method-parameters:[IntegerLiteralNode n, TransferInput<Constant,ConstantPropagationStore> pi]
+MethodInvocation:getRegularStore
+MethodInvocation:getValue
+MethodInvocation:setInformation
+Method-name:visitEqualTo
+Method-returnType:TransferResult<Constant,ConstantPropagationStore>
+Method-parameters:[EqualToNode n, TransferInput<Constant,ConstantPropagationStore> pi]
+MethodInvocation:getRegularStore
+MethodInvocation:copy
+MethodInvocation:getLeftOperand
+MethodInvocation:getRightOperand
+MethodInvocation:process
+MethodInvocation:process

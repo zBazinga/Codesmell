@@ -1,0 +1,187 @@
+Class:RegionRemoteProcedureBase
+Field:LOG
+MethodInvocation:getLogger
+Field:region
+Field:targetServer
+Field:state
+Field:transitionCode
+Field:seqId
+Field:retryCounter
+Method-name:RegionRemoteProcedureBase
+Method-returnType:null
+Method-parameters:[]
+Method-name:RegionRemoteProcedureBase
+Method-returnType:null
+Method-parameters:[TransitRegionStateProcedure parent, RegionInfo region, ServerName targetServer]
+FieldAccess:region
+FieldAccess:targetServer
+MethodInvocation:attachRemoteProc
+Method-name:remoteCallBuild
+Method-returnType:Optional<RemoteProcedureDispatcher.RemoteOperation>
+Method-parameters:[MasterProcedureEnv env, ServerName remote]
+MethodInvocation:empty
+MethodInvocation:of
+MethodInvocation:newRemoteOperation
+Method-name:newRemoteOperation
+Method-returnType:RemoteProcedureDispatcher.RemoteOperation
+Method-parameters:[]
+Method-name:remoteOperationCompleted
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env]
+Method-name:remoteOperationFailed
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, RemoteProcedureException error]
+Method-name:getRegionNode
+Method-returnType:RegionStateNode
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:getRegionStateNode
+MethodInvocation:getRegionStates
+MethodInvocation:getAssignmentManager
+Method-name:remoteCallFailed
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, ServerName remote, IOException exception]
+MethodInvocation:getRegionNode
+MethodInvocation:lock
+MethodInvocation:isServerOnline
+MethodInvocation:getServerManager
+MethodInvocation:getMasterServices
+MethodInvocation:debug
+MethodInvocation:warn
+MethodInvocation:warn
+MethodInvocation:wake
+MethodInvocation:getProcedureEvent
+MethodInvocation:getProcedureScheduler
+MethodInvocation:unlock
+Method-name:getTableName
+Method-returnType:TableName
+Method-parameters:[]
+MethodInvocation:getTable
+Method-name:waitInitialized
+Method-returnType:boolean
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:isMetaTableName
+MethodInvocation:getTableName
+MethodInvocation:getAssignmentManager
+MethodInvocation:waitMetaLoaded
+MethodInvocation:waitMetaAssigned
+Method-name:rollback
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env]
+Method-name:abort
+Method-returnType:boolean
+Method-parameters:[MasterProcedureEnv env]
+Method-name:checkTransition
+Method-returnType:void
+Method-parameters:[RegionStateNode regionNode, TransitionCode transitionCode, long seqId]
+Method-name:updateTransitionWithoutPersistingToMeta
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode, TransitionCode transitionCode, long seqId]
+Method-name:persistAndWake
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode]
+MethodInvocation:update
+MethodInvocation:getStore
+MethodInvocation:getMasterProcedureExecutor
+MethodInvocation:getMasterServices
+MethodInvocation:wake
+MethodInvocation:getProcedureEvent
+MethodInvocation:getProcedureScheduler
+Method-name:reportTransition
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode, ServerName serverName, TransitionCode transitionCode, long seqId]
+MethodInvocation:equals
+MethodInvocation:checkTransition
+FieldAccess:state
+FieldAccess:transitionCode
+FieldAccess:seqId
+MethodInvocation:persistAndWake
+FieldAccess:state
+FieldAccess:transitionCode
+FieldAccess:seqId
+MethodInvocation:updateTransitionWithoutPersistingToMeta
+Method-name:serverCrashed
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env, RegionStateNode regionNode, ServerName serverName]
+FieldAccess:state
+MethodInvocation:persistAndWake
+FieldAccess:state
+Method-name:restoreSucceedState
+Method-returnType:void
+Method-parameters:[AssignmentManager am, RegionStateNode regionNode, long seqId]
+Method-name:stateLoaded
+Method-returnType:void
+Method-parameters:[AssignmentManager am, RegionStateNode regionNode]
+MethodInvocation:restoreSucceedState
+Method-name:getParent
+Method-returnType:TransitRegionStateProcedure
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:getProcedure
+MethodInvocation:getMasterProcedureExecutor
+MethodInvocation:getMasterServices
+MethodInvocation:getParentProcId
+Method-name:unattach
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:unattachRemoteProc
+MethodInvocation:getParent
+Method-name:execute
+Method-returnType:Procedure<MasterProcedureEnv>[]
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:getRegionNode
+MethodInvocation:lock
+MethodInvocation:getProcedureEvent
+MethodInvocation:addOperationToNode
+MethodInvocation:getRemoteDispatcher
+MethodInvocation:warn
+MethodInvocation:unattach
+MethodInvocation:suspend
+MethodInvocation:suspendIfNotReady
+MethodInvocation:persistToMeta
+MethodInvocation:getAssignmentManager
+MethodInvocation:unattach
+MethodInvocation:unattach
+MethodInvocation:regionClosedAbnormally
+MethodInvocation:getAssignmentManager
+MethodInvocation:unattach
+MethodInvocation:createRetryCounter
+MethodInvocation:getMasterConfiguration
+MethodInvocation:getBackoffTimeAndIncrementAttempts
+MethodInvocation:warn
+MethodInvocation:setTimeout
+MethodInvocation:toIntExact
+MethodInvocation:setState
+MethodInvocation:skipPersistence
+MethodInvocation:unlock
+Method-name:storeInDispatchedQueue
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:serializeStateData
+Method-returnType:void
+Method-parameters:[ProcedureStateSerializer serializer]
+MethodInvocation:setState
+MethodInvocation:setTargetServer
+MethodInvocation:setRegion
+MethodInvocation:newBuilder
+MethodInvocation:toRegionInfo
+MethodInvocation:toServerName
+MethodInvocation:setTransitionCode
+MethodInvocation:setSeqId
+MethodInvocation:serialize
+MethodInvocation:build
+Method-name:deserializeStateData
+Method-returnType:void
+Method-parameters:[ProcedureStateSerializer serializer]
+MethodInvocation:deserialize
+MethodInvocation:toRegionInfo
+MethodInvocation:getRegion
+MethodInvocation:toServerName
+MethodInvocation:getTargetServer
+MethodInvocation:getState
+MethodInvocation:hasTransitionCode
+MethodInvocation:getTransitionCode
+MethodInvocation:getSeqId
+Method-name:afterReplay
+Method-returnType:void
+Method-parameters:[MasterProcedureEnv env]
+MethodInvocation:attachRemoteProc
+MethodInvocation:getParent

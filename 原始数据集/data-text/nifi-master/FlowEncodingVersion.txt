@@ -1,0 +1,39 @@
+Class:FlowEncodingVersion
+Field:ENCODING_VERSION_ATTRIBUTE
+Field:VERSION_PATTERN
+MethodInvocation:compile
+Field:majorVersion
+Field:minorVersion
+Method-name:FlowEncodingVersion
+Method-returnType:null
+Method-parameters:[final int majorVersion, final int minorVersion]
+FieldAccess:majorVersion
+FieldAccess:minorVersion
+Method-name:parse
+Method-returnType:FlowEncodingVersion
+Method-parameters:[final Element xmlElement]
+MethodInvocation:getAttribute
+MethodInvocation:parse
+Method-name:parse
+Method-returnType:FlowEncodingVersion
+Method-parameters:[final String version]
+MethodInvocation:isEmpty
+MethodInvocation:trim
+MethodInvocation:matcher
+MethodInvocation:trim
+MethodInvocation:matches
+MethodInvocation:parseInt
+MethodInvocation:group
+MethodInvocation:parseInt
+MethodInvocation:group
+Method-name:getMajorVersion
+Method-returnType:int
+Method-parameters:[]
+Method-name:getMinorVersion
+Method-returnType:int
+Method-parameters:[]
+Method-name:scaleRootGroup
+Method-returnType:void
+Method-parameters:[final ProcessGroup rootGroup, StandardFlowSynchronizer standardFlowSynchronizer]
+MethodInvocation:getMajorVersion
+MethodInvocation:scale

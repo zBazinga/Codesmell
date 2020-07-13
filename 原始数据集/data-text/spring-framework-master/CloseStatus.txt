@@ -1,0 +1,67 @@
+Class:CloseStatus
+Field:NORMAL
+Field:GOING_AWAY
+Field:PROTOCOL_ERROR
+Field:NOT_ACCEPTABLE
+Field:NO_STATUS_CODE
+Field:NO_CLOSE_FRAME
+Field:BAD_DATA
+Field:POLICY_VIOLATION
+Field:TOO_BIG_TO_PROCESS
+Field:REQUIRED_EXTENSION
+Field:SERVER_ERROR
+Field:SERVICE_RESTARTED
+Field:SERVICE_OVERLOAD
+Field:TLS_HANDSHAKE_FAILURE
+Field:SESSION_NOT_RELIABLE
+Field:code
+Field:reason
+Method-name:CloseStatus
+Method-returnType:null
+Method-parameters:[int code]
+Method-name:CloseStatus
+Method-returnType:null
+Method-parameters:[int code, @Nullable String reason]
+MethodInvocation:isTrue
+FieldAccess:code
+FieldAccess:reason
+Method-name:getCode
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:code
+Method-name:getReason
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:reason
+Method-name:withReason
+Method-returnType:CloseStatus
+Method-parameters:[String reason]
+MethodInvocation:hasText
+FieldAccess:code
+Method-name:equalsCode
+Method-returnType:boolean
+Method-parameters:[CloseStatus other]
+FieldAccess:code
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object other]
+FieldAccess:code
+MethodInvocation:nullSafeEquals
+FieldAccess:reason
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:code
+MethodInvocation:nullSafeHashCode
+FieldAccess:reason
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:code
+FieldAccess:reason
+Method-name:isUserSetStatus
+Method-returnType:boolean
+Method-parameters:[AbstractClientSockJsSession abstractClientSockJsSession]
+MethodInvocation:getCode
+MethodInvocation:getCode
+MethodInvocation:getCode

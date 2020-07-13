@@ -1,0 +1,294 @@
+Class:TextController
+Field:DETAILS_HIDDEN
+Field:FILTER_NODE
+Field:FILTER_ANYTEXT
+Field:FILTER_NOTE
+Field:FILTER_PARENT
+Field:FILTER_DETAILS
+Field:NODE_TOOLTIP
+Field:DETAILS_TOOLTIP
+Field:textTransformers
+Field:modeController
+Field:nodeNumberingEnabled
+Field:MARK_TRANSFORMED_TEXT
+Method-name:isMarkTransformedTextSet
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBooleanProperty
+MethodInvocation:getResourceController
+MethodInvocation:getCurrentController
+Method-name:getController
+Method-returnType:TextController
+Method-parameters:[]
+MethodInvocation:getCurrentModeController
+MethodInvocation:getController
+Method-name:getController
+Method-returnType:TextController
+Method-parameters:[ModeController modeController]
+MethodInvocation:getExtension
+Method-name:install
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:addConditionController
+MethodInvocation:getConditionFactory
+MethodInvocation:getCurrentFilterController
+Method-name:install
+Method-returnType:void
+Method-parameters:[final ModeController modeController]
+MethodInvocation:addExtension
+Method-name:TextController
+Method-returnType:null
+Method-parameters:[final ModeController modeController]
+FieldAccess:modeController
+MethodInvocation:getMapController
+MethodInvocation:getReadManager
+MethodInvocation:getWriteManager
+MethodInvocation:registerBy
+MethodInvocation:addExtensionElementWriter
+MethodInvocation:addExtensionAttributeWriter
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addTextTransformer
+MethodInvocation:registerDetailsTooltip
+MethodInvocation:registerNodeTextTooltip
+Method-name:addTextTransformer
+Method-returnType:void
+Method-parameters:[IContentTransformer textTransformer]
+MethodInvocation:add
+MethodInvocation:sort
+Method-name:getTextTransformers
+Method-returnType:List<IContentTransformer>
+Method-parameters:[]
+Method-name:removeTextTransformer
+Method-returnType:void
+Method-parameters:[IContentTransformer textTransformer]
+MethodInvocation:remove
+Method-name:getText
+Method-returnType:String
+Method-parameters:[NodeModel nodeModel]
+MethodInvocation:getText
+Method-name:getTransformedObject
+Method-returnType:Object
+Method-parameters:[Object object, final NodeModel nodeModel, Object extension]
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:getUserObject
+MethodInvocation:isTextFormattingDisabled
+MethodInvocation:substring
+MethodInvocation:getTextTransformers
+MethodInvocation:transformContent
+MethodInvocation:markTransformation
+MethodInvocation:equals
+Method-name:isFormula
+Method-returnType:boolean
+Method-parameters:[Object object, final NodeModel nodeModel, Object extension]
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:getTextTransformers
+MethodInvocation:isFormula
+Method-name:getIcon
+Method-returnType:Icon
+Method-parameters:[Object object, final NodeModel nodeModel, Object extension]
+MethodInvocation:getIcon
+MethodInvocation:getObject
+MethodInvocation:getTextTransformers
+MethodInvocation:getIcon
+Method-name:isTextFormattingDisabled
+Method-returnType:boolean
+Method-parameters:[final NodeModel nodeModel]
+MethodInvocation:equals
+MethodInvocation:getNodeFormat
+Method-name:getTransformedObjectNoFormattingNoThrow
+Method-returnType:Object
+Method-parameters:[Object data, final NodeModel node, Object extension]
+MethodInvocation:getTransformedObject
+MethodInvocation:getObject
+MethodInvocation:getObject
+MethodInvocation:warn
+MethodInvocation:getMessage
+MethodInvocation:format
+MethodInvocation:getLocalizedMessage
+Method-name:getTransformedObject
+Method-returnType:Object
+Method-parameters:[NodeModel node]
+MethodInvocation:getUserObject
+MethodInvocation:getTransformedObject
+Method-name:getTransformedObjectNoThrow
+Method-returnType:Object
+Method-parameters:[NodeModel node]
+MethodInvocation:getUserObject
+MethodInvocation:getTransformedObjectNoFormattingNoThrow
+Method-name:getTransformedText
+Method-returnType:String
+Method-parameters:[Object text, final NodeModel nodeModel, Object extension]
+MethodInvocation:getTransformedObject
+MethodInvocation:toString
+Method-name:getTransformedTextNoThrow
+Method-returnType:String
+Method-parameters:[Object text, final NodeModel nodeModel, Object extension]
+MethodInvocation:getTransformedObjectNoFormattingNoThrow
+MethodInvocation:toString
+Method-name:isMinimized
+Method-returnType:boolean
+Method-parameters:[NodeModel node]
+MethodInvocation:getShortenedTextModel
+Method-name:getPlainTransformedText
+Method-returnType:String
+Method-parameters:[NodeModel nodeModel]
+MethodInvocation:getTransformedTextNoThrow
+MethodInvocation:htmlToPlain
+Method-name:getPlainTransformedTextWithoutNodeNumber
+Method-returnType:String
+Method-parameters:[NodeModel node]
+MethodInvocation:getPlainTransformedText
+Method-name:getTransformedTextNoThrow
+Method-returnType:String
+Method-parameters:[NodeModel nodeModel]
+MethodInvocation:getUserObject
+MethodInvocation:isHtmlNode
+MethodInvocation:htmlToPlain
+MethodInvocation:getTransformedTextNoThrow
+Method-name:getShortPlainText
+Method-returnType:String
+Method-parameters:[NodeModel nodeModel, int maximumCharacters, String continuationMark]
+MethodInvocation:getPlainTransformedTextWithoutNodeNumber
+MethodInvocation:getShortText
+Method-name:getShortPlainText
+Method-returnType:String
+Method-parameters:[NodeModel nodeModel]
+MethodInvocation:getShortPlainText
+Method-name:getShortText
+Method-returnType:String
+Method-parameters:[String longText]
+MethodInvocation:isHtmlNode
+MethodInvocation:trim
+MethodInvocation:htmlToPlain
+MethodInvocation:length
+MethodInvocation:indexOf
+MethodInvocation:getIntProperty
+MethodInvocation:getResourceController
+MethodInvocation:htmlSubstring
+MethodInvocation:substring
+Method-name:setDetailsHidden
+Method-returnType:void
+Method-parameters:[NodeModel node, boolean isHidden]
+MethodInvocation:createDetailText
+MethodInvocation:isHidden
+MethodInvocation:setHidden
+MethodInvocation:addExtension
+MethodInvocation:nodeRefresh
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+Method-name:registerDetailsTooltip
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:addToolTipProvider
+Method-name:getTooltip
+Method-returnType:String
+Method-parameters:[final ModeController modeController, NodeModel node, Component view]
+MethodInvocation:getTooltip
+Method-name:getTooltip
+Method-returnType:String
+Method-parameters:[final ModeController modeController, NodeModel node, MainView view]
+MethodInvocation:getDetailText
+MethodInvocation:isHidden
+MethodInvocation:isShortened
+MethodInvocation:getExtension
+MethodInvocation:getExtension
+MethodInvocation:getMap
+MethodInvocation:getStyleNodeSafe
+MethodInvocation:getFont
+MethodInvocation:getBackgroundColor
+MethodInvocation:getColor
+FieldAccess:swingConstant
+MethodInvocation:getHorizontalTextAlignment
+MethodInvocation:getZoom
+MethodInvocation:getMap
+MethodInvocation:getNodeView
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:withMaxWidthAsPt
+MethodInvocation:withAlignment
+MethodInvocation:withBackground
+MethodInvocation:withColor
+MethodInvocation:withHTMLFont
+MethodInvocation:getMaxNodeWidth
+MethodInvocation:getMaxWidth
+MethodInvocation:getHtml
+MethodInvocation:replaceFirst
+MethodInvocation:replaceFirst
+MethodInvocation:toString
+Method-name:registerNodeTextTooltip
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:addToolTipProvider
+Method-name:getTooltip
+Method-returnType:String
+Method-parameters:[final ModeController modeController, NodeModel node, Component view]
+MethodInvocation:getTooltip
+Method-name:getTooltip
+Method-returnType:String
+Method-parameters:[final ModeController modeController, NodeModel node, MainView view]
+MethodInvocation:isShortened
+MethodInvocation:getExtension
+MethodInvocation:getFont
+MethodInvocation:getZoom
+MethodInvocation:getMap
+MethodInvocation:getNodeView
+MethodInvocation:append
+MethodInvocation:withMaxWidthAsPt
+MethodInvocation:withAlignment
+MethodInvocation:withBackground
+MethodInvocation:withColor
+MethodInvocation:withHTMLFont
+MethodInvocation:getForeground
+MethodInvocation:getTextBackground
+MethodInvocation:getNodeView
+MethodInvocation:getHorizontalAlignment
+MethodInvocation:getMaxWidth
+MethodInvocation:getUserObject
+MethodInvocation:getTransformedText
+MethodInvocation:equals
+MethodInvocation:getShortText
+MethodInvocation:format
+MethodInvocation:getLocalizedMessage
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:isHtmlNode
+MethodInvocation:plainToHTML
+MethodInvocation:replaceFirst
+MethodInvocation:replaceFirst
+MethodInvocation:toString
+Method-name:setIsMinimized
+Method-returnType:void
+Method-parameters:[NodeModel node, boolean shortened]
+MethodInvocation:getShortenedTextModel
+MethodInvocation:createShortenedTextModel
+MethodInvocation:removeExtension
+MethodInvocation:nodeChanged
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+Method-name:parseData
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getNodeFormat
+Method-returnType:String
+Method-parameters:[NodeModel node]
+MethodInvocation:getNodeFormat
+MethodInvocation:getExtension
+Method-name:getNodeNumbering
+Method-returnType:boolean
+Method-parameters:[NodeModel node]
+MethodInvocation:getNodeNumbering
+MethodInvocation:getExtension
+Method-name:getModeController
+Method-returnType:ModeController
+Method-parameters:[]
+Method-name:canEdit
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:toUri
+Method-returnType:URI
+Method-parameters:[final Object value, final NodeModel node, Object extension]
+MethodInvocation:getTransformedObjectNoFormattingNoThrow
+MethodInvocation:toUri

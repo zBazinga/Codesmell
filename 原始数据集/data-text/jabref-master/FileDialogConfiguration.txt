@@ -1,0 +1,96 @@
+Class:FileDialogConfiguration
+Field:extensionFilters
+Field:initialDirectory
+Field:defaultExtension
+Field:initialFileName
+Field:selectedExtensionFilter
+Method-name:FileDialogConfiguration
+Method-returnType:null
+Method-parameters:[Path initialDirectory, List<FileChooser.ExtensionFilter> extensionFilters, FileChooser.ExtensionFilter defaultExtension, String initialFileName]
+FieldAccess:initialDirectory
+FieldAccess:extensionFilters
+MethodInvocation:requireNonNull
+FieldAccess:defaultExtension
+FieldAccess:initialFileName
+Method-name:getInitialDirectory
+Method-returnType:Optional<Path>
+Method-parameters:[]
+MethodInvocation:ofNullable
+Method-name:getDefaultExtension
+Method-returnType:FileChooser.ExtensionFilter
+Method-parameters:[]
+Method-name:getInitialFileName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getExtensionFilters
+Method-returnType:List<FileChooser.ExtensionFilter>
+Method-parameters:[]
+Method-name:getSelectedExtensionFilter
+Method-returnType:FileChooser.ExtensionFilter
+Method-parameters:[]
+Method-name:setSelectedExtensionFilter
+Method-returnType:void
+Method-parameters:[FileChooser.ExtensionFilter selectedExtensionFilter]
+FieldAccess:selectedExtensionFilter
+Class:Builder
+Field:extensionFilters
+Field:initialDirectory
+Field:defaultExtension
+Field:initialFileName
+Method-name:build
+Method-returnType:FileDialogConfiguration
+Method-parameters:[]
+Method-name:withInitialDirectory
+Method-returnType:Builder
+Method-parameters:[Path directory]
+MethodInvocation:isDirectory
+MethodInvocation:getParent
+MethodInvocation:exists
+Method-name:withInitialDirectory
+Method-returnType:Builder
+Method-parameters:[String directory]
+MethodInvocation:withInitialDirectory
+MethodInvocation:of
+Method-name:withInitialFileName
+Method-returnType:Builder
+Method-parameters:[String initialFileName]
+FieldAccess:initialFileName
+Method-name:withDefaultExtension
+Method-returnType:Builder
+Method-parameters:[FileChooser.ExtensionFilter extensionFilter]
+Method-name:withDefaultExtension
+Method-returnType:Builder
+Method-parameters:[FileType fileType]
+MethodInvocation:toExtensionFilter
+Method-name:withDefaultExtension
+Method-returnType:Builder
+Method-parameters:[String description, FileType fileType]
+MethodInvocation:toExtensionFilter
+Method-name:withDefaultExtension
+Method-returnType:Builder
+Method-parameters:[String fileTypeDescription]
+MethodInvocation:ifPresent
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getDescription
+Method-name:addExtensionFilter
+Method-returnType:Builder
+Method-parameters:[FileChooser.ExtensionFilter filter]
+MethodInvocation:add
+Method-name:addExtensionFilter
+Method-returnType:Builder
+Method-parameters:[List<FileChooser.ExtensionFilter> filters]
+MethodInvocation:addAll
+Method-name:addExtensionFilter
+Method-returnType:Builder
+Method-parameters:[FileType... fileTypes]
+MethodInvocation:forEachOrdered
+MethodInvocation:map
+MethodInvocation:of
+Method-name:addExtensionFilter
+Method-returnType:Builder
+Method-parameters:[String description, FileType fileType]
+MethodInvocation:add
+MethodInvocation:toExtensionFilter

@@ -1,0 +1,111 @@
+Class:WebDataBinder
+Field:DEFAULT_FIELD_MARKER_PREFIX
+Field:DEFAULT_FIELD_DEFAULT_PREFIX
+Field:fieldMarkerPrefix
+Field:fieldDefaultPrefix
+Field:bindEmptyMultipartFiles
+Method-name:WebDataBinder
+Method-returnType:null
+Method-parameters:[@Nullable Object target]
+Method-name:WebDataBinder
+Method-returnType:null
+Method-parameters:[@Nullable Object target, String objectName]
+Method-name:setFieldMarkerPrefix
+Method-returnType:void
+Method-parameters:[@Nullable String fieldMarkerPrefix]
+FieldAccess:fieldMarkerPrefix
+Method-name:getFieldMarkerPrefix
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:fieldMarkerPrefix
+Method-name:setFieldDefaultPrefix
+Method-returnType:void
+Method-parameters:[@Nullable String fieldDefaultPrefix]
+FieldAccess:fieldDefaultPrefix
+Method-name:getFieldDefaultPrefix
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:fieldDefaultPrefix
+Method-name:setBindEmptyMultipartFiles
+Method-returnType:void
+Method-parameters:[boolean bindEmptyMultipartFiles]
+FieldAccess:bindEmptyMultipartFiles
+Method-name:isBindEmptyMultipartFiles
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:bindEmptyMultipartFiles
+Method-name:doBind
+Method-returnType:void
+Method-parameters:[MutablePropertyValues mpvs]
+MethodInvocation:checkFieldDefaults
+MethodInvocation:checkFieldMarkers
+Method-name:checkFieldDefaults
+Method-returnType:void
+Method-parameters:[MutablePropertyValues mpvs]
+MethodInvocation:getFieldDefaultPrefix
+MethodInvocation:getPropertyValues
+MethodInvocation:startsWith
+MethodInvocation:getName
+MethodInvocation:substring
+MethodInvocation:getName
+MethodInvocation:length
+MethodInvocation:isWritableProperty
+MethodInvocation:getPropertyAccessor
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:getValue
+MethodInvocation:removePropertyValue
+Method-name:checkFieldMarkers
+Method-returnType:void
+Method-parameters:[MutablePropertyValues mpvs]
+MethodInvocation:getFieldMarkerPrefix
+MethodInvocation:getPropertyValues
+MethodInvocation:startsWith
+MethodInvocation:getName
+MethodInvocation:substring
+MethodInvocation:getName
+MethodInvocation:length
+MethodInvocation:isWritableProperty
+MethodInvocation:getPropertyAccessor
+MethodInvocation:contains
+MethodInvocation:getPropertyType
+MethodInvocation:getPropertyAccessor
+MethodInvocation:add
+MethodInvocation:getEmptyValue
+MethodInvocation:removePropertyValue
+Method-name:getEmptyValue
+Method-returnType:Object
+Method-parameters:[String field, @Nullable Class<?> fieldType]
+MethodInvocation:getEmptyValue
+Method-name:getEmptyValue
+Method-returnType:Object
+Method-parameters:[Class<?> fieldType]
+MethodInvocation:isArray
+MethodInvocation:newInstance
+MethodInvocation:getComponentType
+MethodInvocation:isAssignableFrom
+MethodInvocation:createCollection
+MethodInvocation:isAssignableFrom
+MethodInvocation:createMap
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getMessage
+Method-name:bindMultipart
+Method-returnType:void
+Method-parameters:[Map<String,List<MultipartFile>> multipartFiles, MutablePropertyValues mpvs]
+MethodInvocation:forEach
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:isBindEmptyMultipartFiles
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:add
+Method-name:isBinderMethodApplicable
+Method-returnType:boolean
+Method-parameters:[HandlerMethod initBinderMethod, InitBinderDataBinderFactory initBinderDataBinderFactory]
+MethodInvocation:getMethodAnnotation
+MethodInvocation:state
+MethodInvocation:value
+MethodInvocation:isEmpty
+MethodInvocation:containsElement
+MethodInvocation:getObjectName

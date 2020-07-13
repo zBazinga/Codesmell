@@ -1,0 +1,104 @@
+Class:TryCatchBlock
+Field:handlers
+Field:insns
+Field:attr
+Method-name:TryCatchBlock
+Method-returnType:null
+Method-parameters:[]
+Method-name:getHandlers
+Method-returnType:Iterable<ExceptionHandler>
+Method-parameters:[]
+Method-name:getHandlersCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:containsAllHandlers
+Method-returnType:boolean
+Method-parameters:[TryCatchBlock tb]
+MethodInvocation:containsAll
+Method-name:addHandler
+Method-returnType:ExceptionHandler
+Method-parameters:[MethodNode mth, int addr, @Nullable ClassInfo type]
+MethodInvocation:setTryBlock
+MethodInvocation:addExceptionHandler
+MethodInvocation:getTryBlock
+MethodInvocation:add
+Method-name:removeSameHandlers
+Method-returnType:void
+Method-parameters:[TryCatchBlock outerTry]
+MethodInvocation:getHandlers
+MethodInvocation:remove
+MethodInvocation:setTryBlock
+Method-name:removeHandler
+Method-returnType:void
+Method-parameters:[MethodNode mth, ExceptionHandler handler]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:unbindHandler
+MethodInvocation:remove
+MethodInvocation:isEmpty
+MethodInvocation:removeWholeBlock
+Method-name:removeWholeBlock
+Method-returnType:void
+Method-parameters:[MethodNode mth]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:unbindHandler
+MethodInvocation:remove
+MethodInvocation:removeAttr
+MethodInvocation:clear
+MethodInvocation:getBasicBlocks
+MethodInvocation:getBasicBlocks
+MethodInvocation:removeAttr
+Method-name:addInsn
+Method-returnType:void
+Method-parameters:[InsnNode insn]
+MethodInvocation:add
+MethodInvocation:addAttr
+Method-name:removeInsn
+Method-returnType:void
+Method-parameters:[MethodNode mth, InsnNode insn]
+MethodInvocation:remove
+MethodInvocation:remove
+MethodInvocation:isEmpty
+MethodInvocation:removeWholeBlock
+Method-name:removeBlock
+Method-returnType:void
+Method-parameters:[MethodNode mth, BlockNode block]
+MethodInvocation:getInstructions
+MethodInvocation:remove
+MethodInvocation:remove
+MethodInvocation:isEmpty
+MethodInvocation:removeWholeBlock
+Method-name:getInsns
+Method-returnType:Iterable<InsnNode>
+Method-parameters:[]
+Method-name:getCatchAttr
+Method-returnType:CatchAttr
+Method-parameters:[]
+Method-name:merge
+Method-returnType:boolean
+Method-parameters:[MethodNode mth, TryCatchBlock tryBlock]
+MethodInvocation:getInsns
+MethodInvocation:addInsn
+MethodInvocation:addAll
+FieldAccess:handlers
+MethodInvocation:setTryBlock
+MethodInvocation:clear
+MethodInvocation:removeWholeBlock
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:listToString

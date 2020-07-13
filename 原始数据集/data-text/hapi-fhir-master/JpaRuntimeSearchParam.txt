@@ -1,0 +1,44 @@
+Class:JpaRuntimeSearchParam
+Field:myUnique
+Field:myComponents
+Method-name:JpaRuntimeSearchParam
+Method-returnType:null
+Method-parameters:[IIdType theId, String theUri, String theName, String theDescription, String thePath, RestSearchParameterTypeEnum theParamType, Set<String> theProvidesMembershipInCompartments, Set<String> theTargets, RuntimeSearchParamStatusEnum theStatus, boolean theUnique, List<Component> theComponents, Collection<? extends IPrimitiveType<String>> theBase]
+MethodInvocation:createCompositeList
+MethodInvocation:toStrings
+MethodInvocation:unmodifiableList
+Method-name:toStrings
+Method-returnType:Collection<String>
+Method-parameters:[Collection<? extends IPrimitiveType<String>> theBase]
+MethodInvocation:isNotBlank
+MethodInvocation:getValueAsString
+MethodInvocation:add
+MethodInvocation:getValueAsString
+Method-name:getComponents
+Method-returnType:List<Component>
+Method-parameters:[]
+Method-name:isUnique
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:createCompositeList
+Method-returnType:ArrayList<RuntimeSearchParam>
+Method-parameters:[RestSearchParameterTypeEnum theParamType]
+Method-name:extractExtensions
+Method-returnType:void
+Method-parameters:[IBaseResource theSearchParamResource, SearchParamRegistryImpl searchParamRegistry]
+MethodInvocation:getExtension
+MethodInvocation:getUrl
+MethodInvocation:isNotBlank
+MethodInvocation:addExtension
+Class:Component
+Field:myExpression
+Field:myReference
+Method-name:Component
+Method-returnType:null
+Method-parameters:[String theExpression, IBaseReference theReference]
+Method-name:getExpression
+Method-returnType:String
+Method-parameters:[]
+Method-name:getReference
+Method-returnType:IBaseReference
+Method-parameters:[]

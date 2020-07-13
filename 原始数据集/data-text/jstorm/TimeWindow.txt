@@ -1,0 +1,60 @@
+Class:TimeWindow
+Field:serialVersionUID
+Field:start
+Field:end
+Method-name:TimeWindow
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:start
+FieldAccess:end
+Method-name:TimeWindow
+Method-returnType:null
+Method-parameters:[long start, long end]
+FieldAccess:start
+FieldAccess:end
+Method-name:getStart
+Method-returnType:long
+Method-parameters:[]
+Method-name:getEnd
+Method-returnType:long
+Method-parameters:[]
+Method-name:maxTimestamp
+Method-returnType:long
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:intersects
+Method-returnType:boolean
+Method-parameters:[TimeWindow other]
+FieldAccess:start
+FieldAccess:end
+Method-name:cover
+Method-returnType:TimeWindow
+Method-parameters:[TimeWindow other]
+MethodInvocation:min
+MethodInvocation:max
+Method-name:createTriggerForWindow
+Method-returnType:void
+Method-parameters:[final WindowAssigner<Tuple> assigner, final Map<TimeWindow,Trigger<Tuple>> triggerMap, WindowedBoltExecutor windowedBoltExecutor]
+MethodInvocation:put
+MethodInvocation:of
+MethodInvocation:getEnd
+MethodInvocation:getStart
+MethodInvocation:isProcessingTime
+MethodInvocation:put
+MethodInvocation:create
+MethodInvocation:isEventTime
+MethodInvocation:put
+MethodInvocation:create
+MethodInvocation:isIngestionTime
+MethodInvocation:put
+MethodInvocation:create

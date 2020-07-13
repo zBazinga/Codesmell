@@ -1,0 +1,29 @@
+Class:Decimal64ColumnVector
+Field:scale
+Field:precision
+Field:scratchHiveDecWritable
+Method-name:Decimal64ColumnVector
+Method-returnType:null
+Method-parameters:[int precision, int scale]
+Method-name:Decimal64ColumnVector
+Method-returnType:null
+Method-parameters:[int size, int precision, int scale]
+FieldAccess:precision
+FieldAccess:scale
+Method-name:set
+Method-returnType:void
+Method-parameters:[int elementNum, HiveDecimal hiveDec]
+MethodInvocation:set
+MethodInvocation:mutateEnforcePrecisionScale
+MethodInvocation:isSet
+MethodInvocation:serialize64
+Method-name:setElement
+Method-returnType:void
+Method-parameters:[int outputElementNum, int inputElementNum, ColumnVector inputColVector]
+MethodInvocation:deserialize64
+MethodInvocation:mutateEnforcePrecisionScale
+MethodInvocation:isSet
+MethodInvocation:serialize64
+Method-name:getScratchWritable
+Method-returnType:HiveDecimalWritable
+Method-parameters:[]

@@ -1,0 +1,24 @@
+Class:WorkdayComponent
+Method-name:createEndpoint
+Method-returnType:Endpoint
+Method-parameters:[String uri, String remaining, Map<String,Object> parameters]
+MethodInvocation:parseConfiguration
+MethodInvocation:setProperties
+Method-name:afterConfiguration
+Method-returnType:void
+Method-parameters:[String uri, String remaining, Endpoint endpoint, Map<String,Object> parameters]
+MethodInvocation:getWorkdayConfiguration
+MethodInvocation:validateConnectionParameters
+Method-name:validateConnectionParameters
+Method-returnType:void
+Method-parameters:[WorkdayConfiguration workdayConfiguration]
+MethodInvocation:notNull
+MethodInvocation:getHost
+MethodInvocation:notNull
+MethodInvocation:getTenant
+MethodInvocation:notNull
+MethodInvocation:getClientId
+MethodInvocation:notNull
+MethodInvocation:getClientSecret
+MethodInvocation:notNull
+MethodInvocation:getTokenRefresh

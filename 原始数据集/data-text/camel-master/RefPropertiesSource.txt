@@ -1,0 +1,32 @@
+Class:RefPropertiesSource
+Field:propertiesComponent
+Field:location
+Method-name:RefPropertiesSource
+Method-returnType:null
+Method-parameters:[PropertiesComponent propertiesComponent, PropertiesLocation location]
+FieldAccess:propertiesComponent
+FieldAccess:location
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPath
+MethodInvocation:getLocation
+Method-name:getLocation
+Method-returnType:PropertiesLocation
+Method-parameters:[]
+Method-name:getProperty
+Method-returnType:String
+Method-parameters:[String name]
+MethodInvocation:lookupPropertiesInRegistry
+MethodInvocation:getProperty
+Method-name:lookupPropertiesInRegistry
+Method-returnType:Properties
+Method-parameters:[PropertiesComponent propertiesComponent, PropertiesLocation location]
+MethodInvocation:getPath
+MethodInvocation:lookupByName
+MethodInvocation:getRegistry
+MethodInvocation:getCamelContext
+MethodInvocation:putAll
+MethodInvocation:isIgnoreMissingLocation
+MethodInvocation:isOptional
+MethodInvocation:wrapRuntimeCamelException

@@ -1,0 +1,106 @@
+Class:SqlChunk
+Field:COLS_NA
+Field:COLS_ONLY_EXISTING
+Field:COLS_ONLY_IDS
+Field:COLS_ALL
+Field:COLS_ALL_BUT_ID
+Field:COLS_NA_MULTI
+Field:CHUNK_RAW
+Field:CHUNK_SELECT_COLUMNS
+Field:CHUNK_TABLE
+Field:CHUNK_REFERENCE
+Field:CHUNK_MATCH
+Field:CHUNK_VALUE
+Field:CHUNK_INSERT
+Field:CHUNK_UPDATE
+Field:chunkType
+Field:dbEntityManager
+Method-name:SqlChunk
+Method-returnType:null
+Method-parameters:[final DbEntityManager dbEntityManager, final int chunkType]
+FieldAccess:dbEntityManager
+FieldAccess:chunkType
+Field:previousChunk
+Method-name:getPreviousChunk
+Method-returnType:SqlChunk
+Method-parameters:[]
+Field:nextChunk
+Method-name:getNextChunk
+Method-returnType:SqlChunk
+Method-parameters:[]
+Method-name:insertChunkAfter
+Method-returnType:void
+Method-parameters:[final SqlChunk previous]
+FieldAccess:previousChunk
+FieldAccess:nextChunk
+Method-name:isPreviousChunkOfType
+Method-returnType:boolean
+Method-parameters:[final int type]
+Method-name:isPreviousChunkOfSameType
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isPreviousMacroChunk
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isPreviousRawChunk
+Method-returnType:boolean
+Method-parameters:[]
+Field:templateData
+Method-name:init
+Method-returnType:void
+Method-parameters:[final TemplateData templateData]
+FieldAccess:templateData
+Method-name:process
+Method-returnType:void
+Method-parameters:[StringBuilder out]
+Method-name:lookupName
+Method-returnType:DbEntityDescriptor
+Method-parameters:[final String entityName]
+MethodInvocation:lookupName
+Method-name:lookupType
+Method-returnType:DbEntityDescriptor
+Method-parameters:[final Class entity]
+MethodInvocation:lookupType
+MethodInvocation:getName
+Method-name:lookupTableRef
+Method-returnType:DbEntityDescriptor
+Method-parameters:[final String tableRef]
+MethodInvocation:lookupTableRef
+Method-name:lookupTableRef
+Method-returnType:DbEntityDescriptor
+Method-parameters:[final String tableRef, final boolean throwExceptionIfNotFound]
+MethodInvocation:getTableDescriptor
+Method-name:findColumnRef
+Method-returnType:DbEntityDescriptor
+Method-parameters:[final String columnRef]
+MethodInvocation:findTableDescriptorByColumnRef
+Method-name:resolveTable
+Method-returnType:String
+Method-parameters:[final String tableRef, final DbEntityDescriptor ded]
+MethodInvocation:getTableAlias
+MethodInvocation:getTableNameForQuery
+Method-name:defineParameter
+Method-returnType:void
+Method-parameters:[final StringBuilder query, String name, final Object value, final DbEntityColumnDescriptor dec]
+MethodInvocation:getNextParameterName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:addParameter
+Method-name:resolveClass
+Method-returnType:Class
+Method-parameters:[final Object object]
+MethodInvocation:getClass
+Method-name:appendMissingSpace
+Method-returnType:void
+Method-parameters:[final StringBuilder out]
+MethodInvocation:length
+MethodInvocation:isWhitespace
+MethodInvocation:charAt
+MethodInvocation:append
+Method-name:separateByCommaOrSpace
+Method-returnType:void
+Method-parameters:[final StringBuilder out]
+MethodInvocation:isPreviousChunkOfSameType
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:appendMissingSpace

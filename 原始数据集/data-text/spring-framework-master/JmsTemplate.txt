@@ -1,0 +1,505 @@
+Class:JmsTemplate
+Field:transactionalResourceFactory
+Field:defaultDestination
+Field:messageConverter
+Field:messageIdEnabled
+Field:messageTimestampEnabled
+Field:pubSubNoLocal
+Field:receiveTimeout
+Field:deliveryDelay
+Field:explicitQosEnabled
+Field:deliveryMode
+Field:priority
+Field:timeToLive
+Method-name:JmsTemplate
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:initDefaultStrategies
+Method-name:JmsTemplate
+Method-returnType:null
+Method-parameters:[ConnectionFactory connectionFactory]
+MethodInvocation:setConnectionFactory
+MethodInvocation:afterPropertiesSet
+Method-name:initDefaultStrategies
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setMessageConverter
+Method-name:setDefaultDestination
+Method-returnType:void
+Method-parameters:[@Nullable Destination destination]
+FieldAccess:defaultDestination
+Method-name:getDefaultDestination
+Method-returnType:Destination
+Method-parameters:[]
+FieldAccess:defaultDestination
+FieldAccess:defaultDestination
+Method-name:getDefaultQueue
+Method-returnType:Queue
+Method-parameters:[]
+MethodInvocation:getDefaultDestination
+Method-name:setDefaultDestinationName
+Method-returnType:void
+Method-parameters:[@Nullable String destinationName]
+FieldAccess:defaultDestination
+Method-name:getDefaultDestinationName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:defaultDestination
+FieldAccess:defaultDestination
+Method-name:getRequiredDefaultDestinationName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getDefaultDestinationName
+Method-name:setMessageConverter
+Method-returnType:void
+Method-parameters:[@Nullable MessageConverter messageConverter]
+FieldAccess:messageConverter
+Method-name:getMessageConverter
+Method-returnType:MessageConverter
+Method-parameters:[]
+FieldAccess:messageConverter
+Method-name:getRequiredMessageConverter
+Method-returnType:MessageConverter
+Method-parameters:[]
+MethodInvocation:getMessageConverter
+Method-name:setMessageIdEnabled
+Method-returnType:void
+Method-parameters:[boolean messageIdEnabled]
+FieldAccess:messageIdEnabled
+Method-name:isMessageIdEnabled
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:messageIdEnabled
+Method-name:setMessageTimestampEnabled
+Method-returnType:void
+Method-parameters:[boolean messageTimestampEnabled]
+FieldAccess:messageTimestampEnabled
+Method-name:isMessageTimestampEnabled
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:messageTimestampEnabled
+Method-name:setPubSubNoLocal
+Method-returnType:void
+Method-parameters:[boolean pubSubNoLocal]
+FieldAccess:pubSubNoLocal
+Method-name:isPubSubNoLocal
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:pubSubNoLocal
+Method-name:setReceiveTimeout
+Method-returnType:void
+Method-parameters:[long receiveTimeout]
+FieldAccess:receiveTimeout
+Method-name:getReceiveTimeout
+Method-returnType:long
+Method-parameters:[]
+FieldAccess:receiveTimeout
+Method-name:setDeliveryDelay
+Method-returnType:void
+Method-parameters:[long deliveryDelay]
+FieldAccess:deliveryDelay
+Method-name:getDeliveryDelay
+Method-returnType:long
+Method-parameters:[]
+FieldAccess:deliveryDelay
+Method-name:setExplicitQosEnabled
+Method-returnType:void
+Method-parameters:[boolean explicitQosEnabled]
+FieldAccess:explicitQosEnabled
+Method-name:isExplicitQosEnabled
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:explicitQosEnabled
+Method-name:setDeliveryPersistent
+Method-returnType:void
+Method-parameters:[boolean deliveryPersistent]
+FieldAccess:deliveryMode
+Method-name:setDeliveryMode
+Method-returnType:void
+Method-parameters:[int deliveryMode]
+FieldAccess:deliveryMode
+Method-name:getDeliveryMode
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:deliveryMode
+Method-name:setPriority
+Method-returnType:void
+Method-parameters:[int priority]
+FieldAccess:priority
+Method-name:getPriority
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:priority
+Method-name:setTimeToLive
+Method-returnType:void
+Method-parameters:[long timeToLive]
+FieldAccess:timeToLive
+Method-name:getTimeToLive
+Method-returnType:long
+Method-parameters:[]
+FieldAccess:timeToLive
+Method-name:execute
+Method-returnType:T
+Method-parameters:[SessionCallback<T> action]
+MethodInvocation:execute
+Method-name:execute
+Method-returnType:T
+Method-parameters:[SessionCallback<T> action, boolean startConnection]
+MethodInvocation:notNull
+MethodInvocation:doGetTransactionalSession
+MethodInvocation:obtainConnectionFactory
+FieldAccess:transactionalResourceFactory
+MethodInvocation:createConnection
+MethodInvocation:createSession
+MethodInvocation:start
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:doInJms
+MethodInvocation:convertJmsAccessException
+MethodInvocation:closeSession
+MethodInvocation:releaseConnection
+MethodInvocation:getConnectionFactory
+Method-name:execute
+Method-returnType:T
+Method-parameters:[ProducerCallback<T> action]
+MethodInvocation:getDefaultDestinationName
+MethodInvocation:execute
+MethodInvocation:execute
+MethodInvocation:getDefaultDestination
+Method-name:execute
+Method-returnType:T
+Method-parameters:[final @Nullable Destination destination, final ProducerCallback<T> action]
+MethodInvocation:notNull
+MethodInvocation:execute
+MethodInvocation:createProducer
+MethodInvocation:doInJms
+MethodInvocation:closeMessageProducer
+Method-name:execute
+Method-returnType:T
+Method-parameters:[final String destinationName, final ProducerCallback<T> action]
+MethodInvocation:notNull
+MethodInvocation:execute
+MethodInvocation:resolveDestinationName
+MethodInvocation:createProducer
+MethodInvocation:doInJms
+MethodInvocation:closeMessageProducer
+Method-name:send
+Method-returnType:void
+Method-parameters:[MessageCreator messageCreator]
+MethodInvocation:getDefaultDestination
+MethodInvocation:send
+MethodInvocation:send
+MethodInvocation:getRequiredDefaultDestinationName
+Method-name:send
+Method-returnType:void
+Method-parameters:[final Destination destination, final MessageCreator messageCreator]
+MethodInvocation:execute
+MethodInvocation:doSend
+Method-name:send
+Method-returnType:void
+Method-parameters:[final String destinationName, final MessageCreator messageCreator]
+MethodInvocation:execute
+MethodInvocation:resolveDestinationName
+MethodInvocation:doSend
+Method-name:doSend
+Method-returnType:void
+Method-parameters:[Session session, Destination destination, MessageCreator messageCreator]
+MethodInvocation:notNull
+MethodInvocation:createProducer
+MethodInvocation:createMessage
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:doSend
+MethodInvocation:getTransacted
+MethodInvocation:isSessionLocallyTransacted
+MethodInvocation:commitIfNecessary
+MethodInvocation:closeMessageProducer
+Method-name:doSend
+Method-returnType:void
+Method-parameters:[MessageProducer producer, Message message]
+FieldAccess:deliveryDelay
+MethodInvocation:setDeliveryDelay
+FieldAccess:deliveryDelay
+MethodInvocation:isExplicitQosEnabled
+MethodInvocation:send
+MethodInvocation:getDeliveryMode
+MethodInvocation:getPriority
+MethodInvocation:getTimeToLive
+MethodInvocation:send
+Method-name:convertAndSend
+Method-returnType:void
+Method-parameters:[Object message]
+MethodInvocation:getDefaultDestination
+MethodInvocation:convertAndSend
+MethodInvocation:convertAndSend
+MethodInvocation:getRequiredDefaultDestinationName
+Method-name:convertAndSend
+Method-returnType:void
+Method-parameters:[Destination destination, final Object message]
+MethodInvocation:send
+MethodInvocation:toMessage
+MethodInvocation:getRequiredMessageConverter
+Method-name:convertAndSend
+Method-returnType:void
+Method-parameters:[String destinationName, final Object message]
+MethodInvocation:send
+MethodInvocation:toMessage
+MethodInvocation:getRequiredMessageConverter
+Method-name:convertAndSend
+Method-returnType:void
+Method-parameters:[Object message, MessagePostProcessor postProcessor]
+MethodInvocation:getDefaultDestination
+MethodInvocation:convertAndSend
+MethodInvocation:convertAndSend
+MethodInvocation:getRequiredDefaultDestinationName
+Method-name:convertAndSend
+Method-returnType:void
+Method-parameters:[Destination destination, final Object message, final MessagePostProcessor postProcessor]
+MethodInvocation:send
+MethodInvocation:toMessage
+MethodInvocation:getRequiredMessageConverter
+MethodInvocation:postProcessMessage
+Method-name:convertAndSend
+Method-returnType:void
+Method-parameters:[String destinationName, final Object message, final MessagePostProcessor postProcessor]
+MethodInvocation:send
+MethodInvocation:toMessage
+MethodInvocation:getRequiredMessageConverter
+MethodInvocation:postProcessMessage
+Method-name:receive
+Method-returnType:Message
+Method-parameters:[]
+MethodInvocation:getDefaultDestination
+MethodInvocation:receive
+MethodInvocation:receive
+MethodInvocation:getRequiredDefaultDestinationName
+Method-name:receive
+Method-returnType:Message
+Method-parameters:[Destination destination]
+MethodInvocation:receiveSelected
+Method-name:receive
+Method-returnType:Message
+Method-parameters:[String destinationName]
+MethodInvocation:receiveSelected
+Method-name:receiveSelected
+Method-returnType:Message
+Method-parameters:[String messageSelector]
+MethodInvocation:getDefaultDestination
+MethodInvocation:receiveSelected
+MethodInvocation:receiveSelected
+MethodInvocation:getRequiredDefaultDestinationName
+Method-name:receiveSelected
+Method-returnType:Message
+Method-parameters:[final Destination destination, @Nullable final String messageSelector]
+MethodInvocation:execute
+MethodInvocation:doReceive
+Method-name:receiveSelected
+Method-returnType:Message
+Method-parameters:[final String destinationName, @Nullable final String messageSelector]
+MethodInvocation:execute
+MethodInvocation:resolveDestinationName
+MethodInvocation:doReceive
+Method-name:doReceive
+Method-returnType:Message
+Method-parameters:[Session session, Destination destination, @Nullable String messageSelector]
+MethodInvocation:doReceive
+MethodInvocation:createConsumer
+Method-name:doReceive
+Method-returnType:Message
+Method-parameters:[Session session, MessageConsumer consumer]
+MethodInvocation:getReceiveTimeout
+MethodInvocation:getConnectionFactory
+MethodInvocation:getResource
+MethodInvocation:hasTimeout
+MethodInvocation:min
+MethodInvocation:getTimeToLiveInMillis
+MethodInvocation:receiveFromConsumer
+MethodInvocation:getTransacted
+MethodInvocation:isSessionLocallyTransacted
+MethodInvocation:commitIfNecessary
+MethodInvocation:isClientAcknowledge
+MethodInvocation:acknowledge
+MethodInvocation:closeMessageConsumer
+Method-name:receiveAndConvert
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:doConvertFromMessage
+MethodInvocation:receive
+Method-name:receiveAndConvert
+Method-returnType:Object
+Method-parameters:[Destination destination]
+MethodInvocation:doConvertFromMessage
+MethodInvocation:receive
+Method-name:receiveAndConvert
+Method-returnType:Object
+Method-parameters:[String destinationName]
+MethodInvocation:doConvertFromMessage
+MethodInvocation:receive
+Method-name:receiveSelectedAndConvert
+Method-returnType:Object
+Method-parameters:[String messageSelector]
+MethodInvocation:doConvertFromMessage
+MethodInvocation:receiveSelected
+Method-name:receiveSelectedAndConvert
+Method-returnType:Object
+Method-parameters:[Destination destination, String messageSelector]
+MethodInvocation:doConvertFromMessage
+MethodInvocation:receiveSelected
+Method-name:receiveSelectedAndConvert
+Method-returnType:Object
+Method-parameters:[String destinationName, String messageSelector]
+MethodInvocation:doConvertFromMessage
+MethodInvocation:receiveSelected
+Method-name:doConvertFromMessage
+Method-returnType:Object
+Method-parameters:[@Nullable Message message]
+MethodInvocation:fromMessage
+MethodInvocation:getRequiredMessageConverter
+MethodInvocation:convertJmsAccessException
+Method-name:sendAndReceive
+Method-returnType:Message
+Method-parameters:[MessageCreator messageCreator]
+MethodInvocation:getDefaultDestination
+MethodInvocation:sendAndReceive
+MethodInvocation:sendAndReceive
+MethodInvocation:getRequiredDefaultDestinationName
+Method-name:sendAndReceive
+Method-returnType:Message
+Method-parameters:[final Destination destination, final MessageCreator messageCreator]
+MethodInvocation:executeLocal
+MethodInvocation:doSendAndReceive
+Method-name:sendAndReceive
+Method-returnType:Message
+Method-parameters:[final String destinationName, final MessageCreator messageCreator]
+MethodInvocation:executeLocal
+MethodInvocation:resolveDestinationName
+MethodInvocation:doSendAndReceive
+Method-name:doSendAndReceive
+Method-returnType:Message
+Method-parameters:[Session session, Destination destination, MessageCreator messageCreator]
+MethodInvocation:notNull
+MethodInvocation:createMessage
+MethodInvocation:createTemporaryQueue
+MethodInvocation:createProducer
+MethodInvocation:createConsumer
+MethodInvocation:setJMSReplyTo
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:doSend
+MethodInvocation:receiveFromConsumer
+MethodInvocation:getReceiveTimeout
+MethodInvocation:closeMessageConsumer
+MethodInvocation:closeMessageProducer
+MethodInvocation:delete
+Method-name:executeLocal
+Method-returnType:T
+Method-parameters:[SessionCallback<T> action, boolean startConnection]
+MethodInvocation:notNull
+MethodInvocation:createConnection
+MethodInvocation:createSession
+MethodInvocation:start
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:doInJms
+MethodInvocation:convertJmsAccessException
+MethodInvocation:closeSession
+MethodInvocation:releaseConnection
+MethodInvocation:getConnectionFactory
+Method-name:browse
+Method-returnType:T
+Method-parameters:[BrowserCallback<T> action]
+MethodInvocation:getDefaultQueue
+MethodInvocation:browse
+MethodInvocation:browse
+MethodInvocation:getRequiredDefaultDestinationName
+Method-name:browse
+Method-returnType:T
+Method-parameters:[Queue queue, BrowserCallback<T> action]
+MethodInvocation:browseSelected
+Method-name:browse
+Method-returnType:T
+Method-parameters:[String queueName, BrowserCallback<T> action]
+MethodInvocation:browseSelected
+Method-name:browseSelected
+Method-returnType:T
+Method-parameters:[String messageSelector, BrowserCallback<T> action]
+MethodInvocation:getDefaultQueue
+MethodInvocation:browseSelected
+MethodInvocation:browseSelected
+MethodInvocation:getRequiredDefaultDestinationName
+Method-name:browseSelected
+Method-returnType:T
+Method-parameters:[final Queue queue, @Nullable final String messageSelector, final BrowserCallback<T> action]
+MethodInvocation:notNull
+MethodInvocation:execute
+MethodInvocation:createBrowser
+MethodInvocation:doInJms
+MethodInvocation:closeQueueBrowser
+Method-name:browseSelected
+Method-returnType:T
+Method-parameters:[final String queueName, @Nullable final String messageSelector, final BrowserCallback<T> action]
+MethodInvocation:notNull
+MethodInvocation:execute
+MethodInvocation:resolveDestinationName
+MethodInvocation:getDestinationResolver
+MethodInvocation:createBrowser
+MethodInvocation:doInJms
+MethodInvocation:closeQueueBrowser
+Method-name:getConnection
+Method-returnType:Connection
+Method-parameters:[JmsResourceHolder holder]
+MethodInvocation:getConnection
+Method-name:getSession
+Method-returnType:Session
+Method-parameters:[JmsResourceHolder holder]
+MethodInvocation:getSession
+Method-name:isSessionLocallyTransacted
+Method-returnType:boolean
+Method-parameters:[Session session]
+MethodInvocation:isSessionTransacted
+MethodInvocation:isSessionTransactional
+MethodInvocation:getConnectionFactory
+Method-name:createProducer
+Method-returnType:MessageProducer
+Method-parameters:[Session session, @Nullable Destination destination]
+MethodInvocation:doCreateProducer
+MethodInvocation:isMessageIdEnabled
+MethodInvocation:setDisableMessageID
+MethodInvocation:isMessageTimestampEnabled
+MethodInvocation:setDisableMessageTimestamp
+Method-name:doCreateProducer
+Method-returnType:MessageProducer
+Method-parameters:[Session session, @Nullable Destination destination]
+MethodInvocation:createProducer
+Method-name:createConsumer
+Method-returnType:MessageConsumer
+Method-parameters:[Session session, Destination destination, @Nullable String messageSelector]
+MethodInvocation:isPubSubDomain
+MethodInvocation:createConsumer
+MethodInvocation:isPubSubNoLocal
+MethodInvocation:createConsumer
+Method-name:createBrowser
+Method-returnType:QueueBrowser
+Method-parameters:[Session session, Queue queue, @Nullable String messageSelector]
+MethodInvocation:createBrowser
+Class:JmsTemplateResourceFactory
+Method-name:getConnection
+Method-returnType:Connection
+Method-parameters:[JmsResourceHolder holder]
+MethodInvocation:getConnection
+Method-name:getSession
+Method-returnType:Session
+Method-parameters:[JmsResourceHolder holder]
+MethodInvocation:getSession
+Method-name:createConnection
+Method-returnType:Connection
+Method-parameters:[]
+MethodInvocation:createConnection
+Method-name:createSession
+Method-returnType:Session
+Method-parameters:[Connection con]
+MethodInvocation:createSession
+Method-name:isSynchedLocalTransactionAllowed
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isSessionTransacted

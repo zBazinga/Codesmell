@@ -1,0 +1,248 @@
+Class:ProxyConfiguration
+Field:endpoint
+Field:username
+Field:password
+Field:ntlmDomain
+Field:ntlmWorkstation
+Field:nonProxyHosts
+Field:preemptiveBasicAuthenticationEnabled
+Field:useSystemPropertyValues
+Field:host
+Field:port
+Field:scheme
+Method-name:ProxyConfiguration
+Method-returnType:null
+Method-parameters:[DefaultClientProxyConfigurationBuilder builder]
+FieldAccess:endpoint
+FieldAccess:username
+FieldAccess:password
+FieldAccess:ntlmDomain
+FieldAccess:ntlmWorkstation
+FieldAccess:nonProxyHosts
+FieldAccess:preemptiveBasicAuthenticationEnabled
+FieldAccess:useSystemPropertyValues
+FieldAccess:host
+MethodInvocation:resolveHost
+FieldAccess:port
+MethodInvocation:resolvePort
+FieldAccess:scheme
+MethodInvocation:resolveScheme
+Method-name:host
+Method-returnType:String
+Method-parameters:[]
+Method-name:port
+Method-returnType:int
+Method-parameters:[]
+Method-name:scheme
+Method-returnType:String
+Method-parameters:[]
+Method-name:username
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:resolveValue
+Method-name:password
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:resolveValue
+Method-name:ntlmDomain
+Method-returnType:String
+Method-parameters:[]
+Method-name:ntlmWorkstation
+Method-returnType:String
+Method-parameters:[]
+Method-name:nonProxyHosts
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:parseNonProxyHostsProperty
+MethodInvocation:unmodifiableSet
+MethodInvocation:emptySet
+Method-name:preemptiveBasicAuthenticationEnabled
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:toBuilder
+Method-returnType:Builder
+Method-parameters:[]
+MethodInvocation:preemptiveBasicAuthenticationEnabled
+MethodInvocation:nonProxyHosts
+MethodInvocation:ntlmWorkstation
+MethodInvocation:ntlmDomain
+MethodInvocation:password
+MethodInvocation:username
+MethodInvocation:endpoint
+MethodInvocation:builder
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:build
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:builder
+Method-name:resolveHost
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getHost
+MethodInvocation:resolveValue
+Method-name:resolvePort
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getPort
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:getStringValue
+Method-name:resolveScheme
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getScheme
+Method-name:resolveValue
+Method-returnType:String
+Method-parameters:[String value, ProxySystemSetting systemSetting]
+MethodInvocation:orElse
+MethodInvocation:getStringValue
+Method-name:parseNonProxyHostsProperty
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:orElse
+MethodInvocation:getStringValue
+MethodInvocation:isEmpty
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:split
+MethodInvocation:replace
+MethodInvocation:toSet
+MethodInvocation:emptySet
+Method-name:isAuthenticatedProxy
+Method-returnType:boolean
+Method-parameters:[ApacheHttpClient apacheHttpClient]
+MethodInvocation:username
+MethodInvocation:password
+Method-name:endpoint
+Method-returnType:Builder
+Method-parameters:[URI endpoint]
+Method-name:username
+Method-returnType:Builder
+Method-parameters:[String username]
+Method-name:password
+Method-returnType:Builder
+Method-parameters:[String password]
+Method-name:ntlmDomain
+Method-returnType:Builder
+Method-parameters:[String proxyDomain]
+Method-name:ntlmWorkstation
+Method-returnType:Builder
+Method-parameters:[String proxyWorkstation]
+Method-name:nonProxyHosts
+Method-returnType:Builder
+Method-parameters:[Set<String> nonProxyHosts]
+Method-name:addNonProxyHost
+Method-returnType:Builder
+Method-parameters:[String nonProxyHost]
+Method-name:preemptiveBasicAuthenticationEnabled
+Method-returnType:Builder
+Method-parameters:[Boolean preemptiveBasicAuthenticationEnabled]
+Method-name:useSystemPropertyValues
+Method-returnType:Builder
+Method-parameters:[Boolean useSystemPropertyValues]
+Class:DefaultClientProxyConfigurationBuilder
+Field:endpoint
+Field:username
+Field:password
+Field:ntlmDomain
+Field:ntlmWorkstation
+Field:nonProxyHosts
+Field:preemptiveBasicAuthenticationEnabled
+Field:useSystemPropertyValues
+Method-name:endpoint
+Method-returnType:Builder
+Method-parameters:[URI endpoint]
+MethodInvocation:isTrue
+MethodInvocation:isEmpty
+MethodInvocation:getUserInfo
+MethodInvocation:isTrue
+MethodInvocation:isEmpty
+MethodInvocation:getPath
+MethodInvocation:isTrue
+MethodInvocation:isEmpty
+MethodInvocation:getQuery
+MethodInvocation:isTrue
+MethodInvocation:isEmpty
+MethodInvocation:getFragment
+FieldAccess:endpoint
+Method-name:setEndpoint
+Method-returnType:void
+Method-parameters:[URI endpoint]
+MethodInvocation:endpoint
+Method-name:username
+Method-returnType:Builder
+Method-parameters:[String username]
+FieldAccess:username
+Method-name:setUsername
+Method-returnType:void
+Method-parameters:[String username]
+MethodInvocation:username
+Method-name:password
+Method-returnType:Builder
+Method-parameters:[String password]
+FieldAccess:password
+Method-name:setPassword
+Method-returnType:void
+Method-parameters:[String password]
+MethodInvocation:password
+Method-name:ntlmDomain
+Method-returnType:Builder
+Method-parameters:[String proxyDomain]
+FieldAccess:ntlmDomain
+Method-name:setNtlmDomain
+Method-returnType:void
+Method-parameters:[String ntlmDomain]
+MethodInvocation:ntlmDomain
+Method-name:ntlmWorkstation
+Method-returnType:Builder
+Method-parameters:[String proxyWorkstation]
+FieldAccess:ntlmWorkstation
+Method-name:setNtlmWorkstation
+Method-returnType:void
+Method-parameters:[String ntlmWorkstation]
+MethodInvocation:ntlmWorkstation
+Method-name:nonProxyHosts
+Method-returnType:Builder
+Method-parameters:[Set<String> nonProxyHosts]
+FieldAccess:nonProxyHosts
+Method-name:addNonProxyHost
+Method-returnType:Builder
+Method-parameters:[String nonProxyHost]
+FieldAccess:nonProxyHosts
+FieldAccess:nonProxyHosts
+MethodInvocation:add
+FieldAccess:nonProxyHosts
+Method-name:setNonProxyHosts
+Method-returnType:void
+Method-parameters:[Set<String> nonProxyHosts]
+MethodInvocation:nonProxyHosts
+Method-name:preemptiveBasicAuthenticationEnabled
+Method-returnType:Builder
+Method-parameters:[Boolean preemptiveBasicAuthenticationEnabled]
+FieldAccess:preemptiveBasicAuthenticationEnabled
+Method-name:setPreemptiveBasicAuthenticationEnabled
+Method-returnType:void
+Method-parameters:[Boolean preemptiveBasicAuthenticationEnabled]
+MethodInvocation:preemptiveBasicAuthenticationEnabled
+Method-name:useSystemPropertyValues
+Method-returnType:Builder
+Method-parameters:[Boolean useSystemPropertyValues]
+FieldAccess:useSystemPropertyValues
+Method-name:setUseSystemPropertyValues
+Method-returnType:void
+Method-parameters:[Boolean useSystemPropertyValues]
+MethodInvocation:useSystemPropertyValues
+Method-name:build
+Method-returnType:ProxyConfiguration
+Method-parameters:[]

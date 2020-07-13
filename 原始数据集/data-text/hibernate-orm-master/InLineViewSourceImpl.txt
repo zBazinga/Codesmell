@@ -1,0 +1,41 @@
+Class:InLineViewSourceImpl
+Field:schemaName
+Field:catalogName
+Field:selectStatement
+Field:logicalName
+Field:comment
+Method-name:InLineViewSourceImpl
+Method-returnType:null
+Method-parameters:[MappingDocument mappingDocument, String schemaName, String catalogName, String selectStatement, String logicalName, String comment]
+FieldAccess:schemaName
+MethodInvocation:determineSchemaName
+FieldAccess:catalogName
+MethodInvocation:determineCatalogName
+FieldAccess:selectStatement
+FieldAccess:logicalName
+FieldAccess:comment
+Method-name:getExplicitSchemaName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getExplicitCatalogName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getSelectStatement
+Method-returnType:String
+Method-parameters:[]
+Method-name:getLogicalName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getComment
+Method-returnType:String
+Method-parameters:[]
+Method-name:determineCatalogName
+Method-returnType:String
+Method-parameters:[MappingDocument mappingDocument, String catalogName]
+MethodInvocation:getCatalog
+MethodInvocation:getDocumentRoot
+Method-name:determineSchemaName
+Method-returnType:String
+Method-parameters:[MappingDocument mappingDocument, String schemaName]
+MethodInvocation:getSchema
+MethodInvocation:getDocumentRoot

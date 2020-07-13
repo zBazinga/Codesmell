@@ -1,0 +1,104 @@
+Class:ThriftConfiguration
+Field:host
+Field:port
+Field:service
+Field:method
+Field:exchangeProtocol
+Field:negotiationType
+Field:sslParameters
+Field:compressionType
+Field:clientTimeout
+Field:poolSize
+Field:maxPoolSize
+Method-name:getService
+Method-returnType:String
+Method-parameters:[]
+Method-name:setService
+Method-returnType:void
+Method-parameters:[String service]
+FieldAccess:service
+Method-name:getMethod
+Method-returnType:String
+Method-parameters:[]
+Method-name:setMethod
+Method-returnType:void
+Method-parameters:[String method]
+FieldAccess:method
+Method-name:getExchangeProtocol
+Method-returnType:ThriftExchangeProtocol
+Method-parameters:[]
+Method-name:setExchangeProtocol
+Method-returnType:void
+Method-parameters:[ThriftExchangeProtocol exchangeProtocol]
+FieldAccess:exchangeProtocol
+Method-name:getNegotiationType
+Method-returnType:ThriftNegotiationType
+Method-parameters:[]
+Method-name:setNegotiationType
+Method-returnType:void
+Method-parameters:[ThriftNegotiationType negotiationType]
+FieldAccess:negotiationType
+Method-name:getSslParameters
+Method-returnType:SSLContextParameters
+Method-parameters:[]
+Method-name:setSslParameters
+Method-returnType:void
+Method-parameters:[SSLContextParameters sslParameters]
+FieldAccess:sslParameters
+Method-name:getCompressionType
+Method-returnType:ThriftCompressionType
+Method-parameters:[]
+Method-name:setCompressionType
+Method-returnType:void
+Method-parameters:[ThriftCompressionType compressionType]
+FieldAccess:compressionType
+Method-name:getHost
+Method-returnType:String
+Method-parameters:[]
+Method-name:setHost
+Method-returnType:void
+Method-parameters:[String host]
+FieldAccess:host
+Method-name:getPort
+Method-returnType:int
+Method-parameters:[]
+Method-name:setPort
+Method-returnType:void
+Method-parameters:[int port]
+FieldAccess:port
+Method-name:getClientTimeout
+Method-returnType:int
+Method-parameters:[]
+Method-name:setClientTimeout
+Method-returnType:void
+Method-parameters:[int clientTimeout]
+FieldAccess:clientTimeout
+Method-name:getPoolSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:setPoolSize
+Method-returnType:void
+Method-parameters:[int poolSize]
+FieldAccess:poolSize
+Method-name:getMaxPoolSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxPoolSize
+Method-returnType:void
+Method-parameters:[int maxPoolSize]
+FieldAccess:maxPoolSize
+Method-name:parseURI
+Method-returnType:void
+Method-parameters:[URI uri, Map<String,Object> parameters, ThriftComponent component]
+MethodInvocation:setHost
+MethodInvocation:getHost
+MethodInvocation:getPort
+MethodInvocation:setPort
+MethodInvocation:getPort
+MethodInvocation:setService
+MethodInvocation:substring
+MethodInvocation:getPath
+Method-name:parseConfiguration
+Method-returnType:ThriftConfiguration
+Method-parameters:[String remaining, Map<String,Object> parameters, ThriftComponent thriftComponent]
+MethodInvocation:parseURI

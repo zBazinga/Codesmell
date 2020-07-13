@@ -1,0 +1,36 @@
+Class:UserSearch
+Field:ELEMENT
+Field:NAMESPACE
+Method-name:UserSearch
+Method-returnType:null
+Method-parameters:[]
+Method-name:getSearchForm
+Method-returnType:DataForm
+Method-parameters:[XMPPConnection con, DomainBareJid searchService]
+MethodInvocation:setType
+MethodInvocation:setTo
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:from
+Method-name:sendSimpleSearchForm
+Method-returnType:ReportedData
+Method-parameters:[XMPPConnection con, DataForm searchForm, DomainBareJid searchService]
+MethodInvocation:setForm
+MethodInvocation:setType
+MethodInvocation:setTo
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:getReportedData
+Class:Provider
+Method-name:parse
+Method-returnType:IQ
+Method-parameters:[XmlPullParser parser, int initialDepth, XmlEnvironment xmlEnvironment]
+MethodInvocation:next
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:parseItems
+MethodInvocation:equals
+MethodInvocation:getNamespace
+MethodInvocation:addExtensionElement
+MethodInvocation:equals
+MethodInvocation:getName

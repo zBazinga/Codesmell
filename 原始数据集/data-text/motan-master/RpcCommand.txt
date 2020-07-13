@@ -1,0 +1,83 @@
+Class:RpcCommand
+Field:clientCommandList
+Method-name:sort
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:sort
+Method-name:compare
+Method-returnType:int
+Method-parameters:[ClientCommand o1, ClientCommand o2]
+MethodInvocation:getIndex
+MethodInvocation:getIndex
+MethodInvocation:compareTo
+Method-name:discoverServiceWithCommand
+Method-returnType:List<URL>
+Method-parameters:[URL serviceUrl, Map<String,Integer> weights, CommandServiceManager commandServiceManager]
+MethodInvocation:getHostAddress
+MethodInvocation:getLocalAddress
+MethodInvocation:discoverServiceWithCommand
+Class:ClientCommand
+Field:index
+Field:version
+Field:dc
+Field:pattern
+Field:mergeGroups
+Field:routeRules
+Field:remark
+Method-name:getIndex
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setIndex
+Method-returnType:void
+Method-parameters:[Integer index]
+FieldAccess:index
+Method-name:getVersion
+Method-returnType:String
+Method-parameters:[]
+Method-name:setVersion
+Method-returnType:void
+Method-parameters:[String version]
+FieldAccess:version
+Method-name:getDc
+Method-returnType:String
+Method-parameters:[]
+Method-name:setDc
+Method-returnType:void
+Method-parameters:[String dc]
+FieldAccess:dc
+Method-name:getPattern
+Method-returnType:String
+Method-parameters:[]
+Method-name:setPattern
+Method-returnType:void
+Method-parameters:[String pattern]
+FieldAccess:pattern
+Method-name:getMergeGroups
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setMergeGroups
+Method-returnType:void
+Method-parameters:[List<String> mergeGroups]
+FieldAccess:mergeGroups
+Method-name:getRouteRules
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setRouteRules
+Method-returnType:void
+Method-parameters:[List<String> routeRules]
+FieldAccess:routeRules
+Method-name:getRemark
+Method-returnType:String
+Method-parameters:[]
+Method-name:setRemark
+Method-returnType:void
+Method-parameters:[String remark]
+FieldAccess:remark
+Method-name:getClientCommandList
+Method-returnType:List<ClientCommand>
+Method-parameters:[]
+Method-name:setClientCommandList
+Method-returnType:void
+Method-parameters:[List<ClientCommand> clientCommandList]
+FieldAccess:clientCommandList
+Class:ServerCommand

@@ -1,0 +1,202 @@
+Class:TezWork
+Method-name:getFollowingWorkIndex
+Method-returnType:int
+Method-parameters:[UnionWork unionWork, ReduceSinkOperator rs, GenTezWork genTezWork]
+MethodInvocation:getChildren
+MethodInvocation:getEdgeProperty
+MethodInvocation:getEdgeType
+MethodInvocation:getName
+Field:VertexType
+Method-name:isCustomInputType
+Method-returnType:boolean
+Method-parameters:[VertexType vertex]
+Field:LOG
+MethodInvocation:getLogger
+Field:counter
+Field:dagId
+Field:queryName
+Field:roots
+Field:leaves
+Field:workGraph
+Field:invertedWorkGraph
+Field:edgeProperties
+Field:workVertexTypeMap
+Method-name:TezWork
+Method-returnType:null
+Method-parameters:[String queryId]
+Method-name:TezWork
+Method-returnType:null
+Method-parameters:[String queryId, Configuration conf]
+FieldAccess:dagId
+MethodInvocation:getAndIncrement
+MethodInvocation:getUserSpecifiedDagName
+FieldAccess:dagId
+FieldAccess:queryName
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getDagId
+Method-returnType:String
+Method-parameters:[]
+Method-name:getWorkMap
+Method-returnType:Map<String,BaseWork>
+Method-parameters:[]
+MethodInvocation:getAllWork
+MethodInvocation:put
+MethodInvocation:getName
+Method-name:getAllWork
+Method-returnType:List<BaseWork>
+Method-parameters:[]
+MethodInvocation:visit
+Method-name:getAllWorkUnsorted
+Method-returnType:Collection<BaseWork>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:visit
+Method-returnType:void
+Method-parameters:[BaseWork child, Set<BaseWork> seen, List<BaseWork> result]
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:getParents
+MethodInvocation:contains
+MethodInvocation:visit
+MethodInvocation:add
+Method-name:addAll
+Method-returnType:void
+Method-parameters:[Collection<BaseWork> c]
+MethodInvocation:add
+Method-name:addAll
+Method-returnType:void
+Method-parameters:[BaseWork[] bws]
+MethodInvocation:add
+Method-name:add
+Method-returnType:void
+Method-parameters:[BaseWork w]
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:add
+Method-name:disconnect
+Method-returnType:void
+Method-parameters:[BaseWork a, BaseWork b]
+MethodInvocation:remove
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:getParents
+MethodInvocation:add
+MethodInvocation:isEmpty
+MethodInvocation:getChildren
+MethodInvocation:add
+Method-name:getRoots
+Method-returnType:Set<BaseWork>
+Method-parameters:[]
+Method-name:getLeaves
+Method-returnType:Set<BaseWork>
+Method-parameters:[]
+Method-name:getParents
+Method-returnType:List<BaseWork>
+Method-parameters:[BaseWork work]
+Method-name:getChildren
+Method-returnType:List<BaseWork>
+Method-parameters:[BaseWork work]
+Method-name:remove
+Method-returnType:void
+Method-parameters:[BaseWork work]
+MethodInvocation:containsKey
+MethodInvocation:getChildren
+MethodInvocation:getParents
+MethodInvocation:remove
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:remove
+MethodInvocation:remove
+MethodInvocation:remove
+Method-name:getEdgeType
+Method-returnType:EdgeType
+Method-parameters:[BaseWork a, BaseWork b]
+MethodInvocation:getEdgeType
+MethodInvocation:get
+Method-name:getEdgeProperty
+Method-returnType:TezEdgeProperty
+Method-parameters:[BaseWork a, BaseWork b]
+MethodInvocation:get
+Class:Dependency
+Field:w
+Field:type
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:getType
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[Dependency o]
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:compareTo
+MethodInvocation:getType
+MethodInvocation:getType
+Method-name:getDependencyMap
+Method-returnType:Map<String,List<Dependency>>
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:getEdgeType
+MethodInvocation:getKey
+MethodInvocation:add
+MethodInvocation:isEmpty
+MethodInvocation:sort
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:getKey
+Field:MR_JAR_PROPERTY
+Method-name:configureJobConfAndExtractJars
+Method-returnType:String[]
+Method-parameters:[JobConf jobConf]
+MethodInvocation:getStrings
+MethodInvocation:setStrings
+MethodInvocation:keySet
+MethodInvocation:configureJobConf
+MethodInvocation:getStrings
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+MethodInvocation:setStrings
+Method-name:connect
+Method-returnType:void
+Method-parameters:[BaseWork a, BaseWork b, TezEdgeProperty edgeProp]
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:remove
+MethodInvocation:put
+Method-name:setVertexType
+Method-returnType:void
+Method-parameters:[BaseWork w, VertexType incomingVertexType]
+MethodInvocation:get
+MethodInvocation:put
+Method-name:getVertexType
+Method-returnType:VertexType
+Method-parameters:[BaseWork w]
+MethodInvocation:get
+Method-name:getLlapMode
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getAllWork
+MethodInvocation:getLlapMode

@@ -1,0 +1,109 @@
+Class:LoptJoinTree
+Field:factorTree
+Field:joinTree
+Field:removableSelfJoin
+Method-name:LoptJoinTree
+Method-returnType:null
+Method-parameters:[RelNode joinTree, int factorId]
+FieldAccess:joinTree
+FieldAccess:factorTree
+FieldAccess:removableSelfJoin
+Method-name:LoptJoinTree
+Method-returnType:null
+Method-parameters:[RelNode joinTree, BinaryTree factorTree, boolean removableSelfJoin]
+FieldAccess:joinTree
+FieldAccess:factorTree
+FieldAccess:removableSelfJoin
+Method-name:LoptJoinTree
+Method-returnType:null
+Method-parameters:[RelNode joinTree, BinaryTree leftFactorTree, BinaryTree rightFactorTree]
+Method-name:LoptJoinTree
+Method-returnType:null
+Method-parameters:[RelNode joinTree, BinaryTree leftFactorTree, BinaryTree rightFactorTree, boolean removableSelfJoin]
+FieldAccess:joinTree
+FieldAccess:removableSelfJoin
+Method-name:getJoinTree
+Method-returnType:RelNode
+Method-parameters:[]
+Method-name:getLeft
+Method-returnType:LoptJoinTree
+Method-parameters:[]
+MethodInvocation:getLeft
+MethodInvocation:getLeft
+MethodInvocation:isRemovableSelfJoin
+MethodInvocation:getParent
+MethodInvocation:getLeft
+Method-name:getRight
+Method-returnType:LoptJoinTree
+Method-parameters:[]
+MethodInvocation:getRight
+MethodInvocation:getRight
+MethodInvocation:isRemovableSelfJoin
+MethodInvocation:getParent
+MethodInvocation:getRight
+Method-name:getFactorTree
+Method-returnType:BinaryTree
+Method-parameters:[]
+Method-name:getTreeOrder
+Method-returnType:List<Integer>
+Method-parameters:[]
+MethodInvocation:getTreeOrder
+Method-name:getTreeOrder
+Method-returnType:void
+Method-parameters:[List<Integer> treeOrder]
+MethodInvocation:getTreeOrder
+Method-name:isRemovableSelfJoin
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getChildFactors
+Method-returnType:void
+Method-parameters:[ImmutableBitSet.Builder childFactors, LoptMultiJoin loptMultiJoin]
+MethodInvocation:getTreeOrder
+MethodInvocation:set
+Class:BinaryTree
+Field:parent
+Method-name:BinaryTree
+Method-returnType:null
+Method-parameters:[LoptJoinTree parent]
+FieldAccess:parent
+MethodInvocation:requireNonNull
+Method-name:getParent
+Method-returnType:LoptJoinTree
+Method-parameters:[]
+Method-name:getTreeOrder
+Method-returnType:void
+Method-parameters:[List<Integer> treeOrder]
+Class:Leaf
+Field:id
+Method-name:Leaf
+Method-returnType:null
+Method-parameters:[int rootId, LoptJoinTree parent]
+FieldAccess:id
+Method-name:getId
+Method-returnType:int
+Method-parameters:[]
+Method-name:getTreeOrder
+Method-returnType:void
+Method-parameters:[List<Integer> treeOrder]
+MethodInvocation:add
+Class:Node
+Field:left
+Field:right
+Method-name:Node
+Method-returnType:null
+Method-parameters:[BinaryTree left, BinaryTree right, LoptJoinTree parent]
+FieldAccess:left
+MethodInvocation:requireNonNull
+FieldAccess:right
+MethodInvocation:requireNonNull
+Method-name:getLeft
+Method-returnType:BinaryTree
+Method-parameters:[]
+Method-name:getRight
+Method-returnType:BinaryTree
+Method-parameters:[]
+Method-name:getTreeOrder
+Method-returnType:void
+Method-parameters:[List<Integer> treeOrder]
+MethodInvocation:getTreeOrder
+MethodInvocation:getTreeOrder

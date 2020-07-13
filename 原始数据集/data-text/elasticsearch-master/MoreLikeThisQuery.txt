@@ -1,0 +1,207 @@
+Class:MoreLikeThisQuery
+Field:DEFAULT_MINIMUM_SHOULD_MATCH
+Field:similarity
+Field:likeText
+Field:likeFields
+Field:unlikeText
+Field:unlikeFields
+Field:moreLikeFields
+Field:analyzer
+Field:minimumShouldMatch
+Field:minTermFrequency
+Field:maxQueryTerms
+Field:stopWords
+Field:minDocFreq
+Field:maxDocFreq
+Field:minWordLen
+Field:maxWordLen
+Field:boostTerms
+Field:boostTermsFactor
+Method-name:MoreLikeThisQuery
+Method-returnType:null
+Method-parameters:[]
+Method-name:MoreLikeThisQuery
+Method-returnType:null
+Method-parameters:[String likeText, String[] moreLikeFields, Analyzer analyzer]
+FieldAccess:likeText
+FieldAccess:moreLikeFields
+FieldAccess:analyzer
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+MethodInvocation:classHash
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:sameClassAs
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:rewrite
+Method-returnType:Query
+Method-parameters:[IndexReader reader]
+MethodInvocation:setFieldNames
+MethodInvocation:setAnalyzer
+MethodInvocation:setMinTermFreq
+MethodInvocation:setMinDocFreq
+MethodInvocation:setMaxDocFreq
+MethodInvocation:setMaxQueryTerms
+MethodInvocation:setMinWordLen
+MethodInvocation:setMaxWordLen
+MethodInvocation:setStopWords
+MethodInvocation:setBoost
+MethodInvocation:setBoostFactor
+FieldAccess:unlikeText
+FieldAccess:unlikeFields
+MethodInvocation:handleUnlike
+FieldAccess:unlikeText
+FieldAccess:unlikeFields
+MethodInvocation:createQueryOther
+Method-name:handleUnlike
+Method-returnType:void
+Method-parameters:[XMoreLikeThis mlt, String[] unlikeText, Fields[] unlikeFields]
+MethodInvocation:tokenStream
+MethodInvocation:addAttribute
+MethodInvocation:reset
+MethodInvocation:incrementToken
+MethodInvocation:add
+MethodInvocation:toString
+MethodInvocation:end
+MethodInvocation:terms
+MethodInvocation:iterator
+MethodInvocation:next
+MethodInvocation:add
+MethodInvocation:utf8ToString
+MethodInvocation:isEmpty
+MethodInvocation:setSkipTerms
+Method-name:toString
+Method-returnType:String
+Method-parameters:[String field]
+MethodInvocation:toString
+Method-name:getLikeText
+Method-returnType:String
+Method-parameters:[]
+Method-name:getLikeTexts
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:setLikeText
+Method-returnType:void
+Method-parameters:[String... likeText]
+FieldAccess:likeText
+Method-name:getLikeFields
+Method-returnType:Fields[]
+Method-parameters:[]
+Method-name:setLikeFields
+Method-returnType:void
+Method-parameters:[Fields... likeFields]
+FieldAccess:likeFields
+Method-name:setLikeText
+Method-returnType:void
+Method-parameters:[List<String> likeText]
+MethodInvocation:setLikeText
+MethodInvocation:toArray
+Method-name:setUnlikeFields
+Method-returnType:void
+Method-parameters:[Fields... unlikeFields]
+FieldAccess:unlikeFields
+Method-name:setUnlikeText
+Method-returnType:void
+Method-parameters:[String[] unlikeText]
+FieldAccess:unlikeText
+Method-name:getMoreLikeFields
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:setMoreLikeFields
+Method-returnType:void
+Method-parameters:[String[] moreLikeFields]
+FieldAccess:moreLikeFields
+Method-name:getSimilarity
+Method-returnType:Similarity
+Method-parameters:[]
+Method-name:setSimilarity
+Method-returnType:void
+Method-parameters:[Similarity similarity]
+FieldAccess:similarity
+Method-name:getAnalyzer
+Method-returnType:Analyzer
+Method-parameters:[]
+Method-name:setAnalyzer
+Method-returnType:void
+Method-parameters:[Analyzer analyzer]
+FieldAccess:analyzer
+Method-name:getMinimumShouldMatch
+Method-returnType:String
+Method-parameters:[]
+Method-name:setMinimumShouldMatch
+Method-returnType:void
+Method-parameters:[String minimumShouldMatch]
+FieldAccess:minimumShouldMatch
+Method-name:getMinTermFrequency
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMinTermFrequency
+Method-returnType:void
+Method-parameters:[int minTermFrequency]
+FieldAccess:minTermFrequency
+Method-name:getMaxQueryTerms
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxQueryTerms
+Method-returnType:void
+Method-parameters:[int maxQueryTerms]
+FieldAccess:maxQueryTerms
+Method-name:getStopWords
+Method-returnType:Set<?>
+Method-parameters:[]
+Method-name:setStopWords
+Method-returnType:void
+Method-parameters:[Set<?> stopWords]
+FieldAccess:stopWords
+Method-name:getMinDocFreq
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMinDocFreq
+Method-returnType:void
+Method-parameters:[int minDocFreq]
+FieldAccess:minDocFreq
+Method-name:getMaxDocFreq
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxDocFreq
+Method-returnType:void
+Method-parameters:[int maxDocFreq]
+FieldAccess:maxDocFreq
+Method-name:getMinWordLen
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMinWordLen
+Method-returnType:void
+Method-parameters:[int minWordLen]
+FieldAccess:minWordLen
+Method-name:getMaxWordLen
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxWordLen
+Method-returnType:void
+Method-parameters:[int maxWordLen]
+FieldAccess:maxWordLen
+Method-name:isBoostTerms
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setBoostTerms
+Method-returnType:void
+Method-parameters:[boolean boostTerms]
+FieldAccess:boostTerms
+Method-name:getBoostTermsFactor
+Method-returnType:float
+Method-parameters:[]
+Method-name:setBoostTermsFactor
+Method-returnType:void
+Method-parameters:[float boostTermsFactor]
+FieldAccess:boostTermsFactor

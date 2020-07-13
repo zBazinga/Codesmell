@@ -1,0 +1,47 @@
+Class:URLCollection
+Field:log
+MethodInvocation:getLogger
+Field:coll
+Method-name:URLCollection
+Method-returnType:null
+Method-parameters:[Collection<URLString> c]
+MethodInvocation:notNull
+Method-name:add
+Method-returnType:boolean
+Method-parameters:[URL u]
+MethodInvocation:add
+Method-name:addURL
+Method-returnType:boolean
+Method-parameters:[String url, URL baseUrl]
+MethodInvocation:length
+MethodInvocation:unescapeXml
+MethodInvocation:add
+MethodInvocation:makeRelativeURL
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getMessage
+Method-name:iterator
+Method-returnType:Iterator<URL>
+Method-parameters:[]
+MethodInvocation:iterator
+Method-name:orDefault
+Method-returnType:URLCollection
+Method-parameters:[URLCollection defaultValue, CssParser cssParser]
+MethodInvocation:notNull
+Class:UrlIterator
+Field:iter
+Method-name:UrlIterator
+Method-returnType:null
+Method-parameters:[Iterator<URLString> i]
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasNext
+Method-name:next
+Method-returnType:URL
+Method-parameters:[]
+MethodInvocation:getURL
+MethodInvocation:next
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]

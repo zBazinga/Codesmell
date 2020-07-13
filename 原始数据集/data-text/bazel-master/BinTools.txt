@@ -1,0 +1,119 @@
+Class:BinTools
+Field:embeddedBinariesRoot
+Field:embeddedTools
+Field:actionInputs
+Method-name:BinTools
+Method-returnType:null
+Method-parameters:[BlazeDirectories directories, ImmutableList<String> tools]
+MethodInvocation:getEmbeddedBinariesRoot
+Method-name:BinTools
+Method-returnType:null
+Method-parameters:[Path embeddedBinariesRoot, ImmutableList<String> tools]
+FieldAccess:embeddedBinariesRoot
+MethodInvocation:builder
+MethodInvocation:startsWith
+MethodInvocation:add
+FieldAccess:embeddedTools
+MethodInvocation:build
+MethodInvocation:builder
+MethodInvocation:getEmbeddedPath
+MethodInvocation:getRelative
+MethodInvocation:create
+MethodInvocation:put
+MethodInvocation:build
+Method-name:forProduction
+Method-returnType:BinTools
+Method-parameters:[BlazeDirectories directories]
+MethodInvocation:builder
+MethodInvocation:scanDirectoryRecursively
+MethodInvocation:getEmbeddedBinariesRoot
+MethodInvocation:build
+Method-name:empty
+Method-returnType:BinTools
+Method-parameters:[BlazeDirectories directories]
+MethodInvocation:of
+Method-name:forEmbeddedBin
+Method-returnType:BinTools
+Method-parameters:[Path embeddedBinariesRoot, Iterable<String> tools]
+MethodInvocation:copyOf
+Method-name:forUnitTesting
+Method-returnType:BinTools
+Method-parameters:[BlazeDirectories directories, Iterable<String> tools]
+MethodInvocation:copyOf
+Method-name:forUnitTesting
+Method-returnType:BinTools
+Method-parameters:[Path execroot, Iterable<String> tools]
+MethodInvocation:getRelative
+MethodInvocation:copyOf
+Method-name:forIntegrationTesting
+Method-returnType:BinTools
+Method-parameters:[BlazeDirectories directories, Iterable<String> tools]
+MethodInvocation:copyOf
+Method-name:scanDirectoryRecursively
+Method-returnType:void
+Method-parameters:[ImmutableList.Builder<String> result, Path root, String relative]
+MethodInvocation:readdir
+MethodInvocation:isEmpty
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:getType
+MethodInvocation:add
+MethodInvocation:scanDirectoryRecursively
+MethodInvocation:getChild
+MethodInvocation:getName
+Method-name:getActionInput
+Method-returnType:ActionInput
+Method-parameters:[String embeddedPath]
+MethodInvocation:get
+Method-name:getEmbeddedPath
+Method-returnType:Path
+Method-parameters:[String embedPath]
+MethodInvocation:contains
+MethodInvocation:getRelative
+Class:PathActionInput
+Field:path
+Field:execPath
+Field:metadata
+Method-name:PathActionInput
+Method-returnType:null
+Method-parameters:[Path path, PathFragment execPath]
+FieldAccess:path
+FieldAccess:execPath
+Method-name:hash
+Method-returnType:FileArtifactValue
+Method-parameters:[Path path]
+MethodInvocation:getDigestFunction
+MethodInvocation:getFileSystem
+MethodInvocation:newHasher
+MethodInvocation:getHashFunction
+MethodInvocation:getInputStream
+MethodInvocation:read
+MethodInvocation:putBytes
+MethodInvocation:createForVirtualActionInput
+MethodInvocation:asBytes
+MethodInvocation:hash
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[OutputStream out]
+MethodInvocation:getInputStream
+MethodInvocation:copy
+Method-name:isSymlink
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getBytes
+Method-returnType:ByteString
+Method-parameters:[]
+MethodInvocation:newOutput
+MethodInvocation:writeTo
+MethodInvocation:toByteString
+Method-name:getMetadata
+Method-returnType:FileArtifactValue
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:getExecPathString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPathString
+Method-name:getExecPath
+Method-returnType:PathFragment
+Method-parameters:[]

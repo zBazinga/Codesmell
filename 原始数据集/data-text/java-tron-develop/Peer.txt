@@ -1,0 +1,65 @@
+Class:Peer
+Field:id
+Field:host
+Field:port
+Method-name:Peer
+Method-returnType:null
+Method-parameters:[byte[] id, String host, int port]
+FieldAccess:id
+FieldAccess:host
+FieldAccess:port
+Method-name:Peer
+Method-returnType:null
+Method-parameters:[byte[] ip]
+FieldAccess:id
+Method-name:randomPeerId
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:toByteArray
+MethodInvocation:getRandom
+MethodInvocation:toHexString
+MethodInvocation:toHexString
+MethodInvocation:decode
+Method-name:nextBit
+Method-returnType:byte
+Method-parameters:[String startPattern]
+MethodInvocation:startsWith
+MethodInvocation:toBinaryString
+Method-name:calcDistance
+Method-returnType:byte[]
+Method-parameters:[Peer toPeer]
+MethodInvocation:getId
+MethodInvocation:getId
+MethodInvocation:xor
+MethodInvocation:asUnsignedByteArray
+Method-name:getId
+Method-returnType:byte[]
+Method-parameters:[]
+Method-name:setId
+Method-returnType:void
+Method-parameters:[byte[] id]
+FieldAccess:id
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:format
+MethodInvocation:toHexString
+Method-name:toBinaryString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:format
+MethodInvocation:toString
+MethodInvocation:replace
+Method-name:add
+Method-returnType:void
+Method-parameters:[Bucket bucket]
+MethodInvocation:getPeers
+MethodInvocation:nextBit
+MethodInvocation:getName
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:getPeers
+MethodInvocation:size
+MethodInvocation:getPeers
+MethodInvocation:splitBucket

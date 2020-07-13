@@ -1,0 +1,37 @@
+Class:ServletModelAttributeMethodProcessor
+Method-name:ServletModelAttributeMethodProcessor
+Method-returnType:null
+Method-parameters:[boolean annotationNotRequired]
+Method-name:createAttribute
+Method-returnType:Object
+Method-parameters:[String attributeName, MethodParameter parameter, WebDataBinderFactory binderFactory, NativeWebRequest request]
+MethodInvocation:getRequestValueForAttribute
+MethodInvocation:createAttributeFromRequestValue
+Method-name:getRequestValueForAttribute
+Method-returnType:String
+Method-parameters:[String attributeName, NativeWebRequest request]
+MethodInvocation:getUriTemplateVariables
+MethodInvocation:get
+MethodInvocation:hasText
+MethodInvocation:getParameter
+MethodInvocation:hasText
+Method-name:getUriTemplateVariables
+Method-returnType:Map<String,String>
+Method-parameters:[NativeWebRequest request]
+MethodInvocation:getAttribute
+MethodInvocation:emptyMap
+Method-name:createAttributeFromRequestValue
+Method-returnType:Object
+Method-parameters:[String sourceValue, String attributeName, MethodParameter parameter, WebDataBinderFactory binderFactory, NativeWebRequest request]
+MethodInvocation:createBinder
+MethodInvocation:getConversionService
+MethodInvocation:valueOf
+MethodInvocation:canConvert
+MethodInvocation:convertIfNecessary
+MethodInvocation:getParameterType
+Method-name:bindRequestParameters
+Method-returnType:void
+Method-parameters:[WebDataBinder binder, NativeWebRequest request]
+MethodInvocation:getNativeRequest
+MethodInvocation:state
+MethodInvocation:bind

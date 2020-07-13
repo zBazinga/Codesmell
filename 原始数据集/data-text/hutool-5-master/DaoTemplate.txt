@@ -1,0 +1,150 @@
+Class:DaoTemplate
+Field:tableName
+Field:primaryKeyField
+Field:db
+Method-name:DaoTemplate
+Method-returnType:null
+Method-parameters:[String tableName]
+Method-name:DaoTemplate
+Method-returnType:null
+Method-parameters:[String tableName, String primaryKeyField]
+MethodInvocation:get
+Method-name:DaoTemplate
+Method-returnType:null
+Method-parameters:[String tableName, DataSource ds]
+Method-name:DaoTemplate
+Method-returnType:null
+Method-parameters:[String tableName, String primaryKeyField, DataSource ds]
+MethodInvocation:use
+Method-name:DaoTemplate
+Method-returnType:null
+Method-parameters:[String tableName, String primaryKeyField, Db db]
+FieldAccess:tableName
+MethodInvocation:isNotBlank
+FieldAccess:primaryKeyField
+FieldAccess:db
+Method-name:add
+Method-returnType:int
+Method-parameters:[Entity entity]
+MethodInvocation:insert
+MethodInvocation:fixEntity
+Method-name:addForGeneratedKeys
+Method-returnType:List<Object>
+Method-parameters:[Entity entity]
+MethodInvocation:insertForGeneratedKeys
+MethodInvocation:fixEntity
+Method-name:addForGeneratedKey
+Method-returnType:Long
+Method-parameters:[Entity entity]
+MethodInvocation:insertForGeneratedKey
+MethodInvocation:fixEntity
+Method-name:del
+Method-returnType:int
+Method-parameters:[T pk]
+MethodInvocation:del
+MethodInvocation:set
+MethodInvocation:create
+Method-name:del
+Method-returnType:int
+Method-parameters:[String field, T value]
+MethodInvocation:isBlank
+MethodInvocation:del
+MethodInvocation:set
+MethodInvocation:create
+Method-name:del
+Method-returnType:int
+Method-parameters:[Entity where]
+MethodInvocation:isEmpty
+MethodInvocation:del
+MethodInvocation:fixEntity
+Method-name:update
+Method-returnType:int
+Method-parameters:[Entity record, Entity where]
+MethodInvocation:isEmpty
+MethodInvocation:update
+MethodInvocation:fixEntity
+Method-name:update
+Method-returnType:int
+Method-parameters:[Entity entity]
+MethodInvocation:isEmpty
+MethodInvocation:fixEntity
+MethodInvocation:get
+MethodInvocation:format
+MethodInvocation:set
+MethodInvocation:create
+MethodInvocation:clone
+MethodInvocation:remove
+MethodInvocation:update
+Method-name:addOrUpdate
+Method-returnType:int
+Method-parameters:[Entity entity]
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:update
+Method-name:get
+Method-returnType:Entity
+Method-parameters:[T pk]
+MethodInvocation:get
+Method-name:get
+Method-returnType:Entity
+Method-parameters:[String field, T value]
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:create
+Method-name:get
+Method-returnType:Entity
+Method-parameters:[Entity where]
+MethodInvocation:get
+MethodInvocation:fixEntity
+Method-name:find
+Method-returnType:List<Entity>
+Method-parameters:[String field, T value]
+MethodInvocation:find
+MethodInvocation:set
+MethodInvocation:create
+Method-name:findAll
+Method-returnType:List<Entity>
+Method-parameters:[]
+MethodInvocation:find
+MethodInvocation:create
+Method-name:find
+Method-returnType:List<Entity>
+Method-parameters:[Entity where]
+MethodInvocation:find
+MethodInvocation:fixEntity
+Method-name:findBySql
+Method-returnType:List<Entity>
+Method-parameters:[String sql, Object... params]
+MethodInvocation:toLowerCase
+MethodInvocation:subPre
+MethodInvocation:trim
+MethodInvocation:equals
+FieldAccess:tableName
+MethodInvocation:query
+Method-name:page
+Method-returnType:PageResult<Entity>
+Method-parameters:[Entity where, Page page, String... selectFields]
+MethodInvocation:page
+MethodInvocation:asList
+MethodInvocation:fixEntity
+Method-name:page
+Method-returnType:PageResult<Entity>
+Method-parameters:[Entity where, Page page]
+MethodInvocation:page
+MethodInvocation:fixEntity
+Method-name:count
+Method-returnType:int
+Method-parameters:[Entity where]
+MethodInvocation:count
+MethodInvocation:fixEntity
+Method-name:exist
+Method-returnType:boolean
+Method-parameters:[Entity where]
+MethodInvocation:count
+Method-name:fixEntity
+Method-returnType:Entity
+Method-parameters:[Entity entity]
+MethodInvocation:create
+MethodInvocation:isBlank
+MethodInvocation:getTableName
+MethodInvocation:setTableName

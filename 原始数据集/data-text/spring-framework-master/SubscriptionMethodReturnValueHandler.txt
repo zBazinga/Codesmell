@@ -1,0 +1,50 @@
+Class:SubscriptionMethodReturnValueHandler
+Field:logger
+MethodInvocation:forLogName
+Field:messagingTemplate
+Field:headerInitializer
+Method-name:SubscriptionMethodReturnValueHandler
+Method-returnType:null
+Method-parameters:[MessageSendingOperations<String> template]
+MethodInvocation:notNull
+FieldAccess:messagingTemplate
+Method-name:setHeaderInitializer
+Method-returnType:void
+Method-parameters:[@Nullable MessageHeaderInitializer headerInitializer]
+FieldAccess:headerInitializer
+Method-name:getHeaderInitializer
+Method-returnType:MessageHeaderInitializer
+Method-parameters:[]
+FieldAccess:headerInitializer
+Method-name:supportsReturnType
+Method-returnType:boolean
+Method-parameters:[MethodParameter returnType]
+MethodInvocation:hasMethodAnnotation
+MethodInvocation:hasMethodAnnotation
+MethodInvocation:hasMethodAnnotation
+Method-name:handleReturnValue
+Method-returnType:void
+Method-parameters:[@Nullable Object returnValue, MethodParameter returnType, Message<?> message]
+MethodInvocation:getHeaders
+MethodInvocation:getSessionId
+MethodInvocation:getSubscriptionId
+MethodInvocation:getDestination
+MethodInvocation:getMethod
+MethodInvocation:getMethod
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:createHeaders
+MethodInvocation:convertAndSend
+FieldAccess:messagingTemplate
+Method-name:createHeaders
+Method-returnType:MessageHeaders
+Method-parameters:[@Nullable String sessionId, String subscriptionId, MethodParameter returnType]
+MethodInvocation:create
+MethodInvocation:getHeaderInitializer
+MethodInvocation:initHeaders
+MethodInvocation:getHeaderInitializer
+MethodInvocation:setSessionId
+MethodInvocation:setSubscriptionId
+MethodInvocation:setHeader
+MethodInvocation:setLeaveMutable
+MethodInvocation:getMessageHeaders

@@ -1,0 +1,140 @@
+Class:BlobServiceConfiguration
+Field:containerName
+Field:blobName
+Field:azureBlobClient
+Field:blobType
+Field:operation
+Field:streamWriteSize
+Field:streamReadSize
+Field:blobMetadata
+Field:closeStreamAfterRead
+Field:closeStreamAfterWrite
+Field:fileDir
+Field:blobOffset
+Field:dataLength
+Field:blobPrefix
+Field:publicForRead
+Field:useFlatListing
+Method-name:getOperation
+Method-returnType:BlobServiceOperations
+Method-parameters:[]
+Method-name:setOperation
+Method-returnType:void
+Method-parameters:[BlobServiceOperations operation]
+FieldAccess:operation
+Method-name:getContainerName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setContainerName
+Method-returnType:void
+Method-parameters:[String containerName]
+FieldAccess:containerName
+Method-name:getBlobName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setBlobName
+Method-returnType:void
+Method-parameters:[String blobName]
+FieldAccess:blobName
+Method-name:getBlobType
+Method-returnType:BlobType
+Method-parameters:[]
+Method-name:setBlobType
+Method-returnType:void
+Method-parameters:[BlobType blobType]
+FieldAccess:blobType
+Method-name:getStreamWriteSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:setStreamWriteSize
+Method-returnType:void
+Method-parameters:[int streamWriteSize]
+FieldAccess:streamWriteSize
+Method-name:getStreamReadSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:setStreamReadSize
+Method-returnType:void
+Method-parameters:[int streamReadSize]
+FieldAccess:streamReadSize
+Method-name:getBlobMetadata
+Method-returnType:Map<String,String>
+Method-parameters:[]
+Method-name:setBlobMetadata
+Method-returnType:void
+Method-parameters:[Map<String,String> blobMetadata]
+FieldAccess:blobMetadata
+Method-name:getAzureBlobClient
+Method-returnType:CloudBlob
+Method-parameters:[]
+Method-name:setAzureBlobClient
+Method-returnType:void
+Method-parameters:[CloudBlob azureBlobClient]
+FieldAccess:azureBlobClient
+Method-name:isCloseStreamAfterWrite
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setCloseStreamAfterWrite
+Method-returnType:void
+Method-parameters:[boolean closeStreamAfterWrite]
+FieldAccess:closeStreamAfterWrite
+Method-name:isCloseStreamAfterRead
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setCloseStreamAfterRead
+Method-returnType:void
+Method-parameters:[boolean closeStreamAfterRead]
+FieldAccess:closeStreamAfterRead
+Method-name:getFileDir
+Method-returnType:String
+Method-parameters:[]
+Method-name:setFileDir
+Method-returnType:void
+Method-parameters:[String fileDir]
+FieldAccess:fileDir
+Method-name:getBlobOffset
+Method-returnType:Long
+Method-parameters:[]
+Method-name:setBlobOffset
+Method-returnType:void
+Method-parameters:[Long dataOffset]
+FieldAccess:blobOffset
+Method-name:getDataLength
+Method-returnType:Long
+Method-parameters:[]
+Method-name:setDataLength
+Method-returnType:void
+Method-parameters:[Long dataLength]
+FieldAccess:dataLength
+Method-name:getBlobPrefix
+Method-returnType:String
+Method-parameters:[]
+Method-name:setBlobPrefix
+Method-returnType:void
+Method-parameters:[String blobPrefix]
+FieldAccess:blobPrefix
+Method-name:isPublicForRead
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setPublicForRead
+Method-returnType:void
+Method-parameters:[boolean publicForRead]
+FieldAccess:publicForRead
+Method-name:isUseFlatListing
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setUseFlatListing
+Method-returnType:void
+Method-parameters:[boolean useFlatListing]
+FieldAccess:useFlatListing
+Method-name:copy
+Method-returnType:BlobServiceConfiguration
+Method-parameters:[]
+Method-name:checkCredentials
+Method-returnType:void
+Method-parameters:[BlobServiceComponent blobServiceComponent]
+MethodInvocation:getAzureBlobClient
+MethodInvocation:getAccountCredentials
+MethodInvocation:getCredentials
+MethodInvocation:getServiceClient
+MethodInvocation:isPublicForRead

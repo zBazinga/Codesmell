@@ -1,0 +1,47 @@
+Class:VectorMapJoinInnerBigOnlyGenerateResultOperator
+Field:serialVersionUID
+Field:LOG
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:hashMultiSetResults
+Field:allMatchs
+Field:equalKeySeriesValueCounts
+Field:equalKeySeriesAllMatchIndices
+Field:equalKeySeriesDuplicateCounts
+Field:spills
+Field:spillHashMapResultIndices
+Method-name:VectorMapJoinInnerBigOnlyGenerateResultOperator
+Method-returnType:null
+Method-parameters:[]
+Method-name:VectorMapJoinInnerBigOnlyGenerateResultOperator
+Method-returnType:null
+Method-parameters:[CompilationOpContext ctx]
+Method-name:VectorMapJoinInnerBigOnlyGenerateResultOperator
+Method-returnType:null
+Method-parameters:[CompilationOpContext ctx, OperatorDesc conf, VectorizationContext vContext, VectorDesc vectorDesc]
+Method-name:commonSetup
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:createHashMultiSetResult
+Method-name:finishInnerBigOnly
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch batch, int allMatchCount, int equalKeySeriesCount, int spillCount, VectorMapJoinHashTableResult[] hashTableResults, int hashMapResultCount]
+MethodInvocation:spillHashMapBatch
+MethodInvocation:performValueExpressions
+MethodInvocation:generateHashMultiSetResultSingleValue
+MethodInvocation:generateHashMultiSetResultMultiValue
+Method-name:generateHashMultiSetResultSingleValue
+Method-returnType:int
+Method-parameters:[VectorizedRowBatch batch, int[] allMatchs, int allMatchesIndex, int duplicateCount, int numSel]
+Method-name:generateHashMultiSetResultMultiValue
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch batch, int[] allMatchs, int allMatchesIndex, int duplicateCount, long count]
+MethodInvocation:copyByValue
+MethodInvocation:copyByValue
+MethodInvocation:forwardOverflow
+Method-name:finishInnerBigOnlyRepeated
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch batch, JoinUtil.JoinResult joinResult, VectorMapJoinHashMultiSetResult hashMultiSetResult]
+MethodInvocation:evaluate
+MethodInvocation:generateHashMultiSetResultRepeatedAll
+MethodInvocation:spillBatchRepeated

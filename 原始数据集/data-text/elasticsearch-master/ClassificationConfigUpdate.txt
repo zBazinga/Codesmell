@@ -1,0 +1,186 @@
+Class:ClassificationConfigUpdate
+Field:NAME
+Field:EMPTY_PARAMS
+Field:numTopClasses
+Field:topClassesResultsField
+Field:resultsField
+Field:numTopFeatureImportanceValues
+Field:predictionFieldType
+Method-name:fromMap
+Method-returnType:ClassificationConfigUpdate
+Method-parameters:[Map<String,Object> map]
+MethodInvocation:remove
+MethodInvocation:getPreferredName
+MethodInvocation:remove
+MethodInvocation:getPreferredName
+MethodInvocation:remove
+MethodInvocation:getPreferredName
+MethodInvocation:remove
+MethodInvocation:getPreferredName
+MethodInvocation:remove
+MethodInvocation:getPreferredName
+MethodInvocation:isEmpty
+MethodInvocation:badRequestException
+MethodInvocation:keySet
+MethodInvocation:fromString
+Method-name:fromConfig
+Method-returnType:ClassificationConfigUpdate
+Method-parameters:[ClassificationConfig config]
+MethodInvocation:getNumTopClasses
+MethodInvocation:getResultsField
+MethodInvocation:getTopClassesResultsField
+MethodInvocation:getNumTopFeatureImportanceValues
+MethodInvocation:getPredictionFieldType
+Field:STRICT_PARSER
+MethodInvocation:createParser
+Method-name:createParser
+Method-returnType:ObjectParser<ClassificationConfigUpdate.Builder,Void>
+Method-parameters:[boolean lenient]
+MethodInvocation:getPreferredName
+MethodInvocation:declareInt
+MethodInvocation:declareString
+MethodInvocation:declareString
+MethodInvocation:declareInt
+MethodInvocation:declareString
+Method-name:fromXContentStrict
+Method-returnType:ClassificationConfigUpdate
+Method-parameters:[XContentParser parser]
+MethodInvocation:build
+MethodInvocation:apply
+Method-name:ClassificationConfigUpdate
+Method-returnType:null
+Method-parameters:[Integer numTopClasses, String resultsField, String topClassesResultsField, Integer featureImportance, PredictionFieldType predictionFieldType]
+FieldAccess:numTopClasses
+FieldAccess:topClassesResultsField
+FieldAccess:resultsField
+MethodInvocation:getPreferredName
+FieldAccess:numTopFeatureImportanceValues
+FieldAccess:predictionFieldType
+Method-name:ClassificationConfigUpdate
+Method-returnType:null
+Method-parameters:[StreamInput in]
+FieldAccess:numTopClasses
+MethodInvocation:readOptionalInt
+FieldAccess:topClassesResultsField
+MethodInvocation:readOptionalString
+FieldAccess:resultsField
+MethodInvocation:readOptionalString
+FieldAccess:numTopFeatureImportanceValues
+MethodInvocation:readOptionalVInt
+FieldAccess:predictionFieldType
+MethodInvocation:readOptionalWriteable
+Method-name:getNumTopClasses
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:getTopClassesResultsField
+Method-returnType:String
+Method-parameters:[]
+Method-name:getResultsField
+Method-returnType:String
+Method-parameters:[]
+Method-name:getNumTopFeatureImportanceValues
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:getPredictionFieldType
+Method-returnType:PredictionFieldType
+Method-parameters:[]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeOptionalInt
+MethodInvocation:writeOptionalString
+MethodInvocation:writeOptionalString
+MethodInvocation:writeOptionalVInt
+MethodInvocation:writeOptionalWriteable
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:toString
+MethodInvocation:endObject
+Method-name:getWriteableName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPreferredName
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPreferredName
+Method-name:apply
+Method-returnType:InferenceConfig
+Method-parameters:[InferenceConfig originalConfig]
+MethodInvocation:badRequestException
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:isNoop
+MethodInvocation:setResultsField
+MethodInvocation:setNumTopFeatureImportanceValues
+MethodInvocation:setTopClassesResultsField
+MethodInvocation:setNumTopClasses
+MethodInvocation:setPredictionFieldType
+MethodInvocation:build
+Method-name:toConfig
+Method-returnType:InferenceConfig
+Method-parameters:[]
+MethodInvocation:apply
+Method-name:isSupported
+Method-returnType:boolean
+Method-parameters:[InferenceConfig inferenceConfig]
+Class:Builder
+Field:numTopClasses
+Field:topClassesResultsField
+Field:resultsField
+Field:numTopFeatureImportanceValues
+Field:predictionFieldType
+Method-name:setNumTopClasses
+Method-returnType:Builder
+Method-parameters:[int numTopClasses]
+FieldAccess:numTopClasses
+Method-name:setTopClassesResultsField
+Method-returnType:Builder
+Method-parameters:[String topClassesResultsField]
+FieldAccess:topClassesResultsField
+Method-name:setResultsField
+Method-returnType:Builder
+Method-parameters:[String resultsField]
+FieldAccess:resultsField
+Method-name:setNumTopFeatureImportanceValues
+Method-returnType:Builder
+Method-parameters:[int numTopFeatureImportanceValues]
+FieldAccess:numTopFeatureImportanceValues
+Method-name:setPredictionFieldType
+Method-returnType:Builder
+Method-parameters:[PredictionFieldType predictionFieldtype]
+FieldAccess:predictionFieldType
+Method-name:setPredictionFieldType
+Method-returnType:Builder
+Method-parameters:[String predictionFieldType]
+MethodInvocation:setPredictionFieldType
+MethodInvocation:fromString
+Method-name:build
+Method-returnType:ClassificationConfigUpdate
+Method-parameters:[]

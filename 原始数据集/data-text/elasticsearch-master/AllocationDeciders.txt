@@ -1,0 +1,87 @@
+Class:AllocationDeciders
+Field:logger
+MethodInvocation:getLogger
+Field:allocations
+Method-name:AllocationDeciders
+Method-returnType:null
+Method-parameters:[Collection<AllocationDecider> allocations]
+FieldAccess:allocations
+MethodInvocation:unmodifiableCollection
+Method-name:canRebalance
+Method-returnType:Decision
+Method-parameters:[ShardRouting shardRouting, RoutingAllocation allocation]
+MethodInvocation:canRebalance
+MethodInvocation:debugDecision
+MethodInvocation:add
+MethodInvocation:addDecision
+Method-name:canAllocate
+Method-returnType:Decision
+Method-parameters:[ShardRouting shardRouting, RoutingNode node, RoutingAllocation allocation]
+MethodInvocation:shouldIgnoreShardForNode
+MethodInvocation:shardId
+MethodInvocation:nodeId
+MethodInvocation:canAllocate
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:node
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:debugDecision
+MethodInvocation:add
+MethodInvocation:addDecision
+Method-name:canRemain
+Method-returnType:Decision
+Method-parameters:[ShardRouting shardRouting, RoutingNode node, RoutingAllocation allocation]
+MethodInvocation:shouldIgnoreShardForNode
+MethodInvocation:shardId
+MethodInvocation:nodeId
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:nodeId
+MethodInvocation:canRemain
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:nodeId
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:debugDecision
+MethodInvocation:add
+MethodInvocation:addDecision
+Method-name:canAllocate
+Method-returnType:Decision
+Method-parameters:[IndexMetadata indexMetadata, RoutingNode node, RoutingAllocation allocation]
+MethodInvocation:canAllocate
+MethodInvocation:debugDecision
+MethodInvocation:add
+MethodInvocation:addDecision
+Method-name:shouldAutoExpandToNode
+Method-returnType:Decision
+Method-parameters:[IndexMetadata indexMetadata, DiscoveryNode node, RoutingAllocation allocation]
+MethodInvocation:shouldAutoExpandToNode
+MethodInvocation:debugDecision
+MethodInvocation:add
+MethodInvocation:addDecision
+Method-name:canAllocate
+Method-returnType:Decision
+Method-parameters:[ShardRouting shardRouting, RoutingAllocation allocation]
+MethodInvocation:canAllocate
+MethodInvocation:debugDecision
+MethodInvocation:add
+MethodInvocation:addDecision
+Method-name:canAllocate
+Method-returnType:Decision
+Method-parameters:[RoutingNode node, RoutingAllocation allocation]
+MethodInvocation:canAllocate
+MethodInvocation:debugDecision
+MethodInvocation:add
+MethodInvocation:addDecision
+Method-name:canRebalance
+Method-returnType:Decision
+Method-parameters:[RoutingAllocation allocation]
+MethodInvocation:canRebalance
+MethodInvocation:debugDecision
+MethodInvocation:add
+MethodInvocation:addDecision
+Method-name:canForceAllocatePrimary
+Method-returnType:Decision
+Method-parameters:[ShardRouting shardRouting, RoutingNode node, RoutingAllocation allocation]

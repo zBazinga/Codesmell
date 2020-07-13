@@ -1,0 +1,71 @@
+Class:AbstractReportNode
+Field:childNodes
+Field:parentNode
+Field:numberOfViolations
+Method-name:equalsNode
+Method-returnType:boolean
+Method-parameters:[AbstractReportNode arg0]
+Method-name:getFirstChild
+Method-returnType:AbstractReportNode
+Method-parameters:[]
+MethodInvocation:isLeaf
+MethodInvocation:get
+FieldAccess:childNodes
+Method-name:getNextSibling
+Method-returnType:AbstractReportNode
+Method-parameters:[]
+MethodInvocation:getChildIndex
+MethodInvocation:size
+MethodInvocation:get
+Method-name:getChildIndex
+Method-returnType:int
+Method-parameters:[AbstractReportNode child]
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:get
+Method-name:addFirst
+Method-returnType:void
+Method-parameters:[AbstractReportNode child]
+MethodInvocation:add
+Method-name:add
+Method-returnType:void
+Method-parameters:[AbstractReportNode child]
+MethodInvocation:add
+Method-name:addNumberOfViolation
+Method-returnType:void
+Method-parameters:[int number]
+Method-name:getNumberOfViolations
+Method-returnType:int
+Method-parameters:[]
+Method-name:childrenAccept
+Method-returnType:void
+Method-parameters:[ReportVisitor visitor]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:accept
+Method-name:accept
+Method-returnType:void
+Method-parameters:[ReportVisitor visitor]
+MethodInvocation:visit
+Method-name:getChildAt
+Method-returnType:AbstractReportNode
+Method-parameters:[int arg0]
+MethodInvocation:size
+MethodInvocation:get
+Method-name:getChildCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getParent
+Method-returnType:AbstractReportNode
+Method-parameters:[]
+Method-name:isLeaf
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:equalsNodeInLevel
+Method-returnType:boolean
+Method-parameters:[AbstractReportNode node, ReportTree ruleViolations]
+MethodInvocation:getChildCount
+MethodInvocation:equalsNode
+MethodInvocation:getChildAt

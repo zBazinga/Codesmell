@@ -1,0 +1,113 @@
+Class:RexShuttle
+Method-name:visitOver
+Method-returnType:RexNode
+Method-parameters:[RexOver over]
+MethodInvocation:visitList
+MethodInvocation:visitWindow
+MethodInvocation:getWindow
+MethodInvocation:getWindow
+MethodInvocation:getType
+MethodInvocation:getAggOperator
+MethodInvocation:isDistinct
+MethodInvocation:ignoreNulls
+Method-name:visitWindow
+Method-returnType:RexWindow
+Method-parameters:[RexWindow window]
+MethodInvocation:visitFieldCollations
+MethodInvocation:visitList
+MethodInvocation:accept
+MethodInvocation:getLowerBound
+MethodInvocation:accept
+MethodInvocation:getUpperBound
+MethodInvocation:getLowerBound
+MethodInvocation:getUpperBound
+MethodInvocation:isRows
+MethodInvocation:isUnbounded
+MethodInvocation:isPreceding
+MethodInvocation:isUnbounded
+MethodInvocation:isFollowing
+Method-name:visitSubQuery
+Method-returnType:RexNode
+Method-parameters:[RexSubQuery subQuery]
+MethodInvocation:visitList
+MethodInvocation:clone
+MethodInvocation:getType
+Method-name:visitTableInputRef
+Method-returnType:RexNode
+Method-parameters:[RexTableInputRef ref]
+Method-name:visitPatternFieldRef
+Method-returnType:RexNode
+Method-parameters:[RexPatternFieldRef fieldRef]
+Method-name:visitCall
+Method-returnType:RexNode
+Method-parameters:[final RexCall call]
+MethodInvocation:visitList
+MethodInvocation:clone
+MethodInvocation:getType
+Method-name:visitArray
+Method-returnType:RexNode[]
+Method-parameters:[RexNode[] exprs, boolean[] update]
+MethodInvocation:accept
+Method-name:visitList
+Method-returnType:List<RexNode>
+Method-parameters:[List<? extends RexNode> exprs, boolean[] update]
+MethodInvocation:builder
+MethodInvocation:accept
+MethodInvocation:add
+MethodInvocation:build
+Method-name:visitList
+Method-returnType:void
+Method-parameters:[List<? extends RexNode> exprs, List<RexNode> outExprs]
+MethodInvocation:add
+MethodInvocation:accept
+Method-name:visitFieldCollations
+Method-returnType:List<RexFieldCollation>
+Method-parameters:[List<RexFieldCollation> collations, boolean[] update]
+MethodInvocation:builder
+MethodInvocation:accept
+MethodInvocation:add
+MethodInvocation:build
+Method-name:visitCorrelVariable
+Method-returnType:RexNode
+Method-parameters:[RexCorrelVariable variable]
+Method-name:visitFieldAccess
+Method-returnType:RexNode
+Method-parameters:[RexFieldAccess fieldAccess]
+MethodInvocation:getReferenceExpr
+MethodInvocation:accept
+MethodInvocation:getField
+Method-name:visitInputRef
+Method-returnType:RexNode
+Method-parameters:[RexInputRef inputRef]
+Method-name:visitLocalRef
+Method-returnType:RexNode
+Method-parameters:[RexLocalRef localRef]
+Method-name:visitLiteral
+Method-returnType:RexNode
+Method-parameters:[RexLiteral literal]
+Method-name:visitDynamicParam
+Method-returnType:RexNode
+Method-parameters:[RexDynamicParam dynamicParam]
+Method-name:visitRangeRef
+Method-returnType:RexNode
+Method-parameters:[RexRangeRef rangeRef]
+Method-name:mutate
+Method-returnType:boolean
+Method-parameters:[List<T> exprList]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:apply
+MethodInvocation:set
+Method-name:apply
+Method-returnType:List<T>
+Method-parameters:[List<T> exprList]
+MethodInvocation:mutate
+Method-name:apply
+Method-returnType:Iterable<RexNode>
+Method-parameters:[Iterable<? extends RexNode> iterable]
+MethodInvocation:transform
+MethodInvocation:accept
+Method-name:apply
+Method-returnType:RexNode
+Method-parameters:[RexNode expr]
+MethodInvocation:accept

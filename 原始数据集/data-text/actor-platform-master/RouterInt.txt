@@ -1,0 +1,91 @@
+Class:RouterInt
+Field:context
+Method-name:RouterInt
+Method-returnType:null
+Method-parameters:[final ModuleContext context]
+FieldAccess:context
+MethodInvocation:setDest
+MethodInvocation:actorOf
+MethodInvocation:system
+MethodInvocation:subscribe
+MethodInvocation:getEvents
+MethodInvocation:subscribe
+MethodInvocation:getEvents
+MethodInvocation:subscribe
+MethodInvocation:getEvents
+Method-name:onDifferenceStart
+Method-returnType:Promise<Void>
+Method-parameters:[]
+MethodInvocation:ask
+Method-name:onUpdate
+Method-returnType:Promise<Void>
+Method-parameters:[Update update]
+MethodInvocation:ask
+Method-name:onDifferenceEnd
+Method-returnType:Promise<Void>
+Method-parameters:[]
+MethodInvocation:ask
+Method-name:onNewMessages
+Method-returnType:Promise<Void>
+Method-parameters:[Peer peer, List<Message> messages]
+MethodInvocation:ask
+Method-name:onOutgoingMessage
+Method-returnType:Promise<Void>
+Method-parameters:[Peer peer, Message message]
+MethodInvocation:ask
+Method-name:onOutgoingError
+Method-returnType:Promise<Void>
+Method-parameters:[Peer peer, long rid]
+MethodInvocation:ask
+Method-name:onContentChanged
+Method-returnType:Promise<Void>
+Method-parameters:[Peer peer, long rid, AbsContent content]
+MethodInvocation:ask
+Method-name:onMessagesDeleted
+Method-returnType:Promise<Void>
+Method-parameters:[Peer peer, List<Long> rids]
+MethodInvocation:ask
+Method-name:onDialogsHistoryLoaded
+Method-returnType:Promise<Void>
+Method-parameters:[List<DialogHistory> histories]
+MethodInvocation:ask
+Method-name:onChatHistoryLoaded
+Method-returnType:Promise<Void>
+Method-parameters:[Peer peer, List<Message> history, Long maxReceivedDate, Long maxReadDate, boolean isEnded]
+MethodInvocation:ask
+Method-name:onUserChanged
+Method-returnType:Promise<Void>
+Method-parameters:[User user]
+MethodInvocation:add
+MethodInvocation:onUsersChanged
+Method-name:onGroupChanged
+Method-returnType:Promise<Void>
+Method-parameters:[Group group]
+MethodInvocation:add
+MethodInvocation:onGroupsChanged
+Method-name:onUsersChanged
+Method-returnType:Promise<Void>
+Method-parameters:[List<User> users]
+MethodInvocation:onPeersChanged
+Method-name:onGroupsChanged
+Method-returnType:Promise<Void>
+Method-parameters:[List<Group> groups]
+MethodInvocation:onPeersChanged
+Method-name:onPeersChanged
+Method-returnType:Promise<Void>
+Method-parameters:[List<User> users, List<Group> groups]
+MethodInvocation:ask
+Method-name:onChatReset
+Method-returnType:Promise<Void>
+Method-parameters:[Peer peer]
+MethodInvocation:ask
+Method-name:onBusEvent
+Method-returnType:void
+Method-parameters:[Event event]
+MethodInvocation:send
+MethodInvocation:getPeer
+MethodInvocation:send
+MethodInvocation:getPeer
+MethodInvocation:isVisible
+MethodInvocation:send
+MethodInvocation:send

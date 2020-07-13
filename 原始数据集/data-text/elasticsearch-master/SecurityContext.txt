@@ -1,0 +1,66 @@
+Class:SecurityContext
+Field:logger
+MethodInvocation:getLogger
+Field:threadContext
+Field:authenticationSerializer
+Field:nodeName
+Method-name:SecurityContext
+Method-returnType:null
+Method-parameters:[Settings settings, ThreadContext threadContext]
+FieldAccess:threadContext
+FieldAccess:authenticationSerializer
+FieldAccess:nodeName
+MethodInvocation:get
+Method-name:requireUser
+Method-returnType:User
+Method-parameters:[]
+MethodInvocation:getUser
+Method-name:getUser
+Method-returnType:User
+Method-parameters:[]
+MethodInvocation:getAuthentication
+MethodInvocation:getUser
+Method-name:getAuthentication
+Method-returnType:Authentication
+Method-parameters:[]
+MethodInvocation:readFromContext
+MethodInvocation:error
+Method-name:getSecondaryAuthentication
+Method-returnType:SecondaryAuthentication
+Method-parameters:[]
+MethodInvocation:readFromContext
+MethodInvocation:error
+Method-name:getThreadContext
+Method-returnType:ThreadContext
+Method-parameters:[]
+Method-name:setUser
+Method-returnType:void
+Method-parameters:[User user, Version version]
+MethodInvocation:requireNonNull
+MethodInvocation:isRunAs
+MethodInvocation:setAuthentication
+MethodInvocation:emptyMap
+Method-name:setAuthentication
+Method-returnType:void
+Method-parameters:[Authentication authentication]
+MethodInvocation:writeToContext
+Method-name:executeWithAuthentication
+Method-returnType:T
+Method-parameters:[Authentication authentication, Function<StoredContext,T> consumer]
+MethodInvocation:newStoredContext
+MethodInvocation:stashContext
+MethodInvocation:setAuthentication
+MethodInvocation:apply
+Method-name:executeAfterRewritingAuthentication
+Method-returnType:void
+Method-parameters:[Consumer<StoredContext> consumer, Version version]
+MethodInvocation:newStoredContext
+MethodInvocation:getAuthentication
+MethodInvocation:stashContext
+MethodInvocation:setAuthentication
+MethodInvocation:getUser
+MethodInvocation:getAuthenticatedBy
+MethodInvocation:getLookedUpBy
+MethodInvocation:getAuthenticationType
+MethodInvocation:getMetadata
+MethodInvocation:accept

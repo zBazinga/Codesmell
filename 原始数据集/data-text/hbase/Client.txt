@@ -1,0 +1,266 @@
+Class:Client
+Field:EMPTY_HEADER_ARRAY
+Field:LOG
+MethodInvocation:getLogger
+Field:httpClient
+Field:cluster
+Field:sslEnabled
+Field:resp
+Field:httpGet
+Field:extraHeaders
+Field:AUTH_COOKIE
+Field:AUTH_COOKIE_EQ
+Field:COOKIE
+Method-name:Client
+Method-returnType:null
+Method-parameters:[]
+Method-name:initialize
+Method-returnType:void
+Method-parameters:[Cluster cluster, boolean sslEnabled]
+FieldAccess:cluster
+FieldAccess:sslEnabled
+MethodInvocation:getProperty
+MethodInvocation:debug
+FieldAccess:httpClient
+MethodInvocation:setIntParameter
+MethodInvocation:getParams
+FieldAccess:httpClient
+Method-name:Client
+Method-returnType:null
+Method-parameters:[Cluster cluster]
+MethodInvocation:initialize
+Method-name:Client
+Method-returnType:null
+Method-parameters:[Cluster cluster, boolean sslEnabled]
+MethodInvocation:initialize
+Method-name:shutdown
+Method-returnType:void
+Method-parameters:[]
+Method-name:getHttpClient
+Method-returnType:HttpClient
+Method-parameters:[]
+Method-name:addExtraHeader
+Method-returnType:void
+Method-parameters:[final String name, final String value]
+MethodInvocation:put
+Method-name:getExtraHeader
+Method-returnType:String
+Method-parameters:[final String name]
+MethodInvocation:get
+Method-name:getExtraHeaders
+Method-returnType:Map<String,String>
+Method-parameters:[]
+MethodInvocation:unmodifiableMap
+Method-name:removeExtraHeader
+Method-returnType:void
+Method-parameters:[final String name]
+MethodInvocation:remove
+Method-name:executePathOnly
+Method-returnType:HttpResponse
+Method-parameters:[Cluster cluster, HttpUriRequest method, Header[] headers, String path]
+MethodInvocation:size
+MethodInvocation:round
+MethodInvocation:size
+MethodInvocation:random
+MethodInvocation:get
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:setEntity
+MethodInvocation:getEntity
+MethodInvocation:setHeaders
+MethodInvocation:getAllHeaders
+MethodInvocation:setEntity
+MethodInvocation:getEntity
+MethodInvocation:setHeaders
+MethodInvocation:getAllHeaders
+MethodInvocation:executeURI
+MethodInvocation:toString
+MethodInvocation:size
+Method-name:executeURI
+Method-returnType:HttpResponse
+Method-parameters:[HttpUriRequest method, Header[] headers, String uri]
+MethodInvocation:entrySet
+MethodInvocation:addHeader
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:addHeader
+MethodInvocation:currentTimeMillis
+MethodInvocation:consumeQuietly
+MethodInvocation:getEntity
+MethodInvocation:execute
+MethodInvocation:getStatusCode
+MethodInvocation:getStatusLine
+MethodInvocation:debug
+MethodInvocation:negotiate
+MethodInvocation:execute
+MethodInvocation:currentTimeMillis
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:getMethod
+MethodInvocation:getStatusCode
+MethodInvocation:getStatusLine
+MethodInvocation:getReasonPhrase
+MethodInvocation:getStatusLine
+Method-name:negotiate
+Method-returnType:void
+Method-parameters:[HttpUriRequest method, String uri]
+MethodInvocation:authenticate
+MethodInvocation:injectToken
+MethodInvocation:error
+Method-name:injectToken
+Method-returnType:void
+Method-parameters:[HttpUriRequest method, AuthenticatedURL.Token token]
+MethodInvocation:toString
+MethodInvocation:startsWith
+MethodInvocation:addHeader
+Method-name:getCluster
+Method-returnType:Cluster
+Method-parameters:[]
+Method-name:setCluster
+Method-returnType:void
+Method-parameters:[Cluster cluster]
+FieldAccess:cluster
+Method-name:head
+Method-returnType:Response
+Method-parameters:[String path]
+MethodInvocation:head
+Method-name:head
+Method-returnType:Response
+Method-parameters:[Cluster cluster, String path, Header[] headers]
+MethodInvocation:execute
+MethodInvocation:getStatusCode
+MethodInvocation:getStatusLine
+MethodInvocation:getAllHeaders
+MethodInvocation:releaseConnection
+Method-name:get
+Method-returnType:Response
+Method-parameters:[String path]
+MethodInvocation:get
+Method-name:get
+Method-returnType:Response
+Method-parameters:[Cluster cluster, String path]
+MethodInvocation:get
+Method-name:get
+Method-returnType:Response
+Method-parameters:[String path, String accept]
+MethodInvocation:get
+Method-name:get
+Method-returnType:Response
+Method-parameters:[Cluster cluster, String path, String accept]
+MethodInvocation:get
+Method-name:get
+Method-returnType:Response
+Method-parameters:[String path, Header[] headers]
+MethodInvocation:get
+Method-name:getResponseBody
+Method-returnType:byte[]
+Method-parameters:[HttpResponse resp]
+MethodInvocation:getEntity
+MethodInvocation:getContent
+MethodInvocation:getEntity
+MethodInvocation:getContentLength
+MethodInvocation:getEntity
+MethodInvocation:read
+MethodInvocation:write
+MethodInvocation:close
+MethodInvocation:toByteArray
+Method-name:get
+Method-returnType:Response
+Method-parameters:[Cluster c, String path, Header[] headers]
+MethodInvocation:releaseConnection
+MethodInvocation:execute
+MethodInvocation:getStatusCode
+MethodInvocation:getStatusLine
+MethodInvocation:getAllHeaders
+MethodInvocation:getEntity
+MethodInvocation:getContent
+MethodInvocation:getEntity
+Method-name:put
+Method-returnType:Response
+Method-parameters:[String path, String contentType, byte[] content]
+MethodInvocation:put
+Method-name:put
+Method-returnType:Response
+Method-parameters:[String path, String contentType, byte[] content, Header extraHdr]
+MethodInvocation:put
+Method-name:put
+Method-returnType:Response
+Method-parameters:[Cluster cluster, String path, String contentType, byte[] content]
+MethodInvocation:put
+Method-name:put
+Method-returnType:Response
+Method-parameters:[Cluster cluster, String path, String contentType, byte[] content, Header extraHdr]
+MethodInvocation:put
+Method-name:put
+Method-returnType:Response
+Method-parameters:[String path, Header[] headers, byte[] content]
+MethodInvocation:put
+Method-name:put
+Method-returnType:Response
+Method-parameters:[Cluster cluster, String path, Header[] headers, byte[] content]
+MethodInvocation:setEntity
+MethodInvocation:execute
+MethodInvocation:getAllHeaders
+MethodInvocation:getResponseBody
+MethodInvocation:getStatusCode
+MethodInvocation:getStatusLine
+MethodInvocation:releaseConnection
+Method-name:post
+Method-returnType:Response
+Method-parameters:[String path, String contentType, byte[] content]
+MethodInvocation:post
+Method-name:post
+Method-returnType:Response
+Method-parameters:[String path, String contentType, byte[] content, Header extraHdr]
+MethodInvocation:post
+Method-name:post
+Method-returnType:Response
+Method-parameters:[Cluster cluster, String path, String contentType, byte[] content]
+MethodInvocation:post
+Method-name:post
+Method-returnType:Response
+Method-parameters:[Cluster cluster, String path, String contentType, byte[] content, Header extraHdr]
+MethodInvocation:post
+Method-name:post
+Method-returnType:Response
+Method-parameters:[String path, Header[] headers, byte[] content]
+MethodInvocation:post
+Method-name:post
+Method-returnType:Response
+Method-parameters:[Cluster cluster, String path, Header[] headers, byte[] content]
+MethodInvocation:setEntity
+MethodInvocation:execute
+MethodInvocation:getAllHeaders
+MethodInvocation:getResponseBody
+MethodInvocation:getStatusCode
+MethodInvocation:getStatusLine
+MethodInvocation:releaseConnection
+Method-name:delete
+Method-returnType:Response
+Method-parameters:[String path]
+MethodInvocation:delete
+Method-name:delete
+Method-returnType:Response
+Method-parameters:[String path, Header extraHdr]
+MethodInvocation:delete
+Method-name:delete
+Method-returnType:Response
+Method-parameters:[Cluster cluster, String path]
+MethodInvocation:execute
+MethodInvocation:getAllHeaders
+MethodInvocation:getResponseBody
+MethodInvocation:getStatusCode
+MethodInvocation:getStatusLine
+MethodInvocation:releaseConnection
+Method-name:delete
+Method-returnType:Response
+Method-parameters:[Cluster cluster, String path, Header extraHdr]
+MethodInvocation:execute
+MethodInvocation:getAllHeaders
+MethodInvocation:getResponseBody
+MethodInvocation:getStatusCode
+MethodInvocation:getStatusLine
+MethodInvocation:releaseConnection

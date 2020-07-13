@@ -1,0 +1,169 @@
+Class:ProgramResult
+Field:energyUsed
+Field:futureRefund
+Field:hReturn
+Field:contractAddress
+Field:exception
+Field:revert
+Field:deleteAccounts
+Field:touchedAccounts
+Field:internalTransactions
+Field:logInfoList
+Field:ret
+Field:triggerList
+Field:runtimeError
+Field:resultCode
+Field:callCreateList
+Method-name:createEmpty
+Method-returnType:ProgramResult
+Method-parameters:[]
+MethodInvocation:setHReturn
+Method-name:spendEnergy
+Method-returnType:void
+Method-parameters:[long energy]
+Method-name:setRevert
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:revert
+Method-name:isRevert
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:refundEnergy
+Method-returnType:void
+Method-parameters:[long energy]
+Method-name:getContractAddress
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:copyOf
+Method-name:setContractAddress
+Method-returnType:void
+Method-parameters:[byte[] contractAddress]
+FieldAccess:contractAddress
+MethodInvocation:copyOf
+Method-name:getHReturn
+Method-returnType:byte[]
+Method-parameters:[]
+Method-name:setHReturn
+Method-returnType:void
+Method-parameters:[byte[] hReturn]
+FieldAccess:hReturn
+Method-name:getTriggerList
+Method-returnType:List<ContractTrigger>
+Method-parameters:[]
+Method-name:getRet
+Method-returnType:TransactionResultCapsule
+Method-parameters:[]
+Method-name:setRet
+Method-returnType:void
+Method-parameters:[TransactionResultCapsule ret]
+FieldAccess:ret
+Method-name:getException
+Method-returnType:RuntimeException
+Method-parameters:[]
+Method-name:setException
+Method-returnType:void
+Method-parameters:[RuntimeException exception]
+FieldAccess:exception
+Method-name:getEnergyUsed
+Method-returnType:long
+Method-parameters:[]
+Method-name:getDeleteAccounts
+Method-returnType:Set<DataWord>
+Method-parameters:[]
+Method-name:addDeleteAccount
+Method-returnType:void
+Method-parameters:[DataWord address]
+MethodInvocation:add
+MethodInvocation:getDeleteAccounts
+Method-name:addDeleteAccounts
+Method-returnType:void
+Method-parameters:[Set<DataWord> accounts]
+MethodInvocation:isEmpty
+MethodInvocation:addAll
+MethodInvocation:getDeleteAccounts
+Method-name:addTouchAccount
+Method-returnType:void
+Method-parameters:[byte[] addr]
+MethodInvocation:add
+Method-name:getTouchedAccounts
+Method-returnType:Set<byte[]>
+Method-parameters:[]
+Method-name:addTouchAccounts
+Method-returnType:void
+Method-parameters:[Set<byte[]> accounts]
+MethodInvocation:isEmpty
+MethodInvocation:addAll
+MethodInvocation:getTouchedAccounts
+Method-name:getLogInfoList
+Method-returnType:List<LogInfo>
+Method-parameters:[]
+Method-name:addLogInfo
+Method-returnType:void
+Method-parameters:[LogInfo logInfo]
+MethodInvocation:add
+MethodInvocation:getLogInfoList
+Method-name:addLogInfos
+Method-returnType:void
+Method-parameters:[List<LogInfo> logInfos]
+MethodInvocation:isEmpty
+MethodInvocation:addAll
+MethodInvocation:getLogInfoList
+Method-name:getCallCreateList
+Method-returnType:List<CallCreate>
+Method-parameters:[]
+Method-name:addCallCreate
+Method-returnType:void
+Method-parameters:[byte[] data, byte[] destination, byte[] energyLimit, byte[] value]
+MethodInvocation:add
+MethodInvocation:getCallCreateList
+Method-name:getInternalTransactions
+Method-returnType:List<InternalTransaction>
+Method-parameters:[]
+Method-name:addInternalTransaction
+Method-returnType:InternalTransaction
+Method-parameters:[byte[] parentHash, int deep, byte[] senderAddress, byte[] transferAddress, long value, byte[] data, String note, long nonce, Map<String,Long> token]
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:getInternalTransactions
+Method-name:addInternalTransactions
+Method-returnType:void
+Method-parameters:[List<InternalTransaction> internalTransactions]
+MethodInvocation:addAll
+MethodInvocation:getInternalTransactions
+Method-name:rejectInternalTransactions
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getInternalTransactions
+MethodInvocation:reject
+Method-name:addFutureRefund
+Method-returnType:void
+Method-parameters:[long energyValue]
+Method-name:getFutureRefund
+Method-returnType:long
+Method-parameters:[]
+Method-name:resetFutureRefund
+Method-returnType:void
+Method-parameters:[]
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:getDeleteAccounts
+MethodInvocation:clear
+MethodInvocation:getLogInfoList
+MethodInvocation:resetFutureRefund
+Method-name:merge
+Method-returnType:void
+Method-parameters:[ProgramResult another]
+MethodInvocation:addInternalTransactions
+MethodInvocation:getInternalTransactions
+MethodInvocation:getException
+MethodInvocation:isRevert
+MethodInvocation:addDeleteAccounts
+MethodInvocation:getDeleteAccounts
+MethodInvocation:addLogInfos
+MethodInvocation:getLogInfoList
+MethodInvocation:addFutureRefund
+MethodInvocation:getFutureRefund
+MethodInvocation:addTouchAccounts
+MethodInvocation:getTouchedAccounts

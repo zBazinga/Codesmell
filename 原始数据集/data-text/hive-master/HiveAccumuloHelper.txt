@@ -1,0 +1,113 @@
+Class:HiveAccumuloHelper
+Field:log
+MethodInvocation:getLogger
+Field:ACCUMULO_SERVICE
+Method-name:addTokenFromUserToJobConf
+Method-returnType:void
+Method-parameters:[UserGroupInformation user, JobConf jobConf]
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+MethodInvocation:getAccumuloToken
+MethodInvocation:error
+MethodInvocation:getTokens
+MethodInvocation:mergeTokenIntoJobConf
+Method-name:getAccumuloToken
+Method-returnType:Token<?>
+Method-parameters:[UserGroupInformation user]
+MethodInvocation:checkNotNull
+MethodInvocation:getTokens
+MethodInvocation:equals
+MethodInvocation:getKind
+Method-name:mergeTokenIntoJobConf
+Method-returnType:void
+Method-parameters:[JobConf jobConf, Token<?> accumuloToken]
+MethodInvocation:addToken
+MethodInvocation:getCredentials
+MethodInvocation:getService
+MethodInvocation:mergeCredentials
+MethodInvocation:getHadoopShims
+Method-name:getDelegationToken
+Method-returnType:AuthenticationToken
+Method-parameters:[Connector conn]
+MethodInvocation:getDelegationToken
+MethodInvocation:securityOperations
+Method-name:getHadoopToken
+Method-returnType:Token<? extends TokenIdentifier>
+Method-parameters:[AuthenticationToken token]
+MethodInvocation:getClass
+MethodInvocation:getIdentifier
+MethodInvocation:getBytes
+MethodInvocation:getPassword
+MethodInvocation:getKind
+MethodInvocation:getServiceName
+Method-name:getClientConfiguration
+Method-returnType:ClientConfiguration
+Method-parameters:[String zookeepers, String instanceName, boolean useSasl]
+MethodInvocation:withSasl
+MethodInvocation:withZkHosts
+MethodInvocation:withInstance
+MethodInvocation:loadDefault
+Method-name:updateInputFormatConfWithAccumuloToken
+Method-returnType:void
+Method-parameters:[JobConf jobConf, UserGroupInformation currentUser, AccumuloConnectionParameters cnxnParams]
+MethodInvocation:updateConfWithAccumuloToken
+Method-name:updateOutputFormatConfWithAccumuloToken
+Method-returnType:void
+Method-parameters:[JobConf jobConf, UserGroupInformation currentUser, AccumuloConnectionParameters cnxnParams]
+MethodInvocation:updateConfWithAccumuloToken
+Method-name:hasKerberosCredentials
+Method-returnType:boolean
+Method-parameters:[UserGroupInformation ugi]
+MethodInvocation:getAuthenticationMethod
+Method-name:setInputFormatConnectorInfo
+Method-returnType:void
+Method-parameters:[JobConf conf, String username, AuthenticationToken token]
+MethodInvocation:setConnectorInfo
+MethodInvocation:debug
+Method-name:setOutputFormatConnectorInfo
+Method-returnType:void
+Method-parameters:[JobConf conf, String username, AuthenticationToken token]
+MethodInvocation:setConnectorInfo
+MethodInvocation:debug
+Method-name:setInputFormatZooKeeperInstance
+Method-returnType:void
+Method-parameters:[JobConf conf, String instanceName, String zookeepers, boolean isSasl]
+MethodInvocation:getClientConfiguration
+MethodInvocation:setZooKeeperInstance
+MethodInvocation:debug
+Method-name:setOutputFormatZooKeeperInstance
+Method-returnType:void
+Method-parameters:[JobConf conf, String instanceName, String zookeepers, boolean isSasl]
+MethodInvocation:getClientConfiguration
+MethodInvocation:setZooKeeperInstance
+MethodInvocation:debug
+Method-name:setInputFormatMockInstance
+Method-returnType:void
+Method-parameters:[JobConf conf, String instanceName]
+MethodInvocation:setMockInstance
+MethodInvocation:debug
+Method-name:setOutputFormatMockInstance
+Method-returnType:void
+Method-parameters:[JobConf conf, String instanceName]
+MethodInvocation:setMockInstance
+MethodInvocation:debug
+Method-name:loadDependentJars
+Method-returnType:void
+Method-parameters:[Configuration conf]
+MethodInvocation:asList
+MethodInvocation:add
+MethodInvocation:forName
+MethodInvocation:warn
+MethodInvocation:addDependencyJars
+MethodInvocation:error
+Method-name:setConnectorInfoForInputAndOutput
+Method-returnType:Token<? extends TokenIdentifier>
+Method-parameters:[AccumuloConnectionParameters params, Connector conn, Configuration conf]
+MethodInvocation:getDelegationToken
+MethodInvocation:setConnectorInfo
+MethodInvocation:getAccumuloUserName
+MethodInvocation:debug
+MethodInvocation:setConnectorInfo
+MethodInvocation:getAccumuloUserName
+MethodInvocation:debug
+MethodInvocation:getHadoopToken

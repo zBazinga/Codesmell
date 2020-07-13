@@ -1,0 +1,96 @@
+Class:RelMdDistribution
+Field:SOURCE
+MethodInvocation:reflectiveSource
+Method-name:RelMdDistribution
+Method-returnType:null
+Method-parameters:[]
+Method-name:getDef
+Method-returnType:MetadataDef<BuiltInMetadata.Distribution>
+Method-parameters:[]
+Method-name:distribution
+Method-returnType:RelDistribution
+Method-parameters:[RelNode rel, RelMetadataQuery mq]
+Method-name:distribution
+Method-returnType:RelDistribution
+Method-parameters:[SingleRel rel, RelMetadataQuery mq]
+MethodInvocation:distribution
+MethodInvocation:getInput
+Method-name:distribution
+Method-returnType:RelDistribution
+Method-parameters:[BiRel rel, RelMetadataQuery mq]
+MethodInvocation:distribution
+MethodInvocation:getLeft
+Method-name:distribution
+Method-returnType:RelDistribution
+Method-parameters:[SetOp rel, RelMetadataQuery mq]
+MethodInvocation:distribution
+MethodInvocation:get
+MethodInvocation:getInputs
+Method-name:distribution
+Method-returnType:RelDistribution
+Method-parameters:[TableModify rel, RelMetadataQuery mq]
+MethodInvocation:distribution
+MethodInvocation:getInput
+Method-name:distribution
+Method-returnType:RelDistribution
+Method-parameters:[TableScan scan, RelMetadataQuery mq]
+MethodInvocation:table
+MethodInvocation:getTable
+Method-name:distribution
+Method-returnType:RelDistribution
+Method-parameters:[Project project, RelMetadataQuery mq]
+MethodInvocation:project
+MethodInvocation:getInput
+MethodInvocation:getProjects
+Method-name:distribution
+Method-returnType:RelDistribution
+Method-parameters:[Values values, RelMetadataQuery mq]
+MethodInvocation:values
+MethodInvocation:getRowType
+MethodInvocation:getTuples
+Method-name:distribution
+Method-returnType:RelDistribution
+Method-parameters:[Exchange exchange, RelMetadataQuery mq]
+MethodInvocation:exchange
+Method-name:distribution
+Method-returnType:RelDistribution
+Method-parameters:[HepRelVertex rel, RelMetadataQuery mq]
+MethodInvocation:distribution
+MethodInvocation:getCurrentRel
+Method-name:table
+Method-returnType:RelDistribution
+Method-parameters:[RelOptTable table]
+MethodInvocation:getDistribution
+Method-name:snapshot
+Method-returnType:RelDistribution
+Method-parameters:[RelMetadataQuery mq, RelNode input]
+MethodInvocation:distribution
+Method-name:sort
+Method-returnType:RelDistribution
+Method-parameters:[RelMetadataQuery mq, RelNode input]
+MethodInvocation:distribution
+Method-name:filter
+Method-returnType:RelDistribution
+Method-parameters:[RelMetadataQuery mq, RelNode input]
+MethodInvocation:distribution
+Method-name:limit
+Method-returnType:RelDistribution
+Method-parameters:[RelMetadataQuery mq, RelNode input]
+MethodInvocation:distribution
+Method-name:calc
+Method-returnType:RelDistribution
+Method-parameters:[RelMetadataQuery mq, RelNode input, RexProgram program]
+Method-name:project
+Method-returnType:RelDistribution
+Method-parameters:[RelMetadataQuery mq, RelNode input, List<? extends RexNode> projects]
+MethodInvocation:distribution
+MethodInvocation:getPartialMapping
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:apply
+Method-name:values
+Method-returnType:RelDistribution
+Method-parameters:[RelDataType rowType, ImmutableList<ImmutableList<RexLiteral>> tuples]
+Method-name:exchange
+Method-returnType:RelDistribution
+Method-parameters:[RelDistribution distribution]

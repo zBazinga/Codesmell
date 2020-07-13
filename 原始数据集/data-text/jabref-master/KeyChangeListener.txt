@@ -1,0 +1,48 @@
+Class:KeyChangeListener
+Field:database
+Method-name:KeyChangeListener
+Method-returnType:null
+Method-parameters:[BibDatabase database]
+FieldAccess:database
+Method-name:listen
+Method-returnType:void
+Method-parameters:[FieldChangedEvent event]
+MethodInvocation:equals
+MethodInvocation:getField
+MethodInvocation:getNewValue
+MethodInvocation:getOldValue
+MethodInvocation:updateEntryLinks
+Method-name:listen
+Method-returnType:void
+Method-parameters:[EntriesRemovedEvent event]
+MethodInvocation:getBibEntries
+MethodInvocation:getCiteKeyOptional
+MethodInvocation:ifPresent
+MethodInvocation:updateEntryLinks
+Method-name:updateEntryLinks
+Method-returnType:void
+Method-parameters:[String newKey, String oldKey]
+MethodInvocation:getEntries
+MethodInvocation:getKeyFields
+MethodInvocation:ifPresent
+MethodInvocation:getField
+MethodInvocation:contains
+MethodInvocation:getProperties
+MethodInvocation:replaceSingleKeyInField
+MethodInvocation:replaceKeyInMultiplesKeyField
+Method-name:replaceKeyInMultiplesKeyField
+Method-returnType:void
+Method-parameters:[String newKey, String oldKey, BibEntry entry, Field field, String fieldContent]
+MethodInvocation:asList
+MethodInvocation:split
+MethodInvocation:indexOf
+MethodInvocation:remove
+MethodInvocation:set
+MethodInvocation:setField
+MethodInvocation:join
+Method-name:replaceSingleKeyInField
+Method-returnType:void
+Method-parameters:[String newKey, String oldKey, BibEntry entry, Field field, String fieldContent]
+MethodInvocation:equals
+MethodInvocation:clearField
+MethodInvocation:setField

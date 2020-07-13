@@ -1,0 +1,92 @@
+Class:Http2Configuration
+Field:maxStreams
+Field:initialWindowSize
+Field:healthCheckPingPeriod
+Method-name:Http2Configuration
+Method-returnType:null
+Method-parameters:[DefaultBuilder builder]
+FieldAccess:maxStreams
+FieldAccess:initialWindowSize
+FieldAccess:healthCheckPingPeriod
+Method-name:maxStreams
+Method-returnType:Long
+Method-parameters:[]
+Method-name:initialWindowSize
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:healthCheckPingPeriod
+Method-returnType:Duration
+Method-parameters:[]
+Method-name:toBuilder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:resolveHealthCheckPingPeriod
+Method-returnType:Duration
+Method-parameters:[NettyNioAsyncHttpClient nettyNioAsyncHttpClient]
+MethodInvocation:healthCheckPingPeriod
+Method-name:maxStreams
+Method-returnType:Builder
+Method-parameters:[Long maxStreams]
+Method-name:initialWindowSize
+Method-returnType:Builder
+Method-parameters:[Integer initialWindowSize]
+Method-name:healthCheckPingPeriod
+Method-returnType:Builder
+Method-parameters:[Duration healthCheckPingPeriod]
+Class:DefaultBuilder
+Field:maxStreams
+Field:initialWindowSize
+Field:healthCheckPingPeriod
+Method-name:DefaultBuilder
+Method-returnType:null
+Method-parameters:[]
+Method-name:DefaultBuilder
+Method-returnType:null
+Method-parameters:[Http2Configuration http2Configuration]
+FieldAccess:maxStreams
+FieldAccess:initialWindowSize
+FieldAccess:healthCheckPingPeriod
+Method-name:maxStreams
+Method-returnType:Builder
+Method-parameters:[Long maxStreams]
+FieldAccess:maxStreams
+MethodInvocation:isPositiveOrNull
+Method-name:setMaxStreams
+Method-returnType:void
+Method-parameters:[Long maxStreams]
+MethodInvocation:maxStreams
+Method-name:initialWindowSize
+Method-returnType:Builder
+Method-parameters:[Integer initialWindowSize]
+FieldAccess:initialWindowSize
+MethodInvocation:isPositiveOrNull
+Method-name:setInitialWindowSize
+Method-returnType:void
+Method-parameters:[Integer initialWindowSize]
+MethodInvocation:initialWindowSize
+Method-name:healthCheckPingPeriod
+Method-returnType:Builder
+Method-parameters:[Duration healthCheckPingPeriod]
+FieldAccess:healthCheckPingPeriod
+Method-name:setHealthCheckPingPeriod
+Method-returnType:void
+Method-parameters:[Duration healthCheckPingPeriod]
+MethodInvocation:healthCheckPingPeriod
+Method-name:build
+Method-returnType:Http2Configuration
+Method-parameters:[]

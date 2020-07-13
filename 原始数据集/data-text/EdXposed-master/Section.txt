@@ -1,0 +1,83 @@
+Class:Section
+Field:name
+Field:file
+Field:alignment
+Field:fileOffset
+Field:prepared
+Method-name:validateAlignment
+Method-returnType:void
+Method-parameters:[int alignment]
+Method-name:Section
+Method-returnType:null
+Method-parameters:[String name, DexFile file, int alignment]
+MethodInvocation:validateAlignment
+FieldAccess:name
+FieldAccess:file
+FieldAccess:alignment
+FieldAccess:fileOffset
+FieldAccess:prepared
+Method-name:getFile
+Method-returnType:DexFile
+Method-parameters:[]
+Method-name:getAlignment
+Method-returnType:int
+Method-parameters:[]
+Method-name:getFileOffset
+Method-returnType:int
+Method-parameters:[]
+Method-name:setFileOffset
+Method-returnType:int
+Method-parameters:[int fileOffset]
+FieldAccess:fileOffset
+FieldAccess:fileOffset
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out]
+MethodInvocation:throwIfNotPrepared
+MethodInvocation:align
+MethodInvocation:getCursor
+MethodInvocation:annotates
+MethodInvocation:annotate
+MethodInvocation:annotate
+MethodInvocation:writeTo0
+Method-name:getAbsoluteOffset
+Method-returnType:int
+Method-parameters:[int relative]
+Method-name:getAbsoluteItemOffset
+Method-returnType:int
+Method-parameters:[Item item]
+Method-name:prepare
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:throwIfPrepared
+MethodInvocation:prepare0
+Method-name:items
+Method-returnType:Collection<? extends Item>
+Method-parameters:[]
+Method-name:prepare0
+Method-returnType:void
+Method-parameters:[]
+Method-name:writeSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:throwIfNotPrepared
+Method-returnType:void
+Method-parameters:[]
+Method-name:throwIfPrepared
+Method-returnType:void
+Method-parameters:[]
+Method-name:align
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out]
+MethodInvocation:alignTo
+Method-name:writeTo0
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out]
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:addAll
+Method-returnType:void
+Method-parameters:[Statistics statistics]
+MethodInvocation:items
+MethodInvocation:add

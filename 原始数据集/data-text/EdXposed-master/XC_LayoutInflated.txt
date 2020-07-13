@@ -1,0 +1,45 @@
+Class:XC_LayoutInflated
+Method-name:XC_LayoutInflated
+Method-returnType:null
+Method-parameters:[]
+Method-name:XC_LayoutInflated
+Method-returnType:null
+Method-parameters:[int priority]
+Method-name:hookLayout
+Method-returnType:Unhook
+Method-parameters:[String fullName, XResources xResources]
+MethodInvocation:getIdentifier
+MethodInvocation:hookLayout
+Class:LayoutInflatedParam
+Method-name:LayoutInflatedParam
+Method-returnType:null
+Method-parameters:[CopyOnWriteSortedSet<XC_LayoutInflated> callbacks]
+Field:view
+Field:resNames
+Field:variant
+Field:res
+Method-name:call
+Method-returnType:void
+Method-parameters:[Param param]
+MethodInvocation:handleLayoutInflated
+Method-name:handleLayoutInflated
+Method-returnType:void
+Method-parameters:[LayoutInflatedParam liparam]
+Class:Unhook
+Field:resDir
+Field:id
+Method-name:Unhook
+Method-returnType:null
+Method-parameters:[String resDir, int id]
+FieldAccess:resDir
+FieldAccess:id
+Method-name:getId
+Method-returnType:int
+Method-parameters:[]
+Method-name:getCallback
+Method-returnType:XC_LayoutInflated
+Method-parameters:[]
+Method-name:unhook
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:unhookLayout

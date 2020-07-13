@@ -1,0 +1,218 @@
+Class:TableRow
+Field:cells
+Field:beforeOffset
+Field:afterOffset
+Field:normalized
+Method-name:TableRow
+Method-returnType:null
+Method-parameters:[]
+Method-name:getCells
+Method-returnType:List<TableCell>
+Method-parameters:[]
+Method-name:forAllCells
+Method-returnType:void
+Method-parameters:[TableCellConsumer consumer]
+MethodInvocation:forAllCells
+Method-name:forAllCells
+Method-returnType:void
+Method-parameters:[int startIndex, TableCellConsumer consumer]
+MethodInvocation:forAllCells
+Method-name:forAllCells
+Method-returnType:void
+Method-parameters:[int startIndex, int count, TableCellConsumer consumer]
+MethodInvocation:forAllCells
+MethodInvocation:accept
+Method-name:forAllCells
+Method-returnType:void
+Method-parameters:[TableCellManipulator manipulator]
+MethodInvocation:forAllCells
+Method-name:forAllCells
+Method-returnType:void
+Method-parameters:[int startIndex, TableCellManipulator manipulator]
+MethodInvocation:forAllCells
+Method-name:forAllCells
+Method-returnType:void
+Method-parameters:[int startIndex, int count, TableCellManipulator manipulator]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:apply
+Method-name:getColumns
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getTotalColumns
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getSpannedColumns
+Method-name:getSpannedColumns
+Method-returnType:int
+Method-parameters:[]
+Method-name:getBeforeOffset
+Method-returnType:int
+Method-parameters:[]
+Method-name:setBeforeOffset
+Method-returnType:void
+Method-parameters:[int beforeOffset]
+FieldAccess:beforeOffset
+Method-name:getAfterOffset
+Method-returnType:int
+Method-parameters:[]
+Method-name:setAfterOffset
+Method-returnType:void
+Method-parameters:[int afterOffset]
+FieldAccess:afterOffset
+Method-name:columnOf
+Method-returnType:int
+Method-parameters:[int index]
+MethodInvocation:columnOfOrNull
+Method-name:columnOfOrNull
+Method-returnType:Integer
+Method-parameters:[Integer index]
+MethodInvocation:maxLimit
+MethodInvocation:size
+MethodInvocation:get
+Method-name:appendColumns
+Method-returnType:void
+Method-parameters:[int count]
+MethodInvocation:appendColumns
+Method-name:appendColumns
+Method-returnType:void
+Method-parameters:[int count, TableCell tableCell]
+MethodInvocation:defaultCell
+MethodInvocation:add
+MethodInvocation:size
+Method-name:defaultCell
+Method-returnType:TableCell
+Method-parameters:[]
+Method-name:addColumn
+Method-returnType:void
+Method-parameters:[int index]
+MethodInvocation:add
+MethodInvocation:defaultCell
+Method-name:insertColumns
+Method-returnType:void
+Method-parameters:[int column, int count]
+MethodInvocation:insertColumns
+Method-name:insertColumns
+Method-returnType:void
+Method-parameters:[int column, int count, TableCell tableCell]
+MethodInvocation:normalizeIfNeeded
+MethodInvocation:defaultCell
+MethodInvocation:getTotalColumns
+MethodInvocation:appendColumns
+MethodInvocation:indexOf
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:isBlank
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:withColumnSpan
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:withColumnSpan
+MethodInvocation:add
+MethodInvocation:withColumnSpan
+MethodInvocation:minLimit
+MethodInvocation:add
+Method-name:deleteColumns
+Method-returnType:void
+Method-parameters:[int column, int count]
+MethodInvocation:normalizeIfNeeded
+MethodInvocation:indexOf
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:withColumnSpan
+MethodInvocation:add
+MethodInvocation:withColumnSpan
+MethodInvocation:add
+MethodInvocation:withColumnSpan
+MethodInvocation:defaultCell
+Method-name:moveColumn
+Method-returnType:void
+Method-parameters:[int fromColumn, int toColumn]
+MethodInvocation:normalizeIfNeeded
+MethodInvocation:getTotalColumns
+MethodInvocation:indexOf
+MethodInvocation:withColumnSpan
+MethodInvocation:get
+MethodInvocation:indexOf
+MethodInvocation:insertColumns
+MethodInvocation:defaultCell
+MethodInvocation:insertColumns
+MethodInvocation:withColumnSpan
+MethodInvocation:deleteColumns
+Method-name:expandTo
+Method-returnType:TableRow
+Method-parameters:[int column]
+MethodInvocation:expandTo
+Method-name:expandTo
+Method-returnType:TableRow
+Method-parameters:[int column, TableCell cell]
+MethodInvocation:size
+MethodInvocation:add
+Method-name:fillMissingColumns
+Method-returnType:void
+Method-parameters:[Integer minColumn, int maxColumns]
+MethodInvocation:getSpannedColumns
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:defaultCell
+MethodInvocation:get
+MethodInvocation:getEndOffset
+MethodInvocation:withText
+MethodInvocation:prefixOf
+MethodInvocation:getBaseSequence
+MethodInvocation:getLastSegment
+MethodInvocation:add
+MethodInvocation:min
+MethodInvocation:size
+Method-name:isEmptyColumn
+Method-returnType:boolean
+Method-parameters:[int column]
+FieldAccess:index
+MethodInvocation:indexOf
+MethodInvocation:size
+MethodInvocation:isBlank
+FieldAccess:text
+MethodInvocation:get
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isBlank
+Method-name:indexOf
+Method-returnType:MarkdownTable.IndexSpanOffset
+Method-parameters:[int column]
+MethodInvocation:indexOfOrNull
+Method-name:indexOfOrNull
+Method-returnType:MarkdownTable.IndexSpanOffset
+Method-parameters:[Integer column]
+Method-name:normalizeIfNeeded
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:normalize
+Method-name:normalize
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:remove
+Method-name:dumpCells
+Method-returnType:CharSequence
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:substring
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:length
+MethodInvocation:getName
+MethodInvocation:getPackage
+MethodInvocation:getClass
+MethodInvocation:dumpCells

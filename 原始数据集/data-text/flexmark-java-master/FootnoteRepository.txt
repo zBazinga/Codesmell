@@ -1,0 +1,56 @@
+Class:FootnoteRepository
+Field:referencedFootnoteBlocks
+Method-name:resolveFootnotes
+Method-returnType:void
+Method-parameters:[Document document]
+MethodInvocation:get
+MethodInvocation:isDefined
+MethodInvocation:getFootnoteBlock
+MethodInvocation:addFootnoteReference
+MethodInvocation:setFootnoteBlock
+MethodInvocation:visit
+MethodInvocation:resolveFootnoteOrdinals
+Method-name:addFootnoteReference
+Method-returnType:void
+Method-parameters:[FootnoteBlock footnoteBlock, Footnote footnote]
+MethodInvocation:isReferenced
+MethodInvocation:add
+MethodInvocation:setFirstReferenceOffset
+MethodInvocation:getStartOffset
+MethodInvocation:getFootnoteReferences
+MethodInvocation:setFootnoteReferences
+MethodInvocation:setReferenceOrdinal
+Method-name:resolveFootnoteOrdinals
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:sort
+MethodInvocation:getFirstReferenceOffset
+MethodInvocation:getFirstReferenceOffset
+MethodInvocation:setFootnoteOrdinal
+Method-name:getReferencedFootnoteBlocks
+Method-returnType:List<FootnoteBlock>
+Method-parameters:[]
+Method-name:FootnoteRepository
+Method-returnType:null
+Method-parameters:[DataHolder options]
+MethodInvocation:get
+Method-name:getDataKey
+Method-returnType:DataKey<FootnoteRepository>
+Method-parameters:[]
+Method-name:getKeepDataKey
+Method-returnType:DataKey<KeepType>
+Method-parameters:[]
+Method-name:getReferencedElements
+Method-returnType:Set<FootnoteBlock>
+Method-parameters:[Node parent]
+MethodInvocation:visitNodes
+MethodInvocation:getReferenceNode
+MethodInvocation:add
+Method-name:getFootnoteBlock
+Method-returnType:FootnoteBlock
+Method-parameters:[Footnote footnote]
+MethodInvocation:isEmpty
+MethodInvocation:getText
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:getText

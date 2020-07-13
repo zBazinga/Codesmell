@@ -1,0 +1,572 @@
+Class:MapWork
+Method-name:initializeAsRoot
+Method-returnType:void
+Method-parameters:[JobConf hconf, MapOperator mapOperator]
+MethodInvocation:setConf
+MethodInvocation:setChildren
+MethodInvocation:passExecContext
+MethodInvocation:initializeMapOperator
+Field:LlapIODescriptor
+Method-name:LlapIODescriptor
+Method-returnType:null
+Method-parameters:[String desc, boolean cached]
+FieldAccess:desc
+FieldAccess:cached
+Field:pathToAliases
+Field:pathToPartitionInfo
+Field:aliasToWork
+Field:aliasToPartnInfo
+Field:nameToSplitSample
+Field:bucketedColsByDirectory
+Field:sortedColsByDirectory
+Field:tmpHDFSPath
+Field:tmpPathForPartitionPruning
+Field:inputformat
+Field:numMapTasks
+Field:maxSplitSize
+Field:minSplitSize
+Field:minSplitSizePerNode
+Field:minSplitSizePerRack
+Field:samplingType
+Field:SAMPLING_ON_PREV_MR
+Field:SAMPLING_ON_START
+Field:leftInputJoin
+Field:baseSrc
+Field:mapAliases
+Field:mapperCannotSpanPartns
+Field:inputFormatSorted
+Field:useBucketizedHiveInputFormat
+Field:dummyTableScan
+Field:eventSourceTableDescMap
+Field:eventSourceColumnNameMap
+Field:eventSourceColumnTypeMap
+Field:eventSourcePartKeyExprMap
+Field:doSplitsGrouping
+Field:vectorizedRowBatch
+Field:notEnabledInputFileFormatReason
+Field:vectorizationInputFileFormatClassNameSet
+Field:vectorPartitionDescList
+Field:vectorizationEnabledConditionsMet
+Field:vectorizationEnabledConditionsNotMet
+Field:includedBuckets
+Field:llapIoDesc
+Field:isMergeFromResolver
+Field:probeDecodeContext
+Method-name:MapWork
+Method-returnType:null
+Method-parameters:[]
+Method-name:MapWork
+Method-returnType:null
+Method-parameters:[String name]
+Method-name:getPathToAliases
+Method-returnType:Map<Path,List<String>>
+Method-parameters:[]
+Method-name:setPathToAliases
+Method-returnType:void
+Method-parameters:[Map<Path,List<String>> pathToAliases]
+MethodInvocation:keySet
+MethodInvocation:internUriStringsInPath
+FieldAccess:pathToAliases
+Method-name:addPathToAlias
+Method-returnType:void
+Method-parameters:[Path path, List<String> aliases]
+MethodInvocation:internUriStringsInPath
+MethodInvocation:put
+Method-name:addPathToAlias
+Method-returnType:void
+Method-parameters:[Path path, String newAlias]
+MethodInvocation:get
+MethodInvocation:internUriStringsInPath
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:intern
+Method-name:removePathToAlias
+Method-returnType:void
+Method-parameters:[Path path]
+MethodInvocation:remove
+Method-name:getTruncatedPathToAliases
+Method-returnType:Map<String,List<String>>
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:entrySet
+FieldAccess:pathToAliases
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getKey
+MethodInvocation:removePrefixFromWarehouseConfig
+MethodInvocation:toString
+MethodInvocation:getValue
+MethodInvocation:put
+Method-name:getPathToPartitionInfo
+Method-returnType:Map<Path,PartitionDesc>
+Method-parameters:[]
+Method-name:setPathToPartitionInfo
+Method-returnType:void
+Method-parameters:[final Map<Path,PartitionDesc> pathToPartitionInfo]
+MethodInvocation:keySet
+MethodInvocation:internUriStringsInPath
+FieldAccess:pathToPartitionInfo
+Method-name:addPathToPartitionInfo
+Method-returnType:void
+Method-parameters:[Path path, PartitionDesc partitionInfo]
+MethodInvocation:put
+Method-name:removePathToPartitionInfo
+Method-returnType:void
+Method-parameters:[Path path]
+MethodInvocation:remove
+Method-name:deriveExplainAttributes
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:deriveBaseFileName
+MethodInvocation:getValue
+MethodInvocation:getKey
+MethodInvocation:getMapRedLocalWork
+MethodInvocation:deriveExplainAttributes
+Method-name:deriveLlap
+Method-returnType:void
+Method-parameters:[Configuration conf, boolean isExecDriver]
+MethodInvocation:getBoolVar
+MethodInvocation:getIsVectorized
+MethodInvocation:getBoolVar
+MethodInvocation:isEmpty
+MethodInvocation:values
+MethodInvocation:canWrapForLlap
+MethodInvocation:getInputFileFormatClass
+MethodInvocation:getTableDesc
+MethodInvocation:isTablePropertyTransactional
+MethodInvocation:getProperties
+MethodInvocation:getTableDesc
+MethodInvocation:canInjectCaches
+MethodInvocation:getInputFileFormatClass
+MethodInvocation:deriveLlapIoDescString
+Method-name:deriveLlapIoDescString
+Method-returnType:LlapIODescriptor
+Method-parameters:[boolean isLlapOn, boolean canWrapAny, boolean hasPathToPartInfo, boolean hasLlap, boolean hasNonLlap, boolean hasAcid, boolean hasCacheOnly]
+Method-name:internTable
+Method-returnType:void
+Method-parameters:[Interner<TableDesc> interner]
+MethodInvocation:values
+MethodInvocation:intern
+MethodInvocation:values
+MethodInvocation:intern
+Method-name:getAliasToPartnInfo
+Method-returnType:Map<String,PartitionDesc>
+Method-parameters:[]
+Method-name:setAliasToPartnInfo
+Method-returnType:void
+Method-parameters:[LinkedHashMap<String,PartitionDesc> aliasToPartnInfo]
+FieldAccess:aliasToPartnInfo
+Method-name:getAliasToWork
+Method-returnType:Map<String,Operator<? extends OperatorDesc>>
+Method-parameters:[]
+Method-name:setAliasToWork
+Method-returnType:void
+Method-parameters:[Map<String,Operator<? extends OperatorDesc>> aliasToWork]
+FieldAccess:aliasToWork
+Method-name:getNameToSplitSample
+Method-returnType:Map<String,SplitSample>
+Method-parameters:[]
+Method-name:getLlapIoDescString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getCacheAffinity
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setNameToSplitSample
+Method-returnType:void
+Method-parameters:[Map<String,SplitSample> nameToSplitSample]
+FieldAccess:nameToSplitSample
+Method-name:getNumMapTasks
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setNumMapTasks
+Method-returnType:void
+Method-parameters:[Integer numMapTasks]
+FieldAccess:numMapTasks
+Method-name:addMapWork
+Method-returnType:void
+Method-parameters:[Path path, String alias, Operator<?> work, PartitionDesc pd]
+MethodInvocation:internUriStringsInPath
+MethodInvocation:get
+MethodInvocation:assert
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:assert
+MethodInvocation:get
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:put
+Method-name:isInputFormatSorted
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setInputFormatSorted
+Method-returnType:void
+Method-parameters:[boolean inputFormatSorted]
+FieldAccess:inputFormatSorted
+Method-name:resolveDynamicPartitionStoredAsSubDirsMerge
+Method-returnType:void
+Method-parameters:[HiveConf conf, Path path, TableDesc tblDesc, List<String> aliases, PartitionDesc partDesc]
+MethodInvocation:internUriStringsInPath
+MethodInvocation:put
+MethodInvocation:put
+Method-name:setAliases
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:keySet
+MethodInvocation:setAlias
+MethodInvocation:get
+Method-name:getExecutionMode
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getIsTestForcedVectorizationEnable
+MethodInvocation:getIsTestVectorizationSuppressExplainExecutionMode
+Method-name:replaceRoots
+Method-returnType:void
+Method-parameters:[Map<Operator<?>,Operator<?>> replacementMap]
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:get
+MethodInvocation:getValue
+MethodInvocation:setAliasToWork
+Method-name:getAllRootOperators
+Method-returnType:Set<Operator<? extends OperatorDesc>>
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:getAliasToWork
+MethodInvocation:add
+Method-name:getAnyRootOperator
+Method-returnType:Operator<? extends OperatorDesc>
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:values
+Method-name:mergeAliasedInput
+Method-returnType:void
+Method-parameters:[String alias, Path pathDir, PartitionDesc partitionInfo]
+MethodInvocation:internUriStringsInPath
+MethodInvocation:intern
+MethodInvocation:get
+MethodInvocation:asList
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:add
+Method-name:initialize
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setAliases
+Method-name:getMaxSplitSize
+Method-returnType:Long
+Method-parameters:[]
+Method-name:setMaxSplitSize
+Method-returnType:void
+Method-parameters:[Long maxSplitSize]
+FieldAccess:maxSplitSize
+Method-name:getMinSplitSize
+Method-returnType:Long
+Method-parameters:[]
+Method-name:setMinSplitSize
+Method-returnType:void
+Method-parameters:[Long minSplitSize]
+FieldAccess:minSplitSize
+Method-name:getMinSplitSizePerNode
+Method-returnType:Long
+Method-parameters:[]
+Method-name:setMinSplitSizePerNode
+Method-returnType:void
+Method-parameters:[Long minSplitSizePerNode]
+FieldAccess:minSplitSizePerNode
+Method-name:getMinSplitSizePerRack
+Method-returnType:Long
+Method-parameters:[]
+Method-name:setMinSplitSizePerRack
+Method-returnType:void
+Method-parameters:[Long minSplitSizePerRack]
+FieldAccess:minSplitSizePerRack
+Method-name:getInputformat
+Method-returnType:String
+Method-parameters:[]
+Method-name:setInputformat
+Method-returnType:void
+Method-parameters:[String inputformat]
+FieldAccess:inputformat
+Method-name:isUseBucketizedHiveInputFormat
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setUseBucketizedHiveInputFormat
+Method-returnType:void
+Method-parameters:[boolean useBucketizedHiveInputFormat]
+FieldAccess:useBucketizedHiveInputFormat
+Method-name:setMapperCannotSpanPartns
+Method-returnType:void
+Method-parameters:[boolean mapperCannotSpanPartns]
+FieldAccess:mapperCannotSpanPartns
+Method-name:isMapperCannotSpanPartns
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:mapperCannotSpanPartns
+Method-name:getAliases
+Method-returnType:ArrayList<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getWorks
+Method-returnType:ArrayList<Operator<?>>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getPaths
+Method-returnType:ArrayList<Path>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getPartitionDescs
+Method-returnType:ArrayList<PartitionDesc>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getTmpHDFSPath
+Method-returnType:Path
+Method-parameters:[]
+Method-name:setTmpHDFSPath
+Method-returnType:void
+Method-parameters:[Path tmpHDFSPath]
+FieldAccess:tmpHDFSPath
+Method-name:getTmpPathForPartitionPruning
+Method-returnType:Path
+Method-parameters:[]
+FieldAccess:tmpPathForPartitionPruning
+Method-name:setTmpPathForPartitionPruning
+Method-returnType:void
+Method-parameters:[Path tmpPathForPartitionPruning]
+FieldAccess:tmpPathForPartitionPruning
+Method-name:mergingInto
+Method-returnType:void
+Method-parameters:[MapWork mapWork]
+Method-name:getBucketedColsByDirectory
+Method-returnType:Map<String,List<BucketCol>>
+Method-parameters:[]
+Method-name:getSortedColsByDirectory
+Method-returnType:Map<String,List<SortCol>>
+Method-parameters:[]
+Method-name:getSamplingType
+Method-returnType:int
+Method-parameters:[]
+Method-name:setSamplingType
+Method-returnType:void
+Method-parameters:[int samplingType]
+FieldAccess:samplingType
+Method-name:getSamplingTypeString
+Method-returnType:String
+Method-parameters:[]
+Method-name:configureJobConf
+Method-returnType:void
+Method-parameters:[JobConf job]
+MethodInvocation:values
+MethodInvocation:configureJobConf
+MethodInvocation:getTableDesc
+MethodInvocation:values
+MethodInvocation:findOperators
+MethodInvocation:configureJobConf
+MethodInvocation:getTableInfo
+MethodInvocation:getConf
+MethodInvocation:findOperators
+MethodInvocation:configureJobConf
+Method-name:setDummyTableScan
+Method-returnType:void
+Method-parameters:[boolean dummyTableScan]
+FieldAccess:dummyTableScan
+Method-name:getDummyTableScan
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setEventSourceTableDescMap
+Method-returnType:void
+Method-parameters:[Map<String,List<TableDesc>> map]
+FieldAccess:eventSourceTableDescMap
+Method-name:getEventSourceTableDescMap
+Method-returnType:Map<String,List<TableDesc>>
+Method-parameters:[]
+Method-name:setEventSourceColumnNameMap
+Method-returnType:void
+Method-parameters:[Map<String,List<String>> map]
+FieldAccess:eventSourceColumnNameMap
+Method-name:getEventSourceColumnNameMap
+Method-returnType:Map<String,List<String>>
+Method-parameters:[]
+Method-name:getEventSourceColumnTypeMap
+Method-returnType:Map<String,List<String>>
+Method-parameters:[]
+Method-name:setEventSourceColumnTypeMap
+Method-returnType:void
+Method-parameters:[Map<String,List<String>> eventSourceColumnTypeMap]
+FieldAccess:eventSourceColumnTypeMap
+Method-name:getEventSourcePartKeyExprMap
+Method-returnType:Map<String,List<ExprNodeDesc>>
+Method-parameters:[]
+Method-name:setEventSourcePartKeyExprMap
+Method-returnType:void
+Method-parameters:[Map<String,List<ExprNodeDesc>> map]
+FieldAccess:eventSourcePartKeyExprMap
+Method-name:setDoSplitsGrouping
+Method-returnType:void
+Method-parameters:[boolean doSplitsGrouping]
+FieldAccess:doSplitsGrouping
+Method-name:getDoSplitsGrouping
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:doSplitsGrouping
+Method-name:isLeftInputJoin
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setLeftInputJoin
+Method-returnType:void
+Method-parameters:[boolean leftInputJoin]
+FieldAccess:leftInputJoin
+Method-name:getBaseSrc
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:setBaseSrc
+Method-returnType:void
+Method-parameters:[String[] baseSrc]
+FieldAccess:baseSrc
+Method-name:getMapAliases
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setMapAliases
+Method-returnType:void
+Method-parameters:[List<String> mapAliases]
+FieldAccess:mapAliases
+Method-name:getIncludedBuckets
+Method-returnType:BitSet
+Method-parameters:[]
+MethodInvocation:valueOf
+Method-name:setIncludedBuckets
+Method-returnType:void
+Method-parameters:[BitSet includedBuckets]
+FieldAccess:includedBuckets
+MethodInvocation:toByteArray
+Method-name:setVectorizedRowBatch
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch vectorizedRowBatch]
+FieldAccess:vectorizedRowBatch
+Method-name:getVectorizedRowBatch
+Method-returnType:VectorizedRowBatch
+Method-parameters:[]
+Method-name:setIsMergeFromResolver
+Method-returnType:void
+Method-parameters:[boolean b]
+FieldAccess:isMergeFromResolver
+Method-name:isMergeFromResolver
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:isMergeFromResolver
+Method-name:setUseVectorizedInputFileFormat
+Method-returnType:void
+Method-parameters:[boolean useVectorizedInputFileFormat]
+FieldAccess:useVectorizedInputFileFormat
+Method-name:getUseVectorizedInputFileFormat
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setInputFormatSupportSet
+Method-returnType:void
+Method-parameters:[Set<Support> inputFormatSupportSet]
+FieldAccess:inputFormatSupportSet
+Method-name:getInputFormatSupportSet
+Method-returnType:Set<Support>
+Method-parameters:[]
+Method-name:setSupportSetInUse
+Method-returnType:void
+Method-parameters:[Set<Support> supportSetInUse]
+FieldAccess:supportSetInUse
+Method-name:getSupportSetInUse
+Method-returnType:Set<Support>
+Method-parameters:[]
+Method-name:setSupportRemovedReasons
+Method-returnType:void
+Method-parameters:[List<String> supportRemovedReasons]
+FieldAccess:supportRemovedReasons
+Method-name:getSupportRemovedReasons
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setNotEnabledInputFileFormatReason
+Method-returnType:void
+Method-parameters:[VectorizerReason notEnabledInputFileFormatReason]
+FieldAccess:notEnabledInputFileFormatReason
+Method-name:getNotEnabledInputFileFormatReason
+Method-returnType:VectorizerReason
+Method-parameters:[]
+Method-name:setVectorizationInputFileFormatClassNameSet
+Method-returnType:void
+Method-parameters:[Set<String> vectorizationInputFileFormatClassNameSet]
+FieldAccess:vectorizationInputFileFormatClassNameSet
+Method-name:getVectorizationInputFileFormatClassNameSet
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:setVectorPartitionDescList
+Method-returnType:void
+Method-parameters:[List<VectorPartitionDesc> vectorPartitionDescList]
+FieldAccess:vectorPartitionDescList
+Method-name:getVectorPartitionDescList
+Method-returnType:List<VectorPartitionDesc>
+Method-parameters:[]
+Method-name:setVectorizationEnabledConditionsMet
+Method-returnType:void
+Method-parameters:[Collection<String> vectorizationEnabledConditionsMet]
+FieldAccess:vectorizationEnabledConditionsMet
+MethodInvocation:addBooleans
+Method-name:getVectorizationEnabledConditionsMet
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setVectorizationEnabledConditionsNotMet
+Method-returnType:void
+Method-parameters:[Collection<String> vectorizationEnabledConditionsNotMet]
+FieldAccess:vectorizationEnabledConditionsNotMet
+MethodInvocation:addBooleans
+Method-name:getVectorizationEnabledConditionsNotMet
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:getProbeDecodeContext
+Method-returnType:ProbeDecodeContext
+Method-parameters:[]
+Method-name:setProbeDecodeContext
+Method-returnType:void
+Method-parameters:[ProbeDecodeContext probeDecodeContext]
+FieldAccess:probeDecodeContext
+Class:MapExplainVectorization
+Field:mapWork
+Method-name:MapExplainVectorization
+Method-returnType:null
+Method-parameters:[MapWork mapWork]
+FieldAccess:mapWork
+Method-name:inputFileFormats
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:getVectorizationInputFileFormatClassNameSet
+Method-name:getInputFormatSupport
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getInputFormatSupportSet
+MethodInvocation:toString
+Method-name:getVectorizationSupportInUse
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSupportSetInUse
+MethodInvocation:toString
+Method-name:getSupportRemovedReasons
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSupportRemovedReasons
+MethodInvocation:isEmpty
+MethodInvocation:toString
+Method-name:enabledConditionsMet
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getVectorizationEnabledConditionsMet
+Method-name:enabledConditionsNotMet
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getVectorizationEnabledConditionsNotMet
+Method-name:getMapExplainVectorization
+Method-returnType:MapExplainVectorization
+Method-parameters:[]
+MethodInvocation:getVectorizationExamined

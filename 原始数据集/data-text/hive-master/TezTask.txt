@@ -1,0 +1,212 @@
+Class:TezTask
+Field:CLASS_NAME
+MethodInvocation:getName
+Field:LOG
+MethodInvocation:getLogger
+Field:perfLogger
+MethodInvocation:getPerfLogger
+Field:TEZ_MEMORY_RESERVE_FRACTION
+Field:counters
+Field:utils
+Field:dagClientLock
+Field:isShutdown
+Field:dagClient
+Field:workToVertex
+Field:workToConf
+Method-name:TezTask
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:getInstance
+Method-name:TezTask
+Method-returnType:null
+Method-parameters:[DagUtils utils]
+FieldAccess:utils
+Method-name:getTezCounters
+Method-returnType:TezCounters
+Method-parameters:[]
+Method-name:setTezCounters
+Method-returnType:void
+Method-parameters:[final TezCounters counters]
+FieldAccess:counters
+Method-name:execute
+Method-returnType:int
+Method-parameters:[]
+Method-name:updateNumRows
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:findCounter
+MethodInvocation:getVar
+MethodInvocation:setNumModifiedRows
+MethodInvocation:getValue
+Method-name:closeDagClientOnCancellation
+Method-returnType:void
+Method-parameters:[DAGClient dagClient]
+MethodInvocation:tryKillDAG
+MethodInvocation:info
+MethodInvocation:waitForCompletion
+MethodInvocation:warn
+MethodInvocation:closeDagClientWithoutEx
+Method-name:logResources
+Method-returnType:void
+Method-parameters:[List<LocalResource> additionalLr]
+MethodInvocation:isDebugEnabled
+MethodInvocation:size
+MethodInvocation:debug
+MethodInvocation:debug
+MethodInvocation:getResource
+Method-name:ensureSessionHasResources
+Method-returnType:void
+Method-parameters:[TezSessionState session, String[] nonConfResources]
+MethodInvocation:getSession
+MethodInvocation:info
+MethodInvocation:open
+MethodInvocation:info
+MethodInvocation:ensureLocalResources
+Method-name:checkOutputSpec
+Method-returnType:void
+Method-parameters:[BaseWork work, JobConf jc]
+MethodInvocation:getAllOperators
+MethodInvocation:checkOutputSpecs
+Method-name:build
+Method-returnType:DAG
+Method-parameters:[JobConf conf, TezWork tezWork, Path scratchDir, Context ctx, Map<String,LocalResource> vertexResources]
+Method-name:setAccessControlsForCurrentUser
+Method-returnType:void
+Method-parameters:[DAG dag, String queryId, Configuration conf]
+MethodInvocation:getUserFromAuthenticator
+MethodInvocation:getLoginUser
+MethodInvocation:getShortUserName
+MethodInvocation:getBoolVar
+MethodInvocation:getAclStringWithHiveModification
+MethodInvocation:getAclStringWithHiveModification
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:setAccessControls
+Method-name:getNewTezSessionOnError
+Method-returnType:TezSessionState
+Method-parameters:[TezSessionState oldSession]
+MethodInvocation:reopen
+MethodInvocation:printInfo
+Method-name:submit
+Method-returnType:DAGClient
+Method-parameters:[DAG dag, Ref<TezSessionState> sessionStateRef]
+MethodInvocation:PerfLogBegin
+MethodInvocation:submitDAG
+MethodInvocation:getSession
+MethodInvocation:printInfo
+MethodInvocation:getNewTezSessionOnError
+MethodInvocation:printInfo
+MethodInvocation:submitDAG
+MethodInvocation:getSession
+MethodInvocation:printInfo
+MethodInvocation:getMessage
+MethodInvocation:toString
+MethodInvocation:getStackTrace
+MethodInvocation:getNewTezSessionOnError
+MethodInvocation:submitDAG
+MethodInvocation:getSession
+MethodInvocation:isDefault
+MethodInvocation:returnToSessionManager
+MethodInvocation:destroy
+MethodInvocation:PerfLogEnd
+Method-name:close
+Method-returnType:int
+Method-parameters:[TezWork work, int rc, DAGClient dagClient]
+MethodInvocation:getAllWork
+MethodInvocation:getMainWork
+MethodInvocation:getAllOperators
+MethodInvocation:jobClose
+MethodInvocation:getNameMessage
+MethodInvocation:printError
+MethodInvocation:stringifyException
+MethodInvocation:closeDagClientWithoutEx
+Method-name:closeDagClientWithoutEx
+Method-returnType:void
+Method-parameters:[DAGClient dagClient]
+MethodInvocation:close
+MethodInvocation:warn
+Method-name:updateTaskMetrics
+Method-returnType:void
+Method-parameters:[Metrics metrics]
+MethodInvocation:incrementCounter
+Method-name:isMapRedTask
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getType
+Method-returnType:StageType
+Method-parameters:[]
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:canExecuteInParallel
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getMapWork
+Method-returnType:Collection<MapWork>
+Method-parameters:[]
+MethodInvocation:getWork
+MethodInvocation:getAllWorkUnsorted
+MethodInvocation:getParents
+MethodInvocation:add
+Method-name:getReducer
+Method-returnType:Operator<? extends OperatorDesc>
+Method-parameters:[MapWork mapWork]
+MethodInvocation:getChildren
+MethodInvocation:getWork
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getReducer
+MethodInvocation:get
+Method-name:shutdown
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:dagClient
+MethodInvocation:info
+MethodInvocation:closeDagClientOnCancellation
+Class:SyncDagClient
+Field:dagClient
+Method-name:SyncDagClient
+Method-returnType:null
+Method-parameters:[DAGClient dagClient]
+FieldAccess:dagClient
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+Method-name:getDagIdentifierString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getSessionIdentifierString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getExecutionContext
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getExecutionContext
+Method-name:getApplicationReportInternal
+Method-returnType:ApplicationReport
+Method-parameters:[]
+Method-name:getDAGStatus
+Method-returnType:DAGStatus
+Method-parameters:[@Nullable Set<StatusGetOpts> statusOptions]
+MethodInvocation:getDAGStatus
+Method-name:getDAGStatus
+Method-returnType:DAGStatus
+Method-parameters:[@Nullable Set<StatusGetOpts> statusOptions, long timeout]
+MethodInvocation:getDAGStatus
+Method-name:getVertexStatus
+Method-returnType:VertexStatus
+Method-parameters:[String vertexName, Set<StatusGetOpts> statusOptions]
+MethodInvocation:getVertexStatus
+Method-name:tryKillDAG
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:tryKillDAG
+Method-name:waitForCompletion
+Method-returnType:DAGStatus
+Method-parameters:[]
+MethodInvocation:waitForCompletion
+Method-name:waitForCompletionWithStatusUpdates
+Method-returnType:DAGStatus
+Method-parameters:[@Nullable Set<StatusGetOpts> statusGetOpts]
+MethodInvocation:waitForCompletionWithStatusUpdates

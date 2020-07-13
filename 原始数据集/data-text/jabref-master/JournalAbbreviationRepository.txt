@@ -1,0 +1,104 @@
+Class:JournalAbbreviationRepository
+Field:fullToAbbreviation
+Field:abbreviationToFull
+Field:customAbbreviations
+Method-name:JournalAbbreviationRepository
+Method-returnType:null
+Method-parameters:[Path journalList]
+MethodInvocation:open
+MethodInvocation:fileName
+MethodInvocation:readOnly
+MethodInvocation:toString
+MethodInvocation:toAbsolutePath
+FieldAccess:fullToAbbreviation
+MethodInvocation:openMap
+FieldAccess:abbreviationToFull
+MethodInvocation:openMap
+FieldAccess:customAbbreviations
+Method-name:isMatched
+Method-returnType:boolean
+Method-parameters:[String name, Abbreviation abbreviation]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getAbbreviation
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getMedlineAbbreviation
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getShortestUniqueAbbreviation
+Method-name:isMatchedAbbreviated
+Method-returnType:boolean
+Method-parameters:[String name, Abbreviation abbreviation]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getAbbreviation
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getMedlineAbbreviation
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getShortestUniqueAbbreviation
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+Method-name:isKnownName
+Method-returnType:boolean
+Method-parameters:[String journalName]
+MethodInvocation:trim
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:isMatched
+MethodInvocation:containsKey
+MethodInvocation:containsKey
+Method-name:isAbbreviatedName
+Method-returnType:boolean
+Method-parameters:[String journalName]
+MethodInvocation:trim
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:isMatchedAbbreviated
+MethodInvocation:containsKey
+Method-name:get
+Method-returnType:Optional<Abbreviation>
+Method-parameters:[String input]
+MethodInvocation:trim
+MethodInvocation:findAny
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:isMatched
+MethodInvocation:isPresent
+MethodInvocation:or
+MethodInvocation:map
+MethodInvocation:ofNullable
+MethodInvocation:get
+MethodInvocation:map
+MethodInvocation:ofNullable
+MethodInvocation:get
+Method-name:getCustomAbbreviations
+Method-returnType:List<Abbreviation>
+Method-parameters:[]
+Method-name:addCustomAbbreviations
+Method-returnType:void
+Method-parameters:[Collection<Abbreviation> abbreviationsToAdd]
+MethodInvocation:forEach
+Method-name:getNextAbbreviation
+Method-returnType:Optional<String>
+Method-parameters:[String text]
+MethodInvocation:map
+MethodInvocation:get
+MethodInvocation:getNext
+Method-name:getDefaultAbbreviation
+Method-returnType:Optional<String>
+Method-parameters:[String text]
+MethodInvocation:map
+MethodInvocation:get
+Method-name:getMedlineAbbreviation
+Method-returnType:Optional<String>
+Method-parameters:[String text]
+MethodInvocation:map
+MethodInvocation:get
+Method-name:getShortestUniqueAbbreviation
+Method-returnType:Optional<String>
+Method-parameters:[String text]
+MethodInvocation:map
+MethodInvocation:get
+Method-name:getFullNames
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet

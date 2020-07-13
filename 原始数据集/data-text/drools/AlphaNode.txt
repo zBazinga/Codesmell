@@ -1,0 +1,201 @@
+Class:AlphaNode
+Field:serialVersionUID
+Field:constraint
+Field:previousRightTupleSinkNode
+Field:nextRightTupleSinkNode
+Method-name:AlphaNode
+Method-returnType:null
+Method-parameters:[]
+Method-name:AlphaNode
+Method-returnType:null
+Method-parameters:[final int id, final AlphaNodeFieldConstraint constraint, final ObjectSource objectSource, final BuildContext context]
+MethodInvocation:getPartitionId
+MethodInvocation:isMultithreadEvaluation
+MethodInvocation:getConfiguration
+MethodInvocation:getKnowledgeBase
+MethodInvocation:getAlphaNodeHashingThreshold
+MethodInvocation:getConfiguration
+MethodInvocation:getKnowledgeBase
+FieldAccess:constraint
+MethodInvocation:cloneIfInUse
+FieldAccess:constraint
+MethodInvocation:registerEvaluationContext
+FieldAccess:constraint
+MethodInvocation:initDeclaredMask
+MethodInvocation:calculateHashCode
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:readObject
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+Method-name:getConstraint
+Method-returnType:AlphaNodeFieldConstraint
+Method-parameters:[]
+FieldAccess:constraint
+Method-name:getType
+Method-returnType:short
+Method-parameters:[]
+Method-name:attach
+Method-returnType:void
+Method-parameters:[BuildContext context]
+MethodInvocation:addObjectSink
+FieldAccess:source
+Method-name:setPartitionId
+Method-returnType:void
+Method-parameters:[BuildContext context, RuleBasePartitionId partitionId]
+FieldAccess:partitionId
+FieldAccess:partitionId
+MethodInvocation:setPartitionId
+MethodInvocation:changeSinkPartition
+FieldAccess:partitionId
+FieldAccess:partitionId
+Method-name:assertObject
+Method-returnType:void
+Method-parameters:[final InternalFactHandle factHandle, final PropagationContext context, final InternalWorkingMemory workingMemory]
+MethodInvocation:isAllowed
+FieldAccess:constraint
+MethodInvocation:propagateAssertObject
+FieldAccess:sink
+Method-name:modifyObject
+Method-returnType:void
+Method-parameters:[final InternalFactHandle factHandle, final ModifyPreviousTuples modifyPreviousTuples, final PropagationContext context, final InternalWorkingMemory workingMemory]
+MethodInvocation:intersects
+MethodInvocation:getModificationMask
+MethodInvocation:isAllowed
+FieldAccess:constraint
+MethodInvocation:propagateModifyObject
+FieldAccess:sink
+MethodInvocation:byPassModifyToBetaNode
+Method-name:byPassModifyToBetaNode
+Method-returnType:void
+Method-parameters:[final InternalFactHandle factHandle, final ModifyPreviousTuples modifyPreviousTuples, final PropagationContext context, final InternalWorkingMemory workingMemory]
+MethodInvocation:byPassModifyToBetaNode
+Method-name:updateSink
+Method-returnType:void
+Method-parameters:[final ObjectSink sink, final PropagationContext context, final InternalWorkingMemory workingMemory]
+FieldAccess:constraint
+MethodInvocation:updateSink
+FieldAccess:source
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:id
+FieldAccess:constraint
+Method-name:calculateHashCode
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:source
+MethodInvocation:hashCode
+FieldAccess:source
+FieldAccess:constraint
+MethodInvocation:hashCode
+FieldAccess:constraint
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object object]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:getId
+FieldAccess:source
+MethodInvocation:getId
+MethodInvocation:equals
+MethodInvocation:getKnowledgeBase
+MethodInvocation:equals
+Method-name:getNextObjectSinkNode
+Method-returnType:ObjectSinkNode
+Method-parameters:[]
+FieldAccess:nextRightTupleSinkNode
+Method-name:setNextObjectSinkNode
+Method-returnType:void
+Method-parameters:[final ObjectSinkNode next]
+FieldAccess:nextRightTupleSinkNode
+Method-name:getPreviousObjectSinkNode
+Method-returnType:ObjectSinkNode
+Method-parameters:[]
+FieldAccess:previousRightTupleSinkNode
+Method-name:setPreviousObjectSinkNode
+Method-returnType:void
+Method-parameters:[final ObjectSinkNode previous]
+FieldAccess:previousRightTupleSinkNode
+Class:ObjectSinkUpdateAdapter
+Field:sink
+Field:constraint
+Method-name:ObjectSinkUpdateAdapter
+Method-returnType:null
+Method-parameters:[final ObjectSink sink, final AlphaNodeFieldConstraint constraint]
+FieldAccess:sink
+FieldAccess:constraint
+Method-name:assertObject
+Method-returnType:void
+Method-parameters:[final InternalFactHandle handle, final PropagationContext propagationContext, final InternalWorkingMemory workingMemory]
+MethodInvocation:isAllowed
+FieldAccess:constraint
+MethodInvocation:assertObject
+FieldAccess:sink
+Method-name:getId
+Method-returnType:int
+Method-parameters:[]
+Method-name:getPartitionId
+Method-returnType:RuleBasePartitionId
+Method-parameters:[]
+MethodInvocation:getPartitionId
+FieldAccess:sink
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+Method-name:modifyObject
+Method-returnType:void
+Method-parameters:[final InternalFactHandle factHandle, final ModifyPreviousTuples modifyPreviousTuples, final PropagationContext context, final InternalWorkingMemory workingMemory]
+Method-name:byPassModifyToBetaNode
+Method-returnType:void
+Method-parameters:[InternalFactHandle factHandle, ModifyPreviousTuples modifyPreviousTuples, PropagationContext context, InternalWorkingMemory workingMemory]
+Method-name:getType
+Method-returnType:short
+Method-parameters:[]
+Method-name:getAssociationsSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getAssociationsSize
+Method-name:getAssociatedRuleSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getAssociatedRuleSize
+Method-name:getAssociationsSize
+Method-returnType:int
+Method-parameters:[Rule rule]
+MethodInvocation:getAssociationsSize
+Method-name:isAssociatedWith
+Method-returnType:boolean
+Method-parameters:[Rule rule]
+MethodInvocation:isAssociatedWith
+Method-name:thisNodeEquals
+Method-returnType:boolean
+Method-parameters:[final Object object]
+Method-name:nodeHashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:calculateDeclaredMask
+Method-returnType:BitMask
+Method-parameters:[Class modifiedClass, List<String> settableProperties]
+MethodInvocation:isSelf
+MethodInvocation:getOperator
+MethodInvocation:getEvaluator
+MethodInvocation:getListenedPropertyMask
+MethodInvocation:set
+Method-name:getDeclaredMask
+Method-returnType:BitMask
+Method-parameters:[]
+Method-name:getInferredMask
+Method-returnType:BitMask
+Method-parameters:[]

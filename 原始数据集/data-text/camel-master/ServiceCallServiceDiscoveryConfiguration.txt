@@ -1,0 +1,57 @@
+Class:ServiceCallServiceDiscoveryConfiguration
+Field:parent
+Field:factoryKey
+Method-name:ServiceCallServiceDiscoveryConfiguration
+Method-returnType:null
+Method-parameters:[]
+Method-name:ServiceCallServiceDiscoveryConfiguration
+Method-returnType:null
+Method-parameters:[ServiceCallDefinition parent, String factoryKey]
+FieldAccess:parent
+MethodInvocation:ofNullable
+FieldAccess:factoryKey
+Method-name:end
+Method-returnType:ServiceCallDefinition
+Method-parameters:[]
+MethodInvocation:orElseThrow
+FieldAccess:parent
+Method-name:endParent
+Method-returnType:ProcessorDefinition<?>
+Method-parameters:[]
+MethodInvocation:orElseThrow
+MethodInvocation:map
+FieldAccess:parent
+Method-name:property
+Method-returnType:ServiceCallServiceDiscoveryConfiguration
+Method-parameters:[String key, String value]
+Method-name:newInstance
+Method-returnType:ServiceDiscovery
+Method-parameters:[CamelContext camelContext]
+MethodInvocation:notNull
+MethodInvocation:lookup
+MethodInvocation:newInstance
+MethodInvocation:orElse
+MethodInvocation:findClass
+MethodInvocation:getFactoryFinder
+MethodInvocation:adapt
+MethodInvocation:isAssignableFrom
+MethodInvocation:newInstance
+MethodInvocation:getInjector
+MethodInvocation:getName
+MethodInvocation:getProperties
+MethodInvocation:getBeanIntrospection
+MethodInvocation:adapt
+MethodInvocation:replaceAll
+MethodInvocation:resolvePropertyPlaceholders
+MethodInvocation:format
+MethodInvocation:toString
+MethodInvocation:put
+MethodInvocation:getPropertiesAsMap
+MethodInvocation:postProcessFactoryParameters
+MethodInvocation:bind
+MethodInvocation:build
+MethodInvocation:newInstance
+Method-name:serviceDiscoveryConfiguration
+Method-returnType:ServiceCallDefinition
+Method-parameters:[ServiceCallDefinition serviceCallDefinition]
+MethodInvocation:setServiceDiscoveryConfiguration

@@ -1,0 +1,69 @@
+Class:ConsulEcwidClient
+Field:client
+Method-name:ConsulEcwidClient
+Method-returnType:null
+Method-parameters:[String host, int port]
+MethodInvocation:info
+Method-name:checkPass
+Method-returnType:void
+Method-parameters:[String serviceid]
+MethodInvocation:agentCheckPass
+Method-name:registerService
+Method-returnType:void
+Method-parameters:[ConsulService service]
+MethodInvocation:convertService
+MethodInvocation:agentServiceRegister
+Method-name:unregisterService
+Method-returnType:void
+Method-parameters:[String serviceid]
+MethodInvocation:agentServiceDeregister
+Method-name:lookupHealthService
+Method-returnType:ConsulResponse<List<ConsulService>>
+Method-parameters:[String serviceName, long lastConsulIndex]
+MethodInvocation:getHealthServices
+MethodInvocation:getValue
+MethodInvocation:isEmpty
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:size
+MethodInvocation:convertToConsulService
+MethodInvocation:add
+MethodInvocation:getService
+MethodInvocation:getId
+MethodInvocation:getService
+MethodInvocation:error
+MethodInvocation:isEmpty
+MethodInvocation:setValue
+MethodInvocation:setConsulIndex
+MethodInvocation:getConsulIndex
+MethodInvocation:setConsulLastContact
+MethodInvocation:getConsulLastContact
+MethodInvocation:setConsulKnownLeader
+MethodInvocation:isConsulKnownLeader
+Method-name:lookupCommand
+Method-returnType:String
+Method-parameters:[String group]
+MethodInvocation:getKVValue
+MethodInvocation:convertGroupToServiceName
+MethodInvocation:getValue
+MethodInvocation:info
+MethodInvocation:getValue
+MethodInvocation:getDecodedValue
+Method-name:convertToConsulService
+Method-returnType:ConsulService
+Method-parameters:[HealthService healthService]
+MethodInvocation:getService
+MethodInvocation:setAddress
+MethodInvocation:getAddress
+MethodInvocation:setId
+MethodInvocation:getId
+MethodInvocation:setName
+MethodInvocation:getService
+MethodInvocation:setPort
+MethodInvocation:getPort
+MethodInvocation:setTags
+MethodInvocation:getTags
+Method-name:checkFail
+Method-returnType:void
+Method-parameters:[String serviceid]
+MethodInvocation:agentCheckFail

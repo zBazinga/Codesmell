@@ -1,0 +1,36 @@
+Class:ApiRawValue
+Method-name:fromBytes
+Method-returnType:ApiRawValue
+Method-parameters:[byte[] src]
+MethodInvocation:deserialize
+MethodInvocation:getInt
+MethodInvocation:getBytes
+MethodInvocation:parse
+MethodInvocation:parse
+MethodInvocation:parse
+MethodInvocation:parse
+MethodInvocation:parse
+MethodInvocation:parse
+Method-name:getHeader
+Method-returnType:int
+Method-parameters:[]
+Method-name:buildContainer
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:writeInt
+MethodInvocation:getHeader
+MethodInvocation:writeBytes
+MethodInvocation:toByteArray
+MethodInvocation:toByteArray
+Method-name:rawRequestCommand
+Method-returnType:Command<ResponseRawRequest>
+Method-parameters:[final String service, final String method, ExternalModule externalModule]
+MethodInvocation:request
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[ResponseRawRequest response]
+MethodInvocation:onResult
+Method-name:onError
+Method-returnType:void
+Method-parameters:[RpcException e]
+MethodInvocation:onError

@@ -1,0 +1,102 @@
+Class:Identifier
+Field:text
+Field:isQuoted
+Method-name:toIdentifier
+Method-returnType:Identifier
+Method-parameters:[String text]
+MethodInvocation:isEmpty
+MethodInvocation:trim
+MethodInvocation:isQuoted
+MethodInvocation:substring
+MethodInvocation:length
+Method-name:toIdentifier
+Method-returnType:Identifier
+Method-parameters:[String text, boolean quote]
+MethodInvocation:isEmpty
+MethodInvocation:trim
+MethodInvocation:isQuoted
+MethodInvocation:substring
+MethodInvocation:length
+Method-name:isQuoted
+Method-returnType:boolean
+Method-parameters:[String name]
+MethodInvocation:startsWith
+MethodInvocation:endsWith
+MethodInvocation:startsWith
+MethodInvocation:endsWith
+MethodInvocation:startsWith
+MethodInvocation:endsWith
+Method-name:Identifier
+Method-returnType:null
+Method-parameters:[String text, boolean quoted]
+MethodInvocation:isEmpty
+MethodInvocation:isQuoted
+FieldAccess:text
+FieldAccess:isQuoted
+Method-name:Identifier
+Method-returnType:null
+Method-parameters:[String text]
+FieldAccess:text
+FieldAccess:isQuoted
+Method-name:getText
+Method-returnType:String
+Method-parameters:[]
+Method-name:isQuoted
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:render
+Method-returnType:String
+Method-parameters:[Dialect dialect]
+MethodInvocation:valueOf
+MethodInvocation:openQuote
+MethodInvocation:getText
+MethodInvocation:closeQuote
+MethodInvocation:getText
+Method-name:render
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getText
+MethodInvocation:getText
+Method-name:getCanonicalName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toLowerCase
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:render
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+MethodInvocation:getCanonicalName
+MethodInvocation:getCanonicalName
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:toLowerCase
+Method-name:areEqual
+Method-returnType:boolean
+Method-parameters:[Identifier id1, Identifier id2]
+MethodInvocation:equals
+Method-name:quote
+Method-returnType:Identifier
+Method-parameters:[Identifier identifier]
+MethodInvocation:isQuoted
+MethodInvocation:toIdentifier
+MethodInvocation:getText
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[Identifier o]
+MethodInvocation:compareTo
+MethodInvocation:getCanonicalName
+MethodInvocation:getCanonicalName
+Method-name:generateHashedFkName
+Method-returnType:String
+Method-parameters:[String prefix, Identifier referencedTableName, List<Identifier> columnNames, NamingHelper namingHelper]
+MethodInvocation:isEmpty
+MethodInvocation:toArray
+MethodInvocation:size
+MethodInvocation:generateHashedFkName

@@ -1,0 +1,66 @@
+Class:DefaultHttpRegistry
+Field:LOG
+MethodInvocation:getLogger
+Field:registries
+Field:lock
+Field:consumers
+Field:providers
+Method-name:DefaultHttpRegistry
+Method-returnType:null
+Method-parameters:[]
+Method-name:getHttpRegistry
+Method-returnType:HttpRegistry
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:put
+Method-name:removeHttpRegistry
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:remove
+Method-name:register
+Method-returnType:void
+Method-parameters:[HttpConsumer consumer]
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getPath
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:connect
+Method-name:unregister
+Method-returnType:void
+Method-parameters:[HttpConsumer consumer]
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getPath
+MethodInvocation:remove
+MethodInvocation:disconnect
+Method-name:unregister
+Method-returnType:void
+Method-parameters:[HttpRegistryProvider provider, Map<String,Object> properties]
+MethodInvocation:unregister
+Method-name:register
+Method-returnType:void
+Method-parameters:[HttpRegistryProvider provider]
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getServletName
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:connect
+Method-name:unregister
+Method-returnType:void
+Method-parameters:[HttpRegistryProvider provider]
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getServletName
+MethodInvocation:remove
+Method-name:getCamelServlet
+Method-returnType:HttpRegistryProvider
+Method-parameters:[String servletName]
+MethodInvocation:equals
+MethodInvocation:getServletName
+Method-name:setServlets
+Method-returnType:void
+Method-parameters:[List<Servlet> servlets]
+MethodInvocation:clear
+MethodInvocation:add

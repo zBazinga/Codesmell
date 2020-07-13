@@ -1,0 +1,59 @@
+Class:ExternalFilesEntryLinker
+Field:externalFileTypes
+Field:filePreferences
+Field:bibDatabaseContext
+Field:moveFilesCleanup
+Field:renameFilesCleanup
+Method-name:ExternalFilesEntryLinker
+Method-returnType:null
+Method-parameters:[ExternalFileTypes externalFileTypes, FilePreferences filePreferences, BibDatabaseContext bibDatabaseContext]
+FieldAccess:externalFileTypes
+FieldAccess:filePreferences
+FieldAccess:bibDatabaseContext
+FieldAccess:moveFilesCleanup
+FieldAccess:renameFilesCleanup
+Method-name:copyFileToFileDir
+Method-returnType:Optional<Path>
+Method-parameters:[Path file]
+MethodInvocation:getFirstExistingFileDir
+MethodInvocation:isPresent
+MethodInvocation:resolve
+MethodInvocation:get
+MethodInvocation:getFileName
+MethodInvocation:copyFile
+MethodInvocation:of
+MethodInvocation:empty
+Method-name:renameLinkedFilesToPattern
+Method-returnType:void
+Method-parameters:[BibEntry entry]
+MethodInvocation:cleanup
+Method-name:moveLinkedFilesToFileDir
+Method-returnType:void
+Method-parameters:[BibEntry entry]
+MethodInvocation:cleanup
+Method-name:addFilesToEntry
+Method-returnType:void
+Method-parameters:[BibEntry entry, List<Path> files]
+MethodInvocation:ifPresent
+MethodInvocation:getFileExtension
+MethodInvocation:orElse
+MethodInvocation:getExternalFileTypeByExt
+MethodInvocation:relativize
+MethodInvocation:getFileDirectoriesAsPaths
+MethodInvocation:toString
+MethodInvocation:getName
+MethodInvocation:addFile
+Method-name:moveFilesToFileDirAndAddToEntry
+Method-returnType:void
+Method-parameters:[BibEntry entry, List<Path> files]
+MethodInvocation:addFilesToEntry
+MethodInvocation:moveLinkedFilesToFileDir
+MethodInvocation:renameLinkedFilesToPattern
+Method-name:copyFilesToFileDirAndAddToEntry
+Method-returnType:void
+Method-parameters:[BibEntry entry, List<Path> files]
+MethodInvocation:ifPresent
+MethodInvocation:copyFileToFileDir
+MethodInvocation:addFilesToEntry
+MethodInvocation:singletonList
+MethodInvocation:renameLinkedFilesToPattern

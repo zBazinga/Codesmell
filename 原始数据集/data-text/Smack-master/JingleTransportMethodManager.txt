@@ -1,0 +1,62 @@
+Class:JingleTransportMethodManager
+Field:INSTANCES
+Field:transportManagers
+Field:transportPreference
+Method-name:JingleTransportMethodManager
+Method-returnType:null
+Method-parameters:[XMPPConnection connection]
+Method-name:getInstanceFor
+Method-returnType:JingleTransportMethodManager
+Method-parameters:[XMPPConnection connection]
+MethodInvocation:get
+MethodInvocation:put
+Method-name:registerTransportManager
+Method-returnType:void
+Method-parameters:[JingleTransportManager<?> manager]
+MethodInvocation:put
+MethodInvocation:getNamespace
+Method-name:getTransportManager
+Method-returnType:JingleTransportManager<?>
+Method-parameters:[XMPPConnection connection, String namespace]
+MethodInvocation:getTransportManager
+MethodInvocation:getInstanceFor
+Method-name:getTransportManager
+Method-returnType:JingleTransportManager<?>
+Method-parameters:[String namespace]
+MethodInvocation:get
+Method-name:getTransportManager
+Method-returnType:JingleTransportManager<?>
+Method-parameters:[XMPPConnection connection, Jingle request]
+MethodInvocation:getTransportManager
+MethodInvocation:getInstanceFor
+Method-name:getTransportManager
+Method-returnType:JingleTransportManager<?>
+Method-parameters:[Jingle request]
+MethodInvocation:get
+MethodInvocation:getContents
+MethodInvocation:getTransport
+MethodInvocation:getTransportManager
+MethodInvocation:getNamespace
+Method-name:getBestAvailableTransportManager
+Method-returnType:JingleTransportManager<?>
+Method-parameters:[XMPPConnection connection]
+MethodInvocation:getBestAvailableTransportManager
+MethodInvocation:getInstanceFor
+Method-name:getBestAvailableTransportManager
+Method-returnType:JingleTransportManager<?>
+Method-parameters:[]
+MethodInvocation:getTransportManager
+MethodInvocation:iterator
+MethodInvocation:keySet
+MethodInvocation:hasNext
+MethodInvocation:getTransportManager
+MethodInvocation:next
+Method-name:getBestAvailableTransportManager
+Method-returnType:JingleTransportManager<?>
+Method-parameters:[Set<String> except]
+MethodInvocation:getTransportManager
+MethodInvocation:contains
+MethodInvocation:getNamespace
+MethodInvocation:keySet
+MethodInvocation:contains
+MethodInvocation:getTransportManager

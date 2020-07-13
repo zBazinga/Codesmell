@@ -1,0 +1,117 @@
+Class:ReminderExtension
+Field:BLINKING_PERIOD
+Method-name:getExtension
+Method-returnType:ReminderExtension
+Method-parameters:[final NodeModel node]
+MethodInvocation:getExtension
+Field:node
+Field:remindUserAt
+Field:periodUnit
+Field:period
+Field:timer
+Field:script
+Field:task
+Method-name:ReminderExtension
+Method-returnType:null
+Method-parameters:[final NodeModel node]
+FieldAccess:node
+Method-name:getNode
+Method-returnType:NodeModel
+Method-parameters:[]
+Method-name:getRemindUserAt
+Method-returnType:long
+Method-parameters:[]
+Method-name:setRemindUserAt
+Method-returnType:void
+Method-parameters:[final long remindUserAt]
+FieldAccess:remindUserAt
+Method-name:getPeriodUnit
+Method-returnType:PeriodUnit
+Method-parameters:[]
+Method-name:setPeriodUnit
+Method-returnType:void
+Method-parameters:[PeriodUnit periodUnit]
+FieldAccess:periodUnit
+Method-name:getPeriodUnitAsString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:name
+Method-name:setPeriodUnitAsString
+Method-returnType:void
+Method-parameters:[String periodUnit]
+FieldAccess:periodUnit
+MethodInvocation:valueOf
+Method-name:getPeriod
+Method-returnType:int
+Method-parameters:[]
+Method-name:setPeriod
+Method-returnType:void
+Method-parameters:[int period]
+FieldAccess:period
+Method-name:getScript
+Method-returnType:String
+Method-parameters:[]
+Method-name:setScript
+Method-returnType:void
+Method-parameters:[String script]
+FieldAccess:script
+Method-name:scheduleTimer
+Method-returnType:void
+Method-parameters:[final TimerBlinkTask task, final Date date]
+MethodInvocation:createTimer
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:schedule
+FieldAccess:task
+Method-name:deactivateTimer
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:cancel
+Method-name:displayStateIcon
+Method-returnType:void
+Method-parameters:[final NodeModel parent, final ClockState state]
+MethodInvocation:alreadyExecuted
+MethodInvocation:isAncestorNode
+MethodInvocation:displayState
+Method-name:isAncestorNode
+Method-returnType:boolean
+Method-parameters:[final NodeModel parent]
+MethodInvocation:getParentNode
+MethodInvocation:equals
+Method-name:onNodeInserted
+Method-returnType:void
+Method-parameters:[final NodeModel parent, final NodeModel child, final int newIndex]
+MethodInvocation:displayStateIcon
+Method-name:onNodeMoved
+Method-returnType:void
+Method-parameters:[NodeMoveEvent nodeMoveEvent]
+MethodInvocation:displayStateIcon
+Method-name:onPreNodeDelete
+Method-returnType:void
+Method-parameters:[NodeDeletionEvent nodeDeletionEvent]
+MethodInvocation:displayStateIcon
+Method-name:onPreNodeMoved
+Method-returnType:void
+Method-parameters:[NodeMoveEvent nodeMoveEvent]
+MethodInvocation:displayStateIcon
+Method-name:mapChanged
+Method-returnType:void
+Method-parameters:[final MapChangeEvent event]
+Method-name:onNodeDeleted
+Method-returnType:void
+Method-parameters:[NodeDeletionEvent nodeDeletionEvent]
+Method-name:displayState
+Method-returnType:void
+Method-parameters:[final ClockState stateAdded, final NodeModel pNode, final boolean recurse]
+MethodInvocation:putExtension
+MethodInvocation:removeExtension
+MethodInvocation:nodeRefresh
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+MethodInvocation:getParentNode
+MethodInvocation:displayState
+Method-name:scheduleTimerOther
+Method-returnType:void
+Method-parameters:[final TimerBlinkTask task, ReminderHook reminderHook]
+MethodInvocation:getRemindUserAt
+MethodInvocation:scheduleTimer

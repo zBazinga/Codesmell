@@ -1,0 +1,163 @@
+Class:ColumnPrunerProcCtx
+Field:pctx
+Field:prunedColLists
+Field:joinPrunedColLists
+Method-name:ColumnPrunerProcCtx
+Method-returnType:null
+Method-parameters:[ParseContext pctx]
+FieldAccess:pctx
+Method-name:getParseContext
+Method-returnType:ParseContext
+Method-parameters:[]
+Method-name:getJoinPrunedColLists
+Method-returnType:Map<CommonJoinOperator,Map<Byte,List<FieldNode>>>
+Method-parameters:[]
+Method-name:getPrunedColList
+Method-returnType:List<FieldNode>
+Method-parameters:[Operator<? extends OperatorDesc> op]
+MethodInvocation:get
+Method-name:getPrunedColLists
+Method-returnType:Map<Operator<? extends OperatorDesc>,List<FieldNode>>
+Method-parameters:[]
+Method-name:genColLists
+Method-returnType:List<FieldNode>
+Method-parameters:[Operator<? extends OperatorDesc> curOp]
+MethodInvocation:getChildOperators
+MethodInvocation:getChildOperators
+MethodInvocation:indexOf
+MethodInvocation:getParentOperators
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getSchema
+MethodInvocation:getSignature
+MethodInvocation:add
+MethodInvocation:getInternalName
+MethodInvocation:get
+MethodInvocation:mergeFieldNodes
+Method-name:genColLists
+Method-returnType:List<FieldNode>
+Method-parameters:[Operator<? extends OperatorDesc> curOp, Operator<? extends OperatorDesc> child]
+MethodInvocation:getChildOperators
+MethodInvocation:indexOf
+MethodInvocation:getParentOperators
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+Method-name:getColsFromSelectExpr
+Method-returnType:List<FieldNode>
+Method-parameters:[SelectOperator op]
+MethodInvocation:getConf
+MethodInvocation:isSelStarNoCompute
+MethodInvocation:getSignature
+MethodInvocation:getSchema
+MethodInvocation:add
+MethodInvocation:getInternalName
+MethodInvocation:getColList
+MethodInvocation:mergeFieldNodesWithDesc
+Method-name:getSelectColsFromChildren
+Method-returnType:List<FieldNode>
+Method-parameters:[SelectOperator op, List<FieldNode> colList]
+MethodInvocation:getConf
+MethodInvocation:isSelStarNoCompute
+MethodInvocation:addAll
+MethodInvocation:getColList
+MethodInvocation:getOutputColumnNames
+MethodInvocation:size
+MethodInvocation:mergeFieldNodesWithDesc
+MethodInvocation:get
+MethodInvocation:lookupColumn
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIsGenerated
+MethodInvocation:getColumn
+MethodInvocation:setNodes
+MethodInvocation:getNodes
+MethodInvocation:mergeFieldNodes
+MethodInvocation:mergeFieldNodesWithDesc
+MethodInvocation:get
+Method-name:getNestedColPathByDesc
+Method-returnType:List<FieldNode>
+Method-parameters:[ExprNodeDesc desc]
+MethodInvocation:getNestedColsFromExprNodeDesc
+MethodInvocation:mergeFieldNodes
+Method-name:getNestedColsFromExprNodeDesc
+Method-returnType:void
+Method-parameters:[ExprNodeDesc desc, FieldNode pathToRoot, List<FieldNode> paths]
+MethodInvocation:getColumn
+MethodInvocation:checkListAndMap
+MethodInvocation:add
+MethodInvocation:getDesc
+MethodInvocation:getFieldName
+MethodInvocation:checkListAndMap
+MethodInvocation:getNestedColsFromExprNodeDesc
+MethodInvocation:getChildren
+MethodInvocation:getNestedColsFromExprNodeDesc
+Method-name:checkListAndMap
+Method-returnType:void
+Method-parameters:[ExprNodeDesc desc, FieldNode pathToRoot, FieldNode fn]
+MethodInvocation:getTypeInfo
+MethodInvocation:getCategory
+MethodInvocation:getCategory
+MethodInvocation:addFieldNodes
+Method-name:getSelectColsFromLVJoin
+Method-returnType:List<FieldNode>
+Method-parameters:[RowSchema rs, List<FieldNode> colList]
+MethodInvocation:getColumnInfo
+MethodInvocation:getFieldName
+MethodInvocation:add
+Method-name:handleFilterUnionChildren
+Method-returnType:void
+Method-parameters:[Operator<? extends OperatorDesc> curOp]
+MethodInvocation:getChildOperators
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:getChildOperators
+MethodInvocation:genColLists
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:getSignature
+MethodInvocation:getSchema
+MethodInvocation:lookupColumn
+MethodInvocation:getInternalName
+MethodInvocation:getType
+MethodInvocation:getInternalName
+MethodInvocation:getTabAlias
+MethodInvocation:getIsVirtualCol
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:getInternalName
+MethodInvocation:getInternalName
+MethodInvocation:getType
+MethodInvocation:getTabAlias
+MethodInvocation:getIsVirtualCol
+MethodInvocation:isHiddenVirtualCol
+MethodInvocation:setAlias
+MethodInvocation:getAlias
+MethodInvocation:add
+MethodInvocation:put
+MethodInvocation:getInternalName
+MethodInvocation:removeChild
+MethodInvocation:getAndMakeChild
+MethodInvocation:makeChild
+MethodInvocation:setColumnExprMap
+Method-name:toColumnNames
+Method-returnType:ArrayList<String>
+Method-parameters:[List<FieldNode> columns]
+MethodInvocation:add
+MethodInvocation:getFieldName
+Method-name:fromColumnNames
+Method-returnType:List<FieldNode>
+Method-parameters:[List<String> columnNames]
+MethodInvocation:add
+Method-name:lookupColumn
+Method-returnType:FieldNode
+Method-parameters:[Collection<FieldNode> columns, String colName]
+MethodInvocation:getFieldName
+MethodInvocation:equals
+MethodInvocation:getFieldName
+Method-name:mergeFieldNodesWithDesc
+Method-returnType:List<FieldNode>
+Method-parameters:[List<FieldNode> left, ExprNodeDesc desc]
+MethodInvocation:mergeFieldNodes
+MethodInvocation:getNestedColPathByDesc

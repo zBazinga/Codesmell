@@ -1,0 +1,41 @@
+Class:UnnecessaryConstructorRule
+Method-name:defaultSuppressionAnnotations
+Method-returnType:Collection<String>
+Method-parameters:[]
+MethodInvocation:singletonList
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTClassOrInterfaceDeclaration node, Object data]
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:isExplicitDefaultConstructor
+MethodInvocation:haveSameAccessModifier
+MethodInvocation:addViolation
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTEnumDeclaration node, Object data]
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:isExplicitDefaultConstructor
+MethodInvocation:isPrivate
+MethodInvocation:addViolation
+Method-name:isExplicitDefaultConstructor
+Method-returnType:boolean
+Method-parameters:[Node node]
+MethodInvocation:findDescendantsOfType
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getArity
+MethodInvocation:hasIgnoredAnnotation
+MethodInvocation:hasDescendantOfType
+MethodInvocation:hasDescendantOfType
+MethodInvocation:hasDefaultConstructorInvocation
+Method-name:haveSameAccessModifier
+Method-returnType:boolean
+Method-parameters:[ASTClassOrInterfaceDeclaration node, ASTConstructorDeclaration cons]
+MethodInvocation:isPrivate
+MethodInvocation:isPrivate
+MethodInvocation:isProtected
+MethodInvocation:isProtected
+MethodInvocation:isPublic
+MethodInvocation:isPublic
+MethodInvocation:isPackagePrivate
+MethodInvocation:isPackagePrivate

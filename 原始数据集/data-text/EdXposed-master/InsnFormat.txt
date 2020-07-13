@@ -1,0 +1,190 @@
+Class:InsnFormat
+Field:ALLOW_EXTENDED_OPCODES
+Method-name:insnArgString
+Method-returnType:String
+Method-parameters:[DalvInsn insn]
+Method-name:insnCommentString
+Method-returnType:String
+Method-parameters:[DalvInsn insn, boolean noteIndices]
+Method-name:codeSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:isCompatible
+Method-returnType:boolean
+Method-parameters:[DalvInsn insn]
+Method-name:compatibleRegs
+Method-returnType:BitSet
+Method-parameters:[DalvInsn insn]
+Method-name:branchFits
+Method-returnType:boolean
+Method-parameters:[TargetInsn insn]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out, DalvInsn insn]
+Method-name:regListString
+Method-returnType:String
+Method-parameters:[RegisterSpecList list]
+MethodInvocation:size
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:regString
+MethodInvocation:get
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:regRangeString
+Method-returnType:String
+Method-parameters:[RegisterSpecList list]
+MethodInvocation:size
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:regString
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getCategory
+MethodInvocation:withOffset
+MethodInvocation:append
+MethodInvocation:regString
+MethodInvocation:get
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:regString
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:literalBitsString
+Method-returnType:String
+Method-parameters:[CstLiteralBits value]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:typeName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toHuman
+MethodInvocation:toString
+Method-name:literalBitsComment
+Method-returnType:String
+Method-parameters:[CstLiteralBits value, int width]
+MethodInvocation:append
+MethodInvocation:getLongBits
+MethodInvocation:getIntBits
+MethodInvocation:append
+MethodInvocation:uNibble
+MethodInvocation:append
+MethodInvocation:u1
+MethodInvocation:append
+MethodInvocation:u2
+MethodInvocation:append
+MethodInvocation:u4
+MethodInvocation:append
+MethodInvocation:u8
+MethodInvocation:toString
+Method-name:branchString
+Method-returnType:String
+Method-parameters:[DalvInsn insn]
+MethodInvocation:getTargetAddress
+MethodInvocation:u2
+MethodInvocation:u4
+Method-name:branchComment
+Method-returnType:String
+Method-parameters:[DalvInsn insn]
+MethodInvocation:getTargetOffset
+MethodInvocation:s2
+MethodInvocation:s4
+Method-name:signedFitsInNibble
+Method-returnType:boolean
+Method-parameters:[int value]
+Method-name:unsignedFitsInNibble
+Method-returnType:boolean
+Method-parameters:[int value]
+Method-name:signedFitsInByte
+Method-returnType:boolean
+Method-parameters:[int value]
+Method-name:unsignedFitsInByte
+Method-returnType:boolean
+Method-parameters:[int value]
+Method-name:signedFitsInShort
+Method-returnType:boolean
+Method-parameters:[int value]
+Method-name:unsignedFitsInShort
+Method-returnType:boolean
+Method-parameters:[int value]
+Method-name:isRegListSequential
+Method-returnType:boolean
+Method-parameters:[RegisterSpecList list]
+MethodInvocation:size
+MethodInvocation:getReg
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getReg
+MethodInvocation:getCategory
+Method-name:argIndex
+Method-returnType:int
+Method-parameters:[DalvInsn insn]
+MethodInvocation:getValue
+MethodInvocation:getConstant
+Method-name:opcodeUnit
+Method-returnType:short
+Method-parameters:[DalvInsn insn, int arg]
+MethodInvocation:getOpcode
+MethodInvocation:getOpcode
+Method-name:opcodeUnit
+Method-returnType:short
+Method-parameters:[DalvInsn insn]
+MethodInvocation:getOpcode
+MethodInvocation:getOpcode
+Method-name:codeUnit
+Method-returnType:short
+Method-parameters:[int low, int high]
+Method-name:codeUnit
+Method-returnType:short
+Method-parameters:[int n0, int n1, int n2, int n3]
+Method-name:makeByte
+Method-returnType:int
+Method-parameters:[int low, int high]
+Method-name:write
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out, short c0]
+MethodInvocation:writeShort
+Method-name:write
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out, short c0, short c1]
+MethodInvocation:writeShort
+MethodInvocation:writeShort
+Method-name:write
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out, short c0, short c1, short c2]
+MethodInvocation:writeShort
+MethodInvocation:writeShort
+MethodInvocation:writeShort
+Method-name:write
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out, short c0, short c1, short c2, short c3]
+MethodInvocation:writeShort
+MethodInvocation:writeShort
+MethodInvocation:writeShort
+MethodInvocation:writeShort
+Method-name:write
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out, short c0, short c1, short c2, short c3, short c4]
+MethodInvocation:writeShort
+MethodInvocation:writeShort
+MethodInvocation:writeShort
+MethodInvocation:writeShort
+MethodInvocation:writeShort
+Method-name:write
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out, short c0, int c1c2]
+MethodInvocation:write
+Method-name:write
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out, short c0, int c1c2, short c3]
+MethodInvocation:write
+Method-name:write
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out, short c0, int c1c2, short c3, short c4]
+MethodInvocation:write
+Method-name:write
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out, short c0, long c1c2c3c4]
+MethodInvocation:write

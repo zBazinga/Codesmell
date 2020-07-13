@@ -1,0 +1,47 @@
+Class:AddVotingConfigExclusionsRequest
+Field:nodeDescriptions
+Field:timeout
+Method-name:AddVotingConfigExclusionsRequest
+Method-returnType:null
+Method-parameters:[String[] nodeDescriptions]
+MethodInvocation:timeValueSeconds
+Method-name:AddVotingConfigExclusionsRequest
+Method-returnType:null
+Method-parameters:[String[] nodeDescriptions, TimeValue timeout]
+MethodInvocation:compareTo
+FieldAccess:nodeDescriptions
+FieldAccess:timeout
+Method-name:AddVotingConfigExclusionsRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readStringArray
+MethodInvocation:readTimeValue
+Method-name:resolveVotingConfigExclusionsAndCheckMaximum
+Method-returnType:Set<VotingConfigExclusion>
+Method-parameters:[ClusterState currentState, int maxExclusionsCount, String maximumSettingKey]
+MethodInvocation:resolveVotingConfigExclusions
+MethodInvocation:size
+MethodInvocation:getVotingConfigExclusions
+MethodInvocation:size
+MethodInvocation:asList
+Method-name:getNodeDescriptions
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:getTimeout
+Method-returnType:TimeValue
+Method-parameters:[]
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+Method-name:readFrom
+Method-returnType:void
+Method-parameters:[StreamInput in]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeStringArray
+MethodInvocation:writeTimeValue
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:asList

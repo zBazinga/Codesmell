@@ -1,0 +1,42 @@
+Class:SessionWindowAssigner
+Field:serialVersionUID
+Field:sessionGap
+Field:isEventTime
+Method-name:SessionWindowAssigner
+Method-returnType:null
+Method-parameters:[long sessionGap, boolean isEventTime]
+FieldAccess:sessionGap
+FieldAccess:isEventTime
+Method-name:assignWindows
+Method-returnType:Collection<TimeWindow>
+Method-parameters:[RowData element, long timestamp]
+MethodInvocation:singletonList
+Method-name:mergeWindows
+Method-returnType:void
+Method-parameters:[TimeWindow newWindow, NavigableSet<TimeWindow> sortedWindows, MergeCallback<TimeWindow> callback]
+MethodInvocation:ceiling
+MethodInvocation:floor
+MethodInvocation:mergeWindow
+MethodInvocation:mergeWindow
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:merge
+Method-name:getWindowSerializer
+Method-returnType:TypeSerializer<TimeWindow>
+Method-parameters:[ExecutionConfig executionConfig]
+Method-name:isEventTime
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:withGap
+Method-returnType:SessionWindowAssigner
+Method-parameters:[Duration size]
+MethodInvocation:toMillis
+Method-name:withEventTime
+Method-returnType:SessionWindowAssigner
+Method-parameters:[]
+Method-name:withProcessingTime
+Method-returnType:SessionWindowAssigner
+Method-parameters:[]

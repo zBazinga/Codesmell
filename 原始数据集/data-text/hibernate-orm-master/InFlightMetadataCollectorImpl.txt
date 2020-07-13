@@ -1,0 +1,1188 @@
+Class:InFlightMetadataCollectorImpl
+Field:log
+MethodInvocation:messageLogger
+Field:bootstrapContext
+Field:options
+Field:attributeConverterManager
+Field:uuid
+Field:identifierGeneratorFactory
+Field:entityBindingMap
+Field:collectionBindingMap
+Field:typeDefinitionMap
+Field:filterDefinitionMap
+Field:imports
+Field:database
+Field:namedQueryMap
+Field:namedNativeQueryMap
+Field:namedProcedureCallMap
+Field:sqlResultSetMappingMap
+Field:namedEntityGraphMap
+Field:fetchProfileMap
+Field:idGeneratorDefinitionMap
+Field:sqlFunctionMap
+Field:defaultIdentifierGeneratorNames
+Field:defaultNamedQueryNames
+Field:defaultNamedNativeQueryNames
+Field:defaultSqlResultSetMappingNames
+Field:defaultNamedProcedureNames
+Field:anyMetaDefs
+Field:mappedSuperClasses
+Field:propertiesAnnotatedWithMapsId
+Field:propertiesAnnotatedWithIdAndToOne
+Field:mappedByResolver
+Field:propertyRefResolver
+Field:delayedPropertyReferenceHandlers
+Field:uniqueConstraintHoldersByTable
+Field:jpaIndexHoldersByTable
+Method-name:InFlightMetadataCollectorImpl
+Method-returnType:null
+Method-parameters:[BootstrapContext bootstrapContext, MetadataBuildingOptions options]
+FieldAccess:bootstrapContext
+FieldAccess:uuid
+MethodInvocation:randomUUID
+FieldAccess:options
+FieldAccess:identifierGeneratorFactory
+MethodInvocation:getService
+MethodInvocation:getServiceRegistry
+MethodInvocation:entrySet
+MethodInvocation:getSqlFunctions
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:forEach
+MethodInvocation:getAuxiliaryDatabaseObjectList
+MethodInvocation:getDatabase
+Method-name:getUUID
+Method-returnType:UUID
+Method-parameters:[]
+Method-name:getMetadataBuildingOptions
+Method-returnType:MetadataBuildingOptions
+Method-parameters:[]
+Method-name:getBootstrapContext
+Method-returnType:BootstrapContext
+Method-parameters:[]
+Method-name:getTypeConfiguration
+Method-returnType:TypeConfiguration
+Method-parameters:[]
+MethodInvocation:getTypeConfiguration
+Method-name:getTypeResolver
+Method-returnType:TypeResolver
+Method-parameters:[]
+MethodInvocation:getTypeResolver
+MethodInvocation:getTypeConfiguration
+Method-name:getDatabase
+Method-returnType:Database
+Method-parameters:[]
+FieldAccess:database
+Method-name:buildNamedQueryRepository
+Method-returnType:NamedQueryRepository
+Method-parameters:[SessionFactoryImpl sessionFactory]
+Method-name:getSqlFunctionMap
+Method-returnType:Map<String,SQLFunction>
+Method-parameters:[]
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+Method-name:getMappedSuperclassMappingsCopy
+Method-returnType:Set<MappedSuperclass>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:initSessionFactory
+Method-returnType:void
+Method-parameters:[SessionFactoryImplementor sessionFactory]
+Method-name:getIdentifierGeneratorFactory
+Method-returnType:IdentifierGeneratorFactory
+Method-parameters:[]
+Method-name:getSessionFactoryBuilder
+Method-returnType:SessionFactoryBuilder
+Method-parameters:[]
+Method-name:buildSessionFactory
+Method-returnType:SessionFactory
+Method-parameters:[]
+Method-name:getEntityBindings
+Method-returnType:java.util.Collection<PersistentClass>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getEntityBindingMap
+Method-returnType:Map<String,PersistentClass>
+Method-parameters:[]
+Method-name:getEntityBinding
+Method-returnType:PersistentClass
+Method-parameters:[String entityName]
+MethodInvocation:get
+Method-name:addEntityBinding
+Method-returnType:void
+Method-parameters:[PersistentClass persistentClass]
+MethodInvocation:getEntityName
+MethodInvocation:getJpaEntityName
+MethodInvocation:containsKey
+MethodInvocation:orElse
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:values
+MethodInvocation:equals
+MethodInvocation:getJpaEntityName
+MethodInvocation:format
+MethodInvocation:getClassName
+MethodInvocation:getClassName
+MethodInvocation:put
+Method-name:getCollectionBindings
+Method-returnType:java.util.Collection<Collection>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getCollectionBinding
+Method-returnType:Collection
+Method-parameters:[String role]
+MethodInvocation:get
+Method-name:addCollectionBinding
+Method-returnType:void
+Method-parameters:[Collection collection]
+MethodInvocation:getRole
+MethodInvocation:containsKey
+MethodInvocation:put
+Method-name:getTypeDefinition
+Method-returnType:TypeDefinition
+Method-parameters:[String registrationKey]
+MethodInvocation:get
+Method-name:addTypeDefinition
+Method-returnType:void
+Method-parameters:[TypeDefinition typeDefinition]
+MethodInvocation:isEmpty
+MethodInvocation:getName
+MethodInvocation:addTypeDefinition
+MethodInvocation:getName
+MethodInvocation:getRegistrationKeys
+MethodInvocation:getRegistrationKeys
+MethodInvocation:addTypeDefinition
+Method-name:addTypeDefinition
+Method-returnType:void
+Method-parameters:[String registrationKey, TypeDefinition typeDefinition]
+MethodInvocation:put
+MethodInvocation:debugf
+MethodInvocation:getName
+MethodInvocation:getTypeImplementorClass
+Method-name:getClassmateContext
+Method-returnType:ClassmateContext
+Method-parameters:[]
+MethodInvocation:getClassmateContext
+Method-name:addAttributeConverter
+Method-returnType:void
+Method-parameters:[Class<? extends AttributeConverter> converterClass]
+MethodInvocation:addConverter
+MethodInvocation:getClassmateContext
+MethodInvocation:getBootstrapContext
+Method-name:addAttributeConverter
+Method-returnType:void
+Method-parameters:[ConverterDescriptor descriptor]
+MethodInvocation:addConverter
+Method-name:getAttributeConverterAutoApplyHandler
+Method-returnType:ConverterAutoApplyHandler
+Method-parameters:[]
+Method-name:getFilterDefinitions
+Method-returnType:Map<String,FilterDefinition>
+Method-parameters:[]
+Method-name:getFilterDefinition
+Method-returnType:FilterDefinition
+Method-parameters:[String name]
+MethodInvocation:get
+Method-name:addFilterDefinition
+Method-returnType:void
+Method-parameters:[FilterDefinition filterDefinition]
+MethodInvocation:getFilterName
+MethodInvocation:put
+MethodInvocation:getFilterName
+Method-name:getFetchProfiles
+Method-returnType:java.util.Collection<FetchProfile>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getFetchProfile
+Method-returnType:FetchProfile
+Method-parameters:[String name]
+MethodInvocation:get
+Method-name:addFetchProfile
+Method-returnType:void
+Method-parameters:[FetchProfile profile]
+MethodInvocation:getName
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:warn
+MethodInvocation:getName
+Method-name:getIdentifierGenerator
+Method-returnType:IdentifierGeneratorDefinition
+Method-parameters:[String name]
+MethodInvocation:get
+Method-name:collectTableMappings
+Method-returnType:java.util.Collection<Table>
+Method-parameters:[]
+MethodInvocation:getNamespaces
+MethodInvocation:getDatabase
+MethodInvocation:addAll
+MethodInvocation:getTables
+Method-name:addIdentifierGenerator
+Method-returnType:void
+Method-parameters:[IdentifierGeneratorDefinition generator]
+MethodInvocation:getName
+MethodInvocation:contains
+MethodInvocation:getName
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:isGlobalGeneratorScopeEnabled
+MethodInvocation:getJpaCompliance
+MethodInvocation:getName
+MethodInvocation:duplicateGeneratorName
+MethodInvocation:getName
+Method-name:addDefaultIdentifierGenerator
+Method-returnType:void
+Method-parameters:[IdentifierGeneratorDefinition generator]
+MethodInvocation:addIdentifierGenerator
+MethodInvocation:add
+MethodInvocation:getName
+Method-name:getNamedEntityGraph
+Method-returnType:NamedEntityGraphDefinition
+Method-parameters:[String name]
+MethodInvocation:get
+Method-name:getNamedEntityGraphs
+Method-returnType:Map<String,NamedEntityGraphDefinition>
+Method-parameters:[]
+Method-name:addNamedEntityGraph
+Method-returnType:void
+Method-parameters:[NamedEntityGraphDefinition definition]
+MethodInvocation:getRegisteredName
+MethodInvocation:put
+Method-name:getNamedQueryDefinition
+Method-returnType:NamedQueryDefinition
+Method-parameters:[String name]
+MethodInvocation:get
+Method-name:getNamedQueryDefinitions
+Method-returnType:java.util.Collection<NamedQueryDefinition>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:addNamedQuery
+Method-returnType:void
+Method-parameters:[NamedQueryDefinition def]
+MethodInvocation:getName
+MethodInvocation:getQueryString
+MethodInvocation:contains
+MethodInvocation:getName
+MethodInvocation:applyNamedQuery
+MethodInvocation:getName
+Method-name:applyNamedQuery
+Method-returnType:void
+Method-parameters:[String name, NamedQueryDefinition query]
+MethodInvocation:checkQueryName
+MethodInvocation:put
+MethodInvocation:intern
+Method-name:checkQueryName
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:containsKey
+MethodInvocation:containsKey
+Method-name:addDefaultQuery
+Method-returnType:void
+Method-parameters:[NamedQueryDefinition queryDefinition]
+MethodInvocation:applyNamedQuery
+MethodInvocation:getName
+MethodInvocation:add
+MethodInvocation:getName
+Method-name:getNamedNativeQueryDefinition
+Method-returnType:NamedSQLQueryDefinition
+Method-parameters:[String name]
+MethodInvocation:get
+Method-name:getNamedNativeQueryDefinitions
+Method-returnType:java.util.Collection<NamedSQLQueryDefinition>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:addNamedNativeQuery
+Method-returnType:void
+Method-parameters:[NamedSQLQueryDefinition def]
+MethodInvocation:getName
+MethodInvocation:getQueryString
+MethodInvocation:contains
+MethodInvocation:getName
+MethodInvocation:applyNamedNativeQuery
+MethodInvocation:getName
+Method-name:applyNamedNativeQuery
+Method-returnType:void
+Method-parameters:[String name, NamedSQLQueryDefinition query]
+MethodInvocation:checkQueryName
+MethodInvocation:put
+MethodInvocation:intern
+Method-name:addDefaultNamedNativeQuery
+Method-returnType:void
+Method-parameters:[NamedSQLQueryDefinition query]
+MethodInvocation:applyNamedNativeQuery
+MethodInvocation:getName
+MethodInvocation:add
+MethodInvocation:getName
+Method-name:getNamedProcedureCallDefinitions
+Method-returnType:java.util.Collection<NamedProcedureCallDefinition>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:addNamedProcedureCallDefinition
+Method-returnType:void
+Method-parameters:[NamedProcedureCallDefinition definition]
+MethodInvocation:getRegisteredName
+MethodInvocation:contains
+MethodInvocation:put
+Method-name:addDefaultNamedProcedureCallDefinition
+Method-returnType:void
+Method-parameters:[NamedProcedureCallDefinition definition]
+MethodInvocation:addNamedProcedureCallDefinition
+MethodInvocation:add
+MethodInvocation:getRegisteredName
+Method-name:getResultSetMappingDefinitions
+Method-returnType:Map<String,ResultSetMappingDefinition>
+Method-parameters:[]
+Method-name:getResultSetMapping
+Method-returnType:ResultSetMappingDefinition
+Method-parameters:[String name]
+MethodInvocation:get
+Method-name:addResultSetMapping
+Method-returnType:void
+Method-parameters:[ResultSetMappingDefinition resultSetMappingDefinition]
+MethodInvocation:getName
+MethodInvocation:contains
+MethodInvocation:applyResultSetMapping
+Method-name:addDefaultResultSetMapping
+Method-returnType:void
+Method-parameters:[ResultSetMappingDefinition definition]
+MethodInvocation:getName
+MethodInvocation:contains
+MethodInvocation:containsKey
+MethodInvocation:remove
+MethodInvocation:applyResultSetMapping
+MethodInvocation:add
+Method-name:getImports
+Method-returnType:Map<String,String>
+Method-parameters:[]
+Method-name:addImport
+Method-returnType:void
+Method-parameters:[String importName, String entityName]
+MethodInvocation:tracev
+MethodInvocation:put
+MethodInvocation:debug
+Method-name:addTable
+Method-returnType:Table
+Method-parameters:[String schemaName, String catalogName, String name, String subselectFragment, boolean isAbstract]
+MethodInvocation:locateNamespace
+MethodInvocation:getDatabase
+MethodInvocation:toIdentifier
+MethodInvocation:getDatabase
+MethodInvocation:toIdentifier
+MethodInvocation:getDatabase
+MethodInvocation:toIdentifier
+MethodInvocation:getDatabase
+MethodInvocation:locateTable
+MethodInvocation:setAbstract
+MethodInvocation:createTable
+Method-name:addDenormalizedTable
+Method-returnType:Table
+Method-parameters:[String schemaName, String catalogName, String name, boolean isAbstract, String subselectFragment, Table includedTable]
+MethodInvocation:locateNamespace
+MethodInvocation:getDatabase
+MethodInvocation:toIdentifier
+MethodInvocation:getDatabase
+MethodInvocation:toIdentifier
+MethodInvocation:getDatabase
+MethodInvocation:toIdentifier
+MethodInvocation:getDatabase
+MethodInvocation:locateTable
+MethodInvocation:toString
+MethodInvocation:createDenormalizedTable
+Method-name:getIdentifierType
+Method-returnType:org.hibernate.type.Type
+Method-parameters:[String entityName]
+MethodInvocation:get
+MethodInvocation:getType
+MethodInvocation:getIdentifier
+Method-name:getIdentifierPropertyName
+Method-returnType:String
+Method-parameters:[String entityName]
+MethodInvocation:get
+MethodInvocation:hasIdentifierProperty
+MethodInvocation:getName
+MethodInvocation:getIdentifierProperty
+Method-name:getReferencedPropertyType
+Method-returnType:org.hibernate.type.Type
+Method-parameters:[String entityName, String propertyName]
+MethodInvocation:get
+MethodInvocation:getReferencedProperty
+MethodInvocation:getType
+Field:logicalToPhysicalTableNameMap
+Field:physicalToLogicalTableNameMap
+Method-name:addTableNameBinding
+Method-returnType:void
+Method-parameters:[Identifier logicalName, Table table]
+MethodInvocation:put
+MethodInvocation:getNameIdentifier
+MethodInvocation:put
+MethodInvocation:getNameIdentifier
+Method-name:addTableNameBinding
+Method-returnType:void
+Method-parameters:[String schema, String catalog, String logicalName, String realTableName, Table denormalizedSuperTable]
+MethodInvocation:toIdentifier
+MethodInvocation:getDatabase
+MethodInvocation:toIdentifier
+MethodInvocation:getDatabase
+MethodInvocation:put
+MethodInvocation:put
+Method-name:getLogicalTableName
+Method-returnType:String
+Method-parameters:[Table ownerTable]
+MethodInvocation:get
+MethodInvocation:getNameIdentifier
+MethodInvocation:getName
+MethodInvocation:render
+Method-name:getPhysicalTableName
+Method-returnType:String
+Method-parameters:[Identifier logicalName]
+MethodInvocation:get
+MethodInvocation:render
+Method-name:getPhysicalTableName
+Method-returnType:String
+Method-parameters:[String logicalName]
+MethodInvocation:getPhysicalTableName
+MethodInvocation:toIdentifier
+MethodInvocation:getDatabase
+Class:TableColumnNameBinding
+Field:tableName
+Field:logicalToPhysical
+Field:physicalToLogical
+Method-name:TableColumnNameBinding
+Method-returnType:null
+Method-parameters:[String tableName]
+FieldAccess:tableName
+Method-name:addBinding
+Method-returnType:void
+Method-parameters:[Identifier logicalName, Column physicalColumn]
+MethodInvocation:getQuotedName
+MethodInvocation:getDialect
+MethodInvocation:getJdbcEnvironment
+MethodInvocation:getDatabase
+MethodInvocation:bindLogicalToPhysical
+MethodInvocation:bindPhysicalToLogical
+Method-name:bindLogicalToPhysical
+Method-returnType:void
+Method-parameters:[Identifier logicalName, String physicalName]
+MethodInvocation:put
+MethodInvocation:isQuoted
+MethodInvocation:equals
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:format
+Method-name:bindPhysicalToLogical
+Method-returnType:void
+Method-parameters:[Identifier logicalName, String physicalName]
+MethodInvocation:put
+MethodInvocation:equals
+MethodInvocation:format
+Field:columnNameBindingByTableMap
+Method-name:addColumnNameBinding
+Method-returnType:void
+Method-parameters:[Table table, String logicalName, Column column]
+MethodInvocation:addColumnNameBinding
+MethodInvocation:toIdentifier
+MethodInvocation:getDatabase
+Method-name:addColumnNameBinding
+Method-returnType:void
+Method-parameters:[Table table, Identifier logicalName, Column column]
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:put
+MethodInvocation:addBinding
+Method-name:getPhysicalColumnName
+Method-returnType:String
+Method-parameters:[Table table, String logicalName]
+MethodInvocation:getPhysicalColumnName
+MethodInvocation:toIdentifier
+MethodInvocation:getDatabase
+Method-name:getPhysicalColumnName
+Method-returnType:String
+Method-parameters:[Table table, Identifier logicalName]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:isInstance
+MethodInvocation:getIncludedTable
+MethodInvocation:render
+MethodInvocation:getName
+Method-name:getLogicalColumnName
+Method-returnType:String
+Method-parameters:[Table table, String physicalName]
+MethodInvocation:getLogicalColumnName
+MethodInvocation:toIdentifier
+MethodInvocation:getDatabase
+Method-name:getLogicalColumnName
+Method-returnType:String
+Method-parameters:[Table table, Identifier physicalName]
+MethodInvocation:render
+MethodInvocation:getDialect
+MethodInvocation:getJdbcEnvironment
+MethodInvocation:getDatabase
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:isInstance
+MethodInvocation:getIncludedTable
+MethodInvocation:getName
+MethodInvocation:render
+Method-name:addAuxiliaryDatabaseObject
+Method-returnType:void
+Method-parameters:[AuxiliaryDatabaseObject auxiliaryDatabaseObject]
+MethodInvocation:addAuxiliaryDatabaseObject
+MethodInvocation:getDatabase
+Field:annotatedClassTypeMap
+Method-name:getClassType
+Method-returnType:AnnotatedClassType
+Method-parameters:[XClass clazz]
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:addClassType
+Method-name:addClassType
+Method-returnType:AnnotatedClassType
+Method-parameters:[XClass clazz]
+MethodInvocation:isAnnotationPresent
+MethodInvocation:isAnnotationPresent
+MethodInvocation:isAnnotationPresent
+MethodInvocation:put
+MethodInvocation:getName
+Method-name:addAnyMetaDef
+Method-returnType:void
+Method-parameters:[AnyMetaDef defAnn]
+MethodInvocation:containsKey
+MethodInvocation:name
+MethodInvocation:name
+MethodInvocation:put
+MethodInvocation:name
+Method-name:getAnyMetaDef
+Method-returnType:AnyMetaDef
+Method-parameters:[String name]
+MethodInvocation:get
+Method-name:addMappedSuperclass
+Method-returnType:void
+Method-parameters:[Class type, MappedSuperclass mappedSuperclass]
+MethodInvocation:put
+Method-name:getMappedSuperclass
+Method-returnType:MappedSuperclass
+Method-parameters:[Class type]
+MethodInvocation:get
+Method-name:getPropertyAnnotatedWithMapsId
+Method-returnType:PropertyData
+Method-parameters:[XClass entityType, String propertyName]
+MethodInvocation:get
+MethodInvocation:get
+Method-name:addPropertyAnnotatedWithMapsId
+Method-returnType:void
+Method-parameters:[XClass entityType, PropertyData property]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:value
+MethodInvocation:getAnnotation
+MethodInvocation:getProperty
+Method-name:addPropertyAnnotatedWithMapsIdSpecj
+Method-returnType:void
+Method-parameters:[XClass entityType, PropertyData property, String mapsIdValue]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+Method-name:getPropertyAnnotatedWithIdAndToOne
+Method-returnType:PropertyData
+Method-parameters:[XClass entityType, String propertyName]
+MethodInvocation:get
+MethodInvocation:get
+Method-name:addToOneAndIdProperty
+Method-returnType:void
+Method-parameters:[XClass entityType, PropertyData property]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:getPropertyName
+Method-name:addMappedBy
+Method-returnType:void
+Method-parameters:[String entityName, String propertyName, String inversePropertyName]
+MethodInvocation:put
+Method-name:getFromMappedBy
+Method-returnType:String
+Method-parameters:[String entityName, String propertyName]
+MethodInvocation:get
+Method-name:addPropertyReferencedAssociation
+Method-returnType:void
+Method-parameters:[String entityName, String propertyName, String propertyRef]
+MethodInvocation:put
+Method-name:getPropertyReferencedAssociation
+Method-returnType:String
+Method-parameters:[String entityName, String propertyName]
+MethodInvocation:get
+Class:DelayedPropertyReferenceHandlerAnnotationImpl
+Field:referencedClass
+Field:propertyName
+Field:unique
+Method-name:DelayedPropertyReferenceHandlerAnnotationImpl
+Method-returnType:null
+Method-parameters:[String referencedClass, String propertyName, boolean unique]
+FieldAccess:referencedClass
+FieldAccess:propertyName
+FieldAccess:unique
+Method-name:process
+Method-returnType:void
+Method-parameters:[InFlightMetadataCollector metadataCollector]
+MethodInvocation:getEntityBinding
+MethodInvocation:getReferencedProperty
+MethodInvocation:setAlternateUniqueKey
+MethodInvocation:getValue
+Method-name:addPropertyReference
+Method-returnType:void
+Method-parameters:[String referencedClass, String propertyName]
+MethodInvocation:addDelayedPropertyReferenceHandler
+Method-name:addDelayedPropertyReferenceHandler
+Method-returnType:void
+Method-parameters:[DelayedPropertyReferenceHandler handler]
+MethodInvocation:add
+Method-name:addUniquePropertyReference
+Method-returnType:void
+Method-parameters:[String referencedClass, String propertyName]
+MethodInvocation:addDelayedPropertyReferenceHandler
+Method-name:addUniqueConstraints
+Method-returnType:void
+Method-parameters:[Table table, List uniqueConstraints]
+MethodInvocation:determineProperSizing
+MethodInvocation:size
+MethodInvocation:determineCurrentNumberOfUniqueConstraintHolders
+MethodInvocation:add
+MethodInvocation:setColumns
+MethodInvocation:setName
+MethodInvocation:addUniqueConstraintHolders
+Method-name:determineCurrentNumberOfUniqueConstraintHolders
+Method-returnType:int
+Method-parameters:[Table table]
+MethodInvocation:get
+MethodInvocation:size
+Method-name:addUniqueConstraintHolders
+Method-returnType:void
+Method-parameters:[Table table, List<UniqueConstraintHolder> uniqueConstraintHolders]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:addAll
+Method-name:addJpaIndexHolders
+Method-returnType:void
+Method-parameters:[Table table, List<JPAIndexHolder> holders]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:addAll
+Field:entityTableXrefMap
+Method-name:getEntityTableXref
+Method-returnType:EntityTableXref
+Method-parameters:[String entityName]
+MethodInvocation:get
+Method-name:addEntityTableXref
+Method-returnType:EntityTableXref
+Method-parameters:[String entityName, Identifier primaryTableLogicalName, Table primaryTable, EntityTableXref superEntityTableXref]
+MethodInvocation:put
+Method-name:getJoins
+Method-returnType:Map<String,Join>
+Method-parameters:[String entityName]
+MethodInvocation:get
+Class:EntityTableXrefImpl
+Field:primaryTableLogicalName
+Field:primaryTable
+Field:superEntityTableXref
+Field:secondaryTableJoinMap
+Method-name:EntityTableXrefImpl
+Method-returnType:null
+Method-parameters:[Identifier primaryTableLogicalName, Table primaryTable, EntityTableXrefImpl superEntityTableXref]
+FieldAccess:primaryTableLogicalName
+FieldAccess:primaryTable
+FieldAccess:superEntityTableXref
+Method-name:addSecondaryTable
+Method-returnType:void
+Method-parameters:[LocalMetadataBuildingContext buildingContext, Identifier logicalName, Join secondaryTableJoin]
+MethodInvocation:areEqual
+MethodInvocation:format
+MethodInvocation:getOrigin
+MethodInvocation:put
+MethodInvocation:getCanonicalName
+MethodInvocation:put
+MethodInvocation:getCanonicalName
+MethodInvocation:format
+MethodInvocation:getOrigin
+Method-name:addSecondaryTable
+Method-returnType:void
+Method-parameters:[QualifiedTableName logicalQualifiedTableName, Join secondaryTableJoin]
+MethodInvocation:getTableName
+MethodInvocation:areEqual
+MethodInvocation:toIdentifier
+MethodInvocation:render
+MethodInvocation:toIdentifier
+MethodInvocation:getCatalog
+MethodInvocation:toIdentifier
+MethodInvocation:getSchema
+MethodInvocation:toIdentifier
+MethodInvocation:render
+MethodInvocation:put
+MethodInvocation:getCanonicalName
+MethodInvocation:put
+MethodInvocation:getCanonicalName
+Method-name:getPrimaryTable
+Method-returnType:Table
+Method-parameters:[]
+Method-name:resolveTable
+Method-returnType:Table
+Method-parameters:[Identifier tableName]
+MethodInvocation:areEqual
+MethodInvocation:get
+MethodInvocation:getCanonicalName
+MethodInvocation:getTable
+MethodInvocation:resolveTable
+Method-name:locateJoin
+Method-returnType:Join
+Method-parameters:[Identifier tableName]
+MethodInvocation:get
+MethodInvocation:getCanonicalName
+MethodInvocation:locateJoin
+Field:idGeneratorResolverSecondPassList
+Field:pkDrivenByDefaultMapsIdSecondPassList
+Field:setSimpleValueTypeSecondPassList
+Field:copyIdentifierComponentSecondPasList
+Field:fkSecondPassList
+Field:createKeySecondPasList
+Field:secondaryTableSecondPassList
+Field:querySecondPassList
+Field:implicitColumnNamingSecondPassList
+Field:generalSecondPassList
+Method-name:addSecondPass
+Method-returnType:void
+Method-parameters:[SecondPass secondPass]
+MethodInvocation:addSecondPass
+Method-name:addSecondPass
+Method-returnType:void
+Method-parameters:[SecondPass secondPass, boolean onTopOfTheQueue]
+MethodInvocation:addIdGeneratorResolverSecondPass
+MethodInvocation:addPkDrivenByDefaultMapsIdSecondPass
+MethodInvocation:addSetSimpleValueTypeSecondPass
+MethodInvocation:addCopyIdentifierComponentSecondPass
+MethodInvocation:addFkSecondPass
+MethodInvocation:addCreateKeySecondPass
+MethodInvocation:addSecondaryTableSecondPass
+MethodInvocation:addQuerySecondPass
+MethodInvocation:addImplicitColumnNamingSecondPass
+MethodInvocation:addSecondPass
+Method-name:addPkDrivenByDefaultMapsIdSecondPass
+Method-returnType:void
+Method-parameters:[PkDrivenByDefaultMapsIdSecondPass secondPass, boolean onTopOfTheQueue]
+MethodInvocation:addSecondPass
+Method-name:addSecondPass
+Method-returnType:void
+Method-parameters:[T secondPass, ArrayList<T> secondPassList, boolean onTopOfTheQueue]
+MethodInvocation:add
+MethodInvocation:add
+Method-name:addSetSimpleValueTypeSecondPass
+Method-returnType:void
+Method-parameters:[SetSimpleValueTypeSecondPass secondPass, boolean onTopOfTheQueue]
+MethodInvocation:addSecondPass
+Method-name:addIdGeneratorResolverSecondPass
+Method-returnType:void
+Method-parameters:[IdGeneratorResolverSecondPass secondPass, boolean onTopOfTheQueue]
+MethodInvocation:addSecondPass
+Method-name:addCopyIdentifierComponentSecondPass
+Method-returnType:void
+Method-parameters:[CopyIdentifierComponentSecondPass secondPass, boolean onTopOfTheQueue]
+MethodInvocation:addSecondPass
+Method-name:addFkSecondPass
+Method-returnType:void
+Method-parameters:[FkSecondPass secondPass, boolean onTopOfTheQueue]
+MethodInvocation:addSecondPass
+Method-name:addCreateKeySecondPass
+Method-returnType:void
+Method-parameters:[CreateKeySecondPass secondPass, boolean onTopOfTheQueue]
+MethodInvocation:addSecondPass
+Method-name:addSecondaryTableSecondPass
+Method-returnType:void
+Method-parameters:[SecondaryTableSecondPass secondPass, boolean onTopOfTheQueue]
+MethodInvocation:addSecondPass
+Method-name:addQuerySecondPass
+Method-returnType:void
+Method-parameters:[QuerySecondPass secondPass, boolean onTopOfTheQueue]
+MethodInvocation:addSecondPass
+Method-name:addImplicitColumnNamingSecondPass
+Method-returnType:void
+Method-parameters:[ImplicitColumnNamingSecondPass secondPass]
+MethodInvocation:add
+Field:inSecondPass
+Method-name:processSecondPasses
+Method-returnType:void
+Method-parameters:[MetadataBuildingContext buildingContext]
+MethodInvocation:processSecondPasses
+MethodInvocation:processSecondPasses
+MethodInvocation:processSecondPasses
+MethodInvocation:processSecondPasses
+MethodInvocation:processCopyIdentifierSecondPassesInOrder
+MethodInvocation:processFkSecondPassesInOrder
+MethodInvocation:processSecondPasses
+MethodInvocation:processSecondPasses
+MethodInvocation:processSecondPasses
+MethodInvocation:processSecondPasses
+MethodInvocation:processPropertyReferences
+MethodInvocation:secondPassCompileForeignKeys
+MethodInvocation:processUniqueConstraintHolders
+MethodInvocation:processJPAIndexHolders
+MethodInvocation:processNaturalIdUniqueKeyBinders
+MethodInvocation:processCachingOverrides
+Method-name:processCopyIdentifierSecondPassesInOrder
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:sortCopyIdentifierComponentSecondPasses
+MethodInvocation:processSecondPasses
+Method-name:processSecondPasses
+Method-returnType:void
+Method-parameters:[ArrayList<? extends SecondPass> secondPasses]
+MethodInvocation:doSecondPass
+MethodInvocation:getEntityBindingMap
+MethodInvocation:clear
+Method-name:sortCopyIdentifierComponentSecondPasses
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:topologicalSort
+Method-name:topologicalSort
+Method-returnType:void
+Method-parameters:[List<CopyIdentifierComponentSecondPass> sorted, Set<CopyIdentifierComponentSecondPass> toSort]
+MethodInvocation:isEmpty
+MethodInvocation:dependentUpon
+MethodInvocation:remove
+MethodInvocation:add
+Method-name:processFkSecondPassesInOrder
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:isInPrimaryKey
+MethodInvocation:getReferencedEntityName
+MethodInvocation:getEntityBinding
+MethodInvocation:render
+MethodInvocation:getQualifiedTableName
+MethodInvocation:getTable
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:size
+MethodInvocation:keySet
+MethodInvocation:buildRecursiveOrderedFkSecondPasses
+MethodInvocation:doSecondPass
+MethodInvocation:getEntityBindingMap
+MethodInvocation:processEndOfQueue
+MethodInvocation:clear
+Method-name:buildRecursiveOrderedFkSecondPasses
+Method-returnType:void
+Method-parameters:[List<FkSecondPass> orderedFkSecondPasses, Map<String,Set<FkSecondPass>> isADependencyOf, String startTable, String currentTable]
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:render
+MethodInvocation:getQualifiedTableName
+MethodInvocation:getTable
+MethodInvocation:getValue
+MethodInvocation:compareTo
+MethodInvocation:buildRecursiveOrderedFkSecondPasses
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:processEndOfQueue
+Method-returnType:void
+Method-parameters:[List<FkSecondPass> endOfQueueFkSecondPasses]
+MethodInvocation:doSecondPass
+MethodInvocation:getEntityBindingMap
+MethodInvocation:add
+MethodInvocation:getCause
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+Method-name:secondPassCompileForeignKeys
+Method-returnType:void
+Method-parameters:[MetadataBuildingContext buildingContext]
+MethodInvocation:collectTableMappings
+MethodInvocation:setUniqueInteger
+MethodInvocation:secondPassCompileForeignKeys
+Method-name:secondPassCompileForeignKeys
+Method-returnType:void
+Method-parameters:[final Table table, Set<ForeignKey> done, final MetadataBuildingContext buildingContext]
+MethodInvocation:createForeignKeys
+MethodInvocation:getForeignKeyIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:getReferencedEntityName
+MethodInvocation:getName
+MethodInvocation:getTable
+MethodInvocation:debugf
+MethodInvocation:getEntityBinding
+MethodInvocation:getName
+MethodInvocation:getTable
+MethodInvocation:isJoinedSubclass
+MethodInvocation:secondPassCompileForeignKeys
+MethodInvocation:getTable
+MethodInvocation:getSuperclass
+MethodInvocation:setReferencedTable
+MethodInvocation:getTable
+Field:columnNames
+MethodInvocation:extractColumnNames
+MethodInvocation:getColumns
+Field:referencedColumnNames
+Method-name:getTableName
+Method-returnType:Identifier
+Method-parameters:[]
+MethodInvocation:getNameIdentifier
+Method-name:getColumnNames
+Method-returnType:List<Identifier>
+Method-parameters:[]
+Method-name:getReferencedTableName
+Method-returnType:Identifier
+Method-parameters:[]
+MethodInvocation:getNameIdentifier
+MethodInvocation:getReferencedTable
+Method-name:getReferencedColumnNames
+Method-returnType:List<Identifier>
+Method-parameters:[]
+MethodInvocation:extractColumnNames
+MethodInvocation:getReferencedColumns
+Method-name:getUserProvidedIdentifier
+Method-returnType:Identifier
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:toIdentifier
+MethodInvocation:getName
+Method-name:getBuildingContext
+Method-returnType:MetadataBuildingContext
+Method-parameters:[]
+MethodInvocation:determineForeignKeyName
+MethodInvocation:getImplicitNamingStrategy
+MethodInvocation:getMetadataBuildingOptions
+MethodInvocation:setName
+MethodInvocation:render
+MethodInvocation:getDialect
+MethodInvocation:getJdbcEnvironment
+MethodInvocation:getDatabase
+MethodInvocation:alignColumns
+Method-name:toIdentifiers
+Method-returnType:List<Identifier>
+Method-parameters:[String[] names]
+MethodInvocation:emptyList
+MethodInvocation:arrayList
+MethodInvocation:add
+MethodInvocation:toIdentifier
+MethodInvocation:getDatabase
+Method-name:extractColumnNames
+Method-returnType:List<Identifier>
+Method-parameters:[List columns]
+MethodInvocation:isEmpty
+MethodInvocation:emptyList
+MethodInvocation:arrayList
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:toIdentifier
+MethodInvocation:getDatabase
+MethodInvocation:getQuotedName
+Method-name:processPropertyReferences
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:debug
+MethodInvocation:process
+MethodInvocation:clear
+Method-name:processUniqueConstraintHolders
+Method-returnType:void
+Method-parameters:[MetadataBuildingContext buildingContext]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:buildUniqueKeyFromColumnNames
+MethodInvocation:getName
+MethodInvocation:getColumns
+MethodInvocation:clear
+Method-name:buildUniqueKeyFromColumnNames
+Method-returnType:void
+Method-parameters:[Table table, String keyName, String[] columnNames, MetadataBuildingContext buildingContext]
+MethodInvocation:buildUniqueKeyFromColumnNames
+Method-name:buildUniqueKeyFromColumnNames
+Method-returnType:void
+Method-parameters:[final Table table, String keyName, final String[] columnNames, String[] orderings, boolean unique, final MetadataBuildingContext buildingContext]
+MethodInvocation:getPhysicalColumnName
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:determineUniqueKeyName
+MethodInvocation:getImplicitNamingStrategy
+MethodInvocation:getMetadataBuildingOptions
+Method-name:getBuildingContext
+Method-returnType:MetadataBuildingContext
+Method-parameters:[]
+Method-name:getTableName
+Method-returnType:Identifier
+Method-parameters:[]
+MethodInvocation:getNameIdentifier
+Field:columnNameIdentifiers
+Method-name:getColumnNames
+Method-returnType:List<Identifier>
+Method-parameters:[]
+MethodInvocation:toIdentifiers
+Method-name:getUserProvidedIdentifier
+Method-returnType:Identifier
+Method-parameters:[]
+MethodInvocation:toIdentifier
+MethodInvocation:render
+MethodInvocation:getDialect
+MethodInvocation:getJdbcEnvironment
+MethodInvocation:getDatabase
+MethodInvocation:getOrCreateUniqueKey
+MethodInvocation:containsColumn
+MethodInvocation:addColumn
+MethodInvocation:remove
+MethodInvocation:determineIndexName
+MethodInvocation:getImplicitNamingStrategy
+MethodInvocation:getMetadataBuildingOptions
+Method-name:getBuildingContext
+Method-returnType:MetadataBuildingContext
+Method-parameters:[]
+Method-name:getTableName
+Method-returnType:Identifier
+Method-parameters:[]
+MethodInvocation:getNameIdentifier
+Field:columnNameIdentifiers
+Method-name:getColumnNames
+Method-returnType:List<Identifier>
+Method-parameters:[]
+MethodInvocation:toIdentifiers
+Method-name:getUserProvidedIdentifier
+Method-returnType:Identifier
+Method-parameters:[]
+MethodInvocation:toIdentifier
+MethodInvocation:render
+MethodInvocation:getDialect
+MethodInvocation:getJdbcEnvironment
+MethodInvocation:getDatabase
+MethodInvocation:getOrCreateIndex
+MethodInvocation:containsColumn
+MethodInvocation:addColumn
+MethodInvocation:remove
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:setLength
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getName
+MethodInvocation:setLength
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:processJPAIndexHolders
+Method-returnType:void
+Method-parameters:[MetadataBuildingContext buildingContext]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:buildUniqueKeyFromColumnNames
+MethodInvocation:getName
+MethodInvocation:getColumns
+MethodInvocation:getOrdering
+MethodInvocation:isUnique
+Field:naturalIdUniqueKeyBinderMap
+Method-name:locateNaturalIdUniqueKeyBinder
+Method-returnType:NaturalIdUniqueKeyBinder
+Method-parameters:[String entityName]
+MethodInvocation:get
+Method-name:registerNaturalIdUniqueKeyBinder
+Method-returnType:void
+Method-parameters:[String entityName, NaturalIdUniqueKeyBinder ukBinder]
+MethodInvocation:put
+Method-name:processNaturalIdUniqueKeyBinders
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:process
+MethodInvocation:clear
+Method-name:processCachingOverrides
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getCacheRegionDefinitions
+MethodInvocation:getCacheRegionDefinitions
+MethodInvocation:getRegionType
+MethodInvocation:getEntityBinding
+MethodInvocation:getRole
+MethodInvocation:getRole
+MethodInvocation:isInstance
+MethodInvocation:getRole
+MethodInvocation:setCached
+MethodInvocation:setCacheRegionName
+MethodInvocation:getRegion
+MethodInvocation:setCacheConcurrencyStrategy
+MethodInvocation:getUsage
+MethodInvocation:setLazyPropertiesCacheable
+MethodInvocation:isCacheLazy
+MethodInvocation:getRegionType
+MethodInvocation:getCollectionBinding
+MethodInvocation:getRole
+MethodInvocation:getRole
+MethodInvocation:setCacheRegionName
+MethodInvocation:getRegion
+MethodInvocation:setCacheConcurrencyStrategy
+MethodInvocation:getUsage
+Method-name:isInSecondPass
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:buildMetadataInstance
+Method-returnType:MetadataImpl
+Method-parameters:[MetadataBuildingContext buildingContext]
+MethodInvocation:processSecondPasses
+MethodInvocation:processExportableProducers
+MethodInvocation:getDatabase
+MethodInvocation:release
+MethodInvocation:getBootstrapContext
+Method-name:processExportableProducers
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getDialect
+MethodInvocation:getJdbcEnvironment
+MethodInvocation:getDatabase
+MethodInvocation:extractName
+MethodInvocation:getCatalog
+MethodInvocation:getName
+MethodInvocation:getDefaultNamespace
+MethodInvocation:getDatabase
+MethodInvocation:extractName
+MethodInvocation:getSchema
+MethodInvocation:getName
+MethodInvocation:getDefaultNamespace
+MethodInvocation:getDatabase
+MethodInvocation:values
+MethodInvocation:isInherited
+MethodInvocation:handleIdentifierValueBinding
+MethodInvocation:getIdentifier
+MethodInvocation:values
+MethodInvocation:isInstance
+MethodInvocation:handleIdentifierValueBinding
+MethodInvocation:getIdentifier
+Method-name:handleIdentifierValueBinding
+Method-returnType:void
+Method-parameters:[KeyValue identifierValueBinding, Dialect dialect, String defaultCatalog, String defaultSchema, RootClass entityBinding]
+MethodInvocation:createIdentifierGenerator
+MethodInvocation:getIdentifierGeneratorFactory
+MethodInvocation:registerExportables
+MethodInvocation:getDatabase
+MethodInvocation:debugf
+Method-name:extractName
+Method-returnType:String
+Method-parameters:[Identifier identifier, Dialect dialect]
+MethodInvocation:render

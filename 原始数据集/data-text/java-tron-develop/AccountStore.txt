@@ -1,0 +1,56 @@
+Class:AccountStore
+Field:assertsAddress
+Field:accountStateCallBackUtils
+Method-name:AccountStore
+Method-returnType:null
+Method-parameters:[@Value("account") String dbName]
+Method-name:setAccount
+Method-returnType:void
+Method-parameters:[com.typesafe.config.Config config]
+MethodInvocation:getObjectList
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:unwrapped
+MethodInvocation:get
+MethodInvocation:decodeFromBase58Check
+MethodInvocation:toString
+MethodInvocation:unwrapped
+MethodInvocation:get
+MethodInvocation:put
+Method-name:get
+Method-returnType:AccountCapsule
+Method-parameters:[byte[] key]
+MethodInvocation:getUnchecked
+MethodInvocation:isEmpty
+Method-name:put
+Method-returnType:void
+Method-parameters:[byte[] key, AccountCapsule item]
+MethodInvocation:accountCallBack
+Method-name:getSun
+Method-returnType:AccountCapsule
+Method-parameters:[]
+MethodInvocation:getUnchecked
+MethodInvocation:get
+Method-name:getBlackhole
+Method-returnType:AccountCapsule
+Method-parameters:[]
+MethodInvocation:getUnchecked
+MethodInvocation:get
+Method-name:getZion
+Method-returnType:AccountCapsule
+Method-parameters:[]
+MethodInvocation:getUnchecked
+MethodInvocation:get
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+Method-name:adjustAllowance
+Method-returnType:void
+Method-parameters:[byte[] accountAddress, long amount, DelegationService delegationService]
+MethodInvocation:getUnchecked
+MethodInvocation:getAllowance
+MethodInvocation:createReadableString
+MethodInvocation:setAllowance
+MethodInvocation:put
+MethodInvocation:createDbKey

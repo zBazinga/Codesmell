@@ -1,0 +1,387 @@
+Class:MemoryFileSystem
+Field:log
+MethodInvocation:getLogger
+Field:folder
+Field:folders
+Field:folderMap
+Field:fileContents
+Field:modifiedFilesSinceLastMark
+Method-name:MemoryFileSystem
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:put
+Method-name:getRootFolder
+Method-returnType:Folder
+Method-parameters:[]
+Method-name:getFile
+Method-returnType:File
+Method-parameters:[Path path]
+MethodInvocation:getFile
+MethodInvocation:toPortableString
+Method-name:getFileNames
+Method-returnType:Collection<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getMap
+Method-returnType:Map<String,byte[]>
+Method-parameters:[]
+FieldAccess:fileContents
+Method-name:getFile
+Method-returnType:File
+Method-parameters:[String path]
+MethodInvocation:trimLeadingAndTrailing
+MethodInvocation:lastIndexOf
+MethodInvocation:getFolder
+MethodInvocation:substring
+MethodInvocation:substring
+MethodInvocation:getRootFolder
+Method-name:getFolder
+Method-returnType:Folder
+Method-parameters:[Path path]
+MethodInvocation:getFolder
+MethodInvocation:toPortableString
+Method-name:getFolder
+Method-returnType:Folder
+Method-parameters:[String path]
+MethodInvocation:get
+MethodInvocation:put
+Method-name:getMembers
+Method-returnType:Set<? extends Resource>
+Method-parameters:[Folder folder]
+MethodInvocation:get
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+Method-name:getFileContents
+Method-returnType:byte[]
+Method-parameters:[MemoryFile file]
+MethodInvocation:get
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+Method-name:setFileContents
+Method-returnType:void
+Method-parameters:[MemoryFile file, byte[] contents]
+MethodInvocation:existsFolder
+MethodInvocation:getFolder
+MethodInvocation:createFolder
+MethodInvocation:getFolder
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+MethodInvocation:get
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+MethodInvocation:getFolder
+Method-name:mark
+Method-returnType:void
+Method-parameters:[]
+Method-name:getModifiedResourcesSinceLastMark
+Method-returnType:Collection<String>
+Method-parameters:[]
+Method-name:existsFolder
+Method-returnType:boolean
+Method-parameters:[MemoryFolder folder]
+MethodInvocation:existsFolder
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+Method-name:existsFolder
+Method-returnType:boolean
+Method-parameters:[String path]
+MethodInvocation:get
+MethodInvocation:trimLeadingAndTrailing
+Method-name:existsFile
+Method-returnType:boolean
+Method-parameters:[String path]
+MethodInvocation:containsKey
+MethodInvocation:trimLeadingAndTrailing
+Method-name:createFolder
+Method-returnType:void
+Method-parameters:[MemoryFolder folder]
+MethodInvocation:existsFolder
+MethodInvocation:existsFolder
+MethodInvocation:getParent
+MethodInvocation:createFolder
+MethodInvocation:getParent
+MethodInvocation:put
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+MethodInvocation:getParent
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+Method-name:remove
+Method-returnType:boolean
+Method-parameters:[Folder folder]
+MethodInvocation:exists
+MethodInvocation:remove
+MethodInvocation:get
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+MethodInvocation:remove
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+Method-name:remove
+Method-returnType:void
+Method-parameters:[Set<Resource> members]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:remove
+MethodInvocation:get
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:remove
+Method-name:remove
+Method-returnType:boolean
+Method-parameters:[File file]
+MethodInvocation:exists
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:get
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+MethodInvocation:getFolder
+Method-name:copyFolder
+Method-returnType:int
+Method-parameters:[Folder srcFolder, MemoryFileSystem trgMfs, Folder trgFolder, String... filters]
+MethodInvocation:copyFolder
+Method-name:copyFolder
+Method-returnType:int
+Method-parameters:[MemoryFileSystem srcMfs, Folder srcFolder, MemoryFileSystem trgMfs, Folder trgFolder, int count, String... filters]
+MethodInvocation:exists
+MethodInvocation:create
+MethodInvocation:getFolder
+MethodInvocation:getPath
+MethodInvocation:getMembers
+MethodInvocation:copyFolder
+MethodInvocation:getFolder
+MethodInvocation:getName
+MethodInvocation:getFile
+MethodInvocation:getName
+MethodInvocation:endsWith
+MethodInvocation:getName
+MethodInvocation:setFileContents
+MethodInvocation:getFileContents
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:printFs
+Method-returnType:void
+Method-parameters:[PrintStream out]
+MethodInvocation:printFs
+MethodInvocation:getRootFolder
+Method-name:printFs
+Method-returnType:void
+Method-parameters:[Folder f, PrintStream out]
+MethodInvocation:getMembers
+MethodInvocation:println
+MethodInvocation:printFs
+MethodInvocation:println
+MethodInvocation:getFileContents
+Method-name:isAvailable
+Method-returnType:boolean
+Method-parameters:[String pResourceName]
+MethodInvocation:existsFile
+Method-name:getBytes
+Method-returnType:byte[]
+Method-parameters:[String pResourceName]
+MethodInvocation:getFileContents
+MethodInvocation:getFile
+Method-name:write
+Method-returnType:void
+Method-parameters:[String pResourceName, byte[] pResourceData]
+MethodInvocation:write
+Method-name:write
+Method-returnType:void
+Method-parameters:[String pResourceName, byte[] pResourceData, boolean createFolder]
+MethodInvocation:replace
+MethodInvocation:endsWith
+MethodInvocation:getFile
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+MethodInvocation:getFolder
+MethodInvocation:existsFolder
+MethodInvocation:create
+MethodInvocation:getFolder
+MethodInvocation:setFileContents
+Method-name:read
+Method-returnType:byte[]
+Method-parameters:[String pResourceName]
+MethodInvocation:getBytes
+Method-name:remove
+Method-returnType:void
+Method-parameters:[String pResourceName]
+MethodInvocation:remove
+MethodInvocation:getFile
+Method-name:writeAsBytes
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:zip
+MethodInvocation:toByteArray
+Method-name:writeAsJar
+Method-returnType:java.io.File
+Method-parameters:[java.io.File folder, String jarName]
+MethodInvocation:println
+MethodInvocation:zip
+Method-name:zip
+Method-returnType:void
+Method-parameters:[OutputStream outputStream]
+MethodInvocation:writeJarEntries
+MethodInvocation:getRootFolder
+MethodInvocation:close
+MethodInvocation:close
+MethodInvocation:error
+MethodInvocation:getMessage
+Method-name:writeAsFs
+Method-returnType:void
+Method-parameters:[java.io.File file]
+MethodInvocation:mkdir
+MethodInvocation:writeAsFs
+MethodInvocation:getRootFolder
+Method-name:writeAsFs
+Method-returnType:void
+Method-parameters:[Folder f, java.io.File file1]
+MethodInvocation:getMembers
+MethodInvocation:getName
+MethodInvocation:mkdir
+MethodInvocation:writeAsFs
+MethodInvocation:getFileContents
+MethodInvocation:write
+MethodInvocation:getName
+Method-name:writeJarEntries
+Method-returnType:void
+Method-parameters:[Folder f, ZipOutputStream out]
+MethodInvocation:getMembers
+MethodInvocation:toPortableString
+MethodInvocation:getPath
+MethodInvocation:endsWith
+MethodInvocation:putNextEntry
+MethodInvocation:writeJarEntries
+MethodInvocation:putNextEntry
+MethodInvocation:getFileContents
+MethodInvocation:error
+MethodInvocation:getMessage
+MethodInvocation:write
+MethodInvocation:closeEntry
+Method-name:readFromJar
+Method-returnType:MemoryFileSystem
+Method-parameters:[java.io.File jarFile]
+MethodInvocation:entries
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:lastIndexOf
+MethodInvocation:getName
+MethodInvocation:substring
+MethodInvocation:getName
+MethodInvocation:substring
+MethodInvocation:getName
+MethodInvocation:getFolder
+MethodInvocation:create
+MethodInvocation:getFile
+MethodInvocation:create
+MethodInvocation:getInputStream
+MethodInvocation:close
+MethodInvocation:error
+MethodInvocation:getMessage
+Method-name:readFromJar
+Method-returnType:MemoryFileSystem
+Method-parameters:[byte[] jarFile]
+MethodInvocation:readFromJar
+Method-name:readFromJar
+Method-returnType:MemoryFileSystem
+Method-parameters:[InputStream jarFile]
+MethodInvocation:getNextEntry
+MethodInvocation:read
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:getName
+MethodInvocation:toByteArray
+MethodInvocation:close
+MethodInvocation:error
+MethodInvocation:getMessage
+Method-name:findPomProperties
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:endsWith
+MethodInvocation:getKey
+MethodInvocation:startsWith
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:readFileAsString
+Method-name:clone
+Method-returnType:MemoryFileSystem
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:write
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:memoryClassLoader
+Method-returnType:ClassLoader
+Method-parameters:[ClassLoader parent]
+Method-name:cloneForIncrementalCompilation
+Method-returnType:MemoryKieModule
+Method-parameters:[ReleaseId releaseId, KieModuleModel kModuleModel, MemoryKieModule memoryKieModule]
+MethodInvocation:values
+MethodInvocation:getKieDependencies
+MethodInvocation:addKieDependency
+MethodInvocation:values
+MethodInvocation:getKieBaseModels
+MethodInvocation:getKieModuleModel
+MethodInvocation:cacheKnowledgeBuilderForKieBase
+MethodInvocation:getName
+MethodInvocation:getKnowledgeBuilderForKieBase
+MethodInvocation:getName
+MethodInvocation:setPomModel
+MethodInvocation:getPomModel
+MethodInvocation:values
+MethodInvocation:getKieDependencies
+MethodInvocation:addKieDependency
+MethodInvocation:setUnresolvedDependencies
+MethodInvocation:getUnresolvedDependencies
+Class:ByteClassLoader
+Field:extraClassDefs
+Method-name:ByteClassLoader
+Method-returnType:null
+Method-parameters:[ClassLoader parent, MemoryFileSystem memoryFileSystem]
+MethodInvocation:forEach
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getFileNames
+MethodInvocation:endsWith
+MethodInvocation:getFile
+MethodInvocation:getFileContents
+MethodInvocation:replace
+MethodInvocation:replace
+MethodInvocation:put
+Method-name:findClass
+Method-returnType:Class<?>
+Method-parameters:[final String name]
+MethodInvocation:remove
+FieldAccess:extraClassDefs
+MethodInvocation:defineClass

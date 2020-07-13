@@ -1,0 +1,136 @@
+Class:AbstractMessageConverter
+Field:logger
+MethodInvocation:getLog
+MethodInvocation:getClass
+Field:supportedMimeTypes
+Field:contentTypeResolver
+Field:strictContentTypeMatch
+Field:serializedPayloadClass
+Method-name:AbstractMessageConverter
+Method-returnType:null
+Method-parameters:[MimeType supportedMimeType]
+MethodInvocation:singletonList
+Method-name:AbstractMessageConverter
+Method-returnType:null
+Method-parameters:[MimeType... supportedMimeTypes]
+MethodInvocation:asList
+Method-name:AbstractMessageConverter
+Method-returnType:null
+Method-parameters:[Collection<MimeType> supportedMimeTypes]
+MethodInvocation:addAll
+FieldAccess:supportedMimeTypes
+Method-name:getSupportedMimeTypes
+Method-returnType:List<MimeType>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+FieldAccess:supportedMimeTypes
+Method-name:addSupportedMimeTypes
+Method-returnType:void
+Method-parameters:[MimeType... supportedMimeTypes]
+MethodInvocation:addAll
+FieldAccess:supportedMimeTypes
+MethodInvocation:asList
+Method-name:setContentTypeResolver
+Method-returnType:void
+Method-parameters:[@Nullable ContentTypeResolver resolver]
+FieldAccess:contentTypeResolver
+Method-name:getContentTypeResolver
+Method-returnType:ContentTypeResolver
+Method-parameters:[]
+FieldAccess:contentTypeResolver
+Method-name:setStrictContentTypeMatch
+Method-returnType:void
+Method-parameters:[boolean strictContentTypeMatch]
+MethodInvocation:notEmpty
+MethodInvocation:getSupportedMimeTypes
+MethodInvocation:notNull
+MethodInvocation:getContentTypeResolver
+FieldAccess:strictContentTypeMatch
+Method-name:isStrictContentTypeMatch
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:strictContentTypeMatch
+Method-name:setSerializedPayloadClass
+Method-returnType:void
+Method-parameters:[Class<?> payloadClass]
+MethodInvocation:isTrue
+FieldAccess:serializedPayloadClass
+Method-name:getSerializedPayloadClass
+Method-returnType:Class<?>
+Method-parameters:[]
+FieldAccess:serializedPayloadClass
+Method-name:getDefaultContentType
+Method-returnType:MimeType
+Method-parameters:[Object payload]
+MethodInvocation:getSupportedMimeTypes
+MethodInvocation:isEmpty
+MethodInvocation:get
+Method-name:fromMessage
+Method-returnType:Object
+Method-parameters:[Message<?> message, Class<?> targetClass]
+MethodInvocation:fromMessage
+Method-name:fromMessage
+Method-returnType:Object
+Method-parameters:[Message<?> message, Class<?> targetClass, @Nullable Object conversionHint]
+MethodInvocation:canConvertFrom
+MethodInvocation:convertFromInternal
+Method-name:canConvertFrom
+Method-returnType:boolean
+Method-parameters:[Message<?> message, Class<?> targetClass]
+MethodInvocation:supports
+MethodInvocation:supportsMimeType
+MethodInvocation:getHeaders
+Method-name:toMessage
+Method-returnType:Message<?>
+Method-parameters:[Object payload, @Nullable MessageHeaders headers]
+MethodInvocation:toMessage
+Method-name:toMessage
+Method-returnType:Message<?>
+Method-parameters:[Object payload, @Nullable MessageHeaders headers, @Nullable Object conversionHint]
+MethodInvocation:canConvertTo
+MethodInvocation:convertToInternal
+MethodInvocation:getDefaultContentType
+MethodInvocation:getAccessor
+MethodInvocation:isMutable
+MethodInvocation:setHeaderIfAbsent
+MethodInvocation:createMessage
+MethodInvocation:getMessageHeaders
+MethodInvocation:withPayload
+MethodInvocation:copyHeaders
+MethodInvocation:setHeaderIfAbsent
+MethodInvocation:build
+Method-name:canConvertTo
+Method-returnType:boolean
+Method-parameters:[Object payload, @Nullable MessageHeaders headers]
+MethodInvocation:supports
+MethodInvocation:getClass
+MethodInvocation:supportsMimeType
+Method-name:supportsMimeType
+Method-returnType:boolean
+Method-parameters:[@Nullable MessageHeaders headers]
+MethodInvocation:isEmpty
+MethodInvocation:getSupportedMimeTypes
+MethodInvocation:getMimeType
+MethodInvocation:isStrictContentTypeMatch
+MethodInvocation:getSupportedMimeTypes
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:getType
+MethodInvocation:equals
+MethodInvocation:getSubtype
+MethodInvocation:getSubtype
+Method-name:getMimeType
+Method-returnType:MimeType
+Method-parameters:[@Nullable MessageHeaders headers]
+FieldAccess:contentTypeResolver
+MethodInvocation:resolve
+FieldAccess:contentTypeResolver
+Method-name:supports
+Method-returnType:boolean
+Method-parameters:[Class<?> clazz]
+Method-name:convertFromInternal
+Method-returnType:Object
+Method-parameters:[Message<?> message, Class<?> targetClass, @Nullable Object conversionHint]
+Method-name:convertToInternal
+Method-returnType:Object
+Method-parameters:[Object payload, @Nullable MessageHeaders headers, @Nullable Object conversionHint]

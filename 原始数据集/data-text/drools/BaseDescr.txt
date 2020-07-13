@@ -1,0 +1,130 @@
+Class:BaseDescr
+Field:serialVersionUID
+Field:startCharacter
+Field:endCharacter
+Field:line
+Field:column
+Field:endLine
+Field:endColumn
+Field:text
+Field:resource
+Field:namespace
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:readUTF
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+MethodInvocation:writeUTF
+Method-name:getResource
+Method-returnType:Resource
+Method-parameters:[]
+Method-name:setResource
+Method-returnType:void
+Method-parameters:[Resource resource]
+FieldAccess:resource
+Method-name:setNamespace
+Method-returnType:void
+Method-parameters:[String namespace]
+MethodInvocation:requireNonNull
+FieldAccess:namespace
+Method-name:getNamespace
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:namespace
+Method-name:getText
+Method-returnType:String
+Method-parameters:[]
+Method-name:setText
+Method-returnType:void
+Method-parameters:[String text]
+FieldAccess:text
+Method-name:setLocation
+Method-returnType:void
+Method-parameters:[final int line, final int column]
+FieldAccess:line
+FieldAccess:column
+Method-name:setEndLocation
+Method-returnType:void
+Method-parameters:[final int line, final int column]
+FieldAccess:endLine
+FieldAccess:endColumn
+Method-name:getLine
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:line
+Method-name:getColumn
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:column
+Method-name:getEndLine
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:endLine
+Method-name:getEndColumn
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:endColumn
+Method-name:getEndCharacter
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:endCharacter
+Method-name:setEndCharacter
+Method-returnType:void
+Method-parameters:[final int endCharacter]
+FieldAccess:endCharacter
+Method-name:getStartCharacter
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:startCharacter
+Method-name:setStartCharacter
+Method-returnType:void
+Method-parameters:[final int startCharacter]
+FieldAccess:startCharacter
+Method-name:copyLocation
+Method-returnType:void
+Method-parameters:[BaseDescr d]
+MethodInvocation:setLocation
+MethodInvocation:getLine
+MethodInvocation:getColumn
+MethodInvocation:setEndLocation
+MethodInvocation:getEndLine
+MethodInvocation:getEndColumn
+MethodInvocation:setStartCharacter
+MethodInvocation:getStartCharacter
+MethodInvocation:setEndCharacter
+MethodInvocation:getEndCharacter
+Method-name:positionAsString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getLine
+MethodInvocation:getColumn
+Method-name:replaceVariable
+Method-returnType:BaseDescr
+Method-parameters:[String oldVar, String newVar]
+Method-name:accept
+Method-returnType:void
+Method-parameters:[DescrVisitor visitor]
+MethodInvocation:visit
+Method-name:copyParameters
+Method-returnType:void
+Method-parameters:[PredicateDescr predicateDescr]
+MethodInvocation:setParameters
+MethodInvocation:getParameters

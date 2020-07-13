@@ -1,0 +1,68 @@
+Class:AllocationCommands
+Field:commands
+Method-name:AllocationCommands
+Method-returnType:null
+Method-parameters:[AllocationCommand... commands]
+MethodInvocation:addAll
+FieldAccess:commands
+MethodInvocation:asList
+Method-name:add
+Method-returnType:AllocationCommands
+Method-parameters:[AllocationCommand... commands]
+MethodInvocation:addAll
+FieldAccess:commands
+MethodInvocation:asList
+Method-name:commands
+Method-returnType:List<AllocationCommand>
+Method-parameters:[]
+FieldAccess:commands
+Method-name:readFrom
+Method-returnType:AllocationCommands
+Method-parameters:[StreamInput in]
+MethodInvocation:readVInt
+MethodInvocation:add
+MethodInvocation:readNamedWriteable
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[AllocationCommands commands, StreamOutput out]
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeNamedWriteable
+Method-name:fromXContent
+Method-returnType:AllocationCommands
+Method-parameters:[XContentParser parser]
+MethodInvocation:currentToken
+MethodInvocation:equals
+MethodInvocation:currentName
+MethodInvocation:currentName
+MethodInvocation:nextToken
+MethodInvocation:nextToken
+MethodInvocation:nextToken
+MethodInvocation:currentName
+MethodInvocation:nextToken
+MethodInvocation:add
+MethodInvocation:namedObject
+MethodInvocation:nextToken
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startArray
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:name
+MethodInvocation:endObject
+MethodInvocation:endArray
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString

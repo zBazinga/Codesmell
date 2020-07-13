@@ -1,0 +1,68 @@
+Class:UnitsRelationsDefault
+Field:m
+Field:km
+Field:mm
+Field:m2
+Field:km2
+Field:mm2
+Field:s
+Field:h
+Field:mPERs
+Field:kmPERh
+Field:mPERs2
+Field:elements
+Method-name:init
+Method-returnType:UnitsRelations
+Method-parameters:[ProcessingEnvironment env]
+MethodInvocation:getElementUtils
+MethodInvocation:buildAnnoMirrorWithDefaultPrefix
+MethodInvocation:buildAnnoMirrorWithSpecificPrefix
+MethodInvocation:buildAnnoMirrorWithSpecificPrefix
+MethodInvocation:buildAnnoMirrorWithNoPrefix
+MethodInvocation:buildAnnoMirrorWithNoPrefix
+MethodInvocation:buildAnnoMirrorWithNoPrefix
+MethodInvocation:buildAnnoMirrorWithDefaultPrefix
+MethodInvocation:buildAnnoMirrorWithNoPrefix
+MethodInvocation:buildAnnoMirrorWithNoPrefix
+MethodInvocation:buildAnnoMirrorWithNoPrefix
+MethodInvocation:buildAnnoMirrorWithNoPrefix
+Method-name:multiplication
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotatedTypeMirror lht, AnnotatedTypeMirror rht]
+MethodInvocation:hasSpecificUnitIgnoringPrefix
+MethodInvocation:hasSpecificUnitIgnoringPrefix
+MethodInvocation:hasNoPrefix
+MethodInvocation:hasNoPrefix
+MethodInvocation:getPrefix
+MethodInvocation:getPrefix
+MethodInvocation:bothHaveSpecificPrefix
+MethodInvocation:bothHaveSpecificPrefix
+MethodInvocation:bothHaveSpecificPrefix
+MethodInvocation:havePairOfUnitsIgnoringOrder
+MethodInvocation:havePairOfUnitsIgnoringOrder
+MethodInvocation:havePairOfUnitsIgnoringOrder
+Method-name:division
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotatedTypeMirror lht, AnnotatedTypeMirror rht]
+MethodInvocation:havePairOfUnits
+MethodInvocation:havePairOfUnits
+MethodInvocation:havePairOfUnits
+MethodInvocation:havePairOfUnits
+MethodInvocation:havePairOfUnits
+MethodInvocation:havePairOfUnits
+MethodInvocation:havePairOfUnits
+MethodInvocation:havePairOfUnits
+MethodInvocation:havePairOfUnits
+Method-name:bothHaveSpecificPrefix
+Method-returnType:boolean
+Method-parameters:[Prefix lhtPrefix, Prefix rhtPrefix, Prefix specificPrefix]
+Method-name:havePairOfUnits
+Method-returnType:boolean
+Method-parameters:[AnnotatedTypeMirror lht, AnnotationMirror ul, AnnotatedTypeMirror rht, AnnotationMirror ur]
+MethodInvocation:hasSpecificUnit
+MethodInvocation:hasSpecificUnit
+Method-name:havePairOfUnitsIgnoringOrder
+Method-returnType:boolean
+Method-parameters:[AnnotatedTypeMirror lht, AnnotationMirror u1, AnnotatedTypeMirror rht, AnnotationMirror u2]
+MethodInvocation:havePairOfUnits
+MethodInvocation:havePairOfUnits

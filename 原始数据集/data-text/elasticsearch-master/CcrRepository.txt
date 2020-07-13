@@ -1,0 +1,265 @@
+Class:CcrRepository
+Field:logger
+MethodInvocation:getLogger
+Field:LATEST
+Field:TYPE
+Field:NAME_PREFIX
+Field:SNAPSHOT_ID
+Field:IN_SYNC_ALLOCATION_ID
+Field:metadata
+Field:ccrSettings
+Field:localClusterName
+Field:remoteClusterAlias
+Field:client
+Field:ccrLicenseChecker
+Field:threadPool
+Field:throttledTime
+Method-name:CcrRepository
+Method-returnType:null
+Method-parameters:[RepositoryMetadata metadata, Client client, CcrLicenseChecker ccrLicenseChecker, Settings settings, CcrSettings ccrSettings, ThreadPool threadPool]
+Method-name:doStart
+Method-returnType:void
+Method-parameters:[]
+Method-name:doStop
+Method-returnType:void
+Method-parameters:[]
+Method-name:doClose
+Method-returnType:void
+Method-parameters:[]
+Method-name:getMetadata
+Method-returnType:RepositoryMetadata
+Method-parameters:[]
+Method-name:getRemoteClusterClient
+Method-returnType:Client
+Method-parameters:[]
+MethodInvocation:getRemoteClusterClient
+Method-name:getSnapshotInfo
+Method-returnType:SnapshotInfo
+Method-parameters:[SnapshotId snapshotId]
+Method-name:getSnapshotGlobalMetadata
+Method-returnType:Metadata
+Method-parameters:[SnapshotId snapshotId]
+Method-name:getSnapshotIndexMetadata
+Method-returnType:IndexMetadata
+Method-parameters:[SnapshotId snapshotId, IndexId index]
+Method-name:getRepositoryData
+Method-returnType:void
+Method-parameters:[ActionListener<RepositoryData> listener]
+MethodInvocation:completeWith
+MethodInvocation:getRemoteClusterClient
+MethodInvocation:get
+MethodInvocation:setMetadata
+MethodInvocation:clear
+MethodInvocation:prepareState
+MethodInvocation:cluster
+MethodInvocation:admin
+MethodInvocation:getRecoveryActionTimeout
+MethodInvocation:getMetadata
+MethodInvocation:getState
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:getIndices
+MethodInvocation:getConcreteAllIndices
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:getIndex
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:getUUID
+MethodInvocation:singletonList
+Method-name:finalizeSnapshot
+Method-returnType:void
+Method-parameters:[SnapshotId snapshotId, ShardGenerations shardGenerations, long startTime, String failure, int totalShards, List<SnapshotShardFailure> shardFailures, long repositoryStateId, boolean includeGlobalState, Metadata metadata, Map<String,Object> userMetadata, Version repositoryMetaVersion, Function<ClusterState,ClusterState> stateTransformer, ActionListener<Tuple<RepositoryData,SnapshotInfo>> listener]
+Method-name:deleteSnapshots
+Method-returnType:void
+Method-parameters:[Collection<SnapshotId> snapshotIds, long repositoryStateId, Version repositoryMetaVersion, ActionListener<Void> listener]
+Method-name:getSnapshotThrottleTimeInNanos
+Method-returnType:long
+Method-parameters:[]
+Method-name:getRestoreThrottleTimeInNanos
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:count
+Method-name:startVerification
+Method-returnType:String
+Method-parameters:[]
+Method-name:endVerification
+Method-returnType:void
+Method-parameters:[String verificationToken]
+Method-name:verify
+Method-returnType:void
+Method-parameters:[String verificationToken, DiscoveryNode localNode]
+Method-name:isReadOnly
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:snapshotShard
+Method-returnType:void
+Method-parameters:[Store store, MapperService mapperService, SnapshotId snapshotId, IndexId indexId, IndexCommit snapshotIndexCommit, String shardStateIdentifier, IndexShardSnapshotStatus snapshotStatus, Version repositoryMetaVersion, Map<String,Object> userMetadata, ActionListener<String> listener]
+Method-name:restoreShard
+Method-returnType:void
+Method-parameters:[Store store, SnapshotId snapshotId, IndexId indexId, ShardId snapshotShardId, RecoveryState recoveryState, ActionListener<Void> listener]
+Method-name:createEmptyStore
+Method-returnType:void
+Method-parameters:[Store store]
+MethodInvocation:incRef
+MethodInvocation:createEmpty
+FieldAccess:luceneVersion
+MethodInvocation:getIndexVersionCreated
+MethodInvocation:indexSettings
+MethodInvocation:shardId
+MethodInvocation:decRef
+Method-name:acquireRetentionLeaseOnLeader
+Method-returnType:void
+Method-parameters:[final ShardId shardId, final String retentionLeaseId, final ShardId leaderShardId, final Client remoteClient]
+Method-name:getShardSnapshotStatus
+Method-returnType:IndexShardSnapshotStatus
+Method-parameters:[SnapshotId snapshotId, IndexId indexId, ShardId leaderShardId]
+Method-name:updateState
+Method-returnType:void
+Method-parameters:[ClusterState state]
+Method-name:executeConsistentStateUpdate
+Method-returnType:void
+Method-parameters:[Function<RepositoryData,ClusterStateUpdateTask> createUpdateTask, String source, Consumer<Exception> onFailure]
+Method-name:updateMappings
+Method-returnType:void
+Method-parameters:[Client leaderClient, Index leaderIndex, long leaderMappingVersion, Client followerClient, Index followerIndex]
+MethodInvocation:nanoTime
+MethodInvocation:nanoTime
+MethodInvocation:timeValueNanos
+MethodInvocation:nanos
+MethodInvocation:getRecoveryActionTimeout
+MethodInvocation:getIndexMetadata
+MethodInvocation:actionGet
+MethodInvocation:getRecoveryActionTimeout
+MethodInvocation:mapping
+MethodInvocation:masterNodeTimeout
+MethodInvocation:putMappingRequest
+MethodInvocation:getName
+MethodInvocation:timeValueMinutes
+MethodInvocation:actionGet
+MethodInvocation:putMapping
+MethodInvocation:indices
+MethodInvocation:admin
+MethodInvocation:getRecoveryActionTimeout
+Method-name:openSession
+Method-returnType:RestoreSession
+Method-parameters:[String repositoryName, Client remoteClient, ShardId leaderShardId, ShardId indexShardId, RecoveryState recoveryState]
+MethodInvocation:randomBase64UUID
+MethodInvocation:actionGet
+MethodInvocation:execute
+MethodInvocation:getRecoveryActionTimeout
+MethodInvocation:getNode
+MethodInvocation:getStoreFileMetadata
+MethodInvocation:getMappingVersion
+Class:RestoreSession
+Field:remoteClient
+Field:sessionUUID
+Field:node
+Field:sourceMetadata
+Field:mappingVersion
+Field:ccrSettings
+Field:throttleListener
+Field:threadPool
+Method-name:RestoreSession
+Method-returnType:null
+Method-parameters:[String repositoryName, Client remoteClient, String sessionUUID, DiscoveryNode node, ShardId shardId, RecoveryState recoveryState, Store.MetadataSnapshot sourceMetadata, long mappingVersion, ThreadPool threadPool, CcrSettings ccrSettings, LongConsumer throttleListener]
+FieldAccess:remoteClient
+FieldAccess:sessionUUID
+FieldAccess:node
+FieldAccess:sourceMetadata
+FieldAccess:mappingVersion
+FieldAccess:threadPool
+FieldAccess:ccrSettings
+FieldAccess:throttleListener
+Method-name:restoreFiles
+Method-returnType:void
+Method-parameters:[Store store, ActionListener<Void> listener]
+MethodInvocation:length
+MethodInvocation:add
+MethodInvocation:name
+MethodInvocation:restore
+Method-name:restoreFiles
+Method-returnType:void
+Method-parameters:[List<FileInfo> filesToRecover, Store store, ActionListener<Void> allFilesListener]
+MethodInvocation:trace
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toList
+MethodInvocation:getThreadContext
+MethodInvocation:getMaxConcurrentFileChunks
+Field:multiFileWriter
+MethodInvocation:getIndex
+Field:offset
+Method-name:onNewFile
+Method-returnType:void
+Method-parameters:[StoreFileMetadata md]
+Method-name:nextChunkRequest
+Method-returnType:FileChunk
+Method-parameters:[StoreFileMetadata md]
+MethodInvocation:toIntExact
+MethodInvocation:min
+MethodInvocation:getBytes
+MethodInvocation:getChunkSize
+MethodInvocation:length
+MethodInvocation:length
+Method-name:executeChunkRequest
+Method-returnType:void
+Method-parameters:[FileChunk request, ActionListener<Void> listener]
+MethodInvocation:wrap
+MethodInvocation:writeFileChunk
+MethodInvocation:onResponse
+MethodInvocation:execute
+MethodInvocation:name
+MethodInvocation:wrapWithTimeout
+MethodInvocation:getRecoveryActionTimeout
+Method-name:writeFileChunk
+Method-returnType:void
+Method-parameters:[StoreFileMetadata md, GetCcrRestoreFileChunkAction.GetCcrRestoreFileChunkResponse r]
+MethodInvocation:length
+MethodInvocation:getChunk
+MethodInvocation:trace
+MethodInvocation:name
+MethodInvocation:getOffset
+MethodInvocation:maybePause
+MethodInvocation:getRateLimiter
+MethodInvocation:accept
+MethodInvocation:incRef
+MethodInvocation:getOffset
+MethodInvocation:length
+MethodInvocation:writeFileChunk
+MethodInvocation:getOffset
+MethodInvocation:getChunk
+MethodInvocation:handleError
+Method-name:handleError
+Method-returnType:void
+Method-parameters:[StoreFileMetadata md, Exception e]
+MethodInvocation:unwrapCorruption
+MethodInvocation:markStoreCorrupted
+MethodInvocation:warn
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+MethodInvocation:start
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:actionGet
+MethodInvocation:execute
+MethodInvocation:getRecoveryActionTimeout
+Class:FileChunk
+Field:md
+Field:bytesRequested
+Field:lastChunk
+Method-name:FileChunk
+Method-returnType:null
+Method-parameters:[StoreFileMetadata md, int bytesRequested, boolean lastChunk]
+FieldAccess:md
+FieldAccess:bytesRequested
+FieldAccess:lastChunk
+Method-name:lastChunk
+Method-returnType:boolean
+Method-parameters:[]

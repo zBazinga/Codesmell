@@ -1,0 +1,30 @@
+Class:InstanceFieldAccessChecker
+Field:resources
+Method-name:InstanceFieldAccessChecker
+Method-returnType:null
+Method-parameters:[IRewriteResources resources]
+FieldAccess:resources
+Method-name:check
+Method-returnType:void
+Method-parameters:[Expression expr]
+MethodInvocation:visit
+Method-name:visitVariableExpression
+Method-returnType:void
+Method-parameters:[VariableExpression expr]
+MethodInvocation:getAccessedVariable
+MethodInvocation:checkFieldAccess
+Method-name:visitFieldExpression
+Method-returnType:void
+Method-parameters:[FieldExpression expr]
+MethodInvocation:checkFieldAccess
+MethodInvocation:getField
+Method-name:getSourceUnit
+Method-returnType:SourceUnit
+Method-parameters:[]
+Method-name:checkFieldAccess
+Method-returnType:void
+Method-parameters:[ASTNode context, FieldNode field]
+MethodInvocation:hasAnnotation
+MethodInvocation:isStatic
+MethodInvocation:error
+MethodInvocation:getErrorReporter

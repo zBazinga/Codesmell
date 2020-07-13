@@ -1,0 +1,286 @@
+Class:LoptMultiJoin
+Field:multiJoin
+Field:joinFilters
+Field:allJoinFilters
+Field:nJoinFactors
+Field:nTotalFields
+Field:joinFactors
+Field:joinTypes
+Field:outerJoinFactors
+Field:projFields
+Field:joinFieldRefCountsMap
+Field:factorsRefByJoinFilter
+Field:fieldsRefByJoinFilter
+Field:joinStart
+Field:nFieldsInJoinFactor
+Field:factorsRefByFactor
+Field:factorWeights
+Field:factory
+Field:joinRemovalFactors
+Field:joinRemovalSemiJoins
+Field:removableOuterJoinFactors
+Field:removableSelfJoinPairs
+Method-name:LoptMultiJoin
+Method-returnType:null
+Method-parameters:[MultiJoin multiJoin]
+FieldAccess:multiJoin
+MethodInvocation:copyOf
+MethodInvocation:getInputs
+MethodInvocation:size
+MethodInvocation:getProjFields
+MethodInvocation:getCopyJoinFieldRefCountsMap
+MethodInvocation:newArrayList
+MethodInvocation:conjunctions
+MethodInvocation:getJoinFilter
+MethodInvocation:getOuterJoinConditions
+MethodInvocation:addAll
+MethodInvocation:conjunctions
+MethodInvocation:get
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:get
+MethodInvocation:copyOf
+MethodInvocation:getJoinTypes
+MethodInvocation:getOuterJoinConditions
+FieldAccess:multiJoin
+MethodInvocation:get
+MethodInvocation:getJoinFilterFactorBitmap
+MethodInvocation:get
+MethodInvocation:clear
+MethodInvocation:setJoinFilterRefs
+MethodInvocation:getTypeFactory
+MethodInvocation:getCluster
+Method-name:getMultiJoinRel
+Method-returnType:MultiJoin
+Method-parameters:[]
+Method-name:getNumJoinFactors
+Method-returnType:int
+Method-parameters:[]
+Method-name:getJoinFactor
+Method-returnType:RelNode
+Method-parameters:[int factIdx]
+MethodInvocation:get
+Method-name:getNumTotalFields
+Method-returnType:int
+Method-parameters:[]
+Method-name:getNumFieldsInJoinFactor
+Method-returnType:int
+Method-parameters:[int factIdx]
+Method-name:getJoinFilters
+Method-returnType:List<RexNode>
+Method-parameters:[]
+Method-name:getFactorsRefByJoinFilter
+Method-returnType:ImmutableBitSet
+Method-parameters:[RexNode joinFilter]
+MethodInvocation:get
+Method-name:getMultiJoinFields
+Method-returnType:List<RelDataTypeField>
+Method-parameters:[]
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+Method-name:getFieldsRefByJoinFilter
+Method-returnType:ImmutableBitSet
+Method-parameters:[RexNode joinFilter]
+MethodInvocation:get
+Method-name:getFactorWeights
+Method-returnType:int[][]
+Method-parameters:[]
+Method-name:getFactorsRefByFactor
+Method-returnType:ImmutableBitSet
+Method-parameters:[int factIdx]
+Method-name:getJoinStart
+Method-returnType:int
+Method-parameters:[int factIdx]
+Method-name:isNullGenerating
+Method-returnType:boolean
+Method-parameters:[int factIdx]
+MethodInvocation:isOuterJoin
+MethodInvocation:get
+Method-name:getOuterJoinFactors
+Method-returnType:ImmutableBitSet
+Method-parameters:[int factIdx]
+Method-name:getOuterJoinCond
+Method-returnType:RexNode
+Method-parameters:[int factIdx]
+MethodInvocation:get
+MethodInvocation:getOuterJoinConditions
+Method-name:getProjFields
+Method-returnType:ImmutableBitSet
+Method-parameters:[int factIdx]
+MethodInvocation:get
+Method-name:getJoinFieldRefCounts
+Method-returnType:int[]
+Method-parameters:[int factIdx]
+MethodInvocation:get
+Method-name:getJoinRemovalFactor
+Method-returnType:Integer
+Method-parameters:[int dimIdx]
+Method-name:getJoinRemovalSemiJoin
+Method-returnType:LogicalJoin
+Method-parameters:[int dimIdx]
+Method-name:setJoinRemovalFactor
+Method-returnType:void
+Method-parameters:[int dimIdx, int factIdx]
+Method-name:setJoinRemovalSemiJoin
+Method-returnType:void
+Method-parameters:[int dimIdx, LogicalJoin semiJoin]
+Method-name:getJoinFilterFactorBitmap
+Method-returnType:ImmutableBitSet
+Method-parameters:[RexNode joinFilter, boolean setFields]
+MethodInvocation:fieldBitmap
+MethodInvocation:put
+MethodInvocation:factorBitmap
+Method-name:fieldBitmap
+Method-returnType:ImmutableBitSet
+Method-parameters:[RexNode joinFilter]
+MethodInvocation:accept
+MethodInvocation:build
+Method-name:setJoinFilterRefs
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:listIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:isAlwaysTrue
+MethodInvocation:remove
+MethodInvocation:getJoinFilterFactorBitmap
+MethodInvocation:put
+Method-name:factorBitmap
+Method-returnType:ImmutableBitSet
+Method-parameters:[ImmutableBitSet fieldRefBitmap]
+MethodInvocation:builder
+MethodInvocation:findRef
+MethodInvocation:set
+MethodInvocation:build
+Method-name:findRef
+Method-returnType:int
+Method-parameters:[int rexInputRef]
+Method-name:setFactorWeights
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:of
+MethodInvocation:get
+MethodInvocation:isA
+MethodInvocation:build
+MethodInvocation:clear
+MethodInvocation:addAll
+MethodInvocation:rebuild
+MethodInvocation:cardinality
+MethodInvocation:nextSetBit
+MethodInvocation:nextSetBit
+MethodInvocation:fieldBitmap
+MethodInvocation:get
+MethodInvocation:getOperands
+MethodInvocation:factorBitmap
+MethodInvocation:cardinality
+MethodInvocation:getKind
+MethodInvocation:setFactorWeight
+MethodInvocation:copyOf
+MethodInvocation:setFactorWeight
+Method-name:setFactorWeight
+Method-returnType:void
+Method-parameters:[int weight, int leftFactor, int rightFactor]
+Method-name:hasAllFactors
+Method-returnType:boolean
+Method-parameters:[LoptJoinTree joinTree, BitSet factorsNeeded]
+MethodInvocation:contains
+MethodInvocation:of
+MethodInvocation:getTreeOrder
+Method-name:getJoinFields
+Method-returnType:List<RelDataTypeField>
+Method-parameters:[LoptJoinTree left, LoptJoinTree right]
+MethodInvocation:createJoinType
+MethodInvocation:getRowType
+MethodInvocation:getJoinTree
+MethodInvocation:getRowType
+MethodInvocation:getJoinTree
+MethodInvocation:getFieldList
+Method-name:addRemovableOuterJoinFactor
+Method-returnType:void
+Method-parameters:[int factIdx]
+MethodInvocation:add
+Method-name:isRemovableOuterJoinFactor
+Method-returnType:boolean
+Method-parameters:[int factIdx]
+MethodInvocation:contains
+Method-name:addRemovableSelfJoinPair
+Method-returnType:void
+Method-parameters:[int factor1, int factor2]
+MethodInvocation:getNumFieldsInJoinFactor
+MethodInvocation:getNumFieldsInJoinFactor
+MethodInvocation:getJoinFactor
+MethodInvocation:getMetadataQuery
+MethodInvocation:getCluster
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getColumnOrigin
+MethodInvocation:put
+MethodInvocation:getOriginColumnOrdinal
+MethodInvocation:getJoinFactor
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getColumnOrigin
+MethodInvocation:get
+MethodInvocation:getOriginColumnOrdinal
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+Method-name:getOtherSelfJoinFactor
+Method-returnType:Integer
+Method-parameters:[int factIdx]
+MethodInvocation:get
+MethodInvocation:getRightFactor
+MethodInvocation:getLeftFactor
+MethodInvocation:getRightFactor
+Method-name:isLeftFactorInRemovableSelfJoin
+Method-returnType:boolean
+Method-parameters:[int factIdx]
+MethodInvocation:get
+MethodInvocation:getLeftFactor
+Method-name:isRightFactorInRemovableSelfJoin
+Method-returnType:boolean
+Method-parameters:[int factIdx]
+MethodInvocation:get
+MethodInvocation:getRightFactor
+Method-name:getRightColumnMapping
+Method-returnType:Integer
+Method-parameters:[int rightFactor, int rightOffset]
+Method-name:createEdge
+Method-returnType:Edge
+Method-parameters:[RexNode condition]
+MethodInvocation:fieldBitmap
+MethodInvocation:factorBitmap
+Class:Edge
+Field:factors
+Field:columns
+Field:condition
+Method-name:Edge
+Method-returnType:null
+Method-parameters:[RexNode condition, ImmutableBitSet factors, ImmutableBitSet columns]
+FieldAccess:condition
+FieldAccess:factors
+FieldAccess:columns
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Class:RemovableSelfJoin
+Field:leftFactor
+Field:rightFactor
+Field:columnMapping
+Method-name:RemovableSelfJoin
+Method-returnType:null
+Method-parameters:[int leftFactor, int rightFactor, Map<Integer,Integer> columnMapping]
+FieldAccess:leftFactor
+FieldAccess:rightFactor
+FieldAccess:columnMapping
+Method-name:getLeftFactor
+Method-returnType:int
+Method-parameters:[]
+Method-name:getRightFactor
+Method-returnType:int
+Method-parameters:[]
+Method-name:getColumnMapping
+Method-returnType:Map<Integer,Integer>
+Method-parameters:[]

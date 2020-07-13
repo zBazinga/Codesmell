@@ -1,0 +1,42 @@
+Class:BinaryUnionReplacer
+Field:seenBefore
+Method-name:preVisit
+Method-returnType:boolean
+Method-parameters:[PlanNode visitable]
+MethodInvocation:add
+FieldAccess:seenBefore
+MethodInvocation:acceptForStepFunction
+Method-name:postVisit
+Method-returnType:void
+Method-parameters:[PlanNode visitable]
+MethodInvocation:getInput1
+MethodInvocation:getInput2
+MethodInvocation:unionsStaticAndDynamicPath
+MethodInvocation:collect
+MethodInvocation:collect
+MethodInvocation:getOptimizerNode
+MethodInvocation:getGlobalProperties
+MethodInvocation:getCumulativeCosts
+MethodInvocation:setParallelism
+MethodInvocation:getParallelism
+MethodInvocation:setTarget
+MethodInvocation:getOutgoingChannels
+MethodInvocation:swapUnionNodes
+MethodInvocation:addOutgoingChannel
+MethodInvocation:isOnDynamicPath
+MethodInvocation:setTarget
+MethodInvocation:setTarget
+MethodInvocation:getOutgoingChannels
+MethodInvocation:swapUnionNodes
+MethodInvocation:addOutgoingChannel
+Method-name:collect
+Method-returnType:void
+Method-parameters:[Channel in, List<Channel> inputs]
+MethodInvocation:getSource
+MethodInvocation:getShipStrategy
+MethodInvocation:getLocalStrategy
+MethodInvocation:getLocalStrategy
+MethodInvocation:addAll
+MethodInvocation:getListOfInputs
+MethodInvocation:getSource
+MethodInvocation:add

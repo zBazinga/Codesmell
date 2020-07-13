@@ -1,0 +1,26 @@
+Class:JtaTransactionObject
+Field:userTransaction
+Field:resetTransactionTimeout
+Method-name:JtaTransactionObject
+Method-returnType:null
+Method-parameters:[UserTransaction userTransaction]
+FieldAccess:userTransaction
+Method-name:getUserTransaction
+Method-returnType:UserTransaction
+Method-parameters:[]
+FieldAccess:userTransaction
+Method-name:isRollbackOnly
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getStatus
+FieldAccess:userTransaction
+Method-name:flush
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:triggerFlush
+Method-name:doJtaSuspend
+Method-returnType:Object
+Method-parameters:[JtaTransactionManager jtaTransactionManager]
+MethodInvocation:getTransactionManager
+MethodInvocation:suspend
+MethodInvocation:getTransactionManager

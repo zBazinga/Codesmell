@@ -1,0 +1,110 @@
+Class:GroupedStream
+Field:_groupFields
+Field:_stream
+Method-name:GroupedStream
+Method-returnType:null
+Method-parameters:[Stream stream, Fields groupFields]
+Method-name:name
+Method-returnType:GroupedStream
+Method-parameters:[String name]
+MethodInvocation:name
+Method-name:chainedAgg
+Method-returnType:ChainedAggregatorDeclarer
+Method-parameters:[]
+Method-name:aggregate
+Method-returnType:Stream
+Method-parameters:[Aggregator agg, Fields functionFields]
+MethodInvocation:aggregate
+Method-name:aggregate
+Method-returnType:Stream
+Method-parameters:[CombinerAggregator agg, Fields functionFields]
+MethodInvocation:aggregate
+Method-name:aggregate
+Method-returnType:Stream
+Method-parameters:[Fields inputFields, CombinerAggregator agg, Fields functionFields]
+MethodInvocation:chainEnd
+MethodInvocation:aggregate
+Method-name:aggregate
+Method-returnType:Stream
+Method-parameters:[ReducerAggregator agg, Fields functionFields]
+MethodInvocation:aggregate
+Method-name:aggregate
+Method-returnType:Stream
+Method-parameters:[Fields inputFields, ReducerAggregator agg, Fields functionFields]
+MethodInvocation:chainEnd
+MethodInvocation:aggregate
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateFactory stateFactory, CombinerAggregator agg, Fields functionFields]
+MethodInvocation:persistentAggregate
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateSpec spec, CombinerAggregator agg, Fields functionFields]
+MethodInvocation:persistentAggregate
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateFactory stateFactory, Fields inputFields, CombinerAggregator agg, Fields functionFields]
+MethodInvocation:persistentAggregate
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateSpec spec, Fields inputFields, CombinerAggregator agg, Fields functionFields]
+MethodInvocation:partitionPersist
+MethodInvocation:aggregate
+MethodInvocation:fieldsUnion
+MethodInvocation:fieldsConcat
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateFactory stateFactory, Fields inputFields, ReducerAggregator agg, Fields functionFields]
+MethodInvocation:persistentAggregate
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateSpec spec, Fields inputFields, ReducerAggregator agg, Fields functionFields]
+MethodInvocation:partitionPersist
+MethodInvocation:partitionBy
+MethodInvocation:fieldsUnion
+MethodInvocation:fieldsConcat
+Method-name:stateQuery
+Method-returnType:Stream
+Method-parameters:[TridentState state, Fields inputFields, QueryFunction function, Fields functionFields]
+MethodInvocation:stateQuery
+MethodInvocation:partitionBy
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateFactory stateFactory, ReducerAggregator agg, Fields functionFields]
+MethodInvocation:persistentAggregate
+Method-name:persistentAggregate
+Method-returnType:TridentState
+Method-parameters:[StateSpec spec, ReducerAggregator agg, Fields functionFields]
+MethodInvocation:persistentAggregate
+Method-name:stateQuery
+Method-returnType:Stream
+Method-parameters:[TridentState state, QueryFunction function, Fields functionFields]
+MethodInvocation:stateQuery
+Method-name:each
+Method-returnType:IAggregatableStream
+Method-parameters:[Fields inputFields, Function function, Fields functionFields]
+MethodInvocation:each
+Method-name:partitionAggregate
+Method-returnType:IAggregatableStream
+Method-parameters:[Fields inputFields, Aggregator agg, Fields functionFields]
+MethodInvocation:size
+MethodInvocation:fieldsUnion
+MethodInvocation:fieldsConcat
+MethodInvocation:partitionAggregate
+Method-name:aggPartition
+Method-returnType:IAggregatableStream
+Method-parameters:[GroupedStream s]
+MethodInvocation:partitionBy
+Method-name:toStream
+Method-returnType:Stream
+Method-parameters:[]
+Method-name:getOutputFields
+Method-returnType:Fields
+Method-parameters:[]
+MethodInvocation:getOutputFields
+Method-name:getGroupFields
+Method-returnType:Fields
+Method-parameters:[]
+Method-name:singleEmitPartitioner
+Method-returnType:BatchToPartition
+Method-parameters:[]

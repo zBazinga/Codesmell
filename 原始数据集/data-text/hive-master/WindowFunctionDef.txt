@@ -1,0 +1,79 @@
+Class:WindowFunctionDef
+Field:name
+Field:isStar
+Field:isDistinct
+Field:args
+Field:windowFrame
+Field:wFnEval
+Field:pivotResult
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setName
+Method-returnType:void
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:isStar
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setStar
+Method-returnType:void
+Method-parameters:[boolean isStar]
+FieldAccess:isStar
+Method-name:isDistinct
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDistinct
+Method-returnType:void
+Method-parameters:[boolean isDistinct]
+FieldAccess:isDistinct
+Method-name:getArgs
+Method-returnType:List<PTFExpressionDef>
+Method-parameters:[]
+Method-name:setArgs
+Method-returnType:void
+Method-parameters:[List<PTFExpressionDef> args]
+FieldAccess:args
+Method-name:addArg
+Method-returnType:void
+Method-parameters:[PTFExpressionDef arg]
+MethodInvocation:add
+Method-name:getArgsExplain
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getExprString
+MethodInvocation:getExprNode
+MethodInvocation:toString
+Method-name:getWindowFrame
+Method-returnType:WindowFrameDef
+Method-parameters:[]
+Method-name:setWindowFrame
+Method-returnType:void
+Method-parameters:[WindowFrameDef windowFrame]
+FieldAccess:windowFrame
+Method-name:getWindowFrameExplain
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:getWFnEval
+Method-returnType:GenericUDAFEvaluator
+Method-parameters:[]
+Method-name:setWFnEval
+Method-returnType:void
+Method-parameters:[GenericUDAFEvaluator wFnEval]
+FieldAccess:wFnEval
+Method-name:getWFnEvalExplain
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:isPivotResult
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setPivotResult
+Method-returnType:void
+Method-parameters:[boolean pivotResult]
+FieldAccess:pivotResult

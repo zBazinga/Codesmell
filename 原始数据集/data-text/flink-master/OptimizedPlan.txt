@@ -1,0 +1,42 @@
+Class:OptimizedPlan
+Field:dataSources
+Field:dataSinks
+Field:allNodes
+Field:originalProgram
+Field:jobName
+Method-name:OptimizedPlan
+Method-returnType:null
+Method-parameters:[Collection<SourcePlanNode> sources, Collection<SinkPlanNode> sinks, Collection<PlanNode> allNodes, String jobName, Plan programPlan]
+FieldAccess:dataSources
+FieldAccess:dataSinks
+FieldAccess:allNodes
+FieldAccess:jobName
+FieldAccess:originalProgram
+Method-name:getDataSources
+Method-returnType:Collection<SourcePlanNode>
+Method-parameters:[]
+Method-name:getDataSinks
+Method-returnType:Collection<SinkPlanNode>
+Method-parameters:[]
+Method-name:getAllNodes
+Method-returnType:Collection<PlanNode>
+Method-parameters:[]
+Method-name:getJobName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:jobName
+Method-name:getOriginalPlan
+Method-returnType:Plan
+Method-parameters:[]
+FieldAccess:originalProgram
+Method-name:accept
+Method-returnType:void
+Method-parameters:[Visitor<PlanNode> visitor]
+FieldAccess:dataSinks
+MethodInvocation:accept
+Method-name:dumpOptimizerPlanAsJSON
+Method-returnType:void
+Method-parameters:[File toFile, PlanJSONDumpGenerator planJSONDumpGenerator]
+MethodInvocation:dumpOptimizerPlanAsJSON
+MethodInvocation:flush
+MethodInvocation:close

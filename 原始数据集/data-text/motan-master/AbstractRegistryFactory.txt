@@ -1,0 +1,19 @@
+Class:AbstractRegistryFactory
+Field:registries
+Field:lock
+Method-name:getRegistryUri
+Method-returnType:String
+Method-parameters:[URL url]
+MethodInvocation:getUri
+Method-name:getRegistry
+Method-returnType:Registry
+Method-parameters:[URL url]
+MethodInvocation:getRegistryUri
+MethodInvocation:lock
+MethodInvocation:get
+MethodInvocation:createRegistry
+MethodInvocation:put
+MethodInvocation:unlock
+Method-name:createRegistry
+Method-returnType:Registry
+Method-parameters:[URL url]

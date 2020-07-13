@@ -1,0 +1,229 @@
+Class:BulkApiProcessor
+Field:bulkClient
+Method-name:BulkApiProcessor
+Method-returnType:null
+Method-parameters:[SalesforceEndpoint endpoint]
+Method-name:doStart
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:bulkClient
+MethodInvocation:get
+MethodInvocation:startService
+Method-name:doStop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:stopService
+Method-name:process
+Method-returnType:boolean
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:processCreateJob
+MethodInvocation:processGetJob
+MethodInvocation:processCloseJob
+MethodInvocation:processAbortJob
+MethodInvocation:processCreateBatch
+MethodInvocation:processGetBatch
+MethodInvocation:processGetAllBatches
+MethodInvocation:processGetRequest
+MethodInvocation:processGetResults
+MethodInvocation:processCreateBatchQuery
+MethodInvocation:processGetQueryResultIds
+MethodInvocation:processGetQueryResult
+MethodInvocation:value
+MethodInvocation:setException
+MethodInvocation:format
+MethodInvocation:value
+MethodInvocation:getStatusCode
+MethodInvocation:getMessage
+MethodInvocation:done
+MethodInvocation:setException
+MethodInvocation:format
+MethodInvocation:value
+MethodInvocation:getMessage
+MethodInvocation:done
+MethodInvocation:setException
+MethodInvocation:format
+MethodInvocation:value
+MethodInvocation:getMessage
+MethodInvocation:done
+Method-name:processCreateJob
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getMandatoryBody
+MethodInvocation:getIn
+MethodInvocation:createJob
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[JobInfo jobInfo, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processGetJob
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getId
+MethodInvocation:getParameter
+MethodInvocation:getJob
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[JobInfo jobInfo, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processCloseJob
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getId
+MethodInvocation:getParameter
+MethodInvocation:closeJob
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[JobInfo jobInfo, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processAbortJob
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getId
+MethodInvocation:getParameter
+MethodInvocation:abortJob
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[JobInfo jobInfo, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processCreateBatch
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:fromValue
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:getMandatoryBody
+MethodInvocation:getIn
+MethodInvocation:getMessage
+MethodInvocation:createBatch
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[BatchInfo batchInfo, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processGetBatch
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getJobId
+MethodInvocation:getId
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:getBatch
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[BatchInfo batchInfo, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processGetAllBatches
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getId
+MethodInvocation:getParameter
+MethodInvocation:getAllBatches
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[List<BatchInfo> batchInfoList, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processGetRequest
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getJobId
+MethodInvocation:getId
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:getRequest
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream inputStream, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:convertToStreamCache
+MethodInvocation:getMessage
+MethodInvocation:close
+MethodInvocation:processResponse
+Method-name:processGetResults
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getJobId
+MethodInvocation:getId
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:getResults
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream inputStream, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:convertToStreamCache
+MethodInvocation:getMessage
+MethodInvocation:close
+MethodInvocation:processResponse
+Method-name:processCreateBatchQuery
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getId
+MethodInvocation:getContentType
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:fromValue
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:createBatchQuery
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[BatchInfo batchInfo, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processGetQueryResultIds
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getJobId
+MethodInvocation:getId
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:getQueryResultIds
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[List<String> ids, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:processResponse
+Method-name:processGetQueryResult
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final AsyncCallback callback]
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getJobId
+MethodInvocation:getId
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:getQueryResult
+MethodInvocation:determineHeaders
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream inputStream, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:convertToStreamCache
+MethodInvocation:getMessage
+MethodInvocation:close
+MethodInvocation:processResponse

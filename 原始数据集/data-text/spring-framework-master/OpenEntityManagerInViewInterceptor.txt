@@ -1,0 +1,54 @@
+Class:OpenEntityManagerInViewInterceptor
+Field:PARTICIPATE_SUFFIX
+Method-name:preHandle
+Method-returnType:void
+Method-parameters:[WebRequest request]
+MethodInvocation:getParticipateAttributeName
+MethodInvocation:getAsyncManager
+MethodInvocation:hasConcurrentResult
+MethodInvocation:applyEntityManagerBindingInterceptor
+MethodInvocation:obtainEntityManagerFactory
+MethodInvocation:hasResource
+MethodInvocation:getAttribute
+MethodInvocation:setAttribute
+MethodInvocation:getParticipateAttributeName
+MethodInvocation:debug
+MethodInvocation:createEntityManager
+MethodInvocation:bindResource
+MethodInvocation:registerCallableInterceptor
+MethodInvocation:registerDeferredResultInterceptor
+Method-name:postHandle
+Method-returnType:void
+Method-parameters:[WebRequest request, @Nullable ModelMap model]
+Method-name:afterCompletion
+Method-returnType:void
+Method-parameters:[WebRequest request, @Nullable Exception ex]
+MethodInvocation:decrementParticipateCount
+MethodInvocation:unbindResource
+MethodInvocation:obtainEntityManagerFactory
+MethodInvocation:debug
+MethodInvocation:closeEntityManager
+MethodInvocation:getEntityManager
+Method-name:decrementParticipateCount
+Method-returnType:boolean
+Method-parameters:[WebRequest request]
+MethodInvocation:getParticipateAttributeName
+MethodInvocation:getAttribute
+MethodInvocation:setAttribute
+MethodInvocation:removeAttribute
+Method-name:afterConcurrentHandlingStarted
+Method-returnType:void
+Method-parameters:[WebRequest request]
+MethodInvocation:decrementParticipateCount
+MethodInvocation:unbindResource
+MethodInvocation:obtainEntityManagerFactory
+Method-name:getParticipateAttributeName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+MethodInvocation:obtainEntityManagerFactory
+Method-name:applyEntityManagerBindingInterceptor
+Method-returnType:boolean
+Method-parameters:[WebAsyncManager asyncManager, String key]
+MethodInvocation:getCallableInterceptor
+MethodInvocation:bindEntityManager

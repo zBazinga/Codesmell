@@ -1,0 +1,84 @@
+Class:DisplayLists
+Field:dialogGlobalList
+Field:contactsGlobalList
+Field:chatsGlobalLists
+Field:chatsDocsGlobalLists
+Method-name:DisplayLists
+Method-returnType:null
+Method-parameters:[ModuleContext context]
+Method-name:getContactsSharedList
+Method-returnType:PlatformDisplayList<Contact>
+Method-parameters:[]
+MethodInvocation:checkMainThread
+MethodInvocation:buildContactList
+Method-name:getDialogsSharedList
+Method-returnType:PlatformDisplayList<Dialog>
+Method-parameters:[]
+MethodInvocation:checkMainThread
+MethodInvocation:buildDialogsList
+Method-name:getMessagesSharedList
+Method-returnType:PlatformDisplayList<Message>
+Method-parameters:[Peer peer]
+MethodInvocation:checkMainThread
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:buildChatList
+MethodInvocation:get
+Method-name:getDocsSharedList
+Method-returnType:PlatformDisplayList<Message>
+Method-parameters:[Peer peer]
+MethodInvocation:checkMainThread
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:buildChatDocsList
+MethodInvocation:get
+Method-name:buildDialogsList
+Method-returnType:PlatformDisplayList<Dialog>
+Method-parameters:[boolean isShared]
+MethodInvocation:checkMainThread
+MethodInvocation:createDisplayList
+MethodInvocation:getDialogsEngine
+MethodInvocation:getMessagesModule
+MethodInvocation:context
+MethodInvocation:initTop
+Method-name:buildContactList
+Method-returnType:PlatformDisplayList<Contact>
+Method-parameters:[boolean isShared]
+MethodInvocation:checkMainThread
+MethodInvocation:createDisplayList
+MethodInvocation:getContacts
+MethodInvocation:getContactsModule
+MethodInvocation:context
+MethodInvocation:initTop
+Method-name:buildChatList
+Method-returnType:PlatformDisplayList<Message>
+Method-parameters:[final Peer peer, boolean isShared]
+MethodInvocation:checkMainThread
+MethodInvocation:createDisplayList
+MethodInvocation:getConversationEngine
+MethodInvocation:getMessagesModule
+MethodInvocation:context
+MethodInvocation:getLastReadMessageDate
+MethodInvocation:getConversationVM
+MethodInvocation:getMessagesModule
+MethodInvocation:context
+MethodInvocation:initCenter
+MethodInvocation:initTop
+Method-name:buildChatDocsList
+Method-returnType:PlatformDisplayList<Message>
+Method-parameters:[final Peer peer, boolean isShared]
+MethodInvocation:checkMainThread
+MethodInvocation:createDisplayList
+MethodInvocation:getConversationDocsEngine
+MethodInvocation:getMessagesModule
+MethodInvocation:context
+MethodInvocation:initTop
+Method-name:buildSearchList
+Method-returnType:PlatformDisplayList<SearchEntity>
+Method-parameters:[boolean isGlobalList]
+MethodInvocation:checkMainThread
+MethodInvocation:createDisplayList
+MethodInvocation:getSearchList
+MethodInvocation:getSearchModule
+MethodInvocation:context
+MethodInvocation:initEmpty

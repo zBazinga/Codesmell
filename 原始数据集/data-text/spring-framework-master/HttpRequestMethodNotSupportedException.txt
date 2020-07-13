@@ -1,0 +1,45 @@
+Class:HttpRequestMethodNotSupportedException
+Field:method
+Field:supportedMethods
+Method-name:HttpRequestMethodNotSupportedException
+Method-returnType:null
+Method-parameters:[String method]
+Method-name:HttpRequestMethodNotSupportedException
+Method-returnType:null
+Method-parameters:[String method, String msg]
+Method-name:HttpRequestMethodNotSupportedException
+Method-returnType:null
+Method-parameters:[String method, @Nullable Collection<String> supportedMethods]
+MethodInvocation:toStringArray
+Method-name:HttpRequestMethodNotSupportedException
+Method-returnType:null
+Method-parameters:[String method, @Nullable String[] supportedMethods]
+Method-name:HttpRequestMethodNotSupportedException
+Method-returnType:null
+Method-parameters:[String method, @Nullable String[] supportedMethods, String msg]
+FieldAccess:method
+FieldAccess:supportedMethods
+Method-name:getMethod
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:method
+Method-name:getSupportedMethods
+Method-returnType:String[]
+Method-parameters:[]
+FieldAccess:supportedMethods
+Method-name:getSupportedHttpMethods
+Method-returnType:Set<HttpMethod>
+Method-parameters:[]
+FieldAccess:supportedMethods
+FieldAccess:supportedMethods
+MethodInvocation:resolve
+MethodInvocation:add
+MethodInvocation:copyOf
+Method-name:handleHttpRequestMethodNotSupported
+Method-returnType:ModelAndView
+Method-parameters:[HttpServletRequest request, HttpServletResponse response, @Nullable Object handler, DefaultHandlerExceptionResolver defaultHandlerExceptionResolver]
+MethodInvocation:getSupportedMethods
+MethodInvocation:setHeader
+MethodInvocation:arrayToDelimitedString
+MethodInvocation:sendError
+MethodInvocation:getMessage

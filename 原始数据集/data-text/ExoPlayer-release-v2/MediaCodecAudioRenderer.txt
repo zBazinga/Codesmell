@@ -1,0 +1,315 @@
+Class:MediaCodecAudioRenderer
+Field:MAX_PENDING_STREAM_CHANGE_COUNT
+Field:TAG
+Field:VIVO_BITS_PER_SAMPLE_KEY
+Field:context
+Field:eventDispatcher
+Field:audioSink
+Field:pendingStreamChangeTimesUs
+Field:codecMaxInputSize
+Field:passthroughEnabled
+Field:codecNeedsDiscardChannelsWorkaround
+Field:codecNeedsEosBufferTimestampWorkaround
+Field:passthroughMediaFormat
+Field:inputFormat
+Field:currentPositionUs
+Field:allowFirstBufferPositionDiscontinuity
+Field:allowPositionDiscontinuity
+Field:lastInputTimeUs
+Field:pendingStreamChangeCount
+Method-name:MediaCodecAudioRenderer
+Method-returnType:null
+Method-parameters:[Context context, MediaCodecSelector mediaCodecSelector]
+Method-name:MediaCodecAudioRenderer
+Method-returnType:null
+Method-parameters:[Context context, MediaCodecSelector mediaCodecSelector, @Nullable DrmSessionManager<FrameworkMediaCrypto> drmSessionManager, boolean playClearSamplesWithoutKeys]
+Method-name:MediaCodecAudioRenderer
+Method-returnType:null
+Method-parameters:[Context context, MediaCodecSelector mediaCodecSelector, @Nullable Handler eventHandler, @Nullable AudioRendererEventListener eventListener]
+Method-name:MediaCodecAudioRenderer
+Method-returnType:null
+Method-parameters:[Context context, MediaCodecSelector mediaCodecSelector, @Nullable DrmSessionManager<FrameworkMediaCrypto> drmSessionManager, boolean playClearSamplesWithoutKeys, @Nullable Handler eventHandler, @Nullable AudioRendererEventListener eventListener]
+Method-name:MediaCodecAudioRenderer
+Method-returnType:null
+Method-parameters:[Context context, MediaCodecSelector mediaCodecSelector, @Nullable DrmSessionManager<FrameworkMediaCrypto> drmSessionManager, boolean playClearSamplesWithoutKeys, @Nullable Handler eventHandler, @Nullable AudioRendererEventListener eventListener, @Nullable AudioCapabilities audioCapabilities, AudioProcessor... audioProcessors]
+Method-name:MediaCodecAudioRenderer
+Method-returnType:null
+Method-parameters:[Context context, MediaCodecSelector mediaCodecSelector, @Nullable DrmSessionManager<FrameworkMediaCrypto> drmSessionManager, boolean playClearSamplesWithoutKeys, @Nullable Handler eventHandler, @Nullable AudioRendererEventListener eventListener, AudioSink audioSink]
+Method-name:MediaCodecAudioRenderer
+Method-returnType:null
+Method-parameters:[Context context, MediaCodecSelector mediaCodecSelector, boolean enableDecoderFallback, @Nullable Handler eventHandler, @Nullable AudioRendererEventListener eventListener, AudioSink audioSink]
+Method-name:MediaCodecAudioRenderer
+Method-returnType:null
+Method-parameters:[Context context, MediaCodecSelector mediaCodecSelector, @Nullable DrmSessionManager<FrameworkMediaCrypto> drmSessionManager, boolean playClearSamplesWithoutKeys, boolean enableDecoderFallback, @Nullable Handler eventHandler, @Nullable AudioRendererEventListener eventListener, AudioSink audioSink]
+FieldAccess:context
+MethodInvocation:getApplicationContext
+FieldAccess:audioSink
+MethodInvocation:setListener
+Method-name:supportsFormat
+Method-returnType:int
+Method-parameters:[MediaCodecSelector mediaCodecSelector, @Nullable DrmSessionManager<FrameworkMediaCrypto> drmSessionManager, Format format]
+MethodInvocation:isAudio
+MethodInvocation:create
+MethodInvocation:equals
+MethodInvocation:supportsFormatDrm
+MethodInvocation:allowPassthrough
+MethodInvocation:getPassthroughDecoderInfo
+MethodInvocation:create
+MethodInvocation:equals
+MethodInvocation:supportsOutput
+MethodInvocation:supportsOutput
+MethodInvocation:create
+MethodInvocation:getDecoderInfos
+MethodInvocation:isEmpty
+MethodInvocation:create
+MethodInvocation:create
+MethodInvocation:get
+MethodInvocation:isFormatSupported
+MethodInvocation:isSeamlessAdaptationSupported
+MethodInvocation:create
+Method-name:getDecoderInfos
+Method-returnType:List<MediaCodecInfo>
+Method-parameters:[MediaCodecSelector mediaCodecSelector, Format format, boolean requiresSecureDecoder]
+MethodInvocation:emptyList
+MethodInvocation:allowPassthrough
+MethodInvocation:getPassthroughDecoderInfo
+MethodInvocation:singletonList
+MethodInvocation:getDecoderInfos
+MethodInvocation:getDecoderInfosSortedByFormatSupport
+MethodInvocation:equals
+MethodInvocation:addAll
+MethodInvocation:getDecoderInfos
+MethodInvocation:unmodifiableList
+Method-name:allowPassthrough
+Method-returnType:boolean
+Method-parameters:[int channelCount, String mimeType]
+MethodInvocation:getPassthroughEncoding
+Method-name:configureCodec
+Method-returnType:void
+Method-parameters:[MediaCodecInfo codecInfo, MediaCodec codec, Format format, @Nullable MediaCrypto crypto, float codecOperatingRate]
+MethodInvocation:getCodecMaxInputSize
+MethodInvocation:getStreamFormats
+MethodInvocation:codecNeedsDiscardChannelsWorkaround
+MethodInvocation:codecNeedsEosBufferTimestampWorkaround
+MethodInvocation:getMediaFormat
+MethodInvocation:configure
+MethodInvocation:setString
+Method-name:canKeepCodec
+Method-returnType:int
+Method-parameters:[MediaCodec codec, MediaCodecInfo codecInfo, Format oldFormat, Format newFormat]
+MethodInvocation:getCodecMaxInputSize
+MethodInvocation:isSeamlessAdaptationSupported
+MethodInvocation:canKeepCodecWithFlush
+Method-name:canKeepCodecWithFlush
+Method-returnType:boolean
+Method-parameters:[Format oldFormat, Format newFormat]
+MethodInvocation:areEqual
+MethodInvocation:initializationDataEquals
+MethodInvocation:equals
+Method-name:getMediaClock
+Method-returnType:MediaClock
+Method-parameters:[]
+Method-name:getCodecOperatingRateV23
+Method-returnType:float
+Method-parameters:[float operatingRate, Format format, Format[] streamFormats]
+MethodInvocation:max
+Method-name:onCodecInitialized
+Method-returnType:void
+Method-parameters:[String name, long initializedTimestampMs, long initializationDurationMs]
+MethodInvocation:decoderInitialized
+Method-name:onInputFormatChanged
+Method-returnType:void
+Method-parameters:[FormatHolder formatHolder]
+MethodInvocation:inputFormatChanged
+Method-name:onOutputFormatChanged
+Method-returnType:void
+Method-parameters:[MediaCodec codec, MediaFormat outputMediaFormat]
+MethodInvocation:getPassthroughEncoding
+MethodInvocation:getInteger
+MethodInvocation:getString
+MethodInvocation:containsKey
+MethodInvocation:getPcmEncoding
+MethodInvocation:getInteger
+MethodInvocation:getPcmEncoding
+MethodInvocation:getInteger
+MethodInvocation:getInteger
+MethodInvocation:configure
+MethodInvocation:createRendererException
+Method-name:getPassthroughEncoding
+Method-returnType:int
+Method-parameters:[int channelCount, String mimeType]
+MethodInvocation:equals
+MethodInvocation:supportsOutput
+MethodInvocation:getEncoding
+MethodInvocation:getEncoding
+MethodInvocation:supportsOutput
+Method-name:onAudioSessionId
+Method-returnType:void
+Method-parameters:[int audioSessionId]
+Method-name:onAudioTrackPositionDiscontinuity
+Method-returnType:void
+Method-parameters:[]
+Method-name:onAudioTrackUnderrun
+Method-returnType:void
+Method-parameters:[int bufferSize, long bufferSizeMs, long elapsedSinceLastFeedMs]
+Method-name:onEnabled
+Method-returnType:void
+Method-parameters:[boolean joining]
+MethodInvocation:enabled
+FieldAccess:tunnelingAudioSessionId
+MethodInvocation:getConfiguration
+MethodInvocation:enableTunnelingV21
+MethodInvocation:disableTunneling
+Method-name:onStreamChanged
+Method-returnType:void
+Method-parameters:[Format[] formats, long offsetUs]
+MethodInvocation:w
+Method-name:onPositionReset
+Method-returnType:void
+Method-parameters:[long positionUs, boolean joining]
+MethodInvocation:flush
+Method-name:onStarted
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:play
+Method-name:onStopped
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:updateCurrentPosition
+MethodInvocation:pause
+Method-name:onDisabled
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:flush
+MethodInvocation:disabled
+Method-name:onReset
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:reset
+Method-name:isEnded
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEnded
+Method-name:isReady
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasPendingData
+Method-name:getPositionUs
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getState
+MethodInvocation:updateCurrentPosition
+Method-name:setPlaybackParameters
+Method-returnType:void
+Method-parameters:[PlaybackParameters playbackParameters]
+MethodInvocation:setPlaybackParameters
+Method-name:getPlaybackParameters
+Method-returnType:PlaybackParameters
+Method-parameters:[]
+MethodInvocation:getPlaybackParameters
+Method-name:onQueueInputBuffer
+Method-returnType:void
+Method-parameters:[DecoderInputBuffer buffer]
+MethodInvocation:isDecodeOnly
+MethodInvocation:abs
+MethodInvocation:max
+Method-name:onProcessedOutputBuffer
+Method-returnType:void
+Method-parameters:[long presentationTimeUs]
+MethodInvocation:handleDiscontinuity
+MethodInvocation:arraycopy
+Method-name:processOutputBuffer
+Method-returnType:boolean
+Method-parameters:[long positionUs, long elapsedRealtimeUs, MediaCodec codec, ByteBuffer buffer, int bufferIndex, int bufferFlags, long bufferPresentationTimeUs, boolean isDecodeOnlyBuffer, boolean isLastBuffer, Format format]
+MethodInvocation:releaseOutputBuffer
+MethodInvocation:releaseOutputBuffer
+MethodInvocation:handleDiscontinuity
+MethodInvocation:handleBuffer
+MethodInvocation:releaseOutputBuffer
+MethodInvocation:createRendererException
+Method-name:renderToEndOfStream
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:playToEndOfStream
+MethodInvocation:createRendererException
+Method-name:handleMessage
+Method-returnType:void
+Method-parameters:[int messageType, @Nullable Object message]
+MethodInvocation:setVolume
+MethodInvocation:setAudioAttributes
+MethodInvocation:setAuxEffectInfo
+Method-name:getCodecMaxInputSize
+Method-returnType:int
+Method-parameters:[MediaCodecInfo codecInfo, Format format, Format[] streamFormats]
+MethodInvocation:getCodecMaxInputSize
+MethodInvocation:isSeamlessAdaptationSupported
+MethodInvocation:max
+MethodInvocation:getCodecMaxInputSize
+Method-name:getCodecMaxInputSize
+Method-returnType:int
+Method-parameters:[MediaCodecInfo codecInfo, Format format]
+MethodInvocation:equals
+MethodInvocation:isTv
+Method-name:getMediaFormat
+Method-returnType:MediaFormat
+Method-parameters:[Format format, String codecMimeType, int codecMaxInputSize, float codecOperatingRate]
+MethodInvocation:setString
+MethodInvocation:setInteger
+MethodInvocation:setInteger
+MethodInvocation:setCsdBuffers
+MethodInvocation:maybeSetInteger
+MethodInvocation:setInteger
+MethodInvocation:deviceDoesntSupportOperatingRate
+MethodInvocation:setFloat
+MethodInvocation:equals
+MethodInvocation:setInteger
+Method-name:updateCurrentPosition
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getCurrentPositionUs
+MethodInvocation:isEnded
+MethodInvocation:max
+Method-name:deviceDoesntSupportOperatingRate
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:codecNeedsDiscardChannelsWorkaround
+Method-returnType:boolean
+Method-parameters:[String codecName]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+Method-name:codecNeedsEosBufferTimestampWorkaround
+Method-returnType:boolean
+Method-parameters:[String codecName]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+Method-name:getPcmEncoding
+Method-returnType:int
+Method-parameters:[Format format]
+MethodInvocation:equals
+Class:AudioSinkListener
+Method-name:onAudioSessionId
+Method-returnType:void
+Method-parameters:[int audioSessionId]
+MethodInvocation:audioSessionId
+MethodInvocation:onAudioSessionId
+Method-name:onPositionDiscontinuity
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onAudioTrackPositionDiscontinuity
+FieldAccess:allowPositionDiscontinuity
+Method-name:onUnderrun
+Method-returnType:void
+Method-parameters:[int bufferSize, long bufferSizeMs, long elapsedSinceLastFeedMs]
+MethodInvocation:audioTrackUnderrun
+MethodInvocation:onAudioTrackUnderrun

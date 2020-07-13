@@ -1,0 +1,150 @@
+Class:BaseTypeValidator
+Field:isValid
+Field:checkTopLevelDeclaredType
+Field:checker
+Field:visitor
+Field:atypeFactory
+Method-name:BaseTypeValidator
+Method-returnType:null
+Method-parameters:[BaseTypeChecker checker, BaseTypeVisitor<?> visitor, AnnotatedTypeFactory atypeFactory]
+FieldAccess:checker
+FieldAccess:visitor
+FieldAccess:atypeFactory
+Method-name:isValid
+Method-returnType:boolean
+Method-parameters:[AnnotatedTypeMirror type, Tree tree]
+MethodInvocation:isValidType
+MethodInvocation:getQualifierHierarchy
+MethodInvocation:isEmpty
+MethodInvocation:report
+FieldAccess:isValid
+FieldAccess:checkTopLevelDeclaredType
+MethodInvocation:shouldCheckTopLevelDeclaredType
+MethodInvocation:visit
+FieldAccess:isValid
+Method-name:shouldCheckTopLevelDeclaredType
+Method-returnType:boolean
+Method-parameters:[AnnotatedTypeMirror type, Tree tree]
+MethodInvocation:getKind
+MethodInvocation:isLocalVariable
+MethodInvocation:isExpressionTree
+MethodInvocation:isTypeTree
+Method-name:isValidType
+Method-returnType:List<DiagMessage>
+Method-parameters:[QualifierHierarchy qualifierHierarchy, AnnotatedTypeMirror type]
+Method-name:defaultAction
+Method-returnType:List<DiagMessage>
+Method-parameters:[AnnotatedTypeMirror type, Void aVoid]
+MethodInvocation:isTopLevelValidType
+Method-name:reduce
+Method-returnType:List<DiagMessage>
+Method-parameters:[List<DiagMessage> r1, List<DiagMessage> r2]
+MethodInvocation:mergeLists
+MethodInvocation:visit
+Method-name:reportValidityResult
+Method-returnType:void
+Method-parameters:[final @CompilerMessageKey String errorType, final AnnotatedTypeMirror type, final Tree p]
+MethodInvocation:reportError
+MethodInvocation:getAnnotations
+MethodInvocation:toString
+Method-name:reportValidityResultOnUnannotatedType
+Method-returnType:void
+Method-parameters:[final @CompilerMessageKey String errorType, final AnnotatedTypeMirror type, final Tree p]
+MethodInvocation:unannotatedType
+MethodInvocation:getUnderlyingType
+MethodInvocation:getErased
+MethodInvocation:reportError
+MethodInvocation:getAnnotations
+MethodInvocation:toString
+Method-name:reportInvalidBounds
+Method-returnType:void
+Method-parameters:[final AnnotatedTypeMirror type, final Tree tree]
+MethodInvocation:getKind
+MethodInvocation:getUpperBound
+MethodInvocation:getLowerBound
+MethodInvocation:getExtendsBound
+MethodInvocation:getSuperBound
+MethodInvocation:reportError
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:toString
+Method-name:reportInvalidType
+Method-returnType:void
+Method-parameters:[final AnnotatedTypeMirror type, final Tree p]
+MethodInvocation:reportValidityResult
+Method-name:reportInvalidAnnotationsOnUse
+Method-returnType:void
+Method-parameters:[final AnnotatedTypeMirror type, final Tree p]
+MethodInvocation:reportValidityResultOnUnannotatedType
+Method-name:visitDeclared
+Method-returnType:Void
+Method-parameters:[AnnotatedDeclaredType type, Tree tree]
+Method-name:extractParameterizedTypeTree
+Method-returnType:Pair<ParameterizedTypeTree,AnnotatedDeclaredType>
+Method-parameters:[Tree tree, AnnotatedDeclaredType type]
+MethodInvocation:getKind
+MethodInvocation:getType
+MethodInvocation:getIdentifier
+MethodInvocation:getKind
+MethodInvocation:getAnnotatedType
+MethodInvocation:getUnderlyingType
+MethodInvocation:extractParameterizedTypeTree
+MethodInvocation:of
+Method-name:visitPrimitive
+Method-returnType:Void
+Method-parameters:[AnnotatedPrimitiveType type, Tree tree]
+MethodInvocation:shouldSkipUses
+MethodInvocation:toString
+MethodInvocation:getUnderlyingType
+MethodInvocation:isValidUse
+MethodInvocation:reportInvalidAnnotationsOnUse
+Method-name:visitArray
+Method-returnType:Void
+Method-parameters:[AnnotatedArrayType type, Tree tree]
+MethodInvocation:getComponentType
+MethodInvocation:getKind
+MethodInvocation:getKind
+MethodInvocation:shouldSkipUses
+MethodInvocation:asElement
+MethodInvocation:getUnderlyingType
+MethodInvocation:isValidUse
+MethodInvocation:reportInvalidAnnotationsOnUse
+Method-name:visitParameterizedType
+Method-returnType:Void
+Method-parameters:[AnnotatedDeclaredType type, ParameterizedTypeTree tree]
+MethodInvocation:isDiamondTree
+MethodInvocation:asElement
+MethodInvocation:getUnderlyingType
+MethodInvocation:shouldSkipUses
+MethodInvocation:typeVariablesFromUse
+MethodInvocation:checkTypeArguments
+MethodInvocation:getTypeArguments
+MethodInvocation:getTypeArguments
+Method-name:visitTypeVariable
+Method-returnType:Void
+Method-parameters:[AnnotatedTypeVariable type, Tree tree]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:isDeclaration
+MethodInvocation:areBoundsValid
+MethodInvocation:getUpperBound
+MethodInvocation:getLowerBound
+MethodInvocation:reportInvalidBounds
+Method-name:visitWildcard
+Method-returnType:Void
+Method-parameters:[AnnotatedWildcardType type, Tree tree]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:areBoundsValid
+MethodInvocation:getExtendsBound
+MethodInvocation:getSuperBound
+MethodInvocation:reportInvalidBounds
+Method-name:areBoundsValid
+Method-returnType:boolean
+Method-parameters:[final AnnotatedTypeMirror upperBound, final AnnotatedTypeMirror lowerBound]
+MethodInvocation:getQualifierHierarchy
+MethodInvocation:findEffectiveAnnotations
+MethodInvocation:findEffectiveAnnotations
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:isSubtype

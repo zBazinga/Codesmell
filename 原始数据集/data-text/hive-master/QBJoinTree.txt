@@ -1,0 +1,252 @@
+Class:QBJoinTree
+Field:serialVersionUID
+Field:leftAlias
+Field:rightAliases
+Field:leftAliases
+Field:joinSrc
+Field:baseSrc
+Field:nextTag
+Field:joinCond
+Field:noOuterJoin
+Field:noSemiJoin
+Field:aliasToOpInfo
+Field:id
+Field:rhsSemijoin
+Field:expressions
+Field:nullsafes
+Field:filters
+Field:filterMap
+Field:filtersForPushing
+Field:mapSideJoin
+Field:mapAliases
+Field:streamAliases
+Field:postJoinFilters
+Field:semiJoinHint
+Method-name:QBJoinTree
+Method-returnType:null
+Method-parameters:[]
+Method-name:getLeftAlias
+Method-returnType:String
+Method-parameters:[]
+Method-name:setLeftAlias
+Method-returnType:void
+Method-parameters:[String leftAlias]
+FieldAccess:leftAlias
+MethodInvocation:equals
+FieldAccess:leftAlias
+FieldAccess:leftAlias
+FieldAccess:leftAlias
+Method-name:getRightAliases
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:setRightAliases
+Method-returnType:void
+Method-parameters:[String[] rightAliases]
+FieldAccess:rightAliases
+Method-name:getLeftAliases
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:setLeftAliases
+Method-returnType:void
+Method-parameters:[String[] leftAliases]
+FieldAccess:leftAliases
+Method-name:getExpressions
+Method-returnType:List<List<ASTNode>>
+Method-parameters:[]
+Method-name:setExpressions
+Method-returnType:void
+Method-parameters:[List<List<ASTNode>> expressions]
+FieldAccess:expressions
+Method-name:getBaseSrc
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:setBaseSrc
+Method-returnType:void
+Method-parameters:[String[] baseSrc]
+FieldAccess:baseSrc
+Method-name:getJoinSrc
+Method-returnType:QBJoinTree
+Method-parameters:[]
+Method-name:setJoinSrc
+Method-returnType:void
+Method-parameters:[QBJoinTree joinSrc]
+FieldAccess:joinSrc
+Method-name:getNextTag
+Method-returnType:int
+Method-parameters:[]
+Method-name:getJoinCond
+Method-returnType:JoinCond[]
+Method-parameters:[]
+Method-name:setJoinCond
+Method-returnType:void
+Method-parameters:[JoinCond[] joinCond]
+FieldAccess:joinCond
+Method-name:getNoOuterJoin
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setNoOuterJoin
+Method-returnType:void
+Method-parameters:[boolean noOuterJoin]
+FieldAccess:noOuterJoin
+Method-name:getNoSemiJoin
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setNoSemiJoin
+Method-returnType:void
+Method-parameters:[boolean semi]
+Method-name:getFilters
+Method-returnType:List<List<ASTNode>>
+Method-parameters:[]
+Method-name:setFilters
+Method-returnType:void
+Method-parameters:[List<List<ASTNode>> filters]
+FieldAccess:filters
+Method-name:getFiltersForPushing
+Method-returnType:List<List<ASTNode>>
+Method-parameters:[]
+Method-name:setFiltersForPushing
+Method-returnType:void
+Method-parameters:[List<List<ASTNode>> filters]
+FieldAccess:filtersForPushing
+Method-name:isMapSideJoin
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setMapSideJoin
+Method-returnType:void
+Method-parameters:[boolean mapSideJoin]
+FieldAccess:mapSideJoin
+Method-name:getMapAliases
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setMapAliases
+Method-returnType:void
+Method-parameters:[List<String> mapAliases]
+FieldAccess:mapAliases
+Method-name:getStreamAliases
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setStreamAliases
+Method-returnType:void
+Method-parameters:[List<String> streamAliases]
+FieldAccess:streamAliases
+Method-name:addRHSSemijoin
+Method-returnType:void
+Method-parameters:[String alias]
+MethodInvocation:containsKey
+MethodInvocation:put
+Method-name:addRHSSemijoinColumns
+Method-returnType:void
+Method-parameters:[String alias, List<ASTNode> columns]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:addAll
+Method-name:addRHSSemijoinColumns
+Method-returnType:void
+Method-parameters:[String alias, ASTNode column]
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:put
+MethodInvocation:add
+Method-name:getRHSSemijoinColumns
+Method-returnType:List<ASTNode>
+Method-parameters:[String alias]
+MethodInvocation:get
+Method-name:mergeRHSSemijoin
+Method-returnType:void
+Method-parameters:[QBJoinTree src]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:getValue
+MethodInvocation:addAll
+MethodInvocation:getValue
+Method-name:getNullSafes
+Method-returnType:List<Boolean>
+Method-parameters:[]
+Method-name:setNullSafes
+Method-returnType:void
+Method-parameters:[List<Boolean> nullSafes]
+FieldAccess:nullsafes
+Method-name:addFilterMapping
+Method-returnType:void
+Method-parameters:[int outer, int target, int length]
+Method-name:getFilterMap
+Method-returnType:int[][]
+Method-parameters:[]
+Method-name:setFilterMap
+Method-returnType:void
+Method-parameters:[int[][] filterMap]
+FieldAccess:filterMap
+Method-name:getAliasToOpInfo
+Method-returnType:Map<String,Operator<? extends OperatorDesc>>
+Method-parameters:[]
+Method-name:setAliasToOpInfo
+Method-returnType:void
+Method-parameters:[Map<String,Operator<? extends OperatorDesc>> aliasToOpInfo]
+FieldAccess:aliasToOpInfo
+Method-name:getId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setId
+Method-returnType:void
+Method-parameters:[String id]
+FieldAccess:id
+Method-name:addPostJoinFilter
+Method-returnType:void
+Method-parameters:[ASTNode filter]
+MethodInvocation:add
+Method-name:getPostJoinFilters
+Method-returnType:List<ASTNode>
+Method-parameters:[]
+Method-name:clone
+Method-returnType:QBJoinTree
+Method-parameters:[]
+MethodInvocation:setAliasToOpInfo
+MethodInvocation:setBaseSrc
+MethodInvocation:clone
+MethodInvocation:setExpressions
+MethodInvocation:setFilters
+MethodInvocation:setFiltersForPushing
+MethodInvocation:clone
+MethodInvocation:setFilterMap
+MethodInvocation:setId
+MethodInvocation:setJoinType
+MethodInvocation:getJoinType
+MethodInvocation:setLeft
+MethodInvocation:getLeft
+MethodInvocation:setPreserved
+MethodInvocation:getPreserved
+MethodInvocation:setRight
+MethodInvocation:getRight
+MethodInvocation:setJoinCond
+MethodInvocation:setJoinSrc
+MethodInvocation:clone
+MethodInvocation:setLeftAlias
+MethodInvocation:setLeftAliases
+MethodInvocation:clone
+MethodInvocation:setMapAliases
+MethodInvocation:setMapSideJoin
+MethodInvocation:setNoOuterJoin
+MethodInvocation:setNoSemiJoin
+MethodInvocation:setNullSafes
+MethodInvocation:setRightAliases
+MethodInvocation:clone
+MethodInvocation:setStreamAliases
+MethodInvocation:addPostJoinFilter
+MethodInvocation:entrySet
+MethodInvocation:addRHSSemijoinColumns
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:setSemiJoinHint
+Method-returnType:void
+Method-parameters:[Map<String,SemiJoinHint> semiJoinHint]
+FieldAccess:semiJoinHint
+Method-name:getSemiJoinHint
+Method-returnType:Map<String,SemiJoinHint>
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+MethodInvocation:toString

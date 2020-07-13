@@ -1,0 +1,58 @@
+Class:TableJiraRenderer
+Method-name:TableJiraRenderer
+Method-returnType:null
+Method-parameters:[DataHolder options]
+Method-name:getNodeRenderingHandlers
+Method-returnType:Set<NodeRenderingHandler<?>>
+Method-parameters:[]
+MethodInvocation:asList
+Method-name:tailBlankLine
+Method-returnType:HtmlWriter
+Method-parameters:[Node node, HtmlWriter html]
+MethodInvocation:tailBlankLine
+Method-name:isLastBlockQuoteChild
+Method-returnType:boolean
+Method-parameters:[Node node]
+MethodInvocation:getParent
+MethodInvocation:getLastChild
+Method-name:tailBlankLine
+Method-returnType:HtmlWriter
+Method-parameters:[Node node, int count, HtmlWriter html]
+MethodInvocation:isLastBlockQuoteChild
+MethodInvocation:getPrefix
+MethodInvocation:popPrefix
+MethodInvocation:blankLine
+MethodInvocation:pushPrefix
+MethodInvocation:setPrefix
+MethodInvocation:blankLine
+Method-name:render
+Method-returnType:void
+Method-parameters:[TableBlock node, NodeRendererContext context, HtmlWriter html]
+MethodInvocation:renderChildren
+MethodInvocation:tailBlankLine
+Method-name:render
+Method-returnType:void
+Method-parameters:[TableHead node, NodeRendererContext context, HtmlWriter html]
+MethodInvocation:renderChildren
+Method-name:render
+Method-returnType:void
+Method-parameters:[TableSeparator tableSeparator, NodeRendererContext context, HtmlWriter html]
+Method-name:render
+Method-returnType:void
+Method-parameters:[TableBody node, NodeRendererContext context, HtmlWriter html]
+MethodInvocation:renderChildren
+Method-name:render
+Method-returnType:void
+Method-parameters:[TableCell node, NodeRendererContext context, HtmlWriter html]
+MethodInvocation:renderChildren
+MethodInvocation:getGrandParent
+MethodInvocation:raw
+MethodInvocation:getGrandParent
+MethodInvocation:raw
+Method-name:getAlignValue
+Method-returnType:String
+Method-parameters:[TableCell.Alignment alignment]
+Class:Factory
+Method-name:apply
+Method-returnType:NodeRenderer
+Method-parameters:[@NotNull DataHolder options]

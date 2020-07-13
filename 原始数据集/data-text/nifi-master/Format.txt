@@ -1,0 +1,36 @@
+Class:Format
+Field:recordPath
+Field:dateFormat
+Field:timeZoneID
+Method-name:Format
+Method-returnType:null
+Method-parameters:[final RecordPathSegment recordPath, final RecordPathSegment dateFormat, final boolean absolute]
+FieldAccess:recordPath
+FieldAccess:dateFormat
+FieldAccess:timeZoneID
+Method-name:Format
+Method-returnType:null
+Method-parameters:[final RecordPathSegment recordPath, final RecordPathSegment dateFormat, final RecordPathSegment timeZoneID, final boolean absolute]
+FieldAccess:recordPath
+FieldAccess:dateFormat
+FieldAccess:timeZoneID
+Method-name:evaluate
+Method-returnType:Stream<FieldValue>
+Method-parameters:[final RecordPathEvaluationContext context]
+MethodInvocation:evaluate
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:getValue
+MethodInvocation:getDateFormat
+FieldAccess:dateFormat
+FieldAccess:timeZoneID
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:toDate
+MethodInvocation:getValue
+MethodInvocation:getFieldName
+MethodInvocation:getField
+MethodInvocation:format
+MethodInvocation:getField
+MethodInvocation:orElse
+MethodInvocation:getParent

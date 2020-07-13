@@ -1,0 +1,70 @@
+Class:TransportCreateTokenAction
+Field:DEFAULT_SCOPE
+Field:threadPool
+Field:tokenService
+Field:authenticationService
+Field:securityContext
+Method-name:TransportCreateTokenAction
+Method-returnType:null
+Method-parameters:[ThreadPool threadPool, TransportService transportService, ActionFilters actionFilters, TokenService tokenService, AuthenticationService authenticationService, SecurityContext securityContext]
+FieldAccess:threadPool
+FieldAccess:tokenService
+FieldAccess:authenticationService
+FieldAccess:securityContext
+Method-name:doExecute
+Method-returnType:void
+Method-parameters:[Task task, CreateTokenRequest request, ActionListener<CreateTokenResponse> listener]
+Method-name:authenticateAndCreateToken
+Method-returnType:void
+Method-parameters:[GrantType grantType, CreateTokenRequest request, ActionListener<CreateTokenResponse> listener]
+MethodInvocation:getAuthentication
+MethodInvocation:stashContext
+MethodInvocation:getThreadContext
+MethodInvocation:extractAuthenticationToken
+MethodInvocation:onFailure
+MethodInvocation:getGrantType
+MethodInvocation:authenticate
+MethodInvocation:wrap
+MethodInvocation:clearCredentialsFromRequest
+MethodInvocation:createToken
+MethodInvocation:onFailure
+MethodInvocation:clearCredentialsFromRequest
+MethodInvocation:onFailure
+Method-name:clearCredentialsFromRequest
+Method-returnType:void
+Method-parameters:[GrantType grantType, CreateTokenRequest request]
+MethodInvocation:close
+MethodInvocation:getPassword
+MethodInvocation:close
+MethodInvocation:getKerberosTicket
+Method-name:createToken
+Method-returnType:void
+Method-parameters:[GrantType grantType, CreateTokenRequest request, Authentication authentication, Authentication originatingAuth, boolean includeRefreshToken, ActionListener<CreateTokenResponse> listener]
+MethodInvocation:createOAuth2Tokens
+MethodInvocation:emptyMap
+MethodInvocation:wrap
+MethodInvocation:getResponseScopeValue
+MethodInvocation:getScope
+MethodInvocation:extractOutToken
+MethodInvocation:v1
+MethodInvocation:getExpirationDelay
+MethodInvocation:v2
+MethodInvocation:onResponse
+Method-name:extractOutToken
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:getResponseHeaders
+MethodInvocation:getThreadContext
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:startsWith
+MethodInvocation:trim
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:remove
+MethodInvocation:getResponseHeaders
+MethodInvocation:getThreadContext
+Method-name:getResponseScopeValue
+Method-returnType:String
+Method-parameters:[String requestScope]

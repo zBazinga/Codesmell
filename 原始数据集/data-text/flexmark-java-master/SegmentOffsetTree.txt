@@ -1,0 +1,117 @@
+Class:SegmentOffsetTree
+Field:startIndices
+Method-name:SegmentOffsetTree
+Method-returnType:null
+Method-parameters:[@NotNull int[] treeData, @NotNull byte[] segmentBytes, @NotNull int[] startIndices]
+FieldAccess:startIndices
+Method-name:build
+Method-returnType:SegmentOffsetTree
+Method-parameters:[@NotNull Iterable<Seg> segments, @NotNull CharSequence allText]
+Method-name:build
+Method-returnType:SegmentOffsetTree
+Method-parameters:[@NotNull BasedSegmentBuilder builder]
+MethodInvocation:buildTreeData
+MethodInvocation:getSegments
+MethodInvocation:getText
+MethodInvocation:getSegmentOffsetTree
+MethodInvocation:getBaseSequence
+Method-name:build
+Method-returnType:SegmentOffsetTree
+Method-parameters:[@NotNull BasedSequence baseSeq]
+MethodInvocation:getSegmentOffsetTree
+MethodInvocation:getSegmentTree
+Method-name:endOffset
+Method-returnType:int
+Method-parameters:[int pos]
+Method-name:getStartIndex
+Method-returnType:int
+Method-parameters:[int pos]
+Method-name:getSegment
+Method-returnType:Segment
+Method-parameters:[int pos, @NotNull BasedSequence baseSeq]
+MethodInvocation:getSegment
+MethodInvocation:byteOffset
+Method-name:findSegmentPosByOffset
+Method-returnType:SegmentTreePos
+Method-parameters:[int offset]
+MethodInvocation:findSegmentPos
+MethodInvocation:size
+Method-name:getNextText
+Method-returnType:Segment
+Method-parameters:[@NotNull Segment segment, @NotNull BasedSequence baseSeq]
+MethodInvocation:getByteOffset
+MethodInvocation:getByteLength
+MethodInvocation:getSegment
+MethodInvocation:getByteOffset
+MethodInvocation:getByteLength
+MethodInvocation:getEndIndex
+MethodInvocation:isText
+Method-name:findSegmentByOffset
+Method-returnType:Segment
+Method-parameters:[int offset, @NotNull BasedSequence baseSeq, @Nullable Segment hint]
+MethodInvocation:size
+MethodInvocation:getSegment
+MethodInvocation:byteOffset
+Method-name:toString
+Method-returnType:String
+Method-parameters:[@NotNull BasedSequence baseSeq]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:size
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:aggrLength
+MethodInvocation:byteOffset
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:mark
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:unmark
+MethodInvocation:getSegment
+MethodInvocation:mark
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getByteLength
+MethodInvocation:append
+MethodInvocation:unmark
+MethodInvocation:toString
+Method-name:hasPreviousAnchor
+Method-returnType:boolean
+Method-parameters:[int pos]
+Method-name:previousAnchorOffset
+Method-returnType:int
+Method-parameters:[int pos]
+Method-name:aggrLength
+Method-returnType:int
+Method-parameters:[int pos]
+Method-name:findSegmentPos
+Method-returnType:SegmentTreePos
+Method-parameters:[int index]
+Method-name:findSegment
+Method-returnType:Segment
+Method-parameters:[int index, @NotNull BasedSequence baseSeq, @Nullable Segment hint]
+Method-name:findSegment
+Method-returnType:Segment
+Method-parameters:[int index, int startPos, int endPos, @NotNull BasedSequence baseSeq, @Nullable Segment hint]
+Method-name:getSegmentRange
+Method-returnType:SegmentTreeRange
+Method-parameters:[int startIndex, int endIndex, int startPos, int endPos, @NotNull BasedSequence baseSeq, @Nullable Segment hint]
+Method-name:addSegments
+Method-returnType:void
+Method-parameters:[@NotNull IBasedSegmentBuilder<?> builder, @NotNull SegmentTreeRange treeRange]
+Method-name:addSegments
+Method-returnType:void
+Method-parameters:[@NotNull IBasedSegmentBuilder<?> builder, int startIndex, int endIndex, int startOffset, int endOffset, int startPos, int endPos]
+Method-name:findSegmentPos
+Method-returnType:SegmentTreePos
+Method-parameters:[int index, int startPos, int endPos]
+Method-name:getPrevAnchor
+Method-returnType:Segment
+Method-parameters:[int pos, @NotNull BasedSequence baseSeq]

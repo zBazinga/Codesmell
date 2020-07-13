@@ -1,0 +1,66 @@
+Class:MatchCollector
+Field:matchList
+Field:matchTree
+Field:ma
+Method-name:MatchCollector
+Method-returnType:null
+Method-parameters:[MatchAlgorithm ma]
+FieldAccess:ma
+Method-name:collect
+Method-returnType:void
+Method-parameters:[List<TokenEntry> marks]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getIndex
+MethodInvocation:getIndex
+MethodInvocation:getMinimumTileSize
+MethodInvocation:hasPreviousDupe
+MethodInvocation:countDuplicateTokens
+MethodInvocation:getMinimumTileSize
+MethodInvocation:reportMatch
+Method-name:reportMatch
+Method-returnType:void
+Method-parameters:[TokenEntry mark1, TokenEntry mark2, int dupes]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:addNewMatch
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getIndex
+MethodInvocation:addNewMatch
+MethodInvocation:addTokenEntry
+MethodInvocation:put
+MethodInvocation:getIndex
+MethodInvocation:addTokenEntry
+MethodInvocation:put
+MethodInvocation:getIndex
+Method-name:addNewMatch
+Method-returnType:void
+Method-parameters:[TokenEntry mark1, TokenEntry mark2, int dupes, Map<Integer,Match> matches]
+MethodInvocation:put
+MethodInvocation:getIndex
+MethodInvocation:put
+MethodInvocation:getIndex
+MethodInvocation:add
+Method-name:getMatches
+Method-returnType:List<Match>
+Method-parameters:[]
+MethodInvocation:sort
+Method-name:hasPreviousDupe
+Method-returnType:boolean
+Method-parameters:[TokenEntry mark1, TokenEntry mark2]
+MethodInvocation:getIndex
+MethodInvocation:matchEnded
+MethodInvocation:tokenAt
+MethodInvocation:tokenAt
+Method-name:countDuplicateTokens
+Method-returnType:int
+Method-parameters:[TokenEntry mark1, TokenEntry mark2]
+MethodInvocation:matchEnded
+MethodInvocation:tokenAt
+MethodInvocation:tokenAt

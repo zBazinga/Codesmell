@@ -1,0 +1,78 @@
+Class:ObjectCodecs
+Field:serializationContext
+Field:deserializationContext
+Method-name:ObjectCodecs
+Method-returnType:null
+Method-parameters:[ObjectCodecRegistry codecRegistry, ImmutableMap<Class<?>,Object> dependencies]
+Method-name:ObjectCodecs
+Method-returnType:null
+Method-parameters:[ObjectCodecRegistry codecRegistry]
+MethodInvocation:of
+Method-name:serializeToByteString
+Method-returnType:ByteString
+Method-parameters:[Object subject, SerializeCall wrapped]
+MethodInvocation:newOutput
+MethodInvocation:newInstance
+MethodInvocation:serialize
+MethodInvocation:flush
+MethodInvocation:toByteString
+Method-name:getSerializationContext
+Method-returnType:SerializationContext
+Method-parameters:[]
+Method-name:getDeserializationContext
+Method-returnType:DeserializationContext
+Method-parameters:[]
+Method-name:serialize
+Method-returnType:ByteString
+Method-parameters:[Object subject]
+MethodInvocation:serializeToByteString
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[Object subject, CodedOutputStream codedOut]
+MethodInvocation:serializeImpl
+Method-name:serializeMemoized
+Method-returnType:ByteString
+Method-parameters:[Object subject]
+MethodInvocation:serializeToByteString
+Method-name:serializeMemoized
+Method-returnType:void
+Method-parameters:[Object subject, CodedOutputStream codedOut]
+MethodInvocation:serializeImpl
+MethodInvocation:getMemoizingContext
+Method-name:serializeMemoizedAndBlocking
+Method-returnType:SerializationResult<ByteString>
+Method-parameters:[Object subject]
+MethodInvocation:getMemoizingAndBlockingOnWriteContext
+MethodInvocation:serializeToByteString
+MethodInvocation:serializeImpl
+MethodInvocation:create
+MethodInvocation:createFutureToBlockWritingOn
+Method-name:deserialize
+Method-returnType:Object
+Method-parameters:[ByteString data]
+MethodInvocation:deserialize
+MethodInvocation:newCodedInput
+Method-name:deserialize
+Method-returnType:Object
+Method-parameters:[CodedInputStream codedIn]
+MethodInvocation:deserializeImpl
+Method-name:deserializeMemoized
+Method-returnType:Object
+Method-parameters:[ByteString data]
+MethodInvocation:deserializeMemoized
+MethodInvocation:newCodedInput
+Method-name:deserializeMemoized
+Method-returnType:Object
+Method-parameters:[CodedInputStream codedIn]
+MethodInvocation:deserializeImpl
+Method-name:deserializeImpl
+Method-returnType:Object
+Method-parameters:[CodedInputStream codedIn, boolean memoize]
+MethodInvocation:enableAliasing
+MethodInvocation:deserialize
+MethodInvocation:getMemoizingContext
+MethodInvocation:deserialize
+MethodInvocation:isAtEnd
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[Object subject, CodedOutputStream codedOut]

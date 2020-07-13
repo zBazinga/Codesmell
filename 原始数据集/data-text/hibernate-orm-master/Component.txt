@@ -1,0 +1,305 @@
+Class:Component
+Field:properties
+Field:componentClassName
+Field:embedded
+Field:parentProperty
+Field:owner
+Field:dynamic
+Field:metaAttributes
+Field:isKey
+Field:roleName
+Field:tuplizerImpls
+Field:type
+Method-name:Component
+Method-returnType:null
+Method-parameters:[MetadataImplementor metadata, PersistentClass owner]
+MethodInvocation:getTable
+Method-name:Component
+Method-returnType:null
+Method-parameters:[MetadataImplementor metadata, Component component]
+MethodInvocation:getTable
+MethodInvocation:getOwner
+Method-name:Component
+Method-returnType:null
+Method-parameters:[MetadataImplementor metadata, Join join]
+MethodInvocation:getTable
+MethodInvocation:getPersistentClass
+Method-name:Component
+Method-returnType:null
+Method-parameters:[MetadataImplementor metadata, Collection collection]
+MethodInvocation:getCollectionTable
+MethodInvocation:getOwner
+Method-name:Component
+Method-returnType:null
+Method-parameters:[MetadataImplementor metadata, Table table, PersistentClass owner]
+FieldAccess:owner
+Method-name:Component
+Method-returnType:null
+Method-parameters:[MetadataBuildingContext metadata, PersistentClass owner]
+MethodInvocation:getTable
+Method-name:Component
+Method-returnType:null
+Method-parameters:[MetadataBuildingContext metadata, Component component]
+MethodInvocation:getTable
+MethodInvocation:getOwner
+Method-name:Component
+Method-returnType:null
+Method-parameters:[MetadataBuildingContext metadata, Join join]
+MethodInvocation:getTable
+MethodInvocation:getPersistentClass
+Method-name:Component
+Method-returnType:null
+Method-parameters:[MetadataBuildingContext metadata, Collection collection]
+MethodInvocation:getCollectionTable
+MethodInvocation:getOwner
+Method-name:Component
+Method-returnType:null
+Method-parameters:[MetadataBuildingContext metadata, Table table, PersistentClass owner]
+FieldAccess:owner
+Method-name:getPropertySpan
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getPropertyIterator
+Method-returnType:Iterator
+Method-parameters:[]
+MethodInvocation:iterator
+Method-name:addProperty
+Method-returnType:void
+Method-parameters:[Property p]
+MethodInvocation:add
+Method-name:addColumn
+Method-returnType:void
+Method-parameters:[Column column]
+Method-name:getColumnSpan
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getPropertyIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getColumnSpan
+Method-name:getColumnIterator
+Method-returnType:Iterator<Selectable>
+Method-parameters:[]
+MethodInvocation:getPropertySpan
+MethodInvocation:getPropertyIterator
+MethodInvocation:hasNext
+MethodInvocation:getColumnIterator
+MethodInvocation:next
+Method-name:isEmbedded
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getComponentClassName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getComponentClass
+Method-returnType:Class
+Method-parameters:[]
+MethodInvocation:getService
+MethodInvocation:getServiceRegistry
+MethodInvocation:getMetadataBuildingOptions
+MethodInvocation:getMetadata
+MethodInvocation:classForName
+Method-name:getOwner
+Method-returnType:PersistentClass
+Method-parameters:[]
+Method-name:getParentProperty
+Method-returnType:String
+Method-parameters:[]
+Method-name:setComponentClassName
+Method-returnType:void
+Method-parameters:[String componentClass]
+FieldAccess:componentClassName
+Method-name:setEmbedded
+Method-returnType:void
+Method-parameters:[boolean embedded]
+FieldAccess:embedded
+Method-name:setOwner
+Method-returnType:void
+Method-parameters:[PersistentClass owner]
+FieldAccess:owner
+Method-name:setParentProperty
+Method-returnType:void
+Method-parameters:[String parentProperty]
+FieldAccess:parentProperty
+Method-name:isDynamic
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDynamic
+Method-returnType:void
+Method-parameters:[boolean dynamic]
+FieldAccess:dynamic
+Method-name:getType
+Method-returnType:Type
+Method-parameters:[]
+MethodInvocation:getMetadataBuildingOptions
+MethodInvocation:getMetadata
+MethodInvocation:getTypeFactory
+MethodInvocation:getTypeResolver
+MethodInvocation:getTypeConfiguration
+MethodInvocation:getMetadata
+MethodInvocation:isEmbedded
+MethodInvocation:embeddedComponent
+MethodInvocation:component
+Method-name:setTypeUsingReflection
+Method-returnType:void
+Method-parameters:[String className, String propertyName]
+Method-name:getMetaAttributes
+Method-returnType:java.util.Map
+Method-parameters:[]
+Method-name:getMetaAttribute
+Method-returnType:MetaAttribute
+Method-parameters:[String attributeName]
+MethodInvocation:get
+Method-name:setMetaAttributes
+Method-returnType:void
+Method-parameters:[java.util.Map metas]
+FieldAccess:metaAttributes
+Method-name:accept
+Method-returnType:Object
+Method-parameters:[ValueVisitor visitor]
+MethodInvocation:accept
+Method-name:isSame
+Method-returnType:boolean
+Method-parameters:[SimpleValue other]
+MethodInvocation:isSame
+Method-name:isSame
+Method-returnType:boolean
+Method-parameters:[Component other]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:getColumnInsertability
+Method-returnType:boolean[]
+Method-parameters:[]
+MethodInvocation:getColumnSpan
+MethodInvocation:getPropertyIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getColumnInsertability
+MethodInvocation:getValue
+MethodInvocation:isInsertable
+MethodInvocation:arraycopy
+Method-name:getColumnUpdateability
+Method-returnType:boolean[]
+Method-parameters:[]
+MethodInvocation:getColumnSpan
+MethodInvocation:getPropertyIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getColumnUpdateability
+MethodInvocation:getValue
+MethodInvocation:isUpdateable
+MethodInvocation:arraycopy
+Method-name:isKey
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setKey
+Method-returnType:void
+Method-parameters:[boolean isKey]
+FieldAccess:isKey
+Method-name:hasPojoRepresentation
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:addTuplizer
+Method-returnType:void
+Method-parameters:[EntityMode entityMode, String implClassName]
+MethodInvocation:put
+Method-name:getTuplizerImplClassName
+Method-returnType:String
+Method-parameters:[EntityMode mode]
+MethodInvocation:get
+Method-name:getTuplizerMap
+Method-returnType:Map
+Method-parameters:[]
+MethodInvocation:unmodifiableMap
+Method-name:getProperty
+Method-returnType:Property
+Method-parameters:[String propertyName]
+MethodInvocation:getPropertyIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:getRoleName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setRoleName
+Method-returnType:void
+Method-parameters:[String roleName]
+FieldAccess:roleName
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:toString
+Field:builtIdentifierGenerator
+Method-name:createIdentifierGenerator
+Method-returnType:IdentifierGenerator
+Method-parameters:[IdentifierGeneratorFactory identifierGeneratorFactory, Dialect dialect, String defaultCatalog, String defaultSchema, RootClass rootClass]
+MethodInvocation:buildIdentifierGenerator
+Method-name:buildIdentifierGenerator
+Method-returnType:IdentifierGenerator
+Method-parameters:[IdentifierGeneratorFactory identifierGeneratorFactory, Dialect dialect, String defaultCatalog, String defaultSchema, RootClass rootClass]
+MethodInvocation:equals
+MethodInvocation:getIdentifierGeneratorStrategy
+MethodInvocation:getMappedClass
+MethodInvocation:getIdentifierMapper
+MethodInvocation:resolveComponentClass
+MethodInvocation:getIdentifierProperty
+MethodInvocation:resolveComponentClass
+MethodInvocation:getEntityName
+MethodInvocation:getPropertyIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:isSimpleValue
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:getIdentifierGeneratorStrategy
+MethodInvocation:createIdentifierGenerator
+MethodInvocation:addGeneratedValuePlan
+MethodInvocation:injector
+Method-name:injector
+Method-returnType:Setter
+Method-parameters:[Property property, Class attributeDeclarer]
+MethodInvocation:getSetter
+MethodInvocation:buildPropertyAccess
+MethodInvocation:getPropertyAccessStrategy
+MethodInvocation:getName
+Method-name:resolveComponentClass
+Method-returnType:Class
+Method-parameters:[]
+MethodInvocation:getComponentClass
+Class:StandardGenerationContextLocator
+Field:entityName
+Method-name:StandardGenerationContextLocator
+Method-returnType:null
+Method-parameters:[String entityName]
+FieldAccess:entityName
+Method-name:locateGenerationContext
+Method-returnType:Serializable
+Method-parameters:[SharedSessionContractImplementor session, Object incomingObject]
+MethodInvocation:getIdentifier
+MethodInvocation:getEntityPersister
+Class:ValueGenerationPlan
+Field:subGenerator
+Field:injector
+Method-name:ValueGenerationPlan
+Method-returnType:null
+Method-parameters:[IdentifierGenerator subGenerator, Setter injector]
+FieldAccess:subGenerator
+FieldAccess:injector
+Method-name:execute
+Method-returnType:void
+Method-parameters:[SharedSessionContractImplementor session, Object incomingObject, Object injectionContext]
+MethodInvocation:generate
+MethodInvocation:set
+MethodInvocation:getFactory
+Method-name:registerExportables
+Method-returnType:void
+Method-parameters:[Database database]
+MethodInvocation:isInstance
+MethodInvocation:registerExportables

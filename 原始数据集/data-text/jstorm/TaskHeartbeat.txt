@@ -1,0 +1,277 @@
+Class:TaskHeartbeat
+Field:STRUCT_DESC
+Field:TIME_FIELD_DESC
+Field:UPTIME_FIELD_DESC
+Field:schemes
+MethodInvocation:put
+MethodInvocation:put
+Field:time
+Field:uptime
+Method-name:update
+Method-returnType:void
+Method-parameters:[TkHbCacheTime tkHbCacheTime]
+MethodInvocation:setNimbusTime
+MethodInvocation:current_time_secs
+MethodInvocation:setTaskReportedTime
+MethodInvocation:get_time
+MethodInvocation:setTaskAssignedTime
+MethodInvocation:get_time
+MethodInvocation:get_uptime
+Field:_Fields
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:__TIME_ISSET_ID
+Field:__UPTIME_ISSET_ID
+Field:__isset_bitfield
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:TaskHeartbeat
+Method-returnType:null
+Method-parameters:[]
+Method-name:TaskHeartbeat
+Method-returnType:null
+Method-parameters:[int time, int uptime]
+FieldAccess:time
+MethodInvocation:set_time_isSet
+FieldAccess:uptime
+MethodInvocation:set_uptime_isSet
+Method-name:TaskHeartbeat
+Method-returnType:null
+Method-parameters:[TaskHeartbeat other]
+FieldAccess:time
+FieldAccess:uptime
+Method-name:deepCopy
+Method-returnType:TaskHeartbeat
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:set_time_isSet
+FieldAccess:time
+MethodInvocation:set_uptime_isSet
+FieldAccess:uptime
+Method-name:get_time
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:time
+Method-name:set_time
+Method-returnType:void
+Method-parameters:[int time]
+FieldAccess:time
+MethodInvocation:set_time_isSet
+Method-name:unset_time
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clearBit
+Method-name:is_set_time
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:testBit
+Method-name:set_time_isSet
+Method-returnType:void
+Method-parameters:[boolean value]
+MethodInvocation:setBit
+Method-name:get_uptime
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:uptime
+Method-name:set_uptime
+Method-returnType:void
+Method-parameters:[int uptime]
+FieldAccess:uptime
+MethodInvocation:set_uptime_isSet
+Method-name:unset_uptime
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clearBit
+Method-name:is_set_uptime
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:testBit
+Method-name:set_uptime_isSet
+Method-returnType:void
+Method-parameters:[boolean value]
+MethodInvocation:setBit
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, Object value]
+MethodInvocation:unset_time
+MethodInvocation:set_time
+MethodInvocation:unset_uptime
+MethodInvocation:set_uptime
+Method-name:getFieldValue
+Method-returnType:Object
+Method-parameters:[_Fields field]
+MethodInvocation:valueOf
+MethodInvocation:get_time
+MethodInvocation:valueOf
+MethodInvocation:get_uptime
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:is_set_time
+MethodInvocation:is_set_uptime
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[TaskHeartbeat that]
+FieldAccess:time
+FieldAccess:uptime
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[TaskHeartbeat other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:is_set_time
+MethodInvocation:is_set_time
+MethodInvocation:is_set_time
+MethodInvocation:compareTo
+FieldAccess:time
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:is_set_uptime
+MethodInvocation:is_set_uptime
+MethodInvocation:is_set_uptime
+MethodInvocation:compareTo
+FieldAccess:uptime
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:time
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:uptime
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:is_set_time
+MethodInvocation:toString
+MethodInvocation:is_set_uptime
+MethodInvocation:toString
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:TaskHeartbeatStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:TaskHeartbeatStandardScheme
+Method-parameters:[]
+Class:TaskHeartbeatStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, TaskHeartbeat struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readI32
+MethodInvocation:set_time_isSet
+MethodInvocation:skip
+MethodInvocation:readI32
+MethodInvocation:set_uptime_isSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, TaskHeartbeat struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeI32
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeI32
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:TaskHeartbeatTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:TaskHeartbeatTupleScheme
+Method-parameters:[]
+Class:TaskHeartbeatTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, TaskHeartbeat struct]
+MethodInvocation:writeI32
+MethodInvocation:writeI32
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, TaskHeartbeat struct]
+MethodInvocation:readI32
+MethodInvocation:set_time_isSet
+MethodInvocation:readI32
+MethodInvocation:set_uptime_isSet

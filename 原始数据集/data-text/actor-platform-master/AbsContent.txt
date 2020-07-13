@@ -1,0 +1,71 @@
+Class:AbsContent
+Field:updatedCounter
+Field:contentContainer
+Method-name:AbsContent
+Method-returnType:null
+Method-parameters:[]
+Method-name:AbsContent
+Method-returnType:null
+Method-parameters:[ContentRemoteContainer contentContainer]
+FieldAccess:contentContainer
+Method-name:AbsContent
+Method-returnType:null
+Method-parameters:[ContentLocalContainer contentContainer]
+FieldAccess:contentContainer
+Method-name:serialize
+Method-returnType:byte[]
+Method-parameters:[AbsContent content]
+MethodInvocation:writeBool
+MethodInvocation:writeBytes
+MethodInvocation:buildContainer
+MethodInvocation:getContentContainer
+MethodInvocation:toByteArray
+Method-name:fromMessage
+Method-returnType:AbsContent
+Method-parameters:[ApiMessage message]
+MethodInvocation:convertData
+Method-name:parse
+Method-returnType:AbsContent
+Method-parameters:[byte[] data]
+MethodInvocation:deserialize
+MethodInvocation:getBool
+MethodInvocation:loadContainer
+MethodInvocation:getBytes
+MethodInvocation:convertData
+Method-name:convertData
+Method-returnType:AbsContent
+Method-parameters:[AbsContentContainer container]
+MethodInvocation:getContent
+MethodInvocation:getMessage
+MethodInvocation:getExt
+MethodInvocation:getExt
+MethodInvocation:getExt
+MethodInvocation:getExt
+MethodInvocation:getExt
+MethodInvocation:getRawJson
+MethodInvocation:equals
+MethodInvocation:getString
+MethodInvocation:equals
+MethodInvocation:getString
+MethodInvocation:printStackTrace
+Method-name:getContentContainer
+Method-returnType:AbsContentContainer
+Method-parameters:[]
+Method-name:setContentContainer
+Method-returnType:void
+Method-parameters:[AbsContentContainer contentContainer]
+FieldAccess:contentContainer
+Method-name:getUpdatedCounter
+Method-returnType:int
+Method-parameters:[]
+Method-name:incrementUpdatedCounter
+Method-returnType:AbsContent
+Method-parameters:[int oldCounter]
+Method-name:getMatchId
+Method-returnType:int
+Method-parameters:[ViewHolderMatcher viewHolderMatcher]
+MethodInvocation:size
+MethodInvocation:getLayouters
+MethodInvocation:isMatch
+MethodInvocation:get
+MethodInvocation:getLayouters

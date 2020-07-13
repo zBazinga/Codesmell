@@ -1,0 +1,154 @@
+Class:RepositoryData
+Field:EMPTY_REPO_GEN
+Field:UNKNOWN_REPO_GEN
+Field:CORRUPTED_REPO_GEN
+Field:EMPTY
+MethodInvocation:emptyMap
+MethodInvocation:emptyMap
+MethodInvocation:emptyMap
+MethodInvocation:emptyMap
+Field:genId
+Field:snapshotIds
+Field:snapshotStates
+Field:indices
+Field:indexSnapshots
+Field:snapshotVersions
+Field:shardGenerations
+Method-name:RepositoryData
+Method-returnType:null
+Method-parameters:[long genId, Map<String,SnapshotId> snapshotIds, Map<String,SnapshotState> snapshotStates, Map<String,Version> snapshotVersions, Map<IndexId,List<SnapshotId>> indexSnapshots, ShardGenerations shardGenerations]
+Method-name:copy
+Method-returnType:RepositoryData
+Method-parameters:[]
+Method-name:withVersions
+Method-returnType:RepositoryData
+Method-parameters:[Map<SnapshotId,Version> versions]
+MethodInvocation:isEmpty
+MethodInvocation:forEach
+MethodInvocation:put
+MethodInvocation:getUUID
+Method-name:shardGenerations
+Method-returnType:ShardGenerations
+Method-parameters:[]
+Method-name:getGenId
+Method-returnType:long
+Method-parameters:[]
+Method-name:getSnapshotIds
+Method-returnType:Collection<SnapshotId>
+Method-parameters:[]
+MethodInvocation:unmodifiableCollection
+MethodInvocation:values
+Method-name:getSnapshotState
+Method-returnType:SnapshotState
+Method-parameters:[final SnapshotId snapshotId]
+MethodInvocation:get
+MethodInvocation:getUUID
+Method-name:getVersion
+Method-returnType:Version
+Method-parameters:[SnapshotId snapshotId]
+MethodInvocation:get
+MethodInvocation:getUUID
+Method-name:getIndices
+Method-returnType:Map<String,IndexId>
+Method-parameters:[]
+Method-name:indicesToUpdateAfterRemovingSnapshot
+Method-returnType:List<IndexId>
+Method-parameters:[Collection<SnapshotId> snapshotIds]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:containsAll
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:contains
+MethodInvocation:getValue
+MethodInvocation:toList
+Method-name:addSnapshot
+Method-returnType:RepositoryData
+Method-parameters:[final SnapshotId snapshotId, final SnapshotState snapshotState, final Version version, final ShardGenerations shardGenerations]
+MethodInvocation:containsKey
+MethodInvocation:getUUID
+MethodInvocation:put
+MethodInvocation:getUUID
+MethodInvocation:put
+MethodInvocation:getUUID
+MethodInvocation:put
+MethodInvocation:getUUID
+MethodInvocation:indices
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:of
+MethodInvocation:size
+MethodInvocation:addAll
+MethodInvocation:add
+MethodInvocation:put
+MethodInvocation:unmodifiableList
+MethodInvocation:build
+MethodInvocation:putAll
+MethodInvocation:putAll
+MethodInvocation:builder
+FieldAccess:shardGenerations
+Method-name:withGenId
+Method-returnType:RepositoryData
+Method-parameters:[long newGeneration]
+Method-name:removeSnapshots
+Method-returnType:RepositoryData
+Method-parameters:[final Collection<SnapshotId> snapshots, final ShardGenerations updatedShardGenerations]
+Method-name:getSnapshots
+Method-returnType:List<SnapshotId>
+Method-parameters:[final IndexId indexId]
+MethodInvocation:get
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:resolveIndexId
+Method-returnType:IndexId
+Method-parameters:[final String indexName]
+MethodInvocation:requireNonNull
+MethodInvocation:get
+Method-name:resolveIndices
+Method-returnType:List<IndexId>
+Method-parameters:[final List<String> indices]
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:resolveIndexId
+Method-name:resolveNewIndices
+Method-returnType:List<IndexId>
+Method-parameters:[final List<String> indicesToResolve]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:randomBase64UUID
+MethodInvocation:add
+Field:SHARD_GENERATIONS
+Field:SNAPSHOTS
+Field:INDICES
+Field:INDEX_ID
+Field:NAME
+Field:UUID
+Field:STATE
+Field:VERSION
+Field:MIN_VERSION
+Method-name:snapshotsToXContent
+Method-returnType:XContentBuilder
+Method-parameters:[final XContentBuilder builder, final boolean shouldWriteShardGens]
+Method-name:snapshotsFromXContent
+Method-returnType:RepositoryData
+Method-parameters:[final XContentParser parser, long genId]
+Method-name:minCompatibleVersion
+Method-returnType:Version
+Method-parameters:[Version minNodeVersion, @Nullable Collection<SnapshotId> excluded, SnapshotsService snapshotsService]

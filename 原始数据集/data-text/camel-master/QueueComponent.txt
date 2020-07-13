@@ -1,0 +1,56 @@
+Class:QueueComponent
+Field:LOG
+MethodInvocation:getLogger
+Field:configuration
+Method-name:QueueComponent
+Method-returnType:null
+Method-parameters:[]
+Method-name:QueueComponent
+Method-returnType:null
+Method-parameters:[final CamelContext camelContext]
+Method-name:createEndpoint
+Method-returnType:Endpoint
+Method-parameters:[String uri, String remaining, Map<String,Object> parameters]
+MethodInvocation:length
+MethodInvocation:trim
+FieldAccess:configuration
+MethodInvocation:copy
+FieldAccess:configuration
+MethodInvocation:split
+MethodInvocation:setAccountName
+MethodInvocation:setQueueName
+MethodInvocation:setProperties
+MethodInvocation:checkAndSetRegistryClient
+MethodInvocation:checkCredentials
+MethodInvocation:validateConfigurations
+Method-name:getConfiguration
+Method-returnType:QueueConfiguration
+Method-parameters:[]
+Method-name:setConfiguration
+Method-returnType:void
+Method-parameters:[QueueConfiguration configuration]
+FieldAccess:configuration
+Method-name:checkAndSetRegistryClient
+Method-returnType:void
+Method-parameters:[final QueueConfiguration configuration, final QueueEndpoint endpoint]
+MethodInvocation:isEmpty
+MethodInvocation:getServiceClient
+MethodInvocation:getConfiguration
+MethodInvocation:debug
+MethodInvocation:findByType
+MethodInvocation:getRegistry
+MethodInvocation:getCamelContext
+MethodInvocation:size
+MethodInvocation:debug
+MethodInvocation:setServiceClient
+MethodInvocation:get
+MethodInvocation:findFirst
+MethodInvocation:stream
+MethodInvocation:debug
+MethodInvocation:debug
+Method-name:validateConfigurations
+Method-returnType:void
+Method-parameters:[final QueueConfiguration configuration]
+MethodInvocation:getServiceClient
+MethodInvocation:getAccessKey
+MethodInvocation:getCredentials

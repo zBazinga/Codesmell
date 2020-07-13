@@ -1,0 +1,129 @@
+Class:JUnitTestsShouldIncludeAssertRule
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTClassOrInterfaceDeclaration node, Object data]
+MethodInvocation:isInterface
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTMethodDeclaration method, Object data]
+MethodInvocation:isJUnitMethod
+MethodInvocation:isExpectAnnotated
+MethodInvocation:getParent
+MethodInvocation:getVariables
+MethodInvocation:getParent
+MethodInvocation:getScope
+MethodInvocation:getRuleAnnotatedExpectedExceptions
+MethodInvocation:containsExpectOrAssert
+MethodInvocation:getBody
+MethodInvocation:addViolation
+Method-name:containsExpectOrAssert
+Method-returnType:boolean
+Method-parameters:[Node n, Map<String,List<NameOccurrence>> expectables, Map<String,VariableNameDeclaration> variables]
+MethodInvocation:isExpectStatement
+MethodInvocation:isAssertOrFailStatement
+MethodInvocation:isHamcrestAssert
+MethodInvocation:isVerifyStatement
+MethodInvocation:isSoftAssertionStatement
+MethodInvocation:getNumChildren
+MethodInvocation:getChild
+MethodInvocation:containsExpectOrAssert
+Method-name:getVariables
+Method-returnType:Map<String,VariableNameDeclaration>
+Method-parameters:[ASTMethodDeclaration method]
+MethodInvocation:keySet
+MethodInvocation:getDeclarations
+MethodInvocation:getScope
+MethodInvocation:put
+MethodInvocation:getName
+Method-name:getRuleAnnotatedExpectedExceptions
+Method-returnType:Map<String,List<NameOccurrence>>
+Method-parameters:[Scope classScope]
+MethodInvocation:getDeclarations
+MethodInvocation:entrySet
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:getNode
+MethodInvocation:getKey
+MethodInvocation:hasDescendantOfType
+MethodInvocation:getFirstChildOfType
+MethodInvocation:getImage
+MethodInvocation:getChild
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:equals
+MethodInvocation:getImage
+MethodInvocation:getChild
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:isExpectAnnotated
+Method-returnType:boolean
+Method-parameters:[Node methodParent]
+MethodInvocation:findDescendantsOfType
+MethodInvocation:getFirstChildOfType
+MethodInvocation:isA
+MethodInvocation:findDescendantsOfType
+MethodInvocation:equals
+MethodInvocation:getImage
+Method-name:getMethodCallNameOrNull
+Method-returnType:String
+Method-parameters:[ASTStatementExpression expression]
+MethodInvocation:getFirstChildOfType
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:getImage
+Method-name:isHamcrestAssert
+Method-returnType:boolean
+Method-parameters:[ASTStatementExpression expression]
+MethodInvocation:getMethodCallNameOrNull
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:isAssertOrFailStatement
+Method-returnType:boolean
+Method-parameters:[ASTStatementExpression expression]
+MethodInvocation:getMethodCallNameOrNull
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+Method-name:isVerifyStatement
+Method-returnType:boolean
+Method-parameters:[ASTStatementExpression expression]
+MethodInvocation:getMethodCallNameOrNull
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+Method-name:isExpectStatement
+Method-returnType:boolean
+Method-parameters:[ASTStatementExpression expression, Map<String,List<NameOccurrence>> expectables]
+MethodInvocation:getFirstChildOfType
+MethodInvocation:getFirstChildOfType
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:usesThisModifier
+MethodInvocation:split
+MethodInvocation:getImage
+MethodInvocation:containsKey
+MethodInvocation:equals
+MethodInvocation:usesThisModifier
+MethodInvocation:findChildrenOfType
+MethodInvocation:size
+MethodInvocation:getImage
+MethodInvocation:get
+MethodInvocation:getImage
+MethodInvocation:get
+MethodInvocation:containsKey
+MethodInvocation:equals
+Method-name:isSoftAssertionStatement
+Method-returnType:boolean
+Method-parameters:[ASTStatementExpression expression, Map<String,VariableNameDeclaration> variables]
+MethodInvocation:getFirstChildOfType
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:getImage
+MethodInvocation:indexOf
+MethodInvocation:split
+MethodInvocation:equals
+MethodInvocation:containsKey
+MethodInvocation:isA
+MethodInvocation:get

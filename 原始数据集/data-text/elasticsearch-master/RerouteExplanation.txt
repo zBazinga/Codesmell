@@ -1,0 +1,42 @@
+Class:RerouteExplanation
+Field:command
+Field:decisions
+Method-name:RerouteExplanation
+Method-returnType:null
+Method-parameters:[AllocationCommand command, Decision decisions]
+FieldAccess:command
+FieldAccess:decisions
+Method-name:command
+Method-returnType:AllocationCommand
+Method-parameters:[]
+FieldAccess:command
+Method-name:decisions
+Method-returnType:Decision
+Method-parameters:[]
+FieldAccess:decisions
+Method-name:readFrom
+Method-returnType:RerouteExplanation
+Method-parameters:[StreamInput in]
+MethodInvocation:readNamedWriteable
+MethodInvocation:readFrom
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[RerouteExplanation explanation, StreamOutput out]
+MethodInvocation:writeNamedWriteable
+MethodInvocation:writeTo
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:name
+MethodInvocation:field
+MethodInvocation:startArray
+MethodInvocation:toXContent
+MethodInvocation:endArray
+MethodInvocation:endObject
+Method-name:add
+Method-returnType:RoutingExplanations
+Method-parameters:[RoutingExplanations routingExplanations]
+MethodInvocation:add
+MethodInvocation:explanations

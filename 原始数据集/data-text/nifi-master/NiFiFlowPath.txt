@@ -1,0 +1,126 @@
+Class:NiFiFlowPath
+Field:processComponentIds
+Field:id
+Field:inputs
+Field:outputs
+Field:atlasGuid
+Field:name
+Field:groupId
+Field:exEntity
+Field:metadataUpdated
+Field:updateAudit
+Field:existingInputGuids
+Field:existingOutputGuids
+Method-name:NiFiFlowPath
+Method-returnType:null
+Method-parameters:[String id]
+FieldAccess:id
+Method-name:NiFiFlowPath
+Method-returnType:null
+Method-parameters:[String id, long lineageHash]
+FieldAccess:id
+Method-name:getExEntity
+Method-returnType:AtlasEntity
+Method-parameters:[]
+Method-name:setExEntity
+Method-returnType:void
+Method-parameters:[AtlasEntity exEntity]
+FieldAccess:exEntity
+FieldAccess:atlasGuid
+MethodInvocation:getGuid
+Method-name:getAtlasGuid
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAtlasGuid
+Method-returnType:void
+Method-parameters:[String atlasGuid]
+FieldAccess:atlasGuid
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setName
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:updateMetadata
+FieldAccess:name
+FieldAccess:name
+Method-name:getGroupId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setGroupId
+Method-returnType:void
+Method-parameters:[String groupId]
+MethodInvocation:updateMetadata
+FieldAccess:groupId
+FieldAccess:groupId
+Method-name:addProcessor
+Method-returnType:void
+Method-parameters:[String processorId]
+MethodInvocation:add
+Method-name:getInputs
+Method-returnType:Set<AtlasObjectId>
+Method-parameters:[]
+Method-name:getOutputs
+Method-returnType:Set<AtlasObjectId>
+Method-parameters:[]
+Method-name:getProcessComponentIds
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:getId
+Method-returnType:String
+Method-parameters:[]
+Method-name:createDeepLinkURL
+Method-returnType:String
+Method-parameters:[String nifiUrl]
+MethodInvocation:split
+MethodInvocation:equals
+MethodInvocation:format
+MethodInvocation:format
+Method-name:startTrackingChanges
+Method-returnType:void
+Method-parameters:[NiFiFlow nifiFlow]
+MethodInvocation:set
+FieldAccess:metadataUpdated
+MethodInvocation:clear
+FieldAccess:updateAudit
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toSet
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toSet
+MethodInvocation:keySet
+MethodInvocation:getQueues
+MethodInvocation:removeAll
+MethodInvocation:removeAll
+Method-name:isMetadataUpdated
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:get
+FieldAccess:metadataUpdated
+Method-name:getUpdateAudit
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:isDataSetReferenceChanged
+Method-returnType:boolean
+Method-parameters:[Set<AtlasObjectId> ids, boolean isInput]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toSet
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode

@@ -1,0 +1,485 @@
+Class:RegionStates
+Field:LOG
+MethodInvocation:getLogger
+Class:RegionStateStampComparator
+Method-name:compare
+Method-returnType:int
+Method-parameters:[final RegionState l, final RegionState r]
+MethodInvocation:compare
+MethodInvocation:getStamp
+MethodInvocation:getStamp
+MethodInvocation:compare
+MethodInvocation:getRegion
+MethodInvocation:getRegion
+Field:REGION_STATE_STAMP_COMPARATOR
+Field:regionsMap
+Field:regionInTransition
+Field:regionOffline
+Field:regionFailedOpen
+Field:serverMap
+Method-name:RegionStates
+Method-returnType:null
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+Method-name:isRegionInRegionStates
+Method-returnType:boolean
+Method-parameters:[final RegionInfo hri]
+MethodInvocation:containsKey
+MethodInvocation:getRegionName
+MethodInvocation:containsKey
+MethodInvocation:containsKey
+Method-name:createRegionStateNode
+Method-returnType:RegionStateNode
+Method-parameters:[RegionInfo regionInfo]
+MethodInvocation:putIfAbsent
+MethodInvocation:getRegionName
+Method-name:getOrCreateRegionStateNode
+Method-returnType:RegionStateNode
+Method-parameters:[RegionInfo regionInfo]
+MethodInvocation:getRegionStateNodeFromName
+MethodInvocation:getRegionName
+MethodInvocation:createRegionStateNode
+Method-name:getRegionStateNodeFromName
+Method-returnType:RegionStateNode
+Method-parameters:[byte[] regionName]
+MethodInvocation:get
+Method-name:getRegionStateNode
+Method-returnType:RegionStateNode
+Method-parameters:[RegionInfo regionInfo]
+MethodInvocation:getRegionStateNodeFromName
+MethodInvocation:getRegionName
+Method-name:deleteRegion
+Method-returnType:void
+Method-parameters:[final RegionInfo regionInfo]
+MethodInvocation:remove
+MethodInvocation:getRegionName
+MethodInvocation:containsKey
+MethodInvocation:remove
+MethodInvocation:containsKey
+FieldAccess:regionOffline
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:remove
+FieldAccess:regionOffline
+Method-name:deleteRegions
+Method-returnType:void
+Method-parameters:[final List<RegionInfo> regionInfos]
+MethodInvocation:forEach
+Method-name:getTableRegionStateNodes
+Method-returnType:ArrayList<RegionStateNode>
+Method-parameters:[final TableName tableName]
+MethodInvocation:values
+MethodInvocation:tailMap
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:getTable
+MethodInvocation:add
+Method-name:getTableRegionStates
+Method-returnType:ArrayList<RegionState>
+Method-parameters:[final TableName tableName]
+MethodInvocation:values
+MethodInvocation:tailMap
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:getTable
+MethodInvocation:add
+MethodInvocation:toRegionState
+Method-name:getTableRegionsInfo
+Method-returnType:ArrayList<RegionInfo>
+Method-parameters:[final TableName tableName]
+MethodInvocation:values
+MethodInvocation:tailMap
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:getTable
+MethodInvocation:add
+MethodInvocation:getRegionInfo
+Method-name:getRegionStateNodes
+Method-returnType:Collection<RegionStateNode>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getRegionStates
+Method-returnType:ArrayList<RegionState>
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:values
+MethodInvocation:add
+MethodInvocation:toRegionState
+Method-name:getRegionState
+Method-returnType:RegionState
+Method-parameters:[final RegionInfo regionInfo]
+MethodInvocation:getRegionStateNode
+MethodInvocation:toRegionState
+Method-name:getRegionState
+Method-returnType:RegionState
+Method-parameters:[final String encodedRegionName]
+MethodInvocation:values
+MethodInvocation:equals
+MethodInvocation:getEncodedName
+MethodInvocation:getRegionInfo
+MethodInvocation:toRegionState
+Method-name:hasTableRegionStates
+Method-returnType:boolean
+Method-parameters:[final TableName tableName]
+MethodInvocation:isEmpty
+MethodInvocation:getTableRegionStates
+Method-name:getRegionsOfTable
+Method-returnType:List<RegionInfo>
+Method-parameters:[final TableName table]
+MethodInvocation:getRegionsOfTable
+Method-name:createRegionForReopen
+Method-returnType:HRegionLocation
+Method-parameters:[RegionStateNode node]
+MethodInvocation:lock
+MethodInvocation:include
+MethodInvocation:isInState
+MethodInvocation:getRegionInfo
+MethodInvocation:getRegionLocation
+MethodInvocation:getOpenSeqNum
+MethodInvocation:isInState
+MethodInvocation:getRegionInfo
+MethodInvocation:getRegionLocation
+MethodInvocation:unlock
+Method-name:getRegionsOfTableForReopen
+Method-returnType:List<HRegionLocation>
+Method-parameters:[TableName tableName]
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getTableRegionStateNodes
+MethodInvocation:toList
+Method-name:checkReopened
+Method-returnType:HRegionLocation
+Method-parameters:[HRegionLocation oldLoc]
+MethodInvocation:getRegionStateNode
+MethodInvocation:getRegion
+MethodInvocation:lock
+MethodInvocation:getSeqNum
+MethodInvocation:isInState
+MethodInvocation:getOpenSeqNum
+MethodInvocation:getSeqNum
+MethodInvocation:getRegionInfo
+MethodInvocation:getRegionLocation
+MethodInvocation:getOpenSeqNum
+MethodInvocation:isInState
+MethodInvocation:equals
+MethodInvocation:getRegionLocation
+MethodInvocation:getServerName
+MethodInvocation:isInState
+MethodInvocation:getOpenSeqNum
+MethodInvocation:getRegionInfo
+MethodInvocation:getRegionLocation
+MethodInvocation:unlock
+Method-name:getRegionsOfTable
+Method-returnType:List<RegionInfo>
+Method-parameters:[TableName table, boolean offline]
+MethodInvocation:getRegionsOfTable
+MethodInvocation:include
+Method-name:getRegionsOfTable
+Method-returnType:List<RegionInfo>
+Method-parameters:[TableName table, Predicate<RegionStateNode> filter]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getTableRegionStateNodes
+MethodInvocation:getRegionInfo
+MethodInvocation:toList
+Method-name:include
+Method-returnType:boolean
+Method-parameters:[final RegionStateNode node, final boolean offline]
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:getRegionInfo
+MethodInvocation:isInState
+MethodInvocation:isInState
+MethodInvocation:getRegionInfo
+MethodInvocation:isOffline
+MethodInvocation:isSplit
+MethodInvocation:isOffline
+MethodInvocation:isSplit
+Method-name:setServerState
+Method-returnType:void
+Method-parameters:[ServerName serverName, ServerState state]
+MethodInvocation:getOrCreateServer
+MethodInvocation:setState
+Method-name:metaLogSplitting
+Method-returnType:void
+Method-parameters:[ServerName serverName]
+MethodInvocation:setServerState
+Method-name:metaLogSplit
+Method-returnType:void
+Method-parameters:[ServerName serverName]
+MethodInvocation:setServerState
+Method-name:logSplitting
+Method-returnType:void
+Method-parameters:[final ServerName serverName]
+MethodInvocation:setServerState
+Method-name:logSplit
+Method-returnType:void
+Method-parameters:[final ServerName serverName]
+MethodInvocation:setServerState
+Method-name:updateRegionState
+Method-returnType:void
+Method-parameters:[RegionInfo regionInfo, State state]
+MethodInvocation:getOrCreateRegionStateNode
+MethodInvocation:lock
+MethodInvocation:setState
+MethodInvocation:unlock
+Method-name:getAssignedRegions
+Method-returnType:List<RegionInfo>
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:isInTransition
+MethodInvocation:add
+MethodInvocation:getRegionInfo
+Method-name:isRegionInState
+Method-returnType:boolean
+Method-parameters:[RegionInfo regionInfo, State... state]
+MethodInvocation:getRegionStateNode
+MethodInvocation:lock
+MethodInvocation:isInState
+MethodInvocation:unlock
+Method-name:isRegionOnline
+Method-returnType:boolean
+Method-parameters:[final RegionInfo regionInfo]
+MethodInvocation:isRegionInState
+Method-name:isRegionOffline
+Method-returnType:boolean
+Method-parameters:[final RegionInfo regionInfo]
+MethodInvocation:isRegionInState
+Method-name:getSnapShotOfAssignment
+Method-returnType:Map<ServerName,List<RegionInfo>>
+Method-parameters:[final Collection<RegionInfo> regions]
+MethodInvocation:getRegionStateNode
+MethodInvocation:createSnapshot
+MethodInvocation:values
+MethodInvocation:createSnapshot
+Method-name:getRegionAssignments
+Method-returnType:Map<RegionInfo,ServerName>
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:put
+MethodInvocation:getRegionInfo
+MethodInvocation:getRegionLocation
+Method-name:getRegionByStateOfTable
+Method-returnType:Map<RegionState.State,List<RegionInfo>>
+Method-parameters:[TableName tableName]
+MethodInvocation:values
+MethodInvocation:put
+MethodInvocation:values
+MethodInvocation:equals
+MethodInvocation:getTable
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:getState
+MethodInvocation:getRegionInfo
+Method-name:getRegionServerOfRegion
+Method-returnType:ServerName
+Method-parameters:[RegionInfo regionInfo]
+MethodInvocation:getRegionStateNode
+MethodInvocation:lock
+MethodInvocation:getRegionLocation
+MethodInvocation:getLastHost
+MethodInvocation:unlock
+Method-name:getAssignmentsByTable
+Method-returnType:Map<TableName,Map<ServerName,List<RegionInfo>>>
+Method-parameters:[final boolean forceByCluster]
+MethodInvocation:getAssignmentsByTable
+MethodInvocation:size
+MethodInvocation:values
+MethodInvocation:put
+MethodInvocation:getServerName
+MethodInvocation:getRegionInfoList
+MethodInvocation:put
+Method-name:getAssignmentsByTable
+Method-returnType:Map<TableName,Map<ServerName,List<RegionInfo>>>
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:get
+MethodInvocation:getTable
+MethodInvocation:put
+MethodInvocation:getTable
+MethodInvocation:getRegionLocation
+MethodInvocation:info
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:getRegionInfo
+MethodInvocation:values
+MethodInvocation:keySet
+MethodInvocation:containsKey
+MethodInvocation:put
+Method-name:hasRegionsInTransition
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:isRegionInTransition
+Method-returnType:boolean
+Method-parameters:[final RegionInfo regionInfo]
+MethodInvocation:get
+MethodInvocation:isInTransition
+Method-name:getRegionTransitionState
+Method-returnType:RegionState
+Method-parameters:[RegionInfo hri]
+MethodInvocation:get
+MethodInvocation:lock
+MethodInvocation:isInTransition
+MethodInvocation:toRegionState
+MethodInvocation:unlock
+Method-name:getRegionsInTransition
+Method-returnType:List<RegionStateNode>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getRegionsInTransitionCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getRegionsStateInTransition
+Method-returnType:List<RegionState>
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:values
+MethodInvocation:add
+MethodInvocation:toRegionState
+Method-name:getRegionsInTransitionOrderedByTimestamp
+Method-returnType:SortedSet<RegionState>
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:add
+MethodInvocation:toRegionState
+Method-name:addToOfflineRegions
+Method-returnType:void
+Method-parameters:[final RegionStateNode regionNode]
+MethodInvocation:info
+MethodInvocation:put
+MethodInvocation:getRegionInfo
+Method-name:removeFromOfflineRegions
+Method-returnType:void
+Method-parameters:[final RegionInfo regionInfo]
+MethodInvocation:remove
+Class:RegionFailedOpen
+Field:regionNode
+Field:exception
+Field:retries
+Method-name:RegionFailedOpen
+Method-returnType:null
+Method-parameters:[final RegionStateNode regionNode]
+FieldAccess:regionNode
+Method-name:getRegionStateNode
+Method-returnType:RegionStateNode
+Method-parameters:[]
+Method-name:getRegionInfo
+Method-returnType:RegionInfo
+Method-parameters:[]
+MethodInvocation:getRegionInfo
+Method-name:incrementAndGetRetries
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:incrementAndGet
+FieldAccess:retries
+Method-name:getRetries
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:get
+Method-name:setException
+Method-returnType:void
+Method-parameters:[final Exception exception]
+FieldAccess:exception
+Method-name:getException
+Method-returnType:Exception
+Method-parameters:[]
+FieldAccess:exception
+Method-name:addToFailedOpen
+Method-returnType:RegionFailedOpen
+Method-parameters:[final RegionStateNode regionNode]
+MethodInvocation:getRegionName
+MethodInvocation:getRegionInfo
+MethodInvocation:get
+MethodInvocation:putIfAbsent
+Method-name:getFailedOpen
+Method-returnType:RegionFailedOpen
+Method-parameters:[final RegionInfo regionInfo]
+MethodInvocation:get
+MethodInvocation:getRegionName
+Method-name:removeFromFailedOpen
+Method-returnType:void
+Method-parameters:[final RegionInfo regionInfo]
+MethodInvocation:remove
+MethodInvocation:getRegionName
+Method-name:getRegionFailedOpen
+Method-returnType:List<RegionState>
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:emptyList
+MethodInvocation:size
+MethodInvocation:values
+MethodInvocation:add
+MethodInvocation:toRegionState
+MethodInvocation:getRegionStateNode
+Method-name:getOrCreateServer
+Method-returnType:ServerStateNode
+Method-parameters:[final ServerName serverName]
+MethodInvocation:get
+MethodInvocation:putIfAbsent
+Method-name:removeServer
+Method-returnType:void
+Method-parameters:[final ServerName serverName]
+MethodInvocation:remove
+Method-name:getServerNode
+Method-returnType:ServerStateNode
+Method-parameters:[final ServerName serverName]
+MethodInvocation:get
+Method-name:getAverageLoad
+Method-returnType:double
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:getRegionCount
+Method-name:addRegionToServer
+Method-returnType:ServerStateNode
+Method-parameters:[final RegionStateNode regionNode]
+MethodInvocation:getOrCreateServer
+MethodInvocation:getRegionLocation
+MethodInvocation:addRegion
+Method-name:isReplicaAvailableForRegion
+Method-returnType:boolean
+Method-parameters:[final RegionInfo info]
+MethodInvocation:isDefaultReplica
+MethodInvocation:values
+MethodInvocation:tailMap
+MethodInvocation:getRegionName
+MethodInvocation:equals
+MethodInvocation:getTable
+MethodInvocation:getTable
+MethodInvocation:isReplicasForSameRegion
+MethodInvocation:getRegionInfo
+MethodInvocation:isDefaultReplica
+MethodInvocation:getRegionInfo
+Method-name:removeRegionFromServer
+Method-returnType:ServerStateNode
+Method-parameters:[final ServerName serverName, final RegionStateNode regionNode]
+MethodInvocation:getOrCreateServer
+MethodInvocation:removeRegion
+Method-name:regionNamesToString
+Method-returnType:String
+Method-parameters:[final Collection<byte[]> regions]
+MethodInvocation:iterator
+MethodInvocation:append
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:toStringBinary
+MethodInvocation:next
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toStringBinary
+MethodInvocation:next
+MethodInvocation:append
+MethodInvocation:toString

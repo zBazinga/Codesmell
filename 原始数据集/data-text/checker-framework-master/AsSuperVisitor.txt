@@ -1,0 +1,498 @@
+Class:AsSuperVisitor
+Field:types
+Field:annotatedTypeFactory
+Field:isUninferredTypeAgrument
+Method-name:AsSuperVisitor
+Method-returnType:null
+Method-parameters:[AnnotatedTypeFactory annotatedTypeFactory]
+FieldAccess:annotatedTypeFactory
+Method-name:asSuper
+Method-returnType:T
+Method-parameters:[AnnotatedTypeMirror type, T superType]
+MethodInvocation:deepCopy
+MethodInvocation:deepCopy
+MethodInvocation:deepCopy
+MethodInvocation:reset
+MethodInvocation:visit
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+Method-name:visit
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedTypeMirror type, AnnotatedTypeMirror superType, Void p]
+MethodInvocation:ensurePrimaryIsCorrectForUnionsAndIntersections
+Method-name:ensurePrimaryIsCorrectForUnionsAndIntersections
+Method-returnType:void
+Method-parameters:[AnnotatedTypeMirror type]
+MethodInvocation:getKind
+MethodInvocation:directSuperTypes
+MethodInvocation:getAnnotations
+MethodInvocation:createAnnotationSet
+MethodInvocation:getAnnotationInHierarchy
+MethodInvocation:add
+MethodInvocation:greatestLowerBound
+MethodInvocation:getQualifierHierarchy
+MethodInvocation:replaceAnnotations
+MethodInvocation:getKind
+MethodInvocation:getAlternatives
+MethodInvocation:getAnnotations
+MethodInvocation:createAnnotationSet
+MethodInvocation:getAnnotationInHierarchy
+MethodInvocation:add
+MethodInvocation:leastUpperBound
+MethodInvocation:getQualifierHierarchy
+MethodInvocation:replaceAnnotations
+Method-name:defaultErrorMessage
+Method-returnType:String
+Method-parameters:[AnnotatedTypeMirror type, AnnotatedTypeMirror superType, Void p]
+MethodInvocation:format
+MethodInvocation:getKind
+MethodInvocation:getKind
+Method-name:errorTypeNotErasedSubtypeOfSuperType
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedTypeMirror type, AnnotatedTypeMirror superType, Void p]
+MethodInvocation:isString
+MethodInvocation:getUnderlyingType
+MethodInvocation:visit
+MethodInvocation:getStringType
+MethodInvocation:copyPrimaryAnnos
+Method-name:copyPrimaryAnnos
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedTypeMirror from, AnnotatedTypeMirror to]
+MethodInvocation:replaceAnnotations
+MethodInvocation:getAnnotations
+MethodInvocation:getKind
+MethodInvocation:getAlternatives
+MethodInvocation:addMissingAnnotations
+MethodInvocation:getAnnotations
+Method-name:asSuperWildcardLowerBound
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedTypeMirror type, AnnotatedWildcardType superType, Void p]
+MethodInvocation:getSuperBound
+MethodInvocation:asSuperLowerBound
+Method-name:asSuperTypevarLowerBound
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedTypeMirror type, AnnotatedTypeVariable superType, Void p]
+MethodInvocation:getLowerBound
+MethodInvocation:asSuperLowerBound
+Method-name:asSuperLowerBound
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedTypeMirror type, Void p, AnnotatedTypeMirror lowerBound]
+MethodInvocation:getKind
+MethodInvocation:findEffectiveLowerBoundAnnotations
+MethodInvocation:getQualifierHierarchy
+MethodInvocation:replaceAnnotations
+MethodInvocation:areErasedJavaTypesEquivalent
+MethodInvocation:visit
+MethodInvocation:copyPrimaryAnnos
+Method-name:isErasedJavaSubtype
+Method-returnType:boolean
+Method-parameters:[AnnotatedDeclaredType subtype, AnnotatedDeclaredType supertype]
+MethodInvocation:erasure
+MethodInvocation:getUnderlyingType
+MethodInvocation:erasure
+MethodInvocation:getUnderlyingType
+MethodInvocation:isSubtype
+Method-name:isErasedJavaSubtype
+Method-returnType:boolean
+Method-parameters:[AnnotatedDeclaredType subtype, AnnotatedUnionType supertype]
+MethodInvocation:getAlternatives
+MethodInvocation:isErasedJavaSubtype
+Method-name:areErasedJavaTypesEquivalent
+Method-returnType:boolean
+Method-parameters:[AnnotatedTypeMirror typeA, AnnotatedTypeMirror typeB]
+MethodInvocation:erasure
+MethodInvocation:getUnderlyingType
+MethodInvocation:erasure
+MethodInvocation:getUnderlyingType
+MethodInvocation:isSameType
+Method-name:visitArray_Array
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedArrayType type, AnnotatedArrayType superType, Void p]
+MethodInvocation:visit
+MethodInvocation:getComponentType
+MethodInvocation:getComponentType
+MethodInvocation:setComponentType
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitArray_Intersection
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedArrayType type, AnnotatedIntersectionType superType, Void p]
+MethodInvocation:directSuperTypes
+MethodInvocation:isObject
+MethodInvocation:getUnderlyingType
+MethodInvocation:isDeclaredOfName
+MethodInvocation:getUnderlyingType
+MethodInvocation:isDeclaredOfName
+MethodInvocation:getUnderlyingType
+MethodInvocation:errorTypeNotErasedSubtypeOfSuperType
+MethodInvocation:copyPrimaryAnnos
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitArray_Declared
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedArrayType type, AnnotatedDeclaredType superType, Void p]
+MethodInvocation:getTypeElement
+MethodInvocation:getUnderlyingType
+MethodInvocation:getTypeElement
+MethodInvocation:getUnderlyingType
+MethodInvocation:equals
+MethodInvocation:isObject
+MethodInvocation:getUnderlyingType
+MethodInvocation:isDeclaredOfName
+MethodInvocation:getUnderlyingType
+MethodInvocation:isDeclaredOfName
+MethodInvocation:getUnderlyingType
+MethodInvocation:copyPrimaryAnnos
+MethodInvocation:errorTypeNotErasedSubtypeOfSuperType
+Method-name:visitArray_Typevar
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedArrayType type, AnnotatedTypeVariable superType, Void p]
+MethodInvocation:visit
+MethodInvocation:getUpperBound
+MethodInvocation:setUpperBound
+MethodInvocation:asSuperTypevarLowerBound
+MethodInvocation:setLowerBound
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitArray_Wildcard
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedArrayType type, AnnotatedWildcardType superType, Void p]
+MethodInvocation:visit
+MethodInvocation:getExtendsBound
+MethodInvocation:setExtendsBound
+MethodInvocation:asSuperWildcardLowerBound
+MethodInvocation:setSuperBound
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitDeclared_Declared
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedDeclaredType type, AnnotatedDeclaredType superType, Void p]
+MethodInvocation:areErasedJavaTypesEquivalent
+MethodInvocation:directSuperTypes
+MethodInvocation:isErasedJavaSubtype
+MethodInvocation:visit
+MethodInvocation:errorTypeNotErasedSubtypeOfSuperType
+Method-name:visitDeclared_Intersection
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedDeclaredType type, AnnotatedIntersectionType superType, Void p]
+MethodInvocation:directSuperTypes
+MethodInvocation:isSubtype
+MethodInvocation:getUnderlyingType
+MethodInvocation:getUnderlyingType
+MethodInvocation:visit
+MethodInvocation:add
+MethodInvocation:setDirectSuperTypes
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitDeclared_Primitive
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedDeclaredType type, AnnotatedPrimitiveType superType, Void p]
+MethodInvocation:isBoxedPrimitive
+MethodInvocation:getUnderlyingType
+MethodInvocation:getUnboxedType
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitDeclared_Typevar
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedDeclaredType type, AnnotatedTypeVariable superType, Void p]
+MethodInvocation:deepCopy
+MethodInvocation:asUse
+MethodInvocation:visit
+MethodInvocation:getUpperBound
+MethodInvocation:setUpperBound
+MethodInvocation:asUse
+MethodInvocation:asSuperTypevarLowerBound
+MethodInvocation:setLowerBound
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitDeclared_Union
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedDeclaredType type, AnnotatedUnionType superType, Void p]
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitDeclared_Wildcard
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedDeclaredType type, AnnotatedWildcardType superType, Void p]
+MethodInvocation:asUse
+MethodInvocation:visit
+MethodInvocation:getExtendsBound
+MethodInvocation:setExtendsBound
+MethodInvocation:asUse
+MethodInvocation:asSuperWildcardLowerBound
+MethodInvocation:setSuperBound
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitIntersection_Declared
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedIntersectionType type, AnnotatedDeclaredType superType, Void p]
+MethodInvocation:directSuperTypes
+MethodInvocation:isErasedJavaSubtype
+MethodInvocation:visit
+MethodInvocation:copyPrimaryAnnos
+MethodInvocation:errorTypeNotErasedSubtypeOfSuperType
+Method-name:visitIntersection_Intersection
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedIntersectionType type, AnnotatedIntersectionType superType, Void p]
+MethodInvocation:directSuperTypes
+MethodInvocation:directSuperTypes
+MethodInvocation:isErasedJavaSubtype
+MethodInvocation:visit
+MethodInvocation:add
+MethodInvocation:setDirectSuperTypes
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitIntersection_Primitive
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedIntersectionType type, AnnotatedPrimitiveType superType, Void p]
+MethodInvocation:directSuperTypes
+MethodInvocation:isBoxedPrimitive
+MethodInvocation:getUnderlyingType
+MethodInvocation:visit
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitIntersection_Typevar
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedIntersectionType type, AnnotatedTypeVariable superType, Void p]
+MethodInvocation:visit
+MethodInvocation:getUpperBound
+MethodInvocation:setUpperBound
+MethodInvocation:asSuperTypevarLowerBound
+MethodInvocation:setLowerBound
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitIntersection_Union
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedIntersectionType type, AnnotatedUnionType superType, Void p]
+MethodInvocation:directSuperTypes
+MethodInvocation:isErasedJavaSubtype
+MethodInvocation:visit
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitIntersection_Wildcard
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedIntersectionType type, AnnotatedWildcardType superType, Void p]
+MethodInvocation:visit
+MethodInvocation:getExtendsBound
+MethodInvocation:setExtendsBound
+MethodInvocation:asSuperWildcardLowerBound
+MethodInvocation:setSuperBound
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitPrimitive_Primitive
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedPrimitiveType type, AnnotatedPrimitiveType superType, Void p]
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitPrimitive_Other
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedPrimitiveType type, AnnotatedTypeMirror superType, Void p]
+MethodInvocation:visit
+MethodInvocation:getBoxedType
+Method-name:visitPrimitive_Declared
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedPrimitiveType type, AnnotatedDeclaredType superType, Void p]
+MethodInvocation:isBoxedPrimitive
+MethodInvocation:getUnderlyingType
+MethodInvocation:unboxedType
+MethodInvocation:getUnderlyingType
+MethodInvocation:getKind
+MethodInvocation:getKind
+MethodInvocation:canBeNarrowingPrimitiveConversion
+MethodInvocation:getNarrowedPrimitive
+MethodInvocation:visit
+MethodInvocation:visitPrimitive_Other
+Method-name:canBeNarrowingPrimitiveConversion
+Method-returnType:boolean
+Method-parameters:[TypeMirror type]
+MethodInvocation:isBoxedPrimitive
+MethodInvocation:unboxedType
+MethodInvocation:getKind
+Method-name:visitPrimitive_Intersection
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedPrimitiveType type, AnnotatedIntersectionType superType, Void p]
+MethodInvocation:visitPrimitive_Other
+Method-name:visitPrimitive_Typevar
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedPrimitiveType type, AnnotatedTypeVariable superType, Void p]
+MethodInvocation:visitPrimitive_Other
+Method-name:visitPrimitive_Union
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedPrimitiveType type, AnnotatedUnionType superType, Void p]
+MethodInvocation:visitPrimitive_Other
+Method-name:visitPrimitive_Wildcard
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedPrimitiveType type, AnnotatedWildcardType superType, Void p]
+MethodInvocation:visitPrimitive_Other
+Method-name:visitTypevar_NotTypevarNorWildcard
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedTypeVariable type, AnnotatedTypeMirror superType, Void p]
+MethodInvocation:visit
+MethodInvocation:getUpperBound
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitTypevar_Declared
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedTypeVariable type, AnnotatedDeclaredType superType, Void p]
+MethodInvocation:visitTypevar_NotTypevarNorWildcard
+Method-name:visitTypevar_Intersection
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedTypeVariable type, AnnotatedIntersectionType superType, Void p]
+MethodInvocation:visitTypevar_NotTypevarNorWildcard
+Method-name:visitTypevar_Primitive
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedTypeVariable type, AnnotatedPrimitiveType superType, Void p]
+MethodInvocation:visitTypevar_NotTypevarNorWildcard
+Method-name:visitTypevar_Typevar
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedTypeVariable type, AnnotatedTypeVariable superType, Void p]
+MethodInvocation:clearAnnotations
+MethodInvocation:copyPrimaryAnnos
+MethodInvocation:visit
+MethodInvocation:getUpperBound
+MethodInvocation:getUpperBound
+MethodInvocation:setUpperBound
+MethodInvocation:getKind
+MethodInvocation:getLowerBound
+MethodInvocation:getKind
+MethodInvocation:getLowerBound
+MethodInvocation:copyPrimaryAnnos
+MethodInvocation:getLowerBound
+MethodInvocation:getLowerBound
+MethodInvocation:getKind
+MethodInvocation:getLowerBound
+MethodInvocation:visit
+MethodInvocation:getLowerBound
+MethodInvocation:asSuperTypevarLowerBound
+MethodInvocation:getLowerBound
+MethodInvocation:setLowerBound
+Method-name:visitTypevar_Union
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedTypeVariable type, AnnotatedUnionType superType, Void p]
+MethodInvocation:visitTypevar_NotTypevarNorWildcard
+Method-name:visitTypevar_Wildcard
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedTypeVariable type, AnnotatedWildcardType superType, Void p]
+MethodInvocation:visit
+MethodInvocation:getUpperBound
+MethodInvocation:getExtendsBound
+MethodInvocation:setExtendsBound
+MethodInvocation:getKind
+MethodInvocation:getLowerBound
+MethodInvocation:getKind
+MethodInvocation:getSuperBound
+MethodInvocation:copyPrimaryAnnos
+MethodInvocation:getLowerBound
+MethodInvocation:getSuperBound
+MethodInvocation:getKind
+MethodInvocation:getLowerBound
+MethodInvocation:visit
+MethodInvocation:getSuperBound
+MethodInvocation:asSuperWildcardLowerBound
+MethodInvocation:getLowerBound
+MethodInvocation:setSuperBound
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitUnion_Other
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedUnionType type, AnnotatedTypeMirror superType, Void p]
+MethodInvocation:visit
+MethodInvocation:get
+MethodInvocation:getAlternatives
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitUnion_Declared
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedUnionType type, AnnotatedDeclaredType superType, Void p]
+MethodInvocation:visitUnion_Other
+Method-name:visitUnion_Intersection
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedUnionType type, AnnotatedIntersectionType superType, Void p]
+MethodInvocation:visitUnion_Other
+Method-name:visitUnion_Typevar
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedUnionType type, AnnotatedTypeVariable superType, Void p]
+MethodInvocation:visitUnion_Other
+Method-name:visitUnion_Union
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedUnionType type, AnnotatedUnionType superType, Void p]
+MethodInvocation:getAlternatives
+MethodInvocation:copyPrimaryAnnos
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitUnion_Wildcard
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedUnionType type, AnnotatedWildcardType superType, Void p]
+MethodInvocation:visitUnion_Other
+Method-name:visitWildcard_NotTypvarNorWildcard
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedWildcardType type, AnnotatedTypeMirror superType, Void p]
+MethodInvocation:isUninferredTypeArgument
+MethodInvocation:visit
+MethodInvocation:getExtendsBound
+MethodInvocation:addDefaultAnnotations
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitWildcard_Array
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedWildcardType type, AnnotatedArrayType superType, Void p]
+MethodInvocation:visitWildcard_NotTypvarNorWildcard
+Method-name:visitWildcard_Declared
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedWildcardType type, AnnotatedDeclaredType superType, Void p]
+MethodInvocation:visitWildcard_NotTypvarNorWildcard
+Method-name:visitWildcard_Intersection
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedWildcardType type, AnnotatedIntersectionType superType, Void p]
+MethodInvocation:visitWildcard_NotTypvarNorWildcard
+Method-name:visitWildcard_Primitive
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedWildcardType type, AnnotatedPrimitiveType superType, Void p]
+MethodInvocation:visitWildcard_NotTypvarNorWildcard
+Method-name:visitWildcard_Typevar
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedWildcardType type, AnnotatedTypeVariable superType, Void p]
+MethodInvocation:isUninferredTypeArgument
+MethodInvocation:visit
+MethodInvocation:getExtendsBound
+MethodInvocation:getUpperBound
+MethodInvocation:setUpperBound
+MethodInvocation:getKind
+MethodInvocation:getSuperBound
+MethodInvocation:getKind
+MethodInvocation:getLowerBound
+MethodInvocation:copyPrimaryAnnos
+MethodInvocation:getSuperBound
+MethodInvocation:getLowerBound
+MethodInvocation:getKind
+MethodInvocation:getSuperBound
+MethodInvocation:visit
+MethodInvocation:getLowerBound
+MethodInvocation:asSuperTypevarLowerBound
+MethodInvocation:getSuperBound
+MethodInvocation:setLowerBound
+MethodInvocation:addDefaultAnnotations
+MethodInvocation:copyPrimaryAnnos
+Method-name:visitWildcard_Union
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedWildcardType type, AnnotatedUnionType superType, Void p]
+MethodInvocation:visitWildcard_NotTypvarNorWildcard
+Method-name:visitWildcard_Wildcard
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[AnnotatedWildcardType type, AnnotatedWildcardType superType, Void p]
+MethodInvocation:isUninferredTypeArgument
+MethodInvocation:setUninferredTypeArgument
+MethodInvocation:isSubtype
+MethodInvocation:getUnderlyingType
+MethodInvocation:getExtendsBound
+MethodInvocation:getUnderlyingType
+MethodInvocation:getExtendsBound
+MethodInvocation:visit
+MethodInvocation:getExtendsBound
+MethodInvocation:getExtendsBound
+MethodInvocation:setExtendsBound
+MethodInvocation:copyPrimaryAnnos
+MethodInvocation:getExtendsBound
+MethodInvocation:getExtendsBound
+MethodInvocation:addDefaultAnnotations
+MethodInvocation:getExtendsBound
+MethodInvocation:getKind
+MethodInvocation:getSuperBound
+MethodInvocation:getKind
+MethodInvocation:getSuperBound
+MethodInvocation:copyPrimaryAnnos
+MethodInvocation:getSuperBound
+MethodInvocation:getSuperBound
+MethodInvocation:getKind
+MethodInvocation:getSuperBound
+MethodInvocation:visit
+MethodInvocation:getSuperBound
+MethodInvocation:asSuperWildcardLowerBound
+MethodInvocation:getSuperBound
+MethodInvocation:setSuperBound
+MethodInvocation:addDefaultAnnotations
+MethodInvocation:copyPrimaryAnnos
+Method-name:sameAnnotatedTypeFactory
+Method-returnType:boolean
+Method-parameters:[AnnotatedTypeFactory annotatedTypeFactory]
+FieldAccess:annotatedTypeFactory

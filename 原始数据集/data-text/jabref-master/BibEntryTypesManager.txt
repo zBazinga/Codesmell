@@ -1,0 +1,167 @@
+Class:BibEntryTypesManager
+Field:ENTRYTYPE_FLAG
+Field:BIBTEX
+MethodInvocation:collect
+MethodInvocation:concat
+MethodInvocation:stream
+MethodInvocation:stream
+MethodInvocation:toList
+Field:BIBLATEX
+Method-name:BibEntryTypesManager
+Method-returnType:null
+Method-parameters:[]
+Method-name:parse
+Method-returnType:Optional<BibEntryType>
+Method-parameters:[String comment]
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:indexOf
+MethodInvocation:empty
+MethodInvocation:substring
+MethodInvocation:indexOf
+MethodInvocation:indexOf
+MethodInvocation:empty
+MethodInvocation:parse
+MethodInvocation:substring
+MethodInvocation:substring
+MethodInvocation:substring
+MethodInvocation:withRequiredFields
+MethodInvocation:withImportantFields
+MethodInvocation:withType
+MethodInvocation:parseFieldList
+MethodInvocation:parseOrFieldsList
+MethodInvocation:of
+MethodInvocation:build
+Method-name:serialize
+Method-returnType:String
+Method-parameters:[BibEntryType entryType]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getName
+MethodInvocation:getType
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:serializeOrFieldsList
+MethodInvocation:getRequiredFields
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:serializeFieldsList
+MethodInvocation:collect
+MethodInvocation:sorted
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getOptionalFields
+MethodInvocation:comparing
+MethodInvocation:toList
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:isCustomOrModifiedType
+Method-returnType:boolean
+Method-parameters:[BibEntryType type, BibDatabaseMode mode]
+MethodInvocation:isCustomOrModifiedType
+MethodInvocation:isCustomOrModifiedType
+Method-name:addCustomOrModifiedTypes
+Method-returnType:void
+Method-parameters:[List<BibEntryType> customizedBibtexEntryTypes, List<BibEntryType> customizedBiblatexEntryTypes]
+MethodInvocation:forEach
+MethodInvocation:addCustomOrModifiedType
+MethodInvocation:forEach
+MethodInvocation:addCustomOrModifiedType
+Method-name:getAllCustomTypes
+Method-returnType:List<BibEntryType>
+Method-parameters:[BibDatabaseMode mode]
+MethodInvocation:getAllTypes
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:noneMatch
+MethodInvocation:stream
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:getType
+MethodInvocation:noneMatch
+MethodInvocation:stream
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:getType
+MethodInvocation:toList
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:noneMatch
+MethodInvocation:stream
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:getType
+MethodInvocation:toList
+Method-name:addCustomOrModifiedType
+Method-returnType:void
+Method-parameters:[BibEntryType entryType, BibDatabaseMode mode]
+MethodInvocation:addCustomOrModifiedType
+MethodInvocation:addCustomOrModifiedType
+Method-name:removeCustomOrModifiedEntryType
+Method-returnType:void
+Method-parameters:[BibEntryType entryType, BibDatabaseMode mode]
+MethodInvocation:removeCustomOrModifiedEntryType
+MethodInvocation:removeCustomOrModifiedEntryType
+Method-name:getAllTypes
+Method-returnType:Collection<BibEntryType>
+Method-parameters:[BibDatabaseMode type]
+MethodInvocation:getAllTypes
+MethodInvocation:getAllTypes
+Method-name:isCustomType
+Method-returnType:boolean
+Method-parameters:[EntryType type, BibDatabaseMode mode]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:getAllCustomTypes
+MethodInvocation:equals
+MethodInvocation:getType
+Method-name:enrich
+Method-returnType:Optional<BibEntryType>
+Method-parameters:[EntryType type, BibDatabaseMode mode]
+MethodInvocation:enrich
+MethodInvocation:enrich
+Class:InternalEntryTypes
+Field:customOrModifiedType
+Field:standardTypes
+Method-name:InternalEntryTypes
+Method-returnType:null
+Method-parameters:[List<BibEntryType> standardTypes]
+FieldAccess:standardTypes
+Method-name:enrich
+Method-returnType:Optional<BibEntryType>
+Method-parameters:[EntryType type]
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:isPresent
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:equals
+MethodInvocation:getType
+Method-name:addCustomOrModifiedType
+Method-returnType:void
+Method-parameters:[BibEntryType type]
+MethodInvocation:remove
+MethodInvocation:add
+Method-name:removeCustomOrModifiedEntryType
+Method-returnType:void
+Method-parameters:[BibEntryType type]
+MethodInvocation:remove
+Method-name:getAllTypes
+Method-returnType:SortedSet<BibEntryType>
+Method-parameters:[]
+MethodInvocation:addAll
+Method-name:isCustomOrModifiedType
+Method-returnType:boolean
+Method-parameters:[BibEntryType entryType]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:getType

@@ -1,0 +1,366 @@
+Class:ThreadContext
+Field:PREFIX
+Field:DEFAULT_HEADERS_SETTING
+MethodInvocation:groupSetting
+Field:ACTION_ORIGIN_TRANSIENT_NAME
+Field:logger
+MethodInvocation:getLogger
+Field:DEFAULT_CONTEXT
+Field:defaultHeader
+Field:threadLocal
+Field:maxWarningHeaderCount
+Field:maxWarningHeaderSize
+Method-name:ThreadContext
+Method-returnType:null
+Method-parameters:[Settings settings]
+FieldAccess:defaultHeader
+MethodInvocation:buildDefaultHeaders
+FieldAccess:threadLocal
+MethodInvocation:withInitial
+FieldAccess:maxWarningHeaderCount
+MethodInvocation:get
+FieldAccess:maxWarningHeaderSize
+MethodInvocation:getBytes
+MethodInvocation:get
+Method-name:stashContext
+Method-returnType:StoredContext
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:containsKey
+MethodInvocation:putHeaders
+MethodInvocation:of
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set
+Method-name:stashWithOrigin
+Method-returnType:StoredContext
+Method-parameters:[String origin]
+MethodInvocation:stashContext
+MethodInvocation:putTransient
+Method-name:stashAndMergeHeaders
+Method-returnType:StoredContext
+Method-parameters:[Map<String,String> headers]
+MethodInvocation:get
+MethodInvocation:putAll
+MethodInvocation:set
+MethodInvocation:putHeaders
+MethodInvocation:set
+Method-name:newStoredContext
+Method-returnType:StoredContext
+Method-parameters:[boolean preserveResponseHeaders]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:putResponseHeaders
+FieldAccess:responseHeaders
+MethodInvocation:get
+MethodInvocation:set
+Method-name:newRestorableContext
+Method-returnType:Supplier<StoredContext>
+Method-parameters:[boolean preserveResponseHeaders]
+MethodInvocation:wrapRestorable
+MethodInvocation:newStoredContext
+Method-name:wrapRestorable
+Method-returnType:Supplier<StoredContext>
+Method-parameters:[StoredContext storedContext]
+MethodInvocation:newStoredContext
+MethodInvocation:restore
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeTo
+MethodInvocation:get
+Method-name:readHeaders
+Method-returnType:void
+Method-parameters:[StreamInput in]
+MethodInvocation:setHeaders
+MethodInvocation:readHeadersFromStream
+Method-name:setHeaders
+Method-returnType:void
+Method-parameters:[Tuple<Map<String,String>,Map<String,Set<String>>> headerTuple]
+MethodInvocation:v1
+MethodInvocation:v2
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:emptyMap
+MethodInvocation:set
+Method-name:readHeadersFromStream
+Method-returnType:Tuple<Map<String,String>,Map<String,Set<String>>>
+Method-parameters:[StreamInput in]
+Method-name:getHeader
+Method-returnType:String
+Method-parameters:[String key]
+MethodInvocation:get
+FieldAccess:requestHeaders
+MethodInvocation:get
+MethodInvocation:get
+Method-name:getHeaders
+Method-returnType:Map<String,String>
+Method-parameters:[]
+MethodInvocation:putAll
+FieldAccess:requestHeaders
+MethodInvocation:get
+MethodInvocation:unmodifiableMap
+Method-name:getResponseHeaders
+Method-returnType:Map<String,List<String>>
+Method-parameters:[]
+FieldAccess:responseHeaders
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:copyOf
+MethodInvocation:getValue
+MethodInvocation:unmodifiableMap
+Method-name:copyHeaders
+Method-returnType:void
+Method-parameters:[Iterable<Map.Entry<String,String>> headers]
+MethodInvocation:set
+MethodInvocation:copyHeaders
+MethodInvocation:get
+Method-name:putHeader
+Method-returnType:void
+Method-parameters:[String key, String value]
+MethodInvocation:set
+MethodInvocation:putRequest
+MethodInvocation:get
+Method-name:putHeader
+Method-returnType:void
+Method-parameters:[Map<String,String> header]
+MethodInvocation:set
+MethodInvocation:putHeaders
+MethodInvocation:get
+Method-name:putTransient
+Method-returnType:void
+Method-parameters:[String key, Object value]
+MethodInvocation:set
+MethodInvocation:putTransient
+MethodInvocation:get
+Method-name:getTransient
+Method-returnType:T
+Method-parameters:[String key]
+MethodInvocation:get
+FieldAccess:transientHeaders
+MethodInvocation:get
+Method-name:addResponseHeader
+Method-returnType:void
+Method-parameters:[final String key, final String value]
+MethodInvocation:addResponseHeader
+Method-name:addResponseHeader
+Method-returnType:void
+Method-parameters:[final String key, final String value, final Function<String,String> uniqueValue]
+MethodInvocation:set
+MethodInvocation:putResponse
+MethodInvocation:get
+Method-name:preserveContext
+Method-returnType:Runnable
+Method-parameters:[Runnable command]
+Method-name:unwrap
+Method-returnType:Runnable
+Method-parameters:[Runnable command]
+MethodInvocation:unwrap
+Method-name:isDefaultContext
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:get
+Method-name:markAsSystemContext
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:set
+MethodInvocation:setSystemContext
+MethodInvocation:get
+Method-name:isSystemContext
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:isSystemContext
+MethodInvocation:get
+Method-name:writeToContext
+Method-returnType:void
+Method-parameters:[Authentication authentication]
+MethodInvocation:writeToContext
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+Method-name:restore
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+Method-name:buildDefaultHeaders
+Method-returnType:Map<String,String>
+Method-parameters:[Settings settings]
+MethodInvocation:get
+MethodInvocation:emptyMap
+MethodInvocation:names
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:unmodifiableMap
+Class:ThreadContextStruct
+Field:EMPTY
+MethodInvocation:emptyMap
+MethodInvocation:emptyMap
+MethodInvocation:emptyMap
+Field:requestHeaders
+Field:transientHeaders
+Field:responseHeaders
+Field:isSystemContext
+Field:warningHeadersSize
+Method-name:setSystemContext
+Method-returnType:ThreadContextStruct
+Method-parameters:[]
+Method-name:ThreadContextStruct
+Method-returnType:null
+Method-parameters:[Map<String,String> requestHeaders, Map<String,Set<String>> responseHeaders, Map<String,Object> transientHeaders, boolean isSystemContext]
+FieldAccess:requestHeaders
+FieldAccess:responseHeaders
+FieldAccess:transientHeaders
+FieldAccess:isSystemContext
+FieldAccess:warningHeadersSize
+Method-name:ThreadContextStruct
+Method-returnType:null
+Method-parameters:[Map<String,String> requestHeaders, Map<String,Set<String>> responseHeaders, Map<String,Object> transientHeaders, boolean isSystemContext, long warningHeadersSize]
+FieldAccess:requestHeaders
+FieldAccess:responseHeaders
+FieldAccess:transientHeaders
+FieldAccess:isSystemContext
+FieldAccess:warningHeadersSize
+Method-name:ThreadContextStruct
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:emptyMap
+MethodInvocation:emptyMap
+MethodInvocation:emptyMap
+Method-name:putRequest
+Method-returnType:ThreadContextStruct
+Method-parameters:[String key, String value]
+FieldAccess:requestHeaders
+MethodInvocation:putSingleHeader
+Method-name:putSingleHeader
+Method-returnType:void
+Method-parameters:[String key, String value, Map<String,String> newHeaders]
+MethodInvocation:putIfAbsent
+Method-name:putHeaders
+Method-returnType:ThreadContextStruct
+Method-parameters:[Map<String,String> headers]
+MethodInvocation:isEmpty
+FieldAccess:requestHeaders
+MethodInvocation:entrySet
+MethodInvocation:putSingleHeader
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:putResponseHeaders
+Method-returnType:ThreadContextStruct
+Method-parameters:[Map<String,Set<String>> headers]
+Method-name:putResponse
+Method-returnType:ThreadContextStruct
+Method-parameters:[final String key, final String value, final Function<String,String> uniqueValue, final int maxWarningHeaderCount, final long maxWarningHeaderSize]
+Method-name:putTransient
+Method-returnType:ThreadContextStruct
+Method-parameters:[String key, Object value]
+FieldAccess:transientHeaders
+MethodInvocation:putIfAbsent
+Method-name:copyHeaders
+Method-returnType:ThreadContextStruct
+Method-parameters:[Iterable<Map.Entry<String,String>> headers]
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:putHeaders
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out, Map<String,String> defaultHeaders]
+MethodInvocation:isEmpty
+FieldAccess:requestHeaders
+MethodInvocation:putAll
+FieldAccess:requestHeaders
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:writeString
+MethodInvocation:getKey
+MethodInvocation:writeString
+MethodInvocation:getValue
+MethodInvocation:writeMap
+Class:ContextPreservingRunnable
+Field:in
+Field:ctx
+Method-name:ContextPreservingRunnable
+Method-returnType:null
+Method-parameters:[Runnable in]
+MethodInvocation:newStoredContext
+FieldAccess:in
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:stashContext
+MethodInvocation:restore
+MethodInvocation:run
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:unwrap
+Method-returnType:Runnable
+Method-parameters:[]
+Class:ContextPreservingAbstractRunnable
+Field:in
+Field:creatorsContext
+Field:threadsOriginalContext
+Method-name:ContextPreservingAbstractRunnable
+Method-returnType:null
+Method-parameters:[AbstractRunnable in]
+MethodInvocation:newStoredContext
+FieldAccess:in
+Method-name:isForceExecution
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isForceExecution
+Method-name:onAfter
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onAfter
+MethodInvocation:restore
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:onFailure
+Method-name:onRejection
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:onRejection
+Method-name:doRun
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:stashContext
+MethodInvocation:restore
+MethodInvocation:doRun
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:unwrap
+Method-returnType:AbstractRunnable
+Method-parameters:[]
+Field:LINKED_HASH_SET_COLLECTOR
+Class:LinkedHashSetCollector
+Method-name:supplier
+Method-returnType:Supplier<Set<T>>
+Method-parameters:[]
+Method-name:accumulator
+Method-returnType:BiConsumer<Set<T>,T>
+Method-parameters:[]
+Method-name:combiner
+Method-returnType:BinaryOperator<Set<T>>
+Method-parameters:[]
+MethodInvocation:addAll
+Method-name:finisher
+Method-returnType:Function<Set<T>,Set<T>>
+Method-parameters:[]
+MethodInvocation:identity
+Field:CHARACTERISTICS
+MethodInvocation:unmodifiableSet
+MethodInvocation:of
+Method-name:characteristics
+Method-returnType:Set<Characteristics>
+Method-parameters:[]

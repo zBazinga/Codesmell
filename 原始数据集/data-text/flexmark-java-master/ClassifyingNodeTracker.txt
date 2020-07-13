@@ -1,0 +1,91 @@
+Class:ClassifyingNodeTracker
+Field:nodeClassifier
+Field:host
+Field:exclusionMap
+Field:exclusionSet
+Field:nodeAncestryMap
+Method-name:ClassifyingNodeTracker
+Method-returnType:null
+Method-parameters:[@Nullable NodeTracker host, @NotNull Map<Class<? extends Node>,Set<Class<?>>> exclusionMap]
+FieldAccess:host
+FieldAccess:exclusionMap
+MethodInvocation:size
+MethodInvocation:putAll
+FieldAccess:exclusionMap
+MethodInvocation:iterator
+MethodInvocation:valueIterable
+FieldAccess:exclusionMap
+MethodInvocation:hasNext
+MethodInvocation:addAll
+MethodInvocation:next
+Method-name:getExclusionMap
+Method-returnType:OrderedMap<Class<?>,Set<Class<?>>>
+Method-parameters:[]
+Method-name:getNodeAncestryMap
+Method-returnType:HashMap<Integer,BitSet>
+Method-parameters:[]
+Method-name:getExclusionSet
+Method-returnType:OrderedSet<Class<?>>
+Method-parameters:[]
+Method-name:getNodeClassifier
+Method-returnType:ClassificationBag<Class<?>,Node>
+Method-parameters:[]
+Method-name:nodeAdded
+Method-returnType:void
+Method-parameters:[@NotNull Node node]
+MethodInvocation:validateLinked
+MethodInvocation:add
+MethodInvocation:nodeAdded
+Method-name:nodeAddedWithChildren
+Method-returnType:void
+Method-parameters:[@NotNull Node node]
+MethodInvocation:validateLinked
+MethodInvocation:add
+MethodInvocation:addNodes
+MethodInvocation:getChildren
+MethodInvocation:nodeAddedWithChildren
+Method-name:nodeAddedWithDescendants
+Method-returnType:void
+Method-parameters:[@NotNull Node node]
+MethodInvocation:validateLinked
+MethodInvocation:add
+MethodInvocation:addNodes
+MethodInvocation:getDescendants
+MethodInvocation:nodeAddedWithDescendants
+Method-name:addNodes
+Method-returnType:void
+Method-parameters:[@NotNull ReversiblePeekingIterable<Node> nodes]
+MethodInvocation:add
+Method-name:validateUnlinked
+Method-returnType:void
+Method-parameters:[@NotNull Node node]
+MethodInvocation:getNext
+MethodInvocation:getParent
+Method-name:nodeRemoved
+Method-returnType:void
+Method-parameters:[@NotNull Node node]
+MethodInvocation:nodeRemovedWithDescendants
+Method-name:nodeRemovedWithChildren
+Method-returnType:void
+Method-parameters:[@NotNull Node node]
+MethodInvocation:nodeRemovedWithDescendants
+Method-name:nodeRemovedWithDescendants
+Method-returnType:void
+Method-parameters:[@NotNull Node node]
+MethodInvocation:validateUnlinked
+MethodInvocation:add
+MethodInvocation:removeNodes
+MethodInvocation:getDescendants
+MethodInvocation:nodeRemovedWithDescendants
+Method-name:removeNodes
+Method-returnType:void
+Method-parameters:[@NotNull ReversiblePeekingIterable<Node> nodes]
+MethodInvocation:add
+Method-name:getItems
+Method-returnType:OrderedSet<Node>
+Method-parameters:[]
+MethodInvocation:getItems
+Method-name:getCategoryItems
+Method-returnType:@NotNull ReversibleIterable<X>
+Method-parameters:[@NotNull Class<? extends X> nodeClass, @NotNull Set<Class<?>> classes]
+MethodInvocation:getCategoryItems

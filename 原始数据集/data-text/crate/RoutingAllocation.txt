@@ -1,0 +1,142 @@
+Class:RoutingAllocation
+Field:deciders
+Field:routingNodes
+Field:metaData
+Field:routingTable
+Field:nodes
+Field:customs
+Field:clusterInfo
+Field:ignoredShardToNodes
+Field:ignoreDisable
+Field:debugDecision
+Field:hasPendingAsyncFetch
+Field:currentNanoTime
+Field:indexMetaDataUpdater
+Field:nodesChangedObserver
+Field:restoreInProgressUpdater
+Field:routingChangesObserver
+Method-name:RoutingAllocation
+Method-returnType:null
+Method-parameters:[AllocationDeciders deciders, RoutingNodes routingNodes, ClusterState clusterState, ClusterInfo clusterInfo, long currentNanoTime]
+FieldAccess:deciders
+FieldAccess:routingNodes
+FieldAccess:metaData
+MethodInvocation:metaData
+FieldAccess:routingTable
+MethodInvocation:routingTable
+FieldAccess:nodes
+MethodInvocation:nodes
+FieldAccess:customs
+MethodInvocation:customs
+FieldAccess:clusterInfo
+FieldAccess:currentNanoTime
+Method-name:getCurrentNanoTime
+Method-returnType:long
+Method-parameters:[]
+Method-name:deciders
+Method-returnType:AllocationDeciders
+Method-parameters:[]
+FieldAccess:deciders
+Method-name:routingTable
+Method-returnType:RoutingTable
+Method-parameters:[]
+Method-name:routingNodes
+Method-returnType:RoutingNodes
+Method-parameters:[]
+Method-name:metaData
+Method-returnType:MetaData
+Method-parameters:[]
+Method-name:nodes
+Method-returnType:DiscoveryNodes
+Method-parameters:[]
+Method-name:clusterInfo
+Method-returnType:ClusterInfo
+Method-parameters:[]
+Method-name:custom
+Method-returnType:T
+Method-parameters:[String key]
+MethodInvocation:get
+Method-name:getCustoms
+Method-returnType:ImmutableOpenMap<String,ClusterState.Custom>
+Method-parameters:[]
+Method-name:ignoreDisable
+Method-returnType:void
+Method-parameters:[boolean ignoreDisable]
+FieldAccess:ignoreDisable
+Method-name:ignoreDisable
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:ignoreDisable
+Method-name:setDebugMode
+Method-returnType:void
+Method-parameters:[DebugMode debug]
+FieldAccess:debugDecision
+Method-name:debugDecision
+Method-returnType:void
+Method-parameters:[boolean debug]
+FieldAccess:debugDecision
+Method-name:debugDecision
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:debugDecision
+Method-name:getDebugMode
+Method-returnType:DebugMode
+Method-parameters:[]
+FieldAccess:debugDecision
+Method-name:addIgnoreShardForNode
+Method-returnType:void
+Method-parameters:[ShardId shardId, String nodeId]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:add
+Method-name:shouldIgnoreShardForNode
+Method-returnType:boolean
+Method-parameters:[ShardId shardId, String nodeId]
+MethodInvocation:get
+MethodInvocation:contains
+Method-name:getIgnoreNodes
+Method-returnType:Set<String>
+Method-parameters:[ShardId shardId]
+MethodInvocation:emptySet
+MethodInvocation:get
+MethodInvocation:emptySet
+MethodInvocation:unmodifiableSet
+Method-name:removeAllocationId
+Method-returnType:void
+Method-parameters:[ShardRouting shardRouting]
+MethodInvocation:removeAllocationId
+Method-name:changes
+Method-returnType:RoutingChangesObserver
+Method-parameters:[]
+Method-name:updateMetaDataWithRoutingChanges
+Method-returnType:MetaData
+Method-parameters:[RoutingTable newRoutingTable]
+MethodInvocation:applyChanges
+Method-name:updateRestoreInfoWithRoutingChanges
+Method-returnType:RestoreInProgress
+Method-parameters:[RestoreInProgress restoreInProgress]
+MethodInvocation:applyChanges
+Method-name:routingNodesChanged
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isChanged
+Method-name:decision
+Method-returnType:Decision
+Method-parameters:[Decision decision, String deciderLabel, String reason, Object... params]
+MethodInvocation:debugDecision
+MethodInvocation:single
+MethodInvocation:type
+Method-name:hasPendingAsyncFetch
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setHasPendingAsyncFetch
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:hasPendingAsyncFetch
+Method-name:explainOrThrowRejectedCommand
+Method-returnType:RerouteExplanation
+Method-parameters:[boolean explain, String reason, AbstractAllocateAllocationCommand abstractAllocateAllocationCommand]
+MethodInvocation:decision
+MethodInvocation:name
+MethodInvocation:name
+Field:DebugMode

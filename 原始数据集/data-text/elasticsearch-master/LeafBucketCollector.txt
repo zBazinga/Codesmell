@@ -1,0 +1,38 @@
+Class:LeafBucketCollector
+Field:NO_OP_COLLECTOR
+Method-name:setScorer
+Method-returnType:void
+Method-parameters:[Scorable arg0]
+Method-name:collect
+Method-returnType:void
+Method-parameters:[int doc, long bucket]
+Method-name:wrap
+Method-returnType:LeafBucketCollector
+Method-parameters:[Iterable<LeafBucketCollector> collectors]
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:spliterator
+MethodInvocation:toArray
+Method-name:setScorer
+Method-returnType:void
+Method-parameters:[Scorable s]
+MethodInvocation:setScorer
+Method-name:collect
+Method-returnType:void
+Method-parameters:[int doc, long bucket]
+MethodInvocation:collect
+Method-name:collect
+Method-returnType:void
+Method-parameters:[int doc, long owningBucketOrd]
+Method-name:collect
+Method-returnType:void
+Method-parameters:[int doc]
+MethodInvocation:collect
+Method-name:setScorer
+Method-returnType:void
+Method-parameters:[Scorable scorer]
+Method-name:collectBucket
+Method-returnType:void
+Method-parameters:[int doc, long bucketOrd, BucketsAggregator bucketsAggregator]
+MethodInvocation:grow
+MethodInvocation:collectExistingBucket

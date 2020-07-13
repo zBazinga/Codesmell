@@ -1,0 +1,197 @@
+Class:X509Generator
+Field:BEGIN_CERTIFICATE
+Field:END_CERTIFICATE
+Field:BEGIN_PRIVATE_KEY
+Field:BEGIN_RSA_PRIVATE_KEY
+Field:END_PRIVATE_KEY
+Field:END_RSA_PRIVATE_KEY
+Field:mockServerLogger
+Method-name:X509Generator
+Method-returnType:null
+Method-parameters:[MockServerLogger mockServerLogger]
+FieldAccess:mockServerLogger
+Method-name:generateRootX509AndPrivateKey
+Method-returnType:X509AndPrivateKey
+Method-parameters:[final CertificateSigningRequest csr]
+MethodInvocation:generateKeyPair
+MethodInvocation:getKeyPairAlgorithm
+MethodInvocation:getKeyPairSize
+MethodInvocation:buildDistinguishedName
+MethodInvocation:getCommonName
+MethodInvocation:buildX509CertInfo
+MethodInvocation:getPublic
+MethodInvocation:updateWithRootCertificateExtensions
+MethodInvocation:getPublic
+MethodInvocation:signX509KeyPair
+MethodInvocation:getPrivate
+MethodInvocation:getSigningAlgorithm
+Method-name:generateLeafX509AndPrivateKey
+Method-returnType:X509AndPrivateKey
+Method-parameters:[final CertificateSigningRequest csr, String issuerDistinguishingName, final String caPrivateKey, final X509Certificate caCertificate]
+MethodInvocation:generatePrivate
+MethodInvocation:getInstance
+MethodInvocation:getKeyPairAlgorithm
+MethodInvocation:keySpecFromPEM
+MethodInvocation:generateKeyPair
+MethodInvocation:getKeyPairAlgorithm
+MethodInvocation:getKeyPairSize
+MethodInvocation:buildDistinguishedName
+MethodInvocation:getCommonName
+MethodInvocation:buildX509CertInfo
+MethodInvocation:getPublic
+MethodInvocation:updateWithCertificateExtensions
+MethodInvocation:getPublic
+MethodInvocation:getPublicKey
+MethodInvocation:getSubjectAlternativeNames
+MethodInvocation:signX509KeyPair
+MethodInvocation:getSigningAlgorithm
+Method-name:generateKeyPair
+Method-returnType:KeyPair
+Method-parameters:[final String algorithm, final int keySize]
+MethodInvocation:getInstance
+MethodInvocation:initialize
+MethodInvocation:genKeyPair
+Method-name:updateWithCertificateExtensions
+Method-returnType:void
+Method-parameters:[final X509CertInfo x509CertInfo, final PublicKey publicKey, final PublicKey caPublicKey, final List<String> subjectAlternativeNames]
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:of
+MethodInvocation:isEmpty
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:getIdentifier
+MethodInvocation:set
+MethodInvocation:set
+Method-name:updateWithRootCertificateExtensions
+Method-returnType:void
+Method-parameters:[final X509CertInfo x509CertInfo, final PublicKey publicKey]
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:getIdentifier
+MethodInvocation:set
+Method-name:buildGeneralName
+Method-returnType:GeneralName
+Method-parameters:[final String subjectAlternativeName]
+MethodInvocation:isUriInetAddress
+MethodInvocation:logEvent
+MethodInvocation:setMessageFormat
+MethodInvocation:setLogLevel
+MethodInvocation:isValid
+MethodInvocation:logEvent
+MethodInvocation:setMessageFormat
+MethodInvocation:setLogLevel
+Method-name:signX509KeyPair
+Method-returnType:X509AndPrivateKey
+Method-parameters:[final PrivateKey privateKey, final KeyPair keyPair, X509CertInfo x509CertInfo, final String signatureAlgorithm]
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:sign
+MethodInvocation:setCert
+MethodInvocation:setPrivateKey
+MethodInvocation:privateKeyToPEM
+MethodInvocation:getEncoded
+MethodInvocation:getPrivate
+MethodInvocation:certToPEM
+MethodInvocation:getEncoded
+Method-name:privateKeyToPEM
+Method-returnType:String
+Method-parameters:[final byte[] privateKey]
+MethodInvocation:toPEM
+Method-name:certToPEM
+Method-returnType:String
+Method-parameters:[final X509Certificate... x509Certificates]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toPEM
+MethodInvocation:getEncoded
+MethodInvocation:toString
+Method-name:certToPEM
+Method-returnType:String
+Method-parameters:[final byte[]... x509Certificates]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toPEM
+MethodInvocation:toString
+Method-name:toPEM
+Method-returnType:String
+Method-parameters:[final byte[] key, final String begin, final String end]
+MethodInvocation:getMimeEncoder
+MethodInvocation:getBytes
+MethodInvocation:lineSeparator
+MethodInvocation:lineSeparator
+MethodInvocation:encodeToString
+MethodInvocation:lineSeparator
+Method-name:privateKeyBytesFromPEM
+Method-returnType:byte[]
+Method-parameters:[final String pem]
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:logEvent
+MethodInvocation:setArguments
+MethodInvocation:setMessageFormat
+MethodInvocation:setLogLevel
+MethodInvocation:setType
+MethodInvocation:decode
+MethodInvocation:getMimeDecoder
+MethodInvocation:replaceFirst
+MethodInvocation:replaceFirst
+MethodInvocation:replaceFirst
+MethodInvocation:replaceFirst
+Method-name:keySpecFromPEM
+Method-returnType:KeySpec
+Method-parameters:[final String pem]
+MethodInvocation:privateKeyBytesFromPEM
+Method-name:privateKeyFromPEMFile
+Method-returnType:RSAPrivateKey
+Method-parameters:[String filename]
+MethodInvocation:privateKeyFromPEM
+MethodInvocation:readFileFromClassPathOrPath
+Method-name:privateKeyFromPEM
+Method-returnType:RSAPrivateKey
+Method-parameters:[String pem]
+MethodInvocation:generatePrivate
+MethodInvocation:getInstance
+MethodInvocation:keySpecFromPEM
+Method-name:x509FromPEMFile
+Method-returnType:X509Certificate
+Method-parameters:[String filename]
+MethodInvocation:x509FromPEM
+MethodInvocation:openStreamToFileFromClassPathOrPath
+Method-name:x509FromPEM
+Method-returnType:X509Certificate
+Method-parameters:[String pem]
+MethodInvocation:x509FromPEM
+MethodInvocation:getBytes
+Method-name:x509FromPEM
+Method-returnType:X509Certificate
+Method-parameters:[InputStream inputStream]
+MethodInvocation:generateCertificate
+MethodInvocation:getInstance
+Method-name:x509ChainFromPEMFile
+Method-returnType:List<X509Certificate>
+Method-parameters:[String filename]
+MethodInvocation:x509ChainFromPEM
+MethodInvocation:openStreamToFileFromClassPathOrPath
+Method-name:x509ChainFromPEM
+Method-returnType:List<X509Certificate>
+Method-parameters:[String pem]
+MethodInvocation:x509ChainFromPEM
+MethodInvocation:getBytes
+Method-name:x509ChainFromPEM
+Method-returnType:List<X509Certificate>
+Method-parameters:[InputStream inputStream]
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:generateCertificates
+MethodInvocation:getInstance
+MethodInvocation:toList
+Method-name:validX509PEMFileExists
+Method-returnType:boolean
+Method-parameters:[String filename]
+MethodInvocation:x509FromPEMFile

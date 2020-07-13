@@ -1,0 +1,75 @@
+Class:DefaultTrackNameProvider
+Field:resources
+Method-name:DefaultTrackNameProvider
+Method-returnType:null
+Method-parameters:[Resources resources]
+FieldAccess:resources
+MethodInvocation:checkNotNull
+Method-name:getTrackName
+Method-returnType:String
+Method-parameters:[Format format]
+MethodInvocation:inferPrimaryTrackType
+MethodInvocation:joinWithSeparator
+MethodInvocation:buildRoleString
+MethodInvocation:buildResolutionString
+MethodInvocation:buildBitrateString
+MethodInvocation:joinWithSeparator
+MethodInvocation:buildLanguageOrLabelString
+MethodInvocation:buildAudioChannelString
+MethodInvocation:buildBitrateString
+MethodInvocation:buildLanguageOrLabelString
+MethodInvocation:length
+MethodInvocation:getString
+Method-name:buildResolutionString
+Method-returnType:String
+Method-parameters:[Format format]
+MethodInvocation:getString
+Method-name:buildBitrateString
+Method-returnType:String
+Method-parameters:[Format format]
+MethodInvocation:getString
+Method-name:buildAudioChannelString
+Method-returnType:String
+Method-parameters:[Format format]
+MethodInvocation:getString
+MethodInvocation:getString
+MethodInvocation:getString
+MethodInvocation:getString
+MethodInvocation:getString
+Method-name:buildLanguageOrLabelString
+Method-returnType:String
+Method-parameters:[Format format]
+MethodInvocation:joinWithSeparator
+MethodInvocation:buildLanguageString
+MethodInvocation:buildRoleString
+MethodInvocation:isEmpty
+MethodInvocation:buildLabelString
+Method-name:buildLanguageString
+Method-returnType:String
+Method-parameters:[Format format]
+MethodInvocation:isEmpty
+MethodInvocation:equals
+MethodInvocation:forLanguageTag
+MethodInvocation:getDisplayName
+Method-name:buildRoleString
+Method-returnType:String
+Method-parameters:[Format format]
+MethodInvocation:getString
+MethodInvocation:joinWithSeparator
+MethodInvocation:getString
+MethodInvocation:joinWithSeparator
+MethodInvocation:getString
+MethodInvocation:joinWithSeparator
+MethodInvocation:getString
+Method-name:joinWithSeparator
+Method-returnType:String
+Method-parameters:[String... items]
+MethodInvocation:length
+MethodInvocation:isEmpty
+MethodInvocation:getString
+Method-name:inferPrimaryTrackType
+Method-returnType:int
+Method-parameters:[Format format]
+MethodInvocation:getTrackType
+MethodInvocation:getVideoMediaMimeType
+MethodInvocation:getAudioMediaMimeType

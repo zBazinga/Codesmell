@@ -1,0 +1,93 @@
+Class:ProcedureWALFormatReader
+Field:LOG
+MethodInvocation:getLogger
+Field:localProcedureMap
+Field:procedureMap
+Field:loader
+Field:tracker
+Field:localTracker
+Field:maxProcId
+Method-name:ProcedureWALFormatReader
+Method-returnType:null
+Method-parameters:[final ProcedureStoreTracker tracker, ProcedureWALFormat.Loader loader]
+FieldAccess:tracker
+FieldAccess:loader
+Method-name:read
+Method-returnType:void
+Method-parameters:[ProcedureWALFile log]
+MethodInvocation:getTracker
+MethodInvocation:isPartial
+MethodInvocation:info
+MethodInvocation:getStream
+MethodInvocation:readEntry
+MethodInvocation:warn
+MethodInvocation:getType
+MethodInvocation:readInitEntry
+MethodInvocation:readInsertEntry
+MethodInvocation:readUpdateEntry
+MethodInvocation:readDeleteEntry
+MethodInvocation:info
+MethodInvocation:error
+MethodInvocation:markCorruptedWAL
+MethodInvocation:isEmpty
+MethodInvocation:setProcIds
+MethodInvocation:getMinModifiedProcId
+MethodInvocation:getMaxModifiedProcId
+MethodInvocation:isPartial
+MethodInvocation:setMinMaxModifiedProcIds
+MethodInvocation:getMinModifiedProcId
+MethodInvocation:getMaxModifiedProcId
+MethodInvocation:merge
+Method-name:finish
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setMaxProcId
+MethodInvocation:build
+MethodInvocation:getProcedures
+MethodInvocation:load
+MethodInvocation:getValidProcs
+MethodInvocation:handleCorrupted
+MethodInvocation:getCorruptedProcs
+Method-name:insertIfPartial
+Method-returnType:void
+Method-parameters:[ProcedureStoreTracker tracker, ProcedureProtos.Procedure proc]
+MethodInvocation:isPartial
+MethodInvocation:insert
+MethodInvocation:getProcId
+Method-name:loadProcedure
+Method-returnType:void
+Method-parameters:[ProcedureWALEntry entry, ProcedureProtos.Procedure proc]
+MethodInvocation:max
+MethodInvocation:getProcId
+MethodInvocation:isRequired
+MethodInvocation:getProcId
+MethodInvocation:trace
+MethodInvocation:getType
+MethodInvocation:getProcId
+MethodInvocation:add
+MethodInvocation:insertIfPartial
+MethodInvocation:insertIfPartial
+Method-name:readInitEntry
+Method-returnType:void
+Method-parameters:[ProcedureWALEntry entry]
+Method-name:readInsertEntry
+Method-returnType:void
+Method-parameters:[ProcedureWALEntry entry]
+Method-name:readUpdateEntry
+Method-returnType:void
+Method-parameters:[ProcedureWALEntry entry]
+Method-name:readDeleteEntry
+Method-returnType:void
+Method-parameters:[ProcedureWALEntry entry]
+Method-name:deleteEntry
+Method-returnType:void
+Method-parameters:[final long procId]
+Method-name:isDeleted
+Method-returnType:boolean
+Method-parameters:[long procId]
+MethodInvocation:isDeleted
+Method-name:isRequired
+Method-returnType:boolean
+Method-parameters:[long procId]
+MethodInvocation:isDeleted
+MethodInvocation:contains

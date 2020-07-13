@@ -1,0 +1,68 @@
+Class:TransportRequestOptions
+Field:timeout
+Field:compress
+Field:type
+Method-name:TransportRequestOptions
+Method-returnType:null
+Method-parameters:[TimeValue timeout, boolean compress, Type type]
+FieldAccess:timeout
+FieldAccess:compress
+FieldAccess:type
+Method-name:timeout
+Method-returnType:TimeValue
+Method-parameters:[]
+FieldAccess:timeout
+Method-name:compress
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:compress
+Method-name:type
+Method-returnType:Type
+Method-parameters:[]
+FieldAccess:type
+Field:EMPTY
+MethodInvocation:build
+Method-name:submitRequest
+Method-returnType:TransportFuture<T>
+Method-parameters:[DiscoveryNode node, String action, TransportRequest request, TransportResponseHandler<T> handler, TransportService transportService]
+MethodInvocation:getConnection
+MethodInvocation:sendRequest
+MethodInvocation:handleException
+Field:Type
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[TransportRequestOptions options]
+MethodInvocation:withType
+MethodInvocation:withCompress
+MethodInvocation:withTimeout
+MethodInvocation:type
+Class:Builder
+Field:timeout
+Field:compress
+Field:type
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:withTimeout
+Method-returnType:Builder
+Method-parameters:[long timeout]
+MethodInvocation:withTimeout
+MethodInvocation:timeValueMillis
+Method-name:withTimeout
+Method-returnType:Builder
+Method-parameters:[TimeValue timeout]
+FieldAccess:timeout
+Method-name:withCompress
+Method-returnType:Builder
+Method-parameters:[boolean compress]
+FieldAccess:compress
+Method-name:withType
+Method-returnType:Builder
+Method-parameters:[Type type]
+FieldAccess:type
+Method-name:build
+Method-returnType:TransportRequestOptions
+Method-parameters:[]

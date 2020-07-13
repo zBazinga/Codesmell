@@ -1,0 +1,216 @@
+Class:DefaultReflectionResolver
+Field:MSG_PREFEX_REFLECTION
+Field:checker
+Field:provider
+Field:processingEnv
+Field:trees
+Field:debug
+Method-name:DefaultReflectionResolver
+Method-returnType:null
+Method-parameters:[BaseTypeChecker checker, MethodValAnnotatedTypeFactory methodValProvider, boolean debug]
+FieldAccess:checker
+FieldAccess:provider
+FieldAccess:processingEnv
+MethodInvocation:getProcessingEnvironment
+FieldAccess:trees
+MethodInvocation:instance
+FieldAccess:debug
+Method-name:isReflectiveMethodInvocation
+Method-returnType:boolean
+Method-parameters:[MethodInvocationTree tree]
+MethodInvocation:getDeclAnnotation
+MethodInvocation:elementFromTree
+MethodInvocation:getDeclAnnotation
+MethodInvocation:elementFromTree
+Method-name:resolveReflectiveCall
+Method-returnType:ParameterizedExecutableType
+Method-parameters:[AnnotatedTypeFactory factory, MethodInvocationTree tree, ParameterizedExecutableType origResult]
+Method-name:resolveMethodCall
+Method-returnType:ParameterizedExecutableType
+Method-parameters:[AnnotatedTypeFactory factory, MethodInvocationTree tree, ParameterizedExecutableType origResult]
+MethodInvocation:debugReflection
+MethodInvocation:resolveReflectiveMethod
+MethodInvocation:isEmpty
+MethodInvocation:debugReflection
+MethodInvocation:checkMethodAgruments
+MethodInvocation:debugReflection
+MethodInvocation:methodFromUse
+MethodInvocation:lub
+MethodInvocation:getAnnotations
+MethodInvocation:getReturnType
+MethodInvocation:getReceiverType
+MethodInvocation:glb
+MethodInvocation:getTopAnnotations
+MethodInvocation:getQualifierHierarchy
+MethodInvocation:glb
+MethodInvocation:getAnnotations
+MethodInvocation:getReceiverType
+MethodInvocation:getParameterTypes
+MethodInvocation:glb
+MethodInvocation:getAnnotations
+MethodInvocation:clearAnnotations
+MethodInvocation:getReturnType
+MethodInvocation:addAnnotations
+MethodInvocation:getReturnType
+MethodInvocation:clearAnnotations
+MethodInvocation:get
+MethodInvocation:getParameterTypes
+MethodInvocation:addAnnotations
+MethodInvocation:get
+MethodInvocation:getParameterTypes
+MethodInvocation:get
+MethodInvocation:getParameterTypes
+MethodInvocation:clearAnnotations
+MethodInvocation:getComponentType
+MethodInvocation:addAnnotations
+MethodInvocation:getComponentType
+MethodInvocation:debugReflection
+Method-name:checkMethodAgruments
+Method-returnType:boolean
+Method-parameters:[MethodInvocationTree resolvedTree]
+MethodInvocation:elementFromUse
+MethodInvocation:checkAgruments
+MethodInvocation:getParameters
+MethodInvocation:getArguments
+Method-name:checkNewClassArguments
+Method-returnType:boolean
+Method-parameters:[NewClassTree resolvedTree]
+MethodInvocation:elementFromUse
+MethodInvocation:checkAgruments
+MethodInvocation:getParameters
+MethodInvocation:getArguments
+Method-name:checkAgruments
+Method-returnType:boolean
+Method-parameters:[List<? extends VariableElement> parameters, List<? extends ExpressionTree> arguments]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:typeOf
+MethodInvocation:asType
+MethodInvocation:getKind
+MethodInvocation:getKind
+MethodInvocation:getKind
+Method-name:resolveConstructorCall
+Method-returnType:ParameterizedExecutableType
+Method-parameters:[AnnotatedTypeFactory factory, MethodInvocationTree tree, ParameterizedExecutableType origResult]
+MethodInvocation:debugReflection
+MethodInvocation:resolveReflectiveConstructor
+MethodInvocation:isEmpty
+MethodInvocation:debugReflection
+MethodInvocation:checkNewClassArguments
+MethodInvocation:debugReflection
+MethodInvocation:constructorFromUse
+MethodInvocation:lub
+MethodInvocation:getAnnotations
+MethodInvocation:getReturnType
+MethodInvocation:getParameterTypes
+MethodInvocation:glb
+MethodInvocation:getAnnotations
+MethodInvocation:clearAnnotations
+MethodInvocation:getReturnType
+MethodInvocation:addAnnotations
+MethodInvocation:getReturnType
+MethodInvocation:get
+MethodInvocation:getParameterTypes
+MethodInvocation:clearAnnotations
+MethodInvocation:getComponentType
+MethodInvocation:addAnnotations
+MethodInvocation:getComponentType
+MethodInvocation:debugReflection
+Method-name:resolveReflectiveMethod
+Method-returnType:List<MethodInvocationTree>
+Method-parameters:[MethodInvocationTree tree, AnnotatedTypeFactory reflectionFactory]
+Method-name:getCorrectedArgs
+Method-returnType:com.sun.tools.javac.util.List<JCExpression>
+Method-parameters:[Symbol symbol, com.sun.tools.javac.util.List<JCExpression> args]
+MethodInvocation:getKind
+MethodInvocation:size
+MethodInvocation:getParameters
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:append
+MethodInvocation:get
+MethodInvocation:nil
+MethodInvocation:size
+MethodInvocation:getParameters
+MethodInvocation:append
+MethodInvocation:get
+Method-name:resolveReflectiveConstructor
+Method-returnType:List<JCNewClass>
+Method-parameters:[MethodInvocationTree tree, AnnotatedTypeFactory reflectionFactory]
+Method-name:getMethodVal
+Method-returnType:AnnotationMirror
+Method-parameters:[MethodInvocationTree tree]
+MethodInvocation:getAnnotationMirror
+MethodInvocation:getReceiverTree
+Method-name:isUnknownMethod
+Method-returnType:boolean
+Method-parameters:[MethodInvocationTree tree]
+MethodInvocation:getAnnotationMirror
+MethodInvocation:getReceiverTree
+Method-name:getMethodSymbolsfor
+Method-returnType:List<Symbol>
+Method-parameters:[String className, String methodName, int paramLength, Env<AttrContext> env]
+MethodInvocation:getContext
+MethodInvocation:instance
+MethodInvocation:instance
+MethodInvocation:getSymbol
+MethodInvocation:exists
+MethodInvocation:debugReflection
+MethodInvocation:emptyList
+MethodInvocation:getEnclosedElements
+MethodInvocation:getKind
+MethodInvocation:fromString
+MethodInvocation:size
+MethodInvocation:getParameters
+MethodInvocation:add
+MethodInvocation:isEmpty
+MethodInvocation:getSuperclass
+MethodInvocation:hasTag
+MethodInvocation:isErroneous
+MethodInvocation:isEmpty
+MethodInvocation:debugReflection
+Method-name:getConstructorSymbolsfor
+Method-returnType:List<Symbol>
+Method-parameters:[String className, int paramLength, Env<AttrContext> env]
+MethodInvocation:getContext
+MethodInvocation:instance
+MethodInvocation:instance
+MethodInvocation:getSymbol
+MethodInvocation:exists
+MethodInvocation:debugReflection
+MethodInvocation:emptyList
+MethodInvocation:constructorsIn
+MethodInvocation:getEnclosedElements
+MethodInvocation:getEnclosedElements
+MethodInvocation:getKind
+MethodInvocation:size
+MethodInvocation:getParameters
+MethodInvocation:add
+MethodInvocation:isEmpty
+MethodInvocation:debugReflection
+Method-name:getSymbol
+Method-returnType:Symbol
+Method-parameters:[String className, Env<AttrContext> env, Names names, Resolve resolve]
+MethodInvocation:getDeclaredMethod
+MethodInvocation:setAccessible
+MethodInvocation:invoke
+MethodInvocation:fromString
+Method-name:lub
+Method-returnType:Set<? extends AnnotationMirror>
+Method-parameters:[Set<? extends AnnotationMirror> set1, Set<? extends AnnotationMirror> set2, AnnotatedTypeFactory factory]
+MethodInvocation:isEmpty
+MethodInvocation:leastUpperBounds
+MethodInvocation:getQualifierHierarchy
+Method-name:glb
+Method-returnType:Set<? extends AnnotationMirror>
+Method-parameters:[Set<? extends AnnotationMirror> set1, Set<? extends AnnotationMirror> set2, AnnotatedTypeFactory factory]
+MethodInvocation:isEmpty
+MethodInvocation:greatestLowerBounds
+MethodInvocation:getQualifierHierarchy
+Method-name:debugReflection
+Method-returnType:void
+Method-parameters:[String msg]
+MethodInvocation:message

@@ -1,0 +1,181 @@
+Class:TTypeQualifierValue
+Field:STRUCT_DESC
+Field:I32_VALUE_FIELD_DESC
+Field:STRING_VALUE_FIELD_DESC
+Method-name:putToQualifiers
+Method-returnType:void
+Method-parameters:[String key, TTypeQualifiers tTypeQualifiers]
+MethodInvocation:getQualifiers
+MethodInvocation:setQualifiers
+MethodInvocation:put
+MethodInvocation:getQualifiers
+Field:_Fields
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:TTypeQualifierValue
+Method-returnType:null
+Method-parameters:[]
+Method-name:TTypeQualifierValue
+Method-returnType:null
+Method-parameters:[_Fields setField, Object value]
+Method-name:TTypeQualifierValue
+Method-returnType:null
+Method-parameters:[TTypeQualifierValue other]
+Method-name:deepCopy
+Method-returnType:TTypeQualifierValue
+Method-parameters:[]
+Method-name:i32Value
+Method-returnType:TTypeQualifierValue
+Method-parameters:[int value]
+MethodInvocation:setI32Value
+Method-name:stringValue
+Method-returnType:TTypeQualifierValue
+Method-parameters:[String value]
+MethodInvocation:setStringValue
+Method-name:checkType
+Method-returnType:void
+Method-parameters:[_Fields setField, Object value]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:standardSchemeReadValue
+Method-returnType:Object
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, org.apache.thrift.protocol.TField field]
+MethodInvocation:findByThriftId
+MethodInvocation:readI32
+MethodInvocation:skip
+MethodInvocation:readString
+MethodInvocation:skip
+MethodInvocation:skip
+Method-name:standardSchemeWriteValue
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:writeI32
+MethodInvocation:writeString
+Method-name:tupleSchemeReadValue
+Method-returnType:Object
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, short fieldID]
+MethodInvocation:findByThriftId
+MethodInvocation:readI32
+MethodInvocation:readString
+Method-name:tupleSchemeWriteValue
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:writeI32
+MethodInvocation:writeString
+Method-name:getFieldDesc
+Method-returnType:org.apache.thrift.protocol.TField
+Method-parameters:[_Fields setField]
+Method-name:getStructDesc
+Method-returnType:org.apache.thrift.protocol.TStruct
+Method-parameters:[]
+Method-name:enumForId
+Method-returnType:_Fields
+Method-parameters:[short id]
+MethodInvocation:findByThriftIdOrThrow
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:getI32Value
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setI32Value
+Method-returnType:void
+Method-parameters:[int value]
+Method-name:getStringValue
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setStringValue
+Method-returnType:void
+Method-parameters:[String value]
+Method-name:isSetI32Value
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSetStringValue
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[TTypeQualifierValue other]
+MethodInvocation:getSetField
+MethodInvocation:getSetField
+MethodInvocation:equals
+MethodInvocation:getFieldValue
+MethodInvocation:getFieldValue
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[TTypeQualifierValue other]
+MethodInvocation:compareTo
+MethodInvocation:getSetField
+MethodInvocation:getSetField
+MethodInvocation:compareTo
+MethodInvocation:getFieldValue
+MethodInvocation:getFieldValue
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getSetField
+MethodInvocation:add
+MethodInvocation:getThriftFieldId
+MethodInvocation:getFieldValue
+MethodInvocation:add
+MethodInvocation:getValue
+MethodInvocation:getFieldValue
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read

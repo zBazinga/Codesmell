@@ -1,0 +1,125 @@
+Class:TemplateRoleName
+Field:PARSER
+MethodInvocation:declareField
+MethodInvocation:constructorArg
+MethodInvocation:declareField
+MethodInvocation:optionalConstructorArg
+Field:template
+Field:format
+Method-name:TemplateRoleName
+Method-returnType:null
+Method-parameters:[BytesReference template, Format format]
+FieldAccess:template
+FieldAccess:format
+Method-name:TemplateRoleName
+Method-returnType:null
+Method-parameters:[StreamInput in]
+FieldAccess:template
+MethodInvocation:readBytesReference
+FieldAccess:format
+MethodInvocation:readEnum
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeBytesReference
+MethodInvocation:writeEnum
+Method-name:getTemplate
+Method-returnType:BytesReference
+Method-parameters:[]
+Method-name:getFormat
+Method-returnType:Format
+Method-parameters:[]
+Method-name:getRoleNames
+Method-returnType:List<String>
+Method-parameters:[ScriptService scriptService, ExpressionModel model]
+MethodInvocation:parseTemplate
+MethodInvocation:asMap
+MethodInvocation:singletonList
+MethodInvocation:convertJsonToList
+Method-name:validate
+Method-returnType:void
+Method-parameters:[ScriptService scriptService]
+MethodInvocation:parseTemplate
+MethodInvocation:emptyMap
+Method-name:convertJsonToList
+Method-returnType:List<String>
+Method-parameters:[String evaluation]
+MethodInvocation:createParser
+MethodInvocation:xContent
+MethodInvocation:currentToken
+MethodInvocation:nextToken
+MethodInvocation:singletonList
+MethodInvocation:text
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:list
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:toList
+Method-name:extractTemplate
+Method-returnType:BytesReference
+Method-parameters:[XContentParser parser, Void ignore]
+MethodInvocation:currentToken
+MethodInvocation:text
+MethodInvocation:contentBuilder
+MethodInvocation:copyCurrentStructure
+MethodInvocation:generator
+MethodInvocation:bytes
+Method-name:parse
+Method-returnType:TemplateRoleName
+Method-parameters:[XContentParser parser]
+MethodInvocation:parse
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:utf8ToString
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:endObject
+MethodInvocation:field
+MethodInvocation:field
+MethodInvocation:startObject
+MethodInvocation:getPreferredName
+MethodInvocation:utf8ToString
+MethodInvocation:getPreferredName
+MethodInvocation:formatName
+Method-name:isFragment
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+FieldAccess:template
+FieldAccess:format
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Field:TEMPLATE
+Field:FORMAT
+Field:Format
+Method-name:fromXContent
+Method-returnType:Format
+Method-parameters:[XContentParser parser]
+MethodInvocation:currentToken
+MethodInvocation:getTokenLocation
+MethodInvocation:text
+MethodInvocation:valueOf
+MethodInvocation:toUpperCase
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:of
+MethodInvocation:values
+MethodInvocation:joining
+MethodInvocation:getTokenLocation
+Method-name:formatName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toLowerCase
+MethodInvocation:name

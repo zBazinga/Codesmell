@@ -1,0 +1,168 @@
+Class:CompositePartitionAwareObjectSinkAdapter
+Field:partitionedPropagators
+Field:hashed
+Field:fieldIndex
+Field:hashedSinkMap
+Method-name:CompositePartitionAwareObjectSinkAdapter
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:fill
+MethodInvocation:getInstance
+Method-name:isHashed
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:addObjectSink
+Method-returnType:ObjectSinkPropagator
+Method-parameters:[ObjectSink sink, int alphaNodeHashingThreshold]
+MethodInvocation:hashSink
+MethodInvocation:getParallelEvaluationSlot
+MethodInvocation:getPartitionId
+MethodInvocation:addObjectSink
+Method-name:hashSink
+Method-returnType:boolean
+Method-parameters:[ObjectSink sink]
+MethodInvocation:getHashableAccessor
+MethodInvocation:getIndex
+FieldAccess:fieldIndex
+FieldAccess:hashedSinkMap
+MethodInvocation:getIndex
+MethodInvocation:put
+FieldAccess:hashedSinkMap
+MethodInvocation:getField
+MethodInvocation:getConstraint
+MethodInvocation:getFieldExtractor
+FieldAccess:fieldIndex
+FieldAccess:hashedSinkMap
+Method-name:getHashableAccessor
+Method-returnType:InternalReadAccessor
+Method-parameters:[ObjectSink sink]
+MethodInvocation:getType
+MethodInvocation:getHashableAccessor
+Method-name:removeObjectSink
+Method-returnType:ObjectSinkPropagator
+Method-parameters:[ObjectSink sink]
+MethodInvocation:getParallelEvaluationSlot
+MethodInvocation:getPartitionId
+MethodInvocation:removeObjectSink
+Method-name:changeSinkPartition
+Method-returnType:void
+Method-parameters:[ObjectSink sink, RuleBasePartitionId oldPartition, RuleBasePartitionId newPartition, int alphaNodeHashingThreshold]
+MethodInvocation:getParallelEvaluationSlot
+MethodInvocation:removeObjectSink
+MethodInvocation:getParallelEvaluationSlot
+MethodInvocation:addObjectSink
+Method-name:propagateAssertObject
+Method-returnType:void
+Method-parameters:[InternalFactHandle factHandle, PropagationContext context, InternalWorkingMemory workingMemory]
+MethodInvocation:getAgenda
+MethodInvocation:get
+FieldAccess:hashedSinkMap
+MethodInvocation:getObject
+MethodInvocation:addPropagation
+MethodInvocation:getPartitionedAgenda
+MethodInvocation:getParallelEvaluationSlot
+MethodInvocation:getPartitionId
+MethodInvocation:isEmpty
+MethodInvocation:addPropagation
+MethodInvocation:getPartitionedAgenda
+Class:Insert
+Field:propagator
+Field:factHandle
+Field:context
+Method-name:Insert
+Method-returnType:null
+Method-parameters:[ObjectSinkPropagator propagator, InternalFactHandle factHandle, PropagationContext context]
+FieldAccess:propagator
+FieldAccess:factHandle
+FieldAccess:context
+Method-name:execute
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm]
+MethodInvocation:propagateAssertObject
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getObject
+Class:HashedInsert
+Field:sink
+Field:factHandle
+Field:context
+Method-name:HashedInsert
+Method-returnType:null
+Method-parameters:[AlphaNode sink, InternalFactHandle factHandle, PropagationContext context]
+FieldAccess:sink
+FieldAccess:factHandle
+FieldAccess:context
+Method-name:execute
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm]
+MethodInvocation:propagateAssertObject
+MethodInvocation:getObjectSinkPropagator
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getObject
+Method-name:getMatchingNode
+Method-returnType:BaseNode
+Method-parameters:[BaseNode candidate]
+MethodInvocation:orElse
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:map
+MethodInvocation:of
+MethodInvocation:getMatchingNode
+Method-name:getSinks
+Method-returnType:ObjectSink[]
+Method-parameters:[]
+MethodInvocation:toArray
+MethodInvocation:flatMap
+MethodInvocation:of
+MethodInvocation:of
+MethodInvocation:getSinks
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:sum
+MethodInvocation:mapToInt
+MethodInvocation:of
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getPartitionedPropagators
+Method-returnType:ObjectSinkPropagator[]
+Method-parameters:[]
+Method-name:propagateModifyObject
+Method-returnType:void
+Method-parameters:[InternalFactHandle factHandle, ModifyPreviousTuples modifyPreviousTuples, PropagationContext context, InternalWorkingMemory workingMemory]
+Method-name:byPassModifyToBetaNode
+Method-returnType:void
+Method-parameters:[InternalFactHandle factHandle, ModifyPreviousTuples modifyPreviousTuples, PropagationContext context, InternalWorkingMemory workingMemory]
+Method-name:doLinkRiaNode
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm]
+Method-name:doUnlinkRiaNode
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm]
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeBoolean
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readBoolean
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:readObject
+Method-name:asNonPartitionedSinkPropagator
+Method-returnType:ObjectSinkPropagator
+Method-parameters:[int alphaNodeHashingThreshold]
+MethodInvocation:getSinks
+MethodInvocation:addObjectSink
+Method-name:getUsedPartitionsCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size

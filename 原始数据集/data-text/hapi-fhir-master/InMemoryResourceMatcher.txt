@@ -1,0 +1,139 @@
+Class:InMemoryResourceMatcher
+Field:myMatchUrlService
+Field:mySearchParamRegistry
+Field:myModelConfig
+Field:myFhirContext
+Method-name:match
+Method-returnType:InMemoryMatchResult
+Method-parameters:[String theCriteria, IBaseResource theResource, ResourceIndexedSearchParams theSearchParams]
+MethodInvocation:parseUrlResourceType
+MethodInvocation:getResourceDefinition
+MethodInvocation:translateMatchUrl
+MethodInvocation:unsupportedFromReason
+MethodInvocation:clean
+MethodInvocation:getLastUpdated
+MethodInvocation:unsupportedFromParameterAndReason
+MethodInvocation:containsKey
+MethodInvocation:unsupportedFromReason
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:matchIdsWithAndOr
+MethodInvocation:matched
+MethodInvocation:successfulMatch
+Method-name:matchIdsWithAndOr
+Method-returnType:InMemoryMatchResult
+Method-parameters:[String theParamName, List<List<IQueryParameterType>> theAndOrParams, RuntimeResourceDefinition theResourceDefinition, IBaseResource theResource, ResourceIndexedSearchParams theSearchParams]
+MethodInvocation:isEmpty
+MethodInvocation:successfulMatch
+MethodInvocation:hasQualifiers
+MethodInvocation:findAny
+MethodInvocation:filter
+MethodInvocation:flatMap
+MethodInvocation:stream
+MethodInvocation:getQueryParameterQualifier
+MethodInvocation:isPresent
+MethodInvocation:get
+MethodInvocation:unsupportedFromParameterAndReason
+MethodInvocation:getChain
+MethodInvocation:unsupportedFromParameterAndReason
+MethodInvocation:getQueryParameterQualifier
+MethodInvocation:hasChain
+MethodInvocation:unsupportedFromParameterAndReason
+MethodInvocation:getName
+MethodInvocation:getActiveSearchParam
+MethodInvocation:checkUnsupportedPrefixes
+MethodInvocation:supported
+MethodInvocation:fromBoolean
+MethodInvocation:matchIdsAndOr
+MethodInvocation:unsupportedFromParameterAndReason
+MethodInvocation:fromBoolean
+MethodInvocation:matchSourcesAndOr
+MethodInvocation:matchResourceParam
+Method-name:matchSourcesAndOr
+Method-returnType:boolean
+Method-parameters:[List<List<IQueryParameterType>> theAndOrParams, IBaseResource theResource]
+MethodInvocation:allMatch
+MethodInvocation:stream
+MethodInvocation:matchSourcesOr
+Method-name:matchSourcesOr
+Method-returnType:boolean
+Method-parameters:[List<IQueryParameterType> theOrParams, IBaseResource theResource]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:matchSource
+Method-name:matchSource
+Method-returnType:boolean
+Method-parameters:[IQueryParameterType theSourceParam, IBaseResource theResource]
+MethodInvocation:getValueAsQueryToken
+MethodInvocation:getSource
+MethodInvocation:getMeta
+MethodInvocation:getSourceUri
+MethodInvocation:equals
+MethodInvocation:getSourceUri
+MethodInvocation:getSourceUri
+MethodInvocation:getRequestId
+MethodInvocation:equals
+MethodInvocation:getRequestId
+MethodInvocation:getRequestId
+Method-name:matchIdsAndOr
+Method-returnType:boolean
+Method-parameters:[List<List<IQueryParameterType>> theAndOrParams, IBaseResource theResource]
+MethodInvocation:allMatch
+MethodInvocation:stream
+MethodInvocation:matchIdsOr
+Method-name:matchIdsOr
+Method-returnType:boolean
+Method-parameters:[List<IQueryParameterType> theOrParams, IBaseResource theResource]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:matchId
+MethodInvocation:getValue
+MethodInvocation:getIdElement
+Method-name:matchId
+Method-returnType:boolean
+Method-parameters:[String theValue, IIdType theId]
+MethodInvocation:equals
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:getIdPart
+Method-name:matchResourceParam
+Method-returnType:InMemoryMatchResult
+Method-parameters:[ModelConfig theModelConfig, String theParamName, List<List<IQueryParameterType>> theAndOrParams, ResourceIndexedSearchParams theSearchParams, String theResourceName, RuntimeSearchParam theParamDef]
+MethodInvocation:getParamType
+MethodInvocation:successfulMatch
+MethodInvocation:fromBoolean
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:matchParams
+MethodInvocation:getUseOrdinalDatesForDayPrecisionSearches
+MethodInvocation:unsupportedFromParameterAndReason
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:unsupportedFromParameterAndReason
+Method-name:hasChain
+Method-returnType:boolean
+Method-parameters:[List<List<IQueryParameterType>> theAndOrParams]
+MethodInvocation:anyMatch
+MethodInvocation:flatMap
+MethodInvocation:stream
+MethodInvocation:getChain
+Method-name:hasQualifiers
+Method-returnType:boolean
+Method-parameters:[List<List<IQueryParameterType>> theAndOrParams]
+MethodInvocation:anyMatch
+MethodInvocation:flatMap
+MethodInvocation:stream
+MethodInvocation:getQueryParameterQualifier
+Method-name:checkUnsupportedPrefixes
+Method-returnType:InMemoryMatchResult
+Method-parameters:[String theParamName, RuntimeSearchParam theParamDef, List<List<IQueryParameterType>> theAndOrParams]
+MethodInvocation:getPrefix
+MethodInvocation:getParamType
+MethodInvocation:supportedPrefix
+MethodInvocation:unsupportedFromParameterAndReason
+MethodInvocation:format
+MethodInvocation:successfulMatch
+Method-name:supportedPrefix
+Method-returnType:boolean
+Method-parameters:[ParamPrefixEnum theParam, RestSearchParameterTypeEnum theParamType]

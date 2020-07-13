@@ -1,0 +1,226 @@
+Class:RemoteEndpoint
+Field:Address
+Field:Port
+Field:endpointReliabilityLayerParameters
+Field:exchangeInfoMap
+Field:overallRTO
+Field:RTOupdateTimestamp
+Field:currentRTO
+Field:meanOverallRTO
+Field:xRTO
+Field:xRTT
+Field:xRTTVAR
+Field:SRTT
+Field:RTTVAR
+Field:mdev
+Field:mdev_max
+Field:delta
+Field:B_value
+Field:F_value
+Field:B_max_value
+Field:D_value
+Field:RTT_HISTORY_SIZE
+Field:RTT_max
+Field:RTT_sample
+Field:RTT_previous
+Field:RTO_min
+Field:currentArrayElement
+Field:nonConfirmableCounter
+Field:usesBlindEstimator
+Field:isBlindStrong
+Field:isBlindWeak
+Field:processingNON
+Field:RTOARRAYSIZE
+Field:STRONGRTOTYPE
+Field:WEAKRTOTYPE
+Field:NOESTIMATOR
+Field:confirmableQueue
+Field:nonConfirmableQueue
+Method-name:RemoteEndpoint
+Method-returnType:null
+Method-parameters:[int remotePort, InetAddress remoteAddress, ReliabilityLayerParameters reliabilityLayerParameters]
+FieldAccess:endpointReliabilityLayerParameters
+MethodInvocation:getAckTimeout
+MethodInvocation:setEstimatorValues
+MethodInvocation:setRTOtimestamp
+MethodInvocation:currentTimeMillis
+Method-name:getRemotePort
+Method-returnType:int
+Method-parameters:[]
+Method-name:getRemoteAddress
+Method-returnType:InetAddress
+Method-parameters:[]
+Method-name:increaseNonConfirmableCounter
+Method-returnType:void
+Method-parameters:[]
+Method-name:getNonConfirmableCounter
+Method-returnType:int
+Method-parameters:[]
+Method-name:resetNonConfirmableCounter
+Method-returnType:void
+Method-parameters:[]
+Method-name:getRTOtimestamp
+Method-returnType:long
+Method-parameters:[int rtoType]
+Method-name:setRTOtimestamp
+Method-returnType:void
+Method-parameters:[long timestamp, int rtoType]
+Method-name:getxRTO
+Method-returnType:long
+Method-parameters:[int rtoType]
+Method-name:getxRTT
+Method-returnType:long
+Method-parameters:[int rttType]
+Method-name:getxRTTVAR
+Method-returnType:long
+Method-parameters:[int rttvarType]
+Method-name:useBlindEstimator
+Method-returnType:void
+Method-parameters:[]
+Method-name:isBlindWeak
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setBlindWeak
+Method-returnType:void
+Method-parameters:[boolean state]
+Method-name:isBlindStrong
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setBlindStrong
+Method-returnType:void
+Method-parameters:[boolean state]
+Method-name:setEstimatorValues
+Method-returnType:void
+Method-parameters:[long rto, long rtt, long rttvar, int estimatorType]
+Method-name:getConfirmableQueue
+Method-returnType:Queue<Exchange>
+Method-parameters:[]
+Method-name:getNonConfirmableQueue
+Method-returnType:Queue<Exchange>
+Method-parameters:[]
+Method-name:getReliabilityLayerParameters
+Method-returnType:ReliabilityLayerParameters
+Method-parameters:[]
+Method-name:pollConfirmableExchange
+Method-returnType:Exchange
+Method-parameters:[]
+MethodInvocation:poll
+Method-name:calculateMeanOverallRTO
+Method-returnType:void
+Method-parameters:[]
+Method-name:setCurrentRTO
+Method-returnType:void
+Method-parameters:[long currentRTO]
+FieldAccess:currentRTO
+Method-name:getCurrentRTO
+Method-returnType:long
+Method-parameters:[]
+Method-name:matchCurrentRTO
+Method-returnType:void
+Method-parameters:[]
+Method-name:setProcessingNON
+Method-returnType:void
+Method-parameters:[boolean value]
+Method-name:getProcessingNON
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getRTO
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:size
+Method-name:boostRTOvalue
+Method-returnType:void
+Method-parameters:[]
+Method-name:reduceRTOvalue
+Method-returnType:void
+Method-parameters:[]
+Method-name:updateRTO
+Method-returnType:void
+Method-parameters:[long newRTO]
+MethodInvocation:calculateMeanOverallRTO
+MethodInvocation:setCurrentRTO
+Method-name:setEstimatorState
+Method-returnType:void
+Method-parameters:[Exchange exchange]
+MethodInvocation:get
+MethodInvocation:getFailedTransmissionCount
+MethodInvocation:getFailedTransmissionCount
+MethodInvocation:setTypeWeakEstimator
+MethodInvocation:get
+MethodInvocation:setTypeNoEstimator
+MethodInvocation:get
+Method-name:registerExchange
+Method-returnType:void
+Method-parameters:[Exchange exchange, double vbf]
+MethodInvocation:currentTimeMillis
+MethodInvocation:put
+Method-name:getExchangeTimestamp
+Method-returnType:long
+Method-parameters:[Exchange exchange]
+MethodInvocation:isEmpty
+MethodInvocation:get
+MethodInvocation:getTimestamp
+MethodInvocation:get
+Method-name:getExchangeVBF
+Method-returnType:double
+Method-parameters:[Exchange exchange]
+MethodInvocation:isEmpty
+MethodInvocation:get
+MethodInvocation:getVBF
+MethodInvocation:get
+Method-name:getExchangeEstimatorState
+Method-returnType:int
+Method-parameters:[Exchange exchange]
+MethodInvocation:isEmpty
+MethodInvocation:get
+MethodInvocation:getEstimatorType
+MethodInvocation:get
+Method-name:removeExchangeInfo
+Method-returnType:boolean
+Method-parameters:[Exchange exchange]
+MethodInvocation:remove
+Method-name:checkForDeletedExchanges
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:remove
+Method-name:getNumberOfOngoingExchanges
+Method-returnType:int
+Method-parameters:[Exchange exchange]
+MethodInvocation:size
+Method-name:printLinuxStats
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:println
+Method-name:printPeakhopperStats
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:println
+Method-name:getMaxRtt
+Method-returnType:long
+Method-parameters:[PeakhopperRto peakhopperRto]
+Class:ExchangeInfo
+Field:timestamp
+Field:vbf
+Field:estimatorType
+Method-name:ExchangeInfo
+Method-returnType:null
+Method-parameters:[long timestamp, double vbf]
+FieldAccess:timestamp
+FieldAccess:vbf
+Method-name:setTypeWeakEstimator
+Method-returnType:void
+Method-parameters:[]
+Method-name:setTypeNoEstimator
+Method-returnType:void
+Method-parameters:[]
+Method-name:getEstimatorType
+Method-returnType:int
+Method-parameters:[]
+Method-name:getTimestamp
+Method-returnType:long
+Method-parameters:[]
+Method-name:getVBF
+Method-returnType:double
+Method-parameters:[]

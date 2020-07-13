@@ -1,0 +1,49 @@
+Class:HiveSortLimit
+Field:mapOfInputRefToRexCall
+Field:ruleCreated
+Method-name:HiveSortLimit
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode child, RelCollation collation, RexNode offset, RexNode fetch]
+MethodInvocation:getSortTraitSet
+Method-name:create
+Method-returnType:HiveSortLimit
+Method-parameters:[RelNode input, RelCollation collation, RexNode offset, RexNode fetch]
+MethodInvocation:getCluster
+MethodInvocation:canonize
+MethodInvocation:getSortTraitSet
+MethodInvocation:getTraitSet
+Method-name:copy
+Method-returnType:HiveSortLimit
+Method-parameters:[RelTraitSet traitSet, RelNode newInput, RelCollation newCollation, RexNode offset, RexNode fetch]
+MethodInvocation:canonize
+MethodInvocation:getCluster
+MethodInvocation:setRuleCreated
+Method-name:getFetchExpr
+Method-returnType:RexNode
+Method-parameters:[]
+Method-name:getOffsetExpr
+Method-returnType:RexNode
+Method-parameters:[]
+Method-name:setInputRefToCallMap
+Method-returnType:void
+Method-parameters:[ImmutableMap<Integer,RexNode> refToCall]
+FieldAccess:mapOfInputRefToRexCall
+Method-name:getInputRefToCallMap
+Method-returnType:Map<Integer,RexNode>
+Method-parameters:[]
+FieldAccess:mapOfInputRefToRexCall
+Method-name:implement
+Method-returnType:void
+Method-parameters:[Implementor implementor]
+Method-name:isRuleCreated
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setRuleCreated
+Method-returnType:void
+Method-parameters:[boolean ruleCreated]
+FieldAccess:ruleCreated
+Method-name:accept
+Method-returnType:RelNode
+Method-parameters:[RelShuttle shuttle]
+MethodInvocation:visit
+MethodInvocation:visit

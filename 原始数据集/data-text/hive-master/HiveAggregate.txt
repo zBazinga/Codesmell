@@ -1,0 +1,61 @@
+Class:HiveAggregate
+Field:aggregateColumnsOrder
+Method-name:HiveAggregate
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode child, ImmutableBitSet groupSet, List<ImmutableBitSet> groupSets, List<AggregateCall> aggCalls]
+MethodInvocation:getDefaultTraitSet
+Method-name:copy
+Method-returnType:Aggregate
+Method-parameters:[RelTraitSet traitSet, RelNode input, ImmutableBitSet groupSet, List<ImmutableBitSet> groupSets, List<AggregateCall> aggCalls]
+MethodInvocation:getCluster
+Method-name:implement
+Method-returnType:void
+Method-parameters:[Implementor implementor]
+Method-name:estimateRowCount
+Method-returnType:double
+Method-parameters:[RelMetadataQuery mq]
+MethodInvocation:getDistinctRowCount
+MethodInvocation:makeLiteral
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+Method-name:isBucketedInput
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getMetadataQuery
+MethodInvocation:getCluster
+MethodInvocation:getInput
+MethodInvocation:containsAll
+MethodInvocation:getKeys
+MethodInvocation:distribution
+MethodInvocation:asList
+Method-name:deriveRowType
+Method-returnType:RelDataType
+Method-parameters:[]
+MethodInvocation:deriveRowType
+MethodInvocation:getTypeFactory
+MethodInvocation:getCluster
+MethodInvocation:getRowType
+MethodInvocation:getInput
+Method-name:deriveRowType
+Method-returnType:RelDataType
+Method-parameters:[RelDataTypeFactory typeFactory, final RelDataType inputRowType, boolean indicator, ImmutableBitSet groupSet, final List<AggregateCall> aggCalls]
+Method-name:setAggregateColumnsOrder
+Method-returnType:void
+Method-parameters:[LinkedHashSet<Integer> aggregateColumnsOrder]
+FieldAccess:aggregateColumnsOrder
+Method-name:getAggregateColumnsOrder
+Method-returnType:LinkedHashSet<Integer>
+Method-parameters:[]
+FieldAccess:aggregateColumnsOrder
+Method-name:accept
+Method-returnType:RelNode
+Method-parameters:[RelShuttle shuttle]
+MethodInvocation:visit
+MethodInvocation:visit
+Method-name:memory
+Method-returnType:Double
+Method-parameters:[RelMetadataQuery mq, HiveRelMdMemory hiveRelMdMemory]
+MethodInvocation:getAverageRowSize
+MethodInvocation:getInput
+MethodInvocation:getRowCount
+MethodInvocation:getInput

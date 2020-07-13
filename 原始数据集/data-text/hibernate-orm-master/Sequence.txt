@@ -1,0 +1,53 @@
+Class:Sequence
+Method-name:validateSequence
+Method-returnType:void
+Method-parameters:[SequenceInformation sequenceInformation, AbstractSchemaValidator abstractSchemaValidator]
+MethodInvocation:format
+MethodInvocation:getName
+MethodInvocation:getIncrementSize
+MethodInvocation:getIncrementSize
+MethodInvocation:getIncrementSize
+MethodInvocation:format
+MethodInvocation:getName
+MethodInvocation:getIncrementSize
+MethodInvocation:getIncrementSize
+Class:Name
+Method-name:Name
+Method-returnType:null
+Method-parameters:[Identifier catalogIdentifier, Identifier schemaIdentifier, Identifier nameIdentifier]
+Field:name
+Field:exportIdentifier
+Field:initialValue
+Field:incrementSize
+Method-name:Sequence
+Method-returnType:null
+Method-parameters:[Identifier catalogName, Identifier schemaName, Identifier sequenceName]
+FieldAccess:name
+FieldAccess:exportIdentifier
+MethodInvocation:render
+Method-name:Sequence
+Method-returnType:null
+Method-parameters:[Identifier catalogName, Identifier schemaName, Identifier sequenceName, int initialValue, int incrementSize]
+FieldAccess:initialValue
+FieldAccess:incrementSize
+Method-name:getName
+Method-returnType:QualifiedSequenceName
+Method-parameters:[]
+Method-name:getExportIdentifier
+Method-returnType:String
+Method-parameters:[]
+Method-name:getInitialValue
+Method-returnType:int
+Method-parameters:[]
+Method-name:getIncrementSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:validate
+Method-returnType:void
+Method-parameters:[int initialValue, int incrementSize]
+FieldAccess:initialValue
+MethodInvocation:format
+FieldAccess:initialValue
+FieldAccess:incrementSize
+MethodInvocation:format
+FieldAccess:incrementSize

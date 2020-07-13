@@ -1,0 +1,288 @@
+Class:SqlOperator
+Field:NL
+MethodInvocation:getProperty
+Field:MDX_PRECEDENCE
+Field:name
+Field:kind
+Field:leftPrec
+Field:rightPrec
+Field:returnTypeInference
+Field:operandTypeInference
+Field:operandTypeChecker
+Method-name:SqlOperator
+Method-returnType:null
+Method-parameters:[String name, SqlKind kind, int leftPrecedence, int rightPrecedence, SqlReturnTypeInference returnTypeInference, SqlOperandTypeInference operandTypeInference, SqlOperandTypeChecker operandTypeChecker]
+Method-name:SqlOperator
+Method-returnType:null
+Method-parameters:[String name, SqlKind kind, int prec, boolean leftAssoc, SqlReturnTypeInference returnTypeInference, SqlOperandTypeInference operandTypeInference, SqlOperandTypeChecker operandTypeChecker]
+MethodInvocation:leftPrec
+MethodInvocation:rightPrec
+Method-name:leftPrec
+Method-returnType:int
+Method-parameters:[int prec, boolean leftAssoc]
+Method-name:rightPrec
+Method-returnType:int
+Method-parameters:[int prec, boolean leftAssoc]
+Method-name:getOperandTypeChecker
+Method-returnType:SqlOperandTypeChecker
+Method-parameters:[]
+Method-name:getOperandCountRange
+Method-returnType:SqlOperandCountRange
+Method-parameters:[]
+MethodInvocation:getOperandCountRange
+MethodInvocation:needToImplement
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getNameAsId
+Method-returnType:SqlIdentifier
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:getKind
+Method-returnType:SqlKind
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getLeftPrec
+Method-returnType:int
+Method-parameters:[]
+Method-name:getRightPrec
+Method-returnType:int
+Method-parameters:[]
+Method-name:getSyntax
+Method-returnType:SqlSyntax
+Method-parameters:[]
+Method-name:createCall
+Method-returnType:SqlCall
+Method-parameters:[SqlLiteral functionQualifier, SqlParserPos pos, SqlNode... operands]
+MethodInvocation:plusAll
+MethodInvocation:asList
+Method-name:createCall
+Method-returnType:SqlCall
+Method-parameters:[SqlParserPos pos, SqlNode... operands]
+MethodInvocation:createCall
+Method-name:createCall
+Method-returnType:SqlCall
+Method-parameters:[SqlNodeList nodeList]
+MethodInvocation:createCall
+MethodInvocation:getParserPosition
+MethodInvocation:toArray
+Method-name:createCall
+Method-returnType:SqlCall
+Method-parameters:[SqlParserPos pos, List<? extends SqlNode> operandList]
+MethodInvocation:createCall
+MethodInvocation:toArray
+Method-name:rewriteCall
+Method-returnType:SqlNode
+Method-parameters:[SqlValidator validator, SqlCall call]
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlCall call, int leftPrec, int rightPrec]
+MethodInvocation:unparse
+MethodInvocation:getSyntax
+Method-name:unparseListClause
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlNode clause]
+MethodInvocation:of
+MethodInvocation:list
+Method-name:unparseListClause
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlNode clause, SqlKind sepKind]
+MethodInvocation:of
+MethodInvocation:list
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:isName
+Method-returnType:boolean
+Method-parameters:[String testName, boolean caseSensitive]
+MethodInvocation:equals
+MethodInvocation:equalsIgnoreCase
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:validateCall
+Method-returnType:void
+Method-parameters:[SqlCall call, SqlValidator validator, SqlValidatorScope scope, SqlValidatorScope operandScope]
+Method-name:validateOperands
+Method-returnType:RelDataType
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope, SqlCall call]
+MethodInvocation:preValidateCall
+MethodInvocation:checkOperandCount
+MethodInvocation:checkOperandTypes
+MethodInvocation:inferReturnType
+MethodInvocation:setValidatedNodeType
+Method-name:preValidateCall
+Method-returnType:void
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope, SqlCall call]
+Method-name:inferReturnType
+Method-returnType:RelDataType
+Method-parameters:[SqlOperatorBinding opBinding]
+MethodInvocation:inferReturnType
+MethodInvocation:getOperator
+MethodInvocation:collectOperandTypes
+MethodInvocation:needToImplement
+Method-name:deriveType
+Method-returnType:RelDataType
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope, SqlCall call]
+Method-name:constructArgNameList
+Method-returnType:List<String>
+Method-parameters:[SqlCall call]
+MethodInvocation:builder
+MethodInvocation:getOperandList
+MethodInvocation:getKind
+MethodInvocation:getOperandList
+MethodInvocation:add
+MethodInvocation:getSimple
+MethodInvocation:get
+MethodInvocation:build
+MethodInvocation:isEmpty
+Method-name:constructOperandList
+Method-returnType:List<SqlNode>
+Method-parameters:[SqlValidator validator, SqlCall call, List<String> argNames]
+MethodInvocation:getOperandList
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:getOperandList
+MethodInvocation:newValidationError
+MethodInvocation:someButNotAllArgumentsAreNamed
+MethodInvocation:firstDuplicate
+MethodInvocation:newValidationError
+MethodInvocation:duplicateArgumentName
+MethodInvocation:get
+MethodInvocation:builder
+MethodInvocation:getOperandList
+MethodInvocation:getKind
+MethodInvocation:getOperandList
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:build
+Method-name:constructArgTypeList
+Method-returnType:List<RelDataType>
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope, SqlCall call, List<SqlNode> args, boolean convertRowArgToColumnList]
+MethodInvocation:getOperandScope
+MethodInvocation:builder
+MethodInvocation:getKind
+MethodInvocation:getTypeFactory
+MethodInvocation:createSqlType
+MethodInvocation:setValidatedNodeType
+MethodInvocation:deriveType
+MethodInvocation:add
+MethodInvocation:build
+Method-name:needsSpace
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:adjustType
+Method-returnType:RelDataType
+Method-parameters:[SqlValidator validator, final SqlCall call, RelDataType type]
+Method-name:inferReturnType
+Method-returnType:RelDataType
+Method-parameters:[RelDataTypeFactory typeFactory, List<RelDataType> operandTypes]
+MethodInvocation:inferReturnType
+Method-name:checkOperandTypes
+Method-returnType:boolean
+Method-parameters:[SqlCallBinding callBinding, boolean throwOnFailure]
+MethodInvocation:needToImplement
+MethodInvocation:zip
+MethodInvocation:operands
+MethodInvocation:getKind
+MethodInvocation:isOptional
+MethodInvocation:newValidationError
+MethodInvocation:defaultForOptionalParameter
+MethodInvocation:checkOperandTypes
+Method-name:checkOperandCount
+Method-returnType:void
+Method-parameters:[SqlValidator validator, SqlOperandTypeChecker argType, SqlCall call]
+MethodInvocation:getOperandCountRange
+MethodInvocation:getOperator
+MethodInvocation:isValidCount
+MethodInvocation:operandCount
+MethodInvocation:getMin
+MethodInvocation:getMax
+MethodInvocation:newValidationError
+MethodInvocation:invalidArgCount
+MethodInvocation:getName
+MethodInvocation:getOperator
+MethodInvocation:getMin
+MethodInvocation:newValidationError
+MethodInvocation:wrongNumOfArguments
+Method-name:validRexOperands
+Method-returnType:boolean
+Method-parameters:[int count, Litmus litmus]
+Method-name:getSignatureTemplate
+Method-returnType:String
+Method-parameters:[final int operandsCount]
+Method-name:getAllowedSignatures
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getAllowedSignatures
+Method-name:getAllowedSignatures
+Method-returnType:String
+Method-parameters:[String opNameToUse]
+Method-name:getOperandTypeInference
+Method-returnType:SqlOperandTypeInference
+Method-parameters:[]
+Method-name:isAggregator
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:requiresOver
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:requiresOrder
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:allowsFraming
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isGroup
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isGroupAuxiliary
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:acceptCall
+Method-returnType:R
+Method-parameters:[SqlVisitor<R> visitor, SqlCall call]
+MethodInvocation:getOperandList
+MethodInvocation:accept
+Method-name:acceptCall
+Method-returnType:void
+Method-parameters:[SqlVisitor<R> visitor, SqlCall call, boolean onlyExpressions, SqlBasicVisitor.ArgHandler<R> argHandler]
+MethodInvocation:getOperandList
+MethodInvocation:size
+MethodInvocation:visitChild
+MethodInvocation:get
+Method-name:getReturnTypeInference
+Method-returnType:SqlReturnTypeInference
+Method-parameters:[]
+Method-name:getMonotonicity
+Method-returnType:SqlMonotonicity
+Method-parameters:[SqlCall call, SqlValidatorScope scope]
+MethodInvocation:getMonotonicity
+MethodInvocation:getValidator
+Method-name:getMonotonicity
+Method-returnType:SqlMonotonicity
+Method-parameters:[SqlOperatorBinding call]
+Method-name:isDeterministic
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isDynamicFunction
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:requiresDecimalExpansion
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:argumentMustBeScalar
+Method-returnType:boolean
+Method-parameters:[int ordinal]
+Method-name:getColumnMappings
+Method-returnType:Set<RelColumnMapping>
+Method-parameters:[SqlToRelConverter sqlToRelConverter]
+MethodInvocation:getReturnTypeInference
+MethodInvocation:getColumnMappings

@@ -1,0 +1,400 @@
+Class:Errors
+Field:root
+Field:parent
+Field:source
+Field:errors
+Method-name:Errors
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:root
+FieldAccess:parent
+FieldAccess:source
+Method-name:Errors
+Method-returnType:null
+Method-parameters:[Object source]
+FieldAccess:root
+FieldAccess:parent
+FieldAccess:source
+Method-name:Errors
+Method-returnType:null
+Method-parameters:[Errors parent, Object source]
+FieldAccess:root
+FieldAccess:parent
+FieldAccess:source
+Method-name:withSource
+Method-returnType:Errors
+Method-parameters:[Object source]
+Method-name:missingImplementation
+Method-returnType:Errors
+Method-parameters:[Key key]
+MethodInvocation:addMessage
+Method-name:converterReturnedNull
+Method-returnType:Errors
+Method-parameters:[String stringValue, Object source, TypeLiteral<?> type, MatcherAndConverter matchingConverter]
+MethodInvocation:addMessage
+MethodInvocation:convert
+Method-name:conversionTypeError
+Method-returnType:Errors
+Method-parameters:[String stringValue, Object source, TypeLiteral<?> type, MatcherAndConverter matchingConverter, Object converted]
+MethodInvocation:addMessage
+MethodInvocation:convert
+Method-name:conversionError
+Method-returnType:Errors
+Method-parameters:[String stringValue, Object source, TypeLiteral<?> type, MatcherAndConverter matchingConverter, RuntimeException cause]
+MethodInvocation:errorInUserCode
+MethodInvocation:convert
+Method-name:ambiguousTypeConversion
+Method-returnType:Errors
+Method-parameters:[String stringValue, Object source, TypeLiteral<?> type, MatcherAndConverter a, MatcherAndConverter b]
+MethodInvocation:addMessage
+MethodInvocation:convert
+Method-name:bindingToProvider
+Method-returnType:Errors
+Method-parameters:[]
+MethodInvocation:addMessage
+Method-name:subtypeNotProvided
+Method-returnType:Errors
+Method-parameters:[Class<? extends Provider<?>> providerType, Class<?> type]
+MethodInvocation:addMessage
+Method-name:notASubtype
+Method-returnType:Errors
+Method-parameters:[Class<?> implementationType, Class<?> type]
+MethodInvocation:addMessage
+Method-name:recursiveImplementationType
+Method-returnType:Errors
+Method-parameters:[]
+MethodInvocation:addMessage
+Method-name:recursiveProviderType
+Method-returnType:Errors
+Method-parameters:[]
+MethodInvocation:addMessage
+Method-name:missingRuntimeRetention
+Method-returnType:Errors
+Method-parameters:[Object source]
+MethodInvocation:addMessage
+MethodInvocation:convert
+Method-name:missingScopeAnnotation
+Method-returnType:Errors
+Method-parameters:[]
+MethodInvocation:addMessage
+Method-name:optionalConstructor
+Method-returnType:Errors
+Method-parameters:[Constructor constructor]
+MethodInvocation:addMessage
+Method-name:cannotBindToGuiceType
+Method-returnType:Errors
+Method-parameters:[String simpleName]
+MethodInvocation:addMessage
+Method-name:scopeNotFound
+Method-returnType:Errors
+Method-parameters:[Class<? extends Annotation> scopeAnnotation]
+MethodInvocation:addMessage
+Method-name:scopeAnnotationOnAbstractType
+Method-returnType:Errors
+Method-parameters:[Class<? extends Annotation> scopeAnnotation, Class<?> type, Object source]
+MethodInvocation:addMessage
+MethodInvocation:convert
+Method-name:misplacedBindingAnnotation
+Method-returnType:Errors
+Method-parameters:[Member member, Annotation bindingAnnotation]
+MethodInvocation:addMessage
+Field:CONSTRUCTOR_RULES
+Method-name:missingConstructor
+Method-returnType:Errors
+Method-parameters:[Class<?> implementation]
+MethodInvocation:addMessage
+Method-name:tooManyConstructors
+Method-returnType:Errors
+Method-parameters:[Class<?> implementation]
+MethodInvocation:addMessage
+Method-name:duplicateScopes
+Method-returnType:Errors
+Method-parameters:[Scope existing, Class<? extends Annotation> annotationType, Scope scope]
+MethodInvocation:addMessage
+Method-name:voidProviderMethod
+Method-returnType:Errors
+Method-parameters:[]
+MethodInvocation:addMessage
+Method-name:missingConstantValues
+Method-returnType:Errors
+Method-parameters:[]
+MethodInvocation:addMessage
+Method-name:cannotInjectInnerClass
+Method-returnType:Errors
+Method-parameters:[Class<?> type]
+MethodInvocation:addMessage
+Method-name:duplicateBindingAnnotations
+Method-returnType:Errors
+Method-parameters:[Member member, Class<? extends Annotation> a, Class<? extends Annotation> b]
+MethodInvocation:addMessage
+Method-name:duplicateScopeAnnotations
+Method-returnType:Errors
+Method-parameters:[Class<? extends Annotation> a, Class<? extends Annotation> b]
+MethodInvocation:addMessage
+Method-name:recursiveBinding
+Method-returnType:Errors
+Method-parameters:[]
+MethodInvocation:addMessage
+Method-name:bindingAlreadySet
+Method-returnType:Errors
+Method-parameters:[Key<?> key, Object source]
+MethodInvocation:addMessage
+MethodInvocation:convert
+Method-name:childBindingAlreadySet
+Method-returnType:Errors
+Method-parameters:[Key<?> key]
+MethodInvocation:addMessage
+Method-name:errorInjectingMethod
+Method-returnType:Errors
+Method-parameters:[Throwable cause]
+MethodInvocation:errorInUserCode
+Method-name:errorNotifyingTypeListener
+Method-returnType:Errors
+Method-parameters:[TypeListenerBinding listener, TypeLiteral<?> type, Throwable cause]
+MethodInvocation:errorInUserCode
+MethodInvocation:getListener
+MethodInvocation:convert
+MethodInvocation:getSource
+Method-name:errorInjectingConstructor
+Method-returnType:Errors
+Method-parameters:[Throwable cause]
+MethodInvocation:errorInUserCode
+Method-name:errorInProvider
+Method-returnType:Errors
+Method-parameters:[RuntimeException runtimeException]
+MethodInvocation:errorInUserCode
+Method-name:errorInUserInjector
+Method-returnType:Errors
+Method-parameters:[MembersInjector<?> listener, TypeLiteral<?> type, RuntimeException cause]
+MethodInvocation:errorInUserCode
+Method-name:errorNotifyingInjectionListener
+Method-returnType:Errors
+Method-parameters:[InjectionListener<?> listener, TypeLiteral<?> type, RuntimeException cause]
+MethodInvocation:errorInUserCode
+Method-name:exposedButNotBound
+Method-returnType:void
+Method-parameters:[Key<?> key]
+MethodInvocation:addMessage
+Method-name:getMessagesFromThrowable
+Method-returnType:Collection<Message>
+Method-parameters:[Throwable throwable]
+MethodInvocation:getErrorMessages
+MethodInvocation:getErrorMessages
+MethodInvocation:getErrorMessages
+MethodInvocation:emptySet
+Method-name:errorInUserCode
+Method-returnType:Errors
+Method-parameters:[Throwable cause, String messageFormat, Object... arguments]
+MethodInvocation:getMessagesFromThrowable
+MethodInvocation:isEmpty
+MethodInvocation:merge
+MethodInvocation:addMessage
+Method-name:cannotInjectRawProvider
+Method-returnType:Errors
+Method-parameters:[]
+MethodInvocation:addMessage
+Method-name:cannotInjectRawMembersInjector
+Method-returnType:Errors
+Method-parameters:[]
+MethodInvocation:addMessage
+Method-name:cannotInjectTypeLiteralOf
+Method-returnType:Errors
+Method-parameters:[Type unsupportedType]
+MethodInvocation:addMessage
+Method-name:cannotInjectRawTypeLiteral
+Method-returnType:Errors
+Method-parameters:[]
+MethodInvocation:addMessage
+Method-name:cannotSatisfyCircularDependency
+Method-returnType:Errors
+Method-parameters:[Class<?> expectedType]
+MethodInvocation:addMessage
+Method-name:throwCreationExceptionIfErrorsExist
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:hasErrors
+MethodInvocation:getMessages
+Method-name:throwConfigurationExceptionIfErrorsExist
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:hasErrors
+MethodInvocation:getMessages
+Method-name:throwProvisionExceptionIfErrorsExist
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:hasErrors
+MethodInvocation:getMessages
+Method-name:merge
+Method-returnType:Errors
+Method-parameters:[Collection<Message> messages]
+MethodInvocation:addMessage
+MethodInvocation:merge
+Method-name:merge
+Method-returnType:Errors
+Method-parameters:[Errors moreErrors]
+MethodInvocation:merge
+Method-name:getSources
+Method-returnType:List<Object>
+Method-parameters:[]
+MethodInvocation:add
+Method-name:throwIfNewErrors
+Method-returnType:void
+Method-parameters:[int expectedSize]
+MethodInvocation:size
+MethodInvocation:toException
+Method-name:toException
+Method-returnType:ErrorsException
+Method-parameters:[]
+Method-name:hasErrors
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:addMessage
+Method-returnType:Errors
+Method-parameters:[String messageFormat, Object... arguments]
+MethodInvocation:addMessage
+Method-name:addMessage
+Method-returnType:Errors
+Method-parameters:[Throwable cause, String messageFormat, Object... arguments]
+MethodInvocation:format
+MethodInvocation:addMessage
+MethodInvocation:getSources
+Method-name:addMessage
+Method-returnType:Errors
+Method-parameters:[Message message]
+MethodInvocation:add
+Method-name:format
+Method-returnType:String
+Method-parameters:[String messageFormat, Object... arguments]
+MethodInvocation:convert
+MethodInvocation:format
+Method-name:getMessages
+Method-returnType:List<Message>
+Method-parameters:[]
+MethodInvocation:emptyList
+MethodInvocation:timSort
+Method-name:compare
+Method-returnType:int
+Method-parameters:[Message a, Message b]
+MethodInvocation:compareTo
+MethodInvocation:getSource
+MethodInvocation:getSource
+MethodInvocation:unmodifiableList
+Method-name:format
+Method-returnType:String
+Method-parameters:[String heading, Collection<Message> errorMessages]
+MethodInvocation:format
+MethodInvocation:format
+MethodInvocation:getOnlyCause
+MethodInvocation:format
+MethodInvocation:getMessage
+MethodInvocation:getSources
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:formatSource
+MethodInvocation:getCause
+MethodInvocation:printStackTrace
+MethodInvocation:format
+MethodInvocation:getBuffer
+MethodInvocation:format
+MethodInvocation:size
+MethodInvocation:format
+MethodInvocation:format
+MethodInvocation:size
+MethodInvocation:toString
+Method-name:checkForNull
+Method-returnType:T
+Method-parameters:[T value, Object source, Dependency<?> dependency]
+MethodInvocation:isNullable
+MethodInvocation:getParameterIndex
+MethodInvocation:addMessage
+MethodInvocation:getMember
+MethodInvocation:getInjectionPoint
+MethodInvocation:toException
+Method-name:getOnlyCause
+Method-returnType:Throwable
+Method-parameters:[Collection<Message> messages]
+MethodInvocation:getCause
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Class:Converter
+Field:type
+Method-name:Converter
+Method-returnType:null
+Method-parameters:[Class<T> type]
+FieldAccess:type
+Method-name:appliesTo
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:isAssignableFrom
+MethodInvocation:getClass
+Method-name:convert
+Method-returnType:String
+Method-parameters:[Object o]
+MethodInvocation:toString
+MethodInvocation:cast
+Method-name:toString
+Method-returnType:String
+Method-parameters:[T t]
+Field:converters
+MethodInvocation:asList
+Method-name:toString
+Method-returnType:String
+Method-parameters:[Class c]
+MethodInvocation:getName
+Method-name:toString
+Method-returnType:String
+Method-parameters:[Member member]
+MethodInvocation:toString
+Method-name:toString
+Method-returnType:String
+Method-parameters:[Key key]
+MethodInvocation:getAnnotationType
+MethodInvocation:getTypeLiteral
+MethodInvocation:getAnnotation
+MethodInvocation:getAnnotation
+MethodInvocation:getAnnotationType
+MethodInvocation:toString
+MethodInvocation:getTypeLiteral
+Method-name:convert
+Method-returnType:Object
+Method-parameters:[Object o]
+MethodInvocation:appliesTo
+MethodInvocation:convert
+Method-name:formatSource
+Method-returnType:void
+Method-parameters:[Formatter formatter, Object source]
+MethodInvocation:getInjectionPoint
+MethodInvocation:formatInjectionPoint
+MethodInvocation:formatSource
+MethodInvocation:getKey
+MethodInvocation:formatInjectionPoint
+MethodInvocation:format
+MethodInvocation:forType
+MethodInvocation:format
+MethodInvocation:forMember
+MethodInvocation:format
+MethodInvocation:format
+MethodInvocation:convert
+MethodInvocation:format
+Method-name:formatInjectionPoint
+Method-returnType:void
+Method-parameters:[Formatter formatter, Dependency<?> dependency, InjectionPoint injectionPoint]
+MethodInvocation:getMember
+MethodInvocation:memberType
+MethodInvocation:get
+MethodInvocation:getDependencies
+MethodInvocation:format
+MethodInvocation:convert
+MethodInvocation:getKey
+MethodInvocation:format
+MethodInvocation:forMember
+MethodInvocation:format
+MethodInvocation:convert
+MethodInvocation:getKey
+MethodInvocation:format
+MethodInvocation:getParameterIndex
+MethodInvocation:forMember
+MethodInvocation:formatSource
+MethodInvocation:getMember

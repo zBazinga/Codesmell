@@ -1,0 +1,39 @@
+Class:GlobalCheckpointSyncAction
+Field:ACTION_NAME
+Method-name:GlobalCheckpointSyncAction
+Method-returnType:null
+Method-parameters:[final Settings settings, final TransportService transportService, final ClusterService clusterService, final IndicesService indicesService, final ThreadPool threadPool, final ShardStateAction shardStateAction, final IndexNameExpressionResolver indexNameExpressionResolver]
+Method-name:updateGlobalCheckpointForShard
+Method-returnType:void
+Method-parameters:[final ShardId shardId]
+MethodInvocation:getThreadContext
+MethodInvocation:stashContext
+MethodInvocation:markAsSystemContext
+MethodInvocation:execute
+MethodInvocation:wrap
+MethodInvocation:unwrap
+MethodInvocation:info
+Method-name:newResponseInstance
+Method-returnType:ReplicationResponse
+Method-parameters:[]
+Method-name:sendReplicaRequest
+Method-returnType:void
+Method-parameters:[final ConcreteReplicaRequest<Request> replicaRequest, final DiscoveryNode node, final ActionListener<ReplicationOperation.ReplicaResponse> listener]
+Method-name:shardOperationOnPrimary
+Method-returnType:PrimaryResult<Request,ReplicationResponse>
+Method-parameters:[final Request request, final IndexShard indexShard]
+MethodInvocation:maybeSyncTranslog
+Method-name:shardOperationOnReplica
+Method-returnType:ReplicaResult
+Method-parameters:[final Request request, final IndexShard indexShard]
+MethodInvocation:maybeSyncTranslog
+Class:Request
+Method-name:Request
+Method-returnType:null
+Method-parameters:[]
+Method-name:Request
+Method-returnType:null
+Method-parameters:[final ShardId shardId]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

@@ -1,0 +1,64 @@
+Class:MotionEventHandler
+Field:identityManager
+Field:deviceManager
+Field:tripsConfig
+Method-name:MotionEventHandler
+Method-returnType:null
+Method-parameters:[IdentityManager identityManager, DeviceManager deviceManager, TripsConfig tripsConfig]
+FieldAccess:identityManager
+FieldAccess:deviceManager
+FieldAccess:tripsConfig
+Method-name:updateMotionState
+Method-returnType:Map<Event,Position>
+Method-parameters:[DeviceState deviceState]
+MethodInvocation:getMotionState
+MethodInvocation:getMotionPosition
+MethodInvocation:getMotionState
+MethodInvocation:getMotionPosition
+MethodInvocation:currentTimeMillis
+MethodInvocation:getTime
+MethodInvocation:getFixTime
+MethodInvocation:getMinimalTripDuration
+MethodInvocation:getMinimalParkingDuration
+MethodInvocation:newEvent
+Method-name:updateMotionState
+Method-returnType:Map<Event,Position>
+Method-parameters:[DeviceState deviceState, Position position]
+MethodInvocation:updateMotionState
+MethodInvocation:getBoolean
+Method-name:updateMotionState
+Method-returnType:Map<Event,Position>
+Method-parameters:[DeviceState deviceState, Position position, boolean newMotion]
+MethodInvocation:getMotionState
+MethodInvocation:getTime
+MethodInvocation:getFixTime
+MethodInvocation:getMotionPosition
+MethodInvocation:setMotionPosition
+MethodInvocation:setMotionPosition
+MethodInvocation:getMotionPosition
+MethodInvocation:getTime
+MethodInvocation:getFixTime
+MethodInvocation:calculateDistance
+MethodInvocation:getUseIgnition
+MethodInvocation:containsKey
+MethodInvocation:getAttributes
+MethodInvocation:getBoolean
+MethodInvocation:getMinimalTripDuration
+MethodInvocation:getMinimalTripDistance
+MethodInvocation:newEvent
+MethodInvocation:getMinimalParkingDuration
+MethodInvocation:newEvent
+Method-name:analyzePosition
+Method-returnType:Map<Event,Position>
+Method-parameters:[Position position]
+MethodInvocation:getDeviceId
+MethodInvocation:getById
+MethodInvocation:isLatestPosition
+MethodInvocation:getProcessInvalidPositions
+MethodInvocation:getValid
+MethodInvocation:getDeviceState
+MethodInvocation:getMotionState
+MethodInvocation:setMotionState
+MethodInvocation:getBoolean
+MethodInvocation:updateMotionState
+MethodInvocation:setDeviceState

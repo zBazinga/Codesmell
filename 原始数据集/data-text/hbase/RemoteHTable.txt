@@ -1,0 +1,513 @@
+Class:RemoteHTable
+Field:LOG
+MethodInvocation:getLogger
+Field:client
+Field:conf
+Field:name
+Field:maxRetries
+Field:sleepTime
+Method-name:buildRowSpec
+Method-returnType:String
+Method-parameters:[final byte[] row, final Map familyMap, final long startTime, final long endTime, final int maxVersions]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toURLEncodedBytes
+MethodInvocation:entrySet
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:append
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getValue
+MethodInvocation:isEmpty
+MethodInvocation:append
+MethodInvocation:toURLEncodedBytes
+MethodInvocation:getKey
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:toURLEncodedBytes
+MethodInvocation:getKey
+MethodInvocation:next
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toURLEncodedBytes
+MethodInvocation:getQualifierLength
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toURLEncodedBytes
+MethodInvocation:cloneQualifier
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:buildMultiRowSpec
+Method-returnType:String
+Method-parameters:[final byte[][] rows, int maxVersions]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toURLEncodedBytes
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:buildModelFromPut
+Method-returnType:CellSetModel
+Method-parameters:[Put put]
+MethodInvocation:getRow
+MethodInvocation:getTimestamp
+MethodInvocation:values
+MethodInvocation:getFamilyCellMap
+MethodInvocation:addCell
+MethodInvocation:cloneFamily
+MethodInvocation:cloneQualifier
+MethodInvocation:getTimestamp
+MethodInvocation:cloneValue
+MethodInvocation:addRow
+Method-name:RemoteHTable
+Method-returnType:null
+Method-parameters:[Client client, String name]
+MethodInvocation:create
+MethodInvocation:toBytes
+Method-name:RemoteHTable
+Method-returnType:null
+Method-parameters:[Client client, Configuration conf, String name]
+MethodInvocation:toBytes
+Method-name:RemoteHTable
+Method-returnType:null
+Method-parameters:[Client client, Configuration conf, byte[] name]
+FieldAccess:client
+FieldAccess:conf
+FieldAccess:name
+FieldAccess:maxRetries
+MethodInvocation:getInt
+FieldAccess:sleepTime
+MethodInvocation:getLong
+Method-name:getTableName
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:clone
+Method-name:getName
+Method-returnType:TableName
+Method-parameters:[]
+MethodInvocation:valueOf
+Method-name:getConfiguration
+Method-returnType:Configuration
+Method-parameters:[]
+Method-name:getTableDescriptor
+Method-returnType:HTableDescriptor
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:getCode
+MethodInvocation:getObjectFromMessage
+MethodInvocation:getBody
+MethodInvocation:getTableDescriptor
+MethodInvocation:sleep
+MethodInvocation:initCause
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:shutdown
+Method-name:get
+Method-returnType:Result
+Method-parameters:[Get get]
+MethodInvocation:getTimeRange
+MethodInvocation:buildRowSpec
+MethodInvocation:getRow
+MethodInvocation:getFamilyMap
+MethodInvocation:getMin
+MethodInvocation:getMax
+MethodInvocation:getMaxVersions
+MethodInvocation:getFilter
+MethodInvocation:warn
+MethodInvocation:getResults
+MethodInvocation:warn
+Method-name:get
+Method-returnType:Result[]
+Method-parameters:[List<Get> gets]
+MethodInvocation:size
+MethodInvocation:getMaxVersions
+MethodInvocation:getMaxVersions
+MethodInvocation:warn
+MethodInvocation:getFilter
+MethodInvocation:warn
+MethodInvocation:getRow
+MethodInvocation:buildMultiRowSpec
+MethodInvocation:getResults
+Method-name:getResults
+Method-returnType:Result[]
+Method-parameters:[String spec]
+MethodInvocation:get
+MethodInvocation:getCode
+MethodInvocation:getObjectFromMessage
+MethodInvocation:getBody
+MethodInvocation:buildResultFromModel
+MethodInvocation:sleep
+MethodInvocation:initCause
+Method-name:exists
+Method-returnType:boolean
+Method-parameters:[Get get]
+MethodInvocation:warn
+MethodInvocation:get
+MethodInvocation:isEmpty
+Method-name:exists
+Method-returnType:boolean[]
+Method-parameters:[List<Get> gets]
+MethodInvocation:warn
+MethodInvocation:size
+MethodInvocation:exists
+MethodInvocation:get
+Method-name:put
+Method-returnType:void
+Method-parameters:[Put put]
+MethodInvocation:buildModelFromPut
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toURLEncodedBytes
+MethodInvocation:getRow
+MethodInvocation:put
+MethodInvocation:toString
+MethodInvocation:createProtobufOutput
+MethodInvocation:getCode
+MethodInvocation:sleep
+MethodInvocation:initCause
+Method-name:put
+Method-returnType:void
+Method-parameters:[List<Put> puts]
+MethodInvocation:getRow
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:values
+MethodInvocation:getFamilyCellMap
+MethodInvocation:addAll
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:addCell
+MethodInvocation:addRow
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:put
+MethodInvocation:toString
+MethodInvocation:createProtobufOutput
+MethodInvocation:getCode
+MethodInvocation:sleep
+MethodInvocation:initCause
+Method-name:delete
+Method-returnType:void
+Method-parameters:[Delete delete]
+MethodInvocation:buildRowSpec
+MethodInvocation:getRow
+MethodInvocation:getFamilyCellMap
+MethodInvocation:getTimestamp
+MethodInvocation:getTimestamp
+MethodInvocation:delete
+MethodInvocation:getCode
+MethodInvocation:sleep
+MethodInvocation:initCause
+Method-name:delete
+Method-returnType:void
+Method-parameters:[List<Delete> deletes]
+MethodInvocation:delete
+Method-name:flushCommits
+Method-returnType:void
+Method-parameters:[]
+Method-name:getDescriptor
+Method-returnType:TableDescriptor
+Method-parameters:[]
+MethodInvocation:getTableDescriptor
+Class:Scanner
+Field:uri
+Method-name:Scanner
+Method-returnType:null
+Method-parameters:[Scan scan]
+MethodInvocation:fromScan
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:post
+MethodInvocation:toString
+MethodInvocation:createProtobufOutput
+MethodInvocation:getCode
+MethodInvocation:getLocation
+MethodInvocation:sleep
+MethodInvocation:initCause
+Method-name:next
+Method-returnType:Result[]
+Method-parameters:[int nbRows]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:getCode
+MethodInvocation:getObjectFromMessage
+MethodInvocation:getBody
+MethodInvocation:buildResultFromModel
+MethodInvocation:sleep
+MethodInvocation:initCause
+Method-name:next
+Method-returnType:Result
+Method-parameters:[]
+MethodInvocation:next
+Class:Iter
+Field:cache
+Method-name:Iter
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:next
+MethodInvocation:warn
+MethodInvocation:stringifyException
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:next
+Method-returnType:Result
+Method-parameters:[]
+MethodInvocation:next
+MethodInvocation:warn
+MethodInvocation:stringifyException
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]
+Method-name:iterator
+Method-returnType:Iterator<Result>
+Method-parameters:[]
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:delete
+MethodInvocation:warn
+MethodInvocation:stringifyException
+Method-name:renewLease
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getScanMetrics
+Method-returnType:ScanMetrics
+Method-parameters:[]
+Method-name:getScanner
+Method-returnType:ResultScanner
+Method-parameters:[Scan scan]
+Method-name:getScanner
+Method-returnType:ResultScanner
+Method-parameters:[byte[] family]
+MethodInvocation:addFamily
+Method-name:getScanner
+Method-returnType:ResultScanner
+Method-parameters:[byte[] family, byte[] qualifier]
+MethodInvocation:addColumn
+Method-name:isAutoFlush
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:checkAndPut
+Method-returnType:boolean
+Method-parameters:[byte[] row, byte[] family, byte[] qualifier, byte[] value, Put put]
+MethodInvocation:doCheckAndPut
+Method-name:doCheckAndPut
+Method-returnType:boolean
+Method-parameters:[byte[] row, byte[] family, byte[] qualifier, byte[] value, Put put]
+MethodInvocation:add
+MethodInvocation:buildModelFromPut
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toURLEncodedBytes
+MethodInvocation:getRow
+MethodInvocation:append
+MethodInvocation:put
+MethodInvocation:toString
+MethodInvocation:createProtobufOutput
+MethodInvocation:getCode
+MethodInvocation:sleep
+MethodInvocation:initCause
+Method-name:checkAndPut
+Method-returnType:boolean
+Method-parameters:[byte[] row, byte[] family, byte[] qualifier, CompareOperator compareOp, byte[] value, Put put]
+Method-name:checkAndDelete
+Method-returnType:boolean
+Method-parameters:[byte[] row, byte[] family, byte[] qualifier, byte[] value, Delete delete]
+MethodInvocation:doCheckAndDelete
+Method-name:doCheckAndDelete
+Method-returnType:boolean
+Method-parameters:[byte[] row, byte[] family, byte[] qualifier, byte[] value, Delete delete]
+MethodInvocation:setFamilyCellMap
+MethodInvocation:getFamilyCellMap
+MethodInvocation:add
+MethodInvocation:buildModelFromPut
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toURLEncodedBytes
+MethodInvocation:append
+MethodInvocation:put
+MethodInvocation:toString
+MethodInvocation:createProtobufOutput
+MethodInvocation:getCode
+MethodInvocation:sleep
+MethodInvocation:initCause
+Method-name:checkAndDelete
+Method-returnType:boolean
+Method-parameters:[byte[] row, byte[] family, byte[] qualifier, CompareOperator compareOp, byte[] value, Delete delete]
+Method-name:checkAndMutate
+Method-returnType:CheckAndMutateBuilder
+Method-parameters:[byte[] row, byte[] family]
+Method-name:checkAndMutate
+Method-returnType:boolean
+Method-parameters:[byte[] row, byte[] family, byte[] qualifier, CompareOperator compareOp, byte[] value, RowMutations rm]
+Method-name:increment
+Method-returnType:Result
+Method-parameters:[Increment increment]
+Method-name:append
+Method-returnType:Result
+Method-parameters:[Append append]
+Method-name:incrementColumnValue
+Method-returnType:long
+Method-parameters:[byte[] row, byte[] family, byte[] qualifier, long amount]
+Method-name:incrementColumnValue
+Method-returnType:long
+Method-parameters:[byte[] row, byte[] family, byte[] qualifier, long amount, Durability durability]
+Method-name:batch
+Method-returnType:void
+Method-parameters:[List<? extends Row> actions, Object[] results]
+Method-name:batchCallback
+Method-returnType:void
+Method-parameters:[List<? extends Row> actions, Object[] results, Batch.Callback<R> callback]
+Method-name:coprocessorService
+Method-returnType:CoprocessorRpcChannel
+Method-parameters:[byte[] row]
+Method-name:coprocessorService
+Method-returnType:Map<byte[],R>
+Method-parameters:[Class<T> service, byte[] startKey, byte[] endKey, Batch.Call<T,R> callable]
+Method-name:coprocessorService
+Method-returnType:void
+Method-parameters:[Class<T> service, byte[] startKey, byte[] endKey, Batch.Call<T,R> callable, Batch.Callback<R> callback]
+Method-name:mutateRow
+Method-returnType:void
+Method-parameters:[RowMutations rm]
+Method-name:batchCoprocessorService
+Method-returnType:Map<byte[],R>
+Method-parameters:[Descriptors.MethodDescriptor method, Message request, byte[] startKey, byte[] endKey, R responsePrototype]
+Method-name:batchCoprocessorService
+Method-returnType:void
+Method-parameters:[Descriptors.MethodDescriptor method, Message request, byte[] startKey, byte[] endKey, R responsePrototype, Callback<R> callback]
+Method-name:setOperationTimeout
+Method-returnType:void
+Method-parameters:[int operationTimeout]
+Method-name:getOperationTimeout
+Method-returnType:int
+Method-parameters:[]
+Method-name:setRpcTimeout
+Method-returnType:void
+Method-parameters:[int rpcTimeout]
+Method-name:getReadRpcTimeout
+Method-returnType:long
+Method-parameters:[TimeUnit unit]
+Method-name:getRpcTimeout
+Method-returnType:int
+Method-parameters:[]
+Method-name:getRpcTimeout
+Method-returnType:long
+Method-parameters:[TimeUnit unit]
+Method-name:getReadRpcTimeout
+Method-returnType:int
+Method-parameters:[]
+Method-name:setReadRpcTimeout
+Method-returnType:void
+Method-parameters:[int readRpcTimeout]
+Method-name:getWriteRpcTimeout
+Method-returnType:long
+Method-parameters:[TimeUnit unit]
+Method-name:getWriteRpcTimeout
+Method-returnType:int
+Method-parameters:[]
+Method-name:setWriteRpcTimeout
+Method-returnType:void
+Method-parameters:[int writeRpcTimeout]
+Method-name:getOperationTimeout
+Method-returnType:long
+Method-parameters:[TimeUnit unit]
+Method-name:toURLEncodedBytes
+Method-returnType:String
+Method-parameters:[byte[] row]
+MethodInvocation:encode
+Class:CheckAndMutateBuilderImpl
+Field:row
+Field:family
+Field:qualifier
+Field:value
+Method-name:CheckAndMutateBuilderImpl
+Method-returnType:null
+Method-parameters:[byte[] row, byte[] family]
+FieldAccess:row
+MethodInvocation:checkNotNull
+FieldAccess:family
+MethodInvocation:checkNotNull
+Method-name:qualifier
+Method-returnType:CheckAndMutateBuilder
+Method-parameters:[byte[] qualifier]
+FieldAccess:qualifier
+MethodInvocation:checkNotNull
+Method-name:timeRange
+Method-returnType:CheckAndMutateBuilder
+Method-parameters:[TimeRange timeRange]
+Method-name:ifNotExists
+Method-returnType:CheckAndMutateBuilder
+Method-parameters:[]
+Method-name:ifMatches
+Method-returnType:CheckAndMutateBuilder
+Method-parameters:[CompareOperator compareOp, byte[] value]
+FieldAccess:value
+MethodInvocation:checkNotNull
+Method-name:ifEquals
+Method-returnType:CheckAndMutateBuilder
+Method-parameters:[byte[] value]
+FieldAccess:value
+MethodInvocation:checkNotNull
+Method-name:thenPut
+Method-returnType:boolean
+Method-parameters:[Put put]
+MethodInvocation:doCheckAndPut
+Method-name:thenDelete
+Method-returnType:boolean
+Method-parameters:[Delete delete]
+MethodInvocation:doCheckAndDelete
+Method-name:thenMutate
+Method-returnType:boolean
+Method-parameters:[RowMutations mutation]
+Method-name:getRegionLocator
+Method-returnType:RegionLocator
+Method-parameters:[]

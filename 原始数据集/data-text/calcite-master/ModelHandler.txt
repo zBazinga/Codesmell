@@ -1,0 +1,251 @@
+Class:ModelHandler
+Field:JSON_MAPPER
+MethodInvocation:configure
+MethodInvocation:configure
+MethodInvocation:configure
+Field:YAML_MAPPER
+Field:connection
+Field:schemaStack
+Field:modelUri
+Field:latticeBuilder
+Field:tileBuilder
+Method-name:ModelHandler
+Method-returnType:null
+Method-parameters:[CalciteConnection connection, String uri]
+FieldAccess:connection
+FieldAccess:modelUri
+MethodInvocation:startsWith
+MethodInvocation:trim
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+MethodInvocation:readValue
+MethodInvocation:endsWith
+MethodInvocation:endsWith
+MethodInvocation:readValue
+MethodInvocation:visit
+Method-name:create
+Method-returnType:void
+Method-parameters:[SchemaPlus schema, String functionName, List<String> path, String className, String methodName]
+MethodInvocation:addFunctions
+Method-name:addFunctions
+Method-returnType:void
+Method-parameters:[SchemaPlus schema, String functionName, List<String> path, String className, String methodName, boolean upCase]
+MethodInvocation:forName
+MethodInvocation:create
+MethodInvocation:first
+MethodInvocation:add
+MethodInvocation:create
+MethodInvocation:add
+MethodInvocation:equals
+MethodInvocation:entries
+MethodInvocation:createAll
+MethodInvocation:getKey
+MethodInvocation:toUpperCase
+MethodInvocation:add
+MethodInvocation:getValue
+MethodInvocation:create
+MethodInvocation:first
+MethodInvocation:toUpperCase
+MethodInvocation:add
+MethodInvocation:create
+MethodInvocation:add
+Method-name:checkRequiredAttributes
+Method-returnType:void
+Method-parameters:[Object json, String... attributeNames]
+MethodInvocation:getClass
+MethodInvocation:getField
+MethodInvocation:get
+MethodInvocation:getSimpleName
+Method-name:visit
+Method-returnType:void
+Method-parameters:[JsonRoot jsonRoot]
+Method-name:visit
+Method-returnType:void
+Method-parameters:[JsonMapSchema jsonSchema]
+MethodInvocation:checkRequiredAttributes
+MethodInvocation:currentMutableSchema
+MethodInvocation:add
+MethodInvocation:setPath
+MethodInvocation:stringListList
+MethodInvocation:populateSchema
+Method-name:stringListList
+Method-returnType:ImmutableList<ImmutableList<String>>
+Method-parameters:[List path]
+MethodInvocation:builder
+MethodInvocation:add
+MethodInvocation:stringList
+MethodInvocation:build
+Method-name:stringList
+Method-returnType:ImmutableList<String>
+Method-parameters:[Object s]
+MethodInvocation:of
+MethodInvocation:builder
+MethodInvocation:add
+MethodInvocation:build
+Method-name:populateSchema
+Method-returnType:void
+Method-parameters:[JsonSchema jsonSchema, SchemaPlus schema]
+Method-name:visit
+Method-returnType:void
+Method-parameters:[JsonCustomSchema jsonSchema]
+MethodInvocation:currentMutableSchema
+MethodInvocation:checkRequiredAttributes
+MethodInvocation:instantiatePlugin
+MethodInvocation:create
+MethodInvocation:operandMap
+MethodInvocation:add
+MethodInvocation:populateSchema
+Method-name:operandMap
+Method-returnType:Map<String,Object>
+Method-parameters:[JsonSchema jsonSchema, Map<String,Object> operand]
+MethodInvocation:of
+MethodInvocation:builder
+MethodInvocation:putAll
+MethodInvocation:values
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:startsWith
+MethodInvocation:getParentFile
+MethodInvocation:put
+MethodInvocation:put
+FieldAccess:tables
+MethodInvocation:build
+Method-name:visit
+Method-returnType:void
+Method-parameters:[JsonJdbcSchema jsonSchema]
+MethodInvocation:checkRequiredAttributes
+MethodInvocation:currentMutableSchema
+MethodInvocation:dataSource
+MethodInvocation:isEmpty
+MethodInvocation:create
+MethodInvocation:instantiatePlugin
+MethodInvocation:create
+MethodInvocation:add
+MethodInvocation:populateSchema
+Method-name:visit
+Method-returnType:void
+Method-parameters:[JsonMaterialization jsonMaterialization]
+MethodInvocation:checkRequiredAttributes
+MethodInvocation:currentSchema
+MethodInvocation:isMutable
+MethodInvocation:currentSchemaName
+MethodInvocation:from
+MethodInvocation:size
+MethodInvocation:getTableNames
+MethodInvocation:path
+MethodInvocation:add
+MethodInvocation:create
+MethodInvocation:getSql
+Method-name:visit
+Method-returnType:void
+Method-parameters:[JsonLattice jsonLattice]
+MethodInvocation:checkRequiredAttributes
+MethodInvocation:currentSchema
+MethodInvocation:isMutable
+MethodInvocation:currentSchemaName
+MethodInvocation:from
+MethodInvocation:algorithm
+MethodInvocation:auto
+MethodInvocation:builder
+MethodInvocation:getSql
+MethodInvocation:rowCountEstimate
+MethodInvocation:statisticProvider
+MethodInvocation:populateLattice
+MethodInvocation:add
+MethodInvocation:build
+Method-name:populateLattice
+Method-returnType:void
+Method-parameters:[JsonLattice jsonLattice, Lattice.Builder latticeBuilder]
+Method-name:visit
+Method-returnType:void
+Method-parameters:[JsonCustomTable jsonTable]
+MethodInvocation:checkRequiredAttributes
+MethodInvocation:currentMutableSchema
+MethodInvocation:instantiatePlugin
+MethodInvocation:create
+MethodInvocation:operandMap
+MethodInvocation:accept
+MethodInvocation:add
+Method-name:visit
+Method-returnType:void
+Method-parameters:[JsonColumn jsonColumn]
+MethodInvocation:checkRequiredAttributes
+Method-name:visit
+Method-returnType:void
+Method-parameters:[JsonView jsonView]
+MethodInvocation:checkRequiredAttributes
+MethodInvocation:currentMutableSchema
+MethodInvocation:first
+MethodInvocation:currentSchemaPath
+MethodInvocation:build
+MethodInvocation:add
+MethodInvocation:addAll
+MethodInvocation:builder
+MethodInvocation:add
+MethodInvocation:viewMacro
+MethodInvocation:getSql
+Method-name:currentSchemaPath
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:singletonList
+FieldAccess:left
+MethodInvocation:peek
+Method-name:currentSchema
+Method-returnType:SchemaPlus
+Method-parameters:[]
+FieldAccess:right
+MethodInvocation:peek
+Method-name:currentSchemaName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:left
+MethodInvocation:peek
+Method-name:currentMutableSchema
+Method-returnType:SchemaPlus
+Method-parameters:[String elementType]
+MethodInvocation:currentSchema
+MethodInvocation:isMutable
+MethodInvocation:getName
+Method-name:visit
+Method-returnType:void
+Method-parameters:[final JsonType jsonType]
+MethodInvocation:checkRequiredAttributes
+MethodInvocation:currentMutableSchema
+MethodInvocation:add
+MethodInvocation:createSqlType
+MethodInvocation:get
+MethodInvocation:builder
+MethodInvocation:get
+MethodInvocation:createSqlType
+MethodInvocation:apply
+MethodInvocation:getType
+MethodInvocation:currentSchema
+MethodInvocation:add
+MethodInvocation:build
+Method-name:visit
+Method-returnType:void
+Method-parameters:[JsonFunction jsonFunction]
+MethodInvocation:checkRequiredAttributes
+MethodInvocation:currentMutableSchema
+MethodInvocation:first
+MethodInvocation:currentSchemaPath
+MethodInvocation:addFunctions
+Method-name:visit
+Method-returnType:void
+Method-parameters:[JsonMeasure jsonMeasure]
+Method-name:visit
+Method-returnType:void
+Method-parameters:[JsonTile jsonTile]
+Method-name:visitChildren
+Method-returnType:void
+Method-parameters:[JsonLattice jsonLattice]
+MethodInvocation:accept
+MethodInvocation:accept
+Field:ExtraOperand
+Field:camelName
+Method-name:ExtraOperand
+Method-returnType:null
+Method-parameters:[String camelName]
+FieldAccess:camelName

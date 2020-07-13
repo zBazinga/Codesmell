@@ -1,0 +1,207 @@
+Class:TraitRegistry
+Field:traits
+Field:traitables
+Field:staticTraitTypes
+Field:codeSize
+Field:masks
+Field:hierarchy
+Method-name:TraitRegistry
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:init
+Method-name:init
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:setKind
+MethodInvocation:setTypeClass
+MethodInvocation:setClassName
+MethodInvocation:getName
+MethodInvocation:getTypeClass
+MethodInvocation:setDefinedClass
+MethodInvocation:addTrait
+MethodInvocation:setClassName
+MethodInvocation:getName
+MethodInvocation:setDefinedClass
+MethodInvocation:setInterfaces
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:setTraitable
+MethodInvocation:addTraitable
+MethodInvocation:setClassName
+MethodInvocation:getName
+MethodInvocation:setDefinedClass
+MethodInvocation:setInterfaces
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:setTraitable
+MethodInvocation:addTraitable
+MethodInvocation:setClassName
+MethodInvocation:getName
+MethodInvocation:setDefinedClass
+MethodInvocation:setInterfaces
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:setTraitable
+MethodInvocation:addTraitable
+Method-name:merge
+Method-returnType:void
+Method-parameters:[TraitRegistry other]
+MethodInvocation:putAll
+MethodInvocation:putAll
+FieldAccess:traits
+MethodInvocation:putAll
+FieldAccess:traitables
+MethodInvocation:putAll
+FieldAccess:masks
+MethodInvocation:size
+MethodInvocation:mergeHierarchy
+Method-name:mergeHierarchy
+Method-returnType:HierarchyEncoder<String>
+Method-parameters:[TraitRegistry first, TraitRegistry second]
+MethodInvocation:getSortedMembers
+MethodInvocation:getHierarchy
+MethodInvocation:get
+MethodInvocation:getInterfaces
+MethodInvocation:getCode
+MethodInvocation:getHierarchy
+MethodInvocation:add
+MethodInvocation:encode
+MethodInvocation:getHierarchy
+MethodInvocation:getHierarchy
+Method-name:getTraits
+Method-returnType:Map<String,ClassDefinition>
+Method-parameters:[]
+Method-name:getTrait
+Method-returnType:ClassDefinition
+Method-parameters:[String key]
+MethodInvocation:endsWith
+MethodInvocation:replace
+MethodInvocation:get
+Method-name:getTraitables
+Method-returnType:Map<String,ClassDefinition>
+Method-parameters:[]
+Method-name:getTraitable
+Method-returnType:ClassDefinition
+Method-parameters:[String key]
+MethodInvocation:get
+Method-name:addTrait
+Method-returnType:void
+Method-parameters:[ClassDefinition trait]
+MethodInvocation:addTrait
+MethodInvocation:getClassName
+Method-name:addTrait
+Method-returnType:void
+Method-parameters:[String className, ClassDefinition trait]
+MethodInvocation:put
+FieldAccess:traits
+MethodInvocation:encode
+MethodInvocation:getHierarchy
+MethodInvocation:getTraitInterfaces
+Method-name:addTraitable
+Method-returnType:void
+Method-parameters:[ClassDefinition traitable]
+MethodInvocation:put
+FieldAccess:traitables
+MethodInvocation:getClassName
+MethodInvocation:detectStaticallyImplementedTraits
+MethodInvocation:isEmpty
+MethodInvocation:put
+MethodInvocation:getClassName
+Method-name:isSoftField
+Method-returnType:boolean
+Method-parameters:[FieldDefinition field, int index, BitSet mask]
+MethodInvocation:get
+Method-name:getFieldMask
+Method-returnType:BitSet
+Method-parameters:[String trait, String traitable]
+MethodInvocation:computeIfAbsent
+MethodInvocation:bind
+Method-name:bind
+Method-returnType:BitSet
+Method-parameters:[String trait, String traitable]
+MethodInvocation:getTrait
+MethodInvocation:getTraitable
+MethodInvocation:size
+MethodInvocation:getFields
+MethodInvocation:getFields
+MethodInvocation:resolveAlias
+MethodInvocation:getFieldByAlias
+MethodInvocation:isFullTraiting
+MethodInvocation:isAssignableFrom
+MethodInvocation:getType
+MethodInvocation:getType
+MethodInvocation:getName
+MethodInvocation:getTypeName
+MethodInvocation:getName
+MethodInvocation:getTypeName
+MethodInvocation:set
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput objectOutput]
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+MethodInvocation:writeInt
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput objectInput]
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:readInt
+MethodInvocation:init
+Method-name:getHierarchy
+Method-returnType:HierarchyEncoder<String>
+Method-parameters:[]
+Method-name:detectStaticallyImplementedTraits
+Method-returnType:Set<String>
+Method-parameters:[ClassDefinition traitable]
+MethodInvocation:getAllImplementedInterfaceNames
+MethodInvocation:getDefinedClass
+MethodInvocation:isAssignableFrom
+MethodInvocation:getAnnotation
+MethodInvocation:add
+MethodInvocation:getName
+Method-name:getStaticTypeCode
+Method-returnType:BitSet
+Method-parameters:[String className]
+MethodInvocation:containsKey
+MethodInvocation:hasCodeForClass
+MethodInvocation:getCodeForClass
+MethodInvocation:cacheAndGetCode
+MethodInvocation:get
+Method-name:getStaticTypes
+Method-returnType:Set<String>
+Method-parameters:[String name]
+MethodInvocation:get
+Class:CachingHierarcyEncoderImpl
+Field:cache
+Method-name:encode
+Method-returnType:void
+Method-parameters:[HierNode<String> node]
+MethodInvocation:invalidateCache
+Method-name:invalidateCache
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:hasCodeForClass
+Method-returnType:boolean
+Method-parameters:[String className]
+MethodInvocation:containsKey
+Method-name:getCodeForClass
+Method-returnType:BitSet
+Method-parameters:[String className]
+MethodInvocation:get
+Method-name:cacheAndGetCode
+Method-returnType:BitSet
+Method-parameters:[String className, Set<String> parents]
+MethodInvocation:length
+MethodInvocation:getBottom
+MethodInvocation:or
+MethodInvocation:getCode
+MethodInvocation:put

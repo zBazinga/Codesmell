@@ -1,0 +1,196 @@
+Class:QualifierHierarchy
+Method-name:isValid
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:getTypeQualifiers
+Method-name:getWidth
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getTopAnnotations
+Method-name:getTopAnnotations
+Method-returnType:Set<? extends AnnotationMirror>
+Method-parameters:[]
+Method-name:getTopAnnotation
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror start]
+Method-name:getBottomAnnotation
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror start]
+Method-name:getBottomAnnotations
+Method-returnType:Set<? extends AnnotationMirror>
+Method-parameters:[]
+Method-name:getPolymorphicAnnotation
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror start]
+Method-name:getTypeQualifiers
+Method-returnType:Set<? extends AnnotationMirror>
+Method-parameters:[]
+Method-name:isSubtype
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror rhs, AnnotationMirror lhs]
+Method-name:isSubtype
+Method-returnType:boolean
+Method-parameters:[Collection<? extends AnnotationMirror> rhs, Collection<? extends AnnotationMirror> lhs]
+Method-name:leastUpperBound
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror a1, AnnotationMirror a2]
+Method-name:numberOfIterationsBeforeWidening
+Method-returnType:int
+Method-parameters:[]
+Method-name:widenedUpperBound
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror newQualifier, AnnotationMirror previousQualifier]
+MethodInvocation:leastUpperBound
+Method-name:greatestLowerBound
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror a1, AnnotationMirror a2]
+Method-name:leastUpperBounds
+Method-returnType:Set<? extends AnnotationMirror>
+Method-parameters:[Collection<? extends AnnotationMirror> annos1, Collection<? extends AnnotationMirror> annos2]
+MethodInvocation:assertSameSize
+MethodInvocation:isEmpty
+MethodInvocation:createAnnotationSet
+MethodInvocation:leastUpperBound
+MethodInvocation:add
+MethodInvocation:assertSameSize
+Method-name:greatestLowerBounds
+Method-returnType:Set<? extends AnnotationMirror>
+Method-parameters:[Collection<? extends AnnotationMirror> annos1, Collection<? extends AnnotationMirror> annos2]
+MethodInvocation:assertSameSize
+MethodInvocation:isEmpty
+MethodInvocation:createAnnotationSet
+MethodInvocation:greatestLowerBound
+MethodInvocation:add
+MethodInvocation:assertSameSize
+Method-name:isSubtypeTypeVariable
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror subAnno, AnnotationMirror superAnno]
+Method-name:isSubtypeTypeVariable
+Method-returnType:boolean
+Method-parameters:[Collection<? extends AnnotationMirror> subAnnos, Collection<? extends AnnotationMirror> superAnnos]
+Method-name:leastUpperBoundTypeVariable
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror a1, AnnotationMirror a2]
+Method-name:greatestLowerBoundTypeVariable
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror a1, AnnotationMirror a2]
+Method-name:leastUpperBoundsTypeVariable
+Method-returnType:Set<? extends AnnotationMirror>
+Method-parameters:[Collection<? extends AnnotationMirror> annos1, Collection<? extends AnnotationMirror> annos2]
+MethodInvocation:createAnnotationSet
+MethodInvocation:getTopAnnotations
+MethodInvocation:isSubtypeTypeVariable
+MethodInvocation:isSubtypeTypeVariable
+MethodInvocation:leastUpperBoundTypeVariable
+MethodInvocation:add
+Method-name:greatestLowerBoundsTypeVariable
+Method-returnType:Set<? extends AnnotationMirror>
+Method-parameters:[Collection<? extends AnnotationMirror> annos1, Collection<? extends AnnotationMirror> annos2]
+MethodInvocation:createAnnotationSet
+MethodInvocation:getTopAnnotations
+MethodInvocation:isSubtypeTypeVariable
+MethodInvocation:isSubtypeTypeVariable
+MethodInvocation:greatestLowerBoundTypeVariable
+MethodInvocation:add
+Method-name:canHaveEmptyAnnotationSet
+Method-returnType:boolean
+Method-parameters:[AnnotatedTypeMirror type]
+MethodInvocation:getKind
+MethodInvocation:getKind
+MethodInvocation:getKind
+MethodInvocation:getKind
+Method-name:isSubtype
+Method-returnType:boolean
+Method-parameters:[AnnotatedTypeMirror subType, AnnotatedTypeMirror superType, AnnotationMirror subAnno, AnnotationMirror superAnno]
+MethodInvocation:canHaveEmptyAnnotationSet
+MethodInvocation:canHaveEmptyAnnotationSet
+MethodInvocation:isSubtypeTypeVariable
+MethodInvocation:isSubtype
+Method-name:isSubtype
+Method-returnType:boolean
+Method-parameters:[AnnotatedTypeMirror subType, AnnotatedTypeMirror superType, Collection<? extends AnnotationMirror> subs, Collection<AnnotationMirror> supers]
+MethodInvocation:canHaveEmptyAnnotationSet
+MethodInvocation:canHaveEmptyAnnotationSet
+MethodInvocation:isSubtypeTypeVariable
+MethodInvocation:isSubtype
+Method-name:leastUpperBound
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotatedTypeMirror type1, AnnotatedTypeMirror type2, AnnotationMirror a1, AnnotationMirror a2]
+MethodInvocation:canHaveEmptyAnnotationSet
+MethodInvocation:canHaveEmptyAnnotationSet
+MethodInvocation:leastUpperBoundTypeVariable
+MethodInvocation:leastUpperBound
+Method-name:greatestLowerBound
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotatedTypeMirror type1, AnnotatedTypeMirror type2, AnnotationMirror a1, AnnotationMirror a2]
+MethodInvocation:canHaveEmptyAnnotationSet
+MethodInvocation:canHaveEmptyAnnotationSet
+MethodInvocation:greatestLowerBoundTypeVariable
+MethodInvocation:greatestLowerBound
+Method-name:leastUpperBounds
+Method-returnType:Set<? extends AnnotationMirror>
+Method-parameters:[AnnotatedTypeMirror type1, AnnotatedTypeMirror type2, Collection<? extends AnnotationMirror> annos1, Collection<AnnotationMirror> annos2]
+MethodInvocation:canHaveEmptyAnnotationSet
+MethodInvocation:canHaveEmptyAnnotationSet
+MethodInvocation:leastUpperBoundsTypeVariable
+MethodInvocation:leastUpperBounds
+Method-name:greatestLowerBounds
+Method-returnType:Set<? extends AnnotationMirror>
+Method-parameters:[AnnotatedTypeMirror type1, AnnotatedTypeMirror type2, Collection<? extends AnnotationMirror> annos1, Collection<AnnotationMirror> annos2]
+MethodInvocation:canHaveEmptyAnnotationSet
+MethodInvocation:canHaveEmptyAnnotationSet
+MethodInvocation:greatestLowerBoundsTypeVariable
+MethodInvocation:greatestLowerBounds
+Method-name:findAnnotationInSameHierarchy
+Method-returnType:AnnotationMirror
+Method-parameters:[Collection<? extends AnnotationMirror> annos, AnnotationMirror annotationMirror]
+MethodInvocation:getTopAnnotation
+MethodInvocation:findAnnotationInHierarchy
+Method-name:findAnnotationInHierarchy
+Method-returnType:AnnotationMirror
+Method-parameters:[Collection<? extends AnnotationMirror> annos, AnnotationMirror top]
+MethodInvocation:isSubtype
+Method-name:updateMappingToMutableSet
+Method-returnType:boolean
+Method-parameters:[Map<T,Set<AnnotationMirror>> map, T key, AnnotationMirror newQual]
+MethodInvocation:containsKey
+MethodInvocation:createAnnotationSet
+MethodInvocation:add
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:areSame
+MethodInvocation:getTopAnnotation
+MethodInvocation:getTopAnnotation
+MethodInvocation:add
+MethodInvocation:put
+Method-name:assertSameSize
+Method-returnType:void
+Method-parameters:[Collection<?> c1, Collection<?> c2]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+Method-name:assertSameSize
+Method-returnType:void
+Method-parameters:[Collection<?> c1, Collection<?> c2, Collection<?> result]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+Method-name:isTopLevelValidType
+Method-returnType:List<DiagMessage>
+Method-parameters:[AnnotatedTypeMirror type, BaseTypeValidator baseTypeValidator]
+MethodInvocation:getAnnotations
+MethodInvocation:createAnnotationSet
+MethodInvocation:getTopAnnotation
+MethodInvocation:containsSame
+MethodInvocation:singletonList
+MethodInvocation:add
+MethodInvocation:canHaveEmptyAnnotationSet
+MethodInvocation:size
+MethodInvocation:getWidth
+MethodInvocation:singletonList
+MethodInvocation:emptyList

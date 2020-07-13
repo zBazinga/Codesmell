@@ -1,0 +1,154 @@
+Class:KubernetesClusterService
+Field:configuration
+Field:lockConfiguration
+Method-name:KubernetesClusterService
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:configuration
+FieldAccess:lockConfiguration
+Method-name:KubernetesClusterService
+Method-returnType:null
+Method-parameters:[KubernetesConfiguration configuration]
+FieldAccess:configuration
+MethodInvocation:copy
+FieldAccess:lockConfiguration
+Method-name:KubernetesClusterService
+Method-returnType:null
+Method-parameters:[CamelContext camelContext, KubernetesConfiguration configuration]
+FieldAccess:configuration
+MethodInvocation:copy
+FieldAccess:lockConfiguration
+Method-name:createView
+Method-returnType:KubernetesClusterView
+Method-parameters:[String namespace]
+MethodInvocation:lockConfigWithGroupNameAndDefaults
+MethodInvocation:setConfigDefaults
+MethodInvocation:copy
+FieldAccess:configuration
+MethodInvocation:getCamelContext
+Method-name:lockConfigWithGroupNameAndDefaults
+Method-returnType:KubernetesLockConfiguration
+Method-parameters:[String groupName]
+MethodInvocation:copy
+FieldAccess:lockConfiguration
+MethodInvocation:setGroupName
+MethodInvocation:notNull
+MethodInvocation:getPodName
+MethodInvocation:setPodName
+MethodInvocation:getenv
+MethodInvocation:getPodName
+MethodInvocation:setPodName
+MethodInvocation:getHostName
+MethodInvocation:getLocalHost
+MethodInvocation:notNull
+MethodInvocation:getConfigMapName
+MethodInvocation:notNull
+MethodInvocation:getClusterLabels
+MethodInvocation:getJitterFactor
+MethodInvocation:getJitterFactor
+MethodInvocation:getRetryPeriodMillis
+MethodInvocation:getRetryPeriodMillis
+MethodInvocation:getRenewDeadlineMillis
+MethodInvocation:getRenewDeadlineMillis
+MethodInvocation:getLeaseDurationMillis
+MethodInvocation:getLeaseDurationMillis
+MethodInvocation:getLeaseDurationMillis
+MethodInvocation:getRenewDeadlineMillis
+MethodInvocation:getLeaseDurationMillis
+MethodInvocation:getRenewDeadlineMillis
+MethodInvocation:getRenewDeadlineMillis
+MethodInvocation:getJitterFactor
+MethodInvocation:getRetryPeriodMillis
+MethodInvocation:getRenewDeadlineMillis
+MethodInvocation:getJitterFactor
+MethodInvocation:getRetryPeriodMillis
+Method-name:getMasterUrl
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getMasterUrl
+Method-name:setMasterUrl
+Method-returnType:void
+Method-parameters:[String masterUrl]
+MethodInvocation:setMasterUrl
+Method-name:getConnectionTimeoutMillis
+Method-returnType:Integer
+Method-parameters:[]
+MethodInvocation:getConnectionTimeout
+Method-name:setConnectionTimeoutMillis
+Method-returnType:void
+Method-parameters:[Integer connectionTimeout]
+MethodInvocation:setConnectionTimeout
+Method-name:getKubernetesNamespace
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getKubernetesResourcesNamespace
+FieldAccess:lockConfiguration
+Method-name:setKubernetesNamespace
+Method-returnType:void
+Method-parameters:[String kubernetesNamespace]
+MethodInvocation:setKubernetesResourcesNamespace
+FieldAccess:lockConfiguration
+Method-name:getConfigMapName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getConfigMapName
+FieldAccess:lockConfiguration
+Method-name:setConfigMapName
+Method-returnType:void
+Method-parameters:[String configMapName]
+MethodInvocation:setConfigMapName
+FieldAccess:lockConfiguration
+Method-name:getPodName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPodName
+FieldAccess:lockConfiguration
+Method-name:setPodName
+Method-returnType:void
+Method-parameters:[String podName]
+MethodInvocation:setPodName
+FieldAccess:lockConfiguration
+Method-name:getClusterLabels
+Method-returnType:Map<String,String>
+Method-parameters:[]
+MethodInvocation:getClusterLabels
+Method-name:setClusterLabels
+Method-returnType:void
+Method-parameters:[Map<String,String> clusterLabels]
+MethodInvocation:setClusterLabels
+Method-name:addToClusterLabels
+Method-returnType:void
+Method-parameters:[String key, String value]
+MethodInvocation:addToClusterLabels
+Method-name:getJitterFactor
+Method-returnType:double
+Method-parameters:[]
+MethodInvocation:getJitterFactor
+Method-name:setJitterFactor
+Method-returnType:void
+Method-parameters:[double jitterFactor]
+MethodInvocation:setJitterFactor
+Method-name:getLeaseDurationMillis
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getLeaseDurationMillis
+Method-name:setLeaseDurationMillis
+Method-returnType:void
+Method-parameters:[long leaseDurationMillis]
+MethodInvocation:setLeaseDurationMillis
+Method-name:getRenewDeadlineMillis
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getRenewDeadlineMillis
+Method-name:setRenewDeadlineMillis
+Method-returnType:void
+Method-parameters:[long renewDeadlineMillis]
+MethodInvocation:setRenewDeadlineMillis
+Method-name:getRetryPeriodMillis
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getRetryPeriodMillis
+Method-name:setRetryPeriodMillis
+Method-returnType:void
+Method-parameters:[long retryPeriodMillis]
+MethodInvocation:setRetryPeriodMillis

@@ -1,0 +1,56 @@
+Class:TradeCustomer
+Field:serialVersionUID
+Field:timestamp
+Field:trade
+Field:customer
+Field:buffer
+Method-name:TradeCustomer
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:currentTimeMillis
+Method-name:TradeCustomer
+Method-returnType:null
+Method-parameters:[long timestamp, Pair trade, Pair customer, String str]
+FieldAccess:timestamp
+FieldAccess:trade
+FieldAccess:customer
+FieldAccess:buffer
+Method-name:getTrade
+Method-returnType:Pair
+Method-parameters:[]
+Method-name:setTrade
+Method-returnType:void
+Method-parameters:[Pair trade]
+FieldAccess:trade
+Method-name:getCustomer
+Method-returnType:Pair
+Method-parameters:[]
+Method-name:setCustomer
+Method-returnType:void
+Method-parameters:[Pair customer]
+FieldAccess:customer
+Method-name:getTimestamp
+Method-returnType:long
+Method-parameters:[]
+Method-name:getBuffer
+Method-returnType:String
+Method-parameters:[]
+Method-name:setBuffer
+Method-returnType:void
+Method-parameters:[String buffer]
+FieldAccess:buffer
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:reflectionToString
+Method-name:write
+Method-returnType:void
+Method-parameters:[Kryo kryo, Output output, TradeCustomerSerializer tradeCustomerSerializer]
+MethodInvocation:writeObject
+MethodInvocation:getCustomer
+MethodInvocation:writeObject
+MethodInvocation:getTrade
+MethodInvocation:writeLong
+MethodInvocation:getTimestamp
+MethodInvocation:writeString
+MethodInvocation:getBuffer

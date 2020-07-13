@@ -1,0 +1,106 @@
+Class:Option
+Field:longName
+Field:shortName
+Field:defaultValue
+Field:choices
+Field:helpText
+Field:type
+Method-name:Option
+Method-returnType:null
+Method-parameters:[String name]
+FieldAccess:longName
+FieldAccess:choices
+Method-name:alt
+Method-returnType:Option
+Method-parameters:[String shortName]
+FieldAccess:shortName
+Method-name:type
+Method-returnType:Option
+Method-parameters:[OptionType type]
+FieldAccess:type
+Method-name:defaultValue
+Method-returnType:Option
+Method-parameters:[String defaultValue]
+MethodInvocation:isEmpty
+FieldAccess:choices
+MethodInvocation:setDefaultValue
+MethodInvocation:contains
+FieldAccess:choices
+MethodInvocation:setDefaultValue
+FieldAccess:longName
+Method-name:choices
+Method-returnType:Option
+Method-parameters:[String... choices]
+FieldAccess:defaultValue
+MethodInvocation:contains
+MethodInvocation:asList
+MethodInvocation:addAll
+FieldAccess:choices
+FieldAccess:longName
+MethodInvocation:addAll
+FieldAccess:choices
+Method-name:help
+Method-returnType:Option
+Method-parameters:[String helpText]
+FieldAccess:helpText
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:longName
+Method-name:hasAlt
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:shortName
+Method-name:hasType
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:type
+Method-name:getType
+Method-returnType:OptionType
+Method-parameters:[]
+FieldAccess:type
+Method-name:getAlt
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:shortName
+Method-name:getHelpText
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:helpText
+Method-name:getChoices
+Method-returnType:Set<String>
+Method-parameters:[]
+FieldAccess:choices
+Method-name:hasDefaultValue
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:defaultValue
+Method-name:getDefaultValue
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:defaultValue
+Method-name:setDefaultValue
+Method-returnType:Option
+Method-parameters:[String defaultValue]
+FieldAccess:defaultValue
+Method-name:isCastableToDefinedType
+Method-returnType:boolean
+Method-parameters:[String value]
+FieldAccess:type
+MethodInvocation:parseInt
+MethodInvocation:parseLong
+MethodInvocation:parseFloat
+MethodInvocation:parseDouble
+MethodInvocation:equals
+MethodInvocation:equals
+FieldAccess:type
+FieldAccess:longName
+Method-name:checkIsCastableToDefinedType
+Method-returnType:void
+Method-parameters:[Map<String,String> data, RequiredParameters requiredParameters]
+MethodInvocation:hasType
+MethodInvocation:isCastableToDefinedType
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:getType

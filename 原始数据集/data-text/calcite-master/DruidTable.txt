@@ -1,0 +1,127 @@
+Class:DruidTable
+Field:DEFAULT_TIMESTAMP_COLUMN
+Field:DEFAULT_INTERVAL
+MethodInvocation:getInstanceUTC
+MethodInvocation:getInstanceUTC
+Field:schema
+Field:dataSource
+Field:protoRowType
+Field:metricFieldNames
+Field:intervals
+Field:timestampFieldName
+Field:complexMetrics
+Field:allFields
+Method-name:DruidTable
+Method-returnType:null
+Method-parameters:[DruidSchema schema, String dataSource, RelProtoDataType protoRowType, Set<String> metricFieldNames, String timestampFieldName, List<Interval> intervals, Map<String,List<ComplexMetric>> complexMetrics, Map<String,SqlTypeName> allFields]
+FieldAccess:timestampFieldName
+MethodInvocation:requireNonNull
+FieldAccess:schema
+MethodInvocation:requireNonNull
+FieldAccess:dataSource
+MethodInvocation:requireNonNull
+FieldAccess:protoRowType
+FieldAccess:metricFieldNames
+MethodInvocation:copyOf
+FieldAccess:intervals
+MethodInvocation:copyOf
+MethodInvocation:of
+FieldAccess:complexMetrics
+MethodInvocation:of
+MethodInvocation:copyOf
+FieldAccess:allFields
+MethodInvocation:of
+MethodInvocation:copyOf
+Method-name:create
+Method-returnType:Table
+Method-parameters:[DruidSchema druidSchema, String dataSourceName, List<Interval> intervals, Map<String,SqlTypeName> fieldMap, Set<String> metricNameSet, String timestampColumnName, DruidConnectionImpl connection, Map<String,List<ComplexMetric>> complexMetrics]
+Method-name:create
+Method-returnType:Table
+Method-parameters:[DruidSchema druidSchema, String dataSourceName, List<Interval> intervals, Map<String,SqlTypeName> fieldMap, Set<String> metricNameSet, String timestampColumnName, Map<String,List<ComplexMetric>> complexMetrics]
+MethodInvocation:copyOf
+MethodInvocation:copyOf
+Method-name:resolveComplexMetric
+Method-returnType:ComplexMetric
+Method-parameters:[String alias, AggregateCall call]
+MethodInvocation:getComplexMetricsFrom
+MethodInvocation:canBeUsed
+Method-name:isRolledUp
+Method-returnType:boolean
+Method-parameters:[String column]
+MethodInvocation:get
+MethodInvocation:get
+Method-name:rolledUpColumnValidInsideAgg
+Method-returnType:boolean
+Method-parameters:[String column, SqlCall call, SqlNode parent, CalciteConnectionConfig config]
+Method-name:isValidParentKind
+Method-returnType:boolean
+Method-parameters:[SqlNode node]
+MethodInvocation:getKind
+MethodInvocation:getKind
+MethodInvocation:isSupportedPostAggOperation
+MethodInvocation:getKind
+Method-name:isCountDistinct
+Method-returnType:boolean
+Method-parameters:[SqlCall call]
+MethodInvocation:getKind
+MethodInvocation:getFunctionQuantifier
+MethodInvocation:getValue
+MethodInvocation:getFunctionQuantifier
+Method-name:isSupportedPostAggOperation
+Method-returnType:boolean
+Method-parameters:[SqlKind kind]
+Method-name:getComplexMetricsFrom
+Method-returnType:List<ComplexMetric>
+Method-parameters:[String alias]
+MethodInvocation:containsKey
+MethodInvocation:get
+Method-name:isComplexMetric
+Method-returnType:boolean
+Method-parameters:[String alias]
+MethodInvocation:get
+Method-name:getRowType
+Method-returnType:RelDataType
+Method-parameters:[RelDataTypeFactory typeFactory]
+MethodInvocation:apply
+MethodInvocation:getFieldNames
+MethodInvocation:checkArgument
+MethodInvocation:contains
+MethodInvocation:checkArgument
+MethodInvocation:containsAll
+Method-name:toRel
+Method-returnType:RelNode
+Method-parameters:[RelOptTable.ToRelContext context, RelOptTable relOptTable]
+MethodInvocation:getCluster
+MethodInvocation:create
+MethodInvocation:of
+MethodInvocation:create
+MethodInvocation:traitSetOf
+MethodInvocation:of
+Method-name:isMetric
+Method-returnType:boolean
+Method-parameters:[String name]
+MethodInvocation:contains
+Class:MapRelProtoDataType
+Field:fields
+Field:timestampColumn
+Method-name:MapRelProtoDataType
+Method-returnType:null
+Method-parameters:[ImmutableMap<String,SqlTypeName> fields]
+FieldAccess:fields
+FieldAccess:timestampColumn
+Method-name:MapRelProtoDataType
+Method-returnType:null
+Method-parameters:[ImmutableMap<String,SqlTypeName> fields, String timestampColumn]
+FieldAccess:fields
+FieldAccess:timestampColumn
+Method-name:apply
+Method-returnType:RelDataType
+Method-parameters:[RelDataTypeFactory typeFactory]
+MethodInvocation:builder
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:nullable
+MethodInvocation:add
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:build

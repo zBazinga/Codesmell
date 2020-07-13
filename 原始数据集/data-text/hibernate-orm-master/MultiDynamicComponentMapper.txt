@@ -1,0 +1,54 @@
+Class:MultiDynamicComponentMapper
+Field:dynamicComponentData
+Method-name:MultiDynamicComponentMapper
+Method-returnType:null
+Method-parameters:[PropertyData dynamicComponentData]
+FieldAccess:dynamicComponentData
+Method-name:addComposite
+Method-returnType:void
+Method-parameters:[PropertyData propertyData, PropertyMapper propertyMapper]
+MethodInvocation:markAsDynamicComponentMap
+Method-name:add
+Method-returnType:void
+Method-parameters:[PropertyData propertyData]
+MethodInvocation:add
+MethodInvocation:addComposite
+Method-name:mapToMapFromEntity
+Method-returnType:boolean
+Method-parameters:[SessionImplementor session, Map<String,Object> data, Object newObj, Object oldObj]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:mapToMapFromEntity
+Method-name:getValue
+Method-returnType:Object
+Method-parameters:[Object newObj, PropertyData propertyData]
+MethodInvocation:get
+MethodInvocation:getBeanName
+Method-name:map
+Method-returnType:boolean
+Method-parameters:[SessionImplementor session, Map<String,Object> data, String[] propertyNames, Object[] newState, Object[] oldState]
+MethodInvocation:getPropertyDatas
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getAtIndexOrNull
+MethodInvocation:getAtIndexOrNull
+MethodInvocation:mapToMapFromEntity
+MethodInvocation:mapModifiedFlagsToMapFromEntity
+Method-name:mapModifiedFlagsToMapFromEntity
+Method-returnType:void
+Method-parameters:[SessionImplementor session, Map<String,Object> data, Object newObj, Object oldObj]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:mapModifiedFlagsToMapFromEntity
+Method-name:mapToEntityFromMap
+Method-returnType:void
+Method-parameters:[EnversService enversService, Object obj, Map data, Object primaryKey, AuditReaderImplementor versionsReader, Number revision]
+MethodInvocation:values
+MethodInvocation:mapToEntityFromMap

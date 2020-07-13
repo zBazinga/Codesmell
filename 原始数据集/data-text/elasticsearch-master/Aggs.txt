@@ -1,0 +1,81 @@
+Class:Aggs
+Field:ROOT_GROUP_NAME
+Field:IMPLICIT_GROUP_KEY
+MethodInvocation:of
+Method-name:createSourceBuilder
+Method-returnType:CompositeValuesSourceBuilder<?>
+Method-parameters:[]
+Method-name:copy
+Method-returnType:GroupByKey
+Method-parameters:[String id, AggSource source, Direction direction]
+Field:EMPTY
+MethodInvocation:emptyList
+MethodInvocation:emptyList
+MethodInvocation:emptyList
+Field:groups
+Field:simpleAggs
+Field:pipelineAggs
+Method-name:Aggs
+Method-returnType:null
+Method-parameters:[List<GroupByKey> groups, List<LeafAgg> simpleAggs, List<PipelineAgg> pipelineAggs]
+FieldAccess:groups
+FieldAccess:simpleAggs
+FieldAccess:pipelineAggs
+Method-name:groups
+Method-returnType:List<GroupByKey>
+Method-parameters:[]
+Method-name:asAggBuilder
+Method-returnType:AggregationBuilder
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:asValueSource
+MethodInvocation:matchAllQuery
+MethodInvocation:subAggregation
+MethodInvocation:toBuilder
+MethodInvocation:subAggregation
+MethodInvocation:toBuilder
+Method-name:useImplicitGroupBy
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:addGroups
+Method-returnType:Aggs
+Method-parameters:[Collection<GroupByKey> groups]
+MethodInvocation:combine
+FieldAccess:groups
+Method-name:addAgg
+Method-returnType:Aggs
+Method-parameters:[LeafAgg agg]
+MethodInvocation:contains
+MethodInvocation:combine
+Method-name:addAgg
+Method-returnType:Aggs
+Method-parameters:[PipelineAgg pipelineAgg]
+MethodInvocation:combine
+Method-name:findGroupForAgg
+Method-returnType:GroupByKey
+Method-parameters:[String groupOrAggId]
+FieldAccess:groups
+MethodInvocation:equals
+MethodInvocation:id
+MethodInvocation:equals
+MethodInvocation:id
+Method-name:with
+Method-returnType:Aggs
+Method-parameters:[List<GroupByKey> groups]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals

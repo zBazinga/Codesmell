@@ -1,0 +1,195 @@
+Class:OculusVRInput
+Field:inputState
+Field:sessionStatus
+Field:trackingState
+Field:hardware
+Field:session
+Field:axisMultiplier
+Field:buttons
+Field:touch
+Field:lastButtons
+Field:lastTouch
+Field:lastAxises
+Field:handStates
+Field:handPoses
+Field:controllers
+Method-name:OculusVRInput
+Method-returnType:null
+Method-parameters:[OculusVR hardware, long session, OVRSessionStatus sessionStatus, OVRTrackingState trackingState]
+FieldAccess:hardware
+FieldAccess:session
+FieldAccess:sessionStatus
+FieldAccess:trackingState
+MethodInvocation:calloc
+Method-name:dispose
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:free
+Method-name:updateControllerStates
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:ovr_GetInputState
+MethodInvocation:Buttons
+MethodInvocation:Touches
+MethodInvocation:HandPoses
+MethodInvocation:ThePose
+Method-name:cv
+Method-returnType:Vector3f
+Method-parameters:[OVRVector3f in]
+MethodInvocation:vecO2J
+Method-name:cv
+Method-returnType:Vector2f
+Method-parameters:[OVRVector2f in]
+MethodInvocation:x
+MethodInvocation:y
+Method-name:cq
+Method-returnType:Quaternion
+Method-parameters:[OVRQuatf in]
+MethodInvocation:quatO2J
+Method-name:axis
+Method-returnType:Vector2f
+Method-parameters:[float input]
+Method-name:getPosition
+Method-returnType:Vector3f
+Method-parameters:[int index]
+MethodInvocation:cv
+MethodInvocation:Position
+Method-name:getVelocity
+Method-returnType:Vector3f
+Method-parameters:[int controllerIndex]
+MethodInvocation:cv
+MethodInvocation:LinearVelocity
+Method-name:getOrientation
+Method-returnType:Quaternion
+Method-parameters:[int index]
+MethodInvocation:cq
+MethodInvocation:Orientation
+Method-name:getAngularVelocity
+Method-returnType:Vector3f
+Method-parameters:[int controllerIndex]
+MethodInvocation:cv
+MethodInvocation:AngularVelocity
+Method-name:getFinalObserverRotation
+Method-returnType:Quaternion
+Method-parameters:[int index]
+MethodInvocation:getEnvironment
+MethodInvocation:getVRViewManager
+MethodInvocation:getEnvironment
+MethodInvocation:getObserver
+MethodInvocation:set
+MethodInvocation:getRotation
+MethodInvocation:set
+MethodInvocation:getWorldRotation
+MethodInvocation:multLocal
+MethodInvocation:getOrientation
+Method-name:getFinalObserverPosition
+Method-returnType:Vector3f
+Method-parameters:[int index]
+MethodInvocation:getEnvironment
+MethodInvocation:getVRViewManager
+MethodInvocation:getEnvironment
+MethodInvocation:getObserver
+MethodInvocation:getPosition
+MethodInvocation:mult
+MethodInvocation:getRotation
+MethodInvocation:addLocal
+MethodInvocation:getLocation
+MethodInvocation:mult
+MethodInvocation:getWorldRotation
+MethodInvocation:addLocal
+MethodInvocation:getWorldTranslation
+Method-name:isInputDeviceTracking
+Method-returnType:boolean
+Method-parameters:[int index]
+MethodInvocation:HandStatusFlags
+Method-name:getAxis
+Method-returnType:Vector2f
+Method-parameters:[int controllerIndex, VRInputType forAxis]
+MethodInvocation:getAxisRaw
+MethodInvocation:multLocal
+Method-name:getAxisRaw
+Method-returnType:Vector2f
+Method-parameters:[int controllerIndex, VRInputType forAxis]
+MethodInvocation:cv
+MethodInvocation:Thumbstick
+MethodInvocation:axis
+MethodInvocation:IndexTrigger
+MethodInvocation:axis
+MethodInvocation:HandTrigger
+Method-name:isButtonDown
+Method-returnType:boolean
+Method-parameters:[int controllerIndex, VRInputType checkButton]
+MethodInvocation:isButtonDownForStatus
+Method-name:resetInputSinceLastCall
+Method-returnType:void
+Method-parameters:[]
+Method-name:wasButtonPressedSinceLastCall
+Method-returnType:boolean
+Method-parameters:[int controllerIndex, VRInputType checkButton]
+MethodInvocation:isButtonDownForStatus
+MethodInvocation:isButtonDown
+Method-name:getAxisDeltaSinceLastCall
+Method-returnType:Vector2f
+Method-parameters:[int controllerIndex, VRInputType forAxis]
+MethodInvocation:getAxis
+MethodInvocation:subtractLocal
+MethodInvocation:addLocal
+Method-name:init
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:updateConnectedControllers
+Method-returnType:void
+Method-parameters:[]
+Method-name:getAxisMultiplier
+Method-returnType:float
+Method-parameters:[]
+Method-name:setAxisMultiplier
+Method-returnType:void
+Method-parameters:[float axisMultiplier]
+FieldAccess:axisMultiplier
+Method-name:triggerHapticPulse
+Method-returnType:void
+Method-parameters:[int controllerIndex, float seconds]
+Method-name:isInputFocused
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:IsVisible
+Method-name:getRawControllerState
+Method-returnType:Object
+Method-parameters:[int index]
+Method-name:swapHands
+Method-returnType:void
+Method-parameters:[]
+Method-name:getTrackedControllerCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:getTrackedController
+Method-returnType:VRTrackedController
+Method-parameters:[int index]
+Class:OculusController
+Field:hand
+Method-name:OculusController
+Method-returnType:null
+Method-parameters:[int hand]
+FieldAccess:hand
+Method-name:getControllerName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getControllerManufacturer
+Method-returnType:String
+Method-parameters:[]
+Method-name:getPosition
+Method-returnType:Vector3f
+Method-parameters:[]
+MethodInvocation:getPosition
+Method-name:getOrientation
+Method-returnType:Quaternion
+Method-parameters:[]
+MethodInvocation:getOrientation
+Method-name:getPose
+Method-returnType:Matrix4f
+Method-parameters:[]
+MethodInvocation:setRotationQuaternion
+MethodInvocation:getOrientation
+MethodInvocation:setTranslation
+MethodInvocation:getPosition

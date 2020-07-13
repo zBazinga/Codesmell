@@ -1,0 +1,84 @@
+Class:BaseRuntimeChildDefinition
+Field:myReplacedParentDefinition
+Method-name:getAccessor
+Method-returnType:IAccessor
+Method-parameters:[]
+Method-name:getChildByName
+Method-returnType:BaseRuntimeElementDefinition<?>
+Method-parameters:[String theName]
+Method-name:getChildElementDefinitionByDatatype
+Method-returnType:BaseRuntimeElementDefinition<?>
+Method-parameters:[Class<? extends IBase> theType]
+Method-name:getChildNameByDatatype
+Method-returnType:String
+Method-parameters:[Class<? extends IBase> theDatatype]
+Method-name:getElementName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getExtensionUrl
+Method-returnType:String
+Method-parameters:[]
+Method-name:getInstanceConstructorArguments
+Method-returnType:Object
+Method-parameters:[]
+Method-name:getMax
+Method-returnType:int
+Method-parameters:[]
+Method-name:getMin
+Method-returnType:int
+Method-parameters:[]
+Method-name:getMutator
+Method-returnType:IMutator
+Method-parameters:[]
+Method-name:getValidChildNames
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:isSummary
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:sealAndInitialize
+Method-returnType:void
+Method-parameters:[FhirContext theContext, Map<Class<? extends IBase>,BaseRuntimeElementDefinition<?>> theClassToElementDefinitions]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getElementName
+Method-name:getReplacedParentDefinition
+Method-returnType:BaseRuntimeChildDefinition
+Method-parameters:[]
+Method-name:setReplacedParentDefinition
+Method-returnType:void
+Method-parameters:[BaseRuntimeChildDefinition myReplacedParentDefinition]
+FieldAccess:myReplacedParentDefinition
+Method-name:addNameToList
+Method-returnType:List<String>
+Method-parameters:[List<String> theCurrentList, FhirTerser fhirTerser]
+MethodInvocation:isEmpty
+MethodInvocation:singletonList
+MethodInvocation:getElementName
+MethodInvocation:add
+MethodInvocation:getElementName
+Method-name:getValues
+Method-returnType:List<IBase>
+Method-parameters:[IBase theTarget]
+Method-name:getFirstValueOrNull
+Method-returnType:Optional<T>
+Method-parameters:[IBase theTarget]
+MethodInvocation:findFirst
+MethodInvocation:stream
+MethodInvocation:getValues
+Method-name:addValue
+Method-returnType:void
+Method-parameters:[IBase theTarget, IBase theValue]
+Method-name:setValue
+Method-returnType:void
+Method-parameters:[IBase theTarget, IBase theValue]
+Method-name:findResourceReferenceDefinition
+Method-returnType:BaseRuntimeElementDefinition<?>
+Method-parameters:[Map<Class<? extends IBase>,BaseRuntimeElementDefinition<?>> theClassToElementDefinitions]
+MethodInvocation:entrySet
+MethodInvocation:isAssignableFrom
+MethodInvocation:getKey
+MethodInvocation:getValue

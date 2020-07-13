@@ -1,0 +1,401 @@
+Class:UnsequencedExpressionRewriter
+Field:currentMethod
+Field:count
+Field:orderedAccesses
+MethodInvocation:newArrayList
+Field:currentTopNode
+Field:hasModification
+Method-name:UnsequencedExpressionRewriter
+Method-returnType:null
+Method-parameters:[CompilationUnit unit]
+Class:VariableAccess
+Field:variable
+Field:expression
+Field:isModification
+Method-name:VariableAccess
+Method-returnType:null
+Method-parameters:[VariableElement variable, Expression expression, boolean isModification]
+FieldAccess:variable
+FieldAccess:expression
+FieldAccess:isModification
+Method-name:addVariableAccess
+Method-returnType:void
+Method-parameters:[VariableElement var, Expression node, boolean isModification]
+MethodInvocation:isInstanceVar
+MethodInvocation:add
+Method-name:newExpression
+Method-returnType:void
+Method-parameters:[TreeNode topNode]
+MethodInvocation:clear
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[MethodDeclaration node]
+MethodInvocation:getExecutableElement
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[MethodDeclaration node]
+Method-name:getUnsequencedAccesses
+Method-returnType:List<VariableAccess>
+Method-parameters:[]
+MethodInvocation:emptyList
+MethodInvocation:build
+MethodInvocation:arrayListValues
+MethodInvocation:hashKeys
+MethodInvocation:put
+MethodInvocation:newHashSet
+MethodInvocation:keySet
+MethodInvocation:findUnsequenced
+MethodInvocation:get
+MethodInvocation:newArrayListWithCapacity
+MethodInvocation:size
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:extractUnsequenced
+Method-returnType:void
+Method-parameters:[Statement stmt]
+MethodInvocation:getUnsequencedAccesses
+MethodInvocation:isEmpty
+MethodInvocation:extractOrderedAccesses
+MethodInvocation:subList
+MethodInvocation:asStatementList
+Method-name:visitAndExtract
+Method-returnType:void
+Method-parameters:[Expression expr, Statement stmt]
+MethodInvocation:newExpression
+MethodInvocation:accept
+MethodInvocation:extractUnsequenced
+Method-name:extractOrderedAccesses
+Method-returnType:void
+Method-parameters:[List<Statement> stmtList, TreeNode subExpr, List<VariableAccess> toExtract]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getTopConditional
+MethodInvocation:size
+MethodInvocation:getTopConditional
+FieldAccess:expression
+MethodInvocation:get
+MethodInvocation:extractInfixConditional
+MethodInvocation:subList
+MethodInvocation:extractConditionalExpression
+MethodInvocation:subList
+MethodInvocation:toString
+MethodInvocation:getClass
+MethodInvocation:newLocalVar
+MethodInvocation:getTypeMirror
+MethodInvocation:add
+MethodInvocation:copy
+MethodInvocation:replaceWith
+Method-name:getTopConditional
+Method-returnType:TreeNode
+Method-parameters:[TreeNode node, TreeNode limit]
+MethodInvocation:getParent
+MethodInvocation:isConditional
+Method-name:extractConditionalExpression
+Method-returnType:void
+Method-parameters:[List<Statement> stmtList, ConditionalExpression conditional, List<VariableAccess> toExtract]
+MethodInvocation:getExpression
+MethodInvocation:getThenExpression
+MethodInvocation:getElseExpression
+MethodInvocation:newArrayList
+MethodInvocation:newArrayList
+MethodInvocation:newArrayList
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:extractOrderedAccesses
+MethodInvocation:getExpression
+MethodInvocation:newLocalVar
+MethodInvocation:getTypeMirror
+MethodInvocation:replaceWith
+MethodInvocation:add
+MethodInvocation:setExpression
+MethodInvocation:copy
+MethodInvocation:add
+MethodInvocation:setThenStatement
+MethodInvocation:getStatements
+MethodInvocation:extractOrderedAccesses
+MethodInvocation:getThenExpression
+MethodInvocation:add
+MethodInvocation:copy
+MethodInvocation:setElseStatement
+MethodInvocation:getStatements
+MethodInvocation:extractOrderedAccesses
+MethodInvocation:getElseExpression
+MethodInvocation:add
+MethodInvocation:copy
+MethodInvocation:extractOrderedAccesses
+MethodInvocation:extractOrderedAccesses
+Method-name:extractInfixConditional
+Method-returnType:void
+Method-parameters:[List<Statement> stmtList, InfixExpression conditional, List<VariableAccess> toExtract]
+Method-name:conditionalFromSubBranches
+Method-returnType:Expression
+Method-parameters:[List<Expression> branches, InfixExpression.Operator op]
+Method-name:isConditional
+Method-returnType:boolean
+Method-parameters:[TreeNode node]
+MethodInvocation:getOperator
+Method-name:findUnsequenced
+Method-returnType:void
+Method-parameters:[List<VariableAccess> accesses, Set<VariableAccess> toExtract]
+MethodInvocation:size
+MethodInvocation:newHashSet
+MethodInvocation:add
+MethodInvocation:getAncestors
+MethodInvocation:isUnsequenced
+MethodInvocation:add
+Method-name:getAncestors
+Method-returnType:Set<TreeNode>
+Method-parameters:[TreeNode node]
+MethodInvocation:newHashSet
+MethodInvocation:add
+MethodInvocation:getParent
+Method-name:isUnsequenced
+Method-returnType:boolean
+Method-parameters:[VariableAccess modification, Set<TreeNode> modificationAncestors, VariableAccess access]
+MethodInvocation:contains
+MethodInvocation:getParent
+MethodInvocation:isWithinConditionalBranch
+MethodInvocation:isWithinConditionalBranch
+Method-name:isWithinConditionalBranch
+Method-returnType:boolean
+Method-parameters:[TreeNode node, TreeNode limit]
+MethodInvocation:getParent
+MethodInvocation:isConditional
+MethodInvocation:getConditionChild
+Method-name:getConditionChild
+Method-returnType:Expression
+Method-parameters:[TreeNode conditional]
+MethodInvocation:getOperand
+MethodInvocation:getExpression
+MethodInvocation:toString
+MethodInvocation:getClass
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[SimpleName node]
+MethodInvocation:addVariableAccess
+MethodInvocation:getVariableElement
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ExpressionStatement node]
+MethodInvocation:visitAndExtract
+MethodInvocation:getExpression
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ReturnStatement node]
+MethodInvocation:visitAndExtract
+MethodInvocation:getExpression
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[AssertStatement node]
+MethodInvocation:getExpression
+MethodInvocation:visitAndExtract
+MethodInvocation:getMessage
+MethodInvocation:newExpression
+MethodInvocation:accept
+MethodInvocation:getUnsequencedAccesses
+MethodInvocation:isEmpty
+MethodInvocation:newLocalVar
+MethodInvocation:getTypeMirror
+MethodInvocation:insertBefore
+MethodInvocation:copy
+MethodInvocation:getExpression
+MethodInvocation:setExpression
+MethodInvocation:extractOrderedAccesses
+MethodInvocation:subList
+MethodInvocation:asStatementList
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ConstructorInvocation node]
+MethodInvocation:newExpression
+MethodInvocation:getArguments
+MethodInvocation:accept
+MethodInvocation:extractUnsequenced
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SuperConstructorInvocation node]
+MethodInvocation:newExpression
+MethodInvocation:getArguments
+MethodInvocation:accept
+MethodInvocation:extractUnsequenced
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[EnhancedForStatement node]
+MethodInvocation:visitAndExtract
+MethodInvocation:getExpression
+MethodInvocation:accept
+MethodInvocation:getBody
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[VariableDeclarationStatement node]
+MethodInvocation:extractVariableDeclarationFragments
+MethodInvocation:getFragments
+MethodInvocation:subList
+MethodInvocation:asStatementList
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[IfStatement node]
+MethodInvocation:visitAndExtract
+MethodInvocation:getExpression
+MethodInvocation:accept
+MethodInvocation:getThenStatement
+MethodInvocation:getElseStatement
+MethodInvocation:accept
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SwitchStatement node]
+MethodInvocation:visitAndExtract
+MethodInvocation:getExpression
+MethodInvocation:getStatements
+MethodInvocation:accept
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SynchronizedStatement node]
+MethodInvocation:visitAndExtract
+MethodInvocation:getExpression
+MethodInvocation:accept
+MethodInvocation:getBody
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ThrowStatement node]
+MethodInvocation:visitAndExtract
+MethodInvocation:getExpression
+Method-name:createLoopTermination
+Method-returnType:IfStatement
+Method-parameters:[Expression loopCondition]
+MethodInvocation:setExpression
+MethodInvocation:getBoolean
+MethodInvocation:parenthesize
+MethodInvocation:copy
+MethodInvocation:setThenStatement
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[WhileStatement node]
+MethodInvocation:accept
+MethodInvocation:getBody
+MethodInvocation:newExpression
+MethodInvocation:getExpression
+MethodInvocation:accept
+MethodInvocation:getExpression
+MethodInvocation:getUnsequencedAccesses
+MethodInvocation:isEmpty
+MethodInvocation:subList
+MethodInvocation:asStatementList
+MethodInvocation:getBody
+MethodInvocation:extractOrderedAccesses
+MethodInvocation:add
+MethodInvocation:createLoopTermination
+MethodInvocation:getExpression
+MethodInvocation:setExpression
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[DoStatement node]
+MethodInvocation:accept
+MethodInvocation:getBody
+MethodInvocation:newExpression
+MethodInvocation:getExpression
+MethodInvocation:accept
+MethodInvocation:getExpression
+MethodInvocation:getUnsequencedAccesses
+MethodInvocation:isEmpty
+MethodInvocation:asStatementList
+MethodInvocation:getBody
+MethodInvocation:extractOrderedAccesses
+MethodInvocation:add
+MethodInvocation:createLoopTermination
+MethodInvocation:getExpression
+MethodInvocation:setExpression
+Method-name:extractVariableDeclarationFragments
+Method-returnType:void
+Method-parameters:[List<VariableDeclarationFragment> fragments, List<Statement> stmtList]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getInitializer
+MethodInvocation:newExpression
+MethodInvocation:accept
+MethodInvocation:getUnsequencedAccesses
+MethodInvocation:isEmpty
+MethodInvocation:copy
+MethodInvocation:get
+MethodInvocation:addFragment
+MethodInvocation:copy
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:clear
+MethodInvocation:subList
+MethodInvocation:extractOrderedAccesses
+Method-name:extractExpressionList
+Method-returnType:void
+Method-parameters:[List<Expression> expressions, List<Statement> stmtList, boolean extractModifiedExpression]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:newExpression
+MethodInvocation:accept
+MethodInvocation:getUnsequencedAccesses
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:copy
+MethodInvocation:get
+MethodInvocation:clear
+MethodInvocation:subList
+MethodInvocation:extractOrderedAccesses
+MethodInvocation:add
+MethodInvocation:copy
+MethodInvocation:get
+MethodInvocation:remove
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ForStatement node]
+MethodInvocation:getInitializers
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:extractVariableDeclarationFragments
+MethodInvocation:getFragments
+MethodInvocation:subList
+MethodInvocation:asStatementList
+MethodInvocation:extractExpressionList
+MethodInvocation:subList
+MethodInvocation:asStatementList
+MethodInvocation:getExpression
+MethodInvocation:newExpression
+MethodInvocation:accept
+MethodInvocation:getUnsequencedAccesses
+MethodInvocation:isEmpty
+MethodInvocation:subList
+MethodInvocation:asStatementList
+MethodInvocation:getBody
+MethodInvocation:extractOrderedAccesses
+MethodInvocation:add
+MethodInvocation:createLoopTermination
+MethodInvocation:getExpression
+MethodInvocation:setExpression
+MethodInvocation:extractExpressionList
+MethodInvocation:getUpdaters
+MethodInvocation:asStatementList
+MethodInvocation:getBody
+MethodInvocation:accept
+MethodInvocation:getBody
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[Assignment node]
+MethodInvocation:getLeftHandSide
+MethodInvocation:getVariableElement
+MethodInvocation:accept
+MethodInvocation:accept
+MethodInvocation:getRightHandSide
+MethodInvocation:addVariableAccess
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[PrefixExpression node]
+MethodInvocation:getOperator
+MethodInvocation:addVariableAccess
+MethodInvocation:getVariableElement
+MethodInvocation:getOperand
+MethodInvocation:accept
+MethodInvocation:getOperand
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[PostfixExpression node]

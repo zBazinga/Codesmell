@@ -1,0 +1,78 @@
+Class:LockEvent
+Field:object
+Field:lockOptions
+Field:entityName
+Method-name:LockEvent
+Method-returnType:null
+Method-parameters:[String entityName, Object original, LockMode lockMode, EventSource source]
+FieldAccess:entityName
+Method-name:LockEvent
+Method-returnType:null
+Method-parameters:[String entityName, Object original, LockOptions lockOptions, EventSource source]
+FieldAccess:entityName
+Method-name:LockEvent
+Method-returnType:null
+Method-parameters:[Object object, LockMode lockMode, EventSource source]
+FieldAccess:object
+FieldAccess:lockOptions
+MethodInvocation:setLockMode
+Method-name:LockEvent
+Method-returnType:null
+Method-parameters:[Object object, LockOptions lockOptions, EventSource source]
+FieldAccess:object
+FieldAccess:lockOptions
+Method-name:getObject
+Method-returnType:Object
+Method-parameters:[]
+Method-name:setObject
+Method-returnType:void
+Method-parameters:[Object object]
+FieldAccess:object
+Method-name:getLockOptions
+Method-returnType:LockOptions
+Method-parameters:[]
+Method-name:getLockMode
+Method-returnType:LockMode
+Method-parameters:[]
+MethodInvocation:getLockMode
+Method-name:setLockMode
+Method-returnType:void
+Method-parameters:[LockMode lockMode]
+MethodInvocation:setLockMode
+FieldAccess:lockOptions
+Method-name:setLockTimeout
+Method-returnType:void
+Method-parameters:[int timeout]
+MethodInvocation:setTimeOut
+FieldAccess:lockOptions
+Method-name:getLockTimeout
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getTimeOut
+FieldAccess:lockOptions
+Method-name:setLockScope
+Method-returnType:void
+Method-parameters:[boolean cascade]
+MethodInvocation:setScope
+FieldAccess:lockOptions
+Method-name:getLockScope
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getScope
+FieldAccess:lockOptions
+Method-name:getEntityName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setEntityName
+Method-returnType:void
+Method-parameters:[String entityName]
+FieldAccess:entityName
+Method-name:cascadeOnLock
+Method-returnType:void
+Method-parameters:[EntityPersister persister, Object entity, DefaultLockEventListener defaultLockEventListener]
+MethodInvocation:getSession
+MethodInvocation:getPersistenceContextInternal
+MethodInvocation:incrementCascadeLevel
+MethodInvocation:cascade
+MethodInvocation:getLockOptions
+MethodInvocation:decrementCascadeLevel

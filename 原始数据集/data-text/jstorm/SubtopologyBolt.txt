@@ -1,0 +1,110 @@
+Class:SubtopologyBolt
+Field:_graph
+Field:_nodes
+Field:_roots
+Field:_outputFactories
+Field:_myTopologicallyOrdered
+Field:_batchGroups
+Method-name:SubtopologyBolt
+Method-returnType:null
+Method-parameters:[DirectedGraph graph, Set<Node> nodes, Map<Node,String> batchGroups]
+Method-name:prepare
+Method-returnType:void
+Method-parameters:[Map conf, TopologyContext context, BatchOutputCollector batchCollector]
+MethodInvocation:size
+MethodInvocation:getComponentTasks
+MethodInvocation:getThisComponentId
+MethodInvocation:makeState
+MethodInvocation:getThisTaskIndex
+MethodInvocation:setTaskData
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:get
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:getParents
+MethodInvocation:add
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:getSourceOutputFields
+MethodInvocation:addReceiver
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:getOutputFactory
+MethodInvocation:get
+MethodInvocation:getChildren
+MethodInvocation:contains
+MethodInvocation:add
+FieldAccess:processor
+MethodInvocation:add
+MethodInvocation:prepare
+MethodInvocation:put
+MethodInvocation:getOutputFactory
+Method-name:getSourceOutputFields
+Method-returnType:Fields
+Method-parameters:[TopologyContext context, String sourceStream]
+MethodInvocation:keySet
+MethodInvocation:getThisSources
+MethodInvocation:equals
+MethodInvocation:get_streamId
+MethodInvocation:getComponentOutputFields
+Method-name:execute
+Method-returnType:void
+Method-parameters:[BatchInfo batchInfo, Tuple tuple]
+MethodInvocation:getSourceStreamId
+MethodInvocation:get
+MethodInvocation:toString
+MethodInvocation:receive
+Method-name:finishBatch
+Method-returnType:void
+Method-parameters:[BatchInfo batchInfo]
+MethodInvocation:get
+MethodInvocation:finishBatch
+Method-name:initBatchState
+Method-returnType:Object
+Method-parameters:[String batchGroup, Object batchId]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:startBatch
+Method-name:cleanup
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:keySet
+MethodInvocation:get
+MethodInvocation:cleanup
+Method-name:declareOutputFields
+Method-returnType:void
+Method-parameters:[OutputFieldsDeclarer declarer]
+MethodInvocation:declareStream
+MethodInvocation:fieldsConcat
+Method-name:getComponentConfiguration
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+Class:InitialReceiver
+Field:_receivers
+Field:_factory
+Field:_project
+Field:_stream
+Method-name:InitialReceiver
+Method-returnType:null
+Method-parameters:[String stream, Fields allFields]
+MethodInvocation:toList
+MethodInvocation:remove
+Method-name:receive
+Method-returnType:void
+Method-parameters:[ProcessorContext context, Tuple tuple]
+MethodInvocation:create
+MethodInvocation:create
+MethodInvocation:execute
+Method-name:addReceiver
+Method-returnType:void
+Method-parameters:[TridentProcessor p]
+MethodInvocation:add
+Method-name:getOutputFactory
+Method-returnType:Factory
+Method-parameters:[]

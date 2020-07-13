@@ -1,0 +1,62 @@
+Class:DirectCompilerResult
+Field:expression
+Field:resultType
+Field:fieldDeclarations
+Method-name:DirectCompilerResult
+Method-returnType:null
+Method-parameters:[Expression expression, Type resultType, Set<FieldDeclaration> fieldDeclarations]
+FieldAccess:expression
+FieldAccess:resultType
+MethodInvocation:addAll
+FieldAccess:fieldDeclarations
+Method-name:of
+Method-returnType:DirectCompilerResult
+Method-parameters:[Expression expression, Type resultType]
+MethodInvocation:emptySet
+Method-name:of
+Method-returnType:DirectCompilerResult
+Method-parameters:[Expression expression, Type resultType, Set<FieldDeclaration> fieldDeclarations]
+Method-name:of
+Method-returnType:DirectCompilerResult
+Method-parameters:[Expression expression, Type resultType, FieldDeclaration fieldDeclaration]
+MethodInvocation:add
+Method-name:withFD
+Method-returnType:DirectCompilerResult
+Method-parameters:[DirectCompilerResult from]
+MethodInvocation:addAll
+FieldAccess:fieldDeclarations
+MethodInvocation:getFieldDeclarations
+Method-name:withFD
+Method-returnType:DirectCompilerResult
+Method-parameters:[Set<FieldDeclaration> from]
+MethodInvocation:addAll
+FieldAccess:fieldDeclarations
+Method-name:getFieldDeclarations
+Method-returnType:Set<FieldDeclaration>
+Method-parameters:[]
+MethodInvocation:unmodifiableSet
+Method-name:addFieldDesclaration
+Method-returnType:boolean
+Method-parameters:[FieldDeclaration d]
+MethodInvocation:add
+Method-name:mergeFDs
+Method-returnType:Set<FieldDeclaration>
+Method-parameters:[List<DirectCompilerResult> sets]
+MethodInvocation:addAll
+MethodInvocation:getFieldDeclarations
+Method-name:mergeFDs
+Method-returnType:Set<FieldDeclaration>
+Method-parameters:[DirectCompilerResult... sets]
+MethodInvocation:mergeFDs
+MethodInvocation:asList
+Method-name:getExpression
+Method-returnType:Expression
+Method-parameters:[]
+Method-name:isNumericConstant
+Method-returnType:boolean
+Method-parameters:[DirectCompilerVisitor directCompilerVisitor]
+MethodInvocation:isNameExpr
+MethodInvocation:getExpression
+MethodInvocation:equals
+MethodInvocation:size
+MethodInvocation:getFieldDeclarations

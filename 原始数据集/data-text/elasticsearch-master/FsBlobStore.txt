@@ -1,0 +1,37 @@
+Class:FsBlobStore
+Field:path
+Field:bufferSizeInBytes
+Field:readOnly
+Method-name:FsBlobStore
+Method-returnType:null
+Method-parameters:[Settings settings, Path path, boolean readonly]
+FieldAccess:path
+FieldAccess:readOnly
+FieldAccess:readOnly
+MethodInvocation:createDirectories
+FieldAccess:bufferSizeInBytes
+MethodInvocation:getBytes
+MethodInvocation:getAsBytesSize
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:path
+Method-returnType:Path
+Method-parameters:[]
+Method-name:bufferSizeInBytes
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:bufferSizeInBytes
+Method-name:blobContainer
+Method-returnType:BlobContainer
+Method-parameters:[BlobPath path]
+MethodInvocation:buildAndCreate
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+Method-name:buildAndCreate
+Method-returnType:Path
+Method-parameters:[BlobPath path]
+MethodInvocation:buildPath
+MethodInvocation:createDirectories

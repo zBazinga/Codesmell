@@ -1,0 +1,836 @@
+Class:Walker
+Method-name:buildPainlessTree
+Method-returnType:SClass
+Method-parameters:[ScriptClassInfo mainMethod, String sourceName, String sourceText, CompilerSettings settings]
+FieldAccess:source
+Field:scriptClassInfo
+Field:source
+Field:settings
+Field:sourceName
+Method-name:Walker
+Method-returnType:null
+Method-parameters:[ScriptClassInfo scriptClassInfo, String sourceName, String sourceText, CompilerSettings settings]
+FieldAccess:scriptClassInfo
+FieldAccess:settings
+FieldAccess:sourceName
+FieldAccess:source
+MethodInvocation:visit
+MethodInvocation:buildAntlrTree
+Method-name:buildAntlrTree
+Method-returnType:SourceContext
+Method-parameters:[String source]
+MethodInvocation:removeErrorListeners
+MethodInvocation:removeErrorListeners
+MethodInvocation:isPicky
+MethodInvocation:setupPicky
+MethodInvocation:setErrorHandler
+MethodInvocation:source
+Method-name:setupPicky
+Method-returnType:void
+Method-parameters:[PainlessParser parser]
+MethodInvocation:addErrorListener
+MethodInvocation:addErrorListener
+Method-name:syntaxError
+Method-returnType:void
+Method-parameters:[final Recognizer<?,?> recognizer, final Object offendingSymbol, final int line, final int charPositionInLine, final String msg, final RecognitionException e]
+MethodInvocation:setPredictionMode
+MethodInvocation:getInterpreter
+Method-name:location
+Method-returnType:Location
+Method-parameters:[ParserRuleContext ctx]
+MethodInvocation:getStartIndex
+MethodInvocation:getStart
+Method-name:location
+Method-returnType:Location
+Method-parameters:[TerminalNode tn]
+MethodInvocation:getStartIndex
+MethodInvocation:getSymbol
+Method-name:visitSource
+Method-returnType:ANode
+Method-parameters:[SourceContext ctx]
+MethodInvocation:function
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:size
+MethodInvocation:getGetMethods
+MethodInvocation:get
+MethodInvocation:getGetMethods
+MethodInvocation:substring
+MethodInvocation:getName
+MethodInvocation:toLowerCase
+MethodInvocation:charAt
+MethodInvocation:substring
+MethodInvocation:add
+MethodInvocation:location
+MethodInvocation:location
+MethodInvocation:get
+MethodInvocation:getGetReturns
+MethodInvocation:statement
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:typeToCanonicalTypeName
+MethodInvocation:getExecuteMethodReturnType
+MethodInvocation:getExecuteArguments
+MethodInvocation:add
+MethodInvocation:typeToCanonicalTypeName
+MethodInvocation:getClazz
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:location
+MethodInvocation:location
+MethodInvocation:add
+MethodInvocation:location
+Method-name:visitFunction
+Method-returnType:ANode
+Method-parameters:[FunctionContext ctx]
+MethodInvocation:getText
+MethodInvocation:decltype
+MethodInvocation:getText
+MethodInvocation:ID
+MethodInvocation:decltype
+MethodInvocation:parameters
+MethodInvocation:add
+MethodInvocation:getText
+MethodInvocation:ID
+MethodInvocation:parameters
+MethodInvocation:add
+MethodInvocation:getText
+MethodInvocation:statement
+MethodInvocation:block
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:dstatement
+MethodInvocation:block
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:dstatement
+MethodInvocation:block
+MethodInvocation:location
+MethodInvocation:location
+Method-name:visitParameters
+Method-returnType:ANode
+Method-parameters:[ParametersContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitStatement
+Method-returnType:ANode
+Method-parameters:[StatementContext ctx]
+MethodInvocation:rstatement
+MethodInvocation:visit
+MethodInvocation:rstatement
+MethodInvocation:dstatement
+MethodInvocation:visit
+MethodInvocation:dstatement
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitIf
+Method-returnType:ANode
+Method-parameters:[IfContext ctx]
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:visit
+MethodInvocation:trailer
+MethodInvocation:size
+MethodInvocation:trailer
+MethodInvocation:visit
+MethodInvocation:trailer
+MethodInvocation:location
+MethodInvocation:location
+Method-name:visitWhile
+Method-returnType:ANode
+Method-parameters:[WhileContext ctx]
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:trailer
+MethodInvocation:visit
+MethodInvocation:trailer
+MethodInvocation:location
+MethodInvocation:empty
+MethodInvocation:location
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitDo
+Method-returnType:ANode
+Method-parameters:[DoContext ctx]
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:visit
+MethodInvocation:block
+MethodInvocation:location
+Method-name:visitFor
+Method-returnType:ANode
+Method-parameters:[ForContext ctx]
+MethodInvocation:initializer
+MethodInvocation:visit
+MethodInvocation:initializer
+MethodInvocation:expression
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:afterthought
+MethodInvocation:visit
+MethodInvocation:afterthought
+MethodInvocation:trailer
+MethodInvocation:visit
+MethodInvocation:trailer
+MethodInvocation:location
+MethodInvocation:empty
+MethodInvocation:location
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitEach
+Method-returnType:ANode
+Method-parameters:[EachContext ctx]
+MethodInvocation:getText
+MethodInvocation:decltype
+MethodInvocation:getText
+MethodInvocation:ID
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:visit
+MethodInvocation:trailer
+MethodInvocation:location
+Method-name:visitIneach
+Method-returnType:ANode
+Method-parameters:[IneachContext ctx]
+MethodInvocation:getText
+MethodInvocation:ID
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:visit
+MethodInvocation:trailer
+MethodInvocation:location
+Method-name:visitDecl
+Method-returnType:ANode
+Method-parameters:[DeclContext ctx]
+MethodInvocation:visit
+MethodInvocation:declaration
+Method-name:visitContinue
+Method-returnType:ANode
+Method-parameters:[ContinueContext ctx]
+MethodInvocation:location
+Method-name:visitBreak
+Method-returnType:ANode
+Method-parameters:[BreakContext ctx]
+MethodInvocation:location
+Method-name:visitReturn
+Method-returnType:ANode
+Method-parameters:[ReturnContext ctx]
+MethodInvocation:expression
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:location
+Method-name:visitTry
+Method-returnType:ANode
+Method-parameters:[TryContext ctx]
+MethodInvocation:visit
+MethodInvocation:block
+MethodInvocation:trap
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:location
+Method-name:visitThrow
+Method-returnType:ANode
+Method-parameters:[ThrowContext ctx]
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:location
+Method-name:visitExpr
+Method-returnType:ANode
+Method-parameters:[ExprContext ctx]
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:location
+Method-name:visitTrailer
+Method-returnType:ANode
+Method-parameters:[TrailerContext ctx]
+MethodInvocation:block
+MethodInvocation:visit
+MethodInvocation:block
+MethodInvocation:statement
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:statement
+MethodInvocation:location
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitBlock
+Method-returnType:ANode
+Method-parameters:[BlockContext ctx]
+MethodInvocation:isEmpty
+MethodInvocation:statement
+MethodInvocation:dstatement
+MethodInvocation:statement
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:dstatement
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:dstatement
+MethodInvocation:location
+Method-name:visitEmpty
+Method-returnType:ANode
+Method-parameters:[EmptyContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitInitializer
+Method-returnType:ANode
+Method-parameters:[InitializerContext ctx]
+MethodInvocation:declaration
+MethodInvocation:visit
+MethodInvocation:declaration
+MethodInvocation:expression
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitAfterthought
+Method-returnType:ANode
+Method-parameters:[AfterthoughtContext ctx]
+MethodInvocation:visit
+MethodInvocation:expression
+Method-name:visitDeclaration
+Method-returnType:ANode
+Method-parameters:[DeclarationContext ctx]
+MethodInvocation:getText
+MethodInvocation:decltype
+MethodInvocation:declvar
+MethodInvocation:getText
+MethodInvocation:ID
+MethodInvocation:expression
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:location
+MethodInvocation:add
+MethodInvocation:location
+MethodInvocation:location
+Method-name:visitDecltype
+Method-returnType:ANode
+Method-parameters:[DecltypeContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitType
+Method-returnType:ANode
+Method-parameters:[TypeContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitDeclvar
+Method-returnType:ANode
+Method-parameters:[DeclvarContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitTrap
+Method-returnType:ANode
+Method-parameters:[TrapContext ctx]
+MethodInvocation:getText
+MethodInvocation:type
+MethodInvocation:getText
+MethodInvocation:ID
+MethodInvocation:visit
+MethodInvocation:block
+MethodInvocation:location
+MethodInvocation:location
+MethodInvocation:location
+MethodInvocation:type
+MethodInvocation:location
+MethodInvocation:type
+Method-name:visitSingle
+Method-returnType:ANode
+Method-parameters:[SingleContext ctx]
+MethodInvocation:visit
+MethodInvocation:unary
+Method-name:visitBinary
+Method-returnType:ANode
+Method-parameters:[BinaryContext ctx]
+MethodInvocation:visit
+MethodInvocation:noncondexpression
+MethodInvocation:visit
+MethodInvocation:noncondexpression
+MethodInvocation:MUL
+MethodInvocation:DIV
+MethodInvocation:REM
+MethodInvocation:ADD
+MethodInvocation:SUB
+MethodInvocation:FIND
+MethodInvocation:MATCH
+MethodInvocation:LSH
+MethodInvocation:RSH
+MethodInvocation:USH
+MethodInvocation:BWAND
+MethodInvocation:XOR
+MethodInvocation:BWOR
+MethodInvocation:createError
+MethodInvocation:location
+MethodInvocation:location
+Method-name:visitComp
+Method-returnType:ANode
+Method-parameters:[CompContext ctx]
+MethodInvocation:visit
+MethodInvocation:noncondexpression
+MethodInvocation:visit
+MethodInvocation:noncondexpression
+MethodInvocation:LT
+MethodInvocation:LTE
+MethodInvocation:GT
+MethodInvocation:GTE
+MethodInvocation:EQ
+MethodInvocation:EQR
+MethodInvocation:NE
+MethodInvocation:NER
+MethodInvocation:createError
+MethodInvocation:location
+MethodInvocation:location
+Method-name:visitInstanceof
+Method-returnType:ANode
+Method-parameters:[InstanceofContext ctx]
+MethodInvocation:visit
+MethodInvocation:noncondexpression
+MethodInvocation:getText
+MethodInvocation:decltype
+MethodInvocation:location
+Method-name:visitBool
+Method-returnType:ANode
+Method-parameters:[BoolContext ctx]
+MethodInvocation:visit
+MethodInvocation:noncondexpression
+MethodInvocation:visit
+MethodInvocation:noncondexpression
+MethodInvocation:BOOLAND
+MethodInvocation:BOOLOR
+MethodInvocation:createError
+MethodInvocation:location
+MethodInvocation:location
+Method-name:visitElvis
+Method-returnType:ANode
+Method-parameters:[ElvisContext ctx]
+MethodInvocation:visit
+MethodInvocation:noncondexpression
+MethodInvocation:visit
+MethodInvocation:noncondexpression
+MethodInvocation:location
+Method-name:visitNonconditional
+Method-returnType:ANode
+Method-parameters:[NonconditionalContext ctx]
+MethodInvocation:visit
+MethodInvocation:noncondexpression
+Method-name:visitConditional
+Method-returnType:ANode
+Method-parameters:[ConditionalContext ctx]
+MethodInvocation:visit
+MethodInvocation:noncondexpression
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:location
+Method-name:visitAssignment
+Method-returnType:ANode
+Method-parameters:[AssignmentContext ctx]
+MethodInvocation:visit
+MethodInvocation:noncondexpression
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:ASSIGN
+MethodInvocation:AMUL
+MethodInvocation:ADIV
+MethodInvocation:AREM
+MethodInvocation:AADD
+MethodInvocation:ASUB
+MethodInvocation:ALSH
+MethodInvocation:ARSH
+MethodInvocation:AUSH
+MethodInvocation:AAND
+MethodInvocation:AXOR
+MethodInvocation:AOR
+MethodInvocation:createError
+MethodInvocation:location
+MethodInvocation:location
+Method-name:visitPre
+Method-returnType:ANode
+Method-parameters:[PreContext ctx]
+MethodInvocation:visit
+MethodInvocation:chain
+MethodInvocation:INCR
+MethodInvocation:DECR
+MethodInvocation:createError
+MethodInvocation:location
+MethodInvocation:location
+MethodInvocation:location
+Method-name:visitAddsub
+Method-returnType:ANode
+Method-parameters:[AddsubContext ctx]
+MethodInvocation:visit
+MethodInvocation:unary
+MethodInvocation:ADD
+MethodInvocation:SUB
+MethodInvocation:createError
+MethodInvocation:location
+MethodInvocation:location
+Method-name:visitNotaddsub
+Method-returnType:ANode
+Method-parameters:[NotaddsubContext ctx]
+MethodInvocation:visit
+MethodInvocation:unarynotaddsub
+Method-name:visitRead
+Method-returnType:ANode
+Method-parameters:[ReadContext ctx]
+MethodInvocation:visit
+MethodInvocation:chain
+Method-name:visitPost
+Method-returnType:ANode
+Method-parameters:[PostContext ctx]
+MethodInvocation:visit
+MethodInvocation:chain
+MethodInvocation:INCR
+MethodInvocation:DECR
+MethodInvocation:createError
+MethodInvocation:location
+MethodInvocation:location
+MethodInvocation:location
+Method-name:visitNot
+Method-returnType:ANode
+Method-parameters:[NotContext ctx]
+MethodInvocation:visit
+MethodInvocation:unary
+MethodInvocation:BOOLNOT
+MethodInvocation:BWNOT
+MethodInvocation:createError
+MethodInvocation:location
+MethodInvocation:location
+Method-name:visitCast
+Method-returnType:ANode
+Method-parameters:[CastContext ctx]
+MethodInvocation:visit
+MethodInvocation:castexpression
+Method-name:visitPrimordefcast
+Method-returnType:ANode
+Method-parameters:[PainlessParser.PrimordefcastContext ctx]
+MethodInvocation:getText
+MethodInvocation:primordefcasttype
+MethodInvocation:visit
+MethodInvocation:unary
+MethodInvocation:location
+MethodInvocation:location
+MethodInvocation:primordefcasttype
+Method-name:visitRefcast
+Method-returnType:ANode
+Method-parameters:[PainlessParser.RefcastContext ctx]
+MethodInvocation:getText
+MethodInvocation:refcasttype
+MethodInvocation:visit
+MethodInvocation:unarynotaddsub
+MethodInvocation:location
+MethodInvocation:location
+MethodInvocation:refcasttype
+Method-name:visitPrimordefcasttype
+Method-returnType:ANode
+Method-parameters:[PainlessParser.PrimordefcasttypeContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitRefcasttype
+Method-returnType:ANode
+Method-parameters:[PainlessParser.RefcasttypeContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitDynamic
+Method-returnType:ANode
+Method-parameters:[DynamicContext ctx]
+MethodInvocation:visit
+MethodInvocation:primary
+MethodInvocation:buildPostfixChain
+MethodInvocation:postfix
+Method-name:visitNewarray
+Method-returnType:ANode
+Method-parameters:[NewarrayContext ctx]
+MethodInvocation:visit
+MethodInvocation:arrayinitializer
+Method-name:visitPrecedence
+Method-returnType:ANode
+Method-parameters:[PrecedenceContext ctx]
+MethodInvocation:visit
+MethodInvocation:expression
+Method-name:visitNumeric
+Method-returnType:ANode
+Method-parameters:[NumericContext ctx]
+MethodInvocation:DECIMAL
+MethodInvocation:location
+MethodInvocation:getText
+MethodInvocation:DECIMAL
+MethodInvocation:HEX
+MethodInvocation:location
+MethodInvocation:substring
+MethodInvocation:getText
+MethodInvocation:HEX
+MethodInvocation:INTEGER
+MethodInvocation:location
+MethodInvocation:getText
+MethodInvocation:INTEGER
+MethodInvocation:OCTAL
+MethodInvocation:location
+MethodInvocation:substring
+MethodInvocation:getText
+MethodInvocation:OCTAL
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitTrue
+Method-returnType:ANode
+Method-parameters:[TrueContext ctx]
+MethodInvocation:location
+Method-name:visitFalse
+Method-returnType:ANode
+Method-parameters:[FalseContext ctx]
+MethodInvocation:location
+Method-name:visitNull
+Method-returnType:ANode
+Method-parameters:[NullContext ctx]
+MethodInvocation:location
+Method-name:visitString
+Method-returnType:ANode
+Method-parameters:[StringContext ctx]
+Method-name:visitRegex
+Method-returnType:ANode
+Method-parameters:[RegexContext ctx]
+MethodInvocation:getText
+MethodInvocation:REGEX
+MethodInvocation:lastIndexOf
+MethodInvocation:substring
+MethodInvocation:substring
+MethodInvocation:location
+Method-name:visitListinit
+Method-returnType:ANode
+Method-parameters:[ListinitContext ctx]
+MethodInvocation:visit
+MethodInvocation:listinitializer
+Method-name:visitMapinit
+Method-returnType:ANode
+Method-parameters:[MapinitContext ctx]
+MethodInvocation:visit
+MethodInvocation:mapinitializer
+Method-name:visitVariable
+Method-returnType:ANode
+Method-parameters:[VariableContext ctx]
+MethodInvocation:getText
+MethodInvocation:ID
+MethodInvocation:location
+Method-name:visitCalllocal
+Method-returnType:ANode
+Method-parameters:[CalllocalContext ctx]
+MethodInvocation:getText
+MethodInvocation:ID
+MethodInvocation:collectArguments
+MethodInvocation:arguments
+MethodInvocation:location
+Method-name:visitNewobject
+Method-returnType:ANode
+Method-parameters:[NewobjectContext ctx]
+MethodInvocation:getText
+MethodInvocation:type
+MethodInvocation:collectArguments
+MethodInvocation:arguments
+MethodInvocation:location
+Method-name:visitPostfix
+Method-returnType:ANode
+Method-parameters:[PostfixContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitPostfix
+Method-returnType:AExpression
+Method-parameters:[PostfixContext ctx, AExpression prefix]
+MethodInvocation:callinvoke
+MethodInvocation:visitCallinvoke
+MethodInvocation:callinvoke
+MethodInvocation:fieldaccess
+MethodInvocation:visitFieldaccess
+MethodInvocation:fieldaccess
+MethodInvocation:braceaccess
+MethodInvocation:visitBraceaccess
+MethodInvocation:braceaccess
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitPostdot
+Method-returnType:ANode
+Method-parameters:[PostdotContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitPostdot
+Method-returnType:AExpression
+Method-parameters:[PostdotContext ctx, AExpression prefix]
+MethodInvocation:callinvoke
+MethodInvocation:visitCallinvoke
+MethodInvocation:callinvoke
+MethodInvocation:fieldaccess
+MethodInvocation:visitFieldaccess
+MethodInvocation:fieldaccess
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitCallinvoke
+Method-returnType:ANode
+Method-parameters:[CallinvokeContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitCallinvoke
+Method-returnType:AExpression
+Method-parameters:[CallinvokeContext ctx, AExpression prefix]
+MethodInvocation:getText
+MethodInvocation:DOTID
+MethodInvocation:collectArguments
+MethodInvocation:arguments
+MethodInvocation:location
+MethodInvocation:NSDOT
+Method-name:visitFieldaccess
+Method-returnType:ANode
+Method-parameters:[FieldaccessContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitFieldaccess
+Method-returnType:AExpression
+Method-parameters:[FieldaccessContext ctx, AExpression prefix]
+MethodInvocation:DOTID
+MethodInvocation:getText
+MethodInvocation:DOTID
+MethodInvocation:DOTINTEGER
+MethodInvocation:getText
+MethodInvocation:DOTINTEGER
+MethodInvocation:createError
+MethodInvocation:location
+MethodInvocation:location
+MethodInvocation:NSDOT
+Method-name:visitBraceaccess
+Method-returnType:ANode
+Method-parameters:[BraceaccessContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitBraceaccess
+Method-returnType:AExpression
+Method-parameters:[BraceaccessContext ctx, AExpression prefix]
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:location
+Method-name:visitNewstandardarray
+Method-returnType:ANode
+Method-parameters:[NewstandardarrayContext ctx]
+MethodInvocation:getText
+MethodInvocation:type
+MethodInvocation:expression
+MethodInvocation:append
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:buildPostfixChain
+MethodInvocation:location
+MethodInvocation:toString
+MethodInvocation:postdot
+MethodInvocation:postfix
+Method-name:visitNewinitializedarray
+Method-returnType:ANode
+Method-parameters:[NewinitializedarrayContext ctx]
+MethodInvocation:getText
+MethodInvocation:type
+MethodInvocation:expression
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:buildPostfixChain
+MethodInvocation:location
+MethodInvocation:postfix
+Method-name:visitListinitializer
+Method-returnType:ANode
+Method-parameters:[ListinitializerContext ctx]
+MethodInvocation:expression
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:location
+Method-name:visitMapinitializer
+Method-returnType:ANode
+Method-parameters:[MapinitializerContext ctx]
+MethodInvocation:maptoken
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:add
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:location
+Method-name:visitMaptoken
+Method-returnType:ANode
+Method-parameters:[MaptokenContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitArguments
+Method-returnType:ANode
+Method-parameters:[ArgumentsContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:collectArguments
+Method-returnType:List<AExpression>
+Method-parameters:[ArgumentsContext ctx]
+MethodInvocation:argument
+MethodInvocation:add
+MethodInvocation:visit
+Method-name:visitArgument
+Method-returnType:ANode
+Method-parameters:[ArgumentContext ctx]
+MethodInvocation:expression
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:lambda
+MethodInvocation:visit
+MethodInvocation:lambda
+MethodInvocation:funcref
+MethodInvocation:visit
+MethodInvocation:funcref
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitLambda
+Method-returnType:ANode
+Method-parameters:[LambdaContext ctx]
+MethodInvocation:lamtype
+MethodInvocation:decltype
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:getText
+MethodInvocation:decltype
+MethodInvocation:add
+MethodInvocation:getText
+MethodInvocation:ID
+MethodInvocation:expression
+MethodInvocation:visit
+MethodInvocation:expression
+MethodInvocation:location
+MethodInvocation:singletonList
+MethodInvocation:location
+MethodInvocation:visit
+MethodInvocation:block
+MethodInvocation:location
+Method-name:visitLamtype
+Method-returnType:ANode
+Method-parameters:[LamtypeContext ctx]
+MethodInvocation:createError
+MethodInvocation:location
+Method-name:visitClassfuncref
+Method-returnType:ANode
+Method-parameters:[ClassfuncrefContext ctx]
+MethodInvocation:location
+MethodInvocation:getText
+MethodInvocation:decltype
+MethodInvocation:getText
+MethodInvocation:ID
+Method-name:visitConstructorfuncref
+Method-returnType:ANode
+Method-parameters:[ConstructorfuncrefContext ctx]
+MethodInvocation:isEmpty
+MethodInvocation:LBRACE
+MethodInvocation:decltype
+MethodInvocation:location
+MethodInvocation:getText
+MethodInvocation:decltype
+MethodInvocation:getText
+MethodInvocation:NEW
+MethodInvocation:location
+MethodInvocation:getText
+MethodInvocation:decltype
+Method-name:visitLocalfuncref
+Method-returnType:ANode
+Method-parameters:[LocalfuncrefContext ctx]
+MethodInvocation:location
+MethodInvocation:getText
+MethodInvocation:THIS
+MethodInvocation:getText
+MethodInvocation:ID

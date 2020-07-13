@@ -1,0 +1,192 @@
+Class:AndroidResources
+Field:RESOURCE_DIRECTORY_TYPES
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:values
+MethodInvocation:toImmutableSet
+Field:INCORRECT_RESOURCE_LAYOUT_MESSAGE
+MethodInvocation:format
+MethodInvocation:join
+MethodInvocation:on
+Field:DEFAULT_RESOURCES_ATTR
+Field:RESOURCES_ATTRIBUTES
+Field:resources
+Field:resourceRoots
+Method-name:AndroidResources
+Method-returnType:null
+Method-parameters:[AndroidResources other]
+Method-name:AndroidResources
+Method-returnType:null
+Method-parameters:[ImmutableList<Artifact> resources, ImmutableList<PathFragment> resourceRoots]
+FieldAccess:resources
+FieldAccess:resourceRoots
+Method-name:definesAndroidResources
+Method-returnType:boolean
+Method-parameters:[AttributeMap attributes]
+MethodInvocation:isAttributeValueExplicitlySpecified
+Method-name:validateRuleContext
+Method-returnType:void
+Method-parameters:[RuleContext ruleContext]
+MethodInvocation:validateAssetsAndAssetsDir
+MethodInvocation:validateNoAndroidResourcesInSources
+MethodInvocation:validateManifest
+Method-name:validateNoAndroidResourcesInSources
+Method-returnType:void
+Method-parameters:[RuleContext ruleContext]
+MethodInvocation:getPrerequisites
+MethodInvocation:throwWithAttributeError
+MethodInvocation:format
+MethodInvocation:getLabel
+Method-name:validateManifest
+Method-returnType:void
+Method-parameters:[RuleContext ruleContext]
+MethodInvocation:getPrerequisiteArtifact
+MethodInvocation:throwWithAttributeError
+Method-name:from
+Method-returnType:AndroidResources
+Method-parameters:[RuleContext ruleContext, String resourcesAttr]
+MethodInvocation:hasLocalResourcesAttributes
+MethodInvocation:attributes
+MethodInvocation:empty
+MethodInvocation:from
+MethodInvocation:getPrerequisites
+Method-name:from
+Method-returnType:AndroidResources
+Method-parameters:[RuleErrorConsumer errorConsumer, Iterable<FileProvider> resourcesTargets, String resourcesAttr]
+MethodInvocation:forResources
+MethodInvocation:getResources
+Method-name:forResources
+Method-returnType:AndroidResources
+Method-parameters:[RuleErrorConsumer ruleErrorConsumer, ImmutableList<Artifact> resources, String resourcesAttr]
+MethodInvocation:getResourceRoots
+Method-name:hasLocalResourcesAttributes
+Method-returnType:boolean
+Method-parameters:[AttributeMap attrs]
+MethodInvocation:has
+MethodInvocation:has
+Method-name:empty
+Method-returnType:AndroidResources
+Method-parameters:[]
+MethodInvocation:of
+MethodInvocation:of
+Method-name:forAarImport
+Method-returnType:AndroidResources
+Method-parameters:[SpecialArtifact resourcesDir]
+MethodInvocation:checkArgument
+MethodInvocation:isTreeArtifact
+MethodInvocation:of
+MethodInvocation:of
+MethodInvocation:getChild
+MethodInvocation:getExecPath
+Method-name:addResourceDir
+Method-returnType:PathFragment
+Method-parameters:[Artifact file, @Nullable Artifact lastFile, @Nullable PathFragment lastResourceDir, Set<PathFragment> resourceRoots, String resourcesAttr, RuleErrorConsumer ruleErrorConsumer]
+MethodInvocation:findResourceDir
+MethodInvocation:throwWithAttributeError
+MethodInvocation:format
+MethodInvocation:getRootRelativePath
+MethodInvocation:equals
+MethodInvocation:throwWithAttributeError
+MethodInvocation:format
+MethodInvocation:getRootRelativePath
+MethodInvocation:getOwnerLabel
+MethodInvocation:getRootRelativePath
+MethodInvocation:getSourceRoot
+MethodInvocation:getPackageIdentifier
+MethodInvocation:getOwnerLabel
+MethodInvocation:relativeTo
+MethodInvocation:getRootRelativePath
+MethodInvocation:getExecPath
+MethodInvocation:add
+MethodInvocation:subFragment
+MethodInvocation:segmentCount
+MethodInvocation:segmentCountAfterAncestor
+MethodInvocation:throwWithAttributeError
+MethodInvocation:format
+MethodInvocation:getRootRelativePath
+MethodInvocation:getOwnerLabel
+MethodInvocation:getRootRelativePath
+Method-name:findResourceDir
+Method-returnType:PathFragment
+Method-parameters:[Artifact artifact]
+MethodInvocation:getExecPath
+MethodInvocation:segmentCount
+MethodInvocation:isFileset
+MethodInvocation:isTreeArtifact
+MethodInvocation:subFragment
+MethodInvocation:getSegment
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:contains
+MethodInvocation:subFragment
+Method-name:segmentCountAfterAncestor
+Method-returnType:int
+Method-parameters:[PathFragment ancestor, PathFragment path]
+MethodInvocation:getSegment
+MethodInvocation:segmentCount
+MethodInvocation:getSegments
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:size
+Method-name:getResources
+Method-returnType:ImmutableList<Artifact>
+Method-parameters:[Iterable<FileProvider> targets]
+MethodInvocation:builder
+MethodInvocation:addAll
+MethodInvocation:toList
+MethodInvocation:getFilesToBuild
+MethodInvocation:build
+Method-name:getResourceRoots
+Method-returnType:ImmutableList<PathFragment>
+Method-parameters:[RuleErrorConsumer ruleErrorConsumer, Iterable<Artifact> files, String resourcesAttr]
+MethodInvocation:addResourceDir
+MethodInvocation:copyOf
+Method-name:getResources
+Method-returnType:ImmutableList<Artifact>
+Method-parameters:[]
+Method-name:getResourceRoots
+Method-returnType:ImmutableList<PathFragment>
+Method-parameters:[]
+Method-name:maybeFilter
+Method-returnType:Optional<? extends AndroidResources>
+Method-parameters:[RuleErrorConsumer errorConsumer, ResourceFilter resourceFilter, boolean isDependency]
+MethodInvocation:maybeFilter
+MethodInvocation:isPresent
+MethodInvocation:empty
+MethodInvocation:of
+MethodInvocation:get
+MethodInvocation:getResourceRoots
+MethodInvocation:get
+Method-name:parse
+Method-returnType:ParsedAndroidResources
+Method-parameters:[AndroidDataContext dataContext, StampedAndroidManifest manifest, DataBindingContext dataBindingContext]
+MethodInvocation:parseFrom
+Method-name:process
+Method-returnType:ValidatedAndroidResources
+Method-parameters:[RuleContext ruleContext, AndroidDataContext dataContext, StampedAndroidManifest manifest, DataBindingContext dataBindingContext, boolean neverlink]
+MethodInvocation:process
+MethodInvocation:fromRuleDeps
+Method-name:process
+Method-returnType:ValidatedAndroidResources
+Method-parameters:[AndroidDataContext dataContext, StampedAndroidManifest manifest, ResourceDependencies resourceDeps, DataBindingContext dataBindingContext]
+MethodInvocation:validate
+MethodInvocation:merge
+MethodInvocation:parse
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object object]
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:toStringHelper

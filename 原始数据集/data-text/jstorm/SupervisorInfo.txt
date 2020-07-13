@@ -1,0 +1,121 @@
+Class:SupervisorInfo
+Field:serialVersionUID
+Field:hostName
+Field:supervisorId
+Field:timeSecs
+Field:uptimeSecs
+Field:version
+Field:buildTs
+Field:port
+Field:workerPorts
+Field:supervisorConf
+Field:errorMessage
+Field:availableWorkerPorts
+Method-name:SupervisorInfo
+Method-returnType:null
+Method-parameters:[String hostName, String supervisorId, Set<Integer> workerPorts, Map<Object,Object> conf]
+FieldAccess:hostName
+FieldAccess:supervisorId
+FieldAccess:workerPorts
+FieldAccess:supervisorConf
+FieldAccess:port
+MethodInvocation:getSupervisorDeamonHttpserverPort
+Method-name:getErrorMessage
+Method-returnType:String
+Method-parameters:[]
+Method-name:setErrorMessage
+Method-returnType:void
+Method-parameters:[String errorMessage]
+FieldAccess:errorMessage
+Method-name:getHostName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getSupervisorId
+Method-returnType:String
+Method-parameters:[]
+Method-name:getTimeSecs
+Method-returnType:int
+Method-parameters:[]
+Method-name:setTimeSecs
+Method-returnType:void
+Method-parameters:[int timeSecs]
+FieldAccess:timeSecs
+Method-name:getUptimeSecs
+Method-returnType:int
+Method-parameters:[]
+Method-name:setUptimeSecs
+Method-returnType:void
+Method-parameters:[int uptimeSecs]
+FieldAccess:uptimeSecs
+Method-name:getWorkerPorts
+Method-returnType:Set<Integer>
+Method-parameters:[]
+Method-name:setAvailableWorkerPorts
+Method-returnType:void
+Method-parameters:[Set<Integer> workerPorts]
+MethodInvocation:addAll
+Method-name:getAvailableWorkerPorts
+Method-returnType:Set<Integer>
+Method-parameters:[]
+Method-name:setWorkerPorts
+Method-returnType:void
+Method-parameters:[Set<Integer> workerPorts]
+FieldAccess:workerPorts
+Method-name:getSupervisorConf
+Method-returnType:Map<Object,Object>
+Method-parameters:[]
+Method-name:setSupervisorConf
+Method-returnType:SupervisorInfo
+Method-parameters:[Map<Object,Object> conf]
+FieldAccess:supervisorConf
+Method-name:getVersion
+Method-returnType:String
+Method-parameters:[]
+Method-name:setVersion
+Method-returnType:void
+Method-parameters:[String version]
+FieldAccess:version
+Method-name:getBuildTs
+Method-returnType:String
+Method-parameters:[]
+Method-name:setBuildTs
+Method-returnType:SupervisorInfo
+Method-parameters:[String buildTs]
+FieldAccess:buildTs
+Method-name:getPort
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setPort
+Method-returnType:SupervisorInfo
+Method-parameters:[Integer port]
+FieldAccess:port
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:reflectionToString
+Method-name:getNodeHost
+Method-returnType:Map<String,String>
+Method-parameters:[Map<String,SupervisorInfo> supInfos]
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:getKey
+MethodInvocation:put
+MethodInvocation:getHostName

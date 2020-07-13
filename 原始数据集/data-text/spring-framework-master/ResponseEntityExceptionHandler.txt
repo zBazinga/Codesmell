@@ -1,0 +1,97 @@
+Class:ResponseEntityExceptionHandler
+Field:PAGE_NOT_FOUND_LOG_CATEGORY
+Field:pageNotFoundLogger
+MethodInvocation:getLog
+Field:logger
+MethodInvocation:getLog
+MethodInvocation:getClass
+Method-name:handleException
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[Exception ex, WebRequest request]
+MethodInvocation:handleHttpRequestMethodNotSupported
+MethodInvocation:handleHttpMediaTypeNotSupported
+MethodInvocation:handleHttpMediaTypeNotAcceptable
+MethodInvocation:handleMissingPathVariable
+MethodInvocation:handleMissingServletRequestParameter
+MethodInvocation:handleServletRequestBindingException
+MethodInvocation:handleConversionNotSupported
+MethodInvocation:handleTypeMismatch
+MethodInvocation:handleHttpMessageNotReadable
+MethodInvocation:handleHttpMessageNotWritable
+MethodInvocation:handleMethodArgumentNotValid
+MethodInvocation:handleMissingServletRequestPart
+MethodInvocation:handleBindException
+MethodInvocation:handleNoHandlerFoundException
+MethodInvocation:handleAsyncRequestTimeoutException
+Method-name:handleHttpRequestMethodNotSupported
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[HttpRequestMethodNotSupportedException ex, HttpHeaders headers, HttpStatus status, WebRequest request]
+MethodInvocation:warn
+MethodInvocation:getMessage
+MethodInvocation:getSupportedHttpMethods
+MethodInvocation:isEmpty
+MethodInvocation:setAllow
+MethodInvocation:handleExceptionInternal
+Method-name:handleHttpMediaTypeNotSupported
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[HttpMediaTypeNotSupportedException ex, HttpHeaders headers, HttpStatus status, WebRequest request]
+MethodInvocation:getSupportedMediaTypes
+MethodInvocation:isEmpty
+MethodInvocation:setAccept
+MethodInvocation:handleExceptionInternal
+Method-name:handleHttpMediaTypeNotAcceptable
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[HttpMediaTypeNotAcceptableException ex, HttpHeaders headers, HttpStatus status, WebRequest request]
+MethodInvocation:handleExceptionInternal
+Method-name:handleMissingPathVariable
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[MissingPathVariableException ex, HttpHeaders headers, HttpStatus status, WebRequest request]
+MethodInvocation:handleExceptionInternal
+Method-name:handleMissingServletRequestParameter
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[MissingServletRequestParameterException ex, HttpHeaders headers, HttpStatus status, WebRequest request]
+MethodInvocation:handleExceptionInternal
+Method-name:handleServletRequestBindingException
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[ServletRequestBindingException ex, HttpHeaders headers, HttpStatus status, WebRequest request]
+MethodInvocation:handleExceptionInternal
+Method-name:handleConversionNotSupported
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[ConversionNotSupportedException ex, HttpHeaders headers, HttpStatus status, WebRequest request]
+MethodInvocation:handleExceptionInternal
+Method-name:handleTypeMismatch
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[TypeMismatchException ex, HttpHeaders headers, HttpStatus status, WebRequest request]
+MethodInvocation:handleExceptionInternal
+Method-name:handleHttpMessageNotReadable
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[HttpMessageNotReadableException ex, HttpHeaders headers, HttpStatus status, WebRequest request]
+MethodInvocation:handleExceptionInternal
+Method-name:handleHttpMessageNotWritable
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[HttpMessageNotWritableException ex, HttpHeaders headers, HttpStatus status, WebRequest request]
+MethodInvocation:handleExceptionInternal
+Method-name:handleMethodArgumentNotValid
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[MethodArgumentNotValidException ex, HttpHeaders headers, HttpStatus status, WebRequest request]
+MethodInvocation:handleExceptionInternal
+Method-name:handleMissingServletRequestPart
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[MissingServletRequestPartException ex, HttpHeaders headers, HttpStatus status, WebRequest request]
+MethodInvocation:handleExceptionInternal
+Method-name:handleBindException
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[BindException ex, HttpHeaders headers, HttpStatus status, WebRequest request]
+MethodInvocation:handleExceptionInternal
+Method-name:handleNoHandlerFoundException
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[NoHandlerFoundException ex, HttpHeaders headers, HttpStatus status, WebRequest request]
+MethodInvocation:handleExceptionInternal
+Method-name:handleAsyncRequestTimeoutException
+Method-returnType:ResponseEntity<Object>
+Method-parameters:[AsyncRequestTimeoutException ex, HttpHeaders headers, HttpStatus status, WebRequest webRequest]
+MethodInvocation:getResponse
+MethodInvocation:isCommitted
+MethodInvocation:isWarnEnabled
+MethodInvocation:warn
+MethodInvocation:handleExceptionInternal

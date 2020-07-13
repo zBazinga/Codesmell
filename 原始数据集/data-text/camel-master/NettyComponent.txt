@@ -1,0 +1,82 @@
+Class:NettyComponent
+Field:LOG
+MethodInvocation:getLogger
+Field:configuration
+Field:maximumPoolSize
+Field:executorService
+Field:useGlobalSslContextParameters
+Method-name:NettyComponent
+Method-returnType:null
+Method-parameters:[]
+Method-name:NettyComponent
+Method-returnType:null
+Method-parameters:[Class<? extends Endpoint> endpointClass]
+Method-name:NettyComponent
+Method-returnType:null
+Method-parameters:[CamelContext context]
+Method-name:getMaximumPoolSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaximumPoolSize
+Method-returnType:void
+Method-parameters:[int maximumPoolSize]
+FieldAccess:maximumPoolSize
+Method-name:createEndpoint
+Method-returnType:Endpoint
+Method-parameters:[String uri, String remaining, Map<String,Object> parameters]
+MethodInvocation:copy
+MethodInvocation:parseConfiguration
+MethodInvocation:resolveAndRemoveReferenceParameter
+MethodInvocation:getBeanIntrospection
+MethodInvocation:adapt
+MethodInvocation:getCamelContext
+MethodInvocation:getProperties
+MethodInvocation:bindProperties
+MethodInvocation:getCamelContext
+MethodInvocation:getSslContextParameters
+MethodInvocation:setSslContextParameters
+MethodInvocation:retrieveGlobalSslContextParameters
+MethodInvocation:validateConfiguration
+MethodInvocation:setProperties
+Method-name:getConfiguration
+Method-returnType:NettyConfiguration
+Method-parameters:[]
+Method-name:setConfiguration
+Method-returnType:void
+Method-parameters:[NettyConfiguration configuration]
+FieldAccess:configuration
+Method-name:setExecutorService
+Method-returnType:void
+Method-parameters:[EventExecutorGroup executorService]
+FieldAccess:executorService
+Method-name:isUseGlobalSslContextParameters
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:useGlobalSslContextParameters
+Method-name:setUseGlobalSslContextParameters
+Method-returnType:void
+Method-parameters:[boolean useGlobalSslContextParameters]
+FieldAccess:useGlobalSslContextParameters
+Method-name:getExecutorService
+Method-returnType:EventExecutorGroup
+Method-parameters:[]
+Method-name:doStart
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isUsingExecutorService
+MethodInvocation:getInt
+MethodInvocation:availableProcessors
+MethodInvocation:max
+MethodInvocation:createExecutorGroup
+MethodInvocation:getCamelContext
+MethodInvocation:info
+Method-name:doStop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isUsingExecutorService
+MethodInvocation:shutdownGraceful
+MethodInvocation:getExecutorServiceManager
+MethodInvocation:getCamelContext
+MethodInvocation:getWorkerGroup
+MethodInvocation:shutdownGracefully
+MethodInvocation:getWorkerGroup

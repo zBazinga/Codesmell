@@ -1,0 +1,110 @@
+Class:BibEntryWriter
+Field:entryTypesManager
+Field:fieldWriter
+Method-name:BibEntryWriter
+Method-returnType:null
+Method-parameters:[FieldWriter fieldWriter, BibEntryTypesManager entryTypesManager]
+FieldAccess:fieldWriter
+FieldAccess:entryTypesManager
+Method-name:write
+Method-returnType:void
+Method-parameters:[BibEntry entry, Writer out, BibDatabaseMode bibDatabaseMode]
+MethodInvocation:write
+Method-name:write
+Method-returnType:void
+Method-parameters:[BibEntry entry, Writer out, BibDatabaseMode bibDatabaseMode, Boolean reformat]
+MethodInvocation:hasChanged
+MethodInvocation:write
+MethodInvocation:getParsedSerialization
+MethodInvocation:writeUserComments
+MethodInvocation:write
+MethodInvocation:writeRequiredFieldsFirstRemainingFieldsSecond
+MethodInvocation:write
+Method-name:writeUserComments
+Method-returnType:void
+Method-parameters:[BibEntry entry, Writer out]
+MethodInvocation:getUserComments
+MethodInvocation:isEmpty
+MethodInvocation:write
+Method-name:writeWithoutPrependedNewlines
+Method-returnType:void
+Method-parameters:[BibEntry entry, Writer out, BibDatabaseMode bibDatabaseMode]
+MethodInvocation:hasChanged
+MethodInvocation:write
+MethodInvocation:trim
+MethodInvocation:getParsedSerialization
+MethodInvocation:writeRequiredFieldsFirstRemainingFieldsSecond
+Method-name:writeRequiredFieldsFirstRemainingFieldsSecond
+Method-returnType:void
+Method-parameters:[BibEntry entry, Writer out, BibDatabaseMode bibDatabaseMode]
+MethodInvocation:write
+MethodInvocation:getTypeForDisplay
+MethodInvocation:writeKeyField
+MethodInvocation:comparing
+MethodInvocation:add
+MethodInvocation:getLengthOfLongestFieldName
+MethodInvocation:enrich
+MethodInvocation:getType
+MethodInvocation:isPresent
+MethodInvocation:getRequiredFields
+MethodInvocation:get
+MethodInvocation:writeField
+MethodInvocation:add
+MethodInvocation:getOptionalFields
+MethodInvocation:get
+MethodInvocation:writeField
+MethodInvocation:getField
+MethodInvocation:add
+MethodInvocation:getField
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getFields
+MethodInvocation:contains
+MethodInvocation:toCollection
+MethodInvocation:comparing
+MethodInvocation:writeField
+MethodInvocation:write
+Method-name:writeKeyField
+Method-returnType:void
+Method-parameters:[BibEntry entry, Writer out]
+MethodInvocation:shaveString
+MethodInvocation:orElse
+MethodInvocation:getCiteKeyOptional
+MethodInvocation:write
+Method-name:writeField
+Method-returnType:void
+Method-parameters:[BibEntry entry, Writer out, Field field, int indentation]
+MethodInvocation:getField
+MethodInvocation:isPresent
+MethodInvocation:isEmpty
+MethodInvocation:trim
+MethodInvocation:get
+MethodInvocation:write
+MethodInvocation:getFormattedFieldName
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:get
+MethodInvocation:orElse
+MethodInvocation:getCiteKeyOptional
+MethodInvocation:getMessage
+MethodInvocation:write
+Method-name:getLengthOfLongestFieldName
+Method-returnType:int
+Method-parameters:[BibEntry entry]
+MethodInvocation:equals
+MethodInvocation:orElse
+MethodInvocation:max
+MethodInvocation:mapToInt
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getFields
+MethodInvocation:length
+MethodInvocation:getName
+Method-name:getFormattedFieldName
+Method-returnType:String
+Method-parameters:[Field field, int intendation]
+MethodInvocation:getName
+MethodInvocation:toLowerCase
+MethodInvocation:repeatSpaces
+MethodInvocation:length

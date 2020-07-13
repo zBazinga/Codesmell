@@ -1,0 +1,156 @@
+Class:SearchTemplateRequest
+Field:request
+Field:simulate
+Field:explain
+Field:profile
+Field:scriptType
+Field:script
+Field:scriptParams
+Method-name:SearchTemplateRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:SearchTemplateRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readOptionalWriteable
+MethodInvocation:readBoolean
+MethodInvocation:readBoolean
+MethodInvocation:readBoolean
+MethodInvocation:readFrom
+MethodInvocation:readOptionalString
+MethodInvocation:readBoolean
+MethodInvocation:readMap
+Method-name:SearchTemplateRequest
+Method-returnType:null
+Method-parameters:[SearchRequest searchRequest]
+FieldAccess:request
+Method-name:setRequest
+Method-returnType:void
+Method-parameters:[SearchRequest request]
+FieldAccess:request
+Method-name:getRequest
+Method-returnType:SearchRequest
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:isSimulate
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSimulate
+Method-returnType:void
+Method-parameters:[boolean simulate]
+FieldAccess:simulate
+Method-name:isExplain
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setExplain
+Method-returnType:void
+Method-parameters:[boolean explain]
+FieldAccess:explain
+Method-name:isProfile
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setProfile
+Method-returnType:void
+Method-parameters:[boolean profile]
+FieldAccess:profile
+Method-name:getScriptType
+Method-returnType:ScriptType
+Method-parameters:[]
+Method-name:setScriptType
+Method-returnType:void
+Method-parameters:[ScriptType scriptType]
+FieldAccess:scriptType
+Method-name:getScript
+Method-returnType:String
+Method-parameters:[]
+Method-name:setScript
+Method-returnType:void
+Method-parameters:[String script]
+FieldAccess:script
+Method-name:getScriptParams
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+Method-name:setScriptParams
+Method-returnType:void
+Method-parameters:[Map<String,Object> scriptParams]
+FieldAccess:scriptParams
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:addValidationError
+MethodInvocation:addValidationError
+MethodInvocation:addValidationError
+MethodInvocation:validate
+MethodInvocation:addValidationErrors
+MethodInvocation:validationErrors
+Field:ID_FIELD
+Field:SOURCE_FIELD
+Field:PARAMS_FIELD
+Field:EXPLAIN_FIELD
+Field:PROFILE_FIELD
+Field:PARSER
+MethodInvocation:declareField
+MethodInvocation:setScriptParams
+MethodInvocation:map
+MethodInvocation:declareString
+MethodInvocation:setScriptType
+MethodInvocation:setScript
+MethodInvocation:declareBoolean
+MethodInvocation:declareBoolean
+MethodInvocation:declareField
+MethodInvocation:setScriptType
+MethodInvocation:currentToken
+MethodInvocation:jsonBuilder
+MethodInvocation:setScript
+MethodInvocation:toString
+MethodInvocation:copyCurrentStructure
+MethodInvocation:getTokenLocation
+MethodInvocation:setScript
+MethodInvocation:text
+Method-name:fromXContent
+Method-returnType:SearchTemplateRequest
+Method-parameters:[XContentParser parser]
+MethodInvocation:parse
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:endObject
+MethodInvocation:field
+MethodInvocation:field
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:getPreferredName
+MethodInvocation:getPreferredName
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeOptionalWriteable
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeTo
+MethodInvocation:writeOptionalString
+MethodInvocation:writeBoolean
+MethodInvocation:writeMap
+Method-name:add
+Method-returnType:MultiSearchTemplateRequest
+Method-parameters:[MultiSearchTemplateRequest multiSearchTemplateRequest]
+MethodInvocation:add
+MethodInvocation:requests

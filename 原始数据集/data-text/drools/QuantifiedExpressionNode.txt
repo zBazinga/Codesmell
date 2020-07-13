@@ -1,0 +1,118 @@
+Class:QuantifiedExpressionNode
+Field:Quantifier
+Method-name:resolve
+Method-returnType:Quantifier
+Method-parameters:[String text]
+MethodInvocation:equals
+Method-name:positiveTest
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:defaultValue
+Method-returnType:Boolean
+Method-parameters:[]
+Field:quantifier
+Field:iterationContexts
+Field:expression
+Method-name:QuantifiedExpressionNode
+Method-returnType:null
+Method-parameters:[ParserRuleContext ctx, Quantifier quantifier, ListNode list, BaseNode expression]
+FieldAccess:quantifier
+FieldAccess:iterationContexts
+FieldAccess:expression
+MethodInvocation:getElements
+MethodInvocation:add
+FieldAccess:iterationContexts
+Method-name:getQuantifier
+Method-returnType:Quantifier
+Method-parameters:[]
+Method-name:setQuantifier
+Method-returnType:void
+Method-parameters:[Quantifier quantifier]
+FieldAccess:quantifier
+Method-name:getIterationContexts
+Method-returnType:List<IterationContextNode>
+Method-parameters:[]
+Method-name:setIterationContexts
+Method-returnType:void
+Method-parameters:[List<IterationContextNode> iterationContexts]
+FieldAccess:iterationContexts
+Method-name:getExpression
+Method-returnType:BaseNode
+Method-parameters:[]
+Method-name:setExpression
+Method-returnType:void
+Method-parameters:[BaseNode expression]
+FieldAccess:expression
+Method-name:evaluate
+Method-returnType:Boolean
+Method-parameters:[EvaluationContext ctx]
+MethodInvocation:iterateContexts
+MethodInvocation:notifyEvt
+MethodInvocation:astEvent
+MethodInvocation:createMessage
+Method-name:iterateContexts
+Method-returnType:Boolean
+Method-parameters:[EvaluationContext ctx, List<IterationContextNode> iterationContexts, BaseNode expression, Quantifier quantifier]
+MethodInvocation:enterFrame
+MethodInvocation:initializeContexts
+MethodInvocation:nextIteration
+MethodInvocation:evaluate
+MethodInvocation:equals
+MethodInvocation:positiveTest
+MethodInvocation:positiveTest
+MethodInvocation:defaultValue
+MethodInvocation:exitFrame
+Method-name:nextIteration
+Method-returnType:boolean
+Method-parameters:[EvaluationContext ctx, QEIteration[] ictx]
+MethodInvocation:hasNextValue
+MethodInvocation:setValueIntoContext
+Method-name:setValueIntoContext
+Method-returnType:void
+Method-parameters:[EvaluationContext ctx, QEIteration qeIteration]
+MethodInvocation:setValue
+MethodInvocation:getName
+MethodInvocation:getNextValue
+Method-name:getResultType
+Method-returnType:Type
+Method-parameters:[]
+Method-name:initializeContexts
+Method-returnType:QEIteration[]
+Method-parameters:[EvaluationContext ctx, List<IterationContextNode> iterationContexts]
+MethodInvocation:size
+MethodInvocation:createQuantifiedExpressionIterationContext
+MethodInvocation:setValueIntoContext
+Class:QEIteration
+Field:name
+Field:values
+Field:iterator
+Method-name:QEIteration
+Method-returnType:null
+Method-parameters:[String name, Iterable values]
+FieldAccess:name
+FieldAccess:values
+Method-name:hasNextValue
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+FieldAccess:iterator
+FieldAccess:iterator
+Method-name:getNextValue
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:next
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getChildrenNode
+Method-returnType:ASTNode[]
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:arraycopy
+MethodInvocation:toArray
+MethodInvocation:size
+Method-name:accept
+Method-returnType:T
+Method-parameters:[Visitor<T> v]
+MethodInvocation:visit

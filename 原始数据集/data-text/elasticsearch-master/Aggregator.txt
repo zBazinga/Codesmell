@@ -1,0 +1,79 @@
+Class:Aggregator
+Method-name:parse
+Method-returnType:AggregationBuilder
+Method-parameters:[String aggregationName, XContentParser parser]
+Method-name:descendsFromBucketAggregator
+Method-returnType:boolean
+Method-parameters:[Aggregator parent]
+MethodInvocation:parent
+Method-name:name
+Method-returnType:String
+Method-parameters:[]
+Method-name:context
+Method-returnType:SearchContext
+Method-parameters:[]
+Method-name:parent
+Method-returnType:Aggregator
+Method-parameters:[]
+Method-name:subAggregator
+Method-returnType:Aggregator
+Method-parameters:[String name]
+Method-name:resolveSortPathOnValidAgg
+Method-returnType:Aggregator
+Method-parameters:[AggregationPath.PathElement next, Iterator<AggregationPath.PathElement> path]
+MethodInvocation:subAggregator
+MethodInvocation:hasNext
+MethodInvocation:resolveSortPath
+MethodInvocation:next
+Method-name:resolveSortPath
+Method-returnType:Aggregator
+Method-parameters:[AggregationPath.PathElement next, Iterator<AggregationPath.PathElement> path]
+MethodInvocation:name
+Method-name:bucketComparator
+Method-returnType:BucketComparator
+Method-parameters:[String key, SortOrder order]
+Method-name:compare
+Method-returnType:int
+Method-parameters:[long lhs, long rhs]
+Method-name:buildAggregations
+Method-returnType:InternalAggregation[]
+Method-parameters:[long[] owningBucketOrds]
+Method-name:buildTopLevel
+Method-returnType:InternalAggregation
+Method-parameters:[]
+Method-name:parent
+Method-returnType:assert
+Method-parameters:[]
+Method-name:buildEmptyAggregation
+Method-returnType:InternalAggregation
+Method-parameters:[]
+Method-name:collectDebugInfo
+Method-returnType:void
+Method-parameters:[BiConsumer<String,Object> add]
+Field:SubAggCollectionMode
+Method-name:DEPTH_FIRST
+Method-returnType:null
+Method-parameters:[]
+Field:KEY
+Field:parseField
+Method-name:SubAggCollectionMode
+Method-returnType:null
+Method-parameters:[ParseField parseField]
+FieldAccess:parseField
+Method-name:parseField
+Method-returnType:ParseField
+Method-parameters:[]
+Method-name:parse
+Method-returnType:SubAggCollectionMode
+Method-parameters:[String value, DeprecationHandler deprecationHandler]
+MethodInvocation:values
+MethodInvocation:match
+MethodInvocation:getPreferredName
+Method-name:readFromStream
+Method-returnType:SubAggCollectionMode
+Method-parameters:[StreamInput in]
+MethodInvocation:readEnum
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeEnum

@@ -1,0 +1,216 @@
+Class:FromClause
+Field:LOG
+MethodInvocation:messageLogger
+Field:ROOT_LEVEL
+Field:level
+Field:fromElements
+Field:fromElementByClassAlias
+Field:fromElementByTableAlias
+Field:fromElementsByPath
+Field:collectionJoinFromElementsByPath
+Field:parentFromClause
+Field:childFromClauses
+Field:fromElementCounter
+Field:impliedElements
+Field:entityJoinFromElements
+Method-name:addFromElement
+Method-returnType:FromElement
+Method-parameters:[String path, AST alias]
+MethodInvocation:getText
+MethodInvocation:checkForDuplicateClassAlias
+MethodInvocation:addFromElement
+Method-name:registerFromElement
+Method-returnType:void
+Method-parameters:[FromElement element]
+MethodInvocation:add
+MethodInvocation:getClassAlias
+MethodInvocation:put
+MethodInvocation:getTableAlias
+MethodInvocation:put
+MethodInvocation:add
+Method-name:finishInit
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:appendChild
+MethodInvocation:clear
+Method-name:addDuplicateAlias
+Method-returnType:void
+Method-parameters:[String alias, FromElement element]
+MethodInvocation:put
+Method-name:checkForDuplicateClassAlias
+Method-returnType:void
+Method-parameters:[String classAlias]
+MethodInvocation:containsKey
+Method-name:getFromElement
+Method-returnType:FromElement
+Method-parameters:[String aliasOrClassName]
+MethodInvocation:get
+MethodInvocation:isStrictJPAQLComplianceEnabled
+MethodInvocation:getSessionFactoryHelper
+MethodInvocation:findIntendedAliasedFromElementBasedOnCrazyJPARequirements
+MethodInvocation:getFromElement
+Method-name:findFromElementBySqlAlias
+Method-returnType:FromElement
+Method-parameters:[String sqlAlias]
+MethodInvocation:get
+MethodInvocation:getFromElement
+Method-name:findFromElementByUserOrSqlAlias
+Method-returnType:FromElement
+Method-parameters:[String userAlias, String sqlAlias]
+MethodInvocation:getFromElement
+MethodInvocation:findFromElementBySqlAlias
+Method-name:findIntendedAliasedFromElementBasedOnCrazyJPARequirements
+Method-returnType:FromElement
+Method-parameters:[String specifiedAlias]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getValue
+Method-name:isFromElementAlias
+Method-returnType:boolean
+Method-parameters:[String possibleAlias]
+MethodInvocation:containsClassAlias
+MethodInvocation:isFromElementAlias
+Method-name:getFromElements
+Method-returnType:List
+Method-parameters:[]
+MethodInvocation:collectChildren
+Method-name:getFromElement
+Method-returnType:FromElement
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:getFromElements
+Method-name:getProjectionList
+Method-returnType:List
+Method-parameters:[]
+MethodInvocation:collectChildren
+Method-name:getCollectionFetches
+Method-returnType:List
+Method-parameters:[]
+MethodInvocation:collectChildren
+Method-name:hasCollectionFecthes
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getCollectionFetches
+Method-name:getExplicitFromElements
+Method-returnType:List
+Method-parameters:[]
+MethodInvocation:collectChildren
+Field:fromElementPredicate
+Method-name:include
+Method-returnType:boolean
+Method-parameters:[AST node]
+MethodInvocation:isFromOrJoinFragment
+Field:projectionListPredicate
+Method-name:include
+Method-returnType:boolean
+Method-parameters:[AST node]
+MethodInvocation:inProjectionList
+Field:collectionFetchPredicate
+Method-name:include
+Method-returnType:boolean
+Method-parameters:[AST node]
+MethodInvocation:isFetch
+MethodInvocation:getQueryableCollection
+Field:explicitFromPredicate
+Method-name:include
+Method-returnType:boolean
+Method-parameters:[AST node]
+MethodInvocation:isImplied
+Method-name:findCollectionJoin
+Method-returnType:FromElement
+Method-parameters:[String path]
+MethodInvocation:get
+Method-name:findJoinByPath
+Method-returnType:FromElement
+Method-parameters:[String path]
+MethodInvocation:findJoinByPathLocal
+MethodInvocation:findJoinByPath
+Method-name:findJoinByPathLocal
+Method-returnType:FromElement
+Method-parameters:[String path]
+MethodInvocation:get
+Method-name:addJoinByPathMap
+Method-returnType:void
+Method-parameters:[String path, FromElement destination]
+MethodInvocation:isDebugEnabled
+MethodInvocation:debugf
+MethodInvocation:getDisplayText
+MethodInvocation:put
+Method-name:containsClassAlias
+Method-returnType:boolean
+Method-parameters:[String alias]
+MethodInvocation:containsKey
+MethodInvocation:isStrictJPAQLComplianceEnabled
+MethodInvocation:getSessionFactoryHelper
+MethodInvocation:findIntendedAliasedFromElementBasedOnCrazyJPARequirements
+Method-name:containsTableAlias
+Method-returnType:boolean
+Method-parameters:[String alias]
+MethodInvocation:contains
+MethodInvocation:keySet
+Method-name:getDisplayText
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:keySet
+MethodInvocation:keySet
+MethodInvocation:keySet
+MethodInvocation:keySet
+Method-name:setParentFromClause
+Method-returnType:void
+Method-parameters:[FromClause parentFromClause]
+FieldAccess:parentFromClause
+MethodInvocation:getLevel
+MethodInvocation:addChild
+Method-name:addChild
+Method-returnType:void
+Method-parameters:[FromClause fromClause]
+MethodInvocation:add
+Method-name:locateChildFromClauseWithJoinByPath
+Method-returnType:FromClause
+Method-parameters:[String path]
+MethodInvocation:isEmpty
+MethodInvocation:findJoinByPathLocal
+Method-name:promoteJoin
+Method-returnType:void
+Method-parameters:[FromElement elem]
+MethodInvocation:debugf
+Method-name:isSubQuery
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:addCollectionJoinFromElementByPath
+Method-returnType:void
+Method-parameters:[String path, FromElement destination]
+MethodInvocation:debugf
+MethodInvocation:put
+Method-name:getParentFromClause
+Method-returnType:FromClause
+Method-parameters:[]
+Method-name:getLevel
+Method-returnType:int
+Method-parameters:[]
+Method-name:nextFromElementCounter
+Method-returnType:int
+Method-parameters:[]
+Method-name:resolve
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getFirstChild
+MethodInvocation:hasNext
+MethodInvocation:add
+MethodInvocation:next
+MethodInvocation:contains
+Method-name:addImpliedFromElement
+Method-returnType:void
+Method-parameters:[FromElement element]
+MethodInvocation:add
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:renderScalarSelects
+Method-returnType:void
+Method-parameters:[SelectExpression[] se, SelectClause selectClause]
+MethodInvocation:isSubQuery
+MethodInvocation:setScalarColumn

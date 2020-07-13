@@ -1,0 +1,839 @@
+Class:RelDecorrelator
+Field:SQL2REL_LOGGER
+MethodInvocation:getSqlToRelTracer
+Field:relBuilder
+Field:cm
+Field:dispatcher
+MethodInvocation:createMethodDispatcher
+Field:currentRel
+Field:context
+Field:map
+Field:generatedCorRels
+Method-name:RelDecorrelator
+Method-returnType:null
+Method-parameters:[CorelMap cm, Context context, RelBuilder relBuilder]
+FieldAccess:cm
+FieldAccess:context
+FieldAccess:relBuilder
+Method-name:decorrelateQuery
+Method-returnType:RelNode
+Method-parameters:[RelNode rootRel]
+MethodInvocation:create
+MethodInvocation:getCluster
+MethodInvocation:decorrelateQuery
+Method-name:decorrelateQuery
+Method-returnType:RelNode
+Method-parameters:[RelNode rootRel, RelBuilder relBuilder]
+MethodInvocation:build
+MethodInvocation:hasCorrelation
+MethodInvocation:getCluster
+MethodInvocation:getContext
+MethodInvocation:getPlanner
+MethodInvocation:removeCorrelationViaRule
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:dumpPlan
+MethodInvocation:isEmpty
+MethodInvocation:decorrelate
+MethodInvocation:propagateRelHints
+Method-name:setCurrent
+Method-returnType:void
+Method-parameters:[RelNode root, Correlate corRel]
+MethodInvocation:build
+MethodInvocation:first
+Method-name:relBuilderFactory
+Method-returnType:RelBuilderFactory
+Method-parameters:[]
+MethodInvocation:proto
+Method-name:decorrelate
+Method-returnType:RelNode
+Method-parameters:[RelNode root]
+MethodInvocation:relBuilderFactory
+MethodInvocation:build
+MethodInvocation:addRuleInstance
+MethodInvocation:addRuleInstance
+MethodInvocation:addRuleInstance
+MethodInvocation:addRuleInstance
+MethodInvocation:addRuleInstance
+MethodInvocation:builder
+MethodInvocation:createPlanner
+MethodInvocation:setRoot
+MethodInvocation:findBestExp
+MethodInvocation:clear
+MethodInvocation:getInvoke
+MethodInvocation:build
+MethodInvocation:addRuleInstance
+MethodInvocation:addRuleInstance
+MethodInvocation:builder
+MethodInvocation:createPlanner
+MethodInvocation:setRoot
+MethodInvocation:findBestExp
+Method-name:createCopyHook
+Method-returnType:Function2<RelNode,RelNode,Void>
+Method-parameters:[]
+MethodInvocation:containsKey
+MethodInvocation:putAll
+MethodInvocation:get
+MethodInvocation:getCorrelationId
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:createPlanner
+Method-returnType:HepPlanner
+Method-parameters:[HepProgram program]
+MethodInvocation:createCopyHook
+Method-name:removeCorrelationViaRule
+Method-returnType:RelNode
+Method-parameters:[RelNode root]
+MethodInvocation:relBuilderFactory
+MethodInvocation:build
+MethodInvocation:addRuleInstance
+MethodInvocation:addRuleInstance
+MethodInvocation:addRuleInstance
+MethodInvocation:builder
+MethodInvocation:createPlanner
+MethodInvocation:setRoot
+MethodInvocation:findBestExp
+Method-name:decorrelateExpr
+Method-returnType:RexNode
+Method-parameters:[RelNode currentRel, Map<RelNode,Frame> map, CorelMap cm, RexNode exp]
+MethodInvocation:accept
+Method-name:removeCorrelationExpr
+Method-returnType:RexNode
+Method-parameters:[RexNode exp, boolean projectPulledAboveLeftCorrelator]
+MethodInvocation:getRexBuilder
+MethodInvocation:of
+MethodInvocation:accept
+Method-name:removeCorrelationExpr
+Method-returnType:RexNode
+Method-parameters:[RexNode exp, boolean projectPulledAboveLeftCorrelator, RexInputRef nullIndicator]
+MethodInvocation:getRexBuilder
+MethodInvocation:of
+MethodInvocation:accept
+Method-name:removeCorrelationExpr
+Method-returnType:RexNode
+Method-parameters:[RexNode exp, boolean projectPulledAboveLeftCorrelator, Set<Integer> isCount]
+MethodInvocation:getRexBuilder
+MethodInvocation:accept
+Method-name:decorrelateRel
+Method-returnType:Frame
+Method-parameters:[RelNode rel]
+MethodInvocation:copy
+MethodInvocation:getTraitSet
+MethodInvocation:getInputs
+MethodInvocation:size
+MethodInvocation:getInputs
+MethodInvocation:getInputs
+MethodInvocation:size
+MethodInvocation:getInvoke
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:replaceInput
+MethodInvocation:equalShallow
+MethodInvocation:copy
+MethodInvocation:getTraitSet
+MethodInvocation:register
+MethodInvocation:identityMap
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:of
+Method-name:decorrelateRel
+Method-returnType:Frame
+Method-parameters:[Sort rel]
+Method-name:decorrelateRel
+Method-returnType:Frame
+Method-parameters:[Values rel]
+Method-name:decorrelateRel
+Method-returnType:Frame
+Method-parameters:[LogicalAggregate rel]
+MethodInvocation:decorrelateRel
+Method-name:decorrelateRel
+Method-returnType:Frame
+Method-parameters:[Aggregate rel]
+Method-name:shiftMapping
+Method-returnType:void
+Method-parameters:[Map<Integer,Integer> mapping, int startIndex, int offset]
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:getInvoke
+Method-returnType:Frame
+Method-parameters:[RelNode r, RelNode parent]
+MethodInvocation:invoke
+MethodInvocation:put
+Method-name:projectedLiteral
+Method-returnType:RexLiteral
+Method-parameters:[RelNode rel, int i]
+MethodInvocation:get
+MethodInvocation:getProjects
+Method-name:decorrelateRel
+Method-returnType:Frame
+Method-parameters:[LogicalProject rel]
+MethodInvocation:decorrelateRel
+Method-name:decorrelateRel
+Method-returnType:Frame
+Method-parameters:[Project rel]
+MethodInvocation:getInput
+MethodInvocation:getInvoke
+MethodInvocation:getProjects
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:containsKey
+MethodInvocation:decorrelateInputWithValueGenerator
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:of
+MethodInvocation:decorrelateExpr
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:entrySet
+MethodInvocation:add
+MethodInvocation:of2
+MethodInvocation:getValue
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:build
+MethodInvocation:projectNamed
+MethodInvocation:push
+MethodInvocation:left
+MethodInvocation:right
+MethodInvocation:copyRelHints
+MethodInvocation:register
+Method-name:createValueGenerator
+Method-returnType:RelNode
+Method-parameters:[Iterable<CorRef> correlations, int valueGenFieldOffset, SortedMap<CorDef,Integer> corDefOutputs]
+Method-name:getFrame
+Method-returnType:Frame
+Method-parameters:[RelNode r, boolean safe]
+MethodInvocation:get
+MethodInvocation:of
+MethodInvocation:identityMap
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+Method-name:getCorRel
+Method-returnType:RelNode
+Method-parameters:[CorRef corVar]
+MethodInvocation:get
+MethodInvocation:getInput
+Method-name:maybeAddValueGenerator
+Method-returnType:Frame
+Method-parameters:[RelNode rel, Frame frame]
+MethodInvocation:build
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:keySet
+MethodInvocation:hasAll
+MethodInvocation:decorrelateInputWithValueGenerator
+Method-name:hasAll
+Method-returnType:boolean
+Method-parameters:[Collection<CorRef> corRefs, Collection<CorDef> corDefs]
+MethodInvocation:has
+Method-name:has
+Method-returnType:boolean
+Method-parameters:[Collection<CorDef> corDefs, CorRef corr]
+MethodInvocation:equals
+Method-name:decorrelateInputWithValueGenerator
+Method-returnType:Frame
+Method-parameters:[RelNode rel, Frame frame]
+Method-name:findCorrelationEquivalent
+Method-returnType:void
+Method-parameters:[CorRef correlation, RexNode e]
+MethodInvocation:getKind
+MethodInvocation:getOperands
+MethodInvocation:references
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:references
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getOperands
+MethodInvocation:findCorrelationEquivalent
+Method-name:references
+Method-returnType:boolean
+Method-parameters:[RexNode e, CorRef correlation]
+MethodInvocation:getKind
+MethodInvocation:get
+MethodInvocation:getOperands
+MethodInvocation:isWidening
+MethodInvocation:getType
+MethodInvocation:getType
+MethodInvocation:references
+MethodInvocation:getIndex
+MethodInvocation:getField
+MethodInvocation:getReferenceExpr
+FieldAccess:id
+MethodInvocation:getReferenceExpr
+Method-name:isWidening
+Method-returnType:boolean
+Method-parameters:[RelDataType type, RelDataType type1]
+MethodInvocation:getSqlTypeName
+MethodInvocation:getSqlTypeName
+MethodInvocation:getPrecision
+MethodInvocation:getPrecision
+Method-name:decorrelateRel
+Method-returnType:Frame
+Method-parameters:[LogicalTableFunctionScan rel]
+MethodInvocation:containsCorrelation
+MethodInvocation:getCall
+MethodInvocation:decorrelateRel
+Method-name:decorrelateRel
+Method-returnType:Frame
+Method-parameters:[LogicalFilter rel]
+MethodInvocation:decorrelateRel
+Method-name:decorrelateRel
+Method-returnType:Frame
+Method-parameters:[Filter rel]
+MethodInvocation:getInput
+MethodInvocation:getInvoke
+MethodInvocation:containsKey
+MethodInvocation:decorrelateInputWithValueGenerator
+MethodInvocation:maybeAddValueGenerator
+MethodInvocation:build
+MethodInvocation:filter
+MethodInvocation:push
+MethodInvocation:decorrelateExpr
+MethodInvocation:getCondition
+MethodInvocation:register
+MethodInvocation:build
+Method-name:decorrelateRel
+Method-returnType:Frame
+Method-parameters:[LogicalCorrelate rel]
+MethodInvocation:decorrelateRel
+Method-name:decorrelateRel
+Method-returnType:Frame
+Method-parameters:[Correlate rel]
+Method-name:decorrelateRel
+Method-returnType:Frame
+Method-parameters:[LogicalJoin rel]
+MethodInvocation:decorrelateRel
+Method-name:decorrelateRel
+Method-returnType:Frame
+Method-parameters:[Join rel]
+Method-name:getNewForOldInputRef
+Method-returnType:RexInputRef
+Method-parameters:[RelNode currentRel, Map<RelNode,Frame> map, RexInputRef oldInputRef]
+Method-name:projectJoinOutputWithNullability
+Method-returnType:RelNode
+Method-parameters:[Join join, Project project, int nullIndicatorPos]
+MethodInvocation:getTypeFactory
+MethodInvocation:getCluster
+MethodInvocation:getLeft
+MethodInvocation:getJoinType
+MethodInvocation:createTypeWithNullability
+MethodInvocation:getType
+MethodInvocation:get
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:of2
+MethodInvocation:generatesNullsOnRight
+MethodInvocation:getNamedProjects
+MethodInvocation:removeCorrelationExpr
+MethodInvocation:add
+MethodInvocation:of
+MethodInvocation:build
+MethodInvocation:projectNamed
+MethodInvocation:push
+MethodInvocation:left
+MethodInvocation:right
+Method-name:aggregateCorrelatorOutput
+Method-returnType:RelNode
+Method-parameters:[Correlate correlate, Project project, Set<Integer> isCount]
+MethodInvocation:getLeft
+MethodInvocation:getJoinType
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:of2
+MethodInvocation:generatesNullsOnRight
+MethodInvocation:getNamedProjects
+MethodInvocation:removeCorrelationExpr
+MethodInvocation:add
+MethodInvocation:of
+MethodInvocation:build
+MethodInvocation:projectNamed
+MethodInvocation:push
+MethodInvocation:left
+MethodInvocation:right
+Method-name:checkCorVars
+Method-returnType:boolean
+Method-parameters:[Correlate correlate, Project project, Filter filter, List<RexFieldAccess> correlatedJoinKeys]
+Method-name:removeCorVarFromTree
+Method-returnType:void
+Method-parameters:[Correlate correlate]
+MethodInvocation:get
+MethodInvocation:getCorrelationId
+MethodInvocation:remove
+MethodInvocation:getCorrelationId
+Method-name:createProjectWithAdditionalExprs
+Method-returnType:RelNode
+Method-parameters:[RelNode input, List<Pair<RexNode,String>> additionalExprs]
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:forEach
+MethodInvocation:add
+MethodInvocation:of
+MethodInvocation:makeInputRef
+MethodInvocation:getRexBuilder
+MethodInvocation:getType
+MethodInvocation:getName
+MethodInvocation:addAll
+MethodInvocation:build
+MethodInvocation:projectNamed
+MethodInvocation:push
+MethodInvocation:left
+MethodInvocation:right
+Method-name:identityMap
+Method-returnType:Map<Integer,Integer>
+Method-parameters:[int count]
+MethodInvocation:builder
+MethodInvocation:put
+MethodInvocation:build
+Method-name:register
+Method-returnType:Frame
+Method-parameters:[RelNode rel, RelNode newRel, Map<Integer,Integer> oldToNewOutputs, SortedMap<CorDef,Integer> corDefOutputs]
+MethodInvocation:put
+Method-name:allLessThan
+Method-returnType:boolean
+Method-parameters:[Collection<Integer> integers, int limit, Litmus ret]
+MethodInvocation:fail
+MethodInvocation:succeed
+Method-name:stripHep
+Method-returnType:RelNode
+Method-parameters:[RelNode rel]
+MethodInvocation:getCurrentRel
+Class:DecorrelateRexShuttle
+Field:currentRel
+Field:map
+Field:cm
+Method-name:DecorrelateRexShuttle
+Method-returnType:null
+Method-parameters:[RelNode currentRel, Map<RelNode,Frame> map, CorelMap cm]
+FieldAccess:currentRel
+MethodInvocation:requireNonNull
+FieldAccess:map
+MethodInvocation:requireNonNull
+FieldAccess:cm
+MethodInvocation:requireNonNull
+Method-name:visitFieldAccess
+Method-returnType:RexNode
+Method-parameters:[RexFieldAccess fieldAccess]
+MethodInvocation:getInputs
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:def
+MethodInvocation:getType
+MethodInvocation:get
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+Method-name:visitInputRef
+Method-returnType:RexNode
+Method-parameters:[RexInputRef inputRef]
+MethodInvocation:getNewForOldInputRef
+MethodInvocation:getIndex
+MethodInvocation:getIndex
+MethodInvocation:getType
+MethodInvocation:getType
+Class:RemoveCorrelationRexShuttle
+Field:rexBuilder
+Field:typeFactory
+Field:projectPulledAboveLeftCorrelator
+Field:nullIndicator
+Field:isCount
+Method-name:RemoveCorrelationRexShuttle
+Method-returnType:null
+Method-parameters:[RexBuilder rexBuilder, boolean projectPulledAboveLeftCorrelator, RexInputRef nullIndicator, Set<Integer> isCount]
+FieldAccess:projectPulledAboveLeftCorrelator
+FieldAccess:nullIndicator
+FieldAccess:isCount
+MethodInvocation:copyOf
+FieldAccess:rexBuilder
+FieldAccess:typeFactory
+MethodInvocation:getTypeFactory
+Method-name:createCaseExpression
+Method-returnType:RexNode
+Method-parameters:[RexInputRef nullInputRef, RexLiteral lit, RexNode rexNode]
+MethodInvocation:makeCall
+MethodInvocation:getIndex
+MethodInvocation:createTypeWithNullability
+MethodInvocation:getType
+MethodInvocation:makeNullLiteral
+MethodInvocation:getType
+MethodInvocation:makeCast
+MethodInvocation:getType
+MethodInvocation:makeCast
+MethodInvocation:createTypeWithNullability
+MethodInvocation:getType
+MethodInvocation:makeCall
+Method-name:visitFieldAccess
+Method-returnType:RexNode
+Method-parameters:[RexFieldAccess fieldAccess]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:getType
+MethodInvocation:createCaseExpression
+Method-name:visitInputRef
+Method-returnType:RexNode
+Method-parameters:[RexInputRef inputRef]
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getLeft
+MethodInvocation:getType
+MethodInvocation:createTypeWithNullability
+MethodInvocation:getIndex
+MethodInvocation:contains
+MethodInvocation:createCaseExpression
+MethodInvocation:makeExactLiteral
+Method-name:visitLiteral
+Method-returnType:RexNode
+Method-parameters:[RexLiteral literal]
+MethodInvocation:isNull
+MethodInvocation:createCaseExpression
+Method-name:visitCall
+Method-returnType:RexNode
+Method-parameters:[final RexCall call]
+MethodInvocation:visitList
+MethodInvocation:getOperator
+MethodInvocation:getKind
+MethodInvocation:size
+MethodInvocation:deriveReturnType
+MethodInvocation:getType
+MethodInvocation:makeCall
+MethodInvocation:createCaseExpression
+Class:RemoveSingleAggregateRule
+Method-name:RemoveSingleAggregateRule
+Method-returnType:null
+Method-parameters:[RelBuilderFactory relBuilderFactory]
+MethodInvocation:operand
+MethodInvocation:operand
+MethodInvocation:operand
+MethodInvocation:any
+Method-name:onMatch
+Method-returnType:void
+Method-parameters:[RelOptRuleCall call]
+MethodInvocation:rel
+MethodInvocation:rel
+MethodInvocation:rel
+MethodInvocation:isEmpty
+MethodInvocation:getGroupSet
+MethodInvocation:size
+MethodInvocation:getAggCallList
+MethodInvocation:getAggregation
+MethodInvocation:get
+MethodInvocation:getAggCallList
+MethodInvocation:getProjects
+MethodInvocation:size
+MethodInvocation:isEmpty
+MethodInvocation:getGroupSet
+MethodInvocation:builder
+MethodInvocation:createTypeWithNullability
+MethodInvocation:getTypeFactory
+MethodInvocation:getType
+MethodInvocation:get
+MethodInvocation:makeCast
+MethodInvocation:getRexBuilder
+MethodInvocation:get
+MethodInvocation:project
+MethodInvocation:push
+MethodInvocation:transformTo
+MethodInvocation:build
+Class:RemoveCorrelationForScalarProjectRule
+Method-name:RemoveCorrelationForScalarProjectRule
+Method-returnType:null
+Method-parameters:[RelBuilderFactory relBuilderFactory]
+MethodInvocation:operand
+MethodInvocation:operand
+MethodInvocation:any
+MethodInvocation:operand
+MethodInvocation:operand
+MethodInvocation:operand
+MethodInvocation:any
+Method-name:onMatch
+Method-returnType:void
+Method-parameters:[RelOptRuleCall call]
+Class:RemoveCorrelationForScalarAggregateRule
+Method-name:RemoveCorrelationForScalarAggregateRule
+Method-returnType:null
+Method-parameters:[RelBuilderFactory relBuilderFactory]
+MethodInvocation:operand
+MethodInvocation:operand
+MethodInvocation:any
+MethodInvocation:operand
+MethodInvocation:operandJ
+MethodInvocation:operand
+MethodInvocation:operand
+MethodInvocation:any
+Method-name:onMatch
+Method-returnType:void
+Method-parameters:[RelOptRuleCall call]
+Class:AdjustProjectForCountAggregateRule
+Field:flavor
+Method-name:AdjustProjectForCountAggregateRule
+Method-returnType:null
+Method-parameters:[boolean flavor, RelBuilderFactory relBuilderFactory]
+MethodInvocation:operand
+MethodInvocation:operand
+MethodInvocation:any
+MethodInvocation:operand
+MethodInvocation:operand
+MethodInvocation:any
+MethodInvocation:operand
+MethodInvocation:operand
+MethodInvocation:any
+MethodInvocation:operand
+MethodInvocation:any
+FieldAccess:flavor
+Method-name:onMatch
+Method-returnType:void
+Method-parameters:[RelOptRuleCall call]
+MethodInvocation:rel
+MethodInvocation:rel
+MethodInvocation:rel
+MethodInvocation:rel
+MethodInvocation:rel
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:of2
+MethodInvocation:size
+MethodInvocation:builder
+MethodInvocation:projectNamed
+MethodInvocation:push
+MethodInvocation:left
+MethodInvocation:right
+MethodInvocation:build
+MethodInvocation:onMatch2
+Method-name:onMatch2
+Method-returnType:void
+Method-parameters:[RelOptRuleCall call, Correlate correlate, RelNode leftInput, Project aggOutputProject, Aggregate aggregate]
+MethodInvocation:contains
+MethodInvocation:setCurrent
+MethodInvocation:getRoot
+MethodInvocation:getPlanner
+MethodInvocation:getProjects
+MethodInvocation:size
+MethodInvocation:getJoinType
+MethodInvocation:literal
+MethodInvocation:literal
+MethodInvocation:isEmpty
+MethodInvocation:getGroupSet
+MethodInvocation:getAggCallList
+MethodInvocation:getAggregation
+MethodInvocation:add
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:asList
+MethodInvocation:getRequiredColumns
+MethodInvocation:makeInputRef
+MethodInvocation:getRexBuilder
+MethodInvocation:toList
+MethodInvocation:build
+MethodInvocation:correlate
+MethodInvocation:push
+MethodInvocation:push
+MethodInvocation:getJoinType
+MethodInvocation:getCorrelationId
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:getCorrelationId
+MethodInvocation:put
+MethodInvocation:getCorrelationId
+MethodInvocation:aggregateCorrelatorOutput
+MethodInvocation:transformTo
+Class:CorRef
+Field:uniqueKey
+Field:corr
+Field:field
+Method-name:CorRef
+Method-returnType:null
+Method-parameters:[CorrelationId corr, int field, int uniqueKey]
+FieldAccess:corr
+FieldAccess:field
+FieldAccess:uniqueKey
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+FieldAccess:uniqueKey
+FieldAccess:corr
+FieldAccess:field
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[@Nonnull CorRef o]
+MethodInvocation:compareTo
+MethodInvocation:compare
+MethodInvocation:compare
+Method-name:def
+Method-returnType:CorDef
+Method-parameters:[]
+Class:CorDef
+Field:corr
+Field:field
+Method-name:CorDef
+Method-returnType:null
+Method-parameters:[CorrelationId corr, int field]
+FieldAccess:corr
+FieldAccess:field
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+FieldAccess:corr
+FieldAccess:field
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[@Nonnull CorDef o]
+MethodInvocation:compareTo
+MethodInvocation:compare
+Class:CorelMap
+Field:mapRefRelToCorRef
+Field:mapCorToCorRel
+Field:mapFieldAccessToCorRef
+Method-name:CorelMap
+Method-returnType:null
+Method-parameters:[Multimap<RelNode,CorRef> mapRefRelToCorRef, SortedMap<CorrelationId,RelNode> mapCorToCorRel, Map<RexFieldAccess,CorRef> mapFieldAccessToCorRef]
+FieldAccess:mapRefRelToCorRef
+FieldAccess:mapCorToCorRel
+FieldAccess:mapFieldAccessToCorRef
+MethodInvocation:copyOf
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+FieldAccess:mapRefRelToCorRef
+MethodInvocation:equals
+FieldAccess:mapCorToCorRel
+MethodInvocation:equals
+FieldAccess:mapFieldAccessToCorRef
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:of
+Method-returnType:CorelMap
+Method-parameters:[SortedSetMultimap<RelNode,CorRef> mapRefRelToCorVar, SortedMap<CorrelationId,RelNode> mapCorToCorRel, Map<RexFieldAccess,CorRef> mapFieldAccessToCorVar]
+Method-name:getMapCorToCorRel
+Method-returnType:SortedMap<CorrelationId,RelNode>
+Method-parameters:[]
+Method-name:hasCorrelation
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Class:CorelMapBuilder
+Field:mapCorToCorRel
+Field:mapRefRelToCorRef
+MethodInvocation:build
+MethodInvocation:treeSetValues
+MethodInvocation:hashKeys
+Field:mapFieldAccessToCorVar
+Field:offset
+MethodInvocation:of
+Field:corrIdGenerator
+Method-name:build
+Method-returnType:CorelMap
+Method-parameters:[RelNode... rels]
+MethodInvocation:accept
+MethodInvocation:stripHep
+Method-name:visit
+Method-returnType:RelNode
+Method-parameters:[RelNode other]
+MethodInvocation:push
+MethodInvocation:accept
+MethodInvocation:getCondition
+MethodInvocation:rexVisitor
+MethodInvocation:pop
+MethodInvocation:visitJoin
+MethodInvocation:put
+MethodInvocation:getCorrelationId
+MethodInvocation:visitJoin
+MethodInvocation:push
+MethodInvocation:accept
+MethodInvocation:getCondition
+MethodInvocation:rexVisitor
+MethodInvocation:pop
+MethodInvocation:push
+MethodInvocation:getProjects
+MethodInvocation:accept
+MethodInvocation:rexVisitor
+MethodInvocation:pop
+Method-name:visitChild
+Method-returnType:RelNode
+Method-parameters:[RelNode parent, int i, RelNode input]
+MethodInvocation:stripHep
+Method-name:visitJoin
+Method-returnType:RelNode
+Method-parameters:[BiRel join]
+MethodInvocation:get
+MethodInvocation:visitChild
+MethodInvocation:getLeft
+MethodInvocation:set
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getLeft
+MethodInvocation:visitChild
+MethodInvocation:getRight
+MethodInvocation:set
+Method-name:rexVisitor
+Method-returnType:RexVisitorImpl<Void>
+Method-parameters:[final RelNode rel]
+Method-name:visitFieldAccess
+Method-returnType:Void
+Method-parameters:[RexFieldAccess fieldAccess]
+MethodInvocation:getReferenceExpr
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:getIndex
+MethodInvocation:getField
+MethodInvocation:put
+MethodInvocation:put
+Method-name:visitSubQuery
+Method-returnType:Void
+Method-parameters:[RexSubQuery subQuery]
+MethodInvocation:accept
+Class:Frame
+Field:r
+Field:corDefOutputs
+Field:oldToNewOutputs
+Method-name:Frame
+Method-returnType:null
+Method-parameters:[RelNode oldRel, RelNode r, SortedMap<CorDef,Integer> corDefOutputs, Map<Integer,Integer> oldToNewOutputs]

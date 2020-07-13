@@ -1,0 +1,86 @@
+Class:CollisionShape
+Field:defaultMargin
+Field:objectId
+Field:scale
+Field:margin
+Method-name:CollisionShape
+Method-returnType:null
+Method-parameters:[]
+Method-name:getObjectId
+Method-returnType:long
+Method-parameters:[]
+Method-name:setObjectId
+Method-returnType:void
+Method-parameters:[long id]
+FieldAccess:objectId
+Method-name:setScale
+Method-returnType:void
+Method-parameters:[Vector3f scale]
+MethodInvocation:set
+FieldAccess:scale
+MethodInvocation:setLocalScaling
+Method-name:getScale
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:isNonMoving
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isNonMoving
+Method-name:isNonMoving
+Method-returnType:boolean
+Method-parameters:[long objectId]
+Method-name:getMargin
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:getMargin
+Method-name:getMargin
+Method-returnType:float
+Method-parameters:[long objectId]
+Method-name:setDefaultMargin
+Method-returnType:void
+Method-parameters:[float margin]
+Method-name:getDefaultMargin
+Method-returnType:float
+Method-parameters:[]
+Method-name:setMargin
+Method-returnType:void
+Method-parameters:[float margin]
+MethodInvocation:setMargin
+FieldAccess:margin
+Method-name:setLocalScaling
+Method-returnType:void
+Method-parameters:[long obectId, Vector3f scale]
+Method-name:setMargin
+Method-returnType:void
+Method-parameters:[long objectId, float margin]
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter ex]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:getMargin
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter im]
+MethodInvocation:getCapsule
+FieldAccess:scale
+MethodInvocation:readSavable
+FieldAccess:margin
+MethodInvocation:readFloat
+Method-name:finalize
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:log
+MethodInvocation:getLogger
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:toHexString
+MethodInvocation:finalizeNative
+Method-name:finalizeNative
+Method-returnType:void
+Method-parameters:[long objectId]
+Method-name:sweepTest
+Method-returnType:List<PhysicsSweepTestResult>
+Method-parameters:[Transform start, Transform end, PhysicsSpace physicsSpace]
+MethodInvocation:sweepTest

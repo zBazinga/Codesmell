@@ -1,0 +1,615 @@
+Class:Spatial
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getName
+Method-name:attachScene
+Method-returnType:void
+Method-parameters:[ViewPort viewPort]
+MethodInvocation:add
+MethodInvocation:getScenes
+MethodInvocation:forceRefresh
+Field:CullHint
+Field:BatchHint
+Field:RF_TRANSFORM
+Field:RF_BOUND
+Field:RF_LIGHTLIST
+Field:RF_CHILD_LIGHTLIST
+Field:RF_MATPARAM_OVERRIDE
+Field:cullHint
+Field:batchHint
+Field:worldBound
+Field:localLights
+Field:worldLights
+Field:localOverrides
+Field:worldOverrides
+Field:name
+Field:frustrumIntersects
+Field:queueBucket
+Field:shadowMode
+Field:queueDistance
+Field:localTransform
+Field:worldTransform
+Field:controls
+Field:userData
+Field:key
+Field:parent
+Field:refreshFlags
+Field:requiresUpdates
+Method-name:Spatial
+Method-returnType:null
+Method-parameters:[]
+Method-name:Spatial
+Method-returnType:null
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:setKey
+Method-returnType:void
+Method-parameters:[AssetKey key]
+FieldAccess:key
+Method-name:getKey
+Method-returnType:AssetKey
+Method-parameters:[]
+Method-name:requiresUpdates
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:setRequiresUpdates
+Method-returnType:void
+Method-parameters:[boolean f]
+FieldAccess:requiresUpdates
+Method-name:setTransformRefresh
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setBoundRefresh
+Method-name:setLightListRefresh
+Method-returnType:void
+Method-parameters:[]
+Method-name:setMatParamOverrideRefresh
+Method-returnType:void
+Method-parameters:[]
+Method-name:setBoundRefresh
+Method-returnType:void
+Method-parameters:[]
+Method-name:forceRefresh
+Method-returnType:void
+Method-parameters:[boolean transforms, boolean bounds, boolean lights]
+MethodInvocation:setTransformRefresh
+MethodInvocation:setBoundRefresh
+MethodInvocation:setLightListRefresh
+Method-name:checkCulling
+Method-returnType:boolean
+Method-parameters:[Camera cam]
+Method-name:setName
+Method-returnType:void
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getLocalLightList
+Method-returnType:LightList
+Method-parameters:[]
+Method-name:getWorldLightList
+Method-returnType:LightList
+Method-parameters:[]
+Method-name:getLocalMatParamOverrides
+Method-returnType:SafeArrayList<MatParamOverride>
+Method-parameters:[]
+Method-name:getWorldMatParamOverrides
+Method-returnType:SafeArrayList<MatParamOverride>
+Method-parameters:[]
+Method-name:getWorldRotation
+Method-returnType:Quaternion
+Method-parameters:[]
+MethodInvocation:checkDoTransformUpdate
+MethodInvocation:getRotation
+Method-name:getWorldTranslation
+Method-returnType:Vector3f
+Method-parameters:[]
+MethodInvocation:checkDoTransformUpdate
+MethodInvocation:getTranslation
+Method-name:getWorldScale
+Method-returnType:Vector3f
+Method-parameters:[]
+MethodInvocation:checkDoTransformUpdate
+MethodInvocation:getScale
+Method-name:getWorldTransform
+Method-returnType:Transform
+Method-parameters:[]
+MethodInvocation:checkDoTransformUpdate
+Method-name:rotateUpTo
+Method-returnType:void
+Method-parameters:[Vector3f newUp]
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:getRotation
+MethodInvocation:multLocal
+MethodInvocation:angleBetween
+MethodInvocation:normalizeLocal
+MethodInvocation:crossLocal
+MethodInvocation:fromAngleNormalAxis
+MethodInvocation:mult
+MethodInvocation:release
+MethodInvocation:setTransformRefresh
+Method-name:lookAt
+Method-returnType:void
+Method-parameters:[Vector3f position, Vector3f upVector]
+MethodInvocation:getWorldTranslation
+MethodInvocation:get
+MethodInvocation:subtractLocal
+MethodInvocation:set
+MethodInvocation:lookAt
+MethodInvocation:getLocalRotation
+MethodInvocation:getParent
+MethodInvocation:multLocal
+MethodInvocation:inverseLocal
+MethodInvocation:set
+MethodInvocation:getWorldRotation
+MethodInvocation:getLocalRotation
+MethodInvocation:normalizeLocal
+MethodInvocation:setLocalRotation
+MethodInvocation:release
+MethodInvocation:setTransformRefresh
+Method-name:updateWorldBound
+Method-returnType:void
+Method-parameters:[]
+Method-name:updateWorldLightList
+Method-returnType:void
+Method-parameters:[]
+Method-name:updateMatParamOverrides
+Method-returnType:void
+Method-parameters:[]
+Method-name:addMatParamOverride
+Method-returnType:void
+Method-parameters:[MatParamOverride override]
+MethodInvocation:add
+MethodInvocation:setMatParamOverrideRefresh
+Method-name:removeMatParamOverride
+Method-returnType:void
+Method-parameters:[MatParamOverride override]
+MethodInvocation:remove
+MethodInvocation:setMatParamOverrideRefresh
+Method-name:clearMatParamOverrides
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:setMatParamOverrideRefresh
+MethodInvocation:clear
+Method-name:updateWorldTransforms
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:set
+MethodInvocation:assert
+MethodInvocation:set
+MethodInvocation:combineWithParent
+Method-name:checkDoTransformUpdate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:release
+MethodInvocation:updateWorldTransforms
+Method-name:checkDoBoundUpdate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:checkDoTransformUpdate
+MethodInvocation:getQuantity
+MethodInvocation:getChild
+MethodInvocation:checkDoBoundUpdate
+MethodInvocation:updateWorldBound
+Method-name:runControlUpdate
+Method-returnType:void
+Method-parameters:[float tpf]
+MethodInvocation:isEmpty
+MethodInvocation:getArray
+MethodInvocation:update
+Method-name:runControlRender
+Method-returnType:void
+Method-parameters:[RenderManager rm, ViewPort vp]
+MethodInvocation:isEmpty
+MethodInvocation:getArray
+MethodInvocation:render
+Method-name:addControl
+Method-returnType:void
+Method-parameters:[Control control]
+MethodInvocation:requiresUpdates
+MethodInvocation:add
+MethodInvocation:setSpatial
+MethodInvocation:requiresUpdates
+MethodInvocation:invalidateUpdateList
+Method-name:removeControl
+Method-returnType:void
+Method-parameters:[Class<? extends Control> controlType]
+MethodInvocation:requiresUpdates
+MethodInvocation:size
+MethodInvocation:isAssignableFrom
+MethodInvocation:getClass
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:setSpatial
+MethodInvocation:requiresUpdates
+MethodInvocation:invalidateUpdateList
+Method-name:removeControl
+Method-returnType:boolean
+Method-parameters:[Control control]
+MethodInvocation:requiresUpdates
+MethodInvocation:remove
+MethodInvocation:setSpatial
+MethodInvocation:requiresUpdates
+MethodInvocation:invalidateUpdateList
+Method-name:getControl
+Method-returnType:T
+Method-parameters:[Class<T> controlType]
+MethodInvocation:getArray
+MethodInvocation:isAssignableFrom
+MethodInvocation:getClass
+Method-name:getControl
+Method-returnType:Control
+Method-parameters:[int index]
+MethodInvocation:get
+Method-name:getNumControls
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:updateLogicalState
+Method-returnType:void
+Method-parameters:[float tpf]
+MethodInvocation:runControlUpdate
+Method-name:updateGeometricState
+Method-returnType:void
+Method-parameters:[]
+Method-name:localToWorld
+Method-returnType:Vector3f
+Method-parameters:[final Vector3f in, Vector3f store]
+MethodInvocation:checkDoTransformUpdate
+MethodInvocation:transformVector
+Method-name:worldToLocal
+Method-returnType:Vector3f
+Method-parameters:[final Vector3f in, final Vector3f store]
+MethodInvocation:checkDoTransformUpdate
+MethodInvocation:transformInverseVector
+Method-name:getParent
+Method-returnType:Node
+Method-parameters:[]
+Method-name:setParent
+Method-returnType:void
+Method-parameters:[Node parent]
+FieldAccess:parent
+Method-name:removeFromParent
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:detachChild
+Method-name:hasAncestor
+Method-returnType:boolean
+Method-parameters:[Node ancestor]
+MethodInvocation:equals
+MethodInvocation:hasAncestor
+Method-name:getLocalRotation
+Method-returnType:Quaternion
+Method-parameters:[]
+MethodInvocation:getRotation
+Method-name:setLocalRotation
+Method-returnType:void
+Method-parameters:[Matrix3f rotation]
+MethodInvocation:fromRotationMatrix
+MethodInvocation:getRotation
+MethodInvocation:setTransformRefresh
+Method-name:setLocalRotation
+Method-returnType:void
+Method-parameters:[Quaternion quaternion]
+MethodInvocation:setRotation
+MethodInvocation:setTransformRefresh
+Method-name:getLocalScale
+Method-returnType:Vector3f
+Method-parameters:[]
+MethodInvocation:getScale
+Method-name:setLocalScale
+Method-returnType:void
+Method-parameters:[float localScale]
+MethodInvocation:setScale
+MethodInvocation:setTransformRefresh
+Method-name:setLocalScale
+Method-returnType:void
+Method-parameters:[float x, float y, float z]
+MethodInvocation:setScale
+MethodInvocation:setTransformRefresh
+Method-name:setLocalScale
+Method-returnType:void
+Method-parameters:[Vector3f localScale]
+MethodInvocation:setScale
+MethodInvocation:setTransformRefresh
+Method-name:getLocalTranslation
+Method-returnType:Vector3f
+Method-parameters:[]
+MethodInvocation:getTranslation
+Method-name:setLocalTranslation
+Method-returnType:void
+Method-parameters:[Vector3f localTranslation]
+MethodInvocation:setTranslation
+FieldAccess:localTransform
+MethodInvocation:setTransformRefresh
+Method-name:setLocalTranslation
+Method-returnType:void
+Method-parameters:[float x, float y, float z]
+MethodInvocation:setTranslation
+FieldAccess:localTransform
+MethodInvocation:setTransformRefresh
+Method-name:setLocalTransform
+Method-returnType:void
+Method-parameters:[Transform t]
+MethodInvocation:set
+FieldAccess:localTransform
+MethodInvocation:setTransformRefresh
+Method-name:getLocalTransform
+Method-returnType:Transform
+Method-parameters:[]
+Method-name:setMaterial
+Method-returnType:void
+Method-parameters:[Material material]
+Method-name:addLight
+Method-returnType:void
+Method-parameters:[Light light]
+MethodInvocation:add
+MethodInvocation:setLightListRefresh
+Method-name:removeLight
+Method-returnType:void
+Method-parameters:[Light light]
+MethodInvocation:remove
+MethodInvocation:setLightListRefresh
+Method-name:move
+Method-returnType:Spatial
+Method-parameters:[float x, float y, float z]
+MethodInvocation:addLocal
+MethodInvocation:getTranslation
+FieldAccess:localTransform
+MethodInvocation:setTransformRefresh
+Method-name:move
+Method-returnType:Spatial
+Method-parameters:[Vector3f offset]
+MethodInvocation:addLocal
+MethodInvocation:getTranslation
+FieldAccess:localTransform
+MethodInvocation:setTransformRefresh
+Method-name:scale
+Method-returnType:Spatial
+Method-parameters:[float s]
+MethodInvocation:scale
+Method-name:scale
+Method-returnType:Spatial
+Method-parameters:[float x, float y, float z]
+MethodInvocation:multLocal
+MethodInvocation:getScale
+FieldAccess:localTransform
+MethodInvocation:setTransformRefresh
+Method-name:rotate
+Method-returnType:Spatial
+Method-parameters:[Quaternion rot]
+MethodInvocation:multLocal
+MethodInvocation:getRotation
+FieldAccess:localTransform
+MethodInvocation:setTransformRefresh
+Method-name:rotate
+Method-returnType:Spatial
+Method-parameters:[float xAngle, float yAngle, float zAngle]
+MethodInvocation:get
+MethodInvocation:fromAngles
+MethodInvocation:rotate
+MethodInvocation:release
+Method-name:center
+Method-returnType:Spatial
+Method-parameters:[]
+MethodInvocation:getWorldTranslation
+MethodInvocation:getCenter
+MethodInvocation:getWorldBound
+MethodInvocation:subtract
+MethodInvocation:setLocalTranslation
+Method-name:getCullHint
+Method-returnType:CullHint
+Method-parameters:[]
+MethodInvocation:getCullHint
+Method-name:getBatchHint
+Method-returnType:BatchHint
+Method-parameters:[]
+MethodInvocation:getBatchHint
+Method-name:getQueueBucket
+Method-returnType:RenderQueue.Bucket
+Method-parameters:[]
+MethodInvocation:getQueueBucket
+Method-name:getShadowMode
+Method-returnType:RenderQueue.ShadowMode
+Method-parameters:[]
+MethodInvocation:getShadowMode
+Method-name:setLodLevel
+Method-returnType:void
+Method-parameters:[int lod]
+Method-name:updateModelBound
+Method-returnType:void
+Method-parameters:[]
+Method-name:setModelBound
+Method-returnType:void
+Method-parameters:[BoundingVolume modelBound]
+Method-name:getVertexCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:getTriangleCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:clone
+Method-returnType:Spatial
+Method-parameters:[boolean cloneMaterial]
+MethodInvocation:setClonedValue
+MethodInvocation:setCloneFunction
+MethodInvocation:setCloneFunction
+MethodInvocation:clone
+MethodInvocation:setTransformRefresh
+MethodInvocation:setLightListRefresh
+MethodInvocation:setMatParamOverrideRefresh
+Method-name:oldClone
+Method-returnType:Spatial
+Method-parameters:[boolean cloneMaterial]
+Method-name:clone
+Method-returnType:Spatial
+Method-parameters:[]
+MethodInvocation:clone
+Method-name:deepClone
+Method-returnType:Spatial
+Method-parameters:[]
+MethodInvocation:setClonedValue
+MethodInvocation:clone
+MethodInvocation:setTransformRefresh
+MethodInvocation:setLightListRefresh
+MethodInvocation:setMatParamOverrideRefresh
+Method-name:jmeClone
+Method-returnType:Spatial
+Method-parameters:[]
+Method-name:cloneFields
+Method-returnType:void
+Method-parameters:[Cloner cloner, Object original]
+FieldAccess:parent
+MethodInvocation:clone
+FieldAccess:worldBound
+MethodInvocation:clone
+FieldAccess:worldLights
+MethodInvocation:clone
+FieldAccess:localLights
+MethodInvocation:clone
+FieldAccess:worldTransform
+MethodInvocation:clone
+FieldAccess:localTransform
+MethodInvocation:clone
+FieldAccess:worldOverrides
+MethodInvocation:clone
+FieldAccess:localOverrides
+MethodInvocation:clone
+FieldAccess:controls
+MethodInvocation:clone
+MethodInvocation:clone
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:setValue
+MethodInvocation:clone
+Method-name:setUserData
+Method-returnType:void
+Method-parameters:[String key, Object data]
+MethodInvocation:remove
+MethodInvocation:isEmpty
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:getObjectType
+Method-name:getUserData
+Method-returnType:T
+Method-parameters:[String key]
+MethodInvocation:get
+MethodInvocation:getValue
+Method-name:getUserDataKeys
+Method-returnType:Collection<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:matches
+Method-returnType:boolean
+Method-parameters:[Class<? extends Spatial> spatialSubclass, String nameRegex]
+MethodInvocation:isInstance
+MethodInvocation:matches
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter ex]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:writeSavableArrayList
+MethodInvocation:writeSavableArrayList
+MethodInvocation:writeStringSavableMap
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter im]
+MethodInvocation:getCapsule
+MethodInvocation:readString
+MethodInvocation:readSavable
+MethodInvocation:readEnum
+MethodInvocation:readEnum
+MethodInvocation:readEnum
+MethodInvocation:readEnum
+MethodInvocation:readSavable
+MethodInvocation:readSavable
+MethodInvocation:setOwner
+MethodInvocation:readSavableArrayList
+MethodInvocation:addAll
+MethodInvocation:readSavableArrayList
+MethodInvocation:readStringSavableMap
+Method-name:getWorldBound
+Method-returnType:BoundingVolume
+Method-parameters:[]
+MethodInvocation:checkDoBoundUpdate
+Method-name:setCullHint
+Method-returnType:void
+Method-parameters:[CullHint hint]
+Method-name:setBatchHint
+Method-returnType:void
+Method-parameters:[BatchHint hint]
+Method-name:getLocalCullHint
+Method-returnType:CullHint
+Method-parameters:[]
+Method-name:getLocalBatchHint
+Method-returnType:BatchHint
+Method-parameters:[]
+Method-name:setQueueBucket
+Method-returnType:void
+Method-parameters:[RenderQueue.Bucket queueBucket]
+FieldAccess:queueBucket
+Method-name:setShadowMode
+Method-returnType:void
+Method-parameters:[RenderQueue.ShadowMode shadowMode]
+FieldAccess:shadowMode
+Method-name:getLocalQueueBucket
+Method-returnType:RenderQueue.Bucket
+Method-parameters:[]
+Method-name:getLocalShadowMode
+Method-returnType:RenderQueue.ShadowMode
+Method-parameters:[]
+Method-name:getLastFrustumIntersection
+Method-returnType:Camera.FrustumIntersect
+Method-parameters:[]
+Method-name:setLastFrustumIntersection
+Method-returnType:void
+Method-parameters:[Camera.FrustumIntersect intersects]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:getLocalToWorldMatrix
+Method-returnType:Matrix4f
+Method-parameters:[Matrix4f store]
+MethodInvocation:loadIdentity
+MethodInvocation:scale
+MethodInvocation:getWorldScale
+MethodInvocation:multLocalOther
+MethodInvocation:getWorldRotation
+MethodInvocation:setTranslation
+MethodInvocation:getWorldTranslation
+Method-name:depthFirstTraversal
+Method-returnType:void
+Method-parameters:[SceneGraphVisitor visitor]
+MethodInvocation:depthFirstTraversal
+Field:DFSMode
+Method-name:depthFirstTraversal
+Method-returnType:void
+Method-parameters:[SceneGraphVisitor visitor, DFSMode mode]
+Method-name:breadthFirstTraversal
+Method-returnType:void
+Method-parameters:[SceneGraphVisitor visitor]
+MethodInvocation:add
+MethodInvocation:isEmpty
+MethodInvocation:poll
+MethodInvocation:visit
+MethodInvocation:breadthFirstTraversal
+Method-name:breadthFirstTraversal
+Method-returnType:void
+Method-parameters:[SceneGraphVisitor visitor, Queue<Spatial> queue]

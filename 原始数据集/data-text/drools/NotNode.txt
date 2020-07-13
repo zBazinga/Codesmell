@@ -1,0 +1,132 @@
+Class:NotNode
+Field:serialVersionUID
+Field:emptyBetaConstraints
+Method-name:NotNode
+Method-returnType:null
+Method-parameters:[]
+Method-name:NotNode
+Method-returnType:null
+Method-parameters:[final int id, final LeftTupleSource leftInput, final ObjectSource rightInput, final BetaConstraints joinNodeBinder, final BuildContext context]
+FieldAccess:tupleMemoryEnabled
+MethodInvocation:isTupleMemoryEnabled
+FieldAccess:length
+MethodInvocation:getConstraints
+MethodInvocation:isEmptyForAllBetaConstraints
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readBoolean
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeBoolean
+Method-name:isEmptyBetaConstraints
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setEmptyBetaConstraints
+Method-returnType:void
+Method-parameters:[boolean emptyBetaConstraints]
+FieldAccess:emptyBetaConstraints
+Method-name:getType
+Method-returnType:short
+Method-parameters:[]
+Method-name:createPeer
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple original]
+MethodInvocation:initPeer
+MethodInvocation:setPeer
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[InternalFactHandle factHandle, Sink sink, boolean leftTupleMemoryEnabled]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[final InternalFactHandle factHandle, final LeftTuple leftTuple, final Sink sink]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, Sink sink, PropagationContext pctx, boolean leftTupleMemoryEnabled]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, RightTuple rightTuple, Sink sink]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, RightTuple rightTuple, LeftTuple currentLeftChild, LeftTuple currentRightChild, Sink sink, boolean leftTupleMemoryEnabled]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getObjectTypeNode
+MethodInvocation:getId
+MethodInvocation:getObjectType
+Method-name:assertObject
+Method-returnType:void
+Method-parameters:[final InternalFactHandle factHandle, final PropagationContext pctx, final InternalWorkingMemory wm]
+MethodInvocation:getBetaMemoryFromRightInput
+MethodInvocation:createRightTuple
+MethodInvocation:setPropagationContext
+MethodInvocation:addInsert
+MethodInvocation:getStagedRightTuples
+MethodInvocation:getAndIncCounter
+MethodInvocation:isEmptyBetaConstraints
+MethodInvocation:setNodeDirtyWithoutNotify
+MethodInvocation:linkNode
+MethodInvocation:setNodeDirty
+MethodInvocation:flushLeftTupleIfNecessary
+MethodInvocation:getOrCreateSegmentMemory
+MethodInvocation:isStreamMode
+Method-name:retractRightTuple
+Method-returnType:void
+Method-parameters:[final RightTuple rightTuple, final PropagationContext pctx, final InternalWorkingMemory workingMemory]
+MethodInvocation:getNodeMemory
+MethodInvocation:setPropagationContext
+MethodInvocation:doDeleteRightTuple
+Method-name:doDeleteRightTuple
+Method-returnType:void
+Method-parameters:[final RightTuple rightTuple, final InternalWorkingMemory wm, final BetaMemory memory]
+MethodInvocation:getStagedRightTuples
+MethodInvocation:addDelete
+MethodInvocation:getAndDecCounter
+MethodInvocation:isEmptyBetaConstraints
+MethodInvocation:setNodeDirtyWithoutNotify
+MethodInvocation:linkNode
+MethodInvocation:setNodeDirty
+MethodInvocation:flushLeftTupleIfNecessary
+MethodInvocation:getOrCreateSegmentMemory
+MethodInvocation:isStreamMode
+Method-name:modifyRightTuple
+Method-returnType:void
+Method-parameters:[RightTuple rightTuple, PropagationContext context, InternalWorkingMemory workingMemory]
+Method-name:doRemove
+Method-returnType:boolean
+Method-parameters:[RuleRemovalContext context, ReteooBuilder builder]
+MethodInvocation:isInUse
+MethodInvocation:removeTupleSink
+MethodInvocation:getLeftTupleSource
+MethodInvocation:removeObjectSink
+MethodInvocation:getRightInput
+Method-name:isLeftUpdateOptimizationAllowed
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isLeftUpdateOptimizationAllowed
+MethodInvocation:getRawConstraints
+Method-name:doNode
+Method-returnType:void
+Method-parameters:[LeftTupleSink sink, BetaMemory bm, InternalWorkingMemory wm, TupleSets<LeftTuple> srcLeftTuples, TupleSets<LeftTuple> trgLeftTuples, TupleSets<LeftTuple> stagedLeftTuples, PhreakNotNode phreakNotNode]
+MethodInvocation:takeAll
+MethodInvocation:getStagedRightTuples
+MethodInvocation:getDeleteFirst
+MethodInvocation:doLeftDeletes
+MethodInvocation:getUpdateFirst
+MethodInvocation:doUpdatesExistentialReorderLeftMemory
+MethodInvocation:getUpdateFirst
+MethodInvocation:doUpdatesExistentialReorderRightMemory
+MethodInvocation:getInsertFirst
+MethodInvocation:doRightInserts
+MethodInvocation:getUpdateFirst
+MethodInvocation:doRightUpdates
+MethodInvocation:getDeleteFirst
+MethodInvocation:doRightDeletes
+MethodInvocation:getUpdateFirst
+MethodInvocation:doLeftUpdates
+MethodInvocation:getInsertFirst
+MethodInvocation:doLeftInserts
+MethodInvocation:resetAll
+MethodInvocation:resetAll

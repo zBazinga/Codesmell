@@ -1,0 +1,38 @@
+Class:PeakhopperRto
+Field:currentRtt
+Method-name:PeakhopperRto
+Method-returnType:null
+Method-parameters:[NetworkConfig config]
+Method-name:storeRttValue
+Method-returnType:void
+Method-parameters:[RemoteEndpoint endpoint, long rtt]
+Method-name:initializeRTOEstimators
+Method-returnType:void
+Method-parameters:[long measuredRTT, int estimatorType, RemoteEndpoint endpoint]
+MethodInvocation:storeRttValue
+MethodInvocation:updateRTO
+Method-name:updateEstimator
+Method-returnType:void
+Method-parameters:[long measuredRTT, int estimatorType, RemoteEndpoint endpoint]
+MethodInvocation:storeRttValue
+MethodInvocation:abs
+MethodInvocation:min
+MethodInvocation:max
+MethodInvocation:max
+MethodInvocation:getMaxRtt
+MethodInvocation:max
+MethodInvocation:getRTO
+MethodInvocation:max
+MethodInvocation:max
+MethodInvocation:printPeakhopperStats
+MethodInvocation:updateRTO
+Method-name:processRTTmeasurement
+Method-returnType:void
+Method-parameters:[long measuredRTT, Exchange exchange, int retransmissionCount]
+MethodInvocation:getRemoteEndpoint
+MethodInvocation:getExchangeEstimatorState
+MethodInvocation:matchCurrentRTO
+MethodInvocation:isBlindStrong
+MethodInvocation:setBlindStrong
+MethodInvocation:initializeRTOEstimators
+MethodInvocation:updateEstimator

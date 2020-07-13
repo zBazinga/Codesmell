@@ -1,0 +1,25 @@
+Class:RelOptLattice
+Field:lattice
+Field:starRelOptTable
+Method-name:RelOptLattice
+Method-returnType:null
+Method-parameters:[Lattice lattice, RelOptTable starRelOptTable]
+FieldAccess:lattice
+FieldAccess:starRelOptTable
+Method-name:rootTable
+Method-returnType:RelOptTable
+Method-parameters:[]
+MethodInvocation:relOptTable
+Method-name:rewrite
+Method-returnType:RelNode
+Method-parameters:[RelNode node]
+MethodInvocation:tryUseStar
+Method-name:getAggregate
+Method-returnType:Pair<CalciteSchema.TableEntry,TileKey>
+Method-parameters:[RelOptPlanner planner, ImmutableBitSet groupSet, List<Lattice.Measure> measureList]
+MethodInvocation:unwrap
+MethodInvocation:getContext
+MethodInvocation:instance
+MethodInvocation:createMaterializations
+MethodInvocation:unwrap
+MethodInvocation:defineTile

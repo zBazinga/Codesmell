@@ -1,0 +1,95 @@
+Class:XContentSource
+Field:bytes
+Field:contentType
+Field:data
+Method-name:XContentSource
+Method-returnType:null
+Method-parameters:[BytesReference bytes, XContentType xContentType]
+FieldAccess:bytes
+FieldAccess:contentType
+Method-name:XContentSource
+Method-returnType:null
+Method-parameters:[XContentBuilder builder]
+MethodInvocation:bytes
+MethodInvocation:contentType
+Method-name:getContentType
+Method-returnType:XContentType
+Method-parameters:[]
+Method-name:getBytes
+Method-returnType:BytesReference
+Method-parameters:[]
+Method-name:isMap
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:data
+Method-name:getAsMap
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+MethodInvocation:data
+Method-name:isList
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:data
+Method-name:getAsList
+Method-returnType:List<Object>
+Method-parameters:[]
+MethodInvocation:data
+Method-name:getValue
+Method-returnType:T
+Method-parameters:[String path]
+MethodInvocation:eval
+MethodInvocation:data
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:streamInput
+MethodInvocation:parser
+MethodInvocation:nextToken
+MethodInvocation:copyCurrentStructure
+MethodInvocation:generator
+Method-name:parser
+Method-returnType:XContentParser
+Method-parameters:[NamedXContentRegistry xContentRegistry, InputStream stream]
+MethodInvocation:createParser
+MethodInvocation:xContent
+Method-name:readFrom
+Method-returnType:XContentSource
+Method-parameters:[StreamInput in]
+MethodInvocation:readBytesReference
+MethodInvocation:readEnum
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[XContentSource source, StreamOutput out]
+MethodInvocation:writeBytesReference
+MethodInvocation:writeEnum
+Method-name:data
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:streamInput
+MethodInvocation:parser
+MethodInvocation:readValue
+MethodInvocation:nextToken
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:data
+MethodInvocation:data
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+MethodInvocation:data
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:utf8ToString
+Method-name:parse
+Method-returnType:RoleMapperExpression
+Method-parameters:[String name, ExpressionParser expressionParser]
+MethodInvocation:streamInput
+MethodInvocation:getBytes
+MethodInvocation:parse
+MethodInvocation:parser

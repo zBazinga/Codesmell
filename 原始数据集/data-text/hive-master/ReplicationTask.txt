@@ -1,0 +1,76 @@
+Class:ReplicationTask
+Field:event
+Field:srcStagingDirProvider
+Field:dstStagingDirProvider
+Field:tableNameMapping
+Field:dbNameMapping
+Field:messageFactory
+MethodInvocation:getInstance
+Field:factoryInstance
+Field:factoryClassName
+Method-name:create
+Method-returnType:ReplicationTask
+Method-parameters:[HCatClient client, HCatNotificationEvent event]
+Method-name:getFactoryInstance
+Method-returnType:Factory
+Method-parameters:[HCatClient client]
+MethodInvocation:createFactoryInstance
+Method-name:createFactoryInstance
+Method-returnType:void
+Method-parameters:[HCatClient client]
+MethodInvocation:getConfVal
+MethodInvocation:forName
+MethodInvocation:newInstance
+Method-name:create
+Method-returnType:ReplicationTask
+Method-parameters:[HCatClient client, HCatNotificationEvent event]
+Method-name:resetFactory
+Method-returnType:void
+Method-parameters:[Class<? extends Factory> factoryClass]
+MethodInvocation:getName
+Method-name:create
+Method-returnType:ReplicationTask
+Method-parameters:[HCatClient client, HCatNotificationEvent event]
+MethodInvocation:create
+MethodInvocation:getFactoryInstance
+Method-name:ReplicationTask
+Method-returnType:null
+Method-parameters:[HCatNotificationEvent event]
+FieldAccess:event
+Method-name:getEvent
+Method-returnType:HCatNotificationEvent
+Method-parameters:[]
+FieldAccess:event
+Method-name:needsStagingDirs
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isActionable
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:needsStagingDirs
+Method-name:withSrcStagingDirProvider
+Method-returnType:ReplicationTask
+Method-parameters:[StagingDirectoryProvider srcStagingDirProvider]
+FieldAccess:srcStagingDirProvider
+Method-name:withDstStagingDirProvider
+Method-returnType:ReplicationTask
+Method-parameters:[StagingDirectoryProvider dstStagingDirProvider]
+FieldAccess:dstStagingDirProvider
+Method-name:withTableNameMapping
+Method-returnType:ReplicationTask
+Method-parameters:[Function<String,String> tableNameMapping]
+FieldAccess:tableNameMapping
+Method-name:withDbNameMapping
+Method-returnType:ReplicationTask
+Method-parameters:[Function<String,String> dbNameMapping]
+FieldAccess:dbNameMapping
+Method-name:verifyActionable
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isActionable
+Method-name:getSrcWhCommands
+Method-returnType:Iterable<? extends Command>
+Method-parameters:[]
+Method-name:getDstWhCommands
+Method-returnType:Iterable<? extends Command>
+Method-parameters:[]

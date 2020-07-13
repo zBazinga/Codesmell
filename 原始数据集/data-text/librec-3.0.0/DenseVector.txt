@@ -1,0 +1,150 @@
+Class:DenseVector
+Method-name:DenseVector
+Method-returnType:null
+Method-parameters:[int cardinality]
+Method-name:init
+Method-returnType:void
+Method-parameters:[double mean, double sigma]
+MethodInvocation:assign
+MethodInvocation:gaussian
+Method-name:init
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:assign
+MethodInvocation:uniform
+Method-name:init
+Method-returnType:void
+Method-parameters:[double range]
+MethodInvocation:assign
+MethodInvocation:uniform
+Method-name:aggregate
+Method-returnType:double
+Method-parameters:[DoubleDoubleFunction aggregator, DoubleFunction map]
+MethodInvocation:isAssociativeAndCommutative
+MethodInvocation:isLikeLeftMult
+MethodInvocation:getNumEntries
+MethodInvocation:isDensifying
+MethodInvocation:isDensifying
+MethodInvocation:isLikeRightPlus
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:iterator
+MethodInvocation:next
+MethodInvocation:apply
+MethodInvocation:get
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:apply
+MethodInvocation:apply
+MethodInvocation:get
+Method-name:normalize
+Method-returnType:DenseVector
+Method-parameters:[]
+MethodInvocation:times
+MethodInvocation:sqrt
+MethodInvocation:getLengthSquared
+Method-name:normalize
+Method-returnType:DenseVector
+Method-parameters:[double power]
+MethodInvocation:times
+MethodInvocation:norm
+Method-name:dot
+Method-returnType:double
+Method-parameters:[Vector vector]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:index
+Method-name:outer
+Method-returnType:DenseMatrix
+Method-parameters:[DenseVector vec]
+FieldAccess:cardinality
+MethodInvocation:rowSize
+MethodInvocation:columnSize
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:get
+Method-name:clone
+Method-returnType:DenseVector
+Method-parameters:[]
+Method-name:assign
+Method-returnType:DenseVector
+Method-parameters:[DoubleFunction f]
+MethodInvocation:cardinality
+MethodInvocation:set
+MethodInvocation:apply
+MethodInvocation:get
+Method-name:assign
+Method-returnType:DenseVector
+Method-parameters:[VectorAssigner vectorAssigner]
+MethodInvocation:cardinality
+MethodInvocation:set
+MethodInvocation:getValue
+MethodInvocation:get
+Method-name:plus
+Method-returnType:DenseVector
+Method-parameters:[double value]
+MethodInvocation:cardinality
+MethodInvocation:assign
+MethodInvocation:get
+Method-name:plus
+Method-returnType:void
+Method-parameters:[int index, double value]
+MethodInvocation:set
+MethodInvocation:get
+Method-name:getValues
+Method-returnType:double[]
+Method-parameters:[]
+Method-name:plus
+Method-returnType:DenseVector
+Method-parameters:[Vector vector]
+MethodInvocation:cardinality
+MethodInvocation:index
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:get
+Method-name:minus
+Method-returnType:DenseVector
+Method-parameters:[Vector vector]
+MethodInvocation:cardinality
+MethodInvocation:index
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:get
+Method-name:times
+Method-returnType:DenseVector
+Method-parameters:[double value]
+MethodInvocation:cardinality
+MethodInvocation:assign
+MethodInvocation:get
+Method-name:times
+Method-returnType:DenseVector
+Method-parameters:[DenseVector vector]
+MethodInvocation:cardinality
+MethodInvocation:assign
+MethodInvocation:get
+MethodInvocation:get
+Method-name:isDense
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSequentialAccess
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getLookupCost
+Method-returnType:double
+Method-parameters:[]
+Method-name:getIteratorAdvanceCost
+Method-returnType:double
+Method-parameters:[]
+Method-name:isAddConstantTime
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getNumEntries
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:cardinality
+Method-name:setOther
+Method-returnType:void
+Method-parameters:[int row, DenseMatrix matrixEntries]
+MethodInvocation:cardinality
+MethodInvocation:set
+MethodInvocation:get

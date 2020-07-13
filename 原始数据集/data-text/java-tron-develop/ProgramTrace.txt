@@ -1,0 +1,69 @@
+Class:ProgramTrace
+Field:ops
+Field:result
+Field:error
+Field:contractAddress
+Method-name:ProgramTrace
+Method-returnType:null
+Method-parameters:[]
+Method-name:ProgramTrace
+Method-returnType:null
+Method-parameters:[VMConfig config, ProgramInvoke programInvoke]
+MethodInvocation:vmTrace
+MethodInvocation:toHexString
+MethodInvocation:convertToTronAddress
+MethodInvocation:getLast20Bytes
+MethodInvocation:getContractAddress
+Method-name:getOps
+Method-returnType:List<Op>
+Method-parameters:[]
+Method-name:setOps
+Method-returnType:void
+Method-parameters:[List<Op> ops]
+FieldAccess:ops
+Method-name:getResult
+Method-returnType:String
+Method-parameters:[]
+Method-name:setResult
+Method-returnType:void
+Method-parameters:[String result]
+FieldAccess:result
+Method-name:getError
+Method-returnType:String
+Method-parameters:[]
+Method-name:setError
+Method-returnType:void
+Method-parameters:[String error]
+FieldAccess:error
+Method-name:getContractAddress
+Method-returnType:String
+Method-parameters:[]
+Method-name:setContractAddress
+Method-returnType:void
+Method-parameters:[String contractAddress]
+FieldAccess:contractAddress
+Method-name:result
+Method-returnType:ProgramTrace
+Method-parameters:[byte[] result]
+MethodInvocation:setResult
+MethodInvocation:toHexString
+Method-name:error
+Method-returnType:ProgramTrace
+Method-parameters:[Exception error]
+MethodInvocation:setError
+MethodInvocation:format
+MethodInvocation:getClass
+MethodInvocation:getMessage
+Method-name:merge
+Method-returnType:void
+Method-parameters:[ProgramTrace programTrace]
+MethodInvocation:addAll
+FieldAccess:ops
+Method-name:asJsonString
+Method-returnType:String
+Method-parameters:[boolean formatted]
+MethodInvocation:serializeFieldsOnly
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:asJsonString

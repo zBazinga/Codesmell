@@ -1,0 +1,71 @@
+Class:SequentialSparseVector
+Field:LOG
+MethodInvocation:getLog
+Method-name:SequentialSparseVector
+Method-returnType:null
+Method-parameters:[int size]
+Method-name:clone
+Method-returnType:SequentialSparseVector
+Method-parameters:[]
+Method-name:setAtPosition
+Method-returnType:void
+Method-parameters:[int position, double value]
+Method-name:getAtPosition
+Method-returnType:double
+Method-parameters:[int position]
+Method-name:getIndexAtPosition
+Method-returnType:int
+Method-parameters:[int position]
+Method-name:reshape
+Method-returnType:void
+Method-parameters:[]
+Method-name:getIndices
+Method-returnType:int[]
+Method-parameters:[]
+Method-name:getVectorEntryAtPosition
+Method-returnType:VectorEntry
+Method-parameters:[int position]
+Method-name:dot
+Method-returnType:double
+Method-parameters:[SequentialSparseVector thatVector]
+MethodInvocation:iterator
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:next
+MethodInvocation:hasNext
+MethodInvocation:hasNext
+MethodInvocation:index
+MethodInvocation:index
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:next
+MethodInvocation:next
+MethodInvocation:next
+MethodInvocation:next
+Method-name:getIteratorAdvanceCost
+Method-returnType:double
+Method-parameters:[]
+Method-name:isAddConstantTime
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSequentialAccess
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getLookupCost
+Method-returnType:double
+Method-parameters:[]
+MethodInvocation:max
+MethodInvocation:round
+MethodInvocation:log
+MethodInvocation:getNumEntries
+MethodInvocation:log
+Method-name:isDense
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isContain
+Method-returnType:boolean
+Method-parameters:[int idx, PRankDRecommender pRankDRecommender]
+MethodInvocation:getIndices
+MethodInvocation:binarySearch

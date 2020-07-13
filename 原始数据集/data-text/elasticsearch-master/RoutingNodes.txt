@@ -1,0 +1,432 @@
+Class:RoutingNodes
+Field:nodesToShards
+Field:unassignedShards
+Field:assignedShards
+Field:readOnly
+Field:inactivePrimaryCount
+Field:inactiveShardCount
+Field:relocatingShards
+Field:nodesPerAttributeNames
+Field:recoveriesPerNode
+Method-name:RoutingNodes
+Method-returnType:null
+Method-parameters:[ClusterState clusterState]
+Method-name:RoutingNodes
+Method-returnType:null
+Method-parameters:[ClusterState clusterState, boolean readOnly]
+Method-name:addRecovery
+Method-returnType:void
+Method-parameters:[ShardRouting routing]
+MethodInvocation:updateRecoveryCounts
+MethodInvocation:findAssignedPrimaryIfPeerRecovery
+Method-name:removeRecovery
+Method-returnType:void
+Method-parameters:[ShardRouting routing]
+MethodInvocation:updateRecoveryCounts
+MethodInvocation:findAssignedPrimaryIfPeerRecovery
+Method-name:addInitialRecovery
+Method-returnType:void
+Method-parameters:[ShardRouting routing, ShardRouting initialPrimaryShard]
+MethodInvocation:updateRecoveryCounts
+Method-name:updateRecoveryCounts
+Method-returnType:void
+Method-parameters:[final ShardRouting routing, final boolean increment, @Nullable final ShardRouting primary]
+Method-name:getIncomingRecoveries
+Method-returnType:int
+Method-parameters:[String nodeId]
+MethodInvocation:getIncoming
+MethodInvocation:getOrDefault
+Method-name:getOutgoingRecoveries
+Method-returnType:int
+Method-parameters:[String nodeId]
+MethodInvocation:getOutgoing
+MethodInvocation:getOrDefault
+Method-name:findAssignedPrimaryIfPeerRecovery
+Method-returnType:ShardRouting
+Method-parameters:[ShardRouting routing]
+MethodInvocation:recoverySource
+MethodInvocation:getType
+MethodInvocation:recoverySource
+MethodInvocation:get
+MethodInvocation:shardId
+MethodInvocation:primary
+MethodInvocation:active
+MethodInvocation:relocatingNodeId
+Method-name:iterator
+Method-returnType:Iterator<RoutingNode>
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:unmodifiableCollection
+MethodInvocation:values
+Method-name:mutableIterator
+Method-returnType:Iterator<RoutingNode>
+Method-parameters:[]
+MethodInvocation:ensureMutable
+MethodInvocation:iterator
+MethodInvocation:values
+Method-name:unassigned
+Method-returnType:UnassignedShards
+Method-parameters:[]
+FieldAccess:unassignedShards
+Method-name:node
+Method-returnType:RoutingNode
+Method-parameters:[String nodeId]
+MethodInvocation:get
+Method-name:nodesPerAttributesCounts
+Method-returnType:ObjectIntHashMap<String>
+Method-parameters:[String attributeName]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getAttributes
+MethodInvocation:node
+MethodInvocation:addTo
+MethodInvocation:put
+Method-name:hasUnassignedPrimaries
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getNumPrimaries
+MethodInvocation:getNumIgnoredPrimaries
+Method-name:hasUnassignedShards
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:isIgnoredEmpty
+Method-name:hasInactivePrimaries
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:hasInactiveShards
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getRelocatingShardCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:assignedShards
+Method-returnType:List<ShardRouting>
+Method-parameters:[ShardId shardId]
+MethodInvocation:get
+MethodInvocation:unmodifiableList
+Method-name:getByAllocationId
+Method-returnType:ShardRouting
+Method-parameters:[ShardId shardId, String allocationId]
+MethodInvocation:get
+MethodInvocation:equals
+MethodInvocation:getId
+MethodInvocation:allocationId
+Method-name:activePrimary
+Method-returnType:ShardRouting
+Method-parameters:[ShardId shardId]
+MethodInvocation:assignedShards
+MethodInvocation:primary
+MethodInvocation:active
+Method-name:activeReplicaWithHighestVersion
+Method-returnType:ShardRouting
+Method-parameters:[ShardId shardId]
+MethodInvocation:orElse
+MethodInvocation:max
+MethodInvocation:filter
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:assignedShards
+MethodInvocation:primary
+MethodInvocation:active
+MethodInvocation:node
+MethodInvocation:currentNodeId
+MethodInvocation:comparing
+MethodInvocation:node
+MethodInvocation:node
+MethodInvocation:currentNodeId
+MethodInvocation:nullsFirst
+MethodInvocation:comparing
+Method-name:allReplicasActive
+Method-returnType:boolean
+Method-parameters:[ShardId shardId, Metadata metadata]
+MethodInvocation:assignedShards
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:getNumberOfReplicas
+MethodInvocation:getIndexSafe
+MethodInvocation:getIndex
+MethodInvocation:active
+Method-name:shards
+Method-returnType:List<ShardRouting>
+Method-parameters:[Predicate<ShardRouting> predicate]
+MethodInvocation:test
+MethodInvocation:add
+Method-name:shardsWithState
+Method-returnType:List<ShardRouting>
+Method-parameters:[ShardRoutingState... state]
+MethodInvocation:addAll
+MethodInvocation:shardsWithState
+MethodInvocation:forEach
+MethodInvocation:unassigned
+Method-name:shardsWithState
+Method-returnType:List<ShardRouting>
+Method-parameters:[String index, ShardRoutingState... state]
+MethodInvocation:addAll
+MethodInvocation:shardsWithState
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:index
+MethodInvocation:add
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:prettyPrint
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:shortSummary
+MethodInvocation:toString
+Method-name:initializeShard
+Method-returnType:ShardRouting
+Method-parameters:[ShardRouting unassignedShard, String nodeId, @Nullable String existingAllocationId, long expectedSize, RoutingChangesObserver routingChangesObserver]
+Method-name:relocateShard
+Method-returnType:Tuple<ShardRouting,ShardRouting>
+Method-parameters:[ShardRouting startedShard, String nodeId, long expectedShardSize, RoutingChangesObserver changes]
+MethodInvocation:ensureMutable
+MethodInvocation:relocate
+MethodInvocation:getTargetRelocatingShard
+MethodInvocation:updateAssigned
+MethodInvocation:add
+MethodInvocation:node
+MethodInvocation:currentNodeId
+MethodInvocation:assignedShardsAdd
+MethodInvocation:addRecovery
+MethodInvocation:relocationStarted
+MethodInvocation:tuple
+Method-name:startShard
+Method-returnType:ShardRouting
+Method-parameters:[Logger logger, ShardRouting initializingShard, RoutingChangesObserver routingChangesObserver]
+Method-name:failShard
+Method-returnType:void
+Method-parameters:[Logger logger, ShardRouting failedShard, UnassignedInfo unassignedInfo, IndexMetadata indexMetadata, RoutingChangesObserver routingChangesObserver]
+Method-name:unassignPrimaryAndPromoteActiveReplicaIfExists
+Method-returnType:void
+Method-parameters:[ShardRouting failedShard, UnassignedInfo unassignedInfo, RoutingChangesObserver routingChangesObserver]
+Method-name:promoteReplicaToPrimary
+Method-returnType:void
+Method-parameters:[ShardRouting activeReplica, RoutingChangesObserver routingChangesObserver]
+Method-name:started
+Method-returnType:ShardRouting
+Method-parameters:[ShardRouting shard]
+Method-name:cancelRelocation
+Method-returnType:ShardRouting
+Method-parameters:[ShardRouting shard]
+MethodInvocation:cancelRelocation
+MethodInvocation:updateAssigned
+Method-name:promoteActiveReplicaShardToPrimary
+Method-returnType:ShardRouting
+Method-parameters:[ShardRouting replicaShard]
+Field:EMPTY
+MethodInvocation:emptyList
+Method-name:remove
+Method-returnType:void
+Method-parameters:[ShardRouting shard]
+Method-name:removeRelocationSource
+Method-returnType:ShardRouting
+Method-parameters:[ShardRouting shard]
+Method-name:assignedShardsAdd
+Method-returnType:void
+Method-parameters:[ShardRouting shard]
+Method-name:assertInstanceNotInList
+Method-returnType:boolean
+Method-parameters:[ShardRouting shard, List<ShardRouting> shards]
+Method-name:assignedShardsRemove
+Method-returnType:void
+Method-parameters:[ShardRouting shard]
+Method-name:reinitReplica
+Method-returnType:ShardRouting
+Method-parameters:[ShardRouting shard]
+Method-name:updateAssigned
+Method-returnType:void
+Method-parameters:[ShardRouting oldShard, ShardRouting newShard]
+Method-name:moveToUnassigned
+Method-returnType:ShardRouting
+Method-parameters:[ShardRouting shard, UnassignedInfo unassignedInfo]
+Method-name:movePrimaryToUnassignedAndDemoteToReplica
+Method-returnType:ShardRouting
+Method-parameters:[ShardRouting shard, UnassignedInfo unassignedInfo]
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:isVersionCompatibleRelocatePrimary
+Method-returnType:Decision
+Method-parameters:[final String sourceNodeId, final RoutingNode target, final RoutingAllocation allocation, NodeVersionAllocationDecider nodeVersionAllocationDecider]
+MethodInvocation:node
+MethodInvocation:onOrAfter
+MethodInvocation:getVersion
+MethodInvocation:node
+MethodInvocation:getVersion
+MethodInvocation:node
+MethodInvocation:decision
+MethodInvocation:getVersion
+MethodInvocation:node
+MethodInvocation:getVersion
+MethodInvocation:node
+MethodInvocation:decision
+MethodInvocation:getVersion
+MethodInvocation:node
+MethodInvocation:getVersion
+MethodInvocation:node
+Class:UnassignedShards
+Field:nodes
+Field:unassigned
+Field:ignored
+Field:primaries
+Field:ignoredPrimaries
+Method-name:UnassignedShards
+Method-returnType:null
+Method-parameters:[RoutingNodes nodes]
+FieldAccess:nodes
+Method-name:add
+Method-returnType:void
+Method-parameters:[ShardRouting shardRouting]
+MethodInvocation:primary
+MethodInvocation:add
+Method-name:sort
+Method-returnType:void
+Method-parameters:[Comparator<ShardRouting> comparator]
+MethodInvocation:ensureMutable
+MethodInvocation:timSort
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getNumPrimaries
+Method-returnType:int
+Method-parameters:[]
+Method-name:getNumIgnoredPrimaries
+Method-returnType:int
+Method-parameters:[]
+Method-name:iterator
+Method-returnType:UnassignedIterator
+Method-parameters:[]
+Method-name:ignored
+Method-returnType:List<ShardRouting>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+Method-name:ignoreShard
+Method-returnType:void
+Method-parameters:[ShardRouting shard, AllocationStatus allocationStatus, RoutingChangesObserver changes]
+Class:UnassignedIterator
+Field:iterator
+Field:current
+Method-name:UnassignedIterator
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:iterator
+MethodInvocation:listIterator
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasNext
+Method-name:next
+Method-returnType:ShardRouting
+Method-parameters:[]
+MethodInvocation:next
+Method-name:initialize
+Method-returnType:ShardRouting
+Method-parameters:[String nodeId, @Nullable String existingAllocationId, long expectedShardSize, RoutingChangesObserver routingChangesObserver]
+MethodInvocation:ensureMutable
+MethodInvocation:innerRemove
+MethodInvocation:initializeShard
+Method-name:removeAndIgnore
+Method-returnType:void
+Method-parameters:[AllocationStatus attempt, RoutingChangesObserver changes]
+MethodInvocation:ensureMutable
+MethodInvocation:innerRemove
+MethodInvocation:ignoreShard
+Method-name:updateShardRouting
+Method-returnType:void
+Method-parameters:[ShardRouting shardRouting]
+MethodInvocation:set
+Method-name:updateUnassigned
+Method-returnType:ShardRouting
+Method-parameters:[UnassignedInfo unassignedInfo, RecoverySource recoverySource, RoutingChangesObserver changes]
+MethodInvocation:ensureMutable
+MethodInvocation:updateUnassigned
+MethodInvocation:unassignedInfoUpdated
+MethodInvocation:updateShardRouting
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]
+Method-name:innerRemove
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:remove
+MethodInvocation:primary
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:isIgnoredEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:shuffle
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:ensureMutable
+MethodInvocation:shuffle
+Method-name:drain
+Method-returnType:ShardRouting[]
+Method-parameters:[]
+MethodInvocation:ensureMutable
+MethodInvocation:toArray
+MethodInvocation:size
+MethodInvocation:clear
+Method-name:assertShardStats
+Method-returnType:boolean
+Method-parameters:[RoutingNodes routingNodes]
+Method-name:ensureMutable
+Method-returnType:void
+Method-parameters:[]
+Method-name:nodeInterleavedShardIterator
+Method-returnType:Iterator<ShardRouting>
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:add
+MethodInvocation:iterator
+MethodInvocation:copyShards
+MethodInvocation:getValue
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:hasNext
+MethodInvocation:peek
+MethodInvocation:poll
+Method-name:next
+Method-returnType:ShardRouting
+Method-parameters:[]
+MethodInvocation:hasNext
+MethodInvocation:poll
+MethodInvocation:next
+MethodInvocation:offer
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]
+Class:Recoveries
+Field:EMPTY
+Field:incoming
+Field:outgoing
+Method-name:addOutgoing
+Method-returnType:void
+Method-parameters:[int howMany]
+Method-name:addIncoming
+Method-returnType:void
+Method-parameters:[int howMany]
+Method-name:getOutgoing
+Method-returnType:int
+Method-parameters:[]
+Method-name:getIncoming
+Method-returnType:int
+Method-parameters:[]
+Method-name:getOrAdd
+Method-returnType:Recoveries
+Method-parameters:[Map<String,Recoveries> map, String key]
+MethodInvocation:get
+MethodInvocation:put

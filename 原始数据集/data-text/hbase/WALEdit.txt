@@ -1,0 +1,190 @@
+Class:WALEdit
+Field:METAFAMILY
+MethodInvocation:toBytes
+Field:METAROW
+MethodInvocation:toBytes
+Field:COMPACTION
+MethodInvocation:toBytes
+Field:FLUSH
+MethodInvocation:toBytes
+Field:REGION_EVENT
+MethodInvocation:toBytes
+Field:BULK_LOAD
+MethodInvocation:toBytes
+Field:replay
+Field:cells
+Field:families
+Method-name:WALEdit
+Method-returnType:null
+Method-parameters:[]
+Method-name:WALEdit
+Method-returnType:null
+Method-parameters:[boolean isReplay]
+Method-name:WALEdit
+Method-returnType:null
+Method-parameters:[int cellCount]
+Method-name:WALEdit
+Method-returnType:null
+Method-parameters:[int cellCount, boolean isReplay]
+FieldAccess:replay
+Method-name:getOrCreateFamilies
+Method-returnType:Set<byte[]>
+Method-parameters:[]
+FieldAccess:families
+FieldAccess:families
+FieldAccess:families
+Method-name:getFamilies
+Method-returnType:Set<byte[]>
+Method-parameters:[]
+FieldAccess:families
+Method-name:isMetaEditFamily
+Method-returnType:boolean
+Method-parameters:[final byte[] f]
+MethodInvocation:equals
+Method-name:isMetaEditFamily
+Method-returnType:boolean
+Method-parameters:[Cell cell]
+MethodInvocation:matchingFamily
+Method-name:isMetaEdit
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isMetaEditFamily
+Method-name:isReplay
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:replay
+Method-name:add
+Method-returnType:WALEdit
+Method-parameters:[Cell cell, byte[] family]
+MethodInvocation:add
+MethodInvocation:getOrCreateFamilies
+MethodInvocation:addCell
+Method-name:add
+Method-returnType:WALEdit
+Method-parameters:[Cell cell]
+MethodInvocation:add
+MethodInvocation:cloneFamily
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getCells
+Method-returnType:ArrayList<Cell>
+Method-parameters:[]
+Method-name:setCells
+Method-returnType:void
+Method-parameters:[ArrayList<Cell> cells]
+FieldAccess:cells
+FieldAccess:families
+Method-name:readFromCells
+Method-returnType:int
+Method-parameters:[Codec.Decoder cellDecoder, int expectedCount]
+MethodInvocation:clear
+MethodInvocation:ensureCapacity
+MethodInvocation:size
+MethodInvocation:advance
+MethodInvocation:add
+MethodInvocation:current
+MethodInvocation:size
+Method-name:heapSize
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:heapSize
+Method-name:estimatedSerializedSizeOf
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:estimatedSerializedSizeOf
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:size
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:createFlushWALEdit
+Method-returnType:WALEdit
+Method-parameters:[RegionInfo hri, FlushDescriptor f]
+MethodInvocation:getRowForRegion
+MethodInvocation:currentTime
+MethodInvocation:toByteArray
+MethodInvocation:add
+Method-name:getFlushDescriptor
+Method-returnType:FlushDescriptor
+Method-parameters:[Cell cell]
+MethodInvocation:matchingColumn
+MethodInvocation:parseFrom
+MethodInvocation:cloneValue
+Method-name:createRegionEventWALEdit
+Method-returnType:WALEdit
+Method-parameters:[RegionInfo hri, RegionEventDescriptor regionEventDesc]
+MethodInvocation:getRowForRegion
+MethodInvocation:currentTime
+MethodInvocation:toByteArray
+MethodInvocation:add
+Method-name:getRegionEventDescriptor
+Method-returnType:RegionEventDescriptor
+Method-parameters:[Cell cell]
+MethodInvocation:matchingColumn
+MethodInvocation:parseFrom
+MethodInvocation:cloneValue
+Method-name:createCompaction
+Method-returnType:WALEdit
+Method-parameters:[final RegionInfo hri, final CompactionDescriptor c]
+MethodInvocation:toByteArray
+MethodInvocation:getRowForRegion
+MethodInvocation:currentTime
+MethodInvocation:add
+Method-name:getRowForRegion
+Method-returnType:byte[]
+Method-parameters:[RegionInfo hri]
+MethodInvocation:getStartKey
+Method-name:getCompaction
+Method-returnType:CompactionDescriptor
+Method-parameters:[Cell kv]
+MethodInvocation:isCompactionMarker
+MethodInvocation:parseFrom
+MethodInvocation:cloneValue
+Method-name:isCompactionMarker
+Method-returnType:boolean
+Method-parameters:[Cell cell]
+MethodInvocation:matchingColumn
+Method-name:createBulkLoadEvent
+Method-returnType:WALEdit
+Method-parameters:[RegionInfo hri, WALProtos.BulkLoadDescriptor bulkLoadDescriptor]
+MethodInvocation:getRowForRegion
+MethodInvocation:currentTime
+MethodInvocation:toByteArray
+MethodInvocation:add
+Method-name:getBulkLoadDescriptor
+Method-returnType:WALProtos.BulkLoadDescriptor
+Method-parameters:[Cell cell]
+MethodInvocation:matchingColumn
+MethodInvocation:parseFrom
+MethodInvocation:cloneValue
+Method-name:add
+Method-returnType:void
+Method-parameters:[Map<byte[],List<Cell>> familyMap]
+MethodInvocation:entrySet
+MethodInvocation:size
+MethodInvocation:getValue
+MethodInvocation:addCell
+MethodInvocation:get
+MethodInvocation:getValue
+MethodInvocation:addFamily
+MethodInvocation:getKey
+Method-name:addFamily
+Method-returnType:void
+Method-parameters:[byte[] family]
+MethodInvocation:add
+MethodInvocation:getOrCreateFamilies
+Method-name:addCell
+Method-returnType:WALEdit
+Method-parameters:[Cell cell]
+MethodInvocation:add
+FieldAccess:cells

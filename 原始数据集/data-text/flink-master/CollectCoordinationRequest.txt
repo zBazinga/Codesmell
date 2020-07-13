@@ -1,0 +1,36 @@
+Class:CollectCoordinationRequest
+Field:serialVersionUID
+Field:versionSerializer
+Field:offsetSerializer
+Field:version
+Field:offset
+Method-name:CollectCoordinationRequest
+Method-returnType:null
+Method-parameters:[String version, long offset]
+FieldAccess:version
+FieldAccess:offset
+Method-name:CollectCoordinationRequest
+Method-returnType:null
+Method-parameters:[DataInputView inView]
+FieldAccess:version
+MethodInvocation:deserialize
+FieldAccess:offset
+MethodInvocation:deserialize
+Method-name:getVersion
+Method-returnType:String
+Method-parameters:[]
+Method-name:getOffset
+Method-returnType:long
+Method-parameters:[]
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[DataOutputView outView]
+MethodInvocation:serialize
+MethodInvocation:serialize
+Method-name:completeWithEmptyResponse
+Method-returnType:void
+Method-parameters:[CompletableFuture<CoordinationResponse> future, CollectSinkOperatorCoordinator collectSinkOperatorCoordinator]
+MethodInvocation:complete
+MethodInvocation:getVersion
+MethodInvocation:emptyList
+MethodInvocation:completeExceptionally

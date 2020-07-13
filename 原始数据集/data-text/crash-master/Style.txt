@@ -1,0 +1,190 @@
+Class:Style
+Field:reset
+Method-name:merge
+Method-returnType:Style
+Method-parameters:[Style s]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:writeAnsiTo
+Method-returnType:void
+Method-parameters:[Appendable appendable]
+MethodInvocation:append
+Method-name:println
+Method-returnType:void
+Method-parameters:[Object obj, RenderPrintWriter renderPrintWriter]
+MethodInvocation:print
+MethodInvocation:println
+Class:Composite
+Field:bold
+Field:underline
+Field:blink
+Field:foreground
+Field:background
+Method-name:Composite
+Method-returnType:null
+Method-parameters:[Boolean bold, Boolean underline, Boolean blink, Color foreground, Color background]
+FieldAccess:bold
+FieldAccess:underline
+FieldAccess:blink
+FieldAccess:foreground
+FieldAccess:background
+Method-name:fg
+Method-returnType:Composite
+Method-parameters:[Color color]
+MethodInvocation:foreground
+Method-name:foreground
+Method-returnType:Composite
+Method-parameters:[Color color]
+MethodInvocation:style
+Method-name:bg
+Method-returnType:Composite
+Method-parameters:[Color value]
+MethodInvocation:background
+Method-name:background
+Method-returnType:Composite
+Method-parameters:[Color value]
+MethodInvocation:style
+Method-name:bold
+Method-returnType:Composite
+Method-parameters:[]
+MethodInvocation:bold
+Method-name:underline
+Method-returnType:Composite
+Method-parameters:[]
+MethodInvocation:underline
+Method-name:blink
+Method-returnType:Composite
+Method-parameters:[]
+MethodInvocation:blink
+Method-name:bold
+Method-returnType:Composite
+Method-parameters:[Boolean value]
+MethodInvocation:style
+Method-name:underline
+Method-returnType:Composite
+Method-parameters:[Boolean value]
+MethodInvocation:style
+Method-name:blink
+Method-returnType:Composite
+Method-parameters:[Boolean value]
+MethodInvocation:style
+Method-name:decoration
+Method-returnType:Composite
+Method-parameters:[Decoration decoration]
+MethodInvocation:bold
+MethodInvocation:bold
+MethodInvocation:underline
+MethodInvocation:underline
+MethodInvocation:blink
+MethodInvocation:blink
+Method-name:getBold
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:getUnderline
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:getBlink
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:getForeground
+Method-returnType:Color
+Method-parameters:[]
+Method-name:getBackground
+Method-returnType:Color
+Method-parameters:[]
+Method-name:merge
+Method-returnType:Style
+Method-parameters:[Style s]
+MethodInvocation:notNull
+MethodInvocation:getBold
+MethodInvocation:getBold
+MethodInvocation:notNull
+MethodInvocation:getUnderline
+MethodInvocation:getUnderline
+MethodInvocation:notNull
+MethodInvocation:getBlink
+MethodInvocation:getBlink
+MethodInvocation:notNull
+MethodInvocation:getForeground
+MethodInvocation:getForeground
+MethodInvocation:notNull
+MethodInvocation:getBackground
+MethodInvocation:getBackground
+MethodInvocation:style
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:decoration
+Method-returnType:boolean
+Method-parameters:[Appendable appendable, String on, String off, Boolean value, boolean append]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+Method-name:color
+Method-returnType:boolean
+Method-parameters:[Appendable appendable, Color color, char base, boolean append]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+Method-name:writeAnsiTo
+Method-returnType:void
+Method-parameters:[Appendable appendable]
+MethodInvocation:decoration
+MethodInvocation:decoration
+MethodInvocation:decoration
+MethodInvocation:color
+MethodInvocation:color
+MethodInvocation:append
+Field:BOOLEANS
+Field:COLORS
+MethodInvocation:copyOf
+MethodInvocation:values
+FieldAccess:length
+MethodInvocation:values
+Field:ALL
+Method-name:style
+Method-returnType:Composite
+Method-parameters:[Color foreground]
+MethodInvocation:style
+Method-name:style
+Method-returnType:Composite
+Method-parameters:[Color foreground, Color background]
+MethodInvocation:style
+Method-name:style
+Method-returnType:Composite
+Method-parameters:[Decoration decoration, Color foreground, Color background]
+MethodInvocation:style
+Method-name:style
+Method-returnType:Composite
+Method-parameters:[Boolean bold, Boolean underline, Boolean blink, Color foreground, Color background]
+MethodInvocation:ordinal
+MethodInvocation:ordinal
+Method-name:style
+Method-returnType:Composite
+Method-parameters:[]
+MethodInvocation:style
+Method-name:style
+Method-returnType:Composite
+Method-parameters:[Decoration decoration]
+MethodInvocation:style
+Method-name:style
+Method-returnType:Composite
+Method-parameters:[Decoration decoration, Color foreground]
+MethodInvocation:style
+Method-name:merge
+Method-returnType:Style
+Method-parameters:[Style s]
+Method-name:toAnsiSequence
+Method-returnType:CharSequence
+Method-parameters:[]
+MethodInvocation:writeAnsiTo
+MethodInvocation:toString
+Method-name:writeAnsiTo
+Method-returnType:void
+Method-parameters:[Appendable appendable]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

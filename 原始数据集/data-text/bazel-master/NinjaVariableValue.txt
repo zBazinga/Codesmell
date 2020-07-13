@@ -1,0 +1,62 @@
+Class:NinjaVariableValue
+Field:parts
+Field:isPlainText
+Method-name:NinjaVariableValue
+Method-returnType:null
+Method-parameters:[ImmutableList<Function<Function<String,String>,String>> parts, boolean isPlainText]
+FieldAccess:parts
+FieldAccess:isPlainText
+Method-name:createPlainText
+Method-returnType:NinjaVariableValue
+Method-parameters:[String text]
+MethodInvocation:build
+MethodInvocation:addText
+MethodInvocation:builder
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:isPlainText
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getExpandedValue
+Method-returnType:String
+Method-parameters:[Function<String,String> expander]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:apply
+MethodInvocation:joining
+Method-name:getRawText
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getExpandedValue
+MethodInvocation:format
+Method-name:getExpandedValueOther
+Method-returnType:String
+Method-parameters:[long offset, NinjaScope ninjaScope]
+MethodInvocation:newHashMap
+MethodInvocation:computeIfAbsent
+MethodInvocation:nullToEmpty
+MethodInvocation:findExpandedVariable
+MethodInvocation:getExpandedValue
+Class:Builder
+Field:builder
+Field:isPrimitive
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:builder
+MethodInvocation:builder
+Method-name:addText
+Method-returnType:Builder
+Method-parameters:[String text]
+MethodInvocation:add
+Method-name:addVariable
+Method-returnType:Builder
+Method-parameters:[String name]
+MethodInvocation:add
+MethodInvocation:apply
+Method-name:build
+Method-returnType:NinjaVariableValue
+Method-parameters:[]
+MethodInvocation:build

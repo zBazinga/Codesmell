@@ -1,0 +1,51 @@
+Class:AbstractCommentRule
+Method-name:tagsIndicesIn
+Method-returnType:List<Integer>
+Method-parameters:[String comments]
+MethodInvocation:javadocTagsIn
+MethodInvocation:values
+Method-name:filteredCommentIn
+Method-returnType:String
+Method-parameters:[Comment comment]
+MethodInvocation:getFilteredComment
+Method-name:assignCommentsToDeclarations
+Method-returnType:void
+Method-parameters:[ASTCompilationUnit cUnit]
+MethodInvocation:orderedCommentsAndDeclarations
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:isCommentNotWithin
+MethodInvocation:isCommentBefore
+MethodInvocation:comment
+Method-name:isCommentBefore
+Method-returnType:boolean
+Method-parameters:[FormalComment n1, Node n2]
+MethodInvocation:getEndLine
+MethodInvocation:getBeginLine
+MethodInvocation:getEndLine
+MethodInvocation:getBeginLine
+MethodInvocation:getEndColumn
+MethodInvocation:getBeginColumn
+Method-name:orderedCommentsAndDeclarations
+Method-returnType:SortedMap<Integer,Node>
+Method-parameters:[ASTCompilationUnit cUnit]
+MethodInvocation:addDeclarations
+MethodInvocation:findDescendantsOfType
+MethodInvocation:addDeclarations
+MethodInvocation:findDescendantsOfType
+MethodInvocation:addDeclarations
+MethodInvocation:getComments
+MethodInvocation:addDeclarations
+MethodInvocation:findDescendantsOfType
+MethodInvocation:addDeclarations
+MethodInvocation:findDescendantsOfType
+MethodInvocation:addDeclarations
+MethodInvocation:findDescendantsOfType
+MethodInvocation:addDeclarations
+MethodInvocation:findDescendantsOfType
+Method-name:addDeclarations
+Method-returnType:void
+Method-parameters:[SortedMap<Integer,Node> map, List<? extends Node> nodes]
+MethodInvocation:put
+MethodInvocation:getBeginLine
+MethodInvocation:getBeginColumn

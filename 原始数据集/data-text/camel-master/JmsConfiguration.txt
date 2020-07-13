@@ -1,0 +1,989 @@
+Class:JmsConfiguration
+Field:QUEUE_PREFIX
+Field:TOPIC_PREFIX
+Field:TEMP_QUEUE_PREFIX
+Field:TEMP_TOPIC_PREFIX
+Field:LOG
+MethodInvocation:getLogger
+Field:jmsOperations
+Field:templateConnectionFactory
+Field:listenerConnectionFactory
+Field:connectionFactory
+Field:username
+Field:password
+Field:acknowledgementMode
+Field:acknowledgementModeName
+Field:destinationResolver
+Field:exceptionListener
+Field:consumerType
+Field:errorHandler
+Field:errorHandlerLoggingLevel
+Field:errorHandlerLogStackTrace
+Field:autoStartup
+Field:allowReplyManagerQuickStop
+Field:acceptMessagesWhileStopping
+Field:clientId
+Field:durableSubscriptionName
+Field:exposeListenerSession
+Field:taskExecutor
+Field:pubSubNoLocal
+Field:concurrentConsumers
+Field:replyToConcurrentConsumers
+Field:maxMessagesPerTask
+Field:cacheLevel
+Field:cacheLevelName
+Field:recoveryInterval
+Field:receiveTimeout
+Field:requestTimeout
+Field:requestTimeoutCheckerInterval
+Field:idleTaskExecutionLimit
+Field:idleConsumerLimit
+Field:waitForProvisionCorrelationToBeUpdatedThreadSleepingTime
+Field:waitForProvisionCorrelationToBeUpdatedCounter
+Field:maxConcurrentConsumers
+Field:replyToMaxConcurrentConsumers
+Field:replyToOnTimeoutMaxConcurrentConsumers
+Field:explicitQosEnabled
+Field:deliveryPersistent
+Field:deliveryMode
+Field:replyToDeliveryPersistent
+Field:selector
+Field:timeToLive
+Field:messageConverter
+Field:mapJmsMessage
+Field:messageIdEnabled
+Field:messageTimestampEnabled
+Field:priority
+Field:transacted
+Field:lazyCreateTransactionManager
+Field:transactionManager
+Field:transactionName
+Field:transactionTimeout
+Field:preserveMessageQos
+Field:disableReplyTo
+Field:eagerPoisonBody
+Field:eagerLoadingOfProperties
+Field:alwaysCopyMessage
+Field:useMessageIDAsCorrelationID
+Field:replyTo
+Field:replyToDestinationSelectorName
+Field:replyToOverride
+Field:replyToSameDestinationAllowed
+Field:jmsMessageType
+Field:jmsKeyFormatStrategy
+Field:transferExchange
+Field:allowSerializedHeaders
+Field:transferException
+Field:testConnectionOnStartup
+Field:asyncStartListener
+Field:asyncStopListener
+Field:forceSendOriginalMessage
+Field:disableTimeToLive
+Field:replyToType
+Field:asyncConsumer
+Field:replyToCacheLevelName
+Field:allowNullBody
+Field:messageListenerContainerFactory
+Field:includeSentJMSMessageID
+Field:defaultTaskExecutorType
+Field:includeAllJMSXProperties
+Field:messageCreatedStrategy
+Field:correlationProperty
+Field:allowAdditionalHeaders
+Field:formatDateHeadersToIso8601
+Field:artemisStreamingEnabled
+Field:subscriptionName
+Field:subscriptionDurable
+Field:subscriptionShared
+Field:streamMessageTypeEnabled
+Field:deliveryDelay
+Method-name:JmsConfiguration
+Method-returnType:null
+Method-parameters:[]
+Method-name:JmsConfiguration
+Method-returnType:null
+Method-parameters:[ConnectionFactory connectionFactory]
+FieldAccess:connectionFactory
+Method-name:copy
+Method-returnType:JmsConfiguration
+Method-parameters:[]
+MethodInvocation:clone
+Class:CamelJmsTemplate
+Field:config
+Method-name:CamelJmsTemplate
+Method-returnType:null
+Method-parameters:[JmsConfiguration config, ConnectionFactory connectionFactory]
+FieldAccess:config
+Method-name:send
+Method-returnType:void
+Method-parameters:[final String destinationName, final MessageCreator messageCreator, final MessageSentCallback callback]
+MethodInvocation:execute
+MethodInvocation:resolveDestinationName
+MethodInvocation:doSendToDestination
+Method-name:send
+Method-returnType:void
+Method-parameters:[final Destination destination, final MessageCreator messageCreator, final MessageSentCallback callback]
+MethodInvocation:execute
+MethodInvocation:doSendToDestination
+Method-name:send
+Method-returnType:void
+Method-parameters:[final String destinationName, final MessageCreator messageCreator]
+MethodInvocation:execute
+MethodInvocation:resolveDestinationName
+MethodInvocation:doSendToDestination
+Method-name:send
+Method-returnType:void
+Method-parameters:[final Destination destination, final MessageCreator messageCreator]
+MethodInvocation:execute
+MethodInvocation:doSendToDestination
+Method-name:doSendToDestination
+Method-returnType:Object
+Method-parameters:[final Destination destination, final MessageCreator messageCreator, final MessageSentCallback callback, final Session session]
+MethodInvocation:notNull
+MethodInvocation:createProducer
+MethodInvocation:createMessage
+MethodInvocation:doSend
+MethodInvocation:sent
+MethodInvocation:getTransacted
+MethodInvocation:isSessionLocallyTransacted
+MethodInvocation:commitIfNecessary
+MethodInvocation:closeMessageProducer
+Method-name:doSend
+Method-returnType:void
+Method-parameters:[MessageProducer producer, Message message]
+MethodInvocation:isPreserveMessageQos
+MethodInvocation:getJMSExpiration
+MethodInvocation:currentTimeMillis
+MethodInvocation:getJMSPriority
+MethodInvocation:getPriority
+MethodInvocation:hasProperty
+MethodInvocation:getIntProperty
+MethodInvocation:removeJmsProperty
+MethodInvocation:getJMSDeliveryMode
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getDestination
+MethodInvocation:send
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getDestination
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:getDestination
+Method-name:createInOnlyTemplate
+Method-returnType:JmsOperations
+Method-parameters:[JmsEndpoint endpoint, boolean pubSubDomain, String destination]
+MethodInvocation:getOrCreateTemplateConnectionFactory
+MethodInvocation:setPubSubDomain
+MethodInvocation:setDestinationResolver
+MethodInvocation:debug
+MethodInvocation:setDestinationResolver
+MethodInvocation:createDestinationResolver
+MethodInvocation:setDefaultDestinationName
+MethodInvocation:setExplicitQosEnabled
+MethodInvocation:isExplicitQosEnabled
+MethodInvocation:setDeliveryMode
+MethodInvocation:setDeliveryPersistent
+MethodInvocation:setMessageConverter
+MethodInvocation:setMessageIdEnabled
+MethodInvocation:setMessageTimestampEnabled
+MethodInvocation:setPriority
+MethodInvocation:setPubSubNoLocal
+MethodInvocation:isDisableTimeToLive
+MethodInvocation:setTimeToLive
+MethodInvocation:setSessionTransacted
+MethodInvocation:setSessionAcknowledgeMode
+MethodInvocation:setSessionAcknowledgeMode
+MethodInvocation:setSessionAcknowledgeModeName
+MethodInvocation:setDeliveryDelay
+Method-name:createMessageListenerContainer
+Method-returnType:AbstractMessageListenerContainer
+Method-parameters:[JmsEndpoint endpoint]
+MethodInvocation:chooseMessageListenerContainerImplementation
+MethodInvocation:configureMessageListenerContainer
+Method-name:chooseMessageListenerContainerImplementation
+Method-returnType:AbstractMessageListenerContainer
+Method-parameters:[JmsEndpoint endpoint]
+MethodInvocation:getCustomMessageListenerContainer
+Method-name:getCustomMessageListenerContainer
+Method-returnType:AbstractMessageListenerContainer
+Method-parameters:[JmsEndpoint endpoint]
+MethodInvocation:createMessageListenerContainer
+Method-name:getConsumerType
+Method-returnType:ConsumerType
+Method-parameters:[]
+Method-name:setConsumerType
+Method-returnType:void
+Method-parameters:[ConsumerType consumerType]
+FieldAccess:consumerType
+Method-name:getConnectionFactory
+Method-returnType:ConnectionFactory
+Method-parameters:[]
+Method-name:getOrCreateConnectionFactory
+Method-returnType:ConnectionFactory
+Method-parameters:[]
+MethodInvocation:createConnectionFactory
+Method-name:setConnectionFactory
+Method-returnType:void
+Method-parameters:[ConnectionFactory connectionFactory]
+FieldAccess:connectionFactory
+Method-name:getUsername
+Method-returnType:String
+Method-parameters:[]
+Method-name:setUsername
+Method-returnType:void
+Method-parameters:[String username]
+FieldAccess:username
+Method-name:getPassword
+Method-returnType:String
+Method-parameters:[]
+Method-name:setPassword
+Method-returnType:void
+Method-parameters:[String password]
+FieldAccess:password
+Method-name:getListenerConnectionFactory
+Method-returnType:ConnectionFactory
+Method-parameters:[]
+Method-name:getOrCreateListenerConnectionFactory
+Method-returnType:ConnectionFactory
+Method-parameters:[]
+MethodInvocation:createListenerConnectionFactory
+Method-name:setListenerConnectionFactory
+Method-returnType:void
+Method-parameters:[ConnectionFactory listenerConnectionFactory]
+FieldAccess:listenerConnectionFactory
+Method-name:getTemplateConnectionFactory
+Method-returnType:ConnectionFactory
+Method-parameters:[]
+Method-name:getOrCreateTemplateConnectionFactory
+Method-returnType:ConnectionFactory
+Method-parameters:[]
+MethodInvocation:createTemplateConnectionFactory
+Method-name:setTemplateConnectionFactory
+Method-returnType:void
+Method-parameters:[ConnectionFactory templateConnectionFactory]
+FieldAccess:templateConnectionFactory
+Method-name:isAutoStartup
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAutoStartup
+Method-returnType:void
+Method-parameters:[boolean autoStartup]
+FieldAccess:autoStartup
+Method-name:isAcceptMessagesWhileStopping
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAcceptMessagesWhileStopping
+Method-returnType:void
+Method-parameters:[boolean acceptMessagesWhileStopping]
+FieldAccess:acceptMessagesWhileStopping
+Method-name:isAllowReplyManagerQuickStop
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAllowReplyManagerQuickStop
+Method-returnType:void
+Method-parameters:[boolean allowReplyManagerQuickStop]
+FieldAccess:allowReplyManagerQuickStop
+Method-name:getClientId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setClientId
+Method-returnType:void
+Method-parameters:[String consumerClientId]
+FieldAccess:clientId
+Method-name:getDurableSubscriptionName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setDurableSubscriptionName
+Method-returnType:void
+Method-parameters:[String durableSubscriptionName]
+FieldAccess:durableSubscriptionName
+Method-name:getExceptionListener
+Method-returnType:ExceptionListener
+Method-parameters:[]
+Method-name:setExceptionListener
+Method-returnType:void
+Method-parameters:[ExceptionListener exceptionListener]
+FieldAccess:exceptionListener
+Method-name:setErrorHandler
+Method-returnType:void
+Method-parameters:[ErrorHandler errorHandler]
+FieldAccess:errorHandler
+Method-name:getErrorHandler
+Method-returnType:ErrorHandler
+Method-parameters:[]
+Method-name:getErrorHandlerLoggingLevel
+Method-returnType:LoggingLevel
+Method-parameters:[]
+Method-name:setErrorHandlerLoggingLevel
+Method-returnType:void
+Method-parameters:[LoggingLevel errorHandlerLoggingLevel]
+FieldAccess:errorHandlerLoggingLevel
+Method-name:isErrorHandlerLogStackTrace
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setErrorHandlerLogStackTrace
+Method-returnType:void
+Method-parameters:[boolean errorHandlerLogStackTrace]
+FieldAccess:errorHandlerLogStackTrace
+Method-name:getAcknowledgementModeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAcknowledgementModeName
+Method-returnType:void
+Method-parameters:[String consumerAcknowledgementMode]
+FieldAccess:acknowledgementModeName
+FieldAccess:acknowledgementMode
+Method-name:isExposeListenerSession
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setExposeListenerSession
+Method-returnType:void
+Method-parameters:[boolean exposeListenerSession]
+FieldAccess:exposeListenerSession
+Method-name:getTaskExecutor
+Method-returnType:TaskExecutor
+Method-parameters:[]
+Method-name:setTaskExecutor
+Method-returnType:void
+Method-parameters:[TaskExecutor taskExecutor]
+FieldAccess:taskExecutor
+Method-name:isPubSubNoLocal
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setPubSubNoLocal
+Method-returnType:void
+Method-parameters:[boolean pubSubNoLocal]
+FieldAccess:pubSubNoLocal
+Method-name:getConcurrentConsumers
+Method-returnType:int
+Method-parameters:[]
+Method-name:setConcurrentConsumers
+Method-returnType:void
+Method-parameters:[int concurrentConsumers]
+FieldAccess:concurrentConsumers
+Method-name:getReplyToConcurrentConsumers
+Method-returnType:int
+Method-parameters:[]
+Method-name:setReplyToConcurrentConsumers
+Method-returnType:void
+Method-parameters:[int replyToConcurrentConsumers]
+FieldAccess:replyToConcurrentConsumers
+Method-name:getMaxMessagesPerTask
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxMessagesPerTask
+Method-returnType:void
+Method-parameters:[int maxMessagesPerTask]
+FieldAccess:maxMessagesPerTask
+Method-name:getCacheLevel
+Method-returnType:int
+Method-parameters:[]
+Method-name:setCacheLevel
+Method-returnType:void
+Method-parameters:[int cacheLevel]
+FieldAccess:cacheLevel
+Method-name:getCacheLevelName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setCacheLevelName
+Method-returnType:void
+Method-parameters:[String cacheName]
+FieldAccess:cacheLevelName
+Method-name:getRecoveryInterval
+Method-returnType:long
+Method-parameters:[]
+Method-name:setRecoveryInterval
+Method-returnType:void
+Method-parameters:[long recoveryInterval]
+FieldAccess:recoveryInterval
+Method-name:getReceiveTimeout
+Method-returnType:long
+Method-parameters:[]
+Method-name:setReceiveTimeout
+Method-returnType:void
+Method-parameters:[long receiveTimeout]
+FieldAccess:receiveTimeout
+Method-name:getTransactionManager
+Method-returnType:PlatformTransactionManager
+Method-parameters:[]
+Method-name:getOrCreateTransactionManager
+Method-returnType:PlatformTransactionManager
+Method-parameters:[]
+MethodInvocation:isTransacted
+MethodInvocation:isLazyCreateTransactionManager
+MethodInvocation:createTransactionManager
+Method-name:setTransactionManager
+Method-returnType:void
+Method-parameters:[PlatformTransactionManager transactionManager]
+FieldAccess:transactionManager
+Method-name:getTransactionName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTransactionName
+Method-returnType:void
+Method-parameters:[String transactionName]
+FieldAccess:transactionName
+Method-name:getTransactionTimeout
+Method-returnType:int
+Method-parameters:[]
+Method-name:setTransactionTimeout
+Method-returnType:void
+Method-parameters:[int transactionTimeout]
+FieldAccess:transactionTimeout
+Method-name:getIdleTaskExecutionLimit
+Method-returnType:int
+Method-parameters:[]
+Method-name:setIdleTaskExecutionLimit
+Method-returnType:void
+Method-parameters:[int idleTaskExecutionLimit]
+FieldAccess:idleTaskExecutionLimit
+Method-name:getIdleConsumerLimit
+Method-returnType:int
+Method-parameters:[]
+Method-name:setIdleConsumerLimit
+Method-returnType:void
+Method-parameters:[int idleConsumerLimit]
+FieldAccess:idleConsumerLimit
+Method-name:getWaitForProvisionCorrelationToBeUpdatedCounter
+Method-returnType:int
+Method-parameters:[]
+Method-name:setWaitForProvisionCorrelationToBeUpdatedCounter
+Method-returnType:void
+Method-parameters:[int counter]
+FieldAccess:waitForProvisionCorrelationToBeUpdatedCounter
+Method-name:getWaitForProvisionCorrelationToBeUpdatedThreadSleepingTime
+Method-returnType:long
+Method-parameters:[]
+Method-name:setWaitForProvisionCorrelationToBeUpdatedThreadSleepingTime
+Method-returnType:void
+Method-parameters:[long sleepingTime]
+FieldAccess:waitForProvisionCorrelationToBeUpdatedThreadSleepingTime
+Method-name:getMaxConcurrentConsumers
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxConcurrentConsumers
+Method-returnType:void
+Method-parameters:[int maxConcurrentConsumers]
+FieldAccess:maxConcurrentConsumers
+Method-name:getReplyToMaxConcurrentConsumers
+Method-returnType:int
+Method-parameters:[]
+Method-name:setReplyToMaxConcurrentConsumers
+Method-returnType:void
+Method-parameters:[int replyToMaxConcurrentConsumers]
+FieldAccess:replyToMaxConcurrentConsumers
+Method-name:getReplyToOnTimeoutMaxConcurrentConsumers
+Method-returnType:int
+Method-parameters:[]
+Method-name:setReplyToOnTimeoutMaxConcurrentConsumers
+Method-returnType:void
+Method-parameters:[int replyToOnTimeoutMaxConcurrentConsumers]
+FieldAccess:replyToOnTimeoutMaxConcurrentConsumers
+Method-name:isExplicitQosEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getExplicitQosEnabled
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setExplicitQosEnabled
+Method-returnType:void
+Method-parameters:[boolean explicitQosEnabled]
+FieldAccess:explicitQosEnabled
+Method-name:isDeliveryPersistent
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDeliveryPersistent
+Method-returnType:void
+Method-parameters:[boolean deliveryPersistent]
+FieldAccess:deliveryPersistent
+MethodInvocation:configuredQoS
+Method-name:getDeliveryMode
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setDeliveryMode
+Method-returnType:void
+Method-parameters:[Integer deliveryMode]
+FieldAccess:deliveryMode
+MethodInvocation:configuredQoS
+Method-name:isReplyToDeliveryPersistent
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setReplyToDeliveryPersistent
+Method-returnType:void
+Method-parameters:[boolean replyToDeliveryPersistent]
+FieldAccess:replyToDeliveryPersistent
+Method-name:getTimeToLive
+Method-returnType:long
+Method-parameters:[]
+Method-name:setTimeToLive
+Method-returnType:void
+Method-parameters:[long timeToLive]
+FieldAccess:timeToLive
+MethodInvocation:configuredQoS
+Method-name:getMessageConverter
+Method-returnType:MessageConverter
+Method-parameters:[]
+Method-name:setMessageConverter
+Method-returnType:void
+Method-parameters:[MessageConverter messageConverter]
+FieldAccess:messageConverter
+Method-name:isMapJmsMessage
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setMapJmsMessage
+Method-returnType:void
+Method-parameters:[boolean mapJmsMessage]
+FieldAccess:mapJmsMessage
+Method-name:isMessageIdEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setMessageIdEnabled
+Method-returnType:void
+Method-parameters:[boolean messageIdEnabled]
+FieldAccess:messageIdEnabled
+Method-name:isMessageTimestampEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setMessageTimestampEnabled
+Method-returnType:void
+Method-parameters:[boolean messageTimestampEnabled]
+FieldAccess:messageTimestampEnabled
+Method-name:getPriority
+Method-returnType:int
+Method-parameters:[]
+Method-name:setPriority
+Method-returnType:void
+Method-parameters:[int priority]
+FieldAccess:priority
+MethodInvocation:configuredQoS
+Method-name:getAcknowledgementMode
+Method-returnType:int
+Method-parameters:[]
+Method-name:setAcknowledgementMode
+Method-returnType:void
+Method-parameters:[int consumerAcknowledgementMode]
+FieldAccess:acknowledgementMode
+FieldAccess:acknowledgementModeName
+Method-name:isTransacted
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setTransacted
+Method-returnType:void
+Method-parameters:[boolean consumerTransacted]
+FieldAccess:transacted
+Method-name:isLazyCreateTransactionManager
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setLazyCreateTransactionManager
+Method-returnType:void
+Method-parameters:[boolean lazyCreating]
+FieldAccess:lazyCreateTransactionManager
+Method-name:getEagerPoisonBody
+Method-returnType:String
+Method-parameters:[]
+Method-name:setEagerPoisonBody
+Method-returnType:void
+Method-parameters:[String eagerPoisonBody]
+FieldAccess:eagerPoisonBody
+Method-name:isEagerLoadingOfProperties
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setEagerLoadingOfProperties
+Method-returnType:void
+Method-parameters:[boolean eagerLoadingOfProperties]
+FieldAccess:eagerLoadingOfProperties
+Method-name:isDisableReplyTo
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDisableReplyTo
+Method-returnType:void
+Method-parameters:[boolean disableReplyTo]
+FieldAccess:disableReplyTo
+Method-name:setPreserveMessageQos
+Method-returnType:void
+Method-parameters:[boolean preserveMessageQos]
+FieldAccess:preserveMessageQos
+Method-name:getJmsOperations
+Method-returnType:JmsOperations
+Method-parameters:[]
+Method-name:setJmsOperations
+Method-returnType:void
+Method-parameters:[JmsOperations jmsOperations]
+FieldAccess:jmsOperations
+Method-name:getDestinationResolver
+Method-returnType:DestinationResolver
+Method-parameters:[]
+Method-name:setDestinationResolver
+Method-returnType:void
+Method-parameters:[DestinationResolver destinationResolver]
+FieldAccess:destinationResolver
+Method-name:createDestinationResolver
+Method-returnType:DestinationResolver
+Method-parameters:[final DestinationEndpoint destinationEndpoint]
+MethodInvocation:getJmsDestination
+Method-name:configureMessageListenerContainer
+Method-returnType:void
+Method-parameters:[AbstractMessageListenerContainer container, JmsEndpoint endpoint]
+MethodInvocation:setConnectionFactory
+MethodInvocation:getOrCreateListenerConnectionFactory
+MethodInvocation:setDestinationResolver
+MethodInvocation:createDestinationResolver
+MethodInvocation:setDestinationResolver
+MethodInvocation:setAutoStartup
+MethodInvocation:setDurableSubscriptionName
+MethodInvocation:setSubscriptionDurable
+MethodInvocation:setClientId
+MethodInvocation:setExceptionListener
+MethodInvocation:setErrorHandler
+MethodInvocation:getCamelContext
+MethodInvocation:getErrorHandlerLoggingLevel
+MethodInvocation:isErrorHandlerLogStackTrace
+MethodInvocation:setErrorHandler
+MethodInvocation:setAcceptMessagesWhileStopping
+MethodInvocation:setExposeListenerSession
+MethodInvocation:setSessionTransacted
+MethodInvocation:setSessionAcknowledgeMode
+MethodInvocation:setSessionAcknowledgeMode
+MethodInvocation:setSessionAcknowledgeModeName
+MethodInvocation:getSelector
+MethodInvocation:length
+MethodInvocation:getSelector
+MethodInvocation:setMessageSelector
+MethodInvocation:getSelector
+MethodInvocation:configureDefaultMessageListenerContainer
+MethodInvocation:configureSimpleMessageListenerContainer
+Method-name:configureSimpleMessageListenerContainer
+Method-returnType:void
+Method-parameters:[SimpleMessageListenerContainer listenerContainer]
+MethodInvocation:setConcurrency
+MethodInvocation:setConcurrentConsumers
+MethodInvocation:setPubSubNoLocal
+MethodInvocation:setTaskExecutor
+Method-name:configureDefaultMessageListenerContainer
+Method-returnType:void
+Method-parameters:[JmsEndpoint endpoint, DefaultMessageListenerContainer container]
+MethodInvocation:setConcurrentConsumers
+MethodInvocation:setCacheLevel
+MethodInvocation:setCacheLevelName
+MethodInvocation:setCacheLevel
+MethodInvocation:defaultCacheLevel
+MethodInvocation:setIdleTaskExecutionLimit
+MethodInvocation:setIdleConsumerLimit
+MethodInvocation:setMaxConcurrentConsumers
+MethodInvocation:setMaxMessagesPerTask
+MethodInvocation:setPubSubNoLocal
+MethodInvocation:setReceiveTimeout
+MethodInvocation:setRecoveryInterval
+MethodInvocation:setTaskExecutor
+MethodInvocation:getOrCreateTransactionManager
+MethodInvocation:setTransactionManager
+MethodInvocation:setSessionTransacted
+MethodInvocation:setTransactionName
+MethodInvocation:setTransactionTimeout
+Method-name:configureMessageListener
+Method-returnType:void
+Method-parameters:[EndpointMessageListener listener]
+MethodInvocation:isDisableReplyTo
+MethodInvocation:setDisableReplyTo
+MethodInvocation:equals
+MethodInvocation:setEagerPoisonBody
+MethodInvocation:setEagerLoadingOfProperties
+MethodInvocation:getReplyTo
+MethodInvocation:setReplyToDestination
+MethodInvocation:getReplyTo
+MethodInvocation:getTemplate
+MethodInvocation:setDeliveryPersistent
+MethodInvocation:isReplyToDeliveryPersistent
+Method-name:defaultCacheLevel
+Method-returnType:int
+Method-parameters:[JmsEndpoint endpoint]
+Method-name:createConnectionFactory
+Method-returnType:ConnectionFactory
+Method-parameters:[]
+MethodInvocation:notNull
+Method-name:createListenerConnectionFactory
+Method-returnType:ConnectionFactory
+Method-parameters:[]
+MethodInvocation:getOrCreateConnectionFactory
+Method-name:createTemplateConnectionFactory
+Method-returnType:ConnectionFactory
+Method-parameters:[]
+MethodInvocation:getOrCreateConnectionFactory
+Method-name:createTransactionManager
+Method-returnType:PlatformTransactionManager
+Method-parameters:[]
+MethodInvocation:setConnectionFactory
+MethodInvocation:getOrCreateConnectionFactory
+Method-name:isPreserveMessageQos
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:configuredQoS
+Method-returnType:void
+Method-parameters:[]
+Method-name:isAlwaysCopyMessage
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAlwaysCopyMessage
+Method-returnType:void
+Method-parameters:[boolean alwaysCopyMessage]
+FieldAccess:alwaysCopyMessage
+Method-name:isUseMessageIDAsCorrelationID
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setUseMessageIDAsCorrelationID
+Method-returnType:void
+Method-parameters:[boolean useMessageIDAsCorrelationID]
+FieldAccess:useMessageIDAsCorrelationID
+Method-name:getRequestTimeout
+Method-returnType:long
+Method-parameters:[]
+Method-name:setRequestTimeout
+Method-returnType:void
+Method-parameters:[long requestTimeout]
+FieldAccess:requestTimeout
+Method-name:getRequestTimeoutCheckerInterval
+Method-returnType:long
+Method-parameters:[]
+Method-name:setRequestTimeoutCheckerInterval
+Method-returnType:void
+Method-parameters:[long requestTimeoutCheckerInterval]
+FieldAccess:requestTimeoutCheckerInterval
+Method-name:getReplyTo
+Method-returnType:String
+Method-parameters:[]
+Method-name:setReplyTo
+Method-returnType:void
+Method-parameters:[String replyToDestination]
+FieldAccess:replyTo
+MethodInvocation:normalizeDestinationName
+Method-name:getReplyToDestinationSelectorName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setReplyToDestinationSelectorName
+Method-returnType:void
+Method-parameters:[String replyToDestinationSelectorName]
+FieldAccess:replyToDestinationSelectorName
+MethodInvocation:setAlwaysCopyMessage
+Method-name:getReplyToOverride
+Method-returnType:String
+Method-parameters:[]
+Method-name:setReplyToOverride
+Method-returnType:void
+Method-parameters:[String replyToDestination]
+FieldAccess:replyToOverride
+MethodInvocation:normalizeDestinationName
+Method-name:isReplyToSameDestinationAllowed
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setReplyToSameDestinationAllowed
+Method-returnType:void
+Method-parameters:[boolean replyToSameDestinationAllowed]
+FieldAccess:replyToSameDestinationAllowed
+Method-name:getJmsMessageType
+Method-returnType:JmsMessageType
+Method-parameters:[]
+Method-name:setJmsMessageType
+Method-returnType:void
+Method-parameters:[JmsMessageType jmsMessageType]
+MethodInvocation:supportBlobMessage
+FieldAccess:jmsMessageType
+Method-name:supportBlobMessage
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getJmsKeyFormatStrategy
+Method-returnType:JmsKeyFormatStrategy
+Method-parameters:[]
+Method-name:setJmsKeyFormatStrategy
+Method-returnType:void
+Method-parameters:[JmsKeyFormatStrategy jmsKeyFormatStrategy]
+FieldAccess:jmsKeyFormatStrategy
+Method-name:isTransferExchange
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setTransferExchange
+Method-returnType:void
+Method-parameters:[boolean transferExchange]
+FieldAccess:transferExchange
+Method-name:isAllowSerializedHeaders
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAllowSerializedHeaders
+Method-returnType:void
+Method-parameters:[boolean allowSerializedHeaders]
+FieldAccess:allowSerializedHeaders
+Method-name:isTransferException
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setTransferException
+Method-returnType:void
+Method-parameters:[boolean transferException]
+FieldAccess:transferException
+Method-name:isAsyncStartListener
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAsyncStartListener
+Method-returnType:void
+Method-parameters:[boolean asyncStartListener]
+FieldAccess:asyncStartListener
+Method-name:isAsyncStopListener
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAsyncStopListener
+Method-returnType:void
+Method-parameters:[boolean asyncStopListener]
+FieldAccess:asyncStopListener
+Method-name:isTestConnectionOnStartup
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setTestConnectionOnStartup
+Method-returnType:void
+Method-parameters:[boolean testConnectionOnStartup]
+FieldAccess:testConnectionOnStartup
+Method-name:setForceSendOriginalMessage
+Method-returnType:void
+Method-parameters:[boolean forceSendOriginalMessage]
+FieldAccess:forceSendOriginalMessage
+Method-name:isForceSendOriginalMessage
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isDisableTimeToLive
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDisableTimeToLive
+Method-returnType:void
+Method-parameters:[boolean disableTimeToLive]
+FieldAccess:disableTimeToLive
+Method-name:getReplyToType
+Method-returnType:ReplyToType
+Method-parameters:[]
+Method-name:setReplyToType
+Method-returnType:void
+Method-parameters:[ReplyToType replyToType]
+FieldAccess:replyToType
+Method-name:isAsyncConsumer
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAsyncConsumer
+Method-returnType:void
+Method-parameters:[boolean asyncConsumer]
+FieldAccess:asyncConsumer
+Method-name:setReplyToCacheLevelName
+Method-returnType:void
+Method-parameters:[String name]
+FieldAccess:replyToCacheLevelName
+Method-name:getReplyToCacheLevelName
+Method-returnType:String
+Method-parameters:[]
+Method-name:isAllowNullBody
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAllowNullBody
+Method-returnType:void
+Method-parameters:[boolean allowNullBody]
+FieldAccess:allowNullBody
+Method-name:getMessageListenerContainerFactory
+Method-returnType:MessageListenerContainerFactory
+Method-parameters:[]
+Method-name:setMessageListenerContainerFactory
+Method-returnType:void
+Method-parameters:[MessageListenerContainerFactory messageListenerContainerFactory]
+FieldAccess:messageListenerContainerFactory
+Method-name:isIncludeSentJMSMessageID
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIncludeSentJMSMessageID
+Method-returnType:void
+Method-parameters:[boolean includeSentJMSMessageID]
+FieldAccess:includeSentJMSMessageID
+Method-name:getDefaultTaskExecutorType
+Method-returnType:DefaultTaskExecutorType
+Method-parameters:[]
+Method-name:setDefaultTaskExecutorType
+Method-returnType:void
+Method-parameters:[DefaultTaskExecutorType defaultTaskExecutorType]
+FieldAccess:defaultTaskExecutorType
+Method-name:isIncludeAllJMSXProperties
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIncludeAllJMSXProperties
+Method-returnType:void
+Method-parameters:[boolean includeAllJMSXProperties]
+FieldAccess:includeAllJMSXProperties
+Method-name:getMessageCreatedStrategy
+Method-returnType:MessageCreatedStrategy
+Method-parameters:[]
+Method-name:setMessageCreatedStrategy
+Method-returnType:void
+Method-parameters:[MessageCreatedStrategy messageCreatedStrategy]
+FieldAccess:messageCreatedStrategy
+Method-name:getSelector
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSelector
+Method-returnType:void
+Method-parameters:[String selector]
+FieldAccess:selector
+Method-name:setCorrelationProperty
+Method-returnType:void
+Method-parameters:[final String correlationProperty]
+FieldAccess:correlationProperty
+Method-name:getCorrelationProperty
+Method-returnType:String
+Method-parameters:[]
+Method-name:getAllowAdditionalHeaders
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAllowAdditionalHeaders
+Method-returnType:void
+Method-parameters:[String allowAdditionalHeaders]
+FieldAccess:allowAdditionalHeaders
+Method-name:isSubscriptionDurable
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSubscriptionDurable
+Method-returnType:void
+Method-parameters:[boolean subscriptionDurable]
+FieldAccess:subscriptionDurable
+Method-name:isSubscriptionShared
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSubscriptionShared
+Method-returnType:void
+Method-parameters:[boolean subscriptionShared]
+FieldAccess:subscriptionShared
+Method-name:getSubscriptionName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSubscriptionName
+Method-returnType:void
+Method-parameters:[String subscriptionName]
+FieldAccess:subscriptionName
+Method-name:isStreamMessageTypeEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setStreamMessageTypeEnabled
+Method-returnType:void
+Method-parameters:[boolean streamMessageTypeEnabled]
+FieldAccess:streamMessageTypeEnabled
+Method-name:isFormatDateHeadersToIso8601
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setFormatDateHeadersToIso8601
+Method-returnType:void
+Method-parameters:[boolean formatDateHeadersToIso8601]
+FieldAccess:formatDateHeadersToIso8601
+Method-name:getDeliveryDelay
+Method-returnType:long
+Method-parameters:[]
+Method-name:setDeliveryDelay
+Method-returnType:void
+Method-parameters:[long deliveryDelay]
+FieldAccess:deliveryDelay
+Method-name:isArtemisStreamingEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setArtemisStreamingEnabled
+Method-returnType:void
+Method-parameters:[boolean artemisStreamingEnabled]
+FieldAccess:artemisStreamingEnabled

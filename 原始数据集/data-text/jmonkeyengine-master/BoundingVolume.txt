@@ -1,0 +1,115 @@
+Class:BoundingVolume
+Field:Type
+Field:checkPlane
+Field:center
+Method-name:BoundingVolume
+Method-returnType:null
+Method-parameters:[]
+Method-name:BoundingVolume
+Method-returnType:null
+Method-parameters:[Vector3f center]
+MethodInvocation:set
+FieldAccess:center
+Method-name:getCheckPlane
+Method-returnType:int
+Method-parameters:[]
+Method-name:setCheckPlane
+Method-returnType:void
+Method-parameters:[int value]
+Method-name:getType
+Method-returnType:Type
+Method-parameters:[]
+Method-name:transform
+Method-returnType:BoundingVolume
+Method-parameters:[Transform trans]
+MethodInvocation:transform
+Method-name:transform
+Method-returnType:BoundingVolume
+Method-parameters:[Transform trans, BoundingVolume store]
+Method-name:transform
+Method-returnType:BoundingVolume
+Method-parameters:[Matrix4f trans, BoundingVolume store]
+Method-name:whichSide
+Method-returnType:Plane.Side
+Method-parameters:[Plane plane]
+Method-name:computeFromPoints
+Method-returnType:void
+Method-parameters:[FloatBuffer points]
+Method-name:merge
+Method-returnType:BoundingVolume
+Method-parameters:[BoundingVolume volume]
+Method-name:mergeLocal
+Method-returnType:BoundingVolume
+Method-parameters:[BoundingVolume volume]
+Method-name:clone
+Method-returnType:BoundingVolume
+Method-parameters:[BoundingVolume store]
+Method-name:getCenter
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:getCenter
+Method-returnType:Vector3f
+Method-parameters:[Vector3f store]
+MethodInvocation:set
+Method-name:setCenter
+Method-returnType:void
+Method-parameters:[Vector3f newCenter]
+MethodInvocation:set
+Method-name:setCenter
+Method-returnType:void
+Method-parameters:[float x, float y, float z]
+MethodInvocation:set
+Method-name:distanceTo
+Method-returnType:float
+Method-parameters:[Vector3f point]
+MethodInvocation:distance
+Method-name:distanceSquaredTo
+Method-returnType:float
+Method-parameters:[Vector3f point]
+MethodInvocation:distanceSquared
+Method-name:distanceToEdge
+Method-returnType:float
+Method-parameters:[Vector3f point]
+Method-name:intersects
+Method-returnType:boolean
+Method-parameters:[BoundingVolume bv]
+Method-name:intersects
+Method-returnType:boolean
+Method-parameters:[Ray ray]
+Method-name:intersectsSphere
+Method-returnType:boolean
+Method-parameters:[BoundingSphere bs]
+Method-name:intersectsBoundingBox
+Method-returnType:boolean
+Method-parameters:[BoundingBox bb]
+Method-name:contains
+Method-returnType:boolean
+Method-parameters:[Vector3f point]
+Method-name:intersects
+Method-returnType:boolean
+Method-parameters:[Vector3f point]
+Method-name:getVolume
+Method-returnType:float
+Method-parameters:[]
+Method-name:clone
+Method-returnType:BoundingVolume
+Method-parameters:[]
+MethodInvocation:clone
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter e]
+MethodInvocation:write
+MethodInvocation:getCapsule
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter e]
+MethodInvocation:readSavable
+MethodInvocation:getCapsule
+MethodInvocation:clone
+Method-name:collideWith
+Method-returnType:int
+Method-parameters:[Collidable other]
+MethodInvocation:get
+MethodInvocation:clear
+MethodInvocation:collideWith
+MethodInvocation:release

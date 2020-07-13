@@ -1,0 +1,65 @@
+Class:ReqContext
+Field:uniqueId
+Field:_subject
+Field:_remoteAddr
+Field:_reqID
+Field:_storm_conf
+Field:realPrincipal
+Field:LOG
+MethodInvocation:getLogger
+Method-name:context
+Method-returnType:ReqContext
+Method-parameters:[]
+MethodInvocation:get
+Field:ctxt
+Method-name:initialValue
+Method-returnType:ReqContext
+Method-parameters:[]
+MethodInvocation:getContext
+Method-name:ReqContext
+Method-returnType:null
+Method-parameters:[AccessControlContext acl_ctxt]
+MethodInvocation:getSubject
+MethodInvocation:incrementAndGet
+Method-name:ReqContext
+Method-returnType:null
+Method-parameters:[Subject sub]
+MethodInvocation:incrementAndGet
+Method-name:setRemoteAddress
+Method-returnType:void
+Method-parameters:[InetAddress addr]
+Method-name:remoteAddress
+Method-returnType:InetAddress
+Method-parameters:[]
+Method-name:setSubject
+Method-returnType:void
+Method-parameters:[Subject subject]
+Method-name:subject
+Method-returnType:Subject
+Method-parameters:[]
+Method-name:principal
+Method-returnType:Principal
+Method-parameters:[]
+MethodInvocation:getPrincipals
+MethodInvocation:size
+MethodInvocation:toArray
+Method-name:setRealPrincipal
+Method-returnType:void
+Method-parameters:[Principal realPrincipal]
+FieldAccess:realPrincipal
+Method-name:realPrincipal
+Method-returnType:Principal
+Method-parameters:[]
+FieldAccess:realPrincipal
+Method-name:isImpersonating
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:realPrincipal
+Method-name:requestID
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:getUserFromContext
+Method-returnType:String
+Method-parameters:[DRPCSimpleACLAuthorizer drpcSimpleACLAuthorizer]
+MethodInvocation:principal
+MethodInvocation:getName

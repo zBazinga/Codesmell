@@ -1,0 +1,194 @@
+Class:Event
+Field:kind
+Field:location
+Field:message
+Field:outErr
+Field:messageBytes
+Field:tag
+Field:hashCode
+Method-name:Event
+Method-returnType:null
+Method-parameters:[EventKind kind, @Nullable Location location, String message, @Nullable String tag, @Nullable FileOutErr outErr]
+FieldAccess:kind
+MethodInvocation:checkNotNull
+FieldAccess:location
+FieldAccess:message
+MethodInvocation:checkNotNull
+FieldAccess:messageBytes
+FieldAccess:tag
+FieldAccess:outErr
+Method-name:Event
+Method-returnType:null
+Method-parameters:[EventKind kind, @Nullable Location location, byte[] messageBytes, @Nullable String tag, @Nullable FileOutErr outErr]
+FieldAccess:kind
+MethodInvocation:checkNotNull
+FieldAccess:location
+FieldAccess:message
+FieldAccess:messageBytes
+MethodInvocation:checkNotNull
+FieldAccess:tag
+FieldAccess:outErr
+Method-name:replayEventsOn
+Method-returnType:void
+Method-parameters:[EventHandler eventHandler, Iterable<Event> events]
+MethodInvocation:handle
+Method-name:of
+Method-returnType:Event
+Method-parameters:[EventKind kind, @Nullable Location location, String message]
+Method-name:of
+Method-returnType:Event
+Method-parameters:[EventKind kind, @Nullable Location location, byte[] messageBytes]
+Method-name:error
+Method-returnType:Event
+Method-parameters:[@Nullable Location location, String message]
+Method-name:error
+Method-returnType:Event
+Method-parameters:[String message]
+MethodInvocation:error
+Method-name:warn
+Method-returnType:Event
+Method-parameters:[@Nullable Location location, String message]
+Method-name:warn
+Method-returnType:Event
+Method-parameters:[String message]
+MethodInvocation:warn
+Method-name:info
+Method-returnType:Event
+Method-parameters:[@Nullable Location location, String message]
+Method-name:info
+Method-returnType:Event
+Method-parameters:[String message]
+MethodInvocation:info
+Method-name:progress
+Method-returnType:Event
+Method-parameters:[@Nullable Location location, String message]
+Method-name:progress
+Method-returnType:Event
+Method-parameters:[String message]
+MethodInvocation:progress
+Method-name:debug
+Method-returnType:Event
+Method-parameters:[@Nullable Location location, String message]
+Method-name:debug
+Method-returnType:Event
+Method-parameters:[String message]
+MethodInvocation:debug
+Method-name:withTag
+Method-returnType:Event
+Method-parameters:[String tag]
+MethodInvocation:equals
+FieldAccess:tag
+FieldAccess:message
+FieldAccess:kind
+FieldAccess:location
+FieldAccess:message
+FieldAccess:outErr
+FieldAccess:kind
+FieldAccess:location
+FieldAccess:messageBytes
+FieldAccess:outErr
+Method-name:withStdoutStderr
+Method-returnType:Event
+Method-parameters:[FileOutErr outErr]
+FieldAccess:message
+FieldAccess:kind
+FieldAccess:location
+FieldAccess:message
+FieldAccess:tag
+FieldAccess:kind
+FieldAccess:location
+FieldAccess:messageBytes
+FieldAccess:tag
+Method-name:getMessage
+Method-returnType:String
+Method-parameters:[]
+Method-name:getMessageBytes
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:getBytes
+Method-name:getMessageReference
+Method-returnType:OutputReference
+Method-parameters:[]
+MethodInvocation:getMessageBytes
+Method-name:getKind
+Method-returnType:EventKind
+Method-parameters:[]
+Method-name:getTag
+Method-returnType:String
+Method-parameters:[]
+Method-name:hasStdoutStderr
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getStdOut
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:outAsLatin1
+Method-name:getStdErr
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:errAsLatin1
+Method-name:getStdOutReference
+Method-returnType:OutputReference
+Method-parameters:[]
+MethodInvocation:getOutReference
+Method-name:getStdErrReference
+Method-returnType:OutputReference
+Method-parameters:[]
+MethodInvocation:getErrReference
+Method-name:getLocation
+Method-returnType:Location
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+MethodInvocation:getMessage
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+FieldAccess:kind
+MethodInvocation:equals
+FieldAccess:location
+MethodInvocation:equals
+FieldAccess:tag
+MethodInvocation:equals
+FieldAccess:message
+MethodInvocation:equals
+FieldAccess:outErr
+MethodInvocation:equals
+FieldAccess:messageBytes
+Method-name:handleFollowUpEvents
+Method-returnType:void
+Method-parameters:[PrintingEventHandler printingEventHandler]
+MethodInvocation:getStdErr
+MethodInvocation:handle
+MethodInvocation:of
+MethodInvocation:getBytes
+MethodInvocation:getStdErr
+MethodInvocation:getStdOut
+MethodInvocation:handle
+MethodInvocation:of
+MethodInvocation:getBytes
+MethodInvocation:getStdOut
+Class:ArrayOutputReference
+Field:message
+Method-name:ArrayOutputReference
+Method-returnType:null
+Method-parameters:[byte[] message]
+FieldAccess:message
+Method-name:getLength
+Method-returnType:long
+Method-parameters:[]
+Method-name:getFinalBytes
+Method-returnType:byte[]
+Method-parameters:[int count]
+MethodInvocation:copyOfRange

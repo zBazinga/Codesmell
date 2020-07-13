@@ -1,0 +1,272 @@
+Class:TxnToWriteId
+Field:STRUCT_DESC
+Field:TXN_ID_FIELD_DESC
+Field:WRITE_ID_FIELD_DESC
+Field:schemes
+MethodInvocation:put
+MethodInvocation:put
+Field:txnId
+Field:writeId
+Method-name:addToSrcTxnToWriteIdList
+Method-returnType:void
+Method-parameters:[AllocateTableWriteIdsRequest allocateTableWriteIdsRequest]
+MethodInvocation:getSrcTxnToWriteIdList
+MethodInvocation:setSrcTxnToWriteIdList
+MethodInvocation:add
+MethodInvocation:getSrcTxnToWriteIdList
+Field:_Fields
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:__TXNID_ISSET_ID
+Field:__WRITEID_ISSET_ID
+Field:__isset_bitfield
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:TxnToWriteId
+Method-returnType:null
+Method-parameters:[]
+Method-name:TxnToWriteId
+Method-returnType:null
+Method-parameters:[long txnId, long writeId]
+FieldAccess:txnId
+MethodInvocation:setTxnIdIsSet
+FieldAccess:writeId
+MethodInvocation:setWriteIdIsSet
+Method-name:TxnToWriteId
+Method-returnType:null
+Method-parameters:[TxnToWriteId other]
+FieldAccess:txnId
+FieldAccess:writeId
+Method-name:deepCopy
+Method-returnType:TxnToWriteId
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setTxnIdIsSet
+FieldAccess:txnId
+MethodInvocation:setWriteIdIsSet
+FieldAccess:writeId
+Method-name:getTxnId
+Method-returnType:long
+Method-parameters:[]
+FieldAccess:txnId
+Method-name:setTxnId
+Method-returnType:void
+Method-parameters:[long txnId]
+FieldAccess:txnId
+MethodInvocation:setTxnIdIsSet
+Method-name:unsetTxnId
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clearBit
+Method-name:isSetTxnId
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:testBit
+Method-name:setTxnIdIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+MethodInvocation:setBit
+Method-name:getWriteId
+Method-returnType:long
+Method-parameters:[]
+FieldAccess:writeId
+Method-name:setWriteId
+Method-returnType:void
+Method-parameters:[long writeId]
+FieldAccess:writeId
+MethodInvocation:setWriteIdIsSet
+Method-name:unsetWriteId
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clearBit
+Method-name:isSetWriteId
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:testBit
+Method-name:setWriteIdIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+MethodInvocation:setBit
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, Object value]
+MethodInvocation:unsetTxnId
+MethodInvocation:setTxnId
+MethodInvocation:unsetWriteId
+MethodInvocation:setWriteId
+Method-name:getFieldValue
+Method-returnType:Object
+Method-parameters:[_Fields field]
+MethodInvocation:getTxnId
+MethodInvocation:getWriteId
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:isSetTxnId
+MethodInvocation:isSetWriteId
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[TxnToWriteId that]
+FieldAccess:txnId
+FieldAccess:writeId
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[TxnToWriteId other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetTxnId
+MethodInvocation:isSetTxnId
+MethodInvocation:isSetTxnId
+MethodInvocation:compareTo
+FieldAccess:txnId
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetWriteId
+MethodInvocation:isSetWriteId
+MethodInvocation:isSetWriteId
+MethodInvocation:compareTo
+FieldAccess:writeId
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:txnId
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:writeId
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isSetTxnId
+MethodInvocation:toString
+MethodInvocation:isSetWriteId
+MethodInvocation:toString
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:TxnToWriteIdStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:TxnToWriteIdStandardScheme
+Method-parameters:[]
+Class:TxnToWriteIdStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, TxnToWriteId struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readI64
+MethodInvocation:setTxnIdIsSet
+MethodInvocation:skip
+MethodInvocation:readI64
+MethodInvocation:setWriteIdIsSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, TxnToWriteId struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeI64
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeI64
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:TxnToWriteIdTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:TxnToWriteIdTupleScheme
+Method-parameters:[]
+Class:TxnToWriteIdTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, TxnToWriteId struct]
+MethodInvocation:writeI64
+MethodInvocation:writeI64
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, TxnToWriteId struct]
+MethodInvocation:readI64
+MethodInvocation:setTxnIdIsSet
+MethodInvocation:readI64
+MethodInvocation:setWriteIdIsSet

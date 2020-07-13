@@ -1,0 +1,48 @@
+Class:InsnsSlice
+Field:insnsList
+Field:insnMap
+Field:complete
+Method-name:addInsn
+Method-returnType:void
+Method-parameters:[InsnNode insn, BlockNode block]
+MethodInvocation:add
+MethodInvocation:put
+Method-name:addInsns
+Method-returnType:void
+Method-parameters:[BlockNode block, int startIndex, int endIndex]
+MethodInvocation:getInstructions
+MethodInvocation:addInsn
+MethodInvocation:get
+Method-name:getBlock
+Method-returnType:BlockNode
+Method-parameters:[InsnNode insn]
+MethodInvocation:get
+Method-name:getInsnsList
+Method-returnType:List<InsnNode>
+Method-parameters:[]
+Method-name:getBlocks
+Method-returnType:Set<BlockNode>
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:get
+Method-name:resetIncomplete
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:clear
+Method-name:isComplete
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setComplete
+Method-returnType:void
+Method-parameters:[boolean complete]
+FieldAccess:complete
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toString
+MethodInvocation:getType
+MethodInvocation:joining

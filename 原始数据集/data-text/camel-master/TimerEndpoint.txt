@@ -1,0 +1,118 @@
+Class:TimerEndpoint
+Field:timerName
+Field:period
+Field:delay
+Field:repeatCount
+Field:fixedRate
+Field:daemon
+Field:time
+Field:pattern
+Field:timer
+Field:includeMetadata
+Method-name:TimerEndpoint
+Method-returnType:null
+Method-parameters:[]
+Method-name:TimerEndpoint
+Method-returnType:null
+Method-parameters:[String uri, Component component, String timerName]
+FieldAccess:timerName
+Method-name:TimerEndpoint
+Method-returnType:null
+Method-parameters:[String endpointUri, Component component]
+Method-name:getComponent
+Method-returnType:TimerComponent
+Method-parameters:[]
+Method-name:createProducer
+Method-returnType:Producer
+Method-parameters:[]
+MethodInvocation:getEndpointUri
+Method-name:createConsumer
+Method-returnType:Consumer
+Method-parameters:[Processor processor]
+MethodInvocation:configureConsumer
+Method-name:doStart
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getEndpointUri
+Method-name:doStop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setTimer
+Method-name:isMultipleConsumersSupported
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getTimerName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTimerName
+Method-returnType:void
+Method-parameters:[String timerName]
+FieldAccess:timerName
+Method-name:isDaemon
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDaemon
+Method-returnType:void
+Method-parameters:[boolean daemon]
+FieldAccess:daemon
+Method-name:getDelay
+Method-returnType:long
+Method-parameters:[]
+Method-name:setDelay
+Method-returnType:void
+Method-parameters:[long delay]
+FieldAccess:delay
+Method-name:isFixedRate
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setFixedRate
+Method-returnType:void
+Method-parameters:[boolean fixedRate]
+FieldAccess:fixedRate
+Method-name:getPeriod
+Method-returnType:long
+Method-parameters:[]
+Method-name:setPeriod
+Method-returnType:void
+Method-parameters:[long period]
+FieldAccess:period
+Method-name:getRepeatCount
+Method-returnType:long
+Method-parameters:[]
+Method-name:setRepeatCount
+Method-returnType:void
+Method-parameters:[long repeatCount]
+FieldAccess:repeatCount
+Method-name:getTime
+Method-returnType:Date
+Method-parameters:[]
+Method-name:setTime
+Method-returnType:void
+Method-parameters:[Date time]
+FieldAccess:time
+Method-name:getPattern
+Method-returnType:String
+Method-parameters:[]
+Method-name:setPattern
+Method-returnType:void
+Method-parameters:[String pattern]
+FieldAccess:pattern
+Method-name:getTimer
+Method-returnType:Timer
+Method-parameters:[]
+Method-name:setTimer
+Method-returnType:void
+Method-parameters:[Timer timer]
+FieldAccess:timer
+Method-name:isIncludeMetadata
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIncludeMetadata
+Method-returnType:void
+Method-parameters:[boolean includeMetadata]
+FieldAccess:includeMetadata
+Method-name:removeTimer
+Method-returnType:void
+Method-parameters:[TimerConsumer consumer]
+MethodInvocation:removeTimer
+MethodInvocation:getComponent

@@ -1,0 +1,124 @@
+Class:InboundChannelBuffer
+Field:PAGE_SIZE
+Field:PAGE_MASK
+Field:PAGE_SHIFT
+MethodInvocation:numberOfTrailingZeros
+Field:EMPTY_BYTE_BUFFER_ARRAY
+Field:EMPTY_BYTE_PAGE_ARRAY
+Field:pageAllocator
+Field:pages
+Field:isClosed
+Field:capacity
+Field:internalIndex
+Field:offset
+Method-name:InboundChannelBuffer
+Method-returnType:null
+Method-parameters:[IntFunction<Page> pageAllocator]
+FieldAccess:pageAllocator
+Method-name:allocatingInstance
+Method-returnType:InboundChannelBuffer
+Method-parameters:[]
+MethodInvocation:allocate
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:compareAndSet
+MethodInvocation:pollFirst
+MethodInvocation:close
+MethodInvocation:add
+MethodInvocation:rethrowAndSuppress
+Method-name:ensureCapacity
+Method-returnType:void
+Method-parameters:[long requiredCapacity]
+MethodInvocation:get
+MethodInvocation:numPages
+MethodInvocation:size
+MethodInvocation:apply
+MethodInvocation:addLast
+Method-name:release
+Method-returnType:void
+Method-parameters:[long bytesToRelease]
+MethodInvocation:pageIndex
+MethodInvocation:close
+MethodInvocation:removeFirst
+MethodInvocation:max
+MethodInvocation:indexInPage
+Method-name:sliceBuffersTo
+Method-returnType:ByteBuffer[]
+Method-parameters:[long to]
+MethodInvocation:pageIndex
+MethodInvocation:indexInPage
+MethodInvocation:iterator
+MethodInvocation:duplicate
+MethodInvocation:byteBuffer
+MethodInvocation:next
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:duplicate
+MethodInvocation:byteBuffer
+MethodInvocation:next
+MethodInvocation:limit
+Method-name:sliceAndRetainPagesTo
+Method-returnType:Page[]
+Method-parameters:[long to]
+MethodInvocation:pageIndex
+MethodInvocation:indexInPage
+MethodInvocation:iterator
+FieldAccess:pages
+MethodInvocation:duplicate
+MethodInvocation:next
+MethodInvocation:byteBuffer
+MethodInvocation:position
+MethodInvocation:position
+MethodInvocation:duplicate
+MethodInvocation:next
+MethodInvocation:limit
+MethodInvocation:byteBuffer
+Method-name:sliceBuffersFrom
+Method-returnType:ByteBuffer[]
+Method-parameters:[long from]
+MethodInvocation:pageIndex
+MethodInvocation:indexInPage
+MethodInvocation:size
+MethodInvocation:descendingIterator
+MethodInvocation:duplicate
+MethodInvocation:byteBuffer
+MethodInvocation:next
+MethodInvocation:duplicate
+MethodInvocation:byteBuffer
+MethodInvocation:next
+MethodInvocation:position
+MethodInvocation:position
+Method-name:incrementIndex
+Method-returnType:void
+Method-parameters:[long delta]
+Method-name:getIndex
+Method-returnType:long
+Method-parameters:[]
+Method-name:getCapacity
+Method-returnType:long
+Method-parameters:[]
+Method-name:getRemaining
+Method-returnType:long
+Method-parameters:[]
+Method-name:numPages
+Method-returnType:int
+Method-parameters:[long capacity]
+Method-name:pageIndex
+Method-returnType:int
+Method-parameters:[long index]
+Method-name:indexInPage
+Method-returnType:int
+Method-parameters:[long index]
+Method-name:ensureApplicationBufferSize
+Method-returnType:void
+Method-parameters:[SSLDriver sslDriver]
+MethodInvocation:getApplicationBufferSize
+MethodInvocation:getSession
+MethodInvocation:getSSLEngine
+MethodInvocation:getRemaining
+MethodInvocation:ensureCapacity
+MethodInvocation:getIndex
+MethodInvocation:getApplicationBufferSize
+MethodInvocation:getSession
+MethodInvocation:getSSLEngine

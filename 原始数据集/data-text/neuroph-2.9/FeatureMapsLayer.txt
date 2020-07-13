@@ -1,0 +1,61 @@
+Class:FeatureMapsLayer
+Field:serialVersionUID
+Field:kernel
+Field:mapDimensions
+Field:featureMaps
+Method-name:FeatureMapsLayer
+Method-returnType:null
+Method-parameters:[Kernel kernel]
+FieldAccess:kernel
+FieldAccess:featureMaps
+Method-name:FeatureMapsLayer
+Method-returnType:null
+Method-parameters:[Kernel kernel, Layer2D.Dimensions mapDimensions]
+FieldAccess:kernel
+FieldAccess:mapDimensions
+FieldAccess:featureMaps
+Method-name:FeatureMapsLayer
+Method-returnType:null
+Method-parameters:[Kernel kernel, Layer2D.Dimensions mapDimensions, int mapCount, NeuronProperties neuronProp]
+FieldAccess:kernel
+FieldAccess:mapDimensions
+FieldAccess:featureMaps
+MethodInvocation:createFeatureMaps
+FieldAccess:mapDimensions
+Method-name:addFeatureMap
+Method-returnType:void
+Method-parameters:[Layer2D featureMap]
+MethodInvocation:add
+MethodInvocation:addAll
+MethodInvocation:getNeurons
+Method-name:getFeatureMap
+Method-returnType:Layer2D
+Method-parameters:[int index]
+MethodInvocation:get
+Method-name:getNumberOfMaps
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getNeuronAt
+Method-returnType:Neuron
+Method-parameters:[int x, int y, int mapIndex]
+MethodInvocation:get
+MethodInvocation:getNeuronAt
+Method-name:getNeuronsCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getNeuronsCount
+Method-name:calculate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:asArray
+MethodInvocation:calculate
+Method-name:getKernel
+Method-returnType:Kernel
+Method-parameters:[]
+Method-name:getMapDimensions
+Method-returnType:Layer2D.Dimensions
+Method-parameters:[]
+Method-name:connectMaps
+Method-returnType:void
+Method-parameters:[Layer2D fromMap, Layer2D toMap]

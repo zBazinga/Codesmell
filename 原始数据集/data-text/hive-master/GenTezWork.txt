@@ -1,0 +1,24 @@
+Class:GenTezWork
+Field:LOG
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:utils
+Method-name:GenTezWork
+Method-returnType:null
+Method-parameters:[GenTezUtils utils]
+FieldAccess:utils
+Method-name:process
+Method-returnType:Object
+Method-parameters:[Node nd, Stack<Node> stack, NodeProcessorCtx procContext, Object... nodeOutputs]
+Method-name:getParentFromStack
+Method-returnType:Operator<? extends OperatorDesc>
+Method-parameters:[Node currentMergeJoinOperator, Stack<Node> stack]
+MethodInvocation:indexOf
+MethodInvocation:get
+Method-name:connectUnionWorkWithWork
+Method-returnType:void
+Method-parameters:[UnionWork unionWork, BaseWork work, TezWork tezWork, GenTezProcContext context]
+MethodInvocation:debug
+MethodInvocation:connect
+MethodInvocation:addUnionOperators
+MethodInvocation:add

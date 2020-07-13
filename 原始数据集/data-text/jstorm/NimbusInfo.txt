@@ -1,0 +1,63 @@
+Class:NimbusInfo
+Field:LOG
+MethodInvocation:getLogger
+Field:DELIM
+Field:host
+Field:port
+Field:isLeader
+Method-name:NimbusInfo
+Method-returnType:null
+Method-parameters:[String host, int port, boolean isLeader]
+FieldAccess:host
+FieldAccess:port
+FieldAccess:isLeader
+Method-name:parse
+Method-returnType:NimbusInfo
+Method-parameters:[String nimbusInfo]
+MethodInvocation:split
+MethodInvocation:parseInt
+Method-name:fromConf
+Method-returnType:NimbusInfo
+Method-parameters:[Map conf]
+MethodInvocation:isNimbusUseIp
+MethodInvocation:hostname
+MethodInvocation:ip
+MethodInvocation:parseInt
+MethodInvocation:toString
+MethodInvocation:get
+Method-name:toHostPortString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:format
+Method-name:isLeader
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getPort
+Method-returnType:int
+Method-parameters:[]
+Method-name:getHost
+Method-returnType:String
+Method-parameters:[]
+Method-name:getHostPort
+Method-returnType:String
+Method-parameters:[]
+Method-name:setLeader
+Method-returnType:void
+Method-parameters:[boolean isLeader]
+FieldAccess:isLeader
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:checkIfStateContainsCurrentNimbusHost
+Method-returnType:boolean
+Method-parameters:[List<String> stateInfoList, KeySequenceNumber keySequenceNumber]
+MethodInvocation:contains
+MethodInvocation:getHost

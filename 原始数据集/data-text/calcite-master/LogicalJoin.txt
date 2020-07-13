@@ -1,0 +1,113 @@
+Class:LogicalJoin
+Field:semiJoinDone
+Field:systemFieldList
+Method-name:LogicalJoin
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, List<RelHint> hints, RelNode left, RelNode right, RexNode condition, Set<CorrelationId> variablesSet, JoinRelType joinType, boolean semiJoinDone, ImmutableList<RelDataTypeField> systemFieldList]
+FieldAccess:semiJoinDone
+FieldAccess:systemFieldList
+MethodInvocation:requireNonNull
+Method-name:LogicalJoin
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode left, RelNode right, RexNode condition, Set<CorrelationId> variablesSet, JoinRelType joinType, boolean semiJoinDone, ImmutableList<RelDataTypeField> systemFieldList]
+MethodInvocation:of
+Method-name:LogicalJoin
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode left, RelNode right, RexNode condition, JoinRelType joinType, Set<String> variablesStopped, boolean semiJoinDone, ImmutableList<RelDataTypeField> systemFieldList]
+MethodInvocation:of
+MethodInvocation:setOf
+Method-name:LogicalJoin
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelNode left, RelNode right, RexNode condition, JoinRelType joinType, Set<String> variablesStopped]
+MethodInvocation:traitSetOf
+MethodInvocation:of
+MethodInvocation:setOf
+MethodInvocation:of
+Method-name:LogicalJoin
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelNode left, RelNode right, RexNode condition, JoinRelType joinType, Set<String> variablesStopped, boolean semiJoinDone, ImmutableList<RelDataTypeField> systemFieldList]
+MethodInvocation:traitSetOf
+MethodInvocation:of
+MethodInvocation:setOf
+Method-name:LogicalJoin
+Method-returnType:null
+Method-parameters:[RelInput input]
+MethodInvocation:getCluster
+MethodInvocation:traitSetOf
+MethodInvocation:getCluster
+MethodInvocation:get
+MethodInvocation:getInputs
+MethodInvocation:get
+MethodInvocation:getInputs
+MethodInvocation:getExpression
+MethodInvocation:of
+MethodInvocation:getEnum
+MethodInvocation:of
+Method-name:create
+Method-returnType:LogicalJoin
+Method-parameters:[RelNode left, RelNode right, List<RelHint> hints, RexNode condition, Set<CorrelationId> variablesSet, JoinRelType joinType]
+MethodInvocation:create
+MethodInvocation:of
+Method-name:create
+Method-returnType:LogicalJoin
+Method-parameters:[RelNode left, RelNode right, List<RelHint> hints, RexNode condition, Set<CorrelationId> variablesSet, JoinRelType joinType, boolean semiJoinDone, ImmutableList<RelDataTypeField> systemFieldList]
+MethodInvocation:getCluster
+MethodInvocation:traitSetOf
+Method-name:copy
+Method-returnType:LogicalJoin
+Method-parameters:[RelTraitSet traitSet, RexNode conditionExpr, RelNode left, RelNode right, JoinRelType joinType, boolean semiJoinDone]
+Method-name:accept
+Method-returnType:RelNode
+Method-parameters:[RelShuttle shuttle]
+MethodInvocation:visit
+Method-name:explainTerms
+Method-returnType:RelWriter
+Method-parameters:[RelWriter pw]
+MethodInvocation:itemIf
+Method-name:isSemiJoinDone
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getSystemFieldList
+Method-returnType:List<RelDataTypeField>
+Method-parameters:[]
+Method-name:withHints
+Method-returnType:RelNode
+Method-parameters:[List<RelHint> hintList]
+MethodInvocation:getCluster
+Method-name:adjustCondition
+Method-returnType:RexNode
+Method-parameters:[LogicalProject project, SemiJoinProjectTransposeRule semiJoinProjectTransposeRule]
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:getTypeFactory
+MethodInvocation:getRight
+MethodInvocation:deriveJoinRowType
+MethodInvocation:getRowType
+MethodInvocation:getInput
+MethodInvocation:getRowType
+MethodInvocation:getSystemFieldList
+MethodInvocation:getNamedProjects
+MethodInvocation:addProject
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getInput
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:makeInputRef
+MethodInvocation:getType
+MethodInvocation:addProject
+MethodInvocation:getName
+MethodInvocation:getProgram
+MethodInvocation:deriveJoinRowType
+MethodInvocation:getRowType
+MethodInvocation:getRowType
+MethodInvocation:getSystemFieldList
+MethodInvocation:addIdentity
+MethodInvocation:addCondition
+MethodInvocation:getCondition
+MethodInvocation:getProgram
+MethodInvocation:mergePrograms
+MethodInvocation:expandLocalRef
+MethodInvocation:getCondition

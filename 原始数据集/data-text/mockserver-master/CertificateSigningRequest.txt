@@ -1,0 +1,87 @@
+Class:CertificateSigningRequest
+Field:DEFAULT_SIGNING_ALGORITHM
+Field:DEFAULT_KEY_GENERATION_ALGORITHM
+Field:DEFAULT_KEY_PAIR_LENGTH
+Field:DEFAULT_VALIDITY
+Field:ROOT_KEY_SIZE
+Field:MOCK_KEY_SIZE
+Field:NOT_BEFORE
+MethodInvocation:currentTimeMillis
+Field:NOT_AFTER
+MethodInvocation:currentTimeMillis
+Field:ROOT_COMMON_NAME
+Field:ORGANISATION
+Field:LOCALITY
+Field:STATE
+Field:COUNTRY
+Field:CERTIFICATE_DOMAIN
+Field:commonName
+Field:keyPairSize
+Field:subjectAlternativeNames
+Field:signingAlgorithm
+Field:keyPairAlgorithm
+Field:validityInMillis
+MethodInvocation:toMillis
+Method-name:buildDistinguishedName
+Method-returnType:String
+Method-parameters:[String commonName]
+MethodInvocation:format
+Method-name:getCommonName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setCommonName
+Method-returnType:CertificateSigningRequest
+Method-parameters:[String commonName]
+FieldAccess:commonName
+Method-name:getKeyPairSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:setKeyPairSize
+Method-returnType:CertificateSigningRequest
+Method-parameters:[int keyPairSize]
+FieldAccess:keyPairSize
+Method-name:getSubjectAlternativeNames
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:addSubjectAlternativeNames
+Method-returnType:CertificateSigningRequest
+Method-parameters:[String... subjectAlternativeNames]
+FieldAccess:subjectAlternativeNames
+FieldAccess:subjectAlternativeNames
+MethodInvocation:addAll
+FieldAccess:subjectAlternativeNames
+MethodInvocation:asList
+Method-name:getSigningAlgorithm
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSigningAlgorithm
+Method-returnType:CertificateSigningRequest
+Method-parameters:[String signingAlgorithm]
+FieldAccess:signingAlgorithm
+Method-name:getKeyPairAlgorithm
+Method-returnType:String
+Method-parameters:[]
+Method-name:setKeyPairAlgorithm
+Method-returnType:CertificateSigningRequest
+Method-parameters:[String keyPairAlgorithm]
+FieldAccess:keyPairAlgorithm
+Method-name:getValidityInMillis
+Method-returnType:Long
+Method-parameters:[]
+Method-name:setValidityInMillis
+Method-returnType:CertificateSigningRequest
+Method-parameters:[Long validityInMillis]
+FieldAccess:validityInMillis
+Method-name:buildX509CertInfo
+Method-returnType:X509CertInfo
+Method-parameters:[final X500Name subject, final X500Name issuer, final PublicKey publicKey, X509Generator x509Generator]
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:getOID
+MethodInvocation:get
+MethodInvocation:getSigningAlgorithm
+MethodInvocation:set

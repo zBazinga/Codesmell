@@ -1,0 +1,42 @@
+Class:SessionHandle
+Field:protocol
+Method-name:SessionHandle
+Method-returnType:null
+Method-parameters:[TProtocolVersion protocol]
+FieldAccess:protocol
+Method-name:SessionHandle
+Method-returnType:null
+Method-parameters:[TSessionHandle tSessionHandle]
+Method-name:SessionHandle
+Method-returnType:null
+Method-parameters:[TSessionHandle tSessionHandle, TProtocolVersion protocol]
+MethodInvocation:getSessionId
+FieldAccess:protocol
+Method-name:SessionHandle
+Method-returnType:null
+Method-parameters:[HandleIdentifier handleId, TProtocolVersion protocol]
+FieldAccess:protocol
+Method-name:getSessionId
+Method-returnType:UUID
+Method-parameters:[]
+MethodInvocation:getPublicId
+MethodInvocation:getHandleIdentifier
+Method-name:toTSessionHandle
+Method-returnType:TSessionHandle
+Method-parameters:[]
+MethodInvocation:setSessionId
+MethodInvocation:toTHandleIdentifier
+MethodInvocation:getHandleIdentifier
+Method-name:getProtocolVersion
+Method-returnType:TProtocolVersion
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getHandleIdentifier
+Method-name:getSessionConf
+Method-returnType:HiveConf
+Method-parameters:[CLIService cliService]
+MethodInvocation:getSessionConf
+MethodInvocation:getSession
+MethodInvocation:getSessionManager

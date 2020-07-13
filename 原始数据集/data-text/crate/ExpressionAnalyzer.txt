@@ -1,0 +1,647 @@
+Class:ExpressionAnalyzer
+Field:SWAP_OPERATOR_TABLE
+MethodInvocation:build
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:builder
+Field:coordinatorTxnCtx
+Field:convertParamFunction
+Field:fieldProvider
+Field:subQueryAnalyzer
+Field:functions
+Field:innerAnalyzer
+Field:operation
+Field:SUBSCRIPT_SPLIT_PATTERN
+MethodInvocation:compile
+Method-name:ExpressionAnalyzer
+Method-returnType:null
+Method-parameters:[Functions functions, CoordinatorTxnCtx coordinatorTxnCtx, java.util.function.Function<ParameterExpression,Symbol> convertParamFunction, FieldProvider fieldProvider, @Nullable SubqueryAnalyzer subQueryAnalyzer]
+Method-name:ExpressionAnalyzer
+Method-returnType:null
+Method-parameters:[Functions functions, CoordinatorTxnCtx coordinatorTxnCtx, java.util.function.Function<ParameterExpression,Symbol> convertParamFunction, FieldProvider fieldProvider, @Nullable SubqueryAnalyzer subQueryAnalyzer, Operation operation]
+FieldAccess:functions
+FieldAccess:coordinatorTxnCtx
+FieldAccess:convertParamFunction
+FieldAccess:fieldProvider
+FieldAccess:subQueryAnalyzer
+FieldAccess:innerAnalyzer
+FieldAccess:operation
+Method-name:convert
+Method-returnType:Symbol
+Method-parameters:[Expression expression, ExpressionAnalysisContext expressionAnalysisContext]
+MethodInvocation:process
+Method-name:generateQuerySymbol
+Method-returnType:Symbol
+Method-parameters:[Optional<Expression> whereExpression, ExpressionAnalysisContext context]
+MethodInvocation:isPresent
+MethodInvocation:convert
+MethodInvocation:get
+Method-name:convertFunctionCall
+Method-returnType:Symbol
+Method-parameters:[FunctionCall node, ExpressionAnalysisContext context]
+MethodInvocation:size
+MethodInvocation:getArguments
+MethodInvocation:getArguments
+MethodInvocation:accept
+MethodInvocation:add
+MethodInvocation:getParts
+MethodInvocation:getName
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getWindowDefinition
+MethodInvocation:getWindow
+MethodInvocation:isDistinct
+MethodInvocation:size
+MethodInvocation:format
+MethodInvocation:getName
+MethodInvocation:allocateFunction
+MethodInvocation:of
+MethodInvocation:allocateBuiltinOrUdfFunction
+MethodInvocation:format
+MethodInvocation:valueType
+MethodInvocation:get
+MethodInvocation:allocateBuiltinOrUdfFunction
+Method-name:getWindowDefinition
+Method-returnType:WindowDefinition
+Method-parameters:[Optional<Window> maybeWindow, ExpressionAnalysisContext context]
+MethodInvocation:isPresent
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:getPartitions
+MethodInvocation:getPartitions
+MethodInvocation:convert
+MethodInvocation:validate
+MethodInvocation:add
+MethodInvocation:analyzeSortItems
+MethodInvocation:getOrderBy
+MethodInvocation:convert
+MethodInvocation:validate
+MethodInvocation:isPresent
+MethodInvocation:getWindowFrame
+MethodInvocation:get
+MethodInvocation:getWindowFrame
+MethodInvocation:getStart
+MethodInvocation:convertToAnalyzedFrameBound
+MethodInvocation:isPresent
+MethodInvocation:getEnd
+MethodInvocation:convertToAnalyzedFrameBound
+MethodInvocation:get
+MethodInvocation:getEnd
+MethodInvocation:getType
+Method-name:convertToAnalyzedFrameBound
+Method-returnType:FrameBoundDefinition
+Method-parameters:[ExpressionAnalysisContext context, FrameBound frameBound]
+MethodInvocation:getValue
+MethodInvocation:convert
+MethodInvocation:getValue
+MethodInvocation:getType
+Method-name:copyForOperation
+Method-returnType:ExpressionAnalyzer
+Method-parameters:[Operation operation]
+Method-name:cast
+Method-returnType:List<Symbol>
+Method-parameters:[List<Symbol> symbolsToCast, List<DataType> targetTypes]
+MethodInvocation:checkState
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:cast
+MethodInvocation:get
+MethodInvocation:get
+Method-name:cast
+Method-returnType:Symbol
+Method-parameters:[Symbol sourceSymbol, DataType targetType]
+MethodInvocation:cast
+Method-name:cast
+Method-returnType:Symbol
+Method-parameters:[Symbol sourceSymbol, DataType targetType, boolean tryCast]
+MethodInvocation:equals
+MethodInvocation:valueType
+MethodInvocation:cast
+Method-name:getQuotedSubscriptLiteral
+Method-returnType:String
+Method-parameters:[String nodeName]
+MethodInvocation:matcher
+MethodInvocation:matches
+MethodInvocation:group
+MethodInvocation:isEmpty
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:group
+MethodInvocation:group
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:append
+MethodInvocation:group
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:append
+MethodInvocation:group
+MethodInvocation:toString
+Class:InnerExpressionAnalyzer
+Method-name:visitNode
+Method-returnType:Symbol
+Method-parameters:[Node node, ExpressionAnalysisContext context]
+MethodInvocation:format
+Method-name:visitExpression
+Method-returnType:Symbol
+Method-parameters:[Expression node, ExpressionAnalysisContext context]
+MethodInvocation:format
+MethodInvocation:formatStandaloneExpression
+Method-name:visitCurrentTime
+Method-returnType:Symbol
+Method-parameters:[CurrentTime node, ExpressionAnalysisContext context]
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:visitExpression
+MethodInvocation:newArrayList
+MethodInvocation:of
+MethodInvocation:orElse
+MethodInvocation:getPrecision
+MethodInvocation:allocateFunction
+Method-name:visitIfExpression
+Method-returnType:Symbol
+Method-parameters:[IfExpression node, ExpressionAnalysisContext context]
+MethodInvocation:getFalseValue
+MethodInvocation:isPresent
+MethodInvocation:add
+MethodInvocation:accept
+MethodInvocation:getCondition
+MethodInvocation:add
+MethodInvocation:accept
+MethodInvocation:getTrueValue
+MethodInvocation:isPresent
+MethodInvocation:add
+MethodInvocation:accept
+MethodInvocation:get
+MethodInvocation:allocateFunction
+Method-name:visitFunctionCall
+Method-returnType:Symbol
+Method-parameters:[FunctionCall node, ExpressionAnalysisContext context]
+Method-name:visitSimpleCaseExpression
+Method-returnType:Symbol
+Method-parameters:[SimpleCaseExpression node, ExpressionAnalysisContext context]
+MethodInvocation:getWhenClauses
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:convert
+MethodInvocation:getOperand
+MethodInvocation:convert
+MethodInvocation:getOperand
+MethodInvocation:add
+MethodInvocation:allocateFunction
+MethodInvocation:of
+MethodInvocation:add
+MethodInvocation:convert
+MethodInvocation:getResult
+MethodInvocation:ensureResultTypesMatch
+MethodInvocation:getDefaultValue
+MethodInvocation:createChain
+MethodInvocation:convert
+Method-name:visitSearchedCaseExpression
+Method-returnType:Symbol
+Method-parameters:[SearchedCaseExpression node, ExpressionAnalysisContext context]
+MethodInvocation:getWhenClauses
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:accept
+MethodInvocation:getOperand
+MethodInvocation:add
+MethodInvocation:accept
+MethodInvocation:getResult
+MethodInvocation:ensureResultTypesMatch
+MethodInvocation:getDefaultValue
+MethodInvocation:createChain
+MethodInvocation:convert
+Method-name:createChain
+Method-returnType:Symbol
+Method-parameters:[List<Symbol> operands, List<Symbol> results, @Nullable Symbol defaultValueSymbol, ExpressionAnalysisContext context]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:newArrayList
+MethodInvocation:add
+MethodInvocation:allocateFunction
+Method-name:visitCast
+Method-returnType:Symbol
+Method-parameters:[Cast node, ExpressionAnalysisContext context]
+MethodInvocation:convert
+MethodInvocation:getType
+MethodInvocation:cast
+MethodInvocation:process
+MethodInvocation:getExpression
+Method-name:visitTryCast
+Method-returnType:Symbol
+Method-parameters:[TryCast node, ExpressionAnalysisContext context]
+MethodInvocation:convert
+MethodInvocation:getType
+MethodInvocation:supportsExplicitConversion
+MethodInvocation:cast
+MethodInvocation:process
+MethodInvocation:getExpression
+MethodInvocation:format
+MethodInvocation:getName
+Method-name:visitExtract
+Method-returnType:Symbol
+Method-parameters:[Extract node, ExpressionAnalysisContext context]
+MethodInvocation:process
+MethodInvocation:getExpression
+MethodInvocation:getScalar
+MethodInvocation:getField
+MethodInvocation:info
+MethodInvocation:allocateFunction
+MethodInvocation:name
+MethodInvocation:ident
+MethodInvocation:of
+Method-name:visitInPredicate
+Method-returnType:Symbol
+Method-parameters:[InPredicate node, ExpressionAnalysisContext context]
+MethodInvocation:getValueList
+MethodInvocation:getValues
+MethodInvocation:getValueList
+MethodInvocation:getValue
+MethodInvocation:process
+Method-name:visitArraySubQueryExpression
+Method-returnType:Symbol
+Method-parameters:[ArraySubQueryExpression node, ExpressionAnalysisContext context]
+MethodInvocation:subqueryExpression
+MethodInvocation:registerArrayChild
+MethodInvocation:process
+Method-name:visitIsNotNullPredicate
+Method-returnType:Symbol
+Method-parameters:[IsNotNullPredicate node, ExpressionAnalysisContext context]
+MethodInvocation:process
+MethodInvocation:getValue
+MethodInvocation:allocateFunction
+MethodInvocation:of
+MethodInvocation:allocateFunction
+MethodInvocation:of
+Method-name:visitSubscriptExpression
+Method-returnType:Symbol
+Method-parameters:[SubscriptExpression node, ExpressionAnalysisContext context]
+MethodInvocation:resolveSubscriptSymbol
+Method-name:resolveSubscriptSymbol
+Method-returnType:Symbol
+Method-parameters:[SubscriptExpression subscript, ExpressionAnalysisContext context]
+MethodInvocation:validate
+MethodInvocation:qualifiedName
+MethodInvocation:parts
+MethodInvocation:isEmpty
+MethodInvocation:process
+MethodInvocation:name
+MethodInvocation:process
+MethodInvocation:index
+MethodInvocation:createSubscript
+MethodInvocation:process
+MethodInvocation:expression
+MethodInvocation:createSubscript
+MethodInvocation:resolveField
+MethodInvocation:index
+MethodInvocation:process
+MethodInvocation:createSubscript
+MethodInvocation:resolvePossibleObjectInnerFieldAndReturnParent
+MethodInvocation:createSubscript
+Method-name:resolvePossibleObjectInnerFieldAndReturnParent
+Method-returnType:Symbol
+Method-parameters:[QualifiedName qualifiedName, List<String> parts]
+MethodInvocation:resolveParentField
+MethodInvocation:valueType
+MethodInvocation:isCollectionType
+MethodInvocation:innerType
+MethodInvocation:id
+MethodInvocation:resolveInnerType
+Method-name:resolveParentField
+Method-returnType:Symbol
+Method-parameters:[QualifiedName qualifiedName, List<String> parts]
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:subList
+MethodInvocation:resolveField
+Method-name:createSubscript
+Method-returnType:Symbol
+Method-parameters:[Symbol name, Symbol index, ExpressionAnalysisContext context]
+MethodInvocation:id
+MethodInvocation:valueType
+MethodInvocation:getNameForReturnType
+MethodInvocation:allocateFunction
+MethodInvocation:of
+Method-name:createSubscript
+Method-returnType:Symbol
+Method-parameters:[Symbol symbol, List<String> parts, ExpressionAnalysisContext context]
+MethodInvocation:valueType
+MethodInvocation:mapTail
+MethodInvocation:typeView
+MethodInvocation:id
+MethodInvocation:allocateFunction
+MethodInvocation:getNameForReturnType
+MethodInvocation:resolveInnerType
+MethodInvocation:ofReturnType
+MethodInvocation:info
+MethodInvocation:allLiterals
+MethodInvocation:normalizeSymbol
+Method-name:visitLogicalBinaryExpression
+Method-returnType:Symbol
+Method-parameters:[LogicalBinaryExpression node, ExpressionAnalysisContext context]
+MethodInvocation:getType
+MethodInvocation:name
+MethodInvocation:getType
+MethodInvocation:of
+MethodInvocation:process
+MethodInvocation:getLeft
+MethodInvocation:process
+MethodInvocation:getRight
+MethodInvocation:allocateFunction
+Method-name:visitNotExpression
+Method-returnType:Symbol
+Method-parameters:[NotExpression node, ExpressionAnalysisContext context]
+MethodInvocation:process
+MethodInvocation:getValue
+MethodInvocation:allocateFunction
+MethodInvocation:of
+Method-name:visitComparisonExpression
+Method-returnType:Symbol
+Method-parameters:[ComparisonExpression node, ExpressionAnalysisContext context]
+MethodInvocation:process
+MethodInvocation:getLeft
+MethodInvocation:process
+MethodInvocation:getRight
+MethodInvocation:getType
+MethodInvocation:normalize
+MethodInvocation:toFunctionIdent
+MethodInvocation:allocateFunction
+MethodInvocation:name
+MethodInvocation:arguments
+Method-name:visitArrayComparisonExpression
+Method-returnType:Symbol
+Method-parameters:[ArrayComparisonExpression node, ExpressionAnalysisContext context]
+MethodInvocation:equals
+MethodInvocation:quantifier
+MethodInvocation:registerArrayChild
+MethodInvocation:getRight
+MethodInvocation:process
+MethodInvocation:getLeft
+MethodInvocation:process
+MethodInvocation:getRight
+MethodInvocation:getType
+MethodInvocation:getValue
+MethodInvocation:allocateFunction
+MethodInvocation:of
+Method-name:visitArrayLikePredicate
+Method-returnType:Symbol
+Method-parameters:[ArrayLikePredicate node, ExpressionAnalysisContext context]
+MethodInvocation:getEscape
+MethodInvocation:process
+MethodInvocation:getValue
+MethodInvocation:process
+MethodInvocation:getPattern
+MethodInvocation:inverse
+MethodInvocation:of
+MethodInvocation:allocateFunction
+Method-name:visitLikePredicate
+Method-returnType:Symbol
+Method-parameters:[LikePredicate node, ExpressionAnalysisContext context]
+MethodInvocation:getEscape
+MethodInvocation:process
+MethodInvocation:getValue
+MethodInvocation:process
+MethodInvocation:getPattern
+MethodInvocation:allocateFunction
+MethodInvocation:of
+Method-name:visitIsNullPredicate
+Method-returnType:Symbol
+Method-parameters:[IsNullPredicate node, ExpressionAnalysisContext context]
+MethodInvocation:process
+MethodInvocation:getValue
+MethodInvocation:allocateFunction
+MethodInvocation:of
+Method-name:visitNegativeExpression
+Method-returnType:Symbol
+Method-parameters:[NegativeExpression node, ExpressionAnalysisContext context]
+MethodInvocation:negate
+MethodInvocation:process
+MethodInvocation:getValue
+Method-name:visitArithmeticExpression
+Method-returnType:Symbol
+Method-parameters:[ArithmeticExpression node, ExpressionAnalysisContext context]
+MethodInvocation:process
+MethodInvocation:getLeft
+MethodInvocation:process
+MethodInvocation:getRight
+MethodInvocation:allocateFunction
+MethodInvocation:toLowerCase
+MethodInvocation:name
+MethodInvocation:getType
+MethodInvocation:of
+Method-name:visitQualifiedNameReference
+Method-returnType:Symbol
+Method-parameters:[QualifiedNameReference node, ExpressionAnalysisContext context]
+MethodInvocation:resolveField
+MethodInvocation:getName
+MethodInvocation:contains
+MethodInvocation:options
+MethodInvocation:sessionContext
+MethodInvocation:getQuotedSubscriptLiteral
+MethodInvocation:toString
+MethodInvocation:getName
+MethodInvocation:process
+MethodInvocation:createExpression
+Method-name:visitBooleanLiteral
+Method-returnType:Symbol
+Method-parameters:[BooleanLiteral node, ExpressionAnalysisContext context]
+MethodInvocation:of
+MethodInvocation:getValue
+Method-name:visitStringLiteral
+Method-returnType:Symbol
+Method-parameters:[StringLiteral node, ExpressionAnalysisContext context]
+MethodInvocation:of
+MethodInvocation:getValue
+Method-name:visitEscapedCharStringLiteral
+Method-returnType:Symbol
+Method-parameters:[EscapedCharStringLiteral node, ExpressionAnalysisContext context]
+MethodInvocation:of
+MethodInvocation:getValue
+Method-name:visitDoubleLiteral
+Method-returnType:Symbol
+Method-parameters:[DoubleLiteral node, ExpressionAnalysisContext context]
+MethodInvocation:of
+MethodInvocation:getValue
+Method-name:visitLongLiteral
+Method-returnType:Symbol
+Method-parameters:[LongLiteral node, ExpressionAnalysisContext context]
+MethodInvocation:of
+MethodInvocation:getValue
+Method-name:visitNullLiteral
+Method-returnType:Symbol
+Method-parameters:[NullLiteral node, ExpressionAnalysisContext context]
+MethodInvocation:of
+Method-name:visitArrayLiteral
+Method-returnType:Symbol
+Method-parameters:[ArrayLiteral node, ExpressionAnalysisContext context]
+MethodInvocation:values
+MethodInvocation:isEmpty
+MethodInvocation:of
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:process
+MethodInvocation:allocateFunction
+Method-name:visitObjectLiteral
+Method-returnType:Symbol
+Method-parameters:[ObjectLiteral node, ExpressionAnalysisContext context]
+MethodInvocation:values
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:entries
+MethodInvocation:add
+MethodInvocation:of
+MethodInvocation:getKey
+MethodInvocation:add
+MethodInvocation:process
+MethodInvocation:getValue
+MethodInvocation:allocateFunction
+Method-name:visitParameterExpression
+Method-returnType:Symbol
+Method-parameters:[ParameterExpression node, ExpressionAnalysisContext context]
+MethodInvocation:apply
+Method-name:visitBetweenPredicate
+Method-returnType:Symbol
+Method-parameters:[BetweenPredicate node, ExpressionAnalysisContext context]
+MethodInvocation:process
+MethodInvocation:getValue
+MethodInvocation:process
+MethodInvocation:getMin
+MethodInvocation:process
+MethodInvocation:getMax
+MethodInvocation:toFunctionIdent
+MethodInvocation:normalize
+MethodInvocation:allocateFunction
+MethodInvocation:name
+MethodInvocation:arguments
+MethodInvocation:toFunctionIdent
+MethodInvocation:normalize
+MethodInvocation:allocateFunction
+MethodInvocation:name
+MethodInvocation:arguments
+MethodInvocation:allocateFunction
+MethodInvocation:of
+Method-name:visitMatchPredicate
+Method-returnType:Symbol
+Method-parameters:[MatchPredicate node, ExpressionAnalysisContext context]
+Method-name:visitSubqueryExpression
+Method-returnType:Symbol
+Method-parameters:[SubqueryExpression node, ExpressionAnalysisContext context]
+MethodInvocation:analyze
+MethodInvocation:getQuery
+MethodInvocation:fields
+MethodInvocation:size
+MethodInvocation:valueType
+MethodInvocation:get
+MethodInvocation:isArrayChild
+Method-name:allocateBuiltinOrUdfFunction
+Method-returnType:Symbol
+Method-parameters:[String schema, String functionName, List<Symbol> arguments, WindowDefinition windowDefinition, ExpressionAnalysisContext context]
+MethodInvocation:allocateBuiltinOrUdfFunction
+Method-name:allocateFunction
+Method-returnType:Symbol
+Method-parameters:[String functionName, List<Symbol> arguments, ExpressionAnalysisContext context]
+MethodInvocation:allocateFunction
+Method-name:allocateFunction
+Method-returnType:Symbol
+Method-parameters:[String functionName, List<Symbol> arguments, ExpressionAnalysisContext context, Functions functions, CoordinatorTxnCtx coordinatorTxnCtx]
+MethodInvocation:allocateBuiltinOrUdfFunction
+Method-name:allocateBuiltinOrUdfFunction
+Method-returnType:Symbol
+Method-parameters:[@Nullable String schema, String functionName, List<Symbol> arguments, ExpressionAnalysisContext context, Functions functions, @Nullable WindowDefinition windowDefinition, CoordinatorTxnCtx coordinatorTxnCtx]
+MethodInvocation:get
+MethodInvocation:searchPath
+MethodInvocation:sessionContext
+MethodInvocation:info
+MethodInvocation:cast
+MethodInvocation:argumentTypes
+MethodInvocation:ident
+MethodInvocation:type
+MethodInvocation:indicateAggregates
+MethodInvocation:type
+MethodInvocation:type
+MethodInvocation:format
+MethodInvocation:isEagerNormalizationAllowed
+MethodInvocation:isDeterministic
+MethodInvocation:allLiterals
+MethodInvocation:normalizeSymbol
+Method-name:verifyTypesForMatch
+Method-returnType:void
+Method-parameters:[Iterable<? extends Symbol> columns, DataType columnType]
+MethodInvocation:checkArgument
+MethodInvocation:contains
+MethodInvocation:format
+MethodInvocation:equals
+MethodInvocation:valueType
+MethodInvocation:format
+MethodInvocation:valueType
+Method-name:ensureResultTypesMatch
+Method-returnType:void
+Method-parameters:[Collection<? extends Symbol> results]
+MethodInvocation:add
+MethodInvocation:valueType
+MethodInvocation:size
+MethodInvocation:contains
+MethodInvocation:size
+MethodInvocation:format
+Class:Comparison
+Field:functions
+Field:coordinatorTxnCtx
+Field:comparisonExpressionType
+Field:left
+Field:right
+Field:operatorName
+Field:functionIdent
+Method-name:Comparison
+Method-returnType:null
+Method-parameters:[Functions functions, CoordinatorTxnCtx coordinatorTxnCtx, ComparisonExpression.Type comparisonExpressionType, Symbol left, Symbol right]
+FieldAccess:functions
+FieldAccess:coordinatorTxnCtx
+FieldAccess:operatorName
+MethodInvocation:getValue
+FieldAccess:comparisonExpressionType
+FieldAccess:left
+FieldAccess:right
+Method-name:normalize
+Method-returnType:Comparison
+Method-parameters:[ExpressionAnalysisContext context]
+MethodInvocation:swapIfNecessary
+MethodInvocation:rewriteNegatingOperators
+Method-name:swapIfNecessary
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:id
+MethodInvocation:valueType
+MethodInvocation:id
+MethodInvocation:get
+MethodInvocation:getValue
+Method-name:rewriteNegatingOperators
+Method-returnType:void
+Method-parameters:[ExpressionAnalysisContext context]
+MethodInvocation:allocateFunction
+MethodInvocation:of
+MethodInvocation:ident
+Method-name:toFunctionIdent
+Method-returnType:FunctionIdent
+Method-parameters:[]
+MethodInvocation:asList
+MethodInvocation:valueType
+MethodInvocation:valueType
+Method-name:arguments
+Method-returnType:List<Symbol>
+Method-parameters:[]
+MethodInvocation:of
+MethodInvocation:of

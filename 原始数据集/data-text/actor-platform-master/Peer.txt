@@ -1,0 +1,69 @@
+Class:Peer
+Field:CREATOR
+Method-name:createInstance
+Method-returnType:Peer
+Method-parameters:[]
+Field:peerType
+Field:peerId
+Method-name:Peer
+Method-returnType:null
+Method-parameters:[PeerType peerType, int peerId]
+FieldAccess:peerType
+FieldAccess:peerId
+Method-name:Peer
+Method-returnType:null
+Method-parameters:[]
+Method-name:fromBytes
+Method-returnType:Peer
+Method-parameters:[byte[] data]
+MethodInvocation:parse
+Method-name:fromUniqueId
+Method-returnType:Peer
+Method-parameters:[long uid]
+Method-name:user
+Method-returnType:Peer
+Method-parameters:[int uid]
+Method-name:group
+Method-returnType:Peer
+Method-parameters:[int gid]
+Method-name:getUnuqueId
+Method-returnType:long
+Method-parameters:[]
+Method-name:getPeerType
+Method-returnType:PeerType
+Method-parameters:[]
+Method-name:getPeerId
+Method-returnType:int
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:parse
+Method-returnType:void
+Method-parameters:[BserValues values]
+MethodInvocation:getInt
+MethodInvocation:getInt
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[BserWriter writer]
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:toIdString
+Method-returnType:String
+Method-parameters:[]
+Method-name:makeCall
+Method-returnType:Command<Long>
+Method-parameters:[boolean enableVideoCall, CallsModule callsModule]
+MethodInvocation:send
+MethodInvocation:getCallManager

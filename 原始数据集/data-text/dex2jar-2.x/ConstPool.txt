@@ -1,0 +1,212 @@
+Class:ConstPool
+Field:encodedArrayItems
+Field:annotationSetRefListItems
+Field:codeItems
+Field:classDataItems
+Field:debugInfoItems
+Field:annotationItems
+Field:annotationsDirectoryItems
+Field:annotationSetItems
+Field:fields
+Field:methods
+Field:protos
+Field:stringDatas
+Field:strings
+Field:typeLists
+Field:types
+Field:classDefs
+Method-name:wrapEncodedItem
+Method-returnType:Object
+Method-parameters:[Object value]
+MethodInvocation:uniqType
+FieldAccess:desc
+MethodInvocation:uniqField
+MethodInvocation:uniqString
+MethodInvocation:uniqMethod
+Method-name:clean
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+MethodInvocation:clear
+Method-name:buildShorty
+Method-returnType:String
+Method-parameters:[String ret, String[] types2]
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:addDebugInfoItem
+Method-returnType:void
+Method-parameters:[DebugInfoItem debugInfoItem]
+MethodInvocation:add
+Class:PE
+Field:owner
+Field:it
+Method-name:PE
+Method-returnType:null
+Method-parameters:[ClassDefItem owner, Iterator<TypeIdItem> it]
+FieldAccess:owner
+FieldAccess:it
+Method-name:buildSortedClassDefItems
+Method-returnType:List<ClassDefItem>
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:push
+MethodInvocation:iterateParent
+MethodInvocation:empty
+MethodInvocation:peek
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:get
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:println
+MethodInvocation:add
+MethodInvocation:push
+MethodInvocation:iterateParent
+MethodInvocation:pop
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:clear
+Method-name:putAnnotationDirectoryItem
+Method-returnType:AnnotationsDirectoryItem
+Method-parameters:[]
+MethodInvocation:add
+Method-name:uniqAnnotationItem
+Method-returnType:AnnotationItem
+Method-parameters:[AnnotationItem key]
+MethodInvocation:get
+MethodInvocation:put
+Method-name:putClassDefItem
+Method-returnType:ClassDefItem
+Method-parameters:[int accessFlag, String name, String superClass, String[] itfClass]
+MethodInvocation:uniqType
+MethodInvocation:containsKey
+MethodInvocation:uniqType
+MethodInvocation:putTypeList
+MethodInvocation:asList
+MethodInvocation:put
+Method-name:uniqField
+Method-returnType:FieldIdItem
+Method-parameters:[Field field]
+MethodInvocation:uniqField
+MethodInvocation:getOwner
+MethodInvocation:getName
+MethodInvocation:getType
+Method-name:uniqField
+Method-returnType:FieldIdItem
+Method-parameters:[String owner, String name, String type]
+MethodInvocation:uniqType
+MethodInvocation:uniqString
+MethodInvocation:uniqType
+MethodInvocation:get
+MethodInvocation:put
+Method-name:uniqMethod
+Method-returnType:MethodIdItem
+Method-parameters:[Method method]
+MethodInvocation:uniqType
+MethodInvocation:getOwner
+MethodInvocation:uniqString
+MethodInvocation:getName
+MethodInvocation:uniqProto
+MethodInvocation:uniqMethod
+Method-name:uniqMethod
+Method-returnType:MethodIdItem
+Method-parameters:[String owner, String name, String parms[], String ret]
+MethodInvocation:uniqType
+MethodInvocation:uniqString
+MethodInvocation:uniqProto
+MethodInvocation:uniqMethod
+Method-name:uniqMethod
+Method-returnType:MethodIdItem
+Method-parameters:[MethodIdItem key]
+MethodInvocation:get
+MethodInvocation:put
+Method-name:uniqProto
+Method-returnType:ProtoIdItem
+Method-parameters:[Method method]
+MethodInvocation:uniqProto
+MethodInvocation:getParameterTypes
+MethodInvocation:getReturnType
+Method-name:uniqProto
+Method-returnType:ProtoIdItem
+Method-parameters:[String[] types, String retDesc]
+MethodInvocation:uniqType
+MethodInvocation:uniqString
+MethodInvocation:buildShorty
+MethodInvocation:putTypeList
+MethodInvocation:get
+MethodInvocation:put
+Method-name:uniqString
+Method-returnType:StringIdItem
+Method-parameters:[String data]
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:put
+Method-name:uniqType
+Method-returnType:TypeIdItem
+Method-parameters:[String type]
+MethodInvocation:get
+MethodInvocation:uniqString
+MethodInvocation:put
+Method-name:putTypeList
+Method-returnType:TypeListItem
+Method-parameters:[String... subList]
+MethodInvocation:add
+MethodInvocation:uniqType
+MethodInvocation:get
+MethodInvocation:put
+Field:ZERO_SIZE_TYPE_LIST
+Method-name:putTypeList
+Method-returnType:TypeListItem
+Method-parameters:[List<String> subList]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:uniqType
+MethodInvocation:get
+MethodInvocation:put
+Method-name:addClassDataItem
+Method-returnType:ClassDataItem
+Method-parameters:[ClassDataItem dataItem]
+MethodInvocation:add
+Method-name:putEnCodedArrayItem
+Method-returnType:EncodedArrayItem
+Method-parameters:[]
+MethodInvocation:add
+Method-name:uniqAnnotationSetItem
+Method-returnType:AnnotationSetItem
+Method-parameters:[AnnotationSetItem key]
+MethodInvocation:clear
+MethodInvocation:add
+MethodInvocation:uniqAnnotationItem
+MethodInvocation:get
+MethodInvocation:put
+Method-name:uniqAnnotationSetRefListItem
+Method-returnType:AnnotationSetRefListItem
+Method-parameters:[AnnotationSetRefListItem key]
+MethodInvocation:uniqAnnotationSetItem
+MethodInvocation:get
+MethodInvocation:put
+Method-name:addCodeItem
+Method-returnType:void
+Method-parameters:[CodeItem code]
+MethodInvocation:add

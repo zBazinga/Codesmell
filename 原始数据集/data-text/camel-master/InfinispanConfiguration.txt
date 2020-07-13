@@ -1,0 +1,172 @@
+Class:InfinispanConfiguration
+Field:hosts
+Field:operation
+Field:command
+Field:sync
+Field:eventTypes
+Field:customListener
+Field:clusteredListener
+Field:queryBuilder
+Field:flags
+Field:configurationUri
+Field:configurationProperties
+Field:cacheContainer
+Field:cacheContainerConfiguration
+Field:resultHeader
+Field:remappingFunction
+Method-name:getCommand
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:setCommand
+Method-returnType:void
+Method-parameters:[String command]
+MethodInvocation:startsWith
+MethodInvocation:toUpperCase
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:setOperation
+MethodInvocation:valueOf
+Method-name:getOperation
+Method-returnType:InfinispanOperation
+Method-parameters:[]
+Method-name:setOperation
+Method-returnType:void
+Method-parameters:[InfinispanOperation operation]
+FieldAccess:operation
+Method-name:getOperationOrDefault
+Method-returnType:InfinispanOperation
+Method-parameters:[]
+FieldAccess:operation
+Method-name:getHosts
+Method-returnType:String
+Method-parameters:[]
+Method-name:setHosts
+Method-returnType:void
+Method-parameters:[String hosts]
+FieldAccess:hosts
+Method-name:getCacheContainer
+Method-returnType:BasicCacheContainer
+Method-parameters:[]
+Method-name:setCacheContainer
+Method-returnType:void
+Method-parameters:[BasicCacheContainer cacheContainer]
+FieldAccess:cacheContainer
+Method-name:isSync
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSync
+Method-returnType:void
+Method-parameters:[boolean sync]
+FieldAccess:sync
+Method-name:isClusteredListener
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setClusteredListener
+Method-returnType:void
+Method-parameters:[boolean clusteredListener]
+FieldAccess:clusteredListener
+Method-name:getEventTypes
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:setEventTypes
+Method-returnType:void
+Method-parameters:[Set<String> eventTypes]
+FieldAccess:eventTypes
+Method-name:setEventTypes
+Method-returnType:void
+Method-parameters:[String eventTypes]
+FieldAccess:eventTypes
+MethodInvocation:asList
+MethodInvocation:split
+Method-name:getCustomListener
+Method-returnType:InfinispanCustomListener
+Method-parameters:[]
+Method-name:setCustomListener
+Method-returnType:void
+Method-parameters:[InfinispanCustomListener customListener]
+FieldAccess:customListener
+Method-name:hasCustomListener
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getQueryBuilder
+Method-returnType:InfinispanQueryBuilder
+Method-parameters:[]
+Method-name:setQueryBuilder
+Method-returnType:void
+Method-parameters:[InfinispanQueryBuilder queryBuilder]
+FieldAccess:queryBuilder
+Method-name:hasQueryBuilder
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getFlags
+Method-returnType:Flag[]
+Method-parameters:[]
+Method-name:setFlags
+Method-returnType:void
+Method-parameters:[String flagsAsString]
+MethodInvocation:split
+FieldAccess:flags
+FieldAccess:flags
+MethodInvocation:valueOf
+Method-name:setFlags
+Method-returnType:void
+Method-parameters:[Flag... flags]
+FieldAccess:flags
+Method-name:hasFlags
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getConfigurationUri
+Method-returnType:String
+Method-parameters:[]
+Method-name:setConfigurationUri
+Method-returnType:void
+Method-parameters:[String configurationUri]
+FieldAccess:configurationUri
+Method-name:getConfigurationProperties
+Method-returnType:Map<String,String>
+Method-parameters:[]
+Method-name:setConfigurationProperties
+Method-returnType:void
+Method-parameters:[Map<String,String> configurationProperties]
+FieldAccess:configurationProperties
+Method-name:addConfigurationProperty
+Method-returnType:void
+Method-parameters:[String key, String value]
+FieldAccess:configurationProperties
+FieldAccess:configurationProperties
+MethodInvocation:put
+FieldAccess:configurationProperties
+Method-name:getCacheContainerConfiguration
+Method-returnType:Object
+Method-parameters:[]
+Method-name:setCacheContainerConfiguration
+Method-returnType:void
+Method-parameters:[Object cacheContainerConfiguration]
+FieldAccess:cacheContainerConfiguration
+Method-name:copy
+Method-returnType:InfinispanConfiguration
+Method-parameters:[]
+Method-name:getResultHeader
+Method-returnType:Object
+Method-parameters:[]
+Method-name:setResultHeader
+Method-returnType:void
+Method-parameters:[Object resultHeader]
+FieldAccess:resultHeader
+Method-name:getRemappingFunction
+Method-returnType:BiFunction
+Method-parameters:[]
+Method-name:setRemappingFunction
+Method-returnType:void
+Method-parameters:[BiFunction remappingFunction]
+FieldAccess:remappingFunction
+Method-name:isConfigProvided
+Method-returnType:boolean
+Method-parameters:[Map<String,Object> parameters, InfinispanComponent infinispanComponent]
+MethodInvocation:getHosts
+MethodInvocation:getCacheContainer
+MethodInvocation:getCacheContainerConfiguration
+MethodInvocation:getConfigurationUri
+MethodInvocation:anyMatch
+MethodInvocation:stream

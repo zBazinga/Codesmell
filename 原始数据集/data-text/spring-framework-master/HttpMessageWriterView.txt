@@ -1,0 +1,83 @@
+Class:HttpMessageWriterView
+Field:writer
+Field:modelKeys
+Field:canWriteMap
+Method-name:HttpMessageWriterView
+Method-returnType:null
+Method-parameters:[Encoder<?> encoder]
+Method-name:HttpMessageWriterView
+Method-returnType:null
+Method-parameters:[HttpMessageWriter<?> writer]
+MethodInvocation:notNull
+FieldAccess:writer
+FieldAccess:canWriteMap
+MethodInvocation:canWrite
+MethodInvocation:forClass
+Method-name:getMessageWriter
+Method-returnType:HttpMessageWriter<?>
+Method-parameters:[]
+FieldAccess:writer
+Method-name:getSupportedMediaTypes
+Method-returnType:List<MediaType>
+Method-parameters:[]
+MethodInvocation:getWritableMediaTypes
+FieldAccess:writer
+Method-name:setModelKeys
+Method-returnType:void
+Method-parameters:[@Nullable Set<String> modelKeys]
+MethodInvocation:clear
+FieldAccess:modelKeys
+MethodInvocation:addAll
+FieldAccess:modelKeys
+Method-name:getModelKeys
+Method-returnType:Set<String>
+Method-parameters:[]
+FieldAccess:modelKeys
+Method-name:render
+Method-returnType:Mono<Void>
+Method-parameters:[@Nullable Map<String,?> model, @Nullable MediaType contentType, ServerWebExchange exchange]
+MethodInvocation:getObjectToRender
+MethodInvocation:write
+MethodInvocation:setComplete
+MethodInvocation:getResponse
+Method-name:getObjectToRender
+Method-returnType:Object
+Method-parameters:[@Nullable Map<String,?> model]
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:entrySet
+MethodInvocation:toMap
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:values
+FieldAccess:canWriteMap
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getMessageWriter
+Method-name:isMatch
+Method-returnType:boolean
+Method-parameters:[Map.Entry<String,?> entry]
+MethodInvocation:getValue
+MethodInvocation:isEmpty
+MethodInvocation:getModelKeys
+MethodInvocation:contains
+MethodInvocation:getModelKeys
+MethodInvocation:getKey
+MethodInvocation:forInstance
+MethodInvocation:getValue
+MethodInvocation:canWrite
+MethodInvocation:getMessageWriter
+Method-name:write
+Method-returnType:Mono<Void>
+Method-parameters:[T value, @Nullable MediaType contentType, ServerWebExchange exchange]
+MethodInvocation:justOrEmpty
+MethodInvocation:forClass
+MethodInvocation:getClass
+MethodInvocation:write
+FieldAccess:writer
+MethodInvocation:getResponse
+MethodInvocation:from
+MethodInvocation:getLogPrefix

@@ -1,0 +1,42 @@
+Class:ExceptionPolicyKey
+Field:routeId
+Field:exceptionClass
+Field:when
+Method-name:ExceptionPolicyKey
+Method-returnType:null
+Method-parameters:[String routeId, Class<? extends Throwable> exceptionClass, Predicate when]
+FieldAccess:routeId
+FieldAccess:exceptionClass
+FieldAccess:when
+Method-name:getExceptionClass
+Method-returnType:Class<?>
+Method-parameters:[]
+Method-name:getWhen
+Method-returnType:Predicate
+Method-parameters:[]
+Method-name:getRouteId
+Method-returnType:String
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:matchesWhen
+Method-returnType:boolean
+Method-parameters:[Exchange exchange, DefaultExceptionPolicyStrategy defaultExceptionPolicyStrategy]
+MethodInvocation:getWhen
+MethodInvocation:matches
+MethodInvocation:getWhen

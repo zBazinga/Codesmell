@@ -1,0 +1,30 @@
+Class:ExecutableChainTransform
+Field:transforms
+Method-name:ExecutableChainTransform
+Method-returnType:null
+Method-parameters:[ChainTransform transform, Logger logger, ExecutableTransform... transforms]
+MethodInvocation:asList
+Method-name:ExecutableChainTransform
+Method-returnType:null
+Method-parameters:[ChainTransform transform, Logger logger, List<ExecutableTransform> transforms]
+FieldAccess:transforms
+MethodInvocation:unmodifiableList
+Method-name:executableTransforms
+Method-returnType:List<ExecutableTransform>
+Method-parameters:[]
+Method-name:execute
+Method-returnType:ChainTransform.Result
+Method-parameters:[WatchExecutionContext ctx, Payload payload]
+MethodInvocation:doExecute
+MethodInvocation:error
+MethodInvocation:id
+Method-name:doExecute
+Method-returnType:ChainTransform.Result
+Method-parameters:[WatchExecutionContext ctx, Payload payload, List<Transform.Result> results]
+MethodInvocation:execute
+MethodInvocation:add
+MethodInvocation:status
+MethodInvocation:format
+MethodInvocation:id
+MethodInvocation:type
+MethodInvocation:payload

@@ -1,0 +1,126 @@
+Class:SqlCall
+Method-name:SqlCall
+Method-returnType:null
+Method-parameters:[SqlParserPos pos]
+Method-name:isExpanded
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setOperand
+Method-returnType:void
+Method-parameters:[int i, SqlNode operand]
+Method-name:getKind
+Method-returnType:SqlKind
+Method-parameters:[]
+MethodInvocation:getKind
+MethodInvocation:getOperator
+Method-name:getOperator
+Method-returnType:SqlOperator
+Method-parameters:[]
+Method-name:getOperandList
+Method-returnType:List<SqlNode>
+Method-parameters:[]
+Method-name:operand
+Method-returnType:S
+Method-parameters:[int i]
+MethodInvocation:get
+MethodInvocation:getOperandList
+Method-name:operandCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getOperandList
+Method-name:clone
+Method-returnType:SqlNode
+Method-parameters:[SqlParserPos pos]
+MethodInvocation:getOperandList
+MethodInvocation:createCall
+MethodInvocation:getOperator
+MethodInvocation:getFunctionQuantifier
+MethodInvocation:toArray
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, int leftPrec, int rightPrec]
+MethodInvocation:getOperator
+MethodInvocation:getDialect
+MethodInvocation:getLeftPrec
+MethodInvocation:getRightPrec
+MethodInvocation:isAlwaysUseParentheses
+MethodInvocation:isA
+MethodInvocation:startList
+MethodInvocation:unparseCall
+MethodInvocation:endList
+MethodInvocation:unparseCall
+Method-name:validate
+Method-returnType:void
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope]
+MethodInvocation:validateCall
+Method-name:findValidOptions
+Method-returnType:void
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope, SqlParserPos pos, Collection<SqlMoniker> hintList]
+MethodInvocation:getOperandList
+MethodInvocation:getParserPosition
+MethodInvocation:equals
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:lookupNameCompletionHints
+Method-name:accept
+Method-returnType:R
+Method-parameters:[SqlVisitor<R> visitor]
+MethodInvocation:visit
+Method-name:equalsDeep
+Method-returnType:boolean
+Method-parameters:[SqlNode node, Litmus litmus]
+MethodInvocation:fail
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:getOperator
+MethodInvocation:getName
+MethodInvocation:getOperator
+MethodInvocation:fail
+MethodInvocation:equalDeep
+MethodInvocation:getOperandList
+MethodInvocation:getOperandList
+Method-name:getCallSignature
+Method-returnType:String
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope]
+MethodInvocation:getOperandList
+MethodInvocation:deriveType
+MethodInvocation:add
+MethodInvocation:toString
+MethodInvocation:getOperatorSignature
+MethodInvocation:getOperator
+Method-name:getMonotonicity
+Method-returnType:SqlMonotonicity
+Method-parameters:[SqlValidatorScope scope]
+MethodInvocation:getValidator
+MethodInvocation:getMonotonicity
+MethodInvocation:getOperator
+Method-name:isCountStar
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getOperator
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:operandCount
+MethodInvocation:operand
+MethodInvocation:isStar
+MethodInvocation:size
+Method-name:getFunctionQuantifier
+Method-returnType:SqlLiteral
+Method-parameters:[]
+Method-name:arg
+Method-returnType:void
+Method-parameters:[SqlWriter writer, int leftPrec, int rightPrec, int i, SqlOverlapsOperator sqlOverlapsOperator]
+MethodInvocation:isCallTo
+MethodInvocation:operand
+MethodInvocation:operand
+MethodInvocation:keyword
+MethodInvocation:sep
+MethodInvocation:unparse
+MethodInvocation:operand
+MethodInvocation:sep
+MethodInvocation:unparse
+MethodInvocation:operand
+MethodInvocation:sep
+MethodInvocation:unparse
+MethodInvocation:operand

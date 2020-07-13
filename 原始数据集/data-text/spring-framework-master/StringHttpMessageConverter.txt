@@ -1,0 +1,65 @@
+Class:StringHttpMessageConverter
+Field:DEFAULT_CHARSET
+Field:availableCharsets
+Field:writeAcceptCharset
+Method-name:StringHttpMessageConverter
+Method-returnType:null
+Method-parameters:[]
+Method-name:StringHttpMessageConverter
+Method-returnType:null
+Method-parameters:[Charset defaultCharset]
+Method-name:setWriteAcceptCharset
+Method-returnType:void
+Method-parameters:[boolean writeAcceptCharset]
+FieldAccess:writeAcceptCharset
+Method-name:supports
+Method-returnType:boolean
+Method-parameters:[Class<?> clazz]
+Method-name:readInternal
+Method-returnType:String
+Method-parameters:[Class<? extends String> clazz, HttpInputMessage inputMessage]
+MethodInvocation:getContentTypeCharset
+MethodInvocation:getContentType
+MethodInvocation:getHeaders
+MethodInvocation:copyToString
+MethodInvocation:getBody
+Method-name:getContentLength
+Method-returnType:Long
+Method-parameters:[String str, @Nullable MediaType contentType]
+MethodInvocation:getContentTypeCharset
+FieldAccess:length
+MethodInvocation:getBytes
+Method-name:addDefaultHeaders
+Method-returnType:void
+Method-parameters:[HttpHeaders headers, String s, @Nullable MediaType type]
+MethodInvocation:getContentType
+MethodInvocation:isConcrete
+MethodInvocation:isCompatibleWith
+MethodInvocation:setContentType
+Method-name:writeInternal
+Method-returnType:void
+Method-parameters:[String str, HttpOutputMessage outputMessage]
+MethodInvocation:getHeaders
+FieldAccess:writeAcceptCharset
+MethodInvocation:get
+MethodInvocation:setAcceptCharset
+MethodInvocation:getAcceptedCharsets
+MethodInvocation:getContentTypeCharset
+MethodInvocation:getContentType
+MethodInvocation:copy
+MethodInvocation:getBody
+Method-name:getAcceptedCharsets
+Method-returnType:List<Charset>
+Method-parameters:[]
+FieldAccess:availableCharsets
+MethodInvocation:values
+MethodInvocation:availableCharsets
+FieldAccess:availableCharsets
+Method-name:getContentTypeCharset
+Method-returnType:Charset
+Method-parameters:[@Nullable MediaType contentType]
+MethodInvocation:getCharset
+MethodInvocation:getCharset
+MethodInvocation:isCompatibleWith
+MethodInvocation:getDefaultCharset
+MethodInvocation:state

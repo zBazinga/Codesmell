@@ -1,0 +1,148 @@
+Class:ModelAndView
+Field:view
+Field:model
+Field:status
+Field:cleared
+Method-name:ModelAndView
+Method-returnType:null
+Method-parameters:[]
+Method-name:ModelAndView
+Method-returnType:null
+Method-parameters:[String viewName]
+FieldAccess:view
+Method-name:ModelAndView
+Method-returnType:null
+Method-parameters:[View view]
+FieldAccess:view
+Method-name:ModelAndView
+Method-returnType:null
+Method-parameters:[String viewName, @Nullable Map<String,?> model]
+FieldAccess:view
+MethodInvocation:addAllAttributes
+MethodInvocation:getModelMap
+Method-name:ModelAndView
+Method-returnType:null
+Method-parameters:[View view, @Nullable Map<String,?> model]
+FieldAccess:view
+MethodInvocation:addAllAttributes
+MethodInvocation:getModelMap
+Method-name:ModelAndView
+Method-returnType:null
+Method-parameters:[String viewName, HttpStatus status]
+FieldAccess:view
+FieldAccess:status
+Method-name:ModelAndView
+Method-returnType:null
+Method-parameters:[@Nullable String viewName, @Nullable Map<String,?> model, @Nullable HttpStatus status]
+FieldAccess:view
+MethodInvocation:addAllAttributes
+MethodInvocation:getModelMap
+FieldAccess:status
+Method-name:ModelAndView
+Method-returnType:null
+Method-parameters:[String viewName, String modelName, Object modelObject]
+FieldAccess:view
+MethodInvocation:addObject
+Method-name:ModelAndView
+Method-returnType:null
+Method-parameters:[View view, String modelName, Object modelObject]
+FieldAccess:view
+MethodInvocation:addObject
+Method-name:setViewName
+Method-returnType:void
+Method-parameters:[@Nullable String viewName]
+FieldAccess:view
+Method-name:getViewName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:view
+FieldAccess:view
+Method-name:setView
+Method-returnType:void
+Method-parameters:[@Nullable View view]
+FieldAccess:view
+Method-name:getView
+Method-returnType:View
+Method-parameters:[]
+FieldAccess:view
+FieldAccess:view
+Method-name:hasView
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:view
+Method-name:isReference
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:view
+Method-name:getModelInternal
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+FieldAccess:model
+Method-name:getModelMap
+Method-returnType:ModelMap
+Method-parameters:[]
+FieldAccess:model
+FieldAccess:model
+FieldAccess:model
+Method-name:getModel
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+MethodInvocation:getModelMap
+Method-name:setStatus
+Method-returnType:void
+Method-parameters:[@Nullable HttpStatus status]
+FieldAccess:status
+Method-name:getStatus
+Method-returnType:HttpStatus
+Method-parameters:[]
+FieldAccess:status
+Method-name:addObject
+Method-returnType:ModelAndView
+Method-parameters:[String attributeName, @Nullable Object attributeValue]
+MethodInvocation:addAttribute
+MethodInvocation:getModelMap
+Method-name:addObject
+Method-returnType:ModelAndView
+Method-parameters:[Object attributeValue]
+MethodInvocation:addAttribute
+MethodInvocation:getModelMap
+Method-name:addAllObjects
+Method-returnType:ModelAndView
+Method-parameters:[@Nullable Map<String,?> modelMap]
+MethodInvocation:addAllAttributes
+MethodInvocation:getModelMap
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:view
+FieldAccess:model
+FieldAccess:cleared
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:view
+MethodInvocation:isEmpty
+FieldAccess:model
+Method-name:wasCleared
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:cleared
+MethodInvocation:isEmpty
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:formatView
+FieldAccess:model
+Method-name:formatView
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isReference
+FieldAccess:view
+FieldAccess:view
+Method-name:applyPostHandle
+Method-returnType:void
+Method-parameters:[HttpServletRequest request, HttpServletResponse response, HandlerExecutionChain handlerExecutionChain]
+MethodInvocation:getInterceptors
+MethodInvocation:isEmpty
+MethodInvocation:postHandle
+MethodInvocation:getHandler

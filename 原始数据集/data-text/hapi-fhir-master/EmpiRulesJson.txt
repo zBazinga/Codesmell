@@ -1,0 +1,91 @@
+Class:EmpiRulesJson
+Field:myResourceSearchParams
+Field:myFilterSearchParams
+Field:myMatchFieldJsonList
+Field:myMatchResultMap
+Field:myEnterpriseEIDSystem
+Field:myVectorMatchResultMap
+Method-name:addMatchField
+Method-returnType:void
+Method-parameters:[EmpiFieldMatchJson theMatchRuleName]
+MethodInvocation:add
+Method-name:addResourceSearchParam
+Method-returnType:void
+Method-parameters:[EmpiResourceSearchParamJson theSearchParam]
+MethodInvocation:add
+Method-name:addFilterSearchParam
+Method-returnType:void
+Method-parameters:[EmpiFilterSearchParamJson theSearchParam]
+MethodInvocation:add
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:get
+Method-returnType:EmpiFieldMatchJson
+Method-parameters:[int theIndex]
+MethodInvocation:get
+Method-name:getMatchResult
+Method-returnType:EmpiMatchResultEnum
+Method-parameters:[String theFieldMatchNames]
+MethodInvocation:get
+Method-name:getMatchResult
+Method-returnType:EmpiMatchResultEnum
+Method-parameters:[Long theMatchVector]
+MethodInvocation:get
+Method-name:putMatchResult
+Method-returnType:void
+Method-parameters:[String theFieldMatchNames, EmpiMatchResultEnum theMatchResult]
+MethodInvocation:put
+MethodInvocation:initialize
+Method-name:getMatchResultMap
+Method-returnType:Map<String,EmpiMatchResultEnum>
+Method-parameters:[]
+MethodInvocation:unmodifiableMap
+Method-name:initialize
+Method-returnType:void
+Method-parameters:[]
+Method-name:getMatchFields
+Method-returnType:List<EmpiFieldMatchJson>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+Method-name:getResourceSearchParams
+Method-returnType:List<EmpiResourceSearchParamJson>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+Method-name:getFilterSearchParams
+Method-returnType:List<EmpiFilterSearchParamJson>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+Method-name:getEnterpriseEIDSystem
+Method-returnType:String
+Method-parameters:[]
+Method-name:setEnterpriseEIDSystem
+Method-returnType:void
+Method-parameters:[String theEnterpriseEIDSystem]
+Method-name:validateSystemIsUri
+Method-returnType:void
+Method-parameters:[EmpiRuleValidator empiRuleValidator]
+MethodInvocation:getEnterpriseEIDSystem
+Class:EmpiRulesJsonConverter
+Method-name:EmpiRulesJsonConverter
+Method-returnType:null
+Method-parameters:[]
+Method-name:convert
+Method-returnType:EmpiRulesJson
+Method-parameters:[EmpiRulesJson theEmpiRulesJson]
+MethodInvocation:initialize
+Method-name:getSummary
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+Method-name:getFieldMatchNamesForVector
+Method-returnType:String
+Method-parameters:[long theVector]
+MethodInvocation:getFieldMatchNames
+Method-name:getVectorMatchResultMapForUnitTest
+Method-returnType:VectorMatchResultMap
+Method-parameters:[]

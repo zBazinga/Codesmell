@@ -1,0 +1,150 @@
+Class:NodeRepurposeCommand
+Field:ABORTED_BY_USER_MSG
+Field:FAILED_TO_OBTAIN_NODE_LOCK_MSG
+Field:NO_CLEANUP
+Field:NO_DATA_TO_CLEAN_UP_FOUND
+Field:NO_SHARD_DATA_TO_CLEAN_UP_FOUND
+Method-name:NodeRepurposeCommand
+Method-returnType:null
+Method-parameters:[]
+Method-name:testExecute
+Method-returnType:void
+Method-parameters:[Terminal terminal, OptionSet options, Environment env]
+MethodInvocation:execute
+Method-name:validateBeforeLock
+Method-returnType:boolean
+Method-parameters:[Terminal terminal, Environment env]
+MethodInvocation:settings
+MethodInvocation:isDataNode
+MethodInvocation:println
+Method-name:processNodePaths
+Method-returnType:void
+Method-parameters:[Terminal terminal, Path[] dataPaths, OptionSet options, Environment env]
+Method-name:processNoMasterNoDataNode
+Method-returnType:void
+Method-parameters:[Terminal terminal, Path[] dataPaths, Environment env]
+MethodInvocation:toNodePaths
+MethodInvocation:println
+MethodInvocation:collectShardDataPaths
+MethodInvocation:println
+MethodInvocation:collectIndexMetadataPaths
+MethodInvocation:uniqueParentPaths
+MethodInvocation:createPersistedClusterStateService
+MethodInvocation:settings
+MethodInvocation:metadata
+MethodInvocation:loadClusterState
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:indices
+MethodInvocation:println
+MethodInvocation:union
+MethodInvocation:indexUUIDsFor
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:spliterator
+MethodInvocation:values
+MethodInvocation:indices
+MethodInvocation:getIndexUUID
+MethodInvocation:toSet
+MethodInvocation:outputVerboseInformation
+MethodInvocation:println
+MethodInvocation:noMasterMessage
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:outputHowToSeeVerboseInformation
+MethodInvocation:println
+MethodInvocation:confirm
+MethodInvocation:removePaths
+MethodInvocation:deleteMetaState
+MethodInvocation:rm
+MethodInvocation:toArray
+MethodInvocation:map
+MethodInvocation:of
+MethodInvocation:resolve
+MethodInvocation:println
+Method-name:processMasterNoDataNode
+Method-returnType:void
+Method-parameters:[Terminal terminal, Path[] dataPaths, Environment env]
+MethodInvocation:toNodePaths
+MethodInvocation:println
+MethodInvocation:collectShardDataPaths
+MethodInvocation:isEmpty
+MethodInvocation:println
+MethodInvocation:createPersistedClusterStateService
+MethodInvocation:settings
+MethodInvocation:metadata
+MethodInvocation:loadClusterState
+MethodInvocation:uniqueParentPaths
+MethodInvocation:indexUUIDsFor
+MethodInvocation:outputVerboseInformation
+MethodInvocation:println
+MethodInvocation:shardMessage
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:outputHowToSeeVerboseInformation
+MethodInvocation:println
+MethodInvocation:confirm
+MethodInvocation:removePaths
+MethodInvocation:println
+Method-name:outputVerboseInformation
+Method-returnType:void
+Method-parameters:[Terminal terminal, Collection<Path> pathsToCleanup, Set<String> indexUUIDs, Metadata metadata]
+MethodInvocation:isPrintable
+MethodInvocation:println
+MethodInvocation:forEach
+MethodInvocation:println
+MethodInvocation:toString
+MethodInvocation:println
+MethodInvocation:forEach
+MethodInvocation:println
+MethodInvocation:toIndexName
+Method-name:outputHowToSeeVerboseInformation
+Method-returnType:void
+Method-parameters:[Terminal terminal]
+MethodInvocation:isPrintable
+MethodInvocation:println
+Method-name:toIndexName
+Method-returnType:String
+Method-parameters:[String uuid, Metadata metadata]
+MethodInvocation:indices
+MethodInvocation:equals
+MethodInvocation:getIndexUUID
+MethodInvocation:getName
+MethodInvocation:getIndex
+Method-name:indexUUIDsFor
+Method-returnType:Set<String>
+Method-parameters:[Set<Path> indexPaths]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toSet
+Method-name:noMasterMessage
+Method-returnType:String
+Method-parameters:[int indexes, int shards, int indexMetadata]
+Method-name:shardMessage
+Method-returnType:String
+Method-parameters:[int shards, int indices]
+Method-name:removePaths
+Method-returnType:void
+Method-parameters:[Terminal terminal, Collection<Path> paths]
+MethodInvocation:println
+MethodInvocation:forEach
+Method-name:removePath
+Method-returnType:void
+Method-parameters:[Path path]
+MethodInvocation:rm
+MethodInvocation:getMessage
+Method-name:uniqueParentPaths
+Method-returnType:Set<Path>
+Method-parameters:[Collection<Path>... paths]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:flatMap
+MethodInvocation:stream
+MethodInvocation:toSet
+Method-name:getParser
+Method-returnType:OptionParser
+Method-parameters:[]

@@ -1,0 +1,98 @@
+Class:Layer
+Field:serialVersionUID
+Field:parentNetwork
+Field:neurons
+Field:label
+Method-name:Layer
+Method-returnType:null
+Method-parameters:[]
+Method-name:Layer
+Method-returnType:null
+Method-parameters:[int neuronsCount]
+Method-name:Layer
+Method-returnType:null
+Method-parameters:[int neuronsCount, NeuronProperties neuronProperties]
+MethodInvocation:createNeuron
+MethodInvocation:addNeuron
+Method-name:setParentNetwork
+Method-returnType:void
+Method-parameters:[NeuralNetwork parent]
+FieldAccess:parentNetwork
+Method-name:getParentNetwork
+Method-returnType:NeuralNetwork
+Method-parameters:[]
+FieldAccess:parentNetwork
+Method-name:getNeurons
+Method-returnType:Neuron[]
+Method-parameters:[]
+MethodInvocation:asArray
+Method-name:addNeuron
+Method-returnType:void
+Method-parameters:[Neuron neuron]
+MethodInvocation:setParentLayer
+MethodInvocation:add
+MethodInvocation:fireNetworkEvent
+Method-name:addNeuron
+Method-returnType:void
+Method-parameters:[int index, Neuron neuron]
+MethodInvocation:add
+MethodInvocation:setParentLayer
+MethodInvocation:fireNetworkEvent
+Method-name:setNeuron
+Method-returnType:void
+Method-parameters:[int index, Neuron neuron]
+MethodInvocation:set
+MethodInvocation:setParentLayer
+MethodInvocation:fireNetworkEvent
+Method-name:removeNeuronAt
+Method-returnType:void
+Method-parameters:[int index]
+MethodInvocation:get
+MethodInvocation:setParentLayer
+MethodInvocation:removeAllConnections
+MethodInvocation:remove
+MethodInvocation:fireNetworkEvent
+Method-name:removeAllNeurons
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:fireNetworkEvent
+Method-name:getNeuronAt
+Method-returnType:Neuron
+Method-parameters:[int index]
+MethodInvocation:get
+Method-name:indexOf
+Method-returnType:int
+Method-parameters:[Neuron neuron]
+MethodInvocation:indexOf
+Method-name:getNeuronsCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:calculate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:asArray
+FieldAccess:neurons
+MethodInvocation:calculate
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:neurons
+MethodInvocation:reset
+Method-name:initializeWeights
+Method-returnType:void
+Method-parameters:[double value]
+FieldAccess:neurons
+MethodInvocation:initializeWeights
+Method-name:getLabel
+Method-returnType:String
+Method-parameters:[]
+Method-name:setLabel
+Method-returnType:void
+Method-parameters:[String label]
+FieldAccess:label
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty

@@ -1,0 +1,123 @@
+Class:InputOutputFormatContainer
+Field:formats
+Field:parameters
+Field:userCodeClassLoader
+Method-name:InputOutputFormatContainer
+Method-returnType:null
+Method-parameters:[ClassLoader classLoader]
+FieldAccess:formats
+FieldAccess:parameters
+FieldAccess:userCodeClassLoader
+MethodInvocation:checkNotNull
+Method-name:InputOutputFormatContainer
+Method-returnType:null
+Method-parameters:[TaskConfig config, ClassLoader classLoader]
+MethodInvocation:checkNotNull
+FieldAccess:userCodeClassLoader
+MethodInvocation:checkNotNull
+MethodInvocation:getStubWrapper
+MethodInvocation:getMessage
+FieldAccess:formats
+MethodInvocation:getUserCodeObject
+MethodInvocation:getMessage
+FieldAccess:parameters
+MethodInvocation:getStubParameters
+MethodInvocation:keySet
+MethodInvocation:setString
+MethodInvocation:getString
+Method-name:getInputFormats
+Method-returnType:Map<OperatorID,UserCodeWrapper<? extends InputFormat<?,?>>>
+Method-parameters:[]
+MethodInvocation:getInputFormats
+Method-name:getOutputFormats
+Method-returnType:Map<OperatorID,UserCodeWrapper<? extends OutputFormat<?>>>
+Method-parameters:[]
+MethodInvocation:getOutputFormats
+Method-name:getUniqueInputFormat
+Method-returnType:Pair<OperatorID,InputFormat<OT,T>>
+Method-parameters:[]
+MethodInvocation:getInputFormats
+MethodInvocation:checkState
+MethodInvocation:size
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getUserCodeObject
+MethodInvocation:getValue
+Method-name:getUniqueOutputFormat
+Method-returnType:Pair<OperatorID,OutputFormat<IT>>
+Method-parameters:[]
+MethodInvocation:getOutputFormats
+MethodInvocation:checkState
+MethodInvocation:size
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getUserCodeObject
+MethodInvocation:getValue
+Method-name:addInputFormat
+Method-returnType:InputOutputFormatContainer
+Method-parameters:[OperatorID operatorId, InputFormat<?,?> inputFormat]
+MethodInvocation:addInputFormat
+Method-name:addInputFormat
+Method-returnType:InputOutputFormatContainer
+Method-parameters:[OperatorID operatorId, UserCodeWrapper<? extends InputFormat<?,?>> wrapper]
+MethodInvocation:addInputFormat
+Method-name:addOutputFormat
+Method-returnType:InputOutputFormatContainer
+Method-parameters:[OperatorID operatorId, OutputFormat<?> outputFormat]
+MethodInvocation:addOutputFormat
+Method-name:addOutputFormat
+Method-returnType:InputOutputFormatContainer
+Method-parameters:[OperatorID operatorId, UserCodeWrapper<? extends OutputFormat<?>> wrapper]
+MethodInvocation:addOutputFormat
+Method-name:getParameters
+Method-returnType:Configuration
+Method-parameters:[OperatorID operatorId]
+MethodInvocation:getParamKeyPrefix
+Method-name:addParameters
+Method-returnType:InputOutputFormatContainer
+Method-parameters:[OperatorID operatorId, String key, String value]
+MethodInvocation:setString
+MethodInvocation:getParamKeyPrefix
+Method-name:write
+Method-returnType:void
+Method-parameters:[TaskConfig config]
+MethodInvocation:setStubWrapper
+MethodInvocation:setStubParameters
+Method-name:getParamKeyPrefix
+Method-returnType:String
+Method-parameters:[OperatorID operatorId]
+Class:FormatUserCodeTable
+Field:serialVersionUID
+Field:inputFormats
+Field:outputFormats
+Method-name:FormatUserCodeTable
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:inputFormats
+FieldAccess:outputFormats
+Method-name:addInputFormat
+Method-returnType:void
+Method-parameters:[OperatorID operatorId, UserCodeWrapper<? extends InputFormat<?,?>> wrapper]
+MethodInvocation:containsKey
+MethodInvocation:checkNotNull
+MethodInvocation:put
+MethodInvocation:checkNotNull
+Method-name:addOutputFormat
+Method-returnType:void
+Method-parameters:[OperatorID operatorId, UserCodeWrapper<? extends OutputFormat<?>> wrapper]
+MethodInvocation:containsKey
+MethodInvocation:checkNotNull
+MethodInvocation:put
+MethodInvocation:checkNotNull
+Method-name:getInputFormats
+Method-returnType:Map<OperatorID,UserCodeWrapper<? extends InputFormat<?,?>>>
+Method-parameters:[]
+MethodInvocation:unmodifiableMap
+Method-name:getOutputFormats
+Method-returnType:Map<OperatorID,UserCodeWrapper<? extends OutputFormat<?>>>
+Method-parameters:[]
+MethodInvocation:unmodifiableMap

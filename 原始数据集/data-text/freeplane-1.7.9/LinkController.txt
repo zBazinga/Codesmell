@@ -1,0 +1,611 @@
+Class:LinkController
+Field:MENUITEM_SCHEME
+Field:EXECUTE_APP_SCHEME
+Method-name:getController
+Method-returnType:LinkController
+Method-parameters:[]
+MethodInvocation:getCurrentModeController
+MethodInvocation:getController
+Method-name:getController
+Method-returnType:LinkController
+Method-parameters:[ModeController modeController]
+MethodInvocation:getExtension
+Method-name:install
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:addConditionController
+MethodInvocation:getConditionFactory
+MethodInvocation:getCurrentFilterController
+Method-name:install
+Method-returnType:void
+Method-parameters:[final LinkController linkController]
+MethodInvocation:getCurrentModeController
+MethodInvocation:addExtension
+MethodInvocation:init
+Field:modeController
+Method-name:LinkController
+Method-returnType:null
+Method-parameters:[ModeController modeController]
+FieldAccess:modeController
+Field:FILE_PROTOCOL
+Method-name:toUri
+Method-returnType:URI
+Method-parameters:[Object object]
+MethodInvocation:getPath
+MethodInvocation:toURI
+MethodInvocation:startsWith
+MethodInvocation:createURI
+Method-name:init
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:createActions
+MethodInvocation:getMapController
+MethodInvocation:getReadManager
+MethodInvocation:registerBy
+MethodInvocation:addTextTransformer
+MethodInvocation:getController
+Method-name:onDeselect
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+Method-name:onSelect
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:getValidLink
+MethodInvocation:toString
+MethodInvocation:out
+MethodInvocation:getViewController
+MethodInvocation:getCurrentController
+MethodInvocation:addNodeSelectionListener
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+Method-name:addLinks
+Method-returnType:JButton
+Method-parameters:[final JComponent arrowLinkPopup, final NodeModel source]
+MethodInvocation:configureText
+MethodInvocation:addAction
+Method-name:addPopupComponent
+Method-returnType:void
+Method-parameters:[final JComponent arrowLinkPopup, final String label, final JComponent component]
+MethodInvocation:createHorizontalBox
+MethodInvocation:add
+MethodInvocation:createHorizontalStrut
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:createHorizontalStrut
+MethodInvocation:add
+MethodInvocation:setAlignmentX
+MethodInvocation:setMinimumSize
+MethodInvocation:setMaximumSize
+MethodInvocation:add
+Method-name:addClosingAction
+Method-returnType:void
+Method-parameters:[final JComponent arrowLinkPopup, Action action]
+MethodInvocation:addAction
+MethodInvocation:addActionListener
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[ActionEvent e]
+MethodInvocation:setVisible
+MethodInvocation:getWindowAncestor
+Method-name:addAction
+Method-returnType:JButton
+Method-parameters:[final JComponent arrowLinkPopup, Action action]
+MethodInvocation:setHorizontalAlignment
+MethodInvocation:addPopupComponent
+Method-name:createActions
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getCurrentModeController
+MethodInvocation:addAction
+MethodInvocation:addUiBuilder
+MethodInvocation:addUiBuilder
+Class:ClonesMenuBuilder
+Field:modeController
+Method-name:ClonesMenuBuilder
+Method-returnType:null
+Method-parameters:[ModeController modeController]
+FieldAccess:modeController
+Method-name:visit
+Method-returnType:void
+Method-parameters:[Entry target]
+MethodInvocation:getSelection
+MethodInvocation:getController
+MethodInvocation:getSelected
+MethodInvocation:getParentNode
+MethodInvocation:allClones
+MethodInvocation:equals
+MethodInvocation:getParentNode
+MethodInvocation:getSubtreeRoot
+MethodInvocation:configureText
+MethodInvocation:addChild
+MethodInvocation:setBuilders
+MethodInvocation:addActionIfNotAlreadySet
+MethodInvocation:addChildAction
+Method-name:shouldSkipChildren
+Method-returnType:boolean
+Method-parameters:[Entry entry]
+Class:ClosePopupAction
+Field:reason
+Method-name:ClosePopupAction
+Method-returnType:null
+Method-parameters:[String reason]
+FieldAccess:reason
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[ActionEvent e]
+MethodInvocation:getSource
+MethodInvocation:putClientProperty
+MethodInvocation:setVisible
+MethodInvocation:getWindowAncestor
+Field:CANCEL
+Field:CLOSE
+Method-name:createArrowLinkPopup
+Method-returnType:void
+Method-parameters:[final ConnectorModel link, final JComponent arrowLinkPopup]
+MethodInvocation:registerCloseActions
+MethodInvocation:getSource
+MethodInvocation:getTarget
+MethodInvocation:getSelection
+MethodInvocation:getController
+MethodInvocation:getCurrentModeController
+MethodInvocation:addLinks
+MethodInvocation:setEnabled
+MethodInvocation:isSelected
+MethodInvocation:addLinks
+MethodInvocation:setEnabled
+MethodInvocation:isSelected
+MethodInvocation:addActionListener
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[ActionEvent e]
+MethodInvocation:setEnabled
+MethodInvocation:setEnabled
+MethodInvocation:addActionListener
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[ActionEvent e]
+MethodInvocation:setEnabled
+MethodInvocation:setEnabled
+Method-name:registerCloseActions
+Method-returnType:void
+Method-parameters:[final JComponent arrowLinkPopup]
+MethodInvocation:addHierarchyListener
+Method-name:hierarchyChanged
+Method-returnType:void
+Method-parameters:[HierarchyEvent e]
+MethodInvocation:isDisplayable
+MethodInvocation:removeHierarchyListener
+MethodInvocation:getRootPane
+MethodInvocation:getInputMap
+MethodInvocation:getActionMap
+MethodInvocation:put
+MethodInvocation:getKeyStroke
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:getKeyStroke
+MethodInvocation:getBooleanProperty
+MethodInvocation:getResourceController
+MethodInvocation:put
+MethodInvocation:getKeyStroke
+MethodInvocation:put
+Method-name:getColor
+Method-returnType:Color
+Method-parameters:[final ConnectorModel model]
+MethodInvocation:getColor
+Method-name:getDash
+Method-returnType:int[]
+Method-parameters:[final ConnectorModel model]
+MethodInvocation:getDash
+Method-name:getLinkShortText
+Method-returnType:String
+Method-parameters:[final NodeModel node]
+MethodInvocation:getLink
+MethodInvocation:toString
+MethodInvocation:startsWith
+MethodInvocation:getCurrentModeController
+MethodInvocation:getExtension
+MethodInvocation:substring
+MethodInvocation:getNodeAt
+MethodInvocation:getShortPlainText
+MethodInvocation:getController
+MethodInvocation:format
+MethodInvocation:startsWith
+Method-name:hasNodeLinks
+Method-returnType:boolean
+Method-parameters:[MapModel map, JComponent component]
+MethodInvocation:getClientProperty
+MethodInvocation:hasLinks
+Method-name:getLinksTo
+Method-returnType:Collection<? extends NodeLinkModel>
+Method-parameters:[NodeModel node, Configurable component]
+MethodInvocation:getClientProperty
+MethodInvocation:getLinksTo
+MethodInvocation:getLinksTo
+Method-name:getLinksFrom
+Method-returnType:Collection<? extends NodeLinkModel>
+Method-parameters:[NodeModel node, Configurable component]
+MethodInvocation:getClientProperty
+MethodInvocation:getLinksFrom
+MethodInvocation:getLinksFrom
+Method-name:getLinksFrom
+Method-returnType:Collection<NodeLinkModel>
+Method-parameters:[NodeModel node]
+MethodInvocation:getLinks
+Method-name:getLinksTo
+Method-returnType:Collection<NodeLinkModel>
+Method-parameters:[final NodeModel target]
+MethodInvocation:hasID
+MethodInvocation:emptySet
+MethodInvocation:getExtension
+MethodInvocation:getMap
+MethodInvocation:emptySet
+MethodInvocation:subtreeClones
+MethodInvocation:get
+MethodInvocation:createID
+MethodInvocation:size
+MethodInvocation:subtreeClones
+MethodInvocation:clones
+MethodInvocation:equals
+MethodInvocation:getTarget
+MethodInvocation:add
+MethodInvocation:emptySet
+Method-name:getPopupForModel
+Method-returnType:Component
+Method-parameters:[final java.lang.Object obj]
+MethodInvocation:createVerticalBox
+MethodInvocation:setName
+MethodInvocation:getText
+MethodInvocation:createArrowLinkPopup
+Field:RESOURCES_LINK_COLOR
+Field:RESOURCES_CONNECTOR_SHAPE
+Field:RESOURCES_CONNECTOR_ARROWS
+Field:RESOURCES_DASH_VARIANT
+Field:RESOURCES_CONNECTOR_COLOR_ALPHA
+Field:RESOURCES_CONNECTOR_WIDTH
+Method-name:getWidth
+Method-returnType:int
+Method-parameters:[final ConnectorModel model]
+MethodInvocation:getWidth
+Method-name:loadLink
+Method-returnType:void
+Method-parameters:[final NodeModel node, String link]
+MethodInvocation:getLinkExtension
+MethodInvocation:createLinkExtension
+MethodInvocation:startsWith
+MethodInvocation:setLocalHyperlink
+MethodInvocation:substring
+MethodInvocation:startsWith
+MethodInvocation:endsWith
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:createURI
+MethodInvocation:setHyperLink
+MethodInvocation:warn
+MethodInvocation:errorMessage
+MethodInvocation:format
+Method-name:loadLinkFormat
+Method-returnType:void
+Method-parameters:[NodeModel node, boolean enabled]
+MethodInvocation:setFormatNodeAsHyperlink
+MethodInvocation:createLinkExtension
+Method-name:loadURL
+Method-returnType:void
+Method-parameters:[final NodeModel node, final MouseEvent e]
+MethodInvocation:loadURL
+MethodInvocation:getSource
+MethodInvocation:getID
+Method-name:loadURL
+Method-returnType:void
+Method-parameters:[final MouseEvent e]
+MethodInvocation:getCurrentModeController
+MethodInvocation:loadURL
+MethodInvocation:getSelectedNode
+MethodInvocation:getMapController
+Method-name:loadURI
+Method-returnType:void
+Method-parameters:[URI uri]
+MethodInvocation:loadURL
+MethodInvocation:getController
+Method-name:loadMap
+Method-returnType:void
+Method-parameters:[String map]
+MethodInvocation:loadMap
+MethodInvocation:getController
+Method-name:loadURL
+Method-returnType:void
+Method-parameters:[final NodeModel selectedNode, final ActionEvent e]
+MethodInvocation:loadURL
+MethodInvocation:getValidLink
+Method-name:loadURL
+Method-returnType:void
+Method-parameters:[final NodeModel selectedNode, final ActionEvent e, final URI link]
+MethodInvocation:onDeselect
+MethodInvocation:getCurrentModeController
+MethodInvocation:isMenuItemLink
+MethodInvocation:parseSpecialLink
+MethodInvocation:getAction
+MethodInvocation:actionPerformed
+MethodInvocation:warn
+MethodInvocation:isSpecialLink
+MethodInvocation:parseSpecialLink
+MethodInvocation:out
+MethodInvocation:getViewController
+MethodInvocation:getCurrentController
+MethodInvocation:exec
+MethodInvocation:getRuntime
+MethodInvocation:loadURI
+MethodInvocation:getSelection
+MethodInvocation:getController
+MethodInvocation:onSelect
+MethodInvocation:getSelected
+Method-name:getLinkType
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:linkType
+MethodInvocation:getController
+Field:LINK_ABSOLUTE
+Field:LINK_RELATIVE_TO_MINDMAP
+Method-name:linkType
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getProperty
+MethodInvocation:getResourceController
+MethodInvocation:equals
+Method-name:toLinkTypeDependantURI
+Method-returnType:URI
+Method-parameters:[final File map, final File input]
+MethodInvocation:getLinkType
+MethodInvocation:toURI
+MethodInvocation:getAbsoluteFile
+MethodInvocation:toRelativeURI
+Method-name:toLinkTypeDependantURI
+Method-returnType:URI
+Method-parameters:[final File map, final File input, final int linkType]
+MethodInvocation:toRelativeURI
+Method-name:toRelativeURI
+Method-returnType:URI
+Method-parameters:[final File map, final File input, final int linkType]
+MethodInvocation:createRelativeURI
+MethodInvocation:getController
+Method-name:normalizeURI
+Method-returnType:URI
+Method-parameters:[URI uri]
+MethodInvocation:normalize
+MethodInvocation:getPath
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getScheme
+MethodInvocation:getPath
+MethodInvocation:startsWith
+MethodInvocation:getPath
+MethodInvocation:startsWith
+MethodInvocation:getScheme
+MethodInvocation:ensureUNCPath
+MethodInvocation:getSchemeSpecificPart
+MethodInvocation:getFragment
+MethodInvocation:warn
+Method-name:ensureUNCPath
+Method-returnType:String
+Method-parameters:[String path]
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:createRelativeURI
+Method-returnType:URI
+Method-parameters:[final File mapFile, final File target, final int linkType]
+MethodInvocation:toURI
+MethodInvocation:getAbsoluteFile
+MethodInvocation:createRelativeURI
+Method-name:createRelativeURI
+Method-returnType:URI
+Method-parameters:[final File mapFile, final URI targetUri]
+MethodInvocation:toURI
+MethodInvocation:getAbsoluteFile
+MethodInvocation:createRelativeURI
+Method-name:createRelativeURI
+Method-returnType:URI
+Method-parameters:[URI mapUri, final URI targetUri]
+MethodInvocation:startsWith
+MethodInvocation:getPath
+MethodInvocation:startsWith
+MethodInvocation:getPath
+MethodInvocation:getRawPath
+MethodInvocation:getRawPath
+MethodInvocation:lastIndexOf
+MethodInvocation:lastIndexOf
+MethodInvocation:charAt
+MethodInvocation:charAt
+MethodInvocation:charAt
+MethodInvocation:charAt
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:substring
+MethodInvocation:getRawFragment
+MethodInvocation:append
+MethodInvocation:toString
+Field:patSMB
+MethodInvocation:compile
+Field:patFile
+MethodInvocation:compile
+Field:patURI
+MethodInvocation:compile
+Method-name:createURI
+Method-returnType:URI
+Method-parameters:[final String inputValue]
+MethodInvocation:matcher
+MethodInvocation:matches
+MethodInvocation:group
+MethodInvocation:replace
+MethodInvocation:group
+MethodInvocation:group
+MethodInvocation:matcher
+MethodInvocation:matches
+MethodInvocation:group
+MethodInvocation:replace
+MethodInvocation:group
+MethodInvocation:group
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+MethodInvocation:matcher
+MethodInvocation:matches
+MethodInvocation:group
+MethodInvocation:replace
+MethodInvocation:group
+MethodInvocation:group
+Field:urlPattern
+MethodInvocation:compile
+Field:mailPattern
+MethodInvocation:compile
+Field:menuItemCache
+Method-name:findLink
+Method-returnType:String
+Method-parameters:[final String text]
+MethodInvocation:matcher
+MethodInvocation:find
+MethodInvocation:group
+MethodInvocation:toURI
+MethodInvocation:matcher
+MethodInvocation:find
+MethodInvocation:group
+Method-name:createMenuItemLink
+Method-returnType:URI
+Method-parameters:[final String content]
+MethodInvocation:createItemLink
+Method-name:createItemLink
+Method-returnType:URI
+Method-parameters:[final String scheme, final String content]
+Method-name:isMenuItemLink
+Method-returnType:boolean
+Method-parameters:[final URI uri]
+MethodInvocation:isSpecialLink
+Method-name:isSpecialLink
+Method-returnType:boolean
+Method-parameters:[final String requiredScheme, final URI uri]
+MethodInvocation:getScheme
+MethodInvocation:equals
+Method-name:parseSpecialLink
+Method-returnType:String
+Method-parameters:[final URI uri]
+MethodInvocation:convertPre15VersionStyleKeysToCurrent
+MethodInvocation:substring
+MethodInvocation:getSchemeSpecificPart
+Method-name:convertPre15VersionStyleKeysToCurrent
+Method-returnType:String
+Method-parameters:[final String actionKey]
+MethodInvocation:startsWith
+MethodInvocation:replaceFirst
+Method-name:getStandardConnectorWidth
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getProperty
+MethodInvocation:getResourceController
+MethodInvocation:valueOf
+Method-name:getStandardConnectorColor
+Method-returnType:Color
+Method-parameters:[]
+MethodInvocation:getProperty
+MethodInvocation:getResourceController
+MethodInvocation:stringToColor
+Method-name:getStandardConnectorArrows
+Method-returnType:ConnectorArrows
+Method-parameters:[]
+MethodInvocation:getProperty
+MethodInvocation:getResourceController
+MethodInvocation:valueOf
+Method-name:getStandardDashVariant
+Method-returnType:DashVariant
+Method-parameters:[]
+MethodInvocation:getProperty
+MethodInvocation:getResourceController
+MethodInvocation:valueOf
+Method-name:getStandardConnectorShape
+Method-returnType:Shape
+Method-parameters:[]
+MethodInvocation:getProperty
+MethodInvocation:getResourceController
+MethodInvocation:valueOf
+Method-name:getStandardConnectorAlpha
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getProperty
+MethodInvocation:getResourceController
+MethodInvocation:valueOf
+Method-name:getAlpha
+Method-returnType:int
+Method-parameters:[ConnectorModel connectorModel]
+MethodInvocation:getAlpha
+Method-name:getStandardLabelFontSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getIntProperty
+MethodInvocation:getResourceController
+Method-name:getStandardLabelFontFamily
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getProperty
+MethodInvocation:getResourceController
+Field:MENUITEM_ICON
+Field:EXECUTABLE_ICON
+Field:LINK_ICON
+Field:MAIL_ICON
+Field:LINK_LOCAL_ICON
+Field:LinkType
+Method-name:LinkType
+Method-returnType:null
+Method-parameters:[String iconKey]
+FieldAccess:icon
+MethodInvocation:getIcon
+MethodInvocation:getResourceController
+Field:icon
+Method-name:getLinkIcon
+Method-returnType:Icon
+Method-parameters:[final URI link, final NodeModel model]
+MethodInvocation:getLinkType
+MethodInvocation:equals
+MethodInvocation:parseSpecialLink
+MethodInvocation:get
+MethodInvocation:getMenuItemIcon
+MethodInvocation:put
+MethodInvocation:formatNodeAsHyperlink
+Method-name:getLinkType
+Method-returnType:LinkType
+Method-parameters:[final URI link, final NodeModel model]
+MethodInvocation:toString
+MethodInvocation:startsWith
+MethodInvocation:substring
+MethodInvocation:startsWith
+MethodInvocation:getNodeForID
+MethodInvocation:getMap
+MethodInvocation:startsWith
+MethodInvocation:isMenuItemLink
+MethodInvocation:isSpecialLink
+MethodInvocation:isWindowsExecutable
+Method-name:formatNodeAsHyperlink
+Method-returnType:boolean
+Method-parameters:[final NodeModel node]
+MethodInvocation:getText
+MethodInvocation:isEmpty
+MethodInvocation:isHtmlNode
+MethodInvocation:ownFormatNodeAsHyperlink
+MethodInvocation:getStyles
+MethodInvocation:getController
+MethodInvocation:getExtension
+MethodInvocation:getMap
+MethodInvocation:getStyleNode
+MethodInvocation:ownFormatNodeAsHyperlink
+Method-name:ownFormatNodeAsHyperlink
+Method-returnType:Boolean
+Method-parameters:[final NodeModel node]
+MethodInvocation:getLinkExtension
+MethodInvocation:formatNodeAsHyperlink
+Method-name:loadURI
+Method-returnType:void
+Method-parameters:[NodeModel node, URI uri]
+MethodInvocation:toString
+MethodInvocation:startsWith
+MethodInvocation:selectNode
+MethodInvocation:getController
+MethodInvocation:substring
+MethodInvocation:loadURI

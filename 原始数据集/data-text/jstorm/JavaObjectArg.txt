@@ -1,0 +1,310 @@
+Class:JavaObjectArg
+Field:STRUCT_DESC
+Field:INT_ARG_FIELD_DESC
+Field:LONG_ARG_FIELD_DESC
+Field:STRING_ARG_FIELD_DESC
+Field:BOOL_ARG_FIELD_DESC
+Field:BINARY_ARG_FIELD_DESC
+Field:DOUBLE_ARG_FIELD_DESC
+Method-name:add_to_args_list
+Method-returnType:void
+Method-parameters:[JavaObject javaObject]
+MethodInvocation:get_args_list
+MethodInvocation:set_args_list
+MethodInvocation:add
+MethodInvocation:get_args_list
+Field:_Fields
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:JavaObjectArg
+Method-returnType:null
+Method-parameters:[]
+Method-name:JavaObjectArg
+Method-returnType:null
+Method-parameters:[_Fields setField, Object value]
+Method-name:JavaObjectArg
+Method-returnType:null
+Method-parameters:[JavaObjectArg other]
+Method-name:deepCopy
+Method-returnType:JavaObjectArg
+Method-parameters:[]
+Method-name:int_arg
+Method-returnType:JavaObjectArg
+Method-parameters:[int value]
+MethodInvocation:set_int_arg
+Method-name:long_arg
+Method-returnType:JavaObjectArg
+Method-parameters:[long value]
+MethodInvocation:set_long_arg
+Method-name:string_arg
+Method-returnType:JavaObjectArg
+Method-parameters:[String value]
+MethodInvocation:set_string_arg
+Method-name:bool_arg
+Method-returnType:JavaObjectArg
+Method-parameters:[boolean value]
+MethodInvocation:set_bool_arg
+Method-name:binary_arg
+Method-returnType:JavaObjectArg
+Method-parameters:[ByteBuffer value]
+MethodInvocation:set_binary_arg
+Method-name:binary_arg
+Method-returnType:JavaObjectArg
+Method-parameters:[byte[] value]
+MethodInvocation:set_binary_arg
+MethodInvocation:wrap
+MethodInvocation:copyOf
+Method-name:double_arg
+Method-returnType:JavaObjectArg
+Method-parameters:[double value]
+MethodInvocation:set_double_arg
+Method-name:checkType
+Method-returnType:void
+Method-parameters:[_Fields setField, Object value]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:standardSchemeReadValue
+Method-returnType:Object
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, org.apache.thrift.protocol.TField field]
+MethodInvocation:findByThriftId
+MethodInvocation:readI32
+MethodInvocation:skip
+MethodInvocation:readI64
+MethodInvocation:skip
+MethodInvocation:readString
+MethodInvocation:skip
+MethodInvocation:readBool
+MethodInvocation:skip
+MethodInvocation:readBinary
+MethodInvocation:skip
+MethodInvocation:readDouble
+MethodInvocation:skip
+MethodInvocation:skip
+Method-name:standardSchemeWriteValue
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:writeI32
+MethodInvocation:writeI64
+MethodInvocation:writeString
+MethodInvocation:writeBool
+MethodInvocation:writeBinary
+MethodInvocation:writeDouble
+Method-name:tupleSchemeReadValue
+Method-returnType:Object
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, short fieldID]
+MethodInvocation:findByThriftId
+MethodInvocation:readI32
+MethodInvocation:readI64
+MethodInvocation:readString
+MethodInvocation:readBool
+MethodInvocation:readBinary
+MethodInvocation:readDouble
+Method-name:tupleSchemeWriteValue
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:writeI32
+MethodInvocation:writeI64
+MethodInvocation:writeString
+MethodInvocation:writeBool
+MethodInvocation:writeBinary
+MethodInvocation:writeDouble
+Method-name:getFieldDesc
+Method-returnType:org.apache.thrift.protocol.TField
+Method-parameters:[_Fields setField]
+Method-name:getStructDesc
+Method-returnType:org.apache.thrift.protocol.TStruct
+Method-parameters:[]
+Method-name:enumForId
+Method-returnType:_Fields
+Method-parameters:[short id]
+MethodInvocation:findByThriftIdOrThrow
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:get_int_arg
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_int_arg
+Method-returnType:void
+Method-parameters:[int value]
+Method-name:get_long_arg
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_long_arg
+Method-returnType:void
+Method-parameters:[long value]
+Method-name:get_string_arg
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_string_arg
+Method-returnType:void
+Method-parameters:[String value]
+Method-name:get_bool_arg
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_bool_arg
+Method-returnType:void
+Method-parameters:[boolean value]
+Method-name:get_binary_arg
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:set_binary_arg
+MethodInvocation:rightSize
+MethodInvocation:buffer_for_binary_arg
+MethodInvocation:buffer_for_binary_arg
+MethodInvocation:array
+Method-name:buffer_for_binary_arg
+Method-returnType:ByteBuffer
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:copyBinary
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_binary_arg
+Method-returnType:void
+Method-parameters:[byte[] value]
+MethodInvocation:set_binary_arg
+MethodInvocation:wrap
+MethodInvocation:copyOf
+Method-name:set_binary_arg
+Method-returnType:void
+Method-parameters:[ByteBuffer value]
+Method-name:get_double_arg
+Method-returnType:double
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:set_double_arg
+Method-returnType:void
+Method-parameters:[double value]
+Method-name:is_set_int_arg
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_long_arg
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_string_arg
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_bool_arg
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_binary_arg
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:is_set_double_arg
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[JavaObjectArg other]
+MethodInvocation:getSetField
+MethodInvocation:getSetField
+MethodInvocation:equals
+MethodInvocation:getFieldValue
+MethodInvocation:getFieldValue
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[JavaObjectArg other]
+MethodInvocation:compareTo
+MethodInvocation:getSetField
+MethodInvocation:getSetField
+MethodInvocation:compareTo
+MethodInvocation:getFieldValue
+MethodInvocation:getFieldValue
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getSetField
+MethodInvocation:add
+MethodInvocation:getThriftFieldId
+MethodInvocation:getFieldValue
+MethodInvocation:add
+MethodInvocation:getValue
+MethodInvocation:getFieldValue
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read

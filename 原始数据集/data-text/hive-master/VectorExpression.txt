@@ -1,0 +1,157 @@
+Class:VectorExpression
+Field:serialVersionUID
+Field:childExpressions
+Field:inputTypeInfos
+Field:inputDataTypePhysicalVariations
+Field:outputColumnNum
+Field:outputTypeInfo
+Field:outputDataTypePhysicalVariation
+Method-name:VectorExpression
+Method-returnType:null
+Method-parameters:[]
+Method-name:VectorExpression
+Method-returnType:null
+Method-parameters:[int outputColumnNum]
+FieldAccess:outputColumnNum
+Method-name:setChildExpressions
+Method-returnType:void
+Method-parameters:[VectorExpression[] childExpressions]
+FieldAccess:childExpressions
+Method-name:getChildExpressions
+Method-returnType:VectorExpression[]
+Method-parameters:[]
+Method-name:setInputTypeInfos
+Method-returnType:void
+Method-parameters:[TypeInfo... inputTypeInfos]
+FieldAccess:inputTypeInfos
+Method-name:getInputTypeInfos
+Method-returnType:TypeInfo[]
+Method-parameters:[]
+Method-name:setInputDataTypePhysicalVariations
+Method-returnType:void
+Method-parameters:[DataTypePhysicalVariation... inputDataTypePhysicalVariations]
+FieldAccess:inputDataTypePhysicalVariations
+Method-name:getInputDataTypePhysicalVariations
+Method-returnType:DataTypePhysicalVariation[]
+Method-parameters:[]
+Method-name:vectorExpressionParameters
+Method-returnType:String
+Method-parameters:[]
+Method-name:transientInit
+Method-returnType:void
+Method-parameters:[Configuration conf]
+Method-name:doTransientInit
+Method-returnType:void
+Method-parameters:[VectorExpression vecExpr, Configuration conf]
+MethodInvocation:doTransientInitRecurse
+Method-name:doTransientInit
+Method-returnType:void
+Method-parameters:[VectorExpression[] vecExprs, Configuration conf]
+MethodInvocation:doTransientInitRecurse
+Method-name:doTransientInitRecurse
+Method-returnType:void
+Method-parameters:[VectorExpression vecExpr, Configuration conf]
+MethodInvocation:transientInit
+MethodInvocation:getChildExpressions
+MethodInvocation:addAll
+MethodInvocation:isEmpty
+MethodInvocation:remove
+MethodInvocation:getChildExpressions
+MethodInvocation:addAll
+MethodInvocation:transientInit
+Method-name:getOutputColumnNum
+Method-returnType:int
+Method-parameters:[]
+Method-name:getOutputTypeInfo
+Method-returnType:TypeInfo
+Method-parameters:[]
+Method-name:setOutputTypeInfo
+Method-returnType:void
+Method-parameters:[TypeInfo outputTypeInfo]
+FieldAccess:outputTypeInfo
+Method-name:setOutputDataTypePhysicalVariation
+Method-returnType:void
+Method-parameters:[DataTypePhysicalVariation outputDataTypePhysicalVariation]
+FieldAccess:outputDataTypePhysicalVariation
+Method-name:getOutputDataTypePhysicalVariation
+Method-returnType:DataTypePhysicalVariation
+Method-parameters:[]
+Method-name:getOutputColumnVectorType
+Method-returnType:ColumnVector.Type
+Method-parameters:[]
+MethodInvocation:getColumnVectorTypeFromTypeInfo
+Method-name:evaluate
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch batch]
+Method-name:init
+Method-returnType:void
+Method-parameters:[Configuration conf]
+MethodInvocation:init
+Method-name:getDescriptor
+Method-returnType:VectorExpressionDescriptor.Descriptor
+Method-parameters:[]
+Method-name:evaluateChildren
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch vrg]
+MethodInvocation:evaluate
+Method-name:getColumnParamString
+Method-returnType:String
+Method-parameters:[int typeNum, int columnNum]
+MethodInvocation:getParamTypeString
+Method-name:getLongValueParamString
+Method-returnType:String
+Method-parameters:[int typeNum, long value]
+MethodInvocation:getParamTypeString
+Method-name:getDoubleValueParamString
+Method-returnType:String
+Method-parameters:[int typeNum, double value]
+MethodInvocation:getParamTypeString
+Method-name:getParamTypeString
+Method-returnType:String
+Method-parameters:[int typeNum]
+MethodInvocation:getTypeName
+Method-name:getTypeName
+Method-returnType:String
+Method-parameters:[TypeInfo typeInfo, DataTypePhysicalVariation dataTypePhysicalVariation]
+MethodInvocation:toString
+MethodInvocation:toString
+Method-name:supportsCheckedExecution
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:vectorExpressionParameters
+MethodInvocation:append
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:vectorExpressionParameters
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getTypeName
+MethodInvocation:toString
+Method-name:displayUtf8Bytes
+Method-returnType:String
+Method-parameters:[byte[] bytes]
+Method-name:displayArrayOfUtf8ByteArrays
+Method-returnType:String
+Method-parameters:[byte[][] arrayOfByteArrays]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:displayUtf8Bytes
+MethodInvocation:toString
+Method-name:conditionalEvaluate
+Method-returnType:void
+Method-parameters:[VectorizedRowBatch batch, int[] condSelected, int condSize, IfExprCondExprBase ifExprCondExprBase]
+MethodInvocation:evaluate

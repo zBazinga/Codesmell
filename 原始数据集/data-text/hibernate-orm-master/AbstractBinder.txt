@@ -1,0 +1,76 @@
+Class:AbstractBinder
+Field:log
+MethodInvocation:getLogger
+Field:xmlResourceResolver
+Field:validateXml
+Method-name:AbstractBinder
+Method-returnType:null
+Method-parameters:[ClassLoaderService classLoaderService]
+Method-name:AbstractBinder
+Method-returnType:null
+Method-parameters:[ClassLoaderService classLoaderService, boolean validateXml]
+FieldAccess:xmlResourceResolver
+FieldAccess:validateXml
+Method-name:isValidationEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:bind
+Method-returnType:Binding
+Method-parameters:[InputStream stream, Origin origin]
+MethodInvocation:createReader
+MethodInvocation:doBind
+MethodInvocation:close
+MethodInvocation:debug
+Method-name:createReader
+Method-returnType:XMLEventReader
+Method-parameters:[InputStream stream, Origin origin]
+MethodInvocation:createXMLEventReader
+MethodInvocation:staxFactory
+Method-name:bind
+Method-returnType:Binding
+Method-parameters:[Source source, Origin origin]
+MethodInvocation:createReader
+MethodInvocation:doBind
+Method-name:createReader
+Method-returnType:XMLEventReader
+Method-parameters:[Source source, Origin origin]
+MethodInvocation:createXMLEventReader
+MethodInvocation:staxFactory
+Method-name:doBind
+Method-returnType:Binding
+Method-parameters:[XMLEventReader eventReader, Origin origin]
+MethodInvocation:seekRootElementStartEvent
+MethodInvocation:doBind
+MethodInvocation:close
+MethodInvocation:debug
+Field:staxFactory
+Method-name:staxFactory
+Method-returnType:XMLInputFactory
+Method-parameters:[]
+MethodInvocation:buildStaxFactory
+Method-name:buildStaxFactory
+Method-returnType:XMLInputFactory
+Method-parameters:[]
+MethodInvocation:newInstance
+MethodInvocation:setXMLResolver
+Method-name:doBind
+Method-returnType:Binding
+Method-parameters:[XMLEventReader staxEventReader, StartElement rootElementStartEvent, Origin origin]
+Method-name:hasNamespace
+Method-returnType:boolean
+Method-parameters:[StartElement startElement]
+MethodInvocation:equals
+MethodInvocation:getNamespaceURI
+MethodInvocation:getName
+Method-name:jaxb
+Method-returnType:T
+Method-parameters:[XMLEventReader reader, Schema xsd, JAXBContext jaxbContext, Origin origin]
+MethodInvocation:createUnmarshaller
+MethodInvocation:isValidationEnabled
+MethodInvocation:setSchema
+MethodInvocation:setSchema
+MethodInvocation:setEventHandler
+MethodInvocation:unmarshal
+MethodInvocation:getLineNumber
+MethodInvocation:getColumnNumber
+MethodInvocation:getMessage

@@ -1,0 +1,378 @@
+Class:SyncedFlushService
+Field:logger
+MethodInvocation:getLogger
+Field:PRE_SYNCED_FLUSH_ACTION_NAME
+Field:SYNCED_FLUSH_ACTION_NAME
+Field:IN_FLIGHT_OPS_ACTION_NAME
+Field:indicesService
+Field:clusterService
+Field:transportService
+Field:indexNameExpressionResolver
+Method-name:SyncedFlushService
+Method-returnType:null
+Method-parameters:[IndicesService indicesService, ClusterService clusterService, TransportService transportService, IndexNameExpressionResolver indexNameExpressionResolver]
+FieldAccess:indicesService
+FieldAccess:clusterService
+FieldAccess:transportService
+FieldAccess:indexNameExpressionResolver
+MethodInvocation:registerRequestHandler
+MethodInvocation:registerRequestHandler
+MethodInvocation:registerRequestHandler
+Method-name:onShardInactive
+Method-returnType:void
+Method-parameters:[final IndexShard indexShard]
+MethodInvocation:primary
+MethodInvocation:routingEntry
+MethodInvocation:attemptSyncedFlush
+MethodInvocation:shardId
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[ShardsSyncedFlushResult syncedFlushResult]
+MethodInvocation:trace
+MethodInvocation:getShardId
+MethodInvocation:syncId
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:debug
+MethodInvocation:shardId
+Method-name:attemptSyncedFlush
+Method-returnType:void
+Method-parameters:[final String[] aliasesOrIndices, IndicesOptions indicesOptions, final ActionListener<SyncedFlushResponse> listener]
+MethodInvocation:state
+MethodInvocation:concreteIndices
+MethodInvocation:newConcurrentMap
+MethodInvocation:getIndexSafe
+MethodInvocation:metaData
+MethodInvocation:getNumberOfShards
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:synchronizedList
+MethodInvocation:onResponse
+MethodInvocation:getName
+MethodInvocation:getIndexSafe
+MethodInvocation:metaData
+MethodInvocation:getNumberOfShards
+MethodInvocation:getIndex
+MethodInvocation:innerAttemptSyncedFlush
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[ShardsSyncedFlushResult syncedFlushResult]
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:countDown
+MethodInvocation:onResponse
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:debug
+MethodInvocation:getNumberOfReplicas
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:getMessage
+MethodInvocation:countDown
+MethodInvocation:onResponse
+Method-name:attemptSyncedFlush
+Method-returnType:void
+Method-parameters:[final ShardId shardId, final ActionListener<ShardsSyncedFlushResult> actionListener]
+MethodInvocation:innerAttemptSyncedFlush
+MethodInvocation:state
+Method-name:innerAttemptSyncedFlush
+Method-returnType:void
+Method-parameters:[final ShardId shardId, final ClusterState state, final ActionListener<ShardsSyncedFlushResult> actionListener]
+Method-name:sharedExistingSyncId
+Method-returnType:String
+Method-parameters:[Map<String,PreSyncedFlushResponse> preSyncedFlushResponses]
+MethodInvocation:values
+MethodInvocation:isNullOrEmpty
+MethodInvocation:equals
+Method-name:reportSuccessWithExistingSyncId
+Method-returnType:void
+Method-parameters:[ShardId shardId, String existingSyncId, List<ShardRouting> shards, int totalShards, Map<String,PreSyncedFlushResponse> preSyncResponses, ActionListener<ShardsSyncedFlushResult> listener]
+MethodInvocation:containsKey
+MethodInvocation:currentNodeId
+MethodInvocation:put
+MethodInvocation:onResponse
+Method-name:getShardRoutingTable
+Method-returnType:IndexShardRoutingTable
+Method-parameters:[ShardId shardId, ClusterState state]
+MethodInvocation:index
+MethodInvocation:routingTable
+MethodInvocation:getIndexName
+MethodInvocation:index
+MethodInvocation:getMetaData
+MethodInvocation:getIndex
+MethodInvocation:getState
+MethodInvocation:getIndex
+MethodInvocation:getIndexName
+MethodInvocation:shard
+MethodInvocation:id
+Method-name:getInflightOpsCount
+Method-returnType:void
+Method-parameters:[final ShardId shardId, ClusterState state, IndexShardRoutingTable shardRoutingTable, final ActionListener<InFlightOpsResponse> listener]
+MethodInvocation:primaryShard
+MethodInvocation:get
+MethodInvocation:nodes
+MethodInvocation:currentNodeId
+MethodInvocation:trace
+MethodInvocation:onResponse
+MethodInvocation:trace
+MethodInvocation:sendRequest
+Method-name:newInstance
+Method-returnType:InFlightOpsResponse
+Method-parameters:[]
+Method-name:handleResponse
+Method-returnType:void
+Method-parameters:[InFlightOpsResponse response]
+MethodInvocation:onResponse
+Method-name:handleException
+Method-returnType:void
+Method-parameters:[TransportException exp]
+MethodInvocation:debug
+MethodInvocation:onFailure
+Method-name:executor
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:onFailure
+Method-name:numDocsOnPrimary
+Method-returnType:int
+Method-parameters:[List<ShardRouting> shards, Map<String,PreSyncedFlushResponse> preSyncResponses]
+MethodInvocation:primary
+MethodInvocation:get
+MethodInvocation:currentNodeId
+Method-name:sendSyncRequests
+Method-returnType:void
+Method-parameters:[final String syncId, final List<ShardRouting> shards, ClusterState state, Map<String,PreSyncedFlushResponse> preSyncResponses, final ShardId shardId, final int totalShards, final ActionListener<ShardsSyncedFlushResult> listener]
+Method-name:sendPreSyncRequests
+Method-returnType:void
+Method-parameters:[final List<ShardRouting> shards, final ClusterState state, final ShardId shardId, final ActionListener<Map<String,PreSyncedFlushResponse>> listener]
+Method-name:performPreSyncedFlush
+Method-returnType:PreSyncedFlushResponse
+Method-parameters:[PreShardSyncedFlushRequest request]
+MethodInvocation:getShard
+MethodInvocation:indexServiceSafe
+MethodInvocation:getIndex
+MethodInvocation:shardId
+MethodInvocation:id
+MethodInvocation:shardId
+MethodInvocation:waitIfOngoing
+MethodInvocation:force
+MethodInvocation:trace
+MethodInvocation:shardId
+MethodInvocation:flush
+MethodInvocation:commitStats
+MethodInvocation:getRawCommitId
+MethodInvocation:trace
+MethodInvocation:shardId
+MethodInvocation:getNumDocs
+MethodInvocation:getNumDocs
+MethodInvocation:syncId
+Method-name:performSyncedFlush
+Method-returnType:ShardSyncedFlushResponse
+Method-parameters:[ShardSyncedFlushRequest request]
+MethodInvocation:indexServiceSafe
+MethodInvocation:getIndex
+MethodInvocation:shardId
+MethodInvocation:getShard
+MethodInvocation:id
+MethodInvocation:shardId
+MethodInvocation:trace
+MethodInvocation:shardId
+MethodInvocation:syncId
+MethodInvocation:expectedCommitId
+MethodInvocation:syncFlush
+MethodInvocation:syncId
+MethodInvocation:expectedCommitId
+MethodInvocation:trace
+MethodInvocation:shardId
+MethodInvocation:syncId
+Method-name:performInFlightOps
+Method-returnType:InFlightOpsResponse
+Method-parameters:[InFlightOpsRequest request]
+MethodInvocation:indexServiceSafe
+MethodInvocation:getIndex
+MethodInvocation:shardId
+MethodInvocation:getShard
+MethodInvocation:id
+MethodInvocation:shardId
+MethodInvocation:primary
+MethodInvocation:routingEntry
+MethodInvocation:shardId
+MethodInvocation:getActiveOperationsCount
+Class:PreShardSyncedFlushRequest
+Field:shardId
+Method-name:PreShardSyncedFlushRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:PreShardSyncedFlushRequest
+Method-returnType:null
+Method-parameters:[ShardId shardId]
+FieldAccess:shardId
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeTo
+Method-name:readFrom
+Method-returnType:void
+Method-parameters:[StreamInput in]
+FieldAccess:shardId
+Method-name:shardId
+Method-returnType:ShardId
+Method-parameters:[]
+Class:PreSyncedFlushResponse
+Field:UNKNOWN_NUM_DOCS
+Field:commitId
+Field:numDocs
+Field:existingSyncId
+Method-name:PreSyncedFlushResponse
+Method-returnType:null
+Method-parameters:[]
+Method-name:PreSyncedFlushResponse
+Method-returnType:null
+Method-parameters:[Engine.CommitId commitId, int numDocs, String existingSyncId]
+FieldAccess:commitId
+FieldAccess:numDocs
+FieldAccess:existingSyncId
+Method-name:readFrom
+Method-returnType:void
+Method-parameters:[StreamInput in]
+MethodInvocation:readInt
+MethodInvocation:readOptionalString
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeTo
+MethodInvocation:writeInt
+MethodInvocation:writeOptionalString
+Class:ShardSyncedFlushRequest
+Field:syncId
+Field:expectedCommitId
+Field:shardId
+Method-name:ShardSyncedFlushRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:ShardSyncedFlushRequest
+Method-returnType:null
+Method-parameters:[ShardId shardId, String syncId, Engine.CommitId expectedCommitId]
+FieldAccess:expectedCommitId
+FieldAccess:shardId
+FieldAccess:syncId
+Method-name:readFrom
+Method-returnType:void
+Method-parameters:[StreamInput in]
+MethodInvocation:readString
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeTo
+MethodInvocation:writeTo
+MethodInvocation:writeString
+Method-name:shardId
+Method-returnType:ShardId
+Method-parameters:[]
+Method-name:syncId
+Method-returnType:String
+Method-parameters:[]
+Method-name:expectedCommitId
+Method-returnType:Engine.CommitId
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Class:ShardSyncedFlushResponse
+Field:failureReason
+Method-name:ShardSyncedFlushResponse
+Method-returnType:null
+Method-parameters:[]
+Method-name:ShardSyncedFlushResponse
+Method-returnType:null
+Method-parameters:[String failureReason]
+FieldAccess:failureReason
+Method-name:readFrom
+Method-returnType:void
+Method-parameters:[StreamInput in]
+MethodInvocation:readOptionalString
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeOptionalString
+Method-name:success
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:failureReason
+Method-returnType:String
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:success
+Method-name:readSyncedFlushResponse
+Method-returnType:ShardSyncedFlushResponse
+Method-parameters:[StreamInput in]
+MethodInvocation:readFrom
+Class:InFlightOpsRequest
+Field:shardId
+Method-name:InFlightOpsRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:InFlightOpsRequest
+Method-returnType:null
+Method-parameters:[ShardId shardId]
+FieldAccess:shardId
+Method-name:readFrom
+Method-returnType:void
+Method-parameters:[StreamInput in]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeTo
+Method-name:shardId
+Method-returnType:ShardId
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Class:InFlightOpsResponse
+Field:opCount
+Method-name:InFlightOpsResponse
+Method-returnType:null
+Method-parameters:[]
+Method-name:InFlightOpsResponse
+Method-returnType:null
+Method-parameters:[int opCount]
+FieldAccess:opCount
+Method-name:readFrom
+Method-returnType:void
+Method-parameters:[StreamInput in]
+MethodInvocation:readVInt
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeVInt
+Method-name:opCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Class:PreSyncedFlushTransportHandler
+Method-name:messageReceived
+Method-returnType:void
+Method-parameters:[PreShardSyncedFlushRequest request, TransportChannel channel, Task task]
+MethodInvocation:sendResponse
+MethodInvocation:performPreSyncedFlush
+Class:SyncedFlushTransportHandler
+Method-name:messageReceived
+Method-returnType:void
+Method-parameters:[ShardSyncedFlushRequest request, TransportChannel channel, Task task]
+MethodInvocation:sendResponse
+MethodInvocation:performSyncedFlush
+Class:InFlightOpCountTransportHandler
+Method-name:messageReceived
+Method-returnType:void
+Method-parameters:[InFlightOpsRequest request, TransportChannel channel, Task task]
+MethodInvocation:sendResponse
+MethodInvocation:performInFlightOps

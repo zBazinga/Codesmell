@@ -1,0 +1,41 @@
+Class:MicroserviceFactory
+Method-name:create
+Method-returnType:Microservice
+Method-parameters:[String appId, String microserviceName]
+MethodInvocation:create
+MethodInvocation:create
+Method-name:create
+Method-returnType:Microservice
+Method-parameters:[MicroserviceDefinition microserviceDefinition]
+MethodInvocation:getConfiguration
+MethodInvocation:createMicroserviceFromDefinition
+MethodInvocation:setInstance
+MethodInvocation:createFromDefinition
+Method-name:createMicroserviceFromDefinition
+Method-returnType:Microservice
+Method-parameters:[Configuration configuration]
+MethodInvocation:setServiceName
+MethodInvocation:getString
+MethodInvocation:setAppId
+MethodInvocation:getString
+MethodInvocation:getString
+MethodInvocation:setVersion
+MethodInvocation:setDescriptionOther
+MethodInvocation:setLevel
+MethodInvocation:getString
+MethodInvocation:setPaths
+MethodInvocation:getMicroservicePaths
+MethodInvocation:loadProperties
+MethodInvocation:setProperties
+MethodInvocation:setEnvironment
+MethodInvocation:getString
+MethodInvocation:allowCrossApp
+MethodInvocation:setAlias
+MethodInvocation:generateAbsoluteMicroserviceName
+MethodInvocation:getAppId
+MethodInvocation:getServiceName
+Method-name:allowCrossApp
+Method-returnType:boolean
+Method-parameters:[Map<String,String> propertiesMap]
+MethodInvocation:valueOf
+MethodInvocation:get

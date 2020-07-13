@@ -1,0 +1,102 @@
+Class:RelOptRuleCall
+Field:LOGGER
+MethodInvocation:getPlannerTracer
+Field:nextId
+Field:id
+Field:operand0
+Field:nodeInputs
+Field:rule
+Field:rels
+Field:planner
+Field:parents
+Method-name:RelOptRuleCall
+Method-returnType:null
+Method-parameters:[RelOptPlanner planner, RelOptRuleOperand operand, RelNode[] rels, Map<RelNode,List<RelNode>> nodeInputs, List<RelNode> parents]
+Method-name:RelOptRuleCall
+Method-returnType:null
+Method-parameters:[RelOptPlanner planner, RelOptRuleOperand operand, RelNode[] rels, Map<RelNode,List<RelNode>> nodeInputs]
+Method-name:getOperand0
+Method-returnType:RelOptRuleOperand
+Method-parameters:[]
+Method-name:getRule
+Method-returnType:RelOptRule
+Method-parameters:[]
+Method-name:getRels
+Method-returnType:RelNode[]
+Method-parameters:[]
+Method-name:getRelList
+Method-returnType:List<RelNode>
+Method-parameters:[]
+MethodInvocation:copyOf
+Method-name:rel
+Method-returnType:T
+Method-parameters:[int ordinal]
+Method-name:getChildRels
+Method-returnType:List<RelNode>
+Method-parameters:[RelNode rel]
+MethodInvocation:get
+Method-name:setChildRels
+Method-returnType:void
+Method-parameters:[RelNode rel, List<RelNode> inputs]
+MethodInvocation:isEmpty
+MethodInvocation:put
+Method-name:getPlanner
+Method-returnType:RelOptPlanner
+Method-parameters:[]
+Method-name:isRuleExcluded
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isRuleExcluded
+MethodInvocation:getHintStrategies
+MethodInvocation:getCluster
+Method-name:getMetadataQuery
+Method-returnType:RelMetadataQuery
+Method-parameters:[]
+MethodInvocation:getMetadataQuery
+MethodInvocation:getCluster
+MethodInvocation:rel
+Method-name:getParents
+Method-returnType:List<RelNode>
+Method-parameters:[]
+Method-name:transformTo
+Method-returnType:void
+Method-parameters:[RelNode rel, Map<RelNode,RelNode> equiv, RelHintsPropagator handler]
+Method-name:transformTo
+Method-returnType:void
+Method-parameters:[RelNode rel, Map<RelNode,RelNode> equiv]
+MethodInvocation:transformTo
+Method-name:transformTo
+Method-returnType:void
+Method-parameters:[RelNode rel]
+MethodInvocation:transformTo
+MethodInvocation:of
+Method-name:transformTo
+Method-returnType:void
+Method-parameters:[RelNode rel, RelHintsPropagator handler]
+MethodInvocation:transformTo
+MethodInvocation:of
+Method-name:builder
+Method-returnType:RelBuilder
+Method-parameters:[]
+MethodInvocation:create
+MethodInvocation:getCluster
+MethodInvocation:rel
+Method-name:apply
+Method-returnType:void
+Method-parameters:[Filter filter, TableScan scan, FilterTableScanRule filterTableScanRule]
+MethodInvocation:builder
+MethodInvocation:addAll
+MethodInvocation:identity
+MethodInvocation:target
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getTable
+MethodInvocation:add
+MethodInvocation:apply
+MethodInvocation:inverse
+MethodInvocation:getCondition
+MethodInvocation:transformTo
+MethodInvocation:create
+MethodInvocation:getCluster
+MethodInvocation:getTable
+MethodInvocation:build

@@ -1,0 +1,414 @@
+Class:Segment
+Field:TYPE_MASK
+Field:TYPE_NO_SIZE_BYTES
+Field:TYPE_START_BYTES
+Field:TYPE_LENGTH_BYTES
+Field:TYPE_ANCHOR
+Field:TYPE_BASE
+Field:TYPE_TEXT
+Field:TYPE_REPEATED_TEXT
+Field:TYPE_TEXT_ASCII
+Field:TYPE_REPEATED_ASCII
+Field:TYPE_REPEATED_SPACE
+Field:TYPE_REPEATED_EOL
+Field:TYPE_HAS_OFFSET
+Field:TYPE_HAS_LENGTH
+Field:TYPE_HAS_BOTH
+Field:TYPE_HAS_CHAR
+Field:TYPE_HAS_CHARS
+Field:TYPE_HAS_BYTE
+Field:TYPE_HAS_BYTES
+Method-name:getPreviousText
+Method-returnType:Segment
+Method-parameters:[@NotNull BasedSequence baseSeq, SegmentOffsetTree tree]
+MethodInvocation:getPos
+MethodInvocation:getStartIndex
+MethodInvocation:getSegment
+MethodInvocation:isText
+MethodInvocation:getSegment
+MethodInvocation:getPos
+MethodInvocation:getNextText
+Field:SegType
+Field:flags
+Method-name:SegType
+Method-returnType:null
+Method-parameters:[int flags]
+FieldAccess:flags
+Method-name:hasAll
+Method-returnType:boolean
+Method-parameters:[int flags]
+FieldAccess:flags
+Method-name:hasLength
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasAll
+Method-name:hasOffset
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasAll
+Method-name:hasBoth
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasAll
+Method-name:hasChar
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasAll
+Method-name:hasChars
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasAll
+Method-name:hasByte
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasAll
+Method-name:hasBytes
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasAll
+Method-name:fromTypeMask
+Method-returnType:SegType
+Method-parameters:[int segTypeMask]
+MethodInvocation:format
+Method-name:hasAll
+Method-returnType:boolean
+Method-parameters:[int flags, int mask]
+Field:pos
+Field:bytes
+Field:byteOffset
+Field:startIndex
+Method-name:Segment
+Method-returnType:null
+Method-parameters:[int pos, byte[] bytes, int byteOffset, int startIndex]
+FieldAccess:pos
+FieldAccess:bytes
+FieldAccess:byteOffset
+FieldAccess:startIndex
+Method-name:getPos
+Method-returnType:int
+Method-parameters:[]
+Method-name:getBytes
+Method-returnType:byte[]
+Method-parameters:[]
+Method-name:getByteOffset
+Method-returnType:int
+Method-parameters:[]
+Method-name:getStartIndex
+Method-returnType:int
+Method-parameters:[]
+Method-name:getEndIndex
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:length
+Method-name:notInSegment
+Method-returnType:boolean
+Method-parameters:[int index]
+MethodInvocation:length
+Method-name:offsetNotInSegment
+Method-returnType:boolean
+Method-parameters:[int offset]
+MethodInvocation:getStartOffset
+MethodInvocation:getEndOffset
+Method-name:getType
+Method-returnType:SegType
+Method-parameters:[]
+MethodInvocation:fromTypeMask
+Method-name:getByteLength
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getSegByteLength
+MethodInvocation:getType
+MethodInvocation:getStartOffset
+MethodInvocation:length
+Method-name:length
+Method-returnType:int
+Method-parameters:[]
+Method-name:isBase
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isAnchor
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isText
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isFirst256Start
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isRepeatedTextEnd
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getStartOffset
+Method-returnType:int
+Method-parameters:[]
+Method-name:getEndOffset
+Method-returnType:int
+Method-parameters:[]
+Method-name:getCharSequence
+Method-returnType:CharSequence
+Method-parameters:[]
+Method-name:charAt
+Method-returnType:char
+Method-parameters:[int index]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isBase
+MethodInvocation:isAnchor
+MethodInvocation:getStartOffset
+MethodInvocation:getStartOffset
+MethodInvocation:getEndOffset
+MethodInvocation:getCharSequence
+MethodInvocation:isRepeatedTextEnd
+MethodInvocation:length
+MethodInvocation:isFirst256Start
+MethodInvocation:length
+MethodInvocation:escapeJavaString
+MethodInvocation:subSequence
+MethodInvocation:length
+MethodInvocation:escapeJavaString
+MethodInvocation:subSequence
+MethodInvocation:length
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:subSequence
+MethodInvocation:toString
+MethodInvocation:subSequence
+MethodInvocation:isFirst256Start
+MethodInvocation:escapeJavaString
+MethodInvocation:escapeJavaString
+Class:Base
+Field:startOffset
+Field:endOffset
+Field:baseSeq
+Method-name:Base
+Method-returnType:null
+Method-parameters:[int pos, byte[] bytes, int byteOffset, int indexOffset, @NotNull BasedSequence basedSequence]
+Method-name:length
+Method-returnType:int
+Method-parameters:[]
+Method-name:isBase
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isAnchor
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isText
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isFirst256Start
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isRepeatedTextEnd
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getStartOffset
+Method-returnType:int
+Method-parameters:[]
+Method-name:getEndOffset
+Method-returnType:int
+Method-parameters:[]
+Method-name:charAt
+Method-returnType:char
+Method-parameters:[int index]
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:charAt
+Method-name:getCharSequence
+Method-returnType:CharSequence
+Method-parameters:[]
+MethodInvocation:subSequence
+Class:TextCharSequenceBase
+Field:bytes
+Field:byteOffset
+Field:startOffset
+Field:length
+Method-name:TextCharSequenceBase
+Method-returnType:null
+Method-parameters:[byte[] bytes, int byteOffset, int startOffset, int length]
+FieldAccess:bytes
+FieldAccess:byteOffset
+FieldAccess:startOffset
+FieldAccess:length
+Method-name:length
+Method-returnType:int
+Method-parameters:[]
+Method-name:charAt
+Method-returnType:char
+Method-parameters:[int index]
+Method-name:create
+Method-returnType:CharSequence
+Method-parameters:[int startOffset, int length]
+Method-name:subSequence
+Method-returnType:CharSequence
+Method-parameters:[int startIndex, int endIndex]
+MethodInvocation:length
+MethodInvocation:create
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:charAt
+MethodInvocation:toString
+Class:TextCharSequence
+Method-name:TextCharSequence
+Method-returnType:null
+Method-parameters:[byte[] bytes, int byteOffset, int startOffset, int length]
+Method-name:charAt
+Method-returnType:char
+Method-parameters:[int index]
+MethodInvocation:getChar
+Method-name:create
+Method-returnType:CharSequence
+Method-parameters:[int startOffset, int length]
+Class:TextAsciiCharSequence
+Method-name:TextAsciiCharSequence
+Method-returnType:null
+Method-parameters:[byte[] bytes, int byteOffset, int startOffset, int length]
+Method-name:charAt
+Method-returnType:char
+Method-parameters:[int index]
+Method-name:create
+Method-returnType:CharSequence
+Method-parameters:[int startOffset, int length]
+Class:TextRepeatedSequence
+Field:c
+Field:length
+Method-name:TextRepeatedSequence
+Method-returnType:null
+Method-parameters:[char c, int length]
+FieldAccess:c
+FieldAccess:length
+Method-name:length
+Method-returnType:int
+Method-parameters:[]
+Method-name:charAt
+Method-returnType:char
+Method-parameters:[int index]
+Method-name:subSequence
+Method-returnType:CharSequence
+Method-parameters:[int startIndex, int endIndex]
+MethodInvocation:length
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:toString
+Class:Text
+Field:chars
+Method-name:Text
+Method-returnType:null
+Method-parameters:[int pos, byte[] bytes, int byteOffset, int indexOffset]
+MethodInvocation:hasAll
+MethodInvocation:getInt
+MethodInvocation:getChar
+Method-name:length
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:length
+Method-name:charAt
+Method-returnType:char
+Method-parameters:[int index]
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:charAt
+Method-name:isBase
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isAnchor
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isText
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:textType
+Method-returnType:int
+Method-parameters:[]
+Method-name:isFirst256Start
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:textType
+Method-name:isRepeatedTextEnd
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:textType
+Method-name:getStartOffset
+Method-returnType:int
+Method-parameters:[]
+Method-name:getEndOffset
+Method-returnType:int
+Method-parameters:[]
+Method-name:getCharSequence
+Method-returnType:CharSequence
+Method-parameters:[]
+Method-name:getSegment
+Method-returnType:Segment
+Method-parameters:[byte[] bytes, int byteOffset, int pos, int indexOffset, @NotNull BasedSequence basedSequence]
+Method-name:getSegType
+Method-returnType:SegType
+Method-parameters:[@NotNull Seg seg, @NotNull CharSequence textChars]
+MethodInvocation:isBase
+MethodInvocation:isAnchor
+MethodInvocation:isText
+MethodInvocation:isFirst256Start
+MethodInvocation:isRepeatedTextEnd
+MethodInvocation:charAt
+MethodInvocation:getTextStart
+Method-name:getOffsetBytes
+Method-returnType:int
+Method-parameters:[int offset]
+Method-name:getLengthBytes
+Method-returnType:int
+Method-parameters:[int length]
+Method-name:getIntBytes
+Method-returnType:int
+Method-parameters:[int length]
+Method-name:getSegByteLength
+Method-returnType:int
+Method-parameters:[@NotNull Segment.SegType segType, int segStart, int segLength]
+MethodInvocation:hasBoth
+MethodInvocation:getIntBytes
+MethodInvocation:getIntBytes
+MethodInvocation:hasOffset
+MethodInvocation:getOffsetBytes
+MethodInvocation:hasLength
+MethodInvocation:getLengthBytes
+MethodInvocation:hasChar
+MethodInvocation:hasChars
+MethodInvocation:hasByte
+MethodInvocation:hasBytes
+Method-name:getSegByteLength
+Method-returnType:int
+Method-parameters:[@NotNull Seg seg, @NotNull CharSequence textChars]
+MethodInvocation:getSegType
+MethodInvocation:getSegByteLength
+MethodInvocation:getSegStart
+MethodInvocation:length
+Method-name:addIntBytes
+Method-returnType:int
+Method-parameters:[byte[] bytes, int offset, int value, int count]
+Method-name:getInt
+Method-returnType:int
+Method-parameters:[byte[] bytes, int offset, int count]
+Method-name:addChar
+Method-returnType:int
+Method-parameters:[byte[] bytes, int offset, char c]
+Method-name:getChar
+Method-returnType:char
+Method-parameters:[byte[] bytes, int offset]
+Method-name:addChars
+Method-returnType:int
+Method-parameters:[byte[] bytes, int offset, @NotNull CharSequence chars, int start, int end]
+MethodInvocation:charAt
+Method-name:addCharAscii
+Method-returnType:int
+Method-parameters:[byte[] bytes, int offset, char c]
+Method-name:addCharsAscii
+Method-returnType:int
+Method-parameters:[byte[] bytes, int offset, @NotNull CharSequence chars, int start, int end]
+Method-name:getCharAscii
+Method-returnType:char
+Method-parameters:[byte[] bytes, int offset]
+Method-name:addSegBytes
+Method-returnType:int
+Method-parameters:[byte[] bytes, int offset, @NotNull Seg seg, @NotNull CharSequence textChars]

@@ -1,0 +1,50 @@
+Class:StatsCollectionContext
+Field:hiveConf
+Field:task
+Field:statsTmpDirs
+Field:contextSuffix
+Method-name:getStatsTmpDirs
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setStatsTmpDirs
+Method-returnType:void
+Method-parameters:[List<String> statsTmpDirs]
+FieldAccess:statsTmpDirs
+Method-name:setStatsTmpDir
+Method-returnType:void
+Method-parameters:[String statsTmpDir]
+FieldAccess:statsTmpDirs
+MethodInvocation:asList
+Method-name:StatsCollectionContext
+Method-returnType:null
+Method-parameters:[Configuration hiveConf]
+FieldAccess:hiveConf
+Method-name:getHiveConf
+Method-returnType:Configuration
+Method-parameters:[]
+Method-name:getTask
+Method-returnType:Task
+Method-parameters:[]
+Method-name:setTask
+Method-returnType:void
+Method-parameters:[Task task]
+FieldAccess:task
+Method-name:setContextSuffix
+Method-returnType:void
+Method-parameters:[String suffix]
+FieldAccess:contextSuffix
+Method-name:getContextSuffix
+Method-returnType:String
+Method-parameters:[]
+Method-name:createStatsAggregator
+Method-returnType:StatsAggregator
+Method-parameters:[HiveConf conf, BasicStatsTask basicStatsTask]
+MethodInvocation:getVar
+MethodInvocation:newFactory
+MethodInvocation:getErrorCodedMsg
+MethodInvocation:getStatsPublisher
+MethodInvocation:init
+MethodInvocation:getErrorCodedMsg
+MethodInvocation:getStatsAggregator
+MethodInvocation:connect
+MethodInvocation:getErrorCodedMsg

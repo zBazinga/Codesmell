@@ -1,0 +1,32 @@
+Class:TransportSamlPrepareAuthenticationAction
+Field:realms
+Method-name:TransportSamlPrepareAuthenticationAction
+Method-returnType:null
+Method-parameters:[TransportService transportService, ActionFilters actionFilters, Realms realms]
+FieldAccess:realms
+Method-name:doExecute
+Method-returnType:void
+Method-parameters:[Task task, SamlPrepareAuthenticationRequest request, ActionListener<SamlPrepareAuthenticationResponse> listener]
+MethodInvocation:findSamlRealms
+FieldAccess:realms
+MethodInvocation:getRealmName
+MethodInvocation:getAssertionConsumerServiceURL
+MethodInvocation:isEmpty
+MethodInvocation:onFailure
+MethodInvocation:samlException
+MethodInvocation:size
+MethodInvocation:onFailure
+MethodInvocation:samlException
+MethodInvocation:prepareAuthentication
+MethodInvocation:get
+MethodInvocation:getRelayState
+Method-name:prepareAuthentication
+Method-returnType:void
+Method-parameters:[SamlRealm realm, String relayState, ActionListener<SamlPrepareAuthenticationResponse> listener]
+MethodInvocation:buildAuthenticationRequest
+MethodInvocation:getRedirectUrl
+MethodInvocation:getSigningConfiguration
+MethodInvocation:onResponse
+MethodInvocation:name
+MethodInvocation:getID
+MethodInvocation:onFailure

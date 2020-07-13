@@ -1,0 +1,40 @@
+Class:BatchingEntityLoader
+Field:log
+MethodInvocation:getLogger
+Field:persister
+Method-name:BatchingEntityLoader
+Method-returnType:null
+Method-parameters:[EntityPersister persister]
+FieldAccess:persister
+Method-name:persister
+Method-returnType:EntityPersister
+Method-parameters:[]
+Method-name:load
+Method-returnType:Object
+Method-parameters:[Serializable id, Object optionalObject, SharedSessionContractImplementor session]
+MethodInvocation:load
+Method-name:getObjectFromList
+Method-returnType:Object
+Method-parameters:[List results, Serializable id, SharedSessionContractImplementor session]
+MethodInvocation:isEqual
+MethodInvocation:getIdentifierType
+MethodInvocation:getContextEntityIdentifier
+MethodInvocation:getFactory
+Method-name:doBatchLoad
+Method-returnType:Object
+Method-parameters:[Serializable id, Loader loaderToUse, SharedSessionContractImplementor session, Serializable[] ids, Object optionalObject, LockOptions lockOptions]
+MethodInvocation:isDebugEnabled
+MethodInvocation:debugf
+MethodInvocation:infoString
+MethodInvocation:getFactory
+MethodInvocation:buildQueryParameters
+MethodInvocation:doQueryAndInitializeNonLazyCollections
+MethodInvocation:debug
+MethodInvocation:getObjectFromList
+MethodInvocation:convert
+MethodInvocation:getSqlExceptionHelper
+MethodInvocation:getJdbcServices
+MethodInvocation:infoString
+MethodInvocation:persister
+MethodInvocation:getFactory
+MethodInvocation:getSQLString

@@ -1,0 +1,79 @@
+Class:KohonenLearning
+Field:serialVersionUID
+Field:learningRate
+Field:iterations
+Field:decStep
+Field:mapSize
+Field:nR
+Field:currentIteration
+Method-name:KohonenLearning
+Method-returnType:null
+Method-parameters:[]
+Method-name:learn
+Method-returnType:void
+Method-parameters:[DataSet trainingSet]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:isStopped
+MethodInvocation:next
+MethodInvocation:learnPattern
+MethodInvocation:fireLearningEvent
+MethodInvocation:isStopped
+Method-name:learnPattern
+Method-returnType:void
+Method-parameters:[DataSetRow dataSetRow, int neighborhood]
+MethodInvocation:setInput
+MethodInvocation:getInput
+MethodInvocation:calculate
+MethodInvocation:getClosest
+MethodInvocation:getOutput
+MethodInvocation:getLayerAt
+MethodInvocation:indexOf
+MethodInvocation:adjustCellWeights
+MethodInvocation:getNeuronsCount
+MethodInvocation:isNeighbor
+MethodInvocation:getNeuronAt
+MethodInvocation:adjustCellWeights
+Method-name:getClosest
+Method-returnType:Neuron
+Method-parameters:[]
+MethodInvocation:getNeurons
+MethodInvocation:getLayerAt
+FieldAccess:neuralNetwork
+MethodInvocation:getOutput
+Method-name:adjustCellWeights
+Method-returnType:void
+Method-parameters:[Neuron cell, int r]
+MethodInvocation:getInputConnections
+MethodInvocation:getInput
+MethodInvocation:getValue
+MethodInvocation:getWeight
+MethodInvocation:inc
+MethodInvocation:getWeight
+Method-name:isNeighbor
+Method-returnType:boolean
+Method-parameters:[int i, int j, int n]
+Method-name:getLearningRate
+Method-returnType:double
+Method-parameters:[]
+Method-name:setLearningRate
+Method-returnType:void
+Method-parameters:[double learningRate]
+FieldAccess:learningRate
+Method-name:setIterations
+Method-returnType:void
+Method-parameters:[int Iphase, int IIphase]
+FieldAccess:iterations
+FieldAccess:iterations
+Method-name:getIteration
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:getMapSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:setNeuralNetwork
+Method-returnType:void
+Method-parameters:[NeuralNetwork neuralNetwork]
+MethodInvocation:getNeuronsCount
+MethodInvocation:getLayerAt
+MethodInvocation:sqrt

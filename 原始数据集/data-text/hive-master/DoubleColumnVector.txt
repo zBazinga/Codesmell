@@ -1,0 +1,67 @@
+Class:DoubleColumnVector
+Field:vector
+Field:NULL_VALUE
+Method-name:DoubleColumnVector
+Method-returnType:null
+Method-parameters:[]
+Method-name:DoubleColumnVector
+Method-returnType:null
+Method-parameters:[int len]
+Method-name:copySelected
+Method-returnType:void
+Method-parameters:[boolean selectedInUse, int[] sel, int size, ColumnVector outputColVector]
+MethodInvocation:fill
+MethodInvocation:arraycopy
+MethodInvocation:arraycopy
+Method-name:fill
+Method-returnType:void
+Method-parameters:[double value]
+Method-name:fillWithNulls
+Method-returnType:void
+Method-parameters:[]
+Method-name:flatten
+Method-returnType:void
+Method-parameters:[boolean selectedInUse, int[] sel, int size]
+MethodInvocation:flattenPush
+MethodInvocation:fill
+MethodInvocation:flattenRepeatingNulls
+MethodInvocation:flattenNoNulls
+Method-name:setElement
+Method-returnType:void
+Method-parameters:[int outputElementNum, int inputElementNum, ColumnVector inputColVector]
+FieldAccess:vector
+Method-name:stringifyValue
+Method-returnType:void
+Method-parameters:[StringBuilder buffer, int row]
+MethodInvocation:append
+MethodInvocation:append
+Method-name:ensureSize
+Method-returnType:void
+Method-parameters:[int size, boolean preserveData]
+MethodInvocation:arraycopy
+Method-name:shallowCopyTo
+Method-returnType:void
+Method-parameters:[ColumnVector otherCv]
+Method-name:copySelectedOther
+Method-returnType:void
+Method-parameters:[boolean selectedInUse, int[] sel, int size, LongColumnVector longColumnVector]
+FieldAccess:isNull
+FieldAccess:isRepeating
+FieldAccess:vector
+FieldAccess:noNulls
+FieldAccess:isRepeating
+FieldAccess:noNulls
+FieldAccess:vector
+FieldAccess:vector
+FieldAccess:noNulls
+MethodInvocation:fill
+FieldAccess:noNulls
+MethodInvocation:arraycopy
+FieldAccess:vector
+FieldAccess:noNulls
+FieldAccess:isNull
+FieldAccess:vector
+MethodInvocation:arraycopy
+FieldAccess:isNull
+MethodInvocation:arraycopy
+FieldAccess:vector

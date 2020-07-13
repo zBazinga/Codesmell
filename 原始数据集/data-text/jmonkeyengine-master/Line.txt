@@ -1,0 +1,85 @@
+Class:Line
+Field:serialVersionUID
+Field:origin
+Field:direction
+Method-name:Line
+Method-returnType:null
+Method-parameters:[]
+Method-name:Line
+Method-returnType:null
+Method-parameters:[Vector3f origin, Vector3f direction]
+FieldAccess:origin
+FieldAccess:direction
+Method-name:getOrigin
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:setOrigin
+Method-returnType:void
+Method-parameters:[Vector3f origin]
+FieldAccess:origin
+Method-name:getDirection
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:setDirection
+Method-returnType:void
+Method-parameters:[Vector3f direction]
+FieldAccess:direction
+Method-name:distanceSquared
+Method-returnType:float
+Method-parameters:[Vector3f point]
+MethodInvocation:get
+MethodInvocation:subtract
+MethodInvocation:dot
+MethodInvocation:add
+MethodInvocation:mult
+MethodInvocation:subtract
+MethodInvocation:lengthSquared
+MethodInvocation:release
+Method-name:distance
+Method-returnType:float
+Method-parameters:[Vector3f point]
+MethodInvocation:sqrt
+MethodInvocation:distanceSquared
+Method-name:orthogonalLineFit
+Method-returnType:void
+Method-parameters:[FloatBuffer points]
+MethodInvocation:get
+MethodInvocation:rewind
+MethodInvocation:remaining
+MethodInvocation:populateFromBuffer
+MethodInvocation:populateFromBuffer
+MethodInvocation:addLocal
+MethodInvocation:multLocal
+MethodInvocation:rewind
+MethodInvocation:populateFromBuffer
+MethodInvocation:subtract
+MethodInvocation:calculateEigen
+MethodInvocation:getEigenVector
+MethodInvocation:release
+Method-name:random
+Method-returnType:Vector3f
+Method-parameters:[]
+MethodInvocation:random
+Method-name:random
+Method-returnType:Vector3f
+Method-parameters:[Vector3f result]
+MethodInvocation:random
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter e]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter e]
+MethodInvocation:getCapsule
+MethodInvocation:readSavable
+MethodInvocation:clone
+MethodInvocation:readSavable
+MethodInvocation:clone
+Method-name:clone
+Method-returnType:Line
+Method-parameters:[]
+MethodInvocation:clone
+MethodInvocation:clone

@@ -1,0 +1,73 @@
+Class:MetaDataIndexUpgradeService
+Field:logger
+MethodInvocation:getLogger
+Field:settings
+Field:xContentRegistry
+Field:mapperRegistry
+Field:indexScopedSettings
+Field:upgraders
+Method-name:MetaDataIndexUpgradeService
+Method-returnType:null
+Method-parameters:[Settings settings, NamedXContentRegistry xContentRegistry, MapperRegistry mapperRegistry, IndexScopedSettings indexScopedSettings, Collection<UnaryOperator<IndexMetaData>> indexMetaDataUpgraders]
+FieldAccess:settings
+FieldAccess:xContentRegistry
+FieldAccess:mapperRegistry
+FieldAccess:indexScopedSettings
+FieldAccess:upgraders
+MethodInvocation:apply
+Method-name:upgradeIndexMetaData
+Method-returnType:IndexMetaData
+Method-parameters:[IndexMetaData indexMetaData, Version minimumIndexCompatibilityVersion]
+MethodInvocation:isUpgraded
+MethodInvocation:checkSupportedVersion
+MethodInvocation:archiveBrokenIndexSettings
+MethodInvocation:checkMappingsCompatibility
+MethodInvocation:apply
+MethodInvocation:markAsUpgraded
+Method-name:isUpgraded
+Method-returnType:boolean
+Method-parameters:[IndexMetaData indexMetaData]
+MethodInvocation:onOrAfter
+MethodInvocation:getUpgradedVersion
+Method-name:checkSupportedVersion
+Method-returnType:void
+Method-parameters:[IndexMetaData indexMetaData, Version minimumIndexCompatibilityVersion]
+MethodInvocation:getState
+MethodInvocation:isSupportedVersion
+MethodInvocation:getIndex
+MethodInvocation:getCreationVersion
+Method-name:isSupportedVersion
+Method-returnType:boolean
+Method-parameters:[IndexMetaData indexMetaData, Version minimumIndexCompatibilityVersion]
+MethodInvocation:onOrAfter
+MethodInvocation:getCreationVersion
+Method-name:checkMappingsCompatibility
+Method-returnType:void
+Method-parameters:[IndexMetaData indexMetaData]
+Method-name:markAsUpgraded
+Method-returnType:IndexMetaData
+Method-parameters:[IndexMetaData indexMetaData]
+MethodInvocation:build
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:builder
+MethodInvocation:getSettings
+MethodInvocation:build
+MethodInvocation:settings
+MethodInvocation:builder
+Method-name:archiveBrokenIndexSettings
+Method-returnType:IndexMetaData
+Method-parameters:[IndexMetaData indexMetaData]
+MethodInvocation:getSettings
+MethodInvocation:archiveUnknownOrInvalidSettings
+MethodInvocation:warn
+MethodInvocation:getIndex
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:warn
+MethodInvocation:getIndex
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:build
+MethodInvocation:settings
+MethodInvocation:builder

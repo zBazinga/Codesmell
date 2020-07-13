@@ -1,0 +1,184 @@
+Class:FixedWidthReadOptions
+Field:columnTypes
+Field:columnSpecs
+Field:lineEnding
+Field:padding
+Field:lookupWildcard
+Field:skipTrailingCharsUntilNewline
+Field:recordEndsOnNewline
+Field:skipInvalidRows
+Field:maxNumberOfColumns
+Method-name:FixedWidthReadOptions
+Method-returnType:null
+Method-parameters:[FixedWidthReadOptions.Builder builder]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[Source source]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[File file]
+MethodInvocation:tableName
+MethodInvocation:getName
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[String fileName]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[InputStream stream]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[Reader reader]
+Method-name:columnTypes
+Method-returnType:ColumnType[]
+Method-parameters:[]
+Method-name:columnSpecs
+Method-returnType:FixedWidthFields
+Method-parameters:[]
+Method-name:lineEnding
+Method-returnType:String
+Method-parameters:[]
+Method-name:padding
+Method-returnType:char
+Method-parameters:[]
+Method-name:lookupWildcard
+Method-returnType:char
+Method-parameters:[]
+Method-name:skipTrailingCharsUntilNewline
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:recordEndsOnNewline
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:skipInvalidRows
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:maxNumberOfColumns
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:getReaderAndColumnTypes
+Method-returnType:Pair<Reader,ColumnType[]>
+Method-parameters:[FixedWidthReader fixedWidthReader]
+MethodInvocation:columnTypes
+MethodInvocation:createReader
+MethodInvocation:source
+MethodInvocation:file
+MethodInvocation:source
+MethodInvocation:getBytes
+MethodInvocation:toString
+MethodInvocation:createReader
+MethodInvocation:source
+MethodInvocation:detectColumnTypes
+MethodInvocation:create
+MethodInvocation:createReader
+MethodInvocation:source
+Class:Builder
+Field:columnSpecs
+Field:lineEnding
+Field:padding
+Field:lookupWildcard
+Field:skipTrailingCharsUntilNewline
+Field:recordEndsOnNewline
+Field:skipInvalidRows
+Field:columnTypes
+Field:maxNumberOfColumns
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[Source source]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[URL url]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[File file]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[Reader reader]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[InputStream stream]
+Method-name:columnSpecs
+Method-returnType:Builder
+Method-parameters:[FixedWidthFields columnSpecs]
+FieldAccess:columnSpecs
+Method-name:maxCharsPerColumn
+Method-returnType:Builder
+Method-parameters:[int maxCharsPerColumn]
+Method-name:lineEnding
+Method-returnType:Builder
+Method-parameters:[String lineEnding]
+FieldAccess:lineEnding
+Method-name:systemLineEnding
+Method-returnType:Builder
+Method-parameters:[]
+MethodInvocation:lineEnding
+MethodInvocation:lineSeparator
+Method-name:padding
+Method-returnType:Builder
+Method-parameters:[char padding]
+FieldAccess:padding
+Method-name:lookupWildcard
+Method-returnType:Builder
+Method-parameters:[char lookupWildcard]
+FieldAccess:lookupWildcard
+Method-name:skipTrailingCharsUntilNewline
+Method-returnType:Builder
+Method-parameters:[boolean skipTrailingCharsUntilNewline]
+FieldAccess:skipTrailingCharsUntilNewline
+Method-name:recordEndsOnNewline
+Method-returnType:Builder
+Method-parameters:[boolean recordEndsOnNewline]
+FieldAccess:recordEndsOnNewline
+Method-name:skipInvalidRows
+Method-returnType:Builder
+Method-parameters:[boolean skipInvalidRows]
+FieldAccess:skipInvalidRows
+Method-name:columnTypes
+Method-returnType:Builder
+Method-parameters:[ColumnType[] columnTypes]
+FieldAccess:columnTypes
+Method-name:maxNumberOfColumns
+Method-returnType:Builder
+Method-parameters:[Integer maxNumberOfColumns]
+FieldAccess:maxNumberOfColumns
+Method-name:build
+Method-returnType:FixedWidthReadOptions
+Method-parameters:[]
+Method-name:header
+Method-returnType:Builder
+Method-parameters:[boolean header]
+Method-name:tableName
+Method-returnType:Builder
+Method-parameters:[String tableName]
+Method-name:sample
+Method-returnType:Builder
+Method-parameters:[boolean sample]
+Method-name:dateFormat
+Method-returnType:Builder
+Method-parameters:[String dateFormat]
+Method-name:timeFormat
+Method-returnType:Builder
+Method-parameters:[String timeFormat]
+Method-name:dateTimeFormat
+Method-returnType:Builder
+Method-parameters:[String dateTimeFormat]
+Method-name:dateFormat
+Method-returnType:Builder
+Method-parameters:[DateTimeFormatter dateFormat]
+Method-name:timeFormat
+Method-returnType:Builder
+Method-parameters:[DateTimeFormatter timeFormat]
+Method-name:dateTimeFormat
+Method-returnType:Builder
+Method-parameters:[DateTimeFormatter dateTimeFormat]
+Method-name:locale
+Method-returnType:Builder
+Method-parameters:[Locale locale]
+Method-name:missingValueIndicator
+Method-returnType:Builder
+Method-parameters:[String missingValueIndicator]
+Method-name:minimizeColumnSizes
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:ignoreZeroDecimal
+Method-returnType:Builder
+Method-parameters:[boolean ignoreZeroDecimal]

@@ -1,0 +1,192 @@
+Class:PathMemory
+Field:log
+MethodInvocation:getLogger
+Field:isLogTraceEnabled
+MethodInvocation:isTraceEnabled
+Field:linkedSegmentMask
+Field:allLinkedMaskTest
+Field:pathEndNode
+Field:agendaItem
+Field:segmentMemories
+Field:segmentMemory
+Field:dataDriven
+Method-name:PathMemory
+Method-returnType:null
+Method-parameters:[PathEndNode pathEndNode, InternalWorkingMemory wm]
+FieldAccess:pathEndNode
+FieldAccess:linkedSegmentMask
+FieldAccess:dataDriven
+MethodInvocation:initDataDriven
+Method-name:initDataDriven
+Method-returnType:boolean
+Method-parameters:[InternalWorkingMemory wm]
+MethodInvocation:isRuleDataDriven
+MethodInvocation:getRule
+Method-name:isRuleDataDriven
+Method-returnType:boolean
+Method-parameters:[InternalWorkingMemory wm, RuleImpl rule]
+MethodInvocation:isDataDriven
+MethodInvocation:accept
+MethodInvocation:getForceEagerActivationFilter
+MethodInvocation:getSessionConfiguration
+Method-name:getPathEndNode
+Method-returnType:PathEndNode
+Method-parameters:[]
+Method-name:getRule
+Method-returnType:RuleImpl
+Method-parameters:[]
+MethodInvocation:getRule
+Method-name:getRuleAgendaItem
+Method-returnType:RuleAgendaItem
+Method-parameters:[]
+Method-name:getLinkedSegmentMask
+Method-returnType:long
+Method-parameters:[]
+Method-name:getAllLinkedMaskTest
+Method-returnType:long
+Method-parameters:[]
+Method-name:setAllLinkedMaskTest
+Method-returnType:void
+Method-parameters:[long allLinkedTestMask]
+FieldAccess:allLinkedMaskTest
+Method-name:linkNodeWithoutRuleNotify
+Method-returnType:void
+Method-parameters:[long mask]
+Method-name:linkSegment
+Method-returnType:void
+Method-parameters:[long mask, InternalWorkingMemory wm]
+MethodInvocation:isTerminalNode
+MethodInvocation:getPathEndNode
+MethodInvocation:getPathEndNode
+MethodInvocation:trace
+MethodInvocation:getName
+MethodInvocation:getRule
+MethodInvocation:trace
+MethodInvocation:isRuleLinked
+MethodInvocation:doLinkRule
+Method-name:getOrCreateRuleAgendaItem
+Method-returnType:RuleAgendaItem
+Method-parameters:[InternalAgenda agenda]
+MethodInvocation:ensureAgendaItemCreated
+Method-name:ensureAgendaItemCreated
+Method-returnType:TerminalNode
+Method-parameters:[InternalAgenda agenda]
+MethodInvocation:getPathEndNode
+MethodInvocation:isDynamic
+MethodInvocation:getSalience
+MethodInvocation:getRule
+MethodInvocation:getValue
+MethodInvocation:getSalience
+MethodInvocation:getRule
+MethodInvocation:createRuleAgendaItem
+Method-name:doLinkRule
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm]
+MethodInvocation:doLinkRule
+MethodInvocation:getActualAgenda
+Method-name:doLinkRule
+Method-returnType:void
+Method-parameters:[InternalAgenda agenda]
+MethodInvocation:ensureAgendaItemCreated
+MethodInvocation:trace
+MethodInvocation:getName
+MethodInvocation:getRule
+MethodInvocation:queueRuleAgendaItem
+Method-name:doUnlinkRule
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm]
+MethodInvocation:doUnlinkRule
+MethodInvocation:getActualAgenda
+Method-name:doUnlinkRule
+Method-returnType:void
+Method-parameters:[InternalAgenda agenda]
+MethodInvocation:ensureAgendaItemCreated
+MethodInvocation:trace
+MethodInvocation:getName
+MethodInvocation:getRule
+MethodInvocation:setDirty
+MethodInvocation:getRuleExecutor
+MethodInvocation:isQueued
+MethodInvocation:trace
+MethodInvocation:getAgendaGroup
+MethodInvocation:add
+Method-name:queueRuleAgendaItem
+Method-returnType:void
+Method-parameters:[InternalAgenda agenda]
+MethodInvocation:setDirty
+MethodInvocation:getRuleExecutor
+MethodInvocation:getActivationsFilter
+MethodInvocation:accept
+MethodInvocation:getWorkingMemory
+MethodInvocation:getTerminalNode
+MethodInvocation:isQueued
+MethodInvocation:trace
+MethodInvocation:getAgendaGroup
+MethodInvocation:add
+MethodInvocation:isQuery
+MethodInvocation:getRule
+MethodInvocation:addQueryAgendaItem
+MethodInvocation:isEager
+MethodInvocation:getRule
+MethodInvocation:addEagerRuleAgendaItem
+Method-name:unlinkedSegment
+Method-returnType:void
+Method-parameters:[long mask, InternalWorkingMemory wm]
+MethodInvocation:isRuleLinked
+MethodInvocation:trace
+MethodInvocation:isRuleLinked
+MethodInvocation:doUnlinkRule
+Method-name:isRuleLinked
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isDataDriven
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getNodeType
+Method-returnType:short
+Method-parameters:[]
+Method-name:isInitialized
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getSegmentMemories
+Method-returnType:SegmentMemory[]
+Method-parameters:[]
+Method-name:setSegmentMemory
+Method-returnType:void
+Method-parameters:[int index, SegmentMemory sm]
+FieldAccess:segmentMemories
+Method-name:setSegmentMemories
+Method-returnType:void
+Method-parameters:[SegmentMemory[] segmentMemories]
+FieldAccess:segmentMemories
+Method-name:getSegmentMemory
+Method-returnType:SegmentMemory
+Method-parameters:[]
+FieldAccess:segmentMemory
+Method-name:setSegmentMemory
+Method-returnType:void
+Method-parameters:[SegmentMemory sm]
+FieldAccess:segmentMemory
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:getRule
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:linkedSegmentMask
+FieldAccess:agendaItem
+Method-name:getActualAgenda
+Method-returnType:InternalAgenda
+Method-parameters:[InternalWorkingMemory wm]
+MethodInvocation:getAgenda
+MethodInvocation:getPartitionedAgendaForNode
+MethodInvocation:getPathEndNode
+Method-name:outerEval
+Method-returnType:void
+Method-parameters:[NetworkNode node, long bit, Memory nodeMem, SegmentMemory[] smems, int smemIndex, TupleSets<LeftTuple> trgTuples, InternalAgenda agenda, LinkedList<StackEntry> stack, boolean processRian, RuleExecutor executor, RuleNetworkEvaluator ruleNetworkEvaluator]
+MethodInvocation:innerEval
+MethodInvocation:isEmpty
+MethodInvocation:removeLast
+MethodInvocation:evalStackEntry

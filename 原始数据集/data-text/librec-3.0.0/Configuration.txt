@@ -1,0 +1,265 @@
+Class:Configuration
+Field:LOG
+MethodInvocation:getLog
+Field:CACHE_CLASSES
+Field:properties
+Field:classLoader
+MethodInvocation:getContextClassLoader
+MethodInvocation:currentThread
+MethodInvocation:getClassLoader
+Field:loadDefaults
+Field:resources
+Field:defaultResources
+MethodInvocation:getContextClassLoader
+MethodInvocation:currentThread
+MethodInvocation:getClassLoader
+MethodInvocation:getResource
+MethodInvocation:addDefaultResource
+MethodInvocation:getResource
+MethodInvocation:addDefaultResource
+Method-name:Configuration
+Method-returnType:null
+Method-parameters:[]
+Method-name:Configuration
+Method-returnType:null
+Method-parameters:[boolean loadDefaults]
+FieldAccess:loadDefaults
+Method-name:toSparseMatrix
+Method-returnType:SequentialAccessSparseMatrix
+Method-parameters:[DataFrame dataFrame]
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:toSparseMatrix
+MethodInvocation:toSparseMatrix
+MethodInvocation:getDouble
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:toSparseMatrix
+MethodInvocation:split
+MethodInvocation:get
+MethodInvocation:toSparseMatrix
+MethodInvocation:split
+MethodInvocation:get
+MethodInvocation:getDouble
+Class:Resource
+Field:resource
+Field:name
+Method-name:Resource
+Method-returnType:null
+Method-parameters:[Object resource]
+MethodInvocation:toString
+Method-name:Resource
+Method-returnType:null
+Method-parameters:[Object resource, String name]
+FieldAccess:resource
+FieldAccess:name
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getResource
+Method-returnType:Object
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:addDefaultResource
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:iterator
+Method-returnType:Iterator<Entry<String,String>>
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:getProps
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:iterator
+MethodInvocation:entrySet
+Method-name:addResource
+Method-returnType:void
+Method-parameters:[Resource resource]
+MethodInvocation:loadProperty
+MethodInvocation:getProps
+MethodInvocation:add
+Method-name:overlay
+Method-returnType:void
+Method-parameters:[Properties to, Properties from]
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:set
+Method-returnType:void
+Method-parameters:[String name, String value]
+MethodInvocation:setProperty
+MethodInvocation:getProps
+Method-name:get
+Method-returnType:String
+Method-parameters:[String name]
+MethodInvocation:getProperty
+MethodInvocation:getProps
+Method-name:setStrings
+Method-returnType:void
+Method-parameters:[String name, String... values]
+MethodInvocation:set
+MethodInvocation:arrayToString
+Method-name:getStrings
+Method-returnType:String[]
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:getStrings
+Method-name:getFloat
+Method-returnType:Float
+Method-parameters:[String name, Float defaultValue]
+MethodInvocation:get
+MethodInvocation:isNotBlank
+MethodInvocation:valueOf
+Method-name:setFloat
+Method-returnType:void
+Method-parameters:[String name, float value]
+MethodInvocation:set
+MethodInvocation:toString
+Method-name:getFloat
+Method-returnType:Float
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:isNotBlank
+MethodInvocation:valueOf
+Method-name:setDouble
+Method-returnType:void
+Method-parameters:[String name, double value]
+MethodInvocation:set
+MethodInvocation:toString
+Method-name:getDouble
+Method-returnType:Double
+Method-parameters:[String name, Double defaultValue]
+MethodInvocation:get
+MethodInvocation:isNotBlank
+MethodInvocation:valueOf
+Method-name:getDouble
+Method-returnType:Double
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:isNotBlank
+MethodInvocation:valueOf
+Method-name:get
+Method-returnType:String
+Method-parameters:[String name, String defaultValue]
+MethodInvocation:get
+MethodInvocation:isNotBlank
+Method-name:setLong
+Method-returnType:void
+Method-parameters:[String name, long value]
+MethodInvocation:set
+MethodInvocation:toString
+Method-name:getLong
+Method-returnType:Long
+Method-parameters:[String name, Long defaultValue]
+MethodInvocation:get
+MethodInvocation:isNotBlank
+MethodInvocation:valueOf
+Method-name:getLong
+Method-returnType:Long
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:isNotBlank
+MethodInvocation:valueOf
+Method-name:setInt
+Method-returnType:void
+Method-parameters:[String name, int value]
+MethodInvocation:set
+MethodInvocation:toString
+Method-name:getInt
+Method-returnType:Integer
+Method-parameters:[String name, Integer defaultValue]
+MethodInvocation:get
+MethodInvocation:isNotBlank
+MethodInvocation:valueOf
+Method-name:getInt
+Method-returnType:Integer
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:isNotBlank
+MethodInvocation:valueOf
+Method-name:setInts
+Method-returnType:void
+Method-parameters:[String name, int[] values]
+MethodInvocation:set
+MethodInvocation:arrayToString
+Method-name:getInts
+Method-returnType:int[]
+Method-parameters:[String name]
+MethodInvocation:getTrimmedStrings
+MethodInvocation:parseInt
+Method-name:getTrimmedStrings
+Method-returnType:String[]
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:getTrimmedStrings
+Method-name:setBoolean
+Method-returnType:void
+Method-parameters:[String name, boolean value]
+MethodInvocation:set
+MethodInvocation:toString
+Method-name:getBoolean
+Method-returnType:boolean
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:isNotBlank
+MethodInvocation:valueOf
+Method-name:getBoolean
+Method-returnType:boolean
+Method-parameters:[String name, boolean defaultValue]
+MethodInvocation:get
+MethodInvocation:isNotBlank
+MethodInvocation:valueOf
+Method-name:getProps
+Method-returnType:Properties
+Method-parameters:[]
+MethodInvocation:loadResources
+Method-name:loadResources
+Method-returnType:void
+Method-parameters:[Properties properties, ArrayList<Resource> resources]
+MethodInvocation:loadProperty
+MethodInvocation:loadProperty
+Method-name:loadProperty
+Method-returnType:void
+Method-parameters:[Properties properties, Resource wrapper]
+MethodInvocation:getResource
+MethodInvocation:openStream
+MethodInvocation:load
+MethodInvocation:getResource
+MethodInvocation:openConnection
+MethodInvocation:setUseCaches
+MethodInvocation:getInputStream
+MethodInvocation:load
+MethodInvocation:getPath
+MethodInvocation:toUri
+MethodInvocation:load
+MethodInvocation:load
+MethodInvocation:overlay
+MethodInvocation:printStackTrace
+Method-name:getResource
+Method-returnType:URL
+Method-parameters:[String name]
+MethodInvocation:getResource
+Method-name:getClassByName
+Method-returnType:Class<?>
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:putIfAbsent
+MethodInvocation:get
+MethodInvocation:forName
+MethodInvocation:put
+Method-name:getClassByName
+Method-returnType:Class<?>
+Method-parameters:[String name, String defaultName]
+MethodInvocation:getClassByName
+MethodInvocation:error
+MethodInvocation:getClassByName

@@ -1,0 +1,78 @@
+Class:AggregateJoinTransposeRule
+Field:INSTANCE
+Field:EXTENDED
+Field:allowFunctions
+Method-name:AggregateJoinTransposeRule
+Method-returnType:null
+Method-parameters:[Class<? extends Aggregate> aggregateClass, Class<? extends Join> joinClass, RelBuilderFactory relBuilderFactory, boolean allowFunctions]
+MethodInvocation:operandJ
+MethodInvocation:isAggregateSupported
+MethodInvocation:operand
+MethodInvocation:any
+FieldAccess:allowFunctions
+Method-name:AggregateJoinTransposeRule
+Method-returnType:null
+Method-parameters:[Class<? extends Aggregate> aggregateClass, RelFactories.AggregateFactory aggregateFactory, Class<? extends Join> joinClass, RelFactories.JoinFactory joinFactory]
+MethodInvocation:proto
+Method-name:AggregateJoinTransposeRule
+Method-returnType:null
+Method-parameters:[Class<? extends Aggregate> aggregateClass, RelFactories.AggregateFactory aggregateFactory, Class<? extends Join> joinClass, RelFactories.JoinFactory joinFactory, boolean allowFunctions]
+MethodInvocation:proto
+Method-name:AggregateJoinTransposeRule
+Method-returnType:null
+Method-parameters:[Class<? extends Aggregate> aggregateClass, RelFactories.AggregateFactory aggregateFactory, Class<? extends Join> joinClass, RelFactories.JoinFactory joinFactory, RelFactories.ProjectFactory projectFactory]
+MethodInvocation:proto
+Method-name:AggregateJoinTransposeRule
+Method-returnType:null
+Method-parameters:[Class<? extends Aggregate> aggregateClass, RelFactories.AggregateFactory aggregateFactory, Class<? extends Join> joinClass, RelFactories.JoinFactory joinFactory, RelFactories.ProjectFactory projectFactory, boolean allowFunctions]
+MethodInvocation:proto
+Method-name:isAggregateSupported
+Method-returnType:boolean
+Method-parameters:[Aggregate aggregate, boolean allowFunctions]
+MethodInvocation:isEmpty
+MethodInvocation:getAggCallList
+MethodInvocation:getGroupType
+MethodInvocation:getAggCallList
+MethodInvocation:unwrap
+MethodInvocation:getAggregation
+MethodInvocation:isDistinct
+Method-name:onMatch
+Method-returnType:void
+Method-parameters:[RelOptRuleCall call]
+Method-name:keyColumns
+Method-returnType:ImmutableBitSet
+Method-parameters:[ImmutableBitSet aggregateColumns, ImmutableList<RexNode> predicates]
+MethodInvocation:populateEquivalences
+MethodInvocation:get
+MethodInvocation:union
+Method-name:populateEquivalences
+Method-returnType:void
+Method-parameters:[Map<Integer,BitSet> equivalence, RexNode predicate]
+MethodInvocation:getKind
+MethodInvocation:getOperands
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:populateEquivalence
+MethodInvocation:getIndex
+MethodInvocation:getIndex
+MethodInvocation:populateEquivalence
+MethodInvocation:getIndex
+MethodInvocation:getIndex
+Method-name:populateEquivalence
+Method-returnType:void
+Method-parameters:[Map<Integer,BitSet> equivalence, int i0, int i1]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:set
+Method-name:registry
+Method-returnType:SqlSplittableAggFunction.Registry<E>
+Method-parameters:[final List<E> list]
+MethodInvocation:indexOf
+MethodInvocation:size
+MethodInvocation:add
+Class:Side
+Field:split
+Field:newInput
+Field:aggregate

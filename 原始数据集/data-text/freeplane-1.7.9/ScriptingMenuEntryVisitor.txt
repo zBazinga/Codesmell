@@ -1,0 +1,126 @@
+Class:ScriptingMenuEntryVisitor
+Field:configuration
+Field:registeredLocations
+Field:entryNavigator
+Field:modeController
+Method-name:ScriptingMenuEntryVisitor
+Method-returnType:null
+Method-parameters:[ScriptingGuiConfiguration configuration, ModeController modeController]
+FieldAccess:configuration
+FieldAccess:modeController
+Method-name:initEntryNavigator
+Method-returnType:EntryNavigator
+Method-parameters:[Entry scriptingEntry]
+MethodInvocation:createNavigator
+Method-name:visit
+Method-returnType:void
+Method-parameters:[Entry target]
+MethodInvocation:initEntryNavigator
+MethodInvocation:entrySet
+MethodInvocation:getMenuTitleToPathMap
+MethodInvocation:getKey
+MethodInvocation:get
+MethodInvocation:getMenuTitleToMetaDataMap
+MethodInvocation:hasMenuLocation
+MethodInvocation:getExecutionModes
+MethodInvocation:addChild
+MethodInvocation:createEntry
+MethodInvocation:getValue
+MethodInvocation:isLeaf
+MethodInvocation:addChild
+MethodInvocation:createNoScriptsAvailableAction
+Method-name:buildPhaseFinished
+Method-returnType:void
+Method-parameters:[Phase actions, Entry target]
+MethodInvocation:getParent
+MethodInvocation:buildEntriesWithSpecialMenuLocation
+Method-name:buildEntriesWithSpecialMenuLocation
+Method-returnType:void
+Method-parameters:[Entry target]
+MethodInvocation:entrySet
+MethodInvocation:getMenuTitleToPathMap
+MethodInvocation:get
+MethodInvocation:getMenuTitleToMetaDataMap
+MethodInvocation:getKey
+MethodInvocation:hasMenuLocation
+MethodInvocation:addEntryForGivenLocation
+MethodInvocation:getRoot
+MethodInvocation:getValue
+Method-name:addEntryForGivenLocation
+Method-returnType:void
+Method-parameters:[Entry rootEntry, final ScriptMetaData metaData, String scriptPath]
+MethodInvocation:getExecutionModes
+MethodInvocation:getMenuLocation
+MethodInvocation:add
+MethodInvocation:getScriptName
+MethodInvocation:findOrCreateEntry
+MethodInvocation:createEntry
+MethodInvocation:getScriptName
+MethodInvocation:addChild
+Method-name:findOrCreateEntry
+Method-returnType:Entry
+Method-parameters:[Entry rootEntry, final String path]
+MethodInvocation:findChildByPath
+MethodInvocation:findOrCreateEntry
+MethodInvocation:parentLocation
+MethodInvocation:setName
+MethodInvocation:lastPathElement
+MethodInvocation:setAttribute
+MethodInvocation:scriptNameToMenuItemTitle
+MethodInvocation:lastPathElement
+MethodInvocation:addChild
+Method-name:lastPathElement
+Method-returnType:String
+Method-parameters:[String path]
+MethodInvocation:lastIndexOf
+MethodInvocation:substring
+Method-name:createNoScriptsAvailableAction
+Method-returnType:Entry
+Method-parameters:[]
+MethodInvocation:setName
+MethodInvocation:noScriptsAvailableMessage
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[ActionEvent e]
+MethodInvocation:setAction
+Method-name:createEntry
+Method-returnType:Entry
+Method-parameters:[final String scriptName, final String scriptPath, ExecutionMode executionMode]
+MethodInvocation:get
+MethodInvocation:getMenuTitleToMetaDataMap
+MethodInvocation:scriptNameToMenuItemTitle
+MethodInvocation:createEntry
+MethodInvocation:createAction
+Method-name:createEntry
+Method-returnType:Entry
+Method-parameters:[AFreeplaneAction action]
+MethodInvocation:setName
+MethodInvocation:getKey
+MethodInvocation:setAction
+Method-name:createAction
+Method-returnType:AFreeplaneAction
+Method-parameters:[final String scriptName, final String scriptPath, ExecutionMode executionMode, final ScriptMetaData metaData, final String title]
+MethodInvocation:makeMenuItemKey
+MethodInvocation:getAction
+MethodInvocation:createTooltip
+MethodInvocation:hasMultipleExcecutionModes
+MethodInvocation:getPermissions
+MethodInvocation:putValue
+MethodInvocation:putValue
+MethodInvocation:addAction
+Method-name:hasMultipleExcecutionModes
+Method-returnType:boolean
+Method-parameters:[ScriptMetaData metaData]
+MethodInvocation:size
+MethodInvocation:getExecutionModes
+Method-name:createTooltip
+Method-returnType:String
+Method-parameters:[String title, ExecutionMode mode]
+MethodInvocation:format
+MethodInvocation:executionMode2TranslationProperty
+Method-name:executionMode2TranslationProperty
+Method-returnType:String
+Method-parameters:[ExecutionMode mode]
+Method-name:shouldSkipChildren
+Method-returnType:boolean
+Method-parameters:[Entry entry]

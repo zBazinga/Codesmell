@@ -1,0 +1,23 @@
+Class:LogicalTableFunctionScan
+Method-name:LogicalTableFunctionScan
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, List<RelNode> inputs, RexNode rexCall, Type elementType, RelDataType rowType, Set<RelColumnMapping> columnMappings]
+Method-name:LogicalTableFunctionScan
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, List<RelNode> inputs, RexNode rexCall, Type elementType, RelDataType rowType, Set<RelColumnMapping> columnMappings]
+MethodInvocation:traitSetOf
+Method-name:LogicalTableFunctionScan
+Method-returnType:null
+Method-parameters:[RelInput input]
+Method-name:create
+Method-returnType:LogicalTableFunctionScan
+Method-parameters:[RelOptCluster cluster, List<RelNode> inputs, RexNode rexCall, Type elementType, RelDataType rowType, Set<RelColumnMapping> columnMappings]
+MethodInvocation:traitSetOf
+Method-name:copy
+Method-returnType:LogicalTableFunctionScan
+Method-parameters:[RelTraitSet traitSet, List<RelNode> inputs, RexNode rexCall, Type elementType, RelDataType rowType, Set<RelColumnMapping> columnMappings]
+Method-name:computeSelfCost
+Method-returnType:RelOptCost
+Method-parameters:[RelOptPlanner planner, RelMetadataQuery mq]
+MethodInvocation:makeHugeCost
+MethodInvocation:getCostFactory

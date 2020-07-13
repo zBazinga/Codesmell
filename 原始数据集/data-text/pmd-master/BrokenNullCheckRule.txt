@@ -1,0 +1,54 @@
+Class:BrokenNullCheckRule
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTIfStatement node, Object data]
+MethodInvocation:getChild
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:checkForViolations
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:checkForViolations
+Method-name:checkForViolations
+Method-returnType:void
+Method-parameters:[ASTIfStatement node, Object data, Node conditionalExpression]
+MethodInvocation:getFirstChildOfType
+MethodInvocation:equals
+MethodInvocation:getImage
+MethodInvocation:equals
+MethodInvocation:getImage
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:hasDescendantOfType
+MethodInvocation:findNullCompareExpression
+MethodInvocation:getNumChildren
+MethodInvocation:getChild
+MethodInvocation:getFirstParentOfType
+MethodInvocation:equals
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:primaryExpressionsAreEqual
+MethodInvocation:addViolation
+Method-name:primaryExpressionsAreEqual
+Method-returnType:boolean
+Method-parameters:[ASTPrimaryExpression nullCompareVariable, ASTPrimaryExpression expressionUsage]
+MethodInvocation:findExpressionNames
+MethodInvocation:findExpressionNames
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:equals
+MethodInvocation:startsWith
+Method-name:findExpressionNames
+Method-returnType:void
+Method-parameters:[Node nullCompareVariable, List<String> results]
+MethodInvocation:getNumChildren
+MethodInvocation:getChild
+MethodInvocation:add
+MethodInvocation:getImage
+MethodInvocation:getImage
+MethodInvocation:add
+MethodInvocation:getImage
+MethodInvocation:isNotBlank
+MethodInvocation:add
+MethodInvocation:getImage
+MethodInvocation:add
+MethodInvocation:getNumChildren
+MethodInvocation:findExpressionNames

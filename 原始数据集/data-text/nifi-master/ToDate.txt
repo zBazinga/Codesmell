@@ -1,0 +1,43 @@
+Class:ToDate
+Field:recordPath
+Field:dateFormat
+Field:timeZoneID
+Method-name:ToDate
+Method-returnType:null
+Method-parameters:[final RecordPathSegment recordPath, final RecordPathSegment dateFormat, final boolean absolute]
+FieldAccess:recordPath
+FieldAccess:dateFormat
+FieldAccess:timeZoneID
+Method-name:ToDate
+Method-returnType:null
+Method-parameters:[final RecordPathSegment recordPath, final RecordPathSegment dateFormat, final RecordPathSegment timeZoneID, final boolean absolute]
+FieldAccess:recordPath
+FieldAccess:dateFormat
+FieldAccess:timeZoneID
+Method-name:evaluate
+Method-returnType:Stream<FieldValue>
+Method-parameters:[RecordPathEvaluationContext context]
+MethodInvocation:evaluate
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:getDateFormat
+FieldAccess:dateFormat
+FieldAccess:timeZoneID
+MethodInvocation:toDate
+MethodInvocation:getValue
+MethodInvocation:getFieldName
+MethodInvocation:getField
+MethodInvocation:getField
+MethodInvocation:orElse
+MethodInvocation:getParent
+Method-name:getDateFormat
+Method-returnType:java.text.DateFormat
+Method-parameters:[final RecordPathSegment dateFormatSegment, final RecordPathSegment timeZoneID, final RecordPathEvaluationContext context]
+MethodInvocation:getFirstStringValue
+MethodInvocation:isEmpty
+MethodInvocation:getDateFormat
+MethodInvocation:getFirstStringValue
+MethodInvocation:isEmpty
+MethodInvocation:getDateFormat

@@ -1,0 +1,87 @@
+Class:ComplexExpressionExtractor
+Field:DEFAULT_MAX_DEPTH
+Field:maxDepth
+Field:depths
+MethodInvocation:newHashMap
+Field:currentMethod
+Field:currentStatement
+Field:count
+Method-name:setMaxDepth
+Method-returnType:void
+Method-parameters:[int newMaxDepth]
+Method-name:resetMaxDepth
+Method-returnType:void
+Method-parameters:[]
+Method-name:handleNode
+Method-returnType:void
+Method-parameters:[Expression node, Collection<Expression> children]
+Method-name:preVisit
+Method-returnType:boolean
+Method-parameters:[TreeNode node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[MethodDeclaration node]
+MethodInvocation:getExecutableElement
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[MethodDeclaration node]
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[InfixExpression node]
+MethodInvocation:handleNode
+MethodInvocation:getOperands
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[MethodInvocation node]
+MethodInvocation:getExpression
+MethodInvocation:getArguments
+MethodInvocation:newArrayListWithCapacity
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:addAll
+MethodInvocation:handleNode
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[FunctionInvocation node]
+MethodInvocation:handleNode
+MethodInvocation:getArguments
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[PrefixExpression node]
+MethodInvocation:getParent
+MethodInvocation:getOperator
+MethodInvocation:getOperator
+MethodInvocation:replaceWith
+MethodInvocation:remove
+MethodInvocation:getOperand
+MethodInvocation:getKind
+MethodInvocation:parenthesizeAndReplace
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[Assignment node]
+MethodInvocation:isBoolean
+MethodInvocation:getTypeMirror
+MethodInvocation:getRightHandSide
+MethodInvocation:parenthesizeAndReplace
+MethodInvocation:getRightHandSide
+MethodInvocation:getParent
+MethodInvocation:getExpression
+MethodInvocation:getExpression
+MethodInvocation:getExpression
+MethodInvocation:parenthesizeAndReplace
+Method-name:endVisit
+Method-returnType:void
+Method-parameters:[ParenthesizedExpression node]
+MethodInvocation:getExpression
+MethodInvocation:getExpression
+MethodInvocation:isEqualityExpression
+MethodInvocation:replaceWith
+MethodInvocation:remove
+MethodInvocation:getParent
+MethodInvocation:isEqualityExpression
+MethodInvocation:replaceWith
+MethodInvocation:remove
+Method-name:isEqualityExpression
+Method-returnType:boolean
+Method-parameters:[Expression expr]
+MethodInvocation:getOperator

@@ -1,0 +1,33 @@
+Class:HiveSemiJoin
+Field:joinFilter
+Method-name:getSemiJoin
+Method-returnType:HiveSemiJoin
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode left, RelNode right, RexNode condition]
+Method-name:HiveSemiJoin
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode left, RelNode right, RexNode condition]
+MethodInvocation:newHashSet
+MethodInvocation:of
+MethodInvocation:size
+MethodInvocation:getInputs
+MethodInvocation:add
+FieldAccess:joinFilter
+MethodInvocation:splitHiveJoinCondition
+MethodInvocation:getInputs
+MethodInvocation:getCondition
+Method-name:getJoinFilter
+Method-returnType:RexNode
+Method-parameters:[]
+Method-name:copy
+Method-returnType:HiveSemiJoin
+Method-parameters:[RelTraitSet traitSet, RexNode condition, RelNode left, RelNode right, JoinRelType joinType, boolean semiJoinDone]
+MethodInvocation:of
+MethodInvocation:getCluster
+MethodInvocation:unwrap
+MethodInvocation:getContext
+MethodInvocation:getPlanner
+MethodInvocation:getCluster
+MethodInvocation:copyPushedPredicates
+Method-name:implement
+Method-returnType:void
+Method-parameters:[Implementor implementor]

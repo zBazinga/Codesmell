@@ -1,0 +1,210 @@
+Class:ResultSaver
+Field:log
+MethodInvocation:getLogger
+Field:serialVersionUID
+Field:LOCK
+Field:TIMESTAMP_FORMAT
+Field:FILENAME
+Field:VARIABLE_NAME
+Field:ERRORS_ONLY
+Field:SUCCESS_ONLY
+Field:SKIP_AUTO_NUMBER
+Field:SKIP_SUFFIX
+Field:ADD_TIMESTAMP
+Field:NUMBER_PAD_LENGTH
+Field:IGNORE_TC
+Field:sequenceNumber
+Field:timeStamp
+Field:numberPadLength
+Method-name:ResultSaver
+Method-returnType:null
+Method-parameters:[]
+Method-name:ResultSaver
+Method-returnType:null
+Method-parameters:[String name]
+MethodInvocation:setName
+Method-name:nextNumber
+Method-returnType:long
+Method-parameters:[]
+Method-name:testStarted
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:testStarted
+Method-name:testStarted
+Method-returnType:void
+Method-parameters:[String host]
+MethodInvocation:getAddTimeStamp
+MethodInvocation:format
+MethodInvocation:getNumberPadLen
+Method-name:testEnded
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:testEnded
+Method-name:testEnded
+Method-returnType:void
+Method-parameters:[String host]
+Method-name:sampleOccurred
+Method-returnType:void
+Method-parameters:[SampleEvent e]
+MethodInvocation:processSample
+MethodInvocation:getResult
+Method-name:processSample
+Method-returnType:void
+Method-parameters:[SampleResult s, Counter c]
+MethodInvocation:saveSample
+MethodInvocation:getSubResults
+MethodInvocation:processSample
+Method-name:saveSample
+Method-returnType:void
+Method-parameters:[SampleResult s, int num]
+MethodInvocation:ignoreSampler
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getSampleLabel
+MethodInvocation:makeFileName
+MethodInvocation:getContentType
+MethodInvocation:getSkipAutoNumber
+MethodInvocation:getSkipSuffix
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getSampleLabel
+MethodInvocation:setResultFileName
+MethodInvocation:getVariableName
+MethodInvocation:length
+MethodInvocation:put
+MethodInvocation:getVariables
+MethodInvocation:getContext
+MethodInvocation:createFoldersIfNeeded
+MethodInvocation:getParentFile
+MethodInvocation:write
+MethodInvocation:getResponseData
+MethodInvocation:error
+MethodInvocation:getSampleLabel
+MethodInvocation:error
+MethodInvocation:getSampleLabel
+Method-name:ignoreSampler
+Method-returnType:boolean
+Method-parameters:[SampleResult s]
+MethodInvocation:getIgnoreTC
+MethodInvocation:isFromTransactionController
+MethodInvocation:isSuccessful
+MethodInvocation:getErrorsOnly
+MethodInvocation:isSuccessful
+MethodInvocation:getSuccessOnly
+Method-name:createFoldersIfNeeded
+Method-returnType:void
+Method-parameters:[File parentFile]
+MethodInvocation:exists
+MethodInvocation:debug
+MethodInvocation:getAbsolutePath
+MethodInvocation:mkdirs
+MethodInvocation:getAbsolutePath
+MethodInvocation:debug
+MethodInvocation:getAbsolutePath
+Method-name:makeFileName
+Method-returnType:String
+Method-parameters:[String contentType, boolean skipAutoNumber, boolean skipSuffix]
+MethodInvocation:resolveBaseRelativeName
+MethodInvocation:getFilename
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:nextNumber
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:indexOf
+MethodInvocation:indexOf
+MethodInvocation:append
+MethodInvocation:substring
+MethodInvocation:append
+MethodInvocation:substring
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:sampleStarted
+Method-returnType:void
+Method-parameters:[SampleEvent e]
+Method-name:sampleStopped
+Method-returnType:void
+Method-parameters:[SampleEvent e]
+Method-name:getFilename
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPropertyAsString
+Method-name:getVariableName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPropertyAsString
+Method-name:getErrorsOnly
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getPropertyAsBoolean
+Method-name:getSkipAutoNumber
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getPropertyAsBoolean
+Method-name:getSkipSuffix
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getPropertyAsBoolean
+Method-name:getSuccessOnly
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getPropertyAsBoolean
+Method-name:getAddTimeStamp
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getPropertyAsBoolean
+Method-name:getNumberPadLen
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getPropertyAsInt
+Method-name:getIgnoreTC
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getPropertyAsBoolean
+Method-name:setIgnoreTC
+Method-returnType:void
+Method-parameters:[boolean value]
+MethodInvocation:setProperty
+Method-name:setFilename
+Method-returnType:void
+Method-parameters:[String value]
+MethodInvocation:setProperty
+Class:Counter
+Field:num
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+Method-name:setAddTimestamp
+Method-returnType:void
+Method-parameters:[boolean selected]
+MethodInvocation:setProperty
+Method-name:setVariableName
+Method-returnType:void
+Method-parameters:[String value]
+MethodInvocation:setProperty
+Method-name:setNumberPadLength
+Method-returnType:void
+Method-parameters:[String text]
+MethodInvocation:setProperty
+Method-name:setErrorsOnly
+Method-returnType:void
+Method-parameters:[boolean selected]
+MethodInvocation:setProperty
+Method-name:setSuccessOnly
+Method-returnType:void
+Method-parameters:[boolean selected]
+MethodInvocation:setProperty
+Method-name:setSkipSuffix
+Method-returnType:void
+Method-parameters:[boolean selected]
+MethodInvocation:setProperty
+Method-name:setSkipAutoNumber
+Method-returnType:void
+Method-parameters:[boolean selected]
+MethodInvocation:setProperty

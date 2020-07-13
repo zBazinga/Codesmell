@@ -1,0 +1,34 @@
+Class:EntityTuplizerFactory
+Field:ENTITY_TUP_CTOR_SIG
+Field:defaultImplClassByMode
+MethodInvocation:buildBaseMapping
+Method-name:registerDefaultTuplizerClass
+Method-returnType:void
+Method-parameters:[EntityMode entityMode, Class<? extends EntityTuplizer> tuplizerClass]
+Method-name:constructTuplizer
+Method-returnType:EntityTuplizer
+Method-parameters:[Class<? extends EntityTuplizer> tuplizerClass, EntityMetamodel metamodel, PersistentClass persistentClass]
+Method-name:constructDefaultTuplizer
+Method-returnType:EntityTuplizer
+Method-parameters:[EntityMode entityMode, EntityMetamodel metamodel, PersistentClass persistentClass]
+MethodInvocation:get
+MethodInvocation:constructTuplizer
+Method-name:isEntityTuplizerImplementor
+Method-returnType:boolean
+Method-parameters:[Class tuplizerClass]
+MethodInvocation:implementsInterface
+Method-name:hasProperConstructor
+Method-returnType:boolean
+Method-parameters:[Class<? extends EntityTuplizer> tuplizerClass, Class[] constructorArgs]
+MethodInvocation:getProperConstructor
+MethodInvocation:isAbstractClass
+Method-name:getProperConstructor
+Method-returnType:Constructor<? extends EntityTuplizer>
+Method-parameters:[Class<? extends EntityTuplizer> clazz, Class[] constructorArgs]
+MethodInvocation:getDeclaredConstructor
+MethodInvocation:ensureAccessibility
+Method-name:buildBaseMapping
+Method-returnType:Map<EntityMode,Class<? extends EntityTuplizer>>
+Method-parameters:[]
+MethodInvocation:put
+MethodInvocation:put

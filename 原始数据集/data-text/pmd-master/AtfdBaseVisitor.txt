@@ -1,0 +1,59 @@
+Class:AtfdBaseVisitor
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTPrimaryExpression node, Object data]
+MethodInvocation:isForeignAttributeOrMethod
+MethodInvocation:isAttributeAccess
+MethodInvocation:increment
+MethodInvocation:add
+MethodInvocation:countForeignGetterSetterCalls
+Method-name:isForeignGetterSetterCall
+Method-returnType:boolean
+Method-parameters:[ASTPrimaryExpression node]
+MethodInvocation:getMethodOrAttributeName
+MethodInvocation:isForeignGetterSetterCall
+Method-name:isForeignGetterSetterCall
+Method-returnType:boolean
+Method-parameters:[String methodOrAttributeName]
+MethodInvocation:startsWithAny
+Method-name:countForeignGetterSetterCalls
+Method-returnType:int
+Method-parameters:[ASTPrimaryExpression node]
+MethodInvocation:isForeignGetterSetterCall
+MethodInvocation:isForeignAttributeOrMethod
+MethodInvocation:findDescendantsOfType
+MethodInvocation:isArguments
+MethodInvocation:getMethodOrAttributeName
+MethodInvocation:isForeignGetterSetterCall
+Method-name:isForeignAttributeOrMethod
+Method-returnType:boolean
+Method-parameters:[ASTPrimaryExpression node]
+MethodInvocation:getNameImage
+MethodInvocation:contains
+MethodInvocation:startsWith
+MethodInvocation:usesThisModifier
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:hasDescendantOfAnyType
+Method-name:getNameImage
+Method-returnType:String
+Method-parameters:[ASTPrimaryExpression node]
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:getImage
+Method-name:getMethodOrAttributeName
+Method-returnType:String
+Method-parameters:[ASTPrimaryExpression node]
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:getFirstDescendantOfType
+MethodInvocation:indexOf
+MethodInvocation:getImage
+MethodInvocation:substring
+MethodInvocation:getImage
+Method-name:getMethodOrAttributeName
+Method-returnType:String
+Method-parameters:[ASTPrimarySuffix node]
+MethodInvocation:getImage
+Method-name:isAttributeAccess
+Method-returnType:boolean
+Method-parameters:[ASTPrimaryExpression node]
+MethodInvocation:hasDescendantOfType

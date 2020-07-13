@@ -1,0 +1,152 @@
+Class:ModuleActor
+Field:CURSOR_RECEIVED
+Field:CURSOR_READ
+Field:CURSOR_OWN_READ
+Field:CURSOR_DELETE
+Field:context
+Field:subscriber
+Method-name:ModuleActor
+Method-returnType:null
+Method-parameters:[ModuleContext context]
+FieldAccess:context
+Method-name:subscribe
+Method-returnType:void
+Method-parameters:[String eventType]
+MethodInvocation:post
+MethodInvocation:self
+MethodInvocation:onBusEvent
+MethodInvocation:subscribe
+MethodInvocation:getEvents
+MethodInvocation:context
+Method-name:buidOutPeer
+Method-returnType:ApiOutPeer
+Method-parameters:[Peer peer]
+MethodInvocation:getPeerType
+MethodInvocation:getUser
+MethodInvocation:getPeerId
+MethodInvocation:getUid
+MethodInvocation:getAccessHash
+MethodInvocation:getPeerType
+MethodInvocation:getGroup
+MethodInvocation:getPeerId
+MethodInvocation:getGroupId
+MethodInvocation:getAccessHash
+Method-name:buildApiPeer
+Method-returnType:ApiPeer
+Method-parameters:[Peer peer]
+MethodInvocation:getPeerType
+MethodInvocation:getPeerId
+MethodInvocation:getPeerType
+MethodInvocation:getPeerId
+Method-name:users
+Method-returnType:KeyValueEngine<User>
+Method-parameters:[]
+MethodInvocation:getUsersStorage
+MethodInvocation:getUsersModule
+Method-name:groups
+Method-returnType:KeyValueEngine<Group>
+Method-parameters:[]
+MethodInvocation:getGroups
+MethodInvocation:getGroupsModule
+Method-name:getGroup
+Method-returnType:Group
+Method-parameters:[int gid]
+MethodInvocation:getValue
+MethodInvocation:groups
+Method-name:getUser
+Method-returnType:User
+Method-parameters:[int uid]
+MethodInvocation:getValue
+MethodInvocation:users
+Method-name:getUserVM
+Method-returnType:UserVM
+Method-parameters:[int uid]
+MethodInvocation:get
+MethodInvocation:getUsers
+MethodInvocation:getUsersModule
+Method-name:getGroupVM
+Method-returnType:GroupVM
+Method-parameters:[int gid]
+MethodInvocation:get
+MethodInvocation:getGroupsCollection
+MethodInvocation:getGroupsModule
+Method-name:preferences
+Method-returnType:PreferencesStorage
+Method-parameters:[]
+MethodInvocation:getPreferences
+Method-name:config
+Method-returnType:Configuration
+Method-parameters:[]
+MethodInvocation:getConfiguration
+Method-name:updates
+Method-returnType:Updates
+Method-parameters:[]
+MethodInvocation:getUpdatesModule
+Method-name:myUid
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:myUid
+MethodInvocation:getAuthModule
+Method-name:context
+Method-returnType:ModuleContext
+Method-parameters:[]
+Method-name:request
+Method-returnType:long
+Method-parameters:[Request<T> request]
+MethodInvocation:request
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[T response]
+Method-name:onError
+Method-returnType:void
+Method-parameters:[RpcException e]
+Method-name:request
+Method-returnType:long
+Method-parameters:[final Request<T> request, final RpcCallback<T> callback]
+MethodInvocation:request
+MethodInvocation:getActorApi
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[final T response]
+MethodInvocation:send
+MethodInvocation:self
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onResult
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:onError
+Method-returnType:void
+Method-parameters:[final RpcException e]
+MethodInvocation:send
+MethodInvocation:self
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onError
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:api
+Method-returnType:Promise<T>
+Method-parameters:[final Request<T> request]
+MethodInvocation:request
+MethodInvocation:getActorApi
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[T response]
+MethodInvocation:result
+Method-name:onError
+Method-returnType:void
+Method-parameters:[RpcException e]
+MethodInvocation:error
+Method-name:cancelRequest
+Method-returnType:void
+Method-parameters:[long rid]
+MethodInvocation:cancelRequest
+MethodInvocation:getActorApi
+Method-name:onBusEvent
+Method-returnType:void
+Method-parameters:[Event event]

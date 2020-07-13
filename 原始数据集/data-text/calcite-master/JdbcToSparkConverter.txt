@@ -1,0 +1,52 @@
+Class:JdbcToSparkConverter
+Method-name:JdbcToSparkConverter
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traits, RelNode input]
+Method-name:copy
+Method-returnType:RelNode
+Method-parameters:[RelTraitSet traitSet, List<RelNode> inputs]
+MethodInvocation:getCluster
+MethodInvocation:sole
+Method-name:computeSelfCost
+Method-returnType:RelOptCost
+Method-parameters:[RelOptPlanner planner, RelMetadataQuery mq]
+MethodInvocation:multiplyBy
+Method-name:implementSpark
+Method-returnType:SparkRel.Result
+Method-parameters:[SparkRel.Implementor implementor]
+MethodInvocation:getInput
+MethodInvocation:of
+MethodInvocation:getTypeFactory
+MethodInvocation:getRowType
+MethodInvocation:getConvention
+MethodInvocation:generateSql
+MethodInvocation:value
+MethodInvocation:println
+MethodInvocation:append
+MethodInvocation:constant
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:ofBoxOr
+MethodInvocation:fieldClass
+MethodInvocation:add
+MethodInvocation:append
+MethodInvocation:constant
+MethodInvocation:toArray
+MethodInvocation:append
+MethodInvocation:call
+MethodInvocation:call
+MethodInvocation:convert_
+MethodInvocation:add
+MethodInvocation:return_
+MethodInvocation:result
+MethodInvocation:toBlock
+Method-name:generateSql
+Method-returnType:String
+Method-parameters:[SqlDialect dialect]
+MethodInvocation:getTypeFactory
+MethodInvocation:getCluster
+MethodInvocation:visitChild
+MethodInvocation:getInput
+MethodInvocation:getSql
+MethodInvocation:toSqlString
+MethodInvocation:asStatement

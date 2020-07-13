@@ -1,0 +1,118 @@
+Class:SqlNode
+Field:EMPTY_ARRAY
+Field:pos
+Method-name:SqlNode
+Method-returnType:null
+Method-parameters:[SqlParserPos pos]
+FieldAccess:pos
+MethodInvocation:requireNonNull
+Method-name:clone
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:clone
+MethodInvocation:getParserPosition
+Method-name:clone
+Method-returnType:E
+Method-parameters:[E e]
+MethodInvocation:clone
+Method-name:clone
+Method-returnType:SqlNode
+Method-parameters:[SqlParserPos pos]
+Method-name:getKind
+Method-returnType:SqlKind
+Method-parameters:[]
+Method-name:isA
+Method-returnType:boolean
+Method-parameters:[Set<SqlKind> category]
+MethodInvocation:belongsTo
+MethodInvocation:getKind
+Method-name:cloneArray
+Method-returnType:SqlNode[]
+Method-parameters:[SqlNode[] nodes]
+MethodInvocation:clone
+MethodInvocation:clone
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSql
+MethodInvocation:toSqlString
+MethodInvocation:withIndentation
+MethodInvocation:withUpdateSetListNewline
+MethodInvocation:withSelectListItemsOnSeparateLines
+MethodInvocation:withAlwaysUseParentheses
+MethodInvocation:withDialect
+Method-name:toSqlString
+Method-returnType:SqlString
+Method-parameters:[UnaryOperator<SqlWriterConfig> transform]
+MethodInvocation:apply
+MethodInvocation:config
+MethodInvocation:unparse
+MethodInvocation:toSqlString
+Method-name:toSqlString
+Method-returnType:SqlString
+Method-parameters:[SqlDialect dialect, boolean forceParens]
+MethodInvocation:toSqlString
+MethodInvocation:withIndentation
+MethodInvocation:withUpdateSetListNewline
+MethodInvocation:withSelectListItemsOnSeparateLines
+MethodInvocation:withAlwaysUseParentheses
+MethodInvocation:withDialect
+MethodInvocation:first
+Method-name:toSqlString
+Method-returnType:SqlString
+Method-parameters:[SqlDialect dialect]
+MethodInvocation:toSqlString
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, int leftPrec, int rightPrec]
+Method-name:getParserPosition
+Method-returnType:SqlParserPos
+Method-parameters:[]
+Method-name:validate
+Method-returnType:void
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope]
+Method-name:findValidOptions
+Method-returnType:void
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope, SqlParserPos pos, Collection<SqlMoniker> hintList]
+Method-name:validateExpr
+Method-returnType:void
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope]
+MethodInvocation:validate
+MethodInvocation:discard
+MethodInvocation:deriveType
+Method-name:accept
+Method-returnType:R
+Method-parameters:[SqlVisitor<R> visitor]
+Method-name:equalsDeep
+Method-returnType:boolean
+Method-parameters:[SqlNode node, Litmus litmus]
+Method-name:equalsDeep
+Method-returnType:boolean
+Method-parameters:[SqlNode node, boolean fail]
+MethodInvocation:equalsDeep
+Method-name:equalDeep
+Method-returnType:boolean
+Method-parameters:[SqlNode node1, SqlNode node2, Litmus litmus]
+MethodInvocation:equalsDeep
+Method-name:getMonotonicity
+Method-returnType:SqlMonotonicity
+Method-parameters:[SqlValidatorScope scope]
+Method-name:equalDeep
+Method-returnType:boolean
+Method-parameters:[List<SqlNode> operands0, List<SqlNode> operands1, Litmus litmus]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:fail
+MethodInvocation:size
+MethodInvocation:equalDeep
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:fail
+MethodInvocation:succeed
+Method-name:as
+Method-returnType:SqlCall
+Method-parameters:[String alias, String... fieldNames, SqlImplementor sqlImplementor]
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:createCall

@@ -1,0 +1,737 @@
+Class:CcToolchainVariables
+Field:EMPTY
+MethodInvocation:build
+MethodInvocation:builder
+Field:NULL_MARKER
+Field:structuredVariableCache
+Method-name:toStringList
+Method-returnType:ImmutableList<String>
+Method-parameters:[CcToolchainVariables variables, String variableName]
+MethodInvocation:builder
+MethodInvocation:getSequenceVariable
+MethodInvocation:add
+MethodInvocation:getStringValue
+MethodInvocation:build
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[@Nullable CcToolchainVariables parent]
+Method-name:getArguments
+Method-returnType:List<String>
+Method-parameters:[@Nullable PathFragment parameterFilePath, CompileCommandLine compileCommandLine]
+MethodInvocation:add
+MethodInvocation:getToolPath
+MethodInvocation:add
+MethodInvocation:getSafePathString
+MethodInvocation:addAll
+MethodInvocation:getCompilerOptions
+Method-name:getVariable
+Method-returnType:VariableValue
+Method-parameters:[String name]
+MethodInvocation:lookupVariable
+Method-name:getVariable
+Method-returnType:VariableValue
+Method-parameters:[String name, @Nullable ArtifactExpander expander]
+MethodInvocation:lookupVariable
+Method-name:lookupVariable
+Method-returnType:VariableValue
+Method-parameters:[String name, boolean throwOnMissingVariable, @Nullable ArtifactExpander expander]
+MethodInvocation:getNonStructuredVariable
+MethodInvocation:newConcurrentMap
+MethodInvocation:computeIfAbsent
+MethodInvocation:getStructureVariable
+MethodInvocation:getMessage
+MethodInvocation:format
+Method-name:getStructureVariable
+Method-returnType:VariableValue
+Method-parameters:[String name, boolean throwOnMissingVariable, @Nullable ArtifactExpander expander]
+MethodInvocation:contains
+MethodInvocation:push
+MethodInvocation:substring
+MethodInvocation:lastIndexOf
+MethodInvocation:substring
+MethodInvocation:lastIndexOf
+MethodInvocation:getNonStructuredVariable
+MethodInvocation:contains
+MethodInvocation:empty
+MethodInvocation:pop
+MethodInvocation:getFieldValue
+MethodInvocation:format
+Method-name:getStringVariable
+Method-returnType:String
+Method-parameters:[String variableName]
+MethodInvocation:getStringValue
+MethodInvocation:getVariable
+Method-name:getSequenceVariable
+Method-returnType:Iterable<? extends VariableValue>
+Method-parameters:[String variableName]
+MethodInvocation:getSequenceValue
+MethodInvocation:getVariable
+Method-name:getSequenceVariable
+Method-returnType:Iterable<? extends VariableValue>
+Method-parameters:[String variableName, @Nullable ArtifactExpander expander]
+MethodInvocation:getSequenceValue
+MethodInvocation:getVariable
+Method-name:isAvailable
+Method-returnType:boolean
+Method-parameters:[String variable]
+MethodInvocation:isAvailable
+Method-name:isAvailable
+Method-returnType:boolean
+Method-parameters:[String variable, @Nullable ArtifactExpander expander]
+MethodInvocation:lookupVariable
+Method-name:getVariablesMap
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+Method-name:getNonStructuredVariable
+Method-returnType:VariableValue
+Method-parameters:[String name]
+Method-name:expand
+Method-returnType:String
+Method-parameters:[CcToolchainVariables variables]
+Method-name:getString
+Method-returnType:String
+Method-parameters:[]
+Method-name:expand
+Method-returnType:void
+Method-parameters:[CcToolchainVariables variables, @Nullable ArtifactExpander expander, List<String> commandLine]
+Method-name:getStringValue
+Method-returnType:String
+Method-parameters:[String variableName]
+Method-name:getSequenceValue
+Method-returnType:Iterable<? extends VariableValue>
+Method-parameters:[String variableName]
+Method-name:getFieldValue
+Method-returnType:VariableValue
+Method-parameters:[String variableName, String field]
+Method-name:getFieldValue
+Method-returnType:VariableValue
+Method-parameters:[String variableName, String field, @Nullable ArtifactExpander expander, boolean throwOnMissingVariable]
+Method-name:isTruthy
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:build
+Method-returnType:VariableValue
+Method-parameters:[]
+Method-name:addVariables
+Method-returnType:void
+Method-parameters:[Builder builder]
+Class:StringLiteralChunk
+Field:text
+Method-name:StringLiteralChunk
+Method-returnType:null
+Method-parameters:[String text]
+FieldAccess:text
+Method-name:expand
+Method-returnType:String
+Method-parameters:[CcToolchainVariables variables]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object object]
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:getString
+Method-returnType:String
+Method-parameters:[]
+Class:VariableChunk
+Field:variableName
+Method-name:VariableChunk
+Method-returnType:null
+Method-parameters:[String variableName]
+FieldAccess:variableName
+Method-name:expand
+Method-returnType:String
+Method-parameters:[CcToolchainVariables variables]
+MethodInvocation:getStringVariable
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object object]
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:getString
+Method-returnType:String
+Method-parameters:[]
+Class:StringValueParser
+Field:value
+Field:chunks
+MethodInvocation:builder
+Field:usedVariables
+MethodInvocation:builder
+Field:current
+Method-name:StringValueParser
+Method-returnType:null
+Method-parameters:[String value]
+FieldAccess:value
+MethodInvocation:parse
+Method-name:getChunks
+Method-returnType:ImmutableList<StringChunk>
+Method-parameters:[]
+MethodInvocation:build
+Method-name:getUsedVariables
+Method-returnType:ImmutableSet<String>
+Method-parameters:[]
+MethodInvocation:build
+Method-name:parse
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:length
+MethodInvocation:atVariableStart
+MethodInvocation:parseVariableChunk
+MethodInvocation:parseStringChunk
+Method-name:atVariableStart
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:charAt
+MethodInvocation:length
+MethodInvocation:charAt
+Method-name:parseStringChunk
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:charAt
+MethodInvocation:indexOf
+MethodInvocation:length
+MethodInvocation:substring
+MethodInvocation:add
+Method-name:parseVariableChunk
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:abort
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:abort
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:add
+MethodInvocation:add
+Method-name:abort
+Method-returnType:void
+Method-parameters:[String error]
+Class:VariableValueAdapter
+Method-name:getVariableTypeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:isTruthy
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getFieldValue
+Method-returnType:VariableValue
+Method-parameters:[String variableName, String field]
+MethodInvocation:getFieldValue
+Method-name:getFieldValue
+Method-returnType:VariableValue
+Method-parameters:[String variableName, String field, @Nullable ArtifactExpander expander, boolean throwOnMissingVariable]
+MethodInvocation:format
+MethodInvocation:getVariableTypeName
+Method-name:getStringValue
+Method-returnType:String
+Method-parameters:[String variableName]
+MethodInvocation:format
+MethodInvocation:getVariableTypeName
+Method-name:getSequenceValue
+Method-returnType:Iterable<? extends VariableValue>
+Method-parameters:[String variableName]
+MethodInvocation:format
+MethodInvocation:getVariableTypeName
+Class:StringSequenceBuilder
+Field:values
+MethodInvocation:builder
+Method-name:addValue
+Method-returnType:StringSequenceBuilder
+Method-parameters:[String value]
+MethodInvocation:add
+Method-name:build
+Method-returnType:StringSequence
+Method-parameters:[]
+MethodInvocation:build
+Class:SequenceBuilder
+Field:values
+MethodInvocation:builder
+Method-name:addValue
+Method-returnType:SequenceBuilder
+Method-parameters:[VariableValue value]
+MethodInvocation:add
+Method-name:addValue
+Method-returnType:SequenceBuilder
+Method-parameters:[VariableValueBuilder value]
+MethodInvocation:checkArgument
+MethodInvocation:add
+MethodInvocation:build
+Method-name:build
+Method-returnType:Sequence
+Method-parameters:[]
+MethodInvocation:build
+Class:StructureBuilder
+Field:fields
+MethodInvocation:builder
+Method-name:addField
+Method-returnType:StructureBuilder
+Method-parameters:[String name, VariableValue value]
+MethodInvocation:put
+Method-name:addField
+Method-returnType:StructureBuilder
+Method-parameters:[String name, VariableValueBuilder valueBuilder]
+MethodInvocation:checkArgument
+MethodInvocation:put
+MethodInvocation:build
+Method-name:addField
+Method-returnType:StructureBuilder
+Method-parameters:[String name, String value]
+MethodInvocation:put
+Method-name:addField
+Method-returnType:StructureBuilder
+Method-parameters:[String name, ImmutableList<String> values]
+MethodInvocation:put
+Method-name:build
+Method-returnType:StructureValue
+Method-parameters:[]
+MethodInvocation:build
+Class:LibraryToLinkValue
+Field:OBJECT_FILES_FIELD_NAME
+Field:NAME_FIELD_NAME
+Field:TYPE_FIELD_NAME
+Field:IS_WHOLE_ARCHIVE_FIELD_NAME
+Field:LIBRARY_TO_LINK_VARIABLE_TYPE_NAME
+Field:name
+Field:objectFiles
+Field:isWholeArchive
+Field:type
+Method-name:LibraryToLinkValue
+Method-returnType:null
+Method-parameters:[String name, ImmutableList<Artifact> objectFiles, boolean isWholeArchive, Type type]
+FieldAccess:name
+FieldAccess:objectFiles
+FieldAccess:isWholeArchive
+FieldAccess:type
+Method-name:forDynamicLibrary
+Method-returnType:LibraryToLinkValue
+Method-parameters:[String name]
+MethodInvocation:checkNotNull
+Method-name:forVersionedDynamicLibrary
+Method-returnType:LibraryToLinkValue
+Method-parameters:[String name]
+MethodInvocation:checkNotNull
+Method-name:forInterfaceLibrary
+Method-returnType:LibraryToLinkValue
+Method-parameters:[String name]
+MethodInvocation:checkNotNull
+Method-name:forStaticLibrary
+Method-returnType:LibraryToLinkValue
+Method-parameters:[String name, boolean isWholeArchive]
+MethodInvocation:checkNotNull
+Method-name:forObjectFile
+Method-returnType:LibraryToLinkValue
+Method-parameters:[String name, boolean isWholeArchive]
+MethodInvocation:checkNotNull
+Method-name:forObjectFileGroup
+Method-returnType:LibraryToLinkValue
+Method-parameters:[ImmutableList<Artifact> objects, boolean isWholeArchive]
+MethodInvocation:checkNotNull
+MethodInvocation:checkArgument
+MethodInvocation:isEmpty
+Method-name:getFieldValue
+Method-returnType:VariableValue
+Method-parameters:[String variableName, String field, @Nullable ArtifactExpander expander, boolean throwOnMissingVariable]
+MethodInvocation:checkNotNull
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:builder
+MethodInvocation:isTreeArtifact
+MethodInvocation:expand
+MethodInvocation:addAll
+MethodInvocation:transform
+MethodInvocation:getExecPathString
+MethodInvocation:add
+MethodInvocation:getExecPathString
+MethodInvocation:build
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:getVariableTypeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:isTruthy
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+FieldAccess:name
+MethodInvocation:equals
+FieldAccess:objectFiles
+FieldAccess:isWholeArchive
+MethodInvocation:equals
+FieldAccess:type
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Field:Type
+Field:name
+Method-name:Type
+Method-returnType:null
+Method-parameters:[String name]
+FieldAccess:name
+Class:Sequence
+Field:SEQUENCE_VARIABLE_TYPE_NAME
+Field:values
+Method-name:Sequence
+Method-returnType:null
+Method-parameters:[ImmutableList<VariableValue> values]
+FieldAccess:values
+Method-name:getSequenceValue
+Method-returnType:Iterable<? extends VariableValue>
+Method-parameters:[String variableName]
+Method-name:getVariableTypeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:isTruthy
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+FieldAccess:values
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Class:StructureSequence
+Field:values
+Method-name:StructureSequence
+Method-returnType:null
+Method-parameters:[ImmutableList<ImmutableMap<String,VariableValue>> values]
+MethodInvocation:checkNotNull
+FieldAccess:values
+Method-name:getSequenceValue
+Method-returnType:Iterable<? extends VariableValue>
+Method-parameters:[String variableName]
+MethodInvocation:builder
+MethodInvocation:add
+MethodInvocation:build
+Method-name:getVariableTypeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:isTruthy
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+FieldAccess:values
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Class:StringSequence
+Field:values
+Field:hash
+Method-name:StringSequence
+Method-returnType:null
+Method-parameters:[Iterable<String> values]
+MethodInvocation:checkNotNull
+FieldAccess:values
+Method-name:getSequenceValue
+Method-returnType:Iterable<? extends VariableValue>
+Method-parameters:[String variableName]
+MethodInvocation:builder
+MethodInvocation:add
+MethodInvocation:build
+Method-name:getVariableTypeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:isTruthy
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:elementsEqual
+FieldAccess:values
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Class:StringSetSequence
+Field:values
+Method-name:StringSetSequence
+Method-returnType:null
+Method-parameters:[NestedSet<String> values]
+MethodInvocation:checkNotNull
+FieldAccess:values
+Method-name:getSequenceValue
+Method-returnType:Iterable<? extends VariableValue>
+Method-parameters:[String variableName]
+MethodInvocation:builder
+MethodInvocation:toList
+MethodInvocation:add
+MethodInvocation:build
+Method-name:getVariableTypeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:isTruthy
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:shallowEquals
+FieldAccess:values
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:shallowHashCode
+Class:StructureValue
+Field:STRUCTURE_VARIABLE_TYPE_NAME
+Field:value
+Method-name:StructureValue
+Method-returnType:null
+Method-parameters:[ImmutableMap<String,VariableValue> value]
+FieldAccess:value
+Method-name:getFieldValue
+Method-returnType:VariableValue
+Method-parameters:[String variableName, String field, @Nullable ArtifactExpander expander, boolean throwOnMissingVariable]
+MethodInvocation:containsKey
+MethodInvocation:get
+Method-name:getVariableTypeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:isTruthy
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+FieldAccess:value
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Class:StringValue
+Field:STRING_VARIABLE_TYPE_NAME
+Field:value
+Method-name:StringValue
+Method-returnType:null
+Method-parameters:[String value]
+MethodInvocation:checkNotNull
+FieldAccess:value
+Method-name:getStringValue
+Method-returnType:String
+Method-parameters:[String variableName]
+Method-name:getVariableTypeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:isTruthy
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+FieldAccess:value
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Class:IntegerValue
+Field:INTEGER_VALUE_TYPE_NAME
+Field:value
+Method-name:IntegerValue
+Method-returnType:null
+Method-parameters:[int value]
+FieldAccess:value
+Method-name:getStringValue
+Method-returnType:String
+Method-parameters:[String variableName]
+MethodInvocation:toString
+Method-name:getVariableTypeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:isTruthy
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+FieldAccess:value
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Class:Builder
+Field:variablesMap
+Field:parent
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[@Nullable CcToolchainVariables parent]
+FieldAccess:parent
+Method-name:addIntegerVariable
+Method-returnType:Builder
+Method-parameters:[String name, int value]
+MethodInvocation:put
+Method-name:addStringVariable
+Method-returnType:Builder
+Method-parameters:[String name, String value]
+MethodInvocation:checkVariableNotPresentAlready
+MethodInvocation:checkNotNull
+MethodInvocation:put
+Method-name:overrideStringVariable
+Method-returnType:Builder
+Method-parameters:[String name, String value]
+MethodInvocation:checkNotNull
+MethodInvocation:put
+Method-name:addStringSequenceVariable
+Method-returnType:Builder
+Method-parameters:[String name, ImmutableSet<String> values]
+MethodInvocation:checkVariableNotPresentAlready
+MethodInvocation:checkNotNull
+MethodInvocation:builder
+MethodInvocation:addAll
+MethodInvocation:put
+MethodInvocation:build
+Method-name:addStringSequenceVariable
+Method-returnType:Builder
+Method-parameters:[String name, NestedSet<String> values]
+MethodInvocation:checkVariableNotPresentAlready
+MethodInvocation:checkNotNull
+MethodInvocation:put
+Method-name:addStringSequenceVariable
+Method-returnType:Builder
+Method-parameters:[String name, Iterable<String> values]
+MethodInvocation:checkVariableNotPresentAlready
+MethodInvocation:checkNotNull
+MethodInvocation:put
+Method-name:addCustomBuiltVariable
+Method-returnType:Builder
+Method-parameters:[String name, CcToolchainVariables.VariableValueBuilder builder]
+MethodInvocation:checkVariableNotPresentAlready
+MethodInvocation:checkNotNull
+MethodInvocation:put
+MethodInvocation:build
+Method-name:addAllStringVariables
+Method-returnType:Builder
+Method-parameters:[Map<String,String> variables]
+MethodInvocation:keySet
+MethodInvocation:checkVariableNotPresentAlready
+MethodInvocation:putAll
+Method-name:checkVariableNotPresentAlready
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:checkNotNull
+MethodInvocation:checkArgument
+MethodInvocation:containsKey
+Method-name:addAllNonTransitive
+Method-returnType:Builder
+Method-parameters:[CcToolchainVariables variables]
+MethodInvocation:intersection
+MethodInvocation:keySet
+MethodInvocation:getVariablesMap
+MethodInvocation:keySet
+MethodInvocation:checkArgument
+MethodInvocation:isEmpty
+MethodInvocation:putAll
+FieldAccess:variablesMap
+MethodInvocation:getVariablesMap
+Method-name:build
+Method-returnType:CcToolchainVariables
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:values
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:keySet
+MethodInvocation:copyOf
+Class:MapVariables
+Field:INTERNER
+MethodInvocation:newWeakInterner
+Field:parent
+Field:variablesMap
+Method-name:MapVariables
+Method-returnType:null
+Method-parameters:[CcToolchainVariables parent, ImmutableMap<String,Object> variablesMap]
+FieldAccess:parent
+FieldAccess:variablesMap
+Method-name:create
+Method-returnType:MapVariables
+Method-parameters:[CcToolchainVariables parent, ImmutableMap<String,Object> variablesMap]
+MethodInvocation:intern
+Method-name:getVariablesMap
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+Method-name:getNonStructuredVariable
+Method-returnType:VariableValue
+Method-parameters:[String name]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:getNonStructuredVariable
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+FieldAccess:parent
+MethodInvocation:equals
+FieldAccess:variablesMap
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:identityHashCode
+Class:SingleVariables
+Field:INTERNER
+MethodInvocation:newWeakInterner
+Field:parent
+Field:name
+Field:variableValue
+Field:hash
+Method-name:SingleVariables
+Method-returnType:null
+Method-parameters:[CcToolchainVariables parent, String name, VariableValue variableValue]
+FieldAccess:parent
+FieldAccess:name
+FieldAccess:variableValue
+Method-name:create
+Method-returnType:SingleVariables
+Method-parameters:[CcToolchainVariables parent, String name, VariableValue variableValue]
+MethodInvocation:intern
+Method-name:getVariablesMap
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+MethodInvocation:of
+Method-name:getNonStructuredVariable
+Method-returnType:VariableValue
+Method-parameters:[String name]
+MethodInvocation:equals
+FieldAccess:name
+MethodInvocation:getNonStructuredVariable
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+FieldAccess:parent
+MethodInvocation:equals
+FieldAccess:name
+MethodInvocation:equals
+FieldAccess:variableValue
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash

@@ -1,0 +1,271 @@
+Class:JobVertex
+Field:serialVersionUID
+Field:DEFAULT_NAME
+Field:id
+Field:operatorIDs
+Field:results
+Field:inputs
+Field:operatorCoordinators
+Field:parallelism
+Field:maxParallelism
+Field:minResources
+Field:preferredResources
+Field:configuration
+Field:invokableClassName
+Field:isStoppable
+Field:inputSplitSource
+Field:name
+Field:slotSharingGroup
+Field:coLocationGroup
+Field:operatorName
+Field:operatorDescription
+Field:operatorPrettyName
+Field:resultOptimizerProperties
+Field:inputDependencyConstraint
+Method-name:JobVertex
+Method-returnType:null
+Method-parameters:[String name]
+Method-name:JobVertex
+Method-returnType:null
+Method-parameters:[String name, JobVertexID id]
+FieldAccess:name
+FieldAccess:id
+MethodInvocation:generatedIDOnly
+MethodInvocation:fromJobVertexID
+FieldAccess:id
+FieldAccess:operatorIDs
+MethodInvocation:singletonList
+Method-name:JobVertex
+Method-returnType:null
+Method-parameters:[String name, JobVertexID primaryId, List<OperatorIDPair> operatorIDPairs]
+FieldAccess:name
+FieldAccess:id
+FieldAccess:operatorIDs
+MethodInvocation:unmodifiableList
+Method-name:getID
+Method-returnType:JobVertexID
+Method-parameters:[]
+FieldAccess:id
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:name
+Method-name:setName
+Method-returnType:void
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:getNumberOfProducedIntermediateDataSets
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:results
+Method-name:getNumberOfInputs
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:inputs
+Method-name:getOperatorIDs
+Method-returnType:List<OperatorIDPair>
+Method-parameters:[]
+Method-name:getConfiguration
+Method-returnType:Configuration
+Method-parameters:[]
+FieldAccess:configuration
+FieldAccess:configuration
+FieldAccess:configuration
+Method-name:setInvokableClass
+Method-returnType:void
+Method-parameters:[Class<? extends AbstractInvokable> invokable]
+MethodInvocation:checkNotNull
+FieldAccess:invokableClassName
+MethodInvocation:getName
+Method-name:getInvokableClassName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:invokableClassName
+Method-name:getInvokableClass
+Method-returnType:Class<? extends AbstractInvokable>
+Method-parameters:[ClassLoader cl]
+MethodInvocation:asSubclass
+MethodInvocation:forName
+MethodInvocation:getName
+Method-name:getParallelism
+Method-returnType:int
+Method-parameters:[]
+Method-name:setParallelism
+Method-returnType:void
+Method-parameters:[int parallelism]
+FieldAccess:parallelism
+Method-name:getMaxParallelism
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxParallelism
+Method-returnType:void
+Method-parameters:[int maxParallelism]
+FieldAccess:maxParallelism
+Method-name:getMinResources
+Method-returnType:ResourceSpec
+Method-parameters:[]
+Method-name:getPreferredResources
+Method-returnType:ResourceSpec
+Method-parameters:[]
+Method-name:setResources
+Method-returnType:void
+Method-parameters:[ResourceSpec minResources, ResourceSpec preferredResources]
+FieldAccess:minResources
+MethodInvocation:checkNotNull
+FieldAccess:preferredResources
+MethodInvocation:checkNotNull
+Method-name:getInputSplitSource
+Method-returnType:InputSplitSource<?>
+Method-parameters:[]
+Method-name:setInputSplitSource
+Method-returnType:void
+Method-parameters:[InputSplitSource<?> inputSplitSource]
+FieldAccess:inputSplitSource
+Method-name:getProducedDataSets
+Method-returnType:List<IntermediateDataSet>
+Method-parameters:[]
+FieldAccess:results
+Method-name:getInputs
+Method-returnType:List<JobEdge>
+Method-parameters:[]
+FieldAccess:inputs
+Method-name:getOperatorCoordinators
+Method-returnType:List<SerializedValue<OperatorCoordinator.Provider>>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+Method-name:addOperatorCoordinator
+Method-returnType:void
+Method-parameters:[SerializedValue<OperatorCoordinator.Provider> serializedCoordinatorProvider]
+MethodInvocation:add
+Method-name:setSlotSharingGroup
+Method-returnType:void
+Method-parameters:[SlotSharingGroup grp]
+FieldAccess:slotSharingGroup
+MethodInvocation:removeVertexFromGroup
+FieldAccess:slotSharingGroup
+MethodInvocation:getID
+MethodInvocation:getMinResources
+FieldAccess:slotSharingGroup
+MethodInvocation:addVertexToGroup
+MethodInvocation:getID
+MethodInvocation:getMinResources
+Method-name:getSlotSharingGroup
+Method-returnType:SlotSharingGroup
+Method-parameters:[]
+Method-name:setStrictlyCoLocatedWith
+Method-returnType:void
+Method-parameters:[JobVertex strictlyCoLocatedWith]
+FieldAccess:slotSharingGroup
+FieldAccess:slotSharingGroup
+FieldAccess:coLocationGroup
+FieldAccess:coLocationGroup
+MethodInvocation:addVertex
+MethodInvocation:addVertex
+FieldAccess:coLocationGroup
+MethodInvocation:mergeInto
+Method-name:getCoLocationGroup
+Method-returnType:CoLocationGroup
+Method-parameters:[]
+Method-name:updateCoLocationGroup
+Method-returnType:void
+Method-parameters:[CoLocationGroup group]
+FieldAccess:coLocationGroup
+Method-name:createAndAddResultDataSet
+Method-returnType:IntermediateDataSet
+Method-parameters:[ResultPartitionType partitionType]
+MethodInvocation:createAndAddResultDataSet
+Method-name:createAndAddResultDataSet
+Method-returnType:IntermediateDataSet
+Method-parameters:[IntermediateDataSetID id, ResultPartitionType partitionType]
+MethodInvocation:add
+FieldAccess:results
+Method-name:connectDataSetAsInput
+Method-returnType:JobEdge
+Method-parameters:[IntermediateDataSet dataSet, DistributionPattern distPattern]
+MethodInvocation:add
+FieldAccess:inputs
+MethodInvocation:addConsumer
+Method-name:connectNewDataSetAsInput
+Method-returnType:JobEdge
+Method-parameters:[JobVertex input, DistributionPattern distPattern, ResultPartitionType partitionType]
+MethodInvocation:createAndAddResultDataSet
+MethodInvocation:add
+FieldAccess:inputs
+MethodInvocation:addConsumer
+Method-name:connectIdInput
+Method-returnType:void
+Method-parameters:[IntermediateDataSetID dataSetId, DistributionPattern distPattern]
+MethodInvocation:add
+FieldAccess:inputs
+Method-name:isInputVertex
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+FieldAccess:inputs
+Method-name:isStoppable
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:isStoppable
+Method-name:isOutputVertex
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+FieldAccess:results
+Method-name:hasNoConnectedInputs
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isIdReference
+Method-name:initializeOnMaster
+Method-returnType:void
+Method-parameters:[ClassLoader loader]
+Method-name:finalizeOnMaster
+Method-returnType:void
+Method-parameters:[ClassLoader loader]
+Method-name:getOperatorName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setOperatorName
+Method-returnType:void
+Method-parameters:[String operatorName]
+FieldAccess:operatorName
+Method-name:getOperatorDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:setOperatorDescription
+Method-returnType:void
+Method-parameters:[String operatorDescription]
+FieldAccess:operatorDescription
+Method-name:setOperatorPrettyName
+Method-returnType:void
+Method-parameters:[String operatorPrettyName]
+FieldAccess:operatorPrettyName
+Method-name:getOperatorPrettyName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getResultOptimizerProperties
+Method-returnType:String
+Method-parameters:[]
+Method-name:setResultOptimizerProperties
+Method-returnType:void
+Method-parameters:[String resultOptimizerProperties]
+FieldAccess:resultOptimizerProperties
+Method-name:getInputDependencyConstraint
+Method-returnType:InputDependencyConstraint
+Method-parameters:[]
+Method-name:setInputDependencyConstraint
+Method-returnType:void
+Method-parameters:[InputDependencyConstraint inputDependencyConstraint]
+FieldAccess:inputDependencyConstraint
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:name
+FieldAccess:invokableClassName
+Method-name:addVertex
+Method-returnType:void
+Method-parameters:[CoLocationGroup coLocationGroup]
+MethodInvocation:checkNotNull
+MethodInvocation:add
+MethodInvocation:getVertices

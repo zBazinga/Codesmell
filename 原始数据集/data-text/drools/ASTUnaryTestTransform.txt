@@ -1,0 +1,108 @@
+Class:ASTUnaryTestTransform
+Method-name:defaultVisit
+Method-returnType:UnaryTestSubexpr
+Method-parameters:[ASTNode n]
+MethodInvocation:propagateWildcard
+Method-name:visit
+Method-returnType:UnaryTestSubexpr
+Method-parameters:[UnaryTestListNode n]
+MethodInvocation:getElements
+MethodInvocation:accept
+MethodInvocation:isWildcard
+MethodInvocation:add
+MethodInvocation:rewriteToUnaryTestExpr
+MethodInvocation:isUnaryTest
+MethodInvocation:add
+MethodInvocation:rewriteToUnaryEqInExpr
+MethodInvocation:add
+MethodInvocation:copyLocationAttributesFrom
+MethodInvocation:getState
+Method-name:rewriteToUnaryTestExpr
+Method-returnType:BaseNode
+Method-parameters:[BaseNode node]
+MethodInvocation:copyLocationAttributesFrom
+Method-name:rewriteToUnaryEqInExpr
+Method-returnType:BaseNode
+Method-parameters:[BaseNode node]
+MethodInvocation:copyLocationAttributesFrom
+MethodInvocation:copyLocationAttributesFrom
+Method-name:visit
+Method-returnType:UnaryTestSubexpr
+Method-parameters:[ASTNode n]
+Method-name:visit
+Method-returnType:UnaryTestSubexpr
+Method-parameters:[DashNode n]
+Method-name:visit
+Method-returnType:UnaryTestSubexpr
+Method-parameters:[BooleanNode n]
+Method-name:visit
+Method-returnType:UnaryTestSubexpr
+Method-parameters:[NumberNode n]
+Method-name:visit
+Method-returnType:UnaryTestSubexpr
+Method-parameters:[StringNode n]
+Method-name:visit
+Method-returnType:UnaryTestSubexpr
+Method-parameters:[NullNode n]
+Method-name:visit
+Method-returnType:UnaryTestSubexpr
+Method-parameters:[TypeNode n]
+Method-name:visit
+Method-returnType:UnaryTestSubexpr
+Method-parameters:[NameDefNode n]
+Method-name:visit
+Method-returnType:UnaryTestSubexpr
+Method-parameters:[NameRefNode n]
+MethodInvocation:equals
+MethodInvocation:getText
+Method-name:visit
+Method-returnType:UnaryTestSubexpr
+Method-parameters:[QualifiedNameNode n]
+MethodInvocation:accept
+MethodInvocation:get
+MethodInvocation:getParts
+MethodInvocation:isWildcard
+Method-name:propagateWildcard
+Method-returnType:UnaryTestSubexpr
+Method-parameters:[ASTNode n]
+MethodInvocation:anyMatch
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getChildrenNode
+MethodInvocation:accept
+Class:UnaryTestSubexpr
+Field:node
+Method-name:UnaryTestSubexpr
+Method-returnType:null
+Method-parameters:[BaseNode node]
+FieldAccess:node
+Method-name:node
+Method-returnType:BaseNode
+Method-parameters:[]
+Method-name:isWildcard
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isUnaryTest
+Method-returnType:boolean
+Method-parameters:[]
+Class:TopLevel
+Method-name:TopLevel
+Method-returnType:null
+Method-parameters:[BaseNode node]
+Method-name:isWildcard
+Method-returnType:boolean
+Method-parameters:[]
+Class:WildCardUnaryExpression
+Method-name:WildCardUnaryExpression
+Method-returnType:null
+Method-parameters:[BaseNode node]
+Method-name:isWildcard
+Method-returnType:boolean
+Method-parameters:[]
+Class:SimpleUnaryExpression
+Method-name:SimpleUnaryExpression
+Method-returnType:null
+Method-parameters:[BaseNode node]
+Method-name:isWildcard
+Method-returnType:boolean
+Method-parameters:[]

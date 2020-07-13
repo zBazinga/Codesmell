@@ -1,0 +1,89 @@
+Class:ExpressionParser
+Field:CLOSE_PARAN
+Field:OPEN_PARAN
+Field:OR
+Field:AND
+Field:NOT
+Field:SPACE
+Field:DOUBLE_QUOTES
+Method-name:parse
+Method-returnType:ExpressionNode
+Method-parameters:[String expS]
+MethodInvocation:trim
+MethodInvocation:toBytes
+MethodInvocation:processOpenParan
+MethodInvocation:skipSpaces
+MethodInvocation:processCloseParan
+MethodInvocation:skipSpaces
+MethodInvocation:processANDorOROp
+MethodInvocation:getOperator
+MethodInvocation:skipSpaces
+MethodInvocation:processNOTOp
+MethodInvocation:endDoubleQuotesFound
+MethodInvocation:add
+MethodInvocation:toArray
+MethodInvocation:trim
+MethodInvocation:toString
+MethodInvocation:isEmpty
+MethodInvocation:processLabelExpNode
+MethodInvocation:skipSpaces
+MethodInvocation:isValidAuthChar
+MethodInvocation:isEndOfLabel
+MethodInvocation:trim
+MethodInvocation:isEmpty
+MethodInvocation:processLabelExpNode
+MethodInvocation:skipSpaces
+MethodInvocation:size
+MethodInvocation:pop
+MethodInvocation:getOperator
+MethodInvocation:size
+MethodInvocation:getChildExps
+MethodInvocation:size
+MethodInvocation:getChildExps
+Method-name:skipSpaces
+Method-returnType:int
+Method-parameters:[byte[] exp, int index]
+Method-name:processCloseParan
+Method-returnType:void
+Method-parameters:[Stack<ExpressionNode> expStack, String expS, int index]
+Method-name:processOpenParan
+Method-returnType:void
+Method-parameters:[Stack<ExpressionNode> expStack, String expS, int index]
+MethodInvocation:isEmpty
+MethodInvocation:peek
+MethodInvocation:getOperator
+MethodInvocation:size
+MethodInvocation:getChildExps
+MethodInvocation:getOperator
+MethodInvocation:size
+MethodInvocation:getChildExps
+MethodInvocation:push
+Method-name:processANDorOROp
+Method-returnType:void
+Method-parameters:[Operator op, Stack<ExpressionNode> expStack, String expS, int index]
+MethodInvocation:isEmpty
+MethodInvocation:pop
+MethodInvocation:isSingleNode
+MethodInvocation:push
+MethodInvocation:size
+MethodInvocation:getChildExps
+MethodInvocation:push
+Method-name:processNOTOp
+Method-returnType:void
+Method-parameters:[Stack<ExpressionNode> expStack, String expS, int index]
+MethodInvocation:isEmpty
+MethodInvocation:peek
+MethodInvocation:isSingleNode
+MethodInvocation:isSingleNode
+MethodInvocation:size
+MethodInvocation:getChildExps
+MethodInvocation:push
+Method-name:endDoubleQuotesFound
+Method-returnType:boolean
+Method-parameters:[byte b]
+Method-name:isEndOfLabel
+Method-returnType:boolean
+Method-parameters:[byte b]
+Method-name:getOperator
+Method-returnType:Operator
+Method-parameters:[byte op]

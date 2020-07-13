@@ -1,0 +1,177 @@
+Class:MutablePersistenceUnitInfo
+Field:persistenceUnitName
+Field:persistenceProviderClassName
+Field:transactionType
+Field:nonJtaDataSource
+Field:jtaDataSource
+Field:mappingFileNames
+Field:jarFileUrls
+Field:persistenceUnitRootUrl
+Field:managedClassNames
+Field:managedPackages
+Field:excludeUnlistedClasses
+Field:sharedCacheMode
+Field:validationMode
+Field:properties
+Field:persistenceXMLSchemaVersion
+Field:persistenceProviderPackageName
+Method-name:setPersistenceUnitName
+Method-returnType:void
+Method-parameters:[@Nullable String persistenceUnitName]
+FieldAccess:persistenceUnitName
+Method-name:getPersistenceUnitName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:persistenceUnitName
+Method-name:setPersistenceProviderClassName
+Method-returnType:void
+Method-parameters:[@Nullable String persistenceProviderClassName]
+FieldAccess:persistenceProviderClassName
+Method-name:getPersistenceProviderClassName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:persistenceProviderClassName
+Method-name:setTransactionType
+Method-returnType:void
+Method-parameters:[PersistenceUnitTransactionType transactionType]
+FieldAccess:transactionType
+Method-name:getTransactionType
+Method-returnType:PersistenceUnitTransactionType
+Method-parameters:[]
+FieldAccess:transactionType
+FieldAccess:transactionType
+FieldAccess:jtaDataSource
+Method-name:setJtaDataSource
+Method-returnType:void
+Method-parameters:[@Nullable DataSource jtaDataSource]
+FieldAccess:jtaDataSource
+Method-name:getJtaDataSource
+Method-returnType:DataSource
+Method-parameters:[]
+FieldAccess:jtaDataSource
+Method-name:setNonJtaDataSource
+Method-returnType:void
+Method-parameters:[@Nullable DataSource nonJtaDataSource]
+FieldAccess:nonJtaDataSource
+Method-name:getNonJtaDataSource
+Method-returnType:DataSource
+Method-parameters:[]
+FieldAccess:nonJtaDataSource
+Method-name:addMappingFileName
+Method-returnType:void
+Method-parameters:[String mappingFileName]
+MethodInvocation:add
+FieldAccess:mappingFileNames
+Method-name:getMappingFileNames
+Method-returnType:List<String>
+Method-parameters:[]
+FieldAccess:mappingFileNames
+Method-name:addJarFileUrl
+Method-returnType:void
+Method-parameters:[URL jarFileUrl]
+MethodInvocation:add
+FieldAccess:jarFileUrls
+Method-name:getJarFileUrls
+Method-returnType:List<URL>
+Method-parameters:[]
+FieldAccess:jarFileUrls
+Method-name:setPersistenceUnitRootUrl
+Method-returnType:void
+Method-parameters:[@Nullable URL persistenceUnitRootUrl]
+FieldAccess:persistenceUnitRootUrl
+Method-name:getPersistenceUnitRootUrl
+Method-returnType:URL
+Method-parameters:[]
+FieldAccess:persistenceUnitRootUrl
+Method-name:addManagedClassName
+Method-returnType:void
+Method-parameters:[String managedClassName]
+MethodInvocation:add
+FieldAccess:managedClassNames
+Method-name:getManagedClassNames
+Method-returnType:List<String>
+Method-parameters:[]
+FieldAccess:managedClassNames
+Method-name:addManagedPackage
+Method-returnType:void
+Method-parameters:[String packageName]
+MethodInvocation:add
+FieldAccess:managedPackages
+Method-name:getManagedPackages
+Method-returnType:List<String>
+Method-parameters:[]
+FieldAccess:managedPackages
+Method-name:setExcludeUnlistedClasses
+Method-returnType:void
+Method-parameters:[boolean excludeUnlistedClasses]
+FieldAccess:excludeUnlistedClasses
+Method-name:excludeUnlistedClasses
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:excludeUnlistedClasses
+Method-name:setSharedCacheMode
+Method-returnType:void
+Method-parameters:[SharedCacheMode sharedCacheMode]
+FieldAccess:sharedCacheMode
+Method-name:getSharedCacheMode
+Method-returnType:SharedCacheMode
+Method-parameters:[]
+FieldAccess:sharedCacheMode
+Method-name:setValidationMode
+Method-returnType:void
+Method-parameters:[ValidationMode validationMode]
+FieldAccess:validationMode
+Method-name:getValidationMode
+Method-returnType:ValidationMode
+Method-parameters:[]
+FieldAccess:validationMode
+Method-name:addProperty
+Method-returnType:void
+Method-parameters:[String name, String value]
+MethodInvocation:setProperty
+FieldAccess:properties
+Method-name:setProperties
+Method-returnType:void
+Method-parameters:[Properties properties]
+MethodInvocation:notNull
+FieldAccess:properties
+Method-name:getProperties
+Method-returnType:Properties
+Method-parameters:[]
+FieldAccess:properties
+Method-name:setPersistenceXMLSchemaVersion
+Method-returnType:void
+Method-parameters:[String persistenceXMLSchemaVersion]
+FieldAccess:persistenceXMLSchemaVersion
+Method-name:getPersistenceXMLSchemaVersion
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:persistenceXMLSchemaVersion
+Method-name:setPersistenceProviderPackageName
+Method-returnType:void
+Method-parameters:[@Nullable String persistenceProviderPackageName]
+FieldAccess:persistenceProviderPackageName
+Method-name:getPersistenceProviderPackageName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:persistenceProviderPackageName
+Method-name:getClassLoader
+Method-returnType:ClassLoader
+Method-parameters:[]
+MethodInvocation:getDefaultClassLoader
+Method-name:addTransformer
+Method-returnType:void
+Method-parameters:[ClassTransformer classTransformer]
+Method-name:getNewTempClassLoader
+Method-returnType:ClassLoader
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:persistenceUnitName
+FieldAccess:persistenceUnitRootUrl
+Method-name:postProcessPersistenceUnitInfo
+Method-returnType:void
+Method-parameters:[DefaultPersistenceUnitManager defaultPersistenceUnitManager]
+MethodInvocation:getPersistenceUnitPostProcessors
+MethodInvocation:postProcessPersistenceUnitInfo

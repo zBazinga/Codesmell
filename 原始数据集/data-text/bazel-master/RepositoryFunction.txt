@@ -1,0 +1,248 @@
+Class:RepositoryFunction
+Field:clientEnvironment
+Method-name:restart
+Method-returnType:EvalException
+Method-parameters:[]
+Method-name:getEnviron
+Method-returnType:Iterable<String>
+Method-parameters:[Rule rule]
+MethodInvocation:isAttrDefined
+MethodInvocation:getAttr
+MethodInvocation:getAttributeContainer
+MethodInvocation:of
+Method-name:verifyLabelMarkerData
+Method-returnType:boolean
+Method-parameters:[Rule rule, String key, String value, Environment env]
+MethodInvocation:checkArgument
+MethodInvocation:startsWith
+MethodInvocation:substring
+MethodInvocation:isAbsolute
+MethodInvocation:getRootedPathFromLabel
+MethodInvocation:parseAbsolute
+MethodInvocation:of
+MethodInvocation:create
+MethodInvocation:getRelative
+MethodInvocation:getPackageDirectory
+MethodInvocation:getPackage
+MethodInvocation:toRootedPath
+MethodInvocation:fromPath
+MethodInvocation:getParentDirectory
+MethodInvocation:create
+MethodInvocation:getBaseName
+MethodInvocation:key
+MethodInvocation:getValueOrThrow
+MethodInvocation:isFile
+MethodInvocation:isSpecialFile
+MethodInvocation:equals
+MethodInvocation:fileValueToMarkerValue
+Method-name:fileValueToMarkerValue
+Method-returnType:String
+Method-parameters:[FileValue fileValue]
+MethodInvocation:checkArgument
+MethodInvocation:isFile
+MethodInvocation:isSpecialFile
+MethodInvocation:getDigest
+MethodInvocation:realFileStateValue
+MethodInvocation:getDigest
+MethodInvocation:asPath
+MethodInvocation:realRootedPath
+MethodInvocation:encode
+MethodInvocation:lowerCase
+MethodInvocation:base16
+Method-name:verifyMarkerDataForFiles
+Method-returnType:boolean
+Method-parameters:[Rule rule, Map<String,String> markerData, Environment env]
+MethodInvocation:entrySet
+MethodInvocation:startsWith
+MethodInvocation:getKey
+MethodInvocation:verifyLabelMarkerData
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:getRootedPathFromLabel
+Method-returnType:RootedPath
+Method-parameters:[Label label, Environment env]
+MethodInvocation:isDefault
+MethodInvocation:getRepository
+MethodInvocation:getPackageIdentifier
+MethodInvocation:create
+MethodInvocation:makeAbsolute
+MethodInvocation:getPackageIdentifier
+MethodInvocation:getName
+MethodInvocation:key
+MethodInvocation:getPackageIdentifier
+MethodInvocation:getValue
+MethodInvocation:restart
+MethodInvocation:packageExists
+MethodInvocation:getErrorMsg
+MethodInvocation:explainNoBuildFileValue
+MethodInvocation:getPackageIdentifier
+MethodInvocation:getRoot
+MethodInvocation:toRootedPath
+MethodInvocation:toPathFragment
+Method-name:createWorkspaceFile
+Method-returnType:void
+Method-parameters:[Path repositoryDirectory, String ruleKind, String ruleName]
+MethodInvocation:getRelative
+MethodInvocation:writeContent
+MethodInvocation:forName
+MethodInvocation:format
+Method-name:writeFile
+Method-returnType:RepositoryDirectoryValue.Builder
+Method-parameters:[Path repositoryDirectory, String filename, String contents]
+MethodInvocation:getRelative
+MethodInvocation:exists
+MethodInvocation:delete
+MethodInvocation:writeContentAsLatin1
+MethodInvocation:setPath
+MethodInvocation:builder
+Method-name:writeBuildFile
+Method-returnType:RepositoryDirectoryValue.Builder
+Method-parameters:[Path repositoryDirectory, String contents]
+MethodInvocation:writeFile
+Method-name:getPathAttr
+Method-returnType:String
+Method-parameters:[Rule rule]
+MethodInvocation:of
+MethodInvocation:get
+Method-name:getTargetPath
+Method-returnType:PathFragment
+Method-parameters:[String userDefinedPath, Path workspace]
+MethodInvocation:create
+MethodInvocation:asFragment
+MethodInvocation:getRelative
+Method-name:symlinkLocalRepositoryContents
+Method-returnType:boolean
+Method-parameters:[Path repositoryDirectory, Path targetDirectory, String userDefinedPath]
+MethodInvocation:createDirectoryAndParents
+MethodInvocation:getDirectoryEntries
+MethodInvocation:getRelative
+MethodInvocation:getBaseName
+MethodInvocation:createSymbolicLink
+MethodInvocation:format
+MethodInvocation:getMessage
+Method-name:createSymbolicLink
+Method-returnType:void
+Method-parameters:[Path from, Path to]
+MethodInvocation:exists
+MethodInvocation:delete
+MethodInvocation:ensureSymbolicLink
+MethodInvocation:format
+MethodInvocation:getMessage
+Method-name:getRepositoryDirectory
+Method-returnType:FileValue
+Method-parameters:[Path repositoryDirectory, Environment env]
+MethodInvocation:key
+MethodInvocation:toRootedPath
+MethodInvocation:fromPath
+MethodInvocation:getValueOrThrow
+MethodInvocation:getMessage
+Method-name:getExternalRepositoryDirectory
+Method-returnType:Path
+Method-parameters:[BlazeDirectories directories]
+MethodInvocation:getRelative
+MethodInvocation:getOutputBase
+Method-name:addExternalFilesDependencies
+Method-returnType:void
+Method-parameters:[RootedPath rootedPath, boolean isDirectory, BlazeDirectories directories, Environment env]
+MethodInvocation:getExternalRepositoryDirectory
+MethodInvocation:relativeTo
+MethodInvocation:asPath
+MethodInvocation:isEmpty
+MethodInvocation:getSegment
+MethodInvocation:getRuleByName
+MethodInvocation:get
+MethodInvocation:segmentCount
+MethodInvocation:equals
+MethodInvocation:getRuleClass
+MethodInvocation:endsWithWorkspaceFileName
+MethodInvocation:getValue
+MethodInvocation:key
+MethodInvocation:createFromValidStrippedName
+MethodInvocation:get
+MethodInvocation:get
+Method-name:addManagedDirectoryDependencies
+Method-returnType:void
+Method-parameters:[RepositoryName repositoryName, Environment env]
+MethodInvocation:getValue
+MethodInvocation:key
+Method-name:fetch
+Method-returnType:RepositoryDirectoryValue.Builder
+Method-parameters:[Rule rule, Path outputDirectory, BlazeDirectories directories, Environment env, Map<String,String> markerData, SkyKey key]
+Method-name:verifyMarkerData
+Method-returnType:boolean
+Method-parameters:[Rule rule, Map<String,String> markerData, Environment env]
+MethodInvocation:verifyEnvironMarkerData
+MethodInvocation:getEnviron
+MethodInvocation:verifyMarkerDataForFiles
+MethodInvocation:verifySemanticsMarkerData
+Method-name:verifySemanticsMarkerData
+Method-returnType:boolean
+Method-parameters:[Map<String,String> markerData, Environment env]
+Method-name:declareEnvironmentDependencies
+Method-returnType:Map<String,String>
+Method-parameters:[Map<String,String> markerData, Environment env, Iterable<String> keys]
+MethodInvocation:getEnvironmentView
+MethodInvocation:get
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:verifyEnvironMarkerData
+Method-returnType:boolean
+Method-parameters:[Map<String,String> markerData, Environment env, Iterable<String> keys]
+MethodInvocation:getEnvironmentView
+MethodInvocation:valuesMissing
+MethodInvocation:get
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:keySet
+MethodInvocation:startsWith
+MethodInvocation:containsKey
+MethodInvocation:substring
+MethodInvocation:entrySet
+MethodInvocation:containsKey
+MethodInvocation:getKey
+MethodInvocation:get
+MethodInvocation:getKey
+MethodInvocation:equals
+MethodInvocation:getValue
+Method-name:isLocal
+Method-returnType:boolean
+Method-parameters:[Rule rule]
+Method-name:isConfigure
+Method-returnType:boolean
+Method-parameters:[Rule rule]
+Method-name:setClientEnvironment
+Method-returnType:void
+Method-parameters:[Map<String,String> clientEnvironment]
+FieldAccess:clientEnvironment
+Method-name:getRuleDefinition
+Method-returnType:Class<? extends RuleDefinition>
+Method-parameters:[]
+Class:RepositoryFunctionException
+Method-name:RepositoryFunctionException
+Method-returnType:null
+Method-parameters:[NoSuchPackageException cause, Transience transience]
+Method-name:RepositoryFunctionException
+Method-returnType:null
+Method-parameters:[IOException cause, Transience transience]
+Method-name:RepositoryFunctionException
+Method-returnType:null
+Method-parameters:[EvalException cause, Transience transience]
+Class:RepositoryNotFoundException
+Method-name:RepositoryNotFoundException
+Method-returnType:null
+Method-parameters:[String repositoryName]
+Class:RepositoryMissingDependencyException
+Method-name:RepositoryMissingDependencyException
+Method-returnType:null
+Method-parameters:[]
+Method-name:canBeAddedToStackTrace
+Method-returnType:boolean
+Method-parameters:[]

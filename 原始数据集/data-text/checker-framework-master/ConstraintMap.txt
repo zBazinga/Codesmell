@@ -1,0 +1,123 @@
+Class:ConstraintMap
+Field:targetToRecords
+Method-name:ConstraintMap
+Method-returnType:null
+Method-parameters:[Set<TypeVariable> targets]
+MethodInvocation:put
+Method-name:ConstraintMap
+Method-returnType:null
+Method-parameters:[final ConstraintMap toCopy]
+MethodInvocation:putAll
+FieldAccess:targetToRecords
+Method-name:getConstraints
+Method-returnType:TargetConstraints
+Method-parameters:[final TypeVariable target]
+MethodInvocation:get
+Method-name:getTargets
+Method-returnType:Set<TypeVariable>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:addTargetEquality
+Method-returnType:void
+Method-parameters:[final TypeVariable target, final TypeVariable equivalent, AnnotationMirrorSet hierarchies]
+FieldAccess:equalities
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:addAll
+Method-name:addPrimaryEqualities
+Method-returnType:void
+Method-parameters:[final TypeVariable target, QualifierHierarchy qualHierarchy, final AnnotationMirrorSet annos]
+FieldAccess:equalities
+MethodInvocation:get
+MethodInvocation:getTopAnnotation
+MethodInvocation:containsKey
+MethodInvocation:put
+Method-name:addTargetSupertype
+Method-returnType:void
+Method-parameters:[final TypeVariable target, final TypeVariable subtype, AnnotationMirrorSet hierarchies]
+FieldAccess:supertypes
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:addAll
+Method-name:addTypeSupertype
+Method-returnType:void
+Method-parameters:[final TypeVariable target, final AnnotatedTypeMirror subtype, AnnotationMirrorSet hierarchies]
+FieldAccess:supertypes
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:addAll
+Method-name:addPrimarySupertype
+Method-returnType:void
+Method-parameters:[final TypeVariable target, QualifierHierarchy qualifierHierarchy, final AnnotationMirrorSet annos]
+FieldAccess:supertypes
+MethodInvocation:get
+MethodInvocation:getTopAnnotation
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:add
+Method-name:addTargetSubtype
+Method-returnType:void
+Method-parameters:[final TypeVariable target, final TypeVariable supertype, AnnotationMirrorSet hierarchies]
+FieldAccess:subtypes
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:addAll
+Method-name:addTypeSubtype
+Method-returnType:void
+Method-parameters:[final TypeVariable target, final AnnotatedTypeMirror supertype, AnnotationMirrorSet hierarchies]
+FieldAccess:subtypes
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:addAll
+Method-name:addPrimarySubtypes
+Method-returnType:void
+Method-parameters:[final TypeVariable target, QualifierHierarchy qualifierHierarchy, final AnnotationMirrorSet annos]
+FieldAccess:subtypes
+MethodInvocation:get
+MethodInvocation:getTopAnnotation
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:add
+Method-name:addTypeEqualities
+Method-returnType:void
+Method-parameters:[TypeVariable target, AnnotatedTypeMirror type, AnnotationMirrorSet hierarchies]
+FieldAccess:equalities
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:addAll
+Method-name:rewriteWithInferredType
+Method-returnType:void
+Method-parameters:[final TypeVariable target, final AnnotatedTypeMirror type, EqualitiesSolver equalitiesSolver]
+MethodInvocation:getConstraints
+MethodInvocation:entrySet
+MethodInvocation:addTypeEqualities
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getTargets
+MethodInvocation:getConstraints
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:addTypeEqualities
+MethodInvocation:clear
+MethodInvocation:keySet
+MethodInvocation:substitute
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:getTargets
+MethodInvocation:getConstraints
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:addTypeEqualities
+MethodInvocation:clear
+MethodInvocation:keySet
+MethodInvocation:substitute
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:clear
+MethodInvocation:clear

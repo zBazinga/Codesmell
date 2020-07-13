@@ -1,0 +1,71 @@
+Class:TransportAddress
+Field:META_ADDRESS
+MethodInvocation:getByName
+Field:address
+Method-name:TransportAddress
+Method-returnType:null
+Method-parameters:[InetAddress address, int port]
+Method-name:TransportAddress
+Method-returnType:null
+Method-parameters:[InetSocketAddress address]
+MethodInvocation:getAddress
+FieldAccess:address
+Method-name:TransportAddress
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readByte
+MethodInvocation:readFully
+MethodInvocation:readString
+MethodInvocation:getByAddress
+MethodInvocation:readInt
+FieldAccess:address
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:getAddress
+MethodInvocation:getAddress
+MethodInvocation:writeByte
+MethodInvocation:write
+MethodInvocation:writeString
+MethodInvocation:getHostString
+MethodInvocation:writeInt
+MethodInvocation:getPort
+Method-name:getAddress
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:format
+MethodInvocation:getAddress
+Method-name:getPort
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getPort
+Method-name:address
+Method-returnType:InetSocketAddress
+Method-parameters:[]
+FieldAccess:address
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:format
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:value
+MethodInvocation:toString
+Method-name:findByAddress
+Method-returnType:DiscoveryNode
+Method-parameters:[DiscoveryNodes discoveryNodes]
+MethodInvocation:values
+MethodInvocation:getNodes
+MethodInvocation:equals
+MethodInvocation:getAddress

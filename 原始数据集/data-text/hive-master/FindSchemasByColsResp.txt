@@ -1,0 +1,237 @@
+Class:FindSchemasByColsResp
+Field:STRUCT_DESC
+Field:SCHEMA_VERSIONS_FIELD_DESC
+Field:schemes
+MethodInvocation:put
+MethodInvocation:put
+Field:schemaVersions
+Field:_Fields
+MethodInvocation:SCHEMA_VERSIONS
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:FindSchemasByColsResp
+Method-returnType:null
+Method-parameters:[]
+Method-name:FindSchemasByColsResp
+Method-returnType:null
+Method-parameters:[List<SchemaVersionDescriptor> schemaVersions]
+FieldAccess:schemaVersions
+Method-name:FindSchemasByColsResp
+Method-returnType:null
+Method-parameters:[FindSchemasByColsResp other]
+MethodInvocation:isSetSchemaVersions
+MethodInvocation:size
+MethodInvocation:add
+FieldAccess:schemaVersions
+Method-name:deepCopy
+Method-returnType:FindSchemasByColsResp
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:schemaVersions
+Method-name:getSchemaVersionsSize
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:schemaVersions
+MethodInvocation:size
+FieldAccess:schemaVersions
+Method-name:getSchemaVersionsIterator
+Method-returnType:java.util.Iterator<SchemaVersionDescriptor>
+Method-parameters:[]
+FieldAccess:schemaVersions
+MethodInvocation:iterator
+FieldAccess:schemaVersions
+Method-name:getSchemaVersions
+Method-returnType:List<SchemaVersionDescriptor>
+Method-parameters:[]
+FieldAccess:schemaVersions
+Method-name:setSchemaVersions
+Method-returnType:void
+Method-parameters:[List<SchemaVersionDescriptor> schemaVersions]
+FieldAccess:schemaVersions
+Method-name:unsetSchemaVersions
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:schemaVersions
+Method-name:isSetSchemaVersions
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:schemaVersions
+Method-name:setSchemaVersionsIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:schemaVersions
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, Object value]
+MethodInvocation:unsetSchemaVersions
+MethodInvocation:setSchemaVersions
+Method-name:getFieldValue
+Method-returnType:Object
+Method-parameters:[_Fields field]
+MethodInvocation:getSchemaVersions
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:isSetSchemaVersions
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[FindSchemasByColsResp that]
+MethodInvocation:isSetSchemaVersions
+MethodInvocation:isSetSchemaVersions
+MethodInvocation:equals
+FieldAccess:schemaVersions
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSetSchemaVersions
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[FindSchemasByColsResp other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetSchemaVersions
+MethodInvocation:isSetSchemaVersions
+MethodInvocation:isSetSchemaVersions
+MethodInvocation:compareTo
+FieldAccess:schemaVersions
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+FieldAccess:schemaVersions
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:schemaVersions
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:FindSchemasByColsRespStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:FindSchemasByColsRespStandardScheme
+Method-parameters:[]
+Class:FindSchemasByColsRespStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, FindSchemasByColsResp struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readListBegin
+MethodInvocation:read
+MethodInvocation:add
+MethodInvocation:readListEnd
+MethodInvocation:setSchemaVersionsIsSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, FindSchemasByColsResp struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeListBegin
+MethodInvocation:size
+MethodInvocation:write
+MethodInvocation:writeListEnd
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:FindSchemasByColsRespTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:FindSchemasByColsRespTupleScheme
+Method-parameters:[]
+Class:FindSchemasByColsRespTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, FindSchemasByColsResp struct]
+MethodInvocation:isSetSchemaVersions
+MethodInvocation:set
+MethodInvocation:writeBitSet
+MethodInvocation:isSetSchemaVersions
+MethodInvocation:writeI32
+MethodInvocation:size
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, FindSchemasByColsResp struct]
+MethodInvocation:readBitSet
+MethodInvocation:get
+MethodInvocation:readI32
+MethodInvocation:read
+MethodInvocation:add
+MethodInvocation:setSchemaVersionsIsSet

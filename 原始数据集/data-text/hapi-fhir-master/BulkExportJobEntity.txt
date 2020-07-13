@@ -1,0 +1,91 @@
+Class:BulkExportJobEntity
+Field:REQUEST_LENGTH
+Field:STATUS_MESSAGE_LEN
+Field:myId
+Field:myJobId
+Field:myStatus
+Field:myCreated
+Field:myStatusTime
+Field:myExpiry
+Field:myRequest
+Field:myCollections
+Field:myVersion
+Field:mySince
+Field:myStatusMessage
+Method-name:getCreated
+Method-returnType:Date
+Method-parameters:[]
+Method-name:setCreated
+Method-returnType:void
+Method-parameters:[Date theCreated]
+Method-name:getStatusMessage
+Method-returnType:String
+Method-parameters:[]
+Method-name:setStatusMessage
+Method-returnType:void
+Method-parameters:[String theStatusMessage]
+Method-name:getRequest
+Method-returnType:String
+Method-parameters:[]
+Method-name:setRequest
+Method-returnType:void
+Method-parameters:[String theRequest]
+Method-name:setExpiry
+Method-returnType:void
+Method-parameters:[Date theExpiry]
+Method-name:getCollections
+Method-returnType:Collection<BulkExportCollectionEntity>
+Method-parameters:[]
+Method-name:getJobId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setJobId
+Method-returnType:void
+Method-parameters:[String theJobId]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:isNotBlank
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getValueAsString
+MethodInvocation:append
+MethodInvocation:getValueAsString
+MethodInvocation:append
+MethodInvocation:getValueAsString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:isNotBlank
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:getStatus
+Method-returnType:BulkJobStatusEnum
+Method-parameters:[]
+Method-name:setStatus
+Method-returnType:void
+Method-parameters:[BulkJobStatusEnum theStatus]
+Method-name:getStatusTime
+Method-returnType:Date
+Method-parameters:[]
+Method-name:getVersion
+Method-returnType:int
+Method-parameters:[]
+Method-name:setVersion
+Method-returnType:void
+Method-parameters:[int theVersion]
+Method-name:getId
+Method-returnType:Long
+Method-parameters:[]
+Method-name:getSince
+Method-returnType:Date
+Method-parameters:[]
+MethodInvocation:getTime
+Method-name:setSince
+Method-returnType:void
+Method-parameters:[Date theSince]
+Method-name:toSubmittedJobInfo
+Method-returnType:IBulkDataExportSvc.JobInfo
+Method-parameters:[BulkDataExportSvcImpl bulkDataExportSvc]
+MethodInvocation:setJobId
+MethodInvocation:getJobId

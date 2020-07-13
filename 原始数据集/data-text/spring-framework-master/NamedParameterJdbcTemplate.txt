@@ -1,0 +1,214 @@
+Class:NamedParameterJdbcTemplate
+Field:DEFAULT_CACHE_LIMIT
+Field:classicJdbcTemplate
+Field:cacheLimit
+Field:parsedSqlCache
+Method-name:removeEldestEntry
+Method-returnType:boolean
+Method-parameters:[Map.Entry<String,ParsedSql> eldest]
+MethodInvocation:size
+MethodInvocation:getCacheLimit
+Method-name:NamedParameterJdbcTemplate
+Method-returnType:null
+Method-parameters:[DataSource dataSource]
+MethodInvocation:notNull
+FieldAccess:classicJdbcTemplate
+Method-name:NamedParameterJdbcTemplate
+Method-returnType:null
+Method-parameters:[JdbcOperations classicJdbcTemplate]
+MethodInvocation:notNull
+FieldAccess:classicJdbcTemplate
+Method-name:getJdbcOperations
+Method-returnType:JdbcOperations
+Method-parameters:[]
+FieldAccess:classicJdbcTemplate
+Method-name:getJdbcTemplate
+Method-returnType:JdbcTemplate
+Method-parameters:[]
+MethodInvocation:state
+FieldAccess:classicJdbcTemplate
+FieldAccess:classicJdbcTemplate
+Method-name:setCacheLimit
+Method-returnType:void
+Method-parameters:[int cacheLimit]
+FieldAccess:cacheLimit
+Method-name:getCacheLimit
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:cacheLimit
+Method-name:execute
+Method-returnType:T
+Method-parameters:[String sql, SqlParameterSource paramSource, PreparedStatementCallback<T> action]
+MethodInvocation:execute
+MethodInvocation:getJdbcOperations
+MethodInvocation:getPreparedStatementCreator
+Method-name:execute
+Method-returnType:T
+Method-parameters:[String sql, Map<String,?> paramMap, PreparedStatementCallback<T> action]
+MethodInvocation:execute
+Method-name:execute
+Method-returnType:T
+Method-parameters:[String sql, PreparedStatementCallback<T> action]
+MethodInvocation:execute
+Method-name:query
+Method-returnType:T
+Method-parameters:[String sql, SqlParameterSource paramSource, ResultSetExtractor<T> rse]
+MethodInvocation:query
+MethodInvocation:getJdbcOperations
+MethodInvocation:getPreparedStatementCreator
+Method-name:query
+Method-returnType:T
+Method-parameters:[String sql, Map<String,?> paramMap, ResultSetExtractor<T> rse]
+MethodInvocation:query
+Method-name:query
+Method-returnType:T
+Method-parameters:[String sql, ResultSetExtractor<T> rse]
+MethodInvocation:query
+Method-name:query
+Method-returnType:void
+Method-parameters:[String sql, SqlParameterSource paramSource, RowCallbackHandler rch]
+MethodInvocation:query
+MethodInvocation:getJdbcOperations
+MethodInvocation:getPreparedStatementCreator
+Method-name:query
+Method-returnType:void
+Method-parameters:[String sql, Map<String,?> paramMap, RowCallbackHandler rch]
+MethodInvocation:query
+Method-name:query
+Method-returnType:void
+Method-parameters:[String sql, RowCallbackHandler rch]
+MethodInvocation:query
+Method-name:query
+Method-returnType:List<T>
+Method-parameters:[String sql, SqlParameterSource paramSource, RowMapper<T> rowMapper]
+MethodInvocation:query
+MethodInvocation:getJdbcOperations
+MethodInvocation:getPreparedStatementCreator
+Method-name:query
+Method-returnType:List<T>
+Method-parameters:[String sql, Map<String,?> paramMap, RowMapper<T> rowMapper]
+MethodInvocation:query
+Method-name:query
+Method-returnType:List<T>
+Method-parameters:[String sql, RowMapper<T> rowMapper]
+MethodInvocation:query
+Method-name:queryForObject
+Method-returnType:T
+Method-parameters:[String sql, SqlParameterSource paramSource, RowMapper<T> rowMapper]
+MethodInvocation:query
+MethodInvocation:getJdbcOperations
+MethodInvocation:getPreparedStatementCreator
+MethodInvocation:nullableSingleResult
+Method-name:queryForObject
+Method-returnType:T
+Method-parameters:[String sql, Map<String,?> paramMap, RowMapper<T> rowMapper]
+MethodInvocation:queryForObject
+Method-name:queryForObject
+Method-returnType:T
+Method-parameters:[String sql, SqlParameterSource paramSource, Class<T> requiredType]
+MethodInvocation:queryForObject
+Method-name:queryForObject
+Method-returnType:T
+Method-parameters:[String sql, Map<String,?> paramMap, Class<T> requiredType]
+MethodInvocation:queryForObject
+Method-name:queryForMap
+Method-returnType:Map<String,Object>
+Method-parameters:[String sql, SqlParameterSource paramSource]
+MethodInvocation:queryForObject
+MethodInvocation:state
+Method-name:queryForMap
+Method-returnType:Map<String,Object>
+Method-parameters:[String sql, Map<String,?> paramMap]
+MethodInvocation:queryForObject
+MethodInvocation:state
+Method-name:queryForList
+Method-returnType:List<T>
+Method-parameters:[String sql, SqlParameterSource paramSource, Class<T> elementType]
+MethodInvocation:query
+Method-name:queryForList
+Method-returnType:List<T>
+Method-parameters:[String sql, Map<String,?> paramMap, Class<T> elementType]
+MethodInvocation:queryForList
+Method-name:queryForList
+Method-returnType:List<Map<String,Object>>
+Method-parameters:[String sql, SqlParameterSource paramSource]
+MethodInvocation:query
+Method-name:queryForList
+Method-returnType:List<Map<String,Object>>
+Method-parameters:[String sql, Map<String,?> paramMap]
+MethodInvocation:queryForList
+Method-name:queryForRowSet
+Method-returnType:SqlRowSet
+Method-parameters:[String sql, SqlParameterSource paramSource]
+MethodInvocation:query
+MethodInvocation:getJdbcOperations
+MethodInvocation:getPreparedStatementCreator
+MethodInvocation:state
+Method-name:queryForRowSet
+Method-returnType:SqlRowSet
+Method-parameters:[String sql, Map<String,?> paramMap]
+MethodInvocation:queryForRowSet
+Method-name:update
+Method-returnType:int
+Method-parameters:[String sql, SqlParameterSource paramSource]
+MethodInvocation:update
+MethodInvocation:getJdbcOperations
+MethodInvocation:getPreparedStatementCreator
+Method-name:update
+Method-returnType:int
+Method-parameters:[String sql, Map<String,?> paramMap]
+MethodInvocation:update
+Method-name:update
+Method-returnType:int
+Method-parameters:[String sql, SqlParameterSource paramSource, KeyHolder generatedKeyHolder]
+MethodInvocation:update
+Method-name:update
+Method-returnType:int
+Method-parameters:[String sql, SqlParameterSource paramSource, KeyHolder generatedKeyHolder, @Nullable String[] keyColumnNames]
+MethodInvocation:getPreparedStatementCreator
+MethodInvocation:setGeneratedKeysColumnNames
+MethodInvocation:setReturnGeneratedKeys
+MethodInvocation:update
+MethodInvocation:getJdbcOperations
+Method-name:batchUpdate
+Method-returnType:int[]
+Method-parameters:[String sql, Map<String,?>[] batchValues]
+MethodInvocation:batchUpdate
+MethodInvocation:createBatch
+Method-name:batchUpdate
+Method-returnType:int[]
+Method-parameters:[String sql, SqlParameterSource[] batchArgs]
+MethodInvocation:getParsedSql
+MethodInvocation:getPreparedStatementCreatorFactory
+MethodInvocation:batchUpdate
+MethodInvocation:getJdbcOperations
+MethodInvocation:getSql
+Method-name:setValues
+Method-returnType:void
+Method-parameters:[PreparedStatement ps, int i]
+MethodInvocation:buildValueArray
+MethodInvocation:setValues
+MethodInvocation:newPreparedStatementSetter
+Method-name:getBatchSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:getPreparedStatementCreator
+Method-returnType:PreparedStatementCreator
+Method-parameters:[String sql, SqlParameterSource paramSource]
+MethodInvocation:getPreparedStatementCreator
+Method-name:getPreparedStatementCreator
+Method-returnType:PreparedStatementCreator
+Method-parameters:[String sql, SqlParameterSource paramSource, @Nullable Consumer<PreparedStatementCreatorFactory> customizer]
+MethodInvocation:getParsedSql
+MethodInvocation:getPreparedStatementCreatorFactory
+MethodInvocation:accept
+MethodInvocation:buildValueArray
+MethodInvocation:newPreparedStatementCreator
+Method-name:getParsedSql
+Method-returnType:ParsedSql
+Method-parameters:[String sql]
+MethodInvocation:getCacheLimit
+MethodInvocation:parseSqlStatement
+FieldAccess:parsedSqlCache
+MethodInvocation:computeIfAbsent
+FieldAccess:parsedSqlCache

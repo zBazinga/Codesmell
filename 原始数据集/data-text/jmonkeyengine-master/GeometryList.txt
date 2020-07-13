@@ -1,0 +1,67 @@
+Class:GeometryList
+Field:DEFAULT_SIZE
+Field:geometries
+Field:listSort
+Field:size
+Field:comparator
+Method-name:GeometryList
+Method-returnType:null
+Method-parameters:[GeometryComparator comparator]
+FieldAccess:comparator
+Method-name:setComparator
+Method-returnType:void
+Method-parameters:[GeometryComparator comparator]
+FieldAccess:comparator
+Method-name:getComparator
+Method-returnType:GeometryComparator
+Method-parameters:[]
+Method-name:setCamera
+Method-returnType:void
+Method-parameters:[Camera cam]
+MethodInvocation:setCamera
+FieldAccess:comparator
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+Method-name:set
+Method-returnType:void
+Method-parameters:[int index, Geometry value]
+Method-name:get
+Method-returnType:Geometry
+Method-parameters:[int index]
+Method-name:add
+Method-returnType:void
+Method-parameters:[Geometry g]
+MethodInvocation:arraycopy
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+Method-name:sort
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getLength
+MethodInvocation:allocateStack
+MethodInvocation:sort
+Method-name:iterator
+Method-returnType:Iterator<Geometry>
+Method-parameters:[]
+Field:index
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+Method-name:next
+Method-returnType:Geometry
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]
+Method-name:renderGeometryList
+Method-returnType:void
+Method-parameters:[RenderManager renderManager]
+MethodInvocation:size
+MethodInvocation:renderGeometry
+MethodInvocation:get

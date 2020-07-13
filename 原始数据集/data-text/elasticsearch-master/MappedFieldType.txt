@@ -1,0 +1,262 @@
+Class:MappedFieldType
+Field:name
+Field:boost
+Field:docValues
+Field:indexAnalyzer
+Field:searchAnalyzer
+Field:searchQuoteAnalyzer
+Field:similarity
+Field:nullValue
+Field:nullValueAsString
+Field:eagerGlobalOrdinals
+Field:meta
+Method-name:MappedFieldType
+Method-returnType:null
+Method-parameters:[MappedFieldType ref]
+FieldAccess:name
+MethodInvocation:name
+FieldAccess:boost
+MethodInvocation:boost
+FieldAccess:docValues
+MethodInvocation:hasDocValues
+FieldAccess:indexAnalyzer
+MethodInvocation:indexAnalyzer
+FieldAccess:searchAnalyzer
+MethodInvocation:searchAnalyzer
+FieldAccess:searchQuoteAnalyzer
+FieldAccess:similarity
+MethodInvocation:similarity
+FieldAccess:nullValue
+MethodInvocation:nullValue
+FieldAccess:nullValueAsString
+MethodInvocation:nullValueAsString
+FieldAccess:eagerGlobalOrdinals
+FieldAccess:meta
+Method-name:MappedFieldType
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:setTokenized
+MethodInvocation:setStored
+MethodInvocation:setStoreTermVectors
+MethodInvocation:setOmitNorms
+MethodInvocation:setIndexOptions
+MethodInvocation:setBoost
+MethodInvocation:emptyMap
+Method-name:clone
+Method-returnType:MappedFieldType
+Method-parameters:[]
+Method-name:fielddataBuilder
+Method-returnType:IndexFieldData.Builder
+Method-parameters:[String fullyQualifiedIndexName]
+MethodInvocation:name
+MethodInvocation:typeName
+Method-name:getValuesSourceType
+Method-returnType:ValuesSourceType
+Method-parameters:[]
+MethodInvocation:name
+MethodInvocation:typeName
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:searchQuoteAnalyzer
+MethodInvocation:searchQuoteAnalyzer
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+MethodInvocation:name
+Method-name:typeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:name
+Method-returnType:String
+Method-parameters:[]
+Method-name:setName
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:checkIfFrozen
+FieldAccess:name
+Method-name:boost
+Method-returnType:float
+Method-parameters:[]
+Method-name:setBoost
+Method-returnType:void
+Method-parameters:[float boost]
+MethodInvocation:checkIfFrozen
+FieldAccess:boost
+Method-name:hasDocValues
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setHasDocValues
+Method-returnType:void
+Method-parameters:[boolean hasDocValues]
+MethodInvocation:checkIfFrozen
+FieldAccess:docValues
+Method-name:indexAnalyzer
+Method-returnType:NamedAnalyzer
+Method-parameters:[]
+Method-name:setIndexAnalyzer
+Method-returnType:void
+Method-parameters:[NamedAnalyzer analyzer]
+MethodInvocation:checkIfFrozen
+FieldAccess:indexAnalyzer
+Method-name:searchAnalyzer
+Method-returnType:NamedAnalyzer
+Method-parameters:[]
+Method-name:setSearchAnalyzer
+Method-returnType:void
+Method-parameters:[NamedAnalyzer analyzer]
+MethodInvocation:checkIfFrozen
+FieldAccess:searchAnalyzer
+Method-name:searchQuoteAnalyzer
+Method-returnType:NamedAnalyzer
+Method-parameters:[]
+Method-name:setSearchQuoteAnalyzer
+Method-returnType:void
+Method-parameters:[NamedAnalyzer analyzer]
+MethodInvocation:checkIfFrozen
+FieldAccess:searchQuoteAnalyzer
+Method-name:similarity
+Method-returnType:SimilarityProvider
+Method-parameters:[]
+Method-name:setSimilarity
+Method-returnType:void
+Method-parameters:[SimilarityProvider similarity]
+MethodInvocation:checkIfFrozen
+FieldAccess:similarity
+Method-name:nullValue
+Method-returnType:Object
+Method-parameters:[]
+Method-name:nullValueAsString
+Method-returnType:String
+Method-parameters:[]
+Method-name:setNullValue
+Method-returnType:void
+Method-parameters:[Object nullValue]
+MethodInvocation:checkIfFrozen
+FieldAccess:nullValue
+FieldAccess:nullValueAsString
+MethodInvocation:toString
+Method-name:valueForDisplay
+Method-returnType:Object
+Method-parameters:[Object value]
+Method-name:isSearchable
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:indexOptions
+Method-name:isAggregatable
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:fielddataBuilder
+Method-name:termQuery
+Method-returnType:Query
+Method-parameters:[Object value, @Nullable QueryShardContext context]
+Method-name:termsQuery
+Method-returnType:Query
+Method-parameters:[List<?> values, @Nullable QueryShardContext context]
+MethodInvocation:add
+MethodInvocation:termQuery
+MethodInvocation:build
+Method-name:rangeQuery
+Method-returnType:Query
+Method-parameters:[Object lowerTerm, Object upperTerm, boolean includeLower, boolean includeUpper, ShapeRelation relation, ZoneId timeZone, DateMathParser parser, QueryShardContext context]
+MethodInvocation:typeName
+Method-name:fuzzyQuery
+Method-returnType:Query
+Method-parameters:[Object value, Fuzziness fuzziness, int prefixLength, int maxExpansions, boolean transpositions, QueryShardContext context]
+MethodInvocation:typeName
+Method-name:prefixQuery
+Method-returnType:Query
+Method-parameters:[String value, @Nullable MultiTermQuery.RewriteMethod method, QueryShardContext context]
+MethodInvocation:typeName
+Method-name:wildcardQuery
+Method-returnType:Query
+Method-parameters:[String value, @Nullable MultiTermQuery.RewriteMethod method, QueryShardContext context]
+MethodInvocation:typeName
+Method-name:regexpQuery
+Method-returnType:Query
+Method-parameters:[String value, int flags, int maxDeterminizedStates, @Nullable MultiTermQuery.RewriteMethod method, QueryShardContext context]
+MethodInvocation:typeName
+Method-name:existsQuery
+Method-returnType:Query
+Method-parameters:[QueryShardContext context]
+Method-name:phraseQuery
+Method-returnType:Query
+Method-parameters:[TokenStream stream, int slop, boolean enablePositionIncrements]
+MethodInvocation:typeName
+Method-name:multiPhraseQuery
+Method-returnType:Query
+Method-parameters:[TokenStream stream, int slop, boolean enablePositionIncrements]
+MethodInvocation:typeName
+Method-name:phrasePrefixQuery
+Method-returnType:Query
+Method-parameters:[TokenStream stream, int slop, int maxExpansions]
+MethodInvocation:typeName
+Method-name:spanPrefixQuery
+Method-returnType:SpanQuery
+Method-parameters:[String value, SpanMultiTermQueryWrapper.SpanRewriteMethod method, QueryShardContext context]
+MethodInvocation:typeName
+Method-name:intervals
+Method-returnType:IntervalsSource
+Method-parameters:[String query, int max_gaps, boolean ordered, NamedAnalyzer analyzer, boolean prefix]
+MethodInvocation:typeName
+Method-name:getSearchAnalyzer
+Method-returnType:Analyzer
+Method-parameters:[QueryShardContext queryShardContext]
+MethodInvocation:searchAnalyzer
+MethodInvocation:searchAnalyzer
+MethodInvocation:searchAnalyzer
+MethodInvocation:getMapperService
+Field:Relation
+Method-name:isFieldWithinQuery
+Method-returnType:Relation
+Method-parameters:[IndexReader reader, Object from, Object to, boolean includeLower, boolean includeUpper, ZoneId timeZone, DateMathParser dateMathParser, QueryRewriteContext context]
+Method-name:failIfNoDocValues
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:hasDocValues
+MethodInvocation:name
+MethodInvocation:typeName
+Method-name:failIfNotIndexed
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:indexOptions
+MethodInvocation:pointDimensionCount
+MethodInvocation:name
+Method-name:eagerGlobalOrdinals
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setEagerGlobalOrdinals
+Method-returnType:void
+Method-parameters:[boolean eagerGlobalOrdinals]
+MethodInvocation:checkIfFrozen
+FieldAccess:eagerGlobalOrdinals
+Method-name:docValueFormat
+Method-returnType:DocValueFormat
+Method-parameters:[@Nullable String format, ZoneId timeZone]
+MethodInvocation:name
+MethodInvocation:typeName
+MethodInvocation:name
+MethodInvocation:typeName
+Method-name:extractTerm
+Method-returnType:Term
+Method-parameters:[Query termQuery]
+Method-name:meta
+Method-returnType:Map<String,String>
+Method-parameters:[]
+Method-name:setMeta
+Method-returnType:void
+Method-parameters:[Map<String,String> meta]
+MethodInvocation:checkIfFrozen
+FieldAccess:meta
+MethodInvocation:copyOf
+MethodInvocation:requireNonNull

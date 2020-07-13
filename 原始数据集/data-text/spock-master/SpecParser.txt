@@ -1,0 +1,133 @@
+Class:SpecParser
+Field:errorReporter
+Field:spec
+Field:fieldCount
+Field:featureMethodCount
+Method-name:SpecParser
+Method-returnType:null
+Method-parameters:[ErrorReporter errorReporter]
+FieldAccess:errorReporter
+Method-name:build
+Method-returnType:Spec
+Method-parameters:[ClassNode clazz]
+MethodInvocation:visitContents
+Method-name:visitClass
+Method-returnType:void
+Method-parameters:[ClassNode clazz]
+Method-name:visitField
+Method-returnType:void
+Method-parameters:[FieldNode gField]
+MethodInvocation:getProperty
+MethodInvocation:getAst
+MethodInvocation:getName
+MethodInvocation:isStatic
+MethodInvocation:setShared
+MethodInvocation:hasAnnotation
+MethodInvocation:setOwner
+MethodInvocation:add
+MethodInvocation:getFields
+Method-name:visitProperty
+Method-returnType:void
+Method-parameters:[PropertyNode node]
+Method-name:visitConstructor
+Method-returnType:void
+Method-parameters:[ConstructorNode constructor]
+MethodInvocation:hasNoRealSourcePosition
+MethodInvocation:error
+Method-name:visitMethod
+Method-returnType:void
+Method-parameters:[MethodNode method]
+MethodInvocation:isIgnoredMethod
+MethodInvocation:isFixtureMethod
+MethodInvocation:buildFixtureMethod
+MethodInvocation:isFeatureMethod
+MethodInvocation:buildFeatureMethod
+MethodInvocation:buildHelperMethod
+Method-name:isIgnoredMethod
+Method-returnType:boolean
+Method-parameters:[MethodNode method]
+MethodInvocation:isSynthetic
+Method-name:isFixtureMethod
+Method-returnType:boolean
+Method-parameters:[MethodNode method]
+MethodInvocation:getName
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:isStatic
+MethodInvocation:error
+MethodInvocation:equals
+MethodInvocation:error
+Method-name:buildFixtureMethod
+Method-returnType:void
+Method-parameters:[MethodNode method]
+MethodInvocation:addBlock
+MethodInvocation:getStatements
+MethodInvocation:addAll
+MethodInvocation:getAst
+MethodInvocation:clear
+MethodInvocation:getName
+MethodInvocation:setSetupMethod
+MethodInvocation:setCleanupMethod
+MethodInvocation:setSetupSpecMethod
+MethodInvocation:setCleanupSpecMethod
+Method-name:isFeatureMethod
+Method-returnType:boolean
+Method-parameters:[MethodNode method]
+MethodInvocation:getStatements
+MethodInvocation:getStatementLabel
+MethodInvocation:isStatic
+MethodInvocation:error
+Method-name:buildFeatureMethod
+Method-returnType:void
+Method-parameters:[MethodNode method]
+MethodInvocation:buildBlocks
+MethodInvocation:error
+MethodInvocation:add
+MethodInvocation:getMethods
+Method-name:buildHelperMethod
+Method-returnType:void
+Method-parameters:[MethodNode method]
+MethodInvocation:add
+MethodInvocation:getMethods
+MethodInvocation:addBlock
+MethodInvocation:getStatements
+MethodInvocation:addAll
+MethodInvocation:getAst
+MethodInvocation:clear
+Method-name:buildBlocks
+Method-returnType:void
+Method-parameters:[Method method]
+MethodInvocation:getStatements
+MethodInvocation:getAst
+MethodInvocation:addBlock
+MethodInvocation:getStatementLabel
+MethodInvocation:add
+MethodInvocation:getAst
+MethodInvocation:addBlock
+MethodInvocation:checkIsValidSuccessor
+MethodInvocation:getLastLineNumber
+MethodInvocation:getAst
+MethodInvocation:getLastColumnNumber
+MethodInvocation:getAst
+MethodInvocation:clear
+Method-name:addBlock
+Method-returnType:Block
+Method-parameters:[Method method, Statement stat]
+MethodInvocation:getStatementLabel
+MethodInvocation:values
+MethodInvocation:equals
+MethodInvocation:toString
+MethodInvocation:checkIsValidSuccessor
+MethodInvocation:getLineNumber
+MethodInvocation:getColumnNumber
+MethodInvocation:addNewBlock
+MethodInvocation:getDescription
+MethodInvocation:add
+MethodInvocation:getAst
+MethodInvocation:add
+MethodInvocation:getDescriptions
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[Statement stat]
+MethodInvocation:getExpression
+MethodInvocation:getValue
+MethodInvocation:getValue

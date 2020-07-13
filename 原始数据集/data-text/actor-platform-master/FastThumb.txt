@@ -1,0 +1,38 @@
+Class:FastThumb
+Field:w
+Field:h
+Field:image
+Method-name:FastThumb
+Method-returnType:null
+Method-parameters:[LocalFastThumb localFastThumb]
+MethodInvocation:getW
+MethodInvocation:getH
+MethodInvocation:getImage
+Method-name:FastThumb
+Method-returnType:null
+Method-parameters:[ApiFastThumb fastThumb]
+MethodInvocation:getW
+MethodInvocation:getH
+MethodInvocation:getThumb
+Method-name:FastThumb
+Method-returnType:null
+Method-parameters:[int w, int h, byte[] image]
+FieldAccess:w
+FieldAccess:h
+FieldAccess:image
+Method-name:getW
+Method-returnType:int
+Method-parameters:[]
+Method-name:getH
+Method-returnType:int
+Method-parameters:[]
+Method-name:getImage
+Method-returnType:byte[]
+Method-parameters:[]
+Method-name:sendPhoto
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer, @NotNull String fileName, int w, int h, @NotNull String descriptor, MessagesModule messagesModule]
+MethodInvocation:fileFromDescriptor
+MethodInvocation:send
+MethodInvocation:getSendMessageActor
+MethodInvocation:getSize

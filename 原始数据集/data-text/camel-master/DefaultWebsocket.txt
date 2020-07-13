@@ -1,0 +1,83 @@
+Class:DefaultWebsocket
+Field:serialVersionUID
+Field:LOG
+MethodInvocation:getLogger
+Field:consumer
+Field:sync
+Field:session
+Field:connectionKey
+Field:pathSpec
+Method-name:DefaultWebsocket
+Method-returnType:null
+Method-parameters:[NodeSynchronization sync, String pathSpec, WebsocketConsumer consumer]
+FieldAccess:sync
+FieldAccess:consumer
+FieldAccess:pathSpec
+Method-name:onClose
+Method-returnType:void
+Method-parameters:[int closeCode, String message]
+MethodInvocation:trace
+MethodInvocation:removeSocket
+Method-name:onConnect
+Method-returnType:void
+Method-parameters:[Session session]
+MethodInvocation:trace
+FieldAccess:session
+FieldAccess:connectionKey
+MethodInvocation:toString
+MethodInvocation:randomUUID
+MethodInvocation:addSocket
+Method-name:onMessage
+Method-returnType:void
+Method-parameters:[String message]
+MethodInvocation:debug
+FieldAccess:consumer
+MethodInvocation:sendMessage
+FieldAccess:consumer
+FieldAccess:connectionKey
+MethodInvocation:getRemoteAddress
+MethodInvocation:debug
+Method-name:onMessage
+Method-returnType:void
+Method-parameters:[byte[] data, int offset, int length]
+MethodInvocation:debug
+FieldAccess:consumer
+MethodInvocation:arraycopy
+MethodInvocation:sendMessage
+FieldAccess:consumer
+FieldAccess:connectionKey
+MethodInvocation:getRemoteAddress
+MethodInvocation:debug
+Method-name:getRemoteAddress
+Method-returnType:InetSocketAddress
+Method-parameters:[]
+MethodInvocation:getRemoteAddress
+Method-name:getSession
+Method-returnType:Session
+Method-parameters:[]
+Method-name:getPathSpec
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSession
+Method-returnType:void
+Method-parameters:[Session session]
+FieldAccess:session
+Method-name:getConnectionKey
+Method-returnType:String
+Method-parameters:[]
+Method-name:setConnectionKey
+Method-returnType:void
+Method-parameters:[String connectionKey]
+FieldAccess:connectionKey
+Method-name:getKey
+Method-returnType:String
+Method-parameters:[MemoryWebsocketStore memoryWebsocketStore]
+MethodInvocation:getConnectionKey
+MethodInvocation:getPathSpec
+MethodInvocation:getConnectionKey
+MethodInvocation:append
+MethodInvocation:getConnectionKey
+MethodInvocation:getPathSpec
+MethodInvocation:append
+MethodInvocation:getPathSpec
+MethodInvocation:toString

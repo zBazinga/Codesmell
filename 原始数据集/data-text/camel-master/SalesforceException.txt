@@ -1,0 +1,62 @@
+Class:SalesforceException
+Field:serialVersionUID
+Field:errors
+Field:statusCode
+Method-name:SalesforceException
+Method-returnType:null
+Method-parameters:[Throwable cause]
+Method-name:SalesforceException
+Method-returnType:null
+Method-parameters:[String message, Throwable cause]
+Method-name:SalesforceException
+Method-returnType:null
+Method-parameters:[String message, int statusCode]
+Method-name:SalesforceException
+Method-returnType:null
+Method-parameters:[String message, int statusCode, Throwable cause]
+Method-name:SalesforceException
+Method-returnType:null
+Method-parameters:[List<RestError> errors, int statusCode]
+Method-name:SalesforceException
+Method-returnType:null
+Method-parameters:[List<RestError> errors, int statusCode, Throwable cause]
+Method-name:SalesforceException
+Method-returnType:null
+Method-parameters:[List<RestError> errors, int statusCode, String message]
+Method-name:SalesforceException
+Method-returnType:null
+Method-parameters:[List<RestError> errors, int statusCode, String message, Throwable cause]
+MethodInvocation:toErrorMessage
+FieldAccess:errors
+FieldAccess:statusCode
+Method-name:getErrors
+Method-returnType:List<RestError>
+Method-parameters:[]
+MethodInvocation:emptyList
+MethodInvocation:unmodifiableList
+Method-name:getStatusCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:toErrorMessage
+Method-returnType:String
+Method-parameters:[List<RestError> errors, int statusCode]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:processResponse
+Method-returnType:void
+Method-parameters:[Exchange exchange, Object body, Map<String,String> headers, AsyncCallback callback, BulkApiProcessor bulkApiProcessor]
+MethodInvocation:getOut
+MethodInvocation:setException
+MethodInvocation:setBody
+MethodInvocation:getIn
+MethodInvocation:getHeaders
+MethodInvocation:putAll
+MethodInvocation:getHeaders
+MethodInvocation:putAll
+MethodInvocation:done

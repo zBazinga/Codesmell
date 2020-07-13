@@ -1,0 +1,252 @@
+Class:CollectionEntry
+Field:LOG
+MethodInvocation:messageLogger
+Field:snapshot
+Field:role
+Field:loadedPersister
+Field:loadedKey
+Field:reached
+Field:processed
+Field:doupdate
+Field:doremove
+Field:dorecreate
+Field:ignore
+Field:currentPersister
+Field:currentKey
+Method-name:CollectionEntry
+Method-returnType:null
+Method-parameters:[CollectionPersister persister, PersistentCollection collection]
+MethodInvocation:clearDirty
+MethodInvocation:isMutable
+MethodInvocation:getSnapshot
+MethodInvocation:setSnapshot
+Method-name:CollectionEntry
+Method-returnType:null
+Method-parameters:[final PersistentCollection collection, final CollectionPersister loadedPersister, final Serializable loadedKey, final boolean ignore]
+FieldAccess:ignore
+FieldAccess:loadedKey
+MethodInvocation:setLoadedPersister
+MethodInvocation:setSnapshot
+Method-name:CollectionEntry
+Method-returnType:null
+Method-parameters:[CollectionPersister loadedPersister, Serializable loadedKey]
+FieldAccess:loadedKey
+MethodInvocation:setLoadedPersister
+Method-name:CollectionEntry
+Method-returnType:null
+Method-parameters:[PersistentCollection collection, SessionFactoryImplementor factory]
+MethodInvocation:getKey
+MethodInvocation:setLoadedPersister
+MethodInvocation:collectionPersister
+MethodInvocation:getMetamodel
+MethodInvocation:getRole
+MethodInvocation:getStoredSnapshot
+Method-name:CollectionEntry
+Method-returnType:null
+Method-parameters:[String role, Serializable snapshot, Serializable loadedKey, SessionFactoryImplementor factory]
+FieldAccess:role
+FieldAccess:snapshot
+FieldAccess:loadedKey
+MethodInvocation:afterDeserialize
+Method-name:dirty
+Method-returnType:void
+Method-parameters:[PersistentCollection collection]
+MethodInvocation:getLoadedPersister
+MethodInvocation:wasInitialized
+MethodInvocation:isDirty
+MethodInvocation:isMutable
+MethodInvocation:isDirectlyAccessible
+MethodInvocation:isMutable
+MethodInvocation:getElementType
+MethodInvocation:equalsSnapshot
+MethodInvocation:dirty
+Method-name:preFlush
+Method-returnType:void
+Method-parameters:[PersistentCollection collection]
+MethodInvocation:getKey
+MethodInvocation:getKey
+MethodInvocation:getLoadedPersister
+MethodInvocation:isDirty
+MethodInvocation:isMutable
+MethodInvocation:collectionInfoString
+MethodInvocation:getRole
+MethodInvocation:getLoadedKey
+MethodInvocation:dirty
+MethodInvocation:isDebugEnabled
+MethodInvocation:isDirty
+MethodInvocation:debugf
+MethodInvocation:collectionInfoString
+MethodInvocation:getRole
+MethodInvocation:getLoadedKey
+MethodInvocation:setReached
+MethodInvocation:setProcessed
+MethodInvocation:setDoupdate
+MethodInvocation:setDoremove
+MethodInvocation:setDorecreate
+Method-name:postInitialize
+Method-returnType:void
+Method-parameters:[PersistentCollection collection]
+MethodInvocation:getLoadedPersister
+MethodInvocation:isMutable
+MethodInvocation:getSnapshot
+MethodInvocation:setSnapshot
+MethodInvocation:getBatchSize
+MethodInvocation:removeBatchLoadableCollection
+MethodInvocation:getBatchFetchQueue
+MethodInvocation:getPersistenceContextInternal
+MethodInvocation:getSession
+Method-name:postFlush
+Method-returnType:void
+Method-parameters:[PersistentCollection collection]
+MethodInvocation:isIgnore
+MethodInvocation:isProcessed
+MethodInvocation:collectionNotProcessedByFlush
+MethodInvocation:getRole
+MethodInvocation:setSnapshot
+Method-name:afterAction
+Method-returnType:void
+Method-parameters:[PersistentCollection collection]
+MethodInvocation:getCurrentKey
+MethodInvocation:setLoadedPersister
+MethodInvocation:getCurrentPersister
+MethodInvocation:wasInitialized
+MethodInvocation:isDoremove
+MethodInvocation:isDorecreate
+MethodInvocation:isDoupdate
+MethodInvocation:isMutable
+MethodInvocation:getSnapshot
+MethodInvocation:postAction
+Method-name:getKey
+Method-returnType:Serializable
+Method-parameters:[]
+MethodInvocation:getLoadedKey
+Method-name:getRole
+Method-returnType:String
+Method-parameters:[]
+Method-name:getSnapshot
+Method-returnType:Serializable
+Method-parameters:[]
+Field:fromMerge
+Method-name:resetStoredSnapshot
+Method-returnType:void
+Method-parameters:[PersistentCollection collection, Serializable storedSnapshot]
+MethodInvocation:debugf
+MethodInvocation:setSnapshot
+Method-name:setLoadedPersister
+Method-returnType:void
+Method-parameters:[CollectionPersister persister]
+MethodInvocation:setRole
+MethodInvocation:getRole
+Method-name:afterDeserialize
+Method-returnType:void
+Method-parameters:[SessionFactoryImplementor factory]
+MethodInvocation:collectionPersister
+MethodInvocation:getMetamodel
+Method-name:wasDereferenced
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getLoadedKey
+Method-name:isReached
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setReached
+Method-returnType:void
+Method-parameters:[boolean reached]
+FieldAccess:reached
+Method-name:isProcessed
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setProcessed
+Method-returnType:void
+Method-parameters:[boolean processed]
+FieldAccess:processed
+Method-name:isDoupdate
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDoupdate
+Method-returnType:void
+Method-parameters:[boolean doupdate]
+FieldAccess:doupdate
+Method-name:isDoremove
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDoremove
+Method-returnType:void
+Method-parameters:[boolean doremove]
+FieldAccess:doremove
+Method-name:isDorecreate
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDorecreate
+Method-returnType:void
+Method-parameters:[boolean dorecreate]
+FieldAccess:dorecreate
+Method-name:isIgnore
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getCurrentPersister
+Method-returnType:CollectionPersister
+Method-parameters:[]
+Method-name:setCurrentPersister
+Method-returnType:void
+Method-parameters:[CollectionPersister currentPersister]
+FieldAccess:currentPersister
+Method-name:getCurrentKey
+Method-returnType:Serializable
+Method-parameters:[]
+Method-name:setCurrentKey
+Method-returnType:void
+Method-parameters:[Serializable currentKey]
+FieldAccess:currentKey
+Method-name:getLoadedPersister
+Method-returnType:CollectionPersister
+Method-parameters:[]
+Method-name:getLoadedKey
+Method-returnType:Serializable
+Method-parameters:[]
+Method-name:setRole
+Method-returnType:void
+Method-parameters:[String role]
+FieldAccess:role
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:collectionInfoString
+MethodInvocation:getRole
+MethodInvocation:collectionInfoString
+MethodInvocation:getRole
+Method-name:getOrphans
+Method-returnType:Collection
+Method-parameters:[String entityName, PersistentCollection collection]
+MethodInvocation:getOrphans
+Method-name:isSnapshotEmpty
+Method-returnType:boolean
+Method-parameters:[PersistentCollection collection]
+MethodInvocation:getLoadedPersister
+MethodInvocation:wasInitialized
+MethodInvocation:isMutable
+MethodInvocation:isSnapshotEmpty
+MethodInvocation:getSnapshot
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[ObjectOutputStream oos]
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+Method-name:deserialize
+Method-returnType:CollectionEntry
+Method-parameters:[ObjectInputStream ois, SessionImplementor session]
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:getFactory
+Method-name:getLoadedCollectionOwnerIdOrNull
+Method-returnType:Serializable
+Method-parameters:[StatefulPersistenceContext statefulPersistenceContext]
+MethodInvocation:getLoadedKey
+MethodInvocation:getLoadedPersister
+MethodInvocation:getIdOfOwnerOrNull
+MethodInvocation:getCollectionType
+MethodInvocation:getLoadedPersister
+MethodInvocation:getLoadedKey
+MethodInvocation:getSession

@@ -1,0 +1,284 @@
+Class:ModeController
+Field:extensionContainer
+Field:copiers
+Field:isBlocked
+Field:mapController
+Field:toolTip
+Field:nodeViewListeners
+Field:userInputListenerFactory
+Field:controller
+Method-name:ModeController
+Method-returnType:null
+Method-parameters:[final Controller controller]
+FieldAccess:controller
+Method-name:addAction
+Method-returnType:void
+Method-parameters:[final AFreeplaneAction action]
+MethodInvocation:addListenerForAction
+Method-name:addExtension
+Method-returnType:void
+Method-parameters:[final Class<? extends IExtension> clazz, final IExtension extension]
+MethodInvocation:addExtension
+Method-name:registerExtensionCopier
+Method-returnType:void
+Method-parameters:[final IExtensionCopier copier]
+MethodInvocation:add
+Method-name:unregisterExtensionCopier
+Method-returnType:void
+Method-parameters:[final IExtensionCopier copier]
+MethodInvocation:remove
+Method-name:copyExtensions
+Method-returnType:void
+Method-parameters:[final Object key, final NodeModel from, final NodeModel to]
+MethodInvocation:copy
+Method-name:undoableCopyExtensions
+Method-returnType:void
+Method-parameters:[final Object key, final NodeModel from, final NodeModel to]
+MethodInvocation:getMap
+MethodInvocation:copyExtensions
+MethodInvocation:getExtension
+MethodInvocation:copyExtensions
+MethodInvocation:copyExtensions
+Method-name:undo
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:removeExtensions
+MethodInvocation:copyExtensions
+MethodInvocation:nodeChanged
+MethodInvocation:getMapController
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:act
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:copyExtensions
+MethodInvocation:nodeChanged
+MethodInvocation:getMapController
+MethodInvocation:execute
+Method-name:removeExtensions
+Method-returnType:void
+Method-parameters:[final Object key, final NodeModel from, final NodeModel which]
+MethodInvocation:equals
+MethodInvocation:remove
+MethodInvocation:remove
+Method-name:undoableRemoveExtensions
+Method-returnType:void
+Method-parameters:[final Object key, final NodeModel from, final NodeModel which]
+MethodInvocation:getMap
+MethodInvocation:removeExtensions
+MethodInvocation:getExtension
+MethodInvocation:removeExtensions
+MethodInvocation:copyExtensions
+Method-name:undo
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:copyExtensions
+MethodInvocation:nodeChanged
+MethodInvocation:getMapController
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:act
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:removeExtensions
+MethodInvocation:nodeChanged
+MethodInvocation:getMapController
+MethodInvocation:execute
+Method-name:resolveParentExtensions
+Method-returnType:void
+Method-parameters:[final Object key, final NodeModel to]
+MethodInvocation:resolveParentExtensions
+Method-name:undoableResolveParentExtensions
+Method-returnType:void
+Method-parameters:[final Object key, final NodeModel to]
+MethodInvocation:getMap
+MethodInvocation:resolveParentExtensions
+MethodInvocation:getExtension
+MethodInvocation:resolveParentExtensions
+MethodInvocation:copyExtensions
+Method-name:undo
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:copyExtensions
+MethodInvocation:nodeChanged
+MethodInvocation:getMapController
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:act
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:resolveParentExtensions
+MethodInvocation:nodeChanged
+MethodInvocation:getMapController
+MethodInvocation:execute
+Method-name:removeExtensions
+Method-returnType:void
+Method-parameters:[final Object key, final NodeModel from]
+MethodInvocation:remove
+Method-name:addINodeViewLifeCycleListener
+Method-returnType:void
+Method-parameters:[final INodeViewLifeCycleListener listener]
+MethodInvocation:add
+Method-name:addUiBuilder
+Method-returnType:void
+Method-parameters:[Phase phase, String name, EntryVisitor builder]
+MethodInvocation:addUiBuilder
+Method-name:addUiBuilder
+Method-returnType:void
+Method-parameters:[Phase phase, String name, EntryVisitor builder, EntryVisitor destroyer]
+MethodInvocation:addUiBuilder
+Method-name:addUiBuilder
+Method-returnType:void
+Method-parameters:[Phase phase, String name, BuilderDestroyerPair builderDestroyerPair]
+MethodInvocation:addUiBuilder
+MethodInvocation:getUserInputListenerFactory
+Method-name:commit
+Method-returnType:void
+Method-parameters:[]
+Method-name:isUndoAction
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:execute
+Method-returnType:void
+Method-parameters:[final IActor actor, final MapModel map]
+MethodInvocation:act
+Method-name:getAction
+Method-returnType:AFreeplaneAction
+Method-parameters:[final String key]
+MethodInvocation:getAction
+MethodInvocation:getController
+Method-name:getController
+Method-returnType:Controller
+Method-parameters:[]
+Method-name:getExtension
+Method-returnType:T
+Method-parameters:[final Class<T> clazz]
+MethodInvocation:getExtension
+Method-name:containsExtension
+Method-returnType:boolean
+Method-parameters:[final Class<? extends IExtension> clazz]
+MethodInvocation:containsExtension
+Method-name:removeExtension
+Method-returnType:void
+Method-parameters:[Class<? extends IExtension> clazz]
+MethodInvocation:removeExtension
+Method-name:getMapController
+Method-returnType:MapController
+Method-parameters:[]
+Method-name:getModeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getUserInputListenerFactory
+Method-returnType:IUserInputListenerFactory
+Method-parameters:[]
+Method-name:hasOneVisibleChild
+Method-returnType:boolean
+Method-parameters:[final NodeModel parent]
+MethodInvocation:getChildren
+MethodInvocation:hasVisibleContent
+Method-name:isBlocked
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:onViewCreated
+Method-returnType:void
+Method-parameters:[final Container node]
+MethodInvocation:onViewCreated
+Method-name:onViewRemoved
+Method-returnType:void
+Method-parameters:[final Container node]
+MethodInvocation:onViewRemoved
+Method-name:removeAction
+Method-returnType:AFreeplaneAction
+Method-parameters:[final String key]
+MethodInvocation:removeListenerForAction
+Method-name:removeINodeViewLifeCycleListener
+Method-returnType:void
+Method-parameters:[final INodeViewLifeCycleListener listener]
+MethodInvocation:remove
+Method-name:rollback
+Method-returnType:void
+Method-parameters:[]
+Method-name:setBlocked
+Method-returnType:void
+Method-parameters:[final boolean isBlocked]
+FieldAccess:isBlocked
+Method-name:setMapController
+Method-returnType:void
+Method-parameters:[final MapController mapController]
+FieldAccess:mapController
+MethodInvocation:addExtension
+Method-name:setUserInputListenerFactory
+Method-returnType:void
+Method-parameters:[final IUserInputListenerFactory userInputListenerFactory]
+FieldAccess:userInputListenerFactory
+Method-name:setVisible
+Method-returnType:void
+Method-parameters:[final boolean visible]
+MethodInvocation:getSelected
+MethodInvocation:getSelection
+MethodInvocation:getController
+MethodInvocation:onSelect
+MethodInvocation:onDeselect
+Method-name:shutdown
+Method-returnType:void
+Method-parameters:[]
+Method-name:startTransaction
+Method-returnType:void
+Method-parameters:[]
+Method-name:forceNewTransaction
+Method-returnType:void
+Method-parameters:[]
+Method-name:startup
+Method-returnType:void
+Method-parameters:[]
+Method-name:updateMenus
+Method-returnType:void
+Method-parameters:[String menuStructure, final Set<String> plugins]
+MethodInvocation:getUserInputListenerFactory
+MethodInvocation:updateMenus
+Method-name:canEdit
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:createToolTip
+Method-returnType:String
+Method-parameters:[final NodeModel node, Component view]
+MethodInvocation:getMap
+MethodInvocation:getBackground
+MethodInvocation:getExtension
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:withBackground
+MethodInvocation:values
+MethodInvocation:getTooltip
+MethodInvocation:replace
+MethodInvocation:replaceAll
+MethodInvocation:replace
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:addToolTipProvider
+Method-returnType:void
+Method-parameters:[final Integer key, final ITooltipProvider tooltip]
+MethodInvocation:containsKey
+MethodInvocation:remove
+MethodInvocation:put
+Method-name:canEdit
+Method-returnType:boolean
+Method-parameters:[NodeModel model]
+Method-name:supportsHookActions
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:shouldCenterCompactMaps
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:updateMenusOther
+Method-returnType:void
+Method-parameters:[Entry target, LastOpenedList lastOpenedList]
+MethodInvocation:createOpenLastMapActionList
+MethodInvocation:addActionIfNotAlreadySet
+MethodInvocation:addChildAction

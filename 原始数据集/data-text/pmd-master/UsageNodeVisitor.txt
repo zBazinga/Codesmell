@@ -1,0 +1,167 @@
+Class:UsageNodeVisitor
+Class:Options
+Field:ignoreClassAnonymous
+Field:ignoreConstructorStaticInitializer
+Field:ignoreConstructorSinglePrivateNoArg
+Field:ignoreConstructorAllPrivate
+Field:ignoreMethodJavaLangObjectOverride
+Field:ignoreMethodAllOverride
+Field:ignoreMethodMain
+Field:ignoreFieldInlinable
+Method-name:isIgnoreClassAnonymous
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIgnoreClassAnonymous
+Method-returnType:void
+Method-parameters:[boolean ignoreClassAnonymous]
+FieldAccess:ignoreClassAnonymous
+Method-name:isIgnoreConstructorStaticInitializer
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIgnoreConstructorStaticInitializer
+Method-returnType:void
+Method-parameters:[boolean ignoreConstructorStaticInitializer]
+FieldAccess:ignoreConstructorStaticInitializer
+Method-name:isIgnoreConstructorSinglePrivateNoArg
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIgnoreConstructorSinglePrivateNoArg
+Method-returnType:void
+Method-parameters:[boolean ignoreConstructorSinglePrivateNoArg]
+FieldAccess:ignoreConstructorSinglePrivateNoArg
+Method-name:isIgnoreConstructorAllPrivate
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIgnoreConstructorAllPrivate
+Method-returnType:void
+Method-parameters:[boolean ignoreConstructorAllPrivate]
+FieldAccess:ignoreConstructorAllPrivate
+Method-name:isIgnoreMethodJavaLangObjectOverride
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIgnoreMethodJavaLangObjectOverride
+Method-returnType:void
+Method-parameters:[boolean ignoreMethodJavaLangObjectOverride]
+FieldAccess:ignoreMethodJavaLangObjectOverride
+Method-name:isIgnoreMethodAllOverride
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIgnoreMethodAllOverride
+Method-returnType:void
+Method-parameters:[boolean ignoreMethodAllOverride]
+FieldAccess:ignoreMethodAllOverride
+Method-name:isIgnoreMethodMain
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIgnoreMethodMain
+Method-returnType:void
+Method-parameters:[boolean ignoreMethodMain]
+FieldAccess:ignoreMethodMain
+Method-name:isIgnoreFieldInlinable
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setIgnoreFieldInlinable
+Method-returnType:void
+Method-parameters:[boolean ignoreFieldInlinable]
+FieldAccess:ignoreFieldInlinable
+Field:options
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[UsageGraph usageGraph, Object data]
+MethodInvocation:println
+MethodInvocation:println
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ClassNode classNode, Object data]
+MethodInvocation:isIgnoreClassAnonymous
+MethodInvocation:isAnonymousClass
+MethodInvocation:getType
+MethodInvocation:ignore
+MethodInvocation:println
+MethodInvocation:getName
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[FieldNode fieldNode, Object data]
+MethodInvocation:isEmpty
+MethodInvocation:getUsers
+MethodInvocation:isIgnoreFieldInlinable
+MethodInvocation:isFinal
+MethodInvocation:getModifiers
+MethodInvocation:getMember
+MethodInvocation:isPrimitive
+MethodInvocation:getType
+MethodInvocation:getMember
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getType
+MethodInvocation:getMember
+MethodInvocation:ignore
+MethodInvocation:println
+MethodInvocation:toStringLong
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ConstructorNode constructorNode, Object data]
+MethodInvocation:isEmpty
+MethodInvocation:getUsers
+MethodInvocation:isStaticInitializer
+MethodInvocation:isIgnoreConstructorStaticInitializer
+MethodInvocation:ignore
+MethodInvocation:isInstanceInitializer
+MethodInvocation:isPrivate
+MethodInvocation:getModifiers
+MethodInvocation:getMember
+MethodInvocation:isIgnoreConstructorAllPrivate
+MethodInvocation:ignore
+MethodInvocation:isIgnoreConstructorSinglePrivateNoArg
+FieldAccess:length
+MethodInvocation:getParameterTypes
+MethodInvocation:getMember
+MethodInvocation:size
+MethodInvocation:getConstructorNodes
+MethodInvocation:getClassNode
+MethodInvocation:ignore
+MethodInvocation:println
+MethodInvocation:toStringLong
+Method-name:isMainMethod
+Method-returnType:boolean
+Method-parameters:[MethodNode node]
+MethodInvocation:getMember
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:isPublic
+MethodInvocation:getModifiers
+MethodInvocation:isStatic
+MethodInvocation:getModifiers
+MethodInvocation:getReturnType
+FieldAccess:length
+MethodInvocation:getParameterTypes
+MethodInvocation:isArray
+MethodInvocation:getParameterTypes
+MethodInvocation:equals
+MethodInvocation:getComponentType
+MethodInvocation:getParameterTypes
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[MethodNode methodNode, Object data]
+MethodInvocation:isEmpty
+MethodInvocation:getUsers
+MethodInvocation:isIgnoreMethodAllOverride
+MethodInvocation:isOverridenMethod
+MethodInvocation:getClass
+MethodInvocation:getClassNode
+MethodInvocation:getMember
+MethodInvocation:ignore
+MethodInvocation:isIgnoreMethodJavaLangObjectOverride
+MethodInvocation:isOverridenMethod
+MethodInvocation:getMember
+MethodInvocation:ignore
+MethodInvocation:isIgnoreMethodMain
+MethodInvocation:isMainMethod
+MethodInvocation:ignore
+MethodInvocation:println
+MethodInvocation:toStringLong
+Method-name:ignore
+Method-returnType:void
+Method-parameters:[String description, MemberNode memberNode]
+MethodInvocation:println
+MethodInvocation:toStringLong

@@ -1,0 +1,147 @@
+Class:DMNFEELHelper
+Field:logger
+MethodInvocation:getLogger
+Field:classLoader
+Field:feel
+Field:listener
+Field:feelProfiles
+Method-name:DMNFEELHelper
+Method-returnType:null
+Method-parameters:[List<FEELProfile> feelProfiles]
+MethodInvocation:findDefaultClassLoader
+Method-name:DMNFEELHelper
+Method-returnType:null
+Method-parameters:[ClassLoader classLoader, List<FEELProfile> feelProfiles]
+FieldAccess:classLoader
+MethodInvocation:addAll
+FieldAccess:feelProfiles
+FieldAccess:listener
+FieldAccess:feel
+MethodInvocation:createFEELInstance
+Method-name:createFEELInstance
+Method-returnType:FEEL
+Method-parameters:[]
+MethodInvocation:newInstance
+MethodInvocation:addListener
+Method-name:newFEELInstance
+Method-returnType:FEEL
+Method-parameters:[]
+MethodInvocation:newInstance
+Method-name:valueMatchesInUnaryTests
+Method-returnType:boolean
+Method-parameters:[List<UnaryTest> unaryTests, Object value, DMNContext dmnContext]
+MethodInvocation:addListener
+MethodInvocation:findDefaultClassLoader
+MethodInvocation:enterFrame
+MethodInvocation:entrySet
+MethodInvocation:getAll
+MethodInvocation:setValue
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:apply
+MethodInvocation:getFeelEvents
+MethodInvocation:append
+MethodInvocation:getMessage
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:exitFrame
+Method-name:compileFeelExpression
+Method-returnType:CompiledExpression
+Method-parameters:[DMNCompilerContext ctx, String expression, DMNModelImpl model, DMNElement element, Msg.Message errorMsg, Object... msgParams]
+MethodInvocation:newCompilerContext
+MethodInvocation:entrySet
+MethodInvocation:getVariables
+MethodInvocation:addInputVariableType
+MethodInvocation:getKey
+MethodInvocation:getFeelType
+MethodInvocation:getValue
+MethodInvocation:compile
+MethodInvocation:processEvents
+Method-name:evaluateFunctionDef
+Method-returnType:FEELFunction
+Method-parameters:[DMNCompilerContext ctx, String expression, DMNModelImpl model, DMNElement element, Msg.Message errorMsg, Object... msgParams]
+MethodInvocation:evaluate
+MethodInvocation:error
+MethodInvocation:processEvents
+Method-name:evaluateFunctionDef
+Method-returnType:FEELFunction
+Method-parameters:[DMNCompilerContext ctx, CompiledExpression expression, DMNModelImpl model, DMNElement element, Msg.Message errorMsg, Object... msgParams]
+MethodInvocation:evaluate
+MethodInvocation:emptyMap
+MethodInvocation:error
+MethodInvocation:processEvents
+Method-name:evaluateUnaryTests
+Method-returnType:List<UnaryTest>
+Method-parameters:[DMNCompilerContext ctx, String unaryTests, DMNModelImpl model, DMNElement element, Msg.Message errorMsg, Object... msgParams]
+MethodInvocation:emptyList
+MethodInvocation:entrySet
+MethodInvocation:getVariables
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getFeelType
+MethodInvocation:getValue
+MethodInvocation:evaluateUnaryTests
+MethodInvocation:error
+MethodInvocation:processEvents
+Method-name:processEvents
+Method-returnType:void
+Method-parameters:[DMNModelImpl model, DMNElement element, Msg.Message msg, Object... msgParams]
+MethodInvocation:getFeelEvents
+MethodInvocation:isEmpty
+MethodInvocation:remove
+MethodInvocation:isDuplicateEvent
+MethodInvocation:getSeverity
+MethodInvocation:reportMessage
+MethodInvocation:getMessage
+MethodInvocation:reportMessage
+MethodInvocation:getOffendingSymbol
+MethodInvocation:getMessage
+MethodInvocation:getOffendingSymbol
+MethodInvocation:getText
+MethodInvocation:getOffendingSymbol
+MethodInvocation:getOffendingSymbol
+MethodInvocation:reportMessage
+Method-name:generateUnaryTestsSource
+Method-returnType:ClassOrInterfaceDeclaration
+Method-parameters:[String unaryTests, DMNCompilerContext ctx, Type inputColumnType]
+MethodInvocation:addInputVariableType
+MethodInvocation:toCompilerContext
+MethodInvocation:compileUnaryTests
+MethodInvocation:clone
+MethodInvocation:getSourceCode
+MethodInvocation:setStatic
+MethodInvocation:asClassOrInterfaceDeclaration
+MethodInvocation:getType
+Class:FEELEventsListenerImpl
+Field:feelEvents
+Method-name:onEvent
+Method-returnType:void
+Method-parameters:[FEELEvent event]
+MethodInvocation:add
+Method-name:getFeelEvents
+Method-returnType:Queue<FEELEvent>
+Method-parameters:[]
+Method-name:newEvaluationContext
+Method-returnType:EvaluationContextImpl
+Method-parameters:[Collection<FEELEventListener> listeners, Map<String,Object> inputVariables]
+MethodInvocation:newEvaluationContext
+Method-name:evaluateUnaryTests
+Method-returnType:List<UnaryTest>
+Method-parameters:[String expression, Map<String,Type> variableTypes]
+MethodInvocation:evaluateUnaryTests
+Method-name:newCompilerContext
+Method-returnType:CompilerContext
+Method-parameters:[]
+MethodInvocation:newCompilerContext
+Method-name:compile
+Method-returnType:CompiledExpression
+Method-parameters:[DMNModelImpl model, DMNElement element, Msg.Message msg, String dtableName, String expr, CompilerContext feelctx, int index]
+MethodInvocation:compile
+MethodInvocation:processEvents
+Method-name:generateFeelExpressionSource
+Method-returnType:ClassOrInterfaceDeclaration
+Method-parameters:[String input, CompilerContext compilerContext1]
+MethodInvocation:generateExpressionSource
+MethodInvocation:setStatic
+MethodInvocation:asClassOrInterfaceDeclaration
+MethodInvocation:getType

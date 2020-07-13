@@ -1,0 +1,74 @@
+Class:Jaxb2RootElementHttpMessageConverter
+Field:supportDtd
+Field:processExternalEntities
+Method-name:setSupportDtd
+Method-returnType:void
+Method-parameters:[boolean supportDtd]
+FieldAccess:supportDtd
+Method-name:isSupportDtd
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:supportDtd
+Method-name:setProcessExternalEntities
+Method-returnType:void
+Method-parameters:[boolean processExternalEntities]
+FieldAccess:processExternalEntities
+FieldAccess:supportDtd
+Method-name:isProcessExternalEntities
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:processExternalEntities
+Method-name:canRead
+Method-returnType:boolean
+Method-parameters:[Class<?> clazz, @Nullable MediaType mediaType]
+MethodInvocation:isAnnotationPresent
+MethodInvocation:isAnnotationPresent
+MethodInvocation:canRead
+Method-name:canWrite
+Method-returnType:boolean
+Method-parameters:[Class<?> clazz, @Nullable MediaType mediaType]
+MethodInvocation:findAnnotation
+MethodInvocation:canWrite
+Method-name:supports
+Method-returnType:boolean
+Method-parameters:[Class<?> clazz]
+Method-name:readFromSource
+Method-returnType:Object
+Method-parameters:[Class<?> clazz, HttpHeaders headers, Source source]
+MethodInvocation:processSource
+MethodInvocation:createUnmarshaller
+MethodInvocation:isAnnotationPresent
+MethodInvocation:unmarshal
+MethodInvocation:unmarshal
+MethodInvocation:getValue
+MethodInvocation:isSupportDtd
+MethodInvocation:getMessage
+Method-name:processSource
+Method-returnType:Source
+Method-parameters:[Source source]
+MethodInvocation:getInputStream
+MethodInvocation:createXMLReader
+MethodInvocation:setFeature
+MethodInvocation:isSupportDtd
+MethodInvocation:setFeature
+MethodInvocation:isProcessExternalEntities
+MethodInvocation:isProcessExternalEntities
+MethodInvocation:setEntityResolver
+MethodInvocation:warn
+Method-name:writeToResult
+Method-returnType:void
+Method-parameters:[Object o, HttpHeaders headers, Result result]
+MethodInvocation:getUserClass
+MethodInvocation:createMarshaller
+MethodInvocation:setCharset
+MethodInvocation:getContentType
+MethodInvocation:marshal
+MethodInvocation:getMessage
+Method-name:setCharset
+Method-returnType:void
+Method-parameters:[@Nullable MediaType contentType, Marshaller marshaller]
+MethodInvocation:getCharset
+MethodInvocation:setProperty
+MethodInvocation:name
+MethodInvocation:getCharset
+Field:NO_OP_ENTITY_RESOLVER

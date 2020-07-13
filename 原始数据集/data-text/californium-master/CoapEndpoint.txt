@@ -1,0 +1,789 @@
+Class:CoapEndpoint
+Field:LOGGER
+MethodInvocation:getLogger
+Field:coapstack
+Field:connector
+Field:scheme
+Field:multicastBaseMid
+Field:useRequestOffloading
+Field:config
+Field:matcher
+Field:serializer
+Field:parser
+Field:exchangeStore
+Field:observationStore
+Field:tag
+Field:health
+Field:executor
+Field:secondaryExecutor
+Field:started
+Field:observers
+Field:interceptors
+Field:postProcessInterceptors
+Field:notificationListeners
+Field:multicastReceivers
+Field:statusLogger
+Field:endpointStackReceiver
+Method-name:receiveRequest
+Method-returnType:void
+Method-parameters:[Exchange exchange, Request request]
+MethodInvocation:setEndpoint
+MethodInvocation:receivedRequest
+MethodInvocation:isDuplicate
+MethodInvocation:receiveRequest
+MethodInvocation:notifyReceive
+Method-name:receiveResponse
+Method-returnType:void
+Method-parameters:[Exchange exchange, Response response]
+MethodInvocation:isCanceled
+MethodInvocation:setEndpoint
+MethodInvocation:setRTT
+MethodInvocation:calculateRTT
+MethodInvocation:receivedResponse
+MethodInvocation:isDuplicate
+MethodInvocation:receiveResponse
+MethodInvocation:notifyReceive
+Method-name:receiveEmptyMessage
+Method-returnType:void
+Method-parameters:[Exchange exchange, EmptyMessage message]
+MethodInvocation:isCanceled
+MethodInvocation:setEndpoint
+MethodInvocation:getType
+MethodInvocation:receivedReject
+MethodInvocation:receiveEmptyMessage
+MethodInvocation:notifyReceive
+Method-name:reject
+Method-returnType:void
+Method-parameters:[final Message message]
+MethodInvocation:newRST
+MethodInvocation:addMessageObserver
+MethodInvocation:sendEmptyMessage
+Field:requestTransmission
+Field:responseTransmission
+Field:rejectTransmission
+Method-name:CoapEndpoint
+Method-returnType:null
+Method-parameters:[Connector connector, boolean applyConfiguration, NetworkConfig config, TokenGenerator tokenGenerator, ObservationStore store, MessageExchangeStore exchangeStore, EndpointContextMatcher endpointContextMatcher, String loggingTag, CoapEndpointHealth health, CoapStackFactory coapStackFactory, Object customStackArgument]
+FieldAccess:config
+FieldAccess:connector
+MethodInvocation:setRawDataReceiver
+FieldAccess:connector
+FieldAccess:scheme
+MethodInvocation:getSchemeForProtocol
+MethodInvocation:getProtocol
+FieldAccess:multicastBaseMid
+MethodInvocation:getInt
+FieldAccess:tag
+MethodInvocation:normalizeLoggingTag
+MethodInvocation:getDefaultCoapStackFactory
+FieldAccess:exchangeStore
+MethodInvocation:create
+MethodInvocation:setReceiverThreadCount
+MethodInvocation:getInt
+MethodInvocation:setSenderThreadCount
+MethodInvocation:getInt
+MethodInvocation:setReceiveBufferSize
+MethodInvocation:getInt
+MethodInvocation:setSendBufferSize
+MethodInvocation:getInt
+MethodInvocation:setReceiverPacketSize
+MethodInvocation:getInt
+Method-name:execute
+Method-returnType:void
+Method-parameters:[Runnable command]
+MethodInvocation:error
+MethodInvocation:execute
+MethodInvocation:setEndpointContextMatcher
+FieldAccess:connector
+MethodInvocation:info
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getName
+FieldAccess:coapstack
+MethodInvocation:createCoapStack
+MethodInvocation:getProtocol
+MethodInvocation:isTcpProtocol
+MethodInvocation:getProtocol
+FieldAccess:useRequestOffloading
+FieldAccess:matcher
+FieldAccess:exchangeStore
+FieldAccess:serializer
+FieldAccess:parser
+FieldAccess:useRequestOffloading
+MethodInvocation:getBoolean
+FieldAccess:matcher
+FieldAccess:exchangeStore
+FieldAccess:serializer
+FieldAccess:parser
+MethodInvocation:getInt
+MethodInvocation:isEnabled
+FieldAccess:health
+FieldAccess:requestTransmission
+Method-name:onSendError
+Method-returnType:void
+Method-parameters:[Throwable error]
+MethodInvocation:sendError
+FieldAccess:health
+Method-name:onSent
+Method-returnType:void
+Method-parameters:[boolean retransmission]
+MethodInvocation:sentRequest
+FieldAccess:health
+FieldAccess:responseTransmission
+Method-name:onSendError
+Method-returnType:void
+Method-parameters:[Throwable error]
+MethodInvocation:sendError
+FieldAccess:health
+Method-name:onSent
+Method-returnType:void
+Method-parameters:[boolean retransmission]
+MethodInvocation:sentResponse
+FieldAccess:health
+FieldAccess:rejectTransmission
+Method-name:onSendError
+Method-returnType:void
+Method-parameters:[Throwable error]
+MethodInvocation:sendError
+FieldAccess:health
+Method-name:onSent
+Method-returnType:void
+Method-parameters:[boolean retransmission]
+MethodInvocation:sentReject
+FieldAccess:health
+FieldAccess:health
+FieldAccess:requestTransmission
+FieldAccess:responseTransmission
+FieldAccess:rejectTransmission
+Method-name:CoapEndpoint
+Method-returnType:null
+Method-parameters:[Connector connector, boolean applyConfiguration, NetworkConfig config, TokenGenerator tokenGenerator, ObservationStore store, MessageExchangeStore exchangeStore, EndpointContextMatcher endpointContextMatcher, String loggingTag, CoapStackFactory coapStackFactory, Object customStackArgument]
+Method-name:start
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:debug
+MethodInvocation:getUri
+MethodInvocation:hasDeliverer
+FieldAccess:coapstack
+MethodInvocation:setMessageDeliverer
+FieldAccess:executor
+MethodInvocation:info
+MethodInvocation:getUri
+MethodInvocation:newSingleThreadScheduledExecutor
+MethodInvocation:setExecutors
+MethodInvocation:addObserver
+Method-name:started
+Method-returnType:void
+Method-parameters:[final Endpoint endpoint]
+Method-name:stopped
+Method-returnType:void
+Method-parameters:[final Endpoint endpoint]
+Method-name:destroyed
+Method-returnType:void
+Method-parameters:[final Endpoint endpoint]
+MethodInvocation:shutdownExecutorGracefully
+MethodInvocation:debug
+MethodInvocation:getUri
+MethodInvocation:start
+MethodInvocation:startMulticastReceivers
+MethodInvocation:start
+MethodInvocation:start
+MethodInvocation:started
+MethodInvocation:info
+MethodInvocation:getUri
+MethodInvocation:getInt
+MethodInvocation:scheduleAtFixedRate
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:dump
+MethodInvocation:stop
+Method-name:stop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:info
+MethodInvocation:getUri
+MethodInvocation:info
+MethodInvocation:getUri
+MethodInvocation:cancel
+MethodInvocation:stop
+MethodInvocation:stop
+MethodInvocation:stop
+MethodInvocation:stopped
+Method-name:destroy
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:info
+MethodInvocation:getUri
+MethodInvocation:stop
+MethodInvocation:destroy
+MethodInvocation:destroy
+MethodInvocation:destroy
+MethodInvocation:destroyed
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:isStarted
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setExecutors
+Method-returnType:void
+Method-parameters:[ScheduledExecutorService mainExecutor, ScheduledExecutorService secondaryExecutor]
+FieldAccess:executor
+FieldAccess:secondaryExecutor
+FieldAccess:executor
+FieldAccess:secondaryExecutor
+MethodInvocation:setExecutors
+FieldAccess:coapstack
+FieldAccess:secondaryExecutor
+MethodInvocation:setExecutor
+FieldAccess:exchangeStore
+FieldAccess:secondaryExecutor
+MethodInvocation:setExecutor
+FieldAccess:observationStore
+FieldAccess:secondaryExecutor
+Method-name:addNotificationListener
+Method-returnType:void
+Method-parameters:[final NotificationListener lis]
+MethodInvocation:add
+Method-name:removeNotificationListener
+Method-returnType:void
+Method-parameters:[final NotificationListener lis]
+MethodInvocation:remove
+Method-name:addObserver
+Method-returnType:void
+Method-parameters:[final EndpointObserver observer]
+MethodInvocation:add
+Method-name:removeObserver
+Method-returnType:void
+Method-parameters:[final EndpointObserver observer]
+MethodInvocation:remove
+Method-name:addInterceptor
+Method-returnType:void
+Method-parameters:[final MessageInterceptor interceptor]
+MethodInvocation:add
+Method-name:removeInterceptor
+Method-returnType:void
+Method-parameters:[final MessageInterceptor interceptor]
+MethodInvocation:remove
+Method-name:getInterceptors
+Method-returnType:List<MessageInterceptor>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+Method-name:addPostProcessInterceptor
+Method-returnType:void
+Method-parameters:[MessageInterceptor interceptor]
+MethodInvocation:add
+Method-name:removePostProcessInterceptor
+Method-returnType:void
+Method-parameters:[MessageInterceptor interceptor]
+MethodInvocation:remove
+Method-name:getPostProcessInterceptors
+Method-returnType:List<MessageInterceptor>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+Method-name:addMulticastReceiver
+Method-returnType:void
+Method-parameters:[final Connector receiver]
+MethodInvocation:isMultiAddress
+MethodInvocation:getAddress
+MethodInvocation:getAddress
+MethodInvocation:add
+MethodInvocation:setRawDataReceiver
+Method-name:removeMulticastReceiver
+Method-returnType:void
+Method-parameters:[Connector receiver]
+MethodInvocation:remove
+MethodInvocation:setRawDataReceiver
+Method-name:startMulticastReceivers
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:start
+Method-name:sendRequest
+Method-returnType:void
+Method-parameters:[final Request request]
+MethodInvocation:cancel
+MethodInvocation:prepareDestinationContext
+MethodInvocation:getPeerAddress
+MethodInvocation:getDestinationContext
+MethodInvocation:isMulticast
+MethodInvocation:warn
+MethodInvocation:getType
+MethodInvocation:warn
+MethodInvocation:hasMID
+MethodInvocation:getMID
+MethodInvocation:warn
+MethodInvocation:getMID
+MethodInvocation:getMID
+MethodInvocation:warn
+MethodInvocation:getMID
+MethodInvocation:execute
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:addMessageObserver
+MethodInvocation:sendRequest
+Method-name:sendResponse
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final Response response]
+MethodInvocation:cancel
+MethodInvocation:addMessageObserver
+MethodInvocation:checkOwner
+MethodInvocation:sendResponse
+MethodInvocation:execute
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:sendResponse
+Method-name:sendEmptyMessage
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final EmptyMessage message]
+MethodInvocation:cancel
+MethodInvocation:getType
+MethodInvocation:addMessageObserver
+MethodInvocation:checkOwner
+MethodInvocation:sendEmptyMessage
+MethodInvocation:execute
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:sendEmptyMessage
+Method-name:setMessageDeliverer
+Method-returnType:void
+Method-parameters:[MessageDeliverer deliverer]
+MethodInvocation:setDeliverer
+Method-name:getAddress
+Method-returnType:InetSocketAddress
+Method-parameters:[]
+MethodInvocation:getAddress
+Method-name:getUri
+Method-returnType:URI
+Method-parameters:[]
+MethodInvocation:getAddress
+MethodInvocation:getUriHostname
+MethodInvocation:getAddress
+MethodInvocation:getPort
+MethodInvocation:warn
+Method-name:getConfig
+Method-returnType:NetworkConfig
+Method-parameters:[]
+Method-name:getConnector
+Method-returnType:Connector
+Method-parameters:[]
+Class:NotificationDispatcher
+Method-name:onNotification
+Method-returnType:void
+Method-parameters:[final Request request, final Response response]
+MethodInvocation:onNotification
+Method-name:notifySend
+Method-returnType:void
+Method-parameters:[List<MessageInterceptor> list, Request request]
+MethodInvocation:sendRequest
+Method-name:notifySend
+Method-returnType:void
+Method-parameters:[List<MessageInterceptor> list, Response response]
+MethodInvocation:sendResponse
+Method-name:notifySend
+Method-returnType:void
+Method-parameters:[List<MessageInterceptor> list, EmptyMessage emptyMessage]
+MethodInvocation:sendEmptyMessage
+Method-name:notifyReceive
+Method-returnType:void
+Method-parameters:[List<MessageInterceptor> list, Request request]
+MethodInvocation:receiveRequest
+Method-name:notifyReceive
+Method-returnType:void
+Method-parameters:[List<MessageInterceptor> list, Response response]
+MethodInvocation:receiveResponse
+Method-name:notifyReceive
+Method-returnType:void
+Method-parameters:[List<MessageInterceptor> list, EmptyMessage emptyMessage]
+MethodInvocation:receiveEmptyMessage
+Class:OutboxImpl
+Method-name:sendRequest
+Method-returnType:void
+Method-parameters:[final Exchange exchange, final Request request]
+MethodInvocation:assertMessageHasDestinationAddress
+MethodInvocation:setCurrentRequest
+MethodInvocation:sendRequest
+MethodInvocation:notifySend
+MethodInvocation:setReadyToSend
+MethodInvocation:cancel
+MethodInvocation:isCanceled
+MethodInvocation:getSendError
+MethodInvocation:executeComplete
+MethodInvocation:serializeRequest
+Method-name:notifyPostProcess
+Method-returnType:void
+Method-parameters:[Request request]
+MethodInvocation:notifySend
+MethodInvocation:send
+Method-name:sendResponse
+Method-returnType:void
+Method-parameters:[Exchange exchange, Response response]
+MethodInvocation:assertMessageHasDestinationAddress
+MethodInvocation:setCurrentResponse
+MethodInvocation:sendResponse
+MethodInvocation:notifySend
+MethodInvocation:setReadyToSend
+MethodInvocation:cancel
+MethodInvocation:isCanceled
+MethodInvocation:getSendError
+MethodInvocation:executeComplete
+MethodInvocation:serializeResponse
+Method-name:notifyPostProcess
+Method-returnType:void
+Method-parameters:[Response response]
+MethodInvocation:notifySend
+MethodInvocation:offload
+MethodInvocation:getCurrentRequest
+MethodInvocation:offload
+MethodInvocation:send
+Method-name:sendEmptyMessage
+Method-returnType:void
+Method-parameters:[Exchange exchange, EmptyMessage message]
+MethodInvocation:assertMessageHasDestinationAddress
+MethodInvocation:sendEmptyMessage
+MethodInvocation:notifySend
+MethodInvocation:setReadyToSend
+MethodInvocation:cancel
+MethodInvocation:isCanceled
+MethodInvocation:getSendError
+MethodInvocation:executeComplete
+MethodInvocation:send
+MethodInvocation:serializeEmptyMessage
+Method-name:notifyPostProcess
+Method-returnType:void
+Method-parameters:[EmptyMessage message]
+MethodInvocation:notifySend
+MethodInvocation:send
+MethodInvocation:serializeEmptyMessage
+Method-name:notifyPostProcess
+Method-returnType:void
+Method-parameters:[EmptyMessage message]
+MethodInvocation:notifySend
+Method-name:assertMessageHasDestinationAddress
+Method-returnType:void
+Method-parameters:[final Message message]
+MethodInvocation:getDestinationContext
+Class:InboxImpl
+Method-name:receiveData
+Method-returnType:void
+Method-parameters:[final RawData raw]
+MethodInvocation:getEndpointContext
+MethodInvocation:getPeerAddress
+MethodInvocation:getEndpointContext
+MethodInvocation:getPort
+MethodInvocation:getPeerAddress
+MethodInvocation:getEndpointContext
+MethodInvocation:runInProtocolStage
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:receiveMessage
+Method-name:receiveMessage
+Method-returnType:void
+Method-parameters:[final RawData raw]
+MethodInvocation:parseMessage
+MethodInvocation:isRequest
+MethodInvocation:getRawCode
+MethodInvocation:receiveRequest
+MethodInvocation:isResponse
+MethodInvocation:getRawCode
+MethodInvocation:receiveResponse
+MethodInvocation:isEmptyMessage
+MethodInvocation:getRawCode
+MethodInvocation:receiveEmptyMessage
+MethodInvocation:debug
+MethodInvocation:getEndpointContext
+MethodInvocation:isConfirmable
+MethodInvocation:hasMid
+MethodInvocation:isRequest
+MethodInvocation:getCode
+MethodInvocation:getToken
+MethodInvocation:responseBadOption
+MethodInvocation:debug
+MethodInvocation:getEndpointContext
+MethodInvocation:getMessage
+MethodInvocation:reject
+MethodInvocation:debug
+MethodInvocation:getEndpointContext
+MethodInvocation:getMessage
+MethodInvocation:debug
+MethodInvocation:getEndpointContext
+MethodInvocation:getMessage
+MethodInvocation:debug
+MethodInvocation:getEndpointContext
+MethodInvocation:getMessage
+Method-name:responseBadOption
+Method-returnType:void
+Method-parameters:[final RawData raw, final CoAPMessageFormatException cause]
+MethodInvocation:setDestinationContext
+MethodInvocation:getEndpointContext
+MethodInvocation:setToken
+MethodInvocation:getToken
+MethodInvocation:setMID
+MethodInvocation:getMid
+MethodInvocation:setType
+MethodInvocation:setPayload
+MethodInvocation:getMessage
+MethodInvocation:addMessageObserver
+MethodInvocation:notifySend
+MethodInvocation:setReadyToSend
+MethodInvocation:cancel
+MethodInvocation:serializeResponse
+Method-name:notifyPostProcess
+Method-returnType:void
+Method-parameters:[Response response]
+MethodInvocation:notifySend
+MethodInvocation:send
+Method-name:reject
+Method-returnType:void
+Method-parameters:[final RawData raw, final CoAPMessageFormatException cause]
+MethodInvocation:setMID
+MethodInvocation:getMid
+MethodInvocation:setDestinationContext
+MethodInvocation:getEndpointContext
+MethodInvocation:addMessageObserver
+MethodInvocation:sendEmptyMessage
+Method-name:receiveRequest
+Method-returnType:void
+Method-parameters:[final Request request]
+MethodInvocation:setScheme
+MethodInvocation:debug
+MethodInvocation:notifyReceive
+MethodInvocation:isCanceled
+MethodInvocation:receiveRequest
+Method-name:receiveResponse
+Method-returnType:void
+Method-parameters:[final Response response]
+MethodInvocation:notifyReceive
+MethodInvocation:isCanceled
+MethodInvocation:receiveResponse
+Method-name:receiveEmptyMessage
+Method-returnType:void
+Method-parameters:[final EmptyMessage message]
+MethodInvocation:notifyReceive
+MethodInvocation:isCanceled
+MethodInvocation:getType
+MethodInvocation:getType
+MethodInvocation:hasMID
+MethodInvocation:debug
+MethodInvocation:getSourceContext
+MethodInvocation:reject
+MethodInvocation:receiveEmptyMessage
+Class:MulticastReceiverInbox
+Field:connector
+Field:scheme
+Method-name:MulticastReceiverInbox
+Method-returnType:null
+Method-parameters:[Connector connector]
+FieldAccess:connector
+FieldAccess:scheme
+MethodInvocation:getSchemeForProtocol
+MethodInvocation:getProtocol
+Method-name:receiveData
+Method-returnType:void
+Method-parameters:[final RawData raw]
+MethodInvocation:getEndpointContext
+MethodInvocation:getPeerAddress
+MethodInvocation:getEndpointContext
+MethodInvocation:getPort
+MethodInvocation:getPeerAddress
+MethodInvocation:getEndpointContext
+MethodInvocation:isMulticast
+MethodInvocation:runInProtocolStage
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:receiveMessage
+Method-name:receiveMessage
+Method-returnType:void
+Method-parameters:[final RawData raw]
+MethodInvocation:parseMessage
+MethodInvocation:isRequest
+MethodInvocation:getRawCode
+MethodInvocation:receiveRequest
+MethodInvocation:isResponse
+MethodInvocation:getRawCode
+MethodInvocation:debug
+MethodInvocation:getEndpointContext
+MethodInvocation:isEmptyMessage
+MethodInvocation:getRawCode
+MethodInvocation:debug
+MethodInvocation:getEndpointContext
+MethodInvocation:debug
+MethodInvocation:getEndpointContext
+MethodInvocation:debug
+MethodInvocation:getEndpointContext
+Method-name:receiveRequest
+Method-returnType:void
+Method-parameters:[final Request request]
+MethodInvocation:setScheme
+MethodInvocation:getAddress
+MethodInvocation:isMultiAddress
+MethodInvocation:getAddress
+MethodInvocation:setDestinationContext
+MethodInvocation:warn
+MethodInvocation:debug
+MethodInvocation:notifyReceive
+MethodInvocation:isCanceled
+MethodInvocation:receiveRequest
+Class:SendingCallback
+Field:message
+Method-name:SendingCallback
+Method-returnType:null
+Method-parameters:[final T message]
+FieldAccess:message
+Method-name:onConnecting
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onConnecting
+Method-name:onDtlsRetransmission
+Method-returnType:void
+Method-parameters:[int flight]
+MethodInvocation:onDtlsRetransmission
+Method-name:onContextEstablished
+Method-returnType:void
+Method-parameters:[EndpointContext context]
+MethodInvocation:nanoRealtime
+MethodInvocation:setNanoTimestamp
+MethodInvocation:onContextEstablished
+Method-name:onSent
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isSent
+MethodInvocation:setDuplicate
+MethodInvocation:setSent
+MethodInvocation:notifyPostProcess
+Method-name:onError
+Method-returnType:void
+Method-parameters:[Throwable error]
+MethodInvocation:setSendError
+MethodInvocation:notifyPostProcess
+Method-name:notifyPostProcess
+Method-returnType:void
+Method-parameters:[T message]
+Method-name:onContextEstablished
+Method-returnType:void
+Method-parameters:[EndpointContext context, long nanoTimestamp]
+Class:ExchangeCallback
+Field:exchange
+Method-name:ExchangeCallback
+Method-returnType:null
+Method-parameters:[final Exchange exchange, final T message]
+FieldAccess:exchange
+Method-name:onContextEstablished
+Method-returnType:void
+Method-parameters:[EndpointContext context, long nanoTimestamp]
+MethodInvocation:setSendNanoTimestamp
+MethodInvocation:setEndpointContext
+Method-name:cancelObservation
+Method-returnType:void
+Method-parameters:[Token token]
+MethodInvocation:cancelObserve
+Method-name:runInProtocolStage
+Method-returnType:void
+Method-parameters:[final Runnable task]
+MethodInvocation:execute
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:run
+MethodInvocation:error
+MethodInvocation:getMessage
+MethodInvocation:debug
+Class:Builder
+Field:config
+Field:bindAddress
+Field:applyConfiguration
+Field:connector
+Field:observationStore
+Field:exchangeStore
+Field:endpointContextMatcher
+Field:tokenGenerator
+Field:coapStackFactory
+Field:tag
+Field:customStackArgument
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:setNetworkConfig
+Method-returnType:Builder
+Method-parameters:[NetworkConfig config]
+FieldAccess:config
+Method-name:setPort
+Method-returnType:Builder
+Method-parameters:[int port]
+FieldAccess:bindAddress
+FieldAccess:connector
+FieldAccess:bindAddress
+Method-name:setInetSocketAddress
+Method-returnType:Builder
+Method-parameters:[InetSocketAddress address]
+FieldAccess:bindAddress
+FieldAccess:connector
+FieldAccess:bindAddress
+Method-name:setConnector
+Method-returnType:Builder
+Method-parameters:[Connector connector]
+FieldAccess:bindAddress
+FieldAccess:connector
+FieldAccess:connector
+FieldAccess:applyConfiguration
+Method-name:setConnectorWithAutoConfiguration
+Method-returnType:Builder
+Method-parameters:[UDPConnector connector]
+FieldAccess:bindAddress
+FieldAccess:connector
+FieldAccess:connector
+Method-name:setObservationStore
+Method-returnType:Builder
+Method-parameters:[ObservationStore store]
+FieldAccess:observationStore
+Method-name:setMessageExchangeStore
+Method-returnType:Builder
+Method-parameters:[MessageExchangeStore exchangeStore]
+FieldAccess:exchangeStore
+Method-name:setEndpointContextMatcher
+Method-returnType:Builder
+Method-parameters:[EndpointContextMatcher endpointContextMatcher]
+FieldAccess:endpointContextMatcher
+Method-name:setTokenGenerator
+Method-returnType:Builder
+Method-parameters:[TokenGenerator tokenGenerator]
+FieldAccess:tokenGenerator
+Method-name:setCoapStackFactory
+Method-returnType:Builder
+Method-parameters:[CoapStackFactory coapStackFactory]
+FieldAccess:coapStackFactory
+Method-name:setLoggingTag
+Method-returnType:Builder
+Method-parameters:[String tag]
+FieldAccess:tag
+Method-name:setCustomCoapStackArgument
+Method-returnType:Builder
+Method-parameters:[Object customStackArgument]
+FieldAccess:customStackArgument
+Method-name:build
+Method-returnType:CoapEndpoint
+Method-parameters:[]
+MethodInvocation:getStandard
+MethodInvocation:create
+MethodInvocation:getSchemeForProtocol
+MethodInvocation:getProtocol
+MethodInvocation:normalizeLoggingTag
+MethodInvocation:getDefaultCoapStackFactory
+Field:STANDARD_COAP_STACK_FACTORY
+Method-name:createCoapStack
+Method-returnType:CoapStack
+Method-parameters:[String protocol, NetworkConfig config, Outbox outbox, Object customStackArgument]
+MethodInvocation:isTcpProtocol
+Field:defaultCoapStackFactory
+Method-name:getDefaultCoapStackFactory
+Method-returnType:CoapStackFactory
+Method-parameters:[]
+Method-name:setDefaultCoapStackFactory
+Method-returnType:void
+Method-parameters:[CoapStackFactory newFactory]

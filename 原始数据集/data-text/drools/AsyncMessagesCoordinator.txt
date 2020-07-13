@@ -1,0 +1,25 @@
+Class:AsyncMessagesCoordinator
+Method-name:AsyncMessagesCoordinator
+Method-returnType:null
+Method-parameters:[]
+Class:Holder
+Field:INSTANCE
+Method-name:get
+Method-returnType:AsyncMessagesCoordinator
+Method-parameters:[]
+Field:listeners
+Method-name:registerReceiver
+Method-returnType:void
+Method-parameters:[String messageId, Consumer<AsyncMessage> receiver]
+MethodInvocation:add
+MethodInvocation:computeIfAbsent
+Method-name:deregisterReceiver
+Method-returnType:void
+Method-parameters:[String messageId, Consumer<AsyncMessage> receiver]
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:isEmpty
+MethodInvocation:remove
+Method-name:getListeners
+Method-returnType:Map<String,List<Consumer<AsyncMessage>>>
+Method-parameters:[]

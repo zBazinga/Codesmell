@@ -1,0 +1,58 @@
+Class:PigFilter
+Method-name:PigFilter
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode input, RexNode condition]
+Method-name:copy
+Method-returnType:Filter
+Method-parameters:[RelTraitSet traitSet, RelNode input, RexNode condition]
+MethodInvocation:getCluster
+Method-name:implement
+Method-returnType:void
+Method-parameters:[Implementor implementor]
+MethodInvocation:visitChild
+MethodInvocation:getInput
+MethodInvocation:addStatement
+MethodInvocation:getPigFilterStatement
+Method-name:getTable
+Method-returnType:RelOptTable
+Method-parameters:[]
+MethodInvocation:getTable
+MethodInvocation:getInput
+Method-name:getPigFilterStatement
+Method-returnType:String
+Method-parameters:[Implementor implementor]
+MethodInvocation:checkState
+MethodInvocation:containsOnlyConjunctions
+MethodInvocation:getPigRelationAlias
+MethodInvocation:conjunctions
+MethodInvocation:add
+MethodInvocation:getSingleFilterCondition
+MethodInvocation:join
+Method-name:getSingleFilterCondition
+Method-returnType:String
+Method-parameters:[Implementor implementor, RexNode node]
+MethodInvocation:getKind
+MethodInvocation:getSingleFilterCondition
+MethodInvocation:getSingleFilterCondition
+MethodInvocation:getSingleFilterCondition
+MethodInvocation:getSingleFilterCondition
+MethodInvocation:getSingleFilterCondition
+Method-name:getSingleFilterCondition
+Method-returnType:String
+Method-parameters:[Implementor implementor, String op, RexCall call]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getKind
+MethodInvocation:getKind
+MethodInvocation:getFieldName
+MethodInvocation:getIndex
+MethodInvocation:getLiteralAsString
+MethodInvocation:getKind
+MethodInvocation:getKind
+MethodInvocation:getFieldName
+MethodInvocation:getIndex
+MethodInvocation:getLiteralAsString
+Method-name:getLiteralAsString
+Method-returnType:String
+Method-parameters:[RexLiteral literal]
+MethodInvocation:stringValue

@@ -1,0 +1,58 @@
+Class:Superscript
+Field:openingMarker
+Field:text
+Field:closingMarker
+Field:superscriptBlockText
+Method-name:getSegments
+Method-returnType:BasedSequence[]
+Method-parameters:[]
+Method-name:getAstExtra
+Method-returnType:void
+Method-parameters:[@NotNull StringBuilder out]
+MethodInvocation:delimitedSegmentSpanChars
+Method-name:Superscript
+Method-returnType:null
+Method-parameters:[]
+Method-name:Superscript
+Method-returnType:null
+Method-parameters:[BasedSequence chars]
+Method-name:Superscript
+Method-returnType:null
+Method-parameters:[BasedSequence openingMarker, BasedSequence text, BasedSequence closingMarker]
+MethodInvocation:baseSubSequence
+MethodInvocation:getStartOffset
+MethodInvocation:getEndOffset
+FieldAccess:openingMarker
+FieldAccess:text
+FieldAccess:closingMarker
+Method-name:Superscript
+Method-returnType:null
+Method-parameters:[BasedSequence chars, String superscriptBlockText]
+FieldAccess:superscriptBlockText
+Method-name:getOpeningMarker
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setOpeningMarker
+Method-returnType:void
+Method-parameters:[BasedSequence openingMarker]
+FieldAccess:openingMarker
+Method-name:getText
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setText
+Method-returnType:void
+Method-parameters:[BasedSequence text]
+FieldAccess:text
+Method-name:getClosingMarker
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setClosingMarker
+Method-returnType:void
+Method-parameters:[BasedSequence closingMarker]
+FieldAccess:closingMarker
+Method-name:render
+Method-returnType:void
+Method-parameters:[NodeRendererContext context, HtmlWriter html, SuperscriptJiraRenderer renderer]
+MethodInvocation:raw
+MethodInvocation:renderChildren
+MethodInvocation:raw

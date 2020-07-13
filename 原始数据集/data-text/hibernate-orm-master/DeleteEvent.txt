@@ -1,0 +1,47 @@
+Class:DeleteEvent
+Field:object
+Field:entityName
+Field:cascadeDeleteEnabled
+Field:orphanRemovalBeforeUpdates
+Method-name:DeleteEvent
+Method-returnType:null
+Method-parameters:[Object object, EventSource source]
+FieldAccess:object
+Method-name:DeleteEvent
+Method-returnType:null
+Method-parameters:[String entityName, Object object, EventSource source]
+FieldAccess:entityName
+Method-name:DeleteEvent
+Method-returnType:null
+Method-parameters:[String entityName, Object object, boolean cascadeDeleteEnabled, EventSource source]
+FieldAccess:entityName
+FieldAccess:cascadeDeleteEnabled
+Method-name:DeleteEvent
+Method-returnType:null
+Method-parameters:[String entityName, Object object, boolean cascadeDeleteEnabled, boolean orphanRemovalBeforeUpdates, EventSource source]
+FieldAccess:entityName
+FieldAccess:cascadeDeleteEnabled
+FieldAccess:orphanRemovalBeforeUpdates
+Method-name:getObject
+Method-returnType:Object
+Method-parameters:[]
+Method-name:getEntityName
+Method-returnType:String
+Method-parameters:[]
+Method-name:isCascadeDeleteEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isOrphanRemovalBeforeUpdates
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:disallowDeletionOfDetached
+Method-returnType:void
+Method-parameters:[DefaultDeleteEventListener defaultDeleteEventListener]
+MethodInvocation:getSession
+MethodInvocation:getEntityName
+MethodInvocation:getEntityPersister
+MethodInvocation:getObject
+MethodInvocation:getIdentifier
+MethodInvocation:getObject
+MethodInvocation:guessEntityName
+MethodInvocation:getObject

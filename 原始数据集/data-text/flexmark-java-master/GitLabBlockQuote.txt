@@ -1,0 +1,71 @@
+Class:GitLabBlockQuote
+Field:openingMarker
+Field:openingTrailing
+Field:closingMarker
+Field:closingTrailing
+Method-name:getAstExtra
+Method-returnType:void
+Method-parameters:[@NotNull StringBuilder out]
+MethodInvocation:segmentSpanChars
+MethodInvocation:segmentSpanChars
+MethodInvocation:segmentSpanChars
+MethodInvocation:segmentSpanChars
+Method-name:getSegments
+Method-returnType:BasedSequence[]
+Method-parameters:[]
+Method-name:isParagraphEndWrappingDisabled
+Method-returnType:boolean
+Method-parameters:[Paragraph node]
+MethodInvocation:getLastChild
+MethodInvocation:getNext
+Method-name:isParagraphStartWrappingDisabled
+Method-returnType:boolean
+Method-parameters:[Paragraph node]
+MethodInvocation:getFirstChild
+MethodInvocation:getPrevious
+Method-name:GitLabBlockQuote
+Method-returnType:null
+Method-parameters:[]
+Method-name:GitLabBlockQuote
+Method-returnType:null
+Method-parameters:[BasedSequence chars]
+Method-name:GitLabBlockQuote
+Method-returnType:null
+Method-parameters:[BasedSequence chars, List<BasedSequence> segments]
+Method-name:GitLabBlockQuote
+Method-returnType:null
+Method-parameters:[BlockContent blockContent]
+Method-name:getOpeningMarker
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setOpeningMarker
+Method-returnType:void
+Method-parameters:[BasedSequence openingMarker]
+FieldAccess:openingMarker
+Method-name:getClosingMarker
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setClosingMarker
+Method-returnType:void
+Method-parameters:[BasedSequence closingMarker]
+FieldAccess:closingMarker
+Method-name:getOpeningTrailing
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setOpeningTrailing
+Method-returnType:void
+Method-parameters:[BasedSequence openingTrailing]
+FieldAccess:openingTrailing
+Method-name:getClosingTrailing
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setClosingTrailing
+Method-returnType:void
+Method-parameters:[BasedSequence closingTrailing]
+FieldAccess:closingTrailing
+Method-name:render
+Method-returnType:void
+Method-parameters:[NodeRendererContext context, HtmlWriter html, GitLabNodeRenderer renderer]
+MethodInvocation:tagLineIndent
+MethodInvocation:withAttr
+MethodInvocation:renderChildren

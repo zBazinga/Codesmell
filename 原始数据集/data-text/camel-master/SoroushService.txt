@@ -1,0 +1,51 @@
+Class:SoroushService
+Field:URL
+Field:soroushService
+Field:alternativeUrl
+Method-name:SoroushService
+Method-returnType:null
+Method-parameters:[]
+Method-name:get
+Method-returnType:SoroushService
+Method-parameters:[]
+Method-name:generateUrl
+Method-returnType:String
+Method-parameters:[String token, SoroushAction type, String fileId]
+MethodInvocation:getCurrentUrl
+MethodInvocation:value
+Method-name:getCurrentUrl
+Method-returnType:String
+Method-parameters:[]
+Method-name:createUploadFileTarget
+Method-returnType:WebTarget
+Method-parameters:[String token, Integer timeOut]
+MethodInvocation:target
+MethodInvocation:build
+MethodInvocation:register
+MethodInvocation:property
+MethodInvocation:newBuilder
+MethodInvocation:generateUrl
+Method-name:createSendMessageTarget
+Method-returnType:WebTarget
+Method-parameters:[String token, Integer timeOut]
+MethodInvocation:target
+MethodInvocation:build
+MethodInvocation:property
+MethodInvocation:newBuilder
+MethodInvocation:generateUrl
+Method-name:createDownloadFileTarget
+Method-returnType:WebTarget
+Method-parameters:[String token, String fileId, Integer timeOut]
+MethodInvocation:target
+MethodInvocation:build
+MethodInvocation:property
+MethodInvocation:newBuilder
+MethodInvocation:generateUrl
+Method-name:assertSuccessful
+Method-returnType:SoroushResponse
+Method-parameters:[Response response, SoroushMessage soroushMessage]
+MethodInvocation:assertSuccessful
+Method-name:setAlternativeUrl
+Method-returnType:void
+Method-parameters:[String alternativeUrl]
+FieldAccess:alternativeUrl

@@ -1,0 +1,22 @@
+Class:AsyncMessage
+Field:workingMemory
+Field:object
+Method-name:AsyncMessage
+Method-returnType:null
+Method-parameters:[InternalWorkingMemory workingMemory, Object object]
+FieldAccess:workingMemory
+FieldAccess:object
+Method-name:getWorkingMemory
+Method-returnType:InternalWorkingMemory
+Method-parameters:[]
+Method-name:getObject
+Method-returnType:Object
+Method-parameters:[]
+Method-name:propagate
+Method-returnType:void
+Method-parameters:[String messageId, AsyncMessagesCoordinator asyncMessagesCoordinator]
+MethodInvocation:forEach
+MethodInvocation:getOrDefault
+MethodInvocation:getListeners
+MethodInvocation:emptyList
+MethodInvocation:accept

@@ -1,0 +1,517 @@
+Class:RexNodeExprFactory
+Field:LOG
+MethodInvocation:getLogger
+Field:rexBuilder
+Field:functionHelper
+Method-name:RexNodeExprFactory
+Method-returnType:null
+Method-parameters:[RexBuilder rexBuilder]
+FieldAccess:rexBuilder
+FieldAccess:functionHelper
+Method-name:isExprInstance
+Method-returnType:boolean
+Method-parameters:[Object o]
+Method-name:toExpr
+Method-returnType:RexNode
+Method-parameters:[ColumnInfo colInfo, RowResolver rowResolver, int offset]
+MethodInvocation:getObjectInspector
+MethodInvocation:toPrimitiveConstDesc
+MethodInvocation:getPosition
+MethodInvocation:getInternalName
+MethodInvocation:makeInputRef
+MethodInvocation:convert
+MethodInvocation:getType
+MethodInvocation:getTypeFactory
+Method-name:toPrimitiveConstDesc
+Method-returnType:RexNode
+Method-parameters:[ColumnInfo colInfo, ObjectInspector inspector, RexBuilder rexBuilder]
+MethodInvocation:getWritableConstantValue
+MethodInvocation:makeLiteral
+MethodInvocation:convert
+MethodInvocation:getType
+MethodInvocation:getTypeFactory
+Method-name:createColumnRefExpr
+Method-returnType:RexNode
+Method-parameters:[ColumnInfo colInfo, RowResolver rowResolver, int offset]
+MethodInvocation:getPosition
+MethodInvocation:getInternalName
+MethodInvocation:makeInputRef
+MethodInvocation:convert
+MethodInvocation:getType
+MethodInvocation:getTypeFactory
+Method-name:createColumnRefExpr
+Method-returnType:RexNode
+Method-parameters:[ColumnInfo colInfo, List<RowResolver> rowResolverList]
+MethodInvocation:getPosition
+MethodInvocation:makeInputRef
+MethodInvocation:convert
+MethodInvocation:getType
+MethodInvocation:getTypeFactory
+Method-name:createNullConstantExpr
+Method-returnType:RexNode
+Method-parameters:[]
+MethodInvocation:makeNullLiteral
+MethodInvocation:createSqlType
+MethodInvocation:getTypeFactory
+Method-name:createBooleanConstantExpr
+Method-returnType:RexNode
+Method-parameters:[String value]
+MethodInvocation:valueOf
+MethodInvocation:makeLiteral
+MethodInvocation:createSqlType
+MethodInvocation:getTypeFactory
+Method-name:createBigintConstantExpr
+Method-returnType:RexNode
+Method-parameters:[String value]
+MethodInvocation:makeLiteral
+MethodInvocation:valueOf
+MethodInvocation:createSqlType
+MethodInvocation:getTypeFactory
+Method-name:createIntConstantExpr
+Method-returnType:RexNode
+Method-parameters:[String value]
+MethodInvocation:makeLiteral
+MethodInvocation:valueOf
+MethodInvocation:createSqlType
+MethodInvocation:getTypeFactory
+Method-name:createSmallintConstantExpr
+Method-returnType:RexNode
+Method-parameters:[String value]
+MethodInvocation:makeLiteral
+MethodInvocation:valueOf
+MethodInvocation:createSqlType
+MethodInvocation:getTypeFactory
+Method-name:createTinyintConstantExpr
+Method-returnType:RexNode
+Method-parameters:[String value]
+MethodInvocation:makeLiteral
+MethodInvocation:valueOf
+MethodInvocation:createSqlType
+MethodInvocation:getTypeFactory
+Method-name:createFloatConstantExpr
+Method-returnType:RexNode
+Method-parameters:[String value]
+MethodInvocation:valueOf
+MethodInvocation:makeApproxLiteral
+MethodInvocation:toString
+MethodInvocation:createSqlType
+MethodInvocation:getTypeFactory
+Method-name:createDoubleConstantExpr
+Method-returnType:RexNode
+Method-parameters:[String value]
+MethodInvocation:valueOf
+MethodInvocation:isNaN
+MethodInvocation:makeApproxLiteral
+MethodInvocation:toString
+MethodInvocation:createSqlType
+MethodInvocation:getTypeFactory
+Method-name:createDecimalConstantExpr
+Method-returnType:RexNode
+Method-parameters:[String value, boolean allowNullValueConstantExpr]
+MethodInvocation:create
+MethodInvocation:adjustType
+MethodInvocation:makeExactLiteral
+MethodInvocation:bigDecimalValue
+MethodInvocation:convert
+MethodInvocation:getTypeFactory
+Method-name:adjustConstantType
+Method-returnType:TypeInfo
+Method-parameters:[PrimitiveTypeInfo targetType, Object constantValue]
+MethodInvocation:adjustType
+Method-name:adjustType
+Method-returnType:DecimalTypeInfo
+Method-parameters:[HiveDecimal hd]
+MethodInvocation:precision
+MethodInvocation:scale
+MethodInvocation:getDecimalTypeInfo
+Method-name:interpretConstantAsPrimitive
+Method-returnType:Object
+Method-parameters:[PrimitiveTypeInfo targetType, Object constantValue, PrimitiveTypeInfo sourceType]
+MethodInvocation:getValue
+MethodInvocation:getPrimitiveTypeEntry
+MethodInvocation:equals
+MethodInvocation:intValueExact
+MethodInvocation:toBigDecimal
+MethodInvocation:toString
+MethodInvocation:equals
+MethodInvocation:longValueExact
+MethodInvocation:toBigDecimal
+MethodInvocation:toString
+MethodInvocation:equals
+MethodInvocation:valueOf
+MethodInvocation:toString
+MethodInvocation:equals
+MethodInvocation:valueOf
+MethodInvocation:toString
+MethodInvocation:equals
+MethodInvocation:byteValueExact
+MethodInvocation:toBigDecimal
+MethodInvocation:toString
+MethodInvocation:equals
+MethodInvocation:shortValueExact
+MethodInvocation:toBigDecimal
+MethodInvocation:toString
+MethodInvocation:equals
+MethodInvocation:create
+MethodInvocation:toString
+MethodInvocation:bigDecimalValue
+MethodInvocation:trace
+MethodInvocation:getPrimitiveTypeEntry
+MethodInvocation:equals
+MethodInvocation:doubleValue
+MethodInvocation:equals
+MethodInvocation:floatValue
+MethodInvocation:getTypeName
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:toString
+MethodInvocation:getCharacterLengthForType
+MethodInvocation:equals
+MethodInvocation:makeHiveUnicodeString
+MethodInvocation:getValue
+MethodInvocation:toString
+MethodInvocation:getCharacterLengthForType
+MethodInvocation:equals
+MethodInvocation:makeHiveUnicodeString
+MethodInvocation:getValue
+Method-name:toBigDecimal
+Method-returnType:BigDecimal
+Method-parameters:[String val]
+MethodInvocation:isNumber
+MethodInvocation:replaceAll
+Method-name:createStringConstantExpr
+Method-returnType:RexLiteral
+Method-parameters:[String value]
+MethodInvocation:makeCharLiteral
+MethodInvocation:makeHiveUnicodeString
+Method-name:createDateConstantExpr
+Method-returnType:RexLiteral
+Method-parameters:[String value]
+MethodInvocation:valueOf
+MethodInvocation:makeDateLiteral
+MethodInvocation:fromDaysSinceEpoch
+MethodInvocation:toEpochDay
+Method-name:createTimestampConstantExpr
+Method-returnType:RexLiteral
+Method-parameters:[String value]
+MethodInvocation:valueOf
+MethodInvocation:makeLiteral
+MethodInvocation:withNanos
+MethodInvocation:fromMillisSinceEpoch
+MethodInvocation:toEpochMilli
+MethodInvocation:getNanos
+MethodInvocation:createSqlType
+MethodInvocation:getTypeFactory
+MethodInvocation:getDefaultPrecision
+MethodInvocation:getTypeSystem
+MethodInvocation:getTypeFactory
+Method-name:createTimestampLocalTimeZoneConstantExpr
+Method-returnType:RexLiteral
+Method-parameters:[String value, ZoneId zoneId]
+MethodInvocation:parse
+MethodInvocation:toInstant
+MethodInvocation:getZonedDateTime
+MethodInvocation:withNanos
+MethodInvocation:fromMillisSinceEpoch
+MethodInvocation:toEpochMilli
+MethodInvocation:getNano
+MethodInvocation:makeTimestampWithLocalTimeZoneLiteral
+MethodInvocation:getDefaultPrecision
+MethodInvocation:getTypeSystem
+MethodInvocation:getTypeFactory
+Method-name:createIntervalYearMonthConstantExpr
+Method-returnType:RexLiteral
+Method-parameters:[String value]
+MethodInvocation:valueOf
+MethodInvocation:getTotalMonths
+MethodInvocation:valueOf
+MethodInvocation:makeIntervalLiteral
+Method-name:createIntervalDayTimeConstantExpr
+Method-returnType:RexLiteral
+Method-parameters:[String value]
+MethodInvocation:valueOf
+MethodInvocation:valueOf
+MethodInvocation:getTotalSeconds
+MethodInvocation:valueOf
+MethodInvocation:getNanos
+MethodInvocation:makeIntervalLiteral
+MethodInvocation:add
+Method-name:createIntervalYearConstantExpr
+Method-returnType:RexLiteral
+Method-parameters:[String value]
+MethodInvocation:parseInt
+MethodInvocation:valueOf
+MethodInvocation:getTotalMonths
+MethodInvocation:makeIntervalLiteral
+Method-name:createIntervalMonthConstantExpr
+Method-returnType:RexLiteral
+Method-parameters:[String value]
+MethodInvocation:valueOf
+MethodInvocation:parseInt
+MethodInvocation:makeIntervalLiteral
+Method-name:createIntervalDayConstantExpr
+Method-returnType:RexLiteral
+Method-parameters:[String value]
+MethodInvocation:parseInt
+MethodInvocation:valueOf
+MethodInvocation:getTotalSeconds
+MethodInvocation:valueOf
+MethodInvocation:getNanos
+MethodInvocation:makeIntervalLiteral
+MethodInvocation:add
+Method-name:createIntervalHourConstantExpr
+Method-returnType:RexLiteral
+Method-parameters:[String value]
+MethodInvocation:parseInt
+MethodInvocation:valueOf
+MethodInvocation:getTotalSeconds
+MethodInvocation:valueOf
+MethodInvocation:getNanos
+MethodInvocation:makeIntervalLiteral
+MethodInvocation:add
+Method-name:createIntervalMinuteConstantExpr
+Method-returnType:RexLiteral
+Method-parameters:[String value]
+MethodInvocation:parseInt
+MethodInvocation:valueOf
+MethodInvocation:getTotalSeconds
+MethodInvocation:valueOf
+MethodInvocation:getNanos
+MethodInvocation:makeIntervalLiteral
+MethodInvocation:add
+Method-name:createIntervalSecondConstantExpr
+Method-returnType:RexLiteral
+Method-parameters:[String value]
+MethodInvocation:toBigInteger
+MethodInvocation:subtract
+MethodInvocation:intValueExact
+MethodInvocation:intValue
+MethodInvocation:multiply
+MethodInvocation:valueOf
+MethodInvocation:getTotalSeconds
+MethodInvocation:valueOf
+MethodInvocation:getNanos
+MethodInvocation:makeIntervalLiteral
+MethodInvocation:add
+Method-name:createStructExpr
+Method-returnType:RexNode
+Method-parameters:[TypeInfo typeInfo, List<RexNode> operands]
+Method-name:createConstantExpr
+Method-returnType:RexNode
+Method-parameters:[TypeInfo typeInfo, Object constantValue]
+MethodInvocation:getAllStructFieldTypeInfos
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:makeLiteral
+MethodInvocation:get
+MethodInvocation:convert
+MethodInvocation:get
+MethodInvocation:getTypeFactory
+MethodInvocation:makeCall
+MethodInvocation:convert
+MethodInvocation:getTypeFactory
+MethodInvocation:makeLiteral
+MethodInvocation:convert
+MethodInvocation:getTypeFactory
+Method-name:createNestedColumnRefExpr
+Method-returnType:RexNode
+Method-parameters:[TypeInfo typeInfo, RexNode expr, String fieldName, Boolean isList]
+MethodInvocation:isStruct
+MethodInvocation:getType
+MethodInvocation:makeFieldAccess
+MethodInvocation:getCanonicalName
+MethodInvocation:getClass
+Method-name:createFuncCallExpr
+Method-returnType:RexNode
+Method-parameters:[TypeInfo returnType, GenericUDF genericUDF, List<RexNode> inputs]
+MethodInvocation:name
+MethodInvocation:getAnnotation
+MethodInvocation:getClass
+MethodInvocation:getFunctionInfo
+MethodInvocation:getExpression
+MethodInvocation:convert
+MethodInvocation:getTypeFactory
+Method-name:createFuncCallExpr
+Method-returnType:RexNode
+Method-parameters:[GenericUDF genericUDF, String funcText, List<RexNode> inputs]
+MethodInvocation:getFunctionInfo
+MethodInvocation:convert
+MethodInvocation:getTypeInfo
+MethodInvocation:getTypeFactory
+MethodInvocation:getReturnType
+MethodInvocation:convertInputs
+MethodInvocation:getExpression
+Method-name:createExprsListExpr
+Method-returnType:RexNode
+Method-parameters:[]
+Method-name:addExprToExprsList
+Method-returnType:void
+Method-parameters:[RexNode columnList, RexNode expr]
+MethodInvocation:addExpression
+Method-name:isConstantExpr
+Method-returnType:boolean
+Method-parameters:[Object o]
+Method-name:isFuncCallExpr
+Method-returnType:boolean
+Method-parameters:[Object o]
+Method-name:getConstantValue
+Method-returnType:Object
+Method-parameters:[RexNode expr]
+MethodInvocation:getSqlTypeName
+MethodInvocation:getType
+MethodInvocation:getOperands
+MethodInvocation:add
+MethodInvocation:getValue4
+MethodInvocation:getValue4
+Method-name:getConstantValueAsString
+Method-returnType:String
+Method-parameters:[RexNode expr]
+MethodInvocation:getValueAs
+Method-name:isColumnRefExpr
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:isReferenceOrAccess
+Method-name:getColumnName
+Method-returnType:String
+Method-parameters:[RexNode expr, RowResolver rowResolver]
+MethodInvocation:getIndex
+MethodInvocation:getInternalName
+MethodInvocation:get
+MethodInvocation:getColumnInfos
+Method-name:isExprsListExpr
+Method-returnType:boolean
+Method-parameters:[Object o]
+Method-name:getExprChildren
+Method-returnType:List<RexNode>
+Method-parameters:[RexNode expr]
+MethodInvocation:getOperands
+MethodInvocation:getExpressions
+Method-name:getTypeInfo
+Method-returnType:TypeInfo
+Method-parameters:[RexNode expr]
+MethodInvocation:isA
+MethodInvocation:convertLiteralType
+MethodInvocation:convert
+MethodInvocation:getType
+Method-name:getStructTypeInfoList
+Method-returnType:List<TypeInfo>
+Method-parameters:[RexNode expr]
+MethodInvocation:convert
+MethodInvocation:getType
+MethodInvocation:getAllStructFieldTypeInfos
+Method-name:getStructNameList
+Method-returnType:List<String>
+Method-parameters:[RexNode expr]
+MethodInvocation:convert
+MethodInvocation:getType
+MethodInvocation:getAllStructFieldNames
+Method-name:isORFuncCallExpr
+Method-returnType:boolean
+Method-parameters:[RexNode expr]
+MethodInvocation:isA
+Method-name:isANDFuncCallExpr
+Method-returnType:boolean
+Method-parameters:[RexNode expr]
+MethodInvocation:isA
+Method-name:isPOSITIVEFuncCallExpr
+Method-returnType:boolean
+Method-parameters:[RexNode expr]
+MethodInvocation:isA
+Method-name:isNEGATIVEFuncCallExpr
+Method-returnType:boolean
+Method-parameters:[RexNode expr]
+MethodInvocation:isA
+Method-name:setTypeInfo
+Method-returnType:RexNode
+Method-parameters:[RexNode expr, TypeInfo type]
+MethodInvocation:convert
+MethodInvocation:getTypeFactory
+MethodInvocation:makeCall
+MethodInvocation:getOperator
+MethodInvocation:getOperands
+MethodInvocation:makeInputRef
+MethodInvocation:getIndex
+MethodInvocation:makeLiteral
+MethodInvocation:value
+MethodInvocation:getCanonicalName
+MethodInvocation:getClass
+Method-name:convertCASEIntoCOALESCEFuncCallExpr
+Method-returnType:boolean
+Method-parameters:[GenericUDF genericUDF, List<RexNode> inputs]
+Method-name:foldExpr
+Method-returnType:RexNode
+Method-parameters:[RexNode expr]
+MethodInvocation:foldExpression
+Method-name:isSTRUCTFuncCallExpr
+Method-returnType:boolean
+Method-parameters:[RexNode expr]
+MethodInvocation:getOperator
+Method-name:isConstantStruct
+Method-returnType:boolean
+Method-parameters:[RexNode expr]
+MethodInvocation:getSqlTypeName
+MethodInvocation:getType
+MethodInvocation:isLiteral
+Method-name:createSubqueryExpr
+Method-returnType:RexNode
+Method-parameters:[TypeCheckCtx ctx, ASTNode expr, SubqueryType subqueryType, Object[] inputs]
+MethodInvocation:getSubqueryToRelNode
+MethodInvocation:getMsg
+MethodInvocation:getChild
+MethodInvocation:get
+MethodInvocation:exists
+MethodInvocation:assert
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getMsg
+MethodInvocation:in
+MethodInvocation:of
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getMsg
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getMsg
+MethodInvocation:scalar
+MethodInvocation:assert
+MethodInvocation:convertSubquerySomeAll
+MethodInvocation:getCluster
+MethodInvocation:getChild
+Method-name:throwInvalidSubqueryError
+Method-returnType:void
+Method-parameters:[final ASTNode comparisonOp]
+MethodInvocation:getMsg
+MethodInvocation:toString
+Method-name:convertSubquerySomeAll
+Method-returnType:RexNode
+Method-parameters:[final RelOptCluster cluster, final ASTNode comparisonOp, final SubqueryType subqueryType, final RelNode subqueryRel, final RexNode rexNodeLhs]
+MethodInvocation:getType
+MethodInvocation:throwInvalidSubqueryError
+MethodInvocation:throwInvalidSubqueryError
+MethodInvocation:getMsg
+MethodInvocation:toString
+MethodInvocation:some
+MethodInvocation:negateNullSafe
+MethodInvocation:getSomeSubquery
+MethodInvocation:makeCall
+MethodInvocation:getRexBuilder
+Method-name:getSomeSubquery
+Method-returnType:RexNode
+Method-parameters:[final RelOptCluster cluster, final RelNode subqueryRel, final RexNode lhs, final SqlQuantifyOperator quantifyOperator]
+MethodInvocation:in
+MethodInvocation:of
+MethodInvocation:in
+MethodInvocation:of
+MethodInvocation:makeCall
+MethodInvocation:getRexBuilder
+MethodInvocation:some
+MethodInvocation:of
+Method-name:makeHiveUnicodeString
+Method-returnType:NlsString
+Method-parameters:[Interpretation interpretation, String text]
+Class:HiveNlsString
+Field:Interpretation
+Field:interpretation
+Method-name:HiveNlsString
+Method-returnType:null
+Method-parameters:[Interpretation interpretation, String value, String charsetName, SqlCollation collation]
+FieldAccess:interpretation

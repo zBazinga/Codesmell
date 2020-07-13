@@ -1,0 +1,39 @@
+Class:PutLicenseRequest
+Field:license
+Field:acknowledge
+Method-name:PutLicenseRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readLicense
+MethodInvocation:readBoolean
+Method-name:PutLicenseRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+MethodInvocation:addValidationError
+Method-name:license
+Method-returnType:PutLicenseRequest
+Method-parameters:[BytesReference licenseDefinition, XContentType xContentType]
+MethodInvocation:license
+MethodInvocation:fromSource
+Method-name:license
+Method-returnType:PutLicenseRequest
+Method-parameters:[License license]
+FieldAccess:license
+Method-name:license
+Method-returnType:License
+Method-parameters:[]
+Method-name:acknowledge
+Method-returnType:PutLicenseRequest
+Method-parameters:[boolean acknowledge]
+FieldAccess:acknowledge
+Method-name:acknowledged
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeTo
+MethodInvocation:writeBoolean

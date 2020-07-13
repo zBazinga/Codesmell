@@ -1,0 +1,34 @@
+Class:AvoidInstantiatingObjectsInLoopsRule
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTAllocationExpression node, Object data]
+MethodInvocation:insideLoop
+MethodInvocation:fourthParentNotThrow
+MethodInvocation:fourthParentNotReturn
+MethodInvocation:addViolation
+Method-name:fourthParentNotThrow
+Method-returnType:boolean
+Method-parameters:[ASTAllocationExpression node]
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:getParent
+Method-name:fourthParentNotReturn
+Method-returnType:boolean
+Method-parameters:[ASTAllocationExpression node]
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:getParent
+Method-name:insideLoop
+Method-returnType:boolean
+Method-parameters:[ASTAllocationExpression node]
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:getNumChildren
+MethodInvocation:getParent
+MethodInvocation:getChild
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:getParent

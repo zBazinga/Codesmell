@@ -1,0 +1,60 @@
+Class:AbstractJoinTaskDispatcher
+Field:physicalContext
+Method-name:AbstractJoinTaskDispatcher
+Method-returnType:null
+Method-parameters:[PhysicalContext context]
+Method-name:processCurrentTask
+Method-returnType:Task<?>
+Method-parameters:[MapRedTask currTask, ConditionalTask conditionalTask, Context context]
+Method-name:replaceTaskWithConditionalTask
+Method-returnType:void
+Method-parameters:[Task<?> currTask, ConditionalTask cndTsk]
+MethodInvocation:getParentTasks
+MethodInvocation:setParentTasks
+MethodInvocation:addDependentTask
+MethodInvocation:removeDependentTask
+MethodInvocation:removeFromRootTask
+MethodInvocation:addToRootTask
+MethodInvocation:getChildTasks
+MethodInvocation:getListTasks
+MethodInvocation:equals
+MethodInvocation:addDependentTask
+Method-name:replaceTask
+Method-returnType:void
+Method-parameters:[Task<?> currTask, Task<?> newTask]
+MethodInvocation:getParentTasks
+MethodInvocation:setParentTasks
+MethodInvocation:removeDependentTask
+MethodInvocation:addDependentTask
+MethodInvocation:removeFromRootTask
+MethodInvocation:addToRootTask
+MethodInvocation:getChildTasks
+MethodInvocation:setChildTasks
+MethodInvocation:remove
+MethodInvocation:getParentTasks
+MethodInvocation:addDependentTask
+Method-name:getTotalKnownInputSize
+Method-returnType:long
+Method-parameters:[Context context, MapWork currWork, Map<Path,List<String>> pathToAliases, Map<String,Long> aliasToSize]
+MethodInvocation:getLength
+MethodInvocation:getInputSummary
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getCS
+MethodInvocation:getLength
+MethodInvocation:get
+MethodInvocation:valueOf
+MethodInvocation:put
+Method-name:dispatch
+Method-returnType:Object
+Method-parameters:[Node nd, Stack<Node> stack, Object... nodeOutputs]
+MethodInvocation:isMapRedTask
+MethodInvocation:getListTasks
+MethodInvocation:isMapRedTask
+MethodInvocation:processCurrentTask
+MethodInvocation:getContext
+MethodInvocation:addToDispatchList
+MethodInvocation:processCurrentTask
+MethodInvocation:getContext
+MethodInvocation:addToDispatchList

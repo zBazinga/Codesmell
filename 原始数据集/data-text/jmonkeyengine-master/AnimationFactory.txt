@@ -1,0 +1,130 @@
+Class:AnimationFactory
+Field:EULER_STEP
+Field:Type
+Class:Rotation
+Field:rotation
+Field:eulerAngles
+Field:masterKeyFrame
+Method-name:Rotation
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:loadIdentity
+Method-name:set
+Method-returnType:void
+Method-parameters:[Quaternion rot]
+MethodInvocation:set
+MethodInvocation:toAngles
+MethodInvocation:set
+Method-name:set
+Method-returnType:void
+Method-parameters:[float x, float y, float z]
+MethodInvocation:fromAngles
+MethodInvocation:set
+Field:name
+Field:fps
+Field:duration
+Field:totalFrames
+Field:tpf
+Field:times
+Field:translations
+Field:rotations
+Field:scales
+Field:keyFramesTranslation
+Field:keyFramesScale
+Field:keyFramesRotation
+Method-name:AnimationFactory
+Method-returnType:null
+Method-parameters:[float duration, String name]
+Method-name:AnimationFactory
+Method-returnType:null
+Method-parameters:[float duration, String name, int fps]
+FieldAccess:name
+FieldAccess:duration
+FieldAccess:fps
+Method-name:addTimeTransform
+Method-returnType:void
+Method-parameters:[float time, Transform transform]
+MethodInvocation:addKeyFrameTransform
+Method-name:addTimeTranslation
+Method-returnType:void
+Method-parameters:[float time, Vector3f translation]
+MethodInvocation:addKeyFrameTranslation
+Method-name:addKeyFrameTranslation
+Method-returnType:void
+Method-parameters:[int keyFrameIndex, Vector3f translation]
+MethodInvocation:getTranslationForFrame
+MethodInvocation:set
+Method-name:addTimeRotation
+Method-returnType:void
+Method-parameters:[float time, Quaternion rotation]
+MethodInvocation:addKeyFrameRotation
+Method-name:addKeyFrameRotation
+Method-returnType:void
+Method-parameters:[int keyFrameIndex, Quaternion rotation]
+MethodInvocation:getRotationForFrame
+MethodInvocation:set
+Method-name:addTimeRotationAngles
+Method-returnType:void
+Method-parameters:[float time, float x, float y, float z]
+MethodInvocation:addKeyFrameRotationAngles
+Method-name:addKeyFrameRotationAngles
+Method-returnType:void
+Method-parameters:[int keyFrameIndex, float x, float y, float z]
+MethodInvocation:getRotationForFrame
+MethodInvocation:set
+MethodInvocation:getPreviousKeyFrame
+MethodInvocation:max
+MethodInvocation:abs
+MethodInvocation:abs
+MethodInvocation:max
+MethodInvocation:abs
+MethodInvocation:getRotationForFrame
+MethodInvocation:set
+Method-name:addTimeScale
+Method-returnType:void
+Method-parameters:[float time, Vector3f scale]
+MethodInvocation:addKeyFrameScale
+Method-name:addKeyFrameScale
+Method-returnType:void
+Method-parameters:[int keyFrameIndex, Vector3f scale]
+MethodInvocation:getScaleForFrame
+MethodInvocation:set
+Method-name:getTranslationForFrame
+Method-returnType:Vector3f
+Method-parameters:[int keyFrameIndex]
+Method-name:getScaleForFrame
+Method-returnType:Vector3f
+Method-parameters:[int keyFrameIndex]
+Method-name:getRotationForFrame
+Method-returnType:Rotation
+Method-parameters:[int keyFrameIndex]
+Method-name:buildAnimation
+Method-returnType:Animation
+Method-parameters:[]
+MethodInvocation:interpolateTime
+MethodInvocation:interpolate
+MethodInvocation:interpolate
+MethodInvocation:interpolate
+MethodInvocation:setTracks
+Method-name:interpolateTime
+Method-returnType:void
+Method-parameters:[]
+Method-name:interpolate
+Method-returnType:void
+Method-parameters:[Object[] keyFrames, Type type]
+MethodInvocation:getNextKeyFrame
+MethodInvocation:interpolateLinear
+MethodInvocation:slerp
+FieldAccess:rotation
+FieldAccess:rotation
+MethodInvocation:interpolateLinear
+MethodInvocation:clone
+MethodInvocation:clone
+FieldAccess:rotation
+MethodInvocation:clone
+Method-name:getNextKeyFrame
+Method-returnType:int
+Method-parameters:[int index, Object[] keyFrames]
+Method-name:getPreviousKeyFrame
+Method-returnType:int
+Method-parameters:[int index, Object[] keyFrames]

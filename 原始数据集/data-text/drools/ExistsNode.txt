@@ -1,0 +1,62 @@
+Class:ExistsNode
+Field:serialVersionUID
+Method-name:ExistsNode
+Method-returnType:null
+Method-parameters:[]
+Method-name:ExistsNode
+Method-returnType:null
+Method-parameters:[final int id, final LeftTupleSource leftInput, final ObjectSource rightInput, final BetaConstraints joinNodeBinder, final BuildContext context]
+FieldAccess:tupleMemoryEnabled
+MethodInvocation:isTupleMemoryEnabled
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:rightInput
+MethodInvocation:getClass
+MethodInvocation:getId
+MethodInvocation:getObjectType
+Method-name:getType
+Method-returnType:short
+Method-parameters:[]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[InternalFactHandle factHandle, Sink sink, boolean leftTupleMemoryEnabled]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[final InternalFactHandle factHandle, final LeftTuple leftTuple, final Sink sink]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, Sink sink, PropagationContext pctx, boolean leftTupleMemoryEnabled]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, RightTuple rightTuple, Sink sink]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, RightTuple rightTuple, LeftTuple currentLeftChild, LeftTuple currentRightChild, Sink sink, boolean leftTupleMemoryEnabled]
+Method-name:createPeer
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple original]
+MethodInvocation:initPeer
+MethodInvocation:setPeer
+Method-name:retractRightTuple
+Method-returnType:void
+Method-parameters:[final RightTuple rightTuple, final PropagationContext pctx, final InternalWorkingMemory workingMemory]
+MethodInvocation:getNodeMemory
+MethodInvocation:setPropagationContext
+MethodInvocation:doDeleteRightTuple
+Method-name:modifyRightTuple
+Method-returnType:void
+Method-parameters:[RightTuple rightTuple, PropagationContext context, InternalWorkingMemory workingMemory]
+Method-name:doRemove
+Method-returnType:boolean
+Method-parameters:[RuleRemovalContext context, ReteooBuilder builder]
+MethodInvocation:isInUse
+MethodInvocation:removeTupleSink
+MethodInvocation:getLeftTupleSource
+MethodInvocation:removeObjectSink
+MethodInvocation:getRightInput
+Method-name:isLeftUpdateOptimizationAllowed
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isLeftUpdateOptimizationAllowed
+MethodInvocation:getRawConstraints

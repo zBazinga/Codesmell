@@ -1,0 +1,81 @@
+Class:CommandFailbackRegistry
+Field:commandManagerMap
+Method-name:CommandFailbackRegistry
+Method-returnType:null
+Method-parameters:[URL url]
+MethodInvocation:info
+MethodInvocation:toSimpleString
+Method-name:doSubscribe
+Method-returnType:void
+Method-parameters:[URL url, final NotifyListener listener]
+MethodInvocation:info
+MethodInvocation:toSimpleString
+MethodInvocation:createCopy
+MethodInvocation:getCommandServiceManager
+MethodInvocation:addNotifyListener
+MethodInvocation:subscribeService
+MethodInvocation:subscribeCommand
+MethodInvocation:doDiscover
+MethodInvocation:size
+MethodInvocation:notify
+Method-name:doUnsubscribe
+Method-returnType:void
+Method-parameters:[URL url, NotifyListener listener]
+MethodInvocation:info
+MethodInvocation:toSimpleString
+MethodInvocation:createCopy
+MethodInvocation:get
+MethodInvocation:removeNotifyListener
+MethodInvocation:unsubscribeService
+MethodInvocation:unsubscribeCommand
+Method-name:doDiscover
+Method-returnType:List<URL>
+Method-parameters:[URL url]
+MethodInvocation:info
+MethodInvocation:toSimpleString
+MethodInvocation:createCopy
+MethodInvocation:discoverCommand
+MethodInvocation:isNotEmpty
+MethodInvocation:stringToCommand
+MethodInvocation:info
+MethodInvocation:sort
+MethodInvocation:getCommandServiceManager
+MethodInvocation:discoverServiceWithCommand
+MethodInvocation:setCommandCache
+MethodInvocation:discoverService
+MethodInvocation:info
+MethodInvocation:size
+Method-name:commandPreview
+Method-returnType:List<URL>
+Method-parameters:[URL url, RpcCommand rpcCommand, String previewIP]
+MethodInvocation:createCopy
+MethodInvocation:getCommandServiceManager
+MethodInvocation:discoverServiceWithCommand
+MethodInvocation:discoverService
+Method-name:getCommandServiceManager
+Method-returnType:CommandServiceManager
+Method-parameters:[URL urlCopy]
+MethodInvocation:get
+MethodInvocation:setRegistry
+MethodInvocation:putIfAbsent
+Method-name:getCommandManagerMap
+Method-returnType:ConcurrentHashMap<URL,CommandServiceManager>
+Method-parameters:[]
+Method-name:subscribeService
+Method-returnType:void
+Method-parameters:[URL url, ServiceListener listener]
+Method-name:subscribeCommand
+Method-returnType:void
+Method-parameters:[URL url, CommandListener listener]
+Method-name:unsubscribeService
+Method-returnType:void
+Method-parameters:[URL url, ServiceListener listener]
+Method-name:unsubscribeCommand
+Method-returnType:void
+Method-parameters:[URL url, CommandListener listener]
+Method-name:discoverService
+Method-returnType:List<URL>
+Method-parameters:[URL url]
+Method-name:discoverCommand
+Method-returnType:String
+Method-parameters:[URL url]

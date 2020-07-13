@@ -1,0 +1,221 @@
+Class:SqlConnRunner
+Field:serialVersionUID
+Field:dialect
+Field:caseInsensitive
+Method-name:create
+Method-returnType:SqlConnRunner
+Method-parameters:[Dialect dialect]
+Method-name:create
+Method-returnType:SqlConnRunner
+Method-parameters:[DataSource ds]
+MethodInvocation:getDialect
+Method-name:create
+Method-returnType:SqlConnRunner
+Method-parameters:[String driverClassName]
+Method-name:SqlConnRunner
+Method-returnType:null
+Method-parameters:[Dialect dialect]
+FieldAccess:dialect
+Method-name:SqlConnRunner
+Method-returnType:null
+Method-parameters:[String driverClassName]
+MethodInvocation:newDialect
+Method-name:insert
+Method-returnType:int
+Method-parameters:[Connection conn, Entity record]
+MethodInvocation:checkConn
+MethodInvocation:isEmpty
+MethodInvocation:psForInsert
+MethodInvocation:executeUpdate
+MethodInvocation:close
+Method-name:insertOrUpdate
+Method-returnType:int
+Method-parameters:[Connection conn, Entity record, String... keys]
+MethodInvocation:filter
+MethodInvocation:isNotEmpty
+MethodInvocation:count
+MethodInvocation:update
+MethodInvocation:insert
+Method-name:insert
+Method-returnType:int[]
+Method-parameters:[Connection conn, Collection<Entity> records]
+MethodInvocation:insert
+MethodInvocation:toArray
+Method-name:insert
+Method-returnType:int[]
+Method-parameters:[Connection conn, Entity... records]
+MethodInvocation:checkConn
+MethodInvocation:isEmpty
+MethodInvocation:insert
+MethodInvocation:psForInsertBatch
+MethodInvocation:executeBatch
+MethodInvocation:close
+Method-name:insertForGeneratedKeys
+Method-returnType:List<Object>
+Method-parameters:[Connection conn, Entity record]
+MethodInvocation:checkConn
+MethodInvocation:isEmpty
+MethodInvocation:psForInsert
+MethodInvocation:executeUpdate
+MethodInvocation:getGeneratedKeys
+MethodInvocation:close
+Method-name:insertForGeneratedKey
+Method-returnType:Long
+Method-parameters:[Connection conn, Entity record]
+MethodInvocation:checkConn
+MethodInvocation:isEmpty
+MethodInvocation:psForInsert
+MethodInvocation:executeUpdate
+MethodInvocation:getGeneratedKeyOfLong
+MethodInvocation:close
+Method-name:del
+Method-returnType:int
+Method-parameters:[Connection conn, Entity where]
+MethodInvocation:checkConn
+MethodInvocation:isEmpty
+MethodInvocation:buildConditions
+MethodInvocation:getTableName
+MethodInvocation:psForDelete
+MethodInvocation:executeUpdate
+MethodInvocation:close
+Method-name:update
+Method-returnType:int
+Method-parameters:[Connection conn, Entity record, Entity where]
+MethodInvocation:checkConn
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:getTableName
+MethodInvocation:isBlank
+MethodInvocation:getTableName
+MethodInvocation:setTableName
+MethodInvocation:buildConditions
+MethodInvocation:psForUpdate
+MethodInvocation:executeUpdate
+MethodInvocation:close
+Method-name:find
+Method-returnType:T
+Method-parameters:[Connection conn, Query query, RsHandler<T> rsh]
+MethodInvocation:checkConn
+MethodInvocation:notNull
+MethodInvocation:psForFind
+MethodInvocation:query
+MethodInvocation:close
+Method-name:find
+Method-returnType:T
+Method-parameters:[Connection conn, Collection<String> fields, Entity where, RsHandler<T> rsh]
+MethodInvocation:buildConditions
+MethodInvocation:getTableName
+MethodInvocation:setFields
+MethodInvocation:find
+Method-name:find
+Method-returnType:T
+Method-parameters:[Connection conn, Entity where, RsHandler<T> rsh, String... fields]
+MethodInvocation:find
+MethodInvocation:newArrayList
+Method-name:find
+Method-returnType:List<Entity>
+Method-parameters:[Connection conn, Entity where]
+MethodInvocation:find
+MethodInvocation:getFieldNames
+FieldAccess:caseInsensitive
+Method-name:findAll
+Method-returnType:List<Entity>
+Method-parameters:[Connection conn, Entity where]
+MethodInvocation:find
+FieldAccess:caseInsensitive
+Method-name:findAll
+Method-returnType:List<Entity>
+Method-parameters:[Connection conn, String tableName]
+MethodInvocation:findAll
+MethodInvocation:create
+Method-name:findBy
+Method-returnType:List<Entity>
+Method-parameters:[Connection conn, String tableName, String field, Object value]
+MethodInvocation:findAll
+MethodInvocation:set
+MethodInvocation:create
+Method-name:findLike
+Method-returnType:List<Entity>
+Method-parameters:[Connection conn, String tableName, String field, String value, LikeType likeType]
+MethodInvocation:findAll
+MethodInvocation:set
+MethodInvocation:create
+MethodInvocation:buildLikeValue
+Method-name:findIn
+Method-returnType:List<Entity>
+Method-parameters:[Connection conn, String tableName, String field, Object... values]
+MethodInvocation:findAll
+MethodInvocation:set
+MethodInvocation:create
+Method-name:count
+Method-returnType:int
+Method-parameters:[Connection conn, Entity where]
+MethodInvocation:checkConn
+MethodInvocation:buildConditions
+MethodInvocation:getTableName
+MethodInvocation:psForCount
+MethodInvocation:intValue
+MethodInvocation:query
+MethodInvocation:close
+Method-name:page
+Method-returnType:T
+Method-parameters:[Connection conn, Collection<String> fields, Entity where, int pageNumber, int numPerPage, RsHandler<T> rsh]
+MethodInvocation:page
+Method-name:page
+Method-returnType:T
+Method-parameters:[Connection conn, Collection<String> fields, Entity where, Page page, RsHandler<T> rsh]
+MethodInvocation:checkConn
+MethodInvocation:find
+MethodInvocation:buildConditions
+MethodInvocation:getTableName
+MethodInvocation:setFields
+MethodInvocation:setPage
+MethodInvocation:queryAndClosePs
+MethodInvocation:psForPage
+Method-name:page
+Method-returnType:PageResult<Entity>
+Method-parameters:[Connection conn, Collection<String> fields, Entity where, int page, int numPerPage]
+MethodInvocation:checkConn
+MethodInvocation:count
+FieldAccess:caseInsensitive
+MethodInvocation:page
+Method-name:page
+Method-returnType:PageResult<Entity>
+Method-parameters:[Connection conn, Collection<String> fields, Entity where, Page page]
+MethodInvocation:checkConn
+MethodInvocation:find
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:addAll
+MethodInvocation:count
+MethodInvocation:getPageNumber
+MethodInvocation:getPageSize
+FieldAccess:caseInsensitive
+MethodInvocation:page
+Method-name:page
+Method-returnType:PageResult<Entity>
+Method-parameters:[Connection conn, Entity where, Page page]
+MethodInvocation:page
+Method-name:setCaseInsensitive
+Method-returnType:void
+Method-parameters:[boolean caseInsensitive]
+FieldAccess:caseInsensitive
+Method-name:getDialect
+Method-returnType:Dialect
+Method-parameters:[]
+Method-name:setDialect
+Method-returnType:SqlConnRunner
+Method-parameters:[Dialect dialect]
+FieldAccess:dialect
+Method-name:setWrapper
+Method-returnType:SqlConnRunner
+Method-parameters:[Character wrapperChar]
+MethodInvocation:setWrapper
+Method-name:setWrapper
+Method-returnType:SqlConnRunner
+Method-parameters:[Wrapper wrapper]
+MethodInvocation:setWrapper
+FieldAccess:dialect
+Method-name:checkConn
+Method-returnType:void
+Method-parameters:[Connection conn]

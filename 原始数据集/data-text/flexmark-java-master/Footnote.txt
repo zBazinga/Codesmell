@@ -1,0 +1,87 @@
+Class:Footnote
+Field:openingMarker
+Field:text
+Field:closingMarker
+Field:footnoteBlock
+Method-name:getReferenceOrdinal
+Method-returnType:int
+Method-parameters:[]
+Method-name:setReferenceOrdinal
+Method-returnType:void
+Method-parameters:[int referenceOrdinal]
+FieldAccess:referenceOrdinal
+Field:referenceOrdinal
+Method-name:getReference
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:getReferenceNode
+Method-returnType:FootnoteBlock
+Method-parameters:[Document document]
+MethodInvocation:isEmpty
+MethodInvocation:getFootnoteBlock
+MethodInvocation:get
+Method-name:getReferenceNode
+Method-returnType:FootnoteBlock
+Method-parameters:[FootnoteRepository repository]
+MethodInvocation:isEmpty
+MethodInvocation:getFootnoteBlock
+Method-name:isDefined
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isTentative
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getFootnoteBlock
+Method-returnType:FootnoteBlock
+Method-parameters:[]
+Method-name:setFootnoteBlock
+Method-returnType:void
+Method-parameters:[FootnoteBlock footnoteBlock]
+FieldAccess:footnoteBlock
+Method-name:getSegments
+Method-returnType:BasedSequence[]
+Method-parameters:[]
+Method-name:getAstExtra
+Method-returnType:void
+Method-parameters:[@NotNull StringBuilder out]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getFootnoteOrdinal
+MethodInvocation:delimitedSegmentSpanChars
+Method-name:Footnote
+Method-returnType:null
+Method-parameters:[]
+Method-name:Footnote
+Method-returnType:null
+Method-parameters:[BasedSequence chars]
+Method-name:Footnote
+Method-returnType:null
+Method-parameters:[BasedSequence openingMarker, BasedSequence text, BasedSequence closingMarker]
+MethodInvocation:baseSubSequence
+MethodInvocation:getStartOffset
+MethodInvocation:getEndOffset
+FieldAccess:openingMarker
+FieldAccess:text
+FieldAccess:closingMarker
+Method-name:getOpeningMarker
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setOpeningMarker
+Method-returnType:void
+Method-parameters:[BasedSequence openingMarker]
+FieldAccess:openingMarker
+Method-name:getText
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setText
+Method-returnType:void
+Method-parameters:[BasedSequence text]
+FieldAccess:text
+Method-name:getClosingMarker
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setClosingMarker
+Method-returnType:void
+Method-parameters:[BasedSequence closingMarker]
+FieldAccess:closingMarker

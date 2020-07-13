@@ -1,0 +1,59 @@
+Class:Jackson2CodecSupport
+Field:JSON_VIEW_HINT
+MethodInvocation:getName
+Field:ACTUAL_TYPE_HINT
+MethodInvocation:getName
+Field:JSON_VIEW_HINT_ERROR
+Field:DEFAULT_MIME_TYPES
+MethodInvocation:unmodifiableList
+MethodInvocation:asList
+Field:logger
+MethodInvocation:forLogName
+MethodInvocation:getClass
+Field:objectMapper
+Field:mimeTypes
+Method-name:Jackson2CodecSupport
+Method-returnType:null
+Method-parameters:[ObjectMapper objectMapper, MimeType... mimeTypes]
+MethodInvocation:notNull
+FieldAccess:objectMapper
+FieldAccess:mimeTypes
+MethodInvocation:isEmpty
+MethodInvocation:unmodifiableList
+MethodInvocation:asList
+Method-name:getObjectMapper
+Method-returnType:ObjectMapper
+Method-parameters:[]
+FieldAccess:objectMapper
+Method-name:getMimeTypes
+Method-returnType:List<MimeType>
+Method-parameters:[]
+FieldAccess:mimeTypes
+Method-name:supportsMimeType
+Method-returnType:boolean
+Method-parameters:[@Nullable MimeType mimeType]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+FieldAccess:mimeTypes
+MethodInvocation:isCompatibleWith
+Method-name:getJavaType
+Method-returnType:JavaType
+Method-parameters:[Type type, @Nullable Class<?> contextClass]
+MethodInvocation:getTypeFactory
+FieldAccess:objectMapper
+MethodInvocation:constructType
+MethodInvocation:resolveType
+Method-name:getHints
+Method-returnType:Map<String,Object>
+Method-parameters:[ResolvableType resolvableType]
+MethodInvocation:getParameter
+MethodInvocation:hasGenerics
+MethodInvocation:put
+MethodInvocation:getAnnotation
+MethodInvocation:value
+MethodInvocation:isTrue
+MethodInvocation:put
+MethodInvocation:none
+Method-name:getAnnotation
+Method-returnType:A
+Method-parameters:[MethodParameter parameter, Class<A> annotType]

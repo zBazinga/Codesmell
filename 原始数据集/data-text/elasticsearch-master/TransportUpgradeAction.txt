@@ -1,0 +1,105 @@
+Class:TransportUpgradeAction
+Field:indicesService
+Field:client
+Method-name:TransportUpgradeAction
+Method-returnType:null
+Method-parameters:[ClusterService clusterService, TransportService transportService, IndicesService indicesService, ActionFilters actionFilters, IndexNameExpressionResolver indexNameExpressionResolver, NodeClient client]
+FieldAccess:indicesService
+FieldAccess:client
+Method-name:newResponse
+Method-returnType:UpgradeResponse
+Method-parameters:[UpgradeRequest request, int totalShards, int successfulShards, int failedShards, List<ShardUpgradeResult> shardUpgradeResults, List<DefaultShardOperationFailedException> shardFailures, ClusterState clusterState]
+MethodInvocation:getName
+MethodInvocation:getIndex
+MethodInvocation:getShardId
+MethodInvocation:primary
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:upgradeVersion
+MethodInvocation:oldestLuceneSegment
+MethodInvocation:v1
+MethodInvocation:v2
+MethodInvocation:after
+MethodInvocation:upgradeVersion
+MethodInvocation:v1
+MethodInvocation:upgradeVersion
+MethodInvocation:onOrAfter
+MethodInvocation:oldestLuceneSegment
+MethodInvocation:v2
+MethodInvocation:oldestLuceneSegment
+MethodInvocation:put
+MethodInvocation:metadata
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:get
+MethodInvocation:getNumberOfShards
+MethodInvocation:index
+MethodInvocation:getNumberOfShards
+MethodInvocation:index
+MethodInvocation:put
+MethodInvocation:v1
+MethodInvocation:getValue
+MethodInvocation:toString
+MethodInvocation:v2
+MethodInvocation:getValue
+MethodInvocation:warn
+Method-name:shardOperation
+Method-returnType:ShardUpgradeResult
+Method-parameters:[UpgradeRequest request, ShardRouting shardRouting]
+MethodInvocation:getShard
+MethodInvocation:indexServiceSafe
+MethodInvocation:getIndex
+MethodInvocation:shardId
+MethodInvocation:id
+MethodInvocation:shardId
+MethodInvocation:upgrade
+MethodInvocation:shardId
+MethodInvocation:primary
+MethodInvocation:routingEntry
+Method-name:readShardResult
+Method-returnType:ShardUpgradeResult
+Method-parameters:[StreamInput in]
+Method-name:readRequestFrom
+Method-returnType:UpgradeRequest
+Method-parameters:[StreamInput in]
+Method-name:shards
+Method-returnType:ShardsIterator
+Method-parameters:[ClusterState clusterState, UpgradeRequest request, String[] concreteIndices]
+MethodInvocation:allShards
+MethodInvocation:routingTable
+MethodInvocation:indicesWithMissingPrimaries
+MethodInvocation:isEmpty
+Method-name:indicesWithMissingPrimaries
+Method-returnType:Set<String>
+Method-parameters:[ClusterState clusterState, String[] concreteIndices]
+MethodInvocation:routingTable
+MethodInvocation:index
+MethodInvocation:allPrimaryShardsActive
+MethodInvocation:add
+Method-name:checkGlobalBlock
+Method-returnType:ClusterBlockException
+Method-parameters:[ClusterState state, UpgradeRequest request]
+MethodInvocation:globalBlockedException
+MethodInvocation:blocks
+Method-name:checkRequestBlock
+Method-returnType:ClusterBlockException
+Method-parameters:[ClusterState state, UpgradeRequest request, String[] concreteIndices]
+MethodInvocation:indicesBlockedException
+MethodInvocation:blocks
+Method-name:doExecute
+Method-returnType:void
+Method-parameters:[Task task, UpgradeRequest request, final ActionListener<UpgradeResponse> listener]
+MethodInvocation:wrap
+MethodInvocation:isEmpty
+MethodInvocation:versions
+MethodInvocation:onResponse
+MethodInvocation:updateSettings
+Method-name:updateSettings
+Method-returnType:void
+Method-parameters:[final UpgradeResponse upgradeResponse, final ActionListener<UpgradeResponse> listener]
+MethodInvocation:versions
+MethodInvocation:executeLocally
+MethodInvocation:delegateFailure
+MethodInvocation:onResponse

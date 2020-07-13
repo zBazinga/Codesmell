@@ -1,0 +1,185 @@
+Class:SimpMessageHeaderAccessor
+Field:headerInitializer
+MethodInvocation:setDisableIdGeneration
+MethodInvocation:setEnableTimestamp
+Field:DESTINATION_HEADER
+Field:MESSAGE_TYPE_HEADER
+Field:SESSION_ID_HEADER
+Field:SESSION_ATTRIBUTES
+Field:SUBSCRIPTION_ID_HEADER
+Field:USER_HEADER
+Field:CONNECT_MESSAGE_HEADER
+Field:DISCONNECT_MESSAGE_HEADER
+Field:HEART_BEAT_HEADER
+Field:ORIGINAL_DESTINATION
+Field:IGNORE_ERROR
+Field:userCallback
+Method-name:SimpMessageHeaderAccessor
+Method-returnType:null
+Method-parameters:[SimpMessageType messageType, @Nullable Map<String,List<String>> externalSourceHeaders]
+MethodInvocation:notNull
+MethodInvocation:setHeader
+MethodInvocation:initHeaders
+Method-name:SimpMessageHeaderAccessor
+Method-returnType:null
+Method-parameters:[Message<?> message]
+MethodInvocation:initHeaders
+Method-name:createAccessor
+Method-returnType:MessageHeaderAccessor
+Method-parameters:[Message<?> message]
+MethodInvocation:wrap
+Method-name:setMessageTypeIfNotSet
+Method-returnType:void
+Method-parameters:[SimpMessageType messageType]
+MethodInvocation:getMessageType
+MethodInvocation:setHeader
+Method-name:getMessageType
+Method-returnType:SimpMessageType
+Method-parameters:[]
+MethodInvocation:getHeader
+Method-name:setDestination
+Method-returnType:void
+Method-parameters:[@Nullable String destination]
+MethodInvocation:setHeader
+Method-name:getDestination
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getHeader
+Method-name:setSubscriptionId
+Method-returnType:void
+Method-parameters:[@Nullable String subscriptionId]
+MethodInvocation:setHeader
+Method-name:getSubscriptionId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getHeader
+Method-name:setSessionId
+Method-returnType:void
+Method-parameters:[@Nullable String sessionId]
+MethodInvocation:setHeader
+Method-name:getSessionId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getHeader
+Method-name:setSessionAttributes
+Method-returnType:void
+Method-parameters:[@Nullable Map<String,Object> attributes]
+MethodInvocation:setHeader
+Method-name:getSessionAttributes
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+MethodInvocation:getHeader
+Method-name:setUser
+Method-returnType:void
+Method-parameters:[@Nullable Principal principal]
+MethodInvocation:setHeader
+FieldAccess:userCallback
+MethodInvocation:accept
+FieldAccess:userCallback
+Method-name:getUser
+Method-returnType:Principal
+Method-parameters:[]
+MethodInvocation:getHeader
+Method-name:setUserChangeCallback
+Method-returnType:void
+Method-parameters:[Consumer<Principal> callback]
+MethodInvocation:notNull
+FieldAccess:userCallback
+FieldAccess:userCallback
+MethodInvocation:andThen
+FieldAccess:userCallback
+Method-name:getShortLogMessage
+Method-returnType:String
+Method-parameters:[Object payload]
+MethodInvocation:getMessageType
+MethodInvocation:getBaseLogMessage
+MethodInvocation:isEmpty
+MethodInvocation:getSessionAttributes
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:size
+MethodInvocation:getSessionAttributes
+MethodInvocation:append
+MethodInvocation:getShortPayloadLogMessage
+MethodInvocation:toString
+Method-name:getDetailedLogMessage
+Method-returnType:String
+Method-parameters:[@Nullable Object payload]
+MethodInvocation:getMessageType
+MethodInvocation:getBaseLogMessage
+MethodInvocation:isEmpty
+MethodInvocation:getSessionAttributes
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getSessionAttributes
+MethodInvocation:isEmpty
+MethodInvocation:getHeader
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getHeader
+MethodInvocation:append
+MethodInvocation:getDetailedPayloadLogMessage
+MethodInvocation:toString
+Method-name:getBaseLogMessage
+Method-returnType:StringBuilder
+Method-parameters:[]
+MethodInvocation:getMessageType
+MethodInvocation:append
+MethodInvocation:name
+MethodInvocation:getDestination
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getSubscriptionId
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getSessionId
+MethodInvocation:getUser
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getName
+Method-name:create
+Method-returnType:SimpMessageHeaderAccessor
+Method-parameters:[]
+Method-name:create
+Method-returnType:SimpMessageHeaderAccessor
+Method-parameters:[SimpMessageType messageType]
+Method-name:wrap
+Method-returnType:SimpMessageHeaderAccessor
+Method-parameters:[Message<?> message]
+Method-name:getMessageType
+Method-returnType:SimpMessageType
+Method-parameters:[Map<String,Object> headers]
+MethodInvocation:get
+Method-name:getDestination
+Method-returnType:String
+Method-parameters:[Map<String,Object> headers]
+MethodInvocation:get
+Method-name:getSubscriptionId
+Method-returnType:String
+Method-parameters:[Map<String,Object> headers]
+MethodInvocation:get
+Method-name:getSessionId
+Method-returnType:String
+Method-parameters:[Map<String,Object> headers]
+MethodInvocation:get
+Method-name:getSessionAttributes
+Method-returnType:Map<String,Object>
+Method-parameters:[Map<String,Object> headers]
+MethodInvocation:get
+Method-name:getUser
+Method-returnType:Principal
+Method-parameters:[Map<String,Object> headers]
+MethodInvocation:get
+Method-name:getHeartbeat
+Method-returnType:long[]
+Method-parameters:[Map<String,Object> headers]
+MethodInvocation:get
+Method-name:initHeaders
+Method-returnType:void
+Method-parameters:[UserDestinationMessageHandler userDestinationMessageHandler]
+MethodInvocation:getHeaderInitializer
+MethodInvocation:initHeaders
+MethodInvocation:getHeaderInitializer

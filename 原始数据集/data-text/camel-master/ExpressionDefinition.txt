@@ -1,0 +1,130 @@
+Class:ExpressionDefinition
+Field:id
+Field:expression
+Field:trim
+Field:predicate
+Field:expressionValue
+Field:expressionType
+Method-name:ExpressionDefinition
+Method-returnType:null
+Method-parameters:[]
+Method-name:ExpressionDefinition
+Method-returnType:null
+Method-parameters:[String expression]
+FieldAccess:expression
+Method-name:ExpressionDefinition
+Method-returnType:null
+Method-parameters:[Predicate predicate]
+FieldAccess:predicate
+Method-name:ExpressionDefinition
+Method-returnType:null
+Method-parameters:[Expression expression]
+FieldAccess:expressionValue
+Method-name:getLabel
+Method-returnType:String
+Method-parameters:[List<ExpressionDefinition> expressions]
+MethodInvocation:append
+MethodInvocation:getLabel
+MethodInvocation:toString
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getExpressionValue
+MethodInvocation:toString
+MethodInvocation:getExpressionValue
+MethodInvocation:getLanguage
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getLanguage
+MethodInvocation:getPredicate
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:getPredicate
+MethodInvocation:getExpression
+MethodInvocation:append
+MethodInvocation:getExpression
+MethodInvocation:getLanguage
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:getLanguage
+Method-returnType:String
+Method-parameters:[]
+Method-name:getExpression
+Method-returnType:String
+Method-parameters:[]
+Method-name:setExpression
+Method-returnType:void
+Method-parameters:[String expression]
+FieldAccess:expression
+Method-name:getId
+Method-returnType:String
+Method-parameters:[]
+Method-name:setId
+Method-returnType:void
+Method-parameters:[String value]
+FieldAccess:id
+Method-name:getPredicate
+Method-returnType:Predicate
+Method-parameters:[]
+Method-name:getExpressionValue
+Method-returnType:Expression
+Method-parameters:[]
+Method-name:setExpressionValue
+Method-returnType:void
+Method-parameters:[Expression expressionValue]
+FieldAccess:expressionValue
+Method-name:getExpressionType
+Method-returnType:ExpressionDefinition
+Method-parameters:[]
+Method-name:getTrim
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTrim
+Method-returnType:void
+Method-parameters:[String trim]
+FieldAccess:trim
+Method-name:getLabel
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPredicate
+MethodInvocation:toString
+MethodInvocation:getExpressionValue
+MethodInvocation:toString
+MethodInvocation:getExpression
+Method-name:setExpressionType
+Method-returnType:void
+Method-parameters:[ExpressionDefinition expressionType]
+FieldAccess:expressionType
+Method-name:createExpression
+Method-returnType:Expression
+Method-parameters:[CamelContext camelContext]
+MethodInvocation:createExpression
+MethodInvocation:adapt
+Method-name:createPredicate
+Method-returnType:Predicate
+Method-parameters:[CamelContext camelContext]
+MethodInvocation:createPredicate
+MethodInvocation:adapt
+Method-name:evaluate
+Method-returnType:T
+Method-parameters:[Exchange exchange, Class<T> type]
+MethodInvocation:createExpression
+MethodInvocation:getContext
+MethodInvocation:notNull
+MethodInvocation:evaluate
+Method-name:matches
+Method-returnType:boolean
+Method-parameters:[Exchange exchange]
+MethodInvocation:createPredicate
+MethodInvocation:getContext
+MethodInvocation:notNull
+MethodInvocation:matches
+Method-name:init
+Method-returnType:void
+Method-parameters:[CamelContext context]
+MethodInvocation:createExpression
+MethodInvocation:createPredicate
+Method-name:expressionType
+Method-returnType:ServiceCallExpressionConfiguration
+Method-parameters:[ServiceCallExpressionConfiguration serviceCallExpressionConfiguration]
+MethodInvocation:setExpressionType

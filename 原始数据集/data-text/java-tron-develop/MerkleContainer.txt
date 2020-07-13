@@ -1,0 +1,68 @@
+Class:MerkleContainer
+Field:lastTreeKey
+MethodInvocation:getBytes
+Field:currentTreeKey
+MethodInvocation:getBytes
+Field:incrementalMerkleTreeStore
+Field:merkleTreeIndexStore
+Method-name:createInstance
+Method-returnType:MerkleContainer
+Method-parameters:[IncrementalMerkleTreeStore incrementalMerkleTreeStore, TreeBlockIndexStore merkleTreeIndexStore]
+MethodInvocation:setIncrementalMerkleTreeStore
+MethodInvocation:setMerkleTreeIndexStore
+Method-name:getCurrentMerkle
+Method-returnType:IncrementalMerkleTreeContainer
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:getBestMerkle
+MethodInvocation:toMerkleTreeContainer
+Method-name:setCurrentMerkle
+Method-returnType:void
+Method-parameters:[IncrementalMerkleTreeContainer treeContainer]
+MethodInvocation:put
+MethodInvocation:getTreeCapsule
+Method-name:getBestMerkle
+Method-returnType:IncrementalMerkleTreeContainer
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:toMerkleTreeContainer
+MethodInvocation:toMerkleTreeContainer
+Method-name:resetCurrentMerkleTree
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getBestMerkle
+MethodInvocation:setCurrentMerkle
+Method-name:saveCurrentMerkleTreeAsBestMerkleTree
+Method-returnType:void
+Method-parameters:[long blockNum]
+MethodInvocation:getCurrentMerkle
+MethodInvocation:setBestMerkle
+MethodInvocation:putMerkleTreeIntoStore
+MethodInvocation:getMerkleTreeKey
+MethodInvocation:getTreeCapsule
+Method-name:setBestMerkle
+Method-returnType:void
+Method-parameters:[long blockNum, IncrementalMerkleTreeContainer treeContainer]
+MethodInvocation:put
+MethodInvocation:getTreeCapsule
+MethodInvocation:put
+MethodInvocation:getMerkleTreeKey
+Method-name:merkleRootExist
+Method-returnType:boolean
+Method-parameters:[byte[] rt]
+MethodInvocation:contain
+Method-name:getMerkleTree
+Method-returnType:IncrementalMerkleTreeCapsule
+Method-parameters:[byte[] rt]
+MethodInvocation:get
+Method-name:putMerkleTreeIntoStore
+Method-returnType:void
+Method-parameters:[byte[] key, IncrementalMerkleTreeCapsule capsule]
+MethodInvocation:put
+Method-name:merklePath
+Method-returnType:MerklePath
+Method-parameters:[byte[] rt]
+MethodInvocation:merkleRootExist
+MethodInvocation:toMerkleTreeContainer
+MethodInvocation:get
+MethodInvocation:path

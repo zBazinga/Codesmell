@@ -1,0 +1,93 @@
+Class:PoetExtensions
+Field:model
+Method-name:PoetExtensions
+Method-returnType:null
+Method-parameters:[IntermediateModel model]
+FieldAccess:model
+Method-name:getModelClass
+Method-returnType:ClassName
+Method-parameters:[String className]
+MethodInvocation:get
+MethodInvocation:getFullModelPackageName
+MethodInvocation:getMetadata
+Method-name:getTransformClass
+Method-returnType:ClassName
+Method-parameters:[String className]
+MethodInvocation:get
+MethodInvocation:getFullTransformPackageName
+MethodInvocation:getMetadata
+Method-name:getRequestTransformClass
+Method-returnType:ClassName
+Method-parameters:[String className]
+MethodInvocation:get
+MethodInvocation:getFullRequestTransformPackageName
+MethodInvocation:getMetadata
+Method-name:getClientClass
+Method-returnType:ClassName
+Method-parameters:[String className]
+MethodInvocation:get
+MethodInvocation:getFullClientPackageName
+MethodInvocation:getMetadata
+Method-name:getResponseClassForPaginatedSyncOperation
+Method-returnType:ClassName
+Method-parameters:[String operationName]
+MethodInvocation:get
+MethodInvocation:getFullPaginatorsPackageName
+MethodInvocation:getMetadata
+Method-name:getResponseClassForPaginatedAsyncOperation
+Method-returnType:ClassName
+Method-parameters:[String operationName]
+MethodInvocation:get
+MethodInvocation:getFullPaginatorsPackageName
+MethodInvocation:getMetadata
+Method-name:getResponseMetadataClass
+Method-returnType:ClassName
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:getFullModelPackageName
+MethodInvocation:getMetadata
+MethodInvocation:getSdkResponseBaseClassName
+Method-name:getApiName
+Method-returnType:String
+Method-parameters:[OperationModel operation]
+MethodInvocation:capitalize
+MethodInvocation:getOperationName
+Method-name:responsePojoType
+Method-returnType:ClassName
+Method-parameters:[OperationModel operation]
+MethodInvocation:getModelClass
+MethodInvocation:getShapeName
+MethodInvocation:getOutputShape
+Method-name:eventStreamResponseHandlerType
+Method-returnType:ClassName
+Method-parameters:[OperationModel operation]
+MethodInvocation:getModelClass
+MethodInvocation:getApiName
+Method-name:eventStreamResponseHandlerBuilderType
+Method-returnType:ClassName
+Method-parameters:[OperationModel operation]
+MethodInvocation:nestedClass
+MethodInvocation:eventStreamResponseHandlerType
+Method-name:eventStreamResponseHandlerVisitorType
+Method-returnType:ClassName
+Method-parameters:[OperationModel operation]
+MethodInvocation:nestedClass
+MethodInvocation:eventStreamResponseHandlerType
+Method-name:eventStreamResponseHandlerVisitorBuilderType
+Method-returnType:ClassName
+Method-parameters:[OperationModel operation]
+MethodInvocation:nestedClass
+MethodInvocation:eventStreamResponseHandlerVisitorType
+Method-name:getModelClassFromShape
+Method-returnType:ClassName
+Method-parameters:[ShapeModel shapeModel]
+MethodInvocation:getModelClass
+MethodInvocation:getShapeName
+Method-name:isResponse
+Method-returnType:boolean
+Method-parameters:[ShapeModel shapeModel]
+MethodInvocation:getShapeType
+Method-name:isRequest
+Method-returnType:boolean
+Method-parameters:[ShapeModel shapeModel]
+MethodInvocation:getShapeType

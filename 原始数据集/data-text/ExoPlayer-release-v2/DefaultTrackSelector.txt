@@ -1,0 +1,892 @@
+Class:DefaultTrackSelector
+Class:ParametersBuilder
+Field:maxVideoWidth
+Field:maxVideoHeight
+Field:maxVideoFrameRate
+Field:maxVideoBitrate
+Field:exceedVideoConstraintsIfNecessary
+Field:allowVideoMixedMimeTypeAdaptiveness
+Field:allowVideoNonSeamlessAdaptiveness
+Field:viewportWidth
+Field:viewportHeight
+Field:viewportOrientationMayChange
+Field:maxAudioChannelCount
+Field:maxAudioBitrate
+Field:exceedAudioConstraintsIfNecessary
+Field:allowAudioMixedMimeTypeAdaptiveness
+Field:allowAudioMixedSampleRateAdaptiveness
+Field:allowAudioMixedChannelCountAdaptiveness
+Field:forceLowestBitrate
+Field:forceHighestSupportedBitrate
+Field:exceedRendererCapabilitiesIfNecessary
+Field:tunnelingAudioSessionId
+Field:selectionOverrides
+Field:rendererDisabledFlags
+Method-name:ParametersBuilder
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:setInitialValuesWithoutContext
+Method-name:ParametersBuilder
+Method-returnType:null
+Method-parameters:[Context context]
+MethodInvocation:setInitialValuesWithoutContext
+MethodInvocation:setViewportSizeToPhysicalDisplaySize
+Method-name:ParametersBuilder
+Method-returnType:null
+Method-parameters:[Parameters initialValues]
+MethodInvocation:cloneSelectionOverrides
+MethodInvocation:clone
+Method-name:setMaxVideoSizeSd
+Method-returnType:ParametersBuilder
+Method-parameters:[]
+MethodInvocation:setMaxVideoSize
+Method-name:clearVideoSizeConstraints
+Method-returnType:ParametersBuilder
+Method-parameters:[]
+MethodInvocation:setMaxVideoSize
+Method-name:setMaxVideoSize
+Method-returnType:ParametersBuilder
+Method-parameters:[int maxVideoWidth, int maxVideoHeight]
+FieldAccess:maxVideoWidth
+FieldAccess:maxVideoHeight
+Method-name:setMaxVideoFrameRate
+Method-returnType:ParametersBuilder
+Method-parameters:[int maxVideoFrameRate]
+FieldAccess:maxVideoFrameRate
+Method-name:setMaxVideoBitrate
+Method-returnType:ParametersBuilder
+Method-parameters:[int maxVideoBitrate]
+FieldAccess:maxVideoBitrate
+Method-name:setExceedVideoConstraintsIfNecessary
+Method-returnType:ParametersBuilder
+Method-parameters:[boolean exceedVideoConstraintsIfNecessary]
+FieldAccess:exceedVideoConstraintsIfNecessary
+Method-name:setAllowVideoMixedMimeTypeAdaptiveness
+Method-returnType:ParametersBuilder
+Method-parameters:[boolean allowVideoMixedMimeTypeAdaptiveness]
+FieldAccess:allowVideoMixedMimeTypeAdaptiveness
+Method-name:setAllowVideoNonSeamlessAdaptiveness
+Method-returnType:ParametersBuilder
+Method-parameters:[boolean allowVideoNonSeamlessAdaptiveness]
+FieldAccess:allowVideoNonSeamlessAdaptiveness
+Method-name:setViewportSizeToPhysicalDisplaySize
+Method-returnType:ParametersBuilder
+Method-parameters:[Context context, boolean viewportOrientationMayChange]
+MethodInvocation:getCurrentDisplayModeSize
+MethodInvocation:setViewportSize
+Method-name:clearViewportSizeConstraints
+Method-returnType:ParametersBuilder
+Method-parameters:[]
+MethodInvocation:setViewportSize
+Method-name:setViewportSize
+Method-returnType:ParametersBuilder
+Method-parameters:[int viewportWidth, int viewportHeight, boolean viewportOrientationMayChange]
+FieldAccess:viewportWidth
+FieldAccess:viewportHeight
+FieldAccess:viewportOrientationMayChange
+Method-name:setPreferredAudioLanguage
+Method-returnType:ParametersBuilder
+Method-parameters:[@Nullable String preferredAudioLanguage]
+Method-name:setMaxAudioChannelCount
+Method-returnType:ParametersBuilder
+Method-parameters:[int maxAudioChannelCount]
+FieldAccess:maxAudioChannelCount
+Method-name:setMaxAudioBitrate
+Method-returnType:ParametersBuilder
+Method-parameters:[int maxAudioBitrate]
+FieldAccess:maxAudioBitrate
+Method-name:setExceedAudioConstraintsIfNecessary
+Method-returnType:ParametersBuilder
+Method-parameters:[boolean exceedAudioConstraintsIfNecessary]
+FieldAccess:exceedAudioConstraintsIfNecessary
+Method-name:setAllowAudioMixedMimeTypeAdaptiveness
+Method-returnType:ParametersBuilder
+Method-parameters:[boolean allowAudioMixedMimeTypeAdaptiveness]
+FieldAccess:allowAudioMixedMimeTypeAdaptiveness
+Method-name:setAllowAudioMixedSampleRateAdaptiveness
+Method-returnType:ParametersBuilder
+Method-parameters:[boolean allowAudioMixedSampleRateAdaptiveness]
+FieldAccess:allowAudioMixedSampleRateAdaptiveness
+Method-name:setAllowAudioMixedChannelCountAdaptiveness
+Method-returnType:ParametersBuilder
+Method-parameters:[boolean allowAudioMixedChannelCountAdaptiveness]
+FieldAccess:allowAudioMixedChannelCountAdaptiveness
+Method-name:setPreferredTextLanguageAndRoleFlagsToCaptioningManagerSettings
+Method-returnType:ParametersBuilder
+Method-parameters:[Context context]
+Method-name:setPreferredTextLanguage
+Method-returnType:ParametersBuilder
+Method-parameters:[@Nullable String preferredTextLanguage]
+Method-name:setPreferredTextRoleFlags
+Method-returnType:ParametersBuilder
+Method-parameters:[@C.RoleFlags int preferredTextRoleFlags]
+Method-name:setSelectUndeterminedTextLanguage
+Method-returnType:ParametersBuilder
+Method-parameters:[boolean selectUndeterminedTextLanguage]
+Method-name:setDisabledTextTrackSelectionFlags
+Method-returnType:ParametersBuilder
+Method-parameters:[@C.SelectionFlags int disabledTextTrackSelectionFlags]
+Method-name:setForceLowestBitrate
+Method-returnType:ParametersBuilder
+Method-parameters:[boolean forceLowestBitrate]
+FieldAccess:forceLowestBitrate
+Method-name:setForceHighestSupportedBitrate
+Method-returnType:ParametersBuilder
+Method-parameters:[boolean forceHighestSupportedBitrate]
+FieldAccess:forceHighestSupportedBitrate
+Method-name:setAllowMixedMimeAdaptiveness
+Method-returnType:ParametersBuilder
+Method-parameters:[boolean allowMixedMimeAdaptiveness]
+MethodInvocation:setAllowAudioMixedMimeTypeAdaptiveness
+MethodInvocation:setAllowVideoMixedMimeTypeAdaptiveness
+Method-name:setAllowNonSeamlessAdaptiveness
+Method-returnType:ParametersBuilder
+Method-parameters:[boolean allowNonSeamlessAdaptiveness]
+MethodInvocation:setAllowVideoNonSeamlessAdaptiveness
+Method-name:setExceedRendererCapabilitiesIfNecessary
+Method-returnType:ParametersBuilder
+Method-parameters:[boolean exceedRendererCapabilitiesIfNecessary]
+FieldAccess:exceedRendererCapabilitiesIfNecessary
+Method-name:setTunnelingAudioSessionId
+Method-returnType:ParametersBuilder
+Method-parameters:[int tunnelingAudioSessionId]
+FieldAccess:tunnelingAudioSessionId
+Method-name:setRendererDisabled
+Method-returnType:ParametersBuilder
+Method-parameters:[int rendererIndex, boolean disabled]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:delete
+Method-name:setSelectionOverride
+Method-returnType:ParametersBuilder
+Method-parameters:[int rendererIndex, TrackGroupArray groups, @Nullable SelectionOverride override]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:containsKey
+MethodInvocation:areEqual
+MethodInvocation:get
+MethodInvocation:put
+Method-name:clearSelectionOverride
+Method-returnType:ParametersBuilder
+Method-parameters:[int rendererIndex, TrackGroupArray groups]
+MethodInvocation:get
+MethodInvocation:containsKey
+MethodInvocation:remove
+MethodInvocation:isEmpty
+MethodInvocation:remove
+Method-name:clearSelectionOverrides
+Method-returnType:ParametersBuilder
+Method-parameters:[int rendererIndex]
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:remove
+Method-name:clearSelectionOverrides
+Method-returnType:ParametersBuilder
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:clear
+Method-name:build
+Method-returnType:Parameters
+Method-parameters:[]
+Method-name:setInitialValuesWithoutContext
+Method-returnType:void
+Method-parameters:[]
+Method-name:cloneSelectionOverrides
+Method-returnType:SparseArray<Map<TrackGroupArray,@NullableType SelectionOverride>>
+Method-parameters:[SparseArray<Map<TrackGroupArray,@NullableType SelectionOverride>> selectionOverrides]
+MethodInvocation:size
+MethodInvocation:put
+MethodInvocation:keyAt
+MethodInvocation:valueAt
+Class:Parameters
+Field:DEFAULT_WITHOUT_CONTEXT
+MethodInvocation:build
+Field:DEFAULT_WITHOUT_VIEWPORT
+Field:DEFAULT
+Method-name:getDefaults
+Method-returnType:Parameters
+Method-parameters:[Context context]
+MethodInvocation:build
+Field:maxVideoWidth
+Field:maxVideoHeight
+Field:maxVideoFrameRate
+Field:maxVideoBitrate
+Field:exceedVideoConstraintsIfNecessary
+Field:allowVideoMixedMimeTypeAdaptiveness
+Field:allowVideoNonSeamlessAdaptiveness
+Field:viewportWidth
+Field:viewportHeight
+Field:viewportOrientationMayChange
+Field:maxAudioChannelCount
+Field:maxAudioBitrate
+Field:exceedAudioConstraintsIfNecessary
+Field:allowAudioMixedMimeTypeAdaptiveness
+Field:allowAudioMixedSampleRateAdaptiveness
+Field:allowAudioMixedChannelCountAdaptiveness
+Field:forceLowestBitrate
+Field:forceHighestSupportedBitrate
+Field:allowMixedMimeAdaptiveness
+Field:allowNonSeamlessAdaptiveness
+Field:exceedRendererCapabilitiesIfNecessary
+Field:tunnelingAudioSessionId
+Field:selectionOverrides
+Field:rendererDisabledFlags
+Method-name:Parameters
+Method-returnType:null
+Method-parameters:[int maxVideoWidth, int maxVideoHeight, int maxVideoFrameRate, int maxVideoBitrate, boolean exceedVideoConstraintsIfNecessary, boolean allowVideoMixedMimeTypeAdaptiveness, boolean allowVideoNonSeamlessAdaptiveness, int viewportWidth, int viewportHeight, boolean viewportOrientationMayChange, @Nullable String preferredAudioLanguage, int maxAudioChannelCount, int maxAudioBitrate, boolean exceedAudioConstraintsIfNecessary, boolean allowAudioMixedMimeTypeAdaptiveness, boolean allowAudioMixedSampleRateAdaptiveness, boolean allowAudioMixedChannelCountAdaptiveness, @Nullable String preferredTextLanguage, @C.RoleFlags int preferredTextRoleFlags, boolean selectUndeterminedTextLanguage, @C.SelectionFlags int disabledTextTrackSelectionFlags, boolean forceLowestBitrate, boolean forceHighestSupportedBitrate, boolean exceedRendererCapabilitiesIfNecessary, int tunnelingAudioSessionId, SparseArray<Map<TrackGroupArray,@NullableType SelectionOverride>> selectionOverrides, SparseBooleanArray rendererDisabledFlags]
+FieldAccess:maxVideoWidth
+FieldAccess:maxVideoHeight
+FieldAccess:maxVideoFrameRate
+FieldAccess:maxVideoBitrate
+FieldAccess:exceedVideoConstraintsIfNecessary
+FieldAccess:allowVideoMixedMimeTypeAdaptiveness
+FieldAccess:allowVideoNonSeamlessAdaptiveness
+FieldAccess:viewportWidth
+FieldAccess:viewportHeight
+FieldAccess:viewportOrientationMayChange
+FieldAccess:maxAudioChannelCount
+FieldAccess:maxAudioBitrate
+FieldAccess:exceedAudioConstraintsIfNecessary
+FieldAccess:allowAudioMixedMimeTypeAdaptiveness
+FieldAccess:allowAudioMixedSampleRateAdaptiveness
+FieldAccess:allowAudioMixedChannelCountAdaptiveness
+FieldAccess:forceLowestBitrate
+FieldAccess:forceHighestSupportedBitrate
+FieldAccess:exceedRendererCapabilitiesIfNecessary
+FieldAccess:tunnelingAudioSessionId
+FieldAccess:allowMixedMimeAdaptiveness
+FieldAccess:allowNonSeamlessAdaptiveness
+FieldAccess:selectionOverrides
+FieldAccess:rendererDisabledFlags
+Method-name:Parameters
+Method-returnType:null
+Method-parameters:[Parcel in]
+FieldAccess:maxVideoWidth
+MethodInvocation:readInt
+FieldAccess:maxVideoHeight
+MethodInvocation:readInt
+FieldAccess:maxVideoFrameRate
+MethodInvocation:readInt
+FieldAccess:maxVideoBitrate
+MethodInvocation:readInt
+FieldAccess:exceedVideoConstraintsIfNecessary
+MethodInvocation:readBoolean
+FieldAccess:allowVideoMixedMimeTypeAdaptiveness
+MethodInvocation:readBoolean
+FieldAccess:allowVideoNonSeamlessAdaptiveness
+MethodInvocation:readBoolean
+FieldAccess:viewportWidth
+MethodInvocation:readInt
+FieldAccess:viewportHeight
+MethodInvocation:readInt
+FieldAccess:viewportOrientationMayChange
+MethodInvocation:readBoolean
+FieldAccess:maxAudioChannelCount
+MethodInvocation:readInt
+FieldAccess:maxAudioBitrate
+MethodInvocation:readInt
+FieldAccess:exceedAudioConstraintsIfNecessary
+MethodInvocation:readBoolean
+FieldAccess:allowAudioMixedMimeTypeAdaptiveness
+MethodInvocation:readBoolean
+FieldAccess:allowAudioMixedSampleRateAdaptiveness
+MethodInvocation:readBoolean
+FieldAccess:allowAudioMixedChannelCountAdaptiveness
+MethodInvocation:readBoolean
+FieldAccess:forceLowestBitrate
+MethodInvocation:readBoolean
+FieldAccess:forceHighestSupportedBitrate
+MethodInvocation:readBoolean
+FieldAccess:exceedRendererCapabilitiesIfNecessary
+MethodInvocation:readBoolean
+FieldAccess:tunnelingAudioSessionId
+MethodInvocation:readInt
+FieldAccess:selectionOverrides
+MethodInvocation:readSelectionOverrides
+FieldAccess:rendererDisabledFlags
+MethodInvocation:castNonNull
+MethodInvocation:readSparseBooleanArray
+FieldAccess:allowMixedMimeAdaptiveness
+FieldAccess:allowNonSeamlessAdaptiveness
+Method-name:getRendererDisabled
+Method-returnType:boolean
+Method-parameters:[int rendererIndex]
+MethodInvocation:get
+Method-name:hasSelectionOverride
+Method-returnType:boolean
+Method-parameters:[int rendererIndex, TrackGroupArray groups]
+MethodInvocation:get
+MethodInvocation:containsKey
+Method-name:getSelectionOverride
+Method-returnType:SelectionOverride
+Method-parameters:[int rendererIndex, TrackGroupArray groups]
+MethodInvocation:get
+MethodInvocation:get
+Method-name:buildUpon
+Method-returnType:ParametersBuilder
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:areRendererDisabledFlagsEqual
+MethodInvocation:areSelectionOverridesEqual
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:describeContents
+Method-returnType:int
+Method-parameters:[]
+Method-name:writeToParcel
+Method-returnType:void
+Method-parameters:[Parcel dest, int flags]
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeBoolean
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeInt
+MethodInvocation:writeSelectionOverridesToParcel
+MethodInvocation:writeSparseBooleanArray
+Field:CREATOR
+Method-name:createFromParcel
+Method-returnType:Parameters
+Method-parameters:[Parcel in]
+Method-name:newArray
+Method-returnType:Parameters[]
+Method-parameters:[int size]
+Method-name:readSelectionOverrides
+Method-returnType:SparseArray<Map<TrackGroupArray,@NullableType SelectionOverride>>
+Method-parameters:[Parcel in]
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:checkNotNull
+MethodInvocation:readParcelable
+MethodInvocation:getClassLoader
+MethodInvocation:readParcelable
+MethodInvocation:getClassLoader
+MethodInvocation:put
+MethodInvocation:put
+Method-name:writeSelectionOverridesToParcel
+Method-returnType:void
+Method-parameters:[Parcel dest, SparseArray<Map<TrackGroupArray,@NullableType SelectionOverride>> selectionOverrides]
+MethodInvocation:size
+MethodInvocation:writeInt
+MethodInvocation:keyAt
+MethodInvocation:valueAt
+MethodInvocation:size
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:entrySet
+MethodInvocation:writeParcelable
+MethodInvocation:getKey
+MethodInvocation:writeParcelable
+MethodInvocation:getValue
+Method-name:areRendererDisabledFlagsEqual
+Method-returnType:boolean
+Method-parameters:[SparseBooleanArray first, SparseBooleanArray second]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:indexOfKey
+MethodInvocation:keyAt
+Method-name:areSelectionOverridesEqual
+Method-returnType:boolean
+Method-parameters:[SparseArray<Map<TrackGroupArray,@NullableType SelectionOverride>> first, SparseArray<Map<TrackGroupArray,@NullableType SelectionOverride>> second]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:indexOfKey
+MethodInvocation:keyAt
+MethodInvocation:areSelectionOverridesEqual
+MethodInvocation:valueAt
+MethodInvocation:valueAt
+Method-name:areSelectionOverridesEqual
+Method-returnType:boolean
+Method-parameters:[Map<TrackGroupArray,@NullableType SelectionOverride> first, Map<TrackGroupArray,@NullableType SelectionOverride> second]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:containsKey
+MethodInvocation:areEqual
+MethodInvocation:getValue
+MethodInvocation:get
+Class:SelectionOverride
+Field:groupIndex
+Field:tracks
+Field:length
+Field:reason
+Field:data
+Method-name:SelectionOverride
+Method-returnType:null
+Method-parameters:[int groupIndex, int... tracks]
+Method-name:SelectionOverride
+Method-returnType:null
+Method-parameters:[int groupIndex, int[] tracks, int reason, int data]
+FieldAccess:groupIndex
+FieldAccess:tracks
+MethodInvocation:copyOf
+FieldAccess:length
+FieldAccess:reason
+FieldAccess:data
+MethodInvocation:sort
+FieldAccess:tracks
+Method-name:SelectionOverride
+Method-returnType:null
+Method-parameters:[Parcel in]
+MethodInvocation:readInt
+MethodInvocation:readByte
+MethodInvocation:readIntArray
+MethodInvocation:readInt
+MethodInvocation:readInt
+Method-name:containsTrack
+Method-returnType:boolean
+Method-parameters:[int track]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:describeContents
+Method-returnType:int
+Method-parameters:[]
+Method-name:writeToParcel
+Method-returnType:void
+Method-parameters:[Parcel dest, int flags]
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeIntArray
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+Field:CREATOR
+Method-name:createFromParcel
+Method-returnType:SelectionOverride
+Method-parameters:[Parcel in]
+Method-name:newArray
+Method-returnType:SelectionOverride[]
+Method-parameters:[int size]
+Field:FRACTION_TO_CONSIDER_FULLSCREEN
+Field:NO_TRACKS
+Field:WITHIN_RENDERER_CAPABILITIES_BONUS
+Field:trackSelectionFactory
+Field:parametersReference
+Field:allowMultipleAdaptiveSelections
+Method-name:DefaultTrackSelector
+Method-returnType:null
+Method-parameters:[]
+Method-name:DefaultTrackSelector
+Method-returnType:null
+Method-parameters:[BandwidthMeter bandwidthMeter]
+Method-name:DefaultTrackSelector
+Method-returnType:null
+Method-parameters:[TrackSelection.Factory trackSelectionFactory]
+Method-name:DefaultTrackSelector
+Method-returnType:null
+Method-parameters:[Context context]
+Method-name:DefaultTrackSelector
+Method-returnType:null
+Method-parameters:[Context context, TrackSelection.Factory trackSelectionFactory]
+MethodInvocation:getDefaults
+Method-name:DefaultTrackSelector
+Method-returnType:null
+Method-parameters:[Parameters parameters, TrackSelection.Factory trackSelectionFactory]
+FieldAccess:trackSelectionFactory
+Method-name:setParameters
+Method-returnType:void
+Method-parameters:[Parameters parameters]
+MethodInvocation:checkNotNull
+MethodInvocation:equals
+MethodInvocation:getAndSet
+MethodInvocation:invalidate
+Method-name:setParameters
+Method-returnType:void
+Method-parameters:[ParametersBuilder parametersBuilder]
+MethodInvocation:setParameters
+MethodInvocation:build
+Method-name:getParameters
+Method-returnType:Parameters
+Method-parameters:[]
+MethodInvocation:get
+Method-name:buildUponParameters
+Method-returnType:ParametersBuilder
+Method-parameters:[]
+MethodInvocation:buildUpon
+MethodInvocation:getParameters
+Method-name:setRendererDisabled
+Method-returnType:void
+Method-parameters:[int rendererIndex, boolean disabled]
+MethodInvocation:setParameters
+MethodInvocation:setRendererDisabled
+MethodInvocation:buildUponParameters
+Method-name:getRendererDisabled
+Method-returnType:boolean
+Method-parameters:[int rendererIndex]
+MethodInvocation:getRendererDisabled
+MethodInvocation:getParameters
+Method-name:setSelectionOverride
+Method-returnType:void
+Method-parameters:[int rendererIndex, TrackGroupArray groups, @Nullable SelectionOverride override]
+MethodInvocation:setParameters
+MethodInvocation:setSelectionOverride
+MethodInvocation:buildUponParameters
+Method-name:getSelectionOverride
+Method-returnType:SelectionOverride
+Method-parameters:[int rendererIndex, TrackGroupArray groups]
+MethodInvocation:getSelectionOverride
+MethodInvocation:getParameters
+Method-name:clearSelectionOverride
+Method-returnType:void
+Method-parameters:[int rendererIndex, TrackGroupArray groups]
+MethodInvocation:setParameters
+MethodInvocation:clearSelectionOverride
+MethodInvocation:buildUponParameters
+Method-name:clearSelectionOverrides
+Method-returnType:void
+Method-parameters:[int rendererIndex]
+MethodInvocation:setParameters
+MethodInvocation:clearSelectionOverrides
+MethodInvocation:buildUponParameters
+Method-name:clearSelectionOverrides
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setParameters
+MethodInvocation:clearSelectionOverrides
+MethodInvocation:buildUponParameters
+Method-name:setTunnelingAudioSessionId
+Method-returnType:void
+Method-parameters:[int tunnelingAudioSessionId]
+MethodInvocation:setParameters
+MethodInvocation:setTunnelingAudioSessionId
+MethodInvocation:buildUponParameters
+Method-name:experimental_allowMultipleAdaptiveSelections
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:allowMultipleAdaptiveSelections
+Method-name:selectTracks
+Method-returnType:Pair<@NullableType RendererConfiguration[],@NullableType TrackSelection[]>
+Method-parameters:[MappedTrackInfo mappedTrackInfo, @Capabilities int[][][] rendererFormatSupports, @AdaptiveSupport int[] rendererMixedMimeTypeAdaptationSupports]
+MethodInvocation:get
+MethodInvocation:getRendererCount
+MethodInvocation:selectAllTracks
+MethodInvocation:getRendererDisabled
+MethodInvocation:getTrackGroups
+MethodInvocation:hasSelectionOverride
+MethodInvocation:getSelectionOverride
+MethodInvocation:get
+MethodInvocation:createTrackSelections
+MethodInvocation:getBandwidthMeter
+MethodInvocation:getRendererDisabled
+MethodInvocation:getRendererType
+MethodInvocation:maybeConfigureRenderersForTunneling
+MethodInvocation:create
+Method-name:selectAllTracks
+Method-returnType:TrackSelection.@NullableType Definition[]
+Method-parameters:[MappedTrackInfo mappedTrackInfo, @Capabilities int[][][] rendererFormatSupports, @AdaptiveSupport int[] rendererMixedMimeTypeAdaptationSupports, Parameters params]
+MethodInvocation:getRendererCount
+MethodInvocation:getRendererType
+MethodInvocation:selectVideoTrack
+MethodInvocation:getTrackGroups
+FieldAccess:length
+MethodInvocation:getTrackGroups
+MethodInvocation:getRendererType
+MethodInvocation:selectAudioTrack
+MethodInvocation:getTrackGroups
+MethodInvocation:compareTo
+FieldAccess:language
+MethodInvocation:getFormat
+MethodInvocation:getRendererType
+MethodInvocation:selectTextTrack
+MethodInvocation:getTrackGroups
+MethodInvocation:compareTo
+MethodInvocation:selectOtherTrack
+MethodInvocation:getTrackGroups
+Method-name:selectVideoTrack
+Method-returnType:TrackSelection.Definition
+Method-parameters:[TrackGroupArray groups, @Capabilities int[][] formatSupports, @AdaptiveSupport int mixedMimeTypeAdaptationSupports, Parameters params, boolean enableAdaptiveTrackSelection]
+MethodInvocation:selectAdaptiveVideoTrack
+MethodInvocation:selectFixedVideoTrack
+Method-name:selectAdaptiveVideoTrack
+Method-returnType:TrackSelection.Definition
+Method-parameters:[TrackGroupArray groups, @Capabilities int[][] formatSupport, @AdaptiveSupport int mixedMimeTypeAdaptationSupports, Parameters params]
+MethodInvocation:get
+MethodInvocation:getAdaptiveVideoTracksForGroup
+Method-name:getAdaptiveVideoTracksForGroup
+Method-returnType:int[]
+Method-parameters:[TrackGroup group, @Capabilities int[] formatSupport, boolean allowMixedMimeTypes, int requiredAdaptiveSupport, int maxVideoWidth, int maxVideoHeight, int maxVideoFrameRate, int maxVideoBitrate, int viewportWidth, int viewportHeight, boolean viewportOrientationMayChange]
+MethodInvocation:getViewportFilteredTrackIndices
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+FieldAccess:sampleMimeType
+MethodInvocation:getFormat
+MethodInvocation:add
+MethodInvocation:getAdaptiveVideoTrackCountForMimeType
+MethodInvocation:filterAdaptiveVideoTrackCountForMimeType
+MethodInvocation:size
+MethodInvocation:toArray
+Method-name:getAdaptiveVideoTrackCountForMimeType
+Method-returnType:int
+Method-parameters:[TrackGroup group, @Capabilities int[] formatSupport, int requiredAdaptiveSupport, @Nullable String mimeType, int maxVideoWidth, int maxVideoHeight, int maxVideoFrameRate, int maxVideoBitrate, List<Integer> selectedTrackIndices]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:isSupportedAdaptiveVideoTrack
+MethodInvocation:getFormat
+Method-name:filterAdaptiveVideoTrackCountForMimeType
+Method-returnType:void
+Method-parameters:[TrackGroup group, @Capabilities int[] formatSupport, int requiredAdaptiveSupport, @Nullable String mimeType, int maxVideoWidth, int maxVideoHeight, int maxVideoFrameRate, int maxVideoBitrate, List<Integer> selectedTrackIndices]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:isSupportedAdaptiveVideoTrack
+MethodInvocation:getFormat
+MethodInvocation:remove
+Method-name:isSupportedAdaptiveVideoTrack
+Method-returnType:boolean
+Method-parameters:[Format format, @Nullable String mimeType, @Capabilities int formatSupport, int requiredAdaptiveSupport, int maxVideoWidth, int maxVideoHeight, int maxVideoFrameRate, int maxVideoBitrate]
+MethodInvocation:isSupported
+MethodInvocation:areEqual
+Method-name:selectFixedVideoTrack
+Method-returnType:TrackSelection.Definition
+Method-parameters:[TrackGroupArray groups, @Capabilities int[][] formatSupports, Parameters params]
+MethodInvocation:get
+MethodInvocation:getViewportFilteredTrackIndices
+MethodInvocation:isSupported
+MethodInvocation:getFormat
+MethodInvocation:contains
+MethodInvocation:isSupported
+MethodInvocation:compareFormatValues
+MethodInvocation:getPixelCount
+MethodInvocation:compareFormatValues
+MethodInvocation:compareFormatValues
+MethodInvocation:getPixelCount
+Method-name:selectAudioTrack
+Method-returnType:Pair<TrackSelection.Definition,AudioTrackScore>
+Method-parameters:[TrackGroupArray groups, @Capabilities int[][] formatSupports, @AdaptiveSupport int mixedMimeTypeAdaptationSupports, Parameters params, boolean enableAdaptiveTrackSelection]
+MethodInvocation:get
+MethodInvocation:isSupported
+MethodInvocation:getFormat
+MethodInvocation:compareTo
+MethodInvocation:get
+MethodInvocation:getAdaptiveAudioTracks
+MethodInvocation:create
+MethodInvocation:checkNotNull
+Method-name:getAdaptiveAudioTracks
+Method-returnType:int[]
+Method-parameters:[TrackGroup group, @Capabilities int[] formatSupport, int maxAudioBitrate, boolean allowMixedMimeTypeAdaptiveness, boolean allowMixedSampleRateAdaptiveness, boolean allowAudioMixedChannelCountAdaptiveness]
+MethodInvocation:getFormat
+MethodInvocation:add
+MethodInvocation:getAdaptiveAudioTrackCount
+MethodInvocation:checkNotNull
+MethodInvocation:getFormat
+MethodInvocation:isSupportedAdaptiveAudioTrack
+Method-name:getAdaptiveAudioTrackCount
+Method-returnType:int
+Method-parameters:[TrackGroup group, @Capabilities int[] formatSupport, AudioConfigurationTuple configuration, int maxAudioBitrate, boolean allowMixedMimeTypeAdaptiveness, boolean allowMixedSampleRateAdaptiveness, boolean allowAudioMixedChannelCountAdaptiveness]
+MethodInvocation:isSupportedAdaptiveAudioTrack
+MethodInvocation:getFormat
+Method-name:isSupportedAdaptiveAudioTrack
+Method-returnType:boolean
+Method-parameters:[Format format, @Capabilities int formatSupport, AudioConfigurationTuple configuration, int maxAudioBitrate, boolean allowMixedMimeTypeAdaptiveness, boolean allowMixedSampleRateAdaptiveness, boolean allowAudioMixedChannelCountAdaptiveness]
+MethodInvocation:isSupported
+MethodInvocation:equals
+Method-name:selectTextTrack
+Method-returnType:Pair<TrackSelection.Definition,TextTrackScore>
+Method-parameters:[TrackGroupArray groups, @Capabilities int[][] formatSupport, Parameters params, @Nullable String selectedAudioLanguage]
+MethodInvocation:get
+MethodInvocation:isSupported
+MethodInvocation:getFormat
+MethodInvocation:compareTo
+MethodInvocation:create
+MethodInvocation:checkNotNull
+Method-name:selectOtherTrack
+Method-returnType:TrackSelection.Definition
+Method-parameters:[int trackType, TrackGroupArray groups, @Capabilities int[][] formatSupport, Parameters params]
+MethodInvocation:get
+MethodInvocation:isSupported
+MethodInvocation:getFormat
+MethodInvocation:isSupported
+Method-name:maybeConfigureRenderersForTunneling
+Method-returnType:void
+Method-parameters:[MappedTrackInfo mappedTrackInfo, @Capabilities int[][][] renderererFormatSupports, @NullableType RendererConfiguration[] rendererConfigurations, @NullableType TrackSelection[] trackSelections, int tunnelingAudioSessionId]
+MethodInvocation:getRendererCount
+MethodInvocation:getRendererType
+MethodInvocation:rendererSupportsTunneling
+MethodInvocation:getTrackGroups
+Method-name:rendererSupportsTunneling
+Method-returnType:boolean
+Method-parameters:[@Capabilities int[][] formatSupports, TrackGroupArray trackGroups, TrackSelection selection]
+MethodInvocation:indexOf
+MethodInvocation:getTrackGroup
+MethodInvocation:length
+MethodInvocation:getIndexInTrackGroup
+MethodInvocation:getTunnelingSupport
+Method-name:compareFormatValues
+Method-returnType:int
+Method-parameters:[int first, int second]
+Method-name:isSupported
+Method-returnType:boolean
+Method-parameters:[@Capabilities int formatSupport, boolean allowExceedsCapabilities]
+MethodInvocation:getFormatSupport
+Method-name:normalizeUndeterminedLanguageToNull
+Method-returnType:String
+Method-parameters:[@Nullable String language]
+MethodInvocation:isEmpty
+MethodInvocation:equals
+Method-name:getFormatLanguageScore
+Method-returnType:int
+Method-parameters:[Format format, @Nullable String language, boolean allowUndeterminedFormatLanguage]
+MethodInvocation:isEmpty
+MethodInvocation:equals
+MethodInvocation:normalizeUndeterminedLanguageToNull
+MethodInvocation:normalizeUndeterminedLanguageToNull
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+MethodInvocation:splitAtFirst
+MethodInvocation:splitAtFirst
+MethodInvocation:equals
+Method-name:getViewportFilteredTrackIndices
+Method-returnType:List<Integer>
+Method-parameters:[TrackGroup group, int viewportWidth, int viewportHeight, boolean orientationMayChange]
+MethodInvocation:add
+MethodInvocation:getFormat
+MethodInvocation:getMaxVideoSizeInViewport
+MethodInvocation:size
+MethodInvocation:getFormat
+MethodInvocation:get
+MethodInvocation:getPixelCount
+MethodInvocation:remove
+Method-name:getMaxVideoSizeInViewport
+Method-returnType:Point
+Method-parameters:[boolean orientationMayChange, int viewportWidth, int viewportHeight, int videoWidth, int videoHeight]
+MethodInvocation:ceilDivide
+MethodInvocation:ceilDivide
+Method-name:compareInts
+Method-returnType:int
+Method-parameters:[int first, int second]
+Class:AudioTrackScore
+Field:isWithinConstraints
+Field:language
+Field:parameters
+Field:isWithinRendererCapabilities
+Field:preferredLanguageScore
+Field:localeLanguageMatchIndex
+Field:localeLanguageScore
+Field:isDefaultSelectionFlag
+Field:channelCount
+Field:sampleRate
+Field:bitrate
+Method-name:AudioTrackScore
+Method-returnType:null
+Method-parameters:[Format format, Parameters parameters, @Capabilities int formatSupport]
+FieldAccess:parameters
+FieldAccess:language
+MethodInvocation:normalizeUndeterminedLanguageToNull
+MethodInvocation:isSupported
+MethodInvocation:getFormatLanguageScore
+MethodInvocation:getSystemLanguageCodes
+MethodInvocation:getFormatLanguageScore
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[AudioTrackScore other]
+FieldAccess:isWithinRendererCapabilities
+FieldAccess:isWithinRendererCapabilities
+FieldAccess:preferredLanguageScore
+MethodInvocation:compareInts
+FieldAccess:preferredLanguageScore
+FieldAccess:isWithinConstraints
+FieldAccess:isWithinConstraints
+MethodInvocation:compareFormatValues
+FieldAccess:isDefaultSelectionFlag
+FieldAccess:isDefaultSelectionFlag
+FieldAccess:localeLanguageMatchIndex
+MethodInvocation:compareInts
+FieldAccess:localeLanguageMatchIndex
+FieldAccess:localeLanguageScore
+MethodInvocation:compareInts
+FieldAccess:localeLanguageScore
+FieldAccess:channelCount
+MethodInvocation:compareInts
+FieldAccess:channelCount
+FieldAccess:sampleRate
+MethodInvocation:compareInts
+FieldAccess:sampleRate
+MethodInvocation:areEqual
+FieldAccess:language
+MethodInvocation:compareInts
+FieldAccess:bitrate
+Class:AudioConfigurationTuple
+Field:channelCount
+Field:sampleRate
+Field:mimeType
+Method-name:AudioConfigurationTuple
+Method-returnType:null
+Method-parameters:[int channelCount, int sampleRate, @Nullable String mimeType]
+FieldAccess:channelCount
+FieldAccess:sampleRate
+FieldAccess:mimeType
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Class:TextTrackScore
+Field:isWithinConstraints
+Field:isWithinRendererCapabilities
+Field:isDefault
+Field:hasPreferredIsForcedFlag
+Field:preferredLanguageScore
+Field:preferredRoleFlagsScore
+Field:selectedAudioLanguageScore
+Field:hasCaptionRoleFlags
+Method-name:TextTrackScore
+Method-returnType:null
+Method-parameters:[Format format, Parameters parameters, @Capabilities int trackFormatSupport, @Nullable String selectedAudioLanguage]
+MethodInvocation:isSupported
+MethodInvocation:getFormatLanguageScore
+MethodInvocation:bitCount
+MethodInvocation:normalizeUndeterminedLanguageToNull
+MethodInvocation:getFormatLanguageScore
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[TextTrackScore other]
+FieldAccess:isWithinRendererCapabilities
+FieldAccess:isWithinRendererCapabilities
+FieldAccess:preferredLanguageScore
+MethodInvocation:compareInts
+FieldAccess:preferredLanguageScore
+FieldAccess:preferredRoleFlagsScore
+MethodInvocation:compareInts
+FieldAccess:preferredRoleFlagsScore
+FieldAccess:isDefault
+FieldAccess:isDefault
+FieldAccess:hasPreferredIsForcedFlag
+FieldAccess:hasPreferredIsForcedFlag
+FieldAccess:selectedAudioLanguageScore
+MethodInvocation:compareInts
+FieldAccess:selectedAudioLanguageScore
+FieldAccess:hasCaptionRoleFlags
+FieldAccess:hasCaptionRoleFlags

@@ -1,0 +1,79 @@
+Class:ConditionFactory
+Field:FILTER_CONTAINS
+Field:FILTER_DOES_NOT_EXIST
+Field:FILTER_EXIST
+Field:FILTER_GE
+Field:FILTER_GT
+Field:FILTER_MATCH_CASE
+Field:FILTER_MATCH_APPROX
+Field:FILTER_IS_EQUAL_TO
+Field:FILTER_STARTS_WITH
+Field:FILTER_IS_NOT_EQUAL_TO
+Field:FILTER_LE
+Field:FILTER_LT
+Field:FILTER_REGEXP
+Method-name:createCellRendererComponent
+Method-returnType:JComponent
+Method-parameters:[final String description]
+MethodInvocation:createConditionLabel
+MethodInvocation:add
+Method-name:createConditionLabel
+Method-returnType:JLabel
+Method-parameters:[final String text]
+MethodInvocation:setUI
+MethodInvocation:createUI
+Method-name:createConditionLabel
+Method-returnType:JLabel
+Method-parameters:[final Icon icon]
+MethodInvocation:setUI
+MethodInvocation:createUI
+Method-name:createDescription
+Method-returnType:String
+Method-parameters:[final String attribute, final String simpleCondition, final String value, final boolean matchCase, final boolean matchApproximately]
+MethodInvocation:getText
+MethodInvocation:getText
+Field:conditionControllers
+Method-name:ConditionFactory
+Method-returnType:null
+Method-parameters:[]
+Method-name:addConditionController
+Method-returnType:void
+Method-parameters:[final int position, final IElementaryConditionController controller]
+Method-name:conditionIterator
+Method-returnType:Iterator<IElementaryConditionController>
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:values
+Method-name:getConditionController
+Method-returnType:IElementaryConditionController
+Method-parameters:[final Object item]
+MethodInvocation:conditionIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:canHandle
+Method-name:loadCondition
+Method-returnType:ASelectableCondition
+Method-parameters:[final XMLElement element]
+MethodInvocation:loadCondition2
+MethodInvocation:getAttribute
+MethodInvocation:setUserName
+Method-name:loadCondition2
+Method-returnType:ASelectableCondition
+Method-parameters:[final XMLElement element]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:load
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:load
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:load
+MethodInvocation:conditionIterator
+MethodInvocation:hasNext
+MethodInvocation:loadCondition
+MethodInvocation:next
+Method-name:removeConditionController
+Method-returnType:IElementaryConditionController
+Method-parameters:[final int position, final IElementaryConditionController controller]
+MethodInvocation:remove

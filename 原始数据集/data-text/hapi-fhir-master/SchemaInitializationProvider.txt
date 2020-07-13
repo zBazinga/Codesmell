@@ -1,0 +1,53 @@
+Class:SchemaInitializationProvider
+Field:mySchemaFileClassPath
+Field:mySchemaDescription
+Field:mySchemaExistsIndicatorTable
+Method-name:SchemaInitializationProvider
+Method-returnType:null
+Method-parameters:[String theSchemaDescription, String theSchemaFileClassPath, String theSchemaExistsIndicatorTable]
+Method-name:getSqlStatements
+Method-returnType:List<String>
+Method-parameters:[DriverTypeEnum theDriverType]
+MethodInvocation:getInitScript
+MethodInvocation:getResourceAsStream
+MethodInvocation:toString
+MethodInvocation:preProcessSqlString
+MethodInvocation:split
+MethodInvocation:preProcessSqlStatement
+MethodInvocation:isBlank
+MethodInvocation:add
+Method-name:preProcessSqlStatement
+Method-returnType:String
+Method-parameters:[DriverTypeEnum theDriverType, String sqlStatement]
+Method-name:getInitScript
+Method-returnType:String
+Method-parameters:[DriverTypeEnum theDriverType]
+MethodInvocation:getSchemaFilename
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object theO]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:toHashCode
+MethodInvocation:append
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:getSchemaExistsIndicatorTable
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSchemaFileClassPath
+Method-returnType:SchemaInitializationProvider
+Method-parameters:[String theSchemaFileClassPath]
+Method-name:getSchemaDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSchemaDescription
+Method-returnType:SchemaInitializationProvider
+Method-parameters:[String theSchemaDescription]

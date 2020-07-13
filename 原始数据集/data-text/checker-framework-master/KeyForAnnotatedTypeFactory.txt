@@ -1,0 +1,175 @@
+Class:KeyForAnnotatedTypeFactory
+Field:KEYFOR
+MethodInvocation:fromClass
+Field:UNKNOWNKEYFOR
+MethodInvocation:fromClass
+Field:KEYFORBOTTOM
+MethodInvocation:fromClass
+Field:KEYFOR_NAME
+MethodInvocation:getCanonicalName
+Field:mapContainsKey
+MethodInvocation:getMethod
+Field:mapGet
+MethodInvocation:getMethod
+Field:mapPut
+MethodInvocation:getMethod
+Field:keyForPropagator
+Method-name:KeyForAnnotatedTypeFactory
+Method-returnType:null
+Method-parameters:[BaseTypeChecker checker]
+MethodInvocation:addAliasedAnnotation
+MethodInvocation:addAliasedAnnotation
+MethodInvocation:postInit
+Method-name:createSupportedTypeQualifiers
+Method-returnType:Set<Class<? extends Annotation>>
+Method-parameters:[]
+MethodInvocation:asList
+Method-name:constructorFromUse
+Method-returnType:ParameterizedExecutableType
+Method-parameters:[NewClassTree tree]
+MethodInvocation:propagateNewClassTree
+MethodInvocation:getReturnType
+Method-name:createTypeHierarchy
+Method-returnType:TypeHierarchy
+Method-parameters:[]
+MethodInvocation:getQualifierHierarchy
+MethodInvocation:getBooleanOption
+MethodInvocation:hasOption
+Method-name:createTreeAnnotator
+Method-returnType:TreeAnnotator
+Method-parameters:[]
+Method-name:propagateNewClassTree
+Method-returnType:void
+Method-parameters:[NewClassTree newClassTree, AnnotatedTypeMirror type, KeyForPropagator keyForPropagator]
+MethodInvocation:getAssignmentContext
+MethodInvocation:getVisitorState
+MethodInvocation:getKind
+MethodInvocation:getPath
+MethodInvocation:assignedTo
+MethodInvocation:getKind
+MethodInvocation:propagate
+Class:KeyForTypeHierarchy
+Method-name:KeyForTypeHierarchy
+Method-returnType:null
+Method-parameters:[BaseTypeChecker checker, QualifierHierarchy qualifierHierarchy, boolean ignoreRawTypes, boolean invariantArrayComponents]
+Method-name:isSubtype
+Method-returnType:boolean
+Method-parameters:[AnnotatedTypeMirror subtype, AnnotatedTypeMirror supertype, AnnotationMirror top]
+MethodInvocation:getKind
+MethodInvocation:getKind
+MethodInvocation:isEmpty
+MethodInvocation:getAnnotations
+MethodInvocation:hasAnnotation
+Method-name:createFlowAnalysis
+Method-returnType:KeyForAnalysis
+Method-parameters:[List<Pair<VariableElement,KeyForValue>> fieldValues]
+Method-name:createFlowTransferFunction
+Method-returnType:KeyForTransfer
+Method-parameters:[CFAbstractAnalysis<KeyForValue,KeyForStore,KeyForTransfer> analysis]
+Method-name:createKeyForAnnotationMirrorWithValue
+Method-returnType:AnnotationMirror
+Method-parameters:[LinkedHashSet<String> values]
+MethodInvocation:getProcessingEnv
+MethodInvocation:setValue
+MethodInvocation:toArray
+MethodInvocation:build
+Method-name:createKeyForAnnotationMirrorWithValue
+Method-returnType:AnnotationMirror
+Method-parameters:[String value]
+MethodInvocation:add
+MethodInvocation:createKeyForAnnotationMirrorWithValue
+Method-name:isKeyForMap
+Method-returnType:boolean
+Method-parameters:[String mapExpression, ExpressionTree tree]
+MethodInvocation:getAnnotatedType
+MethodInvocation:getAnnotation
+MethodInvocation:getElementValueArray
+MethodInvocation:getInferredValueFor
+MethodInvocation:getKeyForMaps
+MethodInvocation:contains
+Method-name:createQualifierHierarchy
+Method-returnType:QualifierHierarchy
+Method-parameters:[MultiGraphFactory factory]
+Class:KeyForQualifierHierarchy
+Method-name:KeyForQualifierHierarchy
+Method-returnType:null
+Method-parameters:[MultiGraphFactory factory]
+Method-name:extractValues
+Method-returnType:List<String>
+Method-parameters:[AnnotationMirror anno]
+MethodInvocation:getElementValues
+MethodInvocation:isEmpty
+MethodInvocation:getElementValueArray
+Method-name:isSubtype
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror subAnno, AnnotationMirror superAnno]
+MethodInvocation:areSameByName
+MethodInvocation:areSameByName
+MethodInvocation:extractValues
+MethodInvocation:extractValues
+MethodInvocation:containsAll
+MethodInvocation:areSameByName
+MethodInvocation:areSameByName
+Method-name:leastUpperBound
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror a1, AnnotationMirror a2]
+MethodInvocation:areSameByName
+MethodInvocation:areSameByName
+MethodInvocation:areSameByName
+MethodInvocation:areSameByName
+MethodInvocation:areSameByName
+MethodInvocation:areSameByName
+MethodInvocation:extractValues
+MethodInvocation:extractValues
+MethodInvocation:retainAll
+MethodInvocation:createKeyForAnnotationMirrorWithValue
+MethodInvocation:areSameByName
+MethodInvocation:areSameByName
+Method-name:greatestLowerBound
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror a1, AnnotationMirror a2]
+MethodInvocation:areSameByName
+MethodInvocation:areSameByName
+MethodInvocation:areSameByName
+MethodInvocation:areSameByName
+MethodInvocation:areSameByName
+MethodInvocation:areSameByName
+MethodInvocation:extractValues
+MethodInvocation:extractValues
+MethodInvocation:addAll
+MethodInvocation:createKeyForAnnotationMirrorWithValue
+MethodInvocation:areSameByName
+MethodInvocation:areSameByName
+Method-name:isMapContainsKey
+Method-returnType:boolean
+Method-parameters:[Tree tree]
+MethodInvocation:isMethodInvocation
+MethodInvocation:getProcessingEnv
+Method-name:isMapGet
+Method-returnType:boolean
+Method-parameters:[Tree tree]
+MethodInvocation:isMethodInvocation
+MethodInvocation:getProcessingEnv
+Method-name:isMapPut
+Method-returnType:boolean
+Method-parameters:[Tree tree]
+MethodInvocation:isMethodInvocation
+MethodInvocation:getProcessingEnv
+Method-name:isMapContainsKey
+Method-returnType:boolean
+Method-parameters:[Node node]
+MethodInvocation:isMethodInvocation
+MethodInvocation:getProcessingEnv
+Method-name:isMapGet
+Method-returnType:boolean
+Method-parameters:[Node node]
+MethodInvocation:isMethodInvocation
+MethodInvocation:getProcessingEnv
+Method-name:isMapPut
+Method-returnType:boolean
+Method-parameters:[Node node]
+MethodInvocation:isMethodInvocation
+MethodInvocation:getProcessingEnv
+Method-name:shouldWarnIfStubRedundantWithBytecode
+Method-returnType:boolean
+Method-parameters:[]

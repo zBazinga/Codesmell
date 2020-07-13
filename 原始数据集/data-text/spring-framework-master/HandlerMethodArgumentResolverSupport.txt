@@ -1,0 +1,59 @@
+Class:HandlerMethodArgumentResolverSupport
+Field:logger
+MethodInvocation:getLog
+MethodInvocation:getClass
+Field:adapterRegistry
+Method-name:HandlerMethodArgumentResolverSupport
+Method-returnType:null
+Method-parameters:[ReactiveAdapterRegistry adapterRegistry]
+MethodInvocation:notNull
+FieldAccess:adapterRegistry
+Method-name:getAdapterRegistry
+Method-returnType:ReactiveAdapterRegistry
+Method-parameters:[]
+FieldAccess:adapterRegistry
+Method-name:checkParameterType
+Method-returnType:boolean
+Method-parameters:[MethodParameter parameter, Predicate<Class<?>> predicate]
+MethodInvocation:getParameterType
+MethodInvocation:getAdapter
+MethodInvocation:getAdapterRegistry
+MethodInvocation:assertHasValues
+MethodInvocation:getNestedParameterType
+MethodInvocation:nested
+MethodInvocation:test
+Method-name:assertHasValues
+Method-returnType:void
+Method-parameters:[ReactiveAdapter adapter, MethodParameter param]
+MethodInvocation:isNoValue
+MethodInvocation:getGenericParameterType
+Method-name:checkParameterTypeNoReactiveWrapper
+Method-returnType:boolean
+Method-parameters:[MethodParameter parameter, Predicate<Class<?>> predicate]
+MethodInvocation:getParameterType
+MethodInvocation:getAdapter
+MethodInvocation:getAdapterRegistry
+MethodInvocation:assertHasValues
+MethodInvocation:getNestedParameterType
+MethodInvocation:nested
+MethodInvocation:test
+MethodInvocation:buildReactiveWrapperException
+Method-name:buildReactiveWrapperException
+Method-returnType:IllegalStateException
+Method-parameters:[MethodParameter parameter]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getGenericParameterType
+Method-name:checkAnnotatedParamNoReactiveWrapper
+Method-returnType:boolean
+Method-parameters:[MethodParameter parameter, Class<A> annotationType, BiPredicate<A,Class<?>> typePredicate]
+MethodInvocation:getParameterAnnotation
+MethodInvocation:nestedIfOptional
+MethodInvocation:getNestedParameterType
+MethodInvocation:getAdapter
+MethodInvocation:getAdapterRegistry
+MethodInvocation:assertHasValues
+MethodInvocation:nested
+MethodInvocation:getNestedParameterType
+MethodInvocation:test
+MethodInvocation:buildReactiveWrapperException

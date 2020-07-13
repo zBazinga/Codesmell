@@ -1,0 +1,219 @@
+Class:GrowableByteBuffer
+Method-name:encodeZigZag32
+Method-returnType:int
+Method-parameters:[int value]
+Method-name:encodeZigZag64
+Method-returnType:long
+Method-parameters:[long value]
+Method-name:decodeZigZag32
+Method-returnType:int
+Method-parameters:[int n]
+Method-name:decodeZigZag64
+Method-returnType:long
+Method-parameters:[long n]
+Field:buf
+Method-name:GrowableByteBuffer
+Method-returnType:null
+Method-parameters:[int initSize]
+FieldAccess:buf
+MethodInvocation:allocate
+Method-name:GrowableByteBuffer
+Method-returnType:null
+Method-parameters:[ByteBuffer buf]
+FieldAccess:buf
+Method-name:put
+Method-returnType:void
+Method-parameters:[byte b]
+MethodInvocation:ensureBufferEnough
+MethodInvocation:put
+Method-name:put
+Method-returnType:void
+Method-parameters:[int index, byte b]
+MethodInvocation:put
+Method-name:put
+Method-returnType:void
+Method-parameters:[byte[] b]
+MethodInvocation:ensureBufferEnough
+MethodInvocation:put
+Method-name:putShort
+Method-returnType:void
+Method-parameters:[short value]
+MethodInvocation:ensureBufferEnough
+MethodInvocation:putShort
+Method-name:putShort
+Method-returnType:void
+Method-parameters:[int index, short value]
+MethodInvocation:putShort
+Method-name:putInt
+Method-returnType:void
+Method-parameters:[int value]
+MethodInvocation:ensureBufferEnough
+MethodInvocation:putInt
+Method-name:putInt
+Method-returnType:void
+Method-parameters:[int index, int value]
+MethodInvocation:putInt
+Method-name:putLong
+Method-returnType:void
+Method-parameters:[long value]
+MethodInvocation:ensureBufferEnough
+MethodInvocation:putLong
+Method-name:putLong
+Method-returnType:void
+Method-parameters:[int index, long value]
+MethodInvocation:putLong
+Method-name:putFloat
+Method-returnType:void
+Method-parameters:[float value]
+MethodInvocation:ensureBufferEnough
+MethodInvocation:putFloat
+Method-name:putFloat
+Method-returnType:void
+Method-parameters:[int index, float value]
+MethodInvocation:putFloat
+Method-name:putDouble
+Method-returnType:void
+Method-parameters:[double value]
+MethodInvocation:ensureBufferEnough
+MethodInvocation:putDouble
+Method-name:putDouble
+Method-returnType:void
+Method-parameters:[int index, double value]
+MethodInvocation:putDouble
+Method-name:putZigzag32
+Method-returnType:int
+Method-parameters:[int value]
+MethodInvocation:putVarint
+MethodInvocation:encodeZigZag32
+Method-name:putZigzag64
+Method-returnType:int
+Method-parameters:[long value]
+MethodInvocation:putVarint
+MethodInvocation:encodeZigZag64
+Method-name:putVarint
+Method-returnType:int
+Method-parameters:[long value]
+MethodInvocation:put
+MethodInvocation:put
+Method-name:get
+Method-returnType:byte
+Method-parameters:[]
+MethodInvocation:get
+Method-name:get
+Method-returnType:byte
+Method-parameters:[int index]
+MethodInvocation:get
+Method-name:get
+Method-returnType:void
+Method-parameters:[byte[] dst]
+MethodInvocation:get
+Method-name:getShort
+Method-returnType:short
+Method-parameters:[]
+MethodInvocation:getShort
+Method-name:getShort
+Method-returnType:short
+Method-parameters:[int index]
+MethodInvocation:getShort
+Method-name:getInt
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getInt
+Method-name:getInt
+Method-returnType:int
+Method-parameters:[int index]
+MethodInvocation:getInt
+Method-name:getLong
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getLong
+Method-name:getLong
+Method-returnType:long
+Method-parameters:[int index]
+MethodInvocation:getLong
+Method-name:getFloat
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:getFloat
+Method-name:getFloat
+Method-returnType:float
+Method-parameters:[int index]
+MethodInvocation:getFloat
+Method-name:getDouble
+Method-returnType:double
+Method-parameters:[]
+MethodInvocation:getDouble
+Method-name:getDouble
+Method-returnType:double
+Method-parameters:[int index]
+MethodInvocation:getDouble
+Method-name:getZigZag32
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:decodeZigZag32
+MethodInvocation:getVarint
+Method-name:getZigZag64
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:decodeZigZag64
+MethodInvocation:getVarint
+Method-name:getVarint
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:get
+Method-name:flip
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:flip
+Method-name:position
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:position
+Method-name:position
+Method-returnType:void
+Method-parameters:[int newPosition]
+MethodInvocation:ensureBufferEnough
+MethodInvocation:position
+MethodInvocation:position
+Method-name:limit
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:limit
+Method-name:limit
+Method-returnType:void
+Method-parameters:[int newLimit]
+MethodInvocation:limit
+Method-name:capacity
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:capacity
+Method-name:remaining
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:remaining
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:grow
+Method-returnType:ByteBuffer
+Method-parameters:[int size]
+MethodInvocation:allocate
+MethodInvocation:put
+MethodInvocation:array
+MethodInvocation:position
+MethodInvocation:position
+Method-name:ensureBufferEnough
+Method-returnType:void
+Method-parameters:[int need]
+MethodInvocation:position
+MethodInvocation:capacity
+MethodInvocation:capacity
+MethodInvocation:grow
+Method-name:putString
+Method-returnType:void
+Method-parameters:[String content, MotanV2Codec motanV2Codec]
+MethodInvocation:put
+MethodInvocation:getBytes
+MethodInvocation:put
+MethodInvocation:getBytes

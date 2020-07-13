@@ -1,0 +1,91 @@
+Class:AlterTableConcatenateAnalyzer
+Method-name:AlterTableConcatenateAnalyzer
+Method-returnType:null
+Method-parameters:[QueryState queryState]
+Method-name:analyzeCommand
+Method-returnType:void
+Method-parameters:[TableName tableName, Map<String,String> partitionSpec, ASTNode command]
+MethodInvocation:getTable
+MethodInvocation:isTransactionalTable
+MethodInvocation:compactAcidTable
+MethodInvocation:isNonNative
+MethodInvocation:getMsg
+MethodInvocation:getTableType
+MethodInvocation:getMsg
+MethodInvocation:isPartitioned
+MethodInvocation:concatenatePartitionedTable
+MethodInvocation:concatenateUnpartitionedTable
+Method-name:compactAcidTable
+Method-returnType:void
+Method-parameters:[TableName tableName, Map<String,String> partitionSpec]
+MethodInvocation:getBoolVar
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:getInputs
+MethodInvocation:getOutputs
+Method-name:concatenatePartitionedTable
+Method-returnType:void
+Method-parameters:[TableName tableName, Table table, Map<String,String> partitionSpec]
+MethodInvocation:getPartition
+MethodInvocation:isArchived
+MethodInvocation:getMsg
+MethodInvocation:getPath
+MethodInvocation:getDataLocation
+MethodInvocation:getScheme
+MethodInvocation:toUri
+MethodInvocation:getAuthority
+MethodInvocation:toUri
+MethodInvocation:getPath
+MethodInvocation:toUri
+MethodInvocation:constructListBucketingCtx
+MethodInvocation:getSkewedColNames
+MethodInvocation:getSkewedColValues
+MethodInvocation:getSkewedColValueLocationMaps
+MethodInvocation:isStoredAsSubDirectories
+MethodInvocation:getBucketCols
+MethodInvocation:getInputFormatClass
+MethodInvocation:createConcatenateTasks
+Method-name:concatenateUnpartitionedTable
+Method-returnType:void
+Method-parameters:[TableName tableName, Table table, Map<String,String> partitionSpec]
+MethodInvocation:getPath
+MethodInvocation:getPath
+MethodInvocation:constructListBucketingCtx
+MethodInvocation:getSkewedColNames
+MethodInvocation:getSkewedColValues
+MethodInvocation:getSkewedColValueLocationMaps
+MethodInvocation:isStoredAsSubDirectories
+MethodInvocation:getBucketCols
+MethodInvocation:getInputFormatClass
+MethodInvocation:createConcatenateTasks
+Method-name:createConcatenateTasks
+Method-returnType:void
+Method-parameters:[TableName tableName, Table table, Map<String,String> partitionSpec, Path oldLocation, Path newLocation, ListBucketingCtx lbCtx, List<String> bucketCols, Class<? extends InputFormat> inputFormatClass]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:getMsg
+MethodInvocation:size
+MethodInvocation:getMsg
+MethodInvocation:addInputsOutputsAlterTable
+MethodInvocation:getTableDesc
+MethodInvocation:getExternalTmpPath
+MethodInvocation:createMergeTask
+MethodInvocation:addMoveTask
+MethodInvocation:add
+Method-name:addMoveTask
+Method-returnType:void
+Method-parameters:[TableName tableName, Table table, Map<String,String> partitionSpec, Path oldLocation, Path newLocation, ListBucketingCtx lbCtx, TableDesc tableDesc, Path queryTmpDir, Task<?> mergeTask]
+MethodInvocation:setLbCtx
+MethodInvocation:setInheritTableSpecs
+MethodInvocation:get
+MethodInvocation:addDependentTask
+MethodInvocation:addStatTask
+Method-name:addStatTask
+Method-returnType:void
+Method-parameters:[TableName tableName, Table table, Map<String,String> partitionSpec, Path oldLocation, Path newLocation, LoadTableDesc loadTableDesc, Task<MoveWork> moveTask]
+MethodInvocation:getBoolVar
+MethodInvocation:equals
+MethodInvocation:setNoStatsAggregator
+MethodInvocation:setClearAggregatorStats
+MethodInvocation:get
+MethodInvocation:addDependentTask

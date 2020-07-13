@@ -1,0 +1,72 @@
+Class:TezEdgeProperty
+Field:EdgeType
+Field:hiveConf
+Field:edgeType
+Field:numBuckets
+Field:isAutoReduce
+Field:isSlowStart
+Field:minReducer
+Field:maxReducer
+Field:inputSizePerReducer
+Field:bufferSize
+Method-name:TezEdgeProperty
+Method-returnType:null
+Method-parameters:[HiveConf hiveConf, EdgeType edgeType, int buckets]
+FieldAccess:hiveConf
+FieldAccess:edgeType
+FieldAccess:numBuckets
+Method-name:TezEdgeProperty
+Method-returnType:null
+Method-parameters:[HiveConf hiveConf, EdgeType edgeType, boolean isAutoReduce, boolean isSlowStart, int minReducer, int maxReducer, long bytesPerReducer]
+MethodInvocation:setAutoReduce
+FieldAccess:isSlowStart
+Method-name:setAutoReduce
+Method-returnType:void
+Method-parameters:[HiveConf hiveConf, boolean isAutoReduce, int minReducer, int maxReducer, long bytesPerReducer]
+FieldAccess:hiveConf
+FieldAccess:minReducer
+FieldAccess:maxReducer
+FieldAccess:isAutoReduce
+FieldAccess:inputSizePerReducer
+Method-name:TezEdgeProperty
+Method-returnType:null
+Method-parameters:[EdgeType edgeType]
+Method-name:getEdgeType
+Method-returnType:EdgeType
+Method-parameters:[]
+Method-name:getHiveConf
+Method-returnType:HiveConf
+Method-parameters:[]
+Method-name:getNumBuckets
+Method-returnType:int
+Method-parameters:[]
+Method-name:isAutoReduce
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getMinReducer
+Method-returnType:int
+Method-parameters:[]
+Method-name:getMaxReducer
+Method-returnType:int
+Method-parameters:[]
+Method-name:getInputSizePerReducer
+Method-returnType:long
+Method-parameters:[]
+Method-name:isSlowStart
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSlowStart
+Method-returnType:void
+Method-parameters:[boolean slowStart]
+FieldAccess:isSlowStart
+Method-name:setBufferSize
+Method-returnType:void
+Method-parameters:[Integer bufferSize]
+FieldAccess:bufferSize
+Method-name:getBufferSize
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setEdgeType
+Method-returnType:void
+Method-parameters:[EdgeType type]
+FieldAccess:edgeType

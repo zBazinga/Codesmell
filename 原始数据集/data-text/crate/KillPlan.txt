@@ -1,0 +1,26 @@
+Class:KillPlan
+Field:jobToKill
+Method-name:KillPlan
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:jobToKill
+MethodInvocation:empty
+Method-name:KillPlan
+Method-returnType:null
+Method-parameters:[UUID jobToKill]
+FieldAccess:jobToKill
+MethodInvocation:of
+Method-name:jobToKill
+Method-returnType:Optional<UUID>
+Method-parameters:[]
+Method-name:type
+Method-returnType:StatementType
+Method-parameters:[]
+Method-name:executeOrFail
+Method-returnType:void
+Method-parameters:[DependencyCarrier dependencies, PlannerContext plannerContext, RowConsumer consumer, Row params, SubQueryResults subQueryResults]
+MethodInvocation:execute
+MethodInvocation:transportKillAllNodeAction
+MethodInvocation:transportActionProvider
+MethodInvocation:transportKillJobsNodeAction
+MethodInvocation:transportActionProvider

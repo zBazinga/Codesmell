@@ -1,0 +1,49 @@
+Class:LogicalFilter
+Field:variablesSet
+Method-name:LogicalFilter
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode child, RexNode condition, ImmutableSet<CorrelationId> variablesSet]
+Method-name:LogicalFilter
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode child, RexNode condition]
+MethodInvocation:of
+Method-name:LogicalFilter
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelNode child, RexNode condition]
+MethodInvocation:traitSetOf
+MethodInvocation:of
+Method-name:LogicalFilter
+Method-returnType:null
+Method-parameters:[RelInput input]
+FieldAccess:variablesSet
+MethodInvocation:of
+Method-name:create
+Method-returnType:LogicalFilter
+Method-parameters:[final RelNode input, RexNode condition]
+MethodInvocation:create
+MethodInvocation:of
+Method-name:create
+Method-returnType:LogicalFilter
+Method-parameters:[final RelNode input, RexNode condition, ImmutableSet<CorrelationId> variablesSet]
+MethodInvocation:getCluster
+MethodInvocation:getMetadataQuery
+MethodInvocation:replaceIf
+MethodInvocation:replaceIfs
+MethodInvocation:traitSetOf
+MethodInvocation:filter
+MethodInvocation:filter
+Method-name:getVariablesSet
+Method-returnType:Set<CorrelationId>
+Method-parameters:[]
+Method-name:copy
+Method-returnType:LogicalFilter
+Method-parameters:[RelTraitSet traitSet, RelNode input, RexNode condition]
+Method-name:accept
+Method-returnType:RelNode
+Method-parameters:[RelShuttle shuttle]
+MethodInvocation:visit
+Method-name:explainTerms
+Method-returnType:RelWriter
+Method-parameters:[RelWriter pw]
+MethodInvocation:itemIf
+MethodInvocation:isEmpty

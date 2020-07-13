@@ -1,0 +1,57 @@
+Class:ResourceFilter
+Field:acceptedResources
+Field:filteredDependencyConsumer
+Field:isEmpty
+Method-name:ResourceFilter
+Method-returnType:null
+Method-parameters:[ImmutableSet<Artifact> acceptedResources, Consumer<Artifact> filteredDependencyConsumer, boolean isEmpty]
+FieldAccess:acceptedResources
+FieldAccess:filteredDependencyConsumer
+FieldAccess:isEmpty
+Method-name:empty
+Method-returnType:ResourceFilter
+Method-parameters:[]
+MethodInvocation:of
+Method-name:of
+Method-returnType:ResourceFilter
+Method-parameters:[ImmutableSet<Artifact> acceptedResources, Consumer<Artifact> filteredDependencyConsumer]
+Method-name:maybeFilterDependencies
+Method-returnType:Optional<NestedSet<Artifact>>
+Method-parameters:[NestedSet<Artifact> artifacts]
+MethodInvocation:empty
+MethodInvocation:toList
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:toList
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:empty
+MethodInvocation:of
+MethodInvocation:wrap
+MethodInvocation:getOrder
+Method-name:filterDependencyContainers
+Method-returnType:NestedSet<ValidatedAndroidResources>
+Method-parameters:[RuleErrorConsumer errorConsumer, NestedSet<ValidatedAndroidResources> resourceContainers]
+MethodInvocation:getOrder
+MethodInvocation:toList
+MethodInvocation:add
+MethodInvocation:filter
+MethodInvocation:build
+Method-name:maybeFilter
+Method-returnType:Optional<ImmutableList<Artifact>>
+Method-parameters:[ImmutableList<Artifact> artifacts, boolean isDependency]
+MethodInvocation:empty
+MethodInvocation:builder
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:accept
+MethodInvocation:empty
+MethodInvocation:of
+MethodInvocation:build
+Method-name:filterLocalResources
+Method-returnType:AndroidResources
+Method-parameters:[RuleErrorConsumer errorConsumer, AndroidResources androidResources]
+MethodInvocation:maybeFilter
+MethodInvocation:isPresent
+MethodInvocation:get

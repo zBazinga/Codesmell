@@ -1,0 +1,64 @@
+Class:SingleRel
+Field:input
+Method-name:SingleRel
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traits, RelNode input]
+FieldAccess:input
+Method-name:getInput
+Method-returnType:RelNode
+Method-parameters:[]
+Method-name:getInputs
+Method-returnType:List<RelNode>
+Method-parameters:[]
+MethodInvocation:of
+Method-name:estimateRowCount
+Method-returnType:double
+Method-parameters:[RelMetadataQuery mq]
+MethodInvocation:getRowCount
+Method-name:childrenAccept
+Method-returnType:void
+Method-parameters:[RelVisitor visitor]
+MethodInvocation:visit
+Method-name:explainTerms
+Method-returnType:RelWriter
+Method-parameters:[RelWriter pw]
+MethodInvocation:input
+MethodInvocation:getInput
+Method-name:replaceInput
+Method-returnType:void
+Method-parameters:[int ordinalInParent, RelNode rel]
+Method-name:deriveRowType
+Method-returnType:RelDataType
+Method-parameters:[]
+MethodInvocation:getRowType
+Method-name:getProjectUniqueKeys
+Method-returnType:Set<ImmutableBitSet>
+Method-parameters:[RelMetadataQuery mq, boolean ignoreNulls, List<RexNode> projExprs, RelMdUniqueKeys relMdUniqueKeys]
+MethodInvocation:builder
+MethodInvocation:builder
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getIndex
+MethodInvocation:put
+MethodInvocation:set
+MethodInvocation:build
+MethodInvocation:isEmpty
+MethodInvocation:of
+MethodInvocation:getUniqueKeys
+MethodInvocation:getInput
+MethodInvocation:of
+MethodInvocation:transformValues
+MethodInvocation:asMap
+MethodInvocation:build
+MethodInvocation:builder
+MethodInvocation:builder
+MethodInvocation:contains
+MethodInvocation:product
+MethodInvocation:transform
+MethodInvocation:filter
+MethodInvocation:powerSet
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:addAll
+MethodInvocation:transform
+MethodInvocation:build

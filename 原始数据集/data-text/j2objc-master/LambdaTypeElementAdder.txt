@@ -1,0 +1,47 @@
+Class:LambdaTypeElementAdder
+Field:lambdaCounts
+Method-name:LambdaTypeElementAdder
+Method-returnType:null
+Method-parameters:[CompilationUnit unit]
+Method-name:getLambdaUniqueName
+Method-returnType:String
+Method-parameters:[FunctionalExpression node]
+MethodInvocation:getEnclosingTypeElement
+MethodInvocation:get
+MethodInvocation:put
+Method-name:handleFunctionalExpression
+Method-returnType:boolean
+Method-parameters:[FunctionalExpression node]
+MethodInvocation:getLambdaUniqueName
+MethodInvocation:getEnclosingElement
+MethodInvocation:asType
+MethodInvocation:getJavaObject
+MethodInvocation:isWeakOuter
+MethodInvocation:addInterfaces
+MethodInvocation:getTargetTypes
+MethodInvocation:setTypeElement
+Method-name:isWeakOuter
+Method-returnType:boolean
+Method-parameters:[FunctionalExpression node]
+MethodInvocation:getAssignedVariable
+MethodInvocation:hasNamedAnnotation
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[LambdaExpression node]
+MethodInvocation:handleFunctionalExpression
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[CreationReference node]
+MethodInvocation:handleFunctionalExpression
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ExpressionMethodReference node]
+MethodInvocation:handleFunctionalExpression
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[TypeMethodReference node]
+MethodInvocation:handleFunctionalExpression
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SuperMethodReference node]
+MethodInvocation:handleFunctionalExpression

@@ -1,0 +1,51 @@
+Class:DefinitionNodeRenderer
+Field:listOptions
+Method-name:DefinitionNodeRenderer
+Method-returnType:null
+Method-parameters:[DataHolder options]
+FieldAccess:listOptions
+MethodInvocation:get
+Method-name:getNodeRenderingHandlers
+Method-returnType:Set<NodeRenderingHandler<?>>
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+Method-name:render
+Method-returnType:void
+Method-parameters:[DefinitionTerm node, NodeRendererContext context, HtmlWriter html]
+MethodInvocation:getFirstChild
+MethodInvocation:tagLine
+MethodInvocation:withCondIndent
+MethodInvocation:withAttr
+MethodInvocation:srcPosWithEOL
+MethodInvocation:getChars
+MethodInvocation:text
+MethodInvocation:unescape
+MethodInvocation:getMarkerSuffix
+MethodInvocation:renderChildren
+Method-name:render
+Method-returnType:void
+Method-parameters:[DefinitionItem node, NodeRendererContext context, HtmlWriter html]
+MethodInvocation:isTightListItem
+MethodInvocation:tagLine
+MethodInvocation:withCondIndent
+MethodInvocation:withAttr
+MethodInvocation:srcPosWithEOL
+MethodInvocation:getChars
+MethodInvocation:text
+MethodInvocation:unescape
+MethodInvocation:getMarkerSuffix
+MethodInvocation:renderChildren
+MethodInvocation:tagIndent
+MethodInvocation:withAttr
+MethodInvocation:srcPosWithEOL
+MethodInvocation:getChars
+MethodInvocation:text
+MethodInvocation:unescape
+MethodInvocation:getMarkerSuffix
+MethodInvocation:renderChildren
+Class:Factory
+Method-name:apply
+Method-returnType:NodeRenderer
+Method-parameters:[@NotNull DataHolder options]

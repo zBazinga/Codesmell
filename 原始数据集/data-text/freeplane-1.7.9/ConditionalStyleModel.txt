@@ -1,0 +1,196 @@
+Class:ConditionalStyleModel
+Method-name:saveConditionalStyles
+Method-returnType:void
+Method-parameters:[XMLElement parent, boolean createRoot, MapStyle mapStyle]
+MethodInvocation:getStyleCount
+MethodInvocation:createElement
+MethodInvocation:addChild
+MethodInvocation:toXml
+Class:Item
+Field:condition
+Field:style
+Field:isActive
+Field:isLast
+Method-name:Item
+Method-returnType:null
+Method-parameters:[boolean isActive, ASelectableCondition condition, IStyle style, boolean isLast]
+FieldAccess:isActive
+FieldAccess:condition
+FieldAccess:style
+MethodInvocation:setLast
+Method-name:Item
+Method-returnType:null
+Method-parameters:[Item prototype]
+Method-name:setCondition
+Method-returnType:void
+Method-parameters:[ASelectableCondition condition]
+FieldAccess:condition
+Method-name:getCondition
+Method-returnType:ASelectableCondition
+Method-parameters:[]
+Method-name:setStyle
+Method-returnType:void
+Method-parameters:[IStyle style]
+FieldAccess:style
+Method-name:getStyle
+Method-returnType:IStyle
+Method-parameters:[]
+Method-name:setActive
+Method-returnType:void
+Method-parameters:[boolean isActive]
+FieldAccess:isActive
+Method-name:isActive
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setLast
+Method-returnType:void
+Method-parameters:[boolean isLast]
+FieldAccess:isLast
+Method-name:isLast
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:toXml
+Method-returnType:void
+Method-parameters:[XMLElement conditionalStylesRoot]
+MethodInvocation:createElement
+MethodInvocation:addChild
+MethodInvocation:setAttribute
+MethodInvocation:toString
+MethodInvocation:isActive
+MethodInvocation:getStyle
+MethodInvocation:toString
+MethodInvocation:getObject
+MethodInvocation:setAttribute
+MethodInvocation:toString
+MethodInvocation:setAttribute
+MethodInvocation:setAttribute
+MethodInvocation:toString
+MethodInvocation:isLast
+MethodInvocation:toXml
+Method-name:dependOnCondition
+Method-returnType:boolean
+Method-parameters:[ConditionPredicate predicate]
+MethodInvocation:isActive
+MethodInvocation:dependOnConditionRecursively
+Method-name:dependOnConditionRecursively
+Method-returnType:boolean
+Method-parameters:[ASelectableCondition condition, ConditionPredicate predicate]
+MethodInvocation:split
+MethodInvocation:dependOnConditionRecursively
+MethodInvocation:test
+Field:styles
+Method-name:ConditionalStyleModel
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:styles
+Method-name:ConditionalStyleModel
+Method-returnType:null
+Method-parameters:[ConditionalStyleModel conditionalStyleModel]
+FieldAccess:styles
+MethodInvocation:size
+MethodInvocation:add
+Field:recursiveCall
+Method-name:getStyles
+Method-returnType:Collection<IStyle>
+Method-parameters:[NodeModel node]
+MethodInvocation:emptyList
+MethodInvocation:getCondition
+MethodInvocation:isActive
+MethodInvocation:checkNodeInFormulaContext
+MethodInvocation:add
+MethodInvocation:isLast
+Method-name:addCondition
+Method-returnType:void
+Method-parameters:[boolean isActive, ASelectableCondition condition, IStyle style, boolean isLast]
+MethodInvocation:add
+MethodInvocation:size
+MethodInvocation:fireTableRowsInserted
+Method-name:insertCondition
+Method-returnType:void
+Method-parameters:[int index, boolean isActive, ASelectableCondition condition, IStyle style, boolean isLast]
+MethodInvocation:add
+MethodInvocation:fireTableRowsInserted
+Method-name:removeCondition
+Method-returnType:Item
+Method-parameters:[int index]
+MethodInvocation:remove
+MethodInvocation:fireTableRowsDeleted
+Method-name:swapConditions
+Method-returnType:void
+Method-parameters:[int index1, int index2]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:fireTableRowsUpdated
+MethodInvocation:fireTableRowsUpdated
+Method-name:moveUp
+Method-returnType:void
+Method-parameters:[int index]
+MethodInvocation:swapConditions
+Method-name:moveDown
+Method-returnType:void
+Method-parameters:[int index]
+MethodInvocation:size
+MethodInvocation:swapConditions
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:iterator
+Method-returnType:Iterator<Item>
+Method-parameters:[]
+MethodInvocation:iterator
+Field:table
+Method-name:asTableModel
+Method-returnType:TableModel
+Method-parameters:[]
+Field:serialVersionUID
+Method-name:getValueAt
+Method-returnType:Object
+Method-parameters:[int rowIndex, int columnIndex]
+MethodInvocation:get
+MethodInvocation:isActive
+MethodInvocation:getCondition
+MethodInvocation:getStyle
+MethodInvocation:isLast
+Method-name:getRowCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getColumnCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:getColumnClass
+Method-returnType:Class<?>
+Method-parameters:[int columnIndex]
+Method-name:getColumnName
+Method-returnType:String
+Method-parameters:[int column]
+MethodInvocation:getText
+MethodInvocation:getText
+MethodInvocation:getText
+MethodInvocation:getText
+Method-name:setValueAt
+Method-returnType:void
+Method-parameters:[Object aValue, int rowIndex, int columnIndex]
+MethodInvocation:get
+MethodInvocation:setActive
+MethodInvocation:setCondition
+MethodInvocation:setStyle
+MethodInvocation:setLast
+MethodInvocation:fireTableCellUpdated
+Method-name:isCellEditable
+Method-returnType:boolean
+Method-parameters:[int rowIndex, int columnIndex]
+Method-name:getStyleCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:clone
+Method-returnType:ConditionalStyleModel
+Method-parameters:[]
+Method-name:dependOnCondition
+Method-returnType:boolean
+Method-parameters:[ConditionPredicate predicate]
+MethodInvocation:dependOnCondition

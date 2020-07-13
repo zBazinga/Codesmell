@@ -1,0 +1,110 @@
+Class:SourceCodeProcessor
+Field:configuration
+Method-name:SourceCodeProcessor
+Method-returnType:null
+Method-parameters:[PMDConfiguration configuration]
+FieldAccess:configuration
+Method-name:processSourceCode
+Method-returnType:void
+Method-parameters:[InputStream sourceCode, RuleSets ruleSets, RuleContext ctx]
+MethodInvocation:getSourceEncoding
+MethodInvocation:processSourceCode
+MethodInvocation:getMessage
+Method-name:processSourceCode
+Method-returnType:void
+Method-parameters:[Reader sourceCode, RuleSets ruleSets, RuleContext ctx]
+MethodInvocation:determineLanguage
+MethodInvocation:initialize
+MethodInvocation:applies
+MethodInvocation:getSourceCodeFile
+MethodInvocation:isCacheUpToDate
+MethodInvocation:reportCachedRuleViolations
+MethodInvocation:processSourceCodeWithoutCache
+Method-name:isCacheUpToDate
+Method-returnType:boolean
+Method-parameters:[final RuleContext ctx]
+MethodInvocation:isUpToDate
+MethodInvocation:getAnalysisCache
+MethodInvocation:getSourceCodeFile
+Method-name:reportCachedRuleViolations
+Method-returnType:void
+Method-parameters:[final RuleContext ctx]
+MethodInvocation:getCachedViolations
+MethodInvocation:getAnalysisCache
+MethodInvocation:getSourceCodeFile
+MethodInvocation:addRuleViolation
+MethodInvocation:getReport
+Method-name:processSourceCodeWithoutCache
+Method-returnType:void
+Method-parameters:[final Reader sourceCode, final RuleSets ruleSets, final RuleContext ctx]
+MethodInvocation:start
+MethodInvocation:processSource
+MethodInvocation:analysisFailed
+MethodInvocation:getAnalysisCache
+MethodInvocation:getSourceCodeFile
+MethodInvocation:getSourceCodeFile
+MethodInvocation:analysisFailed
+MethodInvocation:getAnalysisCache
+MethodInvocation:getSourceCodeFile
+MethodInvocation:getSourceCodeFile
+MethodInvocation:end
+Method-name:symbolFacade
+Method-returnType:void
+Method-parameters:[Node rootNode, LanguageVersionHandler languageVersionHandler]
+MethodInvocation:startOperation
+MethodInvocation:start
+MethodInvocation:getSymbolFacade
+MethodInvocation:getClassLoader
+Method-name:resolveQualifiedNames
+Method-returnType:void
+Method-parameters:[Node rootNode, LanguageVersionHandler handler]
+MethodInvocation:startOperation
+MethodInvocation:start
+MethodInvocation:getQualifiedNameResolutionFacade
+MethodInvocation:getClassLoader
+Method-name:usesDFA
+Method-returnType:void
+Method-parameters:[LanguageVersion languageVersion, Node rootNode, RuleSets ruleSets, Language language]
+MethodInvocation:usesDFA
+MethodInvocation:startOperation
+MethodInvocation:getDataFlowFacade
+MethodInvocation:getLanguageVersionHandler
+MethodInvocation:start
+Method-name:usesTypeResolution
+Method-returnType:void
+Method-parameters:[LanguageVersion languageVersion, Node rootNode, RuleSets ruleSets, Language language]
+MethodInvocation:usesTypeResolution
+MethodInvocation:startOperation
+MethodInvocation:start
+MethodInvocation:getTypeResolutionFacade
+MethodInvocation:getLanguageVersionHandler
+MethodInvocation:getClassLoader
+Method-name:usesMultifile
+Method-returnType:void
+Method-parameters:[Node rootNode, LanguageVersionHandler languageVersionHandler, RuleSets ruleSets, Language language]
+MethodInvocation:usesMultifile
+MethodInvocation:startOperation
+MethodInvocation:start
+MethodInvocation:getMultifileFacade
+Method-name:processSource
+Method-returnType:void
+Method-parameters:[Reader sourceCode, RuleSets ruleSets, RuleContext ctx]
+MethodInvocation:getLanguageVersion
+MethodInvocation:getLanguageVersionHandler
+MethodInvocation:parserFor
+MethodInvocation:parse
+MethodInvocation:resolveQualifiedNames
+MethodInvocation:symbolFacade
+MethodInvocation:getLanguage
+MethodInvocation:usesDFA
+MethodInvocation:usesTypeResolution
+MethodInvocation:usesMultifile
+MethodInvocation:singletonList
+MethodInvocation:apply
+Method-name:determineLanguage
+Method-returnType:void
+Method-parameters:[RuleContext ctx]
+MethodInvocation:getLanguageVersion
+MethodInvocation:getLanguageVersionOfFile
+MethodInvocation:getSourceCodeFilename
+MethodInvocation:setLanguageVersion

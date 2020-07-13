@@ -1,0 +1,94 @@
+Class:PathPackageLocator
+Field:WORKSPACE_WILDCARD
+Field:pathEntries
+Field:outputBase
+Field:buildFilesByPriority
+Method-name:PathPackageLocator
+Method-returnType:null
+Method-parameters:[Path outputBase, List<Root> pathEntries, List<BuildFileName> buildFilesByPriority]
+FieldAccess:outputBase
+FieldAccess:pathEntries
+MethodInvocation:copyOf
+FieldAccess:buildFilesByPriority
+MethodInvocation:copyOf
+Method-name:maybeReplaceWorkspaceInString
+Method-returnType:String
+Method-parameters:[String pathElement, Path workspace]
+MethodInvocation:replace
+MethodInvocation:getPathString
+Method-name:create
+Method-returnType:PathPackageLocator
+Method-parameters:[Path outputBase, List<String> pathElements, EventHandler eventHandler, Path workspace, Path clientWorkingDirectory, List<BuildFileName> buildFilesByPriority]
+MethodInvocation:createInternal
+Method-name:createWithoutExistenceCheck
+Method-returnType:PathPackageLocator
+Method-parameters:[Path outputBase, List<Root> pathElements, List<BuildFileName> buildFilesByPriority]
+Method-name:createInternal
+Method-returnType:PathPackageLocator
+Method-parameters:[Path outputBase, List<String> pathElements, EventHandler eventHandler, Path workspace, Path clientWorkingDirectory, List<BuildFileName> buildFilesByPriority, boolean checkExistence]
+MethodInvocation:maybeReplaceWorkspaceInString
+MethodInvocation:create
+MethodInvocation:getRelative
+MethodInvocation:isAbsolute
+MethodInvocation:equals
+MethodInvocation:handle
+MethodInvocation:warn
+MethodInvocation:exists
+MethodInvocation:add
+MethodInvocation:fromPath
+Method-name:getPackageBuildFile
+Method-returnType:Path
+Method-parameters:[PackageIdentifier packageName]
+MethodInvocation:getPackageBuildFileNullable
+Method-name:getPackageBuildFileNullable
+Method-returnType:Path
+Method-parameters:[PackageIdentifier packageIdentifier, AtomicReference<? extends UnixGlob.FilesystemCalls> cache]
+MethodInvocation:checkArgument
+MethodInvocation:isDefault
+MethodInvocation:getRepository
+MethodInvocation:isMain
+MethodInvocation:getRepository
+MethodInvocation:getFilePath
+MethodInvocation:getRelative
+MethodInvocation:getPackageFragment
+MethodInvocation:getFilenameFragment
+MethodInvocation:verify
+MethodInvocation:format
+MethodInvocation:getRelative
+MethodInvocation:getRelative
+MethodInvocation:getSourceRoot
+MethodInvocation:getFilenameFragment
+MethodInvocation:statIfFound
+MethodInvocation:get
+MethodInvocation:isFile
+Method-name:getPathEntries
+Method-returnType:ImmutableList<Root>
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getWorkspaceFile
+Method-returnType:Path
+Method-parameters:[]
+MethodInvocation:getFilePath
+MethodInvocation:getFilePath
+Method-name:getFilePath
+Method-returnType:Path
+Method-parameters:[PathFragment suffix, AtomicReference<? extends UnixGlob.FilesystemCalls> cache]
+MethodInvocation:getRelative
+MethodInvocation:getType
+MethodInvocation:get
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+MethodInvocation:getPathEntries
+MethodInvocation:getPathEntries
+MethodInvocation:equals
+Method-name:getOutputBase
+Method-returnType:Path
+Method-parameters:[]

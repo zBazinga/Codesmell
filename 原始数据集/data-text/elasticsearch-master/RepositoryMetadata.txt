@@ -1,0 +1,72 @@
+Class:RepositoryMetadata
+Field:name
+Field:type
+Field:settings
+Field:generation
+Field:pendingGeneration
+Method-name:RepositoryMetadata
+Method-returnType:null
+Method-parameters:[String name, String type, Settings settings]
+Method-name:RepositoryMetadata
+Method-returnType:null
+Method-parameters:[RepositoryMetadata metadata, long generation, long pendingGeneration]
+Method-name:RepositoryMetadata
+Method-returnType:null
+Method-parameters:[String name, String type, Settings settings, long generation, long pendingGeneration]
+Method-name:name
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:name
+Method-name:type
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:type
+Method-name:settings
+Method-returnType:Settings
+Method-parameters:[]
+FieldAccess:settings
+Method-name:generation
+Method-returnType:long
+Method-parameters:[]
+Method-name:pendingGeneration
+Method-returnType:long
+Method-parameters:[]
+Method-name:RepositoryMetadata
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readString
+MethodInvocation:readString
+MethodInvocation:readSettingsFromStream
+MethodInvocation:readLong
+MethodInvocation:readLong
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeString
+MethodInvocation:writeString
+MethodInvocation:writeSettingsToStream
+MethodInvocation:writeLong
+MethodInvocation:writeLong
+Method-name:equalsIgnoreGenerations
+Method-returnType:boolean
+Method-parameters:[RepositoryMetadata other]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:type
+MethodInvocation:equals
+MethodInvocation:settings
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

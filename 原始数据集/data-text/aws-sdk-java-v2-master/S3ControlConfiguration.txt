@@ -1,0 +1,108 @@
+Class:S3ControlConfiguration
+Field:DEFAULT_FIPS_MODE_ENABLED
+Field:DEFAULT_DUALSTACK_ENABLED
+Field:fipsModeEnabled
+Field:dualstackEnabled
+Field:profileFile
+Field:profileName
+Method-name:S3ControlConfiguration
+Method-returnType:null
+Method-parameters:[DefaultS3ServiceConfigurationBuilder builder]
+FieldAccess:dualstackEnabled
+FieldAccess:fipsModeEnabled
+FieldAccess:profileFile
+FieldAccess:profileName
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:fipsModeEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:resolveBoolean
+Method-name:dualstackEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:resolveBoolean
+Method-name:resolveBoolean
+Method-returnType:boolean
+Method-parameters:[Boolean suppliedValue, boolean defaultValue]
+Method-name:toBuilder
+Method-returnType:Builder
+Method-parameters:[]
+MethodInvocation:profileName
+MethodInvocation:profileFile
+MethodInvocation:fipsModeEnabled
+MethodInvocation:dualstackEnabled
+MethodInvocation:builder
+Method-name:isDualstackEnabled
+Method-returnType:boolean
+Method-parameters:[EndpointAddressInterceptor endpointAddressInterceptor]
+MethodInvocation:dualstackEnabled
+Method-name:dualstackEnabled
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:dualstackEnabled
+Method-returnType:Builder
+Method-parameters:[Boolean dualstackEnabled]
+Method-name:fipsModeEnabled
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:fipsModeEnabled
+Method-returnType:Builder
+Method-parameters:[Boolean fipsModeEnabled]
+Method-name:profileFile
+Method-returnType:ProfileFile
+Method-parameters:[]
+Method-name:profileFile
+Method-returnType:Builder
+Method-parameters:[ProfileFile profileFile]
+Method-name:profileName
+Method-returnType:String
+Method-parameters:[]
+Method-name:profileName
+Method-returnType:Builder
+Method-parameters:[String profileName]
+Class:DefaultS3ServiceConfigurationBuilder
+Field:dualstackEnabled
+Field:fipsModeEnabled
+Field:profileFile
+Field:profileName
+Method-name:dualstackEnabled
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:dualstackEnabled
+Method-returnType:Builder
+Method-parameters:[Boolean dualstackEnabled]
+FieldAccess:dualstackEnabled
+Method-name:setDualstackEnabled
+Method-returnType:void
+Method-parameters:[Boolean dualstackEnabled]
+MethodInvocation:dualstackEnabled
+Method-name:fipsModeEnabled
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:fipsModeEnabled
+Method-returnType:Builder
+Method-parameters:[Boolean fipsModeEnabled]
+FieldAccess:fipsModeEnabled
+Method-name:setFipsModeEnabled
+Method-returnType:void
+Method-parameters:[Boolean fipsModeEnabled]
+MethodInvocation:fipsModeEnabled
+Method-name:profileFile
+Method-returnType:ProfileFile
+Method-parameters:[]
+Method-name:profileFile
+Method-returnType:Builder
+Method-parameters:[ProfileFile profileFile]
+FieldAccess:profileFile
+Method-name:profileName
+Method-returnType:String
+Method-parameters:[]
+Method-name:profileName
+Method-returnType:Builder
+Method-parameters:[String profileName]
+FieldAccess:profileName
+Method-name:build
+Method-returnType:S3ControlConfiguration
+Method-parameters:[]

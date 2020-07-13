@@ -1,0 +1,46 @@
+Class:DexClassNode
+Field:access
+Field:anns
+Field:className
+Field:fields
+Field:interfaceNames
+Field:methods
+Field:source
+Field:superClass
+Method-name:DexClassNode
+Method-returnType:null
+Method-parameters:[DexClassVisitor v, int access, String className, String superClass, String[] interfaceNames]
+FieldAccess:access
+FieldAccess:className
+FieldAccess:superClass
+FieldAccess:interfaceNames
+Method-name:DexClassNode
+Method-returnType:null
+Method-parameters:[int access, String className, String superClass, String[] interfaceNames]
+FieldAccess:access
+FieldAccess:className
+FieldAccess:superClass
+FieldAccess:interfaceNames
+Method-name:accept
+Method-returnType:void
+Method-parameters:[DexClassVisitor dcv]
+MethodInvocation:accept
+MethodInvocation:accept
+MethodInvocation:accept
+MethodInvocation:visitSource
+Method-name:visitAnnotation
+Method-returnType:DexAnnotationVisitor
+Method-parameters:[String name, Visibility visibility]
+MethodInvocation:add
+Method-name:visitField
+Method-returnType:DexFieldVisitor
+Method-parameters:[int accessFlags, Field field, Object value]
+MethodInvocation:add
+Method-name:visitMethod
+Method-returnType:DexMethodVisitor
+Method-parameters:[int accessFlags, Method method]
+MethodInvocation:add
+Method-name:visitSource
+Method-returnType:void
+Method-parameters:[String file]
+FieldAccess:source

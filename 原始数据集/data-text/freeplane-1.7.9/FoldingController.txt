@@ -1,0 +1,202 @@
+Class:FoldingController
+Class:FoldAllAction
+Method-name:FoldAllAction
+Method-returnType:null
+Method-parameters:[]
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[final ActionEvent e, final NodeModel node]
+MethodInvocation:foldAll
+Class:FoldOneLevelAction
+Method-name:FoldOneLevelAction
+Method-returnType:null
+Method-parameters:[]
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[final ActionEvent e, final NodeModel node]
+MethodInvocation:foldOneStage
+Class:UnfoldAllAction
+Method-name:UnfoldAllAction
+Method-returnType:null
+Method-parameters:[]
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[final ActionEvent e, final NodeModel node]
+MethodInvocation:unfoldAll
+Class:UnfoldOneLevelAction
+Method-name:UnfoldOneLevelAction
+Method-returnType:null
+Method-parameters:[]
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[final ActionEvent e, final NodeModel node]
+MethodInvocation:unfoldOneStage
+Field:nullInsets
+Class:FoldingPopupMenu
+Field:node
+Method-name:FoldingPopupMenu
+Method-returnType:null
+Method-parameters:[NodeModel node]
+FieldAccess:node
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addAction
+MethodInvocation:addAction
+Method-name:addAction
+Method-returnType:JButton
+Method-parameters:[Action a]
+MethodInvocation:setToolTipText
+MethodInvocation:getText
+MethodInvocation:setText
+MethodInvocation:add
+MethodInvocation:setMargin
+Class:FoldAllPopupAction
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[final ActionEvent e]
+MethodInvocation:actionPerformed
+Class:FoldOneLevelPopupAction
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[final ActionEvent e]
+MethodInvocation:actionPerformed
+Class:UnfoldAllPopupAction
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[final ActionEvent e]
+MethodInvocation:actionPerformed
+Class:UnfoldOneLevelPopupAction
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[final ActionEvent e]
+MethodInvocation:actionPerformed
+Method-name:install
+Method-returnType:void
+Method-parameters:[final FoldingController foldingController]
+MethodInvocation:addExtension
+MethodInvocation:getCurrentModeController
+Method-name:FoldingController
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:getCurrentModeController
+MethodInvocation:isHeadless
+MethodInvocation:getViewController
+MethodInvocation:getController
+MethodInvocation:getUserInputListenerFactory
+MethodInvocation:addMouseWheelEventHandler
+MethodInvocation:getAnnotatedActions
+MethodInvocation:addAction
+Method-name:getAnnotatedActions
+Method-returnType:List<AMultipleNodeAction>
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+Method-name:foldAll
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+MethodInvocation:setFolded
+MethodInvocation:getChildren
+MethodInvocation:foldAll
+Method-name:foldLastBranches
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+MethodInvocation:getChildren
+MethodInvocation:getChildCount
+MethodInvocation:setFolded
+MethodInvocation:getChildren
+MethodInvocation:foldLastBranches
+Method-name:foldOneStage
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:foldStageN
+MethodInvocation:getMaxDepth
+Method-name:foldStageN
+Method-returnType:void
+Method-parameters:[final NodeModel node, final int stage]
+MethodInvocation:depth
+MethodInvocation:setFolded
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+MethodInvocation:getChildren
+MethodInvocation:foldStageN
+MethodInvocation:foldAll
+Method-name:getMaxDepth
+Method-returnType:int
+Method-parameters:[final NodeModel node]
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+MethodInvocation:isFolded
+MethodInvocation:hasChildren
+MethodInvocation:depth
+MethodInvocation:getChildren
+MethodInvocation:getMaxDepth
+Method-name:getMinDepth
+Method-returnType:int
+Method-parameters:[final NodeModel node]
+MethodInvocation:getModel
+MethodInvocation:isAccessible
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+MethodInvocation:isFolded
+MethodInvocation:depth
+MethodInvocation:hasChildren
+MethodInvocation:isAlwaysUnfolded
+MethodInvocation:getChildren
+MethodInvocation:getMinDepth
+Method-name:handleMouseWheelEvent
+Method-returnType:boolean
+Method-parameters:[final MouseWheelEvent e]
+MethodInvocation:getModifiers
+MethodInvocation:getCurrentController
+MethodInvocation:getSelection
+MethodInvocation:getSelected
+MethodInvocation:getWheelRotation
+MethodInvocation:unfoldOneStage
+MethodInvocation:foldOneStage
+Method-name:setFolded
+Method-returnType:void
+Method-parameters:[final NodeModel node, final boolean state]
+MethodInvocation:isRoot
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+MethodInvocation:setFolded
+Method-name:unfoldAll
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:setFolded
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+MethodInvocation:getChildren
+MethodInvocation:unfoldAll
+Method-name:unfoldOneStage
+Method-returnType:void
+Method-parameters:[final NodeModel node]
+MethodInvocation:getMinDepth
+MethodInvocation:unfoldStageN
+Method-name:unfoldStageN
+Method-returnType:void
+Method-parameters:[final NodeModel node, final int stage]
+MethodInvocation:depth
+MethodInvocation:setFolded
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+MethodInvocation:getChildren
+MethodInvocation:unfoldStageN
+MethodInvocation:foldAll
+Method-name:depth
+Method-returnType:int
+Method-parameters:[NodeModel node]
+MethodInvocation:isRoot
+MethodInvocation:depth
+MethodInvocation:getParentNode
+MethodInvocation:hasVisibleContent
+MethodInvocation:isAlwaysUnfolded
+Method-name:createFoldingPopupMenu
+Method-returnType:JPopupMenu
+Method-parameters:[NodeModel node]

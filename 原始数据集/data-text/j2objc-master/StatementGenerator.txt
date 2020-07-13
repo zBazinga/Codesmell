@@ -1,0 +1,636 @@
+Class:StatementGenerator
+Field:buffer
+Method-name:generate
+Method-returnType:String
+Method-parameters:[TreeNode node, int currentLine]
+MethodInvocation:accept
+MethodInvocation:getResult
+Method-name:StatementGenerator
+Method-returnType:null
+Method-parameters:[TreeNode node, int currentLine]
+MethodInvocation:getCompilationUnit
+MethodInvocation:emitLineDirectives
+Method-name:getResult
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:printMethodInvocationNameAndArgs
+Method-returnType:void
+Method-parameters:[String selector, List<Expression> args]
+Method-name:preVisit
+Method-returnType:boolean
+Method-parameters:[TreeNode node]
+MethodInvocation:syncLineNumbers
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ArrayAccess node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ArrayCreation node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ArrayInitializer node]
+MethodInvocation:getTypeMirror
+MethodInvocation:getComponentType
+MethodInvocation:append
+MethodInvocation:format
+MethodInvocation:getPrimitiveObjCType
+MethodInvocation:iterator
+MethodInvocation:getExpressions
+MethodInvocation:hasNext
+MethodInvocation:accept
+MethodInvocation:next
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ArrayType node]
+MethodInvocation:getIosArray
+MethodInvocation:getComponentType
+MethodInvocation:getTypeMirror
+MethodInvocation:append
+MethodInvocation:getName
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[AssertStatement node]
+MethodInvocation:append
+MethodInvocation:acceptMacroArgument
+MethodInvocation:getExpression
+MethodInvocation:append
+MethodInvocation:getMessage
+MethodInvocation:acceptMacroArgument
+MethodInvocation:getMessage
+MethodInvocation:getStartPosition
+MethodInvocation:substring
+MethodInvocation:getSource
+MethodInvocation:getLength
+MethodInvocation:trimFrom
+MethodInvocation:whitespace
+MethodInvocation:getSourceFileName
+MethodInvocation:getLineNumber
+MethodInvocation:append
+MethodInvocation:generateStringLiteral
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[Assignment node]
+MethodInvocation:accept
+MethodInvocation:getLeftHandSide
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:getOperator
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getRightHandSide
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[Block node]
+MethodInvocation:hasAutoreleasePool
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:printStatements
+MethodInvocation:getStatements
+MethodInvocation:append
+MethodInvocation:hasAutoreleasePool
+MethodInvocation:append
+Method-name:printStatements
+Method-returnType:void
+Method-parameters:[List<?> statements]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:accept
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[BooleanLiteral node]
+MethodInvocation:append
+MethodInvocation:booleanValue
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[BreakStatement node]
+MethodInvocation:getLabel
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getLabel
+MethodInvocation:append
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[CStringLiteral node]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getLiteralValue
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[CastExpression node]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getObjCType
+MethodInvocation:getTypeMirror
+MethodInvocation:getType
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getExpression
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[CharacterLiteral node]
+MethodInvocation:append
+MethodInvocation:escapeCharLiteral
+MethodInvocation:charValue
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ClassInstanceCreation node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[CommaExpression node]
+MethodInvocation:append
+MethodInvocation:iterator
+MethodInvocation:getExpressions
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:accept
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ConditionalExpression node]
+MethodInvocation:accept
+MethodInvocation:getExpression
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getThenExpression
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getElseExpression
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ConstructorInvocation node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ContinueStatement node]
+MethodInvocation:getLabel
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getLabel
+MethodInvocation:append
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[CreationReference node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[DoStatement node]
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getBody
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getExpression
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[EmptyStatement node]
+MethodInvocation:getParent
+MethodInvocation:getKind
+MethodInvocation:getLineNumber
+MethodInvocation:getLineNumber
+MethodInvocation:newline
+MethodInvocation:printIndent
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[EnhancedForStatement node]
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getParameter
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getExpression
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getBody
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ExpressionMethodReference node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ExpressionStatement node]
+MethodInvocation:getExpression
+MethodInvocation:getTypeMirror
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:equals
+MethodInvocation:getKind
+MethodInvocation:useARC
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[FieldAccess node]
+MethodInvocation:accept
+MethodInvocation:getExpression
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getName
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ForStatement node]
+MethodInvocation:append
+MethodInvocation:iterator
+MethodInvocation:getInitializers
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:accept
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getExpression
+MethodInvocation:accept
+MethodInvocation:getExpression
+MethodInvocation:append
+MethodInvocation:iterator
+MethodInvocation:getUpdaters
+MethodInvocation:hasNext
+MethodInvocation:accept
+MethodInvocation:next
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getBody
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[FunctionInvocation node]
+MethodInvocation:isMacro
+MethodInvocation:getFunctionElement
+MethodInvocation:append
+MethodInvocation:getName
+MethodInvocation:append
+MethodInvocation:iterator
+MethodInvocation:getArguments
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:acceptMacroArgument
+MethodInvocation:accept
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[IfStatement node]
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getExpression
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getThenStatement
+MethodInvocation:getElseStatement
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getElseStatement
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[InfixExpression node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[InstanceofExpression node]
+MethodInvocation:asTypeElement
+MethodInvocation:getTypeMirror
+MethodInvocation:getRightOperand
+MethodInvocation:isInterface
+MethodInvocation:getKind
+MethodInvocation:append
+MethodInvocation:format
+MethodInvocation:getFullName
+MethodInvocation:accept
+MethodInvocation:getLeftOperand
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getLeftOperand
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getRightOperand
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[IntersectionType node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[LabeledStatement node]
+MethodInvocation:accept
+MethodInvocation:getLabel
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getBody
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[LambdaExpression node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[MarkerAnnotation node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[MethodInvocation node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[NativeExpression node]
+MethodInvocation:append
+MethodInvocation:getCode
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[NativeStatement node]
+MethodInvocation:append
+MethodInvocation:getCode
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[NormalAnnotation node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[NullLiteral node]
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[NumberLiteral node]
+MethodInvocation:getToken
+MethodInvocation:append
+MethodInvocation:fixNumberToken
+MethodInvocation:getKind
+MethodInvocation:getTypeMirror
+MethodInvocation:append
+MethodInvocation:generate
+MethodInvocation:getValue
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ParenthesizedExpression node]
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getExpression
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[PostfixExpression node]
+MethodInvocation:accept
+MethodInvocation:getOperand
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:getOperator
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[PrefixExpression node]
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:getOperator
+MethodInvocation:accept
+MethodInvocation:getOperand
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[PrimitiveType node]
+MethodInvocation:append
+MethodInvocation:getPrimitiveObjCType
+MethodInvocation:getTypeMirror
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[QualifiedName node]
+MethodInvocation:getElement
+MethodInvocation:isVariable
+MethodInvocation:isGlobalVar
+MethodInvocation:append
+MethodInvocation:getVariableQualifiedName
+MethodInvocation:isTypeElement
+MethodInvocation:append
+MethodInvocation:getFullName
+MethodInvocation:getQualifier
+MethodInvocation:accept
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getName
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[QualifiedType node]
+MethodInvocation:asTypeElement
+MethodInvocation:getTypeMirror
+MethodInvocation:append
+MethodInvocation:getFullName
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ReturnStatement node]
+MethodInvocation:append
+MethodInvocation:getExpression
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SimpleName node]
+MethodInvocation:getElement
+MethodInvocation:isVariable
+MethodInvocation:append
+MethodInvocation:getVariableQualifiedName
+MethodInvocation:isTypeElement
+MethodInvocation:append
+MethodInvocation:getFullName
+MethodInvocation:append
+MethodInvocation:getIdentifier
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SimpleType node]
+MethodInvocation:asTypeElement
+MethodInvocation:getTypeMirror
+MethodInvocation:append
+MethodInvocation:getFullName
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SingleMemberAnnotation node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SingleVariableDeclaration node]
+MethodInvocation:append
+MethodInvocation:getObjCType
+MethodInvocation:getVariableElement
+MethodInvocation:isVarargs
+MethodInvocation:append
+MethodInvocation:charAt
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getVariableQualifiedName
+MethodInvocation:getVariableElement
+MethodInvocation:getExtraDimensions
+MethodInvocation:append
+MethodInvocation:getInitializer
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getInitializer
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[StringLiteral node]
+MethodInvocation:append
+MethodInvocation:generateStringLiteral
+MethodInvocation:getLiteralValue
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SuperConstructorInvocation node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SuperFieldAccess node]
+MethodInvocation:append
+MethodInvocation:getVariableQualifiedName
+MethodInvocation:getVariableElement
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SuperMethodInvocation node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SuperMethodReference node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SwitchCase node]
+MethodInvocation:isDefault
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getExpression
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SwitchStatement node]
+MethodInvocation:getExpression
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:indent
+MethodInvocation:getStatements
+MethodInvocation:printIndent
+MethodInvocation:accept
+MethodInvocation:unindent
+MethodInvocation:printIndent
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[SynchronizedStatement node]
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getExpression
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getBody
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ThisExpression node]
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[ThrowStatement node]
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getExpression
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[TryStatement node]
+Method-name:printMultiCatch
+Method-returnType:void
+Method-parameters:[CatchClause node]
+MethodInvocation:getException
+MethodInvocation:getTypes
+MethodInvocation:getType
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getVariableQualifiedName
+MethodInvocation:getVariableElement
+MethodInvocation:append
+MethodInvocation:printStatements
+MethodInvocation:getStatements
+MethodInvocation:getBody
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[TypeLiteral node]
+MethodInvocation:getTypeMirror
+MethodInvocation:getType
+MethodInvocation:isArray
+MethodInvocation:getComponentType
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getFullName
+MethodInvocation:asTypeElement
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:isVoid
+MethodInvocation:append
+MethodInvocation:format
+MethodInvocation:getName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getFullName
+MethodInvocation:asTypeElement
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[TypeMethodReference node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[VariableDeclarationExpression node]
+MethodInvocation:getObjCType
+MethodInvocation:getTypeMirror
+MethodInvocation:endsWith
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:iterator
+MethodInvocation:getFragments
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:accept
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:append
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[VariableDeclarationFragment node]
+MethodInvocation:append
+MethodInvocation:getVariableQualifiedName
+MethodInvocation:getVariableElement
+MethodInvocation:getInitializer
+MethodInvocation:append
+MethodInvocation:accept
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[VariableDeclarationStatement node]
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[WhileStatement node]
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getExpression
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:getBody
+Method-name:visit
+Method-returnType:boolean
+Method-parameters:[Initializer node]
+Method-name:acceptMacroArgument
+Method-returnType:void
+Method-parameters:[Expression expr]
+MethodInvocation:needsParenthesesForMacro
+MethodInvocation:append
+MethodInvocation:accept
+MethodInvocation:append
+MethodInvocation:accept

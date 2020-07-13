@@ -1,0 +1,138 @@
+Class:InsnArg
+Field:LOG
+MethodInvocation:getLogger
+Field:parentInsn
+Method-name:reg
+Method-returnType:RegisterArg
+Method-parameters:[int regNum, ArgType type]
+Method-name:reg
+Method-returnType:RegisterArg
+Method-parameters:[DecodedInstruction insn, int argNum, ArgType type]
+MethodInvocation:reg
+MethodInvocation:getArg
+Method-name:typeImmutableIfKnownReg
+Method-returnType:RegisterArg
+Method-parameters:[DecodedInstruction insn, int argNum, ArgType type]
+MethodInvocation:isTypeKnown
+MethodInvocation:typeImmutableReg
+MethodInvocation:getArg
+MethodInvocation:reg
+MethodInvocation:getArg
+Method-name:typeImmutableReg
+Method-returnType:RegisterArg
+Method-parameters:[DecodedInstruction insn, int argNum, ArgType type]
+MethodInvocation:typeImmutableReg
+MethodInvocation:getArg
+Method-name:typeImmutableReg
+Method-returnType:RegisterArg
+Method-parameters:[int regNum, ArgType type]
+MethodInvocation:reg
+Method-name:reg
+Method-returnType:RegisterArg
+Method-parameters:[int regNum, ArgType type, boolean typeImmutable]
+MethodInvocation:add
+Method-name:lit
+Method-returnType:LiteralArg
+Method-parameters:[long literal, ArgType type]
+Method-name:lit
+Method-returnType:LiteralArg
+Method-parameters:[DecodedInstruction insn, ArgType type]
+MethodInvocation:lit
+MethodInvocation:getLiteral
+Method-name:wrap
+Method-returnType:InsnWrapArg
+Method-parameters:[InsnNode insn]
+MethodInvocation:add
+Method-name:isRegister
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isLiteral
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isInsnWrap
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isNamed
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getParentInsn
+Method-returnType:InsnNode
+Method-parameters:[]
+Method-name:setParentInsn
+Method-returnType:void
+Method-parameters:[@Nullable InsnNode parentInsn]
+FieldAccess:parentInsn
+Method-name:wrapInstruction
+Method-returnType:InsnArg
+Method-parameters:[MethodNode mth, InsnNode insn]
+MethodInvocation:wrapInstruction
+Method-name:wrapInstruction
+Method-returnType:InsnArg
+Method-parameters:[MethodNode mth, InsnNode insn, boolean unbind]
+MethodInvocation:debug
+MethodInvocation:getArgIndex
+MethodInvocation:getType
+MethodInvocation:isRegister
+MethodInvocation:getName
+MethodInvocation:getArg
+MethodInvocation:isRegister
+MethodInvocation:setNameIfUnknown
+MethodInvocation:isInsnWrap
+MethodInvocation:getWrapInsn
+MethodInvocation:getResult
+MethodInvocation:setNameIfUnknown
+MethodInvocation:wrapInsnIntoArg
+MethodInvocation:getArg
+MethodInvocation:setArg
+MethodInvocation:unbindArgUsage
+MethodInvocation:unbindArgUsage
+MethodInvocation:unbindResult
+MethodInvocation:setResult
+Method-name:getArgIndex
+Method-returnType:int
+Method-parameters:[InsnNode parent, InsnArg arg]
+MethodInvocation:getArgsCount
+MethodInvocation:getArg
+Method-name:wrapInsnIntoArg
+Method-returnType:InsnArg
+Method-parameters:[InsnNode insn]
+MethodInvocation:getType
+MethodInvocation:contains
+MethodInvocation:getResult
+MethodInvocation:wrap
+MethodInvocation:setType
+MethodInvocation:getType
+MethodInvocation:getArg
+MethodInvocation:add
+MethodInvocation:wrapArg
+Method-name:wrapArg
+Method-returnType:InsnArg
+Method-parameters:[InsnNode insn]
+MethodInvocation:getResult
+MethodInvocation:wrap
+MethodInvocation:getType
+MethodInvocation:setType
+MethodInvocation:setType
+MethodInvocation:setType
+MethodInvocation:setType
+MethodInvocation:setType
+MethodInvocation:getType
+Method-name:isThis
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:contains
+Method-name:copyCommonParams
+Method-returnType:T
+Method-parameters:[T copy]
+MethodInvocation:copyAttributesFrom
+MethodInvocation:setParentInsn
+Method-name:duplicate
+Method-returnType:InsnArg
+Method-parameters:[]
+Method-name:attachArg
+Method-returnType:void
+Method-parameters:[InsnNode insnNode]
+MethodInvocation:setParentInsn
+MethodInvocation:isRegister
+MethodInvocation:getSVar
+MethodInvocation:use

@@ -1,0 +1,803 @@
+Class:DescriptorProperties
+Field:TABLE_SCHEMA_NAME
+Field:TABLE_SCHEMA_TYPE
+Field:TABLE_SCHEMA_DATA_TYPE
+Field:TABLE_SCHEMA_EXPR
+Field:PARTITION_KEYS
+Field:PARTITION_KEYS_NAME
+Field:WATERMARK
+Field:WATERMARK_ROWTIME
+Field:WATERMARK_STRATEGY_EXPR
+Field:WATERMARK_STRATEGY_DATA_TYPE
+Field:EMPTY_CONSUMER
+Field:normalizeKeys
+Field:properties
+Method-name:DescriptorProperties
+Method-returnType:null
+Method-parameters:[boolean normalizeKeys]
+FieldAccess:properties
+FieldAccess:normalizeKeys
+Method-name:DescriptorProperties
+Method-returnType:null
+Method-parameters:[]
+Method-name:putProperties
+Method-returnType:void
+Method-parameters:[Map<String,String> properties]
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:putProperties
+Method-returnType:void
+Method-parameters:[DescriptorProperties otherProperties]
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:putPropertiesWithPrefix
+Method-returnType:void
+Method-parameters:[String prefix, Map<String,String> prop]
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:format
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:putClass
+Method-returnType:void
+Method-parameters:[String key, Class<?> clazz]
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+MethodInvocation:checkForInstantiationError
+MethodInvocation:getName
+MethodInvocation:put
+MethodInvocation:getName
+Method-name:putString
+Method-returnType:void
+Method-parameters:[String key, String str]
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+MethodInvocation:put
+Method-name:putBoolean
+Method-returnType:void
+Method-parameters:[String key, boolean b]
+MethodInvocation:checkNotNull
+MethodInvocation:put
+MethodInvocation:toString
+Method-name:putLong
+Method-returnType:void
+Method-parameters:[String key, long l]
+MethodInvocation:checkNotNull
+MethodInvocation:put
+MethodInvocation:toString
+Method-name:putInt
+Method-returnType:void
+Method-parameters:[String key, int i]
+MethodInvocation:checkNotNull
+MethodInvocation:put
+MethodInvocation:toString
+Method-name:putCharacter
+Method-returnType:void
+Method-parameters:[String key, char c]
+MethodInvocation:checkNotNull
+MethodInvocation:put
+MethodInvocation:toString
+Method-name:putPartitionKeys
+Method-returnType:void
+Method-parameters:[List<String> keys]
+MethodInvocation:checkNotNull
+MethodInvocation:putIndexedFixedProperties
+MethodInvocation:singletonList
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toList
+Method-name:putMemorySize
+Method-returnType:void
+Method-parameters:[String key, MemorySize size]
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+MethodInvocation:put
+MethodInvocation:toString
+Method-name:putIndexedFixedProperties
+Method-returnType:void
+Method-parameters:[String key, List<String> subKeys, List<List<String>> subKeyValues]
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:get
+Method-name:putIndexedOptionalProperties
+Method-returnType:void
+Method-parameters:[String key, List<String> subKeys, List<List<String>> subKeyValues]
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:allMatch
+MethodInvocation:stream
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:get
+Method-name:putIndexedVariableProperties
+Method-returnType:void
+Method-parameters:[String key, List<Map<String,String>> subKeyValues]
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:getOptionalString
+Method-returnType:Optional<String>
+Method-parameters:[String key]
+MethodInvocation:optionalGet
+Method-name:getString
+Method-returnType:String
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalString
+MethodInvocation:exceptionSupplier
+Method-name:getOptionalCharacter
+Method-returnType:Optional<Character>
+Method-parameters:[String key]
+MethodInvocation:map
+MethodInvocation:optionalGet
+MethodInvocation:length
+MethodInvocation:charAt
+Method-name:getCharacter
+Method-returnType:Character
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalCharacter
+MethodInvocation:exceptionSupplier
+Method-name:getOptionalClass
+Method-returnType:Optional<Class<T>>
+Method-parameters:[String key, Class<T> superClass]
+MethodInvocation:map
+MethodInvocation:optionalGet
+MethodInvocation:forName
+MethodInvocation:getContextClassLoader
+MethodInvocation:currentThread
+MethodInvocation:isAssignableFrom
+MethodInvocation:getName
+Method-name:getClass
+Method-returnType:Class<T>
+Method-parameters:[String key, Class<T> superClass]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalClass
+MethodInvocation:exceptionSupplier
+Method-name:getOptionalBigDecimal
+Method-returnType:Optional<BigDecimal>
+Method-parameters:[String key]
+MethodInvocation:map
+MethodInvocation:optionalGet
+Method-name:getBigDecimal
+Method-returnType:BigDecimal
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalBigDecimal
+MethodInvocation:exceptionSupplier
+Method-name:getOptionalBoolean
+Method-returnType:Optional<Boolean>
+Method-parameters:[String key]
+MethodInvocation:map
+MethodInvocation:optionalGet
+MethodInvocation:valueOf
+Method-name:getBoolean
+Method-returnType:boolean
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalBoolean
+MethodInvocation:exceptionSupplier
+Method-name:getOptionalByte
+Method-returnType:Optional<Byte>
+Method-parameters:[String key]
+MethodInvocation:map
+MethodInvocation:optionalGet
+MethodInvocation:valueOf
+Method-name:getByte
+Method-returnType:byte
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalByte
+MethodInvocation:exceptionSupplier
+Method-name:getOptionalDouble
+Method-returnType:Optional<Double>
+Method-parameters:[String key]
+MethodInvocation:map
+MethodInvocation:optionalGet
+MethodInvocation:valueOf
+Method-name:getDouble
+Method-returnType:double
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalDouble
+MethodInvocation:exceptionSupplier
+Method-name:getOptionalFloat
+Method-returnType:Optional<Float>
+Method-parameters:[String key]
+MethodInvocation:map
+MethodInvocation:optionalGet
+MethodInvocation:valueOf
+Method-name:getFloat
+Method-returnType:float
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalFloat
+MethodInvocation:exceptionSupplier
+Method-name:getOptionalInt
+Method-returnType:Optional<Integer>
+Method-parameters:[String key]
+MethodInvocation:map
+MethodInvocation:optionalGet
+MethodInvocation:valueOf
+Method-name:getInt
+Method-returnType:int
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalInt
+MethodInvocation:exceptionSupplier
+Method-name:getOptionalLong
+Method-returnType:Optional<Long>
+Method-parameters:[String key]
+MethodInvocation:map
+MethodInvocation:optionalGet
+MethodInvocation:valueOf
+Method-name:getLong
+Method-returnType:long
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalLong
+MethodInvocation:exceptionSupplier
+Method-name:getOptionalShort
+Method-returnType:Optional<Short>
+Method-parameters:[String key]
+MethodInvocation:map
+MethodInvocation:optionalGet
+MethodInvocation:valueOf
+Method-name:getShort
+Method-returnType:short
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalShort
+MethodInvocation:exceptionSupplier
+Method-name:getOptionalType
+Method-returnType:Optional<TypeInformation<?>>
+Method-parameters:[String key]
+MethodInvocation:map
+MethodInvocation:optionalGet
+Method-name:getType
+Method-returnType:TypeInformation<?>
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalType
+MethodInvocation:exceptionSupplier
+Method-name:getOptionalDataType
+Method-returnType:Optional<DataType>
+Method-parameters:[String key]
+MethodInvocation:map
+MethodInvocation:optionalGet
+MethodInvocation:fromLogicalToDataType
+MethodInvocation:parse
+Method-name:getDataType
+Method-returnType:DataType
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalDataType
+MethodInvocation:exceptionSupplier
+Method-name:getOptionalTableSchema
+Method-returnType:Optional<TableSchema>
+Method-parameters:[String key]
+MethodInvocation:sum
+MethodInvocation:mapToInt
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:keySet
+MethodInvocation:startsWith
+MethodInvocation:endsWith
+MethodInvocation:empty
+MethodInvocation:builder
+MethodInvocation:orElseThrow
+MethodInvocation:optionalGet
+MethodInvocation:exceptionSupplier
+MethodInvocation:containsKey
+MethodInvocation:getDataType
+MethodInvocation:containsKey
+MethodInvocation:fromLegacyInfoToDataType
+MethodInvocation:getType
+MethodInvocation:get
+MethodInvocation:exceptionSupplier
+MethodInvocation:optionalGet
+MethodInvocation:isPresent
+MethodInvocation:field
+MethodInvocation:get
+MethodInvocation:field
+MethodInvocation:sum
+MethodInvocation:mapToInt
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:keySet
+MethodInvocation:startsWith
+MethodInvocation:endsWith
+MethodInvocation:orElseThrow
+MethodInvocation:optionalGet
+MethodInvocation:exceptionSupplier
+MethodInvocation:orElseThrow
+MethodInvocation:optionalGet
+MethodInvocation:exceptionSupplier
+MethodInvocation:orElseThrow
+MethodInvocation:optionalGet
+MethodInvocation:exceptionSupplier
+MethodInvocation:fromLogicalToDataType
+MethodInvocation:parse
+MethodInvocation:watermark
+MethodInvocation:of
+MethodInvocation:build
+Method-name:getTableSchema
+Method-returnType:TableSchema
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalTableSchema
+MethodInvocation:exceptionSupplier
+Method-name:getPartitionKeys
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getFixedIndexedProperties
+MethodInvocation:singletonList
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:values
+MethodInvocation:toList
+Method-name:getOptionalMemorySize
+Method-returnType:Optional<MemorySize>
+Method-parameters:[String key]
+MethodInvocation:map
+MethodInvocation:optionalGet
+MethodInvocation:parse
+Method-name:getMemorySize
+Method-returnType:MemorySize
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalMemorySize
+MethodInvocation:exceptionSupplier
+Method-name:getOptionalDuration
+Method-returnType:Optional<Duration>
+Method-parameters:[String key]
+MethodInvocation:map
+MethodInvocation:optionalGet
+MethodInvocation:parseDuration
+Method-name:getDuration
+Method-returnType:Duration
+Method-parameters:[String key]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalDuration
+MethodInvocation:exceptionSupplier
+Method-name:getFixedIndexedProperties
+Method-returnType:List<Map<String,String>>
+Method-parameters:[String key, List<String> subKeys]
+MethodInvocation:extractMaxIndex
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:exceptionSupplier
+MethodInvocation:put
+MethodInvocation:add
+Method-name:getVariableIndexedProperties
+Method-returnType:List<Map<String,String>>
+Method-parameters:[String key, List<String> requiredSubKeys]
+MethodInvocation:extractMaxIndex
+MethodInvocation:quote
+MethodInvocation:compile
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:flatMap
+MethodInvocation:stream
+MethodInvocation:keySet
+MethodInvocation:matcher
+MethodInvocation:find
+MethodInvocation:of
+MethodInvocation:group
+MethodInvocation:empty
+MethodInvocation:length
+MethodInvocation:toSet
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:exceptionSupplier
+MethodInvocation:put
+MethodInvocation:ifPresent
+MethodInvocation:optionalGet
+MethodInvocation:put
+MethodInvocation:add
+Method-name:getIndexedProperty
+Method-returnType:Map<String,String>
+Method-parameters:[String key, String subKey]
+MethodInvocation:quote
+MethodInvocation:quote
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:entrySet
+MethodInvocation:matches
+MethodInvocation:getKey
+MethodInvocation:toMap
+Method-name:getOptionalArray
+Method-returnType:Optional<List<E>>
+Method-parameters:[String key, Function<String,E> keyMapper]
+MethodInvocation:extractMaxIndex
+MethodInvocation:containsKey
+MethodInvocation:of
+MethodInvocation:singletonList
+MethodInvocation:apply
+MethodInvocation:empty
+MethodInvocation:apply
+MethodInvocation:add
+MethodInvocation:of
+Method-name:getArray
+Method-returnType:List<E>
+Method-parameters:[String key, Function<String,E> keyMapper]
+MethodInvocation:orElseThrow
+MethodInvocation:getOptionalArray
+MethodInvocation:exceptionSupplier
+Method-name:isValue
+Method-returnType:boolean
+Method-parameters:[String key, String value]
+MethodInvocation:equals
+MethodInvocation:orElseThrow
+MethodInvocation:optionalGet
+MethodInvocation:exceptionSupplier
+Method-name:getPropertiesWithPrefix
+Method-returnType:Map<String,String>
+Method-parameters:[String prefix]
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:entrySet
+MethodInvocation:startsWith
+MethodInvocation:getKey
+MethodInvocation:toMap
+MethodInvocation:substring
+MethodInvocation:getKey
+MethodInvocation:length
+Method-name:validateString
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional]
+MethodInvocation:validateString
+Method-name:validateString
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, int minLen]
+MethodInvocation:validateString
+Method-name:validateString
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, int minLen, int maxLen]
+MethodInvocation:validateOptional
+MethodInvocation:length
+Method-name:validateInt
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional]
+MethodInvocation:validateInt
+Method-name:validateInt
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, int min]
+MethodInvocation:validateInt
+Method-name:validateInt
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, int min, int max]
+MethodInvocation:validateComparable
+Method-name:validateLong
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional]
+MethodInvocation:validateLong
+Method-name:validateLong
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, long min]
+MethodInvocation:validateLong
+Method-name:validateLong
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, long min, long max]
+MethodInvocation:validateComparable
+Method-name:validateValue
+Method-returnType:void
+Method-parameters:[String key, String value, boolean isOptional]
+MethodInvocation:validateOptional
+MethodInvocation:equals
+Method-name:validateBoolean
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional]
+MethodInvocation:validateOptional
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+Method-name:validateDouble
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional]
+MethodInvocation:validateDouble
+Method-name:validateDouble
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, double min]
+MethodInvocation:validateDouble
+Method-name:validateDouble
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, double min, double max]
+MethodInvocation:validateComparable
+Method-name:validateBigDecimal
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional]
+MethodInvocation:validateOptional
+Method-name:validateBigDecimal
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, BigDecimal min, BigDecimal max]
+MethodInvocation:validateComparable
+Method-name:validateByte
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional]
+MethodInvocation:validateByte
+Method-name:validateByte
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, byte min]
+MethodInvocation:validateByte
+Method-name:validateByte
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, byte min, byte max]
+MethodInvocation:validateComparable
+Method-name:validateFloat
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional]
+MethodInvocation:validateFloat
+Method-name:validateFloat
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, float min]
+MethodInvocation:validateFloat
+Method-name:validateFloat
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, float min, float max]
+MethodInvocation:validateComparable
+Method-name:validateShort
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional]
+MethodInvocation:validateShort
+Method-name:validateShort
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, short min]
+MethodInvocation:validateShort
+Method-name:validateShort
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, short min, short max]
+MethodInvocation:validateComparable
+Method-name:validateFixedIndexedProperties
+Method-returnType:void
+Method-parameters:[String key, boolean allowEmpty, Map<String,Consumer<String>> subKeyValidation]
+MethodInvocation:extractMaxIndex
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:accept
+MethodInvocation:getValue
+Method-name:validateTableSchema
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional]
+MethodInvocation:validateString
+MethodInvocation:replace
+MethodInvocation:validateDataType
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:validateFixedIndexedProperties
+Method-name:validateMemorySize
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, int precision]
+MethodInvocation:validateMemorySize
+Method-name:validateMemorySize
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, int precision, long min]
+MethodInvocation:validateMemorySize
+Method-name:validateMemorySize
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, int precision, long min, long max]
+MethodInvocation:checkArgument
+MethodInvocation:validateComparable
+MethodInvocation:getBytes
+MethodInvocation:parse
+Method-name:validateDuration
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, int precision]
+MethodInvocation:validateDuration
+Method-name:validateDuration
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, int precision, long min]
+MethodInvocation:validateDuration
+Method-name:validateDuration
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, int precision, long min, long max]
+MethodInvocation:checkArgument
+MethodInvocation:validateComparable
+MethodInvocation:toMillis
+MethodInvocation:parseDuration
+Method-name:validateEnum
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, Map<String,Consumer<String>> enumValidation]
+MethodInvocation:validateOptional
+MethodInvocation:containsKey
+MethodInvocation:keySet
+MethodInvocation:accept
+MethodInvocation:get
+Method-name:validateEnumValues
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, List<String> values]
+MethodInvocation:validateEnum
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:toMap
+MethodInvocation:noValidation
+Method-name:validateType
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, boolean requireRow]
+MethodInvocation:validateOptional
+MethodInvocation:readTypeInfo
+Method-name:validateDataType
+Method-returnType:void
+Method-parameters:[String key, String fallbackKey, boolean isOptional]
+MethodInvocation:containsKey
+MethodInvocation:validateOptional
+MethodInvocation:parse
+MethodInvocation:getTypeRoot
+MethodInvocation:containsKey
+MethodInvocation:validateOptional
+Method-name:validateArray
+Method-returnType:void
+Method-parameters:[String key, Consumer<String> elementValidation, int minLength]
+MethodInvocation:validateArray
+Method-name:validateArray
+Method-returnType:void
+Method-parameters:[String key, Consumer<String> elementValidation, int minLength, int maxLength]
+MethodInvocation:extractMaxIndex
+MethodInvocation:containsKey
+MethodInvocation:accept
+MethodInvocation:containsKey
+MethodInvocation:containsKey
+MethodInvocation:accept
+Method-name:validatePrefixExclusion
+Method-returnType:void
+Method-parameters:[String prefix]
+MethodInvocation:ifPresent
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:keySet
+MethodInvocation:startsWith
+Method-name:validateExclusion
+Method-returnType:void
+Method-parameters:[String key]
+MethodInvocation:containsKey
+Method-name:containsKey
+Method-returnType:boolean
+Method-parameters:[String key]
+MethodInvocation:containsKey
+Method-name:hasPrefix
+Method-returnType:boolean
+Method-parameters:[String prefix]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:keySet
+MethodInvocation:startsWith
+Method-name:asMap
+Method-returnType:Map<String,String>
+Method-parameters:[]
+MethodInvocation:unmodifiableMap
+Method-name:asPrefixedMap
+Method-returnType:Map<String,String>
+Method-parameters:[String prefix]
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:entrySet
+MethodInvocation:toMap
+MethodInvocation:getKey
+Method-name:withoutKeys
+Method-returnType:DescriptorProperties
+Method-parameters:[List<String> keys]
+MethodInvocation:forEach
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:entrySet
+MethodInvocation:contains
+MethodInvocation:getKey
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:put
+Method-returnType:void
+Method-parameters:[String key, String value]
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:toLowerCase
+MethodInvocation:put
+Method-name:optionalGet
+Method-returnType:Optional<String>
+Method-parameters:[String key]
+MethodInvocation:ofNullable
+MethodInvocation:get
+Method-name:validateOptional
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, Consumer<String> valueValidation]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:accept
+Method-name:exceptionSupplier
+Method-returnType:Supplier<TableException>
+Method-parameters:[String key]
+Method-name:extractMaxIndex
+Method-returnType:int
+Method-parameters:[String key, String suffixPattern]
+MethodInvocation:quote
+MethodInvocation:compile
+MethodInvocation:flatMapToInt
+MethodInvocation:stream
+MethodInvocation:keySet
+MethodInvocation:matcher
+MethodInvocation:find
+MethodInvocation:of
+MethodInvocation:valueOf
+MethodInvocation:group
+MethodInvocation:empty
+MethodInvocation:orElse
+MethodInvocation:max
+Method-name:validateComparable
+Method-returnType:void
+Method-parameters:[String key, boolean isOptional, T min, T max, String typeName, Function<String,T> parseFunction]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:apply
+MethodInvocation:compareTo
+MethodInvocation:compareTo
+Method-name:noValidation
+Method-returnType:Consumer<String>
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[String str]
+MethodInvocation:escapeJava
+Method-name:toString
+Method-returnType:String
+Method-parameters:[String key, String value]
+MethodInvocation:toString
+MethodInvocation:toString
+Method-name:toString
+Method-returnType:String
+Method-parameters:[Map<String,String> propertyMap]
+MethodInvocation:collect
+MethodInvocation:sorted
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:entrySet
+MethodInvocation:toString
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:joining

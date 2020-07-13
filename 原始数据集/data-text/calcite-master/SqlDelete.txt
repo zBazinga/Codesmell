@@ -1,0 +1,60 @@
+Class:SqlDelete
+Field:OPERATOR
+Field:targetTable
+Field:condition
+Field:sourceSelect
+Field:alias
+Method-name:SqlDelete
+Method-returnType:null
+Method-parameters:[SqlParserPos pos, SqlNode targetTable, SqlNode condition, SqlSelect sourceSelect, SqlIdentifier alias]
+FieldAccess:targetTable
+FieldAccess:condition
+FieldAccess:sourceSelect
+FieldAccess:alias
+Method-name:getKind
+Method-returnType:SqlKind
+Method-parameters:[]
+Method-name:getOperator
+Method-returnType:SqlOperator
+Method-parameters:[]
+Method-name:getOperandList
+Method-returnType:List<SqlNode>
+Method-parameters:[]
+MethodInvocation:of
+Method-name:setOperand
+Method-returnType:void
+Method-parameters:[int i, SqlNode operand]
+Method-name:getTargetTable
+Method-returnType:SqlNode
+Method-parameters:[]
+Method-name:getAlias
+Method-returnType:SqlIdentifier
+Method-parameters:[]
+Method-name:getCondition
+Method-returnType:SqlNode
+Method-parameters:[]
+Method-name:getSourceSelect
+Method-returnType:SqlSelect
+Method-parameters:[]
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, int leftPrec, int rightPrec]
+MethodInvocation:startList
+MethodInvocation:getLeftPrec
+MethodInvocation:getOperator
+MethodInvocation:getRightPrec
+MethodInvocation:getOperator
+MethodInvocation:unparse
+MethodInvocation:keyword
+MethodInvocation:unparse
+MethodInvocation:sep
+MethodInvocation:unparse
+MethodInvocation:endList
+Method-name:validate
+Method-returnType:void
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope]
+MethodInvocation:validateDelete
+Method-name:setSourceSelect
+Method-returnType:void
+Method-parameters:[SqlSelect sourceSelect]
+FieldAccess:sourceSelect

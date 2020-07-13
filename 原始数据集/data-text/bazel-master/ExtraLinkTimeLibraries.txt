@@ -1,0 +1,54 @@
+Class:ExtraLinkTimeLibraries
+Field:extraLibraries
+Method-name:ExtraLinkTimeLibraries
+Method-returnType:null
+Method-parameters:[Collection<ExtraLinkTimeLibrary> extraLibraries]
+FieldAccess:extraLibraries
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:getExtraLibraries
+Method-returnType:Collection<ExtraLinkTimeLibrary>
+Method-parameters:[]
+Method-name:buildLibraries
+Method-returnType:BuildLibraryOutput
+Method-parameters:[RuleContext ruleContext, boolean staticMode, boolean forDynamicLibrary]
+MethodInvocation:linkOrder
+MethodInvocation:linkOrder
+MethodInvocation:getExtraLibraries
+MethodInvocation:buildLibraries
+MethodInvocation:addTransitive
+MethodInvocation:getLinkerInputs
+MethodInvocation:addTransitive
+MethodInvocation:getRuntimeLibraries
+MethodInvocation:build
+MethodInvocation:build
+Class:Builder
+Field:libraries
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:build
+Method-returnType:ExtraLinkTimeLibraries
+Method-parameters:[]
+MethodInvocation:newArrayList
+MethodInvocation:values
+MethodInvocation:add
+MethodInvocation:build
+Method-name:addTransitive
+Method-returnType:Builder
+Method-parameters:[ExtraLinkTimeLibraries dep]
+MethodInvocation:getExtraLibraries
+MethodInvocation:getClass
+MethodInvocation:computeIfAbsent
+MethodInvocation:getBuilder
+MethodInvocation:addTransitive
+MethodInvocation:get
+Method-name:add
+Method-returnType:Builder
+Method-parameters:[ExtraLinkTimeLibrary b]
+MethodInvocation:getClass
+MethodInvocation:computeIfAbsent
+MethodInvocation:getBuilder
+MethodInvocation:addTransitive
+MethodInvocation:get

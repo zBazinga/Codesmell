@@ -1,0 +1,370 @@
+Class:UpperBoundAnnotatedTypeFactory
+Field:UNKNOWN
+MethodInvocation:fromClass
+Field:BOTTOM
+MethodInvocation:fromClass
+Field:POLY
+MethodInvocation:fromClass
+Field:imf
+Method-name:UpperBoundAnnotatedTypeFactory
+Method-returnType:null
+Method-parameters:[BaseTypeChecker checker]
+MethodInvocation:addAliasedAnnotation
+MethodInvocation:addAliasedAnnotation
+MethodInvocation:addAliasedAnnotation
+MethodInvocation:addAliasedAnnotation
+MethodInvocation:addAliasedAnnotation
+MethodInvocation:addAliasedAnnotation
+MethodInvocation:addAliasedAnnotation
+MethodInvocation:postInit
+Method-name:getMethodIdentifier
+Method-returnType:IndexMethodIdentifier
+Method-parameters:[]
+Method-name:createSupportedTypeQualifiers
+Method-returnType:Set<Class<? extends Annotation>>
+Method-parameters:[]
+MethodInvocation:asList
+Method-name:getValueAnnotatedTypeFactory
+Method-returnType:ValueAnnotatedTypeFactory
+Method-parameters:[]
+MethodInvocation:getTypeFactoryOfSubchecker
+Method-name:getSearchIndexAnnotatedTypeFactory
+Method-returnType:SearchIndexAnnotatedTypeFactory
+Method-parameters:[]
+MethodInvocation:getTypeFactoryOfSubchecker
+Method-name:getSubstringIndexAnnotatedTypeFactory
+Method-returnType:SubstringIndexAnnotatedTypeFactory
+Method-parameters:[]
+MethodInvocation:getTypeFactoryOfSubchecker
+Method-name:getSameLenAnnotatedTypeFactory
+Method-returnType:SameLenAnnotatedTypeFactory
+Method-parameters:[]
+MethodInvocation:getTypeFactoryOfSubchecker
+Method-name:getLowerBoundAnnotatedTypeFactory
+Method-returnType:LowerBoundAnnotatedTypeFactory
+Method-parameters:[]
+MethodInvocation:getTypeFactoryOfSubchecker
+Method-name:getLessThanAnnotatedTypeFactory
+Method-returnType:LessThanAnnotatedTypeFactory
+Method-parameters:[]
+MethodInvocation:getTypeFactoryOfSubchecker
+Method-name:addComputedTypeAnnotations
+Method-returnType:void
+Method-parameters:[Element element, AnnotatedTypeMirror type]
+MethodInvocation:getAnnotatedType
+MethodInvocation:getValueAnnotatedTypeFactory
+MethodInvocation:addUpperBoundTypeFromValueType
+Method-name:addComputedTypeAnnotations
+Method-returnType:void
+Method-parameters:[Tree tree, AnnotatedTypeMirror type, boolean iUseFlow]
+MethodInvocation:isExpressionTree
+MethodInvocation:getAnnotatedType
+MethodInvocation:getValueAnnotatedTypeFactory
+MethodInvocation:addUpperBoundTypeFromValueType
+Method-name:createTypeAnnotator
+Method-returnType:TypeAnnotator
+Method-parameters:[]
+Class:UpperBoundTypeAnnotator
+Method-name:UpperBoundTypeAnnotator
+Method-returnType:null
+Method-parameters:[AnnotatedTypeFactory atypeFactory]
+Method-name:scan
+Method-returnType:Void
+Method-parameters:[AnnotatedTypeMirror type, Void aVoid]
+MethodInvocation:getAnnotation
+MethodInvocation:getElementValueArray
+MethodInvocation:getElementValueArray
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:isEmpty
+MethodInvocation:clearAnnotations
+MethodInvocation:addAnnotation
+Method-name:createDependentTypesHelper
+Method-returnType:DependentTypesHelper
+Method-parameters:[]
+Method-name:sameLenAnnotationFromTree
+Method-returnType:AnnotationMirror
+Method-parameters:[Tree tree]
+MethodInvocation:getAnnotatedType
+MethodInvocation:getSameLenAnnotatedTypeFactory
+MethodInvocation:getAnnotation
+Method-name:isMathMin
+Method-returnType:boolean
+Method-parameters:[Tree methodTree]
+MethodInvocation:isMathMin
+Method-name:isRandomNextInt
+Method-returnType:boolean
+Method-parameters:[Tree methodTree]
+MethodInvocation:isRandomNextInt
+Method-name:createLTLengthOfAnnotation
+Method-returnType:AnnotationMirror
+Method-parameters:[String... names]
+MethodInvocation:toString
+MethodInvocation:getProcessingEnv
+MethodInvocation:setValue
+MethodInvocation:build
+Method-name:createLTEqLengthOfAnnotation
+Method-returnType:AnnotationMirror
+Method-parameters:[String... names]
+MethodInvocation:toString
+MethodInvocation:getProcessingEnv
+MethodInvocation:setValue
+MethodInvocation:build
+Method-name:hasLowerBoundTypeByClass
+Method-returnType:boolean
+Method-parameters:[Node node, Class<? extends Annotation> classOfType]
+MethodInvocation:areSameByClass
+MethodInvocation:getAnnotationInHierarchy
+MethodInvocation:getAnnotatedType
+MethodInvocation:getLowerBoundAnnotatedTypeFactory
+MethodInvocation:getTree
+FieldAccess:UNKNOWN
+MethodInvocation:getLowerBoundAnnotatedTypeFactory
+Method-name:createQualifierHierarchy
+Method-returnType:QualifierHierarchy
+Method-parameters:[MultiGraphFactory factory]
+Class:UpperBoundQualifierHierarchy
+Method-name:UpperBoundQualifierHierarchy
+Method-returnType:null
+Method-parameters:[MultiGraphQualifierHierarchy.MultiGraphFactory factory]
+Method-name:greatestLowerBound
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror a1, AnnotationMirror a2]
+MethodInvocation:createUBQualifier
+MethodInvocation:createUBQualifier
+MethodInvocation:glb
+MethodInvocation:convertUBQualifierToAnnotation
+Method-name:leastUpperBound
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror a1, AnnotationMirror a2]
+MethodInvocation:createUBQualifier
+MethodInvocation:createUBQualifier
+MethodInvocation:lub
+MethodInvocation:convertUBQualifierToAnnotation
+Method-name:widenedUpperBound
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror newQualifier, AnnotationMirror previousQualifier]
+MethodInvocation:createUBQualifier
+MethodInvocation:createUBQualifier
+MethodInvocation:widenUpperBound
+MethodInvocation:convertUBQualifierToAnnotation
+Method-name:numberOfIterationsBeforeWidening
+Method-returnType:int
+Method-parameters:[]
+Method-name:isSubtype
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror subAnno, AnnotationMirror superAnno]
+MethodInvocation:createUBQualifier
+MethodInvocation:createUBQualifier
+MethodInvocation:isSubtype
+Method-name:createTreeAnnotator
+Method-returnType:TreeAnnotator
+Method-parameters:[]
+Class:UpperBoundTreeAnnotator
+Method-name:UpperBoundTreeAnnotator
+Method-returnType:null
+Method-parameters:[UpperBoundAnnotatedTypeFactory factory]
+Method-name:visitMethodInvocation
+Method-returnType:Void
+Method-parameters:[MethodInvocationTree tree, AnnotatedTypeMirror type]
+MethodInvocation:isMathMin
+MethodInvocation:getAnnotatedType
+MethodInvocation:get
+MethodInvocation:getArguments
+MethodInvocation:getAnnotatedType
+MethodInvocation:get
+MethodInvocation:getArguments
+MethodInvocation:replaceAnnotation
+MethodInvocation:greatestLowerBound
+MethodInvocation:getAnnotationInHierarchy
+MethodInvocation:getAnnotationInHierarchy
+MethodInvocation:isRandomNextInt
+MethodInvocation:getAnnotatedType
+MethodInvocation:get
+MethodInvocation:getArguments
+MethodInvocation:getAnnotationInHierarchy
+MethodInvocation:createUBQualifier
+MethodInvocation:plusOffset
+MethodInvocation:replaceAnnotation
+MethodInvocation:convertUBQualifierToAnnotation
+Method-name:visitUnary
+Method-returnType:Void
+Method-parameters:[UnaryTree node, AnnotatedTypeMirror type]
+MethodInvocation:getKind
+MethodInvocation:addAnnotationForBitwiseComplement
+MethodInvocation:getAnnotatedType
+MethodInvocation:getSearchIndexAnnotatedTypeFactory
+MethodInvocation:getExpression
+MethodInvocation:addAnnotation
+Method-name:addAnnotationForBitwiseComplement
+Method-returnType:void
+Method-parameters:[AnnotatedTypeMirror searchIndexType, AnnotatedTypeMirror typeDst]
+MethodInvocation:containsSameByClass
+MethodInvocation:getAnnotations
+MethodInvocation:getAnnotation
+MethodInvocation:getValueOfAnnotationWithStringArgument
+MethodInvocation:nCopies
+MethodInvocation:size
+MethodInvocation:createUBQualifier
+MethodInvocation:addAnnotation
+MethodInvocation:convertUBQualifierToAnnotation
+MethodInvocation:addAnnotation
+Method-name:visitCompoundAssignment
+Method-returnType:Void
+Method-parameters:[CompoundAssignmentTree node, AnnotatedTypeMirror type]
+MethodInvocation:addAnnotation
+Method-name:visitBinary
+Method-returnType:Void
+Method-parameters:[BinaryTree tree, AnnotatedTypeMirror type]
+MethodInvocation:isStringConcatenation
+MethodInvocation:addAnnotation
+MethodInvocation:getLeftOperand
+MethodInvocation:getRightOperand
+MethodInvocation:getKind
+MethodInvocation:addAnnotation
+MethodInvocation:addAnnotationForMultiply
+MethodInvocation:addAnnotationForDivide
+MethodInvocation:addAnnotationForRemainder
+MethodInvocation:addAnnotationForAnd
+MethodInvocation:addAnnotationForRightShift
+Method-name:addAnnotationForRightShift
+Method-returnType:void
+Method-parameters:[ExpressionTree left, ExpressionTree right, AnnotatedTypeMirror type]
+MethodInvocation:getLowerBoundAnnotatedTypeFactory
+MethodInvocation:isNonNegative
+MethodInvocation:getAnnotationInHierarchy
+MethodInvocation:getAnnotatedType
+MethodInvocation:getExactValue
+MethodInvocation:getValueAnnotatedTypeFactory
+MethodInvocation:plusTreeDivideByVal
+MethodInvocation:isUnknown
+MethodInvocation:createUBQualifier
+MethodInvocation:glb
+MethodInvocation:convertUBQualifierToAnnotation
+MethodInvocation:addAnnotation
+Method-name:addAnnotationForAnd
+Method-returnType:void
+Method-parameters:[ExpressionTree left, ExpressionTree right, AnnotatedTypeMirror type]
+MethodInvocation:getLowerBoundAnnotatedTypeFactory
+MethodInvocation:getAnnotatedType
+MethodInvocation:isNonNegative
+MethodInvocation:getAnnotationInHierarchy
+MethodInvocation:getAnnotatedType
+MethodInvocation:isNonNegative
+MethodInvocation:getAnnotationInHierarchy
+MethodInvocation:addAnnotation
+MethodInvocation:greatestLowerBound
+Method-name:getLengthSequenceTree
+Method-returnType:ExpressionTree
+Method-parameters:[ExpressionTree lengthTree]
+MethodInvocation:getLengthSequenceTree
+Method-name:addAnnotationForRemainder
+Method-returnType:void
+Method-parameters:[ExpressionTree numeratorTree, ExpressionTree divisorTree, AnnotatedTypeMirror resultType]
+MethodInvocation:getLowerBoundAnnotatedTypeFactory
+MethodInvocation:isNonNegative
+MethodInvocation:createUBQualifier
+MethodInvocation:getAnnotatedType
+MethodInvocation:isNonNegative
+MethodInvocation:createUBQualifier
+MethodInvocation:getAnnotatedType
+MethodInvocation:glb
+MethodInvocation:plusOffset
+MethodInvocation:addAnnotation
+MethodInvocation:convertUBQualifierToAnnotation
+Method-name:addAnnotationForDivide
+Method-returnType:void
+Method-parameters:[ExpressionTree numeratorTree, ExpressionTree divisorTree, AnnotatedTypeMirror resultType]
+MethodInvocation:getExactValue
+MethodInvocation:getValueAnnotatedTypeFactory
+MethodInvocation:addAnnotation
+MethodInvocation:createUBQualifier
+MethodInvocation:getAnnotatedType
+MethodInvocation:isLessThanLengthQualifier
+MethodInvocation:divide
+MethodInvocation:intValue
+MethodInvocation:glb
+MethodInvocation:plusTreeDivideByVal
+MethodInvocation:intValue
+MethodInvocation:getLengthSequenceTree
+MethodInvocation:toString
+MethodInvocation:getMinLenFromString
+MethodInvocation:getValueAnnotatedTypeFactory
+MethodInvocation:getPath
+MethodInvocation:glb
+MethodInvocation:createUBQualifier
+MethodInvocation:addAnnotation
+MethodInvocation:convertUBQualifierToAnnotation
+Method-name:plusTreeDivideByVal
+Method-returnType:UBQualifier
+Method-parameters:[int divisor, ExpressionTree numeratorTree]
+MethodInvocation:withoutParens
+MethodInvocation:getKind
+MethodInvocation:createUBQualifier
+MethodInvocation:getAnnotatedType
+MethodInvocation:getLeftOperand
+MethodInvocation:createUBQualifier
+MethodInvocation:getAnnotatedType
+MethodInvocation:getRightOperand
+MethodInvocation:isLessThanLengthQualifier
+MethodInvocation:isLessThanLengthQualifier
+MethodInvocation:getSequences
+MethodInvocation:isLessThanLengthOf
+MethodInvocation:isLessThanLengthOf
+MethodInvocation:add
+MethodInvocation:isEmpty
+MethodInvocation:createUBQualifier
+MethodInvocation:emptyList
+Method-name:checkForMathRandomSpecialCase
+Method-returnType:boolean
+Method-parameters:[ExpressionTree randTree, ExpressionTree seqLenTree, AnnotatedTypeMirror type]
+MethodInvocation:getLengthSequenceTree
+MethodInvocation:getKind
+MethodInvocation:isMathRandom
+MethodInvocation:addAnnotation
+MethodInvocation:createLTLengthOfAnnotation
+MethodInvocation:toString
+MethodInvocation:isRandomNextDouble
+MethodInvocation:addAnnotation
+MethodInvocation:createLTLengthOfAnnotation
+MethodInvocation:toString
+Method-name:addAnnotationForMultiply
+Method-returnType:void
+Method-parameters:[ExpressionTree leftExpr, ExpressionTree rightExpr, AnnotatedTypeMirror type]
+MethodInvocation:checkForMathRandomSpecialCase
+MethodInvocation:checkForMathRandomSpecialCase
+MethodInvocation:addAnnotation
+Method-name:convertUBQualifierToAnnotation
+Method-returnType:AnnotationMirror
+Method-parameters:[UBQualifier qualifier]
+MethodInvocation:isUnknown
+MethodInvocation:isBottom
+MethodInvocation:isPoly
+MethodInvocation:convertToAnnotation
+Method-name:fromLessThan
+Method-returnType:UBQualifier
+Method-parameters:[ExpressionTree tree, TreePath treePath]
+MethodInvocation:getLessThanExpressions
+MethodInvocation:getLessThanAnnotatedTypeFactory
+MethodInvocation:fromLessThanOrEqual
+MethodInvocation:plusOffset
+Method-name:fromLessThanOrEqual
+Method-returnType:UBQualifier
+Method-parameters:[ExpressionTree tree, TreePath treePath]
+MethodInvocation:getLessThanExpressions
+MethodInvocation:getLessThanAnnotatedTypeFactory
+MethodInvocation:fromLessThanOrEqual
+Method-name:fromLessThanOrEqual
+Method-returnType:UBQualifier
+Method-parameters:[Tree tree, TreePath treePath, List<String> lessThanExpressions]
+MethodInvocation:getReceiverAndOffsetFromJavaExpressionString
+MethodInvocation:canInsertReceiver
+MethodInvocation:getStoreBefore
+MethodInvocation:getValue
+MethodInvocation:size
+MethodInvocation:getAnnotations
+MethodInvocation:createUBQualifier
+MethodInvocation:findAnnotationInHierarchy
+MethodInvocation:getAnnotations
+MethodInvocation:negateConstant
+MethodInvocation:glb

@@ -1,0 +1,134 @@
+Class:AnimChannel
+Field:DEFAULT_BLEND_TIME
+Field:control
+Field:affectedBones
+Field:animation
+Field:blendFrom
+Field:time
+Field:speed
+Field:timeBlendFrom
+Field:blendTime
+Field:speedBlendFrom
+Field:notified
+Field:loopMode
+Field:loopModeBlendFrom
+Field:blendAmount
+Field:blendRate
+Method-name:AnimChannel
+Method-returnType:null
+Method-parameters:[]
+Method-name:AnimChannel
+Method-returnType:null
+Method-parameters:[AnimControl control]
+FieldAccess:control
+Method-name:getControl
+Method-returnType:AnimControl
+Method-parameters:[]
+Method-name:getAnimationName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:getLoopMode
+Method-returnType:LoopMode
+Method-parameters:[]
+Method-name:setLoopMode
+Method-returnType:void
+Method-parameters:[LoopMode loopMode]
+FieldAccess:loopMode
+Method-name:getSpeed
+Method-returnType:float
+Method-parameters:[]
+Method-name:setSpeed
+Method-returnType:void
+Method-parameters:[float speed]
+FieldAccess:speed
+FieldAccess:speedBlendFrom
+MethodInvocation:min
+MethodInvocation:getLength
+Method-name:getTime
+Method-returnType:float
+Method-parameters:[]
+Method-name:setTime
+Method-returnType:void
+Method-parameters:[float time]
+FieldAccess:time
+MethodInvocation:clamp
+MethodInvocation:getAnimMaxTime
+Method-name:getAnimMaxTime
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:getLength
+Method-name:setAnim
+Method-returnType:void
+Method-parameters:[String name, float blendTime]
+MethodInvocation:get
+MethodInvocation:notifyAnimChange
+FieldAccess:blendTime
+MethodInvocation:min
+MethodInvocation:getLength
+Method-name:setAnim
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:setAnim
+Method-name:addAllBones
+Method-returnType:void
+Method-parameters:[]
+Method-name:addBone
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:addBone
+MethodInvocation:getBone
+MethodInvocation:getSkeleton
+Method-name:addBone
+Method-returnType:void
+Method-parameters:[Bone bone]
+MethodInvocation:getBoneIndex
+MethodInvocation:getSkeleton
+MethodInvocation:getBoneCount
+MethodInvocation:getSkeleton
+MethodInvocation:set
+Method-name:addToRootBone
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:addToRootBone
+MethodInvocation:getBone
+MethodInvocation:getSkeleton
+Method-name:addToRootBone
+Method-returnType:void
+Method-parameters:[Bone bone]
+MethodInvocation:addBone
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:addBone
+Method-name:addFromRootBone
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:addFromRootBone
+MethodInvocation:getBone
+MethodInvocation:getSkeleton
+Method-name:getAffectedBones
+Method-returnType:BitSet
+Method-parameters:[]
+Method-name:reset
+Method-returnType:void
+Method-parameters:[boolean rewind]
+MethodInvocation:setTime
+MethodInvocation:getSkeleton
+MethodInvocation:resetAndUpdate
+MethodInvocation:getSkeleton
+MethodInvocation:get
+MethodInvocation:update
+MethodInvocation:release
+Method-name:update
+Method-returnType:void
+Method-parameters:[float tpf, TempVars vars]
+MethodInvocation:setTime
+MethodInvocation:clampWrapTime
+MethodInvocation:getLength
+MethodInvocation:setTime
+MethodInvocation:getLength
+MethodInvocation:getLength
+MethodInvocation:notifyAnimCycleDone
+MethodInvocation:getName
+MethodInvocation:clampWrapTime
+MethodInvocation:getLength

@@ -1,0 +1,30 @@
+Class:PendingTaskManagerSlot
+Field:taskManagerSlotId
+MethodInvocation:generate
+Field:resourceProfile
+Field:pendingSlotRequest
+Method-name:PendingTaskManagerSlot
+Method-returnType:null
+Method-parameters:[ResourceProfile resourceProfile]
+FieldAccess:resourceProfile
+Method-name:getTaskManagerSlotId
+Method-returnType:TaskManagerSlotId
+Method-parameters:[]
+Method-name:getResourceProfile
+Method-returnType:ResourceProfile
+Method-parameters:[]
+Method-name:assignPendingSlotRequest
+Method-returnType:void
+Method-parameters:[@Nonnull PendingSlotRequest pendingSlotRequestToAssign]
+MethodInvocation:checkState
+Method-name:unassignPendingSlotRequest
+Method-returnType:void
+Method-parameters:[]
+Method-name:getAssignedPendingSlotRequest
+Method-returnType:PendingSlotRequest
+Method-parameters:[]
+Method-name:isPendingSlotExactlyMatchingResourceProfile
+Method-returnType:boolean
+Method-parameters:[ResourceProfile resourceProfile, SlotManagerImpl slotManager]
+MethodInvocation:equals
+MethodInvocation:getResourceProfile

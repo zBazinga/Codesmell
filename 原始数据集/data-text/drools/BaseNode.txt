@@ -1,0 +1,168 @@
+Class:BaseNode
+Field:id
+Field:memoryId
+Field:partitionId
+Field:partitionsEnabled
+Field:associations
+Field:streamMode
+Field:hashcode
+Method-name:BaseNode
+Method-returnType:null
+Method-parameters:[]
+Method-name:BaseNode
+Method-returnType:null
+Method-parameters:[final int id, final RuleBasePartitionId partitionId, final boolean partitionsEnabled]
+FieldAccess:id
+FieldAccess:partitionId
+FieldAccess:partitionsEnabled
+FieldAccess:associations
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readInt
+MethodInvocation:readInt
+MethodInvocation:readObject
+MethodInvocation:readBoolean
+MethodInvocation:readObject
+MethodInvocation:readBoolean
+MethodInvocation:readInt
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+MethodInvocation:writeObject
+MethodInvocation:writeBoolean
+MethodInvocation:writeObject
+MethodInvocation:writeBoolean
+MethodInvocation:writeInt
+Method-name:getId
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:id
+Method-name:setId
+Method-returnType:void
+Method-parameters:[int id]
+FieldAccess:id
+Method-name:getMemoryId
+Method-returnType:int
+Method-parameters:[]
+Method-name:initMemoryId
+Method-returnType:void
+Method-parameters:[BuildContext context]
+MethodInvocation:getNextId
+Method-name:isStreamMode
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:streamMode
+Method-name:setStreamMode
+Method-returnType:void
+Method-parameters:[boolean streamMode]
+FieldAccess:streamMode
+Method-name:attach
+Method-returnType:void
+Method-parameters:[BuildContext context]
+Method-name:networkUpdated
+Method-returnType:void
+Method-parameters:[UpdateContext updateContext]
+Method-name:remove
+Method-returnType:boolean
+Method-parameters:[RuleRemovalContext context, ReteooBuilder builder]
+MethodInvocation:doRemove
+MethodInvocation:isInUse
+MethodInvocation:releaseId
+MethodInvocation:getIdGenerator
+MethodInvocation:getRule
+Method-name:doRemove
+Method-returnType:boolean
+Method-parameters:[RuleRemovalContext context, ReteooBuilder builder]
+Method-name:isInUse
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getObjectTypeNode
+Method-returnType:ObjectTypeNode
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+FieldAccess:id
+Method-name:getPartitionId
+Method-returnType:RuleBasePartitionId
+Method-parameters:[]
+FieldAccess:partitionId
+Method-name:setPartitionId
+Method-returnType:void
+Method-parameters:[BuildContext context, RuleBasePartitionId partitionId]
+FieldAccess:partitionId
+Method-name:setPartitionsEnabled
+Method-returnType:void
+Method-parameters:[boolean partitionsEnabled]
+FieldAccess:partitionsEnabled
+Method-name:addAssociation
+Method-returnType:void
+Method-parameters:[Rule rule]
+MethodInvocation:add
+FieldAccess:associations
+Method-name:addAssociation
+Method-returnType:void
+Method-parameters:[BuildContext context, Rule rule]
+MethodInvocation:addAssociation
+Method-name:removeAssociation
+Method-returnType:boolean
+Method-parameters:[Rule rule]
+MethodInvocation:remove
+FieldAccess:associations
+Method-name:getAssociationsSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:associations
+Method-name:getAssociatedRules
+Method-returnType:Rule[]
+Method-parameters:[]
+MethodInvocation:toArray
+FieldAccess:associations
+MethodInvocation:getKeySize
+FieldAccess:associations
+Method-name:getAssociatedRuleSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getKeySize
+FieldAccess:associations
+Method-name:getAssociationsSize
+Method-returnType:int
+Method-parameters:[Rule rule]
+MethodInvocation:sizeFor
+FieldAccess:associations
+Method-name:isAssociatedWith
+Method-returnType:boolean
+Method-parameters:[Rule rule]
+MethodInvocation:contains
+FieldAccess:associations
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:getSinks
+Method-returnType:Sink[]
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:getObjectTypeNodes
+MethodInvocation:toArray
+MethodInvocation:size
+MethodInvocation:getSinks
+MethodInvocation:getObjectSinkPropagator
+MethodInvocation:getSinks
+MethodInvocation:getSinkPropagator
+Method-name:mergeNodes
+Method-returnType:void
+Method-parameters:[BaseNode duplicate, BuildUtils buildUtils]
+MethodInvocation:getConstraint
+MethodInvocation:addPackageNames
+MethodInvocation:getPackageNames
+MethodInvocation:getConstraint
+MethodInvocation:getConstraints
+MethodInvocation:addPackageNames
+MethodInvocation:getPackageNames
+MethodInvocation:getConstraints

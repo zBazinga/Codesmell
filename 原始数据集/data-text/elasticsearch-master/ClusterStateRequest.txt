@@ -1,0 +1,133 @@
+Class:ClusterStateRequest
+Field:DEFAULT_WAIT_FOR_NODE_TIMEOUT
+MethodInvocation:timeValueMinutes
+Field:routingTable
+Field:nodes
+Field:metadata
+Field:blocks
+Field:customs
+Field:waitForMetadataVersion
+Field:waitForTimeout
+Field:indices
+Field:indicesOptions
+MethodInvocation:lenientExpandOpen
+Method-name:ClusterStateRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:ClusterStateRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readBoolean
+MethodInvocation:readBoolean
+MethodInvocation:readBoolean
+MethodInvocation:readBoolean
+MethodInvocation:readBoolean
+MethodInvocation:readStringArray
+MethodInvocation:readIndicesOptions
+MethodInvocation:readTimeValue
+MethodInvocation:readOptionalLong
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeStringArray
+MethodInvocation:writeIndicesOptions
+MethodInvocation:writeTimeValue
+MethodInvocation:writeOptionalLong
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+Method-name:all
+Method-returnType:ClusterStateRequest
+Method-parameters:[]
+Method-name:clear
+Method-returnType:ClusterStateRequest
+Method-parameters:[]
+Method-name:routingTable
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:routingTable
+Method-returnType:ClusterStateRequest
+Method-parameters:[boolean routingTable]
+FieldAccess:routingTable
+Method-name:nodes
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:nodes
+Method-returnType:ClusterStateRequest
+Method-parameters:[boolean nodes]
+FieldAccess:nodes
+Method-name:metadata
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:metadata
+Method-returnType:ClusterStateRequest
+Method-parameters:[boolean metadata]
+FieldAccess:metadata
+Method-name:blocks
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:blocks
+Method-returnType:ClusterStateRequest
+Method-parameters:[boolean blocks]
+FieldAccess:blocks
+Method-name:indices
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:indices
+Method-returnType:ClusterStateRequest
+Method-parameters:[String... indices]
+FieldAccess:indices
+Method-name:indicesOptions
+Method-returnType:IndicesOptions
+Method-parameters:[]
+FieldAccess:indicesOptions
+Method-name:indicesOptions
+Method-returnType:ClusterStateRequest
+Method-parameters:[IndicesOptions indicesOptions]
+FieldAccess:indicesOptions
+Method-name:customs
+Method-returnType:ClusterStateRequest
+Method-parameters:[boolean customs]
+FieldAccess:customs
+Method-name:customs
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:waitForTimeout
+Method-returnType:TimeValue
+Method-parameters:[]
+Method-name:waitForTimeout
+Method-returnType:ClusterStateRequest
+Method-parameters:[TimeValue waitForTimeout]
+FieldAccess:waitForTimeout
+Method-name:waitForMetadataVersion
+Method-returnType:Long
+Method-parameters:[]
+Method-name:waitForMetadataVersion
+Method-returnType:ClusterStateRequest
+Method-parameters:[long waitForMetadataVersion]
+FieldAccess:waitForMetadataVersion
+Method-name:checkRemoteClusterLicenseAndFetchClusterState
+Method-returnType:void
+Method-parameters:[final Client client, final String clusterAlias, final Client remoteClient, final Consumer<Exception> onFailure, final Consumer<ClusterStateResponse> leaderClusterStateConsumer, final Function<RemoteClusterLicenseChecker.LicenseCheck,ElasticsearchStatusException> nonCompliantLicense, final Function<Exception,ElasticsearchStatusException> unknownLicense, CcrLicenseChecker ccrLicenseChecker]
+MethodInvocation:checkRemoteClusterLicenses
+MethodInvocation:singletonList
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[final RemoteClusterLicenseChecker.LicenseCheck licenseCheck]
+MethodInvocation:isSuccess
+MethodInvocation:wrap
+MethodInvocation:state
+MethodInvocation:cluster
+MethodInvocation:admin
+MethodInvocation:accept
+MethodInvocation:apply
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[final Exception e]
+MethodInvocation:accept
+MethodInvocation:apply

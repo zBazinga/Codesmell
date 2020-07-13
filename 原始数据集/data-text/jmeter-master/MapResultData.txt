@@ -1,0 +1,32 @@
+Class:MapResultData
+Field:map
+Method-name:accept
+Method-returnType:T
+Method-parameters:[ResultDataVisitor<T> visitor]
+MethodInvocation:visitMapResult
+Method-name:entrySet
+Method-returnType:Set<Entry<String,ResultData>>
+Method-parameters:[]
+MethodInvocation:entrySet
+Method-name:getResult
+Method-returnType:ResultData
+Method-parameters:[String name]
+MethodInvocation:get
+Method-name:setResult
+Method-returnType:ResultData
+Method-parameters:[String name, ResultData result]
+MethodInvocation:put
+Method-name:removeResult
+Method-returnType:ResultData
+Method-parameters:[String name]
+MethodInvocation:remove
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:setMinResult
+Method-returnType:void
+Method-parameters:[String name, Double value, AbstractGraphConsumer abstractGraphConsumer]
+MethodInvocation:getResult
+MethodInvocation:setValue
+MethodInvocation:min
+MethodInvocation:getValue

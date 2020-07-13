@@ -1,0 +1,50 @@
+Class:CharSequenceEncoder
+Field:DEFAULT_CHARSET
+Field:charsetToMaxBytesPerChar
+Method-name:CharSequenceEncoder
+Method-returnType:null
+Method-parameters:[MimeType... mimeTypes]
+Method-name:canEncode
+Method-returnType:boolean
+Method-parameters:[ResolvableType elementType, @Nullable MimeType mimeType]
+MethodInvocation:toClass
+MethodInvocation:isAssignableFrom
+Method-name:encode
+Method-returnType:Flux<DataBuffer>
+Method-parameters:[Publisher<? extends CharSequence> inputStream, DataBufferFactory bufferFactory, ResolvableType elementType, @Nullable MimeType mimeType, @Nullable Map<String,Object> hints]
+MethodInvocation:map
+MethodInvocation:from
+MethodInvocation:encodeValue
+Method-name:encodeValue
+Method-returnType:DataBuffer
+Method-parameters:[CharSequence charSequence, DataBufferFactory bufferFactory, ResolvableType valueType, @Nullable MimeType mimeType, @Nullable Map<String,Object> hints]
+MethodInvocation:isLoggingSuppressed
+MethodInvocation:traceDebug
+MethodInvocation:formatValue
+MethodInvocation:getLogPrefix
+MethodInvocation:getCharset
+MethodInvocation:calculateCapacity
+MethodInvocation:allocateBuffer
+MethodInvocation:write
+MethodInvocation:getMessage
+MethodInvocation:release
+Method-name:calculateCapacity
+Method-returnType:int
+Method-parameters:[CharSequence sequence, Charset charset]
+MethodInvocation:computeIfAbsent
+FieldAccess:charsetToMaxBytesPerChar
+MethodInvocation:maxBytesPerChar
+MethodInvocation:newEncoder
+MethodInvocation:length
+MethodInvocation:ceil
+Method-name:getCharset
+Method-returnType:Charset
+Method-parameters:[@Nullable MimeType mimeType]
+MethodInvocation:getCharset
+MethodInvocation:getCharset
+Method-name:textPlainOnly
+Method-returnType:CharSequenceEncoder
+Method-parameters:[]
+Method-name:allMimeTypes
+Method-returnType:CharSequenceEncoder
+Method-parameters:[]

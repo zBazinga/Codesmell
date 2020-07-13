@@ -1,0 +1,37 @@
+Class:StateMapSerDe
+Field:VERSION
+Method-name:serializeEdit
+Method-returnType:void
+Method-parameters:[final StateMapUpdate previousRecordState, final StateMapUpdate newRecordState, final DataOutputStream out]
+MethodInvocation:serializeRecord
+Method-name:deserializeEdit
+Method-returnType:StateMapUpdate
+Method-parameters:[final DataInputStream in, final Map<Object,StateMapUpdate> currentRecordStates, final int version]
+MethodInvocation:deserializeRecord
+Method-name:deserializeRecord
+Method-returnType:StateMapUpdate
+Method-parameters:[final DataInputStream in, final int version]
+MethodInvocation:readUTF
+MethodInvocation:readUTF
+MethodInvocation:valueOf
+MethodInvocation:readLong
+MethodInvocation:readInt
+MethodInvocation:readBoolean
+MethodInvocation:readUTF
+MethodInvocation:readBoolean
+MethodInvocation:readUTF
+MethodInvocation:put
+Method-name:getRecordIdentifier
+Method-returnType:Object
+Method-parameters:[final StateMapUpdate record]
+MethodInvocation:getComponentId
+Method-name:getUpdateType
+Method-returnType:UpdateType
+Method-parameters:[final StateMapUpdate record]
+MethodInvocation:getUpdateType
+Method-name:getLocation
+Method-returnType:String
+Method-parameters:[final StateMapUpdate record]
+Method-name:getVersion
+Method-returnType:int
+Method-parameters:[]

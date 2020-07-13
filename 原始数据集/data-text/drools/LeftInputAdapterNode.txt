@@ -1,0 +1,412 @@
+Class:LeftInputAdapterNode
+Field:log
+MethodInvocation:getLogger
+Field:serialVersionUID
+Field:objectSource
+Field:previousRightTupleSinkNode
+Field:nextRightTupleSinkNode
+Field:leftTupleMemoryEnabled
+Field:sinkMask
+Method-name:LeftInputAdapterNode
+Method-returnType:null
+Method-parameters:[]
+Method-name:LeftInputAdapterNode
+Method-returnType:null
+Method-parameters:[final int id, final ObjectSource source, final BuildContext context]
+FieldAccess:objectSource
+FieldAccess:leftTupleMemoryEnabled
+MethodInvocation:isTupleMemoryEnabled
+MethodInvocation:getType
+MethodInvocation:getParentObjectSource
+MethodInvocation:setStreamMode
+MethodInvocation:isStreamMode
+MethodInvocation:isEvent
+MethodInvocation:getObjectType
+MethodInvocation:getRootObjectTypeNode
+MethodInvocation:calculateSinkMask
+MethodInvocation:calculateHashCode
+Method-name:calculateSinkMask
+Method-returnType:BitMask
+Method-parameters:[BuildContext context]
+MethodInvocation:getLastBuiltPatterns
+MethodInvocation:getLastBuiltPatterns
+MethodInvocation:get
+MethodInvocation:getObjectType
+MethodInvocation:get
+MethodInvocation:getClassType
+MethodInvocation:isPropertyReactive
+MethodInvocation:calculatePositiveMask
+MethodInvocation:getListenedProperties
+MethodInvocation:getAccessibleProperties
+MethodInvocation:getKnowledgeBase
+MethodInvocation:get
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readObject
+MethodInvocation:readBoolean
+MethodInvocation:readObject
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+MethodInvocation:writeBoolean
+MethodInvocation:writeObject
+Method-name:getObjectSource
+Method-returnType:ObjectSource
+Method-parameters:[]
+FieldAccess:objectSource
+Method-name:getType
+Method-returnType:short
+Method-parameters:[]
+Method-name:isLeftTupleMemoryEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getParentObjectSource
+Method-returnType:ObjectSource
+Method-parameters:[]
+FieldAccess:objectSource
+Method-name:attach
+Method-returnType:void
+Method-parameters:[BuildContext context]
+MethodInvocation:addObjectSink
+FieldAccess:objectSource
+Method-name:networkUpdated
+Method-returnType:void
+Method-parameters:[UpdateContext updateContext]
+MethodInvocation:networkUpdated
+FieldAccess:objectSource
+Method-name:assertObject
+Method-returnType:void
+Method-parameters:[final InternalFactHandle factHandle, final PropagationContext context, final InternalWorkingMemory workingMemory]
+MethodInvocation:getNodeMemory
+MethodInvocation:doInsertObject
+Method-name:doInsertObject
+Method-returnType:void
+Method-parameters:[final InternalFactHandle factHandle, final PropagationContext context, final LeftInputAdapterNode liaNode, final InternalWorkingMemory wm, final LiaNodeMemory lm, boolean linkOrNotify, boolean useLeftMemory]
+MethodInvocation:getOrCreateSegmentMemory
+MethodInvocation:getTipNode
+MethodInvocation:isEmpty
+MethodInvocation:createChildSegments
+MethodInvocation:getSinkPropagator
+MethodInvocation:getFirst
+MethodInvocation:getAndIncreaseCounter
+MethodInvocation:linkNode
+MethodInvocation:linkNodeWithoutRuleNotify
+MethodInvocation:getFirstLeftTupleSink
+MethodInvocation:getSinkPropagator
+MethodInvocation:createLeftTuple
+MethodInvocation:setPropagationContext
+MethodInvocation:doInsertSegmentMemory
+MethodInvocation:isStreamMode
+MethodInvocation:getRootNode
+MethodInvocation:getNext
+MethodInvocation:getNext
+MethodInvocation:getSinkFactory
+MethodInvocation:createPeer
+MethodInvocation:doInsertSegmentMemory
+MethodInvocation:isStreamMode
+Method-name:doInsertSegmentMemory
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm, boolean linkOrNotify, final LiaNodeMemory lm, SegmentMemory sm, LeftTuple leftTuple, boolean streamMode]
+MethodInvocation:flushLeftTupleIfNecessary
+MethodInvocation:setNodeDirty
+MethodInvocation:addInsert
+MethodInvocation:getStagedLeftTuples
+MethodInvocation:setNodeDirty
+Method-name:doDeleteObject
+Method-returnType:void
+Method-parameters:[LeftTuple leftTuple, PropagationContext context, SegmentMemory sm, final InternalWorkingMemory wm, final LeftInputAdapterNode liaNode, final boolean linkOrNotify, final LiaNodeMemory lm]
+MethodInvocation:getTipNode
+MethodInvocation:isEmpty
+MethodInvocation:createChildSegments
+MethodInvocation:getSinkPropagator
+MethodInvocation:getFirst
+MethodInvocation:doDeleteSegmentMemory
+MethodInvocation:isStreamMode
+MethodInvocation:getNext
+MethodInvocation:getNext
+MethodInvocation:getNext
+MethodInvocation:getPeer
+MethodInvocation:doDeleteSegmentMemory
+MethodInvocation:isStreamMode
+MethodInvocation:getAndDecreaseCounter
+MethodInvocation:unlinkNode
+MethodInvocation:unlinkNodeWithoutRuleNotify
+Method-name:doDeleteSegmentMemory
+Method-returnType:void
+Method-parameters:[LeftTuple leftTuple, PropagationContext pctx, final LiaNodeMemory lm, SegmentMemory sm, InternalWorkingMemory wm, boolean linkOrNotify, boolean streamMode]
+MethodInvocation:setPropagationContext
+MethodInvocation:flushLeftTupleIfNecessary
+MethodInvocation:setNodeDirty
+MethodInvocation:getStagedLeftTuples
+MethodInvocation:addDelete
+MethodInvocation:setNodeDirty
+Method-name:doUpdateObject
+Method-returnType:void
+Method-parameters:[LeftTuple leftTuple, PropagationContext context, final InternalWorkingMemory wm, final LeftInputAdapterNode liaNode, final boolean linkOrNotify, final LiaNodeMemory lm, SegmentMemory sm]
+MethodInvocation:getTipNode
+MethodInvocation:isEmpty
+MethodInvocation:createChildSegments
+MethodInvocation:getSinkPropagator
+MethodInvocation:getFirst
+MethodInvocation:getStagedLeftTuples
+MethodInvocation:doUpdateSegmentMemory
+MethodInvocation:isStreamMode
+MethodInvocation:getNext
+MethodInvocation:getNext
+MethodInvocation:getNext
+MethodInvocation:getPeer
+MethodInvocation:getStagedLeftTuples
+MethodInvocation:doUpdateSegmentMemory
+MethodInvocation:isStreamMode
+Method-name:doUpdateSegmentMemory
+Method-returnType:void
+Method-parameters:[LeftTuple leftTuple, PropagationContext pctx, InternalWorkingMemory wm, boolean linkOrNotify, final LiaNodeMemory lm, TupleSets<LeftTuple> leftTuples, SegmentMemory sm, boolean streamMode]
+MethodInvocation:setPropagationContext
+MethodInvocation:getStagedType
+MethodInvocation:flushLeftTupleIfNecessary
+MethodInvocation:setNodeDirty
+MethodInvocation:addUpdate
+MethodInvocation:setNodeDirty
+Method-name:retractLeftTuple
+Method-returnType:void
+Method-parameters:[LeftTuple leftTuple, PropagationContext context, InternalWorkingMemory workingMemory]
+MethodInvocation:getNodeMemory
+MethodInvocation:getSegmentMemory
+MethodInvocation:getTipNode
+MethodInvocation:getFirst
+MethodInvocation:doDeleteObject
+Method-name:modifyObject
+Method-returnType:void
+Method-parameters:[InternalFactHandle factHandle, final ModifyPreviousTuples modifyPreviousTuples, PropagationContext context, InternalWorkingMemory workingMemory]
+MethodInvocation:getLeftInputOtnId
+MethodInvocation:getFirstLeftTupleSink
+FieldAccess:sink
+MethodInvocation:processDeletesFromModify
+MethodInvocation:getNodeMemory
+MethodInvocation:equals
+MethodInvocation:getInputOtnId
+MethodInvocation:removeLeftTuple
+MethodInvocation:reAdd
+MethodInvocation:getFirstLeftTupleSink
+MethodInvocation:getSinkPropagator
+MethodInvocation:getLeftInferredMask
+MethodInvocation:intersects
+MethodInvocation:getModificationMask
+MethodInvocation:doUpdateObject
+MethodInvocation:getTupleSource
+MethodInvocation:getOrCreateSegmentMemory
+MethodInvocation:setActive
+MethodInvocation:getFirstLeftTupleSink
+MethodInvocation:getSinkPropagator
+MethodInvocation:getLeftInferredMask
+MethodInvocation:intersects
+MethodInvocation:getModificationMask
+MethodInvocation:doInsertObject
+Method-name:processDeletesFromModify
+Method-returnType:LeftTuple
+Method-parameters:[ModifyPreviousTuples modifyPreviousTuples, PropagationContext context, InternalWorkingMemory workingMemory, Id otnId]
+MethodInvocation:peekLeftTuple
+MethodInvocation:before
+MethodInvocation:getInputOtnId
+MethodInvocation:removeLeftTuple
+MethodInvocation:getTupleSource
+MethodInvocation:getNodeMemory
+MethodInvocation:getSegmentMemory
+MethodInvocation:doDeleteObject
+MethodInvocation:peekLeftTuple
+Method-name:byPassModifyToBetaNode
+Method-returnType:void
+Method-parameters:[InternalFactHandle factHandle, ModifyPreviousTuples modifyPreviousTuples, PropagationContext context, InternalWorkingMemory workingMemory]
+MethodInvocation:modifyObject
+Method-name:doRemove
+Method-returnType:boolean
+Method-parameters:[final RuleRemovalContext context, final ReteooBuilder builder]
+MethodInvocation:isInUse
+MethodInvocation:removeObjectSink
+Method-name:createPeer
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple original]
+Method-name:getNextObjectSinkNode
+Method-returnType:ObjectSinkNode
+Method-parameters:[]
+FieldAccess:nextRightTupleSinkNode
+Method-name:setNextObjectSinkNode
+Method-returnType:void
+Method-parameters:[final ObjectSinkNode next]
+FieldAccess:nextRightTupleSinkNode
+Method-name:getPreviousObjectSinkNode
+Method-returnType:ObjectSinkNode
+Method-parameters:[]
+FieldAccess:previousRightTupleSinkNode
+Method-name:setPreviousObjectSinkNode
+Method-returnType:void
+Method-parameters:[final ObjectSinkNode previous]
+FieldAccess:previousRightTupleSinkNode
+Method-name:calculateHashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+FieldAccess:objectSource
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[final Object object]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:getId
+FieldAccess:objectSource
+MethodInvocation:getId
+FieldAccess:objectSource
+MethodInvocation:equals
+FieldAccess:sinkMask
+FieldAccess:sinkMask
+Method-name:getObjectTypeNode
+Method-returnType:ObjectTypeNode
+Method-parameters:[]
+FieldAccess:objectSource
+Method-name:createMemory
+Method-returnType:LiaNodeMemory
+Method-parameters:[RuleBaseConfiguration config, InternalWorkingMemory wm]
+Class:LiaNodeMemory
+Field:counter
+Field:segmentMemory
+Field:nodePosMaskBit
+Method-name:LiaNodeMemory
+Method-returnType:null
+Method-parameters:[]
+Method-name:getCounter
+Method-returnType:int
+Method-parameters:[]
+Method-name:getAndIncreaseCounter
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:counter
+Method-name:getAndDecreaseCounter
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:counter
+Method-name:setCounter
+Method-returnType:void
+Method-parameters:[int counter]
+FieldAccess:counter
+Method-name:getSegmentMemory
+Method-returnType:SegmentMemory
+Method-parameters:[]
+Method-name:setSegmentMemory
+Method-returnType:void
+Method-parameters:[SegmentMemory segmentNodes]
+FieldAccess:segmentMemory
+Method-name:getNodePosMaskBit
+Method-returnType:long
+Method-parameters:[]
+Method-name:setNodePosMaskBit
+Method-returnType:void
+Method-parameters:[long nodePosMask]
+Method-name:setNodeDirtyWithoutNotify
+Method-returnType:void
+Method-parameters:[]
+Method-name:setNodeCleanWithoutNotify
+Method-returnType:void
+Method-parameters:[]
+Method-name:linkNodeWithoutRuleNotify
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:linkNodeWithoutRuleNotify
+Method-name:linkNode
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm]
+MethodInvocation:linkNode
+Method-name:unlinkNode
+Method-returnType:boolean
+Method-parameters:[InternalWorkingMemory wm]
+MethodInvocation:unlinkNode
+Method-name:unlinkNodeWithoutRuleNotify
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:unlinkNodeWithoutRuleNotify
+Method-name:getNodeType
+Method-returnType:short
+Method-parameters:[]
+Method-name:setNodeDirty
+Method-returnType:void
+Method-parameters:[InternalWorkingMemory wm]
+MethodInvocation:notifyRuleLinkSegment
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+Class:RightTupleSinkAdapter
+Field:sink
+Field:leftTupleMemoryEnabled
+Field:liaNode
+Method-name:RightTupleSinkAdapter
+Method-returnType:null
+Method-parameters:[LeftInputAdapterNode liaNode]
+FieldAccess:liaNode
+Method-name:RightTupleSinkAdapter
+Method-returnType:null
+Method-parameters:[final LeftTupleSink sink, boolean leftTupleMemoryEnabled]
+FieldAccess:sink
+FieldAccess:leftTupleMemoryEnabled
+Method-name:assertObject
+Method-returnType:void
+Method-parameters:[final InternalFactHandle factHandle, final PropagationContext context, final InternalWorkingMemory workingMemory]
+MethodInvocation:assertObject
+Method-name:modifyObject
+Method-returnType:void
+Method-parameters:[InternalFactHandle factHandle, ModifyPreviousTuples modifyPreviousTuples, PropagationContext context, InternalWorkingMemory workingMemory]
+Method-name:getId
+Method-returnType:int
+Method-parameters:[]
+Method-name:getPartitionId
+Method-returnType:RuleBasePartitionId
+Method-parameters:[]
+MethodInvocation:getPartitionId
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+Method-name:byPassModifyToBetaNode
+Method-returnType:void
+Method-parameters:[InternalFactHandle factHandle, ModifyPreviousTuples modifyPreviousTuples, PropagationContext context, InternalWorkingMemory workingMemory]
+Method-name:getType
+Method-returnType:short
+Method-parameters:[]
+Method-name:getAssociationsSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getAssociationsSize
+Method-name:getAssociatedRuleSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getAssociatedRuleSize
+Method-name:getAssociationsSize
+Method-returnType:int
+Method-parameters:[Rule rule]
+MethodInvocation:getAssociationsSize
+Method-name:isAssociatedWith
+Method-returnType:boolean
+Method-parameters:[Rule rule]
+MethodInvocation:isAssociatedWith
+Method-name:thisNodeEquals
+Method-returnType:boolean
+Method-parameters:[final Object object]
+Method-name:nodeHashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:setSourcePartitionId
+Method-returnType:void
+Method-parameters:[BuildContext context, RuleBasePartitionId partitionId]
+MethodInvocation:setSourcePartitionId
+Method-name:setPartitionId
+Method-returnType:void
+Method-parameters:[BuildContext context, RuleBasePartitionId partitionId]
+FieldAccess:partitionId
+FieldAccess:partitionId
+MethodInvocation:changeSinkPartition
+FieldAccess:partitionId
+FieldAccess:partitionId

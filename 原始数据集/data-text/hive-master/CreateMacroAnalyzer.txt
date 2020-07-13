@@ -1,0 +1,46 @@
+Class:CreateMacroAnalyzer
+Method-name:CreateMacroAnalyzer
+Method-returnType:null
+Method-parameters:[QueryState queryState]
+Method-name:analyzeInternal
+Method-returnType:void
+Method-parameters:[ASTNode root]
+MethodInvocation:getText
+MethodInvocation:getChild
+MethodInvocation:isQualifiedFunctionName
+MethodInvocation:getColumns
+MethodInvocation:getChild
+MethodInvocation:getActualColumnNames
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:getMacroColumnData
+MethodInvocation:getBody
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:getInputs
+MethodInvocation:getOutputs
+MethodInvocation:getDatabase
+MethodInvocation:add
+Method-name:getActualColumnNames
+Method-returnType:Set<String>
+Method-parameters:[ASTNode root, List<FieldSchema> arguments]
+MethodInvocation:isEmpty
+MethodInvocation:getChild
+Method-name:dispatch
+Method-returnType:Object
+Method-parameters:[Node nd, Stack<Node> stack, Object... nodeOutputs]
+MethodInvocation:getType
+MethodInvocation:add
+MethodInvocation:getText
+MethodInvocation:getChild
+MethodInvocation:startWalking
+MethodInvocation:singletonList
+Method-name:getBody
+Method-returnType:ExprNodeDesc
+Method-parameters:[ASTNode root, List<FieldSchema> arguments, RowResolver rowResolver]
+MethodInvocation:getBoolVar
+MethodInvocation:isEmpty
+MethodInvocation:genExprNodeDesc
+MethodInvocation:getChild
+MethodInvocation:genExprNodeDesc
+MethodInvocation:getChild

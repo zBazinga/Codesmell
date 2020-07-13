@@ -1,0 +1,61 @@
+Class:RequestResponseBodyMethodProcessor
+Method-name:RequestResponseBodyMethodProcessor
+Method-returnType:null
+Method-parameters:[List<HttpMessageConverter<?>> converters]
+Method-name:RequestResponseBodyMethodProcessor
+Method-returnType:null
+Method-parameters:[List<HttpMessageConverter<?>> converters, @Nullable ContentNegotiationManager manager]
+Method-name:RequestResponseBodyMethodProcessor
+Method-returnType:null
+Method-parameters:[List<HttpMessageConverter<?>> converters, @Nullable List<Object> requestResponseBodyAdvice]
+Method-name:RequestResponseBodyMethodProcessor
+Method-returnType:null
+Method-parameters:[List<HttpMessageConverter<?>> converters, @Nullable ContentNegotiationManager manager, @Nullable List<Object> requestResponseBodyAdvice]
+Method-name:supportsParameter
+Method-returnType:boolean
+Method-parameters:[MethodParameter parameter]
+MethodInvocation:hasParameterAnnotation
+Method-name:supportsReturnType
+Method-returnType:boolean
+Method-parameters:[MethodParameter returnType]
+MethodInvocation:hasAnnotation
+MethodInvocation:getContainingClass
+MethodInvocation:hasMethodAnnotation
+Method-name:resolveArgument
+Method-returnType:Object
+Method-parameters:[MethodParameter parameter, @Nullable ModelAndViewContainer mavContainer, NativeWebRequest webRequest, @Nullable WebDataBinderFactory binderFactory]
+MethodInvocation:nestedIfOptional
+MethodInvocation:readWithMessageConverters
+MethodInvocation:getNestedGenericParameterType
+MethodInvocation:getVariableNameForParameter
+MethodInvocation:createBinder
+MethodInvocation:validateIfApplicable
+MethodInvocation:hasErrors
+MethodInvocation:getBindingResult
+MethodInvocation:isBindExceptionRequired
+MethodInvocation:getBindingResult
+MethodInvocation:addAttribute
+MethodInvocation:getBindingResult
+MethodInvocation:adaptArgumentIfNecessary
+Method-name:readWithMessageConverters
+Method-returnType:Object
+Method-parameters:[NativeWebRequest webRequest, MethodParameter parameter, Type paramType]
+MethodInvocation:getNativeRequest
+MethodInvocation:state
+MethodInvocation:readWithMessageConverters
+MethodInvocation:checkRequired
+MethodInvocation:toGenericString
+MethodInvocation:getExecutable
+Method-name:checkRequired
+Method-returnType:boolean
+Method-parameters:[MethodParameter parameter]
+MethodInvocation:getParameterAnnotation
+MethodInvocation:required
+MethodInvocation:isOptional
+Method-name:handleReturnValue
+Method-returnType:void
+Method-parameters:[@Nullable Object returnValue, MethodParameter returnType, ModelAndViewContainer mavContainer, NativeWebRequest webRequest]
+MethodInvocation:setRequestHandled
+MethodInvocation:createInputMessage
+MethodInvocation:createOutputMessage
+MethodInvocation:writeWithMessageConverters

@@ -1,0 +1,402 @@
+Class:RuleContext
+Field:kbuilder
+Field:packageModel
+Field:typeResolver
+Field:idGenerator
+Field:descr
+Field:generatePatternDSL
+Field:allDeclarations
+Field:scopedDeclarations
+Field:ooPathDeclarations
+Field:exprPointer
+Field:expressions
+Field:namedConsequences
+Field:queryParameters
+Field:queryName
+MethodInvocation:empty
+Field:ruleUnitDescr
+Field:ruleUnitVars
+Field:aggregatePatternMap
+Field:isNestedInsideOr
+Field:bindingOr
+Field:unusableOrBinding
+Field:ruleDialect
+Field:currentScope
+Field:scopesStack
+Field:definedVars
+Method-name:addBindingAsDeclaration
+Method-returnType:void
+Method-parameters:[String bindingId, Class<?> declarationClass, AccumulateFunction accumulateFunction, AccumulateVisitor accumulateVisitor]
+MethodInvocation:getResultType
+MethodInvocation:isAssignableFrom
+MethodInvocation:isPrimitive
+MethodInvocation:addDeclarationReplacing
+Field:RuleDialect
+Field:parentDesc
+Method-name:RuleContext
+Method-returnType:null
+Method-parameters:[KnowledgeBuilderImpl kbuilder, PackageModel packageModel, TypeResolver typeResolver, boolean generatePatternDSL]
+FieldAccess:kbuilder
+FieldAccess:packageModel
+FieldAccess:idGenerator
+MethodInvocation:getExprIdGenerator
+MethodInvocation:push
+FieldAccess:expressions
+FieldAccess:typeResolver
+FieldAccess:generatePatternDSL
+Method-name:findUnitDescr
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getAnnotation
+MethodInvocation:getValue
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:getUnit
+MethodInvocation:getTarget
+MethodInvocation:getUnit
+MethodInvocation:getResource
+MethodInvocation:getSourcePath
+MethodInvocation:getResource
+MethodInvocation:replaceAll
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:getRuleUnitDescriptionLoader
+MethodInvocation:getPackage
+MethodInvocation:getPackageRegistry
+MethodInvocation:getName
+MethodInvocation:getDescription
+MethodInvocation:isPresent
+MethodInvocation:get
+MethodInvocation:addCompilationError
+Method-name:isPatternDSL
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getRuleUnitDescr
+Method-returnType:RuleUnitDescription
+Method-parameters:[]
+Method-name:getKbuilder
+Method-returnType:KnowledgeBuilderImpl
+Method-parameters:[]
+Method-name:addCompilationError
+Method-returnType:void
+Method-parameters:[KnowledgeBuilderResult error]
+MethodInvocation:setResource
+MethodInvocation:getResource
+MethodInvocation:addBuilderResult
+Method-name:hasErrors
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasResults
+Method-name:getDeclarationById
+Method-returnType:Optional<DeclarationSpec>
+Method-parameters:[String id]
+MethodInvocation:get
+MethodInvocation:getDeclarationKey
+MethodInvocation:get
+MethodInvocation:ofNullable
+Method-name:getDeclarationKey
+Method-returnType:String
+Method-parameters:[String id]
+MethodInvocation:get
+Method-name:removeDeclarationById
+Method-returnType:void
+Method-parameters:[String id]
+MethodInvocation:remove
+MethodInvocation:getDeclarationKey
+Method-name:hasDeclaration
+Method-returnType:boolean
+Method-parameters:[String id]
+MethodInvocation:get
+MethodInvocation:getDeclarationKey
+Method-name:addGlobalDeclarations
+Method-returnType:void
+Method-parameters:[Map<String,Class<?>> globals]
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getKey
+MethodInvocation:addDeclaration
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:getOOPathDeclarationById
+Method-returnType:Optional<DeclarationSpec>
+Method-parameters:[String id]
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:equals
+MethodInvocation:getBindingId
+Method-name:addRuleUnitVar
+Method-returnType:void
+Method-parameters:[String name, Class<?> type]
+MethodInvocation:put
+Method-name:getRuleUnitVarType
+Method-returnType:Class<?>
+Method-parameters:[String name]
+MethodInvocation:get
+Method-name:addDeclaration
+Method-returnType:DeclarationSpec
+Method-parameters:[String bindingId, Class<?> declarationClass]
+MethodInvocation:addDeclaration
+MethodInvocation:defineVar
+Method-name:addDeclaration
+Method-returnType:DeclarationSpec
+Method-parameters:[String bindingId, Class<?> declarationClass, Optional<PatternDescr> pattern, Optional<Expression> declarationSource]
+MethodInvocation:addDeclaration
+MethodInvocation:defineVar
+MethodInvocation:empty
+Method-name:addDeclaration
+Method-returnType:DeclarationSpec
+Method-parameters:[String bindingId, Class<?> declarationClass, String variableName]
+MethodInvocation:addDeclaration
+MethodInvocation:defineVar
+Method-name:addDeclaration
+Method-returnType:DeclarationSpec
+Method-parameters:[String bindingId, Class<?> declarationClass, Expression declarationSource]
+MethodInvocation:addDeclaration
+MethodInvocation:defineVar
+Method-name:defineVar
+Method-returnType:String
+Method-parameters:[String var]
+MethodInvocation:put
+MethodInvocation:add
+Method-name:addDeclaration
+Method-returnType:DeclarationSpec
+Method-parameters:[DeclarationSpec d]
+MethodInvocation:putIfAbsent
+MethodInvocation:getBindingId
+Method-name:addDeclarationReplacing
+Method-returnType:void
+Method-parameters:[DeclarationSpec d]
+MethodInvocation:getBindingId
+MethodInvocation:getDeclarationById
+MethodInvocation:isPresent
+MethodInvocation:isAssignableFrom
+MethodInvocation:getDeclarationClass
+MethodInvocation:getDeclarationClass
+MethodInvocation:get
+MethodInvocation:removeDeclarationById
+MethodInvocation:put
+FieldAccess:scopedDeclarations
+MethodInvocation:getBindingId
+Method-name:addOOPathDeclaration
+Method-returnType:void
+Method-parameters:[DeclarationSpec d]
+MethodInvocation:isPresent
+MethodInvocation:getOOPathDeclarationById
+MethodInvocation:getBindingId
+MethodInvocation:add
+FieldAccess:ooPathDeclarations
+Method-name:getAllDeclarations
+Method-returnType:Collection<DeclarationSpec>
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:values
+MethodInvocation:values
+MethodInvocation:addAll
+Method-name:getAvailableBindings
+Method-returnType:Collection<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getOOPathDeclarations
+Method-returnType:List<DeclarationSpec>
+Method-parameters:[]
+Method-name:addExpression
+Method-returnType:void
+Method-parameters:[Expression e]
+MethodInvocation:accept
+MethodInvocation:peek
+Method-name:pushExprPointer
+Method-returnType:void
+Method-parameters:[Consumer<Expression> p]
+MethodInvocation:push
+Method-name:popExprPointer
+Method-returnType:Consumer<Expression>
+Method-parameters:[]
+MethodInvocation:pop
+Method-name:getExprPointerLevel
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getExprId
+Method-returnType:String
+Method-parameters:[Class<?> patternType, String drlConstraint]
+MethodInvocation:getExprId
+Method-name:getConditionId
+Method-returnType:String
+Method-parameters:[Class<?> patternType, String drlConstraint]
+MethodInvocation:getCondId
+Method-name:getOOPathId
+Method-returnType:String
+Method-parameters:[Class<?> patternType, String drlConstraint]
+MethodInvocation:getOOPathId
+Method-name:getOrCreateUnificationId
+Method-returnType:String
+Method-parameters:[String drlConstraint]
+MethodInvocation:getOrCreateUnificationVariable
+Method-name:getUnificationId
+Method-returnType:Optional<String>
+Method-parameters:[String drlConstraint]
+MethodInvocation:getUnificationVariable
+Method-name:getOrCreateAccumulatorBindingId
+Method-returnType:String
+Method-parameters:[String drlConstraint]
+MethodInvocation:getOrCreateAccumulateBindingId
+Method-name:addNamedConsequence
+Method-returnType:void
+Method-parameters:[String key, String value]
+MethodInvocation:put
+Method-name:getRuleDescr
+Method-returnType:RuleDescr
+Method-parameters:[]
+Method-name:setDescr
+Method-returnType:void
+Method-parameters:[RuleDescr descr]
+FieldAccess:descr
+MethodInvocation:findUnitDescr
+Method-name:getRuleName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:getRuleDialect
+Method-returnType:RuleDialect
+Method-parameters:[]
+Method-name:setRuleDialect
+Method-returnType:void
+Method-parameters:[RuleDialect ruleDialect]
+FieldAccess:ruleDialect
+Method-name:queryParameterWithName
+Method-returnType:Optional<QueryParameter>
+Method-parameters:[Predicate<? super QueryParameter> predicate]
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+Method-name:getQueryParameters
+Method-returnType:List<QueryParameter>
+Method-parameters:[]
+Method-name:getExpressions
+Method-returnType:List<Expression>
+Method-parameters:[]
+Method-name:getQueryName
+Method-returnType:Optional<String>
+Method-parameters:[]
+Method-name:setQueryName
+Method-returnType:void
+Method-parameters:[Optional<String> queryName]
+FieldAccess:queryName
+Method-name:isQuery
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isPresent
+Method-name:getNamedConsequences
+Method-returnType:Map<String,String>
+Method-parameters:[]
+Method-name:getAggregatePatternMap
+Method-returnType:Map<String,String>
+Method-parameters:[]
+Method-name:getPackageModel
+Method-returnType:PackageModel
+Method-parameters:[]
+Method-name:getTypeResolver
+Method-returnType:TypeResolver
+Method-parameters:[]
+Method-name:isPropertyReactive
+Method-returnType:boolean
+Method-parameters:[Class<?> patternClass]
+MethodInvocation:getPropertySpecificOption
+MethodInvocation:getBuilderConfiguration
+MethodInvocation:isPropSpecific
+MethodInvocation:getAnnotation
+MethodInvocation:getAnnotation
+Method-name:getFunctionType
+Method-returnType:Optional<Class<?>>
+Method-parameters:[String name]
+MethodInvocation:getStaticMethod
+MethodInvocation:of
+MethodInvocation:getReturnType
+MethodInvocation:flatMap
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getFunctions
+MethodInvocation:equals
+MethodInvocation:getNameAsString
+MethodInvocation:resolveType
+MethodInvocation:asString
+MethodInvocation:getType
+Method-name:resolveType
+Method-returnType:Optional<Class<?>>
+Method-parameters:[String name]
+MethodInvocation:of
+MethodInvocation:resolveType
+MethodInvocation:empty
+Method-name:isNestedInsideOr
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setNestedInsideOr
+Method-returnType:void
+Method-parameters:[Boolean nestedInsideOr]
+Method-name:getBindingOr
+Method-returnType:Bag<String>
+Method-parameters:[]
+Method-name:getUnusableOrBinding
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:getVarExpr
+Method-returnType:Expression
+Method-parameters:[String x]
+MethodInvocation:isQuery
+MethodInvocation:getVar
+MethodInvocation:queryParameterWithName
+MethodInvocation:equals
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:orElseThrow
+MethodInvocation:getQueryName
+MethodInvocation:indexOf
+MethodInvocation:getQueryParameters
+MethodInvocation:toQueryArg
+MethodInvocation:getVar
+Method-name:getVar
+Method-returnType:String
+Method-parameters:[String x]
+MethodInvocation:startsWith
+MethodInvocation:get
+MethodInvocation:toVar
+Method-name:pushScope
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:addLast
+Method-name:popScope
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:removeLast
+Field:scopeCounter
+Class:Scope
+Field:id
+Field:vars
+Method-name:Scope
+Method-returnType:null
+Method-parameters:[]
+Method-name:Scope
+Method-returnType:null
+Method-parameters:[String id]
+FieldAccess:id
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:forEach
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:remove
+Method-name:setDialectFromAttributes
+Method-returnType:void
+Method-parameters:[Collection<AttributeDescr> attributes]
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:getValue
+MethodInvocation:setRuleDialect

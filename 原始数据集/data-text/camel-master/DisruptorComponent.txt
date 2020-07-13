@@ -1,0 +1,105 @@
+Class:DisruptorComponent
+Field:DEFAULT_BUFFER_SIZE
+Field:MAX_CONCURRENT_CONSUMERS
+Field:LOGGER
+MethodInvocation:getLogger
+Field:bufferSize
+Field:defaultConcurrentConsumers
+Field:defaultMultipleConsumers
+Field:defaultProducerType
+Field:defaultWaitStrategy
+Field:defaultBlockWhenFull
+Field:disruptors
+Method-name:DisruptorComponent
+Method-returnType:null
+Method-parameters:[]
+Method-name:createEndpoint
+Method-returnType:Endpoint
+Method-parameters:[final String uri, final String remaining, final Map<String,Object> parameters]
+MethodInvocation:getAndRemoveParameter
+MethodInvocation:getAndRemoveParameter
+MethodInvocation:containsKey
+MethodInvocation:getAndRemoveParameter
+MethodInvocation:containsKey
+MethodInvocation:getAndRemoveParameter
+MethodInvocation:getAndRemoveParameter
+MethodInvocation:getAndRemoveParameter
+MethodInvocation:getAndRemoveParameter
+MethodInvocation:getOrCreateDisruptor
+MethodInvocation:setConcurrentConsumers
+MethodInvocation:setMultipleConsumers
+MethodInvocation:setBlockWhenFull
+MethodInvocation:setWaitStrategy
+MethodInvocation:setProducerType
+MethodInvocation:setProperties
+Method-name:getOrCreateDisruptor
+Method-returnType:DisruptorReference
+Method-parameters:[final String uri, final String name, final int size, final DisruptorProducerType producerType, final DisruptorWaitStrategy waitStrategy]
+MethodInvocation:getDisruptorKey
+MethodInvocation:powerOfTwo
+MethodInvocation:get
+MethodInvocation:getDisruptors
+MethodInvocation:debug
+MethodInvocation:put
+MethodInvocation:getDisruptors
+MethodInvocation:getBufferSize
+MethodInvocation:getBufferSize
+MethodInvocation:debug
+Method-name:powerOfTwo
+Method-returnType:int
+Method-parameters:[int size]
+Method-name:getDisruptorKey
+Method-returnType:String
+Method-parameters:[String uri]
+MethodInvocation:contains
+MethodInvocation:substring
+MethodInvocation:indexOf
+Method-name:doStop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:getDisruptors
+Method-name:getDisruptors
+Method-returnType:Map<String,DisruptorReference>
+Method-parameters:[]
+Method-name:getDefaultConcurrentConsumers
+Method-returnType:int
+Method-parameters:[]
+Method-name:setDefaultConcurrentConsumers
+Method-returnType:void
+Method-parameters:[final int defaultConcurrentConsumers]
+FieldAccess:defaultConcurrentConsumers
+Method-name:isDefaultMultipleConsumers
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDefaultMultipleConsumers
+Method-returnType:void
+Method-parameters:[final boolean defaultMultipleConsumers]
+FieldAccess:defaultMultipleConsumers
+Method-name:getDefaultProducerType
+Method-returnType:DisruptorProducerType
+Method-parameters:[]
+Method-name:setDefaultProducerType
+Method-returnType:void
+Method-parameters:[final DisruptorProducerType defaultProducerType]
+FieldAccess:defaultProducerType
+Method-name:getDefaultWaitStrategy
+Method-returnType:DisruptorWaitStrategy
+Method-parameters:[]
+Method-name:setDefaultWaitStrategy
+Method-returnType:void
+Method-parameters:[final DisruptorWaitStrategy defaultWaitStrategy]
+FieldAccess:defaultWaitStrategy
+Method-name:isDefaultBlockWhenFull
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDefaultBlockWhenFull
+Method-returnType:void
+Method-parameters:[boolean defaultBlockWhenFull]
+FieldAccess:defaultBlockWhenFull
+Method-name:setBufferSize
+Method-returnType:void
+Method-parameters:[final int size]
+Method-name:getBufferSize
+Method-returnType:int
+Method-parameters:[]

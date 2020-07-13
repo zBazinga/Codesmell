@@ -1,0 +1,173 @@
+Class:RepositoryCache
+Field:DEFAULT_CACHE_FILENAME
+Field:TMP_PREFIX
+Field:ID_PREFIX
+Field:BUFFER_SIZE
+Field:CAS_DIR
+Field:repositoryCachePath
+Field:contentAddressablePath
+Field:useHardlinks
+Method-name:assertFileChecksum
+Method-returnType:void
+Method-parameters:[String expectedChecksum, Path filePath, KeyType keyType]
+MethodInvocation:checkArgument
+MethodInvocation:isEmpty
+MethodInvocation:getChecksum
+MethodInvocation:getMessage
+MethodInvocation:equalsIgnoreCase
+Method-name:getChecksum
+Method-returnType:String
+Method-parameters:[KeyType keyType, Path path]
+MethodInvocation:newHasher
+MethodInvocation:getInputStream
+MethodInvocation:read
+MethodInvocation:putBytes
+MethodInvocation:interrupted
+MethodInvocation:read
+MethodInvocation:toString
+MethodInvocation:hash
+Method-name:setRepositoryCachePath
+Method-returnType:void
+Method-parameters:[@Nullable Path repositoryCachePath]
+FieldAccess:repositoryCachePath
+FieldAccess:contentAddressablePath
+MethodInvocation:getRelative
+Method-name:setHardlink
+Method-returnType:void
+Method-parameters:[boolean useHardlinks]
+FieldAccess:useHardlinks
+Method-name:isEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:exists
+Method-returnType:boolean
+Method-parameters:[String cacheKey, KeyType keyType]
+MethodInvocation:checkState
+MethodInvocation:isEnabled
+MethodInvocation:exists
+MethodInvocation:getChild
+MethodInvocation:getChild
+MethodInvocation:getCachePath
+Method-name:hasCanonicalId
+Method-returnType:boolean
+Method-parameters:[String cacheKey, KeyType keyType, String canonicalId]
+MethodInvocation:checkState
+MethodInvocation:isEnabled
+MethodInvocation:toString
+MethodInvocation:hash
+MethodInvocation:putString
+MethodInvocation:newHasher
+MethodInvocation:exists
+MethodInvocation:getChild
+MethodInvocation:getChild
+MethodInvocation:getCachePath
+Method-name:get
+Method-returnType:Path
+Method-parameters:[String cacheKey, Path targetPath, KeyType keyType]
+MethodInvocation:get
+Method-name:get
+Method-returnType:Path
+Method-parameters:[String cacheKey, Path targetPath, KeyType keyType, String canonicalId]
+MethodInvocation:interrupted
+MethodInvocation:checkState
+MethodInvocation:isEnabled
+MethodInvocation:assertKeyIsValid
+MethodInvocation:exists
+MethodInvocation:getRelative
+MethodInvocation:getCachePath
+MethodInvocation:getRelative
+MethodInvocation:assertFileChecksum
+MethodInvocation:getMessage
+MethodInvocation:isNullOrEmpty
+MethodInvocation:hasCanonicalId
+MethodInvocation:createDirectoryAndParents
+MethodInvocation:getParentDirectory
+MethodInvocation:createHardLink
+MethodInvocation:copyFile
+MethodInvocation:touchFile
+Method-name:put
+Method-returnType:void
+Method-parameters:[String cacheKey, Path sourcePath, KeyType keyType]
+MethodInvocation:put
+Method-name:put
+Method-returnType:void
+Method-parameters:[String cacheKey, Path sourcePath, KeyType keyType, String canonicalId]
+MethodInvocation:interrupted
+MethodInvocation:checkState
+MethodInvocation:isEnabled
+MethodInvocation:assertKeyIsValid
+MethodInvocation:ensureCacheDirectoryExists
+MethodInvocation:getRelative
+MethodInvocation:getCachePath
+MethodInvocation:getRelative
+MethodInvocation:getRelative
+MethodInvocation:randomUUID
+MethodInvocation:createDirectoryAndParents
+MethodInvocation:copyFile
+MethodInvocation:moveFile
+MethodInvocation:isNullOrEmpty
+MethodInvocation:getBytes
+MethodInvocation:toString
+MethodInvocation:hash
+MethodInvocation:putBytes
+MethodInvocation:newHasher
+MethodInvocation:getOutputStream
+MethodInvocation:getRelative
+MethodInvocation:write
+MethodInvocation:close
+Method-name:put
+Method-returnType:String
+Method-parameters:[Path sourcePath, KeyType keyType]
+MethodInvocation:put
+Method-name:put
+Method-returnType:String
+Method-parameters:[Path sourcePath, KeyType keyType, String canonicalId]
+MethodInvocation:getChecksum
+MethodInvocation:put
+Method-name:ensureCacheDirectoryExists
+Method-returnType:void
+Method-parameters:[KeyType keyType]
+MethodInvocation:getCachePath
+MethodInvocation:exists
+MethodInvocation:createDirectoryAndParents
+Method-name:assertKeyIsValid
+Method-returnType:void
+Method-parameters:[String key, KeyType keyType]
+MethodInvocation:isValid
+Method-name:getRootPath
+Method-returnType:Path
+Method-parameters:[]
+Method-name:getContentAddressableCachePath
+Method-returnType:Path
+Method-parameters:[]
+Field:KeyType
+Field:stringRepr
+Field:regexp
+Field:hashName
+Field:hashFunction
+Method-name:KeyType
+Method-returnType:null
+Method-parameters:[String stringRepr, String regexp, String hashName, HashFunction hashFunction]
+FieldAccess:stringRepr
+FieldAccess:regexp
+FieldAccess:hashName
+FieldAccess:hashFunction
+Method-name:isValid
+Method-returnType:boolean
+Method-parameters:[@Nullable String checksum]
+MethodInvocation:isNullOrEmpty
+MethodInvocation:matches
+Method-name:getCachePath
+Method-returnType:Path
+Method-parameters:[Path parentDirectory]
+MethodInvocation:getChild
+Method-name:newHasher
+Method-returnType:Hasher
+Method-parameters:[]
+MethodInvocation:newHasher
+Method-name:getHashName
+Method-returnType:String
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

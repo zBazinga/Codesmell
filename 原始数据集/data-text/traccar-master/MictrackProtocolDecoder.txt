@@ -1,0 +1,96 @@
+Class:MictrackProtocolDecoder
+Method-name:MictrackProtocolDecoder
+Method-returnType:null
+Method-parameters:[Protocol protocol]
+Method-name:decodeTime
+Method-returnType:Date
+Method-parameters:[String data]
+MethodInvocation:setTimeZone
+MethodInvocation:getTimeZone
+MethodInvocation:parse
+Method-name:decodeAlarm
+Method-returnType:String
+Method-parameters:[int event]
+Method-name:decodeLocation
+Method-returnType:void
+Method-parameters:[Position position, String data]
+MethodInvocation:split
+MethodInvocation:set
+MethodInvocation:parseInt
+MethodInvocation:setValid
+MethodInvocation:setTime
+MethodInvocation:decodeTime
+MethodInvocation:setLatitude
+MethodInvocation:parseDouble
+MethodInvocation:setLongitude
+MethodInvocation:parseDouble
+MethodInvocation:setSpeed
+MethodInvocation:knotsFromKph
+MethodInvocation:parseDouble
+MethodInvocation:setCourse
+MethodInvocation:parseInt
+MethodInvocation:parseInt
+MethodInvocation:set
+MethodInvocation:decodeAlarm
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:parseInt
+Method-name:decodeCell
+Method-returnType:void
+Method-parameters:[Network network, String data]
+MethodInvocation:split
+MethodInvocation:parseInt
+MethodInvocation:parseInt
+MethodInvocation:parseInt
+MethodInvocation:parseInt
+MethodInvocation:addCellTower
+MethodInvocation:from
+Method-name:decodeWifi
+Method-returnType:void
+Method-parameters:[Network network, String data]
+MethodInvocation:split
+MethodInvocation:addWifiAccessPoint
+MethodInvocation:from
+MethodInvocation:parseInt
+Method-name:decodeNetwork
+Method-returnType:void
+Method-parameters:[Position position, String data, boolean hasWifi, boolean hasCell]
+MethodInvocation:split
+MethodInvocation:getLastLocation
+MethodInvocation:decodeTime
+MethodInvocation:decodeWifi
+MethodInvocation:decodeCell
+MethodInvocation:setNetwork
+MethodInvocation:parseInt
+MethodInvocation:set
+MethodInvocation:decodeAlarm
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:parseInt
+Method-name:decodeStatus
+Method-returnType:void
+Method-parameters:[Position position, String data]
+MethodInvocation:split
+MethodInvocation:set
+MethodInvocation:parseInt
+MethodInvocation:getLastLocation
+MethodInvocation:decodeTime
+MethodInvocation:parseInt
+MethodInvocation:set
+MethodInvocation:decodeAlarm
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:parseInt
+Method-name:decode
+Method-returnType:Object
+Method-parameters:[Channel channel, SocketAddress remoteAddress, Object msg]
+MethodInvocation:split
+MethodInvocation:getDeviceSession
+MethodInvocation:getProtocolName
+MethodInvocation:setDeviceId
+MethodInvocation:getDeviceId
+MethodInvocation:decodeLocation
+MethodInvocation:decodeNetwork
+MethodInvocation:decodeNetwork
+MethodInvocation:decodeNetwork
+MethodInvocation:decodeStatus

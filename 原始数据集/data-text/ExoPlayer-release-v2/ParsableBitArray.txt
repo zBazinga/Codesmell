@@ -1,0 +1,90 @@
+Class:ParsableBitArray
+Field:data
+Field:byteOffset
+Field:bitOffset
+Field:byteLimit
+Method-name:ParsableBitArray
+Method-returnType:null
+Method-parameters:[]
+Method-name:ParsableBitArray
+Method-returnType:null
+Method-parameters:[byte[] data]
+Method-name:ParsableBitArray
+Method-returnType:null
+Method-parameters:[byte[] data, int limit]
+FieldAccess:data
+Method-name:reset
+Method-returnType:void
+Method-parameters:[byte[] data]
+MethodInvocation:reset
+Method-name:reset
+Method-returnType:void
+Method-parameters:[byte[] data, int limit]
+FieldAccess:data
+Method-name:bitsLeft
+Method-returnType:int
+Method-parameters:[]
+Method-name:getPosition
+Method-returnType:int
+Method-parameters:[]
+Method-name:getBytePosition
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:checkState
+Method-name:setPosition
+Method-returnType:void
+Method-parameters:[int position]
+MethodInvocation:assertValidOffset
+Method-name:skipBit
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:assertValidOffset
+Method-name:skipBits
+Method-returnType:void
+Method-parameters:[int numBits]
+MethodInvocation:assertValidOffset
+Method-name:readBit
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:skipBit
+Method-name:readBits
+Method-returnType:int
+Method-parameters:[int numBits]
+MethodInvocation:assertValidOffset
+Method-name:readBitsToLong
+Method-returnType:long
+Method-parameters:[int numBits]
+MethodInvocation:toUnsignedLong
+MethodInvocation:readBits
+MethodInvocation:toLong
+MethodInvocation:readBits
+MethodInvocation:readBits
+Method-name:readBits
+Method-returnType:void
+Method-parameters:[byte[] buffer, int offset, int numBits]
+MethodInvocation:assertValidOffset
+Method-name:byteAlign
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:assertValidOffset
+Method-name:readBytes
+Method-returnType:void
+Method-parameters:[byte[] buffer, int offset, int length]
+MethodInvocation:checkState
+MethodInvocation:arraycopy
+MethodInvocation:assertValidOffset
+Method-name:skipBytes
+Method-returnType:void
+Method-parameters:[int length]
+MethodInvocation:checkState
+MethodInvocation:assertValidOffset
+Method-name:putInt
+Method-returnType:void
+Method-parameters:[int value, int numBits]
+MethodInvocation:min
+MethodInvocation:skipBits
+MethodInvocation:assertValidOffset
+Method-name:assertValidOffset
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:checkState

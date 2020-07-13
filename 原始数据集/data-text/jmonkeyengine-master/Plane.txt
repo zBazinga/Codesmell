@@ -1,0 +1,116 @@
+Class:Plane
+Field:serialVersionUID
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:Side
+Field:normal
+Field:constant
+Method-name:Plane
+Method-returnType:null
+Method-parameters:[]
+Method-name:Plane
+Method-returnType:null
+Method-parameters:[Vector3f normal, float constant]
+MethodInvocation:set
+FieldAccess:normal
+FieldAccess:constant
+Method-name:Plane
+Method-returnType:null
+Method-parameters:[Vector3f normal, Vector3f displacement]
+MethodInvocation:dot
+Method-name:setNormal
+Method-returnType:void
+Method-parameters:[Vector3f normal]
+MethodInvocation:set
+FieldAccess:normal
+Method-name:setNormal
+Method-returnType:void
+Method-parameters:[float x, float y, float z]
+MethodInvocation:set
+FieldAccess:normal
+Method-name:getNormal
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:setConstant
+Method-returnType:void
+Method-parameters:[float constant]
+FieldAccess:constant
+Method-name:getConstant
+Method-returnType:float
+Method-parameters:[]
+Method-name:getClosestPoint
+Method-returnType:Vector3f
+Method-parameters:[Vector3f point, Vector3f store]
+MethodInvocation:dot
+MethodInvocation:dot
+MethodInvocation:addLocal
+MethodInvocation:multLocal
+MethodInvocation:set
+Method-name:getClosestPoint
+Method-returnType:Vector3f
+Method-parameters:[Vector3f point]
+MethodInvocation:getClosestPoint
+Method-name:reflect
+Method-returnType:Vector3f
+Method-parameters:[Vector3f point, Vector3f store]
+MethodInvocation:pseudoDistance
+MethodInvocation:multLocal
+MethodInvocation:negateLocal
+MethodInvocation:set
+MethodInvocation:addLocal
+Method-name:pseudoDistance
+Method-returnType:float
+Method-parameters:[Vector3f point]
+MethodInvocation:dot
+Method-name:whichSide
+Method-returnType:Side
+Method-parameters:[Vector3f point]
+MethodInvocation:pseudoDistance
+Method-name:isOnPlane
+Method-returnType:boolean
+Method-parameters:[Vector3f point]
+MethodInvocation:pseudoDistance
+Method-name:setPlanePoints
+Method-returnType:void
+Method-parameters:[AbstractTriangle t]
+MethodInvocation:setPlanePoints
+MethodInvocation:get1
+MethodInvocation:get2
+MethodInvocation:get3
+Method-name:setOriginNormal
+Method-returnType:void
+Method-parameters:[Vector3f origin, Vector3f normal]
+MethodInvocation:set
+FieldAccess:normal
+FieldAccess:constant
+Method-name:setPlanePoints
+Method-returnType:void
+Method-parameters:[Vector3f v1, Vector3f v2, Vector3f v3]
+MethodInvocation:subtractLocal
+MethodInvocation:set
+MethodInvocation:normalizeLocal
+MethodInvocation:crossLocal
+MethodInvocation:dot
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter e]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter e]
+MethodInvocation:getCapsule
+MethodInvocation:readSavable
+MethodInvocation:clone
+MethodInvocation:readFloat
+Method-name:clone
+Method-returnType:Plane
+Method-parameters:[]
+MethodInvocation:clone

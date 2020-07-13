@@ -1,0 +1,687 @@
+Class:TransportService
+Field:logger
+MethodInvocation:getLogger
+Field:DIRECT_RESPONSE_PROFILE
+Field:HANDSHAKE_ACTION_NAME
+Field:handleIncomingRequests
+Field:messageListener
+Field:transport
+Field:connectionManager
+Field:threadPool
+Field:clusterName
+Field:taskManager
+Field:asyncSender
+Field:localNodeFactory
+Field:remoteClusterClient
+Field:responseHandlers
+Field:interceptor
+Field:timeoutInfoHandlers
+MethodInvocation:synchronizedMap
+Method-name:removeEldestEntry
+Method-returnType:boolean
+Method-parameters:[Map.Entry eldest]
+MethodInvocation:size
+Field:NOOP_TRANSPORT_INTERCEPTOR
+Field:tracerLog
+Field:tracerLogInclude
+Field:tracerLogExclude
+Field:remoteClusterService
+Field:localNode
+Field:localNodeConnection
+Method-name:getNode
+Method-returnType:DiscoveryNode
+Method-parameters:[]
+Method-name:sendRequest
+Method-returnType:void
+Method-parameters:[long requestId, String action, TransportRequest request, TransportRequestOptions options]
+MethodInvocation:sendLocalRequest
+Method-name:addCloseListener
+Method-returnType:void
+Method-parameters:[ActionListener<Void> listener]
+Method-name:isClosed
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+Method-name:TransportService
+Method-returnType:null
+Method-parameters:[Settings settings, Transport transport, ThreadPool threadPool, TransportInterceptor transportInterceptor, Function<BoundTransportAddress,DiscoveryNode> localNodeFactory, @Nullable ClusterSettings clusterSettings, Set<String> taskHeaders]
+Method-name:TransportService
+Method-returnType:null
+Method-parameters:[Settings settings, Transport transport, ThreadPool threadPool, TransportInterceptor transportInterceptor, Function<BoundTransportAddress,DiscoveryNode> localNodeFactory, @Nullable ClusterSettings clusterSettings, Set<String> taskHeaders, ConnectionManager connectionManager]
+FieldAccess:transport
+FieldAccess:threadPool
+FieldAccess:localNodeFactory
+FieldAccess:connectionManager
+FieldAccess:clusterName
+MethodInvocation:get
+MethodInvocation:setTracerLogInclude
+MethodInvocation:get
+MethodInvocation:setTracerLogExclude
+MethodInvocation:get
+MethodInvocation:getLogger
+MethodInvocation:createTaskManager
+FieldAccess:interceptor
+FieldAccess:asyncSender
+MethodInvocation:interceptSender
+FieldAccess:remoteClusterClient
+MethodInvocation:get
+MethodInvocation:getResponseHandlers
+MethodInvocation:addSettingsUpdateConsumer
+MethodInvocation:addSettingsUpdateConsumer
+MethodInvocation:listenForUpdates
+MethodInvocation:registerRequestHandler
+MethodInvocation:sendResponse
+MethodInvocation:getVersion
+Method-name:getRemoteClusterService
+Method-returnType:RemoteClusterService
+Method-parameters:[]
+Method-name:getLocalNode
+Method-returnType:DiscoveryNode
+Method-parameters:[]
+Method-name:getTaskManager
+Method-returnType:TaskManager
+Method-parameters:[]
+Method-name:createTaskManager
+Method-returnType:TaskManager
+Method-parameters:[Settings settings, ThreadPool threadPool, Set<String> taskHeaders]
+Method-name:getExecutorService
+Method-returnType:ExecutorService
+Method-parameters:[]
+MethodInvocation:generic
+Method-name:setTracerLogInclude
+Method-returnType:void
+Method-parameters:[List<String> tracerLogInclude]
+FieldAccess:tracerLogInclude
+MethodInvocation:toArray
+Method-name:setTracerLogExclude
+Method-returnType:void
+Method-parameters:[List<String> tracerLogExclude]
+FieldAccess:tracerLogExclude
+MethodInvocation:toArray
+Method-name:doStart
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setMessageListener
+MethodInvocation:addListener
+MethodInvocation:start
+MethodInvocation:boundAddress
+MethodInvocation:isInfoEnabled
+MethodInvocation:info
+MethodInvocation:boundAddress
+MethodInvocation:entrySet
+MethodInvocation:profileBoundAddresses
+MethodInvocation:info
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:apply
+MethodInvocation:boundAddress
+MethodInvocation:initializeRemoteClusters
+Method-name:doStop
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+MethodInvocation:prune
+MethodInvocation:execute
+MethodInvocation:getExecutorService
+Method-name:onRejection
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:debug
+MethodInvocation:action
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:warn
+MethodInvocation:action
+Method-name:doRun
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getNode
+MethodInvocation:connection
+MethodInvocation:action
+MethodInvocation:handleException
+MethodInvocation:handler
+Method-name:doClose
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+Method-name:acceptIncomingRequests
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:set
+Method-name:info
+Method-returnType:TransportInfo
+Method-parameters:[]
+MethodInvocation:boundAddress
+MethodInvocation:profileBoundAddresses
+Method-name:stats
+Method-returnType:TransportStats
+Method-parameters:[]
+MethodInvocation:getStats
+Method-name:isTransportSecure
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isSecure
+Method-name:boundAddress
+Method-returnType:BoundTransportAddress
+Method-parameters:[]
+MethodInvocation:boundAddress
+Method-name:getDefaultSeedAddresses
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getDefaultSeedAddresses
+Method-name:nodeConnected
+Method-returnType:boolean
+Method-parameters:[DiscoveryNode node]
+MethodInvocation:isLocalNode
+MethodInvocation:nodeConnected
+Method-name:connectToNode
+Method-returnType:void
+Method-parameters:[DiscoveryNode node, ActionListener<Void> listener]
+MethodInvocation:connectToNode
+Method-name:connectToNode
+Method-returnType:void
+Method-parameters:[final DiscoveryNode node, ConnectionProfile connectionProfile, ActionListener<Void> listener]
+MethodInvocation:isLocalNode
+MethodInvocation:onResponse
+MethodInvocation:connectToNode
+MethodInvocation:connectionValidator
+Method-name:connectionValidator
+Method-returnType:ConnectionManager.ConnectionValidator
+Method-parameters:[DiscoveryNode node]
+MethodInvocation:handshake
+MethodInvocation:millis
+MethodInvocation:getHandshakeTimeout
+MethodInvocation:map
+MethodInvocation:equals
+Method-name:openConnection
+Method-returnType:void
+Method-parameters:[final DiscoveryNode node, ConnectionProfile connectionProfile, ActionListener<Transport.Connection> listener]
+MethodInvocation:isLocalNode
+MethodInvocation:onResponse
+MethodInvocation:openConnection
+Method-name:handshake
+Method-returnType:void
+Method-parameters:[final Transport.Connection connection, final long handshakeTimeout, final ActionListener<DiscoveryNode> listener]
+MethodInvocation:handshake
+MethodInvocation:getEqualityPredicate
+MethodInvocation:map
+Method-name:handshake
+Method-returnType:void
+Method-parameters:[final Transport.Connection connection, final long handshakeTimeout, Predicate<ClusterName> clusterNamePredicate, final ActionListener<HandshakeResponse> listener]
+MethodInvocation:getNode
+MethodInvocation:sendRequest
+MethodInvocation:build
+MethodInvocation:withTimeout
+MethodInvocation:builder
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[HandshakeResponse response]
+MethodInvocation:test
+MethodInvocation:onFailure
+MethodInvocation:value
+MethodInvocation:isCompatible
+MethodInvocation:getVersion
+MethodInvocation:onFailure
+MethodInvocation:getVersion
+MethodInvocation:onResponse
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:onFailure
+Method-name:getConnectionManager
+Method-returnType:ConnectionManager
+Method-parameters:[]
+Class:HandshakeRequest
+Field:INSTANCE
+Method-name:HandshakeRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+Method-name:HandshakeRequest
+Method-returnType:null
+Method-parameters:[]
+Class:HandshakeResponse
+Field:discoveryNode
+Field:clusterName
+Field:version
+Method-name:HandshakeResponse
+Method-returnType:null
+Method-parameters:[DiscoveryNode discoveryNode, ClusterName clusterName, Version version]
+FieldAccess:discoveryNode
+FieldAccess:version
+FieldAccess:clusterName
+Method-name:HandshakeResponse
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readOptionalWriteable
+MethodInvocation:readVersion
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeOptionalWriteable
+MethodInvocation:writeTo
+MethodInvocation:writeVersion
+Method-name:getDiscoveryNode
+Method-returnType:DiscoveryNode
+Method-parameters:[]
+Method-name:getClusterName
+Method-returnType:ClusterName
+Method-parameters:[]
+Method-name:disconnectFromNode
+Method-returnType:void
+Method-parameters:[DiscoveryNode node]
+MethodInvocation:isLocalNode
+MethodInvocation:disconnectFromNode
+Method-name:addMessageListener
+Method-returnType:void
+Method-parameters:[TransportMessageListener listener]
+MethodInvocation:add
+Method-name:removeMessageListener
+Method-returnType:boolean
+Method-parameters:[TransportMessageListener listener]
+MethodInvocation:remove
+Method-name:addConnectionListener
+Method-returnType:void
+Method-parameters:[TransportConnectionListener listener]
+MethodInvocation:addListener
+Method-name:removeConnectionListener
+Method-returnType:void
+Method-parameters:[TransportConnectionListener listener]
+MethodInvocation:removeListener
+Method-name:sendRequest
+Method-returnType:void
+Method-parameters:[final DiscoveryNode node, final String action, final TransportRequest request, final TransportRequestOptions options, TransportResponseHandler<T> handler]
+MethodInvocation:getConnection
+MethodInvocation:handleException
+MethodInvocation:sendRequest
+Method-name:sendRequest
+Method-returnType:void
+Method-parameters:[final Transport.Connection connection, final String action, final TransportRequest request, final TransportRequestOptions options, TransportResponseHandler<T> handler]
+MethodInvocation:isSet
+MethodInvocation:getParentTask
+MethodInvocation:registerChildNode
+MethodInvocation:getId
+MethodInvocation:getParentTask
+MethodInvocation:getNode
+Method-name:handleResponse
+Method-returnType:void
+Method-parameters:[T response]
+MethodInvocation:close
+MethodInvocation:handleResponse
+Method-name:handleException
+Method-returnType:void
+Method-parameters:[TransportException exp]
+MethodInvocation:close
+MethodInvocation:handleException
+Method-name:executor
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:executor
+Method-name:read
+Method-returnType:T
+Method-parameters:[StreamInput in]
+MethodInvocation:read
+MethodInvocation:sendRequest
+MethodInvocation:handleException
+Method-name:getConnection
+Method-returnType:Transport.Connection
+Method-parameters:[DiscoveryNode node]
+MethodInvocation:isLocalNode
+MethodInvocation:getConnection
+Method-name:sendChildRequest
+Method-returnType:void
+Method-parameters:[final DiscoveryNode node, final String action, final TransportRequest request, final Task parentTask, final TransportRequestOptions options, final TransportResponseHandler<T> handler]
+MethodInvocation:getConnection
+MethodInvocation:handleException
+MethodInvocation:sendChildRequest
+Method-name:sendChildRequest
+Method-returnType:void
+Method-parameters:[final Transport.Connection connection, final String action, final TransportRequest request, final Task parentTask, final TransportResponseHandler<T> handler]
+MethodInvocation:sendChildRequest
+Method-name:sendChildRequest
+Method-returnType:void
+Method-parameters:[final Transport.Connection connection, final String action, final TransportRequest request, final Task parentTask, final TransportRequestOptions options, final TransportResponseHandler<T> handler]
+MethodInvocation:setParentTask
+MethodInvocation:getId
+MethodInvocation:getId
+MethodInvocation:sendRequest
+Method-name:sendRequestInternal
+Method-returnType:void
+Method-parameters:[final Transport.Connection connection, final String action, final TransportRequest request, final TransportRequestOptions options, TransportResponseHandler<T> handler]
+Method-name:sendLocalRequest
+Method-returnType:void
+Method-parameters:[long requestId, final String action, final TransportRequest request, TransportRequestOptions options]
+MethodInvocation:onRequestSent
+MethodInvocation:onRequestReceived
+MethodInvocation:getRequestHandler
+MethodInvocation:getExecutor
+MethodInvocation:equals
+MethodInvocation:processMessageReceived
+MethodInvocation:execute
+MethodInvocation:executor
+Method-name:doRun
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:processMessageReceived
+Method-name:isForceExecution
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isForceExecution
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:sendResponse
+MethodInvocation:addSuppressed
+MethodInvocation:warn
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:sendResponse
+MethodInvocation:addSuppressed
+MethodInvocation:warn
+Method-name:shouldTraceAction
+Method-returnType:boolean
+Method-parameters:[String action]
+MethodInvocation:shouldTraceAction
+Method-name:shouldTraceAction
+Method-returnType:boolean
+Method-parameters:[String action, String[] include, String[] exclude]
+MethodInvocation:simpleMatch
+MethodInvocation:simpleMatch
+Method-name:addressesFromString
+Method-returnType:TransportAddress[]
+Method-parameters:[String address]
+MethodInvocation:addressesFromString
+Field:VALID_ACTION_PREFIXES
+MethodInvocation:of
+Method-name:validateActionName
+Method-returnType:void
+Method-parameters:[String actionName]
+MethodInvocation:isValidActionName
+MethodInvocation:warn
+Method-name:isValidActionName
+Method-returnType:boolean
+Method-parameters:[String actionName]
+MethodInvocation:startsWith
+Method-name:registerRequestHandler
+Method-returnType:void
+Method-parameters:[String action, String executor, Writeable.Reader<Request> requestReader, TransportRequestHandler<Request> handler]
+MethodInvocation:validateActionName
+MethodInvocation:interceptHandler
+MethodInvocation:registerRequestHandler
+Method-name:registerRequestHandler
+Method-returnType:void
+Method-parameters:[String action, String executor, boolean forceExecution, boolean canTripCircuitBreaker, Writeable.Reader<Request> requestReader, TransportRequestHandler<Request> handler]
+MethodInvocation:validateActionName
+MethodInvocation:interceptHandler
+MethodInvocation:registerRequestHandler
+Method-name:onRequestReceived
+Method-returnType:void
+Method-parameters:[long requestId, String action]
+MethodInvocation:get
+MethodInvocation:isTraceEnabled
+MethodInvocation:shouldTraceAction
+MethodInvocation:trace
+MethodInvocation:onRequestReceived
+Method-name:onRequestSent
+Method-returnType:void
+Method-parameters:[DiscoveryNode node, long requestId, String action, TransportRequest request, TransportRequestOptions options]
+MethodInvocation:isTraceEnabled
+MethodInvocation:shouldTraceAction
+MethodInvocation:trace
+MethodInvocation:timeout
+MethodInvocation:onRequestSent
+Method-name:onResponseReceived
+Method-returnType:void
+Method-parameters:[long requestId, Transport.ResponseContext holder]
+MethodInvocation:checkForTimeout
+MethodInvocation:isTraceEnabled
+MethodInvocation:shouldTraceAction
+MethodInvocation:action
+MethodInvocation:trace
+MethodInvocation:action
+MethodInvocation:getNode
+MethodInvocation:connection
+MethodInvocation:onResponseReceived
+Method-name:onResponseSent
+Method-returnType:void
+Method-parameters:[long requestId, String action, TransportResponse response]
+MethodInvocation:isTraceEnabled
+MethodInvocation:shouldTraceAction
+MethodInvocation:trace
+MethodInvocation:onResponseSent
+Method-name:onResponseSent
+Method-returnType:void
+Method-parameters:[long requestId, String action, Exception e]
+MethodInvocation:isTraceEnabled
+MethodInvocation:shouldTraceAction
+MethodInvocation:trace
+MethodInvocation:onResponseSent
+Method-name:getRequestHandler
+Method-returnType:RequestHandlerRegistry<? extends TransportRequest>
+Method-parameters:[String action]
+MethodInvocation:getHandler
+MethodInvocation:getRequestHandlers
+Method-name:checkForTimeout
+Method-returnType:void
+Method-parameters:[long requestId]
+Method-name:onConnectionClosed
+Method-returnType:void
+Method-parameters:[Transport.Connection connection]
+MethodInvocation:prune
+MethodInvocation:equals
+MethodInvocation:getCacheKey
+MethodInvocation:connection
+MethodInvocation:getCacheKey
+MethodInvocation:execute
+MethodInvocation:getExecutorService
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:handleException
+MethodInvocation:handler
+MethodInvocation:getNode
+MethodInvocation:action
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getNode
+MethodInvocation:debug
+Class:TimeoutHandler
+Field:requestId
+Field:sentTime
+MethodInvocation:relativeTimeInMillis
+Field:action
+Field:node
+Field:cancellable
+Method-name:TimeoutHandler
+Method-returnType:null
+Method-parameters:[long requestId, DiscoveryNode node, String action]
+FieldAccess:requestId
+FieldAccess:node
+FieldAccess:action
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+Method-name:cancel
+Method-returnType:void
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:scheduleTimeout
+Method-returnType:void
+Method-parameters:[TimeValue timeout]
+FieldAccess:cancellable
+MethodInvocation:schedule
+Class:TimeoutInfoHolder
+Field:node
+Field:action
+Field:sentTime
+Field:timeoutTime
+Method-name:TimeoutInfoHolder
+Method-returnType:null
+Method-parameters:[DiscoveryNode node, String action, long sentTime, long timeoutTime]
+FieldAccess:node
+FieldAccess:action
+FieldAccess:sentTime
+FieldAccess:timeoutTime
+Method-name:node
+Method-returnType:DiscoveryNode
+Method-parameters:[]
+Method-name:action
+Method-returnType:String
+Method-parameters:[]
+Method-name:sentTime
+Method-returnType:long
+Method-parameters:[]
+Method-name:timeoutTime
+Method-returnType:long
+Method-parameters:[]
+Class:ContextRestoreResponseHandler
+Field:delegate
+Field:contextSupplier
+Field:handler
+Method-name:ContextRestoreResponseHandler
+Method-returnType:null
+Method-parameters:[Supplier<ThreadContext.StoredContext> contextSupplier, TransportResponseHandler<T> delegate]
+FieldAccess:delegate
+FieldAccess:contextSupplier
+Method-name:read
+Method-returnType:T
+Method-parameters:[StreamInput in]
+MethodInvocation:read
+Method-name:handleResponse
+Method-returnType:void
+Method-parameters:[T response]
+MethodInvocation:cancel
+MethodInvocation:get
+MethodInvocation:handleResponse
+Method-name:handleException
+Method-returnType:void
+Method-parameters:[TransportException exp]
+MethodInvocation:cancel
+MethodInvocation:get
+MethodInvocation:handleException
+Method-name:executor
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:executor
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:toString
+Method-name:setTimeoutHandler
+Method-returnType:void
+Method-parameters:[TimeoutHandler handler]
+FieldAccess:handler
+Class:DirectResponseChannel
+Field:localNode
+Field:action
+Field:requestId
+Field:service
+Field:threadPool
+Method-name:DirectResponseChannel
+Method-returnType:null
+Method-parameters:[DiscoveryNode localNode, String action, long requestId, TransportService service, ThreadPool threadPool]
+FieldAccess:localNode
+FieldAccess:action
+FieldAccess:requestId
+FieldAccess:service
+FieldAccess:threadPool
+Method-name:getProfileName
+Method-returnType:String
+Method-parameters:[]
+Method-name:sendResponse
+Method-returnType:void
+Method-parameters:[TransportResponse response]
+MethodInvocation:onResponseSent
+MethodInvocation:onResponseReceived
+MethodInvocation:executor
+MethodInvocation:equals
+MethodInvocation:processResponse
+MethodInvocation:execute
+MethodInvocation:executor
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:processResponse
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:processResponse
+Method-returnType:void
+Method-parameters:[TransportResponseHandler handler, TransportResponse response]
+MethodInvocation:handleResponse
+MethodInvocation:processException
+MethodInvocation:wrapInRemote
+Method-name:sendResponse
+Method-returnType:void
+Method-parameters:[Exception exception]
+MethodInvocation:onResponseSent
+MethodInvocation:onResponseReceived
+MethodInvocation:wrapInRemote
+MethodInvocation:executor
+MethodInvocation:equals
+MethodInvocation:processException
+MethodInvocation:execute
+MethodInvocation:executor
+MethodInvocation:executor
+Method-name:run
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:processException
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:wrapInRemote
+Method-returnType:RemoteTransportException
+Method-parameters:[Exception e]
+MethodInvocation:getName
+MethodInvocation:getAddress
+Method-name:processException
+Method-returnType:void
+Method-parameters:[final TransportResponseHandler handler, final RemoteTransportException rtx]
+MethodInvocation:handleException
+MethodInvocation:error
+Method-name:getChannelType
+Method-returnType:String
+Method-parameters:[]
+Method-name:getVersion
+Method-returnType:Version
+Method-parameters:[]
+MethodInvocation:getVersion
+Method-name:getThreadPool
+Method-returnType:ThreadPool
+Method-parameters:[]
+Method-name:isLocalNode
+Method-returnType:boolean
+Method-parameters:[DiscoveryNode discoveryNode]
+MethodInvocation:equals
+MethodInvocation:requireNonNull
+Class:DelegatingTransportMessageListener
+Field:listeners
+Method-name:onRequestReceived
+Method-returnType:void
+Method-parameters:[long requestId, String action]
+MethodInvocation:onRequestReceived
+Method-name:onResponseSent
+Method-returnType:void
+Method-parameters:[long requestId, String action, TransportResponse response]
+MethodInvocation:onResponseSent
+Method-name:onResponseSent
+Method-returnType:void
+Method-parameters:[long requestId, String action, Exception error]
+MethodInvocation:onResponseSent
+Method-name:onRequestSent
+Method-returnType:void
+Method-parameters:[DiscoveryNode node, long requestId, String action, TransportRequest request, TransportRequestOptions finalOptions]
+MethodInvocation:onRequestSent
+Method-name:onResponseReceived
+Method-returnType:void
+Method-parameters:[long requestId, Transport.ResponseContext holder]
+MethodInvocation:onResponseReceived

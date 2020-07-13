@@ -1,0 +1,37 @@
+Class:BlobEndpoint
+Field:blobServiceClient
+Field:configuration
+Method-name:BlobEndpoint
+Method-returnType:null
+Method-parameters:[final String uri, final Component component, final BlobConfiguration configuration]
+FieldAccess:configuration
+Method-name:createProducer
+Method-returnType:Producer
+Method-parameters:[]
+Method-name:createConsumer
+Method-returnType:Consumer
+Method-parameters:[Processor processor]
+MethodInvocation:isEmpty
+MethodInvocation:getContainerName
+MethodInvocation:isEmpty
+MethodInvocation:getBlobName
+Method-name:doStart
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getServiceClient
+MethodInvocation:getServiceClient
+MethodInvocation:createBlobServiceClient
+Method-name:getConfiguration
+Method-returnType:BlobConfiguration
+Method-parameters:[]
+Method-name:setConfiguration
+Method-returnType:void
+Method-parameters:[BlobConfiguration configuration]
+FieldAccess:configuration
+Method-name:getBlobServiceClient
+Method-returnType:BlobServiceClient
+Method-parameters:[]
+Method-name:setBlobServiceClient
+Method-returnType:void
+Method-parameters:[BlobServiceClient blobServiceClient]
+FieldAccess:blobServiceClient

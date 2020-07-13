@@ -1,0 +1,215 @@
+Class:WebsocketEndpoint
+Field:component
+Field:uri
+Field:handlers
+Field:host
+Field:port
+Field:resourceUri
+Field:sendToAll
+Field:sendTimeout
+Field:enableJmx
+Field:sessionSupport
+Field:crossOriginFilterOn
+Field:sslContextParameters
+Field:allowedOrigins
+Field:filterPath
+Field:staticResources
+Field:bufferSize
+Field:maxIdleTime
+Field:maxTextMessageSize
+Field:maxBinaryMessageSize
+Field:minVersion
+Method-name:WebsocketEndpoint
+Method-returnType:null
+Method-parameters:[WebsocketComponent component, String uri, String resourceUri, Map<String,Object> parameters]
+FieldAccess:resourceUri
+FieldAccess:component
+FieldAccess:uri
+Method-name:getComponent
+Method-returnType:WebsocketComponent
+Method-parameters:[]
+MethodInvocation:notNull
+Method-name:createConsumer
+Method-returnType:Consumer
+Method-parameters:[Processor processor]
+MethodInvocation:notNull
+MethodInvocation:configureConsumer
+Method-name:createProducer
+Method-returnType:Producer
+Method-parameters:[]
+Method-name:connect
+Method-returnType:void
+Method-parameters:[WebsocketConsumer consumer]
+MethodInvocation:connect
+Method-name:disconnect
+Method-returnType:void
+Method-parameters:[WebsocketConsumer consumer]
+MethodInvocation:disconnect
+Method-name:connect
+Method-returnType:void
+Method-parameters:[WebsocketProducer producer]
+MethodInvocation:connect
+Method-name:disconnect
+Method-returnType:void
+Method-parameters:[WebsocketProducer producer]
+MethodInvocation:disconnect
+Method-name:getUri
+Method-returnType:URI
+Method-parameters:[]
+Method-name:getPort
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:getHost
+Method-returnType:String
+Method-parameters:[]
+Method-name:setHost
+Method-returnType:void
+Method-parameters:[String host]
+FieldAccess:host
+Method-name:setPort
+Method-returnType:void
+Method-parameters:[int port]
+FieldAccess:port
+Method-name:getStaticResources
+Method-returnType:String
+Method-parameters:[]
+Method-name:setStaticResources
+Method-returnType:void
+Method-parameters:[String staticResources]
+FieldAccess:staticResources
+Method-name:getSendToAll
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setSendToAll
+Method-returnType:void
+Method-parameters:[Boolean sendToAll]
+FieldAccess:sendToAll
+Method-name:getSendTimeout
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setSendTimeout
+Method-returnType:void
+Method-parameters:[Integer sendTimeout]
+FieldAccess:sendTimeout
+Method-name:getProtocol
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getScheme
+Method-name:getPath
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPath
+Method-name:setSessionSupport
+Method-returnType:void
+Method-parameters:[boolean support]
+Method-name:isSessionSupport
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getBufferSize
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setBufferSize
+Method-returnType:void
+Method-parameters:[Integer bufferSize]
+FieldAccess:bufferSize
+Method-name:getMaxIdleTime
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setMaxIdleTime
+Method-returnType:void
+Method-parameters:[Integer maxIdleTime]
+FieldAccess:maxIdleTime
+Method-name:getMaxTextMessageSize
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setMaxTextMessageSize
+Method-returnType:void
+Method-parameters:[Integer maxTextMessageSize]
+FieldAccess:maxTextMessageSize
+Method-name:getMaxBinaryMessageSize
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setMaxBinaryMessageSize
+Method-returnType:void
+Method-parameters:[Integer maxBinaryMessageSize]
+FieldAccess:maxBinaryMessageSize
+Method-name:getMinVersion
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setMinVersion
+Method-returnType:void
+Method-parameters:[Integer minVersion]
+FieldAccess:minVersion
+Method-name:getHandlers
+Method-returnType:List<Handler>
+Method-parameters:[]
+Method-name:setHandlers
+Method-returnType:void
+Method-parameters:[List<Handler> handlers]
+FieldAccess:handlers
+Method-name:getSslContextParameters
+Method-returnType:SSLContextParameters
+Method-parameters:[]
+Method-name:setSslContextParameters
+Method-returnType:void
+Method-parameters:[SSLContextParameters sslContextParameters]
+FieldAccess:sslContextParameters
+Method-name:isEnableJmx
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:enableJmx
+Method-name:setEnableJmx
+Method-returnType:void
+Method-parameters:[boolean enableJmx]
+FieldAccess:enableJmx
+Method-name:getAllowedOrigins
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAllowedOrigins
+Method-returnType:void
+Method-parameters:[String allowedOrigins]
+FieldAccess:allowedOrigins
+Method-name:isCrossOriginFilterOn
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setCrossOriginFilterOn
+Method-returnType:void
+Method-parameters:[boolean crossOriginFilterOn]
+FieldAccess:crossOriginFilterOn
+Method-name:getFilterPath
+Method-returnType:String
+Method-parameters:[]
+Method-name:setFilterPath
+Method-returnType:void
+Method-parameters:[String filterPath]
+FieldAccess:filterPath
+Method-name:getResourceUri
+Method-returnType:String
+Method-parameters:[]
+Method-name:setResourceUri
+Method-returnType:void
+Method-parameters:[String resourceUri]
+FieldAccess:resourceUri
+Method-name:setWebSocketComponentServletInitialParameter
+Method-returnType:void
+Method-parameters:[ServletContextHandler context, WebsocketComponent websocketComponent]
+MethodInvocation:getBufferSize
+MethodInvocation:setInitParameter
+MethodInvocation:toString
+MethodInvocation:getBufferSize
+MethodInvocation:getMaxIdleTime
+MethodInvocation:setInitParameter
+MethodInvocation:toString
+MethodInvocation:getMaxIdleTime
+MethodInvocation:getMaxTextMessageSize
+MethodInvocation:setInitParameter
+MethodInvocation:toString
+MethodInvocation:getMaxTextMessageSize
+MethodInvocation:getMaxBinaryMessageSize
+MethodInvocation:setInitParameter
+MethodInvocation:toString
+MethodInvocation:getMaxBinaryMessageSize
+MethodInvocation:getMinVersion
+MethodInvocation:setInitParameter
+MethodInvocation:toString
+MethodInvocation:getMinVersion

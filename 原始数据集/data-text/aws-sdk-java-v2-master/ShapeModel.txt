@@ -1,0 +1,376 @@
+Class:ShapeModel
+Field:c2jName
+Field:shapeName
+Field:deprecated
+Field:type
+Field:required
+Field:hasPayloadMember
+Field:hasHeaderMember
+Field:hasStatusCodeMember
+Field:hasStreamingMember
+Field:hasRequiresLengthMember
+Field:wrapper
+Field:simpleMethod
+Field:requestSignerClassFqcn
+Field:endpointDiscovery
+Field:members
+Field:enums
+Field:variable
+Field:marshaller
+Field:unmarshaller
+Field:errorCode
+Field:httpStatusCode
+Field:customization
+Field:isEventStream
+Field:isEvent
+Field:xmlNamespace
+Method-name:ShapeModel
+Method-returnType:null
+Method-parameters:[@JsonProperty("c2jName") String c2jName]
+FieldAccess:c2jName
+Method-name:getShapeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setShapeName
+Method-returnType:void
+Method-parameters:[String shapeName]
+FieldAccess:shapeName
+Method-name:isDeprecated
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDeprecated
+Method-returnType:void
+Method-parameters:[boolean deprecated]
+FieldAccess:deprecated
+Method-name:getC2jName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getType
+Method-returnType:String
+Method-parameters:[]
+Method-name:setType
+Method-returnType:void
+Method-parameters:[ShapeType shapeType]
+MethodInvocation:setType
+MethodInvocation:getValue
+Method-name:setType
+Method-returnType:void
+Method-parameters:[String type]
+FieldAccess:type
+Method-name:getShapeType
+Method-returnType:ShapeType
+Method-parameters:[]
+MethodInvocation:fromValue
+Method-name:withType
+Method-returnType:ShapeModel
+Method-parameters:[String type]
+FieldAccess:type
+Method-name:getRequired
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:setRequired
+Method-returnType:void
+Method-parameters:[List<String> required]
+FieldAccess:required
+Method-name:isHasPayloadMember
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setHasPayloadMember
+Method-returnType:void
+Method-parameters:[boolean hasPayloadMember]
+FieldAccess:hasPayloadMember
+Method-name:withHasPayloadMember
+Method-returnType:ShapeModel
+Method-parameters:[boolean hasPayloadMember]
+MethodInvocation:setHasPayloadMember
+Method-name:getPayloadMember
+Method-returnType:MemberModel
+Method-parameters:[]
+MethodInvocation:getIsPayload
+MethodInvocation:getHttp
+MethodInvocation:format
+Method-name:getUnboundMembers
+Method-returnType:List<MemberModel>
+Method-parameters:[]
+MethodInvocation:getLocation
+MethodInvocation:getHttp
+MethodInvocation:format
+MethodInvocation:add
+Method-name:getUnboundEventMembers
+Method-returnType:List<MemberModel>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:isEventHeader
+MethodInvocation:isEventPayload
+MethodInvocation:toList
+Method-name:hasPayloadMembers
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getExplicitEventPayloadMember
+MethodInvocation:isEmpty
+MethodInvocation:getUnboundMembers
+MethodInvocation:isEvent
+MethodInvocation:isEmpty
+MethodInvocation:getUnboundEventMembers
+Method-name:getExplicitEventPayloadMember
+Method-returnType:MemberModel
+Method-parameters:[]
+MethodInvocation:orElse
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+Method-name:hasNoEventPayload
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:allMatch
+MethodInvocation:stream
+Method-name:isHasStreamingMember
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setHasStreamingMember
+Method-returnType:void
+Method-parameters:[boolean hasStreamingMember]
+FieldAccess:hasStreamingMember
+Method-name:withHasStreamingMember
+Method-returnType:ShapeModel
+Method-parameters:[boolean hasStreamingMember]
+MethodInvocation:setHasStreamingMember
+Method-name:isHasRequiresLengthMember
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setHasRequiresLengthMember
+Method-returnType:void
+Method-parameters:[boolean hasRequiresLengthMember]
+FieldAccess:hasRequiresLengthMember
+Method-name:withHasRequiresLengthMember
+Method-returnType:ShapeModel
+Method-parameters:[boolean hasRequiresLengthMember]
+MethodInvocation:setHasRequiresLengthMember
+Method-name:isHasHeaderMember
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setHasHeaderMember
+Method-returnType:void
+Method-parameters:[boolean hasHeaderMember]
+FieldAccess:hasHeaderMember
+Method-name:withHasHeaderMember
+Method-returnType:ShapeModel
+Method-parameters:[boolean hasHeaderMember]
+MethodInvocation:setHasHeaderMember
+Method-name:isHasStatusCodeMember
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setHasStatusCodeMember
+Method-returnType:void
+Method-parameters:[boolean hasStatusCodeMember]
+FieldAccess:hasStatusCodeMember
+Method-name:isWrapper
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setWrapper
+Method-returnType:void
+Method-parameters:[boolean wrapper]
+FieldAccess:wrapper
+Method-name:isSimpleMethod
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSimpleMethod
+Method-returnType:void
+Method-parameters:[boolean simpleMethod]
+FieldAccess:simpleMethod
+Method-name:withHasStatusCodeMember
+Method-returnType:ShapeModel
+Method-parameters:[boolean hasStatusCodeMember]
+MethodInvocation:setHasStatusCodeMember
+Method-name:getMemberByVariableName
+Method-returnType:MemberModel
+Method-parameters:[String memberVariableName]
+MethodInvocation:equals
+MethodInvocation:getVariableName
+MethodInvocation:getVariable
+Method-name:getMemberByName
+Method-returnType:MemberModel
+Method-parameters:[String memberName]
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:getMemberByC2jName
+Method-returnType:MemberModel
+Method-parameters:[String memberName]
+MethodInvocation:equals
+MethodInvocation:getC2jName
+Method-name:getMembers
+Method-returnType:List<MemberModel>
+Method-parameters:[]
+MethodInvocation:emptyList
+Method-name:getNonStreamingMembers
+Method-returnType:List<MemberModel>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getMembers
+MethodInvocation:getIsStreaming
+MethodInvocation:getHttp
+MethodInvocation:getShape
+FieldAccess:isEventStream
+MethodInvocation:getShape
+MethodInvocation:toList
+Method-name:setMembers
+Method-returnType:void
+Method-parameters:[List<MemberModel> members]
+FieldAccess:members
+Method-name:addMember
+Method-returnType:void
+Method-parameters:[MemberModel member]
+FieldAccess:members
+FieldAccess:members
+MethodInvocation:add
+Method-name:getEnums
+Method-returnType:List<EnumModel>
+Method-parameters:[]
+Method-name:setEnums
+Method-returnType:void
+Method-parameters:[List<EnumModel> enums]
+FieldAccess:enums
+Method-name:addEnum
+Method-returnType:void
+Method-parameters:[EnumModel enumModel]
+FieldAccess:enums
+FieldAccess:enums
+MethodInvocation:add
+FieldAccess:enums
+Method-name:getVariable
+Method-returnType:VariableModel
+Method-parameters:[]
+Method-name:setVariable
+Method-returnType:void
+Method-parameters:[VariableModel variable]
+FieldAccess:variable
+Method-name:getMarshaller
+Method-returnType:ShapeMarshaller
+Method-parameters:[]
+Method-name:setMarshaller
+Method-returnType:void
+Method-parameters:[ShapeMarshaller marshaller]
+FieldAccess:marshaller
+Method-name:getUnmarshaller
+Method-returnType:ShapeUnmarshaller
+Method-parameters:[]
+Method-name:setUnmarshaller
+Method-returnType:void
+Method-parameters:[ShapeUnmarshaller unmarshaller]
+FieldAccess:unmarshaller
+Method-name:getCustomization
+Method-returnType:ShapeCustomizationInfo
+Method-parameters:[]
+Method-name:setCustomization
+Method-returnType:void
+Method-parameters:[ShapeCustomizationInfo customization]
+FieldAccess:customization
+Method-name:getMembersAsMap
+Method-returnType:Map<String,MemberModel>
+Method-parameters:[]
+MethodInvocation:getMembers
+MethodInvocation:put
+MethodInvocation:getName
+Method-name:tryFindMemberModelByC2jName
+Method-returnType:MemberModel
+Method-parameters:[String memberC2jName, boolean ignoreCase]
+MethodInvocation:getMembers
+MethodInvocation:lowerCase
+MethodInvocation:lowerCase
+MethodInvocation:getC2jName
+MethodInvocation:getC2jName
+MethodInvocation:equals
+Method-name:findMemberModelByC2jName
+Method-returnType:MemberModel
+Method-parameters:[String memberC2jName]
+MethodInvocation:tryFindMemberModelByC2jName
+Method-name:removeMemberByC2jName
+Method-returnType:boolean
+Method-parameters:[String memberC2jName, boolean ignoreCase]
+MethodInvocation:tryFindMemberModelByC2jName
+MethodInvocation:remove
+Method-name:findEnumModelByValue
+Method-returnType:EnumModel
+Method-parameters:[String enumValue]
+MethodInvocation:equals
+MethodInvocation:getValue
+Method-name:getDocumentationShapeName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getShapeType
+MethodInvocation:removeFromEnd
+MethodInvocation:removeFromEnd
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getErrorCode
+Method-returnType:String
+Method-parameters:[]
+Method-name:setErrorCode
+Method-returnType:void
+Method-parameters:[String errorCode]
+FieldAccess:errorCode
+Method-name:getHttpStatusCode
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setHttpStatusCode
+Method-returnType:void
+Method-parameters:[Integer httpStatusCode]
+FieldAccess:httpStatusCode
+Method-name:isRequestSignerAware
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getRequestSignerClassFqcn
+Method-returnType:String
+Method-parameters:[]
+Method-name:setRequestSignerClassFqcn
+Method-returnType:void
+Method-parameters:[String authorizerClass]
+FieldAccess:requestSignerClassFqcn
+Method-name:getEndpointDiscovery
+Method-returnType:EndpointDiscovery
+Method-parameters:[]
+Method-name:setEndpointDiscovery
+Method-returnType:void
+Method-parameters:[EndpointDiscovery endpointDiscovery]
+FieldAccess:endpointDiscovery
+Method-name:isEventStream
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:isEventStream
+Method-name:withIsEventStream
+Method-returnType:ShapeModel
+Method-parameters:[boolean isEventStream]
+FieldAccess:isEventStream
+Method-name:isEvent
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:isEvent
+Method-name:withIsEvent
+Method-returnType:ShapeModel
+Method-parameters:[boolean isEvent]
+FieldAccess:isEvent
+Method-name:getXmlNamespace
+Method-returnType:XmlNamespace
+Method-parameters:[]
+Method-name:withXmlNamespace
+Method-returnType:ShapeModel
+Method-parameters:[XmlNamespace xmlNamespace]
+FieldAccess:xmlNamespace
+Method-name:setXmlNamespace
+Method-returnType:void
+Method-parameters:[XmlNamespace xmlNamespace]
+FieldAccess:xmlNamespace
+Method-name:hasInputStreamOperations
+Method-returnType:boolean
+Method-parameters:[Collection<OperationModel> opModels, AwsServiceModel awsServiceModel]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:doesShapeContainsEventStream
+MethodInvocation:getInputShape

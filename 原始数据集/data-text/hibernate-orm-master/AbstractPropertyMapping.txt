@@ -1,0 +1,152 @@
+Class:AbstractPropertyMapping
+Field:LOG
+MethodInvocation:messageLogger
+Field:typesByPropertyPath
+Field:duplicateIncompatiblePaths
+Field:columnsByPropertyPath
+Field:columnReadersByPropertyPath
+Field:columnReaderTemplatesByPropertyPath
+Field:formulaTemplatesByPropertyPath
+Method-name:getIdentifierColumnNames
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:getIdentifierColumnReaderTemplates
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:getIdentifierColumnReaders
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:getEntityName
+Method-returnType:String
+Method-parameters:[]
+Method-name:toType
+Method-returnType:Type
+Method-parameters:[String propertyName]
+MethodInvocation:get
+MethodInvocation:propertyException
+Method-name:propertyException
+Method-returnType:QueryException
+Method-parameters:[String propertyName]
+MethodInvocation:getEntityName
+Method-name:getColumnNames
+Method-returnType:String[]
+Method-parameters:[String propertyName]
+MethodInvocation:get
+Method-name:toColumns
+Method-returnType:String[]
+Method-parameters:[String alias, String propertyName]
+MethodInvocation:get
+MethodInvocation:propertyException
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:replace
+MethodInvocation:replace
+Method-name:toColumns
+Method-returnType:String[]
+Method-parameters:[String propertyName]
+MethodInvocation:get
+MethodInvocation:propertyException
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:replace
+Method-name:logDuplicateRegistration
+Method-returnType:void
+Method-parameters:[String path, Type existingType, Type type]
+MethodInvocation:isTraceEnabled
+MethodInvocation:tracev
+Method-name:logIncompatibleRegistration
+Method-returnType:void
+Method-parameters:[String path, Type existingType, Type type]
+MethodInvocation:isTraceEnabled
+MethodInvocation:tracev
+MethodInvocation:getEntityName
+Method-name:addPropertyPath
+Method-returnType:void
+Method-parameters:[String path, Type type, String[] columns, String[] columnReaders, String[] columnReaderTemplates, String[] formulaTemplates]
+MethodInvocation:addPropertyPath
+Method-name:addPropertyPath
+Method-returnType:void
+Method-parameters:[String path, Type type, String[] columns, String[] columnReaders, String[] columnReaderTemplates, String[] formulaTemplates, Mapping factory]
+MethodInvocation:get
+MethodInvocation:contains
+MethodInvocation:logDuplicateRegistration
+MethodInvocation:logDuplicateRegistration
+MethodInvocation:getCollectionBinding
+MethodInvocation:getRole
+MethodInvocation:getCollectionBinding
+MethodInvocation:getRole
+MethodInvocation:isSame
+MethodInvocation:logDuplicateRegistration
+MethodInvocation:logIncompatibleRegistration
+MethodInvocation:equals
+MethodInvocation:getAssociatedEntityName
+MethodInvocation:getAssociatedEntityName
+MethodInvocation:logDuplicateRegistration
+MethodInvocation:getCommonType
+MethodInvocation:logIncompatibleRegistration
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+Method-name:getCommonType
+Method-returnType:Type
+Method-parameters:[MetadataImplementor metadata, EntityType entityType1, EntityType entityType2]
+MethodInvocation:getEntityBinding
+MethodInvocation:getAssociatedEntityName
+MethodInvocation:getEntityBinding
+MethodInvocation:getAssociatedEntityName
+MethodInvocation:getCommonPersistentClass
+MethodInvocation:getEntityName
+MethodInvocation:getEntityName
+MethodInvocation:getEntityName
+Method-name:getCommonPersistentClass
+Method-returnType:PersistentClass
+Method-parameters:[PersistentClass clazz1, PersistentClass clazz2]
+MethodInvocation:getMappedClass
+MethodInvocation:getMappedClass
+MethodInvocation:isAssignableFrom
+MethodInvocation:getMappedClass
+MethodInvocation:getMappedClass
+MethodInvocation:getSuperclass
+Method-name:initPropertyPaths
+Method-returnType:void
+Method-parameters:[final String path, final Type type, String[] columns, String[] columnReaders, String[] columnReaderTemplates, final String[] formulaTemplates, final Mapping factory]
+Method-name:initIdentifierPropertyPaths
+Method-returnType:void
+Method-parameters:[final String path, final EntityType etype, final String[] columns, final String[] columnReaders, final String[] columnReaderTemplates, final Mapping factory]
+MethodInvocation:getIdentifierOrUniqueKeyType
+MethodInvocation:getIdentifierOrUniqueKeyPropertyName
+MethodInvocation:hasNonIdentifierPropertyNamedId
+MethodInvocation:isReferenceToPrimaryKey
+MethodInvocation:extendPath
+MethodInvocation:addPropertyPath
+MethodInvocation:initPropertyPaths
+MethodInvocation:isNullable
+MethodInvocation:extendPath
+MethodInvocation:addPropertyPath
+MethodInvocation:initPropertyPaths
+Method-name:initComponentPropertyPaths
+Method-returnType:void
+Method-parameters:[final String path, final CompositeType type, final String[] columns, final String[] columnReaders, final String[] columnReaderTemplates, String[] formulaTemplates, final Mapping factory]
+MethodInvocation:getSubtypes
+MethodInvocation:getPropertyNames
+MethodInvocation:extendPath
+MethodInvocation:getColumnSpan
+MethodInvocation:slice
+MethodInvocation:slice
+MethodInvocation:slice
+MethodInvocation:slice
+MethodInvocation:initPropertyPaths
+Method-name:extendPath
+Method-returnType:String
+Method-parameters:[String path, String property]
+MethodInvocation:isEmpty
+MethodInvocation:qualify

@@ -1,0 +1,25 @@
+Class:Resource
+Field:directory
+Field:filtering
+Method-name:getDirectory
+Method-returnType:File
+Method-parameters:[]
+Method-name:setDirectory
+Method-returnType:void
+Method-parameters:[File directory]
+FieldAccess:directory
+Method-name:isFiltering
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setFiltering
+Method-returnType:void
+Method-parameters:[boolean filtering]
+FieldAccess:filtering
+Method-name:isFilteringOther
+Method-returnType:boolean
+Method-parameters:[Path file, CopyResources copyResources]
+MethodInvocation:isFiltering
+MethodInvocation:after
+MethodInvocation:toString
+MethodInvocation:getFileName
+MethodInvocation:contains

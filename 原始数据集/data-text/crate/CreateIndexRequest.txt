@@ -1,0 +1,263 @@
+Class:CreateIndexRequest
+Field:MAPPINGS
+Field:SETTINGS
+Field:ALIASES
+Field:cause
+Field:index
+Field:settings
+Field:mappings
+Field:aliases
+Field:updateAllTypes
+Field:waitForActiveShards
+Method-name:CreateIndexRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:CreateIndexRequest
+Method-returnType:null
+Method-parameters:[String index]
+Method-name:CreateIndexRequest
+Method-returnType:null
+Method-parameters:[String index, Settings settings]
+FieldAccess:index
+FieldAccess:settings
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+MethodInvocation:addValidationError
+Method-name:indices
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:indicesOptions
+Method-returnType:IndicesOptions
+Method-parameters:[]
+MethodInvocation:strictSingleIndexNoExpandForbidClosed
+Method-name:index
+Method-returnType:String
+Method-parameters:[]
+Method-name:index
+Method-returnType:CreateIndexRequest
+Method-parameters:[String index]
+FieldAccess:index
+Method-name:settings
+Method-returnType:Settings
+Method-parameters:[]
+Method-name:cause
+Method-returnType:String
+Method-parameters:[]
+Method-name:settings
+Method-returnType:CreateIndexRequest
+Method-parameters:[Settings.Builder settings]
+FieldAccess:settings
+MethodInvocation:build
+Method-name:settings
+Method-returnType:CreateIndexRequest
+Method-parameters:[Settings settings]
+FieldAccess:settings
+Method-name:settings
+Method-returnType:CreateIndexRequest
+Method-parameters:[String source, XContentType xContentType]
+FieldAccess:settings
+MethodInvocation:build
+MethodInvocation:loadFromSource
+MethodInvocation:builder
+Method-name:settings
+Method-returnType:CreateIndexRequest
+Method-parameters:[XContentBuilder builder]
+MethodInvocation:settings
+MethodInvocation:toString
+MethodInvocation:contentType
+Method-name:settings
+Method-returnType:CreateIndexRequest
+Method-parameters:[Map source]
+MethodInvocation:contentBuilder
+MethodInvocation:map
+MethodInvocation:settings
+MethodInvocation:toString
+Method-name:mapping
+Method-returnType:CreateIndexRequest
+Method-parameters:[String type, String source, XContentType xContentType]
+MethodInvocation:mapping
+Method-name:cause
+Method-returnType:CreateIndexRequest
+Method-parameters:[String cause]
+FieldAccess:cause
+Method-name:mapping
+Method-returnType:CreateIndexRequest
+Method-parameters:[String type, XContentBuilder source]
+MethodInvocation:mapping
+MethodInvocation:bytes
+MethodInvocation:contentType
+Method-name:mapping
+Method-returnType:CreateIndexRequest
+Method-parameters:[String type, Map source]
+MethodInvocation:containsKey
+MethodInvocation:size
+MethodInvocation:containsKey
+MethodInvocation:map
+MethodInvocation:put
+MethodInvocation:newMapBuilder
+MethodInvocation:contentBuilder
+MethodInvocation:map
+MethodInvocation:mapping
+Method-name:mapping
+Method-returnType:CreateIndexRequest
+Method-parameters:[String type, Object... source]
+MethodInvocation:mapping
+MethodInvocation:buildFromSimplifiedDef
+Method-name:aliases
+Method-returnType:CreateIndexRequest
+Method-parameters:[Map source]
+MethodInvocation:jsonBuilder
+MethodInvocation:map
+MethodInvocation:aliases
+MethodInvocation:bytes
+Method-name:aliases
+Method-returnType:CreateIndexRequest
+Method-parameters:[XContentBuilder source]
+MethodInvocation:aliases
+MethodInvocation:bytes
+Method-name:aliases
+Method-returnType:CreateIndexRequest
+Method-parameters:[String source]
+MethodInvocation:aliases
+Method-name:aliases
+Method-returnType:CreateIndexRequest
+Method-parameters:[BytesReference source]
+MethodInvocation:createParser
+MethodInvocation:nextToken
+MethodInvocation:nextToken
+MethodInvocation:alias
+MethodInvocation:fromXContent
+Method-name:alias
+Method-returnType:CreateIndexRequest
+Method-parameters:[Alias alias]
+MethodInvocation:add
+FieldAccess:aliases
+Method-name:source
+Method-returnType:CreateIndexRequest
+Method-parameters:[String source, XContentType xContentType]
+MethodInvocation:source
+Method-name:source
+Method-returnType:CreateIndexRequest
+Method-parameters:[XContentBuilder source]
+MethodInvocation:source
+MethodInvocation:bytes
+MethodInvocation:contentType
+Method-name:source
+Method-returnType:CreateIndexRequest
+Method-parameters:[byte[] source, XContentType xContentType]
+MethodInvocation:source
+Method-name:source
+Method-returnType:CreateIndexRequest
+Method-parameters:[byte[] source, int offset, int length, XContentType xContentType]
+MethodInvocation:source
+Method-name:source
+Method-returnType:CreateIndexRequest
+Method-parameters:[BytesReference source, XContentType xContentType]
+MethodInvocation:requireNonNull
+MethodInvocation:source
+MethodInvocation:v2
+MethodInvocation:convertToMap
+Method-name:source
+Method-returnType:CreateIndexRequest
+Method-parameters:[Map<String,?> source, DeprecationHandler deprecationHandler]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:match
+MethodInvocation:settings
+MethodInvocation:getValue
+MethodInvocation:match
+MethodInvocation:getValue
+MethodInvocation:entrySet
+MethodInvocation:mapping
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:match
+MethodInvocation:aliases
+MethodInvocation:getValue
+MethodInvocation:settings
+Method-name:mappings
+Method-returnType:Map<String,String>
+Method-parameters:[]
+FieldAccess:mappings
+Method-name:aliases
+Method-returnType:Set<Alias>
+Method-parameters:[]
+FieldAccess:aliases
+Method-name:updateAllTypes
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:updateAllTypes
+Method-returnType:CreateIndexRequest
+Method-parameters:[boolean updateAllTypes]
+FieldAccess:updateAllTypes
+Method-name:waitForActiveShards
+Method-returnType:ActiveShardCount
+Method-parameters:[]
+Method-name:waitForActiveShards
+Method-returnType:CreateIndexRequest
+Method-parameters:[ActiveShardCount waitForActiveShards]
+FieldAccess:waitForActiveShards
+Method-name:waitForActiveShards
+Method-returnType:CreateIndexRequest
+Method-parameters:[final int waitForActiveShards]
+MethodInvocation:waitForActiveShards
+MethodInvocation:from
+Method-name:readFrom
+Method-returnType:void
+Method-parameters:[StreamInput in]
+MethodInvocation:readString
+MethodInvocation:readString
+MethodInvocation:readSettingsFromStream
+MethodInvocation:readVInt
+MethodInvocation:readString
+MethodInvocation:readString
+MethodInvocation:put
+MethodInvocation:readVInt
+MethodInvocation:add
+MethodInvocation:read
+MethodInvocation:readBoolean
+MethodInvocation:readFrom
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeString
+MethodInvocation:writeString
+MethodInvocation:writeSettingsToStream
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:writeString
+MethodInvocation:getKey
+MethodInvocation:writeString
+MethodInvocation:getValue
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeTo
+MethodInvocation:writeBoolean
+MethodInvocation:writeTo
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startObject
+MethodInvocation:innerToXContent
+MethodInvocation:endObject
+Method-name:innerToXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startObject
+MethodInvocation:getPreferredName
+MethodInvocation:toXContent
+MethodInvocation:endObject
+MethodInvocation:startObject
+MethodInvocation:getPreferredName
+MethodInvocation:entrySet
+MethodInvocation:streamInput
+MethodInvocation:getValue
+MethodInvocation:rawField
+MethodInvocation:getKey
+MethodInvocation:endObject
+MethodInvocation:startObject
+MethodInvocation:getPreferredName
+MethodInvocation:toXContent
+MethodInvocation:endObject

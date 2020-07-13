@@ -1,0 +1,74 @@
+Class:TableFunctionScan
+Field:rexCall
+Field:elementType
+Field:inputs
+Field:columnMappings
+Method-name:TableFunctionScan
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, List<RelNode> inputs, RexNode rexCall, Type elementType, RelDataType rowType, Set<RelColumnMapping> columnMappings]
+FieldAccess:rexCall
+FieldAccess:elementType
+FieldAccess:rowType
+FieldAccess:inputs
+MethodInvocation:copyOf
+FieldAccess:columnMappings
+MethodInvocation:copyOf
+Method-name:TableFunctionScan
+Method-returnType:null
+Method-parameters:[RelInput input]
+MethodInvocation:getCluster
+MethodInvocation:getTraitSet
+MethodInvocation:getInputs
+MethodInvocation:getExpression
+MethodInvocation:get
+MethodInvocation:getRowType
+MethodInvocation:of
+Method-name:copy
+Method-returnType:TableFunctionScan
+Method-parameters:[RelTraitSet traitSet, List<RelNode> inputs]
+MethodInvocation:copy
+Method-name:copy
+Method-returnType:TableFunctionScan
+Method-parameters:[RelTraitSet traitSet, List<RelNode> inputs, RexNode rexCall, Type elementType, RelDataType rowType, Set<RelColumnMapping> columnMappings]
+Method-name:getInputs
+Method-returnType:List<RelNode>
+Method-parameters:[]
+Method-name:getChildExps
+Method-returnType:List<RexNode>
+Method-parameters:[]
+MethodInvocation:of
+Method-name:accept
+Method-returnType:RelNode
+Method-parameters:[RexShuttle shuttle]
+MethodInvocation:apply
+FieldAccess:rexCall
+FieldAccess:rexCall
+MethodInvocation:copy
+Method-name:replaceInput
+Method-returnType:void
+Method-parameters:[int ordinalInParent, RelNode p]
+MethodInvocation:set
+MethodInvocation:copyOf
+MethodInvocation:recomputeDigest
+Method-name:estimateRowCount
+Method-returnType:double
+Method-parameters:[RelMetadataQuery mq]
+MethodInvocation:size
+MethodInvocation:getRowCount
+Method-name:getCall
+Method-returnType:RexNode
+Method-parameters:[]
+Method-name:explainTerms
+Method-returnType:RelWriter
+Method-parameters:[RelWriter pw]
+MethodInvocation:zip
+MethodInvocation:input
+MethodInvocation:item
+MethodInvocation:item
+MethodInvocation:item
+Method-name:getColumnMappings
+Method-returnType:Set<RelColumnMapping>
+Method-parameters:[]
+Method-name:getElementType
+Method-returnType:Type
+Method-parameters:[]

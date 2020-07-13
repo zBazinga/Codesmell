@@ -1,0 +1,67 @@
+Class:PongUI
+Field:pconf
+Method-name:PongUI
+Method-returnType:null
+Method-parameters:[KieSession ksession, GameConfiguration conf]
+FieldAccess:pconf
+Method-name:init
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:registerWindowListenerOnFrame
+Method-name:windowClosing
+Method-returnType:void
+Method-parameters:[WindowEvent e]
+MethodInvocation:halt
+MethodInvocation:getKieSession
+Method-name:drawGame
+Method-returnType:void
+Method-parameters:[Ball ball, Bat bat1, Bat bat2, Player p1, Player p2]
+MethodInvocation:getGraphics
+MethodInvocation:setColor
+MethodInvocation:fillRect
+MethodInvocation:getWidth
+MethodInvocation:getHeight
+MethodInvocation:setColor
+MethodInvocation:drawScore
+MethodInvocation:drawScore
+MethodInvocation:getTableWidth
+MethodInvocation:drawTable
+MethodInvocation:drawBall
+MethodInvocation:drawBat
+MethodInvocation:drawBat
+MethodInvocation:repaint
+Method-name:drawTable
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getGraphics
+MethodInvocation:getPadding
+MethodInvocation:getTableWidth
+MethodInvocation:getTableHeight
+MethodInvocation:getSideLineWidth
+MethodInvocation:fillRect
+MethodInvocation:fillRect
+MethodInvocation:getNetWidth
+MethodInvocation:getNetGap
+MethodInvocation:getNetDash
+MethodInvocation:fillRect
+Method-name:drawBat
+Method-returnType:void
+Method-parameters:[Bat bat]
+MethodInvocation:getGraphics
+MethodInvocation:setColor
+MethodInvocation:fillRect
+MethodInvocation:getX
+MethodInvocation:getY
+MethodInvocation:getWidth
+MethodInvocation:getHeight
+Method-name:drawScore
+Method-returnType:void
+Method-parameters:[Player p, int x]
+MethodInvocation:getGraphics
+MethodInvocation:boundedTop
+MethodInvocation:setColor
+MethodInvocation:fillRect
+MethodInvocation:getFontRenderContext
+MethodInvocation:getScore
+MethodInvocation:setColor
+MethodInvocation:draw

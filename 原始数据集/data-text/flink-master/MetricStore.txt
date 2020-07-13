@@ -1,0 +1,162 @@
+Class:MetricStore
+Field:LOG
+MethodInvocation:getLogger
+Field:jobManager
+Field:taskManagers
+Field:jobs
+Method-name:retainTaskManagers
+Method-returnType:void
+Method-parameters:[List<String> activeTaskManagers]
+MethodInvocation:retainAll
+MethodInvocation:keySet
+Method-name:retainJobs
+Method-returnType:void
+Method-parameters:[List<String> activeJobs]
+MethodInvocation:retainAll
+MethodInvocation:keySet
+Method-name:addAll
+Method-returnType:void
+Method-parameters:[List<MetricDump> metricDumps]
+MethodInvocation:add
+Method-name:getJobManagerMetricStore
+Method-returnType:ComponentMetricStore
+Method-parameters:[]
+MethodInvocation:unmodifiable
+Method-name:getTaskManagerMetricStore
+Method-returnType:TaskManagerMetricStore
+Method-parameters:[String tmID]
+MethodInvocation:unmodifiable
+MethodInvocation:get
+Method-name:getJobMetricStore
+Method-returnType:ComponentMetricStore
+Method-parameters:[String jobID]
+MethodInvocation:unmodifiable
+MethodInvocation:get
+Method-name:getTaskMetricStore
+Method-returnType:TaskMetricStore
+Method-parameters:[String jobID, String taskID]
+MethodInvocation:get
+MethodInvocation:unmodifiable
+MethodInvocation:getTaskMetricStore
+Method-name:getSubtaskMetricStore
+Method-returnType:ComponentMetricStore
+Method-parameters:[String jobID, String taskID, int subtaskIndex]
+MethodInvocation:get
+MethodInvocation:getTaskMetricStore
+MethodInvocation:unmodifiable
+MethodInvocation:getSubtaskMetricStore
+Method-name:getJobs
+Method-returnType:Map<String,JobMetricStore>
+Method-parameters:[]
+MethodInvocation:unmodifiableMap
+Method-name:getTaskManagers
+Method-returnType:Map<String,TaskManagerMetricStore>
+Method-parameters:[]
+MethodInvocation:unmodifiableMap
+Method-name:getJobManager
+Method-returnType:ComponentMetricStore
+Method-parameters:[]
+MethodInvocation:unmodifiable
+Method-name:add
+Method-returnType:void
+Method-parameters:[MetricDump metric]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:getCategory
+MethodInvocation:addMetric
+FieldAccess:taskManagerID
+MethodInvocation:computeIfAbsent
+MethodInvocation:contains
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:lastIndexOf
+MethodInvocation:addGarbageCollectorName
+MethodInvocation:addMetric
+MethodInvocation:computeIfAbsent
+MethodInvocation:addMetric
+MethodInvocation:computeIfAbsent
+MethodInvocation:computeIfAbsent
+MethodInvocation:computeIfAbsent
+MethodInvocation:addMetric
+MethodInvocation:addMetric
+MethodInvocation:computeIfAbsent
+MethodInvocation:computeIfAbsent
+MethodInvocation:computeIfAbsent
+MethodInvocation:addMetric
+MethodInvocation:addMetric
+MethodInvocation:debug
+MethodInvocation:getCategory
+MethodInvocation:debug
+Class:ComponentMetricStore
+Field:metrics
+Method-name:ComponentMetricStore
+Method-returnType:null
+Method-parameters:[]
+Method-name:ComponentMetricStore
+Method-returnType:null
+Method-parameters:[Map<String,String> metrics]
+FieldAccess:metrics
+MethodInvocation:checkNotNull
+Method-name:getMetric
+Method-returnType:String
+Method-parameters:[String name]
+MethodInvocation:get
+FieldAccess:metrics
+Method-name:getMetric
+Method-returnType:String
+Method-parameters:[String name, String defaultValue]
+MethodInvocation:get
+FieldAccess:metrics
+Method-name:unmodifiable
+Method-returnType:ComponentMetricStore
+Method-parameters:[ComponentMetricStore source]
+MethodInvocation:unmodifiableMap
+Class:TaskManagerMetricStore
+Field:garbageCollectorNames
+Method-name:TaskManagerMetricStore
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:newKeySet
+Method-name:TaskManagerMetricStore
+Method-returnType:null
+Method-parameters:[Map<String,String> metrics, Set<String> garbageCollectorNames]
+FieldAccess:garbageCollectorNames
+MethodInvocation:checkNotNull
+Method-name:addGarbageCollectorName
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:add
+Method-name:unmodifiable
+Method-returnType:TaskManagerMetricStore
+Method-parameters:[TaskManagerMetricStore source]
+MethodInvocation:unmodifiableMap
+MethodInvocation:unmodifiableSet
+Class:JobMetricStore
+Field:tasks
+Method-name:getTaskMetricStore
+Method-returnType:TaskMetricStore
+Method-parameters:[String taskID]
+MethodInvocation:get
+Class:TaskMetricStore
+Field:subtasks
+Method-name:TaskMetricStore
+Method-returnType:null
+Method-parameters:[]
+Method-name:TaskMetricStore
+Method-returnType:null
+Method-parameters:[Map<String,String> metrics, Map<Integer,ComponentMetricStore> subtasks]
+FieldAccess:subtasks
+MethodInvocation:checkNotNull
+Method-name:getSubtaskMetricStore
+Method-returnType:ComponentMetricStore
+Method-parameters:[int subtaskIndex]
+MethodInvocation:get
+Method-name:getAllSubtaskMetricStores
+Method-returnType:Collection<ComponentMetricStore>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:unmodifiable
+Method-returnType:TaskMetricStore
+Method-parameters:[TaskMetricStore source]
+MethodInvocation:unmodifiableMap
+MethodInvocation:unmodifiableMap

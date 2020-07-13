@@ -1,0 +1,26 @@
+Class:ExpressionExpander
+Method-name:expand
+Method-returnType:ExpressionNode
+Method-parameters:[ExpressionNode src]
+MethodInvocation:isSingleNode
+MethodInvocation:getChildExps
+MethodInvocation:getOperator
+MethodInvocation:isToBeExpanded
+MethodInvocation:getOperator
+MethodInvocation:isSingleNode
+MethodInvocation:addChildExp
+MethodInvocation:addChildExp
+MethodInvocation:expand
+MethodInvocation:expandNonLeaf
+MethodInvocation:getOperator
+MethodInvocation:negate
+Method-name:isToBeExpanded
+Method-returnType:boolean
+Method-parameters:[List<ExpressionNode> childExps]
+MethodInvocation:isSingleNode
+Method-name:expandNonLeaf
+Method-returnType:NonLeafExpressionNode
+Method-parameters:[NonLeafExpressionNode newNode, Operator outerOp]
+Method-name:mergeChildNodes
+Method-returnType:NonLeafExpressionNode
+Method-parameters:[NonLeafExpressionNode newOuterNode, Operator outerOp, ExpressionNode lChild, NonLeafExpressionNode nlChild]

@@ -1,0 +1,104 @@
+Class:ZooKeeperConfiguration
+Field:serverUrls
+Field:servers
+Field:path
+Field:timeout
+Field:backoff
+Field:repeat
+Field:listChildren
+Field:create
+Field:createMode
+Field:sendEmptyMessageOnDelete
+Method-name:addZookeeperServer
+Method-returnType:void
+Method-parameters:[String server]
+MethodInvocation:add
+Method-name:copy
+Method-returnType:ZooKeeperConfiguration
+Method-parameters:[]
+MethodInvocation:clone
+Method-name:getServers
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:getServerUrls
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:setServers
+Method-returnType:void
+Method-parameters:[List<String> servers]
+FieldAccess:servers
+Method-name:getTimeout
+Method-returnType:int
+Method-parameters:[]
+Method-name:setTimeout
+Method-returnType:void
+Method-parameters:[int timeout]
+FieldAccess:timeout
+Method-name:isListChildren
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setListChildren
+Method-returnType:void
+Method-parameters:[boolean listChildren]
+FieldAccess:listChildren
+Method-name:getConnectString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:setLength
+MethodInvocation:length
+MethodInvocation:toString
+Method-name:setPath
+Method-returnType:void
+Method-parameters:[String path]
+FieldAccess:path
+Method-name:getPath
+Method-returnType:String
+Method-parameters:[]
+Method-name:isRepeat
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setRepeat
+Method-returnType:void
+Method-parameters:[boolean repeat]
+FieldAccess:repeat
+Method-name:getBackoff
+Method-returnType:long
+Method-parameters:[]
+Method-name:setBackoff
+Method-returnType:void
+Method-parameters:[long backoff]
+FieldAccess:backoff
+Method-name:isCreate
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setCreate
+Method-returnType:void
+Method-parameters:[boolean shouldCreate]
+FieldAccess:create
+Method-name:getCreateMode
+Method-returnType:String
+Method-parameters:[]
+Method-name:setCreateMode
+Method-returnType:void
+Method-parameters:[String createMode]
+FieldAccess:createMode
+Method-name:isSendEmptyMessageOnDelete
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSendEmptyMessageOnDelete
+Method-returnType:void
+Method-parameters:[boolean sendEmptyMessageOnDelete]
+FieldAccess:sendEmptyMessageOnDelete
+Method-name:extractConfigFromUri
+Method-returnType:void
+Method-parameters:[String remaining, ZooKeeperComponent zooKeeperComponent]
+MethodInvocation:split
+MethodInvocation:getAuthority
+MethodInvocation:addZookeeperServer
+MethodInvocation:trim
+MethodInvocation:setPath
+MethodInvocation:getPath

@@ -1,0 +1,108 @@
+Class:DependencySet
+Field:dependencies
+Field:root
+Field:outputFileName
+Method-name:DependencySet
+Method-returnType:null
+Method-parameters:[Path root]
+FieldAccess:root
+Method-name:getOutputFileName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setOutputFileName
+Method-returnType:void
+Method-parameters:[String outputFileName]
+FieldAccess:outputFileName
+Method-name:getDependencies
+Method-returnType:Collection<Path>
+Method-parameters:[]
+MethodInvocation:unmodifiableCollection
+Method-name:addDependencies
+Method-returnType:void
+Method-parameters:[Collection<Path> deps]
+MethodInvocation:checkArgument
+MethodInvocation:startsWith
+MethodInvocation:add
+Method-name:addDependency
+Method-returnType:void
+Method-parameters:[String dep]
+MethodInvocation:translatePath
+MethodInvocation:getRelative
+MethodInvocation:add
+Method-name:translatePath
+Method-returnType:String
+Method-parameters:[String path]
+MethodInvocation:getCurrent
+MethodInvocation:translateWindowsPath
+Method-name:read
+Method-returnType:DependencySet
+Method-parameters:[Path dotdFile]
+MethodInvocation:readContent
+MethodInvocation:process
+MethodInvocation:getMessage
+Method-name:process
+Method-returnType:DependencySet
+Method-parameters:[byte[] content]
+MethodInvocation:addDependency
+MethodInvocation:addDependency
+Method-name:write
+Method-returnType:void
+Method-parameters:[Path outFile, String suffix]
+MethodInvocation:getRelative
+MethodInvocation:replaceExtension
+MethodInvocation:asFragment
+MethodInvocation:getOutputStream
+MethodInvocation:print
+MethodInvocation:relativeTo
+MethodInvocation:print
+MethodInvocation:getPathString
+MethodInvocation:println
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+FieldAccess:dependencies
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Class:WindowsPath
+Field:UNIX_ROOT
+Method-name:translateWindowsPath
+Method-returnType:String
+Method-parameters:[String path]
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:isAsciiLetter
+MethodInvocation:charAt
+MethodInvocation:charAt
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:toUpperCase
+MethodInvocation:charAt
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:length
+MethodInvocation:toString
+MethodInvocation:getUnixRoot
+Method-name:isAsciiLetter
+Method-returnType:boolean
+Method-parameters:[char c]
+Method-name:getUnixRoot
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:determineUnixRoot
+MethodInvocation:format
+MethodInvocation:replace
+MethodInvocation:length
+MethodInvocation:endsWith
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:set
+Method-name:determineUnixRoot
+Method-returnType:String
+Method-parameters:[String jvmArgName]
+MethodInvocation:getProperty
+MethodInvocation:trim
+MethodInvocation:isEmpty

@@ -1,0 +1,57 @@
+Class:DefaultUriTemplateHandler
+Field:parsePath
+Field:strictEncoding
+Method-name:setParsePath
+Method-returnType:void
+Method-parameters:[boolean parsePath]
+FieldAccess:parsePath
+Method-name:shouldParsePath
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:parsePath
+Method-name:setStrictEncoding
+Method-returnType:void
+Method-parameters:[boolean strictEncoding]
+FieldAccess:strictEncoding
+Method-name:isStrictEncoding
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:strictEncoding
+Method-name:expandInternal
+Method-returnType:URI
+Method-parameters:[String uriTemplate, Map<String,?> uriVariables]
+MethodInvocation:initUriComponentsBuilder
+MethodInvocation:expandAndEncode
+MethodInvocation:createUri
+Method-name:expandInternal
+Method-returnType:URI
+Method-parameters:[String uriTemplate, Object... uriVariables]
+MethodInvocation:initUriComponentsBuilder
+MethodInvocation:expandAndEncode
+MethodInvocation:createUri
+Method-name:initUriComponentsBuilder
+Method-returnType:UriComponentsBuilder
+Method-parameters:[String uriTemplate]
+MethodInvocation:fromUriString
+MethodInvocation:shouldParsePath
+MethodInvocation:isStrictEncoding
+MethodInvocation:getPathSegments
+MethodInvocation:build
+MethodInvocation:replacePath
+MethodInvocation:pathSegment
+Method-name:expandAndEncode
+Method-returnType:UriComponents
+Method-parameters:[UriComponentsBuilder builder, Map<String,?> uriVariables]
+MethodInvocation:isStrictEncoding
+MethodInvocation:encode
+MethodInvocation:buildAndExpand
+MethodInvocation:encodeUriVariables
+MethodInvocation:buildAndExpand
+Method-name:expandAndEncode
+Method-returnType:UriComponents
+Method-parameters:[UriComponentsBuilder builder, Object[] uriVariables]
+MethodInvocation:isStrictEncoding
+MethodInvocation:encode
+MethodInvocation:buildAndExpand
+MethodInvocation:encodeUriVariables
+MethodInvocation:buildAndExpand

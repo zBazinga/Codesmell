@@ -1,0 +1,266 @@
+Class:THRegionLocation
+Field:STRUCT_DESC
+Field:SERVER_NAME_FIELD_DESC
+Field:REGION_INFO_FIELD_DESC
+Field:STANDARD_SCHEME_FACTORY
+Field:TUPLE_SCHEME_FACTORY
+Field:serverName
+Field:regionInfo
+Field:_Fields
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[java.lang.String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, java.lang.String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:java.lang.String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:THRegionLocation
+Method-returnType:null
+Method-parameters:[]
+Method-name:THRegionLocation
+Method-returnType:null
+Method-parameters:[TServerName serverName, THRegionInfo regionInfo]
+FieldAccess:serverName
+FieldAccess:regionInfo
+Method-name:THRegionLocation
+Method-returnType:null
+Method-parameters:[THRegionLocation other]
+MethodInvocation:isSetServerName
+FieldAccess:serverName
+MethodInvocation:isSetRegionInfo
+FieldAccess:regionInfo
+Method-name:deepCopy
+Method-returnType:THRegionLocation
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:serverName
+FieldAccess:regionInfo
+Method-name:getServerName
+Method-returnType:TServerName
+Method-parameters:[]
+FieldAccess:serverName
+Method-name:unsetServerName
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:serverName
+Method-name:isSetServerName
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:serverName
+Method-name:setServerNameIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:serverName
+Method-name:getRegionInfo
+Method-returnType:THRegionInfo
+Method-parameters:[]
+FieldAccess:regionInfo
+Method-name:setRegionInfo
+Method-returnType:THRegionLocation
+Method-parameters:[@org.apache.thrift.annotation.Nullable THRegionInfo regionInfo]
+FieldAccess:regionInfo
+Method-name:unsetRegionInfo
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:regionInfo
+Method-name:isSetRegionInfo
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:regionInfo
+Method-name:setRegionInfoIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:regionInfo
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, @org.apache.thrift.annotation.Nullable java.lang.Object value]
+MethodInvocation:unsetServerName
+MethodInvocation:setServerName
+MethodInvocation:unsetRegionInfo
+MethodInvocation:setRegionInfo
+Method-name:getFieldValue
+Method-returnType:java.lang.Object
+Method-parameters:[_Fields field]
+MethodInvocation:getServerName
+MethodInvocation:getRegionInfo
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:isSetServerName
+MethodInvocation:isSetRegionInfo
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[java.lang.Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[THRegionLocation that]
+MethodInvocation:isSetServerName
+MethodInvocation:isSetServerName
+MethodInvocation:equals
+FieldAccess:serverName
+MethodInvocation:isSetRegionInfo
+MethodInvocation:isSetRegionInfo
+MethodInvocation:equals
+FieldAccess:regionInfo
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSetServerName
+MethodInvocation:isSetServerName
+MethodInvocation:hashCode
+MethodInvocation:isSetRegionInfo
+MethodInvocation:isSetRegionInfo
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[THRegionLocation other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetServerName
+MethodInvocation:isSetServerName
+MethodInvocation:isSetServerName
+MethodInvocation:compareTo
+FieldAccess:serverName
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetRegionInfo
+MethodInvocation:isSetRegionInfo
+MethodInvocation:isSetRegionInfo
+MethodInvocation:compareTo
+FieldAccess:regionInfo
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:scheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:scheme
+Method-name:toString
+Method-returnType:java.lang.String
+Method-parameters:[]
+MethodInvocation:append
+FieldAccess:serverName
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:serverName
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:regionInfo
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:regionInfo
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:validate
+MethodInvocation:validate
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:THRegionLocationStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:THRegionLocationStandardScheme
+Method-parameters:[]
+Class:THRegionLocationStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, THRegionLocation struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:read
+MethodInvocation:setServerNameIsSet
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:setRegionInfoIsSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, THRegionLocation struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:writeFieldBegin
+MethodInvocation:write
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldBegin
+MethodInvocation:write
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:THRegionLocationTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:THRegionLocationTupleScheme
+Method-parameters:[]
+Class:THRegionLocationTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, THRegionLocation struct]
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, THRegionLocation struct]
+MethodInvocation:read
+MethodInvocation:setServerNameIsSet
+MethodInvocation:read
+MethodInvocation:setRegionInfoIsSet
+Method-name:scheme
+Method-returnType:S
+Method-parameters:[org.apache.thrift.protocol.TProtocol proto]
+MethodInvocation:getScheme
+MethodInvocation:equals
+MethodInvocation:getScheme

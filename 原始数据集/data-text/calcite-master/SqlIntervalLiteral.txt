@@ -1,0 +1,69 @@
+Class:SqlIntervalLiteral
+Method-name:SqlIntervalLiteral
+Method-returnType:null
+Method-parameters:[int sign, String intervalStr, SqlIntervalQualifier intervalQualifier, SqlTypeName sqlTypeName, SqlParserPos pos]
+Method-name:SqlIntervalLiteral
+Method-returnType:null
+Method-parameters:[IntervalValue intervalValue, SqlTypeName sqlTypeName, SqlParserPos pos]
+Method-name:clone
+Method-returnType:SqlIntervalLiteral
+Method-parameters:[SqlParserPos pos]
+MethodInvocation:getTypeName
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, int leftPrec, int rightPrec]
+MethodInvocation:unparseSqlIntervalLiteral
+MethodInvocation:getDialect
+Method-name:signum
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:signum
+Method-name:unparseSqlIntervalLiteralMssql
+Method-returnType:void
+Method-parameters:[SqlWriter writer, int sign, MssqlSqlDialect mssqlSqlDialect]
+MethodInvocation:getValue
+MethodInvocation:unparseSqlIntervalQualifier
+MethodInvocation:getIntervalQualifier
+MethodInvocation:sep
+MethodInvocation:getSign
+MethodInvocation:print
+MethodInvocation:literal
+MethodInvocation:toString
+MethodInvocation:getValue
+Class:IntervalValue
+Field:intervalQualifier
+Field:intervalStr
+Field:sign
+Method-name:IntervalValue
+Method-returnType:null
+Method-parameters:[SqlIntervalQualifier intervalQualifier, int sign, String intervalStr]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+FieldAccess:intervalStr
+FieldAccess:sign
+MethodInvocation:equalsDeep
+FieldAccess:intervalQualifier
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:getIntervalQualifier
+Method-returnType:SqlIntervalQualifier
+Method-parameters:[]
+Method-name:getIntervalLiteral
+Method-returnType:String
+Method-parameters:[]
+Method-name:getSign
+Method-returnType:int
+Method-parameters:[]
+Method-name:signum
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:getSign
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]

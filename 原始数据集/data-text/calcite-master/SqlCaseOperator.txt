@@ -1,0 +1,42 @@
+Class:SqlCaseOperator
+Field:INSTANCE
+Method-name:SqlCaseOperator
+Method-returnType:null
+Method-parameters:[]
+Method-name:validateCall
+Method-returnType:void
+Method-parameters:[SqlCall call, SqlValidator validator, SqlValidatorScope scope, SqlValidatorScope operandScope]
+MethodInvocation:getWhenOperands
+MethodInvocation:getThenOperands
+MethodInvocation:getElseOperand
+MethodInvocation:validateExpr
+MethodInvocation:validateExpr
+MethodInvocation:validateExpr
+Method-name:deriveType
+Method-returnType:RelDataType
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope, SqlCall call]
+MethodInvocation:validateOperands
+Method-name:checkOperandTypes
+Method-returnType:boolean
+Method-parameters:[SqlCallBinding callBinding, boolean throwOnFailure]
+Method-name:inferReturnType
+Method-returnType:RelDataType
+Method-parameters:[SqlOperatorBinding opBinding]
+MethodInvocation:inferTypeFromOperands
+MethodInvocation:inferTypeFromValidator
+Method-name:inferTypeFromOperands
+Method-returnType:RelDataType
+Method-parameters:[SqlOperatorBinding opBinding]
+Method-name:getOperandCountRange
+Method-returnType:SqlOperandCountRange
+Method-parameters:[]
+MethodInvocation:any
+Method-name:getSyntax
+Method-returnType:SqlSyntax
+Method-parameters:[]
+Method-name:createCall
+Method-returnType:SqlCall
+Method-parameters:[SqlLiteral functionQualifier, SqlParserPos pos, SqlNode... operands]
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlCall call_, int leftPrec, int rightPrec]

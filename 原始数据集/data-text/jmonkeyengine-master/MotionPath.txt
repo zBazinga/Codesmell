@@ -1,0 +1,170 @@
+Class:MotionPath
+Field:debugNode
+Field:assetManager
+Field:listeners
+Field:spline
+Field:prevWayPoint
+Method-name:MotionPath
+Method-returnType:null
+Method-parameters:[]
+Method-name:checkWayPoint
+Method-returnType:void
+Method-parameters:[MotionEvent control, float tpf]
+MethodInvocation:getCurrentWayPoint
+MethodInvocation:getCurrentValue
+MethodInvocation:getCurrentValue
+MethodInvocation:triggerWayPointReach
+MethodInvocation:getCurrentWayPoint
+MethodInvocation:getCurrentWayPoint
+Method-name:attachDebugNode
+Method-returnType:void
+Method-parameters:[Node root]
+MethodInvocation:loadMaterial
+MethodInvocation:iterator
+MethodInvocation:getControlPoints
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:setLocalTranslation
+MethodInvocation:setMaterial
+MethodInvocation:attachChild
+MethodInvocation:getType
+MethodInvocation:attachChild
+MethodInvocation:CreateCatmullRomPath
+MethodInvocation:attachChild
+MethodInvocation:CreateLinearPath
+MethodInvocation:attachChild
+MethodInvocation:CreateLinearPath
+MethodInvocation:attachChild
+Method-name:CreateLinearPath
+Method-returnType:Geometry
+Method-parameters:[]
+MethodInvocation:setWireframe
+MethodInvocation:getAdditionalRenderState
+MethodInvocation:setColor
+MethodInvocation:setMaterial
+Method-name:CreateCatmullRomPath
+Method-returnType:Geometry
+Method-parameters:[]
+MethodInvocation:setWireframe
+MethodInvocation:getAdditionalRenderState
+MethodInvocation:setColor
+MethodInvocation:setMaterial
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter ex]
+MethodInvocation:getCapsule
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter im]
+MethodInvocation:getCapsule
+MethodInvocation:readSavable
+Method-name:getWayPointIndexForDistance
+Method-returnType:Vector2f
+Method-parameters:[float distance, Vector2f store]
+MethodInvocation:getTotalLength
+MethodInvocation:set
+MethodInvocation:getTotalLength
+MethodInvocation:getSegmentsLength
+MethodInvocation:set
+MethodInvocation:size
+MethodInvocation:getControlPoints
+Method-name:addWayPoint
+Method-returnType:void
+Method-parameters:[Vector3f wayPoint]
+MethodInvocation:addControlPoint
+Method-name:getLength
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:getTotalLength
+Method-name:getWayPoint
+Method-returnType:Vector3f
+Method-parameters:[int i]
+MethodInvocation:get
+MethodInvocation:getControlPoints
+Method-name:removeWayPoint
+Method-returnType:void
+Method-parameters:[Vector3f wayPoint]
+MethodInvocation:removeControlPoint
+Method-name:removeWayPoint
+Method-returnType:void
+Method-parameters:[int i]
+MethodInvocation:removeWayPoint
+MethodInvocation:get
+MethodInvocation:getControlPoints
+Method-name:iterator
+Method-returnType:Iterator<Vector3f>
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:getControlPoints
+Method-name:getPathSplineType
+Method-returnType:SplineType
+Method-parameters:[]
+MethodInvocation:getType
+Method-name:setPathSplineType
+Method-returnType:void
+Method-parameters:[SplineType pathSplineType]
+MethodInvocation:setType
+MethodInvocation:getParent
+MethodInvocation:removeFromParent
+MethodInvocation:detachAllChildren
+MethodInvocation:attachDebugNode
+Method-name:disableDebugShape
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:detachAllChildren
+Method-name:enableDebugShape
+Method-returnType:void
+Method-parameters:[AssetManager manager, Node rootNode]
+MethodInvocation:attachDebugNode
+Method-name:addListener
+Method-returnType:void
+Method-parameters:[MotionPathListener listener]
+MethodInvocation:add
+Method-name:removeListener
+Method-returnType:void
+Method-parameters:[MotionPathListener listener]
+MethodInvocation:remove
+Method-name:getNbWayPoints
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:getControlPoints
+Method-name:triggerWayPointReach
+Method-returnType:void
+Method-parameters:[int wayPointIndex, MotionEvent control]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:onWayPointReach
+Method-name:getCurveTension
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:getCurveTension
+Method-name:setCurveTension
+Method-returnType:void
+Method-parameters:[float curveTension]
+MethodInvocation:setCurveTension
+MethodInvocation:getParent
+MethodInvocation:removeFromParent
+MethodInvocation:detachAllChildren
+MethodInvocation:attachDebugNode
+Method-name:clearWayPoints
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clearControlPoints
+Method-name:setCycle
+Method-returnType:void
+Method-parameters:[boolean cycle]
+MethodInvocation:setCycle
+MethodInvocation:getParent
+MethodInvocation:removeFromParent
+MethodInvocation:detachAllChildren
+MethodInvocation:attachDebugNode
+Method-name:isCycle
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isCycle
+Method-name:getSpline
+Method-returnType:Spline
+Method-parameters:[]

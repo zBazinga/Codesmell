@@ -1,0 +1,101 @@
+Class:Thing
+Field:metaTags
+Field:selfOwned
+Field:nodeInfo
+Field:momentaryReadOutRequestHandler
+Field:controlRequestHandler
+Method-name:Thing
+Method-returnType:null
+Method-parameters:[Builder builder]
+FieldAccess:metaTags
+FieldAccess:selfOwned
+FieldAccess:nodeInfo
+FieldAccess:momentaryReadOutRequestHandler
+FieldAccess:controlRequestHandler
+Method-name:getMetaTags
+Method-returnType:Collection<Tag>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:isSelfOwened
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getNodeInfo
+Method-returnType:NodeInfo
+Method-parameters:[]
+Method-name:getNodeId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getNodeId
+Method-name:getSourceId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSourceId
+Method-name:getCacheType
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getCacheType
+Method-name:getMomentaryReadOutRequestHandler
+Method-returnType:ThingMomentaryReadOutRequest
+Method-parameters:[]
+Method-name:getControlRequestHandler
+Method-returnType:ThingControlRequest
+Method-parameters:[]
+Field:toStringCache
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:iterator
+MethodInvocation:values
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:append
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:registerThing
+Method-returnType:ThingState
+Method-parameters:[IoTDiscoveryManager ioTDiscoveryManager]
+MethodInvocation:findRegistry
+MethodInvocation:registerThing
+Class:Builder
+Field:metaTags
+Field:selfOwned
+Field:nodeInfo
+Field:momentaryReadOutRequest
+Field:controlRequest
+Method-name:setSerialNumber
+Method-returnType:Builder
+Method-parameters:[String sn]
+MethodInvocation:put
+Method-name:setKey
+Method-returnType:Builder
+Method-parameters:[String key]
+MethodInvocation:put
+Method-name:setManufacturer
+Method-returnType:Builder
+Method-parameters:[String manufacturer]
+MethodInvocation:put
+Method-name:setModel
+Method-returnType:Builder
+Method-parameters:[String model]
+MethodInvocation:put
+Method-name:setVersion
+Method-returnType:Builder
+Method-parameters:[String version]
+MethodInvocation:put
+Method-name:setMomentaryReadOutRequestHandler
+Method-returnType:Builder
+Method-parameters:[ThingMomentaryReadOutRequest momentaryReadOutRequestHandler]
+FieldAccess:momentaryReadOutRequest
+Method-name:setControlRequestHandler
+Method-returnType:Builder
+Method-parameters:[ThingControlRequest controlRequest]
+FieldAccess:controlRequest
+Method-name:build
+Method-returnType:Thing
+Method-parameters:[]

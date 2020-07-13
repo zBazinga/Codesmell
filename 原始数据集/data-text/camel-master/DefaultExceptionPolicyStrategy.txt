@@ -1,0 +1,73 @@
+Class:DefaultExceptionPolicyStrategy
+Field:LOG
+MethodInvocation:getLogger
+Method-name:getExceptionPolicy
+Method-returnType:ExceptionPolicyKey
+Method-parameters:[Set<ExceptionPolicyKey> exceptionPolicies, Exchange exchange, Throwable exception]
+MethodInvocation:initRouteAndContextScopedExceptionPolicies
+MethodInvocation:createExceptionIterable
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:findMatchedExceptionPolicy
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:findMatchedExceptionPolicy
+MethodInvocation:next
+MethodInvocation:trace
+MethodInvocation:size
+MethodInvocation:isEmpty
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:values
+Method-name:initRouteAndContextScopedExceptionPolicies
+Method-returnType:void
+Method-parameters:[Set<ExceptionPolicyKey> exceptionPolicies, Set<ExceptionPolicyKey> routeScoped, Set<ExceptionPolicyKey> contextScoped]
+MethodInvocation:getRouteId
+MethodInvocation:add
+MethodInvocation:add
+Method-name:findMatchedExceptionPolicy
+Method-returnType:boolean
+Method-parameters:[Iterable<ExceptionPolicyKey> exceptionPolicies, Exchange exchange, Throwable exception, Map<Integer,ExceptionPolicyKey> candidates]
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getInheritanceLevel
+MethodInvocation:getClass
+MethodInvocation:getExceptionClass
+MethodInvocation:getRouteId
+MethodInvocation:isNotEmpty
+MethodInvocation:getRouteId
+MethodInvocation:equals
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:filter
+MethodInvocation:matchesWhen
+MethodInvocation:trace
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getInheritanceLevel
+MethodInvocation:containsKey
+MethodInvocation:trace
+MethodInvocation:put
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:get
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+Method-name:filter
+Method-returnType:boolean
+Method-parameters:[ExceptionPolicyKey type, Class<?> exceptionClass, Throwable exception]
+MethodInvocation:isInstance
+Method-name:createExceptionIterable
+Method-returnType:Iterable<Throwable>
+Method-parameters:[Throwable exception]
+MethodInvocation:createExceptionIterable
+Method-name:getInheritanceLevel
+Method-returnType:int
+Method-parameters:[Class<?> clazz]
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getInheritanceLevel
+MethodInvocation:getSuperclass

@@ -1,0 +1,41 @@
+Class:DoiFetcher
+Field:NAME
+Field:preferences
+Method-name:DoiFetcher
+Method-returnType:null
+Method-parameters:[ImportFormatPreferences preferences]
+FieldAccess:preferences
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getHelpPage
+Method-returnType:Optional<HelpFile>
+Method-parameters:[]
+MethodInvocation:of
+Method-name:performSearchById
+Method-returnType:Optional<BibEntry>
+Method-parameters:[String identifier]
+MethodInvocation:parse
+MethodInvocation:isPresent
+MethodInvocation:getURIAsASCIIString
+MethodInvocation:get
+MethodInvocation:addHeader
+MethodInvocation:asString
+MethodInvocation:singleFromString
+MethodInvocation:ifPresent
+MethodInvocation:lang
+MethodInvocation:lang
+Method-name:doPostCleanup
+Method-returnType:void
+Method-parameters:[BibEntry entry]
+MethodInvocation:cleanup
+MethodInvocation:cleanup
+Method-name:performSearch
+Method-returnType:List<BibEntry>
+Method-parameters:[BibEntry entry]
+MethodInvocation:getField
+MethodInvocation:isPresent
+MethodInvocation:toList
+MethodInvocation:performSearchById
+MethodInvocation:get
+MethodInvocation:emptyList

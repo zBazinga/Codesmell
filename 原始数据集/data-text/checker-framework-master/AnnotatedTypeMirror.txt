@@ -1,0 +1,983 @@
+Class:AnnotatedTypeMirror
+Method-name:createType
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[TypeMirror type, AnnotatedTypeFactory atypeFactory, boolean isDeclaration]
+MethodInvocation:getKind
+MethodInvocation:isPrimitive
+MethodInvocation:getKind
+MethodInvocation:getKind
+Field:EQUALITY_COMPARER
+Field:HASHCODE_VISITOR
+Field:atypeFactory
+Field:actualType
+Field:annotations
+MethodInvocation:createAnnotationSet
+Method-name:AnnotatedTypeMirror
+Method-returnType:null
+Method-parameters:[TypeMirror type, AnnotatedTypeFactory atypeFactory]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:visit
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:visit
+Method-name:accept
+Method-returnType:R
+Method-parameters:[AnnotatedTypeVisitor<R,P> v, P p]
+Method-name:getKind
+Method-returnType:TypeKind
+Method-parameters:[]
+MethodInvocation:getKind
+Method-name:getUnderlyingType
+Method-returnType:TypeMirror
+Method-parameters:[]
+Method-name:isDeclaration
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:asUse
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+Method-name:isAnnotatedInHierarchy
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror p]
+MethodInvocation:getAnnotationInHierarchy
+Method-name:getAnnotationInHierarchy
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror p]
+MethodInvocation:isSupportedQualifier
+MethodInvocation:canonicalAnnotation
+MethodInvocation:isSupportedQualifier
+MethodInvocation:getQualifierHierarchy
+FieldAccess:atypeFactory
+MethodInvocation:findAnnotationInSameHierarchy
+Method-name:getEffectiveAnnotationInHierarchy
+Method-returnType:AnnotationMirror
+Method-parameters:[AnnotationMirror p]
+MethodInvocation:isSupportedQualifier
+MethodInvocation:canonicalAnnotation
+MethodInvocation:isSupportedQualifier
+MethodInvocation:getQualifierHierarchy
+FieldAccess:atypeFactory
+MethodInvocation:findAnnotationInSameHierarchy
+MethodInvocation:getEffectiveAnnotations
+Method-name:getAnnotations
+Method-returnType:Set<AnnotationMirror>
+Method-parameters:[]
+MethodInvocation:unmodifiableSet
+Method-name:getAnnotationsField
+Method-returnType:Set<AnnotationMirror>
+Method-parameters:[]
+Method-name:getEffectiveAnnotations
+Method-returnType:Set<AnnotationMirror>
+Method-parameters:[]
+MethodInvocation:getAnnotations
+MethodInvocation:getErased
+Method-name:getAnnotation
+Method-returnType:AnnotationMirror
+Method-parameters:[Class<? extends Annotation> annoClass]
+MethodInvocation:areSameByClass
+Method-name:getExplicitAnnotations
+Method-returnType:Set<AnnotationMirror>
+Method-parameters:[]
+MethodInvocation:createAnnotationSet
+MethodInvocation:getAnnotationMirrors
+MethodInvocation:getUnderlyingType
+MethodInvocation:isSupportedQualifier
+MethodInvocation:add
+Method-name:hasAnnotation
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror a]
+MethodInvocation:containsSame
+Method-name:hasAnnotation
+Method-returnType:boolean
+Method-parameters:[Class<? extends Annotation> a]
+MethodInvocation:getAnnotation
+Method-name:getEffectiveAnnotation
+Method-returnType:AnnotationMirror
+Method-parameters:[Class<? extends Annotation> annoClass]
+MethodInvocation:getEffectiveAnnotations
+MethodInvocation:areSameByClass
+Method-name:hasEffectiveAnnotation
+Method-returnType:boolean
+Method-parameters:[Class<? extends Annotation> a]
+MethodInvocation:getEffectiveAnnotation
+Method-name:hasEffectiveAnnotation
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror a]
+MethodInvocation:containsSame
+MethodInvocation:getEffectiveAnnotations
+Method-name:hasExplicitAnnotation
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror a]
+MethodInvocation:containsSame
+MethodInvocation:getExplicitAnnotations
+Method-name:hasAnnotationRelaxed
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror a]
+MethodInvocation:containsSameByName
+Method-name:hasEffectiveAnnotationRelaxed
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror a]
+MethodInvocation:containsSameByName
+MethodInvocation:getEffectiveAnnotations
+Method-name:hasExplicitAnnotationRelaxed
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror a]
+MethodInvocation:containsSameByName
+MethodInvocation:getExplicitAnnotations
+Method-name:hasExplicitAnnotation
+Method-returnType:boolean
+Method-parameters:[Class<? extends Annotation> a]
+MethodInvocation:containsSameByName
+MethodInvocation:getExplicitAnnotations
+MethodInvocation:getAnnotation
+Method-name:addAnnotation
+Method-returnType:void
+Method-parameters:[AnnotationMirror a]
+MethodInvocation:isSupportedQualifier
+MethodInvocation:add
+FieldAccess:annotations
+MethodInvocation:canonicalAnnotation
+MethodInvocation:isSupportedQualifier
+MethodInvocation:addAnnotation
+Method-name:replaceAnnotation
+Method-returnType:void
+Method-parameters:[AnnotationMirror a]
+MethodInvocation:removeAnnotationInHierarchy
+MethodInvocation:addAnnotation
+Method-name:addAnnotation
+Method-returnType:void
+Method-parameters:[Class<? extends Annotation> a]
+MethodInvocation:fromClass
+MethodInvocation:addAnnotation
+Method-name:addAnnotations
+Method-returnType:void
+Method-parameters:[Iterable<? extends AnnotationMirror> annotations]
+MethodInvocation:addAnnotation
+Method-name:addMissingAnnotations
+Method-returnType:void
+Method-parameters:[Iterable<? extends AnnotationMirror> annotations]
+MethodInvocation:isAnnotatedInHierarchy
+MethodInvocation:addAnnotation
+Method-name:replaceAnnotations
+Method-returnType:void
+Method-parameters:[Iterable<? extends AnnotationMirror> replAnnos]
+MethodInvocation:replaceAnnotation
+Method-name:removeAnnotation
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror a]
+MethodInvocation:getAnnotationByName
+MethodInvocation:annotationName
+MethodInvocation:remove
+Method-name:removeAnnotation
+Method-returnType:boolean
+Method-parameters:[Class<? extends Annotation> a]
+MethodInvocation:fromClass
+MethodInvocation:isSupportedQualifier
+MethodInvocation:removeAnnotation
+Method-name:removeAnnotationInHierarchy
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror a]
+MethodInvocation:getAnnotationInHierarchy
+MethodInvocation:removeAnnotation
+Method-name:removeNonTopAnnotationInHierarchy
+Method-returnType:boolean
+Method-parameters:[AnnotationMirror a]
+MethodInvocation:getAnnotationInHierarchy
+MethodInvocation:getQualifierHierarchy
+FieldAccess:atypeFactory
+MethodInvocation:equals
+MethodInvocation:getTopAnnotation
+MethodInvocation:removeAnnotation
+Method-name:removeAnnotations
+Method-returnType:boolean
+Method-parameters:[Iterable<? extends AnnotationMirror> annotations]
+MethodInvocation:removeAnnotation
+Method-name:clearAnnotations
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:format
+MethodInvocation:getAnnotatedTypeFormatter
+Method-name:toString
+Method-returnType:String
+Method-parameters:[boolean verbose]
+MethodInvocation:format
+MethodInvocation:getAnnotatedTypeFormatter
+Method-name:getErased
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+MethodInvocation:deepCopy
+Method-name:deepCopy
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[final boolean copyAnnotations]
+Method-name:deepCopy
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+Method-name:shallowCopy
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[boolean copyAnnotations]
+Method-name:shallowCopy
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+Method-name:containsUninferredTypeArguments
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:visit
+Field:uninferredTypeArgumentScanner
+Method-name:defaultAction
+Method-returnType:Boolean
+Method-parameters:[AnnotatedTypeMirror type, Void aVoid]
+MethodInvocation:getKind
+MethodInvocation:isUninferredTypeArgument
+Method-name:reduce
+Method-returnType:Boolean
+Method-parameters:[Boolean r1, Boolean r2]
+Method-name:createTypeOfObject
+Method-returnType:AnnotatedDeclaredType
+Method-parameters:[AnnotatedTypeFactory atypeFactory]
+MethodInvocation:fromElement
+MethodInvocation:getTypeElement
+MethodInvocation:getCanonicalName
+Method-name:addUpperBoundTypeFromValueType
+Method-returnType:void
+Method-parameters:[AnnotatedTypeMirror type, UpperBoundAnnotatedTypeFactory upperBoundAnnotatedTypeFactory]
+MethodInvocation:containsSameByClass
+MethodInvocation:getAnnotations
+MethodInvocation:replaceAnnotation
+Class:AnnotatedDeclaredType
+Field:typeArgs
+Field:wasRaw
+Field:enclosingType
+Field:declaration
+Method-name:AnnotatedDeclaredType
+Method-returnType:null
+Method-parameters:[DeclaredType type, AnnotatedTypeFactory atypeFactory, boolean declaration]
+MethodInvocation:asElement
+MethodInvocation:asType
+MethodInvocation:isEmpty
+MethodInvocation:getTypeArguments
+MethodInvocation:isEmpty
+MethodInvocation:getTypeArguments
+MethodInvocation:getEnclosingType
+MethodInvocation:getKind
+FieldAccess:enclosingType
+MethodInvocation:createType
+MethodInvocation:getKind
+MethodInvocation:getEnclosingType
+MethodInvocation:getKind
+FieldAccess:declaration
+Method-name:isDeclaration
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:deepCopy
+Method-returnType:AnnotatedDeclaredType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:visit
+Method-name:deepCopy
+Method-returnType:AnnotatedDeclaredType
+Method-parameters:[]
+MethodInvocation:deepCopy
+Method-name:asUse
+Method-returnType:AnnotatedDeclaredType
+Method-parameters:[]
+MethodInvocation:isDeclaration
+MethodInvocation:shallowCopy
+MethodInvocation:setTypeArguments
+Method-name:accept
+Method-returnType:R
+Method-parameters:[AnnotatedTypeVisitor<R,P> v, P p]
+MethodInvocation:visitDeclared
+Method-name:setTypeArguments
+Method-returnType:void
+Method-parameters:[List<? extends AnnotatedTypeMirror> ts]
+MethodInvocation:isEmpty
+MethodInvocation:emptyList
+MethodInvocation:isDeclaration
+MethodInvocation:unmodifiableList
+MethodInvocation:add
+MethodInvocation:asUse
+MethodInvocation:unmodifiableList
+Method-name:getTypeArguments
+Method-returnType:List<AnnotatedTypeMirror>
+Method-parameters:[]
+MethodInvocation:wasRaw
+MethodInvocation:initializeTypeArgs
+MethodInvocation:fromElement
+MethodInvocation:asElement
+MethodInvocation:getUnderlyingType
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getTypeArguments
+MethodInvocation:get
+MethodInvocation:replaceAnnotations
+MethodInvocation:getExtendsBound
+FieldAccess:annotations
+MethodInvocation:getUpperBound
+MethodInvocation:replaceAnnotations
+MethodInvocation:getSuperBound
+FieldAccess:annotations
+MethodInvocation:getLowerBound
+MethodInvocation:replaceAnnotations
+MethodInvocation:isEmpty
+MethodInvocation:getTypeArguments
+MethodInvocation:getUnderlyingType
+MethodInvocation:emptyList
+MethodInvocation:initializeTypeArgs
+Method-name:wasRaw
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setWasRaw
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:wasRaw
+Method-name:getUnderlyingType
+Method-returnType:DeclaredType
+Method-parameters:[]
+Method-name:directSuperTypes
+Method-returnType:List<AnnotatedDeclaredType>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+MethodInvocation:directSuperTypes
+Method-name:shallowCopy
+Method-returnType:AnnotatedDeclaredType
+Method-parameters:[]
+MethodInvocation:shallowCopy
+Method-name:shallowCopy
+Method-returnType:AnnotatedDeclaredType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:getUnderlyingType
+MethodInvocation:addAnnotations
+MethodInvocation:getAnnotationsField
+MethodInvocation:setEnclosingType
+MethodInvocation:getEnclosingType
+MethodInvocation:setTypeArguments
+MethodInvocation:getTypeArguments
+Method-name:getErased
+Method-returnType:AnnotatedDeclaredType
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:getTypeArguments
+MethodInvocation:createType
+MethodInvocation:erasure
+MethodInvocation:addAnnotations
+MethodInvocation:setTypeArguments
+MethodInvocation:emptyList
+MethodInvocation:getErased
+MethodInvocation:getEnclosingType
+MethodInvocation:getKind
+MethodInvocation:getEnclosingType
+MethodInvocation:shallowCopy
+MethodInvocation:getEnclosingType
+MethodInvocation:setEnclosingType
+MethodInvocation:getErased
+MethodInvocation:deepCopy
+Method-name:setEnclosingType
+Method-returnType:void
+Method-parameters:[AnnotatedDeclaredType enclosingType]
+FieldAccess:enclosingType
+Method-name:getEnclosingType
+Method-returnType:AnnotatedDeclaredType
+Method-parameters:[]
+Class:AnnotatedExecutableType
+Field:element
+Method-name:AnnotatedExecutableType
+Method-returnType:null
+Method-parameters:[ExecutableType type, AnnotatedTypeFactory factory]
+Field:paramTypes
+Field:receiverType
+Field:returnType
+Field:throwsTypes
+Field:typeVarTypes
+Method-name:isVarArgs
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isVarArgs
+FieldAccess:element
+Method-name:accept
+Method-returnType:R
+Method-parameters:[AnnotatedTypeVisitor<R,P> v, P p]
+MethodInvocation:visitExecutable
+Method-name:getUnderlyingType
+Method-returnType:ExecutableType
+Method-parameters:[]
+FieldAccess:actualType
+Method-name:addAnnotation
+Method-returnType:void
+Method-parameters:[AnnotationMirror a]
+Method-name:setParameterTypes
+Method-returnType:void
+Method-parameters:[List<? extends AnnotatedTypeMirror> params]
+MethodInvocation:clear
+MethodInvocation:addAll
+Method-name:getParameterTypes
+Method-returnType:List<AnnotatedTypeMirror>
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:getParameterTypes
+MethodInvocation:getParameterTypes
+MethodInvocation:add
+MethodInvocation:createType
+MethodInvocation:unmodifiableList
+Method-name:setReturnType
+Method-returnType:void
+Method-parameters:[AnnotatedTypeMirror returnType]
+FieldAccess:returnType
+Method-name:getReturnType
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+MethodInvocation:getReturnType
+MethodInvocation:getReturnType
+MethodInvocation:isConstructor
+MethodInvocation:asType
+MethodInvocation:getEnclosingElement
+MethodInvocation:createType
+Method-name:setReceiverType
+Method-returnType:void
+Method-parameters:[AnnotatedDeclaredType receiverType]
+FieldAccess:receiverType
+Method-name:getReceiverType
+Method-returnType:AnnotatedDeclaredType
+Method-parameters:[]
+Method-name:setThrownTypes
+Method-returnType:void
+Method-parameters:[List<? extends AnnotatedTypeMirror> thrownTypes]
+MethodInvocation:clear
+FieldAccess:throwsTypes
+MethodInvocation:addAll
+FieldAccess:throwsTypes
+Method-name:getThrownTypes
+Method-returnType:List<AnnotatedTypeMirror>
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:getThrownTypes
+MethodInvocation:getThrownTypes
+MethodInvocation:add
+MethodInvocation:createType
+MethodInvocation:unmodifiableList
+Method-name:setTypeVariables
+Method-returnType:void
+Method-parameters:[List<AnnotatedTypeVariable> types]
+MethodInvocation:clear
+MethodInvocation:addAll
+Method-name:getTypeVariables
+Method-returnType:List<AnnotatedTypeVariable>
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:getTypeVariables
+MethodInvocation:getTypeVariables
+MethodInvocation:add
+MethodInvocation:createType
+MethodInvocation:unmodifiableList
+Method-name:deepCopy
+Method-returnType:AnnotatedExecutableType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:visit
+Method-name:deepCopy
+Method-returnType:AnnotatedExecutableType
+Method-parameters:[]
+MethodInvocation:deepCopy
+Method-name:shallowCopy
+Method-returnType:AnnotatedExecutableType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:getUnderlyingType
+MethodInvocation:setElement
+MethodInvocation:getElement
+MethodInvocation:setParameterTypes
+MethodInvocation:getParameterTypes
+MethodInvocation:setReceiverType
+MethodInvocation:getReceiverType
+MethodInvocation:setReturnType
+MethodInvocation:getReturnType
+MethodInvocation:setThrownTypes
+MethodInvocation:getThrownTypes
+MethodInvocation:setTypeVariables
+MethodInvocation:getTypeVariables
+Method-name:shallowCopy
+Method-returnType:AnnotatedExecutableType
+Method-parameters:[]
+MethodInvocation:shallowCopy
+Method-name:getElement
+Method-returnType:ExecutableElement
+Method-parameters:[]
+Method-name:setElement
+Method-returnType:void
+Method-parameters:[@NonNull ExecutableElement elem]
+FieldAccess:element
+Method-name:getErased
+Method-returnType:AnnotatedExecutableType
+Method-parameters:[]
+MethodInvocation:erasure
+MethodInvocation:getUnderlyingType
+MethodInvocation:setElement
+MethodInvocation:getElement
+MethodInvocation:setParameterTypes
+MethodInvocation:erasureList
+MethodInvocation:getParameterTypes
+MethodInvocation:getReceiverType
+MethodInvocation:setReceiverType
+MethodInvocation:getErased
+MethodInvocation:getReceiverType
+MethodInvocation:setReceiverType
+MethodInvocation:setReturnType
+MethodInvocation:getErased
+MethodInvocation:getReturnType
+MethodInvocation:setThrownTypes
+MethodInvocation:erasureList
+MethodInvocation:getThrownTypes
+Method-name:erasureList
+Method-returnType:List<AnnotatedTypeMirror>
+Method-parameters:[Iterable<? extends AnnotatedTypeMirror> lst]
+MethodInvocation:add
+MethodInvocation:getErased
+Class:AnnotatedArrayType
+Method-name:AnnotatedArrayType
+Method-returnType:null
+Method-parameters:[ArrayType type, AnnotatedTypeFactory factory]
+Field:componentType
+Method-name:accept
+Method-returnType:R
+Method-parameters:[AnnotatedTypeVisitor<R,P> v, P p]
+MethodInvocation:visitArray
+Method-name:getUnderlyingType
+Method-returnType:ArrayType
+Method-parameters:[]
+FieldAccess:actualType
+Method-name:setComponentType
+Method-returnType:void
+Method-parameters:[AnnotatedTypeMirror type]
+FieldAccess:componentType
+Method-name:getComponentType
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+MethodInvocation:setComponentType
+MethodInvocation:createType
+MethodInvocation:getComponentType
+Method-name:deepCopy
+Method-returnType:AnnotatedArrayType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:visit
+Method-name:deepCopy
+Method-returnType:AnnotatedArrayType
+Method-parameters:[]
+MethodInvocation:deepCopy
+Method-name:shallowCopy
+Method-returnType:AnnotatedArrayType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:addAnnotations
+MethodInvocation:getAnnotationsField
+MethodInvocation:setComponentType
+MethodInvocation:getComponentType
+Method-name:shallowCopy
+Method-returnType:AnnotatedArrayType
+Method-parameters:[]
+MethodInvocation:shallowCopy
+Method-name:getErased
+Method-returnType:AnnotatedArrayType
+Method-parameters:[]
+MethodInvocation:shallowCopy
+MethodInvocation:getErased
+MethodInvocation:getComponentType
+MethodInvocation:setComponentType
+Method-name:checkBound
+Method-returnType:void
+Method-parameters:[String boundDescription, AnnotatedTypeMirror boundType, AnnotatedTypeMirror thisType]
+MethodInvocation:isDeclaration
+Class:AnnotatedTypeVariable
+Method-name:AnnotatedTypeVariable
+Method-returnType:null
+Method-parameters:[TypeVariable type, AnnotatedTypeFactory atypeFactory, boolean declaration]
+FieldAccess:declaration
+Field:lowerBound
+Field:upperBound
+Field:declaration
+Method-name:isDeclaration
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:addAnnotation
+Method-returnType:void
+Method-parameters:[AnnotationMirror a]
+MethodInvocation:fixupBoundAnnotations
+Method-name:setDeclaration
+Method-returnType:void
+Method-parameters:[boolean declaration]
+FieldAccess:declaration
+Method-name:asUse
+Method-returnType:AnnotatedTypeVariable
+Method-parameters:[]
+MethodInvocation:isDeclaration
+MethodInvocation:shallowCopy
+Method-name:accept
+Method-returnType:R
+Method-parameters:[AnnotatedTypeVisitor<R,P> v, P p]
+MethodInvocation:visitTypeVariable
+Method-name:getUnderlyingType
+Method-returnType:TypeVariable
+Method-parameters:[]
+FieldAccess:actualType
+Method-name:setLowerBound
+Method-returnType:void
+Method-parameters:[AnnotatedTypeMirror type]
+MethodInvocation:checkBound
+FieldAccess:lowerBound
+MethodInvocation:fixupBoundAnnotations
+Method-name:getLowerBoundField
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+Method-name:getLowerBound
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+MethodInvocation:initializeBounds
+MethodInvocation:fixupBoundAnnotations
+Method-name:fixupBoundAnnotations
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:getAnnotationsField
+MethodInvocation:getAnnotationsField
+MethodInvocation:replaceUpperBoundAnnotations
+MethodInvocation:replaceAnnotations
+Method-name:replaceUpperBoundAnnotations
+Method-returnType:void
+Method-parameters:[Collection<? extends AnnotationMirror> newAnnos]
+MethodInvocation:getKind
+MethodInvocation:directSuperTypes
+MethodInvocation:replaceAnnotations
+MethodInvocation:replaceAnnotations
+Method-name:setUpperBound
+Method-returnType:void
+Method-parameters:[AnnotatedTypeMirror type]
+MethodInvocation:checkBound
+FieldAccess:upperBound
+MethodInvocation:fixupBoundAnnotations
+Method-name:getUpperBoundField
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+Method-name:getUpperBound
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+MethodInvocation:initializeBounds
+MethodInvocation:fixupBoundAnnotations
+Method-name:getBounds
+Method-returnType:AnnotatedTypeParameterBounds
+Method-parameters:[]
+MethodInvocation:getUpperBound
+MethodInvocation:getLowerBound
+Method-name:getBoundFields
+Method-returnType:AnnotatedTypeParameterBounds
+Method-parameters:[]
+MethodInvocation:getUpperBoundField
+MethodInvocation:getLowerBoundField
+Field:inUpperBounds
+Method-name:deepCopy
+Method-returnType:AnnotatedTypeVariable
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:visit
+Method-name:deepCopy
+Method-returnType:AnnotatedTypeVariable
+Method-parameters:[]
+MethodInvocation:deepCopy
+Method-name:shallowCopy
+Method-returnType:AnnotatedTypeVariable
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:addAnnotations
+MethodInvocation:getAnnotationsField
+MethodInvocation:setUpperBound
+MethodInvocation:shallowCopy
+MethodInvocation:getUpperBound
+MethodInvocation:setLowerBound
+MethodInvocation:shallowCopy
+MethodInvocation:getLowerBound
+Method-name:shallowCopy
+Method-returnType:AnnotatedTypeVariable
+Method-parameters:[]
+MethodInvocation:shallowCopy
+Method-name:getErased
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+MethodInvocation:getErased
+MethodInvocation:getUpperBound
+Class:AnnotatedNoType
+Method-name:AnnotatedNoType
+Method-returnType:null
+Method-parameters:[NoType type, AnnotatedTypeFactory factory]
+Method-name:accept
+Method-returnType:R
+Method-parameters:[AnnotatedTypeVisitor<R,P> v, P p]
+MethodInvocation:visitNoType
+Method-name:getUnderlyingType
+Method-returnType:NoType
+Method-parameters:[]
+FieldAccess:actualType
+Method-name:deepCopy
+Method-returnType:AnnotatedNoType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:visit
+Method-name:deepCopy
+Method-returnType:AnnotatedNoType
+Method-parameters:[]
+MethodInvocation:deepCopy
+Method-name:shallowCopy
+Method-returnType:AnnotatedNoType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:addAnnotations
+MethodInvocation:getAnnotationsField
+Method-name:shallowCopy
+Method-returnType:AnnotatedNoType
+Method-parameters:[]
+MethodInvocation:shallowCopy
+Class:AnnotatedNullType
+Method-name:AnnotatedNullType
+Method-returnType:null
+Method-parameters:[NullType type, AnnotatedTypeFactory factory]
+Method-name:accept
+Method-returnType:R
+Method-parameters:[AnnotatedTypeVisitor<R,P> v, P p]
+MethodInvocation:visitNull
+Method-name:getUnderlyingType
+Method-returnType:NullType
+Method-parameters:[]
+FieldAccess:actualType
+Method-name:deepCopy
+Method-returnType:AnnotatedNullType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:visit
+Method-name:deepCopy
+Method-returnType:AnnotatedNullType
+Method-parameters:[]
+MethodInvocation:deepCopy
+Method-name:shallowCopy
+Method-returnType:AnnotatedNullType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:addAnnotations
+MethodInvocation:getAnnotationsField
+Method-name:shallowCopy
+Method-returnType:AnnotatedNullType
+Method-parameters:[]
+MethodInvocation:shallowCopy
+Class:AnnotatedPrimitiveType
+Method-name:AnnotatedPrimitiveType
+Method-returnType:null
+Method-parameters:[PrimitiveType type, AnnotatedTypeFactory factory]
+Method-name:accept
+Method-returnType:R
+Method-parameters:[AnnotatedTypeVisitor<R,P> v, P p]
+MethodInvocation:visitPrimitive
+Method-name:getUnderlyingType
+Method-returnType:PrimitiveType
+Method-parameters:[]
+FieldAccess:actualType
+Method-name:deepCopy
+Method-returnType:AnnotatedPrimitiveType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:visit
+Method-name:deepCopy
+Method-returnType:AnnotatedPrimitiveType
+Method-parameters:[]
+MethodInvocation:deepCopy
+Method-name:shallowCopy
+Method-returnType:AnnotatedPrimitiveType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:addAnnotations
+MethodInvocation:getAnnotationsField
+Method-name:shallowCopy
+Method-returnType:AnnotatedPrimitiveType
+Method-parameters:[]
+MethodInvocation:shallowCopy
+Class:AnnotatedWildcardType
+Field:superBound
+Field:extendsBound
+Field:typeVariable
+Method-name:AnnotatedWildcardType
+Method-returnType:null
+Method-parameters:[WildcardType type, AnnotatedTypeFactory factory]
+Method-name:addAnnotation
+Method-returnType:void
+Method-parameters:[AnnotationMirror a]
+MethodInvocation:fixupBoundAnnotations
+Method-name:setSuperBound
+Method-returnType:void
+Method-parameters:[AnnotatedTypeMirror type]
+MethodInvocation:checkBound
+FieldAccess:superBound
+MethodInvocation:fixupBoundAnnotations
+Method-name:getSuperBoundField
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+Method-name:getSuperBound
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+MethodInvocation:initializeSuperBound
+MethodInvocation:fixupBoundAnnotations
+FieldAccess:superBound
+Method-name:setExtendsBound
+Method-returnType:void
+Method-parameters:[AnnotatedTypeMirror type]
+MethodInvocation:checkBound
+FieldAccess:extendsBound
+MethodInvocation:fixupBoundAnnotations
+Method-name:getExtendsBoundField
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+Method-name:getExtendsBound
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+MethodInvocation:initializeExtendsBound
+MethodInvocation:fixupBoundAnnotations
+FieldAccess:extendsBound
+Method-name:fixupBoundAnnotations
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:getAnnotationsField
+MethodInvocation:replaceAnnotations
+MethodInvocation:getAnnotationsField
+MethodInvocation:replaceAnnotations
+MethodInvocation:getAnnotationsField
+Method-name:setTypeVariable
+Method-returnType:void
+Method-parameters:[TypeParameterElement typeParameterElement]
+FieldAccess:typeVariable
+MethodInvocation:asType
+Method-name:setTypeVariable
+Method-returnType:void
+Method-parameters:[TypeVariable typeVariable]
+FieldAccess:typeVariable
+Method-name:getTypeVariable
+Method-returnType:TypeVariable
+Method-parameters:[]
+Method-name:accept
+Method-returnType:R
+Method-parameters:[AnnotatedTypeVisitor<R,P> v, P p]
+MethodInvocation:visitWildcard
+Method-name:getUnderlyingType
+Method-returnType:WildcardType
+Method-parameters:[]
+FieldAccess:actualType
+Method-name:deepCopy
+Method-returnType:AnnotatedWildcardType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:visit
+Method-name:deepCopy
+Method-returnType:AnnotatedWildcardType
+Method-parameters:[]
+MethodInvocation:deepCopy
+Method-name:shallowCopy
+Method-returnType:AnnotatedWildcardType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:setExtendsBound
+MethodInvocation:shallowCopy
+MethodInvocation:getExtendsBound
+MethodInvocation:setSuperBound
+MethodInvocation:shallowCopy
+MethodInvocation:getSuperBound
+MethodInvocation:addAnnotations
+MethodInvocation:getAnnotationsField
+Method-name:shallowCopy
+Method-returnType:AnnotatedWildcardType
+Method-parameters:[]
+MethodInvocation:shallowCopy
+Method-name:getErased
+Method-returnType:AnnotatedTypeMirror
+Method-parameters:[]
+MethodInvocation:getErased
+MethodInvocation:getExtendsBound
+Field:uninferredTypeArgument
+Method-name:setUninferredTypeArgument
+Method-returnType:void
+Method-parameters:[]
+Method-name:isUninferredTypeArgument
+Method-returnType:boolean
+Method-parameters:[]
+Class:AnnotatedIntersectionType
+Method-name:AnnotatedIntersectionType
+Method-returnType:null
+Method-parameters:[IntersectionType type, AnnotatedTypeFactory atypeFactory]
+Method-name:accept
+Method-returnType:R
+Method-parameters:[AnnotatedTypeVisitor<R,P> v, P p]
+MethodInvocation:visitIntersection
+Method-name:getUnderlyingType
+Method-returnType:IntersectionType
+Method-parameters:[]
+Method-name:deepCopy
+Method-returnType:AnnotatedIntersectionType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:visit
+Method-name:deepCopy
+Method-returnType:AnnotatedIntersectionType
+Method-parameters:[]
+MethodInvocation:deepCopy
+Method-name:shallowCopy
+Method-returnType:AnnotatedIntersectionType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:addAnnotations
+MethodInvocation:getAnnotationsField
+FieldAccess:supertypes
+Method-name:shallowCopy
+Method-returnType:AnnotatedIntersectionType
+Method-parameters:[]
+MethodInvocation:shallowCopy
+Field:supertypes
+Method-name:directSuperTypes
+Method-returnType:List<AnnotatedDeclaredType>
+Method-parameters:[]
+MethodInvocation:getBounds
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:createType
+MethodInvocation:unmodifiableList
+Method-name:directSuperTypesField
+Method-returnType:List<AnnotatedDeclaredType>
+Method-parameters:[]
+Method-name:setDirectSuperTypes
+Method-returnType:void
+Method-parameters:[List<AnnotatedDeclaredType> supertypes]
+FieldAccess:supertypes
+Class:AnnotatedUnionType
+Method-name:AnnotatedUnionType
+Method-returnType:null
+Method-parameters:[UnionType type, AnnotatedTypeFactory atypeFactory]
+Method-name:accept
+Method-returnType:R
+Method-parameters:[AnnotatedTypeVisitor<R,P> v, P p]
+MethodInvocation:visitUnion
+Method-name:deepCopy
+Method-returnType:AnnotatedUnionType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:visit
+Method-name:deepCopy
+Method-returnType:AnnotatedUnionType
+Method-parameters:[]
+MethodInvocation:deepCopy
+Method-name:shallowCopy
+Method-returnType:AnnotatedUnionType
+Method-parameters:[boolean copyAnnotations]
+MethodInvocation:addAnnotations
+MethodInvocation:getAnnotationsField
+FieldAccess:alternatives
+Method-name:shallowCopy
+Method-returnType:AnnotatedUnionType
+Method-parameters:[]
+MethodInvocation:shallowCopy
+Field:alternatives
+Method-name:getAlternatives
+Method-returnType:List<AnnotatedDeclaredType>
+Method-parameters:[]
+MethodInvocation:getAlternatives
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:createType
+MethodInvocation:unmodifiableList
+Method-name:directSuperTypes
+Method-returnType:List<? extends AnnotatedTypeMirror>
+Method-parameters:[]
+MethodInvocation:directSuperTypes

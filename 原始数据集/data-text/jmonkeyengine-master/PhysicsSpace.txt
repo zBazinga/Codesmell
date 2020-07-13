@@ -1,0 +1,517 @@
+Class:PhysicsSpace
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:AXIS_X
+Field:AXIS_Y
+Field:AXIS_Z
+Field:physicsSpaceId
+Field:pQueueTL
+Field:pQueue
+Field:physicsSpaceTL
+Field:broadphaseType
+Field:physicsGhostObjects
+Field:physicsCharacters
+Field:physicsBodies
+Field:physicsJoints
+Field:physicsVehicles
+Field:collisionListeners
+Field:collisionEvents
+Field:collisionGroupListeners
+Field:tickListeners
+Field:eventFactory
+Field:worldMin
+Field:worldMax
+Field:accuracy
+Field:maxSubSteps
+Field:rayTestFlags
+Field:solverNumIterations
+Method-name:getPhysicsSpace
+Method-returnType:PhysicsSpace
+Method-parameters:[]
+MethodInvocation:get
+Method-name:setLocalThreadPhysicsSpace
+Method-returnType:void
+Method-parameters:[PhysicsSpace space]
+MethodInvocation:set
+Method-name:PhysicsSpace
+Method-returnType:null
+Method-parameters:[]
+Method-name:PhysicsSpace
+Method-returnType:null
+Method-parameters:[BroadphaseType broadphaseType]
+Method-name:PhysicsSpace
+Method-returnType:null
+Method-parameters:[Vector3f worldMin, Vector3f worldMax]
+Method-name:PhysicsSpace
+Method-returnType:null
+Method-parameters:[Vector3f worldMin, Vector3f worldMax, BroadphaseType broadphaseType]
+MethodInvocation:set
+FieldAccess:worldMin
+MethodInvocation:set
+FieldAccess:worldMax
+FieldAccess:broadphaseType
+MethodInvocation:create
+Method-name:create
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:createPhysicsSpace
+MethodInvocation:ordinal
+MethodInvocation:set
+MethodInvocation:set
+Method-name:createPhysicsSpace
+Method-returnType:long
+Method-parameters:[float minX, float minY, float minZ, float maxX, float maxY, float maxZ, int broadphaseType, boolean threading]
+Method-name:preTick_native
+Method-returnType:void
+Method-parameters:[float f]
+MethodInvocation:poll
+MethodInvocation:isCancelled
+MethodInvocation:invoke
+MethodInvocation:log
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:prePhysicsTick
+Method-name:postTick_native
+Method-returnType:void
+Method-parameters:[float f]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:physicsTick
+Method-name:addCollision_native
+Method-returnType:void
+Method-parameters:[]
+Method-name:needCollision_native
+Method-returnType:boolean
+Method-parameters:[PhysicsCollisionObject objectA, PhysicsCollisionObject objectB]
+Method-name:addCollisionEvent_native
+Method-returnType:void
+Method-parameters:[PhysicsCollisionObject node, PhysicsCollisionObject node1, long manifoldPointObjectId]
+MethodInvocation:add
+MethodInvocation:getEvent
+Method-name:notifyCollisionGroupListeners_native
+Method-returnType:boolean
+Method-parameters:[PhysicsCollisionObject node, PhysicsCollisionObject node1]
+MethodInvocation:get
+MethodInvocation:getCollisionGroup
+MethodInvocation:get
+MethodInvocation:getCollisionGroup
+MethodInvocation:collide
+MethodInvocation:getCollisionGroup
+MethodInvocation:getCollisionGroup
+MethodInvocation:collide
+Method-name:update
+Method-returnType:void
+Method-parameters:[float time]
+MethodInvocation:update
+Method-name:update
+Method-returnType:void
+Method-parameters:[float time, int maxSteps]
+MethodInvocation:stepSimulation
+Method-name:stepSimulation
+Method-returnType:void
+Method-parameters:[long space, float time, int maxSteps, float accuracy]
+Method-name:distributeEvents
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:isEmpty
+MethodInvocation:pop
+MethodInvocation:collision
+MethodInvocation:get
+MethodInvocation:recycle
+Method-name:enqueueOnThisThread
+Method-returnType:Future<V>
+Method-parameters:[Callable<V> callable]
+MethodInvocation:println
+MethodInvocation:add
+MethodInvocation:get
+Method-name:enqueue
+Method-returnType:Future<V>
+Method-parameters:[Callable<V> callable]
+MethodInvocation:add
+Method-name:add
+Method-returnType:void
+Method-parameters:[Object obj]
+MethodInvocation:setPhysicsSpace
+MethodInvocation:getNumControls
+MethodInvocation:getControl
+MethodInvocation:add
+MethodInvocation:getControl
+MethodInvocation:addCollisionObject
+MethodInvocation:addJoint
+Method-name:addCollisionObject
+Method-returnType:void
+Method-parameters:[PhysicsCollisionObject obj]
+MethodInvocation:addGhostObject
+MethodInvocation:addRigidBody
+MethodInvocation:addRigidBody
+MethodInvocation:addCharacter
+Method-name:remove
+Method-returnType:void
+Method-parameters:[Object obj]
+MethodInvocation:setPhysicsSpace
+MethodInvocation:getNumControls
+MethodInvocation:getControl
+MethodInvocation:remove
+MethodInvocation:getControl
+MethodInvocation:removeCollisionObject
+MethodInvocation:removeJoint
+Method-name:removeCollisionObject
+Method-returnType:void
+Method-parameters:[PhysicsCollisionObject obj]
+MethodInvocation:removeGhostObject
+MethodInvocation:removeRigidBody
+MethodInvocation:removeCharacter
+Method-name:addAll
+Method-returnType:void
+Method-parameters:[Spatial spatial]
+MethodInvocation:add
+MethodInvocation:getControl
+MethodInvocation:getControl
+MethodInvocation:getJoints
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:equals
+MethodInvocation:getBodyA
+MethodInvocation:add
+MethodInvocation:getChildren
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:addAll
+Method-name:removeAll
+Method-returnType:void
+Method-parameters:[Spatial spatial]
+MethodInvocation:getControl
+MethodInvocation:getControl
+MethodInvocation:getJoints
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:equals
+MethodInvocation:getBodyA
+MethodInvocation:removeJoint
+MethodInvocation:remove
+MethodInvocation:getChildren
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:removeAll
+Method-name:addCollisionObject
+Method-returnType:void
+Method-parameters:[long space, long id]
+Method-name:removeCollisionObject
+Method-returnType:void
+Method-parameters:[long space, long id]
+Method-name:addRigidBody
+Method-returnType:void
+Method-parameters:[long space, long id]
+Method-name:removeRigidBody
+Method-returnType:void
+Method-parameters:[long space, long id]
+Method-name:addCharacterObject
+Method-returnType:void
+Method-parameters:[long space, long id]
+Method-name:removeCharacterObject
+Method-returnType:void
+Method-parameters:[long space, long id]
+Method-name:addAction
+Method-returnType:void
+Method-parameters:[long space, long id]
+Method-name:removeAction
+Method-returnType:void
+Method-parameters:[long space, long id]
+Method-name:addVehicle
+Method-returnType:void
+Method-parameters:[long space, long id]
+Method-name:removeVehicle
+Method-returnType:void
+Method-parameters:[long space, long id]
+Method-name:addConstraint
+Method-returnType:void
+Method-parameters:[long space, long id]
+Method-name:addConstraintC
+Method-returnType:void
+Method-parameters:[long space, long id, boolean collision]
+Method-name:removeConstraint
+Method-returnType:void
+Method-parameters:[long space, long id]
+Method-name:addGhostObject
+Method-returnType:void
+Method-parameters:[PhysicsGhostObject node]
+MethodInvocation:containsKey
+MethodInvocation:getObjectId
+MethodInvocation:log
+MethodInvocation:put
+MethodInvocation:getObjectId
+MethodInvocation:log
+MethodInvocation:toHexString
+MethodInvocation:getObjectId
+MethodInvocation:addCollisionObject
+MethodInvocation:getObjectId
+Method-name:removeGhostObject
+Method-returnType:void
+Method-parameters:[PhysicsGhostObject node]
+MethodInvocation:containsKey
+MethodInvocation:getObjectId
+MethodInvocation:log
+MethodInvocation:remove
+MethodInvocation:getObjectId
+MethodInvocation:log
+MethodInvocation:toHexString
+MethodInvocation:getObjectId
+MethodInvocation:removeCollisionObject
+MethodInvocation:getObjectId
+Method-name:addCharacter
+Method-returnType:void
+Method-parameters:[PhysicsCharacter node]
+MethodInvocation:containsKey
+MethodInvocation:getObjectId
+MethodInvocation:log
+MethodInvocation:put
+MethodInvocation:getObjectId
+MethodInvocation:log
+MethodInvocation:toHexString
+MethodInvocation:getObjectId
+MethodInvocation:addCharacterObject
+MethodInvocation:getObjectId
+MethodInvocation:addAction
+MethodInvocation:getControllerId
+Method-name:removeCharacter
+Method-returnType:void
+Method-parameters:[PhysicsCharacter node]
+MethodInvocation:containsKey
+MethodInvocation:getObjectId
+MethodInvocation:log
+MethodInvocation:remove
+MethodInvocation:getObjectId
+MethodInvocation:log
+MethodInvocation:toHexString
+MethodInvocation:getObjectId
+MethodInvocation:removeAction
+MethodInvocation:getControllerId
+MethodInvocation:removeCharacterObject
+MethodInvocation:getObjectId
+Method-name:addRigidBody
+Method-returnType:void
+Method-parameters:[PhysicsRigidBody node]
+Method-name:removeRigidBody
+Method-returnType:void
+Method-parameters:[PhysicsRigidBody node]
+MethodInvocation:containsKey
+MethodInvocation:getObjectId
+MethodInvocation:log
+MethodInvocation:log
+MethodInvocation:toHexString
+MethodInvocation:getVehicleId
+MethodInvocation:remove
+MethodInvocation:getVehicleId
+MethodInvocation:removeVehicle
+MethodInvocation:getVehicleId
+MethodInvocation:log
+MethodInvocation:toHexString
+MethodInvocation:getObjectId
+MethodInvocation:remove
+MethodInvocation:getObjectId
+MethodInvocation:removeRigidBody
+MethodInvocation:getObjectId
+Method-name:addJoint
+Method-returnType:void
+Method-parameters:[PhysicsJoint joint]
+MethodInvocation:containsKey
+MethodInvocation:getObjectId
+MethodInvocation:log
+MethodInvocation:log
+MethodInvocation:toHexString
+MethodInvocation:getObjectId
+MethodInvocation:put
+MethodInvocation:getObjectId
+MethodInvocation:addConstraintC
+MethodInvocation:getObjectId
+MethodInvocation:isCollisionBetweenLinkedBodys
+Method-name:removeJoint
+Method-returnType:void
+Method-parameters:[PhysicsJoint joint]
+MethodInvocation:containsKey
+MethodInvocation:getObjectId
+MethodInvocation:log
+MethodInvocation:log
+MethodInvocation:toHexString
+MethodInvocation:getObjectId
+MethodInvocation:remove
+MethodInvocation:getObjectId
+MethodInvocation:removeConstraint
+MethodInvocation:getObjectId
+Method-name:getRigidBodyList
+Method-returnType:Collection<PhysicsRigidBody>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getGhostObjectList
+Method-returnType:Collection<PhysicsGhostObject>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getCharacterList
+Method-returnType:Collection<PhysicsCharacter>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getJointList
+Method-returnType:Collection<PhysicsJoint>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getVehicleList
+Method-returnType:Collection<PhysicsVehicle>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:setGravity
+Method-returnType:void
+Method-parameters:[Vector3f gravity]
+MethodInvocation:set
+FieldAccess:gravity
+MethodInvocation:setGravity
+Method-name:setGravity
+Method-returnType:void
+Method-parameters:[long spaceId, Vector3f gravity]
+Field:gravity
+Method-name:getGravity
+Method-returnType:Vector3f
+Method-parameters:[Vector3f gravity]
+MethodInvocation:set
+FieldAccess:gravity
+Method-name:addTickListener
+Method-returnType:void
+Method-parameters:[PhysicsTickListener listener]
+MethodInvocation:add
+Method-name:removeTickListener
+Method-returnType:void
+Method-parameters:[PhysicsTickListener listener]
+MethodInvocation:remove
+Method-name:addCollisionListener
+Method-returnType:void
+Method-parameters:[PhysicsCollisionListener listener]
+MethodInvocation:add
+Method-name:removeCollisionListener
+Method-returnType:void
+Method-parameters:[PhysicsCollisionListener listener]
+MethodInvocation:remove
+Method-name:addCollisionGroupListener
+Method-returnType:void
+Method-parameters:[PhysicsCollisionGroupListener listener, int collisionGroup]
+MethodInvocation:put
+Method-name:removeCollisionGroupListener
+Method-returnType:void
+Method-parameters:[int collisionGroup]
+MethodInvocation:remove
+Method-name:rayTest
+Method-returnType:List<PhysicsRayTestResult>
+Method-parameters:[Vector3f from, Vector3f to]
+MethodInvocation:rayTest
+Method-name:rayTestRaw
+Method-returnType:List<PhysicsRayTestResult>
+Method-parameters:[Vector3f from, Vector3f to]
+MethodInvocation:rayTestRaw
+Method-name:SetRayTestFlags
+Method-returnType:void
+Method-parameters:[int flags]
+Method-name:GetRayTestFlags
+Method-returnType:int
+Method-parameters:[]
+Field:hitFractionComparator
+Method-name:rayTest
+Method-returnType:List<PhysicsRayTestResult>
+Method-parameters:[Vector3f from, Vector3f to, List<PhysicsRayTestResult> results]
+MethodInvocation:clear
+MethodInvocation:rayTest_native
+MethodInvocation:sort
+Method-name:rayTestRaw
+Method-returnType:List<PhysicsRayTestResult>
+Method-parameters:[Vector3f from, Vector3f to, List<PhysicsRayTestResult> results]
+MethodInvocation:clear
+MethodInvocation:rayTest_native
+Method-name:rayTest_native
+Method-returnType:void
+Method-parameters:[Vector3f from, Vector3f to, long physicsSpaceId, List<PhysicsRayTestResult> results, int flags]
+Method-name:sweepTest
+Method-returnType:List<PhysicsSweepTestResult>
+Method-parameters:[CollisionShape shape, Transform start, Transform end, List<PhysicsSweepTestResult> results]
+MethodInvocation:sweepTest
+Method-name:sweepTest_native
+Method-returnType:void
+Method-parameters:[long shape, Transform from, Transform to, long physicsSpaceId, List<PhysicsSweepTestResult> results, float allowedCcdPenetration]
+Method-name:sweepTest
+Method-returnType:List<PhysicsSweepTestResult>
+Method-parameters:[CollisionShape shape, Transform start, Transform end, List<PhysicsSweepTestResult> results, float allowedCcdPenetration]
+MethodInvocation:clear
+MethodInvocation:sweepTest_native
+MethodInvocation:getObjectId
+Method-name:destroy
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:clear
+Method-name:getSpaceId
+Method-returnType:long
+Method-parameters:[]
+Method-name:getBroadphaseType
+Method-returnType:BroadphaseType
+Method-parameters:[]
+Method-name:setBroadphaseType
+Method-returnType:void
+Method-parameters:[BroadphaseType broadphaseType]
+FieldAccess:broadphaseType
+Method-name:setMaxSubSteps
+Method-returnType:void
+Method-parameters:[int steps]
+Method-name:getAccuracy
+Method-returnType:float
+Method-parameters:[]
+Method-name:setAccuracy
+Method-returnType:void
+Method-parameters:[float accuracy]
+FieldAccess:accuracy
+Method-name:getWorldMin
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:setWorldMin
+Method-returnType:void
+Method-parameters:[Vector3f worldMin]
+MethodInvocation:set
+FieldAccess:worldMin
+Method-name:getWorldMax
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:setWorldMax
+Method-returnType:void
+Method-parameters:[Vector3f worldMax]
+MethodInvocation:set
+FieldAccess:worldMax
+Method-name:setSolverNumIterations
+Method-returnType:void
+Method-parameters:[int numIterations]
+FieldAccess:solverNumIterations
+MethodInvocation:setSolverNumIterations
+Method-name:getSolverNumIterations
+Method-returnType:int
+Method-parameters:[]
+Method-name:setSolverNumIterations
+Method-returnType:void
+Method-parameters:[long physicsSpaceId, int numIterations]
+Method-name:initNativePhysics
+Method-returnType:void
+Method-parameters:[]
+Field:BroadphaseType
+Method-name:finalize
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:log
+MethodInvocation:getLogger
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:toHexString
+MethodInvocation:finalizeNative
+Method-name:finalizeNative
+Method-returnType:void
+Method-parameters:[long objectId]

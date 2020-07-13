@@ -1,0 +1,76 @@
+Class:LatexParserResult
+Field:fileList
+Field:nestedFiles
+Field:bibFiles
+Field:citations
+Method-name:LatexParserResult
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:fileList
+FieldAccess:nestedFiles
+FieldAccess:bibFiles
+MethodInvocation:create
+FieldAccess:citations
+MethodInvocation:create
+Method-name:getFileList
+Method-returnType:List<Path>
+Method-parameters:[]
+Method-name:getNestedFiles
+Method-returnType:List<Path>
+Method-parameters:[]
+Method-name:getBibFiles
+Method-returnType:Multimap<Path,Path>
+Method-parameters:[]
+Method-name:getCitations
+Method-returnType:Multimap<String,Citation>
+Method-parameters:[]
+Method-name:getCitationsKeySet
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getCitationsByKey
+Method-returnType:Collection<Citation>
+Method-parameters:[String key]
+MethodInvocation:get
+Method-name:getCitationsByKey
+Method-returnType:Collection<Citation>
+Method-parameters:[BibEntry entry]
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:getCiteKeyOptional
+MethodInvocation:emptyList
+Method-name:addFiles
+Method-returnType:void
+Method-parameters:[List<Path> texFiles]
+MethodInvocation:isEmpty
+MethodInvocation:addAll
+MethodInvocation:addAll
+Method-name:addBibFile
+Method-returnType:void
+Method-parameters:[Path file, Path bibFile]
+MethodInvocation:put
+Method-name:addKey
+Method-returnType:void
+Method-parameters:[String key, Path file, int lineNumber, int start, int end, String line]
+MethodInvocation:put
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:format
+FieldAccess:fileList
+FieldAccess:nestedFiles
+FieldAccess:bibFiles
+FieldAccess:citations
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash

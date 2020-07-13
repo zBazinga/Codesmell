@@ -1,0 +1,64 @@
+Class:Node
+Field:block
+Field:lvalue
+Field:assignmentContext
+Field:inSource
+Field:type
+Method-name:Node
+Method-returnType:null
+Method-parameters:[TypeMirror type]
+Method-name:getBlock
+Method-returnType:Block
+Method-parameters:[]
+Method-name:setBlock
+Method-returnType:void
+Method-parameters:[Block b]
+Method-name:getTree
+Method-returnType:Tree
+Method-parameters:[]
+Method-name:getType
+Method-returnType:TypeMirror
+Method-parameters:[]
+Method-name:accept
+Method-returnType:R
+Method-parameters:[NodeVisitor<R,P> visitor, P p]
+Method-name:isLValue
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setLValue
+Method-returnType:void
+Method-parameters:[]
+Method-name:getInSource
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setInSource
+Method-returnType:void
+Method-parameters:[boolean inSrc]
+Method-name:getAssignmentContext
+Method-returnType:AssignmentContext
+Method-parameters:[]
+Method-name:setAssignmentContext
+Method-returnType:void
+Method-parameters:[AssignmentContext assignmentContext]
+FieldAccess:assignmentContext
+Method-name:getOperands
+Method-returnType:Collection<Node>
+Method-parameters:[]
+Method-name:getTransitiveOperands
+Method-returnType:Collection<Node>
+Method-parameters:[]
+MethodInvocation:getOperands
+MethodInvocation:size
+MethodInvocation:isEmpty
+MethodInvocation:removeFirst
+MethodInvocation:addAll
+MethodInvocation:getOperands
+MethodInvocation:add
+Method-name:isArrayLengthAccess
+Method-returnType:boolean
+Method-parameters:[SameLenTransfer sameLenTransfer]
+MethodInvocation:equals
+MethodInvocation:getFieldName
+MethodInvocation:getKind
+MethodInvocation:getType
+MethodInvocation:getReceiver

@@ -1,0 +1,143 @@
+Class:OperationRouting
+Field:USE_ADAPTIVE_REPLICA_SELECTION_SETTING
+MethodInvocation:boolSetting
+Field:useAdaptiveReplicaSelection
+Method-name:OperationRouting
+Method-returnType:null
+Method-parameters:[Settings settings, ClusterSettings clusterSettings]
+FieldAccess:useAdaptiveReplicaSelection
+MethodInvocation:get
+MethodInvocation:addSettingsUpdateConsumer
+Method-name:setUseAdaptiveReplicaSelection
+Method-returnType:void
+Method-parameters:[boolean useAdaptiveReplicaSelection]
+FieldAccess:useAdaptiveReplicaSelection
+Method-name:indexShards
+Method-returnType:ShardIterator
+Method-parameters:[ClusterState clusterState, String index, String id, @Nullable String routing]
+MethodInvocation:shardsIt
+MethodInvocation:shards
+Method-name:getShards
+Method-returnType:ShardIterator
+Method-parameters:[ClusterState clusterState, String index, String id, @Nullable String routing, @Nullable String preference]
+MethodInvocation:preferenceActiveShardIterator
+MethodInvocation:shards
+MethodInvocation:getLocalNodeId
+MethodInvocation:nodes
+MethodInvocation:nodes
+Method-name:getShards
+Method-returnType:ShardIterator
+Method-parameters:[ClusterState clusterState, String index, int shardId, @Nullable String preference]
+MethodInvocation:shardRoutingTable
+MethodInvocation:getRoutingTable
+MethodInvocation:preferenceActiveShardIterator
+MethodInvocation:getLocalNodeId
+MethodInvocation:nodes
+MethodInvocation:nodes
+Method-name:searchShards
+Method-returnType:GroupShardsIterator<ShardIterator>
+Method-parameters:[ClusterState clusterState, String[] concreteIndices, @Nullable Map<String,Set<String>> routing, @Nullable String preference]
+MethodInvocation:searchShards
+Method-name:searchShards
+Method-returnType:GroupShardsIterator<ShardIterator>
+Method-parameters:[ClusterState clusterState, String[] concreteIndices, @Nullable Map<String,Set<String>> routing, @Nullable String preference, @Nullable ResponseCollectorService collectorService, @Nullable Map<String,Long> nodeCounts]
+MethodInvocation:computeTargetedShards
+MethodInvocation:size
+MethodInvocation:preferenceActiveShardIterator
+MethodInvocation:getLocalNodeId
+MethodInvocation:nodes
+MethodInvocation:nodes
+MethodInvocation:add
+MethodInvocation:sortAndCreate
+Field:EMPTY_ROUTING
+MethodInvocation:emptyMap
+Method-name:computeTargetedShards
+Method-returnType:Set<IndexShardRoutingTable>
+Method-parameters:[ClusterState clusterState, String[] concreteIndices, @Nullable Map<String,Set<String>> routing]
+MethodInvocation:indexRoutingTable
+MethodInvocation:indexMetadata
+MethodInvocation:get
+MethodInvocation:getRoutingPartitionSize
+MethodInvocation:add
+MethodInvocation:shardRoutingTable
+MethodInvocation:calculateScaledShardId
+MethodInvocation:add
+Method-name:preferenceActiveShardIterator
+Method-returnType:ShardIterator
+Method-parameters:[IndexShardRoutingTable indexShard, String localNodeId, DiscoveryNodes nodes, @Nullable String preference, @Nullable ResponseCollectorService collectorService, @Nullable Map<String,Long> nodeCounts]
+MethodInvocation:isEmpty
+MethodInvocation:shardRoutings
+MethodInvocation:charAt
+MethodInvocation:parse
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:type
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:type
+MethodInvocation:splitStringByCommaToArray
+MethodInvocation:parseInt
+MethodInvocation:id
+MethodInvocation:shardId
+MethodInvocation:length
+MethodInvocation:shardRoutings
+MethodInvocation:substring
+MethodInvocation:parse
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:split
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:type
+MethodInvocation:toSet
+MethodInvocation:preferNodeActiveInitializingShardsIt
+MethodInvocation:preferNodeActiveInitializingShardsIt
+MethodInvocation:singleton
+MethodInvocation:onlyNodeActiveInitializingShardsIt
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:type
+MethodInvocation:onlyNodeSelectorActiveInitializingShardsIt
+MethodInvocation:split
+MethodInvocation:hash
+MethodInvocation:hashCode
+MethodInvocation:activeInitializingShardsIt
+Method-name:shardRoutings
+Method-returnType:ShardIterator
+Method-parameters:[IndexShardRoutingTable indexShard, DiscoveryNodes nodes, @Nullable ResponseCollectorService collectorService, @Nullable Map<String,Long> nodeCounts]
+MethodInvocation:activeInitializingShardsRankedIt
+MethodInvocation:activeInitializingShardsRandomIt
+Method-name:indexRoutingTable
+Method-returnType:IndexRoutingTable
+Method-parameters:[ClusterState clusterState, String index]
+MethodInvocation:index
+MethodInvocation:routingTable
+Method-name:indexMetadata
+Method-returnType:IndexMetadata
+Method-parameters:[ClusterState clusterState, String index]
+MethodInvocation:index
+MethodInvocation:metadata
+Method-name:shards
+Method-returnType:IndexShardRoutingTable
+Method-parameters:[ClusterState clusterState, String index, String id, String routing]
+MethodInvocation:generateShardId
+MethodInvocation:indexMetadata
+MethodInvocation:shardRoutingTable
+MethodInvocation:getRoutingTable
+Method-name:shardId
+Method-returnType:ShardId
+Method-parameters:[ClusterState clusterState, String index, String id, @Nullable String routing]
+MethodInvocation:indexMetadata
+MethodInvocation:getIndex
+MethodInvocation:generateShardId
+Method-name:generateShardId
+Method-returnType:int
+Method-parameters:[IndexMetadata indexMetadata, @Nullable String id, @Nullable String routing]
+Method-name:calculateScaledShardId
+Method-returnType:int
+Method-parameters:[IndexMetadata indexMetadata, String effectiveRouting, int partitionOffset]
+MethodInvocation:hash
+MethodInvocation:floorMod
+MethodInvocation:getRoutingNumShards
+MethodInvocation:getRoutingFactor

@@ -1,0 +1,65 @@
+Class:MetadataOperation
+Field:DEFAULT_HIVE_CATALOG
+Field:RESULT_SET_SCHEMA
+Field:SEARCH_STRING_ESCAPE
+Method-name:MetadataOperation
+Method-returnType:null
+Method-parameters:[HiveSession parentSession, OperationType opType]
+MethodInvocation:setHasResultSet
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setState
+MethodInvocation:cleanupOperationLog
+Method-name:convertIdentifierPattern
+Method-returnType:String
+Method-parameters:[final String pattern, boolean datanucleusFormat]
+MethodInvocation:convertPattern
+MethodInvocation:convertPattern
+Method-name:convertSchemaPattern
+Method-returnType:String
+Method-parameters:[final String pattern]
+MethodInvocation:isEmpty
+MethodInvocation:convertPattern
+MethodInvocation:convertPattern
+Method-name:convertPattern
+Method-returnType:String
+Method-parameters:[String pattern, boolean datanucleusFormat]
+MethodInvocation:replaceAll
+MethodInvocation:replaceAll
+MethodInvocation:replaceAll
+MethodInvocation:replaceAll
+MethodInvocation:replaceAll
+MethodInvocation:replaceAll
+Method-name:replaceAll
+Method-returnType:String
+Method-parameters:[String input, final String pattern, final String replace]
+MethodInvocation:replaceAll
+MethodInvocation:equals
+Method-name:isAuthV2Enabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:isAuthorizationModeV2
+MethodInvocation:getBoolVar
+MethodInvocation:getConf
+Method-name:authorizeMetaGets
+Method-returnType:void
+Method-parameters:[HiveOperationType opType, List<HivePrivilegeObject> inpObjs]
+MethodInvocation:authorizeMetaGets
+Method-name:authorizeMetaGets
+Method-returnType:void
+Method-parameters:[HiveOperationType opType, List<HivePrivilegeObject> inpObjs, String cmdString]
+MethodInvocation:get
+MethodInvocation:setUserIpAddress
+MethodInvocation:getUserIpAddress
+MethodInvocation:setForwardedAddresses
+MethodInvocation:getForwardedAddresses
+MethodInvocation:setCommandString
+MethodInvocation:checkPrivileges
+MethodInvocation:getAuthorizerV2
+MethodInvocation:build
+MethodInvocation:getMessage
+Method-name:cancel
+Method-returnType:void
+Method-parameters:[OperationState stateAfterCancel]

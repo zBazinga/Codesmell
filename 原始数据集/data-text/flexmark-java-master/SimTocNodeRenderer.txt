@@ -1,0 +1,59 @@
+Class:SimTocNodeRenderer
+Field:options
+Method-name:SimTocNodeRenderer
+Method-returnType:null
+Method-parameters:[DataHolder options]
+FieldAccess:options
+Method-name:getNodeRenderingHandlers
+Method-returnType:Set<NodeRenderingHandler<?>>
+Method-parameters:[]
+MethodInvocation:asList
+Method-name:render
+Method-returnType:void
+Method-parameters:[SimTocContent node, NodeRendererContext context, HtmlWriter html]
+Method-name:render
+Method-returnType:void
+Method-parameters:[SimTocOptionList node, NodeRendererContext context, HtmlWriter html]
+Method-name:render
+Method-returnType:void
+Method-parameters:[SimTocOption node, NodeRendererContext context, HtmlWriter html]
+Method-name:render
+Method-returnType:void
+Method-parameters:[SimTocBlock node, NodeRendererContext context, HtmlWriter html]
+MethodInvocation:collectAndGetHeadings
+MethodInvocation:getDocument
+MethodInvocation:getFirst
+MethodInvocation:parseOption
+MethodInvocation:getStyle
+FieldAccess:options
+MethodInvocation:isNotNull
+MethodInvocation:getTitle
+MethodInvocation:withTitle
+MethodInvocation:unescape
+MethodInvocation:getTitle
+MethodInvocation:renderTocHeaders
+Method-name:renderTocHeaders
+Method-returnType:void
+Method-parameters:[NodeRendererContext context, HtmlWriter html, Node node, List<Heading> headings, TocOptions options]
+MethodInvocation:filteredHeadings
+MethodInvocation:htmlHeadingTexts
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getFirst
+MethodInvocation:toList
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getFirst
+MethodInvocation:toList
+MethodInvocation:renderHtmlToc
+MethodInvocation:isEmpty
+FieldAccess:sourcePositionAttribute
+MethodInvocation:getHtmlOptions
+MethodInvocation:getChars
+MethodInvocation:getSecond
+Class:Factory
+Method-name:apply
+Method-returnType:NodeRenderer
+Method-parameters:[@NotNull DataHolder options]

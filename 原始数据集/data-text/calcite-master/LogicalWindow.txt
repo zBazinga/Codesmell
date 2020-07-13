@@ -1,0 +1,65 @@
+Class:LogicalWindow
+Method-name:LogicalWindow
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelNode input, List<RexLiteral> constants, RelDataType rowType, List<Group> groups]
+Method-name:copy
+Method-returnType:LogicalWindow
+Method-parameters:[RelTraitSet traitSet, List<RelNode> inputs]
+MethodInvocation:getCluster
+MethodInvocation:sole
+Method-name:create
+Method-returnType:LogicalWindow
+Method-parameters:[RelTraitSet traitSet, RelNode input, List<RexLiteral> constants, RelDataType rowType, List<Group> groups]
+MethodInvocation:getCluster
+Method-name:create
+Method-returnType:RelNode
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelBuilder relBuilder, RelNode child, final RexProgram program]
+Method-name:toInputRefs
+Method-returnType:List<RexNode>
+Method-parameters:[final List<? extends RexNode> operands]
+Class:WindowKey
+Field:groupSet
+Field:orderKeys
+Field:isRows
+Field:lowerBound
+Field:upperBound
+Method-name:WindowKey
+Method-returnType:null
+Method-parameters:[ImmutableBitSet groupSet, RelCollation orderKeys, boolean isRows, RexWindowBound lowerBound, RexWindowBound upperBound]
+FieldAccess:groupSet
+FieldAccess:orderKeys
+FieldAccess:isRows
+FieldAccess:lowerBound
+FieldAccess:upperBound
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+FieldAccess:groupSet
+MethodInvocation:equals
+FieldAccess:orderKeys
+MethodInvocation:equals
+FieldAccess:lowerBound
+MethodInvocation:equals
+FieldAccess:upperBound
+FieldAccess:isRows
+Method-name:addWindows
+Method-returnType:void
+Method-parameters:[Multimap<WindowKey,RexOver> windowMap, RexOver over, final int inputFieldCount]
+MethodInvocation:getWindow
+MethodInvocation:getCollation
+MethodInvocation:newArrayList
+MethodInvocation:filter
+MethodInvocation:of
+MethodInvocation:getProjectOrdinals
+MethodInvocation:length
+MethodInvocation:except
+MethodInvocation:range
+MethodInvocation:isRows
+MethodInvocation:getLowerBound
+MethodInvocation:getUpperBound
+MethodInvocation:put

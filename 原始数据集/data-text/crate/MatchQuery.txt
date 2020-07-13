@@ -1,0 +1,226 @@
+Class:MatchQuery
+Field:DEPRECATION_LOGGER
+MethodInvocation:getLogger
+Field:DEFAULT_BOOST
+Field:Type
+Field:ordinal
+Method-name:Type
+Method-returnType:null
+Method-parameters:[int ordinal]
+FieldAccess:ordinal
+Field:ZeroTermsQuery
+Method-name:NONE
+Method-returnType:null
+Method-parameters:[]
+Field:ordinal
+Method-name:ZeroTermsQuery
+Method-returnType:null
+Method-parameters:[int ordinal]
+FieldAccess:ordinal
+Field:DEFAULT_PHRASE_SLOP
+Field:DEFAULT_LENIENCY
+Field:DEFAULT_ZERO_TERMS_QUERY
+Field:context
+Field:analyzer
+Field:occur
+Field:enablePositionIncrements
+Field:phraseSlop
+Field:fuzziness
+Field:fuzzyPrefixLength
+Field:maxExpansions
+Field:transpositions
+Field:fuzzyRewriteMethod
+Field:lenient
+Field:zeroTermsQuery
+Field:commonTermsCutoff
+Field:autoGenerateSynonymsPhraseQuery
+Method-name:MatchQuery
+Method-returnType:null
+Method-parameters:[QueryShardContext context]
+FieldAccess:context
+Method-name:setAnalyzer
+Method-returnType:void
+Method-parameters:[String analyzerName]
+FieldAccess:analyzer
+MethodInvocation:get
+MethodInvocation:getIndexAnalyzers
+MethodInvocation:getMapperService
+Method-name:setAnalyzer
+Method-returnType:void
+Method-parameters:[Analyzer analyzer]
+FieldAccess:analyzer
+Method-name:setOccur
+Method-returnType:void
+Method-parameters:[BooleanClause.Occur occur]
+FieldAccess:occur
+Method-name:setCommonTermsCutoff
+Method-returnType:void
+Method-parameters:[Float cutoff]
+FieldAccess:commonTermsCutoff
+Method-name:setEnablePositionIncrements
+Method-returnType:void
+Method-parameters:[boolean enablePositionIncrements]
+FieldAccess:enablePositionIncrements
+Method-name:setPhraseSlop
+Method-returnType:void
+Method-parameters:[int phraseSlop]
+FieldAccess:phraseSlop
+Method-name:setFuzziness
+Method-returnType:void
+Method-parameters:[Fuzziness fuzziness]
+FieldAccess:fuzziness
+Method-name:setFuzzyPrefixLength
+Method-returnType:void
+Method-parameters:[int fuzzyPrefixLength]
+FieldAccess:fuzzyPrefixLength
+Method-name:setMaxExpansions
+Method-returnType:void
+Method-parameters:[int maxExpansions]
+FieldAccess:maxExpansions
+Method-name:setTranspositions
+Method-returnType:void
+Method-parameters:[boolean transpositions]
+FieldAccess:transpositions
+Method-name:setFuzzyRewriteMethod
+Method-returnType:void
+Method-parameters:[MultiTermQuery.RewriteMethod fuzzyRewriteMethod]
+FieldAccess:fuzzyRewriteMethod
+Method-name:setLenient
+Method-returnType:void
+Method-parameters:[boolean lenient]
+FieldAccess:lenient
+Method-name:setZeroTermsQuery
+Method-returnType:void
+Method-parameters:[ZeroTermsQuery zeroTermsQuery]
+FieldAccess:zeroTermsQuery
+Method-name:setAutoGenerateSynonymsPhraseQuery
+Method-returnType:void
+Method-parameters:[boolean enabled]
+FieldAccess:autoGenerateSynonymsPhraseQuery
+Method-name:getAnalyzer
+Method-returnType:Analyzer
+Method-parameters:[MappedFieldType fieldType, boolean quoted]
+MethodInvocation:getSearchQuoteAnalyzer
+MethodInvocation:getSearchAnalyzer
+Method-name:hasPositions
+Method-returnType:boolean
+Method-parameters:[MappedFieldType fieldType]
+MethodInvocation:compareTo
+MethodInvocation:indexOptions
+Method-name:parse
+Method-returnType:Query
+Method-parameters:[Type type, String fieldName, Object value]
+Method-name:termQuery
+Method-returnType:Query
+Method-parameters:[MappedFieldType fieldType, BytesRef value, boolean lenient]
+MethodInvocation:termQuery
+MethodInvocation:newLenientFieldQuery
+MethodInvocation:name
+Method-name:zeroTermsQuery
+Method-returnType:Query
+Method-parameters:[]
+MethodInvocation:newMatchNoDocsQuery
+MethodInvocation:newMatchAllQuery
+Class:MatchQueryBuilder
+Field:mapper
+Method-name:MatchQueryBuilder
+Method-returnType:null
+Method-parameters:[Analyzer analyzer, MappedFieldType mapper]
+FieldAccess:mapper
+Method-name:newTermQuery
+Method-returnType:Query
+Method-parameters:[Term term]
+MethodInvocation:blendTermQuery
+Method-name:newSynonymQuery
+Method-returnType:Query
+Method-parameters:[Term[] terms]
+MethodInvocation:blendTermsQuery
+Method-name:analyzePhrase
+Method-returnType:Query
+Method-parameters:[String field, TokenStream stream, int slop]
+MethodInvocation:checkForPositions
+MethodInvocation:phraseQuery
+MethodInvocation:blendPhraseQuery
+MethodInvocation:newLenientFieldQuery
+MethodInvocation:deprecated
+MethodInvocation:getMessage
+MethodInvocation:newLenientFieldQuery
+Method-name:analyzeMultiPhrase
+Method-returnType:Query
+Method-parameters:[String field, TokenStream stream, int slop]
+MethodInvocation:checkForPositions
+MethodInvocation:multiPhraseQuery
+MethodInvocation:newLenientFieldQuery
+MethodInvocation:deprecated
+MethodInvocation:getMessage
+MethodInvocation:newLenientFieldQuery
+Method-name:checkForPositions
+Method-returnType:void
+Method-parameters:[String field]
+MethodInvocation:hasPositions
+Method-name:createFieldQuery
+Method-returnType:Query
+Method-parameters:[Analyzer analyzer, BooleanClause.Occur operator, String field, String queryText, boolean quoted, int phraseSlop]
+Method-name:createPhrasePrefixQuery
+Method-returnType:Query
+Method-parameters:[String field, String queryText, int phraseSlop, int maxExpansions]
+MethodInvocation:createFieldQuery
+MethodInvocation:getAnalyzer
+MethodInvocation:toMultiPhrasePrefix
+Method-name:toMultiPhrasePrefix
+Method-returnType:Query
+Method-parameters:[final Query query, int phraseSlop, int maxExpansions]
+MethodInvocation:getBoost
+MethodInvocation:getQuery
+MethodInvocation:toSpanQueryPrefix
+MethodInvocation:setMaxExpansions
+MethodInvocation:setSlop
+MethodInvocation:getTerms
+MethodInvocation:getPositions
+MethodInvocation:add
+MethodInvocation:getTermArrays
+MethodInvocation:getPositions
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:getTerm
+Method-name:toSpanQueryPrefix
+Method-returnType:Query
+Method-parameters:[SpanQuery query, float boost]
+MethodInvocation:getTerm
+MethodInvocation:getClauses
+MethodInvocation:getTerm
+MethodInvocation:getSlop
+MethodInvocation:isInOrder
+FieldAccess:length
+MethodInvocation:getClauses
+MethodInvocation:toSpanQueryPrefix
+MethodInvocation:getClauses
+Method-name:createCommonTermsQuery
+Method-returnType:Query
+Method-parameters:[String field, String queryText, Occur highFreqOccur, Occur lowFreqOccur, float maxTermFrequency]
+MethodInvocation:createBooleanQuery
+MethodInvocation:boolToExtendedCommonTermsQuery
+Method-name:boolToExtendedCommonTermsQuery
+Method-returnType:Query
+Method-parameters:[BooleanQuery bq, Occur highFreqOccur, Occur lowFreqOccur, float maxTermFrequency]
+MethodInvocation:clauses
+MethodInvocation:getQuery
+MethodInvocation:add
+MethodInvocation:getTerm
+MethodInvocation:getQuery
+Method-name:blendPhraseQuery
+Method-returnType:Query
+Method-parameters:[PhraseQuery query, MappedFieldType fieldType]
+Method-name:blendTermsQuery
+Method-returnType:Query
+Method-parameters:[Term[] terms, MappedFieldType fieldType]
+Method-name:blendTermQuery
+Method-returnType:Query
+Method-parameters:[Term term, MappedFieldType fieldType]
+MethodInvocation:fuzzyQuery
+MethodInvocation:text
+MethodInvocation:setRewriteMethod
+MethodInvocation:newLenientFieldQuery
+MethodInvocation:name
+MethodInvocation:termQuery
+MethodInvocation:bytes

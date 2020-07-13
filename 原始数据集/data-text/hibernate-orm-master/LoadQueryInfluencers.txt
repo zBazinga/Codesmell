@@ -1,0 +1,140 @@
+Class:LoadQueryInfluencers
+Field:NONE
+Field:sessionFactory
+Field:internalFetchProfile
+Field:enabledFetchProfileNames
+Field:enabledFilters
+Field:effectiveEntityGraph
+Field:readOnly
+Method-name:LoadQueryInfluencers
+Method-returnType:null
+Method-parameters:[]
+Method-name:LoadQueryInfluencers
+Method-returnType:null
+Method-parameters:[SessionFactoryImplementor sessionFactory]
+Method-name:LoadQueryInfluencers
+Method-returnType:null
+Method-parameters:[SessionFactoryImplementor sessionFactory, Boolean readOnly]
+FieldAccess:sessionFactory
+FieldAccess:readOnly
+Method-name:getSessionFactory
+Method-returnType:SessionFactoryImplementor
+Method-parameters:[]
+Method-name:getInternalFetchProfile
+Method-returnType:String
+Method-parameters:[]
+Method-name:setInternalFetchProfile
+Method-returnType:void
+Method-parameters:[String internalFetchProfile]
+FieldAccess:internalFetchProfile
+Method-name:hasEnabledFilters
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getEnabledFilters
+Method-returnType:Map<String,Filter>
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:validate
+Method-name:getEnabledFilterNames
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:unmodifiableSet
+MethodInvocation:keySet
+Method-name:getEnabledFilter
+Method-returnType:Filter
+Method-parameters:[String filterName]
+MethodInvocation:get
+Method-name:enableFilter
+Method-returnType:Filter
+Method-parameters:[String filterName]
+MethodInvocation:getFilterDefinition
+FieldAccess:enabledFilters
+MethodInvocation:put
+Method-name:disableFilter
+Method-returnType:void
+Method-parameters:[String filterName]
+MethodInvocation:remove
+Method-name:getFilterParameterValue
+Method-returnType:Object
+Method-parameters:[String filterParameterName]
+MethodInvocation:parseFilterParameterName
+MethodInvocation:get
+MethodInvocation:getParameter
+Method-name:getFilterParameterType
+Method-returnType:Type
+Method-parameters:[String filterParameterName]
+MethodInvocation:parseFilterParameterName
+MethodInvocation:getFilterDefinition
+MethodInvocation:getParameterType
+Method-name:parseFilterParameterName
+Method-returnType:String[]
+Method-parameters:[String filterParameterName]
+MethodInvocation:lastIndexOf
+MethodInvocation:substring
+MethodInvocation:substring
+Method-name:hasEnabledFetchProfiles
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getEnabledFetchProfileNames
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:checkFetchProfileName
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:containsFetchProfileDefinition
+Method-name:isFetchProfileEnabled
+Method-returnType:boolean
+Method-parameters:[String name]
+MethodInvocation:checkFetchProfileName
+MethodInvocation:contains
+Method-name:enableFetchProfile
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:checkFetchProfileName
+FieldAccess:enabledFetchProfileNames
+MethodInvocation:add
+Method-name:disableFetchProfile
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:checkFetchProfileName
+MethodInvocation:remove
+Method-name:getEffectiveEntityGraph
+Method-returnType:EffectiveEntityGraph
+Method-parameters:[]
+Method-name:getFetchGraph
+Method-returnType:EntityGraph
+Method-parameters:[]
+MethodInvocation:getSemantic
+MethodInvocation:getGraph
+Method-name:setFetchGraph
+Method-returnType:void
+Method-parameters:[EntityGraph fetchGraph]
+MethodInvocation:applyGraph
+Method-name:getLoadGraph
+Method-returnType:EntityGraph
+Method-parameters:[]
+MethodInvocation:getSemantic
+MethodInvocation:getGraph
+Method-name:setLoadGraph
+Method-returnType:void
+Method-parameters:[final EntityGraph loadGraph]
+MethodInvocation:applyGraph
+Method-name:getReadOnly
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setReadOnly
+Method-returnType:void
+Method-parameters:[Boolean readOnly]
+FieldAccess:readOnly
+Method-name:createUniqueKeyLoader
+Method-returnType:EntityLoader
+Method-parameters:[Type uniqueKeyType, String[] columns, AbstractEntityPersister abstractEntityPersister]
+MethodInvocation:isEntityType
+MethodInvocation:getAssociatedEntityName
+MethodInvocation:getIdentifierType
+MethodInvocation:entityPersister
+MethodInvocation:getMetamodel
+MethodInvocation:getFactory
+MethodInvocation:getFactory

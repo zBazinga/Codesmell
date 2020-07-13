@@ -1,0 +1,130 @@
+Class:Ray
+Field:serialVersionUID
+Field:origin
+Field:direction
+Field:limit
+Method-name:Ray
+Method-returnType:null
+Method-parameters:[]
+Method-name:Ray
+Method-returnType:null
+Method-parameters:[Vector3f origin, Vector3f direction]
+MethodInvocation:setOrigin
+MethodInvocation:setDirection
+Method-name:intersectWhere
+Method-returnType:boolean
+Method-parameters:[Triangle t, Vector3f loc]
+MethodInvocation:intersectWhere
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+Method-name:intersectWhere
+Method-returnType:boolean
+Method-parameters:[Vector3f v0, Vector3f v1, Vector3f v2, Vector3f loc]
+MethodInvocation:intersects
+Method-name:intersectWherePlanar
+Method-returnType:boolean
+Method-parameters:[Triangle t, Vector3f loc]
+MethodInvocation:intersectWherePlanar
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+Method-name:intersectWherePlanar
+Method-returnType:boolean
+Method-parameters:[Vector3f v0, Vector3f v1, Vector3f v2, Vector3f loc]
+MethodInvocation:intersects
+Method-name:intersects
+Method-returnType:float
+Method-parameters:[Vector3f v0, Vector3f v1, Vector3f v2]
+Method-name:intersectWherePlanarQuad
+Method-returnType:boolean
+Method-parameters:[Vector3f v0, Vector3f v1, Vector3f v2, Vector3f loc]
+MethodInvocation:intersects
+Method-name:intersectsWherePlane
+Method-returnType:boolean
+Method-parameters:[Plane p, Vector3f loc]
+MethodInvocation:dot
+MethodInvocation:getNormal
+MethodInvocation:dot
+MethodInvocation:getNormal
+MethodInvocation:getConstant
+MethodInvocation:addLocal
+MethodInvocation:multLocal
+MethodInvocation:set
+Method-name:collideWith
+Method-returnType:int
+Method-parameters:[Collidable other, CollisionResults results]
+MethodInvocation:collideWith
+MethodInvocation:intersects
+MethodInvocation:get1
+MethodInvocation:get2
+MethodInvocation:get3
+MethodInvocation:isInfinite
+MethodInvocation:isNaN
+MethodInvocation:addLocal
+MethodInvocation:multLocal
+MethodInvocation:addCollision
+Method-name:distanceSquared
+Method-returnType:float
+Method-parameters:[Vector3f point]
+MethodInvocation:get
+MethodInvocation:subtract
+MethodInvocation:dot
+MethodInvocation:add
+MethodInvocation:mult
+MethodInvocation:set
+MethodInvocation:subtract
+MethodInvocation:lengthSquared
+MethodInvocation:release
+Method-name:getOrigin
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:setOrigin
+Method-returnType:void
+Method-parameters:[Vector3f origin]
+MethodInvocation:set
+FieldAccess:origin
+Method-name:getLimit
+Method-returnType:float
+Method-parameters:[]
+Method-name:setLimit
+Method-returnType:void
+Method-parameters:[float limit]
+FieldAccess:limit
+Method-name:getDirection
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:setDirection
+Method-returnType:void
+Method-parameters:[Vector3f direction]
+Method-name:set
+Method-returnType:void
+Method-parameters:[Ray source]
+MethodInvocation:set
+MethodInvocation:getOrigin
+MethodInvocation:set
+MethodInvocation:getDirection
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter e]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter e]
+MethodInvocation:getCapsule
+MethodInvocation:readSavable
+MethodInvocation:clone
+MethodInvocation:readSavable
+MethodInvocation:clone
+Method-name:clone
+Method-returnType:Ray
+Method-parameters:[]
+MethodInvocation:clone
+MethodInvocation:clone

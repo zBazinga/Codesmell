@@ -1,0 +1,385 @@
+Class:GenericConversionService
+Field:NO_OP_CONVERTER
+Field:NO_MATCH
+Field:converters
+Field:converterCache
+Method-name:addConverter
+Method-returnType:void
+Method-parameters:[Converter<?,?> converter]
+MethodInvocation:getRequiredTypeInfo
+MethodInvocation:getClass
+MethodInvocation:getRequiredTypeInfo
+MethodInvocation:getDecoratedClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:addConverter
+Method-name:addConverter
+Method-returnType:void
+Method-parameters:[Class<S> sourceType, Class<T> targetType, Converter<? super S,? extends T> converter]
+MethodInvocation:addConverter
+MethodInvocation:forClass
+MethodInvocation:forClass
+Method-name:addConverter
+Method-returnType:void
+Method-parameters:[GenericConverter converter]
+MethodInvocation:add
+FieldAccess:converters
+MethodInvocation:invalidateCache
+Method-name:addConverterFactory
+Method-returnType:void
+Method-parameters:[ConverterFactory<?,?> factory]
+MethodInvocation:getRequiredTypeInfo
+MethodInvocation:getClass
+MethodInvocation:getRequiredTypeInfo
+MethodInvocation:getDecoratedClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:addConverter
+MethodInvocation:toClass
+MethodInvocation:toClass
+Method-name:removeConvertible
+Method-returnType:void
+Method-parameters:[Class<?> sourceType, Class<?> targetType]
+MethodInvocation:remove
+FieldAccess:converters
+MethodInvocation:invalidateCache
+Method-name:canConvert
+Method-returnType:boolean
+Method-parameters:[@Nullable Class<?> sourceType, Class<?> targetType]
+MethodInvocation:notNull
+MethodInvocation:canConvert
+MethodInvocation:valueOf
+MethodInvocation:valueOf
+Method-name:canConvert
+Method-returnType:boolean
+Method-parameters:[@Nullable TypeDescriptor sourceType, TypeDescriptor targetType]
+MethodInvocation:notNull
+MethodInvocation:getConverter
+Method-name:canBypassConvert
+Method-returnType:boolean
+Method-parameters:[@Nullable TypeDescriptor sourceType, TypeDescriptor targetType]
+MethodInvocation:notNull
+MethodInvocation:getConverter
+Method-name:convert
+Method-returnType:T
+Method-parameters:[@Nullable Object source, Class<T> targetType]
+MethodInvocation:notNull
+MethodInvocation:convert
+MethodInvocation:forObject
+MethodInvocation:valueOf
+Method-name:convert
+Method-returnType:Object
+Method-parameters:[@Nullable Object source, @Nullable TypeDescriptor sourceType, TypeDescriptor targetType]
+MethodInvocation:notNull
+MethodInvocation:isTrue
+MethodInvocation:handleResult
+MethodInvocation:convertNullSource
+MethodInvocation:isInstance
+MethodInvocation:getObjectType
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getConverter
+MethodInvocation:invokeConverter
+MethodInvocation:handleResult
+MethodInvocation:handleConverterNotFound
+Method-name:convert
+Method-returnType:Object
+Method-parameters:[@Nullable Object source, TypeDescriptor targetType]
+MethodInvocation:convert
+MethodInvocation:forObject
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+FieldAccess:converters
+Method-name:convertNullSource
+Method-returnType:Object
+Method-parameters:[@Nullable TypeDescriptor sourceType, TypeDescriptor targetType]
+MethodInvocation:getObjectType
+MethodInvocation:empty
+Method-name:getConverter
+Method-returnType:GenericConverter
+Method-parameters:[TypeDescriptor sourceType, TypeDescriptor targetType]
+MethodInvocation:get
+FieldAccess:converterCache
+MethodInvocation:find
+FieldAccess:converters
+MethodInvocation:getDefaultConverter
+MethodInvocation:put
+FieldAccess:converterCache
+MethodInvocation:put
+FieldAccess:converterCache
+Method-name:getDefaultConverter
+Method-returnType:GenericConverter
+Method-parameters:[TypeDescriptor sourceType, TypeDescriptor targetType]
+MethodInvocation:isAssignableTo
+Method-name:getRequiredTypeInfo
+Method-returnType:ResolvableType[]
+Method-parameters:[Class<?> converterClass, Class<?> genericIfc]
+MethodInvocation:as
+MethodInvocation:forClass
+MethodInvocation:getGenerics
+MethodInvocation:resolve
+MethodInvocation:resolve
+Method-name:invalidateCache
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+FieldAccess:converterCache
+Method-name:handleConverterNotFound
+Method-returnType:Object
+Method-parameters:[@Nullable Object source, @Nullable TypeDescriptor sourceType, TypeDescriptor targetType]
+MethodInvocation:assertNotPrimitiveTargetType
+MethodInvocation:isAssignableTo
+MethodInvocation:isInstance
+MethodInvocation:getObjectType
+Method-name:handleResult
+Method-returnType:Object
+Method-parameters:[@Nullable TypeDescriptor sourceType, TypeDescriptor targetType, @Nullable Object result]
+MethodInvocation:assertNotPrimitiveTargetType
+Class:ConverterAdapter
+Field:converter
+Field:typeInfo
+Field:targetType
+Method-name:ConverterAdapter
+Method-returnType:null
+Method-parameters:[Converter<?,?> converter, ResolvableType sourceType, ResolvableType targetType]
+FieldAccess:converter
+FieldAccess:typeInfo
+MethodInvocation:toClass
+MethodInvocation:toClass
+FieldAccess:targetType
+Method-name:getConvertibleTypes
+Method-returnType:Set<ConvertiblePair>
+Method-parameters:[]
+MethodInvocation:singleton
+FieldAccess:typeInfo
+Method-name:matches
+Method-returnType:boolean
+Method-parameters:[TypeDescriptor sourceType, TypeDescriptor targetType]
+MethodInvocation:getTargetType
+FieldAccess:typeInfo
+MethodInvocation:getObjectType
+MethodInvocation:getResolvableType
+MethodInvocation:getType
+MethodInvocation:isAssignableFrom
+FieldAccess:targetType
+MethodInvocation:hasUnresolvableGenerics
+FieldAccess:targetType
+FieldAccess:converter
+MethodInvocation:matches
+FieldAccess:converter
+Method-name:convert
+Method-returnType:Object
+Method-parameters:[@Nullable Object source, TypeDescriptor sourceType, TypeDescriptor targetType]
+MethodInvocation:convertNullSource
+MethodInvocation:convert
+FieldAccess:converter
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:typeInfo
+FieldAccess:converter
+Class:ConverterFactoryAdapter
+Field:converterFactory
+Field:typeInfo
+Method-name:ConverterFactoryAdapter
+Method-returnType:null
+Method-parameters:[ConverterFactory<?,?> converterFactory, ConvertiblePair typeInfo]
+FieldAccess:converterFactory
+FieldAccess:typeInfo
+Method-name:getConvertibleTypes
+Method-returnType:Set<ConvertiblePair>
+Method-parameters:[]
+MethodInvocation:singleton
+FieldAccess:typeInfo
+Method-name:matches
+Method-returnType:boolean
+Method-parameters:[TypeDescriptor sourceType, TypeDescriptor targetType]
+FieldAccess:converterFactory
+MethodInvocation:matches
+FieldAccess:converterFactory
+MethodInvocation:getConverter
+FieldAccess:converterFactory
+MethodInvocation:getType
+MethodInvocation:matches
+Method-name:convert
+Method-returnType:Object
+Method-parameters:[@Nullable Object source, TypeDescriptor sourceType, TypeDescriptor targetType]
+MethodInvocation:convertNullSource
+MethodInvocation:convert
+MethodInvocation:getConverter
+FieldAccess:converterFactory
+MethodInvocation:getObjectType
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:typeInfo
+FieldAccess:converterFactory
+Class:ConverterCacheKey
+Field:sourceType
+Field:targetType
+Method-name:ConverterCacheKey
+Method-returnType:null
+Method-parameters:[TypeDescriptor sourceType, TypeDescriptor targetType]
+FieldAccess:sourceType
+FieldAccess:targetType
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object other]
+MethodInvocation:equals
+FieldAccess:sourceType
+MethodInvocation:equals
+FieldAccess:targetType
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+FieldAccess:sourceType
+MethodInvocation:hashCode
+FieldAccess:targetType
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:sourceType
+FieldAccess:targetType
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[ConverterCacheKey other]
+MethodInvocation:compareTo
+MethodInvocation:toString
+MethodInvocation:getResolvableType
+FieldAccess:sourceType
+MethodInvocation:toString
+MethodInvocation:getResolvableType
+MethodInvocation:compareTo
+MethodInvocation:toString
+MethodInvocation:getResolvableType
+FieldAccess:targetType
+MethodInvocation:toString
+MethodInvocation:getResolvableType
+Class:Converters
+Field:globalConverters
+Field:converters
+Method-name:add
+Method-returnType:void
+Method-parameters:[GenericConverter converter]
+MethodInvocation:getConvertibleTypes
+MethodInvocation:state
+MethodInvocation:add
+FieldAccess:globalConverters
+MethodInvocation:getMatchableConverters
+MethodInvocation:add
+Method-name:getMatchableConverters
+Method-returnType:ConvertersForPair
+Method-parameters:[ConvertiblePair convertiblePair]
+MethodInvocation:computeIfAbsent
+FieldAccess:converters
+Method-name:remove
+Method-returnType:void
+Method-parameters:[Class<?> sourceType, Class<?> targetType]
+MethodInvocation:remove
+FieldAccess:converters
+Method-name:find
+Method-returnType:GenericConverter
+Method-parameters:[TypeDescriptor sourceType, TypeDescriptor targetType]
+MethodInvocation:getClassHierarchy
+MethodInvocation:getType
+MethodInvocation:getClassHierarchy
+MethodInvocation:getType
+MethodInvocation:getRegisteredConverter
+Method-name:getRegisteredConverter
+Method-returnType:GenericConverter
+Method-parameters:[TypeDescriptor sourceType, TypeDescriptor targetType, ConvertiblePair convertiblePair]
+MethodInvocation:get
+FieldAccess:converters
+MethodInvocation:getConverter
+FieldAccess:globalConverters
+MethodInvocation:matches
+Method-name:getClassHierarchy
+Method-returnType:List<Class<?>>
+Method-parameters:[Class<?> type]
+MethodInvocation:addToClassHierarchy
+MethodInvocation:resolvePrimitiveIfNecessary
+MethodInvocation:isArray
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getComponentType
+MethodInvocation:resolvePrimitiveIfNecessary
+MethodInvocation:getSuperclass
+MethodInvocation:addToClassHierarchy
+MethodInvocation:getSuperclass
+MethodInvocation:addInterfacesToClassHierarchy
+MethodInvocation:isAssignableFrom
+MethodInvocation:addToClassHierarchy
+MethodInvocation:size
+MethodInvocation:addToClassHierarchy
+MethodInvocation:size
+MethodInvocation:addInterfacesToClassHierarchy
+MethodInvocation:addToClassHierarchy
+MethodInvocation:size
+MethodInvocation:addToClassHierarchy
+MethodInvocation:size
+Method-name:addInterfacesToClassHierarchy
+Method-returnType:void
+Method-parameters:[Class<?> type, boolean asArray, List<Class<?>> hierarchy, Set<Class<?>> visited]
+MethodInvocation:getInterfaces
+MethodInvocation:addToClassHierarchy
+MethodInvocation:size
+Method-name:addToClassHierarchy
+Method-returnType:void
+Method-parameters:[int index, Class<?> type, boolean asArray, List<Class<?>> hierarchy, Set<Class<?>> visited]
+MethodInvocation:getClass
+MethodInvocation:newInstance
+MethodInvocation:add
+MethodInvocation:add
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:getConverterStrings
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:getConverterStrings
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:values
+FieldAccess:converters
+MethodInvocation:add
+MethodInvocation:toString
+MethodInvocation:sort
+Class:ConvertersForPair
+Field:converters
+Method-name:add
+Method-returnType:void
+Method-parameters:[GenericConverter converter]
+MethodInvocation:addFirst
+FieldAccess:converters
+Method-name:getConverter
+Method-returnType:GenericConverter
+Method-parameters:[TypeDescriptor sourceType, TypeDescriptor targetType]
+FieldAccess:converters
+MethodInvocation:matches
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:collectionToCommaDelimitedString
+FieldAccess:converters
+Class:NoOpConverter
+Field:name
+Method-name:NoOpConverter
+Method-returnType:null
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:getConvertibleTypes
+Method-returnType:Set<ConvertiblePair>
+Method-parameters:[]
+Method-name:convert
+Method-returnType:Object
+Method-parameters:[@Nullable Object source, TypeDescriptor sourceType, TypeDescriptor targetType]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:name

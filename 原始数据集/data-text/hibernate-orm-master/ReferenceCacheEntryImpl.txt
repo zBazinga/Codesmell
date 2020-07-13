@@ -1,0 +1,36 @@
+Class:ReferenceCacheEntryImpl
+Field:reference
+Field:subclassPersister
+Method-name:ReferenceCacheEntryImpl
+Method-returnType:null
+Method-parameters:[Object reference, EntityPersister subclassPersister]
+FieldAccess:reference
+FieldAccess:subclassPersister
+Method-name:getReference
+Method-returnType:Object
+Method-parameters:[]
+Method-name:isReferenceEntry
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getSubclass
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getEntityName
+Method-name:getSubclassPersister
+Method-returnType:EntityPersister
+Method-parameters:[]
+Method-name:getVersion
+Method-returnType:Object
+Method-parameters:[]
+Method-name:getDisassembledState
+Method-returnType:Serializable[]
+Method-parameters:[]
+Method-name:makeEntityCircularReferenceSafe
+Method-returnType:void
+Method-parameters:[EventSource session, Object entity, EntityKey entityKey, CacheEntityLoaderHelper cacheEntityLoaderHelper]
+MethodInvocation:getPersistenceContext
+MethodInvocation:addReferenceEntry
+MethodInvocation:addUninitializedCachedEntity
+MethodInvocation:getSubclassPersister
+MethodInvocation:getVersion
+MethodInvocation:initializeNonLazyCollections

@@ -1,0 +1,53 @@
+Class:StringIdsSection
+Field:strings
+Method-name:StringIdsSection
+Method-returnType:null
+Method-parameters:[DexFile file]
+Method-name:items
+Method-returnType:Collection<? extends Item>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:get
+Method-returnType:IndexedItem
+Method-parameters:[Constant cst]
+MethodInvocation:throwIfNotPrepared
+MethodInvocation:get
+Method-name:writeHeaderPart
+Method-returnType:void
+Method-parameters:[AnnotatedOutput out]
+MethodInvocation:throwIfNotPrepared
+MethodInvocation:size
+MethodInvocation:getFileOffset
+MethodInvocation:annotates
+MethodInvocation:annotate
+MethodInvocation:u4
+MethodInvocation:annotate
+MethodInvocation:u4
+MethodInvocation:writeInt
+MethodInvocation:writeInt
+Method-name:intern
+Method-returnType:StringIdItem
+Method-parameters:[String string]
+MethodInvocation:intern
+Method-name:intern
+Method-returnType:StringIdItem
+Method-parameters:[CstString string]
+MethodInvocation:intern
+Method-name:intern
+Method-returnType:StringIdItem
+Method-parameters:[StringIdItem string]
+MethodInvocation:throwIfPrepared
+MethodInvocation:getValue
+MethodInvocation:get
+MethodInvocation:put
+Method-name:indexOf
+Method-returnType:int
+Method-parameters:[CstString string]
+MethodInvocation:throwIfNotPrepared
+MethodInvocation:get
+MethodInvocation:getIndex
+Method-name:orderItems
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:setIndex

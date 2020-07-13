@@ -1,0 +1,33 @@
+Class:AutomaticGroup
+Method-name:AutomaticGroup
+Method-returnType:null
+Method-parameters:[String name, GroupHierarchyType context]
+Method-name:contains
+Method-returnType:boolean
+Method-parameters:[BibEntry entry]
+Method-name:isDynamic
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:createSubgroups
+Method-returnType:Set<GroupTreeNode>
+Method-parameters:[BibEntry entry]
+Method-name:createSubgroups
+Method-returnType:ObservableList<GroupTreeNode>
+Method-parameters:[ObservableList<BibEntry> entries]
+MethodInvocation:collect
+MethodInvocation:flatMap
+MethodInvocation:stream
+MethodInvocation:stream
+MethodInvocation:createSubgroups
+MethodInvocation:mergeIntoTree
+Method-name:appendAutomaticGroupDetails
+Method-returnType:void
+Method-parameters:[StringBuilder builder, GroupSerializer groupSerializer]
+MethodInvocation:append
+MethodInvocation:quote
+MethodInvocation:getName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:ordinal
+MethodInvocation:getHierarchicalContext
+MethodInvocation:append

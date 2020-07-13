@@ -1,0 +1,90 @@
+Class:EnhancerImpl
+Field:log
+MethodInvocation:messageLogger
+Field:enhancementContext
+Field:classPool
+Method-name:EnhancerImpl
+Method-returnType:null
+Method-parameters:[EnhancementContext enhancementContext]
+FieldAccess:enhancementContext
+FieldAccess:classPool
+MethodInvocation:buildClassPool
+FieldAccess:enhancementContext
+Method-name:EnhancerImpl
+Method-returnType:null
+Method-parameters:[JavassistEnhancementContext enhancementContext]
+FieldAccess:enhancementContext
+FieldAccess:classPool
+MethodInvocation:buildClassPool
+Method-name:enhance
+Method-returnType:byte[]
+Method-parameters:[String className, byte[] originalBytes]
+MethodInvocation:makeClassIfNew
+MethodInvocation:enhance
+MethodInvocation:getByteCode
+MethodInvocation:unableToBuildEnhancementMetamodel
+MethodInvocation:detach
+Method-name:loadCtClassFromClass
+Method-returnType:CtClass
+Method-parameters:[Class<?> aClass]
+MethodInvocation:replace
+MethodInvocation:getName
+MethodInvocation:getResourceAsStream
+MethodInvocation:getClassLoader
+MethodInvocation:makeClass
+MethodInvocation:close
+MethodInvocation:debugf
+MethodInvocation:getName
+Method-name:enhance
+Method-returnType:boolean
+Method-parameters:[CtClass managedCtClass]
+MethodInvocation:isInterface
+MethodInvocation:debugf
+MethodInvocation:getName
+MethodInvocation:alreadyEnhanced
+MethodInvocation:debugf
+MethodInvocation:getName
+MethodInvocation:isEntityClass
+MethodInvocation:debugf
+MethodInvocation:getName
+MethodInvocation:enhance
+MethodInvocation:isCompositeClass
+MethodInvocation:debugf
+MethodInvocation:getName
+MethodInvocation:enhance
+MethodInvocation:isMappedSuperclassClass
+MethodInvocation:debugf
+MethodInvocation:getName
+MethodInvocation:enhance
+MethodInvocation:doExtendedEnhancement
+MethodInvocation:debugf
+MethodInvocation:getName
+MethodInvocation:extendedEnhancement
+MethodInvocation:debugf
+MethodInvocation:getName
+Method-name:alreadyEnhanced
+Method-returnType:boolean
+Method-parameters:[CtClass managedCtClass]
+MethodInvocation:getInterfaces
+MethodInvocation:isAssignable
+MethodInvocation:getName
+MethodInvocation:getMessage
+Method-name:getByteCode
+Method-returnType:byte[]
+Method-parameters:[CtClass managedCtClass]
+MethodInvocation:toBytecode
+MethodInvocation:toByteArray
+MethodInvocation:unableToTransformClass
+MethodInvocation:getMessage
+MethodInvocation:getMessage
+MethodInvocation:close
+Method-name:addInterceptorHandling
+Method-returnType:void
+Method-parameters:[CtClass managedCtClass]
+MethodInvocation:hasLazyLoadableAttributes
+MethodInvocation:debugf
+MethodInvocation:getName
+MethodInvocation:addInterface
+MethodInvocation:loadCtClassFromClass
+MethodInvocation:addFieldWithGetterAndSetter
+MethodInvocation:loadCtClassFromClass

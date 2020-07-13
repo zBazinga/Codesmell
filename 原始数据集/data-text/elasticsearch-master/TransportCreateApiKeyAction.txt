@@ -1,0 +1,26 @@
+Class:TransportCreateApiKeyAction
+Field:generator
+Field:securityContext
+Method-name:TransportCreateApiKeyAction
+Method-returnType:null
+Method-parameters:[TransportService transportService, ActionFilters actionFilters, ApiKeyService apiKeyService, SecurityContext context, CompositeRolesStore rolesStore, NamedXContentRegistry xContentRegistry]
+FieldAccess:generator
+FieldAccess:securityContext
+Method-name:doExecute
+Method-returnType:void
+Method-parameters:[Task task, CreateApiKeyRequest request, ActionListener<CreateApiKeyResponse> listener]
+MethodInvocation:getAuthentication
+MethodInvocation:onFailure
+MethodInvocation:getAuthenticationType
+MethodInvocation:grantsAnyPrivileges
+MethodInvocation:onFailure
+MethodInvocation:generateApiKey
+Method-name:grantsAnyPrivileges
+Method-returnType:boolean
+Method-parameters:[CreateApiKeyRequest request]
+MethodInvocation:getRoleDescriptors
+MethodInvocation:isEmpty
+MethodInvocation:getRoleDescriptors
+MethodInvocation:allMatch
+MethodInvocation:stream
+MethodInvocation:getRoleDescriptors

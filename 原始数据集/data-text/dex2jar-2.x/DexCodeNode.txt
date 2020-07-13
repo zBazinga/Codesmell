@@ -1,0 +1,101 @@
+Class:DexCodeNode
+Field:stmts
+Field:tryStmts
+Field:debugNode
+Field:totalRegister
+Method-name:DexCodeNode
+Method-returnType:null
+Method-parameters:[]
+Method-name:DexCodeNode
+Method-returnType:null
+Method-parameters:[DexCodeVisitor visitor]
+Method-name:accept
+Method-returnType:void
+Method-parameters:[DexMethodVisitor v]
+MethodInvocation:visitCode
+MethodInvocation:accept
+MethodInvocation:visitEnd
+Method-name:add
+Method-returnType:void
+Method-parameters:[DexStmtNode stmt]
+MethodInvocation:add
+Method-name:visitConstStmt
+Method-returnType:void
+Method-parameters:[final Op op, final int ra, final Object value]
+MethodInvocation:add
+Method-name:visitFillArrayDataStmt
+Method-returnType:void
+Method-parameters:[final Op op, final int ra, final Object array]
+MethodInvocation:add
+Method-name:visitFieldStmt
+Method-returnType:void
+Method-parameters:[final Op op, final int a, final int b, final Field field]
+MethodInvocation:add
+Method-name:visitFilledNewArrayStmt
+Method-returnType:void
+Method-parameters:[final Op op, final int[] args, final String type]
+MethodInvocation:add
+Method-name:visitJumpStmt
+Method-returnType:void
+Method-parameters:[final Op op, final int a, final int b, final DexLabel label]
+MethodInvocation:add
+Method-name:visitLabel
+Method-returnType:void
+Method-parameters:[final DexLabel label]
+MethodInvocation:add
+Method-name:visitMethodStmt
+Method-returnType:void
+Method-parameters:[final Op op, final int[] args, final Method method]
+MethodInvocation:add
+Method-name:visitMethodStmt
+Method-returnType:void
+Method-parameters:[Op op, int[] args, String name, Proto proto, MethodHandle bsm, Object... bsmArgs]
+MethodInvocation:add
+Method-name:visitMethodStmt
+Method-returnType:void
+Method-parameters:[Op op, int[] args, Method bsm, Proto proto]
+MethodInvocation:add
+Method-name:visitPackedSwitchStmt
+Method-returnType:void
+Method-parameters:[final Op op, final int aA, final int first_case, final DexLabel[] labels]
+MethodInvocation:add
+Method-name:visitRegister
+Method-returnType:void
+Method-parameters:[final int total]
+FieldAccess:totalRegister
+Method-name:visitSparseSwitchStmt
+Method-returnType:void
+Method-parameters:[final Op op, final int ra, final int[] cases, final DexLabel[] labels]
+MethodInvocation:add
+Method-name:visitStmt0R
+Method-returnType:void
+Method-parameters:[final Op op]
+MethodInvocation:add
+Method-name:visitStmt1R
+Method-returnType:void
+Method-parameters:[final Op op, final int reg]
+MethodInvocation:add
+Method-name:visitStmt2R
+Method-returnType:void
+Method-parameters:[final Op op, final int a, final int b]
+MethodInvocation:add
+Method-name:visitStmt2R1N
+Method-returnType:void
+Method-parameters:[final Op op, final int distReg, final int srcReg, final int content]
+MethodInvocation:add
+Method-name:visitStmt3R
+Method-returnType:void
+Method-parameters:[final Op op, final int a, final int b, final int c]
+MethodInvocation:add
+Method-name:visitTryCatch
+Method-returnType:void
+Method-parameters:[final DexLabel start, final DexLabel end, final DexLabel[] handler, final String[] type]
+MethodInvocation:add
+Method-name:visitTypeStmt
+Method-returnType:void
+Method-parameters:[final Op op, final int a, final int b, final String type]
+MethodInvocation:add
+Method-name:visitDebug
+Method-returnType:DexDebugVisitor
+Method-parameters:[]
+FieldAccess:debugNode

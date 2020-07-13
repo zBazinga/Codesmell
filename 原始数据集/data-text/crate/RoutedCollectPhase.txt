@@ -1,0 +1,120 @@
+Class:RoutedCollectPhase
+Field:routing
+Field:toCollect
+Field:maxRowGranularity
+Field:where
+Field:distributionInfo
+Field:nodePageSizeHint
+Field:orderBy
+Method-name:RoutedCollectPhase
+Method-returnType:null
+Method-parameters:[UUID jobId, int executionNodeId, String name, Routing routing, RowGranularity maxRowGranularity, List<Symbol> toCollect, List<Projection> projections, Symbol where, DistributionInfo distributionInfo]
+Method-name:type
+Method-returnType:Type
+Method-parameters:[]
+Method-name:nodeIds
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:nodes
+Method-name:distributionInfo
+Method-returnType:DistributionInfo
+Method-parameters:[]
+Method-name:distributionInfo
+Method-returnType:void
+Method-parameters:[DistributionInfo distributionInfo]
+FieldAccess:distributionInfo
+Method-name:nodePageSizeHint
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:nodePageSizeHint
+Method-returnType:void
+Method-parameters:[Integer nodePageSizeHint]
+FieldAccess:nodePageSizeHint
+Method-name:pageSizeHint
+Method-returnType:void
+Method-parameters:[Integer pageSize]
+MethodInvocation:nodePageSizeHint
+MethodInvocation:getWeightedPageSize
+MethodInvocation:max
+MethodInvocation:size
+MethodInvocation:nodeIds
+Method-name:shardQueueSize
+Method-returnType:int
+Method-parameters:[String nodeId]
+MethodInvocation:getWeightedPageSize
+MethodInvocation:max
+MethodInvocation:numShards
+Method-name:orderBy
+Method-returnType:OrderBy
+Method-parameters:[]
+Method-name:orderBy
+Method-returnType:void
+Method-parameters:[@Nullable OrderBy orderBy]
+Method-name:where
+Method-returnType:Symbol
+Method-parameters:[]
+Method-name:routing
+Method-returnType:Routing
+Method-parameters:[]
+Method-name:toCollect
+Method-returnType:List<Symbol>
+Method-parameters:[]
+Method-name:isRouted
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasLocations
+Method-name:maxRowGranularity
+Method-returnType:RowGranularity
+Method-parameters:[]
+Method-name:accept
+Method-returnType:R
+Method-parameters:[ExecutionPhaseVisitor<C,R> visitor, C context]
+MethodInvocation:visitRoutedCollectPhase
+Method-name:RoutedCollectPhase
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:fromStream
+MethodInvocation:listFromStream
+MethodInvocation:fromStream
+MethodInvocation:fromStream
+MethodInvocation:readOptionalVInt
+MethodInvocation:readOptionalWriteable
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeTo
+MethodInvocation:toStream
+MethodInvocation:toStream
+MethodInvocation:writeTo
+MethodInvocation:toStream
+MethodInvocation:writeOptionalVInt
+MethodInvocation:writeOptionalWriteable
+Method-name:normalize
+Method-returnType:RoutedCollectPhase
+Method-parameters:[EvaluatingNormalizer normalizer, CoordinatorTxnCtx coordinatorTxnCtx]
+MethodInvocation:normalize
+MethodInvocation:map
+MethodInvocation:equals
+MethodInvocation:normalize
+FieldAccess:orderBy
+MethodInvocation:map
+MethodInvocation:jobId
+MethodInvocation:phaseId
+MethodInvocation:name
+MethodInvocation:nodePageSizeHint
+MethodInvocation:orderBy
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash

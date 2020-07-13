@@ -1,0 +1,67 @@
+Class:UmbrellaHeaderAction
+Field:GUID
+Field:umbrellaHeader
+Field:publicHeaders
+Field:additionalExportedHeaders
+Method-name:UmbrellaHeaderAction
+Method-returnType:null
+Method-parameters:[ActionOwner owner, Artifact umbrellaHeader, NestedSet<Artifact> publicHeaders, Iterable<PathFragment> additionalExportedHeaders]
+MethodInvocation:toList
+Method-name:UmbrellaHeaderAction
+Method-returnType:null
+Method-parameters:[ActionOwner owner, Artifact umbrellaHeader, Iterable<Artifact> publicHeaders, Iterable<PathFragment> additionalExportedHeaders]
+MethodInvocation:build
+MethodInvocation:addAll
+MethodInvocation:stableOrder
+MethodInvocation:filter
+FieldAccess:umbrellaHeader
+FieldAccess:publicHeaders
+MethodInvocation:copyOf
+FieldAccess:additionalExportedHeaders
+MethodInvocation:copyOf
+Method-name:expandedHeaders
+Method-returnType:Iterable<Artifact>
+Method-parameters:[ArtifactExpander artifactExpander, Iterable<Artifact> unexpandedHeaders]
+MethodInvocation:isTreeArtifact
+MethodInvocation:expand
+MethodInvocation:add
+MethodInvocation:copyOf
+Method-name:newDeterministicWriter
+Method-returnType:DeterministicWriter
+Method-parameters:[ActionExecutionContext ctx]
+MethodInvocation:getArtifactExpander
+Method-name:writeOutputFile
+Method-returnType:void
+Method-parameters:[OutputStream out]
+MethodInvocation:expandedHeaders
+MethodInvocation:appendHeader
+MethodInvocation:getExecPath
+MethodInvocation:appendHeader
+MethodInvocation:write
+MethodInvocation:getBytes
+MethodInvocation:toString
+Method-name:appendHeader
+Method-returnType:void
+Method-parameters:[StringBuilder content, PathFragment path, HashSet<PathFragment> deduper]
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+Method-name:getMnemonic
+Method-returnType:String
+Method-parameters:[]
+Method-name:computeKey
+Method-returnType:void
+Method-parameters:[ActionKeyContext actionKeyContext, Fingerprint fp]
+MethodInvocation:addString
+MethodInvocation:addPath
+MethodInvocation:getExecPath
+MethodInvocation:addInt
+MethodInvocation:size
+MethodInvocation:addPath
+MethodInvocation:getExecPath
+MethodInvocation:addInt
+MethodInvocation:size
+MethodInvocation:addPath

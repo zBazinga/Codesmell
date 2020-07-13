@@ -1,0 +1,124 @@
+Class:BufferedImageHttpMessageConverter
+Field:readableMediaTypes
+Field:defaultContentType
+Field:cacheDir
+Method-name:BufferedImageHttpMessageConverter
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:getReaderMIMETypes
+MethodInvocation:hasText
+MethodInvocation:add
+FieldAccess:readableMediaTypes
+MethodInvocation:parseMediaType
+MethodInvocation:getWriterMIMETypes
+MethodInvocation:hasText
+FieldAccess:defaultContentType
+MethodInvocation:parseMediaType
+Method-name:setDefaultContentType
+Method-returnType:void
+Method-parameters:[@Nullable MediaType defaultContentType]
+MethodInvocation:getImageWritersByMIMEType
+MethodInvocation:toString
+MethodInvocation:hasNext
+FieldAccess:defaultContentType
+Method-name:getDefaultContentType
+Method-returnType:MediaType
+Method-parameters:[]
+FieldAccess:defaultContentType
+Method-name:setCacheDir
+Method-returnType:void
+Method-parameters:[File cacheDir]
+MethodInvocation:notNull
+MethodInvocation:isTrue
+MethodInvocation:isDirectory
+FieldAccess:cacheDir
+Method-name:canRead
+Method-returnType:boolean
+Method-parameters:[Class<?> clazz, @Nullable MediaType mediaType]
+MethodInvocation:isReadable
+Method-name:isReadable
+Method-returnType:boolean
+Method-parameters:[@Nullable MediaType mediaType]
+MethodInvocation:getImageReadersByMIMEType
+MethodInvocation:toString
+MethodInvocation:hasNext
+Method-name:canWrite
+Method-returnType:boolean
+Method-parameters:[Class<?> clazz, @Nullable MediaType mediaType]
+MethodInvocation:isWritable
+Method-name:isWritable
+Method-returnType:boolean
+Method-parameters:[@Nullable MediaType mediaType]
+MethodInvocation:equalsTypeAndSubtype
+MethodInvocation:getImageWritersByMIMEType
+MethodInvocation:toString
+MethodInvocation:hasNext
+Method-name:getSupportedMediaTypes
+Method-returnType:List<MediaType>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+FieldAccess:readableMediaTypes
+Method-name:read
+Method-returnType:BufferedImage
+Method-parameters:[@Nullable Class<? extends BufferedImage> clazz, HttpInputMessage inputMessage]
+MethodInvocation:createImageInputStream
+MethodInvocation:getBody
+MethodInvocation:getContentType
+MethodInvocation:getHeaders
+MethodInvocation:getImageReadersByMIMEType
+MethodInvocation:toString
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getDefaultReadParam
+MethodInvocation:process
+MethodInvocation:setInput
+MethodInvocation:read
+MethodInvocation:dispose
+MethodInvocation:close
+Method-name:createImageInputStream
+Method-returnType:ImageInputStream
+Method-parameters:[InputStream is]
+FieldAccess:cacheDir
+FieldAccess:cacheDir
+Method-name:write
+Method-returnType:void
+Method-parameters:[final BufferedImage image, @Nullable final MediaType contentType, final HttpOutputMessage outputMessage]
+MethodInvocation:getContentType
+MethodInvocation:setContentType
+MethodInvocation:getHeaders
+MethodInvocation:setBody
+MethodInvocation:writeInternal
+MethodInvocation:writeInternal
+MethodInvocation:getBody
+Method-name:getContentType
+Method-returnType:MediaType
+Method-parameters:[@Nullable MediaType contentType]
+MethodInvocation:isWildcardType
+MethodInvocation:isWildcardSubtype
+MethodInvocation:getDefaultContentType
+MethodInvocation:notNull
+Method-name:writeInternal
+Method-returnType:void
+Method-parameters:[BufferedImage image, MediaType contentType, OutputStream body]
+MethodInvocation:getImageWritersByMIMEType
+MethodInvocation:toString
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getDefaultWriteParam
+MethodInvocation:process
+MethodInvocation:createImageOutputStream
+MethodInvocation:setOutput
+MethodInvocation:write
+MethodInvocation:dispose
+MethodInvocation:close
+Method-name:createImageOutputStream
+Method-returnType:ImageOutputStream
+Method-parameters:[OutputStream os]
+FieldAccess:cacheDir
+FieldAccess:cacheDir
+Method-name:process
+Method-returnType:void
+Method-parameters:[ImageReadParam irp]
+Method-name:process
+Method-returnType:void
+Method-parameters:[ImageWriteParam iwp]

@@ -1,0 +1,79 @@
+Class:MergeReviewIntoCommentMigration
+Field:LOGGER
+MethodInvocation:getLogger
+Method-name:needsMigration
+Method-returnType:boolean
+Method-parameters:[ParserResult parserResult]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:getEntries
+MethodInvocation:getDatabase
+MethodInvocation:isPresent
+MethodInvocation:getField
+Method-name:performMigration
+Method-returnType:void
+Method-parameters:[ParserResult parserResult]
+MethodInvocation:getEntries
+MethodInvocation:getDatabase
+MethodInvocation:requireNonNull
+MethodInvocation:forEach
+MethodInvocation:filter
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:hasCommentField
+MethodInvocation:migrate
+Method-name:collectConflicts
+Method-returnType:List<BibEntry>
+Method-parameters:[ParserResult parserResult]
+MethodInvocation:getEntries
+MethodInvocation:getDatabase
+MethodInvocation:requireNonNull
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:toList
+Method-name:performConflictingMigration
+Method-returnType:void
+Method-parameters:[ParserResult parserResult]
+MethodInvocation:forEach
+MethodInvocation:collectConflicts
+MethodInvocation:migrate
+Method-name:hasCommentField
+Method-returnType:boolean
+Method-parameters:[BibEntry entry]
+MethodInvocation:isPresent
+MethodInvocation:getField
+Method-name:hasReviewField
+Method-returnType:boolean
+Method-parameters:[BibEntry entry]
+MethodInvocation:isPresent
+MethodInvocation:getField
+Method-name:mergeCommentFieldIfPresent
+Method-returnType:String
+Method-parameters:[BibEntry entry, String review]
+MethodInvocation:isPresent
+MethodInvocation:getField
+MethodInvocation:info
+MethodInvocation:format
+MethodInvocation:getAuthorTitleYear
+MethodInvocation:format
+MethodInvocation:trim
+MethodInvocation:get
+MethodInvocation:getField
+MethodInvocation:lang
+MethodInvocation:trim
+Method-name:migrate
+Method-returnType:void
+Method-parameters:[BibEntry entry, ParserResult parserResult]
+MethodInvocation:hasReviewField
+MethodInvocation:updateFields
+MethodInvocation:mergeCommentFieldIfPresent
+MethodInvocation:get
+MethodInvocation:getField
+MethodInvocation:wasChangedOnMigration
+Method-name:updateFields
+Method-returnType:void
+Method-parameters:[BibEntry entry, String review]
+MethodInvocation:setField
+MethodInvocation:clearField

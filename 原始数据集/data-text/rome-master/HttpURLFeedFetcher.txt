@@ -1,0 +1,101 @@
+Class:HttpURLFeedFetcher
+Field:connectTimeout
+Field:POLL_EVENT
+Field:RETRIEVE_EVENT
+Field:UNCHANGED_EVENT
+Field:feedInfoCache
+Method-name:HttpURLFeedFetcher
+Method-returnType:null
+Method-parameters:[]
+Method-name:HttpURLFeedFetcher
+Method-returnType:null
+Method-parameters:[final FeedFetcherCache feedInfoCache]
+MethodInvocation:setFeedInfoCache
+Method-name:retrieveFeed
+Method-returnType:SyndFeed
+Method-parameters:[final URL feedUrl]
+MethodInvocation:retrieveFeed
+MethodInvocation:getUserAgent
+Method-name:retrieveFeed
+Method-returnType:SyndFeed
+Method-parameters:[final String userAgent, final URL feedUrl]
+MethodInvocation:openConnection
+MethodInvocation:toExternalForm
+MethodInvocation:setConnectTimeout
+MethodInvocation:getFeedInfoCache
+MethodInvocation:getFeedInfo
+MethodInvocation:setRequestHeaders
+MethodInvocation:connect
+MethodInvocation:fireEvent
+MethodInvocation:retrieveAndCacheFeed
+MethodInvocation:getResponseCode
+MethodInvocation:retrieveAndCacheFeed
+MethodInvocation:fireEvent
+MethodInvocation:getSyndFeed
+MethodInvocation:disconnect
+MethodInvocation:fireEvent
+MethodInvocation:setRequestHeaders
+MethodInvocation:connect
+MethodInvocation:getInputStream
+MethodInvocation:getSyndFeedFromStream
+MethodInvocation:handleErrorCodes
+MethodInvocation:getResponseCode
+MethodInvocation:close
+MethodInvocation:disconnect
+Method-name:retrieveAndCacheFeed
+Method-returnType:void
+Method-parameters:[final URL feedUrl, final SyndFeedInfo syndFeedInfo, final HttpURLConnection connection]
+MethodInvocation:handleErrorCodes
+MethodInvocation:getResponseCode
+MethodInvocation:resetFeedInfo
+MethodInvocation:getFeedInfoCache
+MethodInvocation:setFeedInfo
+Method-name:resetFeedInfo
+Method-returnType:void
+Method-parameters:[final URL orignalUrl, final SyndFeedInfo syndFeedInfo, final HttpURLConnection connection]
+MethodInvocation:setUrl
+MethodInvocation:getURL
+MethodInvocation:setId
+MethodInvocation:toString
+MethodInvocation:setLastModified
+MethodInvocation:getLastModified
+MethodInvocation:setETag
+MethodInvocation:getHeaderField
+MethodInvocation:getInputStream
+MethodInvocation:getSyndFeedFromStream
+MethodInvocation:getHeaderField
+MethodInvocation:isUsingDeltaEncoding
+MethodInvocation:contains
+MethodInvocation:getFeedInfoCache
+MethodInvocation:getResponseCode
+MethodInvocation:getFeedInfo
+MethodInvocation:getSyndFeed
+MethodInvocation:combineFeeds
+MethodInvocation:setSyndFeed
+MethodInvocation:close
+Method-name:readSyndFeedFromStream
+Method-returnType:SyndFeed
+Method-parameters:[final InputStream inputStream, final URLConnection connection]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getContentEncoding
+MethodInvocation:getHeaderField
+MethodInvocation:getHeaderField
+MethodInvocation:setPreserveWireFeed
+MethodInvocation:isPreserveWireFeed
+MethodInvocation:setAllowDoctypes
+MethodInvocation:isAllowDoctypes
+MethodInvocation:build
+Method-name:getSyndFeedFromStream
+Method-returnType:SyndFeed
+Method-parameters:[final InputStream inputStream, final URLConnection connection]
+MethodInvocation:readSyndFeedFromStream
+MethodInvocation:fireEvent
+Method-name:getFeedInfoCache
+Method-returnType:FeedFetcherCache
+Method-parameters:[]
+Method-name:setFeedInfoCache
+Method-returnType:void
+Method-parameters:[final FeedFetcherCache cache]
+Method-name:setConnectTimeout
+Method-returnType:void
+Method-parameters:[final int timeout]

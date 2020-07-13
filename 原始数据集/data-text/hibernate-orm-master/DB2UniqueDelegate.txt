@@ -1,0 +1,28 @@
+Class:DB2UniqueDelegate
+Method-name:DB2UniqueDelegate
+Method-returnType:null
+Method-parameters:[Dialect dialect]
+Method-name:getAlterTableToAddUniqueKeyCommand
+Method-returnType:String
+Method-parameters:[UniqueKey uniqueKey, Metadata metadata]
+MethodInvocation:hasNullable
+MethodInvocation:buildSqlCreateIndexString
+MethodInvocation:getName
+MethodInvocation:getTable
+MethodInvocation:columnIterator
+MethodInvocation:getColumnOrderMap
+Method-name:getAlterTableToDropUniqueKeyCommand
+Method-returnType:String
+Method-parameters:[UniqueKey uniqueKey, Metadata metadata]
+MethodInvocation:hasNullable
+MethodInvocation:buildSqlDropIndexString
+MethodInvocation:getName
+MethodInvocation:format
+MethodInvocation:getQualifiedObjectNameFormatter
+MethodInvocation:getJdbcEnvironment
+MethodInvocation:getDatabase
+MethodInvocation:getQualifiedTableName
+MethodInvocation:getTable
+MethodInvocation:getDialect
+MethodInvocation:getJdbcEnvironment
+MethodInvocation:getDatabase

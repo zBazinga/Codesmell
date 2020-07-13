@@ -1,0 +1,100 @@
+Class:RoleMapperExpressionParser
+Field:FIELD
+Method-name:fromXContent
+Method-returnType:RoleMapperExpression
+Method-parameters:[final XContentParser parser]
+MethodInvocation:parse
+Method-name:parseObject
+Method-returnType:RoleMapperExpression
+Method-parameters:[XContentParser parser, String id]
+MethodInvocation:parse
+Method-name:parse
+Method-returnType:RoleMapperExpression
+Method-parameters:[final String name, final XContentParser parser]
+MethodInvocation:parseRulesObject
+Method-name:parseRulesObject
+Method-returnType:RoleMapperExpression
+Method-parameters:[final String objectName, final XContentParser parser]
+MethodInvocation:currentToken
+MethodInvocation:nextToken
+MethodInvocation:currentToken
+MethodInvocation:fieldName
+MethodInvocation:parseExpression
+MethodInvocation:nextToken
+Method-name:parseExpression
+Method-returnType:RoleMapperExpression
+Method-parameters:[XContentParser parser, String field, String objectName]
+MethodInvocation:match
+MethodInvocation:getParseField
+MethodInvocation:getDeprecationHandler
+MethodInvocation:builder
+MethodInvocation:forEach
+MethodInvocation:parseExpressionArray
+MethodInvocation:getParseField
+MethodInvocation:build
+MethodInvocation:match
+MethodInvocation:getParseField
+MethodInvocation:getDeprecationHandler
+MethodInvocation:builder
+MethodInvocation:forEach
+MethodInvocation:parseExpressionArray
+MethodInvocation:getParseField
+MethodInvocation:build
+MethodInvocation:match
+MethodInvocation:getDeprecationHandler
+MethodInvocation:parseFieldExpression
+MethodInvocation:match
+MethodInvocation:getParseField
+MethodInvocation:getDeprecationHandler
+MethodInvocation:parseExceptExpression
+Method-name:parseFieldExpression
+Method-returnType:RoleMapperExpression
+Method-parameters:[XContentParser parser]
+MethodInvocation:checkStartObject
+MethodInvocation:fieldName
+MethodInvocation:getPreferredName
+MethodInvocation:nextToken
+MethodInvocation:parseArray
+MethodInvocation:singletonList
+MethodInvocation:parseFieldValue
+MethodInvocation:nextToken
+MethodInvocation:getPreferredName
+MethodInvocation:ofKeyValues
+MethodInvocation:toArray
+Method-name:parseExceptExpression
+Method-returnType:RoleMapperExpression
+Method-parameters:[XContentParser parser]
+MethodInvocation:checkStartObject
+MethodInvocation:parseRulesObject
+MethodInvocation:getName
+Method-name:checkStartObject
+Method-returnType:void
+Method-parameters:[XContentParser parser]
+MethodInvocation:nextToken
+Method-name:fieldName
+Method-returnType:String
+Method-parameters:[String objectName, XContentParser parser]
+MethodInvocation:nextToken
+MethodInvocation:currentName
+Method-name:parseExpressionArray
+Method-returnType:List<RoleMapperExpression>
+Method-parameters:[ParseField field, XContentParser parser]
+MethodInvocation:nextToken
+MethodInvocation:parseArray
+MethodInvocation:parseRulesObject
+MethodInvocation:getPreferredName
+Method-name:parseArray
+Method-returnType:List<T>
+Method-parameters:[ParseField field, XContentParser parser, CheckedFunction<XContentParser,T,IOException> elementParser]
+MethodInvocation:currentToken
+MethodInvocation:nextToken
+MethodInvocation:add
+MethodInvocation:apply
+Method-name:parseFieldValue
+Method-returnType:Object
+Method-parameters:[XContentParser parser]
+MethodInvocation:currentToken
+MethodInvocation:text
+MethodInvocation:booleanValue
+MethodInvocation:longValue
+MethodInvocation:currentToken

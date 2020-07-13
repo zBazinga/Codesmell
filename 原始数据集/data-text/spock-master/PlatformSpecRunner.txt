@@ -1,0 +1,350 @@
+Class:PlatformSpecRunner
+Field:supervisor
+Method-name:PlatformSpecRunner
+Method-returnType:null
+Method-parameters:[IRunSupervisor supervisor]
+FieldAccess:supervisor
+Method-name:runSharedSpec
+Method-returnType:SpockExecutionContext
+Method-parameters:[SpockExecutionContext context]
+MethodInvocation:createSpecInstance
+MethodInvocation:runSharedInitializer
+Method-name:runSpec
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, Runnable specRunner]
+MethodInvocation:hasErrors
+MethodInvocation:getErrorInfoCollector
+MethodInvocation:getSpec
+MethodInvocation:beforeSpec
+MethodInvocation:invoke
+MethodInvocation:createMethodInfoForDoRunSpec
+MethodInvocation:afterSpec
+Method-name:createMethodInfoForDoRunSpec
+Method-returnType:MethodInfo
+Method-parameters:[SpockExecutionContext context, Runnable specRunner]
+MethodInvocation:run
+MethodInvocation:getSpec
+MethodInvocation:setParent
+MethodInvocation:setKind
+MethodInvocation:getInterceptors
+MethodInvocation:addInterceptor
+Method-name:createSpecInstance
+Method-returnType:SpockExecutionContext
+Method-parameters:[SpockExecutionContext context, boolean shared]
+MethodInvocation:hasErrors
+MethodInvocation:getErrorInfoCollector
+MethodInvocation:newInstance
+MethodInvocation:getReflection
+MethodInvocation:getSpec
+MethodInvocation:withArgs
+MethodInvocation:getName
+MethodInvocation:getSpec
+MethodInvocation:withCurrentInstance
+MethodInvocation:setCurrentSpec
+MethodInvocation:getSpecificationContext
+MethodInvocation:getSpec
+MethodInvocation:withSharedInstance
+MethodInvocation:setSharedInstance
+MethodInvocation:getSpecificationContext
+MethodInvocation:getSharedInstance
+Method-name:runSharedInitializer
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context]
+MethodInvocation:runSharedInitializer
+MethodInvocation:getSpec
+Method-name:runSharedInitializer
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, SpecInfo spec]
+MethodInvocation:invoke
+MethodInvocation:createMethodInfoForDoRunSharedInitializer
+Method-name:createMethodInfoForDoRunSharedInitializer
+Method-returnType:MethodInfo
+Method-parameters:[SpockExecutionContext context, final SpecInfo spec]
+MethodInvocation:doRunSharedInitializer
+MethodInvocation:setParent
+MethodInvocation:setKind
+MethodInvocation:getSharedInitializerInterceptors
+MethodInvocation:addInterceptor
+Method-name:doRunSharedInitializer
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, SpecInfo spec]
+MethodInvocation:runSharedInitializer
+MethodInvocation:getSuperSpec
+MethodInvocation:hasErrors
+MethodInvocation:getErrorInfoCollector
+MethodInvocation:invoke
+MethodInvocation:getCurrentInstance
+MethodInvocation:getSharedInitializerMethod
+Method-name:runSetupSpec
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context]
+MethodInvocation:beforeSpec
+MethodInvocation:getSpec
+MethodInvocation:runSetupSpec
+MethodInvocation:getSpec
+Method-name:runSetupSpec
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, SpecInfo spec]
+MethodInvocation:invoke
+MethodInvocation:createMethodInfoForDoRunSetupSpec
+Method-name:createMethodInfoForDoRunSetupSpec
+Method-returnType:MethodInfo
+Method-parameters:[SpockExecutionContext context, final SpecInfo spec]
+MethodInvocation:doRunSetupSpec
+MethodInvocation:setParent
+MethodInvocation:setKind
+MethodInvocation:getSetupSpecInterceptors
+MethodInvocation:addInterceptor
+Method-name:doRunSetupSpec
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, SpecInfo spec]
+MethodInvocation:runSetupSpec
+MethodInvocation:getSuperSpec
+MethodInvocation:getSetupSpecMethods
+MethodInvocation:hasErrors
+MethodInvocation:getErrorInfoCollector
+MethodInvocation:invoke
+MethodInvocation:getCurrentInstance
+Method-name:runCleanupSpec
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context]
+MethodInvocation:runCleanupSpec
+MethodInvocation:withCurrentInstance
+MethodInvocation:getSharedInstance
+MethodInvocation:getSpec
+MethodInvocation:afterSpec
+MethodInvocation:getSpec
+Method-name:runCleanupSpec
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, SpecInfo spec]
+MethodInvocation:invoke
+MethodInvocation:createMethodForDoRunCleanupSpec
+Method-name:createMethodForDoRunCleanupSpec
+Method-returnType:MethodInfo
+Method-parameters:[SpockExecutionContext context, final SpecInfo spec]
+MethodInvocation:doRunCleanupSpec
+MethodInvocation:setParent
+MethodInvocation:setKind
+MethodInvocation:getCleanupSpecInterceptors
+MethodInvocation:addInterceptor
+Method-name:doRunCleanupSpec
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, SpecInfo spec]
+MethodInvocation:getCleanupSpecMethods
+MethodInvocation:invoke
+MethodInvocation:getCurrentInstance
+MethodInvocation:runCleanupSpec
+MethodInvocation:getSuperSpec
+Method-name:runFeature
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, Runnable feature]
+MethodInvocation:hasErrors
+MethodInvocation:getErrorInfoCollector
+MethodInvocation:getCurrentFeature
+MethodInvocation:isExcluded
+MethodInvocation:isSkipped
+MethodInvocation:featureSkipped
+MethodInvocation:beforeFeature
+MethodInvocation:invoke
+MethodInvocation:createMethodInfoForDoRunFeature
+MethodInvocation:afterFeature
+Method-name:createMethodInfoForDoRunFeature
+Method-returnType:MethodInfo
+Method-parameters:[SpockExecutionContext context, Runnable feature]
+MethodInvocation:getCurrentFeature
+MethodInvocation:run
+MethodInvocation:setParent
+MethodInvocation:getParent
+MethodInvocation:setKind
+MethodInvocation:setFeature
+MethodInvocation:getInterceptors
+MethodInvocation:addInterceptor
+Method-name:runIteration
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, IterationInfo iterationInfo, Runnable runnable]
+MethodInvocation:hasErrors
+MethodInvocation:getErrorInfoCollector
+MethodInvocation:withCurrentIteration
+MethodInvocation:setCurrentIteration
+MethodInvocation:getSpecificationContext
+MethodInvocation:beforeIteration
+MethodInvocation:invoke
+MethodInvocation:createMethodInfoForDoRunIteration
+MethodInvocation:afterIteration
+MethodInvocation:setCurrentIteration
+MethodInvocation:getSpecificationContext
+Method-name:createIterationInfo
+Method-returnType:IterationInfo
+Method-parameters:[SpockExecutionContext context, int iterationIndex, Object[] dataValues, int estimatedNumIterations]
+MethodInvocation:getCurrentFeature
+MethodInvocation:getName
+MethodInvocation:getIterationNameProvider
+MethodInvocation:setName
+Method-name:createMethodInfoForDoRunIteration
+Method-returnType:MethodInfo
+Method-parameters:[SpockExecutionContext context, Runnable runnable]
+MethodInvocation:getCurrentFeature
+MethodInvocation:run
+MethodInvocation:setParent
+MethodInvocation:getParent
+MethodInvocation:setKind
+MethodInvocation:setFeature
+MethodInvocation:setIteration
+MethodInvocation:getCurrentIteration
+MethodInvocation:getIterationInterceptors
+MethodInvocation:addInterceptor
+Method-name:runParameterizedFeature
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, ParameterizedFeatureChildExecutor childExecutor]
+Method-name:runInitializer
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context]
+MethodInvocation:runInitializer
+MethodInvocation:getSpec
+Method-name:runInitializer
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, SpecInfo spec]
+MethodInvocation:invoke
+MethodInvocation:createMethodInfoForDoRunInitializer
+Method-name:createMethodInfoForDoRunInitializer
+Method-returnType:MethodInfo
+Method-parameters:[SpockExecutionContext context, final SpecInfo spec]
+MethodInvocation:getCurrentFeature
+MethodInvocation:doRunInitializer
+MethodInvocation:setParent
+MethodInvocation:getParent
+MethodInvocation:setKind
+MethodInvocation:setFeature
+MethodInvocation:getInitializerInterceptors
+MethodInvocation:addInterceptor
+Method-name:doRunInitializer
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, SpecInfo spec]
+MethodInvocation:runInitializer
+MethodInvocation:getSuperSpec
+MethodInvocation:hasErrors
+MethodInvocation:getErrorInfoCollector
+MethodInvocation:invoke
+MethodInvocation:getCurrentInstance
+MethodInvocation:getInitializerMethod
+Method-name:runSetup
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context]
+MethodInvocation:runSetup
+MethodInvocation:getSpec
+Method-name:runSetup
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, SpecInfo spec]
+MethodInvocation:invoke
+MethodInvocation:createMethodInfoForDoRunSetup
+Method-name:createMethodInfoForDoRunSetup
+Method-returnType:MethodInfo
+Method-parameters:[SpockExecutionContext context, final SpecInfo spec]
+MethodInvocation:getCurrentFeature
+MethodInvocation:doRunSetup
+MethodInvocation:setParent
+MethodInvocation:getParent
+MethodInvocation:setKind
+MethodInvocation:setFeature
+MethodInvocation:setIteration
+MethodInvocation:getCurrentIteration
+MethodInvocation:getSetupInterceptors
+MethodInvocation:addInterceptor
+Method-name:doRunSetup
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, SpecInfo spec]
+MethodInvocation:runSetup
+MethodInvocation:getSuperSpec
+MethodInvocation:getSetupMethods
+MethodInvocation:hasErrors
+MethodInvocation:getErrorInfoCollector
+MethodInvocation:setFeature
+MethodInvocation:getCurrentFeature
+MethodInvocation:invoke
+MethodInvocation:getCurrentInstance
+Method-name:runFeatureMethod
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context]
+MethodInvocation:hasErrors
+MethodInvocation:getErrorInfoCollector
+MethodInvocation:getFeatureMethod
+MethodInvocation:getCurrentFeature
+MethodInvocation:setIteration
+MethodInvocation:getCurrentIteration
+MethodInvocation:getParameterTypes
+MethodInvocation:getReflection
+MethodInvocation:getDataValues
+MethodInvocation:getCurrentIteration
+MethodInvocation:arraycopy
+MethodInvocation:fill
+MethodInvocation:invoke
+MethodInvocation:getCurrentInstance
+Method-name:runCleanup
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context]
+MethodInvocation:runCleanup
+MethodInvocation:getSpec
+Method-name:runCleanup
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, SpecInfo spec]
+MethodInvocation:invoke
+MethodInvocation:createMethodInfoForDoRunCleanup
+Method-name:createMethodInfoForDoRunCleanup
+Method-returnType:MethodInfo
+Method-parameters:[SpockExecutionContext context, final SpecInfo spec]
+MethodInvocation:getCurrentFeature
+MethodInvocation:doRunCleanup
+MethodInvocation:setParent
+MethodInvocation:getParent
+MethodInvocation:setKind
+MethodInvocation:setFeature
+MethodInvocation:setIteration
+MethodInvocation:getCurrentIteration
+MethodInvocation:getCleanupInterceptors
+MethodInvocation:addInterceptor
+Method-name:doRunCleanup
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, SpecInfo spec]
+MethodInvocation:getIsBottomSpec
+MethodInvocation:runIterationCleanups
+MethodInvocation:getCleanupMethods
+MethodInvocation:invoke
+MethodInvocation:getCurrentInstance
+MethodInvocation:runCleanup
+MethodInvocation:getSuperSpec
+Method-name:runIterationCleanups
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context]
+MethodInvocation:getCleanups
+MethodInvocation:getCurrentIteration
+MethodInvocation:run
+MethodInvocation:getFirstElement
+MethodInvocation:getCleanupMethods
+MethodInvocation:getSpec
+MethodInvocation:error
+MethodInvocation:getErrorInfoCollector
+Method-name:invoke
+Method-returnType:void
+Method-parameters:[SpockExecutionContext context, Object target, MethodInfo method, Object... arguments]
+MethodInvocation:isExcluded
+MethodInvocation:isEmpty
+MethodInvocation:getInterceptors
+MethodInvocation:invokeRaw
+MethodInvocation:getCurrentFeature
+MethodInvocation:getCurrentIteration
+MethodInvocation:getSharedInstance
+MethodInvocation:getCurrentInstance
+MethodInvocation:proceed
+MethodInvocation:error
+MethodInvocation:getErrorInfoCollector
+Method-name:invokeRaw
+Method-returnType:Object
+Method-parameters:[SpockExecutionContext context, Object target, MethodInfo method, Object... arguments]
+MethodInvocation:invoke
+MethodInvocation:error
+MethodInvocation:getErrorInfoCollector
+Method-name:getSpecificationContext
+Method-returnType:SpecificationContext
+Method-parameters:[SpockExecutionContext context]
+MethodInvocation:getSpecificationContext
+MethodInvocation:getCurrentInstance

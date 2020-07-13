@@ -1,0 +1,287 @@
+Class:DataFrameJoiner
+Field:JoinType
+Field:TABLE_ALIAS
+Field:table
+Field:joinColumnNames
+Field:joinColumnIndexes
+Field:joinTableId
+Method-name:DataFrameJoiner
+Method-returnType:null
+Method-parameters:[Table table, String... joinColumnNames]
+FieldAccess:table
+FieldAccess:joinColumnNames
+FieldAccess:joinColumnIndexes
+MethodInvocation:getJoinIndexes
+Method-name:getJoinIndexes
+Method-returnType:List<Integer>
+Method-parameters:[Table table, String[] columnNames]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toList
+Method-name:inner
+Method-returnType:Table
+Method-parameters:[Table... tables]
+MethodInvocation:inner
+Method-name:inner
+Method-returnType:Table
+Method-parameters:[boolean allowDuplicateColumnNames, Table... tables]
+MethodInvocation:joinInternal
+Method-name:inner
+Method-returnType:Table
+Method-parameters:[Table table2, String col2Name]
+MethodInvocation:inner
+Method-name:inner
+Method-returnType:Table
+Method-parameters:[Table table2, String[] col2Names]
+MethodInvocation:inner
+Method-name:inner
+Method-returnType:Table
+Method-parameters:[Table table2, String col2Name, boolean allowDuplicateColumnNames]
+MethodInvocation:inner
+Method-name:inner
+Method-returnType:Table
+Method-parameters:[Table table2, boolean allowDuplicateColumnNames, String... col2Names]
+MethodInvocation:joinInternal
+Method-name:joinInternal
+Method-returnType:Table
+Method-parameters:[Table table1, Table table2, JoinType joinType, boolean allowDuplicates, String... table2JoinColumnNames]
+MethodInvocation:getJoinIndexes
+MethodInvocation:create
+MethodInvocation:name
+MethodInvocation:emptyTableFromColumns
+MethodInvocation:buildIndexesForJoinColumns
+MethodInvocation:buildIndexesForJoinColumns
+MethodInvocation:validateIndexes
+MethodInvocation:rowCount
+MethodInvocation:removeColumns
+MethodInvocation:toArray
+MethodInvocation:with
+MethodInvocation:with
+MethodInvocation:getRowNumber
+MethodInvocation:contains
+MethodInvocation:createMultiColSelection
+MethodInvocation:rowCount
+MethodInvocation:createMultiColSelection
+MethodInvocation:rowCount
+MethodInvocation:isEmpty
+MethodInvocation:withMissingLeftJoin
+MethodInvocation:crossProduct
+MethodInvocation:or
+MethodInvocation:or
+MethodInvocation:size
+MethodInvocation:rowCount
+MethodInvocation:removeColumns
+MethodInvocation:toArray
+MethodInvocation:flip
+MethodInvocation:rowCount
+MethodInvocation:withMissingRight
+MethodInvocation:columnCount
+MethodInvocation:removeColumns
+MethodInvocation:toArray
+Method-name:validateIndexes
+Method-returnType:void
+Method-parameters:[List<Index> table1Indexes, List<Index> table2Indexes]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:get
+MethodInvocation:getClass
+MethodInvocation:get
+Method-name:buildIndexesForJoinColumns
+Method-returnType:List<Index>
+Method-parameters:[List<Integer> joinColumnIndexes, Table table]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:indexFor
+MethodInvocation:toList
+Method-name:indexFor
+Method-returnType:Index
+Method-parameters:[Table table, int colIndex]
+MethodInvocation:type
+MethodInvocation:column
+MethodInvocation:dateColumn
+MethodInvocation:dateTimeColumn
+MethodInvocation:instantColumn
+MethodInvocation:timeColumn
+MethodInvocation:stringColumn
+MethodInvocation:intColumn
+MethodInvocation:longColumn
+MethodInvocation:shortColumn
+MethodInvocation:booleanColumn
+MethodInvocation:doubleColumn
+MethodInvocation:floatColumn
+Method-name:selectionForColumn
+Method-returnType:Selection
+Method-parameters:[Column<?> valueColumn, int rowIndex, Index rawIndex]
+MethodInvocation:type
+MethodInvocation:getIntInternal
+MethodInvocation:get
+MethodInvocation:getIntInternal
+MethodInvocation:get
+MethodInvocation:getLongInternal
+MethodInvocation:get
+MethodInvocation:getLongInternal
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getInt
+MethodInvocation:get
+MethodInvocation:getLong
+MethodInvocation:get
+MethodInvocation:getShort
+MethodInvocation:get
+MethodInvocation:getByte
+MethodInvocation:get
+MethodInvocation:getDouble
+MethodInvocation:get
+MethodInvocation:getFloat
+MethodInvocation:get
+MethodInvocation:name
+MethodInvocation:type
+Method-name:createMultiColSelection
+Method-returnType:Selection
+Method-parameters:[Table table1, int ri, List<Index> indexes, int selectionSize]
+MethodInvocation:withRange
+MethodInvocation:column
+MethodInvocation:selectionForColumn
+MethodInvocation:get
+MethodInvocation:and
+Method-name:newName
+Method-returnType:String
+Method-parameters:[String table2Alias, String columnName]
+Method-name:fullOuter
+Method-returnType:Table
+Method-parameters:[Table... tables]
+MethodInvocation:fullOuter
+Method-name:fullOuter
+Method-returnType:Table
+Method-parameters:[boolean allowDuplicateColumnNames, Table... tables]
+MethodInvocation:joinInternal
+Method-name:fullOuter
+Method-returnType:Table
+Method-parameters:[Table table2, String col2Name]
+MethodInvocation:joinInternal
+Method-name:leftOuter
+Method-returnType:Table
+Method-parameters:[Table... tables]
+MethodInvocation:leftOuter
+Method-name:leftOuter
+Method-returnType:Table
+Method-parameters:[boolean allowDuplicateColumnNames, Table... tables]
+MethodInvocation:leftOuter
+Method-name:leftOuter
+Method-returnType:Table
+Method-parameters:[Table table2, String[] col2Names]
+MethodInvocation:leftOuter
+Method-name:leftOuter
+Method-returnType:Table
+Method-parameters:[Table table2, String col2Name]
+MethodInvocation:leftOuter
+Method-name:leftOuter
+Method-returnType:Table
+Method-parameters:[Table table2, boolean allowDuplicateColumnNames, String... col2Names]
+MethodInvocation:joinInternal
+Method-name:rightOuter
+Method-returnType:Table
+Method-parameters:[Table... tables]
+MethodInvocation:rightOuter
+Method-name:rightOuter
+Method-returnType:Table
+Method-parameters:[boolean allowDuplicateColumnNames, Table... tables]
+MethodInvocation:rightOuter
+Method-name:rightOuter
+Method-returnType:Table
+Method-parameters:[Table table2, String col2Name]
+MethodInvocation:rightOuter
+Method-name:rightOuter
+Method-returnType:Table
+Method-parameters:[Table table2, String[] col2Names]
+MethodInvocation:rightOuter
+Method-name:rightOuter
+Method-returnType:Table
+Method-parameters:[Table table2, boolean allowDuplicateColumnNames, String... col2Names]
+MethodInvocation:joinInternal
+Method-name:emptyTableFromColumns
+Method-returnType:Set<Integer>
+Method-parameters:[Table destination, Table table1, Table table2, JoinType joinType, boolean allowDuplicates, List<Integer> table2JoinColumnIndexes]
+MethodInvocation:toArray
+MethodInvocation:map
+MethodInvocation:concat
+MethodInvocation:stream
+MethodInvocation:columns
+MethodInvocation:stream
+MethodInvocation:columns
+MethodInvocation:columnCount
+MethodInvocation:contains
+MethodInvocation:setName
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:columnCount
+MethodInvocation:columnCount
+MethodInvocation:contains
+MethodInvocation:setName
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:collect
+MethodInvocation:limit
+MethodInvocation:map
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:columnCount
+MethodInvocation:toSet
+MethodInvocation:getAndIncrement
+MethodInvocation:columnCount
+MethodInvocation:name
+MethodInvocation:contains
+MethodInvocation:toLowerCase
+MethodInvocation:setName
+MethodInvocation:newName
+MethodInvocation:addColumns
+Method-name:crossProduct
+Method-returnType:void
+Method-parameters:[Table destination, Table table1, Table table2, Selection table1Rows, Selection table2Rows, Set<Integer> ignoreColumns]
+MethodInvocation:columnCount
+MethodInvocation:columnCount
+MethodInvocation:contains
+MethodInvocation:columnCount
+MethodInvocation:columnCount
+MethodInvocation:column
+MethodInvocation:append
+MethodInvocation:column
+MethodInvocation:column
+MethodInvocation:append
+MethodInvocation:column
+Method-name:withMissingLeftJoin
+Method-returnType:void
+Method-parameters:[Table destination, Table table1, Selection table1Rows, Set<Integer> ignoreColumns]
+MethodInvocation:columnCount
+MethodInvocation:contains
+MethodInvocation:columnCount
+MethodInvocation:column
+MethodInvocation:append
+MethodInvocation:column
+MethodInvocation:size
+MethodInvocation:appendMissing
+MethodInvocation:column
+Method-name:withMissingRight
+Method-returnType:void
+Method-parameters:[Table destination, int table1ColCount, Table table2, Selection table2Rows, JoinType joinType, List<Integer> col2Indexes, Set<Integer> ignoreColumns]
+MethodInvocation:size
+MethodInvocation:column
+MethodInvocation:get
+MethodInvocation:append
+MethodInvocation:column
+MethodInvocation:get
+MethodInvocation:columnCount
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:size
+MethodInvocation:appendMissing
+MethodInvocation:column
+MethodInvocation:column
+MethodInvocation:append
+MethodInvocation:column

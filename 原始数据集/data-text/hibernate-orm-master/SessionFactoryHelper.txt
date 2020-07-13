@@ -1,0 +1,138 @@
+Class:SessionFactoryHelper
+Field:sfi
+Field:collectionPropertyMappingByRole
+Method-name:SessionFactoryHelper
+Method-returnType:null
+Method-parameters:[SessionFactoryImplementor sfi]
+FieldAccess:sfi
+FieldAccess:collectionPropertyMappingByRole
+Method-name:getFactory
+Method-returnType:SessionFactoryImplementor
+Method-parameters:[]
+Method-name:hasPhysicalDiscriminatorColumn
+Method-returnType:boolean
+Method-parameters:[Queryable persister]
+MethodInvocation:getDiscriminatorType
+MethodInvocation:getDiscriminatorColumnName
+MethodInvocation:equals
+Method-name:getImportedClassName
+Method-returnType:String
+Method-parameters:[String className]
+MethodInvocation:getImportedClassName
+MethodInvocation:getMetamodel
+Method-name:findQueryableUsingImports
+Method-returnType:Queryable
+Method-parameters:[String className]
+MethodInvocation:findQueryableUsingImports
+Method-name:findQueryableUsingImports
+Method-returnType:Queryable
+Method-parameters:[SessionFactoryImplementor sfi, String className]
+MethodInvocation:getImportedClassName
+MethodInvocation:getMetamodel
+MethodInvocation:entityPersister
+MethodInvocation:getMetamodel
+Method-name:findEntityPersisterByName
+Method-returnType:EntityPersister
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:entityPersisters
+MethodInvocation:getMetamodel
+MethodInvocation:getImportedClassName
+MethodInvocation:getMetamodel
+MethodInvocation:entityPersister
+MethodInvocation:getMetamodel
+Method-name:requireClassPersister
+Method-returnType:EntityPersister
+Method-parameters:[String name]
+MethodInvocation:findEntityPersisterByName
+MethodInvocation:getMessage
+Method-name:getCollectionPersister
+Method-returnType:QueryableCollection
+Method-parameters:[String role]
+MethodInvocation:collectionPersister
+MethodInvocation:getMetamodel
+Method-name:requireQueryableCollection
+Method-returnType:QueryableCollection
+Method-parameters:[String role]
+MethodInvocation:collectionPersister
+MethodInvocation:getMetamodel
+MethodInvocation:put
+Method-name:getCollectionPropertyMapping
+Method-returnType:PropertyMapping
+Method-parameters:[String role]
+MethodInvocation:get
+Method-name:getCollectionElementColumns
+Method-returnType:String[]
+Method-parameters:[String role, String roleAlias]
+MethodInvocation:toColumns
+MethodInvocation:getCollectionPropertyMapping
+Method-name:createJoinSequence
+Method-returnType:JoinSequence
+Method-parameters:[]
+Method-name:createJoinSequence
+Method-returnType:JoinSequence
+Method-parameters:[boolean implicit, AssociationType associationType, String tableAlias, JoinType joinType, String[][] columns]
+MethodInvocation:createJoinSequence
+MethodInvocation:setUseThetaStyle
+MethodInvocation:addJoin
+Method-name:createCollectionJoinSequence
+Method-returnType:JoinSequence
+Method-parameters:[QueryableCollection collPersister, String collectionName]
+MethodInvocation:createJoinSequence
+MethodInvocation:setRoot
+MethodInvocation:setUseThetaStyle
+Method-name:getIdentifierOrUniqueKeyPropertyName
+Method-returnType:String
+Method-parameters:[EntityType entityType]
+MethodInvocation:getIdentifierOrUniqueKeyPropertyName
+Method-name:getColumnSpan
+Method-returnType:int
+Method-parameters:[Type type]
+MethodInvocation:getColumnSpan
+Method-name:getAssociatedEntityName
+Method-returnType:String
+Method-parameters:[CollectionType collectionType]
+MethodInvocation:getAssociatedEntityName
+Method-name:getElementType
+Method-returnType:Type
+Method-parameters:[CollectionType collectionType]
+MethodInvocation:getElementType
+Method-name:getElementAssociationType
+Method-returnType:AssociationType
+Method-parameters:[CollectionType collectionType]
+MethodInvocation:getElementType
+Method-name:findSQLFunction
+Method-returnType:SQLFunction
+Method-parameters:[String functionName]
+MethodInvocation:findSQLFunction
+MethodInvocation:getSqlFunctionRegistry
+Method-name:requireSQLFunction
+Method-returnType:SQLFunction
+Method-parameters:[String functionName]
+MethodInvocation:findSQLFunction
+Method-name:findFunctionReturnType
+Method-returnType:Type
+Method-parameters:[String functionName, AST first]
+MethodInvocation:requireSQLFunction
+MethodInvocation:findFunctionReturnType
+Method-name:findFunctionReturnType
+Method-returnType:Type
+Method-parameters:[String functionName, SQLFunction sqlFunction, AST firstArgument]
+MethodInvocation:equals
+MethodInvocation:heuristicType
+MethodInvocation:getTypeResolver
+MethodInvocation:getText
+MethodInvocation:getNextSibling
+MethodInvocation:isInstance
+MethodInvocation:getDataType
+MethodInvocation:getReturnType
+Method-name:generateColumnNames
+Method-returnType:String[][]
+Method-parameters:[Type[] sqlResultTypes]
+MethodInvocation:generateColumnNames
+Method-name:isStrictJPAQLComplianceEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isJpaQueryComplianceEnabled
+MethodInvocation:getJpaCompliance
+MethodInvocation:getSessionFactoryOptions

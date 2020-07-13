@@ -1,0 +1,168 @@
+Class:SqlAbstractParserImpl
+Field:SQL_92_RESERVED_WORD_SET
+MethodInvocation:of
+Method-name:end
+Method-returnType:SqlParserPos
+Method-parameters:[Span span]
+MethodInvocation:pos
+MethodInvocation:add
+Field:ExprContext
+Field:ACCEPT_SUBQUERY
+Field:ACCEPT_NONQUERY
+Field:nDynamicParams
+Field:originalSql
+Field:warnings
+Method-name:getSql92ReservedWords
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:createCall
+Method-returnType:SqlCall
+Method-parameters:[SqlIdentifier funName, SqlParserPos pos, SqlFunctionCategory funcType, SqlLiteral functionQualifier, Iterable<? extends SqlNode> operands]
+MethodInvocation:createCall
+MethodInvocation:toArray
+Method-name:createCall
+Method-returnType:SqlCall
+Method-parameters:[SqlIdentifier funName, SqlParserPos pos, SqlFunctionCategory funcType, SqlLiteral functionQualifier, SqlNode[] operands]
+MethodInvocation:createCall
+Method-name:getMetadata
+Method-returnType:Metadata
+Method-parameters:[]
+Method-name:normalizeException
+Method-returnType:SqlParseException
+Method-parameters:[Throwable ex]
+Method-name:getPos
+Method-returnType:SqlParserPos
+Method-parameters:[]
+Method-name:ReInit
+Method-returnType:void
+Method-parameters:[Reader reader]
+Method-name:parseSqlExpressionEof
+Method-returnType:SqlNode
+Method-parameters:[]
+Method-name:parseSqlStmtEof
+Method-returnType:SqlNode
+Method-parameters:[]
+Method-name:parseSqlStmtList
+Method-returnType:SqlNodeList
+Method-parameters:[]
+Method-name:setTabSize
+Method-returnType:void
+Method-parameters:[int tabSize]
+Method-name:setQuotedCasing
+Method-returnType:void
+Method-parameters:[Casing quotedCasing]
+Method-name:setUnquotedCasing
+Method-returnType:void
+Method-parameters:[Casing unquotedCasing]
+Method-name:setIdentifierMaxLength
+Method-returnType:void
+Method-parameters:[int identifierMaxLength]
+Method-name:setConformance
+Method-returnType:void
+Method-parameters:[SqlConformance conformance]
+Method-name:setOriginalSql
+Method-returnType:void
+Method-parameters:[String originalSql]
+FieldAccess:originalSql
+Method-name:getOriginalSql
+Method-returnType:String
+Method-parameters:[]
+Method-name:switchTo
+Method-returnType:void
+Method-parameters:[String stateName]
+Method-name:isNonReservedKeyword
+Method-returnType:boolean
+Method-parameters:[String token]
+Method-name:isContextVariableName
+Method-returnType:boolean
+Method-parameters:[String token]
+Method-name:isReservedFunctionName
+Method-returnType:boolean
+Method-parameters:[String token]
+Method-name:isKeyword
+Method-returnType:boolean
+Method-parameters:[String token]
+Method-name:isReservedWord
+Method-returnType:boolean
+Method-parameters:[String token]
+Method-name:isSql92ReservedWord
+Method-returnType:boolean
+Method-parameters:[String token]
+Method-name:getJdbcKeywords
+Method-returnType:String
+Method-parameters:[]
+Method-name:getTokens
+Method-returnType:List<String>
+Method-parameters:[]
+Class:MetadataImpl
+Field:reservedFunctionNames
+Field:contextVariableNames
+Field:nonReservedKeyWordSet
+Field:tokenSet
+Field:tokenList
+Field:reservedWords
+Field:sql92ReservedWords
+Method-name:MetadataImpl
+Method-returnType:null
+Method-parameters:[SqlAbstractParserImpl sqlParser]
+MethodInvocation:initList
+MethodInvocation:initList
+MethodInvocation:initList
+MethodInvocation:copyOf
+MethodInvocation:constructSql92ReservedWordList
+MethodInvocation:addAll
+MethodInvocation:removeAll
+MethodInvocation:addAll
+Method-name:initList
+Method-returnType:void
+Method-parameters:[SqlAbstractParserImpl parserImpl, Set<String> keywords, String name]
+Method-name:virtualCall
+Method-returnType:Object
+Method-parameters:[SqlAbstractParserImpl parserImpl, String name]
+MethodInvocation:getClass
+MethodInvocation:getMethod
+MethodInvocation:invoke
+MethodInvocation:getCause
+MethodInvocation:normalizeException
+Method-name:constructSql92ReservedWordList
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:addAll
+MethodInvocation:removeAll
+MethodInvocation:removeAll
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:getTokens
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:isSql92ReservedWord
+Method-returnType:boolean
+Method-parameters:[String token]
+MethodInvocation:contains
+Method-name:getJdbcKeywords
+Method-returnType:String
+Method-parameters:[]
+Method-name:isKeyword
+Method-returnType:boolean
+Method-parameters:[String token]
+MethodInvocation:isNonReservedKeyword
+MethodInvocation:isReservedFunctionName
+MethodInvocation:isContextVariableName
+MethodInvocation:isReservedWord
+Method-name:isNonReservedKeyword
+Method-returnType:boolean
+Method-parameters:[String token]
+MethodInvocation:contains
+Method-name:isReservedFunctionName
+Method-returnType:boolean
+Method-parameters:[String token]
+MethodInvocation:contains
+Method-name:isContextVariableName
+Method-returnType:boolean
+Method-parameters:[String token]
+MethodInvocation:contains
+Method-name:isReservedWord
+Method-returnType:boolean
+Method-parameters:[String token]
+MethodInvocation:contains

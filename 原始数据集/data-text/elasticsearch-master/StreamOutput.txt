@@ -1,0 +1,599 @@
+Class:StreamOutput
+Field:TIME_UNIT_BYTE_MAP
+Field:MAX_NESTED_EXCEPTION_LEVEL
+Field:version
+Method-name:getVersion
+Method-returnType:Version
+Method-parameters:[]
+FieldAccess:version
+Method-name:setVersion
+Method-returnType:void
+Method-parameters:[Version version]
+FieldAccess:version
+Method-name:position
+Method-returnType:long
+Method-parameters:[]
+Method-name:seek
+Method-returnType:void
+Method-parameters:[long position]
+Method-name:writeByte
+Method-returnType:void
+Method-parameters:[byte b]
+Method-name:writeBytes
+Method-returnType:void
+Method-parameters:[byte[] b]
+MethodInvocation:writeBytes
+Method-name:writeBytes
+Method-returnType:void
+Method-parameters:[byte[] b, int length]
+MethodInvocation:writeBytes
+Method-name:writeBytes
+Method-returnType:void
+Method-parameters:[byte[] b, int offset, int length]
+Method-name:writeByteArray
+Method-returnType:void
+Method-parameters:[byte[] b]
+MethodInvocation:writeVInt
+MethodInvocation:writeBytes
+Method-name:writeBytesReference
+Method-returnType:void
+Method-parameters:[@Nullable BytesReference bytes]
+MethodInvocation:writeVInt
+MethodInvocation:writeVInt
+MethodInvocation:length
+MethodInvocation:writeTo
+Method-name:writeOptionalBytesReference
+Method-returnType:void
+Method-parameters:[@Nullable BytesReference bytes]
+MethodInvocation:writeVInt
+MethodInvocation:writeVInt
+MethodInvocation:length
+MethodInvocation:writeTo
+Method-name:writeBytesRef
+Method-returnType:void
+Method-parameters:[BytesRef bytes]
+MethodInvocation:writeVInt
+MethodInvocation:writeVInt
+MethodInvocation:write
+Field:scratch
+MethodInvocation:withInitial
+Method-name:writeShort
+Method-returnType:void
+Method-parameters:[short v]
+MethodInvocation:get
+MethodInvocation:writeBytes
+Method-name:writeInt
+Method-returnType:void
+Method-parameters:[int i]
+MethodInvocation:get
+MethodInvocation:writeBytes
+Method-name:writeVInt
+Method-returnType:void
+Method-parameters:[int i]
+MethodInvocation:get
+MethodInvocation:writeBytes
+Method-name:writeLong
+Method-returnType:void
+Method-parameters:[long i]
+MethodInvocation:get
+MethodInvocation:writeBytes
+Method-name:writeVLong
+Method-returnType:void
+Method-parameters:[long i]
+MethodInvocation:writeVLongNoCheck
+Method-name:writeOptionalVLong
+Method-returnType:void
+Method-parameters:[@Nullable Long l]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeVLong
+Method-name:writeVLongNoCheck
+Method-returnType:void
+Method-parameters:[long i]
+MethodInvocation:get
+MethodInvocation:writeBytes
+Method-name:writeZLong
+Method-returnType:void
+Method-parameters:[long i]
+MethodInvocation:get
+MethodInvocation:zigZagEncode
+MethodInvocation:writeBytes
+Method-name:writeOptionalLong
+Method-returnType:void
+Method-parameters:[@Nullable Long l]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeLong
+Method-name:writeOptionalString
+Method-returnType:void
+Method-parameters:[@Nullable String str]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeString
+Method-name:writeOptionalSecureString
+Method-returnType:void
+Method-parameters:[@Nullable SecureString secureStr]
+MethodInvocation:writeOptionalBytesReference
+MethodInvocation:toUtf8Bytes
+MethodInvocation:getChars
+MethodInvocation:writeOptionalBytesReference
+MethodInvocation:fill
+Method-name:writeOptionalInt
+Method-returnType:void
+Method-parameters:[@Nullable Integer integer]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeInt
+Method-name:writeOptionalVInt
+Method-returnType:void
+Method-parameters:[@Nullable Integer integer]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeVInt
+Method-name:writeOptionalFloat
+Method-returnType:void
+Method-parameters:[@Nullable Float floatValue]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeFloat
+Method-name:writeOptionalText
+Method-returnType:void
+Method-parameters:[@Nullable Text text]
+MethodInvocation:writeInt
+MethodInvocation:writeText
+Field:spare
+Method-name:writeText
+Method-returnType:void
+Method-parameters:[Text text]
+MethodInvocation:hasBytes
+MethodInvocation:string
+MethodInvocation:copyChars
+MethodInvocation:writeInt
+MethodInvocation:length
+MethodInvocation:write
+MethodInvocation:bytes
+MethodInvocation:length
+MethodInvocation:bytes
+MethodInvocation:writeInt
+MethodInvocation:length
+MethodInvocation:writeTo
+Method-name:writeString
+Method-returnType:void
+Method-parameters:[String str]
+MethodInvocation:length
+MethodInvocation:get
+MethodInvocation:writeVInt
+MethodInvocation:charAt
+MethodInvocation:writeBytes
+MethodInvocation:writeBytes
+Method-name:writeSecureString
+Method-returnType:void
+Method-parameters:[SecureString secureStr]
+MethodInvocation:toUtf8Bytes
+MethodInvocation:getChars
+MethodInvocation:writeBytesReference
+MethodInvocation:fill
+Method-name:writeFloat
+Method-returnType:void
+Method-parameters:[float v]
+MethodInvocation:writeInt
+MethodInvocation:floatToIntBits
+Method-name:writeDouble
+Method-returnType:void
+Method-parameters:[double v]
+MethodInvocation:writeLong
+MethodInvocation:doubleToLongBits
+Method-name:writeOptionalDouble
+Method-returnType:void
+Method-parameters:[@Nullable Double v]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeDouble
+Field:ZERO
+Field:ONE
+Field:TWO
+Method-name:writeBoolean
+Method-returnType:void
+Method-parameters:[boolean b]
+MethodInvocation:writeByte
+Method-name:writeOptionalBoolean
+Method-returnType:void
+Method-parameters:[@Nullable Boolean b]
+MethodInvocation:writeByte
+MethodInvocation:writeBoolean
+Method-name:flush
+Method-returnType:void
+Method-parameters:[]
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+Method-name:write
+Method-returnType:void
+Method-parameters:[int b]
+MethodInvocation:writeByte
+Method-name:write
+Method-returnType:void
+Method-parameters:[byte[] b, int off, int len]
+MethodInvocation:writeBytes
+Method-name:writeStringArray
+Method-returnType:void
+Method-parameters:[String[] array]
+MethodInvocation:writeVInt
+MethodInvocation:writeString
+Method-name:writeStringArrayNullable
+Method-returnType:void
+Method-parameters:[@Nullable String[] array]
+MethodInvocation:writeVInt
+MethodInvocation:writeVInt
+MethodInvocation:writeString
+Method-name:writeOptionalStringArray
+Method-returnType:void
+Method-parameters:[@Nullable String[] array]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeStringArray
+Method-name:writeMap
+Method-returnType:void
+Method-parameters:[@Nullable Map<String,Object> map]
+MethodInvocation:writeGenericValue
+Method-name:writeMapWithConsistentOrder
+Method-returnType:void
+Method-parameters:[@Nullable Map<String,? extends Object> map]
+Method-name:writeMapOfLists
+Method-returnType:void
+Method-parameters:[final Map<K,List<V>> map, final Writer<K> keyWriter, final Writer<V> valueWriter]
+MethodInvocation:writeMap
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:write
+Method-name:writeMap
+Method-returnType:void
+Method-parameters:[final Map<K,V> map, final Writer<K> keyWriter, final Writer<V> valueWriter]
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:write
+MethodInvocation:getKey
+MethodInvocation:write
+MethodInvocation:getValue
+Method-name:writeInstant
+Method-returnType:void
+Method-parameters:[Instant instant]
+MethodInvocation:writeLong
+MethodInvocation:getEpochSecond
+MethodInvocation:writeInt
+MethodInvocation:getNano
+Method-name:writeOptionalInstant
+Method-returnType:void
+Method-parameters:[@Nullable Instant instant]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeInstant
+Field:WRITERS
+MethodInvocation:ofEntries
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeString
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeInt
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeLong
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeFloat
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeDouble
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeBoolean
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeVInt
+MethodInvocation:writeBytes
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeGenericValue
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeVInt
+MethodInvocation:writeGenericValue
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeByte
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:writeString
+MethodInvocation:getKey
+MethodInvocation:writeGenericValue
+MethodInvocation:getValue
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeByte
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeLong
+MethodInvocation:getTime
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeString
+MethodInvocation:getID
+MethodInvocation:getZone
+MethodInvocation:writeLong
+MethodInvocation:getMillis
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeBytesReference
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeText
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeShort
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeIntArray
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeLongArray
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeFloatArray
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeDoubleArray
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeBytesRef
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeGeoPoint
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeString
+MethodInvocation:getId
+MethodInvocation:getZone
+MethodInvocation:writeLong
+MethodInvocation:toEpochMilli
+MethodInvocation:toInstant
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:getId
+MethodInvocation:getZone
+MethodInvocation:getZonedDateTime
+MethodInvocation:writeString
+MethodInvocation:equals
+MethodInvocation:getID
+MethodInvocation:writeLong
+MethodInvocation:toEpochMilli
+MethodInvocation:toInstant
+MethodInvocation:entry
+MethodInvocation:writeByte
+MethodInvocation:writeByte
+MethodInvocation:writeCollection
+Method-name:getGenericType
+Method-returnType:Class<?>
+Method-parameters:[Object value]
+MethodInvocation:getClass
+Method-name:writeGenericValue
+Method-returnType:void
+Method-parameters:[@Nullable Object value]
+MethodInvocation:writeByte
+MethodInvocation:getGenericType
+MethodInvocation:get
+MethodInvocation:write
+Method-name:checkWriteable
+Method-returnType:void
+Method-parameters:[@Nullable Object value]
+MethodInvocation:getGenericType
+MethodInvocation:checkWriteable
+MethodInvocation:checkWriteable
+MethodInvocation:entrySet
+MethodInvocation:checkWriteable
+MethodInvocation:getKey
+MethodInvocation:checkWriteable
+MethodInvocation:getValue
+MethodInvocation:checkWriteable
+MethodInvocation:containsKey
+MethodInvocation:getCanonicalName
+Method-name:writeIntArray
+Method-returnType:void
+Method-parameters:[int[] values]
+MethodInvocation:writeVInt
+MethodInvocation:writeInt
+Method-name:writeVIntArray
+Method-returnType:void
+Method-parameters:[int[] values]
+MethodInvocation:writeVInt
+MethodInvocation:writeVInt
+Method-name:writeLongArray
+Method-returnType:void
+Method-parameters:[long[] values]
+MethodInvocation:writeVInt
+MethodInvocation:writeLong
+Method-name:writeVLongArray
+Method-returnType:void
+Method-parameters:[long[] values]
+MethodInvocation:writeVInt
+MethodInvocation:writeVLong
+Method-name:writeFloatArray
+Method-returnType:void
+Method-parameters:[float[] values]
+MethodInvocation:writeVInt
+MethodInvocation:writeFloat
+Method-name:writeDoubleArray
+Method-returnType:void
+Method-parameters:[double[] values]
+MethodInvocation:writeVInt
+MethodInvocation:writeDouble
+Method-name:writeArray
+Method-returnType:void
+Method-parameters:[final Writer<T> writer, final T[] array]
+MethodInvocation:writeVInt
+MethodInvocation:write
+Method-name:writeOptionalArray
+Method-returnType:void
+Method-parameters:[final Writer<T> writer, final @Nullable T[] array]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeArray
+Method-name:writeArray
+Method-returnType:void
+Method-parameters:[T[] array]
+MethodInvocation:writeArray
+MethodInvocation:writeTo
+Method-name:writeOptionalArray
+Method-returnType:void
+Method-parameters:[@Nullable T[] array]
+MethodInvocation:writeOptionalArray
+MethodInvocation:writeTo
+Method-name:writeOptionalWriteable
+Method-returnType:void
+Method-parameters:[@Nullable Writeable writeable]
+MethodInvocation:writeBoolean
+MethodInvocation:writeTo
+MethodInvocation:writeBoolean
+Method-name:writeException
+Method-returnType:void
+Method-parameters:[Throwable throwable]
+MethodInvocation:writeException
+Method-name:writeException
+Method-returnType:void
+Method-parameters:[Throwable rootException, Throwable throwable, int nestedLevel]
+Method-name:failOnTooManyNestedExceptions
+Method-returnType:boolean
+Method-parameters:[Throwable throwable]
+Method-name:writeNamedWriteable
+Method-returnType:void
+Method-parameters:[NamedWriteable namedWriteable]
+MethodInvocation:writeString
+MethodInvocation:getWriteableName
+MethodInvocation:writeTo
+Method-name:writeOptionalNamedWriteable
+Method-returnType:void
+Method-parameters:[@Nullable NamedWriteable namedWriteable]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeNamedWriteable
+Method-name:writeGeoPoint
+Method-returnType:void
+Method-parameters:[GeoPoint geoPoint]
+MethodInvocation:writeDouble
+MethodInvocation:lat
+MethodInvocation:writeDouble
+MethodInvocation:lon
+Method-name:writeTimeZone
+Method-returnType:void
+Method-parameters:[DateTimeZone timeZone]
+MethodInvocation:writeString
+MethodInvocation:getID
+Method-name:writeZoneId
+Method-returnType:void
+Method-parameters:[ZoneId timeZone]
+MethodInvocation:writeString
+MethodInvocation:getId
+Method-name:writeOptionalTimeZone
+Method-returnType:void
+Method-parameters:[@Nullable DateTimeZone timeZone]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeTimeZone
+Method-name:writeOptionalZoneId
+Method-returnType:void
+Method-parameters:[@Nullable ZoneId timeZone]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeZoneId
+Method-name:writeCollection
+Method-returnType:void
+Method-parameters:[final Collection<? extends Writeable> collection]
+MethodInvocation:writeCollection
+MethodInvocation:writeTo
+Method-name:writeList
+Method-returnType:void
+Method-parameters:[List<? extends Writeable> list]
+MethodInvocation:writeCollection
+Method-name:writeCollection
+Method-returnType:void
+Method-parameters:[final Collection<T> collection, final Writer<T> writer]
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:write
+Method-name:writeStringCollection
+Method-returnType:void
+Method-parameters:[final Collection<String> collection]
+MethodInvocation:writeCollection
+Method-name:writeOptionalStringCollection
+Method-returnType:void
+Method-parameters:[final Collection<String> collection]
+MethodInvocation:writeBoolean
+MethodInvocation:writeCollection
+MethodInvocation:writeBoolean
+Method-name:writeNamedWriteableList
+Method-returnType:void
+Method-parameters:[List<? extends NamedWriteable> list]
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeNamedWriteable
+Method-name:writeEnum
+Method-returnType:void
+Method-parameters:[E enumValue]
+MethodInvocation:writeVInt
+MethodInvocation:ordinal
+Method-name:writeEnumSet
+Method-returnType:void
+Method-parameters:[EnumSet<E> enumSet]
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeEnum
+Method-name:writeTimeValue
+Method-returnType:void
+Method-parameters:[TimeValue timeValue]
+MethodInvocation:writeZLong
+MethodInvocation:duration
+MethodInvocation:writeByte
+MethodInvocation:get
+MethodInvocation:timeUnit
+Method-name:writeOptionalTimeValue
+Method-returnType:void
+Method-parameters:[@Nullable TimeValue timeValue]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeTimeValue
+Method-name:writeSegmentSort
+Method-returnType:void
+Method-parameters:[Sort sort, Segment segment]
+MethodInvocation:writeVInt
+MethodInvocation:writeVInt
+FieldAccess:length
+MethodInvocation:getSort
+MethodInvocation:getSort
+MethodInvocation:writeString
+MethodInvocation:getField
+MethodInvocation:writeByte
+MethodInvocation:writeOptionalBoolean
+MethodInvocation:getMissingValue
+MethodInvocation:getMissingValue
+MethodInvocation:writeBoolean
+MethodInvocation:getSelector
+MethodInvocation:writeBoolean
+MethodInvocation:getReverse
+MethodInvocation:getNumericType
+MethodInvocation:writeByte
+MethodInvocation:writeByte
+MethodInvocation:writeByte
+MethodInvocation:writeByte
+MethodInvocation:writeGenericValue
+MethodInvocation:getMissingValue
+MethodInvocation:writeBoolean
+MethodInvocation:getSelector
+MethodInvocation:writeBoolean
+MethodInvocation:getReverse

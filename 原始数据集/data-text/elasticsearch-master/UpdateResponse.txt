@@ -1,0 +1,117 @@
+Class:UpdateResponse
+Field:GET
+Field:getResult
+Method-name:UpdateResponse
+Method-returnType:null
+Method-parameters:[ShardId shardId, StreamInput in]
+MethodInvocation:readBoolean
+Method-name:UpdateResponse
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readBoolean
+Method-name:UpdateResponse
+Method-returnType:null
+Method-parameters:[ShardId shardId, String id, long seqNo, long primaryTerm, long version, Result result]
+Method-name:UpdateResponse
+Method-returnType:null
+Method-parameters:[ShardInfo shardInfo, ShardId shardId, String id, long seqNo, long primaryTerm, long version, Result result]
+MethodInvocation:setShardInfo
+Method-name:setGetResult
+Method-returnType:void
+Method-parameters:[GetResult getResult]
+FieldAccess:getResult
+Method-name:getGetResult
+Method-returnType:GetResult
+Method-parameters:[]
+FieldAccess:getResult
+Method-name:status
+Method-returnType:RestStatus
+Method-parameters:[]
+FieldAccess:result
+Method-name:writeThin
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeGetResult
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeGetResult
+Method-name:writeGetResult
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeTo
+Method-name:innerToXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:getGetResult
+MethodInvocation:startObject
+MethodInvocation:toXContentEmbedded
+MethodInvocation:getGetResult
+MethodInvocation:endObject
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getIndex
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getId
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getVersion
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getSeqNo
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getPrimaryTerm
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getLowercase
+MethodInvocation:getResult
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getShardInfo
+MethodInvocation:toString
+MethodInvocation:append
+Method-name:fromXContent
+Method-returnType:UpdateResponse
+Method-parameters:[XContentParser parser]
+MethodInvocation:ensureExpectedToken
+MethodInvocation:nextToken
+MethodInvocation:nextToken
+MethodInvocation:parseXContentFields
+MethodInvocation:build
+Method-name:parseXContentFields
+Method-returnType:void
+Method-parameters:[XContentParser parser, Builder context]
+MethodInvocation:currentToken
+MethodInvocation:currentName
+MethodInvocation:equals
+MethodInvocation:setGetResult
+MethodInvocation:fromXContentEmbedded
+MethodInvocation:parseInnerToXContent
+Class:Builder
+Field:getResult
+Method-name:setGetResult
+Method-returnType:void
+Method-parameters:[GetResult getResult]
+FieldAccess:getResult
+Method-name:build
+Method-returnType:UpdateResponse
+Method-parameters:[]
+MethodInvocation:setGetResult
+MethodInvocation:getIndex
+MethodInvocation:getId
+MethodInvocation:getSeqNo
+MethodInvocation:getPrimaryTerm
+MethodInvocation:getVersion
+MethodInvocation:isExists
+MethodInvocation:internalSourceRef
+MethodInvocation:getDocumentFields
+MethodInvocation:getMetadataFields
+MethodInvocation:setForcedRefresh

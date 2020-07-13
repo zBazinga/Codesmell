@@ -1,0 +1,39 @@
+Class:ShardCollectorProviderFactory
+Field:schemas
+Field:clusterService
+Field:threadPool
+Field:transportActionProvider
+Field:blobIndicesService
+Field:functions
+Field:luceneQueryBuilder
+Field:nodeJobsCounter
+Field:bigArrays
+Field:settings
+Method-name:ShardCollectorProviderFactory
+Method-returnType:null
+Method-parameters:[ClusterService clusterService, Settings settings, Schemas schemas, ThreadPool threadPool, TransportActionProvider transportActionProvider, BlobIndicesService blobIndicesService, Functions functions, LuceneQueryBuilder luceneQueryBuilder, NodeJobsCounter nodeJobsCounter, BigArrays bigArrays]
+FieldAccess:settings
+FieldAccess:schemas
+FieldAccess:clusterService
+FieldAccess:threadPool
+FieldAccess:transportActionProvider
+FieldAccess:blobIndicesService
+FieldAccess:functions
+FieldAccess:luceneQueryBuilder
+FieldAccess:nodeJobsCounter
+FieldAccess:bigArrays
+Method-name:create
+Method-returnType:ShardCollectorProvider
+Method-parameters:[IndexShard indexShard]
+MethodInvocation:isBlobIndex
+MethodInvocation:getIndexName
+MethodInvocation:shardId
+MethodInvocation:blobShardSafe
+MethodInvocation:shardId
+Method-name:getLocalCollectorProvider
+Method-returnType:Function<IndexShard,BatchIterator<Row>>
+Method-parameters:[RoutedCollectPhase collectPhase, CollectTask collectTask, RowConsumer consumer, RemoteCollectorFactory remoteCollectorFactory]
+MethodInvocation:getIterator
+MethodInvocation:create
+MethodInvocation:requiresScroll
+MethodInvocation:rethrowUnchecked

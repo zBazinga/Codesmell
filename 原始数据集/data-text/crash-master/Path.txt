@@ -1,0 +1,148 @@
+Class:Path
+Field:EMPTY_STRING
+Field:ROOT
+Field:EMPTY
+Method-name:path
+Method-returnType:String[]
+Method-parameters:[java.io.File file, int size]
+MethodInvocation:getParentFile
+MethodInvocation:isDirectory
+MethodInvocation:path
+MethodInvocation:getName
+Method-name:get
+Method-returnType:Path
+Method-parameters:[java.io.File file]
+MethodInvocation:path
+MethodInvocation:isAbsolute
+MethodInvocation:isDirectory
+MethodInvocation:isDirectory
+Method-name:get
+Method-returnType:Path
+Method-parameters:[String s]
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:parseNames
+Method-name:parseNames
+Method-returnType:String[]
+Method-parameters:[final String s, final int prev, int end, final int count]
+MethodInvocation:indexOf
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:parseNames
+MethodInvocation:substring
+MethodInvocation:parseNames
+Field:dir
+Field:names
+Field:value
+Method-name:Path
+Method-returnType:null
+Method-parameters:[boolean dir, String[] names]
+FieldAccess:dir
+FieldAccess:names
+Method-name:iterator
+Method-returnType:Iterator<String>
+Method-parameters:[]
+Field:index
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:next
+Method-returnType:String
+Method-parameters:[]
+Method-name:append
+Method-returnType:Path
+Method-parameters:[String name, boolean dir]
+MethodInvocation:arraycopy
+MethodInvocation:create
+Method-name:create
+Method-returnType:Path
+Method-parameters:[boolean dir, String[] names]
+Method-name:isAbsolute
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:absolute
+Method-returnType:Absolute
+Method-parameters:[]
+Method-name:getSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:isDir
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:nameAt
+Method-returnType:String
+Method-parameters:[int index]
+Method-name:isChildOf
+Method-returnType:boolean
+Method-parameters:[Path parent]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:getValue
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isAbsolute
+MethodInvocation:isAbsolute
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getValue
+Method-name:mount
+Method-returnType:FS
+Method-parameters:[ClassLoader cl, FS fs]
+MethodInvocation:mount
+MethodInvocation:getDriver
+MethodInvocation:create
+Class:Absolute
+Method-name:Absolute
+Method-returnType:null
+Method-parameters:[boolean dir, String[] names]
+Method-name:append
+Method-returnType:Absolute
+Method-parameters:[String name, boolean dir]
+Method-name:create
+Method-returnType:Absolute
+Method-parameters:[boolean dir, String[] names]
+Method-name:absolute
+Method-returnType:Absolute
+Method-parameters:[]
+Method-name:isAbsolute
+Method-returnType:boolean
+Method-parameters:[]
+Class:Relative
+Method-name:Relative
+Method-returnType:null
+Method-parameters:[boolean dir, String[] names]
+Method-name:append
+Method-returnType:Relative
+Method-parameters:[String name, boolean dir]
+Method-name:create
+Method-returnType:Relative
+Method-parameters:[boolean dir, String[] names]
+Method-name:absolute
+Method-returnType:Absolute
+Method-parameters:[]
+Method-name:isAbsolute
+Method-returnType:boolean
+Method-parameters:[]

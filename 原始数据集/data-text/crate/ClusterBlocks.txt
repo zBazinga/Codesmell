@@ -1,0 +1,327 @@
+Class:ClusterBlocks
+Field:EMPTY_CLUSTER_BLOCK
+MethodInvocation:emptySet
+MethodInvocation:of
+Field:global
+Field:indicesBlocks
+Field:levelHolders
+Method-name:ClusterBlocks
+Method-returnType:null
+Method-parameters:[Set<ClusterBlock> global, ImmutableOpenMap<String,Set<ClusterBlock>> indicesBlocks]
+FieldAccess:global
+FieldAccess:indicesBlocks
+MethodInvocation:generateLevelHolders
+Method-name:global
+Method-returnType:Set<ClusterBlock>
+Method-parameters:[]
+Method-name:indices
+Method-returnType:ImmutableOpenMap<String,Set<ClusterBlock>>
+Method-parameters:[]
+Method-name:global
+Method-returnType:Set<ClusterBlock>
+Method-parameters:[ClusterBlockLevel level]
+MethodInvocation:global
+MethodInvocation:get
+Method-name:indices
+Method-returnType:ImmutableOpenMap<String,Set<ClusterBlock>>
+Method-parameters:[ClusterBlockLevel level]
+MethodInvocation:indices
+MethodInvocation:get
+Method-name:blocksForIndex
+Method-returnType:Set<ClusterBlock>
+Method-parameters:[ClusterBlockLevel level, String index]
+MethodInvocation:getOrDefault
+MethodInvocation:indices
+MethodInvocation:emptySet
+Method-name:generateLevelHolders
+Method-returnType:EnumMap<ClusterBlockLevel,ImmutableLevelHolder>
+Method-parameters:[Set<ClusterBlock> global, ImmutableOpenMap<String,Set<ClusterBlock>> indicesBlocks]
+MethodInvocation:values
+MethodInvocation:contains
+MethodInvocation:unmodifiableSet
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:toSet
+MethodInvocation:builder
+MethodInvocation:put
+MethodInvocation:unmodifiableSet
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:toSet
+MethodInvocation:put
+MethodInvocation:build
+Method-name:disableStatePersistence
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:disableStatePersistence
+Method-name:hasGlobalBlock
+Method-returnType:boolean
+Method-parameters:[ClusterBlock block]
+MethodInvocation:contains
+Method-name:hasGlobalBlockWithId
+Method-returnType:boolean
+Method-parameters:[final int blockId]
+MethodInvocation:id
+Method-name:hasGlobalBlockWithLevel
+Method-returnType:boolean
+Method-parameters:[ClusterBlockLevel level]
+MethodInvocation:size
+MethodInvocation:global
+Method-name:hasIndexBlock
+Method-returnType:boolean
+Method-parameters:[String index, ClusterBlock block]
+MethodInvocation:containsKey
+MethodInvocation:contains
+MethodInvocation:get
+Method-name:hasIndexBlockWithId
+Method-returnType:boolean
+Method-parameters:[String index, int blockId]
+MethodInvocation:get
+MethodInvocation:id
+Method-name:getIndexBlockWithId
+Method-returnType:ClusterBlock
+Method-parameters:[final String index, final int blockId]
+MethodInvocation:get
+MethodInvocation:id
+Method-name:globalBlockedRaiseException
+Method-returnType:void
+Method-parameters:[ClusterBlockLevel level]
+MethodInvocation:globalBlockedException
+Method-name:globalBlocked
+Method-returnType:boolean
+Method-parameters:[ClusterBlockLevel level]
+MethodInvocation:isEmpty
+MethodInvocation:global
+Method-name:globalBlockedException
+Method-returnType:ClusterBlockException
+Method-parameters:[ClusterBlockLevel level]
+MethodInvocation:globalBlocked
+MethodInvocation:global
+Method-name:indexBlockedRaiseException
+Method-returnType:void
+Method-parameters:[ClusterBlockLevel level, String index]
+MethodInvocation:indexBlockedException
+Method-name:indexBlockedException
+Method-returnType:ClusterBlockException
+Method-parameters:[ClusterBlockLevel level, String index]
+MethodInvocation:indexBlocked
+MethodInvocation:concat
+MethodInvocation:stream
+MethodInvocation:global
+MethodInvocation:stream
+MethodInvocation:blocksForIndex
+MethodInvocation:unmodifiableSet
+MethodInvocation:collect
+MethodInvocation:toSet
+Method-name:indexBlocked
+Method-returnType:boolean
+Method-parameters:[ClusterBlockLevel level, String index]
+MethodInvocation:globalBlocked
+MethodInvocation:isEmpty
+MethodInvocation:blocksForIndex
+Method-name:indicesBlockedException
+Method-returnType:ClusterBlockException
+Method-parameters:[ClusterBlockLevel level, String[] indices]
+MethodInvocation:indexBlocked
+MethodInvocation:globalBlocked
+MethodInvocation:stream
+MethodInvocation:blocksForIndex
+MethodInvocation:concat
+MethodInvocation:stream
+MethodInvocation:global
+MethodInvocation:flatMap
+MethodInvocation:of
+MethodInvocation:unmodifiableSet
+MethodInvocation:collect
+MethodInvocation:toSet
+Method-name:indicesAllowReleaseResources
+Method-returnType:ClusterBlockException
+Method-parameters:[String[] indices]
+MethodInvocation:stream
+MethodInvocation:blocksForIndex
+MethodInvocation:filter
+MethodInvocation:concat
+MethodInvocation:stream
+MethodInvocation:global
+MethodInvocation:flatMap
+MethodInvocation:of
+MethodInvocation:isAllowReleaseResources
+MethodInvocation:unmodifiableSet
+MethodInvocation:collect
+MethodInvocation:toSet
+MethodInvocation:isEmpty
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:indices
+MethodInvocation:append
+MethodInvocation:isEmpty
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:indices
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeBlockSet
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeString
+MethodInvocation:writeBlockSet
+Method-name:writeBlockSet
+Method-returnType:void
+Method-parameters:[Set<ClusterBlock> blocks, StreamOutput out]
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeTo
+Method-name:ClusterBlocks
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readBlockSet
+MethodInvocation:readVInt
+MethodInvocation:builder
+MethodInvocation:put
+MethodInvocation:intern
+MethodInvocation:readString
+MethodInvocation:readBlockSet
+FieldAccess:global
+FieldAccess:indicesBlocks
+MethodInvocation:build
+MethodInvocation:generateLevelHolders
+Method-name:readBlockSet
+Method-returnType:Set<ClusterBlock>
+Method-parameters:[StreamInput in]
+MethodInvocation:readVInt
+MethodInvocation:add
+MethodInvocation:unmodifiableSet
+Method-name:readDiffFrom
+Method-returnType:Diff<ClusterBlocks>
+Method-parameters:[StreamInput in]
+MethodInvocation:readDiffFrom
+Class:ImmutableLevelHolder
+Field:global
+Field:indices
+Method-name:ImmutableLevelHolder
+Method-returnType:null
+Method-parameters:[Set<ClusterBlock> global, ImmutableOpenMap<String,Set<ClusterBlock>> indices]
+FieldAccess:global
+FieldAccess:indices
+Method-name:global
+Method-returnType:Set<ClusterBlock>
+Method-parameters:[]
+Method-name:indices
+Method-returnType:ImmutableOpenMap<String,Set<ClusterBlock>>
+Method-parameters:[]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Class:Builder
+Field:global
+Field:indices
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:blocks
+Method-returnType:Builder
+Method-parameters:[ClusterBlocks blocks]
+MethodInvocation:addAll
+MethodInvocation:global
+MethodInvocation:indices
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:addAll
+MethodInvocation:get
+Method-name:addBlocks
+Method-returnType:Builder
+Method-parameters:[IndexMetaData indexMetaData]
+MethodInvocation:getName
+MethodInvocation:getIndex
+MethodInvocation:getState
+MethodInvocation:addIndexBlock
+MethodInvocation:get
+MethodInvocation:getSettings
+MethodInvocation:addIndexBlock
+MethodInvocation:get
+MethodInvocation:getSettings
+MethodInvocation:addIndexBlock
+MethodInvocation:get
+MethodInvocation:getSettings
+MethodInvocation:addIndexBlock
+MethodInvocation:get
+MethodInvocation:getSettings
+MethodInvocation:addIndexBlock
+MethodInvocation:get
+MethodInvocation:getSettings
+MethodInvocation:addIndexBlock
+Method-name:updateBlocks
+Method-returnType:Builder
+Method-parameters:[IndexMetaData indexMetaData]
+MethodInvocation:remove
+MethodInvocation:getName
+MethodInvocation:getIndex
+MethodInvocation:addBlocks
+Method-name:addGlobalBlock
+Method-returnType:Builder
+Method-parameters:[ClusterBlock block]
+MethodInvocation:add
+Method-name:removeGlobalBlock
+Method-returnType:Builder
+Method-parameters:[ClusterBlock block]
+MethodInvocation:remove
+Method-name:removeGlobalBlock
+Method-returnType:Builder
+Method-parameters:[int blockId]
+MethodInvocation:removeIf
+MethodInvocation:id
+Method-name:addIndexBlock
+Method-returnType:Builder
+Method-parameters:[String index, ClusterBlock block]
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:get
+Method-name:removeIndexBlocks
+Method-returnType:Builder
+Method-parameters:[String index]
+MethodInvocation:containsKey
+MethodInvocation:remove
+Method-name:removeIndexBlock
+Method-returnType:Builder
+Method-parameters:[String index, ClusterBlock block]
+MethodInvocation:containsKey
+MethodInvocation:remove
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:get
+MethodInvocation:remove
+Method-name:removeIndexBlockWithId
+Method-returnType:Builder
+Method-parameters:[String index, int blockId]
+MethodInvocation:get
+MethodInvocation:removeIf
+MethodInvocation:id
+MethodInvocation:isEmpty
+MethodInvocation:remove
+Method-name:build
+Method-returnType:ClusterBlocks
+Method-parameters:[]
+MethodInvocation:builder
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:unmodifiableSet
+MethodInvocation:getValue
+MethodInvocation:unmodifiableSet
+MethodInvocation:build

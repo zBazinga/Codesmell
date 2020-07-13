@@ -1,0 +1,130 @@
+Class:DelegatingScope
+Field:parent
+Field:validator
+Method-name:DelegatingScope
+Method-returnType:null
+Method-parameters:[SqlValidatorScope parent]
+Method-name:addChild
+Method-returnType:void
+Method-parameters:[SqlValidatorNamespace ns, String alias, boolean nullable]
+Method-name:resolve
+Method-returnType:void
+Method-parameters:[List<String> names, SqlNameMatcher nameMatcher, boolean deep, Resolved resolved]
+MethodInvocation:resolve
+Method-name:resolveInNamespace
+Method-returnType:void
+Method-parameters:[SqlValidatorNamespace ns, boolean nullable, List<String> names, SqlNameMatcher nameMatcher, Path path, Resolved resolved]
+MethodInvocation:isEmpty
+MethodInvocation:found
+MethodInvocation:getRowType
+MethodInvocation:isStruct
+MethodInvocation:getTable
+MethodInvocation:unwrap
+MethodInvocation:resolveColumn
+MethodInvocation:getTypeFactory
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getType
+MethodInvocation:plus
+MethodInvocation:getIndex
+MethodInvocation:getName
+MethodInvocation:resolveInNamespace
+MethodInvocation:get
+MethodInvocation:field
+MethodInvocation:lookupChild
+MethodInvocation:getName
+MethodInvocation:plus
+MethodInvocation:getIndex
+MethodInvocation:getName
+MethodInvocation:resolveInNamespace
+MethodInvocation:subList
+MethodInvocation:size
+MethodInvocation:getFieldList
+MethodInvocation:getStructKind
+MethodInvocation:getType
+MethodInvocation:plus
+MethodInvocation:getIndex
+MethodInvocation:getName
+MethodInvocation:getStructKind
+MethodInvocation:getType
+MethodInvocation:lookupChild
+MethodInvocation:getName
+MethodInvocation:resolveInNamespace
+Method-name:addColumnNames
+Method-returnType:void
+Method-parameters:[SqlValidatorNamespace ns, List<SqlMoniker> colNames]
+MethodInvocation:getRowType
+MethodInvocation:getFieldList
+MethodInvocation:add
+MethodInvocation:getName
+Method-name:findAllColumnNames
+Method-returnType:void
+Method-parameters:[List<SqlMoniker> result]
+MethodInvocation:findAllColumnNames
+Method-name:findAliases
+Method-returnType:void
+Method-parameters:[Collection<SqlMoniker> result]
+MethodInvocation:findAliases
+Method-name:findQualifyingTableName
+Method-returnType:Pair<String,SqlValidatorNamespace>
+Method-parameters:[String columnName, SqlNode ctx]
+MethodInvocation:findQualifyingTableName
+Method-name:findQualifyingTableNames
+Method-returnType:Map<String,ScopeChild>
+Method-parameters:[String columnName, SqlNode ctx, SqlNameMatcher nameMatcher]
+MethodInvocation:findQualifyingTableNames
+Method-name:resolveColumn
+Method-returnType:RelDataType
+Method-parameters:[String name, SqlNode ctx]
+MethodInvocation:resolveColumn
+Method-name:nullifyType
+Method-returnType:RelDataType
+Method-parameters:[SqlNode node, RelDataType type]
+MethodInvocation:nullifyType
+Method-name:getTableNamespace
+Method-returnType:SqlValidatorNamespace
+Method-parameters:[List<String> names]
+MethodInvocation:getTableNamespace
+Method-name:resolveTable
+Method-returnType:void
+Method-parameters:[List<String> names, SqlNameMatcher nameMatcher, Path path, Resolved resolved]
+MethodInvocation:resolveTable
+Method-name:getOperandScope
+Method-returnType:SqlValidatorScope
+Method-parameters:[SqlCall call]
+MethodInvocation:getSelectScope
+Method-name:getValidator
+Method-returnType:SqlValidator
+Method-parameters:[]
+Method-name:fullyQualify
+Method-returnType:SqlQualified
+Method-parameters:[SqlIdentifier identifier]
+Method-name:validateExpr
+Method-returnType:void
+Method-parameters:[SqlNode expr]
+Method-name:lookupWindow
+Method-returnType:SqlWindow
+Method-parameters:[String name]
+MethodInvocation:lookupWindow
+Method-name:getMonotonicity
+Method-returnType:SqlMonotonicity
+Method-parameters:[SqlNode expr]
+MethodInvocation:getMonotonicity
+Method-name:getOrderList
+Method-returnType:SqlNodeList
+Method-parameters:[]
+MethodInvocation:getOrderList
+Method-name:hasAmbiguousField
+Method-returnType:boolean
+Method-parameters:[RelDataType rowType, RelDataTypeField field, String columnName, SqlNameMatcher nameMatcher]
+MethodInvocation:isDynamicStar
+MethodInvocation:isDynamicStarColName
+MethodInvocation:getFieldList
+MethodInvocation:isDynamicStar
+MethodInvocation:getFieldList
+MethodInvocation:matches
+MethodInvocation:isCaseSensitive
+MethodInvocation:getName
+Method-name:getParent
+Method-returnType:SqlValidatorScope
+Method-parameters:[]

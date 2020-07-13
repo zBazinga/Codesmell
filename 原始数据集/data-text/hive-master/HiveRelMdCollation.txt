@@ -1,0 +1,24 @@
+Class:HiveRelMdCollation
+Field:SOURCE
+MethodInvocation:of
+MethodInvocation:of
+MethodInvocation:reflectiveSource
+Method-name:HiveRelMdCollation
+Method-returnType:null
+Method-parameters:[]
+Method-name:getDef
+Method-returnType:MetadataDef<BuiltInMetadata.Collation>
+Method-parameters:[]
+Method-name:collations
+Method-returnType:ImmutableList<RelCollation>
+Method-parameters:[HiveAggregate aggregate, RelMetadataQuery mq]
+MethodInvocation:asList
+MethodInvocation:getGroupSet
+MethodInvocation:add
+MethodInvocation:of
+MethodInvocation:canonize
+MethodInvocation:build
+Method-name:collations
+Method-returnType:ImmutableList<RelCollation>
+Method-parameters:[HiveJoin join, RelMetadataQuery mq]
+MethodInvocation:getCollation

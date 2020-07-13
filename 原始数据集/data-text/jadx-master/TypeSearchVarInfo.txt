@@ -1,0 +1,79 @@
+Class:TypeSearchVarInfo
+Field:var
+Field:typeResolved
+Field:currentType
+Field:candidateTypes
+Field:currentIndex
+Field:constraints
+Method-name:TypeSearchVarInfo
+Method-returnType:null
+Method-parameters:[SSAVar var]
+FieldAccess:var
+Method-name:markResolved
+Method-returnType:void
+Method-parameters:[ArgType type]
+FieldAccess:currentType
+FieldAccess:typeResolved
+FieldAccess:candidateTypes
+MethodInvocation:emptyList
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:get
+Method-name:nextType
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:get
+Method-name:getVar
+Method-returnType:SSAVar
+Method-parameters:[]
+Method-name:isTypeResolved
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setTypeResolved
+Method-returnType:void
+Method-parameters:[boolean typeResolved]
+FieldAccess:typeResolved
+Method-name:getCurrentType
+Method-returnType:ArgType
+Method-parameters:[]
+Method-name:setCurrentType
+Method-returnType:void
+Method-parameters:[ArgType currentType]
+FieldAccess:currentType
+Method-name:getCandidateTypes
+Method-returnType:List<ArgType>
+Method-parameters:[]
+Method-name:setCandidateTypes
+Method-returnType:void
+Method-parameters:[List<ArgType> candidateTypes]
+FieldAccess:candidateTypes
+Method-name:getConstraints
+Method-returnType:List<ITypeConstraint>
+Method-parameters:[]
+Method-name:setConstraints
+Method-returnType:void
+Method-parameters:[List<ITypeConstraint> constraints]
+FieldAccess:constraints
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toShortString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:addConstraint
+Method-returnType:void
+Method-parameters:[ITypeConstraint constraint, TypeSearch typeSearch]
+MethodInvocation:add
+MethodInvocation:getConstraints

@@ -1,0 +1,184 @@
+Class:ColumnInfo
+Field:serialVersionUID
+Field:internalName
+Field:alias
+Field:isSkewedCol
+Field:tabAlias
+Field:isVirtualCol
+Field:objectInspector
+Field:isHiddenVirtualCol
+Field:typeName
+Method-name:ColumnInfo
+Method-returnType:null
+Method-parameters:[]
+Method-name:ColumnInfo
+Method-returnType:null
+Method-parameters:[String internalName, TypeInfo type, String tabAlias, boolean isVirtualCol]
+Method-name:ColumnInfo
+Method-returnType:null
+Method-parameters:[String internalName, Class type, String tabAlias, boolean isVirtualCol]
+MethodInvocation:getPrimitiveTypeInfoFromPrimitiveWritable
+Method-name:ColumnInfo
+Method-returnType:null
+Method-parameters:[String internalName, TypeInfo type, String tabAlias, boolean isVirtualCol, boolean isHiddenVirtualCol]
+MethodInvocation:getStandardWritableObjectInspectorFromTypeInfo
+Method-name:ColumnInfo
+Method-returnType:null
+Method-parameters:[String internalName, ObjectInspector objectInspector, String tabAlias, boolean isVirtualCol]
+Method-name:ColumnInfo
+Method-returnType:null
+Method-parameters:[String internalName, ObjectInspector objectInspector, String tabAlias, boolean isVirtualCol, boolean isHiddenVirtualCol]
+FieldAccess:internalName
+FieldAccess:objectInspector
+FieldAccess:tabAlias
+FieldAccess:isVirtualCol
+FieldAccess:isHiddenVirtualCol
+MethodInvocation:setTypeName
+MethodInvocation:getTypeName
+MethodInvocation:getType
+Method-name:ColumnInfo
+Method-returnType:null
+Method-parameters:[ColumnInfo columnInfo]
+FieldAccess:internalName
+MethodInvocation:getInternalName
+FieldAccess:alias
+MethodInvocation:getAlias
+FieldAccess:isSkewedCol
+MethodInvocation:isSkewedCol
+FieldAccess:tabAlias
+MethodInvocation:getTabAlias
+FieldAccess:isVirtualCol
+MethodInvocation:getIsVirtualCol
+FieldAccess:isHiddenVirtualCol
+MethodInvocation:isHiddenVirtualCol
+MethodInvocation:setType
+MethodInvocation:getType
+Method-name:getTypeName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:typeName
+Method-name:setTypeName
+Method-returnType:void
+Method-parameters:[String typeName]
+FieldAccess:typeName
+MethodInvocation:internIfNotNull
+Method-name:getType
+Method-returnType:TypeInfo
+Method-parameters:[]
+MethodInvocation:getTypeInfoFromObjectInspector
+Method-name:getObjectInspector
+Method-returnType:ObjectInspector
+Method-parameters:[]
+Method-name:getInternalName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setType
+Method-returnType:void
+Method-parameters:[TypeInfo type]
+MethodInvocation:getStandardWritableObjectInspectorFromTypeInfo
+MethodInvocation:setTypeName
+MethodInvocation:getTypeName
+Method-name:setInternalName
+Method-returnType:void
+Method-parameters:[String internalName]
+FieldAccess:internalName
+Method-name:getTabAlias
+Method-returnType:String
+Method-parameters:[]
+Method-name:getIsVirtualCol
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isHiddenVirtualCol
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAlias
+Method-returnType:void
+Method-parameters:[String col_alias]
+MethodInvocation:internIfNotNull
+Method-name:getAlias
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTabAlias
+Method-returnType:void
+Method-parameters:[String tabAlias]
+FieldAccess:tabAlias
+Method-name:setVirtualCol
+Method-returnType:void
+Method-parameters:[boolean isVirtualCol]
+FieldAccess:isVirtualCol
+Method-name:setHiddenVirtualCol
+Method-returnType:void
+Method-parameters:[boolean isHiddenVirtualCol]
+FieldAccess:isHiddenVirtualCol
+Method-name:isSkewedCol
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSkewedCol
+Method-returnType:void
+Method-parameters:[boolean isSkewedCol]
+FieldAccess:isSkewedCol
+Method-name:checkEquals
+Method-returnType:boolean
+Method-parameters:[Object obj1, Object obj2]
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:checkEquals
+MethodInvocation:getInternalName
+MethodInvocation:checkEquals
+MethodInvocation:getTabAlias
+MethodInvocation:checkEquals
+MethodInvocation:getAlias
+MethodInvocation:checkEquals
+MethodInvocation:getType
+MethodInvocation:getType
+MethodInvocation:isSkewedCol
+MethodInvocation:getIsVirtualCol
+MethodInvocation:isHiddenVirtualCol
+Method-name:internalEquals
+Method-returnType:boolean
+Method-parameters:[ColumnInfo dest]
+MethodInvocation:checkEquals
+MethodInvocation:getInternalName
+MethodInvocation:checkEquals
+MethodInvocation:getType
+MethodInvocation:getType
+MethodInvocation:isSkewedCol
+MethodInvocation:getIsVirtualCol
+MethodInvocation:isHiddenVirtualCol
+Method-name:isSameColumnForRR
+Method-returnType:boolean
+Method-parameters:[ColumnInfo other]
+MethodInvocation:checkEquals
+MethodInvocation:checkEquals
+MethodInvocation:checkEquals
+MethodInvocation:checkEquals
+MethodInvocation:getType
+MethodInvocation:getType
+Method-name:toMappingString
+Method-returnType:String
+Method-parameters:[String tab, String col]
+MethodInvocation:getType
+Method-name:setObjectinspector
+Method-returnType:void
+Method-parameters:[ObjectInspector writableObjectInspector]
+FieldAccess:objectInspector
+Method-name:getPosition
+Method-returnType:int
+Method-parameters:[List<RowResolver> rowResolverList, RexNodeExprFactory rexNodeExprFactory]
+MethodInvocation:get
+MethodInvocation:getTabAlias
+MethodInvocation:getAlias
+MethodInvocation:getPosition
+MethodInvocation:getInternalName
+MethodInvocation:size
+MethodInvocation:getColumnInfos

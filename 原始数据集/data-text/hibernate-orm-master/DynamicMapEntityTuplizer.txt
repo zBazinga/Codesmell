@@ -1,0 +1,64 @@
+Class:DynamicMapEntityTuplizer
+Field:LOG
+MethodInvocation:messageLogger
+Method-name:DynamicMapEntityTuplizer
+Method-returnType:null
+Method-parameters:[EntityMetamodel entityMetamodel, PersistentClass mappedEntity]
+Method-name:getEntityMode
+Method-returnType:EntityMode
+Method-parameters:[]
+Method-name:buildPropertyGetter
+Method-returnType:Getter
+Method-parameters:[Property mappedProperty, PersistentClass mappedEntity]
+MethodInvocation:getGetter
+MethodInvocation:buildPropertyAccess
+Method-name:buildPropertySetter
+Method-returnType:Setter
+Method-parameters:[Property mappedProperty, PersistentClass mappedEntity]
+MethodInvocation:getSetter
+MethodInvocation:buildPropertyAccess
+Method-name:buildInstantiator
+Method-returnType:Instantiator
+Method-parameters:[EntityMetamodel entityMetamodel, PersistentClass mappingInfo]
+Method-name:buildProxyFactory
+Method-returnType:ProxyFactory
+Method-parameters:[PersistentClass mappingInfo, Getter idGetter, Setter idSetter]
+MethodInvocation:postInstantiate
+MethodInvocation:getEntityName
+MethodInvocation:unableToCreateProxyFactory
+MethodInvocation:getEntityName
+Method-name:getMappedClass
+Method-returnType:Class
+Method-parameters:[]
+Method-name:getConcreteProxyClass
+Method-returnType:Class
+Method-parameters:[]
+Method-name:getEntityNameResolvers
+Method-returnType:EntityNameResolver[]
+Method-parameters:[]
+Method-name:determineConcreteSubclassEntityName
+Method-returnType:String
+Method-parameters:[Object entityInstance, SessionFactoryImplementor factory]
+MethodInvocation:extractEmbeddedEntityName
+Method-name:extractEmbeddedEntityName
+Method-returnType:String
+Method-parameters:[Map entity]
+MethodInvocation:get
+Class:BasicEntityNameResolver
+Field:INSTANCE
+Method-name:resolveEntityName
+Method-returnType:String
+Method-parameters:[Object entity]
+MethodInvocation:isInstance
+MethodInvocation:extractEmbeddedEntityName
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:getClass

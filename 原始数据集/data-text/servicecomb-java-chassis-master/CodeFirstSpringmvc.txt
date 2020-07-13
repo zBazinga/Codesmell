@@ -1,0 +1,282 @@
+Class:CodeFirstSpringmvc
+Field:LOGGER
+MethodInvocation:getLogger
+Field:firstInovcation
+Method-name:_fileUpload
+Method-returnType:String
+Method-parameters:[MultipartFile file1, Part file2]
+MethodInvocation:getInputStream
+MethodInvocation:getInputStream
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:format
+MethodInvocation:getOriginalFilename
+MethodInvocation:getContentType
+MethodInvocation:getSubmittedFileName
+MethodInvocation:getContentType
+Method-name:retrySuccess
+Method-returnType:int
+Method-parameters:[@RequestParam("a") int a, @RequestParam("b") int b]
+MethodInvocation:getAndDecrement
+Method-name:fileUpload1
+Method-returnType:String
+Method-parameters:[@RequestPart(name="file1") MultipartFile file1]
+MethodInvocation:getInputStream
+MethodInvocation:toString
+Method-name:fileUpload
+Method-returnType:String
+Method-parameters:[@RequestPart(name="file1") MultipartFile file1, @RequestPart(name="someFile") Part file2]
+MethodInvocation:_fileUpload
+Method-name:responseEntity
+Method-returnType:ResponseEntity<Date>
+Method-parameters:[InvocationContext c1, @RequestAttribute("date") Date date]
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:getContext
+MethodInvocation:getInvocationContext
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:getContext
+Method-name:responseEntityPATCH
+Method-returnType:ResponseEntity<Date>
+Method-parameters:[InvocationContext c1, @RequestAttribute("date") Date date]
+MethodInvocation:responseEntity
+Method-name:cseResponse
+Method-returnType:Response
+Method-parameters:[InvocationContext c1]
+MethodInvocation:createSuccess
+MethodInvocation:getHeaders
+MethodInvocation:addHeader
+MethodInvocation:get
+MethodInvocation:getContext
+MethodInvocation:getInvocationContext
+MethodInvocation:addHeader
+MethodInvocation:get
+MethodInvocation:getContext
+Method-name:cseResponseCorrect
+Method-returnType:Response
+Method-parameters:[InvocationContext c1]
+MethodInvocation:createSuccess
+MethodInvocation:getHeaders
+MethodInvocation:addHeader
+MethodInvocation:get
+MethodInvocation:getContext
+MethodInvocation:getInvocationContext
+MethodInvocation:addHeader
+MethodInvocation:get
+MethodInvocation:getContext
+Method-name:testUserMap
+Method-returnType:Map<String,User>
+Method-parameters:[@RequestBody Map<String,User> userMap]
+Method-name:textPlain
+Method-returnType:String
+Method-parameters:[@RequestBody String body]
+Method-name:appXml
+Method-returnType:JAXBPerson
+Method-parameters:[@RequestBody JAXBPerson person]
+Method-name:bytes
+Method-returnType:byte[]
+Method-parameters:[@RequestBody byte[] input]
+Method-name:addDate
+Method-returnType:Date
+Method-parameters:[@RequestAttribute("date") Date date, @QueryParam("seconds") long seconds]
+MethodInvocation:getTime
+Method-name:add
+Method-returnType:int
+Method-parameters:[@RequestParam("a") int a]
+Method-name:add
+Method-returnType:int
+Method-parameters:[@RequestAttribute("a") int a, @RequestAttribute("b") int b]
+Method-name:reduce
+Method-returnType:int
+Method-parameters:[HttpServletRequest request, @CookieValue(name="b") int b]
+MethodInvocation:parseInt
+MethodInvocation:getParameter
+Method-name:sayHello
+Method-returnType:Person
+Method-parameters:[@RequestBody Person user]
+MethodInvocation:setName
+MethodInvocation:getName
+Method-name:testRawJsonString
+Method-returnType:String
+Method-parameters:[String jsonInput]
+MethodInvocation:readValue
+MethodInvocation:getRestObjectMapper
+MethodInvocation:getBytes
+MethodInvocation:printStackTrace
+MethodInvocation:get
+Method-name:saySomething
+Method-returnType:String
+Method-parameters:[@RequestHeader(name="prefix") String prefix, @RequestBody Person user]
+MethodInvocation:getName
+Method-name:sayHi
+Method-returnType:String
+Method-parameters:[@PathVariable(name="name") String name]
+MethodInvocation:setStatus
+MethodInvocation:getInvocationContext
+Method-name:sayHiForCompressed
+Method-returnType:String
+Method-parameters:[@PathVariable(name="name") String name]
+Method-name:sayHi2
+Method-returnType:String
+Method-parameters:[@PathVariable(name="name") String name]
+Method-name:isTrue
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:addString
+Method-returnType:String
+Method-parameters:[@RequestParam(name="s") List<String> s]
+Method-name:fallbackReturnNull
+Method-returnType:String
+Method-parameters:[@PathVariable(name="name") String name]
+MethodInvocation:equals
+Method-name:fallbackThrowException
+Method-returnType:String
+Method-parameters:[@PathVariable(name="name") String name]
+MethodInvocation:equals
+Method-name:fallbackFromCache
+Method-returnType:String
+Method-parameters:[@PathVariable(name="name") String name]
+MethodInvocation:equals
+Method-name:fallbackForce
+Method-returnType:String
+Method-parameters:[@PathVariable(name="name") String name]
+MethodInvocation:equals
+Field:NameType
+Method-name:testEnum
+Method-returnType:String
+Method-parameters:[@RequestParam(name="username") String username, @PathVariable(value="name") NameType nameType]
+MethodInvocation:toString
+Method-name:testModelWithIgnoreField
+Method-returnType:OutputModelForTestIgnore
+Method-parameters:[@RequestBody InputModelForTestIgnore input]
+MethodInvocation:getInputId
+MethodInvocation:getContent
+MethodInvocation:getInputObject
+MethodInvocation:getInputJsonObject
+MethodInvocation:getInputIgnoreInterface
+Method-name:testRawJsonAnnotation
+Method-returnType:String
+Method-parameters:[@RawJsonRequestBody String jsonInput]
+MethodInvocation:readValue
+MethodInvocation:getRestObjectMapper
+MethodInvocation:getBytes
+MethodInvocation:printStackTrace
+MethodInvocation:get
+Method-name:testform
+Method-returnType:String
+Method-parameters:[HttpServletRequest request]
+MethodInvocation:getParameter
+MethodInvocation:getParameter
+MethodInvocation:notNull
+Field:metricsBootListener
+MethodInvocation:getTargetService
+Method-name:prometheusForTest
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:pollMeters
+MethodInvocation:getMetricsBootstrap
+MethodInvocation:getForObject
+Method-name:getTraceId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getContext
+MethodInvocation:getInvocationContext
+Method-name:testEmpty
+Method-returnType:EmptyObject
+Method-parameters:[@RequestBody EmptyObject input]
+Method-name:testObject
+Method-returnType:Object
+Method-parameters:[@RequestBody Object input]
+Method-name:testMapObject
+Method-returnType:Map<String,Object>
+Method-parameters:[@RequestBody Map<String,Object> input]
+Method-name:testListObject
+Method-returnType:List<Object>
+Method-parameters:[@RequestBody List<Object> input]
+Method-name:testHolderObject
+Method-returnType:Holder<Object>
+Method-parameters:[@RequestBody Holder<Object> input]
+Method-name:testHolderUser
+Method-returnType:Holder<User>
+Method-parameters:[@RequestBody Holder<User> input]
+MethodInvocation:isInstanceOf
+MethodInvocation:isInstanceOf
+Method-name:testGenericUser
+Method-returnType:Generic<User>
+Method-parameters:[@RequestBody Generic<User> input]
+MethodInvocation:isInstanceOf
+MethodInvocation:isInstanceOf
+Method-name:testGenericLong
+Method-returnType:Generic<Long>
+Method-parameters:[@RequestBody Generic<Long> input]
+MethodInvocation:isInstanceOf
+MethodInvocation:isInstanceOf
+Method-name:testGenericDate
+Method-returnType:Generic<Date>
+Method-parameters:[@RequestBody Generic<Date> input]
+MethodInvocation:isInstanceOf
+MethodInvocation:isInstanceOf
+MethodInvocation:println
+Method-name:testGenericEnum
+Method-returnType:Generic<HttpStatus>
+Method-parameters:[@RequestBody Generic<HttpStatus> input]
+MethodInvocation:isInstanceOf
+MethodInvocation:isInstanceOf
+Method-name:testGenericGenericUser
+Method-returnType:Generic<Generic<User>>
+Method-parameters:[@RequestBody Generic<Generic<User>> input]
+MethodInvocation:isInstanceOf
+MethodInvocation:isInstanceOf
+MethodInvocation:isInstanceOf
+Field:testvoidInRPCSuccess
+Method-name:testvoidInRPC
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:info
+Field:testVoidInRPCSuccess
+Method-name:testVoidInRPC
+Method-returnType:Void
+Method-parameters:[]
+MethodInvocation:info
+Field:testvoidInRestTemplateSuccess
+Method-name:testvoidInRestTemplate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:info
+Field:testVoidInRestTemplateSuccess
+Method-name:testVoidInRestTemplate
+Method-returnType:Void
+Method-parameters:[]
+MethodInvocation:info
+Method-name:checkVoidResult
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:info
+Method-name:checkQueryObject
+Method-returnType:String
+Method-parameters:[Person person, @RequestParam(name="otherName") String otherName, InvocationContext invocationContext, @RequestBody Person requestBody]
+MethodInvocation:info
+MethodInvocation:getName
+Method-name:checkQueryGenericObject
+Method-returnType:String
+Method-parameters:[@RequestBody GenericParam<Person> requestBody, GenericParamWithJsonIgnore<Person> generic]
+MethodInvocation:info
+MethodInvocation:getStr
+Method-name:checkQueryGenericString
+Method-returnType:String
+Method-parameters:[@RequestBody GenericParam<Person> requestBody, GenericParamExtended<String> generic]
+MethodInvocation:info
+MethodInvocation:getStr
+Method-name:testDelay
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:info
+Method-name:testAbort
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:info
+Method-name:testDecodeResponseError
+Method-returnType:DecodeTestResponse
+Method-parameters:[]
+MethodInvocation:setContent

@@ -1,0 +1,381 @@
+Class:HdfsConfiguration
+Field:uri
+Field:wantAppend
+Field:splitStrategies
+Field:hostName
+Field:port
+Field:path
+Field:overwrite
+Field:append
+Field:splitStrategy
+Field:bufferSize
+Field:replication
+Field:blockSize
+Field:compressionType
+Field:compressionCodec
+Field:fileType
+Field:fileSystemType
+Field:keyType
+Field:valueType
+Field:openedSuffix
+Field:readSuffix
+Field:pattern
+Field:chunkSize
+Field:checkIdleInterval
+Field:connectOnStartup
+Field:maxMessagesPerPoll
+Field:owner
+Field:streamDownload
+Field:namedNodes
+Field:namedNodeList
+MethodInvocation:emptyList
+Field:kerberosConfigFileLocation
+Field:kerberosUsername
+Field:kerberosKeytabLocation
+Method-name:HdfsConfiguration
+Method-returnType:null
+Method-parameters:[]
+Method-name:getBoolean
+Method-returnType:Boolean
+Method-parameters:[Map<String,Object> hdfsSettings, String param, Boolean dflt]
+MethodInvocation:containsKey
+MethodInvocation:valueOf
+MethodInvocation:get
+Method-name:getInteger
+Method-returnType:Integer
+Method-parameters:[Map<String,Object> hdfsSettings, String param, Integer dflt]
+MethodInvocation:containsKey
+MethodInvocation:valueOf
+MethodInvocation:get
+Method-name:getShort
+Method-returnType:Short
+Method-parameters:[Map<String,Object> hdfsSettings, String param, Short dflt]
+MethodInvocation:containsKey
+MethodInvocation:valueOf
+MethodInvocation:get
+Method-name:getLong
+Method-returnType:Long
+Method-parameters:[Map<String,Object> hdfsSettings, String param, Long dflt]
+MethodInvocation:containsKey
+MethodInvocation:valueOf
+MethodInvocation:get
+Method-name:getFileSystemType
+Method-returnType:HdfsFileSystemType
+Method-parameters:[Map<String,Object> hdfsSettings, String param, HdfsFileSystemType dflt]
+MethodInvocation:get
+MethodInvocation:valueOf
+Method-name:getWritableType
+Method-returnType:WritableType
+Method-parameters:[Map<String,Object> hdfsSettings, String param, WritableType dflt]
+MethodInvocation:get
+MethodInvocation:valueOf
+Method-name:getCompressionType
+Method-returnType:SequenceFile.CompressionType
+Method-parameters:[Map<String,Object> hdfsSettings, String param, SequenceFile.CompressionType ct]
+MethodInvocation:get
+MethodInvocation:valueOf
+Method-name:getCompressionCodec
+Method-returnType:HdfsCompressionCodec
+Method-parameters:[Map<String,Object> hdfsSettings, String param, HdfsCompressionCodec cd]
+MethodInvocation:get
+MethodInvocation:valueOf
+Method-name:getString
+Method-returnType:String
+Method-parameters:[Map<String,Object> hdfsSettings, String param, String dflt]
+MethodInvocation:containsKey
+MethodInvocation:get
+Method-name:getSplitStrategies
+Method-returnType:List<HdfsProducer.SplitStrategy>
+Method-parameters:[Map<String,Object> hdfsSettings]
+MethodInvocation:getString
+MethodInvocation:isNotEmpty
+MethodInvocation:split
+MethodInvocation:split
+MethodInvocation:valueOf
+MethodInvocation:parseLong
+MethodInvocation:add
+Method-name:getNamedNodeList
+Method-returnType:List<String>
+Method-parameters:[Map<String,Object> hdfsSettings]
+MethodInvocation:getString
+MethodInvocation:isNotEmpty
+MethodInvocation:collect
+MethodInvocation:distinct
+MethodInvocation:stream
+MethodInvocation:split
+MethodInvocation:toList
+MethodInvocation:emptyList
+Method-name:checkConsumerOptions
+Method-returnType:void
+Method-parameters:[]
+Method-name:checkProducerOptions
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isAppend
+MethodInvocation:hasSplitStrategies
+MethodInvocation:getFileType
+Method-name:parseURI
+Method-returnType:void
+Method-parameters:[URI uri]
+MethodInvocation:getScheme
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getHost
+MethodInvocation:getPort
+MethodInvocation:getPort
+MethodInvocation:getPath
+MethodInvocation:parseParameters
+MethodInvocation:getBoolean
+MethodInvocation:getBoolean
+MethodInvocation:getInteger
+MethodInvocation:getShort
+MethodInvocation:getLong
+MethodInvocation:getCompressionType
+MethodInvocation:getCompressionCodec
+MethodInvocation:getFileType
+MethodInvocation:getFileSystemType
+MethodInvocation:getWritableType
+MethodInvocation:getWritableType
+MethodInvocation:getString
+MethodInvocation:getString
+MethodInvocation:getString
+MethodInvocation:getInteger
+MethodInvocation:getSplitStrategies
+MethodInvocation:getNamedNodeList
+MethodInvocation:getString
+MethodInvocation:getString
+MethodInvocation:getString
+Method-name:getUri
+Method-returnType:URI
+Method-parameters:[]
+Method-name:setUri
+Method-returnType:void
+Method-parameters:[URI uri]
+FieldAccess:uri
+Method-name:getHostName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setHostName
+Method-returnType:void
+Method-parameters:[String hostName]
+FieldAccess:hostName
+Method-name:getPort
+Method-returnType:int
+Method-parameters:[]
+Method-name:setPort
+Method-returnType:void
+Method-parameters:[int port]
+FieldAccess:port
+Method-name:getPath
+Method-returnType:String
+Method-parameters:[]
+Method-name:setPath
+Method-returnType:void
+Method-parameters:[String path]
+FieldAccess:path
+Method-name:isOverwrite
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setOverwrite
+Method-returnType:void
+Method-parameters:[boolean overwrite]
+FieldAccess:overwrite
+Method-name:isAppend
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isWantAppend
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAppend
+Method-returnType:void
+Method-parameters:[boolean append]
+FieldAccess:append
+Method-name:getBufferSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:setBufferSize
+Method-returnType:void
+Method-parameters:[int bufferSize]
+FieldAccess:bufferSize
+Method-name:getReplication
+Method-returnType:short
+Method-parameters:[]
+Method-name:setReplication
+Method-returnType:void
+Method-parameters:[short replication]
+FieldAccess:replication
+Method-name:getBlockSize
+Method-returnType:long
+Method-parameters:[]
+Method-name:setBlockSize
+Method-returnType:void
+Method-parameters:[long blockSize]
+FieldAccess:blockSize
+Method-name:getFileType
+Method-returnType:HdfsFileType
+Method-parameters:[]
+Method-name:setFileType
+Method-returnType:void
+Method-parameters:[HdfsFileType fileType]
+FieldAccess:fileType
+Method-name:getCompressionType
+Method-returnType:SequenceFile.CompressionType
+Method-parameters:[]
+Method-name:setCompressionType
+Method-returnType:void
+Method-parameters:[SequenceFile.CompressionType compressionType]
+FieldAccess:compressionType
+Method-name:getCompressionCodec
+Method-returnType:HdfsCompressionCodec
+Method-parameters:[]
+Method-name:setCompressionCodec
+Method-returnType:void
+Method-parameters:[HdfsCompressionCodec compressionCodec]
+FieldAccess:compressionCodec
+Method-name:setFileSystemType
+Method-returnType:void
+Method-parameters:[HdfsFileSystemType fileSystemType]
+FieldAccess:fileSystemType
+Method-name:getFileSystemType
+Method-returnType:HdfsFileSystemType
+Method-parameters:[]
+Method-name:getKeyType
+Method-returnType:WritableType
+Method-parameters:[]
+Method-name:setKeyType
+Method-returnType:void
+Method-parameters:[WritableType keyType]
+FieldAccess:keyType
+Method-name:getValueType
+Method-returnType:WritableType
+Method-parameters:[]
+Method-name:setValueType
+Method-returnType:void
+Method-parameters:[WritableType valueType]
+FieldAccess:valueType
+Method-name:setOpenedSuffix
+Method-returnType:void
+Method-parameters:[String openedSuffix]
+FieldAccess:openedSuffix
+Method-name:getOpenedSuffix
+Method-returnType:String
+Method-parameters:[]
+Method-name:setReadSuffix
+Method-returnType:void
+Method-parameters:[String readSuffix]
+FieldAccess:readSuffix
+Method-name:getReadSuffix
+Method-returnType:String
+Method-parameters:[]
+Method-name:setPattern
+Method-returnType:void
+Method-parameters:[String pattern]
+FieldAccess:pattern
+Method-name:getPattern
+Method-returnType:String
+Method-parameters:[]
+Method-name:setChunkSize
+Method-returnType:void
+Method-parameters:[int chunkSize]
+FieldAccess:chunkSize
+Method-name:getChunkSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:setCheckIdleInterval
+Method-returnType:void
+Method-parameters:[int checkIdleInterval]
+FieldAccess:checkIdleInterval
+Method-name:getCheckIdleInterval
+Method-returnType:int
+Method-parameters:[]
+Method-name:getSplitStrategies
+Method-returnType:List<HdfsProducer.SplitStrategy>
+Method-parameters:[]
+Method-name:hasSplitStrategies
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getSplitStrategy
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSplitStrategy
+Method-returnType:void
+Method-parameters:[String splitStrategy]
+FieldAccess:splitStrategy
+Method-name:isConnectOnStartup
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setConnectOnStartup
+Method-returnType:void
+Method-parameters:[boolean connectOnStartup]
+FieldAccess:connectOnStartup
+Method-name:getMaxMessagesPerPoll
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxMessagesPerPoll
+Method-returnType:void
+Method-parameters:[int maxMessagesPerPoll]
+FieldAccess:maxMessagesPerPoll
+Method-name:getOwner
+Method-returnType:String
+Method-parameters:[]
+Method-name:setOwner
+Method-returnType:void
+Method-parameters:[String owner]
+FieldAccess:owner
+Method-name:getNamedNodes
+Method-returnType:String
+Method-parameters:[]
+Method-name:setNamedNodes
+Method-returnType:void
+Method-parameters:[String namedNodes]
+FieldAccess:namedNodes
+Method-name:getNamedNodeList
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:hasClusterConfiguration
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getKerberosConfigFileLocation
+Method-returnType:String
+Method-parameters:[]
+Method-name:setKerberosConfigFileLocation
+Method-returnType:void
+Method-parameters:[String kerberosConfigFileLocation]
+FieldAccess:kerberosConfigFileLocation
+Method-name:getKerberosUsername
+Method-returnType:String
+Method-parameters:[]
+Method-name:setKerberosUsername
+Method-returnType:void
+Method-parameters:[String kerberosUsername]
+FieldAccess:kerberosUsername
+Method-name:getKerberosKeytabLocation
+Method-returnType:String
+Method-parameters:[]
+Method-name:setKerberosKeytabLocation
+Method-returnType:void
+Method-parameters:[String kerberosKeytabLocation]
+FieldAccess:kerberosKeytabLocation
+Method-name:isKerberosAuthentication
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isNotEmpty
+MethodInvocation:isNotEmpty
+MethodInvocation:isNotEmpty
+Method-name:isStreamDownload
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setStreamDownload
+Method-returnType:void
+Method-parameters:[boolean streamDownload]
+FieldAccess:streamDownload
+Method-name:getFileSystemLabel
+Method-returnType:String
+Method-parameters:[String path]
+MethodInvocation:hasClusterConfiguration
+MethodInvocation:format
+MethodInvocation:getHostName
+MethodInvocation:format
+MethodInvocation:getHostName
+MethodInvocation:getPort

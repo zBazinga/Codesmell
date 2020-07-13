@@ -1,0 +1,188 @@
+Class:GraphExploreRequest
+Field:NO_HOPS_ERROR_MESSAGE
+Field:NO_VERTICES_ERROR_MESSAGE
+Field:indices
+Field:indicesOptions
+MethodInvocation:fromOptions
+Field:routing
+Field:timeout
+Field:sampleSize
+Field:sampleDiversityField
+Field:maxDocsPerDiversityValue
+Field:useSignificance
+Field:returnDetailedInfo
+Field:hops
+Method-name:GraphExploreRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:GraphExploreRequest
+Method-returnType:null
+Method-parameters:[String... indices]
+FieldAccess:indices
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:addValidationError
+MethodInvocation:validate
+Method-name:indices
+Method-returnType:String[]
+Method-parameters:[]
+FieldAccess:indices
+Method-name:indices
+Method-returnType:GraphExploreRequest
+Method-parameters:[String... indices]
+FieldAccess:indices
+Method-name:indicesOptions
+Method-returnType:IndicesOptions
+Method-parameters:[]
+Method-name:indicesOptions
+Method-returnType:GraphExploreRequest
+Method-parameters:[IndicesOptions indicesOptions]
+FieldAccess:indicesOptions
+Method-name:GraphExploreRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+Method-name:routing
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:routing
+Method-name:routing
+Method-returnType:GraphExploreRequest
+Method-parameters:[String routing]
+FieldAccess:routing
+Method-name:routing
+Method-returnType:GraphExploreRequest
+Method-parameters:[String... routings]
+FieldAccess:routing
+MethodInvocation:arrayToCommaDelimitedString
+Method-name:timeout
+Method-returnType:TimeValue
+Method-parameters:[]
+Method-name:timeout
+Method-returnType:GraphExploreRequest
+Method-parameters:[TimeValue timeout]
+FieldAccess:timeout
+Method-name:timeout
+Method-returnType:GraphExploreRequest
+Method-parameters:[String timeout]
+MethodInvocation:timeout
+MethodInvocation:parseTimeValue
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeStringArray
+MethodInvocation:writeIndicesOptions
+MethodInvocation:before
+MethodInvocation:getVersion
+MethodInvocation:writeStringArray
+MethodInvocation:writeOptionalString
+MethodInvocation:writeOptionalTimeValue
+MethodInvocation:writeInt
+MethodInvocation:writeOptionalString
+MethodInvocation:writeInt
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeInt
+MethodInvocation:size
+MethodInvocation:writeTo
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:sampleSize
+Method-returnType:void
+Method-parameters:[int maxNumberOfDocsPerHop]
+Method-name:sampleSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:sampleDiversityField
+Method-returnType:void
+Method-parameters:[String name]
+Method-name:sampleDiversityField
+Method-returnType:String
+Method-parameters:[]
+Method-name:maxDocsPerDiversityValue
+Method-returnType:void
+Method-parameters:[int maxDocs]
+FieldAccess:maxDocsPerDiversityValue
+Method-name:maxDocsPerDiversityValue
+Method-returnType:int
+Method-parameters:[]
+Method-name:useSignificance
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:useSignificance
+Method-name:useSignificance
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:returnDetailedInfo
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:returnDetailedInfo
+Method-name:returnDetailedInfo
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:createNextHop
+Method-returnType:Hop
+Method-parameters:[QueryBuilder guidingQuery]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:add
+Method-name:getHopNumbers
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getHop
+Method-returnType:Hop
+Method-parameters:[int hopNumber]
+MethodInvocation:get
+Class:TermBoost
+Field:term
+Field:boost
+Method-name:TermBoost
+Method-returnType:null
+Method-parameters:[String term, float boost]
+FieldAccess:term
+FieldAccess:boost
+Method-name:TermBoost
+Method-returnType:null
+Method-parameters:[]
+Method-name:getTerm
+Method-returnType:String
+Method-parameters:[]
+Method-name:getBoost
+Method-returnType:float
+Method-parameters:[]
+Method-name:readFrom
+Method-returnType:void
+Method-parameters:[StreamInput in]
+FieldAccess:term
+MethodInvocation:readString
+FieldAccess:boost
+MethodInvocation:readFloat
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeString
+MethodInvocation:writeFloat
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startObject
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:field
+MethodInvocation:endObject
+MethodInvocation:field
+MethodInvocation:field
+MethodInvocation:endObject
+MethodInvocation:startObject
+MethodInvocation:toXContent
+MethodInvocation:endObject
+MethodInvocation:endObject

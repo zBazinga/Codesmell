@@ -1,0 +1,223 @@
+Class:StructuredType
+Field:INPUT_OUTPUT_CONVERSION
+MethodInvocation:conversionSet
+MethodInvocation:getName
+MethodInvocation:getName
+Field:FALLBACK_CONVERSION
+Method-name:instantiateStructuredBuilder
+Method-returnType:Builder
+Method-parameters:[LogicalTypeDuplicator logicalTypeDuplicator]
+MethodInvocation:getObjectIdentifier
+MethodInvocation:getImplementationClass
+MethodInvocation:isPresent
+MethodInvocation:isPresent
+MethodInvocation:newBuilder
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:isPresent
+MethodInvocation:newBuilder
+MethodInvocation:get
+MethodInvocation:isPresent
+MethodInvocation:newBuilder
+MethodInvocation:get
+Class:StructuredAttribute
+Field:name
+Field:type
+Field:description
+Method-name:StructuredAttribute
+Method-returnType:null
+Method-parameters:[String name, LogicalType type, @Nullable String description]
+FieldAccess:name
+MethodInvocation:checkNotNull
+FieldAccess:type
+MethodInvocation:checkNotNull
+FieldAccess:description
+Method-name:StructuredAttribute
+Method-returnType:null
+Method-parameters:[String name, LogicalType type]
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getType
+Method-returnType:LogicalType
+Method-parameters:[]
+Method-name:getDescription
+Method-returnType:Optional<String>
+Method-parameters:[]
+MethodInvocation:ofNullable
+Method-name:copy
+Method-returnType:StructuredAttribute
+Method-parameters:[]
+MethodInvocation:copy
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Field:StructuredComparision
+Class:Builder
+Field:objectIdentifier
+Field:implementationClass
+Field:attributes
+Field:isNullable
+Field:isFinal
+Field:isInstantiable
+Field:comparision
+Field:superType
+Field:description
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[Class<?> implementationClass]
+FieldAccess:objectIdentifier
+FieldAccess:implementationClass
+MethodInvocation:checkNotNull
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[ObjectIdentifier objectIdentifier]
+FieldAccess:objectIdentifier
+MethodInvocation:checkNotNull
+FieldAccess:implementationClass
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[ObjectIdentifier objectIdentifier, Class<?> implementationClass]
+FieldAccess:objectIdentifier
+MethodInvocation:checkNotNull
+FieldAccess:implementationClass
+MethodInvocation:checkNotNull
+Method-name:attributes
+Method-returnType:Builder
+Method-parameters:[List<StructuredAttribute> attributes]
+FieldAccess:attributes
+MethodInvocation:unmodifiableList
+MethodInvocation:checkNotNull
+Method-name:setNullable
+Method-returnType:Builder
+Method-parameters:[boolean isNullable]
+FieldAccess:isNullable
+Method-name:description
+Method-returnType:Builder
+Method-parameters:[String description]
+FieldAccess:description
+MethodInvocation:checkNotNull
+Method-name:setFinal
+Method-returnType:Builder
+Method-parameters:[boolean isFinal]
+FieldAccess:isFinal
+Method-name:setInstantiable
+Method-returnType:Builder
+Method-parameters:[boolean isInstantiable]
+FieldAccess:isInstantiable
+Method-name:comparision
+Method-returnType:Builder
+Method-parameters:[StructuredComparision comparision]
+FieldAccess:comparision
+MethodInvocation:checkNotNull
+Method-name:superType
+Method-returnType:Builder
+Method-parameters:[StructuredType superType]
+FieldAccess:superType
+MethodInvocation:checkNotNull
+Method-name:build
+Method-returnType:StructuredType
+Method-parameters:[]
+Field:attributes
+Field:isInstantiable
+Field:comparision
+Field:superType
+Field:implementationClass
+Method-name:StructuredType
+Method-returnType:null
+Method-parameters:[boolean isNullable, ObjectIdentifier objectIdentifier, List<StructuredAttribute> attributes, boolean isFinal, boolean isInstantiable, StructuredComparision comparision, @Nullable StructuredType superType, @Nullable String description, @Nullable Class<?> implementationClass]
+MethodInvocation:checkArgument
+FieldAccess:attributes
+FieldAccess:isInstantiable
+FieldAccess:comparision
+FieldAccess:superType
+FieldAccess:implementationClass
+Method-name:newBuilder
+Method-returnType:StructuredType.Builder
+Method-parameters:[ObjectIdentifier objectIdentifier]
+Method-name:newBuilder
+Method-returnType:StructuredType.Builder
+Method-parameters:[ObjectIdentifier objectIdentifier, Class<?> implementationClass]
+Method-name:newBuilder
+Method-returnType:StructuredType.Builder
+Method-parameters:[Class<?> implementationClass]
+Method-name:getAttributes
+Method-returnType:List<StructuredAttribute>
+Method-parameters:[]
+Method-name:isInstantiable
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getComparision
+Method-returnType:StructuredComparision
+Method-parameters:[]
+Method-name:getSuperType
+Method-returnType:Optional<StructuredType>
+Method-parameters:[]
+MethodInvocation:ofNullable
+Method-name:getImplementationClass
+Method-returnType:Optional<Class<?>>
+Method-parameters:[]
+MethodInvocation:ofNullable
+Method-name:copy
+Method-returnType:LogicalType
+Method-parameters:[boolean isNullable]
+MethodInvocation:orElse
+MethodInvocation:getObjectIdentifier
+MethodInvocation:isFinal
+MethodInvocation:copy
+MethodInvocation:orElse
+MethodInvocation:getDescription
+Method-name:asSummaryString
+Method-returnType:String
+Method-parameters:[]
+Method-name:supportsInputConversion
+Method-returnType:boolean
+Method-parameters:[Class<?> clazz]
+MethodInvocation:isAssignableFrom
+MethodInvocation:contains
+MethodInvocation:getName
+Method-name:supportsOutputConversion
+Method-returnType:boolean
+Method-parameters:[Class<?> clazz]
+MethodInvocation:isAssignableFrom
+MethodInvocation:contains
+MethodInvocation:getName
+Method-name:getDefaultConversion
+Method-returnType:Class<?>
+Method-parameters:[]
+Method-name:getChildren
+Method-returnType:List<LogicalType>
+Method-parameters:[]
+MethodInvocation:addAll
+MethodInvocation:getChildren
+MethodInvocation:addAll
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toList
+MethodInvocation:unmodifiableList
+Method-name:accept
+Method-returnType:R
+Method-parameters:[LogicalTypeVisitor<R> visitor]
+MethodInvocation:visit
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash

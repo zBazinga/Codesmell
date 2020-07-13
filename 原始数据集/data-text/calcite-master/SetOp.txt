@@ -1,0 +1,62 @@
+Class:SetOp
+Field:inputs
+Field:kind
+Field:all
+Method-name:SetOp
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traits, List<RelNode> inputs, SqlKind kind, boolean all]
+MethodInvocation:checkArgument
+FieldAccess:kind
+FieldAccess:inputs
+MethodInvocation:copyOf
+FieldAccess:all
+Method-name:SetOp
+Method-returnType:null
+Method-parameters:[RelInput input]
+MethodInvocation:getCluster
+MethodInvocation:getTraitSet
+MethodInvocation:getInputs
+MethodInvocation:getBoolean
+Method-name:copy
+Method-returnType:SetOp
+Method-parameters:[RelTraitSet traitSet, List<RelNode> inputs, boolean all]
+Method-name:copy
+Method-returnType:SetOp
+Method-parameters:[RelTraitSet traitSet, List<RelNode> inputs]
+MethodInvocation:copy
+Method-name:replaceInput
+Method-returnType:void
+Method-parameters:[int ordinalInParent, RelNode p]
+MethodInvocation:set
+MethodInvocation:copyOf
+MethodInvocation:recomputeDigest
+Method-name:getInputs
+Method-returnType:List<RelNode>
+Method-parameters:[]
+Method-name:explainTerms
+Method-returnType:RelWriter
+Method-parameters:[RelWriter pw]
+MethodInvocation:zip
+MethodInvocation:input
+MethodInvocation:item
+Method-name:deriveRowType
+Method-returnType:RelDataType
+Method-parameters:[]
+MethodInvocation:transform
+MethodInvocation:leastRestrictive
+MethodInvocation:getTypeFactory
+MethodInvocation:getCluster
+MethodInvocation:sepList
+Method-name:isHomogeneous
+Method-returnType:boolean
+Method-parameters:[boolean compareNames]
+MethodInvocation:getRowType
+MethodInvocation:getInputs
+MethodInvocation:areRowTypesEqual
+MethodInvocation:getRowType
+Method-name:getColumnOrigins
+Method-returnType:Set<RelColumnOrigin>
+Method-parameters:[RelMetadataQuery mq, int iOutputColumn, RelMdColumnOrigins relMdColumnOrigins]
+MethodInvocation:getInputs
+MethodInvocation:getColumnOrigins
+MethodInvocation:addAll

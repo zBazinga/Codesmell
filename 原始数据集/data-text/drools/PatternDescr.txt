@@ -1,0 +1,218 @@
+Class:PatternDescr
+Field:serialVersionUID
+Field:objectType
+Field:identifier
+Field:unification
+Field:constraint
+Field:leftParentCharacter
+Field:rightParentCharacter
+Field:source
+Field:behaviors
+Field:query
+Field:xpathStartDeclaration
+Method-name:PatternDescr
+Method-returnType:null
+Method-parameters:[]
+Method-name:PatternDescr
+Method-returnType:null
+Method-parameters:[final String objectType]
+Method-name:PatternDescr
+Method-returnType:null
+Method-parameters:[final String objectType, final String identifier]
+FieldAccess:objectType
+FieldAccess:identifier
+Method-name:PatternDescr
+Method-returnType:null
+Method-parameters:[final String objectType, final String identifier, final boolean isQuery]
+FieldAccess:objectType
+FieldAccess:identifier
+FieldAccess:query
+Method-name:setIdentifier
+Method-returnType:void
+Method-parameters:[final String identifier]
+FieldAccess:identifier
+Method-name:setObjectType
+Method-returnType:void
+Method-parameters:[final String objectType]
+FieldAccess:objectType
+Method-name:setQuery
+Method-returnType:void
+Method-parameters:[boolean query]
+FieldAccess:query
+Method-name:getObjectType
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:objectType
+Method-name:getIdentifier
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:identifier
+Method-name:isQuery
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isPassive
+Method-returnType:boolean
+Method-parameters:[RuleBuildContext context]
+MethodInvocation:isPresent
+MethodInvocation:getEntryPointId
+MethodInvocation:getText
+MethodInvocation:getDataSource
+Method-name:getDescrs
+Method-returnType:List<? extends BaseDescr>
+Method-parameters:[]
+MethodInvocation:getDescrs
+FieldAccess:constraint
+Method-name:addConstraint
+Method-returnType:void
+Method-parameters:[BaseDescr base]
+MethodInvocation:addDescr
+FieldAccess:constraint
+Method-name:removeAllConstraint
+Method-returnType:void
+Method-parameters:[]
+Method-name:removeConstraint
+Method-returnType:boolean
+Method-parameters:[BaseDescr base]
+MethodInvocation:removeDescr
+FieldAccess:constraint
+Method-name:getConstraint
+Method-returnType:ConditionalElementDescr
+Method-parameters:[]
+FieldAccess:constraint
+Method-name:getPositionalConstraints
+Method-returnType:List<? extends BaseDescr>
+Method-parameters:[]
+MethodInvocation:doGetConstraints
+Method-name:getSlottedConstraints
+Method-returnType:List<? extends BaseDescr>
+Method-parameters:[]
+MethodInvocation:doGetConstraints
+Method-name:doGetConstraints
+Method-returnType:List<? extends BaseDescr>
+Method-parameters:[ExprConstraintDescr.Type type]
+MethodInvocation:getDescrs
+FieldAccess:constraint
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:add
+MethodInvocation:equals
+MethodInvocation:add
+Method-name:isInternalFact
+Method-returnType:boolean
+Method-parameters:[RuleBuildContext context]
+MethodInvocation:isPresent
+MethodInvocation:getEntryPointId
+MethodInvocation:getExpression
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:identifier
+FieldAccess:objectType
+Method-name:getLeftParentCharacter
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:leftParentCharacter
+Method-name:setLeftParentCharacter
+Method-returnType:void
+Method-parameters:[final int leftParentCharacter]
+FieldAccess:leftParentCharacter
+Method-name:getRightParentCharacter
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:rightParentCharacter
+Method-name:setRightParentCharacter
+Method-returnType:void
+Method-parameters:[final int rightParentCharacter]
+FieldAccess:rightParentCharacter
+Method-name:getSource
+Method-returnType:PatternSourceDescr
+Method-parameters:[]
+Method-name:setSource
+Method-returnType:void
+Method-parameters:[PatternSourceDescr source]
+FieldAccess:source
+Method-name:setResource
+Method-returnType:void
+Method-parameters:[org.kie.api.io.Resource resource]
+MethodInvocation:setResource
+FieldAccess:constraint
+Method-name:getBehaviors
+Method-returnType:List<BehaviorDescr>
+Method-parameters:[]
+MethodInvocation:emptyList
+Method-name:setBehaviors
+Method-returnType:void
+Method-parameters:[List<BehaviorDescr> behaviors]
+FieldAccess:behaviors
+Method-name:addBehavior
+Method-returnType:void
+Method-parameters:[BehaviorDescr behavior]
+FieldAccess:behaviors
+FieldAccess:behaviors
+MethodInvocation:add
+FieldAccess:behaviors
+Method-name:isUnification
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setUnification
+Method-returnType:void
+Method-parameters:[boolean unification]
+FieldAccess:unification
+Method-name:getXpathStartDeclaration
+Method-returnType:Declaration
+Method-parameters:[]
+Method-name:setXpathStartDeclaration
+Method-returnType:void
+Method-parameters:[Declaration xpathStartDeclaration]
+FieldAccess:xpathStartDeclaration
+Method-name:clone
+Method-returnType:Object
+Method-parameters:[]
+FieldAccess:objectType
+FieldAccess:identifier
+MethodInvocation:setQuery
+FieldAccess:query
+MethodInvocation:setUnification
+MethodInvocation:setLeftParentCharacter
+FieldAccess:leftParentCharacter
+MethodInvocation:setRightParentCharacter
+FieldAccess:rightParentCharacter
+MethodInvocation:setSource
+FieldAccess:source
+MethodInvocation:setStartCharacter
+MethodInvocation:getStartCharacter
+MethodInvocation:setEndCharacter
+MethodInvocation:getEndCharacter
+MethodInvocation:setLocation
+MethodInvocation:getLine
+MethodInvocation:getColumn
+MethodInvocation:setEndLocation
+MethodInvocation:getEndLine
+MethodInvocation:getEndColumn
+MethodInvocation:setText
+MethodInvocation:getText
+MethodInvocation:getDescrs
+MethodInvocation:addConstraint
+MethodInvocation:addBehavior
+MethodInvocation:setXpathStartDeclaration
+Method-name:accept
+Method-returnType:void
+Method-parameters:[DescrVisitor visitor]
+MethodInvocation:visit
+Method-name:lookAheadFieldsOfIdentifier
+Method-returnType:Collection<String>
+Method-parameters:[RuleDescr ruleDescr]
+MethodInvocation:getIdentifier
+MethodInvocation:emptyList
+MethodInvocation:getAllPatternDescr
+MethodInvocation:getLhs
+MethodInvocation:getDescrs
+MethodInvocation:getText
+MethodInvocation:indexOf
+MethodInvocation:isJavaIdentifierPart
+MethodInvocation:charAt
+MethodInvocation:extractFirstIdentifier
+MethodInvocation:length
+MethodInvocation:getter2property
+MethodInvocation:add
+MethodInvocation:lcFirst

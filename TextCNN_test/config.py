@@ -3,7 +3,7 @@
 class Config(object):
     def __init__(self, steps_show=10,
                  steps_eval=100, early_stopping=1000,
-                 data_path='/Users/dashabi/Desktop/实验网络/dataset_codesmell/10-fold-4-context',
+                 data_path='/Users/dashabi/Desktop/codesmell_code/dataset_codesmell/10-fold-4-context',
                  data_format='csv',
                  train_name='train_all10.csv',
                  # dev_name = 'dev.tsv',

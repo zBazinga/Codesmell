@@ -1,0 +1,146 @@
+Class:Index
+Field:table
+Field:columns
+Field:columnOrderMap
+Field:name
+Method-name:sqlCreateString
+Method-returnType:String
+Method-parameters:[Dialect dialect, Mapping mapping, String defaultCatalog, String defaultSchema]
+MethodInvocation:buildSqlCreateIndexString
+MethodInvocation:getQuotedName
+MethodInvocation:getTable
+MethodInvocation:getColumnIterator
+Method-name:buildSqlDropIndexString
+Method-returnType:String
+Method-parameters:[Dialect dialect, Table table, String name, String defaultCatalog, String defaultSchema]
+MethodInvocation:buildSqlDropIndexString
+MethodInvocation:getQualifiedName
+Method-name:buildSqlDropIndexString
+Method-returnType:String
+Method-parameters:[String name, String tableName]
+MethodInvocation:qualify
+Method-name:buildSqlCreateIndexString
+Method-returnType:String
+Method-parameters:[Dialect dialect, String name, Table table, Iterator<Column> columns, java.util.Map<Column,String> columnOrderMap, boolean unique, String defaultCatalog, String defaultSchema]
+MethodInvocation:buildSqlCreateIndexString
+MethodInvocation:getQualifiedName
+Method-name:buildSqlCreateIndexString
+Method-returnType:String
+Method-parameters:[Dialect dialect, String name, String tableName, Iterator<Column> columns, java.util.Map<Column,String> columnOrderMap, boolean unique]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:qualifyIndexName
+MethodInvocation:unqualify
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:append
+MethodInvocation:getQuotedName
+MethodInvocation:containsKey
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:get
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:buildSqlCreateIndexString
+Method-returnType:String
+Method-parameters:[Dialect dialect, String name, Table table, Iterator<Column> columns, boolean unique, String defaultCatalog, String defaultSchema]
+MethodInvocation:buildSqlCreateIndexString
+Method-name:buildSqlCreateIndexString
+Method-returnType:String
+Method-parameters:[Dialect dialect, String name, Table table, Iterator<Column> columns, java.util.Map<Column,String> columnOrderMap, boolean unique, Metadata metadata]
+MethodInvocation:getJdbcEnvironment
+MethodInvocation:getDatabase
+MethodInvocation:format
+MethodInvocation:getQualifiedObjectNameFormatter
+MethodInvocation:getQualifiedTableName
+MethodInvocation:buildSqlCreateIndexString
+Method-name:sqlConstraintString
+Method-returnType:String
+Method-parameters:[Dialect dialect]
+MethodInvocation:getColumnIterator
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:getQuotedName
+MethodInvocation:next
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append
+Method-name:sqlDropString
+Method-returnType:String
+Method-parameters:[Dialect dialect, String defaultCatalog, String defaultSchema]
+MethodInvocation:qualify
+MethodInvocation:getQualifiedName
+MethodInvocation:getQuotedName
+Method-name:getTable
+Method-returnType:Table
+Method-parameters:[]
+Method-name:setTable
+Method-returnType:void
+Method-parameters:[Table table]
+FieldAccess:table
+Method-name:getColumnSpan
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getColumnIterator
+Method-returnType:Iterator<Column>
+Method-parameters:[]
+MethodInvocation:iterator
+Method-name:getColumnOrderMap
+Method-returnType:java.util.Map<Column,String>
+Method-parameters:[]
+MethodInvocation:unmodifiableMap
+Method-name:addColumn
+Method-returnType:void
+Method-parameters:[Column column]
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:addColumn
+Method-returnType:void
+Method-parameters:[Column column, String order]
+MethodInvocation:addColumn
+MethodInvocation:isNotEmpty
+MethodInvocation:put
+Method-name:addColumns
+Method-returnType:void
+Method-parameters:[Iterator extraColumns]
+MethodInvocation:hasNext
+MethodInvocation:addColumn
+MethodInvocation:next
+Method-name:containsColumn
+Method-returnType:boolean
+Method-parameters:[Column column]
+MethodInvocation:contains
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getText
+Method-name:setName
+Method-returnType:void
+Method-parameters:[String name]
+FieldAccess:name
+MethodInvocation:toIdentifier
+Method-name:getQuotedName
+Method-returnType:String
+Method-parameters:[Dialect dialect]
+MethodInvocation:render
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+Method-name:getExportIdentifier
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:qualify
+MethodInvocation:getExportIdentifier
+MethodInvocation:getTable
+MethodInvocation:getName

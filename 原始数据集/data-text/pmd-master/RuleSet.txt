@@ -1,0 +1,332 @@
+Class:RuleSet
+Field:LOG
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:MISSING_RULE
+Field:MISSING_RULESET_DESCRIPTION
+Field:MISSING_RULESET_NAME
+Field:checksum
+Field:rules
+Field:fileName
+Field:name
+Field:description
+Field:excludePatterns
+Field:includePatterns
+Field:filter
+Method-name:RuleSet
+Method-returnType:null
+Method-parameters:[final RuleSetBuilder builder]
+MethodInvocation:requireNonNull
+MethodInvocation:requireNonNull
+MethodInvocation:unmodifiableList
+MethodInvocation:unmodifiableList
+MethodInvocation:buildRegexFilterIncludeOverExclude
+MethodInvocation:getIncludePatterns
+MethodInvocation:getExcludePatterns
+MethodInvocation:toNormalizedFileFilter
+Method-name:RuleSet
+Method-returnType:null
+Method-parameters:[final RuleSet rs]
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:deepCopy
+Method-name:createRuleSetCopy
+Method-returnType:RuleSet
+Method-parameters:[RuleSetFactory ruleSetFactory]
+MethodInvocation:build
+Class:RuleSetBuilder
+Field:description
+Field:name
+Field:fileName
+Field:rules
+Field:excludePatterns
+Field:includePatterns
+Field:checksum
+Method-name:RuleSetBuilder
+Method-returnType:null
+Method-parameters:[final long checksum]
+FieldAccess:checksum
+Method-name:RuleSetBuilder
+Method-returnType:null
+Method-parameters:[final RuleSet original]
+MethodInvocation:getChecksum
+MethodInvocation:replaceFileInclusions
+MethodInvocation:replaceFileExclusions
+MethodInvocation:withFileName
+MethodInvocation:withDescription
+MethodInvocation:withName
+MethodInvocation:getName
+MethodInvocation:getDescription
+MethodInvocation:getFileName
+MethodInvocation:getFileExclusions
+MethodInvocation:getFileInclusions
+MethodInvocation:addRuleSet
+Method-name:addRule
+Method-returnType:RuleSetBuilder
+Method-parameters:[final Rule newRule]
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:getLanguage
+MethodInvocation:getLanguage
+MethodInvocation:warning
+MethodInvocation:getName
+MethodInvocation:add
+Method-name:getExistingRule
+Method-returnType:Rule
+Method-parameters:[final Rule rule]
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:getLanguage
+MethodInvocation:getLanguage
+Method-name:hasRule
+Method-returnType:boolean
+Method-parameters:[final Rule rule]
+MethodInvocation:getExistingRule
+Method-name:addRuleReplaceIfExists
+Method-returnType:RuleSetBuilder
+Method-parameters:[final Rule rule]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:getLanguage
+MethodInvocation:getLanguage
+MethodInvocation:remove
+MethodInvocation:addRule
+Method-name:addRuleIfNotExists
+Method-returnType:RuleSetBuilder
+Method-parameters:[final Rule ruleOrRef]
+MethodInvocation:getRule
+MethodInvocation:hasRule
+MethodInvocation:addRule
+Method-name:addRuleByReference
+Method-returnType:RuleSetBuilder
+Method-parameters:[final String ruleSetFileName, final Rule rule]
+MethodInvocation:isBlank
+MethodInvocation:add
+Method-name:addRuleSet
+Method-returnType:RuleSetBuilder
+Method-parameters:[final RuleSet ruleSet]
+MethodInvocation:addAll
+MethodInvocation:size
+MethodInvocation:getRules
+Method-name:addRuleSetByReference
+Method-returnType:RuleSetBuilder
+Method-parameters:[final RuleSet ruleSet, final boolean allRules]
+MethodInvocation:addRuleSetByReference
+Method-name:addRuleSetByReference
+Method-returnType:RuleSetBuilder
+Method-parameters:[final RuleSet ruleSet, final boolean allRules, final String... excludes]
+MethodInvocation:isBlank
+MethodInvocation:getFileName
+MethodInvocation:getFileName
+MethodInvocation:getFileName
+MethodInvocation:asList
+MethodInvocation:getRules
+MethodInvocation:add
+Method-name:withFileExclusions
+Method-returnType:RuleSetBuilder
+Method-parameters:[Pattern p1, Pattern... rest]
+MethodInvocation:requireNonNull
+MethodInvocation:requireNonNull
+MethodInvocation:add
+MethodInvocation:requireNonNull
+MethodInvocation:add
+Method-name:withFileExclusions
+Method-returnType:RuleSetBuilder
+Method-parameters:[Collection<? extends Pattern> patterns]
+MethodInvocation:requireNonNull
+MethodInvocation:requireNonNull
+MethodInvocation:add
+Method-name:replaceFileExclusions
+Method-returnType:RuleSetBuilder
+Method-parameters:[Collection<? extends Pattern> patterns]
+MethodInvocation:requireNonNull
+MethodInvocation:clear
+MethodInvocation:requireNonNull
+MethodInvocation:add
+Method-name:withFileInclusions
+Method-returnType:RuleSetBuilder
+Method-parameters:[Pattern p1, Pattern... rest]
+MethodInvocation:requireNonNull
+MethodInvocation:requireNonNull
+MethodInvocation:add
+MethodInvocation:requireNonNull
+MethodInvocation:add
+Method-name:withFileInclusions
+Method-returnType:RuleSetBuilder
+Method-parameters:[Collection<? extends Pattern> patterns]
+MethodInvocation:requireNonNull
+MethodInvocation:requireNonNull
+MethodInvocation:add
+Method-name:replaceFileInclusions
+Method-returnType:RuleSetBuilder
+Method-parameters:[Collection<? extends Pattern> patterns]
+MethodInvocation:requireNonNull
+MethodInvocation:clear
+MethodInvocation:requireNonNull
+MethodInvocation:add
+Method-name:withFileName
+Method-returnType:RuleSetBuilder
+Method-parameters:[final String fileName]
+FieldAccess:fileName
+Method-name:withName
+Method-returnType:RuleSetBuilder
+Method-parameters:[final String name]
+FieldAccess:name
+MethodInvocation:requireNonNull
+Method-name:withDescription
+Method-returnType:RuleSetBuilder
+Method-parameters:[final String description]
+FieldAccess:description
+MethodInvocation:requireNonNull
+Method-name:hasDescription
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:description
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:build
+Method-returnType:RuleSet
+Method-parameters:[]
+Method-name:filterRulesByPriority
+Method-returnType:void
+Method-parameters:[RulePriority minimumPriority]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:compareTo
+MethodInvocation:getPriority
+MethodInvocation:fine
+MethodInvocation:getName
+MethodInvocation:getPriority
+MethodInvocation:remove
+Method-name:getExcludePatterns
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:pattern
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getRules
+Method-returnType:Collection<Rule>
+Method-parameters:[]
+Method-name:getRuleByName
+Method-returnType:Rule
+Method-parameters:[String ruleName]
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:applies
+Method-returnType:boolean
+Method-parameters:[File file]
+MethodInvocation:filter
+Method-name:start
+Method-returnType:void
+Method-parameters:[RuleContext ctx]
+MethodInvocation:start
+Method-name:apply
+Method-returnType:void
+Method-parameters:[List<? extends Node> acuList, RuleContext ctx]
+MethodInvocation:startOperation
+MethodInvocation:isRuleChain
+MethodInvocation:applies
+MethodInvocation:getLanguageVersion
+MethodInvocation:startOperation
+MethodInvocation:getName
+MethodInvocation:apply
+MethodInvocation:isIgnoreExceptions
+MethodInvocation:addError
+MethodInvocation:getReport
+MethodInvocation:valueOf
+MethodInvocation:getSourceCodeFile
+MethodInvocation:isLoggable
+MethodInvocation:log
+MethodInvocation:getName
+MethodInvocation:getSourceCodeFile
+Method-name:applies
+Method-returnType:boolean
+Method-parameters:[Rule rule, LanguageVersion languageVersion]
+MethodInvocation:getMinimumLanguageVersion
+MethodInvocation:getMaximumLanguageVersion
+MethodInvocation:equals
+MethodInvocation:getLanguage
+MethodInvocation:getLanguage
+MethodInvocation:compareTo
+MethodInvocation:compareTo
+Method-name:end
+Method-returnType:void
+Method-parameters:[RuleContext ctx]
+MethodInvocation:end
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:getRules
+MethodInvocation:getRules
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:getName
+MethodInvocation:hashCode
+MethodInvocation:getRules
+Method-name:getFileName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:getIncludePatterns
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:pattern
+Method-name:getFileExclusions
+Method-returnType:List<Pattern>
+Method-parameters:[]
+Method-name:getFileInclusions
+Method-returnType:List<Pattern>
+Method-parameters:[]
+Method-name:usesDFA
+Method-returnType:boolean
+Method-parameters:[Language language]
+MethodInvocation:equals
+MethodInvocation:getLanguage
+MethodInvocation:isDfa
+Method-name:usesTypeResolution
+Method-returnType:boolean
+Method-parameters:[Language language]
+MethodInvocation:equals
+MethodInvocation:getLanguage
+MethodInvocation:isTypeResolution
+Method-name:usesMultifile
+Method-returnType:boolean
+Method-parameters:[Language language]
+MethodInvocation:equals
+MethodInvocation:getLanguage
+MethodInvocation:isMultifile
+Method-name:removeDysfunctionalRules
+Method-returnType:void
+Method-parameters:[Collection<Rule> collector]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:dysfunctionReason
+MethodInvocation:remove
+MethodInvocation:add
+Method-name:getChecksum
+Method-returnType:long
+Method-parameters:[]

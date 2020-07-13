@@ -1,0 +1,16 @@
+Class:MasterDumpServlet
+Field:serialVersionUID
+Field:LINE
+Method-name:doGet
+Method-returnType:void
+Method-parameters:[HttpServletRequest request, HttpServletResponse response]
+Method-name:dumpServers
+Method-returnType:void
+Method-parameters:[HMaster master, PrintWriter out]
+MethodInvocation:getServerManager
+MethodInvocation:println
+MethodInvocation:getOnlineServers
+MethodInvocation:entrySet
+MethodInvocation:println
+MethodInvocation:getKey
+MethodInvocation:getValue

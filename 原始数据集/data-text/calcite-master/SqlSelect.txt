@@ -1,0 +1,149 @@
+Class:SqlSelect
+Field:FROM_OPERAND
+Field:WHERE_OPERAND
+Field:HAVING_OPERAND
+Field:keywordList
+Field:selectList
+Field:from
+Field:where
+Field:groupBy
+Field:having
+Field:windowDecls
+Field:orderBy
+Field:offset
+Field:fetch
+Field:hints
+Method-name:SqlSelect
+Method-returnType:null
+Method-parameters:[SqlParserPos pos, SqlNodeList keywordList, SqlNodeList selectList, SqlNode from, SqlNode where, SqlNodeList groupBy, SqlNode having, SqlNodeList windowDecls, SqlNodeList orderBy, SqlNode offset, SqlNode fetch, SqlNodeList hints]
+FieldAccess:keywordList
+MethodInvocation:requireNonNull
+FieldAccess:selectList
+FieldAccess:from
+FieldAccess:where
+FieldAccess:groupBy
+FieldAccess:having
+FieldAccess:windowDecls
+MethodInvocation:requireNonNull
+FieldAccess:orderBy
+FieldAccess:offset
+FieldAccess:fetch
+FieldAccess:hints
+Method-name:getOperator
+Method-returnType:SqlOperator
+Method-parameters:[]
+Method-name:getKind
+Method-returnType:SqlKind
+Method-parameters:[]
+Method-name:getOperandList
+Method-returnType:List<SqlNode>
+Method-parameters:[]
+MethodInvocation:of
+Method-name:setOperand
+Method-returnType:void
+Method-parameters:[int i, SqlNode operand]
+MethodInvocation:requireNonNull
+MethodInvocation:requireNonNull
+Method-name:isDistinct
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getModifierNode
+Method-name:getModifierNode
+Method-returnType:SqlNode
+Method-parameters:[SqlSelectKeyword modifier]
+MethodInvocation:symbolValue
+Method-name:getFrom
+Method-returnType:SqlNode
+Method-parameters:[]
+Method-name:setFrom
+Method-returnType:void
+Method-parameters:[SqlNode from]
+FieldAccess:from
+Method-name:getGroup
+Method-returnType:SqlNodeList
+Method-parameters:[]
+Method-name:setGroupBy
+Method-returnType:void
+Method-parameters:[SqlNodeList groupBy]
+FieldAccess:groupBy
+Method-name:getHaving
+Method-returnType:SqlNode
+Method-parameters:[]
+Method-name:setHaving
+Method-returnType:void
+Method-parameters:[SqlNode having]
+FieldAccess:having
+Method-name:getSelectList
+Method-returnType:SqlNodeList
+Method-parameters:[]
+Method-name:setSelectList
+Method-returnType:void
+Method-parameters:[SqlNodeList selectList]
+FieldAccess:selectList
+Method-name:getWhere
+Method-returnType:SqlNode
+Method-parameters:[]
+Method-name:setWhere
+Method-returnType:void
+Method-parameters:[SqlNode whereClause]
+FieldAccess:where
+Method-name:getWindowList
+Method-returnType:SqlNodeList
+Method-parameters:[]
+Method-name:getOrderList
+Method-returnType:SqlNodeList
+Method-parameters:[]
+Method-name:setOrderBy
+Method-returnType:void
+Method-parameters:[SqlNodeList orderBy]
+FieldAccess:orderBy
+Method-name:getOffset
+Method-returnType:SqlNode
+Method-parameters:[]
+Method-name:setOffset
+Method-returnType:void
+Method-parameters:[SqlNode offset]
+FieldAccess:offset
+Method-name:getFetch
+Method-returnType:SqlNode
+Method-parameters:[]
+Method-name:setFetch
+Method-returnType:void
+Method-parameters:[SqlNode fetch]
+FieldAccess:fetch
+Method-name:setHints
+Method-returnType:void
+Method-parameters:[SqlNodeList hints]
+FieldAccess:hints
+Method-name:getHints
+Method-returnType:SqlNodeList
+Method-parameters:[]
+FieldAccess:hints
+Method-name:hasHints
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:hints
+MethodInvocation:size
+FieldAccess:hints
+Method-name:validate
+Method-returnType:void
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope]
+MethodInvocation:validateQuery
+MethodInvocation:getUnknownType
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, int leftPrec, int rightPrec]
+MethodInvocation:inQuery
+MethodInvocation:startList
+MethodInvocation:unparseCall
+MethodInvocation:getDialect
+MethodInvocation:endList
+MethodInvocation:unparseCall
+MethodInvocation:getDialect
+Method-name:hasOrderBy
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+Method-name:hasWhere
+Method-returnType:boolean
+Method-parameters:[]

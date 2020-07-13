@@ -1,0 +1,148 @@
+Class:GetUrlRequest
+Field:BUCKET_FIELD
+MethodInvocation:build
+MethodInvocation:traits
+MethodInvocation:setter
+MethodInvocation:getter
+MethodInvocation:builder
+MethodInvocation:getter
+MethodInvocation:setter
+MethodInvocation:build
+MethodInvocation:unmarshallLocationName
+MethodInvocation:locationName
+MethodInvocation:location
+MethodInvocation:builder
+Field:KEY_FIELD
+MethodInvocation:build
+MethodInvocation:traits
+MethodInvocation:setter
+MethodInvocation:getter
+MethodInvocation:builder
+MethodInvocation:getter
+MethodInvocation:setter
+MethodInvocation:build
+MethodInvocation:unmarshallLocationName
+MethodInvocation:locationName
+MethodInvocation:location
+MethodInvocation:builder
+Field:SDK_FIELDS
+MethodInvocation:unmodifiableList
+MethodInvocation:asList
+Field:bucket
+Field:key
+Field:region
+Field:endpoint
+Method-name:GetUrlRequest
+Method-returnType:null
+Method-parameters:[BuilderImpl builder]
+FieldAccess:bucket
+MethodInvocation:paramNotBlank
+FieldAccess:key
+MethodInvocation:paramNotBlank
+FieldAccess:region
+FieldAccess:endpoint
+Method-name:bucket
+Method-returnType:String
+Method-parameters:[]
+Method-name:key
+Method-returnType:String
+Method-parameters:[]
+Method-name:region
+Method-returnType:Region
+Method-parameters:[]
+Method-name:endpoint
+Method-returnType:URI
+Method-parameters:[]
+Method-name:toBuilder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:getValueForField
+Method-returnType:Optional<T>
+Method-parameters:[String fieldName, Class<T> clazz]
+MethodInvocation:ofNullable
+MethodInvocation:cast
+MethodInvocation:bucket
+MethodInvocation:ofNullable
+MethodInvocation:cast
+MethodInvocation:key
+MethodInvocation:empty
+Method-name:sdkFields
+Method-returnType:List<SdkField<?>>
+Method-parameters:[]
+Method-name:getter
+Method-returnType:Function<Object,T>
+Method-parameters:[Function<GetUrlRequest,T> g]
+MethodInvocation:apply
+Method-name:setter
+Method-returnType:BiConsumer<Object,T>
+Method-parameters:[BiConsumer<Builder,T> s]
+MethodInvocation:accept
+Method-name:createMarshalledRequest
+Method-returnType:SdkHttpFullRequest
+Method-parameters:[URI endpoint, S3Utilities s3Utilities]
+MethodInvocation:build
+MethodInvocation:httpMethod
+MethodInvocation:requestUri
+MethodInvocation:builder
+MethodInvocation:createSdkHttpRequest
+MethodInvocation:encodedPath
+MethodInvocation:marshall
+MethodInvocation:encodedPath
+MethodInvocation:bucket
+MethodInvocation:encodedPath
+MethodInvocation:marshall
+MethodInvocation:encodedPath
+MethodInvocation:key
+MethodInvocation:build
+Method-name:bucket
+Method-returnType:Builder
+Method-parameters:[String bucket]
+Method-name:key
+Method-returnType:Builder
+Method-parameters:[String key]
+Method-name:region
+Method-returnType:Builder
+Method-parameters:[Region region]
+Method-name:endpoint
+Method-returnType:Builder
+Method-parameters:[URI endpoint]
+Class:BuilderImpl
+Field:bucket
+Field:key
+Field:region
+Field:endpoint
+Method-name:BuilderImpl
+Method-returnType:null
+Method-parameters:[]
+Method-name:BuilderImpl
+Method-returnType:null
+Method-parameters:[GetUrlRequest getUrlRequest]
+MethodInvocation:bucket
+MethodInvocation:key
+MethodInvocation:region
+MethodInvocation:endpoint
+Method-name:bucket
+Method-returnType:Builder
+Method-parameters:[String bucket]
+FieldAccess:bucket
+Method-name:key
+Method-returnType:Builder
+Method-parameters:[String key]
+FieldAccess:key
+Method-name:region
+Method-returnType:Builder
+Method-parameters:[Region region]
+FieldAccess:region
+Method-name:endpoint
+Method-returnType:Builder
+Method-parameters:[URI endpoint]
+FieldAccess:endpoint
+Method-name:build
+Method-returnType:GetUrlRequest
+Method-parameters:[]
+Method-name:sdkFields
+Method-returnType:List<SdkField<?>>
+Method-parameters:[]

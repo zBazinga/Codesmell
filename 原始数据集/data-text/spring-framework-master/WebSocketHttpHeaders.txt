@@ -1,0 +1,189 @@
+Class:WebSocketHttpHeaders
+Field:SEC_WEBSOCKET_ACCEPT
+Field:SEC_WEBSOCKET_EXTENSIONS
+Field:SEC_WEBSOCKET_KEY
+Field:SEC_WEBSOCKET_PROTOCOL
+Field:SEC_WEBSOCKET_VERSION
+Field:serialVersionUID
+Field:headers
+Method-name:WebSocketHttpHeaders
+Method-returnType:null
+Method-parameters:[]
+Method-name:WebSocketHttpHeaders
+Method-returnType:null
+Method-parameters:[HttpHeaders headers]
+Method-name:WebSocketHttpHeaders
+Method-returnType:null
+Method-parameters:[HttpHeaders headers, boolean readOnly]
+FieldAccess:headers
+MethodInvocation:readOnlyHttpHeaders
+Method-name:readOnlyWebSocketHttpHeaders
+Method-returnType:WebSocketHttpHeaders
+Method-parameters:[WebSocketHttpHeaders headers]
+Method-name:setSecWebSocketAccept
+Method-returnType:void
+Method-parameters:[@Nullable String secWebSocketAccept]
+MethodInvocation:set
+Method-name:getSecWebSocketAccept
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:getSecWebSocketExtensions
+Method-returnType:List<WebSocketExtension>
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:emptyList
+MethodInvocation:size
+MethodInvocation:addAll
+MethodInvocation:parseExtensions
+Method-name:setSecWebSocketExtensions
+Method-returnType:void
+Method-parameters:[List<WebSocketExtension> extensions]
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:toString
+MethodInvocation:set
+MethodInvocation:toCommaDelimitedString
+Method-name:setSecWebSocketKey
+Method-returnType:void
+Method-parameters:[@Nullable String secWebSocketKey]
+MethodInvocation:set
+Method-name:getSecWebSocketKey
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setSecWebSocketProtocol
+Method-returnType:void
+Method-parameters:[String secWebSocketProtocol]
+MethodInvocation:set
+Method-name:setSecWebSocketProtocol
+Method-returnType:void
+Method-parameters:[List<String> secWebSocketProtocols]
+MethodInvocation:set
+MethodInvocation:toCommaDelimitedString
+Method-name:getSecWebSocketProtocol
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:emptyList
+MethodInvocation:size
+MethodInvocation:getValuesAsList
+Method-name:setSecWebSocketVersion
+Method-returnType:void
+Method-parameters:[@Nullable String secWebSocketVersion]
+MethodInvocation:set
+Method-name:getSecWebSocketVersion
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:getFirst
+Method-returnType:String
+Method-parameters:[String headerName]
+MethodInvocation:getFirst
+FieldAccess:headers
+Method-name:add
+Method-returnType:void
+Method-parameters:[String headerName, @Nullable String headerValue]
+MethodInvocation:add
+FieldAccess:headers
+Method-name:set
+Method-returnType:void
+Method-parameters:[String headerName, @Nullable String headerValue]
+MethodInvocation:set
+FieldAccess:headers
+Method-name:setAll
+Method-returnType:void
+Method-parameters:[Map<String,String> values]
+MethodInvocation:setAll
+FieldAccess:headers
+Method-name:toSingleValueMap
+Method-returnType:Map<String,String>
+Method-parameters:[]
+MethodInvocation:toSingleValueMap
+FieldAccess:headers
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:headers
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+FieldAccess:headers
+Method-name:containsKey
+Method-returnType:boolean
+Method-parameters:[Object key]
+MethodInvocation:containsKey
+FieldAccess:headers
+Method-name:containsValue
+Method-returnType:boolean
+Method-parameters:[Object value]
+MethodInvocation:containsValue
+FieldAccess:headers
+Method-name:get
+Method-returnType:List<String>
+Method-parameters:[Object key]
+MethodInvocation:get
+FieldAccess:headers
+Method-name:put
+Method-returnType:List<String>
+Method-parameters:[String key, List<String> value]
+MethodInvocation:put
+FieldAccess:headers
+Method-name:remove
+Method-returnType:List<String>
+Method-parameters:[Object key]
+MethodInvocation:remove
+FieldAccess:headers
+Method-name:putAll
+Method-returnType:void
+Method-parameters:[Map<? extends String,? extends List<String>> m]
+MethodInvocation:putAll
+FieldAccess:headers
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+FieldAccess:headers
+Method-name:keySet
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+FieldAccess:headers
+Method-name:values
+Method-returnType:Collection<List<String>>
+Method-parameters:[]
+MethodInvocation:values
+FieldAccess:headers
+Method-name:entrySet
+Method-returnType:Set<Entry<String,List<String>>>
+Method-parameters:[]
+MethodInvocation:entrySet
+FieldAccess:headers
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object other]
+MethodInvocation:equals
+FieldAccess:headers
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+FieldAccess:headers
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+FieldAccess:headers
+Method-name:connect
+Method-returnType:ListenableFuture<StompSession>
+Method-parameters:[String url, @Nullable StompHeaders connectHeaders, StompSessionHandler handler, Object... uriVariables, WebSocketStompClient webSocketStompClient]
+MethodInvocation:notNull
+MethodInvocation:toUri
+MethodInvocation:encode
+MethodInvocation:buildAndExpand
+MethodInvocation:fromUriString
+MethodInvocation:connect

@@ -1,0 +1,164 @@
+Class:SqlParserPos
+Field:ZERO
+Field:QUOTED_ZERO
+Field:serialVersionUID
+Field:lineNumber
+Field:columnNumber
+Field:endLineNumber
+Field:endColumnNumber
+Method-name:SqlParserPos
+Method-returnType:null
+Method-parameters:[int lineNumber, int columnNumber]
+Method-name:SqlParserPos
+Method-returnType:null
+Method-parameters:[int startLineNumber, int startColumnNumber, int endLineNumber, int endColumnNumber]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+FieldAccess:lineNumber
+FieldAccess:lineNumber
+FieldAccess:columnNumber
+FieldAccess:columnNumber
+FieldAccess:endLineNumber
+FieldAccess:endLineNumber
+FieldAccess:endColumnNumber
+FieldAccess:endColumnNumber
+Method-name:getLineNum
+Method-returnType:int
+Method-parameters:[]
+Method-name:getColumnNum
+Method-returnType:int
+Method-parameters:[]
+Method-name:getEndLineNum
+Method-returnType:int
+Method-parameters:[]
+Method-name:getEndColumnNum
+Method-returnType:int
+Method-parameters:[]
+Method-name:withQuoting
+Method-returnType:SqlParserPos
+Method-parameters:[boolean quoted]
+MethodInvocation:isQuoted
+Method-name:isQuoted
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:str
+MethodInvocation:parserContext
+Method-name:plus
+Method-returnType:SqlParserPos
+Method-parameters:[SqlParserPos pos]
+MethodInvocation:getLineNum
+MethodInvocation:getColumnNum
+MethodInvocation:getEndLineNum
+MethodInvocation:getEndColumnNum
+Method-name:plusAll
+Method-returnType:SqlParserPos
+Method-parameters:[SqlNode[] nodes]
+MethodInvocation:plusAll
+MethodInvocation:asList
+Method-name:plusAll
+Method-returnType:SqlParserPos
+Method-parameters:[Collection<SqlNode> nodeList]
+MethodInvocation:getLineNum
+MethodInvocation:getColumnNum
+MethodInvocation:getEndLineNum
+MethodInvocation:getEndColumnNum
+MethodInvocation:sum
+MethodInvocation:toPos
+Method-name:sum
+Method-returnType:SqlParserPos
+Method-parameters:[final SqlNode[] nodes]
+MethodInvocation:sum
+MethodInvocation:toPos
+Method-name:toPos
+Method-returnType:List<SqlParserPos>
+Method-parameters:[final SqlNode[] nodes]
+Method-name:get
+Method-returnType:SqlParserPos
+Method-parameters:[int index]
+MethodInvocation:getParserPosition
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+Method-name:toPos
+Method-returnType:Iterable<SqlParserPos>
+Method-parameters:[Iterable<SqlNode> nodes]
+MethodInvocation:transform
+Method-name:sum
+Method-returnType:SqlParserPos
+Method-parameters:[final List<? extends SqlNode> nodes]
+MethodInvocation:sum
+MethodInvocation:transform
+Method-name:sum
+Method-returnType:SqlParserPos
+Method-parameters:[Iterable<SqlParserPos> poses]
+MethodInvocation:newArrayList
+MethodInvocation:sum_
+Method-name:sum_
+Method-returnType:SqlParserPos
+Method-parameters:[final List<SqlParserPos> positions]
+MethodInvocation:size
+MethodInvocation:get
+Method-name:get
+Method-returnType:SqlParserPos
+Method-parameters:[int index]
+MethodInvocation:get
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:sum
+Method-name:sum
+Method-returnType:SqlParserPos
+Method-parameters:[Iterable<SqlParserPos> poses, int line, int column, int endLine, int endColumn]
+MethodInvocation:equals
+MethodInvocation:getLineNum
+MethodInvocation:getColumnNum
+MethodInvocation:getEndLineNum
+MethodInvocation:getEndColumnNum
+Method-name:overlaps
+Method-returnType:boolean
+Method-parameters:[SqlParserPos pos]
+MethodInvocation:startsBefore
+MethodInvocation:endsAfter
+MethodInvocation:startsBefore
+MethodInvocation:endsAfter
+Method-name:startsBefore
+Method-returnType:boolean
+Method-parameters:[SqlParserPos pos]
+Method-name:endsAfter
+Method-returnType:boolean
+Method-parameters:[SqlParserPos pos]
+Method-name:startsAt
+Method-returnType:boolean
+Method-parameters:[SqlParserPos pos]
+Method-name:createLiteral
+Method-returnType:SqlLiteral
+Method-parameters:[Object o, SqlTypeName sqlTypeName]
+MethodInvocation:createBoolean
+MethodInvocation:createExactNumeric
+MethodInvocation:toString
+MethodInvocation:createCharString
+MethodInvocation:createBinaryString
+MethodInvocation:createDate
+MethodInvocation:fromCalendarFields
+MethodInvocation:createTime
+MethodInvocation:fromCalendarFields
+MethodInvocation:createTimestamp
+MethodInvocation:fromCalendarFields
+MethodInvocation:unexpected
+Class:QuotedParserPos
+Method-name:QuotedParserPos
+Method-returnType:null
+Method-parameters:[int startLineNumber, int startColumnNumber, int endLineNumber, int endColumnNumber]
+Method-name:isQuoted
+Method-returnType:boolean
+Method-parameters:[]

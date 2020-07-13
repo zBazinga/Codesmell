@@ -1,0 +1,97 @@
+Class:TableScan
+Field:table
+Field:hints
+Method-name:TableScan
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, List<RelHint> hints, RelOptTable table]
+FieldAccess:table
+MethodInvocation:getRelOptSchema
+MethodInvocation:registerSchema
+MethodInvocation:getPlanner
+MethodInvocation:getRelOptSchema
+FieldAccess:hints
+MethodInvocation:copyOf
+Method-name:TableScan
+Method-returnType:null
+Method-parameters:[RelOptCluster cluster, RelTraitSet traitSet, RelOptTable table]
+MethodInvocation:of
+Method-name:TableScan
+Method-returnType:null
+Method-parameters:[RelInput input]
+MethodInvocation:getCluster
+MethodInvocation:getTraitSet
+MethodInvocation:of
+MethodInvocation:getTable
+Method-name:estimateRowCount
+Method-returnType:double
+Method-parameters:[RelMetadataQuery mq]
+MethodInvocation:getRowCount
+Method-name:getTable
+Method-returnType:RelOptTable
+Method-parameters:[]
+Method-name:getCollationList
+Method-returnType:List<RelCollation>
+Method-parameters:[]
+MethodInvocation:getCollationList
+Method-name:computeSelfCost
+Method-returnType:RelOptCost
+Method-parameters:[RelOptPlanner planner, RelMetadataQuery mq]
+MethodInvocation:getRowCount
+MethodInvocation:makeCost
+MethodInvocation:getCostFactory
+Method-name:deriveRowType
+Method-returnType:RelDataType
+Method-parameters:[]
+MethodInvocation:getRowType
+Method-name:identity
+Method-returnType:ImmutableIntList
+Method-parameters:[RelOptTable table]
+MethodInvocation:identity
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+Method-name:identity
+Method-returnType:ImmutableIntList
+Method-parameters:[]
+MethodInvocation:identity
+Method-name:explainTerms
+Method-returnType:RelWriter
+Method-parameters:[RelWriter pw]
+MethodInvocation:item
+MethodInvocation:getQualifiedName
+Method-name:project
+Method-returnType:RelNode
+Method-parameters:[ImmutableBitSet fieldsUsed, Set<RelDataTypeField> extraFields, RelBuilder relBuilder]
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:equals
+MethodInvocation:range
+MethodInvocation:isEmpty
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:getFieldList
+MethodInvocation:getRowType
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:makeInputRef
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:add
+MethodInvocation:makeNullLiteral
+MethodInvocation:getType
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:build
+MethodInvocation:project
+MethodInvocation:push
+Method-name:accept
+Method-returnType:RelNode
+Method-parameters:[RelShuttle shuttle]
+MethodInvocation:visit
+Method-name:getHints
+Method-returnType:ImmutableList<RelHint>
+Method-parameters:[]
+Method-name:apply
+Method-returnType:void
+Method-parameters:[RelOptRuleCall call, Project project, ProjectTableScanRule projectTableScanRule]

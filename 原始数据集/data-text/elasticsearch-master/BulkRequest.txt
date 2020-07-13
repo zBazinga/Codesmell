@@ -1,0 +1,212 @@
+Class:BulkRequest
+Field:REQUEST_OVERHEAD
+Field:requests
+Field:indices
+Field:timeout
+Field:waitForActiveShards
+Field:refreshPolicy
+Field:globalPipeline
+Field:globalRouting
+Field:globalIndex
+Field:sizeInBytes
+Method-name:BulkRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:BulkRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readFrom
+MethodInvocation:readVInt
+MethodInvocation:add
+MethodInvocation:readDocumentRequest
+MethodInvocation:readFrom
+MethodInvocation:readTimeValue
+Method-name:BulkRequest
+Method-returnType:null
+Method-parameters:[@Nullable String globalIndex]
+FieldAccess:globalIndex
+Method-name:add
+Method-returnType:BulkRequest
+Method-parameters:[DocWriteRequest<?>... requests]
+MethodInvocation:add
+Method-name:add
+Method-returnType:BulkRequest
+Method-parameters:[DocWriteRequest<?> request]
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:index
+Method-name:add
+Method-returnType:BulkRequest
+Method-parameters:[Iterable<DocWriteRequest<?>> requests]
+MethodInvocation:add
+Method-name:add
+Method-returnType:BulkRequest
+Method-parameters:[IndexRequest request]
+MethodInvocation:internalAdd
+Method-name:internalAdd
+Method-returnType:BulkRequest
+Method-parameters:[IndexRequest request]
+MethodInvocation:requireNonNull
+MethodInvocation:applyGlobalMandatoryParameters
+MethodInvocation:add
+MethodInvocation:source
+MethodInvocation:length
+MethodInvocation:source
+MethodInvocation:add
+MethodInvocation:index
+Method-name:add
+Method-returnType:BulkRequest
+Method-parameters:[UpdateRequest request]
+MethodInvocation:internalAdd
+Method-name:internalAdd
+Method-returnType:BulkRequest
+Method-parameters:[UpdateRequest request]
+MethodInvocation:requireNonNull
+MethodInvocation:applyGlobalMandatoryParameters
+MethodInvocation:add
+MethodInvocation:doc
+MethodInvocation:length
+MethodInvocation:source
+MethodInvocation:doc
+MethodInvocation:upsertRequest
+MethodInvocation:length
+MethodInvocation:source
+MethodInvocation:upsertRequest
+MethodInvocation:script
+MethodInvocation:length
+MethodInvocation:getIdOrCode
+MethodInvocation:script
+MethodInvocation:add
+MethodInvocation:index
+Method-name:add
+Method-returnType:BulkRequest
+Method-parameters:[DeleteRequest request]
+MethodInvocation:requireNonNull
+MethodInvocation:applyGlobalMandatoryParameters
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:index
+Method-name:requests
+Method-returnType:List<DocWriteRequest<?>>
+Method-parameters:[]
+FieldAccess:requests
+Method-name:numberOfActions
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:estimatedSizeInBytes
+Method-returnType:long
+Method-parameters:[]
+Method-name:add
+Method-returnType:BulkRequest
+Method-parameters:[byte[] data, int from, int length, XContentType xContentType]
+MethodInvocation:add
+Method-name:add
+Method-returnType:BulkRequest
+Method-parameters:[byte[] data, int from, int length, @Nullable String defaultIndex, XContentType xContentType]
+MethodInvocation:add
+Method-name:add
+Method-returnType:BulkRequest
+Method-parameters:[BytesReference data, @Nullable String defaultIndex, XContentType xContentType]
+MethodInvocation:add
+Method-name:add
+Method-returnType:BulkRequest
+Method-parameters:[BytesReference data, @Nullable String defaultIndex, boolean allowExplicitIndex, XContentType xContentType]
+MethodInvocation:add
+Method-name:add
+Method-returnType:BulkRequest
+Method-parameters:[BytesReference data, @Nullable String defaultIndex, @Nullable String defaultRouting, @Nullable FetchSourceContext defaultFetchSourceContext, @Nullable String defaultPipeline, boolean allowExplicitIndex, XContentType xContentType]
+MethodInvocation:valueOrDefault
+MethodInvocation:valueOrDefault
+MethodInvocation:parse
+MethodInvocation:internalAdd
+Method-name:waitForActiveShards
+Method-returnType:BulkRequest
+Method-parameters:[ActiveShardCount waitForActiveShards]
+FieldAccess:waitForActiveShards
+Method-name:waitForActiveShards
+Method-returnType:BulkRequest
+Method-parameters:[final int waitForActiveShards]
+MethodInvocation:waitForActiveShards
+MethodInvocation:from
+Method-name:waitForActiveShards
+Method-returnType:ActiveShardCount
+Method-parameters:[]
+FieldAccess:waitForActiveShards
+Method-name:setRefreshPolicy
+Method-returnType:BulkRequest
+Method-parameters:[RefreshPolicy refreshPolicy]
+FieldAccess:refreshPolicy
+Method-name:getRefreshPolicy
+Method-returnType:RefreshPolicy
+Method-parameters:[]
+Method-name:timeout
+Method-returnType:BulkRequest
+Method-parameters:[TimeValue timeout]
+FieldAccess:timeout
+Method-name:pipeline
+Method-returnType:BulkRequest
+Method-parameters:[String globalPipeline]
+FieldAccess:globalPipeline
+Method-name:routing
+Method-returnType:BulkRequest
+Method-parameters:[String globalRouting]
+FieldAccess:globalRouting
+Method-name:timeout
+Method-returnType:BulkRequest
+Method-parameters:[String timeout]
+MethodInvocation:timeout
+MethodInvocation:parseTimeValue
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:timeout
+Method-returnType:TimeValue
+Method-parameters:[]
+Method-name:pipeline
+Method-returnType:String
+Method-parameters:[]
+Method-name:routing
+Method-returnType:String
+Method-parameters:[]
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:addValidationError
+MethodInvocation:getRefreshPolicy
+MethodInvocation:addValidationError
+MethodInvocation:validate
+MethodInvocation:addValidationErrors
+MethodInvocation:validationErrors
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeTo
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:writeDocumentRequest
+MethodInvocation:writeTo
+MethodInvocation:writeTimeValue
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:collectionToDelimitedString
+Method-name:applyGlobalMandatoryParameters
+Method-returnType:void
+Method-parameters:[DocWriteRequest<?> request]
+MethodInvocation:index
+MethodInvocation:valueOrDefault
+MethodInvocation:index
+Method-name:valueOrDefault
+Method-returnType:String
+Method-parameters:[String value, String globalDefault]
+MethodInvocation:isNullOrEmpty
+MethodInvocation:isNullOrEmpty
+Method-name:withBackoff
+Method-returnType:PlainActionFuture<BulkResponse>
+Method-parameters:[BiConsumer<BulkRequest,ActionListener<BulkResponse>> consumer, Retry retry]
+MethodInvocation:newFuture
+MethodInvocation:withBackoff

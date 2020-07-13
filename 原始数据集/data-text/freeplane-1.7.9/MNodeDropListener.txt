@@ -1,0 +1,191 @@
+Class:MNodeDropListener
+Field:UNFOLD_DELAY_MILLISECONDS
+Field:timer
+Method-name:MNodeDropListener
+Method-returnType:null
+Method-parameters:[]
+Method-name:dragEnter
+Method-returnType:void
+Method-parameters:[final DropTargetDragEvent dtde]
+MethodInvocation:isDragAcceptable
+MethodInvocation:supportFolding
+MethodInvocation:acceptDrag
+MethodInvocation:rejectDrag
+Method-name:supportFolding
+Method-returnType:void
+Method-parameters:[final DropTargetDragEvent dtde]
+MethodInvocation:getNode
+MethodInvocation:isInFoldingRegion
+MethodInvocation:setMouseArea
+MethodInvocation:startUnfoldTimer
+MethodInvocation:setMouseArea
+MethodInvocation:stopUnfoldTimer
+Method-name:isInFoldingRegion
+Method-returnType:boolean
+Method-parameters:[DropTargetDragEvent dtde]
+MethodInvocation:getNode
+MethodInvocation:isInFoldingRegion
+MethodInvocation:getLocation
+Method-name:dragExit
+Method-returnType:void
+Method-parameters:[final DropTargetEvent e]
+MethodInvocation:setMouseArea
+MethodInvocation:getNode
+MethodInvocation:stopUnfoldTimer
+MethodInvocation:getNode
+MethodInvocation:setDraggedOver
+MethodInvocation:repaint
+Method-name:getNode
+Method-returnType:MainView
+Method-parameters:[final DropTargetEvent e]
+MethodInvocation:getComponent
+MethodInvocation:getDropTargetContext
+Method-name:dragOver
+Method-returnType:void
+Method-parameters:[final DropTargetDragEvent dtde]
+MethodInvocation:isDragAcceptable
+MethodInvocation:supportFolding
+MethodInvocation:getComponent
+MethodInvocation:getDropTargetContext
+MethodInvocation:getDraggedOver
+MethodInvocation:setDraggedOver
+MethodInvocation:getLocation
+MethodInvocation:getDraggedOver
+MethodInvocation:repaint
+Method-name:startUnfoldTimer
+Method-returnType:void
+Method-parameters:[final MainView mainView]
+Method-name:actionPerformed
+Method-returnType:void
+Method-parameters:[ActionEvent e]
+MethodInvocation:isDisplayable
+MethodInvocation:getNodeView
+MethodInvocation:getModel
+MethodInvocation:unfold
+MethodInvocation:getMapController
+MethodInvocation:getCurrentModeController
+MethodInvocation:setRepeats
+MethodInvocation:start
+Method-name:stopUnfoldTimer
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:stop
+Method-name:dragScroll
+Method-returnType:void
+Method-parameters:[final DropTargetDragEvent e]
+Method-name:isDropAcceptable
+Method-returnType:boolean
+Method-parameters:[final DropTargetDropEvent event, int dropAction]
+MethodInvocation:isDataFlavorSupported
+MethodInvocation:getTransferable
+MethodInvocation:getNodeObjects
+MethodInvocation:getModel
+MethodInvocation:getNodeView
+MethodInvocation:getComponent
+MethodInvocation:getDropTargetContext
+MethodInvocation:isFromSameMap
+MethodInvocation:isFromDescencantNode
+MethodInvocation:droppedNodesContainTargetNode
+Method-name:isFromSameMap
+Method-returnType:boolean
+Method-parameters:[final NodeModel targetNode, final Collection<NodeModel> droppedNodes]
+MethodInvocation:getMap
+MethodInvocation:getMap
+Method-name:isFromDescencantNode
+Method-returnType:boolean
+Method-parameters:[final NodeModel targetNode, final List<NodeModel> droppedNodes]
+MethodInvocation:isDescendantOf
+Method-name:getNodeObjects
+Method-returnType:List<NodeModel>
+Method-parameters:[final Transferable t]
+MethodInvocation:getTransferData
+Method-name:drop
+Method-returnType:void
+Method-parameters:[final DropTargetDropEvent dtde]
+MethodInvocation:getComponent
+MethodInvocation:getDropTargetContext
+MethodInvocation:getNodeView
+MethodInvocation:getMap
+MethodInvocation:select
+MethodInvocation:getModel
+MethodInvocation:getCurrentController
+MethodInvocation:getDropAction
+MethodInvocation:getTransferable
+MethodInvocation:setDraggedOver
+MethodInvocation:repaint
+MethodInvocation:isLocalTransfer
+MethodInvocation:isDropAcceptable
+MethodInvocation:rejectDrop
+MethodInvocation:dropAsSibling
+MethodInvocation:getX
+MethodInvocation:getLocation
+MethodInvocation:getModeController
+MethodInvocation:getMapController
+MethodInvocation:getParentNode
+MethodInvocation:isWriteable
+MethodInvocation:rejectDrop
+MethodInvocation:getText
+MethodInvocation:errorMessage
+MethodInvocation:dropLeft
+MethodInvocation:getX
+MethodInvocation:getLocation
+MethodInvocation:isLocalTransfer
+MethodInvocation:acceptDrop
+MethodInvocation:paste
+MethodInvocation:getController
+MethodInvocation:dropComplete
+MethodInvocation:acceptDrop
+MethodInvocation:size
+MethodInvocation:getSelection
+MethodInvocation:showConfirmDialog
+MethodInvocation:getCurrentRootComponent
+MethodInvocation:getViewController
+MethodInvocation:getText
+MethodInvocation:toString
+MethodInvocation:size
+MethodInvocation:getSelection
+MethodInvocation:getNodeObjects
+MethodInvocation:addConnector
+MethodInvocation:getController
+MethodInvocation:getSelectedNodes
+MethodInvocation:isFromSameMap
+MethodInvocation:toArray
+MethodInvocation:size
+MethodInvocation:moveNodes
+MethodInvocation:isFolded
+MethodInvocation:replaceSelection
+MethodInvocation:getSelection
+MethodInvocation:selectAsTheOnlyOneSelected
+MethodInvocation:getSelection
+MethodInvocation:paste
+MethodInvocation:getController
+MethodInvocation:selectAsTheOnlyOneSelected
+MethodInvocation:getSelection
+MethodInvocation:severe
+MethodInvocation:dropComplete
+MethodInvocation:dropComplete
+Method-name:getDropAction
+Method-returnType:int
+Method-parameters:[final DropTargetDropEvent dtde]
+MethodInvocation:getDropAction
+MethodInvocation:getTransferable
+MethodInvocation:isLocalTransfer
+MethodInvocation:isDataFlavorSupported
+MethodInvocation:getTransferData
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:moveNodes
+Method-returnType:void
+Method-parameters:[final MMapController mapController, final NodeModel targetNode, Transferable t, final boolean dropAsSibling, final boolean isLeft]
+MethodInvocation:getNodeObjects
+MethodInvocation:moveNodesBefore
+MethodInvocation:moveNodesAsChildren
+Method-name:dropActionChanged
+Method-returnType:void
+Method-parameters:[final DropTargetDragEvent e]
+Method-name:isDragAcceptable
+Method-returnType:boolean
+Method-parameters:[final DropTargetDragEvent ev]
+MethodInvocation:isDataFlavorSupported
+MethodInvocation:isDataFlavorSupported
+MethodInvocation:isDataFlavorSupported

@@ -1,0 +1,58 @@
+Class:SelectScope
+Field:select
+Field:windowNames
+Field:expandedSelectList
+Field:orderList
+Field:windowParent
+Method-name:SelectScope
+Method-returnType:null
+Method-parameters:[SqlValidatorScope parent, SqlValidatorScope winParent, SqlSelect select]
+FieldAccess:select
+FieldAccess:windowParent
+Method-name:getTable
+Method-returnType:SqlValidatorTable
+Method-parameters:[]
+Method-name:getNode
+Method-returnType:SqlSelect
+Method-parameters:[]
+Method-name:lookupWindow
+Method-returnType:SqlWindow
+Method-parameters:[String name]
+Method-name:getMonotonicity
+Method-returnType:SqlMonotonicity
+Method-parameters:[SqlNode expr]
+MethodInvocation:getMonotonicity
+MethodInvocation:getOrderList
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getOperator
+MethodInvocation:reverse
+MethodInvocation:operand
+MethodInvocation:equalsDeep
+Method-name:getOrderList
+Method-returnType:SqlNodeList
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:namespace
+MethodInvocation:get
+MethodInvocation:getMonotonicExprs
+MethodInvocation:size
+MethodInvocation:add
+FieldAccess:left
+MethodInvocation:get
+Method-name:addWindowName
+Method-returnType:void
+Method-parameters:[String winName]
+MethodInvocation:add
+Method-name:existingWindowName
+Method-returnType:boolean
+Method-parameters:[String winName]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:existingWindowName
+FieldAccess:parent
+Method-name:getExpandedSelectList
+Method-returnType:List<SqlNode>
+Method-parameters:[]
+Method-name:setExpandedSelectList
+Method-returnType:void
+Method-parameters:[List<SqlNode> selectList]

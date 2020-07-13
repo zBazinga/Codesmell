@@ -1,0 +1,34 @@
+Class:UpdateRowsEventInfo
+Field:includedColumnsBeforeUpdate
+Method-name:UpdateRowsEventInfo
+Method-returnType:null
+Method-parameters:[TableInfo tableInfo, Long timestamp, String binlogFilename, Long binlogPosition, UpdateRowsEventData data]
+MethodInvocation:getIncludedColumns
+MethodInvocation:getRows
+MethodInvocation:getIncludedColumnsBeforeUpdate
+Method-name:getIncludedColumnsBeforeUpdate
+Method-returnType:BitSet
+Method-parameters:[]
+Method-name:writeRow
+Method-returnType:void
+Method-parameters:[Map.Entry<Serializable[],Serializable[]> row, BitSet includedColumns, UpdateRowsWriter updateRowsWriter]
+MethodInvocation:writeArrayFieldStart
+MethodInvocation:nextSetBit
+MethodInvocation:writeStartObject
+MethodInvocation:writeNumberField
+MethodInvocation:getColumnByIndex
+MethodInvocation:writeStringField
+MethodInvocation:getName
+MethodInvocation:getType
+MethodInvocation:writeNumberField
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:writeNullField
+MethodInvocation:writeObjectField
+MethodInvocation:getWritableObject
+MethodInvocation:writeNullField
+MethodInvocation:writeObjectField
+MethodInvocation:getWritableObject
+MethodInvocation:writeEndObject
+MethodInvocation:nextSetBit
+MethodInvocation:writeEndArray

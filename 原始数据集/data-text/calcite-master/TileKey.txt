@@ -1,0 +1,31 @@
+Class:TileKey
+Field:lattice
+Field:dimensions
+Field:measures
+Method-name:TileKey
+Method-returnType:null
+Method-parameters:[Lattice lattice, ImmutableBitSet dimensions, ImmutableList<Lattice.Measure> measures]
+FieldAccess:lattice
+FieldAccess:dimensions
+FieldAccess:measures
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+FieldAccess:lattice
+MethodInvocation:equals
+FieldAccess:dimensions
+MethodInvocation:equals
+FieldAccess:measures
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:allSatisfiable
+Method-returnType:boolean
+Method-parameters:[List<Lattice.Measure> measureList, MaterializationService materializationService]
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:argBitSet

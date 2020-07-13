@@ -1,0 +1,84 @@
+Class:ProtectedTermsList
+Field:LOGGER
+MethodInvocation:getLogger
+Field:description
+Field:termsList
+Field:location
+Field:internalList
+Field:enabled
+Method-name:ProtectedTermsList
+Method-returnType:null
+Method-parameters:[String description, List<String> termList, String location, boolean internalList]
+FieldAccess:description
+MethodInvocation:requireNonNull
+FieldAccess:termsList
+MethodInvocation:requireNonNull
+FieldAccess:location
+MethodInvocation:requireNonNull
+FieldAccess:internalList
+Method-name:ProtectedTermsList
+Method-returnType:null
+Method-parameters:[String description, List<String> termList, String location]
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:getTermList
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:getLocation
+Method-returnType:String
+Method-parameters:[]
+Method-name:getTermListing
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:join
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[ProtectedTermsList otherList]
+MethodInvocation:compareTo
+MethodInvocation:getDescription
+MethodInvocation:getDescription
+Method-name:isInternalList
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setEnabled
+Method-returnType:void
+Method-parameters:[boolean enabled]
+FieldAccess:enabled
+Method-name:isEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:createAndWriteHeading
+Method-returnType:boolean
+Method-parameters:[String newDescription]
+MethodInvocation:addProtectedTerm
+Method-name:addProtectedTerm
+Method-returnType:boolean
+Method-parameters:[String term]
+MethodInvocation:addProtectedTerm
+Method-name:addProtectedTerm
+Method-returnType:boolean
+Method-parameters:[String term, boolean create]
+MethodInvocation:requireNonNull
+MethodInvocation:of
+MethodInvocation:newBufferedWriter
+MethodInvocation:write
+MethodInvocation:add
+MethodInvocation:warn
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+FieldAccess:location
+MethodInvocation:equals
+FieldAccess:description
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:removeProtectedTermsList
+Method-returnType:boolean
+Method-parameters:[ProtectedTermsLoader protectedTermsLoader]
+MethodInvocation:setEnabled
+MethodInvocation:remove
+MethodInvocation:getProtectedTermsLists

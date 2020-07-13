@@ -1,0 +1,130 @@
+Class:SObjectBatch
+Field:SOBJECT_TYPE_PARAM
+Field:Method
+Field:MAX_BATCH
+Field:serialVersionUID
+Field:apiPrefix
+Field:batchRequests
+Field:version
+Method-name:SObjectBatch
+Method-returnType:null
+Method-parameters:[final String apiVersion]
+MethodInvocation:requireNonNull
+MethodInvocation:create
+MethodInvocation:requireAtLeast
+FieldAccess:apiPrefix
+Method-name:composeFieldsParameter
+Method-returnType:String
+Method-parameters:[final String... fields]
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:joining
+Method-name:addCreate
+Method-returnType:SObjectBatch
+Method-parameters:[final AbstractDescribedSObjectBase data]
+MethodInvocation:addBatchRequest
+MethodInvocation:typeOf
+Method-name:addDelete
+Method-returnType:SObjectBatch
+Method-parameters:[final String type, final String id]
+MethodInvocation:addBatchRequest
+MethodInvocation:rowBaseUrl
+Method-name:addGeneric
+Method-returnType:SObjectBatch
+Method-parameters:[final Method method, final String url]
+MethodInvocation:addGeneric
+Method-name:addGeneric
+Method-returnType:SObjectBatch
+Method-parameters:[final Method method, final String url, final Object richInput]
+MethodInvocation:addBatchRequest
+Method-name:addGet
+Method-returnType:SObjectBatch
+Method-parameters:[final String type, final String id, final String... fields]
+MethodInvocation:composeFieldsParameter
+MethodInvocation:addBatchRequest
+MethodInvocation:rowBaseUrl
+Method-name:addGetByExternalId
+Method-returnType:SObjectBatch
+Method-parameters:[final String type, final String fieldName, final String fieldValue]
+MethodInvocation:addBatchRequest
+MethodInvocation:rowBaseUrl
+Method-name:addGetRelated
+Method-returnType:SObjectBatch
+Method-parameters:[final String type, final String id, final String relation, final String... fields]
+MethodInvocation:requireAtLeast
+MethodInvocation:composeFieldsParameter
+MethodInvocation:addBatchRequest
+MethodInvocation:rowBaseUrl
+MethodInvocation:notEmpty
+Method-name:addLimits
+Method-returnType:SObjectBatch
+Method-parameters:[]
+MethodInvocation:addBatchRequest
+Method-name:addQuery
+Method-returnType:SObjectBatch
+Method-parameters:[final String query]
+MethodInvocation:addBatchRequest
+MethodInvocation:notEmpty
+Method-name:addQueryAll
+Method-returnType:SObjectBatch
+Method-parameters:[final String query]
+MethodInvocation:addBatchRequest
+MethodInvocation:notEmpty
+Method-name:addSearch
+Method-returnType:SObjectBatch
+Method-parameters:[final String searchString]
+MethodInvocation:addBatchRequest
+MethodInvocation:notEmpty
+Method-name:addUpdate
+Method-returnType:SObjectBatch
+Method-parameters:[final String type, final String id, final AbstractSObjectBase data]
+MethodInvocation:addBatchRequest
+MethodInvocation:rowBaseUrl
+MethodInvocation:notEmpty
+Method-name:addUpdateByExternalId
+Method-returnType:SObjectBatch
+Method-parameters:[final String type, final String fieldName, final String fieldValue, final AbstractSObjectBase data]
+MethodInvocation:addBatchRequest
+MethodInvocation:rowBaseUrl
+Method-name:addUpsertByExternalId
+Method-returnType:SObjectBatch
+Method-parameters:[final String type, final String fieldName, final String fieldValue, final AbstractSObjectBase data]
+MethodInvocation:addUpdateByExternalId
+Method-name:getBatchRequests
+Method-returnType:List<BatchRequest>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+Method-name:getVersion
+Method-returnType:Version
+Method-parameters:[]
+Method-name:objectTypes
+Method-returnType:Class[]
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:concat
+MethodInvocation:of
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toSet
+MethodInvocation:toArray
+MethodInvocation:size
+Method-name:addBatchRequest
+Method-returnType:void
+Method-parameters:[final BatchRequest batchRequest]
+MethodInvocation:size
+MethodInvocation:add
+Method-name:rowBaseUrl
+Method-returnType:String
+Method-parameters:[final String type, final String id]
+MethodInvocation:notEmpty
+MethodInvocation:notEmpty
+Method-name:rowBaseUrl
+Method-returnType:String
+Method-parameters:[final String type, final String fieldName, final String fieldValue]
+MethodInvocation:notEmpty
+MethodInvocation:notEmpty
+MethodInvocation:encode
+MethodInvocation:notEmpty
+MethodInvocation:name

@@ -1,0 +1,75 @@
+Class:UserKeysGroup
+Field:keyGroupId
+Field:identityKey
+Field:keys
+Field:ephemeralKeys
+Method-name:UserKeysGroup
+Method-returnType:null
+Method-parameters:[int keyGroupId, PublicKey identityKey, PublicKey[] keys, PublicKey[] ephemeralKeys]
+FieldAccess:keyGroupId
+FieldAccess:identityKey
+FieldAccess:keys
+FieldAccess:ephemeralKeys
+Method-name:UserKeysGroup
+Method-returnType:null
+Method-parameters:[byte[] data]
+MethodInvocation:load
+Method-name:BY_KEY_GROUP
+Method-returnType:Predicate<UserKeysGroup>
+Method-parameters:[final int keyGroupId]
+Method-name:apply
+Method-returnType:boolean
+Method-parameters:[UserKeysGroup keysGroup]
+MethodInvocation:getKeyGroupId
+Method-name:getKeyGroupId
+Method-returnType:int
+Method-parameters:[]
+Method-name:getIdentityKey
+Method-returnType:PublicKey
+Method-parameters:[]
+Method-name:getKeys
+Method-returnType:PublicKey[]
+Method-parameters:[]
+Method-name:getEphemeralKeys
+Method-returnType:PublicKey[]
+Method-parameters:[]
+Method-name:addPublicKey
+Method-returnType:UserKeysGroup
+Method-parameters:[PublicKey publicKey]
+FieldAccess:ephemeralKeys
+MethodInvocation:getKeyId
+MethodInvocation:getKeyId
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:toArray
+MethodInvocation:size
+Method-name:parse
+Method-returnType:void
+Method-parameters:[BserValues values]
+MethodInvocation:getInt
+MethodInvocation:getBytes
+MethodInvocation:getRepeatedBytes
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getRepeatedBytes
+MethodInvocation:size
+MethodInvocation:get
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[BserWriter writer]
+MethodInvocation:writeInt
+MethodInvocation:writeBytes
+MethodInvocation:toByteArray
+MethodInvocation:writeBytes
+MethodInvocation:toByteArray
+MethodInvocation:writeBytes
+MethodInvocation:toByteArray
+Method-name:addUserKeyGroup
+Method-returnType:UserKeys
+Method-parameters:[UserKeys userKeys]
+MethodInvocation:getUserKeysGroups
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:getUid
+MethodInvocation:toArray
+MethodInvocation:size

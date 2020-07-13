@@ -1,0 +1,46 @@
+Class:BayesPackage
+Field:trees
+Field:namespace
+Method-name:BayesPackage
+Method-returnType:null
+Method-parameters:[String namespace]
+FieldAccess:trees
+FieldAccess:namespace
+Method-name:listJunctionTrees
+Method-returnType:Collection<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:addJunctionTree
+Method-returnType:void
+Method-parameters:[String name, JunctionTree tree]
+MethodInvocation:put
+Method-name:getJunctionTree
+Method-returnType:JunctionTree
+Method-parameters:[String name]
+MethodInvocation:get
+Method-name:removeJunctionTree
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:remove
+Method-name:getResourceType
+Method-returnType:ResourceType
+Method-parameters:[]
+Method-name:add
+Method-returnType:void
+Method-parameters:[JunctionTree processedResource]
+MethodInvocation:addJunctionTree
+MethodInvocation:getName
+Method-name:iterator
+Method-returnType:Iterator<JunctionTree>
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:values
+Method-name:merge
+Method-returnType:void
+Method-parameters:[KieBase kieBase, KiePackage kiePkg, BayesWeaverService bayesWeaverService]
+MethodInvocation:computeIfAbsent
+MethodInvocation:getResourceTypePackages
+MethodInvocation:getName
+MethodInvocation:listJunctionTrees
+MethodInvocation:addJunctionTree
+MethodInvocation:getJunctionTree

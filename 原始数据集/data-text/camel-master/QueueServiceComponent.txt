@@ -1,0 +1,34 @@
+Class:QueueServiceComponent
+Field:MISSING_QUEUE_CREDNTIALS_EXCEPTION_MESSAGE
+Field:configuration
+Method-name:createEndpoint
+Method-returnType:Endpoint
+Method-parameters:[String uri, String remaining, Map<String,Object> parameters]
+FieldAccess:configuration
+MethodInvocation:copy
+FieldAccess:configuration
+MethodInvocation:split
+MethodInvocation:setAccountName
+MethodInvocation:setQueueName
+MethodInvocation:setProperties
+MethodInvocation:checkAndSetRegistryClient
+MethodInvocation:checkCredentials
+MethodInvocation:getOperation
+Method-name:getConfiguration
+Method-returnType:QueueServiceConfiguration
+Method-parameters:[]
+Method-name:setConfiguration
+Method-returnType:void
+Method-parameters:[QueueServiceConfiguration configuration]
+FieldAccess:configuration
+Method-name:checkAndSetRegistryClient
+Method-returnType:void
+Method-parameters:[QueueServiceConfiguration configuration]
+MethodInvocation:findByType
+MethodInvocation:getRegistry
+MethodInvocation:getCamelContext
+MethodInvocation:size
+MethodInvocation:setAzureQueueClient
+MethodInvocation:get
+MethodInvocation:findFirst
+MethodInvocation:stream

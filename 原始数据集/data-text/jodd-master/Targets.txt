@@ -1,0 +1,84 @@
+Class:Targets
+Field:targets
+Method-name:Targets
+Method-returnType:null
+Method-parameters:[final Object actionOrTarget, final ScopeData scopeData]
+MethodInvocation:ofValue
+Method-name:Targets
+Method-returnType:null
+Method-parameters:[final ActionRequest actionRequest]
+MethodInvocation:makeTargets
+MethodInvocation:ofValue
+MethodInvocation:getAction
+MethodInvocation:getScopeData
+MethodInvocation:getActionRuntime
+MethodInvocation:getMethodParams
+MethodInvocation:getActionRuntime
+Method-name:forEachTarget
+Method-returnType:void
+Method-parameters:[final Consumer<Target> targetConsumer]
+MethodInvocation:accept
+Method-name:forEachTargetAndIn
+Method-returnType:void
+Method-parameters:[final MadvocScope scope, final BiConsumer<Target,InjectionPoint> biConsumer]
+MethodInvocation:scopeData
+MethodInvocation:in
+MethodInvocation:in
+MethodInvocation:scope
+MethodInvocation:accept
+Method-name:forEachTargetAndIn
+Method-returnType:void
+Method-parameters:[final BiConsumer<Target,InjectionPoint> biConsumer]
+MethodInvocation:scopeData
+MethodInvocation:in
+MethodInvocation:in
+MethodInvocation:accept
+Method-name:forEachTargetAndOut
+Method-returnType:void
+Method-parameters:[final MadvocScope scope, final BiConsumer<Target,InjectionPoint> biConsumer]
+MethodInvocation:scopeData
+MethodInvocation:out
+MethodInvocation:out
+MethodInvocation:scope
+MethodInvocation:accept
+Method-name:extractParametersValues
+Method-returnType:Object[]
+Method-parameters:[]
+MethodInvocation:value
+Method-name:makeTargets
+Method-returnType:Target[]
+Method-parameters:[final Target actionTarget, final MethodParam[] methodParams]
+MethodInvocation:value
+MethodInvocation:type
+MethodInvocation:annotationType
+MethodInvocation:inspectClassScopesWithCache
+MethodInvocation:inspector
+MethodInvocation:scopeData
+MethodInvocation:ofValue
+MethodInvocation:createActionMethodArgument
+MethodInvocation:annotationType
+MethodInvocation:ofMethodParam
+MethodInvocation:createActionMethodArgument
+MethodInvocation:ofMethodParam
+MethodInvocation:createActionMethodArgument
+Method-name:createActionMethodArgument
+Method-returnType:Object
+Method-parameters:[final Class type, final Object action]
+MethodInvocation:getEnclosingClass
+MethodInvocation:isStatic
+MethodInvocation:getModifiers
+MethodInvocation:newInstance
+MethodInvocation:getDeclaredConstructor
+MethodInvocation:getDeclaringClass
+MethodInvocation:setAccessible
+MethodInvocation:newInstance
+Method-name:injectAttributes
+Method-returnType:void
+Method-parameters:[final HttpServletRequest servletRequest, RequestScope requestScope]
+MethodInvocation:getAttributeNames
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:forEachTargetAndIn
+MethodInvocation:matchedName
+MethodInvocation:getAttribute
+MethodInvocation:writeValue

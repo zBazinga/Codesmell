@@ -1,0 +1,52 @@
+Class:DestBeanCreator
+Field:pluggedStrategies
+Field:availableStrategies
+Field:constructionStrategies
+Field:beanContainer
+Method-name:DestBeanCreator
+Method-returnType:null
+Method-parameters:[BeanContainer beanContainer]
+FieldAccess:constructionStrategies
+FieldAccess:beanContainer
+FieldAccess:availableStrategies
+MethodInvocation:byNoArgObjectConstructor
+FieldAccess:constructionStrategies
+MethodInvocation:byCreateMethod
+FieldAccess:constructionStrategies
+MethodInvocation:byGetInstance
+FieldAccess:constructionStrategies
+MethodInvocation:xmlGregorianCalendar
+FieldAccess:constructionStrategies
+MethodInvocation:byInterface
+FieldAccess:constructionStrategies
+MethodInvocation:xmlBeansBased
+FieldAccess:constructionStrategies
+MethodInvocation:jaxbBeansBased
+FieldAccess:constructionStrategies
+MethodInvocation:byFactory
+FieldAccess:constructionStrategies
+MethodInvocation:byConstructor
+FieldAccess:constructionStrategies
+Method-name:create
+Method-returnType:T
+Method-parameters:[Class<T> targetClass]
+MethodInvocation:create
+Method-name:create
+Method-returnType:Object
+Method-parameters:[Class<?> targetClass, Class<?> alternateClass]
+MethodInvocation:create
+Method-name:create
+Method-returnType:Object
+Method-parameters:[BeanCreationDirective directive]
+MethodInvocation:applyStrategies
+MethodInvocation:applyStrategies
+MethodInvocation:asList
+Method-name:setStoredFactories
+Method-returnType:void
+Method-parameters:[Map<String,BeanFactory> factories]
+MethodInvocation:setStoredFactories
+MethodInvocation:byFactory
+Method-name:addPluggedStrategy
+Method-returnType:void
+Method-parameters:[BeanCreationStrategy strategy]
+MethodInvocation:add

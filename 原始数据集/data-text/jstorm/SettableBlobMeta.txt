@@ -1,0 +1,220 @@
+Class:SettableBlobMeta
+Field:STRUCT_DESC
+Field:REPLICATION_FACTOR_FIELD_DESC
+Field:schemes
+MethodInvocation:put
+MethodInvocation:put
+Field:replication_factor
+Method-name:createBlob
+Method-returnType:void
+Method-parameters:[String key, byte[] data, BlobStore blobStore]
+MethodInvocation:createBlob
+MethodInvocation:write
+MethodInvocation:close
+MethodInvocation:cancel
+Field:_Fields
+MethodInvocation:REPLICATION_FACTOR
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:__REPLICATION_FACTOR_ISSET_ID
+Field:__isset_bitfield
+Field:optionals
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:SettableBlobMeta
+Method-returnType:null
+Method-parameters:[]
+Method-name:SettableBlobMeta
+Method-returnType:null
+Method-parameters:[SettableBlobMeta other]
+FieldAccess:replication_factor
+Method-name:deepCopy
+Method-returnType:SettableBlobMeta
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:set_replication_factor_isSet
+FieldAccess:replication_factor
+Method-name:get_replication_factor
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:replication_factor
+Method-name:set_replication_factor
+Method-returnType:void
+Method-parameters:[int replication_factor]
+FieldAccess:replication_factor
+MethodInvocation:set_replication_factor_isSet
+Method-name:unset_replication_factor
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clearBit
+Method-name:is_set_replication_factor
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:testBit
+Method-name:set_replication_factor_isSet
+Method-returnType:void
+Method-parameters:[boolean value]
+MethodInvocation:setBit
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, Object value]
+MethodInvocation:unset_replication_factor
+MethodInvocation:set_replication_factor
+Method-name:getFieldValue
+Method-returnType:Object
+Method-parameters:[_Fields field]
+MethodInvocation:valueOf
+MethodInvocation:get_replication_factor
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:is_set_replication_factor
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[SettableBlobMeta that]
+MethodInvocation:is_set_replication_factor
+MethodInvocation:is_set_replication_factor
+FieldAccess:replication_factor
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:is_set_replication_factor
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[SettableBlobMeta other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:is_set_replication_factor
+MethodInvocation:is_set_replication_factor
+MethodInvocation:is_set_replication_factor
+MethodInvocation:compareTo
+FieldAccess:replication_factor
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:is_set_replication_factor
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:replication_factor
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:SettableBlobMetaStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:SettableBlobMetaStandardScheme
+Method-parameters:[]
+Class:SettableBlobMetaStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, SettableBlobMeta struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readI32
+MethodInvocation:set_replication_factor_isSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, SettableBlobMeta struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:is_set_replication_factor
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeI32
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:SettableBlobMetaTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:SettableBlobMetaTupleScheme
+Method-parameters:[]
+Class:SettableBlobMetaTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, SettableBlobMeta struct]
+MethodInvocation:is_set_replication_factor
+MethodInvocation:set
+MethodInvocation:writeBitSet
+MethodInvocation:is_set_replication_factor
+MethodInvocation:writeI32
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, SettableBlobMeta struct]
+MethodInvocation:readBitSet
+MethodInvocation:get
+MethodInvocation:readI32
+MethodInvocation:set_replication_factor_isSet

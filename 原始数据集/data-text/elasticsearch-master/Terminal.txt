@@ -1,0 +1,164 @@
+Class:Terminal
+Field:ERROR_WRITER
+MethodInvocation:newErrorWriter
+Field:DEFAULT
+MethodInvocation:isSupported
+Method-name:newErrorWriter
+Method-returnType:PrintWriter
+Method-parameters:[]
+Method-name:warnAboutIndexBackup
+Method-returnType:void
+Method-parameters:[RemoveCorruptedShardDataCommand removeCorruptedShardDataCommand]
+MethodInvocation:println
+MethodInvocation:println
+MethodInvocation:println
+MethodInvocation:println
+MethodInvocation:println
+Field:Verbosity
+Field:verbosity
+Field:lineSeparator
+Method-name:Terminal
+Method-returnType:null
+Method-parameters:[String lineSeparator]
+FieldAccess:lineSeparator
+Method-name:setVerbosity
+Method-returnType:void
+Method-parameters:[Verbosity verbosity]
+FieldAccess:verbosity
+Method-name:readText
+Method-returnType:String
+Method-parameters:[String prompt]
+Method-name:readSecret
+Method-returnType:char[]
+Method-parameters:[String prompt]
+Method-name:readSecret
+Method-returnType:char[]
+Method-parameters:[String prompt, int maxLength]
+MethodInvocation:readSecret
+MethodInvocation:fill
+Method-name:getWriter
+Method-returnType:PrintWriter
+Method-parameters:[]
+Method-name:getErrorWriter
+Method-returnType:PrintWriter
+Method-parameters:[]
+Method-name:println
+Method-returnType:void
+Method-parameters:[String msg]
+MethodInvocation:println
+Method-name:println
+Method-returnType:void
+Method-parameters:[Verbosity verbosity, String msg]
+MethodInvocation:print
+Method-name:print
+Method-returnType:void
+Method-parameters:[Verbosity verbosity, String msg]
+MethodInvocation:print
+Method-name:print
+Method-returnType:void
+Method-parameters:[Verbosity verbosity, String msg, boolean isError]
+MethodInvocation:isPrintable
+MethodInvocation:getErrorWriter
+MethodInvocation:getWriter
+MethodInvocation:print
+MethodInvocation:flush
+Method-name:errorPrint
+Method-returnType:void
+Method-parameters:[Verbosity verbosity, String msg]
+MethodInvocation:print
+Method-name:errorPrintln
+Method-returnType:void
+Method-parameters:[String msg]
+MethodInvocation:errorPrintln
+Method-name:errorPrintln
+Method-returnType:void
+Method-parameters:[Verbosity verbosity, String msg]
+MethodInvocation:errorPrint
+Method-name:isPrintable
+Method-returnType:boolean
+Method-parameters:[Verbosity verbosity]
+MethodInvocation:ordinal
+FieldAccess:verbosity
+MethodInvocation:ordinal
+Method-name:promptYesNo
+Method-returnType:boolean
+Method-parameters:[String prompt, boolean defaultYes]
+MethodInvocation:readText
+MethodInvocation:isEmpty
+MethodInvocation:toLowerCase
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:errorPrintln
+Method-name:readLineToCharArray
+Method-returnType:char[]
+Method-parameters:[Reader reader, int maxLength]
+MethodInvocation:read
+MethodInvocation:fill
+MethodInvocation:copyOf
+MethodInvocation:fill
+Method-name:flush
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:flush
+MethodInvocation:getWriter
+MethodInvocation:flush
+MethodInvocation:getErrorWriter
+Class:ConsoleTerminal
+Field:CONSOLE
+MethodInvocation:console
+Method-name:ConsoleTerminal
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:lineSeparator
+Method-name:isSupported
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getWriter
+Method-returnType:PrintWriter
+Method-parameters:[]
+MethodInvocation:writer
+Method-name:readText
+Method-returnType:String
+Method-parameters:[String prompt]
+MethodInvocation:readLine
+Method-name:readSecret
+Method-returnType:char[]
+Method-parameters:[String prompt]
+MethodInvocation:readPassword
+Class:SystemTerminal
+Field:WRITER
+MethodInvocation:newWriter
+Field:reader
+Method-name:SystemTerminal
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:lineSeparator
+Method-name:newWriter
+Method-returnType:PrintWriter
+Method-parameters:[]
+Method-name:getReader
+Method-returnType:BufferedReader
+Method-parameters:[]
+MethodInvocation:defaultCharset
+Method-name:getWriter
+Method-returnType:PrintWriter
+Method-parameters:[]
+Method-name:readText
+Method-returnType:String
+Method-parameters:[String text]
+MethodInvocation:print
+MethodInvocation:getErrorWriter
+MethodInvocation:readLine
+MethodInvocation:getReader
+Method-name:readSecret
+Method-returnType:char[]
+Method-parameters:[String text]
+MethodInvocation:toCharArray
+MethodInvocation:readText
+Method-name:readSecret
+Method-returnType:char[]
+Method-parameters:[String text, int maxLength]
+MethodInvocation:println
+MethodInvocation:getErrorWriter
+MethodInvocation:readLineToCharArray
+MethodInvocation:getReader

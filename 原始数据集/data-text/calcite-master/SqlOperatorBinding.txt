@@ -1,0 +1,75 @@
+Class:SqlOperatorBinding
+Field:typeFactory
+Field:sqlOperator
+Method-name:SqlOperatorBinding
+Method-returnType:null
+Method-parameters:[RelDataTypeFactory typeFactory, SqlOperator sqlOperator]
+FieldAccess:typeFactory
+FieldAccess:sqlOperator
+Method-name:getGroupCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:hasFilter
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getOperator
+Method-returnType:SqlOperator
+Method-parameters:[]
+Method-name:getTypeFactory
+Method-returnType:RelDataTypeFactory
+Method-parameters:[]
+Method-name:getStringLiteralOperand
+Method-returnType:String
+Method-parameters:[int ordinal]
+Method-name:getIntLiteralOperand
+Method-returnType:int
+Method-parameters:[int ordinal]
+Method-name:getOperandLiteralValue
+Method-returnType:T
+Method-parameters:[int ordinal, Class<T> clazz]
+Method-name:getOperandLiteralValue
+Method-returnType:Comparable
+Method-parameters:[int ordinal]
+MethodInvocation:getOperandLiteralValue
+Method-name:isOperandNull
+Method-returnType:boolean
+Method-parameters:[int ordinal, boolean allowCast]
+Method-name:isOperandLiteral
+Method-returnType:boolean
+Method-parameters:[int ordinal, boolean allowCast]
+Method-name:getOperandCount
+Method-returnType:int
+Method-parameters:[]
+Method-name:getOperandType
+Method-returnType:RelDataType
+Method-parameters:[int ordinal]
+Method-name:getOperandMonotonicity
+Method-returnType:SqlMonotonicity
+Method-parameters:[int ordinal]
+Method-name:collectOperandTypes
+Method-returnType:List<RelDataType>
+Method-parameters:[]
+Method-name:get
+Method-returnType:RelDataType
+Method-parameters:[int index]
+MethodInvocation:getOperandType
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getOperandCount
+Method-name:getCursorOperand
+Method-returnType:RelDataType
+Method-parameters:[int ordinal]
+Method-name:getColumnListParamInfo
+Method-returnType:String
+Method-parameters:[int ordinal, String paramName, List<String> columnList]
+Method-name:newError
+Method-returnType:CalciteException
+Method-parameters:[Resources.ExInst<SqlValidatorException> e]
+Method-name:allowAliasUnnestItems
+Method-returnType:boolean
+Method-parameters:[SqlUnnestOperator sqlUnnestOperator]
+MethodInvocation:allowAliasUnnestItems
+MethodInvocation:sqlConformance
+MethodInvocation:config
+MethodInvocation:getValidator

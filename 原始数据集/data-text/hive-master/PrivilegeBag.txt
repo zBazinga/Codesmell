@@ -1,0 +1,237 @@
+Class:PrivilegeBag
+Field:STRUCT_DESC
+Field:PRIVILEGES_FIELD_DESC
+Field:schemes
+MethodInvocation:put
+MethodInvocation:put
+Field:privileges
+Field:_Fields
+MethodInvocation:PRIVILEGES
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:PrivilegeBag
+Method-returnType:null
+Method-parameters:[]
+Method-name:PrivilegeBag
+Method-returnType:null
+Method-parameters:[List<HiveObjectPrivilege> privileges]
+FieldAccess:privileges
+Method-name:PrivilegeBag
+Method-returnType:null
+Method-parameters:[PrivilegeBag other]
+MethodInvocation:isSetPrivileges
+MethodInvocation:size
+MethodInvocation:add
+FieldAccess:privileges
+Method-name:deepCopy
+Method-returnType:PrivilegeBag
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:privileges
+Method-name:getPrivilegesSize
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:privileges
+MethodInvocation:size
+FieldAccess:privileges
+Method-name:getPrivilegesIterator
+Method-returnType:java.util.Iterator<HiveObjectPrivilege>
+Method-parameters:[]
+FieldAccess:privileges
+MethodInvocation:iterator
+FieldAccess:privileges
+Method-name:getPrivileges
+Method-returnType:List<HiveObjectPrivilege>
+Method-parameters:[]
+FieldAccess:privileges
+Method-name:setPrivileges
+Method-returnType:void
+Method-parameters:[List<HiveObjectPrivilege> privileges]
+FieldAccess:privileges
+Method-name:unsetPrivileges
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:privileges
+Method-name:isSetPrivileges
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:privileges
+Method-name:setPrivilegesIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:privileges
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, Object value]
+MethodInvocation:unsetPrivileges
+MethodInvocation:setPrivileges
+Method-name:getFieldValue
+Method-returnType:Object
+Method-parameters:[_Fields field]
+MethodInvocation:getPrivileges
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:isSetPrivileges
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[PrivilegeBag that]
+MethodInvocation:isSetPrivileges
+MethodInvocation:isSetPrivileges
+MethodInvocation:equals
+FieldAccess:privileges
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSetPrivileges
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[PrivilegeBag other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetPrivileges
+MethodInvocation:isSetPrivileges
+MethodInvocation:isSetPrivileges
+MethodInvocation:compareTo
+FieldAccess:privileges
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+FieldAccess:privileges
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:privileges
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:PrivilegeBagStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:PrivilegeBagStandardScheme
+Method-parameters:[]
+Class:PrivilegeBagStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, PrivilegeBag struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readListBegin
+MethodInvocation:read
+MethodInvocation:add
+MethodInvocation:readListEnd
+MethodInvocation:setPrivilegesIsSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, PrivilegeBag struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeListBegin
+MethodInvocation:size
+MethodInvocation:write
+MethodInvocation:writeListEnd
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:PrivilegeBagTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:PrivilegeBagTupleScheme
+Method-parameters:[]
+Class:PrivilegeBagTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, PrivilegeBag struct]
+MethodInvocation:isSetPrivileges
+MethodInvocation:set
+MethodInvocation:writeBitSet
+MethodInvocation:isSetPrivileges
+MethodInvocation:writeI32
+MethodInvocation:size
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, PrivilegeBag struct]
+MethodInvocation:readBitSet
+MethodInvocation:get
+MethodInvocation:readI32
+MethodInvocation:read
+MethodInvocation:add
+MethodInvocation:setPrivilegesIsSet

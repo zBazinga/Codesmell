@@ -1,0 +1,65 @@
+Class:MapJoinKeyObject
+Field:EMPTY_OBJECT_ARRAY
+Field:key
+Method-name:MapJoinKeyObject
+Method-returnType:null
+Method-parameters:[Object[] key]
+FieldAccess:key
+Method-name:MapJoinKeyObject
+Method-returnType:null
+Method-parameters:[]
+Method-name:getKeyObjects
+Method-returnType:Object[]
+Method-parameters:[]
+Method-name:setKeyObjects
+Method-returnType:void
+Method-parameters:[Object[] key]
+FieldAccess:key
+Method-name:getKeyLength
+Method-returnType:int
+Method-parameters:[]
+Method-name:hasAnyNulls
+Method-returnType:boolean
+Method-parameters:[int fieldCount, boolean[] nullsafes]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:writableArrayHashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:read
+Method-returnType:void
+Method-parameters:[MapJoinObjectSerDeContext context, Writable container]
+MethodInvocation:read
+MethodInvocation:getObjectInspector
+MethodInvocation:getSerDe
+MethodInvocation:deserialize
+MethodInvocation:getSerDe
+Method-name:read
+Method-returnType:void
+Method-parameters:[ObjectInspector oi, Object obj]
+MethodInvocation:copyToStandardObject
+MethodInvocation:toArray
+Method-name:write
+Method-returnType:void
+Method-parameters:[MapJoinObjectSerDeContext context, ObjectOutputStream out]
+MethodInvocation:getSerDe
+MethodInvocation:getStandardOI
+MethodInvocation:serialize
+MethodInvocation:write
+Method-name:readFromRow
+Method-returnType:void
+Method-parameters:[Object[] fieldObjs, List<ObjectInspector> keyFieldsOI]
+MethodInvocation:copyToStandardObject
+MethodInvocation:get
+Method-name:getNulls
+Method-returnType:boolean[]
+Method-parameters:[]
+Method-name:readFromVector
+Method-returnType:void
+Method-parameters:[VectorHashKeyWrapperBase kw, VectorExpressionWriter[] keyOutputWriters, VectorHashKeyWrapperBatch keyWrapperBatch]
+MethodInvocation:getWritableKeyValue

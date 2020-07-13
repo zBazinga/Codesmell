@@ -1,0 +1,23 @@
+Class:AvoidSoslInLoopsRule
+Method-name:AvoidSoslInLoopsRule
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:setProperty
+MethodInvocation:setProperty
+MethodInvocation:setProperty
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTSoslExpression node, Object data]
+MethodInvocation:insideLoop
+MethodInvocation:parentNotReturn
+MethodInvocation:parentNotForEach
+MethodInvocation:addViolation
+Method-name:parentNotForEach
+Method-returnType:boolean
+Method-parameters:[ASTSoslExpression node]
+MethodInvocation:getParent
+Method-name:insideLoop
+Method-returnType:boolean
+Method-parameters:[ASTSoslExpression node]
+MethodInvocation:getParent
+MethodInvocation:getParent

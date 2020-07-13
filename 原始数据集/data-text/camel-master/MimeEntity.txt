@@ -1,0 +1,185 @@
+Class:MimeEntity
+Method-name:createSignature
+Method-returnType:byte[]
+Method-parameters:[CMSSignedDataGenerator signer, ApplicationPkcs7SignatureEntity applicationPkcs7SignatureEntity]
+MethodInvocation:writeTo
+MethodInvocation:flush
+MethodInvocation:toByteArray
+MethodInvocation:generate
+MethodInvocation:getEncoded
+Class:NoCloseOutputStream
+Method-name:NoCloseOutputStream
+Method-returnType:null
+Method-parameters:[OutputStream os]
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+Field:UNKNOWN_CONTENT_LENGTH
+Field:RECALCULATE_CONTENT_LENGTH
+Field:isMainBody
+Field:contentTransferEncoding
+Field:contentLength
+Field:headergroup
+Method-name:MimeEntity
+Method-returnType:null
+Method-parameters:[]
+Method-name:isMainBody
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setMainBody
+Method-returnType:void
+Method-parameters:[boolean isMainBody]
+FieldAccess:isMainBody
+Method-name:getContentTypeValue
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getContentType
+MethodInvocation:getValue
+Method-name:setContentType
+Method-returnType:void
+Method-parameters:[ContentType contentType]
+MethodInvocation:toString
+Method-name:setContentType
+Method-returnType:void
+Method-parameters:[Header contentType]
+MethodInvocation:addHeader
+MethodInvocation:removeHeaders
+Method-name:getContentEncodingValue
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getContentEncoding
+MethodInvocation:getValue
+Method-name:setContentEncoding
+Method-returnType:void
+Method-parameters:[Header contentEncoding]
+MethodInvocation:addHeader
+MethodInvocation:removeHeaders
+Method-name:getContentTransferEncodingValue
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getContentTransferEncoding
+MethodInvocation:getValue
+Method-name:getContentTransferEncoding
+Method-returnType:Header
+Method-parameters:[]
+FieldAccess:contentTransferEncoding
+Method-name:setContentTransferEncoding
+Method-returnType:void
+Method-parameters:[final Header contentTransferEncoding]
+FieldAccess:contentTransferEncoding
+MethodInvocation:addHeader
+MethodInvocation:removeHeaders
+Method-name:setContentTransferEncoding
+Method-returnType:void
+Method-parameters:[final String contentTranserEncoding]
+MethodInvocation:setContentTransferEncoding
+Method-name:containsHeader
+Method-returnType:boolean
+Method-parameters:[final String name]
+MethodInvocation:containsHeader
+FieldAccess:headergroup
+Method-name:getHeaders
+Method-returnType:Header[]
+Method-parameters:[final String name]
+MethodInvocation:getHeaders
+FieldAccess:headergroup
+Method-name:getFirstHeader
+Method-returnType:Header
+Method-parameters:[final String name]
+MethodInvocation:getFirstHeader
+FieldAccess:headergroup
+Method-name:getLastHeader
+Method-returnType:Header
+Method-parameters:[final String name]
+MethodInvocation:getLastHeader
+FieldAccess:headergroup
+Method-name:getAllHeaders
+Method-returnType:Header[]
+Method-parameters:[]
+MethodInvocation:getAllHeaders
+FieldAccess:headergroup
+Method-name:addHeader
+Method-returnType:void
+Method-parameters:[final Header header]
+MethodInvocation:addHeader
+FieldAccess:headergroup
+Method-name:addHeader
+Method-returnType:void
+Method-parameters:[final String name, final String value]
+MethodInvocation:notNull
+MethodInvocation:addHeader
+FieldAccess:headergroup
+Method-name:setHeader
+Method-returnType:void
+Method-parameters:[final Header header]
+MethodInvocation:updateHeader
+FieldAccess:headergroup
+Method-name:setHeader
+Method-returnType:void
+Method-parameters:[final String name, final String value]
+MethodInvocation:notNull
+MethodInvocation:updateHeader
+FieldAccess:headergroup
+Method-name:setHeaders
+Method-returnType:void
+Method-parameters:[final Header[] headers]
+MethodInvocation:setHeaders
+FieldAccess:headergroup
+Method-name:removeHeader
+Method-returnType:void
+Method-parameters:[final Header header]
+MethodInvocation:removeHeader
+FieldAccess:headergroup
+Method-name:removeHeaders
+Method-returnType:void
+Method-parameters:[final String name]
+MethodInvocation:iterator
+FieldAccess:headergroup
+MethodInvocation:hasNext
+MethodInvocation:nextHeader
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:remove
+Method-name:removeAllHeaders
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+FieldAccess:headergroup
+Method-name:headerIterator
+Method-returnType:HeaderIterator
+Method-parameters:[]
+MethodInvocation:iterator
+FieldAccess:headergroup
+Method-name:headerIterator
+Method-returnType:HeaderIterator
+Method-parameters:[final String name]
+MethodInvocation:iterator
+FieldAccess:headergroup
+Method-name:isRepeatable
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isStreaming
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isRepeatable
+Method-name:getContentLength
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:writeTo
+FieldAccess:length
+MethodInvocation:toByteArray
+Method-name:getContent
+Method-returnType:InputStream
+Method-parameters:[]
+MethodInvocation:writeTo
+MethodInvocation:flush
+MethodInvocation:toByteArray
+Method-name:getCharset
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getContentType
+MethodInvocation:parse
+MethodInvocation:getValue
+MethodInvocation:getContentType
+MethodInvocation:getCharset
+MethodInvocation:name

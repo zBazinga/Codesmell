@@ -1,0 +1,266 @@
+Class:TTimeRange
+Field:STRUCT_DESC
+Field:MIN_STAMP_FIELD_DESC
+Field:MAX_STAMP_FIELD_DESC
+Field:STANDARD_SCHEME_FACTORY
+Field:TUPLE_SCHEME_FACTORY
+Field:minStamp
+Field:maxStamp
+Method-name:setTimeRange
+Method-returnType:TScan
+Method-parameters:[TScan tScan]
+Field:_Fields
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[java.lang.String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, java.lang.String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:java.lang.String
+Method-parameters:[]
+Field:__MINSTAMP_ISSET_ID
+Field:__MAXSTAMP_ISSET_ID
+Field:__isset_bitfield
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:TTimeRange
+Method-returnType:null
+Method-parameters:[]
+Method-name:TTimeRange
+Method-returnType:null
+Method-parameters:[long minStamp, long maxStamp]
+FieldAccess:minStamp
+MethodInvocation:setMinStampIsSet
+FieldAccess:maxStamp
+MethodInvocation:setMaxStampIsSet
+Method-name:TTimeRange
+Method-returnType:null
+Method-parameters:[TTimeRange other]
+FieldAccess:minStamp
+FieldAccess:maxStamp
+Method-name:deepCopy
+Method-returnType:TTimeRange
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setMinStampIsSet
+FieldAccess:minStamp
+MethodInvocation:setMaxStampIsSet
+FieldAccess:maxStamp
+Method-name:getMinStamp
+Method-returnType:long
+Method-parameters:[]
+FieldAccess:minStamp
+Method-name:setMinStamp
+Method-returnType:TTimeRange
+Method-parameters:[long minStamp]
+FieldAccess:minStamp
+MethodInvocation:setMinStampIsSet
+Method-name:unsetMinStamp
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clearBit
+Method-name:isSetMinStamp
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:testBit
+Method-name:setMinStampIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+MethodInvocation:setBit
+Method-name:getMaxStamp
+Method-returnType:long
+Method-parameters:[]
+FieldAccess:maxStamp
+Method-name:setMaxStamp
+Method-returnType:TTimeRange
+Method-parameters:[long maxStamp]
+FieldAccess:maxStamp
+MethodInvocation:setMaxStampIsSet
+Method-name:unsetMaxStamp
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clearBit
+Method-name:isSetMaxStamp
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:testBit
+Method-name:setMaxStampIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+MethodInvocation:setBit
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, @org.apache.thrift.annotation.Nullable java.lang.Object value]
+MethodInvocation:unsetMinStamp
+MethodInvocation:setMinStamp
+MethodInvocation:unsetMaxStamp
+MethodInvocation:setMaxStamp
+Method-name:getFieldValue
+Method-returnType:java.lang.Object
+Method-parameters:[_Fields field]
+MethodInvocation:getMinStamp
+MethodInvocation:getMaxStamp
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:isSetMinStamp
+MethodInvocation:isSetMaxStamp
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[java.lang.Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[TTimeRange that]
+FieldAccess:minStamp
+FieldAccess:maxStamp
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[TTimeRange other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetMinStamp
+MethodInvocation:isSetMinStamp
+MethodInvocation:isSetMinStamp
+MethodInvocation:compareTo
+FieldAccess:minStamp
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetMaxStamp
+MethodInvocation:isSetMaxStamp
+MethodInvocation:isSetMaxStamp
+MethodInvocation:compareTo
+FieldAccess:maxStamp
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:scheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:scheme
+Method-name:toString
+Method-returnType:java.lang.String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:minStamp
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:maxStamp
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:TTimeRangeStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:TTimeRangeStandardScheme
+Method-parameters:[]
+Class:TTimeRangeStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, TTimeRange struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readI64
+MethodInvocation:setMinStampIsSet
+MethodInvocation:skip
+MethodInvocation:readI64
+MethodInvocation:setMaxStampIsSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:isSetMinStamp
+MethodInvocation:toString
+MethodInvocation:isSetMaxStamp
+MethodInvocation:toString
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, TTimeRange struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeI64
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeI64
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:TTimeRangeTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:TTimeRangeTupleScheme
+Method-parameters:[]
+Class:TTimeRangeTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, TTimeRange struct]
+MethodInvocation:writeI64
+MethodInvocation:writeI64
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, TTimeRange struct]
+MethodInvocation:readI64
+MethodInvocation:setMinStampIsSet
+MethodInvocation:readI64
+MethodInvocation:setMaxStampIsSet
+Method-name:scheme
+Method-returnType:S
+Method-parameters:[org.apache.thrift.protocol.TProtocol proto]
+MethodInvocation:getScheme
+MethodInvocation:equals
+MethodInvocation:getScheme

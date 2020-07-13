@@ -1,0 +1,241 @@
+Class:AbstractPropertyHolder
+Field:log
+MethodInvocation:logger
+Field:parent
+Field:holderColumnOverride
+Field:currentPropertyColumnOverride
+Field:holderJoinColumnOverride
+Field:currentPropertyJoinColumnOverride
+Field:holderJoinTableOverride
+Field:currentPropertyJoinTableOverride
+Field:holderForeignKeyOverride
+Field:currentPropertyForeignKeyOverride
+Field:path
+Field:context
+Field:isInIdClass
+Method-name:AbstractPropertyHolder
+Method-returnType:null
+Method-parameters:[String path, PropertyHolder parent, XClass clazzToProcess, MetadataBuildingContext context]
+FieldAccess:path
+FieldAccess:parent
+FieldAccess:context
+MethodInvocation:buildHierarchyColumnOverride
+Method-name:normalizeCompositePathForLogging
+Method-returnType:String
+Method-parameters:[String attributeName]
+Method-name:normalizeCompositePath
+Method-returnType:String
+Method-parameters:[String attributeName]
+Method-name:locateAttributeConversionInfo
+Method-returnType:AttributeConversionInfo
+Method-parameters:[XProperty property]
+Method-name:locateAttributeConversionInfo
+Method-returnType:AttributeConversionInfo
+Method-parameters:[String path]
+Method-name:resolveAttributeConverterDescriptor
+Method-returnType:ConverterDescriptor
+Method-parameters:[XProperty property]
+MethodInvocation:locateAttributeConversionInfo
+MethodInvocation:isConversionDisabled
+MethodInvocation:makeAttributeConverterDescriptor
+MethodInvocation:buildExceptionFromInstantiationError
+MethodInvocation:debugf
+MethodInvocation:getName
+MethodInvocation:findAutoApplyConverterForAttribute
+MethodInvocation:getAttributeConverterAutoApplyHandler
+MethodInvocation:getMetadataCollector
+Method-name:makeAttributeConverterDescriptor
+Method-returnType:ConverterDescriptor
+Method-parameters:[AttributeConversionInfo conversion]
+MethodInvocation:getConverterClass
+MethodInvocation:getClassmateContext
+MethodInvocation:getBootstrapContext
+Method-name:isInIdClass
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isInIdClass
+Method-name:setInIdClass
+Method-returnType:void
+Method-parameters:[Boolean isInIdClass]
+FieldAccess:isInIdClass
+Method-name:getPath
+Method-returnType:String
+Method-parameters:[]
+Method-name:getContext
+Method-returnType:MetadataBuildingContext
+Method-parameters:[]
+Method-name:setCurrentProperty
+Method-returnType:void
+Method-parameters:[XProperty property]
+FieldAccess:currentPropertyColumnOverride
+FieldAccess:currentPropertyJoinColumnOverride
+FieldAccess:currentPropertyJoinTableOverride
+FieldAccess:currentPropertyForeignKeyOverride
+FieldAccess:currentPropertyColumnOverride
+MethodInvocation:buildColumnOverride
+MethodInvocation:getPath
+MethodInvocation:size
+FieldAccess:currentPropertyColumnOverride
+FieldAccess:currentPropertyColumnOverride
+FieldAccess:currentPropertyJoinColumnOverride
+MethodInvocation:buildJoinColumnOverride
+MethodInvocation:getPath
+MethodInvocation:size
+FieldAccess:currentPropertyJoinColumnOverride
+FieldAccess:currentPropertyJoinColumnOverride
+FieldAccess:currentPropertyJoinTableOverride
+MethodInvocation:buildJoinTableOverride
+MethodInvocation:getPath
+MethodInvocation:size
+FieldAccess:currentPropertyJoinTableOverride
+FieldAccess:currentPropertyJoinTableOverride
+FieldAccess:currentPropertyForeignKeyOverride
+MethodInvocation:buildForeignKeyOverride
+MethodInvocation:getPath
+MethodInvocation:size
+FieldAccess:currentPropertyForeignKeyOverride
+FieldAccess:currentPropertyForeignKeyOverride
+Method-name:getOverriddenColumn
+Method-returnType:Column[]
+Method-parameters:[String propertyName]
+MethodInvocation:getExactOverriddenColumn
+MethodInvocation:contains
+MethodInvocation:getExactOverriddenColumn
+MethodInvocation:replace
+Method-name:getExactOverriddenColumn
+Method-returnType:Column[]
+Method-parameters:[String propertyName]
+MethodInvocation:getExactOverriddenColumn
+MethodInvocation:get
+MethodInvocation:get
+Method-name:getOverriddenJoinColumn
+Method-returnType:JoinColumn[]
+Method-parameters:[String propertyName]
+MethodInvocation:getExactOverriddenJoinColumn
+MethodInvocation:contains
+MethodInvocation:getExactOverriddenJoinColumn
+MethodInvocation:replace
+Method-name:getExactOverriddenJoinColumn
+Method-returnType:JoinColumn[]
+Method-parameters:[String propertyName]
+MethodInvocation:getExactOverriddenJoinColumn
+MethodInvocation:get
+MethodInvocation:get
+Method-name:getOverriddenForeignKey
+Method-returnType:ForeignKey
+Method-parameters:[String propertyName]
+MethodInvocation:getExactOverriddenForeignKey
+MethodInvocation:contains
+MethodInvocation:getExactOverriddenForeignKey
+MethodInvocation:replace
+Method-name:getExactOverriddenForeignKey
+Method-returnType:ForeignKey
+Method-parameters:[String propertyName]
+MethodInvocation:getExactOverriddenForeignKey
+MethodInvocation:get
+MethodInvocation:get
+Method-name:getJoinTable
+Method-returnType:JoinTable
+Method-parameters:[XProperty property]
+MethodInvocation:qualify
+MethodInvocation:getPath
+MethodInvocation:getName
+MethodInvocation:getOverriddenJoinTable
+MethodInvocation:getAnnotation
+Method-name:getOverriddenJoinTable
+Method-returnType:JoinTable
+Method-parameters:[String propertyName]
+MethodInvocation:getExactOverriddenJoinTable
+MethodInvocation:contains
+MethodInvocation:getExactOverriddenJoinTable
+MethodInvocation:replace
+Method-name:getExactOverriddenJoinTable
+Method-returnType:JoinTable
+Method-parameters:[String propertyName]
+MethodInvocation:getExactOverriddenJoinTable
+MethodInvocation:get
+MethodInvocation:get
+Method-name:buildHierarchyColumnOverride
+Method-returnType:void
+Method-parameters:[XClass element]
+MethodInvocation:equals
+MethodInvocation:toXClass
+MethodInvocation:getReflectionManager
+MethodInvocation:getBootstrapContext
+MethodInvocation:isAnnotationPresent
+MethodInvocation:isAnnotationPresent
+MethodInvocation:isAnnotationPresent
+MethodInvocation:buildColumnOverride
+MethodInvocation:getPath
+MethodInvocation:buildJoinColumnOverride
+MethodInvocation:getPath
+MethodInvocation:buildJoinTableOverride
+MethodInvocation:getPath
+MethodInvocation:buildForeignKeyOverride
+MethodInvocation:getPath
+MethodInvocation:putAll
+MethodInvocation:putAll
+MethodInvocation:putAll
+MethodInvocation:putAll
+MethodInvocation:getSuperclass
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+Method-name:buildColumnOverride
+Method-returnType:Map<String,Column[]>
+Method-parameters:[XAnnotatedElement element, String path]
+MethodInvocation:getAnnotation
+MethodInvocation:getAnnotation
+MethodInvocation:value
+MethodInvocation:qualify
+MethodInvocation:name
+MethodInvocation:containsKey
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:column
+MethodInvocation:put
+MethodInvocation:asList
+MethodInvocation:column
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:toArray
+MethodInvocation:getValue
+MethodInvocation:size
+MethodInvocation:getValue
+Method-name:buildJoinColumnOverride
+Method-returnType:Map<String,JoinColumn[]>
+Method-parameters:[XAnnotatedElement element, String path]
+MethodInvocation:buildAssociationOverrides
+MethodInvocation:put
+MethodInvocation:qualify
+MethodInvocation:name
+MethodInvocation:joinColumns
+Method-name:buildForeignKeyOverride
+Method-returnType:Map<String,ForeignKey>
+Method-parameters:[XAnnotatedElement element, String path]
+MethodInvocation:buildAssociationOverrides
+MethodInvocation:put
+MethodInvocation:qualify
+MethodInvocation:name
+MethodInvocation:foreignKey
+Method-name:buildAssociationOverrides
+Method-returnType:AssociationOverride[]
+Method-parameters:[XAnnotatedElement element, String path]
+MethodInvocation:getAnnotation
+MethodInvocation:getAnnotation
+MethodInvocation:value
+Method-name:buildJoinTableOverride
+Method-returnType:Map<String,JoinTable>
+Method-parameters:[XAnnotatedElement element, String path]
+MethodInvocation:buildAssociationOverrides
+FieldAccess:length
+MethodInvocation:joinColumns
+MethodInvocation:put
+MethodInvocation:qualify
+MethodInvocation:name
+MethodInvocation:joinTable
+Method-name:setParentProperty
+Method-returnType:void
+Method-parameters:[String parentProperty]

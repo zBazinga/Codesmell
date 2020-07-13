@@ -1,0 +1,459 @@
+Class:ImmutableBitSet
+Field:COMPARATOR
+MethodInvocation:equals
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:compareTo
+Field:ORDERING
+MethodInvocation:from
+Field:ADDRESS_BITS_PER_WORD
+Field:BITS_PER_WORD
+Field:WORD_MASK
+Field:EMPTY_LONGS
+Field:EMPTY
+Field:FROM_BIT_SET
+Field:words
+Method-name:ImmutableBitSet
+Method-returnType:null
+Method-parameters:[long[] words]
+Method-name:of
+Method-returnType:ImmutableBitSet
+Method-parameters:[]
+Method-name:of
+Method-returnType:ImmutableBitSet
+Method-parameters:[int... bits]
+MethodInvocation:max
+MethodInvocation:wordIndex
+MethodInvocation:wordIndex
+Method-name:of
+Method-returnType:ImmutableBitSet
+Method-parameters:[Iterable<Integer> bits]
+MethodInvocation:max
+MethodInvocation:wordIndex
+MethodInvocation:wordIndex
+Method-name:of
+Method-returnType:ImmutableBitSet
+Method-parameters:[ImmutableIntList bits]
+MethodInvocation:build
+MethodInvocation:addAll
+MethodInvocation:builder
+Method-name:valueOf
+Method-returnType:ImmutableBitSet
+Method-parameters:[long... longs]
+MethodInvocation:copyOf
+Method-name:valueOf
+Method-returnType:ImmutableBitSet
+Method-parameters:[LongBuffer longs]
+MethodInvocation:slice
+MethodInvocation:remaining
+MethodInvocation:get
+MethodInvocation:get
+Method-name:fromBitSet
+Method-returnType:ImmutableBitSet
+Method-parameters:[BitSet input]
+MethodInvocation:of
+MethodInvocation:toIter
+Method-name:range
+Method-returnType:ImmutableBitSet
+Method-parameters:[int fromIndex, int toIndex]
+MethodInvocation:wordIndex
+MethodInvocation:wordIndex
+Method-name:range
+Method-returnType:ImmutableBitSet
+Method-parameters:[int toIndex]
+MethodInvocation:range
+Method-name:wordIndex
+Method-returnType:int
+Method-parameters:[int bitIndex]
+Method-name:powerSet
+Method-returnType:Iterable<ImmutableBitSet>
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:of
+MethodInvocation:of
+MethodInvocation:of
+MethodInvocation:transform
+MethodInvocation:product
+Method-name:get
+Method-returnType:boolean
+Method-parameters:[int bitIndex]
+MethodInvocation:wordIndex
+Method-name:get
+Method-returnType:ImmutableBitSet
+Method-parameters:[int fromIndex, int toIndex]
+MethodInvocation:checkRange
+MethodInvocation:builder
+MethodInvocation:nextSetBit
+MethodInvocation:nextSetBit
+MethodInvocation:set
+MethodInvocation:build
+Method-name:checkRange
+Method-returnType:void
+Method-parameters:[int fromIndex, int toIndex]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:nextSetBit
+MethodInvocation:append
+MethodInvocation:nextSetBit
+MethodInvocation:nextSetBit
+MethodInvocation:nextClearBit
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:intersects
+Method-returnType:boolean
+Method-parameters:[ImmutableBitSet set]
+MethodInvocation:min
+Method-name:cardinality
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:countBits
+Method-name:countBits
+Method-returnType:int
+Method-parameters:[long[] words]
+MethodInvocation:bitCount
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[@Nonnull ImmutableBitSet o]
+MethodInvocation:nextSetBit
+MethodInvocation:nextSetBit
+MethodInvocation:compare
+Method-name:nextSetBit
+Method-returnType:int
+Method-parameters:[int fromIndex]
+MethodInvocation:wordIndex
+MethodInvocation:numberOfTrailingZeros
+Method-name:nextClearBit
+Method-returnType:int
+Method-parameters:[int fromIndex]
+MethodInvocation:wordIndex
+MethodInvocation:numberOfTrailingZeros
+Method-name:previousClearBit
+Method-returnType:int
+Method-parameters:[int fromIndex]
+MethodInvocation:wordIndex
+MethodInvocation:numberOfLeadingZeros
+Method-name:iterator
+Method-returnType:Iterator<Integer>
+Method-parameters:[]
+Field:i
+MethodInvocation:nextSetBit
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:next
+Method-returnType:Integer
+Method-parameters:[]
+MethodInvocation:nextSetBit
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]
+Method-name:toList
+Method-returnType:List<Integer>
+Method-parameters:[]
+MethodInvocation:nextSetBit
+MethodInvocation:nextSetBit
+MethodInvocation:add
+Method-name:asList
+Method-returnType:List<Integer>
+Method-parameters:[]
+Method-name:get
+Method-returnType:Integer
+Method-parameters:[int index]
+MethodInvocation:nth
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:cardinality
+Method-name:iterator
+Method-returnType:Iterator<Integer>
+Method-parameters:[]
+MethodInvocation:iterator
+Method-name:asSet
+Method-returnType:Set<Integer>
+Method-parameters:[]
+Method-name:iterator
+Method-returnType:Iterator<Integer>
+Method-parameters:[]
+MethodInvocation:iterator
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:cardinality
+Method-name:contains
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:get
+Method-name:toArray
+Method-returnType:int[]
+Method-parameters:[]
+MethodInvocation:cardinality
+MethodInvocation:nextSetBit
+MethodInvocation:nextSetBit
+Method-name:toLongArray
+Method-returnType:long[]
+Method-parameters:[]
+MethodInvocation:clone
+Method-name:union
+Method-returnType:ImmutableBitSet
+Method-parameters:[BitSet other]
+MethodInvocation:build
+MethodInvocation:addAll
+MethodInvocation:rebuild
+MethodInvocation:toIter
+Method-name:union
+Method-returnType:ImmutableBitSet
+Method-parameters:[ImmutableBitSet other]
+MethodInvocation:build
+MethodInvocation:addAll
+MethodInvocation:rebuild
+Method-name:union
+Method-returnType:ImmutableBitSet
+Method-parameters:[Iterable<? extends ImmutableBitSet> sets]
+MethodInvocation:builder
+MethodInvocation:addAll
+MethodInvocation:build
+Method-name:except
+Method-returnType:ImmutableBitSet
+Method-parameters:[ImmutableBitSet that]
+MethodInvocation:rebuild
+MethodInvocation:removeAll
+MethodInvocation:build
+Method-name:intersect
+Method-returnType:ImmutableBitSet
+Method-parameters:[ImmutableBitSet that]
+MethodInvocation:rebuild
+MethodInvocation:intersect
+MethodInvocation:build
+Method-name:contains
+Method-returnType:boolean
+Method-parameters:[ImmutableBitSet set1]
+MethodInvocation:nextSetBit
+MethodInvocation:nextSetBit
+MethodInvocation:get
+Method-name:indexOf
+Method-returnType:int
+Method-parameters:[int bit]
+MethodInvocation:nextSetBit
+MethodInvocation:nextSetBit
+Method-name:closure
+Method-returnType:SortedMap<Integer,ImmutableBitSet>
+Method-parameters:[SortedMap<Integer,ImmutableBitSet> equivalence]
+MethodInvocation:isEmpty
+MethodInvocation:of
+MethodInvocation:lastKey
+MethodInvocation:values
+MethodInvocation:max
+MethodInvocation:length
+MethodInvocation:size
+MethodInvocation:firstKey
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:of
+Method-name:length
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:numberOfLeadingZeros
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[ImmutableBitSet bitSet]
+MethodInvocation:rebuild
+Method-name:rebuild
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:nth
+Method-returnType:int
+Method-parameters:[int n]
+MethodInvocation:bitCount
+Method-name:set
+Method-returnType:ImmutableBitSet
+Method-parameters:[int i]
+MethodInvocation:union
+MethodInvocation:of
+Method-name:set
+Method-returnType:ImmutableBitSet
+Method-parameters:[int i, boolean b]
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:clear
+Method-name:setIf
+Method-returnType:ImmutableBitSet
+Method-parameters:[int bit, boolean condition]
+MethodInvocation:set
+Method-name:clear
+Method-returnType:ImmutableBitSet
+Method-parameters:[int i]
+MethodInvocation:except
+MethodInvocation:of
+Method-name:clearIf
+Method-returnType:ImmutableBitSet
+Method-parameters:[int i, boolean condition]
+MethodInvocation:except
+MethodInvocation:of
+Method-name:toBitSet
+Method-returnType:BitSet
+Method-parameters:[]
+MethodInvocation:of
+Method-name:permute
+Method-returnType:ImmutableBitSet
+Method-parameters:[Map<Integer,Integer> map]
+MethodInvocation:builder
+MethodInvocation:nextSetBit
+MethodInvocation:nextSetBit
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:build
+Method-name:permute
+Method-returnType:Iterable<ImmutableBitSet>
+Method-parameters:[Iterable<ImmutableBitSet> bitSets, final Map<Integer,Integer> map]
+MethodInvocation:transform
+MethodInvocation:permute
+Method-name:shift
+Method-returnType:ImmutableBitSet
+Method-parameters:[int offset]
+MethodInvocation:builder
+MethodInvocation:nextSetBit
+MethodInvocation:nextSetBit
+MethodInvocation:set
+MethodInvocation:build
+Method-name:copy
+Method-returnType:Aggregate
+Method-parameters:[RelTraitSet traitSet, RelNode input, boolean indicator, List<ImmutableBitSet> groupSets, List<AggregateCall> aggCalls, Aggregate aggregate]
+MethodInvocation:checkIndicator
+MethodInvocation:copy
+Class:Closure
+Field:equivalence
+Field:closure
+Method-name:Closure
+Method-returnType:null
+Method-parameters:[SortedMap<Integer,ImmutableBitSet> equivalence]
+FieldAccess:equivalence
+MethodInvocation:copyOf
+MethodInvocation:keySet
+MethodInvocation:computeClosure
+Method-name:computeClosure
+Method-returnType:ImmutableBitSet
+Method-parameters:[int pos]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:nextSetBit
+MethodInvocation:nextSetBit
+MethodInvocation:union
+MethodInvocation:computeClosure
+MethodInvocation:put
+MethodInvocation:nextSetBit
+MethodInvocation:nextSetBit
+MethodInvocation:put
+Class:Builder
+Field:words
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[long[] words]
+FieldAccess:words
+Method-name:build
+Method-returnType:ImmutableBitSet
+Method-parameters:[]
+FieldAccess:words
+FieldAccess:words
+Method-name:buildAndReset
+Method-returnType:ImmutableBitSet
+Method-parameters:[]
+FieldAccess:words
+FieldAccess:words
+Method-name:build
+Method-returnType:ImmutableBitSet
+Method-parameters:[ImmutableBitSet bitSet]
+MethodInvocation:wouldEqual
+MethodInvocation:build
+Method-name:set
+Method-returnType:Builder
+Method-parameters:[int bit]
+MethodInvocation:wordIndex
+MethodInvocation:copyOf
+Method-name:get
+Method-returnType:boolean
+Method-parameters:[int bitIndex]
+MethodInvocation:wordIndex
+Method-name:trim
+Method-returnType:void
+Method-parameters:[int wordCount]
+MethodInvocation:copyOfRange
+Method-name:clear
+Method-returnType:Builder
+Method-parameters:[int bit]
+MethodInvocation:wordIndex
+MethodInvocation:trim
+Method-name:wouldEqual
+Method-returnType:boolean
+Method-parameters:[ImmutableBitSet bitSet]
+MethodInvocation:equals
+Method-name:cardinality
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:countBits
+Method-name:addAll
+Method-returnType:Builder
+Method-parameters:[ImmutableBitSet bitSet]
+MethodInvocation:set
+Method-name:addAll
+Method-returnType:Builder
+Method-parameters:[Iterable<Integer> integers]
+MethodInvocation:set
+Method-name:addAll
+Method-returnType:Builder
+Method-parameters:[ImmutableIntList integers]
+MethodInvocation:size
+MethodInvocation:set
+MethodInvocation:get
+Method-name:removeAll
+Method-returnType:Builder
+Method-parameters:[ImmutableBitSet bitSet]
+MethodInvocation:clear
+Method-name:set
+Method-returnType:Builder
+Method-parameters:[int fromIndex, int toIndex]
+MethodInvocation:wordIndex
+MethodInvocation:wordIndex
+MethodInvocation:copyOf
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:intersect
+Method-returnType:void
+Method-parameters:[ImmutableBitSet that]
+MethodInvocation:min
+MethodInvocation:trim
+Class:Rebuilder
+Field:originalBitSet
+Method-name:Rebuilder
+Method-returnType:null
+Method-parameters:[ImmutableBitSet originalBitSet]
+MethodInvocation:clone
+FieldAccess:originalBitSet
+Method-name:build
+Method-returnType:ImmutableBitSet
+Method-parameters:[]
+MethodInvocation:wouldEqual
+Method-name:build
+Method-returnType:ImmutableBitSet
+Method-parameters:[ImmutableBitSet bitSet]
+MethodInvocation:wouldEqual

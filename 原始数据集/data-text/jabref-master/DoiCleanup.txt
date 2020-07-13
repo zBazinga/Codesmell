@@ -1,0 +1,33 @@
+Class:DoiCleanup
+Field:FIELDS
+MethodInvocation:asList
+Method-name:cleanup
+Method-returnType:List<FieldChange>
+Method-parameters:[BibEntry entry]
+MethodInvocation:hasField
+MethodInvocation:orElse
+MethodInvocation:getField
+MethodInvocation:parse
+MethodInvocation:isPresent
+MethodInvocation:getDOI
+MethodInvocation:get
+MethodInvocation:equals
+MethodInvocation:setField
+MethodInvocation:add
+MethodInvocation:ifPresent
+MethodInvocation:flatMap
+MethodInvocation:getField
+MethodInvocation:removeFieldValue
+MethodInvocation:flatMap
+MethodInvocation:getField
+MethodInvocation:isPresent
+MethodInvocation:setField
+MethodInvocation:getDOI
+MethodInvocation:get
+MethodInvocation:ifPresent
+MethodInvocation:removeFieldValue
+Method-name:removeFieldValue
+Method-returnType:void
+Method-parameters:[BibEntry entry, Field field, List<FieldChange> changes]
+MethodInvocation:addAll
+MethodInvocation:cleanup

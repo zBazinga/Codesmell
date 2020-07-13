@@ -1,0 +1,687 @@
+Class:XResources
+Field:sReplacements
+Field:sResourceNames
+Field:sSystemReplacementsCache
+Field:mReplacementsCache
+Field:sReplacementsCacheMap
+Field:sColorStateListCache
+Field:sLayoutCallbacks
+Field:sXmlInstanceDetails
+Field:EXTRA_XML_INSTANCE_DETAILS
+Field:sIncludedLayouts
+Method-name:initialValue
+Method-returnType:LinkedList<MethodHookParam>
+Method-parameters:[]
+Field:sResDirLastModified
+Field:sResDirPackageNames
+Field:sLatestResKey
+Field:mIsObjectInited
+Field:mResDir
+Field:mPackageName
+Method-name:XResources
+Method-returnType:null
+Method-parameters:[ClassLoader classLoader]
+Method-name:initObject
+Method-returnType:void
+Method-parameters:[String resDir]
+FieldAccess:mResDir
+FieldAccess:mPackageName
+MethodInvocation:getPackageName
+MethodInvocation:get
+MethodInvocation:put
+FieldAccess:mIsObjectInited
+Method-name:isFirstLoad
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:allowThreadDiskReads
+MethodInvocation:lastModified
+MethodInvocation:get
+MethodInvocation:setThreadPolicy
+MethodInvocation:equals
+MethodInvocation:put
+MethodInvocation:size
+MethodInvocation:remove
+MethodInvocation:valueAt
+MethodInvocation:fill
+Method-name:setPackageNameForResDir
+Method-returnType:void
+Method-parameters:[String packageName, String resDir]
+MethodInvocation:put
+Method-name:getPackageName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getPackageName
+Method-returnType:String
+Method-parameters:[String resDir]
+MethodInvocation:get
+MethodInvocation:parsePackageLite
+MethodInvocation:parsePackageLite
+MethodInvocation:setPackageNameForResDir
+Method-name:getPackageNameDuringConstruction
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:getObjectField
+MethodInvocation:getPackageName
+Method-name:init
+Method-returnType:void
+Method-parameters:[ThreadLocal<Object> latestResKey]
+MethodInvocation:findAndHookMethod
+Method-name:afterHookedMethod
+Method-returnType:void
+Method-parameters:[MethodHookParam param]
+MethodInvocation:hasThrowable
+MethodInvocation:get
+MethodInvocation:getResult
+MethodInvocation:callAll
+Method-name:beforeHookedMethod
+Method-returnType:void
+Method-parameters:[MethodHookParam param]
+MethodInvocation:push
+MethodInvocation:get
+Method-name:afterHookedMethod
+Method-returnType:void
+Method-parameters:[MethodHookParam param]
+MethodInvocation:pop
+MethodInvocation:get
+MethodInvocation:hasThrowable
+MethodInvocation:getObjectExtra
+MethodInvocation:getChildAt
+MethodInvocation:getChildCount
+MethodInvocation:callAll
+MethodInvocation:findAndHookMethod
+MethodInvocation:findAndHookMethod
+MethodInvocation:findAndHookMethod
+Class:ResourceNames
+Field:id
+Field:pkg
+Field:name
+Field:type
+Field:fullName
+Method-name:ResourceNames
+Method-returnType:null
+Method-parameters:[int id, String pkg, String name, String type]
+FieldAccess:id
+FieldAccess:pkg
+FieldAccess:name
+FieldAccess:type
+FieldAccess:fullName
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[String pkg, String name, String type, int id]
+MethodInvocation:equals
+FieldAccess:pkg
+MethodInvocation:equals
+FieldAccess:name
+MethodInvocation:equals
+FieldAccess:type
+FieldAccess:id
+Method-name:getResourceNames
+Method-returnType:ResourceNames
+Method-parameters:[int id]
+MethodInvocation:getResourcePackageName
+MethodInvocation:getResourceTypeName
+MethodInvocation:getResourceEntryName
+Method-name:getSystemResourceNames
+Method-returnType:ResourceNames
+Method-parameters:[int id]
+MethodInvocation:getSystem
+MethodInvocation:getResourcePackageName
+MethodInvocation:getResourceTypeName
+MethodInvocation:getResourceEntryName
+Method-name:putResourceNames
+Method-returnType:void
+Method-parameters:[String resDir, ResourceNames resNames]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+Method-name:setReplacement
+Method-returnType:void
+Method-parameters:[int id, Object replacement]
+MethodInvocation:setReplacement
+Method-name:setReplacement
+Method-returnType:void
+Method-parameters:[String fullName, Object replacement]
+MethodInvocation:getIdentifier
+MethodInvocation:setReplacement
+Method-name:setReplacement
+Method-returnType:void
+Method-parameters:[String pkg, String type, String name, Object replacement]
+MethodInvocation:getIdentifier
+MethodInvocation:setReplacement
+Method-name:setSystemWideReplacement
+Method-returnType:void
+Method-parameters:[int id, Object replacement]
+MethodInvocation:setReplacement
+Method-name:setSystemWideReplacement
+Method-returnType:void
+Method-parameters:[String fullName, Object replacement]
+MethodInvocation:getIdentifier
+MethodInvocation:getSystem
+MethodInvocation:setReplacement
+Method-name:setSystemWideReplacement
+Method-returnType:void
+Method-parameters:[String pkg, String type, String name, Object replacement]
+MethodInvocation:getIdentifier
+MethodInvocation:getSystem
+MethodInvocation:setReplacement
+Method-name:setReplacement
+Method-returnType:void
+Method-parameters:[int id, Object replacement, XResources res]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+Method-name:getReplacement
+Method-returnType:Object
+Method-parameters:[int id]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+Method-name:getAnimation
+Method-returnType:XmlResourceParser
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:isXmlCached
+MethodInvocation:getAnimation
+MethodInvocation:getLongField
+MethodInvocation:getIntField
+MethodInvocation:rewriteXmlReferencesNative
+Method-name:getBoolean
+Method-returnType:boolean
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getBoolean
+Method-name:getColor
+Method-returnType:int
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getColor
+Method-name:getColorStateList
+Method-returnType:ColorStateList
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:get
+MethodInvocation:valueOf
+MethodInvocation:put
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getColorStateList
+Method-name:getDimension
+Method-returnType:float
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:getDimension
+MethodInvocation:getDisplayMetrics
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDimension
+Method-name:getDimensionPixelOffset
+Method-returnType:int
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:getDimensionPixelOffset
+MethodInvocation:getDisplayMetrics
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDimensionPixelOffset
+Method-name:getDimensionPixelSize
+Method-returnType:int
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:getDimensionPixelSize
+MethodInvocation:getDisplayMetrics
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDimensionPixelSize
+Method-name:getDrawable
+Method-returnType:Drawable
+Method-parameters:[int id]
+MethodInvocation:incrementMethodDepth
+MethodInvocation:getReplacement
+MethodInvocation:newDrawable
+MethodInvocation:log
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDrawable
+MethodInvocation:decrementMethodDepth
+Method-name:getDrawable
+Method-returnType:Drawable
+Method-parameters:[int id, Theme theme]
+MethodInvocation:incrementMethodDepth
+MethodInvocation:getReplacement
+MethodInvocation:newDrawable
+MethodInvocation:log
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDrawable
+MethodInvocation:decrementMethodDepth
+Method-name:getDrawable
+Method-returnType:Drawable
+Method-parameters:[int id, Theme theme, boolean supportComposedIcons]
+MethodInvocation:incrementMethodDepth
+MethodInvocation:getReplacement
+MethodInvocation:newDrawable
+MethodInvocation:log
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDrawable
+MethodInvocation:decrementMethodDepth
+Method-name:getDrawableForDensity
+Method-returnType:Drawable
+Method-parameters:[int id, int density]
+MethodInvocation:incrementMethodDepth
+MethodInvocation:getReplacement
+MethodInvocation:newDrawableForDensity
+MethodInvocation:log
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDrawableForDensity
+MethodInvocation:decrementMethodDepth
+Method-name:getDrawableForDensity
+Method-returnType:Drawable
+Method-parameters:[int id, int density, Theme theme]
+MethodInvocation:incrementMethodDepth
+MethodInvocation:getReplacement
+MethodInvocation:newDrawableForDensity
+MethodInvocation:log
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDrawableForDensity
+MethodInvocation:decrementMethodDepth
+Method-name:getDrawableForDensity
+Method-returnType:Drawable
+Method-parameters:[int id, int density, Theme theme, boolean supportComposedIcons]
+MethodInvocation:incrementMethodDepth
+MethodInvocation:getReplacement
+MethodInvocation:newDrawableForDensity
+MethodInvocation:log
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDrawableForDensity
+MethodInvocation:decrementMethodDepth
+Method-name:getFraction
+Method-returnType:float
+Method-parameters:[int id, int base, int pbase]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getFraction
+Method-name:getInteger
+Method-returnType:int
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getInteger
+Method-name:getIntArray
+Method-returnType:int[]
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getIntArray
+Method-name:getLayout
+Method-returnType:XmlResourceParser
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:isXmlCached
+MethodInvocation:getLayout
+MethodInvocation:getLongField
+MethodInvocation:getIntField
+MethodInvocation:rewriteXmlReferencesNative
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getObjectField
+MethodInvocation:getValue
+MethodInvocation:split
+MethodInvocation:toString
+MethodInvocation:log
+MethodInvocation:toString
+MethodInvocation:toHexString
+MethodInvocation:log
+MethodInvocation:toHexString
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:peek
+MethodInvocation:get
+MethodInvocation:setObjectExtra
+Method-name:getMovie
+Method-returnType:Movie
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getMovie
+Method-name:getQuantityText
+Method-returnType:CharSequence
+Method-parameters:[int id, int quantity]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getQuantityText
+Method-name:getStringArray
+Method-returnType:String[]
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getStringArray
+Method-name:getText
+Method-returnType:CharSequence
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getText
+Method-name:getText
+Method-returnType:CharSequence
+Method-parameters:[int id, CharSequence def]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getText
+Method-name:getTextArray
+Method-returnType:CharSequence[]
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getTextArray
+Method-name:getXml
+Method-returnType:XmlResourceParser
+Method-parameters:[int id]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:isXmlCached
+MethodInvocation:getXml
+MethodInvocation:getLongField
+MethodInvocation:getIntField
+MethodInvocation:rewriteXmlReferencesNative
+Method-name:isXmlCached
+Method-returnType:boolean
+Method-parameters:[Resources res, int id]
+MethodInvocation:getObjectField
+MethodInvocation:getObjectField
+Method-name:rewriteXmlReferencesNative
+Method-returnType:void
+Method-parameters:[long parserPtr, XResources origRes, Resources repRes]
+Method-name:translateResId
+Method-returnType:int
+Method-parameters:[int id, XResources origRes, Resources repRes]
+MethodInvocation:getResourceEntryName
+MethodInvocation:getResourceTypeName
+MethodInvocation:getIdentifier
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:log
+MethodInvocation:getFakeResId
+MethodInvocation:equals
+MethodInvocation:setReplacement
+MethodInvocation:log
+Method-name:getFakeResId
+Method-returnType:int
+Method-parameters:[String resName]
+MethodInvocation:hashCode
+Method-name:getFakeResId
+Method-returnType:int
+Method-parameters:[Resources res, int id]
+MethodInvocation:getFakeResId
+MethodInvocation:getResourceName
+Method-name:addResource
+Method-returnType:int
+Method-parameters:[Resources res, int id]
+MethodInvocation:getFakeResId
+MethodInvocation:indexOfKey
+MethodInvocation:setReplacement
+Method-name:translateAttrId
+Method-returnType:int
+Method-parameters:[String attrName, XResources origRes]
+MethodInvocation:getIdentifier
+MethodInvocation:log
+Class:XTypedArray
+Method-name:XTypedArray
+Method-returnType:null
+Method-parameters:[Resources resources]
+Method-name:getBoolean
+Method-returnType:boolean
+Method-parameters:[int index, boolean defValue]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getBoolean
+Method-name:getColor
+Method-returnType:int
+Method-parameters:[int index, int defValue]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getColor
+Method-name:getColorStateList
+Method-returnType:ColorStateList
+Method-parameters:[int index]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:get
+MethodInvocation:valueOf
+MethodInvocation:put
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getColorStateList
+Method-name:getDimension
+Method-returnType:float
+Method-parameters:[int index, float defValue]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDimension
+Method-name:getDimensionPixelOffset
+Method-returnType:int
+Method-parameters:[int index, int defValue]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDimensionPixelOffset
+Method-name:getDimensionPixelSize
+Method-returnType:int
+Method-parameters:[int index, int defValue]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDimensionPixelSize
+Method-name:getDrawable
+Method-returnType:Drawable
+Method-parameters:[int index]
+MethodInvocation:getResourceId
+MethodInvocation:getResources
+MethodInvocation:getReplacement
+MethodInvocation:newDrawable
+MethodInvocation:log
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDrawable
+Method-name:getFloat
+Method-returnType:float
+Method-parameters:[int index, float defValue]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDimension
+Method-name:getFraction
+Method-returnType:float
+Method-parameters:[int index, int base, int pbase, float defValue]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getFraction
+Method-name:getInt
+Method-returnType:int
+Method-parameters:[int index, int defValue]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getInteger
+Method-name:getInteger
+Method-returnType:int
+Method-parameters:[int index, int defValue]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getInteger
+Method-name:getLayoutDimension
+Method-returnType:int
+Method-parameters:[int index, int defValue]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDimensionPixelSize
+Method-name:getLayoutDimension
+Method-returnType:int
+Method-parameters:[int index, String name]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getDimensionPixelSize
+Method-name:getString
+Method-returnType:String
+Method-parameters:[int index]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:toString
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getString
+Method-name:getText
+Method-returnType:CharSequence
+Method-parameters:[int index]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getText
+Method-name:getTextArray
+Method-returnType:CharSequence[]
+Method-parameters:[int index]
+MethodInvocation:getReplacement
+MethodInvocation:getResources
+MethodInvocation:getResourceId
+MethodInvocation:getResources
+MethodInvocation:getId
+MethodInvocation:getTextArray
+Class:DrawableLoader
+Method-name:DrawableLoader
+Method-returnType:null
+Method-parameters:[]
+Method-name:newDrawable
+Method-returnType:Drawable
+Method-parameters:[XResources res, int id]
+Method-name:newDrawableForDensity
+Method-returnType:Drawable
+Method-parameters:[XResources res, int id, int density]
+MethodInvocation:newDrawable
+Class:DimensionReplacement
+Field:mValue
+Field:mUnit
+Method-name:DimensionReplacement
+Method-returnType:null
+Method-parameters:[float value, int unit]
+Method-name:getDimension
+Method-returnType:float
+Method-parameters:[DisplayMetrics metrics]
+MethodInvocation:applyDimension
+Method-name:getDimensionPixelOffset
+Method-returnType:int
+Method-parameters:[DisplayMetrics metrics]
+MethodInvocation:applyDimension
+Method-name:getDimensionPixelSize
+Method-returnType:int
+Method-parameters:[DisplayMetrics metrics]
+MethodInvocation:applyDimension
+Class:XMLInstanceDetails
+Field:resNames
+Field:variant
+Field:callbacks
+Field:res
+Method-name:XMLInstanceDetails
+Method-returnType:null
+Method-parameters:[ResourceNames resNames, String variant, CopyOnWriteSortedSet<XC_LayoutInflated> callbacks]
+FieldAccess:resNames
+FieldAccess:variant
+FieldAccess:callbacks
+Method-name:hookLayout
+Method-returnType:XC_LayoutInflated.Unhook
+Method-parameters:[int id, XC_LayoutInflated callback]
+MethodInvocation:hookLayoutInternal
+MethodInvocation:getResourceNames
+Method-name:hookLayout
+Method-returnType:XC_LayoutInflated.Unhook
+Method-parameters:[String pkg, String type, String name, XC_LayoutInflated callback]
+MethodInvocation:getIdentifier
+MethodInvocation:hookLayout
+Method-name:hookSystemWideLayout
+Method-returnType:XC_LayoutInflated.Unhook
+Method-parameters:[int id, XC_LayoutInflated callback]
+MethodInvocation:hookLayoutInternal
+MethodInvocation:getSystemResourceNames
+Method-name:hookSystemWideLayout
+Method-returnType:XC_LayoutInflated.Unhook
+Method-parameters:[String fullName, XC_LayoutInflated callback]
+MethodInvocation:getIdentifier
+MethodInvocation:getSystem
+MethodInvocation:hookSystemWideLayout
+Method-name:hookSystemWideLayout
+Method-returnType:XC_LayoutInflated.Unhook
+Method-parameters:[String pkg, String type, String name, XC_LayoutInflated callback]
+MethodInvocation:getIdentifier
+MethodInvocation:getSystem
+MethodInvocation:hookSystemWideLayout
+Method-name:hookLayoutInternal
+Method-returnType:XC_LayoutInflated.Unhook
+Method-parameters:[String resDir, int id, ResourceNames resNames, XC_LayoutInflated callback]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:putResourceNames
+Method-name:unhookLayout
+Method-returnType:void
+Method-parameters:[String resDir, int id, XC_LayoutInflated callback]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:remove

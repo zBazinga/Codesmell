@@ -1,0 +1,81 @@
+Class:NodeSelector
+Field:rootNode
+Method-name:NodeSelector
+Method-returnType:null
+Method-parameters:[final Node rootNode]
+FieldAccess:rootNode
+Method-name:select
+Method-returnType:List<Node>
+Method-parameters:[final String query]
+MethodInvocation:parse
+MethodInvocation:select
+Method-name:select
+Method-returnType:List<Node>
+Method-parameters:[final Collection<List<CssSelector>> selectorsCollection]
+MethodInvocation:processSelectors
+Method-name:processSelectors
+Method-returnType:void
+Method-parameters:[final List<Node> results, final List<CssSelector> selectors]
+MethodInvocation:select
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:selectFirst
+Method-returnType:Node
+Method-parameters:[final String query]
+MethodInvocation:select
+MethodInvocation:isEmpty
+MethodInvocation:get
+Method-name:select
+Method-returnType:List<Node>
+Method-parameters:[final NodeFilter nodeFilter]
+MethodInvocation:walk
+Method-name:selectFirst
+Method-returnType:Node
+Method-parameters:[final NodeFilter nodeFilter]
+MethodInvocation:select
+MethodInvocation:isEmpty
+MethodInvocation:get
+Method-name:walk
+Method-returnType:void
+Method-parameters:[final Node rootNode, final NodeFilter nodeFilter, final List<Node> result]
+MethodInvocation:getChildNodesCount
+MethodInvocation:getChild
+MethodInvocation:accept
+MethodInvocation:add
+MethodInvocation:walk
+Method-name:select
+Method-returnType:List<Node>
+Method-parameters:[final Node rootNode, final List<CssSelector> selectors]
+MethodInvocation:add
+MethodInvocation:walk
+MethodInvocation:filter
+MethodInvocation:add
+Method-name:walkDescendantsIteratively
+Method-returnType:void
+Method-parameters:[final LinkedList<Node> nodes, final CssSelector cssSelector, final List<Node> result]
+MethodInvocation:isEmpty
+MethodInvocation:removeFirst
+MethodInvocation:selectAndAdd
+MethodInvocation:getChildNodesCount
+MethodInvocation:addFirst
+MethodInvocation:getChild
+Method-name:walk
+Method-returnType:void
+Method-parameters:[final Node rootNode, final CssSelector cssSelector, final List<Node> result]
+MethodInvocation:getPrevCssSelector
+MethodInvocation:getCombinator
+MethodInvocation:getChildNodesCount
+MethodInvocation:add
+MethodInvocation:getChild
+MethodInvocation:walkDescendantsIteratively
+MethodInvocation:getChildNodesCount
+MethodInvocation:getChild
+MethodInvocation:selectAndAdd
+MethodInvocation:getNextSiblingElement
+MethodInvocation:selectAndAdd
+MethodInvocation:getNextSiblingElement
+MethodInvocation:selectAndAdd
+Method-name:filter
+Method-returnType:boolean
+Method-parameters:[final List<Node> currentResults, final Node node, final CssSelector cssSelector, final int index]
+MethodInvocation:accept

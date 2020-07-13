@@ -1,0 +1,87 @@
+Class:DeboxingVisitor
+Field:valueOfMths
+Method-name:init
+Method-returnType:void
+Method-parameters:[RootNode root]
+MethodInvocation:add
+MethodInvocation:valueOfMth
+MethodInvocation:add
+MethodInvocation:valueOfMth
+MethodInvocation:add
+MethodInvocation:valueOfMth
+MethodInvocation:add
+MethodInvocation:valueOfMth
+MethodInvocation:add
+MethodInvocation:valueOfMth
+MethodInvocation:add
+MethodInvocation:valueOfMth
+Method-name:valueOfMth
+Method-returnType:MethodInfo
+Method-parameters:[RootNode root, ArgType argType, String clsName]
+MethodInvocation:object
+MethodInvocation:fromType
+MethodInvocation:fromDetails
+MethodInvocation:singletonList
+Method-name:visit
+Method-returnType:void
+Method-parameters:[MethodNode mth]
+MethodInvocation:isNoCode
+MethodInvocation:getBasicBlocks
+MethodInvocation:getInstructions
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:getType
+MethodInvocation:checkForReplace
+MethodInvocation:replaceInsn
+MethodInvocation:process
+Method-name:checkForReplace
+Method-returnType:InsnNode
+Method-parameters:[InvokeNode insnNode]
+MethodInvocation:getInvokeType
+MethodInvocation:getResult
+MethodInvocation:getCallMth
+MethodInvocation:contains
+MethodInvocation:getResult
+MethodInvocation:getArg
+MethodInvocation:isLiteral
+MethodInvocation:get
+MethodInvocation:getArgumentsTypes
+MethodInvocation:getReturnType
+MethodInvocation:isNeedExplicitCast
+MethodInvocation:add
+MethodInvocation:setType
+MethodInvocation:canChangeTypeToPrimitive
+MethodInvocation:setType
+MethodInvocation:addArg
+MethodInvocation:setResult
+MethodInvocation:add
+Method-name:isNeedExplicitCast
+Method-returnType:boolean
+Method-parameters:[RegisterArg resArg, ArgType primitiveType, ArgType boxType]
+MethodInvocation:collectUseTypes
+MethodInvocation:add
+MethodInvocation:getType
+MethodInvocation:remove
+MethodInvocation:remove
+MethodInvocation:isEmpty
+Method-name:canChangeTypeToPrimitive
+Method-returnType:boolean
+Method-parameters:[RegisterArg arg]
+MethodInvocation:getSsaVars
+MethodInvocation:getCodeVar
+MethodInvocation:getSVar
+MethodInvocation:isTypeImmutable
+MethodInvocation:getUseList
+MethodInvocation:getParentInsn
+MethodInvocation:getType
+MethodInvocation:equals
+MethodInvocation:getInstanceArg
+Method-name:collectUseTypes
+Method-returnType:Set<ArgType>
+Method-parameters:[RegisterArg arg]
+MethodInvocation:getUseList
+MethodInvocation:getSVar
+MethodInvocation:add
+MethodInvocation:getType
+MethodInvocation:add
+MethodInvocation:getInitType

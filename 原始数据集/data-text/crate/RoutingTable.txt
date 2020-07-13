@@ -1,0 +1,332 @@
+Class:RoutingTable
+Field:EMPTY_ROUTING_TABLE
+MethodInvocation:build
+MethodInvocation:builder
+Field:version
+Field:indicesRouting
+Method-name:RoutingTable
+Method-returnType:null
+Method-parameters:[long version, ImmutableOpenMap<String,IndexRoutingTable> indicesRouting]
+FieldAccess:version
+FieldAccess:indicesRouting
+Method-name:version
+Method-returnType:long
+Method-parameters:[]
+FieldAccess:version
+Method-name:iterator
+Method-returnType:Iterator<IndexRoutingTable>
+Method-parameters:[]
+MethodInvocation:valuesIt
+Method-name:hasIndex
+Method-returnType:boolean
+Method-parameters:[String index]
+MethodInvocation:containsKey
+Method-name:index
+Method-returnType:IndexRoutingTable
+Method-parameters:[String index]
+MethodInvocation:get
+Method-name:index
+Method-returnType:IndexRoutingTable
+Method-parameters:[Index index]
+MethodInvocation:get
+MethodInvocation:getName
+Method-name:indicesRouting
+Method-returnType:ImmutableOpenMap<String,IndexRoutingTable>
+Method-parameters:[]
+Method-name:getIndicesRouting
+Method-returnType:ImmutableOpenMap<String,IndexRoutingTable>
+Method-parameters:[]
+MethodInvocation:indicesRouting
+Method-name:shardRoutingTable
+Method-returnType:IndexShardRoutingTable
+Method-parameters:[String index, int shardId]
+MethodInvocation:index
+MethodInvocation:shard
+MethodInvocation:getIndex
+Method-name:shardRoutingTable
+Method-returnType:IndexShardRoutingTable
+Method-parameters:[ShardId shardId]
+MethodInvocation:index
+MethodInvocation:getIndexName
+MethodInvocation:equals
+MethodInvocation:getIndex
+MethodInvocation:getIndex
+MethodInvocation:getIndex
+MethodInvocation:shard
+MethodInvocation:id
+Method-name:shardRoutingTableOrNull
+Method-returnType:IndexShardRoutingTable
+Method-parameters:[ShardId shardId]
+MethodInvocation:orElse
+MethodInvocation:flatMap
+MethodInvocation:ofNullable
+MethodInvocation:index
+MethodInvocation:getIndexName
+MethodInvocation:ofNullable
+MethodInvocation:shard
+MethodInvocation:getId
+Method-name:getByAllocationId
+Method-returnType:ShardRouting
+Method-parameters:[ShardId shardId, String allocationId]
+MethodInvocation:shardRoutingTableOrNull
+MethodInvocation:getByAllocationId
+Method-name:validate
+Method-returnType:boolean
+Method-parameters:[MetaData metaData]
+MethodInvocation:validate
+Method-name:shardsWithState
+Method-returnType:List<ShardRouting>
+Method-parameters:[ShardRoutingState state]
+MethodInvocation:addAll
+MethodInvocation:shardsWithState
+Method-name:allShards
+Method-returnType:List<ShardRouting>
+Method-parameters:[]
+MethodInvocation:toArray
+MethodInvocation:keys
+MethodInvocation:allShards
+MethodInvocation:addAll
+Method-name:allShards
+Method-returnType:List<ShardRouting>
+Method-parameters:[String index]
+MethodInvocation:index
+MethodInvocation:add
+Method-name:allActiveShardsGrouped
+Method-returnType:GroupShardsIterator
+Method-parameters:[String[] indices, boolean includeEmpty]
+MethodInvocation:allActiveShardsGrouped
+Method-name:allActiveShardsGrouped
+Method-returnType:GroupShardsIterator
+Method-parameters:[String[] indices, boolean includeEmpty, boolean includeRelocationTargets]
+MethodInvocation:allSatisfyingPredicateShardsGrouped
+Method-name:allAssignedShardsGrouped
+Method-returnType:GroupShardsIterator<ShardIterator>
+Method-parameters:[String[] indices, boolean includeEmpty]
+MethodInvocation:allAssignedShardsGrouped
+Method-name:allAssignedShardsGrouped
+Method-returnType:GroupShardsIterator<ShardIterator>
+Method-parameters:[String[] indices, boolean includeEmpty, boolean includeRelocationTargets]
+MethodInvocation:allSatisfyingPredicateShardsGrouped
+Field:ACTIVE_PREDICATE
+Field:ASSIGNED_PREDICATE
+Method-name:allSatisfyingPredicateShardsGrouped
+Method-returnType:GroupShardsIterator<ShardIterator>
+Method-parameters:[String[] indices, boolean includeEmpty, boolean includeRelocationTargets, Predicate<ShardRouting> predicate]
+MethodInvocation:index
+MethodInvocation:test
+MethodInvocation:add
+MethodInvocation:shardsIt
+MethodInvocation:relocating
+MethodInvocation:add
+MethodInvocation:shardId
+MethodInvocation:singletonList
+MethodInvocation:getTargetRelocatingShard
+MethodInvocation:add
+MethodInvocation:shardId
+MethodInvocation:emptyList
+Method-name:allShards
+Method-returnType:ShardsIterator
+Method-parameters:[String[] indices]
+MethodInvocation:allShardsSatisfyingPredicate
+Method-name:allShardsIncludingRelocationTargets
+Method-returnType:ShardsIterator
+Method-parameters:[String[] indices]
+MethodInvocation:allShardsSatisfyingPredicate
+Method-name:allShardsSatisfyingPredicate
+Method-returnType:ShardsIterator
+Method-parameters:[String[] indices, Predicate<ShardRouting> predicate, boolean includeRelocationTargets]
+MethodInvocation:index
+MethodInvocation:test
+MethodInvocation:add
+MethodInvocation:relocating
+MethodInvocation:add
+MethodInvocation:getTargetRelocatingShard
+Method-name:activePrimaryShardsGrouped
+Method-returnType:GroupShardsIterator<ShardIterator>
+Method-parameters:[String[] indices, boolean includeEmpty]
+MethodInvocation:index
+MethodInvocation:primaryShard
+MethodInvocation:active
+MethodInvocation:add
+MethodInvocation:shardsIt
+MethodInvocation:add
+MethodInvocation:shardId
+MethodInvocation:emptyList
+Method-name:diff
+Method-returnType:Diff<RoutingTable>
+Method-parameters:[RoutingTable previousState]
+Method-name:readDiffFrom
+Method-returnType:Diff<RoutingTable>
+Method-parameters:[StreamInput in]
+Method-name:readFrom
+Method-returnType:RoutingTable
+Method-parameters:[StreamInput in]
+MethodInvocation:readLong
+MethodInvocation:readVInt
+MethodInvocation:readFrom
+MethodInvocation:add
+MethodInvocation:build
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeLong
+MethodInvocation:writeVInt
+MethodInvocation:size
+MethodInvocation:values
+MethodInvocation:writeTo
+Class:RoutingTableDiff
+Field:version
+Field:indicesRouting
+Method-name:RoutingTableDiff
+Method-returnType:null
+Method-parameters:[RoutingTable before, RoutingTable after]
+MethodInvocation:diff
+MethodInvocation:getStringKeySerializer
+Method-name:RoutingTableDiff
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readLong
+MethodInvocation:readImmutableOpenMapDiff
+MethodInvocation:getStringKeySerializer
+Method-name:apply
+Method-returnType:RoutingTable
+Method-parameters:[RoutingTable part]
+MethodInvocation:apply
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeLong
+MethodInvocation:writeTo
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[RoutingTable routingTable]
+Class:Builder
+Field:version
+Field:indicesRouting
+MethodInvocation:builder
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[RoutingTable routingTable]
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:getIndex
+Method-name:updateNodes
+Method-returnType:Builder
+Method-parameters:[long version, RoutingNodes routingNodes]
+FieldAccess:version
+MethodInvocation:initializing
+MethodInvocation:relocatingNodeId
+MethodInvocation:index
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:addShard
+MethodInvocation:concat
+MethodInvocation:unassigned
+MethodInvocation:ignored
+MethodInvocation:unassigned
+MethodInvocation:index
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:addShard
+MethodInvocation:values
+MethodInvocation:add
+Method-name:updateNumberOfReplicas
+Method-returnType:Builder
+Method-parameters:[final int numberOfReplicas, final String[] indices]
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:shards
+MethodInvocation:getIndex
+MethodInvocation:addIndexShard
+MethodInvocation:addReplica
+MethodInvocation:removeReplica
+MethodInvocation:put
+MethodInvocation:build
+Method-name:addAsNew
+Method-returnType:Builder
+Method-parameters:[IndexMetaData indexMetaData]
+MethodInvocation:getState
+MethodInvocation:initializeAsNew
+MethodInvocation:getIndex
+MethodInvocation:add
+Method-name:addAsRecovery
+Method-returnType:Builder
+Method-parameters:[IndexMetaData indexMetaData]
+MethodInvocation:getState
+MethodInvocation:initializeAsRecovery
+MethodInvocation:getIndex
+MethodInvocation:add
+Method-name:addAsFromDangling
+Method-returnType:Builder
+Method-parameters:[IndexMetaData indexMetaData]
+MethodInvocation:getState
+MethodInvocation:initializeAsFromDangling
+MethodInvocation:getIndex
+MethodInvocation:add
+Method-name:addAsFromCloseToOpen
+Method-returnType:Builder
+Method-parameters:[IndexMetaData indexMetaData]
+MethodInvocation:getState
+MethodInvocation:initializeAsFromCloseToOpen
+MethodInvocation:getIndex
+MethodInvocation:add
+Method-name:addAsRestore
+Method-returnType:Builder
+Method-parameters:[IndexMetaData indexMetaData, SnapshotRecoverySource recoverySource]
+MethodInvocation:initializeAsRestore
+MethodInvocation:getIndex
+MethodInvocation:add
+Method-name:addAsNewRestore
+Method-returnType:Builder
+Method-parameters:[IndexMetaData indexMetaData, SnapshotRecoverySource recoverySource, IntSet ignoreShards]
+MethodInvocation:initializeAsNewRestore
+MethodInvocation:getIndex
+MethodInvocation:add
+Method-name:add
+Method-returnType:Builder
+Method-parameters:[IndexRoutingTable indexRoutingTable]
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:getIndex
+Method-name:add
+Method-returnType:Builder
+Method-parameters:[IndexRoutingTable.Builder indexRoutingTableBuilder]
+MethodInvocation:add
+MethodInvocation:build
+Method-name:indicesRouting
+Method-returnType:Builder
+Method-parameters:[Map<String,IndexRoutingTable> indicesRouting]
+MethodInvocation:putAll
+FieldAccess:indicesRouting
+Method-name:remove
+Method-returnType:Builder
+Method-parameters:[String index]
+MethodInvocation:remove
+Method-name:version
+Method-returnType:Builder
+Method-parameters:[long version]
+FieldAccess:version
+Method-name:build
+Method-returnType:RoutingTable
+Method-parameters:[]
+MethodInvocation:build
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:prettyPrint
+MethodInvocation:toString

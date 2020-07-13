@@ -1,0 +1,224 @@
+Class:ExpressionState
+Field:relatedContext
+Field:rootObject
+Field:configuration
+Field:contextObjects
+Field:variableScopes
+Field:scopeRootObjects
+Method-name:ExpressionState
+Method-returnType:null
+Method-parameters:[EvaluationContext context]
+MethodInvocation:getRootObject
+Method-name:ExpressionState
+Method-returnType:null
+Method-parameters:[EvaluationContext context, SpelParserConfiguration configuration]
+MethodInvocation:getRootObject
+Method-name:ExpressionState
+Method-returnType:null
+Method-parameters:[EvaluationContext context, TypedValue rootObject]
+Method-name:ExpressionState
+Method-returnType:null
+Method-parameters:[EvaluationContext context, TypedValue rootObject, SpelParserConfiguration configuration]
+MethodInvocation:notNull
+MethodInvocation:notNull
+FieldAccess:relatedContext
+FieldAccess:rootObject
+FieldAccess:configuration
+Method-name:getActiveContextObject
+Method-returnType:TypedValue
+Method-parameters:[]
+MethodInvocation:isEmpty
+FieldAccess:contextObjects
+FieldAccess:rootObject
+MethodInvocation:element
+FieldAccess:contextObjects
+Method-name:pushActiveContextObject
+Method-returnType:void
+Method-parameters:[TypedValue obj]
+FieldAccess:contextObjects
+FieldAccess:contextObjects
+MethodInvocation:push
+FieldAccess:contextObjects
+Method-name:popActiveContextObject
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:contextObjects
+FieldAccess:contextObjects
+MethodInvocation:pop
+FieldAccess:contextObjects
+Method-name:getRootContextObject
+Method-returnType:TypedValue
+Method-parameters:[]
+FieldAccess:rootObject
+Method-name:getScopeRootContextObject
+Method-returnType:TypedValue
+Method-parameters:[]
+MethodInvocation:isEmpty
+FieldAccess:scopeRootObjects
+FieldAccess:rootObject
+MethodInvocation:element
+FieldAccess:scopeRootObjects
+Method-name:setVariable
+Method-returnType:void
+Method-parameters:[String name, @Nullable Object value]
+MethodInvocation:setVariable
+FieldAccess:relatedContext
+Method-name:lookupVariable
+Method-returnType:TypedValue
+Method-parameters:[String name]
+MethodInvocation:lookupVariable
+FieldAccess:relatedContext
+Method-name:getTypeComparator
+Method-returnType:TypeComparator
+Method-parameters:[]
+MethodInvocation:getTypeComparator
+FieldAccess:relatedContext
+Method-name:findType
+Method-returnType:Class<?>
+Method-parameters:[String type]
+MethodInvocation:findType
+MethodInvocation:getTypeLocator
+FieldAccess:relatedContext
+Method-name:convertValue
+Method-returnType:Object
+Method-parameters:[Object value, TypeDescriptor targetTypeDescriptor]
+MethodInvocation:convertValue
+MethodInvocation:getTypeConverter
+FieldAccess:relatedContext
+MethodInvocation:forObject
+Method-name:getTypeConverter
+Method-returnType:TypeConverter
+Method-parameters:[]
+MethodInvocation:getTypeConverter
+FieldAccess:relatedContext
+Method-name:convertValue
+Method-returnType:Object
+Method-parameters:[TypedValue value, TypeDescriptor targetTypeDescriptor]
+MethodInvocation:getValue
+MethodInvocation:convertValue
+MethodInvocation:getTypeConverter
+FieldAccess:relatedContext
+MethodInvocation:forObject
+Method-name:enterScope
+Method-returnType:void
+Method-parameters:[Map<String,Object> argMap]
+MethodInvocation:push
+MethodInvocation:initVariableScopes
+MethodInvocation:push
+MethodInvocation:initScopeRootObjects
+MethodInvocation:getActiveContextObject
+Method-name:enterScope
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:push
+MethodInvocation:initVariableScopes
+MethodInvocation:emptyMap
+MethodInvocation:push
+MethodInvocation:initScopeRootObjects
+MethodInvocation:getActiveContextObject
+Method-name:enterScope
+Method-returnType:void
+Method-parameters:[String name, Object value]
+MethodInvocation:push
+MethodInvocation:initVariableScopes
+MethodInvocation:push
+MethodInvocation:initScopeRootObjects
+MethodInvocation:getActiveContextObject
+Method-name:exitScope
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:pop
+MethodInvocation:initVariableScopes
+MethodInvocation:pop
+MethodInvocation:initScopeRootObjects
+Method-name:setLocalVariable
+Method-returnType:void
+Method-parameters:[String name, Object value]
+MethodInvocation:setVariable
+MethodInvocation:element
+MethodInvocation:initVariableScopes
+Method-name:lookupLocalVariable
+Method-returnType:Object
+Method-parameters:[String name]
+MethodInvocation:initVariableScopes
+MethodInvocation:definesVariable
+MethodInvocation:lookupVariable
+Method-name:initVariableScopes
+Method-returnType:Deque<VariableScope>
+Method-parameters:[]
+FieldAccess:variableScopes
+FieldAccess:variableScopes
+MethodInvocation:add
+FieldAccess:variableScopes
+FieldAccess:variableScopes
+Method-name:initScopeRootObjects
+Method-returnType:Deque<TypedValue>
+Method-parameters:[]
+FieldAccess:scopeRootObjects
+FieldAccess:scopeRootObjects
+FieldAccess:scopeRootObjects
+Method-name:operate
+Method-returnType:TypedValue
+Method-parameters:[Operation op, @Nullable Object left, @Nullable Object right]
+MethodInvocation:getOperatorOverloader
+FieldAccess:relatedContext
+MethodInvocation:overridesOperation
+MethodInvocation:operate
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:getPropertyAccessors
+Method-returnType:List<PropertyAccessor>
+Method-parameters:[]
+MethodInvocation:getPropertyAccessors
+FieldAccess:relatedContext
+Method-name:getEvaluationContext
+Method-returnType:EvaluationContext
+Method-parameters:[]
+FieldAccess:relatedContext
+Method-name:getConfiguration
+Method-returnType:SpelParserConfiguration
+Method-parameters:[]
+FieldAccess:configuration
+Method-name:findExecutorForConstructor
+Method-returnType:ConstructorExecutor
+Method-parameters:[String typeName, List<TypeDescriptor> argumentTypes, ConstructorReference constructorReference]
+MethodInvocation:getEvaluationContext
+MethodInvocation:getConstructorResolvers
+MethodInvocation:resolve
+MethodInvocation:getEvaluationContext
+MethodInvocation:getStartPosition
+MethodInvocation:formatMethodForMessage
+MethodInvocation:getStartPosition
+MethodInvocation:formatMethodForMessage
+Class:VariableScope
+Field:vars
+Method-name:VariableScope
+Method-returnType:null
+Method-parameters:[]
+Method-name:VariableScope
+Method-returnType:null
+Method-parameters:[@Nullable Map<String,Object> arguments]
+MethodInvocation:putAll
+FieldAccess:vars
+Method-name:VariableScope
+Method-returnType:null
+Method-parameters:[String name, Object value]
+MethodInvocation:put
+FieldAccess:vars
+Method-name:lookupVariable
+Method-returnType:Object
+Method-parameters:[String name]
+MethodInvocation:get
+FieldAccess:vars
+Method-name:setVariable
+Method-returnType:void
+Method-parameters:[String name, Object value]
+MethodInvocation:put
+FieldAccess:vars
+Method-name:definesVariable
+Method-returnType:boolean
+Method-parameters:[String name]
+MethodInvocation:containsKey
+FieldAccess:vars

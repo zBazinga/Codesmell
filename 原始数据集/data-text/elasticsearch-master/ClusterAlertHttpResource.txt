@@ -1,0 +1,51 @@
+Class:ClusterAlertHttpResource
+Field:logger
+MethodInvocation:getLogger
+Field:CLUSTER_ALERT_VERSION_PARAMETERS
+MethodInvocation:singletonMap
+Field:licenseState
+Field:watchId
+Field:watch
+Method-name:ClusterAlertHttpResource
+Method-returnType:null
+Method-parameters:[final String resourceOwnerName, final XPackLicenseState licenseState, final Supplier<String> watchId, @Nullable final Supplier<String> watch]
+FieldAccess:licenseState
+MethodInvocation:requireNonNull
+FieldAccess:watchId
+MethodInvocation:requireNonNull
+FieldAccess:watch
+Method-name:doCheck
+Method-returnType:void
+Method-parameters:[final RestClient client, final ActionListener<Boolean> listener]
+MethodInvocation:isWatchDefined
+MethodInvocation:isAllowed
+MethodInvocation:shouldReplaceClusterAlert
+MethodInvocation:xContent
+MethodInvocation:checkForResource
+MethodInvocation:get
+MethodInvocation:deleteResource
+MethodInvocation:get
+Method-name:doPublish
+Method-returnType:void
+Method-parameters:[final RestClient client, final ActionListener<Boolean> listener]
+MethodInvocation:putResource
+MethodInvocation:get
+MethodInvocation:emptyMap
+Method-name:isWatchDefined
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:watchToHttpEntity
+Method-returnType:HttpEntity
+Method-parameters:[]
+MethodInvocation:get
+Method-name:shouldReplaceClusterAlert
+Method-returnType:boolean
+Method-parameters:[final Response response, final XContent xContent, final int minimumVersion]
+MethodInvocation:convertToMap
+MethodInvocation:getContent
+MethodInvocation:getEntity
+MethodInvocation:isEmpty
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:intValue

@@ -1,0 +1,39 @@
+Class:SqlMultisetQueryConstructor
+Method-name:SqlMultisetQueryConstructor
+Method-returnType:null
+Method-parameters:[]
+Method-name:SqlMultisetQueryConstructor
+Method-returnType:null
+Method-parameters:[String name, SqlKind kind]
+Method-name:inferReturnType
+Method-returnType:RelDataType
+Method-parameters:[SqlOperatorBinding opBinding]
+MethodInvocation:getComponentType
+MethodInvocation:getTypeFactory
+MethodInvocation:collectOperandTypes
+MethodInvocation:createMultisetType
+MethodInvocation:getTypeFactory
+Method-name:getComponentType
+Method-returnType:RelDataType
+Method-parameters:[RelDataTypeFactory typeFactory, List<RelDataType> argTypes]
+MethodInvocation:leastRestrictive
+Method-name:checkOperandTypes
+Method-returnType:boolean
+Method-parameters:[SqlCallBinding callBinding, boolean throwOnFailure]
+MethodInvocation:deriveAndCollectTypes
+MethodInvocation:getValidator
+MethodInvocation:getScope
+MethodInvocation:operands
+MethodInvocation:getComponentType
+MethodInvocation:getTypeFactory
+MethodInvocation:newValidationError
+MethodInvocation:needSameTypeParameter
+Method-name:deriveType
+Method-returnType:RelDataType
+Method-parameters:[SqlValidator validator, SqlValidatorScope scope, SqlCall call]
+Method-name:unparse
+Method-returnType:void
+Method-parameters:[SqlWriter writer, SqlCall call, int leftPrec, int rightPrec]
+Method-name:argumentMustBeScalar
+Method-returnType:boolean
+Method-parameters:[int ordinal]

@@ -1,0 +1,152 @@
+Class:ModelAndViewContainer
+Field:ignoreDefaultModelOnRedirect
+Field:view
+Field:defaultModel
+Field:redirectModel
+Field:redirectModelScenario
+Field:status
+Field:noBinding
+Field:bindingDisabled
+Field:sessionStatus
+Field:requestHandled
+Method-name:setIgnoreDefaultModelOnRedirect
+Method-returnType:void
+Method-parameters:[boolean ignoreDefaultModelOnRedirect]
+FieldAccess:ignoreDefaultModelOnRedirect
+Method-name:setViewName
+Method-returnType:void
+Method-parameters:[@Nullable String viewName]
+FieldAccess:view
+Method-name:getViewName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:view
+FieldAccess:view
+Method-name:setView
+Method-returnType:void
+Method-parameters:[@Nullable Object view]
+FieldAccess:view
+Method-name:getView
+Method-returnType:Object
+Method-parameters:[]
+FieldAccess:view
+Method-name:isViewReference
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:view
+Method-name:getModel
+Method-returnType:ModelMap
+Method-parameters:[]
+MethodInvocation:useDefaultModel
+FieldAccess:defaultModel
+FieldAccess:redirectModel
+FieldAccess:redirectModel
+FieldAccess:redirectModel
+Method-name:useDefaultModel
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:redirectModelScenario
+FieldAccess:redirectModel
+FieldAccess:ignoreDefaultModelOnRedirect
+Method-name:getDefaultModel
+Method-returnType:ModelMap
+Method-parameters:[]
+FieldAccess:defaultModel
+Method-name:setRedirectModel
+Method-returnType:void
+Method-parameters:[ModelMap redirectModel]
+FieldAccess:redirectModel
+Method-name:setRedirectModelScenario
+Method-returnType:void
+Method-parameters:[boolean redirectModelScenario]
+FieldAccess:redirectModelScenario
+Method-name:setStatus
+Method-returnType:void
+Method-parameters:[@Nullable HttpStatus status]
+FieldAccess:status
+Method-name:getStatus
+Method-returnType:HttpStatus
+Method-parameters:[]
+FieldAccess:status
+Method-name:setBindingDisabled
+Method-returnType:void
+Method-parameters:[String attributeName]
+MethodInvocation:add
+FieldAccess:bindingDisabled
+Method-name:isBindingDisabled
+Method-returnType:boolean
+Method-parameters:[String name]
+MethodInvocation:contains
+FieldAccess:bindingDisabled
+MethodInvocation:contains
+FieldAccess:noBinding
+Method-name:setBinding
+Method-returnType:void
+Method-parameters:[String attributeName, boolean enabled]
+MethodInvocation:add
+FieldAccess:noBinding
+MethodInvocation:remove
+FieldAccess:noBinding
+Method-name:getSessionStatus
+Method-returnType:SessionStatus
+Method-parameters:[]
+FieldAccess:sessionStatus
+Method-name:setRequestHandled
+Method-returnType:void
+Method-parameters:[boolean requestHandled]
+FieldAccess:requestHandled
+Method-name:isRequestHandled
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:requestHandled
+Method-name:addAttribute
+Method-returnType:ModelAndViewContainer
+Method-parameters:[String name, @Nullable Object value]
+MethodInvocation:addAttribute
+MethodInvocation:getModel
+Method-name:addAttribute
+Method-returnType:ModelAndViewContainer
+Method-parameters:[Object value]
+MethodInvocation:addAttribute
+MethodInvocation:getModel
+Method-name:addAllAttributes
+Method-returnType:ModelAndViewContainer
+Method-parameters:[@Nullable Map<String,?> attributes]
+MethodInvocation:addAllAttributes
+MethodInvocation:getModel
+Method-name:mergeAttributes
+Method-returnType:ModelAndViewContainer
+Method-parameters:[@Nullable Map<String,?> attributes]
+MethodInvocation:mergeAttributes
+MethodInvocation:getModel
+Method-name:removeAttributes
+Method-returnType:ModelAndViewContainer
+Method-parameters:[@Nullable Map<String,?> attributes]
+MethodInvocation:keySet
+MethodInvocation:remove
+MethodInvocation:getModel
+Method-name:containsAttribute
+Method-returnType:boolean
+Method-parameters:[String name]
+MethodInvocation:containsAttribute
+MethodInvocation:getModel
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isRequestHandled
+MethodInvocation:isViewReference
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:view
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:view
+MethodInvocation:useDefaultModel
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getModel
+MethodInvocation:append
+MethodInvocation:toString

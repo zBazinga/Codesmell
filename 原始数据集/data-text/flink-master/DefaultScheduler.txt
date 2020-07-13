@@ -1,0 +1,270 @@
+Class:DefaultScheduler
+Field:log
+Field:userCodeLoader
+Field:executionSlotAllocator
+Field:executionFailureHandler
+Field:delayExecutor
+Field:schedulingStrategy
+Field:executionVertexOperations
+Field:verticesWaitingForRestart
+Method-name:DefaultScheduler
+Method-returnType:null
+Method-parameters:[final Logger log, final JobGraph jobGraph, final BackPressureStatsTracker backPressureStatsTracker, final Executor ioExecutor, final Configuration jobMasterConfiguration, final ScheduledExecutorService futureExecutor, final ScheduledExecutor delayExecutor, final ClassLoader userCodeLoader, final CheckpointRecoveryFactory checkpointRecoveryFactory, final Time rpcTimeout, final BlobWriter blobWriter, final JobManagerJobMetricGroup jobManagerJobMetricGroup, final ShuffleMaster<?> shuffleMaster, final JobMasterPartitionTracker partitionTracker, final SchedulingStrategyFactory schedulingStrategyFactory, final FailoverStrategy.Factory failoverStrategyFactory, final RestartBackoffTimeStrategy restartBackoffTimeStrategy, final ExecutionVertexOperations executionVertexOperations, final ExecutionVertexVersioner executionVertexVersioner, final ExecutionSlotAllocatorFactory executionSlotAllocatorFactory]
+MethodInvocation:seconds
+FieldAccess:log
+FieldAccess:delayExecutor
+MethodInvocation:checkNotNull
+FieldAccess:userCodeLoader
+MethodInvocation:checkNotNull
+FieldAccess:executionVertexOperations
+MethodInvocation:checkNotNull
+MethodInvocation:create
+MethodInvocation:getSchedulingTopology
+MethodInvocation:getResultPartitionAvailabilityChecker
+MethodInvocation:info
+MethodInvocation:getName
+MethodInvocation:getJobID
+FieldAccess:executionFailureHandler
+MethodInvocation:getSchedulingTopology
+FieldAccess:schedulingStrategy
+MethodInvocation:createInstance
+MethodInvocation:getSchedulingTopology
+FieldAccess:executionSlotAllocator
+MethodInvocation:createInstance
+MethodInvocation:checkNotNull
+MethodInvocation:getInputsLocationsRetriever
+FieldAccess:verticesWaitingForRestart
+Method-name:getNumberOfRestarts
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getNumberOfRestarts
+Method-name:startSchedulingInternal
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:info
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:prepareExecutionGraphForNgScheduling
+MethodInvocation:startScheduling
+Method-name:updateTaskExecutionStateInternal
+Method-returnType:void
+Method-parameters:[final ExecutionVertexID executionVertexId, final TaskExecutionState taskExecutionState]
+MethodInvocation:onExecutionStateChange
+MethodInvocation:getExecutionState
+MethodInvocation:maybeHandleTaskFailure
+Method-name:maybeHandleTaskFailure
+Method-returnType:void
+Method-parameters:[final TaskExecutionState taskExecutionState, final ExecutionVertexID executionVertexId]
+MethodInvocation:getExecutionState
+MethodInvocation:getError
+MethodInvocation:handleTaskFailure
+Method-name:handleTaskFailure
+Method-returnType:void
+Method-parameters:[final ExecutionVertexID executionVertexId, @Nullable final Throwable error]
+MethodInvocation:setGlobalFailureCause
+MethodInvocation:notifyCoordinatorsAboutTaskFailure
+MethodInvocation:getFailureHandlingResult
+MethodInvocation:maybeRestartTasks
+Method-name:handleGlobalFailure
+Method-returnType:void
+Method-parameters:[final Throwable error]
+MethodInvocation:setGlobalFailureCause
+MethodInvocation:info
+MethodInvocation:getGlobalFailureHandlingResult
+MethodInvocation:maybeRestartTasks
+Method-name:maybeRestartTasks
+Method-returnType:void
+Method-parameters:[final FailureHandlingResult failureHandlingResult]
+MethodInvocation:canRestart
+MethodInvocation:restartTasksWithDelay
+MethodInvocation:failJob
+MethodInvocation:getError
+Method-name:restartTasksWithDelay
+Method-returnType:void
+Method-parameters:[final FailureHandlingResult failureHandlingResult]
+MethodInvocation:getVerticesToRestart
+MethodInvocation:values
+MethodInvocation:recordVertexModifications
+MethodInvocation:isGlobalFailure
+MethodInvocation:addVerticesToRestartPending
+MethodInvocation:cancelTasksAsync
+MethodInvocation:schedule
+MethodInvocation:assertNoException
+MethodInvocation:thenRunAsync
+MethodInvocation:restartTasks
+MethodInvocation:getMainThreadExecutor
+MethodInvocation:getRestartDelayMS
+Method-name:addVerticesToRestartPending
+Method-returnType:void
+Method-parameters:[final Set<ExecutionVertexID> verticesToRestart]
+MethodInvocation:addAll
+MethodInvocation:transitionExecutionGraphState
+Method-name:removeVerticesFromRestartPending
+Method-returnType:void
+Method-parameters:[final Set<ExecutionVertexID> verticesToRestart]
+MethodInvocation:removeAll
+MethodInvocation:isEmpty
+MethodInvocation:transitionExecutionGraphState
+Method-name:restartTasks
+Method-returnType:Runnable
+Method-parameters:[final Set<ExecutionVertexVersion> executionVertexVersions, final boolean isGlobalRecovery]
+MethodInvocation:getUnmodifiedExecutionVertices
+MethodInvocation:removeVerticesFromRestartPending
+MethodInvocation:resetForNewExecutions
+MethodInvocation:restoreState
+MethodInvocation:handleGlobalFailure
+MethodInvocation:restartTasks
+Method-name:cancelTasksAsync
+Method-returnType:CompletableFuture<?>
+Method-parameters:[final Set<ExecutionVertexID> verticesToRestart]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toList
+MethodInvocation:combineAll
+Method-name:cancelExecutionVertex
+Method-returnType:CompletableFuture<?>
+Method-parameters:[final ExecutionVertexID executionVertexId]
+MethodInvocation:getExecutionVertex
+MethodInvocation:notifyCoordinatorOfCancellation
+MethodInvocation:cancel
+MethodInvocation:cancel
+Method-name:scheduleOrUpdateConsumersInternal
+Method-returnType:void
+Method-parameters:[final IntermediateResultPartitionID partitionId]
+MethodInvocation:onPartitionConsumable
+Method-name:allocateSlotsAndDeploy
+Method-returnType:void
+Method-parameters:[final List<ExecutionVertexDeploymentOption> executionVertexDeploymentOptions]
+MethodInvocation:validateDeploymentOptions
+MethodInvocation:groupDeploymentOptionsByVertexId
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toList
+MethodInvocation:recordVertexModifications
+MethodInvocation:transitionToScheduled
+MethodInvocation:allocateSlots
+MethodInvocation:createDeploymentHandles
+MethodInvocation:waitForAllSlotsAndDeploy
+Method-name:validateDeploymentOptions
+Method-returnType:void
+Method-parameters:[final Collection<ExecutionVertexDeploymentOption> deploymentOptions]
+MethodInvocation:forEach
+MethodInvocation:map
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:checkState
+MethodInvocation:getExecutionState
+MethodInvocation:getID
+MethodInvocation:getExecutionState
+Method-name:groupDeploymentOptionsByVertexId
+Method-returnType:Map<ExecutionVertexID,ExecutionVertexDeploymentOption>
+Method-parameters:[final Collection<ExecutionVertexDeploymentOption> executionVertexDeploymentOptions]
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:toMap
+MethodInvocation:identity
+Method-name:allocateSlots
+Method-returnType:List<SlotExecutionVertexAssignment>
+Method-parameters:[final List<ExecutionVertexDeploymentOption> executionVertexDeploymentOptions]
+MethodInvocation:allocateSlotsFor
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:map
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toList
+Method-name:createDeploymentHandles
+Method-returnType:List<DeploymentHandle>
+Method-parameters:[final Map<ExecutionVertexID,ExecutionVertexVersion> requiredVersionByVertex, final Map<ExecutionVertexID,ExecutionVertexDeploymentOption> deploymentOptionsByVertex, final List<SlotExecutionVertexAssignment> slotExecutionVertexAssignments]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getExecutionVertexId
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:toList
+Method-name:waitForAllSlotsAndDeploy
+Method-returnType:void
+Method-parameters:[final List<DeploymentHandle> deploymentHandles]
+MethodInvocation:assertNoException
+MethodInvocation:handle
+MethodInvocation:assignAllResources
+MethodInvocation:deployAll
+Method-name:assignAllResources
+Method-returnType:CompletableFuture<Void>
+Method-parameters:[final List<DeploymentHandle> deploymentHandles]
+MethodInvocation:handle
+MethodInvocation:getLogicalSlotFuture
+MethodInvocation:getSlotExecutionVertexAssignment
+MethodInvocation:assignResourceOrHandleError
+MethodInvocation:add
+MethodInvocation:waitForAll
+Method-name:deployAll
+Method-returnType:BiFunction<Void,Throwable,Void>
+Method-parameters:[final List<DeploymentHandle> deploymentHandles]
+MethodInvocation:propagateIfNonNull
+MethodInvocation:getSlotExecutionVertexAssignment
+MethodInvocation:getLogicalSlotFuture
+MethodInvocation:checkState
+MethodInvocation:isDone
+MethodInvocation:assertNoException
+MethodInvocation:handle
+MethodInvocation:deployOrHandleError
+Method-name:propagateIfNonNull
+Method-returnType:void
+Method-parameters:[final Throwable throwable]
+Method-name:assignResourceOrHandleError
+Method-returnType:BiFunction<LogicalSlot,Throwable,Void>
+Method-parameters:[final DeploymentHandle deploymentHandle]
+MethodInvocation:getRequiredVertexVersion
+MethodInvocation:getExecutionVertexId
+MethodInvocation:isModified
+MethodInvocation:debug
+MethodInvocation:releaseSlotIfPresent
+MethodInvocation:getExecutionVertex
+MethodInvocation:sendScheduleOrUpdateConsumerMessage
+MethodInvocation:getDeploymentOption
+MethodInvocation:registerProducedPartitions
+MethodInvocation:getCurrentExecutionAttempt
+MethodInvocation:getTaskManagerLocation
+MethodInvocation:tryAssignResource
+MethodInvocation:handleTaskDeploymentFailure
+MethodInvocation:maybeWrapWithNoResourceAvailableException
+Method-name:releaseSlotIfPresent
+Method-returnType:void
+Method-parameters:[@Nullable final LogicalSlot logicalSlot]
+MethodInvocation:releaseSlot
+Method-name:handleTaskDeploymentFailure
+Method-returnType:void
+Method-parameters:[final ExecutionVertexID executionVertexId, final Throwable error]
+MethodInvocation:markFailed
+MethodInvocation:getExecutionVertex
+Method-name:maybeWrapWithNoResourceAvailableException
+Method-returnType:Throwable
+Method-parameters:[final Throwable failure]
+MethodInvocation:stripCompletionException
+Method-name:deployOrHandleError
+Method-returnType:BiFunction<Object,Throwable,Void>
+Method-parameters:[final DeploymentHandle deploymentHandle]
+MethodInvocation:getRequiredVertexVersion
+MethodInvocation:getExecutionVertexId
+MethodInvocation:isModified
+MethodInvocation:debug
+MethodInvocation:deployTaskSafe
+MethodInvocation:handleTaskDeploymentFailure
+Method-name:deployTaskSafe
+Method-returnType:void
+Method-parameters:[final ExecutionVertexID executionVertexId]
+MethodInvocation:getExecutionVertex
+MethodInvocation:deploy
+MethodInvocation:handleTaskDeploymentFailure
+Method-name:notifyCoordinatorOfCancellation
+Method-returnType:void
+Method-parameters:[ExecutionVertex vertex]
+MethodInvocation:getExecutionState
+MethodInvocation:getOperatorCoordinators
+MethodInvocation:getJobVertex
+MethodInvocation:subtaskFailed
+MethodInvocation:getParallelSubtaskIndex

@@ -1,0 +1,68 @@
+Class:ApacheHttpRequestFactory
+Field:DEFAULT_ENCODING
+Field:IGNORE_HEADERS
+MethodInvocation:asList
+Method-name:create
+Method-returnType:HttpRequestBase
+Method-parameters:[final HttpExecuteRequest request, final ApacheHttpRequestConfig requestConfig]
+MethodInvocation:getUri
+MethodInvocation:httpRequest
+MethodInvocation:createApacheRequest
+MethodInvocation:sanitizeUri
+MethodInvocation:addHeadersToRequest
+MethodInvocation:httpRequest
+MethodInvocation:addRequestConfig
+MethodInvocation:httpRequest
+Method-name:sanitizeUri
+Method-returnType:String
+Method-parameters:[URI uri]
+MethodInvocation:replace
+MethodInvocation:getPath
+MethodInvocation:replace
+MethodInvocation:toString
+MethodInvocation:getPath
+Method-name:createApacheRequest
+Method-returnType:HttpRequestBase
+Method-parameters:[HttpExecuteRequest request, String uri]
+MethodInvocation:method
+MethodInvocation:httpRequest
+MethodInvocation:wrapEntity
+MethodInvocation:wrapEntity
+MethodInvocation:wrapEntity
+MethodInvocation:method
+MethodInvocation:httpRequest
+Method-name:wrapEntity
+Method-returnType:HttpRequestBase
+Method-parameters:[HttpExecuteRequest request, HttpEntityEnclosingRequestBase entityEnclosingRequest]
+MethodInvocation:isPresent
+MethodInvocation:contentStreamProvider
+MethodInvocation:get
+MethodInvocation:headers
+MethodInvocation:httpRequest
+MethodInvocation:newBufferedHttpEntity
+MethodInvocation:setEntity
+Method-name:addHeadersToRequest
+Method-returnType:void
+Method-parameters:[HttpRequestBase httpRequest, SdkHttpRequest request]
+MethodInvocation:addHeader
+MethodInvocation:getHostHeaderValue
+MethodInvocation:forEach
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:entrySet
+MethodInvocation:headers
+MethodInvocation:contains
+MethodInvocation:getKey
+MethodInvocation:forEach
+MethodInvocation:getValue
+MethodInvocation:addHeader
+MethodInvocation:getKey
+Method-name:getHostHeaderValue
+Method-returnType:String
+Method-parameters:[SdkHttpRequest request]
+MethodInvocation:isUsingStandardPort
+MethodInvocation:protocol
+MethodInvocation:port
+MethodInvocation:host
+MethodInvocation:port
+MethodInvocation:host

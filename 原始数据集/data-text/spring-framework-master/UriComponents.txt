@@ -1,0 +1,157 @@
+Class:UriComponents
+Field:NAMES_PATTERN
+MethodInvocation:compile
+Field:scheme
+Field:fragment
+Method-name:UriComponents
+Method-returnType:null
+Method-parameters:[@Nullable String scheme, @Nullable String fragment]
+FieldAccess:scheme
+FieldAccess:fragment
+Method-name:getScheme
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:scheme
+Method-name:getFragment
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:fragment
+Method-name:getSchemeSpecificPart
+Method-returnType:String
+Method-parameters:[]
+Method-name:getUserInfo
+Method-returnType:String
+Method-parameters:[]
+Method-name:getHost
+Method-returnType:String
+Method-parameters:[]
+Method-name:getPort
+Method-returnType:int
+Method-parameters:[]
+Method-name:getPath
+Method-returnType:String
+Method-parameters:[]
+Method-name:getPathSegments
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:getQuery
+Method-returnType:String
+Method-parameters:[]
+Method-name:getQueryParams
+Method-returnType:MultiValueMap<String,String>
+Method-parameters:[]
+Method-name:encode
+Method-returnType:UriComponents
+Method-parameters:[]
+MethodInvocation:encode
+Method-name:encode
+Method-returnType:UriComponents
+Method-parameters:[Charset charset]
+Method-name:expand
+Method-returnType:UriComponents
+Method-parameters:[Map<String,?> uriVariables]
+MethodInvocation:notNull
+MethodInvocation:expandInternal
+Method-name:expand
+Method-returnType:UriComponents
+Method-parameters:[Object... uriVariableValues]
+MethodInvocation:notNull
+MethodInvocation:expandInternal
+Method-name:expand
+Method-returnType:UriComponents
+Method-parameters:[UriTemplateVariables uriVariables]
+MethodInvocation:notNull
+MethodInvocation:expandInternal
+Method-name:expandInternal
+Method-returnType:UriComponents
+Method-parameters:[UriTemplateVariables uriVariables]
+Method-name:normalize
+Method-returnType:UriComponents
+Method-parameters:[]
+Method-name:toUriString
+Method-returnType:String
+Method-parameters:[]
+Method-name:toUri
+Method-returnType:URI
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toUriString
+Method-name:copyToUriComponentsBuilder
+Method-returnType:void
+Method-parameters:[UriComponentsBuilder builder]
+Method-name:expandUriComponent
+Method-returnType:String
+Method-parameters:[@Nullable String source, UriTemplateVariables uriVariables]
+MethodInvocation:expandUriComponent
+Method-name:expandUriComponent
+Method-returnType:String
+Method-parameters:[@Nullable String source, UriTemplateVariables uriVariables, @Nullable UnaryOperator<String> encoder]
+MethodInvocation:indexOf
+MethodInvocation:indexOf
+MethodInvocation:sanitizeSource
+MethodInvocation:matcher
+MethodInvocation:find
+MethodInvocation:group
+MethodInvocation:getVariableName
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:getVariableValueAsString
+MethodInvocation:apply
+MethodInvocation:quoteReplacement
+MethodInvocation:appendReplacement
+MethodInvocation:appendTail
+MethodInvocation:toString
+Method-name:sanitizeSource
+Method-returnType:String
+Method-parameters:[String source]
+MethodInvocation:toCharArray
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:getVariableName
+Method-returnType:String
+Method-parameters:[String match]
+MethodInvocation:indexOf
+MethodInvocation:substring
+Method-name:getVariableValueAsString
+Method-returnType:String
+Method-parameters:[@Nullable Object variableValue]
+MethodInvocation:toString
+Method-name:createUri
+Method-returnType:URI
+Method-parameters:[DefaultUriTemplateHandler defaultUriTemplateHandler]
+MethodInvocation:toUriString
+MethodInvocation:getMessage
+Field:SKIP_VALUE
+Method-name:getValue
+Method-returnType:Object
+Method-parameters:[@Nullable String name]
+Class:MapTemplateVariables
+Field:uriVariables
+Method-name:MapTemplateVariables
+Method-returnType:null
+Method-parameters:[Map<String,?> uriVariables]
+FieldAccess:uriVariables
+Method-name:getValue
+Method-returnType:Object
+Method-parameters:[@Nullable String name]
+MethodInvocation:containsKey
+FieldAccess:uriVariables
+MethodInvocation:get
+FieldAccess:uriVariables
+Class:VarArgsTemplateVariables
+Field:valueIterator
+Method-name:VarArgsTemplateVariables
+Method-returnType:null
+Method-parameters:[Object... uriVariableValues]
+FieldAccess:valueIterator
+MethodInvocation:iterator
+MethodInvocation:asList
+Method-name:getValue
+Method-returnType:Object
+Method-parameters:[@Nullable String name]
+MethodInvocation:hasNext
+FieldAccess:valueIterator
+MethodInvocation:next
+FieldAccess:valueIterator

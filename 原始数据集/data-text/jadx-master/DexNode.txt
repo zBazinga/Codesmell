@@ -1,0 +1,205 @@
+Class:DexNode
+Field:LOG
+MethodInvocation:getLogger
+Field:NO_INDEX
+Field:root
+Field:dexBuf
+Field:file
+Field:dexId
+Field:classes
+Field:clsMap
+Field:typesCache
+Method-name:DexNode
+Method-returnType:null
+Method-parameters:[RootNode root, DexFile input, int dexId]
+FieldAccess:root
+FieldAccess:file
+FieldAccess:dexBuf
+MethodInvocation:getDexBuf
+FieldAccess:dexId
+FieldAccess:typesCache
+MethodInvocation:size
+MethodInvocation:typeIds
+Method-name:loadClasses
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:classDefs
+MethodInvocation:addClassNode
+MethodInvocation:addDummyClass
+MethodInvocation:sort
+MethodInvocation:comparing
+Method-name:addDummyClass
+Method-returnType:void
+Method-parameters:[ClassDef classDef, Exception exc]
+MethodInvocation:getTypeIndex
+MethodInvocation:fromDex
+MethodInvocation:getShortName
+MethodInvocation:error
+MethodInvocation:isEmpty
+MethodInvocation:getAccessFlags
+MethodInvocation:error
+MethodInvocation:addClassNode
+Method-name:addClassNode
+Method-returnType:void
+Method-parameters:[ClassNode clsNode]
+MethodInvocation:add
+MethodInvocation:put
+MethodInvocation:getClassInfo
+Method-name:initInnerClasses
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isInner
+MethodInvocation:getClassInfo
+MethodInvocation:add
+MethodInvocation:getClassInfo
+MethodInvocation:resolveClass
+MethodInvocation:getParentClass
+MethodInvocation:remove
+MethodInvocation:notInner
+MethodInvocation:put
+MethodInvocation:add
+MethodInvocation:addInnerClass
+MethodInvocation:getInnerClasses
+MethodInvocation:updateNames
+MethodInvocation:getClassInfo
+Method-name:getClasses
+Method-returnType:List<ClassNode>
+Method-parameters:[]
+Method-name:resolveClassLocal
+Method-returnType:ClassNode
+Method-parameters:[ClassInfo clsInfo]
+MethodInvocation:get
+Method-name:resolveClass
+Method-returnType:ClassNode
+Method-parameters:[ClassInfo clsInfo]
+MethodInvocation:resolveClassLocal
+MethodInvocation:resolveClass
+Method-name:resolveClass
+Method-returnType:ClassNode
+Method-parameters:[@NotNull ArgType type]
+MethodInvocation:isGeneric
+MethodInvocation:object
+MethodInvocation:getObject
+MethodInvocation:resolveClass
+MethodInvocation:fromType
+Method-name:resolveMethod
+Method-returnType:MethodNode
+Method-parameters:[@NotNull MethodInfo mth]
+MethodInvocation:resolveClass
+MethodInvocation:getDeclClass
+MethodInvocation:searchMethod
+Method-name:deepResolveMethod
+Method-returnType:MethodNode
+Method-parameters:[@NotNull ClassNode cls, String signature]
+MethodInvocation:getMethods
+MethodInvocation:startsWith
+MethodInvocation:getShortId
+MethodInvocation:getMethodInfo
+MethodInvocation:getSuperClass
+MethodInvocation:resolveClass
+MethodInvocation:deepResolveMethod
+MethodInvocation:getInterfaces
+MethodInvocation:resolveClass
+MethodInvocation:deepResolveMethod
+Method-name:resolveField
+Method-returnType:FieldNode
+Method-parameters:[FieldInfo field]
+MethodInvocation:resolveClass
+MethodInvocation:getDeclClass
+MethodInvocation:searchField
+Method-name:deepResolveField
+Method-returnType:FieldNode
+Method-parameters:[@NotNull ClassNode cls, FieldInfo fieldInfo]
+MethodInvocation:searchFieldByNameAndType
+MethodInvocation:getSuperClass
+MethodInvocation:resolveClass
+MethodInvocation:deepResolveField
+MethodInvocation:getInterfaces
+MethodInvocation:resolveClass
+MethodInvocation:deepResolveField
+Method-name:getDexFile
+Method-returnType:DexFile
+Method-parameters:[]
+Method-name:getString
+Method-returnType:String
+Method-parameters:[int index]
+MethodInvocation:get
+MethodInvocation:strings
+Method-name:getType
+Method-returnType:ArgType
+Method-parameters:[int index]
+MethodInvocation:parse
+MethodInvocation:getString
+MethodInvocation:get
+MethodInvocation:typeIds
+Method-name:getMethodId
+Method-returnType:MethodId
+Method-parameters:[int mthIndex]
+MethodInvocation:get
+MethodInvocation:methodIds
+Method-name:getFieldId
+Method-returnType:FieldId
+Method-parameters:[int fieldIndex]
+MethodInvocation:get
+MethodInvocation:fieldIds
+Method-name:getProtoId
+Method-returnType:ProtoId
+Method-parameters:[int protoIndex]
+MethodInvocation:get
+MethodInvocation:protoIds
+Method-name:readClassData
+Method-returnType:ClassData
+Method-parameters:[ClassDef cls]
+MethodInvocation:readClassData
+Method-name:readParamList
+Method-returnType:List<ArgType>
+Method-parameters:[int parametersOffset]
+MethodInvocation:readTypeList
+FieldAccess:length
+MethodInvocation:getTypes
+MethodInvocation:getTypes
+MethodInvocation:add
+MethodInvocation:getType
+MethodInvocation:unmodifiableList
+Method-name:readCode
+Method-returnType:Code
+Method-parameters:[Method mth]
+MethodInvocation:readCode
+Method-name:openSection
+Method-returnType:Section
+Method-parameters:[int offset]
+MethodInvocation:open
+Method-name:checkOffset
+Method-returnType:boolean
+Method-parameters:[int dataOffset]
+MethodInvocation:getLength
+Method-name:root
+Method-returnType:RootNode
+Method-parameters:[]
+Method-name:dex
+Method-returnType:DexNode
+Method-parameters:[]
+Method-name:typeName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getDexId
+Method-returnType:int
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:getResourceField
+Method-returnType:FieldNode
+Method-parameters:[Integer value, ConstStorage constStorage]
+MethodInvocation:get
+MethodInvocation:getResourcesNames
+MethodInvocation:getAppResClass
+MethodInvocation:root
+MethodInvocation:split
+MethodInvocation:getInnerClasses
+MethodInvocation:equals
+MethodInvocation:getShortName
+MethodInvocation:getClassInfo
+MethodInvocation:searchFieldByName
+MethodInvocation:addWarn
+MethodInvocation:replace

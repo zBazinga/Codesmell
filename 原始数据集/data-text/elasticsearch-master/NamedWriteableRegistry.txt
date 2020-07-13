@@ -1,0 +1,47 @@
+Class:NamedWriteableRegistry
+Method-name:createComponents
+Method-returnType:Collection<Object>
+Method-parameters:[Client client, String clusterName, EqlPlugin eqlPlugin]
+MethodInvocation:asList
+Class:Entry
+Field:categoryClass
+Field:name
+Field:reader
+Method-name:Entry
+Method-returnType:null
+Method-parameters:[Class<T> categoryClass, String name, Writeable.Reader<? extends T> reader]
+FieldAccess:categoryClass
+MethodInvocation:requireNonNull
+FieldAccess:name
+MethodInvocation:requireNonNull
+FieldAccess:reader
+MethodInvocation:requireNonNull
+Field:registry
+Method-name:NamedWriteableRegistry
+Method-returnType:null
+Method-parameters:[List<Entry> entries]
+MethodInvocation:isEmpty
+MethodInvocation:emptyMap
+MethodInvocation:sort
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+FieldAccess:registry
+MethodInvocation:unmodifiableMap
+Method-name:getReader
+Method-returnType:Writeable.Reader<? extends T>
+Method-parameters:[Class<T> categoryClass, String name]
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:get
+MethodInvocation:getName

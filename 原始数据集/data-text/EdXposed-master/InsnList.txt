@@ -1,0 +1,50 @@
+Class:InsnList
+Method-name:InsnList
+Method-returnType:null
+Method-parameters:[int size]
+Method-name:get
+Method-returnType:Insn
+Method-parameters:[int n]
+MethodInvocation:get0
+Method-name:set
+Method-returnType:void
+Method-parameters:[int n, Insn insn]
+MethodInvocation:set0
+Method-name:getLast
+Method-returnType:Insn
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:size
+Method-name:forEach
+Method-returnType:void
+Method-parameters:[Insn.Visitor visitor]
+MethodInvocation:size
+MethodInvocation:accept
+MethodInvocation:get
+Method-name:contentEquals
+Method-returnType:boolean
+Method-parameters:[InsnList b]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:contentEquals
+MethodInvocation:get
+MethodInvocation:get
+Method-name:withRegisterOffset
+Method-returnType:InsnList
+Method-parameters:[int delta]
+MethodInvocation:size
+MethodInvocation:get0
+MethodInvocation:set0
+MethodInvocation:withRegisterOffset
+MethodInvocation:isImmutable
+MethodInvocation:setImmutable
+Method-name:filterMoveReturnAddressInsns
+Method-returnType:InsnList
+Method-parameters:[Ropper ropper]
+MethodInvocation:size
+MethodInvocation:getOpcode
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getOpcode
+MethodInvocation:set
+MethodInvocation:setImmutable

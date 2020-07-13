@@ -1,0 +1,292 @@
+Class:TCell
+Field:STRUCT_DESC
+Field:VALUE_FIELD_DESC
+Field:TIMESTAMP_FIELD_DESC
+Field:STANDARD_SCHEME_FACTORY
+Field:TUPLE_SCHEME_FACTORY
+Field:value
+Field:timestamp
+Method-name:setCell
+Method-returnType:TColumn
+Method-parameters:[TColumn tColumn]
+Field:_Fields
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[java.lang.String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, java.lang.String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:java.lang.String
+Method-parameters:[]
+Field:__TIMESTAMP_ISSET_ID
+Field:__isset_bitfield
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:TCell
+Method-returnType:null
+Method-parameters:[]
+Method-name:TCell
+Method-returnType:null
+Method-parameters:[java.nio.ByteBuffer value, long timestamp]
+FieldAccess:value
+MethodInvocation:copyBinary
+FieldAccess:timestamp
+MethodInvocation:setTimestampIsSet
+Method-name:TCell
+Method-returnType:null
+Method-parameters:[TCell other]
+MethodInvocation:isSetValue
+FieldAccess:value
+MethodInvocation:copyBinary
+FieldAccess:timestamp
+Method-name:deepCopy
+Method-returnType:TCell
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:value
+MethodInvocation:setTimestampIsSet
+FieldAccess:timestamp
+Method-name:getValue
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:setValue
+MethodInvocation:rightSize
+MethodInvocation:array
+Method-name:bufferForValue
+Method-returnType:java.nio.ByteBuffer
+Method-parameters:[]
+MethodInvocation:copyBinary
+Method-name:setValue
+Method-returnType:TCell
+Method-parameters:[byte[] value]
+FieldAccess:value
+MethodInvocation:wrap
+MethodInvocation:clone
+Method-name:setValue
+Method-returnType:TCell
+Method-parameters:[@org.apache.thrift.annotation.Nullable java.nio.ByteBuffer value]
+FieldAccess:value
+MethodInvocation:copyBinary
+Method-name:unsetValue
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:value
+Method-name:isSetValue
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:value
+Method-name:setValueIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:value
+Method-name:getTimestamp
+Method-returnType:long
+Method-parameters:[]
+FieldAccess:timestamp
+Method-name:setTimestamp
+Method-returnType:TCell
+Method-parameters:[long timestamp]
+FieldAccess:timestamp
+MethodInvocation:setTimestampIsSet
+Method-name:unsetTimestamp
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clearBit
+Method-name:isSetTimestamp
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:testBit
+Method-name:setTimestampIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+MethodInvocation:setBit
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, @org.apache.thrift.annotation.Nullable java.lang.Object value]
+MethodInvocation:unsetValue
+MethodInvocation:setValue
+MethodInvocation:setValue
+MethodInvocation:unsetTimestamp
+MethodInvocation:setTimestamp
+Method-name:getFieldValue
+Method-returnType:java.lang.Object
+Method-parameters:[_Fields field]
+MethodInvocation:getValue
+MethodInvocation:getTimestamp
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:isSetValue
+MethodInvocation:isSetTimestamp
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[java.lang.Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[TCell that]
+MethodInvocation:isSetValue
+MethodInvocation:isSetValue
+MethodInvocation:equals
+FieldAccess:value
+FieldAccess:timestamp
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSetValue
+MethodInvocation:isSetValue
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[TCell other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetValue
+MethodInvocation:isSetValue
+MethodInvocation:isSetValue
+MethodInvocation:compareTo
+FieldAccess:value
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetTimestamp
+MethodInvocation:isSetTimestamp
+MethodInvocation:isSetTimestamp
+MethodInvocation:compareTo
+FieldAccess:timestamp
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:scheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:scheme
+Method-name:toString
+Method-returnType:java.lang.String
+Method-parameters:[]
+MethodInvocation:append
+FieldAccess:value
+MethodInvocation:append
+MethodInvocation:toString
+FieldAccess:value
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:timestamp
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:TCellStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:TCellStandardScheme
+Method-parameters:[]
+Class:TCellStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, TCell struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readBinary
+MethodInvocation:setValueIsSet
+MethodInvocation:skip
+MethodInvocation:readI64
+MethodInvocation:setTimestampIsSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, TCell struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeBinary
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeI64
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:TCellTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:TCellTupleScheme
+Method-parameters:[]
+Class:TCellTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, TCell struct]
+MethodInvocation:isSetValue
+MethodInvocation:set
+MethodInvocation:isSetTimestamp
+MethodInvocation:set
+MethodInvocation:writeBitSet
+MethodInvocation:isSetValue
+MethodInvocation:writeBinary
+MethodInvocation:isSetTimestamp
+MethodInvocation:writeI64
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, TCell struct]
+MethodInvocation:readBitSet
+MethodInvocation:get
+MethodInvocation:readBinary
+MethodInvocation:setValueIsSet
+MethodInvocation:get
+MethodInvocation:readI64
+MethodInvocation:setTimestampIsSet
+Method-name:scheme
+Method-returnType:S
+Method-parameters:[org.apache.thrift.protocol.TProtocol proto]
+MethodInvocation:getScheme
+MethodInvocation:equals
+MethodInvocation:getScheme

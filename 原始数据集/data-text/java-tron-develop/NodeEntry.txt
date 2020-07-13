@@ -1,0 +1,62 @@
+Class:NodeEntry
+Field:ownerId
+Field:node
+Field:entryId
+Field:distance
+Field:modified
+Method-name:NodeEntry
+Method-returnType:null
+Method-parameters:[Node n]
+FieldAccess:node
+FieldAccess:ownerId
+MethodInvocation:getId
+MethodInvocation:getHost
+MethodInvocation:distance
+MethodInvocation:getId
+MethodInvocation:touch
+Method-name:NodeEntry
+Method-returnType:null
+Method-parameters:[byte[] ownerId, Node n]
+FieldAccess:node
+FieldAccess:ownerId
+MethodInvocation:getHost
+MethodInvocation:distance
+MethodInvocation:getId
+MethodInvocation:touch
+Method-name:distance
+Method-returnType:int
+Method-parameters:[byte[] ownerId, byte[] targetId]
+MethodInvocation:min
+Method-name:touch
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:currentTimeMillis
+Method-name:getDistance
+Method-returnType:int
+Method-parameters:[]
+Method-name:getId
+Method-returnType:String
+Method-parameters:[]
+Method-name:getNode
+Method-returnType:Node
+Method-parameters:[]
+Method-name:getModified
+Method-returnType:long
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:getId
+MethodInvocation:getId
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+FieldAccess:node
+Method-name:getBucketId
+Method-returnType:int
+Method-parameters:[NodeTable nodeTable]
+MethodInvocation:getDistance

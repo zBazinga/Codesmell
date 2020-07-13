@@ -1,0 +1,372 @@
+Class:NodeStyleController
+Field:standardNodeTextColor
+Method-name:getController
+Method-returnType:NodeStyleController
+Method-parameters:[]
+MethodInvocation:getCurrentModeController
+MethodInvocation:getController
+Method-name:getController
+Method-returnType:NodeStyleController
+Method-parameters:[ModeController modeController]
+MethodInvocation:getExtension
+Method-name:install
+Method-returnType:void
+Method-parameters:[final NodeStyleController styleController]
+MethodInvocation:getCurrentModeController
+MethodInvocation:addExtension
+Field:backgroundColorHandlers
+Field:fontHandlers
+Field:modeController
+Field:shapeHandlers
+Field:textColorHandlers
+Field:horizontalTextAlignmentHandlers
+Field:NODE_NUMBERING
+Field:DEFAULT_MINIMUM_WIDTH
+Field:DEFAULT_MAXIMUM_WIDTH
+Field:DEFAULT_BORDER_WIDTH
+Method-name:NodeStyleController
+Method-returnType:null
+Method-parameters:[final ModeController modeController]
+FieldAccess:modeController
+MethodInvocation:addFontGetter
+Method-name:getProperty
+Method-returnType:Font
+Method-parameters:[final NodeModel node, final Font currentValue]
+MethodInvocation:getDefaultFont
+MethodInvocation:addFontGetter
+Method-name:getProperty
+Method-returnType:Font
+Method-parameters:[final NodeModel node, final Font currentValue]
+MethodInvocation:getStyleFont
+MethodInvocation:getMap
+MethodInvocation:getStyles
+MethodInvocation:getController
+MethodInvocation:addColorGetter
+Method-name:getProperty
+Method-returnType:Color
+Method-parameters:[final NodeModel node, final Color currentValue]
+MethodInvocation:addColorGetter
+Method-name:getProperty
+Method-returnType:Color
+Method-parameters:[final NodeModel node, final Color currentValue]
+MethodInvocation:getStyleTextColor
+MethodInvocation:getMap
+MethodInvocation:getStyles
+MethodInvocation:getController
+MethodInvocation:addBackgroundColorGetter
+Method-name:getProperty
+Method-returnType:Color
+Method-parameters:[final NodeModel node, final Color currentValue]
+MethodInvocation:getStyleBackgroundColor
+MethodInvocation:getMap
+MethodInvocation:getStyles
+MethodInvocation:getController
+MethodInvocation:addShapeGetter
+Method-name:getProperty
+Method-returnType:ShapeConfigurationModel
+Method-parameters:[final NodeModel node, final ShapeConfigurationModel currentValue]
+MethodInvocation:getMap
+MethodInvocation:getController
+MethodInvocation:getStyles
+MethodInvocation:getStyleShape
+MethodInvocation:addShapeGetter
+Method-name:getProperty
+Method-returnType:ShapeConfigurationModel
+Method-parameters:[final NodeModel node, final ShapeConfigurationModel currentValue]
+MethodInvocation:addTextAlignGetter
+Method-name:getProperty
+Method-returnType:HorizontalTextAlignment
+Method-parameters:[final NodeModel node, final HorizontalTextAlignment currentValue]
+MethodInvocation:addTextAlignGetter
+Method-name:getProperty
+Method-returnType:HorizontalTextAlignment
+Method-parameters:[final NodeModel node, final HorizontalTextAlignment currentValue]
+MethodInvocation:getHorizontalTextAlignment
+MethodInvocation:getMap
+MethodInvocation:getStyles
+MethodInvocation:getController
+MethodInvocation:getMapController
+MethodInvocation:getReadManager
+MethodInvocation:getWriteManager
+MethodInvocation:registerBy
+Method-name:addBackgroundColorGetter
+Method-returnType:IPropertyHandler<Color,NodeModel>
+Method-parameters:[final Integer key, final IPropertyHandler<Color,NodeModel> getter]
+MethodInvocation:addGetter
+Method-name:addColorGetter
+Method-returnType:IPropertyHandler<Color,NodeModel>
+Method-parameters:[final Integer key, final IPropertyHandler<Color,NodeModel> getter]
+MethodInvocation:addGetter
+Method-name:addTextAlignGetter
+Method-returnType:IPropertyHandler<HorizontalTextAlignment,NodeModel>
+Method-parameters:[final Integer key, final IPropertyHandler<HorizontalTextAlignment,NodeModel> getter]
+MethodInvocation:addGetter
+Method-name:addFontGetter
+Method-returnType:IPropertyHandler<Font,NodeModel>
+Method-parameters:[final Integer key, final IPropertyHandler<Font,NodeModel> getter]
+MethodInvocation:addGetter
+Method-name:addShapeGetter
+Method-returnType:IPropertyHandler<ShapeConfigurationModel,NodeModel>
+Method-parameters:[final Integer key, final IPropertyHandler<ShapeConfigurationModel,NodeModel> getter]
+MethodInvocation:addGetter
+Method-name:getBackgroundColor
+Method-returnType:Color
+Method-parameters:[final NodeModel node]
+MethodInvocation:getProperty
+Method-name:getColor
+Method-returnType:Color
+Method-parameters:[final NodeModel node]
+MethodInvocation:getProperty
+Method-name:getStyleBackgroundColor
+Method-returnType:Color
+Method-parameters:[final MapModel map, final Collection<IStyle> styleKeys]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getBackgroundColor
+Method-name:getMaxNodeWidth
+Method-returnType:Quantity<LengthUnits>
+Method-parameters:[final MapModel map, final Collection<IStyle> styleKeys]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getMaxNodeWidth
+Method-name:getStyleMinWidth
+Method-returnType:Quantity<LengthUnits>
+Method-parameters:[final MapModel map, final Collection<IStyle> styleKeys]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getMinNodeWidth
+Method-name:getBorderWidthMatchesEdgeWidth
+Method-returnType:Boolean
+Method-parameters:[final MapModel map, final Collection<IStyle> styleKeys]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getBorderWidthMatchesEdgeWidth
+Method-name:getBorderWidth
+Method-returnType:Quantity<LengthUnits>
+Method-parameters:[final MapModel map, final Collection<IStyle> styleKeys]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getBorderWidth
+Method-name:getBorderDashMatchesEdgeDash
+Method-returnType:Boolean
+Method-parameters:[final MapModel map, final Collection<IStyle> styleKeys]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getBorderDashMatchesEdgeDash
+Method-name:getBorderDash
+Method-returnType:DashVariant
+Method-parameters:[final MapModel map, final Collection<IStyle> styleKeys]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getBorderDash
+Method-name:getBorderColorMatchesEdgeColor
+Method-returnType:Boolean
+Method-parameters:[final MapModel map, final Collection<IStyle> styleKeys]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getBorderColorMatchesEdgeColor
+Method-name:getBorderColor
+Method-returnType:Color
+Method-parameters:[final MapModel map, final Collection<IStyle> styleKeys]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getBorderColor
+Method-name:getDefaultFont
+Method-returnType:Font
+Method-parameters:[]
+MethodInvocation:getDefaultFontSize
+MethodInvocation:getDefaultFontStyle
+MethodInvocation:getDefaultFontFamilyName
+Method-name:getDefaultFontFamilyName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getProperty
+MethodInvocation:getResourceController
+Method-name:getDefaultFontStyle
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getIntProperty
+MethodInvocation:getResourceController
+Method-name:getDefaultFontSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getIntProperty
+MethodInvocation:getResourceController
+Method-name:getDefaultFont
+Method-returnType:Font
+Method-parameters:[final MapModel map, final IStyle style]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNodeSafe
+MethodInvocation:getFont
+Method-name:getStyleFont
+Method-returnType:Font
+Method-parameters:[final Font baseFont, final MapModel map, final Collection<IStyle> collection]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:isBold
+MethodInvocation:isStrikedThrough
+MethodInvocation:isItalic
+MethodInvocation:getFontFamilyName
+MethodInvocation:getFontSize
+MethodInvocation:createFont
+Method-name:getHorizontalTextAlignment
+Method-returnType:HorizontalTextAlignment
+Method-parameters:[final NodeModel node]
+MethodInvocation:getProperty
+Method-name:createFont
+Method-returnType:Font
+Method-parameters:[final Font baseFont, String family, Integer size, Boolean bold, Boolean italic, Boolean strikedThrough]
+MethodInvocation:getFamily
+MethodInvocation:getSize
+MethodInvocation:isBold
+MethodInvocation:isItalic
+MethodInvocation:strikeThrough
+Method-name:getStyleShape
+Method-returnType:ShapeConfigurationModel
+Method-parameters:[final MapModel map, final Collection<IStyle> style]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getShapeConfiguration
+MethodInvocation:getShape
+Method-name:getStyleTextColor
+Method-returnType:Color
+Method-parameters:[final MapModel map, final Collection<IStyle> collection]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getColor
+Method-name:getHorizontalTextAlignment
+Method-returnType:HorizontalTextAlignment
+Method-parameters:[final MapModel map, final Collection<IStyle> style]
+MethodInvocation:getExtension
+MethodInvocation:getStyleNode
+MethodInvocation:getModel
+MethodInvocation:getHorizontalTextAlignment
+Method-name:getFont
+Method-returnType:Font
+Method-parameters:[final NodeModel node]
+MethodInvocation:getProperty
+Method-name:getFontFamilyName
+Method-returnType:String
+Method-parameters:[final NodeModel node]
+MethodInvocation:getFont
+MethodInvocation:getFamily
+Method-name:getFontSize
+Method-returnType:int
+Method-parameters:[final NodeModel node]
+MethodInvocation:getFont
+MethodInvocation:getSize
+Method-name:getShape
+Method-returnType:Shape
+Method-parameters:[final NodeModel node]
+MethodInvocation:getProperty
+MethodInvocation:getShape
+Method-name:getShapeConfiguration
+Method-returnType:ShapeConfigurationModel
+Method-parameters:[NodeModel node]
+MethodInvocation:getProperty
+Method-name:isBold
+Method-returnType:boolean
+Method-parameters:[final NodeModel node]
+MethodInvocation:isBold
+MethodInvocation:getFont
+Method-name:isItalic
+Method-returnType:boolean
+Method-parameters:[final NodeModel node]
+MethodInvocation:isItalic
+MethodInvocation:getFont
+Method-name:getNodeFormat
+Method-returnType:String
+Method-parameters:[NodeModel node]
+MethodInvocation:getStyles
+MethodInvocation:getController
+MethodInvocation:getExtension
+MethodInvocation:getMap
+MethodInvocation:getStyleNode
+MethodInvocation:getNodeFormat
+Method-name:getNodeNumbering
+Method-returnType:boolean
+Method-parameters:[NodeModel node]
+MethodInvocation:isFirstGroupNode
+MethodInvocation:isSummaryNode
+MethodInvocation:getStyles
+MethodInvocation:getController
+MethodInvocation:getExtension
+MethodInvocation:getMap
+MethodInvocation:getStyleNode
+MethodInvocation:getNodeNumbering
+Method-name:getMaxWidth
+Method-returnType:Quantity<LengthUnits>
+Method-parameters:[NodeModel node]
+MethodInvocation:getMap
+MethodInvocation:getController
+MethodInvocation:getStyles
+MethodInvocation:getMaxNodeWidth
+Method-name:getMinWidth
+Method-returnType:Quantity<LengthUnits>
+Method-parameters:[NodeModel node]
+MethodInvocation:getMap
+MethodInvocation:getController
+MethodInvocation:getStyles
+MethodInvocation:getStyleMinWidth
+Method-name:getModeController
+Method-returnType:ModeController
+Method-parameters:[]
+Method-name:getBorderWidthMatchesEdgeWidth
+Method-returnType:Boolean
+Method-parameters:[NodeModel node]
+MethodInvocation:getMap
+MethodInvocation:getController
+MethodInvocation:getStyles
+MethodInvocation:getBorderWidthMatchesEdgeWidth
+Method-name:getBorderDashMatchesEdgeDash
+Method-returnType:Boolean
+Method-parameters:[NodeModel node]
+MethodInvocation:getMap
+MethodInvocation:getController
+MethodInvocation:getStyles
+MethodInvocation:getBorderDashMatchesEdgeDash
+Method-name:getBorderWidth
+Method-returnType:Quantity<LengthUnits>
+Method-parameters:[NodeModel node]
+MethodInvocation:getMap
+MethodInvocation:getController
+MethodInvocation:getStyles
+MethodInvocation:getBorderWidth
+Method-name:getBorderDash
+Method-returnType:DashVariant
+Method-parameters:[NodeModel node]
+MethodInvocation:getMap
+MethodInvocation:getController
+MethodInvocation:getStyles
+MethodInvocation:getBorderDash
+Method-name:getBorderColorMatchesEdgeColor
+Method-returnType:Boolean
+Method-parameters:[NodeModel node]
+MethodInvocation:getMap
+MethodInvocation:getController
+MethodInvocation:getStyles
+MethodInvocation:getBorderColorMatchesEdgeColor
+Method-name:getBorderColor
+Method-returnType:Color
+Method-parameters:[NodeModel node]
+MethodInvocation:getMap
+MethodInvocation:getController
+MethodInvocation:getStyles
+MethodInvocation:getBorderColor
+Method-name:isStrikedThrough
+Method-returnType:boolean
+Method-parameters:[NodeModel node]
+MethodInvocation:isStrikedThrough
+MethodInvocation:getFont

@@ -1,0 +1,779 @@
+Class:MultiUserChat
+Field:LOGGER
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:KNOWN_MUC_SERVICES
+Field:connection
+Field:room
+Field:multiUserChatManager
+Field:occupantsMap
+Field:invitationRejectionListeners
+Field:subjectUpdatedListeners
+Field:userStatusListeners
+Field:participantStatusListeners
+Field:messageListeners
+Field:presenceListeners
+Field:presenceInterceptors
+Field:fromRoomFilter
+Field:fromRoomGroupchatFilter
+Field:presenceInterceptor
+Field:messageListener
+Field:presenceListener
+Field:subjectListener
+Field:DECLINE_FILTER
+Field:declinesListener
+Field:subject
+Field:myRoomJid
+Field:messageCollector
+Method-name:MultiUserChat
+Method-returnType:null
+Method-parameters:[XMPPConnection connection, EntityBareJid room, MultiUserChatManager multiUserChatManager]
+FieldAccess:connection
+FieldAccess:room
+FieldAccess:multiUserChatManager
+MethodInvocation:create
+Method-name:processStanza
+Method-returnType:void
+Method-parameters:[Stanza packet]
+MethodInvocation:processMessage
+Method-name:processStanza
+Method-returnType:void
+Method-parameters:[Stanza packet]
+MethodInvocation:asEntityFullJidIfPossible
+MethodInvocation:getFrom
+MethodInvocation:getSubject
+MethodInvocation:subjectUpdated
+MethodInvocation:getSubject
+Method-name:processStanza
+Method-returnType:void
+Method-parameters:[final Stanza packet]
+MethodInvocation:asEntityFullJidIfPossible
+MethodInvocation:getFrom
+MethodInvocation:equals
+MethodInvocation:getFrom
+MethodInvocation:getType
+MethodInvocation:put
+MethodInvocation:from
+MethodInvocation:getAffiliation
+MethodInvocation:getItem
+MethodInvocation:getRole
+MethodInvocation:getItem
+MethodInvocation:from
+MethodInvocation:getAffiliation
+MethodInvocation:getItem
+MethodInvocation:getRole
+MethodInvocation:getItem
+MethodInvocation:checkRoleModifications
+MethodInvocation:checkAffiliationModifications
+MethodInvocation:joined
+MethodInvocation:remove
+MethodInvocation:from
+MethodInvocation:hasStatus
+MethodInvocation:userHasLeft
+MethodInvocation:checkPresenceCode
+MethodInvocation:getStatus
+MethodInvocation:left
+MethodInvocation:getDestroy
+MethodInvocation:getJid
+MethodInvocation:getMultiUserChat
+MethodInvocation:roomDestroyed
+MethodInvocation:getReason
+MethodInvocation:removed
+MethodInvocation:parted
+MethodInvocation:processPresence
+Method-name:processStanza
+Method-returnType:void
+Method-parameters:[Stanza packet]
+MethodInvocation:from
+MethodInvocation:getDecline
+MethodInvocation:fireInvitationRejectionListeners
+Method-name:processStanza
+Method-returnType:void
+Method-parameters:[Stanza packet]
+MethodInvocation:processPresence
+Method-name:getRoom
+Method-returnType:EntityBareJid
+Method-parameters:[]
+Method-name:enter
+Method-returnType:Presence
+Method-parameters:[MucEnterConfiguration conf]
+MethodInvocation:asDomainBareJid
+MethodInvocation:containsKey
+MethodInvocation:providesMucService
+MethodInvocation:put
+MethodInvocation:getJoinPresence
+MethodInvocation:addStanzaListener
+MethodInvocation:addStanzaListener
+MethodInvocation:addStanzaListener
+MethodInvocation:addStanzaListener
+MethodInvocation:addStanzaSendingListener
+MethodInvocation:create
+MethodInvocation:createStanzaCollector
+MethodInvocation:createBare
+MethodInvocation:getRoom
+MethodInvocation:createFull
+MethodInvocation:getTo
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:setStanzaFilter
+MethodInvocation:setCollectorToReset
+MethodInvocation:newConfiguration
+MethodInvocation:createStanzaCollector
+MethodInvocation:nextResultOrThrow
+MethodInvocation:getTimeout
+MethodInvocation:removeConnectionCallbacks
+MethodInvocation:cancel
+MethodInvocation:getResourceOrThrow
+MethodInvocation:getFrom
+MethodInvocation:setNickname
+MethodInvocation:addJoinedRoom
+Method-name:setNickname
+Method-returnType:void
+Method-parameters:[Resourcepart nickname]
+FieldAccess:myRoomJid
+MethodInvocation:entityFullFrom
+Method-name:getEnterConfigurationBuilder
+Method-returnType:MucEnterConfiguration.Builder
+Method-parameters:[Resourcepart nickname]
+Method-name:create
+Method-returnType:MucCreateConfigFormHandle
+Method-parameters:[Resourcepart nickname]
+MethodInvocation:isJoined
+MethodInvocation:createOrJoin
+MethodInvocation:leave
+MethodInvocation:log
+Method-name:createOrJoin
+Method-returnType:MucCreateConfigFormHandle
+Method-parameters:[Resourcepart nickname]
+MethodInvocation:build
+MethodInvocation:getEnterConfigurationBuilder
+MethodInvocation:createOrJoin
+Method-name:createOrJoin
+Method-returnType:MucCreateConfigFormHandle
+Method-parameters:[MucEnterConfiguration mucEnterConfiguration]
+MethodInvocation:isJoined
+MethodInvocation:enter
+MethodInvocation:from
+MethodInvocation:contains
+MethodInvocation:getStatus
+Method-name:encrypt
+Method-returnType:OmemoMessage.Sent
+Method-parameters:[String message, OmemoManager omemoManager]
+MethodInvocation:multiUserChatSupportsOmemo
+MethodInvocation:getOccupants
+MethodInvocation:add
+MethodInvocation:asBareJid
+MethodInvocation:getJid
+MethodInvocation:getOccupant
+MethodInvocation:encrypt
+Class:MucCreateConfigFormHandle
+Method-name:makeInstant
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:sendConfigurationForm
+Method-name:getConfigFormManager
+Method-returnType:MucConfigFormManager
+Method-parameters:[]
+MethodInvocation:getConfigFormManager
+Method-name:createOrJoinIfNecessary
+Method-returnType:MucCreateConfigFormHandle
+Method-parameters:[Resourcepart nickname, String password]
+MethodInvocation:isJoined
+MethodInvocation:build
+MethodInvocation:withPassword
+MethodInvocation:getEnterConfigurationBuilder
+MethodInvocation:createOrJoin
+Method-name:join
+Method-returnType:void
+Method-parameters:[Resourcepart nickname]
+MethodInvocation:getEnterConfigurationBuilder
+MethodInvocation:join
+MethodInvocation:build
+Method-name:join
+Method-returnType:void
+Method-parameters:[Resourcepart nickname, String password]
+MethodInvocation:withPassword
+MethodInvocation:getEnterConfigurationBuilder
+MethodInvocation:join
+MethodInvocation:build
+Method-name:join
+Method-returnType:void
+Method-parameters:[MucEnterConfiguration mucEnterConfiguration]
+MethodInvocation:isJoined
+MethodInvocation:leaveSync
+MethodInvocation:log
+MethodInvocation:enter
+Method-name:isJoined
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:leaveSync
+Method-returnType:Presence
+Method-parameters:[]
+MethodInvocation:leave
+Method-name:leave
+Method-returnType:Presence
+Method-parameters:[]
+FieldAccess:myRoomJid
+MethodInvocation:build
+MethodInvocation:to
+MethodInvocation:ofType
+MethodInvocation:buildPresenceStanza
+MethodInvocation:getStanzaFactory
+MethodInvocation:createFull
+MethodInvocation:userHasLeft
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:getConfigFormManager
+Method-returnType:MucConfigFormManager
+Method-parameters:[]
+Method-name:getConfigurationForm
+Method-returnType:Form
+Method-parameters:[]
+MethodInvocation:setTo
+MethodInvocation:setType
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:from
+Method-name:sendConfigurationForm
+Method-returnType:void
+Method-parameters:[FillableForm form]
+MethodInvocation:getDataFormToSubmit
+MethodInvocation:build
+MethodInvocation:builder
+MethodInvocation:setTo
+MethodInvocation:setType
+MethodInvocation:addExtension
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:getRegistrationForm
+Method-returnType:Form
+Method-parameters:[]
+MethodInvocation:setType
+MethodInvocation:setTo
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:from
+Method-name:sendRegistrationForm
+Method-returnType:void
+Method-parameters:[FillableForm form]
+MethodInvocation:setType
+MethodInvocation:setTo
+MethodInvocation:addExtension
+MethodInvocation:getDataFormToSubmit
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:destroy
+Method-returnType:void
+Method-parameters:[String reason, EntityBareJid alternateJID]
+MethodInvocation:setTo
+MethodInvocation:setType
+MethodInvocation:setDestroy
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:userHasLeft
+MethodInvocation:userHasLeft
+Method-name:invite
+Method-returnType:void
+Method-parameters:[EntityBareJid user, String reason]
+MethodInvocation:invite
+MethodInvocation:buildMessageStanza
+MethodInvocation:getStanzaFactory
+Method-name:invite
+Method-returnType:void
+Method-parameters:[Message message, EntityBareJid user, String reason]
+MethodInvocation:setTo
+MethodInvocation:setInvite
+MethodInvocation:addExtension
+MethodInvocation:sendStanza
+Method-name:invite
+Method-returnType:void
+Method-parameters:[MessageBuilder messageBuilder, EntityBareJid user, String reason]
+MethodInvocation:to
+MethodInvocation:setInvite
+MethodInvocation:addExtension
+MethodInvocation:build
+MethodInvocation:sendStanza
+Method-name:addInvitationRejectionListener
+Method-returnType:boolean
+Method-parameters:[InvitationRejectionListener listener]
+MethodInvocation:add
+Method-name:removeInvitationRejectionListener
+Method-returnType:boolean
+Method-parameters:[InvitationRejectionListener listener]
+MethodInvocation:remove
+Method-name:fireInvitationRejectionListeners
+Method-returnType:void
+Method-parameters:[Message message, MUCUser.Decline rejection]
+MethodInvocation:getFrom
+MethodInvocation:getReason
+MethodInvocation:size
+MethodInvocation:toArray
+MethodInvocation:invitationDeclined
+Method-name:addSubjectUpdatedListener
+Method-returnType:boolean
+Method-parameters:[SubjectUpdatedListener listener]
+MethodInvocation:add
+Method-name:removeSubjectUpdatedListener
+Method-returnType:boolean
+Method-parameters:[SubjectUpdatedListener listener]
+MethodInvocation:remove
+Method-name:addPresenceInterceptor
+Method-returnType:void
+Method-parameters:[PresenceListener presenceInterceptor]
+MethodInvocation:add
+Method-name:removePresenceInterceptor
+Method-returnType:void
+Method-parameters:[PresenceListener presenceInterceptor]
+MethodInvocation:remove
+Method-name:getSubject
+Method-returnType:String
+Method-parameters:[]
+Method-name:getReservedNickname
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:discoverInfo
+MethodInvocation:getInstanceFor
+MethodInvocation:getIdentities
+MethodInvocation:getName
+MethodInvocation:log
+Method-name:getNickname
+Method-returnType:Resourcepart
+Method-parameters:[]
+FieldAccess:myRoomJid
+MethodInvocation:getResourcepart
+Method-name:changeNickname
+Method-returnType:void
+Method-parameters:[Resourcepart nickname]
+MethodInvocation:requireNonNull
+MethodInvocation:isJoined
+MethodInvocation:entityFullFrom
+MethodInvocation:build
+MethodInvocation:ofType
+MethodInvocation:to
+MethodInvocation:buildPresenceStanza
+MethodInvocation:getStanzaFactory
+MethodInvocation:createFull
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:nextResultOrThrow
+MethodInvocation:setNickname
+Method-name:changeAvailabilityStatus
+Method-returnType:void
+Method-parameters:[String status, Presence.Mode mode]
+FieldAccess:myRoomJid
+MethodInvocation:build
+MethodInvocation:setMode
+MethodInvocation:setStatus
+MethodInvocation:ofType
+MethodInvocation:to
+MethodInvocation:buildPresenceStanza
+MethodInvocation:getStanzaFactory
+MethodInvocation:sendStanza
+Method-name:kickParticipant
+Method-returnType:void
+Method-parameters:[Resourcepart nickname, String reason]
+MethodInvocation:changeRole
+Method-name:requestVoice
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setFormType
+MethodInvocation:builder
+MethodInvocation:textSingleBuilder
+MethodInvocation:setLabel
+MethodInvocation:setValue
+MethodInvocation:addField
+MethodInvocation:build
+MethodInvocation:build
+MethodInvocation:addExtension
+MethodInvocation:to
+MethodInvocation:buildMessageStanza
+MethodInvocation:getStanzaFactory
+MethodInvocation:build
+MethodInvocation:sendStanza
+Method-name:grantVoice
+Method-returnType:void
+Method-parameters:[Collection<Resourcepart> nicknames]
+MethodInvocation:changeRole
+Method-name:grantVoice
+Method-returnType:void
+Method-parameters:[Resourcepart nickname]
+MethodInvocation:changeRole
+Method-name:revokeVoice
+Method-returnType:void
+Method-parameters:[Collection<Resourcepart> nicknames]
+MethodInvocation:changeRole
+Method-name:revokeVoice
+Method-returnType:void
+Method-parameters:[Resourcepart nickname]
+MethodInvocation:changeRole
+Method-name:banUsers
+Method-returnType:void
+Method-parameters:[Collection<? extends Jid> jids]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:banUser
+Method-returnType:void
+Method-parameters:[Jid jid, String reason]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:grantMembership
+Method-returnType:void
+Method-parameters:[Collection<? extends Jid> jids]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:grantMembership
+Method-returnType:void
+Method-parameters:[Jid jid]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:revokeMembership
+Method-returnType:void
+Method-parameters:[Collection<? extends Jid> jids]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:revokeMembership
+Method-returnType:void
+Method-parameters:[Jid jid]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:grantModerator
+Method-returnType:void
+Method-parameters:[Collection<Resourcepart> nicknames]
+MethodInvocation:changeRole
+Method-name:grantModerator
+Method-returnType:void
+Method-parameters:[Resourcepart nickname]
+MethodInvocation:changeRole
+Method-name:revokeModerator
+Method-returnType:void
+Method-parameters:[Collection<Resourcepart> nicknames]
+MethodInvocation:changeRole
+Method-name:revokeModerator
+Method-returnType:void
+Method-parameters:[Resourcepart nickname]
+MethodInvocation:changeRole
+Method-name:grantOwnership
+Method-returnType:void
+Method-parameters:[Collection<? extends Jid> jids]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:grantOwnership
+Method-returnType:void
+Method-parameters:[Jid jid]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:revokeOwnership
+Method-returnType:void
+Method-parameters:[Collection<? extends Jid> jids]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:revokeOwnership
+Method-returnType:void
+Method-parameters:[Jid jid]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:grantAdmin
+Method-returnType:void
+Method-parameters:[Collection<? extends Jid> jids]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:grantAdmin
+Method-returnType:void
+Method-parameters:[Jid jid]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:revokeAdmin
+Method-returnType:void
+Method-parameters:[Collection<? extends Jid> jids]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:revokeAdmin
+Method-returnType:void
+Method-parameters:[EntityJid jid]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:changeAffiliationByAdmin
+Method-returnType:void
+Method-parameters:[Jid jid, MUCAffiliation affiliation]
+MethodInvocation:changeAffiliationByAdmin
+Method-name:changeAffiliationByAdmin
+Method-returnType:void
+Method-parameters:[Jid jid, MUCAffiliation affiliation, String reason]
+MethodInvocation:setTo
+MethodInvocation:setType
+MethodInvocation:addItem
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:changeAffiliationByAdmin
+Method-returnType:void
+Method-parameters:[Collection<? extends Jid> jids, MUCAffiliation affiliation]
+MethodInvocation:setTo
+MethodInvocation:setType
+MethodInvocation:addItem
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:changeRole
+Method-returnType:void
+Method-parameters:[Resourcepart nickname, MUCRole role, String reason]
+MethodInvocation:setTo
+MethodInvocation:setType
+MethodInvocation:addItem
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:changeRole
+Method-returnType:void
+Method-parameters:[Collection<Resourcepart> nicknames, MUCRole role]
+MethodInvocation:setTo
+MethodInvocation:setType
+MethodInvocation:addItem
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+Method-name:getOccupantsCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getOccupants
+Method-returnType:List<EntityFullJid>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getOccupantPresence
+Method-returnType:Presence
+Method-parameters:[EntityFullJid user]
+MethodInvocation:get
+Method-name:getOccupant
+Method-returnType:Occupant
+Method-parameters:[EntityFullJid user]
+MethodInvocation:getOccupantPresence
+Method-name:addParticipantListener
+Method-returnType:boolean
+Method-parameters:[PresenceListener listener]
+MethodInvocation:add
+Method-name:removeParticipantListener
+Method-returnType:boolean
+Method-parameters:[PresenceListener listener]
+MethodInvocation:remove
+Method-name:getOwners
+Method-returnType:List<Affiliate>
+Method-parameters:[]
+MethodInvocation:getAffiliatesByAdmin
+Method-name:getAdmins
+Method-returnType:List<Affiliate>
+Method-parameters:[]
+MethodInvocation:getAffiliatesByAdmin
+Method-name:getMembers
+Method-returnType:List<Affiliate>
+Method-parameters:[]
+MethodInvocation:getAffiliatesByAdmin
+Method-name:getOutcasts
+Method-returnType:List<Affiliate>
+Method-parameters:[]
+MethodInvocation:getAffiliatesByAdmin
+Method-name:getAffiliatesByAdmin
+Method-returnType:List<Affiliate>
+Method-parameters:[MUCAffiliation affiliation]
+MethodInvocation:setTo
+MethodInvocation:setType
+MethodInvocation:addItem
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:getItems
+MethodInvocation:add
+Method-name:getModerators
+Method-returnType:List<Occupant>
+Method-parameters:[]
+MethodInvocation:getOccupants
+Method-name:getParticipants
+Method-returnType:List<Occupant>
+Method-parameters:[]
+MethodInvocation:getOccupants
+Method-name:getOccupants
+Method-returnType:List<Occupant>
+Method-parameters:[MUCRole role]
+MethodInvocation:setTo
+MethodInvocation:setType
+MethodInvocation:addItem
+MethodInvocation:nextResultOrThrow
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:getItems
+MethodInvocation:add
+Method-name:sendMessage
+Method-returnType:void
+Method-parameters:[String text]
+MethodInvocation:build
+MethodInvocation:setBody
+MethodInvocation:buildMessage
+MethodInvocation:sendStanza
+Method-name:createPrivateChat
+Method-returnType:org.jivesoftware.smack.chat.Chat
+Method-parameters:[EntityFullJid occupant, ChatMessageListener listener]
+MethodInvocation:createChat
+MethodInvocation:getInstanceFor
+Method-name:createMessage
+Method-returnType:Message
+Method-parameters:[]
+MethodInvocation:build
+MethodInvocation:to
+MethodInvocation:ofType
+MethodInvocation:buildMessageStanza
+MethodInvocation:getStanzaFactory
+Method-name:buildMessage
+Method-returnType:MessageBuilder
+Method-parameters:[]
+MethodInvocation:to
+MethodInvocation:ofType
+MethodInvocation:buildMessageStanza
+MethodInvocation:getStanzaFactory
+Method-name:sendMessage
+Method-returnType:void
+Method-parameters:[Message message]
+MethodInvocation:sendMessage
+MethodInvocation:asBuilder
+Method-name:sendMessage
+Method-returnType:void
+Method-parameters:[MessageBuilder messageBuilder]
+MethodInvocation:build
+MethodInvocation:ofType
+MethodInvocation:to
+MethodInvocation:sendStanza
+Method-name:pollMessage
+Method-returnType:Message
+Method-parameters:[]
+MethodInvocation:pollResult
+Method-name:nextMessage
+Method-returnType:Message
+Method-parameters:[]
+MethodInvocation:nextResult
+Method-name:nextMessage
+Method-returnType:Message
+Method-parameters:[long timeout]
+MethodInvocation:nextResult
+Method-name:addMessageListener
+Method-returnType:boolean
+Method-parameters:[MessageListener listener]
+MethodInvocation:add
+Method-name:removeMessageListener
+Method-returnType:boolean
+Method-parameters:[MessageListener listener]
+MethodInvocation:remove
+Method-name:changeSubject
+Method-returnType:void
+Method-parameters:[final String subject]
+MethodInvocation:buildMessage
+MethodInvocation:setSubject
+Method-name:accept
+Method-returnType:boolean
+Method-parameters:[Stanza packet]
+MethodInvocation:equals
+MethodInvocation:getSubject
+MethodInvocation:createStanzaCollectorAndSend
+MethodInvocation:build
+MethodInvocation:nextResultOrThrow
+Method-name:removeConnectionCallbacks
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:removeStanzaListener
+MethodInvocation:removeStanzaListener
+MethodInvocation:removeStanzaListener
+MethodInvocation:removeStanzaListener
+MethodInvocation:removeStanzaSendingListener
+MethodInvocation:cancel
+Method-name:userHasLeft
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+MethodInvocation:removeJoinedRoom
+MethodInvocation:removeConnectionCallbacks
+Method-name:addUserStatusListener
+Method-returnType:boolean
+Method-parameters:[UserStatusListener listener]
+MethodInvocation:add
+Method-name:removeUserStatusListener
+Method-returnType:boolean
+Method-parameters:[UserStatusListener listener]
+MethodInvocation:remove
+Method-name:addParticipantStatusListener
+Method-returnType:boolean
+Method-parameters:[ParticipantStatusListener listener]
+MethodInvocation:add
+Method-name:removeParticipantStatusListener
+Method-returnType:boolean
+Method-parameters:[ParticipantStatusListener listener]
+MethodInvocation:remove
+Method-name:checkRoleModifications
+Method-returnType:void
+Method-parameters:[MUCRole oldRole, MUCRole newRole, boolean isUserModification, EntityFullJid from]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:voiceGranted
+MethodInvocation:voiceGranted
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:voiceRevoked
+MethodInvocation:voiceRevoked
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:voiceGranted
+MethodInvocation:voiceGranted
+MethodInvocation:moderatorGranted
+MethodInvocation:moderatorGranted
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:voiceRevoked
+MethodInvocation:voiceRevoked
+MethodInvocation:moderatorRevoked
+MethodInvocation:moderatorRevoked
+Method-name:checkAffiliationModifications
+Method-returnType:void
+Method-parameters:[MUCAffiliation oldAffiliation, MUCAffiliation newAffiliation, boolean isUserModification, EntityFullJid from]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:ownershipRevoked
+MethodInvocation:ownershipRevoked
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:adminRevoked
+MethodInvocation:adminRevoked
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:membershipRevoked
+MethodInvocation:membershipRevoked
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:ownershipGranted
+MethodInvocation:ownershipGranted
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:adminGranted
+MethodInvocation:adminGranted
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:membershipGranted
+MethodInvocation:membershipGranted
+Method-name:checkPresenceCode
+Method-returnType:void
+Method-parameters:[Set<Status> statusCodes, boolean isUserModification, MUCUser mucUser, EntityFullJid from]
+MethodInvocation:contains
+MethodInvocation:kicked
+MethodInvocation:getActor
+MethodInvocation:getItem
+MethodInvocation:getReason
+MethodInvocation:getItem
+MethodInvocation:kicked
+MethodInvocation:getActor
+MethodInvocation:getItem
+MethodInvocation:getReason
+MethodInvocation:getItem
+MethodInvocation:contains
+MethodInvocation:banned
+MethodInvocation:getActor
+MethodInvocation:getItem
+MethodInvocation:getReason
+MethodInvocation:getItem
+MethodInvocation:banned
+MethodInvocation:getActor
+MethodInvocation:getItem
+MethodInvocation:getReason
+MethodInvocation:getItem
+MethodInvocation:contains
+MethodInvocation:membershipRevoked
+MethodInvocation:contains
+MethodInvocation:nicknameChanged
+MethodInvocation:getNick
+MethodInvocation:getItem
+Method-name:getXmppConnection
+Method-returnType:XMPPConnection
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getUser

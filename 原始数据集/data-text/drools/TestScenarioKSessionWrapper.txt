@@ -1,0 +1,87 @@
+Class:TestScenarioKSessionWrapper
+Field:ksession
+Field:factVerifier
+Field:ruleFiredVerifier
+Field:eventListener
+Field:methodExecutor
+Field:populatedData
+Field:usesTimeWalk
+Method-name:TestScenarioKSessionWrapper
+Method-returnType:null
+Method-parameters:[KieSession ksession, final TypeResolver resolver, Map<String,Object> populatedData, Map<String,Object> globalData, boolean usesTimeWalk]
+FieldAccess:ksession
+FieldAccess:populatedData
+FieldAccess:usesTimeWalk
+FieldAccess:methodExecutor
+MethodInvocation:initFactVerifier
+Method-name:initFactVerifier
+Method-returnType:FactVerifier
+Method-parameters:[TypeResolver resolver, Map<String,Object> globalData]
+Method-name:activateRuleFlowGroup
+Method-returnType:void
+Method-parameters:[String activateRuleFlowGroupName]
+MethodInvocation:setAutoDeactivate
+MethodInvocation:getRuleFlowGroup
+MethodInvocation:getAgenda
+MethodInvocation:activateRuleFlowGroup
+MethodInvocation:getAgenda
+Method-name:verifyExpectation
+Method-returnType:void
+Method-parameters:[Expectation expectation]
+MethodInvocation:verify
+MethodInvocation:verifyFiringCounts
+Method-name:executeMethod
+Method-returnType:void
+Method-parameters:[CallMethod callMethod]
+MethodInvocation:executeMethod
+Method-name:fireAllRules
+Method-returnType:void
+Method-parameters:[ScenarioSettings scenarioSettings]
+MethodInvocation:fireAllRules
+FieldAccess:ksession
+MethodInvocation:getAgendaFilter
+MethodInvocation:getRuleList
+MethodInvocation:isInclusive
+MethodInvocation:getMaxRuleFirings
+Method-name:resetEventListener
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:removeEventListener
+FieldAccess:ksession
+MethodInvocation:addEventListener
+FieldAccess:ksession
+MethodInvocation:setFireCounter
+FieldAccess:ruleFiredVerifier
+MethodInvocation:getFiringCounts
+Method-name:executeSubScenario
+Method-returnType:void
+Method-parameters:[ExecutionTrace executionTrace, ScenarioSettings scenarioSettings]
+MethodInvocation:resetEventListener
+MethodInvocation:applyTimeMachine
+MethodInvocation:currentTimeMillis
+MethodInvocation:fireAllRules
+MethodInvocation:setExecutionTimeResult
+MethodInvocation:currentTimeMillis
+MethodInvocation:setNumberOfRulesFired
+MethodInvocation:setRulesFired
+MethodInvocation:getRulesFiredSummary
+Method-name:applyTimeMachine
+Method-returnType:void
+Method-parameters:[ExecutionTrace executionTrace]
+MethodInvocation:getSessionClock
+MethodInvocation:advanceTime
+MethodInvocation:getSessionClock
+MethodInvocation:getTargetTime
+MethodInvocation:getCurrentTime
+Method-name:getTargetTime
+Method-returnType:long
+Method-parameters:[ExecutionTrace executionTrace]
+MethodInvocation:getScenarioSimulatedDate
+MethodInvocation:getTime
+MethodInvocation:getScenarioSimulatedDate
+MethodInvocation:getTime
+Method-name:getCurrentTime
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getCurrentTime
+MethodInvocation:getSessionClock

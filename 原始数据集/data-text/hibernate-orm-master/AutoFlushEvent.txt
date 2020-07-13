@@ -1,0 +1,28 @@
+Class:AutoFlushEvent
+Field:querySpaces
+Field:flushRequired
+Method-name:AutoFlushEvent
+Method-returnType:null
+Method-parameters:[Set querySpaces, EventSource source]
+FieldAccess:querySpaces
+Method-name:getQuerySpaces
+Method-returnType:Set
+Method-parameters:[]
+Method-name:setQuerySpaces
+Method-returnType:void
+Method-parameters:[Set querySpaces]
+FieldAccess:querySpaces
+Method-name:isFlushRequired
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setFlushRequired
+Method-returnType:void
+Method-parameters:[boolean dirty]
+FieldAccess:flushRequired
+Method-name:flushIsReallyNeeded
+Method-returnType:boolean
+Method-parameters:[final EventSource source, DefaultAutoFlushEventListener defaultAutoFlushEventListener]
+MethodInvocation:getHibernateFlushMode
+MethodInvocation:areTablesToBeUpdated
+MethodInvocation:getActionQueue
+MethodInvocation:getQuerySpaces

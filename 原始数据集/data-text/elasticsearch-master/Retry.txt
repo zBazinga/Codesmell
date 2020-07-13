@@ -1,0 +1,95 @@
+Class:Retry
+Field:backoffPolicy
+Field:scheduler
+Method-name:Retry
+Method-returnType:null
+Method-parameters:[BackoffPolicy backoffPolicy, Scheduler scheduler]
+FieldAccess:backoffPolicy
+FieldAccess:scheduler
+Method-name:withBackoff
+Method-returnType:void
+Method-parameters:[BiConsumer<BulkRequest,ActionListener<BulkResponse>> consumer, BulkRequest bulkRequest, ActionListener<BulkResponse> listener]
+MethodInvocation:execute
+Class:RetryHandler
+Field:RETRY_STATUS
+Field:logger
+MethodInvocation:getLogger
+Field:scheduler
+Field:consumer
+Field:listener
+Field:backoff
+Field:responses
+Field:startTimestampNanos
+Field:currentBulkRequest
+Field:retryCancellable
+Method-name:RetryHandler
+Method-returnType:null
+Method-parameters:[BackoffPolicy backoffPolicy, BiConsumer<BulkRequest,ActionListener<BulkResponse>> consumer, ActionListener<BulkResponse> listener, Scheduler scheduler]
+FieldAccess:backoff
+MethodInvocation:iterator
+FieldAccess:consumer
+FieldAccess:listener
+FieldAccess:scheduler
+FieldAccess:startTimestampNanos
+MethodInvocation:nanoTime
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[BulkResponse bulkItemResponses]
+MethodInvocation:hasFailures
+MethodInvocation:addResponses
+MethodInvocation:finishHim
+MethodInvocation:canRetry
+MethodInvocation:addResponses
+MethodInvocation:isFailed
+MethodInvocation:retry
+MethodInvocation:createBulkRequestForRetry
+MethodInvocation:addResponses
+MethodInvocation:finishHim
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:status
+MethodInvocation:hasNext
+MethodInvocation:retry
+MethodInvocation:onFailure
+MethodInvocation:cancel
+Method-name:retry
+Method-returnType:void
+Method-parameters:[BulkRequest bulkRequestForRetry]
+Method-name:createBulkRequestForRetry
+Method-returnType:BulkRequest
+Method-parameters:[BulkResponse bulkItemResponses]
+MethodInvocation:getItems
+MethodInvocation:isFailed
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:requests
+Method-name:canRetry
+Method-returnType:boolean
+Method-parameters:[BulkResponse bulkItemResponses]
+MethodInvocation:hasNext
+MethodInvocation:isFailed
+MethodInvocation:status
+Method-name:finishHim
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:onResponse
+MethodInvocation:getAccumulatedResponse
+MethodInvocation:cancel
+Method-name:addResponses
+Method-returnType:void
+Method-parameters:[BulkResponse response, Predicate<BulkItemResponse> filter]
+MethodInvocation:test
+MethodInvocation:add
+Method-name:getAccumulatedResponse
+Method-returnType:BulkResponse
+Method-parameters:[]
+MethodInvocation:toArray
+MethodInvocation:nanoTime
+MethodInvocation:millis
+MethodInvocation:timeValueNanos
+Method-name:execute
+Method-returnType:void
+Method-parameters:[BulkRequest bulkRequest]
+FieldAccess:currentBulkRequest
+MethodInvocation:accept

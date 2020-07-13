@@ -1,0 +1,43 @@
+Class:Field
+Field:ordinal
+Field:hasInitialExpression
+Field:isShared
+Field:owner
+Method-name:Field
+Method-returnType:null
+Method-parameters:[Spec parent, FieldNode ast, int ordinal]
+MethodInvocation:setName
+MethodInvocation:getName
+FieldAccess:ordinal
+FieldAccess:hasInitialExpression
+MethodInvocation:hasInitialExpression
+Method-name:getOrdinal
+Method-returnType:int
+Method-parameters:[]
+Method-name:isShared
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setShared
+Method-returnType:void
+Method-parameters:[boolean shared]
+Method-name:getOwner
+Method-returnType:PropertyNode
+Method-parameters:[]
+Method-name:setOwner
+Method-returnType:void
+Method-parameters:[PropertyNode owner]
+FieldAccess:owner
+Method-name:hasInitialExpression
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:accept
+Method-returnType:void
+Method-parameters:[ISpecVisitor visitor]
+MethodInvocation:visitField
+Method-name:changeSharedFieldInternalName
+Method-returnType:void
+Method-parameters:[SpecRewriter specRewriter]
+MethodInvocation:rename
+MethodInvocation:getAst
+MethodInvocation:getSharedFieldName
+MethodInvocation:getName

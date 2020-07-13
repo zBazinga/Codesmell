@@ -1,0 +1,440 @@
+Class:RouteDefinition
+Field:prepared
+Field:input
+Field:group
+Field:streamCache
+Field:trace
+Field:messageHistory
+Field:logMask
+Field:delayer
+Field:autoStartup
+Field:startupOrder
+Field:routePolicies
+Field:routePolicyRef
+Field:shutdownRoute
+Field:shutdownRunningTask
+Field:errorHandlerRef
+Field:errorHandlerFactory
+Field:contextScopedErrorHandler
+Field:rest
+Field:restDefinition
+Field:restBindingDefinition
+Field:inputType
+Field:outputType
+Field:routeProperties
+Method-name:RouteDefinition
+Method-returnType:null
+Method-parameters:[]
+Method-name:RouteDefinition
+Method-returnType:null
+Method-parameters:[@AsEndpointUri String uri]
+MethodInvocation:from
+Method-name:RouteDefinition
+Method-returnType:null
+Method-parameters:[Endpoint endpoint]
+MethodInvocation:from
+Method-name:fromRest
+Method-returnType:void
+Method-parameters:[@AsEndpointUri String uri]
+MethodInvocation:from
+Method-name:isPrepared
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:get
+Method-name:markPrepared
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:set
+Method-name:markUnprepared
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:set
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getId
+MethodInvocation:getId
+Method-name:getShortName
+Method-returnType:String
+Method-parameters:[]
+Method-name:getLabel
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getLabel
+Method-name:getRouteId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getId
+Method-name:getEndpointUrl
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getEndpointUri
+Method-name:from
+Method-returnType:RouteDefinition
+Method-parameters:[@AsEndpointUri String uri]
+MethodInvocation:setInput
+Method-name:from
+Method-returnType:RouteDefinition
+Method-parameters:[Endpoint endpoint]
+MethodInvocation:setInput
+Method-name:from
+Method-returnType:RouteDefinition
+Method-parameters:[EndpointConsumerBuilder endpoint]
+MethodInvocation:setInput
+Method-name:group
+Method-returnType:RouteDefinition
+Method-parameters:[String name]
+MethodInvocation:setGroup
+Method-name:routeGroup
+Method-returnType:RouteDefinition
+Method-parameters:[String group]
+MethodInvocation:setGroup
+Method-name:routeId
+Method-returnType:RouteDefinition
+Method-parameters:[String id]
+MethodInvocation:hasCustomIdAssigned
+MethodInvocation:setId
+Method-name:routeDescription
+Method-returnType:RouteDefinition
+Method-parameters:[String description]
+MethodInvocation:setText
+MethodInvocation:setDescription
+Method-name:noStreamCaching
+Method-returnType:RouteDefinition
+Method-parameters:[]
+MethodInvocation:setStreamCache
+Method-name:streamCaching
+Method-returnType:RouteDefinition
+Method-parameters:[]
+MethodInvocation:setStreamCache
+Method-name:streamCaching
+Method-returnType:RouteDefinition
+Method-parameters:[String streamCache]
+MethodInvocation:setStreamCache
+Method-name:noTracing
+Method-returnType:RouteDefinition
+Method-parameters:[]
+MethodInvocation:setTrace
+Method-name:tracing
+Method-returnType:RouteDefinition
+Method-parameters:[]
+MethodInvocation:setTrace
+Method-name:tracing
+Method-returnType:RouteDefinition
+Method-parameters:[String tracing]
+MethodInvocation:setTrace
+Method-name:messageHistory
+Method-returnType:RouteDefinition
+Method-parameters:[]
+MethodInvocation:setMessageHistory
+Method-name:messageHistory
+Method-returnType:RouteDefinition
+Method-parameters:[String messageHistory]
+MethodInvocation:setMessageHistory
+Method-name:logMask
+Method-returnType:RouteDefinition
+Method-parameters:[]
+MethodInvocation:setLogMask
+Method-name:logMask
+Method-returnType:RouteDefinition
+Method-parameters:[String logMask]
+MethodInvocation:setLogMask
+Method-name:noMessageHistory
+Method-returnType:RouteDefinition
+Method-parameters:[]
+MethodInvocation:setMessageHistory
+Method-name:noDelayer
+Method-returnType:RouteDefinition
+Method-parameters:[]
+MethodInvocation:setDelayer
+Method-name:delayer
+Method-returnType:RouteDefinition
+Method-parameters:[long delay]
+MethodInvocation:setDelayer
+Method-name:errorHandler
+Method-returnType:RouteDefinition
+Method-parameters:[ErrorHandlerFactory errorHandlerBuilder]
+MethodInvocation:setErrorHandlerFactory
+Method-name:noAutoStartup
+Method-returnType:RouteDefinition
+Method-parameters:[]
+MethodInvocation:setAutoStartup
+Method-name:autoStartup
+Method-returnType:RouteDefinition
+Method-parameters:[String autoStartup]
+MethodInvocation:setAutoStartup
+Method-name:autoStartup
+Method-returnType:RouteDefinition
+Method-parameters:[boolean autoStartup]
+MethodInvocation:setAutoStartup
+MethodInvocation:toString
+Method-name:startupOrder
+Method-returnType:RouteDefinition
+Method-parameters:[int order]
+MethodInvocation:setStartupOrder
+Method-name:routePolicy
+Method-returnType:RouteDefinition
+Method-parameters:[RoutePolicy... policies]
+MethodInvocation:addAll
+MethodInvocation:asList
+Method-name:routePolicy
+Method-returnType:RouteDefinition
+Method-parameters:[Supplier<RoutePolicy> policy]
+MethodInvocation:routePolicy
+MethodInvocation:get
+Method-name:routePolicyRef
+Method-returnType:RouteDefinition
+Method-parameters:[String routePolicyRef]
+MethodInvocation:setRoutePolicyRef
+Method-name:shutdownRoute
+Method-returnType:RouteDefinition
+Method-parameters:[ShutdownRoute shutdownRoute]
+MethodInvocation:shutdownRoute
+MethodInvocation:name
+Method-name:shutdownRoute
+Method-returnType:RouteDefinition
+Method-parameters:[String shutdownRoute]
+MethodInvocation:setShutdownRoute
+Method-name:shutdownRunningTask
+Method-returnType:RouteDefinition
+Method-parameters:[ShutdownRunningTask shutdownRunningTask]
+MethodInvocation:shutdownRunningTask
+MethodInvocation:name
+Method-name:shutdownRunningTask
+Method-returnType:RouteDefinition
+Method-parameters:[String shutdownRunningTask]
+MethodInvocation:setShutdownRunningTask
+Method-name:inputType
+Method-returnType:RouteDefinition
+Method-parameters:[String urn]
+MethodInvocation:validate
+MethodInvocation:urn
+Method-name:inputTypeWithValidate
+Method-returnType:RouteDefinition
+Method-parameters:[String urn]
+MethodInvocation:validate
+MethodInvocation:urn
+Method-name:inputType
+Method-returnType:RouteDefinition
+Method-parameters:[Class clazz]
+MethodInvocation:validate
+MethodInvocation:javaClass
+Method-name:inputTypeWithValidate
+Method-returnType:RouteDefinition
+Method-parameters:[Class clazz]
+MethodInvocation:validate
+MethodInvocation:javaClass
+Method-name:outputType
+Method-returnType:RouteDefinition
+Method-parameters:[String urn]
+MethodInvocation:validate
+MethodInvocation:urn
+Method-name:outputTypeWithValidate
+Method-returnType:RouteDefinition
+Method-parameters:[String urn]
+MethodInvocation:validate
+MethodInvocation:urn
+Method-name:outputType
+Method-returnType:RouteDefinition
+Method-parameters:[Class clazz]
+MethodInvocation:validate
+MethodInvocation:javaClass
+Method-name:outputTypeWithValidate
+Method-returnType:RouteDefinition
+Method-parameters:[Class clazz]
+MethodInvocation:validate
+MethodInvocation:javaClass
+Method-name:routeProperty
+Method-returnType:RouteDefinition
+Method-parameters:[String key, String value]
+MethodInvocation:setKey
+MethodInvocation:setValue
+MethodInvocation:add
+Method-name:getInput
+Method-returnType:FromDefinition
+Method-parameters:[]
+Method-name:setInput
+Method-returnType:void
+Method-parameters:[FromDefinition input]
+FieldAccess:input
+Method-name:getOutputs
+Method-returnType:List<ProcessorDefinition<?>>
+Method-parameters:[]
+Method-name:setOutputs
+Method-returnType:void
+Method-parameters:[List<ProcessorDefinition<?>> outputs]
+Method-name:getGroup
+Method-returnType:String
+Method-parameters:[]
+Method-name:setGroup
+Method-returnType:void
+Method-parameters:[String group]
+FieldAccess:group
+Method-name:getStreamCache
+Method-returnType:String
+Method-parameters:[]
+Method-name:setStreamCache
+Method-returnType:void
+Method-parameters:[String streamCache]
+FieldAccess:streamCache
+Method-name:getTrace
+Method-returnType:String
+Method-parameters:[]
+Method-name:setTrace
+Method-returnType:void
+Method-parameters:[String trace]
+FieldAccess:trace
+Method-name:getMessageHistory
+Method-returnType:String
+Method-parameters:[]
+Method-name:setMessageHistory
+Method-returnType:void
+Method-parameters:[String messageHistory]
+FieldAccess:messageHistory
+Method-name:getLogMask
+Method-returnType:String
+Method-parameters:[]
+Method-name:setLogMask
+Method-returnType:void
+Method-parameters:[String logMask]
+FieldAccess:logMask
+Method-name:getDelayer
+Method-returnType:String
+Method-parameters:[]
+Method-name:setDelayer
+Method-returnType:void
+Method-parameters:[String delayer]
+FieldAccess:delayer
+Method-name:getAutoStartup
+Method-returnType:String
+Method-parameters:[]
+Method-name:setAutoStartup
+Method-returnType:void
+Method-parameters:[String autoStartup]
+FieldAccess:autoStartup
+Method-name:getStartupOrder
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:setStartupOrder
+Method-returnType:void
+Method-parameters:[Integer startupOrder]
+FieldAccess:startupOrder
+Method-name:setErrorHandlerRef
+Method-returnType:void
+Method-parameters:[String errorHandlerRef]
+FieldAccess:errorHandlerRef
+MethodInvocation:setErrorHandlerFactory
+Method-name:getErrorHandlerRef
+Method-returnType:String
+Method-parameters:[]
+Method-name:setErrorHandlerFactoryIfNull
+Method-returnType:void
+Method-parameters:[ErrorHandlerFactory errorHandlerFactory]
+FieldAccess:errorHandlerFactory
+MethodInvocation:setErrorHandlerFactory
+Method-name:setRoutePolicyRef
+Method-returnType:void
+Method-parameters:[String routePolicyRef]
+FieldAccess:routePolicyRef
+Method-name:getRoutePolicyRef
+Method-returnType:String
+Method-parameters:[]
+Method-name:getRoutePolicies
+Method-returnType:List<RoutePolicy>
+Method-parameters:[]
+Method-name:setRoutePolicies
+Method-returnType:void
+Method-parameters:[List<RoutePolicy> routePolicies]
+FieldAccess:routePolicies
+Method-name:getShutdownRoute
+Method-returnType:String
+Method-parameters:[]
+Method-name:setShutdownRoute
+Method-returnType:void
+Method-parameters:[String shutdownRoute]
+FieldAccess:shutdownRoute
+Method-name:getShutdownRunningTask
+Method-returnType:String
+Method-parameters:[]
+Method-name:setShutdownRunningTask
+Method-returnType:void
+Method-parameters:[String shutdownRunningTask]
+FieldAccess:shutdownRunningTask
+Method-name:createErrorHandlerBuilder
+Method-returnType:ErrorHandlerFactory
+Method-parameters:[]
+Method-name:getErrorHandlerFactory
+Method-returnType:ErrorHandlerFactory
+Method-parameters:[]
+MethodInvocation:createErrorHandlerBuilder
+Method-name:setErrorHandlerFactory
+Method-returnType:void
+Method-parameters:[ErrorHandlerFactory errorHandlerFactory]
+FieldAccess:errorHandlerFactory
+Method-name:isRest
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:getRestDefinition
+Method-returnType:RestDefinition
+Method-parameters:[]
+Method-name:setRestDefinition
+Method-returnType:void
+Method-parameters:[RestDefinition restDefinition]
+FieldAccess:restDefinition
+Method-name:getRestBindingDefinition
+Method-returnType:RestBindingDefinition
+Method-parameters:[]
+Method-name:setRestBindingDefinition
+Method-returnType:void
+Method-parameters:[RestBindingDefinition restBindingDefinition]
+FieldAccess:restBindingDefinition
+Method-name:isContextScopedErrorHandler
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setInputType
+Method-returnType:void
+Method-parameters:[InputTypeDefinition inputType]
+FieldAccess:inputType
+Method-name:getInputType
+Method-returnType:InputTypeDefinition
+Method-parameters:[]
+FieldAccess:inputType
+Method-name:setOutputType
+Method-returnType:void
+Method-parameters:[OutputTypeDefinition outputType]
+FieldAccess:outputType
+Method-name:getOutputType
+Method-returnType:OutputTypeDefinition
+Method-parameters:[]
+FieldAccess:outputType
+Method-name:getRouteProperties
+Method-returnType:List<PropertyDefinition>
+Method-parameters:[]
+Method-name:setRouteProperties
+Method-returnType:void
+Method-parameters:[List<PropertyDefinition> routeProperties]
+FieldAccess:routeProperties
+Method-name:fromUri
+Method-returnType:RouteDefinition
+Method-parameters:[String uri]
+MethodInvocation:from
+Method-name:fromEndpoint
+Method-returnType:RouteDefinition
+Method-parameters:[Endpoint endpoint]
+MethodInvocation:from
+Method-name:extractId
+Method-returnType:Optional<String>
+Method-parameters:[RouteIdFactory routeIdFactory]
+MethodInvocation:getRestDefinition
+MethodInvocation:empty
+MethodInvocation:getInput
+MethodInvocation:empty
+MethodInvocation:getInput
+MethodInvocation:getEndpointUri
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:indexOf
+MethodInvocation:of
+MethodInvocation:substring
+MethodInvocation:of
+MethodInvocation:empty

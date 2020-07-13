@@ -1,0 +1,209 @@
+Class:Transform
+Field:serialVersionUID
+Field:IDENTITY
+Field:rot
+Field:translation
+Field:scale
+Method-name:Transform
+Method-returnType:null
+Method-parameters:[Vector3f translation, Quaternion rot]
+MethodInvocation:set
+FieldAccess:translation
+MethodInvocation:set
+FieldAccess:rot
+Method-name:Transform
+Method-returnType:null
+Method-parameters:[Vector3f translation, Quaternion rot, Vector3f scale]
+MethodInvocation:set
+FieldAccess:scale
+Method-name:Transform
+Method-returnType:null
+Method-parameters:[Vector3f translation]
+Method-name:Transform
+Method-returnType:null
+Method-parameters:[Quaternion rot]
+Method-name:Transform
+Method-returnType:null
+Method-parameters:[]
+Method-name:setRotation
+Method-returnType:Transform
+Method-parameters:[Quaternion rot]
+MethodInvocation:set
+FieldAccess:rot
+Method-name:setTranslation
+Method-returnType:Transform
+Method-parameters:[Vector3f trans]
+MethodInvocation:set
+FieldAccess:translation
+Method-name:getTranslation
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:setScale
+Method-returnType:Transform
+Method-parameters:[Vector3f scale]
+MethodInvocation:set
+FieldAccess:scale
+Method-name:setScale
+Method-returnType:Transform
+Method-parameters:[float scale]
+MethodInvocation:set
+FieldAccess:scale
+Method-name:getScale
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:getTranslation
+Method-returnType:Vector3f
+Method-parameters:[Vector3f trans]
+MethodInvocation:set
+FieldAccess:translation
+Method-name:getRotation
+Method-returnType:Quaternion
+Method-parameters:[Quaternion quat]
+MethodInvocation:set
+Method-name:getRotation
+Method-returnType:Quaternion
+Method-parameters:[]
+Method-name:getScale
+Method-returnType:Vector3f
+Method-parameters:[Vector3f scale]
+MethodInvocation:set
+FieldAccess:scale
+Method-name:interpolateTransforms
+Method-returnType:void
+Method-parameters:[Transform t1, Transform t2, float delta]
+MethodInvocation:nlerp
+MethodInvocation:set
+FieldAccess:rot
+MethodInvocation:interpolateLocal
+FieldAccess:translation
+MethodInvocation:interpolateLocal
+FieldAccess:scale
+Method-name:combineWithParent
+Method-returnType:Transform
+Method-parameters:[Transform parent]
+MethodInvocation:multLocal
+MethodInvocation:mult
+MethodInvocation:multLocal
+MethodInvocation:addLocal
+MethodInvocation:multLocal
+Method-name:setTranslation
+Method-returnType:Transform
+Method-parameters:[float x, float y, float z]
+MethodInvocation:set
+Method-name:setScale
+Method-returnType:Transform
+Method-parameters:[float x, float y, float z]
+MethodInvocation:set
+Method-name:transformVector
+Method-returnType:Vector3f
+Method-parameters:[final Vector3f in, Vector3f store]
+MethodInvocation:addLocal
+MethodInvocation:mult
+MethodInvocation:multLocal
+MethodInvocation:set
+Method-name:transformInverseVector
+Method-returnType:Vector3f
+Method-parameters:[final Vector3f in, Vector3f store]
+MethodInvocation:subtract
+MethodInvocation:mult
+MethodInvocation:inverse
+MethodInvocation:divideLocal
+Method-name:toTransformMatrix
+Method-returnType:Matrix4f
+Method-parameters:[]
+MethodInvocation:toTransformMatrix
+Method-name:toTransformMatrix
+Method-returnType:Matrix4f
+Method-parameters:[Matrix4f store]
+MethodInvocation:setTranslation
+MethodInvocation:toTransformMatrix
+MethodInvocation:setScale
+Method-name:fromTransformMatrix
+Method-returnType:void
+Method-parameters:[Matrix4f mat]
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:toTranslationVector
+MethodInvocation:set
+MethodInvocation:toRotationQuat
+MethodInvocation:set
+MethodInvocation:toScaleVector
+MethodInvocation:release
+Method-name:invert
+Method-returnType:Transform
+Method-parameters:[]
+MethodInvocation:fromTransformMatrix
+MethodInvocation:invertLocal
+MethodInvocation:toTransformMatrix
+Method-name:loadIdentity
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:set
+MethodInvocation:set
+MethodInvocation:set
+Method-name:isIdentity
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+FieldAccess:translation
+MethodInvocation:equals
+FieldAccess:scale
+MethodInvocation:equals
+FieldAccess:rot
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:set
+Method-returnType:Transform
+Method-parameters:[Transform matrixQuat]
+MethodInvocation:set
+FieldAccess:translation
+MethodInvocation:set
+FieldAccess:rot
+MethodInvocation:set
+FieldAccess:scale
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter e]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter e]
+MethodInvocation:getCapsule
+MethodInvocation:set
+MethodInvocation:readSavable
+MethodInvocation:set
+MethodInvocation:readSavable
+MethodInvocation:set
+MethodInvocation:readSavable
+Method-name:clone
+Method-returnType:Transform
+Method-parameters:[]
+MethodInvocation:clone
+MethodInvocation:clone
+MethodInvocation:clone
+Method-name:addKeyFrameTransform
+Method-returnType:void
+Method-parameters:[int keyFrameIndex, AnimationFactory animationFactory]
+MethodInvocation:addKeyFrameTranslation
+MethodInvocation:getTranslation
+MethodInvocation:addKeyFrameScale
+MethodInvocation:getScale
+MethodInvocation:addKeyFrameRotation
+MethodInvocation:getRotation

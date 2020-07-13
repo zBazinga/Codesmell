@@ -1,0 +1,93 @@
+Class:RemoteInvocation
+Field:serialVersionUID
+Field:methodName
+Field:parameterTypes
+Field:arguments
+Field:attributes
+Method-name:RemoteInvocation
+Method-returnType:null
+Method-parameters:[MethodInvocation methodInvocation]
+FieldAccess:methodName
+MethodInvocation:getName
+MethodInvocation:getMethod
+FieldAccess:parameterTypes
+MethodInvocation:getParameterTypes
+MethodInvocation:getMethod
+FieldAccess:arguments
+MethodInvocation:getArguments
+Method-name:RemoteInvocation
+Method-returnType:null
+Method-parameters:[String methodName, Class<?>[] parameterTypes, Object[] arguments]
+FieldAccess:methodName
+FieldAccess:parameterTypes
+FieldAccess:arguments
+Method-name:RemoteInvocation
+Method-returnType:null
+Method-parameters:[]
+Method-name:setMethodName
+Method-returnType:void
+Method-parameters:[String methodName]
+FieldAccess:methodName
+Method-name:getMethodName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:methodName
+Method-name:setParameterTypes
+Method-returnType:void
+Method-parameters:[Class<?>[] parameterTypes]
+FieldAccess:parameterTypes
+Method-name:getParameterTypes
+Method-returnType:Class<?>[]
+Method-parameters:[]
+FieldAccess:parameterTypes
+Method-name:setArguments
+Method-returnType:void
+Method-parameters:[Object[] arguments]
+FieldAccess:arguments
+Method-name:getArguments
+Method-returnType:Object[]
+Method-parameters:[]
+FieldAccess:arguments
+Method-name:addAttribute
+Method-returnType:void
+Method-parameters:[String key, Serializable value]
+FieldAccess:attributes
+FieldAccess:attributes
+MethodInvocation:containsKey
+FieldAccess:attributes
+MethodInvocation:put
+FieldAccess:attributes
+Method-name:getAttribute
+Method-returnType:Serializable
+Method-parameters:[String key]
+FieldAccess:attributes
+MethodInvocation:get
+FieldAccess:attributes
+Method-name:setAttributes
+Method-returnType:void
+Method-parameters:[@Nullable Map<String,Serializable> attributes]
+FieldAccess:attributes
+Method-name:getAttributes
+Method-returnType:Map<String,Serializable>
+Method-parameters:[]
+FieldAccess:attributes
+Method-name:invoke
+Method-returnType:Object
+Method-parameters:[Object targetObject]
+MethodInvocation:getMethod
+MethodInvocation:getClass
+FieldAccess:methodName
+FieldAccess:parameterTypes
+MethodInvocation:invoke
+FieldAccess:arguments
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:methodName
+MethodInvocation:classNamesToString
+FieldAccess:parameterTypes
+Method-name:executeRequest
+Method-returnType:RemoteInvocationResult
+Method-parameters:[HttpInvokerClientInterceptor httpInvokerClientInterceptor]
+MethodInvocation:executeRequest
+MethodInvocation:getHttpInvokerRequestExecutor

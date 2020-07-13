@@ -1,0 +1,81 @@
+Class:FullHttpRequestToMockServerRequest
+Field:mockServerLogger
+Field:bodyDecoderEncoder
+Field:isSecure
+Method-name:FullHttpRequestToMockServerRequest
+Method-returnType:null
+Method-parameters:[MockServerLogger mockServerLogger, boolean isSecure]
+FieldAccess:mockServerLogger
+FieldAccess:bodyDecoderEncoder
+FieldAccess:isSecure
+Method-name:mapFullHttpRequestToMockServerRequest
+Method-returnType:HttpRequest
+Method-parameters:[FullHttpRequest fullHttpRequest]
+MethodInvocation:setMethod
+MethodInvocation:setPath
+MethodInvocation:contains
+MethodInvocation:uri
+MethodInvocation:setQueryString
+MethodInvocation:uri
+MethodInvocation:setHeaders
+MethodInvocation:setCookies
+MethodInvocation:setBody
+MethodInvocation:withKeepAlive
+MethodInvocation:isKeepAlive
+MethodInvocation:withSecure
+MethodInvocation:logEvent
+MethodInvocation:setThrowable
+MethodInvocation:setArguments
+MethodInvocation:setMessageFormat
+MethodInvocation:setLogLevel
+MethodInvocation:setType
+Method-name:setMethod
+Method-returnType:void
+Method-parameters:[HttpRequest httpRequest, FullHttpRequest fullHttpResponse]
+MethodInvocation:withMethod
+MethodInvocation:name
+MethodInvocation:method
+Method-name:setPath
+Method-returnType:void
+Method-parameters:[HttpRequest httpRequest, FullHttpRequest fullHttpRequest]
+MethodInvocation:withPath
+MethodInvocation:returnPath
+MethodInvocation:uri
+Method-name:setQueryString
+Method-returnType:void
+Method-parameters:[HttpRequest httpRequest, QueryStringDecoder queryStringDecoder]
+MethodInvocation:withEntries
+MethodInvocation:parameters
+MethodInvocation:logEvent
+MethodInvocation:setArguments
+MethodInvocation:setMessageFormat
+MethodInvocation:setHttpRequest
+MethodInvocation:setLogLevel
+MethodInvocation:setType
+MethodInvocation:withQueryStringParameters
+Method-name:setHeaders
+Method-returnType:void
+Method-parameters:[HttpRequest httpRequest, FullHttpRequest fullHttpResponse]
+MethodInvocation:headers
+MethodInvocation:names
+MethodInvocation:withEntry
+MethodInvocation:getAll
+MethodInvocation:withHeaders
+Method-name:setCookies
+Method-returnType:void
+Method-parameters:[HttpRequest httpRequest, FullHttpRequest fullHttpResponse]
+MethodInvocation:getAll
+MethodInvocation:headers
+MethodInvocation:decode
+MethodInvocation:withEntry
+MethodInvocation:name
+MethodInvocation:value
+MethodInvocation:withCookies
+Method-name:setBody
+Method-returnType:void
+Method-parameters:[HttpRequest httpRequest, FullHttpRequest fullHttpRequest]
+MethodInvocation:withBody
+MethodInvocation:byteBufToBody
+MethodInvocation:content
+MethodInvocation:get
+MethodInvocation:headers

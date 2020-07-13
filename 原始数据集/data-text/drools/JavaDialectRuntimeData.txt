@@ -1,0 +1,395 @@
+Class:JavaDialectRuntimeData
+Field:serialVersionUID
+Field:PROTECTION_DOMAIN
+Field:invokerLookups
+Field:classLookups
+Field:store
+Field:classLoader
+Field:rootClassLoader
+Field:dirty
+Field:wireList
+MethodInvocation:emptyList
+MethodInvocation:doPrivileged
+Method-name:run
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:getProtectionDomain
+Method-name:JavaDialectRuntimeData
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:dirty
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput stream]
+MethodInvocation:writeBoolean
+MethodInvocation:isSigned
+MethodInvocation:isSigned
+MethodInvocation:writeObject
+MethodInvocation:getPvtKeyAlias
+MethodInvocation:writeInt
+MethodInvocation:size
+FieldAccess:store
+MethodInvocation:entrySet
+FieldAccess:store
+MethodInvocation:writeObject
+MethodInvocation:getKey
+MethodInvocation:writeObject
+MethodInvocation:getValue
+MethodInvocation:flush
+MethodInvocation:close
+MethodInvocation:toByteArray
+MethodInvocation:writeObject
+MethodInvocation:isSigned
+MethodInvocation:sign
+MethodInvocation:writeInt
+MethodInvocation:size
+FieldAccess:invokerLookups
+MethodInvocation:entrySet
+FieldAccess:invokerLookups
+MethodInvocation:writeObject
+MethodInvocation:getKey
+MethodInvocation:writeObject
+MethodInvocation:getValue
+MethodInvocation:writeInt
+MethodInvocation:size
+FieldAccess:classLookups
+MethodInvocation:entrySet
+FieldAccess:classLookups
+MethodInvocation:writeObject
+MethodInvocation:getKey
+MethodInvocation:writeObject
+MethodInvocation:getValue
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput stream]
+MethodInvocation:readBoolean
+MethodInvocation:isSigned
+MethodInvocation:isSigned
+MethodInvocation:readObject
+MethodInvocation:getPubKeyStore
+MethodInvocation:readObject
+MethodInvocation:checkSignature
+MethodInvocation:readInt
+MethodInvocation:put
+FieldAccess:store
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:close
+MethodInvocation:readInt
+MethodInvocation:put
+FieldAccess:invokerLookups
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:readInt
+MethodInvocation:put
+FieldAccess:classLookups
+MethodInvocation:readObject
+MethodInvocation:readObject
+FieldAccess:dirty
+Method-name:checkSignature
+Method-returnType:void
+Method-parameters:[final ObjectInput stream, final KeyStoreHelper helper, final byte[] bytes, final String pubKeyAlias]
+MethodInvocation:readObject
+MethodInvocation:checkDataWithPublicKey
+MethodInvocation:getMessage
+MethodInvocation:getMessage
+MethodInvocation:getMessage
+MethodInvocation:getMessage
+Method-name:onAdd
+Method-returnType:void
+Method-parameters:[DialectRuntimeRegistry registry, ClassLoader rootClassLoader]
+FieldAccess:rootClassLoader
+FieldAccess:classLoader
+MethodInvocation:makeClassLoader
+Method-name:onRemove
+Method-returnType:void
+Method-parameters:[]
+Method-name:onBeforeExecute
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isDirty
+MethodInvocation:reload
+MethodInvocation:isEmpty
+FieldAccess:wireList
+MethodInvocation:size
+FieldAccess:wireList
+MethodInvocation:wireAll
+FieldAccess:wireList
+MethodInvocation:wireInParallel
+MethodInvocation:clear
+FieldAccess:wireList
+Method-name:wireInParallel
+Method-returnType:void
+Method-parameters:[int wireListSize]
+MethodInvocation:availableProcessors
+MethodInvocation:getRuntime
+MethodInvocation:getCompletionService
+MethodInvocation:getExecutorProvider
+MethodInvocation:subList
+MethodInvocation:submit
+MethodInvocation:get
+MethodInvocation:take
+Method-name:wireAll
+Method-returnType:void
+Method-parameters:[ClassLoader classLoader, Map<String,Wireable> invokerLookups, List<String> wireList]
+MethodInvocation:wire
+MethodInvocation:convertResourceToClassName
+Class:WiringExecutor
+Field:classLoader
+Field:invokerLookups
+Field:wireList
+Method-name:WiringExecutor
+Method-returnType:null
+Method-parameters:[ClassLoader classLoader, Map<String,Wireable> invokerLookups, List<String> wireList]
+FieldAccess:classLoader
+FieldAccess:invokerLookups
+FieldAccess:wireList
+Method-name:call
+Method-returnType:Boolean
+Method-parameters:[]
+MethodInvocation:wireAll
+Method-name:clone
+Method-returnType:DialectRuntimeData
+Method-parameters:[DialectRuntimeRegistry registry, ClassLoader rootClassLoader]
+MethodInvocation:clone
+Method-name:clone
+Method-returnType:DialectRuntimeData
+Method-parameters:[DialectRuntimeRegistry registry, ClassLoader rootClassLoader, boolean excludeClasses]
+MethodInvocation:merge
+MethodInvocation:onAdd
+Method-name:merge
+Method-returnType:void
+Method-parameters:[DialectRuntimeRegistry registry, DialectRuntimeData newData]
+MethodInvocation:merge
+Method-name:merge
+Method-returnType:void
+Method-parameters:[DialectRuntimeRegistry registry, DialectRuntimeData newData, boolean excludeClasses]
+MethodInvocation:keySet
+MethodInvocation:getStore
+MethodInvocation:containsKey
+MethodInvocation:write
+MethodInvocation:read
+MethodInvocation:putAllInvokers
+MethodInvocation:putAllClassDefinitions
+Method-name:isDirty
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:dirty
+Method-name:setDirty
+Method-returnType:void
+Method-parameters:[boolean dirty]
+FieldAccess:dirty
+Method-name:getStore
+Method-returnType:Map<String,byte[]>
+Method-parameters:[]
+Method-name:getBytecode
+Method-returnType:byte[]
+Method-parameters:[String resourceName]
+MethodInvocation:get
+MethodInvocation:getBytecode
+Method-name:getClassLoader
+Method-returnType:ClassLoader
+Method-parameters:[]
+FieldAccess:classLoader
+Method-name:getRootClassLoader
+Method-returnType:ClassLoader
+Method-parameters:[]
+Method-name:removeRule
+Method-returnType:void
+Method-parameters:[KnowledgePackageImpl pkg, RuleImpl rule]
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getConsequence
+MethodInvocation:remove
+MethodInvocation:removeClasses
+MethodInvocation:getLhs
+MethodInvocation:ucFirst
+MethodInvocation:getName
+MethodInvocation:getConsequence
+MethodInvocation:remove
+MethodInvocation:substring
+MethodInvocation:indexOf
+Method-name:removeFunction
+Method-returnType:void
+Method-parameters:[KnowledgePackageImpl pkg, Function function]
+MethodInvocation:remove
+MethodInvocation:getName
+MethodInvocation:ucFirst
+MethodInvocation:getName
+Method-name:removeClasses
+Method-returnType:void
+Method-parameters:[final ConditionalElement ce]
+MethodInvocation:getChildren
+MethodInvocation:removeClasses
+MethodInvocation:removeClasses
+MethodInvocation:remove
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getEvalExpression
+Method-name:removeClasses
+Method-returnType:void
+Method-parameters:[final Pattern pattern]
+MethodInvocation:getConstraints
+MethodInvocation:remove
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getPredicateExpression
+Method-name:read
+Method-returnType:byte[]
+Method-parameters:[final String resourceName]
+MethodInvocation:get
+MethodInvocation:getStore
+Method-name:write
+Method-returnType:void
+Method-parameters:[String resourceName, byte[] clazzData]
+MethodInvocation:put
+MethodInvocation:getStore
+FieldAccess:dirty
+MethodInvocation:isEmpty
+FieldAccess:wireList
+MethodInvocation:clear
+FieldAccess:wireList
+FieldAccess:dirty
+FieldAccess:wireList
+MethodInvocation:emptyList
+FieldAccess:wireList
+MethodInvocation:add
+FieldAccess:wireList
+MethodInvocation:printStackTrace
+Method-name:wire
+Method-returnType:void
+Method-parameters:[ClassLoader classLoader, Map<String,Wireable> invokerLookups, String className]
+MethodInvocation:get
+MethodInvocation:wire
+Method-name:wire
+Method-returnType:void
+Method-parameters:[ClassLoader classLoader, String className, Wireable invoker, boolean reload]
+MethodInvocation:isInitialized
+MethodInvocation:loadClass
+MethodInvocation:wire
+MethodInvocation:newInstance
+Method-name:remove
+Method-returnType:boolean
+Method-parameters:[final String resourceName]
+MethodInvocation:remove
+MethodInvocation:remove
+MethodInvocation:getStore
+MethodInvocation:convertClassToResourcePath
+MethodInvocation:remove
+FieldAccess:wireList
+FieldAccess:dirty
+Method-name:reload
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:classLoader
+MethodInvocation:makeClassLoader
+MethodInvocation:entrySet
+MethodInvocation:wire
+MethodInvocation:getKey
+MethodInvocation:getValue
+FieldAccess:dirty
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:toString
+MethodInvocation:getStore
+Method-name:putInvoker
+Method-returnType:void
+Method-parameters:[String className, Wireable invoker]
+MethodInvocation:put
+Method-name:putAllInvokers
+Method-returnType:void
+Method-parameters:[final Map<String,Wireable> invokers]
+MethodInvocation:putAll
+Method-name:removeInvoker
+Method-returnType:void
+Method-parameters:[final String className]
+MethodInvocation:remove
+Method-name:putClassDefinition
+Method-returnType:void
+Method-parameters:[final String className, final byte[] classDef]
+MethodInvocation:put
+Method-name:putAllClassDefinitions
+Method-returnType:void
+Method-parameters:[final Map classDefinitions]
+MethodInvocation:putAll
+Method-name:getClassDefinition
+Method-returnType:byte[]
+Method-parameters:[String className]
+MethodInvocation:computeIfAbsent
+FieldAccess:classLookups
+MethodInvocation:getBytecode
+Method-name:removeClassDefinition
+Method-returnType:void
+Method-parameters:[final String className]
+MethodInvocation:remove
+Method-name:makeClassLoader
+Method-returnType:ClassLoader
+Method-parameters:[]
+MethodInvocation:isAndroid
+MethodInvocation:instantiateObject
+FieldAccess:rootClassLoader
+FieldAccess:rootClassLoader
+Class:PackageClassLoader
+Field:parallelLockMap
+Field:store
+Field:existingPackages
+Method-name:PackageClassLoader
+Method-returnType:null
+Method-parameters:[JavaDialectRuntimeData store, ClassLoader rootClassLoader]
+FieldAccess:store
+Method-name:loadClass
+Method-returnType:Class<?>
+Method-parameters:[final String name, final boolean resolve]
+MethodInvocation:fastFindClass
+MethodInvocation:getParent
+MethodInvocation:loadClass
+Method-name:fastFindClass
+Method-returnType:Class<?>
+Method-parameters:[final String name]
+MethodInvocation:findLoadedClass
+MethodInvocation:getLockObject
+MethodInvocation:findLoadedClass
+MethodInvocation:internalDefineClass
+MethodInvocation:read
+FieldAccess:store
+MethodInvocation:convertClassToResourcePath
+MethodInvocation:releaseLockObject
+Method-name:internalDefineClass
+Method-returnType:Class<?>
+Method-parameters:[String name, byte[] clazzBytes]
+MethodInvocation:substring
+MethodInvocation:lastIndexOf
+MethodInvocation:contains
+MethodInvocation:getPackage
+MethodInvocation:definePackage
+MethodInvocation:add
+MethodInvocation:defineClass
+MethodInvocation:resolveClass
+Method-name:getResourceAsStream
+Method-returnType:InputStream
+Method-parameters:[final String name]
+MethodInvocation:read
+FieldAccess:store
+MethodInvocation:getResourceAsStream
+MethodInvocation:getParent
+Method-name:getResource
+Method-returnType:URL
+Method-parameters:[String name]
+MethodInvocation:getResource
+MethodInvocation:getParent
+Method-name:getResources
+Method-returnType:Enumeration<URL>
+Method-parameters:[String name]
+MethodInvocation:getResources
+MethodInvocation:getParent
+Method-name:getLockObject
+Method-returnType:Object
+Method-parameters:[String className]
+MethodInvocation:putIfAbsent
+Method-name:releaseLockObject
+Method-returnType:void
+Method-parameters:[String className]
+MethodInvocation:remove

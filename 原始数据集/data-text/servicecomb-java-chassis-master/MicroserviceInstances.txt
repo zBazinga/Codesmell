@@ -1,0 +1,60 @@
+Class:MicroserviceInstances
+Field:microserviceNotExist
+Field:needRefresh
+Field:revision
+Field:instancesResponse
+Method-name:isMicroserviceNotExist
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setMicroserviceNotExist
+Method-returnType:void
+Method-parameters:[boolean microserviceNotExist]
+FieldAccess:microserviceNotExist
+Method-name:isNeedRefresh
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setNeedRefresh
+Method-returnType:void
+Method-parameters:[boolean needRefresh]
+FieldAccess:needRefresh
+Method-name:getRevision
+Method-returnType:String
+Method-parameters:[]
+Method-name:setRevision
+Method-returnType:void
+Method-parameters:[String revision]
+FieldAccess:revision
+Method-name:getInstancesResponse
+Method-returnType:FindInstancesResponse
+Method-parameters:[]
+Method-name:setInstancesResponse
+Method-returnType:void
+Method-parameters:[FindInstancesResponse instancesResponse]
+FieldAccess:instancesResponse
+Method-name:mergeMicroserviceInstances
+Method-returnType:void
+Method-parameters:[MicroserviceInstances other]
+MethodInvocation:mergeNeedRefresh
+MethodInvocation:mergeMicroserviceNotExist
+MethodInvocation:mergeRevision
+MethodInvocation:mergeInstanceResponse
+MethodInvocation:getInstancesResponse
+MethodInvocation:mergeRevision
+MethodInvocation:getRevision
+Method-name:mergeRevision
+Method-returnType:void
+Method-parameters:[String revision]
+FieldAccess:revision
+MethodInvocation:compareTo
+FieldAccess:revision
+FieldAccess:revision
+Method-name:mergeMicroserviceNotExist
+Method-returnType:void
+Method-parameters:[boolean microserviceNotExist]
+FieldAccess:microserviceNotExist
+FieldAccess:microserviceNotExist
+Method-name:mergeNeedRefresh
+Method-returnType:void
+Method-parameters:[boolean needRefresh]
+FieldAccess:needRefresh
+FieldAccess:needRefresh

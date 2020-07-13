@@ -1,0 +1,111 @@
+Class:ClassMappings
+Field:classMappings
+Field:keyFactory
+Field:beanContainer
+Method-name:ClassMappings
+Method-returnType:null
+Method-parameters:[BeanContainer beanContainer]
+FieldAccess:beanContainer
+Method-name:addDefault
+Method-returnType:void
+Method-parameters:[Class<?> srcClass, Class<?> destClass, ClassMap classMap]
+MethodInvocation:put
+MethodInvocation:createKey
+Method-name:add
+Method-returnType:void
+Method-parameters:[Class<?> srcClass, Class<?> destClass, ClassMap classMap]
+MethodInvocation:put
+MethodInvocation:createKey
+MethodInvocation:failOnDuplicate
+Method-name:add
+Method-returnType:void
+Method-parameters:[Class<?> srcClass, Class<?> destClass, String mapId, ClassMap classMap]
+MethodInvocation:put
+MethodInvocation:createKey
+MethodInvocation:failOnDuplicate
+Method-name:addAll
+Method-returnType:void
+Method-parameters:[ClassMappings additionalClassMappings]
+MethodInvocation:getAll
+MethodInvocation:entrySet
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:failOnDuplicate
+MethodInvocation:getValue
+Method-name:failOnDuplicate
+Method-returnType:void
+Method-parameters:[Object result, ClassMap classMap]
+MethodInvocation:equals
+MethodInvocation:getSrcClassName
+MethodInvocation:getDestClassName
+MethodInvocation:getSrcClassName
+MethodInvocation:getDestClassName
+MethodInvocation:getMapId
+Method-name:getAll
+Method-returnType:Map<String,ClassMap>
+Method-parameters:[]
+Method-name:size
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:size
+Method-name:find
+Method-returnType:ClassMap
+Method-parameters:[Class<?> srcClass, Class<?> destClass]
+MethodInvocation:get
+MethodInvocation:createKey
+Method-name:contains
+Method-returnType:boolean
+Method-parameters:[Class<?> srcClass, Class<?> destClass, String mapId]
+MethodInvocation:createKey
+MethodInvocation:containsKey
+Method-name:find
+Method-returnType:ClassMap
+Method-parameters:[Class<?> srcClass, Class<?> destClass, String mapId]
+MethodInvocation:createKey
+MethodInvocation:get
+MethodInvocation:findInterfaceMapping
+MethodInvocation:putIfAbsent
+MethodInvocation:createKey
+MethodInvocation:isBlankOrNull
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:getMapId
+MethodInvocation:isAssignableFrom
+MethodInvocation:getSrcClassToMap
+MethodInvocation:isAssignableFrom
+MethodInvocation:getDestClassToMap
+MethodInvocation:equals
+MethodInvocation:getMapId
+MethodInvocation:equals
+MethodInvocation:throwMappingException
+Method-name:findInterfaceMapping
+Method-returnType:ClassMap
+Method-parameters:[Class<?> destClass, Class<?> srcClass, String mapId]
+MethodInvocation:toArray
+MethodInvocation:keySet
+MethodInvocation:get
+MethodInvocation:getDestClassToMap
+MethodInvocation:getSrcClassToMap
+MethodInvocation:getMapId
+MethodInvocation:equals
+MethodInvocation:getMapId
+MethodInvocation:isInterfaceImplementation
+MethodInvocation:isInterfaceImplementation
+MethodInvocation:equals
+MethodInvocation:isAssignableFrom
+MethodInvocation:isAbstract
+MethodInvocation:isInterfaceImplementation
+MethodInvocation:equals
+MethodInvocation:getRealClass
+Method-name:isInterfaceImplementation
+Method-returnType:boolean
+Method-parameters:[Class<?> type, Class<?> mappingType]
+MethodInvocation:isInterface
+MethodInvocation:isAssignableFrom
+Method-name:isAbstract
+Method-returnType:boolean
+Method-parameters:[Class<?> destClass]
+MethodInvocation:isAbstract
+MethodInvocation:getModifiers

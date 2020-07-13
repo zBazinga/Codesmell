@@ -1,0 +1,132 @@
+Class:NodeLinks
+Field:CONNECTOR
+Method-name:createLinkExtension
+Method-returnType:NodeLinks
+Method-parameters:[final NodeModel node]
+MethodInvocation:getLinkExtension
+MethodInvocation:addExtension
+Method-name:getLink
+Method-returnType:URI
+Method-parameters:[final NodeModel node]
+MethodInvocation:getLinkExtension
+MethodInvocation:getHyperLink
+Method-name:formatNodeAsHyperlink
+Method-returnType:Boolean
+Method-parameters:[final NodeModel node]
+MethodInvocation:getLinkExtension
+MethodInvocation:formatNodeAsHyperlink
+Method-name:getLinkAsString
+Method-returnType:String
+Method-parameters:[final NodeModel selectedNode]
+MethodInvocation:getValidLink
+MethodInvocation:toString
+Method-name:getLinkExtension
+Method-returnType:NodeLinks
+Method-parameters:[final NodeModel node]
+MethodInvocation:getExtension
+Method-name:getLinks
+Method-returnType:Collection<NodeLinkModel>
+Method-parameters:[final NodeModel node]
+MethodInvocation:getLinkExtension
+MethodInvocation:getLinks
+MethodInvocation:size
+MethodInvocation:cloneForSource
+MethodInvocation:add
+MethodInvocation:emptyList
+Field:nonLocalHyperlink
+Field:formatNodeAsHyperlink
+Field:links
+Field:HYPERLINK_CHANGED
+Method-name:NodeLinks
+Method-returnType:null
+Method-parameters:[]
+Method-name:addArrowlink
+Method-returnType:void
+Method-parameters:[final NodeLinkModel newLink]
+MethodInvocation:add
+MethodInvocation:getMap
+MethodInvocation:getSource
+MethodInvocation:addLinkToMap
+Method-name:getHyperLink
+Method-returnType:URI
+Method-parameters:[NodeModel clone]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getTargetID
+MethodInvocation:severe
+Method-name:getLinks
+Method-returnType:List<NodeLinkModel>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+Method-name:removeArrowlink
+Method-returnType:void
+Method-parameters:[final NodeLinkModel link]
+MethodInvocation:getSource
+FieldAccess:links
+MethodInvocation:getLinkExtension
+MethodInvocation:equals
+MethodInvocation:cloneForSource
+MethodInvocation:getSource
+MethodInvocation:remove
+MethodInvocation:getMap
+MethodInvocation:getSource
+MethodInvocation:removeLinkFromMap
+Method-name:removeLinkFromMap
+Method-returnType:void
+Method-parameters:[final MapModel map, final NodeLinkModel link]
+MethodInvocation:getLinks
+MethodInvocation:remove
+Method-name:removeLocalHyperLink
+Method-returnType:String
+Method-parameters:[final NodeModel node]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:remove
+MethodInvocation:removeLinkFromMap
+MethodInvocation:getMap
+MethodInvocation:getTargetID
+Method-name:setHyperLink
+Method-returnType:void
+Method-parameters:[final URI hyperlink]
+FieldAccess:nonLocalHyperlink
+Method-name:setLocalHyperlink
+Method-returnType:void
+Method-parameters:[final NodeModel node, final String targetID]
+FieldAccess:nonLocalHyperlink
+MethodInvocation:removeLocalHyperLink
+MethodInvocation:add
+MethodInvocation:addLinkToMap
+MethodInvocation:getMap
+Method-name:getValidLink
+Method-returnType:URI
+Method-parameters:[final NodeModel model]
+MethodInvocation:getLink
+MethodInvocation:toString
+MethodInvocation:startsWith
+MethodInvocation:substring
+MethodInvocation:getNodeForID
+MethodInvocation:getMap
+Method-name:formatNodeAsHyperlink
+Method-returnType:Boolean
+Method-parameters:[]
+Method-name:setFormatNodeAsHyperlink
+Method-returnType:void
+Method-parameters:[Boolean formatNodeAsHyperlink]
+FieldAccess:formatNodeAsHyperlink
+Method-name:replaceMapLinksForDeletedSourceNode
+Method-returnType:void
+Method-parameters:[MapLinks mapLinks, final NodeModel deletionRoot, NodeModel node]
+MethodInvocation:listIterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getSource
+MethodInvocation:equals
+MethodInvocation:remove
+MethodInvocation:subtreeClones
+MethodInvocation:isDescendantOf
+MethodInvocation:cloneForSource
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:add

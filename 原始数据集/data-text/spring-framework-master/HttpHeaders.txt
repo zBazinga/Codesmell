@@ -1,0 +1,814 @@
+Class:HttpHeaders
+Field:serialVersionUID
+Field:ACCEPT
+Field:ACCEPT_CHARSET
+Field:ACCEPT_ENCODING
+Field:ACCEPT_LANGUAGE
+Field:ACCEPT_RANGES
+Field:ACCESS_CONTROL_ALLOW_CREDENTIALS
+Field:ACCESS_CONTROL_ALLOW_HEADERS
+Field:ACCESS_CONTROL_ALLOW_METHODS
+Field:ACCESS_CONTROL_ALLOW_ORIGIN
+Field:ACCESS_CONTROL_EXPOSE_HEADERS
+Field:ACCESS_CONTROL_MAX_AGE
+Field:ACCESS_CONTROL_REQUEST_HEADERS
+Field:ACCESS_CONTROL_REQUEST_METHOD
+Field:AGE
+Field:ALLOW
+Field:AUTHORIZATION
+Field:CACHE_CONTROL
+Field:CONNECTION
+Field:CONTENT_ENCODING
+Field:CONTENT_DISPOSITION
+Field:CONTENT_LANGUAGE
+Field:CONTENT_LENGTH
+Field:CONTENT_LOCATION
+Field:CONTENT_RANGE
+Field:CONTENT_TYPE
+Field:COOKIE
+Field:DATE
+Field:ETAG
+Field:EXPECT
+Field:EXPIRES
+Field:FROM
+Field:HOST
+Field:IF_MATCH
+Field:IF_MODIFIED_SINCE
+Field:IF_NONE_MATCH
+Field:IF_RANGE
+Field:IF_UNMODIFIED_SINCE
+Field:LAST_MODIFIED
+Field:LINK
+Field:LOCATION
+Field:MAX_FORWARDS
+Field:ORIGIN
+Field:PRAGMA
+Field:PROXY_AUTHENTICATE
+Field:PROXY_AUTHORIZATION
+Field:RANGE
+Field:REFERER
+Field:RETRY_AFTER
+Field:SERVER
+Field:SET_COOKIE
+Field:SET_COOKIE2
+Field:TE
+Field:TRAILER
+Field:TRANSFER_ENCODING
+Field:UPGRADE
+Field:USER_AGENT
+Field:VARY
+Field:VIA
+Field:WARNING
+Field:WWW_AUTHENTICATE
+Field:EMPTY
+Field:ETAG_HEADER_VALUE_PATTERN
+MethodInvocation:compile
+Field:DECIMAL_FORMAT_SYMBOLS
+Field:GMT
+MethodInvocation:of
+Field:DATE_FORMATTER
+MethodInvocation:withZone
+MethodInvocation:ofPattern
+Field:DATE_PARSERS
+MethodInvocation:ofPattern
+MethodInvocation:withZone
+MethodInvocation:ofPattern
+Field:headers
+Method-name:HttpHeaders
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:toMultiValueMap
+Method-name:HttpHeaders
+Method-returnType:null
+Method-parameters:[MultiValueMap<String,String> headers]
+MethodInvocation:notNull
+FieldAccess:headers
+Method-name:getOrEmpty
+Method-returnType:List<String>
+Method-parameters:[Object headerName]
+MethodInvocation:get
+MethodInvocation:emptyList
+Method-name:setAccept
+Method-returnType:void
+Method-parameters:[List<MediaType> acceptableMediaTypes]
+MethodInvocation:set
+MethodInvocation:toString
+Method-name:getAccept
+Method-returnType:List<MediaType>
+Method-parameters:[]
+MethodInvocation:parseMediaTypes
+MethodInvocation:get
+Method-name:setAcceptLanguage
+Method-returnType:void
+Method-parameters:[List<Locale.LanguageRange> languages]
+MethodInvocation:notNull
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getWeight
+MethodInvocation:getRange
+MethodInvocation:getRange
+MethodInvocation:format
+MethodInvocation:getWeight
+MethodInvocation:toList
+MethodInvocation:set
+MethodInvocation:toCommaDelimitedString
+Method-name:getAcceptLanguage
+Method-returnType:List<Locale.LanguageRange>
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:hasText
+MethodInvocation:parse
+MethodInvocation:emptyList
+Method-name:setAcceptLanguageAsLocales
+Method-returnType:void
+Method-parameters:[List<Locale> locales]
+MethodInvocation:setAcceptLanguage
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toLanguageTag
+MethodInvocation:toList
+Method-name:getAcceptLanguageAsLocales
+Method-returnType:List<Locale>
+Method-parameters:[]
+MethodInvocation:getAcceptLanguage
+MethodInvocation:isEmpty
+MethodInvocation:emptyList
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:forLanguageTag
+MethodInvocation:getRange
+MethodInvocation:hasText
+MethodInvocation:getDisplayName
+MethodInvocation:toList
+Method-name:setAccessControlAllowCredentials
+Method-returnType:void
+Method-parameters:[boolean allowCredentials]
+MethodInvocation:set
+MethodInvocation:toString
+Method-name:getAccessControlAllowCredentials
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:parseBoolean
+MethodInvocation:getFirst
+Method-name:setAccessControlAllowHeaders
+Method-returnType:void
+Method-parameters:[List<String> allowedHeaders]
+MethodInvocation:set
+MethodInvocation:toCommaDelimitedString
+Method-name:getAccessControlAllowHeaders
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getValuesAsList
+Method-name:setAccessControlAllowMethods
+Method-returnType:void
+Method-parameters:[List<HttpMethod> allowedMethods]
+MethodInvocation:set
+MethodInvocation:collectionToCommaDelimitedString
+Method-name:getAccessControlAllowMethods
+Method-returnType:List<HttpMethod>
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:tokenizeToStringArray
+MethodInvocation:resolve
+MethodInvocation:add
+Method-name:setAccessControlAllowOrigin
+Method-returnType:void
+Method-parameters:[@Nullable String allowedOrigin]
+MethodInvocation:setOrRemove
+Method-name:getAccessControlAllowOrigin
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFieldValues
+Method-name:setAccessControlExposeHeaders
+Method-returnType:void
+Method-parameters:[List<String> exposedHeaders]
+MethodInvocation:set
+MethodInvocation:toCommaDelimitedString
+Method-name:getAccessControlExposeHeaders
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getValuesAsList
+Method-name:setAccessControlMaxAge
+Method-returnType:void
+Method-parameters:[Duration maxAge]
+MethodInvocation:set
+MethodInvocation:toString
+MethodInvocation:getSeconds
+Method-name:setAccessControlMaxAge
+Method-returnType:void
+Method-parameters:[long maxAge]
+MethodInvocation:set
+MethodInvocation:toString
+Method-name:getAccessControlMaxAge
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:parseLong
+Method-name:setAccessControlRequestHeaders
+Method-returnType:void
+Method-parameters:[List<String> requestHeaders]
+MethodInvocation:set
+MethodInvocation:toCommaDelimitedString
+Method-name:getAccessControlRequestHeaders
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getValuesAsList
+Method-name:setAccessControlRequestMethod
+Method-returnType:void
+Method-parameters:[@Nullable HttpMethod requestMethod]
+MethodInvocation:setOrRemove
+MethodInvocation:name
+Method-name:getAccessControlRequestMethod
+Method-returnType:HttpMethod
+Method-parameters:[]
+MethodInvocation:resolve
+MethodInvocation:getFirst
+Method-name:setAcceptCharset
+Method-returnType:void
+Method-parameters:[List<Charset> acceptableCharsets]
+MethodInvocation:add
+MethodInvocation:toLowerCase
+MethodInvocation:name
+MethodInvocation:set
+MethodInvocation:toString
+Method-name:getAcceptCharset
+Method-returnType:List<Charset>
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:tokenizeToStringArray
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:equals
+MethodInvocation:add
+MethodInvocation:forName
+MethodInvocation:emptyList
+Method-name:setAllow
+Method-returnType:void
+Method-parameters:[Set<HttpMethod> allowedMethods]
+MethodInvocation:set
+MethodInvocation:collectionToCommaDelimitedString
+Method-name:getAllow
+Method-returnType:Set<HttpMethod>
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:hasLength
+MethodInvocation:tokenizeToStringArray
+MethodInvocation:resolve
+MethodInvocation:add
+MethodInvocation:copyOf
+MethodInvocation:noneOf
+Method-name:setBasicAuth
+Method-returnType:void
+Method-parameters:[String username, String password]
+MethodInvocation:setBasicAuth
+Method-name:setBasicAuth
+Method-returnType:void
+Method-parameters:[String username, String password, @Nullable Charset charset]
+MethodInvocation:setBasicAuth
+MethodInvocation:encodeBasicAuth
+Method-name:setBasicAuth
+Method-returnType:void
+Method-parameters:[String encodedCredentials]
+MethodInvocation:hasText
+MethodInvocation:set
+Method-name:setBearerAuth
+Method-returnType:void
+Method-parameters:[String token]
+MethodInvocation:set
+Method-name:setCacheControl
+Method-returnType:void
+Method-parameters:[CacheControl cacheControl]
+MethodInvocation:setOrRemove
+MethodInvocation:getHeaderValue
+Method-name:setCacheControl
+Method-returnType:void
+Method-parameters:[@Nullable String cacheControl]
+MethodInvocation:setOrRemove
+Method-name:getCacheControl
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFieldValues
+Method-name:setConnection
+Method-returnType:void
+Method-parameters:[String connection]
+MethodInvocation:set
+Method-name:setConnection
+Method-returnType:void
+Method-parameters:[List<String> connection]
+MethodInvocation:set
+MethodInvocation:toCommaDelimitedString
+Method-name:getConnection
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getValuesAsList
+Method-name:setContentDispositionFormData
+Method-returnType:void
+Method-parameters:[String name, @Nullable String filename]
+MethodInvocation:notNull
+MethodInvocation:name
+MethodInvocation:builder
+MethodInvocation:filename
+MethodInvocation:setContentDisposition
+MethodInvocation:build
+Method-name:setContentDisposition
+Method-returnType:void
+Method-parameters:[ContentDisposition contentDisposition]
+MethodInvocation:set
+MethodInvocation:toString
+Method-name:getContentDisposition
+Method-returnType:ContentDisposition
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:parse
+MethodInvocation:empty
+Method-name:setContentLanguage
+Method-returnType:void
+Method-parameters:[@Nullable Locale locale]
+MethodInvocation:setOrRemove
+MethodInvocation:toLanguageTag
+Method-name:getContentLanguage
+Method-returnType:Locale
+Method-parameters:[]
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:findFirst
+MethodInvocation:stream
+MethodInvocation:getValuesAsList
+Method-name:setContentLength
+Method-returnType:void
+Method-parameters:[long contentLength]
+MethodInvocation:set
+MethodInvocation:toString
+Method-name:getContentLength
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:parseLong
+Method-name:setContentType
+Method-returnType:void
+Method-parameters:[@Nullable MediaType mediaType]
+MethodInvocation:isTrue
+MethodInvocation:isWildcardType
+MethodInvocation:isTrue
+MethodInvocation:isWildcardSubtype
+MethodInvocation:set
+MethodInvocation:toString
+MethodInvocation:remove
+Method-name:getContentType
+Method-returnType:MediaType
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:hasLength
+MethodInvocation:parseMediaType
+Method-name:setDate
+Method-returnType:void
+Method-parameters:[ZonedDateTime date]
+MethodInvocation:setZonedDateTime
+Method-name:setDate
+Method-returnType:void
+Method-parameters:[Instant date]
+MethodInvocation:setInstant
+Method-name:setDate
+Method-returnType:void
+Method-parameters:[long date]
+MethodInvocation:setDate
+Method-name:getDate
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getFirstDate
+Method-name:setETag
+Method-returnType:void
+Method-parameters:[@Nullable String etag]
+MethodInvocation:isTrue
+MethodInvocation:startsWith
+MethodInvocation:startsWith
+MethodInvocation:isTrue
+MethodInvocation:endsWith
+MethodInvocation:set
+MethodInvocation:remove
+Method-name:getETag
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setExpires
+Method-returnType:void
+Method-parameters:[ZonedDateTime expires]
+MethodInvocation:setZonedDateTime
+Method-name:setExpires
+Method-returnType:void
+Method-parameters:[Instant expires]
+MethodInvocation:setInstant
+Method-name:setExpires
+Method-returnType:void
+Method-parameters:[long expires]
+MethodInvocation:setDate
+Method-name:getExpires
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getFirstDate
+Method-name:setHost
+Method-returnType:void
+Method-parameters:[@Nullable InetSocketAddress host]
+MethodInvocation:getHostString
+MethodInvocation:getPort
+MethodInvocation:set
+MethodInvocation:remove
+Method-name:getHost
+Method-returnType:InetSocketAddress
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:startsWith
+MethodInvocation:indexOf
+MethodInvocation:indexOf
+MethodInvocation:lastIndexOf
+MethodInvocation:substring
+MethodInvocation:substring
+MethodInvocation:parseInt
+MethodInvocation:createUnresolved
+Method-name:setIfMatch
+Method-returnType:void
+Method-parameters:[String ifMatch]
+MethodInvocation:set
+Method-name:setIfMatch
+Method-returnType:void
+Method-parameters:[List<String> ifMatchList]
+MethodInvocation:set
+MethodInvocation:toCommaDelimitedString
+Method-name:getIfMatch
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getETagValuesAsList
+Method-name:setIfModifiedSince
+Method-returnType:void
+Method-parameters:[ZonedDateTime ifModifiedSince]
+MethodInvocation:setZonedDateTime
+MethodInvocation:withZoneSameInstant
+Method-name:setIfModifiedSince
+Method-returnType:void
+Method-parameters:[Instant ifModifiedSince]
+MethodInvocation:setInstant
+Method-name:setIfModifiedSince
+Method-returnType:void
+Method-parameters:[long ifModifiedSince]
+MethodInvocation:setDate
+Method-name:getIfModifiedSince
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getFirstDate
+Method-name:setIfNoneMatch
+Method-returnType:void
+Method-parameters:[String ifNoneMatch]
+MethodInvocation:set
+Method-name:setIfNoneMatch
+Method-returnType:void
+Method-parameters:[List<String> ifNoneMatchList]
+MethodInvocation:set
+MethodInvocation:toCommaDelimitedString
+Method-name:getIfNoneMatch
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getETagValuesAsList
+Method-name:setIfUnmodifiedSince
+Method-returnType:void
+Method-parameters:[ZonedDateTime ifUnmodifiedSince]
+MethodInvocation:setZonedDateTime
+MethodInvocation:withZoneSameInstant
+Method-name:setIfUnmodifiedSince
+Method-returnType:void
+Method-parameters:[Instant ifUnmodifiedSince]
+MethodInvocation:setInstant
+Method-name:setIfUnmodifiedSince
+Method-returnType:void
+Method-parameters:[long ifUnmodifiedSince]
+MethodInvocation:setDate
+Method-name:getIfUnmodifiedSince
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getFirstDate
+Method-name:setLastModified
+Method-returnType:void
+Method-parameters:[ZonedDateTime lastModified]
+MethodInvocation:setZonedDateTime
+MethodInvocation:withZoneSameInstant
+Method-name:setLastModified
+Method-returnType:void
+Method-parameters:[Instant lastModified]
+MethodInvocation:setInstant
+Method-name:setLastModified
+Method-returnType:void
+Method-parameters:[long lastModified]
+MethodInvocation:setDate
+Method-name:getLastModified
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getFirstDate
+Method-name:setLocation
+Method-returnType:void
+Method-parameters:[@Nullable URI location]
+MethodInvocation:setOrRemove
+MethodInvocation:toASCIIString
+Method-name:getLocation
+Method-returnType:URI
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:create
+Method-name:setOrigin
+Method-returnType:void
+Method-parameters:[@Nullable String origin]
+MethodInvocation:setOrRemove
+Method-name:getOrigin
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setPragma
+Method-returnType:void
+Method-parameters:[@Nullable String pragma]
+MethodInvocation:setOrRemove
+Method-name:getPragma
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setRange
+Method-returnType:void
+Method-parameters:[List<HttpRange> ranges]
+MethodInvocation:toString
+MethodInvocation:set
+Method-name:getRange
+Method-returnType:List<HttpRange>
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:parseRanges
+Method-name:setUpgrade
+Method-returnType:void
+Method-parameters:[@Nullable String upgrade]
+MethodInvocation:setOrRemove
+Method-name:getUpgrade
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getFirst
+Method-name:setVary
+Method-returnType:void
+Method-parameters:[List<String> requestHeaders]
+MethodInvocation:set
+MethodInvocation:toCommaDelimitedString
+Method-name:getVary
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getValuesAsList
+Method-name:setZonedDateTime
+Method-returnType:void
+Method-parameters:[String headerName, ZonedDateTime date]
+MethodInvocation:set
+MethodInvocation:format
+Method-name:setInstant
+Method-returnType:void
+Method-parameters:[String headerName, Instant date]
+MethodInvocation:setZonedDateTime
+MethodInvocation:ofInstant
+Method-name:setDate
+Method-returnType:void
+Method-parameters:[String headerName, long date]
+MethodInvocation:setInstant
+MethodInvocation:ofEpochMilli
+Method-name:getFirstDate
+Method-returnType:long
+Method-parameters:[String headerName]
+MethodInvocation:getFirstDate
+Method-name:getFirstDate
+Method-returnType:long
+Method-parameters:[String headerName, boolean rejectInvalid]
+MethodInvocation:getFirstZonedDateTime
+MethodInvocation:toEpochMilli
+MethodInvocation:toInstant
+Method-name:getFirstZonedDateTime
+Method-returnType:ZonedDateTime
+Method-parameters:[String headerName]
+MethodInvocation:getFirstZonedDateTime
+Method-name:getFirstZonedDateTime
+Method-returnType:ZonedDateTime
+Method-parameters:[String headerName, boolean rejectInvalid]
+MethodInvocation:getFirst
+MethodInvocation:length
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:parse
+Method-name:getValuesAsList
+Method-returnType:List<String>
+Method-parameters:[String headerName]
+MethodInvocation:get
+MethodInvocation:addAll
+MethodInvocation:tokenizeToStringArray
+MethodInvocation:emptyList
+Method-name:clearContentHeaders
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:remove
+FieldAccess:headers
+MethodInvocation:remove
+FieldAccess:headers
+MethodInvocation:remove
+FieldAccess:headers
+MethodInvocation:remove
+FieldAccess:headers
+MethodInvocation:remove
+FieldAccess:headers
+MethodInvocation:remove
+FieldAccess:headers
+MethodInvocation:remove
+FieldAccess:headers
+Method-name:getETagValuesAsList
+Method-returnType:List<String>
+Method-parameters:[String headerName]
+MethodInvocation:get
+MethodInvocation:matcher
+MethodInvocation:find
+MethodInvocation:equals
+MethodInvocation:group
+MethodInvocation:add
+MethodInvocation:group
+MethodInvocation:add
+MethodInvocation:group
+MethodInvocation:isEmpty
+MethodInvocation:emptyList
+Method-name:getFieldValues
+Method-returnType:String
+Method-parameters:[String headerName]
+MethodInvocation:get
+MethodInvocation:toCommaDelimitedString
+Method-name:toCommaDelimitedString
+Method-returnType:String
+Method-parameters:[List<String> headerValues]
+MethodInvocation:add
+MethodInvocation:toString
+Method-name:setOrRemove
+Method-returnType:void
+Method-parameters:[String headerName, @Nullable String headerValue]
+MethodInvocation:set
+MethodInvocation:remove
+Method-name:getFirst
+Method-returnType:String
+Method-parameters:[String headerName]
+MethodInvocation:getFirst
+FieldAccess:headers
+Method-name:add
+Method-returnType:void
+Method-parameters:[String headerName, @Nullable String headerValue]
+MethodInvocation:add
+FieldAccess:headers
+Method-name:addAll
+Method-returnType:void
+Method-parameters:[String key, List<? extends String> values]
+MethodInvocation:addAll
+FieldAccess:headers
+Method-name:addAll
+Method-returnType:void
+Method-parameters:[MultiValueMap<String,String> values]
+MethodInvocation:addAll
+FieldAccess:headers
+Method-name:set
+Method-returnType:void
+Method-parameters:[String headerName, @Nullable String headerValue]
+MethodInvocation:set
+FieldAccess:headers
+Method-name:setAll
+Method-returnType:void
+Method-parameters:[Map<String,String> values]
+MethodInvocation:setAll
+FieldAccess:headers
+Method-name:toSingleValueMap
+Method-returnType:Map<String,String>
+Method-parameters:[]
+MethodInvocation:toSingleValueMap
+FieldAccess:headers
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:headers
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+FieldAccess:headers
+Method-name:containsKey
+Method-returnType:boolean
+Method-parameters:[Object key]
+MethodInvocation:containsKey
+FieldAccess:headers
+Method-name:containsValue
+Method-returnType:boolean
+Method-parameters:[Object value]
+MethodInvocation:containsValue
+FieldAccess:headers
+Method-name:get
+Method-returnType:List<String>
+Method-parameters:[Object key]
+MethodInvocation:get
+FieldAccess:headers
+Method-name:put
+Method-returnType:List<String>
+Method-parameters:[String key, List<String> value]
+MethodInvocation:put
+FieldAccess:headers
+Method-name:remove
+Method-returnType:List<String>
+Method-parameters:[Object key]
+MethodInvocation:remove
+FieldAccess:headers
+Method-name:putAll
+Method-returnType:void
+Method-parameters:[Map<? extends String,? extends List<String>> map]
+MethodInvocation:putAll
+FieldAccess:headers
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+FieldAccess:headers
+Method-name:keySet
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+FieldAccess:headers
+Method-name:values
+Method-returnType:Collection<List<String>>
+Method-parameters:[]
+MethodInvocation:values
+FieldAccess:headers
+Method-name:entrySet
+Method-returnType:Set<Entry<String,List<String>>>
+Method-parameters:[]
+MethodInvocation:entrySet
+FieldAccess:headers
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object other]
+MethodInvocation:equals
+FieldAccess:headers
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+FieldAccess:headers
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:formatHeaders
+FieldAccess:headers
+Method-name:readOnlyHttpHeaders
+Method-returnType:HttpHeaders
+Method-parameters:[HttpHeaders headers]
+MethodInvocation:notNull
+Method-name:writableHttpHeaders
+Method-returnType:HttpHeaders
+Method-parameters:[HttpHeaders headers]
+MethodInvocation:notNull
+Method-name:formatHeaders
+Method-returnType:String
+Method-parameters:[MultiValueMap<String,String> headers]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:getKey
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:joining
+MethodInvocation:joining
+Method-name:encodeBasicAuth
+Method-returnType:String
+Method-parameters:[String username, String password, @Nullable Charset charset]
+MethodInvocation:notNull
+MethodInvocation:doesNotContain
+MethodInvocation:notNull
+MethodInvocation:newEncoder
+MethodInvocation:canEncode
+MethodInvocation:canEncode
+MethodInvocation:displayName
+MethodInvocation:encode
+MethodInvocation:getEncoder
+MethodInvocation:getBytes
+Method-name:formatDate
+Method-returnType:String
+Method-parameters:[long date]
+MethodInvocation:ofEpochMilli
+MethodInvocation:ofInstant
+MethodInvocation:format
+Method-name:getVaryRequestHeadersToAdd
+Method-returnType:List<String>
+Method-parameters:[HttpHeaders entityHeaders, HttpEntityMethodProcessor httpEntityMethodProcessor]
+MethodInvocation:getVary
+MethodInvocation:get
+MethodInvocation:tokenizeToStringArray
+MethodInvocation:equals
+MethodInvocation:emptyList
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:remove

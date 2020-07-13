@@ -1,0 +1,90 @@
+Class:RelationName
+Field:INVALID_NAME_CHARACTERS
+MethodInvocation:of
+Field:schema
+Field:name
+Method-name:of
+Method-returnType:RelationName
+Method-parameters:[QualifiedName name, String defaultSchema]
+MethodInvocation:getParts
+MethodInvocation:checkArgument
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+Method-name:fromIndexName
+Method-returnType:RelationName
+Method-parameters:[String indexName]
+MethodInvocation:toRelationName
+Method-name:fqnFromIndexName
+Method-returnType:String
+Method-parameters:[String indexName]
+MethodInvocation:toFullyQualifiedName
+Method-name:RelationName
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readString
+MethodInvocation:readString
+Method-name:RelationName
+Method-returnType:null
+Method-parameters:[String schema, String name]
+Method-name:schema
+Method-returnType:String
+Method-parameters:[]
+Method-name:name
+Method-returnType:String
+Method-parameters:[]
+Method-name:fqn
+Method-returnType:String
+Method-parameters:[]
+Method-name:sqlFqn
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:quoteIfNeeded
+MethodInvocation:quoteIfNeeded
+Method-name:indexNameOrAlias
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:fullIndexName
+MethodInvocation:fqn
+Method-name:ensureValidForRelationCreation
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isValidRelationOrSchemaName
+MethodInvocation:isValidRelationOrSchemaName
+MethodInvocation:contains
+Method-name:isValidRelationOrSchemaName
+Method-returnType:boolean
+Method-parameters:[String name]
+MethodInvocation:contains
+MethodInvocation:length
+MethodInvocation:startsWith
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equal
+MethodInvocation:equal
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:fqn
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeString
+MethodInvocation:writeString
+Method-name:getTableInfo
+Method-returnType:T
+Method-parameters:[Operation operation, Schemas schemaInfos]
+MethodInvocation:getTableInfo
+MethodInvocation:blockedRaiseException

@@ -1,0 +1,135 @@
+Class:NodeAttributeTableModel
+Field:DUMMY
+Field:CAPACITY_INCREMENT
+Field:EMTPY_ATTRIBUTES
+Method-name:getModel
+Method-returnType:NodeAttributeTableModel
+Method-parameters:[final NodeModel node]
+MethodInvocation:getExtension
+Field:attributes
+Field:layout
+Field:listeners
+Method-name:NodeAttributeTableModel
+Method-returnType:null
+Method-parameters:[]
+Method-name:NodeAttributeTableModel
+Method-returnType:null
+Method-parameters:[final int size]
+MethodInvocation:allocateAttributes
+Method-name:addRowNoUndo
+Method-returnType:void
+Method-parameters:[NodeModel node, final Attribute newAttribute]
+MethodInvocation:allocateAttributes
+MethodInvocation:getRowCount
+MethodInvocation:getRegistry
+MethodInvocation:getMap
+MethodInvocation:registry
+MethodInvocation:add
+MethodInvocation:fireTableRowsInserted
+Method-name:addTableModelListener
+Method-returnType:void
+Method-parameters:[final TableModelListener listener]
+MethodInvocation:add
+Method-name:allocateAttributes
+Method-returnType:void
+Method-parameters:[final int size]
+Method-name:fireTableCellUpdated
+Method-returnType:void
+Method-parameters:[NodeModel node, final int row, final int column]
+MethodInvocation:fireTableChanged
+Method-name:fireTableChanged
+Method-returnType:void
+Method-parameters:[NodeModel node, final TableModelEvent e]
+MethodInvocation:nodeChanged
+MethodInvocation:getNodeChangeAnnouncer
+MethodInvocation:getMap
+MethodInvocation:tableChanged
+Method-name:fireTableRowsDeleted
+Method-returnType:void
+Method-parameters:[NodeModel node, final int firstRow, final int lastRow]
+MethodInvocation:fireTableChanged
+Method-name:fireTableRowsInserted
+Method-returnType:void
+Method-parameters:[NodeModel node, final int firstRow, final int lastRow]
+MethodInvocation:fireTableChanged
+Method-name:fireTableRowsUpdated
+Method-returnType:void
+Method-parameters:[NodeModel node, final int firstRow, final int lastRow]
+MethodInvocation:fireTableChanged
+Method-name:getAttribute
+Method-returnType:Attribute
+Method-parameters:[final int row]
+MethodInvocation:get
+Method-name:getAttributeKeyList
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getAttributes
+MethodInvocation:add
+MethodInvocation:getName
+Method-name:getAttributeIndex
+Method-returnType:int
+Method-parameters:[final String name]
+MethodInvocation:getAttributes
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:getAttributeIndex
+Method-returnType:int
+Method-parameters:[final Attribute searchedAttribute]
+MethodInvocation:getAttributes
+Method-name:getAttributes
+Method-returnType:Vector<Attribute>
+Method-parameters:[]
+MethodInvocation:allocateAttributes
+Method-name:getAttributeTableLength
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getRowCount
+Method-name:getColumnWidth
+Method-returnType:Quantity<LengthUnits>
+Method-parameters:[final int col]
+MethodInvocation:getColumnWidth
+MethodInvocation:getLayout
+Method-name:getLayout
+Method-returnType:AttributeTableLayoutModel
+Method-parameters:[]
+Method-name:getName
+Method-returnType:Object
+Method-parameters:[final int row]
+MethodInvocation:get
+MethodInvocation:getName
+Method-name:getRowCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getValue
+Method-returnType:Object
+Method-parameters:[final int row]
+MethodInvocation:get
+MethodInvocation:getValue
+Method-name:getValueAt
+Method-returnType:Object
+Method-parameters:[final int row, final int col]
+MethodInvocation:getName
+MethodInvocation:getValue
+Method-name:removeTableModelListener
+Method-returnType:void
+Method-parameters:[final TableModelListener listener]
+MethodInvocation:remove
+Method-name:setName
+Method-returnType:void
+Method-parameters:[NodeModel node, final int row, final Object newName]
+MethodInvocation:get
+MethodInvocation:setName
+MethodInvocation:toString
+MethodInvocation:fireTableRowsUpdated
+Method-name:setValue
+Method-returnType:void
+Method-parameters:[NodeModel node, final int row, final Object newValue]
+MethodInvocation:get
+MethodInvocation:setValue
+MethodInvocation:fireTableRowsUpdated
+Method-name:setValueAt
+Method-returnType:void
+Method-parameters:[NodeModel node, final Object value, final int rowIndex, final int columnIndex]
+MethodInvocation:setName
+MethodInvocation:setValue

@@ -1,0 +1,32 @@
+Class:ToBytes
+Field:recordPath
+Field:charsetSegment
+Method-name:ToBytes
+Method-returnType:null
+Method-parameters:[final RecordPathSegment recordPath, final RecordPathSegment charsetSegment, final boolean absolute]
+FieldAccess:recordPath
+FieldAccess:charsetSegment
+Method-name:evaluate
+Method-returnType:Stream<FieldValue>
+Method-parameters:[RecordPathEvaluationContext context]
+MethodInvocation:evaluate
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:getValue
+MethodInvocation:getValue
+MethodInvocation:getCharset
+FieldAccess:charsetSegment
+MethodInvocation:toArray
+MethodInvocation:getValue
+MethodInvocation:getFieldName
+MethodInvocation:getField
+MethodInvocation:getDataType
+MethodInvocation:getField
+MethodInvocation:orElse
+MethodInvocation:getParent
+Method-name:getCharset
+Method-returnType:Charset
+Method-parameters:[final RecordPathSegment charsetSegment, final RecordPathEvaluationContext context]
+MethodInvocation:getFirstStringValue
+MethodInvocation:isEmpty
+MethodInvocation:getCharset

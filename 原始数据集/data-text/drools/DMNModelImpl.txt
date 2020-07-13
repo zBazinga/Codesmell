@@ -1,0 +1,418 @@
+Class:DMNModelImpl
+Method-name:isDuplicateEvent
+Method-returnType:boolean
+Method-parameters:[Msg.Message error, DMNElement element, DMNFEELHelper dmnfeelHelper]
+MethodInvocation:anyMatch
+MethodInvocation:stream
+MethodInvocation:getMessages
+MethodInvocation:getMessageType
+MethodInvocation:getType
+MethodInvocation:getSourceId
+MethodInvocation:getId
+MethodInvocation:getSourceId
+MethodInvocation:getId
+MethodInvocation:equals
+MethodInvocation:getSourceId
+MethodInvocation:getId
+Field:SerializationFormat
+Field:serializedAs
+Field:resource
+Field:definitions
+Field:inputs
+Field:decisions
+Field:bkms
+Field:itemDefs
+Field:decisionServices
+Field:messages
+Field:types
+Field:runtimeTypeCheck
+Field:importAliases
+Field:importChain
+Method-name:DMNModelImpl
+Method-returnType:null
+Method-parameters:[]
+Method-name:DMNModelImpl
+Method-returnType:null
+Method-parameters:[Definitions definitions]
+FieldAccess:definitions
+MethodInvocation:wireTypeRegistry
+Method-name:wireTypeRegistry
+Method-returnType:void
+Method-parameters:[Definitions definitions]
+Method-name:getTypeRegistry
+Method-returnType:DMNTypeRegistry
+Method-parameters:[]
+FieldAccess:types
+Method-name:getNamespace
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getNamespace
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+Method-name:getDefinitions
+Method-returnType:Definitions
+Method-parameters:[]
+Method-name:setDefinitions
+Method-returnType:void
+Method-parameters:[Definitions definitions]
+FieldAccess:definitions
+Method-name:nameInCurrentModel
+Method-returnType:String
+Method-parameters:[DMNNode node]
+MethodInvocation:equals
+MethodInvocation:getModelNamespace
+MethodInvocation:getNamespace
+MethodInvocation:getName
+MethodInvocation:getImportAliasFor
+MethodInvocation:getModelNamespace
+MethodInvocation:getModelName
+MethodInvocation:isPresent
+MethodInvocation:get
+MethodInvocation:getName
+Method-name:addInput
+Method-returnType:void
+Method-parameters:[InputDataNode idn]
+MethodInvocation:put
+MethodInvocation:computeDRGElementModelLocalId
+Method-name:getInputById
+Method-returnType:InputDataNode
+Method-parameters:[String id]
+MethodInvocation:get
+FieldAccess:inputs
+Method-name:getInputByName
+Method-returnType:InputDataNode
+Method-parameters:[String name]
+MethodInvocation:values
+FieldAccess:inputs
+MethodInvocation:equals
+MethodInvocation:nameInCurrentModel
+Method-name:getInputs
+Method-returnType:Set<InputDataNode>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:values
+FieldAccess:inputs
+MethodInvocation:toSet
+Method-name:addDecision
+Method-returnType:void
+Method-parameters:[DecisionNode dn]
+MethodInvocation:put
+MethodInvocation:computeDRGElementModelLocalId
+Method-name:computeDRGElementModelLocalId
+Method-returnType:String
+Method-parameters:[DMNNode node]
+MethodInvocation:equals
+MethodInvocation:getModelNamespace
+MethodInvocation:getNamespace
+MethodInvocation:getId
+MethodInvocation:getModelNamespace
+MethodInvocation:getId
+Method-name:getDecisionById
+Method-returnType:DecisionNode
+Method-parameters:[String id]
+MethodInvocation:get
+FieldAccess:decisions
+Method-name:getDecisionByName
+Method-returnType:DecisionNode
+Method-parameters:[String name]
+MethodInvocation:values
+FieldAccess:decisions
+MethodInvocation:equals
+MethodInvocation:nameInCurrentModel
+Method-name:getDecisions
+Method-returnType:Set<DecisionNode>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:values
+FieldAccess:decisions
+MethodInvocation:toSet
+Method-name:getRequiredInputsForDecisionName
+Method-returnType:Set<InputDataNode>
+Method-parameters:[String decisionName]
+MethodInvocation:getDecisionByName
+MethodInvocation:collectRequiredInputs
+MethodInvocation:values
+MethodInvocation:getDependencies
+Method-name:getRequiredInputsForDecisionId
+Method-returnType:Set<InputDataNode>
+Method-parameters:[String decisionId]
+MethodInvocation:getDecisionById
+MethodInvocation:collectRequiredInputs
+MethodInvocation:values
+MethodInvocation:getDependencies
+Method-name:addDecisionService
+Method-returnType:void
+Method-parameters:[DecisionServiceNode dsn]
+MethodInvocation:put
+MethodInvocation:computeDRGElementModelLocalId
+Method-name:getDecisionServiceById
+Method-returnType:DecisionServiceNode
+Method-parameters:[String id]
+MethodInvocation:get
+FieldAccess:decisionServices
+Method-name:getDecisionServiceByName
+Method-returnType:DecisionServiceNode
+Method-parameters:[String name]
+MethodInvocation:values
+FieldAccess:decisionServices
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:getDecisionServices
+Method-returnType:Collection<DecisionServiceNode>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:values
+FieldAccess:decisionServices
+MethodInvocation:toSet
+Method-name:addBusinessKnowledgeModel
+Method-returnType:void
+Method-parameters:[BusinessKnowledgeModelNode bkm]
+MethodInvocation:put
+MethodInvocation:computeDRGElementModelLocalId
+Method-name:getBusinessKnowledgeModelById
+Method-returnType:BusinessKnowledgeModelNode
+Method-parameters:[String id]
+MethodInvocation:get
+FieldAccess:bkms
+Method-name:getBusinessKnowledgeModelByName
+Method-returnType:BusinessKnowledgeModelNode
+Method-parameters:[String name]
+MethodInvocation:values
+FieldAccess:bkms
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:getBusinessKnowledgeModels
+Method-returnType:Set<BusinessKnowledgeModelNode>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:values
+FieldAccess:bkms
+MethodInvocation:toSet
+Method-name:collectRequiredInputs
+Method-returnType:void
+Method-parameters:[Collection<DMNNode> deps, Set<InputDataNode> inputs]
+MethodInvocation:forEach
+MethodInvocation:add
+MethodInvocation:collectRequiredInputs
+MethodInvocation:values
+MethodInvocation:getDependencies
+MethodInvocation:collectRequiredInputs
+MethodInvocation:values
+MethodInvocation:getDependencies
+Method-name:addItemDefinition
+Method-returnType:void
+Method-parameters:[ItemDefNode idn]
+MethodInvocation:put
+FieldAccess:itemDefs
+MethodInvocation:getId
+MethodInvocation:getId
+MethodInvocation:size
+FieldAccess:itemDefs
+Method-name:getItemDefinitionById
+Method-returnType:ItemDefNode
+Method-parameters:[String id]
+MethodInvocation:get
+FieldAccess:itemDefs
+Method-name:getItemDefinitionByName
+Method-returnType:ItemDefNode
+Method-parameters:[String name]
+MethodInvocation:values
+FieldAccess:itemDefs
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:getItemDefinitions
+Method-returnType:Set<ItemDefNode>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:values
+FieldAccess:itemDefs
+MethodInvocation:toSet
+Method-name:getMessages
+Method-returnType:List<DMNMessage>
+Method-parameters:[]
+MethodInvocation:getMessages
+Method-name:getMessages
+Method-returnType:List<DMNMessage>
+Method-parameters:[DMNMessage.Severity... sevs]
+MethodInvocation:getMessages
+Method-name:hasErrors
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:hasErrors
+Method-name:addAll
+Method-returnType:void
+Method-parameters:[List<? extends DMNMessage> messages]
+MethodInvocation:addAll
+FieldAccess:messages
+Method-name:addMessage
+Method-returnType:DMNMessage
+Method-parameters:[DMNMessage msg]
+MethodInvocation:addMessage
+Method-name:addMessage
+Method-returnType:DMNMessage
+Method-parameters:[DMNMessage.Severity severity, String message, DMNMessageType messageType, DMNModelInstrumentedBase source]
+MethodInvocation:addMessage
+Method-name:addMessage
+Method-returnType:DMNMessage
+Method-parameters:[DMNMessage.Severity severity, String message, DMNMessageType messageType, DMNModelInstrumentedBase source, Throwable exception]
+MethodInvocation:addMessage
+Method-name:addMessage
+Method-returnType:DMNMessage
+Method-parameters:[DMNMessage.Severity severity, String message, DMNMessageType messageType, DMNModelInstrumentedBase source, FEELEvent feelEvent]
+MethodInvocation:addMessage
+Method-name:removeDMNNodeFromIndexes
+Method-returnType:boolean
+Method-parameters:[DMNNode node]
+MethodInvocation:removeIf
+MethodInvocation:entrySet
+FieldAccess:decisions
+MethodInvocation:equals
+MethodInvocation:getValue
+MethodInvocation:removeIf
+MethodInvocation:entrySet
+FieldAccess:bkms
+MethodInvocation:equals
+MethodInvocation:getValue
+MethodInvocation:removeIf
+MethodInvocation:entrySet
+FieldAccess:inputs
+MethodInvocation:equals
+MethodInvocation:getValue
+Method-name:setResource
+Method-returnType:void
+Method-parameters:[Resource resource]
+FieldAccess:resource
+Method-name:getResource
+Method-returnType:Resource
+Method-parameters:[]
+Method-name:isRuntimeTypeCheck
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setRuntimeTypeCheck
+Method-returnType:void
+Method-parameters:[boolean runtimeTypeCheck]
+FieldAccess:runtimeTypeCheck
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+MethodInvocation:get
+MethodInvocation:getCustomExtensions
+MethodInvocation:getRegisteredExtensions
+MethodInvocation:marshal
+MethodInvocation:newMarshallerWithExtensions
+FieldAccess:definitions
+MethodInvocation:writeObject
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+FieldAccess:serializedAs
+MethodInvocation:readObject
+FieldAccess:resource
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:get
+MethodInvocation:getCustomExtensions
+MethodInvocation:getRegisteredExtensions
+MethodInvocation:unmarshal
+MethodInvocation:newMarshallerWithExtensions
+FieldAccess:definitions
+MethodInvocation:wireTypeRegistry
+MethodInvocation:compile
+FieldAccess:inputs
+FieldAccess:decisions
+FieldAccess:bkms
+FieldAccess:itemDefs
+FieldAccess:messages
+FieldAccess:types
+FieldAccess:runtimeTypeCheck
+FieldAccess:importAliases
+Method-name:setImportAliasForNS
+Method-returnType:void
+Method-parameters:[String iAlias, String iNS, String iModelName]
+MethodInvocation:isPresent
+MethodInvocation:getImportAliasFor
+MethodInvocation:put
+FieldAccess:importAliases
+Method-name:getImportAliasesForNS
+Method-returnType:Map<String,QName>
+Method-parameters:[]
+MethodInvocation:unmodifiableMap
+FieldAccess:importAliases
+Method-name:getImportAliasFor
+Method-returnType:Optional<String>
+Method-parameters:[String ns, String iModelName]
+MethodInvocation:findFirst
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:entrySet
+FieldAccess:importAliases
+MethodInvocation:equals
+MethodInvocation:getValue
+MethodInvocation:getKey
+Method-name:getImportNamespaceAndNameforAlias
+Method-returnType:QName
+Method-parameters:[String iAlias]
+MethodInvocation:get
+FieldAccess:importAliases
+Method-name:addImportChainChild
+Method-returnType:void
+Method-parameters:[ImportChain child, String alias]
+MethodInvocation:add
+FieldAccess:children
+FieldAccess:importChain
+MethodInvocation:from
+Method-name:getImportChain
+Method-returnType:ImportChain
+Method-parameters:[]
+FieldAccess:importChain
+Method-name:getImportChainAliases
+Method-returnType:Map<String,Collection<List<String>>>
+Method-parameters:[]
+MethodInvocation:getImportChainAliases
+FieldAccess:importChain
+Class:ImportChain
+Field:alias
+Field:node
+Field:children
+Method-name:ImportChain
+Method-returnType:null
+Method-parameters:[DMNModel node]
+Method-name:ImportChain
+Method-returnType:null
+Method-parameters:[DMNModel node, String alias]
+FieldAccess:alias
+FieldAccess:node
+Method-name:from
+Method-returnType:ImportChain
+Method-parameters:[ImportChain from, String alias]
+MethodInvocation:addAll
+Method-name:getImportChainAliases
+Method-returnType:Map<String,Collection<List<String>>>
+Method-parameters:[]
+MethodInvocation:getImportChainAliases
+MethodInvocation:entrySet
+MethodInvocation:computeIfAbsent
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:add
+MethodInvocation:addAll
+MethodInvocation:add
+MethodInvocation:computeIfAbsent
+MethodInvocation:getNamespace
+MethodInvocation:add
+MethodInvocation:asList
+Method-name:addAllUnfiltered
+Method-returnType:void
+Method-parameters:[List<? extends DMNMessage> messages]
+MethodInvocation:addAllUnfiltered
+FieldAccess:messages

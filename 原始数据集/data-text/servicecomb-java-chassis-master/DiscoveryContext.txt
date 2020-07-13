@@ -1,0 +1,39 @@
+Class:DiscoveryContext
+Field:inputParameters
+Field:contextParameters
+Field:rerunStack
+Field:currentNode
+Method-name:getInputParameters
+Method-returnType:T
+Method-parameters:[]
+Method-name:setInputParameters
+Method-returnType:void
+Method-parameters:[Object inputParameters]
+FieldAccess:inputParameters
+Method-name:getContextParameter
+Method-returnType:T
+Method-parameters:[String name]
+MethodInvocation:get
+Method-name:putContextParameter
+Method-returnType:void
+Method-parameters:[String name, Object value]
+MethodInvocation:put
+Method-name:setCurrentNode
+Method-returnType:void
+Method-parameters:[DiscoveryTreeNode node]
+FieldAccess:currentNode
+Method-name:pushRerunFilter
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:push
+Method-name:popRerunFilter
+Method-returnType:DiscoveryTreeNode
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:pop
+Method-name:discovery
+Method-returnType:DiscoveryTreeNode
+Method-parameters:[String appId, String microserviceName, String versionRule, DiscoveryTree discoveryTree]
+MethodInvocation:getOrCreateVersionedCache
+MethodInvocation:getInstanceCacheManager
+MethodInvocation:discovery

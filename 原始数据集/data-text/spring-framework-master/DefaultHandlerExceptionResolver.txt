@@ -1,0 +1,106 @@
+Class:DefaultHandlerExceptionResolver
+Field:PAGE_NOT_FOUND_LOG_CATEGORY
+Field:pageNotFoundLogger
+MethodInvocation:getLog
+Method-name:DefaultHandlerExceptionResolver
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:setOrder
+MethodInvocation:setWarnLogCategory
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:doResolveException
+Method-returnType:ModelAndView
+Method-parameters:[HttpServletRequest request, HttpServletResponse response, @Nullable Object handler, Exception ex]
+MethodInvocation:handleHttpRequestMethodNotSupported
+MethodInvocation:handleHttpMediaTypeNotSupported
+MethodInvocation:handleHttpMediaTypeNotAcceptable
+MethodInvocation:handleMissingPathVariable
+MethodInvocation:handleMissingServletRequestParameter
+MethodInvocation:handleServletRequestBindingException
+MethodInvocation:handleConversionNotSupported
+MethodInvocation:handleTypeMismatch
+MethodInvocation:handleHttpMessageNotReadable
+MethodInvocation:handleHttpMessageNotWritable
+MethodInvocation:handleMethodArgumentNotValidException
+MethodInvocation:handleMissingServletRequestPartException
+MethodInvocation:handleBindException
+MethodInvocation:handleNoHandlerFoundException
+MethodInvocation:handleAsyncRequestTimeoutException
+MethodInvocation:isWarnEnabled
+MethodInvocation:warn
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:handleHttpMediaTypeNotSupported
+Method-returnType:ModelAndView
+Method-parameters:[HttpMediaTypeNotSupportedException ex, HttpServletRequest request, HttpServletResponse response, @Nullable Object handler]
+MethodInvocation:sendError
+MethodInvocation:getSupportedMediaTypes
+MethodInvocation:isEmpty
+MethodInvocation:setHeader
+MethodInvocation:toString
+Method-name:handleHttpMediaTypeNotAcceptable
+Method-returnType:ModelAndView
+Method-parameters:[HttpMediaTypeNotAcceptableException ex, HttpServletRequest request, HttpServletResponse response, @Nullable Object handler]
+MethodInvocation:sendError
+Method-name:handleMissingPathVariable
+Method-returnType:ModelAndView
+Method-parameters:[MissingPathVariableException ex, HttpServletRequest request, HttpServletResponse response, @Nullable Object handler]
+MethodInvocation:sendError
+MethodInvocation:getMessage
+Method-name:handleMissingServletRequestParameter
+Method-returnType:ModelAndView
+Method-parameters:[MissingServletRequestParameterException ex, HttpServletRequest request, HttpServletResponse response, @Nullable Object handler]
+MethodInvocation:sendError
+MethodInvocation:getMessage
+Method-name:handleServletRequestBindingException
+Method-returnType:ModelAndView
+Method-parameters:[ServletRequestBindingException ex, HttpServletRequest request, HttpServletResponse response, @Nullable Object handler]
+MethodInvocation:sendError
+MethodInvocation:getMessage
+Method-name:handleConversionNotSupported
+Method-returnType:ModelAndView
+Method-parameters:[ConversionNotSupportedException ex, HttpServletRequest request, HttpServletResponse response, @Nullable Object handler]
+MethodInvocation:sendServerError
+Method-name:handleTypeMismatch
+Method-returnType:ModelAndView
+Method-parameters:[TypeMismatchException ex, HttpServletRequest request, HttpServletResponse response, @Nullable Object handler]
+MethodInvocation:sendError
+Method-name:handleHttpMessageNotReadable
+Method-returnType:ModelAndView
+Method-parameters:[HttpMessageNotReadableException ex, HttpServletRequest request, HttpServletResponse response, @Nullable Object handler]
+MethodInvocation:sendError
+Method-name:handleHttpMessageNotWritable
+Method-returnType:ModelAndView
+Method-parameters:[HttpMessageNotWritableException ex, HttpServletRequest request, HttpServletResponse response, @Nullable Object handler]
+MethodInvocation:sendServerError
+Method-name:handleMethodArgumentNotValidException
+Method-returnType:ModelAndView
+Method-parameters:[MethodArgumentNotValidException ex, HttpServletRequest request, HttpServletResponse response, @Nullable Object handler]
+MethodInvocation:sendError
+Method-name:handleMissingServletRequestPartException
+Method-returnType:ModelAndView
+Method-parameters:[MissingServletRequestPartException ex, HttpServletRequest request, HttpServletResponse response, @Nullable Object handler]
+MethodInvocation:sendError
+MethodInvocation:getMessage
+Method-name:handleBindException
+Method-returnType:ModelAndView
+Method-parameters:[BindException ex, HttpServletRequest request, HttpServletResponse response, @Nullable Object handler]
+MethodInvocation:sendError
+Method-name:handleNoHandlerFoundException
+Method-returnType:ModelAndView
+Method-parameters:[NoHandlerFoundException ex, HttpServletRequest request, HttpServletResponse response, @Nullable Object handler]
+MethodInvocation:warn
+MethodInvocation:getMessage
+MethodInvocation:sendError
+Method-name:handleAsyncRequestTimeoutException
+Method-returnType:ModelAndView
+Method-parameters:[AsyncRequestTimeoutException ex, HttpServletRequest request, HttpServletResponse response, @Nullable Object handler]
+MethodInvocation:isCommitted
+MethodInvocation:sendError
+MethodInvocation:warn
+Method-name:sendServerError
+Method-returnType:void
+Method-parameters:[Exception ex, HttpServletRequest request, HttpServletResponse response]
+MethodInvocation:setAttribute
+MethodInvocation:sendError

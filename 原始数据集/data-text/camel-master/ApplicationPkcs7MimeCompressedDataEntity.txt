@@ -1,0 +1,50 @@
+Class:ApplicationPkcs7MimeCompressedDataEntity
+Field:CONTENT_DISPOSITION
+Field:compressedData
+Method-name:ApplicationPkcs7MimeCompressedDataEntity
+Method-returnType:null
+Method-parameters:[MimeEntity entity2Encrypt, CMSCompressedDataGenerator dataGenerator, OutputCompressor compressor, String compressedContentTransferEncoding, boolean isMainBody]
+MethodInvocation:setContentType
+MethodInvocation:create
+MethodInvocation:setContentTransferEncoding
+MethodInvocation:addHeader
+MethodInvocation:setMainBody
+FieldAccess:compressedData
+MethodInvocation:createCompressedData
+Method-name:ApplicationPkcs7MimeCompressedDataEntity
+Method-returnType:null
+Method-parameters:[byte[] compressedData, String compressedContentTransferEncoding, boolean isMainBody]
+FieldAccess:compressedData
+MethodInvocation:notNull
+MethodInvocation:setContentType
+MethodInvocation:create
+MethodInvocation:setContentTransferEncoding
+MethodInvocation:addHeader
+MethodInvocation:setMainBody
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[OutputStream outstream]
+MethodInvocation:isMainBody
+MethodInvocation:headerIterator
+MethodInvocation:hasNext
+MethodInvocation:nextHeader
+MethodInvocation:writeln
+MethodInvocation:toString
+MethodInvocation:writeln
+MethodInvocation:getContentTransferEncoding
+MethodInvocation:getValue
+MethodInvocation:getContentTransferEncoding
+MethodInvocation:encode
+MethodInvocation:write
+Method-name:getCompressedEntity
+Method-returnType:MimeEntity
+Method-parameters:[InputExpanderProvider expanderProvider]
+MethodInvocation:parseCompressedEntity
+Method-name:createCompressedData
+Method-returnType:byte[]
+Method-parameters:[MimeEntity entity2Encrypt, CMSCompressedDataGenerator compressedDataGenerator, OutputCompressor compressor]
+MethodInvocation:writeTo
+MethodInvocation:flush
+MethodInvocation:toByteArray
+MethodInvocation:generate
+MethodInvocation:getEncoded

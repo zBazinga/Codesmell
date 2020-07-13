@@ -1,0 +1,136 @@
+Class:Rete
+Field:serialVersionUID
+Field:entryPoints
+Field:kBase
+Method-name:Rete
+Method-returnType:null
+Method-parameters:[]
+Method-name:Rete
+Method-returnType:null
+Method-parameters:[InternalKnowledgeBase kBase]
+MethodInvocation:isMultithreadEvaluation
+MethodInvocation:getConfiguration
+FieldAccess:entryPoints
+MethodInvocation:synchronizedMap
+FieldAccess:kBase
+MethodInvocation:calculateHashCode
+Method-name:getType
+Method-returnType:short
+Method-parameters:[]
+Method-name:assertObject
+Method-returnType:void
+Method-parameters:[final InternalFactHandle factHandle, final PropagationContext context, final InternalWorkingMemory workingMemory]
+MethodInvocation:getEntryPoint
+MethodInvocation:get
+FieldAccess:entryPoints
+MethodInvocation:getObjectTypeConf
+MethodInvocation:getObjectTypeConfigurationRegistry
+MethodInvocation:getWorkingMemoryEntryPoint
+MethodInvocation:getEntryPointId
+MethodInvocation:getObject
+MethodInvocation:assertObject
+Method-name:retractObject
+Method-returnType:void
+Method-parameters:[final InternalFactHandle handle, final PropagationContext context, final InternalWorkingMemory workingMemory]
+MethodInvocation:getEntryPoint
+MethodInvocation:get
+FieldAccess:entryPoints
+MethodInvocation:getObjectTypeConf
+MethodInvocation:getObjectTypeConfigurationRegistry
+MethodInvocation:getWorkingMemoryEntryPoint
+MethodInvocation:getEntryPointId
+MethodInvocation:getObject
+MethodInvocation:retractObject
+Method-name:modifyObject
+Method-returnType:void
+Method-parameters:[final InternalFactHandle factHandle, final ModifyPreviousTuples modifyPreviousTuples, final PropagationContext context, final InternalWorkingMemory workingMemory]
+Method-name:addObjectSink
+Method-returnType:void
+Method-parameters:[final ObjectSink objectSink]
+MethodInvocation:put
+MethodInvocation:getEntryPoint
+MethodInvocation:registerAddedEntryNodeCache
+Method-name:removeObjectSink
+Method-returnType:void
+Method-parameters:[final ObjectSink objectSink]
+MethodInvocation:remove
+MethodInvocation:getEntryPoint
+MethodInvocation:registeRremovedEntryNodeCache
+Method-name:attach
+Method-returnType:void
+Method-parameters:[BuildContext context]
+Method-name:networkUpdated
+Method-returnType:void
+Method-parameters:[UpdateContext updateContext]
+Method-name:doRemove
+Method-returnType:boolean
+Method-parameters:[final RuleRemovalContext context, final ReteooBuilder builder]
+Method-name:getEntryPointNode
+Method-returnType:EntryPointNode
+Method-parameters:[final EntryPointId entryPoint]
+MethodInvocation:get
+FieldAccess:entryPoints
+Method-name:getObjectTypeNodes
+Method-returnType:List<ObjectTypeNode>
+Method-parameters:[]
+MethodInvocation:values
+FieldAccess:entryPoints
+MethodInvocation:addAll
+MethodInvocation:values
+MethodInvocation:getObjectTypeNodes
+Method-name:getObjectTypeNodes
+Method-returnType:Map<ObjectType,ObjectTypeNode>
+Method-parameters:[EntryPointId entryPoint]
+MethodInvocation:getObjectTypeNodes
+MethodInvocation:get
+FieldAccess:entryPoints
+Method-name:getKnowledgeBase
+Method-returnType:InternalKnowledgeBase
+Method-parameters:[]
+FieldAccess:kBase
+Method-name:calculateHashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+FieldAccess:entryPoints
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[final Object object]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:equals
+FieldAccess:entryPoints
+FieldAccess:entryPoints
+Method-name:updateSink
+Method-returnType:void
+Method-parameters:[final ObjectSink sink, final PropagationContext context, final InternalWorkingMemory workingMemory]
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readObject
+MethodInvocation:getKnowledgeBase
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:getEntryPoint
+MethodInvocation:setEntryPoint
+MethodInvocation:getKey
+MethodInvocation:registerAddedEntryNodeCache
+Method-name:getEntryPointNodes
+Method-returnType:Map<EntryPointId,EntryPointNode>
+Method-parameters:[]
+FieldAccess:entryPoints
+Method-name:byPassModifyToBetaNode
+Method-returnType:void
+Method-parameters:[InternalFactHandle factHandle, ModifyPreviousTuples modifyPreviousTuples, PropagationContext context, InternalWorkingMemory workingMemory]
+Method-name:calculateDeclaredMask
+Method-returnType:BitMask
+Method-parameters:[Class modifiedClass, List<String> settableProperties]
+Method-name:visitRete
+Method-returnType:void
+Method-parameters:[MemoryVisitor memoryVisitor]
+MethodInvocation:getObjectTypeNodes
+MethodInvocation:visit

@@ -1,0 +1,115 @@
+Class:AdvertisedProviderSet
+Field:ANY
+MethodInvocation:of
+MethodInvocation:of
+Field:EMPTY
+MethodInvocation:of
+MethodInvocation:of
+Field:canHaveAnyProvider
+Field:nativeProviders
+Field:skylarkProviders
+Method-name:AdvertisedProviderSet
+Method-returnType:null
+Method-parameters:[boolean canHaveAnyProvider, ImmutableSet<Class<?>> nativeProviders, ImmutableSet<SkylarkProviderIdentifier> skylarkProviders]
+FieldAccess:canHaveAnyProvider
+FieldAccess:nativeProviders
+FieldAccess:skylarkProviders
+Method-name:create
+Method-returnType:AdvertisedProviderSet
+Method-parameters:[ImmutableSet<Class<?>> nativeProviders, ImmutableSet<SkylarkProviderIdentifier> skylarkProviders]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:equals
+FieldAccess:canHaveAnyProvider
+MethodInvocation:equals
+FieldAccess:nativeProviders
+MethodInvocation:equals
+FieldAccess:skylarkProviders
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:canHaveAnyProvider
+MethodInvocation:format
+MethodInvocation:getNativeProviders
+MethodInvocation:getSkylarkProviders
+Method-name:canHaveAnyProvider
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getNativeProviders
+Method-returnType:ImmutableSet<Class<?>>
+Method-parameters:[]
+Method-name:getSkylarkProviders
+Method-returnType:ImmutableSet<SkylarkProviderIdentifier>
+Method-parameters:[]
+Method-name:advertises
+Method-returnType:boolean
+Method-parameters:[Class<?> nativeProviderClass]
+MethodInvocation:canHaveAnyProvider
+MethodInvocation:contains
+Method-name:advertises
+Method-returnType:boolean
+Method-parameters:[SkylarkProviderIdentifier skylarkProvider]
+MethodInvocation:canHaveAnyProvider
+MethodInvocation:contains
+Class:Builder
+Field:nativeProviders
+Field:skylarkProviders
+Field:canHaveAnyProvider
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:addParent
+Method-returnType:Builder
+Method-parameters:[AdvertisedProviderSet parentSet]
+MethodInvocation:checkState
+MethodInvocation:checkState
+MethodInvocation:canHaveAnyProvider
+MethodInvocation:addAll
+MethodInvocation:getNativeProviders
+MethodInvocation:addAll
+MethodInvocation:getSkylarkProviders
+Method-name:addNative
+Method-returnType:Builder
+Method-parameters:[Class<?> nativeProvider]
+MethodInvocation:add
+FieldAccess:nativeProviders
+Method-name:canHaveAnyProvider
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:checkState
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+FieldAccess:canHaveAnyProvider
+Method-name:build
+Method-returnType:AdvertisedProviderSet
+Method-parameters:[]
+MethodInvocation:checkState
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:create
+MethodInvocation:copyOf
+MethodInvocation:copyOf
+Method-name:addSkylark
+Method-returnType:Builder
+Method-parameters:[String providerName]
+MethodInvocation:add
+MethodInvocation:forLegacy
+Method-name:addSkylark
+Method-returnType:Builder
+Method-parameters:[SkylarkProviderIdentifier id]
+MethodInvocation:add
+Method-name:addSkylark
+Method-returnType:Builder
+Method-parameters:[Provider.Key id]
+MethodInvocation:add
+MethodInvocation:forKey

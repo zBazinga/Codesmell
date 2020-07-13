@@ -1,0 +1,145 @@
+Class:ObjectHashMap
+Field:serialVersionUID
+Method-name:ObjectHashMap
+Method-returnType:null
+Method-parameters:[]
+Method-name:ObjectHashMap
+Method-returnType:null
+Method-parameters:[final int capacity, final float loadFactor]
+Method-name:ObjectHashMap
+Method-returnType:null
+Method-parameters:[final Entry[] table]
+Method-name:ObjectHashMap
+Method-returnType:null
+Method-parameters:[final float loadFactor, final Entry[] table]
+Method-name:put
+Method-returnType:Object
+Method-parameters:[final Object key, final Object value]
+MethodInvocation:put
+Method-name:put
+Method-returnType:Object
+Method-parameters:[final Object key, final Object value, final boolean checkExists]
+MethodInvocation:hashCodeOf
+FieldAccess:comparator
+MethodInvocation:indexOf
+FieldAccess:length
+FieldAccess:table
+FieldAccess:table
+MethodInvocation:equal
+FieldAccess:comparator
+MethodInvocation:getNext
+FieldAccess:table
+FieldAccess:table
+FieldAccess:size
+FieldAccess:threshold
+MethodInvocation:resize
+FieldAccess:length
+FieldAccess:table
+Method-name:get
+Method-returnType:Object
+Method-parameters:[final Object key]
+MethodInvocation:hashCodeOf
+FieldAccess:comparator
+MethodInvocation:indexOf
+FieldAccess:length
+FieldAccess:table
+FieldAccess:table
+MethodInvocation:equal
+FieldAccess:comparator
+MethodInvocation:getNext
+Method-name:remove
+Method-returnType:Object
+Method-parameters:[final Object key]
+MethodInvocation:hashCodeOf
+FieldAccess:comparator
+MethodInvocation:indexOf
+FieldAccess:length
+FieldAccess:table
+FieldAccess:table
+MethodInvocation:getNext
+MethodInvocation:equal
+FieldAccess:comparator
+FieldAccess:table
+MethodInvocation:setNext
+MethodInvocation:setNext
+FieldAccess:size
+Method-name:getBucket
+Method-returnType:Entry
+Method-parameters:[final Object object]
+MethodInvocation:hashCodeOf
+FieldAccess:comparator
+MethodInvocation:indexOf
+FieldAccess:length
+FieldAccess:table
+FieldAccess:table
+Method-name:getResizeHashcode
+Method-returnType:int
+Method-parameters:[Entry entry]
+FieldAccess:cachedHashCode
+Method-name:getFirstAlphaNode
+Method-returnType:AlphaNode
+Method-parameters:[ObjectTypeNodeParser objectTypeNodeParser]
+MethodInvocation:iterator
+MethodInvocation:next
+MethodInvocation:getValue
+Class:ObjectEntry
+Field:serialVersionUID
+Field:key
+Field:value
+Field:cachedHashCode
+Field:next
+Method-name:ObjectEntry
+Method-returnType:null
+Method-parameters:[]
+Method-name:ObjectEntry
+Method-returnType:null
+Method-parameters:[final Object key, final Object value, final int cachedHashCode]
+FieldAccess:key
+FieldAccess:value
+FieldAccess:cachedHashCode
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readObject
+MethodInvocation:readObject
+MethodInvocation:readInt
+MethodInvocation:readObject
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+MethodInvocation:writeObject
+MethodInvocation:writeInt
+MethodInvocation:writeObject
+Method-name:getValue
+Method-returnType:Object
+Method-parameters:[]
+FieldAccess:value
+Method-name:getKey
+Method-returnType:Object
+Method-parameters:[]
+FieldAccess:key
+Method-name:getNext
+Method-returnType:Entry
+Method-parameters:[]
+FieldAccess:next
+Method-name:setNext
+Method-returnType:void
+Method-parameters:[final Entry next]
+FieldAccess:next
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[final Object object]
+MethodInvocation:equals
+FieldAccess:key
+MethodInvocation:equals
+FieldAccess:value
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+MethodInvocation:toString

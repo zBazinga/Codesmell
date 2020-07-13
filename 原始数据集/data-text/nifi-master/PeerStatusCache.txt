@@ -1,0 +1,32 @@
+Class:PeerStatusCache
+Field:statuses
+Field:timestamp
+Field:transportProtocol
+Method-name:PeerStatusCache
+Method-returnType:null
+Method-parameters:[final Set<PeerStatus> statuses, final long timestamp, final SiteToSiteTransportProtocol transportProtocol]
+FieldAccess:statuses
+FieldAccess:timestamp
+FieldAccess:transportProtocol
+Method-name:getStatuses
+Method-returnType:Set<PeerStatus>
+Method-parameters:[]
+Method-name:getTimestamp
+Method-returnType:long
+Method-parameters:[]
+Method-name:getTransportProtocol
+Method-returnType:SiteToSiteTransportProtocol
+Method-parameters:[]
+Method-name:write
+Method-returnType:void
+Method-parameters:[final AbstractPeerPersistence.IOConsumer<String> consumer, AbstractPeerPersistence abstractPeerPersistence]
+MethodInvocation:accept
+MethodInvocation:name
+MethodInvocation:getTransportProtocol
+MethodInvocation:getStatuses
+MethodInvocation:getPeerDescription
+MethodInvocation:getHostname
+MethodInvocation:getPort
+MethodInvocation:isSecure
+MethodInvocation:isQueryForPeers
+MethodInvocation:accept

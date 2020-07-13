@@ -1,0 +1,123 @@
+Class:PackageIdentifier
+Field:EMPTY_PACKAGE_ID
+MethodInvocation:createInMainRepo
+Field:INTERNER
+MethodInvocation:newWeakInterner
+Field:repository
+Field:pkgName
+Field:hashCode
+Method-name:PackageIdentifier
+Method-returnType:null
+Method-parameters:[RepositoryName repository, PathFragment pkgName]
+FieldAccess:repository
+MethodInvocation:checkNotNull
+FieldAccess:pkgName
+MethodInvocation:checkNotNull
+FieldAccess:hashCode
+MethodInvocation:hash
+Method-name:create
+Method-returnType:PackageIdentifier
+Method-parameters:[String repository, PathFragment pkgName]
+MethodInvocation:create
+MethodInvocation:create
+Method-name:create
+Method-returnType:PackageIdentifier
+Method-parameters:[RepositoryName repository, PathFragment pkgName]
+MethodInvocation:intern
+Method-name:createInMainRepo
+Method-returnType:PackageIdentifier
+Method-parameters:[String name]
+MethodInvocation:createInMainRepo
+MethodInvocation:create
+Method-name:createInMainRepo
+Method-returnType:PackageIdentifier
+Method-parameters:[PathFragment name]
+MethodInvocation:create
+Method-name:discoverFromExecPath
+Method-returnType:PackageIdentifier
+Method-parameters:[PathFragment execPath, boolean forFiles, boolean siblingRepositoryLayout]
+MethodInvocation:checkArgument
+MethodInvocation:isAbsolute
+MethodInvocation:checkNotNull
+MethodInvocation:getParentDirectory
+MethodInvocation:startsWith
+MethodInvocation:createFromValidStrippedName
+MethodInvocation:getSegment
+MethodInvocation:create
+MethodInvocation:subFragment
+MethodInvocation:createInMainRepo
+Method-name:parse
+Method-returnType:PackageIdentifier
+Method-parameters:[String input]
+MethodInvocation:parse
+Method-name:parse
+Method-returnType:PackageIdentifier
+Method-parameters:[String input, String repo, ImmutableMap<RepositoryName,RepositoryName> repositoryMapping]
+MethodInvocation:indexOf
+MethodInvocation:startsWith
+MethodInvocation:substring
+MethodInvocation:substring
+MethodInvocation:startsWith
+MethodInvocation:substring
+MethodInvocation:validate
+MethodInvocation:validatePackageName
+MethodInvocation:create
+MethodInvocation:getOrDefault
+MethodInvocation:create
+MethodInvocation:create
+MethodInvocation:create
+MethodInvocation:create
+Method-name:getRepository
+Method-returnType:RepositoryName
+Method-parameters:[]
+Method-name:getPackageFragment
+Method-returnType:PathFragment
+Method-parameters:[]
+Method-name:getSourceRoot
+Method-returnType:PathFragment
+Method-parameters:[]
+MethodInvocation:getRelative
+MethodInvocation:getSourceRoot
+Method-name:getExecPath
+Method-returnType:PathFragment
+Method-parameters:[boolean siblingRepositoryLayout]
+MethodInvocation:getRelative
+MethodInvocation:getExecPath
+Method-name:getRunfilesPath
+Method-returnType:PathFragment
+Method-parameters:[]
+MethodInvocation:getRelative
+MethodInvocation:getRunfilesPath
+Method-name:makeAbsolute
+Method-returnType:PackageIdentifier
+Method-parameters:[]
+MethodInvocation:isDefault
+MethodInvocation:create
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isDefault
+MethodInvocation:isMain
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object object]
+FieldAccess:hashCode
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[PackageIdentifier that]
+MethodInvocation:result
+MethodInvocation:compare
+MethodInvocation:compare
+MethodInvocation:start
+MethodInvocation:toString
+MethodInvocation:toString
+Method-name:shouldEmitDeprecationWarningFor
+Method-returnType:boolean
+Method-parameters:[String thisDeprecation, String prerequisiteDeprecation, PackageIdentifier prerequisitePackage, boolean forAspect, CommonPrerequisiteValidator commonPrerequisiteValidator]
+MethodInvocation:isSameLogicalPackage

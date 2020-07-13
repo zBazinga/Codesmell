@@ -1,0 +1,289 @@
+Class:TTypeEntry
+Field:STRUCT_DESC
+Field:PRIMITIVE_ENTRY_FIELD_DESC
+Field:ARRAY_ENTRY_FIELD_DESC
+Field:MAP_ENTRY_FIELD_DESC
+Field:STRUCT_ENTRY_FIELD_DESC
+Field:UNION_ENTRY_FIELD_DESC
+Field:USER_DEFINED_TYPE_ENTRY_FIELD_DESC
+Method-name:addToTypes
+Method-returnType:void
+Method-parameters:[TTypeDesc tTypeDesc]
+MethodInvocation:getTypes
+MethodInvocation:setTypes
+MethodInvocation:add
+MethodInvocation:getTypes
+Field:_Fields
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:TTypeEntry
+Method-returnType:null
+Method-parameters:[]
+Method-name:TTypeEntry
+Method-returnType:null
+Method-parameters:[_Fields setField, Object value]
+Method-name:TTypeEntry
+Method-returnType:null
+Method-parameters:[TTypeEntry other]
+Method-name:deepCopy
+Method-returnType:TTypeEntry
+Method-parameters:[]
+Method-name:primitiveEntry
+Method-returnType:TTypeEntry
+Method-parameters:[TPrimitiveTypeEntry value]
+MethodInvocation:setPrimitiveEntry
+Method-name:arrayEntry
+Method-returnType:TTypeEntry
+Method-parameters:[TArrayTypeEntry value]
+MethodInvocation:setArrayEntry
+Method-name:mapEntry
+Method-returnType:TTypeEntry
+Method-parameters:[TMapTypeEntry value]
+MethodInvocation:setMapEntry
+Method-name:structEntry
+Method-returnType:TTypeEntry
+Method-parameters:[TStructTypeEntry value]
+MethodInvocation:setStructEntry
+Method-name:unionEntry
+Method-returnType:TTypeEntry
+Method-parameters:[TUnionTypeEntry value]
+MethodInvocation:setUnionEntry
+Method-name:userDefinedTypeEntry
+Method-returnType:TTypeEntry
+Method-parameters:[TUserDefinedTypeEntry value]
+MethodInvocation:setUserDefinedTypeEntry
+Method-name:checkType
+Method-returnType:void
+Method-parameters:[_Fields setField, Object value]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+Method-name:standardSchemeReadValue
+Method-returnType:Object
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, org.apache.thrift.protocol.TField field]
+MethodInvocation:findByThriftId
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:read
+MethodInvocation:skip
+MethodInvocation:skip
+Method-name:standardSchemeWriteValue
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:tupleSchemeReadValue
+Method-returnType:Object
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, short fieldID]
+MethodInvocation:findByThriftId
+MethodInvocation:read
+MethodInvocation:read
+MethodInvocation:read
+MethodInvocation:read
+MethodInvocation:read
+MethodInvocation:read
+Method-name:tupleSchemeWriteValue
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+MethodInvocation:write
+Method-name:getFieldDesc
+Method-returnType:org.apache.thrift.protocol.TField
+Method-parameters:[_Fields setField]
+Method-name:getStructDesc
+Method-returnType:org.apache.thrift.protocol.TStruct
+Method-parameters:[]
+Method-name:enumForId
+Method-returnType:_Fields
+Method-parameters:[short id]
+MethodInvocation:findByThriftIdOrThrow
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:getPrimitiveEntry
+Method-returnType:TPrimitiveTypeEntry
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setPrimitiveEntry
+Method-returnType:void
+Method-parameters:[TPrimitiveTypeEntry value]
+Method-name:getArrayEntry
+Method-returnType:TArrayTypeEntry
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setArrayEntry
+Method-returnType:void
+Method-parameters:[TArrayTypeEntry value]
+Method-name:getMapEntry
+Method-returnType:TMapTypeEntry
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setMapEntry
+Method-returnType:void
+Method-parameters:[TMapTypeEntry value]
+Method-name:getStructEntry
+Method-returnType:TStructTypeEntry
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setStructEntry
+Method-returnType:void
+Method-parameters:[TStructTypeEntry value]
+Method-name:getUnionEntry
+Method-returnType:TUnionTypeEntry
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setUnionEntry
+Method-returnType:void
+Method-parameters:[TUnionTypeEntry value]
+Method-name:getUserDefinedTypeEntry
+Method-returnType:TUserDefinedTypeEntry
+Method-parameters:[]
+MethodInvocation:getSetField
+MethodInvocation:getFieldValue
+FieldAccess:name
+MethodInvocation:getFieldDesc
+MethodInvocation:getSetField
+Method-name:setUserDefinedTypeEntry
+Method-returnType:void
+Method-parameters:[TUserDefinedTypeEntry value]
+Method-name:isSetPrimitiveEntry
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSetArrayEntry
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSetMapEntry
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSetStructEntry
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSetUnionEntry
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isSetUserDefinedTypeEntry
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[TTypeEntry other]
+MethodInvocation:getSetField
+MethodInvocation:getSetField
+MethodInvocation:equals
+MethodInvocation:getFieldValue
+MethodInvocation:getFieldValue
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[TTypeEntry other]
+MethodInvocation:compareTo
+MethodInvocation:getSetField
+MethodInvocation:getSetField
+MethodInvocation:compareTo
+MethodInvocation:getFieldValue
+MethodInvocation:getFieldValue
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getSetField
+MethodInvocation:add
+MethodInvocation:getThriftFieldId
+MethodInvocation:getFieldValue
+MethodInvocation:add
+MethodInvocation:getValue
+MethodInvocation:getFieldValue
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read

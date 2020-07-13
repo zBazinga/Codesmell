@@ -1,0 +1,27 @@
+Class:BuildCompleteEvent
+Field:result
+Method-name:BuildCompleteEvent
+Method-returnType:null
+Method-parameters:[BuildResult result, Collection<BuildEventId> children]
+MethodInvocation:getExitCode
+MethodInvocation:getDetailedExitCode
+MethodInvocation:getStopTime
+MethodInvocation:getWasSuspended
+FieldAccess:result
+MethodInvocation:checkNotNull
+Method-name:BuildCompleteEvent
+Method-returnType:null
+Method-parameters:[BuildResult result]
+MethodInvocation:of
+Method-name:getResult
+Method-returnType:BuildResult
+Method-parameters:[]
+Method-name:isIncomplete
+Method-returnType:boolean
+Method-parameters:[BuildEventStreamer buildEventStreamer]
+MethodInvocation:getSuccess
+MethodInvocation:getResult
+MethodInvocation:wasCatastrophe
+MethodInvocation:getResult
+MethodInvocation:getStopOnFirstFailure
+MethodInvocation:getResult

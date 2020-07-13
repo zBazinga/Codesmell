@@ -1,0 +1,141 @@
+Class:Fingerprint
+Field:codedOut
+Field:messageDigest
+Method-name:Fingerprint
+Method-returnType:null
+Method-parameters:[DigestHashFunction digestFunction]
+MethodInvocation:cloneOrCreateMessageDigest
+MethodInvocation:newInstance
+MethodInvocation:nullOutputStream
+Method-name:Fingerprint
+Method-returnType:null
+Method-parameters:[]
+Method-name:hexDigest
+Method-returnType:String
+Method-parameters:[byte[] digest]
+MethodInvocation:append
+MethodInvocation:charAt
+MethodInvocation:append
+MethodInvocation:charAt
+MethodInvocation:toString
+Method-name:getHexDigest
+Method-returnType:String
+Method-parameters:[String input]
+MethodInvocation:hexDigest
+MethodInvocation:digest
+MethodInvocation:cloneOrCreateMessageDigest
+MethodInvocation:getBytes
+Method-name:digestAndReset
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:flush
+MethodInvocation:digest
+Method-name:digestAndReset
+Method-returnType:void
+Method-parameters:[byte[] buf, int offset, int len]
+MethodInvocation:flush
+MethodInvocation:digest
+Method-name:hexDigestAndReset
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:hexDigest
+MethodInvocation:digestAndReset
+Method-name:addBytes
+Method-returnType:Fingerprint
+Method-parameters:[ByteString bytes]
+MethodInvocation:writeRawBytes
+Method-name:addBytes
+Method-returnType:Fingerprint
+Method-parameters:[byte[] input]
+MethodInvocation:addBytes
+Method-name:addBytes
+Method-returnType:Fingerprint
+Method-parameters:[byte[] input, int offset, int len]
+MethodInvocation:write
+Method-name:addBoolean
+Method-returnType:Fingerprint
+Method-parameters:[boolean input]
+MethodInvocation:writeBoolNoTag
+Method-name:addNullableBoolean
+Method-returnType:Fingerprint
+Method-parameters:[Boolean input]
+MethodInvocation:addBoolean
+MethodInvocation:addBoolean
+MethodInvocation:addBoolean
+Method-name:addInt
+Method-returnType:Fingerprint
+Method-parameters:[int x]
+MethodInvocation:writeInt32NoTag
+Method-name:addLong
+Method-returnType:Fingerprint
+Method-parameters:[long x]
+MethodInvocation:writeInt64NoTag
+Method-name:addNullableInt
+Method-returnType:Fingerprint
+Method-parameters:[@Nullable Integer input]
+MethodInvocation:addBoolean
+MethodInvocation:addBoolean
+MethodInvocation:addInt
+Method-name:addUUID
+Method-returnType:Fingerprint
+Method-parameters:[UUID uuid]
+MethodInvocation:addLong
+MethodInvocation:getLeastSignificantBits
+MethodInvocation:addLong
+MethodInvocation:getMostSignificantBits
+Method-name:addString
+Method-returnType:Fingerprint
+Method-parameters:[String input]
+MethodInvocation:writeStringNoTag
+Method-name:addNullableString
+Method-returnType:Fingerprint
+Method-parameters:[@Nullable String input]
+MethodInvocation:addBoolean
+MethodInvocation:addBoolean
+MethodInvocation:addString
+Method-name:addPath
+Method-returnType:Fingerprint
+Method-parameters:[Path input]
+MethodInvocation:addString
+MethodInvocation:getPathString
+Method-name:addPath
+Method-returnType:Fingerprint
+Method-parameters:[PathFragment input]
+MethodInvocation:addString
+MethodInvocation:getPathString
+Method-name:addStrings
+Method-returnType:Fingerprint
+Method-parameters:[Collection<String> inputs]
+MethodInvocation:addInt
+MethodInvocation:size
+MethodInvocation:addString
+Method-name:addIterableStrings
+Method-returnType:Fingerprint
+Method-parameters:[Iterable<String> inputs]
+MethodInvocation:addBoolean
+MethodInvocation:addString
+MethodInvocation:addBoolean
+Method-name:addStringMap
+Method-returnType:Fingerprint
+Method-parameters:[Map<String,String> inputs]
+MethodInvocation:addInt
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:addString
+MethodInvocation:getKey
+MethodInvocation:addString
+MethodInvocation:getValue
+Method-name:addPaths
+Method-returnType:Fingerprint
+Method-parameters:[Collection<PathFragment> inputs]
+MethodInvocation:addInt
+MethodInvocation:size
+MethodInvocation:addPath
+Method-name:addTo
+Method-returnType:void
+Method-parameters:[ActionEnvironment actionEnvironment]
+MethodInvocation:addStringMap
+MethodInvocation:toMap
+MethodInvocation:getFixedEnv
+MethodInvocation:addStrings
+MethodInvocation:getInheritedEnv

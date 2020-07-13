@@ -1,0 +1,51 @@
+Class:ApiMessage
+Method-name:fromBytes
+Method-returnType:ApiMessage
+Method-parameters:[byte[] src]
+MethodInvocation:deserialize
+MethodInvocation:getInt
+MethodInvocation:getBytes
+MethodInvocation:parse
+MethodInvocation:parse
+MethodInvocation:parse
+MethodInvocation:parse
+MethodInvocation:parse
+MethodInvocation:parse
+MethodInvocation:parse
+MethodInvocation:parse
+MethodInvocation:parse
+Method-name:getHeader
+Method-returnType:int
+Method-parameters:[]
+Method-name:buildContainer
+Method-returnType:byte[]
+Method-parameters:[]
+MethodInvocation:writeInt
+MethodInvocation:getHeader
+MethodInvocation:writeBytes
+MethodInvocation:toByteArray
+MethodInvocation:toByteArray
+Method-name:performSendApiContent
+Method-returnType:void
+Method-parameters:[final Peer peer, final long rid, final WakeLock wakeLock, SenderActor senderActor]
+MethodInvocation:buidOutPeer
+MethodInvocation:buildApiPeer
+MethodInvocation:request
+Method-name:onResult
+Method-returnType:void
+Method-parameters:[ResponseSeqDate response]
+MethodInvocation:send
+MethodInvocation:self
+MethodInvocation:onUpdateReceived
+MethodInvocation:updates
+MethodInvocation:getSeq
+MethodInvocation:getState
+MethodInvocation:toByteArray
+MethodInvocation:getDate
+MethodInvocation:releaseLock
+Method-name:onError
+Method-returnType:void
+Method-parameters:[RpcException e]
+MethodInvocation:send
+MethodInvocation:self
+MethodInvocation:releaseLock

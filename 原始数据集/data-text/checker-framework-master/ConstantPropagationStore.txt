@@ -1,0 +1,86 @@
+Class:ConstantPropagationStore
+Field:contents
+Method-name:ConstantPropagationStore
+Method-returnType:null
+Method-parameters:[]
+Method-name:ConstantPropagationStore
+Method-returnType:null
+Method-parameters:[Map<Node,Constant> contents]
+FieldAccess:contents
+Method-name:getInformation
+Method-returnType:Constant
+Method-parameters:[Node n]
+MethodInvocation:containsKey
+MethodInvocation:get
+Method-name:mergeInformation
+Method-returnType:void
+Method-parameters:[Node n, Constant val]
+Method-name:setInformation
+Method-returnType:void
+Method-parameters:[Node n, Constant val]
+Method-name:copy
+Method-returnType:ConstantPropagationStore
+Method-parameters:[]
+Method-name:leastUpperBound
+Method-returnType:ConstantPropagationStore
+Method-parameters:[ConstantPropagationStore other]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:containsKey
+MethodInvocation:put
+MethodInvocation:leastUpperBound
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:containsKey
+MethodInvocation:put
+Method-name:widenedUpperBound
+Method-returnType:ConstantPropagationStore
+Method-parameters:[ConstantPropagationStore previous]
+MethodInvocation:leastUpperBound
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[@Nullable Object o]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:isBottom
+MethodInvocation:containsKey
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:isBottom
+MethodInvocation:containsKey
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:isBottom
+MethodInvocation:getValue
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:toString
+Method-name:canAlias
+Method-returnType:boolean
+Method-parameters:[FlowExpressions.Receiver a, FlowExpressions.Receiver b]
+Method-name:visualize
+Method-returnType:String
+Method-parameters:[CFGVisualizer<?,ConstantPropagationStore,?> viz]
+Method-name:process
+Method-returnType:void
+Method-parameters:[Node a, Node b, ConstantPropagationTransfer constantPropagationTransfer]
+MethodInvocation:getInformation
+MethodInvocation:isConstant
+MethodInvocation:setInformation

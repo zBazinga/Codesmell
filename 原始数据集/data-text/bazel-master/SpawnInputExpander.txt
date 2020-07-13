@@ -1,0 +1,88 @@
+Class:SpawnInputExpander
+Field:EMPTY_FILE
+Field:execRoot
+Field:strict
+Field:relSymlinkBehavior
+Method-name:SpawnInputExpander
+Method-returnType:null
+Method-parameters:[Path execRoot, boolean strict]
+Method-name:SpawnInputExpander
+Method-returnType:null
+Method-parameters:[Path execRoot, boolean strict, RelativeSymlinkBehavior relSymlinkBehavior]
+FieldAccess:execRoot
+FieldAccess:strict
+FieldAccess:relSymlinkBehavior
+Method-name:failIfDirectory
+Method-returnType:void
+Method-parameters:[MetadataProvider actionFileCache, ActionInput input]
+MethodInvocation:getMetadata
+MethodInvocation:isFile
+MethodInvocation:getType
+MethodInvocation:getExecPathString
+Method-name:addRunfilesToInputs
+Method-returnType:void
+Method-parameters:[Map<PathFragment,ActionInput> inputMap, RunfilesSupplier runfilesSupplier, MetadataProvider actionFileCache, ArtifactExpander artifactExpander, ArtifactPathResolver pathResolver, boolean expandTreeArtifactsInRunfiles]
+MethodInvocation:getMappings
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:checkState
+MethodInvocation:isAbsolute
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:getRelative
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:checkState
+MethodInvocation:isMiddlemanArtifact
+MethodInvocation:isTreeArtifact
+MethodInvocation:expandArtifacts
+MethodInvocation:create
+MethodInvocation:addMapping
+MethodInvocation:getRelative
+MethodInvocation:getParentRelativePath
+MethodInvocation:isFileset
+MethodInvocation:addFilesetManifest
+MethodInvocation:getFileset
+MethodInvocation:failIfDirectory
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+Method-name:addRunfilesToInputs
+Method-returnType:Map<PathFragment,ActionInput>
+Method-parameters:[RunfilesSupplier runfilesSupplier, MetadataProvider actionFileCache, ArtifactExpander artifactExpander, ArtifactPathResolver pathResolver, boolean expandTreeArtifactsInRunfiles]
+MethodInvocation:addRunfilesToInputs
+Method-name:addFilesetManifests
+Method-returnType:void
+Method-parameters:[Map<Artifact,ImmutableList<FilesetOutputSymlink>> filesetMappings, Map<PathFragment,ActionInput> inputMappings]
+MethodInvocation:keySet
+MethodInvocation:addFilesetManifest
+MethodInvocation:getExecPath
+MethodInvocation:get
+Method-name:addFilesetManifest
+Method-returnType:void
+Method-parameters:[PathFragment location, Artifact filesetArtifact, ImmutableList<FilesetOutputSymlink> filesetLinks, Map<PathFragment,ActionInput> inputMappings]
+MethodInvocation:checkState
+MethodInvocation:isFileset
+MethodInvocation:constructFilesetManifest
+MethodInvocation:entrySet
+MethodInvocation:getEntries
+MethodInvocation:getValue
+MethodInvocation:fromPath
+MethodInvocation:getPathString
+MethodInvocation:getRelative
+MethodInvocation:addMapping
+MethodInvocation:getKey
+Method-name:addInputs
+Method-returnType:void
+Method-parameters:[Map<PathFragment,ActionInput> inputMap, Spawn spawn, ArtifactExpander artifactExpander]
+MethodInvocation:expandArtifacts
+MethodInvocation:getInputFiles
+MethodInvocation:addMapping
+MethodInvocation:getExecPath
+Method-name:getInputMapping
+Method-returnType:SortedMap<PathFragment,ActionInput>
+Method-parameters:[Spawn spawn, ArtifactExpander artifactExpander, ArtifactPathResolver pathResolver, MetadataProvider actionInputFileCache, boolean expandTreeArtifactsInRunfiles]
+MethodInvocation:addInputs
+MethodInvocation:addRunfilesToInputs
+MethodInvocation:getRunfilesSupplier
+MethodInvocation:addFilesetManifests
+MethodInvocation:getFilesetMappings

@@ -1,0 +1,170 @@
+Class:SSATransformer
+Method-name:cleanTagsAndReIndex
+Method-returnType:void
+Method-parameters:[IrMethod method]
+Method-name:deleteDeadCode
+Method-returnType:void
+Method-parameters:[IrMethod method]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:remove
+Method-name:replaceLocalsWithSSA
+Method-returnType:void
+Method-parameters:[final IrMethod method]
+MethodInvocation:clear
+Method-name:onAssign
+Method-returnType:Value
+Method-parameters:[Local a, AssignStmt as]
+MethodInvocation:add
+MethodInvocation:add
+Method-name:onUse
+Method-returnType:Value
+Method-parameters:[Local a]
+MethodInvocation:getFirst
+MethodInvocation:getNext
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:nAssign
+MethodInvocation:nPhi
+MethodInvocation:toArray
+MethodInvocation:size
+MethodInvocation:clear
+MethodInvocation:add
+MethodInvocation:travelMod
+MethodInvocation:size
+Method-name:transform
+Method-returnType:void
+Method-parameters:[final IrMethod method]
+MethodInvocation:prepare
+MethodInvocation:analyze
+MethodInvocation:deleteDeadCode
+MethodInvocation:replaceLocalsWithSSA
+MethodInvocation:cleanTagsAndReIndex
+Method-name:prepare
+Method-returnType:boolean
+Method-parameters:[final IrMethod method]
+MethodInvocation:reIndexLocal
+MethodInvocation:travel
+Method-name:onAssign
+Method-returnType:Value
+Method-parameters:[Local v, AssignStmt as]
+Method-name:onUse
+Method-returnType:Value
+Method-parameters:[Local v]
+MethodInvocation:clear
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:travelMod
+Method-name:onAssign
+Method-returnType:Value
+Method-parameters:[Local v, AssignStmt as]
+MethodInvocation:clone
+MethodInvocation:add
+MethodInvocation:clone
+Method-name:onUse
+Method-returnType:Value
+Method-parameters:[Local v]
+MethodInvocation:clone
+Class:SSAAnalyze
+Field:nextIndex
+Method-name:SSAAnalyze
+Method-returnType:null
+Method-parameters:[IrMethod method]
+Method-name:afterExec
+Method-returnType:void
+Method-parameters:[SSAValue[] frame, Stmt stmt]
+MethodInvocation:size
+MethodInvocation:setFrame
+Method-name:onUse
+Method-returnType:Local
+Method-parameters:[Local local]
+Method-name:onAssign
+Method-returnType:Local
+Method-parameters:[Local local, AssignStmt as]
+Method-name:analyzeValue
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:markUsed
+MethodInvocation:clear
+MethodInvocation:clearLsEmptyValueFromFrame
+Method-name:clearLsEmptyValueFromFrame
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getFirst
+MethodInvocation:getNext
+Method-name:init
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:size
+Method-name:initCFG
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:createCFG
+FieldAccess:method
+Method-name:markUsed
+Method-returnType:Set<SSAValue>
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:addAll
+MethodInvocation:isEmpty
+MethodInvocation:poll
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:add
+Method-name:merge
+Method-returnType:SSAValue[]
+Method-parameters:[SSAValue[] frame, SSAValue[] distFrame, Stmt src, Stmt dist]
+MethodInvocation:relationMerge
+MethodInvocation:size
+MethodInvocation:newFrame
+MethodInvocation:relationMerge
+MethodInvocation:needCopyFrame
+MethodInvocation:newFrame
+MethodInvocation:arraycopy
+Method-name:needCopyFrame
+Method-returnType:boolean
+Method-parameters:[Stmt src]
+MethodInvocation:size
+MethodInvocation:canContinue
+MethodInvocation:canBranch
+MethodInvocation:canSwitch
+Method-name:newFrame
+Method-returnType:SSAValue[]
+Method-parameters:[int size]
+Method-name:newValue
+Method-returnType:SSAValue
+Method-parameters:[]
+Method-name:onAssignLocal
+Method-returnType:SSAValue
+Method-parameters:[Local local, Value value]
+MethodInvocation:newValue
+Method-name:onUseLocal
+Method-returnType:void
+Method-parameters:[SSAValue aValue, Local local]
+Method-name:relationMerge
+Method-returnType:void
+Method-parameters:[SSAValue[] frame, Stmt dist, SSAValue[] distFrame]
+MethodInvocation:newValue
+MethodInvocation:add
+MethodInvocation:linkParentChildren
+MethodInvocation:linkParentChildren
+Method-name:linkParentChildren
+Method-returnType:void
+Method-parameters:[SSAValue p, SSAValue c]
+MethodInvocation:add
+Class:SSAValue
+Field:local
+Field:otherParents
+Field:used
+Field:parent
+Method-name:toRsp
+Method-returnType:char
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString

@@ -1,0 +1,313 @@
+Class:MapperService
+Method-name:getParentObjectMapper
+Method-returnType:ObjectMapper
+Method-parameters:[ObjectMapper mappers]
+MethodInvocation:lastIndexOf
+MethodInvocation:fullPath
+MethodInvocation:substring
+MethodInvocation:fullPath
+MethodInvocation:getObjectMapper
+Field:MergeReason
+Field:SINGLE_MAPPING_NAME
+Field:INDEX_MAPPING_NESTED_FIELDS_LIMIT_SETTING
+MethodInvocation:longSetting
+Field:INDEX_MAPPING_NESTED_DOCS_LIMIT_SETTING
+MethodInvocation:longSetting
+Field:INDEX_MAPPING_TOTAL_FIELDS_LIMIT_SETTING
+MethodInvocation:longSetting
+Field:INDEX_MAPPING_DEPTH_LIMIT_SETTING
+MethodInvocation:longSetting
+Field:INDEX_MAPPING_FIELD_NAME_LENGTH_LIMIT_SETTING
+MethodInvocation:longSetting
+Field:SORTED_META_FIELDS
+Field:META_FIELDS
+MethodInvocation:from
+Field:indexAnalyzers
+Field:mapper
+Field:fieldTypes
+Field:fullPathObjectMappers
+MethodInvocation:emptyMap
+Field:hasNested
+Field:documentParser
+Field:indexAnalyzer
+Field:searchAnalyzer
+Field:searchQuoteAnalyzer
+Field:unmappedFieldTypes
+MethodInvocation:emptyMap
+Field:mapperRegistry
+Field:idFieldDataEnabled
+Method-name:MapperService
+Method-returnType:null
+Method-parameters:[IndexSettings indexSettings, IndexAnalyzers indexAnalyzers, NamedXContentRegistry xContentRegistry, SimilarityService similarityService, MapperRegistry mapperRegistry, Supplier<QueryShardContext> queryShardContextSupplier, BooleanSupplier idFieldDataEnabled]
+FieldAccess:indexAnalyzers
+FieldAccess:fieldTypes
+FieldAccess:documentParser
+FieldAccess:indexAnalyzer
+MethodInvocation:getDefaultIndexAnalyzer
+MethodInvocation:indexAnalyzer
+FieldAccess:searchAnalyzer
+MethodInvocation:getDefaultSearchAnalyzer
+MethodInvocation:searchAnalyzer
+FieldAccess:searchQuoteAnalyzer
+MethodInvocation:getDefaultSearchQuoteAnalyzer
+MethodInvocation:searchQuoteAnalyzer
+FieldAccess:mapperRegistry
+FieldAccess:idFieldDataEnabled
+Method-name:hasNested
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:hasNested
+Method-name:getIndexAnalyzers
+Method-returnType:IndexAnalyzers
+Method-parameters:[]
+FieldAccess:indexAnalyzers
+Method-name:getNamedAnalyzer
+Method-returnType:NamedAnalyzer
+Method-parameters:[String analyzerName]
+MethodInvocation:get
+FieldAccess:indexAnalyzers
+Method-name:documentMapperParser
+Method-returnType:DocumentMapperParser
+Method-parameters:[]
+FieldAccess:documentParser
+Method-name:parseMapping
+Method-returnType:Map<String,Object>
+Method-parameters:[NamedXContentRegistry xContentRegistry, String mappingSource]
+MethodInvocation:createParser
+MethodInvocation:xContent
+MethodInvocation:map
+Method-name:updateMapping
+Method-returnType:boolean
+Method-parameters:[final IndexMetadata currentIndexMetadata, final IndexMetadata newIndexMetadata]
+Method-name:assertMappingVersion
+Method-returnType:void
+Method-parameters:[final IndexMetadata currentIndexMetadata, final IndexMetadata newIndexMetadata, final DocumentMapper updatedMapper]
+Method-name:merge
+Method-returnType:void
+Method-parameters:[String type, Map<String,Object> mappings, MergeReason reason]
+MethodInvocation:toString
+MethodInvocation:map
+MethodInvocation:jsonBuilder
+MethodInvocation:internalMerge
+Method-name:merge
+Method-returnType:void
+Method-parameters:[IndexMetadata indexMetadata, MergeReason reason]
+MethodInvocation:internalMerge
+Method-name:merge
+Method-returnType:DocumentMapper
+Method-parameters:[String type, CompressedXContent mappingSource, MergeReason reason]
+MethodInvocation:internalMerge
+Method-name:internalMerge
+Method-returnType:DocumentMapper
+Method-parameters:[IndexMetadata indexMetadata, MergeReason reason, boolean onlyUpdateIfNeeded]
+Method-name:internalMerge
+Method-returnType:DocumentMapper
+Method-parameters:[String type, CompressedXContent mappings, MergeReason reason]
+MethodInvocation:parse
+MethodInvocation:getMessage
+MethodInvocation:internalMerge
+Method-name:validateTypeName
+Method-returnType:void
+Method-parameters:[String type]
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:equals
+MethodInvocation:contains
+MethodInvocation:contains
+MethodInvocation:charAt
+Method-name:internalMerge
+Method-returnType:DocumentMapper
+Method-parameters:[DocumentMapper mapper, MergeReason reason]
+Method-name:assertMappersShareSameFieldType
+Method-returnType:assert
+Method-parameters:[]
+Field:newMapper
+Method-name:assertSerialization
+Method-returnType:null
+Method-parameters:[]
+Method-name:assertMappersShareSameFieldType
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:assertSerialization
+Method-returnType:boolean
+Method-parameters:[DocumentMapper mapper]
+MethodInvocation:mappingSource
+MethodInvocation:parse
+MethodInvocation:type
+MethodInvocation:equals
+MethodInvocation:mappingSource
+MethodInvocation:mappingSource
+Method-name:checkNestedFieldsLimit
+Method-returnType:void
+Method-parameters:[Map<String,ObjectMapper> fullPathObjectMappers]
+MethodInvocation:getValue
+MethodInvocation:values
+MethodInvocation:isNested
+MethodInvocation:nested
+MethodInvocation:getName
+MethodInvocation:index
+Method-name:checkTotalFieldsLimit
+Method-returnType:void
+Method-parameters:[long totalMappers]
+MethodInvocation:getValue
+MethodInvocation:getName
+MethodInvocation:index
+Method-name:checkDepthLimit
+Method-returnType:void
+Method-parameters:[Collection<String> objectPaths]
+MethodInvocation:getValue
+MethodInvocation:checkDepthLimit
+Method-name:checkDepthLimit
+Method-returnType:void
+Method-parameters:[String objectPath, long maxDepth]
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:getName
+MethodInvocation:index
+Method-name:checkFieldNameSoftLimit
+Method-returnType:void
+Method-parameters:[Collection<ObjectMapper> objectMappers, Collection<FieldMapper> fieldMappers, Collection<FieldAliasMapper> fieldAliasMappers]
+MethodInvocation:getValue
+MethodInvocation:forEach
+MethodInvocation:orElseGet
+MethodInvocation:reduce
+MethodInvocation:of
+MethodInvocation:stream
+MethodInvocation:stream
+MethodInvocation:stream
+MethodInvocation:simpleName
+MethodInvocation:length
+MethodInvocation:getName
+MethodInvocation:index
+MethodInvocation:length
+Method-name:checkPartitionedIndexConstraints
+Method-returnType:void
+Method-parameters:[DocumentMapper newMapper]
+MethodInvocation:isRoutingPartitionedIndex
+MethodInvocation:getIndexMetadata
+MethodInvocation:required
+MethodInvocation:routingFieldMapper
+MethodInvocation:type
+MethodInvocation:getName
+MethodInvocation:getIndex
+Method-name:checkIndexSortCompatibility
+Method-returnType:void
+Method-parameters:[IndexSortConfig sortConfig, boolean hasNested]
+MethodInvocation:hasIndexSort
+Method-name:parse
+Method-returnType:DocumentMapper
+Method-parameters:[String mappingType, CompressedXContent mappingSource]
+MethodInvocation:parse
+Method-name:documentMapper
+Method-returnType:DocumentMapper
+Method-parameters:[]
+Method-name:isMappingSourceTyped
+Method-returnType:boolean
+Method-parameters:[String type, Map<String,Object> mapping]
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:keySet
+Method-name:resolveDocumentType
+Method-returnType:String
+Method-parameters:[String type]
+MethodInvocation:equals
+MethodInvocation:type
+Method-name:documentMapperWithAutoCreate
+Method-returnType:DocumentMapperForType
+Method-parameters:[]
+MethodInvocation:documentMapper
+MethodInvocation:parse
+MethodInvocation:mapping
+Method-name:fieldType
+Method-returnType:MappedFieldType
+Method-parameters:[String fullName]
+MethodInvocation:get
+Method-name:simpleMatchToFullName
+Method-returnType:Set<String>
+Method-parameters:[String pattern]
+MethodInvocation:isSimpleMatchPattern
+MethodInvocation:singleton
+MethodInvocation:simpleMatchToFullName
+Method-name:fieldTypes
+Method-returnType:Iterable<MappedFieldType>
+Method-parameters:[]
+Method-name:getObjectMapper
+Method-returnType:ObjectMapper
+Method-parameters:[String name]
+MethodInvocation:get
+Method-name:unmappedFieldType
+Method-returnType:MappedFieldType
+Method-parameters:[String type]
+MethodInvocation:get
+MethodInvocation:parserContext
+MethodInvocation:documentMapperParser
+MethodInvocation:typeParser
+MethodInvocation:parse
+MethodInvocation:emptyMap
+MethodInvocation:getSettings
+MethodInvocation:fieldType
+MethodInvocation:build
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+Method-name:indexAnalyzer
+Method-returnType:Analyzer
+Method-parameters:[]
+FieldAccess:indexAnalyzer
+Method-name:searchAnalyzer
+Method-returnType:Analyzer
+Method-parameters:[]
+FieldAccess:searchAnalyzer
+Method-name:searchQuoteAnalyzer
+Method-returnType:Analyzer
+Method-parameters:[]
+FieldAccess:searchQuoteAnalyzer
+Method-name:isIdFieldDataEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getAsBoolean
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+Method-name:isMetadataField
+Method-returnType:boolean
+Method-parameters:[String fieldName]
+MethodInvocation:contains
+Method-name:getAllMetaFields
+Method-returnType:String[]
+Method-parameters:[]
+MethodInvocation:copyOf
+Class:MapperAnalyzerWrapper
+Field:defaultAnalyzer
+Field:extractAnalyzer
+Method-name:MapperAnalyzerWrapper
+Method-returnType:null
+Method-parameters:[Analyzer defaultAnalyzer, Function<MappedFieldType,Analyzer> extractAnalyzer]
+FieldAccess:defaultAnalyzer
+FieldAccess:extractAnalyzer
+Method-name:getWrappedAnalyzer
+Method-returnType:Analyzer
+Method-parameters:[String fieldName]
+MethodInvocation:fieldType
+MethodInvocation:apply
+Method-name:reloadSearchAnalyzers
+Method-returnType:List<String>
+Method-parameters:[AnalysisRegistry registry]
+MethodInvocation:info
+MethodInvocation:buildTokenizerFactories
+MethodInvocation:buildCharFilterFactories
+MethodInvocation:buildTokenFilterFactories
+MethodInvocation:getGroups
+MethodInvocation:getSettings
+MethodInvocation:values
+MethodInvocation:getAnalyzers
+MethodInvocation:analyzer
+MethodInvocation:analyzer
+MethodInvocation:name
+MethodInvocation:get
+MethodInvocation:reload
+MethodInvocation:add

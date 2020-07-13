@@ -1,0 +1,149 @@
+Class:CssSelector
+Field:ID
+Field:CLASS
+Field:prevCssSelector
+Field:nextCssSelector
+Field:element
+Field:combinator
+Field:selectors
+Method-name:CssSelector
+Method-returnType:null
+Method-parameters:[]
+Method-name:CssSelector
+Method-returnType:null
+Method-parameters:[String element]
+FieldAccess:element
+MethodInvocation:unescape
+FieldAccess:selectors
+Method-name:getPrevCssSelector
+Method-returnType:CssSelector
+Method-parameters:[]
+Method-name:getNextCssSelector
+Method-returnType:CssSelector
+Method-parameters:[]
+Method-name:setPrevCssSelector
+Method-returnType:void
+Method-parameters:[final CssSelector prevCssSelector]
+FieldAccess:prevCssSelector
+Method-name:getElement
+Method-returnType:String
+Method-parameters:[]
+Method-name:getSelector
+Method-returnType:Selector
+Method-parameters:[final int index]
+MethodInvocation:get
+Method-name:selectorsCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:setCombinator
+Method-returnType:void
+Method-parameters:[final Combinator combinator]
+FieldAccess:combinator
+Method-name:getCombinator
+Method-returnType:Combinator
+Method-parameters:[]
+Method-name:addIdSelector
+Method-returnType:void
+Method-parameters:[String id]
+MethodInvocation:unescape
+MethodInvocation:add
+Method-name:addClassSelector
+Method-returnType:void
+Method-parameters:[String clazz]
+MethodInvocation:unescape
+MethodInvocation:add
+Method-name:addAttributeSelector
+Method-returnType:void
+Method-parameters:[String attribute]
+MethodInvocation:unescape
+MethodInvocation:add
+Method-name:addPseudoClassSelector
+Method-returnType:void
+Method-parameters:[final String pseudoClass]
+MethodInvocation:add
+Method-name:addPseudoFunctionSelector
+Method-returnType:void
+Method-parameters:[final String pseudoFunction, final String expression]
+MethodInvocation:add
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:getType
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getValue
+MethodInvocation:equals
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getValue
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getName
+MethodInvocation:getValue
+MethodInvocation:append
+MethodInvocation:getSign
+MethodInvocation:getMatch
+MethodInvocation:getQuoteChar
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getPseudoClassName
+MethodInvocation:getPseudoClass
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getPseudoFunctionName
+MethodInvocation:getPseudoFunction
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getExpression
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getSign
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:accept
+Method-returnType:boolean
+Method-parameters:[final Node node]
+MethodInvocation:matchElement
+MethodInvocation:selectorsCount
+MethodInvocation:getSelector
+MethodInvocation:getType
+MethodInvocation:accept
+MethodInvocation:accept
+MethodInvocation:accept
+Method-name:matchElement
+Method-returnType:boolean
+Method-parameters:[final Node node]
+MethodInvocation:getNodeType
+MethodInvocation:getElement
+MethodInvocation:getNodeName
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:accept
+Method-returnType:boolean
+Method-parameters:[final List<Node> currentResults, final Node node, final int index]
+MethodInvocation:selectorsCount
+MethodInvocation:getSelector
+MethodInvocation:getType
+MethodInvocation:accept
+MethodInvocation:accept
+Method-name:unescape
+Method-returnType:String
+Method-parameters:[final String value]
+MethodInvocation:indexOf
+MethodInvocation:remove
+Method-name:selectAndAdd
+Method-returnType:void
+Method-parameters:[final Node node, final List<Node> result, NodeSelector nodeSelector]
+MethodInvocation:getNodeType
+MethodInvocation:accept
+MethodInvocation:contains
+MethodInvocation:add

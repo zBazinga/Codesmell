@@ -1,0 +1,193 @@
+Class:CsvReadOptions
+Field:columnTypes
+Field:separator
+Field:quoteChar
+Field:escapeChar
+Field:lineEnding
+Field:maxNumberOfColumns
+Field:commentPrefix
+Field:lineSeparatorDetectionEnabled
+Field:sampleSize
+Method-name:CsvReadOptions
+Method-returnType:null
+Method-parameters:[CsvReadOptions.Builder builder]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[Source source]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[File file]
+MethodInvocation:tableName
+MethodInvocation:getName
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[String fileName]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[URL url]
+Method-name:builderFromFile
+Method-returnType:Builder
+Method-parameters:[String fileName]
+Method-name:builderFromString
+Method-returnType:Builder
+Method-parameters:[String contents]
+Method-name:builderFromUrl
+Method-returnType:Builder
+Method-parameters:[String url]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[InputStream stream]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[Reader reader]
+Method-name:columnTypes
+Method-returnType:ColumnType[]
+Method-parameters:[]
+Method-name:separator
+Method-returnType:Character
+Method-parameters:[]
+Method-name:quoteChar
+Method-returnType:Character
+Method-parameters:[]
+Method-name:escapeChar
+Method-returnType:Character
+Method-parameters:[]
+Method-name:lineEnding
+Method-returnType:String
+Method-parameters:[]
+Method-name:lineSeparatorDetectionEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:maxNumberOfColumns
+Method-returnType:Integer
+Method-parameters:[]
+Method-name:commentPrefix
+Method-returnType:Character
+Method-parameters:[]
+Method-name:maxCharsPerColumn
+Method-returnType:int
+Method-parameters:[]
+Method-name:sampleSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:csvFormat
+Method-returnType:CsvFormat
+Method-parameters:[CsvReader csvReader]
+MethodInvocation:quoteChar
+MethodInvocation:setQuote
+MethodInvocation:quoteChar
+MethodInvocation:escapeChar
+MethodInvocation:setQuoteEscape
+MethodInvocation:escapeChar
+MethodInvocation:separator
+MethodInvocation:setDelimiter
+MethodInvocation:separator
+MethodInvocation:lineEnding
+MethodInvocation:setLineSeparator
+MethodInvocation:lineEnding
+MethodInvocation:commentPrefix
+MethodInvocation:setComment
+MethodInvocation:commentPrefix
+Class:Builder
+Field:separator
+Field:quoteChar
+Field:escapeChar
+Field:lineEnding
+Field:columnTypes
+Field:maxNumberOfColumns
+Field:commentPrefix
+Field:lineSeparatorDetectionEnabled
+Field:sampleSize
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[Source source]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[URL url]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[File file]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[Reader reader]
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[InputStream stream]
+Method-name:columnTypes
+Method-returnType:Builder
+Method-parameters:[ColumnType[] columnTypes]
+FieldAccess:columnTypes
+Method-name:separator
+Method-returnType:Builder
+Method-parameters:[Character separator]
+FieldAccess:separator
+Method-name:quoteChar
+Method-returnType:Builder
+Method-parameters:[Character quoteChar]
+FieldAccess:quoteChar
+Method-name:escapeChar
+Method-returnType:Builder
+Method-parameters:[Character escapeChar]
+FieldAccess:escapeChar
+Method-name:lineEnding
+Method-returnType:Builder
+Method-parameters:[String lineEnding]
+FieldAccess:lineEnding
+FieldAccess:lineSeparatorDetectionEnabled
+Method-name:maxNumberOfColumns
+Method-returnType:Builder
+Method-parameters:[Integer maxNumberOfColumns]
+FieldAccess:maxNumberOfColumns
+Method-name:commentPrefix
+Method-returnType:Builder
+Method-parameters:[Character commentPrefix]
+FieldAccess:commentPrefix
+Method-name:sampleSize
+Method-returnType:Builder
+Method-parameters:[int numSamples]
+FieldAccess:sampleSize
+Method-name:build
+Method-returnType:CsvReadOptions
+Method-parameters:[]
+Method-name:header
+Method-returnType:Builder
+Method-parameters:[boolean header]
+Method-name:tableName
+Method-returnType:Builder
+Method-parameters:[String tableName]
+Method-name:sample
+Method-returnType:Builder
+Method-parameters:[boolean sample]
+Method-name:dateFormat
+Method-returnType:Builder
+Method-parameters:[String dateFormat]
+Method-name:timeFormat
+Method-returnType:Builder
+Method-parameters:[String timeFormat]
+Method-name:dateTimeFormat
+Method-returnType:Builder
+Method-parameters:[String dateTimeFormat]
+Method-name:dateFormat
+Method-returnType:Builder
+Method-parameters:[DateTimeFormatter dateFormat]
+Method-name:timeFormat
+Method-returnType:Builder
+Method-parameters:[DateTimeFormatter timeFormat]
+Method-name:dateTimeFormat
+Method-returnType:Builder
+Method-parameters:[DateTimeFormatter dateTimeFormat]
+Method-name:maxCharsPerColumn
+Method-returnType:Builder
+Method-parameters:[int maxCharsPerColumn]
+Method-name:locale
+Method-returnType:Builder
+Method-parameters:[Locale locale]
+Method-name:missingValueIndicator
+Method-returnType:Builder
+Method-parameters:[String missingValueIndicator]
+Method-name:minimizeColumnSizes
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:ignoreZeroDecimal
+Method-returnType:Builder
+Method-parameters:[boolean ignoreZeroDecimal]

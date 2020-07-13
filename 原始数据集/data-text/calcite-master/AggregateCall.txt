@@ -1,0 +1,183 @@
+Class:AggregateCall
+Field:aggFunction
+Field:distinct
+Field:approximate
+Field:ignoreNulls
+Field:type
+Field:name
+Field:argList
+Field:filterArg
+Field:collation
+Method-name:AggregateCall
+Method-returnType:null
+Method-parameters:[SqlAggFunction aggFunction, boolean distinct, List<Integer> argList, RelDataType type, String name]
+Method-name:AggregateCall
+Method-returnType:null
+Method-parameters:[SqlAggFunction aggFunction, boolean distinct, boolean approximate, boolean ignoreNulls, List<Integer> argList, int filterArg, RelCollation collation, RelDataType type, String name]
+FieldAccess:type
+MethodInvocation:requireNonNull
+FieldAccess:name
+FieldAccess:aggFunction
+MethodInvocation:requireNonNull
+FieldAccess:argList
+MethodInvocation:copyOf
+FieldAccess:filterArg
+FieldAccess:collation
+MethodInvocation:requireNonNull
+FieldAccess:distinct
+FieldAccess:approximate
+FieldAccess:ignoreNulls
+MethodInvocation:checkArgument
+MethodInvocation:getDistinctOptionality
+MethodInvocation:checkArgument
+MethodInvocation:allowsFilter
+Method-name:create
+Method-returnType:AggregateCall
+Method-parameters:[SqlAggFunction aggFunction, boolean distinct, List<Integer> argList, int groupCount, RelNode input, RelDataType type, String name]
+MethodInvocation:create
+Method-name:create
+Method-returnType:AggregateCall
+Method-parameters:[SqlAggFunction aggFunction, boolean distinct, List<Integer> argList, int filterArg, int groupCount, RelNode input, RelDataType type, String name]
+MethodInvocation:create
+Method-name:create
+Method-returnType:AggregateCall
+Method-parameters:[SqlAggFunction aggFunction, boolean distinct, boolean approximate, List<Integer> argList, int filterArg, int groupCount, RelNode input, RelDataType type, String name]
+MethodInvocation:create
+Method-name:create
+Method-returnType:AggregateCall
+Method-parameters:[SqlAggFunction aggFunction, boolean distinct, boolean approximate, List<Integer> argList, int filterArg, RelCollation collation, int groupCount, RelNode input, RelDataType type, String name]
+MethodInvocation:create
+Method-name:create
+Method-returnType:AggregateCall
+Method-parameters:[SqlAggFunction aggFunction, boolean distinct, boolean approximate, boolean ignoreNulls, List<Integer> argList, int filterArg, RelCollation collation, int groupCount, RelNode input, RelDataType type, String name]
+MethodInvocation:getTypeFactory
+MethodInvocation:getCluster
+MethodInvocation:projectTypes
+MethodInvocation:getRowType
+MethodInvocation:inferReturnType
+MethodInvocation:create
+Method-name:create
+Method-returnType:AggregateCall
+Method-parameters:[SqlAggFunction aggFunction, boolean distinct, List<Integer> argList, int filterArg, RelDataType type, String name]
+MethodInvocation:create
+Method-name:create
+Method-returnType:AggregateCall
+Method-parameters:[SqlAggFunction aggFunction, boolean distinct, boolean approximate, List<Integer> argList, int filterArg, RelDataType type, String name]
+MethodInvocation:create
+Method-name:create
+Method-returnType:AggregateCall
+Method-parameters:[SqlAggFunction aggFunction, boolean distinct, boolean approximate, List<Integer> argList, int filterArg, RelCollation collation, RelDataType type, String name]
+MethodInvocation:create
+Method-name:create
+Method-returnType:AggregateCall
+Method-parameters:[SqlAggFunction aggFunction, boolean distinct, boolean approximate, boolean ignoreNulls, List<Integer> argList, int filterArg, RelCollation collation, RelDataType type, String name]
+MethodInvocation:getDistinctOptionality
+Method-name:isDistinct
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isApproximate
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:ignoreNulls
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getAggregation
+Method-returnType:SqlAggFunction
+Method-parameters:[]
+Method-name:getCollation
+Method-returnType:RelCollation
+Method-parameters:[]
+Method-name:getArgList
+Method-returnType:List<Integer>
+Method-parameters:[]
+Method-name:getType
+Method-returnType:RelDataType
+Method-parameters:[]
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+Method-name:rename
+Method-returnType:AggregateCall
+Method-parameters:[String name]
+MethodInvocation:equals
+FieldAccess:name
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:size
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:equals
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:hasFilter
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:hasFilter
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:createBinding
+Method-returnType:Aggregate.AggCallBinding
+Method-parameters:[Aggregate aggregateRelBase]
+MethodInvocation:getRowType
+MethodInvocation:getInput
+MethodInvocation:getTypeFactory
+MethodInvocation:getCluster
+MethodInvocation:projectTypes
+MethodInvocation:getGroupCount
+MethodInvocation:hasFilter
+Method-name:copy
+Method-returnType:AggregateCall
+Method-parameters:[List<Integer> args, int filterArg, RelCollation collation]
+Method-name:copy
+Method-returnType:AggregateCall
+Method-parameters:[List<Integer> args, int filterArg]
+MethodInvocation:copy
+Method-name:copy
+Method-returnType:AggregateCall
+Method-parameters:[List<Integer> args]
+MethodInvocation:copy
+Method-name:adaptTo
+Method-returnType:AggregateCall
+Method-parameters:[RelNode input, List<Integer> argList, int filterArg, int oldGroupKeyCount, int newGroupKeyCount]
+MethodInvocation:equals
+FieldAccess:argList
+FieldAccess:filterArg
+MethodInvocation:create
+MethodInvocation:getName
+Method-name:transform
+Method-returnType:AggregateCall
+Method-parameters:[Mappings.TargetMapping mapping]
+MethodInvocation:copy
+MethodInvocation:apply2
+MethodInvocation:hasFilter
+MethodInvocation:apply
+MethodInvocation:permute
+Method-name:isAggregateSupported
+Method-returnType:boolean
+Method-parameters:[AggregateMergeRule aggregateMergeRule]
+MethodInvocation:isDistinct
+MethodInvocation:hasFilter
+MethodInvocation:isApproximate
+MethodInvocation:size
+MethodInvocation:getArgList
+MethodInvocation:unwrap
+MethodInvocation:getAggregation

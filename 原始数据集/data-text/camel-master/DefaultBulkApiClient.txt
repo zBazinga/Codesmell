@@ -1,0 +1,259 @@
+Class:DefaultBulkApiClient
+Field:TOKEN_HEADER
+Field:DEFAULT_ACCEPT_TYPE
+Field:context
+Field:objectFactory
+Method-name:DefaultBulkApiClient
+Method-returnType:null
+Method-parameters:[String version, SalesforceSession session, SalesforceHttpClient httpClient, SalesforceLoginConfig loginConfig]
+MethodInvocation:newInstance
+MethodInvocation:getName
+MethodInvocation:getPackage
+MethodInvocation:getClassLoader
+MethodInvocation:getClass
+MethodInvocation:getMessage
+FieldAccess:objectFactory
+Method-name:createJob
+Method-returnType:void
+Method-parameters:[JobInfo request, Map<String,List<String>> headers, final JobInfoResponseCallback callback]
+MethodInvocation:sanitizeJobRequest
+MethodInvocation:getRequest
+MethodInvocation:jobUrl
+MethodInvocation:marshalRequest
+MethodInvocation:createJobInfo
+MethodInvocation:onResponse
+MethodInvocation:emptyMap
+MethodInvocation:doHttpRequest
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream response, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:unmarshalResponse
+MethodInvocation:onResponse
+Method-name:getJob
+Method-returnType:void
+Method-parameters:[String jobId, Map<String,List<String>> headers, final JobInfoResponseCallback callback]
+MethodInvocation:getRequest
+MethodInvocation:jobUrl
+MethodInvocation:doHttpRequest
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream response, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:unmarshalResponse
+MethodInvocation:onResponse
+Method-name:closeJob
+Method-returnType:void
+Method-parameters:[String jobId, Map<String,List<String>> headers, final JobInfoResponseCallback callback]
+MethodInvocation:setState
+MethodInvocation:getRequest
+MethodInvocation:jobUrl
+MethodInvocation:marshalRequest
+MethodInvocation:createJobInfo
+MethodInvocation:onResponse
+MethodInvocation:emptyMap
+MethodInvocation:doHttpRequest
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream response, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:unmarshalResponse
+MethodInvocation:onResponse
+Method-name:abortJob
+Method-returnType:void
+Method-parameters:[String jobId, Map<String,List<String>> headers, final JobInfoResponseCallback callback]
+MethodInvocation:setState
+MethodInvocation:getRequest
+MethodInvocation:jobUrl
+MethodInvocation:marshalRequest
+MethodInvocation:createJobInfo
+MethodInvocation:onResponse
+MethodInvocation:emptyMap
+MethodInvocation:doHttpRequest
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream response, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:unmarshalResponse
+MethodInvocation:onResponse
+Method-name:createBatch
+Method-returnType:void
+Method-parameters:[InputStream batchStream, String jobId, ContentType contentTypeEnum, Map<String,List<String>> headers, final BatchInfoResponseCallback callback]
+MethodInvocation:getRequest
+MethodInvocation:batchUrl
+MethodInvocation:content
+MethodInvocation:header
+MethodInvocation:getContentType
+MethodInvocation:doHttpRequest
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream response, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:unmarshalResponse
+MethodInvocation:onResponse
+Method-name:getBatch
+Method-returnType:void
+Method-parameters:[String jobId, String batchId, Map<String,List<String>> headers, final BatchInfoResponseCallback callback]
+MethodInvocation:getRequest
+MethodInvocation:batchUrl
+MethodInvocation:doHttpRequest
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream response, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:unmarshalResponse
+MethodInvocation:onResponse
+Method-name:getAllBatches
+Method-returnType:void
+Method-parameters:[String jobId, Map<String,List<String>> headers, final BatchInfoListResponseCallback callback]
+MethodInvocation:getRequest
+MethodInvocation:batchUrl
+MethodInvocation:doHttpRequest
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream response, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:unmarshalResponse
+MethodInvocation:onResponse
+MethodInvocation:getBatchInfo
+Method-name:getRequest
+Method-returnType:void
+Method-parameters:[String jobId, String batchId, Map<String,List<String>> headers, final StreamResponseCallback callback]
+MethodInvocation:getRequest
+MethodInvocation:batchRequestUrl
+MethodInvocation:doHttpRequest
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream response, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:onResponse
+Method-name:getResults
+Method-returnType:void
+Method-parameters:[String jobId, String batchId, Map<String,List<String>> headers, final StreamResponseCallback callback]
+MethodInvocation:getRequest
+MethodInvocation:batchResultUrl
+MethodInvocation:doHttpRequest
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream response, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:onResponse
+Method-name:createBatchQuery
+Method-returnType:void
+Method-parameters:[String jobId, String soqlQuery, ContentType jobContentType, Map<String,List<String>> headers, final BatchInfoResponseCallback callback]
+MethodInvocation:getRequest
+MethodInvocation:batchUrl
+MethodInvocation:getBytes
+MethodInvocation:onResponse
+MethodInvocation:emptyMap
+MethodInvocation:getMessage
+MethodInvocation:content
+MethodInvocation:header
+MethodInvocation:getContentType
+MethodInvocation:doHttpRequest
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream response, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:unmarshalResponse
+MethodInvocation:onResponse
+Method-name:getQueryResultIds
+Method-returnType:void
+Method-parameters:[String jobId, String batchId, Map<String,List<String>> headers, final QueryResultIdsCallback callback]
+MethodInvocation:getRequest
+MethodInvocation:batchResultUrl
+MethodInvocation:doHttpRequest
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream response, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:unmarshalResponse
+MethodInvocation:onResponse
+MethodInvocation:unmodifiableList
+MethodInvocation:getResult
+Method-name:getQueryResult
+Method-returnType:void
+Method-parameters:[String jobId, String batchId, String resultId, Map<String,List<String>> headers, final StreamResponseCallback callback]
+MethodInvocation:getRequest
+MethodInvocation:batchResultUrl
+MethodInvocation:doHttpRequest
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[InputStream response, Map<String,String> headers, SalesforceException ex]
+MethodInvocation:onResponse
+Method-name:setAccessToken
+Method-returnType:void
+Method-parameters:[Request request]
+MethodInvocation:put
+MethodInvocation:getHeaders
+Method-name:doHttpRequest
+Method-returnType:void
+Method-parameters:[Request request, ClientResponseCallback callback]
+MethodInvocation:setAccessToken
+MethodInvocation:header
+MethodInvocation:contains
+MethodInvocation:getHeaders
+MethodInvocation:getContentType
+MethodInvocation:header
+Method-name:getContentType
+Method-returnType:String
+Method-parameters:[ContentType type]
+MethodInvocation:replace
+MethodInvocation:toLowerCase
+MethodInvocation:toString
+Method-name:createRestException
+Method-returnType:SalesforceException
+Method-parameters:[Response response, InputStream responseContent]
+MethodInvocation:unmarshalResponse
+MethodInvocation:getRequest
+MethodInvocation:setErrorCode
+MethodInvocation:getExceptionCode
+MethodInvocation:setMessage
+MethodInvocation:getExceptionMessage
+MethodInvocation:asList
+MethodInvocation:getStatus
+MethodInvocation:getMessage
+Method-name:unmarshalResponse
+Method-returnType:T
+Method-parameters:[InputStream response, Request request, Class<T> resultClass]
+MethodInvocation:createUnmarshaller
+MethodInvocation:newInstance
+MethodInvocation:setNamespaceAware
+MethodInvocation:setFeature
+MethodInvocation:setFeature
+MethodInvocation:setFeature
+MethodInvocation:setFeature
+MethodInvocation:getXMLReader
+MethodInvocation:newSAXParser
+MethodInvocation:unmarshal
+MethodInvocation:getValue
+MethodInvocation:format
+MethodInvocation:getMethod
+MethodInvocation:getURI
+MethodInvocation:getMessage
+MethodInvocation:format
+MethodInvocation:getMethod
+MethodInvocation:getURI
+MethodInvocation:getMessage
+Method-name:marshalRequest
+Method-returnType:void
+Method-parameters:[Object input, Request request, String contentType]
+MethodInvocation:createMarshaller
+MethodInvocation:marshal
+MethodInvocation:content
+MethodInvocation:toByteArray
+MethodInvocation:format
+MethodInvocation:getMethod
+MethodInvocation:getURI
+MethodInvocation:getMessage
+MethodInvocation:format
+MethodInvocation:getMethod
+MethodInvocation:getURI
+MethodInvocation:getMessage
+Method-name:jobUrl
+Method-returnType:String
+Method-parameters:[String jobId]
+Method-name:batchUrl
+Method-returnType:String
+Method-parameters:[String jobId, String batchId]
+MethodInvocation:jobUrl
+MethodInvocation:jobUrl
+Method-name:batchResultUrl
+Method-returnType:String
+Method-parameters:[String jobId, String batchId, String resultId]
+MethodInvocation:batchUrl
+MethodInvocation:batchUrl
+Method-name:batchRequestUrl
+Method-returnType:String
+Method-parameters:[String jobId, String batchId, String requestId]
+MethodInvocation:batchUrl
+MethodInvocation:batchUrl

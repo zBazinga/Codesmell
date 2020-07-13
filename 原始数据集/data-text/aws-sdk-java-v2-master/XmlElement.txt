@@ -1,0 +1,110 @@
+Class:XmlElement
+Field:EMPTY
+MethodInvocation:build
+MethodInvocation:elementName
+MethodInvocation:builder
+Field:elementName
+Field:childrenByElement
+Field:children
+Field:textContent
+Field:attributes
+Method-name:XmlElement
+Method-returnType:null
+Method-parameters:[Builder builder]
+FieldAccess:elementName
+FieldAccess:childrenByElement
+FieldAccess:children
+MethodInvocation:unmodifiableList
+FieldAccess:textContent
+FieldAccess:attributes
+MethodInvocation:unmodifiableMap
+Method-name:elementName
+Method-returnType:String
+Method-parameters:[]
+Method-name:children
+Method-returnType:List<XmlElement>
+Method-parameters:[]
+Method-name:getFirstChild
+Method-returnType:XmlElement
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:get
+Method-name:getElementsByName
+Method-returnType:List<XmlElement>
+Method-parameters:[String tagName]
+MethodInvocation:getOrDefault
+MethodInvocation:emptyList
+Method-name:getElementByName
+Method-returnType:XmlElement
+Method-parameters:[String tagName]
+MethodInvocation:getElementsByName
+MethodInvocation:size
+MethodInvocation:create
+MethodInvocation:format
+FieldAccess:elementName
+MethodInvocation:size
+MethodInvocation:get
+Method-name:getOptionalElementByName
+Method-returnType:Optional<XmlElement>
+Method-parameters:[String tagName]
+MethodInvocation:ofNullable
+MethodInvocation:getElementByName
+Method-name:textContent
+Method-returnType:String
+Method-parameters:[]
+Method-name:getOptionalAttributeByName
+Method-returnType:Optional<String>
+Method-parameters:[String attribute]
+MethodInvocation:ofNullable
+MethodInvocation:get
+Method-name:attributes
+Method-returnType:Map<String,String>
+Method-parameters:[]
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:empty
+Method-returnType:XmlElement
+Method-parameters:[]
+Method-name:getMessage
+Method-returnType:String
+Method-parameters:[AwsXmlErrorUnmarshaller awsXmlErrorUnmarshaller]
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:getOptionalElementByName
+Class:Builder
+Field:elementName
+Field:childrenByElement
+Field:children
+Field:textContent
+Field:attributes
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+Method-name:elementName
+Method-returnType:Builder
+Method-parameters:[String elementName]
+FieldAccess:elementName
+Method-name:addChildElement
+Method-returnType:Builder
+Method-parameters:[XmlElement childElement]
+MethodInvocation:computeIfAbsent
+FieldAccess:childrenByElement
+MethodInvocation:elementName
+MethodInvocation:add
+MethodInvocation:get
+FieldAccess:childrenByElement
+MethodInvocation:elementName
+MethodInvocation:add
+FieldAccess:children
+Method-name:textContent
+Method-returnType:Builder
+Method-parameters:[String textContent]
+FieldAccess:textContent
+Method-name:attributes
+Method-returnType:Builder
+Method-parameters:[Map<String,String> attributes]
+FieldAccess:attributes
+Method-name:build
+Method-returnType:XmlElement
+Method-parameters:[]

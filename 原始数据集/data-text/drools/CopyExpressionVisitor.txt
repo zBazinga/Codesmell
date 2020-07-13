@@ -1,0 +1,107 @@
+Class:CopyExpressionVisitor
+Field:root
+Field:curr
+Method-name:CopyExpressionVisitor
+Method-returnType:null
+Method-parameters:[]
+Method-name:copy
+Method-returnType:ExpressionPart
+Method-parameters:[ExpressionPart part]
+MethodInvocation:accept
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ExpressionPart part]
+MethodInvocation:getName
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ExpressionField part]
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getClassType
+MethodInvocation:getGenericType
+MethodInvocation:getParametricType
+MethodInvocation:moveNext
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ExpressionMethod part]
+MethodInvocation:getName
+MethodInvocation:getClassType
+MethodInvocation:getGenericType
+MethodInvocation:getParametricType
+MethodInvocation:copyMethodParams
+MethodInvocation:add
+MethodInvocation:moveNext
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ExpressionVariable part]
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getFactType
+MethodInvocation:moveNext
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ExpressionFieldVariable part]
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getClassType
+MethodInvocation:moveNext
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ExpressionUnboundFact part]
+MethodInvocation:add
+MethodInvocation:getFactType
+MethodInvocation:moveNext
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ExpressionCollection part]
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getClassType
+MethodInvocation:getGenericType
+MethodInvocation:getParametricType
+MethodInvocation:moveNext
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ExpressionCollectionIndex part]
+MethodInvocation:getName
+MethodInvocation:getClassType
+MethodInvocation:getGenericType
+MethodInvocation:getParametricType
+MethodInvocation:copyMethodParams
+MethodInvocation:add
+MethodInvocation:moveNext
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ExpressionText part]
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getClassType
+MethodInvocation:getGenericType
+MethodInvocation:moveNext
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ExpressionMethodParameter part]
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getClassType
+MethodInvocation:getGenericType
+MethodInvocation:moveNext
+Method-name:visit
+Method-returnType:void
+Method-parameters:[ExpressionGlobalVariable part]
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getClassType
+MethodInvocation:getGenericType
+MethodInvocation:getParametricType
+MethodInvocation:moveNext
+Method-name:moveNext
+Method-returnType:void
+Method-parameters:[ExpressionPart ep]
+MethodInvocation:getNext
+MethodInvocation:accept
+MethodInvocation:getNext
+Method-name:add
+Method-returnType:void
+Method-parameters:[ExpressionPart p]
+MethodInvocation:setNext

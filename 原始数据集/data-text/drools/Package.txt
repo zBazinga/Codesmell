@@ -1,0 +1,87 @@
+Class:Package
+Field:_name
+Field:_imports
+Field:_variables
+Field:_rules
+Field:_functions
+Field:_queries
+Field:_declaredTypes
+Method-name:Package
+Method-returnType:null
+Method-parameters:[final String name]
+FieldAccess:_name
+FieldAccess:_imports
+FieldAccess:_variables
+FieldAccess:_rules
+FieldAccess:_functions
+FieldAccess:_queries
+FieldAccess:_declaredTypes
+Method-name:addImport
+Method-returnType:void
+Method-parameters:[final Import imp]
+MethodInvocation:add
+FieldAccess:_imports
+Method-name:addVariable
+Method-returnType:void
+Method-parameters:[final Global varz]
+MethodInvocation:add
+FieldAccess:_variables
+Method-name:addRule
+Method-returnType:void
+Method-parameters:[final Rule rule]
+MethodInvocation:add
+FieldAccess:_rules
+Method-name:addFunctions
+Method-returnType:void
+Method-parameters:[final String listing]
+MethodInvocation:setFunctionsListing
+FieldAccess:_functions
+Method-name:addQueries
+Method-returnType:void
+Method-parameters:[final String listing]
+MethodInvocation:setQueriesListing
+FieldAccess:_queries
+Method-name:addDeclaredType
+Method-returnType:void
+Method-parameters:[final String declaration]
+MethodInvocation:setDeclaredTypeListing
+FieldAccess:_declaredTypes
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:_name
+Method-name:getImports
+Method-returnType:List<Import>
+Method-parameters:[]
+FieldAccess:_imports
+Method-name:getVariables
+Method-returnType:List<Global>
+Method-parameters:[]
+FieldAccess:_variables
+Method-name:getRules
+Method-returnType:List<Rule>
+Method-parameters:[]
+FieldAccess:_rules
+Method-name:renderDRL
+Method-returnType:void
+Method-parameters:[final DRLOutput out]
+MethodInvocation:writeLine
+MethodInvocation:replace
+FieldAccess:_name
+MethodInvocation:writeLine
+MethodInvocation:renderDRL
+FieldAccess:_imports
+MethodInvocation:renderDRL
+FieldAccess:_variables
+MethodInvocation:renderDRL
+FieldAccess:_functions
+MethodInvocation:renderDRL
+FieldAccess:_queries
+MethodInvocation:renderDRL
+FieldAccess:_declaredTypes
+MethodInvocation:renderDRL
+FieldAccess:_rules
+Method-name:renderDRL
+Method-returnType:void
+Method-parameters:[final List<? extends DRLJavaEmitter> list, final DRLOutput out]
+MethodInvocation:renderDRL

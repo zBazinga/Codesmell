@@ -1,0 +1,103 @@
+Class:AwsS3V4Signer
+Field:CONTENT_SHA_256
+Field:UNSIGNED_PAYLOAD
+Field:CONTENT_LENGTH
+Method-name:AwsS3V4Signer
+Method-returnType:null
+Method-parameters:[]
+Method-name:create
+Method-returnType:AwsS3V4Signer
+Method-parameters:[]
+Method-name:sign
+Method-returnType:SdkHttpFullRequest
+Method-parameters:[SdkHttpFullRequest request, ExecutionAttributes executionAttributes]
+MethodInvocation:constructAwsS3SignerParams
+MethodInvocation:sign
+Method-name:sign
+Method-returnType:SdkHttpFullRequest
+Method-parameters:[SdkHttpFullRequest request, AwsS3V4SignerParams signingParams]
+MethodInvocation:isAnonymous
+MethodInvocation:awsCredentials
+MethodInvocation:build
+MethodInvocation:doSign
+Method-name:constructAwsS3SignerParams
+Method-returnType:AwsS3V4SignerParams
+Method-parameters:[ExecutionAttributes executionAttributes]
+MethodInvocation:extractSignerParams
+MethodInvocation:builder
+MethodInvocation:ifPresent
+MethodInvocation:ofNullable
+MethodInvocation:getAttribute
+MethodInvocation:ifPresent
+MethodInvocation:ofNullable
+MethodInvocation:getAttribute
+MethodInvocation:build
+Method-name:presign
+Method-returnType:SdkHttpFullRequest
+Method-parameters:[SdkHttpFullRequest request, ExecutionAttributes executionAttributes]
+MethodInvocation:build
+MethodInvocation:extractPresignerParams
+MethodInvocation:builder
+MethodInvocation:presign
+Method-name:presign
+Method-returnType:SdkHttpFullRequest
+Method-parameters:[SdkHttpFullRequest request, Aws4PresignerParams signingParams]
+MethodInvocation:isAnonymous
+MethodInvocation:awsCredentials
+MethodInvocation:build
+MethodInvocation:doPresign
+Method-name:processRequestPayload
+Method-returnType:void
+Method-parameters:[SdkHttpFullRequest.Builder mutableRequest, byte[] signature, byte[] signingKey, Aws4SignerRequestParams signerRequestParams, AwsS3V4SignerParams signerParams]
+MethodInvocation:useChunkEncoding
+MethodInvocation:contentStreamProvider
+MethodInvocation:contentStreamProvider
+MethodInvocation:contentStreamProvider
+MethodInvocation:asChunkEncodedStream
+MethodInvocation:newStream
+Method-name:calculateContentHashPresign
+Method-returnType:String
+Method-parameters:[SdkHttpFullRequest.Builder mutableRequest, Aws4PresignerParams signerParams]
+Method-name:asChunkEncodedStream
+Method-returnType:AwsChunkedEncodingInputStream
+Method-parameters:[InputStream inputStream, byte[] signature, byte[] signingKey, Aws4SignerRequestParams signerRequestParams]
+MethodInvocation:getFormattedRequestSigningDateTime
+MethodInvocation:getScope
+MethodInvocation:toHex
+Method-name:calculateContentHash
+Method-returnType:String
+Method-parameters:[SdkHttpFullRequest.Builder mutableRequest, AwsS3V4SignerParams signerParams]
+MethodInvocation:putHeader
+MethodInvocation:isPayloadSigningEnabled
+MethodInvocation:useChunkEncoding
+MethodInvocation:orElse
+MethodInvocation:firstMatchingHeader
+MethodInvocation:parseLong
+MethodInvocation:getContentLength
+MethodInvocation:build
+MethodInvocation:cause
+MethodInvocation:message
+MethodInvocation:builder
+MethodInvocation:putHeader
+MethodInvocation:toString
+MethodInvocation:putHeader
+MethodInvocation:toString
+MethodInvocation:calculateStreamContentLength
+Method-name:useChunkEncoding
+Method-returnType:boolean
+Method-parameters:[SdkHttpFullRequest.Builder mutableRequest, AwsS3V4SignerParams signerParams]
+MethodInvocation:isPayloadSigningEnabled
+MethodInvocation:isChunkedEncodingEnabled
+Method-name:isPayloadSigningEnabled
+Method-returnType:boolean
+Method-parameters:[SdkHttpFullRequest.Builder request, AwsS3V4SignerParams signerParams]
+MethodInvocation:equals
+MethodInvocation:protocol
+MethodInvocation:contentStreamProvider
+MethodInvocation:enablePayloadSigning
+Method-name:getContentLength
+Method-returnType:long
+Method-parameters:[SdkHttpFullRequest.Builder requestBuilder]
+MethodInvocation:newStream
+MethodInvocation:contentStreamProvider
+MethodInvocation:read

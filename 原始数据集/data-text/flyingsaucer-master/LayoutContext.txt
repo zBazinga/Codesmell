@@ -1,0 +1,369 @@
+Class:LayoutContext
+Field:_sharedContext
+Field:_rootLayer
+Field:_firstLines
+Field:_firstLetters
+Field:_currentMarkerData
+Field:_bfcs
+Field:_layers
+Field:_fontContext
+Field:_contentFunctionFactory
+Field:_extraSpaceTop
+Field:_extraSpaceBottom
+Field:_counterContextMap
+Field:_pendingPageName
+Field:_pageName
+Field:_noPageBreak
+Field:_rootDocumentLayer
+Field:_page
+Field:_mayCheckKeepTogether
+Field:_breakAtLineContext
+Method-name:getTextRenderer
+Method-returnType:TextRenderer
+Method-parameters:[]
+MethodInvocation:getTextRenderer
+Method-name:getCss
+Method-returnType:StyleReference
+Method-parameters:[]
+MethodInvocation:getCss
+Method-name:getCanvas
+Method-returnType:FSCanvas
+Method-parameters:[]
+MethodInvocation:getCanvas
+Method-name:getFixedRectangle
+Method-returnType:Rectangle
+Method-parameters:[]
+MethodInvocation:getFixedRectangle
+Method-name:getNamespaceHandler
+Method-returnType:NamespaceHandler
+Method-parameters:[]
+MethodInvocation:getNamespaceHandler
+Method-name:LayoutContext
+Method-returnType:null
+Method-parameters:[SharedContext sharedContext]
+Method-name:reInit
+Method-returnType:void
+Method-parameters:[boolean keepLayers]
+Method-name:captureLayoutState
+Method-returnType:LayoutState
+Method-parameters:[]
+MethodInvocation:setFirstLines
+MethodInvocation:setFirstLetters
+MethodInvocation:setCurrentMarkerData
+MethodInvocation:setBFCs
+MethodInvocation:isPrint
+MethodInvocation:setPageName
+MethodInvocation:getPageName
+MethodInvocation:setExtraSpaceBottom
+MethodInvocation:getExtraSpaceBottom
+MethodInvocation:setExtraSpaceTop
+MethodInvocation:getExtraSpaceTop
+MethodInvocation:setNoPageBreak
+MethodInvocation:getNoPageBreak
+Method-name:restoreLayoutState
+Method-returnType:void
+Method-parameters:[LayoutState layoutState]
+MethodInvocation:getFirstLines
+MethodInvocation:getFirstLetters
+MethodInvocation:getCurrentMarkerData
+MethodInvocation:getBFCs
+MethodInvocation:isPrint
+MethodInvocation:setPageName
+MethodInvocation:getPageName
+MethodInvocation:setExtraSpaceBottom
+MethodInvocation:getExtraSpaceBottom
+MethodInvocation:setExtraSpaceTop
+MethodInvocation:getExtraSpaceTop
+MethodInvocation:setNoPageBreak
+MethodInvocation:getNoPageBreak
+Method-name:copyStateForRelayout
+Method-returnType:LayoutState
+Method-parameters:[]
+MethodInvocation:setFirstLetters
+MethodInvocation:copyOf
+MethodInvocation:setFirstLines
+MethodInvocation:copyOf
+MethodInvocation:setCurrentMarkerData
+MethodInvocation:isPrint
+MethodInvocation:setPageName
+MethodInvocation:getPageName
+Method-name:restoreStateForRelayout
+Method-returnType:void
+Method-parameters:[LayoutState layoutState]
+MethodInvocation:getFirstLines
+MethodInvocation:getFirstLetters
+MethodInvocation:getCurrentMarkerData
+MethodInvocation:isPrint
+MethodInvocation:setPageName
+MethodInvocation:getPageName
+Method-name:getBlockFormattingContext
+Method-returnType:BlockFormattingContext
+Method-parameters:[]
+MethodInvocation:getLast
+Method-name:pushBFC
+Method-returnType:void
+Method-parameters:[BlockFormattingContext bfc]
+MethodInvocation:add
+Method-name:popBFC
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:removeLast
+Method-name:pushLayer
+Method-returnType:void
+Method-parameters:[Box master]
+MethodInvocation:getLayer
+MethodInvocation:addChild
+MethodInvocation:pushLayer
+Method-name:pushLayer
+Method-returnType:void
+Method-parameters:[Layer layer]
+MethodInvocation:add
+Method-name:popLayer
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getLayer
+MethodInvocation:finish
+MethodInvocation:removeLast
+Method-name:getLayer
+Method-returnType:Layer
+Method-parameters:[]
+MethodInvocation:getLast
+Method-name:getRootLayer
+Method-returnType:Layer
+Method-parameters:[]
+Method-name:translate
+Method-returnType:void
+Method-parameters:[int x, int y]
+MethodInvocation:translate
+MethodInvocation:getBlockFormattingContext
+Method-name:addBoxId
+Method-returnType:void
+Method-parameters:[String id, Box box]
+MethodInvocation:addBoxId
+Method-name:removeBoxId
+Method-returnType:void
+Method-parameters:[String id]
+MethodInvocation:removeBoxId
+Method-name:isInteractive
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isInteractive
+Method-name:getMmPerDot
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:getMmPerPx
+Method-name:getDotsPerPixel
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getDotsPerPixel
+Method-name:getFontSize2D
+Method-returnType:float
+Method-parameters:[FontSpecification font]
+MethodInvocation:getSize2D
+MethodInvocation:getFont
+Method-name:getXHeight
+Method-returnType:float
+Method-parameters:[FontSpecification parentFont]
+MethodInvocation:getXHeight
+MethodInvocation:getFontContext
+Method-name:getFont
+Method-returnType:FSFont
+Method-parameters:[FontSpecification font]
+MethodInvocation:getFont
+Method-name:getUac
+Method-returnType:UserAgentCallback
+Method-parameters:[]
+MethodInvocation:getUac
+Method-name:isPrint
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isPrint
+Method-name:getFirstLinesTracker
+Method-returnType:StyleTracker
+Method-parameters:[]
+Method-name:getFirstLettersTracker
+Method-returnType:StyleTracker
+Method-parameters:[]
+Method-name:getCurrentMarkerData
+Method-returnType:MarkerData
+Method-parameters:[]
+Method-name:setCurrentMarkerData
+Method-returnType:void
+Method-parameters:[MarkerData currentMarkerData]
+Method-name:getReplacedElementFactory
+Method-returnType:ReplacedElementFactory
+Method-parameters:[]
+MethodInvocation:getReplacedElementFactory
+Method-name:getFontContext
+Method-returnType:FontContext
+Method-parameters:[]
+Method-name:setFontContext
+Method-returnType:void
+Method-parameters:[FontContext fontContext]
+Method-name:getContentFunctionFactory
+Method-returnType:ContentFunctionFactory
+Method-parameters:[]
+Method-name:getSharedContext
+Method-returnType:SharedContext
+Method-parameters:[]
+Method-name:getExtraSpaceBottom
+Method-returnType:int
+Method-parameters:[]
+Method-name:setExtraSpaceBottom
+Method-returnType:void
+Method-parameters:[int extraSpaceBottom]
+Method-name:getExtraSpaceTop
+Method-returnType:int
+Method-parameters:[]
+Method-name:setExtraSpaceTop
+Method-returnType:void
+Method-parameters:[int extraSpaceTop]
+Method-name:resolveCounters
+Method-returnType:void
+Method-parameters:[CalculatedStyle style, Integer startIndex]
+MethodInvocation:put
+Method-name:resolveCounters
+Method-returnType:void
+Method-parameters:[CalculatedStyle style]
+MethodInvocation:resolveCounters
+Method-name:getCounterContext
+Method-returnType:CounterContext
+Method-parameters:[CalculatedStyle style]
+MethodInvocation:get
+Method-name:getFSFontMetrics
+Method-returnType:FSFontMetrics
+Method-parameters:[FSFont font]
+MethodInvocation:getFSFontMetrics
+MethodInvocation:getTextRenderer
+MethodInvocation:getFontContext
+Method-name:getInitialExtents
+Method-returnType:Rectangle
+Method-parameters:[RootPanel rootPanel]
+MethodInvocation:isPrint
+MethodInvocation:getScreenExtents
+MethodInvocation:createPageBox
+MethodInvocation:getContentWidth
+MethodInvocation:getContentHeight
+Class:CounterContext
+Field:_counters
+Field:_parent
+Method-name:CounterContext
+Method-returnType:null
+Method-parameters:[CalculatedStyle style, Integer startIndex]
+MethodInvocation:put
+MethodInvocation:get
+MethodInvocation:getParent
+MethodInvocation:getCounterReset
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:resetCounter
+MethodInvocation:getCounterIncrement
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:incrementCounter
+MethodInvocation:resetCounter
+MethodInvocation:getName
+MethodInvocation:incrementCounter
+MethodInvocation:isIdent
+MethodInvocation:put
+MethodInvocation:incrementListItemCounter
+Method-name:CounterContext
+Method-returnType:null
+Method-parameters:[]
+Method-name:incrementCounter
+Method-returnType:boolean
+Method-parameters:[CounterData cd]
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:incrementListItemCounter
+MethodInvocation:getValue
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:incrementCounter
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:intValue
+MethodInvocation:getValue
+Method-name:incrementListItemCounter
+Method-returnType:void
+Method-parameters:[int increment]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:intValue
+Method-name:resetCounter
+Method-returnType:void
+Method-parameters:[CounterData cd]
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:getValue
+Method-name:getCurrentCounterValue
+Method-returnType:int
+Method-parameters:[String name]
+MethodInvocation:getCounter
+MethodInvocation:resetCounter
+MethodInvocation:intValue
+Method-name:getCounter
+Method-returnType:Integer
+Method-parameters:[String name]
+MethodInvocation:get
+MethodInvocation:getCounter
+Method-name:getCurrentCounterValues
+Method-returnType:List
+Method-parameters:[String name]
+MethodInvocation:getCounterValues
+MethodInvocation:size
+MethodInvocation:resetCounter
+MethodInvocation:add
+Method-name:getCounterValues
+Method-returnType:void
+Method-parameters:[String name, List values]
+MethodInvocation:getCounterValues
+MethodInvocation:get
+MethodInvocation:add
+Method-name:getPageName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setPageName
+Method-returnType:void
+Method-parameters:[String currentPageName]
+Method-name:getNoPageBreak
+Method-returnType:int
+Method-parameters:[]
+Method-name:setNoPageBreak
+Method-returnType:void
+Method-parameters:[int noPageBreak]
+Method-name:isPageBreaksAllowed
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getPendingPageName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setPendingPageName
+Method-returnType:void
+Method-parameters:[String pendingPageName]
+Method-name:getRootDocumentLayer
+Method-returnType:Layer
+Method-parameters:[]
+Method-name:setRootDocumentLayer
+Method-returnType:void
+Method-parameters:[Layer rootDocumentLayer]
+Method-name:getPage
+Method-returnType:PageBox
+Method-parameters:[]
+Method-name:setPage
+Method-returnType:void
+Method-parameters:[PageBox page]
+Method-name:isMayCheckKeepTogether
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setMayCheckKeepTogether
+Method-returnType:void
+Method-parameters:[boolean mayKeepTogether]
+Method-name:getBreakAtLineContext
+Method-returnType:BreakAtLineContext
+Method-parameters:[]
+Method-name:setBreakAtLineContext
+Method-returnType:void
+Method-parameters:[BreakAtLineContext breakAtLineContext]

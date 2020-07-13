@@ -1,0 +1,233 @@
+Class:ForeignKeysResponse
+Field:STRUCT_DESC
+Field:FOREIGN_KEYS_FIELD_DESC
+Field:schemes
+MethodInvocation:put
+MethodInvocation:put
+Field:foreignKeys
+Field:_Fields
+MethodInvocation:FOREIGN_KEYS
+Field:byName
+MethodInvocation:allOf
+MethodInvocation:put
+MethodInvocation:getFieldName
+Method-name:findByThriftId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+Method-name:findByThriftIdOrThrow
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:findByName
+Method-returnType:_Fields
+Method-parameters:[String name]
+MethodInvocation:get
+Field:_thriftId
+Field:_fieldName
+Method-name:_Fields
+Method-returnType:null
+Method-parameters:[short thriftId, String fieldName]
+Method-name:getThriftFieldId
+Method-returnType:short
+Method-parameters:[]
+Method-name:getFieldName
+Method-returnType:String
+Method-parameters:[]
+Field:metaDataMap
+MethodInvocation:put
+MethodInvocation:unmodifiableMap
+MethodInvocation:addStructMetaDataMap
+Method-name:ForeignKeysResponse
+Method-returnType:null
+Method-parameters:[]
+Method-name:ForeignKeysResponse
+Method-returnType:null
+Method-parameters:[List<SQLForeignKey> foreignKeys]
+FieldAccess:foreignKeys
+Method-name:ForeignKeysResponse
+Method-returnType:null
+Method-parameters:[ForeignKeysResponse other]
+MethodInvocation:isSetForeignKeys
+MethodInvocation:size
+MethodInvocation:add
+FieldAccess:foreignKeys
+Method-name:deepCopy
+Method-returnType:ForeignKeysResponse
+Method-parameters:[]
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:foreignKeys
+Method-name:getForeignKeysSize
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:foreignKeys
+MethodInvocation:size
+FieldAccess:foreignKeys
+Method-name:getForeignKeysIterator
+Method-returnType:java.util.Iterator<SQLForeignKey>
+Method-parameters:[]
+FieldAccess:foreignKeys
+MethodInvocation:iterator
+FieldAccess:foreignKeys
+Method-name:getForeignKeys
+Method-returnType:List<SQLForeignKey>
+Method-parameters:[]
+FieldAccess:foreignKeys
+Method-name:setForeignKeys
+Method-returnType:void
+Method-parameters:[List<SQLForeignKey> foreignKeys]
+FieldAccess:foreignKeys
+Method-name:unsetForeignKeys
+Method-returnType:void
+Method-parameters:[]
+FieldAccess:foreignKeys
+Method-name:isSetForeignKeys
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:foreignKeys
+Method-name:setForeignKeysIsSet
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:foreignKeys
+Method-name:setFieldValue
+Method-returnType:void
+Method-parameters:[_Fields field, Object value]
+MethodInvocation:unsetForeignKeys
+MethodInvocation:setForeignKeys
+Method-name:getFieldValue
+Method-returnType:Object
+Method-parameters:[_Fields field]
+MethodInvocation:getForeignKeys
+Method-name:isSet
+Method-returnType:boolean
+Method-parameters:[_Fields field]
+MethodInvocation:isSetForeignKeys
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object that]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[ForeignKeysResponse that]
+MethodInvocation:isSetForeignKeys
+MethodInvocation:isSetForeignKeys
+MethodInvocation:equals
+FieldAccess:foreignKeys
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:isSetForeignKeys
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:hashCode
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[ForeignKeysResponse other]
+MethodInvocation:equals
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:compareTo
+MethodInvocation:valueOf
+MethodInvocation:isSetForeignKeys
+MethodInvocation:isSetForeignKeys
+MethodInvocation:isSetForeignKeys
+MethodInvocation:compareTo
+FieldAccess:foreignKeys
+Method-name:fieldForId
+Method-returnType:_Fields
+Method-parameters:[int fieldId]
+MethodInvocation:findByThriftId
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot]
+MethodInvocation:read
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot]
+MethodInvocation:write
+MethodInvocation:getScheme
+MethodInvocation:get
+MethodInvocation:getScheme
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+FieldAccess:foreignKeys
+MethodInvocation:append
+MethodInvocation:append
+FieldAccess:foreignKeys
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:validate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isSetForeignKeys
+MethodInvocation:toString
+Method-name:writeObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectOutputStream out]
+MethodInvocation:write
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[java.io.ObjectInputStream in]
+MethodInvocation:read
+Class:ForeignKeysResponseStandardSchemeFactory
+Method-name:getScheme
+Method-returnType:ForeignKeysResponseStandardScheme
+Method-parameters:[]
+Class:ForeignKeysResponseStandardScheme
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol iprot, ForeignKeysResponse struct]
+MethodInvocation:readStructBegin
+MethodInvocation:readFieldBegin
+MethodInvocation:readListBegin
+MethodInvocation:read
+MethodInvocation:add
+MethodInvocation:readListEnd
+MethodInvocation:setForeignKeysIsSet
+MethodInvocation:skip
+MethodInvocation:skip
+MethodInvocation:readFieldEnd
+MethodInvocation:readStructEnd
+MethodInvocation:validate
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol oprot, ForeignKeysResponse struct]
+MethodInvocation:validate
+MethodInvocation:writeStructBegin
+MethodInvocation:writeFieldBegin
+MethodInvocation:writeListBegin
+MethodInvocation:size
+MethodInvocation:write
+MethodInvocation:writeListEnd
+MethodInvocation:writeFieldEnd
+MethodInvocation:writeFieldStop
+MethodInvocation:writeStructEnd
+Class:ForeignKeysResponseTupleSchemeFactory
+Method-name:getScheme
+Method-returnType:ForeignKeysResponseTupleScheme
+Method-parameters:[]
+Class:ForeignKeysResponseTupleScheme
+Method-name:write
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, ForeignKeysResponse struct]
+MethodInvocation:writeI32
+MethodInvocation:size
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[org.apache.thrift.protocol.TProtocol prot, ForeignKeysResponse struct]
+MethodInvocation:readI32
+MethodInvocation:read
+MethodInvocation:add
+MethodInvocation:setForeignKeysIsSet

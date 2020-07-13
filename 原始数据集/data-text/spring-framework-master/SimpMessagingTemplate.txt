@@ -1,0 +1,122 @@
+Class:SimpMessagingTemplate
+Field:messageChannel
+Field:destinationPrefix
+Field:sendTimeout
+Field:headerInitializer
+Method-name:SimpMessagingTemplate
+Method-returnType:null
+Method-parameters:[MessageChannel messageChannel]
+MethodInvocation:notNull
+FieldAccess:messageChannel
+Method-name:getMessageChannel
+Method-returnType:MessageChannel
+Method-parameters:[]
+FieldAccess:messageChannel
+Method-name:setUserDestinationPrefix
+Method-returnType:void
+Method-parameters:[String prefix]
+MethodInvocation:hasText
+FieldAccess:destinationPrefix
+MethodInvocation:endsWith
+Method-name:getUserDestinationPrefix
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:destinationPrefix
+Method-name:setSendTimeout
+Method-returnType:void
+Method-parameters:[long sendTimeout]
+FieldAccess:sendTimeout
+Method-name:getSendTimeout
+Method-returnType:long
+Method-parameters:[]
+FieldAccess:sendTimeout
+Method-name:setHeaderInitializer
+Method-returnType:void
+Method-parameters:[@Nullable MessageHeaderInitializer headerInitializer]
+FieldAccess:headerInitializer
+Method-name:getHeaderInitializer
+Method-returnType:MessageHeaderInitializer
+Method-parameters:[]
+FieldAccess:headerInitializer
+Method-name:send
+Method-returnType:void
+Method-parameters:[Message<?> message]
+MethodInvocation:notNull
+MethodInvocation:getDestination
+MethodInvocation:getHeaders
+MethodInvocation:sendInternal
+MethodInvocation:doSend
+MethodInvocation:getRequiredDefaultDestination
+Method-name:doSend
+Method-returnType:void
+Method-parameters:[String destination, Message<?> message]
+MethodInvocation:notNull
+MethodInvocation:getAccessor
+MethodInvocation:isMutable
+MethodInvocation:setDestination
+MethodInvocation:setMessageTypeIfNotSet
+MethodInvocation:setImmutable
+MethodInvocation:sendInternal
+MethodInvocation:getMutableAccessor
+MethodInvocation:initHeaders
+MethodInvocation:wrap
+MethodInvocation:initHeaders
+MethodInvocation:setDestination
+MethodInvocation:setMessageTypeIfNotSet
+MethodInvocation:createMessage
+MethodInvocation:getPayload
+MethodInvocation:getMessageHeaders
+MethodInvocation:sendInternal
+Method-name:sendInternal
+Method-returnType:void
+Method-parameters:[Message<?> message]
+MethodInvocation:getDestination
+MethodInvocation:getHeaders
+MethodInvocation:notNull
+FieldAccess:sendTimeout
+MethodInvocation:send
+FieldAccess:messageChannel
+MethodInvocation:send
+FieldAccess:messageChannel
+Method-name:initHeaders
+Method-returnType:void
+Method-parameters:[SimpMessageHeaderAccessor simpAccessor]
+MethodInvocation:getHeaderInitializer
+MethodInvocation:initHeaders
+MethodInvocation:getHeaderInitializer
+Method-name:convertAndSendToUser
+Method-returnType:void
+Method-parameters:[String user, String destination, Object payload]
+MethodInvocation:convertAndSendToUser
+Method-name:convertAndSendToUser
+Method-returnType:void
+Method-parameters:[String user, String destination, Object payload, @Nullable Map<String,Object> headers]
+MethodInvocation:convertAndSendToUser
+Method-name:convertAndSendToUser
+Method-returnType:void
+Method-parameters:[String user, String destination, Object payload, @Nullable MessagePostProcessor postProcessor]
+MethodInvocation:convertAndSendToUser
+Method-name:convertAndSendToUser
+Method-returnType:void
+Method-parameters:[String user, String destination, Object payload, @Nullable Map<String,Object> headers, @Nullable MessagePostProcessor postProcessor]
+MethodInvocation:notNull
+MethodInvocation:isTrue
+MethodInvocation:contains
+MethodInvocation:replace
+MethodInvocation:startsWith
+FieldAccess:destinationPrefix
+Method-name:processHeadersToSend
+Method-returnType:Map<String,Object>
+Method-parameters:[@Nullable Map<String,Object> headers]
+MethodInvocation:create
+MethodInvocation:initHeaders
+MethodInvocation:setLeaveMutable
+MethodInvocation:getMessageHeaders
+MethodInvocation:containsKey
+MethodInvocation:getAccessor
+MethodInvocation:create
+MethodInvocation:initHeaders
+MethodInvocation:forEach
+MethodInvocation:setNativeHeader
+MethodInvocation:toString
+MethodInvocation:getMessageHeaders

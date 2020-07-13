@@ -1,0 +1,139 @@
+Class:BaseEventStreamAsyncAws4Signer
+Field:EVENT_STREAM_SIGNATURE
+Field:EVENT_STREAM_DATE
+Field:LOG
+MethodInvocation:loggerFor
+Field:HTTP_CONTENT_SHA_256
+Field:EVENT_STREAM_PAYLOAD
+Field:PAYLOAD_TRUNCATE_LENGTH
+Method-name:BaseEventStreamAsyncAws4Signer
+Method-returnType:null
+Method-parameters:[]
+Method-name:sign
+Method-returnType:SdkHttpFullRequest
+Method-parameters:[SdkHttpFullRequest request, ExecutionAttributes executionAttributes]
+MethodInvocation:addContentSha256Header
+Method-name:sign
+Method-returnType:SdkHttpFullRequest
+Method-parameters:[SdkHttpFullRequest request, Aws4SignerParams signingParams]
+MethodInvocation:addContentSha256Header
+Method-name:transformRequestProvider
+Method-returnType:AsyncRequestBody
+Method-parameters:[String headerSignature, Aws4SignerRequestParams signerRequestParams, Aws4SignerParams signerParams, AsyncRequestBody asyncRequestBody]
+MethodInvocation:appendEmptyFrame
+MethodInvocation:transformRequestBodyPublisher
+MethodInvocation:awsCredentials
+MethodInvocation:fromPublisher
+Method-name:calculateContentHash
+Method-returnType:String
+Method-parameters:[SdkHttpFullRequest.Builder mutableRequest, Aws4SignerParams signerParams]
+Method-name:appendEmptyFrame
+Method-returnType:Publisher<ByteBuffer>
+Method-parameters:[Publisher<ByteBuffer> publisher]
+MethodInvocation:subscribe
+Method-name:transformRequestBodyPublisher
+Method-returnType:Publisher<ByteBuffer>
+Method-parameters:[Publisher<ByteBuffer> publisher, String headerSignature, AwsCredentials credentials, Aws4SignerRequestParams signerRequestParams]
+MethodInvocation:map
+MethodInvocation:adapt
+MethodInvocation:getDataFrameSigner
+Method-name:getDataFrameSigner
+Method-returnType:Function<ByteBuffer,ByteBuffer>
+Method-parameters:[String headerSignature, AwsCredentials credentials, Aws4SignerRequestParams signerRequestParams]
+Field:requestParams
+Field:priorSignature
+Method-name:apply
+Method-returnType:ByteBuffer
+Method-parameters:[ByteBuffer byteBuffer]
+MethodInvocation:instant
+MethodInvocation:getSigningClock
+MethodInvocation:put
+MethodInvocation:fromTimestamp
+MethodInvocation:sanitizeCredentials
+MethodInvocation:deriveSigningKey
+MethodInvocation:getRegionName
+MethodInvocation:getServiceSigningName
+MethodInvocation:array
+MethodInvocation:signEventStream
+MethodInvocation:toHex
+MethodInvocation:put
+MethodInvocation:fromByteArray
+MethodInvocation:sortHeaders
+MethodInvocation:isLoggingLevelEnabled
+MethodInvocation:trace
+MethodInvocation:toDebugString
+MethodInvocation:debug
+MethodInvocation:toDebugString
+MethodInvocation:toByteBuffer
+Method-name:signEventStream
+Method-returnType:byte[]
+Method-parameters:[String priorSignature, byte[] signingKey, Instant signingInstant, Aws4SignerRequestParams requestParams, Map<String,HeaderValue> nonSignatureHeaders, byte[] payload]
+MethodInvocation:formatTimestamp
+MethodInvocation:computeScope
+MethodInvocation:toHex
+MethodInvocation:hash
+MethodInvocation:encodeHeaders
+MethodInvocation:entrySet
+MethodInvocation:sortHeaders
+MethodInvocation:toHex
+MethodInvocation:hash
+MethodInvocation:sign
+MethodInvocation:getBytes
+Method-name:computeScope
+Method-returnType:String
+Method-parameters:[Instant signingInstant, Aws4SignerRequestParams requestParams]
+MethodInvocation:formatDateStamp
+MethodInvocation:getRegionName
+MethodInvocation:getServiceSigningName
+Method-name:sortHeaders
+Method-returnType:TreeMap<String,HeaderValue>
+Method-parameters:[Map<String,HeaderValue> headers]
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:compareTo
+MethodInvocation:putAll
+Method-name:addContentSha256Header
+Method-returnType:SdkHttpFullRequest
+Method-parameters:[SdkHttpFullRequest request]
+MethodInvocation:build
+MethodInvocation:putHeader
+MethodInvocation:toBuilder
+Class:SigningRequestBodyProvider
+Field:transformedRequestBody
+Method-name:SigningRequestBodyProvider
+Method-returnType:null
+Method-parameters:[AsyncRequestBody transformedRequestBody]
+FieldAccess:transformedRequestBody
+Method-name:subscribe
+Method-returnType:void
+Method-parameters:[Subscriber<? super ByteBuffer> s]
+MethodInvocation:subscribe
+Method-name:contentLength
+Method-returnType:Optional<Long>
+Method-parameters:[]
+MethodInvocation:contentLength
+Method-name:toDebugString
+Method-returnType:String
+Method-parameters:[Message m, boolean truncatePayload]
+MethodInvocation:getHeaders
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getKey
+MethodInvocation:toString
+MethodInvocation:getValue
+MethodInvocation:hasNext
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getPayload
+MethodInvocation:copyOf
+MethodInvocation:append
+MethodInvocation:toHex
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString

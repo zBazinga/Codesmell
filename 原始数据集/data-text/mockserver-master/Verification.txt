@@ -1,0 +1,26 @@
+Class:Verification
+Field:httpRequest
+MethodInvocation:request
+Field:times
+MethodInvocation:atLeast
+Method-name:verification
+Method-returnType:Verification
+Method-parameters:[]
+Method-name:withRequest
+Method-returnType:Verification
+Method-parameters:[HttpRequest httpRequest]
+FieldAccess:httpRequest
+Method-name:getHttpRequest
+Method-returnType:HttpRequest
+Method-parameters:[]
+Method-name:withTimes
+Method-returnType:Verification
+Method-parameters:[VerificationTimes times]
+FieldAccess:times
+Method-name:getTimes
+Method-returnType:VerificationTimes
+Method-parameters:[]
+Method-name:verify
+Method-returnType:Future<String>
+Method-parameters:[MockServerEventLog mockServerEventLog]
+MethodInvocation:verify

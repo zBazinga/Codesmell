@@ -1,0 +1,470 @@
+Class:QueryElementNode
+Field:previousTupleSinkNode
+Field:nextTupleSinkNode
+Field:queryElement
+Field:tupleMemoryEnabled
+Field:openQuery
+Field:dataDriven
+Field:argsTemplate
+Method-name:QueryElementNode
+Method-returnType:null
+Method-parameters:[]
+Method-name:QueryElementNode
+Method-returnType:null
+Method-parameters:[final int id, final LeftTupleSource tupleSource, final QueryElement queryElement, final boolean tupleMemoryEnabled, final boolean openQuery, final BuildContext context]
+MethodInvocation:setLeftTupleSource
+FieldAccess:queryElement
+FieldAccess:tupleMemoryEnabled
+FieldAccess:openQuery
+FieldAccess:dataDriven
+MethodInvocation:isDataDriven
+MethodInvocation:getRule
+MethodInvocation:initMasks
+FieldAccess:argsTemplate
+MethodInvocation:initArgsTemplate
+MethodInvocation:calculateHashCode
+Method-name:initArgsTemplate
+Method-returnType:QueryArgument[]
+Method-parameters:[BuildContext context]
+MethodInvocation:getRootClassLoader
+MethodInvocation:getKnowledgeBase
+MethodInvocation:getArguments
+FieldAccess:queryElement
+MethodInvocation:normalize
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readObject
+MethodInvocation:readBoolean
+MethodInvocation:readBoolean
+MethodInvocation:readBoolean
+FieldAccess:argsTemplate
+MethodInvocation:readObject
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeObject
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:writeObject
+Method-name:networkUpdated
+Method-returnType:void
+Method-parameters:[UpdateContext updateContext]
+MethodInvocation:networkUpdated
+FieldAccess:leftInput
+Method-name:getType
+Method-returnType:short
+Method-parameters:[]
+Method-name:isLeftTupleMemoryEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getQueryElement
+Method-returnType:QueryElement
+Method-parameters:[]
+Method-name:isOpenQuery
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:createFactHandle
+Method-returnType:InternalFactHandle
+Method-parameters:[final PropagationContext context, final InternalWorkingMemory workingMemory, final LeftTuple leftTuple]
+MethodInvocation:getReaderContext
+MethodInvocation:get
+MethodInvocation:getNodeMemories
+MethodInvocation:getReaderContext
+MethodInvocation:getId
+FieldAccess:handle
+MethodInvocation:get
+MethodInvocation:createTupleKey
+MethodInvocation:newFactHandle
+MethodInvocation:getFactHandleFactory
+MethodInvocation:getId
+MethodInvocation:getRecency
+MethodInvocation:newFactHandle
+MethodInvocation:getFactHandleFactory
+Method-name:createDroolsQuery
+Method-returnType:DroolsQuery
+Method-parameters:[LeftTuple leftTuple, InternalFactHandle handle, StackEntry stackEntry, final List<PathMemory> pmems, QueryElementNodeMemory qmem, LeftTupleSink sink, InternalWorkingMemory workingMemory]
+MethodInvocation:createCollector
+MethodInvocation:getVariableIndexes
+FieldAccess:tupleMemoryEnabled
+MethodInvocation:getObject
+MethodInvocation:get
+MethodInvocation:isOpen
+MethodInvocation:getQueryName
+FieldAccess:queryElement
+MethodInvocation:getActualArguments
+MethodInvocation:getResultLeftTuples
+MethodInvocation:setFactHandle
+MethodInvocation:setObject
+MethodInvocation:setContextObject
+Method-name:getActualArguments
+Method-returnType:Object[]
+Method-parameters:[LeftTuple leftTuple, InternalWorkingMemory workingMemory]
+MethodInvocation:getValue
+Method-name:createCollector
+Method-returnType:UnificationNodeViewChangedEventListener
+Method-parameters:[LeftTuple leftTuple, int[] varIndexes, boolean tupleMemoryEnabled]
+Method-name:setLeftTupleMemoryEnabled
+Method-returnType:void
+Method-parameters:[boolean tupleMemoryEnabled]
+FieldAccess:tupleMemoryEnabled
+Method-name:getNextLeftTupleSinkNode
+Method-returnType:LeftTupleSinkNode
+Method-parameters:[]
+FieldAccess:nextTupleSinkNode
+Method-name:setNextLeftTupleSinkNode
+Method-returnType:void
+Method-parameters:[final LeftTupleSinkNode next]
+FieldAccess:nextTupleSinkNode
+Method-name:getPreviousLeftTupleSinkNode
+Method-returnType:LeftTupleSinkNode
+Method-parameters:[]
+FieldAccess:previousTupleSinkNode
+Method-name:setPreviousLeftTupleSinkNode
+Method-returnType:void
+Method-parameters:[final LeftTupleSinkNode previous]
+FieldAccess:previousTupleSinkNode
+Class:UnificationNodeViewChangedEventListener
+Field:leftTuple
+Field:node
+Field:factHandle
+Field:variables
+Field:tupleMemoryEnabled
+Method-name:UnificationNodeViewChangedEventListener
+Method-returnType:null
+Method-parameters:[LeftTuple leftTuple, int[] variables, QueryElementNode node, boolean tupleMemoryEnabled]
+FieldAccess:leftTuple
+FieldAccess:variables
+FieldAccess:node
+FieldAccess:tupleMemoryEnabled
+Method-name:getFactHandle
+Method-returnType:InternalFactHandle
+Method-parameters:[]
+Method-name:setFactHandle
+Method-returnType:void
+Method-parameters:[InternalFactHandle factHandle]
+FieldAccess:factHandle
+Method-name:setVariables
+Method-returnType:void
+Method-parameters:[int[] variables]
+FieldAccess:variables
+Method-name:rowAdded
+Method-returnType:void
+Method-parameters:[final RuleImpl rule, LeftTuple resultLeftTuple, PropagationContext context, InternalWorkingMemory workingMemory]
+MethodInvocation:getTupleSink
+MethodInvocation:getQuery
+MethodInvocation:getRequiredDeclarations
+MethodInvocation:getObject
+FieldAccess:factHandle
+MethodInvocation:determineResultSize
+FieldAccess:variables
+MethodInvocation:getValue
+MethodInvocation:getObject
+MethodInvocation:get
+MethodInvocation:createQueryResultHandle
+MethodInvocation:createResultRightTuple
+MethodInvocation:isOpen
+MethodInvocation:isAbductive
+FieldAccess:length
+MethodInvocation:getAbducibleArgs
+FieldAccess:length
+MethodInvocation:getAbducibleArgs
+MethodInvocation:mapArgToParam
+MethodInvocation:getElements
+MethodInvocation:getElements
+MethodInvocation:abduce
+MethodInvocation:getObjectStore
+MethodInvocation:getHandleForObject
+MethodInvocation:getObject
+MethodInvocation:insert
+MethodInvocation:getTruthMaintenanceSystem
+MethodInvocation:getId
+MethodInvocation:getEqualityKey
+MethodInvocation:getBeliefSet
+MethodInvocation:getEqualityKey
+MethodInvocation:getObject
+MethodInvocation:isPositive
+MethodInvocation:insert
+MethodInvocation:getTruthMaintenanceSystem
+MethodInvocation:getId
+MethodInvocation:getLeftTupleSink
+MethodInvocation:createLeftTuple
+FieldAccess:leftTuple
+MethodInvocation:addInsert
+MethodInvocation:getResultLeftTupleSets
+MethodInvocation:setNodeDirtyWithoutNotify
+MethodInvocation:getQueryNodeMemory
+Method-name:determineResultSize
+Method-returnType:int
+Method-parameters:[QueryImpl query, DroolsQuery dquery]
+FieldAccess:length
+MethodInvocation:getElements
+MethodInvocation:isAbductive
+MethodInvocation:isReturnBound
+Method-name:createResultRightTuple
+Method-returnType:RightTuple
+Method-parameters:[QueryElementFactHandle resultHandle, LeftTuple resultLeftTuple, boolean open]
+MethodInvocation:setBlocked
+MethodInvocation:setContextObject
+MethodInvocation:setPropagationContext
+MethodInvocation:getPropagationContext
+Method-name:createQueryResultHandle
+Method-returnType:QueryElementFactHandle
+Method-parameters:[PropagationContext context, InternalWorkingMemory workingMemory, Object[] objects]
+MethodInvocation:getReaderContext
+MethodInvocation:get
+MethodInvocation:getNodeMemories
+MethodInvocation:getReaderContext
+MethodInvocation:getId
+MethodInvocation:get
+MethodInvocation:createTupleKey
+MethodInvocation:removeFirst
+MethodInvocation:getId
+MethodInvocation:getRecency
+MethodInvocation:getNextId
+MethodInvocation:getFactHandleFactory
+MethodInvocation:getNextRecency
+MethodInvocation:getFactHandleFactory
+Method-name:rowRemoved
+Method-returnType:void
+Method-parameters:[final RuleImpl rule, final LeftTuple resultLeftTuple, final PropagationContext context, final InternalWorkingMemory workingMemory]
+MethodInvocation:getContextObject
+MethodInvocation:setBlocked
+MethodInvocation:setContextObject
+MethodInvocation:getObject
+FieldAccess:factHandle
+MethodInvocation:getResultLeftTupleSets
+MethodInvocation:getFirstChild
+MethodInvocation:isStagedOnRight
+MethodInvocation:moveStagingFromRightToLeft
+MethodInvocation:getStagedTypeForQueries
+MethodInvocation:removeInsert
+MethodInvocation:removeUpdate
+MethodInvocation:addDelete
+Method-name:rowUpdated
+Method-returnType:void
+Method-parameters:[final RuleImpl rule, final LeftTuple resultLeftTuple, final PropagationContext context, final InternalWorkingMemory workingMemory]
+MethodInvocation:getContextObject
+MethodInvocation:getMemory
+MethodInvocation:setBlocked
+MethodInvocation:setContextObject
+MethodInvocation:getTupleSink
+MethodInvocation:getRequiredDeclarations
+MethodInvocation:get
+MethodInvocation:getObject
+FieldAccess:length
+MethodInvocation:getElements
+FieldAccess:variables
+MethodInvocation:getValue
+MethodInvocation:getObject
+MethodInvocation:get
+MethodInvocation:getFactHandle
+MethodInvocation:setRecency
+MethodInvocation:getNextRecency
+MethodInvocation:getFactHandleFactory
+MethodInvocation:setObject
+MethodInvocation:isOpen
+MethodInvocation:setBlocked
+MethodInvocation:setContextObject
+MethodInvocation:getResultLeftTupleSets
+MethodInvocation:getFirstChild
+MethodInvocation:getStagedTypeForQueries
+MethodInvocation:removeInsert
+MethodInvocation:removeUpdate
+MethodInvocation:addUpdate
+Method-name:getResults
+Method-returnType:List<?>
+Method-parameters:[]
+MethodInvocation:getCanonicalName
+MethodInvocation:getClass
+Method-name:getLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[InternalFactHandle factHandle, Sink sink, boolean leftTupleMemoryEnabled]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[final InternalFactHandle factHandle, final LeftTuple leftTuple, final Sink sink]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, Sink sink, PropagationContext pctx, boolean leftTupleMemoryEnabled]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, RightTuple rightTuple, Sink sink]
+Method-name:createLeftTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple leftTuple, RightTuple rightTuple, LeftTuple currentLeftChild, LeftTuple currentRightChild, Sink sink, boolean leftTupleMemoryEnabled]
+Method-name:calculateHashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object object]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:getId
+FieldAccess:leftInput
+MethodInvocation:getId
+MethodInvocation:equals
+Method-name:createMemory
+Method-returnType:QueryElementNodeMemory
+Method-parameters:[RuleBaseConfiguration config, InternalWorkingMemory wm]
+Class:QueryElementNodeMemory
+Field:node
+Field:smem
+Field:querySegmentMemory
+Field:resultLeftTuples
+Field:nodePosMaskBit
+Method-name:QueryElementNodeMemory
+Method-returnType:null
+Method-parameters:[QueryElementNode node]
+FieldAccess:node
+FieldAccess:resultLeftTuples
+MethodInvocation:size
+MethodInvocation:getSinkPropagator
+Method-name:getNode
+Method-returnType:QueryElementNode
+Method-parameters:[]
+FieldAccess:node
+Method-name:getNodeType
+Method-returnType:short
+Method-parameters:[]
+Method-name:setSegmentMemory
+Method-returnType:void
+Method-parameters:[SegmentMemory smem]
+FieldAccess:smem
+Method-name:getSegmentMemory
+Method-returnType:SegmentMemory
+Method-parameters:[]
+Method-name:getQuerySegmentMemory
+Method-returnType:SegmentMemory
+Method-parameters:[]
+Method-name:setQuerySegmentMemory
+Method-returnType:void
+Method-parameters:[SegmentMemory querySegmentMemory]
+FieldAccess:querySegmentMemory
+Method-name:getResultLeftTuples
+Method-returnType:TupleSets<LeftTuple>
+Method-parameters:[]
+Method-name:correctMemoryOnSinksChanged
+Method-returnType:void
+Method-parameters:[TerminalNode removingTN]
+MethodInvocation:isTipNode
+MethodInvocation:addTo
+FieldAccess:resultLeftTuples
+FieldAccess:resultLeftTuples
+MethodInvocation:isTipNode
+MethodInvocation:addTo
+FieldAccess:resultLeftTuples
+FieldAccess:resultLeftTuples
+Method-name:getNodePosMaskBit
+Method-returnType:long
+Method-parameters:[]
+Method-name:setNodePosMaskBit
+Method-returnType:void
+Method-parameters:[long segmentPos]
+FieldAccess:nodePosMaskBit
+Method-name:setNodeDirtyWithoutNotify
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:updateDirtyNodeMask
+Method-name:setNodeCleanWithoutNotify
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:updateCleanNodeMask
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:resetAll
+Class:QueryTupleSets
+Method-name:getPreviousTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple tuple]
+MethodInvocation:getRightParentPrevious
+Method-name:setPreviousTuple
+Method-returnType:void
+Method-parameters:[LeftTuple tuple, LeftTuple stagedPrevious]
+MethodInvocation:setRightParentPrevious
+Method-name:getNextTuple
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple tuple]
+MethodInvocation:getRightParentNext
+Method-name:setNextTuple
+Method-returnType:void
+Method-parameters:[LeftTuple tuple, LeftTuple stagedNext]
+MethodInvocation:setRightParentNext
+Method-name:setStagedType
+Method-returnType:void
+Method-parameters:[LeftTuple tuple, short type]
+MethodInvocation:setStagedTypeForQueries
+Method-name:getStagedType
+Method-returnType:short
+Method-parameters:[LeftTuple tuple]
+MethodInvocation:getStagedTypeForQueries
+Method-name:addTo
+Method-returnType:void
+Method-parameters:[TupleSets<LeftTuple> tupleSets]
+MethodInvocation:addAllInsertsTo
+MethodInvocation:addAllDeletesTo
+MethodInvocation:addAllUpdatesTo
+Method-name:addAllInsertsTo
+Method-returnType:void
+Method-parameters:[TupleSets<LeftTuple> tupleSets]
+MethodInvocation:getInsertFirst
+MethodInvocation:getNextTuple
+MethodInvocation:clear
+MethodInvocation:addInsert
+MethodInvocation:setInsertFirst
+Method-name:addAllUpdatesTo
+Method-returnType:void
+Method-parameters:[TupleSets<LeftTuple> tupleSets]
+MethodInvocation:getUpdateFirst
+MethodInvocation:getNextTuple
+MethodInvocation:clear
+MethodInvocation:addUpdate
+MethodInvocation:setUpdateFirst
+Method-name:addAllDeletesTo
+Method-returnType:void
+Method-parameters:[TupleSets<LeftTuple> tupleSets]
+MethodInvocation:getDeleteFirst
+MethodInvocation:getNextTuple
+MethodInvocation:clear
+MethodInvocation:addDelete
+MethodInvocation:setDeleteFirst
+Method-name:clear
+Method-returnType:void
+Method-parameters:[LeftTuple leftTuple]
+MethodInvocation:setStagedType
+MethodInvocation:setPreviousTuple
+MethodInvocation:setNextTuple
+Method-name:getObjectTypeNode
+Method-returnType:ObjectTypeNode
+Method-parameters:[]
+MethodInvocation:getObjectTypeNode
+Method-name:createPeer
+Method-returnType:LeftTuple
+Method-parameters:[LeftTuple original]
+MethodInvocation:initPeer
+MethodInvocation:setPeer
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+FieldAccess:id
+MethodInvocation:getQueryName
+Method-name:attach
+Method-returnType:void
+Method-parameters:[BuildContext context]
+MethodInvocation:addTupleSink
+FieldAccess:leftInput
+Method-name:doRemove
+Method-returnType:boolean
+Method-parameters:[RuleRemovalContext context, ReteooBuilder builder]
+MethodInvocation:isInUse
+MethodInvocation:removeTupleSink
+MethodInvocation:getLeftTupleSource

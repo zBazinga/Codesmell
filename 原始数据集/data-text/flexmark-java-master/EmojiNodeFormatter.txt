@@ -1,0 +1,24 @@
+Class:EmojiNodeFormatter
+Method-name:EmojiNodeFormatter
+Method-returnType:null
+Method-parameters:[DataHolder options]
+Method-name:getNodeClasses
+Method-returnType:Set<Class<?>>
+Method-parameters:[]
+Method-name:getNodeFormattingHandlers
+Method-returnType:Set<NodeFormattingHandler<?>>
+Method-parameters:[]
+MethodInvocation:add
+Method-name:render
+Method-returnType:void
+Method-parameters:[Emoji node, NodeFormatterContext context, MarkdownWriter markdown]
+MethodInvocation:append
+MethodInvocation:getOpeningMarker
+MethodInvocation:appendNonTranslating
+MethodInvocation:getText
+MethodInvocation:append
+MethodInvocation:getClosingMarker
+Class:Factory
+Method-name:create
+Method-returnType:NodeFormatter
+Method-parameters:[@NotNull DataHolder options]

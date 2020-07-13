@@ -1,0 +1,94 @@
+Class:ClassDataItem
+Field:staticFields
+Field:instanceFields
+Field:directMethods
+Field:virtualMethods
+Method-name:place
+Method-returnType:int
+Method-parameters:[int offset]
+MethodInvocation:lengthOfUleb128
+MethodInvocation:size
+MethodInvocation:lengthOfUleb128
+MethodInvocation:size
+MethodInvocation:lengthOfUleb128
+MethodInvocation:size
+MethodInvocation:lengthOfUleb128
+MethodInvocation:size
+MethodInvocation:placeField
+MethodInvocation:placeField
+MethodInvocation:placeMethod
+MethodInvocation:placeMethod
+Method-name:placeMethod
+Method-returnType:int
+Method-parameters:[int offset, List<EncodedMethod> methods]
+MethodInvocation:size
+MethodInvocation:lengthOfUleb128
+MethodInvocation:lengthOfUleb128
+MethodInvocation:lengthOfUleb128
+Method-name:placeField
+Method-returnType:int
+Method-parameters:[int offset, List<EncodedField> fields]
+MethodInvocation:size
+MethodInvocation:lengthOfUleb128
+MethodInvocation:lengthOfUleb128
+Method-name:write
+Method-returnType:void
+Method-parameters:[DataOut out]
+MethodInvocation:uleb128
+MethodInvocation:size
+MethodInvocation:uleb128
+MethodInvocation:size
+MethodInvocation:uleb128
+MethodInvocation:size
+MethodInvocation:uleb128
+MethodInvocation:size
+MethodInvocation:writeField
+MethodInvocation:writeField
+MethodInvocation:writeMethod
+MethodInvocation:writeMethod
+Method-name:writeMethod
+Method-returnType:void
+Method-parameters:[DataOut out, List<EncodedMethod> methods]
+MethodInvocation:size
+MethodInvocation:uleb128
+MethodInvocation:uleb128
+MethodInvocation:uleb128
+Method-name:writeField
+Method-returnType:void
+Method-parameters:[DataOut out, List<EncodedField> fields]
+MethodInvocation:size
+MethodInvocation:uleb128
+MethodInvocation:uleb128
+Method-name:getMemberSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+Method-name:prepare
+Method-returnType:void
+Method-parameters:[ConstPool cp]
+Method-name:compare
+Method-returnType:int
+Method-parameters:[EncodedField arg0, EncodedField arg1]
+MethodInvocation:compareTo
+Method-name:compare
+Method-returnType:int
+Method-parameters:[EncodedMethod arg0, EncodedMethod arg1]
+MethodInvocation:compareTo
+MethodInvocation:sort
+MethodInvocation:sort
+MethodInvocation:sort
+MethodInvocation:sort
+Class:EncodedField
+Field:accessFlags
+Field:field
+Field:staticValue
+Field:annotationSetItem
+Class:EncodedMethod
+Field:accessFlags
+Field:method
+Field:code
+Field:annotationSetItem
+Field:parameterAnnotation

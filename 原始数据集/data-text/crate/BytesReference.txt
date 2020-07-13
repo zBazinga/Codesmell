@@ -1,0 +1,174 @@
+Class:BytesReference
+Field:hash
+Method-name:bytes
+Method-returnType:BytesReference
+Method-parameters:[XContentBuilder xContentBuilder]
+MethodInvocation:close
+MethodInvocation:getOutputStream
+MethodInvocation:toByteArray
+MethodInvocation:bytes
+Method-name:get
+Method-returnType:byte
+Method-parameters:[int index]
+Method-name:indexOf
+Method-returnType:int
+Method-parameters:[byte marker, int from]
+MethodInvocation:length
+MethodInvocation:get
+Method-name:length
+Method-returnType:int
+Method-parameters:[]
+Method-name:slice
+Method-returnType:BytesReference
+Method-parameters:[int from, int length]
+Method-name:ramBytesUsed
+Method-returnType:long
+Method-parameters:[]
+Method-name:streamInput
+Method-returnType:StreamInput
+Method-parameters:[]
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[OutputStream os]
+MethodInvocation:iterator
+MethodInvocation:next
+MethodInvocation:write
+Method-name:utf8ToString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:utf8ToString
+MethodInvocation:toBytesRef
+Method-name:toBytesRef
+Method-returnType:BytesRef
+Method-parameters:[]
+Method-name:iterator
+Method-returnType:BytesRefIterator
+Method-parameters:[]
+Field:ref
+MethodInvocation:length
+MethodInvocation:toBytesRef
+Method-name:next
+Method-returnType:BytesRef
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:compareIterators
+MethodInvocation:bytesEquals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:next
+MethodInvocation:intValue
+Method-name:toBytes
+Method-returnType:byte[]
+Method-parameters:[BytesReference reference]
+MethodInvocation:toBytesRef
+FieldAccess:bytes
+MethodInvocation:deepCopyOf
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[final BytesReference other]
+MethodInvocation:compareIterators
+Method-name:compareIterators
+Method-returnType:int
+Method-parameters:[final BytesReference a, final BytesReference b, final ToIntBiFunction<BytesRef,BytesRef> f]
+MethodInvocation:min
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:iterator
+MethodInvocation:iterator
+MethodInvocation:next
+MethodInvocation:next
+MethodInvocation:clone
+MethodInvocation:clone
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:applyAsInt
+MethodInvocation:clone
+MethodInvocation:next
+MethodInvocation:clone
+MethodInvocation:next
+MethodInvocation:min
+MethodInvocation:applyAsInt
+MethodInvocation:advance
+MethodInvocation:advance
+MethodInvocation:length
+MethodInvocation:length
+Method-name:advance
+Method-returnType:void
+Method-parameters:[final BytesRef ref, final int length]
+Method-name:mapping
+Method-returnType:CreateIndexRequest
+Method-parameters:[String type, XContentType xContentType, CreateIndexRequest createIndexRequest]
+MethodInvocation:containsKey
+MethodInvocation:mappings
+MethodInvocation:requireNonNull
+MethodInvocation:put
+MethodInvocation:mappings
+MethodInvocation:convertToJson
+Class:MarkSupportingStreamInputWrapper
+Field:reference
+Field:input
+Field:mark
+Method-name:MarkSupportingStreamInputWrapper
+Method-returnType:null
+Method-parameters:[BytesReference reference]
+FieldAccess:reference
+FieldAccess:input
+MethodInvocation:iterator
+MethodInvocation:length
+Method-name:readByte
+Method-returnType:byte
+Method-parameters:[]
+MethodInvocation:readByte
+Method-name:readBytes
+Method-returnType:void
+Method-parameters:[byte[] b, int offset, int len]
+MethodInvocation:readBytes
+Method-name:read
+Method-returnType:int
+Method-parameters:[byte[] b, int off, int len]
+MethodInvocation:read
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+Method-name:read
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:read
+Method-name:available
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:available
+Method-name:ensureCanReadBytes
+Method-returnType:void
+Method-parameters:[int length]
+MethodInvocation:ensureCanReadBytes
+Method-name:reset
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:iterator
+MethodInvocation:length
+MethodInvocation:skip
+Method-name:markSupported
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:mark
+Method-returnType:void
+Method-parameters:[int readLimit]
+FieldAccess:mark
+MethodInvocation:getOffset
+Method-name:skip
+Method-returnType:long
+Method-parameters:[long n]
+MethodInvocation:skip
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:toBytesRef
+MethodInvocation:value

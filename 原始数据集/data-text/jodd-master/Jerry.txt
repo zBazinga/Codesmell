@@ -1,0 +1,472 @@
+Class:Jerry
+Class:NodeList
+Method-name:NodeList
+Method-returnType:null
+Method-parameters:[final int initialCapacity]
+Method-name:NodeList
+Method-returnType:null
+Method-parameters:[]
+Method-name:add
+Method-returnType:boolean
+Method-parameters:[final Node o]
+Method-name:jerry
+Method-returnType:Jerry
+Method-parameters:[final char[] content]
+MethodInvocation:parse
+MethodInvocation:jerry
+Method-name:jerry
+Method-returnType:Jerry
+Method-parameters:[final String content]
+MethodInvocation:parse
+MethodInvocation:jerry
+Class:JerryParser
+Field:domBuilder
+Method-name:JerryParser
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:domBuilder
+Method-name:JerryParser
+Method-returnType:null
+Method-parameters:[final DOMBuilder domBuilder]
+FieldAccess:domBuilder
+Method-name:getDOMBuilder
+Method-returnType:DOMBuilder
+Method-parameters:[]
+Method-name:parse
+Method-returnType:Jerry
+Method-parameters:[final char[] content]
+MethodInvocation:parse
+Method-name:parse
+Method-returnType:Jerry
+Method-parameters:[String content]
+MethodInvocation:parse
+Method-name:jerry
+Method-returnType:JerryParser
+Method-parameters:[]
+Method-name:jerry
+Method-returnType:JerryParser
+Method-parameters:[final DOMBuilder domBuilder]
+Field:parent
+Field:nodes
+Field:builder
+Method-name:Jerry
+Method-returnType:null
+Method-parameters:[final DOMBuilder builder, final Node... nodes]
+FieldAccess:parent
+FieldAccess:nodes
+FieldAccess:builder
+Method-name:Jerry
+Method-returnType:null
+Method-parameters:[final Jerry parent, final Node... nodes]
+FieldAccess:parent
+FieldAccess:nodes
+FieldAccess:builder
+Method-name:Jerry
+Method-returnType:null
+Method-parameters:[final Jerry parent, final Node[] nodes1, final Node[] nodes2]
+FieldAccess:parent
+FieldAccess:nodes
+MethodInvocation:join
+FieldAccess:builder
+Method-name:Jerry
+Method-returnType:null
+Method-parameters:[final Jerry parent, final List<Node> nodeList]
+MethodInvocation:toArray
+Method-name:length
+Method-returnType:int
+Method-parameters:[]
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+Method-name:get
+Method-returnType:Node
+Method-parameters:[final int index]
+Method-name:get
+Method-returnType:Node[]
+Method-parameters:[]
+Method-name:children
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:getChildElements
+MethodInvocation:addAll
+Method-name:contents
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:getChildNodes
+MethodInvocation:addAll
+Method-name:parent
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getParentNode
+Method-name:siblings
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:getChildElements
+MethodInvocation:getParentNode
+MethodInvocation:add
+Method-name:next
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getNextSiblingElement
+Method-name:nextAll
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:getNextSiblingElement
+MethodInvocation:add
+MethodInvocation:getNextSiblingElement
+Method-name:prev
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:add
+MethodInvocation:getPreviousSiblingElement
+Method-name:prevAll
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:getPreviousSiblingElement
+MethodInvocation:add
+MethodInvocation:getPreviousSiblingElement
+Method-name:find
+Method-returnType:Jerry
+Method-parameters:[final String cssSelector]
+MethodInvocation:createNodeSelector
+MethodInvocation:select
+MethodInvocation:addAll
+Method-name:s
+Method-returnType:Jerry
+Method-parameters:[final String cssSelector]
+MethodInvocation:find
+Method-name:createNodeSelector
+Method-returnType:NodeSelector
+Method-parameters:[final Node node]
+Method-name:each
+Method-returnType:Jerry
+Method-parameters:[final JerryFunction function]
+MethodInvocation:onNode
+Method-name:eachNode
+Method-returnType:Jerry
+Method-parameters:[final JerryNodeFunction function]
+MethodInvocation:onNode
+Method-name:add
+Method-returnType:Jerry
+Method-parameters:[final String selector]
+FieldAccess:nodes
+MethodInvocation:find
+MethodInvocation:root
+Method-name:end
+Method-returnType:Jerry
+Method-parameters:[]
+Method-name:not
+Method-returnType:Jerry
+Method-parameters:[final String cssSelector]
+FieldAccess:nodes
+MethodInvocation:find
+MethodInvocation:root
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:root
+Method-returnType:Jerry
+Method-parameters:[]
+FieldAccess:parent
+Method-name:first
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:add
+Method-name:last
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:add
+Method-name:eq
+Method-returnType:Jerry
+Method-parameters:[final int value]
+MethodInvocation:add
+Method-name:gt
+Method-returnType:Jerry
+Method-parameters:[final int value]
+MethodInvocation:add
+Method-name:lt
+Method-returnType:Jerry
+Method-parameters:[final int value]
+MethodInvocation:add
+Method-name:is
+Method-returnType:boolean
+Method-parameters:[final String cssSelectors]
+MethodInvocation:getParentNode
+MethodInvocation:createNodeSelector
+MethodInvocation:select
+Method-name:filter
+Method-returnType:Jerry
+Method-parameters:[final String cssSelectors]
+MethodInvocation:getParentNode
+MethodInvocation:createNodeSelector
+MethodInvocation:select
+MethodInvocation:add
+Method-name:filter
+Method-returnType:Jerry
+Method-parameters:[final JerryFunction jerryFunction]
+MethodInvocation:getParentNode
+MethodInvocation:onNode
+MethodInvocation:add
+Method-name:has
+Method-returnType:Jerry
+Method-parameters:[final String cssSelectors]
+MethodInvocation:createNodeSelector
+MethodInvocation:select
+MethodInvocation:isEmpty
+MethodInvocation:add
+Method-name:attr
+Method-returnType:String
+Method-parameters:[final String name]
+MethodInvocation:getAttribute
+Method-name:attr
+Method-returnType:Jerry
+Method-parameters:[final String name, final String value]
+MethodInvocation:setAttribute
+Method-name:removeAttr
+Method-returnType:Jerry
+Method-parameters:[final String name]
+MethodInvocation:removeAttribute
+Method-name:css
+Method-returnType:String
+Method-parameters:[String propertyName]
+MethodInvocation:fromCamelCase
+MethodInvocation:getAttribute
+MethodInvocation:createPropertiesMap
+MethodInvocation:get
+Method-name:css
+Method-returnType:Jerry
+Method-parameters:[String propertyName, final String value]
+MethodInvocation:fromCamelCase
+MethodInvocation:getAttribute
+MethodInvocation:createPropertiesMap
+MethodInvocation:length
+MethodInvocation:remove
+MethodInvocation:put
+MethodInvocation:generateAttributeValue
+MethodInvocation:setAttribute
+Method-name:css
+Method-returnType:Jerry
+Method-parameters:[final String... css]
+MethodInvocation:getAttribute
+MethodInvocation:createPropertiesMap
+MethodInvocation:fromCamelCase
+MethodInvocation:length
+MethodInvocation:remove
+MethodInvocation:put
+MethodInvocation:generateAttributeValue
+MethodInvocation:setAttribute
+Method-name:addClass
+Method-returnType:Jerry
+Method-parameters:[final String... classNames]
+MethodInvocation:getAttribute
+MethodInvocation:createPropertiesSet
+MethodInvocation:add
+MethodInvocation:generateAttributeValue
+MethodInvocation:setAttribute
+Method-name:hasClass
+Method-returnType:boolean
+Method-parameters:[final String... classNames]
+MethodInvocation:getAttribute
+MethodInvocation:createPropertiesSet
+MethodInvocation:contains
+Method-name:removeClass
+Method-returnType:Jerry
+Method-parameters:[final String... classNames]
+MethodInvocation:getAttribute
+MethodInvocation:createPropertiesSet
+MethodInvocation:remove
+MethodInvocation:generateAttributeValue
+MethodInvocation:setAttribute
+Method-name:toggleClass
+Method-returnType:Jerry
+Method-parameters:[final String... classNames]
+MethodInvocation:getAttribute
+MethodInvocation:createPropertiesSet
+MethodInvocation:contains
+MethodInvocation:remove
+MethodInvocation:add
+MethodInvocation:generateAttributeValue
+MethodInvocation:setAttribute
+Method-name:text
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:getTextContent
+MethodInvocation:toString
+Method-name:text
+Method-returnType:Jerry
+Method-parameters:[String text]
+MethodInvocation:removeAllChilds
+MethodInvocation:getOwnerDocument
+MethodInvocation:addChild
+Method-name:html
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getInnerHtml
+Method-name:htmlAll
+Method-returnType:String
+Method-parameters:[final boolean setIncluded]
+MethodInvocation:append
+MethodInvocation:getHtml
+MethodInvocation:getInnerHtml
+MethodInvocation:toString
+Method-name:html
+Method-returnType:Jerry
+Method-parameters:[String html]
+MethodInvocation:parse
+MethodInvocation:removeAllChilds
+MethodInvocation:clone
+MethodInvocation:addChild
+MethodInvocation:getChildNodes
+Method-name:append
+Method-returnType:Jerry
+Method-parameters:[String html]
+MethodInvocation:parse
+MethodInvocation:clone
+MethodInvocation:addChild
+MethodInvocation:getChildNodes
+Method-name:prepend
+Method-returnType:Jerry
+Method-parameters:[String html]
+MethodInvocation:parse
+MethodInvocation:clone
+MethodInvocation:insertChild
+MethodInvocation:getChildNodes
+Method-name:before
+Method-returnType:Jerry
+Method-parameters:[String html]
+MethodInvocation:parse
+MethodInvocation:clone
+MethodInvocation:insertBefore
+MethodInvocation:getChildNodes
+Method-name:after
+Method-returnType:Jerry
+Method-parameters:[String html]
+MethodInvocation:parse
+MethodInvocation:clone
+MethodInvocation:insertAfter
+MethodInvocation:getChildNodes
+Method-name:replaceWith
+Method-returnType:Jerry
+Method-parameters:[String html]
+MethodInvocation:parse
+MethodInvocation:getParentNode
+MethodInvocation:clone
+MethodInvocation:getSiblingIndex
+MethodInvocation:insertChild
+MethodInvocation:getFirstChild
+MethodInvocation:detachFromParent
+Method-name:remove
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:detachFromParent
+Method-name:detach
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:detachFromParent
+Method-name:empty
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:removeAllChilds
+Method-name:wrap
+Method-returnType:Jerry
+Method-parameters:[String html]
+MethodInvocation:parse
+MethodInvocation:clone
+MethodInvocation:hasChildNodes
+MethodInvocation:getFirstChild
+MethodInvocation:getParentNode
+MethodInvocation:getSiblingIndex
+MethodInvocation:addChild
+MethodInvocation:insertChild
+MethodInvocation:getFirstChild
+Method-name:unwrap
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:getParentNode
+MethodInvocation:getParentNode
+MethodInvocation:getChildNodes
+MethodInvocation:getSiblingIndex
+MethodInvocation:insertChild
+MethodInvocation:detachFromParent
+Method-name:iterator
+Method-returnType:Iterator<Jerry>
+Method-parameters:[]
+Field:index
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:next
+Method-returnType:Jerry
+Method-parameters:[]
+MethodInvocation:hasNext
+MethodInvocation:get
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]
+Method-name:form
+Method-returnType:Jerry
+Method-parameters:[final String formCssSelector, final JerryFormHandler jerryFormHandler]
+MethodInvocation:find
+MethodInvocation:each
+MethodInvocation:s
+MethodInvocation:attr
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:hasAttribute
+MethodInvocation:attr
+MethodInvocation:attr
+MethodInvocation:get
+MethodInvocation:append
+MethodInvocation:put
+MethodInvocation:each
+MethodInvocation:s
+MethodInvocation:attr
+MethodInvocation:each
+MethodInvocation:s
+MethodInvocation:hasAttribute
+MethodInvocation:attr
+MethodInvocation:get
+MethodInvocation:append
+MethodInvocation:put
+MethodInvocation:each
+MethodInvocation:s
+MethodInvocation:attr
+MethodInvocation:text
+MethodInvocation:put
+MethodInvocation:onForm
+Method-name:createPropertiesSet
+Method-returnType:Set<String>
+Method-parameters:[final String attrValue, final char propertiesDelimiter]
+MethodInvocation:splitc
+MethodInvocation:addAll
+Method-name:generateAttributeValue
+Method-returnType:String
+Method-parameters:[final Set<String> set, final char propertiesDelimiter]
+MethodInvocation:size
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:createPropertiesMap
+Method-returnType:Map<String,String>
+Method-parameters:[final String attrValue, final char propertiesDelimiter, final char valueDelimiter]
+MethodInvocation:splitc
+MethodInvocation:indexOf
+MethodInvocation:trim
+MethodInvocation:substring
+MethodInvocation:trim
+MethodInvocation:substring
+MethodInvocation:put
+Method-name:generateAttributeValue
+Method-returnType:String
+Method-parameters:[final Map<String,String> map, final char propertiesDelimiter, final char valueDelimiter]
+MethodInvocation:size
+MethodInvocation:entrySet
+MethodInvocation:append
+MethodInvocation:getKey
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getValue
+MethodInvocation:append
+MethodInvocation:toString

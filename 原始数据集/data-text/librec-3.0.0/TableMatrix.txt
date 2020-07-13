@@ -1,0 +1,149 @@
+Class:TableMatrix
+Field:table
+Field:size
+Field:rowSize
+Field:columnSize
+Method-name:TableMatrix
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:create
+Method-name:TableMatrix
+Method-returnType:null
+Method-parameters:[int numColmns]
+MethodInvocation:put
+Method-name:TableMatrix
+Method-returnType:null
+Method-parameters:[int numRows, int numColmns]
+MethodInvocation:put
+Method-name:init
+Method-returnType:void
+Method-parameters:[double initVal]
+FieldAccess:rowSize
+MethodInvocation:rowSize
+FieldAccess:columnSize
+MethodInvocation:columnSize
+FieldAccess:rowSize
+FieldAccess:columnSize
+MethodInvocation:put
+Method-name:init
+Method-returnType:void
+Method-parameters:[double mean, double sigma]
+FieldAccess:rowSize
+MethodInvocation:rowSize
+FieldAccess:columnSize
+MethodInvocation:columnSize
+FieldAccess:rowSize
+FieldAccess:columnSize
+MethodInvocation:put
+MethodInvocation:gaussian
+Method-name:get
+Method-returnType:double
+Method-parameters:[int id]
+MethodInvocation:contains
+MethodInvocation:get
+Method-name:get
+Method-returnType:double
+Method-parameters:[int userId, int itemId]
+MethodInvocation:contains
+MethodInvocation:get
+Method-name:set
+Method-returnType:double
+Method-parameters:[int itemId, double value]
+MethodInvocation:put
+Method-name:set
+Method-returnType:double
+Method-parameters:[int userId, int itemId, double value]
+MethodInvocation:put
+Method-name:add
+Method-returnType:double
+Method-parameters:[double value]
+MethodInvocation:set
+MethodInvocation:columnSize
+Method-name:add
+Method-returnType:double
+Method-parameters:[int id, double value]
+MethodInvocation:contains
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:set
+Method-name:add
+Method-returnType:double
+Method-parameters:[int userId, int itemId, double value]
+MethodInvocation:contains
+MethodInvocation:set
+MethodInvocation:get
+MethodInvocation:set
+Method-name:reomve
+Method-returnType:double
+Method-parameters:[int userId, int itemId]
+MethodInvocation:remove
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:rowSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:rowKeySet
+Method-name:columnSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:columnKeySet
+Method-name:iterator
+Method-returnType:Iterator<Table.Cell<Integer,Integer,Double>>
+Method-parameters:[]
+MethodInvocation:cellSet
+MethodInvocation:iterator
+Method-name:inner
+Method-returnType:double
+Method-parameters:[List<Double> vec1, List<Double> vec2]
+Method-name:rowMult
+Method-returnType:double
+Method-parameters:[TableMatrix m, int mrow, TableMatrix n, int nrow]
+Method-name:row
+Method-returnType:List<Double>
+Method-parameters:[int rowId]
+MethodInvocation:row
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:add
+Method-name:getColumnVector
+Method-returnType:List<Double>
+Method-parameters:[int columnId]
+MethodInvocation:column
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:add
+Method-name:iterRowMapdata
+Method-returnType:void
+Method-parameters:[Map<Integer,Double> mapData]
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:addRow
+Method-returnType:void
+Method-parameters:[int rowNum]
+MethodInvocation:addRow
+Method-name:addRow
+Method-returnType:void
+Method-parameters:[int rowNum, double initValue]
+MethodInvocation:rowSize
+MethodInvocation:columnSize
+MethodInvocation:set
+Method-name:setRowToOneValue
+Method-returnType:void
+Method-parameters:[int rowId, double value]
+MethodInvocation:columnSize
+MethodInvocation:set
+Method-name:retrainUsersAndItems
+Method-returnType:void
+Method-parameters:[UserItemBaseline userItemBaseline]
+MethodInvocation:iterator
+MethodInvocation:hasNext
+MethodInvocation:next
+MethodInvocation:getRowKey
+MethodInvocation:getColumnKey
+MethodInvocation:retrainUser
+MethodInvocation:retrainItem

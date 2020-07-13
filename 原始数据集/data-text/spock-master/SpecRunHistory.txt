@@ -1,0 +1,92 @@
+Class:SpecRunHistory
+Field:MAX_CONFIDENCE
+Field:specName
+Field:data
+Method-name:SpecRunHistory
+Method-returnType:null
+Method-parameters:[String specName]
+FieldAccess:specName
+Method-name:getSpecName
+Method-returnType:String
+Method-parameters:[]
+Method-name:loadFromDisk
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getDataFile
+MethodInvocation:readObject
+MethodInvocation:initCause
+MethodInvocation:closeQuietly
+Method-name:saveToDisk
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getDataFile
+MethodInvocation:createDirectory
+MethodInvocation:getParentFile
+MethodInvocation:writeObject
+MethodInvocation:closeQuietly
+Method-name:sortFeatures
+Method-returnType:void
+Method-parameters:[SpecInfo spec]
+MethodInvocation:sortFeatures
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:get
+MethodInvocation:getName
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[SpecRunHistory other]
+MethodInvocation:compareTo
+Method-name:collectFeatureData
+Method-returnType:void
+Method-parameters:[FeatureInfo feature, long duration, boolean failed]
+MethodInvocation:put
+MethodInvocation:getName
+MethodInvocation:get
+MethodInvocation:getName
+MethodInvocation:min
+MethodInvocation:put
+MethodInvocation:getName
+Method-name:collectSpecData
+Method-returnType:void
+Method-parameters:[SpecInfo spec, long duration]
+MethodInvocation:removeObsoleteFeaturesFromData
+MethodInvocation:computeSpecConfidence
+Method-name:removeObsoleteFeaturesFromData
+Method-returnType:void
+Method-parameters:[SpecInfo spec]
+MethodInvocation:getAllFeatures
+MethodInvocation:extractNames
+MethodInvocation:retainAll
+MethodInvocation:keySet
+MethodInvocation:retainAll
+MethodInvocation:keySet
+Method-name:computeSpecConfidence
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:size
+MethodInvocation:divide
+Method-name:extractNames
+Method-returnType:Set<String>
+Method-parameters:[List<FeatureInfo> features]
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:getName
+Method-name:getDataFile
+Method-returnType:File
+Method-parameters:[]
+MethodInvocation:getFileInSpockUserHome
+Method-name:safeLoadFromDisk
+Method-returnType:void
+Method-parameters:[OptimizeRunOrderExtension optimizeRunOrderExtension]
+MethodInvocation:loadFromDisk
+Class:Data
+Field:specConfidence
+Field:specDuration
+Field:featureConfidences
+Field:featureDurations

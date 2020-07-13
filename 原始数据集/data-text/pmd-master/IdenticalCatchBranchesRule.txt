@@ -1,0 +1,80 @@
+Class:IdenticalCatchBranchesRule
+Method-name:areEquivalent
+Method-returnType:boolean
+Method-parameters:[ASTCatchStatement st1, ASTCatchStatement st2]
+MethodInvocation:hasSameSubTree
+MethodInvocation:getBody
+MethodInvocation:getBody
+MethodInvocation:getExceptionName
+MethodInvocation:getExceptionName
+Method-name:equivalenceClasses
+Method-returnType:Set<List<ASTCatchStatement>>
+Method-parameters:[List<ASTCatchStatement> catches]
+MethodInvocation:size
+MethodInvocation:isEmpty
+MethodInvocation:add
+MethodInvocation:newEquivClass
+MethodInvocation:areEquivalent
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:newEquivClass
+Method-name:getCaughtExceptionsAsString
+Method-returnType:String
+Method-parameters:[ASTCatchStatement stmt]
+MethodInvocation:getCaughtExceptionTypeNodes
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getTypeImage
+MethodInvocation:replace
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:toString
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTTryStatement node, Object data]
+MethodInvocation:getCatchClauses
+MethodInvocation:equivalenceClasses
+MethodInvocation:size
+MethodInvocation:getCaughtExceptionsAsString
+MethodInvocation:get
+MethodInvocation:size
+MethodInvocation:addViolation
+MethodInvocation:get
+Method-name:hasSameSubTree
+Method-returnType:boolean
+Method-parameters:[Node node1, Node node2, String exceptionName1, String exceptionName2]
+MethodInvocation:getNumChildren
+MethodInvocation:getNumChildren
+MethodInvocation:getNumChildren
+MethodInvocation:basicEquivalence
+MethodInvocation:getChild
+MethodInvocation:getChild
+MethodInvocation:hasSameSubTree
+MethodInvocation:getChild
+MethodInvocation:getChild
+Method-name:basicEquivalence
+Method-returnType:boolean
+Method-parameters:[Node node1, Node node2, String varName1, String varName2]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:getImage
+MethodInvocation:getImage
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:isNoMethodName
+MethodInvocation:isNoMethodName
+Method-name:isNoMethodName
+Method-returnType:boolean
+Method-parameters:[Node name]
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:getParent
+MethodInvocation:getNumChildren
+MethodInvocation:getParent
+MethodInvocation:getIndexInParent
+MethodInvocation:getChild
+MethodInvocation:getParent
+MethodInvocation:getIndexInParent
+MethodInvocation:isArguments

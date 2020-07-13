@@ -1,0 +1,63 @@
+Class:CombinedDifference
+Field:readByMe
+Field:read
+Field:received
+Field:messages
+Field:otherUpdates
+Method-name:getReadByMe
+Method-returnType:HashMap<Peer,ReadByMeValue>
+Method-parameters:[]
+Method-name:getRead
+Method-returnType:HashMap<Peer,Long>
+Method-parameters:[]
+Method-name:getReceived
+Method-returnType:HashMap<Peer,Long>
+Method-parameters:[]
+Method-name:getMessages
+Method-returnType:HashMap<Peer,List<UpdateMessage>>
+Method-parameters:[]
+Method-name:getOtherUpdates
+Method-returnType:List<Update>
+Method-parameters:[]
+Method-name:putReadByMe
+Method-returnType:void
+Method-parameters:[Peer peer, long date, int counter]
+MethodInvocation:containsKey
+FieldAccess:date
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+Method-name:putRead
+Method-returnType:void
+Method-parameters:[Peer peer, long date]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:put
+Method-name:putReceived
+Method-returnType:void
+Method-parameters:[Peer peer, long date]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:put
+Method-name:put
+Method-returnType:void
+Method-parameters:[HashMap<Peer,Long> map, Peer peer, long date]
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+Class:ReadByMeValue
+Field:date
+Field:counter
+Method-name:ReadByMeValue
+Method-returnType:null
+Method-parameters:[long date, int counter]
+FieldAccess:date
+FieldAccess:counter
+Method-name:getDate
+Method-returnType:long
+Method-parameters:[]
+Method-name:getCounter
+Method-returnType:int
+Method-parameters:[]

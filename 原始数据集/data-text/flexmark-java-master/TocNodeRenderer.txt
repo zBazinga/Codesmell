@@ -1,0 +1,29 @@
+Class:TocNodeRenderer
+Field:options
+Field:haveTitle
+Method-name:TocNodeRenderer
+Method-returnType:null
+Method-parameters:[DataHolder options]
+FieldAccess:haveTitle
+MethodInvocation:contains
+FieldAccess:options
+Method-name:getNodeRenderingHandlers
+Method-returnType:Set<NodeRenderingHandler<?>>
+Method-parameters:[]
+MethodInvocation:add
+Method-name:render
+Method-returnType:void
+Method-parameters:[TocBlock node, NodeRendererContext context, HtmlWriter html]
+MethodInvocation:collectAndGetHeadings
+MethodInvocation:getDocument
+FieldAccess:options
+MethodInvocation:withTitle
+FieldAccess:options
+MethodInvocation:getFirst
+MethodInvocation:parseOption
+MethodInvocation:getStyle
+MethodInvocation:renderTocHeaders
+Class:Factory
+Method-name:apply
+Method-returnType:NodeRenderer
+Method-parameters:[@NotNull DataHolder options]

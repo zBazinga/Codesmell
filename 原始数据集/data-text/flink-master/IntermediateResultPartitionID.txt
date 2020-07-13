@@ -1,0 +1,57 @@
+Class:IntermediateResultPartitionID
+Field:serialVersionUID
+Field:intermediateDataSetID
+Field:partitionNum
+Method-name:IntermediateResultPartitionID
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:partitionNum
+FieldAccess:intermediateDataSetID
+Method-name:IntermediateResultPartitionID
+Method-returnType:null
+Method-parameters:[IntermediateDataSetID intermediateDataSetID, int partitionNum]
+FieldAccess:intermediateDataSetID
+FieldAccess:partitionNum
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[ByteBuf buf]
+MethodInvocation:writeTo
+MethodInvocation:writeInt
+Method-name:fromByteBuf
+Method-returnType:IntermediateResultPartitionID
+Method-parameters:[ByteBuf buf]
+MethodInvocation:fromByteBuf
+MethodInvocation:readInt
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+FieldAccess:intermediateDataSetID
+FieldAccess:partitionNum
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+FieldAccess:intermediateDataSetID
+FieldAccess:partitionNum
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+Method-name:createResultPartitionId
+Method-returnType:ResultPartitionID
+Method-parameters:[ExecutionGraph executionGraph]
+MethodInvocation:getResultPartition
+MethodInvocation:getSchedulingTopology
+MethodInvocation:getProducer
+MethodInvocation:getId
+MethodInvocation:getJobVertexId
+MethodInvocation:getJobVertex
+MethodInvocation:checkNotNull
+MethodInvocation:getTaskVertices
+MethodInvocation:getSubtaskIndex
+MethodInvocation:checkState
+MethodInvocation:getCurrentExecutionAttempt
+MethodInvocation:getAttemptId

@@ -1,0 +1,42 @@
+Class:AvoidGlobalModifierRule
+Method-name:AvoidGlobalModifierRule
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:setProperty
+MethodInvocation:setProperty
+MethodInvocation:setProperty
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTUserClass node, Object data]
+MethodInvocation:checkForGlobal
+Method-name:visit
+Method-returnType:Object
+Method-parameters:[ASTUserInterface node, Object data]
+MethodInvocation:checkForGlobal
+Method-name:checkForGlobal
+Method-returnType:Object
+Method-parameters:[ApexNode<?> node, Object data]
+MethodInvocation:getFirstChildOfType
+MethodInvocation:isGlobal
+MethodInvocation:hasRestAnnotation
+MethodInvocation:hasWebServices
+MethodInvocation:addViolation
+Method-name:hasWebServices
+Method-returnType:boolean
+Method-parameters:[ApexNode<?> node]
+MethodInvocation:findChildrenOfType
+MethodInvocation:getFirstChildOfType
+MethodInvocation:isWebService
+Method-name:isWebService
+Method-returnType:boolean
+Method-parameters:[ASTModifierNode modifierNode]
+MethodInvocation:isWebService
+Method-name:isGlobal
+Method-returnType:boolean
+Method-parameters:[ASTModifierNode modifierNode]
+MethodInvocation:isGlobal
+Method-name:hasRestAnnotation
+Method-returnType:boolean
+Method-parameters:[ASTModifierNode modifierNode]
+MethodInvocation:findChildrenOfType
+MethodInvocation:hasImageEqualTo

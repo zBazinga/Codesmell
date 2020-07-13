@@ -1,0 +1,194 @@
+Class:DuplicateCheck
+Field:DUPLICATE_THRESHOLD
+Field:LOGGER
+MethodInvocation:getLogger
+Field:NOT_EQUAL
+Field:EQUAL
+Field:EMPTY_IN_ONE
+Field:EMPTY_IN_TWO
+Field:EMPTY_IN_BOTH
+Field:DOUBT_RANGE
+Field:REQUIRED_WEIGHT
+Field:FIELD_WEIGHTS
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+MethodInvocation:put
+Field:entryTypesManager
+Method-name:DuplicateCheck
+Method-returnType:null
+Method-parameters:[BibEntryTypesManager entryTypesManager]
+FieldAccess:entryTypesManager
+Method-name:haveSameIdentifier
+Method-returnType:boolean
+Method-parameters:[final BibEntry one, final BibEntry two]
+MethodInvocation:getIdentifierFieldNames
+MethodInvocation:isPresent
+MethodInvocation:getField
+MethodInvocation:equals
+MethodInvocation:getField
+MethodInvocation:getField
+Method-name:haveDifferentEntryType
+Method-returnType:boolean
+Method-parameters:[final BibEntry one, final BibEntry two]
+MethodInvocation:equals
+MethodInvocation:getType
+MethodInvocation:getType
+Method-name:haveDifferentEditions
+Method-returnType:boolean
+Method-parameters:[final BibEntry one, final BibEntry two]
+MethodInvocation:getField
+MethodInvocation:getField
+MethodInvocation:isPresent
+MethodInvocation:isPresent
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:get
+Method-name:haveDifferentChaptersOrPagesOfTheSameBook
+Method-returnType:boolean
+Method-parameters:[final BibEntry one, final BibEntry two]
+MethodInvocation:compareSingleField
+MethodInvocation:compareSingleField
+MethodInvocation:compareSingleField
+MethodInvocation:compareSingleField
+Method-name:compareRequiredFields
+Method-returnType:double[]
+Method-parameters:[final BibEntryType type, final BibEntry one, final BibEntry two]
+MethodInvocation:getRequiredFields
+MethodInvocation:compareFieldSet
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toSet
+Method-name:isFarFromThreshold
+Method-returnType:boolean
+Method-parameters:[double value]
+MethodInvocation:abs
+Method-name:compareOptionalFields
+Method-returnType:boolean
+Method-parameters:[final BibEntryType type, final BibEntry one, final BibEntry two, final double[] req]
+MethodInvocation:getOptionalFields
+MethodInvocation:compareFieldSet
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toSet
+Method-name:compareFieldSet
+Method-returnType:double[]
+Method-parameters:[final Collection<Field> fields, final BibEntry one, final BibEntry two]
+MethodInvocation:getOrDefault
+MethodInvocation:compareSingleField
+Method-name:compareSingleField
+Method-returnType:int
+Method-parameters:[final Field field, final BibEntry one, final BibEntry two]
+MethodInvocation:getField
+MethodInvocation:getField
+MethodInvocation:isPresent
+MethodInvocation:isPresent
+MethodInvocation:isPresent
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:contains
+MethodInvocation:getProperties
+MethodInvocation:compareAuthorField
+MethodInvocation:equals
+MethodInvocation:comparePagesField
+MethodInvocation:equals
+MethodInvocation:compareJournalField
+MethodInvocation:equals
+MethodInvocation:compareChapterField
+MethodInvocation:compareField
+Method-name:compareAuthorField
+Method-returnType:int
+Method-parameters:[final String stringOne, final String stringTwo]
+MethodInvocation:toLowerCase
+MethodInvocation:replace
+MethodInvocation:fixAuthorLastNameOnlyCommas
+MethodInvocation:toLowerCase
+MethodInvocation:replace
+MethodInvocation:fixAuthorLastNameOnlyCommas
+MethodInvocation:correlateByWords
+Method-name:comparePagesField
+Method-returnType:int
+Method-parameters:[final String stringOne, final String stringTwo]
+MethodInvocation:replaceAll
+MethodInvocation:replaceAll
+MethodInvocation:equals
+Method-name:compareJournalField
+Method-returnType:int
+Method-parameters:[final String stringOne, final String stringTwo]
+MethodInvocation:toLowerCase
+MethodInvocation:replace
+MethodInvocation:toLowerCase
+MethodInvocation:replace
+MethodInvocation:correlateByWords
+Method-name:compareChapterField
+Method-returnType:int
+Method-parameters:[final String stringOne, final String stringTwo]
+MethodInvocation:trim
+MethodInvocation:replaceAll
+MethodInvocation:trim
+MethodInvocation:replaceAll
+MethodInvocation:compareField
+Method-name:compareField
+Method-returnType:int
+Method-parameters:[final String stringOne, final String stringTwo]
+MethodInvocation:trim
+MethodInvocation:toLowerCase
+MethodInvocation:trim
+MethodInvocation:toLowerCase
+MethodInvocation:correlateByWords
+Method-name:compareEntriesStrictly
+Method-returnType:double
+Method-parameters:[BibEntry one, BibEntry two]
+MethodInvocation:addAll
+MethodInvocation:getFields
+MethodInvocation:addAll
+MethodInvocation:getFields
+MethodInvocation:getField
+MethodInvocation:getField
+MethodInvocation:equals
+MethodInvocation:size
+MethodInvocation:size
+Method-name:correlateByWords
+Method-returnType:double
+Method-parameters:[final String s1, final String s2]
+MethodInvocation:split
+MethodInvocation:split
+MethodInvocation:min
+MethodInvocation:similarity
+Method-name:similarity
+Method-returnType:double
+Method-parameters:[final String first, final String second]
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:length
+MethodInvocation:editDistanceIgnoreCase
+MethodInvocation:debug
+Method-name:isDuplicate
+Method-returnType:boolean
+Method-parameters:[final BibEntry one, final BibEntry two, final BibDatabaseMode bibDatabaseMode]
+MethodInvocation:haveSameIdentifier
+MethodInvocation:haveDifferentEntryType
+MethodInvocation:haveDifferentEditions
+MethodInvocation:haveDifferentChaptersOrPagesOfTheSameBook
+MethodInvocation:enrich
+MethodInvocation:getType
+MethodInvocation:isPresent
+MethodInvocation:compareRequiredFields
+MethodInvocation:get
+MethodInvocation:isFarFromThreshold
+MethodInvocation:compareOptionalFields
+MethodInvocation:get
+MethodInvocation:compareFieldSet
+MethodInvocation:union
+MethodInvocation:getFields
+MethodInvocation:getFields
+Method-name:containsDuplicate
+Method-returnType:Optional<BibEntry>
+Method-parameters:[final BibDatabase database, final BibEntry entry, final BibDatabaseMode bibDatabaseMode]
+MethodInvocation:findFirst
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getEntries
+MethodInvocation:isDuplicate

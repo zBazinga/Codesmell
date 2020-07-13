@@ -1,0 +1,88 @@
+Class:Keyword
+Field:DEFAULT_HIERARCHICAL_DELIMITER
+Field:keyword
+Method-name:Keyword
+Method-returnType:null
+Method-parameters:[String keyword]
+FieldAccess:keyword
+MethodInvocation:trim
+MethodInvocation:requireNonNull
+Method-name:of
+Method-returnType:Keyword
+Method-parameters:[String... keywords]
+MethodInvocation:addAtEnd
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+FieldAccess:keyword
+MethodInvocation:equals
+MethodInvocation:getChild
+MethodInvocation:getChild
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSubchainAsString
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[Keyword o]
+MethodInvocation:compareTo
+Method-name:addAtEnd
+Method-returnType:void
+Method-parameters:[String keyword]
+MethodInvocation:addAtEnd
+Method-name:getSubchainAsString
+Method-returnType:String
+Method-parameters:[Character hierarchicalDelimiter]
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:getChild
+MethodInvocation:getSubchainAsString
+Method-name:get
+Method-returnType:String
+Method-parameters:[]
+Method-name:getPathFromRootAsString
+Method-returnType:String
+Method-parameters:[Character hierarchicalDelimiter]
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:getParent
+MethodInvocation:getPathFromRootAsString
+Method-name:flatten
+Method-returnType:Set<Keyword>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:concat
+MethodInvocation:of
+MethodInvocation:flatMap
+MethodInvocation:toStream
+MethodInvocation:getChild
+MethodInvocation:stream
+MethodInvocation:flatten
+MethodInvocation:toSet
+Method-name:getAllSubchainsAsString
+Method-returnType:Set<String>
+Method-parameters:[Character hierarchicalDelimiter]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:flatten
+MethodInvocation:getPathFromRootAsString
+MethodInvocation:toSet
+Method-name:createGroup
+Method-returnType:GroupTreeNode
+Method-parameters:[AutomaticKeywordGroup automaticKeywordGroup]
+MethodInvocation:get
+MethodInvocation:getField
+MethodInvocation:getPathFromRootAsString
+MethodInvocation:getKeywordHierarchicalDelimiter
+MethodInvocation:getKeywordDelimiter
+MethodInvocation:ifPresent
+MethodInvocation:map
+MethodInvocation:getChild

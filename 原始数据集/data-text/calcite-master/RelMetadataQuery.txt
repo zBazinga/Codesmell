@@ -1,0 +1,307 @@
+Class:RelMetadataQuery
+Field:EMPTY
+Field:collationHandler
+Field:columnOriginHandler
+Field:expressionLineageHandler
+Field:tableReferencesHandler
+Field:columnUniquenessHandler
+Field:cumulativeCostHandler
+Field:distinctRowCountHandler
+Field:distributionHandler
+Field:explainVisibilityHandler
+Field:maxRowCountHandler
+Field:minRowCountHandler
+Field:memoryHandler
+Field:nonCumulativeCostHandler
+Field:parallelismHandler
+Field:percentageOriginalRowsHandler
+Field:populationSizeHandler
+Field:predicatesHandler
+Field:allPredicatesHandler
+Field:nodeTypesHandler
+Field:rowCountHandler
+Field:selectivityHandler
+Field:sizeHandler
+Field:uniqueKeysHandler
+Method-name:RelMetadataQuery
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:get
+Method-name:RelMetadataQuery
+Method-returnType:null
+Method-parameters:[boolean dummy]
+FieldAccess:collationHandler
+MethodInvocation:initialHandler
+FieldAccess:columnOriginHandler
+MethodInvocation:initialHandler
+FieldAccess:expressionLineageHandler
+MethodInvocation:initialHandler
+FieldAccess:tableReferencesHandler
+MethodInvocation:initialHandler
+FieldAccess:columnUniquenessHandler
+MethodInvocation:initialHandler
+FieldAccess:cumulativeCostHandler
+MethodInvocation:initialHandler
+FieldAccess:distinctRowCountHandler
+MethodInvocation:initialHandler
+FieldAccess:distributionHandler
+MethodInvocation:initialHandler
+FieldAccess:explainVisibilityHandler
+MethodInvocation:initialHandler
+FieldAccess:maxRowCountHandler
+MethodInvocation:initialHandler
+FieldAccess:minRowCountHandler
+MethodInvocation:initialHandler
+FieldAccess:memoryHandler
+MethodInvocation:initialHandler
+FieldAccess:nonCumulativeCostHandler
+MethodInvocation:initialHandler
+FieldAccess:parallelismHandler
+MethodInvocation:initialHandler
+FieldAccess:percentageOriginalRowsHandler
+MethodInvocation:initialHandler
+FieldAccess:populationSizeHandler
+MethodInvocation:initialHandler
+FieldAccess:predicatesHandler
+MethodInvocation:initialHandler
+FieldAccess:allPredicatesHandler
+MethodInvocation:initialHandler
+FieldAccess:nodeTypesHandler
+MethodInvocation:initialHandler
+FieldAccess:rowCountHandler
+MethodInvocation:initialHandler
+FieldAccess:selectivityHandler
+MethodInvocation:initialHandler
+FieldAccess:sizeHandler
+MethodInvocation:initialHandler
+FieldAccess:uniqueKeysHandler
+MethodInvocation:initialHandler
+Method-name:RelMetadataQuery
+Method-returnType:null
+Method-parameters:[JaninoRelMetadataProvider metadataProvider, RelMetadataQuery prototype]
+MethodInvocation:requireNonNull
+FieldAccess:collationHandler
+FieldAccess:columnOriginHandler
+FieldAccess:expressionLineageHandler
+FieldAccess:tableReferencesHandler
+FieldAccess:columnUniquenessHandler
+FieldAccess:cumulativeCostHandler
+FieldAccess:distinctRowCountHandler
+FieldAccess:distributionHandler
+FieldAccess:explainVisibilityHandler
+FieldAccess:maxRowCountHandler
+FieldAccess:minRowCountHandler
+FieldAccess:memoryHandler
+FieldAccess:nonCumulativeCostHandler
+FieldAccess:parallelismHandler
+FieldAccess:percentageOriginalRowsHandler
+FieldAccess:populationSizeHandler
+FieldAccess:predicatesHandler
+FieldAccess:allPredicatesHandler
+FieldAccess:nodeTypesHandler
+FieldAccess:rowCountHandler
+FieldAccess:selectivityHandler
+FieldAccess:sizeHandler
+FieldAccess:uniqueKeysHandler
+Method-name:instance
+Method-returnType:RelMetadataQuery
+Method-parameters:[]
+Method-name:getNodeTypes
+Method-returnType:Multimap<Class<? extends RelNode>,RelNode>
+Method-parameters:[RelNode rel]
+MethodInvocation:getNodeTypes
+MethodInvocation:revise
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[RelNode rel]
+MethodInvocation:getRowCount
+MethodInvocation:validateResult
+MethodInvocation:revise
+Method-name:getMaxRowCount
+Method-returnType:Double
+Method-parameters:[RelNode rel]
+MethodInvocation:getMaxRowCount
+MethodInvocation:revise
+Method-name:getMinRowCount
+Method-returnType:Double
+Method-parameters:[RelNode rel]
+MethodInvocation:getMinRowCount
+MethodInvocation:revise
+Method-name:getCumulativeCost
+Method-returnType:RelOptCost
+Method-parameters:[RelNode rel]
+MethodInvocation:getCumulativeCost
+MethodInvocation:revise
+Method-name:getNonCumulativeCost
+Method-returnType:RelOptCost
+Method-parameters:[RelNode rel]
+MethodInvocation:getNonCumulativeCost
+MethodInvocation:revise
+Method-name:getPercentageOriginalRows
+Method-returnType:Double
+Method-parameters:[RelNode rel]
+MethodInvocation:getPercentageOriginalRows
+MethodInvocation:validatePercentage
+MethodInvocation:revise
+Method-name:getColumnOrigins
+Method-returnType:Set<RelColumnOrigin>
+Method-parameters:[RelNode rel, int column]
+MethodInvocation:getColumnOrigins
+MethodInvocation:revise
+Method-name:getColumnOrigin
+Method-returnType:RelColumnOrigin
+Method-parameters:[RelNode rel, int column]
+MethodInvocation:getColumnOrigins
+MethodInvocation:size
+MethodInvocation:getOnlyElement
+MethodInvocation:isDerived
+Method-name:getExpressionLineage
+Method-returnType:Set<RexNode>
+Method-parameters:[RelNode rel, RexNode expression]
+MethodInvocation:getExpressionLineage
+MethodInvocation:revise
+Method-name:getTableReferences
+Method-returnType:Set<RelTableRef>
+Method-parameters:[RelNode rel]
+MethodInvocation:getTableReferences
+MethodInvocation:revise
+Method-name:getTableOrigin
+Method-returnType:RelOptTable
+Method-parameters:[RelNode rel]
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:getColumnOrigins
+MethodInvocation:size
+MethodInvocation:getOriginTable
+MethodInvocation:next
+MethodInvocation:iterator
+Method-name:getSelectivity
+Method-returnType:Double
+Method-parameters:[RelNode rel, RexNode predicate]
+MethodInvocation:getSelectivity
+MethodInvocation:validatePercentage
+MethodInvocation:revise
+Method-name:getUniqueKeys
+Method-returnType:Set<ImmutableBitSet>
+Method-parameters:[RelNode rel]
+MethodInvocation:getUniqueKeys
+Method-name:getUniqueKeys
+Method-returnType:Set<ImmutableBitSet>
+Method-parameters:[RelNode rel, boolean ignoreNulls]
+MethodInvocation:getUniqueKeys
+MethodInvocation:revise
+Method-name:areRowsUnique
+Method-returnType:Boolean
+Method-parameters:[RelNode rel]
+MethodInvocation:range
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+MethodInvocation:areColumnsUnique
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[RelNode rel, ImmutableBitSet columns]
+MethodInvocation:areColumnsUnique
+Method-name:areColumnsUnique
+Method-returnType:Boolean
+Method-parameters:[RelNode rel, ImmutableBitSet columns, boolean ignoreNulls]
+MethodInvocation:areColumnsUnique
+MethodInvocation:revise
+Method-name:collations
+Method-returnType:ImmutableList<RelCollation>
+Method-parameters:[RelNode rel]
+MethodInvocation:collations
+MethodInvocation:revise
+Method-name:distribution
+Method-returnType:RelDistribution
+Method-parameters:[RelNode rel]
+MethodInvocation:distribution
+MethodInvocation:revise
+Method-name:getPopulationSize
+Method-returnType:Double
+Method-parameters:[RelNode rel, ImmutableBitSet groupKey]
+MethodInvocation:getPopulationSize
+MethodInvocation:validateResult
+MethodInvocation:revise
+Method-name:getAverageRowSize
+Method-returnType:Double
+Method-parameters:[RelNode rel]
+MethodInvocation:averageRowSize
+MethodInvocation:revise
+Method-name:getAverageColumnSizes
+Method-returnType:List<Double>
+Method-parameters:[RelNode rel]
+MethodInvocation:averageColumnSizes
+MethodInvocation:revise
+Method-name:getAverageColumnSizesNotNull
+Method-returnType:List<Double>
+Method-parameters:[RelNode rel]
+MethodInvocation:getAverageColumnSizes
+MethodInvocation:nCopies
+MethodInvocation:getFieldCount
+MethodInvocation:getRowType
+Method-name:isPhaseTransition
+Method-returnType:Boolean
+Method-parameters:[RelNode rel]
+MethodInvocation:isPhaseTransition
+MethodInvocation:revise
+Method-name:splitCount
+Method-returnType:Integer
+Method-parameters:[RelNode rel]
+MethodInvocation:splitCount
+MethodInvocation:revise
+Method-name:memory
+Method-returnType:Double
+Method-parameters:[RelNode rel]
+MethodInvocation:memory
+MethodInvocation:revise
+Method-name:cumulativeMemoryWithinPhase
+Method-returnType:Double
+Method-parameters:[RelNode rel]
+MethodInvocation:cumulativeMemoryWithinPhase
+MethodInvocation:revise
+Method-name:cumulativeMemoryWithinPhaseSplit
+Method-returnType:Double
+Method-parameters:[RelNode rel]
+MethodInvocation:cumulativeMemoryWithinPhaseSplit
+MethodInvocation:revise
+Method-name:getDistinctRowCount
+Method-returnType:Double
+Method-parameters:[RelNode rel, ImmutableBitSet groupKey, RexNode predicate]
+MethodInvocation:getDistinctRowCount
+MethodInvocation:validateResult
+MethodInvocation:revise
+Method-name:getPulledUpPredicates
+Method-returnType:RelOptPredicateList
+Method-parameters:[RelNode rel]
+MethodInvocation:getPredicates
+MethodInvocation:revise
+Method-name:getAllPredicates
+Method-returnType:RelOptPredicateList
+Method-parameters:[RelNode rel]
+MethodInvocation:getAllPredicates
+MethodInvocation:revise
+Method-name:isVisibleInExplain
+Method-returnType:boolean
+Method-parameters:[RelNode rel, SqlExplainLevel explainLevel]
+MethodInvocation:isVisibleInExplain
+MethodInvocation:revise
+Method-name:getDistribution
+Method-returnType:RelDistribution
+Method-parameters:[RelNode rel]
+MethodInvocation:distribution
+MethodInvocation:revise
+Method-name:isValidRelNodePlan
+Method-returnType:boolean
+Method-parameters:[RelNode node, MaterializedViewRule materializedViewRule]
+MethodInvocation:getNodeTypes
+MethodInvocation:entrySet
+MethodInvocation:asMap
+MethodInvocation:getKey
+MethodInvocation:isAssignableFrom
+MethodInvocation:isAssignableFrom
+MethodInvocation:isAssignableFrom
+MethodInvocation:isAssignableFrom
+MethodInvocation:isAssignableFrom
+MethodInvocation:getValue
+MethodInvocation:getJoinType
+MethodInvocation:isSemiJoin

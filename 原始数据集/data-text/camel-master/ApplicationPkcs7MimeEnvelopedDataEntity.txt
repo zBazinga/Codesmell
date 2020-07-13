@@ -1,0 +1,50 @@
+Class:ApplicationPkcs7MimeEnvelopedDataEntity
+Field:CONTENT_DISPOSITION
+Field:encryptedData
+Method-name:ApplicationPkcs7MimeEnvelopedDataEntity
+Method-returnType:null
+Method-parameters:[MimeEntity entity2Encrypt, CMSEnvelopedDataGenerator dataGenerator, OutputEncryptor encryptor, String encryptedContentTransferEncoding, boolean isMainBody]
+MethodInvocation:setContentType
+MethodInvocation:create
+MethodInvocation:setContentTransferEncoding
+MethodInvocation:addHeader
+MethodInvocation:setMainBody
+FieldAccess:encryptedData
+MethodInvocation:createEncryptedData
+Method-name:ApplicationPkcs7MimeEnvelopedDataEntity
+Method-returnType:null
+Method-parameters:[byte[] encryptedData, String encryptedContentTransferEncoding, boolean isMainBody]
+FieldAccess:encryptedData
+MethodInvocation:notNull
+MethodInvocation:setContentType
+MethodInvocation:create
+MethodInvocation:setContentTransferEncoding
+MethodInvocation:addHeader
+MethodInvocation:setMainBody
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[OutputStream outstream]
+MethodInvocation:isMainBody
+MethodInvocation:headerIterator
+MethodInvocation:hasNext
+MethodInvocation:nextHeader
+MethodInvocation:writeln
+MethodInvocation:toString
+MethodInvocation:writeln
+MethodInvocation:getContentTransferEncoding
+MethodInvocation:getValue
+MethodInvocation:getContentTransferEncoding
+MethodInvocation:encode
+MethodInvocation:write
+Method-name:getEncryptedEntity
+Method-returnType:MimeEntity
+Method-parameters:[PrivateKey privateKey]
+MethodInvocation:parseEnvelopedEntity
+Method-name:createEncryptedData
+Method-returnType:byte[]
+Method-parameters:[MimeEntity entity2Encrypt, CMSEnvelopedDataGenerator envelopedDataGenerator, OutputEncryptor encryptor]
+MethodInvocation:writeTo
+MethodInvocation:flush
+MethodInvocation:toByteArray
+MethodInvocation:generate
+MethodInvocation:getEncoded

@@ -1,0 +1,2533 @@
+Class:HiveMetaStoreClient
+Field:VERSION
+MethodInvocation:newArrayList
+Field:TEST_VERSION
+MethodInvocation:newArrayList
+Field:HIVE_METASTORE_CLASS
+Field:HIVE_METASTORE_CREATE_HANDLER_METHOD
+Field:client
+Field:transport
+Field:isConnected
+Field:metastoreUris
+Field:hookLoader
+Field:conf
+Field:tokenStrForm
+Field:localMetaStore
+Field:filterHook
+Field:isClientFilterEnabled
+Field:uriResolverHook
+Field:fileMetadataBatchSize
+Field:currentMetaVars
+Field:connCount
+Field:retries
+Field:retryDelaySeconds
+Field:version
+Field:processorCapabilities
+Field:processorIdentifier
+Field:REPL_EVENTS_MISSING_IN_METASTORE
+Field:REPL_EVENTS_WITH_DUPLICATE_ID_IN_METASTORE
+Field:LOG
+MethodInvocation:getLogger
+Method-name:HiveMetaStoreClient
+Method-returnType:null
+Method-parameters:[Configuration conf]
+Method-name:HiveMetaStoreClient
+Method-returnType:null
+Method-parameters:[Configuration conf, HiveMetaHookLoader hookLoader]
+Method-name:HiveMetaStoreClient
+Method-returnType:null
+Method-parameters:[Configuration conf, HiveMetaHookLoader hookLoader, Boolean allowEmbedded]
+FieldAccess:hookLoader
+MethodInvocation:newMetastoreConf
+FieldAccess:conf
+FieldAccess:conf
+MethodInvocation:getBoolVar
+MethodInvocation:loadFilterHooks
+MethodInvocation:getIfClientFilterEnabled
+MethodInvocation:loadUriResolverHook
+MethodInvocation:getIntVar
+MethodInvocation:get
+MethodInvocation:split
+MethodInvocation:get
+MethodInvocation:setProcessorCapabilities
+MethodInvocation:getCanonicalHostName
+MethodInvocation:getLocalHost
+MethodInvocation:setProcessorIdentifier
+MethodInvocation:getVar
+MethodInvocation:isEmbeddedMetaStore
+MethodInvocation:toString
+MethodInvocation:callEmbeddedMetastore
+FieldAccess:conf
+MethodInvocation:snapshotActiveConf
+MethodInvocation:getIntVar
+MethodInvocation:getTimeVar
+MethodInvocation:getVar
+MethodInvocation:resolveUris
+MethodInvocation:error
+MethodInvocation:getenv
+MethodInvocation:getProperty
+MethodInvocation:info
+MethodInvocation:doAs
+MethodInvocation:getRealUser
+MethodInvocation:getLoginUser
+Method-name:run
+Method-returnType:Void
+Method-parameters:[]
+MethodInvocation:open
+MethodInvocation:getDelegationToken
+MethodInvocation:setTokenStr
+MethodInvocation:getCurrentUser
+MethodInvocation:setVar
+FieldAccess:conf
+MethodInvocation:close
+MethodInvocation:error
+MethodInvocation:getMessage
+MethodInvocation:open
+Method-name:callEmbeddedMetastore
+Method-returnType:ThriftHiveMetastore.Iface
+Method-parameters:[Configuration conf]
+MethodInvocation:forName
+MethodInvocation:getDeclaredMethod
+MethodInvocation:setAccessible
+MethodInvocation:invoke
+MethodInvocation:getCause
+MethodInvocation:logAndThrowMetaException
+MethodInvocation:getCause
+MethodInvocation:logAndThrowMetaException
+MethodInvocation:logAndThrowMetaException
+Method-name:getIfClientFilterEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getBoolVar
+MethodInvocation:info
+Method-name:resolveUris
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getVar
+MethodInvocation:getVar
+MethodInvocation:isEmpty
+MethodInvocation:trim
+MethodInvocation:asList
+MethodInvocation:split
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getServerUris
+MethodInvocation:getZKConfig
+MethodInvocation:add
+MethodInvocation:logAndThrowMetaException
+MethodInvocation:getScheme
+MethodInvocation:addAll
+MethodInvocation:resolveURI
+MethodInvocation:add
+MethodInvocation:getScheme
+MethodInvocation:getUserInfo
+MethodInvocation:getCanonicalHostName
+MethodInvocation:getBridge
+MethodInvocation:getHost
+MethodInvocation:getPort
+MethodInvocation:getPath
+MethodInvocation:getQuery
+MethodInvocation:getFragment
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getVar
+MethodInvocation:asList
+MethodInvocation:shuffle
+MethodInvocation:toArray
+MethodInvocation:size
+MethodInvocation:logAndThrowMetaException
+Method-name:loadFilterHooks
+Method-returnType:MetaStoreFilterHook
+Method-parameters:[]
+MethodInvocation:getClass
+MethodInvocation:getName
+MethodInvocation:getConstructor
+MethodInvocation:newInstance
+MethodInvocation:getMessage
+Method-name:loadUriResolverHook
+Method-returnType:URIResolverHook
+Method-parameters:[]
+MethodInvocation:getAsString
+MethodInvocation:equals
+MethodInvocation:info
+MethodInvocation:forName
+MethodInvocation:getClassLoader
+MethodInvocation:newInstance
+MethodInvocation:error
+Method-name:promoteRandomMetaStoreURI
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:nextInt
+Method-name:getTTransport
+Method-returnType:TTransport
+Method-parameters:[]
+Method-name:isLocalMetaStore
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isCompatibleWith
+Method-returnType:boolean
+Method-parameters:[Configuration conf]
+MethodInvocation:get
+MethodInvocation:getVarname
+MethodInvocation:getAsString
+MethodInvocation:isCaseSensitive
+MethodInvocation:equals
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:info
+Method-name:setHiveAddedJars
+Method-returnType:void
+Method-parameters:[String addedJars]
+MethodInvocation:setVar
+Method-name:reconnect
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:close
+MethodInvocation:resolveUris
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getVar
+MethodInvocation:promoteRandomMetaStoreURI
+MethodInvocation:open
+Method-name:alter_table
+Method-returnType:void
+Method-parameters:[String dbname, String tbl_name, Table new_tbl]
+MethodInvocation:alter_table_with_environmentContext
+Method-name:alter_table
+Method-returnType:void
+Method-parameters:[String defaultDatabaseName, String tblName, Table table, boolean cascade]
+MethodInvocation:putToProperties
+MethodInvocation:alter_table_with_environmentContext
+Method-name:alter_table_with_environmentContext
+Method-returnType:void
+Method-parameters:[String dbname, String tbl_name, Table new_tbl, EnvironmentContext envContext]
+MethodInvocation:getHook
+MethodInvocation:preAlterTable
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:setEnvironmentContext
+MethodInvocation:setProcessorCapabilities
+MethodInvocation:asList
+MethodInvocation:setProcessorIdentifier
+MethodInvocation:alter_table_req
+Method-name:alter_table
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String tblName, Table newTable, EnvironmentContext envContext]
+MethodInvocation:setCatName
+MethodInvocation:setEnvironmentContext
+MethodInvocation:setProcessorCapabilities
+MethodInvocation:asList
+MethodInvocation:setProcessorIdentifier
+MethodInvocation:alter_table_req
+Method-name:alter_table
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String tbl_name, Table new_tbl, EnvironmentContext envContext, String validWriteIds]
+MethodInvocation:getHook
+MethodInvocation:preAlterTable
+MethodInvocation:setCatName
+MethodInvocation:setValidWriteIdList
+MethodInvocation:setEnvironmentContext
+MethodInvocation:setProcessorCapabilities
+MethodInvocation:asList
+MethodInvocation:setProcessorIdentifier
+MethodInvocation:alter_table_req
+Method-name:renamePartition
+Method-returnType:void
+Method-parameters:[final String dbname, final String tableName, final List<String> part_vals, final Partition newPart]
+MethodInvocation:renamePartition
+MethodInvocation:getDefaultCatalog
+Method-name:renamePartition
+Method-returnType:void
+Method-parameters:[String catName, String dbname, String tableName, List<String> part_vals, Partition newPart, String validWriteIds]
+MethodInvocation:setCatName
+MethodInvocation:setValidWriteIdList
+MethodInvocation:rename_partition_req
+Method-name:open
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getBoolVar
+MethodInvocation:getBoolVar
+MethodInvocation:getVar
+MethodInvocation:getBoolVar
+MethodInvocation:getBoolVar
+MethodInvocation:getTimeVar
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:info
+MethodInvocation:trim
+MethodInvocation:getVar
+MethodInvocation:isEmpty
+MethodInvocation:getPassword
+MethodInvocation:getSSLSocket
+MethodInvocation:getHost
+MethodInvocation:getPort
+MethodInvocation:incrementAndGet
+MethodInvocation:debug
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:identityHashCode
+MethodInvocation:toString
+MethodInvocation:getHost
+MethodInvocation:getPort
+MethodInvocation:debug
+MethodInvocation:getVar
+MethodInvocation:isEmpty
+MethodInvocation:getPassword
+MethodInvocation:getPlainTransport
+MethodInvocation:error
+MethodInvocation:toString
+MethodInvocation:createClient
+MethodInvocation:getBridge
+MethodInvocation:getVar
+MethodInvocation:getTokenStrForm
+MethodInvocation:debug
+MethodInvocation:createClientTransport
+MethodInvocation:getHost
+MethodInvocation:getMetaStoreSaslProperties
+MethodInvocation:debug
+MethodInvocation:getVar
+MethodInvocation:createClientTransport
+MethodInvocation:getHost
+MethodInvocation:getMetaStoreSaslProperties
+MethodInvocation:error
+MethodInvocation:toString
+MethodInvocation:isOpen
+MethodInvocation:open
+MethodInvocation:incrementAndGet
+MethodInvocation:info
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:identityHashCode
+MethodInvocation:warn
+MethodInvocation:debug
+MethodInvocation:getBoolVar
+MethodInvocation:getUGI
+MethodInvocation:set_ugi
+MethodInvocation:getUserName
+MethodInvocation:asList
+MethodInvocation:getGroupNames
+MethodInvocation:warn
+MethodInvocation:warn
+MethodInvocation:warn
+MethodInvocation:error
+MethodInvocation:info
+MethodInvocation:sleep
+MethodInvocation:stringifyException
+MethodInvocation:stringifyException
+MethodInvocation:snapshotActiveConf
+Method-name:snapshotActiveConf
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:put
+MethodInvocation:getVarname
+MethodInvocation:getAsString
+Method-name:getTokenStrForm
+Method-returnType:String
+Method-parameters:[]
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:shutdown
+MethodInvocation:debug
+MethodInvocation:isOpen
+MethodInvocation:close
+MethodInvocation:decrementAndGet
+MethodInvocation:info
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:identityHashCode
+Method-name:setProcessorCapabilities
+Method-returnType:void
+Method-parameters:[final String[] capabilities]
+Method-name:setProcessorIdentifier
+Method-returnType:void
+Method-parameters:[final String id]
+Method-name:getProcessorCapabilities
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:getProcessorIdentifier
+Method-returnType:String
+Method-parameters:[]
+Method-name:setMetaConf
+Method-returnType:void
+Method-parameters:[String key, String value]
+MethodInvocation:setMetaConf
+Method-name:getMetaConf
+Method-returnType:String
+Method-parameters:[String key]
+MethodInvocation:getMetaConf
+Method-name:createCatalog
+Method-returnType:void
+Method-parameters:[Catalog catalog]
+MethodInvocation:create_catalog
+Method-name:alterCatalog
+Method-returnType:void
+Method-parameters:[String catalogName, Catalog newCatalog]
+MethodInvocation:alter_catalog
+Method-name:getCatalog
+Method-returnType:Catalog
+Method-parameters:[String catName]
+MethodInvocation:get_catalog
+MethodInvocation:filterCatalogIfEnabled
+MethodInvocation:getCatalog
+Method-name:getCatalogs
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:get_catalogs
+MethodInvocation:filterCatalogNamesIfEnabled
+MethodInvocation:getNames
+Method-name:dropCatalog
+Method-returnType:void
+Method-parameters:[String catName]
+MethodInvocation:drop_catalog
+Method-name:add_partition
+Method-returnType:Partition
+Method-parameters:[Partition new_part]
+MethodInvocation:add_partition
+Method-name:add_partition
+Method-returnType:Partition
+Method-parameters:[Partition new_part, EnvironmentContext envContext]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:add_partition_with_environment_context
+MethodInvocation:deepCopy
+Method-name:add_partitions
+Method-returnType:int
+Method-parameters:[List<Partition> new_parts]
+MethodInvocation:contains
+MethodInvocation:isEmpty
+MethodInvocation:isSetCatName
+MethodInvocation:get
+MethodInvocation:getDefaultCatalog
+MethodInvocation:forEach
+MethodInvocation:setCatName
+MethodInvocation:add_partitions
+Method-name:add_partitions
+Method-returnType:List<Partition>
+Method-parameters:[List<Partition> parts, boolean ifNotExists, boolean needResults]
+MethodInvocation:contains
+MethodInvocation:isEmpty
+MethodInvocation:get
+MethodInvocation:isSetCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:forEach
+MethodInvocation:setCatName
+MethodInvocation:getDbName
+MethodInvocation:getTableName
+MethodInvocation:setCatName
+MethodInvocation:isSetCatName
+MethodInvocation:getCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:setNeedResult
+MethodInvocation:add_partitions_req
+MethodInvocation:filterPartitionsIfEnabled
+MethodInvocation:getPartitions
+Method-name:add_partitions_pspec
+Method-returnType:int
+Method-parameters:[PartitionSpecProxy partitionSpec]
+MethodInvocation:getCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:add_partitions_pspec
+MethodInvocation:toPartitionSpec
+Method-name:appendPartition
+Method-returnType:Partition
+Method-parameters:[String db_name, String table_name, List<String> part_vals]
+MethodInvocation:appendPartition
+MethodInvocation:getDefaultCatalog
+Method-name:appendPartition
+Method-returnType:Partition
+Method-parameters:[String dbName, String tableName, String partName]
+MethodInvocation:appendPartition
+MethodInvocation:getDefaultCatalog
+Method-name:appendPartition
+Method-returnType:Partition
+Method-parameters:[String catName, String dbName, String tableName, String name]
+MethodInvocation:append_partition_by_name
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:deepCopy
+Method-name:appendPartition
+Method-returnType:Partition
+Method-parameters:[String catName, String dbName, String tableName, List<String> partVals]
+MethodInvocation:append_partition
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:deepCopy
+Method-name:appendPartition
+Method-returnType:Partition
+Method-parameters:[String dbName, String tableName, List<String> partVals, EnvironmentContext ec]
+MethodInvocation:deepCopy
+MethodInvocation:append_partition_with_environment_context
+MethodInvocation:prependCatalogToDbName
+Method-name:exchange_partition
+Method-returnType:Partition
+Method-parameters:[Map<String,String> partitionSpecs, String sourceDb, String sourceTable, String destDb, String destinationTableName]
+MethodInvocation:exchange_partition
+MethodInvocation:getDefaultCatalog
+MethodInvocation:getDefaultCatalog
+Method-name:exchange_partition
+Method-returnType:Partition
+Method-parameters:[Map<String,String> partitionSpecs, String sourceCat, String sourceDb, String sourceTable, String destCat, String destDb, String destTableName]
+MethodInvocation:exchange_partition
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:prependCatalogToDbName
+Method-name:exchange_partitions
+Method-returnType:List<Partition>
+Method-parameters:[Map<String,String> partitionSpecs, String sourceDb, String sourceTable, String destDb, String destinationTableName]
+MethodInvocation:exchange_partitions
+MethodInvocation:getDefaultCatalog
+MethodInvocation:getDefaultCatalog
+Method-name:getPartitionColumnStatistics
+Method-returnType:Map<String,List<ColumnStatisticsObj>>
+Method-parameters:[String dbName, String tableName, List<String> partNames, List<String> colNames, String engine, String validWriteIdList]
+MethodInvocation:getPartitionColumnStatistics
+MethodInvocation:getDefaultCatalog
+Method-name:getPartitionColumnStatistics
+Method-returnType:Map<String,List<ColumnStatisticsObj>>
+Method-parameters:[String catName, String dbName, String tableName, List<String> partNames, List<String> colNames, String engine, String validWriteIdList]
+MethodInvocation:setCatName
+MethodInvocation:setValidWriteIdList
+MethodInvocation:getPartStats
+MethodInvocation:get_partitions_statistics_req
+Method-name:getAggrColStatsFor
+Method-returnType:AggrStats
+Method-parameters:[String dbName, String tblName, List<String> colNames, List<String> partNames, String engine, String writeIdList]
+MethodInvocation:getAggrColStatsFor
+MethodInvocation:getDefaultCatalog
+Method-name:getAggrColStatsFor
+Method-returnType:AggrStats
+Method-parameters:[String catName, String dbName, String tblName, List<String> colNames, List<String> partNames, String engine, String writeIdList]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:debug
+MethodInvocation:setCatName
+MethodInvocation:setValidWriteIdList
+MethodInvocation:get_aggr_stats_for
+Method-name:exchange_partitions
+Method-returnType:List<Partition>
+Method-parameters:[Map<String,String> partitionSpecs, String sourceCat, String sourceDb, String sourceTable, String destCat, String destDb, String destTableName]
+MethodInvocation:exchange_partitions
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:prependCatalogToDbName
+Method-name:validatePartitionNameCharacters
+Method-returnType:void
+Method-parameters:[List<String> partVals]
+MethodInvocation:partition_name_has_valid_characters
+Method-name:createDatabase
+Method-returnType:void
+Method-parameters:[Database db]
+MethodInvocation:isSetCatalogName
+MethodInvocation:setCatalogName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:create_database
+Method-name:createTable
+Method-returnType:void
+Method-parameters:[Table tbl]
+MethodInvocation:createTable
+Method-name:createTable
+Method-returnType:void
+Method-parameters:[Table tbl, EnvironmentContext envContext]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:getHook
+MethodInvocation:preCreateTable
+MethodInvocation:create_table_with_environment_context
+MethodInvocation:commitCreateTable
+MethodInvocation:rollbackCreateTable
+MethodInvocation:error
+Method-name:createTable
+Method-returnType:void
+Method-parameters:[CreateTableRequest request]
+MethodInvocation:getTable
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:setProcessorCapabilities
+MethodInvocation:asList
+MethodInvocation:setProcessorIdentifier
+MethodInvocation:getHook
+MethodInvocation:preCreateTable
+MethodInvocation:create_table_req
+MethodInvocation:commitCreateTable
+MethodInvocation:rollbackCreateTable
+MethodInvocation:error
+Method-name:createTableWithConstraints
+Method-returnType:void
+Method-parameters:[Table tbl, List<SQLPrimaryKey> primaryKeys, List<SQLForeignKey> foreignKeys, List<SQLUniqueConstraint> uniqueConstraints, List<SQLNotNullConstraint> notNullConstraints, List<SQLDefaultConstraint> defaultConstraints, List<SQLCheckConstraint> checkConstraints]
+MethodInvocation:isSetCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:setCatName
+MethodInvocation:forEach
+MethodInvocation:setCatName
+MethodInvocation:forEach
+MethodInvocation:setCatName
+MethodInvocation:forEach
+MethodInvocation:setCatName
+MethodInvocation:setUniqueConstraints
+MethodInvocation:forEach
+MethodInvocation:setCatName
+MethodInvocation:forEach
+MethodInvocation:setCatName
+MethodInvocation:forEach
+MethodInvocation:setCatName
+MethodInvocation:setPrimaryKeys
+MethodInvocation:setForeignKeys
+MethodInvocation:setUniqueConstraints
+MethodInvocation:setNotNullConstraints
+MethodInvocation:setDefaultConstraints
+MethodInvocation:setCheckConstraints
+MethodInvocation:createTable
+Method-name:dropConstraint
+Method-returnType:void
+Method-parameters:[String dbName, String tableName, String constraintName]
+MethodInvocation:dropConstraint
+MethodInvocation:getDefaultCatalog
+Method-name:dropConstraint
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String tableName, String constraintName]
+MethodInvocation:setCatName
+MethodInvocation:drop_constraint
+Method-name:addPrimaryKey
+Method-returnType:void
+Method-parameters:[List<SQLPrimaryKey> primaryKeyCols]
+MethodInvocation:isEmpty
+MethodInvocation:isSetCatName
+MethodInvocation:get
+MethodInvocation:getDefaultCatalog
+MethodInvocation:forEach
+MethodInvocation:setCatName
+MethodInvocation:add_primary_key
+Method-name:addForeignKey
+Method-returnType:void
+Method-parameters:[List<SQLForeignKey> foreignKeyCols]
+MethodInvocation:isEmpty
+MethodInvocation:isSetCatName
+MethodInvocation:get
+MethodInvocation:getDefaultCatalog
+MethodInvocation:forEach
+MethodInvocation:setCatName
+MethodInvocation:add_foreign_key
+Method-name:addUniqueConstraint
+Method-returnType:void
+Method-parameters:[List<SQLUniqueConstraint> uniqueConstraintCols]
+MethodInvocation:isEmpty
+MethodInvocation:isSetCatName
+MethodInvocation:get
+MethodInvocation:getDefaultCatalog
+MethodInvocation:forEach
+MethodInvocation:setCatName
+MethodInvocation:add_unique_constraint
+Method-name:addNotNullConstraint
+Method-returnType:void
+Method-parameters:[List<SQLNotNullConstraint> notNullConstraintCols]
+MethodInvocation:isEmpty
+MethodInvocation:isSetCatName
+MethodInvocation:get
+MethodInvocation:getDefaultCatalog
+MethodInvocation:forEach
+MethodInvocation:setCatName
+MethodInvocation:add_not_null_constraint
+Method-name:addDefaultConstraint
+Method-returnType:void
+Method-parameters:[List<SQLDefaultConstraint> defaultConstraints]
+MethodInvocation:isEmpty
+MethodInvocation:isSetCatName
+MethodInvocation:get
+MethodInvocation:getDefaultCatalog
+MethodInvocation:forEach
+MethodInvocation:setCatName
+MethodInvocation:add_default_constraint
+Method-name:addCheckConstraint
+Method-returnType:void
+Method-parameters:[List<SQLCheckConstraint> checkConstraints]
+MethodInvocation:isEmpty
+MethodInvocation:isSetCatName
+MethodInvocation:get
+MethodInvocation:getDefaultCatalog
+MethodInvocation:forEach
+MethodInvocation:setCatName
+MethodInvocation:add_check_constraint
+Method-name:createType
+Method-returnType:boolean
+Method-parameters:[Type type]
+MethodInvocation:create_type
+Method-name:dropDatabase
+Method-returnType:void
+Method-parameters:[String name]
+MethodInvocation:dropDatabase
+MethodInvocation:getDefaultCatalog
+Method-name:dropDatabase
+Method-returnType:void
+Method-parameters:[String name, boolean deleteData, boolean ignoreUnknownDb]
+MethodInvocation:dropDatabase
+MethodInvocation:getDefaultCatalog
+Method-name:dropDatabase
+Method-returnType:void
+Method-parameters:[String name, boolean deleteData, boolean ignoreUnknownDb, boolean cascade]
+MethodInvocation:dropDatabase
+MethodInvocation:getDefaultCatalog
+Method-name:dropDatabase
+Method-returnType:void
+Method-parameters:[String catalogName, String dbName, boolean deleteData, boolean ignoreUnknownDb, boolean cascade]
+MethodInvocation:getDatabase
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:getTables
+MethodInvocation:dropTable
+MethodInvocation:getAllTables
+MethodInvocation:size
+MethodInvocation:getIntVar
+MethodInvocation:debug
+MethodInvocation:getVarname
+MethodInvocation:debug
+MethodInvocation:dropDatabaseCascadePerTable
+MethodInvocation:debug
+MethodInvocation:dropDatabaseCascadePerDb
+MethodInvocation:drop_database
+Method-name:dropDatabaseCascadePerTable
+Method-returnType:void
+Method-parameters:[String catName, String dbName, List<String> tableList, boolean deleteData, int maxBatchSize]
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:getHook
+MethodInvocation:preDropTable
+MethodInvocation:drop_table_with_environment_context
+MethodInvocation:getTableName
+MethodInvocation:commitDropTable
+MethodInvocation:rollbackDropTable
+MethodInvocation:drop_database
+Method-name:dropDatabaseCascadePerDb
+Method-returnType:void
+Method-parameters:[String catName, String dbName, List<String> tableList, boolean deleteData]
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:getTableObjectsByName
+MethodInvocation:getHook
+MethodInvocation:preDropTable
+MethodInvocation:drop_database
+MethodInvocation:getHook
+MethodInvocation:commitDropTable
+MethodInvocation:getHook
+MethodInvocation:rollbackDropTable
+Method-name:dropPartition
+Method-returnType:boolean
+Method-parameters:[String dbName, String tableName, String partName, boolean deleteData]
+MethodInvocation:dropPartition
+MethodInvocation:getDefaultCatalog
+Method-name:dropPartition
+Method-returnType:boolean
+Method-parameters:[String catName, String db_name, String tbl_name, String name, boolean deleteData]
+MethodInvocation:drop_partition_by_name_with_environment_context
+MethodInvocation:prependCatalogToDbName
+Method-name:getEnvironmentContextWithIfPurgeSet
+Method-returnType:EnvironmentContext
+Method-parameters:[]
+MethodInvocation:put
+Method-name:dropPartition
+Method-returnType:boolean
+Method-parameters:[String db_name, String tbl_name, List<String> part_vals, EnvironmentContext env_context]
+MethodInvocation:drop_partition_with_environment_context
+MethodInvocation:prependCatalogToDbName
+Method-name:dropPartition
+Method-returnType:boolean
+Method-parameters:[String dbName, String tableName, String partName, boolean dropData, EnvironmentContext ec]
+MethodInvocation:drop_partition_by_name_with_environment_context
+MethodInvocation:prependCatalogToDbName
+Method-name:dropPartition
+Method-returnType:boolean
+Method-parameters:[String dbName, String tableName, List<String> partVals]
+MethodInvocation:drop_partition
+MethodInvocation:prependCatalogToDbName
+Method-name:dropPartition
+Method-returnType:boolean
+Method-parameters:[String db_name, String tbl_name, List<String> part_vals, boolean deleteData]
+MethodInvocation:dropPartition
+MethodInvocation:getDefaultCatalog
+MethodInvocation:deleteData
+MethodInvocation:instance
+Method-name:dropPartition
+Method-returnType:boolean
+Method-parameters:[String catName, String db_name, String tbl_name, List<String> part_vals, boolean deleteData]
+MethodInvocation:dropPartition
+MethodInvocation:deleteData
+MethodInvocation:instance
+Method-name:dropPartition
+Method-returnType:boolean
+Method-parameters:[String db_name, String tbl_name, List<String> part_vals, PartitionDropOptions options]
+MethodInvocation:dropPartition
+MethodInvocation:getDefaultCatalog
+Method-name:dropPartition
+Method-returnType:boolean
+Method-parameters:[String catName, String db_name, String tbl_name, List<String> part_vals, PartitionDropOptions options]
+MethodInvocation:instance
+MethodInvocation:drop_partition_with_environment_context
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:getEnvironmentContextWithIfPurgeSet
+Method-name:dropPartitions
+Method-returnType:List<Partition>
+Method-parameters:[String dbName, String tblName, List<Pair<Integer,byte[]>> partExprs, PartitionDropOptions options]
+MethodInvocation:dropPartitions
+MethodInvocation:getDefaultCatalog
+Method-name:dropPartitions
+Method-returnType:List<Partition>
+Method-parameters:[String dbName, String tblName, List<Pair<Integer,byte[]>> partExprs, boolean deleteData, boolean ifExists, boolean needResult]
+MethodInvocation:dropPartitions
+MethodInvocation:getDefaultCatalog
+MethodInvocation:returnResults
+MethodInvocation:ifExists
+MethodInvocation:deleteData
+MethodInvocation:instance
+Method-name:dropPartitions
+Method-returnType:List<Partition>
+Method-parameters:[String dbName, String tblName, List<Pair<Integer,byte[]>> partExprs, boolean deleteData, boolean ifExists]
+MethodInvocation:dropPartitions
+MethodInvocation:getDefaultCatalog
+MethodInvocation:ifExists
+MethodInvocation:deleteData
+MethodInvocation:instance
+Method-name:dropPartitions
+Method-returnType:List<Partition>
+Method-parameters:[String catName, String dbName, String tblName, List<Pair<Integer,byte[]>> partExprs, PartitionDropOptions options]
+MethodInvocation:size
+MethodInvocation:setExpr
+MethodInvocation:getRight
+MethodInvocation:setPartArchiveLevel
+MethodInvocation:getLeft
+MethodInvocation:add
+MethodInvocation:setExprs
+MethodInvocation:setCatName
+MethodInvocation:setDeleteData
+MethodInvocation:setNeedResult
+MethodInvocation:setIfExists
+MethodInvocation:info
+MethodInvocation:setEnvironmentContext
+MethodInvocation:getEnvironmentContextWithIfPurgeSet
+MethodInvocation:getPartitions
+MethodInvocation:drop_partitions_req
+Method-name:dropTable
+Method-returnType:void
+Method-parameters:[String dbname, String name, boolean deleteData, boolean ignoreUnknownTab]
+MethodInvocation:dropTable
+MethodInvocation:getDefaultCatalog
+Method-name:dropTable
+Method-returnType:void
+Method-parameters:[String dbname, String name, boolean deleteData, boolean ignoreUnknownTab, boolean ifPurge]
+MethodInvocation:dropTable
+MethodInvocation:getDefaultCatalog
+Method-name:dropTable
+Method-returnType:void
+Method-parameters:[String dbname, String name]
+MethodInvocation:dropTable
+MethodInvocation:getDefaultCatalog
+Method-name:dropTable
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String tableName, boolean deleteData, boolean ignoreUnknownTable, boolean ifPurge]
+MethodInvocation:put
+MethodInvocation:dropTable
+Method-name:dropTable
+Method-returnType:void
+Method-parameters:[String catName, String dbname, String name, boolean deleteData, boolean ignoreUnknownTab, EnvironmentContext envContext]
+MethodInvocation:getTable
+MethodInvocation:getHook
+MethodInvocation:preDropTable
+MethodInvocation:drop_table_with_environment_context
+MethodInvocation:commitDropTable
+MethodInvocation:equals
+MethodInvocation:get
+MethodInvocation:getProperties
+MethodInvocation:rollbackDropTable
+Method-name:truncateTable
+Method-returnType:void
+Method-parameters:[String dbName, String tableName, List<String> partNames, String validWriteIds, long writeId]
+MethodInvocation:truncateTableInternal
+MethodInvocation:getDefaultCatalog
+Method-name:truncateTable
+Method-returnType:void
+Method-parameters:[String dbName, String tableName, List<String> partNames]
+MethodInvocation:truncateTableInternal
+MethodInvocation:getDefaultCatalog
+Method-name:truncateTable
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String tableName, List<String> partNames]
+MethodInvocation:truncateTableInternal
+Method-name:truncateTableInternal
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String tableName, List<String> partNames, String validWriteIds, long writeId]
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:setPartNames
+MethodInvocation:setValidWriteIdList
+MethodInvocation:setWriteId
+MethodInvocation:truncate_table_req
+Method-name:recycleDirToCmPath
+Method-returnType:CmRecycleResponse
+Method-parameters:[CmRecycleRequest request]
+MethodInvocation:cm_recycle
+Method-name:dropType
+Method-returnType:boolean
+Method-parameters:[String type]
+MethodInvocation:drop_type
+Method-name:getTypeAll
+Method-returnType:Map<String,Type>
+Method-parameters:[String name]
+MethodInvocation:get_type_all
+MethodInvocation:keySet
+MethodInvocation:put
+MethodInvocation:deepCopy
+MethodInvocation:get
+Method-name:getDatabases
+Method-returnType:List<String>
+Method-parameters:[String databasePattern]
+MethodInvocation:getDatabases
+MethodInvocation:getDefaultCatalog
+Method-name:getDatabases
+Method-returnType:List<String>
+Method-parameters:[String catName, String databasePattern]
+MethodInvocation:get_databases
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:filterDbNamesIfEnabled
+Method-name:getAllDatabases
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getAllDatabases
+MethodInvocation:getDefaultCatalog
+Method-name:getAllDatabases
+Method-returnType:List<String>
+Method-parameters:[String catName]
+MethodInvocation:get_databases
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:filterDbNamesIfEnabled
+Method-name:listPartitions
+Method-returnType:List<Partition>
+Method-parameters:[String db_name, String tbl_name, short max_parts]
+MethodInvocation:listPartitions
+MethodInvocation:getDefaultCatalog
+Method-name:listPartitions
+Method-returnType:List<Partition>
+Method-parameters:[String catName, String db_name, String tbl_name, int max_parts]
+MethodInvocation:get_partitions
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:shrinkMaxtoShort
+MethodInvocation:deepCopyPartitions
+MethodInvocation:filterPartitionsIfEnabled
+Method-name:listPartitionSpecs
+Method-returnType:PartitionSpecProxy
+Method-parameters:[String dbName, String tableName, int maxParts]
+MethodInvocation:listPartitionSpecs
+MethodInvocation:getDefaultCatalog
+Method-name:listPartitionSpecs
+Method-returnType:PartitionSpecProxy
+Method-parameters:[String catName, String dbName, String tableName, int maxParts]
+MethodInvocation:get_partitions_pspec
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:filterPartitionSpecsIfEnabled
+MethodInvocation:get
+Method-name:listPartitions
+Method-returnType:List<Partition>
+Method-parameters:[String db_name, String tbl_name, List<String> part_vals, short max_parts]
+MethodInvocation:listPartitions
+MethodInvocation:getDefaultCatalog
+Method-name:listPartitions
+Method-returnType:List<Partition>
+Method-parameters:[String catName, String db_name, String tbl_name, List<String> part_vals, int max_parts]
+MethodInvocation:get_partitions_ps
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:shrinkMaxtoShort
+MethodInvocation:deepCopyPartitions
+MethodInvocation:filterPartitionsIfEnabled
+Method-name:listPartitionsWithAuthInfo
+Method-returnType:List<Partition>
+Method-parameters:[String db_name, String tbl_name, short max_parts, String user_name, List<String> group_names]
+MethodInvocation:listPartitionsWithAuthInfo
+MethodInvocation:getDefaultCatalog
+Method-name:listPartitionsWithAuthInfo
+Method-returnType:List<Partition>
+Method-parameters:[String catName, String dbName, String tableName, int maxParts, String userName, List<String> groupNames]
+MethodInvocation:get_partitions_with_auth
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:shrinkMaxtoShort
+MethodInvocation:deepCopyPartitions
+MethodInvocation:filterPartitionsIfEnabled
+Method-name:listPartitionsWithAuthInfo
+Method-returnType:List<Partition>
+Method-parameters:[String db_name, String tbl_name, List<String> part_vals, short max_parts, String user_name, List<String> group_names]
+MethodInvocation:listPartitionsWithAuthInfo
+MethodInvocation:getDefaultCatalog
+Method-name:listPartitionsWithAuthInfo
+Method-returnType:List<Partition>
+Method-parameters:[String catName, String dbName, String tableName, List<String> partialPvals, int maxParts, String userName, List<String> groupNames]
+MethodInvocation:get_partitions_ps_with_auth
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:shrinkMaxtoShort
+MethodInvocation:deepCopyPartitions
+MethodInvocation:filterPartitionsIfEnabled
+Method-name:listPartitionsByFilter
+Method-returnType:List<Partition>
+Method-parameters:[String db_name, String tbl_name, String filter, short max_parts]
+MethodInvocation:listPartitionsByFilter
+MethodInvocation:getDefaultCatalog
+Method-name:listPartitionsByFilter
+Method-returnType:List<Partition>
+Method-parameters:[String catName, String db_name, String tbl_name, String filter, int max_parts]
+MethodInvocation:get_partitions_by_filter
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:shrinkMaxtoShort
+MethodInvocation:deepCopyPartitions
+MethodInvocation:filterPartitionsIfEnabled
+Method-name:listPartitionSpecsByFilter
+Method-returnType:PartitionSpecProxy
+Method-parameters:[String db_name, String tbl_name, String filter, int max_parts]
+MethodInvocation:listPartitionSpecsByFilter
+MethodInvocation:getDefaultCatalog
+Method-name:listPartitionSpecsByFilter
+Method-returnType:PartitionSpecProxy
+Method-parameters:[String catName, String db_name, String tbl_name, String filter, int max_parts]
+MethodInvocation:get_part_specs_by_filter
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:get
+MethodInvocation:filterPartitionSpecsIfEnabled
+Method-name:listPartitionsByExpr
+Method-returnType:boolean
+Method-parameters:[String db_name, String tbl_name, byte[] expr, String default_partition_name, short max_parts, List<Partition> result]
+MethodInvocation:listPartitionsByExpr
+MethodInvocation:getDefaultCatalog
+Method-name:listPartitionsByExpr
+Method-returnType:boolean
+Method-parameters:[String catName, String db_name, String tbl_name, byte[] expr, String default_partition_name, int max_parts, List<Partition> result]
+Method-name:listPartitionsSpecByExpr
+Method-returnType:boolean
+Method-parameters:[String dbName, String tblName, byte[] expr, String defaultPartName, short maxParts, List<PartitionSpec> result]
+MethodInvocation:listPartitionsSpecByExpr
+MethodInvocation:getDefaultCatalog
+Method-name:listPartitionsSpecByExpr
+Method-returnType:boolean
+Method-parameters:[String catName, String dbName, String tblName, byte[] expr, String defaultPartitionName, short maxParts, List<PartitionSpec> result]
+Method-name:getDatabase
+Method-returnType:Database
+Method-parameters:[String name]
+MethodInvocation:getDatabase
+MethodInvocation:getDefaultCatalog
+Method-name:getDatabase
+Method-returnType:Database
+Method-parameters:[String catalogName, String databaseName]
+MethodInvocation:setName
+MethodInvocation:setCatalogName
+MethodInvocation:setProcessorCapabilities
+MethodInvocation:asList
+MethodInvocation:setProcessorIdentifier
+MethodInvocation:get_database_req
+MethodInvocation:deepCopy
+MethodInvocation:filterDbIfEnabled
+Method-name:getPartition
+Method-returnType:Partition
+Method-parameters:[String db_name, String tbl_name, List<String> part_vals]
+MethodInvocation:getPartition
+MethodInvocation:getDefaultCatalog
+Method-name:getPartition
+Method-returnType:Partition
+Method-parameters:[String catName, String dbName, String tblName, List<String> partVals]
+MethodInvocation:get_partition
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:deepCopy
+MethodInvocation:filterPartitionIfEnabled
+Method-name:getPartitionsByNames
+Method-returnType:List<Partition>
+Method-parameters:[String db_name, String tbl_name, List<String> part_names]
+MethodInvocation:getPartitionsByNames
+MethodInvocation:getDefaultCatalog
+Method-name:getPartitionsByNames
+Method-returnType:List<Partition>
+Method-parameters:[String db_name, String tbl_name, List<String> part_names, boolean getColStats, String engine]
+MethodInvocation:getPartitionsByNames
+MethodInvocation:getDefaultCatalog
+Method-name:getPartitionsByNames
+Method-returnType:List<Partition>
+Method-parameters:[String catName, String db_name, String tbl_name, List<String> part_names]
+MethodInvocation:getPartitionsByNames
+Method-name:getPartitionsByNames
+Method-returnType:List<Partition>
+Method-parameters:[String catName, String db_name, String tbl_name, List<String> part_names, boolean getColStats, String engine]
+MethodInvocation:checkDbAndTableFilters
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:setNames
+MethodInvocation:setGet_col_stats
+MethodInvocation:setEngine
+MethodInvocation:setProcessorCapabilities
+MethodInvocation:asList
+MethodInvocation:setProcessorIdentifier
+MethodInvocation:getPartitions
+MethodInvocation:get_partitions_by_names_req
+MethodInvocation:deepCopyPartitions
+MethodInvocation:filterPartitionsIfEnabled
+Method-name:listPartitionValues
+Method-returnType:PartitionValuesResponse
+Method-parameters:[PartitionValuesRequest request]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:isSetCatName
+MethodInvocation:getCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:getDbName
+MethodInvocation:getTblName
+MethodInvocation:checkDbAndTableFilters
+MethodInvocation:get_partition_values
+Method-name:getPartitionWithAuthInfo
+Method-returnType:Partition
+Method-parameters:[String db_name, String tbl_name, List<String> part_vals, String user_name, List<String> group_names]
+MethodInvocation:getPartitionWithAuthInfo
+MethodInvocation:getDefaultCatalog
+Method-name:getPartitionWithAuthInfo
+Method-returnType:Partition
+Method-parameters:[String catName, String dbName, String tableName, List<String> pvals, String userName, List<String> groupNames]
+MethodInvocation:get_partition_with_auth
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:deepCopy
+MethodInvocation:filterPartitionIfEnabled
+Method-name:getTable
+Method-returnType:Table
+Method-parameters:[String dbname, String name]
+MethodInvocation:getTable
+MethodInvocation:getDefaultCatalog
+Method-name:getTable
+Method-returnType:Table
+Method-parameters:[String dbname, String name, boolean getColumnStats, String engine]
+MethodInvocation:getTable
+MethodInvocation:getDefaultCatalog
+Method-name:getTable
+Method-returnType:Table
+Method-parameters:[String catName, String dbName, String tableName]
+MethodInvocation:getTable
+Method-name:getTable
+Method-returnType:Table
+Method-parameters:[String catName, String dbName, String tableName, boolean getColumnStats, String engine]
+MethodInvocation:setCatName
+MethodInvocation:setCapabilities
+MethodInvocation:setGetColumnStats
+MethodInvocation:setEngine
+MethodInvocation:setProcessorCapabilities
+MethodInvocation:asList
+MethodInvocation:setProcessorIdentifier
+MethodInvocation:getTable
+MethodInvocation:get_table_req
+MethodInvocation:deepCopy
+MethodInvocation:filterTableIfEnabled
+Method-name:getTable
+Method-returnType:Table
+Method-parameters:[String catName, String dbName, String tableName, String validWriteIdList]
+MethodInvocation:getTable
+Method-name:getTable
+Method-returnType:Table
+Method-parameters:[String catName, String dbName, String tableName, String validWriteIdList, boolean getColumnStats, String engine]
+MethodInvocation:setCatName
+MethodInvocation:setCapabilities
+MethodInvocation:setValidWriteIdList
+MethodInvocation:setGetColumnStats
+MethodInvocation:setEngine
+MethodInvocation:setProcessorCapabilities
+MethodInvocation:asList
+MethodInvocation:setProcessorIdentifier
+MethodInvocation:getTable
+MethodInvocation:get_table_req
+MethodInvocation:deepCopy
+MethodInvocation:filterTableIfEnabled
+Method-name:getTableObjectsByName
+Method-returnType:List<Table>
+Method-parameters:[String dbName, List<String> tableNames]
+MethodInvocation:getTableObjectsByName
+MethodInvocation:getDefaultCatalog
+Method-name:getTableObjectsByName
+Method-returnType:List<Table>
+Method-parameters:[String catName, String dbName, List<String> tableNames]
+MethodInvocation:setCatName
+MethodInvocation:setTblNames
+MethodInvocation:setCapabilities
+MethodInvocation:setProcessorCapabilities
+MethodInvocation:asList
+MethodInvocation:getTables
+MethodInvocation:get_table_objects_by_name_req
+MethodInvocation:deepCopyTables
+MethodInvocation:filterTablesIfEnabled
+Method-name:getMaterializationInvalidationInfo
+Method-returnType:Materialization
+Method-parameters:[CreationMetadata cm, String validTxnList]
+MethodInvocation:get_materialization_invalidation_info
+Method-name:updateCreationMetadata
+Method-returnType:void
+Method-parameters:[String dbName, String tableName, CreationMetadata cm]
+MethodInvocation:update_creation_metadata
+MethodInvocation:getDefaultCatalog
+Method-name:updateCreationMetadata
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String tableName, CreationMetadata cm]
+MethodInvocation:update_creation_metadata
+Method-name:listTableNamesByFilter
+Method-returnType:List<String>
+Method-parameters:[String dbName, String filter, short maxTables]
+MethodInvocation:listTableNamesByFilter
+MethodInvocation:getDefaultCatalog
+Method-name:listTableNamesByFilter
+Method-returnType:List<String>
+Method-parameters:[String catName, String dbName, String filter, int maxTables]
+MethodInvocation:get_table_names_by_filter
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:shrinkMaxtoShort
+MethodInvocation:filterTableNamesIfEnabled
+Method-name:getType
+Method-returnType:Type
+Method-parameters:[String name]
+MethodInvocation:deepCopy
+MethodInvocation:get_type
+Method-name:getTables
+Method-returnType:List<String>
+Method-parameters:[String dbname, String tablePattern]
+MethodInvocation:getTables
+MethodInvocation:getDefaultCatalog
+MethodInvocation:logAndThrowMetaException
+Method-name:getTables
+Method-returnType:List<String>
+Method-parameters:[String catName, String dbName, String tablePattern]
+MethodInvocation:get_tables
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:filterTableNamesIfEnabled
+Method-name:getTables
+Method-returnType:List<String>
+Method-parameters:[String dbname, String tablePattern, TableType tableType]
+MethodInvocation:getTables
+MethodInvocation:getDefaultCatalog
+MethodInvocation:logAndThrowMetaException
+Method-name:getTables
+Method-returnType:List<String>
+Method-parameters:[String catName, String dbName, String tablePattern, TableType tableType]
+MethodInvocation:get_tables_by_type
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:toString
+MethodInvocation:filterTableNamesIfEnabled
+Method-name:getTablesExt
+Method-returnType:List<ExtendedTableInfo>
+Method-parameters:[String catName, String dbName, String tablePattern, int requestedFields, int limit]
+MethodInvocation:getDefaultCatalog
+MethodInvocation:setLimit
+MethodInvocation:setProcessorIdentifier
+MethodInvocation:setProcessorCapabilities
+MethodInvocation:asList
+MethodInvocation:get_tables_ext
+Method-name:getAllMaterializedViewObjectsForRewriting
+Method-returnType:List<Table>
+Method-parameters:[]
+MethodInvocation:get_all_materialized_view_objects_for_rewriting
+MethodInvocation:filterTablesIfEnabled
+MethodInvocation:logAndThrowMetaException
+Method-name:getMaterializedViewsForRewriting
+Method-returnType:List<String>
+Method-parameters:[String dbName]
+MethodInvocation:getMaterializedViewsForRewriting
+MethodInvocation:getDefaultCatalog
+Method-name:getMaterializedViewsForRewriting
+Method-returnType:List<String>
+Method-parameters:[String catName, String dbname]
+MethodInvocation:get_materialized_views_for_rewriting
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:filterTableNamesIfEnabled
+MethodInvocation:logAndThrowMetaException
+Method-name:getTableMeta
+Method-returnType:List<TableMeta>
+Method-parameters:[String dbPatterns, String tablePatterns, List<String> tableTypes]
+MethodInvocation:getTableMeta
+MethodInvocation:getDefaultCatalog
+MethodInvocation:logAndThrowMetaException
+Method-name:getTableMeta
+Method-returnType:List<TableMeta>
+Method-parameters:[String catName, String dbPatterns, String tablePatterns, List<String> tableTypes]
+MethodInvocation:get_table_meta
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:filterTableMetasIfEnabled
+Method-name:getAllTables
+Method-returnType:List<String>
+Method-parameters:[String dbname]
+MethodInvocation:getAllTables
+MethodInvocation:getDefaultCatalog
+MethodInvocation:logAndThrowMetaException
+Method-name:getAllTables
+Method-returnType:List<String>
+Method-parameters:[String catName, String dbName]
+MethodInvocation:get_all_tables
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:filterTableNamesIfEnabled
+Method-name:tableExists
+Method-returnType:boolean
+Method-parameters:[String databaseName, String tableName]
+MethodInvocation:tableExists
+MethodInvocation:getDefaultCatalog
+Method-name:tableExists
+Method-returnType:boolean
+Method-parameters:[String catName, String dbName, String tableName]
+MethodInvocation:setCatName
+MethodInvocation:setCapabilities
+MethodInvocation:getTable
+MethodInvocation:get_table_req
+MethodInvocation:filterTableIfEnabled
+Method-name:listPartitionNames
+Method-returnType:List<String>
+Method-parameters:[String dbName, String tblName, short max]
+MethodInvocation:listPartitionNames
+MethodInvocation:getDefaultCatalog
+Method-name:listPartitionNames
+Method-returnType:List<String>
+Method-parameters:[String catName, String dbName, String tableName, int maxParts]
+MethodInvocation:get_partition_names
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:shrinkMaxtoShort
+MethodInvocation:filterPartitionNamesIfEnabled
+Method-name:listPartitionNames
+Method-returnType:List<String>
+Method-parameters:[String db_name, String tbl_name, List<String> part_vals, short max_parts]
+MethodInvocation:listPartitionNames
+MethodInvocation:getDefaultCatalog
+Method-name:listPartitionNames
+Method-returnType:List<String>
+Method-parameters:[String catName, String db_name, String tbl_name, List<String> part_vals, int max_parts]
+MethodInvocation:get_partition_names_ps
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:shrinkMaxtoShort
+MethodInvocation:filterPartitionNamesIfEnabled
+Method-name:listPartitionNames
+Method-returnType:List<String>
+Method-parameters:[String catName, String dbName, String tblName, String defaultPartName, byte[] exprBytes, String order, short maxParts]
+MethodInvocation:wrap
+MethodInvocation:setDefaultPartitionName
+MethodInvocation:setMaxParts
+MethodInvocation:setOrder
+MethodInvocation:setCatName
+MethodInvocation:filterPartitionNamesIfEnabled
+MethodInvocation:get_partition_names_req
+Method-name:getNumPartitionsByFilter
+Method-returnType:int
+Method-parameters:[String db_name, String tbl_name, String filter]
+MethodInvocation:getNumPartitionsByFilter
+MethodInvocation:getDefaultCatalog
+Method-name:getNumPartitionsByFilter
+Method-returnType:int
+Method-parameters:[String catName, String dbName, String tableName, String filter]
+MethodInvocation:get_num_partitions_by_filter
+MethodInvocation:prependCatalogToDbName
+Method-name:alter_partition
+Method-returnType:void
+Method-parameters:[String dbName, String tblName, Partition newPart]
+MethodInvocation:alter_partition
+MethodInvocation:getDefaultCatalog
+Method-name:alter_partition
+Method-returnType:void
+Method-parameters:[String dbName, String tblName, Partition newPart, EnvironmentContext environmentContext]
+MethodInvocation:alter_partition
+MethodInvocation:getDefaultCatalog
+Method-name:alter_partition
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String tblName, Partition newPart, EnvironmentContext environmentContext]
+MethodInvocation:newArrayList
+MethodInvocation:setCatName
+MethodInvocation:setEnvironmentContext
+MethodInvocation:alter_partitions_req
+Method-name:alter_partition
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String tblName, Partition newPart, EnvironmentContext environmentContext, String writeIdList]
+MethodInvocation:newArrayList
+MethodInvocation:setCatName
+MethodInvocation:setEnvironmentContext
+MethodInvocation:setValidWriteIdList
+MethodInvocation:alter_partitions_req
+Method-name:alter_partitions
+Method-returnType:void
+Method-parameters:[String dbName, String tblName, List<Partition> newParts]
+MethodInvocation:alter_partitions
+MethodInvocation:getDefaultCatalog
+Method-name:alter_partitions
+Method-returnType:void
+Method-parameters:[String dbName, String tblName, List<Partition> newParts, EnvironmentContext environmentContext]
+MethodInvocation:alter_partitions
+MethodInvocation:getDefaultCatalog
+Method-name:alter_partitions
+Method-returnType:void
+Method-parameters:[String dbName, String tblName, List<Partition> newParts, EnvironmentContext environmentContext, String writeIdList, long writeId]
+MethodInvocation:alter_partitions
+MethodInvocation:getDefaultCatalog
+Method-name:alter_partitions
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String tblName, List<Partition> newParts, EnvironmentContext environmentContext, String writeIdList, long writeId]
+MethodInvocation:setCatName
+MethodInvocation:setDbName
+MethodInvocation:setTableName
+MethodInvocation:setPartitions
+MethodInvocation:setEnvironmentContext
+MethodInvocation:setValidWriteIdList
+MethodInvocation:setWriteId
+MethodInvocation:alter_partitions_req
+Method-name:alterDatabase
+Method-returnType:void
+Method-parameters:[String dbName, Database db]
+MethodInvocation:alterDatabase
+MethodInvocation:getDefaultCatalog
+Method-name:alterDatabase
+Method-returnType:void
+Method-parameters:[String catName, String dbName, Database newDb]
+MethodInvocation:alter_database
+MethodInvocation:prependCatalogToDbName
+Method-name:getFields
+Method-returnType:List<FieldSchema>
+Method-parameters:[String db, String tableName]
+MethodInvocation:getFields
+MethodInvocation:getDefaultCatalog
+Method-name:getFields
+Method-returnType:List<FieldSchema>
+Method-parameters:[String catName, String db, String tableName]
+MethodInvocation:get_fields
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:deepCopyFieldSchemas
+Method-name:getPrimaryKeys
+Method-returnType:List<SQLPrimaryKey>
+Method-parameters:[PrimaryKeysRequest req]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:getPrimaryKeys
+MethodInvocation:get_primary_keys
+Method-name:getForeignKeys
+Method-returnType:List<SQLForeignKey>
+Method-parameters:[ForeignKeysRequest req]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:getForeignKeys
+MethodInvocation:get_foreign_keys
+Method-name:getUniqueConstraints
+Method-returnType:List<SQLUniqueConstraint>
+Method-parameters:[UniqueConstraintsRequest req]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:getUniqueConstraints
+MethodInvocation:get_unique_constraints
+Method-name:getNotNullConstraints
+Method-returnType:List<SQLNotNullConstraint>
+Method-parameters:[NotNullConstraintsRequest req]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:getNotNullConstraints
+MethodInvocation:get_not_null_constraints
+Method-name:getDefaultConstraints
+Method-returnType:List<SQLDefaultConstraint>
+Method-parameters:[DefaultConstraintsRequest req]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:getDefaultConstraints
+MethodInvocation:get_default_constraints
+Method-name:getCheckConstraints
+Method-returnType:List<SQLCheckConstraint>
+Method-parameters:[CheckConstraintsRequest req]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:getCheckConstraints
+MethodInvocation:get_check_constraints
+Method-name:updateTableColumnStatistics
+Method-returnType:boolean
+Method-parameters:[ColumnStatistics statsObj]
+MethodInvocation:isSetCatName
+MethodInvocation:getStatsDesc
+MethodInvocation:setCatName
+MethodInvocation:getStatsDesc
+MethodInvocation:getDefaultCatalog
+MethodInvocation:addToColStats
+MethodInvocation:setEngine
+MethodInvocation:getEngine
+MethodInvocation:setNeedMerge
+MethodInvocation:isResult
+MethodInvocation:update_table_column_statistics_req
+Method-name:updatePartitionColumnStatistics
+Method-returnType:boolean
+Method-parameters:[ColumnStatistics statsObj]
+MethodInvocation:isSetCatName
+MethodInvocation:getStatsDesc
+MethodInvocation:setCatName
+MethodInvocation:getStatsDesc
+MethodInvocation:getDefaultCatalog
+MethodInvocation:addToColStats
+MethodInvocation:setEngine
+MethodInvocation:getEngine
+MethodInvocation:setNeedMerge
+MethodInvocation:isResult
+MethodInvocation:update_partition_column_statistics_req
+Method-name:setPartitionColumnStatistics
+Method-returnType:boolean
+Method-parameters:[SetPartitionsStatsRequest request]
+MethodInvocation:getDefaultCatalog
+MethodInvocation:getColStats
+MethodInvocation:isSetCatName
+MethodInvocation:getStatsDesc
+MethodInvocation:setCatName
+MethodInvocation:getStatsDesc
+MethodInvocation:set_aggr_stats_for
+Method-name:flushCache
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:flushCache
+MethodInvocation:warn
+Method-name:getTableColumnStatistics
+Method-returnType:List<ColumnStatisticsObj>
+Method-parameters:[String dbName, String tableName, List<String> colNames, String engine]
+MethodInvocation:getTableColumnStatistics
+MethodInvocation:getDefaultCatalog
+Method-name:getTableColumnStatistics
+Method-returnType:List<ColumnStatisticsObj>
+Method-parameters:[String catName, String dbName, String tableName, List<String> colNames, String engine]
+MethodInvocation:isEmpty
+MethodInvocation:emptyList
+MethodInvocation:setCatName
+MethodInvocation:setEngine
+MethodInvocation:getTableStats
+MethodInvocation:get_table_statistics_req
+Method-name:getTableColumnStatistics
+Method-returnType:List<ColumnStatisticsObj>
+Method-parameters:[String dbName, String tableName, List<String> colNames, String engine, String validWriteIdList]
+MethodInvocation:getTableColumnStatistics
+MethodInvocation:getDefaultCatalog
+Method-name:getTableColumnStatistics
+Method-returnType:List<ColumnStatisticsObj>
+Method-parameters:[String catName, String dbName, String tableName, List<String> colNames, String engine, String validWriteIdList]
+MethodInvocation:isEmpty
+MethodInvocation:emptyList
+MethodInvocation:setCatName
+MethodInvocation:setEngine
+MethodInvocation:setValidWriteIdList
+MethodInvocation:getTableStats
+MethodInvocation:get_table_statistics_req
+Method-name:getPartitionColumnStatistics
+Method-returnType:Map<String,List<ColumnStatisticsObj>>
+Method-parameters:[String dbName, String tableName, List<String> partNames, List<String> colNames, String engine]
+MethodInvocation:getPartitionColumnStatistics
+MethodInvocation:getDefaultCatalog
+Method-name:getPartitionColumnStatistics
+Method-returnType:Map<String,List<ColumnStatisticsObj>>
+Method-parameters:[String catName, String dbName, String tableName, List<String> partNames, List<String> colNames, String engine]
+MethodInvocation:setCatName
+MethodInvocation:getPartStats
+MethodInvocation:get_partitions_statistics_req
+Method-name:deletePartitionColumnStatistics
+Method-returnType:boolean
+Method-parameters:[String dbName, String tableName, String partName, String colName, String engine]
+MethodInvocation:deletePartitionColumnStatistics
+MethodInvocation:getDefaultCatalog
+Method-name:deletePartitionColumnStatistics
+Method-returnType:boolean
+Method-parameters:[String catName, String dbName, String tableName, String partName, String colName, String engine]
+MethodInvocation:delete_partition_column_statistics
+MethodInvocation:prependCatalogToDbName
+Method-name:deleteTableColumnStatistics
+Method-returnType:boolean
+Method-parameters:[String dbName, String tableName, String colName, String engine]
+MethodInvocation:deleteTableColumnStatistics
+MethodInvocation:getDefaultCatalog
+Method-name:deleteTableColumnStatistics
+Method-returnType:boolean
+Method-parameters:[String catName, String dbName, String tableName, String colName, String engine]
+MethodInvocation:delete_table_column_statistics
+MethodInvocation:prependCatalogToDbName
+Method-name:getSchema
+Method-returnType:List<FieldSchema>
+Method-parameters:[String db, String tableName]
+MethodInvocation:getSchema
+MethodInvocation:getDefaultCatalog
+Method-name:getSchema
+Method-returnType:List<FieldSchema>
+Method-parameters:[String catName, String db, String tableName]
+MethodInvocation:getVar
+MethodInvocation:isNotBlank
+MethodInvocation:put
+MethodInvocation:get_schema_with_environment_context
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:deepCopyFieldSchemas
+Method-name:getConfigValue
+Method-returnType:String
+Method-parameters:[String name, String defaultValue]
+MethodInvocation:get_config_value
+Method-name:getPartition
+Method-returnType:Partition
+Method-parameters:[String db, String tableName, String partName]
+MethodInvocation:getPartition
+MethodInvocation:getDefaultCatalog
+Method-name:getPartition
+Method-returnType:Partition
+Method-parameters:[String catName, String dbName, String tblName, String name]
+MethodInvocation:get_partition_by_name
+MethodInvocation:prependCatalogToDbName
+MethodInvocation:deepCopy
+MethodInvocation:filterPartitionIfEnabled
+Method-name:appendPartitionByName
+Method-returnType:Partition
+Method-parameters:[String dbName, String tableName, String partName]
+MethodInvocation:appendPartitionByName
+Method-name:appendPartitionByName
+Method-returnType:Partition
+Method-parameters:[String dbName, String tableName, String partName, EnvironmentContext envContext]
+MethodInvocation:append_partition_by_name_with_environment_context
+MethodInvocation:deepCopy
+Method-name:dropPartitionByName
+Method-returnType:boolean
+Method-parameters:[String dbName, String tableName, String partName, boolean deleteData]
+MethodInvocation:dropPartitionByName
+Method-name:dropPartitionByName
+Method-returnType:boolean
+Method-parameters:[String dbName, String tableName, String partName, boolean deleteData, EnvironmentContext envContext]
+MethodInvocation:drop_partition_by_name_with_environment_context
+Method-name:getHook
+Method-returnType:HiveMetaHook
+Method-parameters:[Table tbl]
+MethodInvocation:getHook
+Method-name:checkDbAndTableFilters
+Method-returnType:void
+Method-parameters:[final String catName, final String dbName, final String tblName]
+MethodInvocation:checkDbAndTableFilters
+Method-name:partitionNameToVals
+Method-returnType:List<String>
+Method-parameters:[String name]
+MethodInvocation:partition_name_to_vals
+Method-name:partitionNameToSpec
+Method-returnType:Map<String,String>
+Method-parameters:[String name]
+MethodInvocation:partition_name_to_spec
+Method-name:deepCopy
+Method-returnType:Partition
+Method-parameters:[Partition partition]
+Method-name:deepCopy
+Method-returnType:Database
+Method-parameters:[Database database]
+Method-name:deepCopy
+Method-returnType:Table
+Method-parameters:[Table table]
+Method-name:deepCopy
+Method-returnType:Type
+Method-parameters:[Type type]
+Method-name:deepCopy
+Method-returnType:FieldSchema
+Method-parameters:[FieldSchema schema]
+Method-name:deepCopy
+Method-returnType:Function
+Method-parameters:[Function func]
+Method-name:deepCopyPartitions
+Method-returnType:List<Partition>
+Method-parameters:[List<Partition> partitions]
+MethodInvocation:deepCopyPartitions
+Method-name:deepCopyPartitions
+Method-returnType:List<Partition>
+Method-parameters:[Collection<Partition> src, List<Partition> dest]
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:deepCopy
+Method-name:deepCopyTables
+Method-returnType:List<Table>
+Method-parameters:[List<Table> tables]
+MethodInvocation:add
+MethodInvocation:deepCopy
+Method-name:deepCopyFieldSchemas
+Method-returnType:List<FieldSchema>
+Method-parameters:[List<FieldSchema> schemas]
+MethodInvocation:add
+MethodInvocation:deepCopy
+Method-name:grant_role
+Method-returnType:boolean
+Method-parameters:[String roleName, String userName, PrincipalType principalType, String grantor, PrincipalType grantorType, boolean grantOption]
+MethodInvocation:setRequestType
+MethodInvocation:setRoleName
+MethodInvocation:setPrincipalName
+MethodInvocation:setPrincipalType
+MethodInvocation:setGrantor
+MethodInvocation:setGrantorType
+MethodInvocation:setGrantOption
+MethodInvocation:grant_revoke_role
+MethodInvocation:isSetSuccess
+MethodInvocation:isSuccess
+Method-name:create_role
+Method-returnType:boolean
+Method-parameters:[Role role]
+MethodInvocation:create_role
+Method-name:drop_role
+Method-returnType:boolean
+Method-parameters:[String roleName]
+MethodInvocation:drop_role
+Method-name:list_roles
+Method-returnType:List<Role>
+Method-parameters:[String principalName, PrincipalType principalType]
+MethodInvocation:list_roles
+Method-name:listRoleNames
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:get_role_names
+Method-name:get_principals_in_role
+Method-returnType:GetPrincipalsInRoleResponse
+Method-parameters:[GetPrincipalsInRoleRequest req]
+MethodInvocation:get_principals_in_role
+Method-name:get_role_grants_for_principal
+Method-returnType:GetRoleGrantsForPrincipalResponse
+Method-parameters:[GetRoleGrantsForPrincipalRequest getRolePrincReq]
+MethodInvocation:get_role_grants_for_principal
+Method-name:grant_privileges
+Method-returnType:boolean
+Method-parameters:[PrivilegeBag privileges]
+MethodInvocation:getDefaultCatalog
+MethodInvocation:getPrivileges
+MethodInvocation:isSetCatName
+MethodInvocation:getHiveObject
+MethodInvocation:setCatName
+MethodInvocation:getHiveObject
+MethodInvocation:setRequestType
+MethodInvocation:setPrivileges
+MethodInvocation:grant_revoke_privileges
+MethodInvocation:isSetSuccess
+MethodInvocation:isSuccess
+Method-name:revoke_role
+Method-returnType:boolean
+Method-parameters:[String roleName, String userName, PrincipalType principalType, boolean grantOption]
+MethodInvocation:setRequestType
+MethodInvocation:setRoleName
+MethodInvocation:setPrincipalName
+MethodInvocation:setPrincipalType
+MethodInvocation:setGrantOption
+MethodInvocation:grant_revoke_role
+MethodInvocation:isSetSuccess
+MethodInvocation:isSuccess
+Method-name:revoke_privileges
+Method-returnType:boolean
+Method-parameters:[PrivilegeBag privileges, boolean grantOption]
+MethodInvocation:getDefaultCatalog
+MethodInvocation:getPrivileges
+MethodInvocation:isSetCatName
+MethodInvocation:getHiveObject
+MethodInvocation:setCatName
+MethodInvocation:getHiveObject
+MethodInvocation:setRequestType
+MethodInvocation:setPrivileges
+MethodInvocation:setRevokeGrantOption
+MethodInvocation:grant_revoke_privileges
+MethodInvocation:isSetSuccess
+MethodInvocation:isSuccess
+Method-name:refresh_privileges
+Method-returnType:boolean
+Method-parameters:[HiveObjectRef objToRefresh, String authorizer, PrivilegeBag grantPrivileges]
+MethodInvocation:getDefaultCatalog
+MethodInvocation:setCatName
+MethodInvocation:getPrivileges
+MethodInvocation:getPrivileges
+MethodInvocation:isSetCatName
+MethodInvocation:getHiveObject
+MethodInvocation:setCatName
+MethodInvocation:getHiveObject
+MethodInvocation:setRequestType
+MethodInvocation:setPrivileges
+MethodInvocation:refresh_privileges
+MethodInvocation:isSetSuccess
+MethodInvocation:isSuccess
+Method-name:get_privilege_set
+Method-returnType:PrincipalPrivilegeSet
+Method-parameters:[HiveObjectRef hiveObject, String userName, List<String> groupNames]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:get_privilege_set
+Method-name:list_privileges
+Method-returnType:List<HiveObjectPrivilege>
+Method-parameters:[String principalName, PrincipalType principalType, HiveObjectRef hiveObject]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:list_privileges
+Method-name:getDelegationToken
+Method-returnType:String
+Method-parameters:[String renewerKerberosPrincipalName]
+MethodInvocation:getUser
+MethodInvocation:getDelegationToken
+Method-name:getDelegationToken
+Method-returnType:String
+Method-parameters:[String owner, String renewerKerberosPrincipalName]
+MethodInvocation:get_delegation_token
+Method-name:renewDelegationToken
+Method-returnType:long
+Method-parameters:[String tokenStrForm]
+MethodInvocation:renew_delegation_token
+Method-name:cancelDelegationToken
+Method-returnType:void
+Method-parameters:[String tokenStrForm]
+MethodInvocation:cancel_delegation_token
+Method-name:addToken
+Method-returnType:boolean
+Method-parameters:[String tokenIdentifier, String delegationToken]
+MethodInvocation:add_token
+Method-name:removeToken
+Method-returnType:boolean
+Method-parameters:[String tokenIdentifier]
+MethodInvocation:remove_token
+Method-name:getToken
+Method-returnType:String
+Method-parameters:[String tokenIdentifier]
+MethodInvocation:get_token
+Method-name:getAllTokenIdentifiers
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:get_all_token_identifiers
+Method-name:addMasterKey
+Method-returnType:int
+Method-parameters:[String key]
+MethodInvocation:add_master_key
+Method-name:updateMasterKey
+Method-returnType:void
+Method-parameters:[Integer seqNo, String key]
+MethodInvocation:update_master_key
+Method-name:removeMasterKey
+Method-returnType:boolean
+Method-parameters:[Integer keySeq]
+MethodInvocation:remove_master_key
+Method-name:getMasterKeys
+Method-returnType:String[]
+Method-parameters:[]
+MethodInvocation:get_master_keys
+MethodInvocation:toArray
+MethodInvocation:size
+Method-name:getValidTxns
+Method-returnType:ValidTxnList
+Method-parameters:[]
+MethodInvocation:createValidReadTxnList
+MethodInvocation:get_open_txns
+Method-name:getValidTxns
+Method-returnType:ValidTxnList
+Method-parameters:[long currentTxn]
+MethodInvocation:createValidReadTxnList
+MethodInvocation:get_open_txns
+Method-name:getValidWriteIds
+Method-returnType:ValidWriteIdList
+Method-parameters:[String fullTableName]
+MethodInvocation:singletonList
+MethodInvocation:get_valid_write_ids
+MethodInvocation:createValidReaderWriteIdList
+MethodInvocation:get
+MethodInvocation:getTblValidWriteIds
+Method-name:getValidWriteIds
+Method-returnType:ValidWriteIdList
+Method-parameters:[String fullTableName, Long writeId]
+MethodInvocation:singletonList
+MethodInvocation:setWriteId
+MethodInvocation:get_valid_write_ids
+MethodInvocation:createValidReaderWriteIdList
+MethodInvocation:get
+MethodInvocation:getTblValidWriteIds
+Method-name:getValidWriteIds
+Method-returnType:List<TableValidWriteIds>
+Method-parameters:[List<String> tablesList, String validTxnList]
+MethodInvocation:setValidTxnList
+MethodInvocation:getTblValidWriteIds
+MethodInvocation:get_valid_write_ids
+Method-name:openTxn
+Method-returnType:long
+Method-parameters:[String user]
+MethodInvocation:openTxnsIntr
+MethodInvocation:get
+MethodInvocation:getTxn_ids
+Method-name:openTxn
+Method-returnType:long
+Method-parameters:[String user, TxnType txnType]
+MethodInvocation:openTxnsIntr
+MethodInvocation:get
+MethodInvocation:getTxn_ids
+Method-name:replOpenTxn
+Method-returnType:List<Long>
+Method-parameters:[String replPolicy, List<Long> srcTxnIds, String user]
+MethodInvocation:openTxnsIntr
+MethodInvocation:size
+MethodInvocation:getTxn_ids
+Method-name:openTxns
+Method-returnType:OpenTxnsResponse
+Method-parameters:[String user, int numTxns]
+MethodInvocation:openTxnsIntr
+Method-name:openTxnsIntr
+Method-returnType:OpenTxnsResponse
+Method-parameters:[String user, int numTxns, String replPolicy, List<Long> srcTxnIds, TxnType txnType]
+Method-name:rollbackTxn
+Method-returnType:void
+Method-parameters:[long txnid]
+MethodInvocation:abort_txn
+Method-name:replRollbackTxn
+Method-returnType:void
+Method-parameters:[long srcTxnId, String replPolicy]
+MethodInvocation:setReplPolicy
+MethodInvocation:abort_txn
+Method-name:commitTxn
+Method-returnType:void
+Method-parameters:[long txnid]
+MethodInvocation:commit_txn
+Method-name:commitTxnWithKeyValue
+Method-returnType:void
+Method-parameters:[long txnid, long tableId, String key, String value]
+MethodInvocation:checkNotNull
+MethodInvocation:checkNotNull
+MethodInvocation:setKeyValue
+MethodInvocation:commit_txn
+Method-name:replCommitTxn
+Method-returnType:void
+Method-parameters:[CommitTxnRequest rqst]
+MethodInvocation:commit_txn
+Method-name:showTxns
+Method-returnType:GetOpenTxnsInfoResponse
+Method-parameters:[]
+MethodInvocation:get_open_txns_info
+Method-name:abortTxns
+Method-returnType:void
+Method-parameters:[List<Long> txnids]
+MethodInvocation:abort_txns
+Method-name:replTableWriteIdState
+Method-returnType:void
+Method-parameters:[String validWriteIdList, String dbName, String tableName, List<String> partNames]
+MethodInvocation:getUserName
+MethodInvocation:getCurrentUser
+MethodInvocation:error
+MethodInvocation:getMessage
+MethodInvocation:getHostName
+MethodInvocation:getLocalHost
+MethodInvocation:error
+MethodInvocation:getMessage
+MethodInvocation:setPartNames
+MethodInvocation:repl_tbl_writeid_state
+Method-name:allocateTableWriteId
+Method-returnType:long
+Method-parameters:[long txnId, String dbName, String tableName]
+MethodInvocation:getWriteId
+MethodInvocation:get
+MethodInvocation:allocateTableWriteIdsBatch
+MethodInvocation:singletonList
+Method-name:allocateTableWriteIdsBatch
+Method-returnType:List<TxnToWriteId>
+Method-parameters:[List<Long> txnIds, String dbName, String tableName]
+MethodInvocation:setTxnIds
+MethodInvocation:allocateTableWriteIdsBatchIntr
+Method-name:replAllocateTableWriteIdsBatch
+Method-returnType:List<TxnToWriteId>
+Method-parameters:[String dbName, String tableName, String replPolicy, List<TxnToWriteId> srcTxnToWriteIdList]
+MethodInvocation:setReplPolicy
+MethodInvocation:setSrcTxnToWriteIdList
+MethodInvocation:allocateTableWriteIdsBatchIntr
+Method-name:allocateTableWriteIdsBatchIntr
+Method-returnType:List<TxnToWriteId>
+Method-parameters:[AllocateTableWriteIdsRequest rqst]
+MethodInvocation:getTxnToWriteIds
+MethodInvocation:allocate_table_write_ids
+Method-name:lock
+Method-returnType:LockResponse
+Method-parameters:[LockRequest request]
+MethodInvocation:lock
+Method-name:checkLock
+Method-returnType:LockResponse
+Method-parameters:[long lockid]
+MethodInvocation:check_lock
+Method-name:unlock
+Method-returnType:void
+Method-parameters:[long lockid]
+MethodInvocation:unlock
+Method-name:showLocks
+Method-returnType:ShowLocksResponse
+Method-parameters:[]
+MethodInvocation:show_locks
+Method-name:showLocks
+Method-returnType:ShowLocksResponse
+Method-parameters:[ShowLocksRequest request]
+MethodInvocation:show_locks
+Method-name:heartbeat
+Method-returnType:void
+Method-parameters:[long txnid, long lockid]
+MethodInvocation:setLockid
+MethodInvocation:setTxnid
+MethodInvocation:heartbeat
+Method-name:heartbeatTxnRange
+Method-returnType:HeartbeatTxnRangeResponse
+Method-parameters:[long min, long max]
+MethodInvocation:heartbeat_txn_range
+Method-name:compact
+Method-returnType:void
+Method-parameters:[String dbname, String tableName, String partitionName, CompactionType type]
+MethodInvocation:setDbname
+MethodInvocation:setDbname
+MethodInvocation:setTablename
+MethodInvocation:setPartitionname
+MethodInvocation:setType
+MethodInvocation:compact
+Method-name:compact
+Method-returnType:void
+Method-parameters:[String dbname, String tableName, String partitionName, CompactionType type, Map<String,String> tblproperties]
+MethodInvocation:compact2
+Method-name:compact2
+Method-returnType:CompactionResponse
+Method-parameters:[String dbname, String tableName, String partitionName, CompactionType type, Map<String,String> tblproperties]
+MethodInvocation:setDbname
+MethodInvocation:setDbname
+MethodInvocation:setTablename
+MethodInvocation:setPartitionname
+MethodInvocation:setType
+MethodInvocation:setProperties
+MethodInvocation:compact2
+Method-name:showCompactions
+Method-returnType:ShowCompactResponse
+Method-parameters:[]
+MethodInvocation:show_compact
+MethodInvocation:setCompacts
+MethodInvocation:filterCompactionsIfEnabled
+MethodInvocation:getDefaultCatalog
+MethodInvocation:getCompacts
+Method-name:addDynamicPartitions
+Method-returnType:void
+Method-parameters:[long txnId, long writeId, String dbName, String tableName, List<String> partNames]
+MethodInvocation:add_dynamic_partitions
+Method-name:addDynamicPartitions
+Method-returnType:void
+Method-parameters:[long txnId, long writeId, String dbName, String tableName, List<String> partNames, DataOperationType operationType]
+MethodInvocation:setOperationType
+MethodInvocation:add_dynamic_partitions
+Method-name:insertTable
+Method-returnType:void
+Method-parameters:[Table table, boolean overwrite]
+MethodInvocation:getHook
+MethodInvocation:commitInsertTable
+MethodInvocation:rollbackInsertTable
+Method-name:getNextNotification
+Method-returnType:NotificationEventResponse
+Method-parameters:[long lastEventId, int maxEvents, NotificationFilter filter]
+MethodInvocation:setMaxEvents
+MethodInvocation:get_next_notification
+MethodInvocation:debug
+MethodInvocation:getEventsSize
+MethodInvocation:getEvents
+MethodInvocation:getEvents
+MethodInvocation:debug
+MethodInvocation:getEventId
+MethodInvocation:getEventId
+MethodInvocation:getEventId
+MethodInvocation:error
+MethodInvocation:error
+MethodInvocation:getEventId
+MethodInvocation:accept
+MethodInvocation:addToEvents
+Method-name:getCurrentNotificationEventId
+Method-returnType:CurrentNotificationEventId
+Method-parameters:[]
+MethodInvocation:get_current_notificationEventId
+Method-name:getNotificationEventsCount
+Method-returnType:NotificationEventsCountResponse
+Method-parameters:[NotificationEventsCountRequest rqst]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:get_notification_events_count
+Method-name:fireListenerEvent
+Method-returnType:FireEventResponse
+Method-parameters:[FireEventRequest rqst]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:fire_listener_event
+Method-name:addWriteNotificationLog
+Method-returnType:void
+Method-parameters:[WriteNotificationLogRequest rqst]
+MethodInvocation:add_write_notification_log
+Method-name:newSynchronizedClient
+Method-returnType:IMetaStoreClient
+Method-parameters:[IMetaStoreClient client]
+MethodInvocation:newProxyInstance
+MethodInvocation:getClassLoader
+Class:SynchronizedHandler
+Field:client
+Method-name:SynchronizedHandler
+Method-returnType:null
+Method-parameters:[IMetaStoreClient client]
+FieldAccess:client
+Method-name:invoke
+Method-returnType:Object
+Method-parameters:[Object proxy, Method method, Object[] args]
+MethodInvocation:invoke
+MethodInvocation:getTargetException
+Method-name:markPartitionForEvent
+Method-returnType:void
+Method-parameters:[String db_name, String tbl_name, Map<String,String> partKVs, PartitionEventType eventType]
+MethodInvocation:markPartitionForEvent
+MethodInvocation:getDefaultCatalog
+Method-name:markPartitionForEvent
+Method-returnType:void
+Method-parameters:[String catName, String db_name, String tbl_name, Map<String,String> partKVs, PartitionEventType eventType]
+MethodInvocation:markPartitionForEvent
+MethodInvocation:prependCatalogToDbName
+Method-name:isPartitionMarkedForEvent
+Method-returnType:boolean
+Method-parameters:[String db_name, String tbl_name, Map<String,String> partKVs, PartitionEventType eventType]
+MethodInvocation:isPartitionMarkedForEvent
+MethodInvocation:getDefaultCatalog
+Method-name:isPartitionMarkedForEvent
+Method-returnType:boolean
+Method-parameters:[String catName, String db_name, String tbl_name, Map<String,String> partKVs, PartitionEventType eventType]
+MethodInvocation:isPartitionMarkedForEvent
+MethodInvocation:prependCatalogToDbName
+Method-name:createFunction
+Method-returnType:void
+Method-parameters:[Function func]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:create_function
+Method-name:alterFunction
+Method-returnType:void
+Method-parameters:[String dbName, String funcName, Function newFunction]
+MethodInvocation:alterFunction
+MethodInvocation:getDefaultCatalog
+Method-name:alterFunction
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String funcName, Function newFunction]
+MethodInvocation:alter_function
+MethodInvocation:prependCatalogToDbName
+Method-name:dropFunction
+Method-returnType:void
+Method-parameters:[String dbName, String funcName]
+MethodInvocation:dropFunction
+MethodInvocation:getDefaultCatalog
+Method-name:dropFunction
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String funcName]
+MethodInvocation:drop_function
+MethodInvocation:prependCatalogToDbName
+Method-name:getFunction
+Method-returnType:Function
+Method-parameters:[String dbName, String funcName]
+MethodInvocation:getFunction
+MethodInvocation:getDefaultCatalog
+Method-name:getFunction
+Method-returnType:Function
+Method-parameters:[String catName, String dbName, String funcName]
+MethodInvocation:deepCopy
+MethodInvocation:get_function
+MethodInvocation:prependCatalogToDbName
+Method-name:getFunctions
+Method-returnType:List<String>
+Method-parameters:[String dbName, String pattern]
+MethodInvocation:getFunctions
+MethodInvocation:getDefaultCatalog
+Method-name:getFunctions
+Method-returnType:List<String>
+Method-parameters:[String catName, String dbName, String pattern]
+MethodInvocation:get_functions
+MethodInvocation:prependCatalogToDbName
+Method-name:getAllFunctions
+Method-returnType:GetAllFunctionsResponse
+Method-parameters:[]
+MethodInvocation:get_all_functions
+Method-name:create_table_with_environment_context
+Method-returnType:void
+Method-parameters:[Table tbl, EnvironmentContext envContext]
+MethodInvocation:setEnvContext
+MethodInvocation:setProcessorCapabilities
+MethodInvocation:asList
+MethodInvocation:setProcessorIdentifier
+MethodInvocation:create_table_req
+Method-name:drop_table_with_environment_context
+Method-returnType:void
+Method-parameters:[String catName, String dbname, String name, boolean deleteData, EnvironmentContext envContext]
+MethodInvocation:drop_table_with_environment_context
+MethodInvocation:prependCatalogToDbName
+Method-name:getAggrColStatsFor
+Method-returnType:AggrStats
+Method-parameters:[String dbName, String tblName, List<String> colNames, List<String> partNames, String engine]
+MethodInvocation:getAggrColStatsFor
+MethodInvocation:getDefaultCatalog
+Method-name:getAggrColStatsFor
+Method-returnType:AggrStats
+Method-parameters:[String catName, String dbName, String tblName, List<String> colNames, List<String> partNames, String engine]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:debug
+MethodInvocation:setCatName
+MethodInvocation:get_aggr_stats_for
+Method-name:getFileMetadata
+Method-returnType:Iterable<Entry<Long,ByteBuffer>>
+Method-parameters:[final List<Long> fileIds]
+Field:listIndex
+Method-name:fetchNextBatch
+Method-returnType:Map<Long,ByteBuffer>
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:min
+MethodInvocation:size
+MethodInvocation:subList
+MethodInvocation:sendGetFileMetadataReq
+MethodInvocation:isIsSupported
+MethodInvocation:getMetadata
+Method-name:sendGetFileMetadataReq
+Method-returnType:GetFileMetadataResult
+Method-parameters:[List<Long> fileIds]
+MethodInvocation:get_file_metadata
+Method-name:getFileMetadataBySarg
+Method-returnType:Iterable<Entry<Long,MetadataPpdResult>>
+Method-parameters:[final List<Long> fileIds, final ByteBuffer sarg, final boolean doGetFooters]
+Field:listIndex
+Method-name:fetchNextBatch
+Method-returnType:Map<Long,MetadataPpdResult>
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:min
+MethodInvocation:size
+MethodInvocation:subList
+MethodInvocation:sendGetFileMetadataBySargReq
+MethodInvocation:isIsSupported
+MethodInvocation:getMetadata
+Method-name:sendGetFileMetadataBySargReq
+Method-returnType:GetFileMetadataByExprResult
+Method-parameters:[ByteBuffer sarg, List<Long> fileIds, boolean doGetFooters]
+MethodInvocation:setDoGetFooters
+MethodInvocation:get_file_metadata_by_expr
+Class:MetastoreMapIterable
+Field:currentIter
+Method-name:fetchNextBatch
+Method-returnType:Map<K,V>
+Method-parameters:[]
+Method-name:iterator
+Method-returnType:Iterator<Entry<K,V>>
+Method-parameters:[]
+Method-name:hasNext
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:ensureCurrentBatch
+Method-name:ensureCurrentBatch
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:hasNext
+MethodInvocation:fetchNextBatch
+MethodInvocation:isEmpty
+MethodInvocation:iterator
+MethodInvocation:entrySet
+Method-name:next
+Method-returnType:Entry<K,V>
+Method-parameters:[]
+MethodInvocation:ensureCurrentBatch
+MethodInvocation:next
+Method-name:remove
+Method-returnType:void
+Method-parameters:[]
+Method-name:clearFileMetadata
+Method-returnType:void
+Method-parameters:[List<Long> fileIds]
+MethodInvocation:setFileIds
+MethodInvocation:clear_file_metadata
+Method-name:putFileMetadata
+Method-returnType:void
+Method-parameters:[List<Long> fileIds, List<ByteBuffer> metadata]
+MethodInvocation:setFileIds
+MethodInvocation:setMetadata
+MethodInvocation:put_file_metadata
+Method-name:isSameConfObj
+Method-returnType:boolean
+Method-parameters:[Configuration c]
+Method-name:cacheFileMetadata
+Method-returnType:boolean
+Method-parameters:[String dbName, String tableName, String partName, boolean allParts]
+MethodInvocation:setDbName
+MethodInvocation:setTblName
+MethodInvocation:setPartName
+MethodInvocation:setIsAllParts
+MethodInvocation:cache_file_metadata
+MethodInvocation:isIsSupported
+Method-name:getMetastoreDbUuid
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:get_metastore_db_uuid
+Method-name:createResourcePlan
+Method-returnType:void
+Method-parameters:[WMResourcePlan resourcePlan, String copyFromName]
+MethodInvocation:setResourcePlan
+MethodInvocation:setCopyFrom
+MethodInvocation:create_resource_plan
+Method-name:getResourcePlan
+Method-returnType:WMFullResourcePlan
+Method-parameters:[String resourcePlanName, String ns]
+MethodInvocation:setResourcePlanName
+MethodInvocation:setNs
+MethodInvocation:getResourcePlan
+MethodInvocation:get_resource_plan
+Method-name:getAllResourcePlans
+Method-returnType:List<WMResourcePlan>
+Method-parameters:[String ns]
+MethodInvocation:setNs
+MethodInvocation:getResourcePlans
+MethodInvocation:get_all_resource_plans
+Method-name:dropResourcePlan
+Method-returnType:void
+Method-parameters:[String resourcePlanName, String ns]
+MethodInvocation:setResourcePlanName
+MethodInvocation:setNs
+MethodInvocation:drop_resource_plan
+Method-name:alterResourcePlan
+Method-returnType:WMFullResourcePlan
+Method-parameters:[String resourcePlanName, String ns, WMNullableResourcePlan resourcePlan, boolean canActivateDisabled, boolean isForceDeactivate, boolean isReplace]
+MethodInvocation:setResourcePlanName
+MethodInvocation:setNs
+MethodInvocation:setResourcePlan
+MethodInvocation:setIsEnableAndActivate
+MethodInvocation:setIsForceDeactivate
+MethodInvocation:setIsReplace
+MethodInvocation:alter_resource_plan
+MethodInvocation:isSetFullResourcePlan
+MethodInvocation:getFullResourcePlan
+Method-name:getActiveResourcePlan
+Method-returnType:WMFullResourcePlan
+Method-parameters:[String ns]
+MethodInvocation:setNs
+MethodInvocation:getResourcePlan
+MethodInvocation:get_active_resource_plan
+Method-name:validateResourcePlan
+Method-returnType:WMValidateResourcePlanResponse
+Method-parameters:[String resourcePlanName, String ns]
+MethodInvocation:setResourcePlanName
+MethodInvocation:setNs
+MethodInvocation:validate_resource_plan
+Method-name:createWMTrigger
+Method-returnType:void
+Method-parameters:[WMTrigger trigger]
+MethodInvocation:setTrigger
+MethodInvocation:create_wm_trigger
+Method-name:alterWMTrigger
+Method-returnType:void
+Method-parameters:[WMTrigger trigger]
+MethodInvocation:setTrigger
+MethodInvocation:alter_wm_trigger
+Method-name:dropWMTrigger
+Method-returnType:void
+Method-parameters:[String resourcePlanName, String triggerName, String ns]
+MethodInvocation:setResourcePlanName
+MethodInvocation:setTriggerName
+MethodInvocation:setNs
+MethodInvocation:drop_wm_trigger
+Method-name:getTriggersForResourcePlan
+Method-returnType:List<WMTrigger>
+Method-parameters:[String resourcePlan, String ns]
+MethodInvocation:setResourcePlanName
+MethodInvocation:setNs
+MethodInvocation:getTriggers
+MethodInvocation:get_triggers_for_resourceplan
+Method-name:createWMPool
+Method-returnType:void
+Method-parameters:[WMPool pool]
+MethodInvocation:setPool
+MethodInvocation:create_wm_pool
+Method-name:alterWMPool
+Method-returnType:void
+Method-parameters:[WMNullablePool pool, String poolPath]
+MethodInvocation:setPool
+MethodInvocation:setPoolPath
+MethodInvocation:alter_wm_pool
+Method-name:dropWMPool
+Method-returnType:void
+Method-parameters:[String resourcePlanName, String poolPath, String ns]
+MethodInvocation:setResourcePlanName
+MethodInvocation:setPoolPath
+MethodInvocation:setNs
+MethodInvocation:drop_wm_pool
+Method-name:createOrUpdateWMMapping
+Method-returnType:void
+Method-parameters:[WMMapping mapping, boolean isUpdate]
+MethodInvocation:setMapping
+MethodInvocation:setUpdate
+MethodInvocation:create_or_update_wm_mapping
+Method-name:dropWMMapping
+Method-returnType:void
+Method-parameters:[WMMapping mapping]
+MethodInvocation:setMapping
+MethodInvocation:drop_wm_mapping
+Method-name:createOrDropTriggerToPoolMapping
+Method-returnType:void
+Method-parameters:[String resourcePlanName, String triggerName, String poolPath, boolean shouldDrop, String ns]
+MethodInvocation:setResourcePlanName
+MethodInvocation:setTriggerName
+MethodInvocation:setPoolPath
+MethodInvocation:setDrop
+MethodInvocation:setNs
+MethodInvocation:create_or_drop_wm_trigger_to_pool_mapping
+Method-name:createISchema
+Method-returnType:void
+Method-parameters:[ISchema schema]
+MethodInvocation:isSetCatName
+MethodInvocation:setCatName
+MethodInvocation:getDefaultCatalog
+MethodInvocation:create_ischema
+Method-name:alterISchema
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String schemaName, ISchema newSchema]
+MethodInvocation:alter_ischema
+Method-name:getISchema
+Method-returnType:ISchema
+Method-parameters:[String catName, String dbName, String name]
+MethodInvocation:get_ischema
+Method-name:dropISchema
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String name]
+MethodInvocation:drop_ischema
+Method-name:addSchemaVersion
+Method-returnType:void
+Method-parameters:[SchemaVersion schemaVersion]
+MethodInvocation:isSetCatName
+MethodInvocation:getSchema
+MethodInvocation:setCatName
+MethodInvocation:getSchema
+MethodInvocation:getDefaultCatalog
+MethodInvocation:add_schema_version
+Method-name:getSchemaVersion
+Method-returnType:SchemaVersion
+Method-parameters:[String catName, String dbName, String schemaName, int version]
+MethodInvocation:get_schema_version
+Method-name:getSchemaLatestVersion
+Method-returnType:SchemaVersion
+Method-parameters:[String catName, String dbName, String schemaName]
+MethodInvocation:get_schema_latest_version
+Method-name:getSchemaAllVersions
+Method-returnType:List<SchemaVersion>
+Method-parameters:[String catName, String dbName, String schemaName]
+MethodInvocation:get_schema_all_versions
+Method-name:dropSchemaVersion
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String schemaName, int version]
+MethodInvocation:drop_schema_version
+Method-name:getSchemaByCols
+Method-returnType:FindSchemasByColsResp
+Method-parameters:[FindSchemasByColsRqst rqst]
+MethodInvocation:get_schemas_by_cols
+Method-name:mapSchemaVersionToSerde
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String schemaName, int version, String serdeName]
+MethodInvocation:map_schema_version_to_serde
+Method-name:setSchemaVersionState
+Method-returnType:void
+Method-parameters:[String catName, String dbName, String schemaName, int version, SchemaVersionState state]
+MethodInvocation:set_schema_version_state
+Method-name:addSerDe
+Method-returnType:void
+Method-parameters:[SerDeInfo serDeInfo]
+MethodInvocation:add_serde
+Method-name:getSerDe
+Method-returnType:SerDeInfo
+Method-parameters:[String serDeName]
+MethodInvocation:get_serde
+Method-name:shrinkMaxtoShort
+Method-returnType:short
+Method-parameters:[int max]
+Method-name:lockMaterializationRebuild
+Method-returnType:LockResponse
+Method-parameters:[String dbName, String tableName, long txnId]
+MethodInvocation:get_lock_materialization_rebuild
+Method-name:heartbeatLockMaterializationRebuild
+Method-returnType:boolean
+Method-parameters:[String dbName, String tableName, long txnId]
+MethodInvocation:heartbeat_lock_materialization_rebuild
+Method-name:addRuntimeStat
+Method-returnType:void
+Method-parameters:[RuntimeStat stat]
+MethodInvocation:add_runtime_stats
+Method-name:getRuntimeStats
+Method-returnType:List<RuntimeStat>
+Method-parameters:[int maxWeight, int maxCreateTime]
+MethodInvocation:setMaxWeight
+MethodInvocation:setMaxCreateTime
+MethodInvocation:get_runtime_stats
+Method-name:getPartitionsWithSpecs
+Method-returnType:GetPartitionsResponse
+Method-parameters:[GetPartitionsRequest request]
+MethodInvocation:setProcessorCapabilities
+MethodInvocation:asList
+MethodInvocation:setProcessorIdentifier
+MethodInvocation:get_partitions_with_specs
+Method-name:findNextCompact
+Method-returnType:OptionalCompactionInfoStruct
+Method-parameters:[String workerId]
+MethodInvocation:find_next_compact
+Method-name:updateCompactorState
+Method-returnType:void
+Method-parameters:[CompactionInfoStruct cr, long txnId]
+MethodInvocation:update_compactor_state
+Method-name:findColumnsWithStats
+Method-returnType:List<String>
+Method-parameters:[CompactionInfoStruct cr]
+MethodInvocation:find_columns_with_stats
+Method-name:markCleaned
+Method-returnType:void
+Method-parameters:[CompactionInfoStruct cr]
+MethodInvocation:mark_cleaned
+Method-name:markCompacted
+Method-returnType:void
+Method-parameters:[CompactionInfoStruct cr]
+MethodInvocation:mark_compacted
+Method-name:markFailed
+Method-returnType:void
+Method-parameters:[CompactionInfoStruct cr]
+MethodInvocation:mark_failed
+Method-name:setHadoopJobid
+Method-returnType:void
+Method-parameters:[String jobId, long cqId]
+MethodInvocation:set_hadoop_jobid
+Method-name:getServerVersion
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getVersion
+Method-name:getScheduledQuery
+Method-returnType:ScheduledQuery
+Method-parameters:[ScheduledQueryKey scheduleKey]
+MethodInvocation:get_scheduled_query
+Method-name:scheduledQueryProgress
+Method-returnType:void
+Method-parameters:[ScheduledQueryProgressInfo info]
+MethodInvocation:scheduled_query_progress
+Method-name:scheduledQueryPoll
+Method-returnType:ScheduledQueryPollResponse
+Method-parameters:[ScheduledQueryPollRequest request]
+MethodInvocation:scheduled_query_poll
+Method-name:scheduledQueryMaintenance
+Method-returnType:void
+Method-parameters:[ScheduledQueryMaintenanceRequest request]
+MethodInvocation:scheduled_query_maintenance
+Class:GetTablesRequestBuilder
+Field:requestedFields
+Field:defValue
+Method-name:GetTablesRequestBuilder
+Method-returnType:null
+Method-parameters:[]
+Method-name:with
+Method-returnType:GetTablesRequestBuilder
+Method-parameters:[GetTablesExtRequestFields type]
+FieldAccess:requestedFields
+FieldAccess:requestedFields
+FieldAccess:requestedFields
+FieldAccess:requestedFields
+Method-name:bitValue
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:requestedFields
+Method-name:defaultValue
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:bitValue
+MethodInvocation:with
+Class:TableCapabilityBuilder
+Field:capabilitiesString
+Field:KEY_CAPABILITIES
+Method-name:TableCapabilityBuilder
+Method-returnType:null
+Method-parameters:[]
+Method-name:add
+Method-returnType:TableCapabilityBuilder
+Method-parameters:[String skill]
+Method-name:build
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:substring
+FieldAccess:capabilitiesString
+MethodInvocation:length
+Method-name:getDBValue
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:build
+Method-name:getKey
+Method-returnType:String
+Method-parameters:[]

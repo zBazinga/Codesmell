@@ -1,0 +1,61 @@
+Class:UrlTemplate
+Field:REPRESENTATION
+Field:NUMBER
+Field:BANDWIDTH
+Field:TIME
+Field:ESCAPED_DOLLAR
+Field:DEFAULT_FORMAT_TAG
+Field:REPRESENTATION_ID
+Field:NUMBER_ID
+Field:BANDWIDTH_ID
+Field:TIME_ID
+Field:urlPieces
+Field:identifiers
+Field:identifierFormatTags
+Field:identifierCount
+Method-name:compile
+Method-returnType:UrlTemplate
+Method-parameters:[String template]
+MethodInvocation:parseTemplate
+Method-name:UrlTemplate
+Method-returnType:null
+Method-parameters:[String[] urlPieces, int[] identifiers, String[] identifierFormatTags, int identifierCount]
+FieldAccess:urlPieces
+FieldAccess:identifiers
+FieldAccess:identifierFormatTags
+FieldAccess:identifierCount
+Method-name:buildUri
+Method-returnType:String
+Method-parameters:[String representationId, long segmentNumber, int bandwidth, long time]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:format
+MethodInvocation:append
+MethodInvocation:format
+MethodInvocation:append
+MethodInvocation:format
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:parseTemplate
+Method-returnType:int
+Method-parameters:[String template, String[] urlPieces, int[] identifiers, String[] identifierFormatTags]
+MethodInvocation:length
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:length
+MethodInvocation:substring
+MethodInvocation:startsWith
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:equals
+MethodInvocation:indexOf
+MethodInvocation:substring
+MethodInvocation:endsWith
+MethodInvocation:endsWith
+MethodInvocation:substring
+Method-name:parseUrlTemplate
+Method-returnType:UrlTemplate
+Method-parameters:[XmlPullParser xpp, String name, DashManifestParser dashManifestParser]
+MethodInvocation:getAttributeValue
+MethodInvocation:compile

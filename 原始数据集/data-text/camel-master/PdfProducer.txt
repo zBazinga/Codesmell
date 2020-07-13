@@ -1,0 +1,76 @@
+Class:PdfProducer
+Field:LOG
+MethodInvocation:getLogger
+Field:writeStrategy
+Field:splitStrategy
+Field:lineBuilderStrategy
+Field:pdfConfiguration
+Method-name:PdfProducer
+Method-returnType:null
+Method-parameters:[PdfEndpoint endpoint]
+FieldAccess:pdfConfiguration
+MethodInvocation:getPdfConfiguration
+MethodInvocation:createTextProcessingFactory
+FieldAccess:writeStrategy
+MethodInvocation:createWriteStrategy
+FieldAccess:splitStrategy
+MethodInvocation:createSplitStrategy
+FieldAccess:lineBuilderStrategy
+MethodInvocation:createLineBuilderStrategy
+Method-name:process
+Method-returnType:void
+Method-parameters:[Exchange exchange]
+MethodInvocation:getOperation
+MethodInvocation:doAppend
+MethodInvocation:doCreate
+MethodInvocation:doExtractText
+MethodInvocation:format
+MethodInvocation:getOperation
+MethodInvocation:setHeaders
+MethodInvocation:getMessage
+MethodInvocation:getHeaders
+MethodInvocation:getIn
+MethodInvocation:setBody
+MethodInvocation:getMessage
+Method-name:doAppend
+Method-returnType:Object
+Method-parameters:[Exchange exchange]
+MethodInvocation:debug
+MethodInvocation:getOperation
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getHeader
+MethodInvocation:getIn
+MethodInvocation:format
+MethodInvocation:isEncrypted
+MethodInvocation:setAllSecurityToBeRemoved
+MethodInvocation:getHeader
+MethodInvocation:getIn
+MethodInvocation:appendToPdfDocument
+MethodInvocation:save
+Method-name:doExtractText
+Method-returnType:String
+Method-parameters:[Exchange exchange]
+MethodInvocation:debug
+MethodInvocation:getOperation
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getText
+Method-name:doCreate
+Method-returnType:OutputStream
+Method-parameters:[Exchange exchange]
+MethodInvocation:debug
+MethodInvocation:getOperation
+MethodInvocation:getBody
+MethodInvocation:getIn
+MethodInvocation:getHeader
+MethodInvocation:getIn
+MethodInvocation:appendToPdfDocument
+MethodInvocation:save
+Method-name:appendToPdfDocument
+Method-returnType:void
+Method-parameters:[String text, PDDocument document, ProtectionPolicy protectionPolicy]
+MethodInvocation:split
+MethodInvocation:buildLines
+MethodInvocation:write
+MethodInvocation:protect

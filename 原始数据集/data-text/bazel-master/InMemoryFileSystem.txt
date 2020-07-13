@@ -1,0 +1,480 @@
+Class:InMemoryFileSystem
+Field:MAX_TRAVERSALS
+Field:clock
+Field:rootInode
+Method-name:InMemoryFileSystem
+Method-returnType:null
+Method-parameters:[DigestHashFunction hashFunction]
+Method-name:InMemoryFileSystem
+Method-returnType:null
+Method-parameters:[Clock clock, DigestHashFunction hashFunction]
+FieldAccess:clock
+FieldAccess:rootInode
+MethodInvocation:newRootInode
+Method-name:InMemoryFileSystem
+Method-returnType:null
+Method-parameters:[]
+Method-name:InMemoryFileSystem
+Method-returnType:null
+Method-parameters:[Clock clock]
+MethodInvocation:getDefaultUnchecked
+Method-name:newRootInode
+Method-returnType:InMemoryDirectoryInfo
+Method-parameters:[Clock clock]
+MethodInvocation:addChild
+MethodInvocation:addChild
+Method-name:baseNameOrWindowsDrive
+Method-returnType:String
+Method-parameters:[Path path]
+MethodInvocation:getBaseName
+MethodInvocation:isEmpty
+MethodInvocation:getDriveStr
+Method-name:getFileSystemType
+Method-returnType:String
+Method-parameters:[Path path]
+MethodInvocation:exists
+MethodInvocation:getRelative
+Method-name:unlink
+Method-returnType:void
+Method-parameters:[InMemoryDirectoryInfo dir, String child, Path errorPath]
+MethodInvocation:isWritable
+MethodInvocation:exception
+MethodInvocation:removeChild
+Method-name:insert
+Method-returnType:Error
+Method-parameters:[InMemoryDirectoryInfo dir, String child, InMemoryContentInfo childInode]
+MethodInvocation:isWritable
+MethodInvocation:addChild
+Method-name:insert
+Method-returnType:void
+Method-parameters:[InMemoryDirectoryInfo dir, String child, InMemoryContentInfo childInode, Path errorPath]
+MethodInvocation:insert
+MethodInvocation:exception
+Method-name:directoryLookupErrno
+Method-returnType:InodeOrErrno
+Method-parameters:[InMemoryContentInfo dir, String name, boolean create, Path path]
+MethodInvocation:isDirectory
+MethodInvocation:asInodeOrErrno
+MethodInvocation:isExecutable
+MethodInvocation:asInodeOrErrno
+MethodInvocation:getChild
+MethodInvocation:asInodeOrErrno
+MethodInvocation:newFile
+MethodInvocation:insert
+MethodInvocation:asInodeOrErrno
+MethodInvocation:createInode
+Method-name:newFile
+Method-returnType:FileInfo
+Method-parameters:[Clock clock, Path path]
+Method-name:pathWalkErrno
+Method-returnType:InodeOrErrno
+Method-parameters:[Path path, boolean create]
+MethodInvocation:isRootDirectory
+MethodInvocation:getParentDirectory
+MethodInvocation:baseNameOrWindowsDrive
+MethodInvocation:push
+MethodInvocation:isEmpty
+MethodInvocation:pop
+MethodInvocation:directoryLookupErrno
+MethodInvocation:isEmpty
+MethodInvocation:hasError
+MethodInvocation:inode
+MethodInvocation:isSymbolicLink
+MethodInvocation:getNormalizedLinkContent
+MethodInvocation:isAbsolute
+MethodInvocation:asInodeOrErrno
+MethodInvocation:getSegments
+MethodInvocation:size
+MethodInvocation:push
+MethodInvocation:get
+MethodInvocation:isAbsolute
+MethodInvocation:getDriveStr
+MethodInvocation:length
+MethodInvocation:push
+MethodInvocation:createInode
+Method-name:getDirectoryErrno
+Method-returnType:InodeOrErrno
+Method-parameters:[Path path]
+MethodInvocation:pathWalkErrno
+MethodInvocation:hasError
+MethodInvocation:inode
+MethodInvocation:isDirectory
+MethodInvocation:asInodeOrErrno
+Method-name:getDirectory
+Method-returnType:InMemoryDirectoryInfo
+Method-parameters:[Path path]
+MethodInvocation:valueOrThrow
+MethodInvocation:getDirectoryErrno
+Method-name:noFollowStatErrno
+Method-returnType:InodeOrErrno
+Method-parameters:[Path path]
+MethodInvocation:getDirectoryErrno
+MethodInvocation:getParentDirectory
+MethodInvocation:hasError
+MethodInvocation:directoryLookupErrno
+MethodInvocation:inode
+MethodInvocation:baseNameOrWindowsDrive
+Method-name:stat
+Method-returnType:FileStatus
+Method-parameters:[Path path, boolean followSymlinks]
+MethodInvocation:valueOrThrow
+MethodInvocation:inodeStatErrno
+Method-name:statIfFound
+Method-returnType:FileStatus
+Method-parameters:[Path path, boolean followSymlinks]
+MethodInvocation:inodeStatErrno
+MethodInvocation:hasError
+MethodInvocation:error
+MethodInvocation:exception
+MethodInvocation:inode
+Method-name:statNullable
+Method-returnType:FileStatus
+Method-parameters:[Path path, boolean followSymlinks]
+MethodInvocation:inodeStatErrno
+MethodInvocation:hasError
+MethodInvocation:inode
+Method-name:inodeStatErrno
+Method-returnType:InodeOrErrno
+Method-parameters:[Path path, boolean followSymlinks]
+MethodInvocation:pathWalkErrno
+MethodInvocation:isRootDirectory
+MethodInvocation:createInode
+MethodInvocation:noFollowStatErrno
+Method-name:inodeStat
+Method-returnType:InMemoryContentInfo
+Method-parameters:[Path path, boolean followSymlinks]
+MethodInvocation:valueOrThrow
+MethodInvocation:inodeStatErrno
+Method-name:resolveOneLink
+Method-returnType:PathFragment
+Method-parameters:[Path path]
+MethodInvocation:inodeStat
+MethodInvocation:isSymbolicLink
+MethodInvocation:getLinkContent
+Method-name:exists
+Method-returnType:boolean
+Method-parameters:[Path path, boolean followSymlinks]
+MethodInvocation:statNullable
+Method-name:isReadable
+Method-returnType:boolean
+Method-parameters:[Path path]
+MethodInvocation:inodeStat
+MethodInvocation:isReadable
+Method-name:setReadable
+Method-returnType:void
+Method-parameters:[Path path, boolean readable]
+MethodInvocation:inodeStat
+MethodInvocation:setReadable
+Method-name:isWritable
+Method-returnType:boolean
+Method-parameters:[Path path]
+MethodInvocation:inodeStat
+MethodInvocation:isWritable
+Method-name:setWritable
+Method-returnType:void
+Method-parameters:[Path path, boolean writable]
+MethodInvocation:inodeStat
+MethodInvocation:setWritable
+Method-name:isExecutable
+Method-returnType:boolean
+Method-parameters:[Path path]
+MethodInvocation:inodeStat
+MethodInvocation:isExecutable
+Method-name:setExecutable
+Method-returnType:void
+Method-parameters:[Path path, boolean executable]
+MethodInvocation:inodeStat
+MethodInvocation:setExecutable
+Method-name:supportsModifications
+Method-returnType:boolean
+Method-parameters:[Path path]
+Method-name:supportsSymbolicLinksNatively
+Method-returnType:boolean
+Method-parameters:[Path path]
+Method-name:supportsHardLinksNatively
+Method-returnType:boolean
+Method-parameters:[Path path]
+Method-name:isFilePathCaseSensitive
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getCurrent
+Method-name:createDirectory
+Method-returnType:boolean
+Method-parameters:[Path path]
+MethodInvocation:isRootDirectory
+MethodInvocation:exception
+MethodInvocation:getDirectory
+MethodInvocation:getParentDirectory
+MethodInvocation:getChild
+MethodInvocation:baseNameOrWindowsDrive
+MethodInvocation:isDirectory
+MethodInvocation:exception
+MethodInvocation:addChild
+MethodInvocation:addChild
+MethodInvocation:insert
+MethodInvocation:baseNameOrWindowsDrive
+Method-name:createDirectoryAndParents
+Method-returnType:void
+Method-parameters:[Path path]
+MethodInvocation:isRootDirectory
+MethodInvocation:getParentDirectory
+MethodInvocation:isDirectory
+MethodInvocation:exists
+MethodInvocation:add
+MethodInvocation:reverse
+MethodInvocation:createDirectory
+Method-name:createSymbolicLink
+Method-returnType:void
+Method-parameters:[Path path, PathFragment targetFragment]
+MethodInvocation:isRootDirectory
+MethodInvocation:exception
+MethodInvocation:getDirectory
+MethodInvocation:getParentDirectory
+MethodInvocation:getChild
+MethodInvocation:baseNameOrWindowsDrive
+MethodInvocation:exception
+MethodInvocation:insert
+MethodInvocation:baseNameOrWindowsDrive
+Method-name:readSymbolicLink
+Method-returnType:PathFragment
+Method-parameters:[Path path]
+MethodInvocation:inodeStat
+MethodInvocation:isSymbolicLink
+MethodInvocation:checkState
+MethodInvocation:getLinkContent
+Method-name:getFileSize
+Method-returnType:long
+Method-parameters:[Path path, boolean followSymlinks]
+MethodInvocation:getSize
+MethodInvocation:stat
+Method-name:getDirectoryEntries
+Method-returnType:Collection<String>
+Method-parameters:[Path path]
+MethodInvocation:getDirectory
+MethodInvocation:stat
+MethodInvocation:checkState
+MethodInvocation:isReadable
+MethodInvocation:getAllChildren
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:add
+Method-name:delete
+Method-returnType:boolean
+Method-parameters:[Path path]
+MethodInvocation:isRootDirectory
+MethodInvocation:exception
+MethodInvocation:exists
+MethodInvocation:getDirectory
+MethodInvocation:getParentDirectory
+MethodInvocation:getChild
+MethodInvocation:baseNameOrWindowsDrive
+MethodInvocation:isDirectory
+MethodInvocation:getSize
+MethodInvocation:exception
+MethodInvocation:unlink
+MethodInvocation:baseNameOrWindowsDrive
+Method-name:getLastModifiedTime
+Method-returnType:long
+Method-parameters:[Path path, boolean followSymlinks]
+MethodInvocation:getLastModifiedTime
+MethodInvocation:stat
+Method-name:setLastModifiedTime
+Method-returnType:void
+Method-parameters:[Path path, long newTime]
+MethodInvocation:inodeStat
+MethodInvocation:setLastModifiedTime
+MethodInvocation:currentTimeMillis
+Method-name:getInputStream
+Method-returnType:InputStream
+Method-parameters:[Path path]
+MethodInvocation:inodeStat
+MethodInvocation:isDirectory
+MethodInvocation:exception
+MethodInvocation:isReadable
+MethodInvocation:exception
+MethodInvocation:checkState
+MethodInvocation:getInputStream
+Method-name:createReadableByteChannel
+Method-returnType:ReadableByteChannel
+Method-parameters:[Path path]
+MethodInvocation:inodeStat
+MethodInvocation:isDirectory
+MethodInvocation:exception
+MethodInvocation:isReadable
+MethodInvocation:exception
+MethodInvocation:checkState
+MethodInvocation:createReadableByteChannel
+Method-name:getxattr
+Method-returnType:byte[]
+Method-parameters:[Path path, String name, boolean followSymlinks]
+MethodInvocation:inodeStat
+MethodInvocation:isDirectory
+MethodInvocation:exception
+MethodInvocation:isReadable
+MethodInvocation:exception
+MethodInvocation:checkState
+MethodInvocation:getxattr
+Method-name:getFastDigest
+Method-returnType:byte[]
+Method-parameters:[Path path]
+MethodInvocation:inodeStat
+MethodInvocation:isDirectory
+MethodInvocation:exception
+MethodInvocation:isReadable
+MethodInvocation:exception
+MethodInvocation:checkState
+MethodInvocation:getFastDigest
+Method-name:getOrCreateWritableInode
+Method-returnType:InMemoryContentInfo
+Method-parameters:[Path path]
+MethodInvocation:valueOrThrow
+MethodInvocation:pathWalkErrno
+MethodInvocation:checkNotNull
+MethodInvocation:isDirectory
+MethodInvocation:exception
+MethodInvocation:isWritable
+MethodInvocation:exception
+Method-name:getOutputStream
+Method-returnType:OutputStream
+Method-parameters:[Path path, boolean append]
+MethodInvocation:getOrCreateWritableInode
+MethodInvocation:getOutputStream
+Method-name:renameTo
+Method-returnType:void
+Method-parameters:[Path sourcePath, Path targetPath]
+MethodInvocation:isRootDirectory
+MethodInvocation:exception
+MethodInvocation:isRootDirectory
+MethodInvocation:exception
+MethodInvocation:getDirectory
+MethodInvocation:getParentDirectory
+MethodInvocation:getDirectory
+MethodInvocation:getParentDirectory
+MethodInvocation:getChild
+MethodInvocation:baseNameOrWindowsDrive
+MethodInvocation:exception
+MethodInvocation:getChild
+MethodInvocation:baseNameOrWindowsDrive
+MethodInvocation:unlink
+MethodInvocation:baseNameOrWindowsDrive
+MethodInvocation:isDirectory
+MethodInvocation:isDirectory
+MethodInvocation:getSize
+MethodInvocation:exception
+MethodInvocation:isDirectory
+MethodInvocation:unlink
+MethodInvocation:baseNameOrWindowsDrive
+MethodInvocation:movedTo
+MethodInvocation:insert
+MethodInvocation:baseNameOrWindowsDrive
+MethodInvocation:movedTo
+MethodInvocation:insert
+MethodInvocation:baseNameOrWindowsDrive
+Method-name:createFSDependentHardLink
+Method-returnType:void
+Method-parameters:[Path linkPath, Path originalPath]
+MethodInvocation:isRootDirectory
+MethodInvocation:exception
+MethodInvocation:getDirectory
+MethodInvocation:getParentDirectory
+MethodInvocation:getChild
+MethodInvocation:baseNameOrWindowsDrive
+MethodInvocation:exception
+MethodInvocation:insert
+MethodInvocation:baseNameOrWindowsDrive
+MethodInvocation:getChild
+MethodInvocation:getDirectory
+MethodInvocation:getParentDirectory
+MethodInvocation:baseNameOrWindowsDrive
+Field:Error
+Field:message
+Method-name:Error
+Method-returnType:null
+Method-parameters:[String message]
+FieldAccess:message
+Method-name:parentThrowableToString
+Method-returnType:String
+Method-parameters:[Throwable obj]
+MethodInvocation:getName
+MethodInvocation:getSuperclass
+MethodInvocation:getClass
+MethodInvocation:getLocalizedMessage
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:asInodeOrErrno
+Method-returnType:InodeOrErrno
+Method-parameters:[]
+MethodInvocation:createError
+Method-name:exception
+Method-returnType:IOException
+Method-parameters:[Path path]
+Method-name:getError
+Method-returnType:Error
+Method-parameters:[]
+Class:IOExceptionWithError
+Field:errorCode
+Method-name:IOExceptionWithError
+Method-returnType:null
+Method-parameters:[String message, Error errorCode]
+FieldAccess:errorCode
+Method-name:getError
+Method-returnType:Error
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:parentThrowableToString
+Class:FileNotFoundExceptionWithError
+Field:errorCode
+Method-name:FileNotFoundExceptionWithError
+Method-returnType:null
+Method-parameters:[String message, Error errorCode]
+FieldAccess:errorCode
+Method-name:getError
+Method-returnType:Error
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:parentThrowableToString
+Class:FileAccessExceptionWithError
+Field:errorCode
+Method-name:FileAccessExceptionWithError
+Method-returnType:null
+Method-parameters:[String message, Error errorCode]
+FieldAccess:errorCode
+Method-name:getError
+Method-returnType:Error
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:parentThrowableToString
+Class:InodeOrErrno
+Method-name:createInode
+Method-returnType:InodeOrErrno
+Method-parameters:[InMemoryContentInfo info]
+MethodInvocation:checkNotNull
+Method-name:createError
+Method-returnType:InodeOrErrno
+Method-parameters:[Error error]
+MethodInvocation:checkNotNull
+Method-name:inode
+Method-returnType:InMemoryContentInfo
+Method-parameters:[]
+Method-name:error
+Method-returnType:Error
+Method-parameters:[]
+Method-name:hasError
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:error
+Method-name:valueOrThrow
+Method-returnType:InMemoryContentInfo
+Method-parameters:[Path path]
+MethodInvocation:hasError
+MethodInvocation:exception
+MethodInvocation:error
+MethodInvocation:inode

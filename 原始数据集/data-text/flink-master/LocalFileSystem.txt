@@ -1,0 +1,133 @@
+Class:LocalFileSystem
+Field:LOG
+MethodInvocation:getLogger
+Field:LOCAL_URI
+MethodInvocation:isWindows
+MethodInvocation:create
+MethodInvocation:create
+Field:INSTANCE
+Field:workingDir
+Field:homeDir
+Field:hostName
+Method-name:LocalFileSystem
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:workingDir
+MethodInvocation:toURI
+MethodInvocation:getProperty
+FieldAccess:homeDir
+MethodInvocation:toURI
+MethodInvocation:getProperty
+MethodInvocation:getHostName
+MethodInvocation:getLocalHost
+MethodInvocation:error
+FieldAccess:hostName
+Method-name:getFileBlockLocations
+Method-returnType:BlockLocation[]
+Method-parameters:[FileStatus file, long start, long len]
+MethodInvocation:getLen
+Method-name:getFileStatus
+Method-returnType:FileStatus
+Method-parameters:[Path f]
+MethodInvocation:pathToFile
+MethodInvocation:exists
+MethodInvocation:getProperty
+Method-name:getUri
+Method-returnType:URI
+Method-parameters:[]
+Method-name:getWorkingDirectory
+Method-returnType:Path
+Method-parameters:[]
+Method-name:getHomeDirectory
+Method-returnType:Path
+Method-parameters:[]
+Method-name:open
+Method-returnType:FSDataInputStream
+Method-parameters:[final Path f, final int bufferSize]
+MethodInvocation:open
+Method-name:open
+Method-returnType:FSDataInputStream
+Method-parameters:[final Path f]
+MethodInvocation:pathToFile
+Method-name:createRecoverableWriter
+Method-returnType:LocalRecoverableWriter
+Method-parameters:[]
+Method-name:exists
+Method-returnType:boolean
+Method-parameters:[Path f]
+MethodInvocation:pathToFile
+MethodInvocation:exists
+Method-name:listStatus
+Method-returnType:FileStatus[]
+Method-parameters:[final Path f]
+MethodInvocation:pathToFile
+MethodInvocation:exists
+MethodInvocation:isFile
+MethodInvocation:list
+MethodInvocation:getFileStatus
+Method-name:delete
+Method-returnType:boolean
+Method-parameters:[final Path f, final boolean recursive]
+MethodInvocation:pathToFile
+MethodInvocation:isFile
+MethodInvocation:delete
+MethodInvocation:isDirectory
+MethodInvocation:listFiles
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:delete
+Method-name:delete
+Method-returnType:boolean
+Method-parameters:[final File f]
+MethodInvocation:isDirectory
+MethodInvocation:listFiles
+MethodInvocation:delete
+MethodInvocation:delete
+MethodInvocation:delete
+Method-name:mkdirs
+Method-returnType:boolean
+Method-parameters:[final Path f]
+MethodInvocation:checkNotNull
+MethodInvocation:mkdirsInternal
+MethodInvocation:pathToFile
+Method-name:mkdirsInternal
+Method-returnType:boolean
+Method-parameters:[File file]
+MethodInvocation:isDirectory
+MethodInvocation:exists
+MethodInvocation:isDirectory
+MethodInvocation:getAbsolutePath
+MethodInvocation:getParentFile
+MethodInvocation:mkdirsInternal
+MethodInvocation:mkdir
+MethodInvocation:isDirectory
+Method-name:create
+Method-returnType:FSDataOutputStream
+Method-parameters:[final Path filePath, final WriteMode overwrite]
+MethodInvocation:checkNotNull
+MethodInvocation:exists
+MethodInvocation:getParent
+MethodInvocation:mkdirs
+MethodInvocation:pathToFile
+Method-name:rename
+Method-returnType:boolean
+Method-parameters:[final Path src, final Path dst]
+MethodInvocation:pathToFile
+MethodInvocation:pathToFile
+MethodInvocation:getParentFile
+MethodInvocation:mkdirs
+MethodInvocation:move
+MethodInvocation:toPath
+MethodInvocation:toPath
+Method-name:isDistributedFS
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getKind
+Method-returnType:FileSystemKind
+Method-parameters:[]
+Method-name:getLocalFsURI
+Method-returnType:URI
+Method-parameters:[]
+Method-name:getSharedInstance
+Method-returnType:LocalFileSystem
+Method-parameters:[]

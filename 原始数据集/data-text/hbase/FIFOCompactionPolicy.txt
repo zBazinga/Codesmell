@@ -1,0 +1,43 @@
+Class:FIFOCompactionPolicy
+Field:LOG
+MethodInvocation:getLogger
+Method-name:FIFOCompactionPolicy
+Method-returnType:null
+Method-parameters:[Configuration conf, StoreConfigInformation storeConfigInfo]
+Method-name:selectCompaction
+Method-returnType:CompactionRequestImpl
+Method-parameters:[Collection<HStoreFile> candidateFiles, List<HStoreFile> filesCompacting, boolean isUserCompaction, boolean mayUseOffPeak, boolean forceMajor]
+MethodInvocation:warn
+MethodInvocation:hasReferences
+MethodInvocation:info
+MethodInvocation:getExpiredStores
+Method-name:shouldPerformMajorCompaction
+Method-returnType:boolean
+Method-parameters:[Collection<HStoreFile> filesToCompact]
+MethodInvocation:hasReferences
+MethodInvocation:info
+Method-name:needsCompaction
+Method-returnType:boolean
+Method-parameters:[Collection<HStoreFile> storeFiles, List<HStoreFile> filesCompacting]
+MethodInvocation:hasReferences
+MethodInvocation:info
+MethodInvocation:hasExpiredStores
+Method-name:hasExpiredStores
+Method-returnType:boolean
+Method-parameters:[Collection<HStoreFile> files]
+MethodInvocation:currentTime
+MethodInvocation:isEmptyStoreFile
+MethodInvocation:getMaxTimestamp
+MethodInvocation:getReader
+MethodInvocation:getStoreFileTtl
+Method-name:getExpiredStores
+Method-returnType:Collection<HStoreFile>
+Method-parameters:[Collection<HStoreFile> files, Collection<HStoreFile> filesCompacting]
+MethodInvocation:currentTime
+MethodInvocation:isEmptyStoreFile
+MethodInvocation:add
+MethodInvocation:getMaxTimestamp
+MethodInvocation:getReader
+MethodInvocation:getStoreFileTtl
+MethodInvocation:contains
+MethodInvocation:add

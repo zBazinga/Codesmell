@@ -1,0 +1,373 @@
+Class:NettyConfiguration
+Field:LOG
+MethodInvocation:getLogger
+Field:requestTimeout
+Field:sync
+Field:textline
+Field:delimiter
+Field:autoAppendDelimiter
+Field:decoderMaxLineLength
+Field:encoding
+Field:encoders
+Field:decoders
+Field:disconnect
+Field:lazyChannelCreation
+Field:transferExchange
+Field:allowSerializedHeaders
+Field:disconnectOnNoReply
+Field:noReplyLogLevel
+Field:serverExceptionCaughtLogLevel
+Field:serverClosedChannelExceptionCaughtLogLevel
+Field:allowDefaultCodec
+Field:clientInitializerFactory
+Field:usingExecutorService
+Field:producerPoolMaxActive
+Field:producerPoolMinIdle
+Field:producerPoolMaxIdle
+Field:producerPoolMinEvictableIdle
+Field:producerPoolEnabled
+Field:udpConnectionlessSending
+Field:clientMode
+Field:useByteBuf
+Field:udpByteArrayCodec
+Field:reuseChannel
+Field:correlationManager
+Method-name:copy
+Method-returnType:NettyConfiguration
+Method-parameters:[]
+MethodInvocation:clone
+MethodInvocation:setEncoders
+MethodInvocation:setDecoders
+Method-name:validateConfiguration
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getAnnotation
+MethodInvocation:warn
+MethodInvocation:getAnnotation
+MethodInvocation:warn
+MethodInvocation:getAnnotation
+MethodInvocation:warn
+Method-name:parseURI
+Method-returnType:void
+Method-parameters:[URI uri, Map<String,Object> parameters, NettyComponent component, String... supportedProtocols]
+MethodInvocation:getScheme
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:setHost
+MethodInvocation:getHost
+MethodInvocation:getPort
+MethodInvocation:setPort
+MethodInvocation:getPort
+MethodInvocation:getAndRemoveOrResolveReferenceParameter
+MethodInvocation:getAndRemoveOrResolveReferenceParameter
+MethodInvocation:getAndRemoveOrResolveReferenceParameter
+MethodInvocation:getAndRemoveOrResolveReferenceParameter
+MethodInvocation:getAndRemoveOrResolveReferenceParameter
+MethodInvocation:uriRef
+MethodInvocation:uriRef
+MethodInvocation:getAndRemoveOrResolveReferenceParameter
+MethodInvocation:getAndRemoveOrResolveReferenceParameter
+MethodInvocation:resolveAndRemoveReferenceListParameter
+MethodInvocation:addToHandlersList
+MethodInvocation:resolveAndRemoveReferenceListParameter
+MethodInvocation:addToHandlersList
+MethodInvocation:bindProperties
+MethodInvocation:getCamelContext
+MethodInvocation:extractProperties
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:isAllowDefaultCodec
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:add
+MethodInvocation:newDatagramPacketEncoder
+MethodInvocation:isTextline
+MethodInvocation:getEncoding
+MethodInvocation:forName
+MethodInvocation:getEncoding
+MethodInvocation:add
+MethodInvocation:newStringEncoder
+MethodInvocation:lineDelimiter
+MethodInvocation:nulDelimiter
+MethodInvocation:add
+MethodInvocation:newDelimiterBasedFrameDecoder
+MethodInvocation:add
+MethodInvocation:newStringDecoder
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:isUdpByteArrayCodec
+MethodInvocation:add
+MethodInvocation:newByteArrayEncoder
+MethodInvocation:add
+MethodInvocation:newByteArrayDecoder
+MethodInvocation:getEncoding
+MethodInvocation:forName
+MethodInvocation:getEncoding
+MethodInvocation:add
+MethodInvocation:newStringEncoder
+MethodInvocation:add
+MethodInvocation:newStringDecoder
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:add
+MethodInvocation:newDatagramPacketDecoder
+MethodInvocation:debug
+MethodInvocation:debug
+Method-name:uriRef
+Method-returnType:String
+Method-parameters:[NettyComponent component, Map<String,Object> parameters, String key, String defaultValue]
+MethodInvocation:remove
+MethodInvocation:isReferenceParameter
+MethodInvocation:replaceAll
+MethodInvocation:mandatoryLookup
+MethodInvocation:getCamelContext
+MethodInvocation:toString
+MethodInvocation:toString
+Method-name:getCharsetName
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:isSupported
+MethodInvocation:name
+MethodInvocation:forName
+Method-name:getRequestTimeout
+Method-returnType:long
+Method-parameters:[]
+Method-name:setRequestTimeout
+Method-returnType:void
+Method-parameters:[long requestTimeout]
+FieldAccess:requestTimeout
+Method-name:isSync
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSync
+Method-returnType:void
+Method-parameters:[boolean sync]
+FieldAccess:sync
+Method-name:isTextline
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setTextline
+Method-returnType:void
+Method-parameters:[boolean textline]
+FieldAccess:textline
+Method-name:getDecoderMaxLineLength
+Method-returnType:int
+Method-parameters:[]
+Method-name:setDecoderMaxLineLength
+Method-returnType:void
+Method-parameters:[int decoderMaxLineLength]
+FieldAccess:decoderMaxLineLength
+Method-name:getDelimiter
+Method-returnType:TextLineDelimiter
+Method-parameters:[]
+Method-name:setDelimiter
+Method-returnType:void
+Method-parameters:[TextLineDelimiter delimiter]
+FieldAccess:delimiter
+Method-name:isAutoAppendDelimiter
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAutoAppendDelimiter
+Method-returnType:void
+Method-parameters:[boolean autoAppendDelimiter]
+FieldAccess:autoAppendDelimiter
+Method-name:getEncoding
+Method-returnType:String
+Method-parameters:[]
+Method-name:setEncoding
+Method-returnType:void
+Method-parameters:[String encoding]
+FieldAccess:encoding
+Method-name:getDecoders
+Method-returnType:List<ChannelHandler>
+Method-parameters:[]
+Method-name:setDecoders
+Method-returnType:void
+Method-parameters:[List<ChannelHandler> decoders]
+FieldAccess:decoders
+Method-name:getEncoders
+Method-returnType:List<ChannelHandler>
+Method-parameters:[]
+Method-name:setEncoders
+Method-returnType:void
+Method-parameters:[List<ChannelHandler> encoders]
+FieldAccess:encoders
+Method-name:addEncoder
+Method-returnType:void
+Method-parameters:[ChannelHandler encoder]
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:addDecoder
+Method-returnType:void
+Method-parameters:[ChannelHandler decoder]
+MethodInvocation:contains
+MethodInvocation:add
+Method-name:isDisconnect
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDisconnect
+Method-returnType:void
+Method-parameters:[boolean disconnect]
+FieldAccess:disconnect
+Method-name:isLazyChannelCreation
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setLazyChannelCreation
+Method-returnType:void
+Method-parameters:[boolean lazyChannelCreation]
+FieldAccess:lazyChannelCreation
+Method-name:isTransferExchange
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setTransferExchange
+Method-returnType:void
+Method-parameters:[boolean transferExchange]
+FieldAccess:transferExchange
+Method-name:isAllowSerializedHeaders
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAllowSerializedHeaders
+Method-returnType:void
+Method-parameters:[final boolean allowSerializedHeaders]
+FieldAccess:allowSerializedHeaders
+Method-name:isDisconnectOnNoReply
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDisconnectOnNoReply
+Method-returnType:void
+Method-parameters:[boolean disconnectOnNoReply]
+FieldAccess:disconnectOnNoReply
+Method-name:getNoReplyLogLevel
+Method-returnType:LoggingLevel
+Method-parameters:[]
+Method-name:setNoReplyLogLevel
+Method-returnType:void
+Method-parameters:[LoggingLevel noReplyLogLevel]
+FieldAccess:noReplyLogLevel
+Method-name:getServerExceptionCaughtLogLevel
+Method-returnType:LoggingLevel
+Method-parameters:[]
+Method-name:setServerExceptionCaughtLogLevel
+Method-returnType:void
+Method-parameters:[LoggingLevel serverExceptionCaughtLogLevel]
+FieldAccess:serverExceptionCaughtLogLevel
+Method-name:getServerClosedChannelExceptionCaughtLogLevel
+Method-returnType:LoggingLevel
+Method-parameters:[]
+Method-name:setServerClosedChannelExceptionCaughtLogLevel
+Method-returnType:void
+Method-parameters:[LoggingLevel serverClosedChannelExceptionCaughtLogLevel]
+FieldAccess:serverClosedChannelExceptionCaughtLogLevel
+Method-name:isAllowDefaultCodec
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAllowDefaultCodec
+Method-returnType:void
+Method-parameters:[boolean allowDefaultCodec]
+FieldAccess:allowDefaultCodec
+Method-name:setClientPipelineFactory
+Method-returnType:void
+Method-parameters:[ClientInitializerFactory clientPipelineFactory]
+FieldAccess:clientInitializerFactory
+Method-name:getClientPipelineFactory
+Method-returnType:ClientInitializerFactory
+Method-parameters:[]
+Method-name:getClientInitializerFactory
+Method-returnType:ClientInitializerFactory
+Method-parameters:[]
+Method-name:setClientInitializerFactory
+Method-returnType:void
+Method-parameters:[ClientInitializerFactory clientInitializerFactory]
+FieldAccess:clientInitializerFactory
+Method-name:isUsingExecutorService
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setUsingExecutorService
+Method-returnType:void
+Method-parameters:[boolean usingExecutorService]
+FieldAccess:usingExecutorService
+Method-name:getProducerPoolMaxActive
+Method-returnType:int
+Method-parameters:[]
+Method-name:setProducerPoolMaxActive
+Method-returnType:void
+Method-parameters:[int producerPoolMaxActive]
+FieldAccess:producerPoolMaxActive
+Method-name:getProducerPoolMinIdle
+Method-returnType:int
+Method-parameters:[]
+Method-name:setProducerPoolMinIdle
+Method-returnType:void
+Method-parameters:[int producerPoolMinIdle]
+FieldAccess:producerPoolMinIdle
+Method-name:getProducerPoolMaxIdle
+Method-returnType:int
+Method-parameters:[]
+Method-name:setProducerPoolMaxIdle
+Method-returnType:void
+Method-parameters:[int producerPoolMaxIdle]
+FieldAccess:producerPoolMaxIdle
+Method-name:getProducerPoolMinEvictableIdle
+Method-returnType:long
+Method-parameters:[]
+Method-name:setProducerPoolMinEvictableIdle
+Method-returnType:void
+Method-parameters:[long producerPoolMinEvictableIdle]
+FieldAccess:producerPoolMinEvictableIdle
+Method-name:isProducerPoolEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setProducerPoolEnabled
+Method-returnType:void
+Method-parameters:[boolean producerPoolEnabled]
+FieldAccess:producerPoolEnabled
+Method-name:isUdpConnectionlessSending
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setUdpConnectionlessSending
+Method-returnType:void
+Method-parameters:[boolean udpConnectionlessSending]
+FieldAccess:udpConnectionlessSending
+Method-name:isClientMode
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setClientMode
+Method-returnType:void
+Method-parameters:[boolean clientMode]
+FieldAccess:clientMode
+Method-name:isUseByteBuf
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setUseByteBuf
+Method-returnType:void
+Method-parameters:[boolean useByteBuf]
+FieldAccess:useByteBuf
+Method-name:isUdpByteArrayCodec
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setUdpByteArrayCodec
+Method-returnType:void
+Method-parameters:[boolean udpByteArrayCodec]
+FieldAccess:udpByteArrayCodec
+Method-name:isReuseChannel
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setReuseChannel
+Method-returnType:void
+Method-parameters:[boolean reuseChannel]
+FieldAccess:reuseChannel
+Method-name:getCorrelationManager
+Method-returnType:NettyCamelStateCorrelationManager
+Method-parameters:[]
+Method-name:setCorrelationManager
+Method-returnType:void
+Method-parameters:[NettyCamelStateCorrelationManager correlationManager]
+FieldAccess:correlationManager
+Method-name:addToHandlersList
+Method-returnType:void
+Method-parameters:[List<T> configured, List<T> handlers, Class<T> handlerType]
+MethodInvocation:isInstance
+MethodInvocation:add
+Method-name:parseConfiguration
+Method-returnType:NettyConfiguration
+Method-parameters:[String remaining, Map<String,Object> parameters, NettyComponent nettyComponent]
+MethodInvocation:parseURI

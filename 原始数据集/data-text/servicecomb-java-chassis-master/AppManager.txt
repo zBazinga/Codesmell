@@ -1,0 +1,39 @@
+Class:AppManager
+Field:apps
+Method-name:AppManager
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:register
+MethodInvocation:getEventBus
+Method-name:getEventBus
+Method-returnType:EventBus
+Method-parameters:[]
+MethodInvocation:getEventBus
+Method-name:getApps
+Method-returnType:Map<String,MicroserviceManager>
+Method-parameters:[]
+Method-name:getOrCreateMicroserviceVersionRule
+Method-returnType:MicroserviceVersionRule
+Method-parameters:[String appId, String microserviceName, String versionRule]
+MethodInvocation:getOrCreateMicroserviceManager
+MethodInvocation:getOrCreateMicroserviceVersionRule
+Method-name:getOrCreateMicroserviceManager
+Method-returnType:MicroserviceManager
+Method-parameters:[String appId]
+MethodInvocation:computeIfAbsent
+Method-name:getOrCreateMicroserviceVersions
+Method-returnType:MicroserviceVersions
+Method-parameters:[String appId, String microserviceName]
+MethodInvocation:getOrCreateMicroserviceManager
+MethodInvocation:getOrCreateMicroserviceVersions
+Method-name:onSafeModeChanged
+Method-returnType:void
+Method-parameters:[SafeModeChangeEvent modeChangeEvent]
+MethodInvocation:forEach
+MethodInvocation:values
+MethodInvocation:onSafeModeChanged
+Method-name:pullInstances
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:pullInstances

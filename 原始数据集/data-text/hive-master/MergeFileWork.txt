@@ -1,0 +1,104 @@
+Class:MergeFileWork
+Field:LOG
+MethodInvocation:getLogger
+Field:inputPaths
+Field:outputDir
+Field:hasDynamicPartitions
+Field:isListBucketingAlterTableConcatenate
+Field:listBucketingCtx
+Field:srcTblInputFormat
+Field:internalInputFormat
+Method-name:MergeFileWork
+Method-returnType:null
+Method-parameters:[List<Path> inputPaths, Path outputDir, String srcTblInputFormat, TableDesc tbl]
+Method-name:MergeFileWork
+Method-returnType:null
+Method-parameters:[List<Path> inputPaths, Path outputDir, boolean hasDynamicPartitions, String srcTblInputFormat, TableDesc tbl]
+FieldAccess:inputPaths
+FieldAccess:outputDir
+FieldAccess:hasDynamicPartitions
+FieldAccess:srcTblInputFormat
+MethodInvocation:equals
+MethodInvocation:getName
+FieldAccess:internalInputFormat
+MethodInvocation:equals
+MethodInvocation:getName
+FieldAccess:internalInputFormat
+MethodInvocation:setInputFileFormatClass
+MethodInvocation:setTableDesc
+FieldAccess:inputPaths
+MethodInvocation:addPathToPartitionInfo
+FieldAccess:isListBucketingAlterTableConcatenate
+Method-name:getInputPaths
+Method-returnType:List<Path>
+Method-parameters:[]
+Method-name:setInputPaths
+Method-returnType:void
+Method-parameters:[List<Path> inputPaths]
+FieldAccess:inputPaths
+Method-name:getOutputDir
+Method-returnType:Path
+Method-parameters:[]
+Method-name:setOutputDir
+Method-returnType:void
+Method-parameters:[Path outputDir]
+FieldAccess:outputDir
+Method-name:getMinSplitSize
+Method-returnType:Long
+Method-parameters:[]
+Method-name:getInputformat
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName
+MethodInvocation:getInputformatClass
+Method-name:getInputformatClass
+Method-returnType:Class<? extends InputFormat>
+Method-parameters:[]
+Method-name:isGatheringStats
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:hasDynamicPartitions
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:hasDynamicPartitions
+Method-name:setHasDynamicPartitions
+Method-returnType:void
+Method-parameters:[boolean hasDynamicPartitions]
+FieldAccess:hasDynamicPartitions
+Method-name:resolveDynamicPartitionStoredAsSubDirsMerge
+Method-returnType:void
+Method-parameters:[HiveConf conf, Path path, TableDesc tblDesc, List<String> aliases, PartitionDesc partDesc]
+MethodInvocation:setInputFileFormatClass
+MethodInvocation:add
+Method-name:resolveConcatenateMerge
+Method-returnType:void
+Method-parameters:[HiveConf conf]
+Method-name:getListBucketingCtx
+Method-returnType:ListBucketingCtx
+Method-parameters:[]
+Method-name:setListBucketingCtx
+Method-returnType:void
+Method-parameters:[ListBucketingCtx listBucketingCtx]
+FieldAccess:listBucketingCtx
+Method-name:isListBucketingAlterTableConcatenate
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getSourceTableInputFormat
+Method-returnType:String
+Method-parameters:[]
+Method-name:setSourceTableInputFormat
+Method-returnType:void
+Method-parameters:[String srcTblInputFormat]
+FieldAccess:srcTblInputFormat
+Method-name:getMergeLevel
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:equals
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:getName
+Method-name:addInputPaths
+Method-returnType:void
+Method-parameters:[JobConf job, MergeFileTask mergeFileTask]
+MethodInvocation:getInputPaths
+MethodInvocation:addInputPath

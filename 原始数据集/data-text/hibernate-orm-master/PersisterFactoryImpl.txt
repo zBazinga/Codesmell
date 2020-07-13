@@ -1,0 +1,31 @@
+Class:PersisterFactoryImpl
+Field:ENTITY_PERSISTER_CONSTRUCTOR_ARGS
+Field:COLLECTION_PERSISTER_CONSTRUCTOR_ARGS
+Field:serviceRegistry
+Method-name:injectServices
+Method-returnType:void
+Method-parameters:[ServiceRegistryImplementor serviceRegistry]
+FieldAccess:serviceRegistry
+Method-name:createEntityPersister
+Method-returnType:EntityPersister
+Method-parameters:[PersistentClass entityBinding, EntityDataAccess entityCacheAccessStrategy, NaturalIdDataAccess naturalIdCacheAccessStrategy, PersisterCreationContext creationContext]
+MethodInvocation:getEntityPersisterClass
+MethodInvocation:getEntityPersisterClass
+MethodInvocation:getService
+MethodInvocation:createEntityPersister
+Method-name:createEntityPersister
+Method-returnType:EntityPersister
+Method-parameters:[Class<? extends EntityPersister> persisterClass, PersistentClass entityBinding, EntityDataAccess entityCacheAccessStrategy, NaturalIdDataAccess naturalIdCacheAccessStrategy, PersisterCreationContext creationContext]
+MethodInvocation:getConstructor
+MethodInvocation:newInstance
+MethodInvocation:getTargetException
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:getName
+Method-name:createCollectionPersister
+Method-returnType:CollectionPersister
+Method-parameters:[Collection collectionBinding, CollectionDataAccess cacheAccessStrategy, PersisterCreationContext creationContext]
+MethodInvocation:getCollectionPersisterClass
+MethodInvocation:getCollectionPersisterClass
+MethodInvocation:getService
+MethodInvocation:createCollectionPersister

@@ -1,0 +1,96 @@
+Class:RelMdRowCount
+Field:SOURCE
+MethodInvocation:reflectiveSource
+Method-name:getDef
+Method-returnType:MetadataDef<BuiltInMetadata.RowCount>
+Method-parameters:[]
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[RelNode rel, RelMetadataQuery mq]
+MethodInvocation:estimateRowCount
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[Union rel, RelMetadataQuery mq]
+MethodInvocation:getInputs
+MethodInvocation:getRowCount
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[Intersect rel, RelMetadataQuery mq]
+MethodInvocation:getInputs
+MethodInvocation:getRowCount
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[Minus rel, RelMetadataQuery mq]
+MethodInvocation:getInputs
+MethodInvocation:getRowCount
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[Filter rel, RelMetadataQuery mq]
+MethodInvocation:estimateFilteredRows
+MethodInvocation:getInput
+MethodInvocation:getCondition
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[Calc rel, RelMetadataQuery mq]
+MethodInvocation:estimateFilteredRows
+MethodInvocation:getInput
+MethodInvocation:getProgram
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[Project rel, RelMetadataQuery mq]
+MethodInvocation:getRowCount
+MethodInvocation:getInput
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[Sort rel, RelMetadataQuery mq]
+MethodInvocation:getRowCount
+MethodInvocation:getInput
+MethodInvocation:intValue
+MethodInvocation:max
+MethodInvocation:intValue
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[EnumerableLimit rel, RelMetadataQuery mq]
+MethodInvocation:getRowCount
+MethodInvocation:getInput
+MethodInvocation:intValue
+MethodInvocation:max
+MethodInvocation:intValue
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[SingleRel rel, RelMetadataQuery mq]
+MethodInvocation:getRowCount
+MethodInvocation:getInput
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[Join rel, RelMetadataQuery mq]
+MethodInvocation:getJoinRowCount
+MethodInvocation:getCondition
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[Aggregate rel, RelMetadataQuery mq]
+MethodInvocation:getGroupSet
+MethodInvocation:getDistinctRowCount
+MethodInvocation:getInput
+MethodInvocation:getRowCount
+MethodInvocation:getInput
+MethodInvocation:size
+MethodInvocation:getGroupSets
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[TableScan rel, RelMetadataQuery mq]
+MethodInvocation:estimateRowCount
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[Values rel, RelMetadataQuery mq]
+MethodInvocation:estimateRowCount
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[Exchange rel, RelMetadataQuery mq]
+MethodInvocation:getRowCount
+MethodInvocation:getInput
+Method-name:getRowCount
+Method-returnType:Double
+Method-parameters:[TableModify rel, RelMetadataQuery mq]
+MethodInvocation:getRowCount
+MethodInvocation:getInput

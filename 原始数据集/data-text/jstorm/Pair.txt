@@ -1,0 +1,29 @@
+Class:Pair
+Field:serialVersionUID
+Field:key
+Field:value
+Method-name:getKey
+Method-returnType:String
+Method-parameters:[]
+Method-name:setKey
+Method-returnType:void
+Method-parameters:[String key]
+FieldAccess:key
+Method-name:getValue
+Method-returnType:Long
+Method-parameters:[]
+Method-name:setValue
+Method-returnType:void
+Method-parameters:[Long value]
+FieldAccess:value
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:reflectionToString
+Method-name:write
+Method-returnType:void
+Method-parameters:[Kryo kryo, Output output, PairSerializer pairSerializer]
+MethodInvocation:writeLong
+MethodInvocation:getValue
+MethodInvocation:writeString
+MethodInvocation:getKey

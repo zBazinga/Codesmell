@@ -1,0 +1,450 @@
+Class:UpdateRequest
+Field:PARSER
+Field:SCRIPT_FIELD
+Field:SCRIPTED_UPSERT_FIELD
+Field:UPSERT_FIELD
+Field:DOC_FIELD
+Field:DOC_AS_UPSERT_FIELD
+Field:DETECT_NOOP_FIELD
+Field:SOURCE_FIELD
+Field:IF_SEQ_NO
+Field:IF_PRIMARY_TERM
+MethodInvocation:getSimpleName
+MethodInvocation:declareField
+MethodInvocation:parse
+MethodInvocation:declareBoolean
+MethodInvocation:declareObject
+MethodInvocation:source
+MethodInvocation:safeUpsertRequest
+MethodInvocation:contentBuilder
+MethodInvocation:contentType
+MethodInvocation:copyCurrentStructure
+MethodInvocation:declareObject
+MethodInvocation:source
+MethodInvocation:safeDoc
+MethodInvocation:contentBuilder
+MethodInvocation:contentType
+MethodInvocation:copyCurrentStructure
+MethodInvocation:declareBoolean
+MethodInvocation:declareBoolean
+MethodInvocation:declareField
+MethodInvocation:fromXContent
+MethodInvocation:declareLong
+MethodInvocation:declareLong
+Field:id
+Field:routing
+Field:script
+Field:fetchSourceContext
+Field:retryOnConflict
+Field:ifSeqNo
+Field:ifPrimaryTerm
+Field:refreshPolicy
+Field:waitForActiveShards
+Field:upsertRequest
+Field:scriptedUpsert
+Field:docAsUpsert
+Field:detectNoop
+Field:doc
+Method-name:UpdateRequest
+Method-returnType:null
+Method-parameters:[]
+Method-name:UpdateRequest
+Method-returnType:null
+Method-parameters:[StreamInput in]
+Method-name:UpdateRequest
+Method-returnType:null
+Method-parameters:[String index, String id]
+FieldAccess:id
+Method-name:validate
+Method-returnType:ActionRequestValidationException
+Method-parameters:[]
+MethodInvocation:version
+MethodInvocation:addValidationError
+MethodInvocation:isEmpty
+MethodInvocation:addValidationError
+MethodInvocation:validateSeqNoBasedCASParams
+MethodInvocation:addValidationError
+MethodInvocation:addValidationError
+MethodInvocation:addValidationError
+MethodInvocation:addValidationError
+MethodInvocation:addValidationError
+MethodInvocation:addValidationError
+Method-name:id
+Method-returnType:String
+Method-parameters:[]
+Method-name:id
+Method-returnType:UpdateRequest
+Method-parameters:[String id]
+FieldAccess:id
+Method-name:routing
+Method-returnType:UpdateRequest
+Method-parameters:[String routing]
+MethodInvocation:length
+FieldAccess:routing
+FieldAccess:routing
+Method-name:routing
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:routing
+Method-name:getShardId
+Method-returnType:ShardId
+Method-parameters:[]
+FieldAccess:shardId
+Method-name:script
+Method-returnType:Script
+Method-parameters:[]
+FieldAccess:script
+Method-name:script
+Method-returnType:UpdateRequest
+Method-parameters:[Script script]
+FieldAccess:script
+Method-name:scriptString
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:script
+MethodInvocation:getIdOrCode
+FieldAccess:script
+Method-name:scriptType
+Method-returnType:ScriptType
+Method-parameters:[]
+FieldAccess:script
+MethodInvocation:getType
+FieldAccess:script
+Method-name:scriptParams
+Method-returnType:Map<String,Object>
+Method-parameters:[]
+FieldAccess:script
+MethodInvocation:getParams
+FieldAccess:script
+Method-name:script
+Method-returnType:UpdateRequest
+Method-parameters:[String script, ScriptType scriptType]
+MethodInvocation:updateOrCreateScript
+Method-name:script
+Method-returnType:UpdateRequest
+Method-parameters:[String script]
+MethodInvocation:updateOrCreateScript
+Method-name:scriptLang
+Method-returnType:UpdateRequest
+Method-parameters:[String scriptLang]
+MethodInvocation:updateOrCreateScript
+Method-name:scriptLang
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getLang
+Method-name:addScriptParam
+Method-returnType:UpdateRequest
+Method-parameters:[String name, Object value]
+MethodInvocation:script
+MethodInvocation:put
+MethodInvocation:updateOrCreateScript
+MethodInvocation:getParams
+MethodInvocation:put
+MethodInvocation:updateOrCreateScript
+MethodInvocation:put
+Method-name:scriptParams
+Method-returnType:UpdateRequest
+Method-parameters:[Map<String,Object> scriptParams]
+MethodInvocation:updateOrCreateScript
+Method-name:script
+Method-returnType:UpdateRequest
+Method-parameters:[String script, ScriptType scriptType, @Nullable Map<String,Object> scriptParams]
+FieldAccess:script
+Method-name:script
+Method-returnType:UpdateRequest
+Method-parameters:[String script, @Nullable String scriptLang, ScriptType scriptType, @Nullable Map<String,Object> scriptParams]
+FieldAccess:script
+Method-name:fetchSource
+Method-returnType:UpdateRequest
+Method-parameters:[@Nullable String include, @Nullable String exclude]
+FieldAccess:fetchSourceContext
+FieldAccess:fetchSourceContext
+FieldAccess:fetchSourceContext
+MethodInvocation:fetchSource
+Method-name:fetchSource
+Method-returnType:UpdateRequest
+Method-parameters:[@Nullable String[] includes, @Nullable String[] excludes]
+FieldAccess:fetchSourceContext
+FieldAccess:fetchSourceContext
+FieldAccess:fetchSourceContext
+MethodInvocation:fetchSource
+Method-name:fetchSource
+Method-returnType:UpdateRequest
+Method-parameters:[boolean fetchSource]
+FieldAccess:fetchSourceContext
+FieldAccess:fetchSourceContext
+FieldAccess:fetchSourceContext
+MethodInvocation:includes
+MethodInvocation:excludes
+Method-name:fetchSource
+Method-returnType:UpdateRequest
+Method-parameters:[FetchSourceContext context]
+FieldAccess:fetchSourceContext
+Method-name:fetchSource
+Method-returnType:FetchSourceContext
+Method-parameters:[]
+Method-name:retryOnConflict
+Method-returnType:UpdateRequest
+Method-parameters:[int retryOnConflict]
+FieldAccess:retryOnConflict
+Method-name:retryOnConflict
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:retryOnConflict
+Method-name:version
+Method-returnType:UpdateRequest
+Method-parameters:[long version]
+Method-name:version
+Method-returnType:long
+Method-parameters:[]
+Method-name:versionType
+Method-returnType:UpdateRequest
+Method-parameters:[VersionType versionType]
+Method-name:versionType
+Method-returnType:VersionType
+Method-parameters:[]
+Method-name:setIfSeqNo
+Method-returnType:UpdateRequest
+Method-parameters:[long seqNo]
+Method-name:setIfPrimaryTerm
+Method-returnType:UpdateRequest
+Method-parameters:[long term]
+Method-name:ifSeqNo
+Method-returnType:long
+Method-parameters:[]
+Method-name:ifPrimaryTerm
+Method-returnType:long
+Method-parameters:[]
+Method-name:opType
+Method-returnType:OpType
+Method-parameters:[]
+Method-name:setRefreshPolicy
+Method-returnType:UpdateRequest
+Method-parameters:[RefreshPolicy refreshPolicy]
+FieldAccess:refreshPolicy
+Method-name:getRefreshPolicy
+Method-returnType:RefreshPolicy
+Method-parameters:[]
+Method-name:waitForActiveShards
+Method-returnType:ActiveShardCount
+Method-parameters:[]
+FieldAccess:waitForActiveShards
+Method-name:waitForActiveShards
+Method-returnType:UpdateRequest
+Method-parameters:[ActiveShardCount waitForActiveShards]
+FieldAccess:waitForActiveShards
+Method-name:waitForActiveShards
+Method-returnType:UpdateRequest
+Method-parameters:[final int waitForActiveShards]
+MethodInvocation:waitForActiveShards
+MethodInvocation:from
+Method-name:doc
+Method-returnType:UpdateRequest
+Method-parameters:[IndexRequest doc]
+FieldAccess:doc
+Method-name:doc
+Method-returnType:UpdateRequest
+Method-parameters:[XContentBuilder source]
+MethodInvocation:source
+MethodInvocation:safeDoc
+Method-name:doc
+Method-returnType:UpdateRequest
+Method-parameters:[Map<String,Object> source]
+MethodInvocation:source
+MethodInvocation:safeDoc
+Method-name:doc
+Method-returnType:UpdateRequest
+Method-parameters:[Map<String,Object> source, XContentType contentType]
+MethodInvocation:source
+MethodInvocation:safeDoc
+Method-name:doc
+Method-returnType:UpdateRequest
+Method-parameters:[String source, XContentType xContentType]
+MethodInvocation:source
+MethodInvocation:safeDoc
+Method-name:doc
+Method-returnType:UpdateRequest
+Method-parameters:[byte[] source, XContentType xContentType]
+MethodInvocation:source
+MethodInvocation:safeDoc
+Method-name:doc
+Method-returnType:UpdateRequest
+Method-parameters:[byte[] source, int offset, int length, XContentType xContentType]
+MethodInvocation:source
+MethodInvocation:safeDoc
+Method-name:doc
+Method-returnType:UpdateRequest
+Method-parameters:[Object... source]
+MethodInvocation:source
+MethodInvocation:safeDoc
+Method-name:doc
+Method-returnType:UpdateRequest
+Method-parameters:[XContentType xContentType, Object... source]
+MethodInvocation:source
+MethodInvocation:safeDoc
+Method-name:doc
+Method-returnType:IndexRequest
+Method-parameters:[]
+FieldAccess:doc
+Method-name:safeDoc
+Method-returnType:IndexRequest
+Method-parameters:[]
+Method-name:upsert
+Method-returnType:UpdateRequest
+Method-parameters:[IndexRequest upsertRequest]
+FieldAccess:upsertRequest
+Method-name:upsert
+Method-returnType:UpdateRequest
+Method-parameters:[XContentBuilder source]
+MethodInvocation:source
+MethodInvocation:safeUpsertRequest
+Method-name:upsert
+Method-returnType:UpdateRequest
+Method-parameters:[Map<String,Object> source]
+MethodInvocation:source
+MethodInvocation:safeUpsertRequest
+Method-name:upsert
+Method-returnType:UpdateRequest
+Method-parameters:[Map<String,Object> source, XContentType contentType]
+MethodInvocation:source
+MethodInvocation:safeUpsertRequest
+Method-name:upsert
+Method-returnType:UpdateRequest
+Method-parameters:[String source, XContentType xContentType]
+MethodInvocation:source
+MethodInvocation:safeUpsertRequest
+Method-name:upsert
+Method-returnType:UpdateRequest
+Method-parameters:[byte[] source, XContentType xContentType]
+MethodInvocation:source
+MethodInvocation:safeUpsertRequest
+Method-name:upsert
+Method-returnType:UpdateRequest
+Method-parameters:[byte[] source, int offset, int length, XContentType xContentType]
+MethodInvocation:source
+MethodInvocation:safeUpsertRequest
+Method-name:upsert
+Method-returnType:UpdateRequest
+Method-parameters:[Object... source]
+MethodInvocation:source
+MethodInvocation:safeUpsertRequest
+Method-name:upsert
+Method-returnType:UpdateRequest
+Method-parameters:[XContentType xContentType, Object... source]
+MethodInvocation:source
+MethodInvocation:safeUpsertRequest
+Method-name:upsertRequest
+Method-returnType:IndexRequest
+Method-parameters:[]
+FieldAccess:upsertRequest
+Method-name:safeUpsertRequest
+Method-returnType:IndexRequest
+Method-parameters:[]
+Method-name:detectNoop
+Method-returnType:UpdateRequest
+Method-parameters:[boolean detectNoop]
+FieldAccess:detectNoop
+Method-name:detectNoop
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:fromXContent
+Method-returnType:UpdateRequest
+Method-parameters:[XContentParser parser]
+MethodInvocation:parse
+Method-name:docAsUpsert
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:docAsUpsert
+Method-name:docAsUpsert
+Method-returnType:UpdateRequest
+Method-parameters:[boolean shouldUpsertDoc]
+FieldAccess:docAsUpsert
+Method-name:scriptedUpsert
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:scriptedUpsert
+Method-name:scriptedUpsert
+Method-returnType:UpdateRequest
+Method-parameters:[boolean scriptedUpsert]
+FieldAccess:scriptedUpsert
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeTo
+MethodInvocation:before
+MethodInvocation:getVersion
+MethodInvocation:writeString
+MethodInvocation:writeString
+MethodInvocation:writeOptionalString
+MethodInvocation:writeBoolean
+MethodInvocation:writeTo
+MethodInvocation:writeVInt
+MethodInvocation:writeTo
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:index
+MethodInvocation:id
+MethodInvocation:writeTo
+MethodInvocation:writeOptionalWriteable
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+MethodInvocation:index
+MethodInvocation:id
+MethodInvocation:writeTo
+MethodInvocation:writeBoolean
+MethodInvocation:writeZLong
+MethodInvocation:writeVLong
+MethodInvocation:writeBoolean
+MethodInvocation:writeBoolean
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[XContentBuilder builder, Params params]
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:getContentType
+MethodInvocation:createParser
+MethodInvocation:source
+MethodInvocation:field
+MethodInvocation:copyCurrentStructure
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:field
+MethodInvocation:getPreferredName
+MethodInvocation:field
+MethodInvocation:getContentType
+MethodInvocation:createParser
+MethodInvocation:source
+MethodInvocation:field
+MethodInvocation:copyCurrentStructure
+MethodInvocation:field
+MethodInvocation:field
+MethodInvocation:field
+MethodInvocation:endObject
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+MethodInvocation:append

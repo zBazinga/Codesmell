@@ -1,0 +1,20 @@
+Class:EventMessageDecoder
+Method-name:decode
+Method-returnType:Metadata
+Method-parameters:[MetadataInputBuffer inputBuffer]
+MethodInvocation:checkNotNull
+MethodInvocation:array
+MethodInvocation:limit
+MethodInvocation:decode
+Method-name:decode
+Method-returnType:EventMessage
+Method-parameters:[ParsableByteArray emsgData]
+MethodInvocation:checkNotNull
+MethodInvocation:readNullTerminatedString
+MethodInvocation:checkNotNull
+MethodInvocation:readNullTerminatedString
+MethodInvocation:readUnsignedInt
+MethodInvocation:readUnsignedInt
+MethodInvocation:copyOfRange
+MethodInvocation:getPosition
+MethodInvocation:limit

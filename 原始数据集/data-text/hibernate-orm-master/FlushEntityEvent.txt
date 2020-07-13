@@ -1,0 +1,72 @@
+Class:FlushEntityEvent
+Field:entity
+Field:propertyValues
+Field:databaseSnapshot
+Field:dirtyProperties
+Field:hasDirtyCollection
+Field:dirtyCheckPossible
+Field:dirtyCheckHandledByInterceptor
+Field:entityEntry
+Method-name:FlushEntityEvent
+Method-returnType:null
+Method-parameters:[EventSource source, Object entity, EntityEntry entry]
+FieldAccess:entity
+FieldAccess:entityEntry
+Method-name:getEntityEntry
+Method-returnType:EntityEntry
+Method-parameters:[]
+Method-name:getDatabaseSnapshot
+Method-returnType:Object[]
+Method-parameters:[]
+Method-name:setDatabaseSnapshot
+Method-returnType:void
+Method-parameters:[Object[] databaseSnapshot]
+FieldAccess:databaseSnapshot
+Method-name:hasDatabaseSnapshot
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isDirtyCheckHandledByInterceptor
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDirtyCheckHandledByInterceptor
+Method-returnType:void
+Method-parameters:[boolean dirtyCheckHandledByInterceptor]
+FieldAccess:dirtyCheckHandledByInterceptor
+Method-name:isDirtyCheckPossible
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDirtyCheckPossible
+Method-returnType:void
+Method-parameters:[boolean dirtyCheckPossible]
+FieldAccess:dirtyCheckPossible
+Method-name:getDirtyProperties
+Method-returnType:int[]
+Method-parameters:[]
+Method-name:setDirtyProperties
+Method-returnType:void
+Method-parameters:[int[] dirtyProperties]
+FieldAccess:dirtyProperties
+Method-name:hasDirtyCollection
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setHasDirtyCollection
+Method-returnType:void
+Method-parameters:[boolean hasDirtyCollection]
+FieldAccess:hasDirtyCollection
+Method-name:getPropertyValues
+Method-returnType:Object[]
+Method-parameters:[]
+Method-name:setPropertyValues
+Method-returnType:void
+Method-parameters:[Object[] propertyValues]
+FieldAccess:propertyValues
+Method-name:getEntity
+Method-returnType:Object
+Method-parameters:[]
+Method-name:isVersionIncrementRequired
+Method-returnType:boolean
+Method-parameters:[EntityEntry entry, EntityPersister persister, int[] dirtyProperties, DefaultFlushEntityEventListener defaultFlushEntityEventListener]
+MethodInvocation:getStatus
+MethodInvocation:isVersionIncrementRequired
+MethodInvocation:hasDirtyCollection
+MethodInvocation:getPropertyVersionability

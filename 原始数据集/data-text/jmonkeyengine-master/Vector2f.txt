@@ -1,0 +1,244 @@
+Class:Vector2f
+Field:serialVersionUID
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:ZERO
+Field:UNIT_XY
+Field:x
+Field:y
+Method-name:Vector2f
+Method-returnType:null
+Method-parameters:[float x, float y]
+FieldAccess:x
+FieldAccess:y
+Method-name:Vector2f
+Method-returnType:null
+Method-parameters:[]
+Method-name:Vector2f
+Method-returnType:null
+Method-parameters:[Vector2f vector2f]
+FieldAccess:x
+FieldAccess:y
+Method-name:set
+Method-returnType:Vector2f
+Method-parameters:[float x, float y]
+FieldAccess:x
+FieldAccess:y
+Method-name:set
+Method-returnType:Vector2f
+Method-parameters:[Vector2f vec]
+FieldAccess:x
+FieldAccess:y
+Method-name:add
+Method-returnType:Vector2f
+Method-parameters:[Vector2f vec]
+MethodInvocation:warning
+Method-name:addLocal
+Method-returnType:Vector2f
+Method-parameters:[Vector2f vec]
+MethodInvocation:warning
+Method-name:addLocal
+Method-returnType:Vector2f
+Method-parameters:[float addX, float addY]
+Method-name:add
+Method-returnType:Vector2f
+Method-parameters:[Vector2f vec, Vector2f result]
+MethodInvocation:warning
+Method-name:dot
+Method-returnType:float
+Method-parameters:[Vector2f vec]
+MethodInvocation:warning
+Method-name:cross
+Method-returnType:Vector3f
+Method-parameters:[Vector2f v]
+MethodInvocation:determinant
+Method-name:determinant
+Method-returnType:float
+Method-parameters:[Vector2f v]
+Method-name:interpolateLocal
+Method-returnType:Vector2f
+Method-parameters:[Vector2f finalVec, float changeAmnt]
+FieldAccess:x
+FieldAccess:x
+FieldAccess:y
+FieldAccess:y
+Method-name:interpolateLocal
+Method-returnType:Vector2f
+Method-parameters:[Vector2f beginVec, Vector2f finalVec, float changeAmnt]
+FieldAccess:x
+FieldAccess:y
+Method-name:isValidVector
+Method-returnType:boolean
+Method-parameters:[Vector2f vector]
+MethodInvocation:isNaN
+MethodInvocation:isNaN
+MethodInvocation:isInfinite
+MethodInvocation:isInfinite
+Method-name:length
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:sqrt
+MethodInvocation:lengthSquared
+Method-name:lengthSquared
+Method-returnType:float
+Method-parameters:[]
+Method-name:distanceSquared
+Method-returnType:float
+Method-parameters:[Vector2f v]
+Method-name:distanceSquared
+Method-returnType:float
+Method-parameters:[float otherX, float otherY]
+Method-name:distance
+Method-returnType:float
+Method-parameters:[Vector2f v]
+MethodInvocation:sqrt
+MethodInvocation:distanceSquared
+Method-name:mult
+Method-returnType:Vector2f
+Method-parameters:[float scalar]
+Method-name:multLocal
+Method-returnType:Vector2f
+Method-parameters:[float scalar]
+Method-name:multLocal
+Method-returnType:Vector2f
+Method-parameters:[Vector2f vec]
+MethodInvocation:warning
+Method-name:mult
+Method-returnType:Vector2f
+Method-parameters:[float scalar, Vector2f product]
+Method-name:divide
+Method-returnType:Vector2f
+Method-parameters:[float scalar]
+Method-name:divideLocal
+Method-returnType:Vector2f
+Method-parameters:[float scalar]
+Method-name:negate
+Method-returnType:Vector2f
+Method-parameters:[]
+Method-name:negateLocal
+Method-returnType:Vector2f
+Method-parameters:[]
+Method-name:subtract
+Method-returnType:Vector2f
+Method-parameters:[Vector2f vec]
+MethodInvocation:subtract
+Method-name:subtract
+Method-returnType:Vector2f
+Method-parameters:[Vector2f vec, Vector2f store]
+Method-name:subtract
+Method-returnType:Vector2f
+Method-parameters:[float valX, float valY]
+Method-name:subtractLocal
+Method-returnType:Vector2f
+Method-parameters:[Vector2f vec]
+MethodInvocation:warning
+Method-name:subtractLocal
+Method-returnType:Vector2f
+Method-parameters:[float valX, float valY]
+Method-name:normalize
+Method-returnType:Vector2f
+Method-parameters:[]
+MethodInvocation:length
+MethodInvocation:divide
+MethodInvocation:divide
+Method-name:normalizeLocal
+Method-returnType:Vector2f
+Method-parameters:[]
+MethodInvocation:length
+MethodInvocation:divideLocal
+MethodInvocation:divideLocal
+Method-name:smallestAngleBetween
+Method-returnType:float
+Method-parameters:[Vector2f otherVector]
+MethodInvocation:dot
+MethodInvocation:acos
+Method-name:angleBetween
+Method-returnType:float
+Method-parameters:[Vector2f otherVector]
+MethodInvocation:atan2
+MethodInvocation:atan2
+Method-name:getX
+Method-returnType:float
+Method-parameters:[]
+Method-name:setX
+Method-returnType:Vector2f
+Method-parameters:[float x]
+FieldAccess:x
+Method-name:getY
+Method-returnType:float
+Method-parameters:[]
+Method-name:setY
+Method-returnType:Vector2f
+Method-parameters:[float y]
+FieldAccess:y
+Method-name:getAngle
+Method-returnType:float
+Method-parameters:[]
+MethodInvocation:atan2
+Method-name:zero
+Method-returnType:Vector2f
+Method-parameters:[]
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:floatToIntBits
+MethodInvocation:floatToIntBits
+Method-name:clone
+Method-returnType:Vector2f
+Method-parameters:[]
+Method-name:toArray
+Method-returnType:float[]
+Method-parameters:[float[] floats]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:compare
+MethodInvocation:compare
+Method-name:isSimilar
+Method-returnType:boolean
+Method-parameters:[Vector2f other, float epsilon]
+MethodInvocation:compare
+MethodInvocation:abs
+MethodInvocation:compare
+MethodInvocation:abs
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:readExternal
+Method-returnType:void
+Method-parameters:[ObjectInput in]
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+Method-name:writeExternal
+Method-returnType:void
+Method-parameters:[ObjectOutput out]
+MethodInvocation:writeFloat
+MethodInvocation:writeFloat
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter e]
+MethodInvocation:getCapsule
+MethodInvocation:write
+MethodInvocation:write
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter e]
+MethodInvocation:getCapsule
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+Method-name:rotateAroundOrigin
+Method-returnType:void
+Method-parameters:[float angle, boolean cw]
+MethodInvocation:cos
+MethodInvocation:sin
+MethodInvocation:sin
+MethodInvocation:cos
+Method-name:writeOther
+Method-returnType:void
+Method-parameters:[final ByteBuffer data, BufferObject bufferObject]
+MethodInvocation:putLong
+MethodInvocation:putFloat
+MethodInvocation:putFloat
+MethodInvocation:getX
+MethodInvocation:getY

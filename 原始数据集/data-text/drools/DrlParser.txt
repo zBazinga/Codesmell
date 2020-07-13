@@ -1,0 +1,147 @@
+Class:DrlParser
+Field:GENERIC_ERROR_MESSAGE
+Field:results
+Field:editorSentences
+Field:location
+Field:lexer
+Field:resource
+Field:DEFAULT_LANGUAGE_LEVEL
+Field:languageLevel
+Method-name:DrlParser
+Method-returnType:null
+Method-parameters:[]
+Method-name:DrlParser
+Method-returnType:null
+Method-parameters:[LanguageLevelOption languageLevel]
+FieldAccess:languageLevel
+Method-name:parse
+Method-returnType:PackageDescr
+Method-parameters:[final Resource resource, final String text]
+FieldAccess:resource
+MethodInvocation:parse
+Method-name:parse
+Method-returnType:PackageDescr
+Method-parameters:[final boolean isEditor, final String text]
+MethodInvocation:buildLexer
+MethodInvocation:buildParser
+MethodInvocation:compile
+Method-name:parse
+Method-returnType:PackageDescr
+Method-parameters:[final boolean isEditor, final Reader reader]
+MethodInvocation:buildLexer
+MethodInvocation:buildParser
+MethodInvocation:compile
+Method-name:parse
+Method-returnType:PackageDescr
+Method-parameters:[final Resource resource, final Reader reader]
+FieldAccess:resource
+MethodInvocation:parse
+Method-name:parse
+Method-returnType:PackageDescr
+Method-parameters:[final Reader reader]
+MethodInvocation:parse
+Method-name:parse
+Method-returnType:PackageDescr
+Method-parameters:[final Reader drl, final Reader dsl]
+MethodInvocation:parse
+Method-name:parse
+Method-returnType:PackageDescr
+Method-parameters:[boolean isEditor, final Reader drl, final Reader dsl]
+MethodInvocation:getDRLText
+MethodInvocation:parse
+MethodInvocation:toString
+Method-name:parse
+Method-returnType:PackageDescr
+Method-parameters:[boolean isEditor, final String source, final Reader dsl]
+MethodInvocation:getDefaultResolver
+MethodInvocation:get
+MethodInvocation:expand
+MethodInvocation:hasErrors
+MethodInvocation:addAll
+FieldAccess:results
+MethodInvocation:getErrors
+MethodInvocation:parse
+Method-name:parse
+Method-returnType:PackageDescr
+Method-parameters:[final String source, final Reader dsl]
+MethodInvocation:parse
+Method-name:parse
+Method-returnType:PackageDescr
+Method-parameters:[final Resource resource]
+MethodInvocation:parse
+Method-name:parse
+Method-returnType:PackageDescr
+Method-parameters:[final Resource resource, final InputStream is]
+MethodInvocation:parse
+Method-name:parse
+Method-returnType:PackageDescr
+Method-parameters:[final boolean isEditor, final Resource resource]
+MethodInvocation:parse
+MethodInvocation:getInputStream
+Method-name:parse
+Method-returnType:PackageDescr
+Method-parameters:[final boolean isEditor, final Resource resource, final InputStream is]
+FieldAccess:resource
+MethodInvocation:getEncoding
+MethodInvocation:buildLexer
+MethodInvocation:buildParser
+MethodInvocation:compile
+Method-name:getExpandedDRL
+Method-returnType:String
+Method-parameters:[final String source, final Reader dsl]
+MethodInvocation:getDefaultResolver
+MethodInvocation:getExpandedDRL
+Method-name:getDRLText
+Method-returnType:StringBuilder
+Method-parameters:[final Reader reader]
+MethodInvocation:read
+MethodInvocation:append
+Method-name:hasErrors
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+FieldAccess:results
+Method-name:getErrors
+Method-returnType:List<DroolsError>
+Method-parameters:[]
+FieldAccess:results
+Method-name:compile
+Method-returnType:PackageDescr
+Method-parameters:[boolean isEditor, final DRLParser parser]
+MethodInvocation:enableEditorInterface
+MethodInvocation:compilationUnit
+MethodInvocation:getEditorInterface
+MethodInvocation:makeErrorList
+MethodInvocation:hasErrors
+MethodInvocation:printStackTrace
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:getStackTrace
+MethodInvocation:add
+FieldAccess:results
+MethodInvocation:getMessage
+Method-name:makeErrorList
+Method-returnType:void
+Method-parameters:[final DRLParser parser]
+MethodInvocation:getErrors
+MethodInvocation:getMessage
+MethodInvocation:getLineNumber
+MethodInvocation:getColumn
+MethodInvocation:add
+FieldAccess:results
+MethodInvocation:getErrors
+MethodInvocation:getMessage
+MethodInvocation:getLineNumber
+MethodInvocation:getColumn
+MethodInvocation:add
+FieldAccess:results
+Method-name:getLocation
+Method-returnType:Location
+Method-parameters:[]
+FieldAccess:location
+Method-name:getDefaultResolver
+Method-returnType:DefaultExpanderResolver
+Method-parameters:[final Reader dsl]
+Method-name:getEditorSentences
+Method-returnType:List<DroolsSentence>
+Method-parameters:[]

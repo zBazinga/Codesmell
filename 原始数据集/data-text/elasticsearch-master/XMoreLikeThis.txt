@@ -1,0 +1,345 @@
+Class:XMoreLikeThis
+Field:DEFAULT_MAX_NUM_TOKENS_PARSED
+Field:DEFAULT_MIN_TERM_FREQ
+Field:DEFAULT_MIN_DOC_FREQ
+Field:DEFAULT_MAX_DOC_FREQ
+Field:DEFAULT_BOOST
+Field:DEFAULT_FIELD_NAMES
+Field:DEFAULT_MIN_WORD_LENGTH
+Field:DEFAULT_MAX_WORD_LENGTH
+Field:DEFAULT_STOP_WORDS
+Field:stopWords
+Field:DEFAULT_MAX_QUERY_TERMS
+Field:analyzer
+Field:minTermFreq
+Field:minDocFreq
+Field:maxDocFreq
+Field:boost
+Field:skipTerms
+Field:fieldNames
+Field:maxNumTokensParsed
+Field:minWordLen
+Field:maxWordLen
+Field:maxQueryTerms
+Field:similarity
+Field:ir
+Field:boostFactor
+Method-name:getBoostFactor
+Method-returnType:float
+Method-parameters:[]
+Method-name:setBoostFactor
+Method-returnType:void
+Method-parameters:[float boostFactor]
+FieldAccess:boostFactor
+Method-name:setSkipTerms
+Method-returnType:void
+Method-parameters:[Set<Term> skipTerms]
+FieldAccess:skipTerms
+Method-name:XMoreLikeThis
+Method-returnType:null
+Method-parameters:[IndexReader ir]
+Method-name:XMoreLikeThis
+Method-returnType:null
+Method-parameters:[IndexReader ir, TFIDFSimilarity sim]
+FieldAccess:ir
+FieldAccess:similarity
+Method-name:getSimilarity
+Method-returnType:TFIDFSimilarity
+Method-parameters:[]
+Method-name:setSimilarity
+Method-returnType:void
+Method-parameters:[TFIDFSimilarity similarity]
+FieldAccess:similarity
+Method-name:getAnalyzer
+Method-returnType:Analyzer
+Method-parameters:[]
+Method-name:setAnalyzer
+Method-returnType:void
+Method-parameters:[Analyzer analyzer]
+FieldAccess:analyzer
+Method-name:getMinTermFreq
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMinTermFreq
+Method-returnType:void
+Method-parameters:[int minTermFreq]
+FieldAccess:minTermFreq
+Method-name:getMinDocFreq
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMinDocFreq
+Method-returnType:void
+Method-parameters:[int minDocFreq]
+FieldAccess:minDocFreq
+Method-name:getMaxDocFreq
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxDocFreq
+Method-returnType:void
+Method-parameters:[int maxFreq]
+FieldAccess:maxDocFreq
+Method-name:setMaxDocFreqPct
+Method-returnType:void
+Method-parameters:[int maxPercentage]
+FieldAccess:maxDocFreq
+MethodInvocation:numDocs
+Method-name:isBoost
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setBoost
+Method-returnType:void
+Method-parameters:[boolean boost]
+FieldAccess:boost
+Method-name:getFieldNames
+Method-returnType:String[]
+Method-parameters:[]
+Method-name:setFieldNames
+Method-returnType:void
+Method-parameters:[String[] fieldNames]
+FieldAccess:fieldNames
+Method-name:getMinWordLen
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMinWordLen
+Method-returnType:void
+Method-parameters:[int minWordLen]
+FieldAccess:minWordLen
+Method-name:getMaxWordLen
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxWordLen
+Method-returnType:void
+Method-parameters:[int maxWordLen]
+FieldAccess:maxWordLen
+Method-name:setStopWords
+Method-returnType:void
+Method-parameters:[Set<?> stopWords]
+FieldAccess:stopWords
+Method-name:getStopWords
+Method-returnType:Set<?>
+Method-parameters:[]
+Method-name:getMaxQueryTerms
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxQueryTerms
+Method-returnType:void
+Method-parameters:[int maxQueryTerms]
+FieldAccess:maxQueryTerms
+Method-name:getMaxNumTokensParsed
+Method-returnType:int
+Method-parameters:[]
+Method-name:setMaxNumTokensParsed
+Method-returnType:void
+Method-parameters:[int i]
+Method-name:like
+Method-returnType:Query
+Method-parameters:[int docNum]
+MethodInvocation:getIndexedFields
+MethodInvocation:toArray
+MethodInvocation:size
+MethodInvocation:createQuery
+MethodInvocation:retrieveTerms
+Method-name:like
+Method-returnType:Query
+Method-parameters:[String fieldName, Reader... readers]
+MethodInvocation:addTermFrequencies
+MethodInvocation:createQuery
+MethodInvocation:createQueue
+Method-name:like
+Method-returnType:Query
+Method-parameters:[Terms... likeTerms]
+MethodInvocation:addTermFrequencies
+MethodInvocation:createQuery
+MethodInvocation:createQueue
+Method-name:like
+Method-returnType:Query
+Method-parameters:[Fields... likeFields]
+MethodInvocation:add
+MethodInvocation:terms
+MethodInvocation:addTermFrequencies
+MethodInvocation:addToQuery
+MethodInvocation:createQueue
+MethodInvocation:build
+Method-name:createQuery
+Method-returnType:Query
+Method-parameters:[PriorityQueue<ScoreTerm> q]
+MethodInvocation:addToQuery
+MethodInvocation:build
+Method-name:addToQuery
+Method-returnType:void
+Method-parameters:[PriorityQueue<ScoreTerm> q, BooleanQuery.Builder query]
+MethodInvocation:pop
+MethodInvocation:add
+Method-name:createQueue
+Method-returnType:PriorityQueue<ScoreTerm>
+Method-parameters:[Map<String,Int> words]
+MethodInvocation:createQueue
+FieldAccess:fieldNames
+Method-name:createQueue
+Method-returnType:PriorityQueue<ScoreTerm>
+Method-parameters:[Map<String,Int> words, String... fieldNames]
+MethodInvocation:numDocs
+MethodInvocation:min
+MethodInvocation:size
+MethodInvocation:keySet
+FieldAccess:x
+MethodInvocation:get
+MethodInvocation:docFreq
+MethodInvocation:idf
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:top
+MethodInvocation:update
+MethodInvocation:updateTop
+Method-name:describeParams
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:retrieveTerms
+Method-returnType:PriorityQueue<ScoreTerm>
+Method-parameters:[int docNum]
+MethodInvocation:getTermVectors
+MethodInvocation:terms
+MethodInvocation:document
+MethodInvocation:getFields
+MethodInvocation:stringValue
+MethodInvocation:addTermFrequencies
+MethodInvocation:addTermFrequencies
+MethodInvocation:createQueue
+Method-name:addTermFrequencies
+Method-returnType:void
+Method-parameters:[Map<String,Int> termFreqMap, Terms vector]
+MethodInvocation:addTermFrequencies
+Method-name:addTermFrequencies
+Method-returnType:void
+Method-parameters:[Map<String,Int> termFreqMap, Terms vector, @Nullable String fieldName]
+MethodInvocation:iterator
+MethodInvocation:next
+MethodInvocation:copyUTF8Bytes
+MethodInvocation:toString
+MethodInvocation:isNoiseWord
+MethodInvocation:isSkipTerm
+MethodInvocation:postings
+MethodInvocation:nextDoc
+MethodInvocation:freq
+MethodInvocation:get
+MethodInvocation:put
+Method-name:addTermFrequencies
+Method-returnType:void
+Method-parameters:[Reader r, Map<String,Int> termFreqMap, String fieldName]
+MethodInvocation:tokenStream
+MethodInvocation:addAttribute
+MethodInvocation:reset
+MethodInvocation:incrementToken
+MethodInvocation:toString
+MethodInvocation:isNoiseWord
+MethodInvocation:isSkipTerm
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:end
+Method-name:isNoiseWord
+Method-returnType:boolean
+Method-parameters:[String term]
+MethodInvocation:length
+MethodInvocation:contains
+Method-name:isSkipTerm
+Method-returnType:boolean
+Method-parameters:[@Nullable String field, String value]
+MethodInvocation:contains
+Method-name:retrieveTerms
+Method-returnType:PriorityQueue<ScoreTerm>
+Method-parameters:[Reader r, String fieldName]
+MethodInvocation:addTermFrequencies
+MethodInvocation:createQueue
+Method-name:retrieveInterestingTerms
+Method-returnType:String[]
+Method-parameters:[int docNum]
+MethodInvocation:retrieveTerms
+MethodInvocation:pop
+MethodInvocation:add
+MethodInvocation:size
+MethodInvocation:toArray
+Method-name:retrieveInterestingTerms
+Method-returnType:String[]
+Method-parameters:[Reader r, String fieldName]
+MethodInvocation:retrieveTerms
+MethodInvocation:pop
+MethodInvocation:add
+MethodInvocation:size
+MethodInvocation:toArray
+Method-name:createQueryOther
+Method-returnType:Query
+Method-parameters:[MoreLikeThisQuery moreLikeThisQuery]
+MethodInvocation:getLikeFields
+MethodInvocation:like
+MethodInvocation:getLikeFields
+MethodInvocation:applyMinimumShouldMatch
+MethodInvocation:getMinimumShouldMatch
+MethodInvocation:add
+MethodInvocation:getLikeTexts
+FieldAccess:length
+MethodInvocation:getLikeTexts
+MethodInvocation:getLikeTexts
+MethodInvocation:like
+MethodInvocation:getMoreLikeFields
+MethodInvocation:applyMinimumShouldMatch
+MethodInvocation:getMinimumShouldMatch
+MethodInvocation:add
+MethodInvocation:build
+Class:FreqQ
+Method-name:FreqQ
+Method-returnType:null
+Method-parameters:[int maxSize]
+Method-name:lessThan
+Method-returnType:boolean
+Method-parameters:[ScoreTerm a, ScoreTerm b]
+Class:ScoreTerm
+Field:word
+Field:topField
+Field:score
+Method-name:ScoreTerm
+Method-returnType:null
+Method-parameters:[String word, String topField, float score]
+FieldAccess:word
+FieldAccess:topField
+FieldAccess:score
+Method-name:update
+Method-returnType:void
+Method-parameters:[String word, String topField, float score]
+FieldAccess:word
+FieldAccess:topField
+FieldAccess:score
+Class:Int
+Field:x
+Method-name:Int
+Method-returnType:null
+Method-parameters:[]

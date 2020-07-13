@@ -1,0 +1,21 @@
+Class:HttpForwardAction
+Field:mockServerLogger
+Field:httpClient
+Field:hopByHopHeaderFilter
+Method-name:HttpForwardAction
+Method-returnType:null
+Method-parameters:[MockServerLogger mockServerLogger, NettyHttpClient httpClient]
+FieldAccess:mockServerLogger
+FieldAccess:httpClient
+Method-name:sendRequest
+Method-returnType:HttpForwardActionResult
+Method-parameters:[HttpRequest request, @Nullable InetSocketAddress remoteAddress, Function<HttpResponse,HttpResponse> overrideHttpResponse]
+MethodInvocation:sendRequest
+MethodInvocation:onRequest
+MethodInvocation:logEvent
+MethodInvocation:setThrowable
+MethodInvocation:setMessageFormat
+MethodInvocation:setHttpRequest
+MethodInvocation:setLogLevel
+MethodInvocation:setType
+MethodInvocation:notFoundFuture

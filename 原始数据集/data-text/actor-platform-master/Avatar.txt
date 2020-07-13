@@ -1,0 +1,75 @@
+Class:Avatar
+Field:RECORD_ID
+Field:smallImage
+Field:largeImage
+Field:fullImage
+Method-name:Avatar
+Method-returnType:null
+Method-parameters:[@NotNull ApiAvatar wrapped]
+Method-name:Avatar
+Method-returnType:null
+Method-parameters:[@NotNull byte[] data]
+Method-name:Avatar
+Method-returnType:null
+Method-parameters:[]
+Method-name:getSmallImage
+Method-returnType:AvatarImage
+Method-parameters:[]
+Method-name:getLargeImage
+Method-returnType:AvatarImage
+Method-parameters:[]
+Method-name:getFullImage
+Method-returnType:AvatarImage
+Method-parameters:[]
+Method-name:parse
+Method-returnType:void
+Method-parameters:[BserValues values]
+MethodInvocation:getBool
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[BserWriter writer]
+MethodInvocation:writeBool
+Method-name:applyWrapped
+Method-returnType:void
+Method-parameters:[@NotNull ApiAvatar wrapped]
+MethodInvocation:getSmallImage
+MethodInvocation:getSmallImage
+MethodInvocation:getLargeImage
+MethodInvocation:getLargeImage
+MethodInvocation:getFullImage
+MethodInvocation:getFullImage
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:createInstance
+Method-returnType:ApiAvatar
+Method-parameters:[]
+Method-name:checkAvatar
+Method-returnType:boolean
+Method-parameters:[HashSet<Long> fileIds, JsBindingModule jsBindingModule]
+MethodInvocation:getSmallImage
+MethodInvocation:contains
+MethodInvocation:getFileId
+MethodInvocation:getFileReference
+MethodInvocation:getSmallImage
+MethodInvocation:getFullImage
+MethodInvocation:contains
+MethodInvocation:getFileId
+MethodInvocation:getFileReference
+MethodInvocation:getFullImage
+MethodInvocation:getLargeImage
+MethodInvocation:contains
+MethodInvocation:getFileId
+MethodInvocation:getFileReference
+MethodInvocation:getLargeImage

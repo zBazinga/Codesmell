@@ -1,0 +1,114 @@
+Class:ReplicaShardAllocator
+Method-name:processExistingRecoveries
+Method-returnType:void
+Method-parameters:[RoutingAllocation allocation]
+Method-name:isResponsibleFor
+Method-returnType:boolean
+Method-parameters:[final ShardRouting shard]
+MethodInvocation:primary
+MethodInvocation:unassigned
+MethodInvocation:getReason
+MethodInvocation:unassignedInfo
+Method-name:makeAllocationDecision
+Method-returnType:AllocateUnassignedDecision
+Method-parameters:[final ShardRouting unassignedShard, final RoutingAllocation allocation, final Logger logger]
+Method-name:canBeAllocatedToAtLeastOneNode
+Method-returnType:Tuple<Decision,Map<String,NodeAllocationResult>>
+Method-parameters:[ShardRouting shard, RoutingAllocation allocation]
+MethodInvocation:debugDecision
+MethodInvocation:values
+MethodInvocation:getDataNodes
+MethodInvocation:nodes
+MethodInvocation:node
+MethodInvocation:routingNodes
+MethodInvocation:getId
+MethodInvocation:canAllocate
+MethodInvocation:deciders
+MethodInvocation:type
+MethodInvocation:type
+MethodInvocation:tuple
+MethodInvocation:type
+MethodInvocation:type
+MethodInvocation:put
+MethodInvocation:nodeId
+MethodInvocation:node
+MethodInvocation:tuple
+Method-name:augmentExplanationsWithStoreInfo
+Method-returnType:List<NodeAllocationResult>
+Method-parameters:[Map<String,NodeAllocationResult> nodeDecisions, Map<String,NodeAllocationResult> withShardStores]
+MethodInvocation:entrySet
+MethodInvocation:containsKey
+MethodInvocation:getKey
+MethodInvocation:add
+MethodInvocation:get
+MethodInvocation:getKey
+MethodInvocation:add
+MethodInvocation:getValue
+Method-name:findStore
+Method-returnType:TransportNodesListShardStoreMetaData.StoreFilesMetaData
+Method-parameters:[ShardRouting shard, RoutingAllocation allocation, AsyncShardFetch.FetchResult<NodeStoreFilesMetaData> data]
+Method-name:findMatchingNodes
+Method-returnType:MatchingNodes
+Method-parameters:[ShardRouting shard, RoutingAllocation allocation, TransportNodesListShardStoreMetaData.StoreFilesMetaData primaryStore, AsyncShardFetch.FetchResult<NodeStoreFilesMetaData> data, boolean explain]
+MethodInvocation:entrySet
+MethodInvocation:getData
+MethodInvocation:getKey
+MethodInvocation:storeFilesMetaData
+MethodInvocation:getValue
+MethodInvocation:isEmpty
+MethodInvocation:node
+MethodInvocation:routingNodes
+MethodInvocation:getId
+MethodInvocation:canAllocate
+MethodInvocation:deciders
+MethodInvocation:computeMatchingBytes
+MethodInvocation:put
+MethodInvocation:nodeId
+MethodInvocation:type
+MethodInvocation:computeMatchingBytes
+MethodInvocation:put
+MethodInvocation:isTraceEnabled
+MethodInvocation:trace
+MethodInvocation:getName
+MethodInvocation:syncId
+MethodInvocation:trace
+MethodInvocation:getName
+Method-name:computeMatchingBytes
+Method-returnType:long
+Method-parameters:[TransportNodesListShardStoreMetaData.StoreFilesMetaData primaryStore, TransportNodesListShardStoreMetaData.StoreFilesMetaData storeFilesMetaData]
+MethodInvocation:syncId
+MethodInvocation:syncId
+MethodInvocation:equals
+MethodInvocation:name
+MethodInvocation:fileExists
+MethodInvocation:isSame
+MethodInvocation:file
+MethodInvocation:length
+Method-name:fetchData
+Method-returnType:AsyncShardFetch.FetchResult<NodeStoreFilesMetaData>
+Method-parameters:[ShardRouting shard, RoutingAllocation allocation]
+Method-name:hasInitiatedFetching
+Method-returnType:boolean
+Method-parameters:[ShardRouting shard]
+Class:MatchingNodes
+Field:nodesToSize
+Field:nodeWithHighestMatch
+Field:nodeDecisions
+Method-name:MatchingNodes
+Method-returnType:null
+Method-parameters:[ObjectLongMap<DiscoveryNode> nodesToSize, @Nullable Map<String,NodeAllocationResult> nodeDecisions]
+FieldAccess:nodesToSize
+FieldAccess:nodeDecisions
+FieldAccess:nodeWithHighestMatch
+Method-name:getNodeWithHighestMatch
+Method-returnType:DiscoveryNode
+Method-parameters:[]
+FieldAccess:nodeWithHighestMatch
+Method-name:isNodeMatchBySyncID
+Method-returnType:boolean
+Method-parameters:[DiscoveryNode node]
+MethodInvocation:get
+Method-name:hasAnyData
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty

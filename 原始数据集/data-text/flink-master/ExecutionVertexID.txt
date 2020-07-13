@@ -1,0 +1,38 @@
+Class:ExecutionVertexID
+Field:jobVertexId
+Field:subtaskIndex
+Method-name:ExecutionVertexID
+Method-returnType:null
+Method-parameters:[JobVertexID jobVertexId, int subtaskIndex]
+MethodInvocation:checkArgument
+FieldAccess:jobVertexId
+MethodInvocation:checkNotNull
+FieldAccess:subtaskIndex
+Method-name:getJobVertexId
+Method-returnType:JobVertexID
+Method-parameters:[]
+Method-name:getSubtaskIndex
+Method-returnType:int
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:notifyCoordinatorsAboutTaskFailure
+Method-returnType:void
+Method-parameters:[@Nullable final Throwable error, DefaultScheduler defaultScheduler]
+MethodInvocation:getExecutionJobVertex
+MethodInvocation:getJobVertexId
+MethodInvocation:getSubtaskIndex
+MethodInvocation:forEach
+MethodInvocation:getOperatorCoordinators
+MethodInvocation:subtaskFailed

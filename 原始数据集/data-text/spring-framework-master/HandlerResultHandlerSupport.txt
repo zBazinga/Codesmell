@@ -1,0 +1,71 @@
+Class:HandlerResultHandlerSupport
+Field:ALL_APPLICATION_MEDIA_TYPES
+MethodInvocation:asList
+Field:logger
+MethodInvocation:getLog
+MethodInvocation:getClass
+Field:contentTypeResolver
+Field:adapterRegistry
+Field:order
+Method-name:HandlerResultHandlerSupport
+Method-returnType:null
+Method-parameters:[RequestedContentTypeResolver contentTypeResolver, ReactiveAdapterRegistry adapterRegistry]
+MethodInvocation:notNull
+MethodInvocation:notNull
+FieldAccess:contentTypeResolver
+FieldAccess:adapterRegistry
+Method-name:getAdapterRegistry
+Method-returnType:ReactiveAdapterRegistry
+Method-parameters:[]
+FieldAccess:adapterRegistry
+Method-name:getContentTypeResolver
+Method-returnType:RequestedContentTypeResolver
+Method-parameters:[]
+FieldAccess:contentTypeResolver
+Method-name:setOrder
+Method-returnType:void
+Method-parameters:[int order]
+FieldAccess:order
+Method-name:getOrder
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:order
+Method-name:selectMediaType
+Method-returnType:MediaType
+Method-parameters:[ServerWebExchange exchange, Supplier<List<MediaType>> producibleTypesSupplier]
+MethodInvocation:getContentType
+MethodInvocation:getHeaders
+MethodInvocation:getResponse
+MethodInvocation:isConcrete
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getLogPrefix
+MethodInvocation:getAcceptableTypes
+MethodInvocation:getProducibleTypes
+MethodInvocation:isCompatibleWith
+MethodInvocation:add
+MethodInvocation:selectMoreSpecificMediaType
+MethodInvocation:sortBySpecificityAndQuality
+MethodInvocation:isConcrete
+MethodInvocation:isPresentIn
+MethodInvocation:removeQualityValue
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:getLogPrefix
+Method-name:getAcceptableTypes
+Method-returnType:List<MediaType>
+Method-parameters:[ServerWebExchange exchange]
+MethodInvocation:resolveMediaTypes
+MethodInvocation:getContentTypeResolver
+Method-name:getProducibleTypes
+Method-returnType:List<MediaType>
+Method-parameters:[ServerWebExchange exchange, Supplier<List<MediaType>> producibleTypesSupplier]
+MethodInvocation:getAttribute
+MethodInvocation:get
+Method-name:selectMoreSpecificMediaType
+Method-returnType:MediaType
+Method-parameters:[MediaType acceptable, MediaType producible]
+MethodInvocation:copyQualityValue
+MethodInvocation:compare

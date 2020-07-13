@@ -1,0 +1,121 @@
+Class:Frame
+Field:locals
+Field:stack
+Field:subroutines
+Method-name:Frame
+Method-returnType:null
+Method-parameters:[LocalsArray locals, ExecutionStack stack]
+Method-name:Frame
+Method-returnType:null
+Method-parameters:[LocalsArray locals, ExecutionStack stack, IntList subroutines]
+MethodInvocation:throwIfMutable
+FieldAccess:locals
+FieldAccess:stack
+FieldAccess:subroutines
+Method-name:Frame
+Method-returnType:null
+Method-parameters:[int maxLocals, int maxStack]
+Method-name:copy
+Method-returnType:Frame
+Method-parameters:[]
+MethodInvocation:copy
+MethodInvocation:copy
+Method-name:setImmutable
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:setImmutable
+MethodInvocation:setImmutable
+Method-name:getLocals
+Method-returnType:LocalsArray
+Method-parameters:[]
+Method-name:getStack
+Method-returnType:ExecutionStack
+Method-parameters:[]
+Method-name:getSubroutines
+Method-returnType:IntList
+Method-parameters:[]
+Method-name:initializeWithParameters
+Method-returnType:void
+Method-parameters:[StdTypeList params]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:set
+MethodInvocation:getCategory
+Method-name:subFrameForLabel
+Method-returnType:Frame
+Method-parameters:[int startLabel, int subLabel]
+MethodInvocation:subArrayForLabel
+MethodInvocation:mutableCopy
+MethodInvocation:pop
+MethodInvocation:setImmutable
+Method-name:mergeWith
+Method-returnType:Frame
+Method-parameters:[Frame other]
+MethodInvocation:merge
+MethodInvocation:getLocals
+MethodInvocation:getLocals
+MethodInvocation:merge
+MethodInvocation:getStack
+MethodInvocation:getStack
+MethodInvocation:mergeSubroutineLists
+MethodInvocation:adjustLocalsForSubroutines
+MethodInvocation:getLocals
+MethodInvocation:getStack
+Method-name:mergeSubroutineLists
+Method-returnType:IntList
+Method-parameters:[IntList otherSubroutines]
+MethodInvocation:equals
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:setImmutable
+Method-name:adjustLocalsForSubroutines
+Method-returnType:LocalsArray
+Method-parameters:[LocalsArray locals, IntList subroutines]
+MethodInvocation:size
+MethodInvocation:getPrimary
+Method-name:mergeWithSubroutineCaller
+Method-returnType:Frame
+Method-parameters:[Frame other, int subLabel, int predLabel]
+MethodInvocation:mergeWithSubroutineCaller
+MethodInvocation:getLocals
+MethodInvocation:getLocals
+MethodInvocation:merge
+MethodInvocation:getStack
+MethodInvocation:getStack
+MethodInvocation:mutableCopy
+MethodInvocation:add
+MethodInvocation:setImmutable
+MethodInvocation:getLocals
+MethodInvocation:getStack
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+Method-name:makeNewSubroutineStartFrame
+Method-returnType:Frame
+Method-parameters:[int subLabel, int callerLabel]
+MethodInvocation:mutableCopy
+MethodInvocation:add
+MethodInvocation:getPrimary
+MethodInvocation:makeImmutable
+MethodInvocation:mergeWithSubroutineCaller
+Method-name:makeExceptionHandlerStartFrame
+Method-returnType:Frame
+Method-parameters:[CstType exceptionClass]
+MethodInvocation:copy
+MethodInvocation:getStack
+MethodInvocation:clear
+MethodInvocation:push
+MethodInvocation:getLocals
+Method-name:annotate
+Method-returnType:void
+Method-parameters:[ExceptionWithContext ex]
+MethodInvocation:annotate
+MethodInvocation:annotate

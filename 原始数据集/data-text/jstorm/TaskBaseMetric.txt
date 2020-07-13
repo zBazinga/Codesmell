@@ -1,0 +1,117 @@
+Class:TaskBaseMetric
+Field:logger
+MethodInvocation:getLogger
+Field:serialVersionUID
+Field:topologyId
+Field:componentId
+Field:taskId
+Field:metricCache
+Method-name:TaskBaseMetric
+Method-returnType:null
+Method-parameters:[String topologyId, String componentId, int taskId]
+FieldAccess:topologyId
+FieldAccess:componentId
+FieldAccess:taskId
+MethodInvocation:info
+Method-name:findMetric
+Method-returnType:AsmMetric
+Method-parameters:[String streamId, String name, MetricType metricType, boolean mergeTopology]
+MethodInvocation:get
+MethodInvocation:streamMetricName
+MethodInvocation:getStreamMetric
+MethodInvocation:build
+MethodInvocation:registerStreamMetric
+MethodInvocation:putIfAbsent
+Method-name:update
+Method-returnType:void
+Method-parameters:[final String streamId, final String name, final Number value, final MetricType metricType, boolean mergeTopology]
+MethodInvocation:findMetric
+MethodInvocation:update
+Method-name:updateTime
+Method-returnType:void
+Method-parameters:[String streamId, String name, long start, long end, boolean mergeTopology]
+MethodInvocation:updateTime
+Method-name:updateTime
+Method-returnType:void
+Method-parameters:[String streamId, String name, long start, long end, int count, boolean mergeTopology]
+MethodInvocation:findMetric
+MethodInvocation:okToUpdate
+MethodInvocation:update
+MethodInvocation:setLastUpdateTime
+Method-name:update
+Method-returnType:void
+Method-parameters:[final String streamId, final String name, final Number value, final MetricType metricType]
+MethodInvocation:update
+Method-name:send_tuple
+Method-returnType:void
+Method-parameters:[String stream, int num_out_tasks]
+MethodInvocation:update
+MethodInvocation:update
+Method-name:recv_tuple
+Method-returnType:void
+Method-parameters:[String component, String stream]
+MethodInvocation:recv_tuple
+Method-name:recv_tuple
+Method-returnType:void
+Method-parameters:[String component, String stream, int tupleNum]
+MethodInvocation:update
+MethodInvocation:fastConcat
+Method-name:tupleLifeCycle
+Method-returnType:void
+Method-parameters:[String component, String stream, long lifeCycleStart, long endTime, int count]
+MethodInvocation:updateTime
+MethodInvocation:fastConcat
+Method-name:bolt_acked_tuple
+Method-returnType:void
+Method-parameters:[String component, String stream]
+MethodInvocation:bolt_acked_tuple
+Method-name:bolt_acked_tuple
+Method-returnType:void
+Method-parameters:[String component, String stream, int tupleNum]
+MethodInvocation:update
+Method-name:update_bolt_acked_latency
+Method-returnType:void
+Method-parameters:[String component, String stream, long latencyStart, long endTime]
+MethodInvocation:update_bolt_acked_latency
+Method-name:update_bolt_acked_latency
+Method-returnType:void
+Method-parameters:[String component, String stream, long latencyStart, long endTime, int tupleNum]
+MethodInvocation:updateTime
+Method-name:bolt_failed_tuple
+Method-returnType:void
+Method-parameters:[String component, String stream]
+MethodInvocation:update
+Method-name:boltFailedTuple
+Method-returnType:void
+Method-parameters:[String component, String stream, int count]
+MethodInvocation:update
+Method-name:spout_acked_tuple
+Method-returnType:void
+Method-parameters:[String stream, long latencyStart, long lifeCycleStart, long endTime]
+MethodInvocation:update
+MethodInvocation:updateTime
+MethodInvocation:updateTime
+MethodInvocation:fastConcat
+Method-name:spoutAckedTuple
+Method-returnType:void
+Method-parameters:[String stream, int count]
+MethodInvocation:update
+Method-name:fastConcat
+Method-returnType:String
+Method-parameters:[String componentId, String metricName]
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+Method-name:spout_failed_tuple
+Method-returnType:void
+Method-parameters:[String stream]
+MethodInvocation:update
+Method-name:spoutFailedTuple
+Method-returnType:void
+Method-parameters:[String stream, int count]
+MethodInvocation:update
+Method-name:spoutProcessLatency
+Method-returnType:void
+Method-parameters:[String stream, long startTime, long endTime, int count]
+MethodInvocation:updateTime

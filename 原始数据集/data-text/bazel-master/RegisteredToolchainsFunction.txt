@@ -1,0 +1,100 @@
+Class:RegisteredToolchainsFunction
+Method-name:getRegisteredToolchains
+Method-returnType:List<String>
+Method-parameters:[Environment env]
+MethodInvocation:getValue
+MethodInvocation:key
+MethodInvocation:getPackage
+MethodInvocation:getRegisteredToolchains
+Method-name:compute
+Method-returnType:SkyValue
+Method-parameters:[SkyKey skyKey, Environment env]
+MethodInvocation:getValue
+MethodInvocation:getConfigurationKey
+MethodInvocation:valuesMissing
+MethodInvocation:getConfiguration
+MethodInvocation:getFragment
+MethodInvocation:addAll
+MethodInvocation:getExtraToolchains
+MethodInvocation:addAll
+MethodInvocation:getWorkspaceToolchains
+MethodInvocation:valuesMissing
+MethodInvocation:build
+MethodInvocation:expandTargetPatterns
+MethodInvocation:ruleType
+MethodInvocation:valuesMissing
+MethodInvocation:configureRegisteredToolchains
+MethodInvocation:valuesMissing
+MethodInvocation:create
+Method-name:getWorkspaceToolchains
+Method-returnType:Iterable<? extends String>
+Method-parameters:[Environment env]
+MethodInvocation:getRegisteredToolchains
+MethodInvocation:of
+Method-name:configureRegisteredToolchains
+Method-returnType:ImmutableList<DeclaredToolchainInfo>
+Method-parameters:[Environment env, BuildConfiguration configuration, List<Label> labels]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:of
+MethodInvocation:toImmutableList
+MethodInvocation:getValuesOrThrow
+MethodInvocation:argument
+MethodInvocation:getLabel
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getConfiguredTarget
+MethodInvocation:get
+MethodInvocation:trimConfigurationsRetroactively
+MethodInvocation:isEmpty
+MethodInvocation:getFragments
+MethodInvocation:getConfigurationKey
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:getFragments
+MethodInvocation:getConfigurationKey
+MethodInvocation:getSimpleName
+MethodInvocation:joining
+MethodInvocation:declaredToolchainInfo
+MethodInvocation:add
+MethodInvocation:build
+Method-name:extractTag
+Method-returnType:String
+Method-parameters:[SkyKey skyKey]
+Class:InvalidToolchainLabelException
+Method-name:InvalidToolchainLabelException
+Method-returnType:null
+Method-parameters:[Label invalidLabel]
+MethodInvocation:formatMessage
+MethodInvocation:getCanonicalForm
+Method-name:InvalidToolchainLabelException
+Method-returnType:null
+Method-parameters:[Label invalidLabel, String reason]
+MethodInvocation:formatMessage
+MethodInvocation:getCanonicalForm
+Method-name:InvalidToolchainLabelException
+Method-returnType:null
+Method-parameters:[TargetPatternUtil.InvalidTargetPatternException e]
+MethodInvocation:getInvalidPattern
+MethodInvocation:getTpe
+Method-name:InvalidToolchainLabelException
+Method-returnType:null
+Method-parameters:[String invalidPattern, TargetParsingException e]
+MethodInvocation:formatMessage
+MethodInvocation:getMessage
+Method-name:InvalidToolchainLabelException
+Method-returnType:null
+Method-parameters:[Label invalidLabel, ConfiguredValueCreationException e]
+MethodInvocation:formatMessage
+MethodInvocation:getCanonicalForm
+MethodInvocation:getMessage
+Method-name:formatMessage
+Method-returnType:String
+Method-parameters:[String invalidPattern, String reason]
+MethodInvocation:format
+Class:RegisteredToolchainsFunctionException
+Method-name:RegisteredToolchainsFunctionException
+Method-returnType:null
+Method-parameters:[InvalidToolchainLabelException cause, Transience transience]

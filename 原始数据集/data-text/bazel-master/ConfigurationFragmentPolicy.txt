@@ -1,0 +1,108 @@
+Class:ConfigurationFragmentPolicy
+Field:requiredConfigurationFragments
+Field:starlarkRequiredConfigurationFragments
+Field:missingFragmentPolicy
+Method-name:ConfigurationFragmentPolicy
+Method-returnType:null
+Method-parameters:[ImmutableSetMultimap<ConfigurationTransition,Class<?>> requiredConfigurationFragments, ImmutableSetMultimap<ConfigurationTransition,String> starlarkRequiredConfigurationFragments, MissingFragmentPolicy missingFragmentPolicy]
+FieldAccess:requiredConfigurationFragments
+FieldAccess:starlarkRequiredConfigurationFragments
+FieldAccess:missingFragmentPolicy
+Method-name:missingFragmentError
+Method-returnType:String
+Method-parameters:[RuleContext ruleContext, String configurationId, ConfiguredTargetFactory configuredTargetFactory]
+MethodInvocation:getRuleClassObject
+MethodInvocation:getRule
+MethodInvocation:getRequiredConfigurationFragments
+MethodInvocation:hasFragment
+MethodInvocation:getConfiguration
+MethodInvocation:asSubclass
+MethodInvocation:add
+MethodInvocation:checkState
+MethodInvocation:isEmpty
+MethodInvocation:append
+MethodInvocation:getName
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:joining
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:getRequiredConfigurationFragments
+Method-returnType:Set<Class<?>>
+Method-parameters:[]
+MethodInvocation:copyOf
+MethodInvocation:values
+Method-name:getRequiredStarlarkFragments
+Method-returnType:Collection<String>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:isLegalConfigurationFragment
+Method-returnType:boolean
+Method-parameters:[Class<?> configurationFragment, ConfigurationTransition config]
+MethodInvocation:containsValue
+MethodInvocation:hasLegalFragmentName
+Method-name:isLegalConfigurationFragment
+Method-returnType:boolean
+Method-parameters:[Class<?> configurationFragment]
+MethodInvocation:containsValue
+MethodInvocation:hasLegalFragmentName
+Method-name:hasLegalFragmentName
+Method-returnType:boolean
+Method-parameters:[Class<?> configurationFragment, ConfigurationTransition transition]
+MethodInvocation:getSkylarkModule
+MethodInvocation:containsEntry
+MethodInvocation:name
+Method-name:hasLegalFragmentName
+Method-returnType:boolean
+Method-parameters:[Class<?> configurationFragment]
+MethodInvocation:getSkylarkModule
+MethodInvocation:containsValue
+MethodInvocation:name
+Method-name:getMissingFragmentPolicy
+Method-returnType:MissingFragmentPolicy
+Method-parameters:[]
+Field:MissingFragmentPolicy
+Class:Builder
+Field:requiredConfigurationFragments
+MethodInvocation:create
+Field:starlarkRequiredConfigurationFragments
+MethodInvocation:create
+Field:missingFragmentPolicy
+Method-name:requiresConfigurationFragments
+Method-returnType:Builder
+Method-parameters:[Collection<Class<?>> configurationFragments]
+MethodInvocation:requiresConfigurationFragments
+Method-name:requiresConfigurationFragments
+Method-returnType:Builder
+Method-parameters:[ConfigurationTransition transition, Collection<Class<?>> configurationFragments]
+MethodInvocation:checkArgument
+MethodInvocation:isHostTransition
+MethodInvocation:putAll
+Method-name:requiresConfigurationFragmentsBySkylarkModuleName
+Method-returnType:Builder
+Method-parameters:[Collection<String> configurationFragmentNames]
+MethodInvocation:requiresConfigurationFragmentsBySkylarkModuleName
+Method-name:requiresConfigurationFragmentsBySkylarkModuleName
+Method-returnType:Builder
+Method-parameters:[ConfigurationTransition transition, Collection<String> configurationFragmentNames]
+MethodInvocation:checkArgument
+MethodInvocation:isHostTransition
+MethodInvocation:putAll
+Method-name:includeConfigurationFragmentsFrom
+Method-returnType:Builder
+Method-parameters:[ConfigurationFragmentPolicy other]
+MethodInvocation:putAll
+MethodInvocation:putAll
+Method-name:setMissingFragmentPolicy
+Method-returnType:Builder
+Method-parameters:[MissingFragmentPolicy missingFragmentPolicy]
+FieldAccess:missingFragmentPolicy
+Method-name:build
+Method-returnType:ConfigurationFragmentPolicy
+Method-parameters:[]
+MethodInvocation:copyOf
+MethodInvocation:copyOf

@@ -1,0 +1,40 @@
+Class:ExpressionAnalysisContext
+Field:arrayChildVisitor
+Field:arrayExpressionsChildren
+Field:hasAggregates
+Field:allowEagerNormalize
+Method-name:indicateAggregates
+Method-returnType:void
+Method-parameters:[]
+Method-name:hasAggregates
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isEagerNormalizationAllowed
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:allowEagerNormalize
+Method-returnType:void
+Method-parameters:[boolean value]
+FieldAccess:allowEagerNormalize
+Method-name:registerArrayChild
+Method-returnType:void
+Method-parameters:[Expression arrayExpressionChild]
+MethodInvocation:process
+Method-name:isArrayChild
+Method-returnType:boolean
+Method-parameters:[SubqueryExpression expression]
+MethodInvocation:containsKey
+Method-name:analyzeHaving
+Method-returnType:HavingClause
+Method-parameters:[Optional<Expression> having, @Nullable List<Symbol> groupBy, ExpressionAnalyzer expressionAnalyzer, RelationAnalyzer relationAnalyzer]
+MethodInvocation:isPresent
+MethodInvocation:hasAggregates
+MethodInvocation:isEmpty
+MethodInvocation:convert
+MethodInvocation:get
+MethodInvocation:validate
+Class:ArrayChildVisitor
+Method-name:visitSubqueryExpression
+Method-returnType:Void
+Method-parameters:[SubqueryExpression node, Void context]
+MethodInvocation:put

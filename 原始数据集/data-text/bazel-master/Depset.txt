@@ -1,0 +1,156 @@
+Class:Depset
+Field:contentType
+Field:set
+Field:items
+Field:transitiveItems
+Method-name:Depset
+Method-returnType:null
+Method-parameters:[SkylarkType contentType, NestedSet<?> set, ImmutableList<Object> items, ImmutableList<NestedSet<?>> transitiveItems]
+FieldAccess:contentType
+MethodInvocation:checkNotNull
+FieldAccess:set
+FieldAccess:items
+FieldAccess:transitiveItems
+Method-name:create
+Method-returnType:Depset
+Method-parameters:[Order order, SkylarkType contentType, Object item, @Nullable Depset left]
+MethodInvocation:builder
+MethodInvocation:builder
+MethodInvocation:add
+MethodInvocation:addAll
+MethodInvocation:addAll
+MethodInvocation:isEmpty
+MethodInvocation:checkType
+MethodInvocation:add
+MethodInvocation:checkElement
+MethodInvocation:of
+MethodInvocation:checkType
+MethodInvocation:add
+MethodInvocation:errorf
+MethodInvocation:getDataTypeName
+MethodInvocation:build
+MethodInvocation:build
+MethodInvocation:addAll
+MethodInvocation:addTransitive
+MethodInvocation:errorf
+MethodInvocation:getMessage
+MethodInvocation:build
+Method-name:checkElement
+Method-returnType:void
+Method-parameters:[Object x, boolean strict]
+MethodInvocation:isImmutable
+MethodInvocation:errorf
+MethodInvocation:errorf
+MethodInvocation:getDataTypeName
+Method-name:legacyOf
+Method-returnType:Depset
+Method-parameters:[Order order, Object items]
+MethodInvocation:create
+Method-name:unionOf
+Method-returnType:Depset
+Method-parameters:[Depset left, Object right]
+MethodInvocation:create
+MethodInvocation:getOrder
+Method-name:of
+Method-returnType:Depset
+Method-parameters:[SkylarkType contentType, NestedSet<T> set]
+Method-name:checkType
+Method-returnType:SkylarkType
+Method-parameters:[SkylarkType depsetType, SkylarkType itemType]
+MethodInvocation:equals
+MethodInvocation:errorf
+Method-name:getSetFromNoneableParam
+Method-returnType:NestedSet<T>
+Method-parameters:[Object depsetOrNone, Class<T> expectedType, String fieldName]
+MethodInvocation:emptySet
+MethodInvocation:getSetFromParam
+MethodInvocation:errorf
+MethodInvocation:getDataTypeNameFromClass
+Method-name:fromDirectAndTransitive
+Method-returnType:Depset
+Method-parameters:[Order order, List<Object> direct, List<Depset> transitive, boolean strict]
+MethodInvocation:checkElement
+MethodInvocation:of
+MethodInvocation:checkType
+MethodInvocation:addAll
+MethodInvocation:isEmpty
+MethodInvocation:checkType
+MethodInvocation:getContentType
+MethodInvocation:isCompatible
+MethodInvocation:getOrder
+MethodInvocation:errorf
+MethodInvocation:getSkylarkName
+MethodInvocation:getSkylarkName
+MethodInvocation:getOrder
+MethodInvocation:addTransitive
+MethodInvocation:getSet
+MethodInvocation:build
+Method-name:checkHasContentType
+Method-returnType:void
+Method-parameters:[Class<?> type]
+MethodInvocation:isEmpty
+MethodInvocation:canBeCastTo
+Method-name:getSet
+Method-returnType:NestedSet<T>
+Method-parameters:[Class<T> type]
+MethodInvocation:checkHasContentType
+Method-name:getSet
+Method-returnType:NestedSet<?>
+Method-parameters:[]
+Method-name:toCollection
+Method-returnType:Collection<T>
+Method-parameters:[Class<T> type]
+MethodInvocation:checkHasContentType
+MethodInvocation:toCollection
+Method-name:toCollection
+Method-returnType:Collection<?>
+Method-parameters:[]
+MethodInvocation:toList
+Method-name:getSetFromParam
+Method-returnType:NestedSet<T>
+Method-parameters:[Class<T> expectedType, String fieldName]
+MethodInvocation:getSet
+MethodInvocation:format
+MethodInvocation:getContentType
+MethodInvocation:getDataTypeNameFromClass
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:truth
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+Method-name:getContentType
+Method-returnType:SkylarkType
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:repr
+Method-name:getOrder
+Method-returnType:Order
+Method-parameters:[]
+MethodInvocation:getOrder
+Method-name:isImmutable
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:repr
+Method-returnType:void
+Method-parameters:[Printer printer]
+MethodInvocation:append
+MethodInvocation:printList
+MethodInvocation:toList
+MethodInvocation:getOrder
+MethodInvocation:append
+MethodInvocation:repr
+MethodInvocation:getSkylarkName
+MethodInvocation:append
+Method-name:toList
+Method-returnType:StarlarkList<Object>
+Method-parameters:[StarlarkThread thread]
+MethodInvocation:copyOf
+MethodInvocation:mutability
+MethodInvocation:toCollection
+MethodInvocation:getDepthLimit
+Class:TypeException

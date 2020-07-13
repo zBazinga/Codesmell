@@ -1,0 +1,41 @@
+Class:BlockStatement
+Field:statements
+Field:hash
+Method-name:BlockStatement
+Method-returnType:null
+Method-parameters:[List<Statement> statements, Type type]
+Method-name:distinctVariables
+Method-returnType:boolean
+Method-parameters:[boolean fail]
+Method-name:accept
+Method-returnType:BlockStatement
+Method-parameters:[Shuttle shuttle]
+MethodInvocation:preVisit
+MethodInvocation:acceptStatements
+MethodInvocation:visit
+Method-name:accept
+Method-returnType:R
+Method-parameters:[Visitor<R> visitor]
+MethodInvocation:visit
+Method-name:accept0
+Method-returnType:void
+Method-parameters:[ExpressionWriter writer]
+MethodInvocation:isEmpty
+MethodInvocation:append
+MethodInvocation:begin
+MethodInvocation:accept
+MethodInvocation:end
+Method-name:evaluate
+Method-returnType:Object
+Method-parameters:[Evaluator evaluator]
+MethodInvocation:evaluate
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash

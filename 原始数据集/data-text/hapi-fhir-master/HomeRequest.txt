@@ -1,0 +1,133 @@
+Class:HomeRequest
+Field:myEncoding
+Field:myPretty
+Field:myResource
+Field:myServerId
+Field:mySummary
+Method-name:getEncoding
+Method-returnType:String
+Method-parameters:[]
+Method-name:getPretty
+Method-returnType:String
+Method-parameters:[]
+Method-name:get_summary
+Method-returnType:String
+Method-parameters:[]
+Method-name:getResource
+Method-returnType:String
+Method-parameters:[]
+Method-name:getServerId
+Method-returnType:String
+Method-parameters:[]
+Method-name:getServerIdWithDefault
+Method-returnType:String
+Method-parameters:[TesterConfig theConfig]
+MethodInvocation:isBlank
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:keySet
+MethodInvocation:getIdToServerBase
+Method-name:getFhirVersion
+Method-returnType:FhirVersionEnum
+Method-parameters:[TesterConfig theConfig]
+MethodInvocation:isBlank
+MethodInvocation:containsKey
+MethodInvocation:getIdToFhirVersion
+MethodInvocation:getValue
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:getIdToFhirVersion
+MethodInvocation:get
+MethodInvocation:getIdToFhirVersion
+Method-name:getServerName
+Method-returnType:String
+Method-parameters:[TesterConfig theConfig]
+MethodInvocation:isBlank
+MethodInvocation:containsKey
+MethodInvocation:getIdToServerName
+MethodInvocation:getValue
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:getIdToServerName
+MethodInvocation:get
+MethodInvocation:getIdToServerName
+Method-name:setEncoding
+Method-returnType:void
+Method-parameters:[String theEncoding]
+Method-name:setPretty
+Method-returnType:void
+Method-parameters:[String thePretty]
+Method-name:set_summary
+Method-returnType:void
+Method-parameters:[String theSummary]
+Method-name:setResource
+Method-returnType:void
+Method-parameters:[String theResource]
+Method-name:setServerId
+Method-returnType:void
+Method-parameters:[String theServerId]
+Method-name:newClient
+Method-returnType:GenericClient
+Method-parameters:[HttpServletRequest theRequest, FhirContext theContext, TesterConfig theConfig, Controller.CaptureInterceptor theInterceptor]
+MethodInvocation:setServerValidationMode
+MethodInvocation:getRestfulClientFactory
+MethodInvocation:getClientFactory
+MethodInvocation:newClient
+MethodInvocation:getServerBase
+MethodInvocation:newRestfulGenericClient
+MethodInvocation:getServerBase
+MethodInvocation:registerInterceptor
+MethodInvocation:setKeepResponses
+MethodInvocation:equals
+MethodInvocation:getPretty
+MethodInvocation:setPrettyPrint
+MethodInvocation:equals
+MethodInvocation:getPretty
+MethodInvocation:setPrettyPrint
+MethodInvocation:equals
+MethodInvocation:getEncoding
+MethodInvocation:setEncoding
+MethodInvocation:equals
+MethodInvocation:getEncoding
+MethodInvocation:setEncoding
+MethodInvocation:isNotBlank
+MethodInvocation:get_summary
+MethodInvocation:fromCode
+MethodInvocation:get_summary
+MethodInvocation:setSummary
+MethodInvocation:registerInterceptor
+MethodInvocation:get
+MethodInvocation:registerInterceptor
+Method-name:interceptResponse
+Method-returnType:void
+Method-parameters:[IHttpResponse theRequest]
+Method-name:interceptRequest
+Method-returnType:void
+Method-parameters:[IHttpRequest theRequest]
+MethodInvocation:isNotBlank
+MethodInvocation:addHeader
+Method-name:newParser
+Method-returnType:IParser
+Method-parameters:[FhirContext theCtx]
+MethodInvocation:equals
+MethodInvocation:getEncoding
+MethodInvocation:newJsonParser
+MethodInvocation:newXmlParser
+Method-name:getApiKey
+Method-returnType:String
+Method-parameters:[HttpServletRequest theServletRequest, TesterConfig theConfig]
+MethodInvocation:isBlank
+MethodInvocation:containsKey
+MethodInvocation:getIdToFhirVersion
+MethodInvocation:getValue
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:entrySet
+MethodInvocation:getIdToAllowsApiKey
+MethodInvocation:get
+MethodInvocation:getIdToAllowsApiKey
+MethodInvocation:equals
+MethodInvocation:defaultString
+MethodInvocation:getParameter

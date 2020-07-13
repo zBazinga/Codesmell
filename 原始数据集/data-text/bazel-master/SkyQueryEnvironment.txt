@@ -1,0 +1,756 @@
+Class:SkyQueryEnvironment
+Field:DEFAULT_THREAD_COUNT
+MethodInvocation:availableProcessors
+MethodInvocation:getRuntime
+Field:IS_LABEL
+MethodInvocation:functionIs
+Field:SKYKEY_TO_LABEL
+MethodInvocation:apply
+MethodInvocation:argument
+Field:BATCH_CALLBACK_SIZE
+Field:PACKAGE_SKYKEY_TO_PACKAGE_IDENTIFIER
+MethodInvocation:argument
+Field:TARGET_TO_SKY_KEY
+MethodInvocation:key
+MethodInvocation:getLabel
+Field:MAX_QUERY_EXPRESSION_LOG_CHARS
+Field:logger
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:loadingPhaseThreads
+Field:graphFactory
+Field:universeScope
+Field:parserPrefix
+Field:pkgPath
+Field:queryEvaluationParallelismLevel
+Field:universeKey
+Field:accessor
+Field:visibilityDepsAreAllowed
+Field:blockUniverseEvaluationErrors
+Field:universeEvalEventHandler
+Field:graph
+Field:blacklistPatternsSupplier
+Field:graphBackedRecursivePackageProvider
+Field:executor
+Field:packageSemaphore
+Field:resolver
+Method-name:SkyQueryEnvironment
+Method-returnType:null
+Method-parameters:[boolean keepGoing, int loadingPhaseThreads, ExtendedEventHandler eventHandler, Set<Setting> settings, Iterable<QueryFunction> extraFunctions, String parserPrefix, WalkableGraphFactory graphFactory, List<String> universeScope, PathPackageLocator pkgPath, boolean blockUniverseEvaluationErrors]
+Method-name:SkyQueryEnvironment
+Method-returnType:null
+Method-parameters:[boolean keepGoing, int loadingPhaseThreads, int queryEvaluationParallelismLevel, ExtendedEventHandler eventHandler, Set<Setting> settings, Iterable<QueryFunction> extraFunctions, String parserPrefix, WalkableGraphFactory graphFactory, List<String> universeScope, PathPackageLocator pkgPath, boolean blockUniverseEvaluationErrors]
+FieldAccess:loadingPhaseThreads
+FieldAccess:graphFactory
+FieldAccess:pkgPath
+FieldAccess:universeScope
+MethodInvocation:copyOf
+MethodInvocation:checkNotNull
+FieldAccess:parserPrefix
+MethodInvocation:checkState
+MethodInvocation:isEmpty
+FieldAccess:queryEvaluationParallelismLevel
+FieldAccess:universeKey
+MethodInvocation:getUniverseKey
+FieldAccess:blockUniverseEvaluationErrors
+FieldAccess:universeEvalEventHandler
+FieldAccess:blockUniverseEvaluationErrors
+FieldAccess:eventHandler
+FieldAccess:eventHandler
+FieldAccess:visibilityDepsAreAllowed
+MethodInvocation:contains
+Method-name:totalSizeOfCollections
+Method-returnType:int
+Method-parameters:[Iterable<Collection<T>> nestedCollections]
+MethodInvocation:size
+Method-name:addIfUniqueLabel
+Method-returnType:void
+Method-parameters:[Target node, Set<Label> labels, Set<Target> nodes]
+MethodInvocation:add
+MethodInvocation:getLabel
+MethodInvocation:add
+Method-name:makePackageKeyToTargetKeyMap
+Method-returnType:Multimap<SkyKey,SkyKey>
+Method-parameters:[Iterable<SkyKey> keys]
+MethodInvocation:create
+MethodInvocation:apply
+MethodInvocation:put
+MethodInvocation:key
+MethodInvocation:getPackageIdentifier
+Method-name:getPkgIdsNeededForTargetification
+Method-returnType:Set<PackageIdentifier>
+Method-parameters:[Multimap<SkyKey,SkyKey> packageKeyToTargetKeyMap]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:keySet
+MethodInvocation:toImmutableSet
+Method-name:makeLabelsStrict
+Method-returnType:Iterable<SkyKey>
+Method-parameters:[Iterable<T> targets]
+MethodInvocation:copyOf
+MethodInvocation:makeLabels
+Method-name:makeLabels
+Method-returnType:Iterable<SkyKey>
+Method-parameters:[Iterable<T> targets]
+MethodInvocation:transform
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:shutdownNow
+Method-name:getGraphRootsFromExpression
+Method-returnType:Set<SkyKey>
+Method-parameters:[QueryExpression expr]
+MethodInvocation:of
+Method-name:beforeEvaluateQuery
+Method-returnType:void
+Method-parameters:[QueryExpression expr]
+MethodInvocation:getGraphRootsFromExpression
+MethodInvocation:logged
+MethodInvocation:build
+MethodInvocation:setEventHander
+MethodInvocation:setNumThreads
+MethodInvocation:newBuilder
+MethodInvocation:prepareAndGet
+MethodInvocation:configureEvaluationContext
+MethodInvocation:getWalkableGraph
+MethodInvocation:checkEvaluationResult
+MethodInvocation:makeFreshPackageMultisetSemaphore
+MethodInvocation:getWalkableGraph
+MethodInvocation:of
+MethodInvocation:getTargetPatternsForUniverse
+MethodInvocation:listeningDecorator
+MethodInvocation:build
+MethodInvocation:setNameFormat
+Method-name:getTargetPatternsForUniverse
+Method-returnType:ImmutableList<TargetPattern>
+Method-parameters:[]
+MethodInvocation:copyOf
+MethodInvocation:transform
+MethodInvocation:getTargetPatternKeys
+MethodInvocation:getSkyKeys
+Method-name:makeFreshPackageMultisetSemaphore
+Method-returnType:MultisetSemaphore<PackageIdentifier>
+Method-parameters:[]
+MethodInvocation:unbounded
+Method-name:getPackageMultisetSemaphore
+Method-returnType:MultisetSemaphore<PackageIdentifier>
+Method-parameters:[]
+Method-name:hasDependencyFilter
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:checkEvaluationResult
+Method-returnType:void
+Method-parameters:[Set<SkyKey> roots, EvaluationResult<SkyValue> result]
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:getOnlyElement
+MethodInvocation:values
+MethodInvocation:isEmpty
+MethodInvocation:checkState
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:checkNotNull
+MethodInvocation:get
+MethodInvocation:isEmpty
+MethodInvocation:getCycleInfo
+MethodInvocation:getError
+MethodInvocation:checkState
+MethodInvocation:getError
+Method-name:transformParsedQuery
+Method-returnType:QueryExpression
+Method-parameters:[QueryExpression queryExpression]
+MethodInvocation:getQueryExpressionMapper
+MethodInvocation:logged
+MethodInvocation:accept
+MethodInvocation:info
+MethodInvocation:format
+MethodInvocation:truncate
+MethodInvocation:toString
+MethodInvocation:truncate
+MethodInvocation:toString
+Method-name:getQueryExpressionMapper
+Method-returnType:QueryExpressionMapper<Void>
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:identity
+MethodInvocation:getOnlyElement
+MethodInvocation:compose
+MethodInvocation:of
+Method-name:evalTopLevelInternal
+Method-returnType:void
+Method-parameters:[QueryExpression expr, OutputFormatterCallback<Target> callback]
+MethodInvocation:log
+MethodInvocation:shutdownNow
+MethodInvocation:awaitTermination
+MethodInvocation:handleInterruptedShutdown
+MethodInvocation:interrupt
+MethodInvocation:currentThread
+MethodInvocation:propagateIfPossible
+Method-name:handleInterruptedShutdown
+Method-returnType:void
+Method-parameters:[]
+Method-name:evaluateQuery
+Method-returnType:QueryEvalResult
+Method-parameters:[QueryExpression expr, ThreadSafeOutputFormatterCallback<Target> callback]
+MethodInvocation:beforeEvaluateQuery
+MethodInvocation:createUniquifierForOuterBatchStreamedCallback
+Method-name:targetifyValues
+Method-returnType:Map<SkyKey,Collection<Target>>
+Method-parameters:[Map<SkyKey,? extends Iterable<SkyKey>> input]
+MethodInvocation:targetifyValues
+MethodInvocation:makePackageKeyToTargetKeyMap
+MethodInvocation:copyOf
+MethodInvocation:concat
+MethodInvocation:values
+Method-name:targetifyValues
+Method-returnType:Map<SkyKey,Collection<Target>>
+Method-parameters:[Map<SkyKey,? extends Iterable<SkyKey>> input, Multimap<SkyKey,SkyKey> packageKeyToTargetKeyMap]
+MethodInvocation:builder
+MethodInvocation:getTargetKeyToTargetMapForPackageKeyToTargetKeyMap
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:createWithExpectedSize
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:add
+MethodInvocation:put
+MethodInvocation:getKey
+MethodInvocation:build
+Method-name:getRawReverseDeps
+Method-returnType:Map<SkyKey,Collection<Target>>
+Method-parameters:[Iterable<SkyKey> transitiveTraversalKeys]
+MethodInvocation:targetifyValues
+MethodInvocation:getReverseDepLabelsOfLabels
+Method-name:getReverseDepLabelsOfLabels
+Method-returnType:Map<SkyKey,Iterable<SkyKey>>
+Method-parameters:[Iterable<? extends SkyKey> labels]
+MethodInvocation:getReverseDeps
+Method-name:getAllowedDeps
+Method-returnType:Set<Label>
+Method-parameters:[Rule rule]
+MethodInvocation:values
+MethodInvocation:getTransitions
+MethodInvocation:addAll
+MethodInvocation:getDependencyLabels
+MethodInvocation:getVisibility
+MethodInvocation:addAll
+MethodInvocation:getAspectLabelsSuperset
+Method-name:filterFwdDeps
+Method-returnType:Collection<Target>
+Method-parameters:[Target target, Collection<Target> rawFwdDeps]
+MethodInvocation:getAllowedDeps
+MethodInvocation:filter
+Method-name:apply
+Method-returnType:boolean
+Method-parameters:[Target target]
+MethodInvocation:contains
+MethodInvocation:getLabel
+Method-name:getFwdDeps
+Method-returnType:ThreadSafeMutableSet<Target>
+Method-parameters:[Iterable<Target> targets, QueryExpressionContext<Target> context]
+MethodInvocation:newHashMapWithExpectedSize
+MethodInvocation:size
+MethodInvocation:put
+MethodInvocation:apply
+MethodInvocation:targetifyValues
+MethodInvocation:getFwdDepLabels
+MethodInvocation:keySet
+MethodInvocation:size
+MethodInvocation:keySet
+MethodInvocation:size
+MethodInvocation:keySet
+MethodInvocation:difference
+MethodInvocation:keySet
+MethodInvocation:keySet
+MethodInvocation:handle
+MethodInvocation:warn
+MethodInvocation:createThreadSafeMutableSet
+MethodInvocation:entrySet
+MethodInvocation:addAll
+MethodInvocation:filterFwdDeps
+MethodInvocation:get
+MethodInvocation:getKey
+MethodInvocation:getValue
+Method-name:getFwdDepLabels
+Method-returnType:Map<SkyKey,Iterable<SkyKey>>
+Method-parameters:[Iterable<SkyKey> targetLabels]
+MethodInvocation:checkState
+MethodInvocation:all
+MethodInvocation:collect
+MethodInvocation:stream
+MethodInvocation:entrySet
+MethodInvocation:getDirectDeps
+MethodInvocation:toImmutableMap
+MethodInvocation:filter
+MethodInvocation:getValue
+Method-name:getDepsBounded
+Method-returnType:QueryTaskFuture<Void>
+Method-parameters:[QueryExpression queryExpression, QueryExpressionContext<Target> context, Callback<Target> callback, int depthBound, QueryExpression caller]
+MethodInvocation:createMinDepthUniquifier
+MethodInvocation:eval
+MethodInvocation:createThreadSafeMutableSet
+MethodInvocation:addAll
+MethodInvocation:uniqueAtDepthLessThanOrEqualTo
+MethodInvocation:process
+MethodInvocation:createThreadSafeMutableSet
+MethodInvocation:addTargetsOfDirectDepsAndReportErrorsIfAny
+MethodInvocation:isEmpty
+Method-name:addTargetsOfDirectDepsAndReportErrorsIfAny
+Method-returnType:void
+Method-parameters:[QueryExpressionContext<Target> context, QueryExpression caller, ThreadSafeMutableSet<Target> toAddTo, ImmutableList<Target> toProcess]
+MethodInvocation:getFwdDepLabels
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toList
+MethodInvocation:targetifyValues
+MethodInvocation:copyOf
+MethodInvocation:concat
+MethodInvocation:values
+MethodInvocation:values
+MethodInvocation:putIfAbsent
+MethodInvocation:getLabel
+MethodInvocation:add
+MethodInvocation:reportUnsuccessfulOrMissingTargets
+Method-name:getReverseDeps
+Method-returnType:Collection<Target>
+Method-parameters:[Iterable<Target> targets, QueryExpressionContext<Target> context]
+MethodInvocation:processRawReverseDeps
+MethodInvocation:getReverseDepsOfLabels
+MethodInvocation:transform
+Method-name:getReverseDepsOfLabels
+Method-returnType:Map<SkyKey,Collection<Target>>
+Method-parameters:[Iterable<Label> targetLabels]
+MethodInvocation:getRawReverseDeps
+MethodInvocation:transform
+Method-name:filterRawReverseDepsOfTransitiveTraversalKeys
+Method-returnType:Collection<Target>
+Method-parameters:[Map<SkyKey,? extends Iterable<SkyKey>> rawReverseDeps, Multimap<SkyKey,SkyKey> packageKeyToTargetKeyMap]
+MethodInvocation:processRawReverseDeps
+MethodInvocation:targetifyValues
+Method-name:processRawReverseDeps
+Method-returnType:Collection<Target>
+Method-parameters:[Map<SkyKey,Collection<Target>> rawReverseDeps]
+MethodInvocation:create
+MethodInvocation:createWithExpectedSize
+MethodInvocation:totalSizeOfCollections
+MethodInvocation:values
+MethodInvocation:create
+MethodInvocation:transform
+MethodInvocation:keySet
+MethodInvocation:values
+MethodInvocation:add
+MethodInvocation:getAllowedDeps
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:add
+Method-name:getTransitiveClosure
+Method-returnType:ThreadSafeMutableSet<Target>
+Method-parameters:[ThreadSafeMutableSet<Target> targets, QueryExpressionContext<Target> context]
+MethodInvocation:getTransitiveClosure
+MethodInvocation:getFwdDeps
+MethodInvocation:createThreadSafeMutableSet
+Method-name:getNodesOnPath
+Method-returnType:ImmutableList<Target>
+Method-parameters:[Target from, Target to, QueryExpressionContext<Target> context]
+MethodInvocation:getNodesOnPath
+MethodInvocation:getFwdDeps
+Method-name:safeSubmit
+Method-returnType:ListenableFuture<R>
+Method-parameters:[Callable<R> callable]
+MethodInvocation:submit
+MethodInvocation:immediateCancelledFuture
+Method-name:safeSubmitAsync
+Method-returnType:ListenableFuture<R>
+Method-parameters:[QueryTaskAsyncCallable<R> callable]
+MethodInvocation:submitAsync
+MethodInvocation:call
+MethodInvocation:immediateCancelledFuture
+Method-name:eval
+Method-returnType:QueryTaskFuture<Void>
+Method-parameters:[final QueryExpression expr, final QueryExpressionContext<Target> context, final Callback<Target> callback]
+MethodInvocation:executeAsync
+MethodInvocation:eval
+Method-name:execute
+Method-returnType:QueryTaskFuture<R>
+Method-parameters:[QueryTaskCallable<R> callable]
+MethodInvocation:ofDelegate
+MethodInvocation:safeSubmit
+Method-name:executeAsync
+Method-returnType:QueryTaskFuture<R>
+Method-parameters:[QueryTaskAsyncCallable<R> callable]
+MethodInvocation:ofDelegate
+MethodInvocation:safeSubmitAsync
+Method-name:transformAsync
+Method-returnType:QueryTaskFuture<T2>
+Method-parameters:[QueryTaskFuture<T1> future, final Function<T1,QueryTaskFuture<T2>> function]
+MethodInvocation:ofDelegate
+MethodInvocation:transformAsync
+MethodInvocation:apply
+Method-name:whenAllSucceedCall
+Method-returnType:QueryTaskFuture<R>
+Method-parameters:[Iterable<? extends QueryTaskFuture<?>> futures, QueryTaskCallable<R> callable]
+MethodInvocation:ofDelegate
+MethodInvocation:call
+MethodInvocation:whenAllSucceed
+MethodInvocation:cast
+Method-name:createThreadSafeMutableSet
+Method-returnType:ThreadSafeMutableSet<Target>
+Method-parameters:[]
+Method-name:createMutableMap
+Method-returnType:MutableMap<Target,V>
+Method-parameters:[]
+Method-name:createUniquifierForOuterBatchStreamedCallback
+Method-returnType:NonExceptionalUniquifier<Target>
+Method-parameters:[QueryExpression expr]
+MethodInvocation:createUniquifier
+Method-name:createUniquifier
+Method-returnType:NonExceptionalUniquifier<Target>
+Method-parameters:[]
+Method-name:createMinDepthUniquifier
+Method-returnType:MinDepthUniquifier<Target>
+Method-parameters:[]
+Method-name:createMinDepthSkyKeyUniquifier
+Method-returnType:MinDepthUniquifier<SkyKey>
+Method-parameters:[]
+Method-name:createSkyKeyUniquifier
+Method-returnType:Uniquifier<SkyKey>
+Method-parameters:[]
+Method-name:getBlacklistedExcludes
+Method-returnType:ImmutableSet<PathFragment>
+Method-parameters:[TargetPatternKey targetPatternKey]
+MethodInvocation:getAllBlacklistedSubdirectoriesToExclude
+Method-name:getSiblingTargetsInPackage
+Method-returnType:Collection<Target>
+Method-parameters:[Target target]
+MethodInvocation:values
+MethodInvocation:getTargets
+MethodInvocation:getPackage
+Method-name:getTargetsMatchingPattern
+Method-returnType:QueryTaskFuture<Void>
+Method-parameters:[QueryExpression owner, String pattern, Callback<Target> callback]
+MethodInvocation:key
+MethodInvocation:reportBuildFileError
+MethodInvocation:getMessage
+MethodInvocation:immediateFailedFuture
+MethodInvocation:immediateSuccessfulFuture
+MethodInvocation:evalTargetPatternKey
+Method-name:evalTargetPatternKey
+Method-returnType:QueryTaskFuture<Void>
+Method-parameters:[QueryExpression owner, TargetPatternKey targetPatternKey, Callback<Target> callback]
+MethodInvocation:getBlacklistedExcludes
+MethodInvocation:immediateCancelledFuture
+MethodInvocation:getParsedPattern
+MethodInvocation:getExcludedSubdirectories
+MethodInvocation:reportBuildFileError
+MethodInvocation:getMessage
+MethodInvocation:immediateFuture
+MethodInvocation:equals
+MethodInvocation:getPolicy
+MethodInvocation:process
+MethodInvocation:filter
+MethodInvocation:shouldRetain
+MethodInvocation:getPolicy
+MethodInvocation:evalAsync
+MethodInvocation:ofDelegate
+MethodInvocation:catchingAsync
+MethodInvocation:directExecutor
+Method-name:getBuildFiles
+Method-returnType:ThreadSafeMutableSet<Target>
+Method-parameters:[QueryExpression caller, ThreadSafeMutableSet<Target> nodes, boolean buildFiles, boolean loads, QueryExpressionContext<Target> context]
+MethodInvocation:createThreadSafeMutableSet
+MethodInvocation:getPackage
+MethodInvocation:add
+MethodInvocation:getPackageIdentifier
+MethodInvocation:addIfUniqueLabel
+MethodInvocation:getBuildFile
+MethodInvocation:addAll
+MethodInvocation:getSkylarkFileDependencies
+MethodInvocation:getLoadTarget
+MethodInvocation:addIfUniqueLabel
+MethodInvocation:getBuildFileLabel
+MethodInvocation:getPackageIdentifier
+MethodInvocation:getLabel
+MethodInvocation:addIfUniqueLabel
+Method-name:getBuildFileLabel
+Method-returnType:Label
+Method-parameters:[PackageIdentifier packageIdentifier]
+MethodInvocation:getPackageBuildFile
+MethodInvocation:createUnvalidated
+MethodInvocation:getBaseName
+Method-name:getVisitBatchSizeForParallelVisitation
+Method-returnType:int
+Method-parameters:[]
+Method-name:getVisitTaskStatusCallback
+Method-returnType:VisitTaskStatusCallback
+Method-parameters:[]
+Method-name:getLoadTarget
+Method-returnType:Target
+Method-parameters:[Label label, Package pkg]
+Method-name:getQueryEvaluationParallelismLevel
+Method-returnType:int
+Method-parameters:[]
+Method-name:getAccessor
+Method-returnType:TargetAccessor<Target>
+Method-parameters:[]
+Method-name:getPackage
+Method-returnType:Package
+Method-parameters:[PackageIdentifier packageIdentifier]
+MethodInvocation:key
+MethodInvocation:getValue
+MethodInvocation:getPackage
+MethodInvocation:containsErrors
+MethodInvocation:getException
+MethodInvocation:isCycle
+Method-name:getTarget
+Method-returnType:Target
+Method-parameters:[Label label]
+MethodInvocation:getPackage
+MethodInvocation:getPackageIdentifier
+MethodInvocation:getTarget
+MethodInvocation:getName
+Method-name:getTargets
+Method-returnType:Map<Label,Target>
+Method-parameters:[Iterable<Label> labels]
+MethodInvocation:isEmpty
+MethodInvocation:of
+MethodInvocation:create
+MethodInvocation:forEach
+MethodInvocation:put
+MethodInvocation:getPackageIdentifier
+MethodInvocation:bulkGetPackages
+MethodInvocation:keySet
+MethodInvocation:builder
+MethodInvocation:acquireAll
+MethodInvocation:keySet
+MethodInvocation:keySet
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:getTarget
+MethodInvocation:getName
+MethodInvocation:put
+MethodInvocation:build
+MethodInvocation:releaseAll
+MethodInvocation:keySet
+Method-name:bulkGetPackages
+Method-returnType:Map<PackageIdentifier,Package>
+Method-parameters:[Iterable<PackageIdentifier> pkgIds]
+MethodInvocation:copyOf
+MethodInvocation:keys
+MethodInvocation:builder
+MethodInvocation:getSuccessfulValues
+MethodInvocation:entrySet
+MethodInvocation:argument
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:put
+MethodInvocation:checkNotNull
+MethodInvocation:getPackage
+MethodInvocation:build
+Method-name:buildTransitiveClosure
+Method-returnType:void
+Method-parameters:[QueryExpression caller, ThreadSafeMutableSet<Target> targets, int maxDepth]
+MethodInvocation:reportUnsuccessfulOrMissingTargetsInternal
+MethodInvocation:of
+Method-name:preloadOrThrow
+Method-returnType:void
+Method-parameters:[QueryExpression caller, Collection<String> patterns]
+Method-name:reportUnsuccessfulOrMissingTargets
+Method-returnType:void
+Method-parameters:[Map<? extends SkyKey,Target> keysWithTargets, Set<SkyKey> allTargetKeys, QueryExpression caller]
+MethodInvocation:keySet
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:reportUnsuccessfulOrMissingTargetsInternal
+MethodInvocation:values
+Method-name:reportUnsuccessfulOrMissingTargetsInternal
+Method-returnType:void
+Method-parameters:[Iterable<Target> targets, Iterable<SkyKey> missingTargetKeys, QueryExpression caller]
+MethodInvocation:builder
+MethodInvocation:filterSuccessfullyLoadedTargets
+MethodInvocation:makeLabels
+MethodInvocation:filter
+MethodInvocation:not
+MethodInvocation:in
+MethodInvocation:concat
+MethodInvocation:processUnsuccessfulAndMissingKeys
+MethodInvocation:isEmpty
+MethodInvocation:handle
+MethodInvocation:warn
+MethodInvocation:build
+MethodInvocation:reportBuildFileError
+Method-name:processUnsuccessfulAndMissingKeys
+Method-returnType:void
+Method-parameters:[Iterable<SkyKey> unsuccessfulKeys, ImmutableList.Builder<String> errorMessagesBuilder]
+MethodInvocation:entrySet
+MethodInvocation:getMissingAndExceptions
+MethodInvocation:getValue
+MethodInvocation:add
+MethodInvocation:getMessage
+MethodInvocation:getValue
+Method-name:filterSuccessfullyLoadedTargets
+Method-returnType:Set<SkyKey>
+Method-parameters:[Iterable<Target> targets, ImmutableList.Builder<String> errorMessagesBuilder]
+MethodInvocation:makeLabels
+MethodInvocation:entrySet
+MethodInvocation:getSuccessfulValues
+MethodInvocation:builder
+MethodInvocation:add
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getErrorMessage
+MethodInvocation:add
+MethodInvocation:build
+Method-name:getEventHandler
+Method-returnType:ExtendedEventHandler
+Method-parameters:[]
+Method-name:getTargetKeyToTargetMapForPackageKeyToTargetKeyMap
+Method-returnType:Map<SkyKey,Target>
+Method-parameters:[Multimap<SkyKey,SkyKey> packageKeyToTargetKeyMap]
+MethodInvocation:builder
+MethodInvocation:getTargetsForPackageKeyToTargetKeyMapHelper
+MethodInvocation:build
+Method-name:getPkgIdToTargetMultimapForPackageKeyToTargetKeyMap
+Method-returnType:Multimap<PackageIdentifier,Target>
+Method-parameters:[Multimap<SkyKey,SkyKey> packageKeyToTargetKeyMap]
+MethodInvocation:create
+MethodInvocation:getTargetsForPackageKeyToTargetKeyMapHelper
+MethodInvocation:put
+MethodInvocation:getPackageIdentifier
+MethodInvocation:getLabel
+Method-name:getTargetsForPackageKeyToTargetKeyMapHelper
+Method-returnType:void
+Method-parameters:[Multimap<SkyKey,SkyKey> packageKeyToTargetKeyMap, BiConsumer<SkyKey,Target> targetKeyAndTargetConsumer]
+MethodInvocation:getSuccessfulValues
+MethodInvocation:keySet
+MethodInvocation:entrySet
+MethodInvocation:getPackage
+MethodInvocation:getValue
+MethodInvocation:get
+MethodInvocation:getKey
+MethodInvocation:add
+MethodInvocation:getTarget
+MethodInvocation:getName
+MethodInvocation:apply
+MethodInvocation:accept
+Method-name:getOrCreate
+Method-returnType:Target
+Method-parameters:[Target target]
+Method-name:getBuildFileTargetsForPackageKeys
+Method-returnType:Iterable<Target>
+Method-parameters:[Set<PackageIdentifier> pkgIds, QueryExpressionContext<Target> context]
+MethodInvocation:acquireAll
+MethodInvocation:transform
+MethodInvocation:values
+MethodInvocation:getSuccessfulValues
+MethodInvocation:keys
+MethodInvocation:getBuildFile
+MethodInvocation:getPackage
+MethodInvocation:releaseAll
+Method-name:getRBuildFiles
+Method-returnType:QueryTaskFuture<Void>
+Method-parameters:[Collection<PathFragment> fileIdentifiers, QueryExpressionContext<Target> context, Callback<Target> callback]
+MethodInvocation:ofDelegate
+MethodInvocation:safeSubmit
+MethodInvocation:getRBuildFilesParallel
+Method-name:getFunctions
+Method-returnType:Iterable<QueryFunction>
+Method-parameters:[]
+MethodInvocation:build
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:addAll
+MethodInvocation:builder
+Method-name:getAllRdepsUnboundedParallel
+Method-returnType:QueryTaskFuture<Void>
+Method-parameters:[QueryExpression expression, QueryExpressionContext<Target> context, Callback<Target> callback]
+MethodInvocation:getAllRdepsUnboundedParallel
+Method-name:getAllRdepsBoundedParallel
+Method-returnType:QueryTaskFuture<Void>
+Method-parameters:[QueryExpression expression, int depth, QueryExpressionContext<Target> context, Callback<Target> callback]
+MethodInvocation:getAllRdepsBoundedParallel
+Method-name:getUnfilteredUniverseDTCSkyKeyPredicateFuture
+Method-returnType:QueryTaskFuture<Predicate<SkyKey>>
+Method-parameters:[QueryExpression universe, QueryExpressionContext<Target> context]
+MethodInvocation:getDTCSkyKeyPredicateFuture
+Method-name:getRdepsUnboundedParallel
+Method-returnType:QueryTaskFuture<Void>
+Method-parameters:[QueryExpression expression, QueryExpression universe, QueryExpressionContext<Target> context, Callback<Target> callback]
+MethodInvocation:transformAsync
+MethodInvocation:getUnfilteredUniverseDTCSkyKeyPredicateFuture
+MethodInvocation:getRdepsInUniverseUnboundedParallel
+Method-name:getDepsUnboundedParallel
+Method-returnType:QueryTaskFuture<Void>
+Method-parameters:[QueryExpression expression, QueryExpressionContext<Target> context, Callback<Target> callback, QueryExpression caller]
+MethodInvocation:getDepsUnboundedParallel
+MethodInvocation:equals
+Method-name:getRdepsBoundedParallel
+Method-returnType:QueryTaskFuture<Void>
+Method-parameters:[QueryExpression expression, int depth, QueryExpression universe, QueryExpressionContext<Target> context, Callback<Target> callback]
+MethodInvocation:transformAsync
+MethodInvocation:getUnfilteredUniverseDTCSkyKeyPredicateFuture
+MethodInvocation:getRdepsInUniverseBoundedParallel
+Class:BlacklistSupplier
+Field:graph
+Method-name:BlacklistSupplier
+Method-returnType:null
+Method-parameters:[WalkableGraph graph]
+FieldAccess:graph
+Method-name:get
+Method-returnType:ImmutableSet<PathFragment>
+Method-parameters:[]
+MethodInvocation:getPatterns
+MethodInvocation:getValue
+MethodInvocation:key
+Class:SkyKeyKeyExtractor
+Field:INSTANCE
+Method-name:SkyKeyKeyExtractor
+Method-returnType:null
+Method-parameters:[]
+Method-name:extractKey
+Method-returnType:SkyKey
+Method-parameters:[SkyKey element]
+Class:BatchStreamedCallback
+Field:callback
+Field:uniquifier
+Field:pendingLock
+Field:pending
+Field:batchThreshold
+Method-name:BatchStreamedCallback
+Method-returnType:null
+Method-parameters:[ThreadSafeOutputFormatterCallback<Target> callback, int batchThreshold, NonExceptionalUniquifier<Target> uniquifier]
+FieldAccess:callback
+FieldAccess:batchThreshold
+FieldAccess:uniquifier
+Method-name:start
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:start
+Method-name:processOutput
+Method-returnType:void
+Method-parameters:[Iterable<Target> partialResult]
+MethodInvocation:unique
+MethodInvocation:checkNotNull
+MethodInvocation:addAll
+MethodInvocation:size
+MethodInvocation:processOutput
+Method-name:close
+Method-returnType:void
+Method-parameters:[boolean failFast]
+MethodInvocation:processLastPending
+MethodInvocation:close
+Method-name:processLastPending
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isEmpty
+MethodInvocation:processOutput
+Class:ErrorBlockingForwardingEventHandler
+Method-name:ErrorBlockingForwardingEventHandler
+Method-returnType:null
+Method-parameters:[ExtendedEventHandler delegate]
+Method-name:handle
+Method-returnType:void
+Method-parameters:[Event e]
+MethodInvocation:equals
+MethodInvocation:getKind

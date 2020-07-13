@@ -1,0 +1,237 @@
+Class:OperationManager
+Field:LOG
+MethodInvocation:getLogger
+MethodInvocation:getName
+Field:handleToOperation
+Field:queryIdOperation
+Field:queryTagToIdMap
+MethodInvocation:synchronizedSetMultimap
+MethodInvocation:build
+MethodInvocation:hashSetValues
+MethodInvocation:hashKeys
+Field:webuiLock
+Field:historicalQueryInfos
+Field:liveQueryInfos
+Method-name:OperationManager
+Method-returnType:null
+Method-parameters:[]
+MethodInvocation:getSimpleName
+Method-name:init
+Method-returnType:void
+Method-parameters:[HiveConf hiveConf]
+MethodInvocation:registerRoutingAppender
+MethodInvocation:registerRoutingAppenderIfInTest
+MethodInvocation:isWebUiQueryInfoCacheEnabled
+MethodInvocation:getIntVar
+Method-name:start
+Method-returnType:void
+Method-parameters:[]
+Method-name:stop
+Method-returnType:void
+Method-parameters:[]
+Method-name:newExecuteStatementOperation
+Method-returnType:ExecuteStatementOperation
+Method-parameters:[HiveSession parentSession, String statement, Map<String,String> confOverlay, boolean runAsync, long queryTimeout]
+MethodInvocation:newExecuteStatementOperation
+MethodInvocation:addOperation
+Method-name:newGetTypeInfoOperation
+Method-returnType:GetTypeInfoOperation
+Method-parameters:[HiveSession parentSession]
+MethodInvocation:addOperation
+Method-name:newGetCatalogsOperation
+Method-returnType:GetCatalogsOperation
+Method-parameters:[HiveSession parentSession]
+MethodInvocation:addOperation
+Method-name:newGetSchemasOperation
+Method-returnType:GetSchemasOperation
+Method-parameters:[HiveSession parentSession, String catalogName, String schemaName]
+MethodInvocation:addOperation
+Method-name:newGetTablesOperation
+Method-returnType:MetadataOperation
+Method-parameters:[HiveSession parentSession, String catalogName, String schemaName, String tableName, List<String> tableTypes]
+MethodInvocation:addOperation
+Method-name:newGetTableTypesOperation
+Method-returnType:GetTableTypesOperation
+Method-parameters:[HiveSession parentSession]
+MethodInvocation:addOperation
+Method-name:newGetColumnsOperation
+Method-returnType:GetColumnsOperation
+Method-parameters:[HiveSession parentSession, String catalogName, String schemaName, String tableName, String columnName]
+MethodInvocation:addOperation
+Method-name:newGetFunctionsOperation
+Method-returnType:GetFunctionsOperation
+Method-parameters:[HiveSession parentSession, String catalogName, String schemaName, String functionName]
+MethodInvocation:addOperation
+Method-name:newGetPrimaryKeysOperation
+Method-returnType:GetPrimaryKeysOperation
+Method-parameters:[HiveSession parentSession, String catalogName, String schemaName, String tableName]
+MethodInvocation:addOperation
+Method-name:newGetCrossReferenceOperation
+Method-returnType:GetCrossReferenceOperation
+Method-parameters:[HiveSession session, String primaryCatalog, String primarySchema, String primaryTable, String foreignCatalog, String foreignSchema, String foreignTable]
+MethodInvocation:addOperation
+Method-name:getOperation
+Method-returnType:Operation
+Method-parameters:[OperationHandle operationHandle]
+MethodInvocation:getOperationInternal
+Method-name:getOperationInternal
+Method-returnType:Operation
+Method-parameters:[OperationHandle operationHandle]
+MethodInvocation:get
+Method-name:getQueryId
+Method-returnType:String
+Method-parameters:[Operation operation]
+MethodInvocation:getQueryId
+Method-name:addOperation
+Method-returnType:void
+Method-parameters:[Operation operation]
+MethodInvocation:info
+MethodInvocation:getHandle
+MethodInvocation:getSessionHandle
+MethodInvocation:getParentSession
+MethodInvocation:put
+MethodInvocation:getQueryId
+MethodInvocation:put
+MethodInvocation:getHandle
+MethodInvocation:put
+MethodInvocation:toString
+MethodInvocation:getHandleIdentifier
+MethodInvocation:getHandle
+MethodInvocation:getQueryInfo
+Method-name:updateQueryTag
+Method-returnType:void
+Method-parameters:[String queryId, String queryTag]
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:info
+Method-name:removeOperation
+Method-returnType:Operation
+Method-parameters:[OperationHandle opHandle]
+MethodInvocation:remove
+MethodInvocation:getQueryId
+MethodInvocation:remove
+MethodInvocation:getQueryTag
+MethodInvocation:remove
+MethodInvocation:info
+MethodInvocation:removeSafeQueryInfo
+Method-name:removeTimedOutOperation
+Method-returnType:Operation
+Method-parameters:[OperationHandle operationHandle]
+MethodInvocation:get
+MethodInvocation:isTimedOut
+MethodInvocation:currentTimeMillis
+MethodInvocation:info
+MethodInvocation:getHandle
+MethodInvocation:toString
+MethodInvocation:getState
+MethodInvocation:getInstance
+MethodInvocation:decrementCounter
+MethodInvocation:warn
+MethodInvocation:removeOperation
+Method-name:removeSafeQueryInfo
+Method-returnType:void
+Method-parameters:[OperationHandle operationHandle]
+MethodInvocation:toString
+MethodInvocation:getHandleIdentifier
+MethodInvocation:remove
+MethodInvocation:debug
+MethodInvocation:put
+Method-name:cancelOperation
+Method-returnType:void
+Method-parameters:[OperationHandle opHandle, String errMsg]
+MethodInvocation:getOperation
+MethodInvocation:getState
+MethodInvocation:getStatus
+MethodInvocation:isTerminal
+MethodInvocation:debug
+MethodInvocation:debug
+MethodInvocation:setErrorMessage
+MethodInvocation:cancel
+MethodInvocation:removeSafeQueryInfo
+Method-name:cancelOperation
+Method-returnType:void
+Method-parameters:[OperationHandle opHandle]
+MethodInvocation:cancelOperation
+Method-name:closeOperation
+Method-returnType:void
+Method-parameters:[OperationHandle opHandle]
+MethodInvocation:info
+MethodInvocation:removeOperation
+MethodInvocation:getInstance
+MethodInvocation:decrementCounter
+MethodInvocation:warn
+MethodInvocation:close
+Method-name:getOperationResultSetSchema
+Method-returnType:TableSchema
+Method-parameters:[OperationHandle opHandle]
+MethodInvocation:getResultSetSchema
+MethodInvocation:getOperation
+Method-name:getOperationNextRowSet
+Method-returnType:RowSet
+Method-parameters:[OperationHandle opHandle, FetchOrientation orientation, long maxRows]
+MethodInvocation:getNextRowSet
+MethodInvocation:getOperation
+Method-name:getOperationLogRowSet
+Method-returnType:RowSet
+Method-parameters:[OperationHandle opHandle, FetchOrientation orientation, long maxRows, HiveConf hConf]
+MethodInvocation:getLogSchema
+MethodInvocation:create
+MethodInvocation:getProtocolVersion
+MethodInvocation:getOperation
+MethodInvocation:getBoolVar
+MethodInvocation:warn
+MethodInvocation:getOperationLog
+MethodInvocation:getOperation
+MethodInvocation:readOperationLog
+MethodInvocation:isFetchFirst
+MethodInvocation:getMessage
+MethodInvocation:getCause
+MethodInvocation:addRow
+Method-name:isFetchFirst
+Method-returnType:boolean
+Method-parameters:[FetchOrientation fetchOrientation]
+MethodInvocation:equals
+Method-name:getLogSchema
+Method-returnType:Schema
+Method-parameters:[]
+MethodInvocation:setName
+MethodInvocation:setType
+MethodInvocation:addToFieldSchemas
+Method-name:getOperations
+Method-returnType:Collection<Operation>
+Method-parameters:[]
+MethodInvocation:unmodifiableCollection
+MethodInvocation:values
+Method-name:removeExpiredOperations
+Method-returnType:List<Operation>
+Method-parameters:[OperationHandle[] handles]
+MethodInvocation:removeTimedOutOperation
+MethodInvocation:warn
+MethodInvocation:add
+Method-name:getHistoricalQueryInfos
+Method-returnType:List<QueryInfo>
+Method-parameters:[]
+MethodInvocation:addAll
+MethodInvocation:values
+MethodInvocation:reverse
+Method-name:getLiveQueryInfos
+Method-returnType:List<QueryInfo>
+Method-parameters:[]
+MethodInvocation:addAll
+MethodInvocation:values
+Method-name:getQueryInfo
+Method-returnType:QueryInfo
+Method-parameters:[String handle]
+MethodInvocation:get
+MethodInvocation:get
+Method-name:getOperationByQueryId
+Method-returnType:Operation
+Method-parameters:[String queryId]
+MethodInvocation:get
+Method-name:getOperationsByQueryTag
+Method-returnType:Set<Operation>
+Method-parameters:[String queryTag]
+MethodInvocation:get
+MethodInvocation:getOperationByQueryId
+MethodInvocation:add
+MethodInvocation:getOperationByQueryId

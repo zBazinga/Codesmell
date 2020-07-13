@@ -1,0 +1,533 @@
+Class:CalcitePrepareImpl
+Field:ENABLE_ENUMERABLE
+MethodInvocation:value
+Field:ENABLE_STREAM
+MethodInvocation:value
+Field:ENUMERABLE_RULES
+Field:enableBindable
+MethodInvocation:get
+Field:SIMPLE_SQLS
+MethodInvocation:of
+Method-name:CalcitePrepareImpl
+Method-returnType:null
+Method-parameters:[]
+Method-name:parse
+Method-returnType:ParseResult
+Method-parameters:[Context context, String sql]
+MethodInvocation:parse_
+Method-name:convert
+Method-returnType:ConvertResult
+Method-parameters:[Context context, String sql]
+MethodInvocation:parse_
+Method-name:analyzeView
+Method-returnType:AnalyzeViewResult
+Method-parameters:[Context context, String sql, boolean fail]
+MethodInvocation:parse_
+Method-name:parse_
+Method-returnType:ParseResult
+Method-parameters:[Context context, String sql, boolean convert, boolean analyze, boolean fail]
+MethodInvocation:getTypeFactory
+MethodInvocation:getRootSchema
+MethodInvocation:getDefaultSchemaPath
+MethodInvocation:config
+MethodInvocation:createParser
+MethodInvocation:parseStmt
+MethodInvocation:createSqlValidator
+MethodInvocation:validate
+MethodInvocation:convert_
+MethodInvocation:getValidatedNodeType
+Method-name:convert_
+Method-returnType:ParseResult
+Method-parameters:[Context context, String sql, boolean analyze, boolean fail, CalciteCatalogReader catalogReader, SqlValidator validator, SqlNode sqlNode1]
+MethodInvocation:getTypeFactory
+MethodInvocation:addRelTraitDef
+MethodInvocation:withTrimUnusedFields
+MethodInvocation:configBuilder
+MethodInvocation:getRootSchema
+MethodInvocation:createCluster
+MethodInvocation:createConvertletTable
+MethodInvocation:getSqlToRelConverter
+MethodInvocation:build
+MethodInvocation:convertQuery
+MethodInvocation:analyze_
+MethodInvocation:getValidatedNodeType
+Method-name:analyze_
+Method-returnType:AnalyzeViewResult
+Method-parameters:[SqlValidator validator, String sql, SqlNode sqlNode, RelRoot root, boolean fail]
+Method-name:executeDdl
+Method-returnType:void
+Method-parameters:[Context context, SqlNode node]
+MethodInvocation:execute
+Method-name:createParser
+Method-returnType:SqlParser
+Method-parameters:[String sql]
+MethodInvocation:createParser
+MethodInvocation:createParserConfig
+Method-name:createParser
+Method-returnType:SqlParser
+Method-parameters:[String sql, SqlParser.ConfigBuilder parserConfig]
+MethodInvocation:create
+MethodInvocation:build
+Method-name:createParserConfig
+Method-returnType:SqlParser.ConfigBuilder
+Method-parameters:[]
+MethodInvocation:configBuilder
+Method-name:createConvertletTable
+Method-returnType:SqlRexConvertletTable
+Method-parameters:[]
+Method-name:createCluster
+Method-returnType:RelOptCluster
+Method-parameters:[RelOptPlanner planner, RexBuilder rexBuilder]
+MethodInvocation:create
+Method-name:createPlannerFactories
+Method-returnType:List<Function1<Context,RelOptPlanner>>
+Method-parameters:[]
+MethodInvocation:singletonList
+MethodInvocation:createPlanner
+Method-name:createPlanner
+Method-returnType:RelOptPlanner
+Method-parameters:[CalcitePrepare.Context prepareContext]
+MethodInvocation:createPlanner
+Method-name:createPlanner
+Method-returnType:RelOptPlanner
+Method-parameters:[final CalcitePrepare.Context prepareContext, org.apache.calcite.plan.Context externalContext, RelOptCostFactory costFactory]
+MethodInvocation:of
+MethodInvocation:config
+MethodInvocation:addRelTraitDef
+MethodInvocation:value
+MethodInvocation:addRelTraitDef
+MethodInvocation:registerDefaultRules
+MethodInvocation:materializationsEnabled
+MethodInvocation:config
+MethodInvocation:spark
+MethodInvocation:enabled
+MethodInvocation:registerRules
+Method-name:addRule
+Method-returnType:void
+Method-parameters:[RelOptRule rule]
+Method-name:removeRule
+Method-returnType:void
+Method-parameters:[RelOptRule rule]
+MethodInvocation:run
+Method-name:prepareQueryable
+Method-returnType:CalciteSignature<T>
+Method-parameters:[Context context, Queryable<T> queryable]
+MethodInvocation:prepare_
+MethodInvocation:of
+MethodInvocation:getElementType
+Method-name:prepareSql
+Method-returnType:CalciteSignature<T>
+Method-parameters:[Context context, Query<T> query, Type elementType, long maxRowCount]
+MethodInvocation:prepare_
+Method-name:prepare_
+Method-returnType:CalciteSignature<T>
+Method-parameters:[Context context, Query<T> query, Type elementType, long maxRowCount]
+MethodInvocation:contains
+MethodInvocation:simplePrepare
+MethodInvocation:getTypeFactory
+MethodInvocation:getRootSchema
+MethodInvocation:getDefaultSchemaPath
+MethodInvocation:config
+MethodInvocation:createPlannerFactories
+MethodInvocation:isEmpty
+MethodInvocation:apply
+MethodInvocation:prepare2_
+Method-name:simplePrepare
+Method-returnType:CalciteSignature<T>
+Method-parameters:[Context context, String sql]
+MethodInvocation:getTypeFactory
+MethodInvocation:build
+MethodInvocation:add
+MethodInvocation:builder
+MethodInvocation:deriveAliasFromOrdinal
+MethodInvocation:of
+MethodInvocation:nCopies
+MethodInvocation:getFieldCount
+MethodInvocation:getColumnMetaDataList
+MethodInvocation:deduce
+MethodInvocation:of
+MethodInvocation:of
+MethodInvocation:getRootSchema
+MethodInvocation:of
+MethodInvocation:asEnumerable
+Method-name:getStatementType
+Method-returnType:Meta.StatementType
+Method-parameters:[SqlKind kind]
+Method-name:getStatementType
+Method-returnType:Meta.StatementType
+Method-parameters:[Prepare.PreparedResult preparedResult]
+MethodInvocation:isDml
+Method-name:prepare2_
+Method-returnType:CalciteSignature<T>
+Method-parameters:[Context context, Query<T> query, Type elementType, long maxRowCount, CalciteCatalogReader catalogReader, RelOptPlanner planner]
+Method-name:getColumnMetaDataList
+Method-returnType:List<ColumnMetaData>
+Method-parameters:[JavaTypeFactory typeFactory, RelDataType x, RelDataType jdbcType, List<List<String>> originList]
+MethodInvocation:zip
+MethodInvocation:getFieldList
+MethodInvocation:getType
+MethodInvocation:isStruct
+MethodInvocation:getType
+MethodInvocation:get
+MethodInvocation:getFieldList
+MethodInvocation:add
+MethodInvocation:metaData
+MethodInvocation:size
+MethodInvocation:getName
+MethodInvocation:get
+Method-name:metaData
+Method-returnType:ColumnMetaData
+Method-parameters:[JavaTypeFactory typeFactory, int ordinal, String fieldName, RelDataType type, RelDataType fieldType, List<String> origins]
+MethodInvocation:avaticaType
+MethodInvocation:isNullable
+MethodInvocation:getPrecision
+MethodInvocation:origin
+MethodInvocation:origin
+MethodInvocation:getPrecision
+MethodInvocation:getScale
+MethodInvocation:origin
+MethodInvocation:columnClassName
+Method-name:avaticaType
+Method-returnType:ColumnMetaData.AvaticaType
+Method-parameters:[JavaTypeFactory typeFactory, RelDataType type, RelDataType fieldType]
+Method-name:origin
+Method-returnType:String
+Method-parameters:[List<String> origins, int offsetFromEnd]
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:size
+Method-name:getTypeOrdinal
+Method-returnType:int
+Method-parameters:[RelDataType type]
+MethodInvocation:getJdbcOrdinal
+MethodInvocation:getSqlTypeName
+Method-name:getClassName
+Method-returnType:String
+Method-parameters:[RelDataType type]
+MethodInvocation:getName
+Method-name:getScale
+Method-returnType:int
+Method-parameters:[RelDataType type]
+MethodInvocation:getScale
+MethodInvocation:getScale
+Method-name:getPrecision
+Method-returnType:int
+Method-parameters:[RelDataType type]
+MethodInvocation:getPrecision
+MethodInvocation:getPrecision
+Method-name:getTypeName
+Method-returnType:String
+Method-parameters:[RelDataType type]
+MethodInvocation:getSqlTypeName
+MethodInvocation:toString
+MethodInvocation:getName
+Method-name:populateMaterializations
+Method-returnType:void
+Method-parameters:[Context context, RelOptCluster cluster, Prepare.Materialization materialization]
+MethodInvocation:root
+MethodInvocation:getTypeFactory
+MethodInvocation:config
+MethodInvocation:createConvertletTable
+MethodInvocation:populate
+MethodInvocation:path
+Method-name:makeStruct
+Method-returnType:RelDataType
+Method-parameters:[RelDataTypeFactory typeFactory, RelDataType type]
+MethodInvocation:isStruct
+MethodInvocation:build
+MethodInvocation:add
+MethodInvocation:builder
+Method-name:perform
+Method-returnType:R
+Method-parameters:[CalciteServerStatement statement, Frameworks.PrepareAction<R> action]
+MethodInvocation:perform
+MethodInvocation:getConfig
+Method-name:perform
+Method-returnType:R
+Method-parameters:[CalciteServerStatement statement, FrameworkConfig config, Frameworks.BasePrepareAction<R> action]
+MethodInvocation:createPrepareContext
+MethodInvocation:getTypeFactory
+MethodInvocation:getDefaultSchema
+MethodInvocation:from
+MethodInvocation:getDefaultSchema
+MethodInvocation:getRootSchema
+MethodInvocation:root
+MethodInvocation:path
+MethodInvocation:config
+MethodInvocation:createPlanner
+MethodInvocation:getContext
+MethodInvocation:getCostFactory
+MethodInvocation:createCluster
+MethodInvocation:apply
+MethodInvocation:plus
+MethodInvocation:getRootSchema
+Class:CalcitePreparingStmt
+Field:planner
+Field:rexBuilder
+Field:prepare
+Field:schema
+Field:typeFactory
+Field:convertletTable
+Field:prefer
+Field:cluster
+Field:internalParameters
+Field:expansionDepth
+Field:sqlValidator
+Method-name:CalcitePreparingStmt
+Method-returnType:null
+Method-parameters:[CalcitePrepareImpl prepare, Context context, CatalogReader catalogReader, RelDataTypeFactory typeFactory, CalciteSchema schema, EnumerableRel.Prefer prefer, RelOptCluster cluster, Convention resultConvention, SqlRexConvertletTable convertletTable]
+FieldAccess:prepare
+FieldAccess:schema
+FieldAccess:prefer
+FieldAccess:cluster
+FieldAccess:planner
+MethodInvocation:getPlanner
+FieldAccess:rexBuilder
+MethodInvocation:getRexBuilder
+FieldAccess:typeFactory
+FieldAccess:convertletTable
+Method-name:init
+Method-returnType:void
+Method-parameters:[Class runtimeContextClass]
+Method-name:prepareQueryable
+Method-returnType:PreparedResult
+Method-parameters:[final Queryable queryable, RelDataType resultType]
+MethodInvocation:prepare_
+MethodInvocation:createCluster
+MethodInvocation:translate
+Method-name:prepareRel
+Method-returnType:PreparedResult
+Method-parameters:[final RelNode rel]
+MethodInvocation:prepare_
+MethodInvocation:getRowType
+Method-name:prepare_
+Method-returnType:PreparedResult
+Method-parameters:[Supplier<RelNode> fn, RelDataType resultType]
+MethodInvocation:init
+MethodInvocation:get
+MethodInvocation:getRowType
+MethodInvocation:zip
+MethodInvocation:identity
+MethodInvocation:getFieldCount
+MethodInvocation:getFieldNames
+FieldAccess:collation
+MethodInvocation:traceTime
+MethodInvocation:makeStruct
+MethodInvocation:getTypeFactory
+MethodInvocation:nCopies
+MethodInvocation:getFieldCount
+MethodInvocation:build
+MethodInvocation:builder
+MethodInvocation:getTypeFactory
+MethodInvocation:withRel
+MethodInvocation:flattenTypes
+MethodInvocation:trimUnusedFields
+MethodInvocation:of
+MethodInvocation:of
+MethodInvocation:optimize
+MethodInvocation:traceTime
+MethodInvocation:implement
+Method-name:getSqlToRelConverter
+Method-returnType:SqlToRelConverter
+Method-parameters:[SqlValidator validator, CatalogReader catalogReader, SqlToRelConverter.Config config]
+Method-name:flattenTypes
+Method-returnType:RelNode
+Method-parameters:[RelNode rootRel, boolean restructure]
+MethodInvocation:spark
+MethodInvocation:enabled
+MethodInvocation:flattenTypes
+Method-name:decorrelate
+Method-returnType:RelNode
+Method-parameters:[SqlToRelConverter sqlToRelConverter, SqlNode query, RelNode rootRel]
+MethodInvocation:decorrelate
+Method-name:expandView
+Method-returnType:RelRoot
+Method-parameters:[RelDataType rowType, String queryString, List<String> schemaPath, List<String> viewPath]
+MethodInvocation:createParser
+MethodInvocation:parseQuery
+MethodInvocation:withSchemaPath
+FieldAccess:catalogReader
+MethodInvocation:createSqlValidator
+MethodInvocation:build
+MethodInvocation:withTrimUnusedFields
+MethodInvocation:configBuilder
+MethodInvocation:getSqlToRelConverter
+MethodInvocation:convertQuery
+Method-name:createSqlValidator
+Method-returnType:SqlValidator
+Method-parameters:[CatalogReader catalogReader]
+MethodInvocation:createSqlValidator
+Method-name:getSqlValidator
+Method-returnType:SqlValidator
+Method-parameters:[]
+MethodInvocation:createSqlValidator
+Method-name:createPreparedExplanation
+Method-returnType:PreparedResult
+Method-parameters:[RelDataType resultType, RelDataType parameterRowType, RelRoot root, SqlExplainFormat format, SqlExplainLevel detailLevel]
+Method-name:implement
+Method-returnType:PreparedResult
+Method-parameters:[RelRoot root]
+MethodInvocation:run
+MethodInvocation:getRowType
+MethodInvocation:belongsTo
+MethodInvocation:bindable
+MethodInvocation:isRefTrivial
+MethodInvocation:getRexBuilder
+MethodInvocation:getCluster
+MethodInvocation:left
+MethodInvocation:add
+MethodInvocation:makeInputRef
+MethodInvocation:create
+MethodInvocation:getRowType
+MethodInvocation:create
+MethodInvocation:set
+MethodInvocation:conformance
+MethodInvocation:config
+MethodInvocation:put
+MethodInvocation:toBindable
+MethodInvocation:spark
+MethodInvocation:remove
+MethodInvocation:traceTime
+MethodInvocation:traceTime
+MethodInvocation:isEmpty
+MethodInvocation:getFieldCollations
+MethodInvocation:of
+MethodInvocation:of
+MethodInvocation:mapTableModOp
+Method-name:getCode
+Method-returnType:String
+Method-parameters:[]
+Method-name:getBindable
+Method-returnType:Bindable
+Method-parameters:[Meta.CursorFactory cursorFactory]
+Method-name:getElementType
+Method-returnType:Type
+Method-parameters:[]
+MethodInvocation:getElementType
+Method-name:getMaterializations
+Method-returnType:List<Materialization>
+Method-parameters:[]
+MethodInvocation:materializationsEnabled
+MethodInvocation:config
+MethodInvocation:query
+MethodInvocation:instance
+MethodInvocation:of
+MethodInvocation:populateMaterializations
+Method-name:getLattices
+Method-returnType:List<LatticeEntry>
+Method-parameters:[]
+MethodInvocation:getLatticeEntries
+Class:CalcitePreparedExplain
+Method-name:CalcitePreparedExplain
+Method-returnType:null
+Method-parameters:[RelDataType resultType, RelDataType parameterRowType, RelRoot root, SqlExplainFormat format, SqlExplainLevel detailLevel]
+Method-name:getBindable
+Method-returnType:Bindable
+Method-parameters:[final Meta.CursorFactory cursorFactory]
+MethodInvocation:getCode
+MethodInvocation:singletonEnumerable
+MethodInvocation:singletonEnumerable
+Method-name:toRex
+Method-returnType:RexNode
+Method-parameters:[BlockStatement statement]
+Method-name:toRexList
+Method-returnType:List<RexNode>
+Method-parameters:[BlockStatement statement]
+Method-name:toRex
+Method-returnType:RexNode
+Method-parameters:[Expression expression]
+Method-name:bind
+Method-returnType:ScalarTranslator
+Method-parameters:[List<ParameterExpression> parameterList, List<RexNode> values]
+Class:EmptyScalarTranslator
+Field:rexBuilder
+Method-name:EmptyScalarTranslator
+Method-returnType:null
+Method-parameters:[RexBuilder rexBuilder]
+FieldAccess:rexBuilder
+Method-name:empty
+Method-returnType:ScalarTranslator
+Method-parameters:[RexBuilder builder]
+Method-name:toRexList
+Method-returnType:List<RexNode>
+Method-parameters:[BlockStatement statement]
+MethodInvocation:simpleList
+MethodInvocation:add
+MethodInvocation:toRex
+Method-name:toRex
+Method-returnType:RexNode
+Method-parameters:[BlockStatement statement]
+MethodInvocation:toRex
+MethodInvocation:simple
+Method-name:simpleList
+Method-returnType:List<Expression>
+Method-parameters:[BlockStatement statement]
+MethodInvocation:simple
+MethodInvocation:singletonList
+Method-name:toRex
+Method-returnType:RexNode
+Method-parameters:[Expression expression]
+MethodInvocation:getNodeType
+MethodInvocation:makeFieldAccess
+MethodInvocation:toRex
+FieldAccess:expression
+MethodInvocation:getName
+FieldAccess:field
+MethodInvocation:binary
+MethodInvocation:binary
+MethodInvocation:parameter
+MethodInvocation:get
+MethodInvocation:makeCall
+MethodInvocation:type
+MethodInvocation:toRex
+MethodInvocation:appendAll
+MethodInvocation:appendIfNotNull
+MethodInvocation:list
+MethodInvocation:makeApproxLiteral
+MethodInvocation:valueOf
+MethodInvocation:doubleValue
+MethodInvocation:makeExactLiteral
+MethodInvocation:makeExactLiteral
+MethodInvocation:valueOf
+MethodInvocation:longValue
+MethodInvocation:makeLiteral
+MethodInvocation:makeLiteral
+MethodInvocation:toString
+MethodInvocation:getNodeType
+Method-name:binary
+Method-returnType:RexNode
+Method-parameters:[Expression expression, SqlBinaryOperator op]
+MethodInvocation:makeCall
+MethodInvocation:type
+MethodInvocation:toRex
+MethodInvocation:of
+Method-name:toRex
+Method-returnType:List<RexNode>
+Method-parameters:[List<Expression> expressions]
+MethodInvocation:add
+MethodInvocation:toRex
+Method-name:type
+Method-returnType:RelDataType
+Method-parameters:[Expression expression]
+MethodInvocation:getType
+MethodInvocation:createType
+MethodInvocation:getTypeFactory
+Method-name:bind
+Method-returnType:ScalarTranslator
+Method-parameters:[List<ParameterExpression> parameterList, List<RexNode> values]
+Method-name:parameter
+Method-returnType:RexNode
+Method-parameters:[ParameterExpression param]
+Class:LambdaScalarTranslator
+Field:parameterList
+Field:values
+Method-name:LambdaScalarTranslator
+Method-returnType:null
+Method-parameters:[RexBuilder rexBuilder, List<ParameterExpression> parameterList, List<RexNode> values]
+FieldAccess:parameterList
+FieldAccess:values
+Method-name:parameter
+Method-returnType:RexNode
+Method-parameters:[ParameterExpression param]
+MethodInvocation:indexOf
+MethodInvocation:get

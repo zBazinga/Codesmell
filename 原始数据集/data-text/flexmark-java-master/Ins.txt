@@ -1,0 +1,58 @@
+Class:Ins
+Field:openingMarker
+Field:text
+Field:closingMarker
+Field:insBlockText
+Method-name:getSegments
+Method-returnType:BasedSequence[]
+Method-parameters:[]
+Method-name:getAstExtra
+Method-returnType:void
+Method-parameters:[@NotNull StringBuilder out]
+MethodInvocation:delimitedSegmentSpanChars
+Method-name:Ins
+Method-returnType:null
+Method-parameters:[]
+Method-name:Ins
+Method-returnType:null
+Method-parameters:[BasedSequence chars]
+Method-name:Ins
+Method-returnType:null
+Method-parameters:[BasedSequence openingMarker, BasedSequence text, BasedSequence closingMarker]
+MethodInvocation:baseSubSequence
+MethodInvocation:getStartOffset
+MethodInvocation:getEndOffset
+FieldAccess:openingMarker
+FieldAccess:text
+FieldAccess:closingMarker
+Method-name:Ins
+Method-returnType:null
+Method-parameters:[BasedSequence chars, String insBlockText]
+FieldAccess:insBlockText
+Method-name:getOpeningMarker
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setOpeningMarker
+Method-returnType:void
+Method-parameters:[BasedSequence openingMarker]
+FieldAccess:openingMarker
+Method-name:getText
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setText
+Method-returnType:void
+Method-parameters:[BasedSequence text]
+FieldAccess:text
+Method-name:getClosingMarker
+Method-returnType:BasedSequence
+Method-parameters:[]
+Method-name:setClosingMarker
+Method-returnType:void
+Method-parameters:[BasedSequence closingMarker]
+FieldAccess:closingMarker
+Method-name:render
+Method-returnType:void
+Method-parameters:[NodeRendererContext context, HtmlWriter html, InsJiraRenderer renderer]
+MethodInvocation:raw
+MethodInvocation:renderChildren
+MethodInvocation:raw

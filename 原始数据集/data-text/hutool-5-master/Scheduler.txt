@@ -1,0 +1,166 @@
+Class:Scheduler
+Field:serialVersionUID
+Field:lock
+Field:timezone
+Field:started
+Field:matchSecond
+Field:daemon
+Field:timer
+Field:taskTable
+Field:taskLauncherManager
+Field:taskExecutorManager
+Field:listenerManager
+Field:threadExecutor
+Method-name:setTimeZone
+Method-returnType:Scheduler
+Method-parameters:[TimeZone timezone]
+FieldAccess:timezone
+Method-name:getTimeZone
+Method-returnType:TimeZone
+Method-parameters:[]
+MethodInvocation:getDefault
+Method-name:setDaemon
+Method-returnType:Scheduler
+Method-parameters:[boolean on]
+MethodInvocation:lock
+FieldAccess:started
+FieldAccess:daemon
+MethodInvocation:unlock
+Method-name:isDaemon
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:daemon
+Method-name:isMatchSecond
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:matchSecond
+Method-name:setMatchSecond
+Method-returnType:Scheduler
+Method-parameters:[boolean isMatchSecond]
+FieldAccess:matchSecond
+Method-name:addListener
+Method-returnType:Scheduler
+Method-parameters:[TaskListener listener]
+MethodInvocation:addListener
+FieldAccess:listenerManager
+Method-name:removeListener
+Method-returnType:Scheduler
+Method-parameters:[TaskListener listener]
+MethodInvocation:removeListener
+FieldAccess:listenerManager
+Method-name:schedule
+Method-returnType:Scheduler
+Method-parameters:[Setting cronSetting]
+MethodInvocation:isNotEmpty
+MethodInvocation:entrySet
+MethodInvocation:getGroupedMap
+MethodInvocation:getKey
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:getKey
+MethodInvocation:isNotBlank
+MethodInvocation:getValue
+MethodInvocation:debug
+MethodInvocation:schedule
+Method-name:schedule
+Method-returnType:String
+Method-parameters:[String pattern, Runnable task]
+MethodInvocation:schedule
+Method-name:schedule
+Method-returnType:String
+Method-parameters:[String pattern, Task task]
+MethodInvocation:fastUUID
+MethodInvocation:schedule
+Method-name:schedule
+Method-returnType:Scheduler
+Method-parameters:[String id, String pattern, Runnable task]
+MethodInvocation:schedule
+Method-name:schedule
+Method-returnType:Scheduler
+Method-parameters:[String id, String pattern, Task task]
+MethodInvocation:schedule
+Method-name:deschedule
+Method-returnType:Scheduler
+Method-parameters:[String id]
+MethodInvocation:remove
+FieldAccess:taskTable
+Method-name:updatePattern
+Method-returnType:Scheduler
+Method-parameters:[String id, CronPattern pattern]
+MethodInvocation:updatePattern
+FieldAccess:taskTable
+Method-name:getTaskTable
+Method-returnType:TaskTable
+Method-parameters:[]
+FieldAccess:taskTable
+Method-name:getPattern
+Method-returnType:CronPattern
+Method-parameters:[String id]
+MethodInvocation:getPattern
+FieldAccess:taskTable
+Method-name:getTask
+Method-returnType:Task
+Method-parameters:[String id]
+MethodInvocation:getTask
+FieldAccess:taskTable
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isEmpty
+FieldAccess:taskTable
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+FieldAccess:taskTable
+Method-name:clear
+Method-returnType:Scheduler
+Method-parameters:[]
+FieldAccess:taskTable
+Method-name:isStarted
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:started
+Method-name:start
+Method-returnType:Scheduler
+Method-parameters:[boolean isDaemon]
+FieldAccess:daemon
+MethodInvocation:start
+Method-name:start
+Method-returnType:Scheduler
+Method-parameters:[]
+MethodInvocation:lock
+FieldAccess:started
+FieldAccess:threadExecutor
+MethodInvocation:build
+MethodInvocation:setThreadFactory
+MethodInvocation:useSynchronousQueue
+MethodInvocation:create
+MethodInvocation:build
+MethodInvocation:setDaemon
+MethodInvocation:setNamePrefix
+MethodInvocation:create
+FieldAccess:daemon
+FieldAccess:taskLauncherManager
+FieldAccess:taskExecutorManager
+MethodInvocation:setDaemon
+FieldAccess:daemon
+MethodInvocation:start
+FieldAccess:started
+MethodInvocation:unlock
+Method-name:stop
+Method-returnType:Scheduler
+Method-parameters:[]
+MethodInvocation:stop
+Method-name:stop
+Method-returnType:Scheduler
+Method-parameters:[boolean clearTasks]
+MethodInvocation:lock
+MethodInvocation:stopTimer
+FieldAccess:timer
+FieldAccess:timer
+MethodInvocation:shutdown
+FieldAccess:threadExecutor
+FieldAccess:threadExecutor
+MethodInvocation:clear
+MethodInvocation:unlock

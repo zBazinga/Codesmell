@@ -1,0 +1,205 @@
+Class:Parameters
+Field:AND
+Field:OR
+Field:alias
+Field:connective
+Field:queryParamCounter
+Field:subParameters
+Field:negatedParameters
+Field:expressions
+Field:localQueryParamValues
+Method-name:Parameters
+Method-returnType:null
+Method-parameters:[String alias, String connective, MutableInteger queryParamCounter]
+FieldAccess:alias
+FieldAccess:connective
+FieldAccess:queryParamCounter
+Method-name:Parameters
+Method-returnType:null
+Method-parameters:[Parameters other]
+FieldAccess:alias
+FieldAccess:connective
+FieldAccess:queryParamCounter
+MethodInvocation:deepCopy
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:deepCopy
+MethodInvocation:size
+MethodInvocation:add
+MethodInvocation:deepCopy
+Method-name:deepCopy
+Method-returnType:Parameters
+Method-parameters:[]
+Method-name:generateQueryParam
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getAndIncrease
+Method-name:addSubParameters
+Method-returnType:Parameters
+Method-parameters:[String newConnective]
+MethodInvocation:equals
+MethodInvocation:add
+Method-name:addNegatedParameters
+Method-returnType:Parameters
+Method-parameters:[]
+MethodInvocation:add
+Method-name:addNullRestriction
+Method-returnType:void
+Method-parameters:[String propertyName, boolean addAlias]
+MethodInvocation:addWhere
+Method-name:addNullRestriction
+Method-returnType:void
+Method-parameters:[String alias, String propertyName]
+MethodInvocation:addWhere
+Method-name:addNotNullRestriction
+Method-returnType:void
+Method-parameters:[String propertyName, boolean addAlias]
+MethodInvocation:addWhere
+Method-name:addNotNullRestriction
+Method-returnType:void
+Method-parameters:[String alias, String propertyName]
+MethodInvocation:addWhere
+Method-name:addWhere
+Method-returnType:void
+Method-parameters:[String left, boolean addAliasLeft, String op, String right, boolean addAliasRight]
+MethodInvocation:addWhere
+Method-name:addWhere
+Method-returnType:void
+Method-parameters:[String aliasLeft, String left, String op, String aliasRight, String right]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:add
+MethodInvocation:toString
+Method-name:addWhereWithFunction
+Method-returnType:void
+Method-parameters:[String alias, String left, String leftFunction, String op, Object paramValue]
+MethodInvocation:generateQueryParam
+MethodInvocation:put
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:add
+MethodInvocation:toString
+Method-name:addWhereWithParam
+Method-returnType:void
+Method-parameters:[String left, String op, Object paramValue]
+MethodInvocation:addWhereWithParam
+Method-name:addWhereWithParam
+Method-returnType:void
+Method-parameters:[String alias, String left, String op, Object paramValue]
+MethodInvocation:concat
+MethodInvocation:concat
+MethodInvocation:addWhereWithParam
+Method-name:addWhereWithParam
+Method-returnType:void
+Method-parameters:[String left, boolean addAlias, String op, Object paramValue]
+MethodInvocation:generateQueryParam
+MethodInvocation:put
+MethodInvocation:addWhereWithNamedParam
+Method-name:addWhereWithNamedParam
+Method-returnType:void
+Method-parameters:[String left, String op, String paramName]
+MethodInvocation:addWhereWithNamedParam
+Method-name:addWhereWithNamedParam
+Method-returnType:void
+Method-parameters:[String left, boolean addAlias, String op, String paramName]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:add
+MethodInvocation:toString
+Method-name:addWhereWithParams
+Method-returnType:void
+Method-parameters:[String alias, String left, String opStart, Object[] paramValues, String opEnd]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:generateQueryParam
+MethodInvocation:put
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:add
+MethodInvocation:toString
+Method-name:addWhere
+Method-returnType:void
+Method-parameters:[String left, boolean addAlias, String op, QueryBuilder right]
+MethodInvocation:addWhere
+Method-name:addWhere
+Method-returnType:void
+Method-parameters:[String leftAlias, String left, String op, QueryBuilder right]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:build
+MethodInvocation:append
+MethodInvocation:add
+MethodInvocation:toString
+Method-name:addWhereOrNullRestriction
+Method-returnType:void
+Method-parameters:[String left, boolean addAliasLeft, String op, String right, boolean addAliasRight]
+MethodInvocation:addSubParameters
+MethodInvocation:addWhere
+MethodInvocation:addSubParameters
+MethodInvocation:addNullRestriction
+MethodInvocation:addNullRestriction
+Method-name:append
+Method-returnType:void
+Method-parameters:[StringBuilder sb, String toAppend, MutableBoolean isFirst]
+MethodInvocation:isSet
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:unset
+Method-name:isEmpty
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:size
+Method-name:build
+Method-returnType:void
+Method-parameters:[StringBuilder sb, Map<String,Object> queryParamValues]
+MethodInvocation:append
+MethodInvocation:isEmpty
+MethodInvocation:append
+MethodInvocation:build
+MethodInvocation:append
+MethodInvocation:isEmpty
+MethodInvocation:append
+MethodInvocation:build
+MethodInvocation:append
+MethodInvocation:putAll
+Method-name:getParametersToUse
+Method-returnType:Parameters
+Method-parameters:[List<QueryParameterData> paramDatas, AbstractIdMapper abstractIdMapper]
+MethodInvocation:size
+MethodInvocation:addSubParameters

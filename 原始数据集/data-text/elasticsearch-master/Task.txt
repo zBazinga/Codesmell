@@ -1,0 +1,72 @@
+Class:Task
+Field:X_OPAQUE_ID
+Field:id
+Field:type
+Field:action
+Field:description
+Field:parentTask
+Field:headers
+Field:startTime
+Field:startTimeNanos
+Method-name:Task
+Method-returnType:null
+Method-parameters:[long id, String type, String action, String description, TaskId parentTask, Map<String,String> headers]
+MethodInvocation:currentTimeMillis
+MethodInvocation:nanoTime
+Method-name:Task
+Method-returnType:null
+Method-parameters:[long id, String type, String action, String description, TaskId parentTask, long startTime, long startTimeNanos, Map<String,String> headers]
+FieldAccess:id
+FieldAccess:type
+FieldAccess:action
+FieldAccess:description
+FieldAccess:parentTask
+FieldAccess:startTime
+FieldAccess:startTimeNanos
+FieldAccess:headers
+Method-name:taskInfo
+Method-returnType:TaskInfo
+Method-parameters:[String localNodeId, boolean detailed]
+MethodInvocation:getDescription
+MethodInvocation:getStatus
+MethodInvocation:taskInfo
+Method-name:taskInfo
+Method-returnType:TaskInfo
+Method-parameters:[String localNodeId, String description, Status status]
+MethodInvocation:getId
+MethodInvocation:getType
+MethodInvocation:getAction
+MethodInvocation:nanoTime
+Method-name:getId
+Method-returnType:long
+Method-parameters:[]
+Method-name:getType
+Method-returnType:String
+Method-parameters:[]
+Method-name:getAction
+Method-returnType:String
+Method-parameters:[]
+Method-name:getDescription
+Method-returnType:String
+Method-parameters:[]
+Method-name:getStartTime
+Method-returnType:long
+Method-parameters:[]
+Method-name:getStartTimeNanos
+Method-returnType:long
+Method-parameters:[]
+Method-name:getParentTaskId
+Method-returnType:TaskId
+Method-parameters:[]
+Method-name:getStatus
+Method-returnType:Status
+Method-parameters:[]
+Method-name:getHeader
+Method-returnType:String
+Method-parameters:[String header]
+MethodInvocation:get
+Method-name:result
+Method-returnType:TaskResult
+Method-parameters:[DiscoveryNode node, Exception error]
+MethodInvocation:taskInfo
+MethodInvocation:getId

@@ -1,0 +1,105 @@
+Class:TestClustersPlugin
+Field:EXTENSION_NAME
+Field:THROTTLE_SERVICE_NAME
+Field:LIST_TASK_NAME
+Field:REGISTRY_SERVICE_NAME
+Field:logger
+MethodInvocation:getLogger
+Method-name:apply
+Method-returnType:void
+Method-parameters:[Project project]
+MethodInvocation:apply
+MethodInvocation:getPlugins
+MethodInvocation:apply
+MethodInvocation:getPluginManager
+MethodInvocation:getRootProject
+MethodInvocation:getByType
+MethodInvocation:getExtensions
+MethodInvocation:getRootProject
+MethodInvocation:createTestClustersContainerExtension
+MethodInvocation:createListClustersTask
+MethodInvocation:registerIfAbsent
+MethodInvocation:getSharedServices
+MethodInvocation:getGradle
+MethodInvocation:noop
+MethodInvocation:registerIfAbsent
+MethodInvocation:getSharedServices
+MethodInvocation:getGradle
+MethodInvocation:set
+MethodInvocation:getMaxParallelUsages
+MethodInvocation:max
+MethodInvocation:getMaxWorkerCount
+MethodInvocation:getStartParameter
+MethodInvocation:getGradle
+MethodInvocation:apply
+MethodInvocation:getPluginManager
+MethodInvocation:getRootProject
+Method-name:createListClustersTask
+Method-returnType:void
+Method-parameters:[Project project, NamedDomainObjectContainer<ElasticsearchCluster> container]
+MethodInvocation:create
+MethodInvocation:getTasks
+MethodInvocation:setGroup
+MethodInvocation:setDescription
+MethodInvocation:doLast
+MethodInvocation:forEach
+MethodInvocation:lifecycle
+MethodInvocation:getName
+MethodInvocation:getNumberOfNodes
+Class:TestClustersHookPlugin
+Method-name:apply
+Method-returnType:void
+Method-parameters:[Project project]
+MethodInvocation:getRootProject
+MethodInvocation:getName
+MethodInvocation:getClass
+MethodInvocation:getBuildService
+MethodInvocation:getSharedServices
+MethodInvocation:getGradle
+MethodInvocation:get
+MethodInvocation:configureClaimClustersHook
+MethodInvocation:getGradle
+MethodInvocation:configureStartClustersHook
+MethodInvocation:getGradle
+MethodInvocation:configureStopClustersHook
+MethodInvocation:getGradle
+Method-name:configureClaimClustersHook
+Method-returnType:void
+Method-parameters:[Gradle gradle, TestClustersRegistry registry]
+MethodInvocation:whenReady
+MethodInvocation:getTaskGraph
+MethodInvocation:forEach
+MethodInvocation:flatMap
+MethodInvocation:map
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:getAllTasks
+MethodInvocation:stream
+MethodInvocation:getClusters
+Method-name:configureStartClustersHook
+Method-returnType:void
+Method-parameters:[Gradle gradle, TestClustersRegistry registry]
+MethodInvocation:addListener
+Method-name:beforeActions
+Method-returnType:void
+Method-parameters:[Task task]
+MethodInvocation:beforeStart
+MethodInvocation:forEach
+MethodInvocation:getClusters
+Method-name:afterActions
+Method-returnType:void
+Method-parameters:[Task task]
+Method-name:configureStopClustersHook
+Method-returnType:void
+Method-parameters:[Gradle gradle, TestClustersRegistry registry]
+MethodInvocation:addListener
+Method-name:afterExecute
+Method-returnType:void
+Method-parameters:[Task task, TaskState state]
+MethodInvocation:forEach
+MethodInvocation:getClusters
+MethodInvocation:stopCluster
+MethodInvocation:getFailure
+Method-name:beforeExecute
+Method-returnType:void
+Method-parameters:[Task task]

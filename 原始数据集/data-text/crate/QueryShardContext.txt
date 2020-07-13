@@ -1,0 +1,66 @@
+Class:QueryShardContext
+Field:indexSettings
+Field:mapperService
+Field:indexFieldDataService
+Field:frozen
+Field:fullyQualifiedIndex
+Field:allowUnmappedFields
+Method-name:QueryShardContext
+Method-returnType:null
+Method-parameters:[IndexSettings indexSettings, BiFunction<MappedFieldType,String,IndexFieldData<?>> indexFieldDataLookup, MapperService mapperService, LongSupplier nowInMillis]
+FieldAccess:mapperService
+FieldAccess:indexFieldDataService
+FieldAccess:allowUnmappedFields
+MethodInvocation:isDefaultAllowUnmappedFields
+FieldAccess:indexSettings
+FieldAccess:fullyQualifiedIndex
+MethodInvocation:getIndex
+Method-name:getIndexAnalyzers
+Method-returnType:IndexAnalyzers
+Method-parameters:[]
+MethodInvocation:getIndexAnalyzers
+Method-name:defaultFields
+Method-returnType:List<String>
+Method-parameters:[]
+MethodInvocation:getDefaultFields
+Method-name:getForField
+Method-returnType:IFD
+Method-parameters:[MappedFieldType fieldType]
+MethodInvocation:apply
+MethodInvocation:getName
+Method-name:simpleMatchToIndexNames
+Method-returnType:Collection<String>
+Method-parameters:[String pattern]
+MethodInvocation:simpleMatchToFullName
+Method-name:fieldMapper
+Method-returnType:MappedFieldType
+Method-parameters:[String name]
+MethodInvocation:failIfFieldMappingNotFound
+MethodInvocation:fullName
+Method-name:getObjectMapper
+Method-returnType:ObjectMapper
+Method-parameters:[String name]
+MethodInvocation:getObjectMapper
+Method-name:getSearchQuoteAnalyzer
+Method-returnType:Analyzer
+Method-parameters:[MappedFieldType fieldType]
+MethodInvocation:searchQuoteAnalyzer
+MethodInvocation:searchQuoteAnalyzer
+MethodInvocation:searchQuoteAnalyzer
+MethodInvocation:getMapperService
+Method-name:failIfFieldMappingNotFound
+Method-returnType:MappedFieldType
+Method-parameters:[String name, MappedFieldType fieldMapping]
+Method-name:failIfFrozen
+Method-returnType:void
+Method-parameters:[]
+Method-name:nowInMillis
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:failIfFrozen
+Method-name:getMapperService
+Method-returnType:MapperService
+Method-parameters:[]
+Method-name:getFullyQualifiedIndex
+Method-returnType:Index
+Method-parameters:[]

@@ -1,0 +1,38 @@
+Class:UserKeys
+Field:uid
+Field:userKeysGroups
+Method-name:UserKeys
+Method-returnType:null
+Method-parameters:[int uid, UserKeysGroup[] userKeysGroups]
+FieldAccess:uid
+FieldAccess:userKeysGroups
+Method-name:UserKeys
+Method-returnType:null
+Method-parameters:[byte[] data]
+MethodInvocation:load
+Method-name:getUid
+Method-returnType:int
+Method-parameters:[]
+Method-name:getUserKeysGroups
+Method-returnType:UserKeysGroup[]
+Method-parameters:[]
+Method-name:removeUserKeyGroup
+Method-returnType:UserKeys
+Method-parameters:[int keyGroupId]
+FieldAccess:userKeysGroups
+MethodInvocation:getKeyGroupId
+MethodInvocation:add
+MethodInvocation:toArray
+MethodInvocation:size
+Method-name:parse
+Method-returnType:void
+Method-parameters:[BserValues values]
+MethodInvocation:getInt
+MethodInvocation:getRepeatedBytes
+MethodInvocation:size
+MethodInvocation:get
+Method-name:serialize
+Method-returnType:void
+Method-parameters:[BserWriter writer]
+MethodInvocation:writeInt
+MethodInvocation:writeObject

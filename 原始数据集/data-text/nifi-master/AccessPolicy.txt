@@ -1,0 +1,176 @@
+Class:AccessPolicy
+Field:identifier
+Field:resource
+Field:users
+Field:groups
+Field:action
+Method-name:AccessPolicy
+Method-returnType:null
+Method-parameters:[final Builder builder]
+FieldAccess:identifier
+FieldAccess:resource
+FieldAccess:action
+FieldAccess:users
+MethodInvocation:unmodifiableSet
+FieldAccess:groups
+MethodInvocation:unmodifiableSet
+FieldAccess:identifier
+MethodInvocation:isEmpty
+MethodInvocation:trim
+FieldAccess:identifier
+FieldAccess:resource
+FieldAccess:action
+Method-name:getIdentifier
+Method-returnType:String
+Method-parameters:[]
+Method-name:getResource
+Method-returnType:String
+Method-parameters:[]
+Method-name:getUsers
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:getGroups
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:getAction
+Method-returnType:RequestAction
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+FieldAccess:identifier
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+FieldAccess:identifier
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:format
+MethodInvocation:getIdentifier
+MethodInvocation:getResource
+MethodInvocation:getUsers
+MethodInvocation:getGroups
+MethodInvocation:getAction
+Method-name:containsGroup
+Method-returnType:boolean
+Method-parameters:[final Set<Group> userGroups, AbstractPolicyBasedAuthorizer abstractPolicyBasedAuthorizer]
+MethodInvocation:isEmpty
+MethodInvocation:isEmpty
+MethodInvocation:getGroups
+MethodInvocation:contains
+MethodInvocation:getGroups
+MethodInvocation:getIdentifier
+Class:Builder
+Field:identifier
+Field:resource
+Field:action
+Field:users
+Field:groups
+Field:fromPolicy
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[]
+FieldAccess:fromPolicy
+Method-name:Builder
+Method-returnType:null
+Method-parameters:[final AccessPolicy other]
+FieldAccess:identifier
+MethodInvocation:getIdentifier
+FieldAccess:resource
+MethodInvocation:getResource
+FieldAccess:action
+MethodInvocation:getAction
+MethodInvocation:clear
+FieldAccess:users
+MethodInvocation:addAll
+FieldAccess:users
+MethodInvocation:getUsers
+MethodInvocation:clear
+FieldAccess:groups
+MethodInvocation:addAll
+FieldAccess:groups
+MethodInvocation:getGroups
+FieldAccess:fromPolicy
+Method-name:identifier
+Method-returnType:Builder
+Method-parameters:[final String identifier]
+FieldAccess:identifier
+Method-name:identifierGenerateRandom
+Method-returnType:Builder
+Method-parameters:[]
+FieldAccess:identifier
+MethodInvocation:toString
+MethodInvocation:randomUUID
+Method-name:identifierGenerateFromSeed
+Method-returnType:Builder
+Method-parameters:[final String seed]
+FieldAccess:identifier
+MethodInvocation:toString
+MethodInvocation:nameUUIDFromBytes
+MethodInvocation:getBytes
+Method-name:resource
+Method-returnType:Builder
+Method-parameters:[final String resource]
+FieldAccess:resource
+Method-name:addUsers
+Method-returnType:Builder
+Method-parameters:[final Set<String> users]
+MethodInvocation:addAll
+FieldAccess:users
+Method-name:addUser
+Method-returnType:Builder
+Method-parameters:[final String user]
+MethodInvocation:add
+FieldAccess:users
+Method-name:removeUsers
+Method-returnType:Builder
+Method-parameters:[final Set<String> users]
+MethodInvocation:removeAll
+FieldAccess:users
+Method-name:removeUser
+Method-returnType:Builder
+Method-parameters:[final String user]
+MethodInvocation:remove
+FieldAccess:users
+Method-name:clearUsers
+Method-returnType:Builder
+Method-parameters:[]
+MethodInvocation:clear
+FieldAccess:users
+Method-name:addGroups
+Method-returnType:Builder
+Method-parameters:[final Set<String> groups]
+MethodInvocation:addAll
+FieldAccess:groups
+Method-name:addGroup
+Method-returnType:Builder
+Method-parameters:[final String group]
+MethodInvocation:add
+FieldAccess:groups
+Method-name:removeGroups
+Method-returnType:Builder
+Method-parameters:[final Set<String> groups]
+MethodInvocation:removeAll
+FieldAccess:groups
+Method-name:removeGroup
+Method-returnType:Builder
+Method-parameters:[final String group]
+MethodInvocation:remove
+FieldAccess:groups
+Method-name:clearGroups
+Method-returnType:Builder
+Method-parameters:[]
+MethodInvocation:clear
+FieldAccess:groups
+Method-name:action
+Method-returnType:Builder
+Method-parameters:[final RequestAction action]
+FieldAccess:action
+Method-name:build
+Method-returnType:AccessPolicy
+Method-parameters:[]

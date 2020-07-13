@@ -1,0 +1,76 @@
+Class:HttpServletRequestToMockServerRequestDecoder
+Field:bodyDecoderEncoder
+Method-name:HttpServletRequestToMockServerRequestDecoder
+Method-returnType:null
+Method-parameters:[MockServerLogger mockServerLogger]
+Method-name:mapHttpServletRequestToMockServerRequest
+Method-returnType:HttpRequest
+Method-parameters:[HttpServletRequest httpServletRequest]
+MethodInvocation:setMethod
+MethodInvocation:setPath
+MethodInvocation:setQueryString
+MethodInvocation:setBody
+MethodInvocation:setHeaders
+MethodInvocation:setCookies
+MethodInvocation:withKeepAlive
+MethodInvocation:isKeepAlive
+MethodInvocation:withSecure
+MethodInvocation:isSecure
+Method-name:setMethod
+Method-returnType:void
+Method-parameters:[HttpRequest httpRequest, HttpServletRequest httpServletRequest]
+MethodInvocation:withMethod
+MethodInvocation:getMethod
+Method-name:setPath
+Method-returnType:void
+Method-parameters:[HttpRequest httpRequest, HttpServletRequest httpServletRequest]
+MethodInvocation:withPath
+MethodInvocation:getPathInfo
+MethodInvocation:getContextPath
+MethodInvocation:getPathInfo
+MethodInvocation:getRequestURI
+Method-name:setQueryString
+Method-returnType:void
+Method-parameters:[HttpRequest httpRequest, HttpServletRequest httpServletRequest]
+MethodInvocation:isNotEmpty
+MethodInvocation:getQueryString
+MethodInvocation:withEntries
+MethodInvocation:parameters
+MethodInvocation:getQueryString
+MethodInvocation:withQueryStringParameters
+Method-name:setBody
+Method-returnType:void
+Method-parameters:[HttpRequest httpRequest, HttpServletRequest httpServletRequest]
+MethodInvocation:withBody
+MethodInvocation:servletRequestToBody
+Method-name:setHeaders
+Method-returnType:void
+Method-parameters:[HttpRequest httpRequest, HttpServletRequest httpServletRequest]
+MethodInvocation:getHeaderNames
+MethodInvocation:hasMoreElements
+MethodInvocation:nextElement
+MethodInvocation:getHeaders
+MethodInvocation:hasMoreElements
+MethodInvocation:add
+MethodInvocation:nextElement
+MethodInvocation:withEntry
+MethodInvocation:withHeaders
+Method-name:setCookies
+Method-returnType:void
+Method-parameters:[HttpRequest httpRequest, HttpServletRequest httpServletRequest]
+MethodInvocation:getCookies
+MethodInvocation:getCookies
+MethodInvocation:withEntry
+MethodInvocation:getName
+MethodInvocation:getValue
+MethodInvocation:withCookies
+Method-name:isKeepAlive
+Method-returnType:boolean
+Method-parameters:[HttpServletRequest httpServletRequest]
+MethodInvocation:getHeader
+MethodInvocation:toString
+MethodInvocation:contentEqualsIgnoreCase
+MethodInvocation:equals
+MethodInvocation:getProtocol
+MethodInvocation:contentEqualsIgnoreCase
+MethodInvocation:contentEqualsIgnoreCase

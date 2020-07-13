@@ -1,0 +1,96 @@
+Class:RequestExecutionContext
+Field:EMPTY_CONFIG
+MethodInvocation:build
+MethodInvocation:builder
+Field:requestProvider
+Field:originalRequest
+Field:executionContext
+Field:apiCallTimeoutTracker
+Field:apiCallAttemptTimeoutTracker
+Method-name:RequestExecutionContext
+Method-returnType:null
+Method-parameters:[Builder builder]
+FieldAccess:requestProvider
+FieldAccess:originalRequest
+MethodInvocation:paramNotNull
+FieldAccess:executionContext
+MethodInvocation:paramNotNull
+Method-name:builder
+Method-returnType:Builder
+Method-parameters:[]
+Method-name:requestProvider
+Method-returnType:AsyncRequestBody
+Method-parameters:[]
+Method-name:interceptorChain
+Method-returnType:ExecutionInterceptorChain
+Method-parameters:[]
+MethodInvocation:interceptorChain
+Method-name:executionAttributes
+Method-returnType:ExecutionAttributes
+Method-parameters:[]
+MethodInvocation:executionAttributes
+Method-name:executionContext
+Method-returnType:ExecutionContext
+Method-parameters:[]
+Method-name:originalRequest
+Method-returnType:SdkRequest
+Method-parameters:[]
+Method-name:requestConfig
+Method-returnType:RequestOverrideConfiguration
+Method-parameters:[]
+MethodInvocation:orElse
+MethodInvocation:map
+MethodInvocation:overrideConfiguration
+Method-name:signer
+Method-returnType:Signer
+Method-parameters:[]
+MethodInvocation:signer
+Method-name:apiCallTimeoutTracker
+Method-returnType:TimeoutTracker
+Method-parameters:[]
+Method-name:apiCallTimeoutTracker
+Method-returnType:void
+Method-parameters:[TimeoutTracker timeoutTracker]
+FieldAccess:apiCallTimeoutTracker
+Method-name:apiCallAttemptTimeoutTracker
+Method-returnType:TimeoutTracker
+Method-parameters:[]
+Method-name:apiCallAttemptTimeoutTracker
+Method-returnType:void
+Method-parameters:[TimeoutTracker timeoutTracker]
+FieldAccess:apiCallAttemptTimeoutTracker
+Method-name:requestProvider
+Method-returnType:void
+Method-parameters:[AsyncRequestBody publisher]
+Method-name:mergeParams
+Method-returnType:Map<String,List<String>>
+Method-parameters:[SdkHttpFullRequest.Builder request, MergeCustomQueryParamsStage mergeCustomQueryParamsStage]
+MethodInvocation:size
+MethodInvocation:rawQueryParameters
+MethodInvocation:putAll
+MethodInvocation:rawQueryParameters
+MethodInvocation:forEach
+MethodInvocation:rawQueryParameters
+MethodInvocation:requestConfig
+MethodInvocation:put
+MethodInvocation:mergeLists
+MethodInvocation:get
+Class:Builder
+Field:requestProvider
+Field:originalRequest
+Field:executionContext
+Method-name:requestProvider
+Method-returnType:Builder
+Method-parameters:[AsyncRequestBody requestProvider]
+FieldAccess:requestProvider
+Method-name:originalRequest
+Method-returnType:Builder
+Method-parameters:[SdkRequest originalRequest]
+FieldAccess:originalRequest
+Method-name:executionContext
+Method-returnType:Builder
+Method-parameters:[ExecutionContext executionContext]
+FieldAccess:executionContext
+Method-name:build
+Method-returnType:RequestExecutionContext
+Method-parameters:[]

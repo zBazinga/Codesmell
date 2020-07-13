@@ -1,0 +1,43 @@
+Class:TypeSearchState
+Field:varInfoMap
+Method-name:TypeSearchState
+Method-returnType:null
+Method-parameters:[MethodNode mth]
+MethodInvocation:getSVars
+FieldAccess:varInfoMap
+MethodInvocation:size
+MethodInvocation:put
+Method-name:getVarInfo
+Method-returnType:TypeSearchVarInfo
+Method-parameters:[SSAVar var]
+MethodInvocation:get
+FieldAccess:varInfoMap
+Method-name:getArgType
+Method-returnType:ArgType
+Method-parameters:[InsnArg arg]
+MethodInvocation:isRegister
+MethodInvocation:getCurrentType
+MethodInvocation:getVarInfo
+MethodInvocation:getSVar
+MethodInvocation:getType
+Method-name:getAllVars
+Method-returnType:List<TypeSearchVarInfo>
+Method-parameters:[]
+MethodInvocation:values
+Method-name:getUnresolvedVars
+Method-returnType:List<TypeSearchVarInfo>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:values
+MethodInvocation:isTypeResolved
+MethodInvocation:toList
+Method-name:getResolvedVars
+Method-returnType:List<TypeSearchVarInfo>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:values
+MethodInvocation:toList

@@ -1,0 +1,94 @@
+Class:RegisterSpecSet
+Field:EMPTY
+Field:specs
+Field:size
+Method-name:RegisterSpecSet
+Method-returnType:null
+Method-parameters:[int maxSize]
+FieldAccess:specs
+FieldAccess:size
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object other]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:getMaxSize
+Method-returnType:int
+Method-parameters:[]
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+Method-name:get
+Method-returnType:RegisterSpec
+Method-parameters:[int reg]
+Method-name:get
+Method-returnType:RegisterSpec
+Method-parameters:[RegisterSpec spec]
+MethodInvocation:get
+MethodInvocation:getReg
+Method-name:findMatchingLocal
+Method-returnType:RegisterSpec
+Method-parameters:[RegisterSpec spec]
+MethodInvocation:matchesVariable
+Method-name:localItemToSpec
+Method-returnType:RegisterSpec
+Method-parameters:[LocalItem local]
+MethodInvocation:equals
+MethodInvocation:getLocalItem
+Method-name:remove
+Method-returnType:void
+Method-parameters:[RegisterSpec toRemove]
+MethodInvocation:getReg
+Method-name:put
+Method-returnType:void
+Method-parameters:[RegisterSpec spec]
+MethodInvocation:throwIfImmutable
+MethodInvocation:getReg
+MethodInvocation:getCategory
+MethodInvocation:getCategory
+Method-name:putAll
+Method-returnType:void
+Method-parameters:[RegisterSpecSet set]
+MethodInvocation:getMaxSize
+MethodInvocation:get
+MethodInvocation:put
+Method-name:intersect
+Method-returnType:void
+Method-parameters:[RegisterSpecSet other, boolean localPrimary]
+MethodInvocation:throwIfImmutable
+MethodInvocation:min
+MethodInvocation:intersect
+Method-name:withOffset
+Method-returnType:RegisterSpecSet
+Method-parameters:[int delta]
+MethodInvocation:put
+MethodInvocation:withOffset
+MethodInvocation:isImmutable
+MethodInvocation:setImmutable
+Method-name:mutableCopy
+Method-returnType:RegisterSpecSet
+Method-parameters:[]
+MethodInvocation:put
+Method-name:map
+Method-returnType:RegisterSpecSet
+Method-parameters:[RegisterMapper registerMapper]
+MethodInvocation:getMaxSize
+MethodInvocation:getNewRegisterCount
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:map
+MethodInvocation:setImmutable
+MethodInvocation:equals

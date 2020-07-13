@@ -1,0 +1,85 @@
+Class:ObjectTypeNodeParser
+Field:objectTypeNode
+Field:indexableConstraint
+Method-name:ObjectTypeNodeParser
+Method-returnType:null
+Method-parameters:[ObjectTypeNode objectTypeNode]
+FieldAccess:objectTypeNode
+Method-name:accept
+Method-returnType:void
+Method-parameters:[NetworkHandler handler]
+MethodInvocation:getObjectSinkPropagator
+MethodInvocation:startObjectTypeNode
+MethodInvocation:traversePropagator
+MethodInvocation:endObjectTypeNode
+Method-name:traversePropagator
+Method-returnType:IndexableConstraint
+Method-parameters:[ObjectSinkPropagator propagator, NetworkHandler handler]
+MethodInvocation:getSinks
+MethodInvocation:traverseSink
+MethodInvocation:traverseSinkLisk
+MethodInvocation:getHashableSinks
+MethodInvocation:traverseSinkLisk
+MethodInvocation:getOthers
+MethodInvocation:traverseHashedAlphaNodes
+MethodInvocation:getHashedSinkMap
+MethodInvocation:traverseSinkLisk
+MethodInvocation:getSinks
+Method-name:traverseSinkLisk
+Method-returnType:void
+Method-parameters:[ObjectSinkNodeList sinks, NetworkHandler handler]
+MethodInvocation:getFirst
+MethodInvocation:getNextObjectSinkNode
+MethodInvocation:traverseSink
+Method-name:traverseSinkLisk
+Method-returnType:void
+Method-parameters:[ObjectSink[] sinks, NetworkHandler handler]
+MethodInvocation:traverseSink
+Method-name:traverseHashedAlphaNodes
+Method-returnType:IndexableConstraint
+Method-parameters:[ObjectHashMap hashedAlphaNodes, NetworkHandler handler]
+MethodInvocation:size
+MethodInvocation:getFirstAlphaNode
+MethodInvocation:getClassFieldReaderForHashedAlpha
+MethodInvocation:startHashedAlphaNodes
+MethodInvocation:iterator
+MethodInvocation:next
+MethodInvocation:next
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getObjectValue
+MethodInvocation:startHashedAlphaNode
+MethodInvocation:traversePropagator
+MethodInvocation:getObjectSinkPropagator
+MethodInvocation:endHashedAlphaNode
+MethodInvocation:getObjectValue
+MethodInvocation:endHashedAlphaNodes
+MethodInvocation:nullCaseAlphaNodeStart
+MethodInvocation:traversePropagator
+MethodInvocation:getObjectSinkPropagator
+MethodInvocation:nullCaseAlphaNodeEnd
+Method-name:traverseSink
+Method-returnType:void
+Method-parameters:[ObjectSink sink, NetworkHandler handler]
+MethodInvocation:getType
+MethodInvocation:startNonHashedAlphaNode
+MethodInvocation:traversePropagator
+MethodInvocation:getObjectSinkPropagator
+MethodInvocation:endNonHashedAlphaNode
+MethodInvocation:isBetaNode
+MethodInvocation:startBetaNode
+MethodInvocation:endBetaNode
+MethodInvocation:getType
+MethodInvocation:startLeftInputAdapterNode
+MethodInvocation:endWindowNode
+MethodInvocation:getType
+MethodInvocation:startWindowNode
+MethodInvocation:endWindowNode
+Method-name:getClassFieldReaderForHashedAlpha
+Method-returnType:IndexableConstraint
+Method-parameters:[final AlphaNode alphaNode]
+MethodInvocation:getConstraint
+MethodInvocation:getClass
+Method-name:getIndexableConstraint
+Method-returnType:IndexableConstraint
+Method-parameters:[]

@@ -1,0 +1,32 @@
+Class:EndRemover
+Field:keepLocal
+Method-name:map
+Method-returnType:Local
+Method-parameters:[Local local]
+Method-name:transform
+Method-returnType:void
+Method-parameters:[IrMethod irMethod]
+MethodInvocation:getNext
+MethodInvocation:notThrow
+MethodInvocation:getNext
+MethodInvocation:move4Label
+MethodInvocation:getPre
+MethodInvocation:getNext
+MethodInvocation:getNext
+MethodInvocation:move4End
+MethodInvocation:getNext
+MethodInvocation:getNext
+MethodInvocation:remove
+MethodInvocation:getFirst
+MethodInvocation:getNext
+FieldAccess:target
+MethodInvocation:getNext
+MethodInvocation:clone
+MethodInvocation:insertAfter
+MethodInvocation:remove
+Method-name:move4Label
+Method-returnType:void
+Method-parameters:[StmtList stmts, LabelStmt start, Stmt end, LabelStmt label]
+MethodInvocation:move4End
+MethodInvocation:insertAfter
+MethodInvocation:nGoto

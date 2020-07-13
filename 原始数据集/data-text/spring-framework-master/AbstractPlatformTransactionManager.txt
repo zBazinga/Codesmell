@@ -1,0 +1,413 @@
+Class:AbstractPlatformTransactionManager
+Field:SYNCHRONIZATION_ALWAYS
+Field:SYNCHRONIZATION_ON_ACTUAL_TRANSACTION
+Field:SYNCHRONIZATION_NEVER
+Field:constants
+Field:logger
+MethodInvocation:getLog
+MethodInvocation:getClass
+Field:transactionSynchronization
+Field:defaultTimeout
+Field:nestedTransactionAllowed
+Field:validateExistingTransaction
+Field:globalRollbackOnParticipationFailure
+Field:failEarlyOnGlobalRollbackOnly
+Field:rollbackOnCommitFailure
+Method-name:setTransactionSynchronizationName
+Method-returnType:void
+Method-parameters:[String constantName]
+MethodInvocation:setTransactionSynchronization
+MethodInvocation:intValue
+MethodInvocation:asNumber
+Method-name:setTransactionSynchronization
+Method-returnType:void
+Method-parameters:[int transactionSynchronization]
+FieldAccess:transactionSynchronization
+Method-name:getTransactionSynchronization
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:transactionSynchronization
+Method-name:setDefaultTimeout
+Method-returnType:void
+Method-parameters:[int defaultTimeout]
+FieldAccess:defaultTimeout
+Method-name:getDefaultTimeout
+Method-returnType:int
+Method-parameters:[]
+FieldAccess:defaultTimeout
+Method-name:setNestedTransactionAllowed
+Method-returnType:void
+Method-parameters:[boolean nestedTransactionAllowed]
+FieldAccess:nestedTransactionAllowed
+Method-name:isNestedTransactionAllowed
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:nestedTransactionAllowed
+Method-name:setValidateExistingTransaction
+Method-returnType:void
+Method-parameters:[boolean validateExistingTransaction]
+FieldAccess:validateExistingTransaction
+Method-name:isValidateExistingTransaction
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:validateExistingTransaction
+Method-name:setGlobalRollbackOnParticipationFailure
+Method-returnType:void
+Method-parameters:[boolean globalRollbackOnParticipationFailure]
+FieldAccess:globalRollbackOnParticipationFailure
+Method-name:isGlobalRollbackOnParticipationFailure
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:globalRollbackOnParticipationFailure
+Method-name:setFailEarlyOnGlobalRollbackOnly
+Method-returnType:void
+Method-parameters:[boolean failEarlyOnGlobalRollbackOnly]
+FieldAccess:failEarlyOnGlobalRollbackOnly
+Method-name:isFailEarlyOnGlobalRollbackOnly
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:failEarlyOnGlobalRollbackOnly
+Method-name:setRollbackOnCommitFailure
+Method-returnType:void
+Method-parameters:[boolean rollbackOnCommitFailure]
+FieldAccess:rollbackOnCommitFailure
+Method-name:isRollbackOnCommitFailure
+Method-returnType:boolean
+Method-parameters:[]
+FieldAccess:rollbackOnCommitFailure
+Method-name:getTransaction
+Method-returnType:TransactionStatus
+Method-parameters:[@Nullable TransactionDefinition definition]
+MethodInvocation:withDefaults
+MethodInvocation:doGetTransaction
+MethodInvocation:isDebugEnabled
+MethodInvocation:isExistingTransaction
+MethodInvocation:handleExistingTransaction
+MethodInvocation:getTimeout
+MethodInvocation:getTimeout
+MethodInvocation:getPropagationBehavior
+MethodInvocation:getPropagationBehavior
+MethodInvocation:getPropagationBehavior
+MethodInvocation:getPropagationBehavior
+MethodInvocation:suspend
+MethodInvocation:debug
+MethodInvocation:getName
+MethodInvocation:startTransaction
+MethodInvocation:resume
+MethodInvocation:getIsolationLevel
+MethodInvocation:isWarnEnabled
+MethodInvocation:warn
+MethodInvocation:getTransactionSynchronization
+MethodInvocation:prepareTransactionStatus
+Method-name:startTransaction
+Method-returnType:TransactionStatus
+Method-parameters:[TransactionDefinition definition, Object transaction, boolean debugEnabled, @Nullable SuspendedResourcesHolder suspendedResources]
+MethodInvocation:getTransactionSynchronization
+MethodInvocation:newTransactionStatus
+MethodInvocation:doBegin
+MethodInvocation:prepareSynchronization
+Method-name:handleExistingTransaction
+Method-returnType:TransactionStatus
+Method-parameters:[TransactionDefinition definition, Object transaction, boolean debugEnabled]
+MethodInvocation:getPropagationBehavior
+MethodInvocation:getPropagationBehavior
+MethodInvocation:debug
+MethodInvocation:suspend
+MethodInvocation:getTransactionSynchronization
+MethodInvocation:prepareTransactionStatus
+MethodInvocation:getPropagationBehavior
+MethodInvocation:debug
+MethodInvocation:getName
+MethodInvocation:suspend
+MethodInvocation:startTransaction
+MethodInvocation:resumeAfterBeginException
+MethodInvocation:getPropagationBehavior
+MethodInvocation:isNestedTransactionAllowed
+MethodInvocation:debug
+MethodInvocation:getName
+MethodInvocation:useSavepointForNestedTransaction
+MethodInvocation:prepareTransactionStatus
+MethodInvocation:createAndHoldSavepoint
+MethodInvocation:startTransaction
+MethodInvocation:debug
+MethodInvocation:isValidateExistingTransaction
+MethodInvocation:getIsolationLevel
+MethodInvocation:getCurrentTransactionIsolationLevel
+MethodInvocation:getIsolationLevel
+MethodInvocation:toCode
+MethodInvocation:isReadOnly
+MethodInvocation:isCurrentTransactionReadOnly
+MethodInvocation:getTransactionSynchronization
+MethodInvocation:prepareTransactionStatus
+Method-name:prepareTransactionStatus
+Method-returnType:DefaultTransactionStatus
+Method-parameters:[TransactionDefinition definition, @Nullable Object transaction, boolean newTransaction, boolean newSynchronization, boolean debug, @Nullable Object suspendedResources]
+MethodInvocation:newTransactionStatus
+MethodInvocation:prepareSynchronization
+Method-name:newTransactionStatus
+Method-returnType:DefaultTransactionStatus
+Method-parameters:[TransactionDefinition definition, @Nullable Object transaction, boolean newTransaction, boolean newSynchronization, boolean debug, @Nullable Object suspendedResources]
+MethodInvocation:isSynchronizationActive
+MethodInvocation:isReadOnly
+Method-name:determineTimeout
+Method-returnType:int
+Method-parameters:[TransactionDefinition definition]
+MethodInvocation:getTimeout
+MethodInvocation:getTimeout
+MethodInvocation:getDefaultTimeout
+Method-name:suspend
+Method-returnType:SuspendedResourcesHolder
+Method-parameters:[@Nullable Object transaction]
+MethodInvocation:isSynchronizationActive
+MethodInvocation:doSuspendSynchronization
+MethodInvocation:doSuspend
+MethodInvocation:getCurrentTransactionName
+MethodInvocation:setCurrentTransactionName
+MethodInvocation:isCurrentTransactionReadOnly
+MethodInvocation:setCurrentTransactionReadOnly
+MethodInvocation:getCurrentTransactionIsolationLevel
+MethodInvocation:setCurrentTransactionIsolationLevel
+MethodInvocation:isActualTransactionActive
+MethodInvocation:setActualTransactionActive
+MethodInvocation:doResumeSynchronization
+MethodInvocation:doSuspend
+Method-name:resume
+Method-returnType:void
+Method-parameters:[@Nullable Object transaction, @Nullable SuspendedResourcesHolder resourcesHolder]
+MethodInvocation:doResume
+MethodInvocation:setActualTransactionActive
+MethodInvocation:setCurrentTransactionIsolationLevel
+MethodInvocation:setCurrentTransactionReadOnly
+MethodInvocation:setCurrentTransactionName
+MethodInvocation:doResumeSynchronization
+Method-name:resumeAfterBeginException
+Method-returnType:void
+Method-parameters:[Object transaction, @Nullable SuspendedResourcesHolder suspendedResources, Throwable beginEx]
+MethodInvocation:resume
+MethodInvocation:error
+Method-name:doSuspendSynchronization
+Method-returnType:List<TransactionSynchronization>
+Method-parameters:[]
+MethodInvocation:getSynchronizations
+MethodInvocation:suspend
+MethodInvocation:clearSynchronization
+Method-name:doResumeSynchronization
+Method-returnType:void
+Method-parameters:[List<TransactionSynchronization> suspendedSynchronizations]
+MethodInvocation:initSynchronization
+MethodInvocation:resume
+MethodInvocation:registerSynchronization
+Method-name:commit
+Method-returnType:void
+Method-parameters:[TransactionStatus status]
+MethodInvocation:isCompleted
+MethodInvocation:isLocalRollbackOnly
+MethodInvocation:isDebug
+MethodInvocation:debug
+MethodInvocation:processRollback
+MethodInvocation:shouldCommitOnGlobalRollbackOnly
+MethodInvocation:isGlobalRollbackOnly
+MethodInvocation:isDebug
+MethodInvocation:debug
+MethodInvocation:processRollback
+MethodInvocation:processCommit
+Method-name:processCommit
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status]
+MethodInvocation:prepareForCommit
+MethodInvocation:triggerBeforeCommit
+MethodInvocation:triggerBeforeCompletion
+MethodInvocation:hasSavepoint
+MethodInvocation:isDebug
+MethodInvocation:debug
+MethodInvocation:isGlobalRollbackOnly
+MethodInvocation:releaseHeldSavepoint
+MethodInvocation:isNewTransaction
+MethodInvocation:isDebug
+MethodInvocation:debug
+MethodInvocation:isGlobalRollbackOnly
+MethodInvocation:doCommit
+MethodInvocation:isFailEarlyOnGlobalRollbackOnly
+MethodInvocation:isGlobalRollbackOnly
+MethodInvocation:triggerAfterCompletion
+MethodInvocation:isRollbackOnCommitFailure
+MethodInvocation:doRollbackOnCommitException
+MethodInvocation:triggerAfterCompletion
+MethodInvocation:triggerBeforeCompletion
+MethodInvocation:doRollbackOnCommitException
+MethodInvocation:triggerAfterCommit
+MethodInvocation:triggerAfterCompletion
+MethodInvocation:cleanupAfterCompletion
+Method-name:rollback
+Method-returnType:void
+Method-parameters:[TransactionStatus status]
+MethodInvocation:isCompleted
+MethodInvocation:processRollback
+Method-name:processRollback
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status, boolean unexpected]
+MethodInvocation:triggerBeforeCompletion
+MethodInvocation:hasSavepoint
+MethodInvocation:isDebug
+MethodInvocation:debug
+MethodInvocation:rollbackToHeldSavepoint
+MethodInvocation:isNewTransaction
+MethodInvocation:isDebug
+MethodInvocation:debug
+MethodInvocation:doRollback
+MethodInvocation:hasTransaction
+MethodInvocation:isLocalRollbackOnly
+MethodInvocation:isGlobalRollbackOnParticipationFailure
+MethodInvocation:isDebug
+MethodInvocation:debug
+MethodInvocation:doSetRollbackOnly
+MethodInvocation:isDebug
+MethodInvocation:debug
+MethodInvocation:debug
+MethodInvocation:isFailEarlyOnGlobalRollbackOnly
+MethodInvocation:triggerAfterCompletion
+MethodInvocation:triggerAfterCompletion
+MethodInvocation:cleanupAfterCompletion
+Method-name:doRollbackOnCommitException
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status, Throwable ex]
+MethodInvocation:isNewTransaction
+MethodInvocation:isDebug
+MethodInvocation:debug
+MethodInvocation:doRollback
+MethodInvocation:hasTransaction
+MethodInvocation:isGlobalRollbackOnParticipationFailure
+MethodInvocation:isDebug
+MethodInvocation:debug
+MethodInvocation:doSetRollbackOnly
+MethodInvocation:error
+MethodInvocation:triggerAfterCompletion
+MethodInvocation:triggerAfterCompletion
+Method-name:triggerBeforeCommit
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status]
+MethodInvocation:isNewSynchronization
+MethodInvocation:isDebug
+MethodInvocation:trace
+MethodInvocation:triggerBeforeCommit
+MethodInvocation:isReadOnly
+Method-name:triggerBeforeCompletion
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status]
+MethodInvocation:isNewSynchronization
+MethodInvocation:isDebug
+MethodInvocation:trace
+MethodInvocation:triggerBeforeCompletion
+Method-name:triggerAfterCommit
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status]
+MethodInvocation:isNewSynchronization
+MethodInvocation:isDebug
+MethodInvocation:trace
+MethodInvocation:triggerAfterCommit
+Method-name:triggerAfterCompletion
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status, int completionStatus]
+MethodInvocation:isNewSynchronization
+MethodInvocation:getSynchronizations
+MethodInvocation:clearSynchronization
+MethodInvocation:hasTransaction
+MethodInvocation:isNewTransaction
+MethodInvocation:isDebug
+MethodInvocation:trace
+MethodInvocation:invokeAfterCompletion
+MethodInvocation:isEmpty
+MethodInvocation:registerAfterCompletionWithExistingTransaction
+MethodInvocation:getTransaction
+Method-name:invokeAfterCompletion
+Method-returnType:void
+Method-parameters:[List<TransactionSynchronization> synchronizations, int completionStatus]
+MethodInvocation:invokeAfterCompletion
+Method-name:cleanupAfterCompletion
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status]
+MethodInvocation:setCompleted
+MethodInvocation:isNewSynchronization
+MethodInvocation:clear
+MethodInvocation:isNewTransaction
+MethodInvocation:doCleanupAfterCompletion
+MethodInvocation:getTransaction
+MethodInvocation:getSuspendedResources
+MethodInvocation:isDebug
+MethodInvocation:debug
+MethodInvocation:hasTransaction
+MethodInvocation:getTransaction
+MethodInvocation:resume
+MethodInvocation:getSuspendedResources
+Method-name:doGetTransaction
+Method-returnType:Object
+Method-parameters:[]
+Method-name:isExistingTransaction
+Method-returnType:boolean
+Method-parameters:[Object transaction]
+Method-name:useSavepointForNestedTransaction
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:doBegin
+Method-returnType:void
+Method-parameters:[Object transaction, TransactionDefinition definition]
+Method-name:doSuspend
+Method-returnType:Object
+Method-parameters:[Object transaction]
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:doResume
+Method-returnType:void
+Method-parameters:[@Nullable Object transaction, Object suspendedResources]
+MethodInvocation:getName
+MethodInvocation:getClass
+Method-name:shouldCommitOnGlobalRollbackOnly
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:prepareForCommit
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status]
+Method-name:doCommit
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status]
+Method-name:doRollback
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status]
+Method-name:doSetRollbackOnly
+Method-returnType:void
+Method-parameters:[DefaultTransactionStatus status]
+Method-name:registerAfterCompletionWithExistingTransaction
+Method-returnType:void
+Method-parameters:[Object transaction, List<TransactionSynchronization> synchronizations]
+MethodInvocation:debug
+MethodInvocation:invokeAfterCompletion
+Method-name:doCleanupAfterCompletion
+Method-returnType:void
+Method-parameters:[Object transaction]
+Method-name:readObject
+Method-returnType:void
+Method-parameters:[ObjectInputStream ois]
+MethodInvocation:defaultReadObject
+FieldAccess:logger
+MethodInvocation:getLog
+MethodInvocation:getClass
+Class:SuspendedResourcesHolder
+Field:suspendedResources
+Field:suspendedSynchronizations
+Field:name
+Field:readOnly
+Field:isolationLevel
+Field:wasActive
+Method-name:SuspendedResourcesHolder
+Method-returnType:null
+Method-parameters:[Object suspendedResources]
+FieldAccess:suspendedResources
+Method-name:SuspendedResourcesHolder
+Method-returnType:null
+Method-parameters:[@Nullable Object suspendedResources, List<TransactionSynchronization> suspendedSynchronizations, @Nullable String name, boolean readOnly, @Nullable Integer isolationLevel, boolean wasActive]
+FieldAccess:suspendedResources
+FieldAccess:suspendedSynchronizations
+FieldAccess:name
+FieldAccess:readOnly
+FieldAccess:isolationLevel
+FieldAccess:wasActive

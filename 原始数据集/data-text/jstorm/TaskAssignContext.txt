@@ -1,0 +1,80 @@
+Class:TaskAssignContext
+Field:taskToComponent
+Field:supervisorToWorker
+Field:relationship
+Field:workerToComponentNum
+Field:workerToTaskNum
+Field:HostPortToWorkerMap
+Method-name:TaskAssignContext
+Method-returnType:null
+Method-parameters:[Map<String,List<ResourceWorkerSlot>> supervisorToWorker, Map<String,Set<String>> relationship, Map<Integer,String> taskToComponent]
+FieldAccess:taskToComponent
+FieldAccess:supervisorToWorker
+FieldAccess:relationship
+MethodInvocation:entrySet
+MethodInvocation:getValue
+MethodInvocation:put
+MethodInvocation:getTasks
+MethodInvocation:size
+MethodInvocation:getTasks
+MethodInvocation:put
+MethodInvocation:getHostPort
+MethodInvocation:getTasks
+MethodInvocation:getTasks
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:put
+MethodInvocation:put
+Method-name:getWorkerToTaskNum
+Method-returnType:Map<ResourceWorkerSlot,Integer>
+Method-parameters:[]
+Method-name:getSupervisorToWorker
+Method-returnType:Map<String,List<ResourceWorkerSlot>>
+Method-parameters:[]
+Method-name:getWorkerToComponentNum
+Method-returnType:Map<ResourceWorkerSlot,Map<String,Integer>>
+Method-parameters:[]
+Method-name:getRelationship
+Method-returnType:Map<String,Set<String>>
+Method-parameters:[]
+Method-name:getComponentNumOnSupervisor
+Method-returnType:int
+Method-parameters:[String supervisor, String name]
+MethodInvocation:get
+MethodInvocation:getComponentNumOnWorker
+Method-name:getComponentNumOnWorker
+Method-returnType:int
+Method-parameters:[ResourceWorkerSlot worker, String name]
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:get
+Method-name:getTaskNumOnSupervisor
+Method-returnType:int
+Method-parameters:[String supervisor]
+MethodInvocation:get
+MethodInvocation:getTaskNumOnWorker
+Method-name:getTaskNumOnWorker
+Method-returnType:int
+Method-parameters:[ResourceWorkerSlot worker]
+MethodInvocation:getTasks
+MethodInvocation:size
+MethodInvocation:getTasks
+Method-name:getInputComponentNumOnSupervisor
+Method-returnType:int
+Method-parameters:[String supervisor, String name]
+MethodInvocation:get
+MethodInvocation:getInputComponentNumOnWorker
+Method-name:getInputComponentNumOnWorker
+Method-returnType:int
+Method-parameters:[ResourceWorkerSlot worker, String name]
+MethodInvocation:get
+MethodInvocation:getComponentNumOnWorker
+Method-name:getHostPortToWorkerMap
+Method-returnType:Map<String,ResourceWorkerSlot>
+Method-parameters:[]
+Method-name:getWorker
+Method-returnType:ResourceWorkerSlot
+Method-parameters:[ResourceWorkerSlot worker]
+MethodInvocation:get
+MethodInvocation:getHostPort

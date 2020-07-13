@@ -1,0 +1,86 @@
+Class:Index
+Field:EMPTY_ARRAY
+Field:INDEX_UUID_KEY
+Field:INDEX_NAME_KEY
+Field:INDEX_PARSER
+MethodInvocation:declareString
+MethodInvocation:declareString
+Field:name
+Field:uuid
+Method-name:Index
+Method-returnType:null
+Method-parameters:[String name, String uuid]
+FieldAccess:name
+MethodInvocation:intern
+MethodInvocation:requireNonNull
+FieldAccess:uuid
+MethodInvocation:intern
+MethodInvocation:requireNonNull
+Method-name:Index
+Method-returnType:null
+Method-parameters:[StreamInput in]
+FieldAccess:name
+MethodInvocation:readString
+FieldAccess:uuid
+MethodInvocation:readString
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]
+FieldAccess:name
+Method-name:getUUID
+Method-returnType:String
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:equals
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hashCode
+MethodInvocation:hashCode
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[final StreamOutput out]
+MethodInvocation:writeString
+MethodInvocation:writeString
+Method-name:toXContent
+Method-returnType:XContentBuilder
+Method-parameters:[final XContentBuilder builder, final Params params]
+MethodInvocation:startObject
+MethodInvocation:field
+MethodInvocation:field
+MethodInvocation:endObject
+Method-name:fromXContent
+Method-returnType:Index
+Method-parameters:[final XContentParser parser]
+MethodInvocation:build
+MethodInvocation:parse
+Method-name:hasIndex
+Method-returnType:boolean
+Method-parameters:[RoutingTable indexRoutingTables]
+MethodInvocation:index
+MethodInvocation:getName
+MethodInvocation:equals
+MethodInvocation:getIndex
+Class:Builder
+Field:name
+Field:uuid
+Method-name:name
+Method-returnType:void
+Method-parameters:[final String name]
+FieldAccess:name
+Method-name:uuid
+Method-returnType:void
+Method-parameters:[final String uuid]
+FieldAccess:uuid
+Method-name:build
+Method-returnType:Index
+Method-parameters:[]

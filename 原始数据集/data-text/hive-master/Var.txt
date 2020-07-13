@@ -1,0 +1,329 @@
+Class:Var
+Method-name:updateIndex
+Method-returnType:void
+Method-parameters:[int step, HplsqlParser.For_range_stmtContext ctx, Stmt stmt]
+MethodInvocation:T_REVERSE
+MethodInvocation:increment
+MethodInvocation:decrement
+Field:Type
+Field:DERIVED_TYPE
+Field:DERIVED_ROWTYPE
+Field:Empty
+Field:Null
+Field:name
+Field:type
+Field:value
+Field:len
+Field:scale
+Field:constant
+Method-name:Var
+Method-returnType:null
+Method-parameters:[]
+Method-name:Var
+Method-returnType:null
+Method-parameters:[Var var]
+Method-name:Var
+Method-returnType:null
+Method-parameters:[Long value]
+FieldAccess:type
+FieldAccess:value
+Method-name:Var
+Method-returnType:null
+Method-parameters:[BigDecimal value]
+FieldAccess:type
+FieldAccess:value
+Method-name:Var
+Method-returnType:null
+Method-parameters:[String name, Long value]
+FieldAccess:type
+FieldAccess:name
+FieldAccess:value
+Method-name:Var
+Method-returnType:null
+Method-parameters:[String value]
+FieldAccess:type
+FieldAccess:value
+Method-name:Var
+Method-returnType:null
+Method-parameters:[Double value]
+FieldAccess:type
+FieldAccess:value
+Method-name:Var
+Method-returnType:null
+Method-parameters:[Date value]
+FieldAccess:type
+FieldAccess:value
+Method-name:Var
+Method-returnType:null
+Method-parameters:[Timestamp value, int scale]
+FieldAccess:type
+FieldAccess:value
+FieldAccess:scale
+Method-name:Var
+Method-returnType:null
+Method-parameters:[Interval value]
+FieldAccess:type
+FieldAccess:value
+Method-name:Var
+Method-returnType:null
+Method-parameters:[ArrayList<String> value]
+FieldAccess:type
+FieldAccess:value
+Method-name:Var
+Method-returnType:null
+Method-parameters:[Boolean b]
+Method-name:Var
+Method-returnType:null
+Method-parameters:[String name, Row row]
+FieldAccess:name
+FieldAccess:type
+FieldAccess:value
+Method-name:Var
+Method-returnType:null
+Method-parameters:[Type type, String name]
+FieldAccess:type
+FieldAccess:name
+Method-name:Var
+Method-returnType:null
+Method-parameters:[Type type, Object value]
+FieldAccess:type
+FieldAccess:value
+Method-name:Var
+Method-returnType:null
+Method-parameters:[String name, Type type, Object value]
+FieldAccess:name
+FieldAccess:type
+FieldAccess:value
+Method-name:Var
+Method-returnType:null
+Method-parameters:[Type type]
+FieldAccess:type
+Method-name:Var
+Method-returnType:null
+Method-parameters:[String name, String type, String len, String scale, Var def]
+FieldAccess:name
+MethodInvocation:setType
+FieldAccess:len
+MethodInvocation:parseInt
+FieldAccess:scale
+MethodInvocation:parseInt
+MethodInvocation:cast
+Method-name:cast
+Method-returnType:Var
+Method-parameters:[Var val]
+MethodInvocation:cast
+MethodInvocation:cast
+MethodInvocation:toString
+MethodInvocation:parseLong
+MethodInvocation:valueOf
+MethodInvocation:longValue
+MethodInvocation:valueOf
+MethodInvocation:doubleValue
+MethodInvocation:valueOf
+MethodInvocation:valueOf
+MethodInvocation:doubleValue
+MethodInvocation:toDate
+MethodInvocation:toString
+MethodInvocation:toTimestamp
+MethodInvocation:toString
+Method-name:cast
+Method-returnType:Var
+Method-parameters:[String val]
+MethodInvocation:length
+MethodInvocation:substring
+Method-name:setValue
+Method-returnType:void
+Method-parameters:[String str]
+Method-name:setValue
+Method-returnType:Var
+Method-parameters:[Long val]
+Method-name:setValue
+Method-returnType:Var
+Method-parameters:[Boolean val]
+Method-name:setValue
+Method-returnType:void
+Method-parameters:[Object value]
+FieldAccess:value
+Method-name:setValue
+Method-returnType:Var
+Method-parameters:[ResultSet rs, ResultSetMetaData rsm, int idx]
+MethodInvocation:getColumnType
+MethodInvocation:cast
+MethodInvocation:getString
+MethodInvocation:cast
+MethodInvocation:valueOf
+MethodInvocation:getLong
+MethodInvocation:cast
+MethodInvocation:getBigDecimal
+MethodInvocation:cast
+MethodInvocation:valueOf
+MethodInvocation:getDouble
+Method-name:setValues
+Method-returnType:Var
+Method-parameters:[ResultSet rs, ResultSetMetaData rsm]
+FieldAccess:value
+MethodInvocation:getColumns
+MethodInvocation:getName
+MethodInvocation:getType
+MethodInvocation:setValue
+MethodInvocation:setValue
+Method-name:setType
+Method-returnType:void
+Method-parameters:[String type]
+FieldAccess:type
+MethodInvocation:defineType
+Method-name:setType
+Method-returnType:void
+Method-parameters:[int type]
+FieldAccess:type
+MethodInvocation:defineType
+Method-name:setConstant
+Method-returnType:void
+Method-parameters:[boolean constant]
+FieldAccess:constant
+Method-name:defineType
+Method-returnType:Type
+Method-parameters:[String type]
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:startsWith
+MethodInvocation:toUpperCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:startsWith
+MethodInvocation:toUpperCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:startsWith
+MethodInvocation:toUpperCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:startsWith
+MethodInvocation:toUpperCase
+MethodInvocation:equalsIgnoreCase
+Method-name:defineType
+Method-returnType:Type
+Method-parameters:[int type]
+Method-name:removeValue
+Method-returnType:void
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+FieldAccess:value
+MethodInvocation:longValue
+MethodInvocation:longValue
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:compareTo
+MethodInvocation:compareTo
+MethodInvocation:compareTo
+MethodInvocation:doubleValue
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[BigDecimal d, Long i]
+MethodInvocation:compareTo
+Method-name:compareTo
+Method-returnType:int
+Method-parameters:[Var v]
+MethodInvocation:compareTo
+MethodInvocation:compareTo
+Method-name:percentDiff
+Method-returnType:BigDecimal
+Method-parameters:[Var var]
+MethodInvocation:decimalValue
+MethodInvocation:cast
+MethodInvocation:decimalValue
+MethodInvocation:cast
+MethodInvocation:compareTo
+MethodInvocation:divide
+MethodInvocation:multiply
+MethodInvocation:abs
+MethodInvocation:subtract
+Method-name:increment
+Method-returnType:Var
+Method-parameters:[long i]
+MethodInvocation:valueOf
+MethodInvocation:longValue
+Method-name:decrement
+Method-returnType:Var
+Method-parameters:[long i]
+MethodInvocation:valueOf
+MethodInvocation:longValue
+Method-name:intValue
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:intValue
+MethodInvocation:parseInt
+Method-name:longValue
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:longValue
+Method-name:decimalValue
+Method-returnType:BigDecimal
+Method-parameters:[]
+Method-name:doubleValue
+Method-returnType:double
+Method-parameters:[]
+MethodInvocation:doubleValue
+MethodInvocation:doubleValue
+MethodInvocation:doubleValue
+Method-name:isTrue
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:booleanValue
+Method-name:negate
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:booleanValue
+MethodInvocation:valueOf
+MethodInvocation:negate
+Method-name:isNull
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:toString
+MethodInvocation:length
+MethodInvocation:substring
+MethodInvocation:toString
+Method-name:toSqlString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:quoteString
+MethodInvocation:toString
+Method-name:setName
+Method-returnType:void
+Method-parameters:[String name]
+FieldAccess:name
+Method-name:getName
+Method-returnType:String
+Method-parameters:[]

@@ -1,0 +1,36 @@
+Class:PostLoadEvent
+Field:entity
+Field:id
+Field:persister
+Method-name:PostLoadEvent
+Method-returnType:null
+Method-parameters:[EventSource session]
+Method-name:getEntity
+Method-returnType:Object
+Method-parameters:[]
+Method-name:getPersister
+Method-returnType:EntityPersister
+Method-parameters:[]
+Method-name:getId
+Method-returnType:Serializable
+Method-parameters:[]
+Method-name:setEntity
+Method-returnType:PostLoadEvent
+Method-parameters:[Object entity]
+FieldAccess:entity
+Method-name:setId
+Method-returnType:PostLoadEvent
+Method-parameters:[Serializable id]
+FieldAccess:id
+Method-name:setPersister
+Method-returnType:PostLoadEvent
+Method-parameters:[EntityPersister persister]
+FieldAccess:persister
+Method-name:invokeLoadLifecycle
+Method-returnType:void
+Method-parameters:[EventSource session, DefaultPostLoadEventListener defaultPostLoadEventListener]
+MethodInvocation:implementsLifecycle
+MethodInvocation:getPersister
+MethodInvocation:onLoad
+MethodInvocation:getEntity
+MethodInvocation:getId

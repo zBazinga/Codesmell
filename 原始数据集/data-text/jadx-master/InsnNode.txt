@@ -1,0 +1,261 @@
+Class:InsnNode
+Field:insnType
+Field:result
+Field:arguments
+Field:offset
+Method-name:InsnNode
+Method-returnType:null
+Method-parameters:[InsnType type, int argsCount]
+MethodInvocation:emptyList
+Method-name:InsnNode
+Method-returnType:null
+Method-parameters:[InsnType type, List<InsnArg> args]
+FieldAccess:insnType
+FieldAccess:arguments
+FieldAccess:offset
+MethodInvocation:attachArg
+Method-name:wrapArg
+Method-returnType:InsnNode
+Method-parameters:[InsnArg arg]
+MethodInvocation:addArg
+Method-name:setResult
+Method-returnType:void
+Method-parameters:[@Nullable RegisterArg res]
+FieldAccess:result
+MethodInvocation:setParentInsn
+MethodInvocation:getSVar
+MethodInvocation:setAssign
+Method-name:addArg
+Method-returnType:void
+Method-parameters:[InsnArg arg]
+MethodInvocation:add
+MethodInvocation:attachArg
+Method-name:setArg
+Method-returnType:void
+Method-parameters:[int n, InsnArg arg]
+MethodInvocation:set
+MethodInvocation:attachArg
+Method-name:getType
+Method-returnType:InsnType
+Method-parameters:[]
+Method-name:getResult
+Method-returnType:RegisterArg
+Method-parameters:[]
+Method-name:getArguments
+Method-returnType:Iterable<InsnArg>
+Method-parameters:[]
+Method-name:getArgsCount
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:size
+Method-name:getArg
+Method-returnType:InsnArg
+Method-parameters:[int n]
+MethodInvocation:get
+Method-name:containsArg
+Method-returnType:boolean
+Method-parameters:[InsnArg arg]
+MethodInvocation:getArgsCount
+Method-name:containsVar
+Method-returnType:boolean
+Method-parameters:[RegisterArg arg]
+MethodInvocation:getArgsCount
+MethodInvocation:sameRegAndSVar
+Method-name:replaceArg
+Method-returnType:boolean
+Method-parameters:[InsnArg from, InsnArg to]
+MethodInvocation:getArgsCount
+MethodInvocation:get
+MethodInvocation:unbindArgUsage
+MethodInvocation:setArg
+MethodInvocation:isInsnWrap
+MethodInvocation:replaceArg
+MethodInvocation:getWrapInsn
+Method-name:removeArg
+Method-returnType:boolean
+Method-parameters:[InsnArg arg]
+MethodInvocation:getArgIndex
+MethodInvocation:removeArg
+Method-name:removeArg
+Method-returnType:InsnArg
+Method-parameters:[int index]
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:unbindArgUsage
+Method-name:getArgIndex
+Method-returnType:int
+Method-parameters:[InsnArg arg]
+MethodInvocation:getArgsCount
+MethodInvocation:get
+Method-name:addReg
+Method-returnType:void
+Method-parameters:[DecodedInstruction insn, int i, ArgType type]
+MethodInvocation:addArg
+MethodInvocation:reg
+Method-name:addReg
+Method-returnType:void
+Method-parameters:[int regNum, ArgType type]
+MethodInvocation:addArg
+MethodInvocation:reg
+Method-name:addLit
+Method-returnType:void
+Method-parameters:[long literal, ArgType type]
+MethodInvocation:addArg
+MethodInvocation:lit
+Method-name:addLit
+Method-returnType:void
+Method-parameters:[DecodedInstruction insn, ArgType type]
+MethodInvocation:addArg
+MethodInvocation:lit
+Method-name:getOffset
+Method-returnType:int
+Method-parameters:[]
+Method-name:setOffset
+Method-returnType:void
+Method-parameters:[int offset]
+FieldAccess:offset
+Method-name:getRegisterArgs
+Method-returnType:void
+Method-parameters:[Collection<RegisterArg> collection]
+MethodInvocation:getArguments
+MethodInvocation:isRegister
+MethodInvocation:add
+MethodInvocation:isInsnWrap
+MethodInvocation:getRegisterArgs
+MethodInvocation:getWrapInsn
+Method-name:isConstInsn
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getType
+Method-name:canRemoveResult
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getType
+Method-name:canReorder
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:contains
+MethodInvocation:getType
+MethodInvocation:getArguments
+MethodInvocation:isInsnWrap
+MethodInvocation:getWrapInsn
+MethodInvocation:canReorder
+MethodInvocation:getType
+Method-name:canReorderRecursive
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:canReorder
+MethodInvocation:getArguments
+MethodInvocation:isInsnWrap
+MethodInvocation:getWrapInsn
+MethodInvocation:canReorderRecursive
+Method-name:containsWrappedInsn
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getArguments
+MethodInvocation:isInsnWrap
+Method-name:isSame
+Method-returnType:boolean
+Method-parameters:[InsnNode other]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:get
+MethodInvocation:isInsnWrap
+MethodInvocation:isInsnWrap
+MethodInvocation:getWrapInsn
+MethodInvocation:getWrapInsn
+MethodInvocation:isSame
+Method-name:isDeepEquals
+Method-returnType:boolean
+Method-parameters:[InsnNode other]
+MethodInvocation:isSame
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:copyCommonParams
+Method-returnType:T
+Method-parameters:[T copy]
+MethodInvocation:getArgsCount
+MethodInvocation:getArguments
+MethodInvocation:addArg
+MethodInvocation:duplicate
+MethodInvocation:copyAttributesFrom
+MethodInvocation:copyLines
+MethodInvocation:setOffset
+MethodInvocation:getOffset
+Method-name:copy
+Method-returnType:InsnNode
+Method-parameters:[]
+MethodInvocation:getClass
+MethodInvocation:getSimpleName
+MethodInvocation:getClass
+MethodInvocation:copyCommonParams
+MethodInvocation:getArgsCount
+Method-name:copyWithoutResult
+Method-returnType:T
+Method-parameters:[]
+MethodInvocation:copy
+Method-name:copyWithoutSsa
+Method-returnType:InsnNode
+Method-parameters:[]
+MethodInvocation:copyWithoutResult
+MethodInvocation:getSVar
+MethodInvocation:setResult
+MethodInvocation:duplicate
+Method-name:copy
+Method-returnType:InsnNode
+Method-parameters:[RegisterArg newReturnArg]
+MethodInvocation:copy
+MethodInvocation:setResult
+Method-name:copyWithNewSsaVar
+Method-returnType:InsnNode
+Method-parameters:[MethodNode mth]
+MethodInvocation:getResult
+MethodInvocation:getRegNum
+MethodInvocation:duplicate
+MethodInvocation:makeNewSVar
+MethodInvocation:copy
+Method-name:rebindArgs
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getResult
+MethodInvocation:setAssign
+MethodInvocation:getSVar
+MethodInvocation:getArguments
+MethodInvocation:getSVar
+MethodInvocation:use
+MethodInvocation:updateUsedInPhiList
+MethodInvocation:rebindArgs
+MethodInvocation:getWrapInsn
+Method-name:canThrowException
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getType
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+Method-name:appendArgs
+Method-returnType:void
+Method-parameters:[StringBuilder sb]
+MethodInvocation:listToString
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:listToString
+MethodInvocation:append
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:append
+MethodInvocation:formatOffset
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:insnTypeToString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:appendArgs
+MethodInvocation:toString

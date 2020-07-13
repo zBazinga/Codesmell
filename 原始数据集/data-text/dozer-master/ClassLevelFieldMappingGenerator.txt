@@ -1,0 +1,91 @@
+Class:ClassLevelFieldMappingGenerator
+Field:beanContainer
+Field:destBeanCreator
+Field:propertyDescriptorFactory
+Method-name:ClassLevelFieldMappingGenerator
+Method-returnType:null
+Method-parameters:[BeanContainer beanContainer, DestBeanCreator destBeanCreator, PropertyDescriptorFactory propertyDescriptorFactory]
+FieldAccess:beanContainer
+FieldAccess:destBeanCreator
+FieldAccess:propertyDescriptorFactory
+Method-name:accepts
+Method-returnType:boolean
+Method-parameters:[ClassMap classMap]
+MethodInvocation:srcClassIsAccessible
+MethodInvocation:destClassIsAccessible
+Method-name:apply
+Method-returnType:boolean
+Method-parameters:[ClassMap classMap, Configuration configuration]
+MethodInvocation:getDeclaredFieldNames
+MethodInvocation:getDestClassToMap
+MethodInvocation:getWritableFieldNames
+MethodInvocation:getDestClassToMap
+MethodInvocation:getDeclaredFieldNames
+MethodInvocation:getSrcClassToMap
+MethodInvocation:getReadableFieldNames
+MethodInvocation:getSrcClassToMap
+MethodInvocation:isWildcardCaseInsensitive
+MethodInvocation:getMatchingUnmappedFieldNamesCaseInsensitive
+MethodInvocation:getFieldMaps
+MethodInvocation:getMatchingUnmappedFieldNames
+MethodInvocation:getFieldMaps
+MethodInvocation:mapFieldAppropriately
+Method-name:mapFieldAppropriately
+Method-returnType:void
+Method-parameters:[ClassMap classMap, Configuration configuration, WildcardFieldMapping matchingFields, Set<String> destWritablePropertyNames, Set<String> srcReadablePropertyNames]
+MethodInvocation:destClassIsAccessible
+MethodInvocation:contains
+MethodInvocation:getSrcFieldName
+MethodInvocation:srcClassIsAccessible
+MethodInvocation:contains
+MethodInvocation:getDestFieldName
+MethodInvocation:addGenericMapping
+MethodInvocation:getSrcFieldName
+MethodInvocation:getDestFieldName
+Method-name:getDeclaredFieldNames
+Method-returnType:Set<String>
+Method-parameters:[Class<?> srcType]
+MethodInvocation:getDeclaredFields
+MethodInvocation:add
+MethodInvocation:getName
+MethodInvocation:getSuperclass
+Method-name:getMatchingUnmappedFieldNames
+Method-returnType:Set<WildcardFieldMapping>
+Method-parameters:[List<FieldMap> fieldMaps, Set<String> srcFieldNames, Set<String> destFieldNames]
+MethodInvocation:remove
+MethodInvocation:getSrcFieldName
+MethodInvocation:remove
+MethodInvocation:getDestFieldName
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:intersection
+MethodInvocation:toSet
+Method-name:getMatchingUnmappedFieldNamesCaseInsensitive
+Method-returnType:Set<WildcardFieldMapping>
+Method-parameters:[List<FieldMap> fieldMaps, Set<String> srcFieldNames, Set<String> destFieldNames]
+MethodInvocation:size
+MethodInvocation:size
+MethodInvocation:put
+MethodInvocation:toLowerCase
+MethodInvocation:put
+MethodInvocation:toLowerCase
+MethodInvocation:remove
+MethodInvocation:toLowerCase
+MethodInvocation:getSrcFieldName
+MethodInvocation:remove
+MethodInvocation:toLowerCase
+MethodInvocation:getDestFieldName
+MethodInvocation:entrySet
+MethodInvocation:containsKey
+MethodInvocation:getKey
+MethodInvocation:add
+MethodInvocation:getValue
+MethodInvocation:get
+MethodInvocation:getKey
+Method-name:srcClassIsAccessible
+Method-returnType:boolean
+Method-parameters:[ClassMap classMap]
+MethodInvocation:getSrcClass
+MethodInvocation:isAccessible
+MethodInvocation:getSrcClass

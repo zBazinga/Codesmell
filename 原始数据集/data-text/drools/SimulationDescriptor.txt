@@ -1,0 +1,194 @@
+Class:SimulationDescriptor
+Field:factMappings
+Field:dmoSession
+Field:dmnFilePath
+Field:type
+Field:fileName
+Field:kieSession
+Field:kieBase
+Field:ruleFlowGroup
+Field:dmnNamespace
+Field:dmnName
+Field:skipFromBuild
+Method-name:getUnmodifiableFactMappings
+Method-returnType:List<FactMapping>
+Method-parameters:[]
+MethodInvocation:unmodifiableList
+Method-name:getFactIdentifiers
+Method-returnType:Set<FactIdentifier>
+Method-parameters:[]
+MethodInvocation:collect
+MethodInvocation:map
+MethodInvocation:stream
+MethodInvocation:toSet
+Method-name:getDmoSession
+Method-returnType:String
+Method-parameters:[]
+Method-name:setDmoSession
+Method-returnType:void
+Method-parameters:[String ruleSession]
+FieldAccess:dmoSession
+Method-name:getDmnFilePath
+Method-returnType:String
+Method-parameters:[]
+Method-name:setDmnFilePath
+Method-returnType:void
+Method-parameters:[String dmnFilePath]
+FieldAccess:dmnFilePath
+Method-name:getType
+Method-returnType:ScenarioSimulationModel.Type
+Method-parameters:[]
+Method-name:setType
+Method-returnType:void
+Method-parameters:[ScenarioSimulationModel.Type type]
+FieldAccess:type
+Method-name:getFactMappings
+Method-returnType:List<FactMapping>
+Method-parameters:[]
+Method-name:getFileName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setFileName
+Method-returnType:void
+Method-parameters:[String fileName]
+FieldAccess:fileName
+Method-name:getKieSession
+Method-returnType:String
+Method-parameters:[]
+Method-name:setKieSession
+Method-returnType:void
+Method-parameters:[String kieSession]
+FieldAccess:kieSession
+Method-name:getKieBase
+Method-returnType:String
+Method-parameters:[]
+Method-name:setKieBase
+Method-returnType:void
+Method-parameters:[String kieBase]
+FieldAccess:kieBase
+Method-name:getRuleFlowGroup
+Method-returnType:String
+Method-parameters:[]
+Method-name:setRuleFlowGroup
+Method-returnType:void
+Method-parameters:[String ruleFlowGroup]
+FieldAccess:ruleFlowGroup
+Method-name:getDmnNamespace
+Method-returnType:String
+Method-parameters:[]
+Method-name:setDmnNamespace
+Method-returnType:void
+Method-parameters:[String dmnNamespace]
+FieldAccess:dmnNamespace
+Method-name:getDmnName
+Method-returnType:String
+Method-parameters:[]
+Method-name:setDmnName
+Method-returnType:void
+Method-parameters:[String dmnName]
+FieldAccess:dmnName
+Method-name:isSkipFromBuild
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSkipFromBuild
+Method-returnType:void
+Method-parameters:[boolean skipFromBuild]
+FieldAccess:skipFromBuild
+Method-name:moveFactMapping
+Method-returnType:void
+Method-parameters:[int oldIndex, int newIndex]
+MethodInvocation:size
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:size
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:get
+MethodInvocation:remove
+MethodInvocation:add
+Method-name:getFactMappingByIndex
+Method-returnType:FactMapping
+Method-parameters:[int index]
+MethodInvocation:get
+Method-name:removeFactMappingByIndex
+Method-returnType:void
+Method-parameters:[int index]
+MethodInvocation:remove
+Method-name:removeFactMapping
+Method-returnType:void
+Method-parameters:[FactMapping toRemove]
+MethodInvocation:remove
+Method-name:getFactMappingsByFactName
+Method-returnType:List<FactMapping>
+Method-parameters:[String factName]
+MethodInvocation:internalFilter
+MethodInvocation:equalsIgnoreCase
+MethodInvocation:getName
+MethodInvocation:getFactIdentifier
+Method-name:getFactMapping
+Method-returnType:Optional<FactMapping>
+Method-parameters:[FactIdentifier factIdentifier, ExpressionIdentifier ei]
+MethodInvocation:internalFilter
+MethodInvocation:equals
+MethodInvocation:getExpressionIdentifier
+MethodInvocation:equals
+MethodInvocation:getFactIdentifier
+MethodInvocation:findFirst
+MethodInvocation:stream
+Method-name:addFactMapping
+Method-returnType:FactMapping
+Method-parameters:[int index, FactMapping toClone]
+MethodInvocation:cloneFactMapping
+MethodInvocation:add
+Method-name:addFactMapping
+Method-returnType:FactMapping
+Method-parameters:[FactIdentifier factIdentifier, ExpressionIdentifier expressionIdentifier]
+MethodInvocation:addFactMapping
+MethodInvocation:size
+Method-name:addFactMapping
+Method-returnType:FactMapping
+Method-parameters:[String factAlias, FactIdentifier factIdentifier, ExpressionIdentifier expressionIdentifier]
+MethodInvocation:addFactMapping
+MethodInvocation:size
+Method-name:addFactMapping
+Method-returnType:FactMapping
+Method-parameters:[int index, FactIdentifier factIdentifier, ExpressionIdentifier expressionIdentifier]
+MethodInvocation:addFactMapping
+MethodInvocation:getName
+Method-name:addFactMapping
+Method-returnType:FactMapping
+Method-parameters:[int index, String factAlias, FactIdentifier factIdentifier, ExpressionIdentifier expressionIdentifier]
+MethodInvocation:isPresent
+MethodInvocation:getFactMapping
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getName
+MethodInvocation:getName
+MethodInvocation:size
+MethodInvocation:toString
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:size
+MethodInvocation:add
+Method-name:clear
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:clear
+Method-name:internalFilter
+Method-returnType:List<FactMapping>
+Method-parameters:[Predicate<FactMapping> predicate]
+MethodInvocation:collect
+MethodInvocation:filter
+MethodInvocation:stream
+MethodInvocation:toList

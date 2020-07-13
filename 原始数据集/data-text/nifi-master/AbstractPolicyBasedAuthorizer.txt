@@ -1,0 +1,472 @@
+Class:AbstractPolicyBasedAuthorizer
+Field:logger
+MethodInvocation:getLogger
+Field:DOCUMENT_BUILDER_FACTORY
+MethodInvocation:newInstance
+Field:XML_OUTPUT_FACTORY
+MethodInvocation:newInstance
+Field:USER_ELEMENT
+Field:GROUP_USER_ELEMENT
+Field:GROUP_ELEMENT
+Field:POLICY_ELEMENT
+Field:POLICY_USER_ELEMENT
+Field:POLICY_GROUP_ELEMENT
+Field:IDENTIFIER_ATTR
+Field:IDENTITY_ATTR
+Field:NAME_ATTR
+Field:RESOURCE_ATTR
+Field:ACTIONS_ATTR
+Method-name:onConfigured
+Method-returnType:void
+Method-parameters:[final AuthorizerConfigurationContext configurationContext]
+MethodInvocation:doOnConfigured
+Method-name:doOnConfigured
+Method-returnType:void
+Method-parameters:[final AuthorizerConfigurationContext configurationContext]
+Method-name:authorize
+Method-returnType:AuthorizationResult
+Method-parameters:[AuthorizationRequest request]
+MethodInvocation:getUsersAndAccessPolicies
+MethodInvocation:getIdentifier
+MethodInvocation:getResource
+MethodInvocation:getAccessPolicy
+MethodInvocation:getAction
+MethodInvocation:resourceNotFound
+MethodInvocation:getUser
+MethodInvocation:getIdentity
+MethodInvocation:denied
+MethodInvocation:format
+MethodInvocation:getIdentity
+MethodInvocation:getGroups
+MethodInvocation:getIdentity
+MethodInvocation:contains
+MethodInvocation:getUsers
+MethodInvocation:getIdentifier
+MethodInvocation:containsGroup
+MethodInvocation:approved
+MethodInvocation:denied
+MethodInvocation:get
+MethodInvocation:getExplanationSupplier
+Method-name:addGroup
+Method-returnType:Group
+Method-parameters:[Group group]
+MethodInvocation:doAddGroup
+Method-name:doAddGroup
+Method-returnType:Group
+Method-parameters:[Group group]
+Method-name:getGroup
+Method-returnType:Group
+Method-parameters:[String identifier]
+Method-name:purgePoliciesUsersAndGroups
+Method-returnType:void
+Method-parameters:[]
+Method-name:backupPoliciesUsersAndGroups
+Method-returnType:void
+Method-parameters:[]
+Method-name:updateGroup
+Method-returnType:Group
+Method-parameters:[Group group]
+MethodInvocation:doUpdateGroup
+Method-name:doUpdateGroup
+Method-returnType:Group
+Method-parameters:[Group group]
+Method-name:deleteGroup
+Method-returnType:Group
+Method-parameters:[Group group]
+Method-name:getGroups
+Method-returnType:Set<Group>
+Method-parameters:[]
+Method-name:addUser
+Method-returnType:User
+Method-parameters:[User user]
+MethodInvocation:doAddUser
+Method-name:doAddUser
+Method-returnType:User
+Method-parameters:[User user]
+Method-name:getUser
+Method-returnType:User
+Method-parameters:[String identifier]
+Method-name:getUserByIdentity
+Method-returnType:User
+Method-parameters:[String identity]
+Method-name:updateUser
+Method-returnType:User
+Method-parameters:[final User user]
+MethodInvocation:doUpdateUser
+Method-name:doUpdateUser
+Method-returnType:User
+Method-parameters:[User user]
+Method-name:deleteUser
+Method-returnType:User
+Method-parameters:[User user]
+Method-name:getUsers
+Method-returnType:Set<User>
+Method-parameters:[]
+Method-name:addAccessPolicy
+Method-returnType:AccessPolicy
+Method-parameters:[AccessPolicy accessPolicy]
+MethodInvocation:doAddAccessPolicy
+Method-name:doAddAccessPolicy
+Method-returnType:AccessPolicy
+Method-parameters:[AccessPolicy accessPolicy]
+Method-name:getAccessPolicy
+Method-returnType:AccessPolicy
+Method-parameters:[String identifier]
+Method-name:updateAccessPolicy
+Method-returnType:AccessPolicy
+Method-parameters:[AccessPolicy accessPolicy]
+Method-name:deleteAccessPolicy
+Method-returnType:AccessPolicy
+Method-parameters:[AccessPolicy policy]
+Method-name:getAccessPolicies
+Method-returnType:Set<AccessPolicy>
+Method-parameters:[]
+Method-name:getUsersAndAccessPolicies
+Method-returnType:UsersAndAccessPolicies
+Method-parameters:[]
+Method-name:checkInheritability
+Method-returnType:void
+Method-parameters:[String proposedFingerprint]
+MethodInvocation:parsePoliciesUsersAndGroups
+MethodInvocation:isInheritable
+Method-name:isInheritable
+Method-returnType:boolean
+Method-parameters:[final PoliciesUsersAndGroups policiesUsersAndGroups]
+MethodInvocation:isEmpty
+MethodInvocation:getUsers
+MethodInvocation:isEmpty
+MethodInvocation:getGroups
+MethodInvocation:isEmpty
+MethodInvocation:getAccessPolicies
+Method-name:inheritFingerprint
+Method-returnType:void
+Method-parameters:[final String fingerprint]
+MethodInvocation:isEmpty
+MethodInvocation:trim
+MethodInvocation:parsePoliciesUsersAndGroups
+MethodInvocation:inheritPoliciesUsersAndGroups
+Method-name:inheritPoliciesUsersAndGroups
+Method-returnType:void
+Method-parameters:[final PoliciesUsersAndGroups policiesUsersAndGroups]
+MethodInvocation:addPoliciesUsersAndGroups
+Method-name:addPoliciesUsersAndGroups
+Method-returnType:void
+Method-parameters:[final PoliciesUsersAndGroups policiesUsersAndGroups]
+MethodInvocation:forEach
+MethodInvocation:getUsers
+MethodInvocation:forEach
+MethodInvocation:getGroups
+MethodInvocation:forEach
+MethodInvocation:getAccessPolicies
+Method-name:forciblyInheritFingerprint
+Method-returnType:void
+Method-parameters:[final String fingerprint]
+MethodInvocation:isEmpty
+MethodInvocation:trim
+MethodInvocation:info
+MethodInvocation:backupPoliciesUsersAndGroups
+MethodInvocation:purgePoliciesUsersAndGroups
+MethodInvocation:parsePoliciesUsersAndGroups
+MethodInvocation:isInheritable
+MethodInvocation:debug
+MethodInvocation:inheritPoliciesUsersAndGroups
+MethodInvocation:info
+MethodInvocation:backupPoliciesUsersAndGroups
+MethodInvocation:purgePoliciesUsersAndGroups
+MethodInvocation:addPoliciesUsersAndGroups
+Method-name:parsePoliciesUsersAndGroups
+Method-returnType:PoliciesUsersAndGroups
+Method-parameters:[final String fingerprint]
+MethodInvocation:getBytes
+MethodInvocation:newDocumentBuilder
+MethodInvocation:parse
+MethodInvocation:getDocumentElement
+MethodInvocation:getElementsByTagName
+MethodInvocation:getLength
+MethodInvocation:item
+MethodInvocation:add
+MethodInvocation:parseUser
+MethodInvocation:getElementsByTagName
+MethodInvocation:getLength
+MethodInvocation:item
+MethodInvocation:add
+MethodInvocation:parseGroup
+MethodInvocation:getElementsByTagName
+MethodInvocation:getLength
+MethodInvocation:item
+MethodInvocation:add
+MethodInvocation:parsePolicy
+Method-name:parseUser
+Method-returnType:User
+Method-parameters:[final Element element]
+MethodInvocation:identity
+MethodInvocation:identifier
+MethodInvocation:getAttribute
+MethodInvocation:getAttribute
+MethodInvocation:build
+Method-name:parseGroup
+Method-returnType:Group
+Method-parameters:[final Element element]
+MethodInvocation:name
+MethodInvocation:identifier
+MethodInvocation:getAttribute
+MethodInvocation:getAttribute
+MethodInvocation:getElementsByTagName
+MethodInvocation:getLength
+MethodInvocation:item
+MethodInvocation:addUser
+MethodInvocation:getAttribute
+MethodInvocation:build
+Method-name:parsePolicy
+Method-returnType:AccessPolicy
+Method-parameters:[final Element element]
+MethodInvocation:resource
+MethodInvocation:identifier
+MethodInvocation:getAttribute
+MethodInvocation:getAttribute
+MethodInvocation:getAttribute
+MethodInvocation:equals
+MethodInvocation:name
+MethodInvocation:action
+MethodInvocation:equals
+MethodInvocation:name
+MethodInvocation:action
+MethodInvocation:getElementsByTagName
+MethodInvocation:getLength
+MethodInvocation:item
+MethodInvocation:addUser
+MethodInvocation:getAttribute
+MethodInvocation:getElementsByTagName
+MethodInvocation:getLength
+MethodInvocation:item
+MethodInvocation:addGroup
+MethodInvocation:getAttribute
+MethodInvocation:build
+Method-name:getAccessPolicyProvider
+Method-returnType:AccessPolicyProvider
+Method-parameters:[]
+Method-name:getAccessPolicies
+Method-returnType:Set<AccessPolicy>
+Method-parameters:[]
+MethodInvocation:getAccessPolicies
+Method-name:getAccessPolicy
+Method-returnType:AccessPolicy
+Method-parameters:[String identifier]
+MethodInvocation:getAccessPolicy
+Method-name:addAccessPolicy
+Method-returnType:AccessPolicy
+Method-parameters:[AccessPolicy accessPolicy]
+MethodInvocation:addAccessPolicy
+Method-name:updateAccessPolicy
+Method-returnType:AccessPolicy
+Method-parameters:[AccessPolicy accessPolicy]
+MethodInvocation:updateAccessPolicy
+Method-name:deleteAccessPolicy
+Method-returnType:AccessPolicy
+Method-parameters:[AccessPolicy accessPolicy]
+MethodInvocation:deleteAccessPolicy
+Method-name:getAccessPolicy
+Method-returnType:AccessPolicy
+Method-parameters:[String resourceIdentifier, RequestAction action]
+MethodInvocation:getUsersAndAccessPolicies
+MethodInvocation:getAccessPolicy
+Method-name:getFingerprint
+Method-returnType:String
+Method-parameters:[]
+Method-name:inheritFingerprint
+Method-returnType:void
+Method-parameters:[String fingerprint]
+Method-name:forciblyInheritFingerprint
+Method-returnType:void
+Method-parameters:[final String fingerprint]
+Method-name:checkInheritability
+Method-returnType:void
+Method-parameters:[String proposedFingerprint]
+Method-name:getUserGroupProvider
+Method-returnType:UserGroupProvider
+Method-parameters:[]
+Method-name:addUser
+Method-returnType:User
+Method-parameters:[User user]
+MethodInvocation:addUser
+Method-name:updateUser
+Method-returnType:User
+Method-parameters:[User user]
+MethodInvocation:updateUser
+Method-name:deleteUser
+Method-returnType:User
+Method-parameters:[User user]
+MethodInvocation:deleteUser
+Method-name:addGroup
+Method-returnType:Group
+Method-parameters:[Group group]
+MethodInvocation:addGroup
+Method-name:updateGroup
+Method-returnType:Group
+Method-parameters:[Group group]
+MethodInvocation:updateGroup
+Method-name:deleteGroup
+Method-returnType:Group
+Method-parameters:[Group group]
+MethodInvocation:deleteGroup
+Method-name:getUsers
+Method-returnType:Set<User>
+Method-parameters:[]
+MethodInvocation:getUsers
+Method-name:getUser
+Method-returnType:User
+Method-parameters:[String identifier]
+MethodInvocation:getUser
+Method-name:getUserByIdentity
+Method-returnType:User
+Method-parameters:[String identity]
+MethodInvocation:getUserByIdentity
+Method-name:getGroups
+Method-returnType:Set<Group>
+Method-parameters:[]
+MethodInvocation:getGroups
+Method-name:getGroup
+Method-returnType:Group
+Method-parameters:[String identifier]
+MethodInvocation:getGroup
+Method-name:getUserAndGroups
+Method-returnType:UserAndGroups
+Method-parameters:[String identity]
+MethodInvocation:getUsersAndAccessPolicies
+MethodInvocation:getUser
+MethodInvocation:getGroups
+Method-name:getUser
+Method-returnType:User
+Method-parameters:[]
+Method-name:getGroups
+Method-returnType:Set<Group>
+Method-parameters:[]
+Method-name:getFingerprint
+Method-returnType:String
+Method-parameters:[]
+Method-name:inheritFingerprint
+Method-returnType:void
+Method-parameters:[String fingerprint]
+Method-name:forciblyInheritFingerprint
+Method-returnType:void
+Method-parameters:[final String fingerprint]
+Method-name:checkInheritability
+Method-returnType:void
+Method-parameters:[String proposedFingerprint]
+Method-name:initialize
+Method-returnType:void
+Method-parameters:[UserGroupProviderInitializationContext initializationContext]
+Method-name:onConfigured
+Method-returnType:void
+Method-parameters:[AuthorizerConfigurationContext configurationContext]
+Method-name:preDestruction
+Method-returnType:void
+Method-parameters:[]
+Method-name:initialize
+Method-returnType:void
+Method-parameters:[AccessPolicyProviderInitializationContext initializationContext]
+Method-name:onConfigured
+Method-returnType:void
+Method-parameters:[AuthorizerConfigurationContext configurationContext]
+Method-name:preDestruction
+Method-returnType:void
+Method-parameters:[]
+Method-name:getFingerprint
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSortedUsers
+MethodInvocation:getSortedGroups
+MethodInvocation:getSortedAccessPolicies
+MethodInvocation:createXMLStreamWriter
+MethodInvocation:writeStartDocument
+MethodInvocation:writeStartElement
+MethodInvocation:writeUser
+MethodInvocation:writeGroup
+MethodInvocation:writePolicy
+MethodInvocation:writeEndElement
+MethodInvocation:writeEndDocument
+MethodInvocation:flush
+MethodInvocation:close
+MethodInvocation:toString
+Method-name:writeUser
+Method-returnType:void
+Method-parameters:[final XMLStreamWriter writer, final User user]
+MethodInvocation:writeStartElement
+MethodInvocation:writeAttribute
+MethodInvocation:getIdentifier
+MethodInvocation:writeAttribute
+MethodInvocation:getIdentity
+MethodInvocation:writeEndElement
+Method-name:writeGroup
+Method-returnType:void
+Method-parameters:[final XMLStreamWriter writer, final Group group]
+MethodInvocation:getUsers
+MethodInvocation:sort
+MethodInvocation:writeStartElement
+MethodInvocation:writeAttribute
+MethodInvocation:getIdentifier
+MethodInvocation:writeAttribute
+MethodInvocation:getName
+MethodInvocation:writeStartElement
+MethodInvocation:writeAttribute
+MethodInvocation:writeEndElement
+MethodInvocation:writeEndElement
+Method-name:writePolicy
+Method-returnType:void
+Method-parameters:[final XMLStreamWriter writer, final AccessPolicy policy]
+MethodInvocation:getUsers
+MethodInvocation:sort
+MethodInvocation:getGroups
+MethodInvocation:sort
+MethodInvocation:writeStartElement
+MethodInvocation:writeAttribute
+MethodInvocation:getIdentifier
+MethodInvocation:writeAttribute
+MethodInvocation:getResource
+MethodInvocation:writeAttribute
+MethodInvocation:name
+MethodInvocation:getAction
+MethodInvocation:writeStartElement
+MethodInvocation:writeAttribute
+MethodInvocation:writeEndElement
+MethodInvocation:writeStartElement
+MethodInvocation:writeAttribute
+MethodInvocation:writeEndElement
+MethodInvocation:writeEndElement
+Method-name:getSortedAccessPolicies
+Method-returnType:List<AccessPolicy>
+Method-parameters:[]
+MethodInvocation:getAccessPolicies
+MethodInvocation:sort
+MethodInvocation:comparing
+Method-name:getSortedGroups
+Method-returnType:List<Group>
+Method-parameters:[]
+MethodInvocation:getGroups
+MethodInvocation:sort
+MethodInvocation:comparing
+Method-name:getSortedUsers
+Method-returnType:List<User>
+Method-parameters:[]
+MethodInvocation:getUsers
+MethodInvocation:sort
+MethodInvocation:comparing
+Class:PoliciesUsersAndGroups
+Field:accessPolicies
+Field:users
+Field:groups
+Method-name:PoliciesUsersAndGroups
+Method-returnType:null
+Method-parameters:[List<AccessPolicy> accessPolicies, List<User> users, List<Group> groups]
+FieldAccess:accessPolicies
+FieldAccess:users
+FieldAccess:groups
+Method-name:getAccessPolicies
+Method-returnType:List<AccessPolicy>
+Method-parameters:[]
+Method-name:getUsers
+Method-returnType:List<User>
+Method-parameters:[]
+Method-name:getGroups
+Method-returnType:List<Group>
+Method-parameters:[]

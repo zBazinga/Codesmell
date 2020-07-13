@@ -1,0 +1,330 @@
+Class:QB
+Field:LOG
+MethodInvocation:getLogger
+Field:numJoins
+Field:numGbys
+Field:numSels
+Field:numSelDi
+Field:aliasToTabs
+Field:aliasToSubq
+Field:viewAliasToViewSchema
+Field:aliasToProps
+Field:aliases
+Field:qbp
+Field:qbm
+Field:qbjoin
+Field:id
+Field:isQuery
+Field:isAnalyzeRewrite
+Field:tblDesc
+Field:directoryDesc
+Field:insideView
+Field:aliasInsideView
+Field:viewDesc
+Field:ptfNodeToSpec
+Field:destToWindowingSpec
+Field:subQueryPredicateDef
+Field:numSubQueryPredicates
+Field:whereClauseSubQueryPredicate
+Field:havingClauseSubQueryPredicate
+Method-name:print
+Method-returnType:void
+Method-parameters:[String msg]
+MethodInvocation:info
+MethodInvocation:getAlias
+MethodInvocation:getSubqAliases
+MethodInvocation:getSubqForAlias
+MethodInvocation:info
+MethodInvocation:print
+MethodInvocation:info
+Method-name:QB
+Method-returnType:null
+Method-parameters:[]
+Method-name:QB
+Method-returnType:null
+Method-parameters:[String outer_id, String alias, boolean isSubQ]
+MethodInvocation:toLowerCase
+MethodInvocation:getAppendedAliasFromId
+Method-name:getAppendedAliasFromId
+Method-returnType:String
+Method-parameters:[String outer_id, String alias]
+Method-name:getAlias
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getAlias
+Method-name:getParseInfo
+Method-returnType:QBParseInfo
+Method-parameters:[]
+Method-name:getMetaData
+Method-returnType:QBMetaData
+Method-parameters:[]
+Method-name:setQBParseInfo
+Method-returnType:void
+Method-parameters:[QBParseInfo qbp]
+FieldAccess:qbp
+Method-name:countSelDi
+Method-returnType:void
+Method-parameters:[]
+Method-name:countSel
+Method-returnType:void
+Method-parameters:[]
+Method-name:exists
+Method-returnType:boolean
+Method-parameters:[String alias]
+MethodInvocation:toLowerCase
+MethodInvocation:get
+MethodInvocation:get
+Method-name:setTabAlias
+Method-returnType:void
+Method-parameters:[String alias, String tabName]
+MethodInvocation:put
+MethodInvocation:toLowerCase
+Method-name:setSubqAlias
+Method-returnType:void
+Method-parameters:[String alias, QBExpr qbexpr]
+MethodInvocation:put
+MethodInvocation:toLowerCase
+Method-name:setTabProps
+Method-returnType:void
+Method-parameters:[String alias, Map<String,String> props]
+MethodInvocation:put
+MethodInvocation:toLowerCase
+Method-name:addAlias
+Method-returnType:void
+Method-parameters:[String alias]
+MethodInvocation:contains
+MethodInvocation:toLowerCase
+MethodInvocation:add
+MethodInvocation:toLowerCase
+Method-name:getId
+Method-returnType:String
+Method-parameters:[]
+Method-name:getNumGbys
+Method-returnType:int
+Method-parameters:[]
+Method-name:getNumSelDi
+Method-returnType:int
+Method-parameters:[]
+Method-name:getNumSels
+Method-returnType:int
+Method-parameters:[]
+Method-name:getNumJoins
+Method-returnType:int
+Method-parameters:[]
+Method-name:getSubqAliases
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getTabAliases
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:keySet
+Method-name:getAliases
+Method-returnType:List<String>
+Method-parameters:[]
+Method-name:getSubqForAlias
+Method-returnType:QBExpr
+Method-parameters:[String alias]
+MethodInvocation:get
+MethodInvocation:toLowerCase
+Method-name:getTabNameForAlias
+Method-returnType:String
+Method-parameters:[String alias]
+MethodInvocation:get
+MethodInvocation:toLowerCase
+Method-name:getTabPropsForAlias
+Method-returnType:Map<String,String>
+Method-parameters:[String alias]
+MethodInvocation:get
+MethodInvocation:toLowerCase
+Method-name:rewriteViewToSubq
+Method-returnType:void
+Method-parameters:[String alias, String viewName, QBExpr qbexpr, Table tab]
+MethodInvocation:toLowerCase
+MethodInvocation:remove
+MethodInvocation:assert
+MethodInvocation:equals
+MethodInvocation:put
+MethodInvocation:put
+Method-name:rewriteCTEToSubq
+Method-returnType:void
+Method-parameters:[String alias, String cteName, QBExpr qbexpr]
+MethodInvocation:rewriteViewToSubq
+Method-name:getQbJoinTree
+Method-returnType:QBJoinTree
+Method-parameters:[]
+Method-name:setQbJoinTree
+Method-returnType:void
+Method-parameters:[QBJoinTree qbjoin]
+FieldAccess:qbjoin
+Method-name:setIsQuery
+Method-returnType:void
+Method-parameters:[boolean isQuery]
+FieldAccess:isQuery
+Method-name:getIsQuery
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:isTopLevelSelectStarQuery
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isCTAS
+MethodInvocation:isTopLevelSimpleSelectStarQuery
+Method-name:isSimpleSelectQuery
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isSimpleSelectQuery
+MethodInvocation:isCTAS
+MethodInvocation:isAnalyzeCommand
+MethodInvocation:values
+MethodInvocation:isSimpleSelectQuery
+Method-name:hasTableSample
+Method-returnType:boolean
+Method-parameters:[String alias]
+MethodInvocation:getTabSample
+Method-name:getTableDesc
+Method-returnType:CreateTableDesc
+Method-parameters:[]
+Method-name:setTableDesc
+Method-returnType:void
+Method-parameters:[CreateTableDesc desc]
+Method-name:getDirectoryDesc
+Method-returnType:CreateTableDesc
+Method-parameters:[]
+Method-name:setDirectoryDesc
+Method-returnType:void
+Method-parameters:[CreateTableDesc directoryDesc]
+FieldAccess:directoryDesc
+Method-name:isCTAS
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getSkewedColumnNames
+Method-returnType:List<String>
+Method-parameters:[String alias]
+MethodInvocation:getAliasToTable
+MethodInvocation:size
+MethodInvocation:getAliasToTable
+MethodInvocation:getTableForAlias
+MethodInvocation:getMetaData
+MethodInvocation:getSkewedColNames
+Method-name:isAnalyzeRewrite
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setAnalyzeRewrite
+Method-returnType:void
+Method-parameters:[boolean isAnalyzeRewrite]
+FieldAccess:isAnalyzeRewrite
+Method-name:getPTFInvocationSpec
+Method-returnType:PTFInvocationSpec
+Method-parameters:[ASTNode node]
+MethodInvocation:get
+Method-name:addPTFNodeToSpec
+Method-returnType:void
+Method-parameters:[ASTNode node, PTFInvocationSpec spec]
+MethodInvocation:put
+Method-name:getPTFNodeToSpec
+Method-returnType:HashMap<ASTNode,PTFInvocationSpec>
+Method-parameters:[]
+Method-name:getWindowingSpec
+Method-returnType:WindowingSpec
+Method-parameters:[String dest]
+MethodInvocation:get
+Method-name:addDestToWindowingSpec
+Method-returnType:void
+Method-parameters:[String dest, WindowingSpec windowingSpec]
+MethodInvocation:put
+Method-name:hasWindowingSpec
+Method-returnType:boolean
+Method-parameters:[String dest]
+MethodInvocation:get
+Method-name:getAllWindowingSpecs
+Method-returnType:HashMap<String,WindowingSpec>
+Method-parameters:[]
+Method-name:setSubQueryDef
+Method-returnType:void
+Method-parameters:[QBSubQuery subQueryPredicateDef]
+FieldAccess:subQueryPredicateDef
+Method-name:getSubQueryPredicateDef
+Method-returnType:QBSubQuery
+Method-parameters:[]
+Method-name:getNumSubQueryPredicates
+Method-returnType:int
+Method-parameters:[]
+Method-name:incrNumSubQueryPredicates
+Method-returnType:int
+Method-parameters:[]
+Method-name:setWhereClauseSubQueryPredicate
+Method-returnType:void
+Method-parameters:[QBSubQuery sq]
+Method-name:getWhereClauseSubQueryPredicate
+Method-returnType:QBSubQuery
+Method-parameters:[]
+Method-name:setHavingClauseSubQueryPredicate
+Method-returnType:void
+Method-parameters:[QBSubQuery sq]
+Method-name:getHavingClauseSubQueryPredicate
+Method-returnType:QBSubQuery
+Method-parameters:[]
+Method-name:getViewDesc
+Method-returnType:CreateViewDesc
+Method-parameters:[]
+Method-name:setViewDesc
+Method-returnType:void
+Method-parameters:[CreateViewDesc viewDesc]
+FieldAccess:viewDesc
+Method-name:isMaterializedView
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isMaterialized
+Method-name:isView
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isMaterialized
+Method-name:isMultiDestQuery
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:getClauseNamesForDest
+MethodInvocation:size
+MethodInvocation:getClauseNamesForDest
+Method-name:getViewToTabSchema
+Method-returnType:HashMap<String,Table>
+Method-parameters:[]
+Method-name:isInsideView
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setInsideView
+Method-returnType:void
+Method-parameters:[boolean insideView]
+FieldAccess:insideView
+Method-name:getAliasInsideView
+Method-returnType:Set<String>
+Method-parameters:[]
+Method-name:containsQueryWithoutSourceTable
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:containsQueryWithoutSourceTable
+MethodInvocation:size
+MethodInvocation:size
+Method-name:hasTableDefined
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:size
+MethodInvocation:equals
+MethodInvocation:get
+Method-name:genRowResolver
+Method-returnType:RowResolver
+Method-parameters:[Operator op, CalcitePlanner calcitePlanner]
+MethodInvocation:size
+MethodInvocation:getAliases
+MethodInvocation:size
+MethodInvocation:getSubqAliases
+MethodInvocation:get
+MethodInvocation:getAliases
+MethodInvocation:getSignature
+MethodInvocation:getSchema
+MethodInvocation:putWithCheck
+MethodInvocation:getTabAlias
+MethodInvocation:getAlias
+MethodInvocation:getAlias
+MethodInvocation:getInternalName
+MethodInvocation:getInternalName

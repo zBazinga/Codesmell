@@ -1,0 +1,1242 @@
+Class:Messenger
+Field:DUMB
+Field:modules
+Method-name:Messenger
+Method-returnType:null
+Method-parameters:[@NotNull Configuration configuration]
+MethodInvocation:setTraceInterface
+MethodInvocation:system
+MethodInvocation:addDispatcher
+MethodInvocation:system
+MethodInvocation:addDispatcher
+MethodInvocation:system
+FieldAccess:modules
+MethodInvocation:run
+FieldAccess:modules
+Method-name:getAuthState
+Method-returnType:AuthState
+Method-parameters:[]
+MethodInvocation:getAuthState
+MethodInvocation:getAuthModule
+Method-name:isLoggedIn
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isLoggedIn
+MethodInvocation:getAuthModule
+Method-name:doStartEmailAuth
+Method-returnType:Promise<AuthStartRes>
+Method-parameters:[String email]
+MethodInvocation:doStartEmailAuth
+MethodInvocation:getAuthModule
+Method-name:doStartPhoneAuth
+Method-returnType:Promise<AuthStartRes>
+Method-parameters:[long phone]
+MethodInvocation:doStartPhoneAuth
+MethodInvocation:getAuthModule
+Method-name:doValidateCode
+Method-returnType:Promise<AuthCodeRes>
+Method-parameters:[String code, String transactionHash]
+MethodInvocation:doValidateCode
+MethodInvocation:getAuthModule
+Method-name:doSendCodeViaCall
+Method-returnType:Promise<Boolean>
+Method-parameters:[String transactionHash]
+MethodInvocation:doSendCall
+MethodInvocation:getAuthModule
+Method-name:doSignup
+Method-returnType:Promise<AuthRes>
+Method-parameters:[String name, Sex sex, String transactionHash]
+MethodInvocation:doSignup
+MethodInvocation:getAuthModule
+Method-name:doCompleteAuth
+Method-returnType:Promise<Boolean>
+Method-parameters:[AuthRes authRes]
+MethodInvocation:doCompleteAuth
+MethodInvocation:getAuthModule
+Method-name:changeEndpoint
+Method-returnType:void
+Method-parameters:[String endpoint]
+MethodInvocation:isEmpty
+MethodInvocation:changeEndpoint
+MethodInvocation:getApiModule
+MethodInvocation:resetToDefaultEndpoints
+MethodInvocation:getApiModule
+Method-name:requestStartEmailAuth
+Method-returnType:Command<AuthState>
+Method-parameters:[final String email]
+MethodInvocation:requestStartEmailAuth
+MethodInvocation:getAuthModule
+Method-name:requestStartPhoneAuth
+Method-returnType:Command<AuthState>
+Method-parameters:[final long phone]
+MethodInvocation:requestStartPhoneAuth
+MethodInvocation:getAuthModule
+Method-name:requestStartAnonymousAuth
+Method-returnType:Command<AuthState>
+Method-parameters:[String userName]
+MethodInvocation:requestStartAnonymousAuth
+MethodInvocation:getAuthModule
+Method-name:requestStartUserNameAuth
+Method-returnType:Command<AuthState>
+Method-parameters:[String userName]
+MethodInvocation:requestStartUserNameAuth
+MethodInvocation:getAuthModule
+Method-name:requestGetOAuthParams
+Method-returnType:Command<AuthState>
+Method-parameters:[]
+MethodInvocation:requestGetOAuth2Params
+MethodInvocation:getAuthModule
+Method-name:requestCompleteOAuth
+Method-returnType:Command<AuthState>
+Method-parameters:[String code]
+MethodInvocation:requestCompleteOauth
+MethodInvocation:getAuthModule
+Method-name:requestPhoneCall
+Method-returnType:Command<Boolean>
+Method-parameters:[]
+MethodInvocation:requestCallActivation
+MethodInvocation:getAuthModule
+Method-name:validateCode
+Method-returnType:Command<AuthState>
+Method-parameters:[final String code]
+MethodInvocation:requestValidateCode
+MethodInvocation:getAuthModule
+Method-name:validatePassword
+Method-returnType:Command<AuthState>
+Method-parameters:[String password]
+MethodInvocation:requestValidatePassword
+MethodInvocation:getAuthModule
+Method-name:signUp
+Method-returnType:Command<AuthState>
+Method-parameters:[String name, Sex sex, String avatarPath]
+MethodInvocation:signUp
+MethodInvocation:getAuthModule
+Method-name:getAuthPhone
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:getPhone
+MethodInvocation:getAuthModule
+Method-name:getAuthEmail
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getEmail
+MethodInvocation:getAuthModule
+Method-name:resetAuth
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:resetAuth
+MethodInvocation:getAuthModule
+Method-name:onLoggedIn
+Method-returnType:void
+Method-parameters:[]
+Method-name:getAppState
+Method-returnType:AppStateVM
+Method-parameters:[]
+MethodInvocation:getAppStateVM
+MethodInvocation:getConductor
+Method-name:getGlobalState
+Method-returnType:GlobalStateVM
+Method-parameters:[]
+MethodInvocation:getGlobalStateVM
+MethodInvocation:getConductor
+Method-name:myUid
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:myUid
+MethodInvocation:getAuthModule
+Method-name:getUsers
+Method-returnType:MVVMCollection<User,UserVM>
+Method-parameters:[]
+MethodInvocation:getUsersModule
+MethodInvocation:getUsers
+MethodInvocation:getUsersModule
+Method-name:getUser
+Method-returnType:UserVM
+Method-parameters:[int uid]
+MethodInvocation:get
+MethodInvocation:getUsers
+Method-name:getGroups
+Method-returnType:MVVMCollection<Group,GroupVM>
+Method-parameters:[]
+MethodInvocation:getGroupsModule
+MethodInvocation:getGroupsCollection
+MethodInvocation:getGroupsModule
+Method-name:getGroup
+Method-returnType:GroupVM
+Method-parameters:[int gid]
+MethodInvocation:get
+MethodInvocation:getGroups
+Method-name:getDialogGroupsVM
+Method-returnType:DialogGroupsVM
+Method-parameters:[]
+MethodInvocation:getDialogGroupsVM
+MethodInvocation:getMessagesModule
+Method-name:getTyping
+Method-returnType:ValueModel<Boolean>
+Method-parameters:[int uid]
+MethodInvocation:getTyping
+MethodInvocation:getTyping
+MethodInvocation:getTypingModule
+Method-name:getGroupTyping
+Method-returnType:ValueModel<int[]>
+Method-parameters:[int gid]
+MethodInvocation:getActive
+MethodInvocation:getGroupTyping
+MethodInvocation:getTypingModule
+Method-name:getOwnAvatarVM
+Method-returnType:OwnAvatarVM
+Method-parameters:[]
+MethodInvocation:getOwnAvatarVM
+MethodInvocation:getProfileModule
+Method-name:getGroupAvatarVM
+Method-returnType:GroupAvatarVM
+Method-parameters:[int gid]
+MethodInvocation:getAvatarVM
+MethodInvocation:getGroupsModule
+Method-name:onAppVisible
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:postSticky
+MethodInvocation:getEvents
+Method-name:onAppHidden
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:postSticky
+MethodInvocation:getEvents
+Method-name:onDialogsOpen
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:post
+MethodInvocation:getEvents
+Method-name:onDialogsClosed
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:post
+MethodInvocation:getEvents
+Method-name:onConversationOpen
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer]
+MethodInvocation:post
+MethodInvocation:getEvents
+Method-name:onConversationPreLoad
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer]
+MethodInvocation:post
+MethodInvocation:getEvents
+Method-name:onConversationClosed
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer]
+MethodInvocation:post
+MethodInvocation:getEvents
+Method-name:onProfileOpen
+Method-returnType:void
+Method-parameters:[int uid]
+MethodInvocation:post
+MethodInvocation:getEvents
+MethodInvocation:user
+Method-name:onUserVisible
+Method-returnType:void
+Method-parameters:[int uid]
+MethodInvocation:post
+MethodInvocation:getEvents
+Method-name:onProfileClosed
+Method-returnType:void
+Method-parameters:[int uid]
+MethodInvocation:post
+MethodInvocation:getEvents
+MethodInvocation:user
+Method-name:onTyping
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer]
+MethodInvocation:onTyping
+MethodInvocation:getTypingModule
+Method-name:onPhoneBookChanged
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getContactsModule
+MethodInvocation:onPhoneBookChanged
+MethodInvocation:getContactsModule
+Method-name:onNetworkChanged
+Method-returnType:void
+Method-parameters:[@NotNull NetworkState state]
+MethodInvocation:onNetworkChanged
+MethodInvocation:getActorApi
+Method-name:onPushReceived
+Method-returnType:void
+Method-parameters:[int seq, long authId]
+MethodInvocation:getUpdatesModule
+MethodInvocation:onPushReceived
+MethodInvocation:getUpdatesModule
+Method-name:getConversationVM
+Method-returnType:ConversationVM
+Method-parameters:[Peer peer]
+MethodInvocation:getConversationVM
+MethodInvocation:getMessagesModule
+Method-name:getAvailableStickersVM
+Method-returnType:StickersVM
+Method-parameters:[]
+MethodInvocation:getStickersVM
+MethodInvocation:getStickersModule
+Method-name:sendMessage
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer, @NotNull String text, @Nullable String markDownText, @Nullable ArrayList<Integer> mentions, boolean autoDetect]
+MethodInvocation:sendMessage
+MethodInvocation:getMessagesModule
+Method-name:updateMessage
+Method-returnType:Promise<Void>
+Method-parameters:[@NotNull Peer peer, @NotNull String text, long rid]
+MethodInvocation:updateMessage
+MethodInvocation:getMessagesModule
+Method-name:sendContact
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer, @NotNull String name, @NotNull ArrayList<String> phones, @NotNull ArrayList<String> emails, @Nullable String base64photo]
+MethodInvocation:sendContact
+MethodInvocation:getMessagesModule
+Method-name:sendMessage
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer, @NotNull String text, @Nullable String markDownText, @Nullable ArrayList<Integer> mentions]
+MethodInvocation:sendMessage
+MethodInvocation:getMessagesModule
+Method-name:sendMessage
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer, @NotNull String text, @Nullable String markDownText]
+MethodInvocation:sendMessage
+Method-name:sendMessage
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer, @NotNull String text, @Nullable ArrayList<Integer> mentions]
+MethodInvocation:sendMessage
+Method-name:sendMessage
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer, @NotNull String text]
+MethodInvocation:sendMessage
+Method-name:sendMessageWithMentionsDetect
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer, @NotNull String text]
+MethodInvocation:sendMessage
+Method-name:sendMessageWithMentionsDetect
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer, @NotNull String text, @NotNull String markdownText]
+MethodInvocation:sendMessage
+Method-name:sendPhoto
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer, @NotNull String fileName, int w, int h, @Nullable FastThumb fastThumb, @NotNull String descriptor]
+MethodInvocation:sendPhoto
+MethodInvocation:getMessagesModule
+Method-name:sendAnimation
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer, @NotNull String fileName, int w, int h, @Nullable FastThumb fastThumb, @NotNull String descriptor]
+MethodInvocation:sendAnimation
+MethodInvocation:getMessagesModule
+Method-name:sendVideo
+Method-returnType:void
+Method-parameters:[Peer peer, String fileName, int w, int h, int duration, FastThumb fastThumb, String descriptor]
+MethodInvocation:sendVideo
+MethodInvocation:getMessagesModule
+Method-name:sendAudio
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer, @NotNull String fileName, int duration, @NotNull String descriptor]
+MethodInvocation:sendAudio
+MethodInvocation:getMessagesModule
+Method-name:sendLocation
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer, @NotNull Double longitude, @NotNull Double latitude, @Nullable String street, @Nullable String place]
+MethodInvocation:sendLocation
+MethodInvocation:getMessagesModule
+Method-name:sendCustomJsonMessage
+Method-returnType:void
+Method-parameters:[@NotNull Peer peer, @NotNull JsonContent content]
+MethodInvocation:sendJson
+MethodInvocation:getMessagesModule
+Method-name:sendDocument
+Method-returnType:void
+Method-parameters:[Peer peer, String fileName, String mimeType, String descriptor]
+MethodInvocation:sendDocument
+Method-name:sendDocument
+Method-returnType:void
+Method-parameters:[Peer peer, String fileName, String mimeType, FastThumb fastThumb, String descriptor]
+MethodInvocation:sendDocument
+MethodInvocation:getMessagesModule
+Method-name:forwardContent
+Method-returnType:void
+Method-parameters:[Peer peer, AbsContent content]
+MethodInvocation:forwardContent
+MethodInvocation:getMessagesModule
+Method-name:deleteMessages
+Method-returnType:void
+Method-parameters:[Peer peer, long[] rids]
+MethodInvocation:deleteMessages
+MethodInvocation:getMessagesModule
+Method-name:deleteChat
+Method-returnType:Command<Void>
+Method-parameters:[Peer peer]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:deleteChat
+MethodInvocation:getMessagesModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:sendSticker
+Method-returnType:void
+Method-parameters:[Peer peer, Sticker sticker]
+MethodInvocation:sendSticker
+MethodInvocation:getMessagesModule
+Method-name:clearChat
+Method-returnType:Command<Void>
+Method-parameters:[Peer peer]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:clearChat
+MethodInvocation:getMessagesModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:archiveChat
+Method-returnType:Command<Void>
+Method-parameters:[Peer peer]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:archiveChat
+MethodInvocation:getMessagesModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:favouriteChat
+Method-returnType:Command<Void>
+Method-parameters:[Peer peer]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:favoriteChat
+MethodInvocation:getMessagesModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:unfavoriteChat
+Method-returnType:Command<Void>
+Method-parameters:[Peer peer]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:unfavoriteChat
+MethodInvocation:getMessagesModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:addReaction
+Method-returnType:Command<Void>
+Method-parameters:[Peer peer, long rid, String code]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:addReaction
+MethodInvocation:getMessagesModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:removeReaction
+Method-returnType:Command<Void>
+Method-parameters:[Peer peer, long rid, String code]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:removeReaction
+MethodInvocation:getMessagesModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:saveDraft
+Method-returnType:void
+Method-parameters:[Peer peer, String draft]
+MethodInvocation:saveDraft
+MethodInvocation:getMessagesModule
+Method-name:loadDraft
+Method-returnType:String
+Method-parameters:[Peer peer]
+MethodInvocation:loadDraft
+MethodInvocation:getMessagesModule
+Method-name:loadLastMessageDate
+Method-returnType:long
+Method-parameters:[Peer peer]
+MethodInvocation:getLastReadMessageDate
+MethodInvocation:getConversationVM
+Method-name:findPublicGroupById
+Method-returnType:Promise<Peer>
+Method-parameters:[int gid]
+MethodInvocation:findPublicGroupById
+MethodInvocation:getSearchModule
+Method-name:findMentions
+Method-returnType:List<MentionFilterResult>
+Method-parameters:[int gid, String query]
+MethodInvocation:findMentions
+MethodInvocation:getMentions
+Method-name:findPeers
+Method-returnType:Command<List<PeerSearchEntity>>
+Method-parameters:[PeerSearchType type]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:findPeers
+MethodInvocation:getSearchModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:findPeers
+Method-returnType:Command<List<PeerSearchEntity>>
+Method-parameters:[String query]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:findPeers
+MethodInvocation:getSearchModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:findTextMessages
+Method-returnType:Command<List<MessageSearchEntity>>
+Method-parameters:[Peer peer, String query]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:findTextMessages
+MethodInvocation:getSearchModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:findAllDocs
+Method-returnType:Command<List<MessageSearchEntity>>
+Method-parameters:[Peer peer]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:findAllDocs
+MethodInvocation:getSearchModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:findAllLinks
+Method-returnType:Command<List<MessageSearchEntity>>
+Method-parameters:[Peer peer]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:findAllLinks
+MethodInvocation:getSearchModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:findAllPhotos
+Method-returnType:Command<List<MessageSearchEntity>>
+Method-parameters:[Peer peer]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:findAllPhotos
+MethodInvocation:getSearchModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:buildGlobalSearchModel
+Method-returnType:SearchValueModel<SearchResult>
+Method-parameters:[]
+MethodInvocation:buildSearchModel
+MethodInvocation:getSearchModule
+Method-name:doCall
+Method-returnType:Command<Long>
+Method-parameters:[int uid]
+MethodInvocation:makeCall
+MethodInvocation:user
+MethodInvocation:getCallsModule
+Method-name:doVideoCall
+Method-returnType:Command<Long>
+Method-parameters:[int uid]
+MethodInvocation:makeCall
+MethodInvocation:user
+MethodInvocation:getCallsModule
+Method-name:doGroupCall
+Method-returnType:Command<Long>
+Method-parameters:[int gid]
+MethodInvocation:makeCall
+MethodInvocation:group
+MethodInvocation:getCallsModule
+Method-name:endCall
+Method-returnType:void
+Method-parameters:[long callId]
+MethodInvocation:endCall
+MethodInvocation:getCallsModule
+Method-name:toggleCallMute
+Method-returnType:void
+Method-parameters:[long callId]
+MethodInvocation:get
+MethodInvocation:getIsAudioEnabled
+MethodInvocation:getCall
+MethodInvocation:getCallsModule
+MethodInvocation:muteCall
+MethodInvocation:getCallsModule
+MethodInvocation:unmuteCall
+MethodInvocation:getCallsModule
+Method-name:toggleVideoEnabled
+Method-returnType:void
+Method-parameters:[long callId]
+MethodInvocation:get
+MethodInvocation:getIsVideoEnabled
+MethodInvocation:getCall
+MethodInvocation:getCallsModule
+MethodInvocation:disableVideo
+MethodInvocation:getCallsModule
+MethodInvocation:enableVideo
+MethodInvocation:getCallsModule
+Method-name:answerCall
+Method-returnType:void
+Method-parameters:[long callId]
+MethodInvocation:answerCall
+MethodInvocation:getCallsModule
+Method-name:getCall
+Method-returnType:CallVM
+Method-parameters:[long callId]
+MethodInvocation:getCall
+MethodInvocation:getCallsModule
+Method-name:probablyEndCall
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:getCallsModule
+MethodInvocation:probablyEndCall
+MethodInvocation:getCallsModule
+Method-name:checkCall
+Method-returnType:void
+Method-parameters:[long callId, int attempt]
+MethodInvocation:getCallsModule
+MethodInvocation:checkCall
+MethodInvocation:getCallsModule
+Method-name:editMyName
+Method-returnType:Command<Boolean>
+Method-parameters:[final String newName]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:editMyName
+MethodInvocation:getUsersModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:editMyNick
+Method-returnType:Command<Boolean>
+Method-parameters:[final String newNick]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:editNick
+MethodInvocation:getUsersModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:editMyAbout
+Method-returnType:Command<Boolean>
+Method-parameters:[final String newAbout]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:editAbout
+MethodInvocation:getUsersModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:changeMyAvatar
+Method-returnType:void
+Method-parameters:[String descriptor]
+MethodInvocation:changeAvatar
+MethodInvocation:getProfileModule
+Method-name:removeMyAvatar
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:removeAvatar
+MethodInvocation:getProfileModule
+Method-name:editName
+Method-returnType:Command<Boolean>
+Method-parameters:[final int uid, final String name]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:editName
+MethodInvocation:getUsersModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:editGroupTitle
+Method-returnType:Promise<Void>
+Method-parameters:[final int gid, final String title]
+MethodInvocation:editTitle
+MethodInvocation:getGroupsModule
+Method-name:editGroupTheme
+Method-returnType:Command<Void>
+Method-parameters:[final int gid, final String theme]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:editTheme
+MethodInvocation:getGroupsModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:editGroupAbout
+Method-returnType:Promise<Void>
+Method-parameters:[int gid, String about]
+MethodInvocation:editAbout
+MethodInvocation:getGroupsModule
+Method-name:editGroupShortName
+Method-returnType:Promise<Void>
+Method-parameters:[int gid, String shortName]
+MethodInvocation:editShortName
+MethodInvocation:getGroupsModule
+Method-name:loadGroupPermissions
+Method-returnType:Promise<GroupPermissions>
+Method-parameters:[int gid]
+MethodInvocation:loadAdminSettings
+MethodInvocation:getGroupsModule
+Method-name:saveGroupPermissions
+Method-returnType:Promise<Void>
+Method-parameters:[int gid, GroupPermissions adminSettings]
+MethodInvocation:saveAdminSettings
+MethodInvocation:getGroupsModule
+Method-name:changeGroupAvatar
+Method-returnType:void
+Method-parameters:[int gid, String descriptor]
+MethodInvocation:changeAvatar
+MethodInvocation:getGroupsModule
+Method-name:removeGroupAvatar
+Method-returnType:void
+Method-parameters:[int gid]
+MethodInvocation:removeAvatar
+MethodInvocation:getGroupsModule
+Method-name:createGroup
+Method-returnType:Promise<Integer>
+Method-parameters:[String title, String avatarDescriptor, int[] uids]
+MethodInvocation:createGroup
+MethodInvocation:getGroupsModule
+Method-name:createChannel
+Method-returnType:Promise<Integer>
+Method-parameters:[String title, String avatarDescriptor]
+MethodInvocation:createChannel
+MethodInvocation:getGroupsModule
+Method-name:leaveGroup
+Method-returnType:Promise<Void>
+Method-parameters:[final int gid]
+MethodInvocation:leaveGroup
+MethodInvocation:getGroupsModule
+Method-name:leaveAndDeleteGroup
+Method-returnType:Promise<Void>
+Method-parameters:[int gid]
+MethodInvocation:leaveAndDeleteGroup
+MethodInvocation:getGroupsModule
+Method-name:deleteGroup
+Method-returnType:Promise<Void>
+Method-parameters:[int gid]
+MethodInvocation:deleteGroup
+MethodInvocation:getGroupsModule
+Method-name:shareHistory
+Method-returnType:Promise<Void>
+Method-parameters:[int gid]
+MethodInvocation:shareHistory
+MethodInvocation:getGroupsModule
+Method-name:inviteMember
+Method-returnType:Command<Void>
+Method-parameters:[int gid, int uid]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:addMember
+MethodInvocation:getGroupsModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:inviteMemberPromise
+Method-returnType:Promise<Void>
+Method-parameters:[int gid, int uid]
+MethodInvocation:addMember
+MethodInvocation:getGroupsModule
+Method-name:kickMember
+Method-returnType:Command<Void>
+Method-parameters:[int gid, int uid]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:kickMember
+MethodInvocation:getGroupsModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:loadMembers
+Method-returnType:Promise<GroupMembersSlice>
+Method-parameters:[int gid, int limit, byte[] next]
+MethodInvocation:loadMembers
+MethodInvocation:getGroupsModule
+Method-name:makeAdmin
+Method-returnType:Command<Void>
+Method-parameters:[final int gid, final int uid]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:makeAdmin
+MethodInvocation:getGroupsModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:revokeAdmin
+Method-returnType:Command<Void>
+Method-parameters:[final int gid, final int uid]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:revokeAdmin
+MethodInvocation:getGroupsModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:transferOwnership
+Method-returnType:Promise<Void>
+Method-parameters:[int gid, int uid]
+MethodInvocation:transferOwnership
+MethodInvocation:getGroupsModule
+Method-name:requestInviteLink
+Method-returnType:Command<String>
+Method-parameters:[int gid]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:requestInviteLink
+MethodInvocation:getGroupsModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:revokeInviteLink
+Method-returnType:Command<String>
+Method-parameters:[int gid]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:requestRevokeLink
+MethodInvocation:getGroupsModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:joinGroupViaToken
+Method-returnType:Command<Integer>
+Method-parameters:[String token]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:joinGroupByToken
+MethodInvocation:getGroupsModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:joinGroup
+Method-returnType:Promise<Void>
+Method-parameters:[int gid]
+MethodInvocation:joinGroup
+MethodInvocation:getGroupsModule
+Method-name:requestIntegrationToken
+Method-returnType:Command<String>
+Method-parameters:[int gid]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:requestIntegrationToken
+MethodInvocation:getGroupsModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:revokeIntegrationToken
+Method-returnType:Command<String>
+Method-parameters:[int gid]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:revokeIntegrationToken
+MethodInvocation:getGroupsModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:isStarted
+Method-returnType:Promise<Boolean>
+Method-parameters:[int uid]
+MethodInvocation:chatIsEmpty
+MethodInvocation:getMessagesModule
+MethodInvocation:user
+Method-name:loadBlockedUsers
+Method-returnType:Promise<List<User>>
+Method-parameters:[]
+MethodInvocation:loadBlockedUsers
+MethodInvocation:getUsersModule
+Method-name:blockUser
+Method-returnType:Promise<Void>
+Method-parameters:[int uid]
+MethodInvocation:blockUser
+MethodInvocation:getUsersModule
+Method-name:unblockUser
+Method-returnType:Promise<Void>
+Method-parameters:[int uid]
+MethodInvocation:unblockUser
+MethodInvocation:getUsersModule
+Method-name:removeContact
+Method-returnType:Command<Boolean>
+Method-parameters:[int uid]
+MethodInvocation:removeContact
+MethodInvocation:getContactsModule
+Method-name:addContact
+Method-returnType:Command<Boolean>
+Method-parameters:[int uid]
+MethodInvocation:addContact
+MethodInvocation:getContactsModule
+Method-name:findUsers
+Method-returnType:Command<UserVM[]>
+Method-parameters:[String query]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:findUsers
+MethodInvocation:getContactsModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:bindFile
+Method-returnType:FileVM
+Method-parameters:[FileReference fileReference, boolean isAutoStart, FileVMCallback callback]
+Method-name:bindUpload
+Method-returnType:UploadFileVM
+Method-parameters:[long rid, UploadFileVMCallback callback]
+Method-name:bindRawFile
+Method-returnType:void
+Method-parameters:[FileReference fileReference, boolean isAutoStart, FileCallback callback]
+MethodInvocation:bindFile
+MethodInvocation:getFilesModule
+Method-name:unbindRawFile
+Method-returnType:void
+Method-parameters:[long fileId, boolean isAutoCancel, FileCallback callback]
+MethodInvocation:unbindFile
+MethodInvocation:getFilesModule
+Method-name:bindRawUploadFile
+Method-returnType:void
+Method-parameters:[long rid, UploadFileCallback callback]
+MethodInvocation:bindUploadFile
+MethodInvocation:getFilesModule
+Method-name:unbindRawUploadFile
+Method-returnType:void
+Method-parameters:[long rid, UploadFileCallback callback]
+MethodInvocation:unbindUploadFile
+MethodInvocation:getFilesModule
+Method-name:requestState
+Method-returnType:void
+Method-parameters:[long fileId, final FileCallback callback]
+MethodInvocation:requestState
+MethodInvocation:getFilesModule
+Method-name:requestUploadState
+Method-returnType:void
+Method-parameters:[long rid, UploadFileCallback callback]
+MethodInvocation:requestUploadState
+MethodInvocation:getFilesModule
+Method-name:cancelDownloading
+Method-returnType:void
+Method-parameters:[long fileId]
+MethodInvocation:cancelDownloading
+MethodInvocation:getFilesModule
+Method-name:startDownloading
+Method-returnType:void
+Method-parameters:[FileReference reference]
+MethodInvocation:startDownloading
+MethodInvocation:getFilesModule
+Method-name:resumeUpload
+Method-returnType:void
+Method-parameters:[long rid]
+MethodInvocation:resumeUpload
+MethodInvocation:getFilesModule
+Method-name:pauseUpload
+Method-returnType:void
+Method-parameters:[long rid]
+MethodInvocation:pauseUpload
+MethodInvocation:getFilesModule
+Method-name:findDownloadedDescriptor
+Method-returnType:String
+Method-parameters:[long fileId]
+MethodInvocation:getDownloadedDescriptor
+MethodInvocation:getFilesModule
+Method-name:subscribeToDownloads
+Method-returnType:void
+Method-parameters:[FileEventCallback callback]
+MethodInvocation:subscribe
+MethodInvocation:getFilesModule
+Method-name:unsubscribeFromDownloads
+Method-returnType:void
+Method-parameters:[FileEventCallback callback]
+MethodInvocation:unsubscribe
+MethodInvocation:getFilesModule
+Method-name:isConversationTonesEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isConversationTonesEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeConversationTonesEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:changeConversationTonesEnabled
+MethodInvocation:getSettingsModule
+Method-name:isNotificationsEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isNotificationsEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeNotificationsEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:changeNotificationsEnabled
+MethodInvocation:getSettingsModule
+Method-name:isNotificationSoundEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isNotificationSoundEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeNotificationSoundEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:changeNotificationSoundEnabled
+MethodInvocation:getSettingsModule
+Method-name:getNotificationSound
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getNotificationSound
+MethodInvocation:getSettingsModule
+Method-name:changeNotificationSound
+Method-returnType:void
+Method-parameters:[String sound]
+MethodInvocation:changeNotificationSound
+MethodInvocation:getSettingsModule
+Method-name:isNotificationVibrationEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isVibrationEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeNotificationVibrationEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:changeNotificationVibrationEnabled
+MethodInvocation:getSettingsModule
+Method-name:isShowNotificationsText
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isShowNotificationsText
+MethodInvocation:getSettingsModule
+Method-name:changeShowNotificationTextEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:changeShowNotificationTextEnabled
+MethodInvocation:getSettingsModule
+Method-name:isSendByEnterEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isSendByEnterEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeSendByEnter
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:changeSendByEnter
+MethodInvocation:getSettingsModule
+Method-name:changeTextSize
+Method-returnType:void
+Method-parameters:[int val]
+MethodInvocation:changeTextSize
+MethodInvocation:getSettingsModule
+Method-name:getTextSize
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:getTextSize
+MethodInvocation:getSettingsModule
+Method-name:getPrivacy
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getPrivacy
+MethodInvocation:getSettingsModule
+Method-name:setPrivacy
+Method-returnType:void
+Method-parameters:[String privacy]
+MethodInvocation:setPrivacy
+MethodInvocation:getSettingsModule
+Method-name:isNotificationsEnabled
+Method-returnType:boolean
+Method-parameters:[Peer peer]
+MethodInvocation:isNotificationsEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeNotificationsEnabled
+Method-returnType:void
+Method-parameters:[Peer peer, boolean val]
+MethodInvocation:changeNotificationsEnabled
+MethodInvocation:getSettingsModule
+Method-name:getNotificationsSound
+Method-returnType:String
+Method-parameters:[Peer peer]
+MethodInvocation:getNotificationPeerSound
+MethodInvocation:getSettingsModule
+Method-name:changeNotificationsSound
+Method-returnType:void
+Method-parameters:[Peer peer, String val]
+MethodInvocation:changeNotificationPeerSound
+MethodInvocation:getSettingsModule
+Method-name:isInAppNotificationsEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isInAppEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeInAppNotificationsEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:changeInAppEnabled
+MethodInvocation:getSettingsModule
+Method-name:isInAppNotificationSoundEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isInAppSoundEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeInAppNotificationSoundEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:changeInAppSoundEnabled
+MethodInvocation:getSettingsModule
+Method-name:isInAppNotificationVibrationEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isInAppVibrationEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeInAppNotificationVibrationEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:changeInAppVibrationEnabled
+MethodInvocation:getSettingsModule
+Method-name:isGroupNotificationsEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isGroupNotificationsEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeGroupNotificationsEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:changeGroupNotificationsEnabled
+MethodInvocation:getSettingsModule
+Method-name:isGroupNotificationsOnlyMentionsEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isGroupNotificationsOnlyMentionsEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeGroupNotificationsOnlyMentionsEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:changeGroupNotificationsOnlyMentionsEnabled
+MethodInvocation:getSettingsModule
+Method-name:getSelectedWallpaper
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getSelectedWallpapper
+MethodInvocation:getSettingsModule
+Method-name:changeSelectedWallpaper
+Method-returnType:void
+Method-parameters:[String uri]
+MethodInvocation:changeSelectedWallpapper
+MethodInvocation:getSettingsModule
+Method-name:isRenameHintShown
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isRenameHintShown
+MethodInvocation:getSettingsModule
+Method-name:isAnimationAutoPlayEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isAnimationAutoPlayEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeAnimationAutoPlayEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setAnimationAutoPlayEnabled
+MethodInvocation:getSettingsModule
+Method-name:isAnimationAutoDownloadEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isAnimationAutoDownloadEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeAnimationAutoDownloadEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setAnimationAutoDownloadEnabled
+MethodInvocation:getSettingsModule
+Method-name:isImageAutoDownloadEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isImageAutoDownloadEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeImageAutoDownloadEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setImageAutoDownloadEnabled
+MethodInvocation:getSettingsModule
+Method-name:isVideoAutoDownloadEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isVideoAutoDownloadEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeVideoAutoDownloadEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setVideoAutoDownloadEnabled
+MethodInvocation:getSettingsModule
+Method-name:isAudioAutoDownloadEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isAudioAutoDownloadEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeAudioAutoDownloadEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setAudioAutoDownloadEnabled
+MethodInvocation:getSettingsModule
+Method-name:isDocAutoDownloadEnabled
+Method-returnType:boolean
+Method-parameters:[]
+MethodInvocation:isDocAutoDownloadEnabled
+MethodInvocation:getSettingsModule
+Method-name:changeDocAutoDownloadEnabled
+Method-returnType:void
+Method-parameters:[boolean val]
+MethodInvocation:setDocAutoDownloadEnabled
+MethodInvocation:getSettingsModule
+Method-name:loadSessions
+Method-returnType:Command<List<ApiAuthSession>>
+Method-parameters:[]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:loadSessions
+MethodInvocation:getSecurityModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:terminateAllSessions
+Method-returnType:Command<Void>
+Method-parameters:[]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:terminateAllSessions
+MethodInvocation:getSecurityModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:terminateSession
+Method-returnType:Command<Void>
+Method-parameters:[int id]
+MethodInvocation:failure
+MethodInvocation:then
+MethodInvocation:terminateSession
+MethodInvocation:getSecurityModule
+MethodInvocation:onResult
+MethodInvocation:onError
+Method-name:startWebAction
+Method-returnType:Command<WebActionDescriptor>
+Method-parameters:[final String webAction]
+MethodInvocation:startWebAction
+MethodInvocation:getExternalModule
+Method-name:completeWebAction
+Method-returnType:Command<Boolean>
+Method-parameters:[final String actionHash, final String url]
+MethodInvocation:completeWebAction
+MethodInvocation:getExternalModule
+Method-name:rawRequestCommand
+Method-returnType:Command<ResponseRawRequest>
+Method-parameters:[String service, String method, ApiRawValue params]
+MethodInvocation:rawRequestCommand
+MethodInvocation:getExternalModule
+Method-name:rawRequest
+Method-returnType:void
+Method-parameters:[String service, String method, ApiRawValue params]
+MethodInvocation:rawRequest
+MethodInvocation:getExternalModule
+Method-name:rawPersistentRequest
+Method-returnType:void
+Method-parameters:[String service, String method, ApiRawValue params]
+MethodInvocation:rawPersistentRequest
+MethodInvocation:getExternalModule
+Method-name:getFormatter
+Method-returnType:I18nEngine
+Method-parameters:[]
+MethodInvocation:getI18nModule
+Method-name:registerGooglePush
+Method-returnType:void
+Method-parameters:[long projectId, String token]
+MethodInvocation:registerGooglePush
+MethodInvocation:getPushesModule
+Method-name:registerApplePush
+Method-returnType:void
+Method-parameters:[int apnsId, String token]
+MethodInvocation:registerApplePush
+MethodInvocation:getPushesModule
+Method-name:registerApplePushKit
+Method-returnType:void
+Method-parameters:[int apnsId, String token]
+MethodInvocation:registerApplePushKit
+MethodInvocation:getPushesModule
+Method-name:registerActorPush
+Method-returnType:void
+Method-parameters:[String endpoint]
+MethodInvocation:registerActorPush
+MethodInvocation:getPushesModule
+Method-name:getPreferences
+Method-returnType:PreferencesStorage
+Method-parameters:[]
+MethodInvocation:getPreferences
+Method-name:forceNetworkCheck
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:forceNetworkCheck
+MethodInvocation:getActorApi
+Method-name:getModuleContext
+Method-returnType:ModuleContext
+Method-parameters:[]

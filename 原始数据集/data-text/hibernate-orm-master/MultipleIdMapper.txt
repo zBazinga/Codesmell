@@ -1,0 +1,57 @@
+Class:MultipleIdMapper
+Method-name:MultipleIdMapper
+Method-returnType:null
+Method-parameters:[Class compositeIdClass, ServiceRegistry serviceRegistry]
+Method-name:add
+Method-returnType:void
+Method-parameters:[PropertyData propertyData]
+MethodInvocation:put
+MethodInvocation:resolveIdMapper
+Method-name:mapToMapFromId
+Method-returnType:void
+Method-parameters:[Session session, Map<String,Object> data, Object obj]
+MethodInvocation:isInstance
+MethodInvocation:entrySet
+MethodInvocation:getKey
+MethodInvocation:getValue
+MethodInvocation:getVirtualReturnClass
+MethodInvocation:mapToMapFromEntity
+MethodInvocation:mapToMapFromId
+MethodInvocation:mapToMapFromId
+Method-name:mapToMapFromId
+Method-returnType:void
+Method-parameters:[Map<String,Object> data, Object obj]
+MethodInvocation:values
+MethodInvocation:mapToMapFromEntity
+Method-name:mapToMapFromEntity
+Method-returnType:void
+Method-parameters:[Map<String,Object> data, Object obj]
+MethodInvocation:values
+MethodInvocation:mapToMapFromEntity
+Method-name:mapToEntityFromMap
+Method-returnType:boolean
+Method-parameters:[Object obj, Map data]
+MethodInvocation:values
+MethodInvocation:mapToEntityFromMap
+Method-name:prefixMappedProperties
+Method-returnType:IdMapper
+Method-parameters:[String prefix]
+MethodInvocation:getServiceRegistry
+MethodInvocation:keySet
+MethodInvocation:getName
+MethodInvocation:put
+MethodInvocation:resolveIdMapper
+Method-name:mapToIdFromEntity
+Method-returnType:Object
+Method-parameters:[Object data]
+MethodInvocation:instantiateCompositeId
+MethodInvocation:values
+MethodInvocation:mapToEntityFromEntity
+Method-name:mapToQueryParametersFromId
+Method-returnType:List<QueryParameterData>
+Method-parameters:[Object obj]
+MethodInvocation:mapToMapFromId
+MethodInvocation:entrySet
+MethodInvocation:add
+MethodInvocation:getKey
+MethodInvocation:getValue

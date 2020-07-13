@@ -1,0 +1,46 @@
+Class:SegmentFactory
+Method-name:SegmentFactory
+Method-returnType:null
+Method-parameters:[]
+Field:instance
+Method-name:instance
+Method-returnType:SegmentFactory
+Method-parameters:[]
+Method-name:createCompositeImmutableSegment
+Method-returnType:CompositeImmutableSegment
+Method-parameters:[final CellComparator comparator, List<ImmutableSegment> segments]
+Method-name:createImmutableSegmentByCompaction
+Method-returnType:ImmutableSegment
+Method-parameters:[final Configuration conf, final CellComparator comparator, MemStoreSegmentsIterator iterator, int numOfCells, CompactingMemStore.IndexType idxType, MemStoreCompactionStrategy.Action action]
+MethodInvocation:newInstance
+MethodInvocation:createImmutableSegment
+Method-name:createImmutableSegment
+Method-returnType:ImmutableSegment
+Method-parameters:[CellComparator comparator]
+MethodInvocation:generateMutableSegment
+MethodInvocation:createImmutableSegment
+Method-name:createImmutableSegment
+Method-returnType:ImmutableSegment
+Method-parameters:[MutableSegment segment, MemStoreSizing memstoreSizing]
+Method-name:createMutableSegment
+Method-returnType:MutableSegment
+Method-parameters:[final Configuration conf, CellComparator comparator, MemStoreSizing memstoreSizing]
+MethodInvocation:newInstance
+MethodInvocation:generateMutableSegment
+Method-name:createImmutableSegmentByMerge
+Method-returnType:ImmutableSegment
+Method-parameters:[final Configuration conf, final CellComparator comparator, MemStoreSegmentsIterator iterator, int numOfCells, List<ImmutableSegment> segments, CompactingMemStore.IndexType idxType, MemStoreCompactionStrategy.Action action]
+MethodInvocation:getMergedMemStoreLAB
+MethodInvocation:createImmutableSegment
+Method-name:createImmutableSegment
+Method-returnType:ImmutableSegment
+Method-parameters:[final Configuration conf, final CellComparator comparator, MemStoreSegmentsIterator iterator, MemStoreLAB memStoreLAB, int numOfCells, MemStoreCompactionStrategy.Action action, CompactingMemStore.IndexType idxType]
+Method-name:generateMutableSegment
+Method-returnType:MutableSegment
+Method-parameters:[final Configuration conf, CellComparator comparator, MemStoreLAB memStoreLAB, MemStoreSizing memstoreSizing]
+Method-name:getMergedMemStoreLAB
+Method-returnType:MemStoreLAB
+Method-parameters:[Configuration conf, List<ImmutableSegment> segments]
+MethodInvocation:getBoolean
+MethodInvocation:add
+MethodInvocation:getMemStoreLAB

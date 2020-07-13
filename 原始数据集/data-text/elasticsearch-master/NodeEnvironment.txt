@@ -1,0 +1,484 @@
+Class:NodeEnvironment
+Class:NodePath
+Field:path
+Field:indicesPath
+Field:fileStore
+Field:majorDeviceNumber
+Field:minorDeviceNumber
+Method-name:NodePath
+Method-returnType:null
+Method-parameters:[Path path]
+FieldAccess:path
+FieldAccess:indicesPath
+MethodInvocation:resolve
+FieldAccess:fileStore
+MethodInvocation:getFileStore
+MethodInvocation:supportsFileAttributeView
+FieldAccess:majorDeviceNumber
+MethodInvocation:getAttribute
+FieldAccess:minorDeviceNumber
+MethodInvocation:getAttribute
+FieldAccess:majorDeviceNumber
+FieldAccess:minorDeviceNumber
+Method-name:resolve
+Method-returnType:Path
+Method-parameters:[ShardId shardId]
+MethodInvocation:resolve
+MethodInvocation:resolve
+MethodInvocation:getIndex
+MethodInvocation:toString
+MethodInvocation:id
+Method-name:resolve
+Method-returnType:Path
+Method-parameters:[Index index]
+MethodInvocation:resolve
+MethodInvocation:getUUID
+Method-name:resolve
+Method-returnType:Path
+Method-parameters:[String uuid]
+MethodInvocation:resolve
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Field:logger
+MethodInvocation:getLogger
+Field:nodePaths
+Field:sharedDataPath
+Field:locks
+Field:closed
+Field:shardLocks
+Field:nodeMetadata
+Field:NODE_ID_SEED_SETTING
+MethodInvocation:longSetting
+Field:ENABLE_LUCENE_SEGMENT_INFOS_TRACE_SETTING
+MethodInvocation:boolSetting
+Field:INDICES_FOLDER
+Field:NODE_LOCK_FILENAME
+Class:NodeLock
+Field:locks
+Field:nodePaths
+Method-name:NodeLock
+Method-returnType:null
+Method-parameters:[final Logger logger, final Environment environment, final CheckedFunction<Path,Boolean,IOException> pathFunction]
+MethodInvocation:identity
+Method-name:NodeLock
+Method-returnType:null
+Method-parameters:[final Logger logger, final Environment environment, final CheckedFunction<Path,Boolean,IOException> pathFunction, final Function<Path,Path> subPathMapping]
+FieldAccess:length
+MethodInvocation:dataFiles
+MethodInvocation:dataFiles
+MethodInvocation:apply
+MethodInvocation:apply
+MethodInvocation:open
+MethodInvocation:trace
+MethodInvocation:toAbsolutePath
+MethodInvocation:obtainLock
+MethodInvocation:trace
+MethodInvocation:toAbsolutePath
+MethodInvocation:toAbsolutePath
+MethodInvocation:close
+Method-name:getNodePaths
+Method-returnType:NodePath[]
+Method-parameters:[]
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:closeWhileHandlingException
+Method-name:NodeEnvironment
+Method-returnType:null
+Method-parameters:[Settings settings, Environment environment]
+MethodInvocation:sharedDataFile
+MethodInvocation:dataFiles
+MethodInvocation:createDirectories
+MethodInvocation:format
+MethodInvocation:toString
+MethodInvocation:dataFiles
+FieldAccess:locks
+FieldAccess:nodePaths
+MethodInvocation:debug
+MethodInvocation:toString
+MethodInvocation:maybeLogPathDetails
+MethodInvocation:maybeLogHeapDetails
+MethodInvocation:applySegmentInfosTrace
+MethodInvocation:assertCanWrite
+MethodInvocation:ensureAtomicMoveSupported
+MethodInvocation:upgradeLegacyNodeFolders
+MethodInvocation:assertCanWrite
+MethodInvocation:isDataNode
+MethodInvocation:isMasterNode
+MethodInvocation:ensureNoIndexMetadata
+MethodInvocation:ensureNoShardData
+FieldAccess:nodeMetadata
+MethodInvocation:loadNodeMetadata
+MethodInvocation:close
+Method-name:upgradeLegacyNodeFolders
+Method-returnType:boolean
+Method-parameters:[Logger logger, Settings settings, Environment environment, NodeLock nodeLock]
+Method-name:maybeLogPathDetails
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:isDebugEnabled
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toAbsolutePath
+MethodInvocation:getFSInfo
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:getFree
+MethodInvocation:getAvailable
+MethodInvocation:getTotal
+MethodInvocation:getMount
+MethodInvocation:getType
+MethodInvocation:debug
+MethodInvocation:isInfoEnabled
+MethodInvocation:getFSInfo
+MethodInvocation:getMount
+MethodInvocation:contains
+MethodInvocation:add
+MethodInvocation:getType
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:info
+MethodInvocation:getAvailable
+MethodInvocation:getTotal
+MethodInvocation:toString
+Method-name:maybeLogHeapDetails
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:jvmInfo
+MethodInvocation:getHeapMax
+MethodInvocation:getMem
+MethodInvocation:useCompressedOops
+MethodInvocation:info
+Method-name:loadNodeMetadata
+Method-returnType:NodeMetadata
+Method-parameters:[Settings settings, Logger logger, NodePath... nodePaths]
+Method-name:generateNodeId
+Method-returnType:String
+Method-parameters:[Settings settings]
+MethodInvocation:get
+MethodInvocation:randomBase64UUID
+Method-name:applySegmentInfosTrace
+Method-returnType:void
+Method-parameters:[Settings settings]
+MethodInvocation:get
+MethodInvocation:setInfoStream
+Method-name:toString
+Method-returnType:String
+Method-parameters:[Collection<String> items]
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:append
+MethodInvocation:toString
+Method-name:deleteShardDirectorySafe
+Method-returnType:void
+Method-parameters:[ShardId shardId, IndexSettings indexSettings]
+MethodInvocation:availableShardPaths
+MethodInvocation:trace
+MethodInvocation:shardLock
+MethodInvocation:deleteShardDirectoryUnderLock
+Method-name:acquireFSLockForPaths
+Method-returnType:void
+Method-parameters:[IndexSettings indexSettings, Path... shardPaths]
+MethodInvocation:resolve
+MethodInvocation:getValue
+MethodInvocation:obtainLock
+MethodInvocation:closeWhileHandlingException
+MethodInvocation:closeWhileHandlingException
+Method-name:deleteShardDirectoryUnderLock
+Method-returnType:void
+Method-parameters:[ShardLock lock, IndexSettings indexSettings]
+Method-name:assertPathsDoNotExist
+Method-returnType:boolean
+Method-parameters:[final Path[] paths]
+Method-name:deleteIndexDirectorySafe
+Method-returnType:void
+Method-parameters:[Index index, long lockTimeoutMS, IndexSettings indexSettings]
+MethodInvocation:lockAllForIndex
+MethodInvocation:deleteIndexDirectoryUnderLock
+MethodInvocation:closeWhileHandlingException
+Method-name:deleteIndexDirectoryUnderLock
+Method-returnType:void
+Method-parameters:[Index index, IndexSettings indexSettings]
+MethodInvocation:indexPaths
+MethodInvocation:trace
+MethodInvocation:rm
+MethodInvocation:hasCustomDataPath
+MethodInvocation:resolveIndexCustomLocation
+MethodInvocation:customDataPath
+MethodInvocation:getUUID
+MethodInvocation:trace
+MethodInvocation:rm
+Method-name:lockAllForIndex
+Method-returnType:List<ShardLock>
+Method-parameters:[final Index index, final IndexSettings settings, final String lockDetails, final long lockTimeoutMS]
+MethodInvocation:getNumberOfShards
+MethodInvocation:trace
+MethodInvocation:nanoTime
+MethodInvocation:max
+MethodInvocation:nsecToMSec
+MethodInvocation:nanoTime
+MethodInvocation:add
+MethodInvocation:shardLock
+MethodInvocation:trace
+MethodInvocation:closeWhileHandlingException
+Method-name:shardLock
+Method-returnType:ShardLock
+Method-parameters:[ShardId id, final String details]
+MethodInvocation:shardLock
+Method-name:shardLock
+Method-returnType:ShardLock
+Method-parameters:[final ShardId shardId, final String details, final long lockTimeoutMS]
+MethodInvocation:trace
+MethodInvocation:containsKey
+MethodInvocation:get
+MethodInvocation:incWaitCount
+MethodInvocation:put
+MethodInvocation:acquire
+MethodInvocation:decWaitCount
+MethodInvocation:trace
+Method-name:closeInternal
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:release
+MethodInvocation:trace
+Method-name:lock
+Method-returnType:ShardLock
+Method-parameters:[ShardId shardId, String lockDetails, long lockTimeoutMS]
+Method-name:lockedShards
+Method-returnType:Set<ShardId>
+Method-parameters:[]
+MethodInvocation:copyOf
+MethodInvocation:keySet
+Class:InternalShardLock
+Field:mutex
+Field:waitCount
+Field:lockDetails
+Field:shardId
+Method-name:InternalShardLock
+Method-returnType:null
+Method-parameters:[final ShardId shardId, final String details]
+FieldAccess:shardId
+MethodInvocation:acquireUninterruptibly
+Method-name:release
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:release
+MethodInvocation:decWaitCount
+Method-name:incWaitCount
+Method-returnType:void
+Method-parameters:[]
+Method-name:decWaitCount
+Method-returnType:void
+Method-parameters:[]
+Method-name:acquire
+Method-returnType:void
+Method-parameters:[long timeoutInMillis, final String details]
+MethodInvocation:tryAcquire
+MethodInvocation:interrupt
+MethodInvocation:currentThread
+Method-name:hasNodeFile
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:nodeDataPaths
+Method-returnType:Path[]
+Method-parameters:[]
+MethodInvocation:assertEnvIsLocked
+FieldAccess:path
+Method-name:sharedDataPath
+Method-returnType:Path
+Method-parameters:[]
+Method-name:nodeId
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:nodeId
+Method-name:nodePaths
+Method-returnType:NodePath[]
+Method-parameters:[]
+MethodInvocation:assertEnvIsLocked
+Method-name:indexPaths
+Method-returnType:Path[]
+Method-parameters:[Index index]
+MethodInvocation:assertEnvIsLocked
+MethodInvocation:resolve
+Method-name:availableShardPaths
+Method-returnType:Path[]
+Method-parameters:[ShardId shardId]
+MethodInvocation:assertEnvIsLocked
+MethodInvocation:nodePaths
+MethodInvocation:resolve
+Method-name:availableIndexFolders
+Method-returnType:Set<String>
+Method-parameters:[]
+MethodInvocation:availableIndexFolders
+Method-name:availableIndexFolders
+Method-returnType:Set<String>
+Method-parameters:[Predicate<String> excludeIndexPathIdsPredicate]
+MethodInvocation:assertEnvIsLocked
+MethodInvocation:addAll
+MethodInvocation:availableIndexFoldersForPath
+Method-name:availableIndexFoldersForPath
+Method-returnType:Set<String>
+Method-parameters:[final NodePath nodePath]
+MethodInvocation:availableIndexFoldersForPath
+Method-name:availableIndexFoldersForPath
+Method-returnType:Set<String>
+Method-parameters:[final NodePath nodePath, Predicate<String> excludeIndexPathIdsPredicate]
+MethodInvocation:assertEnvIsLocked
+MethodInvocation:isDirectory
+MethodInvocation:newDirectoryStream
+MethodInvocation:toString
+MethodInvocation:getFileName
+MethodInvocation:test
+MethodInvocation:isDirectory
+MethodInvocation:add
+Method-name:resolveIndexFolder
+Method-returnType:Path[]
+Method-parameters:[String indexFolderName]
+MethodInvocation:assertEnvIsLocked
+MethodInvocation:resolve
+MethodInvocation:exists
+MethodInvocation:add
+MethodInvocation:toArray
+MethodInvocation:size
+Method-name:findAllShardIds
+Method-returnType:Set<ShardId>
+Method-parameters:[final Index index]
+Method-name:shardCountPerPath
+Method-returnType:Map<NodePath,Long>
+Method-parameters:[final Index index]
+Method-name:findAllShardsForIndex
+Method-returnType:Set<ShardId>
+Method-parameters:[Path indexPath, Index index]
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:compareAndSet
+MethodInvocation:trace
+MethodInvocation:close
+MethodInvocation:trace
+Method-name:assertEnvIsLocked
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:get
+MethodInvocation:ensureValid
+MethodInvocation:warn
+Method-name:ensureAtomicMoveSupported
+Method-returnType:void
+Method-parameters:[final NodePath[] nodePaths]
+Method-name:ensureNoShardData
+Method-returnType:void
+Method-parameters:[final NodePath[] nodePaths]
+MethodInvocation:collectShardDataPaths
+MethodInvocation:isEmpty
+MethodInvocation:getKey
+Method-name:ensureNoIndexMetadata
+Method-returnType:void
+Method-parameters:[final NodePath[] nodePaths]
+MethodInvocation:collectIndexMetadataPaths
+MethodInvocation:isEmpty
+MethodInvocation:getKey
+MethodInvocation:getKey
+Method-name:collectShardDataPaths
+Method-returnType:List<Path>
+Method-parameters:[NodePath[] nodePaths]
+MethodInvocation:collectIndexSubPaths
+Method-name:collectIndexMetadataPaths
+Method-returnType:List<Path>
+Method-parameters:[NodePath[] nodePaths]
+MethodInvocation:collectIndexSubPaths
+Method-name:collectIndexSubPaths
+Method-returnType:List<Path>
+Method-parameters:[NodePath[] nodePaths, Predicate<Path> subPathPredicate]
+MethodInvocation:isDirectory
+MethodInvocation:newDirectoryStream
+MethodInvocation:isDirectory
+MethodInvocation:list
+MethodInvocation:forEach
+MethodInvocation:map
+MethodInvocation:filter
+Method-name:isShardPath
+Method-returnType:boolean
+Method-parameters:[Path path]
+MethodInvocation:isDirectory
+MethodInvocation:allMatch
+MethodInvocation:chars
+MethodInvocation:toString
+MethodInvocation:getFileName
+Method-name:isIndexMetadataPath
+Method-returnType:boolean
+Method-parameters:[Path path]
+MethodInvocation:isDirectory
+MethodInvocation:equals
+MethodInvocation:toString
+MethodInvocation:getFileName
+Method-name:resolveBaseCustomLocation
+Method-returnType:Path
+Method-parameters:[String customDataPath, Path sharedDataPath]
+Method-name:resolveIndexCustomLocation
+Method-returnType:Path
+Method-parameters:[String customDataPath, String indexUUID]
+MethodInvocation:resolveIndexCustomLocation
+Method-name:resolveIndexCustomLocation
+Method-returnType:Path
+Method-parameters:[String customDataPath, String indexUUID, Path sharedDataPath]
+MethodInvocation:resolve
+MethodInvocation:resolveBaseCustomLocation
+Method-name:resolveCustomLocation
+Method-returnType:Path
+Method-parameters:[String customDataPath, final ShardId shardId]
+MethodInvocation:resolveCustomLocation
+Method-name:resolveCustomLocation
+Method-returnType:Path
+Method-parameters:[String customDataPath, final ShardId shardId, Path sharedDataPath]
+MethodInvocation:resolve
+MethodInvocation:resolveIndexCustomLocation
+MethodInvocation:getUUID
+MethodInvocation:getIndex
+MethodInvocation:toString
+MethodInvocation:id
+Method-name:shardStatePathToDataPath
+Method-returnType:Path
+Method-parameters:[Path shardPath]
+Method-name:assertCanWrite
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:nodeDataPaths
+MethodInvocation:tryWriteTempFile
+MethodInvocation:availableIndexFolders
+MethodInvocation:resolveIndexFolder
+MethodInvocation:resolve
+MethodInvocation:tryWriteTempFile
+MethodInvocation:tryWriteTempFile
+MethodInvocation:newDirectoryStream
+MethodInvocation:toString
+MethodInvocation:getFileName
+MethodInvocation:isDirectory
+MethodInvocation:allMatch
+MethodInvocation:chars
+MethodInvocation:resolve
+MethodInvocation:resolve
+MethodInvocation:resolve
+MethodInvocation:tryWriteTempFile
+MethodInvocation:tryWriteTempFile
+MethodInvocation:tryWriteTempFile
+MethodInvocation:tryWriteTempFile
+Field:TEMP_FILE_NAME
+Method-name:tryWriteTempFile
+Method-returnType:void
+Method-parameters:[Path path]
+MethodInvocation:exists
+MethodInvocation:resolve
+MethodInvocation:deleteIfExists
+MethodInvocation:createFile
+MethodInvocation:delete

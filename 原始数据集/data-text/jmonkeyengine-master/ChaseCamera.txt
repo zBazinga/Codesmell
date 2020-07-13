@@ -1,0 +1,397 @@
+Class:ChaseCamera
+Field:target
+Field:minVerticalRotation
+Field:maxVerticalRotation
+Field:minDistance
+Field:maxDistance
+Field:distance
+Field:rotationSpeed
+Field:rotation
+Field:trailingRotationInertia
+Field:zoomSensitivity
+Field:rotationSensitivity
+Field:chasingSensitivity
+Field:trailingSensitivity
+Field:vRotation
+Field:smoothMotion
+Field:trailingEnabled
+Field:rotationLerpFactor
+Field:trailingLerpFactor
+Field:rotating
+Field:vRotating
+Field:targetRotation
+Field:inputManager
+Field:initialUpVec
+Field:targetVRotation
+Field:vRotationLerpFactor
+Field:targetDistance
+Field:distanceLerpFactor
+Field:zooming
+Field:trailing
+Field:chasing
+Field:veryCloseRotation
+Field:canRotate
+Field:offsetDistance
+Field:prevPos
+Field:targetMoves
+Field:enabled
+Field:cam
+Field:targetDir
+Field:previousTargetRotation
+Field:pos
+Field:targetLocation
+Field:dragToRotate
+Field:lookAtOffset
+Field:leftClickRotate
+Field:rightClickRotate
+Field:temp
+Field:invertYaxis
+Field:invertXaxis
+Field:ChaseCamDown
+Field:ChaseCamUp
+Field:ChaseCamZoomIn
+Field:ChaseCamZoomOut
+Field:ChaseCamMoveLeft
+Field:ChaseCamMoveRight
+Field:ChaseCamToggleRotate
+Field:zoomin
+Field:hideCursorOnRotate
+Method-name:ChaseCamera
+Method-returnType:null
+Method-parameters:[Camera cam, final Spatial target]
+MethodInvocation:addControl
+Method-name:ChaseCamera
+Method-returnType:null
+Method-parameters:[Camera cam]
+FieldAccess:cam
+MethodInvocation:clone
+MethodInvocation:getUp
+Method-name:ChaseCamera
+Method-returnType:null
+Method-parameters:[Camera cam, InputManager inputManager]
+MethodInvocation:registerWithInput
+Method-name:ChaseCamera
+Method-returnType:null
+Method-parameters:[Camera cam, final Spatial target, InputManager inputManager]
+MethodInvocation:registerWithInput
+Method-name:onAction
+Method-returnType:void
+Method-parameters:[String name, boolean keyPressed, float tpf]
+MethodInvocation:equals
+MethodInvocation:setCursorVisible
+MethodInvocation:setCursorVisible
+Method-name:onAnalog
+Method-returnType:void
+Method-parameters:[String name, float value, float tpf]
+MethodInvocation:equals
+MethodInvocation:rotateCamera
+MethodInvocation:equals
+MethodInvocation:rotateCamera
+MethodInvocation:equals
+MethodInvocation:vRotateCamera
+MethodInvocation:equals
+MethodInvocation:vRotateCamera
+MethodInvocation:equals
+MethodInvocation:zoomCamera
+MethodInvocation:equals
+MethodInvocation:zoomCamera
+Method-name:registerWithInput
+Method-returnType:void
+Method-parameters:[InputManager inputManager]
+FieldAccess:inputManager
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addListener
+Method-name:setToggleRotationTrigger
+Method-returnType:void
+Method-parameters:[Trigger... triggers]
+MethodInvocation:deleteMapping
+MethodInvocation:addMapping
+MethodInvocation:addListener
+Method-name:setZoomInTrigger
+Method-returnType:void
+Method-parameters:[Trigger... triggers]
+MethodInvocation:deleteMapping
+MethodInvocation:addMapping
+MethodInvocation:addListener
+Method-name:setZoomOutTrigger
+Method-returnType:void
+Method-parameters:[Trigger... triggers]
+MethodInvocation:deleteMapping
+MethodInvocation:addMapping
+MethodInvocation:addListener
+Method-name:computePosition
+Method-returnType:void
+Method-parameters:[]
+MethodInvocation:sin
+MethodInvocation:set
+MethodInvocation:cos
+MethodInvocation:sin
+MethodInvocation:sin
+MethodInvocation:addLocal
+MethodInvocation:getWorldTranslation
+Method-name:rotateCamera
+Method-returnType:void
+Method-parameters:[float value]
+Method-name:zoomCamera
+Method-returnType:void
+Method-parameters:[float value]
+Method-name:vRotateCamera
+Method-returnType:void
+Method-parameters:[float value]
+Method-name:updateCamera
+Method-returnType:void
+Method-parameters:[float tpf]
+MethodInvocation:addLocal
+MethodInvocation:set
+MethodInvocation:getWorldTranslation
+MethodInvocation:subtractLocal
+MethodInvocation:set
+MethodInvocation:length
+MethodInvocation:normalizeLocal
+MethodInvocation:negate
+MethodInvocation:acos
+MethodInvocation:dot
+MethodInvocation:acos
+MethodInvocation:dot
+MethodInvocation:abs
+MethodInvocation:min
+MethodInvocation:interpolateLinear
+MethodInvocation:length
+MethodInvocation:subtractLocal
+MethodInvocation:set
+MethodInvocation:getLocation
+MethodInvocation:min
+MethodInvocation:interpolateLinear
+MethodInvocation:min
+MethodInvocation:interpolateLinear
+MethodInvocation:min
+MethodInvocation:interpolateLinear
+MethodInvocation:min
+MethodInvocation:interpolateLinear
+MethodInvocation:computePosition
+MethodInvocation:setLocation
+MethodInvocation:addLocal
+MethodInvocation:computePosition
+MethodInvocation:setLocation
+MethodInvocation:addLocal
+MethodInvocation:set
+MethodInvocation:lookAt
+Method-name:isEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setEnabled
+Method-returnType:void
+Method-parameters:[boolean enabled]
+FieldAccess:enabled
+Method-name:getMaxDistance
+Method-returnType:float
+Method-parameters:[]
+Method-name:setMaxDistance
+Method-returnType:void
+Method-parameters:[float maxDistance]
+FieldAccess:maxDistance
+MethodInvocation:zoomCamera
+Method-name:getMinDistance
+Method-returnType:float
+Method-parameters:[]
+Method-name:setMinDistance
+Method-returnType:void
+Method-parameters:[float minDistance]
+FieldAccess:minDistance
+MethodInvocation:zoomCamera
+Method-name:cloneForSpatial
+Method-returnType:Control
+Method-parameters:[Spatial spatial]
+Method-name:jmeClone
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:setMaxDistance
+MethodInvocation:getMaxDistance
+MethodInvocation:setMinDistance
+MethodInvocation:getMinDistance
+Method-name:cloneFields
+Method-returnType:void
+Method-parameters:[Cloner cloner, Object original]
+FieldAccess:target
+MethodInvocation:clone
+MethodInvocation:computePosition
+MethodInvocation:getWorldTranslation
+MethodInvocation:setLocation
+Method-name:setSpatial
+Method-returnType:void
+Method-parameters:[Spatial spatial]
+MethodInvocation:computePosition
+MethodInvocation:getWorldTranslation
+MethodInvocation:setLocation
+Method-name:update
+Method-returnType:void
+Method-parameters:[float tpf]
+MethodInvocation:updateCamera
+Method-name:render
+Method-returnType:void
+Method-parameters:[RenderManager rm, ViewPort vp]
+Method-name:write
+Method-returnType:void
+Method-parameters:[JmeExporter ex]
+Method-name:read
+Method-returnType:void
+Method-parameters:[JmeImporter im]
+MethodInvocation:getCapsule
+MethodInvocation:readFloat
+MethodInvocation:readFloat
+Method-name:getMaxVerticalRotation
+Method-returnType:float
+Method-parameters:[]
+Method-name:setMaxVerticalRotation
+Method-returnType:void
+Method-parameters:[float maxVerticalRotation]
+FieldAccess:maxVerticalRotation
+Method-name:getMinVerticalRotation
+Method-returnType:float
+Method-parameters:[]
+Method-name:setMinVerticalRotation
+Method-returnType:void
+Method-parameters:[float minHeight]
+FieldAccess:minVerticalRotation
+Method-name:isSmoothMotion
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setSmoothMotion
+Method-returnType:void
+Method-parameters:[boolean smoothMotion]
+FieldAccess:smoothMotion
+Method-name:getChasingSensitivity
+Method-returnType:float
+Method-parameters:[]
+Method-name:setChasingSensitivity
+Method-returnType:void
+Method-parameters:[float chasingSensitivity]
+FieldAccess:chasingSensitivity
+Method-name:getRotationSensitivity
+Method-returnType:float
+Method-parameters:[]
+Method-name:setRotationSensitivity
+Method-returnType:void
+Method-parameters:[float rotationSensitivity]
+FieldAccess:rotationSensitivity
+Method-name:isTrailingEnabled
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setTrailingEnabled
+Method-returnType:void
+Method-parameters:[boolean trailingEnabled]
+FieldAccess:trailingEnabled
+Method-name:getTrailingRotationInertia
+Method-returnType:float
+Method-parameters:[]
+Method-name:setTrailingRotationInertia
+Method-returnType:void
+Method-parameters:[float trailingRotationInertia]
+FieldAccess:trailingRotationInertia
+Method-name:getTrailingSensitivity
+Method-returnType:float
+Method-parameters:[]
+Method-name:setTrailingSensitivity
+Method-returnType:void
+Method-parameters:[float trailingSensitivity]
+FieldAccess:trailingSensitivity
+Method-name:getZoomSensitivity
+Method-returnType:float
+Method-parameters:[]
+Method-name:setZoomSensitivity
+Method-returnType:void
+Method-parameters:[float zoomSensitivity]
+FieldAccess:zoomSensitivity
+Method-name:getRotationSpeed
+Method-returnType:float
+Method-parameters:[]
+Method-name:setRotationSpeed
+Method-returnType:void
+Method-parameters:[float rotationSpeed]
+FieldAccess:rotationSpeed
+Method-name:setDefaultDistance
+Method-returnType:void
+Method-parameters:[float defaultDistance]
+Method-name:setDefaultHorizontalRotation
+Method-returnType:void
+Method-parameters:[float angleInRad]
+Method-name:setDefaultVerticalRotation
+Method-returnType:void
+Method-parameters:[float angleInRad]
+Method-name:isDragToRotate
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setDragToRotate
+Method-returnType:void
+Method-parameters:[boolean dragToRotate]
+FieldAccess:dragToRotate
+FieldAccess:canRotate
+MethodInvocation:setCursorVisible
+Method-name:setDownRotateOnCloseViewOnly
+Method-returnType:void
+Method-parameters:[boolean rotateOnlyWhenClose]
+Method-name:getDownRotateOnCloseViewOnly
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getDistanceToTarget
+Method-returnType:float
+Method-parameters:[]
+Method-name:getHorizontalRotation
+Method-returnType:float
+Method-parameters:[]
+Method-name:getVerticalRotation
+Method-returnType:float
+Method-parameters:[]
+Method-name:getLookAtOffset
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:setLookAtOffset
+Method-returnType:void
+Method-parameters:[Vector3f lookAtOffset]
+FieldAccess:lookAtOffset
+Method-name:setUpVector
+Method-returnType:void
+Method-parameters:[Vector3f up]
+Method-name:getUpVector
+Method-returnType:Vector3f
+Method-parameters:[]
+Method-name:isHideCursorOnRotate
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setHideCursorOnRotate
+Method-returnType:void
+Method-parameters:[boolean hideCursorOnRotate]
+FieldAccess:hideCursorOnRotate
+Method-name:setInvertVerticalAxis
+Method-returnType:void
+Method-parameters:[boolean invertYaxis]
+FieldAccess:invertYaxis
+MethodInvocation:deleteMapping
+MethodInvocation:deleteMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addListener
+Method-name:setInvertHorizontalAxis
+Method-returnType:void
+Method-parameters:[boolean invertXaxis]
+FieldAccess:invertXaxis
+MethodInvocation:deleteMapping
+MethodInvocation:deleteMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addMapping
+MethodInvocation:addListener

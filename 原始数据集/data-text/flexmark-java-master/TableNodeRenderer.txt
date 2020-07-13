@@ -1,0 +1,74 @@
+Class:TableNodeRenderer
+Field:options
+Method-name:TableNodeRenderer
+Method-returnType:null
+Method-parameters:[DataHolder options]
+FieldAccess:options
+Method-name:getNodeRenderingHandlers
+Method-returnType:Set<NodeRenderingHandler<?>>
+Method-parameters:[]
+MethodInvocation:asList
+Method-name:render
+Method-returnType:void
+Method-parameters:[TableBlock node, NodeRendererContext context, HtmlWriter html]
+MethodInvocation:isEmpty
+MethodInvocation:attr
+MethodInvocation:line
+MethodInvocation:tagLineIndent
+MethodInvocation:withAttr
+MethodInvocation:srcPosWithEOL
+MethodInvocation:getChars
+MethodInvocation:renderChildren
+Method-name:render
+Method-returnType:void
+Method-parameters:[TableSeparator tableSeparator, NodeRendererContext context, HtmlWriter html]
+Method-name:render
+Method-returnType:void
+Method-parameters:[TableBody node, NodeRendererContext context, HtmlWriter html]
+MethodInvocation:tagLine
+MethodInvocation:withCondIndent
+MethodInvocation:withAttr
+MethodInvocation:renderChildren
+Method-name:render
+Method-returnType:void
+Method-parameters:[TableRow node, NodeRendererContext context, HtmlWriter html]
+MethodInvocation:tagLine
+MethodInvocation:withAttr
+MethodInvocation:srcPos
+MethodInvocation:trimStart
+MethodInvocation:getChars
+MethodInvocation:renderChildren
+Method-name:render
+Method-returnType:void
+Method-parameters:[TableCaption node, NodeRendererContext context, HtmlWriter html]
+MethodInvocation:tagLine
+MethodInvocation:withAttr
+MethodInvocation:srcPos
+MethodInvocation:trimStart
+MethodInvocation:getChars
+MethodInvocation:renderChildren
+Method-name:render
+Method-returnType:void
+Method-parameters:[TableCell node, NodeRendererContext context, HtmlWriter html]
+MethodInvocation:isHeader
+MethodInvocation:getAlignment
+MethodInvocation:attr
+MethodInvocation:getAlignValue
+MethodInvocation:getAlignment
+MethodInvocation:getSpan
+MethodInvocation:attr
+MethodInvocation:valueOf
+MethodInvocation:getSpan
+MethodInvocation:tag
+MethodInvocation:withAttr
+MethodInvocation:srcPos
+MethodInvocation:getText
+MethodInvocation:renderChildren
+MethodInvocation:tag
+Method-name:getAlignValue
+Method-returnType:String
+Method-parameters:[TableCell.Alignment alignment]
+Class:Factory
+Method-name:apply
+Method-returnType:NodeRenderer
+Method-parameters:[@NotNull DataHolder options]

@@ -1,0 +1,410 @@
+Class:ParseContext
+Field:opToPartPruner
+Field:opToPartList
+Field:opToSamplePruner
+Field:opToPartToSkewedPruner
+Field:topOps
+Field:joinOps
+Field:mapJoinOps
+Field:smbMapJoinOps
+Field:reduceSinkOperatorsAddedByEnforceBucketingSorting
+Field:nameToSplitSample
+Field:loadTableWork
+Field:loadFileWork
+Field:columnStatsAutoGatherContexts
+Field:ctx
+Field:queryState
+Field:conf
+Field:idToTableNameMap
+Field:destTableId
+Field:uCtx
+Field:listMapJoinOpsNoReducer
+Field:prunedPartitions
+Field:viewAliasToInput
+Field:tabNameToTabObject
+Field:lInfo
+Field:globalLimitCtx
+Field:semanticInputs
+Field:rootTasks
+Field:fetchTask
+Field:queryProperties
+Field:fetchTableDesc
+Field:fetchSource
+Field:fetchSink
+Field:analyzeRewrite
+Field:createTableDesc
+Field:createViewDesc
+Field:materializedViewUpdateDesc
+Field:reduceSinkAddedBySortedDynPartition
+Field:viewProjectToViewSchema
+Field:columnAccessInfo
+Field:needViewColumnAuthorization
+Field:rsToRuntimeValuesInfo
+Field:rsToSemiJoinBranchInfo
+Field:colExprToGBMap
+Field:semiJoinHints
+Field:disableMapJoin
+Field:terminalOpToRSMap
+Method-name:ParseContext
+Method-returnType:null
+Method-parameters:[]
+Method-name:ParseContext
+Method-returnType:null
+Method-parameters:[QueryState queryState, Map<TableScanOperator,ExprNodeDesc> opToPartPruner, Map<TableScanOperator,PrunedPartitionList> opToPartList, Map<String,TableScanOperator> topOps, Set<JoinOperator> joinOps, Set<SMBMapJoinOperator> smbMapJoinOps, List<LoadTableDesc> loadTableWork, List<LoadFileDesc> loadFileWork, List<ColumnStatsAutoGatherContext> columnStatsAutoGatherContexts, Context ctx, Map<String,String> idToTableNameMap, int destTableId, UnionProcContext uCtx, List<AbstractMapJoinOperator<? extends MapJoinDesc>> listMapJoinOpsNoReducer, Map<String,PrunedPartitionList> prunedPartitions, Map<String,Table> tabNameToTabObject, Map<TableScanOperator,SampleDesc> opToSamplePruner, GlobalLimitCtx globalLimitCtx, Map<String,SplitSample> nameToSplitSample, Set<ReadEntity> semanticInputs, List<Task<?>> rootTasks, Map<TableScanOperator,Map<String,ExprNodeDesc>> opToPartToSkewedPruner, Map<String,ReadEntity> viewAliasToInput, List<ReduceSinkOperator> reduceSinkOperatorsAddedByEnforceBucketingSorting, AnalyzeRewriteContext analyzeRewrite, CreateTableDesc createTableDesc, CreateViewDesc createViewDesc, MaterializedViewUpdateDesc materializedViewUpdateDesc, QueryProperties queryProperties, Map<SelectOperator,Table> viewProjectToTableSchema]
+FieldAccess:queryState
+FieldAccess:conf
+MethodInvocation:getConf
+FieldAccess:opToPartPruner
+FieldAccess:opToPartList
+FieldAccess:joinOps
+FieldAccess:smbMapJoinOps
+FieldAccess:loadFileWork
+FieldAccess:loadTableWork
+FieldAccess:columnStatsAutoGatherContexts
+FieldAccess:topOps
+FieldAccess:ctx
+FieldAccess:idToTableNameMap
+FieldAccess:destTableId
+FieldAccess:uCtx
+FieldAccess:listMapJoinOpsNoReducer
+FieldAccess:prunedPartitions
+FieldAccess:tabNameToTabObject
+FieldAccess:opToSamplePruner
+FieldAccess:nameToSplitSample
+FieldAccess:globalLimitCtx
+FieldAccess:semanticInputs
+FieldAccess:rootTasks
+FieldAccess:opToPartToSkewedPruner
+FieldAccess:viewAliasToInput
+FieldAccess:reduceSinkOperatorsAddedByEnforceBucketingSorting
+FieldAccess:analyzeRewrite
+FieldAccess:createTableDesc
+FieldAccess:createViewDesc
+FieldAccess:materializedViewUpdateDesc
+FieldAccess:queryProperties
+FieldAccess:viewProjectToViewSchema
+FieldAccess:needViewColumnAuthorization
+MethodInvocation:isEmpty
+FieldAccess:needViewColumnAuthorization
+FieldAccess:columnAccessInfo
+Method-name:getContext
+Method-returnType:Context
+Method-parameters:[]
+Method-name:setContext
+Method-returnType:void
+Method-parameters:[Context ctx]
+FieldAccess:ctx
+Method-name:getConf
+Method-returnType:HiveConf
+Method-parameters:[]
+Method-name:setConf
+Method-returnType:void
+Method-parameters:[HiveConf conf]
+FieldAccess:conf
+Method-name:getQueryState
+Method-returnType:QueryState
+Method-parameters:[]
+Method-name:getOpToPartPruner
+Method-returnType:Map<TableScanOperator,ExprNodeDesc>
+Method-parameters:[]
+Method-name:setOpToPartPruner
+Method-returnType:void
+Method-parameters:[Map<TableScanOperator,ExprNodeDesc> opToPartPruner]
+FieldAccess:opToPartPruner
+Method-name:getOpToPartList
+Method-returnType:Map<TableScanOperator,PrunedPartitionList>
+Method-parameters:[]
+Method-name:getReduceSinkOperatorsAddedByEnforceBucketingSorting
+Method-returnType:List<ReduceSinkOperator>
+Method-parameters:[]
+Method-name:setReduceSinkOperatorsAddedByEnforceBucketingSorting
+Method-returnType:void
+Method-parameters:[List<ReduceSinkOperator> reduceSinkOperatorsAddedByEnforceBucketingSorting]
+FieldAccess:reduceSinkOperatorsAddedByEnforceBucketingSorting
+Method-name:getTopOps
+Method-returnType:Map<String,TableScanOperator>
+Method-parameters:[]
+Method-name:setTopOps
+Method-returnType:void
+Method-parameters:[Map<String,TableScanOperator> topOps]
+FieldAccess:topOps
+Method-name:getNameToSplitSample
+Method-returnType:Map<String,SplitSample>
+Method-parameters:[]
+Method-name:setNameToSplitSample
+Method-returnType:void
+Method-parameters:[Map<String,SplitSample> nameToSplitSample]
+FieldAccess:nameToSplitSample
+Method-name:getLoadTableWork
+Method-returnType:List<LoadTableDesc>
+Method-parameters:[]
+Method-name:getLoadFileWork
+Method-returnType:List<LoadFileDesc>
+Method-parameters:[]
+Method-name:setLoadFileWork
+Method-returnType:void
+Method-parameters:[List<LoadFileDesc> loadFileWork]
+FieldAccess:loadFileWork
+Method-name:getIdToTableNameMap
+Method-returnType:Map<String,String>
+Method-parameters:[]
+Method-name:setIdToTableNameMap
+Method-returnType:void
+Method-parameters:[Map<String,String> idToTableNameMap]
+FieldAccess:idToTableNameMap
+Method-name:getDestTableId
+Method-returnType:int
+Method-parameters:[]
+Method-name:setDestTableId
+Method-returnType:void
+Method-parameters:[int destTableId]
+FieldAccess:destTableId
+Method-name:getUCtx
+Method-returnType:UnionProcContext
+Method-parameters:[]
+Method-name:setUCtx
+Method-returnType:void
+Method-parameters:[UnionProcContext uCtx]
+FieldAccess:uCtx
+Method-name:getJoinOps
+Method-returnType:Set<JoinOperator>
+Method-parameters:[]
+Method-name:setJoinOps
+Method-returnType:void
+Method-parameters:[Set<JoinOperator> joinOps]
+FieldAccess:joinOps
+Method-name:getListMapJoinOpsNoReducer
+Method-returnType:List<AbstractMapJoinOperator<? extends MapJoinDesc>>
+Method-parameters:[]
+Method-name:setListMapJoinOpsNoReducer
+Method-returnType:void
+Method-parameters:[List<AbstractMapJoinOperator<? extends MapJoinDesc>> listMapJoinOpsNoReducer]
+FieldAccess:listMapJoinOpsNoReducer
+Method-name:getOpToSamplePruner
+Method-returnType:Map<TableScanOperator,SampleDesc>
+Method-parameters:[]
+Method-name:setOpToSamplePruner
+Method-returnType:void
+Method-parameters:[Map<TableScanOperator,SampleDesc> opToSamplePruner]
+FieldAccess:opToSamplePruner
+Method-name:getColStatsCache
+Method-returnType:Map<String,ColumnStatsList>
+Method-parameters:[]
+MethodInvocation:getColStatsCache
+MethodInvocation:getOpContext
+Method-name:getPrunedPartitions
+Method-returnType:Map<String,PrunedPartitionList>
+Method-parameters:[]
+Method-name:setPrunedPartitions
+Method-returnType:void
+Method-parameters:[Map<String,PrunedPartitionList> prunedPartitions]
+FieldAccess:prunedPartitions
+Method-name:setLineageInfo
+Method-returnType:void
+Method-parameters:[LineageInfo lInfo]
+FieldAccess:lInfo
+Method-name:getLineageInfo
+Method-returnType:LineageInfo
+Method-parameters:[]
+Method-name:getMapJoinOps
+Method-returnType:Set<MapJoinOperator>
+Method-parameters:[]
+Method-name:setMapJoinOps
+Method-returnType:void
+Method-parameters:[Set<MapJoinOperator> mapJoinOps]
+FieldAccess:mapJoinOps
+Method-name:getSmbMapJoinOps
+Method-returnType:Set<SMBMapJoinOperator>
+Method-parameters:[]
+Method-name:setSmbMapJoinOps
+Method-returnType:void
+Method-parameters:[Set<SMBMapJoinOperator> smbMapJoinOps]
+FieldAccess:smbMapJoinOps
+Method-name:getGlobalLimitCtx
+Method-returnType:GlobalLimitCtx
+Method-parameters:[]
+Method-name:setGlobalLimitCtx
+Method-returnType:void
+Method-parameters:[GlobalLimitCtx globalLimitCtx]
+FieldAccess:globalLimitCtx
+Method-name:getSemanticInputs
+Method-returnType:Set<ReadEntity>
+Method-parameters:[]
+Method-name:replaceRootTask
+Method-returnType:void
+Method-parameters:[Task<?> rootTask, List<? extends Task<?>> tasks]
+MethodInvocation:remove
+FieldAccess:rootTasks
+MethodInvocation:addAll
+FieldAccess:rootTasks
+Method-name:getFetchTask
+Method-returnType:FetchTask
+Method-parameters:[]
+Method-name:setFetchTask
+Method-returnType:void
+Method-parameters:[FetchTask fetchTask]
+FieldAccess:fetchTask
+Method-name:getPrunedPartitions
+Method-returnType:PrunedPartitionList
+Method-parameters:[TableScanOperator ts]
+MethodInvocation:getPrunedPartitions
+MethodInvocation:getAlias
+MethodInvocation:getConf
+Method-name:getPrunedPartitions
+Method-returnType:PrunedPartitionList
+Method-parameters:[String alias, TableScanOperator ts]
+MethodInvocation:get
+MethodInvocation:prune
+MethodInvocation:put
+Method-name:getOpToPartToSkewedPruner
+Method-returnType:Map<TableScanOperator,Map<String,ExprNodeDesc>>
+Method-parameters:[]
+Method-name:setOpPartToSkewedPruner
+Method-returnType:void
+Method-parameters:[Map<TableScanOperator,Map<String,ExprNodeDesc>> opToPartToSkewedPruner]
+FieldAccess:opToPartToSkewedPruner
+Method-name:getViewAliasToInput
+Method-returnType:Map<String,ReadEntity>
+Method-parameters:[]
+Method-name:getQueryProperties
+Method-returnType:QueryProperties
+Method-parameters:[]
+Method-name:setQueryProperties
+Method-returnType:void
+Method-parameters:[QueryProperties queryProperties]
+FieldAccess:queryProperties
+Method-name:getFetchTableDesc
+Method-returnType:TableDesc
+Method-parameters:[]
+Method-name:setFetchTabledesc
+Method-returnType:void
+Method-parameters:[TableDesc fetchTableDesc]
+FieldAccess:fetchTableDesc
+Method-name:getFetchSource
+Method-returnType:Operator<?>
+Method-parameters:[]
+Method-name:setFetchSource
+Method-returnType:void
+Method-parameters:[Operator<?> fetchSource]
+FieldAccess:fetchSource
+Method-name:getFetchSink
+Method-returnType:ListSinkOperator
+Method-parameters:[]
+Method-name:setFetchSink
+Method-returnType:void
+Method-parameters:[ListSinkOperator fetchSink]
+FieldAccess:fetchSink
+Method-name:getAnalyzeRewrite
+Method-returnType:AnalyzeRewriteContext
+Method-parameters:[]
+FieldAccess:analyzeRewrite
+Method-name:setAnalyzeRewrite
+Method-returnType:void
+Method-parameters:[AnalyzeRewriteContext analyzeRewrite]
+FieldAccess:analyzeRewrite
+Method-name:getCreateTable
+Method-returnType:CreateTableDesc
+Method-parameters:[]
+FieldAccess:createTableDesc
+Method-name:setCreateTable
+Method-returnType:void
+Method-parameters:[CreateTableDesc createTableDesc]
+FieldAccess:createTableDesc
+Method-name:getCreateViewDesc
+Method-returnType:CreateViewDesc
+Method-parameters:[]
+Method-name:getMaterializedViewUpdateDesc
+Method-returnType:MaterializedViewUpdateDesc
+Method-parameters:[]
+Method-name:setReduceSinkAddedBySortedDynPartition
+Method-returnType:void
+Method-parameters:[final boolean reduceSinkAddedBySortedDynPartition]
+FieldAccess:reduceSinkAddedBySortedDynPartition
+Method-name:isReduceSinkAddedBySortedDynPartition
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:getViewProjectToTableSchema
+Method-returnType:Map<SelectOperator,Table>
+Method-parameters:[]
+Method-name:getColumnAccessInfo
+Method-returnType:ColumnAccessInfo
+Method-parameters:[]
+Method-name:setColumnAccessInfo
+Method-returnType:void
+Method-parameters:[ColumnAccessInfo columnAccessInfo]
+FieldAccess:columnAccessInfo
+Method-name:isNeedViewColumnAuthorization
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setNeedViewColumnAuthorization
+Method-returnType:void
+Method-parameters:[boolean needViewColumnAuthorization]
+FieldAccess:needViewColumnAuthorization
+Method-name:getTabNameToTabObject
+Method-returnType:Map<String,Table>
+Method-parameters:[]
+Method-name:getColumnStatsAutoGatherContexts
+Method-returnType:List<ColumnStatsAutoGatherContext>
+Method-parameters:[]
+Method-name:setColumnStatsAutoGatherContexts
+Method-returnType:void
+Method-parameters:[List<ColumnStatsAutoGatherContext> columnStatsAutoGatherContexts]
+FieldAccess:columnStatsAutoGatherContexts
+Method-name:getAllOps
+Method-returnType:Collection<Operator>
+Method-parameters:[]
+MethodInvocation:values
+MethodInvocation:getTopOps
+MethodInvocation:getAllOps
+Method-name:getAllOps
+Method-returnType:void
+Method-parameters:[List<Operator> builder, Set<Operator> visited, Operator<?> op]
+MethodInvocation:add
+MethodInvocation:add
+MethodInvocation:getNumChild
+MethodInvocation:getChildOperators
+MethodInvocation:size
+MethodInvocation:getAllOps
+MethodInvocation:get
+Method-name:setRsToRuntimeValuesInfoMap
+Method-returnType:void
+Method-parameters:[Map<ReduceSinkOperator,RuntimeValuesInfo> rsToRuntimeValuesInfo]
+FieldAccess:rsToRuntimeValuesInfo
+Method-name:getRsToRuntimeValuesInfoMap
+Method-returnType:Map<ReduceSinkOperator,RuntimeValuesInfo>
+Method-parameters:[]
+Method-name:setRsToSemiJoinBranchInfo
+Method-returnType:void
+Method-parameters:[Map<ReduceSinkOperator,SemiJoinBranchInfo> rsToSemiJoinBranchInfo]
+FieldAccess:rsToSemiJoinBranchInfo
+Method-name:getRsToSemiJoinBranchInfo
+Method-returnType:Map<ReduceSinkOperator,SemiJoinBranchInfo>
+Method-parameters:[]
+Method-name:setColExprToGBMap
+Method-returnType:void
+Method-parameters:[Map<ExprNodeDesc,GroupByOperator> colExprToGBMap]
+FieldAccess:colExprToGBMap
+Method-name:getColExprToGBMap
+Method-returnType:Map<ExprNodeDesc,GroupByOperator>
+Method-parameters:[]
+Method-name:setSemiJoinHints
+Method-returnType:void
+Method-parameters:[Map<String,List<SemiJoinHint>> hints]
+FieldAccess:semiJoinHints
+Method-name:getSemiJoinHints
+Method-returnType:Map<String,List<SemiJoinHint>>
+Method-parameters:[]
+Method-name:setDisableMapJoin
+Method-returnType:void
+Method-parameters:[boolean disableMapJoin]
+FieldAccess:disableMapJoin
+Method-name:getDisableMapJoin
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:setTerminalOpToRSMap
+Method-returnType:void
+Method-parameters:[Multimap<TerminalOperator<?>,ReduceSinkOperator> terminalOpToRSMap]
+FieldAccess:terminalOpToRSMap
+Method-name:getTerminalOpToRSMap
+Method-returnType:Multimap<TerminalOperator<?>,ReduceSinkOperator>
+Method-parameters:[]

@@ -1,0 +1,125 @@
+Class:Stmt
+Method-name:move4End
+Method-returnType:void
+Method-parameters:[StmtList stmts, LabelStmt start, EndRemover endRemover]
+MethodInvocation:nGoto
+MethodInvocation:insertBefore
+MethodInvocation:getLast
+FieldAccess:target
+MethodInvocation:remove
+MethodInvocation:getLast
+MethodInvocation:move
+Class:E0Stmt
+Method-name:E0Stmt
+Method-returnType:null
+Method-parameters:[ST type]
+Class:E1Stmt
+Field:op
+Method-name:E1Stmt
+Method-returnType:null
+Method-parameters:[ST type, Value op]
+FieldAccess:op
+Method-name:getOp
+Method-returnType:Value
+Method-parameters:[]
+Method-name:setOp
+Method-returnType:void
+Method-parameters:[Value op]
+FieldAccess:op
+Class:E2Stmt
+Field:op1
+Field:op2
+Method-name:E2Stmt
+Method-returnType:null
+Method-parameters:[ST type, Value op1, Value op2]
+FieldAccess:op1
+FieldAccess:op2
+Method-name:getOp1
+Method-returnType:Value
+Method-parameters:[]
+Method-name:getOp2
+Method-returnType:Value
+Method-parameters:[]
+Method-name:setOp1
+Method-returnType:void
+Method-parameters:[Value op1]
+FieldAccess:op1
+Method-name:setOp2
+Method-returnType:void
+Method-parameters:[Value op2]
+FieldAccess:op2
+Field:CAN_CONTINUE
+Field:CAN_BRNANCH
+Field:CAN_SWITCH
+Field:CAN_THROW
+Field:MAY_THROW
+Field:ST
+Field:config
+Method-name:ST
+Method-returnType:null
+Method-parameters:[int config]
+FieldAccess:config
+Method-name:canBranch
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:canContinue
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:canSwitch
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:mayThrow
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:canThrow
+Method-returnType:boolean
+Method-parameters:[]
+Field:_cfg_froms
+Field:exceptionHandlers
+Field:visited
+Field:frame
+Field:_ts_default_next
+Field:et
+Field:id
+Field:list
+Field:next
+Field:pre
+Field:st
+Method-name:Stmt
+Method-returnType:null
+Method-parameters:[ST st, ET et]
+FieldAccess:st
+FieldAccess:et
+Method-name:clone
+Method-returnType:Stmt
+Method-parameters:[LabelAndLocalMapper mapper]
+Method-name:getNext
+Method-returnType:Stmt
+Method-parameters:[]
+Method-name:getOp
+Method-returnType:Value
+Method-parameters:[]
+Method-name:getOp1
+Method-returnType:Value
+Method-parameters:[]
+Method-name:getOp2
+Method-returnType:Value
+Method-parameters:[]
+Method-name:getOps
+Method-returnType:Value[]
+Method-parameters:[]
+Method-name:getPre
+Method-returnType:Stmt
+Method-parameters:[]
+Method-name:setOp
+Method-returnType:void
+Method-parameters:[Value op]
+Method-name:setOp1
+Method-returnType:void
+Method-parameters:[Value op]
+Method-name:setOp2
+Method-returnType:void
+Method-parameters:[Value op]
+Method-name:setOps
+Method-returnType:void
+Method-parameters:[Value[] op]

@@ -1,0 +1,102 @@
+Class:ExpressionParser
+Method-name:readExpression
+Method-returnType:RoleMapperExpression
+Method-parameters:[StreamInput in]
+MethodInvocation:readNamedWriteable
+Method-name:writeExpression
+Method-returnType:void
+Method-parameters:[RoleMapperExpression expression, StreamOutput out]
+MethodInvocation:writeNamedWriteable
+Method-name:readExpressionList
+Method-returnType:List<RoleMapperExpression>
+Method-parameters:[StreamInput in]
+MethodInvocation:readNamedWriteableList
+Method-name:writeExpressionList
+Method-returnType:void
+Method-parameters:[List<RoleMapperExpression> list, StreamOutput out]
+MethodInvocation:writeNamedWriteableList
+Method-name:parseObject
+Method-returnType:RoleMapperExpression
+Method-parameters:[XContentParser parser, String id]
+MethodInvocation:parse
+Method-name:parse
+Method-returnType:RoleMapperExpression
+Method-parameters:[String name, XContentParser parser]
+MethodInvocation:parseRulesObject
+Method-name:parseRulesObject
+Method-returnType:RoleMapperExpression
+Method-parameters:[String objectName, XContentParser parser, boolean allowExcept]
+MethodInvocation:currentToken
+MethodInvocation:nextToken
+MethodInvocation:currentToken
+MethodInvocation:readFieldName
+MethodInvocation:parseExpression
+MethodInvocation:nextToken
+Method-name:parseExpression
+Method-returnType:RoleMapperExpression
+Method-parameters:[XContentParser parser, String field, boolean allowExcept, String objectName]
+MethodInvocation:match
+MethodInvocation:getDeprecationHandler
+MethodInvocation:parseExpressionArray
+MethodInvocation:match
+MethodInvocation:getDeprecationHandler
+MethodInvocation:parseExpressionArray
+MethodInvocation:match
+MethodInvocation:getDeprecationHandler
+MethodInvocation:parseFieldExpression
+MethodInvocation:match
+MethodInvocation:getDeprecationHandler
+MethodInvocation:parseExceptExpression
+Method-name:parseFieldExpression
+Method-returnType:RoleMapperExpression
+Method-parameters:[XContentParser parser]
+MethodInvocation:checkStartObject
+MethodInvocation:readFieldName
+MethodInvocation:getPreferredName
+MethodInvocation:nextToken
+MethodInvocation:parseArray
+MethodInvocation:singletonList
+MethodInvocation:parseFieldValue
+MethodInvocation:nextToken
+MethodInvocation:getPreferredName
+Method-name:parseExceptExpression
+Method-returnType:RoleMapperExpression
+Method-parameters:[XContentParser parser]
+MethodInvocation:checkStartObject
+MethodInvocation:parseRulesObject
+MethodInvocation:getPreferredName
+Method-name:checkStartObject
+Method-returnType:void
+Method-parameters:[XContentParser parser]
+MethodInvocation:nextToken
+Method-name:readFieldName
+Method-returnType:String
+Method-parameters:[String objectName, XContentParser parser]
+MethodInvocation:nextToken
+MethodInvocation:currentName
+Method-name:parseExpressionArray
+Method-returnType:List<RoleMapperExpression>
+Method-parameters:[ParseField field, XContentParser parser, boolean allowExcept]
+MethodInvocation:nextToken
+MethodInvocation:parseArray
+MethodInvocation:parseRulesObject
+MethodInvocation:getPreferredName
+Method-name:parseArray
+Method-returnType:List<T>
+Method-parameters:[ParseField field, XContentParser parser, CheckedFunction<XContentParser,T,IOException> elementParser]
+MethodInvocation:currentToken
+MethodInvocation:nextToken
+MethodInvocation:add
+MethodInvocation:apply
+Method-name:parseFieldValue
+Method-returnType:FieldExpression.FieldValue
+Method-parameters:[XContentParser parser]
+MethodInvocation:currentToken
+MethodInvocation:text
+MethodInvocation:booleanValue
+MethodInvocation:longValue
+MethodInvocation:currentToken
+Field:ANY
+Field:ALL
+Field:EXCEPT
+Field:FIELD

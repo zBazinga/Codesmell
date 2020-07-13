@@ -1,0 +1,57 @@
+Class:SQLServer2012LimitHandler
+Field:usedOffsetFetch
+Method-name:SQLServer2012LimitHandler
+Method-returnType:null
+Method-parameters:[]
+Method-name:supportsLimit
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:supportsVariableLimit
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:processSql
+Method-returnType:String
+Method-parameters:[String sql, RowSelection selection]
+MethodInvocation:hasOrderBy
+MethodInvocation:useLimit
+MethodInvocation:applyOffsetFetch
+MethodInvocation:getInsertPosition
+Method-name:useMaxForLimit
+Method-returnType:boolean
+Method-parameters:[]
+Method-name:convertToFirstRowValue
+Method-returnType:int
+Method-parameters:[int zeroBasedFirstResult]
+Method-name:bindLimitParametersAtEndOfQuery
+Method-returnType:int
+Method-parameters:[RowSelection selection, PreparedStatement statement, int index]
+MethodInvocation:hasFirstRow
+MethodInvocation:setInt
+MethodInvocation:getMaxOrLimit
+Method-name:getOffsetFetch
+Method-returnType:String
+Method-parameters:[RowSelection selection]
+MethodInvocation:hasFirstRow
+Method-name:getInsertPosition
+Method-returnType:int
+Method-parameters:[String sql]
+MethodInvocation:length
+MethodInvocation:charAt
+Method-name:applyOffsetFetch
+Method-returnType:String
+Method-parameters:[RowSelection selection, String sql, int position]
+MethodInvocation:append
+MethodInvocation:substring
+MethodInvocation:append
+MethodInvocation:getOffsetFetch
+MethodInvocation:length
+MethodInvocation:append
+MethodInvocation:substring
+MethodInvocation:toString
+Method-name:hasOrderBy
+Method-returnType:boolean
+Method-parameters:[String sql]
+MethodInvocation:toLowerCase
+MethodInvocation:length
+MethodInvocation:charAt
+MethodInvocation:startsWith

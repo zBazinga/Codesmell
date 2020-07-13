@@ -1,0 +1,86 @@
+Class:WireFeed
+Field:serialVersionUID
+Field:feedType
+Field:encoding
+Field:styleSheet
+Field:modules
+Field:foreignMarkup
+Method-name:WireFeed
+Method-returnType:null
+Method-parameters:[]
+Method-name:WireFeed
+Method-returnType:null
+Method-parameters:[final String type]
+Method-name:clone
+Method-returnType:Object
+Method-parameters:[]
+MethodInvocation:beanClone
+MethodInvocation:emptySet
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[final Object other]
+MethodInvocation:getForeignMarkup
+MethodInvocation:setForeignMarkup
+MethodInvocation:getForeignMarkup
+MethodInvocation:beanEquals
+MethodInvocation:getClass
+MethodInvocation:setForeignMarkup
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:beanHashCode
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:toString
+MethodInvocation:getClass
+Method-name:setFeedType
+Method-returnType:void
+Method-parameters:[final String feedType]
+FieldAccess:feedType
+Method-name:getFeedType
+Method-returnType:String
+Method-parameters:[]
+Method-name:getEncoding
+Method-returnType:String
+Method-parameters:[]
+Method-name:setEncoding
+Method-returnType:void
+Method-parameters:[final String encoding]
+FieldAccess:encoding
+Method-name:getModules
+Method-returnType:List<Module>
+Method-parameters:[]
+MethodInvocation:createWhenNull
+Method-name:setModules
+Method-returnType:void
+Method-parameters:[final List<Module> modules]
+FieldAccess:modules
+Method-name:getModule
+Method-returnType:Module
+Method-parameters:[final String uri]
+MethodInvocation:getModule
+Method-name:getForeignMarkup
+Method-returnType:List<Element>
+Method-parameters:[]
+MethodInvocation:createWhenNull
+Method-name:setForeignMarkup
+Method-returnType:void
+Method-parameters:[final List<Element> foreignMarkup]
+FieldAccess:foreignMarkup
+Method-name:getStyleSheet
+Method-returnType:String
+Method-parameters:[]
+Method-name:setStyleSheet
+Method-returnType:void
+Method-parameters:[final String styleSheet]
+FieldAccess:styleSheet
+Method-name:outputString
+Method-returnType:String
+Method-parameters:[final boolean prettyPrint, WireFeedOutput wireFeedOutput]
+MethodInvocation:outputJDom
+MethodInvocation:getEncoding
+MethodInvocation:getPrettyFormat
+MethodInvocation:getCompactFormat
+MethodInvocation:setEncoding
+MethodInvocation:outputString

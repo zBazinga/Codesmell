@@ -1,0 +1,31 @@
+Class:SpockNode
+Method-name:SpockNode
+Method-returnType:null
+Method-parameters:[UniqueId uniqueId, String displayName]
+Method-name:SpockNode
+Method-returnType:null
+Method-parameters:[UniqueId uniqueId, String displayName, TestSource source]
+Method-name:shouldBeSkipped
+Method-returnType:SkipResult
+Method-parameters:[ISkippable skippable]
+MethodInvocation:isSkipped
+MethodInvocation:skip
+MethodInvocation:getSkipReason
+MethodInvocation:doNotSkip
+Method-name:verifyNotSkipped
+Method-returnType:void
+Method-parameters:[ISkippable skippable]
+MethodInvocation:isSkipped
+MethodInvocation:getSkipReason
+Method-name:featureToMethodSource
+Method-returnType:MethodSource
+Method-parameters:[FeatureInfo info]
+MethodInvocation:from
+MethodInvocation:getName
+MethodInvocation:getReflection
+MethodInvocation:getSpec
+MethodInvocation:getName
+MethodInvocation:nullSafeToString
+MethodInvocation:getParameterTypes
+MethodInvocation:getReflection
+MethodInvocation:getFeatureMethod

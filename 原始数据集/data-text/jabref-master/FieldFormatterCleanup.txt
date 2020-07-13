@@ -1,0 +1,65 @@
+Class:FieldFormatterCleanup
+Field:field
+Field:formatter
+Method-name:FieldFormatterCleanup
+Method-returnType:null
+Method-parameters:[Field field, Formatter formatter]
+FieldAccess:field
+FieldAccess:formatter
+Method-name:cleanup
+Method-returnType:List<FieldChange>
+Method-parameters:[BibEntry entry]
+MethodInvocation:equals
+MethodInvocation:cleanupAllFields
+MethodInvocation:equals
+MethodInvocation:cleanupAllTextFields
+MethodInvocation:cleanupSingleField
+Method-name:cleanupSingleField
+Method-returnType:List<FieldChange>
+Method-parameters:[Field fieldKey, BibEntry entry]
+MethodInvocation:hasField
+MethodInvocation:emptyList
+MethodInvocation:orElse
+MethodInvocation:getField
+MethodInvocation:format
+MethodInvocation:equals
+MethodInvocation:emptyList
+MethodInvocation:isEmpty
+MethodInvocation:clearField
+MethodInvocation:setField
+MethodInvocation:singletonList
+Method-name:cleanupAllFields
+Method-returnType:List<FieldChange>
+Method-parameters:[BibEntry entry]
+MethodInvocation:getFields
+MethodInvocation:equals
+MethodInvocation:addAll
+MethodInvocation:cleanupSingleField
+Method-name:cleanupAllTextFields
+Method-returnType:List<FieldChange>
+Method-parameters:[BibEntry entry]
+MethodInvocation:getFields
+MethodInvocation:removeAll
+MethodInvocation:getNotTextFieldNames
+MethodInvocation:equals
+MethodInvocation:addAll
+MethodInvocation:cleanupSingleField
+Method-name:getField
+Method-returnType:Field
+Method-parameters:[]
+Method-name:getFormatter
+Method-returnType:Formatter
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:equals
+MethodInvocation:equals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+MethodInvocation:getName

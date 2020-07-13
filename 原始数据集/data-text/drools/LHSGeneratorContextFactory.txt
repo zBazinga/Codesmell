@@ -1,0 +1,33 @@
+Class:LHSGeneratorContextFactory
+Field:contexts
+Method-name:newGeneratorContext
+Method-returnType:LHSGeneratorContext
+Method-parameters:[]
+MethodInvocation:add
+Method-name:newChildGeneratorContext
+Method-returnType:LHSGeneratorContext
+Method-parameters:[final LHSGeneratorContext parent, final FieldConstraint fieldConstraint]
+MethodInvocation:getMaximumDepth
+MethodInvocation:add
+Method-name:newPeerGeneratorContext
+Method-returnType:LHSGeneratorContext
+Method-parameters:[final LHSGeneratorContext peer, final FieldConstraint fieldConstraint]
+MethodInvocation:getParent
+MethodInvocation:getDepth
+MethodInvocation:getOffset
+MethodInvocation:add
+Method-name:getGeneratorContexts
+Method-returnType:List<LHSGeneratorContext>
+Method-parameters:[]
+Method-name:getMaximumDepth
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:max
+MethodInvocation:getDepth
+Method-name:getPeers
+Method-returnType:List<LHSGeneratorContext>
+Method-parameters:[final LHSGeneratorContext peer]
+MethodInvocation:getDepth
+MethodInvocation:getDepth
+MethodInvocation:add
+MethodInvocation:remove

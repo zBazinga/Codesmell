@@ -1,0 +1,21 @@
+Class:TransportKillAllNodeAction
+Method-name:TransportKillAllNodeAction
+Method-returnType:null
+Method-parameters:[TasksService tasksService, ClusterService clusterService, TransportService transportService]
+Method-name:doKill
+Method-returnType:CompletableFuture<Integer>
+Method-parameters:[KillAllRequest request]
+MethodInvocation:killAll
+Method-name:call
+Method-returnType:KillAllRequest
+Method-parameters:[]
+Method-name:execute
+Method-returnType:void
+Method-parameters:[TransportKillJobsNodeAction killjobsNodeAction, RowConsumer consumer, KillPlan killPlan]
+MethodInvocation:isPresent
+MethodInvocation:jobToKill
+MethodInvocation:get
+MethodInvocation:jobToKill
+MethodInvocation:broadcast
+MethodInvocation:singletonList
+MethodInvocation:broadcast

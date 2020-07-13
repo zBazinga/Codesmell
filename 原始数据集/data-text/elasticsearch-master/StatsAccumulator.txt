@@ -1,0 +1,83 @@
+Class:StatsAccumulator
+Class:Fields
+Field:MIN
+Field:MAX
+Field:AVG
+Field:TOTAL
+Field:count
+Field:total
+Field:min
+Field:max
+Method-name:StatsAccumulator
+Method-returnType:null
+Method-parameters:[]
+Method-name:StatsAccumulator
+Method-returnType:null
+Method-parameters:[StreamInput in]
+MethodInvocation:readLong
+MethodInvocation:readDouble
+MethodInvocation:readOptionalDouble
+MethodInvocation:readOptionalDouble
+Method-name:StatsAccumulator
+Method-returnType:null
+Method-parameters:[long count, double total, double min, double max]
+FieldAccess:count
+FieldAccess:total
+FieldAccess:min
+FieldAccess:max
+Method-name:add
+Method-returnType:void
+Method-parameters:[double value]
+Method-name:getMin
+Method-returnType:double
+Method-parameters:[]
+Method-name:getMax
+Method-returnType:double
+Method-parameters:[]
+Method-name:getAvg
+Method-returnType:double
+Method-parameters:[]
+Method-name:getTotal
+Method-returnType:double
+Method-parameters:[]
+Method-name:merge
+Method-returnType:void
+Method-parameters:[StatsAccumulator other]
+Method-name:asMap
+Method-returnType:Map<String,Double>
+Method-parameters:[]
+MethodInvocation:put
+MethodInvocation:getMin
+MethodInvocation:put
+MethodInvocation:getMax
+MethodInvocation:put
+MethodInvocation:getAvg
+MethodInvocation:put
+MethodInvocation:getTotal
+Method-name:writeTo
+Method-returnType:void
+Method-parameters:[StreamOutput out]
+MethodInvocation:writeLong
+MethodInvocation:writeDouble
+MethodInvocation:writeOptionalDouble
+MethodInvocation:writeOptionalDouble
+Method-name:fromStatsAggregation
+Method-returnType:StatsAccumulator
+Method-parameters:[Stats statsAggregation]
+MethodInvocation:getCount
+MethodInvocation:getSum
+MethodInvocation:getMin
+MethodInvocation:getMax
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object obj]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:equals

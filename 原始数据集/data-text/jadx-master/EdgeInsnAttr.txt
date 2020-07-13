@@ -1,0 +1,55 @@
+Class:EdgeInsnAttr
+Field:start
+Field:end
+Field:insn
+Method-name:addEdgeInsn
+Method-returnType:void
+Method-parameters:[BlockNode start, BlockNode end, InsnNode insn]
+MethodInvocation:contains
+MethodInvocation:getAll
+MethodInvocation:addAttr
+MethodInvocation:contains
+MethodInvocation:getAll
+MethodInvocation:addAttr
+Method-name:EdgeInsnAttr
+Method-returnType:null
+Method-parameters:[BlockNode start, BlockNode end, InsnNode insn]
+FieldAccess:start
+FieldAccess:end
+FieldAccess:insn
+Method-name:getType
+Method-returnType:AType<AttrList<EdgeInsnAttr>>
+Method-parameters:[]
+Method-name:getStart
+Method-returnType:BlockNode
+Method-parameters:[]
+Method-name:getEnd
+Method-returnType:BlockNode
+Method-parameters:[]
+Method-name:getInsn
+Method-returnType:InsnNode
+Method-parameters:[]
+Method-name:equals
+Method-returnType:boolean
+Method-parameters:[Object o]
+MethodInvocation:getClass
+MethodInvocation:getClass
+MethodInvocation:equals
+MethodInvocation:equals
+MethodInvocation:isDeepEquals
+Method-name:hashCode
+Method-returnType:int
+Method-parameters:[]
+MethodInvocation:hash
+Method-name:toString
+Method-returnType:String
+Method-parameters:[]
+Method-name:addEdgeInsnOther
+Method-returnType:void
+Method-parameters:[IfInfo ifInfo, Region region, RegionMaker regionMaker]
+MethodInvocation:getStart
+MethodInvocation:contains
+MethodInvocation:getMergedBlocks
+MethodInvocation:contains
+MethodInvocation:getSuccessors
+MethodInvocation:add

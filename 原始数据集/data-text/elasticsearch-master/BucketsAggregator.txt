@@ -1,0 +1,157 @@
+Class:BucketsAggregator
+Field:bigArrays
+Field:multiBucketConsumer
+Field:docCounts
+Method-name:BucketsAggregator
+Method-returnType:null
+Method-parameters:[String name, AggregatorFactories factories, SearchContext context, Aggregator parent, Map<String,Object> metadata]
+MethodInvocation:bigArrays
+MethodInvocation:newIntArray
+MethodInvocation:aggregations
+MethodInvocation:multiBucketConsumer
+MethodInvocation:aggregations
+Method-name:maxBucketOrd
+Method-returnType:long
+Method-parameters:[]
+MethodInvocation:size
+Method-name:grow
+Method-returnType:void
+Method-parameters:[long maxBucketOrd]
+MethodInvocation:grow
+Method-name:collectExistingBucket
+Method-returnType:void
+Method-parameters:[LeafBucketCollector subCollector, int doc, long bucketOrd]
+MethodInvocation:increment
+MethodInvocation:collect
+Method-name:mergeBuckets
+Method-returnType:void
+Method-parameters:[long[] mergeMap, long newNumBuckets]
+MethodInvocation:newIntArray
+MethodInvocation:fill
+MethodInvocation:size
+MethodInvocation:get
+MethodInvocation:increment
+Method-name:getDocCounts
+Method-returnType:IntArray
+Method-parameters:[]
+Method-name:incrementBucketDocCount
+Method-returnType:void
+Method-parameters:[long bucketOrd, int inc]
+MethodInvocation:grow
+MethodInvocation:increment
+Method-name:bucketDocCount
+Method-returnType:int
+Method-parameters:[long bucketOrd]
+MethodInvocation:size
+MethodInvocation:get
+Method-name:consumeBucketsAndMaybeBreak
+Method-returnType:void
+Method-parameters:[int count]
+MethodInvocation:accept
+Method-name:beforeBuildingBuckets
+Method-returnType:void
+Method-parameters:[long[] ordsToCollect]
+Method-name:buildSubAggsForBuckets
+Method-returnType:InternalAggregations[]
+Method-parameters:[long[] bucketOrdsToCollect]
+MethodInvocation:beforeBuildingBuckets
+MethodInvocation:buildAggregations
+Method-name:get
+Method-returnType:InternalAggregation
+Method-parameters:[int index]
+Method-name:size
+Method-returnType:int
+Method-parameters:[]
+Method-name:buildSubAggsForBuckets
+Method-returnType:void
+Method-parameters:[B[] buckets, ToLongFunction<B> bucketToOrd, BiConsumer<B,InternalAggregations> setAggs]
+MethodInvocation:buildSubAggsForBuckets
+MethodInvocation:toArray
+MethodInvocation:mapToLong
+MethodInvocation:stream
+MethodInvocation:accept
+Method-name:buildSubAggsForAllBuckets
+Method-returnType:void
+Method-parameters:[B[][] buckets, ToLongFunction<B> bucketToOrd, BiConsumer<B,InternalAggregations> setAggs]
+MethodInvocation:applyAsLong
+MethodInvocation:buildSubAggsForBuckets
+FieldAccess:length
+MethodInvocation:accept
+Method-name:buildSubAggsForBuckets
+Method-returnType:void
+Method-parameters:[List<B> buckets, ToLongFunction<B> bucketToOrd, BiConsumer<B,InternalAggregations> setAggs]
+MethodInvocation:buildSubAggsForBuckets
+MethodInvocation:toArray
+MethodInvocation:mapToLong
+MethodInvocation:stream
+MethodInvocation:size
+MethodInvocation:accept
+MethodInvocation:get
+Method-name:buildAggregationsForFixedBucketCount
+Method-returnType:InternalAggregation[]
+Method-parameters:[long[] owningBucketOrds, int bucketsPerOwningBucketOrd, BucketBuilderForFixedCount<B> bucketBuilder, Function<List<B>,InternalAggregation> resultBuilder]
+MethodInvocation:consumeBucketsAndMaybeBreak
+MethodInvocation:buildSubAggsForBuckets
+MethodInvocation:add
+MethodInvocation:build
+MethodInvocation:bucketDocCount
+MethodInvocation:apply
+Method-name:build
+Method-returnType:B
+Method-parameters:[int offsetInOwningOrd, int docCount, InternalAggregations subAggregationResults]
+Method-name:buildAggregationsForSingleBucket
+Method-returnType:InternalAggregation[]
+Method-parameters:[long[] owningBucketOrds, SingleBucketResultBuilder resultBuilder]
+MethodInvocation:buildSubAggsForBuckets
+MethodInvocation:build
+Method-name:build
+Method-returnType:InternalAggregation
+Method-parameters:[long owningBucketOrd, InternalAggregations subAggregationResults]
+Method-name:buildAggregationsForVariableBuckets
+Method-returnType:InternalAggregation[]
+Method-parameters:[long[] owningBucketOrds, LongHash bucketOrds, BucketBuilderForVariable<B> bucketBuilder, Function<List<B>,InternalAggregation> resultBuilder]
+Method-name:buildAggregationsForVariableBuckets
+Method-returnType:InternalAggregation[]
+Method-parameters:[long[] owningBucketOrds, LongKeyedBucketOrds bucketOrds, BucketBuilderForVariable<B> bucketBuilder, Function<List<B>,InternalAggregation> resultBuilder]
+MethodInvocation:bucketsInOrd
+MethodInvocation:consumeBucketsAndMaybeBreak
+MethodInvocation:ordsEnum
+MethodInvocation:next
+MethodInvocation:ord
+MethodInvocation:buildSubAggsForBuckets
+MethodInvocation:size
+MethodInvocation:ordsEnum
+MethodInvocation:next
+MethodInvocation:ord
+MethodInvocation:ord
+MethodInvocation:add
+MethodInvocation:build
+MethodInvocation:value
+MethodInvocation:bucketDocCount
+MethodInvocation:ord
+MethodInvocation:apply
+Method-name:build
+Method-returnType:B
+Method-parameters:[long bucketValue, int docCount, InternalAggregations subAggregationResults]
+Method-name:bucketEmptyAggregations
+Method-returnType:InternalAggregations
+Method-parameters:[]
+MethodInvocation:buildEmptyAggregation
+MethodInvocation:asList
+Method-name:close
+Method-returnType:void
+Method-parameters:[]
+Method-name:resolveSortPath
+Method-returnType:Aggregator
+Method-parameters:[AggregationPath.PathElement next, Iterator<AggregationPath.PathElement> path]
+MethodInvocation:resolveSortPathOnValidAgg
+Method-name:bucketComparator
+Method-returnType:BucketComparator
+Method-parameters:[String key, SortOrder order]
+MethodInvocation:equals
+MethodInvocation:reverseMul
+MethodInvocation:compare
+MethodInvocation:bucketDocCount
+MethodInvocation:bucketDocCount
+MethodInvocation:name
+MethodInvocation:name

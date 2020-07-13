@@ -1,0 +1,161 @@
+Class:TableCreator
+Field:SUCCESS_RESULT
+Field:logger
+MethodInvocation:getLogger
+Field:clusterService
+Field:indexNameExpressionResolver
+Field:transportCreateTableAction
+Field:transportDeleteIndexAction
+Method-name:TableCreator
+Method-returnType:null
+Method-parameters:[ClusterService clusterService, IndexNameExpressionResolver indexNameExpressionResolver, TransportCreateTableAction transportCreateIndexAction, TransportDeleteIndexAction transportDeleteIndexAction]
+FieldAccess:clusterService
+FieldAccess:indexNameExpressionResolver
+FieldAccess:transportCreateTableAction
+FieldAccess:transportDeleteIndexAction
+Method-name:create
+Method-returnType:CompletableFuture<Long>
+Method-parameters:[CreateTableAnalyzedStatement statement]
+MethodInvocation:deleteOrphans
+MethodInvocation:tableIdent
+Method-name:createIndexRequest
+Method-returnType:CreateIndexRequest
+Method-parameters:[CreateTableAnalyzedStatement statement]
+MethodInvocation:mapping
+MethodInvocation:indexNameOrAlias
+MethodInvocation:tableIdent
+MethodInvocation:settings
+MethodInvocation:mapping
+Method-name:createTemplateRequest
+Method-returnType:PutIndexTemplateRequest
+Method-parameters:[CreateTableAnalyzedStatement statement]
+MethodInvocation:alias
+MethodInvocation:indexNameOrAlias
+MethodInvocation:tableIdent
+MethodInvocation:order
+MethodInvocation:patterns
+MethodInvocation:settings
+MethodInvocation:create
+MethodInvocation:mapping
+MethodInvocation:templateName
+MethodInvocation:mapping
+MethodInvocation:settings
+MethodInvocation:singletonList
+MethodInvocation:templatePrefix
+Method-name:createTable
+Method-returnType:void
+Method-parameters:[final CompletableFuture<Long> result, final CreateTableAnalyzedStatement statement]
+MethodInvocation:templateName
+MethodInvocation:createTemplateRequest
+MethodInvocation:createIndexRequest
+MethodInvocation:execute
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[CreateTableResponse response]
+MethodInvocation:isAllShardsAcked
+MethodInvocation:warnNotAcknowledged
+MethodInvocation:format
+MethodInvocation:fqn
+MethodInvocation:tableIdent
+MethodInvocation:complete
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:setException
+Method-name:setException
+Method-returnType:void
+Method-parameters:[CompletableFuture<Long> result, Throwable e, CreateTableAnalyzedStatement statement]
+MethodInvocation:unwrap
+MethodInvocation:getMessage
+MethodInvocation:equals
+MethodInvocation:getCause
+MethodInvocation:completeExceptionally
+MethodInvocation:getCause
+MethodInvocation:ifNotExists
+MethodInvocation:templateName
+MethodInvocation:isTemplateAlreadyExistsException
+MethodInvocation:complete
+MethodInvocation:completeExceptionally
+Method-name:isTemplateAlreadyExistsException
+Method-returnType:boolean
+Method-parameters:[Throwable e]
+MethodInvocation:getMessage
+MethodInvocation:endsWith
+MethodInvocation:getMessage
+Method-name:deleteOrphans
+Method-returnType:void
+Method-parameters:[final CreateTableResponseListener listener, RelationName relationName]
+MethodInvocation:getMetaData
+MethodInvocation:state
+MethodInvocation:fqn
+MethodInvocation:hasAlias
+MethodInvocation:isPartition
+MethodInvocation:debug
+MethodInvocation:execute
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[AcknowledgedResponse response]
+MethodInvocation:isAcknowledged
+MethodInvocation:warnNotAcknowledged
+MethodInvocation:deleteOrphanedPartitions
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:onFailure
+MethodInvocation:deleteOrphanedPartitions
+Method-name:isPartition
+Method-returnType:boolean
+Method-parameters:[MetaData metaData, String fqn]
+MethodInvocation:getAliasAndIndexLookup
+MethodInvocation:get
+MethodInvocation:isPartitioned
+MethodInvocation:getName
+MethodInvocation:getIndex
+MethodInvocation:next
+MethodInvocation:iterator
+MethodInvocation:getIndices
+Method-name:deleteOrphanedPartitions
+Method-returnType:void
+Method-parameters:[final CreateTableResponseListener listener, RelationName relationName]
+MethodInvocation:templateName
+MethodInvocation:schema
+MethodInvocation:name
+MethodInvocation:concreteIndexNames
+MethodInvocation:state
+MethodInvocation:strictExpand
+MethodInvocation:isDebugEnabled
+MethodInvocation:debug
+MethodInvocation:join
+MethodInvocation:on
+MethodInvocation:execute
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[AcknowledgedResponse response]
+MethodInvocation:isAcknowledged
+MethodInvocation:warnNotAcknowledged
+MethodInvocation:onResponse
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:onFailure
+MethodInvocation:onResponse
+Method-name:warnNotAcknowledged
+Method-returnType:void
+Method-parameters:[String operationName]
+MethodInvocation:warn
+Class:CreateTableResponseListener
+Field:result
+Field:statement
+Method-name:CreateTableResponseListener
+Method-returnType:null
+Method-parameters:[CompletableFuture<Long> result, CreateTableAnalyzedStatement statement]
+FieldAccess:result
+FieldAccess:statement
+Method-name:onResponse
+Method-returnType:void
+Method-parameters:[Long ignored]
+MethodInvocation:createTable
+Method-name:onFailure
+Method-returnType:void
+Method-parameters:[Exception e]
+MethodInvocation:completeExceptionally
